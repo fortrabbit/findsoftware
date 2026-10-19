@@ -1,0 +1,142 @@
+---
+import FindFacet from './FindFacet.astro';
+import FindRegister from './FindRegister.astro';
+import type { Facet, RegisterList } from '../lib/facets';
+
+import type { ProviderRow } from '../lib/facets';
+
+interface Props {
+  facets: Facet[];
+  providers: ProviderRow[];
+  /*
+   * The lists this panel sits over — the register and the groups beside it that
+   * are lists in their own right. Each is a page carrying this same panel, so
+   * the box that offers them is links rather than a filter.
+   */
+  registers?: RegisterList[];
+  /** Which of them the page is showing, which is the register itself. */
+  current?: string;
+}
+
+const { facets, providers, registers = [], current = 'software' } = Astro.props;
+
+/*
+ * What the script needs to filter, and nothing else: which values each record
+ * holds, and which fields it says do not apply. The names, descriptions and
+ * figures are already on the page — find.ts hides rows rather than building
+ * them — so shipping them again would be sending the register twice.
+ *
+ * Inline rather than fetched. It is a third of what /providers.json weighs, it
+ * arrives with the markup it describes, and the filters work on first paint
+ * instead of after a round trip. /providers.json stays what it is: the whole
+ * dataset, published under CC BY, which is a different job from this one.
+ */
+const index = {
+  facets: facets.map((facet) => ({
+    id: facet.id,
+    field: facet.field,
+    values: facet.values.filter((value) => value.count > 0).map((value) => value.id),
+  })),
+  /* What the box can switch to, in the order it offers them. */
+  registers: registers.map((register) => ({ key: register.key, label: register.label })),
+  providers: (registers.length
+    ? registers.flatMap((register) => register.rows.map((row) => ({ row, register: register.key })))
+    : providers.map((row) => ({ row, register: current }))
+  ).map(({ row, register }) => ({
+    id: row.id,
+    register,
+    facets: row.facets,
+    notApplicable: row.notApplicable,
+  })),
+};
+
+/*
+ * A facet no record answers yet is a column of nothing. It appears the moment
+ * the data does, without anyone remembering to add it.
+ */
+const shown = facets.filter((facet) => facet.values.some((value) => value.count > 0));
+
+/*
+ * Four across the top, the rest behind a control. Every facet used to ship
+ * open, and nineteen columns of checkboxes pushed the register itself below the
+ * fold on a desktop screen — the panel was the page.
+ *
+ * Which four is not a judgement made here: `filterOrder` in fields.yml is
+ * already the order the panel reads in, most-asked first, and this takes the
+ * front of it.
+ */
+const LEAD = 4;
+const lead = shown.slice(0, LEAD);
+const rest = shown.slice(LEAD);
+
+/*
+ * Four ways in that the filter panel cannot offer: two values people arrive
+ * already looking for, and the two pages that order the register by something
+ * the checkboxes have no column for. Editorial, in that somebody chose which
+ * four — a shortcut to a page, not a rank, and the register's own order does not
+ * know they exist.
+ *
+ * The value links are read out of the facets rather than typed, so a value whose
+ * last record goes loses its shortcut instead of leaving a link to a page the
+ * build no longer writes.
+ */
+const shortcut = (facetId: string, valueId: string) => {
+  const facet = facets.find((entry) => entry.id === facetId);
+  const value = facet?.values.find((entry) => entry.id === valueId);
+
+  return value && value.count > 0 ? { href: `/${facet!.id}/${value.slug}/`, label: value.label } : undefined;
+};
+
+const quicklinks = [
+  shortcut('license', 'open-source'),
+  shortcut('rendering', 'static'),
+  { href: '/hosted/', label: 'Hosted services' },
+].filter(Boolean) as { href: string; label: string }[];
+
+/*
+ * The filter panel, as markup rather than as DOM built in a loop. find.ts used
+ * to construct every element here, which put the whole design of the panel
+ * inside a script nobody edits for design reasons.
+ *
+ * It ships visible, and it is the register's index: every value here is a real
+ * link to that value's page, which is how a crawler finds 186 of them. Only the
+ * checkboxes need the script, so only the checkboxes wait for it — see the `js`
+ * class set before first paint in Base.astro. Hiding the whole panel until
+ * hydration put those links in display:none and made the panel arrive with a
+ * visible jump.
+ *
+ * The closed <details> below still ships its links in the markup, so the ones
+ * that are not on show are still there to be followed and indexed. It is a
+ * disclosure, not a fetch: nothing arrives when it opens.
+ */
+---
+
+<div class="find-panel" data-pagefind-ignore data-find-filters>
+  <div class="find-filters find-filters-lead full-width">
+    {lead.map((facet) => <FindFacet facet={facet} />)}
+  </div>
+
+  <div class="find-more-bar full-width">
+    {
+      rest.length > 0 && (
+        <details class="find-more">
+          <summary>More filters</summary>
+
+          <div class="find-filters find-filters-rest">
+            {rest.map((facet) => (
+              <FindFacet facet={facet} />
+            ))}
+            {/* Last: it is the one box that changes what the others count. */}
+            {registers.length > 1 && <FindRegister registers={registers} current={current} />}
+          </div>
+        </details>
+      )
+    }
+
+    <nav class="find-quicklinks" aria-label="Shortcuts">
+      {quicklinks.map((link) => <a href={link.href}>{link.label}</a>)}
+    </nav>
+  </div>
+
+  <script type="application/json" data-find-index set:html={JSON.stringify(index)} is:inline />
+</div>

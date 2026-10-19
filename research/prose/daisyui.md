@@ -1,0 +1,1 @@
+daisyUI is a component library that runs as a Tailwind CSS plugin. It adds named component classes and a set of themes to a project that has Node.js and Tailwind CSS installed. Pouya Saadeghi, an individual, maintains it.

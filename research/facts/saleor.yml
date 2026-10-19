@@ -1,0 +1,141 @@
+id: saleor
+name: Saleor
+status: accepted
+checkedAt: 2026-10-19
+description: Open-source headless commerce platform with a GraphQL API, built in Python on Django.
+facts:
+  - field: name
+    value: Saleor
+    url: https://saleor.io
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Saleor is an AI-ready, open-source ecommerce platform"
+  - field: homepage
+    value: https://saleor.io
+    url: https://saleor.io
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: https://github.com/saleor/saleor
+    url: https://github.com/saleor/saleor
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://docs.saleor.io/
+    url: https://docs.saleor.io/
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/saleor/saleor/blob/3.23.42/pyproject.toml
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://saleor.io/pricing
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Not a black box. Saleor is available as an open source code"
+  - field: language
+    value: Python
+    url: https://github.com/saleor/saleor
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/saleor/saleor/blob/3.23.42/pyproject.toml
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtimeMin
+    value: "3.12"
+    url: https://github.com/saleor/saleor/blob/3.23.42/pyproject.toml
+    checkedAt: 2026-10-19
+    via: api
+  - field: basedOn
+    value: django
+    url: https://github.com/saleor/saleor/blob/3.23.42/pyproject.toml
+    checkedAt: 2026-10-19
+    via: api
+  - field: databases
+    value: [postgres]
+    url: https://github.com/saleor/saleor/blob/3.23.42/pyproject.toml
+    checkedAt: 2026-10-19
+    via: api
+  - field: headlessApi
+    value: graphql
+    url: https://docs.saleor.io/llms.txt
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Saleor is an open-source, GraphQL-first commerce platform."
+  - field: installMethod
+    value: docker compose from saleor-platform
+    url: https://docs.saleor.io/setup/docker-compose.md
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Clone the repository and build Docker images:"
+  - field: docker
+    value: docker compose (saleor-platform repository)
+    url: https://docs.saleor.io/setup/docker-compose.md
+    checkedAt: 2026-10-19
+    via: page
+    quote: "it takes care of all necessary dependencies"
+  - field: deployTargets
+    value: [linux, kubernetes, digitalocean]
+    url: https://docs.saleor.io/setup/llms.txt
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Deploying to Kubernetes"
+  - field: freeTier
+    value: Forever Free sandboxes, non-commercial use only
+    url: https://saleor.io/pricing
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Non-Commercial Use Only"
+  - field: paidEditions
+    value: "Saleor Commerce Cloud, $1599/mo, up to $200,000 GMV monthly, plus 0.8% from orders exceeding GMV"
+    url: https://saleor.io/pricing
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Select $1599/mo"
+  - field: paidEditions
+    value: "Saleor Commerce Cloud Volume, $3999/mo, up to $1,000,000 GMV monthly"
+    url: https://saleor.io/pricing
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Volume $3999/mo"
+  - field: pricingPage
+    value: https://saleor.io/pricing
+    url: https://saleor.io/pricing
+    checkedAt: 2026-10-19
+    via: page
+  - field: selfHostOption
+    value: yes, Docker Compose and the Setup guides
+    url: https://docs.saleor.io/setup/overview.md
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Self-hosting Overview"
+  - field: githubStargazers
+    value: 23454
+    url: https://github.com/saleor/saleor
+    checkedAt: 2026-10-19
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://github.com/saleor/saleor/releases/tag/3.23.42
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-16
+    url: https://github.com/saleor/saleor/releases/tag/3.23.42
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.saleor.io/setup/docker-compose.md
+    checkedAt: 2026-10-19
+    via: page
+    quote: "docker compose up"
+notFound: [maintainer, maintainerType, hqCountry, firstRelease, parent, wikidata, endoflifeId, eolPolicy, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, starters, regions, apiLimits]
+unreadable: []
+notes: >
+  The CSV says Saleor is not on PyPI; PyPI does list a saleor project, but its latest release is 2.10.1 from 2020, so it is not the current core and no pypi field is recorded. The CSV has two identical saleor rows; the record follows one. The pricing page gives the tier names only for Forever Free and Volume; the $1599 tier name is not in the page text, so it is listed by price. The $ sign is the page's own currency sign; the page does not state a currency code. Saleor Commerce Cloud is a hosted service, and the record is listed by default because the open-source core is installable under BSD-3-Clause. The pyproject pins Django 5.2 as a dependency range; only the basedOn relation is recorded, not the version. Saleor's docs list a versioned GraphQL schema at raw.githubusercontent.com for 3.22; the record does not use it.

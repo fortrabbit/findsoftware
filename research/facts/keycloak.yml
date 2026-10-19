@@ -1,0 +1,108 @@
+id: keycloak
+name: Keycloak
+status: accepted
+checkedAt: 2026-10-19
+description: Open source identity and access management server with OpenID Connect, OAuth 2.0 and SAML 2.0 support.
+facts:
+  - field: name
+    value: Keycloak
+    url: https://www.keycloak.org
+    checkedAt: 2026-10-19
+    via: page
+  - field: homepage
+    value: https://www.keycloak.org
+    url: https://www.keycloak.org
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Keycloak is a Cloud Native Computing Foundation incubation project"
+  - field: repository
+    value: https://github.com/keycloak/keycloak
+    url: https://github.com/keycloak/keycloak
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://www.keycloak.org/documentation
+    url: https://www.keycloak.org/documentation
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/keycloak/keycloak
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/keycloak/keycloak
+    checkedAt: 2026-10-19
+    via: api
+  - field: language
+    value: Java
+    url: https://github.com/keycloak/keycloak
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://www.keycloak.org/getting-started/getting-started-zip
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Make sure you have OpenJDK 25 installed."
+  - field: runtimeMin
+    value: "21"
+    url: https://www.keycloak.org/docs/latest/release_notes/index.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Java 17 support is deprecated"
+  - field: installMethod
+    value: docker
+    url: https://www.keycloak.org/getting-started/getting-started-docker
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Make sure you have Docker installed."
+  - field: installMethod
+    value: zip download with OpenJDK
+    url: https://www.keycloak.org/getting-started/getting-started-zip
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Make sure you have OpenJDK 25 installed."
+  - field: docker
+    value: quay.io/keycloak/keycloak
+    url: https://www.keycloak.org/server/containers
+    checkedAt: 2026-10-19
+    via: page
+    quote: "quay.io/keycloak/keycloak:latest"
+  - field: sso
+    value: [oidc, oauth2, saml]
+    url: https://www.keycloak.org
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Keycloak is based on standard protocols and provides support for OpenID Connect, OAuth 2.0, and SAML."
+  - field: currentMajor
+    value: 26
+    url: https://github.com/keycloak/keycloak/releases/tag/26.8.1
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-13
+    url: https://github.com/keycloak/keycloak/releases/tag/26.8.1
+    checkedAt: 2026-10-19
+    via: api
+  - field: endoflifeId
+    value: keycloak
+    url: https://endoflife.date/api/keycloak.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 37427
+    url: https://github.com/keycloak/keycloak
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://www.keycloak.org/getting-started/getting-started-docker
+    checkedAt: 2026-10-19
+    via: page
+    quote: "This command starts Keycloak exposed on the local port 8080"
+notFound: [maintainer, maintainerType, hqCountry, firstRelease, parent, wikidata, eolPolicy, pricingPage, paidEditions, freeTier, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, starters, regions, apiLimits, usageShare, databases, i18n, templating, selfHostOption]
+unreadable: []
+notes: >
+  The homepage says the project is a Cloud Native Computing Foundation incubation project; that describes its hosting, not an owning company, so no maintainer or parent is recorded. The runtimeMin of 21 comes from the release notes listing Java 21 support and Java 17 deprecated; the getting-started zip page asks for OpenJDK 25. The downloads page lists a JavaScript release on a separate cycle, which is not recorded. The endoflife.date cycle 26.8 is the current line. Keycloak is self-hostable by design, but no selfHostOption wording was copied, so the field is not recorded.

@@ -1,0 +1,278 @@
+id: typo3-cms
+name: TYPO3
+status: accepted
+checkedAt: 2026-10-18
+description: Open-source PHP content management system with a browser-based backend, Fluid templating and multi-site, multi-language site handling.
+facts:
+  - field: name
+    value: TYPO3
+    url: https://typo3.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: homepage
+    value: https://typo3.org
+    url: https://api.github.com/repos/TYPO3/typo3
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/TYPO3/typo3
+    url: https://api.github.com/repos/TYPO3/typo3
+    checkedAt: 2026-10-18
+    via: api
+    quote: "Synchronized mirror of https://review.typo3.org/q/project:Packages/TYPO3.CMS"
+  - field: docs
+    value: https://docs.typo3.org/
+    url: https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Index.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: firstRelease
+    value: 2000
+    url: https://typo3.com/typo3-cms/the-typo3-story
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Kasper launched the first public beta in August 2000"
+  - field: maintainer
+    value: TYPO3 Association
+    url: https://typo3.org/project/association
+    checkedAt: 2026-10-18
+    via: page
+    quote: "The not-for-profit TYPO3 Association was founded to foster the health, value, and sustainability of the TYPO3 Project."
+  - field: maintainerType
+    value: foundation
+    url: https://typo3.org/project/association
+    checkedAt: 2026-10-18
+    via: page
+  - field: hqCountry
+    value: CH
+    url: https://typo3.org/project/association
+    checkedAt: 2026-10-18
+    via: page
+  - field: parent
+    value: TYPO3 Association, owner of TYPO3 GmbH (founded 2016)
+    url: https://typo3.org/project/association
+    checkedAt: 2026-10-18
+    via: page
+  - field: wikidata
+    value: Q618512
+    url: https://www.wikidata.org/wiki/Q618512
+    checkedAt: 2026-10-18
+    via: api
+  - field: categories
+    value: [cms]
+    url: https://api.github.com/repos/TYPO3/typo3
+    checkedAt: 2026-10-18
+    via: api
+    quote: "The TYPO3 Core - Enterprise Content Management System."
+  - field: basedOn
+    value: [symfony, doctrine-dbal]
+    url: https://repo.packagist.org/p2/typo3/cms-core.json
+    checkedAt: 2026-10-18
+    via: api
+    quote: "doctrine/dbal: ~4.4.4; symfony/http-foundation: ^7.4.13"
+  - field: language
+    value: PHP
+    url: https://get.typo3.org/version/14
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtime
+    value: php
+    url: https://get.typo3.org/version/14
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: "8.2"
+    url: https://repo.packagist.org/p2/typo3/cms-core.json
+    checkedAt: 2026-10-18
+    via: api
+    quote: "php: ^8.2 (v14.3.9)"
+  - field: runtimeMin
+    value: "8.2"
+    url: https://get.typo3.org/version/14
+    checkedAt: 2026-10-18
+    via: page
+    quote: "PHP 8.2.0 to 8.5.99"
+  - field: contentStore
+    value: database
+    url: https://get.typo3.org/version/14
+    checkedAt: 2026-10-18
+    via: page
+  - field: databases
+    value: [mariadb, mysql, postgres, sqlite]
+    url: https://get.typo3.org/version/14
+    checkedAt: 2026-10-18
+    via: page
+    quote: "MariaDB 10.4.3, MySQL 8.0.17, PostgreSQL 10.0, SQLite 3.8.3 (minimums)"
+  - field: adminUi
+    value: yes, browser-based backend at /typo3/
+    url: https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Installation/Install.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Open the Backend login in a browser."
+  - field: templating
+    value: [fluid]
+    url: https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Concepts/Fluid/Index.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "TYPO3's template engine of choice is called Fluid."
+  - field: i18n
+    value: yes, localized records and interface labels in core
+    url: https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Localization/Index.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: multisite
+    value: yes, several frontend sites per instance
+    url: https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SiteHandling/Index.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "The site handling defines entry points to the frontend sites of a TYPO3 instance"
+  - field: renderingModes
+    value: [server]
+    url: https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Concepts/Fluid/Index.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: installMethod
+    value: [composer create-project typo3/cms-base-distribution, ddev]
+    url: https://get.typo3.org/version/14
+    checkedAt: 2026-10-18
+    via: page
+    quote: "composer create-project \"typo3/cms-base-distribution:^14.3\" my-new-project"
+  - field: installMethod
+    value: [ddev composer create-project typo3/cms-base-distribution]
+    url: https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Installation/Install.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value:
+      - "web servers: Apache httpd, Nginx, Microsoft IIS, Caddy"
+      - "Composer 2.1+"
+      - "256 MB RAM minimum"
+      - "PHP extensions: pdo, dom, intl, json, libxml, mbstring, pcre, session, sodium, tokenizer, xml"
+    url: https://get.typo3.org/version/14
+    checkedAt: 2026-10-18
+    via: page
+  - field: license
+    value: GPL-2.0-or-later
+    url: https://packagist.org/packages/typo3/cms-core.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: license
+    value: GPL-2.0
+    url: https://api.github.com/repos/TYPO3/typo3
+    checkedAt: 2026-10-18
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://packagist.org/packages/typo3/cms-core.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: paidSupport
+    value: ELTS, paid extended long-term support from TYPO3 GmbH in one-year periods; prices not listed
+    url: https://typo3.com/services/extended-support-elts
+    checkedAt: 2026-10-18
+    via: page
+    quote: "ELTS is official vendor support for the open source TYPO3 CMS."
+  - field: latestVersion
+    value: 14.3.9
+    url: https://repo.packagist.org/p2/typo3/cms-core.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-13
+    url: https://repo.packagist.org/p2/typo3/cms-core.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - cycle: "14"
+        support: 2027-12-31
+        eol: 2029-06-30
+        elts: 2032-06-30
+      - cycle: "13"
+        support: 2026-06-30
+        eol: 2027-12-31
+        elts: 2030-12-31
+      - cycle: "12"
+        eol: 2026-04-30
+        elts: 2029-04-30
+      - cycle: "11"
+        eol: 2024-10-31
+        elts: 2027-10-31
+    url: https://endoflife.date/api/typo3.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: releaseCadence
+    value: feature releases x.1 to x.3 every few months, one LTS per major about every 1.5 years
+    url: https://typo3.com/typo3-cms/development-roadmap/roadmap
+    checkedAt: 2026-10-18
+    via: page
+  - field: eolPolicy
+    value: LTS fully supported for 1.5 years, then security fixes, then paid ELTS
+    url: https://typo3.com/typo3-cms/development-roadmap/roadmap
+    checkedAt: 2026-10-18
+    via: page
+    quote: "will be fully supported for 1.5 years"
+  - field: endoflifeId
+    value: typo3
+    url: https://endoflife.date/api/typo3.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 1215
+    url: https://api.github.com/repos/TYPO3/typo3
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistDownloads
+    value: {total: 14685571, monthly: 467138}
+    url: https://packagist.org/packages/typo3/cms-core.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistName
+    value: typo3/cms-core
+    url: https://packagist.org/packages/typo3/cms-core.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: pluginDirectory
+    value: https://extensions.typo3.org/
+    url: https://typo3.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: pluginCount
+    value: 9198
+    url: https://extensions.typo3.org/api/v1/extension?per_page=1
+    checkedAt: 2026-10-18
+    via: api
+  - field: starters
+    value: [typo3/cms-base-distribution]
+    url: https://get.typo3.org/version/14
+    checkedAt: 2026-10-18
+    via: page
+  - field: forum
+    value: https://typo3.community/
+    url: https://typo3.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: mastodon
+    value: https://typo3.social/@typo3
+    url: https://typo3.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/typo3.com
+    url: https://typo3.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: newsletter
+    value: https://news.typo3.com/newsletter
+    url: https://typo3.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: runsAs
+    value: [per-request]
+    url: https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Installation/Install.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "The docroot is the folder containing the files accessible to the webserver"
+notFound: [forkOf, successorOf, headlessApi, buildCommand, outputDir, deployTargets, docker, paidEditions, pricingPage, contributors, usageShare, discord, subreddit, x]
+unreadable: [https://extensions.typo3.org/]
+notes: >
+  Code review runs on Gerrit (review.typo3.org); github.com/TYPO3/typo3 is a synchronized mirror without GitHub releases, so contributors is left out. typo3/cms-core is one of many split core packages; its Packagist downloads stand for the core, not for sites. forum points to the typo3.community hub, which typo3.org links without naming a forum. hqCountry is the TYPO3 Association's seat (Sissach, Switzerland). No headless API was found in core docs. paidSupport is coined for paid vendor support of an open-source release (ELTS), distinct from paidEditions. The extensions.typo3.org page renders without readable content; the count comes from its public API instead.

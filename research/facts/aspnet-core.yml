@@ -1,0 +1,121 @@
+id: aspnet-core
+name: ASP.NET Core
+status: accepted
+checkedAt: 2026-10-19
+description: Cross-platform, open-source framework for building web apps and services with .NET and C#.
+facts:
+  - field: name
+    value: ASP.NET Core
+    url: https://asp.net
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Free. Cross-platform. Open source."
+  - field: homepage
+    value: https://asp.net
+    url: https://asp.net
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: https://github.com/dotnet/aspnetcore
+    url: https://github.com/dotnet/aspnetcore
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core
+    url: https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: MIT
+    url: https://github.com/dotnet/aspnetcore
+    checkedAt: 2026-10-19
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/dotnet/aspnetcore/blob/v10.0.13/LICENSE.txt
+    checkedAt: 2026-10-19
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://asp.net
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Free. Cross-platform. Open source."
+  - field: maintainer
+    value: .NET Foundation
+    url: https://github.com/dotnet/aspnetcore/blob/v10.0.13/LICENSE.txt
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Copyright (c) .NET Foundation and Contributors"
+  - field: maintainerType
+    value: foundation
+    url: https://github.com/dotnet/aspnetcore/blob/v10.0.13/LICENSE.txt
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Copyright (c) .NET Foundation and Contributors"
+  - field: language
+    value: C#
+    url: https://github.com/dotnet/aspnetcore
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [dotnet]
+    url: https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-10.0
+    checkedAt: 2026-10-19
+    via: page
+    quote: "What's new in ASP.NET Core in .NET 10"
+  - field: runtimeMin
+    value: "10.0"
+    url: https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-10.0
+    checkedAt: 2026-10-19
+    via: page
+    quote: "What's new in ASP.NET Core in .NET 10"
+  - field: installMethod
+    value: dotnet new
+    url: https://learn.microsoft.com/en-us/aspnet/core/getting-started/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "dotnet new webapp -o RazorPagesSample"
+  - field: templating
+    value: [razor, blazor]
+    url: https://asp.net
+    checkedAt: 2026-10-19
+    via: page
+    quote: "ASP.NET Core comes with everything you need to build web apps including Blazor"
+  - field: processModel
+    value: long-running server (Kestrel HTTP server)
+    url: https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Kestrel : A high-performance and cross-platform HTTP server."
+  - field: currentMajor
+    value: 10
+    url: https://github.com/dotnet/aspnetcore/releases/tag/v10.0.13
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-13
+    url: https://github.com/dotnet/aspnetcore/releases/tag/v10.0.13
+    checkedAt: 2026-10-19
+    via: api
+  - field: endoflifeId
+    value: dotnet
+    url: https://endoflife.date/api/dotnet.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 38475
+    url: https://github.com/dotnet/aspnetcore
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/
+    checkedAt: 2026-10-19
+    via: page
+notFound: [hqCountry, firstRelease, parent, wikidata, eolPolicy, pricingPage, paidEditions, freeTier, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, starters, regions, apiLimits, databases, sso, i18n]
+unreadable:
+  - "https://learn.microsoft.com/en-us/aspnet/core/getting-started/: carries a banner saying it is not the latest version, so the install command is cited with that caveat"
+notes: >
+  The CSV row has no note; the repo is the dotnet/aspnetcore monorepo. The endoflife.date product for ASP.NET Core is listed under dotnet (the .NET runtime line), which is recorded as endoflifeId; there is no aspnetcore product there. The release notes page fetched is for .NET 10. The getting-started page carries a not-latest-version banner, so its install command is cited with that caveat. The homepage describes Blazor as part of the framework, so templating lists razor and blazor. Kestrel is named on the overview page as the HTTP server, recorded as processModel. The homepage has no X or Bluesky link in the text read, so none is recorded.

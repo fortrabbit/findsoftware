@@ -1,0 +1,210 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { extendDescription, licenceUrl, providerList, publisherRef, valueTitle, websiteRef } from '../../lib/seo';
+import ProviderRegister from '../../components/ProviderRegister.astro';
+import PageFigure from '../../components/PageFigure.astro';
+import Questions from '../../components/Questions.astro';
+import { facetIndex, facetRoutes, loadFacets, pairsFor } from '../../lib/facets';
+import { fieldOf, subjectOf } from '../../lib/fields';
+import { summarise, valueOpening, valueSentences } from '../../lib/summarise';
+import { valueCardPath } from '../../lib/og';
+import { newest } from '../../lib/modified';
+import { faqSchema, questionsFor, topicOf } from '../../lib/questions';
+
+/*
+ * One static page per facet value in use. These are what a crawler follows and
+ * what a reader without JavaScript gets: the register narrowed to one value,
+ * with the narrowing in the path rather than in a query string.
+ *
+ * It carries no filters. Ticking a second value here would contradict the URL,
+ * the heading and the prose all at once, so the page links into the register
+ * with this value already set and lets combining happen there.
+ */
+export async function getStaticPaths() {
+  return facetRoutes();
+}
+
+const { facet, value, matches } = Astro.props;
+
+const { facets } = await loadFacets();
+
+/* Phrased in fields.yml, beside the field it describes — see subjectOf. */
+const summary = summarise(matches, facets, facet.id, subjectOf(fieldOf.get(facet.field)!, value, matches.length));
+
+/* The most recently changed record on this page, for the schema's dateModified. */
+const newestChecked = newest(matches.map((row) => row.modifiedAt)) ?? null;
+
+/*
+ * A written explainer exists for some values and not others, which is the
+ * intended state: filler for all of them would be thin content by definition.
+ * Its title heads the browser tab only — the heading stays the value's own
+ * label, so the page and the filter that leads to it say the same word.
+ */
+const origin = Astro.site?.origin ?? '';
+const notes = await getCollection('notes');
+const note = notes.find((entry) => entry.id === `${facet.id}/${value.id}`);
+const Note = note ? (await render(note)).Content : null;
+const figure = note?.data.figure;
+
+/* A note's one line, then as much of the counted summary as a search result shows. */
+const description = note?.data.description
+  ? extendDescription(
+      note.data.description,
+      valueSentences(matches, facets, facet.id, subjectOf(fieldOf.get(facet.field)!, value, matches.length)),
+    )
+  : summary;
+
+/*
+ * The count, what the records have in common and what is missing, in one
+ * annotation. They were three stacked blocks of numbers, two of them opening
+ * with the same total — read as a wall and skipped as one.
+ *
+ * One string, for the reason given in ProviderRegister.astro.
+ */
+const counted = [
+  /* Where nobody has written about the value, the providers are named instead. */
+  note?.body?.trim()
+    ? summary
+    : valueOpening(matches, facets, facet.id, subjectOf(fieldOf.get(facet.field)!, value, matches.length)),
+  facet.unknown > 0 &&
+    `${facet.unknown} ${facet.unknown === 1 ? 'record does' : 'records do'} not record this field, and cannot appear here either way.`,
+  facet.notApplicable > 0 && `For ${facet.notApplicable} the question does not apply.`,
+]
+  .filter(Boolean)
+  .join(' ');
+
+/* The value's questions, the facet's asked of this value, and the one every page asks. */
+const facetNote = notes.find((entry) => entry.id === facet.id);
+const questions = questionsFor(
+  value.label,
+  topicOf(facet.id, value.label, note?.data.topic),
+  facetNote?.data.faq,
+  note?.data.faq,
+);
+
+/*
+ * The combinations this value is half of. They are how anybody reaches
+ * /runtimes/php/regions/germany/: a pair page is linked from its two parents
+ * and from nowhere else.
+ */
+const combined = (await pairsFor(facet.id, value.id)).map((group) => ({
+  ...group,
+  /*
+   * The separators built into the data, not into the markup. Astro drops a
+   * whitespace-only text node between two expressions, so `{link}, ` in a
+   * template renders "GermanyUnited Kingdom" the moment a formatter puts them on
+   * separate lines — see ProviderRegister.astro, where the same bug shipped.
+   */
+  rows: group.rows.map((row, index) => ({
+    ...row,
+    tail: index === group.rows.length - 1 ? '.' : index === group.rows.length - 2 ? ' and ' : ', ',
+  })),
+}));
+---
+
+<Base
+  title={`${note?.data.title ?? valueTitle(facet.id, value)} — FindSoftware`}
+  description={description}
+  markdown={`${facetIndex(facet.id)}${value.slug}.md`}
+  image={valueCardPath(facet.id, value.slug)}
+  imageAlt={`A FindSoftware card: ${matches.length} providers recorded as ${value.label.toLowerCase()}.`}
+  schema={[
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'FindSoftware', item: `${origin}/` },
+        { '@type': 'ListItem', position: 2, name: facet.label, item: `${origin}${facetIndex(facet.id)}` },
+        { '@type': 'ListItem', position: 3, name: value.label },
+      ],
+    },
+    {
+      '@type': 'CollectionPage',
+      url: `${origin}${facetIndex(facet.id)}${value.slug}/`,
+      name: note?.data.title ?? valueTitle(facet.id, value),
+      description,
+      inLanguage: 'en',
+      isPartOf: websiteRef(origin),
+      publisher: publisherRef(origin),
+      license: licenceUrl,
+      /*
+       * The newest date any record on this page was read against the provider's
+       * own pages. A page is as current as its most recent claim, and where no
+       * record on it carries one the property is absent rather than invented.
+       */
+      ...(newestChecked ? { dateModified: newestChecked.toISOString().slice(0, 10) } : {}),
+      mainEntity: providerList(origin, matches),
+    },
+    faqSchema(questions),
+  ]}
+>
+  {/* The parent, and only the parent — the register is the wordmark's job. */}
+  <p class="crumb" data-pagefind-ignore><a href={facetIndex(facet.id)}>{facet.label}</a></p>
+
+  <div class="page-head">
+    <h1>{value.label}</h1>
+    <a class="find-onward" data-pagefind-ignore href={`/?${facet.id}=${value.id}`}>Combine filters →</a>
+  </div>
+
+  <PageFigure figure={figure} />
+
+  {Note && <Note />}
+
+  {/* What we know about the set, after what a person wrote about it. */}
+  <p class="annotation">{counted}</p>
+
+  {
+    /*
+     * Above the list rather than under it. Under 114 records it was eight and a
+     * half screens down, which is reachable by a crawler and by nobody else —
+     * and these are a way *into* the register rather than a footnote to it.
+     */
+    combined.length > 0 && (
+      <div class="pair-bands">
+        {combined.map((group) => (
+          <section class="pair-links" data-pagefind-ignore>
+            {/*
+             * A heading, not a link. It led to the same list without the providers
+             * on it, which is a click that gives nothing back — the values are what
+             * there is to click. The rung keeps a link so a crawler still reaches it
+             * and deleting the last URL segment still lands somewhere.
+             */}
+            <h2>By {group.label.toLowerCase()}</h2>
+            {group.index && (
+              <a class="visually-hidden" href={group.index}>
+                Every {group.label.toLowerCase()} page for {value.label}
+              </a>
+            )}
+
+            {/*
+             * A sentence, not a table. Each of these has a count, and eight counts
+             * above the list they are counting is more arithmetic than a way in
+             * needs — the page behind the link says how many, which is soon enough.
+             */}
+            <p class="pair-line">
+              {group.rows.map((row) => (
+                <>
+                  <a href={row.href}>{row.label}</a>
+                  {row.tail}
+                </>
+              ))}
+            </p>
+          </section>
+        ))}
+      </div>
+    )
+  }
+
+  <ProviderRegister
+    providers={matches}
+    facets={facets}
+    seed={{ facet: facet.id, value: value.id, label: value.label }}
+  />
+
+  <Questions questions={questions} />
+</Base>
+
+{/* For the extended/slim toggle only. This page ships no filters — its URL is the narrowing. */}
+<script>
+  import '../../scripts/find.ts';
+</script>

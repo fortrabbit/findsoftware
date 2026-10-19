@@ -1,0 +1,236 @@
+id: symfony
+name: Symfony
+status: accepted
+checkedAt: 2026-10-18
+description: PHP full-stack web framework built from a set of reusable, standalone components.
+facts:
+  - field: name
+    value: Symfony
+    url: https://symfony.com
+    checkedAt: 2026-10-18
+    via: page
+  - field: homepage
+    value: https://symfony.com
+    url: https://github.com/symfony/symfony
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/symfony/symfony
+    url: https://github.com/symfony/symfony
+    checkedAt: 2026-10-18
+    via: api
+  - field: docs
+    value: https://symfony.com/doc/current/index.html
+    url: https://symfony.com/doc/current/setup.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: maintainer
+    value: Symfony SAS
+    url: https://sensiolabs.com/legal/notice
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Symfony™ is a trademark of Symfony SAS."
+  - field: maintainerType
+    value: company
+    url: https://sensiolabs.com/legal/notice
+    checkedAt: 2026-10-18
+    via: page
+  - field: hqCountry
+    value: FR
+    url: https://sensiolabs.com/legal/notice
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Symfony SAS 163 quai du Docteur Dervaux - CS 30083 - 92665 Asnières-sur-Seine Cedex, France"
+  - field: wikidata
+    value: Q1322933
+    url: https://www.wikidata.org/wiki/Q1322933
+    checkedAt: 2026-10-18
+    via: api
+  - field: categories
+    value: [framework, components]
+    url: https://symfony.com
+    checkedAt: 2026-10-18
+    via: page
+    quote: "As a full-stack framework, Symfony offers everything you need"
+  - field: language
+    value: PHP
+    url: https://github.com/symfony/symfony
+    checkedAt: 2026-10-18
+    via: api
+  - field: runtime
+    value: php
+    url: https://symfony.com/doc/current/setup.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: "8.4.1"
+    url: https://repo.packagist.org/p2/symfony/symfony.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: runtimeMin
+    value: "8.4"
+    url: https://symfony.com/doc/current/setup.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Install PHP 8.4 or higher and these PHP extensions"
+  - field: databases
+    value: [mysql, mariadb, postgres, mongodb]
+    url: https://symfony.com/doc/current/doctrine.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "These tools support relational databases like MySQL and PostgreSQL and also NoSQL databases like MongoDB."
+  - field: templating
+    value: [twig]
+    url: https://symfony.com
+    checkedAt: 2026-10-18
+    via: page
+  - field: i18n
+    value: yes
+    url: https://symfony.com/doc/current/translation.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: renderingModes
+    value: [server]
+    url: https://symfony.com
+    checkedAt: 2026-10-18
+    via: page
+  - field: installMethod
+    value: [symfony new (Symfony CLI), composer create-project symfony/skeleton]
+    url: https://symfony.com/doc/current/setup.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "symfony new my_project_directory --version=lts --webapp"
+  - field: deployTargets
+    value: [Upsun, shared hosting with Apache, platforms as a service]
+    url: https://symfony.com/doc/current/deployment.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value:
+      - "php extensions: ctype, iconv, pcre, session, simplexml, tokenizer"
+      - "document root: public"
+    url: https://symfony.com/doc/current/setup.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: docker
+    value: https://github.com/dunglas/symfony-docker
+    url: https://symfony.com/doc/current/setup/docker.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: license
+    value: MIT
+    url: https://github.com/symfony/symfony
+    checkedAt: 2026-10-18
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/symfony/symfony
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestVersion
+    value: v8.1.9
+    url: https://github.com/symfony/symfony/releases
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-14
+    url: https://github.com/symfony/symfony/releases
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - {cycle: "8.1", released: 2026-05-29, bugFixesUntil: 2027-01-31, securityUntil: 2027-01-31}
+      - {cycle: "7.4", lts: true, released: 2025-11-27, bugFixesUntil: 2028-11-30, securityUntil: 2029-11-30}
+      - {cycle: "6.4", lts: true, released: 2023-11-29, bugFixesUntil: 2026-11-30, securityUntil: 2027-11-30}
+    url: https://endoflife.date/api/symfony.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value: ["8.1", "7.4", "6.4"]
+    url: https://symfony.com/releases
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Maintained Symfony branches"
+  - field: eolPolicy
+    value: "https://symfony.com/doc/current/contributing/community/releases.html: standard versions get bug and security fixes for 8 months, LTS versions bug fixes for 3 years and security fixes for 4 years"
+    url: https://symfony.com/doc/current/contributing/community/releases.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: releaseCadence
+    value: minor every six months (May, November), major every two years in November of odd years
+    url: https://symfony.com/doc/current/contributing/community/releases.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Symfony major version (e.g. 6.0, 7.0, 8.0) comes out every two years in November of odd years"
+  - field: endoflifeId
+    value: symfony
+    url: https://endoflife.date/api/symfony.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 31191
+    url: https://github.com/symfony/symfony
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistName
+    value: symfony/symfony
+    url: https://packagist.org/packages/symfony/symfony
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistDownloads
+    value: {total: 88119012, monthly: 255927}
+    url: https://packagist.org/packages/symfony/symfony.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistDownloads
+    value: {package: symfony/framework-bundle, total: 275764526, monthly: 7788227}
+    url: https://packagist.org/packages/symfony/framework-bundle.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: pluginDirectory
+    value: https://symfony.com/bundles
+    url: https://symfony.com/bundles
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Bundles provide ready-to-use features for Symfony applications"
+  - field: starters
+    value: [symfony/skeleton, webapp pack, symfony/demo]
+    url: https://symfony.com/doc/current/setup.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: forum
+    value: https://github.com/symfony/symfony/discussions
+    url: https://symfony.com/community
+    checkedAt: 2026-10-18
+    via: page
+  - field: chat
+    value: https://symfony.com/slack
+    url: https://symfony.com/community
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Hang on the Slack chat"
+  - field: mastodon
+    value: https://mastodon.social/@symfony
+    url: https://symfony.com/community
+    checkedAt: 2026-10-18
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/symfony.com
+    url: https://symfony.com/community
+    checkedAt: 2026-10-18
+    via: page
+  - field: x
+    value: https://twitter.com/symfony
+    url: https://symfony.com/community
+    checkedAt: 2026-10-18
+    via: page
+  - field: runsAs
+    value: [per-request]
+    url: https://symfony.com/doc/current/setup.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "In production, you should install a web server like Nginx or Apache and configure it to run Symfony"
+notFound: [firstRelease, parent, forkOf, successorOf, contributors, buildCommand, outputDir, pluginCount, discord, subreddit, newsletter, paidEditions, usageShare]
+unreadable: [https://sensiolabs.com/about]
+notes: >
+  The GitHub "latest release" flag points at v5.4.54 (2026-10-15), a 5.4 release outside the branches symfony.com lists as maintained; the releases page names Private Packagist and Ibexa as backers of 5.4, so 5.4 appears to get sponsored extended releases. latestVersion records the newest version line (8.1.9) instead. Symfony's legal notice names Symfony SAS as trademark holder at the same address as SensioLabs, which calls itself "Creator of Symfony"; the ownership link between the two is not stated, so `parent` stays empty. Databases come through Doctrine, which Symfony documents but which is optional. The symfony/symfony monorepo download figure undercounts use, since apps install split components; framework-bundle is recorded as a second figure. Coined field `chat` for Slack and similar chat rooms that are not Discord.

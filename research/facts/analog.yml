@@ -1,0 +1,126 @@
+id: analog
+name: Analog
+status: accepted
+checkedAt: 2026-10-19
+description: Full-stack meta-framework for building Angular applications and websites, with Vite builds and Nitro server integrations.
+facts:
+  - field: homepage
+    value: https://analogjs.org
+    url: https://api.github.com/repos/analogjs/analog
+    checkedAt: 2026-10-19
+    via: api
+  - field: repository
+    value: https://github.com/analogjs/analog
+    url: https://api.github.com/repos/analogjs/analog
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://analogjs.org/docs/getting-started
+    url: https://analogjs.org/docs/getting-started
+    checkedAt: 2026-10-19
+    via: page
+  - field: discord
+    value: https://chat.analogjs.org
+    url: https://github.com/analogjs/analog
+    checkedAt: 2026-10-19
+    via: page
+  - field: categories
+    value: [framework, meta-framework]
+    url: https://github.com/analogjs/analog
+    checkedAt: 2026-10-19
+    via: page
+    quote: "The fullstack meta-framework for Angular."
+  - field: basedOn
+    value: [angular]
+    url: https://github.com/analogjs/analog
+    checkedAt: 2026-10-19
+    via: page
+    quote: "the meta-framework for building applications and websites with Angular"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/analogjs/analog
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://analogjs.org/docs/getting-started
+    checkedAt: 2026-10-19
+    via: page
+  - field: runtimeMin
+    value: "22"
+    url: https://analogjs.org/docs/getting-started
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Node 22 and higher is recommended."
+  - field: installMethod
+    value: npm create analog@latest (also yarn, pnpm, bun create analog; Nx scaffolding)
+    url: https://analogjs.org/docs/getting-started
+    checkedAt: 2026-10-19
+    via: page
+  - field: buildCommand
+    value: npm run build
+    url: https://analogjs.org/docs/getting-started
+    checkedAt: 2026-10-19
+    via: page
+  - field: outputDir
+    value: dist/analog/public (client assets) and dist/analog/server (API and SSR server build)
+    url: https://analogjs.org/docs/getting-started
+    checkedAt: 2026-10-19
+    via: page
+  - field: renderingModes
+    value: [hybrid]
+    url: https://github.com/analogjs/analog
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Hybrid SSR/SSG support"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/analogjs/analog
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://analogjs.org
+    checkedAt: 2026-10-19
+    via: page
+    quote: "free, open source"
+  - field: latestVersion
+    value: 2.8.1
+    url: https://registry.npmjs.org/@analogjs/platform/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-14
+    url: https://api.github.com/repos/analogjs/analog/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 3194
+    url: https://api.github.com/repos/analogjs/analog
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: "100 or more (first page of the API list, no pagination)"
+    url: https://api.github.com/repos/analogjs/analog/contributors?anon=true&per_page=100
+    checkedAt: 2026-10-19
+    via: api
+  - field: npmName
+    value: "@analogjs/platform"
+    url: https://registry.npmjs.org/@analogjs/platform/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: npmWeeklyDownloads
+    value: 17824
+    url: https://api.npmjs.org/downloads/point/last-week/@analogjs/platform
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://analogjs.org/docs/features/deployment/overview
+    checkedAt: 2026-10-19
+    via: page
+    quote: "the result will be an entry point that launches a ready-to-run Node server"
+notFound: [templating, firstRelease, maintainer, maintainerType, hqCountry, parent, forkOf, successorOf, contentStore, databases, adminUi, headlessApi, multisite, deployTargets, serverNeeds, processModel, docker, paidEditions, pricingPage, freeTier, usageShare, pluginDirectory, pluginCount, starters, forum, subreddit, mastodon, bluesky, x, newsletter, supportedVersions, eolPolicy, endoflifeId, releaseCadence, i18n, userRoles, sso, wikidata]
+unreadable: []
+notes: >
+  The homepage shows build output in dist/client and dist/ssr, while the getting-started docs state dist/analog/public and dist/analog/server; the docs value is recorded because it is the documented one, and the homepage paths are not recorded. The docs recommend Node 22 and higher; the repository root package.json lists engines node ^22.22.3 || ^24.15.0 || ^26.0.0 for the monorepo, which is not recorded as the runtime minimum. The docs require Angular v17 or higher; the record uses the README's "meta-framework for Angular" for basedOn and does not record the v17 floor. The README names Nx and CodeRabbit as sponsors and Zerops as a partner; these are not fields. The company or team behind Analog is not named on the pages read; "free, open source" comes from the homepage. The deployment section named in the docs sidebar was not fetched, so deployTargets and serverNeeds stay unknown. The GitHub contributor count is capped at the first API page.

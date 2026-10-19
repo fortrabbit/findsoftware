@@ -1,0 +1,269 @@
+id: kirby
+name: Kirby
+status: accepted
+checkedAt: 2026-10-18
+description: File-based PHP content management system that stores content in text files and ships a browser-based admin Panel.
+facts:
+  - field: name
+    value: Kirby
+    url: https://getkirby.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: homepage
+    value: https://getkirby.com
+    url: https://api.github.com/repos/getkirby/kirby
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/getkirby/kirby
+    url: https://packagist.org/packages/getkirby/cms.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: docs
+    value: https://getkirby.com/docs
+    url: https://getkirby.com/docs/guide/quickstart
+    checkedAt: 2026-10-18
+    via: page
+  - field: maintainer
+    value: Content Folder GmbH & Co. KG
+    url: https://getkirby.com/contact
+    checkedAt: 2026-10-18
+    via: page
+  - field: maintainerType
+    value: company
+    url: https://getkirby.com/contact
+    checkedAt: 2026-10-18
+    via: page
+  - field: hqCountry
+    value: DE
+    url: https://getkirby.com/contact
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Böhmer Weg 22, 69151 Neckargemünd, Germany"
+  - field: wikidata
+    value: Q56297856
+    url: https://www.wikidata.org/wiki/Q56297856
+    checkedAt: 2026-10-18
+    via: api
+  - field: categories
+    value: [cms, flat-file-cms]
+    url: https://getkirby.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: basedOn
+    value: [vue]
+    url: https://getkirby.com/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "PHP 8 + Vue.js"
+  - field: language
+    value: PHP
+    url: https://getkirby.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtime
+    value: php
+    url: https://getkirby.com/docs/guide/quickstart
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: "8.2"
+    url: https://repo.packagist.org/p2/getkirby/cms.json
+    checkedAt: 2026-10-18
+    via: api
+    quote: "php: ~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0 (5.6.1)"
+  - field: runtimeMin
+    value: "8.2"
+    url: https://getkirby.com/docs/guide/quickstart#requirements
+    checkedAt: 2026-10-18
+    via: page
+    quote: "PHP 8.5, PHP 8.4 (recommended), PHP 8.3, PHP 8.2"
+  - field: contentStore
+    value: flat-file
+    url: https://getkirby.com/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Kirby stores your content in simple text files"
+  - field: adminUi
+    value: yes, the Panel (Vue.js)
+    url: https://getkirby.com/docs/guide/api/introduction
+    checkedAt: 2026-10-18
+    via: page
+  - field: headlessApi
+    value: [rest]
+    url: https://getkirby.com/docs/guide/api/introduction
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Kirby's REST API is used by the Panel to connect between the Vue frontend and the PHP backend"
+  - field: headlessApi
+    value: headless use supported
+    url: https://getkirby.com/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Headless or not – you decide."
+  - field: templating
+    value: [php]
+    url: https://getkirby.com/docs/guide/templates/basics
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Templates contain the HTML for your pages, spiced up with some PHP"
+  - field: i18n
+    value: yes, built in, enabled in config
+    url: https://getkirby.com/docs/guide/languages/introduction
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Define any number of languages for your site."
+  - field: renderingModes
+    value: [server]
+    url: https://getkirby.com/docs/guide/templates/basics
+    checkedAt: 2026-10-18
+    via: page
+  - field: installMethod
+    value: [zip download, composer create-project getkirby/starterkit, kirby cli, git clone, herd]
+    url: https://getkirby.com/docs/guide/quickstart
+    checkedAt: 2026-10-18
+    via: page
+    quote: "composer create-project getkirby/starterkit project-folder"
+  - field: serverNeeds
+    value:
+      - "web servers: Apache out of the box; nginx and Caddy need config"
+      - "deny web access to content, site and kirby folders"
+    url: https://getkirby.com/docs/guide/quickstart#requirements
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Apache works out of the box."
+  - field: serverNeeds
+    value:
+      - "required PHP extensions: gd or ImageMagick, ctype, curl, dom, filter, hash, iconv, json, libxml, mbstring, openssl, SimpleXML"
+      - "optional: apcu, memcached, PDO, zip, zlib"
+    url: https://getkirby.com/docs/reference/system/requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: license
+    value: proprietary
+    url: https://packagist.org/packages/getkirby/cms.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: licenseModel
+    value: source-available
+    url: https://getkirby.com/license
+    checkedAt: 2026-10-18
+    via: page
+    quote: "While Kirby's source code is publicly available, Kirby is not free."
+  - field: freeTier
+    value: free for local development and client preview, paid license for production
+    url: https://getkirby.com/license
+    checkedAt: 2026-10-18
+    via: page
+  - field: paidEditions
+    value:
+      - name: Kirby Basic
+        price: 99
+        currency: EUR
+        period: one-time per site, 3 years of updates; 3-year upgrade €59
+        adds: all features; for revenue or funding below €1 million in the last 12 months
+      - name: Kirby Enterprise
+        price: 349
+        currency: EUR
+        period: one-time per site, 3 years of updates; 3-year upgrade €249
+        adds: no revenue limit
+    url: https://getkirby.com/buy
+    checkedAt: 2026-10-18
+    via: page
+    quote: "€ 99 per site"
+  - field: pricingPage
+    value: https://getkirby.com/buy
+    url: https://getkirby.com/buy
+    checkedAt: 2026-10-18
+    via: page
+  - field: latestVersion
+    value: 5.6.1
+    url: https://api.github.com/repos/getkirby/kirby/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-06
+    url: https://api.github.com/repos/getkirby/kirby/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - cycle: "5"
+        eol: false
+        php: "8.2 - 8.4"
+      - cycle: "4"
+        eol: 2026-11-28
+        php: "8.1 - 8.4"
+    url: https://endoflife.date/api/kirby.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: endoflifeId
+    value: kirby
+    url: https://endoflife.date/api/kirby.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 1536
+    url: https://api.github.com/repos/getkirby/kirby
+    checkedAt: 2026-10-18
+    via: api
+  - field: contributors
+    value: 78
+    url: https://api.github.com/repos/getkirby/kirby/contributors
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistDownloads
+    value: {total: 680567, monthly: 34228}
+    url: https://packagist.org/packages/getkirby/cms.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistName
+    value: getkirby/cms
+    url: https://packagist.org/packages/getkirby/cms.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: pluginDirectory
+    value: https://plugins.getkirby.com/
+    url: https://plugins.getkirby.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: starters
+    value: [https://github.com/getkirby/starterkit, https://github.com/getkirby/plainkit]
+    url: https://getkirby.com/docs/guide/quickstart
+    checkedAt: 2026-10-18
+    via: page
+  - field: discord
+    value: https://chat.getkirby.com
+    url: https://getkirby.com/contact
+    checkedAt: 2026-10-18
+    via: page
+  - field: forum
+    value: https://forum.getkirby.com
+    url: https://getkirby.com/contact
+    checkedAt: 2026-10-18
+    via: page
+  - field: mastodon
+    value: https://mastodon.social/@getkirby
+    url: https://getkirby.com/contact
+    checkedAt: 2026-10-18
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/getkirby.com
+    url: https://getkirby.com/contact
+    checkedAt: 2026-10-18
+    via: page
+  - field: newsletter
+    value: https://getkirby.com/kosmos
+    url: https://getkirby.com/contact
+    checkedAt: 2026-10-18
+    via: page
+  - field: runsAs
+    value: [per-request]
+    url: https://getkirby.com/docs/guide/quickstart
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Apache works out of the box."
+notFound: [firstRelease, parent, forkOf, successorOf, databases, multisite, buildCommand, outputDir, deployTargets, docker, eolPolicy, releaseCadence, pluginCount, usageShare, subreddit, x, npmName]
+unreadable: []
+notes: >
+  The buy page already says licenses include "Kirby 6" while the latest stable release is 5.6.1; 6.0.0-beta.1 is on Packagist and drops PHP 8.2. The site footer reads "© Copyright 2009-2026", which is not stated as a first release year, so firstRelease stays out. The plugin directory shows no total count. Kirby needs no database; PDO is an optional extension for connecting to one. endoflife.date lists PHP 8.2 - 8.4 for Kirby 5 while Packagist and the docs allow 8.5 too. freeTier is used here for a self-hosted license that is free outside production, a reuse of the hosted-services field worth reviewing.

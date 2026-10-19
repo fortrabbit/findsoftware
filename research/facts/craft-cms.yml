@@ -1,0 +1,298 @@
+id: craft-cms
+name: Craft CMS
+status: accepted
+checkedAt: 2026-10-18
+description: Database-backed PHP content management system with a control panel, Twig templating and a GraphQL API.
+facts:
+  - field: name
+    value: Craft CMS
+    url: https://craftcms.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: homepage
+    value: https://craftcms.com
+    url: https://api.github.com/repos/craftcms/cms
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/craftcms/cms
+    url: https://packagist.org/packages/craftcms/cms.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: docs
+    value: https://craftcms.com/docs/5.x/
+    url: https://craftcms.com/docs/5.x/
+    checkedAt: 2026-10-18
+    via: page
+  - field: maintainer
+    value: Pixel & Tonic, Inc.
+    url: https://craftcms.com/about
+    checkedAt: 2026-10-18
+    via: page
+    quote: "a product by Pixel & Tonic"
+  - field: maintainerType
+    value: company
+    url: https://craftcms.com/about
+    checkedAt: 2026-10-18
+    via: page
+  - field: hqCountry
+    value: US
+    url: https://pixelandtonic.com
+    checkedAt: 2026-10-18
+    via: page
+    quote: "320 SW Century Drive Ste 405 #136, Bend, OR 97702"
+  - field: hqCountry
+    value: US
+    url: https://api.github.com/orgs/craftcms
+    checkedAt: 2026-10-18
+    via: api
+  - field: wikidata
+    value: Q110260868
+    url: https://www.wikidata.org/wiki/Q110260868
+    checkedAt: 2026-10-18
+    via: api
+  - field: categories
+    value: [cms]
+    url: https://craftcms.com/docs/5.x/
+    checkedAt: 2026-10-18
+    via: page
+  - field: basedOn
+    value: [yii2]
+    url: https://repo.packagist.org/p2/craftcms/cms.json
+    checkedAt: 2026-10-18
+    via: api
+    quote: "yiisoft/yii2: ~2.0.55.0"
+  - field: language
+    value: PHP
+    url: https://craftcms.com/docs/5.x/requirements.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtime
+    value: php
+    url: https://craftcms.com/docs/5.x/requirements.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: "8.2"
+    url: https://repo.packagist.org/p2/craftcms/cms.json
+    checkedAt: 2026-10-18
+    via: api
+    quote: "php: ^8.2 (5.11.5.1)"
+  - field: runtimeMin
+    value: "8.2"
+    url: https://craftcms.com/docs/5.x/requirements.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "PHP 8.2+"
+  - field: contentStore
+    value: database
+    url: https://craftcms.com/docs/5.x/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "can connect to MySQL and PostgreSQL databases for content storage"
+  - field: databases
+    value: [mysql, mariadb, postgres]
+    url: https://craftcms.com/docs/5.x/requirements.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "MySQL 8.0.17+ using InnoDB; MariaDB 10.4.6+; PostgreSQL 13+"
+  - field: adminUi
+    value: yes, browser-based control panel
+    url: https://craftcms.com/docs/5.x/requirements.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: headlessApi
+    value: [graphql]
+    url: https://craftcms.com/docs/5.x/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "headless applications have access to content via a GraphQL API"
+  - field: templating
+    value: [twig]
+    url: https://craftcms.com/docs/5.x/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Server-side rendering is powered by Twig"
+  - field: multisite
+    value: yes, in every edition including Solo
+    url: https://craftcms.com/pricing
+    checkedAt: 2026-10-18
+    via: page
+    quote: "multi-site and localization"
+  - field: i18n
+    value: yes, localization in every edition
+    url: https://craftcms.com/pricing
+    checkedAt: 2026-10-18
+    via: page
+  - field: renderingModes
+    value: [server]
+    url: https://craftcms.com/docs/5.x/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Server-side rendering is powered by Twig"
+  - field: installMethod
+    value: [ddev composer create-project craftcms/craft, composer create-project]
+    url: https://craftcms.com/docs/5.x/install.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "ddev composer create-project \"craftcms/craft\""
+  - field: deployTargets
+    value: [Craft Cloud]
+    url: https://craftcms.com/docs/5.x/deploy.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "our new scalable hosting platform, designed just for Craft"
+  - field: serverNeeds
+    value:
+      - "PHP extensions: bcmath, ctype, curl, gd, iconv, intl, json, mbstring, openssl, pcre, pdo, reflection, spl, zip, dom"
+      - "writable: storage/*, config/license.key, web/cpresources/*"
+      - "memory_limit 256MB+ (512MB+ recommended)"
+      - "200MB+ free disk"
+      - "Composer 2.0+"
+      - "queue runner: web-based by default, daemonized runner needs restart after deploys"
+      - "SSH access to run console commands"
+    url: https://craftcms.com/docs/5.x/requirements.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value: ["daemonized queue runner restart on deploy", "php craft up during deploy"]
+    url: https://craftcms.com/docs/5.x/deploy.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: license
+    value: proprietary
+    url: https://packagist.org/packages/craftcms/cms.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: license
+    value: Craft License (custom, not SPDX)
+    url: https://github.com/craftcms/cms/blob/5.x/LICENSE.md
+    checkedAt: 2026-10-18
+    via: api
+    quote: "Each licensed copy of the Software shall be actively installed in no more than one production environment"
+  - field: licenseModel
+    value: source-available
+    url: https://github.com/craftcms/cms/blob/5.x/LICENSE.md
+    checkedAt: 2026-10-18
+    via: api
+  - field: paidEditions
+    value:
+      - name: Solo
+        price: 0
+        currency: "$"
+        period: forever
+        adds: one user account, content modeling, multi-site and localization, previewing, Twig and GraphQL
+      - name: Team
+        price: 279
+        currency: "$"
+        period: per project, then $99/year for updates
+        adds: up to five user accounts, one user group, developer support
+      - name: Pro
+        price: 399
+        currency: "$"
+        period: per project, then $99/year for updates
+        adds: unlimited users and user groups, branded control panel and communication
+      - name: Enterprise
+        price: null
+        adds: SAML SSO, custom license agreement, procurement and premium support
+    url: https://craftcms.com/pricing
+    checkedAt: 2026-10-18
+    via: page
+    quote: "$279 per project"
+  - field: pricingPage
+    value: https://craftcms.com/pricing
+    url: https://craftcms.com/pricing
+    checkedAt: 2026-10-18
+    via: page
+  - field: latestVersion
+    value: 5.11.5.1
+    url: https://api.github.com/repos/craftcms/cms/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-08
+    url: https://api.github.com/repos/craftcms/cms/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - cycle: "5"
+        support: 2030-12-31
+        eol: 2031-12-31
+    url: https://endoflife.date/api/craft-cms.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: endoflifeId
+    value: craft-cms
+    url: https://endoflife.date/api/craft-cms.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 3616
+    url: https://api.github.com/repos/craftcms/cms
+    checkedAt: 2026-10-18
+    via: api
+  - field: contributors
+    value: 252
+    url: https://api.github.com/repos/craftcms/cms/contributors
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistDownloads
+    value: {total: 3801890, monthly: 53586}
+    url: https://packagist.org/packages/craftcms/cms.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistName
+    value: craftcms/cms
+    url: https://packagist.org/packages/craftcms/cms.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: pluginDirectory
+    value: https://plugins.craftcms.com
+    url: https://craftcms.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: pluginCount
+    value: 1639
+    url: https://api.craftcms.com/v1/plugin-store/plugins?perPage=1
+    checkedAt: 2026-10-18
+    via: api
+  - field: starters
+    value:
+      - https://github.com/craftcms/starter-twig
+      - https://github.com/craftcms/starter-nuxt
+      - https://github.com/craftcms/starter-next
+      - https://github.com/craftcms/starter-astro
+      - https://github.com/craftcms/starter-wordpress
+    url: https://craftcms.com/starters
+    checkedAt: 2026-10-18
+    via: page
+  - field: discord
+    value: https://craftcms.com/discord
+    url: https://craftcms.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: mastodon
+    value: https://masto.craftcms.com/@craftcms
+    url: https://craftcms.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/craftcms.com
+    url: https://craftcms.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: newsletter
+    value: https://craftcms.com/newsletter/subscribe
+    url: https://craftcms.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: runsAs
+    value: [per-request]
+    url: https://craftcms.com/docs/5.x/install.html
+    checkedAt: 2026-10-19
+    via: page
+notFound: [firstRelease, parent, forkOf, successorOf, buildCommand, outputDir, docker, releaseCadence, eolPolicy, usageShare, forum, subreddit, x, npmName]
+unreadable: []
+notes: >
+  The official craftcms/docker image repository is archived (last push 2024-12-19), so docker is left out. Craft 6.0.0-alpha.20 is on Packagist and requires PHP ^8.5; the latest stable 5.11.5.1 requires ^8.2. GitHub reports the license as NOASSERTION; the repo's LICENSE.md is a custom per-production-install license, recorded as source-available. Prices carry a "$" symbol without a currency code on the pricing page; the currency field keeps the symbol as stated. Craft 4 reached EOL on 2026-04-30 per endoflife.date. Contributors counts GitHub accounts on the repo, anonymous excluded.

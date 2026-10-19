@@ -1,0 +1,1 @@
+Vitest is a testing framework for JavaScript and TypeScript projects, powered by Vite. Vite is a requirement, so a project that uses Vitest also has Vite installed, as the [guide](https://vitest.dev/guide/) states.

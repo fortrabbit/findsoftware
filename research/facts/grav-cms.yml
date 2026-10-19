@@ -1,0 +1,272 @@
+id: grav-cms
+name: Grav
+status: accepted
+checkedAt: 2026-10-18
+description: Flat-file PHP content management system that stores pages as Markdown and YAML files without a database.
+facts:
+  - field: name
+    value: Grav
+    url: https://getgrav.org
+    checkedAt: 2026-10-18
+    via: page
+  - field: homepage
+    value: https://getgrav.org
+    url: https://github.com/getgrav/grav
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/getgrav/grav
+    url: https://getgrav.org
+    checkedAt: 2026-10-18
+    via: page
+  - field: docs
+    value: https://learn.getgrav.org
+    url: https://getgrav.org
+    checkedAt: 2026-10-18
+    via: page
+  - field: firstRelease
+    value: 2015
+    url: https://getgrav.org/about
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Sep 2015 ... First stable release"
+  - field: maintainer
+    value: Trilby Media
+    url: https://getgrav.org/about
+    checkedAt: 2026-10-18
+    via: page
+    quote: "the company behind Grav"
+  - field: maintainerType
+    value: company
+    url: https://getgrav.org
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Trilby Media builds and maintains Grav"
+  - field: wikidata
+    value: Q56313389
+    url: https://www.wikidata.org/wiki/Q56313389
+    checkedAt: 2026-10-18
+    via: api
+  - field: categories
+    value: [cms, flat-file-cms]
+    url: https://getgrav.org
+    checkedAt: 2026-10-18
+    via: page
+  - field: basedOn
+    value: [Symfony, Twig]
+    url: https://getgrav.org
+    checkedAt: 2026-10-18
+    via: page
+    quote: "PHP 8.3+, Symfony 7, Twig 3"
+  - field: language
+    value: PHP
+    url: https://github.com/getgrav/grav
+    checkedAt: 2026-10-18
+    via: api
+  - field: runtime
+    value: php
+    url: https://learn.getgrav.org/2/basics/requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: "8.3.11"
+    url: https://learn.getgrav.org/2/basics/requirements
+    checkedAt: 2026-10-18
+    via: page
+    quote: "PHP 8.3.11 or higher"
+  - field: runtimeMin
+    value: "^8.3"
+    url: https://repo.packagist.org/p2/getgrav/grav.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: contentStore
+    value: flat-file
+    url: https://getgrav.org
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Your content is a folder of files"
+  - field: databases
+    value: []
+    url: https://learn.getgrav.org/2/basics/requirements
+    checkedAt: 2026-10-18
+    via: page
+    quote: "content is stored in plain text files"
+  - field: adminUi
+    value: yes, Admin 2.0 single-page app (SvelteKit), optional plugin admin2
+    url: https://learn.getgrav.org/2/basics/installation
+    checkedAt: 2026-10-18
+    via: page
+    quote: "bin/gpm install admin2"
+  - field: headlessApi
+    value: rest
+    url: https://getgrav.org/headless
+    checkedAt: 2026-10-18
+    via: page
+    quote: "The API ships with Grav"
+  - field: headlessApi
+    value: rest, via the Grav API plugin, default route /api/v1
+    url: https://learn.getgrav.org/20/api
+    checkedAt: 2026-10-18
+    via: page
+    quote: "The Grav API Plugin adds a RESTful API to your Grav site"
+  - field: templating
+    value: twig
+    url: https://getgrav.org
+    checkedAt: 2026-10-18
+    via: page
+  - field: i18n
+    value: yes
+    url: https://learn.getgrav.org/2/content/multi-language
+    checkedAt: 2026-10-18
+    via: page
+  - field: multisite
+    value: preliminary, admin does not fully support it
+    url: https://learn.getgrav.org/2/advanced/multisite-setup
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Grav has preliminary multisite support available."
+  - field: installMethod
+    value: [zip download, composer create-project getgrav/grav, git clone, docker, cloudron, linode marketplace]
+    url: https://learn.getgrav.org/2/basics/installation
+    checkedAt: 2026-10-18
+    via: page
+    quote: "composer create-project getgrav/grav ~/webroot/grav \"^2.0\""
+  - field: serverNeeds
+    value: [php extensions curl ctype dom gd json libxml mbstring openssl session simplexml zip, apache mod_rewrite or nginx or litespeed or iis url rewrite, web server write access for logs and caches]
+    url: https://learn.getgrav.org/2/basics/requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: docker
+    value: https://github.com/getgrav/docker-grav
+    url: https://learn.getgrav.org/2/basics/installation
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Official image (Apache)"
+  - field: deployTargets
+    value: [Cloudron, Linode Marketplace]
+    url: https://learn.getgrav.org/2/basics/installation
+    checkedAt: 2026-10-18
+    via: page
+  - field: license
+    value: MIT
+    url: https://github.com/getgrav/grav
+    checkedAt: 2026-10-18
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://getgrav.org/headless
+    checkedAt: 2026-10-18
+    via: page
+  - field: paidEditions
+    value:
+      - name: Helios Theme
+        price: 50
+        currency: "$"
+        period: one-time
+        adds: documentation theme
+      - name: Typhoon Publisher Bundle
+        price: 140
+        currency: "$"
+        period: one-time
+        adds: theme plus Editor Pro, Revisions Pro and other premium plugins
+      - name: Helios Publisher Pro Bundle
+        price: 200
+        currency: "$"
+        period: one-time
+        adds: Helios Publisher Bundle plus YetiSearch Pro
+      - name: premium plugins
+        price: 25 to 100
+        currency: "$"
+        period: one-time
+        adds: single plugins such as Editor Pro, Forum Pro, Mailroom, licensed per production site
+    url: https://getgrav.org/premium
+    checkedAt: 2026-10-18
+    via: page
+    quote: "license keys are one-time purchases"
+  - field: pricingPage
+    value: https://getgrav.org/premium
+    url: https://getgrav.org
+    checkedAt: 2026-10-18
+    via: page
+  - field: latestVersion
+    value: "2.2.10"
+    url: https://api.github.com/repos/getgrav/grav/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-17
+    url: https://api.github.com/repos/getgrav/grav/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value: ["2.x (current)", "1.7 (legacy)"]
+    url: https://learn.getgrav.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: githubStars
+    value: 15687
+    url: https://api.github.com/repos/getgrav/grav
+    checkedAt: 2026-10-18
+    via: api
+  - field: contributors
+    value: 215
+    url: https://api.github.com/repos/getgrav/grav/contributors
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistName
+    value: getgrav/grav
+    url: https://packagist.org/packages/getgrav/grav
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistDownloads
+    value: {total: 90772, monthly: 1124}
+    url: https://packagist.org/packages/getgrav/grav.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: pluginDirectory
+    value: https://getgrav.org/downloads/plugins
+    url: https://getgrav.org/downloads/plugins
+    checkedAt: 2026-10-18
+    via: page
+  - field: pluginCount
+    value: 531
+    url: https://getgrav.org/downloads/plugins
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Plugins 531"
+  - field: themeCount
+    value: 131
+    url: https://getgrav.org/downloads/plugins
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Themes 131"
+  - field: forum
+    value: https://getgrav.org/forum
+    url: https://getgrav.org
+    checkedAt: 2026-10-18
+    via: page
+  - field: discord
+    value: https://chat.getgrav.org
+    url: https://getgrav.org
+    checkedAt: 2026-10-18
+    via: page
+  - field: x
+    value: https://twitter.com/getgrav
+    url: https://getgrav.org
+    checkedAt: 2026-10-18
+    via: page
+  - field: newsletter
+    value: yes, sign-up form on homepage
+    url: https://getgrav.org
+    checkedAt: 2026-10-18
+    via: page
+  - field: runsAs
+    value: [per-request]
+    url: https://learn.getgrav.org/17/basics/installation
+    checkedAt: 2026-10-19
+    via: page
+    quote: "All it requires to function is PHP 7.3.6 or higher"
+notFound: [hqCountry, parent, forkOf, successorOf, renderingModes, buildCommand, outputDir, eolPolicy, releaseCadence, endoflifeId, usageShare, starters, subreddit, mastodon, bluesky, npmName]
+unreadable: []
+notes: >
+  Coined themeCount (theme directory size, shown beside the plugin count). The docs disagree on how the REST API ships: getgrav.org/headless says it ships with Grav, the Learn API docs describe a GPM-installed API plugin; both entries are kept. The Grav 1.7 docs (learn.getgrav.org/17) list PHP 7.3.6 as minimum for the legacy line. Premium prices are shown with "$" only, no currency code.

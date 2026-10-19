@@ -1,0 +1,133 @@
+id: sentry
+name: Sentry
+status: accepted
+checkedAt: 2026-10-19
+description: "Application monitoring and error tracking platform, self-hosted or offered as Sentry SaaS."
+facts:
+  - field: homepage
+    value: "https://sentry.io"
+    url: https://sentry.io
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: "https://github.com/getsentry/sentry"
+    url: https://github.com/getsentry/sentry
+    checkedAt: 2026-10-19
+    via: api
+  - field: selfHostedRepository
+    value: "https://github.com/getsentry/self-hosted"
+    url: https://github.com/getsentry/self-hosted
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: "https://develop.sentry.dev/self-hosted/"
+    url: https://develop.sentry.dev/self-hosted/
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: "Functional Software, Inc. (dba Sentry)"
+    url: https://sentry.io
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Sentry is a registered Trademark of Functional Software, Inc."
+  - field: maintainerType
+    value: company
+    url: https://sentry.io
+    checkedAt: 2026-10-19
+    via: page
+  - field: hqCountry
+    value: US
+    url: https://sentry.io/about/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "San Francisco, USA"
+  - field: language
+    value: Python
+    url: https://github.com/getsentry/sentry
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/getsentry/sentry/blob/26.10.0/pyproject.toml
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtimeMin
+    value: "Python 3.13"
+    url: https://github.com/getsentry/sentry/blob/26.10.0/pyproject.toml
+    checkedAt: 2026-10-19
+    via: api
+  - field: installMethod
+    value: [docker-compose, bash-install-script]
+    url: https://develop.sentry.dev/self-hosted/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "we have chosen to use Docker and Docker Compose, along with a bash-based install and upgrade script"
+  - field: serverNeeds
+    value: "4 CPU cores, 16 GB RAM plus 16 GB swap, 20 GB free disk (minimum)"
+    url: https://develop.sentry.dev/self-hosted/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "These are the minimum requirements:"
+  - field: categories
+    value: [error-tracking, apm, session-replay]
+    url: https://sentry.io
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: FSL-1.1-Apache-2.0
+    url: https://github.com/getsentry/sentry/blob/26.10.0/LICENSE.md
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Functional Source License, Version 1.1, Apache 2.0 Future License"
+  - field: licenseModel
+    value: source-available
+    url: https://github.com/getsentry/sentry/blob/26.10.0/LICENSE.md
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Functional Source License, Version 1.1, Apache 2.0 Future License"
+  - field: freeTier
+    value: "Developer plan, free"
+    url: https://sentry.io/pricing/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Free Developer Plan, Pay as You Grow"
+  - field: paidEditions
+    value: ["Business, $26.00/mo (monthly plan base, as shown on the pricing page)", "Team, usage-based per-error pricing"]
+    url: https://sentry.io/pricing/
+    checkedAt: 2026-10-19
+    via: page
+  - field: pricingPage
+    value: "https://sentry.io/pricing/"
+    url: https://sentry.io/pricing/
+    checkedAt: 2026-10-19
+    via: page
+  - field: currentMajor
+    value: 26
+    url: https://github.com/getsentry/sentry/releases/tag/26.10.0
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-16"
+    url: https://github.com/getsentry/sentry/releases/tag/26.10.0
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 45600
+    url: https://github.com/getsentry/sentry
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 1101
+    url: https://github.com/getsentry/sentry
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://develop.sentry.dev/self-hosted/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "run the following to start Sentry: docker compose up --wait"
+notFound: [firstRelease, parent, forkOf, successorOf, alternativeTo, wikidata, eolPolicy, endoflifeId, releaseCadence, regions, pluginDirectory, pluginCount, starters, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, npmName, packagistName, pypiDownloads, processModel, renderingModes, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, databases, importsFrom, docker]
+unreadable: []
+notes: >
+  Sentry's year-based release tags (26.10.0) are calendar versions, so currentMajor is the year part, 26. The GitHub API reports the license as NOASSERTION because LICENSE.md is an FSL file rather than an SPDX text; the FSL converts to Apache 2.0 after two years, so it is not an OSI open-source license. The Business price is printed as a monthly plan base; the Team plan is priced per error on the pricing page. The self-hosted installer lives in a separate repository, recorded as selfHostedRepository, a coined kind. The docs list minimum requirements for the self-hosted stack, which is a separate install from the SaaS.

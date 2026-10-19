@@ -1,0 +1,1 @@
+Pest is a PHP testing framework built on PHPUnit, with its own syntax for writing tests. Pest depends on PHPUnit, so PHPUnit is installed along with it. Nuno Maduro maintains the project, and the [installation guide](https://pestphp.com/docs/installation) covers setup.

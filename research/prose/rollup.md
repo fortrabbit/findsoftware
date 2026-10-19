@@ -1,0 +1,1 @@
+Rollup is a JavaScript module bundler that compiles ES module source code into bundles for browsers, Node.js and other platforms. Rollup contributors maintain the project and hold its copyright. The [introduction](https://rollupjs.org/introduction/) covers the basics of building a bundle.

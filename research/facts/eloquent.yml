@@ -1,0 +1,94 @@
+id: eloquent
+name: Eloquent (illuminate/database)
+status: accepted
+checkedAt: 2026-10-19
+description: PHP database toolkit with a query builder, an ActiveRecord-style ORM and a schema builder, distributed as the database component of Laravel.
+facts:
+  - field: homepage
+    value: https://github.com/illuminate/database
+    url: https://github.com/illuminate/database
+    checkedAt: 2026-10-19
+    via: api
+  - field: repository
+    value: https://github.com/illuminate/database
+    url: https://github.com/illuminate/database
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://laravel.com/framework/docs/eloquent
+    url: https://laravel.com/framework/docs/eloquent
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: Laravel
+    url: https://github.com/illuminate/database
+    checkedAt: 2026-10-19
+    via: page
+    quote: "It also serves as the database layer of the Laravel PHP framework."
+  - field: basedOn
+    value: Laravel
+    url: https://github.com/illuminate/database
+    checkedAt: 2026-10-19
+    via: page
+    quote: "It also serves as the database layer of the Laravel PHP framework."
+  - field: categories
+    value: [orm, query-builder, schema-builder]
+    url: https://github.com/illuminate/database
+    checkedAt: 2026-10-19
+    via: page
+    quote: "full database toolkit for PHP, providing an expressive query builder, ActiveRecord style ORM, and schema builder."
+  - field: language
+    value: PHP
+    url: https://github.com/illuminate/database
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://repo.packagist.org/p2/illuminate/database.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtimeMin
+    value: "PHP 8.3"
+    url: https://repo.packagist.org/p2/illuminate/database.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: databases
+    value: [mysql, postgres, sqlserver, sqlite]
+    url: https://github.com/illuminate/database
+    checkedAt: 2026-10-19
+    via: page
+    quote: "It currently supports MySQL, Postgres, SQL Server, and SQLite."
+  - field: license
+    value: MIT
+    url: https://repo.packagist.org/p2/illuminate/database.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: currentMajor
+    value: 13
+    url: https://repo.packagist.org/p2/illuminate/database.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-15
+    url: https://repo.packagist.org/p2/illuminate/database.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: packagistName
+    value: illuminate/database
+    url: https://packagist.org/packages/illuminate/database.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: packagistDownloads
+    value: 58612233
+    url: https://packagist.org/packages/illuminate/database.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 2774
+    url: https://api.github.com/repos/illuminate/database
+    checkedAt: 2026-10-19
+    via: api
+notFound: [firstRelease, installMethod, paidEditions, hqCountry, pluginDirectory, starters, forum, discord, parent, maintainerType, templating, adminUi]
+unreadable: []
+notes: >
+  Row status accepted; the repository is a read-only subtree split of laravel/framework, which has no releases of its own, so the release date and major come from the Packagist metadata for illuminate/database. The Laravel docs page is the Eloquent section of the framework documentation, and it is the primary source for the ORM's behaviour; this record covers the standalone package, which the readme describes as usable outside Laravel through Capsule. The package is a component of Laravel, so basedOn names Laravel; the boundary against the laravel/framework record is for the record author to settle. The packagist download figure is the all-time total (period total). The installation command for standalone use was not found on the readme, so installMethod is not recorded.

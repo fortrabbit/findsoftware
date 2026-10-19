@@ -1,0 +1,1 @@
+Carbon Design System is a design system that IBM builds and maintains. The @carbon/react package supplies its components, styles and icons to React projects, and the design system also has official support for Web Components. The React documentation says that the components need a build pipeline in the consuming project.

@@ -1,0 +1,1 @@
+Hono is a web framework built on Web Standards, so one application can run on Cloudflare, Fastly, Deno, Bun, AWS or Node.js. The [documentation](https://hono.dev/docs/) describes it as similar to Express, without a frontend. Yusuke Wada and the Hono contributors hold the copyright.

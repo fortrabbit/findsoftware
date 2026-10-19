@@ -1,0 +1,1 @@
+esbuild bundles and minifies JavaScript and TypeScript for the web. It is written in Go and ships as a native binary with a JavaScript API. The [getting-started guide](https://esbuild.github.io/getting-started/) shows how a first build runs.

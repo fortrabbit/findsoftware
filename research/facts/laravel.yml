@@ -1,0 +1,229 @@
+id: laravel
+name: Laravel
+status: accepted
+checkedAt: 2026-10-18
+description: PHP web application framework with routing, an ORM, templating, queues and scheduled jobs.
+facts:
+  - field: name
+    value: Laravel
+    url: https://laravel.com/docs/13.x/installation
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Laravel is a web application framework with expressive, elegant syntax."
+  - field: homepage
+    value: https://laravel.com
+    url: https://github.com/laravel/framework
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/laravel/framework
+    url: https://github.com/laravel/framework
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/laravel/laravel
+    url: https://github.com/laravel/laravel
+    checkedAt: 2026-10-18
+    via: api
+  - field: docs
+    value: https://laravel.com/docs
+    url: https://laravel.com/docs/13.x/installation
+    checkedAt: 2026-10-18
+    via: page
+  - field: maintainer
+    value: Laravel
+    url: https://laravel.com/careers
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Laravel employees are eligible for stock options so that you share in Laravel's overall success."
+  - field: maintainerType
+    value: company
+    url: https://laravel.com/careers
+    checkedAt: 2026-10-18
+    via: page
+    quote: "We are a fully distributed team working together to build the next generation of Laravel packages and products."
+  - field: wikidata
+    value: Q13634357
+    url: https://www.wikidata.org/wiki/Q13634357
+    checkedAt: 2026-10-18
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://laravel.com/docs/13.x/installation
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Laravel may serve as a full stack framework."
+  - field: language
+    value: PHP
+    url: https://github.com/laravel/framework
+    checkedAt: 2026-10-18
+    via: api
+  - field: runtime
+    value: php
+    url: https://laravel.com/docs/13.x/deployment
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: "8.3"
+    url: https://repo.packagist.org/p2/laravel/framework.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: runtimeMin
+    value: "8.3"
+    url: https://laravel.com/docs/13.x/deployment
+    checkedAt: 2026-10-18
+    via: page
+    quote: "PHP >= 8.3"
+  - field: databases
+    value: [mariadb, mysql, postgres, sqlite, sqlserver]
+    url: https://laravel.com/docs/13.x/database
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Currently, Laravel provides first-party support for five databases"
+  - field: templating
+    value: [blade]
+    url: https://laravel.com/docs/13.x/blade
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Blade is the simple, yet powerful templating engine that is included with Laravel."
+  - field: i18n
+    value: yes
+    url: https://laravel.com/docs/13.x/localization
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Laravel's localization features provide a convenient way to retrieve strings in various languages"
+  - field: renderingModes
+    value: [server]
+    url: https://laravel.com/docs/13.x/installation
+    checkedAt: 2026-10-18
+    via: page
+    quote: "render your frontend via Blade templates or a single-page application hybrid technology like Inertia"
+  - field: buildCommand
+    value: npm run build
+    url: https://laravel.com/docs/13.x/installation
+    checkedAt: 2026-10-18
+    via: page
+    quote: "npm install && npm run build"
+  - field: installMethod
+    value: [laravel new (Laravel installer), composer global require laravel/installer]
+    url: https://laravel.com/docs/13.x/installation
+    checkedAt: 2026-10-18
+    via: page
+    quote: "laravel new example-app"
+  - field: deployTargets
+    value: [Laravel Cloud, Laravel Forge, Nginx, FrankenPHP]
+    url: https://laravel.com/docs/13.x/deployment
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value:
+      - "php extensions: ctype, curl, dom, fileinfo, filter, hash, mbstring, openssl, pcre, pdo, session, tokenizer, xml"
+      - "writable paths: storage, bootstrap/cache"
+      - "document root: public"
+      - "process monitor for queue workers, Reverb or Octane when used"
+      - "one cron entry for the scheduler when used"
+    url: https://laravel.com/docs/13.x/deployment
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Laravel will need to write to the bootstrap/cache and storage directories"
+  - field: serverNeeds
+    value: ["one cron entry for the scheduler"]
+    url: https://laravel.com/docs/13.x/scheduling
+    checkedAt: 2026-10-18
+    via: page
+    quote: "When using the scheduler, only a single cron entry is needed on your server."
+  - field: docker
+    value: Laravel Sail (Docker development environment, not a production image)
+    url: https://laravel.com/docs/13.x/sail
+    checkedAt: 2026-10-18
+    via: page
+    quote: "a light-weight command-line interface for interacting with Laravel's default Docker development environment"
+  - field: license
+    value: MIT
+    url: https://github.com/laravel/framework
+    checkedAt: 2026-10-18
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/laravel/framework
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestVersion
+    value: v13.37.0
+    url: https://github.com/laravel/framework/releases
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-16
+    url: https://github.com/laravel/framework/releases
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - {cycle: "13", php: "8.3 - 8.5", released: 2026-03-17, bugFixesUntil: 2027-09-30, securityUntil: 2028-03-17}
+      - {cycle: "12", php: "8.2 - 8.5", released: 2025-02-24, bugFixesUntil: 2026-08-13, securityUntil: 2027-02-24}
+    url: https://endoflife.date/api/laravel.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: eolPolicy
+    value: https://laravel.com/docs/13.x/releases#support-policy
+    url: https://laravel.com/docs/13.x/releases
+    checkedAt: 2026-10-18
+    via: page
+    quote: "bug fixes are provided for 18 months and security fixes are provided for 2 years"
+  - field: releaseCadence
+    value: major yearly (about Q1), minor and patch as often as weekly
+    url: https://laravel.com/docs/13.x/releases
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Major framework releases are released every year (~Q1)"
+  - field: endoflifeId
+    value: laravel
+    url: https://endoflife.date/api/laravel.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 34963
+    url: https://github.com/laravel/framework
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 85181
+    url: https://github.com/laravel/laravel
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistName
+    value: laravel/framework
+    url: https://packagist.org/packages/laravel/framework
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistDownloads
+    value: {total: 598227486, monthly: 17911811}
+    url: https://packagist.org/packages/laravel/framework.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: starters
+    value: [React, Svelte, Vue, Livewire]
+    url: https://laravel.com/docs/13.x/starter-kits
+    checkedAt: 2026-10-18
+    via: page
+  - field: discord
+    value: https://discord.com/invite/laravel
+    url: https://laravel.com/docs/13.x/installation
+    checkedAt: 2026-10-18
+    via: page
+  - field: x
+    value: https://x.com/laravel
+    url: https://laravel.com/docs/13.x/installation
+    checkedAt: 2026-10-18
+    via: page
+  - field: runsAs
+    value: [per-request]
+    url: https://laravel.com/docs/13.x/deployment
+    checkedAt: 2026-10-19
+    via: page
+    quote: "your web server directs all requests to your application's public/index.php file"
+notFound: [firstRelease, hqCountry, parent, forkOf, successorOf, contributors, outputDir, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, paidEditions, usageShare]
+unreadable: []
+notes: >
+  The framework lives in laravel/framework, the application skeleton that `laravel new` installs in laravel/laravel; both repositories are recorded with their own star counts, and packagistName points at the framework. MongoDB support comes from mongodb/laravel-mongodb, maintained by MongoDB, not counted in `databases`. The framework itself is free; the company sells hosted and commercial products around it (Cloud, Forge, Nightwatch, Vapor, Nova), which are not paid editions of the framework. The careers page describes a fully distributed company and names no headquarters country. GitHub's contributors endpoint gives inconsistent totals (capped, anonymous counts differ), so `contributors` stays unknown for every framework in this batch. Renderers beyond Blade (React, Vue, Svelte via Inertia, Livewire) appear as starter kits.

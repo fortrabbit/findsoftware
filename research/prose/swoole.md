@@ -1,0 +1,1 @@
+Swoole is a coroutine-based PHP extension written in C++ that adds networking to PHP, including TCP, UDP, Unix socket, HTTP and WebSocket servers. Because it loads as a PHP extension, the server code runs inside a PHP process. Han Tianfeng is the lead maintainer.

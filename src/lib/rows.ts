@@ -1,0 +1,202 @@
+/**
+ * Turning records into the table every list and every filter reads.
+ *
+ * Kept apart from lib/facets.ts, which loads the collection: everything here is
+ * a pure function of a record's frontmatter and the dictionary, so it can be
+ * tested under plain Node. It may not import `astro:content` — that is the whole
+ * reason the file exists, and the counting rules below are the ones most worth
+ * having a test for.
+ */
+import { recordPath } from './paths.ts';
+import { facetFields, isDerived, slugOf, sourcesOf, type Field } from './fields.ts';
+import { modifiedAt } from './modified.ts';
+
+export interface FacetValue {
+  id: string;
+  label: string;
+  /** The URL segment, from lib/fields.ts — the id unless the field or the value says otherwise. */
+  slug: string;
+  /** The filter panel's version of the label, where the dictionary gives one. */
+  short?: string;
+  count: number;
+}
+
+export interface Facet {
+  /** The URL segment: /software/kirby/. */
+  id: string;
+  label: string;
+  /** The record field it reads. */
+  field: string;
+  /** The values are a scale, so the panel shows them in dictionary order rather than by count. */
+  ordered?: boolean;
+  multiple: boolean;
+  values: FacetValue[];
+  /** Records that do not say. Displayed, never silently dropped. */
+  unknown: number;
+  /*
+   * Records where the field is explicitly null, meaning the question does not
+   * apply — a panel that provisions onto your own cloud account operates no
+   * regions of its own. Counting those as missing is the difference between
+   * "64 records do not record this" and the truth, which is 49.
+   */
+  notApplicable: number;
+}
+
+export interface ProviderRow {
+  id: string;
+  name: string;
+  /*
+   * Where the record's page is, worked out once here rather than by every list
+   * that draws a link to it. Not every record is at the root: see lib/paths.ts.
+   */
+  href: string;
+  description?: string;
+  /** Ours, not the provider's: we like it. Drawn as a heart beside the name. */
+  favorite?: boolean;
+  /** When this record was last read against the provider's own pages. Absent means nobody has. */
+  checkedAt?: Date;
+  /** When anything on the record last changed: `checkedAt` or the newest source date. For machines. */
+  modifiedAt?: Date;
+  /** When the record entered the register. A fact about the register, not about the provider. */
+  addedAt?: Date;
+  /** Present when a third party has verified the energy claim. Not a score. */
+  greenWebId?: number | null;
+  /** Headquarters, as the ISO code a list shows rather than the flag it does not. */
+  country?: string;
+  /** The record's own emoji and colours — the only colour any list carries. */
+  figure?: { emoji: string; color: string; textColor: string; text: string };
+  /** Facet fields only, keyed by field name. A missing key means unknown. */
+  facets: Record<string, string | string[]>;
+  /** Fields this record sets to null: the question does not apply, which is not the same as not knowing. */
+  notApplicable: string[];
+  /** Only on a hidden row: `stub`. Absent on everything in the register. */
+  status?: string;
+}
+
+/** Alphabetical, always — see the sort rule in AGENTS.md. */
+export const byName = (a: { name: string }, b: { name: string }) => a.name.localeCompare(b.name, 'en');
+
+/*
+ * The two dated orders the register offers beside the alphabetical one. Neither
+ * is a ranking: a date says when something happened to the record, not how good
+ * the provider is, and the same row sits in every order. A row without the date
+ * is not the oldest, it is undated, so it goes after every dated row — in the
+ * alphabetical order the register already has, as does a tie.
+ */
+type Dated = 'checkedAt' | 'addedAt';
+
+export const byDate = (key: Dated) => (a: ProviderRow, b: ProviderRow) => {
+  const first = a[key]?.getTime() ?? -Infinity;
+  const second = b[key]?.getTime() ?? -Infinity;
+  return second - first || byName(a, b);
+};
+
+/*
+ * What a record answers for a field, as a list either way. A derived value reads
+ * a source field that may hold one answer or several — `iacSupport: [terraform,
+ * ansible]` is as much an answer to "any infrastructure as code?" as
+ * `apiAvailable: public` is to "an API?" — and stringifying an array to compare
+ * it matched nothing, silently.
+ */
+const held = (value: unknown): string[] =>
+  value === undefined || value === null ? [] : Array.isArray(value) ? value.map(String) : [String(value)];
+
+/** Whether one source of a derived value is answered by this record. */
+const answers = (data: Record<string, unknown>, source: { from: string; when: string[] }) => {
+  const given = held(data[source.from]);
+  /* `*` means "recorded at all", for a source with no vocabulary to name. */
+  return source.when.includes('*') ? given.length > 0 : given.some((answer) => source.when.includes(answer));
+};
+
+export function toRow(record: { id: string; data: Record<string, unknown> }): ProviderRow {
+  const data = record.data;
+  const facets: Record<string, string | string[]> = {};
+  const notApplicable: string[] = [];
+
+  for (const field of facetFields) {
+    /*
+     * A derived field is computed, not read. A record that answers at least one
+     * of the source fields gets an answer here — the list of things it
+     * documents, empty if none — because within a field it has been asked, a
+     * silence is a no rather than a maybe.
+     *
+     * A record answering none of them is unknown, and has to be: a provider
+     * nobody has recorded a price for has not thereby been found to bill in
+     * advance. That is the difference between the facet saying "119 records do
+     * not offer this" and the truth, which is that 37 of them were never asked.
+     */
+    if (isDerived(field.id)) {
+      const asked = field.values.flatMap(sourcesOf).some(({ from }) => held(data[from]).length > 0);
+      if (!asked) continue;
+
+      facets[field.id] = field.values
+        .filter((value) => sourcesOf(value).some((source) => answers(data, source)))
+        .map((value) => value.id);
+      continue;
+    }
+
+    const value = data[field.id];
+    if (value === null) {
+      notApplicable.push(field.id);
+      continue;
+    }
+    if (value === undefined) continue;
+    if (Array.isArray(value)) {
+      if (value.length) facets[field.id] = value.map(String);
+    } else {
+      facets[field.id] = String(value);
+    }
+  }
+
+  return {
+    id: record.id,
+    href: recordPath(record),
+    name: String(data.name),
+    description: data.description as string | undefined,
+    favorite: data.favorite as boolean | undefined,
+    checkedAt: data.checkedAt as Date | undefined,
+    modifiedAt: modifiedAt(data as { checkedAt?: Date; sources?: { checkedAt: Date }[] }),
+    addedAt: data.addedAt as Date | undefined,
+    greenWebId: data.greenWebId as number | null | undefined,
+    country: data.hqCountry as string | undefined,
+    figure: data.figure as ProviderRow['figure'],
+    facets,
+    notApplicable,
+  };
+}
+
+/** Whether a row holds one value of one field, list or scalar. */
+export const rowHolds = (row: ProviderRow, field: string, value: string) => {
+  const answer = row.facets[field];
+  return Array.isArray(answer) ? answer.includes(value) : answer === value;
+};
+
+export function countValues(field: Field, providers: ProviderRow[]): Facet {
+  const applicable = providers.filter((provider) => !provider.notApplicable.includes(field.id));
+  const known = applicable.filter((provider) => provider.facets[field.id] !== undefined);
+
+  /*
+   * A `noFilter` value is still recorded and still shown on the record; it just
+   * never becomes a row here, and so never becomes a page of its own either.
+   */
+  const values = field.values
+    .filter((value) => !value.noFilter)
+    .map((value) => ({
+      id: value.id,
+      label: value.label,
+      slug: slugOf(field, value),
+      ...(value.short ? { short: value.short } : {}),
+      count: known.filter((provider) => rowHolds(provider, field.id, value.id)).length,
+    }));
+
+  return {
+    id: field.facet!,
+    label: field.label,
+    field: field.id,
+    ...(field.ordered ? { ordered: true } : {}),
+    multiple: field.multiple,
+    values,
+    unknown: applicable.length - known.length,
+    notApplicable: providers.length - applicable.length,
+  };
+}

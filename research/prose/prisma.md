@@ -1,0 +1,1 @@
+Prisma ORM reads a schema file that describes a database and generates a type-safe client from it, and application code queries the database through that client. Prisma, the company behind it, also makes the hosted products Prisma Postgres and Prisma Compute. The [ORM documentation](https://www.prisma.io/docs/orm/v7) covers setup and use.

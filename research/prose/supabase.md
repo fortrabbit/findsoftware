@@ -1,0 +1,1 @@
+Supabase is an open-source development platform built around a Postgres database. It adds authentication, storage and APIs on top of that database, and Supabase, the company, offers a hosted service alongside the self-hosted option. The [self-hosting guide](https://supabase.com/docs/guides/self-hosting/docker) describes running the platform as a Docker Compose stack.

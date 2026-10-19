@@ -1,0 +1,131 @@
+id: authentik
+name: authentik
+status: accepted
+checkedAt: 2026-10-19
+description: Self-hosted, open source identity provider with OIDC, SAML, LDAP and proxy authentication.
+facts:
+  - field: name
+    value: authentik
+    url: https://goauthentik.io
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Take control of your identity needs with a secure, flexible solution."
+  - field: homepage
+    value: https://goauthentik.io
+    url: https://goauthentik.io
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: https://github.com/goauthentik/authentik
+    url: https://github.com/goauthentik/authentik
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://docs.goauthentik.io/install-config/install/docker-compose/
+    url: https://docs.goauthentik.io/install-config/install/docker-compose/
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: MIT
+    url: https://github.com/goauthentik/authentik/blob/version/2026.8.4/LICENSE
+    checkedAt: 2026-10-19
+    via: page
+    quote: 'is available under the "MIT" license as defined below.'
+  - field: licenseModel
+    value: open-core
+    url: https://goauthentik.io
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Open-source/Source Available"
+  - field: language
+    value: Python
+    url: https://github.com/goauthentik/authentik
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/goauthentik/authentik/blob/version/2026.8.4/pyproject.toml
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtimeMin
+    value: "3.14"
+    url: https://github.com/goauthentik/authentik/blob/version/2026.8.4/pyproject.toml
+    checkedAt: 2026-10-19
+    via: api
+  - field: installMethod
+    value: docker compose
+    url: https://docs.goauthentik.io/install-config/install/docker-compose/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Docker Compose installation"
+  - field: installMethod
+    value: kubernetes
+    url: https://docs.goauthentik.io/install-config/install/docker-compose/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Kubernetes installation"
+  - field: serverNeeds
+    value: 2 CPU cores and 2 GB of RAM, Podman or Docker Compose v2
+    url: https://docs.goauthentik.io/install-config/install/docker-compose/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "A host with at least 2 CPU cores and 2 GB of RAM"
+  - field: sso
+    value: [oidc, saml, ldap, scim, radius, kerberos, proxy]
+    url: https://goauthentik.io/pricing/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Supports OIDC"
+  - field: maintainer
+    value: Authentik Security Inc.
+    url: https://goauthentik.io
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Copyright © 2026 Authentik Security Inc."
+  - field: maintainerType
+    value: company
+    url: https://goauthentik.io
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Copyright © 2026 Authentik Security Inc."
+  - field: pricingPage
+    value: https://goauthentik.io/pricing/
+    url: https://goauthentik.io/pricing/
+    checkedAt: 2026-10-19
+    via: page
+  - field: paidEditions
+    value: "Enterprise, $5 per user per month"
+    url: https://goauthentik.io/pricing/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "$5 / user / month"
+  - field: endoflifeId
+    value: authentik
+    url: https://endoflife.date/api/authentik.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: currentMajor
+    value: "2026.8"
+    url: https://github.com/goauthentik/authentik/releases/tag/version/2026.8.4
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-14
+    url: https://github.com/goauthentik/authentik/releases/tag/version/2026.8.4
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 26005
+    url: https://github.com/goauthentik/authentik
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.goauthentik.io/install-config/install/docker-compose/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Be sure to run docker compose up -d to rebuild with the new port numbers."
+notFound: [hqCountry, firstRelease, parent, wikidata, eolPolicy, freeTier, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, starters, regions, apiLimits, usageShare, databases, i18n, templating, selfHostOption]
+unreadable: []
+notes: >
+  GitHub reports the license as NOASSERTION. The LICENSE file grants MIT for everything outside three named areas: the website directory under CC BY-SA 4.0, the authentik/enterprise directory under a separate license file that was not read, and client-side JavaScript under MIT Expat. The MIT entry therefore covers the core code outside authentik/enterprise only. The pricing page lists an Open Source tier and an Enterprise tier, and the homepage says "Open-source/Source Available", so licenseModel is open-core. The version scheme is calendar-based (2026.8.4), so currentMajor records the 2026.8 line. The pyproject pins Python ==3.14.*. The pricing page shows the Enterprise price per user; the service-account and external-user rates are not recorded.

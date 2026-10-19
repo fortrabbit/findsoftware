@@ -1,0 +1,117 @@
+id: nginx
+name: nginx
+status: accepted
+checkedAt: 2026-10-19
+description: C-based HTTP web server with reverse proxy, content cache, load balancer and mail proxy features.
+facts:
+  - field: name
+    value: nginx
+    url: https://nginx.org/en/
+    checkedAt: 2026-10-19
+    via: page
+  - field: homepage
+    value: https://nginx.org/
+    url: https://github.com/nginx/nginx
+    checkedAt: 2026-10-19
+    via: api
+  - field: repository
+    value: https://github.com/nginx/nginx
+    url: https://github.com/nginx/nginx
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://nginx.org/en/docs/
+    url: https://nginx.org/en/docs/
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: Nginx, Inc.
+    url: https://nginx.org/LICENSE
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Copyright (C) 2011-2026 Nginx, Inc."
+  - field: maintainerType
+    value: company
+    url: https://nginx.org/LICENSE
+    checkedAt: 2026-10-19
+    via: page
+  - field: categories
+    value: [web-server, reverse-proxy, load-balancer, cache]
+    url: https://nginx.org/en/
+    checkedAt: 2026-10-19
+    via: page
+  - field: language
+    value: C
+    url: https://github.com/nginx/nginx
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: c binary
+    url: https://nginx.org/en/docs/install.html
+    checkedAt: 2026-10-19
+    via: page
+  - field: currentMajor
+    value: "1.30"
+    url: https://nginx.org/en/download.html
+    checkedAt: 2026-10-19
+    via: page
+  - field: latestReleaseDate
+    value: 2026-10-14
+    url: https://github.com/nginx/nginx/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: endoflifeId
+    value: nginx
+    url: https://endoflife.date/nginx
+    checkedAt: 2026-10-19
+    via: api
+  - field: license
+    value: BSD-2-Clause
+    url: https://github.com/nginx/nginx
+    checkedAt: 2026-10-19
+    via: api
+  - field: license
+    value: BSD-2-Clause
+    url: https://nginx.org/en/
+    checkedAt: 2026-10-19
+    via: page
+  - field: licenseModel
+    value: open-source
+    url: https://nginx.org/en/
+    checkedAt: 2026-10-19
+    via: page
+  - field: installMethod
+    value: [linux-packages-from-nginx-org, freebsd-packages, freebsd-ports, build-from-source, windows-binary]
+    url: https://nginx.org/en/docs/install.html
+    checkedAt: 2026-10-19
+    via: page
+  - field: docker
+    value: Docker Official Image nginx
+    url: https://hub.docker.com/_/nginx
+    checkedAt: 2026-10-19
+    via: page
+  - field: forum
+    value: https://forum.nginx.org
+    url: https://nginx.org/en/
+    checkedAt: 2026-10-19
+    via: page
+  - field: x
+    value: https://x.com/nginxorg
+    url: https://nginx.org/en/
+    checkedAt: 2026-10-19
+    via: page
+  - field: githubStargazers
+    value: 31914
+    url: https://api.github.com/repos/nginx/nginx
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://nginx.org/en/docs/beginners_guide.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "nginx has one master process and several worker processes."
+notFound: [hqCountry, firstRelease, runtimeMin, eolPolicy, releaseCadence, paidEditions, pricingPage, freeTier, parent, contributors, pluginDirectory, pluginCount, adminUi, headlessApi, i18n, multisite, userRoles, sso, serverNeeds, processModel, renderingModes, discord, subreddit, mastodon, bluesky, newsletter, usageShare, packagistName, npmName, pypiDownloads, npmWeeklyDownloads, packagistDownloads, wikidata]
+unreadable: []
+notes: >
+  Two license statements: the GitHub API reports BSD-2-Clause and the homepage states the 2-clause BSD License; both are recorded and agree. Mainline is 1.31.7 and stable is 1.30.6 on the download page; currentMajor follows the stable line. Commercial support and the NGINX Plus edition come from F5, Inc.; no price is stated on the F5 pages, so paidEditions is not recorded. The homepage says enterprise distributions, commercial support and training are available from F5, Inc.; F5 ownership is not stated on these pages, so parent is not recorded. The Docker Hub pull count in candidates-server-infra.csv (13.5B) was not re-read. NGINX Unit (unit.nginx.org) is a separate application server and has no fact file here. Fields coined here: none.

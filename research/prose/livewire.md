@@ -1,0 +1,1 @@
+Livewire is a full-stack framework for Laravel that builds dynamic user interfaces in PHP, so the interactive parts of a Laravel application do not need a separate JavaScript framework. The [installation guide](https://livewire.laravel.com/docs/installation) describes adding it to a Laravel project.

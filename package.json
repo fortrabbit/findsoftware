@@ -1,0 +1,44 @@
+{
+  "name": "findsoftware",
+  "type": "module",
+  "private": true,
+  "version": "0.0.1",
+  "license": "SEE LICENSE IN LICENSE-CODE",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "node scripts/deploy-env.mjs && astro build && node scripts/index-search.mjs",
+    "preview": "astro preview",
+    "check": "astro check",
+    "validate": "node scripts/validate.ts",
+    "test": "node --test 'src/**/*.test.ts'",
+    "test:e2e": "playwright test",
+    "format": "prettier --check .",
+    "format:write": "prettier --write .",
+    "linkcheck": "node scripts/linkcheck.mjs",
+    "linkcheck:internal": "node scripts/internal-links.mjs",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/markdown-satteri": "^0.3.5",
+    "@fontsource/charis-sil": "^5.3.0",
+    "@resvg/resvg-wasm": "^2.6.2",
+    "@twemoji/svg": "^15.0.0",
+    "astro": "^7.1.6",
+    "pagefind": "^1.5.2",
+    "satori": "^0.29.0",
+    "yaml": "^2.9.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.1.2",
+    "bootstrap-icons": "^1.13.1",
+    "prettier": "^3.9.6",
+    "prettier-plugin-astro": "^0.14.1",
+    "typescript": "^6.0.3"
+  }
+}

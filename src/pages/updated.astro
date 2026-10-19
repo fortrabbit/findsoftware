@@ -1,0 +1,63 @@
+---
+import Base from '../layouts/Base.astro';
+import ProviderRegister from '../components/ProviderRegister.astro';
+import FindFilters from '../components/FindFilters.astro';
+import { besideTheRegister, loadFacets, registerLists } from '../lib/facets';
+import { byDate } from '../lib/rows';
+import { licenceUrl, providerList, publisherRef, websiteRef } from '../lib/seo';
+
+/*
+ * The register in the order it was last read: the same rows, the same filters,
+ * newest check first. `checkedAt` is the one date this project stands behind,
+ * which is why this order exists and a "last edited" one does not.
+ */
+const { facets, providers } = await loadFacets();
+
+const registers = await registerLists();
+
+/*
+ * The groups the panel does not offer as a list of its own: they stay in the
+ * sentence over the register, which is where a reader asks what happened to a
+ * host rather than what to buy.
+ */
+const offered = new Set(registers.map((register) => register.key));
+const beside = (await besideTheRegister()).filter((group) => !offered.has(group.key));
+
+const origin = Astro.site?.origin ?? '';
+const description =
+  "Every project in the register, in the order its record was last checked against the project's own pages.";
+---
+
+<Base
+  title="Updated — FindSoftware"
+  description={description}
+  schema={[
+    {
+      '@type': 'CollectionPage',
+      url: `${origin}/updated/`,
+      name: 'Updated',
+      description,
+      inLanguage: 'en',
+      isPartOf: websiteRef(origin),
+      publisher: publisherRef(origin),
+      license: licenceUrl,
+      /* The same rows in the same order the list below draws, newest first. */
+      mainEntity: providerList(origin, [...providers].sort(byDate('checkedAt')), 'descending'),
+    },
+  ]}
+>
+  <h1>Updated</h1>
+
+  <p class="annotation">
+    The register, newest check first: a record moves up when it is read against the provider's own pages. The ones
+    nobody has checked yet sit at the end. The date is on each record.
+  </p>
+
+  <ProviderRegister providers={providers} facets={facets} beside={beside} registers={registers} sort="updated">
+    <FindFilters facets={facets} providers={providers} registers={registers} />
+  </ProviderRegister>
+</Base>
+
+<script>
+  import '../scripts/find.ts';
+</script>

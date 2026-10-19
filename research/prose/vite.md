@@ -1,0 +1,1 @@
+Vite is a frontend build tool that runs a development server while a project is worked on and produces bundled output for production. VoidZero Inc., a company, develops Vite together with its contributors. The [guide](https://vite.dev/guide/) covers project setup, the development server and builds.

@@ -1,0 +1,259 @@
+id: drupal
+name: Drupal
+status: accepted
+checkedAt: 2026-10-18
+description: Open-source PHP content management system and framework built on Symfony components, with Twig theming and core JSON:API and REST modules.
+facts:
+  - field: name
+    value: Drupal
+    url: https://www.drupal.org/about
+    checkedAt: 2026-10-18
+    via: page
+  - field: homepage
+    value: https://www.drupal.org
+    url: https://www.drupal.org/about
+    checkedAt: 2026-10-18
+    via: page
+  - field: repository
+    value: https://github.com/drupal/drupal
+    url: https://api.github.com/repos/drupal/drupal
+    checkedAt: 2026-10-18
+    via: api
+    quote: "Verbatim mirror of the git.drupal.org repository for Drupal core."
+  - field: docs
+    value: https://www.drupal.org/docs
+    url: https://www.drupal.org/docs/getting-started/system-requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: firstRelease
+    value: 2001
+    url: https://www.drupal.org/about/history
+    checkedAt: 2026-10-18
+    via: page
+    quote: "It wasn't until January 2001 that Dries decided to release the software behind drop.org."
+  - field: maintainer
+    value: Drupal community, supported by the Drupal Association
+    url: https://www.drupal.org/about
+    checkedAt: 2026-10-18
+    via: page
+    quote: "the non-profit that supports the Drupal project"
+  - field: maintainerType
+    value: community
+    url: https://www.drupal.org/about
+    checkedAt: 2026-10-18
+    via: page
+  - field: wikidata
+    value: Q170855
+    url: https://www.wikidata.org/wiki/Q170855
+    checkedAt: 2026-10-18
+    via: api
+  - field: categories
+    value: [cms, framework]
+    url: https://new.drupal.org/download
+    checkedAt: 2026-10-18
+    via: page
+  - field: distributions
+    value: [Drupal CMS, Drupal core]
+    url: https://new.drupal.org/download
+    checkedAt: 2026-10-18
+    via: page
+    quote: "puts the power of Drupal into the hands of marketers, designers and content creators"
+  - field: basedOn
+    value: [symfony]
+    url: https://repo.packagist.org/p2/drupal/core.json
+    checkedAt: 2026-10-18
+    via: api
+    quote: "symfony/http-kernel: ^7.4.12"
+  - field: language
+    value: PHP
+    url: https://www.drupal.org/docs/getting-started/system-requirements/php-requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtime
+    value: php
+    url: https://www.drupal.org/docs/getting-started/system-requirements/php-requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: "8.3"
+    url: https://repo.packagist.org/p2/drupal/core.json
+    checkedAt: 2026-10-18
+    via: api
+    quote: "php: >=8.3.0 (11.4.10)"
+  - field: runtimeMin
+    value: "8.3"
+    url: https://www.drupal.org/docs/getting-started/system-requirements/php-requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: contentStore
+    value: database
+    url: https://www.drupal.org/docs/getting-started/system-requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: databases
+    value: [mariadb, mysql, postgres, sqlite]
+    url: https://www.drupal.org/docs/getting-started/system-requirements/database-server-requirements
+    checkedAt: 2026-10-18
+    via: page
+    quote: "MariaDB 10.6+, MySQL 8.0+, PostgreSQL 16+, SQLite 3.45+ (Drupal 11)"
+  - field: adminUi
+    value: yes, browser-based administration
+    url: https://new.drupal.org/download
+    checkedAt: 2026-10-18
+    via: page
+  - field: headlessApi
+    value: [jsonapi, rest]
+    url: https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module
+    checkedAt: 2026-10-18
+    via: page
+    quote: "The Drupal core JSON:API module implements the JSON:API spec for Drupal entities."
+  - field: templating
+    value: [twig]
+    url: https://www.drupal.org/docs/develop/theming-drupal
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Twig is the default template engine for Drupal."
+  - field: i18n
+    value: yes, built-in translation modules
+    url: https://www.drupal.org/docs/multilingual-guide
+    checkedAt: 2026-10-18
+    via: page
+    quote: "How to translate configuration in Drupal 8+ using built-in translation module."
+  - field: multisite
+    value: yes, several sites from one codebase
+    url: https://www.drupal.org/docs/getting-started/multisite-drupal
+    checkedAt: 2026-10-18
+    via: page
+    quote: "a feature that allows separate, independent sites to be served from a single codebase"
+  - field: renderingModes
+    value: [server]
+    url: https://www.drupal.org/docs/develop/theming-drupal
+    checkedAt: 2026-10-18
+    via: page
+  - field: installMethod
+    value: [composer create-project drupal/recommended-project, Drupal CMS desktop app, ddev]
+    url: https://new.drupal.org/download
+    checkedAt: 2026-10-18
+    via: page
+    quote: "composer create-project drupal/recommended-project drupal"
+  - field: serverNeeds
+    value:
+      - "web servers: Apache, Nginx and others"
+      - "Linux or similar for production; Windows for development only"
+      - "MySQL transaction isolation READ-COMMITTED recommended"
+    url: https://www.drupal.org/docs/getting-started/system-requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value:
+      - "PHP extensions: pdo plus a database driver, xml, dom, gd, json; curl and mbstring for some features; openssl recommended"
+    url: https://www.drupal.org/docs/getting-started/system-requirements/php-requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value: ["PostgreSQL needs the pg_trgm extension"]
+    url: https://www.drupal.org/docs/getting-started/system-requirements/database-server-requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: license
+    value: GPL-2.0-or-later
+    url: https://packagist.org/packages/drupal/core.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: license
+    value: GPL
+    url: https://www.drupal.org/about
+    checkedAt: 2026-10-18
+    via: page
+    quote: "distributed under the terms of the GNU General Public License"
+  - field: licenseModel
+    value: open-source
+    url: https://www.drupal.org/about
+    checkedAt: 2026-10-18
+    via: page
+  - field: latestVersion
+    value: 11.4.10
+    url: https://repo.packagist.org/p2/drupal/core.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-14
+    url: https://repo.packagist.org/p2/drupal/core.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - cycle: "11.4"
+        support: 2027-01-01
+        eol: 2027-07-07
+      - cycle: "11.3"
+        support: 2026-06-16
+        eol: 2026-12-16
+      - cycle: "10.6"
+        support: 2026-06-16
+        eol: 2026-12-16
+    url: https://endoflife.date/api/drupal.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value: [10.6.x, 11.3.x, 11.4.x, 11.5.x, 12.0.x]
+    url: https://updates.drupal.org/release-history/drupal/current
+    checkedAt: 2026-10-18
+    via: api
+    quote: "supported_branches: 10.6.,11.3.,11.4.,11.5.,12.0."
+  - field: releaseCadence
+    value: monthly bugfix window, monthly security window, major about every two years; Drupal 12 due week of 2026-12-07
+    url: https://www.drupal.org/about/core/policies/core-release-cycles/schedule
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Drupal 12 will be released on the week of December 7, 2026."
+  - field: eolPolicy
+    value: older minors lose security support when newer minors ship; Drupal 10 EOL 2026-12-09
+    url: https://www.drupal.org/about/core/policies/core-release-cycles/schedule
+    checkedAt: 2026-10-18
+    via: page
+  - field: endoflifeId
+    value: drupal
+    url: https://endoflife.date/api/drupal.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 4292
+    url: https://api.github.com/repos/drupal/drupal
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistDownloads
+    value: {total: 70956278, monthly: 1545987}
+    url: https://packagist.org/packages/drupal/core.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistName
+    value: drupal/core
+    url: https://packagist.org/packages/drupal/core.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: reportedInstalls
+    value: 707349
+    url: https://www.drupal.org/api-d7/node.json?field_project_machine_name=drupal
+    checkedAt: 2026-10-18
+    via: api
+  - field: pluginDirectory
+    value: https://www.drupal.org/project/project_module
+    url: https://www.drupal.org/api-d7/node.json?type=project_module&field_project_type=full&limit=1
+    checkedAt: 2026-10-18
+    via: api
+  - field: pluginCount
+    value: 39446
+    url: https://www.drupal.org/api-d7/node.json?type=project_module&field_project_type=full&limit=1
+    checkedAt: 2026-10-18
+    via: api
+  - field: runsAs
+    value: [per-request]
+    url: https://www.drupal.org/docs/getting-started/system-requirements
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Drupal works on Apache, Nginx, and other web servers."
+notFound: [hqCountry, parent, forkOf, successorOf, buildCommand, outputDir, deployTargets, docker, paidEditions, pricingPage, contributors, usageShare, starters, forum, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: []
+notes: >
+  The repository field is the GitHub mirror, which states it mirrors git.drupal.org; the mirror has no GitHub releases and its contributor list does not reflect authorship, so contributors is left out. reportedInstalls is the sum of drupal.org's weekly project_usage per branch for Drupal core (sites that report via the Update module), coined here. pluginCount counts full module projects of any status on drupal.org, including unsupported ones. distributions is coined for the two documented starting points, Drupal CMS and Drupal core. The Drupal Association is a non-profit; its location was not stated on its page, so hqCountry stays out. Docker Hub's "drupal" image is a Docker Official Image, not published by the project.

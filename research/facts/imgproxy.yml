@@ -1,0 +1,134 @@
+id: imgproxy
+name: imgproxy
+status: accepted
+checkedAt: 2026-10-19
+description: "Server for on-the-fly image processing, resizing and format conversion, driven by URL parameters."
+facts:
+  - field: homepage
+    value: "https://imgproxy.net"
+    url: https://imgproxy.net
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: "https://github.com/imgproxy/imgproxy"
+    url: https://github.com/imgproxy/imgproxy
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: "https://docs.imgproxy.net"
+    url: https://docs.imgproxy.net
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: "Foxes With Matches, Inc."
+    url: https://docs.imgproxy.net
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Copyright © 2026 Foxes With Matches, Inc."
+  - field: maintainerType
+    value: company
+    url: https://docs.imgproxy.net
+    checkedAt: 2026-10-19
+    via: page
+  - field: language
+    value: Go
+    url: https://github.com/imgproxy/imgproxy
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [go-binary]
+    url: https://github.com/imgproxy/imgproxy/blob/v4.0.18/go.mod
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtimeMin
+    value: "Go 1.27.0 (build toolchain in go.mod at v4.0.18)"
+    url: https://github.com/imgproxy/imgproxy/blob/v4.0.18/go.mod
+    checkedAt: 2026-10-19
+    via: api
+  - field: systemDependencies
+    value: [libvips]
+    url: https://docs.imgproxy.net/installation
+    checkedAt: 2026-10-19
+    via: page
+    quote: "imgproxy depends on libvips which has a lot of its own dependencies."
+  - field: installMethod
+    value: [docker, linux-package-build-script, aws-cloudformation-template]
+    url: https://docs.imgproxy.net/installation
+    checkedAt: 2026-10-19
+    via: page
+    quote: "imgproxy can (and this is highly recommended) be used as a standalone application inside a Docker container."
+  - field: docker
+    value: "ghcr.io/imgproxy/imgproxy"
+    url: https://docs.imgproxy.net/installation
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Just pull the official image from GitHub Container Registry"
+  - field: categories
+    value: [image-processing, image-server]
+    url: https://imgproxy.net
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/imgproxy/imgproxy/blob/v4.0.18/LICENSE
+    checkedAt: 2026-10-19
+    via: api
+  - field: license
+    value: MIT
+    url: https://docs.imgproxy.net
+    checkedAt: 2026-10-19
+    via: page
+    quote: "imgproxy is licensed under the MIT license."
+  - field: licenseModel
+    value: open-core
+    url: https://imgproxy.net
+    checkedAt: 2026-10-19
+    via: page
+    quote: "imgproxy is an open-core product: the open-source version is published on GitHub and there is also a closed-source Pro version"
+  - field: paidEditions
+    value: ["Pro, $49 /mo or $499 /yr", "Tier listed as Price on request"]
+    url: https://imgproxy.net/pricing
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Go ahead with the Pro version from $ 49 /mo"
+  - field: freeTier
+    value: "Open-source version, all free features; Pro offers a 14-day free trial"
+    url: https://imgproxy.net
+    checkedAt: 2026-10-19
+    via: page
+    quote: "14-day free trial period"
+  - field: pricingPage
+    value: "https://imgproxy.net/pricing"
+    url: https://imgproxy.net/pricing
+    checkedAt: 2026-10-19
+    via: page
+  - field: currentMajor
+    value: 4
+    url: https://github.com/imgproxy/imgproxy/releases/tag/v4.0.18
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-14"
+    url: https://github.com/imgproxy/imgproxy/releases/tag/v4.0.18
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 11129
+    url: https://github.com/imgproxy/imgproxy
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 119
+    url: https://github.com/imgproxy/imgproxy
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.imgproxy.net/installation
+    checkedAt: 2026-10-19
+    via: page
+    quote: "imgproxy can (and this is highly recommended) be used as a standalone application inside a Docker container."
+notFound: [firstRelease, parent, forkOf, successorOf, alternativeTo, wikidata, hqCountry, eolPolicy, endoflifeId, releaseCadence, regions, pluginDirectory, pluginCount, starters, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, npmName, packagistName, pypiDownloads, processModel, renderingModes, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, databases, importsFrom, serverNeeds]
+unreadable: []
+notes: >
+  Two license statements disagree. The LICENSE file at tag v4.0.18 and the GitHub API both say Apache-2.0, while the documentation says "imgproxy is licensed under the MIT license." Both are recorded as separate license entries, and the difference is not resolved in this file. The Pro price is printed with a strikethrough figure, so only the remaining figures are recorded. The systemDependencies, docker and runtimeMin fields are coined kinds for libvips, the image and the build toolchain.

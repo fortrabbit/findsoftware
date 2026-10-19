@@ -1,0 +1,136 @@
+/*
+ * Design tokens. Two layers on purpose: primitives name the value, semantic
+ * tokens name the job. Components may only use the semantic layer, so a palette
+ * change happens here and nowhere else.
+ *
+ * There is no grey. Ink is ink and paper is paper — hierarchy comes from size,
+ * weight and rule thickness, never from fading text out. A dimmed grey is the
+ * lazy way to say "less important", and it costs contrast to do it.
+ */
+
+:root {
+  /* Primitives */
+  --paper: #ffffff;
+  --pitch: #000000;
+  --blue-600: #1a3fd0;
+  --blue-300: #89aaff;
+  --blue-50: #eef2ff;
+  --blue-950: #10183a;
+  --rose-50: #fdeaef;
+  --rose-950: #2a0d15;
+  --rose-500: #c81e4b;
+  --rose-300: #ff8fac;
+  --violet-700: #5b2a97;
+  --violet-300: #c7a6ff;
+  --amber-200: #ffe9a3;
+  --amber-800: #5a4200;
+
+  /* Semantic colour — two, plus links */
+  --color-page: var(--paper);
+  --color-ink: var(--pitch);
+  --color-link: var(--blue-600);
+  --color-link-visited: var(--violet-700);
+  /* Where a jump landed. The one colour here that marks a moment rather than a role. */
+  --color-landed: var(--amber-200);
+  /* The row under the pointer. Barely there on purpose: it marks a target, not a state. */
+  --color-hover: var(--blue-50);
+  --color-liked: var(--rose-50);
+  --color-heart: var(--rose-500);
+  --color-social: var(--blue-50);
+
+  /* Typeface roles. All installed faces — no webfont, nothing to load. */
+  --font-display: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia, serif;
+  --font-text: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-data: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* Type scale — the only way anything is de-emphasised */
+  --text-xs: 0.75rem;
+  --text-sm: 0.86rem;
+  --text-base: 1.09rem;
+  --text-md: 1.19rem;
+  --text-lg: 1.65rem;
+  --text-xl: 2rem;
+  --text-2xl: 4rem;
+
+  /* Display sizes want less air, not the same ratio scaled up with the type */
+  --leading-display: 1.02;
+  --leading-tight: 1.2;
+  --leading-data: 1.38;
+  --leading-body: 1.62;
+
+  --weight-strong: 600;
+
+  /* Space scale */
+  --space-3xs: 0.15rem;
+  --space-2xs: 0.3rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.15rem;
+  --space-lg: 1.8rem;
+  --space-xl: 2.8rem;
+  --space-2xl: 4rem;
+
+  /* Rules carry the weight a second grey would have carried */
+  --rule-hairline: 1px;
+  --rule-strong: 2px;
+  --rule-heavy: 4px;
+
+  /* Enough to take the sharpness off a corner, not enough to read as a pill */
+  --radius: 3px;
+
+  /* Measures — prose is read, data is scanned, and they want different widths */
+  --measure-prose: 58ch;
+  --measure-data: 46rem;
+  --measure-page: 62rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-page: var(--pitch);
+    --color-ink: var(--paper);
+    --color-link: var(--blue-300);
+    --color-link-visited: var(--violet-300);
+    --color-landed: var(--amber-800);
+    --color-hover: var(--blue-950);
+    --color-liked: var(--rose-950);
+    --color-heart: var(--rose-300);
+    --color-social: var(--blue-950);
+  }
+}
+
+/* An explicit choice always wins over the OS preference, in both directions. */
+:root[data-theme='dark'] {
+  --color-page: var(--pitch);
+  --color-ink: var(--paper);
+  --color-link: var(--blue-300);
+  --color-link-visited: var(--violet-300);
+  --color-landed: var(--amber-800);
+  --color-hover: var(--blue-950);
+  --color-liked: var(--rose-950);
+  --color-heart: var(--rose-300);
+  --color-social: var(--blue-950);
+}
+
+:root[data-theme='light'] {
+  --color-hover: var(--blue-50);
+  --color-liked: var(--rose-50);
+  --color-heart: var(--rose-500);
+  --color-social: var(--blue-50);
+  --color-page: var(--paper);
+  --color-ink: var(--pitch);
+  --color-link: var(--blue-600);
+  --color-link-visited: var(--violet-700);
+  --color-landed: var(--amber-200);
+}
+
+/*
+ * 1px is the thinnest border CSS can promise, and on a display that can draw
+ * half of one it looks like a drawn line rather than a printed rule. Only where
+ * the screen can actually render it — at 1x a half pixel is a rounding error,
+ * and browsers disagree about which way it rounds.
+ */
+@media (min-resolution: 2dppx) {
+  :root {
+    --rule-hairline: 0.5px;
+  }
+}

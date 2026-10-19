@@ -1,0 +1,1 @@
+Zod is a validation library in which a schema is written once in TypeScript and serves two purposes: it checks incoming values at runtime and gives those values a static type. It works in Node.js and in browsers. Colin McDonnell created the project, and the [Zod documentation](https://zod.dev) is its reference.

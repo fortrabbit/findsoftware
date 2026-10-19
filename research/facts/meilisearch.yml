@@ -1,0 +1,126 @@
+id: meilisearch
+name: Meilisearch
+status: accepted
+checkedAt: 2026-10-19
+description: Search server that indexes documents and answers search queries, self-hosted or as Meilisearch Cloud.
+facts:
+  - field: homepage
+    value: https://www.meilisearch.com
+    url: https://www.meilisearch.com
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: https://github.com/meilisearch/meilisearch
+    url: https://github.com/meilisearch/meilisearch
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://www.meilisearch.com/docs/resources/self_hosting/getting_started/install_locally
+    url: https://www.meilisearch.com/docs/resources/self_hosting/getting_started/install_locally
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: Meili SAS
+    url: https://raw.githubusercontent.com/meilisearch/meilisearch/main/LICENSE
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Copyright (c) 2019-2025 Meili SAS"
+  - field: maintainerType
+    value: company
+    url: https://raw.githubusercontent.com/meilisearch/meilisearch/main/LICENSE
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: MIT
+    url: https://www.meilisearch.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Meilisearch is open source under the MIT license."
+  - field: license
+    value: BUSL-1.1 (Enterprise Edition parts only)
+    url: https://raw.githubusercontent.com/meilisearch/meilisearch/main/LICENSE
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Part of this work fall under the Meilisearch Enterprise Edition (EE) and are licensed under the Business Source License 1.1"
+  - field: licenseModel
+    value: open-core
+    url: https://raw.githubusercontent.com/meilisearch/meilisearch/main/LICENSE
+    checkedAt: 2026-10-19
+    via: page
+  - field: language
+    value: Rust
+    url: https://github.com/meilisearch/meilisearch
+    checkedAt: 2026-10-19
+    via: api
+  - field: categories
+    value: [search-server]
+    url: https://www.meilisearch.com
+    checkedAt: 2026-10-19
+    via: page
+  - field: runtime
+    value: [rust binary]
+    url: https://www.meilisearch.com/docs/resources/self_hosting/getting_started/install_locally
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Meilisearch is written in Rust. To compile it, install the Rust toolchain"
+  - field: installMethod
+    value: [curl install script, homebrew, docker, apt, binary download, compile from source]
+    url: https://www.meilisearch.com/docs/resources/self_hosting/getting_started/install_locally
+    checkedAt: 2026-10-19
+    via: page
+  - field: docker
+    value: getmeili/meilisearch
+    url: https://www.meilisearch.com/docs/resources/self_hosting/getting_started/install_locally
+    checkedAt: 2026-10-19
+    via: page
+  - field: serverNeeds
+    value: [linux glibc 2.35+ or macOS 14+ or Windows Server 2022+]
+    url: https://www.meilisearch.com/docs/resources/self_hosting/getting_started/install_locally
+    checkedAt: 2026-10-19
+    via: page
+  - field: contentStore
+    value: [database]
+    url: https://www.meilisearch.com/docs/resources/self_hosting/getting_started/install_locally
+    checkedAt: 2026-10-19
+    via: page
+  - field: hostedService
+    value: Meilisearch Cloud
+    url: https://www.meilisearch.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+  - field: freeTier
+    value: 14-day free trial, no credit card required (Cloud)
+    url: https://www.meilisearch.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+    quote: "14-day free trial, no credit card required"
+  - field: pricingPage
+    value: https://www.meilisearch.com/pricing
+    url: https://www.meilisearch.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/meilisearch/meilisearch/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-12
+    url: https://api.github.com/repos/meilisearch/meilisearch/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 59604
+    url: https://github.com/meilisearch/meilisearch
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://www.meilisearch.com/docs/resources/self_hosting/getting_started/install_locally
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Launch Meilisearch to start the server."
+notFound: [hqCountry, parent, firstRelease, endoflifeId, pluginDirectory, pluginCount, starters, forum, discord, subreddit, mastodon, bluesky, x, newsletter, paidEditions, adminUi, headlessApi, deployTargets, npmName, packagistName, pypiDownloads, usageShare, multisite, sso, i18n, userRoles, importsFrom, databases]
+unreadable: []
+notes: >
+  The license is stated two ways. The LICENSE file names MIT for the code and BUSL-1.1 for Enterprise Edition parts, and the pricing page names MIT for the open-source server. GitHub reports the license as Other (NOASSERTION), so the API value is not recorded. The hostedService field is coined here for the Cloud offer beside the self-hosted server. The Cloud pricing figures on the pricing page are not recorded: they are plan prices that change, and the page presents them as an estimate. The npm package meilisearch (0.62.0) is the JavaScript client, not the server, and is not used as the version source. The docs page says Meilisearch is written in Rust and gives Linux glibc 2.35+, macOS 14+ and Windows Server 2022+ as OS requirements.

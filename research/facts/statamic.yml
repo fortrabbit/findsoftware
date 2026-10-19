@@ -1,0 +1,288 @@
+id: statamic
+name: Statamic
+status: accepted
+checkedAt: 2026-10-18
+description: Laravel-based content management system that stores content in flat files or a database, with a control panel and optional static site generation.
+facts:
+  - field: name
+    value: Statamic
+    url: https://statamic.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: homepage
+    value: https://statamic.com
+    url: https://api.github.com/repos/statamic/cms
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/statamic/cms
+    url: https://packagist.org/packages/statamic/cms.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: docs
+    value: https://statamic.dev
+    url: https://statamic.dev/requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: maintainer
+    value: Statamic, LLC
+    url: https://statamic.com/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "© Copyright 2012-2026 Statamic, LLC"
+  - field: maintainerType
+    value: company
+    url: https://statamic.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: hqCountry
+    value: US
+    url: https://api.github.com/orgs/statamic
+    checkedAt: 2026-10-18
+    via: api
+    quote: "location: USA"
+  - field: categories
+    value: [cms, flat-file-cms, headless-cms]
+    url: https://statamic.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: basedOn
+    value: [laravel]
+    url: https://repo.packagist.org/p2/statamic/cms.json
+    checkedAt: 2026-10-18
+    via: api
+    quote: "laravel/framework: ^12.40.0 || ^13.0"
+  - field: basedOn
+    value: [laravel]
+    url: https://statamic.com/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Built on Laravel"
+  - field: language
+    value: PHP
+    url: https://statamic.dev/requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtime
+    value: php
+    url: https://statamic.dev/requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: "8.3"
+    url: https://statamic.dev/requirements
+    checkedAt: 2026-10-18
+    via: page
+    quote: "PHP 8.3 or above"
+  - field: contentStore
+    value: [flat-file, database]
+    url: https://statamic.com/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Flat file mode ... Database mode"
+  - field: databases
+    value: [sqlite]
+    url: https://statamic.dev/tips/storing-content-in-a-database
+    checkedAt: 2026-10-18
+    via: page
+    quote: "By default, Statamic sites are configured to use a SQLite database."
+  - field: adminUi
+    value: yes, control panel
+    url: https://statamic.com/pricing
+    checkedAt: 2026-10-18
+    via: page
+  - field: headlessApi
+    value: [rest, graphql]
+    url: https://statamic.dev/rest-api
+    checkedAt: 2026-10-18
+    via: page
+    quote: "a read-only API for delivering content from Statamic"
+  - field: headlessApi
+    value: REST and GraphQL in the Pro edition
+    url: https://statamic.com/pricing
+    checkedAt: 2026-10-18
+    via: page
+  - field: templating
+    value: [antlers, blade]
+    url: https://statamic.dev/frontend/antlers
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Coming from Laravel and want to stick to Blade? We got you covered."
+  - field: multisite
+    value: yes, Pro edition
+    url: https://statamic.com/pricing
+    checkedAt: 2026-10-18
+    via: page
+  - field: i18n
+    value: yes, multilingual in Pro edition
+    url: https://statamic.com/pricing
+    checkedAt: 2026-10-18
+    via: page
+  - field: renderingModes
+    value: [server, static]
+    url: https://statamic.dev/static-caching
+    checkedAt: 2026-10-18
+    via: page
+    quote: "use the static site generator to pre-generate and deploy fully static HTML sites"
+  - field: installMethod
+    value: [statamic new (Statamic CLI), composer create-project statamic/statamic]
+    url: https://statamic.dev/installing/local
+    checkedAt: 2026-10-18
+    via: page
+    quote: "composer create-project statamic/statamic project_name"
+  - field: deployTargets
+    value: [fortrabbit, Laravel Cloud, Laravel Forge, Netlify, Ploi, Vercel]
+    url: https://statamic.dev/deploying
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value:
+      - "PHP extensions: bcmath, ctype, exif, json, mbstring, openssl, pdo, tokenizer, xml"
+      - "GD or ImageMagick for image manipulation"
+      - "Composer"
+      - "same server requirements as Laravel"
+    url: https://statamic.dev/requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value:
+      - "scheduler for scheduled-entry cache invalidation"
+      - "queue driver other than sync for queued cache warming"
+      - "writable public/static for the file cache driver"
+    url: https://statamic.dev/static-caching
+    checkedAt: 2026-10-18
+    via: page
+  - field: license
+    value: proprietary
+    url: https://packagist.org/packages/statamic/cms.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: license
+    value: Statamic License (custom, not SPDX)
+    url: https://github.com/statamic/cms/blob/6.x/LICENSE.md
+    checkedAt: 2026-10-18
+    via: api
+    quote: "Each licensed copy of the Software shall be actively installed in no more than one production environment"
+  - field: licenseModel
+    value: source-available
+    url: https://github.com/statamic/cms/blob/6.x/LICENSE.md
+    checkedAt: 2026-10-18
+    via: api
+  - field: paidEditions
+    value:
+      - name: Core
+        price: 0
+        adds: one admin account, one form, blueprints, collections, taxonomies, assets, Live Preview
+      - name: Pro
+        price: 349
+        currency: USD
+        period: per site, one year of updates, then $99 USD per year
+        adds: unlimited users and roles, revisions, REST and GraphQL, multi-site and multilingual, white label, Git integration
+      - name: Enterprise
+        price: null
+        adds: support SLA, SSO, 2FA, audit logging, offline license validation
+    url: https://statamic.com/pricing
+    checkedAt: 2026-10-18
+    via: page
+    quote: "$349USD"
+  - field: pricingPage
+    value: https://statamic.com/pricing
+    url: https://statamic.com/pricing
+    checkedAt: 2026-10-18
+    via: page
+  - field: latestVersion
+    value: 6.36.0
+    url: https://api.github.com/repos/statamic/cms/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-16
+    url: https://api.github.com/repos/statamic/cms/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - cycle: "6"
+        support: 2027-03-31
+        eol: 2027-12-31
+        php: "8.3-8.5"
+        laravel: "12-13"
+      - cycle: "5"
+        support: 2026-03-31
+        eol: 2026-12-31
+        php: "8.2-8.4"
+        laravel: "10-12"
+    url: https://endoflife.date/api/statamic.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: endoflifeId
+    value: statamic
+    url: https://endoflife.date/api/statamic.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 4906
+    url: https://api.github.com/repos/statamic/cms
+    checkedAt: 2026-10-18
+    via: api
+  - field: contributors
+    value: 365
+    url: https://api.github.com/repos/statamic/cms/contributors
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistDownloads
+    value: {total: 4268843, monthly: 215442}
+    url: https://packagist.org/packages/statamic/cms.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistName
+    value: statamic/cms
+    url: https://packagist.org/packages/statamic/cms.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: pluginDirectory
+    value: https://statamic.com/marketplace
+    url: https://statamic.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: pluginCount
+    value: 490
+    url: https://statamic.com/marketplace/addons
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Showing 490 addons"
+  - field: starters
+    value: [https://github.com/statamic/statamic]
+    url: https://statamic.dev/installing/local
+    checkedAt: 2026-10-18
+    via: page
+  - field: discord
+    value: https://statamic.com/discord
+    url: https://statamic.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: x
+    value: https://x.com/statamic
+    url: https://statamic.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/statamic.com
+    url: https://statamic.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: mastodon
+    value: https://mastodon.social/@statamic
+    url: https://statamic.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: runsAs
+    value: [per-request, static]
+    url: https://statamic.dev/getting-started/deploying
+    checkedAt: 2026-10-19
+    via: page
+    quote: "can be deployed like any standard Laravel application or as a static site"
+notFound: [firstRelease, parent, forkOf, successorOf, wikidata, buildCommand, outputDir, docker, eolPolicy, releaseCadence, usageShare, forum, subreddit, newsletter, npmName]
+unreadable: []
+notes: >
+  Statamic's latest release has no direct php constraint on Packagist; the PHP floor comes through laravel/framework, and the docs state 8.3. The statamic/statamic starter package (Statamic's new-site package) has its own Packagist downloads (191,885 total), not recorded as adoption of the core. The deploy guides list includes fortrabbit, the publisher of this dataset; it is recorded as documented, without weight. The newsletter is a footer form without its own URL. Wikidata has an unlabeled item Q136990918 for the name, not verified as this software. Static output comes from the separate static site generator package (statamic/ssg, https://github.com/statamic/ssg), so renderingModes static depends on an add-on.

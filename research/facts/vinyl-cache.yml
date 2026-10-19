@@ -1,0 +1,134 @@
+id: vinyl-cache
+name: Vinyl Cache
+status: accepted
+checkedAt: 2026-10-19
+description: "Caching HTTP reverse proxy, installed in front of any HTTP server to cache its responses, configured with the Vinyl Configuration Language (VCL)."
+facts:
+  - field: name
+    value: Vinyl Cache
+    url: https://vinyl-cache.org/
+    checkedAt: 2026-10-19
+    via: page
+  - field: homepage
+    value: https://vinyl-cache.org
+    url: https://vinyl-cache.org/
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: https://code.vinyl-cache.org/vinyl-cache/vinyl-cache
+    url: https://code.vinyl-cache.org/api/v1/repos/vinyl-cache/vinyl-cache
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://vinyl-cache.org/docs/9.1/
+    url: https://vinyl-cache.org/docs/9.1/
+    checkedAt: 2026-10-19
+    via: page
+  - field: previousName
+    value: Varnish Cache
+    url: https://vinyl-cache.org/organization/new-identity.html
+    checkedAt: 2026-10-19
+    via: page
+  - field: categories
+    value: [cache, reverse-proxy]
+    url: https://vinyl-cache.org/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "caching HTTP reverse proxy"
+  - field: language
+    value: C
+    url: https://code.vinyl-cache.org/api/v1/repos/vinyl-cache/vinyl-cache
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: native
+    url: https://vinyl-cache.org/docs/9.1/installation/install_source.html
+    checkedAt: 2026-10-19
+    via: page
+  - field: processModel
+    value: long-running server
+    url: https://vinyl-cache.org/docs/9.1/installation/prerequisites.html
+    checkedAt: 2026-10-19
+    via: page
+  - field: configLanguage
+    value: VCL (Vinyl Configuration Language)
+    url: https://vinyl-cache.org/docs/9.1/
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: The Vinyl Cache Project
+    url: https://vinyl-cache.org/organization/bylaws/bylaws_1.00.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "organized as a voluntary association"
+  - field: maintainerType
+    value: community
+    url: https://vinyl-cache.org/organization/bylaws/bylaws_1.00.html
+    checkedAt: 2026-10-19
+    via: page
+  - field: hqCountry
+    value: DK
+    url: https://vinyl-cache.org/organization/bylaws/bylaws_1.00.html
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: BSD-2-Clause
+    url: https://code.vinyl-cache.org/vinyl-cache/vinyl-cache/raw/branch/main/LICENSE
+    checkedAt: 2026-10-19
+    via: page
+  - field: licenseModel
+    value: open-source
+    url: https://code.vinyl-cache.org/vinyl-cache/vinyl-cache/raw/branch/main/LICENSE
+    checkedAt: 2026-10-19
+    via: page
+  - field: installMethod
+    value: [source tarball, FreeBSD package, OpenBSD package]
+    url: https://vinyl-cache.org/docs/9.1/installation/install.html
+    checkedAt: 2026-10-19
+    via: page
+  - field: currentMajor
+    value: 9
+    url: https://code.vinyl-cache.org/api/v1/repos/vinyl-cache/vinyl-cache/releases
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-16
+    url: https://code.vinyl-cache.org/api/v1/repos/vinyl-cache/vinyl-cache/releases
+    checkedAt: 2026-10-19
+    via: api
+  - field: releaseCadence
+    value: bi-annual
+    url: https://code.vinyl-cache.org/vinyl-cache/vinyl-cache/releases/tag/vinyl-cache-9.1.0
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Vinyl Cache 9.1.0 is a regular bi-annual"
+  - field: endoflifeId
+    value: vinyl-cache
+    url: https://endoflife.date/api/vinyl-cache.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: forgejoStargazers
+    value: 13
+    url: https://code.vinyl-cache.org/api/v1/repos/vinyl-cache/vinyl-cache
+    checkedAt: 2026-10-19
+    via: api
+  - field: mastodon
+    value: https://fosstodon.org/@vinyl_cache
+    url: https://vinyl-cache.org/
+    checkedAt: 2026-10-19
+    via: page
+  - field: topics
+    value: [caching, high-performance, http, reverse-proxy]
+    url: https://code.vinyl-cache.org/api/v1/repos/vinyl-cache/vinyl-cache
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://vinyl-cache.org/docs/9.1/tutorial/putting_vinyl_on_port_80.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Now we need to edit the configuration file that starts vinyld"
+notFound: [firstRelease, runtimeMin, eolPolicy, docker, adminUi, paidEditions, pricingPage]
+unreadable: []
+notes: >
+  Also known as Varnish Cache: the project renamed itself, and this record is the continuing project. The repository on code.vinyl-cache.org is a Forgejo instance; its original_url points to github.com/varnishcache/varnish-cache, the predecessor repository the CSV row records, which is not a source for this record's facts. The Forgejo API lists stargazers only for code.vinyl-cache.org, so forgejoStargazers is a new field, not comparable with GitHub figures. Varnish Software distributes its own build under the varnish.org name; that is a separate record. Debian and Ubuntu packages were not provided as of 9.0 per the Debian install page, so installMethod lists only the source tarball and the BSD packages. The Association is described on the homepage as founded 2025-10-29; the bylaws state the project is a voluntary association under Danish law, which is the basis for hqCountry DK and maintainerType community. The LICENSE file copyright lines date from 2006; no firstRelease year is recorded, because the copyright range is not a release date. Coined fields: previousName, configLanguage, forgejoStargazers, topics.

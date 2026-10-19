@@ -1,0 +1,81 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import { facetIndex, pairIndexRoutes } from '../../../../lib/facets';
+import { pairIndexPath, pairPath } from '../../../../lib/pairs';
+import { extendDescription, joinAnd, licenceUrl, publisherRef, valueTitle, websiteRef } from '../../../../lib/seo';
+import { valueCardPath } from '../../../../lib/og';
+
+/*
+ * The rung between /runtimes/php/ and /runtimes/php/regions/germany/.
+ *
+ * Deleting the last segment of a URL that works is something readers do and
+ * crawlers do, and without this the two live pages have a 404 between them. It
+ * is also where the pair pages are linked from in bulk, so a crawler that only
+ * follows links reaches all 55 from one page rather than none.
+ */
+export async function getStaticPaths() {
+  return pairIndexRoutes();
+}
+
+const { facet, value, with: partner, pages } = Astro.props;
+
+const origin = Astro.site?.origin ?? '';
+const lead = valueTitle(facet.id, value);
+const title = `${lead} by ${partner.label.toLowerCase()}`;
+
+const rows = [...pages].sort((one, other) => other.matches.length - one.matches.length);
+const pageCount = `${rows.length} ${rows.length === 1 ? 'page' : 'pages'}`;
+const named = `${title}, in ${pageCount}: ${joinAnd(rows.map((page) => page.bv.label))}.`;
+const summary = extendDescription(named.length <= 120 ? named : `${title}, in ${pageCount}.`, [
+  `Each lists at least eight providers, alphabetically.`,
+]);
+---
+
+<Base
+  title={`${title} — FindSoftware`}
+  description={summary}
+  image={valueCardPath(facet.id, value.slug)}
+  imageAlt={`A FindSoftware card: ${lead}.`}
+  schema={[
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'FindSoftware', item: `${origin}/` },
+        { '@type': 'ListItem', position: 2, name: facet.label, item: `${origin}${facetIndex(facet.id)}` },
+        { '@type': 'ListItem', position: 3, name: value.label, item: `${origin}${facetIndex(facet.id)}${value.slug}/` },
+        { '@type': 'ListItem', position: 4, name: partner.label },
+      ],
+    },
+    {
+      '@type': 'CollectionPage',
+      url: `${origin}${pairIndexPath(facet, value, partner)}`,
+      name: title,
+      description: summary,
+      inLanguage: 'en',
+      isPartOf: websiteRef(origin),
+      publisher: publisherRef(origin),
+      license: licenceUrl,
+    },
+  ]}
+>
+  <p class="crumb" data-pagefind-ignore><a href={`${facetIndex(facet.id)}${value.slug}/`}>{value.label}</a></p>
+
+  <h1>{title}</h1>
+
+  <p class="annotation">{summary}</p>
+
+  {/* Counted, because the count is the only reason to click one rather than another. */}
+  <ul class="pair-list">
+    {
+      rows.map((page) => (
+        <li>
+          <a href={pairPath(page)}>{page.bv.label}</a>
+          <span class="pair-count">
+            {page.matches.length}
+            <span class="visually-hidden"> providers</span>
+          </span>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

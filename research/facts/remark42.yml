@@ -1,0 +1,121 @@
+id: remark42
+name: Remark42
+status: accepted
+checkedAt: 2026-10-19
+description: "Self-hosted, privacy-focused commenting engine that embeds into blogs and articles."
+facts:
+  - field: homepage
+    value: "https://remark42.com"
+    url: https://remark42.com
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: "https://github.com/umputun/remark42"
+    url: https://github.com/umputun/remark42
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: "https://remark42.com/docs/"
+    url: https://remark42.com/docs/
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: "umputun"
+    url: https://github.com/umputun/remark42
+    checkedAt: 2026-10-19
+    via: api
+  - field: maintainerType
+    value: individual
+    url: https://github.com/umputun/remark42
+    checkedAt: 2026-10-19
+    via: api
+  - field: language
+    value: Go
+    url: https://github.com/umputun/remark42
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [go-binary]
+    url: https://remark42.com/docs/getting-started/installation/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "extract the .tar.gz archive with tar -xzf <archive>.tar.gz (Linux, macOS)"
+  - field: buildRequirements
+    value: "Go 1.27, Node 24+, PNPM 10, Perl (source builds)"
+    url: https://remark42.com/docs/getting-started/installation/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Source binary builds require Go 1.27, Node 24+, PNPM 10, and Perl"
+  - field: runtimeMin
+    value: "Go 1.27 (backend/go.mod at v1.18.0)"
+    url: https://github.com/umputun/remark42/blob/v1.18.0/backend/go.mod
+    checkedAt: 2026-10-19
+    via: api
+  - field: databases
+    value: [boltdb, rpc-store]
+    url: https://remark42.com/docs/configuration/parameters/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "type of storage, bolt or rpc"
+  - field: installMethod
+    value: [docker-compose, binary-download, systemd, source-build]
+    url: https://remark42.com/docs/getting-started/installation/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "This is the recommended way to run Remark42"
+  - field: docker
+    value: "ghcr.io/umputun/remark42"
+    url: https://remark42.com/docs/configuration/parameters/
+    checkedAt: 2026-10-19
+    via: page
+  - field: serverNeeds
+    value: "about 80MiB RAM at production usage (per docs)"
+    url: https://remark42.com/docs/getting-started/installation/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Memory: ~80MiB RAM (less than 4% of 2GB)"
+  - field: categories
+    value: [comments]
+    url: https://remark42.com
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: MIT
+    url: https://github.com/umputun/remark42
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/umputun/remark42
+    checkedAt: 2026-10-19
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/umputun/remark42/releases/tag/v1.18.0
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-11"
+    url: https://github.com/umputun/remark42/releases/tag/v1.18.0
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 5626
+    url: https://github.com/umputun/remark42
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 170
+    url: https://github.com/umputun/remark42
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://remark42.com/docs/getting-started/installation/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "For a clean persistent setup without lengthy command line parameters"
+notFound: [firstRelease, parent, forkOf, successorOf, alternativeTo, wikidata, hqCountry, paidEditions, freeTier, pricingPage, eolPolicy, endoflifeId, releaseCadence, pluginDirectory, pluginCount, starters, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, npmName, packagistName, pypiDownloads, processModel, renderingModes, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, regions, importsFrom]
+unreadable: []
+notes: >
+  The CSV row dates the latest release v1.18.0 (2026-10-11), which matches the GitHub release. Remark42 has no paid edition on the pages read. The maintainer is recorded as the GitHub account that owns the repository, since the pages name no company. The Go module lives in backend/, so the go.mod is read at that path. The docs say the Docker install is the recommended way to run Remark42; the installation list in the docs includes the binary archive, the systemd service and a source build. The "databases" field holds the storage backends the parameters page offers, which are BoltDB and an RPC store. The buildRequirements, serverNeeds and docker fields are coined kinds for the source build, the memory figure and the image.

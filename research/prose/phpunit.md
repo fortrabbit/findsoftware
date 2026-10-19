@@ -1,0 +1,1 @@
+PHPUnit is a unit testing framework for PHP, installed into a project with Composer and run from the command line. Pest is built on it. Sebastian Bergmann maintains the project, and the [documentation](https://docs.phpunit.de/en/13.4/) describes configuration and running tests.

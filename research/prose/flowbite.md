@@ -1,0 +1,1 @@
+Flowbite is a component library built on the utility classes of Tailwind CSS and works as a Tailwind plugin. Its components are HTML markup styled with Tailwind classes, and a JavaScript file drives the interactive ones. Bergside Inc. publishes the package, and the source lives in the themesberg organization on GitHub.

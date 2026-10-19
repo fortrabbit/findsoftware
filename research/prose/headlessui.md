@@ -1,0 +1,1 @@
+Headless UI is a set of unstyled, accessible components for React and Vue. The components supply structure and behavior without any styles, so a project brings its own. They are designed to integrate with Tailwind CSS, but the React package has no Tailwind dependency. Tailwind Labs Inc., the company that maintains Tailwind CSS, maintains Headless UI.

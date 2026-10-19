@@ -1,0 +1,1 @@
+nginx is a web server written in C that also works as a reverse proxy, a load balancer, a content cache and a mail proxy. Nginx, Inc. holds the copyright. The [installation guide](https://nginx.org/en/docs/install.html) covers the packaged, source and Windows routes.

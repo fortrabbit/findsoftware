@@ -1,0 +1,1 @@
+Valkey is an in-memory key-value datastore written in C, used for caching, message queues and as a primary database. It was forked from the open source Redis project and includes BSD-licensed Redis code from Redis Ltd. Valkey is an open community project under LF Projects, backed by the Linux Foundation.

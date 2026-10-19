@@ -1,0 +1,276 @@
+id: sylius
+name: Sylius
+status: accepted
+checkedAt: 2026-10-18
+description: Headless open-source e-commerce framework built on Symfony, Doctrine and API Platform.
+facts:
+  - field: name
+    value: Sylius
+    url: https://sylius.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: homepage
+    value: https://sylius.com
+    url: https://api.github.com/repos/Sylius/Sylius
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/Sylius/Sylius
+    url: https://api.github.com/repos/Sylius/Sylius
+    checkedAt: 2026-10-18
+    via: api
+  - field: docs
+    value: https://docs.sylius.com/public
+    url: https://docs.sylius.com/public
+    checkedAt: 2026-10-18
+    via: page
+  - field: firstRelease
+    value: 2017
+    url: https://docs.sylius.com/public/open-source/release-cycle.md
+    checkedAt: 2026-10-18
+    via: page
+    quote: "1.0 | Sep 13, 2017"
+  - field: maintainer
+    value: Sylius
+    url: https://sylius.com/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "© 2026 Sylius"
+  - field: maintainerType
+    value: company
+    url: https://sylius.com/plus/
+    checkedAt: 2026-10-18
+    via: page
+  - field: hqCountry
+    value: PL
+    url: https://sylius.com/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Sylius HQ - Poland"
+  - field: wikidata
+    value: Q97379963
+    url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Sylius&language=en&format=json
+    checkedAt: 2026-10-18
+    via: api
+  - field: categories
+    value: [e-commerce, headless-commerce, framework]
+    url: https://sylius.com/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "an Open Source Headless eCommerce Platform"
+  - field: basedOn
+    value: [symfony, doctrine, api-platform]
+    url: https://repo.packagist.org/p2/sylius/sylius.json
+    checkedAt: 2026-10-18
+    via: api
+    quote: "api-platform/symfony: ^4.3.17 || ^5.0"
+  - field: basedOn
+    value: [symfony, doctrine]
+    url: https://api.github.com/repos/Sylius/Sylius-Standard/readme
+    checkedAt: 2026-10-18
+    via: api
+    quote: "decoupled eCommerce framework based on Symfony and Doctrine"
+  - field: language
+    value: php
+    url: https://api.github.com/repos/Sylius/Sylius
+    checkedAt: 2026-10-18
+    via: api
+  - field: runtime
+    value: php
+    url: https://docs.sylius.com/public/getting-started/before-you-begin.md
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: "8.3"
+    url: https://repo.packagist.org/p2/sylius/sylius.json
+    checkedAt: 2026-10-18
+    via: api
+    quote: "php: ^8.3"
+  - field: runtimeMin
+    value: "8.2"
+    url: https://docs.sylius.com/public/getting-started/before-you-begin.md
+    checkedAt: 2026-10-18
+    via: page
+    quote: "PHP 8.2 or higher"
+  - field: frameworkMin
+    value: symfony 6.4
+    url: https://api.github.com/repos/Sylius/Sylius/contents/composer.json
+    checkedAt: 2026-10-18
+    via: api
+    quote: "symfony/framework-bundle: ^6.4.1 || ^7.4 || ^8.0"
+  - field: buildRuntimeMin
+    value: node 20
+    url: https://docs.sylius.com/public/getting-started/before-you-begin.md
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Node.js ^20 || ^22"
+  - field: contentStore
+    value: database
+    url: https://docs.sylius.com/public/getting-started/before-you-begin.md
+    checkedAt: 2026-10-18
+    via: page
+  - field: databases
+    value: [mysql 8.0+, mariadb 10.4.10+, postgres 13.9+]
+    url: https://docs.sylius.com/public/getting-started/before-you-begin.md
+    checkedAt: 2026-10-18
+    via: page
+  - field: adminUi
+    value: yes, Symfony Forms based admin
+    url: https://docs.sylius.com/public/getting-started/before-you-begin.md
+    checkedAt: 2026-10-18
+    via: page
+    quote: "used heavily in Sylius admin"
+  - field: headlessApi
+    value: rest
+    url: https://api.github.com/repos/Sylius/Sylius-Standard/readme
+    checkedAt: 2026-10-18
+    via: api
+    quote: "Powerful REST API allows for easy integrations"
+  - field: templating
+    value: twig
+    url: https://repo.packagist.org/p2/sylius/sylius.json
+    checkedAt: 2026-10-18
+    via: api
+    quote: "twig/twig: ^3.21"
+  - field: installMethod
+    value: [composer create-project sylius/sylius-standard, docker via Sylius-Standard make init]
+    url: https://docs.sylius.com/public/getting-started/sylius-ce-installation.md
+    checkedAt: 2026-10-18
+    via: page
+    quote: "composer create-project sylius/sylius-standard AcmeStore"
+  - field: buildCommand
+    value: npm install && npm run build
+    url: https://docs.sylius.com/public/getting-started/sylius-ce-installation.md
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value:
+      - "PHP extensions: gd, exif, fileinfo, intl, sodium"
+      - "Composer"
+      - "Node.js for front-end asset build"
+      - "*nix OS (Windows via WSL only)"
+    url: https://docs.sylius.com/public/getting-started/before-you-begin.md
+    checkedAt: 2026-10-18
+    via: page
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/Sylius/Sylius
+    checkedAt: 2026-10-18
+    via: api
+  - field: licenseModel
+    value: open-core
+    url: https://sylius.com/plus/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Plus listed as commercial, Sylius Standard as MIT"
+  - field: paidEditions
+    value:
+      - {name: Sylius Community Edition, price: 0, adds: "open-source core"}
+      - {name: Sylius Plus, price: "from 800", currency: "€", period: year, adds: "modules: B2B Suite, Marketplace Suite, Advanced Multi-store, RMA, Multi-source Inventory, Loyalty, RBAC, Partial Shipment, RFQ, Product Configurator, Subscription; SLA support"}
+    url: https://sylius.com/plus/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "starts from 800€ / year"
+  - field: pricingPage
+    value: https://sylius.com/plus/
+    url: https://sylius.com/plus/
+    checkedAt: 2026-10-18
+    via: page
+  - field: latestVersion
+    value: 2.3.1
+    url: https://api.github.com/repos/Sylius/Sylius/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-14
+    url: https://api.github.com/repos/Sylius/Sylius/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - {cycle: "2.3", support: true, eol: false}
+      - {cycle: "2.2", support: 2026-11-30, eol: 2027-03-31}
+      - {cycle: "1.14", lts: true, support: 2025-12-31, eol: 2026-12-31}
+    url: https://endoflife.date/api/sylius.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - {cycle: "2.2", released: 2025-12-17, endOfMaintenance: 2026-11, endOfSupport: 2027-03}
+      - {cycle: "2.1", released: 2025-06-04, endOfMaintenance: 2026-03, endOfSupport: 2026-09}
+      - {cycle: "1.14", lts: true, released: 2024-11-12, endOfMaintenance: 2025-12, endOfSupport: 2026-12}
+    url: https://docs.sylius.com/public/open-source/release-cycle.md
+    checkedAt: 2026-10-18
+    via: page
+  - field: eolPolicy
+    value: each minor gets a fixed bug-and-security maintenance period, then a security-only period
+    url: https://docs.sylius.com/public/open-source/release-cycle.md
+    checkedAt: 2026-10-18
+    via: page
+  - field: releaseCadence
+    value: patch every 3 to 6 weeks, minor every 3 to 6 months, major every 2 to 3 years
+    url: https://docs.sylius.com/public/open-source/release-cycle.md
+    checkedAt: 2026-10-18
+    via: page
+    quote: "usually every 3 to 6 months"
+  - field: endoflifeId
+    value: sylius
+    url: https://endoflife.date/api/sylius.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 8560
+    url: https://api.github.com/repos/Sylius/Sylius
+    checkedAt: 2026-10-18
+    via: api
+  - field: contributors
+    value: 324
+    url: https://api.github.com/repos/Sylius/Sylius/contributors
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistDownloads
+    value: {total: 6391247, monthly: 159772}
+    url: https://packagist.org/packages/sylius/sylius.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistDownloads
+    value: {total: 309295, monthly: 3601}
+    url: https://packagist.org/packages/sylius/sylius-standard.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistName
+    value: [sylius/sylius, sylius/sylius-standard]
+    url: https://packagist.org/packages/sylius/sylius.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: starters
+    value: [Sylius-Standard]
+    url: https://docs.sylius.com/public/getting-started/sylius-ce-installation.md
+    checkedAt: 2026-10-18
+    via: page
+    quote: "use our Sylius Standard project template"
+  - field: demo
+    value: https://v2.demo.sylius.com/
+    url: https://sylius.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: pluginDirectory
+    value: https://store.sylius.com/
+    url: https://sylius.com/plugins/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "301 Moved Permanently to https://store.sylius.com/"
+  - field: slack
+    value: https://sylius.com/slack
+    url: https://sylius.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: x
+    value: https://twitter.com/Sylius
+    url: https://sylius.com/
+    checkedAt: 2026-10-18
+    via: page
+notFound: [parent, forkOf, successorOf, i18n, multisite, renderingModes, outputDir, deployTargets, docker, usageShare, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, npmName]
+unreadable: [https://docs.sylius.com/getting-started-with-sylius/installation, https://store.sylius.com/]
+notes: >
+  docs.sylius.com outside /public redirects to a GitBook visitor login; the /public section with .md URLs is readable. The requirements page says PHP 8.2 or higher while the 2.3.1 composer.json requires ^8.3. The release-cycle page has not yet added 2.3 to its supported table; endoflife.date lists 2.3 (released 2026-09-28) and marks 2.1 past its end of support. The Plus page says Plus "consists of 9 modules" but lists 11; pricing depends on GMV and the modules chosen. Advanced Multi-store is a Plus module, so multisite in the open-source edition was not confirmed. The site gives no legal entity name, only "Sylius HQ - Poland" with a Poznań address. Contributors counts GitHub accounts, anonymous excluded.

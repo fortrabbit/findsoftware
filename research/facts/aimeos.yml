@@ -1,0 +1,123 @@
+id: aimeos
+name: Aimeos
+status: accepted
+checkedAt: 2026-10-19
+description: PHP e-commerce and shop system, available as a stand-alone Composer install and as a Laravel package.
+facts:
+  - field: homepage
+    value: https://aimeos.org
+    url: https://api.github.com/repos/aimeos/aimeos-core
+    checkedAt: 2026-10-19
+    via: api
+  - field: repository
+    value: https://github.com/aimeos/aimeos
+    url: https://github.com/aimeos/aimeos
+    checkedAt: 2026-10-19
+    via: api
+  - field: repository
+    value: https://github.com/aimeos/aimeos-core
+    url: https://github.com/aimeos/aimeos-core
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://aimeos.org/docs/latest/laravel/setup/
+    url: https://aimeos.org/docs/latest/laravel/setup/
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/aimeos/aimeos/master/LICENSE
+    checkedAt: 2026-10-19
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: license
+    value: LGPL-3.0-or-later
+    url: https://raw.githubusercontent.com/aimeos/aimeos-core/master/LICENSE
+    checkedAt: 2026-10-19
+    via: page
+    quote: "GNU LESSER GENERAL PUBLIC LICENSE"
+  - field: language
+    value: PHP
+    url: https://github.com/aimeos/aimeos-core
+    checkedAt: 2026-10-19
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://github.com/aimeos/aimeos
+    checkedAt: 2026-10-19
+    via: api
+  - field: categories
+    value: [e-commerce, shop-system]
+    url: https://raw.githubusercontent.com/aimeos/aimeos/master/composer.json
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Aimeos ecommerce and shop system"
+  - field: basedOn
+    value: Laravel
+    url: https://raw.githubusercontent.com/aimeos/aimeos/master/composer.json
+    checkedAt: 2026-10-19
+    via: page
+    quote: "\"laravel/framework\": \"^13.0\""
+  - field: runtime
+    value: [php]
+    url: https://aimeos.org/docs/latest/laravel/setup/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "PHP >= 8.1"
+  - field: runtimeMin
+    value: PHP 8.1
+    url: https://aimeos.org/docs/latest/laravel/setup/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "PHP >= 8.1"
+  - field: installMethod
+    value: [composer create-project, laravel package]
+    url: https://aimeos.org/docs/latest/laravel/setup/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Can be installed using composer within five minutes to get a complete shop system"
+  - field: packagistName
+    value: aimeos/aimeos
+    url: https://repo.packagist.org/p2/aimeos/aimeos.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: currentMajor
+    value: "2026 (CalVer, release 2026.10.1)"
+    url: https://repo.packagist.org/p2/aimeos/aimeos.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-05
+    url: https://repo.packagist.org/p2/aimeos/aimeos.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 5463
+    url: https://github.com/aimeos/aimeos
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 4537
+    url: https://github.com/aimeos/aimeos-core
+    checkedAt: 2026-10-19
+    via: api
+  - field: packagistDownloads
+    value: 109968 total
+    url: https://packagist.org/packages/aimeos/aimeos.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: packagistDownloads
+    value: 380807 total (aimeos/aimeos-core)
+    url: https://packagist.org/packages/aimeos/aimeos-core.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [per-request]
+    url: https://aimeos.org/docs/latest/laravel/setup/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Web server (Apache, Nginx or integrated PHP web server for testing)"
+notFound: [maintainer, maintainerType, hqCountry, parent, firstRelease, endoflifeId, pluginDirectory, pluginCount, starters, forum, discord, subreddit, mastodon, bluesky, x, newsletter, paidEditions, freeTier, pricingPage, adminUi, headlessApi, hostedService, docker, deployTargets, npmName, pypiDownloads, npmWeeklyDownloads, usageShare, databases, contentStore, multisite, sso, i18n, userRoles, serverNeeds]
+unreadable: ["https://aimeos.org/ (503 Service Unavailable on every attempt; the docs site on the same domain answers 200)"]
+notes: >
+  The license is stated two ways. The aimeos repository and its composer.json say MIT; the aimeos-core repository's LICENSE file and Packagist's aimeos/aimeos-core entry say LGPL-3.0-or-later. Both are recorded as separate license entries; the difference is between the Laravel-facing package repository and the core library, and the page does not reconcile them. The homepage field of aimeos-core names https://aimeos.org; the homepage itself returned 503 during the research and was not read. The GitHub API reports aimeos-core as NOASSERTION, so its license comes from the LICENSE file. The docs setup page at aimeos.org/docs/latest/laravel/setup/ states the PHP requirement and the two install paths. The currentMajor is CalVer (year.month.patch), so the value is the year. The aimeos-core package has a newer stable release (2026.10.2, 2026-10-09) than the aimeos package (2026.10.1, 2026-10-05); latestReleaseDate is the aimeos package's. The aimeos-core repository has no releases on GitHub.

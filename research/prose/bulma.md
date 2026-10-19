@@ -1,0 +1,1 @@
+Bulma is a CSS framework built on Flexbox that provides ready-to-use frontend components. The stylesheet comes from a CDN, a release archive or as Sass source, so a project can load the compiled CSS or compile its own from the source. Jeremy Thomas, an individual, maintains it.

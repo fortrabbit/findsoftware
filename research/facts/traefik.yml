@@ -1,0 +1,123 @@
+id: traefik
+name: Traefik
+status: accepted
+checkedAt: 2026-10-19
+description: Cloud-native application proxy and reverse proxy that discovers routes from container, orchestrator and file providers.
+facts:
+  - field: name
+    value: Traefik
+    url: https://traefik.io/
+    checkedAt: 2026-10-19
+    via: page
+  - field: homepage
+    value: https://traefik.io
+    url: https://github.com/traefik/traefik
+    checkedAt: 2026-10-19
+    via: api
+  - field: repository
+    value: https://github.com/traefik/traefik
+    url: https://github.com/traefik/traefik
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://doc.traefik.io/traefik/
+    url: https://doc.traefik.io/traefik/
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: Traefik Labs
+    url: https://traefik.io/company/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Founded in 2016, Traefik Labs' mission"
+  - field: maintainerType
+    value: company
+    url: https://traefik.io/company/
+    checkedAt: 2026-10-19
+    via: page
+  - field: categories
+    value: [reverse-proxy, load-balancer, ingress-controller]
+    url: https://traefik.io/pricing/
+    checkedAt: 2026-10-19
+    via: page
+  - field: language
+    value: Go
+    url: https://github.com/traefik/traefik
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: go binary
+    url: https://github.com/traefik/traefik
+    checkedAt: 2026-10-19
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://endoflife.date/api/traefik.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-15
+    url: https://github.com/traefik/traefik/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: endoflifeId
+    value: traefik
+    url: https://endoflife.date/traefik
+    checkedAt: 2026-10-19
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/traefik/traefik
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/traefik/traefik
+    checkedAt: 2026-10-19
+    via: api
+  - field: installMethod
+    value: [docker-image, kubernetes-helm-chart]
+    url: https://doc.traefik.io/traefik/getting-started/docker/
+    checkedAt: 2026-10-19
+    via: page
+  - field: docker
+    value: traefik:v3.7
+    url: https://doc.traefik.io/traefik/getting-started/docker/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "image: traefik:v3.7"
+  - field: pluginDirectory
+    value: https://plugins.traefik.io/
+    url: https://traefik.io/
+    checkedAt: 2026-10-19
+    via: page
+  - field: forum
+    value: https://community.traefik.io/
+    url: https://traefik.io/
+    checkedAt: 2026-10-19
+    via: page
+  - field: x
+    value: https://twitter.com/traefik
+    url: https://traefik.io/
+    checkedAt: 2026-10-19
+    via: page
+  - field: pricingPage
+    value: https://traefik.io/pricing/
+    url: https://traefik.io/pricing/
+    checkedAt: 2026-10-19
+    via: page
+  - field: githubStargazers
+    value: 65276
+    url: https://api.github.com/repos/traefik/traefik
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://doc.traefik.io/traefik/getting-started/docker/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Traefik provides a seamless experience for managing your Docker traffic"
+notFound: [hqCountry, firstRelease, runtimeMin, eolPolicy, releaseCadence, paidEditions, freeTier, parent, contributors, pluginCount, adminUi, headlessApi, i18n, multisite, userRoles, sso, serverNeeds, processModel, renderingModes, discord, subreddit, mastodon, bluesky, newsletter, usageShare, packagistName, npmName, pypiDownloads, npmWeeklyDownloads, packagistDownloads, wikidata]
+unreadable: []
+notes: >
+  Traefik Proxy is the open-source product; Traefik Hub and Traefik Enterprise are commercial products from Traefik Labs. The pricing page names the products and offers "Download Free Traefik Proxy" but states no prices in the text read, so paidEditions is not recorded. The install guide lists Docker and Kubernetes (Helm) quick starts; no binary download page was found. The current major is 3 (v3.7 line, not end of life). The Docker Hub pull count in candidates-server-infra.csv (3.6B) was not re-read. Fields coined here: none.

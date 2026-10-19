@@ -1,0 +1,1 @@
+MiniSearch is a JavaScript library that builds a full-text index in memory and runs queries against it inside the script that owns the index. No search server is involved: the same code that creates the index also searches it, in a browser or in Node.js. The [documentation](https://lucaong.github.io/minisearch/) describes the API.

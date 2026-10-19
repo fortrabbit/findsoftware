@@ -1,0 +1,3 @@
+CakePHP is an MVC framework for PHP with an ORM for database work, code generation from the command line, and configuration by convention. Views are plain PHP templates; Twig is available through a separate plugin. The framework ships with internationalization and localization libraries.
+
+The Cake Software Foundation holds the copyright. Commercial development and support come from CakeDC, the commercial entity behind the framework, established by the founder of CakePHP. The [installation guide](https://book.cakephp.org/5.x/installation.html) describes the project skeleton and the official Docker image.

@@ -1,0 +1,584 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { fieldGroups, fieldOf, labelOf, type Field } from '../lib/fields';
+import { backlinks, cells, footnotes } from '../lib/record';
+import { asideKindGroup, isListed } from '../lib/providers';
+import { recordMarkdownPath, recordPath } from '../lib/paths';
+import { asideGroupOf, loadFacets } from '../lib/facets';
+import { toRow } from '../lib/rows';
+import { similarTo } from '../lib/similar';
+import ProviderList from '../components/ProviderList.astro';
+import ListControls from '../components/ListControls.astro';
+import {
+  extendDescription,
+  joinAnd,
+  licenceUrl,
+  providerId,
+  publisherRef,
+  recordTitle,
+  soften,
+  websiteRef,
+} from '../lib/seo';
+import { cardPath } from '../lib/og';
+import { outboundLinkAttrs } from '../lib/links';
+import { modifiedAt, updatedAfterCheck } from '../lib/modified';
+import SocialLinks from '../components/SocialLinks.astro';
+import PageFigure from '../components/PageFigure.astro';
+import FactGroups from '../components/FactGroups.astro';
+import { findhostRows } from '../lib/findhost';
+
+export async function getStaticPaths() {
+  const providers = await getCollection('software');
+  /*
+   * A rest parameter because a record's address is not one shape: a holding
+   * company sits under /holdings/, everything else at the root. One route
+   * rather than two so the template a reader sees is the same file either way.
+   */
+  return providers.map((provider) => ({
+    params: { record: recordPath(provider).slice(1, -1) },
+    props: { provider },
+  }));
+}
+
+const { provider } = Astro.props;
+
+const { Content } = await render(provider);
+const data = provider.data;
+
+// The record's file, where a correction is one pull request rather than a mail.
+const editUrl = `https://github.com/fortrabbit/findsoftware/edit/main/src/content/software/${provider.id}.md`;
+/*
+ * Every change to this record, with the pull request each came in. The build
+ * has no git history to say which commit last touched a record, and GitHub's
+ * own listing answers that better than a date could.
+ */
+const historyUrl = `https://github.com/fortrabbit/findsoftware/commits/main/src/content/software/${provider.id}.md`;
+
+/*
+ * Every record, because a relation is read from both ends: this one names its
+ * parent and its suppliers, and every other one may name this one as theirs.
+ */
+const everyRecord = await getCollection('software');
+const nameOf = new Map(everyRecord.map((entry) => [String(entry.data.id), entry.data.name]));
+const pathOf = new Map(everyRecord.map((entry) => [String(entry.data.id), recordPath(entry)]));
+const valueOf = (field: string) => (data as Record<string, unknown>)[field];
+
+/*
+ * The other invoices. A provider recording `none` for one of these has said it
+ * does not sell the thing, so the register can name who does.
+ *
+ * Only on an explicit `none`. An absent field means nobody checked, and telling
+ * a reader a host has no email on that basis would be inventing the answer —
+ * which is why this shows on few records today and more as they are filled in.
+ * The category must be in use too, or the link points at a page never built.
+ *
+ * Databases are not here, and cannot be until the dictionary can say it.
+ * `managedDatabases` is a list of engines, so it answers "which" and has no way
+ * to answer "none": absent means nobody looked, and a great many platforms do
+ * run a database — fortrabbit's own record names MySQL. Pairing a host with a
+ * database service needs a three-value field of its own, like the ones domains
+ * and email already have.
+ */
+const groups = fieldGroups();
+const allFields = groups.flatMap((group) => group.fields);
+
+const held = (value: unknown) => value !== undefined && value !== null && (!Array.isArray(value) || value.length > 0);
+
+/*
+ * An explicit `null` means the question does not apply to this provider — a
+ * panel that provisions onto your own cloud account has no regions of its own.
+ * That is neither known nor missing, so it leaves the denominator entirely
+ * rather than inflating the gap on records that have no gap.
+ */
+const applicable = allFields.filter((field) => valueOf(field.id) !== null);
+
+// Known first. What is missing is named once, together, where it reads as an
+// ask rather than as forty rows of `?`.
+const knownGroups = groups
+  .map((group) => ({ label: group.label, fields: group.fields.filter((field) => held(valueOf(field.id))) }))
+  .filter((group) => group.fields.length > 0);
+
+/*
+ * What a customer decides on stays beside the prose; everything else falls into
+ * the wide grid below it.
+ *
+ * Three near groups rather than four, because the prose is optional and the rail
+ * is not: a record with a short opening and no reservation left Automation and
+ * the group under it running down a column with nothing beside them. The wide
+ * grid has no such problem — it fills the page whatever the prose does.
+ */
+const besideTheProse = ['Kind', 'Content', 'License'];
+const nearGroups = knownGroups.filter((group) => besideTheProse.includes(group.label));
+const farGroups = knownGroups.filter((group) => !besideTheProse.includes(group.label));
+
+// Unset, the site builds without links to FindHost rather than to a guessed address.
+const hosts = findhostRows(import.meta.env.FINDHOST_URL, provider.id, data.name, data);
+
+const missing = applicable.filter((field) => !held(valueOf(field.id)));
+const total = applicable.length;
+
+/*
+ * A value page exists only where a record in the register holds the value, so a
+ * record beside the register can hold one nobody listed does — dotCloud ran
+ * Perl and nothing trading today records it. The fact is still shown; it is the
+ * link that would be a 404.
+ */
+const { facets: allFacets } = await loadFacets();
+const context = {
+  nameOf,
+  pathOf,
+  hasPage: new Set(
+    allFacets.flatMap((facet) =>
+      facet.values.filter((value) => value.count > 0).map((value) => `${facet.field}:${value.id}`),
+    ),
+  ),
+  id: provider.id,
+};
+
+const linkLabels: Record<string, string> = {
+  repository: 'repository',
+  docs: 'docs',
+  pricing: 'pricing',
+  plugins: 'plugins',
+};
+
+// Pages the provider operates: the product, and the terms it is sold under.
+// Where it posts is a different kind of link and sits on its own line.
+const outgoing = [
+  ...Object.entries(linkLabels)
+    .filter(([key]) => data.urls?.[key as keyof typeof data.urls])
+    .map(([key, label]) => ({ label, url: data.urls![key as keyof typeof data.urls] as string, field: 'urls' })),
+];
+
+const { notes, numberOf } = footnotes(data.sources);
+
+/* Groups as the component draws them: labels, resolved cells, and the source behind each row. */
+const drawn = (groups: { label: string; fields: Field[] }[]) =>
+  groups.map((group) => ({
+    label: group.label,
+    rows: group.fields.map((field) => ({
+      label: field.label,
+      cells: cells(field, valueOf(field.id), context),
+      notes: numberOf.get(field.id),
+    })),
+  }));
+
+const related = backlinks(everyRecord as never, provider.id);
+
+/*
+ * The records most like this one, drawn from the register — never from below it,
+ * and never from a group beside it that a reader cannot buy from: a provider
+ * that stopped trading is not an alternative to anything.
+ *
+ * A record beside the register because it sells no hosting is the exception, and
+ * compares within its own group. The alternative to Plesk is cPanel, not a
+ * shared host that happens to share a country with it, and both are on sale.
+ *
+ * Rows read as they do in the register, and the paragraph above them says what
+ * the order is: a count of shared facts, not a verdict.
+ */
+const kind = asideKindGroup(provider);
+const { providers: registerRows } = await loadFacets();
+const pool = kind ? (await asideGroupOf(kind)).rows : registerRows;
+const similar = similarTo(toRow(provider as never), pool).map((match) => ({
+  id: match.row.id,
+  href: match.row.href,
+  name: match.row.name,
+  description: match.row.description,
+  favorite: match.row.favorite,
+  figure: match.row.figure,
+}));
+
+/** The wide grid under the prose, with the bring-your-own rows on the end of it. */
+const below = drawn(farGroups);
+// Until a record has prose, the facts below take its column rather than leaving it empty.
+const hasProse = Boolean(provider.body?.trim());
+
+/*
+ * A marker goes on the link it backs. Collected at the end of the row it was a
+ * number floating after four links, backing whichever one the reader guessed —
+ * and the sustainability claim is the one most worth citing precisely.
+ *
+ * Social accounts are not cited: a profile link either resolves to the provider
+ * or it does not.
+ */
+const notesFor = (field: string) => numberOf.get(field) ?? [];
+
+/*
+ * What each source backs, in the words the page uses for it. A source may name
+ * no field at all — a claim made in the prose, cited inline — so anything
+ * unmatched falls back to a readable form of the key rather than being dropped:
+ * a source list that hides its own entries is worse than one with an unfamiliar
+ * word in it.
+ */
+const sourceLabel = (field: string) =>
+  fieldOf.get(field)?.label ??
+  { notes: 'the notes', urls: 'links', social: 'accounts' }[field] ??
+  field.replace(/([A-Z])/g, ' $1').toLowerCase();
+
+const origin = Astro.site?.origin ?? '';
+
+/*
+ * Accounts, as the identifiers schema.org means by sameAs — plus the Wikidata
+ * item where one is recorded. A social handle says the company is present
+ * somewhere; the Wikidata id says which company it is, which is the part that
+ * lets anything else resolve this record against what it already knows.
+ */
+const social = [
+  ...(data.wikidata ? [`https://www.wikidata.org/wiki/${data.wikidata}`] : []),
+  ...Object.values(data.social ?? {}).filter((url): url is string => typeof url === 'string'),
+];
+
+// The policy page promises staleness is computed from the recorded date rather
+// than from a promise to re-check. This is where that is kept.
+const staleAfterDays = 180;
+const checkedIso = data.checkedAt?.toISOString().slice(0, 10);
+const addedIso = data.addedAt?.toISOString().slice(0, 10);
+/*
+ * "Updated" is the newest date on any source when that is newer than the
+ * record's own `checkedAt`: a field refreshed on its own, by a script or the
+ * routine. Shown only then, since otherwise it says the same thing twice.
+ */
+const updatedIso = updatedAfterCheck(data)?.toISOString().slice(0, 10);
+const modifiedIso = modifiedAt(data)?.toISOString().slice(0, 10);
+const checkedDaysAgo = data.checkedAt ? Math.floor((Date.now() - data.checkedAt.getTime()) / 86_400_000) : undefined;
+const stale = checkedDaysAgo !== undefined && checkedDaysAgo > staleAfterDays;
+
+/* The listing criteria, in the order /criteria/ numbers them. */
+const criteria: Record<number, string> = {
+  1: 'serves HTTP or produces web output',
+  2: 'installable by the user',
+  3: 'documented installation or deployment',
+  4: 'a release in the last 24 months',
+  5: 'a signal of use',
+};
+
+const statusNotice: Record<string, string> = {
+  stub: 'Stub: checked, not in the full list yet.',
+  renamed: 'Renamed. Same software under a new name.',
+  discontinued: 'Discontinued. No longer maintained.',
+  'hosted-service': 'Hosted service: used as a service, not installed. Listed beside the register.',
+  boundary: 'Boundary case: whether it belongs in the register is still open.',
+};
+
+const listed = isListed(provider);
+
+/*
+ * Built rather than looked up, because it has to name the criterion: "not
+ * listed" without one is an assertion, and this page is where the decision is
+ * argued with.
+ */
+const failed =
+  data.status === 'stub' && data.criterion
+    ? `Stub: fails criterion ${data.criterion}, ${criteria[data.criterion]}.`
+    : undefined;
+
+const notice = failed ?? (typeof data.status === 'string' ? statusNotice[data.status] : undefined);
+
+/*
+ * The categories this record holds, in dictionary order and in the filter
+ * column's shorter wording where it has one — the title is the narrowest place
+ * either appears.
+ */
+const categoryLabels = (fieldOf.get('category')?.values ?? [])
+  .filter((value) => (data.category ?? []).includes(value.id as never))
+  .map((value) => value.short ?? value.label);
+
+/* The record's sentence, then what its fields say about the company, for a search result. */
+const categoryNames = (fieldOf.get('category')?.values ?? [])
+  .filter((value) => (data.category ?? []).includes(value.id as never))
+  .map((value) => value.label);
+const kinds = categoryNames.map((label, index) => (index === 0 ? label : soften(label)));
+const metaDescription = data.description
+  ? extendDescription(data.description, [
+      kinds.length > 0 && `${kinds.join(', ')}.`,
+      data.language && `Written in ${labelOf('language', data.language)}.`,
+      data.licenseModel && `${labelOf('licenseModel', data.licenseModel)}.`,
+      'Recorded field by field, no ratings.',
+    ])
+  : undefined;
+---
+
+<Base
+  title={recordTitle(data.name, categoryLabels)}
+  description={metaDescription}
+  markdown={recordMarkdownPath(provider)}
+  markdownInPage
+  hidden={!listed}
+  image={cardPath(provider.id)}
+  imageAlt={`A FindSoftware card for ${data.name}.`}
+  schema={[
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'FindSoftware', item: `${origin}/` },
+        { '@type': 'ListItem', position: 2, name: data.name },
+      ],
+    },
+    {
+      '@type': 'WebPage',
+      url: `${origin}${recordPath(provider)}`,
+      name: data.name,
+      ...(data.description ? { description: data.description } : {}),
+      inLanguage: 'en',
+      isPartOf: websiteRef(origin),
+      publisher: publisherRef(origin),
+      /* The day the record entered the register — a fact about the register, not the provider. */
+      ...(addedIso ? { datePublished: addedIso } : {}),
+      /* The date somebody read the provider's own pages — the only one we stand behind. */
+      ...(modifiedIso ? { dateModified: modifiedIso } : {}),
+      /* The check alone, so a machine can tell a confirmation from an edit. */
+      ...(checkedIso ? { lastReviewed: checkedIso } : {}),
+      license: licenceUrl,
+      /*
+       * The provider is the subject of the page, not its author. `about` says that
+       * without claiming the page is theirs, and everything in it is a field on
+       * the record — nothing is asserted here that the page does not show. The
+       * `@id` is what every list naming this provider points at.
+       */
+      about: {
+        '@type': 'SoftwareApplication',
+        '@id': providerId(origin, recordPath(provider)),
+        name: data.name,
+        ...(data.description ? { description: data.description } : {}),
+        ...(data.urls?.home ? { url: data.urls.home } : {}),
+        applicationCategory: 'DeveloperApplication',
+        ...(data.currentMajor ? { softwareVersion: data.currentMajor } : {}),
+        ...(data.urls?.repository ? { codeRepository: data.urls.repository } : {}),
+        ...(social.length ? { sameAs: social } : {}),
+      },
+    },
+  ]}
+>
+  <article>
+    <h1>{data.name}</h1>
+    {
+      stale && (
+        <aside class="editorial-note">
+          <p>
+            <strong>May be out of date.</strong> Last checked {checkedDaysAgo} days ago.
+          </p>
+        </aside>
+      )
+    }
+
+    {
+      data.description && (
+        <p class="lead" data-pagefind-meta="summary">
+          {data.description}
+        </p>
+      )
+    }
+
+    <p class="record-links">
+      {/* Absent only where the provider has stopped and the domain went with it. */}
+      {
+        data.urls?.home && (
+          <span class="record-link">
+            <a class="record-home" href={data.urls.home} {...outboundLinkAttrs(data.urls.home, 'record')}>
+              {data.urls.home.replace('https://', '')}
+            </a>
+            {notesFor('urls').map((note) => (
+              <a class="footnote-ref" href={`#source-${note}`} aria-label={`Source ${note}`}>
+                {note}
+              </a>
+            ))}
+          </span>
+        )
+      }
+      {
+        outgoing.map((link) => (
+          <span class="record-link">
+            <a href={link.url} {...outboundLinkAttrs(link.url, 'record')}>
+              {link.label}
+            </a>
+            {/* `urls` is cited once, on the address; every page under it is the same source. */}
+            {link.field !== 'urls' &&
+              notesFor(link.field).map((note) => (
+                <a class="footnote-ref" href={`#source-${note}`} aria-label={`Source ${note}`}>
+                  {note}
+                </a>
+              ))}
+          </span>
+        ))
+      }
+    </p>
+
+    <SocialLinks social={data.social} />
+
+    <PageFigure figure={data.figure} />
+
+    <div class="record-layout">
+      <aside class="record-specs">
+        {
+          /*
+           * Why this record is not in the register, read as one of the recorded
+           * facts rather than as a boxed warning above the page. It is the first
+           * thing the record answers, and the box gave it a weight the sentence
+           * does not need: being a stub is a ruling, not an alarm.
+           */
+          notice && (
+            <div class="fact-groups">
+              <section class="fact-group">
+                <h2>Status</h2>
+                <p>
+                  {notice} {data.status === 'stub' && <a href="/criteria/">Listing criteria</a>}
+                </p>
+              </section>
+            </div>
+          )
+        }
+
+        <FactGroups groups={drawn(nearGroups)} />
+
+        {/* Facts about this record held on other records, drawn from their side of the relation. */}
+        {related.length > 0 && <FactGroups groups={[{ label: 'Related', rows: related }]} />}
+
+        {hosts.length > 0 && <FactGroups groups={[{ label: 'Where to host it', rows: hosts }]} />}
+
+        {
+          missing.length > 0 && (
+            <details class="missing-fields">
+              <summary>
+                {missing.length} of {total} fields not recorded yet
+              </summary>
+              <p class="missing-list">{missing.map((field) => field.label).join(', ')}</p>
+            </details>
+          )
+        }
+      </aside>
+
+      <div class="record-prose">
+        {hasProse ? <Content /> : below.length > 0 && <FactGroups groups={below} class="record-instead" />}
+
+      </div>
+    </div>
+
+    {
+      /*
+       * The wide grid: what describes the company rather than the product, and
+       * last of all what this one says it does not sell, with the register's own
+       * list of who does. That group is drawn from the same fields the Other
+       * features group above it reads, which is why it sits with them rather
+       * than in the rail.
+       */
+    }
+    {hasProse && below.length > 0 && <FactGroups groups={below} class="record-extra" />}
+
+    {
+      notes.length > 0 && (
+        <section class="sources">
+          <h2>Sources</h2>
+          <ol>
+            {notes.map((note, index) => (
+              <li id={`source-${index + 1}`}>
+                <span class="source-date">{note.checkedAt.toISOString().slice(0, 10)}</span>:&nbsp;
+                <span class="source-fields">{note.fields.map(sourceLabel).join(', ')}</span>
+                <br />
+                <a href={note.url} {...outboundLinkAttrs(note.url, 'record')}>
+                  {note.url.replace('https://', '')}
+                </a>{' '}
+              </li>
+            ))}
+          </ol>
+        </section>
+      )
+    }
+
+    {
+      /*
+       * The back link, offered to the provider on the page that is about them —
+       * the one place they are certain to land. Folded away because it is the
+       * only thing on a record addressed to somebody other than the reader, and
+       * only on a listed record: a snippet reading "Listed on FindSoftware" under a
+       * record that is a stub or discontinued would be a claim the
+       * register does not make.
+       */
+    }
+
+    {
+      /*
+       * What can be done with the page, in one row: when it was last read against
+       * the provider, where to change it, and where to read it as text. They were
+       * three lines in two places — two here and the markdown link down in the
+       * site footer — which read as three unrelated afterthoughts.
+       *
+       * The date is a <time>, so the claim `checkedAt` makes is machine-readable
+       * rather than a string that happens to look like a date.
+       */
+    }
+    <p class="annotation record-meta">
+      <span>
+        {
+          /*
+           * Three dates, each shown only when it exists: absent renders as
+           * nothing, here as everywhere. "Listed since" is the date the "last
+           * added" order sorts by, said where a reader can find it.
+           */
+        }
+        {
+          [
+            checkedIso && (
+              <>
+                Last reviewed{' '}
+                <a href={historyUrl} {...outboundLinkAttrs(historyUrl, 'record')}>
+                  <time datetime={checkedIso}>{checkedIso}</time>
+                </a>
+              </>
+            ),
+            updatedIso && (
+              <>
+                Updated{' '}
+                <a href={historyUrl} {...outboundLinkAttrs(historyUrl, 'record')}>
+                  <time datetime={updatedIso}>{updatedIso}</time>
+                </a>
+              </>
+            ),
+            addedIso && (
+              <>
+                Listed since <time datetime={addedIso}>{addedIso}</time>
+              </>
+            ),
+          ]
+            .filter(Boolean)
+            .map((part, index) => (
+              <>
+                {index > 0 && ' · '}
+                {part}
+              </>
+            ))
+        }
+      </span>
+      <a href={editUrl} {...outboundLinkAttrs(editUrl, 'record')}>Edit on GitHub</a>
+      <a href={recordMarkdownPath(provider)}>This page as markdown</a>
+    </p>
+    {
+      /*
+       * After everything the record says about the provider, the register's
+       * answer to the question a reader asks next. Kept out of the search
+       * index: a name search should land on its record, not on the twenty records
+       * that resemble it. The list header is the register's own, so the
+       * extended and slim views carry over — find.ts wires the toggle on any
+       * page that has both the buttons and a results block.
+       */
+      similar.length > 0 && (
+        <section class="similar" data-pagefind-ignore>
+          <h2>Somehow similar software</h2>
+          <p>
+            Ordered by how many facet values they share with this record. A field left blank on either side does not
+            count.
+          </p>
+          <ListControls />
+          <div data-find-results>
+            <ProviderList providers={similar} />
+          </div>
+        </section>
+      )
+    }
+  </article>
+</Base>
+
+<script>
+  import '../scripts/find.ts';
+</script>

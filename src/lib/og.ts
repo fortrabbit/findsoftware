@@ -1,0 +1,403 @@
+/**
+ * Share cards: the picture a link to a record turns into on Slack, Mastodon,
+ * LinkedIn and the rest. Drawn from the record, so a card cannot disagree with
+ * the page it points at.
+ *
+ * Nothing here runs a browser. Satori lays the card out and writes SVG with the
+ * text already converted to outlines; resvg turns that into PNG. Both are
+ * JavaScript and WebAssembly with no native binary behind them, which is the
+ * whole reason they were chosen — Pagefind's Rust binary installs from optional
+ * dependencies and does not resolve on the deploy container (FR-6305), and a
+ * build step that only works on a laptop is not a build step.
+ */
+import { createHash } from 'node:crypto';
+import {
+  existsSync,
+  mkdirSync,
+  readdirSync,
+  readFileSync,
+  realpathSync,
+  renameSync,
+  statSync,
+  unlinkSync,
+  utimesSync,
+  writeFileSync,
+} from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import satori from 'satori';
+import { initWasm, Resvg } from '@resvg/resvg-wasm';
+
+/*
+ * These packages are read as files rather than imported — a font, a WebAssembly
+ * module and 3,723 emoji. `require.resolve` is the usual way to find them and
+ * the wrong one here: an exports map decides what a package will admit to
+ * having, and @resvg/resvg-wasm does not admit to its own package.json. The
+ * directory is on disk either way.
+ */
+const nodeModules = (() => {
+  let here = dirname(fileURLToPath(import.meta.url));
+  while (!existsSync(join(here, 'node_modules'))) {
+    const up = dirname(here);
+    if (up === here) return join(process.cwd(), 'node_modules');
+    here = up;
+  }
+  return join(here, 'node_modules');
+})();
+
+const packageDir = (name: string) => join(nodeModules, name);
+
+/** Facebook's number, and everyone else followed it. */
+export const cardWidth = 1200;
+export const cardHeight = 630;
+
+/**
+ * The page sets Charter and falls back through the serifs a system happens to
+ * have. A renderer has no system, so the card needs a file — Charis SIL is
+ * Charter's open descendant and the closest thing to what a reader on a Mac
+ * already sees.
+ *
+ * WOFF rather than WOFF2: satori reads font tables with opentype.js, which
+ * inflates WOFF and cannot decompress WOFF2's Brotli.
+ *
+ * The extended cut is a second family rather than more of the first. Satori
+ * picks one file per family and stops — two faces both called Charis SIL means
+ * the ASCII one answers for every letter and Poznań loses its ń to a tofu box.
+ * Named apart, it is a fallback family and the glyph is found.
+ */
+const bodyFace = 'Charis SIL';
+const extendedFace = 'Charis SIL Extended';
+
+const faces = [
+  { file: 'charis-sil-latin-400-normal.woff', name: bodyFace, weight: 400 },
+  { file: 'charis-sil-latin-700-normal.woff', name: bodyFace, weight: 700 },
+  { file: 'charis-sil-latin-ext-400-normal.woff', name: extendedFace, weight: 400 },
+  { file: 'charis-sil-latin-ext-700-normal.woff', name: extendedFace, weight: 700 },
+] as const;
+
+let fonts: { name: string; data: Buffer; weight: 400 | 700; style: 'normal' }[] | undefined;
+
+const loadFonts = () => {
+  const dir = join(packageDir('@fontsource/charis-sil'), 'files');
+  fonts ??= faces.map((face) => ({
+    name: face.name,
+    data: readFileSync(join(dir, face.file)),
+    weight: face.weight,
+    style: 'normal' as const,
+  }));
+  return fonts;
+};
+
+let started: Promise<void> | undefined;
+
+/** resvg's WebAssembly compiles once per process, and complains if asked twice. */
+const startRenderer = () => {
+  started ??= initWasm(readFileSync(join(packageDir('@resvg/resvg-wasm'), 'index_bg.wasm')));
+  return started;
+};
+
+/**
+ * Twemoji names its files by codepoint, and is inconsistent about the variation
+ * selector that asks for the colour form: dropped from a plain emoji and from a
+ * keycap, kept inside a joined sequence. Rather than encode the rule, both
+ * spellings are tried and the one on disk wins. Neither on disk is an error —
+ * the alternative is a card with a box where the figure should be, and no build
+ * output to say so.
+ */
+export const emojiFile = (grapheme: string): string => {
+  const points = [...grapheme].map((character) => character.codePointAt(0)!);
+  const name = (kept: number[]) => `${kept.map((point) => point.toString(16)).join('-')}.svg`;
+  const candidates = [name(points), name(points.filter((point) => point !== 0xfe0f))];
+
+  const dir = packageDir('@twemoji/svg');
+  const found = candidates.find((candidate) => existsSync(join(dir, candidate)));
+  if (!found) throw new Error(`No Twemoji image for "${grapheme}" (tried ${candidates.join(', ')})`);
+  return join(dir, found);
+};
+
+/**
+ * An emoji is a picture, not a letter, and no text font on the card holds one.
+ * Satori swaps a grapheme for an image when handed one, so the file is read off
+ * disk and inlined — the build never reaches the network for a rabbit.
+ */
+const emojiImage = (grapheme: string): string =>
+  `data:image/svg+xml;base64,${readFileSync(emojiFile(grapheme)).toString('base64')}`;
+
+const graphemesOf = (text: string) =>
+  [...new Intl.Segmenter('en', { granularity: 'grapheme' }).segment(text)].map((part) => part.segment);
+
+/** Every grapheme in the card that no font will draw, mapped to a picture of it. */
+const emojiIn = (text: string) => {
+  const images: Record<string, string> = {};
+  for (const grapheme of graphemesOf(text)) {
+    if (!/\p{Extended_Pictographic}|\p{Regional_Indicator}/u.test(grapheme)) continue;
+    images[grapheme] = emojiImage(grapheme);
+  }
+  return images;
+};
+
+export interface CardSpec {
+  /** The headline. A provider's name, or the title of the page. */
+  name: string;
+  /** A sentence of what it is. Absent on records nobody has written one for yet. */
+  description?: string;
+  /** Short facts, joined with a middot. Whatever the page would lead with. */
+  facts?: string[];
+  /** The band of colour the page carries, where it carries one. */
+  figure?: { emoji: string; color: string; textColor: string; text: string };
+  /** Small print above the rule, opposite the wordmark. */
+  strapline?: string;
+}
+
+/*
+ * Display sizes are chosen by length rather than measured. Satori cannot report
+ * a width before it lays out, and a second pass to find one is not worth it for
+ * four buckets — a long name simply gets set smaller, exactly as it would be by
+ * hand.
+ */
+const displaySize = (name: string) => (name.length <= 14 ? 96 : name.length <= 22 ? 78 : name.length <= 32 ? 64 : 50);
+
+const ink = '#000000';
+const paper = '#ffffff';
+
+/*
+ * Satori takes React elements. There is no React here and no reason to add one
+ * for four nested boxes, so the tree is written as the plain objects React would
+ * have produced.
+ */
+type Box = { type: string; props: Record<string, unknown> };
+
+const box = (style: Record<string, unknown>, children?: unknown): Box => ({
+  type: 'div',
+  props: { style: { display: 'flex', ...style }, ...(children === undefined ? {} : { children }) },
+});
+
+const compose = (spec: CardSpec): Box => {
+  const { name, description, facts = [], figure, strapline = 'A register of web hosting providers' } = spec;
+
+  const body: Box[] = [
+    /* The masthead, and under it the heavy rule the site uses to open a page. */
+    box(
+      {
+        justifyContent: 'space-between',
+        alignItems: 'flex-end',
+        fontSize: 25,
+        fontWeight: 700,
+        letterSpacing: '0.09em',
+        textTransform: 'uppercase',
+      },
+      [box({}, 'FindSoftware'), box({ fontWeight: 400, letterSpacing: '0.04em' }, strapline)],
+    ),
+    box({ height: 6, background: ink, marginTop: 14 }),
+    box(
+      { fontSize: displaySize(name), fontWeight: 700, lineHeight: 1.04, marginTop: 38, letterSpacing: '-0.015em' },
+      name,
+    ),
+  ];
+
+  if (description) {
+    body.push(
+      box(
+        {
+          fontSize: 31,
+          lineHeight: 1.38,
+          marginTop: 24,
+          /* Three lines is what fits under the longest name without crowding the facts. */
+          overflow: 'hidden',
+          textOverflow: 'ellipsis',
+          WebkitLineClamp: 3,
+          WebkitBoxOrient: 'vertical',
+        },
+        description,
+      ),
+    );
+  }
+
+  /* Everything above sits where it falls; the facts are pinned to the floor. */
+  body.push(box({ flexGrow: 1, minHeight: 16 }));
+
+  if (facts.length > 0) {
+    body.push(box({ height: 2, background: ink }));
+    body.push(box({ fontSize: 27, marginTop: 15, letterSpacing: '0.005em' }, facts.join('  ·  ')));
+  }
+
+  /*
+   * `minHeight: 0` is what lets this block give way. Without it a flex item
+   * refuses to shrink below its contents, so a three-line description pushed the
+   * colour band off the bottom edge of the card rather than losing a line of
+   * itself.
+   */
+  const parts: Box[] = [
+    box({ flexDirection: 'column', flexGrow: 1, minHeight: 0, overflow: 'hidden', padding: '48px 72px 40px' }, body),
+  ];
+
+  /*
+   * The one place the site allows colour, kept full-bleed at the foot of the
+   * card. It is also the only thing that tells 233 otherwise identical cards
+   * apart at thumbnail size in a feed.
+   */
+  if (figure) {
+    parts.push(
+      box(
+        {
+          flexShrink: 0,
+          padding: '24px 72px 26px',
+          background: figure.color,
+          color: figure.textColor,
+          fontSize: 28,
+          lineHeight: 1.3,
+          alignItems: 'center',
+          gap: 18,
+        },
+        [box({ fontSize: 34, lineHeight: 1 }, figure.emoji), box({}, figure.text)],
+      ),
+    );
+  }
+
+  return box(
+    {
+      width: cardWidth,
+      height: cardHeight,
+      flexDirection: 'column',
+      background: paper,
+      color: ink,
+      fontFamily: `${bodyFace}, ${extendedFace}`,
+    },
+    parts,
+  );
+};
+
+/*
+ * `Uint8Array<ArrayBuffer>` rather than the plain alias: since TypeScript 5.7 a
+ * bare Uint8Array may sit on a SharedArrayBuffer, which a Response body may not.
+ * resvg always hands back its own buffer, so saying so is the whole fix.
+ */
+/** One card, as PNG bytes. */
+export async function shareCard(spec: CardSpec): Promise<Uint8Array<ArrayBuffer>> {
+  const file = cardFile(spec);
+
+  /* Another build, or the dev server beside one, may prune or replace the file between the check and the read; drawing it again is the answer. */
+  try {
+    const now = new Date();
+    utimesSync(file, now, now);
+    return new Uint8Array(readFileSync(file));
+  } catch {}
+
+  /* Written aside and renamed into place, so a build killed mid-write leaves no half a card to reuse. */
+  const png = await render(spec);
+  const partial = `${file}.${process.pid}.tmp`;
+  writeFileSync(partial, png);
+  renameSync(partial, file);
+  return png;
+}
+
+async function render(spec: CardSpec): Promise<Uint8Array<ArrayBuffer>> {
+  await startRenderer();
+
+  const svg = await satori(compose(spec) as never, {
+    width: cardWidth,
+    height: cardHeight,
+    fonts: loadFonts(),
+    graphemeImages: emojiIn(
+      [spec.name, spec.description, spec.figure?.emoji, spec.figure?.text].filter(Boolean).join(' '),
+    ),
+  });
+
+  return new Resvg(svg, { fitTo: { mode: 'width', value: cardWidth } }).render().asPng() as Uint8Array<ArrayBuffer>;
+}
+
+/*
+ * Rendering is most of a deploy, and nearly every card is unchanged from the
+ * last one, so a card is kept on disk under a hash of everything that draws it
+ * and reused while none of it moves.
+ *
+ * Under node_modules because that is the directory the deploy container keeps
+ * between builds; `dist` is thrown away every time, and CI caches the same path.
+ *
+ * The key is the words (the spec) and the drawing: this file's source and the
+ * versions of the renderer, the font and the emoji. Satori's own dependencies
+ * count too — yoga does its layout and they are ranged, so a lockfile bump can
+ * move a card under the same satori version. Any edit here, comments
+ * included, redraws every card — a stale card is the failure worth avoiding,
+ * and a full render is only the build as it was.
+ */
+let cacheDir: string | undefined;
+
+/** Where a card with these words and this drawing is kept. */
+export const cardFile = (spec: CardSpec) =>
+  join(cardCache(), `${createHash('sha256').update(template()).update(JSON.stringify(spec)).digest('hex')}.png`);
+
+const cardCache = () => {
+  if (cacheDir) return cacheDir;
+  cacheDir = join(nodeModules, '.cache', 'findhost-og');
+  mkdirSync(cacheDir, { recursive: true });
+  prune(cacheDir);
+  return cacheDir;
+};
+
+/*
+ * A hit refreshes a card's date, so what no build has asked for in a fortnight
+ * is a card for a page, a wording or a template that no longer exists.
+ */
+const keptFor = 14 * 86_400_000;
+
+const prune = (dir: string) => {
+  const cutoff = Date.now() - keptFor;
+  for (const name of readdirSync(dir)) {
+    const path = join(dir, name);
+    try {
+      if (statSync(path).mtimeMs < cutoff) unlinkSync(path);
+    } catch {}
+  }
+};
+
+let drawing: string | undefined;
+
+const manifest = (dir: string) => JSON.parse(readFileSync(join(dir, 'package.json'), 'utf8'));
+
+/* pnpm puts a package's dependencies beside it, not at the top of node_modules. */
+const satoriDependencies = () => {
+  const beside = dirname(realpathSync(packageDir('satori')));
+  return Object.keys(manifest(packageDir('satori')).dependencies ?? {}).map((name) => join(beside, name));
+};
+
+const template = () => {
+  drawing ??= [
+    readFileSync(join(dirname(nodeModules), 'src', 'lib', 'og.ts'), 'utf8'),
+    ...[
+      ...['satori', '@resvg/resvg-wasm', '@fontsource/charis-sil', '@twemoji/svg'].map(packageDir),
+      ...satoriDependencies(),
+    ].map((dir) => {
+      const { name, version } = manifest(dir);
+      return `${name}@${version}`;
+    }),
+  ].join('\n');
+  return drawing;
+};
+
+/*
+ * Where each kind of card lives, so an endpoint and the meta tag pointing at it
+ * cannot drift apart. Facet cards sit a level down because /og/<name>.png is
+ * already the records' shape, and a facet named like a provider would otherwise
+ * be two routes claiming one address.
+ */
+
+/** A record's card: /og/fortrabbit.png */
+export const cardPath = (slug: string) => `/og/${slug}.png`;
+
+/** A facet's index card: /og/categories/index.png */
+export const facetCardPath = (facet: string) => `/og/${facet}/index.png`;
+
+/** One facet value's card: /og/categories/paas.png */
+export const valueCardPath = (facet: string, slug: string) => `/og/${facet}/${slug}.png`;
+
+/** A standalone page's card: /og/page/reach.png, beside its note at notes/page/reach.md */
+export const pageCardPath = (name: string) => `/og/page/${name}.png`;
+
+/*
+ * One card per *pairing*, not per page. Rasterising is 83% of the build — 794
+ * cards at about 48ms each — so a card per pair page would cost more than the
+ * pages do. The card names the two facets, which is what a shared preview can
+ * honestly say about 55 different pages.
+ */
+export const pairCardPath = (pairing: string) => `/og/pair/${pairing}.png`;

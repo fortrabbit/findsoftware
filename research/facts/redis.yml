@@ -1,0 +1,115 @@
+id: redis
+name: Redis
+status: accepted
+checkedAt: 2026-10-19
+description: In-memory data store used as a cache, database and streaming engine, offered under source-available and open-source licenses.
+facts:
+  - field: name
+    value: Redis
+    url: https://redis.io/
+    checkedAt: 2026-10-19
+    via: page
+  - field: homepage
+    value: https://redis.io
+    url: https://github.com/redis/redis
+    checkedAt: 2026-10-19
+    via: api
+  - field: repository
+    value: https://github.com/redis/redis
+    url: https://github.com/redis/redis
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://redis.io/docs/latest/
+    url: https://redis.io/docs/latest/
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: Redis Ltd
+    url: https://redis.io/legal/licenses/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "require a commercial license from Redis Ltd"
+  - field: maintainerType
+    value: company
+    url: https://redis.io/legal/licenses/
+    checkedAt: 2026-10-19
+    via: page
+  - field: categories
+    value: [key-value, cache, database, streaming, vector-database]
+    url: https://redis.io/downloads/
+    checkedAt: 2026-10-19
+    via: page
+  - field: language
+    value: C
+    url: https://github.com/redis/redis
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: c binary
+    url: https://redis.io/downloads/
+    checkedAt: 2026-10-19
+    via: page
+  - field: currentMajor
+    value: 8
+    url: https://github.com/redis/redis/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-17
+    url: https://github.com/redis/redis/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: endoflifeId
+    value: redis
+    url: https://endoflife.date/redis
+    checkedAt: 2026-10-19
+    via: api
+  - field: license
+    value: RSALv2 or SSPLv1 or AGPLv3
+    url: https://github.com/redis/redis/blob/unstable/LICENSE.txt
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Starting with Redis 8, Redis Open Source is moving to a tri-licensing model"
+  - field: license
+    value: BSD-3-Clause
+    url: https://redis.io/legal/licenses/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "remain subject to the BSD3 license"
+  - field: licenseModel
+    value: [source-available, open-source]
+    url: https://redis.io/legal/licenses/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "available as both source available and OSI-compliant open source software"
+  - field: installMethod
+    value: [docker-image, snap, homebrew, rpm, debian-package, source-tarball]
+    url: https://redis.io/downloads/
+    checkedAt: 2026-10-19
+    via: page
+  - field: docker
+    value: docker images (Alpine, Debian bookworm)
+    url: https://redis.io/downloads/
+    checkedAt: 2026-10-19
+    via: page
+  - field: x
+    value: https://x.com/Redisinc
+    url: https://redis.io/
+    checkedAt: 2026-10-19
+    via: page
+  - field: githubStargazers
+    value: 77004
+    url: https://api.github.com/repos/redis/redis
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://redis.io/docs/latest/operate/oss_and_stack/install/archive/install-redis/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Running Redis from the command line is fine just to hack a bit or for development"
+notFound: [hqCountry, firstRelease, runtimeMin, eolPolicy, releaseCadence, paidEditions, pricingPage, freeTier, parent, contributors, pluginDirectory, pluginCount, starters, adminUi, headlessApi, i18n, multisite, userRoles, sso, serverNeeds, processModel, renderingModes, forum, discord, subreddit, mastodon, bluesky, newsletter, usageShare, packagistName, npmName, pypiDownloads, npmWeeklyDownloads, packagistDownloads, wikidata, deployTargets]
+unreadable: []
+notes: >
+  The GitHub API reports license NOASSERTION for the repository, so no SPDX value is taken from it; the two license entries come from LICENSE.txt and the legal page. The tri-license applies to Redis 8.0 and later, per LICENSE.txt; 7.2 and earlier remain BSD-3-Clause, and the legal page also names 7.4.x to 7.8.x as RSALv2/SSPLv1. Redis Cloud and Redis Software are commercial products from Redis Ltd; their prices were not read, so paidEditions is not recorded. The current open-source release on the download page is 8.10 (8.10.2 on GitHub); the homepage names Redis 8.8. The Docker Hub pull count in candidates-server-infra.csv (11.5B) was not re-read. Fields coined here: none.

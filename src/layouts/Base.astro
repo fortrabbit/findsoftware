@@ -1,0 +1,293 @@
+---
+import '../styles/tokens.css';
+import '../styles/base.css';
+import '../styles/components.css';
+import { outboundLinkAttrs } from '../lib/links';
+import { graph, licenceUrl } from '../lib/seo';
+
+interface Props {
+  title: string;
+  description?: string;
+  /** Path to the same page as markdown, announced for readers that prefer text. */
+  markdown?: string;
+  /**
+   * The page carries the markdown link itself, so the footer does not. A record
+   * puts it in the row beside its review date and its edit link, where it reads
+   * as one set of things to do with the page rather than as a stray line under
+   * the site's own credits.
+   */
+  markdownInPage?: boolean;
+  /** A record kept for reference but not on show: out of the index and out of search, whatever the site-wide flag says. */
+  hidden?: boolean;
+  /** This page's share card, site-root relative. Records draw their own; every other page shares the register's. */
+  image?: string;
+  /** What the card shows, for a reader who is hearing the link rather than seeing it. */
+  imageAlt?: string;
+  /**
+   * Structured data for this page. One object, or several where the page makes
+   * more than one claim about itself. Emitted as one graph beside the publisher
+   * and the site, which the nodes refer to by `@id`; shapes in lib/seo.ts.
+   */
+  schema?: Record<string, unknown> | Record<string, unknown>[];
+}
+
+const {
+  title,
+  description,
+  markdown,
+  markdownInPage = false,
+  hidden = false,
+  image = '/og/default.png',
+  imageAlt = 'A FindSoftware card: the register of software to build websites with.',
+  schema,
+} = Astro.props;
+const fathomSiteId = import.meta.env.PUBLIC_FATHOM_SITE_ID;
+
+// Belt and braces with robots.txt: the file stops the crawl, this stops a URL
+// someone links to from being listed anyway.
+const indexable = import.meta.env.PUBLIC_INDEXABLE === 'true' && !hidden;
+
+/*
+ * The writing about the register. The register itself is the homepage, which the
+ * wordmark already leads back to; About is in the footer, and the map is reached
+ * from the pages that need it — a nav that lists everything is a nav nobody
+ * reads.
+ */
+const sections = [{ href: '/guide/', label: 'Guide' }];
+
+const path = Astro.url.pathname;
+const origin = Astro.site ?? Astro.url;
+const canonical = new URL(path, origin).href;
+
+/*
+ * Absolute, because a share card is fetched by a machine that has no page to
+ * resolve a relative path against. Dimensions are stated so the preview reserves
+ * the right shape before the image arrives.
+ */
+const card = new URL(image, origin).href;
+
+const structured = schema && graph(new URL(origin).origin, Array.isArray(schema) ? schema : [schema]);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    {!indexable && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    {markdown && <link rel="alternate" type="text/markdown" href={markdown} />}
+    <link rel="canonical" href={canonical} />
+    {/* The permission, in the head, where something that is not reading the prose can find it. */}
+    <link rel="license" href={licenceUrl} />
+    <link rel="alternate" type="application/atom+xml" title="FindSoftware — recently checked" href="/feed.xml" />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="FindSoftware" />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:image" content={card} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta name="twitter:card" content="summary_large_image" />
+    {
+      structured && (
+        <script type="application/ld+json" set:html={JSON.stringify(structured).replace(/</g, '\\u003c')} is:inline />
+      )
+    }
+    {fathomSiteId && <script is:inline src="https://cdn.usefathom.com/script.js" data-site={fathomSiteId} defer />}
+  </head>
+  <body data-pagefind-ignore={hidden ? 'all' : undefined}>
+    <header data-pagefind-ignore>
+      <a href="/" class="wordmark" aria-current={path === '/' ? 'page' : undefined}>FindSoftware</a>
+
+      <nav class="site-nav">
+        {
+          sections.map((section) => (
+            <a href={section.href} aria-current={path.startsWith(section.href) ? 'page' : undefined}>
+              {section.label}
+            </a>
+          ))
+        }
+      </nav>
+
+      <form class="site-search" role="search" aria-label="Site" action="/search/">
+        <input
+          type="search"
+          name="q"
+          placeholder="Search software and guide"
+          aria-label="Search"
+          title="Press / to search"
+          data-search-shortcut
+        />
+      </form>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer data-pagefind-ignore>
+      <div class="footer-base">
+        <div>
+          <p>
+            Designed and curated by Frank Lämmer of <a href="https://www.fortrabbit.com" {...outboundLinkAttrs('https://www.fortrabbit.com')}>fortrabbit</a>.
+          </p>
+          {
+            /*
+             * Destinations rather than a sentence, so they take a row and a gap
+             * and no full stops. "Add a provider" is the errand a provider
+             * arrives with and the only one they have a page of their own for —
+             * correcting a record, naming a missing one and the badge are all
+             * on it, and it sends them into GitHub knowing which form they want.
+             */
+          }
+          <nav class="footer-nav" aria-label="Elsewhere">
+            <a href="/about/">About</a>
+            <a href="/criteria/">Listing criteria</a>
+            
+            <a
+              href="https://github.com/fortrabbit/findsoftware"
+              {...outboundLinkAttrs('https://github.com/fortrabbit/findsoftware')}
+            >
+              GitHub
+            </a>
+          </nav>
+          {
+            /*
+             * The same twin the `<link rel="alternate">` in the head announces,
+             * as an anchor. A crawler that only reads body links never sees the
+             * head, and the markdown copy is the form this site would rather be
+             * read in by anything that is not a browser.
+             */
+          }
+          {
+            markdown && !markdownInPage && (
+              <p>
+                <a href={markdown}>This page as markdown</a>.
+              </p>
+            )
+          }
+        </div>
+        {
+          /*
+          Three choices rather than a switch between two, because there are three
+          — and the third, letting the operating system decide, was unreachable
+          the moment anybody pressed the old one. Absent until the script runs;
+          the `js` class decides that before first paint.
+        */
+        }
+        <div class="theme-switch" role="group" aria-label="Theme">
+          {
+            /*
+            Drawn rather than typed. ◑ ○ ● are glyphs, and a glyph sits where its
+            font puts it — which is why the half-circle looked centred in one
+            browser and low in another. A circle in a viewBox is in the middle of
+            it everywhere.
+          */
+          }
+          <button type="button" data-theme-set="system">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 2a6 6 0 0 0 0 12z" fill="currentColor"></path>
+              <circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+            </svg>
+            <span class="visually-hidden">System</span>
+          </button>
+          <button type="button" data-theme-set="light">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+            </svg>
+            <span class="visually-hidden">Light</span>
+          </button>
+          <button type="button" data-theme-set="dark">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <circle cx="8" cy="8" r="6" fill="currentColor"></circle>
+            </svg>
+            <span class="visually-hidden">Dark</span>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script is:inline>
+      // Before first paint, or the page flashes the wrong theme on the way in.
+      // Guarded: a browser that blocks site data throws on the accessor, and
+      // the `js` class below has to be set regardless.
+      try {
+        const stored = localStorage.getItem('theme');
+        if (stored === 'dark' || stored === 'light') document.documentElement.dataset.theme = stored;
+      } catch {}
+
+      /*
+       * Same reason. The filter panel is static markup and ships visible, so a
+       * crawler reads its links and a reader sees it immediately; the controls
+       * inside it only work once find.ts has run. This says which world we are
+       * in early enough that nothing appears, disappears or moves afterwards.
+       */
+      document.documentElement.classList.add('js');
+    </script>
+
+    <script>
+      const root = document.documentElement;
+      const choices = document.querySelectorAll<HTMLButtonElement>('[data-theme-set]');
+
+      /*
+       * Each button is a state rather than a move, so each says whether it is the
+       * one in force. `aria-pressed` is right here for the reason it was wrong
+       * before: these announce what the theme *is*, not what pressing will do.
+       */
+      const describe = () => {
+        const setting = root.dataset.theme ?? 'system';
+        for (const choice of choices) {
+          const mine = choice.dataset.themeSet === setting;
+          choice.setAttribute('aria-pressed', String(mine));
+          choice.title =
+            choice.dataset.themeSet === 'system' ? 'Follow the system' : `Always ${choice.dataset.themeSet}`;
+        }
+      };
+
+      for (const choice of choices) {
+        choice.addEventListener('click', () => {
+          const wanted = choice.dataset.themeSet!;
+
+          // System is the absence of a choice, so choosing it removes one.
+          if (wanted === 'system') delete root.dataset.theme;
+          else root.dataset.theme = wanted;
+
+          try {
+            if (wanted === 'system') localStorage.removeItem('theme');
+            else localStorage.setItem('theme', wanted);
+          } catch {
+            /* Storage blocked: the theme still applies for this page. */
+          }
+
+          describe();
+        });
+      }
+
+      describe();
+
+      // `/` focuses search, the way it works everywhere else a developer types.
+      const field = document.querySelector<HTMLInputElement>('[data-search-shortcut]');
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key !== '/' || event.metaKey || event.ctrlKey || event.altKey) return;
+
+        const active = document.activeElement;
+        const typing =
+          active instanceof HTMLInputElement ||
+          active instanceof HTMLTextAreaElement ||
+          (active instanceof HTMLElement && active.isContentEditable);
+        if (typing) return;
+
+        event.preventDefault();
+        field?.focus();
+        field?.select();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+id: swetrix
+name: Swetrix
+status: accepted
+checkedAt: 2026-10-19
+description: Web analytics platform, self-hosted or offered as a hosted service.
+facts:
+  - field: homepage
+    value: "https://swetrix.com"
+    url: https://swetrix.com
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: "https://github.com/Swetrix/swetrix"
+    url: https://github.com/Swetrix/swetrix
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: "https://swetrix.com/docs"
+    url: https://swetrix.com/docs
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: "Swetrix Ltd"
+    url: https://swetrix.com
+    checkedAt: 2026-10-19
+    via: page
+    quote: "© 2021-2026 Swetrix Ltd. All rights reserved."
+  - field: maintainerType
+    value: company
+    url: https://swetrix.com
+    checkedAt: 2026-10-19
+    via: page
+  - field: language
+    value: TypeScript
+    url: https://github.com/Swetrix/swetrix
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://github.com/Swetrix/swetrix/blob/v5.4.1/backend/package.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtimeMin
+    value: "Node.js 22"
+    url: https://github.com/Swetrix/swetrix/blob/v5.4.1/backend/package.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: databases
+    value: [clickhouse, redis]
+    url: https://swetrix.com/docs/selfhosting/how-to
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Redis server for caching"
+  - field: serverNeeds
+    value: "Docker and Docker Compose; at least 2GB of RAM recommended"
+    url: https://swetrix.com/docs/selfhosting/how-to
+    checkedAt: 2026-10-19
+    via: page
+    quote: "At least 2GB of RAM is recommended for the best performance"
+  - field: installMethod
+    value: [docker-compose]
+    url: https://swetrix.com/docs/selfhosting/how-to
+    checkedAt: 2026-10-19
+    via: page
+    quote: "docker compose up -d"
+  - field: categories
+    value: [web-analytics]
+    url: https://swetrix.com
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/Swetrix/swetrix
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-core
+    url: https://swetrix.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+    quote: "we provide a Community Edition that you can self-host on your own infrastructure for free."
+  - field: paidEditions
+    value: ["Standard, €17/month +VAT if applicable"]
+    url: https://swetrix.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+    quote: "€17/month+VAT if applicable"
+  - field: freeTier
+    value: "Community Edition for self-hosting, free; hosted plans include a 14-day free trial"
+    url: https://swetrix.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Yep, you can try Swetrix for free for 14 days!"
+  - field: pricingPage
+    value: "https://swetrix.com/pricing"
+    url: https://swetrix.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+  - field: currentMajor
+    value: 5
+    url: https://github.com/Swetrix/swetrix/releases/tag/v5.4.1
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: "2026-08-04"
+    url: https://github.com/Swetrix/swetrix/releases/tag/v5.4.1
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 1207
+    url: https://github.com/Swetrix/swetrix
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 36
+    url: https://github.com/Swetrix/swetrix
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://swetrix.com/docs/selfhosting/how-to
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Swetrix supports self-hosting via Docker."
+notFound: [firstRelease, parent, forkOf, successorOf, alternativeTo, wikidata, hqCountry, eolPolicy, endoflifeId, releaseCadence, regions, pluginDirectory, pluginCount, starters, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, npmName, packagistName, pypiDownloads, docker, processModel, renderingModes, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, importsFrom]
+unreadable: []
+notes: >
+  The CSV row dates tracker-node@3.5.0 (2026-09-26), a sub-package. The GitHub latest release is that sub-package, so latestReleaseDate and currentMajor follow the main application tag v5.4.1 (2026-08-04). The pricing page prints the Standard price with a struck-through figure, so only the text that remains is quoted. The licenseModel open-core follows from the Community Edition statement and the hosted plans. The swetrix.com homepage gives the Google Analytics import as a plan feature only, so importsFrom is not recorded. The Node.js minimum comes from backend/package.json at v5.4.1, the main application tag.

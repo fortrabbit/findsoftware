@@ -1,0 +1,297 @@
+id: shopware
+name: Shopware
+status: accepted
+checkedAt: 2026-10-18
+description: Open-source e-commerce platform built on Symfony and Vue.js, with a Twig storefront, an administration panel and APIs for headless frontends.
+facts:
+  - field: name
+    value: Shopware
+    url: https://www.shopware.com/en/
+    checkedAt: 2026-10-18
+    via: page
+  - field: homepage
+    value: https://www.shopware.com
+    url: https://api.github.com/repos/shopware/shopware
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/shopware/shopware
+    url: https://api.github.com/repos/shopware/shopware
+    checkedAt: 2026-10-18
+    via: api
+  - field: docs
+    value: https://developer.shopware.com/docs/
+    url: https://developer.shopware.com/docs/guides/installation/
+    checkedAt: 2026-10-18
+    via: page
+  - field: maintainer
+    value: shopware AG
+    url: https://www.shopware.com/en/company/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "legalName: shopware AG"
+  - field: maintainerType
+    value: company
+    url: https://www.shopware.com/en/company/
+    checkedAt: 2026-10-18
+    via: page
+  - field: hqCountry
+    value: DE
+    url: https://www.shopware.com/en/company/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Ebbinghoff 10, 48624 Schoeppingen, Germany"
+  - field: foundedYear
+    value: 2000
+    url: https://www.shopware.com/en/company/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "was founded in 2000"
+  - field: founders
+    value: [Stefan Hamann, Sebastian Hamann]
+    url: https://www.shopware.com/en/company/
+    checkedAt: 2026-10-18
+    via: page
+  - field: wikidata
+    value: Q1805797
+    url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Shopware&language=en&format=json
+    checkedAt: 2026-10-18
+    via: api
+  - field: categories
+    value: [e-commerce, headless-commerce]
+    url: https://developer.shopware.com/docs/concepts/framework/architecture/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "all functionality is exposed via APIs"
+  - field: basedOn
+    value: [symfony, vue]
+    url: https://api.github.com/repos/shopware/shopware
+    checkedAt: 2026-10-18
+    via: api
+    quote: "open commerce platform based on Symfony Framework and Vue"
+  - field: basedOn
+    value: [symfony]
+    url: https://developer.shopware.com/docs/concepts/framework/architecture/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "built on top of Symfony"
+  - field: language
+    value: php
+    url: https://api.github.com/repos/shopware/shopware
+    checkedAt: 2026-10-18
+    via: api
+  - field: runtime
+    value: php
+    url: https://developer.shopware.com/docs/guides/hosting/
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: "8.2"
+    url: https://repo.packagist.org/p2/shopware/core.json
+    checkedAt: 2026-10-18
+    via: api
+    quote: "php: ~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0"
+  - field: runtimeMin
+    value: "8.2"
+    url: https://developer.shopware.com/docs/guides/hosting/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "PHP 8.2+, recommended 8.4"
+  - field: buildRuntimeMin
+    value: node 20
+    url: https://developer.shopware.com/docs/guides/hosting/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Node 20.0.0+, recommended Node 24 with npm 10"
+  - field: contentStore
+    value: database
+    url: https://developer.shopware.com/docs/guides/hosting/
+    checkedAt: 2026-10-18
+    via: page
+  - field: databases
+    value: [mysql 8.0.22+, mariadb 10.11.6+]
+    url: https://developer.shopware.com/docs/guides/hosting/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Innovation releases are not supported"
+  - field: adminUi
+    value: yes, Administration built with Vue.js
+    url: https://developer.shopware.com/docs/concepts/framework/architecture/administration-concept.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "build on custom components written in Vue.js"
+  - field: headlessApi
+    value: [store-api, admin-api]
+    url: https://developer.shopware.com/docs/concepts/api/store-api.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "consume Shopware functionality via JSON over HTTP"
+  - field: templating
+    value: twig
+    url: https://developer.shopware.com/docs/concepts/framework/architecture/storefront-concept.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "uses Twig as the templating engine"
+  - field: i18n
+    value: yes, per sales-channel domain language, currency and snippet set
+    url: https://developer.shopware.com/docs/concepts/commerce/catalog/sales-channels.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: multisite
+    value: yes, multiple sales channels with multiple domains per installation
+    url: https://developer.shopware.com/docs/concepts/commerce/catalog/sales-channels.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: renderingModes
+    value: [server, headless]
+    url: https://developer.shopware.com/docs/concepts/framework/architecture/
+    checkedAt: 2026-10-18
+    via: page
+  - field: installMethod
+    value: [shopware-cli project create, docker via shopware-cli, local php and composer via shopware-cli]
+    url: https://developer.shopware.com/docs/guides/installation/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "shopware-cli project create my-shop"
+  - field: docker
+    value: ghcr.io/shopware/docker-base
+    url: https://developer.shopware.com/docs/guides/hosting/installation-updates/docker.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "does not contain Shopware itself"
+  - field: dockerPulls
+    value: 640065
+    url: https://hub.docker.com/v2/repositories/shopware/docker-base/
+    checkedAt: 2026-10-18
+    via: api
+  - field: serverNeeds
+    value:
+      - "PHP extensions: ctype, curl, dom, fileinfo, gd, iconv, intl, mbstring, openssl, pcre, pdo_mysql, phar, simplexml, xml, xmlreader, zip, zlib"
+      - "memory_limit 512M+, max_execution_time 30s+"
+      - "Composer 2.2+"
+      - "optional: OpenSearch 1.0+ or Elasticsearch 7.8+, Redis 7+ or Valkey, RabbitMQ or another Symfony Messenger transport"
+    url: https://developer.shopware.com/docs/guides/hosting/
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value: ["background worker or cron for scheduled tasks: bin/console scheduled-task:run"]
+    url: https://developer.shopware.com/docs/guides/hosting/infrastructure/scheduled-task.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "must set up a background worker like the Message Queue"
+  - field: webServers
+    value: [caddy, apache, nginx]
+    url: https://developer.shopware.com/docs/guides/hosting/
+    checkedAt: 2026-10-18
+    via: page
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/shopware/shopware
+    checkedAt: 2026-10-18
+    via: api
+  - field: licenseModel
+    value: open-core
+    url: https://www.shopware.com/en/pricing/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "open-source core has no license fee"
+  - field: paidEditions
+    value:
+      - {name: Community Edition, price: 0, currency: EUR, adds: "page builder, product and order management, community support"}
+      - {name: Rise, price: "from 600", currency: EUR, period: month, adds: "AI-assisted content, product customization, returns management, direct support"}
+      - {name: Evolve, price: "from 2400", currency: EUR, period: month, adds: "B2B quotes and approvals, advanced search, customer-group targeting, phone support"}
+      - {name: Beyond, price: custom, adds: "customer-specific pricing, multi-location inventory, Digital Sales Rooms, 24/7 support"}
+    url: https://www.shopware.com/en/pricing/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Plan pricing depends on gross merchandise value"
+  - field: pricingPage
+    value: https://www.shopware.com/en/pricing/
+    url: https://www.shopware.com/en/pricing/
+    checkedAt: 2026-10-18
+    via: page
+  - field: latestVersion
+    value: 6.7.15.1
+    url: https://api.github.com/repos/shopware/shopware/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-07
+    url: https://api.github.com/repos/shopware/shopware/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - {cycle: "6.7", support: true, eol: 2028-02-28, php: "8.2 - 8.5"}
+      - {cycle: "6.6", support: 2025-06-17, eol: 2028-02-28, php: "8.2 - 8.5"}
+      - {cycle: "6.5", support: 2024-03-28, eol: 2027-02-28, php: "8.1 - 8.3"}
+    url: https://endoflife.date/api/shopware.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: eolPolicy
+    value: latest minor of the current major is maintained; the last minor of a major gets extended support until the following major ships
+    url: https://developer.shopware.com/release-notes/
+    checkedAt: 2026-10-18
+    via: page
+  - field: releaseCadence
+    value: one major per year, minor releases monthly, patches as needed
+    url: https://developer.shopware.com/release-notes/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Every first Monday of the month"
+  - field: endoflifeId
+    value: shopware
+    url: https://endoflife.date/api/shopware.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 3450
+    url: https://api.github.com/repos/shopware/shopware
+    checkedAt: 2026-10-18
+    via: api
+  - field: contributors
+    value: 267
+    url: https://api.github.com/repos/shopware/shopware/contributors
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistDownloads
+    value: {total: 6294025, monthly: 228093}
+    url: https://packagist.org/packages/shopware/core.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistName
+    value: shopware/core
+    url: https://packagist.org/packages/shopware/core.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: pluginDirectory
+    value: https://store.shopware.com/en/extensions/
+    url: https://store.shopware.com/en/extensions/
+    checkedAt: 2026-10-18
+    via: page
+  - field: pluginCount
+    value: 3100
+    url: https://api.github.com/repos/shopware/shopware
+    checkedAt: 2026-10-18
+    via: api
+    quote: "more than 3.100 community extensions"
+  - field: starters
+    value: [Vue Starter Template, Vue Starter Template Extended (Lumora), Astro Template, Blank Template, Demo Store]
+    url: https://developer.shopware.com/frontends/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "toolkit for creating platform-agnostic custom storefronts"
+  - field: forum
+    value: https://forum.shopware.com
+    url: https://www.shopware.com/en/
+    checkedAt: 2026-10-18
+    via: page
+  - field: discord
+    value: https://chat.shopware.com
+    url: https://www.shopware.com/en/
+    checkedAt: 2026-10-18
+    via: page
+notFound: [firstRelease, parent, forkOf, successorOf, outputDir, buildCommand, deployTargets, usageShare, subreddit, mastodon, bluesky, x, newsletter, npmName]
+unreadable: []
+notes: >
+  The GitHub release v6.7.15.1 is dated 2026-10-07; Packagist and endoflife.date give 2026-10-02 for the same version. The Community Edition's Fair Usage Policy requires a paid plan for Shopware Account and Store access above EUR 1 million GMV in 365 days; the software itself stays usable. Shopware Frontends (Nuxt and Vue based) are the official headless storefront toolkit; renderingModes "headless" means the Store API serves a separate frontend. The pluginCount comes from the repository description, not from a count of the store. Founders and foundedYear are coined fields reused from earlier files. Contributors counts GitHub accounts on the repo, anonymous excluded. The installation page labels the shopware-cli path Alpha and links Docker, Devenv and Symfony CLI setups as legacy.

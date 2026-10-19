@@ -1,0 +1,132 @@
+id: umami
+name: Umami
+status: accepted
+checkedAt: 2026-10-19
+description: "Open-source web and product analytics platform, self-hosted or offered as Umami Cloud."
+facts:
+  - field: homepage
+    value: "https://umami.is"
+    url: https://umami.is
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: "https://github.com/umami-software/umami"
+    url: https://github.com/umami-software/umami
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: "https://umami.is/docs"
+    url: https://umami.is/docs
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: "Umami Software, Inc."
+    url: https://umami.is
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainerType
+    value: company
+    url: https://umami.is
+    checkedAt: 2026-10-19
+    via: page
+  - field: language
+    value: TypeScript
+    url: https://github.com/umami-software/umami
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://umami.is/docs/install
+    checkedAt: 2026-10-19
+    via: page
+  - field: runtimeMin
+    value: "Node.js 18.18"
+    url: https://umami.is/docs/install
+    checkedAt: 2026-10-19
+    via: page
+    quote: "A server with Node.js version 18.18 or newer."
+  - field: databases
+    value: [postgresql]
+    url: https://umami.is/docs/install
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Umami supports PostgreSQL (minimum v12.14) databases."
+  - field: installMethod
+    value: [source, docker-compose, docker-image, kubernetes-helm]
+    url: https://umami.is/docs/install
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Install a self-hosted Umami instance from source, with Docker Compose"
+  - field: docker
+    value: "docker.umami.is/umami-software/umami"
+    url: https://umami.is/docs/install
+    checkedAt: 2026-10-19
+    via: page
+  - field: categories
+    value: [web-analytics, product-analytics]
+    url: https://umami.is
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: MIT
+    url: https://github.com/umami-software/umami
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://umami.is
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Self-host the open-source platform on your own infrastructure, or use Umami Cloud."
+  - field: paidEditions
+    value: ["Pro, $20/month", "Business, $200/month"]
+    url: https://umami.is/pricing
+    checkedAt: 2026-10-19
+    via: page
+  - field: freeTier
+    value: "Hobby plan, $0/month"
+    url: https://umami.is/pricing
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Up to 100K events per month"
+  - field: pricingPage
+    value: "https://umami.is/pricing"
+    url: https://umami.is/pricing
+    checkedAt: 2026-10-19
+    via: page
+  - field: currentMajor
+    value: 3
+    url: https://github.com/umami-software/umami/releases/tag/v3.4.0
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: "2026-09-17"
+    url: https://github.com/umami-software/umami/releases/tag/v3.4.0
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 39458
+    url: https://github.com/umami-software/umami
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 438
+    url: https://github.com/umami-software/umami
+    checkedAt: 2026-10-19
+    via: api
+  - field: envVars
+    value: "DATABASE_URL (only required variable)"
+    url: https://umami.is/docs/environment-variables
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Connection string for your database. This is the only required variable."
+  - field: runsAs
+    value: [always-on]
+    url: https://umami.is/docs/install
+    checkedAt: 2026-10-19
+    via: page
+    quote: "You can simply run pnpm start to start Umami"
+notFound: [firstRelease, parent, forkOf, successorOf, alternativeTo, wikidata, hqCountry, eolPolicy, endoflifeId, pluginDirectory, pluginCount, starters, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, npmName, packagistName, pypiDownloads, serverNeeds, processModel, renderingModes, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, regions, releaseCadence]
+unreadable: []
+notes: >
+  The CSV row dates the repository. The latest GitHub release is v3.4.0 (2026-09-17). The pricing page gives plan names in USD-style dollar signs without a currency code. The envVars entry is a coined kind for the one required variable named by the docs. The install docs list a Redis connection as optional, which is not recorded as a fact. The docker field is a coined kind for the image the docs pull.

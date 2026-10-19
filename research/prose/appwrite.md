@@ -1,0 +1,1 @@
+Appwrite is a backend platform that provides authentication, databases, storage, functions and messaging. It runs as a self-hosted Docker stack, and Appwrite, the company behind it, offers the same platform as Appwrite Cloud. The [self-hosting guide](https://appwrite.io/docs/advanced/self-hosting/installation) covers the stack.

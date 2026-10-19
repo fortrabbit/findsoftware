@@ -1,0 +1,114 @@
+id: supabase
+name: Supabase
+status: accepted
+checkedAt: 2026-10-19
+description: Open-source development platform built around a dedicated Postgres database, with authentication, storage and APIs.
+facts:
+  - field: name
+    value: Supabase
+    url: https://supabase.com/
+    checkedAt: 2026-10-19
+    via: page
+  - field: homepage
+    value: https://supabase.com
+    url: https://github.com/supabase/supabase
+    checkedAt: 2026-10-19
+    via: api
+  - field: repository
+    value: https://github.com/supabase/supabase
+    url: https://github.com/supabase/supabase
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://supabase.com/docs
+    url: https://supabase.com/docs
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: Supabase
+    url: https://supabase.com/company
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainerType
+    value: company
+    url: https://supabase.com/company
+    checkedAt: 2026-10-19
+    via: page
+  - field: categories
+    value: [backend-as-a-service, database]
+    url: https://supabase.com/
+    checkedAt: 2026-10-19
+    via: page
+  - field: language
+    value: TypeScript
+    url: https://github.com/supabase/supabase
+    checkedAt: 2026-10-19
+    via: api
+  - field: contentStore
+    value: database
+    url: https://supabase.com/
+    checkedAt: 2026-10-19
+    via: page
+  - field: databases
+    value: [postgres]
+    url: https://supabase.com/docs/guides/self-hosting/docker
+    checkedAt: 2026-10-19
+    via: page
+  - field: latestReleaseDate
+    value: 2026-10-16
+    url: https://github.com/supabase/supabase/tree/self-hosted/v0.8.3
+    checkedAt: 2026-10-19
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/supabase/supabase
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: [open-source, saas]
+    url: https://supabase.com/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Open source from day one"
+  - field: installMethod
+    value: [docker-compose, linux-quick-start-script, manual-installation]
+    url: https://supabase.com/docs/guides/self-hosting/docker
+    checkedAt: 2026-10-19
+    via: page
+  - field: selfHostOption
+    value: self-hosted Docker Compose stack (self-hosted/v0.8.3 tag in the docs)
+    url: https://supabase.com/docs/guides/self-hosting/docker
+    checkedAt: 2026-10-19
+    via: page
+    quote: "self-hosted/v0.8.3"
+  - field: freeTier
+    value: Free plan at $ 0 / month; projects paused after one week of inactivity; limit of 2 active projects
+    url: https://supabase.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Limit of 2 active projects."
+  - field: paidEditions
+    value: [{name: Pro, price: "$ 25", currency: "$ as printed", period: month, adds: "100K monthly active users, 8 GB disk size per project, 250 GB bandwidth"}, {name: Team, price: "$ 599", currency: "$ as printed", period: month, adds: "SSO, control over backups, industry certifications"}, {name: Enterprise, price: custom, currency: null, period: null, adds: "support and SLAs"}]
+    url: https://supabase.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+  - field: pricingPage
+    value: https://supabase.com/pricing
+    url: https://supabase.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+  - field: githubStargazers
+    value: 111760
+    url: https://api.github.com/repos/supabase/supabase
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://supabase.com/docs/guides/self-hosting
+    checkedAt: 2026-10-19
+    via: page
+    quote: "The fastest and recommended way to self-host Supabase is to use Docker."
+notFound: [hqCountry, firstRelease, runtimeMin, currentMajor, eolPolicy, releaseCadence, parent, contributors, pluginDirectory, pluginCount, starters, adminUi, headlessApi, i18n, multisite, userRoles, sso, serverNeeds, processModel, renderingModes, endoflifeId, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, packagistName, npmName, pypiDownloads, npmWeeklyDownloads, packagistDownloads, wikidata, docker, deployTargets, regions, apiLimits]
+unreadable: []
+notes: >
+  The GitHub repository is a monorepo; its releases/latest is v1.26.08 (2026-08-07), while the self-hosted stack is versioned by the tag self-hosted/v0.8.3 (2026-10-16, from the tag object). latestReleaseDate follows the self-hosted tag because the docs point to it; the monorepo release line is not recorded. currentMajor is not recorded for the same reason. The pricing page prints dollar signs with no currency code, so currency is recorded as printed. Fields coined here: none.

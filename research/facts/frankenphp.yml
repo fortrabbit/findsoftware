@@ -1,0 +1,118 @@
+id: frankenphp
+name: FrankenPHP
+status: accepted
+checkedAt: 2026-10-19
+description: Application server for PHP written in Go that embeds the official PHP executor in the Caddy web server.
+facts:
+  - field: name
+    value: FrankenPHP
+    url: https://frankenphp.dev/
+    checkedAt: 2026-10-19
+    via: page
+  - field: homepage
+    value: https://frankenphp.dev
+    url: https://github.com/php/frankenphp
+    checkedAt: 2026-10-19
+    via: api
+  - field: repository
+    value: https://github.com/php/frankenphp
+    url: https://github.com/php/frankenphp
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://frankenphp.dev/docs/
+    url: https://frankenphp.dev/docs/
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: Kévin Dunglas
+    url: https://frankenphp.dev/
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainerType
+    value: individual
+    url: https://frankenphp.dev/
+    checkedAt: 2026-10-19
+    via: page
+  - field: categories
+    value: [app-server, web-server]
+    url: https://frankenphp.dev/docs/
+    checkedAt: 2026-10-19
+    via: page
+  - field: basedOn
+    value: [caddy]
+    url: https://frankenphp.dev/docs/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "FrankenPHP is built on top of Caddy, and all"
+  - field: language
+    value: Go
+    url: https://github.com/php/frankenphp
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: php (embedded in go binary)
+    url: https://frankenphp.dev/
+    checkedAt: 2026-10-19
+    via: page
+  - field: runtimeMin
+    value: php 8.2
+    url: https://frankenphp.dev/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Compatible with PHP 8.2+"
+  - field: currentMajor
+    value: 1
+    url: https://github.com/php/frankenphp/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-16
+    url: https://github.com/php/frankenphp/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/php/frankenphp
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/php/frankenphp
+    checkedAt: 2026-10-19
+    via: api
+  - field: installMethod
+    value: [install-script-sh, install-script-powershell, homebrew, docker-image, standalone-binary, build-from-source, go-library]
+    url: https://frankenphp.dev/docs/
+    checkedAt: 2026-10-19
+    via: page
+  - field: docker
+    value: dunglas/frankenphp
+    url: https://frankenphp.dev/docs/docker/
+    checkedAt: 2026-10-19
+    via: page
+  - field: renderingModes
+    value: [server]
+    url: https://frankenphp.dev/docs/worker/
+    checkedAt: 2026-10-19
+    via: page
+  - field: processModel
+    value: long-running server
+    url: https://frankenphp.dev/docs/worker/
+    checkedAt: 2026-10-19
+    via: page
+  - field: githubStargazers
+    value: 11404
+    url: https://api.github.com/repos/php/frankenphp
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://frankenphp.dev/docs/docker/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "docker run -it --rm --name my-running-app my-php-app"
+notFound: [hqCountry, firstRelease, eolPolicy, releaseCadence, paidEditions, pricingPage, freeTier, parent, contributors, pluginDirectory, pluginCount, starters, adminUi, headlessApi, i18n, multisite, userRoles, sso, serverNeeds, endoflifeId, discord, subreddit, mastodon, bluesky, x, newsletter, forum, usageShare, packagistName, npmName, pypiDownloads, npmWeeklyDownloads, packagistDownloads, wikidata]
+unreadable: []
+notes: >
+  The repository is in the php GitHub organization, and the page says it is brought to you by Kévin Dunglas and names Les-Tilleuls.coop as sponsor; the maintainer field follows the page. The docs say the binaries contain PHP 8.5; that is the bundled PHP, not runtimeMin. The worker mode keeps the application in memory between requests, which is the basis of processModel. The Docker "dunglas/frankenphp" image is the project's own image per the docs. Fields coined here: none.

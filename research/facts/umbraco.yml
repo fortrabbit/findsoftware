@@ -1,0 +1,289 @@
+id: umbraco
+name: Umbraco
+status: accepted
+checkedAt: 2026-10-18
+description: Content management system built on .NET, with Razor templating and a built-in Content Delivery API.
+facts:
+  - field: name
+    value: Umbraco CMS
+    url: https://umbraco.com/products/umbraco-cms/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "open-source content management system built on Microsoft's .NET technology"
+  - field: homepage
+    value: https://umbraco.com
+    url: https://github.com/umbraco/Umbraco-CMS
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/umbraco/Umbraco-CMS
+    url: https://github.com/umbraco/Umbraco-CMS
+    checkedAt: 2026-10-18
+    via: api
+  - field: docs
+    value: https://docs.umbraco.com/umbraco-cms
+    url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/install
+    checkedAt: 2026-10-18
+    via: page
+  - field: maintainer
+    value: Umbraco
+    url: https://umbraco.com/about-us/
+    checkedAt: 2026-10-18
+    via: page
+  - field: maintainerType
+    value: company
+    url: https://umbraco.com/about-us/
+    checkedAt: 2026-10-18
+    via: page
+  - field: hqCountry
+    value: DK
+    url: https://umbraco.com/about-us/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Headquartered in Odense, Denmark"
+  - field: foundedYear
+    value: 2003
+    url: https://umbraco.com/about-us/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Founded in 2003"
+  - field: wikidata
+    value: Q285761
+    url: https://www.wikidata.org/wiki/Q285761
+    checkedAt: 2026-10-18
+    via: api
+  - field: categories
+    value: [cms, headless-cms]
+    url: https://umbraco.com/products/umbraco-cms/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Umbraco supports a headless setup via its Content Delivery API"
+  - field: basedOn
+    value: [.NET]
+    url: https://umbraco.com/products/umbraco-cms/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "built on Microsoft's .NET technology"
+  - field: language
+    value: C#
+    url: https://github.com/umbraco/Umbraco-CMS
+    checkedAt: 2026-10-18
+    via: api
+  - field: runtime
+    value: dotnet
+    url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: "10.0"
+    url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/requirements
+    checkedAt: 2026-10-18
+    via: page
+    quote: ".NET 10.0 and higher"
+  - field: contentStore
+    value: database
+    url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: databases
+    value: [sqlite, sqlserver]
+    url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/requirements
+    checkedAt: 2026-10-18
+    via: page
+    quote: "a minimum supported version of SQL Server 2016"
+  - field: databaseMin
+    value: {sqlserver: "2016"}
+    url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: adminUi
+    value: yes, built-in backoffice
+    url: https://umbraco.com/products/umbraco-cms/
+    checkedAt: 2026-10-18
+    via: page
+  - field: headlessApi
+    value: [rest]
+    url: https://docs.umbraco.com/umbraco-cms/reference/content-delivery-api
+    checkedAt: 2026-10-18
+    via: page
+    quote: "The Content Delivery API delivers headless capabilities built directly into Umbraco."
+  - field: templating
+    value: [razor]
+    url: https://docs.umbraco.com/umbraco-cms/fundamentals/design/templates/basic-razor-syntax
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Templating in Umbraco builds on the concept of Razor Views from ASP.NET MVC."
+  - field: i18n
+    value: yes, language variants
+    url: https://docs.umbraco.com/umbraco-cms/tutorials/multilanguage-setup
+    checkedAt: 2026-10-18
+    via: page
+    quote: "You can use language variants to setup a multilingual site."
+  - field: renderingModes
+    value: [server]
+    url: https://docs.umbraco.com/umbraco-cms/fundamentals/design/templates/basic-razor-syntax
+    checkedAt: 2026-10-18
+    via: page
+  - field: installMethod
+    value: [dotnet new install Umbraco.Templates, dotnet new umbraco, Visual Studio, Docker Compose, unattended install]
+    url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/install
+    checkedAt: 2026-10-18
+    via: page
+    quote: "dotnet new umbraco --name MyProject"
+  - field: deployTargets
+    value: [IIS, Azure Web Apps, Umbraco Cloud]
+    url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/server-setup
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value:
+      - "application identity needs create, read and write file permissions"
+      - "WebSockets recommended for SignalR (WebSocket Protocol feature on Windows Server)"
+      - "SQL Server with a case-insensitive collation when not using SQLite"
+    url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: docker
+    value: Docker Compose install option (Umbraco plus database)
+    url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/install
+    checkedAt: 2026-10-18
+    via: page
+  - field: license
+    value: MIT
+    url: https://github.com/umbraco/Umbraco-CMS
+    checkedAt: 2026-10-18
+    via: api
+  - field: licenseModel
+    value: open-core
+    url: https://umbraco.com/pricing/
+    checkedAt: 2026-10-18
+    via: page
+  - field: paidEditions
+    value:
+      - {name: Umbraco Cloud Starter, price: 45, currency: EUR, period: month, adds: managed hosting}
+      - {name: Umbraco Cloud Standard, price: 280, currency: EUR, period: month, adds: managed hosting}
+      - {name: Umbraco Cloud Professional, price: 730, currency: EUR, period: month, adds: managed hosting}
+      - {name: Umbraco Cloud Enterprise, price: custom, adds: managed hosting}
+    url: https://umbraco.com/pricing/
+    checkedAt: 2026-10-18
+    via: page
+  - field: paidAddons
+    value: [Forms, Deploy, UI Builder, Engage, Commerce, Workflow]
+    url: https://umbraco.com/pricing/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Paid add-on"
+  - field: hostedOffering
+    value: [Umbraco Cloud, Umbraco Heartcore]
+    url: https://umbraco.com/products/umbraco-cms/
+    checkedAt: 2026-10-18
+    via: page
+  - field: pricingPage
+    value: https://umbraco.com/pricing/
+    url: https://umbraco.com/pricing/
+    checkedAt: 2026-10-18
+    via: page
+  - field: latestVersion
+    value: 18.2.1
+    url: https://github.com/umbraco/Umbraco-CMS/releases
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-06
+    url: https://github.com/umbraco/Umbraco-CMS/releases
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestPrerelease
+    value: {version: 18.3.0-rc, date: 2026-10-15}
+    url: https://github.com/umbraco/Umbraco-CMS/releases
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - {cycle: "18", type: STS, released: 2026-06-25, supportUntil: 2027-03-25, securityUntil: 2027-06-25}
+      - {cycle: "17", type: LTS, released: 2025-11-27, supportUntil: 2027-11-27, securityUntil: 2028-11-27}
+      - {cycle: "13", type: LTS, released: 2023-12-14, supportUntil: 2025-12-14, securityUntil: 2026-12-14}
+    url: https://umbraco.com/products/knowledge-center/long-term-support-and-end-of-life/
+    checkedAt: 2026-10-18
+    via: page
+  - field: supportedVersions
+    value:
+      - {cycle: "18", released: 2026-06-25, supportUntil: 2027-03-25, securityUntil: 2027-06-25}
+      - {cycle: "17", lts: true, released: 2025-11-27, supportUntil: 2027-11-27, securityUntil: 2028-11-27}
+      - {cycle: "13", lts: true, released: 2023-12-14, supportUntil: 2025-12-14, securityUntil: 2026-12-14}
+    url: https://endoflife.date/api/umbraco.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: eolPolicy
+    value: https://umbraco.com/products/knowledge-center/long-term-support-and-end-of-life/
+    url: https://umbraco.com/products/knowledge-center/long-term-support-and-end-of-life/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "This phase lasts 3 months, or 12 for LTS majors."
+  - field: releaseCadence
+    value: minor release every six weeks
+    url: https://umbraco.com/products/knowledge-center/long-term-support-and-end-of-life/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "minor releases are shipped every 6 week including minor features and bug fixes."
+  - field: endoflifeId
+    value: umbraco
+    url: https://endoflife.date/api/umbraco.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 5270
+    url: https://github.com/umbraco/Umbraco-CMS
+    checkedAt: 2026-10-18
+    via: api
+  - field: contributors
+    value: 1211
+    url: https://api.github.com/repos/umbraco/Umbraco-CMS/contributors?anon=true
+    checkedAt: 2026-10-18
+    via: api
+  - field: nugetName
+    value: Umbraco.Cms
+    url: https://www.nuget.org/packages/Umbraco.Cms
+    checkedAt: 2026-10-18
+    via: api
+  - field: nugetDownloads
+    value: {total: 7829352}
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:Umbraco.Cms
+    checkedAt: 2026-10-18
+    via: api
+  - field: nugetDownloads
+    value: {package: Umbraco.Templates, total: 524820}
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:Umbraco.Templates
+    checkedAt: 2026-10-18
+    via: api
+  - field: pluginDirectory
+    value: https://marketplace.umbraco.com/
+    url: https://marketplace.umbraco.com/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Browse and find the best Umbraco integrations and packages on the official Umbraco Marketplace"
+  - field: forum
+    value: https://forum.umbraco.com/
+    url: https://community.umbraco.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: discord
+    value: https://discord.com/invite/umbraco
+    url: https://community.umbraco.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: youtube
+    value: https://www.youtube.com/@UmbracoCommunity
+    url: https://community.umbraco.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/install
+    checkedAt: 2026-10-19
+    via: page
+    quote: "The project runs on the Kestrel server"
+notFound: [firstRelease, parent, forkOf, successorOf, multisite, buildCommand, outputDir, usageShare, pluginCount, starters, mastodon, bluesky, x, subreddit, newsletter]
+unreadable: [https://docs.umbraco.com/umbraco-cms/fundamentals/design/templates (404)]
+notes: >
+  The CMS is MIT-licensed and free; the company sells Umbraco Cloud hosting, the Heartcore SaaS, enterprise support and add-ons, so licenseModel is open-core and the Cloud plans go in paidEditions as the pricing page states them, with add-ons unpriced. foundedYear is the company's founding year from the about page, not a release date; no page read gives the first public release. The Content Delivery API returns JSON over HTTP GET and must be enabled in configuration; GraphQL is not mentioned for the CMS. Umbraco 18 is STS, 17 LTS. The old community site our.umbraco.com redirects to community.umbraco.com. Coined fields: `nugetName`, `nugetDownloads` (NuGet counterparts of packagistName and packagistDownloads); reused `foundedYear`, `databaseMin`, `paidAddons`, `hostedOffering`, `latestPrerelease`, `youtube`.

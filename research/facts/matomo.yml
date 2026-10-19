@@ -1,0 +1,126 @@
+id: matomo
+name: Matomo
+status: accepted
+checkedAt: 2026-10-19
+description: "Open-source web analytics platform, self-hosted or offered as Matomo Cloud."
+facts:
+  - field: homepage
+    value: "https://matomo.org/"
+    url: https://matomo.org/
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: "https://github.com/matomo-org/matomo"
+    url: https://github.com/matomo-org/matomo
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: "https://matomo.org/docs/installation/"
+    url: https://matomo.org/docs/installation/
+    checkedAt: 2026-10-19
+    via: page
+  - field: language
+    value: PHP
+    url: https://github.com/matomo-org/matomo
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://matomo.org/faq/on-premise/matomo-requirements/
+    checkedAt: 2026-10-19
+    via: page
+  - field: runtimeMin
+    value: "PHP 8"
+    url: https://matomo.org/faq/on-premise/matomo-requirements/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Matomo 4.16 and Matomo 5: PHP 8 and MySQL version 5.5 or greater, or MariaDB."
+  - field: databases
+    value: [mysql, mariadb]
+    url: https://matomo.org/faq/on-premise/matomo-requirements/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "We recommend using MySQL 8+ or MariaDB for your database."
+  - field: installMethod
+    value: [download-archive, docker, one-click-hosting]
+    url: https://matomo.org/faq/on-premise/installing-matomo/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "An official Docker image is available on Docker Hub and GitHub."
+  - field: categories
+    value: [web-analytics]
+    url: https://matomo.org/
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: GPL-3.0
+    url: https://github.com/matomo-org/matomo
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://matomo.org/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Built on open source."
+  - field: freeTier
+    value: "Community, free forever, unlimited users and hits, forum support"
+    url: https://matomo.org/pricing/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Unlimited users and hits"
+  - field: paidEditions
+    value: ["Matomo Cloud, 29 per month (excl. tax), monthly price as printed on the pricing page", "Matomo Cloud, from €230/mo"]
+    url: https://matomo.org/pricing/
+    checkedAt: 2026-10-19
+    via: page
+  - field: pricingPage
+    value: "https://matomo.org/pricing/"
+    url: https://matomo.org/pricing/
+    checkedAt: 2026-10-19
+    via: page
+  - field: currentMajor
+    value: 5
+    url: https://github.com/matomo-org/matomo/releases/tag/5.14.1
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-04"
+    url: https://github.com/matomo-org/matomo/releases/tag/5.14.1
+    checkedAt: 2026-10-19
+    via: api
+  - field: endoflifeId
+    value: matomo
+    url: https://endoflife.date/matomo
+    checkedAt: 2026-10-19
+    via: api
+  - field: packagistName
+    value: matomo/matomo
+    url: https://packagist.org/packages/matomo/matomo
+    checkedAt: 2026-10-19
+    via: api
+  - field: packagistDownloads
+    value: "40332 total; 223 monthly"
+    url: https://packagist.org/packages/matomo/matomo
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 21960
+    url: https://github.com/matomo-org/matomo
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 447
+    url: https://github.com/matomo-org/matomo
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [per-request]
+    url: https://matomo.org/docs/installation/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "A web server, shared hosting or dedicated server."
+notFound: [firstRelease, maintainer, maintainerType, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, eolPolicy, pluginDirectory, pluginCount, starters, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, npmName, pypiDownloads, serverNeeds, processModel, renderingModes, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, regions, releaseCadence, importsFrom]
+unreadable: []
+notes: >
+  The stable GitHub release is 5.14.1 (2026-10-04). The 6.0.0 line ships only as pre-releases (6.0.0-b6.20261016180604 is the newest at the time of research), so currentMajor stays 5 until a stable 6.0.0 tag. The requirements FAQ says PHP 8 for Matomo 5, while the Packagist composer metadata for 5.14.1 states require php >=7.2.5; both are recorded as stated, with runtimeMin following the FAQ. The pricing page prints two Cloud figures without a tier name for the 29 price and with a different unit for the €230 figure, so both are kept verbatim. The Matomo legal entity and headquarters are not named on the pages read, so maintainer and hqCountry are not recorded. Packagist downloads are kept with their periods.

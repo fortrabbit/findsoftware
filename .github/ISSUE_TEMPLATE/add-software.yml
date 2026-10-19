@@ -1,0 +1,70 @@
+name: Add software
+description: Name software the register is missing.
+title: 'Add: '
+labels: [software]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A record is one file, and a pull request adding it is the fastest way in —
+        see [CONTRIBUTING.md](https://github.com/fortrabbit/findsoftware/blob/main/CONTRIBUTING.md).
+        This form is for naming software without writing the record: answer what
+        is known, leave the rest, and whoever picks it up reads the project's own
+        pages for the fields you did not fill in.
+
+        Absent means unknown here as well as in the dataset. A blank field costs
+        nothing; a guessed one costs an hour of somebody checking it.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: As the project writes it, including the capitalization.
+      placeholder: Acme CMS
+    validations:
+      required: true
+  - type: input
+    id: home
+    attributes:
+      label: Home page
+      description: The project's own address. No affiliate or tracking parameters — the schema rejects them.
+      placeholder: https://www.example.com
+    validations:
+      required: true
+  - type: checkboxes
+    id: category
+    attributes:
+      label: What is it?
+      description: More than one is normal. Leave them all blank if none of it is obvious from the outside.
+      options:
+        - label: Content management systems
+        - label: Headless CMSs
+        - label: Web frameworks
+        - label: Static site generators
+        - label: Documentation generators
+        - label: E-commerce
+        - label: Blogging and publishing
+        - label: Admin panels
+  - type: textarea
+    id: sources
+    attributes:
+      label: Where did you read this?
+      description: |
+        URLs, one per line. The repository, the documentation and the license or
+        pricing page settle most of a record.
+      placeholder: |
+        https://github.com/example/example
+        https://docs.example.com
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: What it is for, what is unusual about it, what a reader should know before choosing it.
+  - type: checkboxes
+    id: disclosure
+    attributes:
+      label: Disclosure
+      description: You may still file this; the disclosure is what lets a reviewer weigh it.
+      options:
+        - label: I work on this project, or am paid by it.

@@ -1,0 +1,1 @@
+Jekyll reads a folder of Markdown and HTML pages, runs them through Liquid templates, and writes a static site, so the output needs only static file hosting. The project dates from 2008 and is written in Ruby. A new site starts from Minima, a theme that installs as a gem. A volunteer core team maintains Jekyll, and GitHub Pages runs Jekyll sites for its users.

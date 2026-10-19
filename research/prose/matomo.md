@@ -1,0 +1,1 @@
+Matomo is a web analytics platform written in PHP that stores its data in MySQL or MariaDB. The [installation guide](https://matomo.org/docs/installation/) covers a download archive, an official Docker image and one-click hosting. The self-hosted Community edition is free and states unlimited users and hits. Matomo Cloud is a separate hosted service with paid plans.

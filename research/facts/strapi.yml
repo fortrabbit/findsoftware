@@ -1,0 +1,348 @@
+id: strapi
+name: Strapi
+status: accepted
+checkedAt: 2026-10-18
+description: Open-source headless content management system written in JavaScript and TypeScript, with an admin panel and REST and GraphQL APIs.
+facts:
+  - field: name
+    value: Strapi
+    url: https://strapi.io/
+    checkedAt: 2026-10-18
+    via: page
+  - field: homepage
+    value: https://strapi.io
+    url: https://api.github.com/repos/strapi/strapi
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/strapi/strapi
+    url: https://api.github.com/repos/strapi/strapi
+    checkedAt: 2026-10-18
+    via: api
+  - field: docs
+    value: https://docs.strapi.io
+    url: https://strapi.io/
+    checkedAt: 2026-10-18
+    via: page
+  - field: maintainer
+    value: Strapi, Inc.
+    url: https://strapi.io/terms
+    checkedAt: 2026-10-18
+    via: page
+    quote: Strapi, Inc ("Strapi") is a US company whose registered office is located 3500 S Dupont Hwy, Dover
+  - field: maintainer
+    value: Strapi Solutions SAS
+    url: https://github.com/strapi/strapi/blob/main/LICENSE
+    checkedAt: 2026-10-18
+    via: api
+    quote: Copyright (c) 2015-present Strapi Solutions SAS
+  - field: maintainerType
+    value: company
+    url: https://strapi.io/terms
+    checkedAt: 2026-10-18
+    via: page
+  - field: hqCountry
+    value: US
+    url: https://strapi.io/terms
+    checkedAt: 2026-10-18
+    via: page
+    quote: a US company whose registered office is located 3500 S Dupont Hwy, Dover, DE 19901, USA
+  - field: categories
+    value:
+      - headless-cms
+    url: https://strapi.io/
+    checkedAt: 2026-10-18
+    via: page
+    quote: Open-Source TypeScript Headless CMS
+  - field: basedOn
+    value:
+      - react
+    url: https://registry.npmjs.org/@strapi/strapi/latest
+    checkedAt: 2026-10-18
+    via: api
+    quote: peerDependencies react ^18.0.0, react-router-dom ^6.30.3
+  - field: language
+    value: TypeScript
+    url: https://strapi.io/
+    checkedAt: 2026-10-18
+    via: page
+    quote: Open-Source TypeScript Headless CMS
+  - field: runtime
+    value: node
+    url: https://docs.strapi.io/cms/installation/cli
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: 20.0.0
+    url: https://registry.npmjs.org/@strapi/strapi/latest
+    checkedAt: 2026-10-18
+    via: api
+    quote: "engines.node: >=20.0.0 <=26.x.x"
+  - field: runtimeMin
+    value: "22"
+    url: https://docs.strapi.io/cms/installation/cli
+    checkedAt: 2026-10-18
+    via: page
+    quote: Only Active LTS or Maintenance LTS versions are supported
+  - field: contentStore
+    value:
+      - database
+    url: https://docs.strapi.io/cms/installation/cli
+    checkedAt: 2026-10-18
+    via: page
+  - field: databases
+    value:
+      - name: mysql
+        min: "8.0"
+        recommended: "8.4"
+      - name: mariadb
+        min: "10.3"
+        recommended: "11.4"
+      - name: postgres
+        min: "14.0"
+        recommended: "17.0"
+      - name: sqlite
+        min: "3"
+        recommended: "3"
+    url: https://docs.strapi.io/cms/installation/cli
+    checkedAt: 2026-10-18
+    via: page
+  - field: adminUi
+    value: yes, admin panel
+    url: https://docs.strapi.io/cms/intro
+    checkedAt: 2026-10-18
+    via: page
+  - field: headlessApi
+    value:
+      - rest
+      - graphql
+    url: https://docs.strapi.io/cms/intro
+    checkedAt: 2026-10-18
+    via: page
+    quote: query your content with REST, GraphQL, and Strapi's lower-level APIs
+  - field: i18n
+    value: yes, core feature on the free plan; AI translation on Growth or Enterprise
+    url: https://docs.strapi.io/cms/features/internationalization
+    checkedAt: 2026-10-18
+    via: page
+    quote: The Internationalization feature allows you to manage content in different languages
+  - field: renderingModes
+    value:
+      - none (api only)
+    url: https://docs.strapi.io/cms/intro
+    checkedAt: 2026-10-18
+    via: page
+  - field: buildCommand
+    value: NODE_ENV=production npm run build
+    url: https://docs.strapi.io/cms/deployment
+    checkedAt: 2026-10-18
+    via: page
+  - field: startCommand
+    value: NODE_ENV=production npm run start
+    url: https://docs.strapi.io/cms/deployment
+    checkedAt: 2026-10-18
+    via: page
+  - field: installMethod
+    value:
+      - npx create-strapi@latest
+      - npm create strapi@latest
+    url: https://docs.strapi.io/cms/installation/cli
+    checkedAt: 2026-10-18
+    via: page
+  - field: deployTargets
+    value:
+      - Strapi Cloud
+      - own server
+      - AWS
+      - Azure
+      - DigitalOcean App Platform
+      - Heroku
+    url: https://docs.strapi.io/cms/deployment
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value:
+      - long-running Node.js process
+      - process manager recommended (PM2)
+      - "reverse proxy guides: Caddy, HAProxy, Nginx, Traefik"
+      - Python when using SQLite
+      - build tools (build-essentials)
+    url: https://docs.strapi.io/cms/deployment
+    checkedAt: 2026-10-18
+    via: page
+    quote: We highly recommend using a process manager such as PM2
+  - field: hardwareMin
+    value:
+      cpuCores: 1
+      ramGb: 2
+      diskGb: 8
+      recommended:
+        cpuCores: 2
+        ramGb: 4
+        diskGb: 32
+    url: https://docs.strapi.io/cms/deployment
+    checkedAt: 2026-10-18
+    via: page
+  - field: docker
+    value: no official image
+    url: https://docs.strapi.io/cms/installation/docker
+    checkedAt: 2026-10-18
+    via: page
+    quote: Strapi does not build any official container images.
+  - field: license
+    value: MIT (Community Edition); ee/ directories under the Strapi Enterprise license
+    url: https://github.com/strapi/strapi/blob/main/LICENSE
+    checkedAt: 2026-10-18
+    via: api
+    quote: not licensed under the "MIT Expat" license ... instead ... the license defined in "strapi/packages/core/admin/ee/LICENSE"
+  - field: license
+    value: NOASSERTION
+    url: https://api.github.com/repos/strapi/strapi
+    checkedAt: 2026-10-18
+    via: api
+  - field: license
+    value: SEE LICENSE IN LICENSE
+    url: https://registry.npmjs.org/@strapi/strapi/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: licenseModel
+    value: open-core
+    url: https://github.com/strapi/strapi/blob/main/LICENSE
+    checkedAt: 2026-10-18
+    via: api
+  - field: paidEditions
+    value:
+      - name: Community
+        price: 0
+        adds: MIT license, RBAC, REST and GraphQL APIs, unlimited usage, community support
+      - name: Growth
+        price: 45
+        currency: USD
+        period: per month, 3 users included, additional users $15/month each
+        adds: Strapi AI, Live Preview, Releases, Content History, Basic Support; SSO add-on $150/month
+      - name: Enterprise
+        price: null
+        adds: SSO, Review Workflows, Audit Logs, SOC 2 report, Standard Support; Offline Licensing and Premium Support as add-ons
+    url: https://strapi.io/pricing-self-hosted
+    checkedAt: 2026-10-18
+    via: page
+    quote: $45 per month
+  - field: pricingPage
+    value: https://strapi.io/pricing-self-hosted
+    url: https://strapi.io/pricing-self-hosted
+    checkedAt: 2026-10-18
+    via: page
+  - field: hostedOffering
+    value: Strapi Cloud
+    url: https://docs.strapi.io/cms/deployment
+    checkedAt: 2026-10-18
+    via: page
+  - field: latestVersion
+    value: 5.58.0
+    url: https://api.github.com/repos/strapi/strapi/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-14
+    url: https://api.github.com/repos/strapi/strapi/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - cycle: "5"
+        releaseDate: 2024-09-18
+        lts: true
+        eol: false
+      - cycle: "4"
+        releaseDate: 2021-11-30
+        support: 2025-10-01
+        eol: 2026-06-09
+    url: https://endoflife.date/api/strapi.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: endoflifeId
+    value: strapi
+    url: https://endoflife.date/api/strapi.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: repoCreated
+    value: 2015-09-30
+    url: https://api.github.com/repos/strapi/strapi
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 73332
+    url: https://api.github.com/repos/strapi/strapi
+    checkedAt: 2026-10-18
+    via: api
+  - field: contributors
+    value: 344
+    url: https://api.github.com/repos/strapi/strapi/contributors
+    checkedAt: 2026-10-18
+    via: api
+  - field: npmWeeklyDownloads
+    value:
+      count: 131609
+      period: 2026-10-10/2026-10-16
+    url: https://api.npmjs.org/downloads/point/last-week/@strapi/strapi
+    checkedAt: 2026-10-18
+    via: api
+  - field: npmName
+    value: "@strapi/strapi"
+    url: https://registry.npmjs.org/@strapi/strapi/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: customerCount
+    value: 3K+ customers (self-reported)
+    url: https://strapi.io/
+    checkedAt: 2026-10-18
+    via: page
+    quote: Trusted by 3K+ customers
+  - field: pluginDirectory
+    value: https://community.strapi.io/marketplace
+    url: https://strapi.io/
+    checkedAt: 2026-10-18
+    via: page
+  - field: discord
+    value: https://discord.strapi.io
+    url: https://strapi.io/
+    checkedAt: 2026-10-18
+    via: page
+  - field: x
+    value: https://x.com/strapijs
+    url: https://strapi.io/
+    checkedAt: 2026-10-18
+    via: page
+  - field: wikidata
+    value: Q105826887
+    url: https://www.wikidata.org/wiki/Special:EntityData/Q105826887.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.strapi.io/cms/deployment
+    checkedAt: 2026-10-19
+    via: page
+    quote: "npm run start"
+notFound:
+  - firstRelease
+  - parent
+  - forkOf
+  - successorOf
+  - templating
+  - multisite
+  - outputDir
+  - eolPolicy
+  - releaseCadence
+  - usageShare
+  - pluginCount
+  - starters
+  - forum
+  - subreddit
+  - mastodon
+  - bluesky
+  - newsletter
+  - packagistName
+unreadable:
+  - https://strapi.io/legal (404)
+notes: "The terms page names Strapi, Inc. with a registered office in Delaware, US; the repository LICENSE names Strapi Solutions SAS as copyright holder, so two legal entities appear. GitHub reports the license as NOASSERTION because the file mixes MIT with an enterprise license for ee/ directories; the self-hosted pricing page calls the Community plan MIT. The npm engines field allows Node >=20 while the docs restrict support to the LTS lines 22, 24 and 26. Strapi is API-only and renders no website itself, recorded as renderingModes \"none (api only)\". The Wikidata item Q105826887 is labeled Strapi with a dewiki sitelink but has no official website claim, so the match is not verified. Coined here: startCommand (production start command), hardwareMin (stated minimum and recommended server size), hostedOffering (the vendor's own hosted service), repoCreated (GitHub repository creation date), customerCount (self-reported customer figure). The plugin marketplace shows no count. The homepage footer lists LinkedIn, Facebook, Instagram, Twitch and YouTube, not recorded as no field exists for them."

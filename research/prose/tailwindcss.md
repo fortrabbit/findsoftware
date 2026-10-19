@@ -1,0 +1,1 @@
+Tailwind CSS is a utility-first framework that builds a stylesheet from the class names it finds in a project's templates. It scans HTML files, JavaScript components and other template files for those class names. Tailwind Labs Inc. maintains the project and also sells Tailwind Plus, a paid product linked from the site navigation.

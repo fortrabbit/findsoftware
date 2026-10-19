@@ -1,0 +1,97 @@
+id: backdrop
+name: Backdrop CMS
+status: accepted
+checkedAt: 2026-10-19
+description: Content management system written in PHP, forked from Drupal.
+facts:
+  - field: homepage
+    value: https://backdropcms.org
+    url: https://backdropcms.org/
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: https://github.com/backdrop/backdrop
+    url: https://github.com/backdrop/backdrop
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://docs.backdropcms.org/documentation/system-requirements
+    url: https://docs.backdropcms.org/documentation/system-requirements
+    checkedAt: 2026-10-19
+    via: page
+  - field: forkOf
+    value: Drupal
+    url: https://backdropcms.org/about
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Backdrop CMS is a fork of Drupal."
+  - field: license
+    value: GPL-2.0
+    url: https://raw.githubusercontent.com/backdrop/backdrop/1.x/LICENSE.txt
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Version 2, June 1991"
+  - field: license
+    value: GPL-2.0-or-later
+    url: https://raw.githubusercontent.com/backdrop/backdrop/1.x/README.md
+    checkedAt: 2026-10-19
+    via: page
+    quote: "(or higher)"
+  - field: language
+    value: PHP
+    url: https://github.com/backdrop/backdrop
+    checkedAt: 2026-10-19
+    via: api
+  - field: categories
+    value: [cms]
+    url: https://backdropcms.org/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Backdrop CMS is a free and Open Source Content Management System"
+  - field: runtime
+    value: [php]
+    url: https://raw.githubusercontent.com/backdrop/backdrop/1.x/core/includes/bootstrap.inc
+    checkedAt: 2026-10-19
+    via: page
+  - field: runtimeMin
+    value: PHP 7.1.0
+    url: https://raw.githubusercontent.com/backdrop/backdrop/1.x/core/includes/bootstrap.inc
+    checkedAt: 2026-10-19
+    via: page
+    quote: "define('BACKDROP_MINIMUM_PHP', '7.1.0');"
+  - field: installMethod
+    value: [download archive]
+    url: https://backdropcms.org/download
+    checkedAt: 2026-10-19
+    via: page
+  - field: importsFrom
+    value: [Drupal 7]
+    url: https://backdropcms.org/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Backdrop has a built-in upgrade path from Drupal 7"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/backdrop/backdrop/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-14
+    url: https://api.github.com/repos/backdrop/backdrop/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 1051
+    url: https://github.com/backdrop/backdrop
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [per-request]
+    url: https://backdropcms.org/download
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Apache (recommended) or Nginx web server"
+notFound: [maintainer, maintainerType, hqCountry, parent, firstRelease, endoflifeId, pluginDirectory, pluginCount, starters, forum, discord, subreddit, mastodon, bluesky, x, newsletter, paidEditions, freeTier, pricingPage, headlessApi, hostedService, docker, deployTargets, npmName, packagistName, pypiDownloads, npmWeeklyDownloads, packagistDownloads, usageShare, multisite, sso, i18n, userRoles, serverNeeds, basedOn, adminUi, contentStore, databases]
+unreadable: []
+notes: >
+  The license is stated two ways. LICENSE.txt in the 1.x branch is the GNU GPL version 2 text, and the README says Backdrop is GPL v2 (or higher). Both are recorded: GPL-2.0 from the license file and GPL-2.0-or-later from the README statement. GitHub reports GPL-2.0. The runtimeMin is the BACKDROP_MINIMUM_PHP constant in core/includes/bootstrap.inc, which matches the README's "PHP 7.1.0 or higher". The system requirements page on docs.backdropcms.org was not reached, and the requirements URL on backdropcms.org returned 406. The forkOf value comes from the about page, and importsFrom from the homepage's Drupal 7 upgrade path. The database, admin UI and content store fields were not confirmed on any page read and are not recorded.

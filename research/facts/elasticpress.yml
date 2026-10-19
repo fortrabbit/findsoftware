@@ -1,0 +1,114 @@
+id: elasticpress
+name: ElasticPress
+status: accepted
+checkedAt: 2026-10-19
+description: WordPress plugin that connects a WordPress site to an Elasticsearch server for search.
+facts:
+  - field: homepage
+    value: https://www.elasticpress.io/
+    url: https://www.elasticpress.io/
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: https://github.com/10up/ElasticPress
+    url: https://github.com/10up/ElasticPress
+    checkedAt: 2026-10-19
+    via: api
+  - field: wordpressPluginPage
+    value: https://wordpress.org/plugins/elasticpress/
+    url: https://wordpress.org/plugins/elasticpress/
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: 10up
+    url: https://api.wordpress.org/plugins/info/1.0/elasticpress.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: maintainerType
+    value: company
+    url: https://wordpress.org/plugins/elasticpress/
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: GPL-2.0
+    url: https://github.com/10up/ElasticPress
+    checkedAt: 2026-10-19
+    via: api
+  - field: license
+    value: GPL v2 or later
+    url: https://raw.githubusercontent.com/10up/ElasticPress/develop/elasticpress.php
+    checkedAt: 2026-10-19
+    via: page
+    quote: "GPL v2 or later"
+  - field: language
+    value: PHP
+    url: https://github.com/10up/ElasticPress
+    checkedAt: 2026-10-19
+    via: api
+  - field: categories
+    value: [search-integration, wordpress-plugin]
+    url: https://raw.githubusercontent.com/10up/ElasticPress/develop/elasticpress.php
+    checkedAt: 2026-10-19
+    via: page
+  - field: basedOn
+    value: WordPress
+    url: https://raw.githubusercontent.com/10up/ElasticPress/develop/elasticpress.php
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Requires at least: 6.2"
+  - field: runtime
+    value: [php]
+    url: https://raw.githubusercontent.com/10up/ElasticPress/develop/elasticpress.php
+    checkedAt: 2026-10-19
+    via: page
+  - field: runtimeMin
+    value: PHP 7.4
+    url: https://api.wordpress.org/plugins/info/1.0/elasticpress.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: installMethod
+    value: [wordpress plugin directory, zip download]
+    url: https://wordpress.org/plugins/elasticpress/
+    checkedAt: 2026-10-19
+    via: page
+  - field: hostedService
+    value: ElasticPress.io
+    url: https://www.elasticpress.io/
+    checkedAt: 2026-10-19
+    via: page
+  - field: freeTier
+    value: free trial, no payment required (ElasticPress.io)
+    url: https://www.elasticpress.io/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "No payment required!"
+  - field: currentMajor
+    value: 5
+    url: https://api.wordpress.org/plugins/info/1.0/elasticpress.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-10
+    url: https://api.wordpress.org/plugins/info/1.0/elasticpress.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 1302
+    url: https://github.com/10up/ElasticPress
+    checkedAt: 2026-10-19
+    via: api
+  - field: wordpressActiveInstalls
+    value: 8,000+
+    url: https://wordpress.org/plugins/elasticpress/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Active installations 8,000+"
+  - field: wordpressDownloads
+    value: 1155259 total
+    url: https://api.wordpress.org/plugins/info/1.0/elasticpress.json
+    checkedAt: 2026-10-19
+    via: api
+notFound: [hqCountry, parent, firstRelease, endoflifeId, pluginDirectory, pluginCount, starters, forum, discord, subreddit, mastodon, bluesky, x, newsletter, paidEditions, pricingPage, adminUi, headlessApi, docker, deployTargets, npmName, packagistName, pypiDownloads, npmWeeklyDownloads, usageShare, databases, contentStore, multisite, sso, i18n, userRoles, serverNeeds]
+unreadable: []
+notes: >
+  The license is stated two ways. GitHub reports GPL-2.0, and the plugin header in elasticpress.php reads GPL v2 or later. Both are recorded as separate license entries. Coined fields: wordpressPluginPage, wordpressActiveInstalls (the page's own figure, a range), wordpressDownloads, because WordPress.org is the plugin directory for this software; the wordpress.org directory is a distribution source here, not a discovery list. The Elasticsearch server it talks to is a separate product and not recorded on this record. The ElasticPress.io hosted product is recorded as hostedService and its pricing page was not reached. The GitHub develop branch is cited for the plugin header.

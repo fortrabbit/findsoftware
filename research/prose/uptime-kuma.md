@@ -1,0 +1,1 @@
+Uptime Kuma is a self-hosted monitoring tool that runs uptime checks and publishes status pages. It is written in JavaScript and runs on Node.js. It can be installed with Docker Compose, with a single `docker run` command or from source with Node.js. The project's documentation lives in the [GitHub wiki](https://github.com/louislam/uptime-kuma/wiki).

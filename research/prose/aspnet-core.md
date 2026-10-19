@@ -1,0 +1,1 @@
+ASP.NET Core is a cross-platform web framework from the .NET Foundation, written in C# and run on the .NET runtime. Apps serve HTTP through Kestrel, a cross-platform server, so a deployed app runs as a long-running process. The framework covers both Razor and Blazor. The [introduction](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core) gives an overview.

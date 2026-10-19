@@ -1,0 +1,1 @@
+Parcel is a build tool for web applications and libraries. It takes HTML, CSS or JavaScript files as entry points, bundles what they depend on, and needs no configuration to get started. The [project homepage](https://parceljs.org/) has the documentation.

@@ -1,0 +1,110 @@
+id: opensearch
+name: OpenSearch
+status: accepted
+checkedAt: 2026-10-19
+description: Open-source, Apache 2.0 licensed search and analytics engine with a REST API, maintained by a Linux Foundation project.
+facts:
+  - field: homepage
+    value: https://opensearch.org
+    url: https://opensearch.org/
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: https://github.com/opensearch-project/OpenSearch
+    url: https://github.com/opensearch-project/OpenSearch
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://docs.opensearch.org/latest/getting-started/
+    url: https://docs.opensearch.org/latest/getting-started/
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: OpenSearch Software Foundation
+    url: https://opensearch.org/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "OpenSearch Software Foundation"
+  - field: maintainerType
+    value: foundation
+    url: https://opensearch.org/
+    checkedAt: 2026-10-19
+    via: page
+  - field: parent
+    value: Linux Foundation
+    url: https://opensearch.org/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "a project of the Linux Foundation"
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/opensearch-project/OpenSearch/main/LICENSE.txt
+    checkedAt: 2026-10-19
+    via: page
+    quote: "fully Apache 2.0 licensed from ingest to dashboard"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/opensearch-project/OpenSearch
+    checkedAt: 2026-10-19
+    via: api
+  - field: language
+    value: Java
+    url: https://github.com/opensearch-project/OpenSearch
+    checkedAt: 2026-10-19
+    via: api
+  - field: categories
+    value: [search-server, analytics-engine]
+    url: https://opensearch.org/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Index once, then search, retrieve, and analyze across everything you build and run."
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/opensearch-project/OpenSearch
+    checkedAt: 2026-10-19
+    via: api
+  - field: installMethod
+    value: [docker compose, docker image, deb package, rpm package, yum repository, tar.gz archive, freebsd package, arch linux package]
+    url: https://opensearch.org/downloads/
+    checkedAt: 2026-10-19
+    via: page
+  - field: docker
+    value: image listed on Docker Hub
+    url: https://opensearch.org/downloads/
+    checkedAt: 2026-10-19
+    via: page
+  - field: headlessApi
+    value: rest
+    url: https://docs.opensearch.org/latest/getting-started/
+    checkedAt: 2026-10-19
+    via: page
+  - field: currentMajor
+    value: 3
+    url: https://endoflife.date/api/opensearch.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-29
+    url: https://api.github.com/repos/opensearch-project/OpenSearch/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: endoflifeId
+    value: opensearch
+    url: https://endoflife.date/api/opensearch.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 13890
+    url: https://github.com/opensearch-project/OpenSearch
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.opensearch.org/latest/install-and-configure/install-opensearch/tar/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "verify that the service is properly configured"
+notFound: [hqCountry, firstRelease, pluginDirectory, pluginCount, starters, forum, discord, subreddit, mastodon, bluesky, x, newsletter, paidEditions, freeTier, pricingPage, adminUi, hostedService, deployTargets, npmName, packagistName, pypiDownloads, npmWeeklyDownloads, usageShare, databases, contentStore, basedOn, multisite, sso, i18n, userRoles, serverNeeds]
+unreadable: []
+notes: >
+  The install guidance is on the downloads page (Docker Compose and per-platform packages) and the getting-started page on docs.opensearch.org. The docs URL https://docs.opensearch.org/latest/getting-started/install/ returns a 404 page, so it is not cited. The fork relationship to Elasticsearch is not stated on the pages read, so forkOf is not recorded. The OpenSearch Dashboards web interface is named on the getting-started page and is not a separate record here.

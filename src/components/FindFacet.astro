@@ -1,0 +1,77 @@
+---
+import { facetIndex, type Facet } from '../lib/facets';
+
+interface Props {
+  facet: Facet;
+}
+
+const { facet } = Astro.props;
+
+/*
+ * Values in use, commonest first — except where the vocabulary is a scale, and
+ * then in the dictionary's own order. "Under $5" above "$15 to $50" because it
+ * is cheaper reads as a price list; because it is more popular reads as nothing,
+ * and hides which end is which. Either way the order is fixed here and never
+ * re-sorted under the pointer that just chose one.
+ */
+const values = facet.values
+  .filter((value) => value.count > 0)
+  .sort((a, b) => (facet.ordered ? 0 : b.count - a.count || a.label.localeCompare(b.label, 'en')));
+
+const missing = [
+  facet.unknown > 0 && `${facet.unknown} unknown`,
+  facet.notApplicable > 0 && `${facet.notApplicable} n/a`,
+]
+  .filter(Boolean)
+  .join(' · ');
+---
+
+<div class="find-facet" role="group" aria-labelledby={`facet-${facet.id}`} data-facet-box={facet.id}>
+  {/* The count is the link, on both lines: the number says how much is behind it. */}
+  <h2 class="find-facet-title" id={`facet-${facet.id}`}>
+    <span>{facet.label}</span>
+    <a class="find-jump" href={facetIndex(facet.id)}>
+      {values.length}
+      <span class="visually-hidden"
+        >{values.length === 1 ? ' value, on a page of its own' : ' values, all of them on one page'}</span
+      >
+    </a>
+  </h2>
+
+  {
+    /*
+     * A scroller rather than a "more" button. Every value is in the markup and
+     * reachable by keyboard either way; this costs no click and no second
+     * rendering path, and the panel keeps one height whatever a facet holds.
+     *
+     * The checkbox and the link cannot share a <label> — a link inside one is
+     * both a navigation and a toggle, and a click has to mean one thing.
+     */
+  }
+  <div class="find-values">
+    {
+      values.map((value) => (
+        <div class="find-row">
+          <label title={value.label}>
+            <input type="checkbox" data-facet={facet.id} value={value.id} autocomplete="off" disabled />
+            <span class="find-value">{value.short ?? value.label}</span>
+          </label>
+          <a class="find-count" href={`/${facet.id}/${value.slug}/`}>
+            {value.count}
+            <span class="visually-hidden"> records, listed on their own page</span>
+          </a>
+        </div>
+      ))
+    }
+  </div>
+
+  {
+    /*
+     * Outside the scroller: what the facet never knew does not scroll away.
+     * Always drawn, empty or not — the find view rewrites it when the list on
+     * show changes, and an element never rendered cannot be rewritten. An empty
+     * one is hidden in CSS.
+     */
+  }
+  <p class="find-facet-foot">{missing}</p>
+</div>

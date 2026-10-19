@@ -1,0 +1,131 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageFigure from '../../components/PageFigure.astro';
+import { facetIndex, loadFacets } from '../../lib/facets';
+import { borrowedFrom } from '../../lib/fields';
+import { facetCardPath } from '../../lib/og';
+import { extendDescription, licenceUrl, publisherRef, websiteRef } from '../../lib/seo';
+
+export async function getStaticPaths() {
+  const { facets } = await loadFacets();
+
+  /*
+   * `regions` has an index of its own at the same address, pages/regions.astro,
+   * because it draws a map above the list. Generating it here as well would be
+   * two routes claiming /regions/.
+   */
+  return facets
+    .filter((facet) => facet.id !== 'regions')
+    .map((facet) => ({ params: { facet: facet.id }, props: { facet } }));
+}
+
+const { facet } = Astro.props;
+const inUse = facet.values.filter((value) => value.count > 0);
+
+/*
+ * A field that borrows its vocabulary is answering a different question with
+ * another field's list, so a value nothing holds here says nothing about our
+ * coverage: no provider is headquartered in Bahrain, and the register would not
+ * be more complete if one were. The unused values are named only where the
+ * vocabulary was written for the field.
+ */
+const unused = borrowedFrom.has(facet.field) ? [] : facet.values.filter((value) => value.count === 0);
+
+/* One string, for the reason given in providers/index.astro. */
+const annotation = [
+  `${inUse.length} ${inUse.length === 1 ? 'value' : 'values'} in use.`,
+  facet.unknown > 0 && `${facet.unknown} ${facet.unknown === 1 ? 'record does' : 'records do'} not record this field.`,
+  facet.notApplicable > 0 &&
+    `For a further ${facet.notApplicable} the question does not apply, so there is nothing to record.`,
+  /* The unused values were a second block of small print under the list saying the
+     same kind of thing. One sentence, in the one place the page keeps its counts. */
+  unused.length > 0 &&
+    `Defined but unused so far: ${unused.map((value) => value.label).join(', ')} — a value with no records is a gap in our coverage, not a statement about the market.`,
+]
+  .filter(Boolean)
+  .join(' ');
+
+/*
+ * A facet may have a written introduction of its own, at notes/<facet>.md, and
+ * each of its values may have one at notes/<facet>/<value>.md. Where a value's
+ * note opens with a lead, the list below carries it as a one-line gloss.
+ */
+const notes = await getCollection('notes');
+const note = notes.find((entry) => entry.id === facet.id);
+const leadOf = new Map(
+  notes
+    .filter((entry) => entry.id.startsWith(`${facet.id}/`) && entry.data.lead)
+    .map((entry) => [entry.id.slice(facet.id.length + 1), entry.data.lead]),
+);
+const Note = note ? (await render(note)).Content : null;
+const figure = note?.data.figure;
+
+const listing = `Every value recorded for ${facet.label.toLowerCase()}, each with the number of hosting providers that hold it and a page listing them alphabetically.`;
+const description = note?.data.description ? extendDescription(note.data.description, [listing]) : listing;
+
+const origin = Astro.site?.origin ?? '';
+---
+
+<Base
+  title={`${note?.data.title ?? facet.label} — FindSoftware`}
+  description={description}
+  markdown={`${facetIndex(facet.id)}index.md`}
+  image={facetCardPath(facet.id)}
+  imageAlt={`A FindSoftware card: what the register records for ${facet.label.toLowerCase()}.`}
+  schema={[
+    {
+      '@type': 'CollectionPage',
+      url: `${origin}${facetIndex(facet.id)}`,
+      name: note?.data.title ?? facet.label,
+      description,
+      inLanguage: 'en',
+      isPartOf: websiteRef(origin),
+      publisher: publisherRef(origin),
+      license: licenceUrl,
+      /*
+       * The values, not the records: this page lists what the field can say,
+       * and each entry leads to the page that lists who says it. Only the
+       * values in use — an unused one has no page to point at.
+       */
+      mainEntity: {
+        '@type': 'ItemList',
+        numberOfItems: inUse.length,
+        itemListOrder: 'https://schema.org/ItemListOrderAscending',
+        itemListElement: inUse.map((value, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          url: `${origin}${facetIndex(facet.id)}${value.slug}/`,
+          name: value.label,
+        })),
+      },
+    },
+  ]}
+>
+  {/* The same head as a value page, so both start their prose on the same line. */}
+  <div class="page-head">
+    <h1>{note?.data.title ?? facet.label}</h1>
+  </div>
+
+  {note?.data.lead && <p class="lead">{note.data.lead}</p>}
+  <PageFigure figure={figure} />
+
+  {Note && <Note />}
+
+  <p class="annotation">{annotation}</p>
+
+  <ul class="stack-list">
+    {
+      inUse.map((value) => (
+        <li>
+          <a href={`/${facet.id}/${value.slug}/`}>{value.label}</a>
+          {leadOf.has(value.id) && <span class="stack-lead">{leadOf.get(value.id)}</span>}
+          <span class="entry-count">
+            {value.count}
+            <span class="visually-hidden"> {value.count === 1 ? 'record' : 'records'}</span>
+          </span>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

@@ -1,0 +1,265 @@
+id: spring-boot
+name: Spring Boot
+status: accepted
+checkedAt: 2026-10-18
+description: Java framework for building stand-alone Spring applications with an embedded web server and auto-configuration.
+facts:
+  - field: name
+    value: Spring Boot
+    url: https://spring.io/projects/spring-boot
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can 'just run'."
+  - field: homepage
+    value: https://spring.io/projects/spring-boot
+    url: https://github.com/spring-projects/spring-boot
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/spring-projects/spring-boot
+    url: https://github.com/spring-projects/spring-boot
+    checkedAt: 2026-10-18
+    via: api
+  - field: docs
+    value: https://docs.spring.io/spring-boot/
+    url: https://docs.spring.io/spring-boot/system-requirements.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: firstRelease
+    value: 2014
+    url: https://repo1.maven.org/maven2/org/springframework/boot/spring-boot/1.0.0.RELEASE/
+    checkedAt: 2026-10-18
+    via: api
+  - field: maintainer
+    value: Broadcom
+    url: https://spring.io/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Copyright © 2005 - 2026 Broadcom. All Rights Reserved."
+  - field: maintainerType
+    value: company
+    url: https://spring.io/
+    checkedAt: 2026-10-18
+    via: page
+  - field: wikidata
+    value: Q98731994
+    url: https://www.wikidata.org/wiki/Q98731994
+    checkedAt: 2026-10-18
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://spring.io/projects/spring-boot
+    checkedAt: 2026-10-18
+    via: page
+  - field: basedOn
+    value: [Spring Framework]
+    url: https://docs.spring.io/spring-boot/system-requirements.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Spring Framework 7.0.9 or above is also required."
+  - field: frameworkMin
+    value: {spring-framework: "7.0.9"}
+    url: https://docs.spring.io/spring-boot/system-requirements.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: language
+    value: Java
+    url: https://github.com/spring-projects/spring-boot
+    checkedAt: 2026-10-18
+    via: api
+  - field: runtime
+    value: jvm
+    url: https://docs.spring.io/spring-boot/system-requirements.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: "17"
+    url: https://docs.spring.io/spring-boot/system-requirements.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Spring Boot 4.1.1 requires at least Java 17 and is compatible with versions up to and including Java 26."
+  - field: runtimeMin
+    value: "17"
+    url: https://endoflife.date/api/spring-boot.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: databases
+    value: [h2, hsqldb, derby]
+    url: https://docs.spring.io/spring-boot/reference/data/sql.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Spring Boot can auto-configure embedded H2, HSQL, and Derby (deprecated) databases."
+  - field: templating
+    value: [thymeleaf, freemarker, groovy, mustache]
+    url: https://docs.spring.io/spring-boot/reference/web/servlet.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Spring Boot includes auto-configuration support for the following templating engines:"
+  - field: i18n
+    value: yes
+    url: https://docs.spring.io/spring-boot/reference/features/internationalization.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Spring Boot supports localized messages so that your application can cater to users of different language preferences."
+  - field: renderingModes
+    value: [server]
+    url: https://docs.spring.io/spring-boot/reference/web/servlet.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: installMethod
+    value: [Spring Initializr (start.spring.io), Maven, Gradle, Spring Boot CLI via SDKMAN or Homebrew]
+    url: https://docs.spring.io/spring-boot/installing.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: installMethod
+    value: [Spring Initializr (start.spring.io)]
+    url: https://spring.io/projects/spring-boot
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Bootstrap your application with Spring Initializr"
+  - field: buildTools
+    value: {maven: "3.6.3", gradle: "8.14 or 9.x"}
+    url: https://docs.spring.io/spring-boot/system-requirements.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: deployTargets
+    value: [Cloud Foundry, Kubernetes, Heroku, OpenShift, AWS, Azure, Google Cloud]
+    url: https://docs.spring.io/spring-boot/how-to/deployment/cloud.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value:
+      - "long-running JVM process with an embedded server (default port 8080), or a Servlet 6.1+ container"
+    url: https://docs.spring.io/spring-boot/reference/web/servlet.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "By default, the embedded server listens for HTTP requests on port 8080."
+  - field: webServers
+    value: [Tomcat 11.0, Jetty 12.1]
+    url: https://docs.spring.io/spring-boot/system-requirements.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "You can also deploy Spring Boot applications to any Servlet 6.1+ compatible container."
+  - field: docker
+    value: no official image; container images built with Dockerfiles or Cloud Native Buildpacks
+    url: https://docs.spring.io/spring-boot/reference/packaging/container-images/index.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Spring Boot applications can be containerized using Dockerfiles, or by using Cloud Native Buildpacks"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/spring-projects/spring-boot
+    checkedAt: 2026-10-18
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/spring-projects/spring-boot
+    checkedAt: 2026-10-18
+    via: api
+  - field: commercialSupport
+    value: Tanzu Spring subscription
+    url: https://spring.io/support-policy
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Tanzu Spring offers support and binaries for OpenJDK™, Spring, and Apache Tomcat® in one simple subscription."
+  - field: latestVersion
+    value: 4.1.1
+    url: https://github.com/spring-projects/spring-boot/releases
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-20
+    url: https://github.com/spring-projects/spring-boot/releases
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestPrerelease
+    value: {version: 4.2.0-M2, date: 2026-09-24}
+    url: https://github.com/spring-projects/spring-boot/releases
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - {cycle: "4.1", java: "17 - 26", released: 2026-06-30, ossUntil: 2027-07-31, commercialUntil: 2028-07-31}
+      - {cycle: "4.0", java: "17 - 25", released: 2025-11-30, ossUntil: 2026-12-31, commercialUntil: 2027-12-31}
+      - {cycle: "3.5", java: "17 - 25", released: 2025-05-31, ossUntil: 2026-06-30, commercialUntil: 2032-06-30}
+    url: https://endoflife.date/api/spring-boot.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: eolPolicy
+    value: https://spring.io/support-policy
+    url: https://spring.io/support-policy
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Minor Releases will be supported for a minimum of 13 months"
+  - field: eolPolicy
+    value: https://github.com/spring-projects/spring-boot/wiki/Supported-Versions
+    url: https://github.com/spring-projects/spring-boot/wiki/Supported-Versions
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Major versions will be supported for at least 3 years from the release date"
+  - field: releaseCadence
+    value: major or minor release every six months, in May and November
+    url: https://github.com/spring-projects/spring-boot/wiki/Supported-Versions
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Spring Boot releases a new major or minor version every six months (in May and November)."
+  - field: endoflifeId
+    value: spring-boot
+    url: https://endoflife.date/api/spring-boot.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 81707
+    url: https://github.com/spring-projects/spring-boot
+    checkedAt: 2026-10-18
+    via: api
+  - field: contributors
+    value: 1647
+    url: https://api.github.com/repos/spring-projects/spring-boot/contributors?anon=true
+    checkedAt: 2026-10-18
+    via: api
+  - field: mavenCoordinates
+    value: org.springframework.boot:spring-boot
+    url: https://repo1.maven.org/maven2/org/springframework/boot/spring-boot/maven-metadata.xml
+    checkedAt: 2026-10-18
+    via: api
+  - field: starters
+    value: Spring Initializr project generator
+    url: https://spring.io/projects/spring-boot
+    checkedAt: 2026-10-18
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/spring.io
+    url: https://spring.io/community
+    checkedAt: 2026-10-18
+    via: page
+  - field: x
+    value: https://x.com/springboot
+    url: https://spring.io/community
+    checkedAt: 2026-10-18
+    via: page
+  - field: subreddit
+    value: https://www.reddit.com/r/SpringBoot
+    url: https://spring.io/community
+    checkedAt: 2026-10-18
+    via: page
+  - field: youtube
+    value: https://www.youtube.com/user/SpringSourceDev
+    url: https://spring.io/community
+    checkedAt: 2026-10-18
+    via: page
+  - field: newsletter
+    value: https://go-vmware.broadcom.com/tnz-spring-newsletter-subscribe
+    url: https://spring.io/community
+    checkedAt: 2026-10-18
+    via: page
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.spring.io/spring-boot/reference/using/running-your-application.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "run your application using java -jar"
+notFound: [hqCountry, parent, forkOf, successorOf, contentStore, adminUi, headlessApi, multisite, buildCommand, outputDir, paidEditions, pricingPage, usageShare, pluginDirectory, pluginCount, forum, discord, mastodon]
+unreadable: []
+notes: >
+  Spring Boot is a library set for building applications, not a content system, so contentStore, adminUi and multisite do not apply; `databases` lists only the embedded databases it auto-configures, while production databases connect through any JDBC DataSource with HikariCP preferred. The product page lists Undertow among embeddable servers, but the system-requirements page for 4.1.1 names only Tomcat 11.0 and Jetty 12.1, so `webServers` follows the requirements page. Maintainer is taken from the spring.io copyright line (Broadcom); commercial support is the Tanzu Spring subscription, no price shown. Maven Central's search API returns a stale latest version (3.5.3), so the repo1 metadata file is the registry source; Maven Central publishes no download counts. Coined fields: `mavenCoordinates` (Maven Central counterpart of packagistName), `buildTools` (minimum Maven and Gradle versions); reused `webServers`, `frameworkMin`, `commercialSupport`, `latestPrerelease`, `youtube`.

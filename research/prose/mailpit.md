@@ -1,0 +1,1 @@
+Mailpit is an email testing tool for developers. It runs an SMTP server with a web interface and an API, and it is distributed as a single Go binary. The [install docs](https://mailpit.axllent.org/docs/install/) cover binary downloads, Homebrew, the AUR, FreeBSD packages, Docker and source builds. The axllent GitHub account maintains the project.

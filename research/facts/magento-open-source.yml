@@ -1,0 +1,199 @@
+id: magento-open-source
+name: Magento Open Source
+status: accepted
+checkedAt: 2026-10-18
+description: Open-source PHP e-commerce platform from Adobe, the free base of Adobe Commerce.
+facts:
+  - field: name
+    value: Magento Open Source
+    url: https://api.github.com/repos/magento/magento2/readme
+    checkedAt: 2026-10-18
+    via: api
+  - field: homepage
+    value: https://magento.com/products/magento-open-source
+    url: https://api.github.com/repos/magento/magento2/readme
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/magento/magento2
+    url: https://api.github.com/repos/magento/magento2
+    checkedAt: 2026-10-18
+    via: api
+  - field: docs
+    value: https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html
+    url: https://api.github.com/repos/magento/magento2/readme
+    checkedAt: 2026-10-18
+    via: api
+  - field: maintainer
+    value: Adobe Inc.
+    url: https://api.github.com/repos/magento/magento2
+    checkedAt: 2026-10-18
+    via: api
+    quote: "Submissions you make to Adobe Inc. and its affiliates"
+  - field: maintainerType
+    value: company
+    url: https://api.github.com/repos/magento/magento2
+    checkedAt: 2026-10-18
+    via: api
+  - field: parent
+    value: Adobe
+    url: https://api.github.com/repos/magento/magento2/readme
+    checkedAt: 2026-10-18
+    via: api
+  - field: wikidata
+    value: Q1884012
+    url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Magento&language=en&format=json
+    checkedAt: 2026-10-18
+    via: api
+  - field: categories
+    value: [e-commerce]
+    url: https://api.github.com/repos/magento/magento2/readme
+    checkedAt: 2026-10-18
+    via: api
+    quote: "delivers basic eCommerce capabilities to build a unique online store"
+  - field: language
+    value: php
+    url: https://api.github.com/repos/magento/magento2
+    checkedAt: 2026-10-18
+    via: api
+  - field: runtime
+    value: php
+    url: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: "8.3"
+    url: https://api.github.com/repos/magento/magento2/contents/composer.json?ref=2.4.9
+    checkedAt: 2026-10-18
+    via: api
+    quote: "php: ~8.3.0||~8.4.0||~8.5.0"
+  - field: contentStore
+    value: database
+    url: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: databases
+    value: [mysql 8.4, mariadb 12.3]
+    url: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Adobe supports only the system requirement combinations listed"
+  - field: headlessApi
+    value: [rest, graphql]
+    url: https://developer.adobe.com/commerce/webapi/
+    checkedAt: 2026-10-18
+    via: page
+  - field: templating
+    value: [phtml, knockout html templates]
+    url: https://developer.adobe.com/commerce/frontend-core/guide/templates/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Default templates are PHTML files"
+  - field: installMethod
+    value: composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition
+    url: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer
+    checkedAt: 2026-10-18
+    via: page
+    quote: "When prompted, enter your authentication keys"
+  - field: serverNeeds
+    value:
+      - "OpenSearch 3 (tested)"
+      - "Valkey 9 cache (tested)"
+      - "RabbitMQ 4.3 or ActiveMQ Artemis 2 message queue (tested)"
+      - "nginx 1.30, Composer 2.10, Varnish 8 (tested)"
+      - "repo.magento.com authentication keys for Composer install"
+    url: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value: ["cron: bin/magento cron:install"]
+    url: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs
+    checkedAt: 2026-10-18
+    via: page
+    quote: "depends on proper cron job configuration for many important system functions"
+  - field: license
+    value: [OSL-3.0, AFL-3.0]
+    url: https://api.github.com/repos/magento/magento2/contents/composer.json?ref=2.4.9
+    checkedAt: 2026-10-18
+    via: api
+  - field: license
+    value: OSL-3.0
+    url: https://api.github.com/repos/magento/magento2
+    checkedAt: 2026-10-18
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/magento/magento2/readme
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestVersion
+    value: 2.4.9
+    url: https://api.github.com/repos/magento/magento2/releases
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-12
+    url: https://api.github.com/repos/magento/magento2/releases
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestPrerelease
+    value: {version: 2.4.10-alpha1, date: 2026-10-13}
+    url: https://api.github.com/repos/magento/magento2/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - {cycle: "2.4.9", eol: false, extendedSupport: 2029-05-31, php: "8.5"}
+      - {cycle: "2.4.8", eol: false, extendedSupport: 2028-05-31, php: "8.3, 8.4"}
+      - {cycle: "2.4.7", eol: false, extendedSupport: 2028-05-31, php: "8.2, 8.3"}
+      - {cycle: "2.4.6", eol: false, extendedSupport: 2027-08-31, php: "8.1, 8.2"}
+    url: https://endoflife.date/api/magento.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: eolPolicy
+    value: three years of standard support from GA per version, stated for Adobe Commerce
+    url: https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy
+    checkedAt: 2026-10-18
+    via: page
+    quote: "a three-year standard support window from the General Availability (GA) date"
+  - field: releaseCadence
+    value: one full 2.4.x patch per year in May, security patches at least annually per supported line
+    url: https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule
+    checkedAt: 2026-10-18
+    via: page
+    quote: "is released annually (May)"
+  - field: endoflifeId
+    value: magento
+    url: https://endoflife.date/api/magento.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 12206
+    url: https://api.github.com/repos/magento/magento2
+    checkedAt: 2026-10-18
+    via: api
+  - field: contributors
+    value: 255
+    url: https://api.github.com/repos/magento/magento2/contributors
+    checkedAt: 2026-10-18
+    via: api
+  - field: chat
+    value: https://gitter.im/magento/magento2
+    url: https://api.github.com/repos/magento/magento2/readme
+    checkedAt: 2026-10-18
+    via: api
+  - field: forum
+    value: https://opensource.magento.com/
+    url: https://api.github.com/repos/magento/magento2/readme
+    checkedAt: 2026-10-18
+    via: api
+  - field: runsAs
+    value: [per-request]
+    url: https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Common themes may include (but not limited to) Nginx/Apache, PHP, MySQL/MariaDB"
+notFound: [firstRelease, hqCountry, forkOf, successorOf, basedOn, adminUi, i18n, multisite, renderingModes, buildCommand, outputDir, deployTargets, docker, paidEditions, pricingPage, packagistDownloads, packagistName, usageShare, pluginDirectory, pluginCount, starters, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: [https://business.adobe.com/products/magento/open-source.html, https://business.adobe.com/products/magento/magento-commerce.html]
+notes: >
+  magento.com redirects to business.adobe.com, whose pages timed out, so the README in magento/magento2 is the self-description source. Magento Open Source is not on Packagist: Composer installs come from repo.magento.com and need Marketplace access keys, so no download figures were found. Adobe Commerce is the paid product built on it; the README recommends it "for those who need a full-featured eCommerce solution", but its price was not readable. The lifecycle, schedule and web API pages speak of Adobe Commerce only and never name Magento Open Source. GitHub's releases/latest returns 2.4.10-alpha1 because it is not flagged as a pre-release; 2.4.9 is the newest stable tag. endoflife.date lists PHP 8.5 for 2.4.9 while composer.json allows ~8.3 to ~8.5. Contributors counts GitHub accounts, anonymous excluded. Coined: latestPrerelease.

@@ -1,0 +1,1 @@
+FastAPI is a Python framework for building APIs from standard Python type hints. Applications run on an ASGI server, and the [deployment guide](https://fastapi.tiangolo.com/deployment/) covers Uvicorn with workers, so a deployed app is a long-running process. Sebastián Ramírez, its author, maintains it.

@@ -1,0 +1,322 @@
+id: ghost
+name: Ghost
+status: accepted
+checkedAt: 2026-10-18
+description: Open-source publishing platform for websites, email newsletters and paid memberships, with Handlebars themes and a read-only content API.
+facts:
+  - field: name
+    value: Ghost
+    url: https://ghost.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: homepage
+    value: https://ghost.org
+    url: https://api.github.com/repos/TryGhost/Ghost
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/TryGhost/Ghost
+    url: https://api.github.com/repos/TryGhost/Ghost
+    checkedAt: 2026-10-18
+    via: api
+  - field: docs
+    value: https://docs.ghost.org
+    url: https://ghost.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: maintainer
+    value: Ghost Foundation
+    url: https://ghost.org/about/
+    checkedAt: 2026-10-18
+    via: page
+    quote: Ghost Foundation © 2026
+  - field: maintainerType
+    value: foundation
+    url: https://ghost.org/about/
+    checkedAt: 2026-10-18
+    via: page
+    quote: a non-profit organisation
+  - field: founded
+    value: 2013
+    url: https://ghost.org/about/
+    checkedAt: 2026-10-18
+    via: page
+    quote: April 2013
+  - field: categories
+    value:
+      - cms
+      - blog
+      - newsletter
+      - membership
+    url: https://ghost.org/
+    checkedAt: 2026-10-18
+    via: page
+    quote: The best open source blog & newsletter platform
+  - field: basedOn
+    value:
+      - express
+      - knex
+    url: https://registry.npmjs.org/ghost/latest
+    checkedAt: 2026-10-18
+    via: api
+    quote: dependencies express, express-hbs, knex, mysql2
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/TryGhost/Ghost
+    checkedAt: 2026-10-18
+    via: api
+  - field: runtime
+    value: node
+    url: https://docs.ghost.org/hosting/
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: 22.23.1
+    url: https://registry.npmjs.org/ghost/latest
+    checkedAt: 2026-10-18
+    via: api
+    quote: "engines.node: ^22.23.1 || ^24.20.0"
+  - field: runtimeMin
+    value: "22"
+    url: https://docs.ghost.org/faq/node-versions
+    checkedAt: 2026-10-18
+    via: page
+    quote: Ghost's current required Node version is Node v22 LTS.
+  - field: contentStore
+    value:
+      - database
+    url: https://docs.ghost.org/hosting/
+    checkedAt: 2026-10-18
+    via: page
+  - field: databases
+    value:
+      - name: mysql
+        versions:
+          - "8.0"
+          - "8.4"
+    url: https://docs.ghost.org/hosting/
+    checkedAt: 2026-10-18
+    via: page
+  - field: databases
+    value:
+      - mysql
+      - sqlite
+    url: https://registry.npmjs.org/ghost/latest
+    checkedAt: 2026-10-18
+    via: api
+    quote: dependencies mysql2; optionalDependencies better-sqlite3
+  - field: adminUi
+    value: yes, Ghost Admin
+    url: https://docs.ghost.org/themes/helpers/utility/translate
+    checkedAt: 2026-10-18
+    via: page
+  - field: headlessApi
+    value:
+      - rest (read-only Content API)
+      - rest (Admin API)
+    url: https://docs.ghost.org/content-api
+    checkedAt: 2026-10-18
+    via: page
+    quote: RESTful Content API
+  - field: templating
+    value: handlebars
+    url: https://docs.ghost.org/themes
+    checkedAt: 2026-10-18
+    via: page
+    quote: Ghost themes use the Handlebars templating language
+  - field: i18n
+    value: yes, theme translation via locales files and the site language setting
+    url: https://docs.ghost.org/themes/helpers/utility/translate
+    checkedAt: 2026-10-18
+    via: page
+    quote: "{{t}} is a helper to output text in your site language."
+  - field: renderingModes
+    value:
+      - server
+    url: https://docs.ghost.org/themes
+    checkedAt: 2026-10-18
+    via: page
+  - field: installMethod
+    value:
+      - ghost-cli (npm install ghost-cli@latest -g, ghost install)
+      - docker compose (preview)
+    url: https://docs.ghost.org/install/ubuntu
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value:
+      - Ubuntu 22.04, 24.04 or 26.04 LTS
+      - MySQL 8.0 or 8.4
+      - NGINX
+      - systemd
+      - at least 1GB memory
+      - non-root user
+    url: https://docs.ghost.org/hosting/
+    checkedAt: 2026-10-18
+    via: page
+  - field: docker
+    value: official Docker Compose setup in TryGhost/ghost-docker, labeled preview
+    url: https://docs.ghost.org/install/docker
+    checkedAt: 2026-10-18
+    via: page
+  - field: docker
+    value: ghost (Docker Official Image)
+    url: https://hub.docker.com/v2/repositories/library/ghost/
+    checkedAt: 2026-10-18
+    via: api
+  - field: dockerPulls
+    value: 381501391
+    url: https://hub.docker.com/v2/repositories/library/ghost/
+    checkedAt: 2026-10-18
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/TryGhost/Ghost
+    checkedAt: 2026-10-18
+    via: api
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/ghost/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/TryGhost/Ghost
+    checkedAt: 2026-10-18
+    via: api
+  - field: paidEditions
+    value:
+      - name: Starter
+        price: 18
+        currency: USD
+        period: per month, billed yearly
+        adds: hosted site, 1,000 members, 1 staff user, 1 newsletter
+      - name: Publisher
+        price: 29
+        currency: USD
+        period: per month, billed yearly
+        adds: custom themes, paid subscriptions, 3 staff users, 3 newsletters, Admin API, webhooks
+      - name: Business
+        price: 199
+        currency: USD
+        period: per month, billed yearly
+        adds: 15 staff users, priority support, 10 newsletters; custom SSL and subdirectory +$50/mo each
+      - name: Custom
+        price: null
+        adds: unlimited staff and newsletters, SLA, SSO, dedicated IP
+    url: https://ghost.org/pricing/
+    checkedAt: 2026-10-18
+    via: page
+    quote: $18/mo
+  - field: pricingPage
+    value: https://ghost.org/pricing/
+    url: https://ghost.org/pricing/
+    checkedAt: 2026-10-18
+    via: page
+  - field: hostedOffering
+    value: Ghost(Pro)
+    url: https://docs.ghost.org/hosting/
+    checkedAt: 2026-10-18
+    via: page
+  - field: latestVersion
+    value: 6.71.0
+    url: https://api.github.com/repos/TryGhost/Ghost/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-15
+    url: https://api.github.com/repos/TryGhost/Ghost/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: repoCreated
+    value: 2013-05-04
+    url: https://api.github.com/repos/TryGhost/Ghost
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 55562
+    url: https://api.github.com/repos/TryGhost/Ghost
+    checkedAt: 2026-10-18
+    via: api
+  - field: contributors
+    value: 369
+    url: https://api.github.com/repos/TryGhost/Ghost/contributors
+    checkedAt: 2026-10-18
+    via: api
+  - field: npmWeeklyDownloads
+    value:
+      count: 8768
+      period: 2026-10-10/2026-10-16
+    url: https://api.npmjs.org/downloads/point/last-week/ghost
+    checkedAt: 2026-10-18
+    via: api
+  - field: npmName
+    value: ghost
+    url: https://registry.npmjs.org/ghost/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: npmName
+    value: ghost-cli
+    url: https://registry.npmjs.org/ghost-cli/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: pluginDirectory
+    value: https://ghost.org/marketplace/
+    url: https://ghost.org/integrations/
+    checkedAt: 2026-10-18
+    via: page
+  - field: integrationsDirectory
+    value: https://ghost.org/integrations/
+    url: https://ghost.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: starters
+    value:
+      - https://github.com/TryGhost/Starter
+      - https://github.com/TryGhost/Casper
+    url: https://api.github.com/repos/TryGhost/Starter
+    checkedAt: 2026-10-18
+    via: api
+    quote: A development starter theme for Ghost
+  - field: forum
+    value: https://forum.ghost.org
+    url: https://ghost.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: wikidata
+    value: Q16251204
+    url: https://www.wikidata.org/wiki/Special:EntityData/Q16251204.json
+    checkedAt: 2026-10-18
+    via: api
+    quote: P856 https://ghost.org
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.ghost.org/install/ubuntu
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Set up systemd? (Recommended)"
+notFound:
+  - firstRelease
+  - hqCountry
+  - parent
+  - forkOf
+  - successorOf
+  - multisite
+  - buildCommand
+  - outputDir
+  - deployTargets
+  - supportedVersions
+  - eolPolicy
+  - releaseCadence
+  - endoflifeId
+  - usageShare
+  - pluginCount
+  - discord
+  - subreddit
+  - mastodon
+  - bluesky
+  - x
+  - newsletter
+  - packagistName
+unreadable: []
+notes: "Ghost is a full CMS with its own Handlebars theme layer and can also feed external frontends through the read-only Content API, so it sits at the edge of the headless-selfhosted area. The Ghost Foundation calls itself non-profit and fully remote and states no jurisdiction, so hqCountry stays out. The docs require Node 22 LTS while the npm engines field also accepts ^24.20.0. SQLite appears only as an optional npm dependency; the production stack names MySQL 8 only. The Docker Compose install is labeled preview and is required for self-hosting ActivityPub and Tinybird analytics; the ghost image on Docker Hub is a Docker Official Image, not stated as maintained by Ghost. The homepage reports 15,292 new publications in the last week and $100,000,000+ yearly publisher revenue, recorded nowhere as a field. The founding date (April 2013) is of the organization, recorded under the coined field founded. Coined here: founded (organization founding year), dockerPulls, hostedOffering, integrationsDirectory, repoCreated."

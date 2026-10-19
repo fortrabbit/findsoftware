@@ -1,0 +1,210 @@
+id: prestashop
+name: PrestaShop
+status: accepted
+checkedAt: 2026-10-18
+description: Open-source PHP e-commerce platform for building and running online stores.
+facts:
+  - field: name
+    value: PrestaShop
+    url: https://www.prestashop-project.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: homepage
+    value: https://www.prestashop-project.org/
+    url: https://api.github.com/repos/PrestaShop/PrestaShop
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/PrestaShop/PrestaShop
+    url: https://www.prestashop-project.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: docs
+    value: https://devdocs.prestashop-project.org/9/
+    url: https://devdocs.prestashop-project.org/9/basics/installation/
+    checkedAt: 2026-10-18
+    via: page
+  - field: parent
+    value: PrestaShop SA
+    url: https://www.prestashop-project.org/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "PrestaShop SA as owner of the PrestaShop trademarks"
+  - field: maintainer
+    value: PrestaShop S.A
+    url: https://www.prestashop.com/en
+    checkedAt: 2026-10-18
+    via: page
+  - field: maintainerType
+    value: company
+    url: https://www.prestashop.com/en
+    checkedAt: 2026-10-18
+    via: page
+  - field: wikidata
+    value: Q1080982
+    url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=PrestaShop&language=en&format=json
+    checkedAt: 2026-10-18
+    via: api
+  - field: categories
+    value: [e-commerce]
+    url: https://www.prestashop-project.org/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "a universal open-source software platform to build your e-commerce solution"
+  - field: basedOn
+    value: [symfony]
+    url: https://devdocs.prestashop-project.org/9/development/architecture/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "progressively being migrated to Symfony"
+  - field: language
+    value: php
+    url: https://api.github.com/repos/PrestaShop/PrestaShop
+    checkedAt: 2026-10-18
+    via: api
+  - field: runtime
+    value: php
+    url: https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: "8.1"
+    url: https://repo.packagist.org/p2/prestashop/prestashop.json
+    checkedAt: 2026-10-18
+    via: api
+    quote: "php: >=8.1"
+  - field: runtimeMin
+    value: "8.1"
+    url: https://build.prestashop-project.org/news/2026/prestashop-9-2-0-available/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "up to PHP 8.5 is supported"
+  - field: contentStore
+    value: database
+    url: https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/
+    checkedAt: 2026-10-18
+    via: page
+  - field: databases
+    value: [mysql 5.7+, mariadb 10.2+]
+    url: https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "MySQL 5.7 minimum or MariaDB 10.2 minimum"
+  - field: headlessApi
+    value: [admin-api, webservice]
+    url: https://devdocs.prestashop-project.org/9/admin-api/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "based on the popular API Platform in version 3"
+  - field: multisite
+    value: yes, multistore
+    url: https://devdocs.prestashop-project.org/9/development/architecture/
+    checkedAt: 2026-10-18
+    via: page
+  - field: defaultTheme
+    value: Hummingbird
+    url: https://devdocs.prestashop-project.org/9/themes/
+    checkedAt: 2026-10-18
+    via: page
+  - field: installMethod
+    value: [zip release package with web installer, cli installer, docker, git clone]
+    url: https://devdocs.prestashop-project.org/9/basics/installation/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "release versions are no longer built or available on GitHub"
+  - field: docker
+    value: prestashop/prestashop
+    url: https://devdocs.prestashop-project.org/9/basics/installation/environments/docker/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "All our images and tags are available on Docker Hub"
+  - field: dockerPulls
+    value: 7758828
+    url: https://hub.docker.com/v2/repositories/prestashop/prestashop/
+    checkedAt: 2026-10-18
+    via: api
+  - field: serverNeeds
+    value:
+      - "PHP extensions: curl, dom, fileinfo, gd, iconv, intl, json, mbstring, openssl, pdo, pdo_mysql, simplexml, zip"
+      - "allow_url_fopen On"
+      - "memory_limit 512M+"
+    url: https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/
+    checkedAt: 2026-10-18
+    via: page
+  - field: webServers
+    value: [apache 2.4+, nginx 1.0+]
+    url: https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/
+    checkedAt: 2026-10-18
+    via: page
+  - field: license
+    value: OSL-3.0
+    url: https://api.github.com/repos/PrestaShop/PrestaShop/contents/composer.json?ref=9.2.0
+    checkedAt: 2026-10-18
+    via: api
+  - field: license
+    value: OSL-3.0
+    url: https://github.com/PrestaShop/PrestaShop/blob/develop/LICENSE.md
+    checkedAt: 2026-10-18
+    via: api
+    quote: "PrestaShop Core is licensed under OSL-3.0 and PrestaShop Modules are licensed under AFL-3.0"
+  - field: licenseModel
+    value: open-source
+    url: https://www.prestashop.com/en
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Download the source code for free"
+  - field: hostedOffering
+    value: yes, hosted store run by PrestaShop
+    url: https://www.prestashop.com/en
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Let us take care of the technical aspects and access a ready-to-use store"
+  - field: latestVersion
+    value: 9.2.0
+    url: https://api.github.com/repos/PrestaShop/PrestaShop/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-30
+    url: https://api.github.com/repos/PrestaShop/PrestaShop/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 9226
+    url: https://api.github.com/repos/PrestaShop/PrestaShop
+    checkedAt: 2026-10-18
+    via: api
+  - field: contributors
+    value: 257
+    url: https://api.github.com/repos/PrestaShop/PrestaShop/contributors
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistDownloads
+    value: {total: 24164, monthly: 3077}
+    url: https://packagist.org/packages/prestashop/prestashop.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: packagistName
+    value: prestashop/prestashop
+    url: https://packagist.org/packages/prestashop/prestashop.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: usageClaim
+    value: more than 250,000 merchants
+    url: https://www.prestashop.com/en
+    checkedAt: 2026-10-18
+    via: page
+  - field: slack
+    value: https://www.prestashop-project.org/slack/
+    url: https://www.prestashop-project.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: blog
+    value: https://build.prestashop-project.org/
+    url: https://www.prestashop-project.org/
+    checkedAt: 2026-10-18
+    via: page
+notFound: [firstRelease, hqCountry, forkOf, successorOf, adminUi, templating, i18n, renderingModes, buildCommand, outputDir, deployTargets, paidEditions, pricingPage, supportedVersions, eolPolicy, releaseCadence, endoflifeId, usageShare, pluginDirectory, pluginCount, starters, forum, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: [https://www.prestashop.com/en/pricing]
+notes: >
+  GitHub reports the license as NOASSERTION because core (OSL-3.0) and bundled modules (AFL-3.0) differ; composer.json declares OSL-3.0. From version 9, release zips are no longer on GitHub; the 9.2 announcement links https://prestashop.com/versions/ for downloads. The project site (prestashop-project.org) and the company site (prestashop.com) are separate; the project site names PrestaShop SA only as trademark owner, and the company site offers the free Classic download and a hosted store without prices (the pricing URL answers 404). The themes page implies Smarty templates without stating it, so templating stays out. endoflife.date has no PrestaShop entry and the release pages state no support duration. Coined: hostedOffering (vendor-run hosted version of an installable product), defaultTheme, usageClaim. Contributors counts GitHub accounts, anonymous excluded.

@@ -1,0 +1,1 @@
+ESLint reads JavaScript source, reports problems against the rules a project configures and can fix problems it finds. It is pluggable, so checks beyond its own rules come from plugins. The [getting-started guide](https://eslint.org/docs/latest/use/getting-started) explains how a project sets it up. The OpenJS Foundation and the ESLint contributors hold the copyright.

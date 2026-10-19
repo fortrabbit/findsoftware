@@ -1,0 +1,133 @@
+id: glitchtip
+name: GlitchTip
+status: accepted
+checkedAt: 2026-10-19
+description: "Open-source error tracking platform that works with Sentry client SDKs, self-hosted or hosted by GlitchTip."
+facts:
+  - field: homepage
+    value: "https://glitchtip.com"
+    url: https://glitchtip.com
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: "https://gitlab.com/glitchtip/glitchtip-backend"
+    url: https://gitlab.com/glitchtip/glitchtip-backend
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: "https://glitchtip.com/documentation"
+    url: https://glitchtip.com/documentation
+    checkedAt: 2026-10-19
+    via: page
+  - field: sdkCompatibility
+    value: "Sentry client SDKs"
+    url: https://glitchtip.com
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Our app is compatible with Sentry client SDKs, but easier to run."
+  - field: language
+    value: Python
+    url: https://gitlab.com/glitchtip/glitchtip-backend
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://gitlab.com/glitchtip/glitchtip-backend/-/blob/v6.2.6/pyproject.toml
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtimeMin
+    value: "Python 3.12"
+    url: https://gitlab.com/glitchtip/glitchtip-backend/-/blob/v6.2.6/pyproject.toml
+    checkedAt: 2026-10-19
+    via: api
+  - field: databases
+    value: ["postgresql 14 or newer", "valkey 7 or newer (optional)", "redis 7 or newer (optional)"]
+    url: https://glitchtip.com/documentation/install
+    checkedAt: 2026-10-19
+    via: page
+    quote: "GlitchTip requires PostgreSQL (14+) and a single service"
+  - field: serverNeeds
+    value: "512 MB RAM recommended; 256 MB RAM minimum for the all-in-one setup"
+    url: https://glitchtip.com/documentation/install
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Recommended system requirements: 512 MB RAM"
+  - field: installMethod
+    value: [docker-compose, helm-chart, managed-hosting, source-uv]
+    url: https://glitchtip.com/documentation/install
+    checkedAt: 2026-10-19
+    via: page
+    quote: "GlitchTip can be run with Docker. We recommend Docker Compose"
+  - field: docker
+    value: "glitchtip/glitchtip"
+    url: https://hub.docker.com/r/glitchtip/glitchtip
+    checkedAt: 2026-10-19
+    via: api
+  - field: dockerHubPulls
+    value: 8911174
+    url: https://hub.docker.com/r/glitchtip/glitchtip
+    checkedAt: 2026-10-19
+    via: api
+  - field: categories
+    value: [error-tracking]
+    url: https://glitchtip.com
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: MIT
+    url: https://gitlab.com/glitchtip/glitchtip-backend/-/blob/v6.2.6/LICENSE
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://glitchtip.com
+    checkedAt: 2026-10-19
+    via: page
+    quote: "It's also open source, so you can view, modify, and use the code as you see fit."
+  - field: freeTier
+    value: "Free ($0) plan on the hosted service"
+    url: https://glitchtip.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Free ($0)"
+  - field: paidEditions
+    value: ["Small, $15 / month", "Medium, $50 / month", "Large, $250 / month"]
+    url: https://glitchtip.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+    quote: "$15 / month"
+  - field: pricingPage
+    value: "https://glitchtip.com/pricing"
+    url: https://glitchtip.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+  - field: currentMajor
+    value: 6
+    url: https://gitlab.com/glitchtip/glitchtip-backend/-/tags/v6.2.6
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: "2026-08-07"
+    url: https://gitlab.com/glitchtip/glitchtip-backend/-/tags/v6.2.6
+    checkedAt: 2026-10-19
+    via: api
+  - field: gitlabStars
+    value: 362
+    url: https://gitlab.com/glitchtip/glitchtip-backend
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 39
+    url: https://gitlab.com/glitchtip/glitchtip-backend
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://glitchtip.com/documentation/install
+    checkedAt: 2026-10-19
+    via: page
+    quote: "GlitchTip requires PostgreSQL (14+) and a single service (or separate web and worker services for scaling)."
+notFound: [firstRelease, maintainer, maintainerType, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, eolPolicy, endoflifeId, releaseCadence, regions, pluginDirectory, pluginCount, starters, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, githubStargazers, npmName, packagistName, pypiDownloads, processModel, renderingModes, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, importsFrom]
+unreadable: []
+notes: >
+  The CSV row dates the tag v6.2.6 (2026-08-07), which is the newest tag. The GitLab releases list shows v6.1.8 (2026-06-05) as its latest release object, so the release date follows the tag. The LICENSE file at v6.2.6 is MIT; GitLab's API returns no license field. The maintainer is not named on the pages read beyond the GitLab group "glitchtip" and the site, so maintainer fields are not recorded. The pyproject.toml at v6.2.6 shows version 0.1.0, which is not the release tag and is not recorded. The Docker Hub pull count is the total reported by the Hub API. The docs list the hosting platforms (PikaPods, Elestio, Nodion, Railway, RepoCloud) as options; they are not recorded as deployTargets. The docker, sdkCompatibility, dockerHubPulls and gitlabStars fields are coined kinds.

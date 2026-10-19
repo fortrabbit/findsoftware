@@ -1,0 +1,105 @@
+id: uptime-kuma
+name: Uptime Kuma
+status: accepted
+checkedAt: 2026-10-19
+description: "Self-hosted monitoring tool for uptime checks and status pages."
+facts:
+  - field: homepage
+    value: "https://uptime.kuma.pet"
+    url: https://uptime.kuma.pet
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: "https://github.com/louislam/uptime-kuma"
+    url: https://github.com/louislam/uptime-kuma
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: "https://github.com/louislam/uptime-kuma/wiki"
+    url: https://github.com/louislam/uptime-kuma/wiki
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: "louislam"
+    url: https://github.com/louislam/uptime-kuma
+    checkedAt: 2026-10-19
+    via: api
+  - field: maintainerType
+    value: individual
+    url: https://github.com/louislam/uptime-kuma
+    checkedAt: 2026-10-19
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://github.com/louislam/uptime-kuma
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://github.com/louislam/uptime-kuma/blob/2.5.6/README.md
+    checkedAt: 2026-10-19
+    via: api
+    quote: "Node.js](https://nodejs.org/en/download/) >= 20.4"
+  - field: runtimeMin
+    value: "Node.js 20.4"
+    url: https://github.com/louislam/uptime-kuma/blob/2.5.6/README.md
+    checkedAt: 2026-10-19
+    via: api
+    quote: "Node.js](https://nodejs.org/en/download/) >= 20.4"
+  - field: installMethod
+    value: [docker-compose, docker-run, node-source]
+    url: https://github.com/louislam/uptime-kuma/blob/2.5.6/README.md
+    checkedAt: 2026-10-19
+    via: api
+    quote: "docker compose up -d"
+  - field: docker
+    value: "louislam/uptime-kuma:2"
+    url: https://uptime.kuma.pet
+    checkedAt: 2026-10-19
+    via: page
+    quote: "docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:2"
+  - field: categories
+    value: [uptime-monitor, status-page]
+    url: https://uptime.kuma.pet
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: MIT
+    url: https://github.com/louislam/uptime-kuma
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/louislam/uptime-kuma
+    checkedAt: 2026-10-19
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://github.com/louislam/uptime-kuma/releases/tag/2.5.6
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-09"
+    url: https://github.com/louislam/uptime-kuma/releases/tag/2.5.6
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 92625
+    url: https://github.com/louislam/uptime-kuma
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 1145
+    url: https://github.com/louislam/uptime-kuma
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/louislam/uptime-kuma/blob/2.5.6/README.md
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Uptime Kuma is now running on all network interfaces"
+notFound: [firstRelease, parent, forkOf, successorOf, alternativeTo, wikidata, hqCountry, paidEditions, freeTier, pricingPage, eolPolicy, endoflifeId, releaseCadence, regions, pluginDirectory, pluginCount, starters, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, npmName, packagistName, pypiDownloads, serverNeeds, processModel, renderingModes, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, databases, importsFrom]
+unreadable: [uptime.kuma.pet/docs (redirects to the GitHub wiki, whose pages return only the GitHub shell to curl)]
+notes: >
+  The CSV row dates 2026-10-09, which matches the latest release 2.5.6. The project's documentation URL redirects to the GitHub wiki, and the wiki pages returned only the GitHub page shell to curl, so the install facts come from the README at tag 2.5.6 and the homepage. The default branch is on 3.0.0-beta.0, whose package.json requires Node.js >= 26.2.0; this is a pre-release line and is not recorded as runtimeMin. The maintainer is the GitHub account that owns the repository. The docker value is a coined kind for the image tag the homepage shows.

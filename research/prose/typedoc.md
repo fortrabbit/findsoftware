@@ -1,0 +1,1 @@
+TypeDoc turns the comments in a TypeScript project into an API reference, written either as HTML pages or as a JSON model that other tools can read. The [project site](https://typedoc.org/) holds its documentation.

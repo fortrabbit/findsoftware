@@ -1,0 +1,102 @@
+id: roadrunner
+name: RoadRunner
+status: accepted
+checkedAt: 2026-10-19
+description: High-performance PHP application server and process manager written in Go, extended with plugins.
+facts:
+  - field: name
+    value: RoadRunner
+    url: https://roadrunner.dev/
+    checkedAt: 2026-10-19
+    via: page
+  - field: homepage
+    value: https://roadrunner.dev
+    url: https://roadrunner.dev/
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: https://github.com/roadrunner-server/roadrunner
+    url: https://github.com/roadrunner-server/roadrunner
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://docs.roadrunner.dev/
+    url: https://docs.roadrunner.dev/
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: Spiral Scout
+    url: https://roadrunner.dev/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Meet other Spiral Scout products"
+  - field: maintainerType
+    value: company
+    url: https://roadrunner.dev/
+    checkedAt: 2026-10-19
+    via: page
+  - field: categories
+    value: [app-server, process-manager]
+    url: https://docs.roadrunner.dev/
+    checkedAt: 2026-10-19
+    via: page
+  - field: language
+    value: Go
+    url: https://github.com/roadrunner-server/roadrunner
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: go binary
+    url: https://docs.roadrunner.dev/docs/general/install
+    checkedAt: 2026-10-19
+    via: page
+  - field: currentMajor
+    value: 3
+    url: https://github.com/roadrunner-server/roadrunner/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-09
+    url: https://github.com/roadrunner-server/roadrunner/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/roadrunner-server/roadrunner
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/roadrunner-server/roadrunner
+    checkedAt: 2026-10-19
+    via: api
+  - field: installMethod
+    value: [pre-built-binary-download, build-from-source-go]
+    url: https://docs.roadrunner.dev/docs/general/install
+    checkedAt: 2026-10-19
+    via: page
+  - field: processModel
+    value: long-running server
+    url: https://docs.roadrunner.dev/
+    checkedAt: 2026-10-19
+    via: page
+  - field: discord
+    value: https://discord.gg/spiralphp
+    url: https://roadrunner.dev/
+    checkedAt: 2026-10-19
+    via: page
+  - field: githubStargazers
+    value: 8512
+    url: https://api.github.com/repos/roadrunner-server/roadrunner
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.roadrunner.dev/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "RoadRunner is a high-performance PHP application server and process manager"
+notFound: [hqCountry, firstRelease, runtimeMin, eolPolicy, releaseCadence, paidEditions, pricingPage, freeTier, parent, contributors, pluginDirectory, pluginCount, starters, adminUi, headlessApi, i18n, multisite, userRoles, sso, serverNeeds, renderingModes, endoflifeId, forum, subreddit, mastodon, bluesky, x, newsletter, usageShare, packagistName, npmName, pypiDownloads, npmWeeklyDownloads, packagistDownloads, wikidata]
+unreadable: ["https://roadrunner.dev/about (404)", "https://roadrunner.dev/pricing (404)"]
+notes: >
+  The install guide targets RoadRunner v3 with v6 plugins; it requires Go 1.27.1 for the source build and PHP 8.5 with the sockets extension for the examples, so runtimeMin is not recorded as a minimum for the server. The roadrunner-home page calls Spiral Scout "Our sponsor" and lists "Other products" from Spiral Scout (Spiral Framework, Cycle ORM, Wippy.ai); the page gives no ownership statement, so the maintainer field follows the page's company name. The worker and plugin model is in the docs (PHP Worker, Workers pool). Fields coined here: none.

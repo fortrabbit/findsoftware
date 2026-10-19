@@ -1,0 +1,305 @@
+id: directus
+name: Directus
+status: accepted
+checkedAt: 2026-10-18
+description: Backend that wraps an SQL database with REST and GraphQL APIs and a no-code admin app, used as a headless CMS.
+facts:
+  - field: name
+    value: Directus
+    url: https://directus.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: homepage
+    value: https://directus.com
+    url: https://api.github.com/repos/directus/directus
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/directus/directus
+    url: https://api.github.com/repos/directus/directus
+    checkedAt: 2026-10-18
+    via: api
+  - field: docs
+    value: https://directus.com/docs
+    url: https://directus.com/docs/self-hosting/requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: maintainer
+    value: Monospace Inc.
+    url: https://directus.com/about
+    checkedAt: 2026-10-18
+    via: page
+    quote: Copyright © 2026 Monospace Inc.
+  - field: maintainerType
+    value: company
+    url: https://directus.com/about
+    checkedAt: 2026-10-18
+    via: page
+  - field: hqCountry
+    value: US
+    url: https://api.github.com/orgs/directus
+    checkedAt: 2026-10-18
+    via: api
+    quote: "location: Brooklyn, NY"
+  - field: categories
+    value:
+      - headless-cms
+      - backend
+      - admin-panel
+    url: https://api.github.com/repos/directus/directus
+    checkedAt: 2026-10-18
+    via: api
+    quote: Turn your DB into a headless CMS, admin panels, or apps
+  - field: basedOn
+    value:
+      - express
+      - knex
+      - vue
+    url: https://registry.npmjs.org/@directus/api/latest
+    checkedAt: 2026-10-18
+    via: api
+    quote: dependencies express, knex, graphql; @directus/app uses vue 3.5.43
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/directus/directus
+    checkedAt: 2026-10-18
+    via: api
+  - field: runtime
+    value: node
+    url: https://registry.npmjs.org/directus/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: runtimeMin
+    value: "22"
+    url: https://registry.npmjs.org/directus/latest
+    checkedAt: 2026-10-18
+    via: api
+    quote: "engines.node: >=22"
+  - field: contentStore
+    value:
+      - database
+    url: https://directus.com/docs/self-hosting/requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: databases
+    value:
+      - postgres
+      - mysql
+      - sqlite
+      - mssql
+      - mariadb
+      - cockroachdb
+      - oracle
+    url: https://directus.com/docs/self-hosting/requirements
+    checkedAt: 2026-10-18
+    via: page
+    quote: LTS versions of PostgreSQL, MySQL, SQLite, MS SQL Server, MariaDB, CockroachDB, and OracleDB
+  - field: adminUi
+    value: yes, Data Studio web app
+    url: https://directus.com/docs/getting-started/overview
+    checkedAt: 2026-10-18
+    via: page
+    quote: A web app for your whole team to manage content, files, users, and dashboards
+  - field: headlessApi
+    value:
+      - rest
+      - graphql
+      - realtime (websockets)
+    url: https://directus.com/docs/getting-started/overview
+    checkedAt: 2026-10-18
+    via: page
+  - field: i18n
+    value: yes, content translations and a translatable Data Studio with RTL support
+    url: https://directus.com/docs/guides/content/translations
+    checkedAt: 2026-10-18
+    via: page
+    quote: Both content and the data studio can be translated into multiple languages.
+  - field: renderingModes
+    value:
+      - none (api only)
+    url: https://directus.com/docs/getting-started/overview
+    checkedAt: 2026-10-18
+    via: page
+  - field: installMethod
+    value:
+      - docker
+    url: https://directus.com/docs/self-hosting/deploying
+    checkedAt: 2026-10-18
+    via: page
+    quote: Directus is provided as a Docker image
+  - field: docker
+    value: directus/directus
+    url: https://directus.com/docs/self-hosting/deploying
+    checkedAt: 2026-10-18
+    via: page
+  - field: dockerPulls
+    value: 50092116
+    url: https://hub.docker.com/v2/repositories/directus/directus/
+    checkedAt: 2026-10-18
+    via: api
+  - field: serverNeeds
+    value:
+      - long-running container
+      - Redis optional for caching, required for horizontal scaling
+      - storage adapter or mounted volume for files
+      - minimum 0.25 vCPU and 512 MB per container
+    url: https://directus.com/docs/self-hosting/requirements
+    checkedAt: 2026-10-18
+    via: page
+    quote: the recommended minimum is 2x 1 vCPU / 2GB
+  - field: hardwareMin
+    value:
+      vcpu: 0.25
+      ramMb: 512
+      recommended: 2x 1 vCPU / 2GB
+    url: https://directus.com/docs/self-hosting/requirements
+    checkedAt: 2026-10-18
+    via: page
+  - field: license
+    value: MSCL-1.0-GPL (Monospace Sustainable Core License 1.0, not SPDX)
+    url: https://github.com/directus/directus/blob/main/license
+    checkedAt: 2026-10-18
+    via: api
+    quote: Monospace Sustainable Core License, Version 1.0
+  - field: license
+    value: NOASSERTION
+    url: https://api.github.com/repos/directus/directus
+    checkedAt: 2026-10-18
+    via: api
+  - field: licenseModel
+    value: source-available
+    url: https://github.com/directus/directus/blob/main/license
+    checkedAt: 2026-10-18
+    via: api
+    quote: A Permitted Purpose is any purpose other than a Competing Use.
+  - field: paidEditions
+    value:
+      - name: Core
+        price: 0
+        period: monthly
+        adds: 3 user seats, 25 collections, 5 flows, AI Assistant, Advanced RBAC, community support
+      - name: Team
+        price: 499
+        currency: USD
+        period: per month with annual commitment ($5,988/yr), or $599 billed monthly
+        adds: 10 SSO seats, 50 collections, 20 flows, Granular RBAC, basic support
+      - name: Enterprise
+        price: null
+        adds: custom seats and collections, unlimited flows, SAML/OIDC SSO, offline mode, AI translations, telemetry opt-out, premium support
+      - name: Open Innovation Grant
+        price: 0
+        adds: no feature limits, for organizations under $5M annual revenue and fewer than 50 employees
+    url: https://directus.com/pricing
+    checkedAt: 2026-10-18
+    via: page
+    quote: Organizations under $5M in annual revenue and fewer than 50 employees
+  - field: pricingPage
+    value: https://directus.com/pricing
+    url: https://directus.com/pricing
+    checkedAt: 2026-10-18
+    via: page
+  - field: hostedOffering
+    value: Directus Cloud, $99 per month add-on to a plan
+    url: https://directus.com/pricing
+    checkedAt: 2026-10-18
+    via: page
+  - field: latestVersion
+    value: 12.5.0
+    url: https://api.github.com/repos/directus/directus/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-07
+    url: https://api.github.com/repos/directus/directus/releases/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: repoCreated
+    value: 2012-12-12
+    url: https://api.github.com/repos/directus/directus
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 38579
+    url: https://api.github.com/repos/directus/directus
+    checkedAt: 2026-10-18
+    via: api
+  - field: contributors
+    value: 442
+    url: https://api.github.com/repos/directus/directus/contributors
+    checkedAt: 2026-10-18
+    via: api
+  - field: npmWeeklyDownloads
+    value:
+      count: 12061
+      period: 2026-10-10/2026-10-16
+    url: https://api.npmjs.org/downloads/point/last-week/directus
+    checkedAt: 2026-10-18
+    via: api
+  - field: npmName
+    value: directus
+    url: https://registry.npmjs.org/directus/latest
+    checkedAt: 2026-10-18
+    via: api
+  - field: totalDownloads
+    value: 45 million+ (self-reported)
+    url: https://directus.com/
+    checkedAt: 2026-10-18
+    via: page
+  - field: pluginDirectory
+    value: Marketplace inside the Data Studio project settings
+    url: https://directus.com/docs/guides/extensions/marketplace
+    checkedAt: 2026-10-18
+    via: page
+    quote: install extensions in their projects directly the Data Studio
+  - field: forum
+    value: https://community.directus.com
+    url: https://directus.com/docs/community/overview/welcome
+    checkedAt: 2026-10-18
+    via: page
+  - field: chat
+    value: https://directus.chat/
+    url: https://directus.com/docs/community/overview/welcome
+    checkedAt: 2026-10-18
+    via: page
+  - field: x
+    value: https://x.com/directus
+    url: https://directus.com/docs/community/overview/welcome
+    checkedAt: 2026-10-18
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/directus.io
+    url: https://directus.com/docs/community/overview/welcome
+    checkedAt: 2026-10-18
+    via: page
+  - field: runsAs
+    value: [always-on]
+    url: https://directus.com/docs/self-hosting/overview
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Compute (running the Directus instance)"
+notFound:
+  - firstRelease
+  - parent
+  - forkOf
+  - successorOf
+  - wikidata
+  - templating
+  - multisite
+  - buildCommand
+  - outputDir
+  - deployTargets
+  - supportedVersions
+  - eolPolicy
+  - releaseCadence
+  - endoflifeId
+  - usageShare
+  - pluginCount
+  - starters
+  - discord
+  - subreddit
+  - mastodon
+  - newsletter
+  - packagistName
+unreadable:
+  - https://directus.com/docs/releases/overview (404)
+notes: "Directus ships under its own Monospace Sustainable Core License 1.0 (abbreviated MSCL-1.0-GPL in the file), which permits any use except a Competing Use and forbids circumventing license-key-protected functionality; the pricing page grants full access free to organizations under $5M revenue and 50 employees, and the Core plan caps seats, collections and flows, so the self-hosted edition is gated by license key. Docker is the documented install method; the deploy page shows no npm install path. The org location on GitHub (Brooklyn, NY) is the only HQ source; the about page calls the company fully remote. directus.chat is unlabeled on the community page, recorded under the coined field chat. The homepage lists framework integrations (Next.js, Nuxt, React, Django, Laravel, Flutter) and a native MCP server. Coined here: dockerPulls (Docker Hub pull_count), hardwareMin, hostedOffering, repoCreated, totalDownloads (self-reported download total), chat (community chat URL of unstated platform). The repository dates from 2012, well before the current codebase; no firstRelease year is stated on the project pages."

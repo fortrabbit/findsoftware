@@ -1,0 +1,262 @@
+id: wagtail
+name: Wagtail
+status: accepted
+checkedAt: 2026-10-18
+description: Content management system built on Django, with a page tree editor, StreamField content blocks and a content API.
+facts:
+  - field: name
+    value: Wagtail
+    url: https://docs.wagtail.org/en/stable/getting_started/index.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "an open-source content management system (CMS) that’s built on Django, a popular Python web framework."
+  - field: homepage
+    value: https://wagtail.org/
+    url: https://pypi.org/pypi/wagtail/json
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/wagtail/wagtail
+    url: https://pypi.org/pypi/wagtail/json
+    checkedAt: 2026-10-18
+    via: api
+  - field: docs
+    value: https://docs.wagtail.org
+    url: https://pypi.org/pypi/wagtail/json
+    checkedAt: 2026-10-18
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://pypi.org/pypi/wagtail/json
+    checkedAt: 2026-10-18
+    via: api
+  - field: maintainer
+    value: Torchbox
+    url: https://wagtail.org/about-wagtail/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Wagtail is an open source project by Torchbox."
+  - field: maintainerType
+    value: company
+    url: https://wagtail.org/about-wagtail/
+    checkedAt: 2026-10-18
+    via: page
+  - field: hqCountry
+    value: GB
+    url: https://torchbox.com/contact/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Registered in England & Wales."
+  - field: wikidata
+    value: Q25206006
+    url: https://www.wikidata.org/wiki/Q25206006
+    checkedAt: 2026-10-18
+    via: api
+  - field: categories
+    value: [cms, headless-cms]
+    url: https://docs.wagtail.org/en/stable/advanced_topics/headless.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Wagtail has good support for headless sites, but there are some limitations"
+  - field: basedOn
+    value: [Django]
+    url: https://docs.wagtail.org/en/stable/getting_started/index.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: frameworkMin
+    value: {django: "5.2"}
+    url: https://endoflife.date/api/wagtail.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: language
+    value: Python
+    url: https://github.com/wagtail/wagtail
+    checkedAt: 2026-10-18
+    via: api
+  - field: runtime
+    value: python
+    url: https://docs.wagtail.org/en/stable/getting_started/quick_install.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: "3.10"
+    url: https://pypi.org/pypi/wagtail/json
+    checkedAt: 2026-10-18
+    via: api
+  - field: contentStore
+    value: database
+    url: https://docs.wagtail.org/en/stable/deployment/index.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Usually, you will need to configure a WSGI server, file storage for media hosting, and a database."
+  - field: adminUi
+    value: yes, built-in editor admin
+    url: https://docs.wagtail.org/en/stable/reference/jinja2.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: headlessApi
+    value: [rest]
+    url: https://docs.wagtail.org/en/stable/advanced_topics/headless.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "The REST API is a native feature of Wagtail with some functionality already built in."
+  - field: headlessApi
+    value: [rest]
+    url: https://docs.wagtail.org/en/stable/advanced_topics/api/index.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "two coexisting versions for programmatic access to your content."
+  - field: templating
+    value: [django templates, jinja2]
+    url: https://docs.wagtail.org/en/stable/reference/jinja2.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Wagtail supports Jinja2 templating for all front end features."
+  - field: i18n
+    value: yes, opt-in multi-language authoring
+    url: https://docs.wagtail.org/en/stable/advanced_topics/i18n.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "This document describes how to configure Wagtail for authoring content in multiple languages."
+  - field: multisite
+    value: yes
+    url: https://docs.wagtail.org/en/stable/reference/contrib/settings.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "This is only relevant for multi-site instances of Wagtail."
+  - field: renderingModes
+    value: [server]
+    url: https://docs.wagtail.org/en/stable/deployment/index.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: installMethod
+    value: [pip install wagtail, wagtail start]
+    url: https://docs.wagtail.org/en/stable/getting_started/quick_install.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: deployTargets
+    value: [CodeRed Cloud, Divio, Fly.io, AWS, Azure, DigitalOcean, Google Cloud, Linode]
+    url: https://docs.wagtail.org/en/stable/deployment/index.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value:
+      - "a WSGI server"
+      - "file storage for media uploads (local MEDIA_ROOT or cloud storage)"
+      - "static files served by a web server in production"
+      - "a database"
+    url: https://docs.wagtail.org/en/stable/deployment/under_the_hood.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "static files are only served by the Django application server during development."
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/wagtail/wagtail
+    checkedAt: 2026-10-18
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://wagtail.org/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Wagtail has no licensing fees."
+  - field: paidSupport
+    value: Torchbox support services
+    url: https://wagtail.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: latestVersion
+    value: "8.0"
+    url: https://github.com/wagtail/wagtail/releases
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-25
+    url: https://github.com/wagtail/wagtail/releases
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - {cycle: "8.0", django: "5.2, 6.0, 6.1", python: "3.10 - 3.14", released: 2026-08-25, bugFixesUntil: 2026-11-03, securityUntil: 2027-02-02}
+      - {cycle: "7.4", lts: true, django: "5.2, 6.0", python: "3.10 - 3.14", released: 2026-05-04, bugFixesUntil: 2027-11-02, securityUntil: 2027-11-02}
+      - {cycle: "7.0", lts: true, django: "4.2, 5.1, 5.2", python: "3.9 - 3.13", released: 2025-05-06, bugFixesUntil: 2026-11-02, securityUntil: 2026-11-02}
+    url: https://endoflife.date/api/wagtail.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: releaseCadence
+    value: feature release every three months, patch releases as needed
+    url: https://docs.wagtail.org/en/stable/releases/upgrading.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "New feature releases of Wagtail are released every three months."
+  - field: endoflifeId
+    value: wagtail
+    url: https://endoflife.date/api/wagtail.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 20574
+    url: https://github.com/wagtail/wagtail
+    checkedAt: 2026-10-18
+    via: api
+  - field: contributors
+    value: 1123
+    url: https://api.github.com/repos/wagtail/wagtail/contributors?anon=true
+    checkedAt: 2026-10-18
+    via: api
+  - field: pypiName
+    value: wagtail
+    url: https://pypi.org/project/wagtail/
+    checkedAt: 2026-10-18
+    via: api
+  - field: pypiDownloads
+    value: {lastWeek: 164027, lastMonth: 586863}
+    url: https://pypistats.org/api/packages/wagtail/recent
+    checkedAt: 2026-10-18
+    via: api
+  - field: pluginDirectory
+    value: https://wagtail.org/packages/
+    url: https://wagtail.org/packages/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Wagtail third-party packages"
+  - field: slack
+    value: https://wagtail.org/slack
+    url: https://wagtail.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: mastodon
+    value: https://fosstodon.org/@wagtail
+    url: https://wagtail.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/wagtail.org
+    url: https://wagtail.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: newsletter
+    value: https://wagtail.org/newsletter/
+    url: https://wagtail.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: youtube
+    value: https://www.youtube.com/channel/UCXsuEmvisPzuJPaIdpVM0yg
+    url: https://wagtail.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: funding
+    value: https://wagtail.org/sponsor/
+    url: https://pypi.org/pypi/wagtail/json
+    checkedAt: 2026-10-18
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.wagtail.org/en/stable/deployment/index.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Usually, you will need to configure a WSGI server, file storage for media hosting, and a database."
+notFound: [parent, forkOf, successorOf, databases, buildCommand, outputDir, docker, paidEditions, pricingPage, eolPolicy, usageShare, pluginCount, starters, forum, discord, x, subreddit]
+unreadable: [https://wagtail.org/community/ (404), https://docs.wagtail.org/en/stable/advanced_topics/api/v2/index.html (404)]
+notes: >
+  The API overview page describes two coexisting APIs: v2, read-only and built on Django REST Framework, and v3, built on Django Ninja with authenticated create and edit; GraphQL is not native and needs a third-party package such as wagtail-grapple. The deployment pages name no database engine, so `databases` stays unknown rather than inherited from Django. firstRelease is the year of the first PyPI upload (0.1, February 2014). frameworkMin is the lowest Django version endoflife.date lists for the latest cycle. The upgrading page labels LTS releases but states no policy; support dates come from endoflife.date only. Paid support is sold by Torchbox, no prices shown. Reused coined fields: `frameworkMin`, `paidSupport`, `slack`, `youtube`, `funding`, `pypiName`.

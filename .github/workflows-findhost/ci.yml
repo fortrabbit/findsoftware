@@ -1,0 +1,76 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # The sitemap the server has now, before this push's deploy replaces it:
+      # the IndexNow step below submits the pages whose date the build moved.
+      - if: github.event_name == 'push'
+        run: curl -fsS https://www.findhost.app/sitemap.xml -o "$RUNNER_TEMP/live-sitemap.xml" || true
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: latest
+      - uses: actions/setup-node@v4
+        with:
+          # 24 rather than 22: the unit tests are TypeScript run straight through
+          # `node --test`, which needs the type stripping that ships unflagged here.
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      # The share cards from the last run, each under a key of what it draws
+      # (src/lib/og.ts). Any earlier run's set will do: a card whose words or
+      # drawing moved has a key nothing restored, and is drawn again.
+      - uses: actions/cache@v4
+        with:
+          path: node_modules/.cache/findhost-og
+          key: og-cards-${{ github.sha }}
+          restore-keys: og-cards-
+      - run: pnpm run format
+      - run: pnpm run check
+      - run: pnpm run test
+      - run: pnpm run build
+      # Guards zod cannot express: unique ids, taxonomy coverage, and the
+      # assertion that no rank, boost or weight field has appeared anywhere.
+      - run: pnpm run validate
+      # Every link we publish at ourselves, checked against what we published.
+      # Renaming a route or a facet value is the edit that leaves one behind, and
+      # nothing else in this file would notice.
+      - run: pnpm run linkcheck:internal
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm run test:e2e
+      # A push to main is a deploy. Tell IndexNow which pages it changed, so
+      # Bing and the engines behind it fetch them now rather than on the next
+      # crawl. The deploy runs beside this job, not after it, and a ping that
+      # arrives first is fine: the fetch comes minutes later. Reported, never
+      # blocking — a third party's outage is not a reason to fail the run.
+      - if: github.event_name == 'push'
+        continue-on-error: true
+        env:
+          SITE_URL: https://www.findhost.app
+        run: node scripts/indexnow.ts "$RUNNER_TEMP/live-sitemap.xml"
+
+  # Third-party availability is not something a content pull request should be
+  # blocked on, so this reports and never fails the run. It exists because a
+  # dataset whose whole claim is "we read this page on this date" has to notice
+  # when the page stops existing.
+  links:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: latest
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run linkcheck

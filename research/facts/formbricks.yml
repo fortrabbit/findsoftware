@@ -1,0 +1,138 @@
+id: formbricks
+name: Formbricks
+status: accepted
+checkedAt: 2026-10-19
+description: "Open-source experience management and survey platform, self-hosted or offered as a hosted cloud service."
+facts:
+  - field: homepage
+    value: "https://formbricks.com"
+    url: https://formbricks.com
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: "https://github.com/formbricks/formbricks"
+    url: https://github.com/formbricks/formbricks
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: "https://formbricks.com/docs"
+    url: https://formbricks.com/docs
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: "Formbricks GmbH"
+    url: https://formbricks.com/about
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Formbricks is a GmbH, a limited company under German law."
+  - field: maintainerType
+    value: company
+    url: https://formbricks.com/about
+    checkedAt: 2026-10-19
+    via: page
+  - field: hqCountry
+    value: DE
+    url: https://formbricks.com/about
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Formbricks GmbH Kuhnkestr. 6 24118 Kiel, Germany"
+  - field: language
+    value: TypeScript
+    url: https://github.com/formbricks/formbricks
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://github.com/formbricks/formbricks/blob/6.0.2/package.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtimeMin
+    value: "Node.js 24"
+    url: https://github.com/formbricks/formbricks/blob/6.0.2/package.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: databases
+    value: [postgresql, redis, valkey]
+    url: https://formbricks.com/docs/self-hosting/overview
+    checkedAt: 2026-10-19
+    via: page
+    quote: "the app, Formbricks Hub (API and worker), Cube, PostgreSQL, Redis/Valkey, SpiceDB and its operator"
+  - field: installMethod
+    value: [docker-compose, kubernetes-helm]
+    url: https://formbricks.com/docs/self-hosting/overview
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Deploy the full stack with the official Helm chart."
+  - field: categories
+    value: [surveys, forms, experience-management]
+    url: https://formbricks.com
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/formbricks/formbricks
+    checkedAt: 2026-10-19
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/formbricks/formbricks
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-core
+    url: https://formbricks.com/docs/self-hosting/license
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Enterprise Features"
+  - field: paidEditions
+    value: ["Plan labelled Most popular: $74 / Month", "Scale: $325 / Month"]
+    url: https://formbricks.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+  - field: freeTier
+    value: "Start free plan on the pricing page"
+    url: https://formbricks.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Start free"
+  - field: pricingPage
+    value: "https://formbricks.com/pricing"
+    url: https://formbricks.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+  - field: regions
+    value: ["EU (Frankfurt, cloud)"]
+    url: https://formbricks.com/pricing
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Hosted in Frankfurt"
+  - field: currentMajor
+    value: 6
+    url: https://github.com/formbricks/formbricks/releases/tag/6.0.2
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-01"
+    url: https://github.com/formbricks/formbricks/releases/tag/6.0.2
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 13123
+    url: https://github.com/formbricks/formbricks
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 321
+    url: https://github.com/formbricks/formbricks
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://formbricks.com/docs/self-hosting/setup/docker
+    checkedAt: 2026-10-19
+    via: page
+    quote: "It downloads the production Compose file and starts the baseline Formbricks stack: Formbricks Web, PostgreSQL, Redis/Valkey, Formbricks Hub, and Cube."
+notFound: [firstRelease, parent, forkOf, successorOf, alternativeTo, wikidata, eolPolicy, endoflifeId, releaseCadence, pluginDirectory, pluginCount, starters, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, npmName, packagistName, pypiDownloads, serverNeeds, processModel, renderingModes, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, importsFrom, docker]
+unreadable: []
+notes: >
+  The CSV row dates 2026-10-16, which is the 6.1.0-rc.2 pre-release; the latest stable release is 6.0.2 (2026-10-01), so latestReleaseDate follows the stable tag. The repository license field is NOASSERTION on the API, so the license entries come from the LICENSE file: AGPLv3 for the core, MIT for packages/js, packages/android, packages/ios and packages/api, and a separate license for apps/web/modules/ee. The licenseModel value open-core follows from that EE carve-out, and the quote is the docs heading that names the Enterprise Features page. The pricing page prints plan names only for two tiers, so the $74 tier is labelled by its badge. The kubernetes install is the official Helm chart named in the docs.

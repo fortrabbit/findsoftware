@@ -1,0 +1,110 @@
+id: mailpit
+name: Mailpit
+status: accepted
+checkedAt: 2026-10-19
+description: "Email testing tool and SMTP server for developers, with a web interface and an API."
+facts:
+  - field: homepage
+    value: "https://mailpit.axllent.org"
+    url: https://mailpit.axllent.org
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: "https://github.com/axllent/mailpit"
+    url: https://github.com/axllent/mailpit
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: "https://mailpit.axllent.org/docs/"
+    url: https://mailpit.axllent.org/docs/
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: "axllent"
+    url: https://github.com/axllent/mailpit
+    checkedAt: 2026-10-19
+    via: api
+  - field: maintainerType
+    value: individual
+    url: https://github.com/axllent/mailpit
+    checkedAt: 2026-10-19
+    via: api
+  - field: language
+    value: Go
+    url: https://github.com/axllent/mailpit
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [go-binary]
+    url: https://mailpit.axllent.org/docs/install/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Mailpit runs as a single binary and can be installed in different ways"
+  - field: buildRequirements
+    value: "Go 1.24 or newer and npm (source builds)"
+    url: https://mailpit.axllent.org/docs/install/source/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Go (>= version 1.24) and npm are required to compile Mailpit."
+  - field: runtimeMin
+    value: "Go 1.26.0 (go.mod at v1.31.6)"
+    url: https://github.com/axllent/mailpit/blob/v1.31.6/go.mod
+    checkedAt: 2026-10-19
+    via: api
+  - field: installMethod
+    value: [binary-download, homebrew, aur, freebsd-pkg, docker, source-build]
+    url: https://mailpit.axllent.org/docs/install/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Install via package managers Mac: brew install mailpit"
+  - field: docker
+    value: "axllent/mailpit (mirror on ghcr.io)"
+    url: https://mailpit.axllent.org/docs/install/docker/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "For convenience, a mirror copy of Docker images can also be found on ghcr.io."
+  - field: categories
+    value: [email-testing, smtp-server, developer-tool]
+    url: https://mailpit.axllent.org
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: MIT
+    url: https://github.com/axllent/mailpit
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/axllent/mailpit
+    checkedAt: 2026-10-19
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/axllent/mailpit/releases/tag/v1.31.6
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-15"
+    url: https://github.com/axllent/mailpit/releases/tag/v1.31.6
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 10690
+    url: https://github.com/axllent/mailpit
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 53
+    url: https://github.com/axllent/mailpit
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [local]
+    url: https://mailpit.axllent.org/docs/install/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Mailpit runs as a single binary and can be installed in different ways"
+notFound: [firstRelease, parent, forkOf, successorOf, alternativeTo, wikidata, hqCountry, paidEditions, freeTier, pricingPage, eolPolicy, endoflifeId, releaseCadence, regions, pluginDirectory, pluginCount, starters, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, npmName, packagistName, pypiDownloads, serverNeeds, processModel, renderingModes, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, databases, importsFrom]
+unreadable: [mailpit.axllent.org/docs/install/binaries/ (404), mailpit.axllent.org/docs/install/homebrew/ (404)]
+notes: >
+  The CSV row dates the latest release v1.31.6 (2026-10-15), which matches the GitHub release. The source build docs require Go 1.24 or newer, while go.mod at tag v1.31.6 declares go 1.26.0; both statements are recorded as they stand, with runtimeMin following go.mod and buildRequirements following the docs. The docs page shows a "Supported by Mailtrap" banner, which is recorded here as a fact about the project's support, not as a field. The buildRequirements and docker fields are coined kinds.

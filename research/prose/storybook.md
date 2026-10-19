@@ -1,0 +1,1 @@
+Storybook is a frontend workshop where UI components and pages are built and tested in isolation from the application they belong to, with documentation kept alongside. The [install guide](https://storybook.js.org/docs/get-started/install) covers adding it to a project.

@@ -1,0 +1,89 @@
+id: pagefind
+name: Pagefind
+status: accepted
+checkedAt: 2026-10-19
+description: Static search library that builds a search index from built HTML at build time and serves search from static files.
+facts:
+  - field: homepage
+    value: https://pagefind.app
+    url: https://pagefind.app/
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: https://github.com/Pagefind/pagefind
+    url: https://github.com/Pagefind/pagefind
+    checkedAt: 2026-10-19
+    via: api
+  - field: firstRelease
+    value: 2022
+    url: https://registry.npmjs.org/pagefind
+    checkedAt: 2026-10-19
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/Pagefind/pagefind
+    checkedAt: 2026-10-19
+    via: api
+  - field: language
+    value: Rust
+    url: https://github.com/Pagefind/pagefind
+    checkedAt: 2026-10-19
+    via: api
+  - field: categories
+    value: [search]
+    url: https://pagefind.app/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Pagefind is a fully static search library that aims to perform well on large sites"
+  - field: runtime
+    value: [rust binary, node (npm wrapper), python (pypi wrapper)]
+    url: https://pagefind.app/docs/installation/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Pagefind is a static binary with no dynamic dependencies"
+  - field: installMethod
+    value: [npm, pypi, precompiled binary download, cargo install]
+    url: https://pagefind.app/docs/installation/
+    checkedAt: 2026-10-19
+    via: page
+  - field: processModel
+    value: build-time only
+    url: https://pagefind.app/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "After indexing, Pagefind adds a static search bundle to your built files"
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/pagefind/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-04-12
+    url: https://api.github.com/repos/Pagefind/pagefind/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 5519
+    url: https://github.com/Pagefind/pagefind
+    checkedAt: 2026-10-19
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1385578
+    url: https://api.npmjs.org/downloads/point/last-week/pagefind
+    checkedAt: 2026-10-19
+    via: api
+  - field: npmName
+    value: pagefind
+    url: https://registry.npmjs.org/pagefind
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [static, browser]
+    url: https://pagefind.app/docs/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Pagefind runs after your static generator, and outputs a static search bundle to your generated site."
+notFound: [maintainer, maintainerType, hqCountry, endoflifeId, pluginDirectory, pluginCount, starters, forum, discord, mastodon, bluesky, x, newsletter, paidEditions, licenseModel, contentStore, adminUi, headlessApi, i18n, docker, deployTargets, pypiDownloads, usageShare, packagistName]
+unreadable: []
+notes: >
+  The npm wrapper and the PyPI wrapper ship the same Rust binary; both are listed under runtime. The endoflife.date API has no pagefind product (404 on /api/pagefind.json), so no endoflifeId. The homepage names no maintainer; the repository moved from CloudCannon to the Pagefind organisation per the candidates row, which is not a fact from the project's own pages and is not recorded here.

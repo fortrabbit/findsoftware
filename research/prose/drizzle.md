@@ -1,0 +1,1 @@
+Drizzle ORM defines database tables in TypeScript and builds typed queries from those definitions. Drizzle Kit is the companion migration tool, and the [get-started guide](https://orm.drizzle.team/docs/get-started) covers setting up the ORM.

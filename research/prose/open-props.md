@@ -1,0 +1,1 @@
+Open Props is a collection of design tokens written as CSS custom properties. The homepage states that no installation is required: the tokens load from a CDN, and an npm package is the other route. Adam Argyle, an individual, maintains the project.

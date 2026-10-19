@@ -1,0 +1,1 @@
+Prettier is an opinionated formatter that rewrites source files into one consistent style, for JavaScript and many other languages. The [install page](https://prettier.io/docs/install) describes how to set it up.

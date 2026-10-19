@@ -1,0 +1,210 @@
+id: phoenix
+name: Phoenix
+status: accepted
+checkedAt: 2026-10-18
+description: Elixir web framework for server-rendered and real-time web applications, with LiveView for interactive pages.
+facts:
+  - field: name
+    value: Phoenix
+    url: https://phoenix.hexdocs.pm/overview.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Phoenix is a web development framework written in Elixir"
+  - field: homepage
+    value: https://www.phoenixframework.org
+    url: https://github.com/phoenixframework/phoenix
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/phoenixframework/phoenix
+    url: https://hex.pm/api/packages/phoenix
+    checkedAt: 2026-10-18
+    via: api
+  - field: docs
+    value: https://phoenix.hexdocs.pm
+    url: https://github.com/phoenixframework/phoenix
+    checkedAt: 2026-10-18
+    via: page
+  - field: firstRelease
+    value: 2014
+    url: https://hex.pm/api/packages/phoenix
+    checkedAt: 2026-10-18
+    via: api
+  - field: wikidata
+    value: Q55629889
+    url: https://www.wikidata.org/wiki/Q55629889
+    checkedAt: 2026-10-18
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://phoenix.hexdocs.pm/overview.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: language
+    value: Elixir
+    url: https://github.com/phoenixframework/phoenix
+    checkedAt: 2026-10-18
+    via: api
+  - field: runtime
+    value: beam (erlang/otp)
+    url: https://phoenix.hexdocs.pm/installation.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: {elixir: "1.17", erlang: "25"}
+    url: https://phoenix.hexdocs.pm/installation.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Elixir 1.17 or later"
+  - field: runtimeMin
+    value: {elixir: "~> 1.15"}
+    url: https://hex.pm/api/packages/phoenix/releases/1.8.15
+    checkedAt: 2026-10-18
+    via: api
+  - field: contentStore
+    value: database
+    url: https://phoenix.hexdocs.pm/installation.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: databases
+    value: [postgres, mysql, sqlserver, sqlite]
+    url: https://phoenix.hexdocs.pm/installation.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Phoenix recommends PostgreSQL, but you can pick others or not use a database at all."
+  - field: templating
+    value: [heex]
+    url: https://phoenix.hexdocs.pm/components.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Function components and templates files are powered by the HEEx template language"
+  - field: renderingModes
+    value: [server]
+    url: https://www.phoenixframework.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: buildCommand
+    value: MIX_ENV=prod mix assets.deploy
+    url: https://phoenix.hexdocs.pm/deployment.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: buildCommand
+    value: MIX_ENV=prod mix release
+    url: https://phoenix.hexdocs.pm/releases.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Now you can assemble a new release with MIX_ENV=prod mix release"
+  - field: outputDir
+    value: _build/prod/rel/<app>
+    url: https://phoenix.hexdocs.pm/releases.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: installMethod
+    value: [mix archive.install hex phx_new, mix phx.new]
+    url: https://phoenix.hexdocs.pm/installation.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: deployTargets
+    value: [Fly.io, Gigalixir, Heroku]
+    url: https://phoenix.hexdocs.pm/deployment.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: serverNeeds
+    value:
+      - "long-running BEAM process (mix phx.server or a release)"
+      - "environment variables SECRET_KEY_BASE and DATABASE_URL"
+      - "inotify-tools on Linux for live reload in development"
+    url: https://phoenix.hexdocs.pm/deployment.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: docker
+    value: generated Dockerfile via mix phx.gen.release --docker
+    url: https://phoenix.hexdocs.pm/releases.html
+    checkedAt: 2026-10-18
+    via: page
+    quote: "If you call mix phx.gen.release --docker, you'll see a new file"
+  - field: license
+    value: MIT
+    url: https://github.com/phoenixframework/phoenix
+    checkedAt: 2026-10-18
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/phoenixframework/phoenix
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestVersion
+    value: 1.8.15
+    url: https://github.com/phoenixframework/phoenix/releases
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-25
+    url: https://github.com/phoenixframework/phoenix/releases
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - {cycle: "1.8", support: bug fixes and security patches}
+      - {cycle: "1.7", support: security patches only}
+      - {cycle: "1.6", support: security patches only}
+      - {cycle: "1.5", support: security patches only}
+    url: https://github.com/phoenixframework/phoenix/blob/main/SECURITY.md
+    checkedAt: 2026-10-18
+    via: page
+  - field: eolPolicy
+    value: https://github.com/phoenixframework/phoenix/blob/main/SECURITY.md
+    url: https://github.com/phoenixframework/phoenix/blob/main/SECURITY.md
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Phoenix applies bug fixes only to the latest minor branch. Security patches are available for the last 4 minor branches"
+  - field: githubStars
+    value: 23189
+    url: https://github.com/phoenixframework/phoenix
+    checkedAt: 2026-10-18
+    via: api
+  - field: contributors
+    value: 1488
+    url: https://api.github.com/repos/phoenixframework/phoenix/contributors?anon=true
+    checkedAt: 2026-10-18
+    via: api
+  - field: hexName
+    value: phoenix
+    url: https://hex.pm/packages/phoenix
+    checkedAt: 2026-10-18
+    via: api
+  - field: hexDownloads
+    value: {total: 157768246, recent: 5566399, lastWeek: 595975}
+    url: https://hex.pm/api/packages/phoenix
+    checkedAt: 2026-10-18
+    via: api
+  - field: forum
+    value: https://elixirforum.com/c/phoenix-forum
+    url: https://phoenix.hexdocs.pm/community.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: discord
+    value: https://discord.gg/elixir
+    url: https://phoenix.hexdocs.pm/community.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: chat
+    value: https://web.libera.chat/?channels=#elixir
+    url: https://phoenix.hexdocs.pm/community.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: x
+    value: https://twitter.com/elixirphoenix
+    url: https://phoenix.hexdocs.pm/community.html
+    checkedAt: 2026-10-18
+    via: page
+  - field: runsAs
+    value: [always-on]
+    url: https://hexdocs.pm/phoenix/deployment.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Starting your server in production"
+notFound: [maintainer, maintainerType, hqCountry, parent, forkOf, successorOf, basedOn, adminUi, headlessApi, i18n, multisite, paidEditions, pricingPage, releaseCadence, endoflifeId, usageShare, pluginDirectory, pluginCount, starters, mastodon, bluesky, subreddit, newsletter]
+unreadable: [https://phoenix.hexdocs.pm/endpoint.html (404)]
+notes: >
+  No page read names a maintainer or company; the homepage lists companies using Phoenix, which are users, not sponsors. The two runtimeMin entries differ: the installation guide asks for Elixir 1.17 and Erlang 25, while the 1.8.15 package metadata declares elixir ~> 1.15; both are recorded. firstRelease is the year of the first Hex publish (April 2014). The generator adds Tailwind and esbuild by default; LiveView ships as a separate package (phoenix_live_view) and is not given its own record here. hexDownloads `recent` is the API's own "recent" figure, period not stated in the response. Docs moved from hexdocs.pm/phoenix to phoenix.hexdocs.pm. Coined fields: `hexName`, `hexDownloads` (Hex counterparts of packagistName and packagistDownloads); reused `chat` for the IRC channel.

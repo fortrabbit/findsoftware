@@ -1,0 +1,115 @@
+id: elasticsearch
+name: Elasticsearch
+status: accepted
+checkedAt: 2026-10-19
+description: Distributed search and analytics engine that stores and queries structured, unstructured and vector data over an HTTP API.
+facts:
+  - field: homepage
+    value: https://www.elastic.co/elasticsearch
+    url: https://www.elastic.co/elasticsearch
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: https://github.com/elastic/elasticsearch
+    url: https://github.com/elastic/elasticsearch
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch
+    url: https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: Elastic
+    url: https://www.elastic.co/elasticsearch
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainerType
+    value: company
+    url: https://www.elastic.co/elasticsearch
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: AGPL-3.0-only OR SSPL-1.0 OR Elastic-2.0 (triple license, default for the repository)
+    url: https://raw.githubusercontent.com/elastic/elasticsearch/main/LICENSE.txt
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Source code in this repository is covered by (i) a triple license under the"
+  - field: license
+    value: Elastic License 2.0 (x-pack folder only)
+    url: https://raw.githubusercontent.com/elastic/elasticsearch/main/LICENSE.txt
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Code that is licensed solely under the \"Elastic License 2.0\" is found only in the x-pack folder."
+  - field: licenseModel
+    value: source-available
+    url: https://raw.githubusercontent.com/elastic/elasticsearch/main/LICENSE.txt
+    checkedAt: 2026-10-19
+    via: page
+  - field: language
+    value: Java
+    url: https://github.com/elastic/elasticsearch
+    checkedAt: 2026-10-19
+    via: api
+  - field: categories
+    value: [search-server, analytics-engine]
+    url: https://www.elastic.co/elasticsearch
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Elasticsearch is an open source, distributed search and analytics engine built for speed, scale, and AI applications."
+  - field: runtime
+    value: [jvm (bundled OpenJDK)]
+    url: https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Elasticsearch is built using Java, and includes a bundled version of OpenJDK within each distribution."
+  - field: installMethod
+    value: [tar.gz archive, deb package, rpm package, docker image, docker compose]
+    url: https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch
+    checkedAt: 2026-10-19
+    via: page
+  - field: docker
+    value: Elastic Docker Registry image
+    url: https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch
+    checkedAt: 2026-10-19
+    via: page
+  - field: hostedService
+    value: Elastic Cloud (serverless and hosted)
+    url: https://www.elastic.co/elasticsearch
+    checkedAt: 2026-10-19
+    via: page
+  - field: headlessApi
+    value: rest
+    url: https://www.elastic.co/elasticsearch
+    checkedAt: 2026-10-19
+    via: page
+  - field: currentMajor
+    value: 9
+    url: https://endoflife.date/api/elasticsearch.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-06
+    url: https://api.github.com/repos/elastic/elasticsearch/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: endoflifeId
+    value: elasticsearch
+    url: https://endoflife.date/api/elasticsearch.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 78317
+    url: https://github.com/elastic/elasticsearch
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch
+    checkedAt: 2026-10-19
+    via: page
+    quote: "In production, we recommend you run Elasticsearch on a dedicated host or as a primary service."
+notFound: [hqCountry, parent, firstRelease, pluginDirectory, pluginCount, starters, forum, discord, subreddit, mastodon, bluesky, x, newsletter, paidEditions, freeTier, pricingPage, adminUi, deployTargets, npmName, packagistName, pypiDownloads, npmWeeklyDownloads, usageShare, databases, contentStore, basedOn, multisite, sso, i18n, userRoles]
+unreadable: []
+notes: >
+  The license is stated two ways. The LICENSE.txt file names a triple license (AGPLv3 only, SSPL v1, Elastic License 2.0) as the default for the repository, and Elastic License 2.0 alone for code in the x-pack folder. GitHub reports the license as Other (NOASSERTION), so the API value is not recorded. The homepage calls it open source; the license file's triple license is recorded as the statement of terms. The endoflife.date entry lists 9.5 as the current cycle with 9.5.5 as the latest release; the latest release date is from the GitHub release v9.5.5. The hostedService field is coined here for Elastic Cloud beside the self-hosted server.

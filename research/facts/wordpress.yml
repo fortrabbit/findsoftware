@@ -1,0 +1,245 @@
+id: wordpress
+name: WordPress
+status: accepted
+checkedAt: 2026-10-18
+description: Open-source PHP content management system for websites and blogs, with a block editor, themes and plugins.
+facts:
+  - field: name
+    value: WordPress
+    url: https://wordpress.org/about/
+    checkedAt: 2026-10-18
+    via: page
+  - field: homepage
+    value: https://wordpress.org
+    url: https://api.github.com/repos/WordPress/WordPress
+    checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/WordPress/wordpress-develop
+    url: https://api.github.com/repos/WordPress/wordpress-develop
+    checkedAt: 2026-10-18
+    via: api
+    quote: "This repository is just a mirror of the WordPress subversion repository."
+  - field: docs
+    value: https://developer.wordpress.org/advanced-administration/
+    url: https://developer.wordpress.org/advanced-administration/before-install/howto-install/
+    checkedAt: 2026-10-18
+    via: page
+  - field: firstRelease
+    value: 2003
+    url: https://wordpress.org/about/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "WordPress began in 2003"
+  - field: forkOf
+    value: b2/cafelog
+    url: https://wordpress.org/about/
+    checkedAt: 2026-10-18
+    via: page
+  - field: maintainer
+    value: WordPress open source community
+    url: https://wordpress.org/about/
+    checkedAt: 2026-10-18
+    via: page
+  - field: maintainerType
+    value: community
+    url: https://wordpress.org/about/
+    checkedAt: 2026-10-18
+    via: page
+  - field: wikidata
+    value: Q13166
+    url: https://www.wikidata.org/wiki/Q13166
+    checkedAt: 2026-10-18
+    via: api
+  - field: categories
+    value: [cms, blog]
+    url: https://wordpress.org/about/
+    checkedAt: 2026-10-18
+    via: page
+  - field: language
+    value: PHP
+    url: https://wordpress.org/about/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "built on PHP and MariaDB"
+  - field: runtime
+    value: php
+    url: https://wordpress.org/about/requirements/
+    checkedAt: 2026-10-18
+    via: page
+  - field: runtimeMin
+    value: "7.4"
+    url: https://api.wordpress.org/core/version-check/1.7/
+    checkedAt: 2026-10-18
+    via: api
+    quote: "php_version: 7.4 (7.1.3)"
+  - field: runtimeRecommended
+    value: "8.3"
+    url: https://wordpress.org/about/requirements/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "PHP version 8.3 or greater."
+  - field: contentStore
+    value: database
+    url: https://wordpress.org/about/requirements/
+    checkedAt: 2026-10-18
+    via: page
+  - field: databases
+    value: [mysql, mariadb]
+    url: https://wordpress.org/about/requirements/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "MariaDB version 10.11 or greater OR MySQL version 8.0 or greater."
+  - field: databaseMin
+    value: "MySQL 5.5.5"
+    url: https://api.wordpress.org/core/version-check/1.7/
+    checkedAt: 2026-10-18
+    via: api
+  - field: adminUi
+    value: yes, browser-based admin with block editor
+    url: https://developer.wordpress.org/rest-api/
+    checkedAt: 2026-10-18
+    via: page
+  - field: headlessApi
+    value: [rest]
+    url: https://developer.wordpress.org/rest-api/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "The WordPress REST API provides an interface for applications to interact with your WordPress site"
+  - field: templating
+    value: [php, block-templates-html]
+    url: https://developer.wordpress.org/themes/templates/introduction-to-templates/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "In modern block themes, templates are HTML files with block markup."
+  - field: multisite
+    value: yes, built in, enabled in wp-config.php
+    url: https://developer.wordpress.org/advanced-administration/multisite/create-network/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "A multisite network is a collection of sites that all share the same WordPress installation core files."
+  - field: renderingModes
+    value: [server]
+    url: https://developer.wordpress.org/themes/templates/introduction-to-templates/
+    checkedAt: 2026-10-18
+    via: page
+  - field: installMethod
+    value: [zip or tar.gz download, host one-click installers]
+    url: https://developer.wordpress.org/advanced-administration/before-install/howto-install/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "Download and unzip the WordPress package"
+  - field: serverNeeds
+    value:
+      - "HTTPS support"
+      - "Apache or Nginx recommended; any server with PHP and MySQL works"
+      - "writable install directory for wp-config.php creation, or upload it manually"
+    url: https://wordpress.org/about/requirements/
+    checkedAt: 2026-10-18
+    via: page
+  - field: license
+    value: GPL-2.0-or-later
+    url: https://wordpress.org/about/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "released under the GPL, version 2 or later"
+  - field: license
+    value: GPL-2.0
+    url: https://api.github.com/repos/WordPress/wordpress-develop
+    checkedAt: 2026-10-18
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://wordpress.org/about/
+    checkedAt: 2026-10-18
+    via: page
+  - field: latestVersion
+    value: 7.1.3
+    url: https://api.wordpress.org/core/version-check/1.7/
+    checkedAt: 2026-10-18
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-06
+    url: https://endoflife.date/api/wordpress.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: supportedVersions
+    value:
+      - cycle: "7.1"
+        php: "7.4 - 8.5"
+        support: true
+    url: https://endoflife.date/api/wordpress.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: eolPolicy
+    value: only the latest version is officially supported; the Security Team backports fixes to older branches as a courtesy
+    url: https://wordpress.org/about/security/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "While only the latest version of WordPress is officially supported"
+  - field: releaseCadence
+    value: two to three major releases per year
+    url: https://wordpress.org/documentation/article/wordpress-versions/
+    checkedAt: 2026-10-18
+    via: page
+  - field: endoflifeId
+    value: wordpress
+    url: https://endoflife.date/api/wordpress.json
+    checkedAt: 2026-10-18
+    via: api
+  - field: githubStars
+    value: 3487
+    url: https://api.github.com/repos/WordPress/wordpress-develop
+    checkedAt: 2026-10-18
+    via: api
+  - field: usageShare
+    value: "43% of all sites (project's own claim)"
+    url: https://wordpress.org/about/
+    checkedAt: 2026-10-18
+    via: page
+    quote: "the platform of choice for over 43% of all sites across the web"
+  - field: versionShare
+    value: per-version share of WordPress installs
+    url: https://api.wordpress.org/stats/wordpress/1.0/
+    checkedAt: 2026-10-18
+    via: api
+  - field: pluginDirectory
+    value: https://wordpress.org/plugins/
+    url: https://api.wordpress.org/plugins/info/1.2/?action=query_plugins&request[per_page]=1
+    checkedAt: 2026-10-18
+    via: api
+  - field: pluginCount
+    value: 72008
+    url: https://api.wordpress.org/plugins/info/1.2/?action=query_plugins&request[per_page]=1
+    checkedAt: 2026-10-18
+    via: api
+  - field: themeCount
+    value: 8772
+    url: https://api.wordpress.org/themes/info/1.2/?action=query_themes&request[per_page]=1
+    checkedAt: 2026-10-18
+    via: api
+  - field: forum
+    value: https://wordpress.org/support/forums/
+    url: https://wordpress.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: mastodon
+    value: https://mastodon.world/@WordPress
+    url: https://wordpress.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/wordpress.org
+    url: https://wordpress.org/
+    checkedAt: 2026-10-18
+    via: page
+  - field: runsAs
+    value: [per-request]
+    url: https://wordpress.org/about/requirements/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Apache or Nginx is recommended as the most robust and featureful server for running WordPress"
+notFound: [hqCountry, parent, successorOf, basedOn, i18n, buildCommand, outputDir, deployTargets, docker, paidEditions, pricingPage, contributors, packagistDownloads, packagistName, starters, discord, subreddit, x, newsletter]
+unreadable: []
+notes: >
+  Development happens in SVN; github.com/WordPress/wordpress-develop is the Git mirror of the development repository (3,487 stars) and github.com/WordPress/WordPress mirrors the built release (21,480 stars, no GitHub releases). Neither mirror's contributor list reflects authorship, so contributors is left out. WordPress is not published on Packagist by the project. endoflife.date marks every branch since 4.7 as not EOL because of security backports; only 7.1 is in active support. runtimeMin comes from the version-check API (minimum to run), runtimeRecommended from the requirements page; databaseMin likewise. Coined fields: runtimeRecommended, databaseMin, themeCount, versionShare (the stats API that returns install share per version, refreshable by script). i18n was not checked on a primary page and is left out. Docker Hub's "wordpress" image is a Docker Official Image, not published by the project.

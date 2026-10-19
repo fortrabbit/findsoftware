@@ -1,0 +1,107 @@
+id: listmonk
+name: listmonk
+status: accepted
+checkedAt: 2026-10-19
+description: "Self-hosted newsletter and mailing list manager, with transactional mail, shipped as a single binary."
+facts:
+  - field: homepage
+    value: "https://listmonk.app"
+    url: https://listmonk.app
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: "https://github.com/knadh/listmonk"
+    url: https://github.com/knadh/listmonk
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: "https://listmonk.app/docs/"
+    url: https://listmonk.app/docs/
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: "Kailash Nadh"
+    url: https://listmonk.app
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Kailash Nadh"
+  - field: maintainerType
+    value: individual
+    url: https://listmonk.app
+    checkedAt: 2026-10-19
+    via: page
+  - field: language
+    value: Go
+    url: https://github.com/knadh/listmonk
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [go-binary]
+    url: https://listmonk.app/docs/installation/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "listmonk is a simple binary application that requires a Postgres database instance to run."
+  - field: databases
+    value: ["postgresql 12 or newer"]
+    url: https://listmonk.app/docs/installation/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "./listmonk --install to install the tables in the Postgres DB (⩾ 12)."
+  - field: installMethod
+    value: [binary-download, docker-compose]
+    url: https://listmonk.app/docs/installation/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "The binary can be downloaded and run manually, or it can be run as a container with Docker compose."
+  - field: categories
+    value: [newsletter, mailing-list, transactional-email]
+    url: https://listmonk.app
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/knadh/listmonk
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://listmonk.app
+    checkedAt: 2026-10-19
+    via: page
+    quote: "listmonk is free and open source software licensed under AGPLv3."
+  - field: currentMajor
+    value: 6
+    url: https://github.com/knadh/listmonk/releases/tag/v6.2.0
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: "2026-06-26"
+    url: https://github.com/knadh/listmonk/releases/tag/v6.2.0
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 23839
+    url: https://github.com/knadh/listmonk
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 287
+    url: https://github.com/knadh/listmonk
+    checkedAt: 2026-10-19
+    via: api
+  - field: docker
+    value: "listmonk/listmonk (Docker Hub)"
+    url: https://listmonk.app/docs/installation/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "listmonk/listmonk:latest"
+  - field: runsAs
+    value: [always-on]
+    url: https://listmonk.app/docs/installation/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "listmonk is a simple binary application that requires a Postgres database instance to run"
+notFound: [firstRelease, parent, forkOf, successorOf, alternativeTo, wikidata, hqCountry, paidEditions, pricingPage, freeTier, eolPolicy, endoflifeId, releaseCadence, pluginDirectory, pluginCount, starters, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, npmName, packagistName, pypiDownloads, serverNeeds, processModel, renderingModes, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, regions, importsFrom, usageShare]
+unreadable: []
+notes: >
+  The CSV row dates the latest GitHub release v6.2.0 (2026-06-26). The go.mod at tag v6.2.0 declares go 1.26.1; it is a build toolchain, not a runtime requirement, so it is not recorded as runtimeMin. The database minimum (PostgreSQL 12) is stated in the installation docs next to the --install command. The docs list a nightly channel that is not recorded. The maintainer is an individual named in the site copyright line.

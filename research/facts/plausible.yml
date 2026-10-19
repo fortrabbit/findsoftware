@@ -1,0 +1,143 @@
+id: plausible
+name: Plausible Analytics
+status: accepted
+checkedAt: 2026-10-19
+description: "Privacy-friendly web analytics, offered as a managed cloud service and as the self-hosted Plausible Community Edition."
+facts:
+  - field: homepage
+    value: "https://plausible.io"
+    url: https://plausible.io
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: "https://github.com/plausible/analytics"
+    url: https://github.com/plausible/analytics
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: "https://plausible.io/docs"
+    url: https://plausible.io/docs
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: "Plausible Analytics"
+    url: https://plausible.io/about
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Plausible Analytics is an independent, open source analytics company based in the EU."
+  - field: maintainerType
+    value: company
+    url: https://plausible.io/about
+    checkedAt: 2026-10-19
+    via: page
+  - field: language
+    value: Elixir
+    url: https://github.com/plausible/analytics
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [erlang, elixir]
+    url: https://github.com/plausible/analytics/blob/v3.2.1/.tool-versions
+    checkedAt: 2026-10-19
+    via: page
+  - field: runtimeMin
+    value: "Elixir 1.18"
+    url: https://github.com/plausible/analytics/blob/v3.2.1/mix.exs
+    checkedAt: 2026-10-19
+    via: api
+  - field: databases
+    value: [postgresql, clickhouse]
+    url: https://github.com/plausible/analytics/blob/v3.2.1/mix.exs
+    checkedAt: 2026-10-19
+    via: api
+  - field: installMethod
+    value: docker
+    url: https://github.com/plausible/community-edition
+    checkedAt: 2026-10-19
+    via: page
+  - field: categories
+    value: [web-analytics]
+    url: https://plausible.io
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/plausible/analytics
+    checkedAt: 2026-10-19
+    via: api
+  - field: license
+    value: AGPL-3.0-or-later
+    url: https://plausible.io/docs/self-hosting
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Plausible Community Edition is open source under the GNU Affero General Public License Version 3 (AGPLv3)"
+  - field: licenseModel
+    value: open-core
+    url: https://plausible.io/docs/self-hosting
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Marketing funnels, user journeys, ecommerce revenue goals, SSO and sites API are not available"
+  - field: paidEditions
+    value: ["Cloud, up to 10k monthly pageviews: $9 /month"]
+    url: https://plausible.io
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Up to 10k monthly pageviews"
+  - field: pricingPage
+    value: "https://plausible.io"
+    url: https://plausible.io
+    checkedAt: 2026-10-19
+    via: page
+  - field: regions
+    value: ["EU (cloud)"]
+    url: https://plausible.io
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Built and hosted in the EU."
+  - field: currentMajor
+    value: 3
+    url: https://github.com/plausible/analytics/releases/tag/v3.2.1
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: "2026-05-15"
+    url: https://github.com/plausible/analytics/releases/tag/v3.2.1
+    checkedAt: 2026-10-19
+    via: api
+  - field: releaseCadence
+    value: "Community Edition: long-term release published twice per year"
+    url: https://plausible.io/docs/self-hosting
+    checkedAt: 2026-10-19
+    via: page
+    quote: "It’s a long term release published twice per year"
+  - field: importsFrom
+    value: [google-analytics]
+    url: https://plausible.io/docs/google-analytics-import
+    checkedAt: 2026-10-19
+    via: page
+    quote: "historical Google Analytics stats into your Plausible dashboard"
+  - field: githubStargazers
+    value: 29546
+    url: https://github.com/plausible/analytics
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 119
+    url: https://github.com/plausible/analytics
+    checkedAt: 2026-10-19
+    via: api
+  - field: forum
+    value: "https://github.com/plausible/analytics/discussions/categories/self-hosted-support"
+    url: https://github.com/plausible/analytics
+    checkedAt: 2026-10-19
+    via: page
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/plausible/community-edition
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Start the services with Docker Compose"
+notFound: [firstRelease, parent, forkOf, successorOf, alternativeTo, wikidata, hqCountry, freeTier, eolPolicy, endoflifeId, pluginDirectory, pluginCount, starters, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, npmName, packagistName, pypiDownloads, serverNeeds, processModel, renderingModes, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore]
+unreadable: []
+notes: >
+  The CSV row dates the repository, not the software; the latest GitHub release is v3.2.1 (2026-05-15). Plausible Community Edition is AGPLv3, the deployment repo plausible/community-edition is MIT, and the cloud service is separate. The self-hosting docs describe the CE as a twice-yearly long-term release, while the cloud ships several times per week. The "docker" field is recorded as a coined kind for the official compose setup. The repository file reads (mix.exs, .tool-versions) are at tag v3.2.1. The "contributors" count is from the GitHub contributors API with anonymous contributors included.

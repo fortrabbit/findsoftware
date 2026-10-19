@@ -1,0 +1,226 @@
+---
+import ProviderList from './ProviderList.astro';
+import ListControls, { type Sort } from './ListControls.astro';
+import { facetIndex, type Facet, type ProviderRow, type RegisterList } from '../lib/facets';
+import { byDate } from '../lib/rows';
+
+interface Props {
+  providers: ProviderRow[];
+  facets: Facet[];
+  /*
+   * The facet value this page already stands for. A page that means one value
+   * gets no filters: its URL is the narrowing, so a tick that contradicted it
+   * would leave the heading, the prose and the address bar saying three
+   * different things. It gets a link into the register instead, already ticked,
+   * which is the page where combining values belongs.
+   */
+  seed?: { facet: string; value: string; label: string };
+  /*
+   * The page is its own narrowing and has already counted itself, but names no
+   * facet value — the groups beside the register. Same list, same headings, same
+   * toggle; no summary, no panel, no "every facet is also a link" fallback,
+   * because none of those is true of a page the filters do not reach.
+   */
+  bare?: boolean;
+  /*
+   * The groups that sit beside the register, split by the question that made
+   * them. The ones a status put there are records of ours we do not count, so
+   * they belong in the sentence that gives the count. The ones a category put
+   * there are other kinds of company, which is a different subject and gets a
+   * row of its own — the shape a reader already scans under the filters.
+   *
+   * They were one list, read as one sentence naming eight numbers, and parsed
+   * as none.
+   */
+  beside?: { key: string; label: string; href: string; count: number; of: 'status' | 'kind' }[];
+  /*
+   * Which order the rows are in, and so which tab is lit. Only the register
+   * offers a choice — a narrowed page is one order, the alphabet, and shows no
+   * tabs. The rows arrive alphabetical whatever the order; the dated ones are
+   * sorted here, since the grouping decides the sort.
+   */
+  sort?: Sort;
+  /*
+   * The other lists the panel can switch this one to — the kinds of company
+   * that sell no hosting, the groups that own the hosts. Each is drawn below the
+   * register in a list of its own, hidden until asked for: the find view filters
+   * by hiding what the server rendered, so switching lists is the same move as
+   * ticking a box and needs no fetch and no second row renderer.
+   *
+   * A list of its own rather than rows mixed into the register's, because the
+   * register's markup is what says how many hosts there are. A holding company
+   * sitting in it under H, hidden, would be in every count taken off the page.
+   */
+  registers?: RegisterList[];
+}
+
+const { providers, facets, seed, bare, beside = [], registers = [], sort } = Astro.props;
+
+/* The register itself heads the list, and is what this component was handed. */
+const others = registers.slice(1);
+
+/*
+ * The filter panel arrives as a slot, from the pages that filter. A list with
+ * no panel needs no fallback under it either: the fallback exists to say what
+ * the panel would have done, and a group beside the register is its own
+ * narrowing.
+ */
+const filtered = Astro.slots.has('default');
+
+/*
+ * Built here rather than in the template. Astro drops a whitespace-only text
+ * node between two expressions, so `{n} {noun}` in markup renders "150records"
+ * the moment a formatter puts them on separate lines. A string cannot be
+ * reflowed into a bug.
+ *
+ * The wording matches what find.ts writes here once a filter changes.
+ */
+const summary = `${providers.length} ${providers.length === 1 ? 'project' : 'projects'}.`;
+
+// Grouped by initial so the register can be scanned and linked to without JavaScript.
+const letterOf = (name: string) => {
+  const initial = name.replace(/^the /i, '').charAt(0).toUpperCase();
+  return /[A-Z]/.test(initial) ? initial : '#';
+};
+
+/*
+ * Same reason as the summary: the count and the label are one string rather than
+ * two expressions a formatter could put on separate lines.
+ *
+ * Case follows the shape. In the sentence the labels are prose and read lower;
+ * in the row they are nav and keep what the dictionary wrote, which is also the
+ * only way "Domains and DNS" survives being about DNS.
+ */
+const heldLinks = beside.map((group, index) => ({
+  href: group.href,
+  text: `${group.count} ${group.label.toLowerCase()}`,
+  tail: index < beside.length - 1 ? ', ' : '.',
+}));
+
+const letterGroups = [...new Set(providers.map((provider) => letterOf(provider.name)))].sort().map((letter) => ({
+  // The heading already carries a `#` as its anchor link, so the numeric group
+  // says what it holds instead of repeating the glyph.
+  label: letter === '#' ? '0–9' : letter,
+  anchor: letter === '#' ? 'other' : letter.toLowerCase(),
+  rows: providers.filter((provider) => letterOf(provider.name) === letter),
+}));
+
+/*
+ * A dated order is one list with no headings. Grouping it by month would put a
+ * date over every row, and a register nobody has re-read for a while would say
+ * so in its own subheadings; until records are re-checked on a schedule, the
+ * order is the claim and the date stays on the record page. The single section
+ * keeps the markup find.ts expects, so filtering hides rows the same way.
+ */
+const dated = sort === 'updated' || sort === 'added';
+
+/* The same shape for every list on the page: this one grouped by letter and
+   anchored, the others in the same order with no anchors of their own, because
+   two lists claiming #h is one id too many. */
+const groupsOf = (rows: ProviderRow[]) =>
+  dated
+    ? [{ label: '', anchor: 'list', rows: [...rows].sort(byDate(sort === 'updated' ? 'checkedAt' : 'addedAt')) }]
+    : [...new Set(rows.map((provider) => letterOf(provider.name)))].sort().map((letter) => ({
+        label: letter === '#' ? '0–9' : letter,
+        anchor: letter === '#' ? 'other' : letter.toLowerCase(),
+        rows: rows.filter((provider) => letterOf(provider.name) === letter),
+      }));
+
+const groups = dated ? groupsOf(providers) : letterGroups;
+---
+
+{
+  /* A seeded page has already counted itself, in a sentence that says more than this one. */
+  !seed && !bare && (
+    <div class="register-head">
+      <p class="annotation" data-find-summary>
+        <span data-find-count>{summary}</span>{' '}
+        {heldLinks.length > 0 && (
+          /* The register's own edges, so they go when another list is on show:
+             what stopped trading and what we have not finished are facts about
+             the register, not about the holding companies. */
+          <span data-find-aside>
+            {heldLinks.map((link) => (
+              <>
+                {/* Links, drawn as the sentence rather than as links: these are an
+                    aside about the register's own edges, and a row of blue in the
+                    line that gives the count read as the point of it. */}
+                <a class="quiet-link" href={link.href}>
+                  {link.text}
+                </a>
+                {link.tail}
+              </>
+            ))}
+          </span>
+        )}
+      </p>
+    </div>
+  )
+}
+
+{
+  /* The filter panel, passed in rather than owned: it is markup the register does not need to know about. */
+  filtered && <slot />
+}
+
+<ListControls sort={sort} />
+
+<div data-pagefind-ignore data-find-results>
+  {
+    groups.map((group) => (
+      <section class:list={['letter-group', { dated }]} id={group.anchor}>
+        {!dated && (
+          <h2>
+            <a class="anchor-link" href={`#${group.anchor}`} aria-label={`Link to ${group.label}`}>
+              {group.label}
+            </a>
+          </h2>
+        )}
+        <ProviderList providers={group.rows} />
+      </section>
+    ))
+  }
+</div>
+
+{
+  /*
+   * The other lists, each whole and each hidden. `hidden` rather than a class:
+   * a reader without the script is looking at the register, and a list nothing
+   * can switch to should not be on the page at all as far as the page is
+   * concerned.
+   */
+  others.map((register) => (
+    <div data-pagefind-ignore data-find-list={register.key} hidden>
+      {groupsOf(register.rows).map((group) => (
+        <section class:list={['letter-group', { dated }]}>
+          {!dated && <h2>{group.label}</h2>}
+          <ProviderList providers={group.rows} />
+        </section>
+      ))}
+    </div>
+  ))
+}
+
+{
+  filtered && (
+    <div data-find-fallback>
+      <p class="annotation">
+        Filtering needs JavaScript; the list above does not.
+        {!bare && ' Every facet value also has a page of its own, which is the same list narrowed the same way:'}
+      </p>
+
+      {/* The register's own values, and only the register's: a value page lists
+          hosts, so it is not the way into a list that holds none. */}
+      {!bare && (
+        <ul class="entry-list">
+          {facets.map((facet) => (
+            <li>
+              <a href={facetIndex(facet.id)}>{facet.label}</a>
+              <span class="entry-count">{facet.values.filter((value) => value.count > 0).length}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  )
+}

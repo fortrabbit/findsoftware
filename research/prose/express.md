@@ -1,0 +1,1 @@
+Express is a web framework for Node.js, used to build web applications and APIs. The project describes itself as minimalist and unopinionated. The copyright belongs to the OpenJS Foundation and the Express.js contributors. The [installation guide](https://expressjs.com/en/starter/installing.html) covers adding it to a project.

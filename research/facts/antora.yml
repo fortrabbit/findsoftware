@@ -1,0 +1,128 @@
+id: antora
+name: Antora
+status: accepted
+checkedAt: 2026-10-19
+description: Modular, multi-repository documentation site generator that publishes AsciiDoc content from git repositories.
+facts:
+  - field: homepage
+    value: https://antora.org
+    url: https://gitlab.com/api/v4/projects/antora%2Fantora
+    checkedAt: 2026-10-19
+    via: api
+  - field: repository
+    value: https://gitlab.com/antora/antora
+    url: https://gitlab.com/api/v4/projects/antora%2Fantora
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://docs.antora.org
+    url: https://antora.org
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: OpenDevise Inc.
+    url: https://antora.org
+    checkedAt: 2026-10-19
+    via: page
+    quote: "OpenDevise Inc. and the individual contributors to Antora"
+  - field: maintainerType
+    value: company
+    url: https://antora.org
+    checkedAt: 2026-10-19
+    via: page
+    quote: "OpenDevise Inc. and the individual contributors to Antora"
+  - field: categories
+    value: [docs-generator, ssg]
+    url: https://antora.org
+    checkedAt: 2026-10-19
+    via: page
+    quote: "The single or multi-repository documentation site generator for tech writers who writing in AsciiDoc."
+  - field: runtime
+    value: [node]
+    url: https://gitlab.com/antora/antora
+    checkedAt: 2026-10-19
+    via: page
+  - field: runtimeMin
+    value: "20.0.0"
+    url: https://registry.npmjs.org/@antora/cli/latest
+    checkedAt: 2026-10-19
+    via: api
+    quote: "engines.node: >=20.0.0"
+  - field: installMethod
+    value: npm i -g antora (meta package installing @antora/cli and @antora/site-generator)
+    url: https://docs.antora.org/antora/latest/install/install-antora/
+    checkedAt: 2026-10-19
+    via: page
+  - field: contentStore
+    value: git
+    url: https://antora.org
+    checkedAt: 2026-10-19
+    via: page
+    quote: "sourced from one or more versioned git repositories"
+  - field: license
+    value: MPL-2.0
+    url: https://registry.npmjs.org/@antora/cli/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: license
+    value: MPL-2.0
+    url: https://gitlab.com/antora/antora/-/blob/main/LICENSE
+    checkedAt: 2026-10-19
+    via: api
+    quote: "Mozilla Public License Version 2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://antora.org
+    checkedAt: 2026-10-19
+    via: page
+  - field: latestVersion
+    value: 3.2.1
+    url: https://registry.npmjs.org/@antora/cli/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-01
+    url: https://gitlab.com/api/v4/projects/antora%2Fantora/repository/tags?per_page=3&order_by=updated
+    checkedAt: 2026-10-19
+    via: api
+  - field: gitlabStars
+    value: 599
+    url: https://gitlab.com/api/v4/projects/antora%2Fantora
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 37
+    url: https://gitlab.com/api/v4/projects/antora%2Fantora/repository/contributors?per_page=100
+    checkedAt: 2026-10-19
+    via: api
+  - field: npmName
+    value: "@antora/cli"
+    url: https://registry.npmjs.org/@antora/cli/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: npmWeeklyDownloads
+    value: 24295
+    url: https://api.npmjs.org/downloads/point/last-week/@antora/cli
+    checkedAt: 2026-10-19
+    via: api
+  - field: x
+    value: https://twitter.com/antoraproject
+    url: https://antora.org
+    checkedAt: 2026-10-19
+    via: page
+  - field: forum
+    value: https://antora.zulipchat.com
+    url: https://gitlab.com/antora/antora
+    checkedAt: 2026-10-19
+    via: page
+    quote: "https://antora.zulipchat.com"
+  - field: runsAs
+    value: [static]
+    url: https://docs.antora.org/antora/latest/publish-to-github-pages/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Antora is designed to create sites that run anywhere"
+notFound: [language, templating, firstRelease, hqCountry, parent, basedOn, forkOf, successorOf, databases, adminUi, headlessApi, multisite, renderingModes, deployTargets, serverNeeds, processModel, buildCommand, outputDir, docker, paidEditions, pricingPage, freeTier, usageShare, pluginDirectory, pluginCount, starters, discord, subreddit, mastodon, bluesky, newsletter, supportedVersions, eolPolicy, endoflifeId, releaseCadence, i18n, userRoles, sso, wikidata, githubStargazers]
+unreadable: []
+notes: >
+  The homepage credits "OpenDevise Inc. and the individual contributors to Antora", which is the copyright line; the operating role of OpenDevise is not stated, so maintainer records the credit line as written. The GitLab API reports no license field, but LICENSE and @antora/cli both say MPL-2.0, so the license value comes from those two. The npm engines field says Node 20 or higher; the docs say an active LTS release, so runtimeMin is the declared engines value. The docs navigation lists "Publish to GitHub Pages" and "Publish to GitLab Pages" pages, whose contents were not fetched, so deployTargets stays unknown. The CSV row lists 599 stars on GitLab; the figure is recorded as gitlabStars, a coined field, because the GitHub field does not apply. The GitLab releases endpoint returned 403, so the release date comes from the tag list. The forum field is a Zulip chat, recorded under forum as the project's help channel; the get-help page was not fetched, and the homepage links the get-help page. The language is not stated on the pages read, so it stays unknown.

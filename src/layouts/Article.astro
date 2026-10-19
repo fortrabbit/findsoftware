@@ -1,0 +1,84 @@
+---
+import Base from './Base.astro';
+import PageFigure from '../components/PageFigure.astro';
+import { licenceUrl, publisherRef, websiteRef } from '../lib/seo';
+
+/*
+ * Every written page: the guide and About. One layout, so a page of prose looks
+ * the same wherever it sits. Records and lists are not this — they are scanned,
+ * not read.
+ */
+interface Props {
+  frontmatter: {
+    title: string;
+    description?: string;
+    lead?: string;
+    /**
+     * When the prose on this page last changed, written by hand. These are the
+     * two pages a reader checks for currency and the only ones carrying no date
+     * at all; a build date would only say when the site was rebuilt.
+     */
+    updated?: string;
+    /** When the page first went up, written by hand for the same reason. */
+    published?: string;
+    figure?: { emoji: string; color: string; textColor: string; text: string };
+  };
+}
+
+const { frontmatter } = Astro.props;
+const { figure } = frontmatter;
+
+const origin = Astro.site?.origin ?? '';
+
+/*
+ * YAML reads an unquoted date as a timestamp, which reaches the layout as a Date
+ * or as its ISO string. The schema wants the day either way.
+ */
+const day = (value?: string | Date) => (value instanceof Date ? value.toISOString().slice(0, 10) : value?.slice(0, 10));
+const published = day(frontmatter.published);
+const updated = day(frontmatter.updated);
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
+
+/*
+ * `/guide/` and `/about/` are authored as markdown, so their twin is the source
+ * file with a heading on it. The address is the page's own with the trailing
+ * slash swapped for `.md`, which is the rule llms.txt states for every page.
+ */
+const markdown = `${Astro.url.pathname.replace(/\/$/, '')}.md`;
+
+/*
+ * The share card these two already send to a crawler as `og:image`. The schema
+ * pointed at nothing while the meta tag pointed at a picture, which is one page
+ * making two answers to the same question.
+ */
+const card = new URL('/og/default.png', Astro.site ?? Astro.url).href;
+---
+
+<Base
+  title={`${frontmatter.title} — FindSoftware`}
+  description={frontmatter.description}
+  markdown={markdown}
+  schema={{
+    '@type': 'Article',
+    headline: frontmatter.title,
+    ...(frontmatter.description ? { description: frontmatter.description } : {}),
+    url: canonical,
+    mainEntityOfPage: canonical,
+    image: card,
+    ...(published ? { datePublished: published } : {}),
+    ...(updated ? { dateModified: updated } : {}),
+    inLanguage: 'en',
+    isPartOf: websiteRef(origin),
+    publisher: publisherRef(origin),
+    author: publisherRef(origin),
+    license: licenceUrl,
+  }}
+>
+  <article>
+    <h1>{frontmatter.title}</h1>
+    {frontmatter.lead && <p class="lead">{frontmatter.lead}</p>}
+    <PageFigure figure={figure} />
+
+    <slot />
+  </article>
+</Base>
