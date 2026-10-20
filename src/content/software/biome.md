@@ -15,6 +15,7 @@ runtimeMin: node 14
 runsAs:
   - local
 installMethod: npm
+licenseModel: open-source
 license: Apache-2.0, MIT OR Apache-2.0
 currentMajor: "2"
 latestReleaseDate: 2026-09-30

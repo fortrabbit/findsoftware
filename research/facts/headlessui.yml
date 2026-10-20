@@ -95,11 +95,12 @@ facts:
     url: https://registry.npmjs.org/@headlessui/react
     checkedAt: 2026-10-19
     via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/tailwindlabs
+    checkedAt: 2026-10-20
+    via: api
 notFound: [basedOn, runtime, runtimeMin, hqCountry, usageShare, eolPolicy, releaseCadence, pluginDirectory, pluginCount, paidEditions, forum, discord, endoflifeId]
 unreadable: []
 notes: >
-  The homepage names React and Vue. Registry figures cover the React package @headlessui/react only; no Vue package was looked up.
-  basedOn is not recorded: the component package has no Tailwind dependency, and the sources describe integration, not a build on Tailwind.
-  The npm engines field (node >=10) describes the package, not a runtime the site needs, so runtime is not recorded.
-  The copyright line is on the homepage and names Tailwind Labs Inc. as the rights holder.
-  Contributors counts contributor accounts from the API list with per_page=1, read from the Link header.
+  The homepage names React and Vue. Registry figures cover the React package @headlessui/react only; no Vue package was looked up. basedOn is not recorded: the component package has no Tailwind dependency, and the sources describe integration, not a build on Tailwind. The npm engines field (node >=10) describes the package, not a runtime the site needs, so runtime is not recorded. The copyright line is on the homepage and names Tailwind Labs Inc. as the rights holder. Contributors counts contributor accounts from the API list with per_page=1, read from the Link header.

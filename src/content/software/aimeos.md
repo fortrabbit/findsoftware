@@ -9,6 +9,7 @@ category:
   - e-commerce
 description: PHP e-commerce and shop system, available as a stand-alone Composer install and as a Laravel package.
 status: active
+maintainerType: individual
 language: php
 runtime:
   - php
@@ -20,6 +21,7 @@ basedOn:
 runsAs:
   - per-request
 installMethod: composer create-project, laravel package
+licenseModel: open-source
 license: MIT, LGPL-3.0-or-later
 latestReleaseDate: 2026-10-05
 packagistDownloads: 109968

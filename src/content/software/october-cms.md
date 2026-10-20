@@ -35,7 +35,7 @@ i18n: yes
 runsAs:
   - per-request
 installMethod: composer create-project october/october, ddev, browser wizard installer
-licenseModel: commercial
+licenseModel: source-available
 license: proprietary, NOASSERTION (custom EULA in LICENSE.md)
 currentMajor: "4"
 latestReleaseDate: 2026-10-12

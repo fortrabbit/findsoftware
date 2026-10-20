@@ -71,6 +71,8 @@ export function cells(field: Field, value: unknown, context: RecordContext): Cel
   if (field.render === 'yes-no') return [{ text: value ? 'yes' : 'no' }];
   if (field.render === 'number') return [{ text: new Intl.NumberFormat('en').format(Number(value)) }];
   if (field.render === 'date') return [{ text: new Date(value as Date).toISOString().slice(0, 10) }];
+  // A major of 0 says the project has not declared a stable API yet, which a bare 0 does not.
+  if (field.render === 'version') return [{ text: String(value) === '0' ? 'Pre-1.0' : String(value) }];
 
   return (Array.isArray(value) ? value : [value]).map((entry) => {
     /*

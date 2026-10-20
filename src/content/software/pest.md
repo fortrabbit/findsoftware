@@ -18,6 +18,7 @@ runtimeMin: php 8.4
 runsAs:
   - local
 installMethod: composer require
+licenseModel: open-source
 license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-18

@@ -139,7 +139,7 @@ export interface Field {
   filterOrder?: number;
   multiple: boolean;
   /** How the value is drawn where it is not a label lookup. */
-  render?: 'yes-no' | 'number' | 'date';
+  render?: 'yes-no' | 'number' | 'date' | 'version';
   /**
    * Where a free value points, with `{value}` standing in for it. An id in
    * somebody else's register — Wikidata, the Green Web directory — is only
@@ -158,7 +158,7 @@ interface Entry extends Omit<Field, 'multiple' | 'values'> {
 }
 
 /** Every value of `render` the record page knows how to draw. validate.ts rejects the rest. */
-export const renderModes = ['yes-no', 'number', 'date'] as const;
+export const renderModes = ['yes-no', 'number', 'date', 'version'] as const;
 
 /**
  * Sections of the record page, in the order the dictionary lists them. Declared

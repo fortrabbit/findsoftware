@@ -110,10 +110,12 @@ facts:
     checkedAt: 2026-10-19
     via: page
     quote: "generating the corresponding styles and then writing them to a static CSS file"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/tailwindlabs
+    checkedAt: 2026-10-20
+    via: api
 notFound: [runtime, runtimeMin, hqCountry, usageShare, eolPolicy, releaseCadence, pluginDirectory, pluginCount, paidEditions, forum, discord]
 unreadable: [https://tailwindcss.com/plus]
 notes: >
-  Tailwind Plus is a paid product linked from the navigation; its pricing is behind a login, so paidEditions is not recorded.
-  Node is needed for the npm path, but no page read states a minimum version, so runtime and runtimeMin are not recorded.
-  GitHub contributors counts contributor accounts from the API list with per_page=1; the number is the page count in the Link header.
-  npmWeeklyDownloads covers 2026-10-10 to 2026-10-16 from the npm downloads API.
+  Tailwind Plus is a paid product linked from the navigation; its pricing is behind a login, so paidEditions is not recorded. Node is needed for the npm path, but no page read states a minimum version, so runtime and runtimeMin are not recorded. GitHub contributors counts contributor accounts from the API list with per_page=1; the number is the page count in the Link header. npmWeeklyDownloads covers 2026-10-10 to 2026-10-16 from the npm downloads API.

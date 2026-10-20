@@ -105,12 +105,12 @@ facts:
     url: https://bootswatch.com/
     checkedAt: 2026-10-19
     via: page
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/thomaspark
+    checkedAt: 2026-10-20
+    via: api
 notFound: [runtime, runtimeMin, hqCountry, usageShare, eolPolicy, releaseCadence, pluginDirectory, pluginCount, paidEditions, forum, discord, endoflifeId]
 unreadable: []
 notes: >
-  themeCount is a field coined here: the number of theme names on the homepage, counted as 26 (Brite to Zephyr).
-  The page calls the themes tuned for 5.3.8; currentMajor is 5 from the npm latest tag.
-  Bootswatch has no GitHub releases; latestReleaseDate is the npm publish time of 5.3.8.
-  firstRelease is the year the npm package was created; the GitHub repository dates from 2012.
-  maintainer names the community per the homepage; the npm author field names Thomas Park, the repository owner.
-  Contributors counts contributor accounts from the API list with per_page=1, read from the Link header.
+  themeCount is a field coined here: the number of theme names on the homepage, counted as 26 (Brite to Zephyr). The page calls the themes tuned for 5.3.8; currentMajor is 5 from the npm latest tag. Bootswatch has no GitHub releases; latestReleaseDate is the npm publish time of 5.3.8. firstRelease is the year the npm package was created; the GitHub repository dates from 2012. maintainer names the community per the homepage; the npm author field names Thomas Park, the repository owner. Contributors counts contributor accounts from the API list with per_page=1, read from the Link header.

@@ -120,11 +120,12 @@ facts:
     checkedAt: 2026-10-19
     via: page
     quote: "it also includes a JavaScript file that makes interactive elements works"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/themesberg
+    checkedAt: 2026-10-20
+    via: api
 notFound: [endoflifeId, runtimeMin, hqCountry, usageShare, eolPolicy, releaseCadence, pluginDirectory, pluginCount, paidEditions, forum]
 unreadable: [https://flowbite.com/pricing/]
 notes: >
-  The pricing URL returns 404, so no paid edition is recorded.
-  maintainer is the npm author field (Bergside Inc.); the GitHub owner is the themesberg organization, and neither page read names the company.
-  firstRelease is the year the npm package was created; the GitHub repository dates from 2021.
-  The quickstart guide says it works with Tailwind v4, which matches the Tailwind major recorded in the basedOn fact.
-  Contributors counts contributor accounts from the API list with per_page=1, read from the Link header.
+  The pricing URL returns 404, so no paid edition is recorded. maintainer is the npm author field (Bergside Inc.); the GitHub owner is the themesberg organization, and neither page read names the company. firstRelease is the year the npm package was created; the GitHub repository dates from 2021. The quickstart guide says it works with Tailwind v4, which matches the Tailwind major recorded in the basedOn fact. Contributors counts contributor accounts from the API list with per_page=1, read from the Link header.

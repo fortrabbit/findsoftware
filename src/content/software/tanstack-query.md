@@ -12,6 +12,7 @@ status: active
 maintainer: TanStack
 language: typescript
 installMethod: npm install
+licenseModel: open-source
 license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-17

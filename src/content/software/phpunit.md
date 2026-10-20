@@ -18,6 +18,7 @@ runtimeMin: php 8.4
 runsAs:
   - local
 installMethod: composer require
+licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "13"
 latestReleaseDate: 2026-10-16

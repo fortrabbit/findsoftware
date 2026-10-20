@@ -16,6 +16,7 @@ runtime:
 runtimeMin: node 22
 runsAs:
   - local
+licenseModel: open-source
 license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-15

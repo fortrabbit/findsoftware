@@ -9,13 +9,15 @@ category:
   - build-tool
 description: JavaScript and TypeScript bundler and minifier, shipped as a native binary with a JavaScript API.
 status: active
+maintainerType: individual
 language: go
 runtimeMin: node 18
 runsAs:
   - local
 installMethod: npm
+licenseModel: open-source
 license: MIT
-currentMajor: "0.28"
+currentMajor: "0"
 latestReleaseDate: 2026-08-08
 npmWeeklyDownloads: 183109275
 addedAt: 2026-10-19

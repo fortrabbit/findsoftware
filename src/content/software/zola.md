@@ -28,7 +28,7 @@ renderingModes:
 installMethod: prebuilt binary, homebrew, macports, linux and bsd distribution packages, winget, scoop, chocolatey, snap, flatpak, docker, cargo install
 licenseModel: open-source
 license: EUPL-1.2, MIT
-currentMajor: "0.23"
+currentMajor: "0"
 latestReleaseDate: 2026-09-12
 githubStargazers: 17517
 contributors: 536

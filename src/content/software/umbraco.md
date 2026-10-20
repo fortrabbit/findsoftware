@@ -36,7 +36,7 @@ runsAs:
 renderingModes:
   - server
 installMethod: dotnet new install Umbraco.Templates, dotnet new umbraco, Visual Studio, Docker Compose, unattended install
-licenseModel: open-core
+licenseModel: open-source
 license: MIT
 currentMajor: "18"
 latestReleaseDate: 2026-10-06

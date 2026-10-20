@@ -18,6 +18,7 @@ runtimeMin: php 7.1
 runsAs:
   - per-request
 installMethod: download archive
+licenseModel: open-source
 license: GPL-2.0, GPL-2.0-or-later
 currentMajor: "1"
 latestReleaseDate: 2026-10-14

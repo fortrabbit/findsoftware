@@ -97,10 +97,12 @@ facts:
     url: https://open-props.style/
     checkedAt: 2026-10-19
     via: page
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/argyleink
+    checkedAt: 2026-10-20
+    via: api
 notFound: [basedOn, runtime, runtimeMin, hqCountry, usageShare, eolPolicy, releaseCadence, pluginDirectory, pluginCount, paidEditions, forum, endoflifeId]
 unreadable: []
 notes: >
-  GitHub releases stop at v1.6.0 (2023-09-29), while npm holds v1.7.23 (2026-01-31); currentMajor and latestReleaseDate use the npm latest tag, which the homepage also shows.
-  GitHub reports the repository language as HTML, which describes the site, so language is the API's value and not a claim about the token files.
-  Maintainer is taken from the npm author field.
-  Contributors counts contributor accounts from the API list with per_page=1, read from the Link header.
+  GitHub releases stop at v1.6.0 (2023-09-29), while npm holds v1.7.23 (2026-01-31); currentMajor and latestReleaseDate use the npm latest tag, which the homepage also shows. GitHub reports the repository language as HTML, which describes the site, so language is the API's value and not a claim about the token files. Maintainer is taken from the npm author field. Contributors counts contributor accounts from the API list with per_page=1, read from the Link header.

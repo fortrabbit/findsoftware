@@ -128,13 +128,12 @@ facts:
     url: https://roots.io/sage/
     checkedAt: 2026-10-19
     via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/roots
+    checkedAt: 2026-10-20
+    via: api
 notFound: [firstRelease, hqCountry, usageShare, eolPolicy, releaseCadence, pluginDirectory, pluginCount, paidEditions, forum, discord, endoflifeId]
 unreadable: []
 notes: >
-  Scope widened 2026-10-19: a WordPress starter theme is in scope, and basedOn names wordpress.
-  The install page does not state a PHP version; runtime and runtimeMin come from the Packagist metadata for v11.2.1, which requires php >=8.3.
-  The build step needs Node and npm (npm install, then npm run build); no Node version is stated on the pages read, so no Node runtime is recorded.
-  firstRelease is not recorded: the first Packagist version is dated 2016 but the repository dates from 2011, and no source states the first release.
-  packagistDownloads: the total is the all-time count and the monthly count is the period Packagist reports; both are from the package page API.
-  maintainer is the organization named on the install page, which describes Roots as an independent open source org.
-  Contributors counts contributor accounts from the API list with per_page=1, read from the Link header.
+  Scope widened 2026-10-19: a WordPress starter theme is in scope, and basedOn names wordpress. The install page does not state a PHP version; runtime and runtimeMin come from the Packagist metadata for v11.2.1, which requires php >=8.3. The build step needs Node and npm (npm install, then npm run build); no Node version is stated on the pages read, so no Node runtime is recorded. firstRelease is not recorded: the first Packagist version is dated 2016 but the repository dates from 2011, and no source states the first release. packagistDownloads: the total is the all-time count and the monthly count is the period Packagist reports; both are from the package page API. maintainer is the organization named on the install page, which describes Roots as an independent open source org. Contributors counts contributor accounts from the API list with per_page=1, read from the Link header.

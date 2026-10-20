@@ -103,11 +103,12 @@ facts:
     url: https://carbondesignsystem.com/
     checkedAt: 2026-10-19
     via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/carbon-design-system
+    checkedAt: 2026-10-20
+    via: api
 notFound: [basedOn, runtime, runtimeMin, hqCountry, usageShare, eolPolicy, releaseCadence, pluginDirectory, pluginCount, paidEditions, forum, discord, endoflifeId]
 unreadable: []
 notes: >
-  The React page says components require a build pipeline in the consuming project; no runtime version is stated, so runtime is not recorded.
-  currentMajor is 11, the design system version named on the page and in the GitHub release tag v11.118.0; the npm package @carbon/react is at 1.118.0, a separate version line.
-  firstRelease is the year the npm package @carbon/react was created; the GitHub repository dates from 2017.
-  The homepage URL is the GitHub-declared homepage; the page at that address redirects to carbondesignsystem.com.
-  Contributors counts contributor accounts from the API list with per_page=1, read from the Link header.
+  The React page says components require a build pipeline in the consuming project; no runtime version is stated, so runtime is not recorded. currentMajor is 11, the design system version named on the page and in the GitHub release tag v11.118.0; the npm package @carbon/react is at 1.118.0, a separate version line. firstRelease is the year the npm package @carbon/react was created; the GitHub repository dates from 2017. The homepage URL is the GitHub-declared homepage; the page at that address redirects to carbondesignsystem.com. Contributors counts contributor accounts from the API list with per_page=1, read from the Link header.

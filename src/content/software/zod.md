@@ -17,6 +17,7 @@ runtime:
 hosting:
   - node
 installMethod: npm install
+licenseModel: open-source
 license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-12

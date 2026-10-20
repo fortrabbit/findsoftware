@@ -17,6 +17,7 @@ runtimeMin: node 18
 runsAs:
   - local
 installMethod: npm
+licenseModel: open-source
 license: MIT, MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-18

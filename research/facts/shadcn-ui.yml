@@ -102,11 +102,12 @@ facts:
     url: https://ui.shadcn.com/
     checkedAt: 2026-10-19
     via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/shadcn-ui
+    checkedAt: 2026-10-20
+    via: api
 notFound: [firstRelease, basedOn, hqCountry, usageShare, eolPolicy, releaseCadence, pluginDirectory, pluginCount, paidEditions, forum, discord, endoflifeId]
 unreadable: [https://ui.shadcn.com/docs]
 notes: >
-  The homepage and installation text read do not name the primitive library or the styling dependency, so basedOn is not recorded.
-  firstRelease is not recorded: the repository dates from 2023 and the npm CLI package from 2024, and the sources read do not state a first release.
-  currentMajor and latestReleaseDate describe the shadcn CLI npm package, the only versioned artifact in the registry; the component code has no separate version.
-  runtime and runtimeMin come from the CLI package engines field (node >=20.18.1), recorded as major 20.
-  The docs index URL returned a page without content in the fetch, so only the installation page was read.
+  The homepage and installation text read do not name the primitive library or the styling dependency, so basedOn is not recorded. firstRelease is not recorded: the repository dates from 2023 and the npm CLI package from 2024, and the sources read do not state a first release. currentMajor and latestReleaseDate describe the shadcn CLI npm package, the only versioned artifact in the registry; the component code has no separate version. runtime and runtimeMin come from the CLI package engines field (node >=20.18.1), recorded as major 20. The docs index URL returned a page without content in the fetch, so only the installation page was read.

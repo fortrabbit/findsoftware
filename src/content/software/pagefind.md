@@ -18,6 +18,7 @@ runsAs:
   - static
   - browser
 installMethod: npm, pypi, precompiled binary download, cargo install
+licenseModel: open-source
 license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-04-12

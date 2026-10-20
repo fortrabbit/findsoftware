@@ -109,10 +109,12 @@ facts:
     url: https://daisyui.com/
     checkedAt: 2026-10-19
     via: page
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/saadeghi
+    checkedAt: 2026-10-20
+    via: api
 notFound: [runtimeMin, hqCountry, usageShare, eolPolicy, releaseCadence, pluginDirectory, pluginCount, paidEditions, forum, endoflifeId]
 unreadable: []
 notes: >
-  The homepage lists the bundled theme names and a Blueprint MCP server; neither is recorded because the sources read do not state a price or a licence for them.
-  runtime node is from the install page; no minimum Node version is stated, so runtimeMin is not recorded.
-  The npm author field names Pouya Saadeghi; the GitHub owner is saadeghi.
-  Contributors counts contributor accounts from the API list with per_page=1, read from the Link header.
+  The homepage lists the bundled theme names and a Blueprint MCP server; neither is recorded because the sources read do not state a price or a licence for them. runtime node is from the install page; no minimum Node version is stated, so runtimeMin is not recorded. The npm author field names Pouya Saadeghi; the GitHub owner is saadeghi. Contributors counts contributor accounts from the API list with per_page=1, read from the Link header.

@@ -12,7 +12,7 @@ category:
 description: Open-source PHP content management system and framework built on Symfony components, with Twig theming and core JSON:API and REST modules.
 status: active
 maintainer: Drupal community, supported by the Drupal Association
-maintainerType: community
+maintainerType: foundation
 firstRelease: 2001
 language: php
 runtime:

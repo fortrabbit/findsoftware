@@ -10,6 +10,7 @@ category:
 description: Open-source learning management system written in PHP, used by universities, schools, companies and other organisations.
 status: active
 maintainer: Moodle Pty Ltd
+maintainerType: company
 language: php
 runtime:
   - php

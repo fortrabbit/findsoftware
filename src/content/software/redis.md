@@ -14,7 +14,7 @@ maintainerType: company
 runsAs:
   - always-on
 installMethod: docker-image, snap, homebrew, rpm, debian-package, source-tarball
-licenseModel: source-available
+licenseModel: open-source
 license: RSALv2 or SSPLv1 or AGPLv3, BSD-3-Clause
 currentMajor: "8"
 latestReleaseDate: 2026-09-17

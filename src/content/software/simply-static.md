@@ -19,6 +19,7 @@ runtimeMin: php 7.4
 basedOn:
   - wordpress
 installMethod: wordpress plugin directory, zip download
+licenseModel: open-source
 license: GPL-2.0+, GPL-2.0
 currentMajor: "3"
 latestReleaseDate: 2026-10-16

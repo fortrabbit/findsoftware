@@ -22,6 +22,7 @@ basedOn:
 runsAs:
   - per-request
 installMethod: composer create-project, git clone
+licenseModel: open-source
 license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-06

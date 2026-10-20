@@ -21,6 +21,7 @@ contentStore:
 databases:
   - sqlite
 installMethod: composer require
+licenseModel: open-source
 license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-17

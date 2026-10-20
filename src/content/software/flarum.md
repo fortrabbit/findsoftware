@@ -10,6 +10,7 @@ category:
 description: Open-source forum software for online communities, built with PHP on the Laravel framework.
 status: active
 maintainer: Flarum Foundation
+maintainerType: foundation
 language: php
 runtime:
   - php

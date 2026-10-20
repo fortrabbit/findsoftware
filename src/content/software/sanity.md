@@ -25,7 +25,7 @@ i18n: field-level and document-level localization
 renderingModes:
   - spa
 installMethod: npm create sanity@latest
-licenseModel: open-source
+licenseModel: saas
 license: MIT
 currentMajor: "6"
 latestReleaseDate: 2026-10-13

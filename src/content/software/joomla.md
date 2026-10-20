@@ -11,7 +11,7 @@ category:
 description: Free and open-source PHP content management system for publishing web content, run by a volunteer community.
 status: active
 maintainer: Open Source Matters, Inc. (supporting non-profit), volunteer project
-maintainerType: community
+maintainerType: foundation
 firstRelease: 2005
 language: php
 runtime:

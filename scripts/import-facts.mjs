@@ -374,6 +374,36 @@ function mapped(values, map, allowed, pick = (value) => value) {
   return out;
 }
 
+/*
+ * License model and maintainer type are classifications projects rarely state, so one rule
+ * derives them from cited facts. The research agent's value stands only where no rule decides.
+ */
+const openLicense = /\b(MIT|Apache|BSD|A?GPL|LGPL|MPL|ISC|OSL|AFL|EUPL|Zlib|Unlicense|Artistic)/i;
+const restrictedLicense = /\b(BUSL|BSL|SSPL|Elastic|FSL|RSAL|Commons Clause|Sustainable|proprietary|EULA|No Charge|custom)/i;
+const enterprisePart = /enterprise|\bee\/|x-pack|commercial licen[cs]e/i;
+const foundationName = /foundation|association|conservancy|LF Projects|\be\.\s?V\.|non-?profit|OpenJS/i;
+const legalForm = /\b(Inc|LLC|Ltd|Limited|GmbH|AG|SAS|S\.A|SA|srl|s\.r\.o|Pty|B\.V|BV|KG|Corp|Corporation|plc|Oy|AB|SARL)\b/;
+const ruled = { licenseModel: { rule: 0, research: 0 }, maintainerType: { rule: 0, research: 0 } };
+
+function licenseModelOf({ status, licenses, repository, paidEdition }) {
+  if (status === 'hosted-service') return 'saas';
+  // A restricted license offered as an alternative to an open one is a choice; on its own it covers a part.
+  // FSL-1.1-Apache-2.0 names an open license it turns into later, so an open name without "or" is not a choice.
+  const isOpen = (statement) => openLicense.test(statement) && (!restrictedLicense.test(statement) || /\bor\b/i.test(statement));
+  const open = licenses.some(isOpen);
+  const restrictedPart = licenses.some((statement) => restrictedLicense.test(statement) && !isOpen(statement));
+  if (open) return restrictedPart || paidEdition || licenses.some((statement) => enterprisePart.test(statement)) ? 'open-core' : 'open-source';
+  if (restrictedPart) return repository ? 'source-available' : 'commercial';
+  return undefined;
+}
+
+function maintainerTypeOf({ maintainer, repoOwnerType }) {
+  if (foundationName.test(maintainer)) return 'foundation';
+  if (legalForm.test(maintainer)) return 'company';
+  if (repoOwnerType === 'user') return 'individual';
+  return undefined;
+}
+
 const palette = ['#f4d35e', '#9ad1d4', '#f6bd60', '#b8e0d2', '#f7a399', '#cdb4db', '#a3c4f3', '#c5e1a5'];
 const emojiOf = {
   cms: '📝',
@@ -449,8 +479,13 @@ for (const file of facts) {
   record.status = statusOf[research.status] ?? 'active';
 
   if (first('maintainer')) record.maintainer = text(first('maintainer'));
-  const maintainerType = mapped(first('maintainerType'), {}, vocab('maintainerType'))[0];
-  if (maintainerType) record.maintainerType = maintainerType;
+  const maintainerType =
+    maintainerTypeOf({ maintainer: text(first('maintainer') ?? ''), repoOwnerType: first('repoOwnerType') }) ??
+    mapped(first('maintainerType'), {}, vocab('maintainerType'))[0];
+  if (maintainerType) {
+    record.maintainerType = maintainerType;
+    ruled.maintainerType[maintainerTypeOf({ maintainer: text(first('maintainer') ?? ''), repoOwnerType: first('repoOwnerType') }) ? 'rule' : 'research']++;
+  }
   if (first('parent')) record.parent = text(first('parent'));
   const firstRelease = number(first('firstRelease'));
   if (firstRelease && firstRelease > 1980 && firstRelease < 2100) record.firstRelease = firstRelease;
@@ -508,15 +543,23 @@ for (const file of facts) {
   if (renderingModes.length) record.renderingModes = renderingModes;
   if (first('installMethod')) record.installMethod = text(first('installMethod'));
 
-  const licenseModel = mapped(first('licenseModel'), {}, vocab('licenseModel'))[0];
-  if (licenseModel) record.licenseModel = licenseModel;
+  // A paid edition counts when a quoted source shows it; hosting plans and support are not editions.
+  const paidEdition = [...(byField.get('paidEdition') ?? []), ...(byField.get('licenseModel') ?? [])].some(
+    (fact) => fact.quote && (fact.field === 'paidEdition' || asList(fact.value).includes('open-core')),
+  );
+  const derivedModel = licenseModelOf({ status: record.status, licenses: all('license').map(String), repository: urls.repository, paidEdition });
+  const licenseModel = derivedModel ?? mapped(first('licenseModel'), {}, vocab('licenseModel'))[0];
+  if (licenseModel) {
+    record.licenseModel = licenseModel;
+    ruled.licenseModel[derivedModel ? 'rule' : 'research']++;
+  }
   if (byField.has('license')) record.license = text(all('license'));
 
-  // A dot release goes stale within weeks; the major holds for a year or more. Under 1.0 the minor is the major.
+  // A dot release goes stale within weeks; the major holds for a year or more. Under 1.0 the minor moves as fast, so 0.x stays 0.
   let version = String(first('currentMajor') ?? '').match(/(\d+)(?:\.(\d+))?/);
   // A calendar version (2026.8) moves monthly, so it has no major worth recording.
   if (version && Number(version[1]) >= 2000) version = null;
-  if (version) record.currentMajor = version[1] === '0' && version[2] !== undefined ? `0.${version[2]}` : version[1];
+  if (version) record.currentMajor = version[1];
   if (first('latestReleaseDate')) record.latestReleaseDate = String(first('latestReleaseDate')).slice(0, 10);
 
   const adoption = { githubStars: 'githubStargazers', packagistDownloads: 'packagistDownloads', npmWeeklyDownloads: 'npmWeeklyDownloads', contributors: 'contributors', pluginCount: 'pluginCount' };
@@ -597,3 +640,4 @@ for (const file of facts) {
 }
 
 console.log(`${written} records written to ${outDir}`);
+for (const [field, { rule, research }] of Object.entries(ruled)) console.log(`${field}: ${rule} by rule, ${research} as researched`);

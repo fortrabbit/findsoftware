@@ -31,7 +31,7 @@ renderingModes:
 installMethod: npm create astro@latest -- --template starlight
 licenseModel: open-source
 license: MIT, MIT
-currentMajor: "0.42"
+currentMajor: "0"
 latestReleaseDate: 2026-10-08
 githubStargazers: 9426
 npmWeeklyDownloads: 884121

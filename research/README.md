@@ -29,6 +29,10 @@ What discovery saw per area: sources swept and how many names each gave, fact ki
 
 Filters and columns of competing directories, the decision criteria people name in forums and threads with frequency and example URLs, and the most asked "X vs Y" pairs.
 
+## notes-waiting/
+
+Facet notes for a value no record holds yet. Validate fails a note whose page is not built, so it waits here and moves back to `src/content/notes/` with the first record that holds the value.
+
 ## facts/<id>.yml
 
 One file per candidate, written by `.claude/skills/write-record/SKILL.md`. Each fact carries `field`, `value`, `url`, `checkedAt` and `via` (`api` or `page`). The `field` names are free camelCase until MR-409 maps them to `fields.yml`; the `sources` entries carry over to the record unchanged.

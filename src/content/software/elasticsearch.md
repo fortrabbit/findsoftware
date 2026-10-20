@@ -17,7 +17,7 @@ headlessApi:
 runsAs:
   - always-on
 installMethod: tar.gz archive, deb package, rpm package, docker image, docker compose
-licenseModel: source-available
+licenseModel: open-core
 license: AGPL-3.0-only OR SSPL-1.0 OR Elastic-2.0 (triple license, default for the repository), Elastic License 2.0 (x-pack folder only)
 currentMajor: "9"
 latestReleaseDate: 2026-10-06

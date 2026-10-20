@@ -14,6 +14,7 @@ runtime:
   - binary
 runsAs:
   - local
+licenseModel: open-source
 license: MIT
 currentMajor: "16"
 latestReleaseDate: 2026-10-15

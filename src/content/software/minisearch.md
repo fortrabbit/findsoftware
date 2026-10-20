@@ -16,6 +16,7 @@ language: typescript
 runsAs:
   - browser
 installMethod: npm, yarn, cdn script tag, manual build
+licenseModel: open-source
 license: MIT
 currentMajor: "7"
 latestReleaseDate: 2025-09-16

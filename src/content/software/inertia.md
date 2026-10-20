@@ -19,6 +19,7 @@ renderingModes:
   - spa
   - server
 installMethod: composer require inertiajs/inertia-laravel
+licenseModel: open-source
 license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-09

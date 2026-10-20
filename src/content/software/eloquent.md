@@ -23,6 +23,7 @@ databases:
   - postgres
   - sqlserver
   - sqlite
+licenseModel: open-source
 license: MIT
 currentMajor: "13"
 latestReleaseDate: 2026-10-15

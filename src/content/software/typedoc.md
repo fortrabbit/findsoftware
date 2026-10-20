@@ -18,8 +18,9 @@ runtimeMin: node 18
 runsAs:
   - local
 installMethod: npm
+licenseModel: open-source
 license: Apache-2.0
-currentMajor: "0.28"
+currentMajor: "0"
 latestReleaseDate: 2026-07-05
 npmWeeklyDownloads: 2845089
 addedAt: 2026-10-19

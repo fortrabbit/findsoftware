@@ -18,6 +18,7 @@ hosting:
   - php
 runtimeMin: php 8.3
 installMethod: composer require
+licenseModel: open-source
 license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-17

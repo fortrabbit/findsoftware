@@ -16,6 +16,7 @@ runtimeMin: node 20
 runsAs:
   - static
 installMethod: npm create
+licenseModel: open-source
 license: MIT
 currentMajor: "10"
 latestReleaseDate: 2026-10-12
