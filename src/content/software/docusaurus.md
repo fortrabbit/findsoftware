@@ -8,6 +8,7 @@ urls:
   plugins: https://docusaurus.io/community/resources
 category:
   - ssg
+  - cms
 description: React-based static site generator for documentation websites and blogs written in Markdown and MDX.
 status: active
 maintainer: Meta Platforms, Inc.

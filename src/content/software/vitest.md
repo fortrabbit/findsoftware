@@ -9,7 +9,8 @@ category:
   - testing
 description: Testing framework for JavaScript and TypeScript projects, built on Vite.
 status: active
-maintainer: vitest-dev
+maintainer: VoidZero Inc.
+maintainerType: company
 language: typescript
 runtime:
   - node
@@ -34,8 +35,8 @@ sources:
     url: https://vitest.dev/guide/
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://github.com/vitest-dev/vitest
-    checkedAt: 2026-10-19
+    url: https://vitest.dev/
+    checkedAt: 2026-10-20
   - field: category
     url: https://vitest.dev
     checkedAt: 2026-10-19

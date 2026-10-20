@@ -9,7 +9,8 @@ category:
   - testing
 description: Browser automation and end-to-end test framework that drives Chromium, Firefox and WebKit through one API.
 status: active
-maintainer: Microsoft
+maintainer: Microsoft Corporation
+maintainerType: company
 language: typescript
 runtime:
   - node
@@ -53,8 +54,8 @@ sources:
     url: https://playwright.dev/
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://playwright.dev/docs/intro
-    checkedAt: 2026-10-19
+    url: https://github.com/microsoft/playwright/blob/main/NOTICE
+    checkedAt: 2026-10-20
   - field: currentMajor
     url: https://registry.npmjs.org/playwright/latest
     checkedAt: 2026-10-19

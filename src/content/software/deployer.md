@@ -37,8 +37,8 @@ sources:
     url: https://deployer.org/docs/8.x/getting-started
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://api.github.com/repos/deployphp/deployer
-    checkedAt: 2026-10-19
+    url: https://github.com/deployphp/deployer/blob/HEAD/LICENSE
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://api.github.com/repos/deployphp/deployer
     checkedAt: 2026-10-19

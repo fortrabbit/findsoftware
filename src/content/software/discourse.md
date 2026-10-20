@@ -10,7 +10,8 @@ category:
   - community
 description: Open-source community discussion platform, a forum built on Ruby on Rails with an Ember.js front end.
 status: active
-maintainer: Discourse
+maintainer: Civilized Discourse Construction Kit, Inc.
+maintainerType: company
 language: ruby
 runtime:
   - ruby
@@ -46,8 +47,8 @@ sources:
     url: https://github.com/discourse/discourse/blob/main/docs/INSTALL.md
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://www.discourse.org/about
-    checkedAt: 2026-10-19
+    url: https://www.discourse.org/legal
+    checkedAt: 2026-10-20
   - field: category
     url: https://www.discourse.org/
     checkedAt: 2026-10-19

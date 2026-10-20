@@ -14,7 +14,7 @@ import { outboundProse } from './src/lib/outbound-prose.ts';
  * this wrong both look fine in a dashboard field: a bare domain with no scheme,
  * and a value whose quotes were stored as part of the string.
  */
-const site = process.env.SITE_URL?.trim() || 'http://localhost:4321';
+const site = process.env.SITE_URL?.trim() || 'http://localhost:4322';
 
 /**
  * @param {string} why
@@ -47,6 +47,8 @@ if (!/^[a-z0-9.-]+(:\d+)?$/.test(host)) wrong('has a host that is not a hostname
 // https://astro.build/config
 export default defineConfig({
   site,
+  // FindHost runs on Astro's default 4321; both can serve side by side.
+  server: { port: 4322 },
   /*
    * One rule for every address: /categories/paas/ and /fortrabbit/ alike. A page
    * is a page whether it lists things or describes one, and two conventions on

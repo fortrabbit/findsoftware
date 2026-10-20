@@ -12,7 +12,7 @@ category:
   - auth
 description: Open-source backend platform with authentication, databases, storage, functions and messaging, available as Appwrite Cloud or self-hosted with Docker.
 status: active
-maintainer: Appwrite
+maintainer: Appwrite Code Ltd.
 maintainerType: company
 language: typescript
 runsAs:
@@ -38,8 +38,8 @@ sources:
     url: https://appwrite.io/docs
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://github.com/appwrite/appwrite/blob/main/LICENSE
-    checkedAt: 2026-10-19
+    url: https://appwrite.io/privacy
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://appwrite.io/company
     checkedAt: 2026-10-19

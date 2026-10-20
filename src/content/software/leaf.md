@@ -65,8 +65,8 @@ sources:
     url: https://packagist.org/packages/leafs/leaf
     checkedAt: 2026-10-18
   - field: maintainer
-    url: https://leafphp.dev/community/team
-    checkedAt: 2026-10-18
+    url: https://leafphp.dev/
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://leafphp.dev/
     checkedAt: 2026-10-18

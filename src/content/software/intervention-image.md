@@ -36,8 +36,8 @@ sources:
     url: https://image.intervention.io/v4/getting-started/installation
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://image.intervention.io
-    checkedAt: 2026-10-19
+    url: https://github.com/Intervention/image/blob/main/LICENSE
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://image.intervention.io
     checkedAt: 2026-10-19

@@ -8,6 +8,7 @@ urls:
   plugins: https://hydephp.com/docs/2.x/extensions
 category:
   - ssg
+  - cms
 description: Static site generator built on Laravel Zero that compiles Markdown and Blade files into a static HTML site.
 status: active
 maintainer: Emma De Silva
@@ -62,8 +63,8 @@ sources:
     url: https://packagist.org/packages/hyde/hyde
     checkedAt: 2026-10-18
   - field: maintainer
-    url: https://hydephp.com/about
-    checkedAt: 2026-10-18
+    url: https://hydephp.com/license
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://hydephp.com/about
     checkedAt: 2026-10-18

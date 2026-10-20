@@ -10,7 +10,7 @@ category:
   - framework
 description: Node.js headless CMS and application framework that generates a GraphQL API and an admin UI from a TypeScript schema.
 status: active
-maintainer: Thinkmill
+maintainer: Thinkmill Labs Pty Ltd
 maintainerType: company
 hqCountry: AU
 language: typescript
@@ -58,8 +58,8 @@ sources:
     url: https://keystonejs.com/
     checkedAt: 2026-10-18
   - field: maintainer
-    url: https://keystonejs.com/
-    checkedAt: 2026-10-18
+    url: https://github.com/keystonejs/keystone/blob/main/LICENSE
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://keystonejs.com/
     checkedAt: 2026-10-18

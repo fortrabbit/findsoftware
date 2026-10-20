@@ -52,8 +52,8 @@ sources:
     url: https://www.wikidata.org/wiki/Q24415127
     checkedAt: 2026-10-18
   - field: maintainer
-    url: https://gohugo.io/about/introduction/
-    checkedAt: 2026-10-18
+    url: https://gohugo.io/
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://gohugo.io/about/introduction/
     checkedAt: 2026-10-18

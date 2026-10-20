@@ -11,7 +11,7 @@ category:
   - headless-cms
 description: Hosted headless content management system with a GraphQL content API and content federation from remote sources.
 status: hosted-service
-maintainer: Hygraph
+maintainer: Hygraph GmbH
 maintainerType: company
 hqCountry: DE
 adminUi: true
@@ -40,8 +40,8 @@ sources:
     url: https://hygraph.com/docs
     checkedAt: 2026-10-18
   - field: maintainer
-    url: https://hygraph.com/about
-    checkedAt: 2026-10-18
+    url: https://hygraph.com/imprint
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://hygraph.com/about
     checkedAt: 2026-10-18

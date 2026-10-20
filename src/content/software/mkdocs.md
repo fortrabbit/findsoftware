@@ -51,7 +51,7 @@ sources:
     checkedAt: 2026-10-18
   - field: maintainer
     url: https://www.mkdocs.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-10-20
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q102565362
     checkedAt: 2026-10-18

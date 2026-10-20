@@ -51,8 +51,8 @@ sources:
     url: https://packagist.org/packages/slim/slim
     checkedAt: 2026-10-18
   - field: maintainer
-    url: https://www.slimframework.com/
-    checkedAt: 2026-10-18
+    url: https://github.com/slimphp/Slim/blob/5.x/LICENSE.md
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://www.slimframework.com/
     checkedAt: 2026-10-18

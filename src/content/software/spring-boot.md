@@ -9,7 +9,7 @@ category:
   - framework
 description: Java framework for building stand-alone Spring applications with an embedded web server and auto-configuration.
 status: active
-maintainer: Broadcom
+maintainer: Broadcom Inc.
 maintainerType: company
 firstRelease: 2014
 language: java
@@ -57,7 +57,7 @@ sources:
     checkedAt: 2026-10-18
   - field: maintainer
     url: https://spring.io/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://spring.io/
     checkedAt: 2026-10-18

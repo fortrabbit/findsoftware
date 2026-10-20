@@ -9,7 +9,7 @@ category:
   - ui-library
 description: Open-source design system built by IBM, with React and Web Components packages.
 status: active
-maintainer: IBM
+maintainer: International Business Machines Corporation
 maintainerType: company
 parent: IBM
 firstRelease: 2021
@@ -39,8 +39,8 @@ sources:
     url: https://registry.npmjs.org/@carbon/react
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://github.com/carbon-design-system/carbon
-    checkedAt: 2026-10-19
+    url: https://www.ibm.com/legal
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://github.com/carbon-design-system/carbon
     checkedAt: 2026-10-19

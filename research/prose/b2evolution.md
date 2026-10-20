@@ -1,0 +1,1 @@
+b2evolution is a content management system that combines multiple blogs, forums and other community features in one installation. The files are uploaded to a web server and an installation script sets up the site, as the [readme](https://github.com/b2evolution/b2evolution/blob/master/readme.html) describes.

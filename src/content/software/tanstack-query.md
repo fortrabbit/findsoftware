@@ -30,8 +30,8 @@ sources:
     url: https://tanstack.com/query/latest/docs/framework/react/installation
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://tanstack.com/query
-    checkedAt: 2026-10-19
+    url: https://raw.githubusercontent.com/TanStack/query/main/LICENSE
+    checkedAt: 2026-10-20
   - field: category
     url: https://tanstack.com/query
     checkedAt: 2026-10-19

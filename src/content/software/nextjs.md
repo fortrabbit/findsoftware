@@ -10,7 +10,7 @@ category:
   - ssg
 description: React framework for building full-stack web applications with server, static and incremental rendering.
 status: active
-maintainer: Vercel
+maintainer: Vercel, Inc.
 maintainerType: company
 firstRelease: 2016
 language: javascript
@@ -61,11 +61,11 @@ sources:
     url: https://nextjs.org/governance
     checkedAt: 2026-10-18
   - field: maintainer
-    url: https://nextjs.org/
-    checkedAt: 2026-10-18
+    url: https://nextjs.org/governance
+    checkedAt: 2026-10-20
   - field: maintainer
     url: https://nextjs.org/governance
-    checkedAt: 2026-10-18
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://nextjs.org/governance
     checkedAt: 2026-10-18

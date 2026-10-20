@@ -2,7 +2,6 @@
 id: eloquent
 name: Eloquent (illuminate/database)
 urls:
-  home: https://github.com/illuminate/database
   repository: https://github.com/illuminate/database
   docs: https://laravel.com/framework/docs/eloquent
 category:
@@ -31,9 +30,6 @@ packagistDownloads: 58612233
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
-  - field: urls
-    url: https://github.com/illuminate/database
-    checkedAt: 2026-10-19
   - field: urls
     url: https://github.com/illuminate/database
     checkedAt: 2026-10-19

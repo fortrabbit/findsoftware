@@ -8,6 +8,7 @@ urls:
   plugins: https://github.com/pelican-plugins
 category:
   - ssg
+  - cms
 description: Python static site generator that builds blogs and sites from reStructuredText or Markdown with Jinja2 themes.
 status: active
 firstRelease: 2010

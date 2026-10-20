@@ -9,7 +9,7 @@ category:
   - web-server
 description: High-performance PHP application server and process manager written in Go, extended with plugins.
 status: active
-maintainer: Spiral Scout
+maintainer: Spiral Scout LLC
 maintainerType: company
 language: go
 runtime:
@@ -41,8 +41,8 @@ sources:
     url: https://docs.roadrunner.dev/
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://roadrunner.dev/
-    checkedAt: 2026-10-19
+    url: https://spiralscout.com/privacy-policy
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://roadrunner.dev/
     checkedAt: 2026-10-19

@@ -12,7 +12,7 @@ category:
   - framework
 description: Headless open-source e-commerce framework built on Symfony, Doctrine and API Platform.
 status: active
-maintainer: Sylius
+maintainer: Sylius sp. z o.o.
 maintainerType: company
 firstRelease: 2017
 hqCountry: PL
@@ -63,8 +63,8 @@ sources:
     url: https://docs.sylius.com/public/open-source/release-cycle.md
     checkedAt: 2026-10-18
   - field: maintainer
-    url: https://sylius.com/
-    checkedAt: 2026-10-18
+    url: https://sylius.com/terms-and-conditions
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://sylius.com/plus/
     checkedAt: 2026-10-18

@@ -10,7 +10,7 @@ category:
   - analytics
 description: Privacy-friendly web analytics, offered as a managed cloud service and as the self-hosted Plausible Community Edition.
 status: active
-maintainer: Plausible Analytics
+maintainer: Plausible Insights OÜ
 maintainerType: company
 language: elixir
 runsAs:
@@ -36,8 +36,8 @@ sources:
     url: https://plausible.io/docs
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://plausible.io/about
-    checkedAt: 2026-10-19
+    url: https://plausible.io/imprint
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://plausible.io/about
     checkedAt: 2026-10-19

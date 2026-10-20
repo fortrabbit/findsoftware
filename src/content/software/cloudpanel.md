@@ -14,7 +14,7 @@ maintainer: MGT-COMMERCE GmbH
 maintainerType: company
 hqCountry: DE
 installMethod: cloud marketplace image, cloud installer, command line
-licenseModel: source-available
+licenseModel: commercial
 license: MGT-COMMERCE License Terms (proprietary)
 currentMajor: "2"
 latestReleaseDate: 2026-07-01

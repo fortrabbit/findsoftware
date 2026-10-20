@@ -9,8 +9,8 @@ category:
   - cms
 description: Project boilerplate that installs WordPress with Composer and a git-friendly directory layout and environment-based configuration.
 status: active
-maintainer: Roots
-maintainerType: community
+maintainer: Roots Software LLC
+maintainerType: company
 language: php
 runtime:
   - php
@@ -40,8 +40,8 @@ sources:
     url: https://roots.io/bedrock/
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://roots.io/
-    checkedAt: 2026-10-19
+    url: https://github.com/roots/bedrock/blob/HEAD/LICENSE.md
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://roots.io/
     checkedAt: 2026-10-19

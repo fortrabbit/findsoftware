@@ -9,7 +9,7 @@ category:
   - ssg
 description: TypeScript-based static website generator for hand-coded marketing sites, with localization and Nunjucks templates.
 status: active
-maintainer: Blinkk
+maintainer: Blinkk LLC
 maintainerType: company
 language: typescript
 runtime:
@@ -41,8 +41,8 @@ sources:
     url: https://amagaki.dev
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://amagaki.dev
-    checkedAt: 2026-10-19
+    url: https://blinkk.com/terms
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://amagaki.dev
     checkedAt: 2026-10-19

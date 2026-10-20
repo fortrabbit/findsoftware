@@ -10,7 +10,8 @@ category:
   - dev-tool
 description: Command-line tool that runs Docker-based local development environments for PHP and Node.js web projects.
 status: active
-maintainer: DDEV (GitHub organization ddev)
+maintainer: DDEV Foundation
+maintainerType: foundation
 language: go
 runtime:
   - binary
@@ -34,8 +35,8 @@ sources:
     url: https://docs.ddev.com/en/stable/
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://github.com/ddev/ddev
-    checkedAt: 2026-10-19
+    url: https://ddev.com/privacy
+    checkedAt: 2026-10-20
   - field: category
     url: https://ddev.com/
     checkedAt: 2026-10-19

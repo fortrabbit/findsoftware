@@ -8,6 +8,7 @@ urls:
   plugins: https://hexo.io/plugins/
 category:
   - ssg
+  - cms
 description: Node.js blog framework that generates static websites from Markdown posts and a theme.
 status: active
 maintainer: hexojs

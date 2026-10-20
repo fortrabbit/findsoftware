@@ -11,7 +11,7 @@ category:
   - web-server
 description: Cloud-native application proxy and reverse proxy that discovers routes from container, orchestrator and file providers.
 status: active
-maintainer: Traefik Labs
+maintainer: Traefik Labs SAS
 maintainerType: company
 language: go
 runtime:
@@ -44,8 +44,8 @@ sources:
     url: https://doc.traefik.io/traefik/
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://traefik.io/company/
-    checkedAt: 2026-10-19
+    url: https://traefik.io/legal/end-user-license-agreement
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://traefik.io/company/
     checkedAt: 2026-10-19

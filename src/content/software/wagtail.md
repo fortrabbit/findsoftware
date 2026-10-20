@@ -11,7 +11,7 @@ category:
   - headless-cms
 description: Content management system built on Django, with a page tree editor, StreamField content blocks and a content API.
 status: active
-maintainer: Torchbox
+maintainer: Torchbox Ltd
 maintainerType: company
 firstRelease: 2014
 hqCountry: GB
@@ -65,8 +65,8 @@ sources:
     url: https://pypi.org/pypi/wagtail/json
     checkedAt: 2026-10-18
   - field: maintainer
-    url: https://wagtail.org/about-wagtail/
-    checkedAt: 2026-10-18
+    url: https://raw.githubusercontent.com/wagtail/wagtail/main/LICENSE
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://wagtail.org/about-wagtail/
     checkedAt: 2026-10-18

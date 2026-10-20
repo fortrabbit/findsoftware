@@ -46,7 +46,7 @@ sources:
     checkedAt: 2026-10-19
   - field: maintainer
     url: https://lucide.dev/license
-    checkedAt: 2026-10-19
+    checkedAt: 2026-10-20
   - field: currentMajor
     url: https://registry.npmjs.org/lucide/latest
     checkedAt: 2026-10-19

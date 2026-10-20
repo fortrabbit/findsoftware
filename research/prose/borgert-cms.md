@@ -1,0 +1,1 @@
+Borgert CMS is a Laravel application to start a project from, with modules for a blog, pages, products, a mailbox, an image gallery, a log viewer and users. It is set up with Composer following the [installation guide](https://github.com/borgert-inc/borgert-cms/blob/master/docs/en/installation.md), and the admin area is served by the application under `/admin`.

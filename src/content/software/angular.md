@@ -9,7 +9,7 @@ category:
   - framework
 description: TypeScript-based web application framework with client-side, server-side and prerendered rendering.
 status: active
-maintainer: Google
+maintainer: Google LLC
 maintainerType: company
 firstRelease: 2016
 language: typescript
@@ -57,8 +57,8 @@ sources:
     url: https://registry.npmjs.org/@angular/core
     checkedAt: 2026-10-18
   - field: maintainer
-    url: https://angular.dev/
-    checkedAt: 2026-10-18
+    url: https://angular.dev/license
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://angular.dev/
     checkedAt: 2026-10-18

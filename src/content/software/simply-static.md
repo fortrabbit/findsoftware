@@ -9,7 +9,7 @@ category:
   - ssg
 description: WordPress plugin that exports a WordPress site as a static HTML copy for static hosting.
 status: active
-maintainer: Simply Static
+maintainer: Patrick Posner
 language: php
 runtime:
   - php
@@ -36,8 +36,8 @@ sources:
     url: https://simplystatic.com/pricing/
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://api.wordpress.org/plugins/info/1.0/simply-static.json
-    checkedAt: 2026-10-19
+    url: https://simplystatic.com/legal-disclosure/
+    checkedAt: 2026-10-20
   - field: license
     url: https://github.com/Simply-Static/simply-static/blob/master/simply-static.php
     checkedAt: 2026-10-19

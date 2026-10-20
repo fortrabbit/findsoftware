@@ -9,7 +9,7 @@ category:
   - library
 description: TypeScript and Node.js object-relational mapper that generates a type-safe database client from a schema file.
 status: active
-maintainer: Prisma
+maintainer: Prisma Data, Inc.
 maintainerType: company
 language: typescript
 runtime:
@@ -42,8 +42,8 @@ sources:
     url: https://www.prisma.io/docs/getting-started/quickstart
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://www.prisma.io
-    checkedAt: 2026-10-19
+    url: https://www.prisma.io/privacy
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://www.prisma.io
     checkedAt: 2026-10-19

@@ -9,7 +9,7 @@ category:
   - framework
 description: PHP web application framework with routing, an ORM, templating, queues and scheduled jobs.
 status: active
-maintainer: Laravel
+maintainer: Laravel Holdings Inc.
 maintainerType: company
 language: php
 runtime:
@@ -58,8 +58,8 @@ sources:
     url: https://laravel.com/docs/13.x/installation
     checkedAt: 2026-10-18
   - field: maintainer
-    url: https://laravel.com/careers
-    checkedAt: 2026-10-18
+    url: https://laravel.com/privacy
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://laravel.com/careers
     checkedAt: 2026-10-18

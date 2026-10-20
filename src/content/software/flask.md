@@ -49,8 +49,8 @@ sources:
     url: https://github.com/pallets/flask
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://palletsprojects.com/
-    checkedAt: 2026-10-19
+    url: https://github.com/pallets/flask/blob/main/LICENSE.txt
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://palletsprojects.com/
     checkedAt: 2026-10-19

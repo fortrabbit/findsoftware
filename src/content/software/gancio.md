@@ -47,7 +47,7 @@ sources:
     checkedAt: 2026-10-19
   - field: maintainer
     url: https://framagit.org/les/gancio/-/raw/v1.28.2/package.json
-    checkedAt: 2026-10-19
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://framagit.org/les/gancio/-/raw/v1.28.2/package.json
     checkedAt: 2026-10-19

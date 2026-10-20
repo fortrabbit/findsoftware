@@ -10,7 +10,7 @@ category:
   - library
 description: Router for React whose framework mode adds server rendering, static pre-rendering and data loading for building full-stack web apps.
 status: active
-maintainer: Remix team (Shopify)
+maintainer: Shopify, Inc.
 maintainerType: company
 parent: Shopify
 firstRelease: 2014
@@ -59,8 +59,8 @@ sources:
     url: https://github.com/remix-run/react-router/blob/main/GOVERNANCE.md
     checkedAt: 2026-10-18
   - field: maintainer
-    url: https://github.com/remix-run/react-router/blob/main/GOVERNANCE.md
-    checkedAt: 2026-10-18
+    url: https://reactrouter.com/
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://remix.run/blog/remixing-shopify
     checkedAt: 2026-10-18

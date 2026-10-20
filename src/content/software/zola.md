@@ -52,7 +52,7 @@ sources:
     checkedAt: 2026-10-18
   - field: maintainer
     url: https://www.getzola.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://www.getzola.org/
     checkedAt: 2026-10-18

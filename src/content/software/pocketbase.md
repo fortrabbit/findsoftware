@@ -51,7 +51,7 @@ sources:
     checkedAt: 2026-10-19
   - field: maintainer
     url: https://github.com/pocketbase/pocketbase/blob/master/LICENSE.md
-    checkedAt: 2026-10-19
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://github.com/pocketbase/pocketbase/blob/master/LICENSE.md
     checkedAt: 2026-10-19

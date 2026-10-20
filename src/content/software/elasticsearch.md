@@ -9,7 +9,7 @@ category:
   - search
 description: Distributed search and analytics engine that stores and queries structured, unstructured and vector data over an HTTP API.
 status: active
-maintainer: Elastic
+maintainer: elasticsearch B.V.
 maintainerType: company
 language: java
 headlessApi:
@@ -34,8 +34,8 @@ sources:
     url: https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://www.elastic.co/elasticsearch
-    checkedAt: 2026-10-19
+    url: https://www.elastic.co/legal/privacy-statement
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://www.elastic.co/elasticsearch
     checkedAt: 2026-10-19

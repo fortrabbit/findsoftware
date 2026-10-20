@@ -63,8 +63,8 @@ sources:
     url: https://getgrav.org/about
     checkedAt: 2026-10-18
   - field: maintainer
-    url: https://getgrav.org/about
-    checkedAt: 2026-10-18
+    url: https://getgrav.org/
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://getgrav.org
     checkedAt: 2026-10-18

@@ -12,7 +12,7 @@ category:
   - headless-cms
 description: Content management system built on .NET, with Razor templating and a built-in Content Delivery API.
 status: active
-maintainer: Umbraco
+maintainer: Umbraco A/S
 maintainerType: company
 hqCountry: DK
 language: csharp
@@ -63,8 +63,8 @@ sources:
     url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/install
     checkedAt: 2026-10-18
   - field: maintainer
-    url: https://umbraco.com/about-us/
-    checkedAt: 2026-10-18
+    url: https://umbraco.com/terms-and-conditions/
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://umbraco.com/about-us/
     checkedAt: 2026-10-18

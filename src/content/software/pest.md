@@ -37,7 +37,7 @@ sources:
     checkedAt: 2026-10-19
   - field: maintainer
     url: https://pestphp.com
-    checkedAt: 2026-10-19
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://pestphp.com
     checkedAt: 2026-10-19

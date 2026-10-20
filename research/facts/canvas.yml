@@ -1,0 +1,151 @@
+id: canvas
+name: Canvas
+status: accepted
+checkedAt: 2026-10-20
+description: Publishing platform package for Laravel applications, with an admin interface for writing posts and an optional starter blog reader.
+facts:
+  - field: homepage
+    value: https://trycanvas.app
+    url: https://trycanvas.app/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "A publishing platform for Laravel applications."
+  - field: repository
+    value: https://github.com/austintoddj/canvas
+    url: https://github.com/austintoddj/canvas
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://github.com/austintoddj/canvas/blob/main/docs/installation.md
+    url: https://github.com/austintoddj/canvas/blob/main/docs/installation.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Canvas requires PHP 8.3+ and Laravel 12 or 13."
+  - field: maintainer
+    value: Todd Austin
+    url: https://github.com/austintoddj/canvas/blob/main/license
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright (c) Todd Austin"
+  - field: repoOwnerType
+    value: User
+    url: https://github.com/austintoddj
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [blog, cms, laravel-package]
+    url: https://github.com/austintoddj/canvas/blob/main/readme.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Canvas is an open-source publishing platform for [Laravel](https://laravel.com)."
+  - field: basedOn
+    value: Laravel
+    url: https://github.com/austintoddj/canvas/blob/main/readme.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Canvas is an open-source publishing platform for [Laravel](https://laravel.com)."
+  - field: language
+    value: PHP
+    url: https://github.com/austintoddj/canvas
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: php
+    url: https://github.com/austintoddj/canvas/blob/v7.2.4/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: "\"php\": \"^8.3\""
+  - field: runtimeMin
+    value: "8.3"
+    url: https://github.com/austintoddj/canvas/blob/v7.2.4/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: "\"php\": \"^8.3\""
+  - field: installMethod
+    value: [composer require]
+    url: https://github.com/austintoddj/canvas/blob/main/docs/installation.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer require austintoddj/canvas"
+  - field: contentStore
+    value: database
+    url: https://github.com/austintoddj/canvas/blob/main/docs/content.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Canvas is headless: published content lives in the database."
+  - field: headlessApi
+    value: none
+    url: https://github.com/austintoddj/canvas/blob/main/docs/content.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "are not a public blog API."
+  - field: adminUi
+    value: yes, admin SPA
+    url: https://github.com/austintoddj/canvas/blob/main/docs/content.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "power the admin SPA only"
+  - field: templating
+    value: [blade]
+    url: https://trycanvas.app/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Customize the published Blade views as you like."
+  - field: userRoles
+    value: [contributor, editor, admin]
+    url: https://github.com/austintoddj/canvas/blob/main/readme.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Contributor, Editor, and Admin roles"
+  - field: license
+    value: MIT
+    url: https://github.com/austintoddj/canvas/blob/main/readme.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "licensed under the [MIT license](license)"
+  - field: currentMajor
+    value: 7
+    url: https://packagist.org/packages/austintoddj/canvas
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-19
+    url: https://github.com/austintoddj/canvas/releases/tag/v7.2.4
+    checkedAt: 2026-10-20
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://github.com/austintoddj/canvas/releases
+    checkedAt: 2026-10-20
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/austintoddj/canvas
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 3357
+    url: https://github.com/austintoddj/canvas
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: austintoddj/canvas
+    url: https://packagist.org/packages/austintoddj/canvas
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: 138150
+    url: https://packagist.org/packages/austintoddj/canvas
+    checkedAt: 2026-10-20
+    via: api
+notFound: [hqCountry, parent, wikidata, pricingPage, paidEdition, endoflifeId, databases, runsAs, pluginDirectory, pluginCount, npmName, npmWeeklyDownloads, pypiDownloads, usageShare, forkOf, successorOf, alternativeTo, importsFrom, livePreview, sso, multisite, i18n, discord, subreddit, mastodon, bluesky, x, newsletter, forum]
+unreadable: []
+notes: >
+  Status accepted: the repository is not archived, Packagist has no abandoned flag, and no page states that the project has ended.
+  The docs describe Canvas as headless, and the same page says its JSON routes are not a public blog API; headlessApi is recorded as none on that second statement. The same page says "Build your public site with Eloquent (or an API you own)."
+  Forks and contributors are shown on the homepage only and are not recorded; the GitHub API figure is the stargazer count.
+  The homepage badges say PHP 8.4 while composer.json at v7.2.4 requires ^8.3; runtimeMin follows composer.json.
+  basedOn Laravel is the single parent named by the README; the Laravel requirement (12 or 13) is in the installation docs.
+  The homepage footer links to the GitHub Discussions page and to an X account under the maintainer's name; neither is recorded because the page gives no quoted description for them.
+  runsAs is left out: the docs describe installation as a Laravel package but do not state where the application runs.
+  Blade templating is from the homepage; the docs do not name a template engine.

@@ -1,0 +1,105 @@
+id: b2evolution
+name: b2evolution
+status: accepted
+checkedAt: 2026-10-20
+description: Open-source PHP content management system for blogs, websites, forums and community sites.
+facts:
+  - field: name
+    value: b2evolution
+    url: https://b2evolution.net
+    checkedAt: 2026-10-20
+    via: page
+    quote: "b2evolution includes everything you need to build websites for sharing and interacting with your community."
+  - field: homepage
+    value: https://b2evolution.net
+    url: https://b2evolution.net
+    checkedAt: 2026-10-20
+    via: page
+  - field: repository
+    value: https://github.com/b2evolution/b2evolution
+    url: https://github.com/b2evolution/b2evolution
+    checkedAt: 2026-10-20
+    via: api
+  - field: maintainer
+    value: François Planque
+    url: https://b2evolution.net
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Founded & Maintained by François Planque"
+  - field: maintainerType
+    value: individual
+    url: https://b2evolution.net
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Founded & Maintained by François Planque"
+  - field: repoOwnerType
+    value: Organization
+    url: https://github.com/b2evolution/b2evolution
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [cms, blog, forum]
+    url: https://github.com/b2evolution/b2evolution
+    checkedAt: 2026-10-20
+    via: api
+    quote: "Multiblog/CMS content publishing + forums + email marketing + social network + more"
+  - field: language
+    value: PHP
+    url: https://github.com/b2evolution/b2evolution
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: php
+    url: https://github.com/b2evolution/b2evolution/blob/master/readme.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "your web server should support PHP 5.6+, MySQL 5.5.3+ & Apache 2+"
+  - field: databases
+    value: [mysql]
+    url: https://github.com/b2evolution/b2evolution/blob/master/readme.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "your web server should support PHP 5.6+, MySQL 5.5.3+ & Apache 2+"
+  - field: installMethod
+    value: manual upload
+    url: https://github.com/b2evolution/b2evolution/blob/master/readme.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Upload everything to your web server and call the installation script"
+  - field: license
+    value: GPL-2.0
+    url: https://b2evolution.net
+    checkedAt: 2026-10-20
+    via: page
+    quote: "b2evolution is Free Open-Source Software (FLOSS) licensed under the GPL v2 license"
+  - field: license
+    value: GPL-2.0
+    url: https://github.com/b2evolution/b2evolution/blob/master/license.txt
+    checkedAt: 2026-10-20
+    via: page
+    quote: "GNU GENERAL PUBLIC LICENSE Version 2, June 1991"
+  - field: currentMajor
+    value: 7
+    url: https://b2evolution.net/downloads/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "7.2.5-stable"
+  - field: latestReleaseDate
+    value: 2022-09-09
+    url: https://github.com/b2evolution/b2evolution
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 179
+    url: https://github.com/b2evolution/b2evolution
+    checkedAt: 2026-10-20
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/b2evolution/b2evolution
+    checkedAt: 2026-10-20
+    via: api
+notFound: [docs, runtimeMin, hqCountry, parent, firstRelease, runsAs, renderingModes, contentStore, adminUi, headlessApi, pricingPage, endoflifeId, contributors, usageShare, pluginCount, forum]
+unreadable: [https://b2evolution.net/about/about-us, https://b2evolution.net/about/gnu-gpl-license]
+notes: >
+  GitHub reports the license as NOASSERTION because the file is named license.txt; it holds the GPL version 2 text, and the homepage states GPL v2 without "or later". The two about pages linked from the homepage returned 503. The master readme gives PHP and MySQL minimums, but the downloads page states none for the newest stable release, so runtimeMin is not-found rather than taken from master. The homepage names an older major than the downloads page; currentMajor follows the downloads page. The downloads page and the GitHub release give different dates for the newest release; latestReleaseDate uses GitHub. The repository is not archived and no page states an end of the project, so no end signal applies. Categories record the blog and forum features only; galleries and newsletters are left out.

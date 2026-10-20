@@ -1,0 +1,124 @@
+id: acquia-cms
+name: Acquia Drupal Starter Kit
+status: accepted
+checkedAt: 2026-10-20
+description: Drupal distribution of modules and configuration for building low-code websites on the Acquia platform.
+facts:
+  - field: name
+    value: Acquia Drupal Starter Kit
+    url: https://github.com/acquia/acquia_cms/blob/develop/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Acquia CMS has been officially renamed to Acquia Drupal Stater Kit."
+  - field: repository
+    value: https://github.com/acquia/acquia_cms
+    url: https://github.com/acquia/acquia_cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://docs.acquia.com
+    url: https://github.com/acquia/acquia_cms/blob/develop/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "User-facing documentation for Acquia Drupal Starter Kit lives on"
+  - field: maintainer
+    value: Acquia, Inc.
+    url: https://github.com/acquia/acquia_cms/blob/develop/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright (C) 2021 Acquia, Inc."
+  - field: maintainerType
+    value: company
+    url: https://www.acquia.com
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright © 2026 Acquia, Inc. All Rights Reserved."
+  - field: repoOwnerType
+    value: Organization
+    url: https://github.com/acquia/acquia_cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: hqCountry
+    value: US
+    url: https://www.acquia.com
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Boston MA, 02109"
+  - field: categories
+    value: [cms, distribution]
+    url: https://github.com/acquia/acquia_cms
+    checkedAt: 2026-10-20
+    via: api
+    quote: "Low or no-code site building for Drupal within the Acquia Platform."
+  - field: basedOn
+    value: [Drupal]
+    url: https://github.com/acquia/acquia_cms/blob/develop/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "An opinionated implementation of Drupal 9 and above"
+  - field: language
+    value: PHP
+    url: https://github.com/acquia/acquia_cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: php
+    url: https://repo.packagist.org/p2/acquia/acquia_cms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: installMethod
+    value: composer template
+    url: https://github.com/acquia/acquia_cms/blob/develop/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Acquia Drupal Starter Kit Composer template"
+  - field: license
+    value: GPL-2.0
+    url: https://github.com/acquia/acquia_cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: license
+    value: GPL-2.0-or-later
+    url: https://repo.packagist.org/p2/acquia/acquia_cms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: license
+    value: GPL-2.0
+    url: https://github.com/acquia/acquia_cms/blob/develop/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "GNU General Public License version 2 as published by the Free Software Foundation."
+  - field: currentMajor
+    value: 2
+    url: https://repo.packagist.org/p2/acquia/acquia_cms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2024-10-29
+    url: https://github.com/acquia/acquia_cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 38
+    url: https://github.com/acquia/acquia_cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: 462103
+    url: https://packagist.org/packages/acquia/acquia_cms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: acquia/acquia_cms
+    url: https://packagist.org/packages/acquia/acquia_cms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/acquia/acquia_cms
+    checkedAt: 2026-10-20
+    via: api
+notFound: [homepage, runtimeMin, runsAs, renderingModes, databases, contentStore, adminUi, pricingPage, firstRelease, parent, endoflifeId, contributors, usageShare, pluginCount, forum]
+unreadable: []
+notes: >
+  The README says "Acquia CMS has been officially renamed to Acquia Drupal Stater Kit" (spelling as published), so the name fact follows the README and the CSV name "Acquia CMS" is the former name; the id stays acquia-cms. The repository is a Drupal module on Packagist (type drupal-module, package acquia/acquia_cms); the installable project is the Composer template the README links, which is not in this repository, so its install page was not read. The license is stated three ways: GitHub reports GPL-2.0, Packagist reports GPL-2.0-or-later, and the README names version 2 as published by the FSF; the "or later" clause is the only difference and was not resolved. No product website was found; the repository is its only page, and www.acquia.com is the company site and is cited only for the company address and copyright. docs is the Acquia documentation site the README links, which covers all Acquia products. The newest stable Packagist version matches the latest GitHub release; the repository is not archived and the package is not abandoned, so no end signal applies. The Packagist require lists the Drush and Drupal module dependencies but no PHP or Drupal core minimum, so runtimeMin is not-found.

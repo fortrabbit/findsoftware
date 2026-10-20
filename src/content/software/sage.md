@@ -9,8 +9,8 @@ category:
   - cms
 description: WordPress starter theme that uses Laravel Blade templates, Vite and Tailwind CSS.
 status: active
-maintainer: Roots
-maintainerType: community
+maintainer: Roots Software LLC
+maintainerType: company
 language: php
 runtime:
   - php
@@ -42,8 +42,8 @@ sources:
     url: https://roots.io/sage/docs/installation/
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://roots.io/sage/docs/installation/
-    checkedAt: 2026-10-19
+    url: https://github.com/roots/sage/blob/main/LICENSE.md
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://roots.io/sage/docs/installation/
     checkedAt: 2026-10-19

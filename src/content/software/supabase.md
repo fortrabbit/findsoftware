@@ -11,7 +11,7 @@ category:
   - database
 description: Open-source development platform built around a dedicated Postgres database, with authentication, storage and APIs.
 status: active
-maintainer: Supabase
+maintainer: Supabase Pte. Ltd.
 maintainerType: company
 language: typescript
 contentStore:
@@ -40,8 +40,8 @@ sources:
     url: https://supabase.com/docs
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://supabase.com/company
-    checkedAt: 2026-10-19
+    url: https://supabase.com/terms
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://supabase.com/company
     checkedAt: 2026-10-19

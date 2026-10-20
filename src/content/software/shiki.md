@@ -42,8 +42,8 @@ sources:
     url: https://shiki.style/guide/install
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://api.github.com/repos/shikijs/shiki
-    checkedAt: 2026-10-19
+    url: https://shiki.style/
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://api.github.com/repos/shikijs/shiki
     checkedAt: 2026-10-19

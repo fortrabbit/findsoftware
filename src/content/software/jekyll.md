@@ -7,6 +7,7 @@ urls:
   docs: https://jekyllrb.com/docs/
 category:
   - ssg
+  - cms
 description: Ruby static site generator that turns plain text, Markdown and Liquid templates into websites and blogs.
 status: active
 maintainer: Jekyll core team
@@ -52,8 +53,8 @@ sources:
     url: https://endoflife.date/api/jekyll.json
     checkedAt: 2026-10-18
   - field: maintainer
-    url: https://jekyllrb.com/docs/community/
-    checkedAt: 2026-10-18
+    url: https://jekyllrb.com/
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://jekyllrb.com/team/
     checkedAt: 2026-10-18

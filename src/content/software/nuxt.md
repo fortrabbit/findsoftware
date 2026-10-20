@@ -66,7 +66,7 @@ sources:
     checkedAt: 2026-10-18
   - field: maintainer
     url: https://nuxt.com/team
-    checkedAt: 2026-10-18
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://nuxt.com/team
     checkedAt: 2026-10-18

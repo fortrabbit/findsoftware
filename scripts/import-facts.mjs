@@ -47,7 +47,7 @@ const categoryMap = {
   bdd: 'testing',
   billing: 'e-commerce',
   'block-editor': 'ui-library',
-  blog: '',
+  blog: 'cms',
   boilerplate: '',
   book: 'ssg',
   booking: 'e-commerce',
@@ -382,10 +382,10 @@ const openLicense = /\b(MIT|Apache|BSD|A?GPL|LGPL|MPL|ISC|OSL|AFL|EUPL|Zlib|Unli
 const restrictedLicense = /\b(BUSL|BSL|SSPL|Elastic|FSL|RSAL|Commons Clause|Sustainable|proprietary|EULA|No Charge|custom)/i;
 const enterprisePart = /enterprise|\bee\/|x-pack|commercial licen[cs]e/i;
 const foundationName = /foundation|association|conservancy|LF Projects|\be\.\s?V\.|non-?profit|OpenJS/i;
-const legalForm = /\b(Inc|LLC|Ltd|Limited|GmbH|AG|SAS|S\.A|SA|srl|s\.r\.o|Pty|B\.V|BV|KG|Corp|Corporation|plc|Oy|AB|SARL)\b/;
+const legalForm = /\b(Inc|LLC|Ltd|Limited|GmbH|AG|SAS|S\.A|SA|srl|s\.r\.o|Pty|Pte|Pvt|B\.V|BV|KG|Corp|Corporation|Co|plc|Oy|OÜ|AB|A\/S|SARL|sp\. z o\.o)(?![\p{L}])/u;
 const ruled = { licenseModel: { rule: 0, research: 0 }, maintainerType: { rule: 0, research: 0 } };
 
-function licenseModelOf({ status, licenses, repository, paidEdition }) {
+function licenseModelOf({ status, licenses, repository, sourcePublic, paidEdition }) {
   if (status === 'hosted-service') return 'saas';
   // A restricted license offered as an alternative to an open one is a choice; on its own it covers a part.
   // FSL-1.1-Apache-2.0 names an open license it turns into later, so an open name without "or" is not a choice.
@@ -393,7 +393,8 @@ function licenseModelOf({ status, licenses, repository, paidEdition }) {
   const open = licenses.some(isOpen);
   const restrictedPart = licenses.some((statement) => restrictedLicense.test(statement) && !isOpen(statement));
   if (open) return restrictedPart || paidEdition || licenses.some((statement) => enterprisePart.test(statement)) ? 'open-core' : 'open-source';
-  if (restrictedPart) return repository ? 'source-available' : 'commercial';
+  // A repository can hold only a README and an issue tracker; sourcePublic false records that.
+  if (restrictedPart) return repository && sourcePublic !== false ? 'source-available' : 'commercial';
   return undefined;
 }
 
@@ -547,7 +548,7 @@ for (const file of facts) {
   const paidEdition = [...(byField.get('paidEdition') ?? []), ...(byField.get('licenseModel') ?? [])].some(
     (fact) => fact.quote && (fact.field === 'paidEdition' || asList(fact.value).includes('open-core')),
   );
-  const derivedModel = licenseModelOf({ status: record.status, licenses: all('license').map(String), repository: urls.repository, paidEdition });
+  const derivedModel = licenseModelOf({ status: record.status, licenses: all('license').map(String), repository: urls.repository, sourcePublic: first('sourcePublic'), paidEdition });
   const licenseModel = derivedModel ?? mapped(first('licenseModel'), {}, vocab('licenseModel'))[0];
   if (licenseModel) {
     record.licenseModel = licenseModel;

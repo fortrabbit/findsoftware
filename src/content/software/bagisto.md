@@ -10,7 +10,7 @@ category:
   - e-commerce
 description: Open-source Laravel eCommerce platform with a multi-vendor marketplace option.
 status: active
-maintainer: Webkul
+maintainer: Webkul Software Pvt. Ltd.
 maintainerType: company
 language: php
 runtime:
@@ -52,8 +52,8 @@ sources:
     url: https://github.com/bagisto/bagisto
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://bagisto.com/en/
-    checkedAt: 2026-10-19
+    url: https://webkul.com/about/
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://bagisto.com/en/
     checkedAt: 2026-10-19

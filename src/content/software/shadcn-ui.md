@@ -37,8 +37,8 @@ sources:
     url: https://ui.shadcn.com/docs/installation
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://registry.npmjs.org/shadcn
-    checkedAt: 2026-10-19
+    url: https://github.com/shadcn-ui/ui/blob/main/LICENSE.md
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://registry.npmjs.org/shadcn
     checkedAt: 2026-10-19

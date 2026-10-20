@@ -57,8 +57,8 @@ sources:
     url: https://github.com/honojs/hono/blob/v4.13.13/LICENSE
     checkedAt: 2026-10-19
   - field: maintainer
-    url: https://github.com/honojs/hono/blob/v4.13.13/LICENSE
-    checkedAt: 2026-10-19
+    url: https://hono.dev/
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://github.com/honojs/hono/blob/v4.13.13/LICENSE
     checkedAt: 2026-10-19

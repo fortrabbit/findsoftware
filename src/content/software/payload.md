@@ -14,7 +14,7 @@ category:
   - e-commerce
 description: TypeScript framework that runs inside a Next.js app and generates an admin panel, database schema and REST, GraphQL and local APIs from one config, used as a headless CMS or application backend.
 status: active
-maintainer: Payload
+maintainer: Payload CMS, Inc.
 maintainerType: company
 parent: Figma
 hqCountry: US
@@ -67,8 +67,8 @@ sources:
     url: https://payloadcms.com/
     checkedAt: 2026-10-18
   - field: maintainer
-    url: https://api.github.com/orgs/payloadcms
-    checkedAt: 2026-10-18
+    url: https://payloadcms.com/terms
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://payloadcms.com/blog/payload-is-joining-figma
     checkedAt: 2026-10-18

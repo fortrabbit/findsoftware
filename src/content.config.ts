@@ -7,7 +7,7 @@ import { asideOf, hiddenStatuses, vocabulary } from './lib/fields';
 /**
  * This file is a governance artifact, not a type definition.
  *
- * Four fields are required of a listed record — id, name, urls.home, category.
+ * Four fields are required of a listed record — id, name, a home or repository URL, category.
  * Everything else is optional, so absent means unknown, renders as `?`, and the
  * build stays green. Nothing here may express a rank, score, boost or weight;
  * scripts/validate.ts asserts that no such field has appeared.
@@ -34,7 +34,7 @@ const figure = z.object({
 
 const providerFields = z
   .object({
-    // Required — the four fields without which a record is not a record.
+    // Required — the fields without which a record is not a record.
     id: z.string(),
     name: z.string(),
     /*
@@ -43,7 +43,7 @@ const providerFields = z
      */
     urls: z
       .object({
-        home: publicUrl,
+        home: publicUrl.optional(),
         repository: publicUrl.optional(),
         docs: publicUrl.optional(),
         pricing: publicUrl.optional(),
@@ -163,12 +163,16 @@ const providerFields = z
     }
 
     /*
-     * A provider that has stopped trading is the one case with nothing to link
-     * to: the domain is parked, sold, or redirected to whoever bought the
-     * customers. Every other record has a home page, including a stub.
+     * A project with no website of its own links its repository instead, and a
+     * stopped one may have neither: the domain is parked or sold. The repository
+     * never stands in as the home page, so the two links stay distinct facts.
      */
-    if (record.status !== 'discontinued' && !record.urls?.home) {
-      ctx.addIssue({ code: 'custom', path: ['urls', 'home'], message: 'Required unless the project has stopped' });
+    if (record.status !== 'discontinued' && !record.urls?.home && !record.urls?.repository) {
+      ctx.addIssue({
+        code: 'custom',
+        path: ['urls', 'home'],
+        message: 'Required unless the project has a repository or has stopped',
+      });
     }
   });
 

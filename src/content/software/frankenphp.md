@@ -41,7 +41,7 @@ sources:
     checkedAt: 2026-10-19
   - field: maintainer
     url: https://frankenphp.dev/
-    checkedAt: 2026-10-19
+    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://frankenphp.dev/
     checkedAt: 2026-10-19
