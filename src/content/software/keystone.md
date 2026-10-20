@@ -105,6 +105,9 @@ sources:
   - field: licenseModel
     url: https://api.github.com/repos/keystonejs/keystone
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://registry.npmjs.org/@keystone-6/core/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://api.github.com/repos/keystonejs/keystone/releases/latest
     checkedAt: 2026-10-18

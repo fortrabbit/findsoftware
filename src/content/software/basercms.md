@@ -83,6 +83,9 @@ sources:
   - field: licenseModel
     url: https://github.com/baserproject/basercms
     checkedAt: 2026-10-19
+  - field: currentMajor
+    url: https://api.github.com/repos/baserproject/basercms/releases/latest
+    checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/baserproject/basercms/releases/latest
     checkedAt: 2026-10-19

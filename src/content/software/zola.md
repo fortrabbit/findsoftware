@@ -92,6 +92,9 @@ sources:
   - field: licenseModel
     url: https://github.com/getzola/zola
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://github.com/getzola/zola/releases/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/getzola/zola/releases/latest
     checkedAt: 2026-10-18

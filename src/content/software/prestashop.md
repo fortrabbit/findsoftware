@@ -101,6 +101,9 @@ sources:
   - field: licenseModel
     url: https://www.prestashop.com/en
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://api.github.com/repos/PrestaShop/PrestaShop/releases/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://api.github.com/repos/PrestaShop/PrestaShop/releases/latest
     checkedAt: 2026-10-18

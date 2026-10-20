@@ -1,0 +1,90 @@
+id: ddev
+name: DDEV
+status: accepted
+checkedAt: 2026-10-19
+description: Command-line tool that runs Docker-based local development environments for PHP and Node.js web projects.
+facts:
+  - field: homepage
+    value: https://ddev.com
+    url: https://ddev.com/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Docker-based PHP and Node.js development environments."
+  - field: repository
+    value: https://github.com/ddev/ddev
+    url: https://github.com/ddev/ddev
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://docs.ddev.com/en/stable/
+    url: https://docs.ddev.com/en/stable/
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: DDEV (GitHub organization ddev)
+    url: https://github.com/ddev/ddev
+    checkedAt: 2026-10-19
+    via: api
+  - field: categories
+    value: [local-dev-env]
+    url: https://ddev.com/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Docker-based PHP and Node.js development environments."
+  - field: language
+    value: Go
+    url: https://github.com/ddev/ddev
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [go binary]
+    url: https://docs.ddev.com/en/stable/users/install/ddev-installation/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "It downloads, verifies, and sets up the"
+  - field: runsAs
+    value: [local]
+    url: https://ddev.com/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Docker-based PHP and Node.js development environments."
+  - field: installMethod
+    value: [homebrew, install script, apt and yum packages]
+    url: https://docs.ddev.com/en/stable/users/install/ddev-installation/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "is the easiest and most reliable way to install and"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/ddev/ddev
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/ddev/ddev
+    checkedAt: 2026-10-19
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/ddev/ddev/releases/tag/v1.25.4
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-02
+    url: https://github.com/ddev/ddev/releases/tag/v1.25.4
+    checkedAt: 2026-10-19
+    via: api
+  - field: pluginDirectory
+    value: https://addons.ddev.com
+    url: https://docs.ddev.com/en/stable/
+    checkedAt: 2026-10-19
+    via: page
+  - field: githubStargazers
+    value: 3923
+    url: https://github.com/ddev/ddev
+    checkedAt: 2026-10-19
+    via: api
+notFound: [firstRelease, runtimeMin, pricingPage, hqCountry, maintainerType, contributors, endoflifeId, forum]
+unreadable: []
+notes: >
+  DDEV needs a Docker provider on the developer's machine; the install page says "Once you’ve installed a Docker provider, you’re ready to install DDEV!" This is a requirement, so the docker field (official image) is not filled. The release is v1.25.4 (GitHub, published 2026-09-02); the install page's Homebrew and script examples mention v1.24.10 as an example version only. The repository created_at (2017) is not a first release. GitHub stars were read 2026-10-19. The CSV row lists 3.9k stars, which matches the API value of 3923.

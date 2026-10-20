@@ -96,6 +96,9 @@ sources:
   - field: licenseModel
     url: https://github.com/hexojs/hexo
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://registry.npmjs.org/hexo/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/hexojs/hexo/releases/latest
     checkedAt: 2026-10-18

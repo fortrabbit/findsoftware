@@ -153,21 +153,13 @@ facts:
     url: https://wordpress.org/about/
     checkedAt: 2026-10-18
     via: page
-  - field: latestVersion
-    value: 7.1.3
+  - field: currentMajor
+    value: 7
     url: https://api.wordpress.org/core/version-check/1.7/
     checkedAt: 2026-10-18
     via: api
   - field: latestReleaseDate
     value: 2026-10-06
-    url: https://endoflife.date/api/wordpress.json
-    checkedAt: 2026-10-18
-    via: api
-  - field: supportedVersions
-    value:
-      - cycle: "7.1"
-        php: "7.4 - 8.5"
-        support: true
     url: https://endoflife.date/api/wordpress.json
     checkedAt: 2026-10-18
     via: api
@@ -198,11 +190,6 @@ facts:
     checkedAt: 2026-10-18
     via: page
     quote: "the platform of choice for over 43% of all sites across the web"
-  - field: versionShare
-    value: per-version share of WordPress installs
-    url: https://api.wordpress.org/stats/wordpress/1.0/
-    checkedAt: 2026-10-18
-    via: api
   - field: pluginDirectory
     value: https://wordpress.org/plugins/
     url: https://api.wordpress.org/plugins/info/1.2/?action=query_plugins&request[per_page]=1

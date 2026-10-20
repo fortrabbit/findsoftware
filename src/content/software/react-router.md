@@ -103,6 +103,9 @@ sources:
   - field: licenseModel
     url: https://github.com/remix-run/react-router
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://registry.npmjs.org/react-router/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/remix-run/react-router/releases/tag/react-router@8.4.0
     checkedAt: 2026-10-18

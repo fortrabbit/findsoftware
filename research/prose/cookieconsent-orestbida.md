@@ -1,0 +1,1 @@
+CookieConsent is a consent management library written in vanilla JavaScript. It shows a cookie banner and holds back scripts until the visitor consents. The library runs in the visitor's browser, loaded from a CDN or installed from npm, so the site needs no server process for it.

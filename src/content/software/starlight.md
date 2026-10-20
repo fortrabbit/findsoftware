@@ -102,6 +102,9 @@ sources:
   - field: licenseModel
     url: https://github.com/withastro/starlight
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://registry.npmjs.org/@astrojs/starlight/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/withastro/starlight/releases/latest
     checkedAt: 2026-10-18

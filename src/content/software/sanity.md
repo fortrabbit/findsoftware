@@ -101,6 +101,9 @@ sources:
   - field: urls
     url: https://www.sanity.io/pricing
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://api.github.com/repos/sanity-io/sanity/releases/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://api.github.com/repos/sanity-io/sanity/releases/latest
     checkedAt: 2026-10-18

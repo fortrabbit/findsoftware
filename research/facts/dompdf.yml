@@ -1,0 +1,119 @@
+id: dompdf
+name: Dompdf
+status: accepted
+checkedAt: 2026-10-19
+description: "PHP library that converts HTML and CSS to PDF documents."
+facts:
+  - field: homepage
+    value: "https://dompdf.github.io/"
+    url: "https://dompdf.github.io/"
+    checkedAt: 2026-10-19
+    via: page
+    quote: "dompdf is an HTML to PDF converter"
+  - field: repository
+    value: "https://github.com/dompdf/dompdf"
+    url: "https://api.github.com/repos/dompdf/dompdf"
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: "https://github.com/dompdf/dompdf/blob/v3.1.6/README.md"
+    url: "https://github.com/dompdf/dompdf/blob/v3.1.6/README.md"
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: "dompdf project (GitHub organization dompdf)"
+    url: "https://dompdf.github.io/"
+    checkedAt: 2026-10-19
+    via: page
+    quote: "dompdf project"
+  - field: maintainerType
+    value: "community"
+    url: "https://api.github.com/repos/dompdf/dompdf"
+    checkedAt: 2026-10-19
+    via: api
+  - field: categories
+    value: ["html-to-pdf", "pdf-generation"]
+    url: "https://dompdf.github.io/"
+    checkedAt: 2026-10-19
+    via: page
+  - field: language
+    value: "PHP"
+    url: "https://api.github.com/repos/dompdf/dompdf"
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: ["php"]
+    url: "https://dompdf.github.io/"
+    checkedAt: 2026-10-19
+    via: page
+    quote: "PHP version 7.1 or higher"
+  - field: runtimeMin
+    value: "7.1"
+    url: "https://repo.packagist.org/p2/dompdf/dompdf.json"
+    checkedAt: 2026-10-19
+    via: api
+  - field: installMethod
+    value: "composer require dompdf/dompdf"
+    url: "https://github.com/dompdf/dompdf/blob/v3.1.6/README.md"
+    checkedAt: 2026-10-19
+    via: page
+  - field: runsAs
+    value: ["per-request"]
+    url: "https://github.com/dompdf/dompdf/blob/v3.1.6/README.md"
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Require dompdf and it's dependencies in your PHP."
+  - field: license
+    value: "LGPL-2.1"
+    url: "https://api.github.com/repos/dompdf/dompdf"
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: "open-source"
+    url: "https://api.github.com/repos/dompdf/dompdf"
+    checkedAt: 2026-10-19
+    via: api
+  - field: currentMajor
+    value: "3"
+    url: "https://repo.packagist.org/p2/dompdf/dompdf.json"
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: "2026-07-20"
+    url: "https://api.github.com/repos/dompdf/dompdf/releases/latest"
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 11198
+    url: "https://api.github.com/repos/dompdf/dompdf"
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 176
+    url: "https://api.github.com/repos/dompdf/dompdf/contributors"
+    checkedAt: 2026-10-19
+    via: api
+  - field: packagistName
+    value: "dompdf/dompdf"
+    url: "https://packagist.org/packages/dompdf/dompdf"
+    checkedAt: 2026-10-19
+    via: api
+  - field: packagistDownloads
+    value: "218979915 (total)"
+    url: "https://packagist.org/packages/dompdf/dompdf.json"
+    checkedAt: 2026-10-19
+    via: api
+  - field: packagistDownloads
+    value: "10575392 (monthly)"
+    url: "https://packagist.org/packages/dompdf/dompdf.json"
+    checkedAt: 2026-10-19
+    via: api
+  - field: x
+    value: "http://www.twitter.com/dompdf"
+    url: "https://dompdf.github.io/"
+    checkedAt: 2026-10-19
+    via: page
+notFound: [firstRelease, parent, hqCountry, docker, endoflifeId, pricingPage, discord, forum, subreddit, mastodon, bluesky, newsletter, usageShare]
+unreadable: []
+notes: >
+  Dompdf is a library that a PHP application requires, so it has no server of its own; runsAs per-request reflects the PHP runtime that loads it. The composer require pulls masterminds/html5, dompdf/php-font-lib and dompdf/php-svg-lib, and the homepage lists the PHP extensions DOM and MBString as requirements. The composer constraint of the latest stable tag is "^7.1 || ^8.0"; runtimeMin records its lower bound. The homepage lists PDFLib as an optional PDF backend that needs a PECL extension, and says the bundled R&OS CPDF class needs no external PDF library. The homepage says the library does not tolerate poorly formed HTML well and suggests the built-in HTML5 parser or a validator, and that a table row must fit on one page. The maintainer is named as "dompdf project" on the homepage; that page names no company, so maintainerType community follows from the organization. The homepage's x link is the twitter.com address it still publishes.

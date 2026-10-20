@@ -103,6 +103,9 @@ sources:
   - field: licenseModel
     url: https://github.com/hydephp/hyde
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://github.com/hydephp/hyde/releases/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/hydephp/hyde/releases/latest
     checkedAt: 2026-10-18

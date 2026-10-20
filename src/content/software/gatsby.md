@@ -112,6 +112,9 @@ sources:
   - field: licenseModel
     url: https://www.netlify.com/press/netlify-acquires-gatsby-inc-to-accelerate-adoption-of-composable-web-architectures/
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://registry.npmjs.org/gatsby/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/gatsbyjs/gatsby/releases/latest
     checkedAt: 2026-10-18

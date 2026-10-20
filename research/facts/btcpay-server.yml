@@ -1,0 +1,96 @@
+id: btcpay-server
+name: BTCPay Server
+status: accepted
+checkedAt: 2026-10-19
+description: "Self-hosted, open-source cryptocurrency payment processor that sends payments directly to the merchant's own wallet."
+facts:
+  - field: homepage
+    value: https://btcpayserver.org
+    url: https://btcpayserver.org
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: https://github.com/btcpayserver/btcpayserver
+    url: https://github.com/btcpayserver/btcpayserver
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://docs.btcpayserver.org
+    url: https://docs.btcpayserver.org
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: MIT
+    url: https://github.com/btcpayserver/btcpayserver
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://docs.btcpayserver.org/Deployment/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "BTCPay is a free and open-source cryptocurrency payment processor"
+  - field: categories
+    value: [payment-processor, cryptocurrency]
+    url: https://btcpayserver.org
+    checkedAt: 2026-10-19
+    via: page
+    quote: "self-hosted, open-source cryptocurrency payment processor"
+  - field: language
+    value: C#
+    url: https://github.com/btcpayserver/btcpayserver
+    checkedAt: 2026-10-19
+    via: api
+  - field: installMethod
+    value: [docker, manual]
+    url: https://docs.btcpayserver.org/Deployment/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Manual deployments and Hardware builds are not recommended for production environments"
+  - field: docker
+    value: official Docker deployment
+    url: https://docs.btcpayserver.org/Docker/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "This documentation covers the official Docker deployment of BTCPay Server."
+  - field: databases
+    value: [postgresql]
+    url: https://docs.btcpayserver.org/Docker/architecture/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "PostgreSQL stores BTCPay Server and plugin data."
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.btcpayserver.org/Docker/installation/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Generates the selected Compose stack and missing secret files."
+  - field: maintainer
+    value: btcpayserver
+    url: https://github.com/btcpayserver/btcpayserver
+    checkedAt: 2026-10-19
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://github.com/btcpayserver/btcpayserver/releases
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-06
+    url: https://github.com/btcpayserver/btcpayserver/releases
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 7805
+    url: https://github.com/btcpayserver/btcpayserver
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 242
+    url: https://github.com/btcpayserver/btcpayserver
+    checkedAt: 2026-10-19
+    via: api
+notFound: [runtime, runtimeMin, maintainerType, hqCountry, firstRelease, endoflifeId, pricingPage, pluginDirectory, selfHostOption]
+unreadable: []
+notes: >
+  The stack documented on the architecture page comprises BTCPay Server, PostgreSQL, NBXplorer, Bitcoin Core and Nginx; no field exists for required services, so they are listed here only. The installation page calls for "a dedicated Linux host" sized by the server specifications guide. Deployment page says BTCPay can be self-hosted or run on a third-party host, which does not change status. Language C# is from the GitHub API; the pages read did not name the .NET runtime, so runtime is not recorded. The MIT copyright line names btcpayserver, which is recorded as maintainer; no maintainer type or country is stated.

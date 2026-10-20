@@ -1,0 +1,1 @@
+Apache ECharts draws interactive charts and data visualizations in the visitor's browser. The library comes from npm, a CDN or a download from the project's site, and the [get-started guide](https://echarts.apache.org/handbook/en/get-started/) includes it in a plain HTML page. A static site can serve the library as a file, with no server-side process for the charts.

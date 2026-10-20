@@ -119,6 +119,9 @@ sources:
   - field: urls
     url: https://umbraco.com/pricing/
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://github.com/umbraco/Umbraco-CMS/releases
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/umbraco/Umbraco-CMS/releases
     checkedAt: 2026-10-18

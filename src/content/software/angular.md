@@ -98,6 +98,9 @@ sources:
   - field: licenseModel
     url: https://github.com/angular/angular
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://registry.npmjs.org/@angular/core/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/angular/angular/releases/tag/v22.2.3
     checkedAt: 2026-10-18

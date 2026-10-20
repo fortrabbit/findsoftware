@@ -85,6 +85,9 @@ sources:
   - field: language
     url: https://api.github.com/repos/storyblok/monoblok
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://api.github.com/repos/storyblok/monoblok/releases/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://api.github.com/repos/storyblok/monoblok/releases/latest
     checkedAt: 2026-10-18

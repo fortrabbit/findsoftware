@@ -127,8 +127,8 @@ facts:
     url: https://github.com/symfony/symfony
     checkedAt: 2026-10-18
     via: api
-  - field: latestVersion
-    value: v8.1.9
+  - field: currentMajor
+    value: 8
     url: https://github.com/symfony/symfony/releases
     checkedAt: 2026-10-18
     via: api
@@ -137,20 +137,6 @@ facts:
     url: https://github.com/symfony/symfony/releases
     checkedAt: 2026-10-18
     via: api
-  - field: supportedVersions
-    value:
-      - {cycle: "8.1", released: 2026-05-29, bugFixesUntil: 2027-01-31, securityUntil: 2027-01-31}
-      - {cycle: "7.4", lts: true, released: 2025-11-27, bugFixesUntil: 2028-11-30, securityUntil: 2029-11-30}
-      - {cycle: "6.4", lts: true, released: 2023-11-29, bugFixesUntil: 2026-11-30, securityUntil: 2027-11-30}
-    url: https://endoflife.date/api/symfony.json
-    checkedAt: 2026-10-18
-    via: api
-  - field: supportedVersions
-    value: ["8.1", "7.4", "6.4"]
-    url: https://symfony.com/releases
-    checkedAt: 2026-10-18
-    via: page
-    quote: "Maintained Symfony branches"
   - field: eolPolicy
     value: "https://symfony.com/doc/current/contributing/community/releases.html: standard versions get bug and security fixes for 8 months, LTS versions bug fixes for 3 years and security fixes for 4 years"
     url: https://symfony.com/doc/current/contributing/community/releases.html

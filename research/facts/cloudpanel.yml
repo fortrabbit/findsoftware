@@ -1,0 +1,101 @@
+id: cloudpanel
+name: CloudPanel
+status: accepted
+checkedAt: 2026-10-19
+description: Server control panel for configuring and managing virtual machines that run PHP, Node.js, Python and static websites.
+facts:
+  - field: homepage
+    value: https://www.cloudpanel.io
+    url: https://www.cloudpanel.io/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "CloudPanel is a free software to configure and manage a server"
+  - field: repository
+    value: https://github.com/cloudpanel-io/cloudpanel-ce
+    url: https://github.com/cloudpanel-io/cloudpanel-ce
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://www.cloudpanel.io/docs/v2/
+    url: https://www.cloudpanel.io/docs/v2/
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: MGT-COMMERCE GmbH
+    url: https://www.cloudpanel.io/imprint/
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainerType
+    value: company
+    url: https://www.cloudpanel.io/imprint/
+    checkedAt: 2026-10-19
+    via: page
+  - field: hqCountry
+    value: DE
+    url: https://www.cloudpanel.io/license-terms/
+    checkedAt: 2026-10-19
+    via: page
+  - field: categories
+    value: [control-panel]
+    url: https://www.cloudpanel.io/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "CloudPanel is a free software to configure and manage a server"
+  - field: installMethod
+    value: [cloud marketplace image, cloud installer, command line]
+    url: https://www.cloudpanel.io/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "On all other servers, do simply the"
+  - field: deployTargets
+    value: [aws, digitalocean, hetzner, google-compute-engine, microsoft-azure, vultr]
+    url: https://www.cloudpanel.io/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Quick launch the CloudPanel on"
+  - field: license
+    value: MGT-COMMERCE License Terms (proprietary)
+    url: https://www.cloudpanel.io/license-terms/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "The Software shall under no circumstances resell the Software"
+  - field: licenseModel
+    value: commercial
+    url: https://www.cloudpanel.io/license-terms/
+    checkedAt: 2026-10-19
+    via: page
+  - field: pricingPage
+    value: https://www.cloudpanel.io/pricing/
+    url: https://www.cloudpanel.io/pricing/
+    checkedAt: 2026-10-19
+    via: page
+  - field: currentMajor
+    value: 2
+    url: https://www.cloudpanel.io/docs/v2/changelog/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "v2.5.4 - [2026-07-01]"
+  - field: latestReleaseDate
+    value: 2026-07-01
+    url: https://github.com/cloudpanel-io/cloudpanel-ce/releases/tag/v2.5.4
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 1880
+    url: https://github.com/cloudpanel-io/cloudpanel-ce
+    checkedAt: 2026-10-19
+    via: api
+  - field: discord
+    value: https://discord.cloudpanel.io
+    url: https://www.cloudpanel.io/
+    checkedAt: 2026-10-19
+    via: page
+  - field: x
+    value: https://twitter.com/cloudpanel_io
+    url: https://www.cloudpanel.io/
+    checkedAt: 2026-10-19
+    via: page
+notFound: [firstRelease, language, runtime, runtimeMin, endoflifeId, contributors, pluginDirectory, forum, newsletter]
+unreadable: []
+notes: >
+  The CSV row says the source is not public and has no repository; the GitHub repository cloudpanel-io/cloudpanel-ce is public (created 2019, last push 2026-07-01, release v2.5.4), and its README names CloudPanel as the project. GitHub detects no license for it, and only the README was read, so the repository is recorded as a link without a source-code claim. The imprint names MGT-COMMERCE GmbH as the operator; hqCountry comes from the company address in the license terms. Requirements from the requirements page: Ubuntu 26.04, 24.04 and 22.04, Debian 13 and 12, x86 or ARM64, at least 1 core, 2 GB RAM and 10 GB disk. The technology-stack page says CloudPanel supports only virtual machines and no Linux containers. The technology-stack page lists PHP and Node.js versions but does not say how Node.js applications run, so no runsAs value is recorded: the stack lists what hosted sites run on, and no page read describes how CloudPanel itself runs; the pm2 deployment guide in the docs navigation was not read. The pricing page lists a Community Edition as "100% Free to use" for commercial and hobby sites; a managed service exists and is not recorded as a hosted-service. The CSV row lists adoption as "company behind it"; the company is recorded as maintainer, and no adoption figure beyond GitHub stars is recorded.

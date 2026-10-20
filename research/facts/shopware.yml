@@ -210,22 +210,14 @@ facts:
     url: https://www.shopware.com/en/pricing/
     checkedAt: 2026-10-18
     via: page
-  - field: latestVersion
-    value: 6.7.15.1
+  - field: currentMajor
+    value: 6
     url: https://api.github.com/repos/shopware/shopware/releases/latest
     checkedAt: 2026-10-18
     via: api
   - field: latestReleaseDate
     value: 2026-10-07
     url: https://api.github.com/repos/shopware/shopware/releases/latest
-    checkedAt: 2026-10-18
-    via: api
-  - field: supportedVersions
-    value:
-      - {cycle: "6.7", support: true, eol: 2028-02-28, php: "8.2 - 8.5"}
-      - {cycle: "6.6", support: 2025-06-17, eol: 2028-02-28, php: "8.2 - 8.5"}
-      - {cycle: "6.5", support: 2024-03-28, eol: 2027-02-28, php: "8.1 - 8.3"}
-    url: https://endoflife.date/api/shopware.json
     checkedAt: 2026-10-18
     via: api
   - field: eolPolicy

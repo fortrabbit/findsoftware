@@ -118,6 +118,9 @@ sources:
   - field: licenseModel
     url: https://github.com/django/django
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://pypi.org/pypi/django/json
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://pypi.org/pypi/django/6.1.2/json
     checkedAt: 2026-10-18

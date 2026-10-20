@@ -102,6 +102,9 @@ sources:
   - field: licenseModel
     url: https://api.github.com/repos/magento/magento2/readme
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://api.github.com/repos/magento/magento2/releases
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://api.github.com/repos/magento/magento2/releases
     checkedAt: 2026-10-18

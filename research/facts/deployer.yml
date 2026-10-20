@@ -1,0 +1,122 @@
+id: deployer
+name: Deployer
+status: accepted
+checkedAt: 2026-10-19
+description: "PHP deployment tool that runs deploy tasks on servers over SSH, with recipes for popular PHP frameworks and CMSs."
+facts:
+  - field: homepage
+    value: "https://deployer.org"
+    url: "https://deployer.org/"
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: "https://github.com/deployphp/deployer"
+    url: "https://api.github.com/repos/deployphp/deployer"
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: "https://deployer.org/docs/8.x/getting-started"
+    url: "https://deployer.org/docs/8.x/getting-started"
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: "deployphp (GitHub organization)"
+    url: "https://api.github.com/repos/deployphp/deployer"
+    checkedAt: 2026-10-19
+    via: api
+  - field: maintainerType
+    value: "community"
+    url: "https://api.github.com/repos/deployphp/deployer"
+    checkedAt: 2026-10-19
+    via: api
+  - field: categories
+    value: ["deploy-tool", "cli"]
+    url: "https://deployer.org/"
+    checkedAt: 2026-10-19
+    via: page
+    quote: "The deployment tool for PHP."
+  - field: language
+    value: "PHP"
+    url: "https://api.github.com/repos/deployphp/deployer"
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: ["php"]
+    url: "https://repo.packagist.org/p2/deployer/deployer.json"
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtimeMin
+    value: "PHP ^8.3"
+    url: "https://repo.packagist.org/p2/deployer/deployer.json"
+    checkedAt: 2026-10-19
+    via: api
+  - field: installMethod
+    value: "composer global require deployer/deployer"
+    url: "https://deployer.org/docs/8.x/installation"
+    checkedAt: 2026-10-19
+    via: page
+  - field: installMethod
+    value: "composer require --dev deployer/deployer"
+    url: "https://deployer.org/docs/8.x/installation"
+    checkedAt: 2026-10-19
+    via: page
+  - field: installMethod
+    value: "deployer.phar download, run with php deployer.phar"
+    url: "https://deployer.org/docs/8.x/installation"
+    checkedAt: 2026-10-19
+    via: page
+  - field: runsAs
+    value: ["local"]
+    url: "https://deployer.org/docs/8.x/installation"
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Project — recommended for CI/CD, pins the version per project."
+  - field: license
+    value: "MIT"
+    url: "https://api.github.com/repos/deployphp/deployer"
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: "open-source"
+    url: "https://api.github.com/repos/deployphp/deployer"
+    checkedAt: 2026-10-19
+    via: api
+  - field: currentMajor
+    value: "8"
+    url: "https://repo.packagist.org/p2/deployer/deployer.json"
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: "2026-05-18"
+    url: "https://api.github.com/repos/deployphp/deployer/releases/latest"
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 11115
+    url: "https://api.github.com/repos/deployphp/deployer"
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 479
+    url: "https://api.github.com/repos/deployphp/deployer/contributors"
+    checkedAt: 2026-10-19
+    via: api
+  - field: packagistName
+    value: "deployer/deployer"
+    url: "https://packagist.org/packages/deployer/deployer"
+    checkedAt: 2026-10-19
+    via: api
+  - field: packagistDownloads
+    value: "29661128 (total)"
+    url: "https://packagist.org/packages/deployer/deployer.json"
+    checkedAt: 2026-10-19
+    via: api
+  - field: packagistDownloads
+    value: "797922 (monthly)"
+    url: "https://packagist.org/packages/deployer/deployer.json"
+    checkedAt: 2026-10-19
+    via: api
+notFound: [firstRelease, parent, hqCountry, docker, endoflifeId, pricingPage, discord, forum, subreddit, mastodon, bluesky, x, newsletter, usageShare]
+unreadable: []
+notes: >
+  Deployer is a command-line tool that a developer or CI job runs; the deployed site runs on the target server, so runsAs is local only. The deploy tasks reach servers over SSH (remote_user and deploy_path in deploy.php); the provision recipe targets Ubuntu and installs the server stack; provisioning needs root SSH key login, which recent Ubuntu images disable by default, and the default layout keeps each release in its own folder with a current symlink (getting-started page). The homepage logo row names framework and CMS recipes (Laravel, Symfony, WordPress, Drupal, Magento, CakePHP, CodeIgniter, Yii, Contao, Shopware, TYPO3, Sulu); these are recipes on the recipes page, not separate records. maintainer is the deployphp GitHub organization. The docs example output names Anton Medvedev as a release author; no page states who maintains the project, so maintainerType community is inferred from the organization. Packagist monthly and total downloads are two figures with different periods. The homepage recipe counter is rendered by script and was not read. The 8.x docs path is the current one; the Deployer homepage lists 8.x as the default version. The api runtime min comes from the latest stable tag's composer require.

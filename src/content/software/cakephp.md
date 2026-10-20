@@ -105,6 +105,9 @@ sources:
   - field: licenseModel
     url: https://github.com/cakephp/cakephp
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://github.com/cakephp/cakephp/releases
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/cakephp/cakephp/releases
     checkedAt: 2026-10-18

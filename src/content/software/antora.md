@@ -67,6 +67,9 @@ sources:
   - field: licenseModel
     url: https://antora.org
     checkedAt: 2026-10-19
+  - field: currentMajor
+    url: https://registry.npmjs.org/@antora/cli/latest
+    checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://gitlab.com/api/v4/projects/antora%2Fantora/repository/tags?per_page=3&order_by=updated
     checkedAt: 2026-10-19

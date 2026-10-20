@@ -1,0 +1,118 @@
+id: certbot
+name: Certbot
+status: accepted
+checkedAt: 2026-10-19
+description: Command-line client that obtains and renews TLS certificates from Let's Encrypt and other ACME certificate authorities.
+facts:
+  - field: homepage
+    value: https://certbot.eff.org
+    url: https://certbot.eff.org
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: https://github.com/certbot/certbot
+    url: https://api.github.com/repos/certbot/certbot
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://eff-certbot.readthedocs.io/en/stable/
+    url: https://eff-certbot.readthedocs.io/en/stable/install.html
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: Electronic Frontier Foundation
+    url: https://www.eff.org/about
+    checkedAt: 2026-10-19
+    via: page
+    quote: "EFF is a donor-funded U.S. 501(c)(3) nonprofit organization"
+  - field: maintainerType
+    value: foundation
+    url: https://www.eff.org/about
+    checkedAt: 2026-10-19
+    via: page
+    quote: "EFF is a donor-funded U.S. 501(c)(3) nonprofit organization"
+  - field: categories
+    value: [acme-client, tls-tool]
+    url: https://certbot.eff.org
+    checkedAt: 2026-10-19
+    via: page
+    quote: "run Certbot once to automatically get free HTTPS certificates forever."
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/certbot/certbot
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://pypi.org/pypi/certbot/json
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtimeMin
+    value: "python >=3.10"
+    url: https://pypi.org/pypi/certbot/json
+    checkedAt: 2026-10-19
+    via: api
+  - field: installMethod
+    value: [snap, pip, docker]
+    url: https://eff-certbot.readthedocs.io/en/stable/install.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Snap (Recommended)"
+  - field: docker
+    value: certbot/certbot
+    url: https://eff-certbot.readthedocs.io/en/stable/install.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "certbot/certbot certonly"
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/certbot/certbot/main/LICENSE.txt
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Licensed Apache Version 2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/certbot/certbot/main/LICENSE.txt
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Licensed Apache Version 2.0"
+  - field: currentMajor
+    value: 5
+    url: https://api.github.com/repos/certbot/certbot/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-01
+    url: https://api.github.com/repos/certbot/certbot/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 33278
+    url: https://api.github.com/repos/certbot/certbot
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 560
+    url: https://api.github.com/repos/certbot/certbot/contributors?anon=true
+    checkedAt: 2026-10-19
+    via: api
+  - field: pypiName
+    value: certbot
+    url: https://pypi.org/pypi/certbot/json
+    checkedAt: 2026-10-19
+    via: api
+  - field: pypiDownloads
+    value: "304278 per week (last_week)"
+    url: https://pypistats.org/api/packages/certbot/recent
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [scheduled]
+    url: https://eff-certbot.readthedocs.io/en/stable/using.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "your system comes with automated renewal pre-installed"
+notFound: [hqCountry, parent, wikidata, pricingPage, pluginDirectory, forum, discord, subreddit, newsletter, usageShare, pluginCount, endoflifeId, firstRelease]
+unreadable: []
+notes: >
+  runsAs is scheduled: the renewal runs from the system crontab or a systemd timer, outside the request path. The maintainer is the Electronic Frontier Foundation, a US nonprofit; maintainerType foundation is the closest of the four values. hqCountry is not stated by the pages read: the EFF page gives only the 501(c)(3) status. PyPI reports license as null, so the license comes from LICENSE.txt in the repository; the GitHub API reports NOASSERTION. The Certbot page lists snap as recommended, pip as an alternative, and Docker with the caveat that most users should use the instructions on certbot.eff.org. endoflife.date has no Certbot product (404 on api/certbot.json), so endoflifeId is absent. PyPI reports requires_python >=3.10. No project-ended signal was found. firstRelease was not checked; the repository was created in 2014-11.

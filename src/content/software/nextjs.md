@@ -111,6 +111,9 @@ sources:
   - field: licenseModel
     url: https://github.com/vercel/next.js
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://registry.npmjs.org/next/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/vercel/next.js/releases/tag/v16.4.2
     checkedAt: 2026-10-18

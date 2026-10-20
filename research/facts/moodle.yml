@@ -1,0 +1,155 @@
+id: moodle
+name: Moodle
+status: accepted
+checkedAt: 2026-10-19
+description: Open-source learning management system written in PHP, used by universities, schools, companies and other organisations.
+facts:
+  - field: name
+    value: Moodle
+    url: https://github.com/moodle/moodle/blob/v5.3.0/README.md
+    checkedAt: 2026-10-19
+    via: page
+    quote: is the World's Open Source Learning Platform
+  - field: homepage
+    value: https://moodle.org/
+    url: https://api.github.com/repos/moodle/moodle
+    checkedAt: 2026-10-19
+    via: api
+  - field: repository
+    value: https://github.com/moodle/moodle
+    url: https://api.github.com/repos/moodle/moodle
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://docs.moodle.org/
+    url: https://github.com/moodle/moodle/blob/v5.3.0/README.md
+    checkedAt: 2026-10-19
+    via: page
+    quote: Read our User documentation
+  - field: maintainer
+    value: Moodle Pty Ltd
+    url: https://moodle.com/
+    checkedAt: 2026-10-19
+    via: page
+    quote: trademarks or registered trademarks of Moodle Pty Ltd
+  - field: categories
+    value:
+      - lms
+    url: https://github.com/moodle/moodle/blob/v5.3.0/README.md
+    checkedAt: 2026-10-19
+    via: page
+    quote: World's Open Source Learning Platform
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/moodle/moodle
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: php
+    url: https://github.com/moodle/moodle/blob/v5.3.0/composer.json
+    checkedAt: 2026-10-19
+    via: page
+    quote: '"php": ">=8.3.0"'
+  - field: runtimeMin
+    value: "8.3"
+    url: https://github.com/moodle/moodle/blob/v5.3.0/composer.json
+    checkedAt: 2026-10-19
+    via: page
+    quote: '"php": ">=8.3.0"'
+  - field: installMethod
+    value:
+      - download package and run on own web server
+    url: https://github.com/moodle/moodle/blob/v5.3.0/README.md
+    checkedAt: 2026-10-19
+    via: page
+    quote: run it on your own web server
+  - field: hostedOffering
+    value: MoodleCloud
+    url: https://github.com/moodle/moodle/blob/v5.3.0/README.md
+    checkedAt: 2026-10-19
+    via: page
+    quote: Moodle also offers hosting through both MoodleCloud
+  - field: license
+    value: GPL-3.0
+    url: https://api.github.com/repos/moodle/moodle
+    checkedAt: 2026-10-19
+    via: api
+  - field: license
+    value: GPL-3.0-or-later
+    url: https://github.com/moodle/moodle/blob/v5.3.0/composer.json
+    checkedAt: 2026-10-19
+    via: page
+    quote: GPL-3.0-or-later
+  - field: license
+    value: GPL version 3
+    url: https://github.com/moodle/moodle/blob/v5.3.0/README.md
+    checkedAt: 2026-10-19
+    via: page
+    quote: under version 3 of the GNU General Public License
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/moodle/moodle/blob/v5.3.0/README.md
+    checkedAt: 2026-10-19
+    via: page
+    quote: Moodle is provided freely as open source software
+  - field: currentMajor
+    value: "5"
+    url: https://endoflife.date/api/moodle.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-03
+    url: https://endoflife.date/api/moodle.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: endoflifeId
+    value: moodle
+    url: https://endoflife.date/api/moodle.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: repoCreated
+    value: 2009-12-16
+    url: https://api.github.com/repos/moodle/moodle
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 7503
+    url: https://api.github.com/repos/moodle/moodle
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 1383
+    url: https://api.github.com/repos/moodle/moodle/contributors
+    checkedAt: 2026-10-19
+    via: api
+notFound:
+  - firstRelease
+  - hqCountry
+  - parent
+  - forkOf
+  - successorOf
+  - maintainerType
+  - pricingPage
+  - packagistName
+  - npmName
+  - usageShare
+  - pluginCount
+  - pluginDirectory
+  - discord
+  - subreddit
+  - mastodon
+  - bluesky
+  - x
+  - newsletter
+  - multisite
+  - buildCommand
+  - outputDir
+  - deployTargets
+  - databases
+  - runsAs
+  - renderingModes
+  - contentStore
+unreadable:
+  - https://moodle.org/ (answers 403 with a bot challenge page)
+  - https://docs.moodle.org/ (answers 403 with a bot challenge page)
+notes: "moodle.org and docs.moodle.org answer 403 with a bot challenge to the generic user agent, so the install requirements, supported databases and runtime model are not recorded from those pages; the record needs them from a readable source before the prose can describe installation. The challenge was not worked around. The README, composer.json at the v5.3.0 tag, the GitHub API and endoflife.date were read instead. The README says Moodle is free and open source software run on the user's own web server, which is recorded as an installMethod; it does not state a runtime model, so runsAs is not recorded. The composer.json license is GPL-3.0-or-later and the README says version 3 of the GPL; both are kept. The moodle.com footer names Moodle Pty Ltd; no headquarters country is stated, so hqCountry stays out. The contributor count includes anonymous contributors where GitHub lists them. The CSV's note says the release date comes from the git tag; endoflife.date gives 2026-10-03 for 5.3.0 and is recorded."

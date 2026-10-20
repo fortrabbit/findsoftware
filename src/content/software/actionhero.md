@@ -60,6 +60,9 @@ sources:
   - field: licenseModel
     url: https://github.com/actionhero/actionhero/blob/master/LICENSE.txt
     checkedAt: 2026-10-19
+  - field: currentMajor
+    url: https://registry.npmjs.org/actionhero/latest
+    checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/actionhero/actionhero/releases/latest
     checkedAt: 2026-10-19

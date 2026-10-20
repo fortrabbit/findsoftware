@@ -1,0 +1,124 @@
+id: adminer
+name: Adminer
+status: accepted
+checkedAt: 2026-10-19
+description: Web-based database management tool distributed as a single PHP file.
+facts:
+  - field: homepage
+    value: https://www.adminer.org
+    url: https://www.adminer.org/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Adminer is available for:"
+  - field: repository
+    value: https://github.com/vrana/adminer
+    url: https://github.com/vrana/adminer
+    checkedAt: 2026-10-19
+    via: api
+  - field: maintainer
+    value: Jakub Vrána
+    url: https://repo.packagist.org/p2/vrana/adminer.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: maintainerType
+    value: individual
+    url: https://repo.packagist.org/p2/vrana/adminer.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: categories
+    value: [db-admin]
+    url: https://www.adminer.org/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Database management in a single PHP file"
+  - field: language
+    value: PHP
+    url: https://github.com/vrana/adminer
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://www.adminer.org/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Supports PHP 5.3+, 7 and 8 with enabled sessions"
+  - field: runtimeMin
+    value: ">=7.4"
+    url: https://repo.packagist.org/p2/vrana/adminer.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: runsAs
+    value: [per-request]
+    url: https://www.adminer.org/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Supports PHP 5.3+, 7 and 8 with enabled sessions"
+  - field: installMethod
+    value: [single PHP file download]
+    url: https://www.adminer.org/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Latest stable version"
+  - field: adminUi
+    value: yes, web browser interface
+    url: https://www.adminer.org/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Adminer is available for:"
+  - field: databases
+    value: [mysql, mariadb, postgresql, sqlite, mssql, oracle, cockroachdb]
+    url: https://www.adminer.org/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Works with"
+  - field: license
+    value: Apache-2.0
+    url: https://www.adminer.org/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Apache License or GPL 2"
+  - field: license
+    value: GPL-2.0-only
+    url: https://repo.packagist.org/p2/vrana/adminer.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://www.adminer.org/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Apache License or GPL 2"
+  - field: currentMajor
+    value: 6
+    url: https://github.com/vrana/adminer/releases/tag/v6.1.2
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-10
+    url: https://github.com/vrana/adminer/releases/tag/v6.1.2
+    checkedAt: 2026-10-19
+    via: api
+  - field: packagistName
+    value: vrana/adminer
+    url: https://packagist.org/packages/vrana/adminer.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: packagistDownloads
+    value: 3061779 (total)
+    url: https://packagist.org/packages/vrana/adminer.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: packagistDownloads
+    value: 20423 (monthly)
+    url: https://packagist.org/packages/vrana/adminer.json
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 7919
+    url: https://github.com/vrana/adminer
+    checkedAt: 2026-10-19
+    via: api
+notFound: [firstRelease, docs, hqCountry, contributors, endoflifeId, forum, discord, pricingPage]
+unreadable: ["https://github.com/vrana/adminer/blob/main/readme.md (404)"]
+notes: >
+  GitHub reports the license as NOASSERTION (other), so the license entries come from the homepage ("Apache License or GPL 2") and the Packagist metadata, which lists Apache-2.0 and GPL-2.0-only. The homepage says "Supports PHP 5.3+, 7 and 8" while the Packagist metadata for v6.1.2 requires PHP >=7.4; both statements are recorded, and runtimeMin takes the registry value because it describes the latest release. The Packagist "time" value (2014) is the package registration date, not a first release. The Docker Hub pull count in the candidate row (408.3M) was not checked against Docker Hub, so it is not recorded. The homepage lists Docker among user-contributed packages, not as an official image, so no docker field. The maintainer is listed as author on Packagist; no company is named on the pages read. packagistDownloads is recorded twice with its period in the value. githubStargazers was read 2026-10-19.

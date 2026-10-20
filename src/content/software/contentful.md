@@ -64,6 +64,9 @@ sources:
   - field: language
     url: https://api.github.com/repos/contentful/contentful.js
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://api.github.com/repos/contentful/contentful.js/releases/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://api.github.com/repos/contentful/contentful.js/releases/latest
     checkedAt: 2026-10-18

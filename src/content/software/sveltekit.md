@@ -102,6 +102,9 @@ sources:
   - field: licenseModel
     url: https://github.com/sveltejs/kit
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://registry.npmjs.org/@sveltejs/kit/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://registry.npmjs.org/@sveltejs/kit
     checkedAt: 2026-10-18

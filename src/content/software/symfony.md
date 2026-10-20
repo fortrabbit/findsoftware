@@ -105,6 +105,9 @@ sources:
   - field: licenseModel
     url: https://github.com/symfony/symfony
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://github.com/symfony/symfony/releases
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/symfony/symfony/releases
     checkedAt: 2026-10-18

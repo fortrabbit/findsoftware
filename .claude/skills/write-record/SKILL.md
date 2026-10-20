@@ -56,7 +56,7 @@ A page counts as read when it answers 200 with the page itself, not a bot challe
 
 ## 4. Collect facts
 
-Record nothing that changes more than once a year: the current major version, never a dot release; the lowest supported runtime version (Node major, PHP or Python minor), never an exact dependency range. A rounded count is fine where a script cannot read it. Look for every kind in the starter list below. Record what the sources state, in their terms. Coin a new camelCase name for anything recurring that the list lacks, and say so in `notes`. Do not record a fact you could not check; list what you looked for and did not find under `notFound`.
+Record nothing that changes more than once a year: the current major version, never a dot release (no `latestVersion`, no supported-version lists: endoflife.date holds those); the lowest supported runtime version (Node major, PHP or Python minor), never an exact dependency range. A rounded count is fine where a script cannot read it. Look for every kind in the starter list below. Record what the sources state, in their terms. Coin a new camelCase name for anything recurring that the list lacks, and say so in `notes`. Do not record a fact you could not check; list what you looked for and did not find under `notFound`.
 
 **Identity**: `name`, `homepage`, `repository`, `docs`, `description` (one sentence, what it is), `firstRelease` (year), `maintainer` (company or person), `maintainerType` (company, foundation, community, individual), `hqCountry` (of the company, ISO alpha-2), `parent` (owning company), `forkOf`, `successorOf`, `alternativeTo` (only where the project's own pages name it, such as a migration guide or a comparison page), `wikidata`
 
@@ -64,7 +64,7 @@ Record nothing that changes more than once a year: the current major version, ne
 
 **Content**: `contentStore` (where the software itself keeps content: database, flat-file, git; leave it out when it only reads content from another service), `databases` (mysql, postgres, sqlite, mongodb...), `adminUi` (yes or no, and what kind), `headlessApi` (rest, graphql, none), `templating` (twig, blade, jsx, vue, liquid, go templates...), `i18n`, `multisite`, `livePreview` (editor sees unsaved changes on the site), `userRoles`, `sso` (SAML, OIDC, LDAP), `importsFrom` (documented migration or import from other software, by name)
 
-**Rendering and deploy**: `renderingModes` (static, server, spa, isr; a framework that mixes static and server routes gets both), `installMethod` (composer create-project, npm create, binary download, docker...), `deployTargets` (official adapters or documented hosts), `runsAs` (what the live site needs from the host, every value that applies: `static` the output is files any web space serves; `per-request` the web server starts it for each request and nothing stays running, as with PHP; `always-on` a process that keeps running and serves requests; `browser` it runs in the visitor's browser only; `local` used on a developer's machine or in CI, never on the live site. Cite the install, deployment or getting-started page that shows it), `docker` (official image)
+**Rendering and deploy**: `renderingModes` (static, server, spa, isr; a framework that mixes static and server routes gets both), `installMethod` (composer create-project, npm create, binary download, docker...), `runsAs` (what the live site needs from the host, every value that applies: `static` the output is files any web space serves; `per-request` the web server starts it for each request and nothing stays running, as with PHP; `always-on` a process that keeps running and serves requests; `scheduled` cron or a timer starts it, it does its job and exits; `browser` it runs in the visitor's browser only; `local` used on a developer's machine or in CI, never on the live site. Cite the install, deployment or getting-started page that shows it)
 
 **License**: `license` (SPDX id), `licenseModel` (open-source, open-core, source-available, commercial, saas), `pricingPage` (the link only, no prices: they change more than yearly)
 
@@ -119,11 +119,13 @@ node -e "require('yaml')" 2>/dev/null && node -e "const y=require('yaml');y.pars
 
 Check each one; release age is not one of them. Any signal found sets `status: discontinued` in the fact file, with a `status` fact citing it, and the file is written as usual:
 
-- `archived: true` from `gh api repos/<owner>/<repo>`
+- `archived: true` from `gh api repos/<owner>/<repo>`, for the repository the project's own site names as its source. A GitHub repo archived because development moved elsewhere is no signal: record the new repository instead
 - `abandoned` on the Packagist package (`https://repo.packagist.org/p2/<vendor>/<name>.json`)
 - `deprecated` on the npm package (`https://registry.npmjs.org/<name>`, latest version)
 - the README or homepage says the project has ended, is unmaintained or is replaced by another (quote it)
 - every version is past end of life on endoflife.date
+
+A signal counts only for the project's current repository and package. An archived repository or a deprecated package that names a new home for the same project (a new repository, `@scope/name`, a successor package) is a move, not an end: record the new home and keep the status.
 
 ## 6. Stop instead of writing
 

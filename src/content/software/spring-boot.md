@@ -100,6 +100,9 @@ sources:
   - field: licenseModel
     url: https://github.com/spring-projects/spring-boot
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://github.com/spring-projects/spring-boot/releases
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/spring-projects/spring-boot/releases
     checkedAt: 2026-10-18

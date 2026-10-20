@@ -99,6 +99,9 @@ sources:
   - field: licenseModel
     url: https://github.com/codeigniter4/CodeIgniter4
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://github.com/codeigniter4/CodeIgniter4/releases
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/codeigniter4/CodeIgniter4/releases
     checkedAt: 2026-10-18

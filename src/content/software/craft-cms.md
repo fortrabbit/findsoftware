@@ -129,6 +129,9 @@ sources:
   - field: urls
     url: https://craftcms.com/pricing
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://api.github.com/repos/craftcms/cms/releases/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://api.github.com/repos/craftcms/cms/releases/latest
     checkedAt: 2026-10-18

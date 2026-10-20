@@ -70,6 +70,9 @@ sources:
   - field: licenseModel
     url: https://github.com/adonisjs/core
     checkedAt: 2026-10-19
+  - field: currentMajor
+    url: https://registry.npmjs.org/@adonisjs/core/latest
+    checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/adonisjs/core/releases/latest
     checkedAt: 2026-10-19

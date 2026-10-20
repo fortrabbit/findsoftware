@@ -120,6 +120,9 @@ sources:
   - field: urls
     url: https://octobercms.com
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://repo.packagist.org/p2/october/october.json
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://repo.packagist.org/p2/october/october.json
     checkedAt: 2026-10-18

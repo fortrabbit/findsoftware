@@ -80,6 +80,9 @@ sources:
   - field: licenseModel
     url: https://www.abantecart.com
     checkedAt: 2026-10-19
+  - field: currentMajor
+    url: https://api.github.com/repos/abantecart/abantecart-src/releases/latest
+    checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/abantecart/abantecart-src/releases/latest
     checkedAt: 2026-10-19

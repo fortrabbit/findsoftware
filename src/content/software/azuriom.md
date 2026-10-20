@@ -87,6 +87,9 @@ sources:
   - field: licenseModel
     url: https://azuriom.com
     checkedAt: 2026-10-19
+  - field: currentMajor
+    url: https://api.github.com/repos/Azuriom/Azuriom/releases/latest
+    checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/Azuriom/Azuriom/releases/latest
     checkedAt: 2026-10-19

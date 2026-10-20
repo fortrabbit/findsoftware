@@ -106,6 +106,9 @@ sources:
   - field: licenseModel
     url: https://github.com/nuxt/nuxt
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://registry.npmjs.org/nuxt/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/nuxt/nuxt/releases/tag/v4.6.2
     checkedAt: 2026-10-18

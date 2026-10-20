@@ -85,6 +85,9 @@ sources:
   - field: language
     url: https://api.github.com/repos/prismicio/prismic-client
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://api.github.com/repos/prismicio/prismic-client/releases/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://api.github.com/repos/prismicio/prismic-client/releases/latest
     checkedAt: 2026-10-18

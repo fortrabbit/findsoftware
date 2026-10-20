@@ -124,6 +124,9 @@ sources:
   - field: licenseModel
     url: https://www.drupal.org/about
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://repo.packagist.org/p2/drupal/core.json
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://repo.packagist.org/p2/drupal/core.json
     checkedAt: 2026-10-18

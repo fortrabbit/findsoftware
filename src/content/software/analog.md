@@ -70,6 +70,9 @@ sources:
   - field: licenseModel
     url: https://analogjs.org
     checkedAt: 2026-10-19
+  - field: currentMajor
+    url: https://registry.npmjs.org/@analogjs/platform/latest
+    checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/analogjs/analog/releases/latest
     checkedAt: 2026-10-19

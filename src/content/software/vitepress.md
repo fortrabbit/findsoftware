@@ -104,6 +104,9 @@ sources:
   - field: licenseModel
     url: https://vitepress.dev/
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://registry.npmjs.org/vitepress/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://registry.npmjs.org/vitepress
     checkedAt: 2026-10-18

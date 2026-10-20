@@ -86,6 +86,9 @@ sources:
   - field: licenseModel
     url: https://github.com/slimphp/Slim
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://github.com/slimphp/Slim/releases/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/slimphp/Slim/releases/latest
     checkedAt: 2026-10-18

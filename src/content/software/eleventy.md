@@ -114,6 +114,9 @@ sources:
   - field: licenseModel
     url: https://www.11ty.dev/blog/eleventy-font-awesome/
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://registry.npmjs.org/@11ty/eleventy/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/11ty/buildawesome/releases/latest
     checkedAt: 2026-10-18

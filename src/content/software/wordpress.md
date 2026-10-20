@@ -113,6 +113,9 @@ sources:
   - field: licenseModel
     url: https://wordpress.org/about/
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://api.wordpress.org/core/version-check/1.7/
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://endoflife.date/api/wordpress.json
     checkedAt: 2026-10-18

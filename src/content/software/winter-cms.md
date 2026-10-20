@@ -110,6 +110,9 @@ sources:
   - field: licenseModel
     url: https://wintercms.com
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://api.github.com/repos/wintercms/winter/releases/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://api.github.com/repos/wintercms/winter/releases/latest
     checkedAt: 2026-10-18

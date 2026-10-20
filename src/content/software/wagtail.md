@@ -121,6 +121,9 @@ sources:
   - field: licenseModel
     url: https://wagtail.org/
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://github.com/wagtail/wagtail/releases
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/wagtail/wagtail/releases
     checkedAt: 2026-10-18

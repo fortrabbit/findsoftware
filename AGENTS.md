@@ -53,7 +53,7 @@ From the scope doc, mechanical so no listing is a judgement call:
 1. Used to build, run or extend a website or web app: it serves HTTP, produces web output, or is a library, plugin or tool a web creator adds to one
 2. Installable by the user: source or a distributable is available. SaaS-only goes to `hosted-service`
 3. Documented installation or deployment
-4. Not declared ended. A record moves to `discontinued` only on a clear signal: the repository is archived, the registry flags the package abandoned (Packagist) or deprecated (npm), the project states it has ended or is unmaintained, or every version is past end of life on endoflife.date. Release age decides nothing; the last release date is shown with the record
+4. Not declared ended. A record moves to `discontinued` only on a clear signal: the repository the project names as its source is archived, the registry flags the package abandoned (Packagist) or deprecated (npm), the project states it has ended or is unmaintained, or every version is past end of life on endoflife.date. Release age decides nothing; the last release date is shown with the record
 5. A signal of use: a company behind it, or a public adoption figure. The threshold is open; record the figure
 
 ## Record prose

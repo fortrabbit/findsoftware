@@ -118,6 +118,9 @@ sources:
   - field: licenseModel
     url: https://astro.build/blog/joining-cloudflare/
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://registry.npmjs.org/astro/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://registry.npmjs.org/astro
     checkedAt: 2026-10-18

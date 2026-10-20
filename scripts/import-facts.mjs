@@ -20,6 +20,7 @@ const categoryMap = {
   admin: 'admin-panel',
   'analytics-engine': '',
   animation: 'graphics',
+  'animation-library': 'graphics',
   api: 'backend',
   'api-client': 'dev-tool',
   'api-docs': 'ssg',
@@ -78,6 +79,7 @@ const categoryMap = {
   'control-panel': 'web-server',
   'copy-paste': 'ui-library',
   coverage: 'testing',
+  cryptocurrency: '',
   'css-custom-properties': 'css-framework',
   'css-in-js': 'css-framework',
   'css-inliner': 'build-tool',
@@ -87,6 +89,7 @@ const categoryMap = {
   'data-backend': 'backend',
   'data-fetching': 'library',
   'data-grid': 'ui-library',
+  'data-visualization': 'graphics',
   'data-viz': 'graphics',
   'database-extension': 'database',
   'date-picker': 'ui-library',
@@ -178,12 +181,14 @@ const categoryMap = {
   lms: 'wiki',
   'load-balancer': 'web-server',
   'local-dev-env': 'dev-tool',
+  localization: 'dev-tool',
   logs: 'analytics',
   'low-code': 'admin-panel',
   'mailing-list': 'email',
   maps: 'graphics',
   markdown: 'library',
   'markdown-editor': 'ui-library',
+  'markdown-parser': 'library',
   'material-design': 'ui-library',
   'media-player': 'media',
   'media-processing': 'media',
@@ -214,6 +219,7 @@ const categoryMap = {
   orm: 'library',
   paas: 'dev-tool',
   'page-builder': 'cms',
+  'payment-processor': 'e-commerce',
   payments: 'e-commerce',
   pdf: 'library',
   'pdf-generation': 'media',
@@ -233,6 +239,7 @@ const categoryMap = {
   'query-builder': 'library',
   realtime: 'backend',
   'realtime-database': 'database',
+  'realtime-server': 'backend',
   redis: 'database',
   redux: 'library',
   repository: 'wiki',
@@ -279,6 +286,7 @@ const categoryMap = {
   surveys: 'forms',
   'sync-engine': 'backend',
   'syntax-highlight': 'library',
+  'syntax-highlighter': 'library',
   'tailwind-plugin': 'css-framework',
   'task-runner': 'build-tool',
   templating: 'library',
@@ -292,6 +300,7 @@ const categoryMap = {
   tracing: 'analytics',
   'transactional-email': 'email',
   translation: 'library',
+  'translation-platform': 'dev-tool',
   transpiler: 'build-tool',
   'ui-dev-tool': 'dev-tool',
   'ui-framework': 'framework',
@@ -504,7 +513,7 @@ for (const file of facts) {
   if (byField.has('license')) record.license = text(all('license'));
 
   // A dot release goes stale within weeks; the major holds for a year or more. Under 1.0 the minor is the major.
-  let version = String(first('latestVersion') ?? first('currentMajor') ?? '').match(/(\d+)(?:\.(\d+))?/);
+  let version = String(first('currentMajor') ?? '').match(/(\d+)(?:\.(\d+))?/);
   // A calendar version (2026.8) moves monthly, so it has no major worth recording.
   if (version && Number(version[1]) >= 2000) version = null;
   if (version) record.currentMajor = version[1] === '0' && version[2] !== undefined ? `0.${version[2]}` : version[1];

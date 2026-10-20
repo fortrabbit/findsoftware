@@ -99,6 +99,9 @@ sources:
   - field: licenseModel
     url: https://getlaminas.org/support
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://github.com/laminas/laminas-mvc/releases
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/laminas/laminas-mvc/releases
     checkedAt: 2026-10-18

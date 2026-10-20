@@ -1,0 +1,109 @@
+id: apollo-server
+name: Apollo Server
+status: accepted
+checkedAt: 2026-10-19
+description: "Open-source GraphQL server for Node.js that runs as an add-on to new or existing Node.js apps, including Express, Fastify and AWS Lambda."
+facts:
+  - field: homepage
+    value: https://www.apollographql.com/docs/apollo-server/
+    url: https://www.apollographql.com/docs/apollo-server/
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: https://github.com/apollographql/apollo-server
+    url: https://github.com/apollographql/apollo-server
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://www.apollographql.com/docs/apollo-server/
+    url: https://www.apollographql.com/docs/apollo-server/
+    checkedAt: 2026-10-19
+    via: page
+  - field: license
+    value: MIT
+    url: https://github.com/apollographql/apollo-server
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/apollographql/apollo-server
+    checkedAt: 2026-10-19
+    via: api
+  - field: categories
+    value: [graphql-server]
+    url: https://www.apollographql.com/docs/apollo-server/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Build GraphQL servers with Node.js."
+  - field: language
+    value: TypeScript
+    url: https://github.com/apollographql/apollo-server
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: node
+    url: https://www.apollographql.com/docs/apollo-server/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "An add-on to any new or existing Node.js apps"
+  - field: runtimeMin
+    value: "Node.js 20"
+    url: https://registry.npmjs.org/@apollo/server/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://www.apollographql.com/docs/apollo-server/getting-started
+    checkedAt: 2026-10-19
+    via: page
+    quote: "npm install @apollo/server graphql"
+  - field: runsAs
+    value: [always-on, per-request]
+    url: https://www.apollographql.com/docs/apollo-server/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "An add-on to any new or existing Node.js apps"
+  - field: maintainer
+    value: Apollo Graph, Inc.
+    url: https://github.com/apollographql/apollo-server
+    checkedAt: 2026-10-19
+    via: api
+  - field: maintainerType
+    value: company
+    url: https://github.com/apollographql/apollo-server
+    checkedAt: 2026-10-19
+    via: api
+  - field: currentMajor
+    value: 5
+    url: https://registry.npmjs.org/@apollo/server/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-05
+    url: https://github.com/apollographql/apollo-server/releases
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 13950
+    url: https://github.com/apollographql/apollo-server
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 629
+    url: https://github.com/apollographql/apollo-server
+    checkedAt: 2026-10-19
+    via: api
+  - field: npmName
+    value: "@apollo/server"
+    url: https://registry.npmjs.org/@apollo/server/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1504810
+    url: https://api.npmjs.org/downloads/point/last-week/@apollo/server
+    checkedAt: 2026-10-19
+    via: api
+notFound: [endoflifeId, docker, pricingPage, hqCountry, firstRelease, pluginDirectory]
+unreadable: []
+notes: >
+  The npm name apollo-server is a separate package for Apollo Server v2 and v3. Its latest version (3.13.0) is deprecated on npm and the docs state v3 has been end-of-life since October 2024, quoted as "AS3 has been end-of-life since October 2024." Those versions are not this record; npmName is @apollo/server, which is not deprecated, so no discontinued signal is set. Runtime minimum comes from the engines field of @apollo/server 5.5.1. The docs also list AWS Lambda, Azure Functions and Cloudflare as targets, which is why runsAs carries per-request as well as always-on.

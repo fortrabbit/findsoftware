@@ -106,6 +106,9 @@ sources:
   - field: licenseModel
     url: https://github.com/rails/rails
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://github.com/rails/rails/releases
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/rails/rails/releases
     checkedAt: 2026-10-18

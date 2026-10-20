@@ -100,6 +100,9 @@ sources:
   - field: licenseModel
     url: https://lunarphp.com/
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://api.github.com/repos/lunarphp/lunar/releases/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://api.github.com/repos/lunarphp/lunar/releases/latest
     checkedAt: 2026-10-18

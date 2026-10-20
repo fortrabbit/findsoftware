@@ -87,6 +87,9 @@ sources:
   - field: licenseModel
     url: https://github.com/bagisto/bagisto
     checkedAt: 2026-10-19
+  - field: currentMajor
+    url: https://api.github.com/repos/bagisto/bagisto/releases/latest
+    checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/bagisto/bagisto/releases/latest
     checkedAt: 2026-10-19

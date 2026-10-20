@@ -73,6 +73,9 @@ sources:
   - field: licenseModel
     url: https://amagaki.dev
     checkedAt: 2026-10-19
+  - field: currentMajor
+    url: https://registry.npmjs.org/@amagaki/amagaki/latest
+    checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/blinkk/amagaki/releases/latest
     checkedAt: 2026-10-19

@@ -88,6 +88,9 @@ sources:
   - field: licenseModel
     url: https://github.com/mkdocs/mkdocs
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://pypi.org/pypi/mkdocs/json
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/mkdocs/mkdocs/releases/latest
     checkedAt: 2026-10-18

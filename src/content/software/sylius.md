@@ -122,6 +122,9 @@ sources:
   - field: urls
     url: https://sylius.com/plus/
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://api.github.com/repos/Sylius/Sylius/releases/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://api.github.com/repos/Sylius/Sylius/releases/latest
     checkedAt: 2026-10-18

@@ -147,33 +147,14 @@ facts:
     url: https://www.joomla.org/about-joomla.html
     checkedAt: 2026-10-18
     via: page
-  - field: latestVersion
-    value: "6.2.0"
+  - field: currentMajor
+    value: 6
     url: https://api.github.com/repos/joomla/joomla-cms/releases/latest
     checkedAt: 2026-10-18
     via: api
-  - field: latestVersion
-    value: "6.2.0"
-    url: https://downloads.joomla.org/
-    checkedAt: 2026-10-18
-    via: page
   - field: latestReleaseDate
     value: 2026-10-13
     url: https://api.github.com/repos/joomla/joomla-cms/releases/latest
-    checkedAt: 2026-10-18
-    via: api
-  - field: supportedVersions
-    value:
-      - {cycle: "6", latest: "6.2.0", bugfixUntil: 2028-10-17, securityUntil: 2029-10-16}
-      - {cycle: "5", latest: "5.4.10", bugfixUntil: 2026-10-13, securityUntil: 2027-10-12}
-    url: https://developer.joomla.org/roadmap.html
-    checkedAt: 2026-10-18
-    via: page
-  - field: supportedVersions
-    value:
-      - {cycle: "6", support: 2028-10-17, eol: 2029-10-16}
-      - {cycle: "5", support: 2026-10-13, eol: 2027-10-12}
-    url: https://endoflife.date/api/joomla.json
     checkedAt: 2026-10-18
     via: api
   - field: eolPolicy

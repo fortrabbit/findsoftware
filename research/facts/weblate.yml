@@ -1,0 +1,152 @@
+id: weblate
+name: Weblate
+status: accepted
+checkedAt: 2026-10-19
+description: Web-based localization tool with tight version control integration, for translating software projects.
+facts:
+  - field: homepage
+    value: https://weblate.org
+    url: https://weblate.org
+    checkedAt: 2026-10-19
+    via: page
+  - field: repository
+    value: https://github.com/WeblateOrg/weblate
+    url: https://api.github.com/repos/WeblateOrg/weblate
+    checkedAt: 2026-10-19
+    via: api
+  - field: docs
+    value: https://docs.weblate.org
+    url: https://docs.weblate.org/en/latest/admin/install.html
+    checkedAt: 2026-10-19
+    via: page
+  - field: maintainer
+    value: Weblate s.r.o.
+    url: https://weblate.org/en/about/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Weblate s.r.o."
+  - field: maintainerType
+    value: company
+    url: https://weblate.org/en/about/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Weblate s.r.o."
+  - field: hqCountry
+    value: CZ
+    url: https://weblate.org/en/about/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Cvikov, Czechia"
+  - field: categories
+    value: [translation-platform, localization]
+    url: https://weblate.org
+    checkedAt: 2026-10-19
+    via: page
+    quote: "open source localization platform"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/WeblateOrg/weblate
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://pypi.org/pypi/weblate/json
+    checkedAt: 2026-10-19
+    via: api
+  - field: runtimeMin
+    value: "python >=3.12"
+    url: https://docs.weblate.org/en/latest/admin/install.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "3.12 or newer"
+  - field: runtimeMin
+    value: "python >=3.12"
+    url: https://pypi.org/pypi/weblate/json
+    checkedAt: 2026-10-19
+    via: api
+  - field: contentStore
+    value: database
+    url: https://docs.weblate.org/en/latest/admin/install.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "PostgreSQL database server for storing all the content"
+  - field: databases
+    value: [postgresql]
+    url: https://docs.weblate.org/en/latest/admin/install.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "It is recommended to run Weblate with a PostgreSQL database server."
+  - field: installMethod
+    value: [docker, pip]
+    url: https://docs.weblate.org/en/latest/admin/install.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Installing using Docker, recommended for production setups."
+  - field: docker
+    value: docker compose setup documented; image name not checked
+    url: https://docs.weblate.org/en/latest/admin/install.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Installing using Docker, recommended for production setups."
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.weblate.org/en/latest/admin/install.html
+    checkedAt: 2026-10-19
+    via: page
+    quote: "A WSGI or ASGI server serving web pages to users."
+  - field: license
+    value: GPL-3.0
+    url: https://api.github.com/repos/WeblateOrg/weblate
+    checkedAt: 2026-10-19
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://weblate.org/en/about/
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Licensed GNU GPLv3+"
+  - field: hostedService
+    value: https://hosted.weblate.org
+    url: https://weblate.org
+    checkedAt: 2026-10-19
+    via: page
+    quote: "Hosted Weblate"
+  - field: currentMajor
+    value: "2026"
+    url: https://api.github.com/repos/WeblateOrg/weblate/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-09
+    url: https://api.github.com/repos/WeblateOrg/weblate/releases/latest
+    checkedAt: 2026-10-19
+    via: api
+  - field: githubStargazers
+    value: 6113
+    url: https://api.github.com/repos/WeblateOrg/weblate
+    checkedAt: 2026-10-19
+    via: api
+  - field: contributors
+    value: 2276
+    url: https://api.github.com/repos/WeblateOrg/weblate/contributors?anon=true
+    checkedAt: 2026-10-19
+    via: api
+  - field: pypiName
+    value: weblate
+    url: https://pypi.org/pypi/weblate/json
+    checkedAt: 2026-10-19
+    via: api
+  - field: pypiDownloads
+    value: "14454 per week (last_week)"
+    url: https://pypistats.org/api/packages/weblate/recent
+    checkedAt: 2026-10-19
+    via: api
+  - field: x
+    value: https://x.com/WeblateOrg
+    url: https://weblate.org
+    checkedAt: 2026-10-19
+    via: page
+notFound: [parent, wikidata, pricingPage, pluginDirectory, forum, discord, subreddit, newsletter, usageShare, pluginCount, endoflifeId, firstRelease]
+unreadable: []
+notes: >
+  Weblate uses calendar versioning (tag weblate-2026.10.1), so currentMajor records the year 2026 and is not a semver major. The GitHub release v2026.10.1 is dated 2026-10-09; PyPI reports the same version. The PyPI license field is null, so the license comes from the GitHub API (GPL-3.0). The minimum Python version is stated by the install docs and matches PyPI requires_python >=3.12. The docs say PostgreSQL 13 and higher is supported, PostgreSQL 15 or newer is recommended; no other database is recorded because the pages read named none. The Docker section of the install docs was read; the image name was not checked, so the docker value says so. hostedService and x are coined here: the hosted offering sits beside the self-hosted install, which is why it is a separate field. hqCountry CZ comes from the company address on the about page ("Cvikov, Czechia"). The docs site shows 2026.11 as its development version; the install facts come from that page. firstRelease was not checked; the repository was created in 2012-02. The homepage pricing link did not resolve at /en/pricing/ or /pricing/, so pricingPage is absent. No project-ended signal was found.

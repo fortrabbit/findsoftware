@@ -133,6 +133,9 @@ sources:
   - field: licenseModel
     url: https://packagist.org/packages/typo3/cms-core.json
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://repo.packagist.org/p2/typo3/cms-core.json
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://repo.packagist.org/p2/typo3/cms-core.json
     checkedAt: 2026-10-18

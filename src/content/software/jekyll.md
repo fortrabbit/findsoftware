@@ -96,6 +96,9 @@ sources:
   - field: licenseModel
     url: https://github.com/jekyll/jekyll
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://rubygems.org/api/v1/gems/jekyll.json
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/jekyll/jekyll/releases/latest
     checkedAt: 2026-10-18

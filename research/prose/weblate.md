@@ -1,0 +1,1 @@
+Weblate is a web-based localization platform that integrates with version control, used to translate software projects. A self-hosted install runs a WSGI or ASGI server for the web interface and keeps all content in a PostgreSQL database. Weblate s.r.o. also runs Hosted Weblate, a managed service beside the self-hosted software.

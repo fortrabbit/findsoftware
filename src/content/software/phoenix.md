@@ -90,6 +90,9 @@ sources:
   - field: licenseModel
     url: https://github.com/phoenixframework/phoenix
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://github.com/phoenixframework/phoenix/releases
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://github.com/phoenixframework/phoenix/releases
     checkedAt: 2026-10-18

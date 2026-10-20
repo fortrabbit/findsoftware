@@ -125,6 +125,9 @@ sources:
   - field: urls
     url: https://strapi.io/pricing-self-hosted
     checkedAt: 2026-10-18
+  - field: currentMajor
+    url: https://api.github.com/repos/strapi/strapi/releases/latest
+    checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://api.github.com/repos/strapi/strapi/releases/latest
     checkedAt: 2026-10-18

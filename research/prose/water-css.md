@@ -1,0 +1,1 @@
+Water.css is a CSS stylesheet that styles plain HTML elements, so a page needs no classes for it. A page loads it with a link tag in the head of the HTML. The stylesheet runs in the visitor's browser, and the site serves it like any other static file.

@@ -1,0 +1,1 @@
+markdown-it is a Markdown parser that a Node.js project installs from npm, and the [API documentation](https://markdown-it.github.io/markdown-it/) also describes a build for the browser. Community-written plugins and other packages are published on npm, according to the README.
