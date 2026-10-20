@@ -39,6 +39,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-08-19
 githubStargazers: 1522
+packagistDownloads: 47293
 contributors: 340
 social:
   x: https://twitter.com/usewintercms
@@ -121,6 +122,12 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/wintercms/winter/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/wintercms/winter.json
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/winter/wn-system-module.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://wintercms.com/marketplace

@@ -23,7 +23,7 @@ runsAs:
   - per-request
 installMethod: download and extract into the web project root, then run the install page in the browser
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "0"
 latestReleaseDate: 2021-09-06
 githubStargazers: 5395

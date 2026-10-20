@@ -23,6 +23,7 @@ databases:
   - mysql
   - sqlite
   - sqlserver
+  - postgres
 adminUi: true
 i18n: yes
 runsAs:

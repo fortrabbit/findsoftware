@@ -24,7 +24,7 @@ basedOn:
 adminUi: true
 installMethod: composer require code16/sharp
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "10"
 latestReleaseDate: 2026-10-09
 githubStargazers: 800

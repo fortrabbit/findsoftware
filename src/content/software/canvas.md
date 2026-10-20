@@ -10,6 +10,7 @@ category:
 description: Publishing platform package for Laravel applications, with an admin interface for writing posts and an optional starter blog reader.
 status: active
 maintainer: Todd Austin
+maintainerType: individual
 firstRelease: 2016
 language: php
 runtime:

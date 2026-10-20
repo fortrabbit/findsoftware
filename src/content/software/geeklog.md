@@ -18,6 +18,7 @@ contentStore:
   - database
 databases:
   - mysql
+  - postgres
 runsAs:
   - per-request
 installMethod: tarball

@@ -10,6 +10,7 @@ category:
 description: Open-source content management system for PHP, built on the CakePHP framework.
 status: active
 maintainer: Croogo Development Team
+maintainerType: community
 firstRelease: 2009
 language: php
 runtime:
@@ -21,6 +22,7 @@ basedOn:
   - cakephp
 databases:
   - mysql
+  - postgres
 adminUi: true
 runsAs:
   - per-request

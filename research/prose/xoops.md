@@ -1,0 +1,3 @@
+XOOPS is a content management system and web application platform written in PHP. It stores its data in a relational database and uses Smarty templates. Modules provide the application functionality, and the project keeps its modules in a [separate GitHub organization](https://github.com/XoopsModules25x). The [install and upgrade guide](https://xoops.gitbook.io/xoops-install-upgrade/) describes copying the archive's files to a server, making the listed directories writable and running the web installer.
+
+The system is multi-lingual, so its modules can be used in all major languages, per the project's homepage.

@@ -22,7 +22,7 @@ runsAs:
   - always-on
 installMethod: dotnet new
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "10"
 latestReleaseDate: 2026-10-13
 githubStargazers: 38475

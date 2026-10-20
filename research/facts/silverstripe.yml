@@ -1,0 +1,140 @@
+id: silverstripe
+name: Silverstripe CMS
+status: accepted
+checkedAt: 2026-10-20
+description: PHP content management system built on the Silverstripe Framework and installed with Composer.
+facts:
+  - field: homepage
+    value: https://www.silverstripe.org/
+    url: https://docs.silverstripe.org/en/6/
+    checkedAt: 2026-10-20
+    via: page
+  - field: repository
+    value: https://github.com/silverstripe/silverstripe-cms
+    url: https://github.com/silverstripe/silverstripe-cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://docs.silverstripe.org/en/6/
+    url: https://docs.silverstripe.org/en/6/
+    checkedAt: 2026-10-20
+    via: page
+  - field: maintainer
+    value: Silverstripe Ltd
+    url: https://raw.githubusercontent.com/silverstripe/silverstripe-cms/6/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright (c) 2016, Silverstripe Ltd."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/silverstripe/silverstripe-cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: basedOn
+    value: [Silverstripe Framework]
+    url: https://raw.githubusercontent.com/silverstripe/silverstripe-cms/6/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"silverstripe/framework": "^6.2"'
+  - field: categories
+    value: [cms]
+    url: https://raw.githubusercontent.com/silverstripe/silverstripe-cms/6/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP Content Management System (CMS)"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/silverstripe/silverstripe-cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://docs.silverstripe.org/en/6/getting_started/server_requirements/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP 8.3 - 8.5"
+  - field: runtimeMin
+    value: PHP 8.3
+    url: https://docs.silverstripe.org/en/6/getting_started/server_requirements/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP 8.3 - 8.5"
+  - field: databases
+    value: [mysql, mariadb]
+    url: https://docs.silverstripe.org/en/6/getting_started/server_requirements/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "MySQL >=8.0 and MariaDB"
+  - field: adminUi
+    value: yes, browser-based GUI
+    url: https://docs.silverstripe.org/en/6/getting_started/server_requirements/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "use their web browser to access a web-based GUI"
+  - field: installMethod
+    value: [composer create-project]
+    url: https://docs.silverstripe.org/en/6/getting_started/composer/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer create-project silverstripe/installer"
+  - field: runsAs
+    value: [per-request]
+    url: https://docs.silverstripe.org/en/6/getting_started/server_requirements/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Silverstripe CMS expects URL paths to be rewritten to public/index.php"
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/silverstripe/silverstripe-cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: license
+    value: BSD-3-Clause
+    url: https://raw.githubusercontent.com/silverstripe/silverstripe-cms/6/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"license": "BSD-3-Clause"'
+  - field: packagistName
+    value: silverstripe/cms
+    url: https://repo.packagist.org/p2/silverstripe/cms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: currentMajor
+    value: 6
+    url: https://repo.packagist.org/p2/silverstripe/cms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-20
+    url: https://api.github.com/repos/silverstripe/silverstripe-cms/releases/latest
+    checkedAt: 2026-10-20
+    via: api
+  - field: endoflifeId
+    value: silverstripe
+    url: https://endoflife.date/api/silverstripe.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 516
+    url: https://api.github.com/repos/silverstripe/silverstripe-cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 120
+    url: https://api.github.com/repos/silverstripe/silverstripe-cms/contributors
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: 3789475 (total)
+    url: https://packagist.org/packages/silverstripe/cms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: 56137 (monthly)
+    url: https://packagist.org/packages/silverstripe/cms.json
+    checkedAt: 2026-10-20
+    via: api
+notFound: [firstRelease, hqCountry, parent, forkOf, successorOf, alternativeTo, headlessApi, contentStore, templating, i18n, multisite, sso, livePreview, userRoles, importsFrom, pricingPage, paidEdition, npmName, npmWeeklyDownloads, pypiDownloads, usageShare, pluginDirectory, pluginCount, starters, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata]
+unreadable: ["https://www.silverstripe.org/ (Incapsula bot challenge; https://silverstripe.org/ answers the same way)"]
+notes: >
+  The homepage is the project's site that the docs home page links to; the site itself answers with a bot challenge, so it is not read directly. The CSV names silverstripe-cms; the install docs name silverstripe/installer, which has 1034996 total and 11990 monthly downloads on Packagist, and silverstripe/framework has 3922263 total and 61432 monthly. The figures recorded are for silverstripe/cms, the CMS package, which the CSV's Packagist count also matches. The Composer requirements page lists PostgreSQL, SQL Server and SQLite only as third-party community modules, so they are not recorded as databases. The docs site is read at its version 6 path, and the endoflife.date cycles give 6.2 supported to 2027-04-30 and 6.1 ending 2026-10-18. The repository's default branch README returns 404; the README and LICENSE are read on the 6 branch. The copyright line is dated 2016 with no legal form beyond Ltd, recorded as the LICENSE states it. The runsAs value rests on the requirements page stating that the web server rewrites URL paths to public/index.php; the page does not use the word per-request.

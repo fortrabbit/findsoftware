@@ -1,0 +1,133 @@
+id: tiki
+name: Tiki Wiki CMS Groupware
+status: accepted
+checkedAt: 2026-10-20
+description: Open-source web application combining a wiki, a content management system and groupware, in PHP.
+facts:
+  - field: homepage
+    value: https://tiki.org
+    url: https://tiki.org/HomePage
+    checkedAt: 2026-10-20
+    via: page
+    quote: "The Open Source no-code/low-code web application framework"
+  - field: repository
+    value: https://gitlab.com/tikiwiki/tiki
+    url: https://gitlab.com/api/v4/projects/tikiwiki%2Ftiki
+    checkedAt: 2026-10-20
+    via: api
+  - field: maintainer
+    value: Tiki Software Community Association
+    url: https://tiki.org/HomePage
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Tiki Software Community Association, a not-for-profit organization"
+  - field: hqCountry
+    value: CA
+    url: https://tiki.org/HomePage
+    checkedAt: 2026-10-20
+    via: page
+    quote: "registered in Ontario, Canada"
+  - field: repoOwnerType
+    value: organization
+    url: https://gitlab.com/api/v4/projects/tikiwiki%2Ftiki
+    checkedAt: 2026-10-20
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://gitlab.com/api/v4/projects/tikiwiki%2Ftiki
+    checkedAt: 2026-10-20
+    via: api
+  - field: language
+    value: PHP
+    url: https://gitlab.com/api/v4/projects/tikiwiki%2Ftiki/languages
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://gitlab.com/api/v4/projects/tikiwiki%2Ftiki/languages
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [wiki, cms, groupware]
+    url: https://gitlab.com/tikiwiki/tiki/-/raw/master/README
+    checkedAt: 2026-10-20
+    via: page
+    quote: "combining the features of a wiki, a content management system (CMS) and groupware"
+  - field: databases
+    value: [mysql]
+    url: https://gitlab.com/tikiwiki/tiki/-/raw/master/INSTALL
+    checkedAt: 2026-10-20
+    via: page
+    quote: "either using PhpMyAdmin and MySQL"
+  - field: adminUi
+    value: yes, control panels
+    url: https://gitlab.com/tikiwiki/tiki/-/raw/master/INSTALL
+    checkedAt: 2026-10-20
+    via: page
+    quote: 'go to tiki-admin.php by clicking on the "Control Panels" link'
+  - field: runtimeMin
+    value: "8.1"
+    url: https://gitlab.com/tikiwiki/tiki/-/raw/master/tiki-check.php
+    checkedAt: 2026-10-20
+    via: page
+    quote: "'min' => '8.1.0', // For the latest version, this should match TIKI_MIN_PHP_VERSION"
+  - field: installMethod
+    value: [download archive, git clone]
+    url: https://gitlab.com/tikiwiki/tiki/-/raw/master/INSTALL
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Unpack the Tiki files to the document root of where you want it installed"
+  - field: installMethod
+    value: [git clone]
+    url: https://tiki.org/Download
+    checkedAt: 2026-10-20
+    via: page
+    quote: "please go to GitLab and clone the Tiki files"
+  - field: runsAs
+    value: [per-request]
+    url: https://gitlab.com/tikiwiki/tiki/-/raw/master/INSTALL
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Your Apache user and group ID (e.g. www-user and www-data)"
+  - field: currentMajor
+    value: 30
+    url: https://tiki.org/Download
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Tiki 30.x - The Latest Long-Term Support (LTS)"
+  - field: latestReleaseDate
+    value: 2026-08-25
+    url: https://gitlab.com/api/v4/projects/tikiwiki%2Ftiki/repository/tags/tags%2F30.1
+    checkedAt: 2026-10-20
+    via: api
+  - field: gitlabStars
+    value: 86
+    url: https://gitlab.com/api/v4/projects/tikiwiki%2Ftiki
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 67
+    url: https://gitlab.com/api/v4/projects/tikiwiki%2Ftiki/repository/contributors
+    checkedAt: 2026-10-20
+    via: api
+  - field: x
+    value: https://twitter.com/tikiwiki
+    url: https://tiki.org/HomePage
+    checkedAt: 2026-10-20
+    via: page
+  - field: license
+    value: LGPL-2.1-only
+    url: https://gitlab.com/tikiwiki/tiki/-/raw/master/composer.json.dist
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"license": "LGPL-2.1-only"'
+  - field: license
+    value: LGPL-2.1
+    url: https://gitlab.com/tikiwiki/tiki/-/raw/master/license.txt
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Version 2.1, February 1999"
+notFound: [firstRelease, templating, multisite, i18n, userRoles, headlessApi, parent, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, packagistName, npmName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, usageShare, pricingPage, paidEdition, hostedService, sso, livePreview, contentStore, regions, apiLimits, selfHostOption, githubStargazers]
+unreadable: [https://doc.tiki.org/Installation, https://doc.tiki.org/Requirements]
+notes: >
+  The project's documentation at doc.tiki.org answers 403 to curl, so the installation and requirements pages were not read; the install steps come from the INSTALL file in the repository, which names doc.tiki.org for more detail, and no docs field is recorded. The composer.json.dist file pins "php": "8.1" under config.platform, which is a dependency-resolution setting and not a minimum, so it is not used. runtimeMin comes from tiki-check.php, whose requirements table lists 8.1.0 as the PHP minimum for the row named Tiki 30.x. The docs source is not public: doc.tiki.org is Tiki's own wiki, not a repository. The GitLab API reports no license for the project, so the license facts come from the files named. The copyright.txt file says "as of version 31.0vcs", the master branch is ahead of the current LTS line (30.x, whose version file reads 30.2vcs), and the current major is recorded as 30 from the download page. The candidate row has no repository; the GitLab repository tikiwiki/tiki is the source named on the project's homepage. gitlabStars is a coined field for the GitLab star count (the import does not read it yet), and the project reports 251 forks, not recorded. The README says the project started in 2002; that is a start year, not a first-release year, so firstRelease is not recorded. The legal notice names the association without a legal form, so the maintainer is recorded as the project states it. The tag 30.1 is listed by GitLab as tags/30.1. The README lists wiki pages, trackers, file galleries, forums, blogs, articles and calendars as built-in features, and the repository description says Tiki is community-managed, with open development pursued by the Tiki Software Community Association; neither has a field. The INSTALL file runs setup.sh to set permissions before the browser-based setup, and the not-for-profit statement comes from the homepage.

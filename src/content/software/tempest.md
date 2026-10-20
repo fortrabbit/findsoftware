@@ -38,6 +38,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-09-08
 githubStargazers: 2276
+packagistDownloads: 52542
 contributors: 103
 social:
   x: https://tempestphp.com/twitter/brent
@@ -117,6 +118,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://github.com/tempestphp/tempest-framework/graphs/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/tempest/framework
     checkedAt: 2026-10-18
   - field: runsAs
     url: https://tempestphp.com/3.x/extra-topics/deployments

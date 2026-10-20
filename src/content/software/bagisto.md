@@ -25,6 +25,7 @@ basedOn:
 databases:
   - mysql
   - mariadb
+  - postgres
 adminUi: true
 runsAs:
   - per-request

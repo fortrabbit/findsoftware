@@ -16,6 +16,8 @@ runtime:
 hosting:
   - python
 runtimeMin: python 3.12
+databases:
+  - postgres
 runsAs:
   - always-on
 installMethod: docker-compose, helm-chart, managed-hosting, source-uv
@@ -44,6 +46,9 @@ sources:
     checkedAt: 2026-10-19
   - field: runtimeMin
     url: https://gitlab.com/glitchtip/glitchtip-backend/-/blob/v6.2.6/pyproject.toml
+    checkedAt: 2026-10-19
+  - field: databases
+    url: https://glitchtip.com/documentation/install
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://glitchtip.com/documentation/install
@@ -79,7 +84,6 @@ figure:
   text: Python · Analytics
 ai: authored
 contentStore: null
-databases: null
 adminUi: null
 headlessApi: null
 templating: null

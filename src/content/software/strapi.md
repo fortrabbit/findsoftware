@@ -42,6 +42,7 @@ license: MIT (Community Edition); ee/ directories under the Strapi Enterprise li
 currentMajor: "5"
 latestReleaseDate: 2026-10-14
 githubStargazers: 73332
+npmWeeklyDownloads: 131609
 contributors: 344
 social:
   x: https://x.com/strapijs
@@ -136,6 +137,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/strapi/strapi/contributors
+    checkedAt: 2026-10-18
+  - field: npmWeeklyDownloads
+    url: https://api.npmjs.org/downloads/point/last-week/@strapi/strapi
     checkedAt: 2026-10-18
   - field: urls
     url: https://strapi.io/

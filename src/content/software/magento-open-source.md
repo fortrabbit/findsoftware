@@ -31,7 +31,7 @@ runsAs:
   - per-request
 installMethod: composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition
 licenseModel: open-source
-license: OSL-3.0, AFL-3.0, OSL-3.0
+license: OSL-3.0, AFL-3.0
 currentMajor: "2"
 latestReleaseDate: 2026-05-12
 githubStargazers: 12206

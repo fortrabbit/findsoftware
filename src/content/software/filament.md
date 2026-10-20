@@ -34,6 +34,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-13
 githubStargazers: 32292
+packagistDownloads: 43663141
 contributors: 373
 pluginCount: 1156
 social:
@@ -112,6 +113,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://github.com/filamentphp/filament/graphs/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/filament/filament
     checkedAt: 2026-10-18
   - field: urls
     url: https://filamentphp.com/

@@ -10,6 +10,7 @@ category:
 description: TypeScript ORM that maps SQL databases to typed schemas and queries, with a companion migration tool, Drizzle Kit.
 status: active
 maintainer: drizzle-team
+maintainerType: community
 language: typescript
 installMethod: npm install
 licenseModel: open-source

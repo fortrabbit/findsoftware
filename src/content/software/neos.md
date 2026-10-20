@@ -27,7 +27,7 @@ runsAs:
   - per-request
 installMethod: docker, ddev, manual
 licenseModel: open-source
-license: GPL-3.0, GPL-3.0-or-later, GPL-3.0-or-later
+license: GPL-3.0, GPL-3.0-or-later
 currentMajor: "9"
 latestReleaseDate: 2026-10-09
 githubStargazers: 265

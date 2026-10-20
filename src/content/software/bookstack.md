@@ -30,7 +30,7 @@ renderingModes:
   - server
 installMethod: git clone and composer install, Ubuntu install scripts (fresh OS only), community Docker setups
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "26"
 latestReleaseDate: 2026-09-29
 githubStargazers: 19089

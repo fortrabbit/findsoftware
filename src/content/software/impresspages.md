@@ -25,7 +25,7 @@ runsAs:
   - per-request
 installMethod: composer install, then the setup wizard
 licenseModel: open-source
-license: GPL-3.0, MIT, GPL-3.0-or-later, MIT
+license: GPL-3.0, MIT, GPL-3.0-or-later
 currentMajor: "5"
 latestReleaseDate: 2017-07-09
 githubStargazers: 500

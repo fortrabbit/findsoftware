@@ -13,6 +13,8 @@ status: active
 maintainer: Plausible Insights OÜ
 maintainerType: company
 language: elixir
+databases:
+  - postgres
 runsAs:
   - always-on
 installMethod: docker
@@ -44,6 +46,9 @@ sources:
     checkedAt: 2026-10-19
   - field: language
     url: https://github.com/plausible/analytics
+    checkedAt: 2026-10-19
+  - field: databases
+    url: https://github.com/plausible/analytics/blob/v3.2.1/mix.exs
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://github.com/plausible/community-edition
@@ -85,7 +90,6 @@ figure:
   text: Elixir · Analytics
 ai: authored
 contentStore: null
-databases: null
 adminUi: null
 headlessApi: null
 templating: null

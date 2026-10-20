@@ -36,7 +36,7 @@ renderingModes:
   - server
 installMethod: npm init gatsby
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-02-10
 githubStargazers: 55938

@@ -20,7 +20,7 @@ basedOn:
   - drupal
 installMethod: composer template
 licenseModel: open-source
-license: GPL-2.0, GPL-2.0-or-later, GPL-2.0
+license: GPL-2.0, GPL-2.0-or-later
 currentMajor: "2"
 latestReleaseDate: 2024-10-29
 githubStargazers: 38

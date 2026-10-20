@@ -1,0 +1,211 @@
+id: redaxo
+name: REDAXO
+status: accepted
+checkedAt: 2026-10-20
+description: PHP content management system that builds sites from categories, articles and content blocks, extended by add-ons.
+facts:
+  - field: name
+    value: REDAXO
+    url: https://redaxo.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "REDAXO - Content Management System [CMS]"
+  - field: homepage
+    value: https://redaxo.org
+    url: https://redaxo.org/
+    checkedAt: 2026-10-20
+    via: page
+  - field: repository
+    value: https://github.com/redaxo/core
+    url: https://api.github.com/repos/redaxo/core
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://redaxo.org/doku/
+    url: https://redaxo.org/doku/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Die REDAXO-Dokumentation ist der Startpunkt für die Installation und Redaktion einer REDAXO-Webpräsenz."
+  - field: maintainer
+    value: Yakamara Media GmbH & Co. KG
+    url: https://redaxo.org/cms/impressum/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Yakamara Media GmbH & Co. KG"
+  - field: hqCountry
+    value: DE
+    url: https://redaxo.org/cms/impressum/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "DE256617987"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/redaxo
+    checkedAt: 2026-10-20
+    via: api
+  - field: firstRelease
+    value: 2004
+    url: https://api.github.com/repos/redaxo/core
+    checkedAt: 2026-10-20
+    via: api
+    quote: "REDAXO, a PHP-based CMS since 2004."
+  - field: wikidata
+    value: Q2136131
+    url: https://www.wikidata.org/wiki/Q2136131
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [cms]
+    url: https://redaxo.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "REDAXO - Content Management System [CMS]"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/redaxo/core
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: php
+    url: https://redaxo.org/download/core/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP ab 8.3"
+  - field: runtimeMin
+    value: "8.3"
+    url: https://redaxo.org/download/core/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP ab 8.3"
+  - field: runtimeMin
+    value: "8.3"
+    url: https://repo.packagist.org/p2/redaxo/core.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: contentStore
+    value: database
+    url: https://redaxo.org/doku/main/installation/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "REDAXO benötigt eine leere MySQL- oder MariaDB-Datenbank für den Betrieb."
+  - field: databases
+    value: [mysql, mariadb]
+    url: https://redaxo.org/doku/main/installation/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "REDAXO benötigt eine leere MySQL- oder MariaDB-Datenbank für den Betrieb."
+  - field: adminUi
+    value: yes, the backend, whose start page is the structure view
+    url: https://redaxo.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Die Strukturverwaltung ist die Startseite im Administrationsbereich."
+  - field: templating
+    value: [php]
+    url: https://redaxo.org/doku/main/templates/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Templates unterstützen PHP-Code und die"
+  - field: i18n
+    value: yes, multi-language sites with languages managed in the backend
+    url: https://redaxo.org/doku/main/mehrsprachigkeit/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Mehrsprachige Websites sind mit REDAXO sehr einfach umsetzbar."
+  - field: userRoles
+    value: roles with permissions assigned to users
+    url: https://redaxo.org/doku/main/benutzerverwaltung/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Nutzer können mit verschiedenen Rollen versehen werden"
+  - field: renderingModes
+    value: [server]
+    url: https://redaxo.org/doku/main/templates/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Templates definieren die generelle HTML-Struktur einer Artikelausgabe"
+  - field: installMethod
+    value: [zip download, redaxo loader, command line download, docker]
+    url: https://redaxo.org/download/core/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Die Datei redaxo-loader.php im Installationsordner ablegen"
+  - field: runsAs
+    value: [per-request]
+    url: https://redaxo.org/doku/main/installation/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Für Apache liefert REDAXO in den zuvor genannten Ordnern"
+  - field: serverNeeds
+    value:
+      - "MySQL 5.6 or MariaDB 10.1, or newer"
+      - "PHP extensions: ctype, fileinfo, gd, iconv, intl, mbstring, pdo, pdo_mysql, pcre, session, tokenizer"
+      - "Apache with .htaccess files allowed, or nginx with its own rules that deny /redaxo/src, /redaxo/data, /redaxo/cache and /redaxo/bin"
+    url: https://redaxo.org/download/core/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP-Extensions:"
+  - field: license
+    value: MIT
+    url: https://redaxo.org/cms/lizenz/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: license
+    value: MIT
+    url: https://repo.packagist.org/p2/redaxo/core.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://redaxo.org/cms/lizenz/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: currentMajor
+    value: 5
+    url: https://repo.packagist.org/p2/redaxo/core.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-06
+    url: https://repo.packagist.org/p2/redaxo/core.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 354
+    url: https://api.github.com/repos/redaxo/core
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 78
+    url: https://api.github.com/repos/redaxo/core/contributors
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: redaxo/core
+    url: https://packagist.org/packages/redaxo/core.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: pluginDirectory
+    value: https://redaxo.org/download/addons/
+    url: https://redaxo.org/download/addons/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "310 Ergebnisse"
+  - field: pluginCount
+    value: 310
+    url: https://redaxo.org/download/addons/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "310 Ergebnisse"
+  - field: slack
+    value: https://redaxo.org/slack/
+    url: https://redaxo.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Der REDAXO-Slack Channel"
+notFound: [packagistDownloads, parent, forkOf, successorOf, alternativeTo, multisite, livePreview, sso, importsFrom, headlessApi, endoflifeId, npmName, usageShare, subreddit, mastodon, bluesky, x, discord, newsletter, pricingPage, paidEdition, buildCommand, outputDir, deployTargets]
+unreadable: []
+notes: >
+  The repository named on the home page, github.com/redaxo/redaxo, redirects to redaxo/core, so the record names redaxo/core. The GitHub API reports the license as NOASSERTION; the license entries come from the license page and Packagist. The license page states the MIT terms for REDAXO 5 and later, and the GPL for 4.x and lower, without a GPL version; only the MIT terms are recorded as license entries, since 4.x is not the current line. The MIT terms add that the link to www.redaxo.org and the REDAXO logo must be visible and clickable in the backend, as the license page says. The install docs describe zip, loader, command line and docker installs and name no Composer package, so no Packagist download figure is recorded: redaxo/core has a tiny count, and the root composer.json names redaxo/source, a package described as for static analysis. packagistName stays redaxo/core, the package of the repository the project names. The 5.x default branch and the release tag 5.21.5 agree. The redaxo/core Packagist entry lists PHP >= 8.3 for 5.21.5; the download page says PHP 8.3 or higher is required. The download page lists older PHP-compatible releases (5.20.2 for PHP 8.2 and older); no recording of that list, as the rule keeps supported-version lists out. The add-on count of 310 is the number of results the add-on directory shows for all categories. The site's Slack link is recorded under a coined field slack, since the starter list has no chat field for it; the discord field is unrelated. The Wikidata entry Q2136131 is labelled "Redaxo" with the description "Content management system". The maintainer is the imprint's legal name with its legal form. The home page describes the structure of categories and articles, content blocks and a media pool, and the templates page says templates can be nested; these are not fact entries and the prose names only what the fact entries state.

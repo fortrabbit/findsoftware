@@ -24,7 +24,7 @@ headlessApi:
   - rest
 installMethod: Docker (bundled setup), BcInstaller web installer, Composer
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-09-24
 githubStargazers: 191

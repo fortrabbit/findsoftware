@@ -11,6 +11,7 @@ category:
 description: Python static site generator for project documentation, built from Markdown files and a single YAML configuration file.
 status: active
 maintainer: MkDocs Team
+maintainerType: community
 firstRelease: 2014
 language: python
 runtime:

@@ -28,7 +28,7 @@ runsAs:
   - per-request
 installMethod: archive download, docker
 licenseModel: open-core
-license: MIT, MIT
+license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-08-26
 githubStargazers: 751

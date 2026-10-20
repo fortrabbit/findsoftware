@@ -18,6 +18,8 @@ runtime:
 hosting:
   - node
 runtimeMin: node 18
+databases:
+  - postgres
 runsAs:
   - always-on
 installMethod: source, docker-compose, docker-image, kubernetes-helm
@@ -52,6 +54,9 @@ sources:
     url: https://umami.is/docs/install
     checkedAt: 2026-10-19
   - field: runtimeMin
+    url: https://umami.is/docs/install
+    checkedAt: 2026-10-19
+  - field: databases
     url: https://umami.is/docs/install
     checkedAt: 2026-10-19
   - field: installMethod
@@ -91,7 +96,6 @@ figure:
   text: TypeScript · Analytics
 ai: authored
 contentStore: null
-databases: null
 adminUi: null
 headlessApi: null
 templating: null

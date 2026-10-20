@@ -1,0 +1,1 @@
+PluXml is a CMS and blog engine that stores its content in XML files, so it needs no database. It is installed by unzipping the release archive into the site root and following the installation steps shown on screen. The back office supports five user profiles with different permission levels.

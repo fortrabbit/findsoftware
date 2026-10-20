@@ -35,6 +35,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-09
 githubStargazers: 5988
+packagistDownloads: 4729461
 social:
   x: https://twitter.com/CodeIgniterPhp
   forum: https://forum.codeigniter.com
@@ -107,6 +108,9 @@ sources:
     checkedAt: 2026-10-18
   - field: githubStargazers
     url: https://github.com/codeigniter4/CodeIgniter4
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/codeigniter4/framework.json
     checkedAt: 2026-10-18
   - field: runsAs
     url: https://codeigniter.com/user_guide/installation/installing_composer.html

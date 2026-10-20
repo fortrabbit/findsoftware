@@ -10,6 +10,7 @@ category:
 description: JavaScript module bundler that compiles ES module source into bundles for browsers, Node.js and other platforms.
 status: active
 maintainer: Rollup contributors
+maintainerType: community
 language: javascript
 runtime:
   - node
@@ -18,7 +19,7 @@ runsAs:
   - local
 installMethod: npm
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-18
 githubStargazers: 26301

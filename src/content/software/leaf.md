@@ -40,6 +40,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-16
 githubStargazers: 1324
+packagistDownloads: 53753
 contributors: 15
 pluginCount: 25
 social:
@@ -126,6 +127,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://github.com/leafsphp/leaf/graphs/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/leafs/leaf
     checkedAt: 2026-10-18
   - field: urls
     url: https://leafphp.dev/

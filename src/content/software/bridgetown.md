@@ -39,7 +39,7 @@ renderingModes:
   - server
 installMethod: gem install bridgetown -N
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-07-06
 githubStargazers: 1372

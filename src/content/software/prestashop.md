@@ -29,10 +29,11 @@ headlessApi:
   - rest
 installMethod: zip release package with web installer, cli installer, docker, git clone
 licenseModel: open-source
-license: OSL-3.0, OSL-3.0
+license: OSL-3.0
 currentMajor: "9"
 latestReleaseDate: 2026-09-30
 githubStargazers: 9226
+packagistDownloads: 24164
 contributors: 257
 wikidata: Q1080982
 addedAt: 2026-10-18
@@ -112,6 +113,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/PrestaShop/PrestaShop/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/prestashop/prestashop.json
     checkedAt: 2026-10-18
 figure:
   emoji: 🛒

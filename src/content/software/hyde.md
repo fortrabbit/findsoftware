@@ -34,6 +34,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-07-11
 githubStargazers: 488
+packagistDownloads: 4358
 contributors: 13
 social:
   x: https://x.com/HydeFramework
@@ -115,6 +116,12 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://github.com/hydephp/develop/graphs/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/hyde/hyde
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/hyde/framework
     checkedAt: 2026-10-18
   - field: urls
     url: https://hydephp.com/docs/2.x/quickstart

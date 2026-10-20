@@ -34,6 +34,7 @@ license: Apache-2.0, Apache-2.0 for the software, CC-BY-4.0 for the Twill UI
 currentMajor: "3"
 latestReleaseDate: 2026-07-19
 githubStargazers: 3971
+packagistDownloads: 499344
 contributors: 179
 social:
   discord: https://discord.gg/cnWk7EFv8R
@@ -117,6 +118,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/area17/twill/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/area17/twill.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://twillcms.com/docs/modules/capsules.html

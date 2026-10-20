@@ -35,6 +35,7 @@ license: MIT
 currentMajor: "13"
 latestReleaseDate: 2026-10-16
 githubStargazers: 34963
+packagistDownloads: 598227486
 social:
   x: https://x.com/laravel
   discord: https://discord.com/invite/laravel
@@ -113,6 +114,9 @@ sources:
     checkedAt: 2026-10-18
   - field: githubStargazers
     url: https://github.com/laravel/laravel
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/laravel/framework.json
     checkedAt: 2026-10-18
   - field: runsAs
     url: https://laravel.com/docs/13.x/deployment

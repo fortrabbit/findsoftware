@@ -20,7 +20,7 @@ databases:
   - mysql
 installMethod: manual upload
 licenseModel: open-source
-license: GPL-2.0, GPL-2.0
+license: GPL-2.0
 currentMajor: "7"
 latestReleaseDate: 2022-09-09
 githubStargazers: 179

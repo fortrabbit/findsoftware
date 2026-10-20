@@ -1,0 +1,119 @@
+id: typesetter
+name: Typesetter
+status: accepted
+checkedAt: 2026-10-20
+description: Open-source PHP content management system with WYSIWYG editing that stores pages as flat files.
+facts:
+  - field: homepage
+    value: https://www.typesettercms.com
+    url: https://github.com/Typesetter/Typesetter/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Typesetter Home"
+  - field: repository
+    value: https://github.com/Typesetter/Typesetter
+    url: https://api.github.com/repos/Typesetter/Typesetter
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://www.typesettercms.com/Docs
+    url: https://github.com/Typesetter/Typesetter/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Typesetter Documentation"
+  - field: forum
+    value: https://www.typesettercms.com/Forum
+    url: https://github.com/Typesetter/Typesetter/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Typesetter Forum"
+  - field: maintainer
+    value: Typesetter
+    url: https://github.com/Typesetter/Typesetter/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Typesetter CMS"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Typesetter
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [cms, flat-file-cms]
+    url: https://github.com/Typesetter/Typesetter/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Open source CMS written in PHP"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/Typesetter/Typesetter
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/Typesetter/Typesetter/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP 5.6+ as of Typesetter 5.1.1-b1"
+  - field: runtimeMin
+    value: "5.6"
+    url: https://github.com/Typesetter/Typesetter/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP 5.6+ as of Typesetter 5.1.1-b1"
+  - field: contentStore
+    value: flat-file
+    url: https://github.com/Typesetter/Typesetter/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "flat-file storage"
+  - field: adminUi
+    value: yes, in-browser WYSIWYG editing
+    url: https://github.com/Typesetter/Typesetter/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "true WYSIWYG editing"
+  - field: installMethod
+    value: [download archive]
+    url: https://github.com/Typesetter/Typesetter/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Upload the extracted contents to your server"
+  - field: runsAs
+    value: [per-request]
+    url: https://github.com/Typesetter/Typesetter/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Upload the extracted contents to your server"
+  - field: license
+    value: GPL-2.0
+    url: https://github.com/Typesetter/Typesetter/blob/master/gpl.txt
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Version 2, June 1991"
+  - field: currentMajor
+    value: 5
+    url: https://api.github.com/repos/Typesetter/Typesetter/releases/latest
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2017-08-12
+    url: https://api.github.com/repos/Typesetter/Typesetter/releases/latest
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 232
+    url: https://api.github.com/repos/Typesetter/Typesetter
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 28
+    url: https://api.github.com/repos/Typesetter/Typesetter/contributors?per_page=100&anon=true
+    checkedAt: 2026-10-20
+    via: api
+notFound: [pricingPage, firstRelease, hqCountry, parent, forkOf, successorOf, basedOn, databases, headlessApi, multisite, i18n, userRoles, sso, livePreview, templating, endoflifeId, packagistName, npmName, pluginDirectory, pluginCount, subreddit, mastodon, bluesky, x, newsletter, usageShare, docker]
+unreadable:
+  - https://www.typesettercms.com (answers 403 to curl with the research User-Agent; the homepage fact cites the README link instead)
+  - https://www.typesettercms.com/Docs (same host, same 403; the docs fact cites the README link only)
+notes: >
+  The project's own site blocks the research request, so every fact comes from the repository: the README, gpl.txt, composer.json and the GitHub API. The README links the site for its download, demo, documentation and forum pages; those links are recorded as the docs and forum URLs without reading them. The GitHub release v5.1 is dated 2017-08-12 and the last push is 2022-02-09; neither is a signal under the ended-project rules, so the status stays accepted. The README states "PHP 5.6+ as of Typesetter 5.1.1-b1", a version later than the v5.1 tag, so runtimeMin follows that line and the reviewer may want to confirm it. The gpl.txt file is the GPL version 2 text without an "or later" grant, so the license is recorded as GPL-2.0 and no "or later" is claimed. The repository names no maintainer legal entity; the maintainer value is the project name from the README heading, with no legal form. The repository has no copyright line in its source files that names a person or company.

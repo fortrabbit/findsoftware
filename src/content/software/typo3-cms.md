@@ -43,6 +43,7 @@ license: GPL-2.0-or-later, GPL-2.0
 currentMajor: "14"
 latestReleaseDate: 2026-10-13
 githubStargazers: 1215
+packagistDownloads: 14685571
 pluginCount: 9198
 social:
   bluesky: https://bsky.app/profile/typo3.com
@@ -141,6 +142,9 @@ sources:
     checkedAt: 2026-10-18
   - field: githubStargazers
     url: https://api.github.com/repos/TYPO3/typo3
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/typo3/cms-core.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://typo3.org/

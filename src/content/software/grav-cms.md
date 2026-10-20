@@ -37,6 +37,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-17
 githubStargazers: 15687
+packagistDownloads: 90772
 contributors: 215
 pluginCount: 531
 social:
@@ -130,6 +131,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/getgrav/grav/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/getgrav/grav.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://getgrav.org/downloads/plugins

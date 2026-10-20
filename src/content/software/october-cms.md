@@ -40,6 +40,7 @@ license: proprietary, NOASSERTION (custom EULA in LICENSE.md)
 currentMajor: "4"
 latestReleaseDate: 2026-10-12
 githubStargazers: 11146
+packagistDownloads: 271854
 contributors: 342
 social:
   x: https://twitter.com/octobercms
@@ -131,6 +132,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/octobercms/october/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/october/october.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://octobercms.com

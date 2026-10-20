@@ -32,7 +32,7 @@ renderingModes:
   - static
 installMethod: npx create-docusaurus@latest my-website classic
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-07-10
 githubStargazers: 66517

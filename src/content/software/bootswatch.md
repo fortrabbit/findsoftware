@@ -10,7 +10,7 @@ category:
 description: Free themes for Bootstrap, each one a replacement CSS file with SCSS variables for customization.
 status: active
 maintainer: Bootswatch community
-maintainerType: individual
+maintainerType: community
 firstRelease: 2013
 language: javascript
 basedOn:

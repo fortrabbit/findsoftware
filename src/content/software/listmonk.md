@@ -12,6 +12,8 @@ status: active
 maintainer: Kailash Nadh
 maintainerType: individual
 language: go
+databases:
+  - postgres
 runsAs:
   - always-on
 installMethod: binary-download, docker-compose
@@ -41,6 +43,9 @@ sources:
     checkedAt: 2026-10-19
   - field: language
     url: https://github.com/knadh/listmonk
+    checkedAt: 2026-10-19
+  - field: databases
+    url: https://listmonk.app/docs/installation/
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://listmonk.app/docs/installation/
@@ -76,7 +81,6 @@ figure:
   text: Go · Email
 ai: authored
 contentStore: null
-databases: null
 adminUi: null
 headlessApi: null
 templating: null

@@ -18,7 +18,7 @@ runtimeMin: node 20
 runsAs:
   - always-on
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "12"
 latestReleaseDate: 2026-10-12
 githubStargazers: 76865

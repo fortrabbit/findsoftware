@@ -36,7 +36,7 @@ renderingModes:
   - server
 installMethod: npm create astro@latest
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "7"
 latestReleaseDate: 2026-10-15
 githubStargazers: 63303

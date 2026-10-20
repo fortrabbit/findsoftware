@@ -1,0 +1,116 @@
+id: pmwiki
+name: PmWiki
+status: accepted
+checkedAt: 2026-10-20
+description: PHP content-management system for collaborative creation and maintenance of websites, with pages stored in flat files.
+facts:
+  - field: homepage
+    value: https://www.pmwiki.org/
+    url: https://www.pmwiki.org/
+    checkedAt: 2026-10-20
+    via: page
+  - field: docs
+    value: https://www.pmwiki.org/wiki/PmWiki/DocumentationIndex
+    url: https://www.pmwiki.org/wiki/PmWiki/DocumentationIndex
+    checkedAt: 2026-10-20
+    via: page
+  - field: maintainer
+    value: Petko Yotov
+    url: https://www.pmwiki.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "is actively maintained by Petko Yotov under the oversight of Dr Michaud"
+  - field: sourcePublic
+    value: true
+    url: https://www.pmwiki.org/pub/pmwiki/
+    checkedAt: 2026-10-20
+    via: page
+  - field: categories
+    value: [wiki, cms]
+    url: https://www.pmwiki.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "content-management system (CMS) for collaborative creation and maintenance of websites"
+  - field: language
+    value: PHP
+    url: https://www.pmwiki.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PmWiki is written in PHP and distributed under the General Public License"
+  - field: runtime
+    value: [php]
+    url: https://www.pmwiki.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PmWiki is written in PHP and distributed under the General Public License"
+  - field: runtimeMin
+    value: "7.0"
+    url: https://www.pmwiki.org/wiki/PmWiki/Requirements
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP 7.0 or later"
+  - field: contentStore
+    value: flat files
+    url: https://www.pmwiki.org/wiki/PmWiki/PmWikiPhilosophy
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PmWiki stores all data in flat files, so there is no need for MySQL or other utilities."
+  - field: sso
+    value: [ldap]
+    url: https://www.pmwiki.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "LDAP servers, and MySQL databases"
+  - field: installMethod
+    value: archive download, then the pmwiki.php script opened in a browser, which creates the wiki.d directory
+    url: https://www.pmwiki.org/wiki/PmWiki/Installation
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PmWiki will then analyze your system configuration and provide instructions (if needed) for creating the"
+  - field: i18n
+    value: yes, language packs installed on top of the core software
+    url: https://www.pmwiki.org/wiki/PmWiki/Download
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Language packs can be installed on top of the core software."
+  - field: license
+    value: GPL-2.0
+    url: https://www.pmwiki.org/wiki/PmWiki/Features
+    checkedAt: 2026-10-20
+    via: page
+    quote: "has released it under the GPL2 license"
+  - field: license
+    value: General Public License (version not stated)
+    url: https://www.pmwiki.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "distributed under the General Public License"
+  - field: licenseModel
+    value: open-source
+    url: https://www.pmwiki.org/wiki/PmWiki/Features
+    checkedAt: 2026-10-20
+    via: page
+    quote: "free, open-source PHP-based wiki engine"
+  - field: currentMajor
+    value: 2
+    url: https://www.pmwiki.org/wiki/PmWiki/ReleaseNotes
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Version 2.7.6 (2026-09-18)"
+  - field: latestReleaseDate
+    value: 2026-09-18
+    url: https://www.pmwiki.org/wiki/PmWiki/ReleaseNotes
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Version 2.7.6 (2026-09-18)"
+  - field: pluginDirectory
+    value: https://www.pmwiki.org/wiki/Cookbook/Cookbook
+    url: https://www.pmwiki.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Hundreds of features are already available by using extensions"
+notFound: [firstRelease, hqCountry, parent, forkOf, successorOf, alternativeTo, usageShare, wikidata, endoflifeId, databases, adminUi, headlessApi, templating, multisite, userRoles, renderingModes, runsAs, paidEdition, pricingPage, githubStargazers, contributors, repository, repoOwnerType, discord, subreddit, mastodon, bluesky, x, newsletter, forum, pluginCount, importsFrom]
+unreadable:
+  - https://www.pmwiki.org/wiki/PmWiki/Prerequisites (404)
+notes: >
+  There is no source repository: the project publishes its releases and source archives at https://www.pmwiki.org/pub/pmwiki/, so repository and the GitHub figures are not recorded and sourcePublic cites that directory listing. Criterion 5 is not met on the facts found: no company stands behind the project, and its pages give no adoption figure; the PmWikiUsers and SuccessStories pages list named sites without a count. The license is stated two ways: the features page says the author "has released it under the GPL2 license", and the homepage says "distributed under the General Public License" without a version. Both are recorded. The maintainer is the person the homepage names as maintaining the project; the homepage also names Patrick R. Michaud as the registered trademark holder and as the oversight person, and that name is not recorded as maintainer. runtimeMin is the minimum on the Requirements page. The pay-for-PmWiki page mentions "my company in France" without naming it, so hqCountry stays unknown. The homepage calls extensions "recipes" and lists them in the Cookbook; the pluginDirectory fact carries that link.

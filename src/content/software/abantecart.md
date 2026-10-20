@@ -11,7 +11,7 @@ category:
 description: Open-source PHP eCommerce platform for running an online store.
 status: active
 maintainer: AbanteCart community
-maintainerType: individual
+maintainerType: community
 language: php
 runtime:
   - php

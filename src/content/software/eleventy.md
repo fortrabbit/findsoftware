@@ -30,7 +30,7 @@ renderingModes:
   - static
 installMethod: npm install @11ty/eleventy
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-15
 githubStargazers: 19974

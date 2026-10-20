@@ -30,7 +30,7 @@ renderingModes:
   - static
 installMethod: npm install -g hexo-cli
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "8"
 latestReleaseDate: 2026-05-06
 githubStargazers: 41777

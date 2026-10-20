@@ -41,6 +41,7 @@ license: MIT
 currentMajor: "6"
 latestReleaseDate: 2026-10-07
 githubStargazers: 3450
+packagistDownloads: 6294025
 contributors: 267
 pluginCount: 3100
 social:
@@ -139,6 +140,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/shopware/shopware/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/shopware/core.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://store.shopware.com/en/extensions/

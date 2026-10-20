@@ -46,10 +46,11 @@ renderingModes:
   - static
 installMethod: npx create-payload-app, pnpm i payload @payloadcms/next (existing Next.js app)
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-15
 githubStargazers: 45322
+npmWeeklyDownloads: 581876
 contributors: 436
 addedAt: 2026-10-18
 checkedAt: 2026-10-18
@@ -146,6 +147,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/payloadcms/payload/contributors
+    checkedAt: 2026-10-18
+  - field: npmWeeklyDownloads
+    url: https://api.npmjs.org/downloads/point/last-week/payload
     checkedAt: 2026-10-18
   - field: urls
     url: https://api.github.com/repos/payloadcms/payload/contents/packages

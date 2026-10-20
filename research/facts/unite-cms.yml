@@ -1,0 +1,113 @@
+id: unite-cms
+name: unite cms
+status: discontinued
+checkedAt: 2026-10-20
+description: Headless content management system built on Symfony that serves content through a GraphQL API.
+facts:
+  - field: status
+    value: discontinued
+    url: https://github.com/unite-cms/unite-cms/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "At the moment there is no active development on this open source cms"
+  - field: homepage
+    value: https://www.unitecms.io
+    url: https://api.github.com/repos/unite-cms/unite-cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: repository
+    value: https://github.com/unite-cms/unite-cms
+    url: https://api.github.com/repos/unite-cms/unite-cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://docs.unitecms.io
+    url: https://github.com/unite-cms/unite-cms/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "docs (https://docs.unitecms.io) are still under development"
+  - field: maintainer
+    value: Franz Wilding
+    url: https://github.com/unite-cms/unite-cms/blob/master/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright (c) 2020 Franz Wilding"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/unite-cms/unite-cms/blob/master/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright (c) 2020 Franz Wilding"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/unite-cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [headless-cms]
+    url: https://github.com/unite-cms/unite-cms
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Really flexible headless CMS, built on top of Symfony and GraphQL."
+  - field: basedOn
+    value: symfony
+    url: https://github.com/unite-cms/unite-cms
+    checkedAt: 2026-10-20
+    via: page
+    quote: "built on top of Symfony and GraphQL"
+  - field: headlessApi
+    value: [graphql]
+    url: https://github.com/unite-cms/unite-cms
+    checkedAt: 2026-10-20
+    via: page
+    quote: "built on top of Symfony and GraphQL"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/unite-cms/unite-cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/unite-cms/unite-cms/blob/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"php": "^7.2"'
+  - field: runtimeMin
+    value: "7.2"
+    url: https://github.com/unite-cms/unite-cms/blob/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"php": "^7.2"'
+  - field: license
+    value: MIT
+    url: https://github.com/unite-cms/unite-cms/blob/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"license": "MIT"'
+  - field: currentMajor
+    value: 0
+    url: https://github.com/unite-cms/unite-cms/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "This is the new and current version of unite cms"
+  - field: latestReleaseDate
+    value: 2019-12-30
+    url: https://api.github.com/repos/unite-cms/unite-cms/releases/tags/0.10.0
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 242
+    url: https://api.github.com/repos/unite-cms/unite-cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 16
+    url: https://api.github.com/repos/unite-cms/unite-cms/contributors?per_page=100&anon=true
+    checkedAt: 2026-10-20
+    via: api
+notFound: [pricingPage, firstRelease, hqCountry, parent, forkOf, successorOf, multisite, adminUi, databases, contentStore, installMethod, runsAs, renderingModes, i18n, userRoles, sso, templating, endoflifeId, packagistName, npmName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, paidEdition, successorOf]
+unreadable:
+  - https://www.unitecms.io (answers 200 with the body "OK" only, not a page; the homepage fact cites the GitHub repository's homepage field)
+  - https://docs.unitecms.io (answers 200 with a placeholder heading only; the docs fact cites the README link)
+notes: >
+  Status is discontinued on the README's own statement, read 2026-10-20: "At the moment there is no active development on this open source cms". The repository is not archived and its last push is 2023-01-05, so the README statement is the signal. The candidate row still says accepted and needs the reviewer to move it. The README's "Version 0.10" is the current line and names no release tag; the currentMajor value 0 is the pre-1.0 line, and the latestReleaseDate is the date of the GitHub release 0.10.0, which is flagged as a pre-release. The description and the Symfony and GraphQL statements come from the GitHub repository description, which is the project's own text. The LICENSE copyright line names Franz Wilding without a legal form; no page gives a company. The composer.json requires Symfony components and four path-based bundles (core, doctrine-orm, admin, media); those are not separate records here. The release and runtime figures are from the 0.10 line, so runtimeMin 7.2 is the composer.json constraint, not a tested minimum.

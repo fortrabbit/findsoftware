@@ -36,6 +36,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-08-26
 githubStargazers: 3757
+packagistDownloads: 302053
 contributors: 147
 social:
   x: https://x.com/lunarphp
@@ -111,6 +112,12 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/lunarphp/lunar/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/lunarphp/core.json
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/lunarphp/lunar.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://docs.lunarphp.com/llms.txt

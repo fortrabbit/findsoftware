@@ -47,6 +47,7 @@ license: MSCL-1.0-GPL (Monospace Sustainable Core License 1.0, not SPDX), NOASSE
 currentMajor: "12"
 latestReleaseDate: 2026-10-07
 githubStargazers: 38579
+npmWeeklyDownloads: 12061
 contributors: 442
 social:
   x: https://x.com/directus
@@ -135,6 +136,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/directus/directus/contributors
+    checkedAt: 2026-10-18
+  - field: npmWeeklyDownloads
+    url: https://api.npmjs.org/downloads/point/last-week/directus
     checkedAt: 2026-10-18
   - field: urls
     url: https://directus.com/docs/guides/extensions/marketplace

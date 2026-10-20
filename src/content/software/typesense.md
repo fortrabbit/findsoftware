@@ -15,7 +15,7 @@ runsAs:
   - always-on
 installMethod: docker, docker compose, kubernetes, homebrew, deb package, rpm package, binary download
 licenseModel: open-source
-license: GPL-3.0, GPL-3.0
+license: GPL-3.0
 currentMajor: "30"
 latestReleaseDate: 2026-04-19
 githubStargazers: 27003

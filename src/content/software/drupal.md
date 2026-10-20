@@ -44,6 +44,7 @@ license: GPL-2.0-or-later, GPL
 currentMajor: "11"
 latestReleaseDate: 2026-10-14
 githubStargazers: 4292
+packagistDownloads: 70956278
 pluginCount: 39446
 wikidata: Q170855
 addedAt: 2026-10-18
@@ -132,6 +133,9 @@ sources:
     checkedAt: 2026-10-18
   - field: githubStargazers
     url: https://api.github.com/repos/drupal/drupal
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/drupal/core.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://www.drupal.org/api-d7/node.json?type=project_module&field_project_type=full&limit=1

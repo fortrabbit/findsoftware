@@ -328,7 +328,7 @@ const categoryMap = {
 
 const runtimeMap = { 'go binary': 'binary', 'rust binary': 'binary', 'beam (erlang/otp)': 'beam' };
 const languageMap = { 'c#': 'csharp' };
-const databaseMap = { mssql: 'sqlserver' };
+const databaseMap = { mssql: 'sqlserver', postgresql: 'postgres', pgsql: 'postgres', mongo: 'mongodb' };
 const apiMap = { jsonapi: 'rest', 'admin-api': 'rest', 'store-api': 'rest', webservice: 'rest' };
 const renderMap = { headless: 'api-only' };
 
@@ -351,6 +351,8 @@ const text = (value) =>
     .join(', ');
 const lower = (value) => String(typeof value === 'object' ? (value.name ?? '') : value).toLowerCase().trim();
 const number = (value) => {
+  // A figure recorded with its periods ({ total, monthly }) shows the total.
+  if (value && typeof value === 'object' && !Array.isArray(value)) value = value.total ?? Object.values(value)[0];
   // The leading figure only: values carry a period after it ("86916550 for 2026-10-10 to 2026-10-16").
   const held = typeof value === 'number' ? value : Number(String(value).replace(/,/g, '').match(/\d+(?:\.\d+)?/)?.[0]);
   return Number.isFinite(held) && held > 0 ? Math.round(held) : undefined;
@@ -363,6 +365,16 @@ const slug = (value) =>
     .replace(/^.*\//, '')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
+
+/*
+ * A parent is named as people write it: "Yii 1.x", "Laravel 11", "Magento". The record
+ * id is the name without its version, sometimes with the kind it is ("yii-framework").
+ */
+const recordOf = (value) => {
+  const bare = slug(value);
+  const unversioned = bare.replace(/(-v?\d[\w.-]*|-x)+$/, '');
+  return [bare, unversioned, `${unversioned}-framework`, `${unversioned}-cms`, `${unversioned}-js`].find((id) => ids.has(id));
+};
 
 function mapped(values, map, allowed, pick = (value) => value) {
   const out = [];
@@ -379,10 +391,10 @@ function mapped(values, map, allowed, pick = (value) => value) {
  * derives them from cited facts. The research agent's value stands only where no rule decides.
  */
 const openLicense = /\b(MIT|Apache|BSD|A?GPL|LGPL|MPL|ISC|OSL|AFL|EUPL|Zlib|Unlicense|Artistic)/i;
-const restrictedLicense = /\b(BUSL|BSL|SSPL|Elastic|FSL|RSAL|Commons Clause|Sustainable|proprietary|EULA|No Charge|custom|CC-BY-ND|CC-BY-NC|NoDerivatives|NonCommercial)/i;
+const restrictedLicense = /\b(BUSL|BSL|SSPL|Elastic|FSL|RSAL|Commons Clause|Sustainable|proprietary|EULA|No Charge|custom|POCL|CC-BY-ND|CC-BY-NC|NoDerivatives|NonCommercial)/i;
 const enterprisePart = /enterprise|\bee\/|x-pack|commercial licen[cs]e/i;
 const foundationName = /foundation|association|conservancy|LF Projects|\be\.\s?V\.|non-?profit|OpenJS/i;
-const legalForm = /\b(Inc|LLC|Ltd|Limited|GmbH|AG|SAS|S\.A|SA|srl|s\.r\.o|Pty|Pte|Pvt|B\.V|BV|KG|Corp|Corporation|Co|plc|Oy|OÜ|AB|A\/S|SARL|sp\. z o\.o)(?![\p{L}])/u;
+const legalForm = /\b(Inc|LLC|Ltd|Limited|GmbH|UG|AG|SAS|SpA|S\.L|SL|SRL|S\.A|SA|srl|s\.r\.o|Pty|Pte|Pvt|B\.V|BV|KG|Corp|Corporation|Co|plc|Oy|OÜ|AB|A\/S|SARL|sp\. z o\.o)(?![\p{L}])/u;
 const ruled = { licenseModel: { rule: 0, research: 0 }, maintainerType: { rule: 0, research: 0 } };
 
 function licenseModelOf({ status, licenses, repository, sourcePublic, paidEdition }) {
@@ -401,7 +413,9 @@ function licenseModelOf({ status, licenses, repository, sourcePublic, paidEditio
 function maintainerTypeOf({ maintainer, repoOwnerType }) {
   if (foundationName.test(maintainer)) return 'foundation';
   if (legalForm.test(maintainer)) return 'company';
-  if (repoOwnerType === 'user') return 'individual';
+  // A team named as such is several people, even when its repository sits on one person's account.
+  if (/\b(team|community|contributors|authors|developers)\b/i.test(maintainer)) return 'community';
+  if (String(repoOwnerType).toLowerCase() === 'user') return 'individual';
   return undefined;
 }
 
@@ -449,7 +463,7 @@ for (const file of facts) {
   const values = (field) => (research.facts ?? []).filter((fact) => fact.field === field).flatMap((fact) => asList(fact.value));
   const raw = values('categories').length ? values('categories') : rowCategories.get(research.id) ?? [];
   ownCategories.set(research.id, mapped(raw, categoryMap, vocab('category')));
-  parentOf.set(research.id, values('basedOn').map(slug).find((id) => ids.has(id) && id !== research.id));
+  parentOf.set(research.id, values('basedOn').map(recordOf).find((id) => id && id !== research.id));
 }
 
 for (const file of facts) {
@@ -520,7 +534,7 @@ for (const file of facts) {
     if (name && name !== 'binary' && vocab('runtime').has(name)) record.runtimeMin = `${name} ${runtimeMin[1]}${minor}`;
   }
   // A relation names records; what is not a record yet (Vue, React) waits for one.
-  const basedOn = [...new Set(all('basedOn').map(slug))].filter((id) => ids.has(id) && id !== research.id);
+  const basedOn = [...new Set(all('basedOn').map(recordOf))].filter((id) => id && id !== research.id);
   if (basedOn.length) record.basedOn = basedOn;
 
   const contentStore = mapped(all('contentStore'), { 'flat-file themes': '' }, vocab('contentStore'));
@@ -555,7 +569,8 @@ for (const file of facts) {
     record.licenseModel = licenseModel;
     ruled.licenseModel[derivedModel ? 'rule' : 'research']++;
   }
-  if (byField.has('license')) record.license = text(all('license'));
+  // The same license stated by two sources reads once.
+  if (byField.has('license')) record.license = [...new Map(all('license').map((entry) => [lower(text(entry)), text(entry)])).values()].join(', ');
 
   // A dot release goes stale within weeks; the major holds for a year or more. Under 1.0 the minor moves as fast, so 0.x stays 0.
   let version = String(first('currentMajor') ?? '').match(/(\d+)(?:\.(\d+))?/);

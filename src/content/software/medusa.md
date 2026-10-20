@@ -41,6 +41,7 @@ license: MIT, except Enterprise Edition materials under a commercial license, NO
 currentMajor: "2"
 latestReleaseDate: 2026-09-28
 githubStargazers: 36787
+npmWeeklyDownloads: 123119
 contributors: 456
 addedAt: 2026-10-18
 checkedAt: 2026-10-18
@@ -131,6 +132,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/medusajs/medusa/contributors
+    checkedAt: 2026-10-18
+  - field: npmWeeklyDownloads
+    url: https://api.npmjs.org/downloads/point/last-week/@medusajs/medusa
     checkedAt: 2026-10-18
   - field: urls
     url: https://medusajs.com/integrations/

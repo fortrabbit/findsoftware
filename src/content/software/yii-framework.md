@@ -37,6 +37,7 @@ license: BSD-3-Clause
 currentMajor: "2"
 latestReleaseDate: 2026-05-09
 githubStargazers: 14278
+packagistDownloads: 32621651
 social:
   x: https://x.com/yiiframework
   forum: https://www.yiiframework.com/forum
@@ -127,6 +128,12 @@ sources:
     checkedAt: 2026-10-18
   - field: githubStargazers
     url: https://github.com/yiisoft/app
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/yiisoft/yii2.json
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/yiisoft/app.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://www.yiiframework.com/extensions

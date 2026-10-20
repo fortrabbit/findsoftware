@@ -29,6 +29,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-09-01
 githubStargazers: 12276
+packagistDownloads: 57412755
 contributors: 227
 social:
   forum: https://discourse.slimframework.com/
@@ -97,6 +98,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://github.com/slimphp/Slim/graphs/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/slim/slim
     checkedAt: 2026-10-18
   - field: runsAs
     url: https://www.slimframework.com/docs/v4/start/installation.html

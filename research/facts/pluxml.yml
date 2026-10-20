@@ -1,0 +1,136 @@
+id: pluxml
+name: PluXml
+status: accepted
+checkedAt: 2026-10-20
+description: CMS and blog engine that stores its content in XML files and needs no database.
+facts:
+  - field: homepage
+    value: https://pluxml.org/
+    url: https://pluxml.org/
+    checkedAt: 2026-10-20
+    via: page
+  - field: repository
+    value: https://github.com/pluxml/PluXml
+    url: https://api.github.com/repos/pluxml/PluXml
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://wiki.pluxml.org/
+    url: https://wiki.pluxml.org/
+    checkedAt: 2026-10-20
+    via: page
+  - field: maintainer
+    value: PluXml staff and contributors
+    url: https://pluxml.org/static2/about-pluxml
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Here is the staff members and contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/pluxml
+    checkedAt: 2026-10-20
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://api.github.com/repos/pluxml/PluXml
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [blog, cms]
+    url: https://pluxml.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Blog ou CMS à l'Xml"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/pluxml/PluXml
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/pluxml/PluXml/blob/v5.8.23/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP 7.2 ou supérieur"
+  - field: runtimeMin
+    value: "7.2"
+    url: https://github.com/pluxml/PluXml/blob/v5.8.23/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP 7.2 ou supérieur"
+  - field: contentStore
+    value: XML files
+    url: https://pluxml.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Toutes les données sont stockées dans des fichiers xml"
+  - field: databases
+    value: [none]
+    url: https://pluxml.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Aucune base de données requise"
+  - field: adminUi
+    value: yes, back office
+    url: https://github.com/pluxml/PluXml/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Backoffice"
+  - field: userRoles
+    value: yes, five profiles with different permission levels
+    url: https://pluxml.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "5 profils avec des niveaux d'autorisations différents"
+  - field: i18n
+    value: yes, translated into 11 languages
+    url: https://pluxml.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Traduit en 11 langues"
+  - field: installMethod
+    value: archive download, then the installation procedure shown on the site
+    url: https://pluxml.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Récuperez l'archive téléchargeable sur cette page et dézippez la à la racine de votre site"
+  - field: license
+    value: GPL-3.0
+    url: https://api.github.com/repos/pluxml/PluXml
+    checkedAt: 2026-10-20
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://pluxml.org/static2/about-pluxml
+    checkedAt: 2026-10-20
+    via: page
+    quote: "free-software under the GPL licence"
+  - field: currentMajor
+    value: 5
+    url: https://api.github.com/repos/pluxml/PluXml/releases/latest
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-23
+    url: https://api.github.com/repos/pluxml/PluXml/releases/latest
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 233
+    url: https://api.github.com/repos/pluxml/PluXml
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 48
+    url: https://api.github.com/repos/pluxml/PluXml/contributors
+    checkedAt: 2026-10-20
+    via: api
+  - field: forum
+    value: https://forum.pluxml.org
+    url: https://pluxml.org/
+    checkedAt: 2026-10-20
+    via: page
+notFound: [firstRelease, hqCountry, parent, forkOf, successorOf, alternativeTo, usageShare, wikidata, pluginDirectory, pluginCount, multisite, runsAs, discord, subreddit, bluesky, x, newsletter, importsFrom]
+unreadable: []
+notes: >
+  The project states two PHP minimums: the README of the latest release tag and the homepage both say "PHP 7.2 ou supérieur"; the README on the default branch (the 5.9 development line) says "PHP 5.6.34 or higher until PHP 8.1.2". runtimeMin records the latest release's minimum. The maintainer is recorded as the about page names its team: the page lists current and past staff by name and states no legal entity, so no legal form is recorded. The LICENSE copyright line in the repository is the Free Software Foundation text for the GPL and names no project owner. The homepage is served over HTTPS at pluxml.org. The installation steps are taken from the homepage text only; the wiki was not read for them.

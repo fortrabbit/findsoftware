@@ -1,0 +1,128 @@
+id: varbase
+name: Varbase
+status: accepted
+checkedAt: 2026-10-20
+description: Drupal distribution that packages Drupal core with pre-configured modules and recipes as a starting point for Drupal sites.
+facts:
+  - field: homepage
+    value: https://www.drupal.org/project/varbase
+    url: https://www.drupal.org/project/varbase
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Varbase is an enhanced Drupal distribution engineered to speed up development"
+  - field: repository
+    value: https://github.com/Vardot/varbase
+    url: https://api.github.com/repos/Vardot/varbase
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://docs.varbase.vardot.com
+    url: https://github.com/Vardot/varbase/blob/11.0.x/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Varbase 11.0.x Developer Guide"
+  - field: maintainer
+    value: Vardot
+    url: https://www.vardot.com/en/varbase
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Vardot © 2026. All Rights Reserved."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Vardot
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [cms, distribution]
+    url: https://github.com/Vardot/varbase/blob/11.0.x/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Varbase is an enhanced Drupal distribution with a lot of necessities."
+  - field: basedOn
+    value: drupal
+    url: https://github.com/Vardot/varbase/blob/11.0.x/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "enhanced Drupal distribution"
+  - field: runtime
+    value: [php]
+    url: https://docs.varbase.vardot.com/developers/installing-varbase/requirements
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP 8.4 or later is required."
+  - field: runtimeMin
+    value: "8.4"
+    url: https://docs.varbase.vardot.com/developers/installing-varbase/requirements
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP 8.4 or later is required."
+  - field: databases
+    value: [mysql, mariadb, percona]
+    url: https://docs.varbase.vardot.com/developers/installing-varbase/requirements
+    checkedAt: 2026-10-20
+    via: page
+    quote: "One of the following database servers"
+  - field: serverNeeds
+    value: Apache 2.4 or later with mod_rewrite, or Nginx 1.18 or later with Drupal rewrite rules
+    url: https://docs.varbase.vardot.com/developers/installing-varbase/requirements
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Apache 2.4 or later with mod_rewrite enabled."
+  - field: installMethod
+    value: composer create-project drupal/varbase_project
+    url: https://github.com/Vardot/varbase/blob/11.0.x/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer create-project drupal/varbase_project:~11.0.0 PROJECT_DIR_NAME"
+  - field: adminUi
+    value: yes, Drupal administration interface
+    url: https://docs.varbase.vardot.com/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "How to manage content, media, and users"
+  - field: license
+    value: GPL-2.0-or-later
+    url: https://github.com/Vardot/varbase/blob/11.0.x/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"license": "GPL-2.0-or-later",'
+  - field: currentMajor
+    value: 11
+    url: https://repo.packagist.org/p2/drupal/varbase_project.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-10
+    url: https://repo.packagist.org/p2/drupal/varbase_project.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 95
+    url: https://api.github.com/repos/Vardot/varbase
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/Vardot/varbase/contributors?per_page=100&anon=true
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: drupal/varbase_project
+    url: https://packagist.org/packages/drupal/varbase_project.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: 4402 total, 762 in the last month
+    url: https://packagist.org/packages/drupal/varbase_project.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: reportedInstalls
+    value: 517
+    url: https://www.drupal.org/project/varbase
+    checkedAt: 2026-10-20
+    via: page
+    quote: "517 sites report using this distribution"
+notFound: [pricingPage, firstRelease, hqCountry, parent, forkOf, successorOf, headlessApi, multisite, livePreview, templating, i18n, userRoles, sso, contentStore, renderingModes, runsAs, endoflifeId, npmName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, paidEdition, language]
+unreadable: []
+notes: >
+  The candidate row's homepage is vardot.com/en/varbase, the maintainer's product page; the homepage fact uses the drupal.org project page, which the GitHub repository and the composer.json name as the project's homepage. The vardot.com page is read for the copyright line only. The install docs name drupal/varbase_project, which is on Packagist and the figures come from it: 4402 total downloads, 762 in the last month, and the stable line 11.0.11 released 2026-10-10. The vardot/varbase package on Packagist shows 197049 total downloads, but it is not the package the install docs name, so its figure is not recorded here. The GitHub repository's latest release is 11.0.0-beta1, a prerelease the repository does not flag, so the stable release comes from the registry. The GitHub repository reports CSS as its language, which does not describe the distribution; language is left unknown and the reviewer should decide. The drupal.org page reports 517 sites using the distribution; the field name reportedInstalls is coined here for that count. The composer.json requires drupal/core ~11.4.0, which is Drupal 11, so the Drupal major is 11 and the Varbase major matches it. The LICENSE file is absent from the repository, and the license comes from composer.json and the Packagist package, which says GPL-2.0-or-later too. The release-cycle page lists 11.0.x as the current line and does not declare the project ended, so no ended signal is recorded.

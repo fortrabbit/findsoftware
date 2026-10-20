@@ -37,6 +37,7 @@ license: proprietary
 currentMajor: "5"
 latestReleaseDate: 2026-10-06
 githubStargazers: 1536
+packagistDownloads: 680567
 contributors: 78
 social:
   bluesky: https://bsky.app/profile/getkirby.com
@@ -130,6 +131,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/getkirby/kirby/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/getkirby/cms.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://plugins.getkirby.com/

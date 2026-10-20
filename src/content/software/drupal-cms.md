@@ -23,6 +23,7 @@ basedOn:
 databases:
   - mariadb
   - mysql
+  - postgres
   - sqlite
 adminUi: true
 runsAs:

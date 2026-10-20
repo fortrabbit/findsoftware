@@ -32,10 +32,11 @@ headlessApi:
 templating: php templates in classic themes, html block templates in block themes
 installMethod: WordPress admin plugin install
 licenseModel: open-source
-license: GPL-2.0-or-later, GPL-2.0-or-later
+license: GPL-2.0-or-later
 currentMajor: "11"
 latestReleaseDate: 2026-10-09
 githubStargazers: 10557
+packagistDownloads: 182504
 contributors: 345
 social:
   x: https://www.x.com/woocommerce
@@ -124,6 +125,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/woocommerce/woocommerce/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/woocommerce/woocommerce.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://woocommerce.com/

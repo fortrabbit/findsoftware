@@ -19,6 +19,7 @@ runtimeMin: php 7.4
 databases:
   - mysql
   - mariadb
+  - postgres
   - sqlite
   - sqlserver
   - oracle

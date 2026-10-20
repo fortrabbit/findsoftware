@@ -20,7 +20,7 @@ runsAs:
   - static
 installMethod: npm i -g antora (meta package installing @antora/cli and @antora/site-generator)
 licenseModel: open-source
-license: MPL-2.0, MPL-2.0
+license: MPL-2.0
 currentMajor: "3"
 latestReleaseDate: 2026-10-01
 npmWeeklyDownloads: 24295

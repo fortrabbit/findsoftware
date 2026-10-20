@@ -42,6 +42,7 @@ license: MIT
 currentMajor: "6"
 latestReleaseDate: 2026-10-09
 githubStargazers: 592
+packagistDownloads: 152999
 contributors: 108
 social:
   x: https://twitter.com/boltcms
@@ -125,6 +126,12 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/bolt/core/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/bolt/core.json
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/bolt/project.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://boltcms.io/extensions

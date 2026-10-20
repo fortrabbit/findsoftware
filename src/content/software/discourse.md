@@ -20,6 +20,8 @@ hosting:
 runtimeMin: ruby 3.4
 contentStore:
   - database
+databases:
+  - postgres
 headlessApi:
   - rest
 runsAs:
@@ -67,6 +69,9 @@ sources:
     checkedAt: 2026-10-19
   - field: contentStore
     url: https://github.com/discourse/discourse
+    checkedAt: 2026-10-19
+  - field: databases
+    url: https://github.com/discourse/discourse/blob/main/docs/INSTALL.md
     checkedAt: 2026-10-19
   - field: headlessApi
     url: https://github.com/discourse/discourse

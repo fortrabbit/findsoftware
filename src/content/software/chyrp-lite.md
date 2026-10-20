@@ -9,6 +9,7 @@ category:
   - cms
 description: Blogging engine written in PHP for hosting a blog on your own web server, with Feathers for post types and Pages for standalone articles.
 status: active
+maintainerType: individual
 firstRelease: 2014
 language: php
 runtime:
@@ -21,6 +22,7 @@ contentStore:
 databases:
   - mysql
   - sqlite
+  - postgres
 adminUi: true
 templating: twig
 i18n: translations as extensions

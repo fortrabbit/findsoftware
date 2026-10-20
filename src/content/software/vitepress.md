@@ -31,7 +31,7 @@ renderingModes:
   - spa
 installMethod: npm add -D vitepress@next, then npx vitepress init
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "1"
 latestReleaseDate: 2025-08-05
 githubStargazers: 18417

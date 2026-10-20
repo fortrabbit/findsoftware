@@ -20,6 +20,8 @@ hosting:
   - ruby
   - node
 runtimeMin: ruby 3.3
+databases:
+  - postgres
 runsAs:
   - always-on
 installMethod: source
@@ -66,6 +68,9 @@ sources:
     url: https://docs.joinmastodon.org/admin/install/
     checkedAt: 2026-10-19
   - field: runsAs
+    url: https://docs.joinmastodon.org/admin/install/
+    checkedAt: 2026-10-19
+  - field: databases
     url: https://docs.joinmastodon.org/admin/install/
     checkedAt: 2026-10-19
   - field: maintainer

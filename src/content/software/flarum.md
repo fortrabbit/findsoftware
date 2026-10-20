@@ -23,14 +23,16 @@ databases:
   - mysql
   - mariadb
   - sqlite
+  - postgres
 runsAs:
   - per-request
 installMethod: unpack archive (tar.gz or zip), composer create-project
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-17
 githubStargazers: 16424
+packagistDownloads: 1617722
 contributors: 35
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -90,6 +92,9 @@ sources:
     url: https://packagist.org/packages/flarum/core.json
     checkedAt: 2026-10-19
   - field: latestReleaseDate
+    url: https://packagist.org/packages/flarum/core.json
+    checkedAt: 2026-10-19
+  - field: packagistDownloads
     url: https://packagist.org/packages/flarum/core.json
     checkedAt: 2026-10-19
   - field: githubStargazers

@@ -19,7 +19,7 @@ runsAs:
   - browser
 installMethod: npm
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "15"
 latestReleaseDate: 2026-10-16
 githubStargazers: 21986

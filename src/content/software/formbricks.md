@@ -19,6 +19,8 @@ runtime:
 hosting:
   - node
 runtimeMin: node 24
+databases:
+  - postgres
 runsAs:
   - always-on
 installMethod: docker-compose, kubernetes-helm
@@ -57,6 +59,9 @@ sources:
     checkedAt: 2026-10-19
   - field: runtimeMin
     url: https://github.com/formbricks/formbricks/blob/6.0.2/package.json
+    checkedAt: 2026-10-19
+  - field: databases
+    url: https://formbricks.com/docs/self-hosting/overview
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://formbricks.com/docs/self-hosting/overview
@@ -98,7 +103,6 @@ figure:
   text: TypeScript · Forms
 ai: authored
 contentStore: null
-databases: null
 adminUi: null
 headlessApi: null
 templating: null

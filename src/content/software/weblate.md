@@ -18,6 +18,8 @@ runtime:
 runtimeMin: python 3.12
 contentStore:
   - database
+databases:
+  - postgres
 runsAs:
   - always-on
 installMethod: docker, pip
@@ -67,6 +69,9 @@ sources:
   - field: contentStore
     url: https://docs.weblate.org/en/latest/admin/install.html
     checkedAt: 2026-10-19
+  - field: databases
+    url: https://docs.weblate.org/en/latest/admin/install.html
+    checkedAt: 2026-10-19
   - field: installMethod
     url: https://docs.weblate.org/en/latest/admin/install.html
     checkedAt: 2026-10-19
@@ -94,7 +99,6 @@ figure:
   textColor: "#1a1a1a"
   text: Python · Dev tool
 ai: authored
-databases: null
 adminUi: null
 headlessApi: null
 templating: null

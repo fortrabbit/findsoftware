@@ -10,6 +10,7 @@ category:
 description: Blogging platform and flat-file CMS in PHP that stores its content in files and needs no database.
 status: active
 maintainer: Danang Probo Sayekti
+maintainerType: individual
 language: php
 runtime:
   - php

@@ -24,7 +24,7 @@ databases:
 i18n: multilingual
 installMethod: composer create-project, or the asgardcms installer
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "3"
 latestReleaseDate: 2018-09-05
 githubStargazers: 788

@@ -22,6 +22,7 @@ runtimeMin: php 8.2
 databases:
   - mysql
   - mariadb
+  - postgres
   - sqlite
 adminUi: true
 i18n: yes, interface in several languages

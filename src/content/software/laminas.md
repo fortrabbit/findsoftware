@@ -25,10 +25,11 @@ renderingModes:
   - server
 installMethod: composer create-project laminas/laminas-mvc-skeleton, docker-compose
 licenseModel: open-source
-license: BSD-3-Clause, BSD-3-Clause
+license: BSD-3-Clause
 currentMajor: "3"
 latestReleaseDate: 2024-11-21
 githubStargazers: 174
+packagistDownloads: 27769730
 social:
   mastodon: https://phpc.social/@getlaminas
   forum: https://discourse.laminas.dev
@@ -110,6 +111,9 @@ sources:
     checkedAt: 2026-10-18
   - field: githubStargazers
     url: https://github.com/laminas/laminas-mvc
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/laminas/laminas-mvc.json
     checkedAt: 2026-10-18
   - field: runsAs
     url: https://raw.githubusercontent.com/laminas/laminas-mvc-skeleton/master/README.md

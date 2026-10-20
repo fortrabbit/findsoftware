@@ -37,10 +37,11 @@ renderingModes:
   - api-only
 installMethod: npm create keystone-app@latest
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "6"
 latestReleaseDate: 2026-08-31
 githubStargazers: 9978
+npmWeeklyDownloads: 4328
 contributors: 263
 addedAt: 2026-10-18
 checkedAt: 2026-10-18
@@ -116,6 +117,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/keystonejs/keystone/contributors
+    checkedAt: 2026-10-18
+  - field: npmWeeklyDownloads
+    url: https://api.npmjs.org/downloads/point/last-week/@keystone-6/core
     checkedAt: 2026-10-18
   - field: runsAs
     url: https://keystonejs.com/docs/getting-started

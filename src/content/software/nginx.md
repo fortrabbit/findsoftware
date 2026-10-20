@@ -15,7 +15,7 @@ runsAs:
   - always-on
 installMethod: linux-packages-from-nginx-org, freebsd-packages, freebsd-ports, build-from-source, windows-binary
 licenseModel: open-source
-license: BSD-2-Clause, BSD-2-Clause
+license: BSD-2-Clause
 currentMajor: "1"
 latestReleaseDate: 2026-10-14
 githubStargazers: 31914

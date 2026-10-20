@@ -36,6 +36,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-03
 githubStargazers: 8788
+packagistDownloads: 21137025
 social:
   x: https://twitter.com/cakephp
   mastodon: https://phpc.social/@cakephp
@@ -113,6 +114,9 @@ sources:
     checkedAt: 2026-10-18
   - field: githubStargazers
     url: https://github.com/cakephp/cakephp
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/cakephp/cakephp.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://plugins.cakephp.org

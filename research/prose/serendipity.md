@@ -1,0 +1,3 @@
+Serendipity is a PHP weblog engine. Pages are rendered from Smarty templates, and the compiled versions go into a templates_c directory that the web server must be able to write. Plugins and themes add functionality and change how a blog looks, and the project publishes them through the Spartacus plugin repository. Blog content is stored in a database, which can be MySQL, PostgreSQL or SQLite. Editors use the admin panel at serendipity_admin.php.
+
+Installation means downloading the release archive, unpacking it into the web root, and running the web installer. On Apache, the virtual host must allow .htaccess files.

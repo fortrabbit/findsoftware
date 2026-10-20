@@ -31,7 +31,7 @@ runsAs:
   - per-request
 installMethod: Contao Manager, composer
 licenseModel: open-source
-license: LGPL-3.0, LGPL-3.0
+license: LGPL-3.0
 currentMajor: "6"
 latestReleaseDate: 2026-10-09
 githubStargazers: 448

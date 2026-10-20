@@ -22,11 +22,12 @@ basedOn:
   - craft-cms
 databases:
   - mysql
+  - postgres
 runsAs:
   - per-request
 installMethod: plugin store, composer
 licenseModel: source-available
-license: proprietary, proprietary
+license: proprietary
 currentMajor: "5"
 latestReleaseDate: 2026-10-08
 githubStargazers: 242

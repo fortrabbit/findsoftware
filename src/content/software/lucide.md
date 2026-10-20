@@ -10,6 +10,7 @@ category:
 description: Open-source set of scalable vector icons, distributed as packages for vanilla JavaScript and for frameworks.
 status: active
 maintainer: Lucide Icons and Contributors
+maintainerType: community
 language: typescript
 licenseModel: open-source
 license: ISC, MIT

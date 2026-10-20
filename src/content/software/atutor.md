@@ -9,6 +9,7 @@ category:
   - wiki
 description: Open-source web-based learning management system for developing and delivering online courses.
 status: discontinued
+maintainerType: individual
 language: php
 runtime:
   - php

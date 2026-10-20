@@ -40,6 +40,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-14
 githubStargazers: 8560
+packagistDownloads: 6391247
 contributors: 324
 social:
   x: https://twitter.com/Sylius
@@ -133,6 +134,12 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/Sylius/Sylius/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/sylius/sylius.json
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/sylius/sylius-standard.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://sylius.com/plugins/

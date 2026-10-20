@@ -22,6 +22,7 @@ basedOn:
 databases:
   - mysql
   - mariadb
+  - postgres
   - sqlite
   - sqlserver
 adminUi: true

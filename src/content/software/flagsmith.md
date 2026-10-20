@@ -17,6 +17,8 @@ runtime:
   - python
   - node
 runtimeMin: python 3.11
+databases:
+  - postgres
 adminUi: true
 headlessApi:
   - rest
@@ -63,6 +65,9 @@ sources:
   - field: runtimeMin
     url: https://github.com/Flagsmith/flagsmith/blob/v2.286.0/api/pyproject.toml
     checkedAt: 2026-10-19
+  - field: databases
+    url: https://docs.flagsmith.com/deployment-self-hosting/hosting-guides/docker
+    checkedAt: 2026-10-19
   - field: headlessApi
     url: https://docs.flagsmith.com/deployment-self-hosting/hosting-guides/docker
     checkedAt: 2026-10-19
@@ -106,7 +111,6 @@ figure:
   text: Python · Dev tool
 ai: authored
 contentStore: null
-databases: null
 templating: null
 i18n: null
 renderingModes: null

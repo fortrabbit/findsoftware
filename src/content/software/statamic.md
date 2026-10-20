@@ -47,6 +47,7 @@ license: proprietary, Statamic License (custom, not SPDX)
 currentMajor: "6"
 latestReleaseDate: 2026-10-16
 githubStargazers: 4906
+packagistDownloads: 4268843
 contributors: 365
 pluginCount: 490
 social:
@@ -146,6 +147,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/statamic/cms/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/statamic/cms.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://statamic.com/

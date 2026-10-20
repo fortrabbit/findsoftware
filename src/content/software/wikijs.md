@@ -16,6 +16,7 @@ hosting:
   - node
 runtimeMin: node 22
 databases:
+  - postgres
   - mysql
   - mariadb
   - sqlserver
@@ -25,7 +26,7 @@ runsAs:
   - always-on
 installMethod: Docker or Kubernetes container (recommended), Node.js on host from release tarball
 licenseModel: open-source
-license: AGPL-3.0, AGPL-3.0
+license: AGPL-3.0
 currentMajor: "2"
 latestReleaseDate: 2026-09-21
 githubStargazers: 29054

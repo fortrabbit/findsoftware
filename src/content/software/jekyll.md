@@ -28,7 +28,7 @@ renderingModes:
   - static
 installMethod: gem install bundler jekyll
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "4"
 latestReleaseDate: 2025-01-29
 githubStargazers: 51715

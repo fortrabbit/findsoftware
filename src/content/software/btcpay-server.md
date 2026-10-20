@@ -11,6 +11,8 @@ description: Self-hosted, open-source cryptocurrency payment processor that send
 status: active
 maintainer: btcpayserver
 language: csharp
+databases:
+  - postgres
 runsAs:
   - always-on
 installMethod: docker, manual
@@ -46,6 +48,9 @@ sources:
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://docs.btcpayserver.org/Deployment/
+    checkedAt: 2026-10-19
+  - field: databases
+    url: https://docs.btcpayserver.org/Docker/architecture/
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://docs.btcpayserver.org/Docker/installation/

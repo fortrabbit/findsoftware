@@ -38,10 +38,11 @@ renderingModes:
   - server
 installMethod: ghost-cli (npm install ghost-cli@latest -g, ghost install), docker compose (preview)
 licenseModel: open-source
-license: MIT, MIT
+license: MIT
 currentMajor: "6"
 latestReleaseDate: 2026-10-15
 githubStargazers: 55562
+npmWeeklyDownloads: 8768
 contributors: 369
 social:
   forum: https://forum.ghost.org
@@ -135,6 +136,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/TryGhost/Ghost/contributors
+    checkedAt: 2026-10-18
+  - field: npmWeeklyDownloads
+    url: https://api.npmjs.org/downloads/point/last-week/ghost
     checkedAt: 2026-10-18
   - field: urls
     url: https://ghost.org/integrations/

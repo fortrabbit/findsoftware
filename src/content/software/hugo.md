@@ -27,7 +27,7 @@ renderingModes:
   - static
 installMethod: prebuilt binary, snap, homebrew, linux distribution packages, go install, docker
 licenseModel: open-source
-license: Apache-2.0, Apache-2.0
+license: Apache-2.0
 currentMajor: "0"
 latestReleaseDate: 2026-10-13
 githubStargazers: 90146

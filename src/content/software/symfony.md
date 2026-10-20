@@ -36,6 +36,7 @@ license: MIT
 currentMajor: "8"
 latestReleaseDate: 2026-10-14
 githubStargazers: 31191
+packagistDownloads: 88119012
 social:
   x: https://twitter.com/symfony
   bluesky: https://bsky.app/profile/symfony.com
@@ -113,6 +114,12 @@ sources:
     checkedAt: 2026-10-18
   - field: githubStargazers
     url: https://github.com/symfony/symfony
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/symfony/symfony.json
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/symfony/framework-bundle.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://symfony.com/bundles

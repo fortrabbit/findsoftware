@@ -41,6 +41,7 @@ license: proprietary, Craft License (custom, not SPDX)
 currentMajor: "5"
 latestReleaseDate: 2026-10-08
 githubStargazers: 3616
+packagistDownloads: 3801890
 contributors: 252
 pluginCount: 1639
 social:
@@ -140,6 +141,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://api.github.com/repos/craftcms/cms/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/craftcms/cms.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://craftcms.com/

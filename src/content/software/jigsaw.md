@@ -36,6 +36,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-05-21
 githubStargazers: 2252
+packagistDownloads: 474037
 contributors: 81
 addedAt: 2026-10-18
 checkedAt: 2026-10-18
@@ -114,6 +115,9 @@ sources:
     checkedAt: 2026-10-18
   - field: contributors
     url: https://github.com/tighten/jigsaw/graphs/contributors
+    checkedAt: 2026-10-18
+  - field: packagistDownloads
+    url: https://packagist.org/packages/tightenco/jigsaw
     checkedAt: 2026-10-18
   - field: runsAs
     url: https://jigsaw.tighten.com/docs/installation/

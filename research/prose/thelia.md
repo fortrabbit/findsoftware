@@ -1,0 +1,3 @@
+Thelia is an e-commerce CMS and framework written in PHP and built on Symfony and API Platform. The back office and the front office use Twig, and API Platform provides the REST layer. The project is published by OpenStudio SAS, a French company.
+
+A shop is started from the project skeleton with `composer create-project thelia/thelia-project`, and the [skeleton repository](https://github.com/thelia/thelia-project) describes the steps that follow. The database is MariaDB or MySQL, and the web server, Nginx or Apache, must serve the `public/` directory. The [main repository](https://github.com/thelia/thelia) holds the source of Thelia itself and is meant for work on the framework, not for starting a store.

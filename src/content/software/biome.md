@@ -10,6 +10,7 @@ category:
 description: Toolchain for web projects with a formatter and a linter, usable from the command line and through a language server.
 status: active
 maintainer: Biome Developers and Contributors
+maintainerType: community
 language: rust
 runtimeMin: node 14
 runsAs:

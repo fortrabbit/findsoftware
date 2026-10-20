@@ -18,6 +18,8 @@ runtime:
   - php
 hosting:
   - php
+basedOn:
+  - yii-framework
 databases:
   - mysql
 adminUi: true
@@ -54,6 +56,9 @@ sources:
     url: https://github.com/luyadev/luya/blob/master/LICENSE.md
     checkedAt: 2026-10-20
   - field: category
+    url: https://luya.io
+    checkedAt: 2026-10-20
+  - field: basedOn
     url: https://luya.io
     checkedAt: 2026-10-20
   - field: language
