@@ -24,6 +24,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-09
+githubStargazers: 92625
 contributors: 1145
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -69,6 +70,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/louislam/uptime-kuma/releases/tag/2.5.6
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/louislam/uptime-kuma
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/louislam/uptime-kuma

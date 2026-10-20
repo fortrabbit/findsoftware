@@ -18,6 +18,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "16"
 latestReleaseDate: 2026-10-15
+githubStargazers: 143086
 npmWeeklyDownloads: 40841184
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -47,6 +48,9 @@ sources:
     url: https://endoflife.date/api/nextjs.json
     checkedAt: 2026-10-19
   - field: latestReleaseDate
+    url: https://github.com/vercel/next.js
+    checkedAt: 2026-10-19
+  - field: githubStargazers
     url: https://github.com/vercel/next.js
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads

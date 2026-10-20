@@ -29,6 +29,7 @@ licenseModel: open-source
 license: OSL-3.0
 currentMajor: "1"
 latestReleaseDate: 2026-05-08
+githubStargazers: 150
 contributors: 27
 social:
   forum: https://forum.abantecart.com
@@ -85,6 +86,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/abantecart/abantecart-src/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/abantecart/abantecart-src
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/abantecart/abantecart-src/contributors?anon=true&per_page=100

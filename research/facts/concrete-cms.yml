@@ -1,0 +1,140 @@
+id: concrete-cms
+name: Concrete CMS
+status: accepted
+checkedAt: 2026-10-20
+description: Open-source content management system for teams, written in PHP, with a built-in REST API and a MySQL or MariaDB database.
+facts:
+  - field: name
+    value: Concrete CMS
+    url: https://www.concretecms.com
+    checkedAt: 2026-10-20
+    via: page
+  - field: homepage
+    value: https://www.concretecms.com
+    url: https://www.concretecms.com
+    checkedAt: 2026-10-20
+    via: page
+  - field: repository
+    value: https://github.com/concretecms/concretecms
+    url: https://api.github.com/repos/concretecms/concretecms
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://documentation.concretecms.org
+    url: https://documentation.concretecms.org
+    checkedAt: 2026-10-20
+    via: page
+  - field: maintainer
+    value: PortlandLabs, Inc.
+    url: https://www.concretecms.com/about/legal/privacy-policy
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PortlandLabs, Inc. (the founders and maintainers of the open source content management system"
+  - field: hqCountry
+    value: US
+    url: https://www.concretecms.com/about/legal/terms-use
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Portland OR, 97293, USA"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/concretecms/concretecms
+    checkedAt: 2026-10-20
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://api.github.com/repos/concretecms/concretecms
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [cms]
+    url: https://www.concretecms.com
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Free and Open Source Content Management System for Teams"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/concretecms/concretecms
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://documentation.concretecms.org/9-x/developers/introduction/system-requirements
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Concrete CMS is written primarily in PHP."
+  - field: runtimeMin
+    value: "7.3"
+    url: https://documentation.concretecms.org/9-x/developers/introduction/system-requirements
+    checkedAt: 2026-10-20
+    via: page
+    quote: "a minimum PHP version of 7.3"
+  - field: databases
+    value: [mysql, mariadb]
+    url: https://documentation.concretecms.org/9-x/developers/introduction/system-requirements
+    checkedAt: 2026-10-20
+    via: page
+    quote: "MySQL (5.7 or higher) or MariaDB both work."
+  - field: contentStore
+    value: database
+    url: https://documentation.concretecms.org/9-x/developers/introduction/installing-concrete-cms
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Setup a MySQL database with full permissions."
+  - field: headlessApi
+    value: [rest]
+    url: https://documentation.concretecms.org/9-x/developers/rest-api/introduction
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Concrete CMS has a built-in REST API featuring OAuth2"
+  - field: installMethod
+    value: [zip download, composer create-project]
+    url: https://documentation.concretecms.org/9-x/developers/introduction/installing-concrete-cms
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer create-project -n concretecms/composer hello_world"
+  - field: runsAs
+    value: [per-request]
+    url: https://documentation.concretecms.org/9-x/developers/introduction/installing-concrete-cms
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Move the zip file to a web-accessible folder"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/concretecms/concretecms
+    checkedAt: 2026-10-20
+    via: api
+  - field: currentMajor
+    value: 9
+    url: https://api.github.com/repos/concretecms/concretecms/releases/latest
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-06
+    url: https://api.github.com/repos/concretecms/concretecms/releases/latest
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: concrete5/core
+    url: https://packagist.org/packages/concrete5/core.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: 179972
+    url: https://packagist.org/packages/concrete5/core.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 852
+    url: https://api.github.com/repos/concretecms/concretecms
+    checkedAt: 2026-10-20
+    via: api
+  - field: wikidata
+    value: Q1935459
+    url: https://www.wikidata.org/wiki/Q1935459
+    checkedAt: 2026-10-20
+    via: api
+notFound: [firstRelease, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, pricingPage, paidEdition, basedOn, parent, forum, discord, pluginDirectory, pluginCount, subreddit, mastodon, bluesky, x, newsletter, usageShare, contributors, endoflifeId]
+unreadable: []
+notes: >
+  The repository README says the repository holds the current major line and points to other branches for earlier lines; the record covers the current line. The installation guide's Composer path is composer create-project concretecms/composer, a project skeleton whose composer.json requires concrete5/core, the core package; packagistDownloads is the concrete5/core total. The repository's own composer.json name, concrete5/concrete5, is a separate Packagist package with 2839 total downloads on 2026-10-20, and the skeleton concretecms/composer has 12273. The system requirements page gives PHP 7.3 as the minimum for the current line and says PHP 7.3 is end of life. The legal entity is PortlandLabs, Inc., which the company's own pages call Concrete. The installation guide gives the zip download and Composer as the two install paths.

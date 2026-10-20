@@ -22,6 +22,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-18
+githubStargazers: 11740
 packagistDownloads: 96759211
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -67,6 +68,9 @@ sources:
     checkedAt: 2026-10-19
   - field: packagistDownloads
     url: https://packagist.org/packages/pestphp/pest.json
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/pestphp/pest
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://pestphp.com/docs/installation

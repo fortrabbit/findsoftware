@@ -32,6 +32,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-10-08
+githubStargazers: 61488
 social:
   forum: https://github.com/pocketbase/pocketbase/discussions
 addedAt: 2026-10-19
@@ -90,6 +91,9 @@ sources:
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://pocketbase.io/docs/
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/pocketbase/pocketbase
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://pocketbase.io/docs/going-to-production/

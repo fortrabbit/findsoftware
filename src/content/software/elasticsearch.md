@@ -21,6 +21,7 @@ licenseModel: open-core
 license: AGPL-3.0-only OR SSPL-1.0 OR Elastic-2.0 (triple license, default for the repository), Elastic License 2.0 (x-pack folder only)
 currentMajor: "9"
 latestReleaseDate: 2026-10-06
+githubStargazers: 78317
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -65,6 +66,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/elastic/elasticsearch/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/elastic/elasticsearch
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch

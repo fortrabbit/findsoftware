@@ -22,6 +22,7 @@ licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"
 latestReleaseDate: 2026-10-14
+githubStargazers: 98050
 npmWeeklyDownloads: 68885977
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -60,6 +61,9 @@ sources:
     url: https://registry.npmjs.org/playwright/latest
     checkedAt: 2026-10-19
   - field: latestReleaseDate
+    url: https://github.com/microsoft/playwright
+    checkedAt: 2026-10-19
+  - field: githubStargazers
     url: https://github.com/microsoft/playwright
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads

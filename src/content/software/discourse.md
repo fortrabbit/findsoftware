@@ -30,6 +30,7 @@ installMethod: discourse_docker launcher (Docker)
 licenseModel: open-source
 license: GPL-2.0, GPL-2.0-or-later
 latestReleaseDate: 2026-09-22
+githubStargazers: 47996
 contributors: 1201
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -93,6 +94,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://endoflife.date/api/discourse.json
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/discourse/discourse
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/discourse/discourse/contributors

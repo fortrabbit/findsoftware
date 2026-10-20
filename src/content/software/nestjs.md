@@ -21,6 +21,7 @@ licenseModel: open-source
 license: MIT, MIT
 currentMajor: "12"
 latestReleaseDate: 2026-10-12
+githubStargazers: 76865
 npmWeeklyDownloads: 9298648
 social:
   x: https://twitter.com/nestframework
@@ -57,6 +58,9 @@ sources:
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@nestjs/core
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/nestjs/nest
     checkedAt: 2026-10-19
   - field: currentMajor
     url: https://github.com/nestjs/nest/releases/tag/v12.1.3

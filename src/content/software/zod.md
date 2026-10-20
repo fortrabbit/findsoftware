@@ -21,6 +21,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-12
+githubStargazers: 44154
 npmWeeklyDownloads: 213499904
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -60,6 +61,9 @@ sources:
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://zod.dev/v4
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/colinhacks/zod
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/zod

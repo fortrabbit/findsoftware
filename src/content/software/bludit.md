@@ -28,6 +28,7 @@ licenseModel: open-core
 license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-05-11
+githubStargazers: 1469
 social:
   x: https://twitter.com/bludit
   discord: https://discord.gg/CFaXEdZWds
@@ -83,6 +84,9 @@ sources:
     checkedAt: 2026-10-20
   - field: firstRelease
     url: https://github.com/bludit/bludit/releases
+    checkedAt: 2026-10-20
+  - field: githubStargazers
+    url: https://github.com/bludit/bludit
     checkedAt: 2026-10-20
   - field: urls
     url: https://github.com/bludit/bludit/blob/master/README.md

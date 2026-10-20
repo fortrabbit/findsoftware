@@ -22,6 +22,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "8"
 latestReleaseDate: 2026-05-18
+githubStargazers: 11115
 packagistDownloads: 29661128
 contributors: 479
 addedAt: 2026-10-19
@@ -77,6 +78,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/deployphp/deployer/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/deployphp/deployer
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/deployphp/deployer/contributors

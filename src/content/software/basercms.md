@@ -27,6 +27,7 @@ licenseModel: open-source
 license: MIT, MIT
 currentMajor: "5"
 latestReleaseDate: 2026-09-24
+githubStargazers: 191
 packagistDownloads: 5314
 contributors: 100
 social:
@@ -88,6 +89,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/baserproject/basercms/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/baserproject/basercms
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/baserproject/basercms/contributors?anon=true&per_page=100

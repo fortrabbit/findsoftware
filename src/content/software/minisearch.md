@@ -20,6 +20,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "7"
 latestReleaseDate: 2025-09-16
+githubStargazers: 6172
 npmWeeklyDownloads: 2335603
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -59,6 +60,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://registry.npmjs.org/minisearch
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/lucaong/minisearch
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/minisearch

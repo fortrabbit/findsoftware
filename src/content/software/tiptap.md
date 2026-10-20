@@ -23,6 +23,7 @@ licenseModel: open-core
 license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-13
+githubStargazers: 38775
 npmWeeklyDownloads: 13818734
 contributors: 545
 social:
@@ -80,6 +81,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/ueberdosis/tiptap/releases/tag/v3.32.0
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/ueberdosis/tiptap
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/ueberdosis/tiptap

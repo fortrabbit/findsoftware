@@ -18,6 +18,7 @@ licenseModel: open-source
 license: RSALv2 or SSPLv1 or AGPLv3, BSD-3-Clause
 currentMajor: "8"
 latestReleaseDate: 2026-09-17
+githubStargazers: 77004
 social:
   x: https://x.com/Redisinc
 addedAt: 2026-10-19
@@ -61,6 +62,9 @@ sources:
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://redis.io/downloads/
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/redis/redis
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://redis.io/docs/latest/operate/oss_and_stack/install/archive/install-redis/

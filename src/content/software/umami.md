@@ -25,6 +25,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-09-17
+githubStargazers: 39458
 contributors: 438
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -73,6 +74,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/umami-software/umami/releases/tag/v3.4.0
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/umami-software/umami
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/umami-software/umami

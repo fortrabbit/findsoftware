@@ -33,6 +33,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-06
+githubStargazers: 28255
 packagistDownloads: 180984
 contributors: 100
 social:
@@ -92,6 +93,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/bagisto/bagisto/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/bagisto/bagisto
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/bagisto/bagisto/contributors?anon=true&per_page=100

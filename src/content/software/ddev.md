@@ -22,6 +22,7 @@ licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"
 latestReleaseDate: 2026-09-02
+githubStargazers: 3923
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -66,6 +67,9 @@ sources:
     checkedAt: 2026-10-19
   - field: urls
     url: https://docs.ddev.com/en/stable/
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/ddev/ddev
     checkedAt: 2026-10-19
 figure:
   emoji: 🧹

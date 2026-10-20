@@ -20,6 +20,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "3"
 latestReleaseDate: 2025-02-04
+githubStargazers: 5713
 npmWeeklyDownloads: 298382
 contributors: 29
 addedAt: 2026-10-19
@@ -63,6 +64,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://registry.npmjs.org/vanilla-cookieconsent
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/orestbida/cookieconsent
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/orestbida/cookieconsent/contributors?anon=true

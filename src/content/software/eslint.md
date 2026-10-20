@@ -21,6 +21,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "10"
 latestReleaseDate: 2026-10-16
+githubStargazers: 27571
 npmWeeklyDownloads: 95255486
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -59,6 +60,9 @@ sources:
     url: https://registry.npmjs.org/eslint/latest
     checkedAt: 2026-10-19
   - field: latestReleaseDate
+    url: https://github.com/eslint/eslint
+    checkedAt: 2026-10-19
+  - field: githubStargazers
     url: https://github.com/eslint/eslint
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads

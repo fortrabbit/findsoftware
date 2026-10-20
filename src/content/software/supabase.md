@@ -24,6 +24,7 @@ installMethod: docker-compose, linux-quick-start-script, manual-installation
 licenseModel: open-source
 license: Apache-2.0
 latestReleaseDate: 2026-10-16
+githubStargazers: 111760
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -71,6 +72,9 @@ sources:
     checkedAt: 2026-10-19
   - field: urls
     url: https://supabase.com/pricing
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/supabase/supabase
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://supabase.com/docs/guides/self-hosting

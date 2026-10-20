@@ -27,6 +27,7 @@ licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "4"
 latestReleaseDate: 2026-10-01
+githubStargazers: 50417
 contributors: 1128
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -81,6 +82,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/mastodon/mastodon/releases
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/mastodon/mastodon
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/mastodon/mastodon

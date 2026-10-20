@@ -19,6 +19,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-08-08
+githubStargazers: 40099
 npmWeeklyDownloads: 183109275
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -51,6 +52,9 @@ sources:
     url: https://registry.npmjs.org/esbuild/latest
     checkedAt: 2026-10-19
   - field: latestReleaseDate
+    url: https://github.com/evanw/esbuild
+    checkedAt: 2026-10-19
+  - field: githubStargazers
     url: https://github.com/evanw/esbuild
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads

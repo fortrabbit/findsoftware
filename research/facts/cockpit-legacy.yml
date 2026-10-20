@@ -1,0 +1,103 @@
+id: cockpit-legacy
+name: Cockpit legacy
+status: accepted
+checkedAt: 2026-10-20
+description: Open-source PHP content management system from the earlier Cockpit line, usable as a headless CMS.
+facts:
+  - field: homepage
+    value: https://getcockpit.com
+    url: https://getcockpit.com
+    checkedAt: 2026-10-20
+    via: page
+  - field: repository
+    value: https://github.com/agentejo/cockpit
+    url: https://api.github.com/repos/agentejo/cockpit
+    checkedAt: 2026-10-20
+    via: api
+  - field: maintainer
+    value: Agentejo
+    url: https://github.com/agentejo/cockpit/blob/next/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: 'Copyright since 2015 [Agentejo](https://agentejo.com) under the MIT license.'
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/agentejo/cockpit
+    checkedAt: 2026-10-20
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://api.github.com/repos/agentejo/cockpit
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [cms, headless-cms]
+    url: https://api.github.com/repos/agentejo/cockpit
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/agentejo/cockpit/blob/next/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP >= 7.3"
+  - field: runtimeMin
+    value: "7.3"
+    url: https://github.com/agentejo/cockpit/blob/next/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP >= 7.3"
+  - field: databases
+    value: [sqlite, mongodb]
+    url: https://github.com/agentejo/cockpit/blob/next/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PDO + SQLite (or MongoDB)"
+  - field: installMethod
+    value: download and extract into the web project root, then run the install page in the browser
+    url: https://github.com/agentejo/cockpit/blob/next/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Download Cockpit and put the cockpit folder in the root of your web project"
+  - field: runsAs
+    value: [per-request]
+    url: https://github.com/agentejo/cockpit/blob/next/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Download Cockpit and put the cockpit folder in the root of your web project"
+  - field: license
+    value: MIT
+    url: https://github.com/agentejo/cockpit/blob/next/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: 'Copyright since 2015 [Agentejo](https://agentejo.com) under the MIT license.'
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/agentejo/cockpit
+    checkedAt: 2026-10-20
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://getcockpit.com/about
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Open-sourced in 2013 and evolving since then."
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/agentejo/cockpit/tags
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2021-09-06
+    url: https://api.github.com/repos/agentejo/cockpit/commits/0.12.2
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 5395
+    url: https://api.github.com/repos/agentejo/cockpit
+    checkedAt: 2026-10-20
+    via: api
+notFound: [docs, pricingPage, wikidata, parent, forum, discord, pluginDirectory, pluginCount, subreddit, mastodon, bluesky, x, newsletter, usageShare, contributors, packagistName, endoflifeId, headlessApi, adminUi, userRoles, i18n, multisite, renderingModes, templating, paidEdition]
+unreadable: []
+notes: >
+  The repository README, on its next branch, opens by saying Cockpit's next iteration moved to a dedicated Cockpit organization on GitHub, which names the cockpit record as the successor. The status stays accepted: the README says development moved to a new repository and does not say this line has ended, is unmaintained or is replaced, a move to a new repository is not an end signal, the repository is not archived, and no package carries an abandoned or deprecated flag. The README heading calls the project Cockpit Next; the record keeps the CSV name. The repository has no GitHub releases; the latest tag 0.12.2 is dated by its commit on 2021-09-06, so currentMajor is 0 under the rule for a 0.x line. GitHub detects JavaScript as the language; the server requirements in the README are PHP, so no language fact is recorded. The README homepage link is http, the Cockpit site serves https; the record uses https. The agentejo/cockpit package is not on Packagist (404). The about page says Cockpit was open-sourced in 2013, and the agentejo/cockpit repository was created in October 2013, so firstRelease stays on this record. Coined fields: none.

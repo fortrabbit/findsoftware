@@ -20,6 +20,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-15
+githubStargazers: 10690
 contributors: 53
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -59,6 +60,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/axllent/mailpit/releases/tag/v1.31.6
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/axllent/mailpit
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/axllent/mailpit

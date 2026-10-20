@@ -26,6 +26,7 @@ licenseModel: open-source
 license: Apache-2.0
 currentMajor: "3"
 latestReleaseDate: 2026-09-29
+githubStargazers: 13890
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -73,6 +74,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/opensearch-project/OpenSearch/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/opensearch-project/OpenSearch
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://docs.opensearch.org/latest/install-and-configure/install-opensearch/tar/

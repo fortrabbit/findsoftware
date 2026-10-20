@@ -20,6 +20,7 @@ licenseModel: open-core
 license: AGPL-3.0, AGPL-3.0-or-later
 currentMajor: "3"
 latestReleaseDate: 2026-05-15
+githubStargazers: 29546
 contributors: 119
 social:
   forum: https://github.com/plausible/analytics/discussions/categories/self-hosted-support
@@ -67,6 +68,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/plausible/analytics/releases/tag/v3.2.1
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/plausible/analytics
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/plausible/analytics

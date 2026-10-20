@@ -22,6 +22,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-17
+githubStargazers: 14378
 packagistDownloads: 232455341
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -67,6 +68,9 @@ sources:
     checkedAt: 2026-10-19
   - field: packagistDownloads
     url: https://packagist.org/packages/intervention/image.json
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/Intervention/image
     checkedAt: 2026-10-19
 figure:
   emoji: 🖼️

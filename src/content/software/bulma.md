@@ -17,6 +17,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "1"
 latestReleaseDate: 2025-04-19
+githubStargazers: 50038
 npmWeeklyDownloads: 171571
 contributors: 382
 social:
@@ -59,6 +60,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/jgthms/bulma/releases/tag/1.0.4
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/jgthms/bulma
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/jgthms/bulma

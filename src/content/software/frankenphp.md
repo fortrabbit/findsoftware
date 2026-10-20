@@ -24,6 +24,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-16
+githubStargazers: 11404
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -74,6 +75,9 @@ sources:
     checkedAt: 2026-10-19
   - field: renderingModes
     url: https://frankenphp.dev/docs/worker/
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/php/frankenphp
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://frankenphp.dev/docs/docker/

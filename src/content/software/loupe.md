@@ -25,6 +25,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-17
+githubStargazers: 530
 packagistDownloads: 371477
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -70,6 +71,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/loupe-php/loupe/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/loupe-php/loupe
     checkedAt: 2026-10-19
   - field: packagistDownloads
     url: https://packagist.org/packages/loupe/loupe.json

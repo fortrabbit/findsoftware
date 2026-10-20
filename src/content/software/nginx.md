@@ -18,6 +18,7 @@ licenseModel: open-source
 license: BSD-2-Clause, BSD-2-Clause
 currentMajor: "1"
 latestReleaseDate: 2026-10-14
+githubStargazers: 31914
 social:
   x: https://x.com/nginxorg
   forum: https://forum.nginx.org
@@ -62,6 +63,9 @@ sources:
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://nginx.org/en/docs/install.html
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/nginx/nginx
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://nginx.org/en/docs/beginners_guide.html

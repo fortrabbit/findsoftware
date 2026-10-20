@@ -19,6 +19,7 @@ licenseModel: open-source
 license: GPL
 currentMajor: "2"
 latestReleaseDate: 2018-06-19
+githubStargazers: 180
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -59,6 +60,9 @@ sources:
     url: https://atutor.github.io
     checkedAt: 2026-10-20
   - field: latestReleaseDate
+    url: https://github.com/atutor/ATutor
+    checkedAt: 2026-10-20
+  - field: githubStargazers
     url: https://github.com/atutor/ATutor
     checkedAt: 2026-10-20
 figure:

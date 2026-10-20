@@ -19,6 +19,7 @@ licenseModel: open-source
 license: Apache-2.0, MIT OR Apache-2.0
 currentMajor: "2"
 latestReleaseDate: 2026-09-30
+githubStargazers: 25976
 npmWeeklyDownloads: 10876309
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -57,6 +58,9 @@ sources:
     url: https://registry.npmjs.org/@biomejs/biome/latest
     checkedAt: 2026-10-19
   - field: latestReleaseDate
+    url: https://github.com/biomejs/biome
+    checkedAt: 2026-10-19
+  - field: githubStargazers
     url: https://github.com/biomejs/biome
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads

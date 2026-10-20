@@ -24,6 +24,7 @@ licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"
 latestReleaseDate: 2026-10-03
+githubStargazers: 78141
 social:
   x: https://twitter.com/caddyserver
   forum: https://caddy.community
@@ -74,6 +75,9 @@ sources:
     checkedAt: 2026-10-19
   - field: urls
     url: https://caddyserver.com/docs/modules
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/caddyserver/caddy
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://caddyserver.com/docs/getting-started

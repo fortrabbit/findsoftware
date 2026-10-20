@@ -25,6 +25,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "11"
 latestReleaseDate: 2026-04-26
+githubStargazers: 13280
 packagistDownloads: 347235
 contributors: 211
 social:
@@ -79,6 +80,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://repo.packagist.org/p2/roots/sage.json
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/roots/sage
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/roots/sage

@@ -16,6 +16,7 @@ licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"
 latestReleaseDate: 2026-10-08
+githubStargazers: 36083
 npmWeeklyDownloads: 17780040
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -52,6 +53,9 @@ sources:
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://orm.drizzle.team/docs/get-started
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/drizzle-team/drizzle-orm
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/drizzle-orm

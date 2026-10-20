@@ -20,6 +20,7 @@ licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"
 latestReleaseDate: 2026-10-08
+githubStargazers: 2975
 contributors: 190
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -65,6 +66,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/docsy/docsy/releases/tag/v0.18.0
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/docsy/docsy
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/docsy/docsy

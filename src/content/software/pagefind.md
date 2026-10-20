@@ -22,6 +22,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-04-12
+githubStargazers: 5519
 npmWeeklyDownloads: 1385578
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -55,6 +56,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/Pagefind/pagefind/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/Pagefind/pagefind
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/pagefind

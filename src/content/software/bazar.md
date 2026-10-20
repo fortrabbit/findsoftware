@@ -24,6 +24,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-03-12
+githubStargazers: 445
 packagistDownloads: 7835
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
@@ -72,6 +73,9 @@ sources:
     checkedAt: 2026-10-20
   - field: firstRelease
     url: https://github.com/conedevelopment/bazar/releases
+    checkedAt: 2026-10-20
+  - field: githubStargazers
+    url: https://github.com/conedevelopment/bazar
     checkedAt: 2026-10-20
   - field: packagistDownloads
     url: https://packagist.org/packages/conedevelopment/bazar

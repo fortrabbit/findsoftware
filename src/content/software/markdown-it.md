@@ -22,6 +22,7 @@ licenseModel: open-source
 license: MIT, MIT
 currentMajor: "15"
 latestReleaseDate: 2026-10-16
+githubStargazers: 21986
 npmWeeklyDownloads: 16608434
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -70,6 +71,9 @@ sources:
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/markdown-it
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/markdown-it/markdown-it
     checkedAt: 2026-10-19
 figure:
   emoji: 📐

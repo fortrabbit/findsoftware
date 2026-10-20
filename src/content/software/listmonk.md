@@ -19,6 +19,7 @@ licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "6"
 latestReleaseDate: 2026-06-26
+githubStargazers: 23839
 contributors: 287
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -58,6 +59,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/knadh/listmonk/releases/tag/v6.2.0
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/knadh/listmonk
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/knadh/listmonk

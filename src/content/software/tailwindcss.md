@@ -20,6 +20,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-07-16
+githubStargazers: 97931
 npmWeeklyDownloads: 85265574
 contributors: 354
 social:
@@ -65,6 +66,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.3
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/tailwindlabs/tailwindcss
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/tailwindlabs/tailwindcss

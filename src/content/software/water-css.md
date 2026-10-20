@@ -18,6 +18,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "2"
 latestReleaseDate: 2021-08-11
+githubStargazers: 8654
 npmWeeklyDownloads: 711
 contributors: 48
 addedAt: 2026-10-19
@@ -55,6 +56,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://registry.npmjs.org/water.css
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/kognise/water.css
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/kognise/water.css/contributors?anon=true

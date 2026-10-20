@@ -30,6 +30,7 @@ licenseModel: open-source
 license: GPL-3.0, GPL-3.0-or-later
 currentMajor: "3"
 latestReleaseDate: 2026-10-12
+githubStargazers: 8526
 npmWeeklyDownloads: 20006
 social:
   x: https://x.com/vendure_io
@@ -84,6 +85,9 @@ sources:
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@vendure/core
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/vendurehq/vendure
     checkedAt: 2026-10-19
   - field: currentMajor
     url: https://github.com/vendurehq/vendure/releases/tag/v3.8.0

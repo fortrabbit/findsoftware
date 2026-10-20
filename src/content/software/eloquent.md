@@ -26,6 +26,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "13"
 latestReleaseDate: 2026-10-15
+githubStargazers: 2774
 packagistDownloads: 58612233
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -68,6 +69,9 @@ sources:
     checkedAt: 2026-10-19
   - field: packagistDownloads
     url: https://packagist.org/packages/illuminate/database.json
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/illuminate/database
     checkedAt: 2026-10-19
 figure:
   emoji: 📐

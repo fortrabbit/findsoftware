@@ -23,6 +23,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "8"
 latestReleaseDate: 2026-10-08
+githubStargazers: 83396
 npmWeeklyDownloads: 118790515
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -68,6 +69,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://registry.npmjs.org/vite
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/vitejs/vite
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/vite

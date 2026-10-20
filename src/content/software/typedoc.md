@@ -22,6 +22,7 @@ licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"
 latestReleaseDate: 2026-07-05
+githubStargazers: 8451
 npmWeeklyDownloads: 2845089
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -57,6 +58,9 @@ sources:
     url: https://registry.npmjs.org/typedoc/latest
     checkedAt: 2026-10-19
   - field: latestReleaseDate
+    url: https://github.com/TypeStrong/typedoc
+    checkedAt: 2026-10-19
+  - field: githubStargazers
     url: https://github.com/TypeStrong/typedoc
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads

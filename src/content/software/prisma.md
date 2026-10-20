@@ -28,6 +28,7 @@ licenseModel: open-source
 license: Apache-2.0
 currentMajor: "7"
 latestReleaseDate: 2026-10-15
+githubStargazers: 47697
 npmWeeklyDownloads: 11432886
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -73,6 +74,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://registry.npmjs.org/prisma
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/prisma/orm
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/prisma

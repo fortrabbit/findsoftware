@@ -19,6 +19,7 @@ licenseModel: open-source
 license: Apache-2.0, Apache2.0
 currentMajor: "6"
 latestReleaseDate: 2026-09-22
+githubStargazers: 18926
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -63,6 +64,9 @@ sources:
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://pecl.php.net/package/swoole
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/swoole/swoole-src
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://pecl.php.net/package/swoole

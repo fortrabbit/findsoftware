@@ -18,6 +18,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-06
+githubStargazers: 7805
 contributors: 242
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -57,6 +58,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/btcpayserver/btcpayserver/releases
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/btcpayserver/btcpayserver
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/btcpayserver/btcpayserver

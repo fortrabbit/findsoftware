@@ -18,6 +18,7 @@ licenseModel: commercial
 license: MGT-COMMERCE License Terms (proprietary)
 currentMajor: "2"
 latestReleaseDate: 2026-07-01
+githubStargazers: 1880
 social:
   x: https://twitter.com/cloudpanel_io
   discord: https://discord.cloudpanel.io
@@ -62,6 +63,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/cloudpanel-io/cloudpanel-ce/releases/tag/v2.5.4
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/cloudpanel-io/cloudpanel-ce
     checkedAt: 2026-10-19
 figure:
   emoji: 🖥️

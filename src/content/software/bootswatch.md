@@ -20,6 +20,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "5"
 latestReleaseDate: 2025-09-11
+githubStargazers: 14748
 npmWeeklyDownloads: 51033
 contributors: 91
 social:
@@ -65,6 +66,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://registry.npmjs.org/bootswatch
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/thomaspark/bootswatch
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/thomaspark/bootswatch

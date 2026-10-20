@@ -20,6 +20,7 @@ licenseModel: open-source
 license: BSD-2-Clause
 currentMajor: "1"
 latestReleaseDate: 2023-05-18
+githubStargazers: 45768
 npmWeeklyDownloads: 5075628
 contributors: 1032
 addedAt: 2026-10-19
@@ -60,6 +61,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/Leaflet/Leaflet/releases/tag/v1.9.4
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/Leaflet/Leaflet
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/Leaflet/Leaflet

@@ -20,6 +20,7 @@ licenseModel: open-core
 license: Apache-2.0, MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-14
+githubStargazers: 11129
 contributors: 119
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -65,6 +66,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/imgproxy/imgproxy/releases/tag/v4.0.18
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/imgproxy/imgproxy
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/imgproxy/imgproxy

@@ -22,6 +22,7 @@ licenseModel: open-source
 license: Apache-2.0
 currentMajor: "26"
 latestReleaseDate: 2026-10-13
+githubStargazers: 37427
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -63,6 +64,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/keycloak/keycloak/releases/tag/26.8.1
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/keycloak/keycloak
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://www.keycloak.org/getting-started/getting-started-docker

@@ -19,6 +19,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-10
+githubStargazers: 52383
 npmWeeklyDownloads: 82282633
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -51,6 +52,9 @@ sources:
     url: https://registry.npmjs.org/prettier/latest
     checkedAt: 2026-10-19
   - field: latestReleaseDate
+    url: https://github.com/prettier/prettier
+    checkedAt: 2026-10-19
+  - field: githubStargazers
     url: https://github.com/prettier/prettier
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads

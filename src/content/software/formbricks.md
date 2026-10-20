@@ -26,6 +26,7 @@ licenseModel: open-core
 license: AGPL-3.0, MIT
 currentMajor: "6"
 latestReleaseDate: 2026-10-01
+githubStargazers: 13123
 contributors: 321
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -80,6 +81,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/formbricks/formbricks/releases/tag/6.0.2
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/formbricks/formbricks
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/formbricks/formbricks

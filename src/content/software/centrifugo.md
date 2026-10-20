@@ -22,6 +22,7 @@ licenseModel: open-source
 license: Apache-2.0
 currentMajor: "6"
 latestReleaseDate: 2026-09-29
+githubStargazers: 10888
 contributors: 53
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -64,6 +65,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/centrifugal/centrifugo/releases
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/centrifugal/centrifugo
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/centrifugal/centrifugo

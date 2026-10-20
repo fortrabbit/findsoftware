@@ -18,6 +18,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-04-07
+githubStargazers: 28782
 npmWeeklyDownloads: 4194542
 contributors: 74
 addedAt: 2026-10-19
@@ -61,6 +62,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/tailwindlabs/headlessui/releases/tag/@headlessui/react@v2.2.10
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/tailwindlabs/headlessui
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/tailwindlabs/headlessui

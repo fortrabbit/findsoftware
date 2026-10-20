@@ -20,6 +20,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "10"
 latestReleaseDate: 2026-10-12
+githubStargazers: 91333
 npmWeeklyDownloads: 13560989
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -55,6 +56,9 @@ sources:
     url: https://registry.npmjs.org/storybook/latest
     checkedAt: 2026-10-19
   - field: latestReleaseDate
+    url: https://github.com/storybookjs/storybook
+    checkedAt: 2026-10-19
+  - field: githubStargazers
     url: https://github.com/storybookjs/storybook
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads

@@ -24,6 +24,7 @@ installMethod: docker compose
 licenseModel: open-core
 license: MIT
 latestReleaseDate: 2026-10-14
+githubStargazers: 26005
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -71,6 +72,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/goauthentik/authentik/releases/tag/version/2026.8.4
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/goauthentik/authentik
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://docs.goauthentik.io/install-config/install/docker-compose/

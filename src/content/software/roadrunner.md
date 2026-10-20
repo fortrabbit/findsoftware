@@ -23,6 +23,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-09
+githubStargazers: 8512
 social:
   discord: https://discord.gg/spiralphp
 addedAt: 2026-10-19
@@ -69,6 +70,9 @@ sources:
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://docs.roadrunner.dev/docs/general/install
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/roadrunner-server/roadrunner
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://docs.roadrunner.dev/

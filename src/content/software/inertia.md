@@ -23,6 +23,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-09
+githubStargazers: 8130
 packagistDownloads: 84621368
 npmWeeklyDownloads: 677722
 social:
@@ -78,6 +79,12 @@ sources:
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@inertiajs/core
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/inertiajs/inertia
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/inertiajs/inertia-laravel
     checkedAt: 2026-10-19
   - field: currentMajor
     url: https://github.com/inertiajs/inertia/releases/tag/v3.9.1

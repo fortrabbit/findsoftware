@@ -24,6 +24,7 @@ licenseModel: open-source
 license: Apache-2.0
 currentMajor: "5"
 latestReleaseDate: 2026-09-01
+githubStargazers: 33278
 contributors: 560
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -69,6 +70,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/certbot/certbot/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/certbot/certbot
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/certbot/certbot/contributors?anon=true

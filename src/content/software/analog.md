@@ -27,6 +27,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-14
+githubStargazers: 3194
 npmWeeklyDownloads: 17824
 contributors: 100
 social:
@@ -75,6 +76,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/analogjs/analog/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/analogjs/analog
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/analogjs/analog/contributors?anon=true&per_page=100

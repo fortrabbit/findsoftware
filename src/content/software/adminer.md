@@ -30,6 +30,7 @@ licenseModel: open-source
 license: Apache-2.0, GPL-2.0-only
 currentMajor: "6"
 latestReleaseDate: 2026-10-10
+githubStargazers: 7919
 packagistDownloads: 3061779
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -90,6 +91,9 @@ sources:
     checkedAt: 2026-10-19
   - field: packagistDownloads
     url: https://packagist.org/packages/vrana/adminer.json
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/vrana/adminer
     checkedAt: 2026-10-19
 figure:
   emoji: 🎛️

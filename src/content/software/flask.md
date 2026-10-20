@@ -25,6 +25,7 @@ licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "3"
 latestReleaseDate: 2026-02-19
+githubStargazers: 74962
 social:
   discord: https://discord.gg/pallets
 addedAt: 2026-10-19
@@ -68,6 +69,9 @@ sources:
     checkedAt: 2026-10-19
   - field: templating
     url: https://flask.palletsprojects.com/en/stable/quickstart/
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/pallets/flask
     checkedAt: 2026-10-19
   - field: currentMajor
     url: https://github.com/pallets/flask/releases/tag/3.1.3

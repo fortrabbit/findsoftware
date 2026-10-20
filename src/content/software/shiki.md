@@ -25,6 +25,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-01
+githubStargazers: 13875
 npmWeeklyDownloads: 16095079
 contributors: 284
 social:
@@ -79,6 +80,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/shikijs/shiki/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/shikijs/shiki
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/shikijs/shiki/contributors

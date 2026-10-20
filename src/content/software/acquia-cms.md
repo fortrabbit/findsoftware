@@ -23,6 +23,7 @@ licenseModel: open-source
 license: GPL-2.0, GPL-2.0-or-later, GPL-2.0
 currentMajor: "2"
 latestReleaseDate: 2024-10-29
+githubStargazers: 38
 packagistDownloads: 462103
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
@@ -73,6 +74,9 @@ sources:
     url: https://repo.packagist.org/p2/acquia/acquia_cms.json
     checkedAt: 2026-10-20
   - field: latestReleaseDate
+    url: https://github.com/acquia/acquia_cms
+    checkedAt: 2026-10-20
+  - field: githubStargazers
     url: https://github.com/acquia/acquia_cms
     checkedAt: 2026-10-20
   - field: packagistDownloads

@@ -28,6 +28,7 @@ licenseModel: open-source
 license: AGPL-3.0, AGPL-3.0
 currentMajor: "2"
 latestReleaseDate: 2026-09-21
+githubStargazers: 29054
 contributors: 169
 social:
   discord: https://discord.gg/rcxt9QS2jd
@@ -93,6 +94,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/requarks/wiki/releases
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/requarks/wiki
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/requarks/wiki/contributors

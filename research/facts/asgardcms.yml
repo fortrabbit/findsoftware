@@ -1,0 +1,135 @@
+id: asgardcms
+name: AsgardCMS
+status: accepted
+checkedAt: 2026-10-20
+description: Modular, multilingual content management system built with Laravel.
+facts:
+  - field: name
+    value: AsgardCMS
+    url: https://github.com/AsgardCms/Platform/blob/master/readme.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "AsgardCMS Platform"
+  - field: repository
+    value: https://github.com/AsgardCms/Platform
+    url: https://github.com/AsgardCms/Platform
+    checkedAt: 2026-10-20
+    via: api
+  - field: maintainer
+    value: Nicolas Widart bvba
+    url: https://github.com/AsgardCms/Platform/blob/master/LICENSE.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright (c) 2017 Nicolas Widart bvba"
+  - field: docs
+    value: https://github.com/AsgardCms/Documentation
+    url: https://github.com/AsgardCms/Documentation/blob/master/v3/getting-started/installation.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "To be able to run AsgardCMS you have to meet the following requirements"
+  - field: installMethod
+    value: composer create-project, or the asgardcms installer
+    url: https://github.com/AsgardCms/Documentation/blob/master/v3/getting-started/installation.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer create-project asgardcms/platform your-project-name"
+  - field: databases
+    value: [mysql]
+    url: https://github.com/AsgardCms/Documentation/blob/master/v3/getting-started/installation.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "MySql 5.5"
+  - field: contentStore
+    value: database
+    url: https://github.com/AsgardCms/Documentation/blob/master/v3/getting-started/installation.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Remember the database name you used as this well be asked in the installation command."
+  - field: repoOwnerType
+    value: Organization
+    url: https://api.github.com/users/AsgardCms
+    checkedAt: 2026-10-20
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/AsgardCms/Platform
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [cms]
+    url: https://github.com/AsgardCms/Platform
+    checkedAt: 2026-10-20
+    via: api
+  - field: i18n
+    value: multilingual
+    url: https://github.com/AsgardCms/Platform
+    checkedAt: 2026-10-20
+    via: api
+  - field: basedOn
+    value: [Laravel]
+    url: https://github.com/AsgardCms/Platform/blob/3.6.1/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"laravel/framework": "5.5.*"'
+  - field: language
+    value: PHP
+    url: https://github.com/AsgardCms/Platform
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: php
+    url: https://github.com/AsgardCms/Platform/blob/3.6.1/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"php": ">=7.0.0"'
+  - field: runtimeMin
+    value: "7.0"
+    url: https://github.com/AsgardCms/Platform/blob/3.6.1/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"php": ">=7.0.0"'
+  - field: license
+    value: MIT
+    url: https://github.com/AsgardCms/Platform
+    checkedAt: 2026-10-20
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/AsgardCms/Platform/blob/master/readme.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "The AsgardCMS is open-sourced software licensed under the"
+  - field: currentMajor
+    value: 3
+    url: https://packagist.org/packages/asgardcms/platform.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2018-09-05
+    url: https://github.com/AsgardCms/Platform/releases/tag/3.6.1
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 788
+    url: https://github.com/AsgardCms/Platform
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 51
+    url: https://github.com/AsgardCms/Platform
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: 60812
+    url: https://packagist.org/packages/asgardcms/platform.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: asgardcms/platform
+    url: https://packagist.org/packages/asgardcms/platform.json
+    checkedAt: 2026-10-20
+    via: api
+notFound: [homepage, firstRelease, hqCountry, parent, wikidata, runsAs, renderingModes, adminUi, headlessApi, templating, userRoles, sso, importsFrom, pricingPage, paidEdition, endoflifeId, npmName, npmWeeklyDownloads, usageShare, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: ["https://asgardcms.com/ (serves unrelated pages, so no homepage is recorded)"]
+notes: >
+  asgardcms.com no longer serves the project: it answers 200 with unrelated pages, so no homepage is recorded. The README's docs link points there; the project's own AsgardCms/Documentation repository holds a v3 installation page that documents installation with composer create-project or the asgardcms installer, so criterion 3 is met. That page states PHP 7.1 as the minimum while composer.json at 3.6.1 requires php >=7.0.0; runtimeMin follows composer.json. The LICENSE copyright line names Nicolas Widart bvba for 2017; it is the only legal name in the sources, and no hqCountry was found. The latest GitHub release and newest stable Packagist version are dated 2018-09-05; the repository is not archived and the Packagist package is not abandoned, so no end signal applies. Packagist downloads are the total since first publication. Contributors is the count of contributor pages read with anonymous contributors included.

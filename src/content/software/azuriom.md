@@ -32,6 +32,7 @@ licenseModel: open-source
 license: GPL-3.0-or-later, GPL-3.0
 currentMajor: "1"
 latestReleaseDate: 2026-08-07
+githubStargazers: 732
 contributors: 52
 social:
   x: https://x.com/Azuriom
@@ -92,6 +93,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/Azuriom/Azuriom/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/Azuriom/Azuriom
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/Azuriom/Azuriom/contributors?anon=true&per_page=100

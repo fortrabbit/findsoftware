@@ -23,6 +23,7 @@ licenseModel: open-source
 license: GPL-2.0+, GPL-2.0
 currentMajor: "3"
 latestReleaseDate: 2026-10-16
+githubStargazers: 293
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -67,6 +68,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/Simply-Static/simply-static/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/Simply-Static/simply-static
     checkedAt: 2026-10-19
 figure:
   emoji: ⚡

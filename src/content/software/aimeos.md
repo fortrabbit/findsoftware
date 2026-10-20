@@ -24,6 +24,7 @@ installMethod: composer create-project, laravel package
 licenseModel: open-source
 license: MIT, LGPL-3.0-or-later
 latestReleaseDate: 2026-10-05
+githubStargazers: 5463
 packagistDownloads: 109968
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -69,6 +70,12 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://repo.packagist.org/p2/aimeos/aimeos.json
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/aimeos/aimeos
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/aimeos/aimeos-core
     checkedAt: 2026-10-19
   - field: packagistDownloads
     url: https://packagist.org/packages/aimeos/aimeos.json

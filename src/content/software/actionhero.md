@@ -23,6 +23,7 @@ licenseModel: open-source
 license: Apache-2.0
 currentMajor: "29"
 latestReleaseDate: 2026-07-23
+githubStargazers: 2414
 npmWeeklyDownloads: 4371
 contributors: 100
 social:
@@ -65,6 +66,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/actionhero/actionhero/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/actionhero/actionhero
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/actionhero/actionhero/contributors?anon=true&per_page=100

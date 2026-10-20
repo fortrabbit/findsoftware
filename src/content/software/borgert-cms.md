@@ -25,6 +25,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "2"
 latestReleaseDate: 2018-07-20
+githubStargazers: 302
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -72,6 +73,9 @@ sources:
     checkedAt: 2026-10-20
   - field: firstRelease
     url: https://github.com/borgert-inc/borgert-cms/releases
+    checkedAt: 2026-10-20
+  - field: githubStargazers
+    url: https://github.com/borgert-inc/borgert-cms
     checkedAt: 2026-10-20
 figure:
   emoji: 📝

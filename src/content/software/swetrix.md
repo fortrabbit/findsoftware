@@ -25,6 +25,7 @@ licenseModel: open-core
 license: AGPL-3.0
 currentMajor: "5"
 latestReleaseDate: 2026-08-04
+githubStargazers: 1207
 contributors: 36
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -73,6 +74,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/Swetrix/swetrix/releases/tag/v5.4.1
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/Swetrix/swetrix
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/Swetrix/swetrix

@@ -25,6 +25,7 @@ licenseModel: open-source
 license: MIT, MIT
 currentMajor: "10"
 latestReleaseDate: 2026-10-13
+githubStargazers: 38475
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -75,6 +76,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/dotnet/aspnetcore/releases/tag/v10.0.13
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/dotnet/aspnetcore
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/

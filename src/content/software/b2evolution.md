@@ -23,6 +23,7 @@ licenseModel: open-source
 license: GPL-2.0, GPL-2.0
 currentMajor: "7"
 latestReleaseDate: 2022-09-09
+githubStargazers: 179
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -66,6 +67,9 @@ sources:
     url: https://b2evolution.net/downloads/
     checkedAt: 2026-10-20
   - field: latestReleaseDate
+    url: https://github.com/b2evolution/b2evolution
+    checkedAt: 2026-10-20
+  - field: githubStargazers
     url: https://github.com/b2evolution/b2evolution
     checkedAt: 2026-10-20
 figure:

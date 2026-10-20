@@ -24,6 +24,7 @@ installMethod: docker, pip
 licenseModel: open-source
 license: GPL-3.0
 latestReleaseDate: 2026-10-09
+githubStargazers: 6113
 contributors: 2276
 social:
   x: https://x.com/WeblateOrg
@@ -80,6 +81,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/WeblateOrg/weblate/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/WeblateOrg/weblate
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/WeblateOrg/weblate/contributors?anon=true

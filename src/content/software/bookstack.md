@@ -33,6 +33,7 @@ licenseModel: open-source
 license: MIT, MIT
 currentMajor: "26"
 latestReleaseDate: 2026-09-29
+githubStargazers: 19089
 contributors: 242
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -99,6 +100,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/BookStackApp/BookStack/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/BookStackApp/BookStack
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/BookStackApp/BookStack/contributors

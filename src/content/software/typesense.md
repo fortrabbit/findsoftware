@@ -18,6 +18,7 @@ licenseModel: open-source
 license: GPL-3.0, GPL-3.0
 currentMajor: "30"
 latestReleaseDate: 2026-04-19
+githubStargazers: 27003
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -56,6 +57,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/typesense/typesense/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/typesense/typesense
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://typesense.org/docs/guide/install-typesense.html

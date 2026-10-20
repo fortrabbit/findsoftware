@@ -20,6 +20,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-18
+githubStargazers: 125924
 npmWeeklyDownloads: 7302834
 contributors: 469
 social:
@@ -68,6 +69,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://registry.npmjs.org/shadcn
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/shadcn-ui/ui
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/shadcn-ui/ui

@@ -20,6 +20,7 @@ licenseModel: open-source
 license: MIT, CC BY 3.0
 currentMajor: "5"
 latestReleaseDate: 2025-08-26
+githubStargazers: 174999
 npmWeeklyDownloads: 3209276
 contributors: 357
 social:
@@ -66,6 +67,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/twbs/bootstrap/releases/tag/v5.3.8
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/twbs/bootstrap
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/twbs/bootstrap

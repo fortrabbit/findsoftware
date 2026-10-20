@@ -24,6 +24,7 @@ licenseModel: open-source
 license: LGPL-2.1
 currentMajor: "3"
 latestReleaseDate: 2026-07-20
+githubStargazers: 11198
 packagistDownloads: 218979915
 contributors: 176
 addedAt: 2026-10-19
@@ -73,6 +74,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/dompdf/dompdf/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/dompdf/dompdf
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/dompdf/dompdf/contributors

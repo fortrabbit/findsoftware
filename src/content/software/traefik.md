@@ -25,6 +25,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-15
+githubStargazers: 65276
 social:
   x: https://twitter.com/traefik
   forum: https://community.traefik.io/
@@ -78,6 +79,9 @@ sources:
     checkedAt: 2026-10-19
   - field: urls
     url: https://traefik.io/pricing/
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/traefik/traefik
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://doc.traefik.io/traefik/getting-started/docker/

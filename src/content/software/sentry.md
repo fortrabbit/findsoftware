@@ -26,6 +26,7 @@ licenseModel: source-available
 license: FSL-1.1-Apache-2.0
 currentMajor: "26"
 latestReleaseDate: 2026-10-16
+githubStargazers: 45600
 contributors: 1101
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -77,6 +78,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/getsentry/sentry/releases/tag/26.10.0
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/getsentry/sentry
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/getsentry/sentry

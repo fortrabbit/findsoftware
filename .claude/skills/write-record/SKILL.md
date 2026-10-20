@@ -70,7 +70,7 @@ Record nothing that changes more than once a year: the current major version, ne
 
 **Releases**: `currentMajor`, `latestReleaseDate` (from a registry or the releases API, refreshed by script), `endoflifeId` (supported versions and their dates come from endoflife.date, not typed in)
 
-**Adoption**: `githubStargazers`, `contributors`, `packagistDownloads`, `npmWeeklyDownloads`, `pypiDownloads`, `usageShare` (W3Techs or similar, as a third-party figure), `packagistName`, `npmName`. Record each figure as the source states it, with its period (week, month, total). They are never compared or ordered, so do not convert or normalize them. Never record ratings, review scores or rating counts from any directory.
+**Adoption**: `githubStargazers`, `contributors`, `packagistDownloads`, `npmWeeklyDownloads`, `pypiDownloads`, `usageShare` (W3Techs or similar, as a third-party figure), `packagistName`, `npmName`. Take registry figures from the package the project's install docs tell users to install, or its core package, never a meta or sibling package (`concrete5/core`, not `concrete5/concrete5`); when a package was replaced, record the current one and name the old one in notes. Record each figure as the source states it, with its period (week, month, total). They are never compared or ordered, so do not convert or normalize them. Never record ratings, review scores or rating counts from any directory.
 
 **Ecosystem and community**: `pluginDirectory` (URL), `pluginCount`, `forum`, `discord`, `subreddit`, `mastodon`, `bluesky`, `x`, `newsletter`
 

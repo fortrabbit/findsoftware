@@ -21,6 +21,7 @@ licenseModel: open-source
 license: Apache-2.0
 currentMajor: "6"
 latestReleaseDate: 2026-05-19
+githubStargazers: 67546
 npmWeeklyDownloads: 3626008
 contributors: 337
 addedAt: 2026-10-19
@@ -67,6 +68,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/apache/echarts/releases/tag/6.1.0
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/apache/echarts
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/apache/echarts

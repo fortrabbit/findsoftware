@@ -25,6 +25,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "7"
 latestReleaseDate: 2026-10-05
+githubStargazers: 19151
 npmWeeklyDownloads: 108887
 contributors: 75
 social:
@@ -75,6 +76,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/adonisjs/core/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/adonisjs/core
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/adonisjs/core/contributors?anon=true&per_page=100

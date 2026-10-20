@@ -19,6 +19,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-02-02
+githubStargazers: 44006
 npmWeeklyDownloads: 206852
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -51,6 +52,9 @@ sources:
     url: https://registry.npmjs.org/parcel/latest
     checkedAt: 2026-10-19
   - field: latestReleaseDate
+    url: https://github.com/parcel-bundler/parcel
+    checkedAt: 2026-10-19
+  - field: githubStargazers
     url: https://github.com/parcel-bundler/parcel
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads

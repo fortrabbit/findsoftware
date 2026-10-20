@@ -21,6 +21,7 @@ licenseModel: source-available
 license: Standard "No Charge" GSAP License
 currentMajor: "3"
 latestReleaseDate: 2026-04-13
+githubStargazers: 29473
 npmWeeklyDownloads: 3743066
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -72,6 +73,9 @@ sources:
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/gsap
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/greensock/GSAP
     checkedAt: 2026-10-19
 figure:
   emoji: 📊

@@ -563,7 +563,7 @@ for (const file of facts) {
   if (version) record.currentMajor = version[1];
   if (first('latestReleaseDate')) record.latestReleaseDate = String(first('latestReleaseDate')).slice(0, 10);
 
-  const adoption = { githubStars: 'githubStargazers', packagistDownloads: 'packagistDownloads', npmWeeklyDownloads: 'npmWeeklyDownloads', contributors: 'contributors', pluginCount: 'pluginCount' };
+  const adoption = { githubStargazers: 'githubStargazers', packagistDownloads: 'packagistDownloads', npmWeeklyDownloads: 'npmWeeklyDownloads', contributors: 'contributors', pluginCount: 'pluginCount' };
   for (const [field, id] of Object.entries(adoption)) {
     const held = number(first(field));
     if (held !== undefined) record[id] = held;
@@ -597,7 +597,6 @@ for (const file of facts) {
     forum: 'social',
     subreddit: 'social',
     youtube: 'social',
-    githubStars: 'githubStargazers',
   };
   // A record cites only what it carries; the fact file keeps the rest for MR-409.
   const carried = (field) => (renamed[field] ?? field) in record || field === 'description';

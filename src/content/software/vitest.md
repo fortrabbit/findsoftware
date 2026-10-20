@@ -21,6 +21,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-15
+githubStargazers: 17263
 npmWeeklyDownloads: 76554353
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -57,6 +58,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/vitest-dev/vitest/releases/tag/v5.0.5
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/vitest-dev/vitest
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/vitest

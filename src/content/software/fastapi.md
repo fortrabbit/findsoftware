@@ -24,6 +24,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-10-18
+githubStargazers: 103242
 social:
   bluesky: https://bsky.app/profile/fastapi.tiangolo.com
   discord: https://discord.com/invite/VQjSZaeJmf
@@ -65,6 +66,9 @@ sources:
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://fastapi.tiangolo.com/fastapi-cli/
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/fastapi/fastapi
     checkedAt: 2026-10-19
   - field: currentMajor
     url: https://github.com/fastapi/fastapi/releases/tag/0.146.0

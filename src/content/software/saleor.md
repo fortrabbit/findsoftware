@@ -29,6 +29,7 @@ licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "3"
 latestReleaseDate: 2026-10-16
+githubStargazers: 23454
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -73,6 +74,9 @@ sources:
     checkedAt: 2026-10-19
   - field: urls
     url: https://saleor.io/pricing
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/saleor/saleor
     checkedAt: 2026-10-19
   - field: currentMajor
     url: https://github.com/saleor/saleor/releases/tag/3.23.42

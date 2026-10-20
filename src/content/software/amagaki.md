@@ -26,6 +26,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "4"
 latestReleaseDate: 2025-11-20
+githubStargazers: 36
 npmWeeklyDownloads: 123
 contributors: 8
 addedAt: 2026-10-19
@@ -78,6 +79,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/blinkk/amagaki/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/blinkk/amagaki
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/blinkk/amagaki/contributors?anon=true&per_page=100

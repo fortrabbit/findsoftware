@@ -23,6 +23,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-13
+githubStargazers: 42625
 npmWeeklyDownloads: 667604
 contributors: 308
 social:
@@ -74,6 +75,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/saadeghi/daisyui/releases/tag/v5.7.50
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/saadeghi/daisyui
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/saadeghi/daisyui

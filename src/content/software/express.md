@@ -25,6 +25,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-09
+githubStargazers: 69578
 npmWeeklyDownloads: 86916550
 social:
   x: https://x.com/UseExpressJS
@@ -70,6 +71,9 @@ sources:
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/express
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/expressjs/express
     checkedAt: 2026-10-19
   - field: currentMajor
     url: https://registry.npmjs.org/express/latest

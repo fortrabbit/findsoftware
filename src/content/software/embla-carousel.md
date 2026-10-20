@@ -20,6 +20,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "8"
 latestReleaseDate: 2025-04-04
+githubStargazers: 8452
 npmWeeklyDownloads: 18690908
 contributors: 63
 addedAt: 2026-10-19
@@ -66,6 +67,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/davidjerleke/embla-carousel/releases/tag/v8.6.0
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/davidjerleke/embla-carousel
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/davidjerleke/embla-carousel/contributors

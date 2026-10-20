@@ -15,6 +15,7 @@ licenseModel: open-source
 license: ISC, MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-17
+githubStargazers: 25145
 npmWeeklyDownloads: 1000443
 contributors: 426
 addedAt: 2026-10-19
@@ -52,6 +53,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/lucide-icons/lucide/releases
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/lucide-icons/lucide
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/lucide-icons/lucide

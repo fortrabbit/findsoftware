@@ -19,6 +19,7 @@ licenseModel: open-source
 license: Apache-2.0
 currentMajor: "11"
 latestReleaseDate: 2026-10-07
+githubStargazers: 9558
 npmWeeklyDownloads: 84207
 contributors: 377
 social:
@@ -67,6 +68,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/carbon-design-system/carbon/releases/tag/v11.118.0
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/carbon-design-system/carbon
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/carbon-design-system/carbon

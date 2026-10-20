@@ -16,6 +16,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-01-31
+githubStargazers: 5548
 npmWeeklyDownloads: 21491
 contributors: 63
 social:
@@ -56,6 +57,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://registry.npmjs.org/open-props
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/argyleink/open-props
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/argyleink/open-props

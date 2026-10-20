@@ -26,6 +26,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-06
+githubStargazers: 6577
 packagistDownloads: 492954
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -71,6 +72,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/roots/bedrock/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/roots/bedrock
     checkedAt: 2026-10-19
   - field: packagistDownloads
     url: https://packagist.org/packages/roots/bedrock.json

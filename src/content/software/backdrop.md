@@ -22,6 +22,7 @@ licenseModel: open-source
 license: GPL-2.0, GPL-2.0-or-later
 currentMajor: "1"
 latestReleaseDate: 2026-10-14
+githubStargazers: 1051
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -60,6 +61,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/backdrop/backdrop/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/backdrop/backdrop
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://backdropcms.org/download

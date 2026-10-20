@@ -21,6 +21,7 @@ licenseModel: open-source
 license: MIT, MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-18
+githubStargazers: 26301
 npmWeeklyDownloads: 75471125
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -62,6 +63,9 @@ sources:
     url: https://registry.npmjs.org/rollup/latest
     checkedAt: 2026-10-19
   - field: latestReleaseDate
+    url: https://github.com/rollup/rollup
+    checkedAt: 2026-10-19
+  - field: githubStargazers
     url: https://github.com/rollup/rollup
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads

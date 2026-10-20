@@ -16,6 +16,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-17
+githubStargazers: 50456
 npmWeeklyDownloads: 40627116
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -49,6 +50,9 @@ sources:
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://tanstack.com/query/latest/docs/framework/react/installation
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/TanStack/query
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@tanstack/react-query

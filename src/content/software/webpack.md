@@ -22,6 +22,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-15
+githubStargazers: 65980
 npmWeeklyDownloads: 31879524
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -63,6 +64,9 @@ sources:
     url: https://registry.npmjs.org/webpack/latest
     checkedAt: 2026-10-19
   - field: latestReleaseDate
+    url: https://github.com/webpack/webpack
+    checkedAt: 2026-10-19
+  - field: githubStargazers
     url: https://github.com/webpack/webpack
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads

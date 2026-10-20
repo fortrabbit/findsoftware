@@ -28,6 +28,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "7"
 latestReleaseDate: 2026-10-19
+githubStargazers: 3357
 packagistDownloads: 138150
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
@@ -82,6 +83,9 @@ sources:
     checkedAt: 2026-10-20
   - field: firstRelease
     url: https://github.com/austintoddj/canvas/releases
+    checkedAt: 2026-10-20
+  - field: githubStargazers
+    url: https://github.com/austintoddj/canvas
     checkedAt: 2026-10-20
   - field: packagistDownloads
     url: https://packagist.org/packages/austintoddj/canvas

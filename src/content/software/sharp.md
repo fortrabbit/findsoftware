@@ -27,6 +27,7 @@ licenseModel: open-source
 license: MIT, MIT
 currentMajor: "10"
 latestReleaseDate: 2026-10-09
+githubStargazers: 800
 packagistDownloads: 68728
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -84,6 +85,9 @@ sources:
     checkedAt: 2026-10-19
   - field: packagistDownloads
     url: https://packagist.org/packages/code16/sharp
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/code16/sharp
     checkedAt: 2026-10-19
   - field: currentMajor
     url: https://github.com/code16/sharp/releases/tag/v10.0.2

@@ -30,6 +30,7 @@ licenseModel: open-source
 license: MIT, MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-17
+githubStargazers: 16424
 contributors: 35
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -90,6 +91,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://packagist.org/packages/flarum/core.json
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/flarum/flarum
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/flarum/flarum/contributors

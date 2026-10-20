@@ -19,6 +19,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-11
+githubStargazers: 5626
 contributors: 170
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -58,6 +59,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/umputun/remark42/releases/tag/v1.18.0
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/umputun/remark42
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/umputun/remark42

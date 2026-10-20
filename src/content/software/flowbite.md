@@ -24,6 +24,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-05-13
+githubStargazers: 9365
 npmWeeklyDownloads: 340667
 contributors: 92
 social:
@@ -73,6 +74,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/themesberg/flowbite/releases/tag/v4.0.2
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/themesberg/flowbite
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/themesberg/flowbite

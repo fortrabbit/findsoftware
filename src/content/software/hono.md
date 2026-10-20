@@ -30,6 +30,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-04
+githubStargazers: 32592
 npmWeeklyDownloads: 44776538
 social:
   x: https://x.com/honojs
@@ -79,6 +80,9 @@ sources:
     checkedAt: 2026-10-19
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/hono
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/honojs/hono
     checkedAt: 2026-10-19
   - field: currentMajor
     url: https://registry.npmjs.org/hono/latest

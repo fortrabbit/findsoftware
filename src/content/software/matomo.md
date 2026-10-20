@@ -26,6 +26,7 @@ licenseModel: open-source
 license: GPL-3.0
 currentMajor: "5"
 latestReleaseDate: 2026-10-04
+githubStargazers: 21960
 packagistDownloads: 40332
 contributors: 447
 addedAt: 2026-10-19
@@ -75,6 +76,9 @@ sources:
     checkedAt: 2026-10-19
   - field: packagistDownloads
     url: https://packagist.org/packages/matomo/matomo
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/matomo-org/matomo
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/matomo-org/matomo

@@ -22,6 +22,7 @@ licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "13"
 latestReleaseDate: 2026-10-16
+githubStargazers: 20068
 packagistDownloads: 1023790847
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -67,6 +68,9 @@ sources:
     checkedAt: 2026-10-19
   - field: packagistDownloads
     url: https://packagist.org/packages/phpunit/phpunit.json
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/sebastianbergmann/phpunit
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://docs.phpunit.de/en/13.4/installation.html

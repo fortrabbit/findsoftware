@@ -27,6 +27,7 @@ licenseModel: open-core
 license: BSD-3-Clause
 currentMajor: "2"
 latestReleaseDate: 2026-10-15
+githubStargazers: 6602
 npmWeeklyDownloads: 33539
 contributors: 153
 social:
@@ -88,6 +89,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.github.com/repos/Flagsmith/flagsmith/releases/latest
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/Flagsmith/flagsmith
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/Flagsmith/flagsmith/contributors

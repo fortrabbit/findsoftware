@@ -22,6 +22,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-09-28
+githubStargazers: 23586
 packagistDownloads: 114059202
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -61,6 +62,9 @@ sources:
     checkedAt: 2026-10-19
   - field: packagistDownloads
     url: https://packagist.org/packages/livewire/livewire
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/livewire/livewire
     checkedAt: 2026-10-19
   - field: currentMajor
     url: https://github.com/livewire/livewire/releases/tag/v4.4.7

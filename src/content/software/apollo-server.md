@@ -25,6 +25,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-05-05
+githubStargazers: 13950
 npmWeeklyDownloads: 1504810
 contributors: 629
 addedAt: 2026-10-19
@@ -74,6 +75,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://github.com/apollographql/apollo-server/releases
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/apollographql/apollo-server
     checkedAt: 2026-10-19
   - field: contributors
     url: https://github.com/apollographql/apollo-server

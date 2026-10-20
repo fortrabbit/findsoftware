@@ -22,6 +22,7 @@ licenseModel: open-source
 license: GPL-3.0, GPL-3.0-or-later, GPL version 3
 currentMajor: "5"
 latestReleaseDate: 2026-10-03
+githubStargazers: 7503
 contributors: 1383
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
@@ -73,6 +74,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://endoflife.date/api/moodle.json
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/moodle/moodle
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/moodle/moodle/contributors

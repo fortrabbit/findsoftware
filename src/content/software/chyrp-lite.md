@@ -30,6 +30,7 @@ installMethod: zip download, docker compose
 licenseModel: open-source
 license: BSD-3-Clause
 latestReleaseDate: 2026-08-07
+githubStargazers: 496
 social:
   forum: https://github.com/xenocrat/chyrp-lite/discussions
 addedAt: 2026-10-19
@@ -85,6 +86,9 @@ sources:
     checkedAt: 2026-10-20
   - field: latestReleaseDate
     url: https://github.com/xenocrat/chyrp-lite/releases/latest
+    checkedAt: 2026-10-20
+  - field: githubStargazers
+    url: https://github.com/xenocrat/chyrp-lite
     checkedAt: 2026-10-20
 figure:
   emoji: 📝

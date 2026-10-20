@@ -23,6 +23,7 @@ licenseModel: open-source
 license: GPL-2.0, GPL v2 or later
 currentMajor: "5"
 latestReleaseDate: 2026-09-10
+githubStargazers: 1302
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -67,6 +68,9 @@ sources:
     checkedAt: 2026-10-19
   - field: latestReleaseDate
     url: https://api.wordpress.org/plugins/info/1.0/elasticpress.json
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://github.com/10up/ElasticPress
     checkedAt: 2026-10-19
 figure:
   emoji: 🔎

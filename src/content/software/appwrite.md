@@ -22,6 +22,7 @@ licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "2"
 latestReleaseDate: 2026-10-13
+githubStargazers: 57727
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -66,6 +67,9 @@ sources:
     checkedAt: 2026-10-19
   - field: urls
     url: https://appwrite.io/pricing
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/appwrite/appwrite
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://appwrite.io/docs/advanced/self-hosting/installation

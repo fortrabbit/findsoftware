@@ -19,6 +19,7 @@ licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "9"
 latestReleaseDate: 2026-09-01
+githubStargazers: 27461
 social:
   x: https://x.com/valkey_io
 addedAt: 2026-10-19
@@ -62,6 +63,9 @@ sources:
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://valkey.io/download/
+    checkedAt: 2026-10-19
+  - field: githubStargazers
+    url: https://api.github.com/repos/valkey-io/valkey
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://github.com/valkey-io/valkey/blob/unstable/README.md
