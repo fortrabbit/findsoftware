@@ -1,0 +1,123 @@
+id: blink
+name: Blink
+status: accepted
+checkedAt: 2026-10-20
+description: PHP micro web framework and application server built on the Swoole extension.
+facts:
+  - field: name
+    value: Blink
+    url: https://github.com/bixuehujin/blink/blob/v1/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Blink - A high performance web framework and application server in PHP"
+  - field: repository
+    value: https://github.com/bixuehujin/blink
+    url: https://api.github.com/repos/bixuehujin/blink
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://docs.rethinkphp.com/blink-framework/v0.4/en/
+    url: https://github.com/bixuehujin/blink/blob/v1/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Blink is fully documented in both English and Chinese"
+  - field: maintainer
+    value: Jin Hu
+    url: https://github.com/bixuehujin/blink/blob/v1/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright (c) 2015 Jin Hu"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/bixuehujin/blink
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [framework, application-server]
+    url: https://github.com/bixuehujin/blink/blob/v1/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Blink is a micro web framework for building long-running and high performance services"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/bixuehujin/blink
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://api.github.com/repos/bixuehujin/blink
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtimeMin
+    value: "5.6"
+    url: https://repo.packagist.org/p2/blink/blink.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: installMethod
+    value: [composer create-project]
+    url: https://github.com/bixuehujin/blink/blob/v1/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer create-project --prefer-dist blink/seed your-app"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/bixuehujin/blink/blob/v1/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "can serve requests directly in PHP, without php-fpm or Apache's mod_php"
+  - field: runsAs
+    value: [per-request]
+    url: https://github.com/bixuehujin/blink/blob/v1/docs/en/5-3-deployment.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Blink can also be deployed under PHP-FPM or Apache just like other PHP frameworks"
+  - field: license
+    value: MIT
+    url: https://github.com/bixuehujin/blink/blob/v1/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "licensed under the MIT license"
+  - field: currentMajor
+    value: 0
+    url: https://repo.packagist.org/p2/blink/blink.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2019-07-28
+    url: https://api.github.com/repos/bixuehujin/blink/releases/latest
+    checkedAt: 2026-10-20
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/bixuehujin/blink/releases
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 831
+    url: https://api.github.com/repos/bixuehujin/blink
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 16
+    url: https://api.github.com/repos/bixuehujin/blink/contributors
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: blink/blink
+    url: https://packagist.org/packages/blink/blink
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: 45581 (total)
+    url: https://packagist.org/packages/blink/blink.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: 574 (monthly)
+    url: https://packagist.org/packages/blink/blink.json
+    checkedAt: 2026-10-20
+    via: api
+notFound: [homepage, hqCountry, renderingModes, databases, contentStore, templating, headlessApi, i18n, sso, importsFrom, parent, forkOf, successorOf, alternativeTo, basedOn, wikidata, usageShare, reportedInstalls, npmName, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pricingPage, endoflifeId, adminUi, userRoles]
+unreadable: ["https://docs.rethinkphp.com/blink-framework/ (no response on three requests, HTTP 000; the README's docs link and the homepage candidate in the CSV)"]
+notes: >
+  Candidate row lists docs.rethinkphp.com as homepage; it did not answer, so no homepage is recorded. The docs were read from docs/en in the v1 branch of the repository, not from the published site; the docs fact cites the README's link. Last release v0.4.1 on 2019-07-28; the README says the project is "still in active development" and the default branch v1 was pushed 2026-09-09. No end signal found: not archived, package not abandoned or deprecated, no end statement. Release age is shown, not decided. The README says the design is "heavily inspired by Yii2 and Laravel"; inspiration is not a basedOn relationship and is not recorded. Installation needs the Swoole extension (docs/en/1-2-installing.md); recorded in the prose only. The Packagist package for the install docs is blink/seed, a skeleton, so the core package blink/blink is recorded. The Packagist package blink/blink requires php >=5.6.0 at the latest release v0.4.1; runtimeMin records it. The default branch v1, unreleased, requires php >=8.0. Maintainer is the LICENSE copyright line. Contributors count is the page count at per_page=1.

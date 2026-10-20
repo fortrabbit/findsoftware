@@ -1,0 +1,118 @@
+id: comet
+name: Comet
+status: accepted
+checkedAt: 2026-10-20
+description: PHP framework for building REST APIs, CRUDs, admin panels and microservices, served by its own HTTP server.
+facts:
+  - field: repository
+    value: https://github.com/gotzmann/comet
+    url: https://api.github.com/repos/gotzmann/comet
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://github.com/gotzmann/comet/blob/master/README.md
+    url: https://github.com/gotzmann/comet/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+  - field: maintainer
+    value: Serge Gotsuliak
+    url: https://github.com/gotzmann/comet/blob/master/LICENSE.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright (c) 2020 Serge Gotsuliak"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/gotzmann
+    checkedAt: 2026-10-20
+    via: api
+  - field: firstRelease
+    value: 2020
+    url: https://repo.packagist.org/p2/gotzmann/comet.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [framework, rest-api]
+    url: https://github.com/gotzmann/comet/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Comet is a modern PHP framework for building blazing fast REST APIs"
+  - field: basedOn
+    value: [Slim, Workerman]
+    url: https://github.com/gotzmann/comet/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Based on bullet-proof components from Guzzle, SlimPHP and Workerman"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/gotzmann/comet
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/gotzmann/comet/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Comet requires PHP 7.2 or newer."
+  - field: runtimeMin
+    value: "7.2"
+    url: https://github.com/gotzmann/comet/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Comet requires PHP 7.2 or newer."
+  - field: headlessApi
+    value: [rest]
+    url: https://github.com/gotzmann/comet/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "for building blazing fast REST APIs, CRUDs, admin panels, and microservices."
+  - field: installMethod
+    value: composer
+    url: https://github.com/gotzmann/comet/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer require gotzmann/comet"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/gotzmann/comet/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Let's start the Comet server listening on a custom host:port and returning a JSON payload."
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/gotzmann/comet
+    checkedAt: 2026-10-20
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://repo.packagist.org/p2/gotzmann/comet.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2025-08-18
+    url: https://repo.packagist.org/p2/gotzmann/comet.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 684
+    url: https://api.github.com/repos/gotzmann/comet
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 5
+    url: https://api.github.com/repos/gotzmann/comet/contributors
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: gotzmann/comet
+    url: https://repo.packagist.org/p2/gotzmann/comet.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: {total: 16739, monthly: 170}
+    url: https://packagist.org/packages/gotzmann/comet.json
+    checkedAt: 2026-10-20
+    via: api
+notFound: [homepage, hqCountry, pricingPage, endoflifeId, usageShare, reportedInstalls, parent, forkOf, successorOf, databases, adminUi, templating, i18n, userRoles, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory]
+unreadable: []
+notes: >
+  No homepage: the GitHub homepage field is empty and the composer.json homepage is the repository itself, so the record has the repository only. The README says Comet requires PHP 7.2 or newer; the composer.json of the v2.7.3 tag has no php requirement, so runtimeMin follows the README on master. The README names Slim, Guzzle and Workerman as the components it is based on; Guzzle is an HTTP client library and is not in basedOn. The README's Nginx section describes Nginx as a reverse proxy or load balancer in front of a Comet app. The repository was last pushed 2026-06-30, while the latest Packagist version is v2.7.3 dated 2025-08-18; latestReleaseDate follows the Packagist version time because the repository has no GitHub release. The CSV note says Workerman based; the README states the basis in the quoted sentence. The Packagist figures are for gotzmann/comet, the package the README installs.

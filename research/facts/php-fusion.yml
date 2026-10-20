@@ -1,0 +1,126 @@
+id: php-fusion
+name: PHPFusion
+status: accepted
+checkedAt: 2026-10-20
+description: Open-source content management system written in PHP, with a MySQL database and an administration panel.
+facts:
+  - field: homepage
+    value: https://phpfusion.com
+    url: https://github.com/PHPFusion/PHPFusion
+    checkedAt: 2026-10-20
+    via: api
+  - field: repository
+    value: https://github.com/PHPFusion/PHPFusion
+    url: https://github.com/PHPFusion/PHPFusion
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://github.com/PHPFusion/docs
+    url: https://github.com/PHPFusion/docs
+    checkedAt: 2026-10-20
+    via: api
+  - field: maintainer
+    value: PHP Fusion Inc
+    url: https://raw.githubusercontent.com/PHPFusion/PHPFusion/v9.10.31/index.php
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright (C) PHP Fusion Inc"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/PHPFusion
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [cms]
+    url: https://github.com/PHPFusion/docs/blob/master/phpfusion-9-documentation/1-introduction.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHPFusion includes the most common features you would expect to see in many others content management system packages"
+  - field: language
+    value: PHP
+    url: https://github.com/PHPFusion/PHPFusion
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/PHPFusion/PHPFusion/blob/v9.10.31/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP version: 8.1.0 (Recommended 8.2)"
+  - field: runtimeMin
+    value: "8.1"
+    url: https://github.com/PHPFusion/PHPFusion/blob/v9.10.31/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP version: 8.1.0 (Recommended 8.2)"
+  - field: contentStore
+    value: [database]
+    url: https://github.com/PHPFusion/docs/blob/master/phpfusion-9-documentation/4-installation.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "You need to create a MySQL database"
+  - field: databases
+    value: [mysql]
+    url: https://github.com/PHPFusion/PHPFusion/blob/v9.10.31/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "MYSQL version: MYSQL 8.0.13 (Recommended MySQL 8.1)"
+  - field: adminUi
+    value: "yes, administration panel"
+    url: https://github.com/PHPFusion/docs/blob/master/phpfusion-9-documentation/1-introduction.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Fully featured Administration panel"
+  - field: i18n
+    value: yes
+    url: https://github.com/PHPFusion/docs/blob/master/phpfusion-9-documentation/1-introduction.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Multilingual"
+  - field: installMethod
+    value: [upload files and web installer]
+    url: https://github.com/PHPFusion/docs/blob/master/phpfusion-9-documentation/4-installation.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Before you start the installation of PHPFusion you must upload all the files to your hosted directory"
+  - field: runsAs
+    value: [per-request]
+    url: https://github.com/PHPFusion/docs/blob/master/phpfusion-9-documentation/3-requirements.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "HTTP server, we recommend Apache 2.4 or greater"
+  - field: forum
+    value: https://php-fusion.com/forum
+    url: https://github.com/PHPFusion/docs/blob/master/phpfusion-9-documentation/1-introduction.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Please do not hesitate to post any questions or report any problems in our Support Forums"
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/PHPFusion/PHPFusion
+    checkedAt: 2026-10-20
+    via: api
+  - field: currentMajor
+    value: 9
+    url: https://github.com/PHPFusion/PHPFusion/releases/tag/v9.10.31
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2025-02-20
+    url: https://github.com/PHPFusion/PHPFusion/releases/tag/v9.10.31
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 122
+    url: https://github.com/PHPFusion/PHPFusion
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 53
+    url: https://api.github.com/repos/PHPFusion/PHPFusion/contributors?anon=true&per_page=100
+    checkedAt: 2026-10-20
+    via: api
+notFound: [firstRelease, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, pricingPage, endoflifeId, packagistName, packagistDownloads, npmName, npmWeeklyDownloads, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, sso, multisite, livePreview, templating, userRoles]
+unreadable: [https://phpfusion.com/, https://phpfusion.com/docs]
+notes: >
+  The homepage phpfusion.com answered 503 on every request during this run, so the homepage fact comes from the repository's homepage field through the API and the docs were read from the PHPFusion/docs repository. The project's site source at github.com/PHPFusion/site shows a PHP 10 platform, while the stable release on GitHub is v9.10.31 (2025-02-20) and the default branch is 10.00.00-dev; currentMajor follows the stable tag, so the reviewer should decide whether 10 is stable yet. The docs in the repository state the v9 minimum as PHP 7.0 and MySQL 5.6 or MariaDB 10.1, while the v9.10.31 README states PHP 8.1.0 and MySQL 8.0.13 and its heading still reads 9.10.03A-DEV; runtimeMin and databases follow the README at the release tag. The license statement about purchasing a license to remove copyrights is recorded as a second license entry. The docs and the README name no Packagist or npm package; the composer.json name phpfusion/v9 has no Packagist entry (404 on repo.packagist.org). The maintainer is the copyright holder named in the source file headers at the v9.10.31 tag; the docs call it PHPFusion Inc. The docs also say "To legally remove our Copyrights you need to Purchase a License"; the licensing page behind it is unreadable, so no second license entry is recorded and the sentence is kept here. The Adoption stars and contributors are the repository's own counts.

@@ -1,0 +1,144 @@
+id: pico
+name: Pico
+status: discontinued
+checkedAt: 2026-10-20
+description: Flat-file CMS that stores pages as Markdown files in a content folder and needs no database.
+facts:
+  - field: status
+    value: discontinued
+    url: https://picocms.org/download/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Development of Pico has stopped a very long time ago."
+  - field: homepage
+    value: https://picocms.org
+    url: https://picocms.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Pico - A stupidly simple, blazing fast, flat file CMS."
+  - field: repository
+    value: https://github.com/picocms/Pico
+    url: https://github.com/picocms/Pico
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://picocms.org/docs/
+    url: https://picocms.org/docs/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Pico is a flat file CMS, this means there is no administration backend or database to deal with."
+  - field: maintainer
+    value: The Pico Community
+    url: https://picocms.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "is maintained by The Pico Community"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/picocms
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [cms, flat-file-cms]
+    url: https://picocms.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: 'Pico is a "flat file" CMS, meaning no database woes'
+  - field: language
+    value: PHP
+    url: https://github.com/picocms/Pico
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://picocms.org/download/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Pico requires PHP 5.3.6+ and the PHP extensions dom and mbstring to be enabled."
+  - field: runtimeMin
+    value: "5.3"
+    url: https://picocms.org/download/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Pico requires PHP 5.3.6+ and the PHP extensions dom and mbstring to be enabled."
+  - field: contentStore
+    value: [flat-file]
+    url: https://picocms.org/about/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "all your site content is stored as simple text files"
+  - field: adminUi
+    value: no
+    url: https://picocms.org/docs/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "there is no administration backend or database to deal with"
+  - field: templating
+    value: [twig]
+    url: https://picocms.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Pico uses the Twig templating engine"
+  - field: installMethod
+    value: [composer create-project]
+    url: https://picocms.org/download/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "php composer.phar create-project picocms/pico-composer pico"
+  - field: installMethod
+    value: [pre-bundled release]
+    url: https://picocms.org/download/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Download the latest Pico release and upload all files to the desired install directory"
+  - field: runsAs
+    value: [per-request]
+    url: https://picocms.org/about/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "will run on almost any web space"
+  - field: license
+    value: MIT
+    url: https://github.com/picocms/Pico
+    checkedAt: 2026-10-20
+    via: api
+  - field: license
+    value: MIT
+    url: https://picocms.org/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Pico is completely free and open source, released under the MIT license"
+  - field: currentMajor
+    value: 2
+    url: https://github.com/picocms/Pico/releases/tag/v2.1.4
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2020-08-29
+    url: https://github.com/picocms/Pico/releases/tag/v2.1.4
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: picocms/pico
+    url: https://repo.packagist.org/p2/picocms/pico.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: {total: 38372, monthly: 80}
+    url: https://packagist.org/packages/picocms/pico.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 3902
+    url: https://github.com/picocms/Pico
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 46
+    url: https://api.github.com/repos/picocms/Pico/contributors?anon=true&per_page=100
+    checkedAt: 2026-10-20
+    via: api
+notFound: [firstRelease, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, pricingPage, endoflifeId, npmName, npmWeeklyDownloads, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, sso, multisite, livePreview, userRoles]
+unreadable: []
+notes: >
+  The download page carries an end-of-life notice that says development has stopped, advises against new websites, says existing sites have no known security issues but will run into issues because Pico was not designed for modern PHP versions, and invites someone to take over the project; the status fact quotes it and the file is discontinued under criterion 4. The homepage still says Pico "is maintained by The Pico Community", which the notice contradicts; the notice is the more specific and later statement, so the status stands. The maintainer is the name the homepage gives; the LICENSE copyright line names Dev7studios Ltd (2012) and the homepage names Gilbert Pellegrom as the maker. The repository was pushed on 2026-07-07 and is not archived, and the registry package is not abandoned, so no archive or abandonment signal applies. The install docs name picocms/pico-composer, a skeleton, so the Packagist figures come from the core package picocms/pico. The download page points to a v3.0.0-alpha.2 release and the pico-3.0 branch, which are not stable and are not recorded. The notice also names alternative flat file CMSs; those are not recorded as alternativeTo.

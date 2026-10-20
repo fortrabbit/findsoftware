@@ -1,0 +1,93 @@
+id: atas-ssg
+name: "Ata's SSG"
+status: accepted
+checkedAt: 2026-10-20
+description: PHP static site generator for GitHub Pages that builds Markdown pages and posts with a GitHub Action.
+facts:
+  - field: repository
+    value: https://github.com/atas/ssg
+    url: https://api.github.com/repos/atas/ssg
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://github.com/atas/ssg/blob/main/GITHUB-PAGES.md
+    url: https://github.com/atas/ssg/blob/main/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "See GITHUB PAGES"
+  - field: maintainer
+    value: Ata Sasmaz
+    url: https://github.com/atas/ssg/blob/main/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright (c) 2023 Ata Sasmaz"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/atas
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://api.github.com/repos/atas/ssg
+    checkedAt: 2026-10-20
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/atas/ssg
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/atas/ssg/blob/main/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Simple PHP Static Site Generator for GitHub Pages"
+  - field: installMethod
+    value: clone the repository, then run composer update
+    url: https://github.com/atas/ssg/blob/main/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Clone the repo"
+  - field: contentStore
+    value: flat-file
+    url: https://github.com/atas/ssg/blob/main/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Add your markdown pages and posts to"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/atas/ssg/blob/main/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Build process visits each PHP and markdown page, saves their HTML, and deploys to GitHub Pages"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/atas/ssg/blob/main/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Your site will be alive on GitHub Pages!"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/atas/ssg/blob/main/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Your local php site will be running at"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/atas/ssg
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 36
+    url: https://api.github.com/repos/atas/ssg
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/atas/ssg/contributors
+    checkedAt: 2026-10-20
+    via: api
+notFound: [homepage, runtimeMin, pricingPage, firstRelease, latestReleaseDate, currentMajor, hqCountry, parent, forkOf, successorOf, basedOn, databases, headlessApi, multisite, docker, paidEdition, freeTier, usageShare, pluginCount, pluginDirectory, starters, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, npmName, packagistName, i18n, userRoles, sso, wikidata, adminUi, reportedInstalls, serverNeeds, templating]
+unreadable: []
+notes: >
+  The candidate row's homepage, ssg-test.atasasmaz.com, is a test deployment of this repository, named by the README as the CI target, so the repository has no project site and homepage stays unknown. The author's personal site www.atasasmaz.com is a production example and is not the project's site. The repository has no tagged release (the releases API returns 404), so currentMajor and latestReleaseDate stay unknown. The repository was last pushed 2024-10-15 (GitHub API pushed_at); no end signal is stated. The composer.json requires the atas/ssg-system-php package and the README links it as the PHP Lib; it is not recorded as basedOn because the README names it as a component, not a parent. The composer.json "8.2.0" is a platform setting, not a documented minimum, so runtimeMin stays unknown. Criterion 5 threshold: 36 GitHub stars and one contributor are the only adoption figures; the candidate row marks it accepted, and a reviewer decides whether that figure meets the open threshold. The README links the project's Docker image and GitHub Action as separate repositories.

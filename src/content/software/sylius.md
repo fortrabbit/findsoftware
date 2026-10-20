@@ -24,6 +24,7 @@ hosting:
 runtimeMin: php 8.3
 basedOn:
   - symfony
+  - api-platform
 contentStore:
   - database
 databases:

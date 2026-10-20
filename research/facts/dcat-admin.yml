@@ -1,0 +1,131 @@
+id: dcat-admin
+name: Dcat Admin
+status: accepted
+checkedAt: 2026-10-20
+description: Tool for building admin panels on Laravel, with grids, forms, detail pages and a code generator.
+facts:
+  - field: repository
+    value: https://github.com/jqhph/dcat-admin
+    url: https://github.com/jqhph/dcat-admin
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://learnku.com/docs/dcat-admin
+    url: https://github.com/jqhph/dcat-admin/blob/2.0/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "中文文档"
+  - field: maintainer
+    value: Jiang qinghua, Jens Segers
+    url: https://github.com/jqhph/dcat-admin/blob/2.0/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright (c) 2019 Jiang qinghua, Jens Segers"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/jqhph
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [admin-panel]
+    url: https://github.com/jqhph/dcat-admin/blob/2.0/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "后台系统构建工具"
+  - field: basedOn
+    value: [laravel]
+    url: https://github.com/jqhph/dcat-admin/blob/2.0/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Laravel 5.5.0 ~ 9.*"
+  - field: language
+    value: PHP
+    url: https://github.com/jqhph/dcat-admin
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: php
+    url: https://github.com/jqhph/dcat-admin/blob/2.0/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP >= 7.1.0"
+  - field: runtimeMin
+    value: "7.1"
+    url: https://github.com/jqhph/dcat-admin/blob/2.0/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP >= 7.1.0"
+  - field: runsAs
+    value: [per-request]
+    url: https://github.com/jqhph/dcat-admin/blob/2.0/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "try_files $uri $uri/ /index.php?$query_string;"
+  - field: installMethod
+    value: [composer require]
+    url: https://github.com/jqhph/dcat-admin/blob/2.0/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer require dcat/laravel-admin"
+  - field: adminUi
+    value: yes, admin panel with grid, form and detail page builders
+    url: https://github.com/jqhph/dcat-admin/blob/2.0/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "后台系统构建工具"
+  - field: userRoles
+    value: RBAC permission management with unlimited-level permission nodes
+    url: https://github.com/jqhph/dcat-admin/blob/2.0/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "RBAC权限管理，支持无限极权限节点"
+  - field: license
+    value: MIT
+    url: https://github.com/jqhph/dcat-admin
+    checkedAt: 2026-10-20
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/jqhph/dcat-admin/blob/2.0/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 1
+    url: https://repo.packagist.org/p2/dcat/laravel-admin.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2020-12-24
+    url: https://repo.packagist.org/p2/dcat/laravel-admin.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/jqhph/dcat-admin
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 4020
+    url: https://github.com/jqhph/dcat-admin
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: dcat/laravel-admin
+    url: https://packagist.org/packages/dcat/laravel-admin
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: {total: 555110, monthly: 4816}
+    url: https://packagist.org/packages/dcat/laravel-admin.json
+    checkedAt: 2026-10-20
+    via: api
+notFound: [homepage, firstRelease, hqCountry, parent, wikidata, databases, contentStore, templating, headlessApi, i18n, pricingPage, paidEdition, endoflifeId, pluginDirectory, forum, discord, subreddit, bluesky, mastodon, x, newsletter, usageShare, reportedInstalls, contributors, importsFrom, sso]
+unreadable: [http://www.dcatadmin.com/]
+notes: >
+  The project has no working homepage: www.dcatadmin.com, which the repository description and README name, now serves an unrelated company, so no homepage is recorded.
+  The repository is not archived (pushed 2025-06-25), Packagist does not flag the package abandoned, and no README states an end, so the status stays accepted.
+  The default branch is 2.0 and Packagist lists only 2.x pre-releases (2.2.3-beta is the newest tag); the highest stable tag is 1.7.9, so currentMajor is 1 and the reviewer may prefer 2.
+  The README is in Chinese; the Chinese documentation is hosted on learnku.com, a community platform, and is cited only as the link the README gives.
+  The README calls the project a secondary development of laravel-admin (laravel-admin.org); the LICENSE names Jens Segers as a co-holder, as it does for laravel-admin, so the maintainer is recorded as the LICENSE line states it.
+  The install docs create the Laravel app and set a database connection in .env; the README example uses MySQL but names no list of supported databases, so databases is left out.

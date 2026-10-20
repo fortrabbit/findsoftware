@@ -1,0 +1,120 @@
+id: chubbyphp
+name: chubbyphp-framework
+status: accepted
+checkedAt: 2026-10-20
+description: PSR-15 middleware microframework for PHP, built on PSR-7 and PSR-17 HTTP interfaces.
+facts:
+  - field: repository
+    value: https://github.com/chubbyphp/chubbyphp-framework
+    url: https://github.com/chubbyphp/chubbyphp-framework
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://github.com/chubbyphp/chubbyphp-framework/blob/master/README.md
+    url: https://github.com/chubbyphp/chubbyphp-framework/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+  - field: maintainer
+    value: Dominik Zogg
+    url: https://github.com/chubbyphp/chubbyphp-framework/blob/master/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: Copyright (c) 2026 Dominik Zogg
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/chubbyphp
+    checkedAt: 2026-10-20
+    via: api
+  - field: firstRelease
+    value: 2019
+    url: https://repo.packagist.org/p2/chubbyphp/chubbyphp-framework.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value:
+      - micro-framework
+      - framework
+    url: https://github.com/chubbyphp/chubbyphp-framework/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: built with as little complexity as possible
+  - field: language
+    value: PHP
+    url: https://github.com/chubbyphp/chubbyphp-framework
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: php
+    url: https://github.com/chubbyphp/chubbyphp-framework/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "php: ^8.3"
+  - field: runtimeMin
+    value: "8.3"
+    url: https://github.com/chubbyphp/chubbyphp-framework/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "php: ^8.3"
+  - field: installMethod
+    value:
+      - composer require
+    url: https://github.com/chubbyphp/chubbyphp-framework/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: composer require chubbyphp/chubbyphp-framework
+  - field: license
+    value: MIT
+    url: https://github.com/chubbyphp/chubbyphp-framework
+    checkedAt: 2026-10-20
+    via: api
+  - field: currentMajor
+    value: 6
+    url: https://repo.packagist.org/p2/chubbyphp/chubbyphp-framework.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-05
+    url: https://repo.packagist.org/p2/chubbyphp/chubbyphp-framework.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 136
+    url: https://github.com/chubbyphp/chubbyphp-framework
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: chubbyphp/chubbyphp-framework
+    url: https://packagist.org/packages/chubbyphp/chubbyphp-framework.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value:
+      total: 48254
+      monthly: 943
+    url: https://packagist.org/packages/chubbyphp/chubbyphp-framework.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: importsFrom
+    value:
+      - slim
+    url: https://github.com/chubbyphp/chubbyphp-framework/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: Slim to Chubbyphp
+notFound:
+  - homepage
+  - hqCountry
+  - wikidata
+  - pluginDirectory
+  - forum
+  - discord
+  - subreddit
+  - mastodon
+  - bluesky
+  - x
+  - newsletter
+  - endoflifeId
+  - runsAs
+unreadable: []
+notes: |
+  The repository has no homepage and the README names none, so no homepage fact is written. The GitHub API returns no release objects, so the current major and release date come from the stable Packagist version 6.1.2. Packagist's first version is dated 2019-04-25. The README's Server section lists long-running runtimes (ReactPHP, Roadrunner, Swoole, Workerman) next to Nginx; runsAs is left unknown because the README shows a usage example and lists both Nginx and long-running servers without stating which the framework needs. The README's Description says the framework is built on PSR-7, PSR-15 and PSR-17, with optional PSR-11 container and PSR-3 logger integration; the PSR standards are interfaces, not software, so no basedOn fact is written. The Suggest section names chubbyphp-framework-router-fastroute and chubbyphp-framework-router-symfony as routers, and several PSR-7 implementations (guzzlehttp/psr7, laminas-diactoros, nyholm/psr7, slim/psr7, sunrise/http-message) that can be installed alongside. The plain usage example passes ExceptionMiddleware and RouteMatcherMiddleware to Application with a CallbackRequestHandler route; the Usage section also shows an ApplicationBuilder facade that wires the same middleware pipe. The Server section marks the builtin server as development only. The Migration section links guides from 1.x to 2.x through 5.x to 6.x, and one from Slim to Chubbyphp. The Skeleton section names chubbyphp-framework-skeleton as a separate package; it is not the install target and is not recorded. The Packagist and downloads figures are for chubbyphp/chubbyphp-framework, the package the install command names.

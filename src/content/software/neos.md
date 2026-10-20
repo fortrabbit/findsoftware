@@ -20,6 +20,8 @@ runtime:
 hosting:
   - php
 runtimeMin: php 8.4
+basedOn:
+  - flow
 adminUi: true
 templating: fluid
 i18n: yes
@@ -52,6 +54,9 @@ sources:
     checkedAt: 2026-10-20
   - field: category
     url: https://www.neos.io/
+    checkedAt: 2026-10-20
+  - field: basedOn
+    url: https://raw.githubusercontent.com/neos/neos-development-collection/master/composer.json
     checkedAt: 2026-10-20
   - field: language
     url: https://api.github.com/repos/neos/neos-development-collection

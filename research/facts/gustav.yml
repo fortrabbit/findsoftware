@@ -1,0 +1,130 @@
+id: gustav
+name: Gustav
+status: accepted
+checkedAt: 2026-10-20
+description: PHP static-site generator for blogs and other websites, with a template system and a PHP API.
+facts:
+  - field: repository
+    value: https://github.com/futape/gustav
+    url: https://api.github.com/repos/futape/gustav
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://github.com/futape/gustav/wiki
+    url: https://github.com/futape/gustav/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "provides lots of information on getting started"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/futape/gustav
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://github.com/futape/gustav/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "static-site gernerator written in PHP"
+  - field: runtime
+    value: [php]
+    url: https://github.com/futape/gustav/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "static-site gernerator written in PHP"
+  - field: runtimeMin
+    value: "5.3"
+    url: https://github.com/futape/gustav/wiki/System-requirements
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Gustav requires PHP 5.3+"
+  - field: installMethod
+    value: copy the downloaded files to the web space
+    url: https://raw.githubusercontent.com/futape/gustav/doc/Getting-started.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "copying the downloaded files to the server"
+  - field: renderingModes
+    value: [static]
+    url: https://raw.githubusercontent.com/futape/gustav/doc/Generating-destination-files.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "is a static destination file"
+  - field: renderingModes
+    value: [server]
+    url: https://raw.githubusercontent.com/futape/gustav/doc/Generating-destination-files.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "a PHP code generating the destination content dynamically when requested"
+  - field: runsAs
+    value: [per-request]
+    url: https://raw.githubusercontent.com/futape/gustav/doc/Generating-destination-files.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "a PHP code generating the destination content dynamically when requested"
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/futape/gustav/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "New BSD Open-Source-License"
+  - field: license
+    value: CC-BY-4.0
+    url: https://github.com/futape/gustav/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Creative Commons Attribution 4.0 International License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/futape/gustav/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "The Gustav source is published under the permissive"
+  - field: maintainer
+    value: Lucas Krause
+    url: https://github.com/futape/gustav/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Lucas Krause"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/futape/gustav/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Lucas Krause"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/futape
+    checkedAt: 2026-10-20
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/futape/gustav/git/tags/e5ea9eb8ae28b705dfefff62431f790c429ad5cf
+    checkedAt: 2026-10-20
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/futape/gustav/tags
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2015-02-22
+    url: https://api.github.com/repos/futape/gustav/git/tags/45ce5a5f61a0cb6b66386d64b7c2294f793e1e13
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 15
+    url: https://api.github.com/repos/futape/gustav
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 4
+    url: https://api.github.com/repos/futape/gustav/contributors?anon=true&per_page=100
+    checkedAt: 2026-10-20
+    via: api
+notFound: [pricingPage, homepage, hqCountry, parent, forkOf, successorOf, basedOn, alternativeTo, wikidata, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, usageShare, reportedInstalls, packagistName, packagistDownloads, npmName, npmWeeklyDownloads, pypiDownloads, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, paidEdition, endoflifeId, selfHostOption, regions, apiLimits]
+unreadable:
+  - https://gustav.futape.de (redirects to https://github.com/futape/gustav, which the record takes as the repository)
+  - https://github.com/futape/gustav/wiki/Getting-started (rendered as a JavaScript shell; the same text read from the doc branch of the repository)
+notes: >
+  The homepage address gustav.futape.de redirects to the GitHub repository, so no project website is recorded. The documentation is the GitHub wiki, which the README links; its pages are mirrored as Markdown on the doc branch, which the Getting-started and Generating-destination-files quotes read. The wiki's System-requirements page states PHP 5.3+ and designed for an Apache server; it was last edited with the 1.1.1 tag. The Getting-started setup points an Apache ErrorDocument 404 at generate.php, so a missing destination file is generated by PHP on the server when it is requested; the live site needs Apache and PHP, and runsAs static is not recorded even though destination files can be static. Releases: the repository has tags 0.1.0 to 1.1.1 and no GitHub releases; latestReleaseDate is the date of tag 1.1.1. No page states that the project has ended, so status stays accepted. The GitHub API reports license null because the LICENSE file sits in src/futape/gustav; both license entries come from the README (the CC license covers the logo and documentation). The source is not on Packagist. The maintainer is the author named in the README.

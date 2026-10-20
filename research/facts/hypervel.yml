@@ -1,0 +1,112 @@
+id: hypervel
+name: Hypervel
+status: accepted
+checkedAt: 2026-10-20
+description: Laravel-style PHP framework with native coroutine support, for web applications and APIs running on Swoole.
+facts:
+  - field: homepage
+    value: https://hypervel.org
+    url: https://github.com/hypervel/hypervel
+    checkedAt: 2026-10-20
+    via: api
+  - field: repository
+    value: https://github.com/hypervel/hypervel
+    url: https://github.com/hypervel/hypervel
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://hypervel.org/docs/introduction.html
+    url: https://hypervel.org/docs/introduction.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Hypervel is a Laravel-style PHP framework with native coroutine support for ultra-high performance."
+  - field: maintainer
+    value: Hypervel
+    url: https://github.com/hypervel/hypervel/blob/0.4/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright (c) Hypervel"
+  - field: repoOwnerType
+    value: organization
+    url: https://github.com/hypervel/hypervel
+    checkedAt: 2026-10-20
+    via: api
+  - field: firstRelease
+    value: 2025
+    url: https://repo.packagist.org/p2/hypervel/framework.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://hypervel.org/docs/introduction.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Hypervel is a Laravel-style PHP framework with native coroutine support for ultra-high performance."
+  - field: language
+    value: PHP
+    url: https://github.com/hypervel/hypervel
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://hypervel.org/docs/deployment.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP >= 8.2"
+  - field: runtimeMin
+    value: ">=8.2"
+    url: https://hypervel.org/docs/deployment.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP >= 8.2"
+  - field: runsAs
+    value: [always-on]
+    url: https://hypervel.org/docs/installation.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Because all the files will be kept in the memory after running"
+  - field: installMethod
+    value: [composer create-project]
+    url: https://hypervel.org/docs/installation.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer create-project hypervel/hypervel example-app"
+  - field: license
+    value: MIT
+    url: https://github.com/hypervel/hypervel
+    checkedAt: 2026-10-20
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://repo.packagist.org/p2/hypervel/framework.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-14
+    url: https://github.com/hypervel/hypervel/releases
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 631
+    url: https://github.com/hypervel/hypervel
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: hypervel/framework
+    url: https://packagist.org/packages/hypervel/framework.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: 21617 (total)
+    url: https://packagist.org/packages/hypervel/framework.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: 915 (monthly)
+    url: https://packagist.org/packages/hypervel/framework.json
+    checkedAt: 2026-10-20
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, parent, endoflifeId, renderingModes, adminUi, templating, i18n, databases, pluginDirectory, forum, discord]
+unreadable: []
+notes: >
+  The install page runs composer create-project on hypervel/hypervel, a skeleton; the registry figures come from hypervel/framework, the core package the skeleton requires. Its version 0.3.26 is the current release, so currentMajor is 0. The introduction says the framework "ports many core components from Laravel" and compares itself with Laravel Octane; hypervel/framework does not require any illuminate package in its composer.json, so no basedOn is recorded. Packagist lists v0.3.26 dated 2026-07-22 while the GitHub release is dated 2026-08-14; latestReleaseDate follows the GitHub API. The installation page names the Swoole PHP extension as a requirement, and the deployment page gives Swoole >= 5.1 (not coded as a field). Requirement for PHP 8.2 is from the deployment page, the registry shows the same minimum for v0.3.26.

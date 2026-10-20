@@ -1,0 +1,124 @@
+id: bulletphp
+name: Bullet
+status: accepted
+checkedAt: 2026-10-20
+description: PHP micro-framework that routes HTTP requests one URI path segment at a time, using nested callbacks.
+facts:
+  - field: homepage
+    value: http://bulletphp.com
+    url: http://bulletphp.com/
+    checkedAt: 2026-10-20
+    via: page
+    quote: Bullet is a functional PHP micro-framework
+  - field: repository
+    value: https://github.com/vlucas/bulletphp
+    url: https://github.com/vlucas/bulletphp
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://github.com/vlucas/bulletphp/blob/master/README.md
+    url: https://github.com/vlucas/bulletphp/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+  - field: maintainer
+    value: Vance Lucas
+    url: http://bulletphp.com/
+    checkedAt: 2026-10-20
+    via: page
+    quote: Vance Lucas from Brightbit
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/vlucas
+    checkedAt: 2026-10-20
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://repo.packagist.org/p2/vlucas/bulletphp.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value:
+      - micro-framework
+    url: https://github.com/vlucas/bulletphp/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: Bullet is a resource-oriented micro PHP framework built around HTTP URIs
+  - field: language
+    value: PHP
+    url: https://github.com/vlucas/bulletphp
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: php
+    url: https://github.com/vlucas/bulletphp/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: PHP 5.6+ (PHP 7.1 recommended)
+  - field: runtimeMin
+    value: "5.6"
+    url: https://repo.packagist.org/p2/vlucas/bulletphp.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: installMethod
+    value:
+      - composer
+    url: https://github.com/vlucas/bulletphp/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: Installing with Composer
+  - field: runsAs
+    value:
+      - per-request
+    url: https://github.com/vlucas/bulletphp/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: Apache will pass the request URI
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/vlucas/bulletphp
+    checkedAt: 2026-10-20
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://repo.packagist.org/p2/vlucas/bulletphp.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2021-05-28
+    url: https://repo.packagist.org/p2/vlucas/bulletphp.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 415
+    url: https://github.com/vlucas/bulletphp
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: vlucas/bulletphp
+    url: https://packagist.org/packages/vlucas/bulletphp.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value:
+      total: 50162
+      monthly: 38
+    url: https://packagist.org/packages/vlucas/bulletphp.json
+    checkedAt: 2026-10-20
+    via: api
+notFound:
+  - hqCountry
+  - wikidata
+  - pluginDirectory
+  - forum
+  - discord
+  - subreddit
+  - mastodon
+  - bluesky
+  - x
+  - newsletter
+  - endoflifeId
+  - contentStore
+  - templating
+unreadable: []
+notes: |
+  The install section of the README names vlucas/bulletphp with the constraint ~1.7, so the Packagist figures are for that package. The latest Packagist version is v1.7.1, dated 2021-05-28; the GitHub API returns no release objects, and the last push to the repository is 2021-07-23. The README opens with a section titled "PROJECT MAINTENANCE RESUMES" that says Bullet becomes an active project again under a changing of the guard; no page states the project has ended, so no status fact is written and the status stays accepted. The homepage still states PHP 5.3+ as the requirement while the README states PHP 5.6+ and the registry requires >=5.6; runtimeMin follows the registry. The GitHub owner is a user account; the homepage footer names Vance Lucas as the copyright holder. The homepage describes the router: path is for static path segments, param for variable ones, and HTTP method handlers nest inside the path; it also says Bullet is built for REST APIs and web applications. The README's Rules section says apps are built around HTTP URIs and defined paths, and handles one path segment at a time. The README's Apache example rewrites every request that is not an existing file or directory to index.php, and says an application can sit under an existing web app to serve an API or simple dynamic pages.

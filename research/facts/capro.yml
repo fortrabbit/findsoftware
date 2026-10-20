@@ -1,0 +1,139 @@
+id: capro
+name: Capro
+status: accepted
+checkedAt: 2026-10-20
+description: PHP static site generator that builds pages from Blade views, with collections and Markdown support.
+facts:
+  - field: homepage
+    value: https://capro.xy2z.dev/
+    url: https://capro.xy2z.dev/
+    checkedAt: 2026-10-20
+    via: page
+    quote: Capro is a static-site generator made in PHP, using the Blade template engine.
+  - field: repository
+    value: https://github.com/xy2z/capro
+    url: https://github.com/xy2z/capro
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://capro.xy2z.dev/getting-started/
+    url: https://capro.xy2z.dev/getting-started/
+    checkedAt: 2026-10-20
+    via: page
+  - field: maintainer
+    value: Alexander Pedersen
+    url: https://github.com/xy2z/capro/blob/master/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: Copyright (c) Alexander Pedersen
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/xy2z
+    checkedAt: 2026-10-20
+    via: api
+  - field: firstRelease
+    value: 2022
+    url: https://repo.packagist.org/p2/xy2z/capro.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value:
+      - ssg
+    url: https://capro.xy2z.dev/
+    checkedAt: 2026-10-20
+    via: page
+    quote: Capro is a static-site generator made in PHP
+  - field: language
+    value: PHP
+    url: https://github.com/xy2z/capro
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: php
+    url: https://capro.xy2z.dev/getting-started/
+    checkedAt: 2026-10-20
+    via: page
+    quote: PHP 8.0+
+  - field: runtimeMin
+    value: "8.0"
+    url: https://capro.xy2z.dev/getting-started/
+    checkedAt: 2026-10-20
+    via: page
+    quote: PHP 8.0+
+  - field: installMethod
+    value:
+      - composer global require xy2z/capro:@alpha
+    url: https://capro.xy2z.dev/getting-started/
+    checkedAt: 2026-10-20
+    via: page
+    quote: composer global require xy2z/capro:@alpha
+  - field: templating
+    value:
+      - blade
+    url: https://capro.xy2z.dev/
+    checkedAt: 2026-10-20
+    via: page
+    quote: using the Blade template engine
+  - field: contentStore
+    value: flat-file
+    url: https://capro.xy2z.dev/getting-started/
+    checkedAt: 2026-10-20
+    via: page
+    quote: Any view you add in the views/pages directory, will automatically be built to a page.
+  - field: runsAs
+    value:
+      - static
+    url: https://capro.xy2z.dev/
+    checkedAt: 2026-10-20
+    via: page
+    quote: Capro is a static-site generator made in PHP
+  - checkedAt: 2026-10-20
+    via: page
+    field: runsAs
+    value:
+      - local
+    url: https://capro.xy2z.dev/getting-started/
+    quote: While developing, you can use the serve command to serve your site
+  - field: license
+    value: MIT
+    url: https://github.com/xy2z/capro
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2025-12-15
+    url: https://github.com/xy2z/capro/releases
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 10
+    url: https://github.com/xy2z/capro
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: xy2z/capro
+    url: https://packagist.org/packages/xy2z/capro.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value:
+      total: 141
+      monthly: 5
+    url: https://packagist.org/packages/xy2z/capro.json
+    checkedAt: 2026-10-20
+    via: api
+notFound:
+  - hqCountry
+  - wikidata
+  - pluginDirectory
+  - forum
+  - discord
+  - subreddit
+  - mastodon
+  - bluesky
+  - x
+  - newsletter
+  - endoflifeId
+  - currentMajor
+unreadable: []
+notes: |
+  The project is in alpha: the homepage notice says Capro "has not been thoroughly tested for production usage", the getting-started page states the alpha too, and the install command requires @alpha. The GitHub releases are all 1.0.0-alpha tags and the latest is 1.0.0-alpha.37 from 2025-12-15, so no stable major is recorded in currentMajor. The repository was last pushed on 2026-09-24 and is not archived. The homepage and the getting-started page say the site is built with PHP's Blade template engine, which the project presents as from Laravel; Capro does not state that it builds on Laravel, so no basedOn fact is written. The composer.json requires "php": "8.*", which is less specific than the 8.0+ the docs state; runtimeMin follows the docs. The homepage lists collections such as blog posts that need no configuration, Markdown support, and API and view templates that fill a template with data from an API and turn it into pages. The getting-started page says capro new builds the site into the public directory, capro build rebuilds it after changes, and capro serve rebuilds on each file change during development. The getting-started page also says that YAML front matter at the top of a view becomes variables for the view, its layout and the Capro class that filters collections. None of these is a field, so they stay in this note. Packagist's first version is dated 2022-12-10. The maintainer name comes from the LICENSE line, which gives no legal form.

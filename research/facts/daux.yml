@@ -1,0 +1,151 @@
+id: daux
+name: Daux.io
+status: accepted
+checkedAt: 2026-10-20
+description: Documentation generator that builds websites from a folder of Markdown files.
+facts:
+  - field: homepage
+    value: https://daux.io/
+    url: https://daux.io/
+    checkedAt: 2026-10-20
+    via: page
+    quote: The Easiest Way To Document Your Project
+  - field: repository
+    value: https://github.com/dauxio/daux.io
+    url: https://github.com/dauxio/daux.io
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://daux.io/Getting_Started.html
+    url: https://daux.io/Getting_Started.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: Getting Started
+  - field: maintainer
+    value: Justin Walsh
+    url: https://github.com/dauxio/daux.io/blob/master/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: Copyright (c) 2013 Justin Walsh
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/dauxio
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value:
+      - docs-generator
+    url: https://daux.io/
+    checkedAt: 2026-10-20
+    via: page
+    quote: Daux.io is a documentation generator
+  - field: language
+    value: PHP
+    url: https://github.com/dauxio/daux.io
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value:
+      - php
+    url: https://repo.packagist.org/p2/daux/daux.io.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtimeMin
+    value: "8.4"
+    url: https://repo.packagist.org/p2/daux/daux.io.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: contentStore
+    value: flat-file
+    url: https://daux.io/Getting_Started.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: Create a markdown file
+  - field: renderingModes
+    value:
+      - static
+    url: https://daux.io/Features/Static_Site_Generation.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: generate files, these can be one of the three supported formats
+  - field: runsAs
+    value:
+      - static
+    url: https://daux.io/Features/Static_Site_Generation.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: If you don’t want to serve the live version of your site, you can also generate files
+  - field: runsAs
+    value:
+      - per-request
+    url: https://daux.io/Features/Live_mode.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: Copy the files from the repo to a web server that can run PHP 8.4.0 or newer.
+  - field: installMethod
+    value:
+      - composer global require
+      - docker
+    url: https://daux.io/Getting_Started.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: composer global require daux/daux.io
+  - field: i18n
+    value: multiple languages
+    url: https://daux.io/
+    checkedAt: 2026-10-20
+    via: page
+    quote: Multiple Languages Support
+  - field: license
+    value: MIT
+    url: https://github.com/dauxio/daux.io
+    checkedAt: 2026-10-20
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://github.com/dauxio/daux.io/releases/tag/0.26.0
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-10
+    url: https://api.github.com/repos/dauxio/daux.io/releases/latest
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: daux/daux.io
+    url: https://packagist.org/packages/daux/daux.io
+    checkedAt: 2026-10-20
+    via: api
+  - checkedAt: 2026-10-20
+    via: api
+    field: packagistDownloads
+    value:
+      total: 211056
+      monthly: 3253
+    url: https://packagist.org/packages/daux/daux.io.json
+  - field: githubStargazers
+    value: 830
+    url: https://api.github.com/repos/dauxio/daux.io
+    checkedAt: 2026-10-20
+    via: api
+notFound:
+  - firstRelease
+  - hqCountry
+  - parent
+  - contributors
+  - adminUi
+  - endoflifeId
+  - pluginDirectory
+  - forum
+  - discord
+  - subreddit
+  - mastodon
+  - bluesky
+  - x
+  - newsletter
+  - pricingPage
+  - usageShare
+  - reportedInstalls
+unreadable: []
+notes: |
+  The maintainer is taken from the LICENSE copyright line, which names Justin Walsh. The project's homepage meta author and the composer.json name Stéphane Goetz as author; the homepage name is only in a meta attribute, so it is not quoted, and no fact records him as maintainer. The repository was created 2017-09-13; that is not a first release year. The composer.json lists "dauxio.github.io" as homepage, but the project's site and the GitHub repository description name https://daux.io/, so that URL is the homepage. The Docker image daux/daux.io is named on the homepage as an install option; no pull count was read. The Packagist p2 metadata and the package page agree on the package name daux/daux.io and the latest version 0.26.0. The Live mode page says the mode "can be used for production, but it is not recommended", and scans the whole directory on each request; this is recorded as the page states it and belongs in the prose under Worth knowing.

@@ -1,0 +1,126 @@
+id: bookdown
+name: Bookdown
+status: accepted
+checkedAt: 2026-10-20
+description: Static documentation generator that turns Markdown and JSON configuration files into DocBook-like HTML pages.
+facts:
+  - field: repository
+    value: https://github.com/bookdown/Bookdown.Bookdown
+    url: https://github.com/bookdown/Bookdown.Bookdown
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://bookdown.github.io/
+    url: https://bookdown.github.io/intro/what-is-bookdown.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "HTML output using CommonMark (a variation of Markdown) and JSON files instead of XML"
+  - field: maintainer
+    value: Bookdown.Bookdown Contributors
+    url: https://github.com/bookdown/Bookdown.Bookdown/blob/1.x/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Bookdown.Bookdown Contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/bookdown
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [docs-generator, ssg]
+    url: https://bookdown.github.io/intro/what-is-bookdown.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Bookdown is especially well-suited for publishing project documentation to GitHub Pages."
+  - field: language
+    value: PHP
+    url: https://github.com/bookdown/Bookdown.Bookdown
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: php
+    url: https://bookdown.github.io/intro/getting-started.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "It runs on PHP 5.6 and later"
+  - field: runtimeMin
+    value: "5.6"
+    url: https://bookdown.github.io/intro/getting-started.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "It runs on PHP 5.6 and later"
+  - field: runsAs
+    value: [local]
+    url: https://bookdown.github.io/basic/generating-html.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "./vendor/bin/bookdown book/bookdown.json"
+  - field: renderingModes
+    value: [static]
+    url: https://bookdown.github.io/basic/publishing.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "To publish the generated content, use git add and git commit on the various Markdown, JSON, and HTML files"
+  - field: installMethod
+    value: [composer create-project]
+    url: https://bookdown.github.io/intro/getting-started.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer create-project bookdown/project _bookdown/"
+  - field: contentStore
+    value: flat-file
+    url: https://bookdown.github.io/intro/what-is-bookdown.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "using CommonMark (a variation of Markdown) and JSON files instead of XML"
+  - field: license
+    value: MIT
+    url: https://github.com/bookdown/Bookdown.Bookdown
+    checkedAt: 2026-10-20
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/bookdown/Bookdown.Bookdown/blob/1.x/LICENSE.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 1
+    url: https://repo.packagist.org/p2/bookdown/bookdown.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2019-04-23
+    url: https://repo.packagist.org/p2/bookdown/bookdown.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/bookdown/Bookdown.Bookdown
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 82
+    url: https://github.com/bookdown/Bookdown.Bookdown
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: bookdown/bookdown
+    url: https://packagist.org/packages/bookdown/bookdown
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: {total: 66604, monthly: 705}
+    url: https://packagist.org/packages/bookdown/bookdown.json
+    checkedAt: 2026-10-20
+    via: api
+notFound: [homepage, firstRelease, hqCountry, parent, wikidata, databases, adminUi, templating, headlessApi, i18n, userRoles, pricingPage, paidEdition, endoflifeId, pluginDirectory, forum, discord, subreddit, bluesky, mastodon, x, newsletter, usageShare, reportedInstalls, contributors, importsFrom, sso, basedOn]
+unreadable: [http://bookdown.io/]
+notes: >
+  The project has no working homepage: bookdown.io, which the README and the repository description name, has an expired certificate and serves an unrelated site, so no homepage is recorded.
+  The documentation is the GitHub Pages site bookdown.github.io, published from the organization's bookdown.github.io repository; its getting-started page documents installation with composer create-project on the bookdown/project skeleton, not on the library package.
+  The repository README itself documents no installation, only running the tests after composer install.
+  The repository is not archived, Packagist does not flag the package abandoned, and no page states an end, so the status stays accepted; the last release is from 2019 and the last push from 2022, which decide nothing.
+  The default branch is 1.x; a 2.x branch exists whose composer.json requires PHP 7.4 or later, but Packagist lists no 2.x release, so currentMajor is 1 and runtimeMin follows the documentation page.
+  The LICENSE names Paul M. Jones as the copyright holder; maintainer follows the composer.json author line.
+  The documentation does not name a server for the generated HTML beyond GitHub Pages and PHP's built-in server for review.

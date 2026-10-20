@@ -1,0 +1,129 @@
+id: fastd
+name: FastD
+status: accepted
+checkedAt: 2026-10-20
+description: PHP framework for API services, built on PSR standards, with an optional Swoole server mode.
+facts:
+  - field: homepage
+    value: https://fastdlabs.com
+    url: https://github.com/fastdlabs/fastD/blob/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"homepage": "https://fastdlabs.com/"'
+  - field: repository
+    value: https://github.com/fastdlabs/fastD
+    url: https://github.com/fastdlabs/fastD
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://docs.fastdlabs.com/
+    url: https://github.com/fastdlabs/fastD/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "English Document"
+  - field: maintainer
+    value: janhuang
+    url: https://github.com/fastdlabs/fastD/blob/master/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright (c) 2015 janhuang"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/fastdlabs
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [framework, backend]
+    url: https://github.com/fastdlabs/fastD/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "A high performance PHP API framework based on PSR standards and Swoole extension."
+  - field: language
+    value: PHP
+    url: https://github.com/fastdlabs/fastD
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: php
+    url: https://github.com/fastdlabs/fastD/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP >= 8.2"
+  - field: runtimeMin
+    value: "8.2"
+    url: https://github.com/fastdlabs/fastD/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP >= 8.2"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/fastdlabs/fastD/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "常驻内存，极致性能"
+  - field: runsAs
+    value: [per-request]
+    url: https://github.com/fastdlabs/fastD/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "兼容传统 PHP-FPM 部署"
+  - field: renderingModes
+    value: [api-only]
+    url: https://github.com/fastdlabs/fastD/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "适用于对性能有严格要求的 API 服务场景"
+  - field: installMethod
+    value: [composer create-project]
+    url: https://github.com/fastdlabs/fastD/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer create-project fastd/fastd my-app"
+  - field: license
+    value: MIT
+    url: https://github.com/fastdlabs/fastD
+    checkedAt: 2026-10-20
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/fastdlabs/fastD/blob/master/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 8
+    url: https://repo.packagist.org/p2/fastd/fastd.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-28
+    url: https://repo.packagist.org/p2/fastd/fastd.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/fastdlabs/fastD
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 420
+    url: https://github.com/fastdlabs/fastD
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: fastd/fastd
+    url: https://packagist.org/packages/fastd/fastd
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: {total: 15924, monthly: 110}
+    url: https://packagist.org/packages/fastd/fastd.json
+    checkedAt: 2026-10-20
+    via: api
+notFound: [firstRelease, hqCountry, parent, wikidata, databases, contentStore, adminUi, templating, headlessApi, i18n, userRoles, pricingPage, paidEdition, endoflifeId, pluginDirectory, forum, discord, subreddit, bluesky, mastodon, x, newsletter, usageShare, reportedInstalls, contributors, importsFrom, sso, basedOn]
+unreadable: [https://fastdlabs.com/, https://docs.fastdlabs.com/]
+notes: >
+  fastdlabs.com timed out on every attempt (connection timeout after 45 seconds, over HTTPS and HTTP), and docs.fastdlabs.com answers with an expired certificate, so neither was read; homepage and docs are the URLs the repository's composer.json and README state, and the README is the cited source.
+  The README is in Chinese. It names Swoole mode as resident in memory and FastCGI mode as compatible with PHP-FPM deployment, so both runsAs values are recorded; Swoole is described as optional. The README lists four run modes (Swoole Server, FastCGI, Console, Process) and names PSR-11 for the container, PSR-14 for events, PSR-7 for HTTP messages and PSR-15 for middleware. It links documentation in Chinese and in English.
+  currentMajor and latestReleaseDate come from the Packagist tag v8.0.0; the GitHub releases/latest endpoint returns the stale v3.2.10.
+  The repository is not archived and Packagist does not flag the package abandoned; the maintainer is the name in the LICENSE and composer.json authors.

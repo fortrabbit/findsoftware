@@ -1,0 +1,107 @@
+id: last
+name: Last
+status: accepted
+checkedAt: 2026-10-20
+description: Static site generator bundle for Symfony applications that dumps the application's routes to static HTML files.
+facts:
+  - field: name
+    value: Last
+    url: https://github.com/franzwilding/last/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Last is a minimalistic static site generator for Symfony 4 applications"
+  - field: repository
+    value: https://github.com/franzwilding/last
+    url: https://api.github.com/repos/franzwilding/last
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://github.com/franzwilding/last/blob/master/README.md
+    url: https://github.com/franzwilding/last/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+  - field: maintainer
+    value: Franz Wilding
+    url: https://raw.githubusercontent.com/franzwilding/last/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"name": "Franz Wilding"'
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/franzwilding
+    checkedAt: 2026-10-20
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://api.github.com/repos/franzwilding/last
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://github.com/franzwilding/last/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "minimalistic static site generator for Symfony 4 applications"
+  - field: basedOn
+    value: [symfony]
+    url: https://github.com/franzwilding/last/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "static site generator for Symfony 4 applications"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/franzwilding/last
+    checkedAt: 2026-10-20
+    via: api
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/franzwilding/last/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "your Symfony app gets exported as static html files"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/franzwilding/last/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "your Symfony app gets exported as static html files"
+  - field: installMethod
+    value: [composer require]
+    url: https://github.com/franzwilding/last/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer require fw/last-bundle"
+  - field: currentMajor
+    value: 1
+    url: https://repo.packagist.org/p2/fw/last-bundle.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2018-08-31
+    url: https://api.github.com/repos/franzwilding/last/releases/latest
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 11
+    url: https://api.github.com/repos/franzwilding/last
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/franzwilding/last/contributors
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: fw/last-bundle
+    url: https://repo.packagist.org/p2/fw/last-bundle.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: {total: 151, monthly: 2}
+    url: https://packagist.org/packages/fw/last-bundle.json
+    checkedAt: 2026-10-20
+    via: api
+notFound: [homepage, license, runtime, firstRelease, runtimeMin, hqCountry, parent, wikidata, databases, templating, pricingPage, docker, endoflifeId, pluginDirectory, discord, subreddit, bluesky, x, newsletter, usageShare, reportedInstalls, contentStore, adminUi, userRoles, sso]
+unreadable: []
+notes: >
+  Repo-only: no project site is named, and the repository's homepage field is empty. No license: the GitHub API reports none, there is no LICENSE file on the default branch, and composer.json has no license key, so license stays out. The README says the bundle is not yet production ready: its checklist lists testing with more real-life projects, a Symfony Flex recipe and copying assets to the dist folder as still missing. Criterion 4 is not triggered: the repository is not archived and the README declares no end, but the last push and release are from August 2018. Criterion 5 is weak: 11 GitHub stars, one contributor, 151 Packagist downloads in total and 2 in the last month; the threshold is open, so the reviewer decides whether these figures are a public adoption figure enough. The README's install is for Symfony 4, and composer.json requires symfony ^4.1 packages, so the bundle targets that Symfony line; no PHP minimum is stated. The README says the dump command covers static routes (routes without mandatory placeholders) through a built-in request provider; dynamic routes need a custom request provider. The maintainer is the composer.json author; runtime and a local runsAs are not recorded because no page states them.

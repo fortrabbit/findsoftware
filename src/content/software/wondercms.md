@@ -9,7 +9,8 @@ category:
   - cms
 description: Flat-file CMS that stores its data in a JSON text file and needs only PHP and a web server.
 status: active
-maintainer: Robert Isoski
+maintainer: Robert Isoski and WonderCMS contributors
+maintainerType: community
 language: php
 runtime:
   - php
@@ -19,62 +20,58 @@ runtimeMin: php 7.4
 contentStore:
   - flat-file
 adminUi: true
-runsAs:
-  - per-request
 installMethod: zip download, git clone, docker image, cPanel installer
 licenseModel: open-source
 license: MIT
 currentMajor: "3"
 latestReleaseDate: 2025-12-31
 githubStargazers: 741
-contributors: 50
 social:
-  x: https://twitter.com/WonderCMS
+  x: https://twitter.com/wondercms
+  discord: https://discord.gg/2MVubVBCry
   forum: https://www.wondercms.com/community
+  subreddit: https://reddit.com/r/WonderCMS
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
   - field: urls
-    url: https://www.wondercms.com/
+    url: https://github.com/WonderCMS/wondercms/blob/main/.github/README.md
     checkedAt: 2026-10-20
   - field: urls
     url: https://github.com/WonderCMS/wondercms
     checkedAt: 2026-10-20
   - field: urls
-    url: https://www.wondercms.com/docs
+    url: https://github.com/WonderCMS/wondercms/blob/main/.github/README.md
     checkedAt: 2026-10-20
   - field: maintainer
-    url: https://www.wondercms.com/license
+    url: https://github.com/WonderCMS/wondercms/blob/main/license
     checkedAt: 2026-10-20
   - field: category
-    url: https://www.wondercms.com/about
+    url: https://github.com/WonderCMS/wondercms/blob/main/.github/README.md
     checkedAt: 2026-10-20
   - field: language
     url: https://github.com/WonderCMS/wondercms
     checkedAt: 2026-10-20
   - field: runtime
-    url: https://www.wondercms.com/requirements
+    url: https://github.com/WonderCMS/wondercms/blob/main/.github/README.md
     checkedAt: 2026-10-20
   - field: runtimeMin
-    url: https://www.wondercms.com/requirements
-    checkedAt: 2026-10-20
-  - field: runsAs
-    url: https://www.wondercms.com/requirements
+    url: https://github.com/WonderCMS/wondercms/blob/main/.github/README.md
     checkedAt: 2026-10-20
   - field: installMethod
-    url: https://www.wondercms.com/docs
+    url: https://github.com/WonderCMS/wondercms/blob/main/.github/README.md
     checkedAt: 2026-10-20
   - field: contentStore
-    url: https://www.wondercms.com/about
+    url: https://github.com/WonderCMS/wondercms/blob/main/.github/README.md
     checkedAt: 2026-10-20
   - field: adminUi
-    url: https://www.wondercms.com/docs
+    url: https://github.com/WonderCMS/wondercms/blob/main/.github/README.md
     checkedAt: 2026-10-20
   - field: license
     url: https://github.com/WonderCMS/wondercms
     checkedAt: 2026-10-20
   - field: license
-    url: https://www.wondercms.com/license
+    url: https://github.com/WonderCMS/wondercms/blob/main/license
     checkedAt: 2026-10-20
   - field: currentMajor
     url: https://github.com/WonderCMS/wondercms/releases/latest
@@ -85,9 +82,6 @@ sources:
   - field: githubStargazers
     url: https://github.com/WonderCMS/wondercms
     checkedAt: 2026-10-20
-  - field: contributors
-    url: https://www.wondercms.com/
-    checkedAt: 2026-10-20
 figure:
   emoji: 📝
   color: "#c5e1a5"
@@ -97,6 +91,6 @@ ai: authored
 npmWeeklyDownloads: null
 ---
 
-WonderCMS is a content management system that keeps its data in a JSON text file instead of a database. It runs as PHP behind Apache, NGINX, IIS or Caddy, and its [documentation](https://www.wondercms.com/docs) lists several ways to install it: a zip download, git clone, a Docker image or a cPanel installer.
+WonderCMS is a content management system that keeps its data in a JSON text file instead of a database. It runs as PHP behind Apache, NGINX, IIS or Caddy, and the [README](https://github.com/WonderCMS/wondercms/blob/main/.github/README.md) lists several ways to install it: a zip download, git clone, a Docker image or a cPanel installer.
 
-Because the data sits in files, a site can be moved, backed up or restored by copying them. Editing happens in a web admin panel.
+Because the data sits in files, a site can be moved to a new host by copying them. Pages are edited in place after logging in as admin.

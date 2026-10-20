@@ -1,0 +1,138 @@
+id: cecil
+name: Cecil
+status: accepted
+checkedAt: 2026-10-20
+description: PHP command-line static site generator that builds websites from Markdown pages and Twig templates.
+facts:
+  - field: homepage
+    value: https://cecil.app
+    url: https://cecil.app/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Cecil is a command-line PHP application that merges Markdown pages, media and Twig templates to generate a static website."
+  - field: repository
+    value: https://github.com/Cecilapp/Cecil
+    url: https://github.com/Cecilapp/Cecil
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://cecil.app/documentation/
+    url: https://cecil.app/documentation/
+    checkedAt: 2026-10-20
+    via: page
+  - field: maintainer
+    value: Arnaud Ligny
+    url: https://cecil.app/about/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Cecil is maintained by Arnaud Ligny"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Cecilapp
+    checkedAt: 2026-10-20
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://cecil.app/about/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "was released in September 2013"
+  - field: categories
+    value: [ssg]
+    url: https://cecil.app/about/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Cecil is a modern static site generator (SSG)"
+  - field: language
+    value: PHP
+    url: https://github.com/Cecilapp/Cecil
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: php
+    url: https://cecil.app/documentation/getting-started/installation/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP 8.3+"
+  - field: runtimeMin
+    value: "8.3"
+    url: https://cecil.app/documentation/getting-started/installation/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP 8.3+"
+  - field: installMethod
+    value: [PHAR download, standalone binary, composer global require cecil/cecil]
+    url: https://cecil.app/documentation/getting-started/installation/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer global require cecil/cecil"
+  - field: templating
+    value: [twig]
+    url: https://cecil.app/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Powered by Twig"
+  - field: contentStore
+    value: flat-file
+    url: https://cecil.app/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Your content is stored in flat Markdown files with front matter"
+  - field: i18n
+    value: yes
+    url: https://cecil.app/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Multilingual capabilities with content localization and template translation."
+  - field: renderingModes
+    value: [static]
+    url: https://cecil.app/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "to generate a static website"
+  - field: runsAs
+    value: [static, local]
+    url: https://cecil.app/documentation/deploy/static-hosting/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "The built site can be uploaded as is to any static hosting service."
+  - field: runsAs
+    value: [local]
+    url: https://cecil.app/documentation/deploy/continuous-deployment/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Continuous integration services can build your site with Cecil"
+  - field: license
+    value: EUPL-1.2
+    url: https://github.com/Cecilapp/Cecil
+    checkedAt: 2026-10-20
+    via: api
+  - field: currentMajor
+    value: 9
+    url: https://github.com/Cecilapp/Cecil/releases
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-20
+    url: https://github.com/Cecilapp/Cecil/releases
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 298
+    url: https://github.com/Cecilapp/Cecil
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: cecil/cecil
+    url: https://packagist.org/packages/cecil/cecil.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: {total: 921, monthly: 221}
+    url: https://packagist.org/packages/cecil/cecil.json
+    checkedAt: 2026-10-20
+    via: api
+notFound: [hqCountry, wikidata, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, databases, adminUi, headlessApi, importsFrom]
+unreadable: []
+notes: >
+  The about page says the first functional version was named PHPoole and was released in September 2013; that is a rename of the same project, so no forkOf or successorOf fact is written. The Packagist and GitHub release dates are both current: the latest tag 9.20.1 was published on 2026-10-20. The homepage states the content store and the lack of a database, and the databases field is left unknown because the page names no database engine. The about page names Arnaud Ligny as the maintainer; the footer copyright gives the same name without a legal form, and the GitHub owner is the Cecilapp organization. The installation page names the PHAR, a standalone binary without PHP, and Composer; the standalone binary embeds PHP but not the PHP built-in web server that serve uses, and the install page says to run the build command and serve the output with another web server. The homepage says the generator produces pagination, taxonomies, sitemap, RSS feeds, robots.txt and redirects automatically, converts responsive images to WebP and AVIF, and states "No database, no server-side code". The installation page says the standalone binary uses GD only, with no Imagick or libvips, has no self-update command, and is unsigned, so macOS users remove the quarantine attribute before the first run. The installation page says the standalone binary is updated by downloading it again. The continuous deployment page names GitHub Pages and GitLab CI as examples. The Packagist figures are for cecil/cecil, the package the composer install command names.

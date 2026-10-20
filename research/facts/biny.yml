@@ -1,0 +1,112 @@
+id: biny
+name: Biny
+status: accepted
+checkedAt: 2026-10-20
+description: PHP MVC framework for building web applications, published by Tencent on GitHub.
+facts:
+  - field: name
+    value: Biny
+    url: https://api.github.com/repos/Tencent/Biny
+    checkedAt: 2026-10-20
+    via: api
+  - field: homepage
+    value: http://www.billge.cc
+    url: http://www.billge.cc
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Biny是一款高性能的轻量级PHP框架"
+  - field: repository
+    value: https://github.com/Tencent/Biny
+    url: https://api.github.com/repos/Tencent/Biny
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: http://www.billge.cc
+    url: https://github.com/Tencent/Biny/blob/master/ReadMe.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Wiki URL："
+  - field: maintainer
+    value: Tencent
+    url: https://github.com/Tencent/Biny/blob/master/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright (c) 2017, Tencent"
+  - field: maintainerType
+    value: company
+    url: https://github.com/Tencent/Biny/blob/master/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/Tencent/Biny
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/Tencent/Biny/blob/master/ReadMe.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Biny is a high-performance lightweight PHP framework."
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/Tencent/Biny
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://api.github.com/repos/Tencent/Biny
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtimeMin
+    value: "8.1"
+    url: https://github.com/Tencent/Biny/blob/v2.11.0/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"php": ">=8.1"'
+  - field: databases
+    value: [mysql]
+    url: http://www.billge.cc
+    checkedAt: 2026-10-20
+    via: page
+    quote: "如果需要用到数据库，则需要安装并启用 mysqli扩展"
+  - field: templating
+    value: [php templates]
+    url: http://www.billge.cc
+    checkedAt: 2026-10-20
+    via: page
+    quote: "返回 project/members.tpl.php"
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/Tencent/Biny
+    checkedAt: 2026-10-20
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/Tencent/Biny/releases/latest
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-24
+    url: https://api.github.com/repos/Tencent/Biny/releases/latest
+    checkedAt: 2026-10-20
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://api.github.com/repos/Tencent/Biny/releases
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 1681
+    url: https://api.github.com/repos/Tencent/Biny
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 14
+    url: https://api.github.com/repos/Tencent/Biny/contributors
+    checkedAt: 2026-10-20
+    via: api
+notFound: [installMethod, runsAs, renderingModes, hqCountry, contentStore, headlessApi, i18n, sso, importsFrom, parent, forkOf, successorOf, alternativeTo, wikidata, usageShare, reportedInstalls, packagistName, npmName, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pricingPage, endoflifeId, adminUi, userRoles]
+unreadable: []
+notes: >
+  Composer description says "Modernized fork." and the pages read do not name the upstream project, so forkOf is absent. The package tencent/biny is not on Packagist (404), so no registry figures. The wiki at billge.cc still gives PHP 5.5 and an nginx root at /web/; composer.json at v2.11.0 requires PHP >=8.1 and the v2.11.0 changelog states PHP 8.x support, so runtimeMin follows the release. The wiki answers only over plain http, so the import leaves it out of the record's links, which accept https only. The wiki's nginx example does not state a process model, so runsAs stays unknown. The wiki is the project's documentation and is recorded as both homepage and docs because the repository names it as its wiki. The v2.11.0 changelog says the update was made with AI assistance; not recorded as a field. The candidate row listed the repository as homepage; the repository is not recorded as homepage. HQ country is absent: the pages name Tencent and give no company location.
