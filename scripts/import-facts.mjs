@@ -565,7 +565,8 @@ for (const file of facts) {
     const servesLive = modes.some((mode) => /server|hybrid|isr|ssr/.test(mode));
     const buildsStatic = modes.some((mode) => mode.startsWith('static'));
     const hosting = buildsStatic && !servesLive ? [] : runtime.map((value) => hostingOf[value] ?? value);
-    if (buildsStatic) hosting.push('static');
+    // Static hosting only when a source says the output is served as files; a mode that can render static is not enough.
+    if (all('runsAs').some((value) => lower(value) === 'static')) hosting.push('static');
     const allowed = vocab('hosting');
     const held = [...new Set(hosting)].filter((value) => allowed.has(value));
     if (held.length) record.hosting = held;

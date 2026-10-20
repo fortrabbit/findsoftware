@@ -21,6 +21,7 @@ hosting:
   - node
   - deno
   - bun
+  - static
 runtimeMin: node 16
 runsAs:
   - static

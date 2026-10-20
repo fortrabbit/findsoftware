@@ -16,7 +16,6 @@ runtime:
   - php
 hosting:
   - php
-  - static
 runtimeMin: php 5.3
 runsAs:
   - per-request

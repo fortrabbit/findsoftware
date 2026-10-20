@@ -18,7 +18,6 @@ runtime:
   - node
 hosting:
   - node
-  - static
 basedOn:
   - astro
 contentStore:

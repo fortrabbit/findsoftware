@@ -12,6 +12,8 @@ status: active
 maintainer: Orest Bida
 maintainerType: individual
 language: javascript
+hosting:
+  - static
 runsAs:
   - static
   - browser

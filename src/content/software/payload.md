@@ -23,7 +23,6 @@ runtime:
   - node
 hosting:
   - node
-  - static
 runtimeMin: node 20
 basedOn:
   - nextjs

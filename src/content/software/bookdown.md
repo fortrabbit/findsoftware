@@ -13,8 +13,6 @@ maintainerType: community
 language: php
 runtime:
   - php
-hosting:
-  - static
 runtimeMin: php 5.6
 contentStore:
   - flat-file

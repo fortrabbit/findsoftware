@@ -17,6 +17,7 @@ runtime:
   - php
 hosting:
   - php
+  - static
 runtimeMin: php 8.0
 contentStore:
   - flat-file

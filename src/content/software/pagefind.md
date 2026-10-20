@@ -14,6 +14,7 @@ runtime:
   - binary
 hosting:
   - binary
+  - static
 runsAs:
   - static
   - browser

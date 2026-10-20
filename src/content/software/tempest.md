@@ -17,7 +17,6 @@ runtime:
   - php
 hosting:
   - php
-  - static
 runtimeMin: php 8.5
 contentStore:
   - database

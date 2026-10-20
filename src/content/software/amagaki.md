@@ -16,6 +16,7 @@ runtime:
   - node
 hosting:
   - node
+  - static
 runtimeMin: node 14
 templating: nunjucks
 i18n: inbuilt localization
