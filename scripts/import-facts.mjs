@@ -379,7 +379,7 @@ function mapped(values, map, allowed, pick = (value) => value) {
  * derives them from cited facts. The research agent's value stands only where no rule decides.
  */
 const openLicense = /\b(MIT|Apache|BSD|A?GPL|LGPL|MPL|ISC|OSL|AFL|EUPL|Zlib|Unlicense|Artistic)/i;
-const restrictedLicense = /\b(BUSL|BSL|SSPL|Elastic|FSL|RSAL|Commons Clause|Sustainable|proprietary|EULA|No Charge|custom)/i;
+const restrictedLicense = /\b(BUSL|BSL|SSPL|Elastic|FSL|RSAL|Commons Clause|Sustainable|proprietary|EULA|No Charge|custom|CC-BY-ND|CC-BY-NC|NoDerivatives|NonCommercial)/i;
 const enterprisePart = /enterprise|\bee\/|x-pack|commercial licen[cs]e/i;
 const foundationName = /foundation|association|conservancy|LF Projects|\be\.\s?V\.|non-?profit|OpenJS/i;
 const legalForm = /\b(Inc|LLC|Ltd|Limited|GmbH|AG|SAS|S\.A|SA|srl|s\.r\.o|Pty|Pte|Pvt|B\.V|BV|KG|Corp|Corporation|Co|plc|Oy|OÜ|AB|A\/S|SARL|sp\. z o\.o)(?![\p{L}])/u;
@@ -528,7 +528,8 @@ for (const file of facts) {
   const databases = mapped(all('databases'), databaseMap, vocab('databases'), (value) => value.split(/[\s(]/)[0]);
   if (databases.length) record.databases = databases;
   const adminUi = first('adminUi');
-  if (adminUi !== undefined) record.adminUi = /^(yes|true)/i.test(String(adminUi)) || adminUi === true;
+  // A description of the admin ("built-in admin panel") says yes as plainly as "yes" does; only a no says no.
+  if (adminUi !== undefined) record.adminUi = adminUi !== false && !/^(no|false|none)\b/i.test(String(adminUi).trim());
   const headlessApi = mapped(all('headlessApi'), apiMap, vocab('headlessApi'), (value) => value.split(/[\s(,]/)[0]);
   if (headlessApi.length) record.headlessApi = headlessApi;
   if (byField.has('templating')) record.templating = text(all('templating'));

@@ -1,0 +1,109 @@
+id: dokuwiki
+name: DokuWiki
+status: accepted
+checkedAt: 2026-10-20
+description: Open-source PHP wiki engine that keeps its pages in files and needs no database.
+facts:
+  - field: homepage
+    value: https://www.dokuwiki.org
+    url: https://github.com/dokuwiki/dokuwiki/blob/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"homepage": "https://www.dokuwiki.org"'
+  - field: repository
+    value: https://github.com/dokuwiki/dokuwiki
+    url: https://api.github.com/repos/dokuwiki/dokuwiki
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://www.dokuwiki.org
+    url: https://github.com/dokuwiki/dokuwiki/blob/master/README
+    checkedAt: 2026-10-20
+    via: page
+    quote: "All documentation for DokuWiki is available online"
+  - field: maintainer
+    value: Andreas Gohr
+    url: https://github.com/dokuwiki/dokuwiki/blob/master/README
+    checkedAt: 2026-10-20
+    via: page
+    quote: "(c) Andreas Gohr"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/dokuwiki
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [wiki]
+    url: https://github.com/dokuwiki/dokuwiki/blob/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: "DokuWiki is a simple to use and highly versatile Open Source wiki software"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/dokuwiki/dokuwiki
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/dokuwiki/dokuwiki/blob/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"php": ">=8.2"'
+  - field: runtimeMin
+    value: "8.2"
+    url: https://github.com/dokuwiki/dokuwiki/blob/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"php": ">=8.2"'
+  - field: contentStore
+    value: flat-file
+    url: https://api.github.com/repos/dokuwiki/dokuwiki/contents/data
+    checkedAt: 2026-10-20
+    via: api
+  - field: installMethod
+    value: copy the files to the web server, then run install.php
+    url: https://github.com/dokuwiki/dokuwiki/blob/master/install.php
+    checkedAt: 2026-10-20
+    via: page
+  - field: runsAs
+    value: [per-request]
+    url: https://github.com/dokuwiki/dokuwiki/blob/master/install.php
+    checkedAt: 2026-10-20
+    via: page
+    quote: "enable PHP before you can install and run DokuWiki."
+  - field: license
+    value: GPL-2.0
+    url: https://api.github.com/repos/dokuwiki/dokuwiki
+    checkedAt: 2026-10-20
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/dokuwiki/dokuwiki/blob/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Open Source wiki software"
+  - field: latestReleaseDate
+    value: 2026-09-02
+    url: https://api.github.com/repos/dokuwiki/dokuwiki/releases/latest
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 4730
+    url: https://api.github.com/repos/dokuwiki/dokuwiki
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 1265
+    url: https://api.github.com/repos/dokuwiki/dokuwiki/contributors?anon=true&per_page=100
+    checkedAt: 2026-10-20
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://api.github.com/repos/dokuwiki/dokuwiki/contents
+    checkedAt: 2026-10-20
+    via: api
+notFound: [firstRelease, currentMajor, hqCountry, parent, forkOf, successorOf, basedOn, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, paidEditions, freeTier, usageShare, pluginCount, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, packagistName, npmName, endoflifeId]
+unreadable:
+  - https://www.dokuwiki.org (answers 402 with a bot check to curl with the FindSoftware research user agent, for every path tried: /, /start, /install, /requirements)
+notes: >
+  The project's own website is the only documentation source the README names, and it returned a bot check, so every fact comes from the repository (README, composer.json, install.php, COPYING, the GitHub API). The website's install, plugin and forum pages were not read; a reviewer should check them by hand before the record is published. DokuWiki names its releases by date (release-2026-07-14c, "Mort" [57.3]) and has no major version, so currentMajor is not recorded. The copyright line gives 2004 as the start of the project, which is not a first release, so firstRelease is not recorded. The composer.json license is "GPL v2" and the GitHub license is GPL-2.0; both name the same license, so one fact is recorded. contentStore comes from the repository's data/ directory (data/pages and data/media), which the API listing shows. Contributor count is the sum of the paginated GitHub API lists.

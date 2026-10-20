@@ -1,0 +1,139 @@
+id: couchcms
+name: CouchCMS
+status: accepted
+checkedAt: 2026-10-20
+description: Open-source CMS that lets web designers make existing HTML and CSS templates editable without writing PHP.
+facts:
+  - field: name
+    value: CouchCMS
+    url: https://www.couchcms.com/
+    checkedAt: 2026-10-20
+    via: page
+  - field: homepage
+    value: https://www.couchcms.com
+    url: https://www.couchcms.com/
+    checkedAt: 2026-10-20
+    via: page
+  - field: repository
+    value: https://github.com/CouchCMS/CouchCMS
+    url: https://github.com/CouchCMS/CouchCMS
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://docs.couchcms.com/
+    url: https://docs.couchcms.com/
+    checkedAt: 2026-10-20
+    via: page
+  - field: maintainer
+    value: Webzyme Softwares Pvt. Ltd.
+    url: https://www.couchcms.com/products/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "2010-2022 Webzyme Softwares Pvt. Ltd. All Rights Reserved"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/CouchCMS
+    checkedAt: 2026-10-20
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/CouchCMS/CouchCMS
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [cms]
+    url: https://www.couchcms.com/
+    checkedAt: 2026-10-20
+    via: page
+  - field: language
+    value: PHP
+    url: https://docs.couchcms.com/requirements.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP 5.0.0 or greater"
+  - field: runtime
+    value: php
+    url: https://docs.couchcms.com/requirements.html
+    checkedAt: 2026-10-20
+    via: page
+  - field: databases
+    value: [mysql]
+    url: https://docs.couchcms.com/requirements.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "MySQL 4.1.2 or greater"
+  - field: adminUi
+    value: yes
+    url: https://www.couchcms.com/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Couch gives you an absolutely blank admin-panel to begin with."
+  - field: templating
+    value: [couch tags]
+    url: https://www.couchcms.com/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "add some familiar XHTML like Couch tags into it"
+  - field: installMethod
+    value: ftp upload
+    url: https://docs.couchcms.com/requirements.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "familiar with the use FTP to upload files to your server"
+  - field: runsAs
+    value: [per-request]
+    url: https://docs.couchcms.com/requirements.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Apache (or compatible Web Servers like LiteSpeed etc.)"
+  - field: license
+    value: CPAL-1.0
+    url: https://github.com/CouchCMS/CouchCMS/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "CouchCMS is licensed under Common Public Attribution License 1.0"
+  - field: license
+    value: commercial
+    url: https://www.couchcms.com/products/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "CouchCMS may be used under a commercial license"
+  - field: pricingPage
+    value: https://www.couchcms.com/products/
+    url: https://www.couchcms.com/products/
+    checkedAt: 2026-10-20
+    via: page
+  - field: currentMajor
+    value: "2"
+    url: https://github.com/CouchCMS/CouchCMS/releases
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2023-10-15
+    url: https://github.com/CouchCMS/CouchCMS/releases
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 379
+    url: https://github.com/CouchCMS/CouchCMS
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 13
+    url: https://github.com/CouchCMS/CouchCMS
+    checkedAt: 2026-10-20
+    via: api
+  - field: forum
+    value: https://www.couchcms.com/forum/
+    url: https://www.couchcms.com/
+    checkedAt: 2026-10-20
+    via: page
+  - field: x
+    value: https://twitter.com/CouchCMS
+    url: https://www.couchcms.com/
+    checkedAt: 2026-10-20
+    via: page
+notFound: [runtimeMin, firstRelease, hqCountry, basedOn, headlessApi, multisite, userRoles, sso, importsFrom, renderingModes, paidEdition, usageShare, pluginDirectory, parent, forkOf, successorOf, alternativeTo, endoflifeId]
+unreadable: []
+notes: >
+  Status check: archived false, no ended or unmaintained statement found on the homepage, docs or README, so status stays accepted. The requirements page footer reads 2010-2017 and the page is dated, so its PHP 5.0.0 minimum is not recorded as runtimeMin. The products page states the CPAL attribution terms: attribution in the source code cannot be waived, and the link on the site front-end can be waived with the author's permission. The products page says the open-source version is the only version, so no paidEdition is recorded; the commercial license removes the attribution link and admin branding and includes one month of support. The homepage claim "used by thousands of sites world-wide" is a vendor claim without a figure and is not recorded. The repository contains couch/ and CHANGELOG.md; the last commit date is 2026-04-26 and the last GitHub release is v2.4 from 2023-10-15. The CHANGELOG top entry is a placeholder ("2.0 - (2016/m/d)"), so the release date comes from the releases API. The runsAs value per-request comes from the Apache and LiteSpeed server requirement, with PHP run by the web server for each request.

@@ -1,0 +1,148 @@
+id: localgov-drupal
+name: LocalGov Drupal
+status: accepted
+checkedAt: 2026-10-20
+description: Drupal distribution and install profile for building public-facing websites for UK councils.
+facts:
+  - field: name
+    value: LocalGov Drupal
+    url: https://localgovdrupal.org
+    checkedAt: 2026-10-20
+    via: page
+    quote: The publishing platform created by councils, for councils
+  - field: homepage
+    value: https://localgovdrupal.org
+    url: https://localgovdrupal.org
+    checkedAt: 2026-10-20
+    via: page
+    quote: The publishing platform created by councils, for councils
+  - field: maintainer
+    value: Open Digital Cooperative Ltd
+    url: https://localgovdrupal.org/localgov-drupal-subscriber-and-membership-terms-and-conditions
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Open Digital Cooperative Ltd (ODC) means the multi-stakeholder co-operative"
+  - field: maintainerType
+    value: company
+    url: https://localgovdrupal.org/localgov-drupal-subscriber-and-membership-terms-and-conditions
+    checkedAt: 2026-10-20
+    via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/localgovdrupal
+    checkedAt: 2026-10-20
+    via: api
+  - field: description
+    value: Drupal distribution and install profile for building public-facing websites for UK councils.
+    url: https://www.drupal.org/project/localgov
+    checkedAt: 2026-10-20
+    via: page
+    quote: a distribution and install profile built to help UK councils publish public facing websites
+  - field: categories
+    value:
+      - cms
+      - distribution
+    url: https://www.drupal.org/project/localgov
+    checkedAt: 2026-10-20
+    via: page
+    quote: a distribution and install profile
+  - field: language
+    value: php
+    url: https://api.github.com/repos/localgovdrupal/localgov
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: php
+    url: https://github.com/localgovdrupal/localgov/blob/3.x/composer.json
+    checkedAt: 2026-10-20
+    via: page
+  - field: installMethod
+    value: composer create-project drupal/localgov_project:^4.0
+    url: https://project.pages.drupalcode.org/localgov_docs/legacy-documentation/deploying-localgov-drupal/installing-and-deploying-lgd/
+    checkedAt: 2026-10-20
+    via: page
+    quote: composer create-project drupal/localgov_project:^4.0 --no-install MY_PROJECT
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/localgovdrupal/localgov/blob/3.x/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: GNU GENERAL PUBLIC LICENSE
+  - field: liveSites
+    value: 77 council sites, 87 microsites
+    url: https://localgovdrupal.org
+    checkedAt: 2026-10-20
+    via: page
+    quote: 77 Council Sites 87 Microsites
+  - field: repository
+    value: https://git.drupalcode.org/project/localgov
+    url: https://repo.packagist.org/p2/drupal/localgov.json
+    checkedAt: 2026-10-20T00:00:00.000Z
+    via: api
+  - field: docs
+    value: https://docs.localgovdrupal.org/
+    url: https://docs.localgovdrupal.org/
+    checkedAt: 2026-10-20T00:00:00.000Z
+    via: page
+  - field: license
+    value: GPL-2.0-or-later
+    url: https://repo.packagist.org/p2/drupal/localgov.json
+    checkedAt: 2026-10-20T00:00:00.000Z
+    via: api
+  - field: runtimeMin
+    value: "8.1"
+    url: https://repo.packagist.org/p2/drupal/localgov.json
+    checkedAt: 2026-10-20T00:00:00.000Z
+    via: api
+  - field: basedOn
+    value: Drupal
+    url: https://www.drupal.org/project/localgov
+    checkedAt: 2026-10-20T00:00:00.000Z
+    via: page
+    quote: Drupal 11 is supported on the 4.x branch.
+  - field: currentMajor
+    value: 4
+    url: https://repo.packagist.org/p2/drupal/localgov.json
+    checkedAt: 2026-10-20T00:00:00.000Z
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-14
+    url: https://repo.packagist.org/p2/drupal/localgov.json
+    checkedAt: 2026-10-20T00:00:00.000Z
+    via: api
+  - field: packagistName
+    value: drupal/localgov
+    url: https://packagist.org/packages/drupal/localgov
+    checkedAt: 2026-10-20T00:00:00.000Z
+    via: api
+  - field: packagistDownloads
+    value: 20009 total
+    url: https://packagist.org/packages/drupal/localgov.json
+    checkedAt: 2026-10-20T00:00:00.000Z
+    via: api
+notFound:
+  - sso
+  - hqCountry
+  - firstRelease
+  - renderingModes
+  - templating
+  - i18n
+  - adminUi
+  - importsFrom
+  - paidEdition
+  - pricingPage
+  - forum
+  - discord
+  - subreddit
+  - mastodon
+  - bluesky
+  - x
+  - newsletter
+  - pluginDirectory
+  - contentStore
+  - databases
+  - runsAs
+  - githubStargazers
+  - contributors
+unreadable: []
+notes: "The GitHub repository localgovdrupal/localgov is archived in its README, which points to https://www.drupal.org/project/localgov, and the Packagist package localgovdrupal/localgov is abandoned in favour of drupal/localgov. That is a move, not an end, so status stays accepted; repository and registry figures follow the drupal.org project (git.drupalcode.org, drupal/localgov). The README requirements list covers a local test setup only, so contentStore, databases and runsAs are not recorded. currentMajor is 4 from the highest stable drupal/localgov version; the drupal.org page says 3.x supports Drupal 10 and 4.x Drupal 11. liveSites is a coined adoption field: the homepage count, undated. The maintainer is a company limited by guarantee; its jurisdiction is not stated on the pages read. The GitHub organization location is not recorded as hqCountry. Subscriptions for councils and suppliers are membership fees, not an edition."

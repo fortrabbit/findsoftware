@@ -1,0 +1,170 @@
+id: mediawiki
+name: MediaWiki
+status: accepted
+checkedAt: 2026-10-20
+description: Open-source PHP wiki software for collaborative documentation and knowledge sharing.
+facts:
+  - field: name
+    value: MediaWiki
+    url: https://www.mediawiki.org
+    checkedAt: 2026-10-20
+    via: page
+    quote: MediaWiki is a collaboration and documentation platform
+  - field: homepage
+    value: https://www.mediawiki.org
+    url: https://www.mediawiki.org
+    checkedAt: 2026-10-20
+    via: page
+    quote: MediaWiki is a collaboration and documentation platform
+  - field: repository
+    value: https://github.com/wikimedia/mediawiki
+    url: https://api.github.com/repos/wikimedia/mediawiki
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://www.mediawiki.org/wiki/Manual:Contents
+    url: https://www.mediawiki.org/wiki/MediaWiki
+    checkedAt: 2026-10-20
+    via: page
+  - field: maintainerType
+    value: community
+    url: https://www.mediawiki.org
+    checkedAt: 2026-10-20
+    via: page
+    quote: brought to you by a vibrant community
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/wikimedia
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value:
+      - wiki
+      - documentation
+    url: https://www.mediawiki.org
+    checkedAt: 2026-10-20
+    via: page
+    quote: collaboration and documentation platform
+  - field: language
+    value: php
+    url: https://api.github.com/repos/wikimedia/mediawiki
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: php
+    url: https://www.mediawiki.org/wiki/Manual:Installing_MediaWiki
+    checkedAt: 2026-10-20
+    via: page
+  - field: databases
+    value:
+      - sqlite
+      - mariadb
+      - mysql
+      - postgres
+    url: https://www.mediawiki.org/wiki/Manual:Installing_MediaWiki
+    checkedAt: 2026-10-20
+    via: page
+    quote: 5.3 PostgreSQL
+  - field: runsAs
+    value:
+      - per-request
+    url: https://www.mediawiki.org/wiki/Manual:Installing_MediaWiki
+    checkedAt: 2026-10-20
+    via: page
+    quote: Experience with Apache, PHP, and MySQL/MariaDB will make the process easier
+  - field: installMethod
+    value: download the software, upload the files to a web server, then run the installation script in the browser
+    url: https://www.mediawiki.org/wiki/Manual:Installing_MediaWiki
+    checkedAt: 2026-10-20
+    via: page
+    quote: Upload files to your web server
+  - field: installMethod
+    value: download the software, upload the files to a web server, then run the installation script in the browser
+    url: https://www.mediawiki.org/wiki/Manual:Installing_MediaWiki
+    checkedAt: 2026-10-20
+    via: page
+    quote: Run the installation script
+  - field: contentStore
+    value: database
+    url: https://www.mediawiki.org/wiki/Manual:Installing_MediaWiki
+    checkedAt: 2026-10-20
+    via: page
+    quote: "requires a database name and a database username to store the wiki's content"
+  - field: license
+    value: GPL-2.0-or-later
+    url: https://github.com/wikimedia/mediawiki/blob/master/COPYING
+    checkedAt: 2026-10-20
+    via: page
+    quote: MediaWiki is licensed under the terms of the GNU General Public License, version 2 or later
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/wikimedia/mediawiki/blob/master/COPYING
+    checkedAt: 2026-10-20
+    via: page
+    quote: MediaWiki is licensed under the terms of the GNU General Public License
+  - field: endoflifeId
+    value: mediawiki
+    url: https://endoflife.date/api/mediawiki.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-02
+    url: https://endoflife.date/api/mediawiki.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 5208
+    url: https://api.github.com/repos/wikimedia/mediawiki
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 1104
+    url: https://github.com/wikimedia/mediawiki
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtimeMin
+    value: "8.3"
+    url: https://www.mediawiki.org/wiki/Manual:Installation_requirements
+    checkedAt: 2026-10-20T00:00:00.000Z
+    via: page
+    quote: at least PHP 8.3.0 is required
+  - field: currentMajor
+    value: 1
+    url: https://endoflife.date/api/mediawiki.json
+    checkedAt: 2026-10-20T00:00:00.000Z
+    via: api
+  - field: maintainer
+    value: MediaWiki contributors
+    url: https://github.com/wikimedia/mediawiki/blob/master/COPYING
+    checkedAt: 2026-10-20T00:00:00.000Z
+    via: page
+    quote: MediaWiki contributors, including those listed in the CREDITS file, hold the copyright to this work.
+notFound:
+  - hqCountry
+  - firstRelease
+  - adminUi
+  - headlessApi
+  - templating
+  - i18n
+  - multisite
+  - livePreview
+  - userRoles
+  - sso
+  - importsFrom
+  - paidEdition
+  - pricingPage
+  - usageShare
+  - npmWeeklyDownloads
+  - pluginDirectory
+  - forum
+  - discord
+  - subreddit
+  - mastodon
+  - bluesky
+  - x
+  - newsletter
+  - selfHostOption
+  - packagistName
+  - packagistDownloads
+unreadable: []
+notes: MediaWiki installs from a release tarball, not from Composer, so the Packagist package mediawiki/core (flagged abandoned) is not the project's distribution and no registry figures are taken from it. The repository is not archived and endoflife.date lists supported releases. The maintainer is recorded as the COPYING line states it; the Wikimedia Foundation is not named there as maintainer. The GitHub repository license is NOASSERTION; COPYING states GPL version 2 or later. The contributor count is the number of pages with per_page=1 and anon=true. The databases quote is a table-of-contents line from the install page, which lists SQLite, MariaDB/MySQL and PostgreSQL.

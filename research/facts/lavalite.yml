@@ -1,0 +1,118 @@
+id: lavalite
+name: Lavalite
+status: accepted
+checkedAt: 2026-10-20
+description: Open-source content management system built with the Laravel framework and distributed as a Composer project.
+facts:
+  - field: homepage
+    value: https://lavalite.org
+    url: https://api.github.com/repos/LavaLite/cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: repository
+    value: https://github.com/LavaLite/cms
+    url: https://api.github.com/repos/LavaLite/cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: http://lavalite.org/docs
+    url: https://github.com/LavaLite/cms/blob/master/readme.md
+    checkedAt: 2026-10-20
+    via: page
+  - field: sourcePublic
+    value: true
+    url: https://github.com/LavaLite/cms
+    checkedAt: 2026-10-20
+    via: page
+  - field: maintainer
+    value: LavaLite
+    url: https://api.github.com/users/LavaLite
+    checkedAt: 2026-10-20
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/LavaLite
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [cms]
+    url: https://github.com/LavaLite/cms/blob/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"type": "cms"'
+  - field: basedOn
+    value: Laravel
+    url: https://api.github.com/repos/LavaLite/cms
+    checkedAt: 2026-10-20
+    via: api
+    quote: "Multilingual PHP CMS built with Laravel"
+  - field: installMethod
+    value: composer create-project LavaLite/cms, then php artisan lavalite:install
+    url: https://github.com/LavaLite/docs/blob/master/installation.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer create-project LavaLite/cms --prefer-dist website"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/LavaLite/cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/LavaLite/cms/blob/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+  - field: runtimeMin
+    value: "8.1"
+    url: https://github.com/LavaLite/cms/blob/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"php": "^8.1"'
+  - field: license
+    value: MIT
+    url: https://github.com/LavaLite/cms/blob/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"license": "MIT"'
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/LavaLite/cms/blob/master/readme.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "This is an open source of Content Management System"
+  - field: currentMajor
+    value: 10
+    url: https://repo.packagist.org/p2/lavalite/cms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2023-09-03
+    url: https://repo.packagist.org/p2/lavalite/cms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 2889
+    url: https://api.github.com/repos/LavaLite/cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 11
+    url: https://api.github.com/repos/LavaLite/cms/contributors
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: lavalite/cms
+    url: https://packagist.org/packages/lavalite/cms
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: 56393 total
+    url: https://packagist.org/packages/lavalite/cms
+    checkedAt: 2026-10-20
+    via: api
+notFound: [pricingPage, firstRelease, hqCountry, parent, forkOf, successorOf, headlessApi, multisite, adminUi, i18n, userRoles, sso, importsFrom, usageShare, pluginCount, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, npmName, npmWeeklyDownloads, pypiDownloads, endoflifeId, supportedVersions, paidEdition, alternativeTo, wikidata, livePreview, runsAs, databases, serverNeeds, contentStore, templating]
+unreadable:
+  - https://lavalite.org (403 to the project's own site, so its pages are not read)
+  - http://lavalite.org/docs (linked from readme.md; 403 on the docs installation page, not read)
+notes: >
+  The project's own site and its documentation answer 403 to this research client, so the installation fact comes from the project's documentation source repository, LavaLite/docs, whose installation.md documents composer create-project and php artisan lavalite:install; criterion 3 is met there. That repository was last pushed in 2022 and still names PHP >= 7.1, so its runtime line is not recorded against the composer.json requirement. The repository has no LICENSE file at the root (GitHub reports license null); the MIT statement comes from composer.json and readme.md. The readme.md states "The Lavalite CMS is open-sourced software licensed under the [MIT license]", and composer.json declares "license": "MIT". GitHub's latest release is v10.1.0 (2023-08-03), while Packagist's newest stable version is v10.1.2 (2023-09-03), and the latestReleaseDate is taken from Packagist. The default branch was last pushed 2023-09-28, which is not an end signal by itself; no archived flag, abandoned package or deprecation was found in the readable sources. No legal notice names a legal entity, so the maintainer is the GitHub organization name as the project states it. The GitHub organization profile names India as its location; that is not recorded as hqCountry because it is not a company statement. Packagist monthly downloads are 10 per the package page; the total is recorded. The composer.json requires lavalite/framework and litecms/* packages, which are sibling packages not recorded here.

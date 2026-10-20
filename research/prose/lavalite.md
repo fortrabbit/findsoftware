@@ -1,0 +1,1 @@
+Lavalite is a content management system built with the Laravel framework. The [installation guide](https://github.com/LavaLite/docs/blob/master/installation.md) creates a new site as a Composer project and then runs an Artisan command that sets up the database and configuration files, so each site is a Laravel application of its own.

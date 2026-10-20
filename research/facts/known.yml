@@ -1,0 +1,128 @@
+id: known
+name: Known
+status: accepted
+checkedAt: 2026-10-20
+description: Open-source PHP platform for social publishing, where one or more users post blog posts and status updates to a site they run.
+facts:
+  - field: homepage
+    value: https://idno.co
+    url: https://idno.co
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Known is an open source social publishing platform."
+  - field: repository
+    value: https://github.com/idno/idno
+    url: https://api.github.com/repos/idno/idno
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: http://docs.withknown.com
+    url: https://withknown.com/opensource
+    checkedAt: 2026-10-20
+    via: page
+  - field: sourcePublic
+    value: true
+    url: https://github.com/idno/idno
+    checkedAt: 2026-10-20
+    via: page
+  - field: maintainer
+    value: Known, Inc
+    url: https://github.com/idno/idno/blob/dev/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright Known, Inc"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/idno
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [social-publishing, blog]
+    url: https://withknown.com
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Known allows any number of users to post to a shared site with blog posts, status"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/idno/idno
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/idno/idno/blob/1.6.4/composer.json
+    checkedAt: 2026-10-20
+    via: page
+  - field: runtimeMin
+    value: "8.1"
+    url: https://github.com/idno/idno/blob/1.6.4/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"php": ">=8.1.0"'
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/idno/idno/blob/1.6.4/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: '"license": "Apache-2.0"'
+  - field: licenseModel
+    value: open-source
+    url: https://withknown.com/opensource
+    checkedAt: 2026-10-20
+    via: page
+    quote: "The core Known platform is open source"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/idno/idno/releases/latest
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2026-03-01
+    url: https://api.github.com/repos/idno/idno/releases/latest
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 1126
+    url: https://api.github.com/repos/idno/idno
+    checkedAt: 2026-10-20
+    via: api
+  - field: contributors
+    value: 89
+    url: https://api.github.com/repos/idno/idno/contributors
+    checkedAt: 2026-10-20
+    via: api
+  - field: contentStore
+    value: database
+    url: http://docs.withknown.com/en/latest/install/requirements/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "MySQL 5+ / MariaDB or MongoDB"
+  - field: databases
+    value: [mysql, mariadb, mongodb]
+    url: http://docs.withknown.com/en/latest/install/requirements/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "MySQL 5+ / MariaDB or MongoDB"
+  - field: serverNeeds
+    value: web server with URL rewriting (Apache with mod_rewrite recommended)
+    url: http://docs.withknown.com/en/latest/install/requirements/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "A Web Server that supports URL rewriting"
+  - field: installMethod
+    value: composer create-project idno/idno, release archive, or git clone with composer install
+    url: https://github.com/idno/idno/blob/1.6.4/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer create-project idno/idno"
+  - field: runsAs
+    value: [per-request, always-on, scheduled]
+    url: https://github.com/idno/idno/blob/1.6.4/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "The worker must stay running permanently."
+notFound: [pricingPage, firstRelease, hqCountry, parent, forkOf, successorOf, basedOn, headlessApi, multisite, adminUi, i18n, userRoles, sso, importsFrom, usageShare, pluginCount, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, packagistName, packagistDownloads, npmName, npmWeeklyDownloads, pypiDownloads, endoflifeId, supportedVersions, paidEdition, alternativeTo, wikidata]
+unreadable:
+  - https://withknown.com/docs (404)
+  - http://docs.idno.co/en/latest/install/index.html (no connection)
+notes: >
+  The repository is named idno/idno; the opensource page links releases under github.com/idno/known and says "Download Known 1.6.2", while the latest release is 1.6.4, so the release note on the site lags the repository. The composer.json at 1.6.4 names homepage https://idno.co/, the same address the README names for learning more about the project, so idno.co is the recorded homepage; withknown.com is the hosted service and the source of the opensource page and docs links. GitHub reports the license as NOASSERTION because the LICENSE file is a copyright header with Apache text, not the standard license file, so the license entry cites composer.json. The docs site states PHP 8.1 or above; the dev branch README and composer.json state 8.3, which is why runtimeMin is read from the 1.6.4 tag. The hosted option is a service of the same project at withknown.com ("Host your site on our service, or install it on your own server"), so the status stays accepted. Packagist has no package idno/idno (404), so packagistName stays unknown. The 1.6.4 README contains affiliate links to a hosting provider; they are not recorded. The contributors count reads the API with anon=true and per_page=100. Known's README uses the name Idno and the site uses Known; the record name follows the CSV. The 1.6.4 README says events such as Webmention pings and ActivityPub deliveries run inside the web request by default; the asynchronous queue moves them to a background worker, which it says is required for ActivityPub, and the worker can be started by systemd or once a minute by cron.

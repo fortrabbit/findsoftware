@@ -1,0 +1,3 @@
+LUYA is a PHP web framework and content management system built on the Yii 2 framework, with an admin module. A project is created with Composer from the `luyadev/luya-kickstarter` template, and the [installation guide](https://luya.io/guide/installation/) has the developer set the database connection in the configuration files.
+
+Configuration is kept in versioned files, and a console command imports those filesystem configurations into the database. The guide notes that LUYA is not a one-click installation. A [package list](https://luya.io/packages) on the project's site covers public modules, extensions and blocks.

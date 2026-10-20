@@ -1,0 +1,1 @@
+FlatPress is a blogging engine written in PHP. It stores all content in files, so it needs no database, and it runs on any web server with PHP. Installation is a manual upload followed by the web installer. Themes use Smarty templates. The project's [wiki](https://wiki.flatpress.org) is its documentation, and it also lists [plugins](http://wiki.flatpress.org/res:plugins).

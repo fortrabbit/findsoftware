@@ -1,0 +1,133 @@
+id: drupal-cms
+name: Drupal CMS
+status: accepted
+checkedAt: 2026-10-20
+description: Distribution of Drupal core that starts a site with preset recipes, site templates and marketing tools.
+facts:
+  - field: homepage
+    value: https://new.drupal.org/drupal-cms
+    url: https://new.drupal.org/drupal-cms
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Drupal CMS puts the power of Drupal into the hands of marketers, designers and content creators"
+  - field: repository
+    value: https://git.drupalcode.org/project/cms
+    url: https://repo.packagist.org/p2/drupal/cms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://project.pages.drupalcode.org/drupal_cms/
+    url: https://project.pages.drupalcode.org/drupal_cms/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Drupal CMS is a powerful, flexible, and secure platform designed to bring your web projects to life."
+  - field: maintainer
+    value: Drupal Association
+    url: https://project.pages.drupalcode.org/drupal_cms/get-started/install/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "2026 Drupal Association"
+  - field: categories
+    value: [cms, distribution]
+    url: https://packagist.org/packages/drupal/cms.json
+    checkedAt: 2026-10-20
+    via: api
+    quote: "Drupal CMS is a ready-to-use platform built on Drupal core"
+  - field: basedOn
+    value: [drupal]
+    url: https://repo.packagist.org/p2/drupal/cms.json
+    checkedAt: 2026-10-20
+    via: api
+    quote: '"drupal/core-recommended":"^11.4"'
+  - field: language
+    value: PHP
+    url: https://repo.packagist.org/p2/drupal/core.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://repo.packagist.org/p2/drupal/core.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtimeMin
+    value: "8.3"
+    url: https://repo.packagist.org/p2/drupal/core.json
+    checkedAt: 2026-10-20
+    via: api
+    quote: '"php":">=8.3.0"'
+  - field: databases
+    value: [mariadb, mysql, postgresql, sqlite]
+    url: https://www.drupal.org/docs/getting-started/system-requirements
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Database servers for Drupal, such as MariaDB, MySQL, PostgreSQL, and SQLite."
+  - field: installMethod
+    value: Drupal CMS launcher, or DDEV for a local environment
+    url: https://project.pages.drupalcode.org/drupal_cms/get-started/install/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Drupal CMS offers several installation paths"
+  - field: runsAs
+    value: [per-request]
+    url: https://www.drupal.org/docs/getting-started/system-requirements
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Drupal works on Apache, Nginx, and other web servers."
+  - field: adminUi
+    value: yes, admin tools in the application
+    url: https://new.drupal.org/drupal-cms
+    checkedAt: 2026-10-20
+    via: page
+    quote: "intuitive admin tools"
+  - field: license
+    value: GPL-2.0-or-later
+    url: https://repo.packagist.org/p2/drupal/cms.json
+    checkedAt: 2026-10-20
+    via: api
+    quote: '"license":["GPL-2.0-or-later"]'
+  - field: licenseModel
+    value: open-source
+    url: https://new.drupal.org/drupal-cms
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Drupal is proudly free and open source software, and always will be."
+  - field: currentMajor
+    value: 2
+    url: https://repo.packagist.org/p2/drupal/cms.json
+    checkedAt: 2026-10-20
+    via: api
+    quote: '"version":"2.2.5"'
+  - field: latestReleaseDate
+    value: 2026-10-14
+    url: https://repo.packagist.org/p2/drupal/cms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: drupal/cms
+    url: https://packagist.org/packages/drupal/cms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: 110756 (total)
+    url: https://packagist.org/packages/drupal/cms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: 8056 (monthly)
+    url: https://packagist.org/packages/drupal/cms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: firstRelease
+    value: 2024
+    url: https://repo.packagist.org/p2/drupal/cms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://repo.packagist.org/p2/drupal/cms.json
+    checkedAt: 2026-10-20
+    via: api
+notFound: [pricingPage, paidEditions, freeTier, hqCountry, parent, forkOf, successorOf, contentStore, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, usageShare, pluginCount, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, githubStargazers, contributors, endoflifeId, npmName]
+unreadable: []
+notes: >
+  Drupal CMS is a distribution: its Composer package requires Drupal core 11 (drupal/core-recommended ^11.4), so the core facts sit on the drupal record and are linked through basedOn. The database list and the web server statement come from the Drupal system requirements page, which covers core, and the runtime floor comes from the drupal/core package that the cms package resolves to. The package has no PHP requirement of its own. firstRelease is the earliest version in the Packagist feed (2024-12-05), which holds 50 versions; a full version history was not checked. The Packagist total downloads figure (110756) is newer than the CSV note. The git repository is on drupal.org GitLab and was not read directly; the Packagist source URL names it. The homepage is on new.drupal.org, Drupal's own site. The install page lists the launcher and DDEV, and says launcher trial sites are temporary and that a finished site moves to a hosting provider; the Composer create-project command was not found on the pages read. Two entries record the Packagist monthly and total downloads, each with its period.

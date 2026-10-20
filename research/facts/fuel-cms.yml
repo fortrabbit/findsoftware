@@ -1,0 +1,105 @@
+id: fuel-cms
+name: FUEL CMS
+status: discontinued
+checkedAt: 2026-10-20
+description: Content management system built on the CodeIgniter PHP framework.
+facts:
+  - field: status
+    value: discontinued
+    url: https://github.com/daylightstudio/FUEL-CMS/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "This project is no longer in active development and is not recommended for production websites anymore."
+  - field: homepage
+    value: https://www.getfuelcms.com
+    url: https://www.getfuelcms.com
+    checkedAt: 2026-10-20
+    via: page
+  - field: repository
+    value: https://github.com/daylightstudio/FUEL-CMS
+    url: https://github.com/daylightstudio/FUEL-CMS
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: http://docs.getfuelcms.com
+    url: https://github.com/daylightstudio/FUEL-CMS/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "To access the documentation, you can visit it"
+  - field: maintainer
+    value: David McReynolds
+    url: https://github.com/daylightstudio/FUEL-CMS/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Developed by David McReynolds"
+  - field: repoOwnerType
+    value: user
+    url: https://github.com/daylightstudio/FUEL-CMS
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [cms]
+    url: https://www.getfuelcms.com
+    checkedAt: 2026-10-20
+    via: page
+    quote: "The content management system for premium-grade websites"
+  - field: basedOn
+    value: [CodeIgniter]
+    url: https://www.getfuelcms.com
+    checkedAt: 2026-10-20
+    via: page
+    quote: "FUEL CMS is built upon the popular PHP web framework CodeIgniter"
+  - field: language
+    value: PHP
+    url: https://github.com/daylightstudio/FUEL-CMS
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://docs.getfuelcms.com/installation/requirements
+    checkedAt: 2026-10-20
+    via: page
+    quote: "PHP version 5.7x - 8.1x"
+  - field: databases
+    value: [mysql]
+    url: https://docs.getfuelcms.com/installation/requirements
+    checkedAt: 2026-10-20
+    via: page
+    quote: "A MySQL 4+ database if using the FUEL admin"
+  - field: runsAs
+    value: [per-request]
+    url: https://docs.getfuelcms.com/installation/requirements
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Apache server with .htaccess"
+  - field: installMethod
+    value: file copy
+    url: https://github.com/daylightstudio/FUEL-CMS/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "copy the contents of this folder to a web accessible folder"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/daylightstudio/FUEL-CMS/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "FUEL CMS is licensed under"
+  - field: currentMajor
+    value: 1
+    url: https://github.com/daylightstudio/FUEL-CMS/releases
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2022-08-15
+    url: https://github.com/daylightstudio/FUEL-CMS/releases
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 1020
+    url: https://github.com/daylightstudio/FUEL-CMS
+    checkedAt: 2026-10-20
+    via: api
+notFound: [firstRelease, hqCountry, parent, pricingPage, paidEdition, adminUi, sso, multisite, i18n, usageShare, contributors, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, packagistName, packagistDownloads, npmName, endoflifeId, wikidata, runtimeMin]
+unreadable: [http://docs.getfuelcms.com/general/installation, https://docs.getfuelcms.com/installing]
+notes: >
+  The README opens with a warning that the project is no longer in active development, the ended-project signal in the write-record skill; the CSV row says accepted, so the status is changed to discontinued and the reviewer should confirm it. The GitHub API reports no license; the license is the README statement "FUEL CMS is licensed under Apache 2", and the fuel/licenses/fuel_license.txt file the README points to carries a CodeIgniter (EllisLab) copyright notice, which is not recorded as a separate statement. The requirements page says "PHP version 5.7x - 8.1x", which is ambiguous, so runtimeMin is unknown. The installation pages under docs.getfuelcms.com returned 404 for the paths tried, so the requirements page is the one read from the docs host. The latest tag 1.5.2 is dated 2022-08-15; the README's upgrade notes refer to FUEL 1.4 on CodeIgniter 3.x. Fields coined: none.

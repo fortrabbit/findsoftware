@@ -17,7 +17,7 @@ runtime:
   - python
   - node
 runtimeMin: python 3.11
-adminUi: false
+adminUi: true
 headlessApi:
   - rest
 runsAs:

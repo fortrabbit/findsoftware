@@ -7,6 +7,8 @@ description: The questions to answer before picking a CMS, framework or static s
 lead: Start from the project, not from the software.
 ---
 
+This page is still being edited. Come back at a later time.
+
 - **Who edits the content?** Editors without Git need an admin interface: filter by [content storage](/storage/) and look at the admin row on each record.
 - **Does it need a server?** Static output can be served from almost anywhere. Server rendering needs a runtime: see [rendering](/rendering/) and [runtimes](/runtimes/).
 - **Which language does the team know?** See [languages](/languages/).

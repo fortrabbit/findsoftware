@@ -1,0 +1,109 @@
+id: fork-cms
+name: Fork CMS
+status: accepted
+checkedAt: 2026-10-20
+description: Open source content management system written in PHP.
+facts:
+  - field: homepage
+    value: https://www.fork-cms.com
+    url: https://www.fork-cms.com
+    checkedAt: 2026-10-20
+    via: page
+  - field: repository
+    value: https://github.com/forkcms/forkcms
+    url: https://github.com/forkcms/forkcms
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://docs.fork-cms.com/
+    url: https://docs.fork-cms.com/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Fork CMS Documentation"
+  - field: maintainer
+    value: Fork CMS
+    url: https://www.fork-cms.com/disclaimer
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Fork CMS cannot be held responsible for direct or indirect damage caused by the use of the information on this site."
+  - field: repoOwnerType
+    value: organization
+    url: https://github.com/forkcms/forkcms
+    checkedAt: 2026-10-20
+    via: api
+  - field: categories
+    value: [cms]
+    url: https://github.com/forkcms/forkcms/blob/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Fork is an open source CMS that will rock your world."
+  - field: language
+    value: PHP
+    url: https://github.com/forkcms/forkcms
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://repo.packagist.org/p2/forkcms/forkcms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: runtimeMin
+    value: "7.4"
+    url: https://repo.packagist.org/p2/forkcms/forkcms.json
+    checkedAt: 2026-10-20
+    via: api
+    quote: "^7.4||^8.0"
+  - field: databases
+    value: [mysql]
+    url: https://docs.fork-cms.com/documentation/detail/installation/minimum-requirements
+    checkedAt: 2026-10-20
+    via: page
+    quote: "MySQL 5.0 or higher"
+  - field: runsAs
+    value: [per-request]
+    url: https://docs.fork-cms.com/documentation/detail/installation/minimum-requirements
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Apache 2.0 with .htaccess, mod_rewrite"
+  - field: installMethod
+    value: composer create-project
+    url: https://docs.fork-cms.com/documentation/detail/installation/installation
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer create-project forkcms/forkcms ."
+  - field: license
+    value: MIT
+    url: https://github.com/forkcms/forkcms/blob/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: "\"license\": \"MIT\""
+  - field: currentMajor
+    value: 5
+    url: https://repo.packagist.org/p2/forkcms/forkcms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-15
+    url: https://repo.packagist.org/p2/forkcms/forkcms.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: githubStargazers
+    value: 1172
+    url: https://github.com/forkcms/forkcms
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: forkcms/forkcms
+    url: https://docs.fork-cms.com/documentation/detail/installation/installation
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer create-project forkcms/forkcms ."
+  - field: packagistDownloads
+    value: 46833 total, 527 in the last month
+    url: https://packagist.org/packages/forkcms/forkcms.json
+    checkedAt: 2026-10-20
+    via: api
+notFound: [firstRelease, hqCountry, parent, pricingPage, paidEdition, adminUi, sso, usageShare, contributors, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, npmName, endoflifeId, wikidata]
+unreadable: [https://www.fork-cms.com/extensions]
+notes: >
+  The install page of the documentation names Composer, so the Packagist package forkcms/forkcms supplies the registry figures. The minimum-requirements page lists PHP 7.1 and MySQL 5.0, which contradicts the ^7.4||^8.0 constraint of the latest Packagist release; runtimeMin follows the latest release's composer requirement. The documentation says "Fork can not be installed in subdirectories" on the same page; that stays in the source for the prose. The GitHub repository has no release objects (releases/latest returns 404); the release date is the Packagist time of 5.12.3. The disclaimer page names an individual as a contact, with no legal form; the maintainer is recorded as the disclaimer states it, "Fork CMS", without a legal form. The disclaimer page gives a postal address in Ghent without a country, so hqCountry stays unknown. The extension directory link from the homepage redirects to an unrelated GitHub page and is not recorded. Fields coined: none.

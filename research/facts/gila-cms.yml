@@ -1,0 +1,117 @@
+id: gila-cms
+name: Gila CMS
+status: accepted
+checkedAt: 2026-10-20
+description: "Content management system written in PHP on MySQL or MariaDB, with an installer that runs in the browser."
+facts:
+  - field: homepage
+    value: https://gilacms.com
+    url: https://gilacms.com
+    checkedAt: 2026-10-20
+    via: page
+  - field: repository
+    value: https://github.com/GilaCMS/gila
+    url: https://api.github.com/repos/GilaCMS/gila
+    checkedAt: 2026-10-20
+    via: api
+  - field: docs
+    value: https://gila-cms.readthedocs.io/en/latest/
+    url: https://gila-cms.readthedocs.io/en/latest/
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Gila CMS is an open-source and free content management system built with php7."
+  - field: maintainer
+    value: Vasileios Zoumpourlis
+    url: https://github.com/GilaCMS/gila/blob/master/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Copyright (c) 2017-2021, Vasileios Zoumpourlis"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/GilaCMS
+    checkedAt: 2026-10-20
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://api.github.com/repos/GilaCMS/gila
+    checkedAt: 2026-10-20
+    via: api
+  - field: language
+    value: PHP
+    url: https://raw.githubusercontent.com/GilaCMS/gila/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: "\"php\": \"^8.0\""
+  - field: categories
+    value: [cms, website-builder]
+    url: https://gilacms.com
+    checkedAt: 2026-10-20
+    via: page
+    quote: "Website Builder"
+  - field: runtime
+    value: [php]
+    url: https://raw.githubusercontent.com/GilaCMS/gila/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: "\"php\": \"^8.0\""
+  - field: runtimeMin
+    value: PHP 8.0
+    url: https://raw.githubusercontent.com/GilaCMS/gila/master/composer.json
+    checkedAt: 2026-10-20
+    via: page
+    quote: "\"php\": \"^8.0\""
+  - field: contentStore
+    value: database
+    url: https://raw.githubusercontent.com/GilaCMS/gila/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "a content management system made in PHP and MySql"
+  - field: databases
+    value: [mysql, mariadb]
+    url: https://gila-cms.readthedocs.io/en/latest/install.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "MySQL / MariaDB server"
+  - field: adminUi
+    value: yes
+    url: https://gila-cms.readthedocs.io/en/latest/install.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "we can enter on the admin panel using the admin email and password"
+  - field: installMethod
+    value: [composer create-project, browser installer]
+    url: https://github.com/GilaCMS/gila/blob/master/README.md
+    checkedAt: 2026-10-20
+    via: page
+    quote: "composer create-project gilacms/gila"
+  - field: runsAs
+    value: [per-request]
+    url: https://gila-cms.readthedocs.io/en/latest/install.html
+    checkedAt: 2026-10-20
+    via: page
+    quote: "First unzip gila in a public html folder"
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/GilaCMS/gila/blob/master/LICENSE
+    checkedAt: 2026-10-20
+    via: page
+    quote: "BSD 3-Clause License"
+  - field: githubStargazers
+    value: 46
+    url: https://api.github.com/repos/GilaCMS/gila
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistName
+    value: gilacms/gila
+    url: https://packagist.org/packages/gilacms/gila.json
+    checkedAt: 2026-10-20
+    via: api
+  - field: packagistDownloads
+    value: 31 total
+    url: https://packagist.org/packages/gilacms/gila.json
+    checkedAt: 2026-10-20
+    via: api
+notFound: [firstRelease, hqCountry, currentMajor, latestReleaseDate, endoflifeId, pricingPage, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, parent, forkOf, successorOf, alternativeTo, wikidata, i18n, multisite, userRoles, sso, importsFrom, livePreview, headlessApi, renderingModes, templating]
+unreadable: ["https://gilacms.com/docs/ (404)", "https://gilacms.com/blog/4/how-to-install-gila-cms (404)"]
+notes: >
+  No GitHub release or tag exists, so currentMajor and latestReleaseDate are not recorded. The readthedocs page reads "Gila CMS 2.0.3 documentation", which the docs state but no registry confirms. The readthedocs install page says "PHP 7.4+", while composer.json on the default branch requires "^8.0"; runtimeMin records the composer.json value and the docs statement is unresolved. The repository was last pushed on 2023-07-15 and is not archived; no page or registry states the project has ended, so the status stays accepted. The Packagist entry gilacms/gila exists with no versions, and its 31 downloads are recorded as the total the API states. The homepage describes website-builder, CRM and email-marketing features; only the "Website Builder" term is recorded as a category. The composer.json description reads "A framework to build your next awesome web application", not recorded. The license is BSD-3-Clause in both LICENSE and composer.json. The maintainer is the copyright holder of the LICENSE file, an individual.

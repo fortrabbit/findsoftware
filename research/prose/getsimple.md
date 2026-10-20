@@ -1,0 +1,1 @@
+GetSimple CMS is a flat-file content management system written in PHP. Its [repository README](https://github.com/GetSimpleCMS/GetSimpleCMS/blob/v3.3.16/README.md) describes it as a flatfile CMS, so content is kept in files rather than in a database. The homepage describes the project as supported and developed by a community.
