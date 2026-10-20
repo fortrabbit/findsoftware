@@ -1,12 +1,11 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { fieldOf } from './fields.ts';
 import { priceBands } from './price.ts';
 
 describe('the price scale', () => {
   it('has seven bands and no free one', () => {
     assert.equal(priceBands.length, 7);
-    // Free is what a provider gives away; this records what it charges.
+    // Free is what a project gives away; this records what it charges.
     assert.equal(
       priceBands.some((band) => /free/i.test(band.label)),
       false,
@@ -28,18 +27,5 @@ describe('the price scale', () => {
     for (const old of ['free-tier', 'under-5', '5-15']) {
       assert.ok(!priceBands.some((band) => band.id === old), `${old} should be gone`);
     }
-  });
-
-  /*
-   * validate.ts asserts this too, on every build — repeated here because that
-   * check is the reason the bands are written out twice, and a test that fails
-   * in a second is a faster way to find out than a build that does.
-   */
-  it('says the same thing as the dictionary', () => {
-    const dictionary = (fieldOf.get('priceFrom')?.values ?? []).map((value) => `${value.id}: ${value.label}`);
-    assert.deepEqual(
-      priceBands.map((band) => `${band.id}: ${band.label}`),
-      dictionary,
-    );
   });
 });

@@ -30,7 +30,7 @@ export function findhostRows(
   base: string | undefined,
   id: string,
   name: string,
-  data: { hosting?: string[]; databases?: string[] },
+  data: { hosting?: string[] | null; databases?: string[] | null },
 ): FindhostRow[] {
   if (!base) return [];
   const url = (facet: Facet, value: string) =>

@@ -17,7 +17,27 @@ if (!ids.length) {
   process.exit(2);
 }
 
-const entities = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', '#39': "'", rsquo: '’', lsquo: '‘', rdquo: '”', ldquo: '“', mdash: '—', ndash: '–', hellip: '…', copy: '©', reg: '®', trade: '™', euro: '€', middot: '·' };
+const entities = {
+  amp: '&',
+  lt: '<',
+  gt: '>',
+  quot: '"',
+  apos: "'",
+  nbsp: ' ',
+  '#39': "'",
+  rsquo: '’',
+  lsquo: '‘',
+  rdquo: '”',
+  ldquo: '“',
+  mdash: '—',
+  ndash: '–',
+  hellip: '…',
+  copy: '©',
+  reg: '®',
+  trade: '™',
+  euro: '€',
+  middot: '·',
+};
 // Curly quotes, dashes and markup differ between page and quote without changing the words.
 // Markup is stripped only from HTML: in a raw source file, `<?php ... ?>` would take the code with it.
 const stripMarkup = (text) =>
@@ -26,7 +46,10 @@ const normalize = (text, html = false) =>
   (html ? stripMarkup(String(text)) : String(text))
     .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
     .replace(/&(#x?[0-9a-f]+|[a-z0-9]+);/gi, (match, name) => {
-      if (name[0] === '#') return String.fromCodePoint(name[1].toLowerCase() === 'x' ? parseInt(name.slice(2), 16) : Number(name.slice(1)));
+      if (name[0] === '#')
+        return String.fromCodePoint(
+          name[1].toLowerCase() === 'x' ? parseInt(name.slice(2), 16) : Number(name.slice(1)),
+        );
       return entities[name.toLowerCase()] ?? match;
     })
     .replace(/[‘’`´]/g, "'")
@@ -38,11 +61,14 @@ const normalize = (text, html = false) =>
     .toLowerCase();
 
 // A GitHub file page carries the file as escaped JSON for its script; the raw file is the same text, readable.
-const raw = (url) => url.replace(/^https:\/\/github\.com\/([^/]+\/[^/]+)\/blob\//, 'https://raw.githubusercontent.com/$1/');
+const raw = (url) =>
+  url.replace(/^https:\/\/github\.com\/([^/]+\/[^/]+)\/blob\//, 'https://raw.githubusercontent.com/$1/');
 
 // A page served as Latin-1 reads as garbled umlauts when decoded as UTF-8, and its quotes never match.
 const decode = (type, bytes) => {
-  const declared = /charset=([\w-]+)/i.exec(type ?? '')?.[1] ?? /<meta[^>]+charset=["']?([\w-]+)/i.exec(new TextDecoder('latin1').decode(bytes.slice(0, 2048)))?.[1];
+  const declared =
+    /charset=([\w-]+)/i.exec(type ?? '')?.[1] ??
+    /<meta[^>]+charset=["']?([\w-]+)/i.exec(new TextDecoder('latin1').decode(bytes.slice(0, 2048)))?.[1];
   try {
     return new TextDecoder(declared ?? 'utf-8').decode(bytes);
   } catch {
@@ -56,7 +82,17 @@ const page = (url) => {
     pages.set(
       url,
       fetch(raw(url), { headers: { 'user-agent': userAgent }, signal: AbortSignal.timeout(20000) })
-        .then(async (response) => (response.ok ? { text: normalize(decode(response.headers.get('content-type'), await response.arrayBuffer()), /html/i.test(response.headers.get('content-type') ?? '') || /\.(html?|md|markdown)$/i.test(new URL(url).pathname)) } : { error: `${response.status}` }))
+        .then(async (response) =>
+          response.ok
+            ? {
+                text: normalize(
+                  decode(response.headers.get('content-type'), await response.arrayBuffer()),
+                  /html/i.test(response.headers.get('content-type') ?? '') ||
+                    /\.(html?|md|markdown)$/i.test(new URL(url).pathname),
+                ),
+              }
+            : { error: `${response.status}` },
+        )
         .catch((error) => ({ error: error.name === 'TimeoutError' ? 'timeout' : error.message })),
     );
   }
@@ -72,7 +108,8 @@ for (const id of ids) {
     checked++;
     const { text, error } = await page(fact.url);
     if (error) failures.push(`${id} ${fact.field}: ${error} ${fact.url}`);
-    else if (!text.includes(normalize(fact.quote))) failures.push(`${id} ${fact.field}: not on page ${fact.url} "${fact.quote}"`);
+    else if (!text.includes(normalize(fact.quote)))
+      failures.push(`${id} ${fact.field}: not on page ${fact.url} "${fact.quote}"`);
   }
 }
 

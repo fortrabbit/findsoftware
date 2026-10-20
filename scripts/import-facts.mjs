@@ -349,12 +349,22 @@ const text = (value) =>
   asList(value)
     .map((entry) => (typeof entry === 'object' ? Object.values(entry).filter(Boolean).join(' ') : String(entry)))
     .join(', ');
-const lower = (value) => String(typeof value === 'object' ? (value.name ?? '') : value).toLowerCase().trim();
+const lower = (value) =>
+  String(typeof value === 'object' ? (value.name ?? '') : value)
+    .toLowerCase()
+    .trim();
 const number = (value) => {
   // A figure recorded with its periods ({ total, monthly }) shows the total.
   if (value && typeof value === 'object' && !Array.isArray(value)) value = value.total ?? Object.values(value)[0];
   // The leading figure only: values carry a period after it ("86916550 for 2026-10-10 to 2026-10-16").
-  const held = typeof value === 'number' ? value : Number(String(value).replace(/,/g, '').match(/\d+(?:\.\d+)?/)?.[0]);
+  const held =
+    typeof value === 'number'
+      ? value
+      : Number(
+          String(value)
+            .replace(/,/g, '')
+            .match(/\d+(?:\.\d+)?/)?.[0],
+        );
   return Number.isFinite(held) && held > 0 ? Math.round(held) : undefined;
 };
 const https = (value) => (typeof value === 'string' && value.startsWith('https://') ? value : undefined);
@@ -373,7 +383,9 @@ const slug = (value) =>
 const recordOf = (value) => {
   const bare = slug(value);
   const unversioned = bare.replace(/(-v?\d[\w.-]*|-x)+$/, '');
-  return [bare, unversioned, `${unversioned}-framework`, `${unversioned}-cms`, `${unversioned}-js`].find((id) => ids.has(id));
+  return [bare, unversioned, `${unversioned}-framework`, `${unversioned}-cms`, `${unversioned}-js`].find((id) =>
+    ids.has(id),
+  );
 };
 
 function mapped(values, map, allowed, pick = (value) => value) {
@@ -391,20 +403,26 @@ function mapped(values, map, allowed, pick = (value) => value) {
  * derives them from cited facts. The research agent's value stands only where no rule decides.
  */
 const openLicense = /\b(MIT|Apache|BSD|A?GPL|LGPL|MPL|ISC|OSL|AFL|EUPL|Zlib|Unlicense|Artistic)/i;
-const restrictedLicense = /\b(BUSL|BSL|SSPL|Elastic|FSL|RSAL|Commons Clause|Sustainable|proprietary|EULA|No Charge|custom|POCL|CC-BY-ND|CC-BY-NC|NoDerivatives|NonCommercial)/i;
+const restrictedLicense =
+  /\b(BUSL|BSL|SSPL|Elastic|FSL|RSAL|Commons Clause|Sustainable|proprietary|EULA|No Charge|custom|POCL|CC-BY-ND|CC-BY-NC|NoDerivatives|NonCommercial)/i;
 const enterprisePart = /enterprise|\bee\/|x-pack|commercial licen[cs]e/i;
 const foundationName = /foundation|association|conservancy|LF Projects|\be\.\s?V\.|non-?profit|OpenJS/i;
-const legalForm = /\b(Inc|LLC|Ltd|Limited|GmbH|UG|AG|SAS|SpA|S\.L|SL|SRL|S\.A|SA|srl|s\.r\.o|Pty|Pte|Pvt|B\.V|BV|KG|Corp|Corporation|Co|plc|Oy|OÜ|AB|A\/S|SARL|sp\. z o\.o)(?![\p{L}])/u;
+const legalForm =
+  /\b(Inc|LLC|Ltd|Limited|GmbH|UG|AG|SAS|SpA|S\.L|SL|SRL|S\.A|SA|srl|s\.r\.o|Pty|Pte|Pvt|B\.V|BV|KG|Corp|Corporation|Co|plc|Oy|OÜ|AB|A\/S|SARL|sp\. z o\.o)(?![\p{L}])/u;
 const ruled = { licenseModel: { rule: 0, research: 0 }, maintainerType: { rule: 0, research: 0 } };
 
 function licenseModelOf({ status, licenses, repository, sourcePublic, paidEdition }) {
   if (status === 'hosted-service') return 'saas';
   // A restricted license offered as an alternative to an open one is a choice; on its own it covers a part.
   // FSL-1.1-Apache-2.0 names an open license it turns into later, so an open name without "or" is not a choice.
-  const isOpen = (statement) => openLicense.test(statement) && (!restrictedLicense.test(statement) || /\bor\b/i.test(statement));
+  const isOpen = (statement) =>
+    openLicense.test(statement) && (!restrictedLicense.test(statement) || /\bor\b/i.test(statement));
   const open = licenses.some(isOpen);
   const restrictedPart = licenses.some((statement) => restrictedLicense.test(statement) && !isOpen(statement));
-  if (open) return restrictedPart || paidEdition || licenses.some((statement) => enterprisePart.test(statement)) ? 'open-core' : 'open-source';
+  if (open)
+    return restrictedPart || paidEdition || licenses.some((statement) => enterprisePart.test(statement))
+      ? 'open-core'
+      : 'open-source';
   // A repository can hold only a README and an issue tracker; sourcePublic false records that.
   if (restrictedPart) return repository && sourcePublic !== false ? 'source-available' : 'commercial';
   return undefined;
@@ -449,10 +467,25 @@ const emojiOf = {
 const hash = (value) => [...value].reduce((sum, char) => (sum * 31 + char.charCodeAt(0)) >>> 0, 7);
 
 // Kinds whose records store, render or serve content; for every other kind the content fields do not apply.
-const contentKinds = new Set(['cms', 'headless-cms', 'ssg', 'framework', 'e-commerce', 'wiki', 'community', 'admin-panel', 'backend']);
+const contentKinds = new Set([
+  'cms',
+  'headless-cms',
+  'ssg',
+  'framework',
+  'e-commerce',
+  'wiki',
+  'community',
+  'admin-panel',
+  'backend',
+]);
 const contentFields = ['contentStore', 'databases', 'adminUi', 'headlessApi', 'templating', 'i18n', 'renderingModes'];
 
-const statusOf = { accepted: 'active', 'hosted-service': 'hosted-service', boundary: 'boundary', discontinued: 'discontinued' };
+const statusOf = {
+  accepted: 'active',
+  'hosted-service': 'hosted-service',
+  boundary: 'boundary',
+  discontinued: 'discontinued',
+};
 
 let written = 0;
 // A theme or starter has no category of its own; it takes the one of the software it is built on.
@@ -460,10 +493,16 @@ const ownCategories = new Map();
 const parentOf = new Map();
 for (const file of facts) {
   const research = parse(readFileSync(`${factsDir}/${file}`, 'utf8'));
-  const values = (field) => (research.facts ?? []).filter((fact) => fact.field === field).flatMap((fact) => asList(fact.value));
-  const raw = values('categories').length ? values('categories') : rowCategories.get(research.id) ?? [];
+  const values = (field) =>
+    (research.facts ?? []).filter((fact) => fact.field === field).flatMap((fact) => asList(fact.value));
+  const raw = values('categories').length ? values('categories') : (rowCategories.get(research.id) ?? []);
   ownCategories.set(research.id, mapped(raw, categoryMap, vocab('category')));
-  parentOf.set(research.id, values('basedOn').map(recordOf).find((id) => id && id !== research.id));
+  parentOf.set(
+    research.id,
+    values('basedOn')
+      .map(recordOf)
+      .find((id) => id && id !== research.id),
+  );
 }
 
 for (const file of facts) {
@@ -488,7 +527,9 @@ for (const file of facts) {
   record.urls = Object.fromEntries(Object.entries(urls).filter(([, value]) => value));
 
   const parent = parentOf.get(research.id);
-  const category = ownCategories.get(research.id).length ? ownCategories.get(research.id) : (ownCategories.get(parent) ?? []);
+  const category = ownCategories.get(research.id).length
+    ? ownCategories.get(research.id)
+    : (ownCategories.get(parent) ?? []);
   if (category.length) record.category = category;
   if (research.description) record.description = String(research.description).slice(0, 200);
   record.status = statusOf[research.status] ?? 'active';
@@ -499,7 +540,11 @@ for (const file of facts) {
     mapped(first('maintainerType'), {}, vocab('maintainerType'))[0];
   if (maintainerType) {
     record.maintainerType = maintainerType;
-    ruled.maintainerType[maintainerTypeOf({ maintainer: text(first('maintainer') ?? ''), repoOwnerType: first('repoOwnerType') }) ? 'rule' : 'research']++;
+    ruled.maintainerType[
+      maintainerTypeOf({ maintainer: text(first('maintainer') ?? ''), repoOwnerType: first('repoOwnerType') })
+        ? 'rule'
+        : 'research'
+    ]++;
   }
   if (first('parent')) record.parent = text(first('parent'));
   const firstRelease = number(first('firstRelease'));
@@ -528,7 +573,10 @@ for (const file of facts) {
   // The lowest version named, cut to what changes at most yearly: Node majors, PHP and Python minors.
   const runtimeMin = String(first('runtimeMin') ?? '').match(/(\d+)(?:\.(\d+))?/);
   if (runtimeMin) {
-    const name = String(first('runtimeMin')).match(/^[a-z]+/i)?.[0]?.toLowerCase() ?? runtime[0];
+    const name =
+      String(first('runtimeMin'))
+        .match(/^[a-z]+/i)?.[0]
+        ?.toLowerCase() ?? runtime[0];
     const minor = runtimeMin[2] !== undefined && name !== 'node' ? `.${runtimeMin[2]}` : '';
     // Only a runtime the dictionary knows: a bare number, a Go or Rust toolchain or an ES level is not a runtime minimum.
     if (name && name !== 'binary' && vocab('runtime').has(name)) record.runtimeMin = `${name} ${runtimeMin[1]}${minor}`;
@@ -563,14 +611,21 @@ for (const file of facts) {
   const paidEdition = [...(byField.get('paidEdition') ?? []), ...(byField.get('licenseModel') ?? [])].some(
     (fact) => fact.quote && (fact.field === 'paidEdition' || asList(fact.value).includes('open-core')),
   );
-  const derivedModel = licenseModelOf({ status: record.status, licenses: all('license').map(String), repository: urls.repository, sourcePublic: first('sourcePublic'), paidEdition });
+  const derivedModel = licenseModelOf({
+    status: record.status,
+    licenses: all('license').map(String),
+    repository: urls.repository,
+    sourcePublic: first('sourcePublic'),
+    paidEdition,
+  });
   const licenseModel = derivedModel ?? mapped(first('licenseModel'), {}, vocab('licenseModel'))[0];
   if (licenseModel) {
     record.licenseModel = licenseModel;
     ruled.licenseModel[derivedModel ? 'rule' : 'research']++;
   }
   // The same license stated by two sources reads once.
-  if (byField.has('license')) record.license = [...new Map(all('license').map((entry) => [lower(text(entry)), text(entry)])).values()].join(', ');
+  if (byField.has('license'))
+    record.license = [...new Map(all('license').map((entry) => [lower(text(entry)), text(entry)])).values()].join(', ');
 
   // A dot release goes stale within weeks; the major holds for a year or more. Under 1.0 the minor moves as fast, so 0.x stays 0.
   let version = String(first('currentMajor') ?? '').match(/(\d+)(?:\.(\d+))?/);
@@ -579,7 +634,13 @@ for (const file of facts) {
   if (version) record.currentMajor = version[1];
   if (first('latestReleaseDate')) record.latestReleaseDate = String(first('latestReleaseDate')).slice(0, 10);
 
-  const adoption = { githubStargazers: 'githubStargazers', packagistDownloads: 'packagistDownloads', npmWeeklyDownloads: 'npmWeeklyDownloads', contributors: 'contributors', pluginCount: 'pluginCount' };
+  const adoption = {
+    githubStargazers: 'githubStargazers',
+    packagistDownloads: 'packagistDownloads',
+    npmWeeklyDownloads: 'npmWeeklyDownloads',
+    contributors: 'contributors',
+    pluginCount: 'pluginCount',
+  };
   for (const [field, id] of Object.entries(adoption)) {
     const held = number(first(field));
     if (held !== undefined) record[id] = held;
@@ -626,8 +687,12 @@ for (const file of facts) {
     }));
 
   const kind = record.category?.[0] ?? 'framework';
-  const labels = Object.fromEntries((dictionary.find((entry) => entry.id === 'language')?.values ?? []).map((v) => [v.id, v.label]));
-  const short = Object.fromEntries((dictionary.find((entry) => entry.id === 'category')?.values ?? []).map((v) => [v.id, v.short]));
+  const labels = Object.fromEntries(
+    (dictionary.find((entry) => entry.id === 'language')?.values ?? []).map((v) => [v.id, v.label]),
+  );
+  const short = Object.fromEntries(
+    (dictionary.find((entry) => entry.id === 'category')?.values ?? []).map((v) => [v.id, v.short]),
+  );
   record.figure = {
     emoji: emojiOf[kind] ?? '🧩',
     color: palette[hash(record.id) % palette.length],
@@ -643,9 +708,11 @@ for (const file of facts) {
   if (record.category?.length && !holdsContent) notApplicable.push(...contentFields);
   if (record.category?.length && !deployed) notApplicable.push('hosting', 'runtimeMin');
   if (record.language && record.language !== 'php') notApplicable.push('packagistDownloads');
-  if (record.language && !['javascript', 'typescript'].includes(record.language)) notApplicable.push('npmWeeklyDownloads');
+  if (record.language && !['javascript', 'typescript'].includes(record.language))
+    notApplicable.push('npmWeeklyDownloads');
   // A library runs as part of the application that imports it.
-  const embedded = record.category?.length && record.category.every((value) => ['library', 'ui-library', 'graphics'].includes(value));
+  const embedded =
+    record.category?.length && record.category.every((value) => ['library', 'ui-library', 'graphics'].includes(value));
   if (embedded && record.status !== 'hosted-service') notApplicable.push('runsAs');
   for (const field of notApplicable) if (record[field] === undefined) record[field] = null;
 
@@ -656,4 +723,5 @@ for (const file of facts) {
 }
 
 console.log(`${written} records written to ${outDir}`);
-for (const [field, { rule, research }] of Object.entries(ruled)) console.log(`${field}: ${rule} by rule, ${research} as researched`);
+for (const [field, { rule, research }] of Object.entries(ruled))
+  console.log(`${field}: ${rule} by rule, ${research} as researched`);

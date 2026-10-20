@@ -6,32 +6,32 @@ const subject = (field: string, value: { id: string; label: string }, count: num
   subjectOf(fieldOf.get(field)!, value, count);
 
 describe('subjectOf', () => {
-  // The bug this exists to stop: "1 provider operate in Kenya", live on
-  // /regions/kenya/ and on every other facet value held by a single record.
+  // The bug this exists to stop: "1 project are written in PHP", live on
+  // /languages/php/ and on every other facet value held by a single record.
   it('agrees with the count', () => {
-    const one = { id: 'KE', label: 'Kenya' };
-    assert.equal(subject('regions', one, 1), 'operates in Kenya');
-    assert.equal(subject('regions', one, 12), 'operate in Kenya');
+    const one = { id: 'php', label: 'PHP' };
+    assert.equal(subject('language', one, 1), 'is written in PHP');
+    assert.equal(subject('language', one, 12), 'are written in PHP');
   });
 
-  it('inflects a verb that takes -es rather than -s', () => {
-    const value = { id: 'phone', label: 'Phone' };
-    assert.equal(subject('supportChannels', value, 1), 'publishes a phone number');
-    assert.equal(subject('supportChannels', value, 9), 'publish a phone number');
+  it('inflects a verb that takes -s', () => {
+    const value = { id: 'node', label: 'Node.js' };
+    assert.equal(subject('hosting', value, 1), 'needs Node.js to host');
+    assert.equal(subject('hosting', value, 9), 'need Node.js to host');
   });
 
   it('swaps a whole word where -s would be wrong', () => {
-    const value = { id: 'independent', label: 'Independent' };
-    assert.equal(subject('ownership', value, 1), 'is independent');
-    assert.equal(subject('ownership', value, 3), 'are independent');
+    const value = { id: 'foundation', label: 'Foundation' };
+    assert.equal(subject('maintainerType', value, 1), 'is maintained by a foundation');
+    assert.equal(subject('maintainerType', value, 3), 'are maintained by a foundation');
   });
 
-  // "can be left …" and "we like …" are already right in both numbers, so they
-  // carry no marker and must come back exactly as written.
+  // The fallback for a field with no phrase carries no marker, so it must come
+  // back exactly as written in both numbers.
   it('leaves an unmarked phrase alone', () => {
-    const value = fieldOf.get('exitWithin')!.values[0]!;
-    assert.match(subject('exitWithin', value, 1), /^can be left /);
-    assert.equal(subject('exitWithin', value, 1), subject('exitWithin', value, 4));
+    const value = { id: 'MIT', label: 'MIT' };
+    assert.match(subject('license', value, 1), /^record license: /);
+    assert.equal(subject('license', value, 1), subject('license', value, 4));
   });
 
   it('never leaves an inflection marker in the rendered phrase', () => {

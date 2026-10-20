@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { fields } from './fields.ts';
+import { fieldOf, fields as dictionary } from './fields.ts';
 import { countValues } from './rows.ts';
 import { narrowing, pagesOf, pairCeiling, pairFloor, pairings, pairPath } from './pairs.ts';
 import type { ProviderRow } from './rows.ts';
@@ -12,18 +12,29 @@ import type { ProviderRow } from './rows.ts';
 const row = (id: string, facets: Record<string, string | string[]>): ProviderRow =>
   ({ id, name: id, facets, notApplicable: [] }) as unknown as ProviderRow;
 
-const field = (id: string) => fields.find((entry) => entry.id === id)!;
+const field = (id: string) => dictionary.find((entry) => entry.id === id)!;
 
-/** n records running PHP, of which `both` also operate in Germany. */
-const sample = (php: number, german: number, both: number) => [
-  ...Array.from({ length: both }, (_, i) => row(`both-${i}`, { runtimes: ['php'], regions: ['DE'] })),
-  ...Array.from({ length: php - both }, (_, i) => row(`php-${i}`, { runtimes: ['php'], regions: ['FR'] })),
-  ...Array.from({ length: german - both }, (_, i) => row(`de-${i}`, { runtimes: ['node'], regions: ['DE'] })),
+/*
+ * The dictionary declares no pairing yet, and a page needs a `titleWith` to name
+ * itself, so both are supplied here. Test files run in their own process.
+ */
+const fields = dictionary.map((entry) =>
+  entry.id === 'runtime' ? { ...entry, pairs: [{ with: 'languages' }] } : entry,
+);
+fieldOf.get('language')!.titleWith = 'written in {label}';
+
+/** n records running on Node.js, of which `both` are also written in TypeScript. */
+const sample = (node: number, typescript: number, both: number) => [
+  ...Array.from({ length: both }, (_, i) => row(`both-${i}`, { runtime: ['node'], language: 'typescript' })),
+  ...Array.from({ length: node - both }, (_, i) => row(`node-${i}`, { runtime: ['node'], language: 'javascript' })),
+  ...Array.from({ length: typescript - both }, (_, i) => row(`ts-${i}`, { runtime: ['php'], language: 'typescript' })),
 ];
 
 const pairingFor = (providers: ProviderRow[]) => {
-  const facets = [countValues(field('runtimes'), providers), countValues(field('regions'), providers)];
-  return { pairing: pairings(facets, fields).find((entry) => entry.a.id === 'runtimes' && entry.b.id === 'regions')! };
+  const facets = [countValues(field('runtime'), providers), countValues(field('language'), providers)];
+  return {
+    pairing: pairings(facets, fields).find((entry) => entry.a.id === 'runtimes' && entry.b.id === 'languages')!,
+  };
 };
 
 describe('the pairing gate', () => {
@@ -38,10 +49,10 @@ describe('the pairing gate', () => {
     const { pairing } = pairingFor(providers);
     const pages = pagesOf(pairing, providers);
 
-    const germany = pages.find((page) => page.av.id === 'php' && page.bv.id === 'DE');
-    assert.ok(germany, 'PHP and Germany should be a page');
-    assert.equal(germany.matches.length, 12);
-    assert.equal(pairPath(germany), '/runtimes/php/regions/germany/');
+    const typescript = pages.find((page) => page.av.id === 'node' && page.bv.id === 'typescript');
+    assert.ok(typescript, 'Node.js and TypeScript should be a page');
+    assert.equal(typescript.matches.length, 12);
+    assert.equal(pairPath(typescript), '/runtimes/node/languages/typescript/');
   });
 
   it('refuses one that lists too few', () => {
@@ -49,16 +60,16 @@ describe('the pairing gate', () => {
     const { pairing } = pairingFor(providers);
 
     assert.equal(
-      pagesOf(pairing, providers).some((page) => page.av.id === 'php' && page.bv.id === 'DE'),
+      pagesOf(pairing, providers).some((page) => page.av.id === 'node' && page.bv.id === 'typescript'),
       false,
     );
   });
 
   it('refuses one that narrows nothing, however many it lists', () => {
-    // Every German record also runs PHP, so the pair page is the Germany page.
+    // Every TypeScript record also runs on Node.js, so the pair page is the TypeScript page.
     const providers = sample(80, 40, 40);
     const { pairing } = pairingFor(providers);
-    const page = pagesOf(pairing, providers).find((entry) => entry.av.id === 'php' && entry.bv.id === 'DE');
+    const page = pagesOf(pairing, providers).find((entry) => entry.av.id === 'node' && entry.bv.id === 'typescript');
 
     assert.equal(narrowing(40, 80, 40), 1);
     assert.equal(page, undefined);
@@ -73,9 +84,9 @@ describe('the pairing gate', () => {
 describe('what the dictionary declares', () => {
   it('names each pairing once, in one direction', () => {
     const providers = sample(40, 30, 12);
-    const facets = [countValues(field('runtimes'), providers), countValues(field('regions'), providers)];
+    const facets = [countValues(field('runtime'), providers), countValues(field('language'), providers)];
     const both = pairings(facets, fields).map((pairing) => [pairing.a.id, pairing.b.id].sort().join('+'));
 
-    assert.deepEqual(both, [...new Set(both)]);
+    assert.deepEqual(both, ['languages+runtimes']);
   });
 });

@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: latest
+      - uses: actions/setup-node@v4
+        with:
+          # 24 rather than 22: the unit tests are TypeScript run straight through
+          # `node --test`, which needs the type stripping that ships unflagged here.
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      # The share cards from the last run, each under a key of what it draws
+      # (src/lib/og.ts). A card whose words or drawing moved has a key nothing
+      # restored, and is drawn again.
+      - uses: actions/cache@v4
+        with:
+          path: node_modules/.cache/findhost-og
+          key: og-cards-${{ github.sha }}
+          restore-keys: og-cards-
+      - run: pnpm run format
+      - run: pnpm run check
+      - run: pnpm run test
+      - run: pnpm run build
+      # Guards zod cannot express: unique ids, taxonomy coverage, and the
+      # assertion that no rank, boost or weight field has appeared anywhere.
+      - run: pnpm run validate
+      - run: pnpm run linkcheck:internal

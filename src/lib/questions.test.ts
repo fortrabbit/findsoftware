@@ -4,32 +4,32 @@ import { answerHtml, answerText, best, faqSchema, questionsFor, topicOf } from '
 
 describe('topicOf', () => {
   it('phrases a value by its facet', () => {
-    assert.equal(topicOf('software', 'Kirby'), 'Kirby hosting provider');
-    assert.equal(topicOf('regions', 'Germany'), 'hosting provider in Germany');
+    assert.equal(topicOf('languages', 'PHP'), 'web software written in PHP');
+    assert.equal(topicOf('runtimes', 'Node.js'), 'web software that runs on Node.js');
   });
 
   it('lower-cases a sentence-case label and keeps one with capitals of its own', () => {
-    assert.equal(topicOf('categories', 'Shared hosting'), 'shared hosting provider');
-    assert.equal(topicOf('categories', 'Platform as a Service'), 'Platform as a Service provider');
+    assert.equal(topicOf('categories', 'Web frameworks'), 'web framework');
+    assert.equal(topicOf('categories', 'APIs and backends'), 'APIs and backend');
   });
 
   it('prefers the note over the pattern', () => {
-    assert.equal(topicOf('categories', 'Virtual Private Servers', 'VPS provider'), 'VPS provider');
+    assert.equal(topicOf('categories', 'Site and docs generators', 'static site generator'), 'static site generator');
   });
 
   it('has no phrase for a facet that reads badly as one', () => {
-    assert.equal(topicOf('operating-system', 'Provider'), undefined);
-    assert.equal(best(undefined).q, 'Which of these providers is best?');
+    assert.equal(topicOf('license', 'MIT'), undefined);
+    assert.equal(best(undefined).q, 'Which of these is best?');
   });
 });
 
 describe('best', () => {
   it('words the answer the same way for the same page on every build', () => {
-    assert.equal(best('Kirby hosting provider').a, best('Kirby hosting provider').a);
+    assert.equal(best('web software written in PHP').a, best('web software written in PHP').a);
   });
 
   it('words it differently across pages', () => {
-    const topics = ['Kirby', 'WordPress', 'PHP', 'Node.js', 'Germany', 'France', 'VPS', 'PaaS'];
+    const topics = ['Kirby', 'WordPress', 'PHP', 'Node.js', 'Rust', 'Go', 'Astro', 'Laravel'];
     const answers = new Set(topics.map((topic) => best(topic).a));
     assert.ok(answers.size > 1);
   });
@@ -39,20 +39,16 @@ describe('questionsFor', () => {
   it('puts the value first, the facet next and the best question last', () => {
     const questions = questionsFor(
       'Kirby',
-      'Kirby hosting provider',
-      [{ q: 'Do I need special hosting for {label}?', a: '{label} runs where PHP runs.' }],
-      [{ q: 'Does Kirby need a database?', a: 'No.' }],
+      'web software written in PHP',
+      [{ q: 'Which database does {label} need?', a: '{label} stores content in files.' }],
+      [{ q: 'Is Kirby a CMS?', a: 'Yes.' }],
     );
 
     assert.deepEqual(
       questions.map(({ q }) => q),
-      [
-        'Does Kirby need a database?',
-        'Do I need special hosting for Kirby?',
-        'Who is the best Kirby hosting provider?',
-      ],
+      ['Is Kirby a CMS?', 'Which database does Kirby need?', 'What is the best web software written in PHP?'],
     );
-    assert.equal(questions[1]!.a, 'Kirby runs where PHP runs.');
+    assert.equal(questions[1]!.a, 'Kirby stores content in files.');
   });
 });
 

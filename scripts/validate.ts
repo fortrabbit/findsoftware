@@ -89,7 +89,10 @@ for (const field of fields) {
   }
 
   if (field.refresh !== undefined && field.refresh !== 'api') {
-    fail(dictionaryFile, `"${field.id}" has refresh "${field.refresh}"; the only value is api, and absent means the yearly review`);
+    fail(
+      dictionaryFile,
+      `"${field.id}" has refresh "${field.refresh}"; the only value is api, and absent means the yearly review`,
+    );
   }
 
   // A template with nowhere to put the value links every record at the same page.

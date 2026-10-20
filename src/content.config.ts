@@ -69,7 +69,10 @@ const providerFields = z
       .optional(),
 
     // Kind
-    hosting: z.array(z.enum(vocabulary('hosting'))).nullable().optional(),
+    hosting: z
+      .array(z.enum(vocabulary('hosting')))
+      .nullable()
+      .optional(),
     language: z.enum(vocabulary('language')).optional(),
     runtime: z.array(z.enum(vocabulary('runtime'))).optional(),
     runtimeMin: z.string().nullable().optional(),
@@ -97,8 +100,14 @@ const providerFields = z
     i18n: z.string().nullable().optional(),
 
     // Rendering and deploy
-    runsAs: z.array(z.enum(vocabulary('runsAs'))).nullable().optional(),
-    renderingModes: z.array(z.enum(vocabulary('renderingModes'))).nullable().optional(),
+    runsAs: z
+      .array(z.enum(vocabulary('runsAs')))
+      .nullable()
+      .optional(),
+    renderingModes: z
+      .array(z.enum(vocabulary('renderingModes')))
+      .nullable()
+      .optional(),
     installMethod: z.string().optional(),
 
     // License

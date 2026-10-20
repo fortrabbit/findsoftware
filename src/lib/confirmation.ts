@@ -113,4 +113,4 @@ export function isSelfMerging(before: string, after: string): boolean {
 /** The files a self-merging push may touch besides records. */
 export const confirmationFiles = new Set(['research/refresh-log.tsv']);
 
-export const isRecord = (path: string) => /^src\/content\/providers\/[^/]+\.md$/.test(path);
+export const isRecord = (path: string) => /^src\/content\/software\/[^/]+\.md$/.test(path);

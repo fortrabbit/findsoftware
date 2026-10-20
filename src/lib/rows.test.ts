@@ -15,79 +15,31 @@ const record = (id: string, data: Record<string, unknown>) => ({ id, data: { nam
 
 describe('toRow', () => {
   it('keeps a scalar as a scalar and a list as a list', () => {
-    const row = toRow(record('a', { category: 'paas', runtimes: ['php', 'node'] }));
-    assert.equal(row.facets.category, 'paas');
-    assert.deepEqual(row.facets.runtimes, ['php', 'node']);
+    const row = toRow(record('a', { language: 'php', runtime: ['php', 'node'] }));
+    assert.equal(row.facets.language, 'php');
+    assert.deepEqual(row.facets.runtime, ['php', 'node']);
   });
 
   it('leaves a field nobody answered out entirely', () => {
     const row = toRow(record('a', {}));
-    assert.equal(row.facets.category, undefined);
+    assert.equal(row.facets.language, undefined);
     assert.deepEqual(row.notApplicable, []);
   });
 
   /*
    * Not the same as unknown, and the difference is the whole reason the field
-   * accepts null: a panel that provisions onto your own cloud account has no
-   * regions of its own, and counting that as a gap inflates every facet.
+   * accepts null: a CSS framework has no database to support, and counting that
+   * as a gap inflates every facet.
    */
   it('separates "does not apply" from "not recorded"', () => {
-    const row = toRow(record('a', { regions: null }));
-    assert.deepEqual(row.notApplicable, ['regions']);
-    assert.equal(row.facets.regions, undefined);
+    const row = toRow(record('a', { databases: null }));
+    assert.deepEqual(row.notApplicable, ['databases']);
+    assert.equal(row.facets.databases, undefined);
   });
 
   it('drops an empty list rather than recording an empty answer', () => {
-    const row = toRow(record('a', { runtimes: [] }));
-    assert.equal(row.facets.runtimes, undefined);
-  });
-
-  describe('a derived field', () => {
-    it('answers no, not maybe, once any of its sources is recorded', () => {
-      const row = toRow(record('a', { apiAvailable: 'none' }));
-      assert.deepEqual(row.facets.automation, []);
-    });
-
-    it('stays unknown while none of its sources is recorded', () => {
-      const row = toRow(record('a', { category: 'paas' }));
-      assert.equal(row.facets.automation, undefined);
-    });
-
-    // The same rule as a plain field: `iacSupport: []` records nothing, so it
-    // cannot be the answer that turns every other value into a checked no.
-    it('treats an empty source list as not asked', () => {
-      const row = toRow(record('a', { iacSupport: [] }));
-      assert.equal(row.facets.automation, undefined);
-    });
-
-    it('matches a source that holds a list, not only a scalar', () => {
-      const row = toRow(record('a', { iacSupport: ['terraform', 'ansible'] }));
-      assert.ok((row.facets.automation as string[]).includes('iac'));
-    });
-
-    /* `*` means recorded at all, for a source with no vocabulary to name. */
-    it('takes any value at all where the source has no vocabulary', () => {
-      const row = toRow(record('a', { greenWebId: 595 }));
-      assert.deepEqual(row.facets.features, ['green']);
-    });
-
-    /*
-     * One question, two fields that can answer it. Either alone is a yes, which
-     * is what lets green energy be one value rather than the five that named our
-     * filing instead of a reader's question.
-     */
-    it('holds a value either of its sources answers', () => {
-      const own = toRow(record('a', { energyClaim: 'annual-matched' }));
-      assert.deepEqual(own.facets.features, ['green']);
-
-      const both = toRow(record('b', { energyClaim: 'annual-matched', greenWebId: 595 }));
-      assert.deepEqual(both.facets.features, ['green']);
-    });
-
-    it('is asked but unheld where a source is recorded as the value that does not count', () => {
-      const row = toRow(record('a', { energyClaim: 'none-published' }));
-      assert.deepEqual(row.facets.features, []);
-    });
+    const row = toRow(record('a', { runtime: [] }));
+    assert.equal(row.facets.runtime, undefined);
   });
 });
 
@@ -98,36 +50,37 @@ describe('countValues', () => {
     answers.map((answer, index) => toRow(record(`r${index}`, answer === undefined ? {} : { category: answer })));
 
   it('counts each value against the records that hold it', () => {
-    const facet = countValues(category, rows('paas', 'paas', 'iaas'));
-    assert.equal(facet.values.find((value) => value.id === 'paas')?.count, 2);
-    assert.equal(facet.values.find((value) => value.id === 'iaas')?.count, 1);
+    const facet = countValues(category, rows('cms', 'cms', 'framework'));
+    assert.equal(facet.values.find((value) => value.id === 'cms')?.count, 2);
+    assert.equal(facet.values.find((value) => value.id === 'framework')?.count, 1);
   });
 
   it('reports what nobody recorded rather than dropping it', () => {
-    const facet = countValues(category, rows('paas', undefined, undefined));
+    const facet = countValues(category, rows('cms', undefined, undefined));
     assert.equal(facet.unknown, 2);
     assert.equal(facet.notApplicable, 0);
   });
 
   /* Out of the denominator entirely: not known, and not missing either. */
   it('takes "does not apply" out of the unknown count', () => {
-    const facet = countValues(category, rows('paas', null, undefined));
+    const facet = countValues(category, rows('cms', null, undefined));
     assert.equal(facet.notApplicable, 1);
     assert.equal(facet.unknown, 1);
   });
 
   /*
-   * Recorded and shown on the record, never a filter and so never a page. "No
-   * shell" is a fact worth reading and not a list anybody wants.
+   * Recorded and shown on the record, never a filter and so never a page. The
+   * dictionary has no such value yet, so the field is built here.
    */
   it('leaves a noFilter value out of the rows', () => {
-    const shell = fieldOf.get('sshAccess')!;
-    const unfiltered = shell.values.filter((value) => value.noFilter).map((value) => value.id);
-    assert.ok(unfiltered.length > 0, 'sshAccess should still have a noFilter value');
+    const field = {
+      ...category,
+      values: [...category.values, { id: 'unfiltered', label: 'Unfiltered', noFilter: true }],
+    };
 
-    const facet = countValues(shell, []);
-    for (const id of unfiltered) assert.ok(!facet.values.some((value) => value.id === id));
-    assert.equal(facet.values.length, shell.values.length - unfiltered.length);
+    const facet = countValues(field, []);
+    assert.ok(!facet.values.some((value) => value.id === 'unfiltered'));
+    assert.equal(facet.values.length, category.values.length);
   });
 
   it('names the facet by its URL segment, not by its field', () => {
