@@ -34,6 +34,8 @@ FindSoftware is published by [fortrabbit](https://www.fortrabbit.com), a hosting
 
 Records are researched by AI agents from primary sources. A person reads them after they are published and corrects what is wrong. The data is licensed CC BY 4.0, the code MIT.
 
+Logos belong to the projects. Each one was fetched from the project's own site and is served from here, so your browser never asks a project's site for anything. They identify the software and nothing more; a project that wants its logo gone gets it removed.
+
 ## State
 
 This is an early version built from the first research batch. Fields and filters will change.
