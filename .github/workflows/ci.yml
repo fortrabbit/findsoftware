@@ -32,6 +32,9 @@ jobs:
       - run: pnpm run check
       - run: pnpm run test
       - run: pnpm run build
+      # Against `astro preview` of the build above, with and without JavaScript.
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm run test:e2e
       # Guards zod cannot express: unique ids, taxonomy coverage, and the
       # assertion that no rank, boost or weight field has appeared anywhere.
       - run: pnpm run validate

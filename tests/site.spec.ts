@@ -1,88 +1,122 @@
-import { readdirSync, readFileSync } from 'node:fs';
-import { expect, test } from '@playwright/test';
+import { expect, test, type Page } from '@playwright/test';
 
 /*
  * These cover the four things that would be worst to break silently: the list
- * everyone lands on, the promises the record page makes about its own data, the
+ * everyone lands on, the promises a record page makes about its own data, the
  * governance rules that are otherwise only words on a policy page, and the
  * no-JavaScript fallback the whole distribution thesis rests on.
- */
-
-/*
- * Counted from the records, not written down. The page and this file reach the
- * number by different routes — frontmatter on disk against rendered rows — so
- * a record that quietly falls out of the register still fails, and adding one
- * does not send someone editing assertions until they stop meaning anything.
- */
-const records = new URL('../src/content/software/', import.meta.url);
-
-/*
- * Two ways to be out of the register: hidden, which keeps no place anywhere, and
- * beside it, which keeps a page and a checkbox. Listed here rather than imported
- * so the number still arrives by a different route from the page's.
  *
- * A status is one way beside; selling no hosting is the other. Every category a
- * record holds has to be one of those five for it to leave, which is what keeps
- * a registrar that also sells hosting in the register.
+ * Records are added daily, so nothing here counts the dataset. Where a number
+ * matters it is read off the page and checked against the same page's rows,
+ * which reach it by a different route.
  */
-const outside = new Set(['stub', 'discontinued', 'unlisted', 'anonymous']);
-const notHosting = new Set(['server-management', 'domains-dns', 'mail', 'dbaas', 'git-hosting']);
 
-const listed = readdirSync(records).filter((file) => {
-  if (!file.endsWith('.md')) return false;
-  const source = readFileSync(new URL(file, records), 'utf8');
+/* Long-standing listed records. Stubs are found through /stubs/, since which records are stubs moves. */
+const listedRecord = { path: '/wordpress/', name: 'WordPress' };
+const builtOnIt = '/woocommerce/';
+/* Records whose prose links out; at least one of them must, or the prose check proves nothing. */
+const proseRecords = ['/astro/', '/hugo/', '/django/'];
 
-  const status = source.match(/^status: *(\S+)/m)?.[1];
-  if (status !== undefined && outside.has(status)) return false;
+const rows = '[data-find-results] .provider-list > li';
+const affiliate = /[?&](ref|aff|affiliate|partner|utm_[a-z]+|fpr|via)=/i;
 
-  const held = source.match(/^category:\n((?: *- *\S+\n)+)/m)?.[1];
-  const categories = held
-    ? held
-        .trim()
-        .split('\n')
-        .map((line) => line.replace(/^ *- */, ''))
-    : [];
+const leadingNumber = async (page: Page, selector: string) =>
+  Number((await page.locator(selector).first().innerText()).match(/^\d+/)?.[0]);
 
-  return categories.length === 0 || !categories.every((value) => notHosting.has(value));
-}).length;
+const firstStub = async (page: Page) => {
+  await page.goto('/stubs/');
+  const link = page.locator(`${rows} .provider-name a`).first();
+  return { href: (await link.getAttribute('href'))!, name: await link.innerText() };
+};
 
-test.describe('the one editorial mark', () => {
-  /*
-   * A heart, and nothing else. It replaced a scoring system that computed a
-   * number and then let a person move it by hand — after eighteen adjustments
-   * the arithmetic was decoration, and a boolean says the same thing without
-   * implying a precision nobody had.
-   */
-  test('marks the ones we like, and marks nothing else', async ({ page }) => {
+const byName = (a: string, b: string) => a.localeCompare(b, 'en');
+
+test.describe('the register', () => {
+  test('is alphabetical by default', async ({ page }) => {
     await page.goto('/');
-
-    const hearts = page.locator('[data-find-results] .favorite-badge');
-    expect(await hearts.count()).toBeGreaterThan(5);
-
-    /* Every heart says what it is to a screen reader, not only to a pointer. */
-    await expect(hearts.first()).toContainText(/one we like/i);
-
-    /* And no score anywhere: that is the thing this replaced. */
-    await expect(page.locator('.provider-signal')).toHaveCount(0);
-  });
-
-  test('the register is alphabetical by default', async ({ page }) => {
-    await page.goto('/');
-    const names = await page.locator('[data-find-results] .provider-name a').allInnerTexts();
-    const sorted = [...names].sort((a, b) => a.replace(/^the /i, '').localeCompare(b.replace(/^the /i, ''), 'en'));
-    expect(names).toEqual(sorted);
+    const names = await page.locator(`${rows} .provider-name a`).allInnerTexts();
+    expect(names.length).toBeGreaterThan(0);
+    expect(names).toEqual([...names].sort(byName));
     await expect(page.locator('.sort-links a[aria-current="page"]')).toHaveText('A–Z');
   });
 
+  /* The count is a sentence and the rows are markup: two routes to one number. */
+  test('says how many it lists, and lists that many', async ({ page }) => {
+    await page.goto('/');
+    const said = await leadingNumber(page, '[data-find-count]');
+    await expect(page.locator(rows)).toHaveCount(said);
+  });
+
   /*
-   * Two more orders, both by a date and neither a ranking: when a record was
-   * last checked, and when it entered the register. Each is a page, so it works
-   * without JavaScript and can be linked to, and each holds every row the
-   * register holds.
+   * Astro drops a whitespace-only text node between two expressions, so a count
+   * written as `{n} {noun}` in markup renders "150records" as soon as a
+   * formatter puts the two on separate lines. The strings are built in
+   * frontmatter, and this asserts the space.
+   */
+  test('puts a space between a number and the noun it counts', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.locator('[data-find-count]')).toHaveText(/^\d+ projects?\.$/);
+
+    for (const link of await page.locator('[data-find-aside] a').all()) {
+      await expect(link).toHaveText(/^\d+ [A-Za-z]/);
+    }
+
+    await page.goto('/categories/');
+    await expect(page.locator('.annotation').first()).toHaveText(/^\d+ values? in use\./);
+  });
+
+  /*
+   * Anchors are linked from prose, so they have to exist — scoped to the
+   * results, because a bare #w also matches whatever a browser extension
+   * injects into the page.
+   */
+  test('groups the rows under letters a link can reach', async ({ page }) => {
+    await page.goto('/');
+    const results = page.locator('[data-find-results]');
+    await expect(results.locator('#w')).toBeVisible();
+    await expect(results.locator(`#w li[data-record="wordpress"]`)).toBeVisible();
+  });
+
+  test('every row carries a tile, so a missing logo never looks broken', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.locator('[data-find-results] .provider-tile')).toHaveCount(await page.locator(rows).count());
+  });
+
+  /*
+   * Adoption figures are data, never an order: no sort, filter or facet uses
+   * them. The two other orders are both by a date the project stands behind.
+   */
+  test('offers no order or filter by adoption figures', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.locator('.sort-links a')).toHaveText(['A–Z', 'Updated', 'Added']);
+
+    const facets = await page.locator('.find-facet-title > span:first-child').allInnerTexts();
+    expect(facets.length).toBeGreaterThan(0);
+    for (const facet of facets) expect(facet).not.toMatch(/star|download|plugin|contributor|score|rating/i);
+
+    await expect(page.locator('.provider-signal, .favorite-badge, [class*="rating"], [class*="score"]')).toHaveCount(0);
+  });
+
+  /*
+   * Records sit at the root, beside the facet indexes and the written pages.
+   * That is one namespace shared by three kinds of thing, which validate guards
+   * — this is the other half: that a record answers there.
+   */
+  test('serves a record from the root', async ({ page }) => {
+    await page.goto(listedRecord.path);
+    // Scoped to the article: a bare h1 also matches whatever an extension injects.
+    await expect(page.locator('article h1')).toHaveText(listedRecord.name);
+  });
+});
+
+test.describe('the register by date', () => {
+  /*
+   * Each order is a page, so it works without JavaScript and can be linked to,
+   * and each holds every row the register holds.
    */
   test('offers the same rows by date last checked and by date added, as pages', async ({ page }) => {
     await page.goto('/');
-    const total = await page.locator('[data-find-results] li[data-record]').count();
+    const total = await page.locator(rows).count();
 
     for (const [path, label] of [
       ['/updated/', 'Updated'],
@@ -90,285 +124,199 @@ test.describe('the one editorial mark', () => {
     ]) {
       await page.goto(path);
       await expect(page.locator('.sort-links a[aria-current="page"]')).toHaveText(label);
-      expect(await page.locator('[data-find-results] li[data-record]').count()).toBe(total);
+      await expect(page.locator(rows)).toHaveCount(total);
 
       /* One list, no subheadings: a heading per month would date the register in its own words. */
       await expect(page.locator('[data-find-results] h2')).toHaveCount(0);
     }
+  });
 
-    /* Newest check first, and the records nobody has checked at the end rather than counted as oldest. */
-    await page.goto('/updated/');
-    const rows = page.locator('[data-find-results] li[data-record] .provider-name a');
-    const first = await rows.first().getAttribute('href');
-    const last = await rows.last().getAttribute('href');
+  test('puts the newest date first', async ({ page }) => {
+    const data = await (await page.request.get('/software.json')).json();
+    const dates = new Map<string, Record<string, string | undefined>>(
+      data.providers.map((record: Record<string, string>) => [record.id, record]),
+    );
 
-    await page.goto(first!);
-    const newest = await page.locator('.record-meta time').first().getAttribute('datetime');
-    expect(newest).toMatch(/^\d{4}-\d{2}-\d{2}$/);
-    expect(Date.parse(newest!)).toBeGreaterThan(Date.now() - 400 * 86_400_000);
-
-    await page.goto(last!);
-    await expect(page.locator('.record-meta')).not.toContainText('Last reviewed');
+    for (const [path, field] of [
+      ['/updated/', 'checkedAt'],
+      ['/added/', 'addedAt'],
+    ]) {
+      await page.goto(path);
+      const ids = await page
+        .locator(rows)
+        .evaluateAll((items) => items.map((item) => item.getAttribute('data-record')));
+      const held = ids.map((id) => dates.get(id!)?.[field]).filter((date): date is string => Boolean(date));
+      expect(held.length, `${path} has dated rows`).toBeGreaterThan(0);
+      expect(held, `${path} is newest first`).toEqual([...held].sort().reverse());
+    }
   });
 });
 
-test.describe('the register', () => {
-  test('lists every record, grouped and anchored', async ({ page }) => {
-    await page.goto('/');
-
-    const rows = page.locator('[data-find-results] .provider-list > li');
-    await expect(rows).toHaveCount(listed);
-
-    /*
-     * Anchors are linked from prose and from the map, so they have to exist —
-     * scoped to the results, because a bare #h also matches whatever a browser
-     * extension injects into the page, and did so intermittently.
-     */
-    const results = page.locator('[data-find-results]');
-    await expect(results.locator('#other')).toBeVisible();
-    await expect(results.locator('#h')).toBeVisible();
-
-    // The numeric group says what it holds rather than repeating its own anchor.
-    await expect(results.locator('#other h2')).toContainText('0–9');
+test.describe('a facet and its values', () => {
+  test('the facet lists its values, each a link to its own page', async ({ page }) => {
+    await page.goto('/categories/');
+    await expect(page.locator('h1')).toHaveText('Categories');
+    await expect(page.locator('main a[href="/categories/cms/"]')).toBeVisible();
   });
 
-  /*
-   * The register itself no longer says it: the letters are the order, and the
-   * sentence sat a filter panel away from the list it described. A list that
-   * names its own subject still says it, and that is where the claim has to
-   * hold, because position is not ranking.
-   */
-  test('announces its order where it is not obvious', async ({ page }) => {
-    await page.goto('/software/wordpress/');
+  test('a value is the register narrowed, alphabetical and saying so', async ({ page }) => {
+    await page.goto('/categories/cms/');
+
+    await expect(page.locator('h1')).toHaveText('Content management systems');
+    await expect(page.locator('.crumb a[href="/categories/"]')).toBeVisible();
+
+    /* Position on a list that names its subject is not ranking, so the list says how it is ordered. */
     await expect(page.locator('.annotation').first()).toContainText('alphabetically');
+
+    const names = await page.locator(`${rows} .provider-name a`).allInnerTexts();
+    expect(names).toContain(listedRecord.name);
+    expect(names).toEqual([...names].sort(byName));
+
+    const said = await leadingNumber(page, '.annotation');
+    await expect(page.locator(rows)).toHaveCount(said);
   });
 
-  /*
-   * Astro drops a whitespace-only text node between two expressions, so a count
-   * written as `{n} {noun}` in markup renders "150records" as soon as a
-   * formatter puts the two on separate lines. It shipped on 158 pages once and
-   * came back the next time Prettier reflowed the file, which is why the
-   * strings are built in frontmatter and why this asserts the space.
-   */
-  test('puts a space between a number and the noun it counts', async ({ page }) => {
-    await page.goto('/');
-    await expect(page.locator('[data-find-count]')).toHaveText(/^\d+ web hosts\.$/);
-
-    /* Same hazard, both places a group beside the register is named: a count and a word. */
-    for (const link of await page.locator('[data-find-summary] a, .beside-links a').all()) {
-      await expect(link).toHaveText(/^\d+ [A-Za-z]/);
-    }
-
-    await page.goto('/software/');
-    await expect(page.locator('.annotation').first()).toHaveText(/^\d+ values in use\./);
-  });
-
-  test('every row carries a tile, so a missing figure never looks broken', async ({ page }) => {
-    await page.goto('/');
-    const rows = page.locator('[data-find-results] .provider-list > li');
-    await expect(page.locator('[data-find-results] .provider-tile')).toHaveCount(await rows.count());
-  });
-
-  /*
-   * Records sit at the root, beside the facet indexes and the written pages.
-   * That is one namespace shared by three kinds of thing, which validate guards
-   * — this is the other half: that a record actually answers there.
-   */
-  test('serves a record from the root', async ({ page }) => {
-    // Scoped to the article: a bare h1 also matches whatever a browser
-    // extension injects, which is why the anchors above are scoped too.
-    await page.goto('/hetzner/');
-    await expect(page.locator('article h1')).toHaveText('Hetzner');
+  test('a record links each value it holds to that value page', async ({ page }) => {
+    await page.goto(listedRecord.path);
+    await expect(page.locator('article a[href="/categories/cms/"]').first()).toBeVisible();
   });
 });
 
 test.describe('a record', () => {
-  test('shows only what is held, and names the rest', async ({ page }) => {
-    await page.goto('/hetzner/');
-
-    const values = page.locator('.fact-list > dd');
-    await expect(values.first()).toBeVisible();
-    // The wall of question marks is the thing this replaced.
-    await expect(page.locator('.fact-list > dd', { hasText: /^\?$/ })).toHaveCount(0);
-
-    await expect(page.locator('.missing-fields summary')).toContainText('not recorded yet');
-  });
-
   test('marks sourced facts and links them to their source', async ({ page }) => {
-    await page.goto('/hetzner/');
+    await page.goto(listedRecord.path);
 
-    const marker = page.locator('.footnote-ref').first();
-    await expect(marker).toBeVisible();
+    const markers = page.locator('article .footnote-ref');
+    await expect(markers.first()).toBeVisible();
 
-    const target = await marker.getAttribute('href');
-    await expect(page.locator(target!)).toBeVisible();
-    // The date a source was read, which is the whole claim a citation here makes.
-    await expect(page.locator('.sources li').first().locator('.source-date')).toHaveText(/^\d{4}-\d{2}-\d{2}$/);
-  });
-
-  test('sends every outbound link with rel=nofollow, and hands the provider the record path', async ({ page }) => {
-    await page.goto('/hetzner/');
-    for (const link of await page.locator('.record-links a[href^="http"]').all()) {
-      await expect(link).toHaveAttribute('rel', 'nofollow');
-      // Against the site-wide strict-origin header: a provider clicking their
-      // own link lands on their analytics as the record rather than the domain.
-      await expect(link).toHaveAttribute('referrerpolicy', 'no-referrer-when-downgrade');
+    /* Every marker lands on a source, not only the first. */
+    for (const target of new Set(await markers.evaluateAll((refs) => refs.map((ref) => ref.getAttribute('href'))))) {
+      await expect(page.locator(`.sources ${target}`), `${target} exists`).toHaveCount(1);
     }
+
+    // The date a source was read, which is the whole claim a citation here makes.
+    for (const date of await page.locator('.sources li .source-date').allInnerTexts()) {
+      expect(date).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+    }
+    await expect(page.locator('.sources li a[href^="http"]').first()).toBeVisible();
   });
 
-  test('holds the prose to the same policy, which it used to escape', async ({ page }) => {
-    await page.goto('/vercel/');
+  /* Absent means unknown, and unknown is left out rather than drawn as a placeholder. */
+  test('shows only what is held', async ({ page }) => {
+    await page.goto(listedRecord.path);
+    await expect(page.locator('.fact-list > dd').first()).toBeVisible();
+    await expect(page.locator('.fact-list > dd', { hasText: /^(\?|unknown|n\/a)$/i })).toHaveCount(0);
+  });
 
-    const links = await page.locator('.record-prose a[href^="http"]').all();
+  test('sends every outbound link with rel=nofollow, and hands the project the record path', async ({ page }) => {
+    await page.goto(listedRecord.path);
+
+    const links = await page.locator('.record-links a[href^="http"], .social-links a, .sources a[href^="http"]').all();
     expect(links.length).toBeGreaterThan(0);
 
     for (const link of links) {
       await expect(link).toHaveAttribute('rel', 'nofollow');
+      // Against the site-wide strict-origin header: a project clicking its own
+      // link lands on its analytics as the record rather than the domain.
       await expect(link).toHaveAttribute('referrerpolicy', 'no-referrer-when-downgrade');
     }
   });
+
+  test('holds the prose to the same policy', async ({ page }) => {
+    let seen = 0;
+
+    for (const path of proseRecords) {
+      await page.goto(path);
+      for (const link of await page.locator('.record-prose a[href^="http"]').all()) {
+        seen += 1;
+        await expect(link).toHaveAttribute('rel', 'nofollow');
+        await expect(link).toHaveAttribute('referrerpolicy', 'no-referrer-when-downgrade');
+      }
+    }
+
+    expect(seen, 'at least one fixture has an outbound link in its prose').toBeGreaterThan(0);
+  });
+
+  /* Shown with the reason they do not compare, wherever they are shown. */
+  test('links its adoption figures to why they do not compare', async ({ page }) => {
+    await page.goto(listedRecord.path);
+    await expect(page.locator('article a[href="/about/#adoption-figures"]')).toBeVisible();
+
+    await page.goto('/about/');
+    await expect(page.locator('#adoption-figures')).toBeVisible();
+  });
+
+  /* Software built on other software is its own record, and says what it is built on. */
+  test('links to the software it is built on', async ({ page }) => {
+    await page.goto(builtOnIt);
+    await expect(page.locator(`article a[href="${listedRecord.path}"]`).first()).toBeVisible();
+  });
 });
 
-test.describe('a combination of two facets', () => {
-  test('is a real page at a real address, with the narrowing in the path', async ({ page }) => {
-    await page.goto('/runtimes/php/regions/germany/');
-
-    await expect(page.locator('h1')).toHaveText('PHP hosting in Germany');
-    await expect(page.locator('[data-find-results] li[data-record]').first()).toBeVisible();
-
-    /* Both parents, because the page belongs to both. */
-    await expect(page.locator('.crumb a')).toHaveCount(2);
-  });
-
+test.describe('the groups beside the register', () => {
   /*
-   * The reason this is not a doorway page. Pin the second facet and the clauses
-   * that varied on a value page stop varying, so the summary has to describe the
-   * intersection against its parents instead of counting it again.
+   * The repo holds more records than the register shows. The hidden ones are
+   * reachable, because a decision nobody can see is not a decision, but they
+   * are opt-in and never in the count. The way in is a link in the sentence
+   * that counts the register, so it works without scripting and can be crawled.
    */
-  test('says something its own that the neighbouring combination does not', async ({ page }) => {
-    await page.goto('/runtimes/php/regions/germany/');
-    const german = await page.locator('.annotation').first().innerText();
+  test('stubs are out of the register, and have a page of their own', async ({ page }) => {
+    await page.goto('/');
+    await page.locator('[data-find-aside] a[href="/stubs/"]').click();
 
-    await page.goto('/runtimes/node/regions/germany/');
-    const node = await page.locator('.annotation').first().innerText();
+    /* The heading is the word that was clicked, so arriving needs no second reading. */
+    await expect(page.locator('h1')).toHaveText('Stubs');
+    await expect(page.locator(rows).first()).toBeVisible();
 
-    expect(german).not.toEqual(node);
-    expect(german).toContain('run PHP and operate in Germany');
+    const said = await leadingNumber(page, '.annotation');
+    await expect(page.locator(rows)).toHaveCount(said);
+
+    const stub = await firstStub(page);
+    await page.goto('/');
+    await expect(page.locator(`[data-find-results] a[href="${stub.href}"]`)).toHaveCount(0);
   });
 
-  /*
-   * From both parents, not one. The path has a direction and the pairing is
-   * declared on one side, but /regions/germany/ is half of this page too — and
-   * linking it from the declaring side only left the other half with no way
-   * through at all.
-   */
-  test('is reachable from either value page it narrows, without JavaScript', async ({ page }) => {
-    await page.goto('/runtimes/php/');
-    await expect(page.locator('.pair-links a[href="/runtimes/php/regions/germany/"]')).toBeVisible();
-
-    await page.goto('/regions/germany/');
-    await expect(page.locator('.pair-links a[href="/runtimes/php/regions/germany/"]')).toBeVisible();
+  test('a stub keeps its record page', async ({ page }) => {
+    const stub = await firstStub(page);
+    await page.goto(stub.href);
+    await expect(page.locator('article h1')).toHaveText(stub.name);
   });
 
-  /* Above the register, not under it: under 114 records it was nine screens down. */
-  test('offers the combinations before the list rather than after it', async ({ page }) => {
-    await page.goto('/runtimes/php/');
+  test('each group is its own list, not appended to the register', async ({ page }) => {
+    await page.goto('/');
+    const listed = await page.locator(rows).count();
 
-    const block = await page.locator('.pair-links').first().boundingBox();
-    const list = await page.locator('[data-find-results]').boundingBox();
-    expect(block!.y).toBeLessThan(list!.y);
+    for (const [path, heading] of [
+      ['/defunct/', 'Defunct'],
+      ['/hosted/', 'Hosted services'],
+      ['/boundary/', 'Boundary cases'],
+    ]) {
+      await page.goto(path);
+      await expect(page.locator('h1')).toHaveText(heading);
+      const shown = await page.locator(rows).count();
+      expect(shown, `${path} lists something`).toBeGreaterThan(0);
+      expect(shown, `${path} is the group alone`).toBeLessThan(listed);
+    }
   });
 
-  /*
-   * A scale keeps its scale. Everything else is scanned for a particular value
-   * rather than for the biggest one, and the block shows no counts to order by.
-   */
-  test('orders the ways in for scanning, and a price scale by price', async ({ page }) => {
-    await page.goto('/runtimes/php/');
-
-    const countries = await page
-      .locator('.pair-links', { hasText: 'By regions' })
-      .locator('.pair-line a')
-      .allInnerTexts();
-    expect(countries).toEqual([...countries].sort((a, b) => a.localeCompare(b, 'en')));
-
-    const bands = await page
-      .locator('.pair-links', { hasText: 'By entry price' })
-      .locator('.pair-line a')
-      .allInnerTexts();
-    expect(bands[0]).toContain('Under $5');
-  });
-
-  test('answers the price question people type', async ({ page }) => {
-    await page.goto('/regions/germany/entry-price/under-5-a-month/');
-    await expect(page.locator('h1')).toHaveText('Hosting in Germany under $5 a month');
-  });
-
-  /* Deleting the last segment of a URL that works must not land between two pages. */
-  test('keeps the rung above it', async ({ page }) => {
-    await page.goto('/runtimes/php/regions/');
-
-    await expect(page.locator('h1')).toContainText('PHP hosting');
-    await expect(page.locator('.pair-list a').first()).toBeVisible();
-  });
-
-  test('is exported as markdown like every other list', async ({ page }) => {
-    const answer = await page.request.get('/runtimes/php/regions/germany.md');
-    expect(answer.status()).toBe(200);
-    expect(await answer.text()).toContain('# PHP hosting in Germany');
-  });
-
-  /* A pairing nobody switched on must not have produced anything. */
-  test('does not exist for a pairing left in draft', async ({ page }) => {
-    const answer = await page.request.get('/runtimes/php/pricing/free-trial/');
-    expect(answer.status()).toBe(404);
+  /* The lists the register panel offers are links too, so a crawler reaches them. */
+  test('the register panel links each list to its own page', async ({ page }) => {
+    await page.goto('/');
+    await page.locator('.find-more > summary').click();
+    const box = page.locator('[aria-labelledby="facet-register"]');
+    await expect(box.locator('a[href="/hosted/"]')).toBeVisible();
+    await expect(box.locator('a[href="/boundary/"]')).toBeVisible();
   });
 });
 
 test.describe('governance, as behaviour rather than policy text', () => {
   test('the sitemap lists no page that asks not to be indexed', async ({ page }) => {
+    const stub = await firstStub(page);
     const sitemap = await (await page.request.get('/sitemap.xml')).text();
+
+    expect(sitemap).toContain(`${listedRecord.path}</loc>`);
     expect(sitemap).not.toContain('/stubs/</loc>');
-  });
-
-  test('fortrabbit sits in alphabetical position and discloses itself', async ({ page }) => {
-    await page.goto('/');
-
-    const names = await page.locator('[data-find-results] .provider-name a').allInnerTexts();
-    const ours = names.findIndex((name) => name === 'fortrabbit');
-    expect(ours).toBeGreaterThan(0);
-
-    const sorted = [...names].sort((a, b) => a.localeCompare(b, 'en'));
-    expect(names).toEqual(sorted);
-
-    /*
-     * The disclosure is on our own record and in the machine-readable copy, not
-     * as a marker beside the name in every list: a claim about us repeated next
-     * to a hundred and seventy-five providers who had made no such claim, while
-     * the one page where it matters said it in passing.
-     *
-     * Written in the record's prose rather than drawn by the template, so this
-     * asserts that the page says it — not how it came to. What may not change is
-     * that a reader of our own record learns who publishes the register.
-     */
-    await page.goto('/fortrabbit/');
-    await expect(page.locator('article')).toContainText(/we publish/i);
-
-    await page.goto('/');
-
-    /* Same sentence, one source: the export carries the record's prose. */
-    const record = await page.request.get('/fortrabbit.md');
-    expect(await record.text()).toMatch(/we publish/i);
-  });
-
-  test('carries no affiliate parameters anywhere', async ({ page }) => {
-    await page.goto('/');
-    const hrefs = await page
-      .locator('a[href^="http"]')
-      .evaluateAll((links) => links.map((link) => (link as HTMLAnchorElement).href));
-    for (const href of hrefs) {
-      expect(href).not.toMatch(/[?&](ref|aff|affiliate|partner|utm_[a-z]+|fpr|via)=/i);
-    }
+    expect(sitemap).not.toContain(`${stub.href}</loc>`);
   });
 
   test('stays out of search engines until the flag says otherwise', async ({ page }) => {
@@ -380,6 +328,81 @@ test.describe('governance, as behaviour rather than policy text', () => {
     const robots = await page.request.get('/robots.txt');
     expect(await robots.text()).toContain('Disallow: /');
   });
+
+  test('carries no affiliate parameters on the register', async ({ page }) => {
+    await page.goto('/');
+    const hrefs = await page
+      .locator('a[href^="http"]')
+      .evaluateAll((links) => links.map((link) => (link as HTMLAnchorElement).href));
+    for (const href of hrefs) expect(href).not.toMatch(affiliate);
+  });
+
+  /* Every listed record, read through its markdown copy, which carries every link and source the page does. */
+  test('carries no affiliate parameters in any record', async ({ request }) => {
+    const records = (await (await request.get('/software.json')).json()).providers as { href: string }[];
+    expect(records.length).toBeGreaterThan(0);
+
+    // In batches: all at once and `astro preview` drops connections.
+    const copies: { href: string; text: string }[] = [];
+    for (let start = 0; start < records.length; start += 20) {
+      copies.push(
+        ...(await Promise.all(
+          records.slice(start, start + 20).map(async ({ href }) => {
+            const answer = await request.get(`${href.replace(/\/$/, '')}.md`);
+            expect(answer.status(), `${href}.md is served`).toBe(200);
+            return { href, text: await answer.text() };
+          }),
+        )),
+      );
+    }
+
+    for (const { href, text } of copies) {
+      for (const url of text.match(/https?:\/\/[^\s)>"]+/g) ?? []) {
+        // GitHub's API names a git ref with `?ref=`, which reaches no partner programme.
+        if (url.startsWith('https://api.github.com/')) continue;
+        expect(url, `${href}.md`).not.toMatch(affiliate);
+      }
+    }
+  });
+
+  test('names its publisher on every page', async ({ page }) => {
+    for (const path of ['/', listedRecord.path, '/categories/cms/']) {
+      await page.goto(path);
+      await expect(page.locator('footer a[href="https://www.fortrabbit.com"]')).toHaveAttribute('rel', 'nofollow');
+    }
+  });
+});
+
+test.describe('markdown copies', () => {
+  test('a record has one at the same address with .md appended', async ({ page }) => {
+    await page.goto(listedRecord.path);
+    await expect(page.locator('article a[href="/wordpress.md"]')).toBeVisible();
+
+    const answer = await page.request.get('/wordpress.md');
+    expect(answer.status()).toBe(200);
+    const text = await answer.text();
+    expect(text).toMatch(/^# WordPress\n/);
+    expect(text).toContain('/wordpress/');
+
+    /* The copy keeps the citations, each with the date it was read. */
+    expect(text).toContain('### Sources');
+    expect(text).toMatch(/: https?:\/\/\S+ \(read \d{4}-\d{2}-\d{2}\)/);
+  });
+
+  test('so do a facet value, a facet and a written page', async ({ page }) => {
+    for (const [path, heading] of [
+      ['/categories/cms.md', /^# /],
+      ['/categories/index.md', /^# Categories/],
+      ['/about.md', /^# /],
+      ['/guide.md', /^# /],
+    ] as const) {
+      const answer = await page.request.get(path);
+      expect(answer.status(), `${path} is served`).toBe(200);
+      expect(await answer.text(), `${path} opens with a heading`).toMatch(heading);
+    }
+
+    expect(await (await page.request.get('/categories/cms.md')).text()).toContain('(http');
+  });
 });
 
 test.describe('without JavaScript', () => {
@@ -387,76 +410,26 @@ test.describe('without JavaScript', () => {
 
   test('the register is still the register', async ({ page }) => {
     await page.goto('/');
-    await expect(page.locator('[data-find-results] .provider-list > li')).toHaveCount(listed);
+    const said = await leadingNumber(page, '[data-find-count]');
+    await expect(page.locator(rows)).toHaveCount(said);
+    await expect(page.locator(rows).first()).toBeVisible();
   });
 
-  test('every facet value is reachable as a real link', async ({ page }) => {
+  test('every facet is reachable as a real link', async ({ page }) => {
     await page.goto('/');
 
     const fallback = page.locator('[data-find-fallback]');
     await expect(fallback).toBeVisible();
-    await expect(fallback.locator('a')).not.toHaveCount(0);
+    await expect(fallback.locator('a[href="/categories/"]')).toBeVisible();
 
-    await page.goto('/runtimes/php/');
-    await expect(page.locator('.provider-list > li').first()).toBeVisible();
-    await expect(page.locator('.annotation').first()).toContainText('provider');
+    await page.goto('/categories/cms/');
+    await expect(page.locator(rows).first()).toBeVisible();
   });
 
-  /*
-   * The snippet is text in a `<pre>`, so it can always be selected by hand. The
-   * copy button only saves the selecting, and is absent rather than dead when
-   * the script behind it has not run.
-   */
-  test('the badge is still copyable by hand', async ({ page }) => {
-    await page.goto('/badge/');
-    await expect(page.locator('article pre').first()).toContainText('<svg');
-
-    /* The record's block is the one with buttons, and they are absent until their script has run. */
-    await page.goto('/fortrabbit/');
-    await expect(page.locator('.badge-snippets pre').first()).toContainText('<svg');
-    await expect(page.locator('.badge-copy').first()).toBeHidden();
-  });
-});
-
-test.describe('stubs', () => {
-  /*
-   * The repo holds more records than the register shows. The hidden ones are
-   * reachable, because a decision nobody can see is not a decision — but they
-   * are opt-in, unfiltered and never in the count, or the count stops being
-   * true the moment someone ticks a box. Nothing here needs the script: the way
-   * in is a link in the sentence that counts the register, which is why this
-   * runs with JavaScript off as well.
-   */
-  test('are not in the register, and have a page of their own', async ({ page }) => {
-    await page.goto('/');
-
-    await expect(page.locator('[data-find-results] .provider-list > li')).toHaveCount(listed);
-    await expect(page.locator('[data-find-count]')).toHaveText(new RegExp(`^${listed} web hosts\\.$`));
-
-    /* The way to them is a link, so it works without scripting and can be crawled. */
-    await page.locator('[data-find-summary] a[href="/stubs/"]').first().click();
-
-    /* The heading is the word that was clicked, so arriving needs no second reading. */
-    await expect(page.locator('h1')).toHaveText('Stubs');
-    await expect(page.locator('.provider-list > li').first()).toBeVisible();
-  });
-
-  test('a group beside the register keeps its own list', async ({ page }) => {
-    await page.goto('/holdings/');
-
-    await expect(page.locator('h1')).toHaveText('Holdings');
-
-    /*
-     * The one group whose records sit under the group's own path rather than at
-     * the root, because a holding company provides nothing. Asserted from the
-     * list, since the addresses are the point of the arrangement.
-     */
-    await expect(page.locator('.provider-list > li a').first()).toHaveAttribute('href', /^\/holdings\//);
-
-    /* Exactly the group, not the group appended to everything else. */
-    const rows = page.locator('.provider-list > li');
-    await expect(rows).not.toHaveCount(listed);
-    expect(await rows.count()).toBeGreaterThan(0);
+  test('a record is whole', async ({ page }) => {
+    await page.goto(listedRecord.path);
+    await expect(page.locator('article h1')).toHaveText(listedRecord.name);
+    await expect(page.locator('.sources li').first()).toBeVisible();
   });
 });
 
@@ -474,42 +447,45 @@ test.describe('filtering', () => {
     /*
      * Visible rows, not rows: filtering hides what the server already rendered
      * rather than rebuilding the list, so the ones that do not match are still
-     * in the document. That is the point — one row renderer, and a filtered row
-     * is the same element as an unfiltered one.
+     * in the document.
      */
-    const shown = page.locator('[data-find-results] .provider-list > li:visible');
+    const shown = page.locator(`${rows}:visible`);
+    const listed = await page.locator(rows).count();
     await expect(shown).toHaveCount(listed);
 
     await page.locator('.find-facet input[type=checkbox]').first().check();
     await expect(shown).not.toHaveCount(listed);
-
-    // Unknowns are declared rather than silently dropped: with most fields
-    // optional, a filter that hides them would hide most of the market.
-    await expect(page.locator('[data-find-summary]')).toContainText(new RegExp(`of ${listed}`));
+    await expect(page.locator('[data-find-count]')).toHaveText(new RegExp(`^${await shown.count()} of ${listed} `));
 
     /*
      * The count and the groups beside the register share a paragraph, and only
-     * the count is a function of the filters. Rewriting the sentence rather
-     * than the number took the links to those groups away with it.
+     * the count is a function of the filters.
      */
-    await expect(page.locator('[data-find-summary] a[href="/stubs/"]')).toBeVisible();
+    await expect(page.locator('[data-find-aside] a[href="/stubs/"]')).toBeVisible();
   });
 
-  /*
-   * A letter with nothing left under it takes its heading and its rule away.
-   * Left behind, the register grows a row of empty letters as a filter narrows
-   * it — a heading that names a group with no members.
-   */
+  /* The script and the value page narrow the same list the same way. */
+  test('a filter in the address matches the value page', async ({ page }) => {
+    await page.goto('/categories/cms/');
+    const expected = await page.locator(`${rows} .provider-name a`).allInnerTexts();
+
+    await page.locator('.find-onward').click();
+    await expect(page.locator('input[data-facet="categories"][value="cms"]')).toBeChecked();
+    await expect(page.locator(`${rows}:visible`)).toHaveCount(expected.length);
+    expect(await page.locator(`${rows}:visible .provider-name a`).allInnerTexts()).toEqual(expected);
+  });
+
+  /* A letter with nothing left under it takes its heading away. */
   test('takes a letter away when nothing under it survives', async ({ page }) => {
     await page.goto('/');
 
     const headings = page.locator('[data-find-results] .letter-group:visible');
     const before = await headings.count();
 
-    await page.locator('.find-facet input[type=checkbox]').first().check();
+    /* The smallest value on show, so whole letters drop out. */
+    await page.locator('.find-facet input[type=checkbox]:visible').last().check();
     await expect(headings).not.toHaveCount(before);
 
-    /* Every letter still standing has at least one row under it. */
     for (const group of await headings.all()) {
       await expect(group.locator('.provider-list > li:visible').first()).toBeVisible();
     }
@@ -518,13 +494,12 @@ test.describe('filtering', () => {
   /*
    * The register is server-rendered and filtering hides what does not match, so
    * a filtered row is not a copy that has to be kept looking like the original —
-   * it is the original. This asserts that: the same element, still whole, on the
-   * far side of a filter and of the slim toggle.
+   * it is the original.
    */
   test('a filtered row is the row the server drew', async ({ page }) => {
     await page.goto('/');
 
-    const row = page.locator('[data-find-results] .provider-list > li').first();
+    const row = page.locator(rows).first();
     const id = await row.getAttribute('data-record');
     await expect(row.locator('.provider-tile')).toBeVisible();
 
@@ -534,140 +509,60 @@ test.describe('filtering', () => {
 
     await page.locator('.find-facet input[type=checkbox]').first().check();
     expect(await row.getAttribute('data-record')).toBe(id);
-    await expect(row.locator('.provider-name a')).toBeVisible();
   });
-});
 
-/*
- * The register is one of several lists the same page carries: the hosting
- * register itself, the kinds of company that sell no hosting, and the groups
- * that own the hosts. Each is whole and one is shown, which is two failures
- * worth guarding — another list leaking into the register's own markup, and the
- * box doing nothing where there is no script to make it work.
- */
-test.describe('the lists beside the register', () => {
-  const openPanel = async (page: import('@playwright/test').Page) => {
-    await page.locator('.find-more > summary').click();
-    return page.locator('[aria-labelledby="facet-register"]');
-  };
-
-  test('leave the register the register, and link out of it', async ({ page }) => {
+  test('swaps to a list beside the register, and puts it in the address', async ({ page }) => {
     await page.goto('/');
+    await page.locator('.find-more > summary').click();
+    await page.locator('[aria-labelledby="facet-register"] input[value=hosted]').check();
 
-    /* The register's own markup holds the register and nothing else: it is what
-       every count taken off this page is taken from. */
-    await expect(page.locator('[data-find-results] .provider-list > li')).toHaveCount(listed);
-    await expect(page.locator('[data-find-summary]')).toContainText(`${listed} web hosts`);
+    await expect(page.locator('[data-find-count]')).toContainText('in Hosted services');
+    expect(new URL(page.url()).searchParams.get('register')).toBe('hosted');
 
-    const box = await openPanel(page);
-    await expect(box.locator('a[href="/mail/"]')).toBeVisible();
-    await expect(box.locator('a[href="/holdings/"]')).toBeVisible();
-
-    /* The groups that are not a list to browse keep their place in the sentence
-       over the register, which is the only link to them on the page. */
-    await expect(page.locator('[data-find-summary] a[href="/defunct/"]')).toBeVisible();
-    await expect(page.locator('[data-find-summary] a[href="/stubs/"]')).toBeVisible();
+    /* The register's list is put away whole rather than row by row. */
+    await expect(page.locator('[data-find-results]')).toBeHidden();
+    await expect(page.locator('[data-find-list=hosted] .provider-list > li:visible').first()).toBeVisible();
   });
 
-  test.describe('with the script', () => {
-    test.skip(({ javaScriptEnabled }) => javaScriptEnabled === false, 'switching lists is the script talking');
+  test('arrives on the list the address asks for', async ({ page }) => {
+    await page.goto('/?register=hosted');
 
-    test('swap the list, the counts and the address', async ({ page }) => {
-      await page.goto('/');
-
-      const box = await openPanel(page);
-      const boxes = await page.locator('.find-facet').count();
-      await box.locator('input[value=mail]').check();
-
-      await expect(page.locator('[data-find-summary]')).toContainText('in Business email');
-      expect(new URL(page.url()).searchParams.get('register')).toBe('mail');
-
-      /* The register's list is put away whole rather than row by row. */
-      await expect(page.locator('[data-find-results]')).toBeHidden();
-      const shown = page.locator('[data-find-list=mail] .provider-list > li:visible');
-      expect(await shown.count()).toBeGreaterThan(0);
-
-      /*
-       * The panel keeps its shape. It is a grid twenty boxes wide, and a box
-       * that left would reflow every box after it under the pointer that had
-       * just chosen the list — so what the new list cannot answer is dimmed and
-       * switched off instead.
-       */
-      await expect(page.locator('.find-facet')).toHaveCount(boxes);
-      expect(await page.locator('.find-facet.empty input[type=checkbox]:disabled').count()).toBeGreaterThan(0);
-
-      /* No count in the panel may exceed the list on show. */
-      const held = await shown.count();
-      for (const count of await page.locator('.find-facet:not(.find-register) .find-count:visible').allInnerTexts()) {
-        expect(Number(count.trim().split(/\s+/)[0])).toBeLessThanOrEqual(held);
-      }
-    });
-
-    /*
-     * The reason this is a filter rather than the row of links it replaced: a
-     * reader narrowing the register and then changing which register it is has
-     * asked one question, not two.
-     */
-    test('keep the filters already ticked', async ({ page }) => {
-      await page.goto('/');
-
-      const box = await openPanel(page);
-      const ticked = page.locator('.find-facet:not(.find-register) input[type=checkbox]:visible').first();
-      await ticked.check();
-      const value = await ticked.getAttribute('value');
-
-      await box.locator('input[value=holdings]').check();
-      await expect(page.locator('[data-find-summary]')).toContainText('in Holdings');
-
-      /* Still ticked, and still in the panel: a value the new list holds none of
-         reads zero rather than disappearing, or there would be no way to undo it. */
-      await expect(page.locator(`.find-facet input[type=checkbox][value="${value}"]`)).toBeChecked();
-      await expect(page.locator(`.find-facet input[type=checkbox][value="${value}"]`)).toBeVisible();
-
-      /* And back, with the tick still on and the register counted again. */
-      await box.locator('input[value=hosting]').check();
-      await expect(page.locator('[data-find-summary]')).toContainText(`of ${listed} web hosts`);
-    });
-
-    /* A list asked for in the address arrives on show, with the box that says so
-       open rather than folded away under a disclosure nobody opened. */
-    test('are addressable', async ({ page }) => {
-      await page.goto('/?register=holdings');
-
-      await expect(page.locator('[data-find-list=holdings]')).toBeVisible();
-      await expect(page.locator('[data-find-results]')).toBeHidden();
-      await expect(page.locator('input[data-register-option][value=holdings]')).toBeChecked();
-    });
+    await expect(page.locator('[data-find-list=hosted]')).toBeVisible();
+    await expect(page.locator('[data-find-results]')).toBeHidden();
+    await expect(page.locator('input[data-register-option][value=hosted]')).toBeChecked();
   });
 });
 
 /*
  * The card a link turns into elsewhere, which is the one part of the site nobody
  * on the site ever sees. It is drawn at build time by a WebAssembly renderer, so
- * the failure to guard against is not an ugly card — it is 234 of them silently
- * not being drawn at all while every page goes on promising one.
+ * the failure to guard against is not an ugly card — it is all of them silently
+ * not being drawn while every page goes on promising one.
  */
 test.describe('share cards', () => {
-  const png = async (page: import('@playwright/test').Page, path: string) => {
+  const png = async (page: Page, path: string) => {
     const answer = await page.request.get(path);
     expect(answer.status(), `${path} is served`).toBe(200);
     expect(answer.headers()['content-type']).toContain('image/png');
 
     const bytes = await answer.body();
-    expect(bytes.subarray(1, 4).toString(), `${path} is really a PNG`).toBe('PNG');
+    expect(bytes.subarray(1, 4).toString(), `${path} is a PNG`).toBe('PNG');
 
     // Width and height live in the IHDR chunk, at a fixed offset in every PNG.
     return { width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20), bytes: bytes.length };
   };
 
+  const declared = async (page: Page, path: string) => {
+    await page.goto(path);
+    const content = await page.locator('meta[property="og:image"]').getAttribute('content');
+    expect(content, `${path} declares a card`).toBeTruthy();
+    return new URL(content!).pathname;
+  };
+
   test('a record points at its own card, drawn at the size every network expects', async ({ page }) => {
-    await page.goto('/fortrabbit/');
+    expect(await declared(page, listedRecord.path)).toBe('/og/wordpress.png');
 
-    const declared = await page.locator('meta[property="og:image"]').getAttribute('content');
-    expect(declared).toBeTruthy();
-    expect(new URL(declared!).pathname).toBe('/og/fortrabbit.png');
-
-    const card = await png(page, '/og/fortrabbit.png');
+    const card = await png(page, '/og/wordpress.png');
     expect(card).toMatchObject({ width: 1200, height: 630 });
 
     /*
@@ -678,31 +573,25 @@ test.describe('share cards', () => {
     expect(card.bytes).toBeGreaterThan(10_000);
   });
 
-  test("every page has one, and pages that are not records share the register's", async ({ page }) => {
+  test("pages that are not records share the register's", async ({ page }) => {
     await png(page, '/og/default.png');
 
-    for (const path of ['/', '/guide/', '/about/']) {
-      await page.goto(path);
-      const declared = await page.locator('meta[property="og:image"]').getAttribute('content');
-      expect(new URL(declared!).pathname, `${path} falls back to the register's card`).toBe('/og/default.png');
+    for (const path of ['/', '/guide/', '/about/', '/stubs/']) {
+      expect(await declared(page, path), `${path} falls back to the register's card`).toBe('/og/default.png');
     }
   });
 
   /*
-   * A facet value page is the one somebody sends when they mean "the ones that
-   * do X", so it is the likeliest of all of these to be seen as a card. Its own
-   * card sits a level down the path, because /og/<name>.png already belongs to
-   * the records.
+   * A value page is the one somebody sends when they mean "the ones that do X".
+   * Its card sits a level down the path, because /og/<name>.png belongs to the
+   * records.
    */
   test('a facet and one of its values each draw their own', async ({ page }) => {
     for (const [path, card] of [
       ['/categories/', '/og/categories/index.png'],
-      ['/categories/paas/', '/og/categories/paas.png'],
-      ['/regions/', '/og/regions/index.png'],
+      ['/categories/cms/', '/og/categories/cms.png'],
     ]) {
-      await page.goto(path);
-      const declared = await page.locator('meta[property="og:image"]').getAttribute('content');
-      expect(new URL(declared!).pathname, `${path} draws its own card`).toBe(card);
+      expect(await declared(page, path), `${path} draws its own card`).toBe(card);
       expect(await png(page, card)).toMatchObject({ width: 1200, height: 630 });
     }
   });
@@ -712,112 +601,25 @@ test.describe('search', () => {
   /*
    * The other JavaScript-only surface, and the one that reaches for a module
    * nothing in the bundle can see: Pagefind writes /pagefind/pagefind.js after
-   * astro build, so the import is inline and unbundled. Two ways to break it
-   * have already happened — an eval a content security policy would refuse, and
-   * a preload placeholder the bundler left unresolved — and both failed by
-   * showing the "only built for the deployed site" message on a site where it
-   * had been built.
+   * astro build, so the import is inline and unbundled. A break shows the "only
+   * built for the deployed site" message on a site where it has been built.
    */
   test.skip(({ javaScriptEnabled }) => javaScriptEnabled === false, 'search is the other JavaScript-only surface');
 
   test('answers a query typed into the form', async ({ page }) => {
     await page.goto('/search/');
 
-    await page.locator('[data-search-input]').fill('hetzner');
+    await page.locator('[data-search-input]').fill('wordpress');
     await page.locator('.search-form button[type=submit]').click();
 
     await expect(page.locator('[data-search-summary]')).toContainText(/pages? match/);
-    expect(await page.locator('[data-search-results] > li').count()).toBeGreaterThan(0);
+    await expect(page.locator(`[data-search-results] a[href^="${listedRecord.path}"]`).first()).toBeVisible();
   });
 
   test('answers a query arriving in the URL, which is what a shared link is', async ({ page }) => {
-    await page.goto('/search/?q=hetzner');
+    await page.goto('/search/?q=wordpress');
 
     await expect(page.locator('[data-search-summary]')).toContainText(/pages? match/);
     await expect(page.locator('[data-search-results] a').first()).toBeVisible();
-  });
-});
-
-/*
- * The one thing this site publishes that ends up on somebody else's pages, out
- * of reach of any later edit. Two of these are governance rather than markup: a
- * badge that could be read as a rank, or that could count installs, is the thing
- * the register exists to be an alternative to.
- */
-test.describe('the provider badge', () => {
-  test('is offered on a listed record and withheld from one that is not', async ({ page }) => {
-    await page.goto('/fortrabbit/');
-    await expect(page.locator('.badge-offer summary')).toContainText('Link back to this record');
-
-    /* Out of scope. A snippet reading "Listed on FindSoftware" here would be a claim we do not make. */
-    await page.goto('/acquia/');
-    await expect(page.locator('.badge-offer')).toHaveCount(0);
-  });
-
-  test('points at the plain record, with nothing appended', async ({ page }) => {
-    await page.goto('/fortrabbit/');
-    /* Native, so it opens with scripting off too. */
-    await page.locator('.badge-offer summary').click();
-    const snippets = await page.locator('.badge-snippets pre').allInnerTexts();
-
-    expect(snippets).toHaveLength(3);
-    for (const snippet of snippets) {
-      expect(snippet).toContain('/fortrabbit/');
-      expect(snippet).not.toMatch(/\/fortrabbit\/[?#]/);
-      expect(snippet).toContain('Listed on FindSoftware');
-    }
-  });
-
-  /*
-   * The reason the badge is inline SVG rather than an image on this server: a
-   * hosted one would be fetched on every page view of theirs and hand us an
-   * install count, which is a tracker with a picture on it.
-   */
-  test('loads nothing when it is displayed', async ({ page }) => {
-    await page.goto('/badge/');
-    const artwork = await page.locator('article svg[role="img"]').innerHTML();
-
-    expect(artwork).not.toMatch(/<image|src=|href=/);
-    expect(artwork).toContain('currentColor');
-  });
-
-  /*
-   * The wordmark is set in whatever serif the visitor's machine answers with, and
-   * the natural width of "FindSoftware" varies by about a fifth across the stack. The
-   * badge lands on pages we will never see, so the frame is measured against every
-   * fallback rather than against the one this machine happens to have.
-   */
-  test('holds both lines inside the frame, whatever serif answers', async ({ page }) => {
-    await page.goto('/badge/');
-
-    const clearance = await page.locator('article svg[role="img"]').evaluate((svg) => {
-      const frame = svg.querySelector('rect')!;
-      const room = frame.width.baseVal.value;
-
-      return [...svg.querySelectorAll('text')].map((line) => {
-        const stack = (line.getAttribute('font-family') ?? '').split(',').map((name) => name.trim());
-        const widest = Math.max(
-          ...stack.map((family) => {
-            line.setAttribute('font-family', family);
-            return line.getComputedTextLength();
-          }),
-        );
-
-        line.setAttribute('font-family', stack.join(', '));
-        return room - widest;
-      });
-    });
-
-    /* Room for the rule and a margin that still reads as a frame rather than a box on the words. */
-    for (const room of clearance) expect(room).toBeGreaterThan(12);
-  });
-
-  test('says in its own words that it is not a rating', async ({ page }) => {
-    await page.goto('/badge/');
-    await expect(page.locator('article')).toContainText('not a rating, a rank, or an endorsement');
-
-    /* Nothing on it may read as a tier, an award or a year — the artwork least of all. */
-    const words = await page.locator('article').innerText();
-    expect(words).not.toMatch(/\b(best|top \d|award|rated|certified)\b/i);
   });
 });

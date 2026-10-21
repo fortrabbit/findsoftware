@@ -79,7 +79,13 @@ const summary = `${providers.length} ${providers.length === 1 ? 'project' : 'pro
 
 // Grouped by initial so the register can be scanned and linked to without JavaScript.
 const letterOf = (name: string) => {
-  const initial = name.replace(/^the /i, '').charAt(0).toUpperCase();
+  // Accents dropped, so "îles" files under I rather than with the digits.
+  const initial = name
+    .replace(/^the /i, '')
+    .charAt(0)
+    .normalize('NFD')
+    .replace(/\p{M}/gu, '')
+    .toUpperCase();
   return /[A-Z]/.test(initial) ? initial : '#';
 };
 
