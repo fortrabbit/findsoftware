@@ -122,7 +122,7 @@ Check each one; release age is not one of them. Any signal found sets `status: d
 - `archived: true` from `gh api repos/<owner>/<repo>`, for the repository the project's own site names as its source. A GitHub repo archived because development moved elsewhere is no signal: record the new repository instead
 - `abandoned` on the Packagist package (`https://repo.packagist.org/p2/<vendor>/<name>.json`)
 - `deprecated` on the npm package (`https://registry.npmjs.org/<name>`, latest version)
-- the README or homepage says the project has ended, is unmaintained or is replaced by another (quote it)
+- the README or homepage says the project has ended, is unmaintained or is replaced by another (quote it). A successor named while the README still describes the project as usable, or listed among forks, is no signal: record it as a fact
 - every version is past end of life on endoflife.date
 
 A signal counts only for the project's current repository and package. An archived repository or a deprecated package that names a new home for the same project (a new repository, `@scope/name`, a successor package) is a move, not an end: record the new home and keep the status.
