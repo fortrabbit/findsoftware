@@ -2,7 +2,7 @@ id: yii-framework
 name: Yii
 status: accepted
 checkedAt: 2026-10-18
-description: Component-based PHP web framework, maintained as the Yii 2 line and the package-based Yii3.
+description: Component-based PHP web framework in three lines, Yii 1.1, Yii 2 and the package-based Yii3.
 facts:
   - field: name
     value: Yii
@@ -24,6 +24,11 @@ facts:
     value: https://github.com/yiisoft/app
     url: https://github.com/yiisoft/app
     checkedAt: 2026-10-18
+    via: api
+  - field: repository
+    value: https://github.com/yiisoft/yii
+    url: https://api.github.com/repos/yiisoft/yii
+    checkedAt: 2026-10-21
     via: api
   - field: docs
     value: https://www.yiiframework.com/doc/guide/2.0/en
@@ -230,4 +235,4 @@ facts:
 notFound: [firstRelease, hqCountry, parent, forkOf, successorOf, contributors, buildCommand, outputDir, deployTargets, endoflifeId, pluginCount, discord, subreddit, mastodon, bluesky, newsletter, paidEditions, usageShare]
 unreadable: []
 notes: >
-  Boundary question: one record or two. Yii 2 (yiisoft/yii2, monolithic) and Yii3 (released 2025-12-31, a set of independently versioned packages started from yiisoft/app) share a site, a name and a team but differ in code base, PHP minimum and install path; the release-cycle page also announces a "22.x" successor line for Yii 2 (2.1 skipped, estimate end of 2026, PHP >= 8.3). This file records both, with separate entries where they differ; the Yii3 template's download figure is small next to yii2's. The Yii 2 install guide still says "PHP 5.4 or above", while the intro page and Packagist say 7.4.0; the intro and Packagist values are recorded. Copyright holder is "Yii Software", with no country or legal form stated. The extensions page for Yii3 points to Packagist's yii3 tag, not a catalog, so no pluginCount. Coined field `chat` (here a Telegram group) as in symfony.yml.
+  One record for the three lines, decided 2026-10-21. Yii 1.1 (yiisoft/yii) has reached end of life per its README and "reached maintenance mode and will only receive security and compatibility fixes" (https://www.yiiframework.com/news/775/yii-1-1-32-is-released, read 2026-10-21); its own status does not set this record's. Yii 2 (yiisoft/yii2, monolithic) and Yii3 (released 2025-12-31, a set of independently versioned packages started from yiisoft/app) share a site, a name and a team but differ in code base, PHP minimum and install path; the release-cycle page also announces a "22.x" successor line for Yii 2 (2.1 skipped, estimate end of 2026, PHP >= 8.3). This file records both, with separate entries where they differ; the Yii3 template's download figure is small next to yii2's. The Yii 2 install guide still says "PHP 5.4 or above", while the intro page and Packagist say 7.4.0; the intro and Packagist values are recorded. Copyright holder is "Yii Software", with no country or legal form stated. The extensions page for Yii3 points to Packagist's yii3 tag, not a catalog, so no pluginCount. Coined field `chat` (here a Telegram group) as in symfony.yml.
