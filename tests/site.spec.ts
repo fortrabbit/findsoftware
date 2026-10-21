@@ -134,7 +134,7 @@ test.describe('the register by date', () => {
   test('puts the newest date first', async ({ page }) => {
     const data = await (await page.request.get('/software.json')).json();
     const dates = new Map<string, Record<string, string | undefined>>(
-      data.providers.map((record: Record<string, string>) => [record.id, record]),
+      data.software.map((record: Record<string, string>) => [record.id, record]),
     );
 
     for (const [path, field] of [
@@ -339,7 +339,7 @@ test.describe('governance, as behaviour rather than policy text', () => {
 
   /* Every listed record, read through its markdown copy, which carries every link and source the page does. */
   test('carries no affiliate parameters in any record', async ({ request }) => {
-    const records = (await (await request.get('/software.json')).json()).providers as { href: string }[];
+    const records = (await (await request.get('/software.json')).json()).software as { href: string }[];
     expect(records.length).toBeGreaterThan(0);
 
     // In batches: all at once and `astro preview` drops connections.
@@ -394,7 +394,7 @@ test.describe('markdown copies', () => {
       ['/categories/cms.md', /^# /],
       ['/categories/index.md', /^# Categories/],
       ['/about.md', /^# /],
-      ['/guide.md', /^# /],
+      ['/criteria.md', /^# /],
     ] as const) {
       const answer = await page.request.get(path);
       expect(answer.status(), `${path} is served`).toBe(200);
@@ -576,7 +576,7 @@ test.describe('share cards', () => {
   test("pages that are not records share the register's", async ({ page }) => {
     await png(page, '/og/default.png');
 
-    for (const path of ['/', '/guide/', '/about/', '/stubs/']) {
+    for (const path of ['/', '/criteria/', '/about/', '/stubs/']) {
       expect(await declared(page, path), `${path} falls back to the register's card`).toBe('/og/default.png');
     }
   });

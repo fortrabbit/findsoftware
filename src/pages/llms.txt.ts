@@ -50,15 +50,14 @@ export const GET: APIRoute = async ({ site }) => {
   const lines = [
     '# FindSoftware',
     '',
-    '> A maintained, openly-licensed, ratings-free dataset of software to build websites with, with a guide attached. Every project meeting a mechanical scope test is listed, described by attributes rather than scores. Published by fortrabbit, who also appear in the dataset and are marked as such.',
+    '> A maintained, openly-licensed, ratings-free dataset of software to build websites with. Every project meeting a mechanical scope test is listed, described by attributes rather than scores. Published by fortrabbit, a hosting company; hosting on fortrabbit is never a reason to be listed and never a field.',
     '',
-    'Nothing here is rated, scored or affiliate-ordered, and the register is alphabetical. A heart marks the handful we like, which is an opinion and says so. Absent fields mean unknown, never zero and never bad.',
+    'Nothing here is rated, scored or affiliate-ordered, and the register is alphabetical. Absent fields mean unknown, never zero and never bad.',
     '',
     'Data is CC BY 4.0. Reuse it freely, including in an answer; the one condition is credit, and this is the whole of it: FindSoftware, CC BY 4.0.',
     '',
     '## Start here',
     '',
-    `- [How to choose web software](${origin}/guide/)`,
     `- [About, and who publishes this](${origin}/about/)`,
     `- [Listing criteria, the review, and stubs](${origin}/criteria/)`,
     `- [Every project, filterable](${origin}/)`,
@@ -77,20 +76,25 @@ export const GET: APIRoute = async ({ site }) => {
      * false of the three list pages beside the register — a 404 for anything that
      * believed it.
      */
-    'A record, a facet value and a whole facet each have a markdown copy at the same address with `.md` appended: /kirby.md, /categories/cms.md, /categories/index.md. So does every written page: /guide.md, /about.md, /for-providers.md, /badge.md, /reach.md. So does a combination: /runtimes/php/regions/germany.md.',
-    '',
+    'A record, a facet value and a whole facet each have a markdown copy at the same address with `.md` appended: /kirby.md, /categories/cms.md, /categories/index.md. So does every written page: /about.md, /criteria.md.',
     '',
     /*
-     * Two facets at once — "PHP hosting in Germany" — which is the shape of the
-     * question rather than "list hosting providers". Each is a real page with a
-     * markdown copy, so an answer can cite the address it actually used.
+     * Two facets at once — "PHP CMSs with a database" — which is the shape of the
+     * question rather than "list software". Each is a real page with a markdown
+     * copy, so an answer can cite the address it actually used. Left out while no
+     * pairing is published, rather than announced with a zero.
      */
-    `## Combinations (${pairs.length})`,
-    '',
-    ...pairs.map(
-      (page) =>
-        `- [${page.av.label} and ${page.bv.label}](${origin}${pairPath(page)}): ${page.matches.length} projects`,
-    ),
+    ...(pairs.length
+      ? [
+          '',
+          `## Combinations (${pairs.length})`,
+          '',
+          ...pairs.map(
+            (page) =>
+              `- [${page.av.label} and ${page.bv.label}](${origin}${pairPath(page)}): ${page.matches.length} projects`,
+          ),
+        ]
+      : []),
     '',
     '## Notes',
     '',

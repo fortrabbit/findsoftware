@@ -4,7 +4,7 @@ import PageFigure from '../components/PageFigure.astro';
 import { licenceUrl, publisherRef, websiteRef } from '../lib/seo';
 
 /*
- * Every written page: the guide and About. One layout, so a page of prose looks
+ * Every written page: About and the listing criteria. One layout, so a page of prose looks
  * the same wherever it sits. Records and lists are not this — they are scanned,
  * not read.
  */
@@ -40,7 +40,7 @@ const updated = day(frontmatter.updated);
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
 
 /*
- * `/guide/` and `/about/` are authored as markdown, so their twin is the source
+ * `/about/` and `/criteria/` are authored as markdown, so their twin is the source
  * file with a heading on it. The address is the page's own with the trailing
  * slash swapped for `.md`, which is the rule llms.txt states for every page.
  */

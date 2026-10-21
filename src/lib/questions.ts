@@ -32,9 +32,9 @@ export const topicOf = (facet: string, label: string, override?: string) => over
  * not change, so only the wording rotates.
  */
 const bestAnswers = [
-  "We don't know. A portfolio, a shop and a documentation site need different things from their software, and so does a team of one against an agency. Nobody pays to be listed here and the order is alphabetical. The [guide](/guide/) covers what to compare.",
-  "No idea. We list software, we don't rate it. Open the records that look close and compare them side by side; the [guide](/guide/) says where to start.",
-  "We can't tell from here. What suits an editor-heavy marketing site can be wrong for a static documentation site. The list is alphabetical and nobody paid for a place on it. The [guide](/guide/) covers what to compare.",
+  "We don't know. A portfolio, a shop and a documentation site need different things from their software, and so does a team of one against an agency. Nobody pays to be listed here and the order is alphabetical.",
+  "No idea. We list software, we don't rate it. Open the records that look close and compare them side by side.",
+  "We can't tell from here. What suits an editor-heavy marketing site can be wrong for a static documentation site. The list is alphabetical and nobody paid for a place on it.",
 ];
 
 /* A stable pick per page, so a rebuild does not reword a page nobody edited. */

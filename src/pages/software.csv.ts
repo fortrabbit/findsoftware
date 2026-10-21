@@ -7,7 +7,7 @@ import { recordPath } from '../lib/paths';
 /**
  * The register as one table, because CSV is what the tools that consume open
  * datasets ask for first and JSON is what they ask for second. Same records as
- * providers.json, flattened: a list field becomes a semicolon-joined cell, since
+ * software.json, flattened: a list field becomes a semicolon-joined cell, since
  * a comma inside a comma-separated file is a trap nobody needs.
  */
 const cell = (value: unknown): string => {
@@ -29,7 +29,7 @@ export const GET: APIRoute = async ({ site }) => {
 
   /* Every dictionary field that a record can carry, in dictionary order. */
   const columns = fields.filter((field) => field.group).map((field) => field.id);
-  const header = ['id', 'name', 'url', 'findhost_url', ...columns, 'checked_at'];
+  const header = ['id', 'name', 'url', 'record_url', ...columns, 'checked_at'];
 
   const rows = providers.map((provider) => {
     const data = provider.data as Record<string, unknown>;

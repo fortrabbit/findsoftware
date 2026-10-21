@@ -9,7 +9,7 @@ import { newest } from '../lib/modified';
  * something the site needs to work — the find view carries its own small index,
  * so nothing here is shaped by what a filter happens to require.
  *
- * `drafts` and the `asides` are kept apart from `providers` rather than flagged
+ * `drafts` and the `asides` are kept apart from `software` rather than flagged
  * inside it, so nothing that counts the register can pick them up by forgetting
  * a filter.
  */
@@ -44,7 +44,7 @@ export const GET: APIRoute = async ({ site }) => {
     note: 'Attributes are recorded, never scored. An absent field means unknown, never zero and never bad.',
   };
 
-  return new Response(JSON.stringify({ meta, facets, providers, drafts, asides }), {
+  return new Response(JSON.stringify({ meta, facets, software: providers, drafts, asides }), {
     headers: { 'content-type': 'application/json; charset=utf-8' },
   });
 };

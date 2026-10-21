@@ -50,7 +50,7 @@ export const GET: APIRoute = async ({ site }) => {
     '<?xml version="1.0" encoding="utf-8"?>',
     '<feed xmlns="http://www.w3.org/2005/Atom">',
     '  <title>FindSoftware — recently checked</title>',
-    '  <subtitle>Hosting provider records, most recently read against the provider first.</subtitle>',
+    '  <subtitle>Software records, the most recently checked first.</subtitle>',
     `  <link href="${origin}/feed.xml" rel="self"/>`,
     `  <link href="${origin}/"/>`,
     `  <id>${origin}/</id>`,

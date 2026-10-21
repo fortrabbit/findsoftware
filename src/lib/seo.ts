@@ -123,7 +123,7 @@ export const publisherRef = (origin: string) => ({ '@id': `${origin}/#publisher`
 export const websiteRef = (origin: string) => ({ '@id': `${origin}/#website` });
 
 /** A provider as the subject of its record page, addressable from every list that names it. */
-export const providerId = (origin: string, href: string) => `${origin}${href}#provider`;
+export const providerId = (origin: string, href: string) => `${origin}${href}#software`;
 
 /**
  * Providers as a list. Each entry points at the provider node on its record

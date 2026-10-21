@@ -3,7 +3,7 @@ import { attribution } from './seo.ts';
 /**
  * A markdown page as its own machine-readable twin.
  *
- * `/guide/` and `/about/` are authored as markdown and rendered through a layout,
+ * `/about/` and `/criteria/` are authored as markdown and rendered through a layout,
  * so unlike a record — which is assembled from fields — the twin already exists
  * as a file. Taking the body verbatim is what stops the two from drifting: there
  * is one copy of the prose and this adds a heading, a source line and the credit

@@ -51,7 +51,7 @@ export const GET: APIRoute = async ({ props, site }) => {
     '',
     summary,
     '',
-    `## Providers (${matches.length})`,
+    `## Software (${matches.length})`,
     '',
     ...matches.map(
       (provider: { id: string; name: string }) =>

@@ -2,7 +2,7 @@
 layout: ../layouts/Article.astro
 title: About
 published: 2026-10-18
-updated: 2026-10-18
+updated: 2026-10-21
 description: Who publishes FindSoftware and why, the rules every record follows, and how records are sourced.
 lead: A register of software to build websites with, in every language, recorded field by field with a source for every answer.
 ---
@@ -15,6 +15,7 @@ FindSoftware lists the tools web creators build with: content management systems
 - **Absent means unknown.** A blank field was not found, not a "no".
 - **Every fact has a source.** The numbered list at the bottom of each record says where it came from and when.
 - **No affiliate links.**
+- **Mechanical inclusion.** The [listing criteria](/criteria/) decide what is listed, and where a record appears when it fails one.
 
 ## Adoption figures
 
@@ -32,10 +33,10 @@ FindSoftware is published by [fortrabbit](https://www.fortrabbit.com), a hosting
 
 ## Credits
 
-Records are researched by AI agents from primary sources. A person reads them after they are published and corrects what is wrong. The data is licensed CC BY 4.0, the code MIT.
+Records are researched by AI agents from primary sources only: the project's own site, its repository and package registries, never directories or comparison sites. A second agent checks every fact against its quote, and a script fetches each quoted page again to confirm the words are still there. A person reads the records after they are published and corrects what is wrong. Each record says how much of its description a machine wrote. The data is licensed CC BY 4.0, the code MIT.
 
 Logos belong to the projects. Each one was fetched from the project's own site and is served from here, so your browser never asks a project's site for anything. They identify the software and nothing more; a project that wants its logo gone gets it removed.
 
 ## State
 
-This is an early version built from the first research batch. Fields and filters will change.
+This is an early version. Research runs one area at a time, starting with CMSs, frameworks and static site generators, so whole kinds of software are still missing. Fields and filters will change.

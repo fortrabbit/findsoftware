@@ -60,7 +60,7 @@ test('a list entry points at the provider node on its record page', () => {
     position: 2,
     url: `${origin}/holdings/held/`,
     name: 'Held',
-    item: { '@id': `${origin}/holdings/held/#provider` },
+    item: { '@id': `${origin}/holdings/held/#software` },
   });
 });
 
