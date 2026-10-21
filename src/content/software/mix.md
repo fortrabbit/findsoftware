@@ -7,7 +7,7 @@ urls:
 category:
   - framework
 description: PHP framework for command-line mode, serving HTTP through Swoole, Swow, WorkerMan, PHP-FPM or the built-in CLI server.
-status: stub
+status: active
 maintainer: Mix PHP
 language: php
 runtime:

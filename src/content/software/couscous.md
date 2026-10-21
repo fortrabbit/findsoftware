@@ -8,7 +8,7 @@ urls:
 category:
   - ssg
 description: PHP tool that generates a documentation website from Markdown files and publishes it on GitHub Pages.
-status: stub
+status: active
 maintainer: Matthieu Napoli
 firstRelease: 2014
 language: php

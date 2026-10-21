@@ -8,7 +8,7 @@ category:
   - framework
   - library
 description: Micro-routing library for PHP that maps HTTP requests to handler functions.
-status: stub
+status: active
 maintainer: noodlehaus
 maintainerType: individual
 language: php

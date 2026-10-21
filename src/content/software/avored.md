@@ -7,7 +7,7 @@ urls:
 category:
   - e-commerce
 description: Open-source headless e-commerce system with a GraphQL API on a Laravel backend and a separate frontend application.
-status: stub
+status: active
 language: typescript
 runtime:
   - php

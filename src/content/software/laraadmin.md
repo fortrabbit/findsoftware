@@ -9,7 +9,7 @@ category:
   - admin-panel
   - cms
 description: Open-source admin panel for Laravel that generates CRUD screens for data management, CMS and CRM back ends.
-status: stub
+status: active
 maintainer: Dwij IT Solutions
 hqCountry: IN
 language: php

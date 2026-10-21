@@ -9,7 +9,7 @@ urls:
 category:
   - graphics
 description: JavaScript library for mobile-friendly interactive maps that runs in the browser.
-status: stub
+status: active
 firstRelease: 2013
 language: javascript
 runsAs:

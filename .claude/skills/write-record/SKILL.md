@@ -68,7 +68,7 @@ When the project's site or docs block the request (403, a bot check), look for t
 
 **License**: `license` (SPDX id), `licenseModel` (open-source, open-core, source-available, commercial, saas; the import derives it from every `license` statement, so record each statement as the source words it, including the parts under another license), `paidEdition` (a page showing an edition with features the open version lacks, under a paid or non-open license, with a quote; hosting plans and paid support are not editions), `pricingPage` (the link only, no prices: they change more than yearly)
 
-**Releases**: `currentMajor`, `latestReleaseDate` (from a registry or the releases API, refreshed by script), `endoflifeId` (supported versions and their dates come from endoflife.date, not typed in)
+**Releases**: `currentMajor`, `latestReleaseDate` (from a registry or the releases API, refreshed by script), `latestPrereleaseDate` (the newest alpha, beta or RC, only when newer than the latest release), `endoflifeId` (supported versions and their dates come from endoflife.date, not typed in)
 
 **Adoption**: `githubStargazers`, `contributors`, `packagistDownloads`, `npmWeeklyDownloads`, `pypiDownloads`, `usageShare` (W3Techs or similar, as a third-party figure), `reportedInstalls` (a count of sites, shops or installs the project or its registry states, such as "over 175,000 websites" or drupal.org's usage figure, recorded as stated with its source; use this name, never coin another), `packagistName`, `npmName`. A package with no monthly downloads while a sibling has many is the wrong one. Take registry figures from the package the project's install docs tell users to install, or its core package, never a meta or sibling package (`concrete5/core`, not `concrete5/concrete5`); when a package was replaced, record the current one and name the old one in notes. Record each figure as the source states it, with its period (week, month, total). They are never compared or ordered, so do not convert or normalize them. Never record ratings, review scores or rating counts from any directory.
 
@@ -117,7 +117,7 @@ node -e "require('yaml')" 2>/dev/null && node -e "const y=require('yaml');y.pars
 
 ## Signals that a project has ended
 
-Check each one; release age is not one of them (the import moves a record with no release in three years to `stub` on its own, so record `latestReleaseDate` and leave the status alone). Any signal found sets `status: discontinued` in the fact file, with a `status` fact citing it, and the file is written as usual:
+Check each one; release age is not one of them (the import moves a record with no release or pre-release in four years to `stub` on its own, so record `latestReleaseDate` and leave the status alone). Any signal found sets `status: discontinued` in the fact file, with a `status` fact citing it, and the file is written as usual:
 
 - `archived: true` from `gh api repos/<owner>/<repo>`, for the repository the project's own site names as its source. A GitHub repo archived because development moved elsewhere is no signal: record the new repository instead
 - `abandoned` on the Packagist package (`https://repo.packagist.org/p2/<vendor>/<name>.json`)
