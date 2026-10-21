@@ -8,7 +8,7 @@ category:
   - cms
   - community
 description: Open-source PHP content management system for blogs, websites, forums and community sites.
-status: active
+status: stub
 maintainer: François Planque
 maintainerType: individual
 language: php

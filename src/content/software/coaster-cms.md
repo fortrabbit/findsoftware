@@ -8,7 +8,7 @@ urls:
 category:
   - cms
 description: Laravel-based PHP content management system that stores its content in MySQL.
-status: active
+status: stub
 maintainer: Web-Feet Ltd
 maintainerType: company
 hqCountry: GB

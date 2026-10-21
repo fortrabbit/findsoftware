@@ -8,7 +8,7 @@ urls:
 category:
   - framework
 description: PHP web application framework with routing, views, middleware, an ORM and a console component.
-status: active
+status: stub
 maintainer: David Young
 maintainerType: individual
 language: php

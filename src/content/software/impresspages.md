@@ -11,7 +11,7 @@ category:
   - cms
   - framework
 description: PHP framework with content management and an inline, drag-and-drop editor for building websites.
-status: active
+status: stub
 maintainer: ImpressPages LTD
 firstRelease: 2009
 language: php

@@ -7,7 +7,7 @@ urls:
 category:
   - cms
 description: Content management system written in PHP, built on the Pop PHP Framework.
-status: active
+status: stub
 maintainer: NOLA Interactive, LLC
 maintainerType: company
 language: php

@@ -7,7 +7,7 @@ urls:
 category:
   - e-commerce
 description: Open-source PHP e-commerce system built on the Yii2 framework, with multi-language and multi-currency storefronts.
-status: active
+status: stub
 maintainer: Fecmall Software LLC
 maintainerType: company
 language: php

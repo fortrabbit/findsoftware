@@ -8,7 +8,7 @@ urls:
 category:
   - framework
 description: PHP framework for building web applications and REST services, with an MVC structure, an ORM and dependency injection.
-status: active
+status: stub
 maintainer: Jean-Christophe HERON
 firstRelease: 2017
 language: php

@@ -8,7 +8,7 @@ urls:
 category:
   - ssg
 description: PHP static site generator that aims to build existing Jekyll sites with the same results.
-status: active
+status: stub
 maintainer: Jonathan Foucher
 maintainerType: individual
 firstRelease: 2017

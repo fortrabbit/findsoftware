@@ -7,7 +7,7 @@ urls:
 category:
   - cms
 description: Publishing package for Laravel that adds a back-end interface for managing posts, pages, tags and authors.
-status: active
+status: stub
 maintainer: Mohamed Said
 maintainerType: individual
 language: php

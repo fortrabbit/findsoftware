@@ -8,7 +8,7 @@ urls:
 category:
   - framework
 description: PHP framework for building web applications, the CodeIgniter 3 branch, in maintenance with security updates.
-status: active
+status: stub
 maintainer: CodeIgniter Foundation
 maintainerType: foundation
 firstRelease: 2006

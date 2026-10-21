@@ -7,7 +7,7 @@ urls:
 category:
   - admin-panel
 description: Tool for building admin panels on Laravel, with grids, forms, detail pages and a code generator.
-status: active
+status: stub
 maintainer: Jiang qinghua, Jens Segers
 maintainerType: individual
 language: php

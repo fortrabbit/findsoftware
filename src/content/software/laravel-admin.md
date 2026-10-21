@@ -8,7 +8,7 @@ urls:
 category:
   - admin-panel
 description: Administrative interface builder for Laravel that generates CRUD backends from a few lines of code.
-status: active
+status: stub
 maintainer: song
 maintainerType: individual
 language: php

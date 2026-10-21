@@ -7,7 +7,7 @@ urls:
 category:
   - cms
 description: Content management system for Laravel projects, with modules for blog, pages, products, mailbox, image gallery, log viewer and users.
-status: active
+status: stub
 maintainer: Odirlei Borgert
 firstRelease: 2016
 language: php

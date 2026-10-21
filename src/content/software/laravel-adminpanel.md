@@ -6,7 +6,7 @@ urls:
 category:
   - admin-panel
 description: Laravel web application with an admin panel, user access control and a Bootstrap front end, cloned from its repository as a starting point.
-status: active
+status: stub
 maintainer: FTXInfotech
 language: php
 runtime:

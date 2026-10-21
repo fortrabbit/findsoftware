@@ -7,7 +7,7 @@ urls:
 category:
   - cms
 description: Content management system written in PHP with a MySQL database, for websites from blogs to corporate portals.
-status: active
+status: stub
 maintainer: Intelliants LLC
 maintainerType: company
 language: php

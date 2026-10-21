@@ -7,7 +7,7 @@ urls:
 category:
   - ssg
 description: Static documentation generator that turns Markdown and JSON configuration files into DocBook-like HTML pages.
-status: active
+status: stub
 maintainer: Bookdown.Bookdown Contributors
 maintainerType: community
 language: php

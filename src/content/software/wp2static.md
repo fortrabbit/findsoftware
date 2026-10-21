@@ -6,7 +6,7 @@ urls:
 category:
   - ssg
 description: WordPress plugin that generates a static copy of a WordPress site and deploys it.
-status: active
+status: stub
 maintainer: Strattic
 language: php
 runtime:

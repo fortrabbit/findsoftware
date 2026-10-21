@@ -9,7 +9,7 @@ category:
   - cms
   - e-commerce
 description: Open source e-commerce and content management engine built on Yii 1.x and PHP, with a module system and an admin interface.
-status: active
+status: stub
 maintainer: Yupe! team
 maintainerType: community
 language: php

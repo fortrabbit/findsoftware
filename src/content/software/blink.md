@@ -7,7 +7,7 @@ urls:
 category:
   - framework
 description: PHP micro web framework and application server built on the Swoole extension.
-status: active
+status: stub
 maintainer: Jin Hu
 maintainerType: individual
 firstRelease: 2015

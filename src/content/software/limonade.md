@@ -8,7 +8,7 @@ urls:
 category:
   - framework
 description: PHP micro-framework for web applications, built on routes that map URL patterns to callback functions.
-status: active
+status: stub
 maintainer: Fabrice Luraine
 maintainerType: individual
 language: php

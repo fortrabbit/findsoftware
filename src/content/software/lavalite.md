@@ -7,7 +7,7 @@ urls:
 category:
   - cms
 description: Open-source content management system built with the Laravel framework and distributed as a Composer project.
-status: active
+status: stub
 maintainer: LavaLite
 language: php
 runtime:

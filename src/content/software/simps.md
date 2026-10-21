@@ -8,7 +8,7 @@ urls:
 category:
   - framework
 description: PHP coroutine framework for building HTTP, WebSocket, TCP, UDP and MQTT servers on the Swoole extension.
-status: active
+status: stub
 maintainer: Simps Team
 maintainerType: community
 language: php

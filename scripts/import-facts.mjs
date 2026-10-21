@@ -8,6 +8,7 @@ import { parse, stringify } from 'yaml';
 const factsDir = 'research/facts';
 const outDir = 'src/content/software';
 const today = process.argv[2] ?? new Date().toISOString().slice(0, 10);
+const staleBefore = `${Number(today.slice(0, 4)) - 3}${today.slice(4)}`;
 
 const dictionary = parse(readFileSync('src/data/fields.yml', 'utf8'));
 const vocab = (id) => new Set((dictionary.find((entry) => entry.id === id)?.values ?? []).map((value) => value.id));
@@ -635,6 +636,12 @@ for (const file of facts) {
   if (version && Number(version[1]) >= 2000) version = null;
   if (version) record.currentMajor = version[1];
   if (first('latestReleaseDate')) record.latestReleaseDate = String(first('latestReleaseDate')).slice(0, 10);
+  // The register shows active projects: no release in three years moves a record to the stubs, to be checked again.
+  const newestRelease = all('latestReleaseDate')
+    .map((date) => String(date).slice(0, 10))
+    .sort()
+    .at(-1);
+  if (record.status === 'active' && newestRelease && newestRelease < staleBefore) record.status = 'stub';
 
   const adoption = {
     githubStargazers: 'githubStargazers',

@@ -7,7 +7,7 @@ urls:
 category:
   - ssg
 description: PHP static-site generator for blogs and other websites, with a template system and a PHP API.
-status: active
+status: stub
 maintainer: Lucas Krause
 maintainerType: individual
 firstRelease: 2015

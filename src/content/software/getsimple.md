@@ -6,7 +6,7 @@ urls:
 category:
   - cms
 description: Flat-file content management system written in PHP.
-status: active
+status: stub
 maintainerType: community
 language: php
 runtime:

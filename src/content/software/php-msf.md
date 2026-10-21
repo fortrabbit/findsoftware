@@ -7,7 +7,7 @@ urls:
 category:
   - framework
 description: PHP microservice framework that runs on the Swoole extension as a long-running coroutine HTTP server.
-status: active
+status: stub
 maintainer: Chengdu PinGuo Technology Co., Ltd.
 maintainerType: company
 hqCountry: CN

@@ -7,7 +7,7 @@ urls:
 category:
   - cms
 description: Modular, multilingual content management system built with Laravel.
-status: active
+status: stub
 maintainer: Nicolas Widart bvba
 language: php
 runtime:

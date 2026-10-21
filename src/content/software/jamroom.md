@@ -10,7 +10,7 @@ category:
   - cms
   - community
 description: Self-hosted PHP social networking software with an open source core, premium modules and skins, and a hosted option.
-status: active
+status: stub
 maintainer: Talldude Networks, LLC
 maintainerType: company
 language: php

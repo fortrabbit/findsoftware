@@ -8,7 +8,7 @@ urls:
 category:
   - ssg
 description: PHP static site generator that uses the Plates template system.
-status: active
+status: stub
 maintainer: Simon Dann
 maintainerType: individual
 language: php

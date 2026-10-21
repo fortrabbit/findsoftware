@@ -7,7 +7,7 @@ urls:
 category:
   - ssg
 description: Static site generator bundle for Symfony applications that dumps the application's routes to static HTML files.
-status: active
+status: stub
 maintainer: Franz Wilding
 maintainerType: individual
 language: php

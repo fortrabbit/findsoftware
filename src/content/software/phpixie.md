@@ -8,7 +8,7 @@ urls:
 category:
   - framework
 description: Full-stack PHP framework built from components that can also be used without the framework.
-status: active
+status: stub
 maintainer: PHPixie
 language: php
 runtime:

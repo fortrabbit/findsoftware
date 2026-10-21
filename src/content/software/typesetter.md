@@ -8,7 +8,7 @@ urls:
 category:
   - cms
 description: Open-source PHP content management system with WYSIWYG editing that stores pages as flat files.
-status: active
+status: stub
 maintainer: Typesetter
 language: php
 runtime:

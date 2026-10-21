@@ -6,7 +6,7 @@ urls:
 category:
   - cms
 description: Open-source PHP content management system built as an application platform, with applications added per site.
-status: active
+status: stub
 maintainer: Novius
 language: php
 runtime:

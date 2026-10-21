@@ -7,7 +7,7 @@ urls:
 category:
   - framework
 description: PHP micro framework that adds MVC tooling to WordPress development.
-status: active
+status: stub
 maintainer: htmlBurger
 language: php
 runtime:

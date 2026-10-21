@@ -8,7 +8,7 @@ urls:
 category:
   - ssg
 description: PHP static site generator that builds HTML sites from JSON or Markdown content files with Laravel's Blade templates.
-status: active
+status: stub
 maintainer: Andrew Schmelyun
 maintainerType: individual
 firstRelease: 2019

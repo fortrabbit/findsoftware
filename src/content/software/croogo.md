@@ -8,7 +8,7 @@ urls:
 category:
   - cms
 description: Open-source content management system for PHP, built on the CakePHP framework.
-status: active
+status: stub
 maintainer: Croogo Development Team
 maintainerType: community
 firstRelease: 2009

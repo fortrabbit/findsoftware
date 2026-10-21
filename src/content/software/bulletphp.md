@@ -7,7 +7,7 @@ urls:
 category:
   - framework
 description: PHP micro-framework that routes HTTP requests one URI path segment at a time, using nested callbacks.
-status: active
+status: stub
 maintainer: Vance Lucas
 maintainerType: individual
 firstRelease: 2013

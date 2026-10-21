@@ -8,7 +8,7 @@ category:
   - dev-tool
   - admin-panel
 description: Laravel package that generates CRUD code, APIs and admin panel views for a model from the command line, a file or database tables.
-status: active
+status: stub
 maintainer: InfyOm Technologies Private Limited
 maintainerType: company
 language: php

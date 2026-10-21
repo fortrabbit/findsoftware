@@ -8,7 +8,7 @@ urls:
 category:
   - cms
 description: Open-source blog application built with Laravel and Vue.js.
-status: active
+status: stub
 maintainer: Jiajian Chan
 maintainerType: individual
 language: php

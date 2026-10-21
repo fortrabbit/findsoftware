@@ -9,7 +9,7 @@ urls:
 category:
   - cms
 description: Open-source CMS that lets web designers make existing HTML and CSS templates editable without writing PHP.
-status: active
+status: stub
 maintainer: Webzyme Softwares Pvt. Ltd.
 maintainerType: company
 language: php

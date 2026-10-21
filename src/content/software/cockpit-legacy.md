@@ -8,7 +8,7 @@ category:
   - cms
   - headless-cms
 description: Open-source PHP content management system from the earlier Cockpit line, usable as a headless CMS.
-status: active
+status: stub
 maintainer: Agentejo
 firstRelease: 2013
 runtime:

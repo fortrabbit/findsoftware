@@ -6,7 +6,7 @@ urls:
 category:
   - framework
 description: Swoole-based PHP coroutine framework for HTTP, WebSocket and RPC servers and microservices.
-status: active
+status: stub
 maintainer: swoft-cloud
 language: php
 runtime:

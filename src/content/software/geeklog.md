@@ -7,7 +7,7 @@ urls:
 category:
   - cms
 description: Open source web content management system and blog engine written in PHP, extensible with plugins.
-status: active
+status: stub
 language: php
 runtime:
   - php

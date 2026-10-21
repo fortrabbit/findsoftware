@@ -7,7 +7,7 @@ urls:
 category:
   - cms
 description: Web-based automated news publishing and content management system written in PHP.
-status: active
+status: stub
 maintainer: PHPNuke Mashhad Team
 maintainerType: community
 language: php

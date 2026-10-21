@@ -8,7 +8,7 @@ urls:
 category:
   - ssg
 description: PHP static site generator that converts Markdown, Textile and Twig files into static HTML sites.
-status: active
+status: stub
 maintainer: Daniel Stainback
 maintainerType: individual
 language: php

@@ -6,7 +6,7 @@ urls:
 category:
   - cms
 description: Web news management system written in PHP, with a web-based administration section.
-status: active
+status: stub
 maintainer: Jason Hines
 firstRelease: 2000
 language: php

@@ -8,7 +8,7 @@ urls:
 category:
   - css-framework
 description: Drop-in collection of CSS styles that styles plain HTML elements without classes.
-status: active
+status: stub
 maintainer: Kognise
 maintainerType: individual
 runsAs:

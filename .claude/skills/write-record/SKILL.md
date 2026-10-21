@@ -117,7 +117,7 @@ node -e "require('yaml')" 2>/dev/null && node -e "const y=require('yaml');y.pars
 
 ## Signals that a project has ended
 
-Check each one; release age is not one of them. Any signal found sets `status: discontinued` in the fact file, with a `status` fact citing it, and the file is written as usual:
+Check each one; release age is not one of them (the import moves a record with no release in three years to `stub` on its own, so record `latestReleaseDate` and leave the status alone). Any signal found sets `status: discontinued` in the fact file, with a `status` fact citing it, and the file is written as usual:
 
 - `archived: true` from `gh api repos/<owner>/<repo>`, for the repository the project's own site names as its source. A GitHub repo archived because development moved elsewhere is no signal: record the new repository instead
 - `abandoned` on the Packagist package (`https://repo.packagist.org/p2/<vendor>/<name>.json`)
