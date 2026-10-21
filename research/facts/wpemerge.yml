@@ -1,0 +1,122 @@
+id: wpemerge
+name: WP Emerge
+status: accepted
+checkedAt: 2026-10-21
+description: PHP micro framework that adds MVC tooling to WordPress development.
+facts:
+  - field: repository
+    value: https://github.com/htmlburger/wpemerge
+    url: https://api.github.com/repos/htmlburger/wpemerge
+    checkedAt: 2026-10-21
+    via: api
+  - field: maintainer
+    value: htmlBurger
+    url: https://github.com/htmlburger/wpemerge/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "the lovely folks at [htmlBurger](http://htmlburger.com)"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/htmlburger
+    checkedAt: 2026-10-21
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://api.github.com/repos/htmlburger/wpemerge
+    checkedAt: 2026-10-21
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/htmlburger/wpemerge
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/htmlburger/wpemerge/blob/0.17.0/composer.json
+    checkedAt: 2026-10-21
+    via: page
+    quote: '"php": ">=5.5"'
+  - field: runtimeMin
+    value: "5.5"
+    url: https://github.com/htmlburger/wpemerge/blob/0.17.0/composer.json
+    checkedAt: 2026-10-21
+    via: page
+    quote: '"php": ">=5.5"'
+  - field: categories
+    value: [framework]
+    url: https://github.com/htmlburger/wpemerge/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "A micro framework which modernizes WordPress as a CMS development by providing tools to implement MVC and more."
+  - field: basedOn
+    value: [wordpress]
+    url: https://github.com/htmlburger/wpemerge/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "A micro framework which modernizes WordPress as a CMS development by providing tools to implement MVC and more."
+  - field: docs
+    value: https://docs.wpemerge.com/
+    url: https://github.com/htmlburger/wpemerge/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "https://docs.wpemerge.com/#/framework/quickstart"
+  - field: installMethod
+    value: composer require htmlburger/wpemerge
+    url: https://github.com/htmlburger/wpemerge-docs/blob/master/framework/quickstart.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "composer require htmlburger/wpemerge"
+  - field: license
+    value: GPL-2.0
+    url: https://api.github.com/repos/htmlburger/wpemerge
+    checkedAt: 2026-10-21
+    via: api
+  - field: license
+    value: GPL-2.0-only
+    url: https://github.com/htmlburger/wpemerge/blob/0.17.0/composer.json
+    checkedAt: 2026-10-21
+    via: page
+    quote: '"license": "GPL-2.0-only"'
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/htmlburger/wpemerge/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "WP Emerge is completely open source"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/htmlburger/wpemerge/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2022-04-16
+    url: https://api.github.com/repos/htmlburger/wpemerge/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 457
+    url: https://api.github.com/repos/htmlburger/wpemerge
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 5
+    url: https://api.github.com/repos/htmlburger/wpemerge/contributors?anon=true&per_page=1
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistName
+    value: htmlburger/wpemerge
+    url: https://packagist.org/packages/htmlburger/wpemerge.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistDownloads
+    value: 143672 (total)
+    url: https://packagist.org/packages/htmlburger/wpemerge.json
+    checkedAt: 2026-10-21
+    via: api
+notFound: [runsAs, renderingModes, pricingPage, paidEdition, firstRelease, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, maintainerType, contentStore, headlessApi, multisite, adminUi, userRoles, sso, i18n, endoflifeId, pluginDirectory, pluginCount, reportedInstalls, usageShare, npmName, npmWeeklyDownloads, forum, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable:
+  - https://wpemerge.com/ (the homepage named in the README, composer.json and the repository's homepage field; checked 2026-10-21, HTTP 526, body "error code: 526" (Cloudflare); no homepage fact is recorded)
+  - https://docs.wpemerge.com/ (the documentation the README links as "Features & Documentation" at #/framework/overview and #/framework/quickstart; checked 2026-10-21, HTTP 200 with 2,844 bytes of HTML whose body holds no text, only script references, so the page is an empty JavaScript shell)
+  - https://api.wpemerge.com/ (API reference link in the README; not fetched)
+notes: >
+  Status is accepted on criterion 3: the docs source repository htmlburger/wpemerge-docs (docsify, folders framework/ and starter/) holds the quickstart and a 0-to-100 setup guide, both with composer require htmlburger/wpemerge. The docs site docs.wpemerge.com serves an empty JavaScript shell, so the docs are read from that repository. License is stated two ways: the GitHub API reports GPL-2.0 and composer.json reports GPL-2.0-only; both are recorded as their own entries. The version is 0.x, so currentMajor is 0. The last push was 2023-07-13 and the last release 2022-04-16; release age is not a criterion, and no signal of an end (archived repository, abandoned package, a statement of ending) was found. Packagist lists htmlburger/wpemerge as not abandoned. The README also links two starter projects (htmlburger/wpemerge-plugin and htmlburger/wpemerge-theme), which are not candidates here.

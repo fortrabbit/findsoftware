@@ -1,0 +1,1 @@
+Ubiquity is a PHP framework for web applications and REST services, with an MVC structure, dependency injection and an ORM. The project that Composer's create-project command builds includes the Webtools web administration interface. The README lists managed servers: PHP-FPM with Apache or nginx, and others including Workerman and Swoole.

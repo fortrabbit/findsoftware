@@ -430,7 +430,8 @@ function licenseModelOf({ status, licenses, repository, sourcePublic, paidEditio
 
 function maintainerTypeOf({ maintainer, repoOwnerType }) {
   if (foundationName.test(maintainer)) return 'foundation';
-  if (legalForm.test(maintainer)) return 'company';
+  // Chinese legal forms (有限公司, 股份公司) end the name with no word boundary to match on.
+  if (legalForm.test(maintainer) || /(有限公司|股份公司|有限责任公司)$/u.test(maintainer)) return 'company';
   // A team named as such is several people, even when its repository sits on one person's account.
   if (/\b(team|community|contributors|authors|developers)\b/i.test(maintainer)) return 'community';
   if (String(repoOwnerType).toLowerCase() === 'user') return 'individual';

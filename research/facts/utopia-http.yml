@@ -1,0 +1,101 @@
+id: utopia-http
+name: Utopia HTTP
+status: accepted
+checkedAt: 2026-10-21
+description: PHP framework for HTTP routing and request handling, with FPM and Swoole server adapters.
+facts:
+  - field: name
+    value: Utopia HTTP
+    url: https://github.com/utopia-php/http/blob/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Utopia HTTP is a PHP MVC based framework"
+  - field: repository
+    value: https://github.com/utopia-php/http
+    url: https://api.github.com/repos/utopia-php/http
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://github.com/utopia-php/http/blob/main/docs/Getting-Starting-Guide.md
+    url: https://github.com/utopia-php/http/blob/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/utopia-php/http
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/utopia-php/http/blob/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Utopia HTTP is a PHP MVC based framework"
+  - field: language
+    value: PHP
+    url: https://github.com/utopia-php/http/blob/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Utopia HTTP is a PHP MVC based framework"
+  - field: runtime
+    value: php
+    url: https://repo.packagist.org/p2/utopia-php/http.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtimeMin
+    value: "8.1"
+    url: https://repo.packagist.org/p2/utopia-php/http.json
+    checkedAt: 2026-10-21
+    via: api
+    quote: '"php":">=8.1"'
+  - field: currentMajor
+    value: "1"
+    url: https://repo.packagist.org/p2/utopia-php/http.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-03-16
+    url: https://repo.packagist.org/p2/utopia-php/http.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: maintainer
+    value: Appwrite team
+    url: https://github.com/utopia-php/http/blob/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "This library is maintained by the Appwrite team"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/utopia-php
+    checkedAt: 2026-10-21
+    via: api
+  - field: installMethod
+    value: composer require
+    url: https://github.com/utopia-php/http/blob/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "composer require utopia-php/http"
+  - field: githubStargazers
+    value: 297
+    url: https://api.github.com/repos/utopia-php/http
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 23
+    url: https://api.github.com/repos/utopia-php/http/contributors
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistName
+    value: utopia-php/http
+    url: https://packagist.org/packages/utopia-php/http.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistDownloads
+    value: 142114 (total)
+    url: https://packagist.org/packages/utopia-php/http.json
+    checkedAt: 2026-10-21
+    via: api
+notFound: [runsAs, homepage, firstRelease, hqCountry, parent, forkOf, successorOf, basedOn, wikidata, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, userRoles, sso, importsFrom, endoflifeId, npmName, pricingPage, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: []
+notes: >
+  The README says the repository is a read-only mirror of packages/http in appwrite/appwrite, where development happens; repository stays the package's own repository because it is the one Composer installs, and the mirror is not archived. The project has no site of its own: utopia-php.github.io answers 404 and the README links only the GitHub organization, so homepage is not recorded. The README says the library is an MVC framework that relies on the standalone Utopia DI package; that is a dependency, not basedOn. The Packagist stable line ends at 1.2.5 (2026-03-16); the 2.0 line is published only as release candidates (2.0.0-rc34 on 2026-10-08 requires PHP 8.5 or later), so currentMajor is 1 and the GitHub latest release, 2.0.0-rc7 from 2026-06-10, is a pre-release and is not used. The README does not state whether the FPM or Swoole adapter runs per request or as a long-lived process, and its php -S command is an example for local use, so runsAs is not recorded. The maintainer is the Appwrite team as the README names it; the appwrite.io legal pages checked returned 404 and the home page names no legal entity. The contributors count is the GitHub contributors listing with pagination.

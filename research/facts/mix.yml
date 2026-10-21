@@ -1,0 +1,100 @@
+id: mix
+name: MixPHP
+status: accepted
+checkedAt: 2026-10-21
+description: PHP framework for command-line mode, serving HTTP through Swoole, Swow, WorkerMan, PHP-FPM or the built-in CLI server.
+facts:
+  - field: name
+    value: MixPHP
+    url: https://github.com/mix-php/mix/blob/master/README_EN.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "MixPHP is a PHP command-line development framework"
+  - field: repository
+    value: https://github.com/mix-php/mix
+    url: https://github.com/mix-php/mix
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://github.com/mix-php/mix/blob/master/README_EN.md
+    url: https://github.com/mix-php/mix/blob/master/README_EN.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "`V3.0` 1.[Quick start](#Quick-start) 2.[Server](#Server) 3.[Standalone module](#Standalone-module)"
+  - field: maintainer
+    value: Mix PHP
+    url: https://api.github.com/users/mix-php
+    checkedAt: 2026-10-21
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/mix-php
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/mix-php/mix/blob/master/README_EN.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "MixPHP is a PHP command-line development framework"
+  - field: language
+    value: PHP
+    url: https://github.com/mix-php/mix
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: php
+    url: https://github.com/mix-php/mix/blob/master/README_EN.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "MixPHP is a PHP command-line development framework"
+  - field: runtimeMin
+    value: "7.3"
+    url: https://repo.packagist.org/p2/mix/mix.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: installMethod
+    value: composer create-project (mix/web-skeleton, mix/api-skeleton, mix/cli-skeleton, mix/grpc-skeleton, mix/websocket-skeleton)
+    url: https://github.com/mix-php/mix/blob/master/README_EN.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "composer create-project --prefer-dist mix/web-skeleton web"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/mix-php/mix
+    checkedAt: 2026-10-21
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/mix-php/mix
+    checkedAt: 2026-10-21
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://repo.packagist.org/p2/mix/mix.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2023-05-08
+    url: https://github.com/mix-php/mix/releases
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistName
+    value: mix/mix
+    url: https://packagist.org/packages/mix/mix
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistDownloads
+    value: {total: 1238, monthly: 47}
+    url: https://packagist.org/packages/mix/mix.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 1926
+    url: https://github.com/mix-php/mix
+    checkedAt: 2026-10-21
+    via: api
+notFound: [homepage, firstRelease, hqCountry, parent, forkOf, successorOf, contributors, eolPolicy, endoflifeId, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, renderingModes, runsAs]
+unreadable: []
+notes: >
+  The homepage in composer.json (openmix.org/mix-php) now serves an unrelated gaming blog, so no project site is recorded and homepage stays unknown. The README names the skeleton packages (mix/web-skeleton and others) as install targets; mix/mix is the core package, so the registry figures come from it. The Packagist package lists maintainer onanying, which the project does not state on its own pages; the maintainer is the GitHub organization Mix PHP. The README lists the HTTP drivers (PHP-FPM, Swoole, Swow, WorkerMan, PHP built-in CLI server) without saying which run per request and which as a long-running process, so runsAs is left out. The CSV category long-running is not recorded: the README does not use that term. Documentation other than the README is for V2 and sits on kancloud.cn, not for V3.

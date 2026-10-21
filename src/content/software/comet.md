@@ -19,6 +19,7 @@ hosting:
 runtimeMin: php 7.2
 basedOn:
   - slim
+  - workerman
 headlessApi:
   - rest
 runsAs:

@@ -1,0 +1,112 @@
+id: wordpress-static-exporter
+name: Static Site Exporter
+status: accepted
+checkedAt: 2026-10-21
+description: WordPress plugin that exports posts, pages and settings to Markdown and YAML for Jekyll, Hugo and other static site generators.
+facts:
+  - field: name
+    value: Static Site Exporter
+    url: https://github.com/benbalter/wordpress-static-site-exporter/blob/master/readme.txt
+    checkedAt: 2026-10-21
+    via: page
+    quote: "=== Static Site Exporter ==="
+  - field: repository
+    value: https://github.com/benbalter/wordpress-static-site-exporter
+    url: https://api.github.com/repos/benbalter/wordpress-static-site-exporter
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://github.com/benbalter/wordpress-static-site-exporter/tree/master/docs
+    url: https://github.com/benbalter/wordpress-static-site-exporter/blob/master/readme.txt
+    checkedAt: 2026-10-21
+    via: page
+    quote: "See the full documentation"
+  - field: license
+    value: GPL-3.0
+    url: https://api.github.com/repos/benbalter/wordpress-static-site-exporter
+    checkedAt: 2026-10-21
+    via: api
+  - field: license
+    value: GPL-3.0-or-later
+    url: https://github.com/benbalter/wordpress-static-site-exporter/blob/master/readme.txt
+    checkedAt: 2026-10-21
+    via: page
+    quote: "License: GPLv3 or later"
+  - field: categories
+    value: [static-export, wordpress-plugin]
+    url: https://github.com/benbalter/wordpress-static-site-exporter/blob/master/readme.txt
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Export WordPress posts and pages to Markdown and YAML for Jekyll"
+  - field: language
+    value: PHP
+    url: https://github.com/benbalter/wordpress-static-site-exporter/blob/master/readme.txt
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Requires PHP: 8.2"
+  - field: runtime
+    value: php
+    url: https://github.com/benbalter/wordpress-static-site-exporter/blob/master/readme.txt
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Requires PHP: 8.2"
+  - field: runtimeMin
+    value: "8.2"
+    url: https://github.com/benbalter/wordpress-static-site-exporter/blob/master/readme.txt
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Requires PHP: 8.2"
+  - field: currentMajor
+    value: "4"
+    url: https://github.com/benbalter/wordpress-static-site-exporter/blob/master/readme.txt
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Stable tag: 4.4.0"
+  - field: latestReleaseDate
+    value: 2026-10-11
+    url: https://api.github.com/repos/benbalter/wordpress-static-site-exporter/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: basedOn
+    value: wordpress
+    url: https://github.com/benbalter/wordpress-static-site-exporter/blob/master/readme.txt
+    checkedAt: 2026-10-21
+    via: page
+    quote: "One-click WordPress plugin"
+  - field: maintainer
+    value: Ben Balter
+    url: https://github.com/benbalter/wordpress-static-site-exporter/blob/master/composer.json
+    checkedAt: 2026-10-21
+    via: page
+    quote: '"name": "Ben Balter"'
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/benbalter
+    checkedAt: 2026-10-21
+    via: api
+  - field: installMethod
+    value: WordPress plugin folder
+    url: https://github.com/benbalter/wordpress-static-site-exporter/blob/master/readme.txt
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Place plugin in `/wp-content/plugins/` folder"
+  - field: adminUi
+    value: yes, WordPress dashboard Tools menu
+    url: https://github.com/benbalter/wordpress-static-site-exporter/blob/master/readme.txt
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Select `Export to Jekyll` from the `Tools` menu"
+  - field: githubStargazers
+    value: 1079
+    url: https://api.github.com/repos/benbalter/wordpress-static-site-exporter
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 26
+    url: https://api.github.com/repos/benbalter/wordpress-static-site-exporter/contributors
+    checkedAt: 2026-10-21
+    via: api
+notFound: [homepage, firstRelease, hqCountry, parent, forkOf, successorOf, wikidata, runsAs, renderingModes, databases, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, endoflifeId, npmName, packagistName, pricingPage, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: []
+notes: >
+  The CSV named the project "WordPress Static Site Exporter" and its plugin folder is jekyll-exporter; the readme.txt header reads "Static Site Exporter", so that is the name. The repository's homepage field names the WordPress.org plugin page, which is a directory listing, not a project site, so homepage is not recorded. The project is a plugin for WordPress, which the readme.txt requires at 6.4 or later, so WordPress is basedOn. The license is stated two ways: GitHub reports GPL-3.0, while readme.txt and composer.json say GPL-3.0-or-later; the "or later" clause is the only difference and was not resolved. The output is Markdown and YAML files in a zip, not static HTML, and the readme does not say where the plugin runs beyond WordPress, so renderingModes and runsAs stay unknown. The WP-CLI command (wp jekyll-export) and selective export by category or tag are documented in readme.txt and are not recorded as fields. The WordPress.org plugin page shows "Active installations 400+", but the WordPress.org plugin API returns no active_installs value, so reportedInstalls is not recorded until the two sources agree. The stable tag 4.4.0 was published on 2026-10-11 and the repository was pushed on 2026-10-20; it is not archived, so no end signal applies. The contributors count is the GitHub contributors listing at per_page=1 page count.

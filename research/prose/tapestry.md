@@ -1,0 +1,1 @@
+Tapestry is a static site generator written in PHP. Pages use native PHP templates through the Plates template system, and the output is a static website. The recommended install is a zipped release download that puts a command-line tool on the path, as the [README](https://github.com/tapestry-cloud/tapestry/blob/master/README.md) describes.

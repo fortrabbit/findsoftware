@@ -1,0 +1,125 @@
+id: restler
+name: Restler
+status: accepted
+checkedAt: 2026-10-21
+description: PHP framework that exposes the public methods of PHP classes as REST API endpoints.
+facts:
+  - field: homepage
+    value: https://www.luracast.com/restler/
+    url: https://www.luracast.com/restler/
+    checkedAt: 2026-10-21
+    via: page
+  - field: repository
+    value: https://github.com/Luracast/Restler
+    url: https://api.github.com/repos/Luracast/Restler
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://github.com/Luracast/Restler/blob/6.0.3/SETUP.md
+    url: https://github.com/Luracast/Restler/blob/6.0.3/SETUP.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "This guide explains how to install Restler v6"
+  - field: maintainer
+    value: Luracast
+    url: https://github.com/Luracast/Restler/blob/6.0.3/composer.json
+    checkedAt: 2026-10-21
+    via: page
+    quote: '"name": "Luracast"'
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Luracast
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [framework, api]
+    url: https://www.luracast.com/restler/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "A RESTful API server framework that is written in PHP"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/Luracast/Restler
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/Luracast/Restler/blob/6.0.3/SETUP.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Restler v6 requires PHP 8.0+"
+  - field: runtimeMin
+    value: "8.0"
+    url: https://github.com/Luracast/Restler/blob/6.0.3/SETUP.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Restler v6 requires PHP 8.0+"
+  - field: installMethod
+    value: composer require
+    url: https://github.com/Luracast/Restler/blob/6.0.3/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "composer require luracast/restler:^6.0"
+  - field: runsAs
+    value: [per-request]
+    url: https://github.com/Luracast/Restler/blob/6.0.3/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Traditional (Apache/Nginx + PHP-FPM)"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/Luracast/Restler/blob/6.0.3/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Persistent connections, coroutines, built-in HTTP server."
+  - field: license
+    value: MIT
+    url: https://github.com/Luracast/Restler/blob/6.0.3/composer.json
+    checkedAt: 2026-10-21
+    via: page
+    quote: '"license":"MIT"'
+  - field: license
+    value: MIT
+    url: https://github.com/Luracast/Restler/blob/6.0.3/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Restler is open-source software licensed under the MIT License"
+  - field: currentMajor
+    value: 6
+    url: https://repo.packagist.org/p2/luracast/restler.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-19
+    url: https://api.github.com/repos/Luracast/Restler/releases/tags/6.0.3
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 1386
+    url: https://api.github.com/repos/Luracast/Restler
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/Luracast/Restler/contributors?anon=true
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistName
+    value: luracast/restler
+    url: https://packagist.org/packages/luracast/restler.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistDownloads
+    value: 588089 (total)
+    url: https://packagist.org/packages/luracast/restler.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistDownloads
+    value: 7656 (monthly)
+    url: https://packagist.org/packages/luracast/restler.json
+    checkedAt: 2026-10-21
+    via: api
+notFound: [firstRelease, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, pricingPage, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, basedOn, maintainerType, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, reportedInstalls, usageShare, npmName, pypiDownloads, npmWeeklyDownloads, apiLimits, regions, selfHostOption]
+unreadable: []
+notes: >
+  The CSV homepage (http://luracast.com/products/restler/) answers with a redirect to https://www.luracast.com/restler/, which is recorded. The README names a LICENSE file that returns 404 at tag 6.0.3, so the MIT statements are cited to composer.json and the README. GitHub releases/latest returns 5.0.16 (published 2026-08-22); the stable major is 6 per Packagist, so latestReleaseDate is the 6.0.3 tag. The README dates production use to 2010 and the repository was created 2011; neither is a first-release year, so firstRelease stays unknown. The Packagist monthly figure is the luracast/restler package, the one the install command names. The contributor count is what the GitHub anonymous contributor list returns, and one of the two entries is named claude. The README documents an interactive API explorer and OpenAPI 3.0 output generated from PHPDoc; no dictionary field fits, so they are recorded here only. The always-on value comes from the Swoole/OpenSwoole section of the README, which names the swoole and openswoole PHP extensions as the server. The README lists Lambda deployment through Bref; runsAs is not extended to it because the page does not state how the Lambda process runs. The homepage links to Facebook, X and Instagram, but the fetched HTML carries no matching URLs, so no social handle is recorded.

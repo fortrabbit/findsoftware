@@ -1,0 +1,120 @@
+id: webman
+name: webman
+status: accepted
+checkedAt: 2026-10-21
+description: PHP HTTP service framework built on the Workerman server, installed with Composer.
+facts:
+  - field: name
+    value: webman
+    url: https://webman.workerman.net/doc/en/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Webman is a high-performance service framework built on Workerman"
+  - field: homepage
+    value: https://webman.workerman.net/
+    url: https://webman.workerman.net/
+    checkedAt: 2026-10-21
+    via: page
+  - field: docs
+    value: https://webman.workerman.net/doc/en/
+    url: https://webman.workerman.net/doc/en/
+    checkedAt: 2026-10-21
+    via: page
+  - field: repository
+    value: https://github.com/walkor/webman
+    url: https://api.github.com/repos/walkor/webman
+    checkedAt: 2026-10-21
+    via: api
+  - field: license
+    value: MIT
+    url: https://webman.workerman.net/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Released under the MIT License"
+  - field: categories
+    value: [framework]
+    url: https://webman.workerman.net/doc/en/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Webman is a high-performance service framework built on Workerman"
+  - field: language
+    value: PHP
+    url: https://webman.workerman.net/doc/en/install.html
+    checkedAt: 2026-10-21
+    via: page
+    quote: "PHP >= 8.1"
+  - field: runtime
+    value: php
+    url: https://webman.workerman.net/doc/en/install.html
+    checkedAt: 2026-10-21
+    via: page
+    quote: "PHP >= 8.1"
+  - field: runtimeMin
+    value: "8.1"
+    url: https://repo.packagist.org/p2/workerman/webman.json
+    checkedAt: 2026-10-21
+    via: api
+    quote: '"php":">=8.1"'
+  - field: currentMajor
+    value: "2"
+    url: https://repo.packagist.org/p2/workerman/webman.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-02-24
+    url: https://api.github.com/repos/walkor/webman/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: basedOn
+    value: workerman
+    url: https://webman.workerman.net/doc/en/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Webman is a high-performance service framework built on Workerman"
+  - field: maintainer
+    value: walkor
+    url: https://github.com/walkor/webman/blob/master/composer.json
+    checkedAt: 2026-10-21
+    via: page
+    quote: '"name": "walkor"'
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/walkor
+    checkedAt: 2026-10-21
+    via: api
+  - field: installMethod
+    value: composer create-project
+    url: https://webman.workerman.net/doc/en/install.html
+    checkedAt: 2026-10-21
+    via: page
+    quote: "composer create-project workerman/webman:~2.0"
+  - field: runsAs
+    value: always-on
+    url: https://webman.workerman.net/doc/en/install.html
+    checkedAt: 2026-10-21
+    via: page
+    quote: "service keeps running after terminal is closed"
+  - field: githubStargazers
+    value: 2694
+    url: https://api.github.com/repos/walkor/webman
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 28
+    url: https://api.github.com/repos/walkor/webman/contributors
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistName
+    value: workerman/webman
+    url: https://packagist.org/packages/workerman/webman.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistDownloads
+    value: 99830 (total)
+    url: https://packagist.org/packages/workerman/webman.json
+    checkedAt: 2026-10-21
+    via: api
+notFound: [firstRelease, hqCountry, parent, forkOf, successorOf, wikidata, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, endoflifeId, npmName, pricingPage, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: []
+notes: >
+  The CSV homepage is webman.workerman.net, which answers 200 after a redirect to its English documentation; the project's own site, so homepage is the root of that host. The install page is in the English documentation, and the install command installs workerman/webman, the package the docs name, so its Packagist count is recorded. The Packagist p2 entry for workerman/webman shows the stable line through v2.2.3 with PHP >=8.1, and v2.2.3 is also the GitHub latest release, published 2026-02-24. The always-on value comes from the install page's daemon mode, labeled for production; its debug mode is for development and is not recorded as local, since the framework also runs on live hosts. per-request is not stated. The project names Workerman as the server it is built on, so workerman is basedOn. The maintainer is the author named in composer.json; no legal entity is named on the pages read. The GitHub contributors count is the default listing at per_page=1 page count. The repository was pushed on 2026-04-15 and is not archived; the package is not abandoned, so no end signal applies.

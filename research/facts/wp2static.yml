@@ -1,0 +1,134 @@
+id: wp2static
+name: WP2Static
+status: accepted
+checkedAt: 2026-10-21
+description: WordPress plugin that generates a static copy of a WordPress site and deploys it.
+facts:
+  - field: repository
+    value: https://github.com/elementor/wp2static
+    url: https://api.github.com/repos/elementor/wp2static
+    checkedAt: 2026-10-21
+    via: api
+  - field: maintainer
+    value: Strattic
+    url: https://github.com/elementor/wp2static/blob/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Strattic is generously keeping the WP2Static plugin available and maintained"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/elementor
+    checkedAt: 2026-10-21
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://api.github.com/repos/elementor/wp2static
+    checkedAt: 2026-10-21
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/elementor/wp2static
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/elementor/wp2static/blob/7.2/composer.json
+    checkedAt: 2026-10-21
+    via: page
+    quote: '"php": ">=7.4"'
+  - field: runtimeMin
+    value: "7.4"
+    url: https://github.com/elementor/wp2static/blob/7.2/composer.json
+    checkedAt: 2026-10-21
+    via: page
+    quote: '"php": ">=7.4"'
+  - field: categories
+    value: [ssg, wordpress-plugin]
+    url: https://github.com/elementor/wp2static/blob/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "A WordPress plugin for static site generation and deployment."
+  - field: basedOn
+    value: [wordpress]
+    url: https://github.com/elementor/wp2static/blob/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "A WordPress plugin for static site generation and deployment."
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/elementor/wp2static/blob/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "A WordPress plugin for static site generation and deployment."
+  - field: installMethod
+    value: git clone with composer install
+    url: https://github.com/elementor/wp2static/blob/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "git clone https://github.com/wp2static/wp2static.git"
+  - field: installMethod
+    value: composer require
+    url: https://github.com/elementor/wp2static/blob/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "composer require wp2static/wp2static"
+  - field: installMethod
+    value: installer zip
+    url: https://github.com/elementor/wp2static/blob/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "get installer zip from"
+  - field: license
+    value: Unlicense
+    url: https://api.github.com/repos/elementor/wp2static
+    checkedAt: 2026-10-21
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/elementor/wp2static/blob/develop/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "This is free and unencumbered software released into the public domain."
+  - field: currentMajor
+    value: 7
+    url: https://api.github.com/repos/elementor/wp2static/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2023-01-31
+    url: https://api.github.com/repos/elementor/wp2static/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 1471
+    url: https://api.github.com/repos/elementor/wp2static
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 47
+    url: https://api.github.com/repos/elementor/wp2static/contributors?anon=true&per_page=1
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistName
+    value: leonstafford/wp2static
+    url: https://packagist.org/packages/leonstafford/wp2static.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistDownloads
+    value: 3147 (total)
+    url: https://packagist.org/packages/leonstafford/wp2static.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: forum
+    value: https://staticword.press/c/wordpress-static-site-generators/wp2static/
+    url: https://github.com/elementor/wp2static/blob/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "[Support Forum](https://staticword.press/c/wordpress-static-site-generators/wp2static/)"
+notFound: [pricingPage, paidEdition, firstRelease, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, maintainerType, contentStore, headlessApi, multisite, adminUi, userRoles, sso, i18n, runsAs, endoflifeId, pluginDirectory, pluginCount, reportedInstalls, usageShare, npmName, npmWeeklyDownloads, subreddit, discord, mastodon, bluesky, x, newsletter]
+unreadable:
+  - https://wp2static.com (the homepage named in the README, composer.json and plugin header; checked 2026-10-21 with curl over http and https, no HTTP response (exit 000); the requester reports a 301 to https://elementor.com/hosting/, not re-observed here; no homepage fact is recorded)
+  - https://wp2static.com/documentation (docs link in composer.json, not reachable with the homepage)
+  - https://wp2static.com/download/ (installer zip link in the README, not reachable with the homepage)
+notes: >
+  Criterion 3 is met by the README's installation options section: a git clone with composer install, composer require, and an installer zip. The README's clone address (github.com/wp2static/wp2static) and composer package (wp2static/wp2static) do not match the repository cited here (elementor/wp2static) or the composer.json name (leonstafford/wp2static); wp2static/wp2static returns 404 on Packagist, and leonstafford/wp2static is the Packagist package whose repository is elementor/wp2static. Packagist monthly downloads for leonstafford/wp2static were 29 at check time; only the total is recorded. Criterion 4: the README states, quoted as written, "Strattic is generously keeping the WP2Static plugin available and maintained for open source users!" It is recorded as stated and not as a verified maintenance signal; the default branch was last pushed 2024-02-14 and the latest tag is 7.2 from 2023-01-31. The project is not discontinued on any signal in the criteria. The wordpress.org plugin API returns "Plugin not found" for slug wp2static (checked 2026-10-21), so no pluginDirectory is recorded. The README's "A WordPress plugin" supports basedOn wordpress. runsAs is unknown: no page states that the output is static files or how the site runs; the README says only "static site generation". The plugin header lists the author as "Strattic by Elementor"; the maintainer is recorded as the README names it, and no parent company is recorded because no page says who owns Strattic.

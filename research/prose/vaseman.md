@@ -1,0 +1,1 @@
+Vaseman is a PHP static site generator. It builds sites from Blade templates and reads written content from Markdown files. The Composer package is installed as a global command, and the output is static files. The project's site describes it as a prototyping tool as well, from a simple prototype to a complex site, and credits the Windwalker framework.

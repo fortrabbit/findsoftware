@@ -1,0 +1,101 @@
+id: statamic-ssg
+name: Statamic SSG
+status: accepted
+checkedAt: 2026-10-21
+description: Statamic package that generates a Statamic site into static HTML files.
+facts:
+  - field: docs
+    value: https://github.com/statamic/ssg/blob/4.x/README.md
+    url: https://raw.githubusercontent.com/statamic/ssg/4.x/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Your site will be generated into a directory which you can deploy however you like."
+  - field: repository
+    value: https://github.com/statamic/ssg
+    url: https://api.github.com/repos/statamic/ssg
+    checkedAt: 2026-10-21
+    via: api
+  - field: maintainer
+    value: Statamic, LLC
+    url: https://statamic.dev/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Statamic, LLC. All rights reserved."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/statamic
+    checkedAt: 2026-10-21
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://api.github.com/repos/statamic/ssg
+    checkedAt: 2026-10-21
+    via: api
+  - field: basedOn
+    value: [statamic]
+    url: https://raw.githubusercontent.com/statamic/ssg/4.x/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Generate static sites with Statamic."
+  - field: categories
+    value: [ssg]
+    url: https://raw.githubusercontent.com/statamic/ssg/4.x/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Generate static sites with Statamic."
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/statamic/ssg
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://api.github.com/repos/statamic/ssg
+    checkedAt: 2026-10-21
+    via: api
+  - field: installMethod
+    value: php please install:ssg
+    url: https://raw.githubusercontent.com/statamic/ssg/4.x/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "php please install:ssg"
+  - field: runsAs
+    value: [static]
+    url: https://statamic.dev/advanced-topics/static-caching
+    checkedAt: 2026-10-21
+    via: page
+    quote: "pre-generate and deploy fully static HTML sites"
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/statamic/ssg/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-03-09
+    url: https://api.github.com/repos/statamic/ssg/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistName
+    value: statamic/ssg
+    url: https://packagist.org/packages/statamic/ssg.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistDownloads
+    value: {total: 365570, monthly: 14821}
+    url: https://packagist.org/packages/statamic/ssg.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 252
+    url: https://api.github.com/repos/statamic/ssg
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 17
+    url: https://api.github.com/repos/statamic/ssg/contributors
+    checkedAt: 2026-10-21
+    via: api
+notFound: [homepage, hqCountry, firstRelease, parent, forkOf, successorOf, alternativeTo, wikidata, contentStore, renderingModes, headlessApi, i18n, livePreview, userRoles, sso, importsFrom, pricingPage, paidEdition, endoflifeId, npmName, pypiDownloads, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, license, licenseModel, runtimeMin, databases, templating, adminUi]
+unreadable: []
+notes: >
+  No homepage: the repository's homepage field is empty, and the Statamic documentation does not describe this package, so the record has no homepage. License is unknown: the repository root has no LICENSE file, composer.json has no license key, and Packagist lists none; GitHub reports none. The package requires statamic/cms ^6.0.0 (composer.json), so the Statamic CMS license terms and its PHP requirement apply to a site built with it; runtimeMin is not recorded for this package. The README says the optional spatie/fork package enables multiple workers for page generation, which is not recorded as a fact. The contributor count is the anonymous-included count from the contributors API Link header. The README gives deployment examples for four hosts, which are not recorded. The Statamic static caching page mentions this package as an alternative; that page is cited for runsAs only.

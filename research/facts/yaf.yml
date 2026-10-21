@@ -1,0 +1,108 @@
+id: yaf
+name: Yaf
+status: accepted
+checkedAt: 2026-10-21
+description: PHP framework written in C and distributed as a PHP extension.
+facts:
+  - field: repository
+    value: https://github.com/laruence/yaf
+    url: https://api.github.com/repos/laruence/yaf
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://www.php.net/manual/en/book.yaf.php
+    url: https://www.php.net/manual/en/book.yaf.php
+    checkedAt: 2026-10-21
+    via: page
+    quote: "is a PHP framework that is used to develop web applications"
+  - field: maintainer
+    value: Xinchen Hui
+    url: https://github.com/laruence/yaf/blob/master/package.xml
+    checkedAt: 2026-10-21
+    via: page
+    quote: "<name>Xinchen Hui</name>"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/laruence
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://www.php.net/manual/en/book.yaf.php
+    checkedAt: 2026-10-21
+    via: page
+    quote: "is a PHP framework that is used to develop web applications"
+  - field: templating
+    value: [php]
+    url: https://www.php.net/manual/en/book.yaf.php
+    checkedAt: 2026-10-21
+    via: page
+    quote: "lightweight PHP template view"
+  - field: language
+    value: C
+    url: https://api.github.com/repos/laruence/yaf
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/laruence/yaf
+    checkedAt: 2026-10-21
+    via: page
+    quote: "built as a PHP extension"
+  - field: runtimeMin
+    value: "7.0"
+    url: https://repo.packagist.org/p2/laruence/yaf.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: installMethod
+    value: pecl install yaf
+    url: https://www.php.net/manual/en/yaf.installation.php
+    checkedAt: 2026-10-21
+    via: page
+    quote: "pecl install yaf"
+  - field: installMethod
+    value: pie install laruence/yaf
+    url: https://www.php.net/manual/en/yaf.installation.php
+    checkedAt: 2026-10-21
+    via: page
+    quote: "pie install laruence/yaf"
+  - field: license
+    value: PHP-3.01
+    url: https://github.com/laruence/yaf/blob/master/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "The PHP License, version 3.01"
+  - field: currentMajor
+    value: 3
+    url: https://repo.packagist.org/p2/laruence/yaf.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-18
+    url: https://api.github.com/repos/laruence/yaf/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 4511
+    url: https://api.github.com/repos/laruence/yaf
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 37
+    url: https://api.github.com/repos/laruence/yaf/contributors
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistName
+    value: laruence/yaf
+    url: https://packagist.org/packages/laruence/yaf.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistDownloads
+    value: 5 (total)
+    url: https://packagist.org/packages/laruence/yaf.json
+    checkedAt: 2026-10-21
+    via: api
+notFound: [homepage, firstRelease, hqCountry, parent, basedOn, forkOf, successorOf, runsAs, endoflifeId, pricingPage, paidEdition, reportedInstalls, forum, discord, subreddit, newsletter]
+unreadable: []
+notes: >
+  The php-extension category is left out because the import maps it to web-server; the fact that Yaf is built as a PHP extension is in runtime. The CSV homepage (php.net/manual/book.yaf) is the PHP project's manual, not a site Yaf runs, and the repository homepage field points to the same manual; homepage stays unknown. The manual is the documentation, and the README links to it. The manual and the README both describe the extension's performance in terms this record does not repeat. The install page states Yaf has no external dependencies; no field holds that, so it is not recorded. runsAs stays unknown: no page states how a Yaf application is run on a host. The repository created_at (2011-12-13) is repository creation, not a first release. The PECL package page (pecl.php.net/package/yaf), which the install page names, is a registry outside the listed sources and was not read. The Packagist package laruence/yaf, named for install by PIE, shows 5 total downloads and 0 monthly; it is the package the PIE command installs, so it is recorded as stated, and it is not a sign of adoption. The GitHub license field reads NOASSERTION; the LICENSE file is the source for PHP-3.01. The maintainer is the lead named in package.xml; the GitHub account is laruence.

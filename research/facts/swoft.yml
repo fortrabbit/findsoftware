@@ -1,0 +1,134 @@
+id: swoft
+name: Swoft
+status: accepted
+checkedAt: 2026-10-21
+description: Swoole-based PHP coroutine framework for HTTP, WebSocket and RPC servers and microservices.
+facts:
+  - field: repository
+    value: https://github.com/swoft-cloud/swoft
+    url: https://api.github.com/repos/swoft-cloud/swoft
+    checkedAt: 2026-10-21
+    via: api
+  - field: maintainer
+    value: swoft-cloud
+    url: https://api.github.com/repos/swoft-cloud/swoft
+    checkedAt: 2026-10-21
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/swoft-cloud
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/swoft-cloud/swoft/blob/v2.0.11/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Swoft is a PHP microservices coroutine framework based on the Swoole extension."
+  - field: basedOn
+    value: Swoole
+    url: https://github.com/swoft-cloud/swoft/blob/v2.0.11/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "based on the Swoole extension"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/swoft-cloud/swoft
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/swoft-cloud/swoft/blob/v2.0.11/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "PHP 7.1+"
+  - field: runtimeMin
+    value: "7.1"
+    url: https://github.com/swoft-cloud/swoft/blob/v2.0.11/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "PHP 7.1+"
+  - field: databases
+    value: [mysql, redis]
+    url: https://github.com/swoft-cloud/swoft/blob/v2.0.11/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "High performance connection pool(Mysql/Redis/RPC)"
+  - field: i18n
+    value: yes
+    url: https://github.com/swoft-cloud/swoft/blob/v2.0.11/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Internationalization(i18n) support"
+  - field: installMethod
+    value: composer create-project
+    url: https://github.com/swoft-cloud/swoft/blob/v2.0.11/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "composer create-project swoft/swoft swoft"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/swoft-cloud/swoft/blob/v2.0.11/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "is resident in memory, independent of traditional PHP-FPM"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/swoft-cloud/swoft
+    checkedAt: 2026-10-21
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/swoft-cloud/swoft/blob/v2.0.11/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Swoft is an open-source software licensed under the"
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/swoft-cloud/swoft/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2021-05-08
+    url: https://api.github.com/repos/swoft-cloud/swoft/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 5532
+    url: https://api.github.com/repos/swoft-cloud/swoft
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 38
+    url: https://api.github.com/repos/swoft-cloud/swoft/contributors?anon=true&per_page=100
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistName
+    value: swoft/framework
+    url: https://packagist.org/packages/swoft/framework.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistDownloads
+    value: 188516 total (swoft/framework)
+    url: https://packagist.org/packages/swoft/framework.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: forum
+    value: https://github.com/swoft-cloud/forum/issues
+    url: https://github.com/swoft-cloud/swoft/blob/v2.0.11/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Forum https://github.com/swoft-cloud/forum/issues"
+  - field: subreddit
+    value: https://www.reddit.com/r/swoft/
+    url: https://github.com/swoft-cloud/swoft/blob/v2.0.11/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Reddit https://www.reddit.com/r/swoft/"
+notFound: [pricingPage, paidEdition, firstRelease, hqCountry, parent, forkOf, successorOf, alternativeTo, contentStore, headlessApi, adminUi, templating, renderingModes, multisite, userRoles, sso, importsFrom, endoflifeId, usageShare, reportedInstalls, npmName, pluginDirectory, pluginCount, x, mastodon, bluesky, newsletter, discord, wikidata]
+unreadable:
+  - https://swoft.org/ (homepage in the repository metadata; HTTP 520 on every path, "error code: 520" from Cloudflare, checked 2026-10-21 twice)
+  - https://www.swoft.org/docs (linked from the README; HTTP 520, checked 2026-10-21 twice)
+  - http://swoft.io/docs (linked from the README as the English docs; HTTP 403 with a Cloudflare "Attention Required!" challenge page, checked 2026-10-21)
+notes: >
+  No homepage fact: the homepage no longer answers, so the project's own docs and installation pages are unreadable and the install steps come from the README at tag v2.0.11. The repository has no docs folder, and swoft-cloud/docs answers 404. The README is the only project page read. Owner is the swoft-cloud GitHub organization; the project names no legal entity, so maintainer is the organization name. basedOn names Swoole, a PHP extension, because the README names it as the base. Registry figures use swoft/framework, the component package the README lists; the install command names the swoft/swoft skeleton, whose registry figures are not recorded. Status stays accepted: the repository is not archived, the package is not abandoned, and no page states an end. The last push was 2023-02-28; the last release is in latestReleaseDate. The README links a Gitter room and a QQ group; no field holds those.

@@ -1,0 +1,140 @@
+id: workerman
+name: Workerman
+status: accepted
+checkedAt: 2026-10-21
+description: Asynchronous, event-driven PHP framework for building network servers that handle HTTP, WebSocket and custom socket protocols.
+facts:
+  - field: homepage
+    value: https://www.workerman.net
+    url: https://www.workerman.net/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "workerman是一款开源高性能PHP应用容器"
+  - field: repository
+    value: https://github.com/walkor/workerman
+    url: https://api.github.com/repos/walkor/workerman
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://www.workerman.net/doc/workerman/
+    url: https://www.workerman.net/doc/workerman/
+    checkedAt: 2026-10-21
+    via: page
+  - field: forum
+    value: https://www.workerman.net/questions
+    url: https://repo.packagist.org/p2/workerman/workerman.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: maintainer
+    value: 成都风禾网络科技有限公司
+    url: https://www.workerman.net/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "成都风禾网络科技有限公司版权所有"
+  - field: maintainerType
+    value: company
+    url: https://www.workerman.net/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "成都风禾网络科技有限公司版权所有"
+  - field: categories
+    value: [app-server]
+    url: https://www.workerman.net/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "workerman是一款开源高性能PHP应用容器"
+  - field: categories
+    value: [async-framework]
+    url: https://repo.packagist.org/p2/workerman/workerman.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/walkor/workerman
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://repo.packagist.org/p2/workerman/workerman.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtimeMin
+    value: "8.1"
+    url: https://repo.packagist.org/p2/workerman/workerman.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: protocols
+    value: [tcp, udp, unix-socket]
+    url: https://www.workerman.net/doc/workerman/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "同时支持TCP、UDP、UNIXSOCKET"
+  - field: protocols
+    value: [websocket, http, https, wss, custom]
+    url: https://www.workerman.net/doc/workerman/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "支持Websocket、HTTP、WSS、HTTPS等通讯协议以及各种自定义协议"
+  - field: serverNeeds
+    value: On Linux and macOS, PHP with the pcntl and posix extensions; the Windows version needs no extensions
+    url: https://www.workerman.net/doc/workerman/install/requirement.html
+    checkedAt: 2026-10-21
+    via: page
+    quote: "安装了pcntl、posix扩展"
+  - field: installMethod
+    value: composer require workerman/workerman
+    url: https://www.workerman.net/doc/workerman/install/install.html
+    checkedAt: 2026-10-21
+    via: page
+    quote: "composer require workerman/workerman"
+  - field: runsAs
+    value: [always-on]
+    url: https://www.workerman.net/doc/workerman/install/start-and-stop.html
+    checkedAt: 2026-10-21
+    via: page
+    quote: "终端关闭后workerman继续后台正常运行"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/walkor/workerman
+    checkedAt: 2026-10-21
+    via: api
+  - field: currentMajor
+    value: 5
+    url: https://repo.packagist.org/p2/workerman/workerman.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-09
+    url: https://api.github.com/repos/walkor/workerman/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 11543
+    url: https://api.github.com/repos/walkor/workerman
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 129
+    url: https://api.github.com/repos/walkor/workerman/contributors
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistName
+    value: workerman/workerman
+    url: https://packagist.org/packages/workerman/workerman.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistDownloads
+    value: 3779753 (total)
+    url: https://packagist.org/packages/workerman/workerman.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: reportedInstalls
+    value: thousands of companies in production
+    url: https://www.workerman.net/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "已经被数千家公司用于生产环境上"
+notFound: [repoOwnerType, firstRelease, hqCountry, parent, basedOn, forkOf, successorOf, pricingPage, paidEdition, subreddit, newsletter]
+unreadable: []
+notes: >
+  The maintainer name ends in 有限公司 (limited company), so maintainerType is company; repoOwnerType (the repository sits on the user account walkor) is left out because the import would derive individual from it. The project's pages are in Chinese; quotes are the Chinese text as the pages state it. protocols and serverNeeds are fields coined here; serverNeeds is the requirements page's Linux section (the page marks the rest as Windows-only: no extensions needed). The homepage lists webman, GatewayWorker and MQTT as projects in its ecosystem; they are separate software and are not recorded here. The homepage names commercial products (a customer service system and an instant messaging system) that are not editions of Workerman, so paidEdition stays unknown. The requirement page says PHP 5.4 or later, which the latest release (composer require php >=8.1) contradicts; runtimeMin follows the latest release and the older page is not used for it. The contributors endpoint without query parameters returns the first page only; a full count of 129 comes from paginating it with anon=true. The repository created_at (2013-12-08) and the Packagist time (2015-05-25) are registration dates, not a first release, so firstRelease stays unknown. Packagist also reports 158962 monthly downloads for the same package; only the total is recorded.

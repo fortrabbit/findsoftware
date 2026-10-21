@@ -1,0 +1,138 @@
+id: skosh
+name: Skosh
+status: accepted
+checkedAt: 2026-10-21
+description: PHP static site generator that converts Markdown, Textile and Twig files into static HTML sites.
+facts:
+  - field: homepage
+    value: https://lyften.com/projects/skosh/
+    url: https://lyften.com/projects/skosh/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "static site generator written in PHP"
+  - field: repository
+    value: https://github.com/Torann/skosh
+    url: https://api.github.com/repos/Torann/skosh
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://lyften.com/projects/skosh/doc/
+    url: https://lyften.com/projects/skosh/doc/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Skosh utilizes Composer to manage its dependencies"
+  - field: maintainer
+    value: Daniel Stainback
+    url: https://github.com/Torann/skosh/blob/0.3.0/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2015-2020, Daniel Stainback"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/Torann
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://lyften.com/projects/skosh/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "static site generator written in PHP"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/Torann/skosh
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/Torann/skosh-generator/blob/0.3.1/composer.json
+    checkedAt: 2026-10-21
+    via: page
+    quote: '"php": "^7.2"'
+  - field: runtimeMin
+    value: "7.2"
+    url: https://github.com/Torann/skosh-generator/blob/0.3.1/composer.json
+    checkedAt: 2026-10-21
+    via: page
+    quote: '"php": "^7.2"'
+  - field: installMethod
+    value: composer create-project
+    url: https://lyften.com/projects/skosh/doc/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "composer create-project torann/skosh --prefer-dist"
+  - field: templating
+    value: [twig]
+    url: https://lyften.com/projects/skosh/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Twig templates"
+  - field: contentStore
+    value: flat-file
+    url: https://github.com/Torann/skosh/blob/0.3.0/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "takes Markdown and Textile files"
+  - field: renderingModes
+    value: [static]
+    url: https://lyften.com/projects/skosh/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "into a static HTML site that can be easily deployed"
+  - field: runsAs
+    value: [static]
+    url: https://lyften.com/projects/skosh/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "into a static HTML site that can be easily deployed"
+  - field: license
+    value: BSD-2-Clause
+    url: https://github.com/Torann/skosh/blob/0.3.0/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Skosh is open-sourced software licensed under the BSD 2-Clause License."
+  - field: license
+    value: BSD-2-Clause
+    url: https://github.com/Torann/skosh-generator/blob/0.3.1/composer.json
+    checkedAt: 2026-10-21
+    via: page
+    quote: '"license": "BSD 2-Clause"'
+  - field: currentMajor
+    value: 0
+    url: https://repo.packagist.org/p2/torann/skosh-generator.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2021-05-20
+    url: https://api.github.com/repos/Torann/skosh-generator/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 4
+    url: https://api.github.com/repos/Torann/skosh
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/Torann/skosh/contributors?anon=true
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistName
+    value: torann/skosh-generator
+    url: https://packagist.org/packages/torann/skosh-generator.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistDownloads
+    value: 147 (total)
+    url: https://packagist.org/packages/torann/skosh-generator.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistDownloads
+    value: 2 (monthly)
+    url: https://packagist.org/packages/torann/skosh-generator.json
+    checkedAt: 2026-10-21
+    via: api
+notFound: [basedOn, firstRelease, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, pricingPage, databases, headlessApi, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, maintainerType, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, reportedInstalls, usageShare, npmName, pypiDownloads, npmWeeklyDownloads, apiLimits, regions, selfHostOption]
+unreadable: []
+notes: >
+  The CSV homepage is the project page on lyften.com, which answers 200 over https (the CSV has http). The install guide names composer create-project torann/skosh, which is a skeleton that requires torann/skosh-generator, so the Packagist figures and the release date come from the core package torann/skosh-generator, whose source is the Torann/skosh-generator repository. Its skeleton pins an older generator line than the newest stable release, which is recorded as the current major. The guide requires PHP 5.4.0 or later and Node; the generator's composer.json at the newest tagged release requires PHP ^7.2, which is recorded as runtimeMin, and the guide's older figure is not recorded. The guide installs the Gulp command line through npm and the README says JavaScript and Sass files are managed by Gulp; both belong to the Node toolchain. The README states that the generator supports RSS and sitemaps. The project page says Skosh is built on Symfony's HTTP Kernel, which lets Symfony bundles extend it; no record has that id, so basedOn is not recorded. No bundle is recorded. The copyright line in the LICENSE is 2015-2020 and the lyften.com footer reads 2008-2023 Lyften; the maintainer is the LICENSE name because it is the legal notice for the code, and no page says Lyften owns the project, so parent stays unknown. The repository has no release after 0.3.0 on the skosh repository; the release date is the core package's. Its last push is 2020-01-15.

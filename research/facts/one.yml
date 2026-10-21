@@ -1,0 +1,118 @@
+id: one
+name: One
+status: accepted
+checkedAt: 2026-10-21
+description: PHP framework for php-fpm or Swoole environments, with a router, an ORM and an RPC layer.
+facts:
+  - field: name
+    value: One
+    url: https://github.com/lizhichao/one/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "One - A minimalist high-performance php framework"
+  - field: repository
+    value: https://github.com/lizhichao/one
+    url: https://github.com/lizhichao/one
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://github.com/lizhichao/one/blob/master/README.md
+    url: https://github.com/lizhichao/one/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Main components"
+  - field: maintainer
+    value: tanszhe
+    url: https://raw.githubusercontent.com/lizhichao/one/master/composer.json
+    checkedAt: 2026-10-21
+    via: page
+    quote: "\"authors\": [ { \"name\": \"tanszhe\""
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/lizhichao
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/lizhichao/one/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "One - A minimalist high-performance php framework"
+  - field: language
+    value: PHP
+    url: https://github.com/lizhichao/one
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: php
+    url: https://repo.packagist.org/p2/lizhichao/one.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtimeMin
+    value: "7.1"
+    url: https://repo.packagist.org/p2/lizhichao/one.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: installMethod
+    value: composer create-project lizhichao/one-app
+    url: https://github.com/lizhichao/one/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "composer create-project lizhichao/one-app app"
+  - field: databases
+    value: [mysql, clickhouse]
+    url: https://github.com/lizhichao/one/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Support database: mysql, clickHouse"
+  - field: runsAs
+    value: [per-request]
+    url: https://github.com/lizhichao/one/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "supports the [swoole | php-fpm] environment"
+  - field: runsAs
+    value: [always-on]
+    url: https://raw.githubusercontent.com/lizhichao/one/master/composer.json
+    checkedAt: 2026-10-21
+    via: page
+    quote: "常驻内存运行必须的扩展"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/lizhichao/one
+    checkedAt: 2026-10-21
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/lizhichao/one
+    checkedAt: 2026-10-21
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://repo.packagist.org/p2/lizhichao/one.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-01-21
+    url: https://repo.packagist.org/p2/lizhichao/one.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistName
+    value: lizhichao/one
+    url: https://packagist.org/packages/lizhichao/one
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistDownloads
+    value: {total: 10128, monthly: 169}
+    url: https://packagist.org/packages/lizhichao/one.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 873
+    url: https://github.com/lizhichao/one
+    checkedAt: 2026-10-21
+    via: api
+notFound: [homepage, firstRelease, hqCountry, parent, forkOf, successorOf, contributors, endoflifeId, eolPolicy, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, renderingModes, pricingPage, paidEdition]
+unreadable: []
+notes: >
+  The project names no website; the README and composer.json link only the repository, so homepage stays unknown. The install line names lizhichao/one-app, a skeleton; lizhichao/one is the core package it depends on, so the registry figures come from lizhichao/one. The GitHub account name is vic and the Composer authors list tanszhe; the composer.json name is recorded as maintainer. No GitHub release exists (the releases endpoint is empty), so latestReleaseDate is the date of version 3.0.9 on Packagist. The README is in English with a Chinese companion (README-CN.md) that is not read. The README states "session can be used under http, websocket or even tcp, udp and cli"; no field holds that, so it stays here. The always-on fact rests on the composer.json suggest line for ext-swoole ("extension required for resident-memory operation"). The README calls the framework minimalist and fast; those claims are not recorded. clickHouse is named as a supported database but the dictionary has no such value.

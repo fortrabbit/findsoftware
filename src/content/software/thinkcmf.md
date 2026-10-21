@@ -19,6 +19,8 @@ runtime:
 hosting:
   - php
 runtimeMin: php 8.0
+basedOn:
+  - thinkphp
 databases:
   - mysql
 adminUi: true
@@ -59,6 +61,9 @@ sources:
     checkedAt: 2026-10-20
   - field: category
     url: https://github.com/thinkcmf/thinkcmf
+    checkedAt: 2026-10-20
+  - field: basedOn
+    url: https://www.thinkcmf.com/download.html
     checkedAt: 2026-10-20
   - field: language
     url: https://github.com/thinkcmf/thinkcmf

@@ -1,0 +1,91 @@
+id: midcom
+name: MidCOM
+status: accepted
+checkedAt: 2026-10-21
+description: PHP component framework and content management system that runs on top of the Midgard framework.
+facts:
+  - field: name
+    value: MidCOM
+    url: http://midgard-project.org/midcom/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "MidCOM - Tightly coupled PHP framework and CMS for Midgard"
+  - field: homepage
+    value: http://midgard-project.org/midcom/
+    url: http://midgard-project.org/midcom/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "MidCOM is component framework for PHP running on top of the Midgard framework."
+  - field: repository
+    value: https://github.com/flack/openpsa
+    url: https://github.com/flack/openpsa
+    checkedAt: 2026-10-21
+    via: api
+  - field: maintainer
+    value: CONTENT CONTROL
+    url: https://github.com/flack/openpsa
+    checkedAt: 2026-10-21
+    via: page
+    quote: "The currently active branch (OpenPSA 9) is developed and supported by CONTENT CONTROL"
+  - field: categories
+    value: [framework, cms]
+    url: http://midgard-project.org/midcom/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Tightly coupled PHP framework and CMS for Midgard"
+  - field: basedOn
+    value: Midgard
+    url: http://midgard-project.org/midcom/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "MidCOM is component framework for PHP running on top of the Midgard framework."
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/flack/openpsa
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: php
+    url: https://repo.packagist.org/p2/openpsa/midcom.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtimeMin
+    value: "8.1"
+    url: https://repo.packagist.org/p2/openpsa/midcom.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: installMethod
+    value: composer
+    url: https://github.com/flack/openpsa
+    checkedAt: 2026-10-21
+    via: page
+    quote: "add openpsa/midcom to your composer.json"
+  - field: license
+    value: LGPL-2.1-or-later
+    url: https://github.com/flack/openpsa/blob/master/composer.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: currentMajor
+    value: 9
+    url: https://repo.packagist.org/p2/openpsa/midcom.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-02
+    url: https://api.github.com/repos/flack/openpsa/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistName
+    value: openpsa/midcom
+    url: https://packagist.org/packages/openpsa/midcom.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: packagistDownloads
+    value: "3373 (total)"
+    url: https://packagist.org/packages/openpsa/midcom.json
+    checkedAt: 2026-10-21
+    via: api
+notFound: [firstRelease, wikidata, runsAs, endoflifeId, pricingPage, hqCountry, parent, forkOf, successorOf, alternativeTo, npmName, docs, databases]
+unreadable: [https://www.contentcontrol-berlin.de]
+notes: >
+  Status stays accepted: the repository is not archived, the Packagist package is not flagged abandoned, OpenPSA 9.11.0 is the latest release (2026-07-02), and no page read says MidCOM has ended. The CSV row says MidCOM is a "successor to Midgard CMS"; the pages read do not say that. The MidCOM page says it runs "on top of the Midgard framework", and the Midgard project page lists MidCOM under "Web Frameworks"; basedOn names Midgard, the framework MidCOM runs on. The MidCOM page describes installation with PEAR packages ("MidCOM components are distributed as PEAR packages"), while the README describes Composer ("add openpsa/midcom to your composer.json"). The page gives no date, so the reviewer decides which describes the current release; installMethod records the README. The openpsa/midcom release v9.11.0 requires PHP >=8.1, while composer.json on master requires >=8.2. The README says the OpenPSA 9 branch is "developed and supported by CONTENT CONTROL"; the company's site (www.contentcontrol-berlin.de) did not answer, so its legal form is unknown and the name is recorded as the README gives it. repoOwnerType is left out: the repository owner is a user account, while the maintainer is a company, and the import would derive "individual" from the owner type. The repository figures (stars, contributors) are left out because they count the whole flack/openpsa repository, which holds OpenPSA, a business management application: openpsa2.org calls it "an open source web application designed specifically to meet the needs of web agencies and consultants", and the Midgard project lists it under "Management software for consultancies". OpenPSA has no record of its own here. The repository has no LICENSE file; the license comes from composer.json.
