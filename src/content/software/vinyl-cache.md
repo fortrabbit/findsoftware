@@ -12,6 +12,7 @@ status: active
 maintainer: The Vinyl Cache Project
 maintainerType: community
 hqCountry: DK
+language: c
 runsAs:
   - always-on
 installMethod: source tarball, FreeBSD package, OpenBSD package
@@ -38,6 +39,9 @@ sources:
     checkedAt: 2026-10-19
   - field: category
     url: https://vinyl-cache.org/
+    checkedAt: 2026-10-19
+  - field: language
+    url: https://code.vinyl-cache.org/api/v1/repos/vinyl-cache/vinyl-cache
     checkedAt: 2026-10-19
   - field: maintainer
     url: https://vinyl-cache.org/organization/bylaws/bylaws_1.00.html
@@ -70,7 +74,7 @@ figure:
   emoji: 🖥️
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: Server
+  text: C · Server
 ai: authored
 contentStore: null
 databases: null
@@ -79,6 +83,8 @@ headlessApi: null
 templating: null
 i18n: null
 renderingModes: null
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Vinyl Cache sits in front of an existing HTTP server and caches that server's responses. It is configured in VCL, the Vinyl Configuration Language. It builds to a native binary and runs as a long-running process, so the host has to keep a process running beside the web server.

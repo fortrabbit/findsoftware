@@ -10,6 +10,7 @@ description: PHP framework written in C and distributed as a PHP extension.
 status: active
 maintainer: Xinchen Hui
 maintainerType: individual
+language: c
 runtime:
   - php
 hosting:
@@ -40,6 +41,9 @@ sources:
     checkedAt: 2026-10-21
   - field: templating
     url: https://www.php.net/manual/en/book.yaf.php
+    checkedAt: 2026-10-21
+  - field: language
+    url: https://api.github.com/repos/laruence/yaf
     checkedAt: 2026-10-21
   - field: runtime
     url: https://github.com/laruence/yaf
@@ -75,8 +79,9 @@ figure:
   emoji: 🧱
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: Framework
+  text: C · Framework
 ai: authored
+npmWeeklyDownloads: null
 ---
 
 Yaf is a PHP framework for developing web applications. It is written in C and built as a PHP extension, so it is part of PHP itself rather than a set of PHP files. The [installation page](https://www.php.net/manual/en/yaf.installation.php) gives `pecl install yaf` and a `pie install laruence/yaf` alternative. The [manual](https://www.php.net/manual/en/book.yaf.php) is the project's documentation.

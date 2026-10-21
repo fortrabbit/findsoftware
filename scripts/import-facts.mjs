@@ -224,7 +224,8 @@ const categoryMap = {
   payments: 'e-commerce',
   pdf: 'library',
   'pdf-generation': 'media',
-  'php-extension': 'web-server',
+  // How it is built, not what it is: Phalcon is a framework, Swoole an app server.
+  'php-extension': '',
   'platform-cli': 'dev-tool',
   polls: 'forms',
   postgres: 'database',
@@ -328,7 +329,7 @@ const categoryMap = {
 };
 
 const runtimeMap = { 'go binary': 'binary', 'rust binary': 'binary', 'beam (erlang/otp)': 'beam' };
-const languageMap = { 'c#': 'csharp' };
+const languageMap = { 'c#': 'csharp', 'c++': 'cpp' };
 const databaseMap = { mssql: 'sqlserver', postgresql: 'postgres', pgsql: 'postgres', mongo: 'mongodb' };
 const apiMap = { jsonapi: 'rest', 'admin-api': 'rest', 'store-api': 'rest', webservice: 'rest' };
 const renderMap = { headless: 'api-only' };
@@ -429,12 +430,14 @@ function licenseModelOf({ status, licenses, repository, sourcePublic, paidEditio
   return undefined;
 }
 
-function maintainerTypeOf({ maintainer, repoOwnerType }) {
+function maintainerTypeOf({ maintainer, repoOwnerType, researched }) {
   if (foundationName.test(maintainer)) return 'foundation';
   // Chinese legal forms (有限公司, 股份公司) end the name with no word boundary to match on.
   if (legalForm.test(maintainer) || /(有限公司|股份公司|有限责任公司)$/u.test(maintainer)) return 'company';
   // A team named as such is several people, even when its repository sits on one person's account.
   if (/\b(team|community|contributors|authors|developers)\b/i.test(maintainer)) return 'community';
+  // A user-owned repository says least: a type the project states itself comes first.
+  if (researched) return undefined;
   if (String(repoOwnerType).toLowerCase() === 'user') return 'individual';
   return undefined;
 }
@@ -537,16 +540,16 @@ for (const file of facts) {
   record.status = statusOf[research.status] ?? 'active';
 
   if (first('maintainer')) record.maintainer = text(first('maintainer'));
-  const maintainerType =
-    maintainerTypeOf({ maintainer: text(first('maintainer') ?? ''), repoOwnerType: first('repoOwnerType') }) ??
-    mapped(first('maintainerType'), {}, vocab('maintainerType'))[0];
+  const researchedType = mapped(first('maintainerType'), {}, vocab('maintainerType'))[0];
+  const ruledType = maintainerTypeOf({
+    maintainer: text(first('maintainer') ?? ''),
+    repoOwnerType: first('repoOwnerType'),
+    researched: researchedType,
+  });
+  const maintainerType = ruledType ?? researchedType;
   if (maintainerType) {
     record.maintainerType = maintainerType;
-    ruled.maintainerType[
-      maintainerTypeOf({ maintainer: text(first('maintainer') ?? ''), repoOwnerType: first('repoOwnerType') })
-        ? 'rule'
-        : 'research'
-    ]++;
+    ruled.maintainerType[ruledType ? 'rule' : 'research']++;
   }
   if (first('parent')) record.parent = text(first('parent'));
   const firstRelease = number(first('firstRelease'));

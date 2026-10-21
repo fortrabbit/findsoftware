@@ -11,7 +11,6 @@ category:
 description: Component-based PHP web framework in three lines, Yii 1.1, Yii 2 and the package-based Yii3.
 status: active
 maintainer: Yii Software
-maintainerType: community
 language: php
 runtime:
   - php
@@ -68,9 +67,6 @@ sources:
     checkedAt: 2026-10-18
   - field: maintainer
     url: https://www.yiiframework.com/license
-    checkedAt: 2026-10-18
-  - field: maintainerType
-    url: https://www.yiiframework.com/doc/guide/2.0/en/intro-yii
     checkedAt: 2026-10-18
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q1466168

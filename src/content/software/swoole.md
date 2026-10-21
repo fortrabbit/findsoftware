@@ -11,6 +11,7 @@ description: Coroutine-based PHP extension for concurrent networking and TCP, UD
 status: active
 maintainer: Han Tianfeng
 maintainerType: individual
+language: cpp
 runtimeMin: php 8.2
 runsAs:
   - always-on
@@ -44,6 +45,9 @@ sources:
   - field: category
     url: https://pecl.php.net/package/swoole
     checkedAt: 2026-10-19
+  - field: language
+    url: https://github.com/swoole/swoole-src
+    checkedAt: 2026-10-19
   - field: runtimeMin
     url: https://pecl.php.net/package/swoole
     checkedAt: 2026-10-19
@@ -75,7 +79,7 @@ figure:
   emoji: 🖥️
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: Server
+  text: C++ · Server
 ai: authored
 contentStore: null
 databases: null
@@ -84,6 +88,8 @@ headlessApi: null
 templating: null
 i18n: null
 renderingModes: null
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Swoole is a coroutine-based PHP extension written in C++ that adds networking to PHP, including TCP, UDP, Unix socket, HTTP and WebSocket servers. Because it loads as a PHP extension, the server code runs inside a PHP process. Han Tianfeng is the lead maintainer.

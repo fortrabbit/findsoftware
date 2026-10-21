@@ -10,7 +10,7 @@ category:
 description: PHP micro framework for building web applications and APIs on an event-driven, non-blocking runtime.
 status: active
 maintainer: clue·engineering
-maintainerType: individual
+maintainerType: company
 hqCountry: DE
 language: php
 runtime:

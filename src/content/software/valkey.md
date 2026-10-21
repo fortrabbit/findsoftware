@@ -12,6 +12,7 @@ status: active
 maintainer: Valkey project under LF Projects
 maintainerType: foundation
 parent: LF Projects, LLC
+language: c
 runsAs:
   - always-on
 installMethod: docker-image, binary-artifacts, package-managers, build-from-source-make
@@ -49,6 +50,9 @@ sources:
   - field: category
     url: https://valkey.io/
     checkedAt: 2026-10-19
+  - field: language
+    url: https://github.com/valkey-io/valkey
+    checkedAt: 2026-10-19
   - field: currentMajor
     url: https://github.com/valkey-io/valkey/releases/latest
     checkedAt: 2026-10-19
@@ -74,7 +78,7 @@ figure:
   emoji: 🗄️
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: Database
+  text: C · Database
 ai: authored
 contentStore: null
 databases: null
@@ -83,6 +87,8 @@ headlessApi: null
 templating: null
 i18n: null
 renderingModes: null
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Valkey is an in-memory key-value datastore written in C, used for caching, message queues and as a primary database. It was forked from the open source Redis project and includes BSD-licensed Redis code from Redis Ltd. Valkey is an open community project under LF Projects, backed by the Linux Foundation.

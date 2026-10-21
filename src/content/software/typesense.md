@@ -11,6 +11,7 @@ description: Open-source search server with an HTTP API that indexes collections
 status: active
 maintainer: Typesense, Inc.
 maintainerType: company
+language: cpp
 runsAs:
   - always-on
 installMethod: docker, docker compose, kubernetes, homebrew, deb package, rpm package, binary download
@@ -46,6 +47,9 @@ sources:
   - field: licenseModel
     url: https://github.com/typesense/typesense
     checkedAt: 2026-10-19
+  - field: language
+    url: https://github.com/typesense/typesense
+    checkedAt: 2026-10-19
   - field: category
     url: https://typesense.org
     checkedAt: 2026-10-19
@@ -68,7 +72,7 @@ figure:
   emoji: 🔎
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: Search
+  text: C++ · Search
 ai: authored
 contentStore: null
 databases: null
@@ -77,6 +81,8 @@ headlessApi: null
 templating: null
 i18n: null
 renderingModes: null
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Typesense is a search server written in C++ that holds collections of documents and answers search queries against them over an HTTP API. Typesense, Inc. maintains the project and offers Typesense Cloud as a hosted option beside the self-hosted server. The [installation guide](https://typesense.org/docs/guide/install-typesense.html) describes the install options.

@@ -11,6 +11,7 @@ description: C-based HTTP web server with reverse proxy, content cache, load bal
 status: active
 maintainer: Nginx, Inc.
 maintainerType: company
+language: c
 runsAs:
   - always-on
 installMethod: linux-packages-from-nginx-org, freebsd-packages, freebsd-ports, build-from-source, windows-binary
@@ -46,6 +47,9 @@ sources:
   - field: category
     url: https://nginx.org/en/
     checkedAt: 2026-10-19
+  - field: language
+    url: https://github.com/nginx/nginx
+    checkedAt: 2026-10-19
   - field: currentMajor
     url: https://nginx.org/en/download.html
     checkedAt: 2026-10-19
@@ -74,7 +78,7 @@ figure:
   emoji: 🖥️
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: Server
+  text: C · Server
 ai: authored
 contentStore: null
 databases: null
@@ -83,6 +87,8 @@ headlessApi: null
 templating: null
 i18n: null
 renderingModes: null
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 nginx is a web server written in C that also works as a reverse proxy, a load balancer, a content cache and a mail proxy. Nginx, Inc. holds the copyright. The [installation guide](https://nginx.org/en/docs/install.html) covers the packaged, source and Windows routes.

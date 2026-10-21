@@ -56,9 +56,6 @@ sources:
   - field: maintainer
     url: https://docs.roadiz.io/
     checkedAt: 2026-10-20
-  - field: maintainer
-    url: https://www.rezo-zero.com/legal/
-    checkedAt: 2026-10-20
   - field: maintainerType
     url: https://www.rezo-zero.com/legal/
     checkedAt: 2026-10-20

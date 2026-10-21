@@ -329,7 +329,7 @@ export const cardFile = (spec: CardSpec) =>
 
 const cardCache = () => {
   if (cacheDir) return cacheDir;
-  cacheDir = join(nodeModules, '.cache', 'findhost-og');
+  cacheDir = join(nodeModules, '.cache', 'findsoftware-og');
   mkdirSync(cacheDir, { recursive: true });
   prune(cacheDir);
   return cacheDir;

@@ -11,6 +11,7 @@ description: In-memory data store used as a cache, database and streaming engine
 status: active
 maintainer: Redis Ltd
 maintainerType: company
+language: c
 runsAs:
   - always-on
 installMethod: docker-image, snap, homebrew, rpm, debian-package, source-tarball
@@ -45,6 +46,9 @@ sources:
   - field: category
     url: https://redis.io/downloads/
     checkedAt: 2026-10-19
+  - field: language
+    url: https://github.com/redis/redis
+    checkedAt: 2026-10-19
   - field: currentMajor
     url: https://github.com/redis/redis/releases/latest
     checkedAt: 2026-10-19
@@ -73,7 +77,7 @@ figure:
   emoji: 🗄️
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: Database
+  text: C · Database
 ai: authored
 contentStore: null
 databases: null
@@ -82,6 +86,8 @@ headlessApi: null
 templating: null
 i18n: null
 renderingModes: null
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Redis is an in-memory data store written in C, used as a cache, a database and a streaming engine. Redis Ltd develops it and also sells the commercial products Redis Cloud and Redis Software.
