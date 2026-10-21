@@ -1,0 +1,1 @@
+Orison is a static site generator and server based on lit-html, with pages written as JavaScript, HTML or Markdown. It is installed with npm install -g orison. Its homepage says the production build can be delivered as the /docs directory to a hosting service. The project is maintained by Alex Lockhart.

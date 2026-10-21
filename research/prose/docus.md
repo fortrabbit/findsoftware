@@ -1,0 +1,3 @@
+Docus is a documentation theme for Nuxt that builds a documentation site from Markdown files in a content folder. A project is created with the `create-docus` command and can extend the Docus layer in its Nuxt configuration. Pages can embed Vue components through MDC syntax, and the site supports several languages. The [installation guide](https://docus.dev/en/getting-started/installation) describes the setup.
+
+The project is maintained by NuxtLabs and published under the MIT license. Its [repository](https://github.com/nuxt-content/docus) holds the CLI, the layer and the documentation site as separate packages. Nuxt Studio, a separate editor for Nuxt Content sites, is not part of Docus.

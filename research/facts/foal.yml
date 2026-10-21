@@ -1,0 +1,141 @@
+id: foal
+name: FoalTS
+status: accepted
+checkedAt: 2026-10-21
+description: Node.js framework for creating web applications, written in TypeScript.
+facts:
+  - field: homepage
+    value: https://foalts.org/
+    url: https://foalts.org/
+    checkedAt: 2026-10-21
+    via: page
+  - field: repository
+    value: https://github.com/FoalTS/foal
+    url: https://api.github.com/repos/FoalTS/foal
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://foalts.org/docs/
+    url: https://foalts.org/docs/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Node.JS framework for creating web applications"
+  - field: maintainer
+    value: FoalTS
+    url: https://raw.githubusercontent.com/FoalTS/foal/master/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2017-2025 FoalTS"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/FoalTS
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://foalts.org/docs/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Node.JS framework for creating web applications"
+  - field: language
+    value: TypeScript
+    url: https://foalts.org/docs/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "the framework is entirely written in TypeScript"
+  - field: runtime
+    value: [node]
+    url: https://foalts.org/docs/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Node.JS framework for creating web applications"
+  - field: runtimeMin
+    value: 22
+    url: https://registry.npmjs.org/@foal/core/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://registry.npmjs.org/@foal/core
+    checkedAt: 2026-10-21
+    via: api
+  - field: basedOn
+    value: Express
+    url: https://foalts.org/docs/common/expressjs
+    checkedAt: 2026-10-21
+    via: page
+    quote: "The returned value is an ExpressJS application that can be used as is to create an HTTP server."
+  - field: databases
+    value: [postgres, mysql, sqlite, mongodb]
+    url: https://foalts.org/docs/databases/typeorm/introduction
+    checkedAt: 2026-10-21
+    via: page
+    quote: "FoalTS supports officially the following databases"
+  - field: installMethod
+    value: npx scaffolder
+    url: https://raw.githubusercontent.com/FoalTS/foal/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "npx @foal/cli createapp my-app"
+  - field: runsAs
+    value: [always-on]
+    url: https://foalts.org/docs/deployment-and-environments/checklist
+    checkedAt: 2026-10-21
+    via: page
+    quote: "NODE_ENV=production npm run start"
+  - field: headlessApi
+    value: [graphql]
+    url: https://foalts.org/docs/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "GraphQL and Swagger API"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/FoalTS/foal
+    checkedAt: 2026-10-21
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/FoalTS/foal/master/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 5
+    url: https://registry.npmjs.org/@foal/core/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-09
+    url: https://api.github.com/repos/FoalTS/foal/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmName
+    value: "@foal/core"
+    url: https://registry.npmjs.org/@foal/core/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1692
+    url: https://api.npmjs.org/downloads/point/last-week/@foal/core
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 1936
+    url: https://api.github.com/repos/FoalTS/foal
+    checkedAt: 2026-10-21
+    via: api
+  - field: discord
+    value: https://discord.gg/QUrJv98
+    url: https://foalts.org/
+    checkedAt: 2026-10-21
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/foalts.org
+    url: https://foalts.org/
+    checkedAt: 2026-10-21
+    via: page
+notFound: [pricingPage, hqCountry, usageShare, reportedInstalls, endoflifeId, adminUi]
+unreadable: [https://foalts.org/docs/installation (404), https://foalts.org/docs/deployment/ (404)]
+notes: >
+  The install docs name npx @foal/cli createapp, which is the CLI, so the registry figures come from the framework package @foal/core. The home page names an ORM built on TypeORM; the TypeORM introduction page lists PostgreSQL, MySQL, SQLite and MongoDB as officially supported and says a new project uses SQLite by default. The README lists a CLI, testing tools, frontend utilities, scripts, authentication, an ORM, deployment environments, GraphQL and Swagger API and AWS utilities as provided in one place. The README quick start installs with npx and starts a development server with npm run dev. The deployment checklist covers setting NODE_ENV to production, HTTPS, secrets and production database migrations. The ExpressJS page says createApp returns an ExpressJS application. The LTS table in the README gives Node 22 and 24 for 5.x. Maintainer is the copyright line of the LICENSE, which names the project, with no legal form. firstRelease is the year the @foal/core package was created on npm.

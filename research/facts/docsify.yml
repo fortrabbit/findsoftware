@@ -1,0 +1,113 @@
+id: docsify
+name: docsify
+status: accepted
+checkedAt: 2026-10-21
+description: JavaScript library that loads and renders Markdown files as a documentation website in the browser, with no build step.
+facts:
+  - field: homepage
+    value: https://docsify.js.org
+    url: https://raw.githubusercontent.com/docsifyjs/docsify/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+  - field: repository
+    value: https://github.com/docsifyjs/docsify
+    url: https://api.github.com/repos/docsifyjs/docsify
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://docsify.js.org/#/quickstart
+    url: https://github.com/docsifyjs/docsify/blob/develop/docs/quickstart.md
+    checkedAt: 2026-10-21
+    via: page
+  - field: maintainer
+    value: Docsify Contributors
+    url: https://github.com/docsifyjs/docsify/blob/develop/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2016 - present Docsify Contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/docsifyjs/docsify
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [docs-generator]
+    url: https://github.com/docsifyjs/docsify/blob/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "A magical documentation site generator."
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/docsifyjs/docsify
+    checkedAt: 2026-10-21
+    via: api
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/docsify/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/docsifyjs/docsify/blob/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "[MIT](LICENSE)"
+  - field: installMethod
+    value: script tag from a CDN, with docsify-cli for scaffolding and preview
+    url: https://github.com/docsifyjs/docsify/blob/develop/docs/quickstart.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "It is recommended to install `docsify-cli` globally"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/docsifyjs/docsify/blob/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "by using a static web server or GitHub Pages"
+  - field: runsAs
+    value: [browser]
+    url: https://github.com/docsifyjs/docsify/blob/develop/docs/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "it dynamically loads and parses your Markdown files and displays them as a website"
+  - field: currentMajor
+    value: 5
+    url: https://registry.npmjs.org/docsify/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-23
+    url: https://registry.npmjs.org/docsify
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmName
+    value: docsify
+    url: https://registry.npmjs.org/docsify/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmWeeklyDownloads
+    value: 40625
+    url: https://api.npmjs.org/downloads/point/last-week/docsify
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 31553
+    url: https://api.github.com/repos/docsifyjs/docsify
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 207
+    url: https://api.github.com/repos/docsifyjs/docsify/contributors?anon=true&per_page=100
+    checkedAt: 2026-10-21
+    via: api
+  - field: discord
+    value: https://discord.gg/3NwKFyR
+    url: https://github.com/docsifyjs/docsify/blob/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+notFound: [firstRelease, hqCountry, parent, forkOf, successorOf, basedOn, contentStore, adminUi, headlessApi, multisite, paidEdition, pricingPage, usageShare, pluginCount, pluginDirectory, subreddit, mastodon, bluesky, x, newsletter, forum, i18n, userRoles, sso, databases, templating, livePreview, selfHostOption, regions, apiLimits, importsFrom, wikidata, runtime, runtimeMin, renderingModes, endoflifeId, supportedVersions]
+unreadable:
+  - https://docsify.js.org (client-rendered shell: the fetched HTML has no page content; the README names the address as the project site)
+  - https://docsify.js.org/#/quickstart (same site; the quickstart text is read from docs/quickstart.md in the repository)
+notes: >
+  The docs site renders client-side, so the docs are read from the docs/ folder of the develop branch, the branch the repository marks as default. The README lists "No statically built HTML files" and the docs README says it "doesn't need to build HTML files"; the runsAs values rest on the README statement that a site is served by "a static web server or GitHub Pages" and the docs statement that docsify loads and parses the Markdown in the reader's browser; the docs use no rendering-mode term, so renderingModes stays unknown. The docsify-cli package (npm 5.0.0, 31781 downloads in the week of 2026-10-12 to 2026-10-18) is the scaffolder the quickstart names and is not the record's npmName; the figures are for the library package docsify, which the CDN instructions load. The CSV's 43k weekly figure is from an earlier read; the fetched 40625 is recorded. The configuration docs say "For statically-deployed sites (f.e. on GitHub Pages) hash-based routing is" the default. The maintainer is the copyright holder named in LICENSE, "Docsify Contributors", which is not a legal entity.

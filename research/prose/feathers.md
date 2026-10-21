@@ -1,0 +1,3 @@
+Feathers is a framework for building web APIs and real-time applications, written in TypeScript and used from TypeScript or JavaScript. An application registers services, which can have find, get, create, update, patch and remove methods. A transport turns the registered services into a server: the Koa transport exposes them as a REST API and the Socket.io transport as a real-time WebSocket API. The [quick start](https://feathersjs.com/guides/basics/starting.html) shows the framework first as a plain script and then hosted as an API server.
+
+The project is MIT-licensed and the license names Feathers Contributors as the copyright holder.

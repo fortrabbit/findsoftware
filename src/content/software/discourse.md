@@ -18,6 +18,8 @@ runtime:
 hosting:
   - ruby
 runtimeMin: ruby 3.4
+basedOn:
+  - ember
 contentStore:
   - database
 databases:
@@ -54,6 +56,9 @@ sources:
     checkedAt: 2026-10-20
   - field: category
     url: https://www.discourse.org/
+    checkedAt: 2026-10-19
+  - field: basedOn
+    url: https://github.com/discourse/discourse
     checkedAt: 2026-10-19
   - field: language
     url: https://api.github.com/repos/discourse/discourse

@@ -1,0 +1,136 @@
+id: docmd
+name: docmd
+status: accepted
+checkedAt: 2026-10-21
+description: Documentation compiler that turns one folder of Markdown into a static documentation website, search index and AI context files.
+facts:
+  - field: homepage
+    value: https://docmd.io
+    url: https://docmd.io
+    checkedAt: 2026-10-21
+    via: page
+  - field: repository
+    value: https://github.com/docmd-io/docmd
+    url: https://api.github.com/repos/docmd-io/docmd
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://docs.docmd.io
+    url: https://github.com/docmd-io/docmd/blob/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+  - field: maintainer
+    value: docmd.io
+    url: https://github.com/docmd-io/docmd/blob/main/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2025-present docmd.io"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/docmd-io/docmd
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [docs-generator]
+    url: https://github.com/docmd-io/docmd/blob/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "docmd is an open source documentation compiler."
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/docmd-io/docmd
+    checkedAt: 2026-10-21
+    via: api
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/@docmd/core/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/docmd-io/docmd/blob/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "The docmd compiler and official core plugins are MIT-licensed"
+  - field: installMethod
+    value: npm install -g @docmd/core
+    url: https://github.com/docmd-io/docmd/blob/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "npm install -g @docmd/core"
+  - field: runtime
+    value: [node]
+    url: https://docs.docmd.io/getting-started/installation/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Node.js 20 or higher is required for local builds."
+  - field: runtimeMin
+    value: "20"
+    url: https://docs.docmd.io/getting-started/installation/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Node.js 20 or higher is required for local builds."
+  - field: runsAs
+    value: [static]
+    url: https://github.com/docmd-io/docmd/blob/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "docmd generates a static site that can be deployed to Vercel"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/docmd-io/docmd/blob/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Start the local development server"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/docmd-io/docmd/blob/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "docmd generates static HTML with minimal vanilla JavaScript"
+  - field: i18n
+    value: yes
+    url: https://github.com/docmd-io/docmd/blob/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Internationalisation with locale-aware search and generated outputs"
+  - field: importsFrom
+    value: [docusaurus, vitepress, mkdocs, starlight]
+    url: https://github.com/docmd-io/docmd/blob/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Migration tooling is available for supported documentation frameworks including Docusaurus, VitePress, MkDocs, and Starlight."
+  - field: currentMajor
+    value: 0
+    url: https://registry.npmjs.org/@docmd/core/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-16
+    url: https://registry.npmjs.org/@docmd/core
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmName
+    value: "@docmd/core"
+    url: https://registry.npmjs.org/@docmd/core/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmWeeklyDownloads
+    value: 9000
+    url: https://api.npmjs.org/downloads/point/last-week/@docmd/core
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 2530
+    url: https://api.github.com/repos/docmd-io/docmd
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 16
+    url: https://api.github.com/repos/docmd-io/docmd/contributors?anon=true&per_page=100
+    checkedAt: 2026-10-21
+    via: api
+notFound: [firstRelease, hqCountry, parent, forkOf, successorOf, basedOn, contentStore, adminUi, headlessApi, multisite, paidEdition, pricingPage, usageShare, pluginCount, pluginDirectory, subreddit, mastodon, bluesky, x, newsletter, discord, forum, userRoles, sso, databases, templating, livePreview, selfHostOption, regions, apiLimits, wikidata, endoflifeId, supportedVersions]
+unreadable: []
+notes: >
+  The CSV names @mgks/docmd, but the install docs and the README name @docmd/core, so the record uses @docmd/core. The old package's npm description reads "Discontinued from 0.8.x, use @docmd/core instead", a named successor and no end signal; its weekly figure is not recorded. The installation page's version selector still lists v0.9.0 as the latest docs version while npm's latest is 0.9.8; the npm version is used. The README says "One Markdown source → website, search, AI context, agents, and knowledge formats." and lists a static documentation site, an offline search index, llms.txt / llms-full.txt, Open Knowledge Format bundles, an MCP interface and AI Assistant context as outputs; no field covers the outputs. The README gives local, global and Docker installation ("docker run -p 3000:3000 ghcr.io/docmd-io/docmd:latest"). The README says "docmd includes a RAG-powered AI Assistant grounded in your documentation", that it can be connected "to your own backend or local AI provider", and that for a static site "docmd Cloud Relay provides the hosted bridge instead"; "Cloud Relay is free to use with your own AI provider key" and "Model usage may be charged separately by your chosen AI provider". It also says "Generated documentation can be hosted anywhere and does not require docmd-hosted infrastructure." Cloud Relay is named without prices. The README names a docmd migrate command for Docusaurus, VitePress, MkDocs and Starlight projects.

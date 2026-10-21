@@ -7,128 +7,96 @@ urls:
   docs: https://nextjs.org/docs
 category:
   - framework
-  - ssg
-description: React framework for building full-stack web applications with server, static and incremental rendering.
+description: React framework for building full-stack web applications, with routing, rendering and data fetching.
 status: active
 maintainer: Vercel, Inc.
 maintainerType: company
-firstRelease: 2016
 language: javascript
 runtime:
   - node
-  - bun
 hosting:
   - node
-  - bun
   - static
 runtimeMin: node 20
-templating: jsx
-i18n: internationalized routing by sub-path or domain via Proxy and app/[lang]; translations via third-party libraries
 runsAs:
   - always-on
   - static
 renderingModes:
-  - server
   - static
   - spa
-  - isr
-installMethod: npx create-next-app@latest
+  - server
+installMethod: npm create (create-next-app)
 licenseModel: open-source
 license: MIT
 currentMajor: "16"
 latestReleaseDate: 2026-10-15
-githubStargazers: 143069
-npmWeeklyDownloads: 40841184
-contributors: 4170
+githubStargazers: 143110
+npmWeeklyDownloads: 41069423
 social:
   x: https://x.com/nextjs
-  bluesky: https://bsky.app/profile/nextjs.org
-  discord: https://nextjs.org/discord
-wikidata: Q56062435
+  discord: https://discord.com/invite/bUG2bvbtHy
+  forum: https://github.com/vercel/next.js/discussions
+  subreddit: https://www.reddit.com/r/nextjs
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-10-21
 sources:
   - field: urls
-    url: https://github.com/vercel/next.js
-    checkedAt: 2026-10-18
+    url: https://nextjs.org
+    checkedAt: 2026-10-21
   - field: urls
-    url: https://nextjs.org/
-    checkedAt: 2026-10-18
+    url: https://api.github.com/repos/vercel/next.js
+    checkedAt: 2026-10-21
   - field: urls
-    url: https://nextjs.org/
-    checkedAt: 2026-10-18
-  - field: firstRelease
-    url: https://nextjs.org/governance
-    checkedAt: 2026-10-18
+    url: https://nextjs.org/docs
+    checkedAt: 2026-10-21
   - field: maintainer
-    url: https://nextjs.org/governance
-    checkedAt: 2026-10-20
-  - field: maintainer
-    url: https://nextjs.org/governance
-    checkedAt: 2026-10-20
-  - field: maintainerType
-    url: https://nextjs.org/governance
-    checkedAt: 2026-10-18
-  - field: wikidata
-    url: https://www.wikidata.org/wiki/Q56062435
-    checkedAt: 2026-10-18
+    url: https://github.com/vercel/next.js/blob/canary/license.md
+    checkedAt: 2026-10-21
   - field: category
-    url: https://nextjs.org/
-    checkedAt: 2026-10-18
+    url: https://nextjs.org/docs
+    checkedAt: 2026-10-21
   - field: language
-    url: https://github.com/vercel/next.js
-    checkedAt: 2026-10-18
+    url: https://api.github.com/repos/vercel/next.js
+    checkedAt: 2026-10-21
   - field: runtime
-    url: https://nextjs.org/docs/app/getting-started/deploying
-    checkedAt: 2026-10-18
-  - field: runtimeMin
-    url: https://registry.npmjs.org/next/latest
-    checkedAt: 2026-10-18
+    url: https://nextjs.org/docs/app/getting-started/installation
+    checkedAt: 2026-10-21
   - field: runtimeMin
     url: https://nextjs.org/docs/app/getting-started/installation
-    checkedAt: 2026-10-18
-  - field: templating
-    url: https://nextjs.org/docs/app/getting-started/installation
-    checkedAt: 2026-10-18
-  - field: i18n
-    url: https://nextjs.org/docs/app/guides/internationalization
-    checkedAt: 2026-10-18
-  - field: renderingModes
-    url: https://nextjs.org/docs/app/getting-started/deploying
-    checkedAt: 2026-10-18
-  - field: renderingModes
-    url: https://nextjs.org/docs/app/guides/static-exports
-    checkedAt: 2026-10-18
-  - field: renderingModes
-    url: https://nextjs.org/docs/app/guides/incremental-static-regeneration
-    checkedAt: 2026-10-18
+    checkedAt: 2026-10-21
   - field: installMethod
     url: https://nextjs.org/docs/app/getting-started/installation
-    checkedAt: 2026-10-18
-  - field: license
-    url: https://github.com/vercel/next.js
-    checkedAt: 2026-10-18
-  - field: licenseModel
-    url: https://github.com/vercel/next.js
-    checkedAt: 2026-10-18
-  - field: currentMajor
-    url: https://registry.npmjs.org/next/latest
-    checkedAt: 2026-10-18
-  - field: latestReleaseDate
-    url: https://github.com/vercel/next.js/releases/tag/v16.4.2
-    checkedAt: 2026-10-18
-  - field: githubStargazers
-    url: https://github.com/vercel/next.js
-    checkedAt: 2026-10-18
-  - field: contributors
-    url: https://api.github.com/repos/vercel/next.js/contributors?anon=true
-    checkedAt: 2026-10-18
-  - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/point/last-week/next
-    checkedAt: 2026-10-18
+    checkedAt: 2026-10-21
+  - field: renderingModes
+    url: https://nextjs.org/docs/app/guides/static-exports
+    checkedAt: 2026-10-21
+  - field: renderingModes
+    url: https://nextjs.org/docs/app/getting-started/deploying
+    checkedAt: 2026-10-21
   - field: runsAs
     url: https://nextjs.org/docs/app/getting-started/deploying
-    checkedAt: 2026-10-19
+    checkedAt: 2026-10-21
+  - field: runsAs
+    url: https://nextjs.org/docs/app/getting-started/deploying
+    checkedAt: 2026-10-21
+  - field: license
+    url: https://api.github.com/repos/vercel/next.js
+    checkedAt: 2026-10-21
+  - field: licenseModel
+    url: https://github.com/vercel/next.js/blob/canary/license.md
+    checkedAt: 2026-10-21
+  - field: currentMajor
+    url: https://registry.npmjs.org/next/latest
+    checkedAt: 2026-10-21
+  - field: latestReleaseDate
+    url: https://api.github.com/repos/vercel/next.js/releases/latest
+    checkedAt: 2026-10-21
+  - field: githubStargazers
+    url: https://api.github.com/repos/vercel/next.js
+    checkedAt: 2026-10-21
+  - field: npmWeeklyDownloads
+    url: https://api.npmjs.org/downloads/point/last-week/next
+    checkedAt: 2026-10-21
 figure:
   emoji: 🧱
   color: "#b8e0d2"
@@ -138,10 +106,8 @@ ai: authored
 packagistDownloads: null
 ---
 
-Next.js is a React framework for full-stack web applications. One project can render pages on the server, prerender them as static HTML, run as a single-page app, or regenerate static pages incrementally. Streaming lets a page send parts of its output as they become ready. Internationalized routing puts each language in a sub-path or a domain, and translated strings come from third-party libraries.
-
-Self-hosting with the full feature set runs a long-running Node server process, and the docs recommend a reverse proxy in front of it. The project publishes no official Docker image, but the repository includes example Dockerfiles. The static export writes HTML, CSS and JavaScript for any file host and leaves out the server features.
+Next.js is a React framework for building full-stack web applications. A new app is created with create-next-app. The project runs on Node.js, and an app can run as a Node.js server started with npm run start or as a static export of HTML, CSS and JavaScript files that any web server can serve. The project is maintained by Vercel, Inc.
 
 ## Worth knowing
 
-A self-hosted server keeps regenerated pages on the local disk of each instance unless a shared cache handler is configured. Next.js has two routers, the App Router and the Pages Router, documented separately. The [self-hosting guide](https://nextjs.org/docs/app/guides/self-hosting) covers the cache in detail.
+The Node.js server supports all Next.js features. A static export can be hosted on any web server that serves HTML, CSS and JavaScript files, and it does not support the features that require a server. Vercel, which maintains the project, also offers a platform for hosting Next.js apps.

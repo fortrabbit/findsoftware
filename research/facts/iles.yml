@@ -1,0 +1,127 @@
+id: iles
+name: îles
+status: accepted
+checkedAt: 2026-10-21
+description: Static site generator with partial hydration, for sites whose pages and layouts are Vue components.
+facts:
+  - field: homepage
+    value: https://iles.pages.dev
+    url: https://iles.pages.dev
+    checkedAt: 2026-10-21
+    via: page
+    quote: "The Joyful Site Generator"
+  - field: repository
+    value: https://github.com/ElMassimo/iles
+    url: https://api.github.com/repos/ElMassimo/iles
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://iles-docs.netlify.app
+    url: https://iles-docs.netlify.app/guide/introduction
+    checkedAt: 2026-10-21
+    via: page
+    quote: "îles is a static-site generator"
+  - field: categories
+    value: [ssg, islands]
+    url: https://iles-docs.netlify.app/guide/introduction
+    checkedAt: 2026-10-21
+    via: page
+    quote: "îles is a static-site generator that provides great support for partial hydration"
+  - field: basedOn
+    value: Vite
+    url: https://iles-docs.netlify.app/guide/introduction
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Powered by Vite.js"
+  - field: basedOn
+    value: Vue
+    url: https://iles-docs.netlify.app/guide/frameworks
+    checkedAt: 2026-10-21
+    via: page
+    quote: "pages and layouts in îles are Vue components"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/ElMassimo/iles
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://registry.npmjs.org/iles
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtimeMin
+    value: 20
+    url: https://registry.npmjs.org/iles
+    checkedAt: 2026-10-21
+    via: api
+    quote: '"node":">=20.19.0 || >=22.12.0"'
+  - field: installMethod
+    value: pnpm create iles@next
+    url: https://raw.githubusercontent.com/ElMassimo/iles/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "pnpm create iles@next"
+  - field: renderingModes
+    value: [static]
+    url: https://iles-docs.netlify.app/guide/introduction
+    checkedAt: 2026-10-21
+    via: page
+    quote: "îles is a static-site generator that provides great support for partial hydration"
+  - field: runsAs
+    value: [static]
+    url: https://iles-docs.netlify.app/guide/deployment
+    checkedAt: 2026-10-21
+    via: page
+    quote: "the default output dir is /dist"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/ElMassimo/iles
+    checkedAt: 2026-10-21
+    via: api
+  - field: maintainer
+    value: Máximo Mussini
+    url: https://raw.githubusercontent.com/ElMassimo/iles/main/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2021 Máximo Mussini"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/ElMassimo
+    checkedAt: 2026-10-21
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://registry.npmjs.org/iles
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-03-27
+    url: https://registry.npmjs.org/iles
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 1163
+    url: https://api.github.com/repos/ElMassimo/iles
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmName
+    value: iles
+    url: https://registry.npmjs.org/iles
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmWeeklyDownloads
+    value: 270
+    url: https://api.npmjs.org/downloads/point/last-week/iles
+    checkedAt: 2026-10-21
+    via: api
+  - field: x
+    value: https://twitter.com/ilesjs
+    url: https://raw.githubusercontent.com/ElMassimo/iles/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "official îles account"
+notFound: [firstRelease, hqCountry, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, paidEdition, usageShare, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, contributors, endoflifeId, wikidata, supportedVersions, eolPolicy, releaseCadence]
+unreadable:
+  - https://iles-docs.netlify.app/guide/getting-started (404)
+notes: >
+  The introduction page states "Project Status: Beta" and "Beta APIs may change on minor releases. Lock the version to avoid breakage." The same page footer reads "Last Updated: March 22, 2022", which is older than the npm and GitHub dates. The README install command uses the next tag: npm lists iles latest 0.10.0 and create-iles latest 0.10.0-beta.1; the registry figures are for the iles package, the core package that the scaffolder names. The repository has no GitHub releases; its latest tag is v0.10.0 and the npm latest date is recorded. The homepage pages.dev title reads "îles" and carries the same project. The introduction page says to use client directives to mark which components are interactive, so the build ships only the JavaScript those need, and that Vue and MDX build the site. The Vue dependency is recorded because the frameworks page states the pages and layouts are Vue components, not because the README names it as a base.

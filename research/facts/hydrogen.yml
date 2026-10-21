@@ -1,0 +1,131 @@
+id: hydrogen
+name: Shopify Hydrogen
+status: accepted
+checkedAt: 2026-10-21
+description: Shopify's headless toolkit that adds Shopify commerce primitives, such as the cart, product and collection state and a Storefront API client, to a JavaScript framework.
+facts:
+  - field: homepage
+    value: https://hydrogen.shopify.dev
+    url: https://hydrogen.shopify.dev
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Shopify commerce in your framework"
+  - field: repository
+    value: https://github.com/Shopify/hydrogen
+    url: https://github.com/Shopify/hydrogen
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://shopify.dev/docs/custom-storefronts/hydrogen
+    url: https://shopify.dev/docs/custom-storefronts/hydrogen
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Hydrogen is Shopify's headless toolkit"
+  - field: firstRelease
+    value: 2021
+    url: https://registry.npmjs.org/@shopify/hydrogen
+    checkedAt: 2026-10-21
+    via: api
+  - field: maintainer
+    value: Shopify Inc.
+    url: https://github.com/Shopify/hydrogen/blob/main/LICENSE.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright 2023-present, Shopify Inc."
+  - field: hqCountry
+    value: CA
+    url: https://www.shopify.com/legal/terms
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Shopify Inc., a Canadian corporation"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Shopify
+    checkedAt: 2026-10-21
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://github.com/Shopify/hydrogen
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [e-commerce]
+    url: https://hydrogen.shopify.dev
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Add Shopify commerce to the project you're already building"
+  - field: categories
+    value: [toolkit]
+    url: https://shopify.dev/docs/custom-storefronts/hydrogen
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Hydrogen is Shopify's headless toolkit"
+  - field: runtime
+    value: [node]
+    url: https://shopify.dev/docs/storefronts/hydrogen/deploy
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Node, Cloudflare Workers, Deno, or another runtime"
+  - field: runtimeMin
+    value: 22
+    url: https://shopify.dev/docs/storefronts/hydrogen/getting-started/add-to-existing-project
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Install Node.js version 22 or 24."
+  - field: installMethod
+    value: npm
+    url: https://hydrogen.shopify.dev
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Run npx @shopify/hydrogen setup"
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/@shopify/hydrogen/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: currentMajor
+    value: 2026
+    url: https://registry.npmjs.org/@shopify/hydrogen/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-20
+    url: https://api.github.com/repos/Shopify/hydrogen/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 2153
+    url: https://github.com/Shopify/hydrogen
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 139
+    url: https://github.com/Shopify/hydrogen
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmWeeklyDownloads
+    value: 42489
+    url: https://api.npmjs.org/downloads/point/last-week/@shopify/hydrogen
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmName
+    value: "@shopify/hydrogen"
+    url: https://registry.npmjs.org/@shopify/hydrogen
+    checkedAt: 2026-10-21
+    via: api
+  - field: forum
+    value: https://community.shopify.dev/c/hydrogen-and-storefront-apis/9
+    url: https://hydrogen.shopify.dev
+    checkedAt: 2026-10-21
+    via: page
+  - field: x
+    value: https://x.com/shopifydevs
+    url: https://hydrogen.shopify.dev
+    checkedAt: 2026-10-21
+    via: page
+notFound: [pricingPage, paidEdition, discord, mastodon, bluesky, newsletter, pluginDirectory, pluginCount, basedOn, renderingModes, i18n, sso, headlessApi, contentStore]
+unreadable: []
+notes: >
+  basedOn is not recorded. The docs say Hydrogen adds to frameworks: "For full storefronts, it works with frameworks that run server code, like Next.js, React Router, Nuxt, Astro, and SvelteKit". The React Router and Next.js lines name the two starter templates, not a parent of Hydrogen. A migration link on the docs mentions Remix for Hydrogen 1; it is not a statement about the current package. renderingModes is not recorded: the docs say the framework owns routing, rendering, data loading and UI, and Hydrogen the Shopify-specific logic. The docs also link a "Migrate to the latest version" page. Oxygen is Shopify's hosting platform for storefronts, a hosted platform next to the open source package; the homepage calls hosting on it free, and no prices are recorded. The deploy page also lists Vercel, Cloudflare Workers, Deno and other Node runtimes as targets. currentMajor is the calendar version 2026 (latest 2026.10.2), since the package uses calendar versions. The npm figures cover 2026-10-12 to 2026-10-18. The repository is a monorepo; the npm package @shopify/hydrogen is published from packages/hydrogen. firstRelease is the npm package's first publish (2021-08-16); the GitHub repository dates from 2022-09-19.
+  The homepage and docs say the toolkit provides a typed Storefront API client with gql() queries, cart, product and predictive search stores, request handlers, Shop Pay, analytics with consent handling and money formatting; that it covers the Storefront API and Customer Account API only, with checkout on Shopify; that it ships no component library; and that the docs cover Hydrogen 2026-10, with a legacy guide for 2026-04 and earlier. The homepage names the frameworks React Router, Next.js, Nuxt, Astro and SvelteKit.
+  The docs name React Router 7 in framework mode and Next.js as the two starter templates (frameworks and runtimes section).

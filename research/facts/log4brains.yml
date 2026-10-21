@@ -1,0 +1,110 @@
+id: log4brains
+name: Log4brains
+status: accepted
+checkedAt: 2026-10-21
+description: Tool for logging architecture decision records (ADRs) and publishing them as a static website.
+facts:
+  - field: repository
+    value: https://github.com/thomvaill/log4brains
+    url: https://api.github.com/repos/thomvaill/log4brains
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [docs-generator, adr]
+    url: https://raw.githubusercontent.com/thomvaill/log4brains/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "publish them automatically as a static website"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/thomvaill/log4brains
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://raw.githubusercontent.com/thomvaill/log4brains/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "You need Node and NPM to be installed globally to run Log4brains"
+  - field: runtimeMin
+    value: 18
+    url: https://registry.npmjs.org/log4brains
+    checkedAt: 2026-10-21
+    via: api
+    quote: '"node":">=18"'
+  - field: installMethod
+    value: npm install -g log4brains
+    url: https://raw.githubusercontent.com/thomvaill/log4brains/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "npm install -g log4brains"
+  - field: renderingModes
+    value: [static]
+    url: https://raw.githubusercontent.com/thomvaill/log4brains/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Static site generation to publish to GitHub/GitLab Pages or S3"
+  - field: runsAs
+    value: [static]
+    url: https://raw.githubusercontent.com/thomvaill/log4brains/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Static site generation to publish to GitHub/GitLab Pages or S3"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/thomvaill/log4brains
+    checkedAt: 2026-10-21
+    via: api
+  - field: maintainer
+    value: Thomas Vaillant
+    url: https://raw.githubusercontent.com/thomvaill/log4brains/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2020 Thomas Vaillant"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/thomvaill
+    checkedAt: 2026-10-21
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/log4brains
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2024-12-17
+    url: https://api.github.com/repos/thomvaill/log4brains/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 1603
+    url: https://api.github.com/repos/thomvaill/log4brains
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmName
+    value: log4brains
+    url: https://registry.npmjs.org/log4brains
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1670
+    url: https://api.npmjs.org/downloads/point/last-week/log4brains
+    checkedAt: 2026-10-21
+    via: api
+  - field: contentStore
+    value: [flat-file, git]
+    url: https://raw.githubusercontent.com/thomvaill/log4brains/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "ADRs are written in markdown, stored in your git repository"
+  - field: runsAs
+    value: [local]
+    url: https://raw.githubusercontent.com/thomvaill/log4brains/develop/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "start the web UI to preview your knowledge base locally"
+notFound: [firstRelease, hqCountry, parent, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, paidEdition, usageShare, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, contributors, endoflifeId, wikidata, supportedVersions, eolPolicy, releaseCadence, latestPrereleaseDate]
+unreadable:
+  - https://thomvaill.github.io/log4brains/ (answers 404 at the root on 2026-10-21; this is why the record has no homepage)
+notes: >
+  The project has no homepage: the GitHub repository's homepage field points at the GitHub Pages root, which answers 404 on 2026-10-21, and the /adr/ path is the project's own example knowledge base, which the README links as "See an example", not a homepage. The README also states that Next.js is used under the hood for the web UI and the static site generation; that is a dependency, so basedOn is not recorded. A Docker image is mentioned in the FAQ and not recorded as an install method. The README lists a local preview with hot reload, searchable ADRs, a timeline menu, a customizable template (default MADR) and support for mono and multi package projects. The install steps are in the README (npm install -g log4brains, then log4brains init), so criterion 3 is met. The README names a beta line installed with log4brains@beta; no beta release date is recorded. The npm registry figures are for the log4brains package the install command names. The GitHub default branch is develop and was last pushed on 2024-12-17, the same day as the latest release.

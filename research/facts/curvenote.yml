@@ -1,0 +1,131 @@
+id: curvenote
+name: Curvenote
+status: accepted
+checkedAt: 2026-10-21
+description: Command line tool and library for writing, previewing, exporting and publishing scientific and technical documents in MyST Markdown.
+facts:
+  - field: homepage
+    value: https://curvenote.com
+    url: https://curvenote.com
+    checkedAt: 2026-10-21
+    via: page
+  - field: repository
+    value: https://github.com/curvenote/curvenote
+    url: https://api.github.com/repos/curvenote/curvenote
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://curvenote.com/docs/cli
+    url: https://github.com/curvenote/curvenote/blob/main/packages/curvenote-cli/README.md
+    checkedAt: 2026-10-21
+    via: page
+  - field: pricingPage
+    value: https://curvenote.com/pricing
+    url: https://curvenote.com/pricing
+    checkedAt: 2026-10-21
+    via: page
+  - field: maintainer
+    value: Curvenote Inc.
+    url: https://github.com/curvenote/curvenote/blob/main/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2022-present Curvenote Inc."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/curvenote/curvenote
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [publishing, scientific]
+    url: https://github.com/curvenote/curvenote/blob/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Create, edit, share and publish scientific documents."
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/curvenote/curvenote
+    checkedAt: 2026-10-21
+    via: api
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/curvenote
+    checkedAt: 2026-10-21
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/curvenote/curvenote/blob/main/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2022-present Curvenote Inc."
+  - field: licenseModel
+    value: open-source
+    url: https://curvenote.com/docs/cli
+    checkedAt: 2026-10-21
+    via: page
+    quote: "The Curvenote CLI is open source (MIT License)"
+  - field: installMethod
+    value: npm install -g curvenote
+    url: https://curvenote.com/docs/cli/installing
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Install the CLI globally"
+  - field: runtime
+    value: [node]
+    url: https://curvenote.com/docs/cli/installing-prerequisites
+    checkedAt: 2026-10-21
+    via: page
+    quote: "The Curvenote CLI needs Node.js 20.19 or later in the 20 line"
+  - field: runtimeMin
+    value: "20"
+    url: https://curvenote.com/docs/cli/installing-prerequisites
+    checkedAt: 2026-10-21
+    via: page
+    quote: "The Curvenote CLI needs Node.js 20.19 or later in the 20 line"
+  - field: runsAs
+    value: [local]
+    url: https://curvenote.com/docs/cli
+    checkedAt: 2026-10-21
+    via: page
+    quote: "from your machine or from continuous integration"
+  - field: renderingModes
+    value: [static]
+    url: https://curvenote.com/docs/cli
+    checkedAt: 2026-10-21
+    via: page
+    quote: "a static HTML site"
+  - field: currentMajor
+    value: 0
+    url: https://registry.npmjs.org/curvenote/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-16
+    url: https://registry.npmjs.org/curvenote
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmName
+    value: curvenote
+    url: https://registry.npmjs.org/curvenote/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmWeeklyDownloads
+    value: 431
+    url: https://api.npmjs.org/downloads/point/last-week/curvenote
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 171
+    url: https://api.github.com/repos/curvenote/curvenote
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 8
+    url: https://api.github.com/repos/curvenote/curvenote/contributors?anon=true&per_page=100
+    checkedAt: 2026-10-21
+    via: api
+notFound: [firstRelease, hqCountry, parent, forkOf, successorOf, basedOn, contentStore, headlessApi, multisite, adminUi, paidEdition, usageShare, pluginCount, pluginDirectory, subreddit, mastodon, bluesky, x, newsletter, discord, forum, i18n, userRoles, sso, databases, templating, livePreview, selfHostOption, regions, apiLimits, importsFrom, wikidata, endoflifeId, supportedVersions]
+unreadable:
+  - https://docs.curvenote.com (Vercel security checkpoint, HTTP 429 to the fetch; the same pages are served at curvenote.com/docs/cli)
+  - https://curvenote.com/docs/publish (HTTP 404; the CSV homepage)
+notes: >
+  The CSV homepage https://curvenote.com/docs/publish returns 404, so the homepage is https://curvenote.com. The repository is a monorepo (curvenote/curvenote, Bun workspaces); the figures come from the curvenote package the install page names, the CLI itself. The GitHub API reports the license as NOASSERTION for the monorepo, while the LICENSE file and the npm metadata say MIT; both are recorded. The GitHub releases endpoint flags curvenote@0.12.19 as latest, but npm's latest is newer, so the npm version and date are used. npmWeeklyDownloads is the week 2026-10-12 to 2026-10-18. The CLI overview says the CLI "previews a project as a website while you write, exports it to PDF, LaTeX, Word and JATS, and publishes it to Curvenote as a site or a submission to a venue" and is built on MyST Markdown and Jupyter Notebooks; MyST is a markup format with no record in this dataset, so basedOn is not recorded. Hosted part: the Curvenote Scientific Content Management System (SCMS) page at https://curvenote.com/docs/scms says "The Curvenote Scientific Content Management System (SCMS) is the platform for creating, versioning, reviewing, and publishing scientific works." The README says sites "can be easily deployed on a hosting service called curve.space or can also be hosted on your own custom domain" and describes syncing to curvenote.com for collaborators who enjoy "WYSIWYG editing, commenting & real time collaboration". The install page says building and previewing work without an account and that signing in is needed to deploy or submit. The docs site docs.curvenote.com is blocked to automated fetches, so the CLI pages were read at curvenote.com/docs/cli.

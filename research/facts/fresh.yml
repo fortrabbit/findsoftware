@@ -1,0 +1,114 @@
+id: fresh
+name: Fresh
+status: accepted
+checkedAt: 2026-10-21
+description: Web framework for Deno that renders every route on the server as a Preact component and hydrates interactive islands.
+facts:
+  - field: homepage
+    value: https://usefresh.dev
+    url: https://usefresh.dev/
+    checkedAt: 2026-10-21
+    via: page
+  - field: repository
+    value: https://github.com/denoland/fresh
+    url: https://usefresh.dev/
+    checkedAt: 2026-10-21
+    via: page
+  - field: docs
+    value: https://usefresh.dev/docs
+    url: https://usefresh.dev/docs/getting-started
+    checkedAt: 2026-10-21
+    via: page
+  - field: maintainer
+    value: Luca Casonato
+    url: https://github.com/denoland/fresh/blob/main/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2021-2023 Luca Casonato"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/denoland
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://usefresh.dev/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "The simple, approachable, productive web framework."
+  - field: language
+    value: TypeScript
+    url: https://raw.githubusercontent.com/freshframework/fresh/main/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "TypeScript support out of the box."
+  - field: runtime
+    value: [deno]
+    url: https://usefresh.dev/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Built on Deno"
+  - field: basedOn
+    value: Preact
+    url: https://usefresh.dev/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Built on Preact and Signals"
+  - field: renderingModes
+    value: [server]
+    url: https://usefresh.dev/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Every route renders on the server as a Preact component."
+  - field: runsAs
+    value: [always-on]
+    url: https://usefresh.dev/docs/deployment/docker
+    checkedAt: 2026-10-21
+    via: page
+    quote: 'CMD ["deno", "serve", "-A", "_fresh/server.js"]'
+  - field: discord
+    value: https://discord.com/invite/deno
+    url: https://usefresh.dev/
+    checkedAt: 2026-10-21
+    via: page
+  - field: installMethod
+    value: deno run -Ar jsr:@fresh/init
+    url: https://usefresh.dev/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "deno run -Ar jsr:@fresh/init"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/freshframework/fresh
+    checkedAt: 2026-10-21
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/denoland/fresh/blob/main/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 2
+    url: https://jsr.io/@fresh/core/meta.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-04-28
+    url: https://api.github.com/repos/freshframework/fresh/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: jsrName
+    value: "@fresh/core"
+    url: https://jsr.io/@fresh/core/meta.json
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 13797
+    url: https://api.github.com/repos/freshframework/fresh
+    checkedAt: 2026-10-21
+    via: api
+notFound: [pricingPage, hqCountry, firstRelease, runtimeMin, databases, usageShare, reportedInstalls, endoflifeId, npmName]
+unreadable: []
+notes: >
+  The registry is JSR, recorded as jsrName, a field coined here because the scripts know only npmName and packagistName. The home page, the README showcase link and the site footer link to github.com/denoland/fresh, which the GitHub API resolves to freshframework/fresh; the repository field records the URL the project's pages link, and the API figures are read through it. The maintainer is the holder named in the LICENSE copyright line (2021-2023); the home page footer reads "the Fresh authors", which names no one. runsAs always-on comes from the Docker deployment page, whose Dockerfile starts the app with "deno serve" and exposes port 8000; the home page also lists Deno Deploy, Cloudflare Workers and deno compile as deploy targets, whose process model is not recorded. The Discord link in the site footer is the Deno community server. The deployment page names Deno Deploy as the recommended host, a hosted platform next to the open source part, with no prices recorded. Deno Deploy runs the build task during deployment when the Fresh preset is selected, then starts the app with the start task. The home page describes forms handled on the server with standard Request and FormData objects, partial responses that stream HTML into one part of a page without a full reload, and route handlers defined as named GET, POST, DELETE or other HTTP method functions.

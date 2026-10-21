@@ -1,0 +1,3 @@
+Fumadocs is a documentation framework for React. Fumadocs Core handles document search, content source adapters and Markdown extensions, Fumadocs UI supplies the default theme and interactive components, and Fumadocs MDX or a CMS provides the content. The framework composes into an existing React framework, so routing and deployment belong to that framework.
+
+The setup covers Next.js, Astro with React, Waku, React Router and TanStack Start. The [deploying guide](https://fumadocs.dev/docs/deploying) points to each React framework's own deployment guides and offers a fully static build for hosting on a CDN.

@@ -1,0 +1,120 @@
+id: expressots
+name: ExpressoTS
+status: accepted
+checkedAt: 2026-10-21
+description: TypeScript framework for building server-side Node.js applications, with dependency injection and an Express adapter.
+facts:
+  - field: homepage
+    value: https://expresso-ts.com/
+    url: https://expresso-ts.com/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Ship Node.js services"
+  - field: repository
+    value: https://github.com/expressots/expressots
+    url: https://github.com/expressots/expressots
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://doc.expresso-ts.com/
+    url: https://doc.expresso-ts.com/docs/core/first-steps
+    checkedAt: 2026-10-21
+    via: page
+    quote: "This page walks you from a clean machine"
+  - field: maintainer
+    value: Richard Zampieri
+    url: https://github.com/expressots/expressots/blob/main/LICENSE.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2021 Richard Zampieri"
+  - field: repoOwnerType
+    value: organization
+    url: https://github.com/expressots/expressots
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [backend-framework]
+    url: https://expresso-ts.com/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Ship Node.js services"
+  - field: basedOn
+    value: Express
+    url: https://doc.expresso-ts.com/docs/core/app-provider
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Get the underlying HTTP server instance (Express.js by default)"
+  - field: language
+    value: TypeScript
+    url: https://github.com/expressots/expressots
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://doc.expresso-ts.com/docs/core/first-steps
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Node.js >= 20.18.0 (LTS or newer)"
+  - field: runtimeMin
+    value: ">=20"
+    url: https://doc.expresso-ts.com/docs/core/first-steps
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Node.js >= 20.18.0 (LTS or newer)"
+  - field: runsAs
+    value: [always-on]
+    url: https://doc.expresso-ts.com/docs/guides/deployment
+    checkedAt: 2026-10-21
+    via: page
+    quote: "LoadBalancer Service routing port 80 to the analyzed app port."
+  - field: installMethod
+    value: [npx, npm global CLI]
+    url: https://expresso-ts.com/
+    checkedAt: 2026-10-21
+    via: page
+    quote: "npx @expressots/cli new my-app"
+  - field: license
+    value: MIT
+    url: https://github.com/expressots/expressots
+    checkedAt: 2026-10-21
+    via: api
+  - field: license
+    value: MIT
+    url: https://doc.expresso-ts.com/docs/governance
+    checkedAt: 2026-10-21
+    via: page
+    quote: "ExpressoTS is an independent, MIT-licensed open-source project"
+  - field: currentMajor
+    value: 4
+    url: https://registry.npmjs.org/@expressots/core/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-13
+    url: https://github.com/expressots/expressots/releases/tag/v4.3.0
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmName
+    value: "@expressots/core"
+    url: https://registry.npmjs.org/@expressots/core/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmWeeklyDownloads
+    value: 211280
+    url: https://api.npmjs.org/downloads/point/last-week/@expressots/core
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 1847
+    url: https://github.com/expressots/expressots
+    checkedAt: 2026-10-21
+    via: api
+  - field: x
+    value: https://twitter.com/expressots
+    url: https://expresso-ts.com/
+    checkedAt: 2026-10-21
+    via: page
+notFound: [firstRelease, parent, forkOf, hqCountry, pricingPage, contributors, endoflifeId, forum, discord, subreddit, mastodon, bluesky, newsletter, usageShare, reportedInstalls, pluginDirectory, renderingModes]
+unreadable: ["https://expresso-ts.com/docs (404)"]
+notes: >
+  The repository is a monorepo (core, CLI, Express adapter, Studio, templates), so the npm figures are for the core package @expressots/core, not the @expressots/cli scaffolder that the install docs name. The owner is the GitHub organization expressots; the LICENSE copyright line names Richard Zampieri, and the governance page says ExpressoTS is maintained by a small core team, so maintainer is the copyright holder and not the team. The app-provider page says the underlying HTTP server instance is Express.js by default and that AppExpress is the Express.js adapter implementation, which is the basis for basedOn; the homepage line "Minimal overhead on Express" agrees. The first-steps page says ExpressoTS centers on a DI container that wires controllers, use cases, providers and repositories through modules. The runtime minimum comes from the first-steps page; @expressots/core declares a slightly higher Node minor on npm, and the major is the same. ExpressoTS Studio is a local development tool that runs alongside the app during development. The homepage names GroundZero as an official deploy partner, a hosted platform run by another company; it is not recorded as a project-owned hosting option. The homepage counters (weekly downloads, GitHub stars) show placeholder zeros and were not used. The x field is the Twitter link on the homepage, which the project lists as its account.

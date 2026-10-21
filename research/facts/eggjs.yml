@@ -1,0 +1,118 @@
+id: eggjs
+name: Egg.js
+status: accepted
+checkedAt: 2026-10-21
+description: Node.js framework built on Koa for enterprise web applications and APIs.
+facts:
+  - field: homepage
+    value: https://eggjs.org
+    url: https://eggjs.org
+    checkedAt: 2026-10-21
+    via: page
+  - field: repository
+    value: https://github.com/eggjs/egg
+    url: https://api.github.com/repos/eggjs/egg
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://eggjs.org/intro/quickstart
+    url: https://eggjs.org/intro/quickstart
+    checkedAt: 2026-10-21
+    via: page
+  - field: maintainer
+    value: Alibaba Group Holding Limited
+    url: https://github.com/eggjs/egg/blob/master/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2017-present Alibaba Group Holding Limited"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/eggjs
+    checkedAt: 2026-10-21
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/eggjs/egg
+    checkedAt: 2026-10-21
+    via: page
+  - field: categories
+    value: [framework, backend]
+    url: https://eggjs.org
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Better enterprise frameworks and apps with Node.js & Koa"
+  - field: basedOn
+    value: Koa
+    url: https://eggjs.org/intro/egg-and-koa
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Egg is built around the Koa."
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/eggjs/egg
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://eggjs.org/intro/quickstart
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Node.js Runtime: >=22.18.0"
+  - field: runtimeMin
+    value: "22"
+    url: https://eggjs.org/intro/quickstart
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Node.js Runtime: >=22.18.0"
+  - field: installMethod
+    value: npm create
+    url: https://eggjs.org/intro/quickstart
+    checkedAt: 2026-10-21
+    via: page
+    quote: "npm init egg --type=simple"
+  - field: runsAs
+    value: [always-on]
+    url: https://eggjs.org/core/deployment
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Egg takes egg-cluster to create Master process"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/eggjs/egg
+    checkedAt: 2026-10-21
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/eggjs/egg/blob/master/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 4
+    url: https://registry.npmjs.org/egg/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-07
+    url: https://api.github.com/repos/eggjs/egg/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 18985
+    url: https://api.github.com/repos/eggjs/egg
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmName
+    value: egg
+    url: https://registry.npmjs.org/egg/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmWeeklyDownloads
+    value: 16076
+    url: https://api.npmjs.org/downloads/point/last-week/egg
+    checkedAt: 2026-10-21
+    via: api
+notFound: [paidEdition, pricingPage, hqCountry, parent]
+unreadable: []
+notes: >
+  The English docs are the default at eggjs.org, and the Chinese docs sit under /zh-CN/; quotes come from the English pages. The install step is npm init egg, which runs the create-egg scaffolder; the npm figures come from the core egg package, which create-egg does not replace (create-egg shows 112 downloads in the same week and is not used). The npm registry lists a version 0.0.0 dated 2013-08-08 for egg, so firstRelease is left unset rather than taken from that entry. The license copyright line names Alibaba Group Holding Limited while the site footer says "Copyright © 2017-present Egg.js"; the LICENSE line is recorded as the maintainer. The repository README gives a different quickstart with the utoo tool (ut create egg@beta); the record follows the install page on the site. Pages read: the home page, the quick start, the Egg and Koa page, the structure page, the deployment page and the README. The deployment page starts the application with egg-scripts start, which runs a master process and worker processes through egg-cluster, and the page names Node.js 22.18.0 or later as the runtime to install. The basedOn value Koa matches the koa record in candidates-js-framework.csv. The Egg and Koa page says Egg 1.x was based on Koa 1.x, and that Egg 2.x was released based on Koa 2.x, with the framework and built-in plugins written as async functions.

@@ -1,0 +1,118 @@
+id: derby
+name: DerbyJS
+status: accepted
+checkedAt: 2026-10-21
+description: MVC framework for realtime, collaborative web applications that run in Node.js and in browsers.
+facts:
+  - field: homepage
+    value: https://derbyjs.com
+    url: https://derbyjs.com
+    checkedAt: 2026-10-21
+    via: page
+  - field: repository
+    value: https://github.com/derbyjs/derby
+    url: https://api.github.com/repos/derbyjs/derby
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://derbyjs.github.io/derby/
+    url: https://derbyjs.github.io/derby/
+    checkedAt: 2026-10-21
+    via: page
+  - field: maintainer
+    value: Nate Smith
+    url: https://github.com/derbyjs/derby/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2011-2021 by Nate Smith"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/derbyjs/derby
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/derbyjs/derby/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "The Derby MVC framework makes it easy to write realtime, collaborative applications"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/derbyjs/derby
+    checkedAt: 2026-10-21
+    via: api
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/derby/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://derbyjs.com
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Code licensed under MIT"
+  - field: installMethod
+    value: git clone of derby-examples, then npm install
+    url: https://derbyjs.com/started
+    checkedAt: 2026-10-21
+    via: page
+    quote: "You can clone the repo and install"
+  - field: runtime
+    value: [node]
+    url: https://derbyjs.com/started
+    checkedAt: 2026-10-21
+    via: page
+    quote: "In order to get started writing your first DerbyJS app, you need to have Node.js and MongoDB installed."
+  - field: databases
+    value: [mongodb]
+    url: https://derbyjs.com/started
+    checkedAt: 2026-10-21
+    via: page
+    quote: "the MongoDB adapter is the most complete"
+  - field: renderingModes
+    value: [spa]
+    url: https://github.com/derbyjs/derby/blob/master/docs/apps.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Derby projects support one or more single-page apps."
+  - field: renderingModes
+    value: [server]
+    url: https://github.com/derbyjs/derby/blob/master/docs/index.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Templates can be rendered in the browser and on the server."
+  - field: currentMajor
+    value: 4
+    url: https://registry.npmjs.org/derby/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2024-10-24
+    url: https://registry.npmjs.org/derby
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmName
+    value: derby
+    url: https://registry.npmjs.org/derby/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmWeeklyDownloads
+    value: 2176
+    url: https://api.npmjs.org/downloads/point/last-week/derby
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 4700
+    url: https://api.github.com/repos/derbyjs/derby
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 47
+    url: https://api.github.com/repos/derbyjs/derby/contributors?anon=true&per_page=100
+    checkedAt: 2026-10-21
+    via: api
+notFound: [firstRelease, hqCountry, parent, forkOf, successorOf, basedOn, contentStore, adminUi, headlessApi, multisite, paidEdition, pricingPage, usageShare, pluginCount, pluginDirectory, subreddit, mastodon, bluesky, x, newsletter, discord, forum, i18n, userRoles, sso, templating, livePreview, selfHostOption, regions, apiLimits, importsFrom, wikidata, runtimeMin, runsAs, endoflifeId, supportedVersions]
+unreadable: []
+notes: >
+  The homepage is recorded as https://derbyjs.com, which answers 200. The getting-started page names Node.js and MongoDB as requirements ("While DerbyJS is written to support any database, the MongoDB adapter is the most complete.") and gives an npm install only for the derby-examples repository, not for the derby package, so installMethod records that path and no npm command. Redis is named as optional ("It can be used to scale pub/sub beyond one server process"), not recorded as a database. The examples are started with node server.js; the docs do not say the process must keep running, so runsAs is not recorded. The docs introduction says "DerbyJS is a full-stack framework for writing modern web applications."; the README calls it an MVC framework, and categories keep the README's word. The docs introduction says "Templates can be rendered in the browser and on the server." and the apps page says "Derby projects support one or more single-page apps." The site footer states "Code licensed under MIT, documentation under CC BY 3.0." The latest GitHub release and the npm latest are both dated 2024-10-24, and the repository is not archived, which is no end signal. The maintainer is the copyright holder named in the README; the derbyjs organization is the repository owner. npmWeeklyDownloads is the week 2026-10-12 to 2026-10-18. The README says "Derby includes a powerful data synchronization engine called Racer". The apps page says apps have "a full MVC structure, including a model provided by Racer, a template and styles based view, and controller code" and that "On the server, apps provide a router middleware for Express."

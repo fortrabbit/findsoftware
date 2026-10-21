@@ -1,0 +1,131 @@
+id: modernjs
+name: Modern.js
+status: accepted
+checkedAt: 2026-10-21
+description: Progressive web framework based on React for client-rendered, server-rendered and statically generated web applications.
+facts:
+  - field: homepage
+    value: https://modernjs.dev/
+    url: https://api.github.com/repos/web-infra-dev/modern.js
+    checkedAt: 2026-10-21
+    via: api
+  - field: repository
+    value: https://github.com/web-infra-dev/modern.js
+    url: https://api.github.com/repos/web-infra-dev/modern.js
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://modernjs.dev/guides/get-started/introduction
+    url: https://modernjs.dev/guides/get-started/introduction
+    checkedAt: 2026-10-21
+    via: page
+  - field: firstRelease
+    value: 2021
+    url: https://registry.npmjs.org/@modern-js/app-tools
+    checkedAt: 2026-10-21
+    via: api
+  - field: maintainer
+    value: Modern.js
+    url: https://raw.githubusercontent.com/web-infra-dev/modern.js/main/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2021-present Modern.js"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/web-infra-dev
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [framework, meta-framework]
+    url: https://modernjs.dev/guides/get-started/introduction
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Modern.js is a progressive web framework based on React"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/web-infra-dev/modern.js/languages
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://modernjs.dev/guides/get-started/quick-start
+    checkedAt: 2026-10-21
+    via: page
+    quote: "you will need to install Node.js"
+  - field: runtimeMin
+    value: "20"
+    url: https://registry.npmjs.org/@modern-js/app-tools/latest
+    checkedAt: 2026-10-21
+    via: api
+    quote: '"node":">=20"'
+  - field: installMethod
+    value: npx @modern-js/create@latest
+    url: https://modernjs.dev/guides/get-started/quick-start
+    checkedAt: 2026-10-21
+    via: page
+    quote: "npx @modern-js/create@latest"
+  - field: renderingModes
+    value: [spa]
+    url: https://modernjs.dev/guides/get-started/introduction
+    checkedAt: 2026-10-21
+    via: page
+    quote: "When you build a Modern.js application, it defaults to client-side rendering."
+  - field: renderingModes
+    value: [server]
+    url: https://modernjs.dev/guides/basic-features/render/ssr
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Server-Side Rendering (SSR) generates complete HTML pages on the server"
+  - field: renderingModes
+    value: [static]
+    url: https://modernjs.dev/guides/basic-features/render/ssg
+    checkedAt: 2026-10-21
+    via: page
+    quote: "generates complete static web pages at build time"
+  - field: basedOn
+    value: [react]
+    url: https://modernjs.dev/guides/get-started/introduction
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Modern.js is a progressive web framework based on React"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/web-infra-dev/modern.js/main/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 3
+    url: https://registry.npmjs.org/@modern-js/app-tools/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-19
+    url: https://api.github.com/repos/web-infra-dev/modern.js/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 5047
+    url: https://api.github.com/repos/web-infra-dev/modern.js
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 143
+    url: https://api.github.com/repos/web-infra-dev/modern.js/contributors?per_page=1&anon=true
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmName
+    value: "@modern-js/app-tools"
+    url: https://modernjs.dev/guides/get-started/quick-start
+    checkedAt: 2026-10-21
+    via: page
+    quote: "It is the core package of the Modern.js framework"
+  - field: npmWeeklyDownloads
+    value: 7797
+    url: https://api.npmjs.org/downloads/point/last-week/@modern-js/app-tools
+    checkedAt: 2026-10-21
+    via: api
+notFound: [runsAs, hqCountry, parent, maintainerType, pricingPage, adminUi, contentStore, databases, pluginDirectory, forum, discord]
+unreadable: []
+notes: >
+  The LICENSE copyright line reads "Copyright (c) 2021-present Modern.js", recorded as the maintainer. The introduction says "At ByteDance, we use Modern.js to build upper-level frameworks", which states use and not maintenance, so no parent is recorded. The quick start states the Node.js minimum as "not lower than v22.18.0", while the npm package engines field of the latest release says node >=20; the two pages name different releases, so only the engines value of the current major is recorded. The docs site labels itself "Modern.js 2.x Docs" while the npm latest tag is major 3, a label a reviewer should check. The repository is a monorepo; the registry figures come from @modern-js/app-tools, which the quick start calls the core package. The install command runs @modern-js/create, a scaffolder. The introduction says Modern.js "uses Rsbuild/Rspack as the build tool". The build command is "pnpm run build", with artifacts in dist/. The quick start says Modern.js Server provides "capabilities for development and production servers", and the SSG page says pre-rendered pages "can be cached by a CDN"; neither states what the live site needs from the host, so runsAs stays unknown.

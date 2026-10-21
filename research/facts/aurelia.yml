@@ -1,0 +1,117 @@
+id: aurelia
+name: Aurelia
+status: accepted
+checkedAt: 2026-10-21
+description: Aurelia 2 is a front-end JavaScript framework for building browser, mobile and desktop applications.
+facts:
+  - field: homepage
+    value: https://aurelia.io/
+    url: https://registry.npmjs.org/aurelia/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: repository
+    value: https://github.com/aurelia/aurelia
+    url: https://api.github.com/repos/aurelia/aurelia
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://docs.aurelia.io/
+    url: https://raw.githubusercontent.com/aurelia/aurelia/HEAD/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "You can read the documentation on Aurelia 2"
+  - field: maintainer
+    value: Blue Spire Inc.
+    url: https://raw.githubusercontent.com/aurelia/aurelia/HEAD/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2010 - 2020 Blue Spire Inc."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/aurelia
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://raw.githubusercontent.com/aurelia/aurelia/HEAD/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Aurelia is a modern, front-end JavaScript framework for building browser, mobile, and desktop applications."
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/aurelia/aurelia
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://registry.npmjs.org/aurelia/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtimeMin
+    value: "20"
+    url: https://registry.npmjs.org/aurelia/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: installMethod
+    value: npx makes aurelia
+    url: https://raw.githubusercontent.com/aurelia/aurelia/HEAD/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "npx makes aurelia"
+  - field: templating
+    value: [html]
+    url: https://raw.githubusercontent.com/aurelia/aurelia/HEAD/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "with a corresponding HTML template"
+  - field: importsFrom
+    value: Aurelia 1
+    url: https://docs.aurelia.io/migrating-to-aurelia-2/migrating-to-aurelia-2
+    checkedAt: 2026-10-21
+    via: page
+    quote: "migrate over your Aurelia 1 applications to Aurelia 2"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/aurelia/aurelia
+    checkedAt: 2026-10-21
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://registry.npmjs.org/aurelia/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-04
+    url: https://registry.npmjs.org/aurelia
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 1548
+    url: https://api.github.com/repos/aurelia/aurelia
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 84
+    url: https://api.github.com/repos/aurelia/aurelia/contributors
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmName
+    value: aurelia
+    url: https://registry.npmjs.org/aurelia/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: runsAs
+    value: [browser]
+    url: https://raw.githubusercontent.com/aurelia/aurelia/HEAD/docs/user-docs/getting-started/browser-no-build.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "You can run Aurelia from a plain HTML page by importing the framework as a browser ES module."
+  - field: npmWeeklyDownloads
+    value: 5569 (week 2026-10-12 to 2026-10-18)
+    url: https://api.npmjs.org/downloads/point/last-week/aurelia
+    checkedAt: 2026-10-21
+    via: api
+notFound: [pricingPage, firstRelease, hqCountry, parent, forkOf, successorOf, contentStore, databases, headlessApi, docker, paidEdition, usageShare, pluginCount, pluginDirectory, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, i18n, sso, wikidata, renderingModes, basedOn, reportedInstalls, discord, forum]
+unreadable: []
+notes: >
+  The npm latest dist-tag is 2.0.0-rc.2 (published 2026-08-04) and the GitHub releases API returns no release, so currentMajor and latestReleaseDate come from npm. The README states "Note: Please keep in mind that Aurelia 2 is still in beta. A number of features and use cases around the public API are still untested and there will be a few more breaking changes." (raw README, read 2026-10-21) while the npm latest tag is a release candidate; both statements are the project's own. The README names https://aurelia.io/ as the project's site through its logo link and the npm homepage field agrees. The README's Node.js requirement (v8.9.0 or above) is older than the npm engines field of the latest release (>=20.16.0), so runtime and runtimeMin follow npm. The npm package aurelia is the one the browser-without-a-build-step page imports; @aurelia/kernel, the package the README badge names, shows the same weekly download figure. The migration guide says "Aurelia 2 is a complete rewrite of Aurelia that shares many of the same loved and familiar features of Aurelia 1." and names the @aurelia/compat-v1 package. The LICENSE copyright line dates 2010 - 2020; the npm maintainers are eisenbergeffect and aureliaeffect, not used as the maintainer name.

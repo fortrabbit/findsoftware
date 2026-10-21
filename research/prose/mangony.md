@@ -1,0 +1,1 @@
+Mangony is a static site generator for Node.js. Its [README](https://github.com/Sebastian-Fitzner/mangony) says it takes files, uses templates and compiles them to an output directory, and that it supports template engines such as Handlebars and React. It installs from npm as mangony.

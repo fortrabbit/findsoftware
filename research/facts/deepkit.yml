@@ -1,0 +1,112 @@
+id: deepkit
+name: Deepkit Framework
+status: accepted
+checkedAt: 2026-10-21
+description: TypeScript framework that builds validation, serialization, HTTP, RPC, database access and dependency injection on TypeScript types kept at runtime.
+facts:
+  - field: homepage
+    value: https://deepkit.io
+    url: https://deepkit.io
+    checkedAt: 2026-10-21
+    via: page
+  - field: repository
+    value: https://github.com/marcj/deepkit
+    url: https://api.github.com/repos/marcj/deepkit
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://deepkit.io/en/documentation/introduction
+    url: https://github.com/marcj/deepkit/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+  - field: maintainer
+    value: Marc J. Schmidt
+    url: https://github.com/marcj/deepkit/blob/master/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2021 Marc J. Schmidt"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/marcj/deepkit
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/marcj/deepkit/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "The TypeScript framework with runtime types"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/marcj/deepkit
+    checkedAt: 2026-10-21
+    via: api
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/@deepkit/type/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/marcj/deepkit/blob/master/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/marcj/deepkit/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "License MIT"
+  - field: installMethod
+    value: npm init @deepkit/app
+    url: https://github.com/marcj/deepkit/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "npm init @deepkit/app@latest my-app"
+  - field: runtime
+    value: [node]
+    url: https://github.com/marcj/deepkit/blob/master/website/src/pages/documentation/framework/deployment.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "everything works directly through Node"
+  - field: databases
+    value: [postgres, mysql, sqlite, mongodb]
+    url: https://github.com/marcj/deepkit/blob/master/README.md
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Supports PostgreSQL, MySQL, SQLite, MongoDB."
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/@deepkit/type/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2025-09-22
+    url: https://registry.npmjs.org/@deepkit/type
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmName
+    value: "@deepkit/type"
+    url: https://registry.npmjs.org/@deepkit/type/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmWeeklyDownloads
+    value: 7149
+    url: https://api.npmjs.org/downloads/point/last-week/@deepkit/type
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 3545
+    url: https://api.github.com/repos/marcj/deepkit
+    checkedAt: 2026-10-21
+    via: api
+  - field: contributors
+    value: 31
+    url: https://api.github.com/repos/marcj/deepkit/contributors?anon=true&per_page=100
+    checkedAt: 2026-10-21
+    via: api
+notFound: [runsAs, firstRelease, hqCountry, parent, forkOf, successorOf, basedOn, contentStore, adminUi, headlessApi, multisite, paidEdition, pricingPage, usageShare, pluginCount, pluginDirectory, subreddit, mastodon, bluesky, x, newsletter, forum, i18n, userRoles, sso, templating, livePreview, renderingModes, selfHostOption, regions, apiLimits, importsFrom, wikidata, runtimeMin, endoflifeId, supportedVersions]
+unreadable: []
+notes: >
+  The repository moved: github.com/deepkit/deepkit-framework (the URL in the npm metadata and the README clone line) answers with a permanent redirect to marcj/deepkit, which the GitHub API reports as the repository, so the repository is marcj/deepkit. The npm package named deepkit is unrelated (ISC license, no repository, empty author) and is not used. The README lists @deepkit/type first under "Core" packages and its badge names it, so its figures are recorded; @deepkit/framework and @deepkit/app carry the same version and a lower weekly figure for the same week. The README says "Define your types once and use them everywhere—validation, serialization, database, HTTP, RPC, and dependency injection." and "Use only what you need from 40+ independent packages". The framework page says "Since the app now imports the FrameworkModule, we see there are more commands available", among them server:start, "which starts the HTTP server"; no page states whether the process keeps running, so runsAs is unknown. The framework's own docs source is read from the repository, the rendered site at deepkit.io serves the introduction page only. The root package.json of the monorepo declares node >= 20.0.0, but that file belongs to the development setup, not to the published packages, so runtimeMin is not recorded. The runtime types getting-started page says "To install Deepkit's runtime type system two packages are needed: The Deepkit Type Compiler and the Deepkit Type package itself" and that "experimentalDecorators": true "is necessary for certain functions of other Deepkit libraries and in Deepkit Framework". The deployment page compiles the app to JavaScript with tsc and runs it with Node. The maintainer name is the copyright holder in the LICENSE.

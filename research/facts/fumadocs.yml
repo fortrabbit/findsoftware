@@ -1,0 +1,107 @@
+id: fumadocs
+name: Fumadocs
+status: accepted
+checkedAt: 2026-10-21
+description: React documentation framework that composes into an existing React framework to build docs sites.
+facts:
+  - field: homepage
+    value: https://fumadocs.dev
+    url: https://fumadocs.dev/
+    checkedAt: 2026-10-21
+    via: page
+  - field: repository
+    value: https://github.com/fuma-nama/fumadocs
+    url: https://api.github.com/repos/fuma-nama/fumadocs
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://fumadocs.dev/docs
+    url: https://fumadocs.dev/docs
+    checkedAt: 2026-10-21
+    via: page
+  - field: maintainer
+    value: Fuma
+    url: https://raw.githubusercontent.com/fuma-nama/fumadocs/dev/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2023 Fuma"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/fuma-nama
+    checkedAt: 2026-10-21
+    via: api
+  - field: categories
+    value: [docs-generator]
+    url: https://fumadocs.dev/docs
+    checkedAt: 2026-10-21
+    via: page
+    quote: "documentation framework"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/fuma-nama/fumadocs
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://fumadocs.dev/docs
+    checkedAt: 2026-10-21
+    via: page
+    quote: "A minimum version of Node.js 22 required."
+  - field: runtimeMin
+    value: 22
+    url: https://fumadocs.dev/docs
+    checkedAt: 2026-10-21
+    via: page
+    quote: "A minimum version of Node.js 22 required."
+  - field: renderingModes
+    value: [static]
+    url: https://fumadocs.dev/docs/deploying
+    checkedAt: 2026-10-21
+    via: page
+    quote: "fully static, hostable on CDN"
+  - field: installMethod
+    value: npm create
+    url: https://fumadocs.dev/docs
+    checkedAt: 2026-10-21
+    via: page
+    quote: "npm create fumadocs-app"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/fuma-nama/fumadocs
+    checkedAt: 2026-10-21
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/fuma-nama/fumadocs/dev/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 16
+    url: https://registry.npmjs.org/fumadocs-core/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-19
+    url: https://registry.npmjs.org/fumadocs-core
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmName
+    value: fumadocs-core
+    url: https://registry.npmjs.org/fumadocs-core/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1439903
+    url: https://api.npmjs.org/downloads/point/last-week/fumadocs-core
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 13429
+    url: https://api.github.com/repos/fuma-nama/fumadocs
+    checkedAt: 2026-10-21
+    via: api
+notFound: [pricingPage, hqCountry, firstRelease, databases, usageShare, reportedInstalls, endoflifeId, runsAs, discord]
+unreadable: []
+notes: >
+  basedOn is left out: the pages say Fumadocs composes into a React framework and lists five it supports, but none says it is built on one. The install page lists the frameworks it supports as Next.js, Astro (with React), Waku, React Router and TanStack Start; the list is not a field. The install docs name create-fumadocs-app, a create-* scaffolder, so the registry figures come from the core package fumadocs-core. The GitHub releases endpoint returns the sub-package fumadocs-twoslash@4.0.3, so latestReleaseDate comes from the npm time field of fumadocs-core 16.17.7. The static rendering comes from the deploying page's SPA note; the docs say a Next.js app is powered by the React framework's own deployment guides, and Docker deployment is shown for Next.js, so no server mode is recorded as a Fumadocs mode. Fumapress, a separate site generator at press.fumadocs.dev, is not recorded here. Maintainer is the LICENSE copyright holder; the home page says "designed by Fuma Nama".

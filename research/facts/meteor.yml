@@ -1,0 +1,129 @@
+id: meteor
+name: Meteor
+status: accepted
+checkedAt: 2026-10-21
+description: JavaScript application platform for building web and mobile applications.
+facts:
+  - field: homepage
+    value: https://www.meteor.com
+    url: https://github.com/meteor/meteor
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Official Website"
+  - field: repository
+    value: https://github.com/meteor/meteor
+    url: https://api.github.com/repos/meteor/meteor
+    checkedAt: 2026-10-21
+    via: api
+  - field: docs
+    value: https://docs.meteor.com
+    url: https://github.com/meteor/meteor
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Documentation"
+  - field: categories
+    value: [framework, app-platform]
+    url: https://api.github.com/repos/meteor/meteor
+    checkedAt: 2026-10-21
+    via: api
+    quote: "Meteor, the JavaScript App Platform"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/meteor/meteor
+    checkedAt: 2026-10-21
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://docs.meteor.com/about/install.html
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Different Meteor versions bundle and require different minimum Node.js active LTS releases"
+  - field: installMethod
+    value: npx meteor
+    url: https://docs.meteor.com/about/install.html
+    checkedAt: 2026-10-21
+    via: page
+    quote: "npx meteor"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/meteor/meteor/devel/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 3
+    url: https://registry.npmjs.org/meteor/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-08
+    url: https://api.github.com/repos/meteor/meteor/releases/latest
+    checkedAt: 2026-10-21
+    via: api
+  - field: maintainer
+    value: Meteor Software Ltd.
+    url: https://raw.githubusercontent.com/meteor/meteor/devel/LICENSE
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Copyright (c) 2011 - present Meteor Software Ltd."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/meteor/meteor
+    checkedAt: 2026-10-21
+    via: api
+  - field: githubStargazers
+    value: 44793
+    url: https://api.github.com/repos/meteor/meteor
+    checkedAt: 2026-10-21
+    via: api
+  - field: npmName
+    value: meteor
+    url: https://docs.meteor.com/about/install.html
+    checkedAt: 2026-10-21
+    via: page
+    quote: "npm install -g meteor --foreground-script"
+  - field: npmWeeklyDownloads
+    value: 1644
+    url: https://api.npmjs.org/downloads/point/last-week/meteor
+    checkedAt: 2026-10-21
+    via: api
+  - field: pluginDirectory
+    value: https://atmospherejs.com/
+    url: https://github.com/meteor/meteor
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Find packages on Atmosphere"
+  - field: forum
+    value: https://forums.meteor.com/
+    url: https://github.com/meteor/meteor
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Discuss on Forums"
+  - field: discord
+    value: https://discord.gg/hZkTCaVjmT
+    url: https://github.com/meteor/meteor
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Join the Meteor Discord"
+  - field: x
+    value: https://x.com/meteorjs
+    url: https://github.com/meteor/meteor
+    checkedAt: 2026-10-21
+    via: page
+  - field: databases
+    value: [mongodb]
+    url: https://docs.meteor.com/tutorials/deployment/deployment.html
+    checkedAt: 2026-10-21
+    via: page
+    quote: "The environment you choose will need the correct version of Node.js and connectivity to a MongoDB server"
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.meteor.com/tutorials/deployment/deployment.html
+    checkedAt: 2026-10-21
+    via: page
+    quote: "Deploying a Meteor application is similar to deploying any other websocket-based Node.js app"
+notFound: [runtimeMin, firstRelease, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, supportedVersions, releaseCadence, latestPrereleaseDate, pricingPage, paidEdition, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pluginCount, starters, subreddit, mastodon, bluesky, newsletter, usageShare, reportedInstalls, packagistName, buildCommand, outputDir, renderingModes]
+unreadable:
+  - https://www.meteor.com/ (the page returns a JavaScript shell with only the title in its text)
+notes: >
+  The npm package named by the install docs is "meteor", which the docs describe as an installer: "Do not install the npm Meteor Tool in your project's package.json. This library is just an installer." The npm figure is for that installer package, for 2026-10-12 to 2026-10-18. The GitHub API reports the license as NOASSERTION; the LICENSE file reads "The MIT License (MIT)", recorded from the file. The homepage is taken from the README's "Official Website" link because the site itself did not render as text. The install page says "Make sure you have Node.js v24 or higher installed" for the npm install fallback, while a table there lists the Node.js version each Meteor release bundles and the README badge says Node 22 or higher, so runtimeMin stays unknown. The deployment guide says "meteor build" creates a bundle that "contains a plain Node.js application", started with "node main.js" and a MONGO_URL, and that the environment needs "connectivity to a MongoDB server"; databases and runsAs come from that page. The install page says "meteor create" prompts for "a project name and frontend framework", and the README links tutorials for React, Blaze, Vue, Svelte and Solid. Galaxy (galaxycloud.app) is a hosted platform "By the creators of Meteor" that deploys Meteor, Node, AdonisJS and Python apps from a git push, and the README names it under "Deploy on Galaxy"; no plans or prices are recorded.

@@ -1,0 +1,3 @@
+FoalTS is a Node.js framework for building web applications, written in TypeScript. It bundles a CLI, testing tools, frontend utilities, authentication, an ORM, deployment environments and GraphQL and Swagger API support in one place, so a project does not need to assemble these from separate npm packages. The application returned by its `createApp` function is an ExpressJS application. A project is created with `npx @foal/cli createapp`, and `npm run dev` starts a development server.
+
+For production, the [deployment checklist](https://foalts.org/docs/deployment-and-environments/checklist) describes starting the app with the environment set to production, and covers HTTPS, secrets and production database migrations.
