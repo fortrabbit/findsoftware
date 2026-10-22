@@ -116,8 +116,8 @@ facts:
     via: page
     quote: "Free, open-source software. Optional paid hosting."
   - field: currentMajor
-    value: 0
-    url: https://registry.npmjs.org/primo-cli/latest
+    value: 3
+    url: https://github.com/primocms/primo/releases/tag/v3.3.1
     checkedAt: 2026-10-22
     via: api
   - field: latestReleaseDate
@@ -154,4 +154,4 @@ facts:
 notFound: [firstRelease, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, basedOn, headlessApi, livePreview, i18n, multisite, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, packagistDownloads, pluginDirectory, pluginCount, endoflifeId, discord, subreddit, mastodon, bluesky, x, newsletter, apiLimits, regions]
 unreadable: []
 notes: >
-  Two registry names exist: the npm package primo is an unrelated 2D Canvas engine by another author and is not used; the install docs name primo-cli, whose figures are recorded. The primo-cli package is the CLI and its npm latest is 0.x, while the software is released on GitHub with a v3 tag; currentMajor follows npm latest (0) and the gap is a decision for a reviewer. The Docker image ghcr.io/primocms/primo is the other install route in the README ("Or run it with Docker:"); not recorded as a field. The Node.js requirement on the quickstart is for installing the CLI; the server itself is "One Go binary". The npm package declares node >=18.0.0 while the quick start states 22.13 or later; the page is recorded. The README says "In active development since 2019" and the repository's first release year is not stated, so firstRelease is not found. The pricing page states "Free, open-source software. Optional paid hosting." with hosted plans priced in USD on the page; no price is recorded. The README states "The CLI and local-file workflow are in beta." The license file names Matthew Morris as copyright holder, while npm lists the author as Primo.
+  Two registry names exist: the npm package primo is an unrelated 2D Canvas engine by another author and is not used; the install docs name primo-cli, whose figures are recorded. The primo-cli package is the CLI and its npm latest is 0.x, while the software is released on GitHub with a v3 tag; currentMajor follows the GitHub release (3). The Docker image ghcr.io/primocms/primo is the other install route in the README ("Or run it with Docker:"); not recorded as a field. The Node.js requirement on the quickstart is for installing the CLI; the server itself is "One Go binary". The npm package declares node >=18.0.0 while the quick start states 22.13 or later; the page is recorded. The README says "In active development since 2019" and the repository's first release year is not stated, so firstRelease is not found. The pricing page states "Free, open-source software. Optional paid hosting." with hosted plans priced in USD on the page; no price is recorded. The README states "The CLI and local-file workflow are in beta." The license file names Matthew Morris as copyright holder, while npm lists the author as Primo.

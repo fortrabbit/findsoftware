@@ -57,7 +57,7 @@ export const GET: APIRoute = async ({ props, site }) => {
     hidden
       ? data.criterion
         ? `STUB. This software was checked and fails listing criterion ${label(data.criterion)}, so it is not part of the register, not counted and not indexed. It will be checked again.`
-        : 'STUB. This software has no release or pre-release in four years, so it is not part of the register, not counted and not indexed. It will be checked again.'
+        : 'STUB. This software has no release or pre-release in four years, or its project site no longer shows it, so it is not part of the register, not counted and not indexed. It will be checked again.'
       : '',
     hidden ? '' : undefined,
     `Source: ${origin}${recordPath(provider)}`,

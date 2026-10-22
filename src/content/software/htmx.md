@@ -16,7 +16,7 @@ runsAs:
 installMethod: script tag from a CDN
 licenseModel: open-source
 license: 0BSD
-currentMajor: "2"
+currentMajor: "4"
 latestReleaseDate: 2026-09-22
 githubStargazers: 49577
 npmWeeklyDownloads: 167199
@@ -59,7 +59,7 @@ sources:
     url: https://htmx.org/docs/
     checkedAt: 2026-10-22
   - field: currentMajor
-    url: https://registry.npmjs.org/htmx.org/latest
+    url: https://github.com/bigskysoftware/htmx/releases/tag/v4.0.0
     checkedAt: 2026-10-22
   - field: latestReleaseDate
     url: https://registry.npmjs.org/htmx.org/latest

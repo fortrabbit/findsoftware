@@ -24,7 +24,7 @@ renderingModes:
 installMethod: npm create sphido (create-sphido scaffolder)
 licenseModel: open-source
 license: MIT
-currentMajor: "3"
+currentMajor: "4"
 latestReleaseDate: 2026-08-14
 githubStargazers: 37
 npmWeeklyDownloads: 40
@@ -78,7 +78,7 @@ sources:
     url: https://sphido.cz
     checkedAt: 2026-10-22
   - field: currentMajor
-    url: https://registry.npmjs.org/@sphido/core/latest
+    url: https://github.com/sphido/sphido/releases/tag/v4.1.1
     checkedAt: 2026-10-22
   - field: latestReleaseDate
     url: https://registry.npmjs.org/@sphido/core

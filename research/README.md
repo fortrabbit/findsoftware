@@ -15,7 +15,7 @@ Directories, awesome lists and comparison sites gave the names. They are a disco
 - **homepage**, **repo**: URLs
 - **language**: main implementation language
 - **categories**: semicolon-separated, free words until `fields.yml` sets the vocabulary
-- **status**: `accepted`, `rejected`, `hosted-service`, `discontinued` or `boundary`
+- **status**: `accepted`, `rejected`, `hosted-service`, `discontinued`, `stub` (the project's own site no longer shows the software) or `boundary`
 - **criterion**: for `rejected`, the number of the failing criterion in `AGENTS.md`; for `discontinued`, the signal and the date it was read; for `boundary`, what needs deciding
 - **adoption**: the figure behind criterion 5, with its source, such as `gh 85k stars`
 - **lastRelease**: date of the latest release, shown on the record; it decides nothing on its own

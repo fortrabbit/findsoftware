@@ -493,6 +493,7 @@ const statusOf = {
   'hosted-service': 'hosted-service',
   boundary: 'boundary',
   discontinued: 'discontinued',
+  stub: 'stub',
 };
 
 let written = 0;

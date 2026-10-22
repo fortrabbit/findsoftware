@@ -7,7 +7,7 @@ urls:
 category:
   - backend
 description: Open-source code generator that builds backend services from data models and organization-defined live templates.
-status: active
+status: stub
 maintainer: Amplication LTD
 firstRelease: 2020
 language: typescript
@@ -26,6 +26,9 @@ contributors: 281
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
+  - field: status
+    url: https://amplication.com
+    checkedAt: 2026-10-22
   - field: urls
     url: https://api.github.com/repos/amplication/amplication
     checkedAt: 2026-10-22

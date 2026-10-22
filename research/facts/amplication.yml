@@ -1,9 +1,15 @@
 id: amplication
 name: Amplication
-status: accepted
+status: stub
 checkedAt: 2026-10-22
 description: Open-source code generator that builds backend services from data models and organization-defined live templates.
 facts:
+  - field: status
+    value: stub
+    url: https://amplication.com
+    checkedAt: 2026-10-22
+    via: page
+    quote: "© Overcut 2026"
   - field: repository
     value: https://github.com/amplication/amplication
     url: https://api.github.com/repos/amplication/amplication
@@ -107,4 +113,4 @@ facts:
 notFound: [homepage, maintainerType, pricingPage, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, paidEdition, basedOn, databases, sso, i18n, reportedInstalls, usageShare, npmName, npmWeeklyDownloads, discord, subreddit, pluginDirectory, renderingModes]
 unreadable: [docs.amplication.com, app.amplication.com]
 notes: >
-  homepage is left out: amplication.com now presents the product Overcut ("The Self-Improving Software Factory", footer "© Overcut 2026"), a hosted agent platform, and no longer describes this project; the GitHub homepage field still points to it. The repository is not archived (last release 2026-04, last push 2026-06), and its README still describes Amplication as a backend generator without any statement of an end, a rename or a successor. The sites docs.amplication.com and app.amplication.com, which the README names (the latter as the hosted version of the product), no longer resolve. No page states an end or a relationship to Overcut, so criterion 4 gives no signal and the status stays. The Apache 2.0 text covers everything outside the ee directory and the ee directory carries the Amplication EE License, which requires agreement to the Enterprise Terms. The GitHub API reports the license as NOASSERTION. The major version comes from the latest GitHub release because the project publishes no npm package that the README names. The repository's root package.json sets engines node ^22.13.0 and npm ^9.0.0. The npm package @amplication/cli exists, but the README does not name it as an install step, so no npm figures are recorded. maintainerType is left to the import.
+  homepage is left out: amplication.com now presents the product Overcut ("The Self-Improving Software Factory", footer "© Overcut 2026"), a hosted agent platform, and no longer describes this project; the GitHub homepage field still points to it. The repository is not archived (last release 2026-04, last push 2026-06), and its README still describes Amplication as a backend generator without any statement of an end, a rename or a successor. The sites docs.amplication.com and app.amplication.com, which the README names (the latter as the hosted version of the product), no longer resolve. No page states an end or a relationship to Overcut, so criterion 4 gives no signal; the record is a stub because the project's own site no longer shows the software. The Apache 2.0 text covers everything outside the ee directory and the ee directory carries the Amplication EE License, which requires agreement to the Enterprise Terms. The GitHub API reports the license as NOASSERTION. The major version comes from the latest GitHub release because the project publishes no npm package that the README names. The repository's root package.json sets engines node ^22.13.0 and npm ^9.0.0. The npm package @amplication/cli exists, but the README does not name it as an install step, so no npm figures are recorded. maintainerType is left to the import.

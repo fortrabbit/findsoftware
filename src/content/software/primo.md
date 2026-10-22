@@ -28,7 +28,7 @@ renderingModes:
 installMethod: npm install -g primo-cli, or a Docker image
 licenseModel: open-source
 license: MIT
-currentMajor: "0"
+currentMajor: "3"
 latestReleaseDate: 2026-10-11
 githubStargazers: 2379
 npmWeeklyDownloads: 65
@@ -84,7 +84,7 @@ sources:
     url: https://primo.build/pricing
     checkedAt: 2026-10-22
   - field: currentMajor
-    url: https://registry.npmjs.org/primo-cli/latest
+    url: https://github.com/primocms/primo/releases/tag/v3.3.1
     checkedAt: 2026-10-22
   - field: latestReleaseDate
     url: https://api.github.com/repos/primocms/primo/releases/latest

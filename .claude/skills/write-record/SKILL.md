@@ -42,7 +42,7 @@ Cite a URL without query parameters where one exists: `github.com/<owner>/<repo>
 
 Send a generic User-Agent such as `FindSoftware research`. Never put a name, email address or other personal data in a request.
 
-Do not trust `releases/latest` for the version: monorepos return a sub-package and alphas are often not flagged. Take `currentMajor` from the registry's stable tag (npm `latest`, the highest stable Packagist version).
+Take `currentMajor` from the highest stable GitHub release of the project itself, not `releases/latest`: list the releases, skip prereleases and tags with alpha, beta, rc or next, and in a monorepo count only the tags of the package the install docs name. A project that ships a new major outside npm `latest` is on that major. Fall back to the registry's stable tag (npm `latest`, the highest stable Packagist version) when the repository has no releases, or when the registry's major is higher. A calendar version (2026.8) has no major.
 
 Keep temporary scripts in a scratch directory of your own, named after your first candidate id, never in a shared one.
 
