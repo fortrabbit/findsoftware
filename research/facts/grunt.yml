@@ -1,0 +1,129 @@
+id: grunt
+name: Grunt
+status: accepted
+checkedAt: 2026-10-22
+description: JavaScript task runner that automates repetitive project tasks such as minification, compilation, unit testing and linting, configured through a Gruntfile.
+facts:
+  - field: homepage
+    value: https://gruntjs.com
+    url: https://gruntjs.com/
+    checkedAt: 2026-10-22
+    via: page
+  - field: repository
+    value: https://github.com/gruntjs/grunt
+    url: https://api.github.com/repos/gruntjs/grunt
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://gruntjs.com/getting-started
+    url: https://gruntjs.com/getting-started
+    checkedAt: 2026-10-22
+    via: page
+  - field: categories
+    value: [build-tool]
+    url: https://gruntjs.com/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Grunt: The JavaScript Task Runner"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/gruntjs/grunt
+    checkedAt: 2026-10-22
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://gruntjs.com/getting-started
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Grunt and Grunt plugins are installed and managed via npm"
+  - field: runtimeMin
+    value: "16"
+    url: https://registry.npmjs.org/grunt/latest
+    checkedAt: 2026-10-22
+    via: api
+    quote: '"node":">=16"'
+  - field: installMethod
+    value: npm install grunt --save-dev
+    url: https://gruntjs.com/getting-started
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npm install grunt --save-dev"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/gruntjs/grunt
+    checkedAt: 2026-10-22
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/gruntjs/grunt/blob/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining"
+  - field: maintainer
+    value: OpenJS Foundation
+    url: https://github.com/gruntjs/grunt/blob/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright OpenJS Foundation and other contributors"
+  - field: maintainer
+    value: OpenJS Foundation
+    url: https://gruntjs.com/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Grunt is an OpenJS Foundation project."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/gruntjs
+    checkedAt: 2026-10-22
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/grunt/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-28
+    url: https://registry.npmjs.org/grunt
+    checkedAt: 2026-10-22
+    via: api
+  - field: endoflifeId
+    value: grunt
+    url: https://endoflife.date/api/grunt.json
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 12232
+    url: https://api.github.com/repos/gruntjs/grunt
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 89
+    url: https://api.github.com/repos/gruntjs/grunt/contributors?anon=true&per_page=100
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: grunt
+    url: https://registry.npmjs.org/grunt/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 733544
+    url: https://api.npmjs.org/downloads/point/last-week/grunt
+    checkedAt: 2026-10-22
+    via: api
+  - field: x
+    value: https://twitter.com/gruntjs/
+    url: https://gruntjs.com/
+    checkedAt: 2026-10-22
+    via: page
+  - field: pluginDirectory
+    value: https://gruntjs.com/plugins
+    url: https://gruntjs.com/
+    checkedAt: 2026-10-22
+    via: page
+
+notFound: [firstRelease, hqCountry, parent, basedOn, forkOf, successorOf, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, paidEditions, pricingPage, freeTier, usageShare, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, renderingModes, supportedVersions, eolPolicy, releaseCadence, wikidata, buildCommand, outputDir, runsAs]
+unreadable: []
+notes: >
+  The homepage states "V1.6.1 is the current version" while the npm latest tag is 1.6.3 (published 2026-07-28); the GitHub latest release is v1.6.1 (2023-01-31), so latestReleaseDate comes from the npm registry. The getting-started page still says "Grunt 0.4.x requires stable Node.js versions >= 0.8.0", which describes a version the endoflife.date entry lists as past end of life; runtimeMin comes from the npm engines field instead. endoflife.date lists the 1.6 cycle as not end of life. The README names HeroDevs as a commercial support provider for past versions; that is third-party support, not an edition, so paidEditions stays unknown. The copyright line in LICENSE-MIT names two individuals, while the homepage names the OpenJS Foundation.
+  The homepage describes tasks such as minification, compilation, unit testing and linting, each run through a plugin published on npm. The getting-started page explains the Gruntfile that configures the tasks, and grunt-cli, which runs the version of Grunt installed next to a Gruntfile. The README table marks 1.6 as supported and 1.5 and older as not supported.

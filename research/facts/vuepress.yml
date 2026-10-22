@@ -1,0 +1,139 @@
+id: vuepress
+name: VuePress
+status: accepted
+checkedAt: 2026-10-22
+description: Vue-powered static site generator that renders Markdown content into pre-rendered HTML pages.
+facts:
+  - field: homepage
+    value: https://vuepress.vuejs.org
+    url: https://api.github.com/repos/vuepress/core
+    checkedAt: 2026-10-22
+    via: api
+  - field: repository
+    value: https://github.com/vuepress/core
+    url: https://api.github.com/repos/vuepress/core
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://vuepress.vuejs.org
+    url: https://github.com/vuepress/core/blob/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Documentation https://vuepress.vuejs.org"
+  - field: maintainer
+    value: VuePress Community
+    url: https://vuepress.vuejs.org
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright © 2018-present VuePress Community"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/vuepress
+    checkedAt: 2026-10-22
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://api.github.com/repos/vuepress/core
+    checkedAt: 2026-10-22
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/vuepress/core
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://vuepress.vuejs.org
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Vue-powered Static Site Generator"
+  - field: basedOn
+    value: [vue]
+    url: https://vuepress.vuejs.org
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Vue-powered Static Site Generator"
+  - field: templating
+    value: [vue]
+    url: https://vuepress.vuejs.org
+    checkedAt: 2026-10-22
+    via: page
+    quote: "use Vue components in markdown"
+  - field: contentStore
+    value: flat-file
+    url: https://vuepress.vuejs.org
+    checkedAt: 2026-10-22
+    via: page
+    quote: "markdown-centered project structure"
+  - field: runtime
+    value: [node]
+    url: https://registry.npmjs.org/vuepress/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: runtimeMin
+    value: "8"
+    url: https://registry.npmjs.org/vuepress/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: renderingModes
+    value: [static, spa]
+    url: https://vuepress.vuejs.org
+    checkedAt: 2026-10-22
+    via: page
+    quote: "VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded."
+  - field: runsAs
+    value: [static]
+    url: https://vuepress.vuejs.org
+    checkedAt: 2026-10-22
+    via: page
+    quote: "generates pre-rendered static HTML for each page"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/vuepress/core
+    checkedAt: 2026-10-22
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/vuepress/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2023-08-14
+    url: https://registry.npmjs.org/vuepress
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-07-24
+    url: https://registry.npmjs.org/vuepress
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 2836
+    url: https://api.github.com/repos/vuepress/core
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 75
+    url: https://api.github.com/repos/vuepress/core/contributors?per_page=1&anon=true
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: vuepress
+    url: https://registry.npmjs.org/vuepress/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 49725
+    url: https://api.npmjs.org/downloads/point/last-week/vuepress
+    checkedAt: 2026-10-22
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://registry.npmjs.org/vuepress
+    checkedAt: 2026-10-22
+    via: api
+notFound: [pricingPage, hqCountry, parent, forkOf, successorOf, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, reportedInstalls, usageShare, paidEdition, wikidata, headlessApi, sso, i18n, userRoles, livePreview, multisite, discord, forum]
+unreadable: []
+notes: >
+  The documentation site describes the 2.x release candidate; facts that hold for both lines (rendering, templating, content in Markdown) are recorded from it. Facts that differ between the lines are left out of fields: the docs name Vite as the recommended bundler with Webpack also supported, install with "npm init vuepress vuepress-starter" and list deployment guides for GitHub Pages, GitLab Pages, Heroku, Netlify and Vercel, all 2.x docs, while the 1.x docs on v1.vuepress.vuejs.org say "Vue + webpack" and Node.js 10+. So installMethod stays unknown.
+  The repository README says "Status: Release Candidate". The npm latest dist-tag is 1.9.10 (published 2023-08-14); the next dist-tag is 2.0.0-rc.31 (published 2026-07-24), and the documentation site describes the 2.x line. The major version, runtimeMin and latestReleaseDate follow the latest dist-tag as the schema says, so they describe 1.9.10, while the docs cite Node.js v20.9.0+ for the 2.x line. The reviewer decides whether the record follows the release candidate. The README points v1 users to a migration guide on the docs site. The README names vuepress/ecosystem for plugins and themes, which is not recorded as pluginDirectory because it is not on a page of this project's site. The npm package page shows an earlier version dated 2017-12-12, so firstRelease is 2017, while the npm package record was created 2018-04-12. The Wikidata entry for VuePress points to an older source repository and is not used. The npm weekly figure is for 2026-10-12 to 2026-10-18; the CSV note of 52k per week is an older reading. VitePress describes itself on its own site as the successor of VuePress 1; that is the VitePress record's fact, not this one.

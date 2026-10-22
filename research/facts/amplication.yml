@@ -1,0 +1,110 @@
+id: amplication
+name: Amplication
+status: accepted
+checkedAt: 2026-10-22
+description: Open-source code generator that builds backend services from data models and organization-defined live templates.
+facts:
+  - field: repository
+    value: https://github.com/amplication/amplication
+    url: https://api.github.com/repos/amplication/amplication
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://github.com/amplication/amplication
+    url: https://github.com/amplication/amplication/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "quickly build, maintain, and scale backend services"
+  - field: categories
+    value: [code-generator, backend]
+    url: https://github.com/amplication/amplication/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "quickly build, maintain, and scale backend services"
+  - field: maintainer
+    value: Amplication LTD
+    url: https://github.com/amplication/amplication/blob/master/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) 2022-present Amplication LTD."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/amplication
+    checkedAt: 2026-10-22
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/amplication/amplication/languages
+    checkedAt: 2026-10-22
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://github.com/amplication/amplication/blob/master/package.json
+    checkedAt: 2026-10-22
+    via: page
+    quote: "\"node\": \"^22.13.0\""
+  - field: runtimeMin
+    value: "22"
+    url: https://github.com/amplication/amplication/blob/master/package.json
+    checkedAt: 2026-10-22
+    via: page
+    quote: "\"node\": \"^22.13.0\""
+  - field: runsAs
+    value: [local]
+    url: https://github.com/amplication/amplication/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Amplication can be run locally for code generation purposes or contributions"
+  - field: installMethod
+    value: git clone and npm run setup:dev
+    url: https://github.com/amplication/amplication/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Run the setup script, which takes care of installing dependencies, building packages, and setting up the workspace"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/amplication/amplication/blob/master/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Content outside of the above mentioned directories or restrictions above is available under the \"Apache License 2.0\""
+  - field: license
+    value: Amplication EE License
+    url: https://github.com/amplication/amplication/blob/master/ee/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The Amplication EE License applies only to the part of this Software residing under the"
+  - field: licenseModel
+    value: open-core
+    url: https://github.com/amplication/amplication/blob/master/ee/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The Amplication EE License applies only to the part of this Software residing under the"
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/amplication/amplication/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-04-02
+    url: https://api.github.com/repos/amplication/amplication/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: firstRelease
+    value: 2020
+    url: https://api.github.com/repos/amplication/amplication/releases
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 16009
+    url: https://api.github.com/repos/amplication/amplication
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 281
+    url: https://api.github.com/repos/amplication/amplication/contributors
+    checkedAt: 2026-10-22
+    via: api
+notFound: [homepage, maintainerType, pricingPage, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, paidEdition, basedOn, databases, sso, i18n, reportedInstalls, usageShare, npmName, npmWeeklyDownloads, discord, subreddit, pluginDirectory, renderingModes]
+unreadable: [docs.amplication.com, app.amplication.com]
+notes: >
+  homepage is left out: amplication.com now presents the product Overcut ("The Self-Improving Software Factory", footer "© Overcut 2026"), a hosted agent platform, and no longer describes this project; the GitHub homepage field still points to it. The repository is not archived (last release 2026-04, last push 2026-06), and its README still describes Amplication as a backend generator without any statement of an end, a rename or a successor. The sites docs.amplication.com and app.amplication.com, which the README names (the latter as the hosted version of the product), no longer resolve. No page states an end or a relationship to Overcut, so criterion 4 gives no signal and the status stays. The Apache 2.0 text covers everything outside the ee directory and the ee directory carries the Amplication EE License, which requires agreement to the Enterprise Terms. The GitHub API reports the license as NOASSERTION. The major version comes from the latest GitHub release because the project publishes no npm package that the README names. The repository's root package.json sets engines node ^22.13.0 and npm ^9.0.0. The npm package @amplication/cli exists, but the README does not name it as an install step, so no npm figures are recorded. maintainerType is left to the import.

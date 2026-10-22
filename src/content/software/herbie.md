@@ -19,8 +19,6 @@ runtimeMin: php 8.0
 contentStore:
   - flat-file
 templating: twig
-runsAs:
-  - local
 installMethod: composer create-project, docker compose
 licenseModel: open-source
 license: BSD-3-Clause
@@ -62,9 +60,6 @@ sources:
     url: https://herbie.tebe.ch/
     checkedAt: 2026-10-20
   - field: installMethod
-    url: https://herbie.tebe.ch/doc/first-steps/installation
-    checkedAt: 2026-10-20
-  - field: runsAs
     url: https://herbie.tebe.ch/doc/first-steps/installation
     checkedAt: 2026-10-20
   - field: license

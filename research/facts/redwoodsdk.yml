@@ -1,0 +1,130 @@
+id: redwoodsdk
+name: RedwoodSDK
+status: accepted
+checkedAt: 2026-10-22
+description: Server-first React framework that runs on the Cloudflare platform and starts as a Vite plugin.
+facts:
+  - field: homepage
+    value: https://rwsdk.com
+    url: https://api.github.com/repos/redwoodjs/sdk
+    checkedAt: 2026-10-22
+    via: api
+  - field: repository
+    value: https://github.com/redwoodjs/sdk
+    url: https://github.com/redwoodjs/sdk
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://docs.rwsdk.com
+    url: https://docs.rwsdk.com/getting-started/quick-start
+    checkedAt: 2026-10-22
+    via: page
+    quote: "In this quick start you'll go from zero to request/response in seconds"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/redwoodjs
+    checkedAt: 2026-10-22
+    via: api
+  - field: maintainer
+    value: RedwoodJS Inc
+    url: https://raw.githubusercontent.com/redwoodjs/sdk/main/LICENSE.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) 2025 RedwoodJS Inc"
+  - field: firstRelease
+    value: 2025
+    url: https://registry.npmjs.org/rwsdk
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [framework, fullstack]
+    url: https://raw.githubusercontent.com/redwoodjs/sdk/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "RedwoodSDK is a server-first React framework."
+  - field: basedOn
+    value: [react]
+    url: https://raw.githubusercontent.com/redwoodjs/sdk/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "RedwoodSDK is a server-first React framework."
+  - field: basedOn
+    value: [vite]
+    url: https://raw.githubusercontent.com/redwoodjs/sdk/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "It starts as a Vite plugin"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/redwoodjs/sdk
+    checkedAt: 2026-10-22
+    via: api
+  - field: runtime
+    value: workerd
+    url: https://raw.githubusercontent.com/redwoodjs/sdk/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "(For Cloudflare (workerd) only)"
+  - field: installMethod
+    value: npx create-rwsdk
+    url: https://raw.githubusercontent.com/redwoodjs/sdk/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npx create-rwsdk my-project-name"
+  - field: renderingModes
+    value: [server]
+    url: https://docs.rwsdk.com/getting-started/quick-start
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The JSX will be rendered on the server and sent to the client as HTML."
+  - field: databases
+    value: [sqlite]
+    url: https://docs.rwsdk.com/experimental/database/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The SDK includes a built-in database solution using SQLite Durable Objects"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/redwoodjs/sdk
+    checkedAt: 2026-10-22
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/redwoodjs/sdk/main/LICENSE.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/rwsdk/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-23
+    url: https://api.github.com/repos/redwoodjs/sdk/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 1719
+    url: https://api.github.com/repos/redwoodjs/sdk
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 61
+    url: https://api.github.com/repos/redwoodjs/sdk/contributors
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: rwsdk
+    url: https://registry.npmjs.org/rwsdk/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 6695
+    url: https://api.npmjs.org/downloads/point/last-week/rwsdk
+    checkedAt: 2026-10-22
+    via: api
+notFound: [hqCountry, parent, wikidata, pricingPage, paidEdition, runtimeMin, runsAs, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, adminUi, headlessApi, sso]
+unreadable: []
+notes: >
+  The package named by the install docs is create-rwsdk, a scaffolder; the core package rwsdk is recorded, and create-rwsdk had 76 downloads in the same week. The rwsdk.com footer reads "Copyright © 2026 RedwoodJS Inc. All rights reserved." and the README badge reads "MADE BY Redwood Inc."; the license file gives "RedwoodJS Inc", which is recorded. The README says the framework is "For Cloudflare (workerd) only", and the docs say RedwoodSDK "is built for the Cloudflare Development Platform"; the deploy command runs on Cloudflare. The quick start lists "Node.js" under system requirements without a version, so runtimeMin is not recorded (the create-rwsdk scaffolder declares node >=22 in its engines, which is not the framework's own requirement). The hosting page (docs.rwsdk.com/core/hosting) says "Compute (Workers) for serverless functions" and "You do not need to use Cloudflare's Developer Platform, you can use any bare-metal hosting provider you want", while the README says "For Cloudflare (workerd) only"; the two statements differ in scope, so runsAs is not recorded and runtime keeps the README's workerd. The databases fact is the experimental built-in database; the docs also integrate Cloudflare D1 through Drizzle, which is not recorded as a database engine. The README's "Big News" section announces RedwoodSDK as a launch of its own; no successor relation is recorded here, and the RedwoodJS candidate's notes cover the relation between the two. Field kinds coined here: none.

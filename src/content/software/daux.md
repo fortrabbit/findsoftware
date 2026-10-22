@@ -14,6 +14,7 @@ language: php
 runtime:
   - php
 hosting:
+  - php
   - static
 runtimeMin: php 8.4
 contentStore:

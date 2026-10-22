@@ -1,0 +1,1 @@
+create-t3-app is an interactive command-line tool that scaffolds a full-stack, typesafe Next.js app. It asks which optional libraries to include. The options it lists are tRPC, Prisma, Drizzle, NextAuth.js and Tailwind CSS. The deployment guide covers Vercel, Netlify and Docker.

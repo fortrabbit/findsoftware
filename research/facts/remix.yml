@@ -1,0 +1,131 @@
+id: remix
+name: Remix
+status: accepted
+checkedAt: 2026-10-22
+description: Full-stack web framework built on Web APIs that combines routing, data, UI and asset compilation in one stack.
+facts:
+  - field: homepage
+    value: https://remix.run
+    url: https://api.github.com/repos/remix-run/remix
+    checkedAt: 2026-10-22
+    via: api
+  - field: repository
+    value: https://github.com/remix-run/remix
+    url: https://github.com/remix-run/remix
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://guides.remix.run
+    url: https://guides.remix.run/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Learn Remix from the request up."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/remix-run/remix
+    checkedAt: 2026-10-22
+    via: api
+  - field: maintainer
+    value: Shopify, Inc.
+    url: https://remix.run/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "©2026 Shopify, Inc."
+  - field: categories
+    value: [framework, fullstack]
+    url: https://remix.run/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The fully-stacked web framework"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/remix-run/remix
+    checkedAt: 2026-10-22
+    via: api
+  - field: runtime
+    value: [node, bun, deno, workerd]
+    url: https://raw.githubusercontent.com/remix-run/remix/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Remix packages work seamlessly across Node.js, Bun, Deno, Cloudflare Workers"
+  - field: runtimeMin
+    value: 24
+    url: https://registry.npmjs.org/remix/3.0.0
+    checkedAt: 2026-10-22
+    via: api
+  - field: installMethod
+    value: npx remix new
+    url: https://raw.githubusercontent.com/remix-run/remix/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "To create a new Remix app with the CLI, use `npx remix new`"
+  - field: renderingModes
+    value: [server]
+    url: https://remix.run/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "return standard Responses for HTML, JSON, redirects, files, and streams."
+  - field: runsAs
+    value: [always-on]
+    url: https://guides.remix.run/production/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Initialize before listening, then shut down once"
+  - field: databases
+    value: [mysql]
+    url: https://raw.githubusercontent.com/remix-run/remix/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "MySQL database implementation for remix/data-table"
+  - field: databases
+    value: [postgres]
+    url: https://raw.githubusercontent.com/remix-run/remix/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "PostgreSQL database implementation for remix/data-table"
+  - field: databases
+    value: [sqlite]
+    url: https://raw.githubusercontent.com/remix-run/remix/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "SQLite database implementation for remix/data-table"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/remix-run/remix
+    checkedAt: 2026-10-22
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/remix-run/remix/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 3
+    url: https://registry.npmjs.org/remix/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-01
+    url: https://api.github.com/repos/remix-run/remix/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 33425
+    url: https://api.github.com/repos/remix-run/remix
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: remix
+    url: https://registry.npmjs.org/remix/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 35916
+    url: https://api.npmjs.org/downloads/point/last-week/remix
+    checkedAt: 2026-10-22
+    via: api
+notFound: [parent, hqCountry, wikidata, pricingPage, paidEdition, endoflifeId, contributors, usageShare, reportedInstalls, firstRelease, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, adminUi, headlessApi, sso]
+unreadable: []
+notes: >
+  The CSV row gives the category react and the npm figure 327k per week for @remix-run/react; neither matches the record. The repository and the npm package remix are Remix 3 (remix@3.0.0, released 2026-10-01). The Remix 3 blog post says "Remix 3 is a reimagining of what a web framework can be" and that the project is "building our own component model"; it also says the component runtime starts "with a fork of Preact". Remix 3 is a set of single-purpose packages built on Web APIs, distributed as the single remix package (README: "Remix will be distributed as a single `remix` package"), with its own component runtime; the README and homepage name no React dependency, so basedOn is not recorded; the reviewer decides whether the Preact fork is a basedOn fact for the component runtime. The blog states that Remix v1 and v2 moved "from Remix directly into React Router v7", which is a named successor for the older line, not an end of the Remix 3 project; the record stays accepted. The npm package named by the install docs is remix itself (the CLI is in it), so no core-package substitution applies. The npm name remix has a version 0.0.1 published in 2014, before the repository was created in 2020, so firstRelease is not recorded. The production chapter says "This chapter is unfinished", which is why runsAs has one value only. The docs root at remix.run/docs redirects to guides.remix.run. The Node engines field is >=24.3.0 in the 3.0.0 package. The README opens "This is the source repository for Remix 3. It is under active development." The LICENSE copyright line names Shopify Inc., which the footer of remix.run repeats as the maintainer; no page states an ownership relation, so parent is not recorded. Field kinds coined here: none.

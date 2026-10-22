@@ -1,0 +1,118 @@
+id: retype
+name: Retype
+status: accepted
+checkedAt: 2026-10-22
+description: Static site generator that builds documentation and websites from Markdown files.
+facts:
+  - field: homepage
+    value: https://retype.com
+    url: https://api.github.com/repos/retypeapp/retype
+    checkedAt: 2026-10-22
+    via: api
+  - field: repository
+    value: https://github.com/retypeapp/retype
+    url: https://github.com/retypeapp/retype
+    checkedAt: 2026-10-22
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/retypeapp/retype
+    checkedAt: 2026-10-22
+    via: api
+  - field: maintainer
+    value: Retype, Inc.
+    url: https://raw.githubusercontent.com/retypeapp/retype/main/LICENSE.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "RETYPE, INC."
+  - field: firstRelease
+    value: 2021
+    url: https://registry.npmjs.org/retypeapp
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [docs-generator, static-site-generator]
+    url: https://github.com/retypeapp/retype/blob/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Markdown-first documentation website builder"
+  - field: installMethod
+    value: npm, yarn, dotnet tool
+    url: https://github.com/retypeapp/retype/blob/main/guides/installation.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "You only need one of the three package managers as a prerequisite"
+  - field: contentStore
+    value: flat-file
+    url: https://github.com/retypeapp/retype/blob/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Your content lives in plain Markdown files that you own and control"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/retypeapp/retype/blob/main/guides/getting-started.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "To generate the static website files, run the following command:"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/retypeapp/retype/blob/main/guides/getting-started.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "If you have your own web server, you can FTP or copy the files"
+  - field: license
+    value: Retype Software License Agreement
+    url: https://raw.githubusercontent.com/retypeapp/retype/main/LICENSE.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Retype Software License Agreement"
+  - field: paidEdition
+    value: Retype Pro
+    url: https://github.com/retypeapp/retype/blob/main/pro/pro.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Build more pages and unlock powerful Pro only features."
+  - field: pricingPage
+    value: https://retype.com/pro/
+    url: https://retype.com/pro/
+    checkedAt: 2026-10-22
+    via: page
+  - field: currentMajor
+    value: 4
+    url: https://registry.npmjs.org/retypeapp/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-25
+    url: https://api.github.com/repos/retypeapp/retype/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-06-08
+    url: https://api.github.com/repos/retypeapp/retype/releases
+    checkedAt: 2026-10-22
+    via: api
+  - field: sourcePublic
+    value: false
+    url: https://api.github.com/repos/retypeapp/retype/contents
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 1340
+    url: https://api.github.com/repos/retypeapp/retype
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: retypeapp
+    url: https://registry.npmjs.org/retypeapp/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 4776
+    url: https://api.npmjs.org/downloads/point/last-week/retypeapp
+    checkedAt: 2026-10-22
+    via: api
+notFound: [language, runtime, runtimeMin, hqCountry, parent, wikidata, endoflifeId, usageShare, reportedInstalls, contributors, adminUi, headlessApi, sso, databases, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: []
+notes: >
+  The CSV row lists the language as blank and the repository language as CSS. The repository holds the documentation site, its templates and the license; the engine is not in it, and the install commands name npm, yarn and the dotnet tool, so the implementation language is not recorded. sourcePublic is false because the repository holds no engine source; the npm package ships a bin named "retype.js", which the reviewer may weigh against that. The license is a proprietary agreement: the Free License "may contain restricted functionality", and a Retype Key removes the restrictions; the license is recorded as the agreement's own name, not an SPDX id, and GitHub reports it as NOASSERTION. The homepage is retype.com; the pricing page is retype.com/pro/ and no prices are recorded. The GitHub description says "Made in Canada"; that is a statement of origin, not of the company's headquarters, so hqCountry is not recorded. The npm package named by the install docs is retypeapp; it is not a create-* scaffolder. The latest prerelease v4.7.0-preview (2026-06-08) is newer than v4.6.0 (2026-05-25). Criterion 2 holds: the installation guide lists npm, yarn and dotnet tool installs of retypeapp, and the npm package (a bin named retype.js, license "SEE LICENSE IN LICENSE") installs the CLI. The agreement says the Free License permits use "for Your internal evaluation, review, and production purposes" and that without a Retype Key the Software "may contain restricted functionality". Field kinds coined here: none.

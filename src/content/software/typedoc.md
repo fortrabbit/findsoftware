@@ -12,8 +12,6 @@ status: active
 language: typescript
 runtime:
   - node
-hosting:
-  - node
 runtimeMin: node 18
 runsAs:
   - local

@@ -1,0 +1,1 @@
+JSDoc is an API documentation generator for JavaScript. It scans JavaScript source code and generates an HTML documentation website from it, as its [getting started guide](https://jsdoc.app/about-getting-started.html) describes. The Apache-2.0 licensed project is copyright Michael Mathews and the contributors to JSDoc, according to its README.

@@ -84,12 +84,6 @@ facts:
     checkedAt: 2026-10-20
     via: page
     quote: "composer create-project getherbie/start-website mywebsite"
-  - field: runsAs
-    value: [local]
-    url: https://herbie.tebe.ch/doc/first-steps/installation
-    checkedAt: 2026-10-20
-    via: page
-    quote: "start the internal PHP webserver"
   - field: license
     value: BSD-3-Clause
     url: https://raw.githubusercontent.com/getherbie/herbie/v2.2.0/composer.json
@@ -121,7 +115,7 @@ facts:
     url: https://packagist.org/packages/getherbie/herbie.json
     checkedAt: 2026-10-20
     via: api
-notFound: [firstRelease, hqCountry, endoflifeId, pricingPage, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, parent, forkOf, successorOf, alternativeTo, wikidata, i18n, multisite, adminUi, userRoles, sso, importsFrom, livePreview, headlessApi, renderingModes, basedOn]
+notFound: [firstRelease, hqCountry, endoflifeId, pricingPage, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, parent, forkOf, successorOf, alternativeTo, wikidata, i18n, multisite, adminUi, userRoles, sso, importsFrom, livePreview, headlessApi, renderingModes, basedOn, runsAs]
 unreadable: ["https://herbie.tebe.ch/docs (404)", "https://herbie.tebe.ch/docs/installation (404)"]
 notes: >
   The GitHub API reports the license as NOASSERTION; the composer.json and LICENCE.md files both state BSD-3-Clause, so the license fact cites them. The default branch is 2.x. The install page names getherbie/start-website as the template package; the Packagist figures are for the core package getherbie/herbie, as the rule for registry figures requires. Packagist reports 6 monthly downloads alongside the 2267 total; only the total is recorded. The installation page shows the internal PHP server and Docker Compose, both local setups; it does not document a live deployment, so runsAs records only what it shows, and a reviewer should decide whether per-request applies. The imprint lists a postal address for the maintainer; the address is not recorded. The homepage says supported PHP versions are 8.0 through 8.3. The last commit shown on the homepage is dated 23.05.2025, the same day as the last push.

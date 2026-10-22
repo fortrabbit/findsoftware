@@ -1,0 +1,135 @@
+id: fastify
+name: Fastify
+status: accepted
+checkedAt: 2026-10-22
+description: Node.js web framework for building HTTP APIs and web applications, with a plugin architecture and schema-based validation.
+facts:
+  - field: homepage
+    value: https://www.fastify.dev
+    url: https://www.fastify.dev/
+    checkedAt: 2026-10-22
+    via: page
+  - field: repository
+    value: https://github.com/fastify/fastify
+    url: https://api.github.com/repos/fastify/fastify
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://fastify.dev/docs/latest/
+    url: https://fastify.dev/docs/latest/
+    checkedAt: 2026-10-22
+    via: page
+  - field: categories
+    value: [web-framework]
+    url: https://www.fastify.dev/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "A fast, low-overhead web framework for Node.js."
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/fastify/fastify
+    checkedAt: 2026-10-22
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://www.fastify.dev/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Node.js 20+"
+  - field: runtimeMin
+    value: "20"
+    url: https://www.fastify.dev/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Node.js 20+"
+  - field: installMethod
+    value: npm install fastify
+    url: https://www.fastify.dev/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npm install fastify"
+  - field: runsAs
+    value: [always-on]
+    url: https://fastify.dev/docs/latest/Guides/Serverless/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "where the server can handle multiple requests at the same time"
+  - field: runsAs
+    value: [per-request]
+    url: https://fastify.dev/docs/latest/Guides/Serverless/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "When executed in your lambda function we do not need to listen to a specific port"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/fastify/fastify
+    checkedAt: 2026-10-22
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/fastify/fastify/blob/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) 2016-present The Fastify team"
+  - field: maintainer
+    value: OpenJS Foundation
+    url: https://www.fastify.dev/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Fastify is an OpenJS Foundation project"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/fastify
+    checkedAt: 2026-10-22
+    via: api
+  - field: currentMajor
+    value: 5
+    url: https://registry.npmjs.org/fastify/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-13
+    url: https://api.github.com/repos/fastify/fastify/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 37281
+    url: https://api.github.com/repos/fastify/fastify
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: "100 or more (first page of the API list, no pagination)"
+    url: https://api.github.com/repos/fastify/fastify/contributors?anon=true&per_page=100
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: fastify
+    url: https://registry.npmjs.org/fastify/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 9325750
+    url: https://api.npmjs.org/downloads/point/last-week/fastify
+    checkedAt: 2026-10-22
+    via: api
+  - field: x
+    value: https://x.com/fastifyjs
+    url: https://www.fastify.dev/
+    checkedAt: 2026-10-22
+    via: page
+  - field: discord
+    value: https://discord.gg/fastify
+    url: https://www.fastify.dev/
+    checkedAt: 2026-10-22
+    via: page
+  - field: pluginDirectory
+    value: https://fastify.dev/ecosystem/
+    url: https://www.fastify.dev/
+    checkedAt: 2026-10-22
+    via: page
+
+notFound: [firstRelease, hqCountry, parent, basedOn, forkOf, successorOf, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, paidEditions, pricingPage, freeTier, usageShare, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, endoflifeId, renderingModes, supportedVersions, eolPolicy, releaseCadence, wikidata, buildCommand, outputDir]
+unreadable: []
+notes: >
+  The serverless guide lists AWS Lambda, Google Cloud Functions, Google Cloud Run, Vercel, Netlify and Firebase Functions as targets, with the guide saying Cloud Run, AWS Fargate, Azure Container Instances and Vercel are where the server handles multiple requests at once; both run modes are recorded because the guide documents both. The homepage shows "Node.js 20+" next to the v5.x line. The npm package declares no engines field, so runtimeMin comes from the homepage. The homepage names the OpenJS Foundation as the project's home; the copyright line in LICENSE names "The Fastify team". Its homepage shows a 6.0.0-alpha.5 pre-release dated before the 5.12.7 release, so no latestPrereleaseDate is recorded. The Fastify Node.js ecosystem plugins (such as @fastify/static) are part of the ecosystem page, not separate records.
+  The getting-started guide shows routes and plugins registered on an instance and a call to listen with a port. The homepage describes the framework as built on a plugin architecture and lists plugins such as @fastify/static and @fastify/rate-limit.

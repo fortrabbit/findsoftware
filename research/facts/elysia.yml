@@ -1,0 +1,128 @@
+id: elysia
+name: Elysia
+status: accepted
+checkedAt: 2026-10-22
+description: TypeScript web framework for building backend servers, optimized for Bun and also runnable on Node.js.
+facts:
+  - field: homepage
+    value: https://elysiajs.com
+    url: https://elysiajs.com
+    checkedAt: 2026-10-22
+    via: page
+  - field: repository
+    value: https://github.com/elysiajs/elysia
+    url: https://api.github.com/repos/elysiajs/elysia
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://elysiajs.com/quick-start.html
+    url: https://elysiajs.com/quick-start.html
+    checkedAt: 2026-10-22
+    via: page
+  - field: maintainer
+    value: saltyAom
+    url: https://github.com/elysiajs/elysia/blob/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright 2022 saltyAom"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/elysiajs
+    checkedAt: 2026-10-22
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/elysiajs/elysia
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [web-framework]
+    url: https://elysiajs.com/at-glance.html
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Elysia is an ergonomic web framework for building backend servers with Bun."
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/elysiajs/elysia
+    checkedAt: 2026-10-22
+    via: api
+  - field: runtime
+    value: [bun]
+    url: https://elysiajs.com/quick-start.html
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Elysia is optimized for Bun"
+  - field: runtime
+    value: [node]
+    url: https://elysiajs.com/integrations/node.html
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Elysia provides a runtime adapter to run Elysia on multiple runtimes, including Node.js."
+  - field: installMethod
+    value: bun create elysia
+    url: https://elysiajs.com/quick-start.html
+    checkedAt: 2026-10-22
+    via: page
+    quote: "starting a new Elysia server using bun create elysia"
+  - field: runsAs
+    value: [always-on]
+    url: https://elysiajs.com/patterns/deploy.html
+    checkedAt: 2026-10-22
+    via: page
+    quote: "portable binary server which we can run to start our server"
+  - field: deployTargets
+    value: Vercel
+    url: https://elysiajs.com/integrations/vercel.html
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Elysia can be deployed on Vercel with zero configuration"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/elysiajs/elysia
+    checkedAt: 2026-10-22
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/elysiajs/elysia/blob/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/elysia/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-26
+    url: https://api.github.com/repos/elysiajs/elysia/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 19274
+    url: https://api.github.com/repos/elysiajs/elysia
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: "100 or more (first page of the API list, no pagination)"
+    url: https://api.github.com/repos/elysiajs/elysia/contributors?anon=true&per_page=100
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: elysia
+    url: https://registry.npmjs.org/elysia/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 973594
+    url: https://api.npmjs.org/downloads/point/last-week/elysia
+    checkedAt: 2026-10-22
+    via: api
+  - field: pluginDirectory
+    value: https://elysiajs.com/plugins/overview.html
+    url: https://elysiajs.com/quick-start.html
+    checkedAt: 2026-10-22
+    via: page
+notFound: [firstRelease, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginCount, starters, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, buildCommand, outputDir, renderingModes, runtimeMin]
+unreadable: []
+notes: >
+  The npm package elysia publishes no engines field, so runtimeMin is unknown; the Bun and Node versions the framework requires are not stated on the pages read. The Node.js adapter is a separate package, @elysia/node, named on the Node integration page; the record uses the core package for registry figures. The deploy page names a Bun single-binary build with an AVX2 requirement and a Node-compatible JavaScript bundle; neither is recorded as a field. The integration pages (Astro, Nuxt, SvelteKit, Next.js and others) describe how Elysia is used with other frameworks; Elysia is not built on them, so no basedOn is set. The Vercel page says Elysia deploys there with zero configuration (deployTargets is not a dictionary field, so it is not recorded). The Vercel page describes deployment as a Vercel Function. Its rendering mode and per-request behavior are not stated, so runsAs records only the server behavior the deploy page states.

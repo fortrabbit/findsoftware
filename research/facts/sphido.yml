@@ -1,0 +1,130 @@
+id: sphido
+name: Sphido
+status: accepted
+checkedAt: 2026-10-22
+description: Static site generator built from two core functions, getPages() and allPages(), that read and iterate a folder of pages.
+facts:
+  - field: homepage
+    value: https://sphido.cz
+    url: https://api.github.com/repos/sphido/sphido
+    checkedAt: 2026-10-22
+    via: api
+  - field: repository
+    value: https://github.com/sphido/sphido
+    url: https://api.github.com/repos/sphido/sphido
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://sphido.cz/create.html
+    url: https://sphido.cz/create.html
+    checkedAt: 2026-10-22
+    via: page
+  - field: maintainer
+    value: Roman Ožana
+    url: https://github.com/sphido/sphido/blob/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) Roman Ožana"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/sphido
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://sphido.cz
+    checkedAt: 2026-10-22
+    via: page
+    quote: "A rocket fast, lightweight static site generator"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/sphido/sphido
+    checkedAt: 2026-10-22
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://sphido.cz/core.html
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Requires Node.js 22 or newer."
+  - field: runtimeMin
+    value: "22"
+    url: https://sphido.cz/core.html
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Requires Node.js 22 or newer."
+  - field: renderingModes
+    value: [static]
+    url: https://sphido.cz
+    checkedAt: 2026-10-22
+    via: page
+    quote: "A rocket fast, lightweight static site generator"
+  - field: runsAs
+    value: [local]
+    url: https://sphido.cz/create.html
+    checkedAt: 2026-10-22
+    via: page
+    quote: "build the site into public/"
+  - field: installMethod
+    value: npm create sphido (create-sphido scaffolder)
+    url: https://sphido.cz/create.html
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npm create sphido my-blog"
+  - field: contentStore
+    value: flat-file
+    url: https://sphido.cz/core.html
+    checkedAt: 2026-10-22
+    via: page
+    quote: "scans directories for all *.md and *.html files"
+  - field: templating
+    value: [javascript template literals]
+    url: https://sphido.cz/cookbook.html
+    checkedAt: 2026-10-22
+    via: page
+    quote: "a template literal is all Sphido expects"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/sphido/sphido
+    checkedAt: 2026-10-22
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://sphido.cz
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Released under the MIT License"
+  - field: currentMajor
+    value: 3
+    url: https://registry.npmjs.org/@sphido/core/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-14
+    url: https://registry.npmjs.org/@sphido/core
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 37
+    url: https://api.github.com/repos/sphido/sphido
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 5
+    url: https://api.github.com/repos/sphido/sphido/contributors?anon=true
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: "@sphido/core"
+    url: https://registry.npmjs.org/@sphido/core/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 40
+    url: https://api.npmjs.org/downloads/point/last-week/@sphido/core
+    checkedAt: 2026-10-22
+    via: api
+notFound: [firstRelease, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, basedOn, parent, forkOf, successorOf, pricingPage, paidEditions, endoflifeId, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, wikidata, hqCountry, packagistDownloads, pypiDownloads, supportedVersions, docker]
+unreadable: []
+notes: >
+  The install docs name create-sphido, a scaffolder, so the npm figures come from its core package @sphido/core, as the import rule requires; the scaffolder itself had 7 downloads in the same week and is not recorded. The site has no imprint or legal notice; the maintainer is the copyright holder in the repository LICENSE, which matches the npm author field of @sphido/core. The project is a monorepo of packages (core, markdown, frontmatter, sitemap, feed, dev server and others); the record covers the monorepo through the core package. The homepage and create page say the generator writes the site into public/; runsAs records only the build step the create page shows; no page says the output is served as static files. The repository created_at is 2018-09-28 and the npm version history starts 2019; neither is stated as a first release, so firstRelease stays unknown. The npm downloads figure covers 2026-10-12 to 2026-10-18.

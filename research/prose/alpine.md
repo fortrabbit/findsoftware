@@ -1,0 +1,1 @@
+Alpine.js adds reactive behavior to HTML through attributes written in the markup. It runs in the browser: a page includes it with a script tag, or the npm package alpinejs can be imported into a bundle.

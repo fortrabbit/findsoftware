@@ -1,0 +1,132 @@
+id: platformatic
+name: Platformatic
+status: accepted
+checkedAt: 2026-10-22
+description: Platformatic is a Node.js application server, Watt, that runs HTTP applications and services built with Node.js frameworks or plain Node.js.
+facts:
+  - field: homepage
+    value: https://platformatic.dev/
+    url: https://platformatic.dev/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Platformatic's Node.js application server."
+  - field: repository
+    value: https://github.com/platformatic/platformatic
+    url: https://api.github.com/repos/platformatic/platformatic
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://docs.platformatic.dev/docs/Overview
+    url: https://docs.platformatic.dev/docs/Overview
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Watt is Platformatic's flagship Node.js Application Server"
+  - field: maintainer
+    value: Platformatic, Inc.
+    url: https://platformatic.dev/terms
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Platformatic, Inc."
+  - field: categories
+    value: [app-server]
+    url: https://raw.githubusercontent.com/platformatic/platformatic/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Watt - The Node.js Application Server"
+  - field: headlessApi
+    value: [rest, graphql]
+    url: https://docs.platformatic.dev/docs/Overview
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Auto-generated REST and GraphQL endpoints from SQL databases (Platformatic DB)"
+  - field: databases
+    value: [postgres, mysql, mariadb, sqlite]
+    url: https://docs.platformatic.dev/docs/reference/db/overview
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The Database Service supports PostgreSQL, MySQL, MariaDB, and SQLite"
+  - field: hqCountry
+    value: US
+    url: https://platformatic.dev/terms
+    checkedAt: 2026-10-22
+    via: page
+    quote: "548 Market St, Pmb 85033 San Francisco, CA 94104"
+  - field: x
+    value: https://x.com/platformatic
+    url: https://docs.platformatic.dev/docs/Overview
+    checkedAt: 2026-10-22
+    via: page
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/platformatic/platformatic
+    checkedAt: 2026-10-22
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://docs.platformatic.dev/docs/getting-started/quick-start
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Node.js (v22.19.0+)"
+  - field: runtimeMin
+    value: "22"
+    url: https://docs.platformatic.dev/docs/getting-started/quick-start
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Node.js (v22.19.0+)"
+  - field: installMethod
+    value: npm, npx wattpm create
+    url: https://raw.githubusercontent.com/platformatic/platformatic/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npx wattpm create my-first-app"
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.platformatic.dev/docs/Overview
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Watt is a complete Node.js application server"
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/platformatic/platformatic/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Apache License Version 2.0, January 2004"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/platformatic
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 130
+    url: https://api.github.com/repos/platformatic/platformatic/contributors
+    checkedAt: 2026-10-22
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://registry.npmjs.org/wattpm/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-21
+    url: https://api.github.com/repos/platformatic/platformatic/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 2130
+    url: https://api.github.com/repos/platformatic/platformatic
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: wattpm
+    url: https://registry.npmjs.org/wattpm/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 14662 (week 2026-10-12 to 2026-10-18)
+    url: https://api.npmjs.org/downloads/point/last-week/wattpm
+    checkedAt: 2026-10-22
+    via: api
+notFound: [firstRelease, parent, forkOf, successorOf, alternativeTo, wikidata, basedOn, renderingModes, templating, adminUi, livePreview, i18n, multisite, userRoles, sso, importsFrom, pricingPage, paidEdition, usageShare, reportedInstalls, packagistDownloads, pluginDirectory, pluginCount, endoflifeId, forum, discord, subreddit, mastodon, bluesky, newsletter, apiLimits, regions]
+unreadable: []
+notes: >
+  The repository is a monorepo. The npm package is wattpm, the one the README and quick start install (npm install -g wattpm, npx wattpm create) and the one npm describes as "The Node.js Application Server"; the package named platformatic is described as "Platformatic CLI", has far fewer downloads and is not used for the registry figures. Both declare Node >=22.19.0 in engines. The GitHub repository description names it "Platformatic Open Source monorepo!". The docs and the README title name the software Watt; the record keeps the project name Platformatic. The README lists "Docker deployment" as built in; not recorded as a field. The databases are those of the Database Service (Platformatic DB), which generates the REST and GraphQL APIs. The homepage names ICC (Intelligent Command Center), a Watt control plane, and links to sales; no price is recorded. The Platformatic terms page names "Platformatic, Inc." as the company; the terms page gives its address in San Francisco. The README says Watt runs each Node.js application "as a worker thread", and the homepage says services run "as individually scalable threads under a single process".

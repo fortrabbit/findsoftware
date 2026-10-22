@@ -1,0 +1,1 @@
+Zudoku builds API documentation sites and developer portals from OpenAPI schemas. A project is created with the npm create command, and its production build is a set of static HTML, JavaScript and CSS files that can be deployed directly to your own server or a hosted service. The [deployment guide](https://zudoku.dev/docs/deployment) lists the targets it covers.

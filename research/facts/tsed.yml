@@ -1,0 +1,119 @@
+id: tsed
+name: Ts.ED
+status: accepted
+checkedAt: 2026-10-22
+description: Node.js and TypeScript framework for server-side applications, built on Express.js, Koa.js or Fastify.js.
+facts:
+  - field: homepage
+    value: https://tsed.dev
+    url: https://tsed.dev
+    checkedAt: 2026-10-22
+    via: page
+  - field: repository
+    value: https://github.com/tsedio/tsed
+    url: https://github.com/tsedio/tsed
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://tsed.dev/introduction/getting-started.html
+    url: https://tsed.dev/introduction/getting-started.html
+    checkedAt: 2026-10-22
+    via: page
+  - field: maintainer
+    value: Romain Lenzotti
+    url: https://github.com/tsedio/tsed/blob/production/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) 2016-2023 Romain Lenzotti"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/tsedio/tsed/blob/production/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) 2016-2023 Romain Lenzotti"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/tsedio
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [framework, backend]
+    url: https://tsed.dev
+    checkedAt: 2026-10-22
+    via: page
+    quote: "a modern Node.js/Bun.js framework built with TypeScript"
+  - field: basedOn
+    value: [express, koa, fastify]
+    url: https://tsed.dev
+    checkedAt: 2026-10-22
+    via: page
+    quote: "built with TypeScript on top of Express.js/Koa.js/Fastify.js"
+  - field: language
+    value: TypeScript
+    url: https://tsed.dev
+    checkedAt: 2026-10-22
+    via: page
+    quote: "a modern Node.js/Bun.js framework built with TypeScript"
+  - field: runtime
+    value: [node, bun]
+    url: https://tsed.dev
+    checkedAt: 2026-10-22
+    via: page
+    quote: "a modern Node.js/Bun.js framework built with TypeScript"
+  - field: runtimeMin
+    value: 22
+    url: https://tsed.dev/introduction/getting-started.html
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Ts.ED v8 required at least Node.js v22.0.0 version to work."
+  - field: installMethod
+    value: npx -p @tsed/cli tsed init
+    url: https://tsed.dev
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npx -p @tsed/cli tsed init ."
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/tsedio/tsed/license
+    checkedAt: 2026-10-22
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/tsedio/tsed/blob/production/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 8
+    url: https://registry.npmjs.org/@tsed/core/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-13
+    url: https://api.github.com/repos/tsedio/tsed/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 3090
+    url: https://github.com/tsedio/tsed
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 183
+    url: https://github.com/tsedio/tsed
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 17268
+    url: https://api.npmjs.org/downloads/point/last-week/@tsed/core
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: "@tsed/core"
+    url: https://registry.npmjs.org/@tsed/core/latest
+    checkedAt: 2026-10-22
+    via: api
+notFound: [runsAs, firstRelease, hqCountry, parent, reportedInstalls, usageShare, packagistName, paidEdition, pricingPage]
+unreadable: []
+notes: >
+  The install docs name @tsed/cli (1171 npm downloads in the week 2026-10-12 to 2026-10-18), a scaffolder, and the repository is a monorepo, so by the rule the core package @tsed/core is recorded as npmName (@tsed/core latest is 8.x, @tsed/cli is 7.x). runsAs is not recorded: the getting-started page only shows a console log line "Listen server on" from a run, and the docs also document serverless adapters. The LICENSE copyright names Romain Lenzotti; team.json lists further maintainers, so the maintainer field follows the license line. The docs name Node.js and Bun.js runtimes; the Bun runtime is experimental in the CLI prompt. Serverless targets (AWS, Serverless HTTP) are documented as platform adapters; their runtime is not recorded. Release date is the GitHub release v8.44.0. Stars and contributors come from the repository API.

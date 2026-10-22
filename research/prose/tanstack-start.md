@@ -1,0 +1,3 @@
+TanStack Start is a full-stack framework for React and Solid, powered by TanStack Router. Its pages can be server-rendered as full documents, prerendered to static HTML at build time, regenerated in the background from a CDN, or rendered only in the browser. The [hosting guide](https://tanstack.com/start/latest/docs/framework/react/guide/hosting) covers a Node.js and Docker deployment among several hosting providers, and the [SPA mode guide](https://tanstack.com/start/latest/docs/framework/react/guide/spa-mode) notes that a CDN serving static assets is all client-only output needs.
+
+The source lives in the TanStack Router repository, so repository counts are shared with the router.

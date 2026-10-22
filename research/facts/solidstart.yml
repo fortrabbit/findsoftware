@@ -1,0 +1,134 @@
+id: solidstart
+name: SolidStart
+status: accepted
+checkedAt: 2026-10-22
+description: Full-stack application framework for Solid, built on Vite.
+facts:
+  - field: homepage
+    value: https://start.solidjs.com
+    url: https://start.solidjs.com
+    checkedAt: 2026-10-22
+    via: page
+  - field: repository
+    value: https://github.com/solidjs/solid-start
+    url: https://api.github.com/repos/solidjs/solid-start
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://docs.solidjs.com/solid-start/v2/getting-started
+    url: https://docs.solidjs.com/solid-start/v2/getting-started
+    checkedAt: 2026-10-22
+    via: page
+  - field: maintainer
+    value: Ryan Carniato
+    url: https://github.com/solidjs/solid-start/blob/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) 2021 Ryan Carniato"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/solidjs
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/solidjs/solid-start
+    checkedAt: 2026-10-22
+    via: page
+    quote: "SolidStart, the Solid app framework"
+  - field: basedOn
+    value: [Solid]
+    url: https://docs.solidjs.com/solid-start/v2/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "SolidStart v2 builds a full-stack app on top of Solid v1"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/solidjs/solid-start
+    checkedAt: 2026-10-22
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://docs.solidjs.com/solid-start/v2/getting-started
+    checkedAt: 2026-10-22
+    via: page
+    quote: "SolidStart v2 requires Node.js 24 or newer."
+  - field: runtimeMin
+    value: "24"
+    url: https://docs.solidjs.com/solid-start/v2/getting-started
+    checkedAt: 2026-10-22
+    via: page
+    quote: "SolidStart v2 requires Node.js 24 or newer."
+  - field: renderingModes
+    value: [server]
+    url: https://docs.solidjs.com/solid-start/v2/guides/deployment-plugins
+    checkedAt: 2026-10-22
+    via: page
+    quote: "integrates the server build with a production runtime and hosting target"
+  - field: renderingModes
+    value: [static]
+    url: https://docs.solidjs.com/solid-start/v2/building-your-application/route-prerendering
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Route pre-rendering produces static HTML during vite build"
+  - field: installMethod
+    value: npm init solid
+    url: https://docs.solidjs.com/solid-start/v2/getting-started
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npm init solid"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/solidjs/solid-start
+    checkedAt: 2026-10-22
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/solidjs/solid-start/blob/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 2
+    url: https://registry.npmjs.org/@solidjs/start/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-22
+    url: https://registry.npmjs.org/@solidjs/start
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 5922
+    url: https://api.github.com/repos/solidjs/solid-start
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 235
+    url: https://api.github.com/repos/solidjs/solid-start/contributors?anon=true
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: "@solidjs/start"
+    url: https://registry.npmjs.org/@solidjs/start/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 84297
+    url: https://api.npmjs.org/downloads/point/last-week/@solidjs/start
+    checkedAt: 2026-10-22
+    via: api
+  - field: discord
+    value: https://discord.com/invite/solidjs
+    url: https://github.com/solidjs/solid-start/blob/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+  - field: subreddit
+    value: https://reddit.com/r/solidjs
+    url: https://github.com/solidjs/solid-start/blob/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+notFound: [firstRelease, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, parent, forkOf, successorOf, pricingPage, paidEditions, endoflifeId, pluginDirectory, forum, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, wikidata, hqCountry, packagistDownloads, pypiDownloads, supportedVersions, docker]
+unreadable: []
+notes: >
+  The main branch README calls itself the 2.0.0-alpha branch and names the 1.x branch as the maintained line, while npm dist-tag latest is 2.1.0 published 2026-10-22; currentMajor follows npm, and the README is stale. The docs have a migration guide from v1 (Vinxi and Nitro v2) to v2; it is the same project, so no importsFrom or successorOf fact is recorded. The docs name three deployment plugins, Nitro (portable presets), Netlify and Cloudflare, and say the Netlify and Cloudflare plugins integrate directly with their platforms; there is no field for deploy targets, so they are not recorded, and runsAs stays unknown because the docs say the live runtime depends on the chosen preset. The GitHub organization is named SolidJS and the copyright holder in LICENSE is an individual; the maintainer follows the LICENSE line. The npm downloads figure covers 2026-10-12 to 2026-10-18, and the candidate row had recorded about 73k. basedOn comes from the v2 docs overview, which says SolidStart v2 builds on Solid and Vite. The homepage is the project's own start.solidjs.com, which also says SolidStart v2 is stable.

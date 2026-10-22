@@ -1,0 +1,127 @@
+id: qwik
+name: Qwik
+status: accepted
+checkedAt: 2026-10-22
+description: Framework for web apps that resumes on the client instead of hydrating, with Qwik City for routing and server rendering.
+facts:
+  - field: homepage
+    value: https://qwik.dev
+    url: https://api.github.com/repos/QwikDev/qwik
+    checkedAt: 2026-10-22
+    via: api
+  - field: repository
+    value: https://github.com/QwikDev/qwik
+    url: https://api.github.com/repos/QwikDev/qwik
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://qwik.dev/docs/
+    url: https://qwik.dev/docs/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Qwik Documentation"
+  - field: categories
+    value: [framework]
+    url: https://qwik.dev/docs/getting-started/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Qwik is a new kind of framework that is resumable"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/QwikDev/qwik
+    checkedAt: 2026-10-22
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://qwik.dev/docs/getting-started/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Node.js v18.17 or higher"
+  - field: runtimeMin
+    value: "18"
+    url: https://qwik.dev/docs/getting-started/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Node.js v18.17 or higher"
+  - field: installMethod
+    value: npm create qwik, then the Qwik CLI
+    url: https://qwik.dev/docs/getting-started/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npm create qwik@latest"
+  - field: renderingModes
+    value: [static]
+    url: https://qwik.dev/docs/deployments/self-hosting/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "If using the static adapter, copy the contents of the dist directory"
+  - field: renderingModes
+    value: [server]
+    url: https://qwik.dev/docs/deployments/self-hosting/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "For Express or Fastify adapters, the build process generates a server entry file"
+  - field: runsAs
+    value: [static]
+    url: https://qwik.dev/docs/deployments/self-hosting/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "If using the static adapter, copy the contents of the dist directory"
+  - field: runsAs
+    value: [always-on]
+    url: https://qwik.dev/docs/deployments/self-hosting/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "For production use, use a process manager like PM2"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/QwikDev/qwik
+    checkedAt: 2026-10-22
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/QwikDev/qwik/blob/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "MIT License"
+  - field: maintainer
+    value: QwikDev
+    url: https://github.com/QwikDev/qwik/blob/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) 2024 QwikDev"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/QwikDev/qwik
+    checkedAt: 2026-10-22
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/@builder.io/qwik/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-06
+    url: https://api.github.com/repos/QwikDev/qwik/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 22064
+    url: https://api.github.com/repos/QwikDev/qwik
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: "@builder.io/qwik"
+    url: https://registry.npmjs.org/@builder.io/qwik/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 25721
+    url: https://api.npmjs.org/downloads/point/last-week/@builder.io/qwik
+    checkedAt: 2026-10-22
+    via: api
+    quote: "\"downloads\":25721"
+notFound: [firstRelease, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, packagistName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, contributors, maintainerType]
+unreadable: []
+notes: >
+  The candidate row names the record "Qwik and Qwik City"; the project's homepage says "Qwik", so the fact file covers the framework. Qwik City ships in the same repository as the package @builder.io/qwik-city (weekly npm downloads 21344 for 2026-10-12 to 2026-10-18) and may get its own record with basedOn set to Qwik. The getting-started page and its examples install and import @builder.io/qwik, whose npm latest tag is major 1, so npmName and currentMajor follow it. The package @qwik.dev/core has 2.0.0-rc.3 as its npm latest tag (published 2026-10-13) and the docs carry a "Qwik v2" banner, but the install docs do not name it. The Node.js minimum is the getting-started page's "Node.js v18.17 or higher"; the v2 package declares a higher engines range, which is not recorded. The LICENSE names QwikDev (2024) and BuilderIO (2021); the maintainer field keeps QwikDev, and no legal entity was found on the pages read. The renderingModes and runsAs values follow the self-hosting page: the static adapter output is copied to a web server, and the Express or Fastify adapters produce a Node.js server that runs under a process manager.

@@ -18,6 +18,8 @@ runtime:
 hosting:
   - static
 runtimeMin: node 20
+basedOn:
+  - umi
 i18n: "true"
 runsAs:
   - static
@@ -67,6 +69,9 @@ sources:
     url: https://d.umijs.org/guide
     checkedAt: 2026-10-21
   - field: runsAs
+    url: https://d.umijs.org/guide/faq
+    checkedAt: 2026-10-21
+  - field: basedOn
     url: https://d.umijs.org/guide/faq
     checkedAt: 2026-10-21
   - field: i18n

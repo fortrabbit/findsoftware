@@ -158,6 +158,7 @@ const categoryMap = {
   'html-sanitizer': 'library',
   'html-to-pdf': 'media',
   'http-framework': 'framework',
+  'javascript-framework': 'framework',
   'http-server': 'web-server',
   'hugo-theme': '',
   i18n: 'library',
@@ -236,6 +237,7 @@ const categoryMap = {
   'property-based': 'testing',
   proxy: 'web-server',
   publishing: 'cms',
+  'publishing-system': 'ssg',
   'q-and-a': 'community',
   'qr-code': 'media',
   'query-builder': 'library',
@@ -250,6 +252,7 @@ const categoryMap = {
   router: 'library',
   rpc: 'backend',
   's3-compatible': 'database',
+  scaffolder: 'dev-tool',
   scheduling: 'library',
   schema: 'library',
   'schema-builder': 'library',
@@ -567,11 +570,16 @@ for (const file of facts) {
   const deployed = !record.category?.length || record.category.some((value) => !buildOnly.has(value));
   if (record.status !== 'hosted-service' && deployed) {
     const modes = all('renderingModes').map((mode) => lower(mode));
-    const servesLive = modes.some((mode) => /server|hybrid|isr|ssr/.test(mode));
+    const runsAs = all('runsAs').map((value) => lower(value));
+    const servesLive =
+      modes.some((mode) => /server|hybrid|isr|ssr/.test(mode)) ||
+      runsAs.some((value) => value === 'always-on' || value === 'per-request');
     const buildsStatic = modes.some((mode) => mode.startsWith('static'));
-    const hosting = buildsStatic && !servesLive ? [] : runtime.map((value) => hostingOf[value] ?? value);
+    // Software that only runs on the creator's machine needs no server runtime.
+    const offServer = runsAs.length > 0 && runsAs.every((value) => value === 'local');
+    const hosting = (buildsStatic && !servesLive) || offServer ? [] : runtime.map((value) => hostingOf[value] ?? value);
     // Static hosting only when a source says the output is served as files; a mode that can render static is not enough.
-    if (all('runsAs').some((value) => lower(value) === 'static')) hosting.push('static');
+    if (runsAs.includes('static')) hosting.push('static');
     const allowed = vocab('hosting');
     const held = [...new Set(hosting)].filter((value) => allowed.has(value));
     if (held.length) record.hosting = held;

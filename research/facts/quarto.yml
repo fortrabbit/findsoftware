@@ -1,0 +1,111 @@
+id: quarto
+name: Quarto
+status: accepted
+checkedAt: 2026-10-22
+description: Open-source publishing system that renders Markdown documents, notebooks, websites, books and presentations.
+facts:
+  - field: homepage
+    value: https://quarto.org
+    url: https://api.github.com/repos/quarto-dev/quarto-cli
+    checkedAt: 2026-10-22
+    via: api
+  - field: repository
+    value: https://github.com/quarto-dev/quarto-cli
+    url: https://api.github.com/repos/quarto-dev/quarto-cli
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://quarto.org/docs/get-started/
+    url: https://quarto.org/docs/get-started/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Install Quarto, then check out the tutorials to learn the basics."
+  - field: categories
+    value: [publishing-system]
+    url: https://github.com/quarto-dev/quarto-cli
+    checkedAt: 2026-10-22
+    via: page
+    quote: "open-source scientific and technical publishing system"
+  - field: categories
+    value: [ssg]
+    url: https://quarto.org/docs/websites/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Quarto websites can be published to a wide variety of destinations"
+  - field: basedOn
+    value: [Pandoc]
+    url: https://github.com/quarto-dev/quarto-cli
+    checkedAt: 2026-10-22
+    via: page
+    quote: "built on Pandoc"
+  - field: codeLanguages
+    value: [Python, R, Julia, Observable JavaScript]
+    url: https://quarto.org/docs/faq/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The principal languages supported by Quarto are Python, R, Julia, and Observable JavaScript."
+  - field: installMethod
+    value: installer download for Windows, macOS and Linux
+    url: https://quarto.org/docs/download/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Install a release or pre-release build of Quarto."
+  - field: renderingModes
+    value: [static]
+    url: https://quarto.org/docs/websites/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "any other static hosting service or intranet web server"
+  - field: runsAs
+    value: [static]
+    url: https://quarto.org/docs/websites/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "any other static hosting service or intranet web server"
+  - field: license
+    value: MIT
+    url: https://github.com/quarto-dev/quarto-cli/blob/main/COPYING.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/quarto-dev/quarto-cli/blob/main/COPYING.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "MIT License"
+  - field: maintainer
+    value: Posit Software, PBC
+    url: https://github.com/quarto-dev/quarto-cli/blob/main/COPYING.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) 2020-2024 Posit Software, PBC"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/quarto-dev/quarto-cli
+    checkedAt: 2026-10-22
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/quarto-dev/quarto-cli/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-06
+    url: https://api.github.com/repos/quarto-dev/quarto-cli/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-10-14
+    url: https://api.github.com/repos/quarto-dev/quarto-cli/releases/tags/v1.11.6
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 6115
+    url: https://api.github.com/repos/quarto-dev/quarto-cli
+    checkedAt: 2026-10-22
+    via: api
+notFound: [language, firstRelease, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, runtime, runtimeMin, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, contributors]
+unreadable: []
+notes: >
+  Latest release is v1.10.19 (2026-10-06): the GitHub API marks it as the latest release and flags every v1.11.x tag as a pre-release, and the download page lists 1.10 under "Current Release" and says "Quarto v1.11 was just released, nothing to see here – yet!" under "Pre-release". v1.11.6 (2026-10-14) is the newest pre-release. The major is 1 either way. COPYING.md states the MIT License; COPYRIGHT adds "With the exceptions noted below" and then lists none, and the GitHub licence API reports NOASSERTION, so the MIT statement in COPYING.md is recorded. GitHub reports JavaScript as the main language by file size, with TypeScript and Lua also in the repository, which does not state the project's language, so language stays out. The publishing docs list GitHub Pages, Netlify and Posit Connect as destinations; only the static hosting wording is recorded. codeLanguages is coined here: the FAQ names the languages that code cells run in, and no starter field covers it. The README names Pandoc as what Quarto is built on.

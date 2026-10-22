@@ -1,0 +1,149 @@
+id: wasp
+name: Wasp
+status: accepted
+checkedAt: 2026-10-22
+description: Full-stack framework that builds React, Node.js and Prisma web apps from a declarative configuration file.
+facts:
+  - field: homepage
+    value: https://wasp.sh
+    url: https://api.github.com/repos/wasp-lang/wasp
+    checkedAt: 2026-10-22
+    via: api
+  - field: repository
+    value: https://github.com/wasp-lang/wasp
+    url: https://api.github.com/repos/wasp-lang/wasp
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://wasp.sh/docs
+    url: https://wasp.sh/docs
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Wasp is a tool to build modern web applications"
+  - field: categories
+    value: [framework, fullstack]
+    url: https://wasp.sh/docs
+    checkedAt: 2026-10-22
+    via: page
+    quote: "A spec-driven full-stack framework"
+  - field: basedOn
+    value: [React, Node.js, Prisma]
+    url: https://wasp.sh
+    checkedAt: 2026-10-22
+    via: page
+    quote: "implement the details in the underlying stack (React, Node, Prisma"
+  - field: maintainer
+    value: wasp-lang
+    url: https://github.com/wasp-lang/wasp/blob/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) 2020 wasp-lang"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/wasp-lang
+    checkedAt: 2026-10-22
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/wasp-lang/wasp/languages
+    checkedAt: 2026-10-22
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://wasp.sh/docs/quick-start
+    checkedAt: 2026-10-22
+    via: page
+    quote: "A version of Node.js must be >= 24.14.1."
+  - field: runtimeMin
+    value: "24"
+    url: https://wasp.sh/docs/quick-start
+    checkedAt: 2026-10-22
+    via: page
+    quote: "A version of Node.js must be >= 24.14.1."
+  - field: renderingModes
+    value: [spa, static]
+    url: https://wasp.sh/docs/deployment/intro
+    checkedAt: 2026-10-22
+    via: page
+    quote: "single-page application (SPA)"
+  - field: renderingModes
+    value: [static]
+    url: https://wasp.sh
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Set prerender: true to get the best speed / SEO / LLM experience for your static content."
+  - field: runsAs
+    value: [static]
+    url: https://wasp.sh/docs/deployment/intro
+    checkedAt: 2026-10-22
+    via: page
+    quote: "It's usually served by some static file server"
+  - field: runsAs
+    value: [always-on]
+    url: https://wasp.sh/docs/deployment/intro
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The backend of your app, built using Express on Node.js. It handles requests from the client app"
+  - field: databases
+    value: [postgres]
+    url: https://wasp.sh/docs/deployment/intro
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Wasp uses PostgreSQL as its production database."
+  - field: installMethod
+    value: npm global install of @wasp.sh/wasp-cli
+    url: https://wasp.sh/docs/quick-start
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npm i -g @wasp.sh/wasp-cli@latest"
+  - field: license
+    value: MIT
+    url: https://github.com/wasp-lang/wasp/blob/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://wasp.sh
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Open source. A standalone framework, not tied to any cloud platform."
+  - field: currentMajor
+    value: 0
+    url: https://registry.npmjs.org/@wasp.sh/wasp-cli/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-16
+    url: https://api.github.com/repos/wasp-lang/wasp/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: firstRelease
+    value: 2020
+    url: https://api.github.com/repos/wasp-lang/wasp/releases
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 18779
+    url: https://api.github.com/repos/wasp-lang/wasp
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 125
+    url: https://api.github.com/repos/wasp-lang/wasp/contributors
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: "@wasp.sh/wasp-cli"
+    url: https://registry.npmjs.org/@wasp.sh/wasp-cli/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 4158
+    url: https://api.npmjs.org/downloads/point/last-week/@wasp.sh/wasp-cli
+    checkedAt: 2026-10-22
+    via: api
+notFound: [pricingPage, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, paidEdition, reportedInstalls, usageShare, discord, subreddit, pluginDirectory, sso, i18n]
+unreadable: []
+notes: >
+  The npm package named "wasp" (version 1.0.11, 25 downloads in the last week) is not the one the install docs name, so it is not recorded. The install docs name @wasp.sh/wasp-cli, which the registry figures follow. The quick start requires Node.js >= 24.14.1; runtimeMin is the major. The homepage names Fly.io and Railway as the providers for the wasp deploy command and says a generated Dockerfile can deploy the server anywhere Docker runs. The deployment overview says the server app is built on Express and Node.js and comes with a Dockerfile. The copyright line reads "wasp-lang" without a legal form, so maintainerType is left to the import.

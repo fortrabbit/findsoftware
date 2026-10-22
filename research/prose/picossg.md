@@ -1,0 +1,1 @@
+PicoSSG reads Markdown and Nunjucks template files from a content directory and writes a static website to an output directory. The [installation guide](https://picossg.dev/docs/install) runs a build from the command line with npx. The build runs on Node, and the output is files that any web server can serve.

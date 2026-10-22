@@ -24,6 +24,7 @@ runtimeMin: php 8.2
 basedOn:
   - laravel
   - livewire
+  - alpine
 adminUi: true
 templating: blade, livewire
 renderingModes:

@@ -1,0 +1,1 @@
+hapi is a Node.js framework for building HTTP servers, installed from npm as @hapi/hapi. A server is created with a port and host, then started and listens on that port, as the [getting-started tutorial](https://hapi.dev/tutorials/en_US/getting-started) shows. The [API reference](https://hapi.dev/api/21.x.x) documents the framework.
