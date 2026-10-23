@@ -229,6 +229,7 @@ const categoryMap = {
   pdf: 'library',
   'pdf-generation': 'media',
   // How it is built, not what it is: Phalcon is a framework, Swoole an app server.
+  'photo-publishing': 'media',
   'php-extension': '',
   'platform-cli': 'dev-tool',
   polls: 'forms',
@@ -336,8 +337,30 @@ const categoryMap = {
   'workflow-engine': 'backend',
 };
 
-const runtimeMap = { 'go binary': 'binary', 'rust binary': 'binary', 'beam (erlang/otp)': 'beam' };
-const languageMap = { 'c#': 'csharp', 'c++': 'cpp' };
+// Compiled languages ship a binary, so the visitor installs nothing else.
+const runtimeMap = {
+  'beam (erlang/otp)': 'beam',
+  'c binary': 'binary',
+  'c++ binary': 'binary',
+  'crystal binary': 'binary',
+  elixir: 'beam',
+  erlang: 'beam',
+  go: 'binary',
+  'go binary': 'binary',
+  'go-binary': 'binary',
+  haskell: 'binary',
+  'jvm (bundled openjdk)': 'jvm',
+  native: 'binary',
+  'node (npm wrapper)': 'node',
+  'pascal binary': 'binary',
+  'php (embedded in go binary)': 'binary',
+  'php extension': 'php',
+  'python (pypi wrapper)': 'python',
+  rust: 'binary',
+  'rust binary': 'binary',
+};
+// TypeScript compiles to JavaScript and shares its packages and runtimes, so the register keeps them as one value.
+const languageMap = { 'c#': 'csharp', 'c++': 'cpp', typescript: 'javascript' };
 const databaseMap = { mssql: 'sqlserver', postgresql: 'postgres', pgsql: 'postgres', mongo: 'mongodb' };
 const apiMap = { jsonapi: 'rest', 'admin-api': 'rest', 'store-api': 'rest', webservice: 'rest' };
 const renderMap = { headless: 'api-only' };
@@ -510,7 +533,10 @@ for (const file of facts) {
   const values = (field) =>
     (research.facts ?? []).filter((fact) => fact.field === field).flatMap((fact) => asList(fact.value));
   const raw = values('categories').length ? values('categories') : (rowCategories.get(research.id) ?? []);
-  ownCategories.set(research.id, mapped(raw, categoryMap, vocab('category')));
+  // A blog-aware static site generator is no CMS: blog maps to cms only when nothing else makes it an ssg.
+  const rest = raw.filter((value) => lower(value) !== 'blog');
+  const isSsg = mapped(rest, categoryMap, vocab('category')).includes('ssg');
+  ownCategories.set(research.id, mapped(isSsg ? rest : raw, categoryMap, vocab('category')));
   parentOf.set(
     research.id,
     values('basedOn')

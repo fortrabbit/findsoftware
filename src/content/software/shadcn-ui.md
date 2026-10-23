@@ -11,7 +11,7 @@ description: Composable React components whose source code is added to a project
 status: active
 maintainer: shadcn
 maintainerType: individual
-language: typescript
+language: javascript
 runtime:
   - node
 runtimeMin: node 20
@@ -83,7 +83,7 @@ figure:
   emoji: 🧩
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · UI
+  text: JavaScript / TypeScript · UI
 ai: authored
 contentStore: null
 databases: null

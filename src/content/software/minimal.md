@@ -13,6 +13,7 @@ maintainerType: individual
 language: javascript
 runtime:
   - node
+  - binary
   - python
 hosting:
   - static
@@ -75,7 +76,7 @@ figure:
   emoji: ⚡
   color: "#f6bd60"
   textColor: "#1a1a1a"
-  text: JavaScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

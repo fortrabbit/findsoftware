@@ -12,7 +12,7 @@ status: active
 maintainer: Luca Ongaro
 maintainerType: individual
 firstRelease: 2018
-language: typescript
+language: javascript
 runsAs:
   - browser
 installMethod: npm, yarn, cdn script tag, manual build
@@ -74,7 +74,7 @@ figure:
   emoji: 🔎
   color: "#a3c4f3"
   textColor: "#1a1a1a"
-  text: TypeScript · Search
+  text: JavaScript / TypeScript · Search
 ai: authored
 contentStore: null
 databases: null

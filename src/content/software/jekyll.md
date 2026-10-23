@@ -7,7 +7,6 @@ urls:
   docs: https://jekyllrb.com/docs/
 category:
   - ssg
-  - cms
 description: Ruby static site generator that turns plain text, Markdown and Liquid templates into websites and blogs.
 status: active
 maintainer: Jekyll core team

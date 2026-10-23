@@ -11,7 +11,7 @@ description: Node.js framework for creating web applications, written in TypeScr
 status: active
 maintainer: FoalTS
 firstRelease: 2017
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -105,7 +105,7 @@ figure:
   emoji: 🧱
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

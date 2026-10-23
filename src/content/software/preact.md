@@ -76,7 +76,7 @@ figure:
   emoji: 🧩
   color: "#a3c4f3"
   textColor: "#1a1a1a"
-  text: JavaScript · UI
+  text: JavaScript / TypeScript · UI
 ai: authored
 contentStore: null
 databases: null

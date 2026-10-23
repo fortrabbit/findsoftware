@@ -12,6 +12,10 @@ status: active
 maintainer: Han Tianfeng
 maintainerType: individual
 language: cpp
+runtime:
+  - php
+hosting:
+  - php
 runtimeMin: php 8.2
 runsAs:
   - always-on
@@ -47,6 +51,9 @@ sources:
     checkedAt: 2026-10-19
   - field: language
     url: https://github.com/swoole/swoole-src
+    checkedAt: 2026-10-19
+  - field: runtime
+    url: https://pecl.php.net/package/swoole
     checkedAt: 2026-10-19
   - field: runtimeMin
     url: https://pecl.php.net/package/swoole

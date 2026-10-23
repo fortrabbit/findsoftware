@@ -11,7 +11,7 @@ description: Deno and React framework for server-rendered web apps that uses ES 
 status: active
 maintainer: Exhibitionist Digital
 firstRelease: 2021
-language: typescript
+language: javascript
 runtime:
   - deno
 hosting:
@@ -100,7 +100,7 @@ figure:
   emoji: 🧱
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

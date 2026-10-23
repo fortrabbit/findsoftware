@@ -10,7 +10,7 @@ description: Application framework for Marko with server-side rendering and stat
 status: active
 maintainer: eBay Inc.
 maintainerType: company
-language: typescript
+language: javascript
 runtime:
   - node
   - deno
@@ -85,7 +85,7 @@ figure:
   emoji: 🧱
   color: "#9ad1d4"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

@@ -1,0 +1,3 @@
+Cobalt is a static site generator written in Rust. It reads Markdown pages and posts, and renders them through Liquid layouts that can include shared fragments from an `_includes` directory. Content is kept as files in the site directory. Running `cobalt build` writes HTML files to `_site`, ready to be served by a web server. The `cobalt serve` command builds the site and serves it locally while watching for changes, and posts start as drafts until they are published with `cobalt publish`.
+
+The project's [deployment guide](https://cobalt-org.github.io/docs/deployment) describes publishing the output to GitHub Pages or GitLab Pages through a CI job, and uploading it to a self-hosted server with rsync or a git hook.

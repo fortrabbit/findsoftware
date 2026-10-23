@@ -12,7 +12,7 @@ status: active
 maintainer: Tailwind Labs Inc.
 maintainerType: company
 firstRelease: 2017
-language: typescript
+language: javascript
 runsAs:
   - local
 installMethod: npm, tailwind-cli, play-cdn
@@ -83,7 +83,7 @@ figure:
   emoji: 🎨
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: TypeScript · CSS
+  text: JavaScript / TypeScript · CSS
 ai: authored
 contentStore: null
 databases: null

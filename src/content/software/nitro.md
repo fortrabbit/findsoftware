@@ -11,7 +11,7 @@ description: TypeScript server toolkit for full-stack servers with filesystem ro
 status: active
 maintainer: Pooya Parsa and Nitro contributors
 maintainerType: community
-language: typescript
+language: javascript
 runtime:
   - node
   - bun
@@ -94,7 +94,7 @@ figure:
   emoji: 🏗️
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · Backend
+  text: JavaScript / TypeScript · Backend
 ai: authored
 packagistDownloads: null
 ---

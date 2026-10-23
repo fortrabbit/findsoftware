@@ -1,0 +1,140 @@
+id: blogdown-r
+name: blogdown
+status: accepted
+checkedAt: 2026-10-23
+description: R package that builds blogs and websites from R Markdown files, using the Hugo static site generator by default.
+facts:
+  - field: homepage
+    value: https://pkgs.rstudio.com/blogdown/
+    url: https://pkgs.rstudio.com/blogdown/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The goal of the blogdown package is to provide a powerful and customizable website output format"
+  - field: repository
+    value: https://github.com/rstudio/blogdown
+    url: https://api.github.com/repos/rstudio/blogdown
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://pkg.yihui.org/blogdown/
+    url: https://pkg.yihui.org/blogdown/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "It produces a static website, meaning the website only consists of static files"
+  - field: maintainer
+    value: Yihui Xie
+    url: https://cran.r-project.org/web/packages/blogdown/index.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Maintainer: Yihui Xie"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/rstudio
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: R
+    url: https://api.github.com/repos/rstudio/blogdown
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [r]
+    url: https://raw.githubusercontent.com/rstudio/blogdown/main/DESCRIPTION
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Depends: R (>= 3.5.0)"
+  - field: runtimeMin
+    value: "3.5"
+    url: https://raw.githubusercontent.com/rstudio/blogdown/main/DESCRIPTION
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Depends: R (>= 3.5.0)"
+  - field: categories
+    value: [blog]
+    url: https://raw.githubusercontent.com/rstudio/blogdown/main/DESCRIPTION
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Write blog posts and web pages in R Markdown"
+  - field: categories
+    value: [ssg]
+    url: https://raw.githubusercontent.com/rstudio/blogdown/main/DESCRIPTION
+    checkedAt: 2026-10-23
+    via: page
+    quote: "supports the static site generator 'Hugo'"
+  - field: renderingModes
+    value: [static]
+    url: https://pkg.yihui.org/blogdown/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "It produces a static website, meaning the website only consists of static files"
+  - field: installMethod
+    value: install.packages('blogdown') from CRAN
+    url: https://github.com/rstudio/blogdown/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "install.packages('blogdown')"
+  - field: runsAs
+    value: [static]
+    url: https://pkg.yihui.org/blogdown/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "It produces a static website, meaning the website only consists of static files"
+  - field: contentStore
+    value: flat-file
+    url: https://github.com/rstudio/blogdown/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "you may organize your website content (including R Markdown files) within subdirectories"
+  - field: license
+    value: GPL-3
+    url: https://raw.githubusercontent.com/rstudio/blogdown/main/DESCRIPTION
+    checkedAt: 2026-10-23
+    via: page
+    quote: "License: GPL-3"
+  - field: licenseModel
+    value: open-source
+    url: https://cran.r-project.org/web/packages/blogdown/index.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "License: GPL-3"
+  - field: firstRelease
+    value: "2017"
+    url: https://api.github.com/repos/rstudio/blogdown/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/rstudio/blogdown/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-06-19
+    url: https://api.github.com/repos/rstudio/blogdown/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: cranName
+    value: blogdown
+    url: https://cran.r-project.org/web/packages/blogdown/index.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "blogdown: Create Blogs and Websites with R Markdown"
+  - field: githubStargazers
+    value: 1792
+    url: https://api.github.com/repos/rstudio/blogdown
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 60
+    url: https://api.github.com/repos/rstudio/blogdown/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: forum
+    value: https://forum.posit.co/tags/c/R-Markdown/10/blogdown
+    url: https://github.com/rstudio/blogdown/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "is a friendly place to ask any questions about blogdown"
+notFound: [parent, basedOn, hqCountry, pricingPage, freeTier, paidEdition, maintainerType, latestPrereleaseDate, nugetName, npmName, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, endoflifeId, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, alternativeTo, forkOf, successorOf, outputDir, templating]
+unreadable: []
+notes: >
+  The GitHub repository has no LICENSE file (the raw LICENSE path returns 404), so GitHub reports license null; the GPL-3 statement comes from DESCRIPTION and the CRAN page. The DESCRIPTION names Hugo as the static site generator the package supports best, with Jekyll and Hexo also supported, and its SystemRequirements name Hugo and Pandoc; no basedOn is recorded because the project states it supports Hugo rather than builds on it, which a reviewer may decide differently. The DESCRIPTION copyright line names Posit Software, PBC as copyright holder (cph, fnd) and the CRAN and pkgs pages name Yihui Xie as author and maintainer; parent is left out because the copyright holder is not stated as the owner. Contributors are counted across all 60 pages of the per_page=1 contributors request. The CRAN page reports version 1.24 published 2026-06-19 and the GitHub release v1.24 has the same date; NEWS.md lists version 1.25 as in development, which is not a release. The CRAN download figures are not in the sources read here, so no download figure is recorded.

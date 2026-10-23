@@ -12,7 +12,7 @@ status: active
 maintainer: Drifty Co.
 maintainerType: company
 parent: OutSystems
-language: typescript
+language: javascript
 runsAs:
   - browser
 installMethod: npm install -g @ionic/cli
@@ -78,7 +78,7 @@ figure:
   emoji: 🧩
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: TypeScript · UI
+  text: JavaScript / TypeScript · UI
 ai: authored
 contentStore: null
 databases: null

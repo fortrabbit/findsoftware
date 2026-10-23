@@ -9,7 +9,7 @@ category:
   - dev-tool
 description: Frontend workshop for building, documenting and testing UI components and pages in isolation.
 status: active
-language: typescript
+language: javascript
 runtime:
   - node
 runtimeMin: node 20
@@ -71,7 +71,7 @@ figure:
   emoji: 🧹
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · Dev tool
+  text: JavaScript / TypeScript · Dev tool
 ai: authored
 contentStore: null
 databases: null

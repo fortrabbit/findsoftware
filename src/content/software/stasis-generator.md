@@ -11,7 +11,7 @@ status: stub
 maintainer: Jonas D.
 maintainerType: individual
 firstRelease: 2019
-language: typescript
+language: javascript
 hosting:
   - static
 contentStore:
@@ -96,7 +96,7 @@ figure:
   emoji: ⚡
   color: "#f6bd60"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

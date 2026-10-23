@@ -12,6 +12,10 @@ status: active
 maintainer: Typesense, Inc.
 maintainerType: company
 language: cpp
+runtime:
+  - binary
+hosting:
+  - binary
 runsAs:
   - always-on
 installMethod: docker, docker compose, kubernetes, homebrew, deb package, rpm package, binary download
@@ -52,6 +56,9 @@ sources:
     checkedAt: 2026-10-19
   - field: category
     url: https://typesense.org
+    checkedAt: 2026-10-19
+  - field: runtime
+    url: https://typesense.org/docs/guide/install-typesense.html
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://typesense.org/docs/guide/install-typesense.html

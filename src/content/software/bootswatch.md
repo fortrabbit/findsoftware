@@ -80,7 +80,7 @@ figure:
   emoji: 🎨
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: JavaScript · CSS
+  text: JavaScript / TypeScript · CSS
 ai: authored
 contentStore: null
 databases: null

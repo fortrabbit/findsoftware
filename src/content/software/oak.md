@@ -12,7 +12,7 @@ description: Middleware framework for handling HTTP requests across Deno, Node.j
 status: active
 maintainer: the oak authors
 maintainerType: community
-language: typescript
+language: javascript
 runtime:
   - node
   - deno
@@ -85,7 +85,7 @@ figure:
   emoji: 🧱
   color: "#f6bd60"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

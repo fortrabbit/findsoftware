@@ -13,6 +13,10 @@ status: active
 maintainer: Foxes With Matches, Inc.
 maintainerType: company
 language: go
+runtime:
+  - binary
+hosting:
+  - binary
 runsAs:
   - always-on
 installMethod: docker, linux-package-build-script, aws-cloudformation-template
@@ -42,6 +46,9 @@ sources:
     checkedAt: 2026-10-19
   - field: language
     url: https://github.com/imgproxy/imgproxy
+    checkedAt: 2026-10-19
+  - field: runtime
+    url: https://github.com/imgproxy/imgproxy/blob/v4.0.18/go.mod
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://docs.imgproxy.net/installation

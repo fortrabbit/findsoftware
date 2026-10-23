@@ -10,7 +10,7 @@ status: discontinued
 maintainer: The Aleph.js authors
 maintainerType: community
 firstRelease: 2020
-language: typescript
+language: javascript
 runtime:
   - deno
 hosting:
@@ -70,7 +70,7 @@ figure:
   emoji: 🧱
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

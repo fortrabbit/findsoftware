@@ -885,6 +885,9 @@ for (const { file, data } of records) {
 
   if (hiddenStatuses.has(String(data.status))) hidden += 1;
   else if (asideOf.has(String(data.status)) || besideByKind(data)) aside += 1;
+  else if (!Array.isArray(data.category) || !data.category.length) {
+    fail(file, 'no category: a listed record needs one, or the import maps none of its categories');
+  }
 
   if (data.id !== slug) {
     fail(file, `id "${String(data.id)}" does not match the filename — the id is the URL`);

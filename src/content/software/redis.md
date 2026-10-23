@@ -12,6 +12,10 @@ status: active
 maintainer: Redis Ltd
 maintainerType: company
 language: c
+runtime:
+  - binary
+hosting:
+  - binary
 runsAs:
   - always-on
 installMethod: docker-image, snap, homebrew, rpm, debian-package, source-tarball
@@ -48,6 +52,9 @@ sources:
     checkedAt: 2026-10-19
   - field: language
     url: https://github.com/redis/redis
+    checkedAt: 2026-10-19
+  - field: runtime
+    url: https://redis.io/downloads/
     checkedAt: 2026-10-19
   - field: currentMajor
     url: https://github.com/redis/redis/releases/latest

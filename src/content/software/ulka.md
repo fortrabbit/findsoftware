@@ -10,7 +10,7 @@ category:
 description: Static site generator written in JavaScript that builds pages from templates and content files, with a plugin system.
 status: active
 maintainer: Roshan Acharya
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -94,7 +94,7 @@ figure:
   emoji: ⚡
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

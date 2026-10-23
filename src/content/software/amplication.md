@@ -10,7 +10,7 @@ description: Open-source code generator that builds backend services from data m
 status: stub
 maintainer: Amplication LTD
 firstRelease: 2020
-language: typescript
+language: javascript
 runtime:
   - node
 runtimeMin: node 22
@@ -84,7 +84,7 @@ figure:
   emoji: 🏗️
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: TypeScript · Backend
+  text: JavaScript / TypeScript · Backend
 ai: authored
 packagistDownloads: null
 ---

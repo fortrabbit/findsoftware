@@ -11,7 +11,7 @@ category:
 description: TypeScript web framework for building backend servers, optimized for Bun and also runnable on Node.js.
 status: active
 maintainer: saltyAom
-language: typescript
+language: javascript
 runtime:
   - bun
   - node
@@ -89,7 +89,7 @@ figure:
   emoji: 🧱
   color: "#f4d35e"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

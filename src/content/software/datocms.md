@@ -14,7 +14,7 @@ status: hosted-service
 maintainer: Dato srl
 maintainerType: company
 hqCountry: IT
-language: typescript
+language: javascript
 adminUi: true
 headlessApi:
   - graphql
@@ -94,7 +94,7 @@ figure:
   emoji: 🔌
   color: "#f6bd60"
   textColor: "#1a1a1a"
-  text: TypeScript · Headless CMS
+  text: JavaScript / TypeScript · Headless CMS
 ai: authored
 packagistDownloads: null
 ---

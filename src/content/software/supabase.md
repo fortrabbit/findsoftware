@@ -13,7 +13,7 @@ description: Open-source development platform built around a dedicated Postgres 
 status: active
 maintainer: Supabase Pte. Ltd.
 maintainerType: company
-language: typescript
+language: javascript
 contentStore:
   - database
 databases:
@@ -83,7 +83,7 @@ figure:
   emoji: 🏗️
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: TypeScript · Backend
+  text: JavaScript / TypeScript · Backend
 ai: authored
 packagistDownloads: null
 ---

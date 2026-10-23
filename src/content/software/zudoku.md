@@ -12,7 +12,7 @@ status: active
 maintainer: Zuplo, Inc.
 maintainerType: company
 firstRelease: 2024
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -96,7 +96,7 @@ figure:
   emoji: ⚡
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

@@ -7,12 +7,11 @@ urls:
   docs: https://open.gridea.dev/docs
 category:
   - ssg
-  - cms
 description: Desktop client for writing Markdown blog posts and building them into a static website.
 status: stub
 maintainer: EryouHao
 firstRelease: 2018
-language: typescript
+language: javascript
 hosting:
   - static
 contentStore:
@@ -90,7 +89,7 @@ figure:
   emoji: ⚡
   color: "#9ad1d4"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

@@ -1,0 +1,3 @@
+blag is a blog-aware static site generator written in Python. It reads Markdown files from a `content` directory, copies static files over, and renders the output with Jinja2 templates into a `build` directory. A Markdown file with a date is an article and the rest are pages; articles go into an Atom feed and into the tag pages.
+
+It is installed from PyPI with `pip install blag`. `blag quickstart` creates a configuration and starter content, `blag build` builds the site, and an integrated devserver serves it while the content is edited. The [manual](https://blag.readthedocs.io/en/latest/manual/) describes the content layout and templates.

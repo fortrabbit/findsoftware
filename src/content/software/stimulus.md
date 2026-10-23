@@ -12,7 +12,7 @@ status: active
 maintainer: Basecamp, LLC
 maintainerType: company
 firstRelease: 2018
-language: typescript
+language: javascript
 runsAs:
   - browser
 installMethod: npm package @hotwired/stimulus added to a JavaScript bundle, or stimulus.js imported in a script tag
@@ -80,7 +80,7 @@ figure:
   emoji: 🧱
   color: "#9ad1d4"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

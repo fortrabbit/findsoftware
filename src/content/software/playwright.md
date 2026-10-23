@@ -11,7 +11,7 @@ description: Browser automation and end-to-end test framework that drives Chromi
 status: active
 maintainer: Microsoft Corporation
 maintainerType: company
-language: typescript
+language: javascript
 runtime:
   - node
 runtimeMin: node 20
@@ -76,7 +76,7 @@ figure:
   emoji: 🧪
   color: "#f4d35e"
   textColor: "#1a1a1a"
-  text: TypeScript · Testing
+  text: JavaScript / TypeScript · Testing
 ai: authored
 contentStore: null
 databases: null

@@ -10,7 +10,7 @@ category:
 description: Nuxt layer that turns Markdown files into a blog, with themes, SEO modules and integrations preconfigured.
 status: active
 maintainer: Hugo Lassiège
-language: typescript
+language: javascript
 hosting:
   - static
 basedOn:
@@ -97,7 +97,7 @@ figure:
   emoji: 📝
   color: "#f4d35e"
   textColor: "#1a1a1a"
-  text: TypeScript · CMS
+  text: JavaScript / TypeScript · CMS
 ai: authored
 packagistDownloads: null
 ---

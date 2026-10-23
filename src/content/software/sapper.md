@@ -11,7 +11,7 @@ description: Framework for building server-rendered Svelte web applications, dep
 status: discontinued
 maintainer: Svelte
 firstRelease: 2017
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -117,7 +117,7 @@ figure:
   emoji: 🧱
   color: "#f6bd60"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

@@ -13,6 +13,10 @@ status: active
 maintainer: Plausible Insights OÜ
 maintainerType: company
 language: elixir
+runtime:
+  - beam
+hosting:
+  - elixir
 databases:
   - postgres
 runsAs:
@@ -46,6 +50,9 @@ sources:
     checkedAt: 2026-10-19
   - field: language
     url: https://github.com/plausible/analytics
+    checkedAt: 2026-10-19
+  - field: runtime
+    url: https://github.com/plausible/analytics/blob/v3.2.1/.tool-versions
     checkedAt: 2026-10-19
   - field: databases
     url: https://github.com/plausible/analytics/blob/v3.2.1/mix.exs

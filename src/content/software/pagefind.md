@@ -12,8 +12,12 @@ firstRelease: 2022
 language: rust
 runtime:
   - binary
+  - node
+  - python
 hosting:
   - binary
+  - node
+  - python
   - static
 runsAs:
   - static

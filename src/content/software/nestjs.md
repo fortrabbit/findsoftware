@@ -9,7 +9,7 @@ category:
   - backend
 description: Progressive Node.js framework for building efficient, scalable server-side applications with TypeScript.
 status: active
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -75,7 +75,7 @@ figure:
   emoji: 🧱
   color: "#f4d35e"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

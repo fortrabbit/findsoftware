@@ -11,7 +11,7 @@ description: Nuxt theme and CLI that builds documentation sites from Markdown fi
 status: active
 maintainer: NuxtLabs
 firstRelease: 2020
-language: typescript
+language: javascript
 basedOn:
   - nuxt
 contentStore:
@@ -86,7 +86,7 @@ figure:
   emoji: ⚡
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

@@ -104,7 +104,7 @@ figure:
   emoji: 📦
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: JavaScript · Build
+  text: JavaScript / TypeScript · Build
 ai: authored
 contentStore: null
 databases: null

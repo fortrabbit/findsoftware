@@ -1,0 +1,1 @@
+foto is a command-line publishing tool for minimalist photographers, written in Go and shipped as one binary. Its templates use Go's html/template package. The command foto preview serves the site on a local port, and foto export -o writes the built site into a directory of the user's choosing. Linghua Zhang maintains the software and holds its MIT copyright.

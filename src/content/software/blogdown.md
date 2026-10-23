@@ -5,7 +5,6 @@ urls:
   repository: https://github.com/clayrisser/blogdown
   docs: https://github.com/clayrisser/blogdown/blob/main/README.md
 category:
-  - cms
   - ssg
 description: Markdown blogging platform built with Polymer that needs no compilation and no particular back end.
 status: stub
@@ -62,10 +61,10 @@ sources:
     url: https://api.github.com/repos/clayrisser/blogdown/releases
     checkedAt: 2026-10-22
 figure:
-  emoji: 📝
+  emoji: ⚡
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: CMS
+  text: SSG
 ai: authored
 ---
 

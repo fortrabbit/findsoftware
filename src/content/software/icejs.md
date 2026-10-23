@@ -11,7 +11,7 @@ description: React-based application framework for building single-page, server-
 status: active
 maintainer: Alibaba Inc.
 maintainerType: company
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -95,7 +95,7 @@ figure:
   emoji: 🧱
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

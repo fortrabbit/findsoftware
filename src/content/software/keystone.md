@@ -13,7 +13,7 @@ status: active
 maintainer: Thinkmill Labs Pty Ltd
 maintainerType: company
 hqCountry: AU
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -129,7 +129,7 @@ figure:
   emoji: 🔌
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · Headless CMS
+  text: JavaScript / TypeScript · Headless CMS
 ai: authored
 packagistDownloads: null
 ---

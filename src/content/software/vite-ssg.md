@@ -10,7 +10,7 @@ description: Static-site generation tool for Vue 3 applications built on Vite.
 status: active
 maintainer: Anthony Fu
 firstRelease: 2020
-language: typescript
+language: javascript
 runtime:
   - node
 runtimeMin: node 20
@@ -85,7 +85,7 @@ figure:
   emoji: ⚡
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

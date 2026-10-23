@@ -13,6 +13,10 @@ maintainer: Valkey project under LF Projects
 maintainerType: foundation
 parent: LF Projects, LLC
 language: c
+runtime:
+  - binary
+hosting:
+  - binary
 runsAs:
   - always-on
 installMethod: docker-image, binary-artifacts, package-managers, build-from-source-make
@@ -52,6 +56,9 @@ sources:
     checkedAt: 2026-10-19
   - field: language
     url: https://github.com/valkey-io/valkey
+    checkedAt: 2026-10-19
+  - field: runtime
+    url: https://valkey.io/download/
     checkedAt: 2026-10-19
   - field: currentMajor
     url: https://github.com/valkey-io/valkey/releases/latest

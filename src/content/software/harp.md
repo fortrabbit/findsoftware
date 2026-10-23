@@ -119,7 +119,7 @@ figure:
   emoji: ⚡
   color: "#a3c4f3"
   textColor: "#1a1a1a"
-  text: JavaScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

@@ -100,7 +100,7 @@ figure:
   emoji: 📐
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: JavaScript · Library
+  text: JavaScript / TypeScript · Library
 ai: authored
 contentStore: null
 databases: null

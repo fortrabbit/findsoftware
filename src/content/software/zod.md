@@ -11,7 +11,7 @@ description: TypeScript-first schema validation library that validates data and 
 status: active
 maintainer: Colin McDonnell
 maintainerType: individual
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -72,7 +72,7 @@ figure:
   emoji: 📐
   color: "#f4d35e"
   textColor: "#1a1a1a"
-  text: TypeScript · Library
+  text: JavaScript / TypeScript · Library
 ai: authored
 contentStore: null
 databases: null

@@ -8,13 +8,12 @@ urls:
   plugins: https://docusaurus.io/community/resources
 category:
   - ssg
-  - cms
 description: React-based static site generator for documentation websites and blogs written in Markdown and MDX.
 status: active
 maintainer: Meta Platforms, Inc.
 maintainerType: company
 firstRelease: 2017
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -135,7 +134,7 @@ figure:
   emoji: ⚡
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

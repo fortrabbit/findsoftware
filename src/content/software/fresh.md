@@ -10,7 +10,7 @@ category:
 description: Web framework for Deno that renders every route on the server as a Preact component and hydrates interactive islands.
 status: active
 maintainer: Luca Casonato
-language: typescript
+language: javascript
 runtime:
   - deno
 hosting:
@@ -84,7 +84,7 @@ figure:
   emoji: 🧱
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

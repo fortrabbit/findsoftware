@@ -11,7 +11,7 @@ description: Testing framework for JavaScript and TypeScript projects, built on 
 status: active
 maintainer: VoidZero Inc.
 maintainerType: company
-language: typescript
+language: javascript
 runtime:
   - node
 runtimeMin: node 22
@@ -72,7 +72,7 @@ figure:
   emoji: 🧪
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: TypeScript · Testing
+  text: JavaScript / TypeScript · Testing
 ai: authored
 contentStore: null
 databases: null

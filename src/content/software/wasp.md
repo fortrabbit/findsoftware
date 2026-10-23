@@ -11,7 +11,7 @@ description: Full-stack framework that builds React, Node.js and Prisma web apps
 status: active
 maintainer: wasp-lang
 firstRelease: 2020
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -113,7 +113,7 @@ figure:
   emoji: 🧱
   color: "#a3c4f3"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

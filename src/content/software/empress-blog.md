@@ -88,7 +88,7 @@ figure:
   emoji: 📝
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: JavaScript · CMS
+  text: JavaScript / TypeScript · CMS
 ai: authored
 packagistDownloads: null
 ---

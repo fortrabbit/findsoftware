@@ -5,7 +5,6 @@ urls:
   repository: https://github.com/ElijahToussaint/youngsoni
   docs: https://github.com/ElijahToussaint/youngsoni/blob/main/README.md
 category:
-  - cms
   - ssg
 description: Static blog generator that builds an HTML website from Markdown posts and Hjson configuration, with a web interface for editing its content.
 status: active
@@ -99,10 +98,10 @@ sources:
     url: https://api.github.com/repos/ElijahToussaint/youngsoni/contributors
     checkedAt: 2026-10-23
 figure:
-  emoji: 📝
+  emoji: ⚡
   color: "#f4d35e"
   textColor: "#1a1a1a"
-  text: CMS
+  text: SSG
 ai: authored
 ---
 

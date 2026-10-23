@@ -80,7 +80,7 @@ figure:
   emoji: 📐
   color: "#9ad1d4"
   textColor: "#1a1a1a"
-  text: JavaScript · Library
+  text: JavaScript / TypeScript · Library
 ai: authored
 contentStore: null
 databases: null

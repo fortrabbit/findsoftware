@@ -11,7 +11,7 @@ description: JavaScript library for building web components with reactive proper
 status: active
 maintainer: The Lit Project
 parent: OpenJS Foundation
-language: typescript
+language: javascript
 runtime:
   - node
 installMethod: npm install lit
@@ -80,7 +80,7 @@ figure:
   emoji: 🧩
   color: "#f4d35e"
   textColor: "#1a1a1a"
-  text: TypeScript · UI
+  text: JavaScript / TypeScript · UI
 ai: authored
 contentStore: null
 databases: null

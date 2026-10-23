@@ -11,7 +11,7 @@ description: Self-hosted shared event agenda for local communities, with Activit
 status: active
 maintainer: lesion
 maintainerType: individual
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -97,7 +97,7 @@ figure:
   emoji: 💬
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: TypeScript · Community
+  text: JavaScript / TypeScript · Community
 ai: authored
 packagistDownloads: null
 ---

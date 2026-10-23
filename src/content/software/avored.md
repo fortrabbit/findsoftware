@@ -8,7 +8,7 @@ category:
   - e-commerce
 description: Open-source headless e-commerce system with a GraphQL API on a Laravel backend and a separate frontend application.
 status: active
-language: typescript
+language: javascript
 runtime:
   - php
 hosting:
@@ -90,7 +90,7 @@ figure:
   emoji: 🛒
   color: "#a3c4f3"
   textColor: "#1a1a1a"
-  text: TypeScript · Shop
+  text: JavaScript / TypeScript · Shop
 ai: authored
 ---
 

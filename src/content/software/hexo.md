@@ -8,13 +8,12 @@ urls:
   plugins: https://hexo.io/plugins/
 category:
   - ssg
-  - cms
 description: Node.js blog framework that generates static websites from Markdown posts and a theme.
 status: active
 maintainer: hexojs
 maintainerType: community
 firstRelease: 2012
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -125,7 +124,7 @@ figure:
   emoji: ⚡
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

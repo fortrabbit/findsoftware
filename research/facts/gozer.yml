@@ -1,0 +1,121 @@
+id: gozer
+name: Gozer
+status: accepted
+checkedAt: 2026-10-23
+description: Static site generator written in Go that converts Markdown and djot pages to HTML, with an XML sitemap and an RSS feed.
+facts:
+  - field: repository
+    value: https://github.com/dannyvankooten/gozer
+    url: https://api.github.com/repos/dannyvankooten/gozer
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/dannyvankooten/gozer/blob/main/README.md
+    url: https://github.com/dannyvankooten/gozer/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Gozer is a fast & simple static site generator written in Golang."
+  - field: maintainer
+    value: Danny van Kooten
+    url: https://raw.githubusercontent.com/dannyvankooten/gozer/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright © 2023 Danny van Kooten"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/dannyvankooten
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/dannyvankooten/gozer
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://github.com/dannyvankooten/gozer/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "static site generator written in Golang"
+  - field: runtime
+    value: [go binary]
+    url: https://github.com/dannyvankooten/gozer/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "static site generator written in Golang"
+  - field: installMethod
+    value: [go install]
+    url: https://github.com/dannyvankooten/gozer/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "go install github.com/dannyvankooten/gozer@latest"
+  - field: buildCommand
+    value: gozer build
+    url: https://github.com/dannyvankooten/gozer/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Then, run `gozer build` to generate your site."
+  - field: outputDir
+    value: build
+    url: https://github.com/dannyvankooten/gozer/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "will result in an HTML page in your build directory"
+  - field: templating
+    value: [go templates]
+    url: https://github.com/dannyvankooten/gozer/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Templates are powered by Go's standard"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/dannyvankooten/gozer/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "will result in an HTML page in your build directory"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/dannyvankooten/gozer/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "will result in an HTML page in your build directory"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/dannyvankooten/gozer
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/dannyvankooten/gozer/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "open-sourced under the MIT license"
+  - field: firstRelease
+    value: "2024"
+    url: https://api.github.com/repos/dannyvankooten/gozer/git/ref/tags/0.1.1
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/dannyvankooten/gozer/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-11
+    url: https://api.github.com/repos/dannyvankooten/gozer/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 82
+    url: https://api.github.com/repos/dannyvankooten/gozer
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 6
+    url: https://api.github.com/repos/dannyvankooten/gozer/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, pypiName, rubygemsName, packagistName, runtimeMin]
+unreadable: []
+notes: >
+  No homepage: the repository's homepage field is empty and the README names no site; its contributing section links only the repository and its issue tracker. The GitHub release list holds one release (0.4.1, 2026-08-11), so firstRelease is the commit date of tag 0.1.1 (2024-02-13), the oldest tag; the reviewer decides between 2024 and 2026. The README's djot front matter note is not a fact kind in the starter list. The serve command starts a local HTTP server on port 8080 and is a development step, so runsAs records only static. The go.mod directive (go 1.23) is a repository file, not a page or registry, so runtimeMin is left out. The README's "fast & simple" wording is quoted as the project's own description and is not used in prose. The example directory is a repository folder and is not read as a page. The build command deletes the output directory before it builds the site.

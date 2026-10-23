@@ -9,7 +9,7 @@ description: Tool for logging architecture decision records (ADRs) and publishin
 status: active
 maintainer: Thomas Vaillant
 maintainerType: individual
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -84,7 +84,7 @@ figure:
   emoji: ⚡
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

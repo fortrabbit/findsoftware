@@ -12,6 +12,10 @@ status: active
 maintainer: Nginx, Inc.
 maintainerType: company
 language: c
+runtime:
+  - binary
+hosting:
+  - binary
 runsAs:
   - always-on
 installMethod: linux-packages-from-nginx-org, freebsd-packages, freebsd-ports, build-from-source, windows-binary
@@ -49,6 +53,9 @@ sources:
     checkedAt: 2026-10-19
   - field: language
     url: https://github.com/nginx/nginx
+    checkedAt: 2026-10-19
+  - field: runtime
+    url: https://nginx.org/en/docs/install.html
     checkedAt: 2026-10-19
   - field: currentMajor
     url: https://nginx.org/en/download.html

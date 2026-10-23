@@ -76,7 +76,7 @@ figure:
   emoji: 🧱
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: JavaScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

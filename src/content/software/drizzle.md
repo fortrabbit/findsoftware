@@ -11,7 +11,7 @@ description: TypeScript ORM that maps SQL databases to typed schemas and queries
 status: active
 maintainer: drizzle-team
 maintainerType: community
-language: typescript
+language: javascript
 installMethod: npm install
 licenseModel: open-source
 license: Apache-2.0
@@ -65,7 +65,7 @@ figure:
   emoji: 📐
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · Library
+  text: JavaScript / TypeScript · Library
 ai: authored
 contentStore: null
 databases: null

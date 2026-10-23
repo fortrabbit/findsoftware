@@ -12,6 +12,10 @@ status: active
 maintainer: elasticsearch B.V.
 maintainerType: company
 language: java
+runtime:
+  - jvm
+hosting:
+  - java
 headlessApi:
   - rest
 runsAs:
@@ -54,6 +58,9 @@ sources:
     checkedAt: 2026-10-19
   - field: category
     url: https://www.elastic.co/elasticsearch
+    checkedAt: 2026-10-19
+  - field: runtime
+    url: https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch

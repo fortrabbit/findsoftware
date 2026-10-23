@@ -7,7 +7,6 @@ urls:
   docs: https://jigsaw.tighten.com/docs/installation/
 category:
   - ssg
-  - cms
 description: Static site generator that builds sites from Blade templates and Markdown content.
 status: active
 maintainer: Tighten Co.

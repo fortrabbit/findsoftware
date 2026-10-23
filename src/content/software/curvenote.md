@@ -12,7 +12,7 @@ description: Command line tool and library for writing, previewing, exporting an
 status: active
 maintainer: Curvenote Inc.
 maintainerType: company
-language: typescript
+language: javascript
 runtime:
   - node
 runtimeMin: node 20
@@ -95,7 +95,7 @@ figure:
   emoji: 📝
   color: "#f6bd60"
   textColor: "#1a1a1a"
-  text: TypeScript · CMS
+  text: JavaScript / TypeScript · CMS
 ai: authored
 packagistDownloads: null
 ---

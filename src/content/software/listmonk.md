@@ -12,6 +12,10 @@ status: active
 maintainer: Kailash Nadh
 maintainerType: individual
 language: go
+runtime:
+  - binary
+hosting:
+  - binary
 databases:
   - postgres
 runsAs:
@@ -43,6 +47,9 @@ sources:
     checkedAt: 2026-10-19
   - field: language
     url: https://github.com/knadh/listmonk
+    checkedAt: 2026-10-19
+  - field: runtime
+    url: https://listmonk.app/docs/installation/
     checkedAt: 2026-10-19
   - field: databases
     url: https://listmonk.app/docs/installation/

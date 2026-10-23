@@ -7,7 +7,6 @@ urls:
   docs: https://carew.github.io/documentation.html
 category:
   - ssg
-  - cms
 description: Static site and blog generator that builds Markdown pages into HTML with Twig layouts.
 status: discontinued
 maintainer: Grégoire Pineau

@@ -15,7 +15,7 @@ maintainer: Tiptap GmbH
 maintainerType: company
 firstRelease: 2020
 hqCountry: DE
-language: typescript
+language: javascript
 runsAs:
   - browser
 installMethod: npm
@@ -95,7 +95,7 @@ figure:
   emoji: 🧩
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · UI
+  text: JavaScript / TypeScript · UI
 ai: authored
 packagistDownloads: null
 ---

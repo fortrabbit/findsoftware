@@ -14,7 +14,7 @@ description: Open-source backend platform with authentication, databases, storag
 status: active
 maintainer: Appwrite Code Ltd.
 maintainerType: company
-language: typescript
+language: javascript
 runsAs:
   - always-on
 installMethod: docker-run-installer, docker-compose, helm-chart
@@ -78,7 +78,7 @@ figure:
   emoji: 🏗️
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · Backend
+  text: JavaScript / TypeScript · Backend
 ai: authored
 packagistDownloads: null
 ---

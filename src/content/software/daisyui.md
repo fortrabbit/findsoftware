@@ -89,7 +89,7 @@ figure:
   emoji: 🧩
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: JavaScript · UI
+  text: JavaScript / TypeScript · UI
 ai: authored
 contentStore: null
 databases: null

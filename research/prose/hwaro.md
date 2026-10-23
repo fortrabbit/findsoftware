@@ -1,0 +1,3 @@
+Hwaro is a static site generator written in Crystal. It reads Markdown content with TOML, YAML or JSON front matter and renders it through Jinja2-compatible templates, which the project implements with the Crinja library. The README lists multilingual support with per-language feeds and search, and an import from WordPress, Jekyll and Hugo.
+
+Hwaro installs with Homebrew, as a pre-built binary, or from source. The docs describe deploying the generated public folder to any static hosting provider, and the README lists generated platform configuration for Netlify, Vercel, Cloudflare Pages, GitHub Pages and GitLab CI. An official Docker image is published at ghcr.io/hahwul/hwaro.

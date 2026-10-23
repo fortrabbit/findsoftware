@@ -10,7 +10,7 @@ category:
 description: Interactive command-line tool that scaffolds a full-stack, typesafe Next.js app with optional libraries.
 status: active
 maintainer: Shoubhit Dash
-language: typescript
+language: javascript
 runtime:
   - node
 runtimeMin: node 18
@@ -91,7 +91,7 @@ figure:
   emoji: 🧹
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · Dev tool
+  text: JavaScript / TypeScript · Dev tool
 ai: authored
 contentStore: null
 adminUi: null

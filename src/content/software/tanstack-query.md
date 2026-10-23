@@ -10,7 +10,7 @@ category:
 description: Asynchronous state management and data-fetching library that caches, updates and synchronizes server state in web applications.
 status: active
 maintainer: TanStack
-language: typescript
+language: javascript
 installMethod: npm install
 licenseModel: open-source
 license: MIT
@@ -61,7 +61,7 @@ figure:
   emoji: 📐
   color: "#9ad1d4"
   textColor: "#1a1a1a"
-  text: TypeScript · Library
+  text: JavaScript / TypeScript · Library
 ai: authored
 contentStore: null
 databases: null

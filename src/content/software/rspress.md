@@ -12,7 +12,7 @@ status: active
 maintainer: ByteDance Inc.
 maintainerType: company
 firstRelease: 2023
-language: typescript
+language: javascript
 runtime:
   - node
   - deno
@@ -118,7 +118,7 @@ figure:
   emoji: ⚡
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

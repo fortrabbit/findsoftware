@@ -13,6 +13,8 @@ status: active
 maintainer: axllent
 maintainerType: individual
 language: go
+runtime:
+  - binary
 runsAs:
   - local
 installMethod: binary-download, homebrew, aur, freebsd-pkg, docker, source-build
@@ -42,6 +44,9 @@ sources:
     checkedAt: 2026-10-19
   - field: language
     url: https://github.com/axllent/mailpit
+    checkedAt: 2026-10-19
+  - field: runtime
+    url: https://mailpit.axllent.org/docs/install/
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://mailpit.axllent.org/docs/install/

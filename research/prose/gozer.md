@@ -1,0 +1,1 @@
+Gozer is a static site generator written in Go that converts Markdown and djot pages to HTML. Its templates use Go's standard html/template package. The build command deletes the output directory and writes the whole site, and the serve command builds the site and starts a local HTTP server on port 8080. The generator also produces an XML sitemap and an RSS feed.

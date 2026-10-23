@@ -12,7 +12,7 @@ description: Full-stack framework for creating web APIs and real-time applicatio
 status: active
 maintainer: Feathers Contributors
 maintainerType: community
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -85,7 +85,7 @@ figure:
   emoji: 🧱
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

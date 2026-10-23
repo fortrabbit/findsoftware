@@ -1,0 +1,127 @@
+id: gitmal
+name: Gitmal
+status: accepted
+checkedAt: 2026-10-23
+description: Static page generator that turns a Git repository into HTML pages for its files, commits and code.
+facts:
+  - field: repository
+    value: https://github.com/antonmedv/gitmal
+    url: https://api.github.com/repos/antonmedv/gitmal
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/antonmedv/gitmal/blob/master/docs/how-to-self-host-a-git-repository.md
+    url: https://github.com/antonmedv/gitmal/blob/master/docs/how-to-self-host-a-git-repository.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "How to Self-Host a Git Repository?"
+  - field: maintainer
+    value: Anton Medvedev
+    url: https://raw.githubusercontent.com/antonmedv/gitmal/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2025 Anton Medvedev"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/antonmedv
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/antonmedv/gitmal
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [repo-browser, ssg]
+    url: https://github.com/antonmedv/gitmal/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Gitmal is a static page generator for Git repositories"
+  - field: runtime
+    value: [go binary]
+    url: https://github.com/antonmedv/gitmal/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "go install github.com/antonmedv/gitmal@latest"
+  - field: installMethod
+    value: go install
+    url: https://github.com/antonmedv/gitmal/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "go install github.com/antonmedv/gitmal@latest"
+  - field: installMethod
+    value: docker
+    url: https://github.com/antonmedv/gitmal/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "docker run --rm -v $(pwd):/repo antonmedv/gitmal /repo"
+  - field: installMethod
+    value: prebuilt binary
+    url: https://github.com/antonmedv/gitmal/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "download prebuilt binary from"
+  - field: buildCommand
+    value: gitmal .
+    url: https://github.com/antonmedv/gitmal/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Run gitmal in the repository dir"
+  - field: outputDir
+    value: output
+    url: https://github.com/antonmedv/gitmal/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Gitmal will generate pages in _./output_ directory"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/antonmedv/gitmal/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Gitmal generates static HTML pages with files, commits"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/antonmedv/gitmal/blob/master/docs/how-to-self-host-a-git-repository.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Configure a web server to serve files from this directory."
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/antonmedv/gitmal
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/antonmedv/gitmal/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: firstRelease
+    value: "2025"
+    url: https://api.github.com/repos/antonmedv/gitmal/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/antonmedv/gitmal/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2025-12-29
+    url: https://api.github.com/repos/antonmedv/gitmal/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 1342
+    url: https://api.github.com/repos/antonmedv/gitmal
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/antonmedv/gitmal/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, pypiName, rubygemsName, packagistName]
+unreadable: []
+notes: >
+  No homepage: the repository's homepage field is empty and the README names no site of its own. The examples and the links to medv.io are the author's personal sites and are not recorded. The README examples are built from a Git repository on the maintainer's own web server; the self-host guide describes that setup. The Dockerfile builds from golang:latest; no version is recorded. The go.mod directive is a repository file rather than a page or registry, so runtimeMin is left out. There is no Go module download figure. The repository's contents listing shows a docs folder with the self-host guide, read in full. The oldest GitHub release is v1.0.0 (2025-12-01), one day after the repository was created. The self-host guide sets up a bare repository whose post-receive hook runs gitmal on each push, with the web root serving the output and a read-only clone URL.

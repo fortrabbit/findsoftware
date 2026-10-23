@@ -1,0 +1,3 @@
+Ema is a Haskell library toolkit for building jamstack-style static sites. A site is a Haskell program that uses the library, and the Ema live server reloads the browser when code or data changes during development. The library is listed on Hackage under the name ema.
+
+The [getting-started page](https://ema.srid.ca/start) recommends installing through Nix with a template repository, and the template may also work with plain cabal.

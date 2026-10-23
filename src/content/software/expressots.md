@@ -11,7 +11,7 @@ category:
 description: TypeScript framework for building server-side Node.js applications, with dependency injection and an Express adapter.
 status: active
 maintainer: Richard Zampieri
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -88,7 +88,7 @@ figure:
   emoji: 🧱
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

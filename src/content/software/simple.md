@@ -7,7 +7,6 @@ urls:
   docs: https://github.com/isnowfy/simple/blob/master/README.md
 category:
   - ssg
-  - cms
 description: Static blog generator that writes HTML files to a GitHub Pages repository from a browser-based editor.
 status: stub
 maintainer: isnowfy
@@ -70,7 +69,7 @@ figure:
   emoji: ⚡
   color: "#9ad1d4"
   textColor: "#1a1a1a"
-  text: JavaScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

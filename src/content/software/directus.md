@@ -15,7 +15,7 @@ status: active
 maintainer: Monospace Inc.
 maintainerType: company
 hqCountry: US
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -151,7 +151,7 @@ figure:
   emoji: 🔌
   color: "#a3c4f3"
   textColor: "#1a1a1a"
-  text: TypeScript · Headless CMS
+  text: JavaScript / TypeScript · Headless CMS
 ai: authored
 packagistDownloads: null
 ---

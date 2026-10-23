@@ -10,7 +10,7 @@ description: Hosted headless content platform that stores structured content and
 status: hosted-service
 maintainer: Contentful
 maintainerType: company
-language: typescript
+language: javascript
 adminUi: true
 headlessApi:
   - rest
@@ -80,7 +80,7 @@ figure:
   emoji: 🔌
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: TypeScript · Headless CMS
+  text: JavaScript / TypeScript · Headless CMS
 ai: authored
 packagistDownloads: null
 ---

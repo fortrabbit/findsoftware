@@ -10,7 +10,7 @@ category:
 description: Documentation tool that generates static documentation from the source of Angular applications and libraries.
 status: active
 maintainer: Vincent Ogloblinsky
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -93,7 +93,7 @@ figure:
   emoji: ⚡
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

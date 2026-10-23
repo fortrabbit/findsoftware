@@ -10,7 +10,7 @@ category:
 description: Framework for web apps that resumes on the client instead of hydrating, with Qwik City for routing and server rendering.
 status: active
 maintainer: QwikDev
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -94,7 +94,7 @@ figure:
   emoji: 🧱
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

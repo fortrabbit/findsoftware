@@ -11,7 +11,7 @@ description: TypeScript-based static website generator for hand-coded marketing 
 status: active
 maintainer: Blinkk LLC
 maintainerType: company
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -97,7 +97,7 @@ figure:
   emoji: ⚡
   color: "#a3c4f3"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

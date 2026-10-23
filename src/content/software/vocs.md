@@ -11,7 +11,7 @@ description: Documentation framework that builds Markdown and MDX sources into d
 status: active
 maintainer: Wevm
 firstRelease: 2023
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -112,7 +112,7 @@ figure:
   emoji: ⚡
   color: "#f4d35e"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

@@ -12,7 +12,7 @@ status: active
 maintainer: Tailwind Labs Inc.
 maintainerType: company
 firstRelease: 2020
-language: typescript
+language: javascript
 installMethod: npm
 licenseModel: open-source
 license: MIT
@@ -76,7 +76,7 @@ figure:
   emoji: 🧩
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: TypeScript · UI
+  text: JavaScript / TypeScript · UI
 ai: authored
 contentStore: null
 databases: null

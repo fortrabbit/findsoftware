@@ -1,0 +1,113 @@
+id: cloudrexx
+name: Cloudrexx
+status: hosted-service
+checkedAt: 2026-10-23
+description: Content management system written in PHP, published as open source under the AGPL.
+facts:
+  - field: homepage
+    value: https://www.cloudrexx.com
+    url: https://www.cloudrexx.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Das Schweizer CMS für professionelle Agenturen"
+  - field: repository
+    value: https://bitbucket.org/cloudrexx/cloudrexx-oss
+    url: https://api.bitbucket.org/2.0/repositories/cloudrexx/cloudrexx-oss
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://dev.cloudrexx.com
+    url: https://api.bitbucket.org/2.0/repositories/cloudrexx/cloudrexx-oss/src/main/readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Development Documentation"
+  - field: maintainer
+    value: Cloudrexx AG
+    url: https://www.cloudrexx.com/de/impressum
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Rechtsform: Aktiengesellschaft (AG)"
+  - field: hqCountry
+    value: CH
+    url: https://www.cloudrexx.com/de/impressum
+    checkedAt: 2026-10-23
+    via: page
+    quote: "CH-3600 Thun"
+  - field: language
+    value: PHP
+    url: https://api.bitbucket.org/2.0/repositories/cloudrexx/cloudrexx-oss
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://api.bitbucket.org/2.0/repositories/cloudrexx/cloudrexx-oss/src/main/readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Cloudrexx is an open source PHP based web content management system"
+  - field: categories
+    value: [cms]
+    url: https://www.cloudrexx.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Das Schweizer CMS für professionelle Agenturen"
+  - field: installMethod
+    value: cx env init (Docker containers, local environment)
+    url: https://api.bitbucket.org/2.0/repositories/cloudrexx/cloudrexx-oss/src/main/readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "./cx env init"
+  - field: runsAs
+    value: [local]
+    url: https://dev.cloudrexx.com/System%20Requirements/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "For running a local environment, the following system requirements are set"
+  - field: adminUi
+    value: yes, Content Manager backend
+    url: https://www.cloudrexx.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Der Content Manager ist das Herzstück deiner Website"
+  - field: i18n
+    value: yes, multiple language versions with a fallback language
+    url: https://www.cloudrexx.com/de/cms/funktionen
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Erstelle Websites in mehreren Sprachen"
+  - field: userRoles
+    value: yes, user groups with individual access rights
+    url: https://www.cloudrexx.com/de/cms/funktionen
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Lege Benutzergruppen an, definiere individuelle Zugriffsrechte"
+  - field: license
+    value: AGPL-3.0
+    url: https://api.bitbucket.org/2.0/repositories/cloudrexx/cloudrexx-oss/src/main/readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "GNU Affero General Public License, version 3"
+  - field: licenseModel
+    value: open-source
+    url: https://api.bitbucket.org/2.0/repositories/cloudrexx/cloudrexx-oss/src/main/readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "released under the GNU AGPL"
+  - field: currentMajor
+    value: 5
+    url: https://api.bitbucket.org/2.0/repositories/cloudrexx/cloudrexx-oss/refs/tags?pagelen=100
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2021-03-26
+    url: https://api.bitbucket.org/2.0/repositories/cloudrexx/cloudrexx-oss/refs/tags?pagelen=100
+    checkedAt: 2026-10-23
+    via: api
+  - field: description
+    value: Content management system written in PHP, published as open source under the AGPL.
+    url: https://api.bitbucket.org/2.0/repositories/cloudrexx/cloudrexx-oss
+    checkedAt: 2026-10-23
+    via: api
+notFound: [maintainerType, parent, forkOf, successorOf, alternativeTo, wikidata, firstRelease, runtimeMin, renderingModes, contentStore, databases, templating, headlessApi, multisite, livePreview, sso, importsFrom, apiLimits, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, githubStargazers, contributors, packagistName, packagistDownloads, npmName, npmWeeklyDownloads, pypiDownloads, endoflifeId, supportedVersions, repoOwnerType]
+unreadable: []
+notes: >
+  The CSV row says hosted-service because no repository was found. The Cloudrexx GitHub organization says its repositories moved to Bitbucket, and the Bitbucket workspace holds the public repository cloudrexx/cloudrexx-oss (AGPL, default branch main, last updated 2026-10-20). The source is public and runs locally through the cx command line interface, but the dev docs call the on-premise releases discontinued and describe Cloudrexx as a SaaS, so the record is hosted-service with the ended self-hosted line noted here. Cloudrexx AG also sells Cloudrexx as a SaaS hosted on servers in Switzerland only (FAQ); no price is recorded. The dev docs System Requirements page says "Cloudrexx is a software as a service and does therefore not require any installation" and calls the legacy on-premise releases discontinued; the local Docker environment is the documented way to run the open source code, so runsAs is local only. The Bitbucket tags are the release source: cloudrexx_5.1.1 (2021-03-26) is the highest stable tag, so currentMajor is 5, and the repository has no older tag, so firstRelease is unknown. The System Requirements page says the product runs on "a classical LAMP stack"; no database engine is named, so databases is unknown. The About page calls Cloudrexx "die SaaS-Version des bewährten Contrexx-Systems" and dates the first Contrexx version to 2005-04-04; Contrexx is not a candidate and no successorOf is recorded. The site links Instagram, LinkedIn and YouTube accounts; no field covers them. The i18n and userRoles statements come from the product page at /de/cms/funktionen.

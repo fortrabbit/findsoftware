@@ -12,7 +12,7 @@ description: Web framework and site generator for JavaScript and TypeScript that
 status: active
 maintainer: Mastro
 firstRelease: 2024
-language: typescript
+language: javascript
 runtime:
   - node
   - deno
@@ -104,7 +104,7 @@ figure:
   emoji: ⚡
   color: "#9ad1d4"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

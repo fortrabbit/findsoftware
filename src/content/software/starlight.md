@@ -13,7 +13,7 @@ status: active
 maintainer: Astro
 maintainerType: company
 firstRelease: 2023
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -126,7 +126,7 @@ figure:
   emoji: ⚡
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

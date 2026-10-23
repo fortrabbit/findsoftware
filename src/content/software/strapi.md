@@ -14,7 +14,7 @@ status: active
 maintainer: Strapi, Inc.
 maintainerType: company
 hqCountry: US
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -159,7 +159,7 @@ figure:
   emoji: 🔌
   color: "#f4d35e"
   textColor: "#1a1a1a"
-  text: TypeScript · Headless CMS
+  text: JavaScript / TypeScript · Headless CMS
 ai: authored
 packagistDownloads: null
 ---

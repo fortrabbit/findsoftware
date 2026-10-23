@@ -12,7 +12,7 @@ description: Outstatic is a content management system for Markdown and MDX files
 status: active
 maintainer: Outstatic
 maintainerType: individual
-language: typescript
+language: javascript
 adminUi: true
 installMethod: npm install outstatic
 licenseModel: source-available
@@ -78,7 +78,7 @@ figure:
   emoji: 📝
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · CMS
+  text: JavaScript / TypeScript · CMS
 ai: authored
 packagistDownloads: null
 ---

@@ -8,7 +8,6 @@ urls:
   plugins: https://hydephp.com/docs/2.x/extensions
 category:
   - ssg
-  - cms
 description: Static site generator built on Laravel Zero that compiles Markdown and Blade files into a static HTML site.
 status: active
 maintainer: Emma De Silva

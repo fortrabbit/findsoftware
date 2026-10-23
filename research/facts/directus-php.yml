@@ -1,0 +1,109 @@
+id: directus-php
+name: Directus 8
+status: discontinued
+checkedAt: 2026-10-23
+description: End-of-life version 8 of Directus, a database API that wraps custom SQL databases with REST and GraphQL endpoints.
+facts:
+  - field: status
+    value: discontinued
+    url: https://github.com/directus/v8-archive
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This end-of-life version of Directus has been deprecated and is superseded by the latest version on directus/directus"
+  - field: repository
+    value: https://github.com/directus/v8-archive
+    url: https://api.github.com/repos/directus/v8-archive
+    checkedAt: 2026-10-23
+    via: api
+  - field: maintainer
+    value: RANGER Studio LLC
+    url: https://github.com/directus/v8-archive
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright © 2006-2020, RANGER Studio LLC"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/directus
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/directus/v8-archive
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [headless-cms]
+    url: https://github.com/directus/v8-archive
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Wraps Custom SQL Databases with a REST/GraphQL API"
+  - field: license
+    value: GPL-3.0
+    url: https://github.com/directus/v8-archive
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Directus is released under the GPLv3 license"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/directus/v8-archive
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Directus is released under the GPLv3 license"
+  - field: installMethod
+    value: build.sh bundle
+    url: https://github.com/directus/v8-archive
+    checkedAt: 2026-10-23
+    via: page
+    quote: "To build this archive to a ready to use bundle, run the build.sh file"
+  - field: firstRelease
+    value: "2018"
+    url: https://api.github.com/repos/directus/v8-archive/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 8
+    url: https://api.github.com/repos/directus/v8-archive/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2020-11-19
+    url: https://api.github.com/repos/directus/v8-archive/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 512
+    url: https://api.github.com/repos/directus/v8-archive
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 121
+    url: https://api.github.com/repos/directus/v8-archive/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: status
+    value: discontinued
+    url: https://api.github.com/repos/directus/v8-archive
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/directus/v8-archive/blob/master/api/composer.json
+    checkedAt: 2026-10-23
+    via: page
+    quote: "\"php\": \"^7.1\""
+  - field: runtimeMin
+    value: "7.1"
+    url: https://github.com/directus/v8-archive/blob/master/api/composer.json
+    checkedAt: 2026-10-23
+    via: page
+    quote: "\"php\": \"^7.1\""
+  - field: headlessApi
+    value: [rest, graphql]
+    url: https://github.com/directus/v8-archive
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Wraps Custom SQL Databases with a REST/GraphQL API"
+notFound: [homepage, docs, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, renderingModes, contentStore, databases, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, outputDir]
+unreadable: []
+notes: >
+  The repository field in the candidate row, docs.directus.io/api/reference.html, now redirects to the current Directus documentation at directus.com/docs/api, so it is not recorded as docs or homepage; the v8 line has no site of its own. The repository is a monorepo of the Directus 8 application (api, app, docs, sdk and others); the README names no registry package, so no registry figure is recorded. The PHP requirement is read from api/composer.json at the default branch. The repository was archived by its owner on 2023-01-06 (GitHub page), and the README calls v8 end-of-life and superseded by directus/directus, which is a separate record (directus.yml), not a successorOf fact here. The repository license field is null on the API; the GPLv3 statement is taken from the README. The candidate row lists lastRelease 2020-11-19, which matches v8.8.1, the highest stable release. Pre-release tags (2.0.0-alpha and rc) are excluded from currentMajor and firstRelease is taken from the oldest GitHub release, 2.0.0-alpha.1 (2018-04-21). The categories value headless-cms comes from the CSV row, supported by the README line about wrapping SQL databases with REST and GraphQL; the README does not name a CMS.

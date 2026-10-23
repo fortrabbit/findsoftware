@@ -12,7 +12,7 @@ status: active
 maintainer: Noam Honig, Yoni Rapoport and contributors
 maintainerType: community
 firstRelease: 2021
-language: typescript
+language: javascript
 databases:
   - postgres
   - mysql
@@ -96,7 +96,7 @@ figure:
   emoji: 🧱
   color: "#f6bd60"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

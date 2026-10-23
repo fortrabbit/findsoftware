@@ -11,7 +11,7 @@ description: React framework built on Vite for server-rendered websites and web 
 status: active
 maintainer: Fatih Aygün
 firstRelease: 2022
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -117,7 +117,7 @@ figure:
   emoji: 🧱
   color: "#f4d35e"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

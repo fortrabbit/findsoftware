@@ -75,7 +75,7 @@ figure:
   emoji: 🧹
   color: "#f4d35e"
   textColor: "#1a1a1a"
-  text: JavaScript · Dev tool
+  text: JavaScript / TypeScript · Dev tool
 ai: authored
 contentStore: null
 databases: null

@@ -12,7 +12,7 @@ description: Express-like web framework for Node.js, written in TypeScript and p
 status: active
 maintainer: v 1 r t l
 firstRelease: 2020
-language: typescript
+language: javascript
 runtime:
   - node
   - bun
@@ -117,7 +117,7 @@ figure:
   emoji: 🧱
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

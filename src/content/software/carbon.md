@@ -13,7 +13,7 @@ maintainer: International Business Machines Corporation
 maintainerType: company
 parent: IBM
 firstRelease: 2021
-language: typescript
+language: javascript
 installMethod: npm
 licenseModel: open-source
 license: Apache-2.0
@@ -82,7 +82,7 @@ figure:
   emoji: 🧩
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: TypeScript · UI
+  text: JavaScript / TypeScript · UI
 ai: authored
 contentStore: null
 databases: null

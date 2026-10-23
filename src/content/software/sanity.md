@@ -13,7 +13,7 @@ description: Hosted content platform that pairs an open-source, React-based edit
 status: hosted-service
 maintainer: Sanity US Inc.
 maintainerType: company
-language: typescript
+language: javascript
 runtime:
   - node
 runtimeMin: node 22
@@ -128,7 +128,7 @@ figure:
   emoji: 🔌
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · Headless CMS
+  text: JavaScript / TypeScript · Headless CMS
 ai: authored
 packagistDownloads: null
 ---

@@ -14,7 +14,7 @@ maintainer: Shopify Inc.
 maintainerType: company
 firstRelease: 2021
 hqCountry: CA
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -88,7 +88,7 @@ figure:
   emoji: 🛒
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · Shop
+  text: JavaScript / TypeScript · Shop
 ai: authored
 packagistDownloads: null
 ---

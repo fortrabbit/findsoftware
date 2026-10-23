@@ -84,7 +84,7 @@ figure:
   emoji: 📈
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: JavaScript · Analytics
+  text: JavaScript / TypeScript · Analytics
 ai: authored
 contentStore: null
 databases: null

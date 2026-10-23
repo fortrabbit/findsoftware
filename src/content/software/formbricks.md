@@ -13,7 +13,7 @@ status: active
 maintainer: Formbricks GmbH
 maintainerType: company
 hqCountry: DE
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -100,7 +100,7 @@ figure:
   emoji: 📋
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · Forms
+  text: JavaScript / TypeScript · Forms
 ai: authored
 contentStore: null
 adminUi: null

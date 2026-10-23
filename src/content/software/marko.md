@@ -99,7 +99,7 @@ figure:
   emoji: 🧩
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: JavaScript · UI
+  text: JavaScript / TypeScript · UI
 ai: authored
 packagistDownloads: null
 ---

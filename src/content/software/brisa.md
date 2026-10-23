@@ -10,7 +10,7 @@ category:
 description: Web framework for JSX pages and web components that runs a Bun server by default and can also produce static output.
 status: active
 maintainer: Brisa
-language: typescript
+language: javascript
 runtime:
   - bun
 hosting:
@@ -103,7 +103,7 @@ figure:
   emoji: 🧱
   color: "#f4d35e"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

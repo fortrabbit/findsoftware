@@ -9,7 +9,7 @@ category:
   - library
 description: Adapter protocol and client libraries for building single-page React, Vue and Svelte apps on top of server-side routing.
 status: active
-language: typescript
+language: javascript
 runtime:
   - php
 hosting:
@@ -96,7 +96,7 @@ figure:
   emoji: 📐
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: TypeScript · Library
+  text: JavaScript / TypeScript · Library
 ai: authored
 contentStore: null
 databases: null

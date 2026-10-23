@@ -12,7 +12,7 @@ description: Web analytics platform, self-hosted or offered as a hosted service.
 status: active
 maintainer: Swetrix Ltd
 maintainerType: company
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -88,7 +88,7 @@ figure:
   emoji: 📈
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · Analytics
+  text: JavaScript / TypeScript · Analytics
 ai: authored
 contentStore: null
 databases: null

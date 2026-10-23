@@ -10,7 +10,7 @@ category:
   - e-commerce
 description: Open-source headless commerce framework built on Node.js and TypeScript, with a GraphQL API.
 status: active
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -102,7 +102,7 @@ figure:
   emoji: 🛒
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: TypeScript · Shop
+  text: JavaScript / TypeScript · Shop
 ai: authored
 packagistDownloads: null
 ---

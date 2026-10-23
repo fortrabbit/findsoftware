@@ -11,7 +11,7 @@ description: Enterprise-level front-end application framework for React, with ro
 status: active
 maintainer: ChenCheng
 maintainerType: individual
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -101,7 +101,7 @@ figure:
   emoji: 🧱
   color: "#f6bd60"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

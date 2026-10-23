@@ -11,7 +11,7 @@ description: Open-source GraphQL server for Node.js that runs as an add-on to ne
 status: active
 maintainer: Apollo Graph, Inc.
 maintainerType: company
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -89,7 +89,7 @@ figure:
   emoji: 🏗️
   color: "#f6bd60"
   textColor: "#1a1a1a"
-  text: TypeScript · Backend
+  text: JavaScript / TypeScript · Backend
 ai: authored
 packagistDownloads: null
 ---

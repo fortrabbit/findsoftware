@@ -12,6 +12,10 @@ status: active
 maintainer: umputun
 maintainerType: individual
 language: go
+runtime:
+  - binary
+hosting:
+  - binary
 runsAs:
   - always-on
 installMethod: docker-compose, binary-download, systemd, source-build
@@ -41,6 +45,9 @@ sources:
     checkedAt: 2026-10-19
   - field: language
     url: https://github.com/umputun/remark42
+    checkedAt: 2026-10-19
+  - field: runtime
+    url: https://remark42.com/docs/getting-started/installation/
     checkedAt: 2026-10-19
   - field: installMethod
     url: https://remark42.com/docs/getting-started/installation/

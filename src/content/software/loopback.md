@@ -13,7 +13,7 @@ status: active
 maintainer: IBM Corp. and LoopBack contributors
 maintainerType: company
 firstRelease: 2018
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -83,7 +83,7 @@ figure:
   emoji: 🧱
   color: "#f6bd60"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

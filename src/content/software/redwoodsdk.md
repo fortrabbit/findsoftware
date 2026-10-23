@@ -12,7 +12,7 @@ status: active
 maintainer: RedwoodJS Inc
 maintainerType: company
 firstRelease: 2025
-language: typescript
+language: javascript
 basedOn:
   - react
   - vite
@@ -92,7 +92,7 @@ figure:
   emoji: 🧱
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

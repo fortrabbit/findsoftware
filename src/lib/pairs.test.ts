@@ -23,11 +23,11 @@ const fields = dictionary.map((entry) =>
 );
 fieldOf.get('language')!.titleWith = 'written in {label}';
 
-/** n records running on Node.js, of which `both` are also written in TypeScript. */
-const sample = (node: number, typescript: number, both: number) => [
-  ...Array.from({ length: both }, (_, i) => row(`both-${i}`, { runtime: ['node'], language: 'typescript' })),
+/** n records running on Node.js, of which `both` are also written in Go. */
+const sample = (node: number, go: number, both: number) => [
+  ...Array.from({ length: both }, (_, i) => row(`both-${i}`, { runtime: ['node'], language: 'go' })),
   ...Array.from({ length: node - both }, (_, i) => row(`node-${i}`, { runtime: ['node'], language: 'javascript' })),
-  ...Array.from({ length: typescript - both }, (_, i) => row(`ts-${i}`, { runtime: ['php'], language: 'typescript' })),
+  ...Array.from({ length: go - both }, (_, i) => row(`go-${i}`, { runtime: ['php'], language: 'go' })),
 ];
 
 const pairingFor = (providers: ProviderRow[]) => {
@@ -49,10 +49,10 @@ describe('the pairing gate', () => {
     const { pairing } = pairingFor(providers);
     const pages = pagesOf(pairing, providers);
 
-    const typescript = pages.find((page) => page.av.id === 'node' && page.bv.id === 'typescript');
-    assert.ok(typescript, 'Node.js and TypeScript should be a page');
-    assert.equal(typescript.matches.length, 12);
-    assert.equal(pairPath(typescript), '/runtimes/node/languages/typescript/');
+    const go = pages.find((page) => page.av.id === 'node' && page.bv.id === 'go');
+    assert.ok(go, 'Node.js and Go should be a page');
+    assert.equal(go.matches.length, 12);
+    assert.equal(pairPath(go), '/runtimes/node/languages/go/');
   });
 
   it('refuses one that lists too few', () => {
@@ -60,16 +60,16 @@ describe('the pairing gate', () => {
     const { pairing } = pairingFor(providers);
 
     assert.equal(
-      pagesOf(pairing, providers).some((page) => page.av.id === 'node' && page.bv.id === 'typescript'),
+      pagesOf(pairing, providers).some((page) => page.av.id === 'node' && page.bv.id === 'go'),
       false,
     );
   });
 
   it('refuses one that narrows nothing, however many it lists', () => {
-    // Every TypeScript record also runs on Node.js, so the pair page is the TypeScript page.
+    // Every Go record also runs on Node.js, so the pair page is the Go page.
     const providers = sample(80, 40, 40);
     const { pairing } = pairingFor(providers);
-    const page = pagesOf(pairing, providers).find((entry) => entry.av.id === 'node' && entry.bv.id === 'typescript');
+    const page = pagesOf(pairing, providers).find((entry) => entry.av.id === 'node' && entry.bv.id === 'go');
 
     assert.equal(narrowing(40, 80, 40), 1);
     assert.equal(page, undefined);

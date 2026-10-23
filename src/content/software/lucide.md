@@ -11,7 +11,7 @@ description: Open-source set of scalable vector icons, distributed as packages f
 status: active
 maintainer: Lucide Icons and Contributors
 maintainerType: community
-language: typescript
+language: javascript
 licenseModel: open-source
 license: ISC, MIT
 currentMajor: "1"
@@ -68,7 +68,7 @@ figure:
   emoji: 📊
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · Graphics
+  text: JavaScript / TypeScript · Graphics
 ai: authored
 contentStore: null
 databases: null

@@ -14,7 +14,7 @@ status: hosted-service
 maintainer: Storyblok GmbH
 maintainerType: company
 hqCountry: AT
-language: typescript
+language: javascript
 adminUi: true
 headlessApi:
   - rest
@@ -107,7 +107,7 @@ figure:
   emoji: 🔌
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: TypeScript · Headless CMS
+  text: JavaScript / TypeScript · Headless CMS
 ai: authored
 packagistDownloads: null
 ---

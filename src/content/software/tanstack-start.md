@@ -10,7 +10,7 @@ category:
 description: Full-stack framework for React and Solid, powered by TanStack Router, for server-rendered, static and client-only web apps.
 status: active
 maintainer: Tanner Linsley
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -108,7 +108,7 @@ figure:
   emoji: 🧱
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

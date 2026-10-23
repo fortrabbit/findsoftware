@@ -12,7 +12,7 @@ description: Node.js and TypeScript framework for server-side applications, buil
 status: active
 maintainer: Romain Lenzotti
 maintainerType: individual
-language: typescript
+language: javascript
 runtime:
   - node
   - bun
@@ -93,7 +93,7 @@ figure:
   emoji: 🧱
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

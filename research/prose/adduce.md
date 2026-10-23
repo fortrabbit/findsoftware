@@ -1,0 +1,1 @@
+Adduce is a static site generator written in Rust, configured with TOML files. It has two parts. The individual part generates single pages, with one configuration file per page. The feed part uses a single configuration file for all documents, which are written in markdown, and can generate an Atom feed. The homepage states that Vale develops and maintains it.

@@ -12,7 +12,7 @@ status: active
 maintainer: basement.studio LLC
 maintainerType: company
 firstRelease: 2025
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -96,7 +96,7 @@ figure:
   emoji: 🧱
   color: "#9ad1d4"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

@@ -10,7 +10,7 @@ category:
 description: JavaScript Markdown parser that follows the CommonMark specification and supports syntax extensions and plugins.
 status: active
 maintainer: markdown-it (GitHub organization)
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -79,7 +79,7 @@ figure:
   emoji: 📐
   color: "#f6bd60"
   textColor: "#1a1a1a"
-  text: TypeScript · Library
+  text: JavaScript / TypeScript · Library
 ai: authored
 contentStore: null
 databases: null

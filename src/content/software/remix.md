@@ -11,7 +11,7 @@ description: Full-stack web framework built on Web APIs that combines routing, d
 status: active
 maintainer: Shopify, Inc.
 maintainerType: company
-language: typescript
+language: javascript
 runtime:
   - node
   - bun
@@ -103,7 +103,7 @@ figure:
   emoji: 🧱
   color: "#f6bd60"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

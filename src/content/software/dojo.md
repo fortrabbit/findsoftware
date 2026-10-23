@@ -12,7 +12,7 @@ status: stub
 maintainer: OpenJS Foundation
 maintainerType: foundation
 firstRelease: 2018
-language: typescript
+language: javascript
 i18n: internationalization tooling
 renderingModes:
   - spa
@@ -86,7 +86,7 @@ figure:
   emoji: 🧱
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

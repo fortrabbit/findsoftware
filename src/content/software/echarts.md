@@ -12,7 +12,7 @@ status: active
 maintainer: The Apache Software Foundation
 maintainerType: foundation
 firstRelease: 2015
-language: typescript
+language: javascript
 runsAs:
   - static
   - browser
@@ -82,7 +82,7 @@ figure:
   emoji: 📊
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: TypeScript · Graphics
+  text: JavaScript / TypeScript · Graphics
 ai: authored
 contentStore: null
 databases: null

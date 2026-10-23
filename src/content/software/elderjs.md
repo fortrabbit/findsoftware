@@ -12,7 +12,7 @@ description: Svelte-based static site generator and web framework that renders p
 status: stub
 maintainer: Elderjs
 firstRelease: 2020
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -109,7 +109,7 @@ figure:
   emoji: ⚡
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

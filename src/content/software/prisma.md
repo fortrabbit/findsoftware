@@ -11,7 +11,7 @@ description: TypeScript and Node.js object-relational mapper that generates a ty
 status: active
 maintainer: Prisma Data, Inc.
 maintainerType: company
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -85,7 +85,7 @@ figure:
   emoji: 📐
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · Library
+  text: JavaScript / TypeScript · Library
 ai: authored
 contentStore: null
 adminUi: null

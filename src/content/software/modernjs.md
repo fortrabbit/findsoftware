@@ -11,7 +11,7 @@ description: Progressive web framework based on React for client-rendered, serve
 status: active
 maintainer: Modern.js
 firstRelease: 2021
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -98,7 +98,7 @@ figure:
   emoji: 🧱
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

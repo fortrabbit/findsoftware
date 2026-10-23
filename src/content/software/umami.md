@@ -12,7 +12,7 @@ description: Open-source web and product analytics platform, self-hosted or offe
 status: active
 maintainer: Umami Software, Inc.
 maintainerType: company
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -93,7 +93,7 @@ figure:
   emoji: 📈
   color: "#a3c4f3"
   textColor: "#1a1a1a"
-  text: TypeScript · Analytics
+  text: JavaScript / TypeScript · Analytics
 ai: authored
 contentStore: null
 adminUi: null

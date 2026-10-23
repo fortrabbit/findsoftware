@@ -12,7 +12,7 @@ status: active
 maintainer: Douglas Matoso
 maintainerType: individual
 firstRelease: 2018
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -108,7 +108,7 @@ figure:
   emoji: ⚡
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

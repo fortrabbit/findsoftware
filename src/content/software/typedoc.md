@@ -9,7 +9,7 @@ category:
   - ssg
 description: Documentation generator that builds HTML or JSON API documentation from the comments of TypeScript projects.
 status: active
-language: typescript
+language: javascript
 runtime:
   - node
 runtimeMin: node 18
@@ -71,7 +71,7 @@ figure:
   emoji: ⚡
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

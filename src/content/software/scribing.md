@@ -6,7 +6,6 @@ urls:
   docs: https://github.com/elazar/scribing/blob/master/README.md
 category:
   - ssg
-  - cms
 description: Static blog generator written in PHP that builds posts and pages from Markdown files with Plates templates.
 status: discontinued
 maintainer: Matthew Turland

@@ -10,7 +10,7 @@ category:
   - backend
 description: Node.js and TypeScript API server framework for HTTP, WebSocket and other transports, with clustering and background tasks.
 status: active
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -83,7 +83,7 @@ figure:
   emoji: 🧱
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

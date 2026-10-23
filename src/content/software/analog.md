@@ -9,7 +9,7 @@ category:
   - framework
 description: Full-stack meta-framework for building Angular applications and websites, with Vite builds and Nitro server integrations.
 status: active
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -93,7 +93,7 @@ figure:
   emoji: 🧱
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

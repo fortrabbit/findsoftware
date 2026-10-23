@@ -11,7 +11,7 @@ description: Fullstack toolkit that adds conventions, Blitz RPC and authenticati
 status: active
 maintainer: Blitz Revolution Inc.
 maintainerType: company
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -86,7 +86,7 @@ figure:
   emoji: 🧱
   color: "#a3c4f3"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

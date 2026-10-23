@@ -11,7 +11,7 @@ status: stub
 maintainer: Elya Sikerin
 maintainerType: individual
 firstRelease: 2018
-language: typescript
+language: javascript
 contentStore:
   - flat-file
 templating: handlebars, mustache
@@ -83,7 +83,7 @@ figure:
   emoji: ⚡
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

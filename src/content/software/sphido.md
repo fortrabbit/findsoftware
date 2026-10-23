@@ -10,7 +10,7 @@ category:
 description: Static site generator built from two core functions, getPages() and allPages(), that read and iterate a folder of pages.
 status: active
 maintainer: Roman Ožana
-language: typescript
+language: javascript
 runtime:
   - node
 runtimeMin: node 22
@@ -96,7 +96,7 @@ figure:
   emoji: ⚡
   color: "#f4d35e"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

@@ -12,7 +12,7 @@ status: active
 maintainer: Yuxi (Evan) You and Vue contributors
 maintainerType: community
 firstRelease: 2013
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -107,7 +107,7 @@ figure:
   emoji: 🧱
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

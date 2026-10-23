@@ -12,6 +12,10 @@ status: active
 maintainer: Kévin Dunglas
 maintainerType: individual
 language: go
+runtime:
+  - binary
+hosting:
+  - binary
 runtimeMin: php 8.2
 basedOn:
   - caddy
@@ -54,6 +58,9 @@ sources:
     checkedAt: 2026-10-19
   - field: language
     url: https://github.com/php/frankenphp
+    checkedAt: 2026-10-19
+  - field: runtime
+    url: https://frankenphp.dev/
     checkedAt: 2026-10-19
   - field: runtimeMin
     url: https://frankenphp.dev/

@@ -9,7 +9,7 @@ category:
 description: Static site generator for Deno.
 status: active
 maintainer: Oscar Otero
-language: typescript
+language: javascript
 runtime:
   - deno
 hosting:
@@ -66,7 +66,7 @@ figure:
   emoji: ⚡
   color: "#f4d35e"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

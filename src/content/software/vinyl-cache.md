@@ -13,6 +13,10 @@ maintainer: The Vinyl Cache Project
 maintainerType: community
 hqCountry: DK
 language: c
+runtime:
+  - binary
+hosting:
+  - binary
 runsAs:
   - always-on
 installMethod: source tarball, FreeBSD package, OpenBSD package
@@ -42,6 +46,9 @@ sources:
     checkedAt: 2026-10-19
   - field: language
     url: https://code.vinyl-cache.org/api/v1/repos/vinyl-cache/vinyl-cache
+    checkedAt: 2026-10-19
+  - field: runtime
+    url: https://vinyl-cache.org/docs/9.1/installation/install_source.html
     checkedAt: 2026-10-19
   - field: maintainer
     url: https://vinyl-cache.org/organization/bylaws/bylaws_1.00.html

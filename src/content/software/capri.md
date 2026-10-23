@@ -13,7 +13,7 @@ maintainer: Lionizers GmbH
 maintainerType: company
 firstRelease: 2022
 hqCountry: DE
-language: typescript
+language: javascript
 hosting:
   - static
 basedOn:
@@ -95,7 +95,7 @@ figure:
   emoji: ⚡
   color: "#f6bd60"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

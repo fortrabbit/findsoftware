@@ -9,7 +9,7 @@ category:
   - framework
 description: TypeScript-first Node.js web framework for web apps and API servers, with ORM, validation, mail and queues in the core distribution.
 status: active
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -93,7 +93,7 @@ figure:
   emoji: 🧱
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

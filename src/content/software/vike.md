@@ -12,7 +12,7 @@ status: active
 maintainer: Romuald Brillout
 maintainerType: individual
 firstRelease: 2021
-language: typescript
+language: javascript
 runtime:
   - node
   - deno
@@ -110,7 +110,7 @@ figure:
   emoji: 🧱
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: TypeScript · Framework
+  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

@@ -1,0 +1,1 @@
+Hakyll is a Haskell library for generating static sites. A site is defined by a Haskell program that holds its compilation rules, compiled to an executable that builds the site into HTML, and the Pandoc integration gives it Markdown and TeX support. The HTML is then uploaded to a host. The homepage points to IRC and a discussion group for questions.

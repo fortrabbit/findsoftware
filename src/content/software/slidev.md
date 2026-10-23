@@ -12,7 +12,7 @@ description: Markdown-based slides maker and presenter that builds slide decks a
 status: active
 maintainer: Anthony Fu
 firstRelease: 2021
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -119,7 +119,7 @@ figure:
   emoji: ⚡
   color: "#f7a399"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

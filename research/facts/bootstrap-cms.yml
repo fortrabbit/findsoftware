@@ -1,0 +1,114 @@
+id: bootstrap-cms
+name: Bootstrap CMS
+status: discontinued
+checkedAt: 2026-10-23
+description: PHP content management system built on Laravel and Sentry.
+facts:
+  - field: status
+    value: discontinued
+    url: https://github.com/BootstrapCMS/CMS
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This repository was archived by the owner on Jan 18, 2018. It is now read-only."
+  - field: status
+    value: discontinued
+    url: https://repo.packagist.org/p2/graham-campbell/bootstrap-cms.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: repository
+    value: https://github.com/BootstrapCMS/CMS
+    url: https://api.github.com/repos/BootstrapCMS/CMS
+    checkedAt: 2026-10-23
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/BootstrapCMS
+    checkedAt: 2026-10-23
+    via: api
+  - field: maintainer
+    value: Graham Campbell
+    url: https://raw.githubusercontent.com/BootstrapCMS/CMS/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "is maintained by Graham Campbell"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/BootstrapCMS/CMS
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://raw.githubusercontent.com/BootstrapCMS/CMS/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "PHP 5.5+"
+  - field: runtimeMin
+    value: "5.5"
+    url: https://raw.githubusercontent.com/BootstrapCMS/CMS/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "PHP 5.5+"
+  - field: basedOn
+    value: laravel
+    url: https://raw.githubusercontent.com/BootstrapCMS/CMS/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "powered by Laravel 5.1"
+  - field: categories
+    value: [cms]
+    url: https://raw.githubusercontent.com/BootstrapCMS/CMS/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "is a PHP CMS powered by"
+  - field: installMethod
+    value: composer create-project, from the graham-campbell/bootstrap-cms package
+    url: https://raw.githubusercontent.com/BootstrapCMS/CMS/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "composer create-project graham-campbell/bootstrap-cms --prefer-dist -s dev"
+  - field: license
+    value: AGPL-3.0-or-later
+    url: https://raw.githubusercontent.com/BootstrapCMS/CMS/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "either version 3 of the License, or (at your option) any later version"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/BootstrapCMS/CMS/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "GNU AFFERO GENERAL PUBLIC LICENSE"
+  - field: firstRelease
+    value: "2014"
+    url: https://api.github.com/repos/BootstrapCMS/CMS/releases?per_page=100
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestPrereleaseDate
+    value: 2015-03-15
+    url: https://api.github.com/repos/BootstrapCMS/CMS/releases?per_page=100
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 2498
+    url: https://api.github.com/repos/BootstrapCMS/CMS
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 16
+    url: https://api.github.com/repos/BootstrapCMS/CMS/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: packagistName
+    value: graham-campbell/bootstrap-cms
+    url: https://repo.packagist.org/p2/graham-campbell/bootstrap-cms.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: packagistDownloads
+    value: 9771 (total)
+    url: https://packagist.org/packages/graham-campbell/bootstrap-cms.json
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, docs, maintainerType, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, currentMajor, latestReleaseDate, runsAs, renderingModes, contentStore, databases, templating, headlessApi, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, apiLimits, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, docker, endoflifeId, supportedVersions, npmName, npmWeeklyDownloads, pypiDownloads]
+unreadable: []
+notes: >
+  The repository has no homepage, so none is recorded; the CSV row has none either. The GitHub repository is archived ("This repository was archived by the owner on Jan 18, 2018"), and the Packagist package graham-campbell/bootstrap-cms, the one the install docs name, is flagged abandoned at package level, so status is discontinued. The README still says the project "is maintained by Graham Campbell" in the present tense, which is not an end statement on its own. The GitHub releases are all alpha prereleases from v0.1.0-alpha (2014-01-23) to v0.9.0-alpha (2015-03-15); no stable release exists, so currentMajor and latestReleaseDate are unknown and the newest prerelease is recorded. A reviewer may decide whether the import's four-year rule, applied to prereleases, would have moved this record to stub had the status signal been absent. The repository is public and holds source, so sourcePublic is not recorded as false. The Sentry library is named as a dependency in the README ("powered by Laravel 5 and Sentry") and is not recorded as basedOn, since Sentry is a library rather than the software the CMS extends. The README says a database server is required without naming an engine, so databases is unknown. The maintainer is an individual; the README names Graham Campbell and his GitHub profile, and no legal notice was found, so maintainerType is left to the import. The Laravel version stated in the README is 5.1 and the GitHub description says "Laravel 5"; basedOn names only laravel.

@@ -12,7 +12,7 @@ description: Frontend build tool and dev server for web applications, with a dev
 status: active
 maintainer: VoidZero Inc.
 maintainerType: company
-language: typescript
+language: javascript
 runtime:
   - node
 runtimeMin: node 20
@@ -83,7 +83,7 @@ figure:
   emoji: 📦
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: TypeScript · Build
+  text: JavaScript / TypeScript · Build
 ai: authored
 contentStore: null
 databases: null

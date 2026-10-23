@@ -18,7 +18,7 @@ maintainer: Payload CMS, Inc.
 maintainerType: company
 parent: Figma
 hqCountry: US
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -161,7 +161,7 @@ figure:
   emoji: 🔌
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: TypeScript · Headless CMS
+  text: JavaScript / TypeScript · Headless CMS
 ai: authored
 packagistDownloads: null
 ---

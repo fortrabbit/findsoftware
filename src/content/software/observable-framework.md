@@ -11,7 +11,7 @@ description: Static site generator for data apps, dashboards and reports, with J
 status: active
 maintainer: Observable, Inc.
 maintainerType: company
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -89,7 +89,7 @@ figure:
   emoji: ⚡
   color: "#b8e0d2"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

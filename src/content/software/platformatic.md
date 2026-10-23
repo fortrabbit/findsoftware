@@ -102,7 +102,7 @@ figure:
   emoji: 🖥️
   color: "#c5e1a5"
   textColor: "#1a1a1a"
-  text: JavaScript · Server
+  text: JavaScript / TypeScript · Server
 ai: authored
 contentStore: null
 adminUi: null

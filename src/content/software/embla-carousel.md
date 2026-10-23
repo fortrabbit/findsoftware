@@ -12,7 +12,7 @@ description: JavaScript carousel library with fluid motion, swipe gestures and a
 status: active
 maintainer: davidjerleke
 maintainerType: individual
-language: typescript
+language: javascript
 runsAs:
   - browser
 installMethod: npm install embla-carousel
@@ -84,7 +84,7 @@ figure:
   emoji: 🧩
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · UI
+  text: JavaScript / TypeScript · UI
 ai: authored
 contentStore: null
 databases: null

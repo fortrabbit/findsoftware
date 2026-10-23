@@ -10,7 +10,7 @@ status: discontinued
 maintainer: Pedro Nauck
 maintainerType: individual
 firstRelease: 2018
-language: typescript
+language: javascript
 hosting:
   - static
 basedOn:
@@ -93,7 +93,7 @@ figure:
   emoji: ⚡
   color: "#9ad1d4"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

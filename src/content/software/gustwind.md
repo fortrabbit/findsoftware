@@ -10,7 +10,7 @@ category:
 description: Node.js-powered website creator that builds component-oriented sites from HTMLisp templates, TypeScript and Markdown.
 status: active
 maintainer: Juho Vepsäläinen
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -85,7 +85,7 @@ figure:
   emoji: ⚡
   color: "#a3c4f3"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

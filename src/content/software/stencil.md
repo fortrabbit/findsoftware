@@ -13,7 +13,7 @@ maintainer: Drifty Co.
 maintainerType: company
 parent: OutSystems
 firstRelease: 2017
-language: typescript
+language: javascript
 runtime:
   - node
 runtimeMin: node 16
@@ -96,7 +96,7 @@ figure:
   emoji: 🧩
   color: "#cdb4db"
   textColor: "#1a1a1a"
-  text: TypeScript · UI
+  text: JavaScript / TypeScript · UI
 ai: authored
 contentStore: null
 databases: null

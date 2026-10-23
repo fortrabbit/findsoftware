@@ -12,7 +12,7 @@ status: active
 maintainer: Silex Labs
 firstRelease: 2009
 hqCountry: FR
-language: typescript
+language: javascript
 runtime:
   - node
 hosting:
@@ -111,7 +111,7 @@ figure:
   emoji: ⚡
   color: "#f6bd60"
   textColor: "#1a1a1a"
-  text: TypeScript · SSG
+  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---
