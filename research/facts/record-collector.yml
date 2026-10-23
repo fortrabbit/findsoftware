@@ -1,0 +1,135 @@
+id: record-collector
+name: Record Collector
+status: accepted
+checkedAt: 2026-10-23
+description: Static site generator for .NET that reads a content folder and renders pages with ASP.NET Core and Blazor components.
+facts:
+  - field: homepage
+    value: https://record-collector.net
+    url: https://record-collector.net/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This is the official site for the .NET static site generator"
+  - field: repository
+    value: https://github.com/krompaco/record-collector
+    url: https://api.github.com/repos/krompaco/record-collector
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://record-collector.net/pages/getting-started/
+    url: https://record-collector.net/pages/getting-started/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "To learn how Record Collector works it's easiest to grab a copy of the repository"
+  - field: categories
+    value: [ssg]
+    url: https://record-collector.net/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This is the official site for the .NET static site generator"
+  - field: language
+    value: C#
+    url: https://api.github.com/repos/krompaco/record-collector
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [dotnet]
+    url: https://record-collector.net/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "It is built using component-driven Blazor Static SSR on .NET 10.0."
+  - field: contentStore
+    value: [flat-file]
+    url: https://record-collector.net/pages/about/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "reads a typical static site content folder"
+  - field: buildCommand
+    value: dotnet test ./src/Krompaco.RecordCollector.Generator/Krompaco.RecordCollector.Generator.csproj
+    url: https://record-collector.net/pages/getting-started/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "dotnet test ./src/Krompaco.RecordCollector.Generator/Krompaco.RecordCollector.Generator.csproj"
+  - field: renderingModes
+    value: [static]
+    url: https://record-collector.net/pages/getting-started/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Generate as a static site"
+  - field: runsAs
+    value: [static]
+    url: https://record-collector.net/pages/about/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generating a static site that you host on for example Netlify"
+  - field: basedOn
+    value: Blazor
+    url: https://record-collector.net/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "It is built using component-driven Blazor Static SSR on .NET 10.0."
+  - field: installMethod
+    value: git clone
+    url: https://record-collector.net/pages/getting-started/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "clone, fork and then clone"
+  - field: installMethod
+    value: ZIP download
+    url: https://record-collector.net/pages/getting-started/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "just download as a ZIP-file"
+  - field: runsAs
+    value: [local]
+    url: https://record-collector.net/pages/getting-started/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "grab a copy of the repository run it locally"
+  - field: templating
+    value: blazor
+    url: https://github.com/krompaco/record-collector/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "ASP.NET Blazor SSR and C# skills creating static site templates"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/krompaco/record-collector
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/krompaco/record-collector/blob/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License"
+  - field: maintainer
+    value: Johan Kronberg
+    url: https://github.com/krompaco/record-collector/blob/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2020 Johan Kronberg"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/krompaco
+    checkedAt: 2026-10-23
+    via: api
+  - field: lastCommitDate
+    value: 2026-05-22
+    url: https://api.github.com/repos/krompaco/record-collector/commits?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 58
+    url: https://api.github.com/repos/krompaco/record-collector
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/krompaco/record-collector/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+notFound: [firstRelease, currentMajor, latestReleaseDate, latestPrereleaseDate, runtimeMin, endoflifeId, supportedVersions, maintainerType, hqCountry, parent, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, outputDir, nugetName, nugetDownloads]
+unreadable: []
+notes: >
+  The repository has no releases and no tags, so no release fields are recorded and lastCommitDate is the committer date of the newest commit on main. The homepage is the project's own site and is the same site the README calls its official web site. The homepage says Record Collector is built using Blazor Static SSR on .NET 10.0, which sets basedOn Blazor; the about page adds that the content folder is read into C# objects and used in a regular ASP.NET Core project with Blazor components, and the README says the generation process runs through WebApplicationFactory from Microsoft.AspNetCore.Mvc.Testing. The README names Hugo as an inspiration and says the content structure is kept compatible with it and TOML, YAML and JSON front matter are parsed; that is an inspiration, not a parent, so no basedOn for Hugo is recorded. The default frontend is based on Tailwind CSS, htmx and hyperscript and requires npm steps; a Simple.css frontend needs no such steps. The output path is set per site in appsettings as StaticSiteRootPath, so outputDir is not recorded; the Netlify posts show artifacts/static-site/ as the publish directory, which is a sample value. The README says the project works "live" on content preview and templating during development; that is a development-time run, not an editor preview of unsaved content, so livePreview is not recorded. The getting-started page says the template override feature was removed with the move to .NET 8.0 and Blazor SSR. The NuGet search returned no package under the project's name, so no registry field is recorded. The minimum .NET runtime is not stated as a minimum, so runtimeMin is absent; the homepage and README name the .NET version the project is built with.

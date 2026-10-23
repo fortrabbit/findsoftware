@@ -1,0 +1,86 @@
+id: bonobo
+name: Bonobo
+status: stub
+checkedAt: 2026-10-23
+description: Static site generator written in C that builds pages from Markdown files with JSON metadata.
+facts:
+  - field: repository
+    value: https://github.com/rockhardandrew/bonobo
+    url: https://api.github.com/repos/rockhardandrew/bonobo
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: C
+    url: https://api.github.com/repos/rockhardandrew/bonobo
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://api.github.com/repos/rockhardandrew/bonobo
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://raw.githubusercontent.com/rockhardandrew/bonobo/master/Makefile
+    checkedAt: 2026-10-23
+    via: page
+    quote: "clang -static -O2 -march=native"
+  - field: installMethod
+    value: build from source with clang or tcc, then copy the binary to /usr/local/bin
+    url: https://raw.githubusercontent.com/rockhardandrew/bonobo/master/Makefile
+    checkedAt: 2026-10-23
+    via: page
+    quote: "installs binary on linux, needs write priviledges to /usr/local/bin"
+  - field: contentStore
+    value: flat-file
+    url: https://raw.githubusercontent.com/rockhardandrew/bonobo/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A bonobo page is split into metadata and content"
+  - field: license
+    value: ISC
+    url: https://api.github.com/repos/rockhardandrew/bonobo
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/rockhardandrew/bonobo/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted"
+  - field: maintainer
+    value: Andrew Bonner
+    url: https://raw.githubusercontent.com/rockhardandrew/bonobo/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2025, Andrew Bonner"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/rockhardandrew/bonobo
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 11
+    url: https://api.github.com/repos/rockhardandrew/bonobo
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/rockhardandrew/bonobo/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: lastCommitDate
+    value: 2026-04-01
+    url: https://api.github.com/repos/rockhardandrew/bonobo/commits
+    checkedAt: 2026-10-23
+    via: api
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/rockhardandrew/bonobo
+    checkedAt: 2026-10-23
+    via: page
+    quote: "a static site generator so simple and easy a bonobo could use it"
+notFound: [homepage, docs, buildCommand, firstRelease, currentMajor, latestReleaseDate, latestPrereleaseDate, outputDir, runsAs, templating, basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, wikidata, databases, adminUi, headlessApi, livePreview, i18n, multisite, userRoles, sso, importsFrom, pricingPage, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, npmName, packagistName, forgejoStargazers]
+unreadable: []
+notes: >
+  Criterion 3 is in doubt: the only install steps are the Makefile targets (bonobo, debug, fast, install), and no README, docs page or wiki describes them, so a README or docs page with the install route would settle it. The README has no install section; it describes the page format, a JSON metadata block at the top of each Markdown file with title, description, date, language and css keys, and its feature list says RSS is supported, and the Makefile's install target copies the binary to /usr/local/bin. The repository has no GitHub release or tag (the releases and tags endpoints return empty lists), so lastCommitDate is the committer date of the newest commit on master, as AGENTS.md requires. The project is not archived and was last pushed on 2026-04-01, so no end signal is found. The repository description calls it a static site generator, which is the basis for renderingModes static; the README does not state the output form. The repository is the only web presence found, so no homepage is recorded. The contributors endpoint lists one contributor. The Makefile's default target builds with clang, and a tcc target exists for quick builds; the runtime is recorded as binary because the README names no runtime. No runtimeMin or outputDir is stated.

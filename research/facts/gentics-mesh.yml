@@ -1,0 +1,180 @@
+id: gentics-mesh
+name: Gentics Mesh
+status: accepted
+checkedAt: 2026-10-23
+description: Java headless CMS that keeps its content in a relational database reached through a JDBC connector and serves it over REST and GraphQL APIs.
+facts:
+  - field: homepage
+    value: https://www.gentics.com/mesh/
+    url: https://www.gentics.com/mesh/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Gentics Mesh is a headless or API-first CMS."
+  - field: repository
+    value: https://github.com/gentics/mesh
+    url: https://api.github.com/repos/gentics/mesh
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://www.gentics.com/mesh/docs/getting-started/
+    url: https://www.gentics.com/mesh/docs/getting-started/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Here you will find everything to get you started with Gentics Mesh."
+  - field: maintainer
+    value: Gentics Software GmbH
+    url: https://github.com/gentics/mesh/blob/dev/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2014-2025 Gentics Software GmbH"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/gentics
+    checkedAt: 2026-10-23
+    via: api
+  - field: hqCountry
+    value: AT
+    url: https://github.com/gentics/mesh/blob/dev/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Gentics Software GmbH in Vienna, Austria"
+  - field: chat
+    value: https://gitter.im/gentics/mesh
+    url: https://github.com/gentics/mesh/blob/dev/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "You can chat with us via our gitter channel"
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/gentics/mesh
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [headless-cms]
+    url: https://github.com/gentics/mesh/blob/dev/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "open-source headless CMS"
+  - field: basedOn
+    value: [Vert.x]
+    url: https://www.gentics.com/mesh/docs/administration-guide/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Vert.x Core Framework"
+  - field: runtime
+    value: [jvm]
+    url: https://www.gentics.com/mesh/docs/administration-guide/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "There are no external dependencies besides Java Runtime 11."
+  - field: contentStore
+    value: database
+    url: https://www.gentics.com/mesh/docs/getting-started/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "providing along an external instance of MariaDB 10.3+ database as a data storage"
+  - field: databases
+    value: [mariadb]
+    url: https://www.gentics.com/mesh/docs/getting-started/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "providing along an external instance of MariaDB 10.3+ database as a data storage"
+  - field: databases
+    value: [hsqldb]
+    url: https://www.gentics.com/mesh/docs/getting-started/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "self-hosted, in-memory based HSQL database"
+  - field: serverNeeds
+    value:
+      - Java Runtime 11 with no other external dependencies
+      - production servers must be run on Linux
+      - a JDBC database connector JAR for the chosen database
+      - search through the bundled Elasticsearch, started by default unless disabled
+    url: https://www.gentics.com/mesh/docs/administration-guide/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The elasticsearch folder contains the included Elasticsearch installation which will be started by default."
+  - field: installMethod
+    value: JAR file
+    url: https://www.gentics.com/mesh/docs/getting-started/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "download a Gentics Mesh JAR and a database connector JAR file"
+  - field: installMethod
+    value: docker image
+    url: https://www.gentics.com/mesh/docs/getting-started/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The mesh image contains an empty Gentics Mesh server without any content."
+  - field: runsAs
+    value: [always-on]
+    url: https://www.gentics.com/mesh/docs/getting-started/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Gentics Mesh is a headless CMS which provides developers with HTTP based API's"
+  - field: adminUi
+    value: "yes, web user interface"
+    url: https://www.gentics.com/mesh/docs/administration-guide/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The Gentics Mesh user interface has been designed mobile-first"
+  - field: headlessApi
+    value: [rest, graphql]
+    url: https://www.gentics.com/mesh/docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "references for available APIs, such as REST and GraphQL"
+  - field: i18n
+    value: yes
+    url: https://www.gentics.com/mesh/docs/getting-started/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Supporting multi-language and localisation"
+  - field: userRoles
+    value: "yes, roles assigned to groups"
+    url: https://www.gentics.com/mesh/docs/getting-started/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Roles can be assigned to groups"
+  - field: licenseModel
+    value: open-core
+    url: https://github.com/gentics/mesh/blob/dev/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "available as both open-source software (OSS) and Enterprise Edition (EE)"
+  - field: license
+    value: Apache-2.0
+    url: https://www.gentics.com/mesh/docs/administration-guide/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Gentics Mesh is published under Apache 2.0 license."
+  - field: firstRelease
+    value: "2017"
+    url: https://api.github.com/repos/gentics/mesh/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/gentics/mesh/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-22
+    url: https://api.github.com/repos/gentics/mesh/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 593
+    url: https://api.github.com/repos/gentics/mesh
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 30
+    url: https://api.github.com/repos/gentics/mesh/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+notFound: [sso, multisite, importsFrom, livePreview, paidEdition, pricingPage, hostedOffering, customerCount, reportedInstalls, usageShare, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, discord, newsletter, wikidata, endoflifeId, npmName, packagistName, parent, forkOf, successorOf, alternativeTo, maintainerType, sourcePublic, selfHostOption, apiLimits, regions, latestPrereleaseDate, youtube, linkedin, facebook, instagram]
+unreadable: []
+notes: >
+  The candidate row lists https://getmesh.io, which redirects to the GitHub repository; the project's own site named in the README is https://gentics.com/mesh, recorded as https://www.gentics.com/mesh/ (the page is the documentation landing). The README says Gentics Mesh is available as OSS and Enterprise Edition, and links an EE features page at gentics.com/infoportal/cmp/ossandee/ that answers 404 when read, so no paidEdition is recorded. The docs also list Commercial Plugins (Keycloak, Favourites, Comments, Likes, Must Read, GraphQL Library); the Keycloak plugin page says commercial plugins are downloaded from a commercial repository and must match the server's major and minor version, but the page does not state the plugins replace open-source features, so they are not recorded as an edition. The LTS releases are for Product Maintenance subscription customers, which is paid support, so they are not an edition. The Keycloak plugin page states that it does not add automatic SSO support for the Gentics Mesh UI, so sso is not recorded. The administration guide's system requirements say Java Runtime 11 and no other external dependencies, while the repository's pom.xml compiles for release 17 and the Docker base image is Java 17; the pages and the code disagree, so runtimeMin is left out and runtime jvm rests on the page. The software stack table lists Hibernate, Elasticsearch, Vert.x, Hazelcast and Dagger 2; no version is recorded from it. The Vert.x entry in basedOn comes from the stack table's core framework row. The admin guide also says the Mesh database connector is loaded from a JDBC classpath and lists MariaDB 10.3+ as the production example; no other database is named in the pages read. The copyright year in the README reads 2014-2025 and the release is 2026; the maintainer name is recorded from the README copyright line. Gentics Software AG is named beside GmbH in the docs footer; no parent is recorded because no page states the relationship. The contributor count reads the rel="last" page of the contributors endpoint with per_page=1.

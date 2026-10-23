@@ -1,0 +1,133 @@
+id: tags
+name: Brace Tags
+status: stub
+checkedAt: 2026-10-23
+description: Static site generator with two template tags, include and is, for reusing HTML partials across the pages of a site.
+facts:
+  - field: repository
+    value: https://github.com/braceio/tags
+    url: https://api.github.com/repos/braceio/tags
+    checkedAt: 2026-10-23
+    via: api
+  - field: maintainer
+    value: Cole Krumbholz, Lauri Hynynen
+    url: https://raw.githubusercontent.com/braceio/tags/master/setup.py
+    checkedAt: 2026-10-23
+    via: page
+    quote: "author='Cole Krumbholz, Lauri Hynynen'"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/braceio/tags
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/braceio/tags
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://raw.githubusercontent.com/braceio/tags/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Brace Tags is a static site generator focused on simplicity."
+  - field: runtime
+    value: [python]
+    url: https://raw.githubusercontent.com/braceio/tags/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Brace Tags requires Python."
+  - field: installMethod
+    value: sudo easy_install brace-tags
+    url: https://raw.githubusercontent.com/braceio/tags/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "sudo easy_install brace-tags"
+  - field: buildCommand
+    value: tags build
+    url: https://raw.githubusercontent.com/braceio/tags/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "tags build"
+  - field: outputDir
+    value: _site
+    url: https://raw.githubusercontent.com/braceio/tags/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "the generated site in the `_site` folder"
+  - field: renderingModes
+    value: [static]
+    url: https://raw.githubusercontent.com/braceio/tags/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Brace Tags is a static site generator focused on simplicity."
+  - field: runsAs
+    value: [static]
+    url: https://raw.githubusercontent.com/braceio/tags/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "you can deploy it to any static site host"
+  - field: runsAs
+    value: [local]
+    url: https://raw.githubusercontent.com/braceio/tags/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "will start a local webserver that you can use"
+  - field: templating
+    value: own template language with two tags, include and is
+    url: https://raw.githubusercontent.com/braceio/tags/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The template language provided by Brace Tags has only two tags"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/braceio/tags/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/braceio/tags/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy of"
+  - field: firstRelease
+    value: "2014"
+    url: https://pypi.org/pypi/brace-tags/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://pypi.org/pypi/brace-tags/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2014-06-18
+    url: https://pypi.org/pypi/brace-tags/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiName
+    value: brace-tags
+    url: https://pypi.org/pypi/brace-tags/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiDownloads
+    value: "18 (last month)"
+    url: https://pypistats.org/api/packages/brace-tags/recent
+    checkedAt: 2026-10-23
+    via: api
+    quote: "\"last_month\":18"
+  - field: githubStargazers
+    value: 192
+    url: https://api.github.com/repos/braceio/tags
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/braceio/tags/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, adminUi, contentStore, databases, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, latestPrereleaseDate, docker, supportedVersions, runtimeMin, npmName, packagistName, hostedService]
+unreadable: [http://tags.brace.io/]
+notes: >
+  Stub: the homepage http://tags.brace.io/ answers only over plain http and loops through a JavaScript redirect to /lander, which answers with a further redirect to /lander, so no page of the project's own site shows the software now; no homepage is recorded and the link is not used. The last release on PyPI (brace-tags 1.0.10, 2014-06-18) and the last commit on GitHub (2014-06-18) are more than four years old, so the import will move the record to stub under criterion 4 regardless; this is recorded here as stub. The repository has no GitHub release or tag, so the PyPI release line is used for currentMajor, firstRelease and latestReleaseDate. The README states the install with easy_install and says the tags build command writes to _site; the template language has two tags, include and is. The README says it works with Python 2.6, 2.7 and 3.3, which is a compatibility statement and not a minimum, so runtimeMin is absent. The README invites hosting on Brace (brace.io), a hosted service whose page was not read. The stars and contributors come from the GitHub repository.

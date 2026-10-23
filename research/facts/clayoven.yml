@@ -1,0 +1,122 @@
+id: clayoven
+name: clayoven
+status: accepted
+checkedAt: 2026-10-23
+description: Static site generator in Ruby, aimed at math-heavy sites, that builds pages from claytext source files.
+facts:
+  - field: homepage
+    value: https://artagnon.github.io/clayoven/
+    url: https://api.github.com/repos/artagnon/clayoven
+    checkedAt: 2026-10-23
+    via: api
+  - field: repository
+    value: https://github.com/artagnon/clayoven
+    url: https://api.github.com/repos/artagnon/clayoven
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://artagnon.github.io/clayoven/
+    url: https://raw.githubusercontent.com/artagnon/clayoven/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "rdoc documentation is available"
+  - field: categories
+    value: [ssg]
+    url: https://raw.githubusercontent.com/artagnon/clayoven/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "clayoven is a beautiful static site generator"
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/artagnon/clayoven
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://raw.githubusercontent.com/artagnon/clayoven/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "~700 lines of well-written and well-documented Ruby"
+  - field: installMethod
+    value: git clone and bundle install, with bin/clayoven on PATH
+    url: https://raw.githubusercontent.com/artagnon/clayoven/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "There is no published gem. To get started, clone, run `bundle` to install the required gems"
+  - field: buildCommand
+    value: clayoven
+    url: https://raw.githubusercontent.com/artagnon/clayoven/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "`clayoven` to generate HTML files incrementally based on the current git index"
+  - field: renderingModes
+    value: [static]
+    url: https://raw.githubusercontent.com/artagnon/clayoven/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "clayoven is a beautiful static site generator"
+  - field: runsAs
+    value: [static]
+    url: https://raw.githubusercontent.com/artagnon/clayoven/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "to generate HTML files incrementally based on the current git index"
+  - field: runsAs
+    value: [local]
+    url: https://raw.githubusercontent.com/artagnon/clayoven/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "to preview your website locally"
+  - field: templating
+    value: [slim]
+    url: https://raw.githubusercontent.com/artagnon/clayoven/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "run through the same `design/template.slim`"
+  - field: contentStore
+    value: flat-file
+    url: https://raw.githubusercontent.com/artagnon/clayoven/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "as a bunch of `.clay` files in a subdirectory"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/artagnon/clayoven
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/artagnon/clayoven/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person"
+  - field: maintainer
+    value: Ramkumar Ramachandra
+    url: https://raw.githubusercontent.com/artagnon/clayoven/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2021 Ramkumar Ramachandra"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/artagnon/clayoven
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 332
+    url: https://api.github.com/repos/artagnon/clayoven
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/artagnon/clayoven/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: lastCommitDate
+    value: 2026-03-30
+    url: https://api.github.com/repos/artagnon/clayoven/commits
+    checkedAt: 2026-10-23
+    via: api
+notFound: [firstRelease, currentMajor, latestReleaseDate, latestPrereleaseDate, runtimeMin, outputDir, basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, wikidata, databases, adminUi, headlessApi, livePreview, i18n, multisite, userRoles, sso, importsFrom, pricingPage, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, npmName, packagistName, forgejoStargazers]
+unreadable: []
+notes: >
+  The README says "There is no published gem", so the 2013 RubyGems upload of a gem named clayoven (version 0.2, same author, homepage the repository) is not the current release channel: no release date, major or download figure is taken from it, and the listing is judged by lastCommitDate. The repository has no GitHub release or tag. The GitHub homepage field gives http://artagnon.github.io/clayoven/; the https address answers 200 with the rdoc documentation, which the README links as its documentation, so the https address is recorded as homepage. No Ruby version is stated in the README, the Gemfile or a .ruby-version file, so runtimeMin is unknown. The README names no output directory, so outputDir is unknown. The README describes the claytext source format, math rendering with MathJaX and XyJaX, a vscode plugin, and that clayoven init creates a starter project, that the engine takes creation and modification times from git history and builds incrementally, and that clayoven aggressive regenerates the whole site. None of these has a field. The project is not a fork, and its README names no parent software; the Slim templating and the gems it uses are dependencies, not a basis, so basedOn is not recorded.

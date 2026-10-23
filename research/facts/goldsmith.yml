@@ -1,0 +1,106 @@
+id: goldsmith
+name: Goldsmith
+status: stub
+checkedAt: 2026-10-23
+description: Static pipeline-based website generator written in Go, configured in code rather than through configuration files.
+facts:
+  - field: repository
+    value: https://git.sr.ht/~foosoft/goldsmith
+    url: https://raw.githubusercontent.com/FooSoft/goldsmith/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This repository has permanently moved to https://git.sr.ht/~foosoft/goldsmith."
+  - field: repository
+    value: https://github.com/FooSoft/goldsmith
+    url: https://api.github.com/repos/FooSoft/goldsmith
+    checkedAt: 2026-10-23
+    via: api
+  - field: maintainer
+    value: Alex Yatskov
+    url: https://git.sr.ht/~foosoft/goldsmith/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright 2015-2023 Alex Yatskov"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/FooSoft/goldsmith
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Go
+    url: https://git.sr.ht/~foosoft/goldsmith/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "fast and easily extensible static website generator written in Go"
+  - field: categories
+    value: [ssg]
+    url: https://git.sr.ht/~foosoft/goldsmith/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "fast and easily extensible static website generator written in Go"
+  - field: runtime
+    value: [go]
+    url: https://git.sr.ht/~foosoft/goldsmith/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "fast and easily extensible static website generator written in Go"
+  - field: renderingModes
+    value: [static]
+    url: https://git.sr.ht/~foosoft/goldsmith/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "fast and easily extensible static website generator written in Go"
+  - field: runsAs
+    value: [static]
+    url: https://git.sr.ht/~foosoft/goldsmith/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "fast and easily extensible static website generator written in Go"
+  - field: runsAs
+    value: [local]
+    url: https://git.sr.ht/~foosoft/goldsmith/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "bootstrap a complete development server which automatically rebuilds the site whenever source files are updated"
+  - field: installMethod
+    value: Go library imported by the site's own Go program
+    url: https://git.sr.ht/~foosoft/goldsmith/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: '"go.foosoft.net/goldsmith"'
+  - field: templating
+    value: [go templates]
+    url: https://git.sr.ht/~foosoft/goldsmith/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Transform your HTML files with Go templates."
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/FooSoft/goldsmith
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://git.sr.ht/~foosoft/goldsmith/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy of"
+  - field: githubStargazers
+    value: 37
+    url: https://api.github.com/repos/FooSoft/goldsmith
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/FooSoft/goldsmith/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: lastCommitDate
+    value: 2025-11-04
+    url: https://api.github.com/repos/FooSoft/goldsmith/commits?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, buildCommand, outputDir, firstRelease, currentMajor, latestReleaseDate, hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, adminUi, contentStore, databases, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, latestPrereleaseDate, docker, supportedVersions, hostedService]
+unreadable: []
+notes: >
+  Stub because criterion 3 cannot be judged: the README gives a Go tutorial with import paths (go.foosoft.net/goldsmith) and no install step, such as go get or a module download, and the tree holds go.mod. Criterion 4 is not in doubt in the sense of an end: the GitHub repository FooSoft/goldsmith is archived and its README says it "has permanently moved" to git.sr.ht/~foosoft/goldsmith, which is readable and holds the source (last commit on sourcehut "a month ago" per its summary page; the GitHub last commit is 2025-11-04). The move is recorded as the repository and the archive is not a signal. The homepage field on GitHub, foosoft.net/projects/goldsmith, answers 404, and foosoft.net does not name the project on its root page, so no homepage is recorded. Releases: GitHub has none; sourcehut lists the tags 25.2.14.0 and 23.12.30.0, a calendar-style version with no major, so currentMajor is not recorded, and the exact release date was not read because the sourcehut page gives it only as relative time. The sourcehut site lists the tag 25.2.14.0 as its latest. The stars and contributors are from the archived GitHub repository, and the sourcehut repository shows no adoption figure. The project's own README says the website foosoft.net is generated with Goldsmith.

@@ -1,0 +1,124 @@
+id: bashblog
+name: bashblog
+status: accepted
+checkedAt: 2026-10-23
+description: Blog generator delivered as a single Bash script that writes static HTML pages for posts, tags and an RSS feed.
+facts:
+  - field: homepage
+    value: https://cfenollosa.github.io/bashblog/
+    url: https://cfenollosa.github.io/bashblog/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A Bash script that handles blog posting"
+  - field: repository
+    value: https://github.com/cfenollosa/bashblog
+    url: https://api.github.com/repos/cfenollosa/bashblog
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/cfenollosa/bashblog/blob/master/README.md
+    url: https://raw.githubusercontent.com/cfenollosa/bashblog/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A single Bash script to create blogs."
+  - field: categories
+    value: [blog]
+    url: https://raw.githubusercontent.com/cfenollosa/bashblog/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "to create blogs"
+  - field: categories
+    value: [ssg]
+    url: https://raw.githubusercontent.com/cfenollosa/bashblog/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "All content is static."
+  - field: language
+    value: Shell
+    url: https://api.github.com/repos/cfenollosa/bashblog
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [bash]
+    url: https://raw.githubusercontent.com/cfenollosa/bashblog/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A single Bash script to create blogs."
+  - field: installMethod
+    value: copy the bb.sh script into a public web folder
+    url: https://raw.githubusercontent.com/cfenollosa/bashblog/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "No installation required. Download `bb.sh` and start blogging."
+  - field: renderingModes
+    value: [static]
+    url: https://raw.githubusercontent.com/cfenollosa/bashblog/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "All content is static."
+  - field: runsAs
+    value: [static]
+    url: https://raw.githubusercontent.com/cfenollosa/bashblog/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "All content is static. You only need shell access to a machine with a public web folder."
+  - field: runsAs
+    value: [local]
+    url: https://raw.githubusercontent.com/cfenollosa/bashblog/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "run this script locally"
+  - field: license
+    value: GPL-3.0-or-later
+    url: https://raw.githubusercontent.com/cfenollosa/bashblog/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "either version 3 of the License, or (at your option) any later version"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/cfenollosa/bashblog/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This program is free software: you can redistribute it and/or modify"
+  - field: maintainer
+    value: Carlos Fenollosa
+    url: https://raw.githubusercontent.com/cfenollosa/bashblog/master/bb.sh
+    checkedAt: 2026-10-23
+    via: page
+    quote: "(C) Carlos Fenollosa"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/cfenollosa/bashblog
+    checkedAt: 2026-10-23
+    via: api
+  - field: i18n
+    value: yes, per the changelog
+    url: https://raw.githubusercontent.com/cfenollosa/bashblog/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "refactored some code and added flexibility and i18n"
+  - field: contentStore
+    value: flat-file
+    url: https://raw.githubusercontent.com/cfenollosa/bashblog/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Just type a post with your favorite editor and the script does the rest."
+  - field: githubStargazers
+    value: 1932
+    url: https://api.github.com/repos/cfenollosa/bashblog
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 14
+    url: https://api.github.com/repos/cfenollosa/bashblog/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: lastCommitDate
+    value: 2026-10-20
+    url: https://api.github.com/repos/cfenollosa/bashblog/commits
+    checkedAt: 2026-10-23
+    via: api
+notFound: [firstRelease, currentMajor, latestReleaseDate, latestPrereleaseDate, templating, outputDir, buildCommand, runtimeMin, basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, wikidata, databases, adminUi, headlessApi, livePreview, multisite, userRoles, sso, importsFrom, pricingPage, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, npmName, packagistName, forgejoStargazers]
+unreadable: []
+notes: >
+  The repository has no GitHub release or tag and no registry package, so the lastCommitDate fact decides the listing (committer date of the newest commit on master, 2026-10-20); the boundary question in the CSV is therefore settled and the status is accepted. The version 2.11 appears in bb.sh and the README changelog but is not a tagged release, so currentMajor is unknown. The GitHub API reports no license (the repository has no LICENSE file); the README's License section gives GPL version 3 or any later version, which is recorded as GPL-3.0-or-later. The script's default global_license value "CC by-nc-nd" is a default for a blog's own content and is not recorded as the software's license. The README changelog credits version 1.5 with i18n and version 2.8 with Slavic language support, recorded as i18n; posts are plain files written in an editor, recorded as flat-file. The README says "No templating" and describes its output as static pages with a generated RSS file, tags pages and an index; no templating library is recorded. The README names no output directory beyond the public folder the user copies the script into, so outputDir is unknown. The author's personal blog and site are not the project's site and are not recorded. The README usage section runs ./bb.sh to list the commands and ./bb.sh post to write a post. The README states GNU/Linux, OSX and BSD support, and a Markdown converter is used when installed, which is not recorded as a field. The GitHub API lists 14 contributors on the last page of the contributors endpoint with per_page=1. The project's GitHub Pages site is the project's own site and is recorded as homepage.

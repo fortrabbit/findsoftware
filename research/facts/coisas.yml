@@ -1,0 +1,117 @@
+id: coisas
+name: Coisas
+status: accepted
+checkedAt: 2026-10-23
+description: Client-side CMS that edits the Markdown and other files of a GitHub repository in the browser.
+facts:
+  - field: homepage
+    value: https://coisas.fiatjaf.com/
+    url: https://github.com/fiatjaf/coisas/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "To use **coisas**, go to https://coisas.fiatjaf.com/"
+  - field: repository
+    value: https://github.com/fiatjaf/coisas
+    url: https://api.github.com/repos/fiatjaf/coisas
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/fiatjaf/coisas/blob/master/README.md
+    url: https://github.com/fiatjaf/coisas/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "To use **coisas**, go to https://coisas.fiatjaf.com/"
+  - field: maintainer
+    value: fiatjaf
+    url: https://github.com/fiatjaf/coisas/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2017 fiatjaf"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/fiatjaf
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/fiatjaf/coisas
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [git-cms, headless-cms]
+    url: https://github.com/fiatjaf/coisas/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "is a headless CMS specifically designed to let you edit files hosted in a GitHub repository"
+  - field: contentStore
+    value: git
+    url: https://github.com/fiatjaf/coisas/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "to let you edit files hosted in a GitHub repository"
+  - field: adminUi
+    value: yes, browser-based editor
+    url: https://github.com/fiatjaf/coisas/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "simple metadata editor and automatic saving of Markdown and HTML files"
+  - field: installMethod
+    value: git clone, npm install, npm run build
+    url: https://github.com/fiatjaf/coisas/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "you can `git clone` the repo, then `cd` to it and `npm install`"
+  - field: installMethod
+    value: "embed in the site's own /admin/ section"
+    url: https://github.com/fiatjaf/coisas/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "embed it in your site, for example, in an `/admin/` section"
+  - field: buildCommand
+    value: npm run build
+    url: https://github.com/fiatjaf/coisas/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "then `npm run build`"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/fiatjaf/coisas/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "a static server is needed"
+  - field: alternativeTo
+    value: [Netlify CMS, Prose]
+    url: https://github.com/fiatjaf/coisas/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "It is similar to Netlify CMS and Prose"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/fiatjaf/coisas
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/fiatjaf/coisas/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: lastCommitDate
+    value: 2024-02-16
+    url: https://api.github.com/repos/fiatjaf/coisas/commits?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 333
+    url: https://api.github.com/repos/fiatjaf/coisas
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 5
+    url: https://api.github.com/repos/fiatjaf/coisas/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [headlessApi, sso, hqCountry, parent, basedOn, forkOf, successorOf, renderingModes, multisite, livePreview, userRoles, i18n, importsFrom, runtime, runtimeMin, packagistName, npmName, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, outputDir, maintainerType, selfHostOption, regions, apiLimits, firstRelease, currentMajor, latestReleaseDate]
+unreadable: [https://coisas.fiatjaf.com/]
+notes: >
+  The homepage coisas.fiatjaf.com answers 200 with an empty application shell (a root element and bundle.js), so no page text was read from it; the homepage value is the address the README sends users to. The repository has no GitHub release and no tag, so currentMajor, firstRelease and latestReleaseDate are unknown, and lastCommitDate is the committer date of the newest commit on master. The README calls the project a headless CMS; the GitHub description calls it a client-side CMS for editing GitHub Markdown files, but no README sentence states where it runs, so runsAs holds only static, from the README's static server remark. The previews in the README are an edit and a preview view toggled by buttons, not a live preview of the site, so livePreview is not recorded. The README says a static server is needed, recommends HTTPS for the service worker, and says it can be embedded in a site's own admin section. The runtime is not stated in the pages read; the README names npm for the build. The personal site fiatjaf.com is not the project's site and is not recorded.

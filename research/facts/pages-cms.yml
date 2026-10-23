@@ -1,0 +1,176 @@
+id: pages-cms
+name: Pages CMS
+status: accepted
+checkedAt: 2026-10-23
+description: Open source web CMS that edits the content and media files of static sites stored in a GitHub repository.
+facts:
+  - field: homepage
+    value: https://pagescms.org
+    url: https://pagescms.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: The simplest CMS you'll ever need
+  - field: repository
+    value: https://github.com/hunvreus/pagescms
+    url: https://api.github.com/repos/hunvreus/pagescms
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://pagescms.org/docs/
+    url: https://pagescms.org/docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: Pages CMS is an open-source CMS for static sites stored in GitHub repositories
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/hunvreus
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/hunvreus/pagescms
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value:
+      - cms
+      - git-cms
+    url: https://pagescms.org/docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: Pages CMS is an open-source CMS for static sites stored in GitHub repositories
+  - field: databases
+    value:
+      - postgres
+    url: https://pagescms.org/docs/development/database/
+    checkedAt: 2026-10-23
+    via: page
+    quote: Pages CMS stores app state in PostgreSQL
+  - field: adminUi
+    value: yes, web editor for content and media
+    url: https://pagescms.org/docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: Pages CMS gives teams a UI for editing content and media
+  - field: headlessApi
+    value: none
+    url: https://pagescms.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: No database, no API, no extra backend
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/hunvreus/pagescms
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://pagescms.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: It's MIT licensed through and through
+  - field: firstRelease
+    value: "2024"
+    url: https://api.github.com/repos/hunvreus/pagescms/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/hunvreus/pagescms/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-06-08
+    url: https://api.github.com/repos/hunvreus/pagescms/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 4126
+    url: https://api.github.com/repos/hunvreus/pagescms
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 8
+    url: https://api.github.com/repos/hunvreus/pagescms/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: discord
+    value: https://discord.gg/5UYD7CMZ6H
+    url: https://github.com/hunvreus/pagescms/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: Join the Discord chat
+  - field: maintainer
+    value: Ronan Berder
+    url: https://pagescms.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: © Ronan Berder
+  - field: contentStore
+    value: git
+    url: https://pagescms.org/docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: There is no separate CMS database for content.
+  - field: installMethod
+    value: npm install, then npm run build and npm run start behind a reverse proxy
+    url: https://pagescms.org/docs/guides/installing/self-host/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Step 6: Build and run"
+  - field: installMethod
+    value: Deploy on Vercel with PostgreSQL and a GitHub App
+    url: https://pagescms.org/docs/guides/installing/vercel/
+    checkedAt: 2026-10-23
+    via: page
+    quote: Deploy Pages CMS on Vercel with PostgreSQL and a GitHub App.
+  - field: runsAs
+    value:
+      - always-on
+    url: https://pagescms.org/docs/guides/installing/self-host/
+    checkedAt: 2026-10-23
+    via: page
+    quote: the app behind it on an internal port
+  - field: userRoles
+    value: yes, collaborators have fewer rights than GitHub users with repository access
+    url: https://pagescms.org/docs/configuration/collaborators/
+    checkedAt: 2026-10-23
+    via: page
+    quote: Those actions stay limited to GitHub users with repository access.
+notFound:
+  - maintainerType
+  - hqCountry
+  - basedOn
+  - parent
+  - forkOf
+  - successorOf
+  - alternativeTo
+  - runtime
+  - runtimeMin
+  - renderingModes
+  - multisite
+  - i18n
+  - livePreview
+  - sso
+  - importsFrom
+  - paidEdition
+  - pricingPage
+  - usageShare
+  - reportedInstalls
+  - pluginDirectory
+  - pluginCount
+  - forum
+  - subreddit
+  - mastodon
+  - bluesky
+  - x
+  - newsletter
+  - wikidata
+  - npmName
+  - endoflifeId
+  - templating
+  - buildCommand
+  - outputDir
+unreadable: []
+notes: |
+  The homepage names github.com/pages-cms/pages-cms as the source and the README names github.com/pagescms/pagescms; both names resolve to hunvreus/pagescms in the GitHub API, so that repository is recorded. The hosted app at app.pagescms.org is the project's own hosted version next to the open source code; the README says it can be used directly, and no prices are recorded. No separate pricing page was found on the homepage or docs, so pricingPage is unknown. The docs describe Postgres for app state (auth, collaborators, parsed config, cache) and GitHub for content; the README and installing guide name PostgreSQL 16 as a Docker example. The self-host guide runs the app with npm run build and npm run start, but no page names Node.js or a framework the app is built on, so runtime and basedOn are unknown. The "Permissions" feature on the homepage is marked Soon, so userRoles is unknown. The x link on the homepage points to the maintainer's personal account, not the project's, so it is not recorded. The field discord is taken from the README, which links the chat at pagescms.org/chat, a redirect to discord.gg. The first release is the earliest GitHub release 0.1.0 (2024-02-12), and the repository was created 2023-12-16.

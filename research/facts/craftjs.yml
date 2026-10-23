@@ -1,0 +1,130 @@
+id: craftjs
+name: Craft.js
+status: accepted
+checkedAt: 2026-10-23
+description: React framework for building drag-and-drop page editors from the developer's own React components.
+facts:
+  - field: homepage
+    value: https://craft.js.org
+    url: https://craft.js.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Build any page editor"
+  - field: repository
+    value: https://github.com/prevwong/craft.js
+    url: https://api.github.com/repos/prevwong/craft.js
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://craft.js.org/docs/overview
+    url: https://craft.js.org/docs/overview
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Craft.js solves this problem by modularising the building blocks of a page editor."
+  - field: categories
+    value: [ui-library]
+    url: https://github.com/prevwong/craft.js/blob/main/packages/core/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Craft.js is an abstraction where you implement your own page editor upon."
+  - field: basedOn
+    value: [react]
+    url: https://github.com/prevwong/craft.js/blob/main/packages/core/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Being a React framework"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/prevwong/craft.js
+    checkedAt: 2026-10-23
+    via: api
+  - field: installMethod
+    value: npm install --save @craftjs/core, or yarn add @craftjs/core
+    url: https://craft.js.org/docs/guides/basic-tutorial
+    checkedAt: 2026-10-23
+    via: page
+    quote: "npm install --save @craftjs/core"
+  - field: adminUi
+    value: no, the developer builds the editor interface from React components
+    url: https://github.com/prevwong/craft.js/blob/main/packages/core/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "it does not come with a ready-made user interface."
+  - field: license
+    value: MIT
+    url: https://github.com/prevwong/craft.js/blob/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License"
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/@craftjs%2fcore/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/prevwong/craft.js/blob/main/packages/core/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Craft.js is released under the MIT license"
+  - field: maintainer
+    value: Previnash Wong Sze Chuan
+    url: https://github.com/prevwong/craft.js/blob/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2020 Previnash Wong Sze Chuan"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/prevwong
+    checkedAt: 2026-10-23
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/prevwong/craft.js
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2020"
+    url: https://api.github.com/repos/prevwong/craft.js/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/prevwong/craft.js/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2025-02-14
+    url: https://api.github.com/repos/prevwong/craft.js/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 8760
+    url: https://api.github.com/repos/prevwong/craft.js
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 47
+    url: https://api.github.com/repos/prevwong/craft.js/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmName
+    value: "@craftjs/core"
+    url: https://registry.npmjs.org/@craftjs%2fcore/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmWeeklyDownloads
+    value: 37224
+    url: https://api.npmjs.org/downloads/point/last-week/@craftjs/core
+    checkedAt: 2026-10-23
+    via: api
+  - field: discord
+    value: https://discord.gg/sPpF7fX
+    url: https://github.com/prevwong/craft.js/blob/main/packages/core/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "please head over to our Discord server."
+notFound: [hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, runtime, runtimeMin, runsAs, renderingModes, contentStore, databases, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, latestPrereleaseDate, endoflifeId, packagistName, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, apiLimits, regions, selfHostOption]
+unreadable: []
+notes: >
+  Boundary question from the CSV (page editor library or CMS) settled as a library: the README calls it an abstraction on which the developer implements a page editor, with no ready-made interface, and no page describes content management, storage or an API, so it is not categorized as a CMS. The editor state serializes to JSON and can be restored from it; where that JSON is stored is left to the developer, so no contentStore is recorded. The root README of the repository only points to packages/core/README.md, which is the README read. GitHub releases are tagged per package (@craftjs/core@x.y.z); the highest stable core release is @craftjs/core@0.2.12 (2025-02-14), matching npm latest, so currentMajor is 0. The v0.3.0-alpha tags have no GitHub release and the newest prerelease release (v0.2.0-beta.13, 2023) is older than the latest release, so no latestPrereleaseDate. firstRelease is from the oldest GitHub release, v0.1.0-beta.0 (2020-01-04), which is not flagged as a prerelease. @craftjs/core declares react 16.8 to 19 as a peer dependency; no Node or runtime minimum is stated, and runsAs is not recorded because no page states where the editor runs. The maintainer's personal social account, listed in the docs footer, is not recorded as the project's. The project takes sponsorship through GitHub Sponsors, Open Collective and Ko-fi. An additional package, @craftjs/layers, provides a layers panel. The README names react-dnd, GrapesJS and use-methods as references and sources of borrowed code; none is recorded as basedOn or alternativeTo.

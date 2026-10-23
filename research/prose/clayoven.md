@@ -1,0 +1,3 @@
+clayoven is a static site generator written in Ruby and aimed at math-heavy sites. Its source files are written in claytext, a custom format, and each subdirectory of `.clay` files becomes a topic of content pages, while a `name.index.clay` file becomes an index page for that topic. Templates are written in Slim. The engine builds incrementally from the git index and takes page dates from git history, and it renders math on the server with MathJaX and XyJaX.
+
+The README installs it by cloning the repository, running `bundle`, and putting `bin/clayoven` on the path; `clayoven init` creates a starter project and `clayoven httpd` previews the site locally. The [rdoc documentation](https://artagnon.github.io/clayoven/) describes the code.

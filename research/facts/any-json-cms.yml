@@ -1,0 +1,104 @@
+id: any-json-cms
+name: Any JSON CMS
+status: accepted
+checkedAt: 2026-10-23
+description: "Open source headless CMS that manages JSON models and entries and serves them through an API key protected endpoint."
+facts:
+  - field: repository
+    value: https://github.com/evmizulin/any-json-cms
+    url: https://api.github.com/repos/evmizulin/any-json-cms
+    checkedAt: 2026-10-23
+    via: api
+  - field: maintainer
+    value: Evgeny Mizulin
+    url: https://raw.githubusercontent.com/evmizulin/cms-api/master/package.json
+    checkedAt: 2026-10-23
+    via: page
+    quote: '"author": "Evgeny Mizulin"'
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/evmizulin
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://github.com/evmizulin/cms-api/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Node.js v8+"
+  - field: runtimeMin
+    value: "8"
+    url: https://github.com/evmizulin/cms-admin/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Node.js v8+"
+  - field: categories
+    value: [headless-cms]
+    url: https://github.com/evmizulin/any-json-cms/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Open source headless CMS that could help manage and deliver any JSON to any app."
+  - field: installMethod
+    value: "git clone and npm install, for the admin application server and the API server"
+    url: https://github.com/evmizulin/cms-api/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "git clone git@github.com:evmizulin/cms-api.git"
+  - field: contentStore
+    value: database
+    url: https://github.com/evmizulin/cms-api/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "function to connect MongoDb"
+  - field: databases
+    value: [mongodb]
+    url: https://github.com/evmizulin/cms-api/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "function to connect MongoDb"
+  - field: adminUi
+    value: "yes, a separate admin application server opened in the browser"
+    url: https://github.com/evmizulin/cms-admin/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Admin application server"
+  - field: license
+    value: GPL-3.0
+    url: https://api.github.com/repos/evmizulin/any-json-cms
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/evmizulin/any-json-cms/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "GNU GENERAL PUBLIC LICENSE"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/evmizulin/any-json-cms/tags
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2019"
+    url: https://api.github.com/repos/evmizulin/any-json-cms/commits/1.0.0
+    checkedAt: 2026-10-23
+    via: api
+  - field: lastCommitDate
+    value: 2022-01-13
+    url: https://api.github.com/repos/evmizulin/any-json-cms/commits
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 130
+    url: https://api.github.com/repos/evmizulin/any-json-cms
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/evmizulin/any-json-cms/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, runsAs, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEditions, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, templating, latestReleaseDate, renderingModes, language, npmName, packagistName]
+unreadable: []
+notes: >
+  The project has no homepage: the repository is the only project page, so no homepage is recorded. Installation is documented in two other repositories the README names: the admin application server (github.com/evmizulin/cms-admin, Node.js v8+, config.js, npm start and npm run start.prod) and the API server (github.com/evmizulin/cms-api, MongoDB v3+, Sendmail, config.js, npm run start.prod). Both are read through their READMEs; the cms-admin install page names Node.js only, the cms-api page names MongoDB and Sendmail as required. The repository has no GitHub release, only the tags 1.0.0 and 1.1.0, so no latestReleaseDate is recorded; currentMajor comes from the tags, and lastCommitDate from the newest commit on the default branch (2022-01-13). The cms-api repository was last pushed 2022-12-10. The GitHub language field is empty for the main repository; the two parts are JavaScript. The README does not name a REST or GraphQL style; it shows a GET request to /entries with an ApiKey header, which is recorded only as the README's example. Contributors counted from the contributors endpoint (1 on the main repository, 1 on each of the two parts). The maintainer is the package.json author of the two parts; the GPL-3.0 LICENSE file carries no copyright line. firstRelease is the year of the commit behind tag 1.0.0 (2019-05-25). The README shows the production start command but no page says how the process is kept running, so runsAs is not recorded.

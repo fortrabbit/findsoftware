@@ -1,0 +1,144 @@
+id: tarbell
+name: Tarbell
+status: accepted
+checkedAt: 2026-10-23
+description: Flask-based tool for authoring static websites from project templates and optional Google Sheets data, published to Amazon S3.
+facts:
+  - field: homepage
+    value: https://tarbell.readthedocs.io/en/latest/index.html
+    url: https://tarbell.readthedocs.io/en/latest/index.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Tarbell makes it simple to put your work on the web"
+  - field: repository
+    value: https://github.com/tarbell-project/tarbell
+    url: https://api.github.com/repos/tarbell-project/tarbell
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://tarbell.readthedocs.io/en/latest/index.html
+    url: https://tarbell.readthedocs.io/en/latest/index.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "New here? Read the Tarbell tutorial"
+  - field: maintainer
+    value: Tarbell Project
+    url: https://raw.githubusercontent.com/tarbell-project/tarbell/master/setup.py
+    checkedAt: 2026-10-23
+    via: page
+    quote: "author=u'Tarbell Project'"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/tarbell-project
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/tarbell-project/tarbell
+    checkedAt: 2026-10-23
+    via: api
+  - field: basedOn
+    value: [Flask]
+    url: https://github.com/tarbell-project/tarbell
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A Flask-based static site authoring tool."
+  - field: categories
+    value: [ssg]
+    url: https://github.com/tarbell-project/tarbell
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A Flask-based static site authoring tool."
+  - field: runtime
+    value: [python]
+    url: https://tarbell.readthedocs.io/en/latest/install.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Tarbell requires Python 2.7 and Git"
+  - field: runtimeMin
+    value: "2.7"
+    url: https://tarbell.readthedocs.io/en/latest/install.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Tarbell requires Python 2.7 and Git"
+  - field: templating
+    value: [jinja]
+    url: https://tarbell.readthedocs.io/en/latest/build.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Tarbell projects consist of simple HTML pages that may use Jinja2 templating features."
+  - field: installMethod
+    value: pip install tarbell
+    url: https://tarbell.readthedocs.io/en/latest/install.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Install Tarbell with pip install tarbell"
+  - field: runsAs
+    value: [static]
+    url: https://tarbell.readthedocs.io/en/latest/publish.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Generate static sites with tarbell generate"
+  - field: runsAs
+    value: [local]
+    url: https://tarbell.readthedocs.io/en/latest/managingprojects.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Run preview server with tarbell serve"
+  - field: renderingModes
+    value: [static]
+    url: https://tarbell.readthedocs.io/en/latest/publish.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Generate static sites with tarbell generate"
+  - field: license
+    value: BSD-3-Clause
+    url: https://raw.githubusercontent.com/tarbell-project/tarbell/master/LICENSE.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Redistributions in binary form must reproduce the above copyright"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/tarbell-project/tarbell/master/LICENSE.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without modification, are permitted"
+  - field: firstRelease
+    value: "2015"
+    url: https://api.github.com/repos/tarbell-project/tarbell/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/tarbell-project/tarbell/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2017-12-19
+    url: https://pypi.org/pypi/tarbell/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 164
+    url: https://api.github.com/repos/tarbell-project/tarbell
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 15
+    url: https://api.github.com/repos/tarbell-project/tarbell/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiName
+    value: tarbell
+    url: https://pypi.org/pypi/tarbell/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiDownloads
+    value: "29 (last month)"
+    url: https://pypistats.org/api/packages/tarbell/recent
+    checkedAt: 2026-10-23
+    via: api
+notFound: [maintainerType, hqCountry, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId]
+unreadable: []
+notes: >
+  The homepage is the Read the Docs site of the project, the only site the GitHub repository names; it documents version 1.0.5 and says "Tarbell 1.0.5 documentation" on every page, so the 1.0.5 docs are the newest the project publishes. The README calls Tarbell "a very simple content management system", but no page describes an admin interface, so categories stay at ssg and adminUi is unknown. Content comes from an optional Google Spreadsheet read by the tool, so contentStore is left out. Publishing to Amazon S3 is documented (tarbell publish <target>); no field holds a publish target, so it is not recorded. The highest stable GitHub release is 1.0.8, and PyPI lists 1.0.9 and 1.0.10 (2017-12-19) with no GitHub release, so the release date is from PyPI. The docs state Tarbell does not work on Windows. The repository's license file is BSD-3-Clause (LICENSE.md, GitHub API), while setup.py and the docs footer say MIT; only the LICENSE.md entry is recorded as the license, and the setup.py and docs wording is not. pypiDownloads is the last-month figure from pypistats.org, not the PyPI JSON, which carries no download counts. The maintainer is the setup.py author, "Tarbell Project"; LICENSE.md copyright lines name David Eads, Chicago Tribune and Kenneth Reitz. The docs state Tarbell requires Python 2.7 and does not support Python 3; runtimeMin is 2.7 from that statement. The repository has no GitHub release newer than 2017, so the import will judge it by latestReleaseDate.

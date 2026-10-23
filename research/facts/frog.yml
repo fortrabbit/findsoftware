@@ -1,0 +1,113 @@
+id: frog
+name: Frog
+status: stub
+checkedAt: 2026-10-23
+description: Static web site generator written in Racket that builds posts and pages from Markdown or Scribble sources.
+facts:
+  - field: repository
+    value: https://github.com/greghendershott/frog
+    url: https://api.github.com/repos/greghendershott/frog
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://docs.racket-lang.org/frog/index.html
+    url: https://github.com/greghendershott/frog/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Full documentation"
+  - field: maintainer
+    value: Greg Hendershott
+    url: https://raw.githubusercontent.com/greghendershott/frog/master/frog/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2013-2018, Greg Hendershott."
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/greghendershott
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Racket
+    url: https://api.github.com/repos/greghendershott/frog
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://raw.githubusercontent.com/greghendershott/frog/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Frog is a static web site generator"
+  - field: runtime
+    value: [racket]
+    url: https://docs.racket-lang.org/frog/Quick_start.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Install Racket"
+  - field: installMethod
+    value: raco pkg install frog
+    url: https://docs.racket-lang.org/frog/Quick_start.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "raco pkg install frog"
+  - field: renderingModes
+    value: [static]
+    url: https://raw.githubusercontent.com/greghendershott/frog/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Frog is a static web site generator"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/greghendershott/frog/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "To deploy, you push them to a GitHub Pages repo"
+  - field: runsAs
+    value: [local]
+    url: https://docs.racket-lang.org/frog/Quick_start.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Try `raco frog -bp` to build and preview."
+  - field: buildCommand
+    value: raco frog -b
+    url: https://docs.racket-lang.org/frog/Quick_start.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "to (re)build the blog"
+  - field: contentStore
+    value: flat-file
+    url: https://docs.racket-lang.org/frog/Posts.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Post source files in markdown format should be named"
+  - field: license
+    value: BSD-2-Clause
+    url: https://raw.githubusercontent.com/greghendershott/frog/master/frog/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/greghendershott/frog/master/frog/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without"
+  - field: lastCommitDate
+    value: 2026-08-20
+    url: https://api.github.com/repos/greghendershott/frog/commits
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 940
+    url: https://api.github.com/repos/greghendershott/frog
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 28
+    url: https://api.github.com/repos/greghendershott/frog/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, firstRelease, currentMajor, latestReleaseDate, latestPrereleaseDate, endoflifeId, runtimeMin, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, outputDir, packagistName, npmName, pypiName, rubygemsName, cranName, hexName, crateName, nugetName]
+unreadable: []
+notes: >
+  Status is stub while criterion 4 is in doubt: the README says "low-maintenance mode" and the Racket package catalog entry says "No longer under active development". Revisit when the project states its maintenance status or releases again.
+  The project names no homepage: the README links only its documentation at docs.racket-lang.org, so homepage is not recorded. No GitHub release or tag exists; the Racket package catalog (pkgs.racket-lang.org/pkg/frog) shows no version number, so currentMajor and latestReleaseDate stay unknown and lastCommitDate judges the listing. The README says "This project is in low-maintenance mode." That is not a statement that the project is unmaintained or ended, so the status stays accepted. The Racket package catalog describes the package as "Static blog generator application. (No longer under active development.)"; that is a registry description and not a statement on the project's own pages, so it sets no status, and a reviewer decides whether it reaches criterion 4. One license is recorded, from the frog/LICENSE file (BSD-2-Clause, copyright Greg Hendershott); the README badge says MIT and links to the same file, and the badge is not recorded. Pygments, which needs Python 3, is optional and only used for syntax highlighting of fenced code blocks. The README names the GitHub Pages repo and Amazon S3 as deploy targets, both static hosting. The default output directory is the project directory itself (the docs show raco frog -b writing index pages, feeds and tags there), so outputDir is not recorded.

@@ -1,0 +1,1 @@
+Agit CMS is a simple web frontend that runs on the local machine and manages the Markdown and media files of a site folder in the browser. It writes changes straight to those files. The README describes it as built for Markdown-based static site generators such as Hugo and Jekyll, and it is installed with `npm install -g agitcms`. It runs on Node.js.

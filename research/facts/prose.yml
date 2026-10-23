@@ -1,0 +1,156 @@
+id: prose
+name: Prose
+status: accepted
+checkedAt: 2026-10-23
+description: Web-based content editor that creates, edits and deletes the files of a website stored in a GitHub repository.
+facts:
+  - field: homepage
+    value: https://prose.io
+    url: https://prose.io
+    checkedAt: 2026-10-23
+    via: page
+    quote: Prose · A Content Editor for GitHub
+  - field: repository
+    value: https://github.com/prose/prose
+    url: https://api.github.com/repos/prose/prose
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/prose/prose/blob/master/README.md
+    url: https://github.com/prose/prose/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: Read the Getting Started Guide to learn more
+  - field: maintainer
+    value: Development Seed
+    url: https://raw.githubusercontent.com/prose/prose/master/LICENSE.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: Copyright (c) 2013, Development Seed All rights reserved.
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/prose
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/prose/prose
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value:
+      - git-cms
+      - content-editor
+    url: https://github.com/prose/prose/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: It's a web-based interface for managing content on GitHub
+  - field: adminUi
+    value: yes, web-based content editor in the browser
+    url: https://github.com/prose/prose/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: It's a web-based interface for managing content on GitHub
+  - field: installMethod
+    value: git clone and npm i for local development
+    url: https://github.com/prose/prose/blob/master/CONTRIBUTING.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: Run `npm i`
+  - field: runsAs
+    value:
+      - browser
+    url: https://github.com/prose/prose/blob/master/DEPLOYMENT.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: Since Prose runs entirely on the client
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/prose/prose
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/prose/prose/master/LICENSE.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: Redistribution and use in source and binary forms, with or without modification
+  - field: firstRelease
+    value: "2014"
+    url: https://api.github.com/repos/prose/prose/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/prose/prose/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2014-04-23
+    url: https://api.github.com/repos/prose/prose/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 4775
+    url: https://api.github.com/repos/prose/prose
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 69
+    url: https://api.github.com/repos/prose/prose/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: contentStore
+    value: git
+    url: https://github.com/prose/prose/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: save your changes directly to GitHub
+  - field: runtime
+    value:
+      - node
+    url: https://github.com/prose/prose/blob/master/CONTRIBUTING.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: node.js
+notFound:
+  - maintainerType
+  - hqCountry
+  - basedOn
+  - parent
+  - forkOf
+  - successorOf
+  - alternativeTo
+  - runtimeMin
+  - renderingModes
+  - databases
+  - headlessApi
+  - multisite
+  - i18n
+  - livePreview
+  - userRoles
+  - sso
+  - importsFrom
+  - paidEdition
+  - pricingPage
+  - usageShare
+  - reportedInstalls
+  - pluginDirectory
+  - pluginCount
+  - forum
+  - discord
+  - subreddit
+  - mastodon
+  - bluesky
+  - x
+  - newsletter
+  - wikidata
+  - npmName
+  - endoflifeId
+  - templating
+  - buildCommand
+  - outputDir
+unreadable: []
+notes: |-
+  The homepage is read over https (https://prose.io answers 200); the repository lists http://prose.io, which is not linked. The deployment page says Prose.io is hosted on GitHub Pages and that Prose relies on a Gatekeeper to authenticate with the GitHub API; Gatekeeper is a separate project (github.com/prose/gatekeeper) and is not recorded as a runsAs value of this record. The hosted version at prose.io is the project's own site next to the open source code, and the deployment page describes it as hosted on GitHub Pages; no prices are on any page read. The repository's GitHub releases are v1.1.3, v1.1.4 and v1.1.5 (2014); package.json on master says version 1.2.0-alpha.0 with no GitHub release for it, so that alpha is not recorded. The last push and last commit on the default branch is 2024-02-21. The README asks for new maintainers, which is stated, and no page names a maintainer apart from the LICENSE copyright line. The README names an IRC channel (#prose on freenode), which has no field here. The categories follow the project's own words "A Content Editor for GitHub" and "managing content on GitHub"; the project's README also calls its sites CMS-free, so the git-cms category is the project's framing of the same tool and not a separate claim.
+   The README is read over its rendered page; the Prerequisites list in CONTRIBUTING.md names node.js for building and running the project locally, which is the basis for runtime. The contributing guide manages interface translations on Transifex, which is not a statement about multilingual content, so i18n is unknown. The deployment page says work on supporting the GitLab API is in progress.

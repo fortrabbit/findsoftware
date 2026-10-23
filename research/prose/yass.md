@@ -1,0 +1,3 @@
+YASS is a static site generator written in Ada and run from the console. It has no user interface. It converts Markdown files in a project directory to HTML, fills Ada Web Server templates, and writes the site to an output directory. A server mode serves the output on localhost for preview and regenerates changed files. Sitemaps and Atom feeds are generated when enabled.
+
+The program is distributed as a release binary, and it can be built from source with Alire or gprbuild. The [installation page](https://raw.githubusercontent.com/yet-another-static-site-generator/yass/master/docs/user/installation.md) lists the libcmark library as a requirement.

@@ -1,0 +1,95 @@
+id: wpwmm4
+name: WPWMM4
+status: stub
+checkedAt: 2026-10-23
+description: Make and m4 based static web page generator that builds HTML pages from m4 source files.
+facts:
+  - field: repository
+    value: https://github.com/uzsolt/wpwmm4
+    url: https://api.github.com/repos/uzsolt/wpwmm4
+    checkedAt: 2026-10-23
+    via: api
+  - field: maintainer
+    value: Zsolt Udvari
+    url: https://raw.githubusercontent.com/uzsolt/wpwmm4/master/COPYING
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2017, Zsolt Udvari"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/uzsolt/wpwmm4
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [make]
+    url: https://raw.githubusercontent.com/uzsolt/wpwmm4/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "make (BSD's make, use _bmake_ package of your distro)"
+  - field: runtime
+    value: [m4]
+    url: https://raw.githubusercontent.com/uzsolt/wpwmm4/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "m4 (compatible with BSD's m4 and GNU's m4 too)"
+  - field: categories
+    value: [ssg]
+    url: https://raw.githubusercontent.com/uzsolt/wpwmm4/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generate static web pages"
+  - field: templating
+    value: [m4]
+    url: https://raw.githubusercontent.com/uzsolt/wpwmm4/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "expandable, programmable via _m4_"
+  - field: buildCommand
+    value: make
+    url: https://raw.githubusercontent.com/uzsolt/wpwmm4/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Simple use the make command."
+  - field: renderingModes
+    value: [static]
+    url: https://raw.githubusercontent.com/uzsolt/wpwmm4/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generate static web pages"
+  - field: runsAs
+    value: [static]
+    url: https://raw.githubusercontent.com/uzsolt/wpwmm4/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "can create static web pages from **m4** files"
+  - field: runsAs
+    value: [local]
+    url: https://raw.githubusercontent.com/uzsolt/wpwmm4/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Simple use the make command."
+  - field: license
+    value: BSD-2-Clause
+    url: https://api.github.com/repos/uzsolt/wpwmm4
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/uzsolt/wpwmm4/master/COPYING
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without"
+  - field: lastCommitDate
+    value: 2020-09-12
+    url: https://api.github.com/repos/uzsolt/wpwmm4/commits?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 15
+    url: https://api.github.com/repos/uzsolt/wpwmm4
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, language, firstRelease, currentMajor, latestReleaseDate, contributors, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, runtimeMin, outputDir, docs, installMethod]
+unreadable: [http://svn.uzsolt.hu/wpwmm4/]
+notes: >
+  Stub, criterion 3 and the homepage are in doubt: the README names requirements and the make command but no install steps, and the homepage http://svn.uzsolt.hu/wpwmm4/ (also the GitHub repository homepage field) refuses connections on port 80 and does not answer on 443, so no homepage is recorded, and the README and the Makefile on GitHub are the only readable source. A working project site or install steps would settle it. The README requires make (BSD make, bmake on Linux) and m4, and sets no default for the output directory. The repository has no releases and no tags, so the import judges it by lastCommitDate (2020-09-12, the newest commit on master). The language is not recorded: GitHub reports Roff for the repository, which is the man page, and the README names m4 and make as the implementation tools. The contributors endpoint returns an empty list and the commits carry no GitHub login, so no count is recorded. The maintainer is the copyright holder named in COPYING, and the README author line names the same person. The author's personal site uzsolt.hu is not recorded because it is an example output of the software, not the project's site.

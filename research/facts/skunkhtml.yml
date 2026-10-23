@@ -1,0 +1,129 @@
+id: skunkhtml
+name: SkunkHTML
+status: accepted
+checkedAt: 2026-10-23
+description: Blog generator written in F# that builds a GitHub Pages site from Markdown files in a forked repository.
+facts:
+  - field: repository
+    value: https://github.com/mg0x7BE/skunk-html
+    url: https://api.github.com/repos/mg0x7BE/skunk-html
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/mg0x7BE/skunk-html/blob/master/README.md
+    url: https://github.com/mg0x7BE/skunk-html/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The simplest way to run a blog on GitHub Pages."
+  - field: categories
+    value: [blog]
+    url: https://github.com/mg0x7BE/skunk-html/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The simplest way to run a blog on GitHub Pages."
+  - field: categories
+    value: [ssg]
+    url: https://github.com/mg0x7BE/skunk-html/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "converts your Markdown to HTML"
+  - field: language
+    value: F#
+    url: https://api.github.com/repos/mg0x7BE/skunk-html
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [dotnet]
+    url: https://github.com/mg0x7BE/skunk-html/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Requires .NET"
+  - field: contentStore
+    value: [flat-file]
+    url: https://github.com/mg0x7BE/skunk-html/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Markdown files in `markdown-blog/` whose names start with a digit"
+  - field: installMethod
+    value: fork or template on GitHub, then GitHub Pages
+    url: https://github.com/mg0x7BE/skunk-html/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Fork this repo (or use it as a template)."
+  - field: outputDir
+    value: skunk-html-output/
+    url: https://github.com/mg0x7BE/skunk-html/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Your site will be in `skunk-html-output/`."
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/mg0x7BE/skunk-html/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "converts your Markdown to HTML"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/mg0x7BE/skunk-html/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "and deploys to GitHub Pages"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/mg0x7BE/skunk-html/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "if you want to preview locally"
+  - field: buildCommand
+    value: dotnet run
+    url: https://github.com/mg0x7BE/skunk-html/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "dotnet run"
+  - field: forum
+    value: https://github.com/mg0x7BE/skunk-html/discussions
+    url: https://github.com/mg0x7BE/skunk-html/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Use [discussions](https://github.com/mg0x7BE/skunk-html/discussions)"
+  - field: i18n
+    value: interface texts and site language set in Config.fs
+    url: https://github.com/mg0x7BE/skunk-html/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "translate them if your blog is not in English"
+  - field: license
+    value: Unlicense
+    url: https://api.github.com/repos/mg0x7BE/skunk-html
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/mg0x7BE/skunk-html/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This is free and unencumbered software released into the public domain."
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/mg0x7BE
+    checkedAt: 2026-10-23
+    via: api
+  - field: lastCommitDate
+    value: 2026-07-23
+    url: https://api.github.com/repos/mg0x7BE/skunk-html/commits?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 167
+    url: https://api.github.com/repos/mg0x7BE/skunk-html
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/mg0x7BE/skunk-html/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, maintainer, firstRelease, currentMajor, latestReleaseDate, latestPrereleaseDate, runtimeMin, endoflifeId, supportedVersions, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, nugetName, nugetDownloads]
+unreadable: []
+notes: >
+  The README calls the GitHub Pages site a live demo, not the project's site, so no homepage is recorded; the project has no separate site. The repository has no releases and no tags, so no release fields are recorded and lastCommitDate is the committer date of the newest commit on master (the repository's pushed_at value is later and is not the commit date). The README says the build engine is "~400 lines of F#" and that it uses "No frameworks. No plugins."; the README also names MVP.css, microlight.js and FSharp.Formatting as dependencies, which are not parents and so are not basedOn. The README gives no .NET version, so runtimeMin is absent. The README says the blog is built by GitHub Actions and that the local build needs .NET; the workflow files are not read as a page. No page names a maintainer; the repository owner's GitHub login is mg0x7BE and is not recorded as the maintainer.

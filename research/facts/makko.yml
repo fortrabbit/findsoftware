@@ -1,0 +1,136 @@
+id: makko
+name: Makko
+status: accepted
+checkedAt: 2026-10-23
+description: Markdown-based static site generator for blogs and websites, written in Zig.
+facts:
+  - field: homepage
+    value: https://makko.starlightnet.work
+    url: https://makko.starlightnet.work/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "is the markdown-based, people-oriented static site generator"
+  - field: repository
+    value: https://forge.starlightnet.work/Team/Makko
+    url: https://forge.starlightnet.work/api/v1/repos/Team/Makko
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://makko.starlightnet.work/english.html
+    url: https://makko.starlightnet.work/english.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Makko is a static site generator: It takes your writing and turns it into a website"
+  - field: categories
+    value: [ssg, blog]
+    url: https://makko.starlightnet.work/english.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Makko is primarily designed for blogs"
+  - field: language
+    value: Zig
+    url: https://forge.starlightnet.work/api/v1/repos/Team/Makko/contents/README.md
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [zig binary]
+    url: https://forge.starlightnet.work/api/v1/repos/Team/Makko/contents/README.md
+    checkedAt: 2026-10-23
+    via: api
+  - field: installMethod
+    value: binary download from the releases page
+    url: https://forge.starlightnet.work/api/v1/repos/Team/Makko/contents/README.md
+    checkedAt: 2026-10-23
+    via: api
+  - field: installMethod
+    value: build from source with the Zig compiler
+    url: https://forge.starlightnet.work/api/v1/repos/Team/Makko/contents/README.md
+    checkedAt: 2026-10-23
+    via: api
+  - field: buildCommand
+    value: makko .
+    url: https://makko.starlightnet.work/english.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "call makko . as a build step"
+  - field: outputDir
+    value: web/
+    url: https://makko.starlightnet.work/english.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: '"output": "web/"'
+  - field: renderingModes
+    value: [static]
+    url: https://makko.starlightnet.work/english.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "it's logic-less and fully static, which means there's no runtime"
+  - field: runsAs
+    value: [static]
+    url: https://makko.starlightnet.work/english.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Since Makko outputs plain static files, anything that can serve HTML will work!"
+  - field: runsAs
+    value: [local]
+    url: https://makko.starlightnet.work/english.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Makko is a single binary that outputs static files, so it'll run in any CI environment"
+  - field: templating
+    value: [mustache]
+    url: https://makko.starlightnet.work/english.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "These fill up the website object available in all your Mustache templates"
+  - field: contentStore
+    value: flat-file
+    url: https://makko.starlightnet.work/english.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: '"source": "blog/"'
+  - field: license
+    value: Zlib
+    url: https://forge.starlightnet.work/api/v1/repos/Team/Makko/contents/LICENSE
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://makko.starlightnet.work/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "It is, of course, Open Source"
+  - field: maintainer
+    value: The Starlight Network
+    url: https://forge.starlightnet.work/api/v1/repos/Team/Makko/contents/LICENSE
+    checkedAt: 2026-10-23
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://forge.starlightnet.work/api/v1/orgs/Team
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2025"
+    url: https://forge.starlightnet.work/api/v1/repos/Team/Makko/releases?limit=50
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://forge.starlightnet.work/api/v1/repos/Team/Makko/releases?limit=50
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-04
+    url: https://forge.starlightnet.work/api/v1/repos/Team/Makko/releases?limit=50
+    checkedAt: 2026-10-23
+    via: api
+  - field: forgejoStargazers
+    value: 24
+    url: https://forge.starlightnet.work/api/v1/repos/Team/Makko
+    checkedAt: 2026-10-23
+    via: api
+notFound: [runtimeMin, adminUi, headlessApi, databases, livePreview, i18n, multisite, userRoles, sso, importsFrom, basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, wikidata, pricingPage, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, contributors, endoflifeId, npmName, packagistName]
+unreadable: [https://forge.starlightnet.work/Team/Makko (Cookie Monster bot check), https://forge.starlightnet.work/Team/Makko/raw/branch/main/README.md (bot check)]
+notes: >
+  The forge HTML and raw file URLs answer with a "Cookie Monster" bot challenge, so the README and LICENSE are read through the Forgejo contents API (base64 content); those facts carry no quote, and check-quotes cannot confirm them. The Forgejo API reports the repository language as C; the README build section and the description say Zig, so language is Zig. The stars field is coined as forgejoStargazers, following codebergStargazers, because the repository is not on GitHub. The forge has no contributors endpoint, so contributors stays unknown. The homepage and English documentation are read in full; the docs FAQ states that the project is primarily designed for blogs and does not fully support custom templates beyond post.html and feed.html, which is a constraint for prose. The FAQ also says Makko is not engineered as a web server, and that the output is static files servable by any HTML host. The docs name IRC and XMPP channels on the forge's community page, but no field in the list covers chat channels, so they are not recorded. The config file is makko.json; its paths block sets the source folder (blog/, posts and static media), the output folder (web/) and the templates folder (templates/). The latest release 3.0.0 is stable, and the newest prerelease (3.0.0-pre2, 2026-07-01) is older than it, so no latestPrereleaseDate is recorded. The docs describe a feeds setup (html, rss, atom, json) and a live mode that reloads the browser on save, and neither is recorded as a field.

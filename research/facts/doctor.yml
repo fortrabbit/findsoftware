@@ -1,0 +1,93 @@
+id: doctor
+name: Doctor
+status: stub
+checkedAt: 2026-10-23
+description: Single-file documentation language whose compiler turns a docs file into a GitHub Pages site.
+facts:
+  - field: repository
+    value: https://github.com/DoctorrrrBuild/DoctorrrrBuild
+    url: https://api.github.com/repos/DoctorrrrBuild/DoctorrrrBuild
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/DoctorrrrBuild/DoctorrrrBuild/blob/main/README.md
+    url: https://github.com/DoctorrrrBuild/DoctorrrrBuild/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A single-file documentation language that compiles to GitHub Pages HTML"
+  - field: maintainer
+    value: DoctorrrrBuild
+    url: https://api.github.com/users/DoctorrrrBuild
+    checkedAt: 2026-10-23
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/DoctorrrrBuild
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: HTML
+    url: https://api.github.com/repos/DoctorrrrBuild/DoctorrrrBuild
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [docs-generator]
+    url: https://github.com/DoctorrrrBuild/DoctorrrrBuild/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A single-file documentation language that compiles to GitHub Pages HTML"
+  - field: runtime
+    value: [python]
+    url: https://github.com/DoctorrrrBuild/DoctorrrrBuild/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Setup Python"
+  - field: installMethod
+    value: none, the workflow runs the compiler in GitHub Actions
+    url: https://github.com/DoctorrrrBuild/DoctorrrrBuild/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Doctor requires no installation"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/DoctorrrrBuild/DoctorrrrBuild/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "It runs entirely through GitHub Actions"
+  - field: buildCommand
+    value: python doctor.py
+    url: https://github.com/DoctorrrrBuild/DoctorrrrBuild/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Run `python doctor.py` to convert"
+  - field: contentStore
+    value: flat-file
+    url: https://github.com/DoctorrrrBuild/DoctorrrrBuild/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "One `.doctor` file in a `docs/` folder"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/DoctorrrrBuild/DoctorrrrBuild/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Doctor is open source"
+  - field: lastCommitDate
+    value: 2026-05-28
+    url: https://api.github.com/repos/DoctorrrrBuild/DoctorrrrBuild/commits
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 1
+    url: https://api.github.com/repos/DoctorrrrBuild/DoctorrrrBuild
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/DoctorrrrBuild/DoctorrrrBuild/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, firstRelease, currentMajor, latestReleaseDate, latestPrereleaseDate, endoflifeId, runtimeMin, license, renderingModes, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, outputDir, packagistName, npmName, pypiName, rubygemsName, cranName, hexName, crateName, nugetName]
+unreadable: [https://doctorrrrbuild.github.io/docs/]
+notes: >
+  Doubt: criterion 5 (signal of use) is in doubt, since the repository has one star, one contributor and no license, and the docs link on the project's landing page returns 404; a public adoption figure, a named license or a working documentation site would settle it. The page at doctorrrrbuild.github.io is titled "Optician by Doctor" and describes itself as the landing page generator for Doctor, so it is not recorded as Doctor's homepage; its Read Docs link to ./docs/ returns 404, so the README is the only documentation read. The repository has no license file and the GitHub API reports no license; the README says "Doctor is open source." without naming a license, so license stays unknown and only the licenseModel statement is recorded. The GitHub API lists the primary language as HTML, while the repository holds the Python compiler doctor.py, which the README's workflow runs. The repository has no release or tag, so lastCommitDate judges the listing. The owning organization DoctorrrrBuild has no legal name on GitHub, so the organization login is recorded as the maintainer. The README does not state that the output is static files, so renderingModes and a static runsAs value are not recorded.
