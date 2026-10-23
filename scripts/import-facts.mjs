@@ -19,6 +19,7 @@ const categoryMap = {
   accessibility: 'ui-library',
   'acme-client': 'web-server',
   admin: 'admin-panel',
+  'ai-framework': 'framework',
   'analytics-engine': '',
   animation: 'graphics',
   'animation-library': 'graphics',
@@ -143,8 +144,10 @@ const categoryMap = {
   'full-stack': 'framework',
   'full-stack-framework': 'framework',
   fullstack: 'framework',
+  'fullstack-framework': 'framework',
   'fuzzy-match': 'library',
   gallery: 'media',
+  'gallery-generator': 'ssg',
   'game-server-website': 'cms',
   gettext: 'library',
   'git-cms': 'cms',
@@ -230,6 +233,7 @@ const categoryMap = {
   'platform-cli': 'dev-tool',
   polls: 'forms',
   postgres: 'database',
+  presentation: 'ssg',
   'process-manager': 'web-server',
   'product-analytics': 'analytics',
   'product-tour': 'ui-library',
@@ -325,6 +329,7 @@ const categoryMap = {
   'web-framework': 'framework',
   webgl: 'graphics',
   webhooks: 'backend',
+  'website-builder': 'ssg',
   websocket: 'backend',
   websockets: 'backend',
   'wordpress-theme': '',
@@ -592,7 +597,8 @@ for (const file of facts) {
       String(first('runtimeMin'))
         .match(/^[a-z]+/i)?.[0]
         ?.toLowerCase() ?? runtime[0];
-    const minor = runtimeMin[2] !== undefined && name !== 'node' ? `.${runtimeMin[2]}` : '';
+    // Node before 4 numbered its release lines by the minor (0.8, 0.10), so a zero major keeps it.
+    const minor = runtimeMin[2] !== undefined && (name !== 'node' || runtimeMin[1] === '0') ? `.${runtimeMin[2]}` : '';
     // Only a runtime the dictionary knows: a bare number, a Go or Rust toolchain or an ES level is not a runtime minimum.
     if (name && name !== 'binary' && vocab('runtime').has(name)) record.runtimeMin = `${name} ${runtimeMin[1]}${minor}`;
   }
@@ -649,10 +655,16 @@ for (const file of facts) {
   if (version) record.currentMajor = version[1];
   if (first('latestReleaseDate')) record.latestReleaseDate = String(first('latestReleaseDate')).slice(0, 10);
   // The register shows active projects: no release in four years, pre-releases included, moves a record to the stubs.
-  const newestRelease = [...all('latestReleaseDate'), ...all('latestPrereleaseDate')]
-    .map((date) => String(date).slice(0, 10))
-    .sort()
-    .at(-1);
+  // A project that never tags a release is judged by its last commit instead.
+  const newestRelease =
+    [...all('latestReleaseDate'), ...all('latestPrereleaseDate')]
+      .map((date) => String(date).slice(0, 10))
+      .sort()
+      .at(-1) ??
+    all('lastCommitDate')
+      .map((date) => String(date).slice(0, 10))
+      .sort()
+      .at(-1);
   if (record.status === 'active' && newestRelease && newestRelease < staleBefore) record.status = 'stub';
 
   const adoption = {

@@ -18,7 +18,7 @@ lead: What a project needs to be listed, and where its record goes when it falls
 Every candidate that was researched keeps a record or a row. Nothing is deleted.
 
 - **The register** lists software that meets all five criteria and has released something in the last four years.
-- **[Stubs](/stubs/)** hold records with no release or pre-release in four years, and records whose project site no longer shows the software. They keep their page and are checked again. A record with no release date at all stays in the register.
+- **[Stubs](/stubs/)** hold records with no release or pre-release in four years, and records whose project site no longer shows the software. They keep their page and are checked again. A project that never tags a release is judged by its last commit instead. A record with neither date stays in the register.
 - **[Hosted services](/hosted/)** sit beside the register: software sold only as a hosted service, such as a SaaS headless CMS. Criterion 2 is waived for them.
 - **[Defunct](/defunct/)** holds software with a clear end signal: the repository is archived, the package registry flags it abandoned or deprecated, the project states it has ended or is unmaintained, or every version is past its end of life on endoflife.date. A long gap between releases is no end signal, and neither is a named successor on its own.
 - **[Boundary cases](/boundary/)** are candidates not clearly in or out, listed until that is settled.
