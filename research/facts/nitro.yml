@@ -1,0 +1,122 @@
+id: nitro
+name: Nitro
+status: accepted
+checkedAt: 2026-10-22
+description: TypeScript server toolkit for full-stack servers with filesystem routing, storage, caching and a Vite plugin, deployable to Node.js, Bun, Deno and serverless hosts.
+facts:
+  - field: homepage
+    value: https://nitro.build
+    url: https://github.com/nitrojs/nitro
+    checkedAt: 2026-10-22
+    via: api
+  - field: repository
+    value: https://github.com/nitrojs/nitro
+    url: https://api.github.com/repos/nitrojs/nitro
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://nitro.build/guide
+    url: https://nitro.build/guide
+    checkedAt: 2026-10-22
+    via: page
+  - field: maintainer
+    value: Pooya Parsa and Nitro contributors
+    url: https://raw.githubusercontent.com/nitrojs/nitro/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) Pooya Parsa"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/nitrojs
+    checkedAt: 2026-10-22
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/nitrojs/nitro
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [server-framework, api-server, vite-plugin]
+    url: https://nitro.build/guide
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Nitro is a full-stack server framework, compatible with any runtime and any deployment target."
+  - field: runtime
+    value: [node, bun, deno]
+    url: https://nitro.build
+    checkedAt: 2026-10-22
+    via: page
+    quote: "deploy the same codebase to Node.js, Bun, Deno, or serverless"
+  - field: runtimeMin
+    value: "20"
+    url: https://registry.npmjs.org/nitro/latest
+    checkedAt: 2026-10-22
+    via: api
+    quote: "\"node\":\"^20.19.0 || >=22.12.0\""
+  - field: installMethod
+    value: npx create-nitro-app, or npm i nitro vite with the Vite plugin
+    url: https://nitro.build/guide/quick-start
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The fastest way to create a Nitro application is with create-nitro-app"
+  - field: databases
+    value: [sqlite, postgres, mysql, pglite]
+    url: https://nitro.build/guide
+    checkedAt: 2026-10-22
+    via: page
+    quote: "It defaults to SQLite, but you can connect to and query more than 10 databases"
+  - field: license
+    value: MIT
+    url: https://github.com/nitrojs/nitro/blob/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/nitrojs/nitro/blob/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/nitrojs/nitro/releases
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-19
+    url: https://api.github.com/repos/nitrojs/nitro/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 11298
+    url: https://api.github.com/repos/nitrojs/nitro
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 409
+    url: https://api.github.com/repos/nitrojs/nitro/contributors
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: nitro
+    url: https://registry.npmjs.org/nitro/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 7500690
+    url: https://api.npmjs.org/downloads/point/last-week/nitro
+    checkedAt: 2026-10-22
+    via: api
+  - field: bluesky
+    value: https://bsky.app/profile/nitro.build
+    url: https://nitro.build
+    checkedAt: 2026-10-22
+    via: page
+  - field: x
+    value: https://x.com/nitrojsdev
+    url: https://nitro.build
+    checkedAt: 2026-10-22
+    via: page
+notFound: [firstRelease, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, runsAs, renderingModes, contentStore, adminUi, headlessApi, templating, i18n, multisite, paidEditions, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, newsletter, supportedVersions, endoflifeId, wikidata, docker, buildCommand, outputDir, sso, userRoles]
+unreadable: [https://nitro.build/deploy]
+notes: >
+  The homepage and docs present Nitro v3 as current; the GitHub releases list only v3 prereleases (beta) after the stable v2.13.5, so currentMajor is 2 under the stable-release rule, and the newest v3 beta (2026-09-03) is older than the stable v2 release, so latestPrereleaseDate is not recorded. The npm package named by the install docs, nitro, has the beta as its latest tag; nitropack (stable v2, 2.13.5, MIT, Node ^20.19.0 || >=22.12.0) had 1461961 downloads in the week 2026-10-12 to 2026-10-18 and is the package a v2 user installs. The docs mark Database, Tasks and OpenAPI as "Experimental" on the homepage. The introduction page names Nuxt, SolidStart and TanStack Start as frameworks that "fully or partially leverage Nitro"; that is a dependency in the other direction, so no basedOn is recorded here. The GitHub license API field reads NOASSERTION, so the license is taken from the LICENSE file. Runtime targets come from the homepage, which also lists deploy targets (Node.js, Deno, Bun, Cloudflare, Vercel, Netlify, AWS Lambda, Azure, Firebase, DigitalOcean, Render); the deploy page is a JavaScript shell without readable text, so runsAs stays unknown.

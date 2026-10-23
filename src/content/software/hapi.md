@@ -27,7 +27,7 @@ currentMajor: "21"
 latestReleaseDate: 2026-10-21
 githubStargazers: 14791
 npmWeeklyDownloads: 740794
-contributors: 100
+contributors: 201
 social:
   discord: https://discord.gg/YYxZhpKKvu
 addedAt: 2026-10-22

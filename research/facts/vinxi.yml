@@ -1,0 +1,125 @@
+id: vinxi
+name: Vinxi
+status: accepted
+checkedAt: 2026-10-22
+description: JavaScript toolkit for composing full stack applications and frameworks from Vite and Nitro primitives.
+facts:
+  - field: homepage
+    value: https://vinxi.vercel.app
+    url: https://api.github.com/repos/nksaraf/vinxi
+    checkedAt: 2026-10-22
+    via: api
+  - field: repository
+    value: https://github.com/nksaraf/vinxi
+    url: https://api.github.com/repos/nksaraf/vinxi
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://vinxi.vercel.app/guide/getting-started.html
+    url: https://vinxi.vercel.app/guide/getting-started.html
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Vinxi is a full stack JavaScript SDK to build apps and frameworks of all kinds"
+  - field: maintainer
+    value: Nikhil Saraf
+    url: https://raw.githubusercontent.com/nksaraf/vinxi/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) 2024 Nikhil Saraf"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/nksaraf
+    checkedAt: 2026-10-22
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/nksaraf/vinxi
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [toolkit]
+    url: https://vinxi.vercel.app/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The Full Stack Javascript SDK"
+  - field: basedOn
+    value: [vite, nitro]
+    url: https://raw.githubusercontent.com/nksaraf/vinxi/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "powered by vite and nitro"
+  - field: runtime
+    value: [node]
+    url: https://vinxi.vercel.app/api/app.html
+    checkedAt: 2026-10-22
+    via: page
+    quote: "You can run a file that creates a Vinxi app using the regular node CLI."
+  - field: installMethod
+    value: npm, pnpm, yarn, bun
+    url: https://vinxi.vercel.app/guide/getting-started.html
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npm install vinxi"
+  - field: renderingModes
+    value: [static, spa, server, api-only]
+    url: https://raw.githubusercontent.com/nksaraf/vinxi/main/docs/guide/create-your-first-app.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "be it a static site, SPA, just an API or a fully featured SSR'ed and hydrated application"
+  - field: runsAs
+    value: [always-on]
+    url: https://raw.githubusercontent.com/nksaraf/vinxi/main/docs/api/app.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The built application can be started by running the built node server file using"
+  - field: runsAs
+    value: [static]
+    url: https://raw.githubusercontent.com/nksaraf/vinxi/main/docs/api/cli.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "if you have a static site (preset: `static`)"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/nksaraf/vinxi
+    checkedAt: 2026-10-22
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/nksaraf/vinxi/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/nksaraf/vinxi/releases
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-01-19
+    url: https://registry.npmjs.org/vinxi
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 2797
+    url: https://api.github.com/repos/nksaraf/vinxi
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 60
+    url: https://api.github.com/repos/nksaraf/vinxi/contributors
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: vinxi
+    url: https://registry.npmjs.org/vinxi/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 81282
+    url: https://api.npmjs.org/downloads/point/last-week/vinxi
+    checkedAt: 2026-10-22
+    via: api
+notFound: [maintainerType, hqCountry, parent, forkOf, successorOf, runtimeMin, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, wikidata]
+unreadable: []
+notes: >
+  The GitHub releases list names vinxi@0.5.8 (2025-06-29) as the highest stable vinxi tag, so currentMajor is 0; the npm latest tag is 0.5.11 (2026-01-19), which has no GitHub release, and the registry major is also 0. The repository is a monorepo with tags per package, so only the vinxi tags count. The README names SolidStart as a framework being developed on vinxi and AngularStart (analog) as an experiment; those are separate records and no field here records them. runsAs records the node server (always-on) and the static preset (static); the deployment page lists many other SERVER_PRESET values (vercel, bun, cloudflare and others) without saying how each runs, so those are not recorded. The README defines a router as a brief specification of how a group of URLs is handled, created in the routers array of createApp, with types static, http, spa, client and custom. The CLI page says the default build preset is node-server, and the deployment page says the presets come from Nitro. The page does not state a minimum Node version, and the npm metadata for the latest version has no engines field, so runtimeMin is unknown. firstRelease is not recorded: the npm package exists since 2021 but its first versions describe other projects, and the repository was created in 2023.

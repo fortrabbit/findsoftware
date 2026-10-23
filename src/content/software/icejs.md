@@ -18,6 +18,8 @@ hosting:
   - node
   - static
 runtimeMin: node 14
+basedOn:
+  - react
 i18n: yes, through the official i18n plugin
 runsAs:
   - static
@@ -46,6 +48,9 @@ sources:
     checkedAt: 2026-10-21
   - field: category
     url: https://v3.ice.work/
+    checkedAt: 2026-10-21
+  - field: basedOn
+    url: https://github.com/alibaba/ice
     checkedAt: 2026-10-21
   - field: language
     url: https://api.github.com/repos/alibaba/ice

@@ -1,0 +1,113 @@
+id: polymer
+name: Polymer
+status: accepted
+checkedAt: 2026-10-22
+description: Library for building custom HTML elements as Web Components, with optional two-way data binding.
+facts:
+  - field: homepage
+    value: https://polymer-library.polymer-project.org/
+    url: https://polymer-library.polymer-project.org/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The Polymer library provides a set of features for creating custom elements."
+  - field: repository
+    value: https://github.com/Polymer/polymer
+    url: https://api.github.com/repos/Polymer/polymer
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [ui-library, web-components]
+    url: https://raw.githubusercontent.com/Polymer/polymer/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Polymer lets you build encapsulated, reusable"
+  - field: language
+    value: HTML
+    url: https://api.github.com/repos/Polymer/polymer
+    checkedAt: 2026-10-22
+    via: api
+  - field: installMethod
+    value: npm i @polymer/polymer
+    url: https://raw.githubusercontent.com/Polymer/polymer/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npm i @polymer/polymer"
+  - field: runsAs
+    value: [browser]
+    url: https://raw.githubusercontent.com/Polymer/polymer/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "the standard native JavaScript module loader available in all current major browsers"
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/Polymer/polymer
+    checkedAt: 2026-10-22
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/Polymer/polymer/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The Polymer library uses a BSD-like license"
+  - field: maintainer
+    value: The Polymer Authors
+    url: https://raw.githubusercontent.com/Polymer/polymer/master/LICENSE.txt
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) 2017 The Polymer Authors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Polymer
+    checkedAt: 2026-10-22
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/Polymer/polymer/releases
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2024-10-07
+    url: https://api.github.com/repos/Polymer/polymer/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: firstRelease
+    value: "2014"
+    url: https://api.github.com/repos/Polymer/polymer/releases
+    checkedAt: 2026-10-22
+    via: api
+  - field: alternativeTo
+    value: Lit
+    url: https://polymer-library.polymer-project.org/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "For new development, we recommend Lit"
+  - field: githubStargazers
+    value: 22011
+    url: https://api.github.com/repos/Polymer/polymer
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 135
+    url: https://api.github.com/repos/Polymer/polymer/contributors
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: "@polymer/polymer"
+    url: https://registry.npmjs.org/@polymer%2fpolymer/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 143733
+    url: https://api.npmjs.org/downloads/point/last-week/@polymer/polymer
+    checkedAt: 2026-10-22
+    via: api
+  - field: x
+    value: https://twitter.com/polymer
+    url: https://github.com/Polymer/polymer/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Communicating with the Polymer team"
+notFound: [pricingPage, hqCountry, parent, maintainerType, basedOn, forkOf, successorOf, runtime, runtimeMin, templating, renderingModes, outputDir, buildCommand, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, wikidata, endoflifeId, supportedVersions, packagistName, pypiDownloads, packagistDownloads, docs]
+unreadable: []
+notes: >
+  The homepage states "The Polymer library is in maintenance mode. For new development, we recommend Lit." The README still calls 3.5.2 the current stable version and names LitElement a successor to the PolymerElement base class, so status stays accepted and successorOf is not recorded; a reviewer decides whether maintenance mode ends the record. The npm package named polymer belongs to another project (version 0.5.0), so the registry record is @polymer/polymer, which the README install line names. The GitHub language field is HTML. The README minimal example has an element class extend PolymerElement, declare its properties in a static getter and return an HTMLTemplateElement from a template getter. The homepage is the only page read beyond the README and the 3.0 install, build-for-production and Node support pages, which name no output directory, runtime minimum or deploy target for the library itself. The Polymer CLI, a separate tool, requires Node per its Node support policy page; it is not part of this record. The LICENSE copyright line gives "The Polymer Authors" with no legal form, recorded as stated.

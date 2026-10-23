@@ -17,6 +17,8 @@ language: typescript
 runtime:
   - node
 runtimeMin: node 22
+basedOn:
+  - react
 adminUi: true
 headlessApi:
   - groq
@@ -67,6 +69,9 @@ sources:
     checkedAt: 2026-10-18
   - field: language
     url: https://api.github.com/repos/sanity-io/sanity
+    checkedAt: 2026-10-18
+  - field: basedOn
+    url: https://www.sanity.io/docs/studio/deployment
     checkedAt: 2026-10-18
   - field: runtime
     url: https://www.sanity.io/docs/studio/installation

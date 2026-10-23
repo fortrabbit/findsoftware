@@ -1,0 +1,130 @@
+id: kulfon
+name: Kulfon
+status: stub
+checkedAt: 2026-10-22
+description: JavaScript static site generator that builds HTML pages from Nunjucks templates and Markdown or Org Mode content.
+facts:
+  - field: status
+    value: stub
+    url: https://kulfon.org/
+    checkedAt: 2026-10-22
+    via: page
+  - field: repository
+    value: https://github.com/kulfonjs/kulfon
+    url: https://api.github.com/repos/kulfonjs/kulfon
+    checkedAt: 2026-10-22
+    via: api
+  - field: maintainer
+    value: Zaiste
+    url: https://raw.githubusercontent.com/kulfonjs/kulfon/master/package.json
+    checkedAt: 2026-10-22
+    via: page
+    quote: "\"name\": \"Zaiste\""
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/kulfonjs
+    checkedAt: 2026-10-22
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/kulfonjs/kulfon
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://raw.githubusercontent.com/kulfonjs/kulfon/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "JavaScript static site generator"
+  - field: runtime
+    value: [node]
+    url: https://raw.githubusercontent.com/kulfonjs/kulfon/master/package.json
+    checkedAt: 2026-10-22
+    via: page
+    quote: "\"node\": \">= 12.x.x\""
+  - field: runtimeMin
+    value: 12
+    url: https://raw.githubusercontent.com/kulfonjs/kulfon/master/package.json
+    checkedAt: 2026-10-22
+    via: page
+    quote: "\"node\": \">= 12.x.x\""
+  - field: installMethod
+    value: npm install -g
+    url: https://raw.githubusercontent.com/kulfonjs/kulfon/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npm install -g kulfon"
+  - field: renderingModes
+    value: [static]
+    url: https://raw.githubusercontent.com/kulfonjs/kulfon/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "to tranform them into HTML pages at once"
+  - field: runsAs
+    value: [static]
+    url: https://raw.githubusercontent.com/kulfonjs/kulfon/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "JavaScript static site generator"
+  - field: runsAs
+    value: [local]
+    url: https://raw.githubusercontent.com/kulfonjs/kulfon/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "and run `kulfon`'s server"
+  - field: templating
+    value: [nunjucks]
+    url: https://raw.githubusercontent.com/kulfonjs/kulfon/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "It supports [Nunjucks](https://mozilla.github.io/nunjucks/)"
+  - field: license
+    value: Apache-2.0
+    url: https://registry.npmjs.org/kulfon/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/kulfonjs/kulfon/master/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: firstRelease
+    value: "2016"
+    url: https://registry.npmjs.org/kulfon
+    checkedAt: 2026-10-22
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://registry.npmjs.org/kulfon/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2020-07-16
+    url: https://registry.npmjs.org/kulfon
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 118
+    url: https://api.github.com/repos/kulfonjs/kulfon
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/kulfonjs/kulfon/contributors?per_page=1
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: kulfon
+    url: https://registry.npmjs.org/kulfon/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 37
+    url: https://api.npmjs.org/downloads/point/last-week/kulfon
+    checkedAt: 2026-10-22
+    via: api
+notFound: [homepage, docs, basedOn, parent, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, outputDir, hqCountry, maintainerType]
+unreadable: [https://kulfon.org/ (HTTP 500 on every request), https://kulfon.org/docs/install/ (behind the same 500)]
+notes: >
+  The project's site kulfon.org, linked from the README and set as the GitHub homepage, answers HTTP 500 on every request (rechecked 2026-10-22, also www.kulfon.org and /docs/install/), so the record is a stub without homepage or docs. kulfon.net, linked from the README demo, now serves an unrelated site. The repository is not archived and no end statement exists. The README and the source tree (cli/deploy.js, cli/server.js) carry the install and command facts instead. The repository moved from github.com/zaiste/kulfon to github.com/kulfonjs/kulfon; the npm package names zaiste/kulfon as its repository, and GitHub redirects that name, so the current repository is recorded. The README says the software is "still under active development and not feature complete or ready for consumption by anyone other than software developers". The GitHub API reports the license as NOASSERTION; the LICENSE file is Apache 2.0 and npm lists Apache-2.0. The project has no GitHub releases; the npm dist-tags give latest 0.42.0 (npm time 2020-07-16). The source file headers read "Copyright 2016 Zaiste & contributors", and the maintainer is recorded as the package author Zaiste. The cli/deploy.js command copies the public directory to a server and path set in config.yml with rsync over SSH; this is recorded here because no deployment page could be read, and no field fits it yet. The README says the project is "similar to Hugo", a comparison, so no alternativeTo fact is recorded. The README lists three websites that use Kulfon; the list is not a count and is not recorded.

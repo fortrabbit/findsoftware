@@ -1,0 +1,1 @@
+BakeIt is a static site generator that builds a website from Markdown source files. Its templates use Handlebars or Mustache syntax, and the source files sit in a folder inside the project. It is installed globally with npm.

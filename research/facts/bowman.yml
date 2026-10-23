@@ -1,0 +1,125 @@
+id: bowman
+name: Bowman
+status: stub
+checkedAt: 2026-10-22
+description: Static site generator that builds pages from EJS templates and JSON data, with a Webpack and Browsersync toolchain.
+facts:
+  - field: status
+    value: stub
+    url: https://bowman.netlify.app/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Bowman Consulting Partners"
+  - field: repository
+    value: https://github.com/waldronmatt/bowman
+    url: https://api.github.com/repos/waldronmatt/bowman
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://github.com/waldronmatt/bowman/tree/master/docs
+    url: https://github.com/waldronmatt/bowman/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Read the full documentation"
+  - field: maintainer
+    value: Matthew Waldron
+    url: https://raw.githubusercontent.com/waldronmatt/bowman/master/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) 2020 Matthew Waldron"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/waldronmatt
+    checkedAt: 2026-10-22
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/waldronmatt/bowman
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://github.com/waldronmatt/bowman/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "A simple static site generator with an integrated toolchain"
+  - field: runtime
+    value: [node]
+    url: https://github.com/waldronmatt/bowman/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "powered by Node.js, Webpack, and Browsersync"
+  - field: installMethod
+    value: npm install -g, then create-bowman-starter
+    url: https://github.com/waldronmatt/bowman/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "create-bowman-starter -y"
+  - field: buildCommand
+    value: npm run build
+    url: https://github.com/waldronmatt/bowman/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Build and serve for production"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/waldronmatt/bowman/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "A simple static site generator"
+  - field: templating
+    value: [ejs]
+    url: https://github.com/waldronmatt/bowman/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "EJS - generate HTML markup with plain JavaScript"
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/@waldronmatt%2fbowman/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/waldronmatt/bowman/master/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2020"
+    url: https://api.github.com/repos/waldronmatt/bowman/releases
+    checkedAt: 2026-10-22
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/waldronmatt/bowman/releases
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2021-09-24
+    url: https://api.github.com/repos/waldronmatt/bowman/releases
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 21
+    url: https://api.github.com/repos/waldronmatt/bowman
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/waldronmatt/bowman/contributors
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: "@waldronmatt/bowman"
+    url: https://registry.npmjs.org/@waldronmatt%2fbowman/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1
+    url: https://api.npmjs.org/downloads/point/last-week/@waldronmatt/bowman
+    checkedAt: 2026-10-22
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEditions, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, runtimeMin, outputDir]
+unreadable: []
+notes: >
+  The homepage bowman.netlify.app, listed as the project's homepage on GitHub, now serves a page for a different organization ("Bowman Consulting Partners"), so no homepage is recorded and status is stub under AGENTS.md (the project's own site no longer shows the software). The docs at the README link are read through the README and the docs folder (about, index, essential-files). The npm package named bowman is a different project (derekrjones/bowman, 0.0.1); the install docs name @waldronmatt/bowman, which is the registry package recorded. Highest stable GitHub release is v1.9.25 (2021-09-24), which matches npm latest. The last push is 2021-09-24; no archive flag and no deprecation or end statement were found. The README and docs call it a static site generator and name Node.js, Webpack and Browsersync; these are recorded as runtime and templating, and no basedOn is recorded because the docs name tools it is powered by, not a parent project. The README limitations say the content and data folders must have matching file names, or the build fails, and that webpack prefetch and preload need html-webpack-plugin. The docs do not state the output directory of the production build beyond dist/, so outputDir is unknown.

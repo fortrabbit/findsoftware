@@ -21,6 +21,7 @@ hosting:
   - static
 runtimeMin: node 20
 basedOn:
+  - react
   - webpack
 contentStore:
   - flat-file

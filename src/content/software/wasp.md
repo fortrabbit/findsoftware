@@ -19,6 +19,7 @@ hosting:
   - static
 runtimeMin: node 24
 basedOn:
+  - react
   - prisma
 databases:
   - postgres

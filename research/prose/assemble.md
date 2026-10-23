@@ -1,0 +1,1 @@
+Assemble is a command line tool and developer framework from the Node.js ecosystem. It renders templates with any template engine, and the README names nunjucks, handlebars and lodash as examples. It is installed with npm, globally for the command line, and the README says it can build static sites.

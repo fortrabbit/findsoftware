@@ -1,0 +1,3 @@
+Remult is a TypeScript library that uses entity classes as the single definition for a CRUD and realtime API, a type-safe frontend client and a backend database layer. The server side is set up as request-handling middleware, and the README lists adapters for Express, Fastify, Next.js, Nuxt, SvelteKit, SolidStart, Nest, Koa, Hapi and Hono. Validation is defined once and runs on both the backend and the frontend, and authorization rules are written in code.
+
+The generated API is REST with live queries, and a GraphQL endpoint is optional. An admin UI for entities is built in and is switched on with a configuration option.

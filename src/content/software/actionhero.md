@@ -25,7 +25,7 @@ currentMajor: "29"
 latestReleaseDate: 2026-07-23
 githubStargazers: 2414
 npmWeeklyDownloads: 4371
-contributors: 100
+contributors: 99
 social:
   x: https://twitter.com/actionherojs
 addedAt: 2026-10-19
@@ -72,7 +72,7 @@ sources:
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/actionhero/actionhero/contributors?anon=true&per_page=100
-    checkedAt: 2026-10-19
+    checkedAt: 2026-10-22
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/actionhero
     checkedAt: 2026-10-19

@@ -17,6 +17,8 @@ runtime:
 hosting:
   - node
 runtimeMin: node 20
+basedOn:
+  - react
 renderingModes:
   - spa
   - server
@@ -70,6 +72,9 @@ sources:
     checkedAt: 2026-10-21
   - field: renderingModes
     url: https://modernjs.dev/guides/basic-features/render/ssg
+    checkedAt: 2026-10-21
+  - field: basedOn
+    url: https://modernjs.dev/guides/get-started/introduction
     checkedAt: 2026-10-21
   - field: license
     url: https://raw.githubusercontent.com/web-infra-dev/modern.js/main/LICENSE

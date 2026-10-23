@@ -22,6 +22,7 @@ hosting:
 runtimeMin: php 8.4
 basedOn:
   - laravel
+  - vue
 databases:
   - mysql
   - mariadb
@@ -36,7 +37,7 @@ currentMajor: "2"
 latestReleaseDate: 2026-10-06
 githubStargazers: 28255
 packagistDownloads: 180984
-contributors: 100
+contributors: 268
 social:
   x: https://x.com/BagistoShop
   forum: https://forums.bagisto.com
@@ -100,7 +101,7 @@ sources:
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/bagisto/bagisto/contributors?anon=true&per_page=100
-    checkedAt: 2026-10-19
+    checkedAt: 2026-10-22
   - field: packagistDownloads
     url: https://packagist.org/packages/bagisto/bagisto.json
     checkedAt: 2026-10-19

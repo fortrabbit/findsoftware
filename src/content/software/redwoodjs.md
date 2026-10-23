@@ -17,6 +17,8 @@ hosting:
   - node
   - static
 runtimeMin: node 20
+basedOn:
+  - react
 databases:
   - sqlite
   - postgres
@@ -52,6 +54,9 @@ sources:
     checkedAt: 2026-10-22
   - field: category
     url: https://docs.redwoodjs.com/docs/introduction
+    checkedAt: 2026-10-22
+  - field: basedOn
+    url: https://github.com/redwoodjs/graphql/blob/main/README.md
     checkedAt: 2026-10-22
   - field: language
     url: https://api.github.com/repos/redwoodjs/graphql

@@ -1,0 +1,137 @@
+id: tinyjam
+name: tinyjam
+status: accepted
+checkedAt: 2026-10-23
+description: Zero-configuration static site generator that renders EJS templates and Markdown files into HTML.
+facts:
+  - field: repository
+    value: https://github.com/mourner/tinyjam
+    url: https://api.github.com/repos/mourner/tinyjam
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/mourner/tinyjam/blob/master/README.md
+    url: https://github.com/mourner/tinyjam/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Documentation"
+  - field: maintainer
+    value: Volodymyr Agafonkin
+    url: https://github.com/mourner/tinyjam/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2026, Volodymyr Agafonkin"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/mourner
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/mourner/tinyjam
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://github.com/mourner/tinyjam/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A bare-bones, zero-configuration static site generator"
+  - field: templating
+    value: [ejs]
+    url: https://github.com/mourner/tinyjam/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Tinyjam uses EJS"
+  - field: runtime
+    value: [node]
+    url: https://github.com/mourner/tinyjam/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "the project only supports Node v12.17+"
+  - field: runtimeMin
+    value: 12
+    url: https://github.com/mourner/tinyjam/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "the project only supports Node v12.17+"
+  - field: installMethod
+    value: [npm]
+    url: https://github.com/mourner/tinyjam/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "npm install -g tinyjam"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/mourner/tinyjam/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A bare-bones, zero-configuration static site generator"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/mourner/tinyjam/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "There's no need for all that in a static website"
+  - field: license
+    value: ISC
+    url: https://registry.npmjs.org/tinyjam/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/mourner/tinyjam/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "with or without fee is hereby granted"
+  - field: firstRelease
+    value: "2020"
+    url: https://api.github.com/repos/mourner/tinyjam/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/mourner/tinyjam/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2021-06-30
+    url: https://api.github.com/repos/mourner/tinyjam/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 171
+    url: https://api.github.com/repos/mourner/tinyjam
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/mourner/tinyjam/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: buildCommand
+    value: npx tinyjam source_dir output_dir
+    url: https://github.com/mourner/tinyjam/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "npx tinyjam source_dir output_dir"
+  - field: outputDir
+    value: source directory when no output directory is given
+    url: https://github.com/mourner/tinyjam/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "it's assumed equal to"
+  - field: npmName
+    value: tinyjam
+    url: https://registry.npmjs.org/tinyjam/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmWeeklyDownloads
+    value: 18
+    url: https://api.npmjs.org/downloads/point/last-week/tinyjam
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId]
+unreadable: []
+notes: >
+  No project site exists: the GitHub homepage field is empty, so no homepage is recorded; the README's example output link is a demo, not a homepage. The last GitHub release is v0.4.0 (2021-06-30), the same date as the npm publication, so the record falls under the four-year rule for stub although the repository was pushed 2026-03-29 and carries no archive flag. No page states that the project has ended. The README's FAQ declines new features that do not fit the minimal concept; that is a scope statement, not an end statement, and none is recorded. Data files are all *.md and *.yml files in the source folder, templates are *.ejs files, and templates starting with an underscore are skipped so they can be used as includes. Pagination is not supported, per the FAQ. The FAQ answers how to make a multilingual website with a shared include template rendered once per language, each reading its content from a per-language Markdown file. Markdown is rendered according to the GitHub Flavored Markdown specification.

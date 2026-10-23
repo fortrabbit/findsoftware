@@ -1,0 +1,1 @@
+Elmstatic is a static site generator in which page layouts are written in Elm and posts are written in Markdown or elm-markup. It is installed from npm and calls the `elm` executable during the build. According to the [project page](https://korban.net/elm/elmstatic), the output includes RSS feeds and is published to the host of your choice.

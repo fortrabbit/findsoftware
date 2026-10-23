@@ -1,0 +1,112 @@
+id: oak
+name: Oak
+status: accepted
+checkedAt: 2026-10-22
+description: Middleware framework for handling HTTP requests across Deno, Node.js, Bun and Cloudflare Workers.
+facts:
+  - field: homepage
+    value: https://oakserver.org
+    url: https://api.github.com/repos/oakserver/oak
+    checkedAt: 2026-10-22
+    via: api
+  - field: repository
+    value: https://github.com/oakserver/oak
+    url: https://api.github.com/repos/oakserver/oak
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://jsr.io/@oak/oak/doc
+    url: https://oakserver.org
+    checkedAt: 2026-10-22
+    via: page
+    quote: "See the docs"
+  - field: maintainer
+    value: the oak authors
+    url: https://raw.githubusercontent.com/oakserver/oak/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) 2018-2025 the oak authors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/oakserver
+    checkedAt: 2026-10-22
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/oakserver/oak
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [http-framework, middleware-framework, router]
+    url: https://oakserver.org
+    checkedAt: 2026-10-22
+    via: page
+    quote: "a middleware framework for handling HTTP requests"
+  - field: runtime
+    value: [node, deno, bun, cloudflare-workers]
+    url: https://oakserver.org
+    checkedAt: 2026-10-22
+    via: page
+    quote: "a middleware framework for handling HTTP requests across Deno"
+  - field: runtimeMin
+    value: "16"
+    url: https://github.com/oakserver/oak/blob/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Node.js 16.5 and later"
+  - field: installMethod
+    value: deno add jsr:@oak/oak, or npm i @oakserver/oak on Node.js
+    url: https://github.com/oakserver/oak/blob/main/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "deno add jsr:@oak/oak"
+  - field: license
+    value: MIT
+    url: https://github.com/oakserver/oak/blob/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/oakserver/oak/blob/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+  - field: currentMajor
+    value: 17
+    url: https://jsr.io/@oak/oak/meta.json
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2025-11-22
+    url: https://jsr.io/@oak/oak/meta.json
+    checkedAt: 2026-10-22
+    via: api
+  - field: jsrName
+    value: "@oak/oak"
+    url: https://jsr.io/@oak/oak/meta.json
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 5407
+    url: https://api.github.com/repos/oakserver/oak
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 83
+    url: https://api.github.com/repos/oakserver/oak/contributors
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: "@oakserver/oak"
+    url: https://registry.npmjs.org/@oakserver%2foak/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 102
+    url: https://api.npmjs.org/downloads/point/last-week/@oakserver/oak
+    checkedAt: 2026-10-22
+    via: api
+notFound: [firstRelease, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, paidEditions, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, supportedVersions, endoflifeId, wikidata, docker, buildCommand, outputDir, sso, userRoles]
+unreadable: []
+notes: >
+  No GitHub releases exist (the releases API returns 404), so currentMajor and latestReleaseDate come from JSR, the registry the README names for Deno, Node.js and Bun installs. The npm package @oakserver/oak has 14.1.0 as its latest version and a Node engines range of >=16.5.0 <22; it is named as an install route in the README but is not the current release line. The npm weekly figure is for that older package and is recorded as stated. The README says send, websocket upgrades and serving over TLS/HTTPS are not currently supported on Node.js, and send and websocket upgrades are not supported on Bun and Cloudflare Workers; these limits are in the README and go in the prose. The project describes itself as inspired by Koa (and its router by @koa/router) and says the code was originally written for Deno; neither is recorded as basedOn. The homepage's "See the docs" link points to the JSR documentation. jsrName is a coined field: the registry id of the JSR package, as npmName is for npm.

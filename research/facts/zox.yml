@@ -1,0 +1,136 @@
+id: zox
+name: Zox
+status: stub
+checkedAt: 2026-10-23
+description: Service-oriented web framework for building web apps and services with React and GraphQL, or generating static sites.
+facts:
+  - field: status
+    value: stub
+    url: http://zoxjs.com/
+    checkedAt: 2026-10-23
+    via: page
+  - field: repository
+    value: https://github.com/zoxjs/zox
+    url: https://api.github.com/repos/zoxjs/zox
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/zoxjs/zox/blob/master/Readme.md
+    url: https://github.com/zoxjs/zox/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Get started with a new project"
+  - field: maintainer
+    value: Zoran Ravic
+    url: https://github.com/zoxjs/zox/blob/master/LICENCE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2018 Zoran Ravic"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/zoxjs/zox
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/zoxjs/zox
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [framework, ssg]
+    url: https://github.com/zoxjs/zox/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Build scalable web apps and services with React and GraphQL or generate Static Sites."
+  - field: runtime
+    value: [node]
+    url: https://github.com/zoxjs/zox/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "npm i zox zox-plugins"
+  - field: installMethod
+    value: npm install
+    url: https://github.com/zoxjs/zox/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "npm i zox zox-plugins"
+  - field: renderingModes
+    value: [server]
+    url: https://github.com/zoxjs/zox/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Render React Components on the Server-Side"
+  - field: renderingModes
+    value: [spa]
+    url: https://github.com/zoxjs/zox/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "React SPA"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/zoxjs/zox/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generate Static Sites"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/zoxjs/zox/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generate Static Sites"
+  - field: templating
+    value: [handlebars]
+    url: https://github.com/zoxjs/zox/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Use handlebars templates"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/zoxjs/zox
+    checkedAt: 2026-10-23
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/zoxjs/zox/blob/master/LICENCE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: 2018
+    url: https://registry.npmjs.org/zox
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/zox/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2019-08-14
+    url: https://registry.npmjs.org/zox
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 4
+    url: https://api.github.com/repos/zoxjs/zox
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/zoxjs/zox/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmName
+    value: zox
+    url: https://registry.npmjs.org/zox/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmWeeklyDownloads
+    value: 3
+    url: https://api.npmjs.org/downloads/point/last-week/zox
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, runtimeMin, outputDir, packagistName, packagistDownloads]
+unreadable: [http://zoxjs.com/ (DNS lookup fails)]
+notes: >
+  The homepage zoxjs.com in the candidate row does not resolve (NXDOMAIN over HTTP and HTTPS, checked 2026-10-23), so the status fact has no quote, so the record is a stub without homepage under the dead-homepage rule; the README's only pointer to docs is that site, so no docs URL is recorded. The project has no GitHub releases or tags; firstRelease, currentMajor and latestReleaseDate come from the npm registry (version 1.1.2 is npm latest, first version 1.0.0 published 2018-07-05, the GitHub repository was created the same day). The repository was last pushed 2022-01-15 and is not archived; no deprecation is set on the npm package. The README shows no statement of runsAs; controllers "send the HTTP response" but no page states a long-running process, so runsAs is left unknown. The repository's own README mentions zox-plugins, zox-react, zox-graphql-ws and zox-handlebars as separate npm packages; they are not recorded as the install package. The npm weekly figure (week 2026-10-12 to 2026-10-18) is the zox package, the package the README's first install line names. The npm maintainer and package author are listed as Zoran Ravic, matching the LICENCE line.

@@ -17,6 +17,8 @@ runtime:
 hosting:
   - node
   - deno
+basedOn:
+  - marko
 renderingModes:
   - server
   - static
@@ -38,6 +40,9 @@ sources:
     url: https://github.com/marko-js/run/blob/main/packages/run/README.md
     checkedAt: 2026-10-21
   - field: category
+    url: https://registry.npmjs.org/@marko/run/latest
+    checkedAt: 2026-10-21
+  - field: basedOn
     url: https://registry.npmjs.org/@marko/run/latest
     checkedAt: 2026-10-21
   - field: language

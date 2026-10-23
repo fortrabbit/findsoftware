@@ -1,0 +1,117 @@
+id: koa
+name: Koa
+status: accepted
+checkedAt: 2026-10-22
+description: Node.js HTTP middleware framework for building web applications and APIs, with async functions as middleware.
+facts:
+  - field: homepage
+    value: https://koajs.com
+    url: https://api.github.com/repos/koajs/koa
+    checkedAt: 2026-10-22
+    via: api
+  - field: repository
+    value: https://github.com/koajs/koa
+    url: https://api.github.com/repos/koajs/koa
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://koajs.com
+    url: https://koajs.com/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Koa is a new web framework designed by the team behind Express"
+  - field: maintainer
+    value: Koa contributors
+    url: https://raw.githubusercontent.com/koajs/koa/master/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) 2019 Koa contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/koajs
+    checkedAt: 2026-10-22
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/koajs/koa
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [http-framework]
+    url: https://github.com/koajs/koa/blob/master/Readme.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Expressive HTTP middleware framework for node.js"
+  - field: runtime
+    value: [node]
+    url: https://koajs.com/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Koa requires node v18.0.0 or higher"
+  - field: runtimeMin
+    value: 18
+    url: https://registry.npmjs.org/koa/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://github.com/koajs/koa/blob/master/Readme.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npm install koa"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/koajs/koa
+    checkedAt: 2026-10-22
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/koajs/koa/master/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "(The MIT License)"
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/koajs/koa/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-21
+    url: https://api.github.com/repos/koajs/koa/releases/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://registry.npmjs.org/koa
+    checkedAt: 2026-10-22
+    via: api
+  - field: alternativeTo
+    value: [express, connect]
+    url: https://github.com/koajs/koa/blob/master/docs/koa-vs-express.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "you probably want to stick to Connect/Express or similar frameworks"
+  - field: githubStargazers
+    value: 35681
+    url: https://api.github.com/repos/koajs/koa
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 238
+    url: https://api.github.com/repos/koajs/koa/contributors
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: koa
+    url: https://registry.npmjs.org/koa/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 4181232
+    url: https://api.npmjs.org/downloads/point/last-week/koa
+    checkedAt: 2026-10-22
+    via: api
+notFound: [maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, wikidata]
+unreadable: []
+notes: >
+  Highest stable GitHub release is v3.2.1 (2026-05-21), which matches the npm latest tag. The README states that Koa is "not bundled with any middleware", so middleware is recorded nowhere as a field. The docs page says Koa was designed by the team behind Express; that is an origin statement and not a fork or successor relationship, so only alternativeTo is recorded, from the project's own koa-vs-express page. No page states how a deployed Koa app runs, so runsAs stays unknown: app.listen() creating an HTTP server does not say the process stays up. The firstRelease year is the year of the first npm publish (created 2013-11-06); the repository was created in 2013-07. The homepage describes the installation as requiring Node v18 or higher; the npm engines field for the latest version is ">= 18".

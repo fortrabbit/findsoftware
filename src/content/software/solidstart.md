@@ -16,6 +16,8 @@ runtime:
 hosting:
   - node
 runtimeMin: node 24
+basedOn:
+  - solid
 renderingModes:
   - server
   - static
@@ -47,6 +49,9 @@ sources:
     checkedAt: 2026-10-22
   - field: category
     url: https://github.com/solidjs/solid-start
+    checkedAt: 2026-10-22
+  - field: basedOn
+    url: https://docs.solidjs.com/solid-start/v2/
     checkedAt: 2026-10-22
   - field: language
     url: https://api.github.com/repos/solidjs/solid-start

@@ -7,6 +7,7 @@ urls:
   docs: https://github.com/microweber/microweber/blob/master/README.md
 category:
   - cms
+  - ssg
   - e-commerce
 description: Drag-and-drop website builder and content management system built on Laravel, for websites, blogs and online stores.
 status: active

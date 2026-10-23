@@ -29,7 +29,7 @@ currentMajor: "2"
 latestReleaseDate: 2026-10-14
 githubStargazers: 3194
 npmWeeklyDownloads: 17824
-contributors: 100
+contributors: 191
 social:
   discord: https://chat.analogjs.org
 addedAt: 2026-10-19
@@ -82,7 +82,7 @@ sources:
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/analogjs/analog/contributors?anon=true&per_page=100
-    checkedAt: 2026-10-19
+    checkedAt: 2026-10-22
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@analogjs/platform
     checkedAt: 2026-10-19

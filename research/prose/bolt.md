@@ -1,0 +1,1 @@
+Bolt is a static site build tool built on Grunt. A new project starts from its seed, created with the bolt-cli command, and the seed compiles Jade templates and Stylus stylesheets. Its Grunt tasks run a development server with live reload and a production build with separate output directories.

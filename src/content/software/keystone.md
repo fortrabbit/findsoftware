@@ -22,6 +22,7 @@ basedOn:
   - prisma
   - express
   - nextjs
+  - react
 contentStore:
   - database
 databases:

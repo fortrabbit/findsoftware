@@ -27,7 +27,7 @@ currentMajor: "7"
 latestReleaseDate: 2025-11-05
 githubStargazers: 29175
 npmWeeklyDownloads: 797
-contributors: 100
+contributors: 347
 social:
   discord: https://t3.gg/discord
 addedAt: 2026-10-22

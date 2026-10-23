@@ -2,12 +2,13 @@
 id: nucleus-cms
 name: NucleusCMS
 urls:
+  home: https://nucleuscms.github.io/
   repository: https://github.com/NucleusCMS/NucleusCMS
   docs: https://github.com/NucleusCMS/NucleusCMS/blob/master/nucleus/documentation/index.html
 category:
   - cms
 description: Open-source PHP and MySQL weblog content management system.
-status: active
+status: stub
 maintainer: NucleusCMS Salvage Project
 language: php
 runtime:

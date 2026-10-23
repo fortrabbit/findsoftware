@@ -1,0 +1,132 @@
+id: marko
+name: Marko
+status: accepted
+checkedAt: 2026-10-22
+description: HTML-based language and runtime for building web applications and user interfaces, with the Marko Run application framework.
+facts:
+  - field: homepage
+    value: https://markojs.com
+    url: https://markojs.com
+    checkedAt: 2026-10-22
+    via: page
+    quote: "makes building web apps fun"
+  - field: repository
+    value: https://github.com/marko-js/marko
+    url: https://api.github.com/repos/marko-js/marko
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://markojs.com/docs/introduction/installation
+    url: https://markojs.com/docs/introduction/installation
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Install Marko"
+  - field: maintainer
+    value: eBay Inc.
+    url: https://raw.githubusercontent.com/marko-js/marko/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright 2024 eBay Inc. and contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/marko-js
+    checkedAt: 2026-10-22
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/marko-js/marko
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [ui-library]
+    url: https://markojs.com
+    checkedAt: 2026-10-22
+    via: page
+    quote: "building dynamic and reactive user interfaces"
+  - field: categories
+    value: [framework]
+    url: https://markojs.com/docs/marko-run/getting-started
+    checkedAt: 2026-10-22
+    via: page
+    quote: "is the application framework for Marko"
+  - field: runtime
+    value: [node]
+    url: https://markojs.com/docs/introduction/installation
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Node.js v18"
+  - field: runtimeMin
+    value: 22
+    url: https://registry.npmjs.org/marko/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: installMethod
+    value: npm init marko
+    url: https://markojs.com/docs/introduction/installation
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npm init marko -- -t basic"
+  - field: renderingModes
+    value: [server]
+    url: https://markojs.com/docs/marko-run/getting-started
+    checkedAt: 2026-10-22
+    via: page
+    quote: "streaming server-side rendering"
+  - field: renderingModes
+    value: [static]
+    url: https://markojs.com/docs/marko-run/adapters
+    checkedAt: 2026-10-22
+    via: page
+    quote: "rendered to static files"
+  - field: runsAs
+    value: [static]
+    url: https://markojs.com/docs/marko-run/adapters
+    checkedAt: 2026-10-22
+    via: page
+    quote: "static files that can be served from any file server or CDN"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/marko-js/marko/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/marko-js/marko/main/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 6
+    url: https://registry.npmjs.org/marko/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-15
+    url: https://registry.npmjs.org/marko
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 14459
+    url: https://api.github.com/repos/marko-js/marko
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 130
+    url: https://api.github.com/repos/marko-js/marko/contributors
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: marko
+    url: https://registry.npmjs.org/marko/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 18885
+    url: https://api.npmjs.org/downloads/point/last-week/marko
+    checkedAt: 2026-10-22
+    via: api
+notFound: [firstRelease, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, wikidata, regions, apiLimits, selfHostOption]
+unreadable: []
+notes: >
+  The marko package has GitHub releases only up to marko@5.39.7 (2026-06-15); npm latest is 6.4.6, a higher major, so currentMajor and latestReleaseDate come from npm, as the write-record rules say. The install page lists Node.js v18, v20 and v22 as prerequisites, while the npm package declares engines node >=22; runtimeMin uses the npm value and the docs list is recorded only as the runtime fact. The marko-run adapters page says the same routes can be served by a Node process, deployed to an edge platform, or rendered to static files; the static entry records only the static output mode. Marko Run is powered by Vite, which is a dependency of Marko Run and not a basis for basedOn. The homepage names eBay as a production user; that is not recorded as a fact. The candidate row lists framework and ui-library; both are recorded as categories.

@@ -26,7 +26,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2023-01-10
 githubStargazers: 6757
-contributors: 100
+contributors: 118
 pluginCount: 50
 social:
   x: https://twitter.com/brunch

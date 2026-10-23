@@ -1,0 +1,132 @@
+id: ulka
+name: Ulka
+status: accepted
+checkedAt: 2026-10-23
+description: Static site generator written in JavaScript that builds pages from templates and content files, with a plugin system.
+facts:
+  - field: homepage
+    value: https://ulka.js.org
+    url: https://ulka.js.org/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A fast, pluggable and lightweight static site generator written in javascript"
+  - field: docs
+    value: https://ulka.js.org/docs/
+    url: https://ulka.js.org/docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Ulka is a fast, pluggable and lightweight static site generator"
+  - field: repository
+    value: https://github.com/ulkajs/ulka
+    url: https://api.github.com/repos/ulkajs/ulka
+    checkedAt: 2026-10-23
+    via: api
+  - field: maintainer
+    value: Roshan Acharya
+    url: https://github.com/ulkajs/ulka/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2020 - present, Roshan Acharya"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/ulkajs
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/ulkajs/ulka
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://ulka.js.org/docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Ulka is a fast, pluggable and lightweight static site generator"
+  - field: runtime
+    value: [node]
+    url: https://ulka.js.org/docs/quickstart/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "download nodejs labelled as with LTS"
+  - field: templating
+    value: [ejs, pug, liquid, ulka]
+    url: https://ulka.js.org/docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Ulka out of the box supports ejs , pug , liquid , markdown and ulka templating languages."
+  - field: contentStore
+    value: flat-file
+    url: https://ulka.js.org/docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Ulka doesn't require you have files in specific folders."
+  - field: installMethod
+    value: npm init ulka
+    url: https://github.com/ulkajs/ulka/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "npm init ulka my-blog -- --template default-blog"
+  - field: buildCommand
+    value: npx ulka
+    url: https://github.com/ulkajs/ulka/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "npx ulka # build the project"
+  - field: renderingModes
+    value: [static]
+    url: https://ulka.js.org/docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generates static html pages and assets"
+  - field: runsAs
+    value: [static]
+    url: https://ulka.js.org/docs/quickstart/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "builds all the files into output path specified in ulka-config.js"
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/ulka/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/ulkajs/ulka/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/ulka/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2023-06-30
+    url: https://registry.npmjs.org/ulka
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 20
+    url: https://api.github.com/repos/ulkajs/ulka
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/ulkajs/ulka/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmName
+    value: ulka
+    url: https://registry.npmjs.org/ulka/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmWeeklyDownloads
+    value: 27
+    url: https://api.npmjs.org/downloads/point/last-week/ulka
+    checkedAt: 2026-10-23
+    via: api
+notFound: [firstRelease, pricingPage, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, maintainerType, basedOn, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, packagistName, packagistDownloads, pypiDownloads, endoflifeId, apiLimits, regions, selfHostOption, runtimeMin, outputDir]
+unreadable: []
+notes: >
+  The install docs run npm init ulka, which runs the create-ulka scaffolder, so the core package ulka is recorded as npmName. The repository has no GitHub releases and no tags, so currentMajor and latestReleaseDate come from the npm latest tag (1.0.0, 2023-06-30); the npm next tag, 1.0.0-experimental.3 (2022-05-05), is older than latest and is not recorded. The npm history starts in 2020 (0.1.0, 2020-07-17) with a repository field pointing to acharyaroshanji/ulka, which GitHub redirects to coderosh-zz/ulka, a repository that ulkajs/ulka does not name as its origin; ulkajs/ulka was created on GitHub on 2021-01-26. firstRelease is therefore left out. The quickstart names Node LTS as the requirement with no minimum version, so runtimeMin is unknown. The docs show dist only as an example value in ulka-config, not as a default, so outputDir is unknown. The plugin packages, such as @ulkajs/plugin-tags, are named on the plugins page, and the docs state that Ulka exports no client-side JavaScript beyond what the author wrote; no plugin directory is recorded. The LICENSE says copyright 2020 to present and the homepage says 2021 to present; the LICENSE line is recorded for the maintainer name.

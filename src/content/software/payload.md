@@ -26,6 +26,7 @@ hosting:
 runtimeMin: node 20
 basedOn:
   - nextjs
+  - react
 contentStore:
   - database
 databases:

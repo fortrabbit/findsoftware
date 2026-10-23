@@ -15,6 +15,8 @@ runtime:
   - deno
 hosting:
   - deno
+basedOn:
+  - preact
 runsAs:
   - always-on
 renderingModes:
@@ -49,6 +51,9 @@ sources:
     url: https://raw.githubusercontent.com/freshframework/fresh/main/README.md
     checkedAt: 2026-10-21
   - field: runtime
+    url: https://usefresh.dev/
+    checkedAt: 2026-10-21
+  - field: basedOn
     url: https://usefresh.dev/
     checkedAt: 2026-10-21
   - field: renderingModes

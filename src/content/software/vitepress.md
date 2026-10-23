@@ -20,6 +20,7 @@ hosting:
 runtimeMin: node 22
 basedOn:
   - vite
+  - vue
 contentStore:
   - flat-file
 templating: vue, markdown

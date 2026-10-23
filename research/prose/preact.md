@@ -1,0 +1,3 @@
+Preact is a JavaScript library for building component-based user interfaces on a virtual DOM. The homepage describes it as an alternative to React with the same modern API and says it can be used directly in the browser without transpilation. The [server-side rendering guide](https://preactjs.com/guide/v11/server-side-rendering) describes a Node.js streaming method for rendering to HTML. New projects are set up with `npm init preact`, and the license names Jason Miller as the copyright holder.
+
+The [getting-started guide](https://preactjs.com/guide/v11/getting-started) says libraries and components written for React work with Preact's compatibility layer once react and react-dom imports are aliased to Preact.

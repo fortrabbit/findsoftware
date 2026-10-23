@@ -18,6 +18,8 @@ runtime:
 hosting:
   - static
 runtimeMin: node 8
+basedOn:
+  - vue
 contentStore:
   - flat-file
 templating: vue
@@ -52,6 +54,9 @@ sources:
     url: https://api.github.com/repos/vuepress/core
     checkedAt: 2026-10-22
   - field: category
+    url: https://vuepress.vuejs.org
+    checkedAt: 2026-10-22
+  - field: basedOn
     url: https://vuepress.vuejs.org
     checkedAt: 2026-10-22
   - field: templating

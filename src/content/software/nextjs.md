@@ -18,6 +18,8 @@ hosting:
   - node
   - static
 runtimeMin: node 20
+basedOn:
+  - react
 runsAs:
   - always-on
   - static
@@ -53,6 +55,9 @@ sources:
     url: https://github.com/vercel/next.js/blob/canary/license.md
     checkedAt: 2026-10-21
   - field: category
+    url: https://nextjs.org/docs
+    checkedAt: 2026-10-21
+  - field: basedOn
     url: https://nextjs.org/docs
     checkedAt: 2026-10-21
   - field: language

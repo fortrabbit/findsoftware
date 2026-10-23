@@ -1,0 +1,126 @@
+id: stacy
+name: Stacy
+status: accepted
+checkedAt: 2026-10-23
+description: Website generator that builds pages from Handlebars templates and Contentful content and publishes them to Amazon S3.
+facts:
+  - field: repository
+    value: https://github.com/boylesoftware/stacy
+    url: https://api.github.com/repos/boylesoftware/stacy
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/boylesoftware/stacy/blob/master/docs/tutorial/index.md
+    url: https://github.com/boylesoftware/stacy/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "See [Creating a Website with Stacy](docs/tutorial/index.md)"
+  - field: maintainer
+    value: Boyle Software, Inc.
+    url: https://raw.githubusercontent.com/boylesoftware/stacy/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2019 Boyle Software, Inc."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/boylesoftware/stacy
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/boylesoftware/stacy
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://github.com/boylesoftware/stacy/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Stacy is a website generator that combines content from"
+  - field: runtime
+    value: [node]
+    url: https://github.com/boylesoftware/stacy/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "[Node.js](https://nodejs.org/en/) version 10.16.3 or newer"
+  - field: runtimeMin
+    value: "10"
+    url: https://github.com/boylesoftware/stacy/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "[Node.js](https://nodejs.org/en/) version 10.16.3 or newer"
+  - field: installMethod
+    value: npm install -g stacy
+    url: https://github.com/boylesoftware/stacy/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "npm install -g stacy"
+  - field: templating
+    value: [handlebars]
+    url: https://github.com/boylesoftware/stacy/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "with [Handlebars](https://handlebarsjs.com/) templates to create the website pages"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/boylesoftware/stacy/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "What makes Stacy different from many existing static website generators"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/boylesoftware/stacy/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "What makes Stacy different from many existing static website generators"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/boylesoftware/stacy/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/boylesoftware/stacy/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2016"
+    url: https://api.github.com/repos/boylesoftware/stacy/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/boylesoftware/stacy/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2019-10-24
+    url: https://api.github.com/repos/boylesoftware/stacy/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 25
+    url: https://api.github.com/repos/boylesoftware/stacy
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/boylesoftware/stacy/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmName
+    value: stacy
+    url: https://registry.npmjs.org/stacy
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1
+    url: https://api.npmjs.org/downloads/point/last-week/stacy
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, apiLimits, regions, selfHostOption, usageShare, reportedInstalls, packagistName, packagistDownloads, pypiDownloads, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, buildCommand, outputDir]
+unreadable: []
+notes: >
+  The README describes automatic publishing to an Amazon S3 bucket through a deployed AWS publisher. No homepage is recorded: the repository has none, and the README names no project site. The content lives in Contentful, a separate hosted service that Stacy reads through its API, so no contentStore is recorded for Stacy; the Contentful webhooks and the AWS publisher Lambda are parts of the setup the README describes, and the Lambda publisher runs as an event handler, a runsAs value the list does not hold, so it is noted here and not recorded. The highest stable GitHub release is v2.0.0 (2019-10-24), which matches the npm latest tag. The repository was last pushed on 2022-12-06 and no end statement was found. The contributors endpoint lists one contributor. The docs link points to the tutorial that the README names; its file is in the repository docs folder.

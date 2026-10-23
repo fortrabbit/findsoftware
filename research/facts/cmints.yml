@@ -1,0 +1,144 @@
+id: cmints
+name: CMintS
+status: accepted
+checkedAt: 2026-10-22
+description: CMS and static site generator for single and multi-language websites, with Markdown pages and EJS themes.
+facts:
+  - field: homepage
+    value: https://cmints.io/
+    url: https://cmints.io/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "CMS and Static Site Generator for single and multi-language websites creation"
+  - field: repository
+    value: https://github.com/cmints/cmints
+    url: https://api.github.com/repos/cmints/cmints
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://cmints.io/en/quick-start
+    url: https://cmints.io/en/quick-start
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Step 1: Install NodeJS"
+  - field: maintainer
+    value: Manvel Saroyan
+    url: https://raw.githubusercontent.com/cmints/cmints/master/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) 2018 Manvel Saroyan"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/cmints/cmints
+    checkedAt: 2026-10-22
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/cmints/cmints/languages
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [cms, ssg]
+    url: https://cmints.io/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "CMS and Static Site Generator for single and multi-language websites creation"
+  - field: runtime
+    value: [node]
+    url: https://raw.githubusercontent.com/cmints/cmints/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "NodeJs"
+  - field: installMethod
+    value: npm (global install)
+    url: https://raw.githubusercontent.com/cmints/cmints/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npm install -g cmints"
+  - field: runsAs
+    value: always-on
+    url: https://raw.githubusercontent.com/cmints/cmints/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Run http server serving current folder"
+  - field: runsAs
+    value: static
+    url: https://raw.githubusercontent.com/cmints/cmints/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Generating a static content"
+  - field: renderingModes
+    value: [static]
+    url: https://raw.githubusercontent.com/cmints/cmints/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Generating a static content"
+  - field: contentStore
+    value: flat-file (Markdown pages)
+    url: https://cmints.io/en/documentation/i18n
+    checkedAt: 2026-10-22
+    via: page
+    quote: "translations for the about/teams.md page"
+  - field: templating
+    value: [ejs]
+    url: https://cmints.io/en/documentation/themes
+    checkedAt: 2026-10-22
+    via: page
+    quote: "CMintS uses EJS as a templating language and LESS as a CSS Preprocessor."
+  - field: i18n
+    value: yes
+    url: https://cmints.io/
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Comprehensive internationalization out of the box."
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/cmints/cmints/master/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/cmints/cmints/master/LICENSE
+    checkedAt: 2026-10-22
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/cmints/cmints/releases
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2020-06-14
+    url: https://api.github.com/repos/cmints/cmints/releases
+    checkedAt: 2026-10-22
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: https://registry.npmjs.org/cmints
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 38
+    url: https://api.github.com/repos/cmints/cmints
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/cmints/cmints/contributors?anon=true&per_page=100
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: cmints
+    url: https://registry.npmjs.org/cmints/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 64
+    url: https://api.npmjs.org/downloads/point/last-week/cmints
+    checkedAt: 2026-10-22
+    via: api
+notFound: [runtimeMin, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, wikidata, supportedVersions, docker, buildCommand, outputDir, maintainerType]
+unreadable: []
+notes: >
+  Highest stable GitHub release is v1.2.2 (2020-06-14), so currentMajor is 1. The npm package latest is 1.2.3, published 2021-01-28 with no matching GitHub release; latestReleaseDate follows the releases API. The homepage footer reads "© 2019 CMintS" while the LICENSE names Manvel Saroyan as copyright holder; maintainer follows the LICENSE and package.json author. The docs name Crowdin as an optional translation service with an integration in the README; it is a third-party service and not recorded as a field. The homepage lists CommonMark Markdown for content; the flat-file contentStore value rests on the i18n page's reference to .md pages. The i18n page describes translations as JSON locale files whose directory structure follows the page path, with a default locale set in config.js. The quick start walks through forking a starter repository and publishing it to GitHub Pages or Netlify. The README documents an integration with Crowdin, a hosted translation service, for uploading source files and downloading translations. The README and documentation present cmints --start under "For the production" as an HTTP server serving a folder, and cmints --static as the generator of static content.

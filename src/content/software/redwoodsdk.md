@@ -14,6 +14,7 @@ maintainerType: company
 firstRelease: 2025
 language: typescript
 basedOn:
+  - react
   - vite
 databases:
   - sqlite

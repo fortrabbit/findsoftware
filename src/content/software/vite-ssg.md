@@ -16,6 +16,7 @@ runtime:
 runtimeMin: node 20
 basedOn:
   - vite
+  - vue
 renderingModes:
   - static
 installMethod: npm install

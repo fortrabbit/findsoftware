@@ -1,0 +1,120 @@
+id: static-markdown
+name: Static Markdown
+status: accepted
+checkedAt: 2026-10-23
+description: Static site generator that builds HTML pages from Markdown or HTML files, run as a command line tool or as a Node module.
+facts:
+  - field: repository
+    value: https://github.com/tripplyons/static-markdown
+    url: https://api.github.com/repos/tripplyons/static-markdown
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/tripplyons/static-markdown/blob/master/docs/usage.md
+    url: https://github.com/tripplyons/static-markdown/blob/master/docs/usage.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "How to use static-markdown"
+  - field: categories
+    value: [ssg]
+    url: https://github.com/tripplyons/static-markdown/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Generate static sites using markdown or HTML"
+  - field: installMethod
+    value: npm i -g static-markdown
+    url: https://github.com/tripplyons/static-markdown/blob/master/docs/usage.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "npm i -g static-markdown"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/tripplyons/static-markdown/blob/master/docs/usage.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Your site contents can be found in the `public` folder (a static site)"
+  - field: runtime
+    value: [node]
+    url: https://github.com/tripplyons/static-markdown/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "API as a node module"
+  - field: buildCommand
+    value: static-markdown
+    url: https://github.com/tripplyons/static-markdown/blob/master/docs/usage.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Run `static-markdown` (the old `public` folder will be deleted)"
+  - field: outputDir
+    value: public
+    url: https://github.com/tripplyons/static-markdown/blob/master/docs/usage.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Your site contents can be found in the `public` folder (a static site)"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/tripplyons/static-markdown/blob/master/docs/usage.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Your site contents can be found in the `public` folder (a static site)"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/tripplyons/static-markdown
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/tripplyons/static-markdown/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: maintainer
+    value: Tripp Lyons
+    url: https://github.com/tripplyons/static-markdown/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2020 Tripp Lyons"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/tripplyons
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2020"
+    url: https://registry.npmjs.org/static-markdown
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmName
+    value: static-markdown
+    url: https://registry.npmjs.org/static-markdown/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmWeeklyDownloads
+    value: 0
+    url: https://api.npmjs.org/downloads/point/last-week/static-markdown
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/static-markdown/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2020-06-04
+    url: https://registry.npmjs.org/static-markdown
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 6
+    url: https://api.github.com/repos/tripplyons/static-markdown
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/tripplyons/static-markdown/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, forkOf, successorOf, basedOn, runtimeMin, language, templating, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom,  paidEdition, pricingPage, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, packagistName, endoflifeId]
+unreadable: [https://www.npmjs.com/package/static-markdown]
+notes: >
+  No homepage exists beyond the repository and the npm package page, so the record has none. The GitHub API reports the repository language as CSS, which does not describe the code, so language is left unknown. The repository has no GitHub releases; currentMajor and latestReleaseDate come from the npm latest tag, and firstRelease from the first npm version. The npm package page returns 403 to this client, so the npm README was not read. The usage page describes a project folder with a pages folder of Markdown and HTML files, each starting with a JSON block of metadata whose template field names a template, a source folder with constants.json and the templates, and a static folder copied into the output. Running the command on a folder deletes the old public folder and writes the site to public. The usage page lists a TODO.md for planned features; it is not read and is not recorded. The GitHub contributor count is taken from the last page number of the contributors endpoint.

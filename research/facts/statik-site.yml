@@ -1,0 +1,88 @@
+id: statik-site
+name: statik-site
+status: stub
+checkedAt: 2026-10-23
+description: Static site generator, scaffolded for a new project with create-statik-site.
+facts:
+  - field: status
+    value: stub
+    url: https://statik-site.com/
+    checkedAt: 2026-10-23
+    via: page
+  - field: repository
+    value: https://github.com/Paul-Browne/statik-site
+    url: https://api.github.com/repos/Paul-Browne/statik-site
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://github.com/Paul-Browne/statik-site/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A static site generator"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/Paul-Browne/statik-site
+    checkedAt: 2026-10-23
+    via: api
+  - field: installMethod
+    value: npx create-statik-site project-name, then npm install and npm start
+    url: https://github.com/Paul-Browne/statik-site/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "npx create-statik-site project-name"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/Paul-Browne/statik-site
+    checkedAt: 2026-10-23
+    via: api
+  - field: maintainer
+    value: Paul Browne
+    url: https://github.com/Paul-Browne/statik-site/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2023 paul browne"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/Paul-Browne
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2018"
+    url: https://registry.npmjs.org/create-statik-site
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmName
+    value: create-statik-site
+    url: https://registry.npmjs.org/create-statik-site
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmWeeklyDownloads
+    value: 39
+    url: https://api.npmjs.org/downloads/point/last-week/create-statik-site
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://registry.npmjs.org/create-statik-site
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2019-03-25
+    url: https://registry.npmjs.org/create-statik-site
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 1
+    url: https://api.github.com/repos/Paul-Browne/statik-site
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/Paul-Browne/statik-site/contributors?per_page=100
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, docs, hqCountry, parent, forkOf, successorOf, basedOn, runtime, runtimeMin, templating, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, buildCommand, outputDir, deployTargets, paidEdition, pricingPage, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, packagistName, endoflifeId]
+unreadable: []
+notes: >
+  The project's own site statik-site.com does not resolve: curl reports "Could not resolve host" for both http and https on 2026-10-23, so the record is a stub without a homepage, as with bowman. The status fact has no quote because no page was returned. The repository README is the only documentation found; it gives the scaffolding command and the npm install and npm start steps, and nothing on Node, deployment or rendering. The registry figures come from create-statik-site, the package the README tells users to run. The npm package statik-site is not used: its repository field names Paul-Browne/npm-statik-site, not this repository, and its latest version is from 2018. The repository has no GitHub releases; currentMajor and latestReleaseDate come from the npm latest tag of create-statik-site. The repository was last pushed in 2023. The contributor count is the single page returned by the endpoint.

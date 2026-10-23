@@ -22,6 +22,7 @@ hosting:
   - static
 runtimeMin: node 22
 basedOn:
+  - react
   - vite
 templating: jsx
 runsAs:

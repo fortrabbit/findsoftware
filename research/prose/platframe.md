@@ -1,0 +1,1 @@
+Platframe is a frontend development platform for projects written with Pug templates, Stylus styles and JavaScript. Its README describes it as suitable for multi-page and single page applications, and as a static site generator.

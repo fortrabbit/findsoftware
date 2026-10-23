@@ -1,0 +1,1 @@
+static-markdown is a command line tool and Node module that builds a static site from a project folder of Markdown and HTML pages. Each page starts with a JSON block of metadata, and its template field names the template that wraps it. Running `static-markdown` on a folder deletes the old `public` folder and writes the generated site there as static files.

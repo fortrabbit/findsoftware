@@ -1,0 +1,1 @@
+markdown-styles converts Markdown files to HTML, using one of its built-in layouts or a custom one. Layouts are written as Handlebars templates. The output is static HTML with relative paths to its assets, so the result runs as plain files on any web server.

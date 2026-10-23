@@ -22,6 +22,7 @@ hosting:
 runtimeMin: node 22
 basedOn:
   - express
+  - koa
   - fastify
 installMethod: npx -p @tsed/cli tsed init
 licenseModel: open-source

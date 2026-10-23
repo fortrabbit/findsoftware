@@ -1,0 +1,1 @@
+statik-site is a static site generator that is set up with the `create-statik-site` scaffolder. Running `npx create-statik-site project-name` creates a new project in a folder of that name, and the README then runs `npm install` and `npm start` inside it.

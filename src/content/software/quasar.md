@@ -19,6 +19,8 @@ hosting:
   - node
   - static
 runtimeMin: node 22
+basedOn:
+  - vue
 runsAs:
   - static
   - always-on
@@ -46,6 +48,9 @@ sources:
     url: https://quasar.dev/docs/
     checkedAt: 2026-10-22
   - field: category
+    url: https://quasar.dev/
+    checkedAt: 2026-10-22
+  - field: basedOn
     url: https://quasar.dev/
     checkedAt: 2026-10-22
   - field: language

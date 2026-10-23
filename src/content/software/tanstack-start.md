@@ -17,6 +17,9 @@ hosting:
   - node
   - static
 runtimeMin: node 22
+basedOn:
+  - react
+  - solid
 runsAs:
   - static
 renderingModes:
@@ -49,6 +52,9 @@ sources:
     checkedAt: 2026-10-22
   - field: category
     url: https://tanstack.com/start/latest/docs/framework/react/overview
+    checkedAt: 2026-10-22
+  - field: basedOn
+    url: https://tanstack.com/start
     checkedAt: 2026-10-22
   - field: language
     url: https://api.github.com/repos/TanStack/router

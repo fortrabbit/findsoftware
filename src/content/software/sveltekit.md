@@ -24,6 +24,7 @@ hosting:
   - static
 runtimeMin: node 22
 basedOn:
+  - svelte
   - vite
 templating: svelte
 runsAs:

@@ -2,6 +2,7 @@
 id: lithium
 name: li₃
 urls:
+  home: https://li3.me
   repository: https://github.com/UnionOfRAD/lithium
 category:
   - framework

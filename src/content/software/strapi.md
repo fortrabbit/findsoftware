@@ -20,6 +20,8 @@ runtime:
 hosting:
   - node
 runtimeMin: node 20
+basedOn:
+  - react
 contentStore:
   - database
 databases:
@@ -77,6 +79,9 @@ sources:
     checkedAt: 2026-10-18
   - field: category
     url: https://strapi.io/
+    checkedAt: 2026-10-18
+  - field: basedOn
+    url: https://registry.npmjs.org/@strapi/strapi/latest
     checkedAt: 2026-10-18
   - field: language
     url: https://strapi.io/

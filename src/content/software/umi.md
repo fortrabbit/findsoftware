@@ -19,6 +19,7 @@ hosting:
 runtimeMin: node 18
 basedOn:
   - react-router
+  - react
 renderingModes:
   - server
   - static

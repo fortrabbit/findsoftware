@@ -23,7 +23,7 @@ currentMajor: "5"
 latestReleaseDate: 2025-06-01
 githubStargazers: 32920
 npmWeeklyDownloads: 942444
-contributors: 100
+contributors: 220
 social:
   x: https://twitter.com/gulpjs
 addedAt: 2026-10-22

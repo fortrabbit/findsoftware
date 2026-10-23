@@ -18,6 +18,8 @@ runtime:
 hosting:
   - node
 runtimeMin: node 22
+basedOn:
+  - koa
 runsAs:
   - always-on
 installMethod: npm create
@@ -44,6 +46,9 @@ sources:
     checkedAt: 2026-10-21
   - field: category
     url: https://eggjs.org
+    checkedAt: 2026-10-21
+  - field: basedOn
+    url: https://eggjs.org/intro/egg-and-koa
     checkedAt: 2026-10-21
   - field: language
     url: https://api.github.com/repos/eggjs/egg

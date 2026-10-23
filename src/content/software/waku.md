@@ -18,6 +18,8 @@ hosting:
   - node
   - static
 runtimeMin: node 22
+basedOn:
+  - react
 runsAs:
   - static
   - always-on
@@ -45,6 +47,9 @@ sources:
     url: https://waku.gg
     checkedAt: 2026-10-22
   - field: category
+    url: https://waku.gg
+    checkedAt: 2026-10-22
+  - field: basedOn
     url: https://waku.gg
     checkedAt: 2026-10-22
   - field: maintainer

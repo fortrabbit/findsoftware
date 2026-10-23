@@ -2,6 +2,7 @@
 id: getsimple
 name: GetSimple CMS
 urls:
+  home: https://get-simple.info
   repository: https://github.com/GetSimpleCMS/GetSimpleCMS
 category:
   - cms

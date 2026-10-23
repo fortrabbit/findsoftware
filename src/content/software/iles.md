@@ -19,6 +19,7 @@ hosting:
 runtimeMin: node 20
 basedOn:
   - vite
+  - vue
 runsAs:
   - static
 renderingModes:

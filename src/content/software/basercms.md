@@ -29,7 +29,7 @@ currentMajor: "5"
 latestReleaseDate: 2026-09-24
 githubStargazers: 191
 packagistDownloads: 5314
-contributors: 100
+contributors: 81
 social:
   x: https://twitter.com/basercms
   forum: https://forum.basercms.net
@@ -95,7 +95,7 @@ sources:
     checkedAt: 2026-10-19
   - field: contributors
     url: https://api.github.com/repos/baserproject/basercms/contributors?anon=true&per_page=100
-    checkedAt: 2026-10-19
+    checkedAt: 2026-10-22
 figure:
   emoji: 📝
   color: "#c5e1a5"

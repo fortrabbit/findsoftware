@@ -28,7 +28,7 @@ currentMajor: "5"
 latestReleaseDate: 2026-10-13
 githubStargazers: 37281
 npmWeeklyDownloads: 9325750
-contributors: 100
+contributors: 432
 social:
   x: https://x.com/fastifyjs
   discord: https://discord.gg/fastify

@@ -1,0 +1,113 @@
+id: susi
+name: SuSi
+status: accepted
+checkedAt: 2026-10-23
+description: Static site generator that renders Markdown files into static HTML pages through HTML layouts.
+facts:
+  - field: repository
+    value: https://github.com/AVGP/susi
+    url: https://api.github.com/repos/AVGP/susi
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/AVGP/susi/blob/master/README.md
+    url: https://github.com/AVGP/susi/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "How to use it"
+  - field: maintainer
+    value: Martin Naumann
+    url: https://github.com/AVGP/susi/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2014, Martin Naumann"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/AVGP
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/AVGP/susi
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://github.com/AVGP/susi/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "You give it markdown files and (if you fancy) an HTML layout to render them into"
+  - field: installMethod
+    value: [npm]
+    url: https://github.com/AVGP/susi/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "npm install -g susi"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/AVGP/susi/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "gives you static HTML"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/AVGP/susi/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "gives you static HTML"
+  - field: templating
+    value: [mustache]
+    url: https://github.com/AVGP/susi/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: 'using the "Mustache" style syntax'
+  - field: license
+    value: ISC
+    url: https://registry.npmjs.org/susi
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/AVGP/susi/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "SuSi is available under the ISC License"
+  - field: firstRelease
+    value: "2014"
+    url: https://registry.npmjs.org/susi
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/AVGP/susi/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2018-05-24
+    url: https://registry.npmjs.org/susi
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 57
+    url: https://api.github.com/repos/AVGP/susi
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/AVGP/susi/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmName
+    value: susi
+    url: https://registry.npmjs.org/susi
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1
+    url: https://api.npmjs.org/downloads/point/last-week/susi
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, runtime, runtimeMin, outputDir, buildCommand]
+unreadable: []
+notes: >
+  No project site exists: the GitHub homepage field is empty and the npm homepage points to the README, so no homepage is recorded. The canonical repository is AVGP/susi (GitHub reports it is not a fork); maks/susi is a fork with one star and a 2017 push, and the package.json on AVGP/susi names it as homepage. The npm dist-tag latest is 0.1.4 (published 2018-05-24) while the highest GitHub release is 0.2.3 (2015-06-30); latestReleaseDate takes the newer publication date, and both fall before the four-year line. The repository was last pushed 2018-05-24, carries no archive flag, and no page states that the project has ended. The README names no Node.js requirement, so runtime is unknown. The README's usage form takes an input directory, an output directory and a layouts directory as arguments, with no default output path, so outputDir and buildCommand are unknown. The README describes Markdown files that open with a JSON frontmatter block, which the layout reads through Mustache placeholders; the layout is named by the frontmatter or defaults to page. The README also describes Apache SSI-style include comments in layout files for shared partials.

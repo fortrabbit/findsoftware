@@ -6,7 +6,7 @@ urls:
 category:
   - framework
 description: Minimal skeleton PHP application with native PHP code, PDO database access and clean URLs.
-status: active
+status: stub
 maintainer: panique
 maintainerType: individual
 language: php

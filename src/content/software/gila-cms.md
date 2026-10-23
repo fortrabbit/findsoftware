@@ -7,8 +7,9 @@ urls:
   docs: https://gila-cms.readthedocs.io/en/latest/
 category:
   - cms
+  - ssg
 description: Content management system written in PHP on MySQL or MariaDB, with an installer that runs in the browser.
-status: active
+status: stub
 maintainer: Vasileios Zoumpourlis
 language: php
 runtime:

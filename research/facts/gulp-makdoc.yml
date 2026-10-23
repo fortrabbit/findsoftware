@@ -1,0 +1,120 @@
+id: gulp-makdoc
+name: Makdoc
+status: discontinued
+checkedAt: 2026-10-22
+description: gulp task library that builds documents and templates from Markdown and Handlebars files into a static site.
+facts:
+  - field: status
+    value: discontinued
+    url: https://api.github.com/repos/pismute/gulp-makdoc
+    checkedAt: 2026-10-22
+    via: api
+  - field: repository
+    value: https://github.com/pismute/gulp-makdoc
+    url: https://api.github.com/repos/pismute/gulp-makdoc
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://github.com/pismute/gulp-makdoc/blob/master/README.md
+    url: https://github.com/pismute/gulp-makdoc/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "A task library for generating documents"
+  - field: maintainer
+    value: Changwoo Park
+    url: https://raw.githubusercontent.com/pismute/gulp-makdoc/master/package.json
+    checkedAt: 2026-10-22
+    via: page
+    quote: '"name": "Changwoo Park"'
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/pismute
+    checkedAt: 2026-10-22
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/pismute/gulp-makdoc
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [docs-generator]
+    url: https://github.com/pismute/gulp-makdoc/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "A task library for generating documents"
+  - field: templating
+    value: [handlebars]
+    url: https://github.com/pismute/gulp-makdoc/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Layouts: `.hbs` templates that contain other document"
+  - field: installMethod
+    value: npm install --save-dev
+    url: https://github.com/pismute/gulp-makdoc/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npm install --save-dev gulp-makdoc"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/pismute/gulp-makdoc/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "You can easily deploy your site on GitHub page"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/pismute/gulp-makdoc/blob/master/README.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "You can easily deploy your site on GitHub page"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/pismute/gulp-makdoc/master/package.json
+    checkedAt: 2026-10-22
+    via: page
+    quote: '"license": "MIT"'
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/pismute/gulp-makdoc/master/package.json
+    checkedAt: 2026-10-22
+    via: page
+    quote: '"license": "MIT"'
+  - field: firstRelease
+    value: "2015"
+    url: https://registry.npmjs.org/gulp-makdoc
+    checkedAt: 2026-10-22
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://registry.npmjs.org/gulp-makdoc
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2015-09-09
+    url: https://registry.npmjs.org/gulp-makdoc
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 14
+    url: https://api.github.com/repos/pismute/gulp-makdoc
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/pismute/gulp-makdoc/contributors
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: gulp-makdoc
+    url: https://registry.npmjs.org/gulp-makdoc
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1
+    url: https://api.npmjs.org/downloads/point/last-week/gulp-makdoc
+    checkedAt: 2026-10-22
+    via: api
+notFound: [basedOn, homepage, hqCountry, parent, forkOf, successorOf, alternativeTo, maintainerType, pricingPage, paidEdition, endoflifeId, packagistName, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, headlessApi, i18n, multisite, adminUi, livePreview, userRoles, sso, contentStore, sourcePublic, runtime, runtimeMin]
+unreadable: []
+notes: >
+  The repository is archived (GitHub API archived true, last push 2015-12-08), and the package.json names it as the repository, so the status is discontinued under the archive signal. The npm package reports no deprecation. The repository has no homepage of its own: the GitHub and npm homepage fields both point to the repository, so homepage is absent. The LICENSE file at the repository root returns 404 on the raw URL; the license is recorded from package.json and the README ("MIT © Changwoo Park"). The GitHub license API field is null for the same reason. The GitHub releases list is empty and the only tag is v0.1.0; npm latest 0.2.0 (published 2015-09-09) is used for currentMajor and latestReleaseDate, and firstRelease comes from the npm package's creation in 2015. The install docs name gulp-makdoc, which is the registry package recorded. The package has peer dependencies only, as the README says; the Node runtime is not stated on any page read and is not recorded. The README's Links section names three Korean-language blogs and a Yeoman generator; none is a field.
+  Usage, from the README: tasks run through the gulp command (gulp builds, gulp server runs a local live-reload server, gulp watch rebuilds on changes), and the default target directory is dist. Markdown and Handlebars documents become HTML, and Handlebars templates become files such as index.html and sitemap.xml, decorated with layouts and partials. Document metadata comes from a model.json file beside each document, not from YAML front matter. The README shows deploying the dist output to GitHub Pages with gulp-gh-pages. basedOn gulp is not recorded because no page states the parent in words; the README only shows gulp commands. outputDir is not a field; the value is in this note.

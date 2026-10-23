@@ -26,6 +26,9 @@ hosting:
   - deno
   - static
 runtimeMin: node 22
+basedOn:
+  - vue
+  - nitro
 templating: vue
 runsAs:
   - always-on
@@ -78,6 +81,9 @@ sources:
     checkedAt: 2026-10-18
   - field: category
     url: https://nuxt.com/docs/4.x/guide/concepts/rendering
+    checkedAt: 2026-10-18
+  - field: basedOn
+    url: https://nuxt.com/docs/4.x/getting-started/deployment
     checkedAt: 2026-10-18
   - field: language
     url: https://github.com/nuxt/nuxt

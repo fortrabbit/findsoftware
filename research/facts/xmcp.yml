@@ -1,0 +1,134 @@
+id: xmcp
+name: xmcp
+status: accepted
+checkedAt: 2026-10-22
+description: TypeScript framework for building MCP servers that expose tools, prompts and resources to AI applications.
+facts:
+  - field: homepage
+    value: https://xmcp.dev
+    url: https://api.github.com/repos/basementstudio/xmcp
+    checkedAt: 2026-10-22
+    via: api
+  - field: repository
+    value: https://github.com/basementstudio/xmcp
+    url: https://api.github.com/repos/basementstudio/xmcp
+    checkedAt: 2026-10-22
+    via: api
+  - field: docs
+    value: https://xmcp.dev/docs
+    url: https://xmcp.dev/docs
+    checkedAt: 2026-10-22
+    via: page
+    quote: "xmcp is a framework for building and shipping MCP servers with TypeScript."
+  - field: maintainer
+    value: basement.studio LLC
+    url: https://raw.githubusercontent.com/basementstudio/xmcp/main/license.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Copyright (c) 2025 basement.studio LLC"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/basementstudio
+    checkedAt: 2026-10-22
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/basementstudio/xmcp
+    checkedAt: 2026-10-22
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://xmcp.dev/docs
+    checkedAt: 2026-10-22
+    via: page
+    quote: "xmcp is a framework for building and shipping MCP servers with TypeScript."
+  - field: runtime
+    value: [node]
+    url: https://xmcp.dev/docs/getting-started/installation
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Node.js 22 or later."
+  - field: runtimeMin
+    value: 22
+    url: https://xmcp.dev/docs/getting-started/installation
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Node.js 22 or later."
+  - field: installMethod
+    value: npx create-xmcp-app (scaffolder)
+    url: https://xmcp.dev/docs/getting-started/installation
+    checkedAt: 2026-10-22
+    via: page
+    quote: "npx create-xmcp-app@latest"
+  - field: runsAs
+    value: [always-on]
+    url: https://xmcp.dev/docs/deployment/render
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Render can host your xmcp server as a Node.js web service"
+  - field: runsAs
+    value: [per-request]
+    url: https://xmcp.dev/docs/deployment/vercel
+    checkedAt: 2026-10-22
+    via: page
+    quote: "Your server runs as a Vercel Function"
+  - field: discord
+    value: https://discord.gg/d9a7JBBxV9
+    url: https://xmcp.dev
+    checkedAt: 2026-10-22
+    via: page
+  - field: x
+    value: https://x.com/xmcp_dev
+    url: https://xmcp.dev
+    checkedAt: 2026-10-22
+    via: page
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/basementstudio/xmcp/main/license.md
+    checkedAt: 2026-10-22
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/basementstudio/xmcp/main/license.md
+    checkedAt: 2026-10-22
+    via: page
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/basementstudio/xmcp/releases
+    checkedAt: 2026-10-22
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-22
+    url: https://api.github.com/repos/basementstudio/xmcp/releases
+    checkedAt: 2026-10-22
+    via: api
+  - field: githubStargazers
+    value: 1342
+    url: https://api.github.com/repos/basementstudio/xmcp
+    checkedAt: 2026-10-22
+    via: api
+  - field: contributors
+    value: 37
+    url: https://api.github.com/repos/basementstudio/xmcp/contributors
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmName
+    value: xmcp
+    url: https://registry.npmjs.org/xmcp/latest
+    checkedAt: 2026-10-22
+    via: api
+  - field: npmWeeklyDownloads
+    value: 7528
+    url: https://api.npmjs.org/downloads/point/last-week/xmcp
+    checkedAt: 2026-10-22
+    via: api
+  - field: firstRelease
+    value: 2025
+    url: https://registry.npmjs.org/xmcp
+    checkedAt: 2026-10-22
+    via: api
+notFound: [basedOn, parent, hqCountry, wikidata, paidEdition, pricingPage, usageShare, reportedInstalls, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, endoflifeId, supportedVersions, sso, headlessApi, databases, i18n, multisite, adminUi, renderingModes]
+unreadable: []
+notes: >
+  Highest stable GitHub release is xmcp@1.8.0 (2026-10-22), so currentMajor is 1. The install docs name create-xmcp-app, a scaffolder, so the registry figures come from the core package xmcp. The build runs through @xmcp-dev/compiler, a separate npm package that the Vercel guide says to keep installed as a development dependency during the build; the built server is self-contained at runtime. The installation page names an HTTP transport, which runs on a server, and a STDIO transport, which runs on the user's machine; runsAs records the production server (always-on) and the Vercel Function (per-request) only. The docs name Next.js, Express and other adapters, which add xmcp to an existing app; they are not recorded as basedOn. The integrations (Polar, Stripe, Upstash and others) are third-party services, not recorded. The Vercel OSS Program badge and "Supported by Vercel" in the site footer are not recorded as parent. The maintainer is the copyright holder in license.md. firstRelease is the year of the first npm publish.

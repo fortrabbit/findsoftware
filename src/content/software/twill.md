@@ -20,6 +20,7 @@ hosting:
 runtimeMin: php 8.0
 basedOn:
   - laravel
+  - vue
 contentStore:
   - database
 databases:

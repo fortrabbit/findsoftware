@@ -11,7 +11,7 @@ facts:
     via: "page"
     quote: "Sunrise again! NucleusCMS can help you achieve your goals."
   - field: "homepage"
-    value: "http://nucleuscms.github.io/"
+    value: "https://nucleuscms.github.io/"
     url: "http://nucleuscms.github.io/"
     checkedAt: "2026-10-20"
     via: "page"
@@ -111,6 +111,11 @@ facts:
     checkedAt: "2026-10-20"
     via: "page"
     quote: "NucleusCMS maintained by NucleusCMS Salvage Project"
+  - field: lastCommitDate
+    value: 2022-08-20
+    url: https://api.github.com/repos/NucleusCMS/NucleusCMS/commits?per_page=1
+    checkedAt: 2026-10-23
+    via: api
 notFound: ["maintainerType", "hqCountry", "firstRelease", "latestReleaseDate", "runtimeMin", "pricingPage", "paidEdition", "wikidata", "parent", "forum", "headlessApi", "sso", "livePreview", "userRoles", "endoflifeId", "packagistName", "npmName", "pluginDirectory"]
 unreadable: ["http://nucleuscms.org/ (official website named on the project page; request returned 408 on fetch)"]
 notes: "The project page names http://nucleuscms.org as the official website and calls itself the repository site; the record uses the readable GitHub Pages address. The page states 'NucleusCMS maintained by NucleusCMS Salvage Project'; no legal form is given and the name is recorded as stated. The repository has no LICENSE file and GitHub reports no license; the license is the GNU General Public License named in the documentation, with no version stated, so the value is the words of the source. install/index.php refuses to run on PHP 8.0 or later, so the software runs on the PHP versions the installer allows; the minimum is not stated and no runtimeMin is recorded. The repository has no releases, so latestReleaseDate is unknown; the project page's version history lists 3.70 from 2014 as its newest entry, while the README names 3.71. No ended signal was found: the repository was last pushed in December 2025 and the page names a maintenance project, so status stays accepted."

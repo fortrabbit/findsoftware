@@ -19,6 +19,7 @@ hosting:
 runtimeMin: php 7.1
 basedOn:
   - laravel
+  - vue
 adminUi: true
 i18n: multi-language switching
 installMethod: git clone or composer create-project, then php artisan blog:install

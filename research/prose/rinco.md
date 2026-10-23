@@ -1,0 +1,3 @@
+Rinco is a static website generator for Node.js. Pages are written as HTML or Markdown files in a templates folder, and files whose names start with an underscore are used as partials and not written to the output. Rinco's own tags include the includes, data imports and inline scripts that fill a page, and the page data is read with mustache syntax.
+
+The r-css and r-js tags compile Sass, Less, Stylus, CoffeeScript and ES6 files into the page, in the order they appear. The rinco server command runs a development server on port 3000 by default, and rinco build writes the static files to a build folder.

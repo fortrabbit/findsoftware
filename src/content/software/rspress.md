@@ -20,6 +20,8 @@ runtime:
 hosting:
   - static
 runtimeMin: node 20
+basedOn:
+  - react
 contentStore:
   - flat-file
 i18n: yes
@@ -60,6 +62,12 @@ sources:
     checkedAt: 2026-10-22
   - field: category
     url: https://rspress.rs/
+    checkedAt: 2026-10-22
+  - field: basedOn
+    url: https://github.com/web-infra-dev/rspress/blob/main/README.md
+    checkedAt: 2026-10-22
+  - field: basedOn
+    url: https://rspress.rs/guide/start/introduction
     checkedAt: 2026-10-22
   - field: contentStore
     url: https://rspress.rs/guide/basic/conventional-route
