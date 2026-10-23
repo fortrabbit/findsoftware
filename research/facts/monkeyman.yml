@@ -1,0 +1,118 @@
+id: monkeyman
+name: Monkeyman
+status: accepted
+checkedAt: 2026-10-23
+description: "Scala static website generator that builds pages from HAML, Markdown and other layout and content files."
+facts:
+  - field: repository
+    value: https://github.com/wspringer/monkeyman
+    url: https://api.github.com/repos/wspringer/monkeyman
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/wspringer/monkeyman/blob/master/README.md
+    url: https://github.com/wspringer/monkeyman/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Monkeyman is a Scala static web site generator"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/wspringer
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Scala
+    url: https://api.github.com/repos/wspringer/monkeyman
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://github.com/wspringer/monkeyman/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Monkeyman is a Scala static web site generator"
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/wspringer/monkeyman/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "java -jar monkeyman.jar"
+  - field: installMethod
+    value: "download the jar from the wiki Releases page and run it with java -jar"
+    url: https://github.com/wspringer/monkeyman/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Download the monkeyman jar from the Downloads section"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/wspringer/monkeyman/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Static web site generation"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/wspringer/monkeyman/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Live preview (web server running on port 4567)"
+  - field: license
+    value: GPL-2.0
+    url: https://api.github.com/repos/wspringer/monkeyman
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/wspringer/monkeyman/master/COPYING
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The GNU General Public License (GPL)"
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/wspringer/monkeyman/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 51
+    url: https://api.github.com/repos/wspringer/monkeyman
+    checkedAt: 2026-10-23
+    via: api
+  - field: lastCommitDate
+    value: 2013-04-18
+    url: https://api.github.com/repos/wspringer/monkeyman/commits
+    checkedAt: 2026-10-23
+    via: api
+  - field: templating
+    value: ["haml", "jade", "mustache", "ssp"]
+    url: https://github.com/wspringer/monkeyman/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Jade, HAML (SCAML), Mustache, SSP for layouts"
+  - field: buildCommand
+    value: "monkeyman generate"
+    url: https://github.com/wspringer/monkeyman/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Build your final version in the `target` directory, by typing `monkeyman generate`."
+  - field: outputDir
+    value: "target"
+    url: https://github.com/wspringer/monkeyman/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Build your final version in the `target` directory"
+  - field: contentStore
+    value: "flat-file"
+    url: https://github.com/wspringer/monkeyman/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "store HAML, Jade, SSP, Markdown, Mustache files with YAML frontmatter and other static resources in that directory"
+  - field: livePreview
+    value: "yes"
+    url: https://github.com/wspringer/monkeyman/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Live preview (web server running on port 4567)"
+notFound: [homepage, firstRelease, currentMajor, latestReleaseDate, runtimeMin, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, i18n, multisite, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, npmName, npmWeeklyDownloads, pypiName, pypiDownloads, packagistName, rubygemsName, selfHostOption, maintainer]
+unreadable: []
+notes: >
+  No homepage: the GitHub homepage field is empty. The README's sample blog at monkeyman.flotsam.nl is a sample, not the project's site. The repository has no release and no tag, so the last commit on the default branch decides listing; its newest commit is dated 2013-04-18 by the commits endpoint, while the GitHub pushed_at field is 2015-01-19. The maintainer is not recorded: neither the README nor the COPYING file names the author, and the GitHub profile name of the repository owner (Wilfred Springer) is not a project statement. The README says the project will no longer be maintained if a solution with its feature set arrives; that is a conditional statement, not an end signal, and is not recorded. The releases are linked to the project wiki, which this record does not read.
+  The README describes live updates when files change, layouts in HAML, Jade, SSP or Mustache, Markdown content with YAML front matter, and LESS and ZUSS to CSS transformation. The README lists the server command for the preview and the generate command for the static build.

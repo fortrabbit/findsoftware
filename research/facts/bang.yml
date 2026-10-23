@@ -1,0 +1,106 @@
+id: bang
+name: Bang
+status: accepted
+checkedAt: 2026-10-23
+description: Text processor and static website generator that fills keyword placeholders in text files from a Bang markup file.
+facts:
+  - field: repository
+    value: https://github.com/BreadMakesYouFull/Bang
+    url: https://api.github.com/repos/BreadMakesYouFull/Bang
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/BreadMakesYouFull/Bang/blob/main/README.md
+    url: https://github.com/BreadMakesYouFull/Bang/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Bang markup syntax"
+  - field: maintainer
+    value: BreadMakesYouFull
+    url: https://github.com/BreadMakesYouFull/Bang/blob/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2024 BreadMakesYouFull"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/BreadMakesYouFull
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Python
+    url: https://github.com/BreadMakesYouFull/Bang/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Language: Python, Bang markup"
+  - field: categories
+    value: [ssg]
+    url: https://github.com/BreadMakesYouFull/Bang/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A text processor / static website generator"
+  - field: runtime
+    value: [python, bash]
+    url: https://github.com/BreadMakesYouFull/Bang/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "python 3"
+  - field: installMethod
+    value: run ./run.sh from the repository
+    url: https://github.com/BreadMakesYouFull/Bang/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Process example files and open in web browser"
+  - field: buildCommand
+    value: ./bang.sh markup.bang in/index.html > out/index.html
+    url: https://github.com/BreadMakesYouFull/Bang/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "./bang.sh markup.bang in/index.html > out/index.html"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/BreadMakesYouFull/Bang/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A text processor / static website generator"
+  - field: license
+    value: MIT
+    url: https://github.com/BreadMakesYouFull/Bang/blob/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/BreadMakesYouFull/Bang/blob/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 2
+    url: https://github.com/BreadMakesYouFull/Bang/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This version, v2.0.0, is a much simplified re-implementation"
+  - field: firstRelease
+    value: "2024"
+    url: https://api.github.com/repos/BreadMakesYouFull/Bang/commits/1.0.0
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2024-08-10
+    url: https://api.github.com/repos/BreadMakesYouFull/Bang/commits/2.0.0
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 12
+    url: https://api.github.com/repos/BreadMakesYouFull/Bang
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/BreadMakesYouFull/Bang/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, latestPrereleaseDate, lastCommitDate, runtimeMin, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEditions, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, outputDir, runsAs, npmName, packagistName, rubygemsName, pypiName]
+unreadable: []
+notes: >
+  The repository was renamed: squdle/Bang now redirects to BreadMakesYouFull/Bang, which is recorded. The LICENSE file reads "Copyright (c) 2024 BreadMakesYouFull" and also "Copyright (c) 2013 squdle"; the MIT text is the license. GitHub's detection reports NOASSERTION because of the two copyright lines, which the record does not repeat. The README names "Preview" at https://breadmakesyoufull.github.io/Bang/, but that page is a generated demo titled "Hello World" with a date of 2024-08-09, not a site about the software, so no homepage is recorded and the page is listed as notFound. The README says "python 3" with no minor version, so runtimeMin is not recorded. The repository has two tags, 1.0.0 and 2.0.0, and no GitHub releases, so firstRelease and latestReleaseDate are the committer dates of the commits those tags point to (2024-08-09 and 2024-08-10). GitHub's language detection reports HTML, while the README states Python. The README lists the external "Learn more" links to a jamstack.org directory and staticgen.com, which are not used as sources.

@@ -1,0 +1,127 @@
+id: gostatic
+name: Gostatic
+status: accepted
+checkedAt: 2026-10-23
+description: Static site generator written in Go that re-renders only the pages affected by a change, configured through a Makefile-style file.
+facts:
+  - field: repository
+    value: https://github.com/sansolovyov/gostatic
+    url: https://api.github.com/repos/sansolovyov/gostatic
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/sansolovyov/gostatic/blob/master/README.md
+    url: https://github.com/sansolovyov/gostatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Gostatic is a static site generator"
+  - field: categories
+    value: [ssg]
+    url: https://github.com/sansolovyov/gostatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Gostatic is a static site generator"
+  - field: maintainer
+    value: Alexander Solovyov
+    url: https://github.com/sansolovyov/gostatic/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2012-2013, Alexander Solovyov"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/sansolovyov
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/sansolovyov/gostatic
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/sansolovyov/gostatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "No run-time dependencies, just a single binary"
+  - field: installMethod
+    value: binary download from the releases page
+    url: https://github.com/sansolovyov/gostatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Just download a binary from releases page"
+  - field: installMethod
+    value: go get
+    url: https://github.com/sansolovyov/gostatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "if you want to compile from source"
+  - field: contentStore
+    value: flat-file
+    url: https://github.com/sansolovyov/gostatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "`src` directory obviously contains sources of your site"
+  - field: buildCommand
+    value: make
+    url: https://github.com/sansolovyov/gostatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Run `make` to build"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/sansolovyov/gostatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Gostatic is a static site generator"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/sansolovyov/gostatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generated content can be deployed in a subfolder of a site"
+  - field: templating
+    value: [go templates]
+    url: https://github.com/sansolovyov/gostatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "which will be parsed as Go templates"
+  - field: license
+    value: ISC
+    url: https://api.github.com/repos/sansolovyov/gostatic
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/sansolovyov/gostatic/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "ISC License"
+  - field: firstRelease
+    value: "2014"
+    url: https://api.github.com/repos/sansolovyov/gostatic/releases?per_page=100
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/sansolovyov/gostatic/releases?per_page=100
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2023-02-28
+    url: https://api.github.com/repos/sansolovyov/gostatic/releases?per_page=100
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 440
+    url: https://api.github.com/repos/sansolovyov/gostatic
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 22
+    url: https://api.github.com/repos/sansolovyov/gostatic/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runtimeMin, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId]
+unreadable: []
+notes: >
+  No project site: the repository's homepage field is empty, so no homepage is recorded. The CSV row links github.com/piranha/gostatic, which redirects to sansolovyov/gostatic; the README still links piranha/gostatic for its releases, and the repository recorded is the one the API returns. The GitHub release list starts at 1.12 (2014-07-25), though the repository was created in 2012, so firstRelease is 2014. Highest stable release is 2.36 (2023-02-28), and the registry check is not needed because the repository has releases. The README does not state a minimum Go version, so runtimeMin is unknown. The README says the HTTP server and watcher run during development ("make w"); runsAs records only static, since the README describes the generated output as deployable files. The template syntax is stated as Go templates in the Configuration section. No Go module download figure is recorded, because a Go module has no download figure.

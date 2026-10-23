@@ -1,0 +1,1 @@
+Statocles is a static site generator written in Perl. It builds web pages from plain YAML and Markdown files, using the `statocles` command-line application to create, build, preview and deploy a site. Its deployment guide describes publishing to GitHub Pages or any Git-based deploy, and the finished site is static files that need no process of their own.

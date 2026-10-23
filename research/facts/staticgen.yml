@@ -1,0 +1,115 @@
+id: staticgen
+name: staticgen
+status: accepted
+checkedAt: 2026-10-23
+description: Static website generator that pre-renders the pages of a running HTTP server into static files.
+facts:
+  - field: repository
+    value: https://github.com/tj/staticgen
+    url: https://api.github.com/repos/tj/staticgen
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/tj/staticgen/blob/master/Readme.md
+    url: https://github.com/tj/staticgen/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Run the `staticgen` command to start the pre-rendering process"
+  - field: maintainer
+    value: TJ Holowaychuk
+    url: https://github.com/tj/staticgen/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2019 TJ Holowaychuk"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/tj
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/tj/staticgen
+    checkedAt: 2026-10-23
+    via: api
+  - field: installMethod
+    value: gobinaries.com install script
+    url: https://github.com/tj/staticgen/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "curl -sf https://gobinaries.com/tj/staticgen/cmd/staticgen | sh"
+  - field: categories
+    value: [ssg]
+    url: https://github.com/tj/staticgen/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A static website generator that lets you use HTTP servers and frameworks you already know"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/tj/staticgen/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generate a static version with all of the pages and assets required"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/tj/staticgen
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/tj/staticgen/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The MIT License"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/tj/staticgen/tags
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2019"
+    url: https://api.github.com/repos/tj/staticgen/commits/4a3864dd
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2020-09-23
+    url: https://api.github.com/repos/tj/staticgen/commits/9b13d39a
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 716
+    url: https://api.github.com/repos/tj/staticgen
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/tj/staticgen/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: buildCommand
+    value: staticgen
+    url: https://github.com/tj/staticgen/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Run the `staticgen` command to start the pre-rendering process"
+  - field: outputDir
+    value: build
+    url: https://github.com/tj/staticgen/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The static website output directory. Defaults to `\"build\"`."
+  - field: runsAs
+    value: [static]
+    url: https://github.com/tj/staticgen/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generate a static version with all of the pages and assets required"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/tj/staticgen/blob/master/Readme.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Run the `staticgen` command to start the pre-rendering process"
+notFound: [homepage, runtimeMin, basedOn, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, hqCountry, maintainerType, paidEdition, pricingPage, latestPrereleaseDate, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, packagistName, npmWeeklyDownloads, runtime]
+unreadable: []
+notes: >
+  The repository has no GitHub releases, only the tags v1.0.0 (2019-12-13), v1.0.1 (2020-01-29) and v1.1.0 (2020-09-23). The latest tag is v1.1.0, so currentMajor is 1; latestReleaseDate and firstRelease are the commit dates of those tags. The repository's homepage field is empty and the README names no separate site. The README's sponsor section names CTO.ai; no field records sponsors. The README installs a binary through gobinaries.com and names no runtime, so only the language is recorded. The README says it does not pre-render with a headless browser, so client-side JavaScript is not run before the pages are copied. The output is a static version of the site, so runsAs holds static for the live site; the generator itself runs from the command line, so local is recorded as well. The README says "Staticgen executes the command you provided, waits for the server to become available", and it names no host for that run.

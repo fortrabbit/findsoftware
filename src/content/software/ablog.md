@@ -18,6 +18,8 @@ runtime:
 hosting:
   - static
 runtimeMin: python 3.11
+basedOn:
+  - sphinx
 runsAs:
   - static
 renderingModes:
@@ -42,6 +44,9 @@ sources:
     url: https://ablog.readthedocs.io/en/stable/
     checkedAt: 2026-10-23
   - field: category
+    url: https://ablog.readthedocs.io/en/stable/
+    checkedAt: 2026-10-23
+  - field: basedOn
     url: https://ablog.readthedocs.io/en/stable/
     checkedAt: 2026-10-23
   - field: language

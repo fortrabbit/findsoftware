@@ -1,0 +1,128 @@
+id: quarkdown
+name: Quarkdown
+status: accepted
+checkedAt: 2026-10-23
+description: Markdown-based typesetting system that compiles one source into papers, presentations, knowledge bases and static websites.
+facts:
+  - field: homepage
+    value: https://quarkdown.com
+    url: https://quarkdown.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Markdown meets the power of LaTeX. And it's free and open source."
+  - field: repository
+    value: https://github.com/iamgio/quarkdown
+    url: https://api.github.com/repos/iamgio/quarkdown
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://quarkdown.com/wiki
+    url: https://quarkdown.com/wiki
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Welcome to the Quarkdown Wiki"
+  - field: maintainer
+    value: Giorgio Garofalo
+    url: https://quarkdown.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "By Giorgio Garofalo (iamgio) and contributors"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/iamgio
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Kotlin
+    url: https://api.github.com/repos/iamgio/quarkdown
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [typesetting, docs-generator]
+    url: https://github.com/iamgio/quarkdown/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Perfect for wikis, technical documentation and large knowledge bases"
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/iamgio/quarkdown/blob/main/build.gradle.kts
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Bundled JVM runtime"
+  - field: installMethod
+    value: [install script, homebrew, scoop, manual zip]
+    url: https://github.com/iamgio/quarkdown/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Install script (Linux/macOS)"
+  - field: buildCommand
+    value: quarkdown c file.qd
+    url: https://quarkdown.com/wiki/cli-options
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Running quarkdown c file.qd compiles the given file and saves the output to file"
+  - field: outputDir
+    value: quarkdown-output
+    url: https://quarkdown.com/wiki/cli-options
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Defaults to ./quarkdown-output"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/iamgio/quarkdown/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "perfect for static websites and knowledge management"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/iamgio/quarkdown/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Static site export"
+  - field: license
+    value: GPL-3.0
+    url: https://github.com/iamgio/quarkdown/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Quarkdown and its modules are licensed under GNU GPLv3"
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/iamgio/quarkdown/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "modules and binaries are licensed under GNU AGPLv3"
+  - field: licenseModel
+    value: open-source
+    url: https://quarkdown.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Markdown meets the power of LaTeX. And it's free and open source."
+  - field: firstRelease
+    value: "2025"
+    url: https://api.github.com/repos/iamgio/quarkdown/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/iamgio/quarkdown/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-09
+    url: https://api.github.com/repos/iamgio/quarkdown/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 16321
+    url: https://api.github.com/repos/iamgio/quarkdown
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 32
+    url: https://api.github.com/repos/iamgio/quarkdown/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [parent, hqCountry, maintainerType, forkOf, successorOf, basedOn, alternativeTo, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, runtimeMin, i18n, multisite, livePreview, userRoles, sso, importsFrom, headlessApi, selfHostOption, npmName, templating, databases, adminUi, contentStore]
+unreadable: []
+notes: >
+  The homepage FAQ says "Quarkdown can output to HTML, PDF, Markdown, and plain text"; no field holds output formats. No page states that the HTML output is static files; runsAs static rests on the README comparison row "Static site export". The homepage footer names a personal X account and a LinkedIn profile of the author; they are not recorded. The README says Quarkdown is "Born as an extension of CommonMark and GFM"; those are specifications, not records, so no basedOn is set. The PDF target uses paged.js and the slides target uses reveal.js; these are rendering libraries, not parents, and no basedOn is set. The CLI and language server are AGPLv3 under their own LICENSE files, the rest GPLv3; both license facts are recorded as the README states them. runtime jvm comes from the build script rather than a page, since no docs page names a Java version; the release zips bundle a minimal JRE, so no runtimeMin is recorded. PDF export needs a Chromium-family browser (wiki PDF page); the install scripts install chrome-headless-shell. The README points to setup-quarkdown for GitHub Actions workflows, which is the CI use. The live preview runs a local web server on port 8089 by default (CLI options page), which is a development feature. The release list has a rolling prerelease tag named "latest" dated 2025-05-13; it is not a version and no latestPrereleaseDate is recorded. The homepage lists "Over 15K stars"; the API figure is recorded instead.

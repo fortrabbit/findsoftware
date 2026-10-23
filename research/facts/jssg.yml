@@ -1,0 +1,112 @@
+id: jssg
+name: jssg
+status: accepted
+checkedAt: 2026-10-23
+description: Java static site generator that builds Markdown and Textile posts and pages into HTML with Freemarker layouts.
+facts:
+  - field: repository
+    value: https://github.com/agrison/jssg
+    url: https://api.github.com/repos/agrison/jssg
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/agrison/jssg/blob/master/README.md
+    url: https://github.com/agrison/jssg/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Getting Started"
+  - field: categories
+    value: [ssg]
+    url: https://github.com/agrison/jssg/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Jssg is a simple static site generator"
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/agrison/jssg
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/agrison/jssg/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "written in Java"
+  - field: installMethod
+    value: git clone, then mvn package
+    url: https://github.com/agrison/jssg/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "mvn package"
+  - field: buildCommand
+    value: jssg -build
+    url: https://github.com/agrison/jssg/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Invoking `jssg -build` will build the website"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/agrison/jssg/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "merge the generated markup in a complete set of `HTML` files"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/agrison/jssg/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "the site can be easily put on any web server, or even on GitHub"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/agrison/jssg/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Starting the Jetty server at http://localhost:9876 ..."
+  - field: templating
+    value: [freemarker]
+    url: https://github.com/agrison/jssg/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "using `Freemarker`"
+  - field: contentStore
+    value: flat-file
+    url: https://github.com/agrison/jssg/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Scan the `_posts/` directory for each file having the pattern"
+  - field: maintainer
+    value: Alexandre Grison
+    url: https://github.com/agrison/jssg/blob/master/pom.xml
+    checkedAt: 2026-10-23
+    via: page
+    quote: "<name>Alexandre Grison</name>"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/agrison
+    checkedAt: 2026-10-23
+    via: api
+  - field: lastCommitDate
+    value: 2014-06-12
+    url: https://api.github.com/repos/agrison/jssg/commits?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 22
+    url: https://api.github.com/repos/agrison/jssg
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/agrison/jssg/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: outputDir
+    value: _build
+    url: https://github.com/agrison/jssg/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Write the whole content in `_build/yyyy/MM/dd/something`"
+notFound: [homepage, license, firstRelease, currentMajor, latestReleaseDate, runtimeMin, basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, wikidata, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, npmName, packagistName, pypiName, endoflifeId, supportedVersions, selfHostOption, regions]
+unreadable: []
+notes: >
+  The repository has no GitHub release, no tag and no LICENSE file, and GitHub reports no license, so license and firstRelease are unknown. The default branch's newest commit is dated 2014-06-12, so lastCommitDate is recorded and the import judges listing by it. The README calls the project a simple static site generator like Jekyll; that comparison is not recorded as basedOn or alternativeTo. No homepage is recorded because GitHub reports none. The maintainer is the developer pom.xml names. pom.xml gives the project url http://www.grison.me/jssg/, which now answers 404, so no homepage is recorded. The README says code highlighting uses Pygments, which has to be in the PATH or have its path set in config.properties. The README's build names jssg -build -serve, and -serve starts a Jetty server for local preview.

@@ -1,0 +1,118 @@
+id: loconotion
+name: loconotion
+status: discontinued
+checkedAt: 2026-10-23
+description: Python script that renders a public Notion.so page and its subpages into a static website.
+facts:
+  - field: status
+    value: discontinued
+    url: https://github.com/leoncvlt/loconotion/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The project is currently functional but unmantained"
+  - field: repository
+    value: https://github.com/leoncvlt/loconotion
+    url: https://api.github.com/repos/leoncvlt/loconotion
+    checkedAt: 2026-10-23
+    via: api
+  - field: maintainer
+    value: Leonardo Cavaletti
+    url: https://github.com/leoncvlt/loconotion/blob/master/pyproject.toml
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Leonardo Cavaletti"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/leoncvlt
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/leoncvlt/loconotion
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://github.com/leoncvlt/loconotion/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generates a lightweight, customizable static site"
+  - field: runtime
+    value: [python]
+    url: https://github.com/leoncvlt/loconotion/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "**Loconotion** is a Python script"
+  - field: runtimeMin
+    value: "3.7"
+    url: https://github.com/leoncvlt/loconotion/blob/master/pyproject.toml
+    checkedAt: 2026-10-23
+    via: page
+    quote: 'python = "^3.7"'
+  - field: installMethod
+    value: pip install -r requirements.txt
+    url: https://github.com/leoncvlt/loconotion/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "pip install -r requirements.txt"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/leoncvlt/loconotion/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Outputs static files ready to be deployed on Netlify, GitHub Pages, Vercel"
+  - field: lastCommitDate
+    value: 2023-11-30
+    url: https://api.github.com/repos/leoncvlt/loconotion/commits?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 855
+    url: https://api.github.com/repos/leoncvlt/loconotion
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 20
+    url: https://api.github.com/repos/leoncvlt/loconotion/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: installMethod
+    value: poetry install --no-dev
+    url: https://github.com/leoncvlt/loconotion/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "`poetry install --no-dev` if you have [Poetry](https://python-poetry.org/) installed"
+  - field: installMethod
+    value: docker compose
+    url: https://github.com/leoncvlt/loconotion/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "docker-compose build loconotion"
+  - field: buildCommand
+    value: python loconotion <notion page url>
+    url: https://github.com/leoncvlt/loconotion/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "In its simplest form, the script takes the URL of a public Notion.so page"
+  - field: outputDir
+    value: dist
+    url: https://github.com/leoncvlt/loconotion/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generates the site inside the `dist` folder"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/leoncvlt/loconotion/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Make sure you're in your virtual environment of choice, then run"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/leoncvlt/loconotion/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Outputs static files ready to be deployed on Netlify"
+notFound: [homepage, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, license, licenseModel, firstRelease, currentMajor, latestReleaseDate, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, packagistName, pypiName, rubygemsName, nugetName]
+unreadable: []
+notes: >
+  The README states the project is functional but unmaintained and that the author will likely not resolve issues, so status is discontinued under AGENTS.md; the CSV row said accepted. The repository has no LICENSE file, no license in pyproject.toml and a null GitHub license field, so license is unknown. The repository has no GitHub release or tag and no homepage. The tool reads public Notion.so pages at build time, and that service is the input, not the content store, so contentStore is left out. The README requires Google Chrome with chromedriver for the rendering step; Chrome is a requirement, not a runtime, so runtime is python only. The maintainer name comes from the pyproject.toml authors field; the field's email address is not recorded. The Python minimum is taken from the Poetry dependency constraint, the only version statement in the repository outside the Docker image tag.

@@ -1,0 +1,127 @@
+id: firn
+name: firn
+status: stub
+checkedAt: 2026-10-23
+description: Static site generator written in Rust that renders folders of Org Mode files to HTML.
+facts:
+  - field: status
+    value: stub
+    url: https://theiceshelf.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MY BLOG"
+  - field: repository
+    value: https://github.com/teesloane/firn
+    url: https://api.github.com/repos/teesloane/firn
+    checkedAt: 2026-10-23
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/teesloane
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: 2020
+    url: https://api.github.com/repos/teesloane/firn/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://raw.githubusercontent.com/teesloane/firn/master/README.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A Static Site Generator for Org Mode"
+  - field: language
+    value: rust
+    url: https://api.github.com/repos/teesloane/firn
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://raw.githubusercontent.com/teesloane/firn/master/README.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Download the latest binary from the Github Releases page"
+  - field: templating
+    value: [tera]
+    url: https://raw.githubusercontent.com/teesloane/firn/master/README.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Passes files through a template system called"
+  - field: renderingModes
+    value: [static]
+    url: https://raw.githubusercontent.com/teesloane/firn/master/README.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Firn generates a static site from org-mode files"
+  - field: runsAs
+    value: [local]
+    url: https://raw.githubusercontent.com/teesloane/firn/master/README.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: "running the firn binary on a directory of org files performs the following"
+  - field: runsAs
+    value: [static]
+    url: https://raw.githubusercontent.com/teesloane/firn/master/README.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Firn generates a static site from org-mode files"
+  - field: installMethod
+    value: binary download
+    url: https://raw.githubusercontent.com/teesloane/firn/master/README.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Download the latest binary from the Github Releases page"
+  - field: buildCommand
+    value: firn build
+    url: https://raw.githubusercontent.com/teesloane/firn/master/README.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: "firn build"
+  - field: contentStore
+    value: flat-file
+    url: https://raw.githubusercontent.com/teesloane/firn/master/README.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: "creating sites from already existing folders of org-files"
+  - field: license
+    value: EPL-1.0
+    url: https://api.github.com/repos/teesloane/firn
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/teesloane/firn/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Eclipse Public License - v 1.0"
+  - field: currentMajor
+    value: "0"
+    url: https://api.github.com/repos/teesloane/firn/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2022-03-29
+    url: https://api.github.com/repos/teesloane/firn/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: discord
+    value: https://discord.gg/TbgKxYb
+    url: https://raw.githubusercontent.com/teesloane/firn/master/README.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: "https://discord.gg/TbgKxYb"
+  - field: githubStargazers
+    value: 331
+    url: https://api.github.com/repos/teesloane/firn
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 9
+    url: https://api.github.com/repos/teesloane/firn/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, docs, maintainer, pricingPage, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, mastodon, x, bluesky, newsletter, npmName, packagistName, crateName, pypiDownloads, endoflifeId, runtimeMin]
+unreadable: [https://theiceshelf.com/firn.html]
+notes: >
+  The README links the documentation at theiceshelf.com/firn.html, and that address now returns 404 with a page for an unrelated blog, so the project's own site no longer shows the software and status is stub with no homepage. The README's install step (download the binary from the GitHub releases page) is the only install source left, so the record stays. The GitHub releases start at v0.0.1 (2020-05-11), and the oldest release listed is a prerelease; firstRelease uses it. The latest stable release is v0.0.21 (2022-03-29); no prerelease is newer, so no latestPrereleaseDate is recorded. The crates.io crate named firn belongs to another project (wseaton/firn), so no crateName is recorded. The README's development section names Rust 1.58.0 as the development toolchain; it is not recorded as runtimeMin because it describes the contributor setup, not the minimum for running the binary. No page names a maintainer: the LICENSE and Cargo.toml carry no name, and the GitHub profile name Ty is not recorded. The README marks the status as Alpha in its badge.

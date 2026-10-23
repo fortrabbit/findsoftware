@@ -1,0 +1,121 @@
+id: doctree
+name: doctree
+status: discontinued
+checkedAt: 2026-10-23
+description: Library documentation tool that indexes Go, Python and Zig source code and serves it over HTTP on localhost.
+facts:
+  - field: status
+    value: discontinued
+    url: https://api.github.com/repos/sourcegraph/doctree
+    checkedAt: 2026-10-23
+    via: api
+  - field: repository
+    value: https://github.com/sourcegraph/doctree
+    url: https://api.github.com/repos/sourcegraph/doctree
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/sourcegraph/doctree/blob/main/README.md
+    url: https://github.com/sourcegraph/doctree/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "doctree provides first-class library documentation for every language"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/sourcegraph/doctree
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/sourcegraph/doctree
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [library-docs]
+    url: https://github.com/sourcegraph/doctree/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "100% open-source library docs tool for every language"
+  - field: runtime
+    value: [go binary]
+    url: https://github.com/sourcegraph/doctree/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "doctree is a single binary, lightweight, and designed to run on your local machine"
+  - field: renderingModes
+    value: [server]
+    url: https://github.com/sourcegraph/doctree/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Run the server"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/sourcegraph/doctree
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/sourcegraph/doctree/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "100% open-source library docs tool for every language"
+  - field: firstRelease
+    value: "2022"
+    url: https://api.github.com/repos/sourcegraph/doctree/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2022-06-28
+    url: https://api.github.com/repos/sourcegraph/doctree/releases/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 879
+    url: https://api.github.com/repos/sourcegraph/doctree
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 8
+    url: https://api.github.com/repos/sourcegraph/doctree/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: installMethod
+    value: binary download
+    url: https://github.com/sourcegraph/doctree/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "curl -L https://github.com/sourcegraph/doctree/releases/latest/download/doctree-x86_64-linux"
+  - field: installMethod
+    value: Docker
+    url: https://github.com/sourcegraph/doctree/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "docker run -it --publish 3333:3333 --rm --name doctree"
+  - field: discord
+    value: https://discord.gg/vqsBW8m5Y8
+    url: https://github.com/sourcegraph/doctree/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Join us on Discord"
+  - field: deployTargets
+    value: [DigitalOcean]
+    url: https://github.com/sourcegraph/doctree/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "DigitalOcean user data"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/sourcegraph/doctree/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "designed to run on your local machine"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/sourcegraph/doctree/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "docker run -d --rm --name doctree -p 80:3333"
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, maintainerType, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, runtimeMin, outputDir, buildCommand, pypiDownloads, npmName, packagistName, currentMajor, maintainer]
+unreadable: [https://doctree.org]
+notes: >
+  The repository is archived on GitHub (archived flag true, archived_at 2026-10-11), and it is the repository the README names as the source, so status is discontinued; the README still describes installation and use, and no README or homepage text states the end of the project. The homepage doctree.org in the CSV does not answer a valid TLS connection (self-signed certificate) and is not recorded as homepage; the archived repository outranks the dead homepage, so the status stays discontinued. The releases are date-stamped tags such as release-2022-06-28-418506c, not semantic versions, so currentMajor is not recorded; the 74 tags include v0.1.0. The README lists Go, Python, Zig and Markdown support and says the project is not yet ready for production use. No page names a maintainer: the repository belongs to the sourcegraph GitHub organization and the README only mentions connecting to Sourcegraph, so maintainer is not recorded. The README says doctree can be used through doctree.org with any GitHub repository, a hosted site whose certificate is self-signed. The tool serves library documentation over HTTP, which passes criterion 1; the CSV category ssg was not kept.

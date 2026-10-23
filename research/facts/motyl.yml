@@ -1,0 +1,123 @@
+id: motyl
+name: Motyl
+status: stub
+checkedAt: 2026-10-23
+description: "Ruby blog-aware static site generator that builds posts and pages from Markdown with Mustache templates."
+facts:
+  - field: repository
+    value: https://github.com/fcambus/motyl
+    url: https://api.github.com/repos/fcambus/motyl
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/fcambus/motyl/blob/master/README.md
+    url: https://github.com/fcambus/motyl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Motyl is an opinionated blog-aware static site generator written in Ruby"
+  - field: maintainer
+    value: Frederic Cambus
+    url: https://raw.githubusercontent.com/fcambus/motyl/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2016-2022, Frederic Cambus"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/fcambus
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/fcambus/motyl
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg, blog]
+    url: https://github.com/fcambus/motyl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "opinionated blog-aware static site generator"
+  - field: runtime
+    value: [ruby]
+    url: https://github.com/fcambus/motyl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "written in Ruby"
+  - field: templating
+    value: [mustache]
+    url: https://github.com/fcambus/motyl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "It uses Mustache as templating system"
+  - field: contentStore
+    value: flat-file
+    url: https://github.com/fcambus/motyl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "all content is written in Markdown"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/fcambus/motyl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "static site generator"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/fcambus/motyl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Simply run `motyl` to build the site"
+  - field: license
+    value: BSD-2-Clause
+    url: https://api.github.com/repos/fcambus/motyl
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/fcambus/motyl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Motyl is released under the BSD 2-Clause license"
+  - field: firstRelease
+    value: "2018"
+    url: https://api.github.com/repos/fcambus/motyl/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/fcambus/motyl/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2022-07-28
+    url: https://api.github.com/repos/fcambus/motyl/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/fcambus/motyl/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 78
+    url: https://api.github.com/repos/fcambus/motyl
+    checkedAt: 2026-10-23
+    via: api
+  - field: buildCommand
+    value: "motyl"
+    url: https://github.com/fcambus/motyl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Simply run `motyl` to build the site"
+  - field: outputDir
+    value: "public"
+    url: https://github.com/fcambus/motyl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "it will generate posts and pages into the `public` directory"
+notFound: [homepage, installMethod, runtimeMin, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, npmName, npmWeeklyDownloads, pypiName, pypiDownloads, packagistName, rubygemsName, selfHostOption]
+unreadable: []
+notes: >
+  Status is stub while criterion 3 is in doubt: no page documents installing motyl itself, only its dependency gems and running it. Revisit when the project documents an install step.
+  No homepage: the GitHub homepage field is empty. The author's site cambus.net is linked from the README as the author's site, not the project's. The README documents the gems the program requires (kramdown, mustache, rouge) and says to run motyl, but it does not document how to install motyl itself; the repository has no Makefile, gemspec or Gemfile. installMethod is absent: the README, ChangeLog and repository tree hold no step for installing motyl itself, so the candidate fails criterion 3 (documented installation) and is reported for a status decision. The README names the examples directory as the starting point for a site. The README's theme instruction names a separate theme repository (Chrysalide), which is not read. There is no RubyGems package named motyl, so no rubygemsName is recorded.
+  The README describes Markdown pages and posts rendered with Mustache templates, syntax highlighting with Rouge, custom URLs built from file names, multiple categories per post and an Atom feed. The README says running motyl writes posts and pages into a public directory and copies static assets there.

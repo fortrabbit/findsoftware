@@ -1,0 +1,122 @@
+id: makestaticsite
+name: MakeStaticSite
+status: accepted
+checkedAt: 2026-10-23
+description: Command-line tool written in Bash that crawls a website with Wget and generates a static copy of it for deployment.
+facts:
+  - field: homepage
+    value: https://makestaticsite.sh/
+    url: https://makestaticsite.sh/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MakeStaticSite is a command-line tool for"
+  - field: repository
+    value: https://github.com/paultraf/makestaticsite
+    url: https://api.github.com/repos/paultraf/makestaticsite
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://makestaticsite.sh/getting-started/installing/
+    url: https://makestaticsite.sh/getting-started/installing/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "you can download the source distribution either as a zip file"
+  - field: maintainer
+    value: Paul Trafford
+    url: https://makestaticsite.sh/about/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MakeStaticSite was created by Paul Trafford"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/paultraf/makestaticsite
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Shell
+    url: https://api.github.com/repos/paultraf/makestaticsite
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [bash]
+    url: https://makestaticsite.sh/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The main technical prerequisite is to have Bash installed"
+  - field: installMethod
+    value: download the zip or tar.gz archive, extract it, make the scripts executable
+    url: https://makestaticsite.sh/getting-started/installing/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "make the scripts executable"
+  - field: license
+    value: AGPL-3.0
+    url: https://api.github.com/repos/paultraf/makestaticsite
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://makestaticsite.sh/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "GNU AGPL license"
+  - field: firstRelease
+    value: "2023"
+    url: https://api.github.com/repos/paultraf/makestaticsite/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://makestaticsite.sh/developers/current-status/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Hence it is at version 0.x."
+  - field: latestPrereleaseDate
+    value: 2026-03-01
+    url: https://api.github.com/repos/paultraf/makestaticsite/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 14
+    url: https://api.github.com/repos/paultraf/makestaticsite
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/paultraf/makestaticsite/contributors?per_page=100
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: ["static-export"]
+    url: https://makestaticsite.sh/about/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "provides a convenient means to set up and manage the automatic creation and deployment of static versions of websites"
+  - field: runsAs
+    value: static
+    url: https://makestaticsite.sh/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The web output contains no server-side scripting and no databases are involved"
+  - field: runsAs
+    value: local
+    url: https://makestaticsite.sh/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The main technical prerequisite is to have Bash installed on your computer"
+  - field: renderingModes
+    value: ["static"]
+    url: https://makestaticsite.sh/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generating and deploying refined static versions of both existing websites"
+  - field: deployTargets
+    value: ["rsync", "netlify"]
+    url: https://makestaticsite.sh/about/features/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Local and remote (server) deployment options, including rsync over ssh and Netlify."
+notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, headlessApi, contentStore, databases, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, freeTier, usageShare, reportedInstalls, discord, mastodon, bluesky, x, subreddit, forum, newsletter, wikidata, docker, endoflifeId, supportedVersions, outputDir, apiLimits, regions, selfHostOption, pluginDirectory, pluginCount, runtimeMin, maintainerType, latestReleaseDate]
+unreadable: []
+notes: >
+  The GitHub repository has only prereleases (76 releases, the newest v0.31.12 on 2026-03-01), so latestReleaseDate is not recorded and latestPrereleaseDate carries the newest date. The current-status page says "Hence it is at version 0.x.", which gives currentMajor 0; the homepage's "Current version 0.31.12" is a dot release and is not recorded. The oldest GitHub release is v0.22.2 (2023-03-06), which gives firstRelease 2023; the site's own history dates the project from 2022. The about page gives the copyright as "Copyright (c) 2022-2025 Paul Trafford"; the about page and the homepage name no company, so maintainerType and hqCountry are not recorded. The about page and the features page name rsync over ssh and Netlify as deployment targets; the homepage shows a Netlify run. The requirements page names Wget and rsync as dependencies and the homepage's run shows WP-CLI as optional. The FAQ and in-depth pages say Netlify support was introduced in 0.22. The limitations page says the tool is not a dynamic crawler and does not run JavaScript, which is recorded as prose material only. The about page names WordPress and Drupal as examples of the content management systems whose sites it converts, the features page names the Wayback Machine, and the limitations page says the tool does not run JavaScript and that comments, discussions and surveys lose their interactivity in the static output. The category mirror from the CSV has no dictionary entry and is left out; the project is also listed as static-export.

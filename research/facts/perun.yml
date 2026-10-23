@@ -1,0 +1,126 @@
+id: perun
+name: Perun
+status: discontinued
+checkedAt: 2026-10-23
+description: Static site generator built from a set of Boot tasks in Clojure, for blogs and documentation generated from Markdown.
+facts:
+  - field: status
+    value: discontinued
+    url: https://raw.githubusercontent.com/hashobject/perun/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This project is currently unmaintained!"
+  - field: repository
+    value: https://github.com/hashobject/perun
+    url: https://api.github.com/repos/hashobject/perun
+    checkedAt: 2026-10-23
+    via: api
+  - field: maintainer
+    value: Hashobject Ltd
+    url: https://raw.githubusercontent.com/hashobject/perun/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright © 2013-2019 Hashobject Ltd"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/hashobject
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Clojure
+    url: https://api.github.com/repos/hashobject/perun
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [clojure]
+    url: https://api.github.com/repos/hashobject/perun
+    checkedAt: 2026-10-23
+    via: api
+  - field: basedOn
+    value: Boot
+    url: https://raw.githubusercontent.com/hashobject/perun/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Simple, composable static site generator built on top of the"
+  - field: categories
+    value: [ssg]
+    url: https://raw.githubusercontent.com/hashobject/perun/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Simple, composable static site generator built on top of the"
+  - field: contentStore
+    value: Markdown files
+    url: https://raw.githubusercontent.com/hashobject/perun/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Generate blog from markdown files."
+  - field: installMethod
+    value: Boot dependency in build.boot
+    url: https://raw.githubusercontent.com/hashobject/perun/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: '[perun "0.3.0"]'
+  - field: buildCommand
+    value: boot build
+    url: https://raw.githubusercontent.com/hashobject/perun/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "usually you'd use it by just running `boot build` which will generate your static site"
+  - field: runsAs
+    value: [local]
+    url: https://raw.githubusercontent.com/hashobject/perun/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "usually you'd use it by just running `boot build` which will generate your static site"
+  - field: newsletter
+    value: https://anton.tinysend.com
+    url: https://raw.githubusercontent.com/hashobject/perun/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Occasional updates from the author"
+  - field: renderingModes
+    value: [static]
+    url: https://raw.githubusercontent.com/hashobject/perun/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Simple, composable static site generator built on top of the"
+  - field: license
+    value: EPL-1.0
+    url: https://api.github.com/repos/hashobject/perun
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/hashobject/perun/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Eclipse Public License - v 1.0"
+  - field: firstRelease
+    value: "2016"
+    url: https://api.github.com/repos/hashobject/perun/tags
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/hashobject/perun/tags
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2020-12-10
+    url: https://api.github.com/repos/hashobject/perun/tags
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 353
+    url: https://api.github.com/repos/hashobject/perun
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 23
+    url: https://api.github.com/repos/hashobject/perun/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, docs, pricingPage, hqCountry, parent, maintainerType, forkOf, successorOf, alternativeTo, importsFrom, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, paidEdition, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, wikidata, docker, endoflifeId, runtimeMin, outputDir, templating]
+unreadable: [https://perun.io/ (no answer over https), https://perun.io/guides/getting-started/ (no answer over https)]
+notes: >
+  The homepage perun.io answers only over plain http with the Perun site, and https fails to connect, so no homepage is recorded and the http site is not used for facts. The README says "This project is currently unmaintained!" and points to Montaigne for websites and blogs; the README does not name Montaigne as a successor, so no successorOf is recorded. The repository was last pushed on 2026-07-25 while the README still states it is unmaintained; the README statement is the signal used. The GitHub repository has no release objects; the tags 0.3.0 (2016-01-17) and 0.5.0 (2020-12-10) are the sources for firstRelease, currentMajor and latestReleaseDate, using the commit dates of the tags. The highest stable tag is 0.5.0; the SNAPSHOT tags are not stable. The README names a Clojurians Slack channel #perun for help; Slack is not a recorded forum field. The newsletter is the author's, linked from the README. The README's dependency line shows [perun "0.3.0"] while the example build uses 0.4.3-SNAPSHOT; the install method is recorded as a Boot dependency, with no version. The README says Perun is tested against Boot 2.8.2 only; no runtimeMin is recorded because that is a Boot version, not a runtime version of the project's own release. Clojars hosts the package but is not in the registry list, so no figure is recorded.

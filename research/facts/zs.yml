@@ -1,0 +1,102 @@
+id: zs
+name: zs
+status: accepted
+checkedAt: 2026-10-23
+description: Static site generator written in Go that builds Markdown and HTML files into a site, with plugins, hooks and routes.
+facts:
+  - field: repository
+    value: https://git.mills.io/prologic/zs
+    url: https://git.mills.io/api/v1/repos/prologic/zs
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://git.mills.io/prologic/zs/src/branch/main/README.md
+    url: https://git.mills.io/prologic/zs/raw/branch/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "zs is an extremely minimal static site generator written in Go."
+  - field: maintainer
+    value: James Mills
+    url: https://git.mills.io/prologic/zs/raw/branch/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (C) 2021-present James Mills"
+  - field: language
+    value: Go
+    url: https://git.mills.io/prologic/zs/raw/branch/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "static site generator written in Go"
+  - field: categories
+    value: [ssg]
+    url: https://git.mills.io/prologic/zs/raw/branch/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "zs is an extremely minimal static site generator written in Go."
+  - field: runtime
+    value: ["binary"]
+    url: https://git.mills.io/prologic/zs/raw/branch/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "zs is an extremely minimal static site generator written in Go."
+  - field: installMethod
+    value: go install
+    url: https://git.mills.io/prologic/zs/raw/branch/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "go install go.mills.io/zs@latest"
+  - field: buildCommand
+    value: zs build
+    url: https://git.mills.io/prologic/zs/raw/branch/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "`zs build` re-builds your site."
+  - field: contentStore
+    value: flat-file
+    url: https://git.mills.io/prologic/zs/raw/branch/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Keep your texts in markdown, or HTML format right in the main directory"
+  - field: templating
+    value: [placeholders]
+    url: https://git.mills.io/prologic/zs/raw/branch/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Use placeholders for variables and plugins in your markdown or html files"
+  - field: forkOf
+    value: https://github.com/zserge/zs
+    url: https://git.mills.io/prologic/zs/raw/branch/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "originally forked from zserge/zs"
+  - field: license
+    value: MIT
+    url: https://git.mills.io/prologic/zs/raw/branch/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "zs is covered by the MIT license"
+  - field: licenseModel
+    value: open-source
+    url: https://git.mills.io/prologic/zs/raw/branch/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "is licensed under the terms of the MIT License"
+  - field: firstRelease
+    value: "2021"
+    url: https://git.mills.io/api/v1/repos/prologic/zs/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://git.mills.io/api/v1/repos/prologic/zs/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-18
+    url: https://git.mills.io/api/v1/repos/prologic/zs/releases
+    checkedAt: 2026-10-23
+    via: api
+notFound: [docker, homepage, repoOwnerType, hqCountry, maintainerType, parent, basedOn, successorOf, alternativeTo, adminUi, databases, headlessApi, livePreview, multisite, userRoles, sso, i18n, importsFrom, paidEditions, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, runtimeMin, outputDir, runsAs, renderingModes, contributors, githubStargazers, npmName, npmWeeklyDownloads, packagistName, pypiName, pypiDownloads, latestPrereleaseDate, apiLimits, regions, selfHostOption]
+unreadable: []
+notes: >
+  The repository is on a Gitea instance (git.mills.io), not GitHub, so the GitHub-only fields (githubStargazers, contributors, repoOwnerType) are not recorded from it; the Gitea star count (5) has no field. The Gitea contributors endpoint returns 404, so contributors is unknown. The Gitea repository field "website" points to https://zs.mills.io/, which the README names as the zs starter template demo, not the project's own site; no homepage is recorded. The README also names a make install source build and a container image on oci.mills.io, mirrored to Docker Hub; the quote check cannot read that part of the README, so neither is a fact. The README is the only documentation, and it names no deployment target and no output directory for zs build, so outputDir is unknown. The README does not say where a site runs; the .routes file (redirects, rewrites, 410 responses) is described as working "without a reverse proxy", which is not a statement about the host, so runsAs and renderingModes are not recorded beyond the static site generator wording. The Gitea API returns no license for the repository (license null); the MIT license comes from the LICENSE file and the README. The README also describes plugins (executables in any language in the .zs directory whose stdout fills a placeholder), build hooks that run before and after a build, a .routes file for redirects, rewrites and error responses, a document index for queries, and the commands zs build, zs watch and zs serve (the last rebuilds and serves the site on the network). The first release is 0.0.1 (2021-09-17), the oldest release object. Latest stable release is 0.5.0 (2026-10-18); no prerelease is listed. The owner's account type could not be read from the Gitea API (the orgs endpoint returns 404), so repoOwnerType is unknown.

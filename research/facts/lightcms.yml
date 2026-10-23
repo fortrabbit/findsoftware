@@ -1,0 +1,157 @@
+id: lightcms
+name: LightCMS
+status: accepted
+checkedAt: 2026-10-23
+description: Self-hosted content management system with a web admin, a REST API and an MCP server, written in Go.
+facts:
+  - field: homepage
+    value: https://metavert.io/lightcms
+    url: https://metavert.io/lightcms
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Open-source (MIT). Self-hosted."
+  - field: repository
+    value: https://github.com/metavert-io/lightcms
+    url: https://api.github.com/repos/metavert-io/lightcms
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://raw.githubusercontent.com/metavert-io/lightcms/main/README.md
+    url: https://metavert.io/lightcms
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The README covers quick start, MCP setup, OAuth configuration, multi-user setup, and deployment."
+  - field: maintainer
+    value: Metavert LLC
+    url: https://raw.githubusercontent.com/metavert-io/lightcms/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2026 Metavert LLC"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/metavert-io/lightcms
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/metavert-io/lightcms
+    checkedAt: 2026-10-23
+    via: api
+  - field: databases
+    value: [mongodb]
+    url: https://metavert.io/lightcms
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MongoDB Atlas (free tier works for most sites)"
+  - field: headlessApi
+    value: [rest]
+    url: https://raw.githubusercontent.com/metavert-io/lightcms/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The MCP server and CLI tool connect to your LightCMS instance via the REST API"
+  - field: templating
+    value: [go html/template]
+    url: https://metavert.io/lightcms
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Template layouts use Go html/template"
+  - field: userRoles
+    value: [admin, editor, contributor, viewer]
+    url: https://metavert.io/lightcms
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Four roles — admin, editor, contributor, viewer"
+  - field: renderingModes
+    value: [static]
+    url: https://metavert.io/lightcms
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Published pages are pre-rendered to static HTML files"
+  - field: installMethod
+    value: clone the repository, then set a MongoDB connection string
+    url: https://metavert.io/lightcms
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Clone the repo, set your MongoDB connection string, and you’re live."
+  - field: buildCommand
+    value: go build -o bin/lightcms-server ./cmd/server
+    url: https://raw.githubusercontent.com/metavert-io/lightcms/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "go build -o bin/lightcms-server ./cmd/server"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/metavert-io/lightcms
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://metavert.io/lightcms
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Open-source (MIT). Self-hosted."
+  - field: firstRelease
+    value: "2026"
+    url: https://api.github.com/repos/metavert-io/lightcms/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 7
+    url: https://api.github.com/repos/metavert-io/lightcms/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-05
+    url: https://api.github.com/repos/metavert-io/lightcms/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 32
+    url: https://api.github.com/repos/metavert-io/lightcms
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/metavert-io/lightcms/contributors?per_page=100
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: ["cms"]
+    url: https://metavert.io/lightcms
+    checkedAt: 2026-10-23
+    via: page
+    quote: "free, open-source content management system built for AI agents"
+  - field: contentStore
+    value: database
+    url: https://metavert.io/lightcms
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Database: MongoDB Atlas"
+  - field: adminUi
+    value: yes
+    url: https://metavert.io/lightcms
+    checkedAt: 2026-10-23
+    via: page
+    quote: "all through MCP or the admin panel"
+  - field: importsFrom
+    value: ["notion", "obsidian", "hugo", "jekyll"]
+    url: https://raw.githubusercontent.com/metavert-io/lightcms/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Supports Notion exports, Obsidian vaults, Hugo/Jekyll site migrations, and AI-generated content."
+  - field: runsAs
+    value: always-on
+    url: https://raw.githubusercontent.com/metavert-io/lightcms/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Use HTTPS (put behind a reverse proxy like nginx or caddy)"
+  - field: runtime
+    value: ["go binary"]
+    url: https://raw.githubusercontent.com/metavert-io/lightcms/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "go build -o bin/lightcms-server ./cmd/server"
+notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, i18n, multisite, livePreview, sso, paidEdition, freeTier, usageShare, reportedInstalls, discord, mastodon, bluesky, x, subreddit, forum, newsletter, wikidata, docker, endoflifeId, supportedVersions, outputDir, apiLimits, regions, selfHostOption, pluginDirectory, pluginCount, runtimeMin]
+unreadable: []
+notes: >
+  The homepage (metavert.io/lightcms) and the README disagree on the Go version: the homepage says "Go 1.25", the README prerequisites say "Go 1.24 or later". Neither is recorded as runtimeMin until the go.mod or a single page settles it. The README and the homepage both describe optional outside services: semantic search uses Voyage AI embeddings unless the API key is missing, which falls back to full-text search, and the chat widget streams answers through Claude Haiku and works without an Anthropic key. The embeddings provider can be Ollama ("LIGHTCMS_EMBEDDINGS_PROVIDER=ollama" in the README), so those are not recorded as required. The homepage names a hosted Metavert site running on LightCMS; that is an example, not a hosted offering, and no pricing or hosted plan is stated. The homepage's social links are the author's personal accounts and no software account is named, so no social field is recorded. The homepage's claim that the software was built through conversation with Claude Code is a statement about authorship and is not recorded. The Metavert LLC jurisdiction is not stated on the privacy policy, terms or LICENSE, so no hqCountry is recorded. The GitHub contributors endpoint returns one contributor. Stars and releases come from the API at the date above. The MCP server (128 tools by the homepage) is a feature of the software with no field. The homepage footer social links are the author's personal accounts.

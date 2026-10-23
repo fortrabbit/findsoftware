@@ -1,0 +1,115 @@
+id: docuowl
+name: Docuowl
+status: accepted
+checkedAt: 2026-10-23
+description: Documentation generator that compiles a directory of Markdown files into a single static HTML page.
+facts:
+  - field: repository
+    value: https://github.com/docuowl/docuowl
+    url: https://api.github.com/repos/docuowl/docuowl
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/docuowl/docuowl/blob/master/README.md
+    url: https://github.com/docuowl/docuowl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Docuowl takes a directory as input"
+  - field: maintainer
+    value: Victor Gama
+    url: https://github.com/docuowl/docuowl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright © 2021 Victor Gama"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/docuowl/docuowl
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/docuowl/docuowl
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [docs-generator]
+    url: https://github.com/docuowl/docuowl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Docuowl generates a static single-page documentation from Markdown files"
+  - field: runtime
+    value: [go binary]
+    url: https://github.com/docuowl/docuowl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "running `go build` on `cmd/docuowl/main.go`"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/docuowl/docuowl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Docuowl generates a static single-page documentation from Markdown files"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/docuowl/docuowl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Compilation will output a single `index.html` file"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/docuowl/docuowl
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/docuowl/docuowl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2021"
+    url: https://api.github.com/repos/docuowl/docuowl/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/docuowl/docuowl/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2021-10-25
+    url: https://api.github.com/repos/docuowl/docuowl/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 1310
+    url: https://api.github.com/repos/docuowl/docuowl
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 4
+    url: https://api.github.com/repos/docuowl/docuowl/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: installMethod
+    value: Homebrew
+    url: https://github.com/docuowl/docuowl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "brew install docuowl/tap/docuowl"
+  - field: installMethod
+    value: binary download from the releases page
+    url: https://github.com/docuowl/docuowl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Refer to the [releases](https://github.com/docuowl/docuowl/releases) page to get"
+  - field: buildCommand
+    value: docuowl --input docs --output docs-html
+    url: https://github.com/docuowl/docuowl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "$ docuowl --input docs --output docs-html"
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, maintainerType, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, runtimeMin, outputDir, pypiDownloads, npmName, packagistName]
+unreadable: []
+notes: >
+  The repository has no homepage set; the README links a demo at docuowl.github.io/demo, which is a demo of the output and not recorded as the project's site. The highest stable GitHub release is v0.2.4 (2021-10-25), and the releases run from v0.1 (2021-03-31), so currentMajor is 0. The LICENSE section of the README names two copyright holders, Victor Gama and Real Artists; the maintainer is recorded as the first. The README says Stripe allowed the author to use its API documentation layout. Each section is a folder with a content.md file and an optional sidenotes.md file, each group is a folder with a meta.md file, and the watch mode serves a preview on 127.0.0.1:8000 that reloads when input files change. The README's TODO list names full-text search and tests as not yet done. The last push is 2023-02-25 while the newest commit on master is dated 2021-10-25; the release date is used.

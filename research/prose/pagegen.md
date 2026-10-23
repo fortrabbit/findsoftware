@@ -1,0 +1,1 @@
+Pagegen is a static site generator written in Python and installed with pip. It keeps its content as flat files, stored in a content directory, and its templates use Mako. The pgn command writes the finished site to a build directory, which is uploaded to a web server, so the live site needs no process of its own.

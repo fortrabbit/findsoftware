@@ -1,0 +1,1 @@
+lustre_ssg is a static site generator for Lustre projects, written in Gleam, and it runs on both Gleam's Erlang and JavaScript targets. A project declares its routes in a build script and runs it with gleam run -m build, and the output is a folder of HTML files. The README states that the package has no command line interface, no built-in server and no client-side hydration.

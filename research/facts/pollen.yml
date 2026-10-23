@@ -1,0 +1,116 @@
+id: pollen
+name: Pollen
+status: accepted
+checkedAt: 2026-10-23
+description: Book-publishing system written in Racket that embeds code in text documents for multiple-output publishing.
+facts:
+  - field: repository
+    value: https://gitlab.com/mbutterick/pollen
+    url: https://gitlab.com/mbutterick/pollen/-/raw/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A book-publishing system written in Racket."
+  - field: maintainer
+    value: Matthew Butterick
+    url: https://gitlab.com/mbutterick/pollen/-/raw/master/LICENSE.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "© 2013-2019 Matthew Butterick"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/mbutterick/pollen
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Racket
+    url: https://api.github.com/repos/mbutterick/pollen
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [publishing]
+    url: https://gitlab.com/mbutterick/pollen/-/raw/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A book-publishing system written in Racket."
+  - field: runtime
+    value: [racket]
+    url: https://gitlab.com/mbutterick/pollen/-/raw/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Using Racket 6.3+, install from the command line:"
+  - field: runtimeMin
+    value: "6.3"
+    url: https://gitlab.com/mbutterick/pollen/-/raw/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Using Racket 6.3+, install from the command line:"
+  - field: installMethod
+    value: raco pkg install pollen
+    url: https://gitlab.com/mbutterick/pollen/-/raw/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "raco pkg install pollen"
+  - field: docs
+    value: https://docs.racket-lang.org/pollen/
+    url: https://docs.racket-lang.org/pollen/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Pollen is a publishing system that helps authors make functional and beautiful digital books."
+  - field: basedOn
+    value: Scribble
+    url: https://docs.racket-lang.org/pollen/Backstory.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Pollen is a publishing system built on top of Scribble and Racket."
+  - field: installMethod
+    value: DrRacket package installer
+    url: https://docs.racket-lang.org/pollen/Installation.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Your other option is to install Pollen from inside DrRacket."
+  - field: buildCommand
+    value: raco pollen render
+    url: https://docs.racket-lang.org/pollen/raco-pollen.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "raco pollen render source ... will render only the source paths specified in source ..."
+  - field: runsAs
+    value: [static]
+    url: https://docs.racket-lang.org/pollen/Installation.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "which generally compile down to a set of static files"
+  - field: runsAs
+    value: [local]
+    url: https://docs.racket-lang.org/pollen/Installation.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This project server is primarily a development & previewing tool."
+  - field: renderingModes
+    value: [static]
+    url: https://docs.racket-lang.org/pollen/Installation.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "which generally compile down to a set of static files"
+  - field: license
+    value: MIT
+    url: https://gitlab.com/mbutterick/pollen/-/raw/master/LICENSE.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License for Pollen"
+  - field: licenseModel
+    value: open-source
+    url: https://gitlab.com/mbutterick/pollen/-/raw/master/LICENSE.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License for Pollen"
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/mbutterick/pollen/tags
+    checkedAt: 2026-10-23
+    via: api
+notFound: [contentStore, homepage, hqCountry, parent, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, latestReleaseDate, firstRelease, pypiName, npmName, githubStargazers, contributors]
+unreadable: []
+notes: >
+  The GitHub repository mbutterick/pollen is a mirror, and its description names the GitLab repository as the main one, so the GitLab repository is recorded and the GitHub archive flag is no signal under AGENTS.md. The GitHub stargazer and contributor counts belong to the mirror and go in no fact. The project's README says "Actively developed, though the pace has slowed"; that is not an end signal and status stays accepted. The project has tags on GitHub (v3.2 is the highest version tag) but no GitHub releases and no Racket package catalogue entry was read, so no latestReleaseDate is recorded; the tag date is not a release date. The homepage is not recorded: the project's repository is the only site the README names, and the "Full docs" link points to the Racket documentation server, which is not read here as a project site. The README names Pollen as the author's publishing tool for three books, which is not recorded as a fact.
+  The docs at docs.racket-lang.org/pollen are the project's documentation (the README links the same docs on pkg-build.racket-lang.org over http). The installation page says Pollen runs on Mac OS, Linux or Windows on top of Racket, and that its project web server is a development and previewing tool, not needed to deploy.  The GitLab project reports 5 stars; no figure is recorded.

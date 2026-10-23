@@ -1,0 +1,3 @@
+Middleman is a static site generator, built on Ruby and installed with the RubyGems package manager, through the gem install command. Templates can be written in ERb or Haml. The build command compiles the project into a stand-alone site that can be hosted or handed to a client. During development, a preview server started from the project directory shows the site in a browser.
+
+The project's documentation is on its own website, which describes the directory layout and how to customize a site. The project is maintained by a core team with help from contributors, and its gem is published under the MIT license.

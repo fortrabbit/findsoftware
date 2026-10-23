@@ -1,0 +1,123 @@
+id: minerl
+name: minerl
+status: accepted
+checkedAt: 2026-10-23
+description: "Perl blog-aware static site generator with tags, archives and template inheritance."
+facts:
+  - field: repository
+    value: https://github.com/neevek/minerl
+    url: https://api.github.com/repos/neevek/minerl
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/neevek/minerl/blob/master/README.md
+    url: https://github.com/neevek/minerl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Installation"
+  - field: maintainer
+    value: neevek
+    url: https://github.com/neevek/minerl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright 2013 neevek"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/neevek
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Perl
+    url: https://api.github.com/repos/neevek/minerl
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg, blog]
+    url: https://github.com/neevek/minerl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "blog-aware static site generator"
+  - field: runtime
+    value: [perl]
+    url: https://github.com/neevek/minerl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "written in Perl"
+  - field: installMethod
+    value: "git clone, then make && make install"
+    url: https://github.com/neevek/minerl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "git clone https://github.com/neevek/minerl.git"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/neevek/minerl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "blog-aware static site generator"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/neevek/minerl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "navigate your browser to"
+  - field: buildCommand
+    value: minerl build
+    url: https://github.com/neevek/minerl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "minerl build -v"
+  - field: templating
+    value: html-template
+    url: https://github.com/neevek/minerl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "minerl uses `HTML::Template` to expand variables in template files"
+  - field: contentStore
+    value: flat-file
+    url: https://github.com/neevek/minerl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Page files are put in the `_pages` directory"
+  - field: license
+    value: Artistic-2.0
+    url: https://github.com/neevek/minerl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "under the terms of the the Artistic License (2.0)"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/neevek/minerl/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This program is free software"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/neevek/minerl/tags
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2013-07-30
+    url: https://api.github.com/repos/neevek/minerl/commits/release_v0.02
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2013"
+    url: https://api.github.com/repos/neevek/minerl/commits/release_v0.01
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/neevek/minerl/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 20
+    url: https://api.github.com/repos/neevek/minerl
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, runtimeMin, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, outputDir, npmName, npmWeeklyDownloads, pypiName, pypiDownloads, packagistName, rubygemsName, selfHostOption]
+unreadable: []
+notes: >
+  No homepage: the GitHub homepage field is empty and the author's site neevek.net is not the project's. The repository has no GitHub release; its tags release_v0.01 and release_v0.02 are read as the release history, with the dates of the tagged commits. GitHub reports no license for the repository, and the repository has no LICENSE file; the Artistic License 2.0 is recorded from the README, which quotes it. The README gives the copyright holder as neevek, the name the project states. The README lists the Perl modules the program depends on and the install command for them; those are not recorded as facts. The PyPI package named minerl is a different project (MineRL) and is not recorded.
+  The README describes tag pages, archives by month and template inheritance through a layout header. Pages are files in a _pages directory, templates in _templates and resource files in _raw, all set in minerl.cfg. The README lists the commands generate, createpost, build and serve. It names Markdown, Textile, Perl script and plain text or HTML as page formats.

@@ -1,0 +1,119 @@
+id: ex-doc
+name: ExDoc
+status: accepted
+checkedAt: 2026-10-23
+description: Documentation generator that builds HTML, Markdown and EPUB documentation from the API docs of Erlang and Elixir projects.
+facts:
+  - field: repository
+    value: https://github.com/elixir-lang/ex_doc
+    url: https://api.github.com/repos/elixir-lang/ex_doc
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://hexdocs.pm/ex_doc/
+    url: https://github.com/elixir-lang/ex_doc/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "ExDoc is a tool to generate documentation for Erlang and Elixir projects"
+  - field: maintainer
+    value: "The Elixir Team"
+    url: https://raw.githubusercontent.com/elixir-lang/ex_doc/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright 2021 The Elixir Team"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/elixir-lang
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Elixir
+    url: https://api.github.com/repos/elixir-lang/ex_doc
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [docs-generator, api-docs]
+    url: https://github.com/elixir-lang/ex_doc/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "ExDoc is a tool to generate documentation for Erlang and Elixir projects"
+  - field: runtime
+    value: [elixir]
+    url: https://github.com/elixir-lang/ex_doc/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "ExDoc requires Elixir v1.15 or later"
+  - field: runtimeMin
+    value: "1.15"
+    url: https://github.com/elixir-lang/ex_doc/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "ExDoc requires Elixir v1.15 or later"
+  - field: installMethod
+    value: Mix dependency, or escript installed with mix escript.install
+    url: https://github.com/elixir-lang/ex_doc/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "mix escript.install hex ex_doc"
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/elixir-lang/ex_doc/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/elixir-lang/ex_doc/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "ExDoc source code is released under the Apache 2 License."
+  - field: license
+    value: Apache-2.0
+    url: https://hex.pm/api/packages/ex_doc
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/elixir-lang/ex_doc/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: hexName
+    value: ex_doc
+    url: https://hex.pm/api/packages/ex_doc
+    checkedAt: 2026-10-23
+    via: api
+  - field: hexDownloads
+    value: 100589987
+    url: https://hex.pm/api/packages/ex_doc
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2014"
+    url: https://hex.pm/api/packages/ex_doc
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/elixir-lang/ex_doc/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-03
+    url: https://api.github.com/repos/elixir-lang/ex_doc/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 1621
+    url: https://api.github.com/repos/elixir-lang/ex_doc
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 220
+    url: https://api.github.com/repos/elixir-lang/ex_doc/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, runsAs, hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, paidEdition, pricingPage, usageShare, reportedInstalls, npmName, packagistName, pypiName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, outputDir]
+unreadable: []
+notes: >
+  The GitHub homepage field points to https://elixir-lang.org/, the site of the Elixir language, not to a site of ExDoc, so no homepage is recorded; the documentation is hosted on HexDocs at hexdocs.pm/ex_doc. The runtimeMin value comes from the README on the main branch, because the project has no stable release page that states it. The hexDownloads figure is the all-time total (downloads.all) from the Hex API for the ex_doc package. The GitHub license field reads NOASSERTION, so the license is taken from the LICENSE file and the Hex package metadata. firstRelease is the year of the first Hex release (0.5.1, 2014-08-02). The README says the generated contents are under different licenses, based on the projects used to render HTML (CSS, JS and other assets), and that documentation generated by ExDoc must include a visible link to the ExDoc repository on each rendered page. The README states Erlang support through Rebar3 from Erlang/OTP 24; the Elixir requirement is the one recorded as runtime. The README says the documentation is generated with mix docs. The README describes the Mix, Rebar3 and command-line uses and does not state where the tool runs, so runsAs is not recorded. The README states that the HTML output works offline and that it can also produce Markdown and EPUB, which the description names.

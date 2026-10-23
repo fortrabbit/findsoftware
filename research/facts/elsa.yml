@@ -1,0 +1,126 @@
+id: elsa
+name: Elsa
+status: accepted
+checkedAt: 2026-10-23
+description: Helper module that freezes a Flask app built with Frozen-Flask into static HTML and deploys it to GitHub Pages.
+facts:
+  - field: repository
+    value: https://github.com/pyvec/elsa
+    url: https://api.github.com/repos/pyvec/elsa
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/pyvec/elsa/blob/master/QUICKSTART.rst
+    url: https://github.com/pyvec/elsa/blob/master/QUICKSTART.rst
+    checkedAt: 2026-10-23
+    via: page
+    quote: "To test your new website, you'll need to install elsa"
+  - field: maintainer
+    value: Miro Hrončok
+    url: https://github.com/pyvec/elsa/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2016 Miro Hrončok"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/pyvec/elsa
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/pyvec/elsa
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://github.com/pyvec/elsa/blob/master/README.rst
+    checkedAt: 2026-10-23
+    via: page
+    quote: "freezes the site, i.e. makes a HTML snapshot"
+  - field: runtime
+    value: [python]
+    url: https://github.com/pyvec/elsa/blob/master/README.rst
+    checkedAt: 2026-10-23
+    via: page
+    quote: "It requires Python 3"
+  - field: runtimeMin
+    value: "3"
+    url: https://github.com/pyvec/elsa/blob/master/README.rst
+    checkedAt: 2026-10-23
+    via: page
+    quote: "It requires Python 3"
+  - field: installMethod
+    value: pip
+    url: https://github.com/pyvec/elsa/blob/master/QUICKSTART.rst
+    checkedAt: 2026-10-23
+    via: page
+    quote: "python -m pip install elsa"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/pyvec/elsa/blob/master/QUICKSTART.rst
+    checkedAt: 2026-10-23
+    via: page
+    quote: "served from static HTML pages"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/pyvec/elsa/blob/master/README.rst
+    checkedAt: 2026-10-23
+    via: page
+    quote: "deploys the frozen site to GitHub pages"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/pyvec/elsa/blob/master/QUICKSTART.rst
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Now run your website on your own computer like this"
+  - field: license
+    value: MIT
+    url: https://github.com/pyvec/elsa/blob/master/README.rst
+    checkedAt: 2026-10-23
+    via: page
+    quote: "distributed under the terms of the MIT license"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/pyvec/elsa/blob/master/README.rst
+    checkedAt: 2026-10-23
+    via: page
+    quote: "distributed under the terms of the MIT license"
+  - field: firstRelease
+    value: "2017"
+    url: https://pypi.org/pypi/elsa/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://pypi.org/pypi/elsa/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2020-08-31
+    url: https://pypi.org/pypi/elsa/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiDownloads
+    value: 675 (last month)
+    url: https://pypistats.org/api/packages/elsa/recent
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 30
+    url: https://api.github.com/repos/pyvec/elsa
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 5
+    url: https://api.github.com/repos/pyvec/elsa/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiName
+    value: elsa
+    url: https://pypi.org/pypi/elsa/json
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, hqCountry, parent, successorOf, basedOn, forkOf, alternativeTo, maintainerType, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, outputDir, buildCommand, npmName, packagistName]
+unreadable: []
+notes: >
+  The project has no site of its own; the repository is the only project page, so homepage is not recorded. There are no GitHub releases; the tags run to v0.1.6 and the PyPI release 0.1.6 (2020-08-31) is the registry's stable version, which gives currentMajor 0 and latestReleaseDate. The earliest PyPI upload is a development release 0.1.dev1 (2016-08-18); firstRelease uses the first stable release 0.1 (2017-02-22). The LICENSE lists three copyright holders (Miro Hrončok, Honza Javorek, Petr Viktorin); the first is recorded as maintainer. The GitHub license field reads NOASSERTION while the README states MIT. basedOn Frozen-Flask is not recorded: the README says Elsa helps build Frozen-Flask based websites and treats a Frozen-Flask warning as an error, but does not state that Elsa is built on it. The README says the tool is based on scripts from the PyLadies.cz repository, which is a website and not recorded as a parent. The quickstart deploys through Travis CI to GitHub pages; the README says the Travis CI deployment force-pushes the gh-pages branch in a single commit, and that a URL without a trailing slash makes GitHub Pages serve the wrong content type, so Elsa treats that mismatch as an error.

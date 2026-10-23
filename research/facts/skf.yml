@@ -1,0 +1,97 @@
+id: skf
+name: SKF
+status: stub
+checkedAt: 2026-10-23
+description: Plugin-based static website generator, inspired by the Suckless Web Framework.
+facts:
+  - field: status
+    value: stub
+    url: http://skf.jeannedhack.org/
+    checkedAt: 2026-10-23
+    via: page
+  - field: repository
+    value: https://github.com/moebiuseye/skf
+    url: https://api.github.com/repos/moebiuseye/skf
+    checkedAt: 2026-10-23
+    via: api
+  - field: maintainer
+    value: Samir Chaouki
+    url: https://raw.githubusercontent.com/moebiuseye/skf/master/skf
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright 2013 Samir Chaouki"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/moebiuseye
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Shell
+    url: https://api.github.com/repos/moebiuseye/skf
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://api.github.com/repos/moebiuseye/skf
+    checkedAt: 2026-10-23
+    via: api
+  - field: installMethod
+    value: make install from source
+    url: https://github.com/moebiuseye/skf/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "sudo make install"
+  - field: license
+    value: GPL-3.0
+    url: https://api.github.com/repos/moebiuseye/skf
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/moebiuseye/skf/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "GNU GENERAL PUBLIC LICENSE"
+  - field: lastCommitDate
+    value: 2017-01-29
+    url: https://api.github.com/repos/moebiuseye/skf/commits/e463c9cd
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 28
+    url: https://api.github.com/repos/moebiuseye/skf
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/moebiuseye/skf/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [bash]
+    url: https://raw.githubusercontent.com/moebiuseye/skf/master/skf
+    checkedAt: 2026-10-23
+    via: page
+    quote: "#!/usr/bin/env bash"
+  - field: installMethod
+    value: Arch Linux package skf-framework
+    url: https://github.com/moebiuseye/skf/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "yaourt skf-framework"
+  - field: buildCommand
+    value: skf -g SRC_DIR DST_DIR
+    url: https://raw.githubusercontent.com/moebiuseye/skf/master/skf
+    checkedAt: 2026-10-23
+    via: page
+    quote: "(--generate|-g) SRC_DIR DST_DIR"
+  - field: license
+    value: GPL-2.0-or-later
+    url: https://raw.githubusercontent.com/moebiuseye/skf/master/skf
+    checkedAt: 2026-10-23
+    via: page
+    quote: "either version 2 of the License"
+notFound: [homepage, docs, firstRelease, currentMajor, latestReleaseDate, latestPrereleaseDate, runtimeMin, runsAs, renderingModes, basedOn, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, hqCountry, maintainerType, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, packagistName, endoflifeId]
+unreadable: [http://skf.jeannedhack.org/]
+notes: >
+  The homepage http://skf.jeannedhack.org/ does not resolve: the host has no DNS record (NXDOMAIN) and neither http nor https answered on 2026-10-23. No page of the project's site was read, so the status fact cites the address without a quote. The status is stub without a homepage, as in bowman.yml. The README still gives install steps (make install from the source tree, and an Arch Linux AUR package named skf-framework), so criterion 3 holds. The repository has no releases or tags; lastCommitDate is the committer date of its newest commit on master. The README does not describe what the software is, so the description is the repository description. The skf script starts with a bash shebang, which is the runtime fact, and carries the copyright line used as maintainer. Its header grants GPL version 2 or later while the LICENSE file and GitHub give GPL version 3, so both are recorded as license statements.

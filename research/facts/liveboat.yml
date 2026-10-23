@@ -1,0 +1,130 @@
+id: liveboat
+name: Liveboat
+status: accepted
+checkedAt: 2026-10-23
+description: Static page generator that turns Newsboat RSS and Atom feed subscriptions into a static website, written in Rust.
+facts:
+  - field: repository
+    value: https://github.com/exaroth/liveboat
+    url: https://api.github.com/repos/exaroth/liveboat
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/exaroth/liveboat/blob/develop/README.md
+    url: https://github.com/exaroth/liveboat/blob/develop/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Liveboat is a static page generator which turns RSS reader feed data into beautiful static websites."
+  - field: maintainer
+    value: Konrad Wasowicz
+    url: https://raw.githubusercontent.com/exaroth/liveboat/develop/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright 2024 Konrad Wasowicz"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/exaroth/liveboat
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/exaroth/liveboat
+    checkedAt: 2026-10-23
+    via: api
+  - field: installMethod
+    value: cargo install liveboat, or a prebuilt binary, snap, AUR or Homebrew
+    url: https://github.com/exaroth/liveboat/blob/develop/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "cargo install liveboat"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/exaroth/liveboat
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/exaroth/liveboat/blob/develop/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Liveboat is provided under MIT License"
+  - field: firstRelease
+    value: "2024"
+    url: https://api.github.com/repos/exaroth/liveboat/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/exaroth/liveboat/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-12
+    url: https://api.github.com/repos/exaroth/liveboat/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 115
+    url: https://api.github.com/repos/exaroth/liveboat
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/exaroth/liveboat/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: crateName
+    value: liveboat
+    url: https://crates.io/api/v1/crates/liveboat
+    checkedAt: 2026-10-23
+    via: api
+  - field: crateDownloads
+    value: 10558
+    url: https://crates.io/api/v1/crates/liveboat
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: ["ssg"]
+    url: https://github.com/exaroth/liveboat/blob/develop/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Liveboat is a static page generator which turns RSS reader feed data into beautiful static websites."
+  - field: runtime
+    value: ["binary"]
+    url: https://github.com/exaroth/liveboat/blob/develop/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Pre-built binaries are available at the Releases page."
+  - field: runsAs
+    value: static
+    url: https://github.com/exaroth/liveboat/blob/develop/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "turns RSS reader feed data into beautiful static websites"
+  - field: runsAs
+    value: local
+    url: https://github.com/exaroth/liveboat/blob/develop/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The most straightforward way to generate Liveboat feed page is via Github Actions"
+  - field: runsAs
+    value: scheduled
+    url: https://github.com/exaroth/liveboat/blob/develop/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "set up a cron job to run it"
+  - field: renderingModes
+    value: ["static"]
+    url: https://github.com/exaroth/liveboat/blob/develop/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "turns RSS reader feed data into beautiful static websites"
+  - field: templating
+    value: ["handlebars"]
+    url: https://github.com/exaroth/liveboat/blob/develop/templates/README.md
+    checkedAt: 2026-10-23
+    via: page
+notFound: [homepage, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, headlessApi, contentStore, databases, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, freeTier, usageShare, reportedInstalls, discord, mastodon, bluesky, x, subreddit, forum, newsletter, wikidata, docker, endoflifeId, supportedVersions, outputDir, apiLimits, regions, selfHostOption, pluginDirectory, pluginCount, runtimeMin, maintainerType]
+unreadable: []
+notes: >
+  No homepage: the GitHub repository has an empty homepage field, and the crates.io homepage points at the repository. The README links a demo at konrad.website/liveboat-github-runner, which is the maintainer's demo output and not the project's own site, so it is not recorded as homepage. The README gives no minimum Rust version in prose; the badge reads "rustc 1.84.0" and the crate's Cargo.toml sets edition 2021 with no rust-version, so runtimeMin is not recorded. The crates.io download figure is the crate's total downloads, not a monthly count; the crate's last 90 days figure is not in the same field and is not recorded. The README lists the JSON API and template system as features; the JSON endpoints are file-based GET paths on the generated site, so no headlessApi is recorded. The README describes templates that the build fills to write the pages, and the JSON API files sit beside the pages in the build directory. The README mentions "Running on every Newsboat update" as a trigger, which is covered by runsAs local and scheduled. The docker directory README states the image runs nginx hosting the site on port 8080 with a feed rebuild every 15 minutes; that is a self-hosting option and not recorded as runsAs. The oldest GitHub release is v0.9.0 (2024-12-16), also 2024. The categories value rss from the CSV has no dictionary entry and is left out. The templating value comes from the template reference (templates/README.md), where the line "index.hbs <---- Handlebars HTML file" cannot be quoted by the checker because of its angle brackets.

@@ -1,0 +1,138 @@
+id: complexity
+name: complexity
+status: accepted
+checkedAt: 2026-10-23
+description: Python static site generator for people who work in HTML, building sites from Jinja2 templates and JSON data.
+facts:
+  - field: homepage
+    value: https://complexity.readthedocs.io/en/latest/
+    url: https://complexity.readthedocs.io/en/latest/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A refreshingly simple static site generator, for those who like to work in HTML"
+  - field: repository
+    value: https://github.com/audreyfeldroy/complexity
+    url: https://api.github.com/repos/audreyfeldroy/complexity
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://complexity.readthedocs.io/en/latest/installation.html
+    url: https://complexity.readthedocs.io/en/latest/installation.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Best Method: Pip"
+  - field: maintainer
+    value: Audrey Roy
+    url: https://raw.githubusercontent.com/audreyfeldroy/complexity/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2013, Audrey Roy"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/audreyfeldroy
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/audreyfeldroy/complexity
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/audreyfeldroy/complexity/blob/master/README.rst
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Works on Python 2.6, 2.7, and 3.3, and on PyPy."
+  - field: categories
+    value: [ssg]
+    url: https://github.com/audreyfeldroy/complexity/blob/master/README.rst
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A refreshingly simple static site generator, for those who like to work in HTML."
+  - field: installMethod
+    value: pip
+    url: https://github.com/audreyfeldroy/complexity/blob/master/README.rst
+    checkedAt: 2026-10-23
+    via: page
+    quote: "pip install complexity"
+  - field: buildCommand
+    value: complexity project/ www/
+    url: https://github.com/audreyfeldroy/complexity/blob/master/README.rst
+    checkedAt: 2026-10-23
+    via: page
+    quote: "complexity project/ www/"
+  - field: outputDir
+    value: www
+    url: https://complexity.readthedocs.io/en/latest/tutorial.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "a www/ directory will be auto-generated"
+  - field: templating
+    value: [jinja2]
+    url: https://github.com/audreyfeldroy/complexity/blob/master/README.rst
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Brought to you by Jinja2"
+  - field: renderingModes
+    value: [static]
+    url: https://complexity.readthedocs.io/en/latest/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "create and publish static HTML websites with Complexity"
+  - field: runsAs
+    value: [static]
+    url: https://complexity.readthedocs.io/en/latest/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "create and publish static HTML websites"
+  - field: runsAs
+    value: [local]
+    url: https://complexity.readthedocs.io/en/latest/tutorial.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A lightweight server starts up locally, serving your site"
+  - field: license
+    value: BSD-3-Clause
+    url: https://raw.githubusercontent.com/audreyfeldroy/complexity/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Neither the name"
+  - field: firstRelease
+    value: "2013"
+    url: https://api.github.com/repos/audreyfeldroy/complexity/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/audreyfeldroy/complexity/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2013-12-03
+    url: https://api.github.com/repos/audreyfeldroy/complexity/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 118
+    url: https://api.github.com/repos/audreyfeldroy/complexity
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 7
+    url: https://api.github.com/repos/audreyfeldroy/complexity/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiName
+    value: complexity
+    url: https://pypi.org/pypi/complexity/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiDownloads
+    value: "210 last month"
+    url: https://pypistats.org/api/packages/complexity/recent
+    checkedAt: 2026-10-23
+    via: api
+notFound: [runtimeMin, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId]
+unreadable: []
+notes: >
+  The README links the documentation at http://complexity.rtfd.org, which redirects to the readthedocs.io site over https; the homepage is recorded as that https docs site, since the GitHub homepage field is empty. The repository moved from audreyr/complexity to audreyfeldroy/complexity; the recorded repository is the current one. The GitHub API reports license NOASSERTION, so the license is taken from the LICENSE text, which has the three BSD clauses (the non-endorsement clause is the quoted line). The README says "Works on Python 2.6, 2.7, and 3.3, and on PyPy", a list of versions it works on and no stated minimum, so runtimeMin is not recorded; PyPI's JSON carries no requires_python. The README says data from .json files becomes template context data (coined field contentFormats, not recorded), and the docs' history lists 0.9.1 as 2013-12-02. The tutorial deploys the www folder to Amazon S3 with the separate tool alotofeffort. The default branch's newest commit is dated 2015-08-28 and pushed_at is 2019-02-23; the release is the last tag. The PyPI JSON shows -1 downloads, so the figure comes from pypistats.org.

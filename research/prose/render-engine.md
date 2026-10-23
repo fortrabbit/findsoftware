@@ -1,0 +1,3 @@
+Render Engine is a static site generator written in Python, built from pages, collections and a site object. The [documentation](https://render-engine.readthedocs.io/en/latest/) states that it uses the Jinja2 templating engine, and that content is stored in the file system by default, one file per piece of content. The [site object](https://render-engine.readthedocs.io/en/latest/site/) takes an output path where rendered content is written.
+
+It is installed from PyPI with pip. The project is open source, the community is invited to contribute, and it has a Discord server linked from its README.

@@ -1,0 +1,123 @@
+id: stasis
+name: stasis
+status: accepted
+checkedAt: 2026-10-23
+description: Clojure library of functions for building static websites.
+facts:
+  - field: repository
+    value: https://github.com/magnars/stasis
+    url: https://api.github.com/repos/magnars/stasis
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/magnars/stasis/blob/master/README.md
+    url: https://github.com/magnars/stasis/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A Clojure library of tools for developing static web sites."
+  - field: maintainer
+    value: Magnar Sveen
+    url: https://github.com/magnars/stasis/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright © 2014-2023 Magnar Sveen"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/magnars
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Clojure
+    url: https://api.github.com/repos/magnars/stasis
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [library]
+    url: https://github.com/magnars/stasis/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A Clojure library of tools for developing static web sites."
+  - field: installMethod
+    value: add dependency to project.clj
+    url: https://github.com/magnars/stasis/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Add `[stasis \"2023.11.21\"]` to `:dependencies` in your `project.clj`."
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/magnars/stasis/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "useful when creating static web sites"
+  - field: license
+    value: EPL-1.0+
+    url: https://github.com/magnars/stasis/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version."
+  - field: license
+    value: EPL
+    url: https://github.com/magnars/stasis/blob/master/project.clj
+    checkedAt: 2026-10-23
+    via: page
+    quote: ':license {:name "Eclipse Public License"'
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/magnars/stasis/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version."
+  - field: firstRelease
+    value: "2014"
+    url: https://api.github.com/repos/magnars/stasis/commits/53dbd5d0
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2014"
+    url: https://clojars.org/stasis/versions/0.1.0
+    checkedAt: 2026-10-23
+    via: page
+    quote: "magnars on Jan 9, 2014"
+  - field: clojarsName
+    value: stasis
+    url: https://clojars.org/api/artifacts/stasis
+    checkedAt: 2026-10-23
+    via: api
+    quote: '"jar_name":"stasis"'
+  - field: clojarsDownloads
+    value: 603326 (total)
+    url: https://clojars.org/api/artifacts/stasis
+    checkedAt: 2026-10-23
+    via: api
+    quote: '"downloads":603326'
+  - field: latestReleaseDate
+    value: 2023-11-21
+    url: https://api.github.com/repos/magnars/stasis/commits/45d38e2d
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 361
+    url: https://api.github.com/repos/magnars/stasis
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 13
+    url: https://api.github.com/repos/magnars/stasis/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: runsAs
+    value: [static]
+    url: https://github.com/magnars/stasis/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "exporting them as static pages to deploy on some"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/magnars/stasis/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "serve these live on a local server while"
+notFound: [homepage, runtime, runtimeMin, currentMajor, basedOn, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, hqCountry, maintainerType, paidEdition, pricingPage, latestPrereleaseDate, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, packagistName, npmWeeklyDownloads]
+unreadable: []
+notes: >
+  Stasis is a library, not a generator; the README says "There are no batteries included." It is listed under criterion 1 as a library a web creator adds to a site. It has no GitHub release objects. Its tags run from 0.3.0 (2014-01-13) to 2.5.1 (2021-04-24) and then to the calendar version 2023.11.21, which is the latest tag; a calendar version has no major, so currentMajor is not recorded. latestReleaseDate is the commit date of the latest tag; firstRelease is also confirmed by the push date of version 0.1.0 on Clojars. The README gives the license as "either version 1.0 or (at your option) any later version", so the license is recorded as EPL-1.0+. The project publishes to Clojars, which the import does not read; clojarsName and clojarsDownloads are fields coined here, the download figure is the total the Clojars API reports. The project.clj names the Eclipse Public License without a version, while the README says version 1.0 or any later version, so both statements are recorded as license entries. The README starts its examples with Leiningen and Ring, but no page states the runtime, so none is recorded. Its homepage field is empty and no separate site is named.

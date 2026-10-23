@@ -1,0 +1,129 @@
+id: soupault
+name: soupault
+status: accepted
+checkedAt: 2026-10-23
+description: HTML manipulation tool that works as a static site generator or as a post-processor for existing websites.
+facts:
+  - field: homepage
+    value: https://soupault.net
+    url: https://soupault.net
+    checkedAt: 2026-10-23
+    via: page
+    quote: "is a static website generator/framework that works with HTML element trees"
+  - field: repository
+    value: https://github.com/PataphysicalSociety/soupault
+    url: https://api.github.com/repos/PataphysicalSociety/soupault
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://soupault.net/reference-manual/
+    url: https://soupault.net/reference-manual/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Reference manual"
+  - field: categories
+    value: [ssg, html-postprocessor]
+    url: https://github.com/PataphysicalSociety/soupault/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "or an HTML (post-)processor for existing websites"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/PataphysicalSociety/soupault/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "It can be a static site generator"
+  - field: runsAs
+    value: [static]
+    url: https://soupault.net/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "but the result is a static page"
+  - field: language
+    value: OCaml
+    url: https://api.github.com/repos/PataphysicalSociety/soupault
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://github.com/PataphysicalSociety/soupault/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "statically-linked binary with no dependencies"
+  - field: templating
+    value: [jingoo]
+    url: https://soupault.net/tips-and-tricks/faq/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "it does have a built-in template processor ( jingoo )"
+  - field: installMethod
+    value: [binary download, opam]
+    url: https://github.com/PataphysicalSociety/soupault/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Prebuilt binaries are available for Linux"
+  - field: buildCommand
+    value: soupault
+    url: https://soupault.net/tips-and-tricks/quickstart/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Simply run soupault without any options in your project directory"
+  - field: outputDir
+    value: build
+    url: https://soupault.net/tips-and-tricks/quickstart/
+    checkedAt: 2026-10-23
+    via: page
+    quote: 'Build directory "build" does not exist, creating'
+  - field: license
+    value: MIT
+    url: https://soupault.net/install/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Soupault is free software published under the MIT license"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/PataphysicalSociety/soupault/blob/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License"
+  - field: maintainer
+    value: Daniil Baturin et al.
+    url: https://github.com/PataphysicalSociety/soupault/blob/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2026 Daniil Baturin et al."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/PataphysicalSociety
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2019"
+    url: https://api.github.com/repos/PataphysicalSociety/soupault/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 5
+    url: https://api.github.com/repos/PataphysicalSociety/soupault/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-04-21
+    url: https://api.github.com/repos/PataphysicalSociety/soupault/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 431
+    url: https://api.github.com/repos/PataphysicalSociety/soupault
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 11
+    url: https://api.github.com/repos/PataphysicalSociety/soupault/contributors
+    checkedAt: 2026-10-23
+    via: api
+
+notFound: [maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, runtimeMin, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, npmName, packagistName, pypiName]
+unreadable: []
+notes: >
+  The homepage soupault.net answers over https and shows the software, so it is recorded. The README and support page name a mailing list (lists.sr.ht/~dmbaturin/soupault) and an IRC channel for support; neither is a forum field, so both are left out. The README says the software is named after Philippe Soupault and uses the lambdasoup library; lambdasoup is a dependency and not recorded as basedOn. The release data come from the GitHub releases API: the oldest entry is 1.0-beta1 from 2019-07-15 and the highest stable release is 5.3.0 from 2026-04-21, so no latestPrereleaseDate is recorded. The copyright holder is written as the LICENSE states it, Daniil Baturin et al.; the homepage names Daniil Baturin as the person behind it and no company. The GitHub owner PataphysicalSociety is an organization. The opam package name is soupault; it is not recorded because no registry figure or fact field covers opam. Per the README and the FAQ, soupault extracts metadata from HTML with CSS selectors instead of front matter, converts other page formats through external preprocessors, and loads Lua plugins. The FAQ says the built-in template processor is jingoo and is used for index rendering, while pages are assembled by inserting content into an element chosen by a CSS selector.

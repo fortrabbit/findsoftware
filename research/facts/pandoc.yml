@@ -1,0 +1,164 @@
+id: pandoc
+name: Pandoc
+status: accepted
+checkedAt: 2026-10-23
+description: Haskell library and command-line tool that converts documents between markup formats.
+facts:
+  - field: homepage
+    value: https://pandoc.org
+    url: https://pandoc.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: "a universal document converter"
+  - field: repository
+    value: https://github.com/jgm/pandoc
+    url: https://api.github.com/repos/jgm/pandoc
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://pandoc.org/getting-started.html
+    url: https://pandoc.org/getting-started.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Getting started with pandoc"
+  - field: maintainer
+    value: John MacFarlane
+    url: https://raw.githubusercontent.com/jgm/pandoc/main/COPYRIGHT
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (C) 2006-2024 John MacFarlane"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/jgm
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Haskell
+    url: https://github.com/jgm/pandoc/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Pandoc is a Haskell library for converting from"
+  - field: categories
+    value: [document-converter]
+    url: https://pandoc.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: "a universal document converter"
+  - field: installMethod
+    value: official installer and binary downloads
+    url: https://pandoc.org/installing.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The simplest way to get the latest pandoc release is to use the installer."
+  - field: installMethod
+    value: Homebrew
+    url: https://pandoc.org/installing.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "brew install pandoc"
+  - field: installMethod
+    value: Chocolatey
+    url: https://pandoc.org/installing.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "choco install pandoc"
+  - field: installMethod
+    value: MacPorts
+    url: https://pandoc.org/installing.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "port install pandoc"
+  - field: installMethod
+    value: Conda
+    url: https://pandoc.org/installing.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "conda install -c conda-forge pandoc"
+  - field: installMethod
+    value: winget
+    url: https://pandoc.org/installing.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "winget install --source winget --exact --id JohnMacFarlane.Pandoc"
+  - field: installMethod
+    value: Docker image
+    url: https://pandoc.org/installing.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The official Docker images for pandoc"
+  - field: runsAs
+    value: [local]
+    url: https://pandoc.org/getting-started.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Pandoc is a command-line tool."
+  - field: runsAs
+    value: [always-on, per-request]
+    url: https://pandoc.org/pandoc-server.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "It can be used either as a running server or as a CGI program."
+  - field: license
+    value: GPL-2.0-or-later
+    url: https://raw.githubusercontent.com/jgm/pandoc/main/COPYRIGHT
+    checkedAt: 2026-10-23
+    via: page
+    quote: "this code is released under the [GPL], version 2 or later"
+  - field: licenseModel
+    value: open-source
+    url: https://pandoc.org
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Pandoc is free software, released under the GPL"
+  - field: hackageName
+    value: pandoc
+    url: https://hackage.haskell.org/package/pandoc
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/jgm/pandoc/releases/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-08
+    url: https://api.github.com/repos/jgm/pandoc/releases/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: 2007
+    url: https://hackage.haskell.org/package/pandoc-0.4
+    checkedAt: 2026-10-23
+    via: api
+  - field: forum
+    value: https://github.com/jgm/pandoc/discussions
+    url: https://pandoc.org/help.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "search the discussion forum"
+  - field: forum
+    value: https://groups.google.com/forum/#!forum/pandoc-discuss
+    url: https://github.com/jgm/pandoc/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "pandoc-discuss on google groups"
+  - field: githubStargazers
+    value: 46664
+    url: https://api.github.com/repos/jgm/pandoc
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 416
+    url: https://api.github.com/repos/jgm/pandoc/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+notFound: [pricingPage, buildCommand, outputDir, hqCountry, parent, wikidata, discord, mastodon, bluesky, x, subreddit, newsletter, pluginDirectory, forkOf, successorOf, basedOn, runtime, runtimeMin, renderingModes, templating]
+unreadable: []
+notes: >
+  No page cited here names a site generator that uses pandoc, so no such link is recorded.
+  The pandoc-server page describes a web server and a CGI mode; the installation page describes this as a build option that makes the executable serve HTTP when it is renamed pandoc-server, so runsAs lists those values for a build that includes it, plus local for the command-line tool.
+  The installation page states that the statically linked binaries it provides cannot load Lua filters that use C modules; no runtime is recorded because the binaries need none.
+  The GitHub license detection reads GPL-2.0, while the COPYRIGHT file states version 2 or later; the COPYRIGHT statement is the one recorded. firstRelease is the year of the first Hackage upload (0.4, 2007-08-16); the oldest GitHub release is from 2013. The installation page also lists Linux distribution repositories, a statically linked binary and cabal or stack builds.
+  The highest stable GitHub release is 3.12.1; the Hackage package name is the same as the repository's package name.
+  The maintainer is the copyright holder named in the COPYRIGHT file ("Copyright (C) 2006-2024 John MacFarlane").
+  The homepage is served over https.

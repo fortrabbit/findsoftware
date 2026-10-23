@@ -1,0 +1,142 @@
+id: jamstackpy
+name: Jamstackpy
+status: accepted
+checkedAt: 2026-10-23
+description: Python static site generator that builds websites from Jinja templates and works with the Flask library.
+facts:
+  - field: homepage
+    value: https://jamstackpy.github.io/
+    url: https://jamstackpy.github.io/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generate static websites using all the power of Flask"
+  - field: repository
+    value: https://github.com/jamstackpy/jamstack
+    url: https://api.github.com/repos/jamstackpy/jamstack
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/jamstackpy/jamstack/blob/stable/README.md
+    url: https://github.com/jamstackpy/jamstack/blob/stable/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "## Create basic project"
+  - field: categories
+    value: [ssg]
+    url: https://github.com/jamstackpy/jamstack/blob/stable/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "allows you to create static websites"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/jamstackpy/jamstack
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/jamstackpy/jamstack/blob/stable/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "python static.py"
+  - field: runtimeMin
+    value: "3.6"
+    url: https://pypi.org/pypi/jamstack/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: installMethod
+    value: pip install jamstack
+    url: https://github.com/jamstackpy/jamstack/blob/stable/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "python -m pip install jamstack"
+  - field: buildCommand
+    value: python static.py
+    url: https://github.com/jamstackpy/jamstack/blob/stable/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "python static.py"
+  - field: outputDir
+    value: dist
+    url: https://github.com/jamstackpy/jamstack/blob/stable/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generated in the **dist/** folder"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/jamstackpy/jamstack/blob/stable/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "allows you to create static websites"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/jamstackpy/jamstack/blob/stable/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "allows you to create static websites"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/jamstackpy/jamstack/blob/stable/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Start project livewatch (autoreload when files change)"
+  - field: templating
+    value: [jinja]
+    url: https://github.com/jamstackpy/jamstack/blob/stable/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Jinja engine"
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/jamstackpy/jamstack/stable/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Apache License"
+  - field: maintainer
+    value: Jamstackpy
+    url: https://api.github.com/repos/jamstackpy/jamstack
+    checkedAt: 2026-10-23
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/jamstackpy
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2021"
+    url: https://pypi.org/pypi/jamstack/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/jamstackpy/jamstack/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2023-05-01
+    url: https://api.github.com/repos/jamstackpy/jamstack/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiDownloads
+    value: 237
+    url: https://pypistats.org/api/packages/jamstack/recent
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiName
+    value: jamstack
+    url: https://pypi.org/pypi/jamstack/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 4
+    url: https://api.github.com/repos/jamstackpy/jamstack
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/jamstackpy/jamstack/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, hqCountry, wikidata, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, npmName, packagistName, endoflifeId, supportedVersions, lastCommitDate, selfHostOption, regions]
+unreadable: []
+notes: >
+  The default branch is stable, and the highest stable GitHub release is v1.1.0 (2023-05-01), matching the PyPI package jamstack 1.1.0; the repository also carries the tag v0.1.0 without a release object, and firstRelease is the oldest PyPI upload, 0.0.1 in 2021, which predates the first GitHub release (v1.0.0, 2022). The README says the project works hand in hand with the Flask library and renders templates with the Jinja engine; no page states that it is built on Flask, so basedOn is not recorded and Jinja is recorded as templating. pypiDownloads is the last_month figure from pypistats. The README's TODO list says Flask is to stop being a main requirement; it is not recorded as a fact. The homepage shows a version label of 1.1.0, which is a dot release and is not recorded. The README names the html5up templates Massively and Phantom, which are not recorded as a field. The maintainer is the GitHub organization Jamstackpy, since no page names a legal entity.

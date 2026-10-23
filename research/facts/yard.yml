@@ -1,0 +1,124 @@
+id: yard
+name: YARD
+status: accepted
+checkedAt: 2026-10-23
+description: Ruby documentation generation tool that builds API documentation from source comments and serves it with a local documentation server.
+facts:
+  - field: repository
+    value: https://github.com/lsegal/yard
+    url: https://api.github.com/repos/lsegal/yard
+    checkedAt: 2026-10-23
+    via: api
+  - field: homepage
+    value: https://yardoc.org/
+    url: https://yardoc.org/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "YARD is a documentation generation tool for the Ruby programming language."
+  - field: docs
+    value: https://github.com/lsegal/yard/blob/main/README.md
+    url: https://github.com/lsegal/yard/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "$ gem install yard"
+  - field: maintainer
+    value: Loren Segal
+    url: https://raw.githubusercontent.com/lsegal/yard/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2007-2026 Loren Segal"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/lsegal
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/lsegal/yard
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [api-docs, docs-generator]
+    url: https://github.com/lsegal/yard/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "YARD is a documentation generation tool for the Ruby programming language"
+  - field: runtime
+    value: [ruby]
+    url: https://rubygems.org/api/v1/gems/yard.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: installMethod
+    value: gem install
+    url: https://github.com/lsegal/yard/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "$ gem install yard"
+  - field: runtimeMin
+    value: "1.8"
+    url: https://rubygems.org/api/v1/versions/yard.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: runsAs
+    value: [local]
+    url: https://github.com/lsegal/yard/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Local Documentation Server"
+  - field: forum
+    value: https://groups.google.com/group/yardoc
+    url: https://yardoc.org/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Mailing list:"
+  - field: license
+    value: MIT
+    url: https://github.com/lsegal/yard/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "licensed under the MIT license except for some files"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/lsegal/yard/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "licensed under the MIT license except for some files"
+  - field: firstRelease
+    value: "2009"
+    url: https://rubygems.org/api/v1/versions/yard.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/lsegal/yard/releases/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-14
+    url: https://api.github.com/repos/lsegal/yard/releases/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 2011
+    url: https://api.github.com/repos/lsegal/yard
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 176
+    url: https://api.github.com/repos/lsegal/yard/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: rubygemsName
+    value: yard
+    url: https://rubygems.org/api/v1/gems/yard.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: rubygemsDownloads
+    value: 239846687
+    url: https://rubygems.org/api/v1/gems/yard.json
+    checkedAt: 2026-10-23
+    via: api
+notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, maintainerType, renderingModes, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, buildCommand]
+unreadable: []
+notes: >
+  firstRelease comes from the first RubyGems version (0.2.0, 2009-07-25); the oldest GitHub release is later. runtimeMin comes from the ruby_version requirement the registry lists for the latest gem. The latest stable release is v0.9.45 (2026-07-14), matching the RubyGems version. The RubyGems download figure is the total for the gem, not a period. The README states the license as MIT except for some files that come from the RDoc and Ruby distributions, and those files are not separately recorded. The README says Graphviz is required only for yard graph. The homepage footer reads "Copyright 2007-2020", older than the repository LICENSE, which the record uses. The GitHub API reports owner type User; the homepage names Loren Segal as author. The README describes the yard server as a local preview for a project and for installed gems, with live reloading, and it does not describe publishing the output; runsAs is local only, since no page describes serving the output on a live site. The homepage says YARD also runs a live documentation server for the community, hosting docs for all RubyGems and GitHub projects, at RubyDoc.info; it is a hosted service beside the tool and is not recorded as a field. The README says yardoc generates documentation from lib/**/*.rb by default and writes a .yardoc cache.

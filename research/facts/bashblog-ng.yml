@@ -1,0 +1,100 @@
+id: bashblog-ng
+name: bashblog-ng
+status: accepted
+checkedAt: 2026-10-23
+description: Single Bash script that creates a blog of static HTML pages in a public web folder.
+facts:
+  - field: repository
+    value: https://github.com/DavidSatimeWallin/bashblog-ng
+    url: https://api.github.com/repos/DavidSatimeWallin/bashblog-ng
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/DavidSatimeWallin/bashblog-ng/blob/master/README.md
+    url: https://github.com/DavidSatimeWallin/bashblog-ng/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Download the code and copy bb.sh into a public folder"
+  - field: forkOf
+    value: cfenollosa/bashblog
+    url: https://github.com/DavidSatimeWallin/bashblog-ng/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This is the Next Generation version of"
+  - field: maintainer
+    value: David Satime Wallin
+    url: https://raw.githubusercontent.com/DavidSatimeWallin/bashblog-ng/master/bb.sh
+    checkedAt: 2026-10-23
+    via: page
+    quote: "(C) David Satime Wallin"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/DavidSatimeWallin
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Shell
+    url: https://api.github.com/repos/DavidSatimeWallin/bashblog-ng
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://github.com/DavidSatimeWallin/bashblog-ng/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A single Bash script to create blogs"
+  - field: runtime
+    value: [bash]
+    url: https://github.com/DavidSatimeWallin/bashblog-ng/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A single Bash script to create blogs"
+  - field: installMethod
+    value: download bb.sh and run it from a public web folder
+    url: https://github.com/DavidSatimeWallin/bashblog-ng/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Download the code and copy bb.sh into a public folder"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/DavidSatimeWallin/bashblog-ng/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "All content is static"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/DavidSatimeWallin/bashblog-ng/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "All content is static. You only need shell access to a machine with a public web folder"
+  - field: license
+    value: GPL-3.0-or-later
+    url: https://github.com/DavidSatimeWallin/bashblog-ng/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "the Free Software Foundation, either version 3 of the License, or (at your option) any later version"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/DavidSatimeWallin/bashblog-ng/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This program is free software"
+  - field: lastCommitDate
+    value: 2022-01-03
+    url: https://api.github.com/repos/DavidSatimeWallin/bashblog-ng/commits?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 32
+    url: https://api.github.com/repos/DavidSatimeWallin/bashblog-ng
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 18
+    url: https://api.github.com/repos/DavidSatimeWallin/bashblog-ng/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, firstRelease, currentMajor, latestReleaseDate, latestPrereleaseDate, maintainerType, hqCountry, parent, basedOn, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEditions, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, runtimeMin, outputDir, buildCommand, npmName, packagistName, rubygemsName, pypiName]
+unreadable: []
+notes: >
+  The candidate row points at dvwallin/bashblog-ng, which redirects to DavidSatimeWallin/bashblog-ng; the canonical repository is recorded. The GitHub API reports the repository as a fork of cfenollosa/bashblog, and the README states the same relation in its first line, so forkOf is recorded; basedOn is not, since the README states the relation as a fork only. The repository has no LICENSE file (GitHub reports no license), so the GPL-3.0-or-later statement comes from the README's License section alone and is recorded as such. The bb.sh script sets a default blog license variable ("CC by-nc-nd") for the generated pages; that is a setting for blog content, not the license of the software, and is not recorded. The README says "still maintained as of 2016"; that sentence is old and is not recorded. The repository has no release or tag, and its newest commit on master is dated 2022-01-03, which is recorded as lastCommitDate. The repository's pushed_at date (2023-06-22) is later than that commit, so the record uses the commit date, as the rule says. The maintainer is named in the script's header comment; the email address in that line is not recorded. The candidate queue placed this record in ssg; the README describes it as a blog tool, so categories records blog only.

@@ -1,0 +1,122 @@
+id: dokka
+name: Dokka
+status: accepted
+checkedAt: 2026-10-23
+description: API documentation engine for Kotlin that also documents Java sources, producing HTML, Javadoc and Markdown output.
+facts:
+  - field: homepage
+    value: https://kotl.in/dokka
+    url: https://kotl.in/dokka
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Dokka is an API documentation engine for Kotlin."
+  - field: repository
+    value: https://github.com/Kotlin/dokka
+    url: https://api.github.com/repos/Kotlin/dokka
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://kotlinlang.org/docs/dokka-introduction.html
+    url: https://raw.githubusercontent.com/Kotlin/dokka/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Comprehensive documentation for Dokka is available on"
+  - field: maintainer
+    value: JetBrains
+    url: https://raw.githubusercontent.com/Kotlin/dokka/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "JetBrains official project"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Kotlin
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Kotlin
+    url: https://raw.githubusercontent.com/Kotlin/dokka/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Dokka is an API documentation engine for Kotlin."
+  - field: categories
+    value: [api-docs]
+    url: https://raw.githubusercontent.com/Kotlin/dokka/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Dokka is an API documentation engine for Kotlin."
+  - field: installMethod
+    value: Gradle plugin
+    url: https://kotlinlang.org/docs/dokka-get-started.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Apply the Dokka Gradle plugin (DGP) in the root build script of your project"
+  - field: installMethod
+    value: Maven plugin
+    url: https://kotlinlang.org/docs/dokka-maven.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "add dokka-maven-plugin to the plugins section of your POM file"
+  - field: installMethod
+    value: command line runner (jar)
+    url: https://kotlinlang.org/docs/dokka-cli.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Dokka has a command line (CLI) runner for generating documentation"
+  - field: buildCommand
+    value: ./gradlew :dokkaGenerate
+    url: https://kotlinlang.org/docs/dokka-get-started.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "./gradlew :dokkaGenerate"
+  - field: outputDir
+    value: build/dokka/html
+    url: https://kotlinlang.org/docs/dokka-gradle.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The generated documentation is automatically placed in the build/dokka/html directory"
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/Kotlin/dokka/master/LICENSE.txt
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Apache License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/Kotlin/dokka/master/LICENSE.txt
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Apache License"
+  - field: firstRelease
+    value: "2015"
+    url: https://api.github.com/repos/Kotlin/dokka/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/Kotlin/dokka/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-03-26
+    url: https://api.github.com/repos/Kotlin/dokka/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-09-15
+    url: https://api.github.com/repos/Kotlin/dokka/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 3816
+    url: https://api.github.com/repos/Kotlin/dokka
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 148
+    url: https://api.github.com/repos/Kotlin/dokka/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, adminUi, databases, headlessApi, contentStore, livePreview, multisite, userRoles, sso, i18n, templating, runtime, runtimeMin, importsFrom, paidEditions, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, runsAs, renderingModes, npmName, npmWeeklyDownloads, packagistName, pypiName, pypiDownloads, apiLimits, regions, selfHostOption]
+unreadable: []
+notes: >
+  The homepage kotl.in/dokka redirects to the Kotlin documentation at kotlinlang.org (dokka-introduction and the get-started page), which are read as the project's documentation; the repository's homepage field is the same short link. The maintainer is recorded as the README states it ("JetBrains official project"); the company contacts page names JetBrains s.r.o. in Prague and JetBrains N.V. in Amsterdam without saying which holds Dokka, so hqCountry is not recorded. The README badge names the project as Kotlin Beta; that is a stability label, not an end signal. The kotlinlang pages for Gradle, Maven and the command line were read: the Gradle task is :dokkaGenerate (the README still lists the older dokkaHtml task) and the default Gradle output is build/dokka/html. The pages never state that Dokka needs a JVM (the command line runner is started with java -jar and the Maven plugin takes a jdkVersion for external links, which imply it), so runtime is not recorded. The introduction names a #dokka channel in the Kotlin Community Slack, which has no field. The oldest GitHub release is v0.11 (2015-03-18) and the oldest tags go back to 0.9, so firstRelease is 2015. The latest stable release is v2.2.0 (2026-03-26), and v2.3.0-Beta (2026-09-15) is newer, so it is latestPrereleaseDate. Dokka documents KDoc and Javadoc input and writes HTML, Javadoc HTML and Markdown (GFM and Jekyll) output, per the README and introduction.

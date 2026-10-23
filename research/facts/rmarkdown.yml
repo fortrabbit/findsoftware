@@ -1,0 +1,134 @@
+id: rmarkdown
+name: R Markdown
+status: accepted
+checkedAt: 2026-10-23
+description: R package that renders R Markdown documents, which combine code, its output and prose, into formats such as HTML, PDF and Word.
+facts:
+  - field: repository
+    value: https://github.com/rstudio/rmarkdown
+    url: https://api.github.com/repos/rstudio/rmarkdown
+    checkedAt: 2026-10-23
+    via: api
+  - field: homepage
+    value: https://rmarkdown.rstudio.com
+    url: https://rmarkdown.rstudio.com
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Turn your analyses into high quality documents, reports, presentations and dashboards."
+  - field: docs
+    value: https://pkgs.rstudio.com/rmarkdown/articles/rmarkdown.html
+    url: https://github.com/rstudio/rmarkdown/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Get Started"
+  - field: maintainer
+    value: Posit Software, PBC
+    url: https://raw.githubusercontent.com/rstudio/rmarkdown/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "COPYRIGHT HOLDER: Posit Software, PBC"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/rstudio
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: R
+    url: https://api.github.com/repos/rstudio/rmarkdown
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [document-converter]
+    url: https://github.com/rstudio/rmarkdown/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "R Markdown documents can be rendered to many output formats including HTML documents"
+  - field: runtime
+    value: [r]
+    url: https://cran.r-project.org/package=rmarkdown
+    checkedAt: 2026-10-23
+    via: page
+    quote: "R (&ge; 3.0)"
+  - field: runtimeMin
+    value: "3.0"
+    url: https://cran.r-project.org/package=rmarkdown
+    checkedAt: 2026-10-23
+    via: page
+    quote: "R (&ge; 3.0)"
+  - field: installMethod
+    value: install.packages
+    url: https://github.com/rstudio/rmarkdown/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: 'install.packages("rmarkdown")'
+  - field: license
+    value: MIT
+    url: https://cran.r-project.org/package=rmarkdown
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT"
+  - field: licenseModel
+    value: open-source
+    url: https://cran.r-project.org/package=rmarkdown
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT"
+  - field: firstRelease
+    value: "2014"
+    url: https://api.github.com/repos/rstudio/rmarkdown/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/rstudio/rmarkdown/releases/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-07
+    url: https://api.github.com/repos/rstudio/rmarkdown/releases/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 3066
+    url: https://api.github.com/repos/rstudio/rmarkdown
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 117
+    url: https://api.github.com/repos/rstudio/rmarkdown/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: cranName
+    value: rmarkdown
+    url: https://cran.r-project.org/package=rmarkdown
+    checkedAt: 2026-10-23
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://pkgs.rstudio.com/rmarkdown/reference/run.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Start a Shiny server for the given document, and render it for display."
+  - field: runsAs
+    value: [local]
+    url: https://github.com/rstudio/rmarkdown/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "you can install the package from CRAN as follows"
+  - field: categories
+    value: [ssg]
+    url: https://pkgs.rstudio.com/rmarkdown/reference/render_site.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Render all of the R Markdown documents within a directory as a website."
+  - field: forum
+    value: https://forum.posit.co/c/quarto-r-markdown/10
+    url: https://github.com/rstudio/rmarkdown/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The Posit community is a friendly place to ask any questions about rmarkdown"
+notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, maintainerType, renderingModes, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, buildCommand]
+unreadable: []
+notes: >
+  The homepage lists websites among the output formats ("static and dynamic output formats including HTML, PDF, MS Word, Beamer, HTML5 slides ... websites"), which is the basis for criterion 1. The homepage also points to RStudio Connect, a Posit product for publishing and scheduling reports; it is not part of the package and nothing about it is recorded.   Boundary: the candidate row marks this a document converter used by static site generators, and the package's own pages describe analysis documents rendered to formats including HTML. The record stays as the candidate row has it; the reviewer decides whether a document converter meets criterion 1. The README requires Pandoc (>= 1.12.3) outside RStudio, which is a dependency and not a parent, so no basedOn is recorded. The GitHub release v2.32 (2026-09-07) and the CRAN publication (2026-09-01) differ by six days; latestReleaseDate follows the GitHub release, which the candidate row also gives. The oldest GitHub release is v0.1.2 (2014-02-24). The API reports license NOASSERTION; the CRAN license line is "MIT", and the LICENSE file names Posit Software, PBC as copyright holder. The CRAN page names Yihui Xie as maintainer; the record uses the copyright holder from the LICENSE file. The homepage answers at rmarkdown.rstudio.com with the R Markdown site, and the README links its Get Started page at pkgs.rstudio.com.
+  runsAs lists always-on for a Shiny document, which the run function serves from a Shiny server, and local for rendering on the user's machine; a rendered document is a set of files. The ssg category follows the render_site function, which renders a directory of documents as a website.

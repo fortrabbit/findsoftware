@@ -1,0 +1,1 @@
+Halwa is a static site generator in a single Python file. It is installed with pip and run as `python -m halwa` with a Python configuration file. Content can be static HTML, HAML or Markdown, and pages are rendered as Jinja templates. Content is read from files on disk, which the configuration lists as sources. Hasnain Lakhani holds the copyright under the MIT license.

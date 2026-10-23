@@ -1,0 +1,139 @@
+id: stagen
+name: StaGen
+status: accepted
+checkedAt: 2026-10-23
+description: Static site generator written in Java, built for the WizTools.org website.
+facts:
+  - field: repository
+    value: https://github.com/wiztools/stagen
+    url: https://api.github.com/repos/wiztools/stagen
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/wiztools/stagen/wiki/Tutorial
+    url: https://github.com/wiztools/stagen/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Read the tutorial"
+  - field: maintainer
+    value: WizTools.org
+    url: https://github.com/wiztools/stagen/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "# WizTools.org StaGen"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/wiztools
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/wiztools/stagen
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/wiztools/stagen/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Prerequisite: Java 17 or later."
+  - field: categories
+    value: [ssg]
+    url: https://github.com/wiztools/stagen/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "StaGen is the static site generator behind"
+  - field: templating
+    value: [stringtemplate]
+    url: https://github.com/wiztools/stagen/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "StringTemplate 4 for templating"
+  - field: contentStore
+    value: flat-file
+    url: https://github.com/wiztools/stagen/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Markdown for content"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/wiztools/stagen/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This static site generator was developed for maintaining a site"
+  - field: installMethod
+    value: download the release archive and add its bin folder to PATH
+    url: https://github.com/wiztools/stagen/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Download the `.zip` or `.tgz` package from our releases section"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/wiztools/stagen
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/wiztools/stagen/master/LICENSE.txt
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Apache License"
+  - field: firstRelease
+    value: "2014"
+    url: https://api.github.com/repos/wiztools/stagen/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/wiztools/stagen/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2014-11-22
+    url: https://api.github.com/repos/wiztools/stagen/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 45
+    url: https://api.github.com/repos/wiztools/stagen
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/wiztools/stagen/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: buildCommand
+    value: stagen gen
+    url: https://github.com/wiztools/stagen/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "$ stagen gen"
+  - field: outputDir
+    value: target
+    url: https://github.com/wiztools/stagen/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generate the site under `target` directory"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/wiztools/stagen/wiki/Tutorial
+    checkedAt: 2026-10-23
+    via: page
+    quote: "write the resulting HTML file to destination folder"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/wiztools/stagen/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "To run the project using the embedded Jetty server"
+  - field: installMethod
+    value: build from source with Gradle
+    url: https://github.com/wiztools/stagen/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "$ ./gradlew build"
+notFound: [homepage, runtimeMin, basedOn, parent, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, hqCountry, maintainerType, paidEdition, pricingPage, latestPrereleaseDate, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, packagistName, npmWeeklyDownloads]
+unreadable: []
+notes: >
+  The repository has no homepage of its own; the README links the WizTools.org site the generator builds, which is not recorded as the software's homepage. The stable GitHub releases are the four stagen-0.x tags from 2014, and the latest is stagen-0.3.2 (2014-11-22), so currentMajor is 0 and the release date is from 2014. The README states "Prerequisite: Java 17 or later" for the current master; the latest release is from 2014, so runtimeMin is not recorded. The README says "We do not support themes or blog-like-static-pages". The maintainer is the WizTools.org organization account, whose profile name is WizTools.org. Last push to master was 2025-03-24.

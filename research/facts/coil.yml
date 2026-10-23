@@ -1,0 +1,92 @@
+id: coil
+name: Coil
+status: accepted
+checkedAt: 2026-10-23
+description: Elixir static content engine that builds a blog and pages from Markdown articles and EEx templates, served over HTTP.
+facts:
+  - field: repository
+    value: https://github.com/badosu/coil
+    url: https://api.github.com/repos/badosu/coil
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/badosu/coil/blob/master/README.md
+    url: https://github.com/badosu/coil/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Coil is a minimalistic static content engine written in elixir."
+  - field: maintainer
+    value: Amadeus Folego
+    url: https://raw.githubusercontent.com/badosu/coil/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2013 Amadeus Folego"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/badosu
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Elixir
+    url: https://api.github.com/repos/badosu/coil
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [elixir]
+    url: https://github.com/badosu/coil/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "You must have the latest stable version of elixir installed"
+  - field: categories
+    value: [static-content-engine, blog]
+    url: https://github.com/badosu/coil/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Coil is a minimalistic static content engine written in elixir."
+  - field: installMethod
+    value: git clone and mix
+    url: https://github.com/badosu/coil/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Clone the repo, fetch dependencies and compile:"
+  - field: templating
+    value: [eex]
+    url: https://github.com/badosu/coil/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Templates are embedded elixir files"
+  - field: license
+    value: MIT
+    url: https://github.com/badosu/coil/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The MIT License, see LICENSE"
+  - field: firstRelease
+    value: "2013"
+    url: https://api.github.com/repos/badosu/coil/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/badosu/coil/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2013-12-16
+    url: https://api.github.com/repos/badosu/coil/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 69
+    url: https://api.github.com/repos/badosu/coil
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/badosu/coil/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [runtimeMin, runsAs, homepage, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, renderingModes, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, outputDir, buildCommand, hexName]
+unreadable: []
+notes: >
+  Repo-only project: the GitHub homepage field is empty and the README names no site. The README's runtime requirement is "the latest stable version of elixir", with v0.12.5 named as of its writing in 2013; that is no minimum, so runtimeMin is not recorded. The GitHub API reports license NOASSERTION, so the MIT license comes from the README statement and the LICENSE file. The Hex registry has no package named coil (hex.pm returns 404). The README's run line is "PORT=8080 mix run --no-halt" and it shows a Heroku deploy with a buildpack; neither states what the host must run, so runsAs is not recorded. The README bootstraps a sample blog with mix coil ../blog and lists the routes for the index, pages, articles, the RSS feed and the archives; articles are Markdown files named YYYY-mm-dd-article-title.md (coined field contentFormats, not recorded). The last default-branch commit is dated 2014-03-30, after the only release v0.4.0 (2013-12-16).

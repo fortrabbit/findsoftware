@@ -1,0 +1,133 @@
+id: scalatic
+name: Scalatic
+status: stub
+checkedAt: 2026-10-23
+description: Scala static blog generator that renders GitHub-flavored Markdown posts into HTML through the GitHub API.
+facts:
+  - field: status
+    value: stub
+    url: http://functionalprogramming.ro/scalatic
+    checkedAt: 2026-10-23
+    via: page
+  - field: repository
+    value: https://github.com/padurean/scalatic
+    url: https://api.github.com/repos/padurean/scalatic
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/padurean/scalatic/blob/master/README.md
+    url: https://github.com/padurean/scalatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Dead simple static blog generator written in Scala with minimum dependencies."
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/padurean
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Scala
+    url: https://github.com/padurean/scalatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "written in Scala with minimum dependencies"
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/padurean/scalatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "java -jar scalatic-0.1.0 /path/to/your/blog"
+  - field: categories
+    value: [ssg, blog]
+    url: https://github.com/padurean/scalatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Dead simple static blog generator written in Scala"
+  - field: installMethod
+    value: clone the repository and run with sbt
+    url: https://github.com/padurean/scalatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Clone the Scalatic repo and run with"
+  - field: installMethod
+    value: download the release jar and run it with java
+    url: https://github.com/padurean/scalatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Download the latest Scalatic release as a"
+  - field: buildCommand
+    value: sbt "run /path/to/your/blog"
+    url: https://github.com/padurean/scalatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: 'sbt "run /path/to/your/blog"'
+  - field: outputDir
+    value: target
+    url: https://github.com/padurean/scalatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "this is where your generated blog will be saved"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/padurean/scalatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Dead simple static blog generator written in Scala"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/padurean/scalatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Dead simple static blog generator written in Scala"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/padurean/scalatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "can reside anywhere on your machine"
+  - field: contentStore
+    value: flat files (Markdown)
+    url: https://github.com/padurean/scalatic/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "any markdown source files that should be (re)rendered to HTML"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/padurean/scalatic
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/padurean/scalatic/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: firstRelease
+    value: "2015"
+    url: https://api.github.com/repos/padurean/scalatic/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/padurean/scalatic/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2015-07-02
+    url: https://api.github.com/repos/padurean/scalatic/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 24
+    url: https://api.github.com/repos/padurean/scalatic
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/padurean/scalatic/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, maintainer, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, latestPrereleaseDate, lastCommitDate, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, paidEditions, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, runtimeMin, pypiName, npmName, packagistName, mavenCoordinates]
+unreadable: [http://functionalprogramming.ro/scalatic, https://functionalprogramming.ro/scalatic]
+notes: >
+  The CSV homepage http://functionalprogramming.ro/scalatic does not resolve (curl exit 6, no DNS answer), over http or https, so the record is a stub without homepage, modelled on bowman. The GitHub repository has no homepage set. The LICENSE copyright line names Tom Preston-Werner (2015), which matches neither the repository owner padurean nor anything in the README and looks like a template leftover, so no maintainer fact is recorded. The README requires header.html and footer.html files in the source folder and links a Gitter chat badge. The README says the generator calls the GitHub API to render Markdown, so building needs network access to GitHub. The repository has one GitHub release, 0.1.0 (2015-07-02), with a single jar download. The GitHub contributors count is 2 with anonymous contributors excluded.

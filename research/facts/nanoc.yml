@@ -1,0 +1,153 @@
+id: nanoc
+name: Nanoc
+status: accepted
+checkedAt: 2026-10-23
+description: Ruby static-site generator that transforms content such as Markdown or AsciiDoc into HTML pages with a shared layout.
+facts:
+  - field: repository
+    value: https://github.com/nanoc/nanoc
+    url: https://api.github.com/repos/nanoc/nanoc
+    checkedAt: 2026-10-23
+    via: api
+  - field: homepage
+    value: https://nanoc.app
+    url: https://nanoc.app/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "fit for building anything from a small personal blog"
+  - field: docs
+    value: https://nanoc.app/doc/
+    url: https://nanoc.app/doc/
+    checkedAt: 2026-10-23
+    via: page
+  - field: maintainer
+    value: Denis Defreyne
+    url: https://nanoc.app/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Nanoc © 2007–2026 Denis Defreyne"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/nanoc
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/nanoc/nanoc
+    checkedAt: 2026-10-23
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/nanoc/nanoc
+    checkedAt: 2026-10-23
+    via: api
+  - field: license
+    value: MIT
+    url: https://nanoc.app/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Nanoc is licensed under the MIT license"
+  - field: categories
+    value: [ssg]
+    url: https://nanoc.app/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Nanoc is a static-site generator"
+  - field: runtime
+    value: [ruby]
+    url: https://nanoc.app/doc/installation/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Nanoc requires Ruby to run"
+  - field: runtimeMin
+    value: "3.2"
+    url: https://rubygems.org/api/v1/versions/nanoc.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: installMethod
+    value: RubyGems (gem install nanoc)
+    url: https://nanoc.app/doc/installation/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Install Nanoc using RubyGems"
+  - field: buildCommand
+    value: nanoc compile
+    url: https://nanoc.app/doc/tutorial/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "nanoc compile"
+  - field: outputDir
+    value: output
+    url: https://nanoc.app/doc/deploying/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Add the output/ directory to your .gitignore"
+  - field: renderingModes
+    value: [static]
+    url: https://nanoc.app/doc/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Static sites can be deployed to any web server"
+  - field: runsAs
+    value: [static]
+    url: https://nanoc.app/doc/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Static sites can be deployed to any web server"
+  - field: runsAs
+    value: [local]
+    url: https://nanoc.app/doc/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "developing sites happens on a local machine"
+  - field: templating
+    value: [eRuby, Haml, Mustache]
+    url: https://nanoc.app/doc/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "support for various templating languages (eRuby, Haml, Mustache"
+  - field: rubygemsName
+    value: nanoc
+    url: https://rubygems.org/api/v1/gems/nanoc.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: rubygemsDownloads
+    value: 1404963 total
+    url: https://rubygems.org/api/v1/gems/nanoc.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 2157
+    url: https://api.github.com/repos/nanoc/nanoc
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 89
+    url: https://api.github.com/repos/nanoc/nanoc/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2009"
+    url: https://rubygems.org/api/v1/versions/nanoc.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: "4"
+    url: https://api.github.com/repos/nanoc/nanoc/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-30
+    url: https://api.github.com/repos/nanoc/nanoc/releases/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: forum
+    value: Google group (groups.google.com/d/forum/nanoc)
+    url: https://nanoc.app/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Google group"
+notFound: [adminUi, headlessApi, contentStore, databases, pricingPage, hqCountry, wikidata, parent, forkOf, paidEdition, discord, x, bluesky, mastodon, newsletter, sso, userRoles, i18n, multisite, importsFrom, selfHostOption]
+unreadable: []
+notes: >
+  The homepage is https://nanoc.app, the gem's homepage_uri. The homepage still links https://nanoc.denisdefreyne.com with the words "For a change of scenery, go over here", and the README names the older domain as the web site; both answer over https. The candidate row's http:// link is not used. firstRelease is the oldest RubyGems upload (1.0, 2009-07-25); the oldest GitHub release is 2013 and the copyright line starts in 2007. runtimeMin is the RubyGems required Ruby version of the latest release; the installation page says Ruby 3.1 or higher as the language version and also says the official interpreter is supported from 2.5 up. The project's own pages say it does not manage content: "It does not help in managing content; it merely processes it", so no contentStore is recorded. The repository has a GitHub discussions board and an issue tracker, both not recorded as fields.

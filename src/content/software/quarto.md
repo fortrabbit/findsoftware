@@ -12,6 +12,8 @@ status: active
 maintainer: Posit Software, PBC
 hosting:
   - static
+basedOn:
+  - pandoc
 runsAs:
   - static
 renderingModes:
@@ -39,6 +41,9 @@ sources:
     checkedAt: 2026-10-22
   - field: category
     url: https://quarto.org/docs/websites/
+    checkedAt: 2026-10-22
+  - field: basedOn
+    url: https://github.com/quarto-dev/quarto-cli
     checkedAt: 2026-10-22
   - field: installMethod
     url: https://quarto.org/docs/download/

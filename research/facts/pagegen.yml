@@ -1,0 +1,150 @@
+id: pagegen
+name: Pagegen
+status: accepted
+checkedAt: 2026-10-23
+description: Python static site generator that builds a website from plain text page files and folders.
+facts:
+  - field: homepage
+    value: https://pagegen.phnd.net
+    url: https://pagegen.phnd.net/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Pagegen takes content found in a bunch of regular plain text files and folders and wraps them up nicely as a website."
+  - field: repository
+    value: https://github.com/oliverfields/pagegen
+    url: https://api.github.com/repos/oliverfields/pagegen
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://pagegen.phnd.net/quick-start
+    url: https://pagegen.phnd.net/quick-start
+    checkedAt: 2026-10-23
+    via: page
+    quote: "For in depth documentation please see the Manual."
+  - field: maintainer
+    value: Oliver Fields
+    url: https://raw.githubusercontent.com/oliverfields/pagegen/master/setup.py
+    checkedAt: 2026-10-23
+    via: page
+    quote: "author='Oliver Fields'"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/oliverfields
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/oliverfields/pagegen
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://pagegen.phnd.net/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Static site generator"
+  - field: runtime
+    value: [python]
+    url: https://pypi.org/pypi/pagegen/json
+    checkedAt: 2026-10-23
+    via: api
+    quote: "\"requires_python\":\">=3.8\""
+  - field: runtimeMin
+    value: "3.8"
+    url: https://pypi.org/pypi/pagegen/json
+    checkedAt: 2026-10-23
+    via: api
+    quote: "\"requires_python\":\">=3.8\""
+  - field: installMethod
+    value: pip install pagegen
+    url: https://pagegen.phnd.net/quick-start
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Installation $ pip install pagegen"
+  - field: buildCommand
+    value: pgn --generate
+    url: https://pagegen.phnd.net/quick-start
+    checkedAt: 2026-10-23
+    via: page
+    quote: "$ pgn --generate"
+  - field: outputDir
+    value: build
+    url: https://pagegen.phnd.net/manual/site
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Build directory When pgn -g is run generated content ends up here."
+  - field: renderingModes
+    value: [static]
+    url: https://pagegen.phnd.net/manual/site
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The content of this directory is the finished site, and can be uploaded to a web server."
+  - field: runsAs
+    value: [static]
+    url: https://pagegen.phnd.net/manual/site
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The content of this directory is the finished site, and can be uploaded to a web server."
+  - field: runsAs
+    value: [local]
+    url: https://pagegen.phnd.net/quick-start
+    checkedAt: 2026-10-23
+    via: page
+    quote: "When developing Pagegen can serve site locally."
+  - field: contentStore
+    value: flat-file
+    url: https://pagegen.phnd.net/manual/site
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Content directory The contents of this directory is where pages are stored and organized using directories."
+  - field: templating
+    value: [mako]
+    url: https://pagegen.phnd.net/manual/site
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Pagegen comes with Mako templates plugin"
+  - field: license
+    value: GPL-3.0-or-later
+    url: https://pypi.org/pypi/pagegen/json
+    checkedAt: 2026-10-23
+    via: api
+    quote: "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"
+  - field: firstRelease
+    value: "2015"
+    url: https://pypi.org/pypi/pagegen/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/oliverfields/pagegen/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2025-04-23
+    url: https://pypi.org/pypi/pagegen/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 26
+    url: https://api.github.com/repos/oliverfields/pagegen
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/oliverfields/pagegen/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiName
+    value: pagegen
+    url: https://pypi.org/pypi/pagegen/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiDownloads
+    value: 24 per month (last_month)
+    url: https://pypistats.org/api/packages/pagegen/recent
+    checkedAt: 2026-10-23
+    via: api
+notFound: [basedOn, parent, hqCountry, maintainerType, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, npmName, endoflifeId]
+unreadable: []
+notes: >
+  The CSV row lists the homepage as http://pagegen.phnd.net; the https address answers 200 and the plain http address redirects to it, so the https address is recorded. The GitHub releases list (14 releases, 3.1.0 from 2021-12-13 as the oldest) does not show the 2015 PyPI history: PyPI has pagegen 2.1.0 uploaded 2015-05-01, so firstRelease comes from PyPI. The latest stable release is 4.1.0 on PyPI (uploaded 2025-04-23) while the newest GitHub release is 4.0.0 (2025-02-16); latestReleaseDate follows PyPI. The repository has no LICENSE file and GitHub reports no license; the license comes from the GPLv3+ classifier in the PyPI metadata. The PyPI JSON carries no download counts; the figure comes from pypistats.org. The Mako templates plugin ships inside the package, so no basedOn is recorded: the project does not name a parent.

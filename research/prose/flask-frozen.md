@@ -1,0 +1,3 @@
+Frozen-Flask freezes a Flask application into a set of static files. A developer creates a `Freezer` from the app object and calls its `freeze` method from a script, which writes the pages to a build directory. The [documentation](https://frozen-flask.readthedocs.io/en/latest/) says the result can be hosted without any server-side software other than a traditional web server, so Python and Flask are needed where the site is frozen and not on the server.
+
+The documentation says Frozen-Flask finds URLs by simulating requests and following links built with `url_for`, and that pages it cannot find need URL generators.

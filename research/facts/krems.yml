@@ -1,0 +1,177 @@
+id: krems
+name: Krems
+status: accepted
+checkedAt: 2026-10-23
+description: Go static site generator that builds Markdown websites for publishing to GitHub Pages through a GitHub Action.
+facts:
+  - field: repository
+    value: https://github.com/mreider/krems
+    url: https://api.github.com/repos/mreider/krems
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/mreider/krems/blob/main/README.md
+    url: https://github.com/mreider/krems/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: Krems lets you publish Markdown websites to Github pages
+  - field: maintainer
+    value: Matt Reider
+    url: https://api.github.com/users/mreider
+    checkedAt: 2026-10-23
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/mreider
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/mreider/krems
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value:
+      - ssg
+    url: https://github.com/mreider/krems
+    checkedAt: 2026-10-23
+    via: page
+    quote: A static site generator (SSG) written in Go
+  - field: runtime
+    value:
+      - go binary
+    url: https://github.com/mreider/krems/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: Download the latest binary and put it in your path
+  - field: installMethod
+    value: binary download
+    url: https://github.com/mreider/krems/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: Download the latest binary and put it in your path
+  - field: buildCommand
+    value: krems --build
+    url: https://github.com/mreider/krems/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: krems --build
+  - field: outputDir
+    value: .tmp
+    url: https://github.com/mreider/krems/blob/main/main.go
+    checkedAt: 2026-10-23
+    via: page
+    quote: Builds the static site into the ./.tmp directory
+  - field: renderingModes
+    value:
+      - static
+    url: https://github.com/mreider/krems/blob/main/main.go
+    checkedAt: 2026-10-23
+    via: page
+    quote: Builds the static site
+  - field: runsAs
+    value:
+      - static
+    url: https://github.com/mreider/krems/blob/main/main.go
+    checkedAt: 2026-10-23
+    via: page
+    quote: Builds the static site into the ./.tmp directory
+  - field: contentStore
+    value: flat files (Markdown)
+    url: https://github.com/mreider/krems/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: Krems lets you publish Markdown websites to Github pages
+  - field: license
+    value: MIT
+    url: https://github.com/mreider/krems/blob/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: MIT License
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/mreider/krems/blob/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: Permission is hereby granted, free of charge
+  - field: firstRelease
+    value: "2025"
+    url: https://api.github.com/repos/mreider/krems/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/mreider/krems/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2025-10-10
+    url: https://api.github.com/repos/mreider/krems/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 10
+    url: https://api.github.com/repos/mreider/krems
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/mreider/krems/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: runsAs
+    value:
+      - local
+    url: https://github.com/mreider/krems/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: runs at localhost:8080
+notFound:
+  - homepage
+  - hqCountry
+  - maintainerType
+  - wikidata
+  - pricingPage
+  - paidEditions
+  - freeTier
+  - usageShare
+  - reportedInstalls
+  - pluginDirectory
+  - pluginCount
+  - forum
+  - discord
+  - subreddit
+  - mastodon
+  - bluesky
+  - x
+  - newsletter
+  - docker
+  - endoflifeId
+  - supportedVersions
+  - forkOf
+  - successorOf
+  - alternativeTo
+  - basedOn
+  - parent
+  - adminUi
+  - headlessApi
+  - templating
+  - i18n
+  - multisite
+  - livePreview
+  - userRoles
+  - sso
+  - importsFrom
+  - apiLimits
+  - regions
+  - selfHostOption
+  - npmName
+  - pypiName
+  - packagistName
+  - npmWeeklyDownloads
+  - pypiDownloads
+  - runtimeMin
+unreadable: []
+notes: |-
+  The repository names no homepage, so none is recorded; the README points to an example site (mreider/krems-example) that is a demonstration of the software, not its home page. The LICENSE copyright line reads "Copyright (c) 2025" with no name, so the maintainer comes from the GitHub profile name, and the profile's employer is not recorded. The releases list holds ten version tags from v0.1.26 (2025-05-11) to v0.2.48 (2025-10-10), all stable, so firstRelease is 2025 and currentMajor is 0. The go.mod states go 1.23.5, which is the Go version the source is built with; no page states a runtime requirement for running a built site, so runtimeMin is not recorded. The README says the GitHub Action generates the site on push and commits it to the gh-pages branch, which GitHub Pages serves. The Obsidian plugin (mreider/krems-obsidian-plugin) and the GitHub Action (mreider/krems-deploy-action) are separate repositories named by the README and are not recorded here. The README says the default CSS works with standard Bootstrap HTML classes; no basedOn is recorded because Bootstrap is a CSS class convention, not a parent project.
+   The maintainer name is the GitHub profile name Matt Reider (the profile lists Dynatrace as employer, not recorded).

@@ -1,0 +1,139 @@
+id: plerd
+name: Plerd
+status: accepted
+checkedAt: 2026-10-23
+description: Ultralight Markdown blogging platform that generates a static website from a folder of Markdown files.
+facts:
+  - field: homepage
+    value: https://jmac.org/plerd/
+    url: https://jmac.org/plerd/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Plerd is a minimalist blogging platform for people who love writing with Markdown"
+  - field: repository
+    value: https://github.com/jmacdotorg/plerd
+    url: https://api.github.com/repos/jmacdotorg/plerd
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/jmacdotorg/plerd/blob/master/README.md
+    url: https://github.com/jmacdotorg/plerd/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "To install the latest release of Plerd, run this command"
+  - field: maintainer
+    value: Jason McIntosh
+    url: https://jmac.org/plerd/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The Plerd project was created and is maintained by Jason McIntosh"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/jmacdotorg
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Perl
+    url: https://api.github.com/repos/jmacdotorg/plerd
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [blog]
+    url: https://github.com/jmacdotorg/plerd/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "an ultralight blogging platform for Markdown fans"
+  - field: runtime
+    value: [perl]
+    url: https://github.com/jmacdotorg/plerd/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Perl version 5.26 or later"
+  - field: runtimeMin
+    value: "5.26"
+    url: https://github.com/jmacdotorg/plerd/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Perl version 5.26 or later"
+  - field: installMethod
+    value: [cpanm]
+    url: https://github.com/jmacdotorg/plerd/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "To install the latest release of Plerd, run this command"
+  - field: templating
+    value: [template toolkit]
+    url: https://github.com/jmacdotorg/plerd/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "They are rendered using Template Toolkit"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/jmacdotorg/plerd/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The generated website comprises a single directory containing only static files"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/jmacdotorg/plerd/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The generated website comprises a single directory containing only static files"
+  - field: contentStore
+    value: [flat-file]
+    url: https://jmac.org/plerd/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Your one directory of directly-editable Markdown files represents the entirety of your blog's data source"
+  - field: databases
+    value: [none]
+    url: https://jmac.org/plerd/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Requires no extra database setup"
+  - field: adminUi
+    value: "no"
+    url: https://jmac.org/plerd/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "No user interface at all, other than your favorite text editor"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/jmacdotorg/plerd
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://jmac.org/plerd/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Plerd is free and open-source software"
+  - field: firstRelease
+    value: "2015"
+    url: https://api.github.com/repos/jmacdotorg/plerd/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/jmacdotorg/plerd/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-25
+    url: https://api.github.com/repos/jmacdotorg/plerd/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 117
+    url: https://api.github.com/repos/jmacdotorg/plerd
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 8
+    url: https://api.github.com/repos/jmacdotorg/plerd/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [parent, hqCountry, maintainerType, forkOf, successorOf, basedOn, alternativeTo, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, i18n, multisite, livePreview, userRoles, sso, importsFrom, headlessApi, selfHostOption, npmName]
+unreadable: []
+notes: >
+  The CSV homepage http://jmac.org/plerd/ redirects to https and the https page answers 200; the https address is recorded. The README describes plerdwatcher as a daemon that watches the source folder and says the source folder can sit on the web server, synced by Dropbox or rclone; runsAs lists only static because the README says the live site is static files and plerdall can regenerate them by hand. The release history starts at tag "0.1" (2015-02-08); the repository was created in December 2014. The current release is tagged "2.000" (2026-07-25) and needs a newer Perl than 1.x; the 1.x line is kept on the maint/1.x branch. The README says LLM-based coding assistants wrote parts of the code from version 1.900 on; no field holds that. The author's personal links (Twitter, masto.nyc, jmac.org contact) are not recorded as project accounts. The homepage names a Freenode IRC channel; not recorded. The CPAN distribution (cpanm Plerd) is not in the list of registries, so no download figure is recorded.

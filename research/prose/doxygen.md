@@ -1,0 +1,3 @@
+Doxygen builds reference documentation from the comments in source code. Its own pages list C++, C, Python, PHP and others as inputs, and HTML, LaTeX for PDF, RTF, XML, man pages and DocBook as outputs. A configuration file controls each run, and `doxygen -g` writes a template for it.
+
+The program is called from the command line, so it runs on a developer's machine or in a build step rather than on a live site. The [installation page](https://www.doxygen.nl/manual/install.html) describes building it from source with CMake or installing the binaries. The license page names Dimitri van Heesch as the copyright holder.

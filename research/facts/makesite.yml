@@ -1,0 +1,118 @@
+id: makesite
+name: makesite.py
+status: accepted
+checkedAt: 2026-10-23
+description: "Python script that generates a static website and blog from content and layout files."
+facts:
+  - field: repository
+    value: https://github.com/sunainapai/makesite
+    url: https://api.github.com/repos/sunainapai/makesite
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/sunainapai/makesite/blob/master/README.md
+    url: https://github.com/sunainapai/makesite/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Get Started"
+  - field: maintainer
+    value: Sunaina Pai
+    url: https://raw.githubusercontent.com/sunainapai/makesite/master/LICENSE.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2018-2022 Sunaina Pai"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/sunainapai
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/sunainapai/makesite
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg, blog]
+    url: https://github.com/sunainapai/makesite/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "static website/blog generation"
+  - field: runtime
+    value: [python]
+    url: https://github.com/sunainapai/makesite/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "You can run makesite.py with Python 2.7 or Python 3.x"
+  - field: installMethod
+    value: "fork the repository and replace the content with your own"
+    url: https://github.com/sunainapai/makesite/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "go ahead, fork this repository, replace the content with your own"
+  - field: buildCommand
+    value: "python3 makesite.py"
+    url: https://github.com/sunainapai/makesite/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "If you don't have `make` but have `python3`, enter this command"
+  - field: outputDir
+    value: "_site"
+    url: https://github.com/sunainapai/makesite/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The `_site` directory contains the entire generated website"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/sunainapai/makesite/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "You probably only need to generate the static files"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/sunainapai/makesite/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "For a quick demo on your local system"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/sunainapai/makesite/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "hosting the static website/blog on a hosting service"
+  - field: contentStore
+    value: flat-file
+    url: https://github.com/sunainapai/makesite/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "the content files are located in the"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/sunainapai/makesite
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/sunainapai/makesite/master/LICENSE.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: contributors
+    value: 8
+    url: https://api.github.com/repos/sunainapai/makesite/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 1873
+    url: https://api.github.com/repos/sunainapai/makesite
+    checkedAt: 2026-10-23
+    via: api
+  - field: lastCommitDate
+    value: 2022-10-12
+    url: https://api.github.com/repos/sunainapai/makesite/commits
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, firstRelease, currentMajor, latestReleaseDate, runtimeMin, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, npmName, npmWeeklyDownloads, pypiName, pypiDownloads, packagistName, rubygemsName, selfHostOption]
+unreadable: []
+notes: >
+  No homepage: the GitHub homepage field is empty. The README links a demo at tmug.github.io/makesite-demo, which is a demo, not the project's own site. The repository has no release and no tag, so the last commit date on the default branch decides listing (AGENTS.md criterion 4). The contributor count is the last page of the contributors endpoint with per_page=1. The README says the project does not accept new features such as Jinja templates or YAML front matter, and accepts bug fixes and minor improvements only. The README states that Markdown posts need the commonmark package to render, and that the layout placeholders use the {{ key }} syntax; no template engine field is recorded for this. The README gives Python 2.7 and 3.x as the interpreters it runs under, with no minimum version, so runtimeMin is absent. The PyPI package named makesite is a different project (klen/makesite) and is not recorded.
+  The README describes the repository as an example website and says to fork it and replace the content with your own. The README says the generated output is written to a directory whose content may be copied to a hosting location.

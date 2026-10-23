@@ -1,0 +1,1 @@
+QPage is a Python tool for building an academic homepage without writing code. The user puts a profile picture, one text file per page and a PDF resume into the folders the tool sets up, runs the setup script, and uploads the output folder to a web host. The tool is installed with pip, from the source archive or as an exe file, and needs Python 3 unless the exe file is used.

@@ -1,0 +1,111 @@
+id: blogc
+name: blogc
+status: accepted
+checkedAt: 2026-10-23
+description: Command-line blog compiler that turns source files and templates into website resources, designed to be driven by make.
+facts:
+  - field: homepage
+    value: https://blogc.rgm.io/
+    url: https://blogc.rgm.io/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "It compiles source files and templates into blog/website resources"
+  - field: repository
+    value: https://github.com/blogc/blogc
+    url: https://api.github.com/repos/blogc/blogc
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://blogc.rgm.io/man/blogc.1.html
+    url: https://blogc.rgm.io/man/blogc.1.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "blogc(1) - a blog compiler"
+  - field: maintainer
+    value: Rafael G. Martins
+    url: https://raw.githubusercontent.com/blogc/blogc/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2014-2024, Rafael G. Martins"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/blogc
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [blog-compiler]
+    url: https://blogc.rgm.io/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "blogc(1) is a blog compiler"
+  - field: installMethod
+    value: cmake
+    url: https://github.com/blogc/blogc/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "cmake -B build -S . -G Ninja"
+  - field: installMethod
+    value: distribution packages
+    url: https://blogc.rgm.io/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "There are also several pre-built binaries and distro-specific repositories"
+  - field: templating
+    value: [blogc-template]
+    url: https://blogc.rgm.io/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "blogc-template(7)"
+  - field: contentStore
+    value: flat-file
+    url: https://github.com/blogc/blogc/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "look at the `content/post/` directory and edit your first post"
+  - field: runsAs
+    value: [static]
+    url: https://blogc.rgm.io/man/blogc-git-receiver.1.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This symlink should be used as the document root for the web server"
+  - field: runsAs
+    value: [local]
+    url: https://blogc.rgm.io/man/blogc-runserver.1.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "a simple HTTP server that makes it easy to test blogc websites"
+  - field: license
+    value: BSD-3-Clause
+    url: https://blogc.rgm.io/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Project released under a BSD 3 clause license"
+  - field: firstRelease
+    value: "2015"
+    url: https://api.github.com/repos/blogc/blogc/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/blogc/blogc/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2021-01-02
+    url: https://api.github.com/repos/blogc/blogc/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 192
+    url: https://api.github.com/repos/blogc/blogc
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/blogc/blogc/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [language, runtime, runtimeMin, buildCommand, renderingModes, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, pricingPage, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, outputDir, maintainerType]
+unreadable: []
+notes: >
+  The homepage says blogc is "a standard autotools project" built with "./configure && make && make install", while the current README (main branch) gives a CMake build; the record uses the README. The homepage's imprint link (/imprint/) returns 404, so no legal form is stated for the maintainer and the name comes from the LICENSE copyright line. The oldest release entry is v0.1-beta.1 (2015-08-18, a prerelease); the oldest stable release is v0.1 (2015-09-16) and the highest stable is v0.20.1. The implementation language is not stated on the pages read (the homepage says only that the name has nothing to do with the language), so language is not recorded; the homepage says blogc depends only on a libc. runsAs static rests on the blogc-git-receiver manual: it rebuilds a site on push and links the built files as the web server's document root. The tool is a per-file compiler: the homepage says it builds one file at once and knows nothing about the other files of a blog, and that blogc-make can turn it into a blogging engine suitable for most users. blogc comes with its own markup language (blogc-source) and template engine, similar to but not the same as Markdown; both are coined, not recorded as fields. The homepage says the example repository uses GNU Make.

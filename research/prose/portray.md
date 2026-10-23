@@ -1,0 +1,3 @@
+portray is a Python command line tool and library that builds a documentation website for a Python project. It renders the project's Markdown files and the Markdown in its docstrings, and combines MkDocs for Markdown rendering with pdocs for reference documentation. The output is standard static HTML, and `portray on_github_pages` automates publishing to GitHub Pages.
+
+The [installation guide](https://timothycrosley.github.io/portray/docs/quick_start/1.-installation/) says to install it with pip, Poetry or pipenv into the project's own environment and to run it from the root of the project, because it introspects the package to generate reference documentation.

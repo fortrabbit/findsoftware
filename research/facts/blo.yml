@@ -1,0 +1,112 @@
+id: blo
+name: Blo
+status: accepted
+checkedAt: 2026-10-23
+description: Static site generator for personal blogs that builds posts from Markdown files and Jinja2 page templates.
+facts:
+  - field: repository
+    value: https://github.com/savuir/blo
+    url: https://api.github.com/repos/savuir/blo
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/savuir/blo/blob/master/README.md
+    url: https://github.com/savuir/blo/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "yet another static site generator for personal blogs"
+  - field: maintainer
+    value: savuir
+    url: https://raw.githubusercontent.com/savuir/blo/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2015, savuir"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/savuir
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/savuir/blo
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://pypi.org/pypi/blo/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg, blog]
+    url: https://github.com/savuir/blo/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "yet another static site generator for personal blogs"
+  - field: installMethod
+    value: pip
+    url: https://github.com/savuir/blo/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "pip install blo"
+  - field: buildCommand
+    value: blo build
+    url: https://github.com/savuir/blo/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "blo build"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/savuir/blo/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Run blog locally"
+  - field: templating
+    value: [jinja2]
+    url: https://github.com/savuir/blo/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Page templates: easy HTML/Jinja2 customize and improve"
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/savuir/blo
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2015"
+    url: https://pypi.org/pypi/blo/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://pypi.org/pypi/blo/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2017-10-04
+    url: https://pypi.org/pypi/blo/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 9
+    url: https://api.github.com/repos/savuir/blo
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/savuir/blo/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiName
+    value: blo
+    url: https://pypi.org/pypi/blo/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiDownloads
+    value: "33 last month"
+    url: https://pypistats.org/api/packages/blo/recent
+    checkedAt: 2026-10-23
+    via: api
+notFound: [renderingModes, homepage, runtimeMin, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, pricingPage, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, outputDir]
+unreadable: []
+notes: >
+  No homepage: the GitHub homepage field is empty and the repository is the only project site, so the record is repo-only. The PyPI package blo, the one the install docs name, has release 0.8 published 2017-10-04, newer than the only GitHub release, so currentMajor and latestReleaseDate follow PyPI; the first PyPI upload (0.1) is dated 2015-12-06. The README calls Blo a static site generator and describes the commands, but no page states the form of the built output, so renderingModes and a static runsAs are not recorded. The README's "blo serve" command is recorded as runsAs local. No Python version is stated, so runtimeMin is unknown. The README lists Markdown as the content format (coined field contentFormats, not recorded as a fact), Pygments code highlighting, RSS feed generation and pagination. The README places global site variables and technical paths in default.json and the draft templates in draft_templates.json, and its customize section adds a content type with an HTML template in the templates folder plus an entry in draft_templates.json.

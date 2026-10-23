@@ -1,0 +1,121 @@
+id: asciidoctor
+name: Asciidoctor
+status: accepted
+checkedAt: 2026-10-23
+description: Ruby text processor that converts AsciiDoc source into HTML 5, DocBook 5, man pages and other output formats.
+facts:
+  - field: homepage
+    value: https://asciidoctor.org
+    url: https://asciidoctor.org/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Asciidoctor is a fast, open source, Ruby-based text processor"
+  - field: repository
+    value: https://github.com/asciidoctor/asciidoctor
+    url: https://api.github.com/repos/asciidoctor/asciidoctor
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://docs.asciidoctor.org/
+    url: https://asciidoctor.org/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Asciidoctor Documentation"
+  - field: maintainer
+    value: Dan Allen, Sarah White, Ryan Waldron, and the individual contributors
+    url: https://raw.githubusercontent.com/asciidoctor/asciidoctor/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (C) 2012-present Dan Allen, Sarah White, Ryan Waldron"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/asciidoctor
+    checkedAt: 2026-10-23
+    via: api
+  - field: x
+    value: https://twitter.com/asciidoctor
+    url: https://asciidoctor.org/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Follow @asciidoctor"
+  - field: language
+    value: Ruby
+    url: https://asciidoctor.org/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Asciidoctor is a fast, open source, Ruby-based text processor"
+  - field: categories
+    value: [document-converter]
+    url: https://asciidoctor.org/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Asciidoctor is a fast, open source, Ruby-based text processor"
+  - field: runtime
+    value: [ruby]
+    url: https://asciidoctor.org/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "requires one of the following implementations of Ruby"
+  - field: runtimeMin
+    value: "2.3"
+    url: https://asciidoctor.org/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "CRuby (aka MRI) 2.3 - 3.3"
+  - field: installMethod
+    value: gem install, Bundler, Linux distribution packages, Homebrew or MacPorts, or the Docker image
+    url: https://docs.asciidoctor.org/asciidoctor/latest/install/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "the gem install command (recommended for Windows users)"
+  - field: rubygemsName
+    value: asciidoctor
+    url: https://rubygems.org/api/v1/gems/asciidoctor.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: rubygemsDownloads
+    value: 56551524 (total)
+    url: https://rubygems.org/api/v1/gems/asciidoctor.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/asciidoctor/asciidoctor/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/asciidoctor/asciidoctor/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2012"
+    url: https://rubygems.org/api/v1/versions/asciidoctor.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/asciidoctor/asciidoctor/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2025-10-24
+    url: https://api.github.com/repos/asciidoctor/asciidoctor/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 5224
+    url: https://api.github.com/repos/asciidoctor/asciidoctor
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 190
+    url: https://api.github.com/repos/asciidoctor/asciidoctor/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+notFound: [hqCountry, maintainerType, parent, basedOn, forkOf, alternativeTo, adminUi, databases, headlessApi, contentStore, livePreview, multisite, userRoles, sso, i18n, importsFrom, paidEditions, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, wikidata, docker, endoflifeId, outputDir, buildCommand, runsAs, renderingModes, templating, npmName, npmWeeklyDownloads, packagistName, pypiName, pypiDownloads, latestPrereleaseDate, apiLimits, regions, selfHostOption]
+unreadable: []
+notes: >
+  The homepage lists the project's Zulip chat at https://asciidoctor.zulipchat.com; no field in the dictionary holds a Zulip link, so it is not recorded. The homepage states "Asciidoctor is the successor to AsciiDoc.py" (coined field successorOf, so kept here and not as a fact). AsciiDoc is the language and Asciidoctor is the processor, as the homepage states; the homepage also names two other processors of the same language, Asciidoctor.js for JavaScript and AsciidoctorJ for the JVM, which have their own records and are not parents of this one. PDF and EPUB 3 converters are separate gems, per the homepage, and are not recorded here. The GitHub license field is NOASSERTION; the MIT license comes from the LICENSE file and from the RubyGems license field. runtimeMin is the lower bound of the CRuby range the homepage states. The first release is the first RubyGems version, uploaded in 2012; the oldest GitHub release object is from 2013. The latest stable release is the GitHub release dated latestReleaseDate; the newest prerelease is older and is not recorded. rubygemsDownloads is the total download count from the RubyGems API. The Asciidoctor Docker image is named on the install page without a repository name, so the docker field is not recorded. The install page names no runsAs value or deployment target, so runsAs and renderingModes are not recorded.

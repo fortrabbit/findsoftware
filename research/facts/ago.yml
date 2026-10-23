@@ -1,0 +1,102 @@
+id: ago
+name: Ago
+status: stub
+checkedAt: 2026-10-23
+description: Static blog generator written in Go, installed as a pre-compiled binary or with the Go toolchain.
+facts:
+  - field: status
+    value: stub
+    url: https://ago.ofnir.xyz/
+    checkedAt: 2026-10-23
+    via: page
+  - field: repository
+    value: https://github.com/DavidSatimeWallin/ago
+    url: https://api.github.com/repos/DavidSatimeWallin/ago
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/DavidSatimeWallin/ago/blob/master/README.md
+    url: https://github.com/DavidSatimeWallin/ago/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Ago is a small static blog generator without any fuzz"
+  - field: maintainer
+    value: David Satime Wallin
+    url: https://github.com/DavidSatimeWallin/ago/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2020-2021 David Satime Wallin"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/DavidSatimeWallin/ago
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/DavidSatimeWallin/ago
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://github.com/DavidSatimeWallin/ago/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Ago is a small static blog generator"
+  - field: runtime
+    value: [go binary]
+    url: https://github.com/DavidSatimeWallin/ago/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "use a pre-compiled binary simply download the one hosted"
+  - field: installMethod
+    value: binary download or go install
+    url: https://github.com/DavidSatimeWallin/ago/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "use a pre-compiled binary simply download the one hosted"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/DavidSatimeWallin/ago/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Ago is a small static blog generator"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/DavidSatimeWallin/ago
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/DavidSatimeWallin/ago/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2020"
+    url: https://api.github.com/repos/DavidSatimeWallin/ago/tags
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/DavidSatimeWallin/ago/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2021-05-31
+    url: https://api.github.com/repos/DavidSatimeWallin/ago/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 7
+    url: https://api.github.com/repos/DavidSatimeWallin/ago
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/DavidSatimeWallin/ago/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, runtimeMin, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, packagistName, npmName, pypiName, rubygemsName]
+unreadable: ["https://ago.ofnir.xyz/ (curl: Could not resolve host, 2026-10-23)"]
+notes: >
+  The homepage on the GitHub homepage field, https://ago.ofnir.xyz/, does not resolve (dig ago.ofnir.xyz returns nothing, and the query through 1.1.1.1 answers NXDOMAIN, 2026-10-23), so no homepage is recorded and status is stub (AGENTS.md: the project's own site no longer shows the software). The README's install steps still work, so criterion 3 holds. The README links the old owner path dvwallin; the recorded repository is the current DavidSatimeWallin/ago. The only GitHub release is v1.2.1 (2021-05-31); the older tag v1.2.0 (committed 2020-09-21) has no release object, so firstRelease is the year of that tag. The last release is more than four years old, so the import also moves the record to stub on its own. Go module: no download figure recorded.

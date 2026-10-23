@@ -1,0 +1,118 @@
+id: my_py_site
+name: my_py_site
+status: accepted
+checkedAt: 2026-10-23
+description: "Python static site and blog generator that renders Jinja2 templates from a config file and content pages."
+facts:
+  - field: repository
+    value: https://github.com/sharadcodes/my_py_site
+    url: https://api.github.com/repos/sharadcodes/my_py_site
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/sharadcodes/my_py_site/blob/master/README.md
+    url: https://github.com/sharadcodes/my_py_site/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "For any help create an issue in the repo"
+  - field: maintainer
+    value: Sharad Raj
+    url: https://raw.githubusercontent.com/sharadcodes/my_py_site/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2020 SHARAD RAJ"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/sharadcodes
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/sharadcodes/my_py_site
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg, blog]
+    url: https://github.com/sharadcodes/my_py_site/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "static site and blog generator for Python lovers"
+  - field: runtime
+    value: [python]
+    url: https://github.com/sharadcodes/my_py_site/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "python my_py_site.py"
+  - field: templating
+    value: [jinja2]
+    url: https://github.com/sharadcodes/my_py_site/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Jinja 2 Templates"
+  - field: installMethod
+    value: "clone or download the repository, then pip install -r requirements.txt"
+    url: https://github.com/sharadcodes/my_py_site/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "After cloning or downloading the repo just run"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/sharadcodes/my_py_site/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "static site and blog generator"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/sharadcodes/my_py_site/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "After cloning or downloading the repo just run"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/sharadcodes/my_py_site/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Deploy on Netlify"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/sharadcodes/my_py_site
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/sharadcodes/my_py_site/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License"
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/sharadcodes/my_py_site/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 21
+    url: https://api.github.com/repos/sharadcodes/my_py_site
+    checkedAt: 2026-10-23
+    via: api
+  - field: lastCommitDate
+    value: 2021-11-09
+    url: https://api.github.com/repos/sharadcodes/my_py_site/commits
+    checkedAt: 2026-10-23
+    via: api
+  - field: buildCommand
+    value: "python my_py_site.py"
+    url: https://github.com/sharadcodes/my_py_site/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "python my_py_site.py"
+  - field: contentStore
+    value: "flat-file"
+    url: https://github.com/sharadcodes/my_py_site/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "All the meta info about files inside the collections folder"
+notFound: [homepage, firstRelease, currentMajor, latestReleaseDate, runtimeMin, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, outputDir, npmName, npmWeeklyDownloads, pypiName, pypiDownloads, packagistName, rubygemsName, selfHostOption]
+unreadable: []
+notes: >
+  No homepage: the GitHub homepage field points to a jamstack.org directory entry, which is a third-party listing, not the project's site; the README's Live Demo at mypysite.netlify.com is a demo. The repository has no release and no tag, so the last commit on the default branch decides listing; the commits endpoint gives 2021-11-09 while the GitHub pushed_at field is 2024-01-11. The README says the project is under 90 lines of code and that its documentation is still in progress. The README gives the Netlify deployment as a fork plus a Netlify import, which is the basis for runsAs static. The README also lists compatibility with Netlify CMS, a third-party admin interface, which is not recorded as adminUi. The contributor count is the last page of the contributors endpoint with per_page=1.
+  The README describes a config.json file whose values templates read through a data variable, a list of collections read from a collections folder, and YAML front matter on pages. The README says a Netlify deployment works by forking the repository and adding it to Netlify.

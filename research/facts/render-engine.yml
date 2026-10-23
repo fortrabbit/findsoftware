@@ -1,0 +1,142 @@
+id: render-engine
+name: Render Engine
+status: accepted
+checkedAt: 2026-10-23
+description: Python static site generator built from pages, collections and a site object, rendered with Jinja2 templates.
+facts:
+  - field: homepage
+    value: https://render-engine.org/
+    url: https://render-engine.org/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Render Engine is a static site generator, written in Python"
+  - field: repository
+    value: https://github.com/render-engine/render-engine
+    url: https://api.github.com/repos/render-engine/render-engine
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://render-engine.readthedocs.io/en/latest/
+    url: https://render-engine.readthedocs.io/en/latest/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Render Engine is available in PyPI and can be installed using pip"
+  - field: maintainer
+    value: Render Engine community
+    url: https://render-engine.org/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Render Engine is an open source project and encourages the community to contribute"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/render-engine/render-engine
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://render-engine.org/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Render Engine is a static site generator, written in Python"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/render-engine/render-engine
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://render-engine.readthedocs.io/en/latest/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "you must have Python 3.10 or greater installed"
+  - field: runtimeMin
+    value: "3.10"
+    url: https://pypi.org/pypi/render-engine/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: installMethod
+    value: pip install render-engine
+    url: https://render-engine.readthedocs.io/en/latest/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "pip install render-engine"
+  - field: templating
+    value: [jinja2]
+    url: https://render-engine.readthedocs.io/en/latest/templates/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Render Engine uses the Jinja2 templating engine"
+  - field: renderingModes
+    value: [static]
+    url: https://render-engine.org/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Render Engine is a static site generator, written in Python"
+  - field: runsAs
+    value: [static]
+    url: https://render-engine.org/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Render Engine is a static site generator, written in Python"
+  - field: contentStore
+    value: [flat-file]
+    url: https://render-engine.readthedocs.io/en/latest/content_manager/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "content is stored in the file system with each piece of content existing in a discrete file"
+  - field: outputDir
+    value: output
+    url: https://render-engine.readthedocs.io/en/latest/getting-started/building-your-site/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Your site will be generated in the output folder"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/render-engine/render-engine
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/render-engine/render-engine
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiName
+    value: render-engine
+    url: https://pypi.org/pypi/render-engine/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2023"
+    url: https://api.github.com/repos/render-engine/render-engine/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-10
+    url: https://api.github.com/repos/render-engine/render-engine/releases/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-10-15
+    url: https://api.github.com/repos/render-engine/render-engine/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 64
+    url: https://api.github.com/repos/render-engine/render-engine
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 34
+    url: https://api.github.com/repos/render-engine/render-engine/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: discord
+    value: https://discord.gg/2xMQ4j4d8m
+    url: https://github.com/render-engine/render-engine/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Join the community!"
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, supportedVersions, npmName, packagistName, pypiDownloads, currentMajor, maintainerType]
+unreadable: []
+notes: >
+  The project states no legal entity or single maintainer: the README credits several people with the Maintenance contribution, and the site says it is an open source project that encourages the community to contribute, so the maintainer is recorded as the community; a reviewer decides. Two Python minimums conflict: the docs home page and the render-engine.org page say 3.10 or greater, while the README and the repository pyproject.toml on main say 3.11, and PyPI's requires_python for the latest release is >=3.10; runtimeMin is recorded at 3.10 from PyPI, the registry statement, and the README and main-branch pyproject value of 3.11 stays out. currentMajor is not recorded: the project uses calendar versions (2026.9.1), which have no major. The GitHub homepage field and the readthedocs docs site both belong to the project; the own site render-engine.org is recorded as the homepage. The CLI is a separate package, render-engine-cli, which the README says installs both modules; the CLI pages on readthedocs were not found at /cli/. The PyPI JSON does not carry a download figure, so pypiDownloads is unknown. The license file is not at the repository root (LICENSE returns 404 on main); the license is recorded from the API. The GitHub repository was created in 2019, and firstRelease is the oldest stable tag, 2023.10.1, per the rule for releases. The Discord link is in the README.

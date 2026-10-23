@@ -1,0 +1,96 @@
+id: wbsx
+name: wbsx
+status: accepted
+checkedAt: 2026-10-23
+description: Command-line toolkit that builds websites and web apps from XML with XSLT stylesheets.
+facts:
+  - field: homepage
+    value: https://wbsx.codeberg.page/
+    url: https://wbsx.codeberg.page/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "CLI toolkit for building websites and web apps using XSLT stylesheets"
+  - field: repository
+    value: https://codeberg.org/wbsx/wbsx
+    url: https://codeberg.org/api/v1/repos/wbsx/wbsx
+    checkedAt: 2026-10-23
+    via: api
+  - field: maintainer
+    value: esdinb
+    url: https://codeberg.org/wbsx/wbsx/raw/branch/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2023 esdinb"
+  - field: language
+    value: Go
+    url: https://codeberg.org/api/v1/repos/wbsx/wbsx
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg]
+    url: https://wbsx.codeberg.page/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "CLI toolkit for building websites and web apps using XSLT stylesheets"
+  - field: runtime
+    value: [go]
+    url: https://codeberg.org/wbsx/wbsx/raw/branch/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Building requires Go version 1.25 or later."
+  - field: runtimeMin
+    value: "1.25"
+    url: https://codeberg.org/wbsx/wbsx/raw/branch/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Building requires Go version 1.25 or later."
+  - field: installMethod
+    value: Homebrew cask, tar archive, Debian and Ubuntu package, RPM, Nix, Guix, Windows zip, build from source
+    url: https://wbsx.codeberg.page/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "brew install --cask wbsx"
+  - field: templating
+    value: [xslt]
+    url: https://wbsx.codeberg.page/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "building websites and web apps using XSLT stylesheets"
+  - field: runsAs
+    value: [always-on]
+    url: https://wbsx.codeberg.page/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Run a HTTP server on localhost:"
+  - field: license
+    value: MIT
+    url: https://codeberg.org/wbsx/wbsx/raw/branch/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://codeberg.org/wbsx/wbsx/raw/branch/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2025"
+    url: https://codeberg.org/api/v1/repos/wbsx/wbsx/tags
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-27
+    url: https://codeberg.org/api/v1/repos/wbsx/wbsx/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: buildCommand
+    value: "wbsx run template:site.xsl src.xml index.html"
+    url: https://wbsx.codeberg.page/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "wbsx run template:site.xsl src.xml index.html"
+notFound: [contributors, hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, currentMajor, renderingModes, docs, githubStargazers]
+unreadable: []
+notes: >
+  The project is hosted on Codeberg, so the GitHub-only fields are absent and the Codeberg stargazer count (0) has no field. The homepage states "NOTICE: This software is currently under active development. There will be breaking changes between releases.", which is recorded in prose only, not as a status. Releases are named r8 to r16 (r16 on 2026-08-27 is the newest stable release, r15 is a prerelease); the names carry no major, so currentMajor is absent. firstRelease is taken from the oldest tag v0.0.1 (2025-01-11), since the Codeberg release list starts at r12 in 2026. The LICENSE file reads "Copyright (c) 2023 esdinb", so esdinb is the maintainer as the project states it; the Codeberg owner account is a user account, not an organization. Contributors are left out because the Codeberg commit authors cannot be counted by the skill's method. The README lists Markdown rendering, asset bundling, localization and an HTTP/1, 2 and 3 server among its features, and says building needs libxml2, libxslt, ICU and lexbor with a C or C++ compiler for the cgo bindings. The homepage documents wbsx run and wbsx serve. The homepage's Docker example runs the image's serve command, which supports always-on; the homepage does not state whether its build output is static files, so renderingModes is absent.

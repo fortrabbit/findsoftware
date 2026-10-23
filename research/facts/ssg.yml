@@ -1,0 +1,125 @@
+id: ssg
+name: lustre_ssg
+status: accepted
+checkedAt: 2026-10-23
+description: Static site generator for Lustre projects, written in Gleam.
+facts:
+  - field: repository
+    value: https://github.com/lustre-labs/ssg
+    url: https://api.github.com/repos/lustre-labs/ssg
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://hexdocs.pm/lustre_ssg/
+    url: https://github.com/lustre-labs/ssg/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Hex Docs"
+  - field: categories
+    value: [ssg]
+    url: https://github.com/lustre-labs/ssg/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A simple static site generator for Lustre"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/lustre-labs/ssg/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "low-config static site generator"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/lustre-labs/ssg/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "it will spit out a bunch of HTML files for you"
+  - field: installMethod
+    value: [gleam add]
+    url: https://github.com/lustre-labs/ssg/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "gleam add lustre_ssg"
+  - field: buildCommand
+    value: gleam run -m build
+    url: https://github.com/lustre-labs/ssg/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "$ gleam run -m build"
+  - field: language
+    value: Gleam
+    url: https://api.github.com/repos/lustre-labs/ssg
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [erlang]
+    url: https://github.com/lustre-labs/ssg/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "will run on both Gleam's Erlang and JavaScript targets"
+  - field: runtime
+    value: [node, deno]
+    url: https://github.com/lustre-labs/ssg/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "tested to work on both Node.js and Deno"
+  - field: license
+    value: MIT
+    url: https://hex.pm/api/packages/lustre_ssg
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/lustre-labs/ssg/blob/main/gleam.toml
+    checkedAt: 2026-10-23
+    via: page
+    quote: 'licences = ["MIT"]'
+  - field: maintainer
+    value: lustre-labs
+    url: https://api.github.com/repos/lustre-labs/ssg
+    checkedAt: 2026-10-23
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/lustre-labs
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2023"
+    url: https://api.github.com/repos/lustre-labs/ssg/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/lustre-labs/ssg/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2025-05-21
+    url: https://api.github.com/repos/lustre-labs/ssg/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 108
+    url: https://api.github.com/repos/lustre-labs/ssg
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 18
+    url: https://api.github.com/repos/lustre-labs/ssg/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: hexName
+    value: lustre_ssg
+    url: https://hex.pm/api/packages/lustre_ssg
+    checkedAt: 2026-10-23
+    via: api
+  - field: hexDownloads
+    value: 8770
+    url: https://hex.pm/api/packages/lustre_ssg
+    checkedAt: 2026-10-23
+    via: api
+
+notFound: [homepage, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, runtimeMin, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, npmName, packagistName, pypiName, pypiDownloads, outputDir]
+unreadable: []
+notes: >
+  No homepage is recorded. The gleam.toml links list names https://lustre.build as the website, but that address redirects to the Lustre framework documentation on hexdocs.pm, which does not describe lustre_ssg, so it is not the project's own site. The README is the documentation; its badge links the Hex docs page, recorded as docs. The repository has no LICENSE file; the license is MIT from the Hex package metadata and gleam.toml. The GitHub organization lustre-labs has no display name, so the maintainer is recorded as the owner's login on GitHub, which is an organization login and not a legal name. The Hex owner is the user hayleigh, and the gleam.toml sponsor link names hayleigh-dot-dev; neither gives a legal name, so neither is recorded as the maintainer. The highest stable GitHub release is v0.12.0 (2025-05-21), while the Hex package lists 0.11.0 as its newest version; the GitHub release is used because the repository has releases and the major is the same. The GitHub releases list starts at v0.2.0 (2023-09-19), and the repository was created on 2023-09-17. The Hex total of 8770 downloads is the all-time figure from the package API (week 26, day 10). Lustre is named as the project the generator serves, but the README does not say it is built on Lustre, so basedOn is not recorded. The usage section declares routes in a build.gleam file that the project runs with gleam run -m build, and the README states that the package has no CLI, no built-in server, no data fetching and no client-side hydration.

@@ -1,0 +1,128 @@
+id: gor
+name: Gor
+status: accepted
+checkedAt: 2026-10-23
+description: Go static website and blog generator engine that compiles Markdown posts into static HTML.
+facts:
+  - field: repository
+    value: https://github.com/wendal/gor
+    url: https://api.github.com/repos/wendal/gor
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/wendal/gor/blob/master/README.md
+    url: https://github.com/wendal/gor/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A static websites and blog generator engine written in Go"
+  - field: maintainer
+    value: WendalChen
+    url: https://github.com/wendal/gor/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (C) 2013, by WendalChen"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/wendal
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/wendal/gor
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [ssg, blog]
+    url: https://github.com/wendal/gor/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A static websites and blog generator engine written in Go"
+  - field: runtime
+    value: [go binary]
+    url: https://github.com/wendal/gor/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "go install github.com/wendal/gor/gor"
+  - field: installMethod
+    value: go install github.com/wendal/gor/gor
+    url: https://github.com/wendal/gor/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "go install github.com/wendal/gor/gor"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/wendal/gor/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "there are only static files(HTML, CSS, js etc.)"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/wendal/gor/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "there are only static files(HTML, CSS, js etc.), no need of `php/mysql/java` etc."
+  - field: buildCommand
+    value: gor compile
+    url: https://github.com/wendal/gor/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Compile to generate static web page"
+  - field: outputDir
+    value: compiled
+    url: https://github.com/wendal/gor/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A new folder named compiled will be generated, all website is in it."
+  - field: contentStore
+    value: flat-file
+    url: https://github.com/wendal/gor/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generate a new post file: post/goodday.md, open it with your markdown editor to write."
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/wendal/gor/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This project is licensed under the BSD 3 Clause License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/wendal/gor/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "This project is licensed under the BSD 3 Clause License"
+  - field: alternativeTo
+    value: ruhoh
+    url: https://github.com/wendal/gor/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "You can treat gor as a replacement of the official implementation"
+  - field: firstRelease
+    value: "2014"
+    url: https://api.github.com/repos/wendal/gor/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/wendal/gor/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2014-12-29
+    url: https://api.github.com/repos/wendal/gor/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 594
+    url: https://api.github.com/repos/wendal/gor
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 15
+    url: https://api.github.com/repos/wendal/gor/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, basedOn, parent, forkOf, successorOf, templating, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, runtimeMin, maintainerType, hqCountry, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, packagistName, endoflifeId]
+unreadable: []
+notes: >
+  No project website is recorded: the CSV homepage is the repository, and the sites listed under "Sites using gor" are other people's sites. The GitHub API reports no license for the repository and the repository has no LICENSE file (the raw file answers 404); the README states the BSD 3 Clause license, and that statement is the recorded license. The first release is the oldest GitHub release (3.7.0, 2014-12-29), although the repository carries older tags (1.0.2, 2.1, 2.4, 2.5, 2.7.2) that have no release entry. The highest stable GitHub release is 3.7.0, so currentMajor is 3. The README says gor is "Ruhoh like" and works as a replacement for the Ruby implementation; that is recorded as alternativeTo, not basedOn, because the README does not say gor is built on ruhoh. The latest release is older than four years, so the import will move the record to stub on its own; the status is left as the CSV row sets it. The README does not state a minimum Go version.

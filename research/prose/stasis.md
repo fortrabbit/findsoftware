@@ -1,0 +1,1 @@
+Stasis is a Clojure library of functions for building static websites, not a generator. The README says it has no batteries included: it serves pages locally while the developer works and exports the same pages as static pages to deploy on a server. The site's own code supplies the pages.

@@ -1,0 +1,134 @@
+id: ornate
+name: Ornate
+status: accepted
+checkedAt: 2026-10-23
+description: Scala tool that builds multi-page HTML sites from Markdown sources, running on the JVM.
+facts:
+  - field: homepage
+    value: https://szeiger.github.io/ornate-doc/
+    url: https://szeiger.github.io/ornate-doc/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Ornate 0.6 Manual"
+  - field: repository
+    value: https://github.com/szeiger/ornate
+    url: https://api.github.com/repos/szeiger/ornate
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://szeiger.github.io/ornate-doc/
+    url: https://szeiger.github.io/ornate-doc/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Ornate 0.6 Manual"
+  - field: maintainer
+    value: Stefan Zeiger
+    url: https://raw.githubusercontent.com/szeiger/ornate/master/LICENSE.txt
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright 2016-2017 Stefan Zeiger"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/szeiger
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Scala
+    url: https://api.github.com/repos/szeiger/ornate
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://raw.githubusercontent.com/szeiger/ornate/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Runs on the JVM"
+  - field: categories
+    value: [ssg]
+    url: https://raw.githubusercontent.com/szeiger/ornate/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "is a tool for building multi-page HTML sites from Markdown sources"
+  - field: contentStore
+    value: Markdown sources
+    url: https://raw.githubusercontent.com/szeiger/ornate/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "from Markdown sources"
+  - field: installMethod
+    value: sbt plugin
+    url: https://szeiger.github.io/ornate-doc/running.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "addSbtPlugin("
+  - field: installMethod
+    value: Maven Central or JCenter library
+    url: https://szeiger.github.io/ornate-doc/running.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Ornate is available in JCenter and Maven Central"
+  - field: installMethod
+    value: command line launcher with the core package
+    url: https://szeiger.github.io/ornate-doc/running.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "You need to get the Ornate core package and its dependencies in order to run Ornate from the command line"
+  - field: buildCommand
+    value: sbt ornate
+    url: https://szeiger.github.io/ornate-doc/running.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "You can run Ornate from sbt with the ornate task"
+  - field: outputDir
+    value: target/doc
+    url: https://szeiger.github.io/ornate-doc/running.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "it builds the site to target/doc"
+  - field: runsAs
+    value: [local]
+    url: https://szeiger.github.io/ornate-doc/running.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "You can run Ornate from sbt with the ornate task"
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/szeiger/ornate/master/LICENSE.txt
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/szeiger/ornate/master/LICENSE.txt
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: firstRelease
+    value: "2016"
+    url: https://api.github.com/repos/szeiger/ornate/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/szeiger/ornate/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2019-06-11
+    url: https://api.github.com/repos/szeiger/ornate/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 80
+    url: https://api.github.com/repos/szeiger/ornate
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/szeiger/ornate/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [renderingModes, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, paidEdition, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, runtimeMin, maintainerType, templating]
+unreadable: []
+notes: >
+  The homepage answers over https and the CSV row's http address redirects to it, so the https address is recorded. The GitHub API reports the license as NOASSERTION because LICENSE.txt adds notices for bundled Foundation 6 and Mermaid to the Apache text; only Apache-2.0 is recorded for Ornate; the MIT license belongs to the bundled third-party Foundation 6 part. The manual says Ornate is based on CommonMark, a Markdown specification, and configured with Typesafe Config; neither is recorded as basedOn. The pages say "multi-page HTML sites" without calling the output static files, so renderingModes is not recorded. The running page says "Note: Ornate requires Scala 2.11" while the v0.6 release notes say "Update to Scala 2.12 and sbt 1.x" and build.sbt sets scalaVersion 2.12.8 on master; the conflict is not resolved, so no runtime version is recorded. The oldest GitHub release is v0.2 (2016-10-09); v0.1 exists only as a tag. The last commit on the default branch is 2020-03-25, and the repository is not archived. The sbt plugin page and the command line page are the install and deployment pages read; the Maven artifact is not a registry in the list and has no figure recorded. The project's own site is the manual for version 0.6, and the repository's build.sbt is at version 0.5-SNAPSHOT on master.

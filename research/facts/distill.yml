@@ -1,0 +1,129 @@
+id: distill
+name: distill
+status: accepted
+checkedAt: 2026-10-23
+description: R package that provides the Distill format for R Markdown, for articles, blogs and websites built from R Markdown sources.
+facts:
+  - field: homepage
+    value: https://rstudio.github.io/distill/
+    url: https://rstudio.github.io/distill/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Distill for R Markdown is a web publishing format"
+  - field: repository
+    value: https://github.com/rstudio/distill
+    url: https://api.github.com/repos/rstudio/distill
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://rstudio.github.io/distill/
+    url: https://github.com/rstudio/distill/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Learn more about using Distill at"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/rstudio/distill
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: R
+    url: https://github.com/rstudio/distill/blob/main/DESCRIPTION
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Authors@R:"
+  - field: runtime
+    value: [r]
+    url: https://github.com/rstudio/distill/blob/main/DESCRIPTION
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Authors@R:"
+  - field: categories
+    value: [blog]
+    url: https://rstudio.github.io/distill/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "as a Distill blog"
+  - field: installMethod
+    value: install.packages from CRAN
+    url: https://rstudio.github.io/distill/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "first install the distill R package from CRAN"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/rstudio/distill
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/rstudio/distill/releases/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2023-10-06
+    url: https://api.github.com/repos/rstudio/distill/releases/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: cranName
+    value: distill
+    url: https://cran.r-project.org/package=distill
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Format for Scientific and Technical Writing"
+  - field: githubStargazers
+    value: 426
+    url: https://api.github.com/repos/rstudio/distill
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 22
+    url: https://api.github.com/repos/rstudio/distill/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: maintainer
+    value: Posit Software, PBC
+    url: https://github.com/rstudio/distill/blob/main/DESCRIPTION
+    checkedAt: 2026-10-23
+    via: page
+    quote: "person(given = \"Posit Software, PBC\", role = c(\"cph\", \"fnd\")),"
+  - field: basedOn
+    value: R Markdown
+    url: https://github.com/rstudio/distill/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Distill for R Markdown combines the technical authoring features of Distill with R Markdown"
+  - field: firstRelease
+    value: "2019"
+    url: https://cran.r-project.org/src/contrib/Archive/distill/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "distill_0.7.tar.gz   2019-05-03"
+  - field: outputDir
+    value: _site
+    url: https://rstudio.github.io/distill/website.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Website content is by default written to the _site sub-directory"
+  - field: buildCommand
+    value: rmarkdown::render_site()
+    url: https://rstudio.github.io/distill/blog.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "To build a website from the command line, use the rmarkdown::render_site() function"
+  - field: deployTargets
+    value: [Posit Connect, GitHub Pages, Netlify, Google Firebase, Site44, Amazon S3]
+    url: https://rstudio.github.io/distill/publish_website.html
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Posit Connect GitHub Pages Netlify Google Firebase Site44 (Dropbox) Amazon S3 Other services"
+  - field: forum
+    value: https://community.rstudio.com/tag/distill
+    url: https://github.com/rstudio/distill/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The RStudio community is a friendly place to ask any questions about distill."
+notFound: [hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEditions, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, supportedVersions, runtimeMin, npmName, packagistName, pypiName, rubygemsName, maintainerType]
+unreadable: []
+notes: >
+  The package is an R Markdown output format, not a site generator on its own: the homepage describes articles, a Distill website and a Distill blog, and the name of R Markdown appears as the authoring tool. The project says it combines the Distill web framework with R Markdown; the basedOn fact names the Distill web framework (distillpub/template), and basedOn names R Markdown, which the README says Distill for R Markdown combines the Distill authoring features with. The homepage has no statement that the output is static files, so renderingModes is not recorded. The GitHub releases are v1.4 (2022-05-13), v1.5 and v1.6 (2023-10-06); firstRelease reads 2019 from the oldest file in the CRAN archive, older than the first GitHub release. The main branch DESCRIPTION reads 1.6.1, which is unreleased, so it is not recorded. The maintainer recorded is Posit Software, PBC, the copyright holder and funder in the current DESCRIPTION authors list; the LICENSE file carries the older RStudio, Inc. line and the CRAN page names Christophe Dervieux as the package maintainer. The CRAN page gives the publication date 2023-10-06, which matches the GitHub release.

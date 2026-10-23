@@ -1,0 +1,1 @@
+Hindsite is a static website generator written in Go. It builds HTML pages from Markdown and Rimu documents kept in a content directory, and writes the site into a build directory. It is installed with `go install`, which needs Go 1.18 or later, or from a pre-compiled binary. The output is a directory of static files. Stuart Rackham holds the copyright under the MIT license.

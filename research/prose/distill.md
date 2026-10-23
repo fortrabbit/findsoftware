@@ -1,0 +1,3 @@
+distill is an R package that provides the Distill format for R Markdown, a web publishing format for scientific and technical articles. It combines the authoring features of the Distill web framework with R Markdown, and articles can be gathered into a Distill website or blog. The package is installed from CRAN.
+
+A website is built with `rmarkdown::render_site()` and written to the `_site` directory by default. The [publishing guide](https://rstudio.github.io/distill/publish_website.html) describes copying that output to a web server or hosting service such as GitHub Pages, Netlify or Amazon S3. Posit Software, PBC is named as copyright holder and funder in the package's authors list.

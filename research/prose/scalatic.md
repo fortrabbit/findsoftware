@@ -1,0 +1,1 @@
+Scalatic is a static blog generator written in Scala. It renders each Markdown post to HTML by calling the GitHub API, so a build needs network access to GitHub. The generated blog is written to a target folder inside the blog's folder structure. It runs on the JVM, either from the single jar on the release page or from a clone with sbt.

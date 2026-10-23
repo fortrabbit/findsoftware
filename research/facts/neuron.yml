@@ -1,0 +1,140 @@
+id: neuron
+name: neuron
+status: accepted
+checkedAt: 2026-10-23
+description: "Haskell note-taking app for Zettelkasten-style plain-text notes that also publishes them as a static site."
+facts:
+  - field: homepage
+    value: https://neuron.zettel.page/
+    url: https://neuron.zettel.page/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "future-proof open-source app for managing your plain-text notes"
+  - field: repository
+    value: https://github.com/srid/neuron
+    url: https://api.github.com/repos/srid/neuron
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://neuron.zettel.page/install
+    url: https://neuron.zettel.page/install
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Neuron can be installed on Windows, Linux or macOS."
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/srid
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Haskell
+    url: https://api.github.com/repos/srid/neuron
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [notes, ssg]
+    url: https://neuron.zettel.page/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "publishing them as a static site on the web"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/srid/neuron/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Auto-generated static web site"
+  - field: runsAs
+    value: [local]
+    url: https://neuron.zettel.page/install
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Open the local static site"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/srid/neuron/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Auto-generated static web site"
+  - field: license
+    value: AGPL-3.0
+    url: https://api.github.com/repos/srid/neuron
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/srid/neuron/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "GNU AFFERO GENERAL PUBLIC LICENSE"
+  - field: forum
+    value: https://github.com/srid/neuron/discussions
+    url: https://github.com/srid/neuron/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "To discuss and propose ideas, visit the Discussions tab"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/srid/neuron/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2021-08-11
+    url: https://api.github.com/repos/srid/neuron/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2020"
+    url: https://api.github.com/repos/srid/neuron/releases/tags/0.2.0.0
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 50
+    url: https://api.github.com/repos/srid/neuron/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 1560
+    url: https://api.github.com/repos/srid/neuron
+    checkedAt: 2026-10-23
+    via: api
+  - field: installMethod
+    value: "Nix (nix-env from the repository archive)"
+    url: https://neuron.zettel.page/install
+    checkedAt: 2026-10-23
+    via: page
+    quote: "nix-env -if https://github.com/srid/neuron/archive/master.tar.gz"
+  - field: installMethod
+    value: "docker (image sridca/neuron)"
+    url: https://neuron.zettel.page/docker
+    checkedAt: 2026-10-23
+    via: page
+    quote: "You can use neuron without installing it by trying the Docker image sridca/neuron"
+  - field: buildCommand
+    value: "neuron gen"
+    url: https://neuron.zettel.page/install
+    checkedAt: 2026-10-23
+    via: page
+    quote: "gen Generate and serve the static site"
+  - field: contentStore
+    value: "flat-file"
+    url: https://github.com/srid/neuron/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Work with a directory of markdown files"
+  - field: maintainer
+    value: Sridhar Ratnakumar
+    url: https://hackage.haskell.org/package/neuron
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Author Sridhar Ratnakumar"
+  - field: hackageName
+    value: neuron
+    url: https://hackage.haskell.org/package/neuron
+    checkedAt: 2026-10-23
+    via: page
+    quote: "neuron: Future-proof system for plain-text notes"
+notFound: [maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, outputDir, runtime, runtimeMin, npmName, npmWeeklyDownloads, pypiName, pypiDownloads, packagistName, rubygemsName, selfHostOption]
+unreadable: []
+notes: >
+  The homepage says "Note: Neuron will soon be superceded by a next-gen successor", and the README, in a details block, says "Neuron is being superceded by Emanote" and links github.com/srid/emanote; the repository description repeats the successor. Both pages still describe neuron as the app to install and use, so this is a named successor and not an end signal under AGENTS.md; status stays accepted; emanote.yml records the succession as successorOf neuron. The latest stable GitHub release (1.9.35.0) is dated 2021-08-11, which the import reads as a stale release history; the repository was pushed in 2026. The Nix install is the development version. The static binary page says there is no static binary per se for the current version, offers a self-contained Linux executable built with nix-bundle, and describes a static binary of the last stable release for the older v1; none is recorded as an installMethod. The README links a Matrix room for chat, which has no field. The maintainer is the Author line of the Hackage package page; hackageName is a field coined here for the package id. The install page does not name Haskell as a runtime, so runtime is absent and the GitHub language field is recorded as language. The homepage, the README and the install page do not say the output is served by a live process. The Docker workflow is named on the install page without a source page, so it is named in installMethod only.
+  The README lists a directory of markdown files, linking syntax, hierarchical tagging and editor integrations. The install page lists the commands gen, new, open, search and query, and says gen generates and serves the static site.

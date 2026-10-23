@@ -1,0 +1,1 @@
+Jamstackpy is a static site generator written in Python that builds websites from Jinja templates. Its README says it works with the Flask library. It is installed with pip from PyPI as the jamstack package, and the `static.py` file in a project builds the site into a `dist` folder. Its `--serve` option starts a development server that reloads when files change.

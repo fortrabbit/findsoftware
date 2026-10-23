@@ -1,0 +1,103 @@
+id: quickblog
+name: quickblog
+status: accepted
+checkedAt: 2026-10-23
+description: Blog engine for Clojure and babashka that renders Markdown posts into a blog with an index, archive, tag pages and templates.
+facts:
+  - field: repository
+    value: https://github.com/borkdude/quickblog
+    url: https://api.github.com/repos/borkdude/quickblog
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/borkdude/quickblog/blob/main/README.md
+    url: https://github.com/borkdude/quickblog/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Quickstart"
+  - field: maintainer
+    value: Michiel Borkent
+    url: https://raw.githubusercontent.com/borkdude/quickblog/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2021-2022 Michiel Borkent"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/borkdude
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [blog]
+    url: https://github.com/borkdude/quickblog/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The blog code powering my"
+  - field: language
+    value: Clojure
+    url: https://api.github.com/repos/borkdude/quickblog
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [babashka, clojure]
+    url: https://github.com/borkdude/quickblog/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Compatible with [babashka](#babashka) and [Clojure](#clojure)"
+  - field: runtimeMin
+    value: babashka 1.12.201
+    url: https://github.com/borkdude/quickblog/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "quickblog requires babashka v1.12.201"
+  - field: installMethod
+    value: babashka git dependency in bb.edn
+    url: https://github.com/borkdude/quickblog/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "add a task to your project's"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/borkdude/quickblog/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "To start an HTTP server and re-render on changes to files"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/borkdude/quickblog
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/borkdude/quickblog/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2022"
+    url: https://api.github.com/repos/borkdude/quickblog/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/borkdude/quickblog/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2025-06-12
+    url: https://api.github.com/repos/borkdude/quickblog/releases/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 218
+    url: https://api.github.com/repos/borkdude/quickblog
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 20
+    url: https://api.github.com/repos/borkdude/quickblog/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, contentStore, templating, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, renderingModes, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, supportedVersions, npmName, packagistName]
+unreadable: []
+notes: >
+  The GitHub homepage field and the site blog.michielborkent.nl are the author's own blog, one of the instances the README lists under "Blogs using quickblog", not a project site, so no homepage is recorded; a reviewer decides whether that counts as the project's own site. The README gives two Markdown libraries: the Features section names markdown-clj, and the Quickstart says that since v0.4.7 quickblog relies on the built-in Nextjournal Markdown library; both are recorded as the README states them and neither is a basedOn parent. The README does not say the output is static files, so renderingModes is unknown; it describes a render step that writes to out-dir and a watch task that serves an HTTP server during development. The README's Blogs section lists instances by their authors and is not recorded. The blog code is intended to run as a library from babashka tasks or Clojure aliases, so installMethod names both git dependencies.

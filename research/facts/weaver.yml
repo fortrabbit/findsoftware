@@ -1,0 +1,120 @@
+id: weaver
+name: Weaver
+status: accepted
+checkedAt: 2026-10-23
+description: Ruby DSL that generates websites from weave files.
+facts:
+  - field: homepage
+    value: https://davidsiaw.github.io/weaver-docs/
+    url: https://davidsiaw.github.io/weaver-docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The following is a rough documentation intended to simply demonstrate and enumerate the facilities provided by weaver"
+  - field: repository
+    value: https://github.com/davidsiaw/weaver
+    url: https://api.github.com/repos/davidsiaw/weaver
+    checkedAt: 2026-10-23
+    via: api
+  - field: maintainer
+    value: David Siaw
+    url: https://raw.githubusercontent.com/davidsiaw/weaver/master/LICENSE.txt
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2015 David Siaw"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/davidsiaw/weaver
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Ruby
+    url: https://davidsiaw.github.io/weaver-docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Weave files only contain Ruby code"
+  - field: categories
+    value: [ssg]
+    url: https://raw.githubusercontent.com/davidsiaw/weaver/master/weaver.gemspec
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Website generator"
+  - field: runtime
+    value: [ruby]
+    url: https://davidsiaw.github.io/weaver-docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Weave files only contain Ruby code"
+  - field: installMethod
+    value: gem install weaver
+    url: https://davidsiaw.github.io/weaver-docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "gem install weaver"
+  - field: buildCommand
+    value: bundle exec weaver build
+    url: https://davidsiaw.github.io/weaver-docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "bundle exec weaver build"
+  - field: outputDir
+    value: build
+    url: https://davidsiaw.github.io/weaver-docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Your website will be generated and placed in the build directory"
+  - field: runsAs
+    value: [local]
+    url: https://davidsiaw.github.io/weaver-docs/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "To preview your site, simply go bundle exec weaver"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/davidsiaw/weaver
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/davidsiaw/weaver/master/LICENSE.txt
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: firstRelease
+    value: "2015"
+    url: https://rubygems.org/api/v1/versions/weaver.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://rubygems.org/api/v1/gems/weaver.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-17
+    url: https://rubygems.org/api/v1/versions/weaver.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: rubygemsName
+    value: weaver
+    url: https://rubygems.org/api/v1/gems/weaver.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: rubygemsDownloads
+    value: 123537 (total)
+    url: https://rubygems.org/api/v1/gems/weaver.json
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 7
+    url: https://api.github.com/repos/davidsiaw/weaver
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/davidsiaw/weaver/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, runtimeMin]
+unreadable: []
+notes: >
+  The repository README is the RubyGems template with TODO placeholders and no usage text, so the record relies on the docs site and the gemspec. The CSV lists the homepage as http; the https address answers 200 and is recorded. The GitHub language field reads JavaScript; the docs site says weave files contain Ruby code, so language is recorded as Ruby from the page. The repository has no GitHub releases; the tag v0.9.11 matches gem version 0.9.11 (2026-10-17), and the registry is used for the major and the release date under the rule for a repository without releases. The gem's download figure is the total from the RubyGems gem endpoint, not a period. The npm package named weaver belongs to another project (n4kz/weaver) and is not recorded. The docs site says "Welcome to Weaver 0.9.0" while the gem is 0.9.11; no version is recorded from the site. The dynamic features page shows form and button widgets written in the weave DSL; it is not read as a server mode. No page says the build output is static files, so renderingModes is absent and runsAs holds only the local preview. The docs site says weave files are Ruby code that calls methods named after HTML tags, such as h1 and center_page, and that the documentation page is itself written in Weaver. The gemspec gives no required Ruby version, so runtimeMin is absent.

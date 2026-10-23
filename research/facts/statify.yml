@@ -1,0 +1,94 @@
+id: statify
+name: Statify
+status: stub
+checkedAt: 2026-10-23
+description: Python 3 static site generator that renders Markdown articles and pages with Jinja2.
+facts:
+  - field: repository
+    value: https://github.com/NBens/Statify
+    url: https://api.github.com/repos/NBens/Statify
+    checkedAt: 2026-10-23
+    via: api
+  - field: maintainer
+    value: NBens
+    url: https://github.com/NBens/Statify/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2018, NBens"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/NBens
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/NBens/Statify
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/NBens/Statify/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Powered by Python 3"
+  - field: categories
+    value: [ssg]
+    url: https://github.com/NBens/Statify/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Simple lightweight static site generator"
+  - field: contentStore
+    value: flat-file
+    url: https://github.com/NBens/Statify/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Simply open contents folder, create a new md file"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/NBens/Statify/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Simple lightweight static site generator"
+  - field: license
+    value: BSD-2-Clause
+    url: https://api.github.com/repos/NBens/Statify
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/NBens/Statify/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "BSD 2-Clause License"
+  - field: lastCommitDate
+    value: 2018-09-25
+    url: https://api.github.com/repos/NBens/Statify/commits?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 5
+    url: https://api.github.com/repos/NBens/Statify
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/NBens/Statify/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: templating
+    value: [jinja2]
+    url: https://github.com/NBens/Statify/blob/master/statify.py
+    checkedAt: 2026-10-23
+    via: page
+    quote: "from jinja2 import Template"
+  - field: buildCommand
+    value: statify.py
+    url: https://github.com/NBens/Statify/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Then Run statify.py"
+notFound: [homepage, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, maintainerType, runsAs, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEditions, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, docker, endoflifeId, supportedVersions, runtimeMin, outputDir, currentMajor, latestReleaseDate, firstRelease, docs, installMethod, npmName, packagistName, pypiName, cranName]
+unreadable: []
+notes: >
+  Status is stub while criterion 3 is in doubt: the README gives only a dependency list and says to run statify.py. Revisit when the project documents an install or deployment step.
+  The repository has no homepage and no GitHub release or tag, so lastCommitDate carries the date. The npm package named statify belongs to another project (lnwdr/statify.js, a static file server) and is not recorded. The repository description says "with web interface", but the README lists an online editor only under ToDo, so no web interface fact is recorded. The README names Markdown2 and Jinja2 as dependencies and tells the user to run statify.py after editing config.json; no other installation or deployment page exists, so installMethod is not recorded. The README leaves the output directory unstated. The Jinja2 fact cites the import line of statify.py. Each article or page is a Markdown file whose leading HTML comments set its title, subtitle or author, and config.json holds the site's social links and blog information. The README lists an online editor, multiple themes, and tags and categories under ToDo. No page documents an install step beyond the dependency list and running statify.py, so the candidate may fail criterion 3.

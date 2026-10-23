@@ -1,0 +1,136 @@
+id: cactus
+name: Cactus
+status: stub
+checkedAt: 2026-10-23
+description: Python static website generator that renders Django templates into a build folder and can deploy it to Amazon S3.
+facts:
+  - field: status
+    value: stub
+    url: http://www.cactusformac.com/
+    checkedAt: 2026-10-23
+    via: page
+  - field: repository
+    value: https://github.com/eudicots/Cactus
+    url: https://api.github.com/repos/eudicots/Cactus
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.com/eudicots/Cactus/blob/master/README.md
+    url: https://github.com/eudicots/Cactus/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Extended guide"
+  - field: maintainer
+    value: Koen Bok
+    url: https://raw.githubusercontent.com/eudicots/Cactus/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2012 Koen Bok"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/eudicots
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/eudicots/Cactus
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/eudicots/Cactus/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "using Python"
+  - field: categories
+    value: [ssg]
+    url: https://github.com/eudicots/Cactus/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "static website generator"
+  - field: installMethod
+    value: easy_install
+    url: https://github.com/eudicots/Cactus/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "sudo easy_install cactus"
+  - field: buildCommand
+    value: cactus build
+    url: https://github.com/eudicots/Cactus/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "cactus build"
+  - field: outputDir
+    value: .build
+    url: https://github.com/eudicots/Cactus/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: ".build Generated site (upload this to your host)"
+  - field: renderingModes
+    value: [static]
+    url: https://github.com/eudicots/Cactus/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "generate a static version in the build folder"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/eudicots/Cactus/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "that you can upload to any host"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/eudicots/Cactus/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Cactus can also run a small webserver to preview your site"
+  - field: templating
+    value: [django]
+    url: https://github.com/eudicots/Cactus/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Cactus uses the Django templates"
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/eudicots/Cactus
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2013"
+    url: https://pypi.org/pypi/Cactus/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://pypi.org/pypi/Cactus/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2016-02-21
+    url: https://pypi.org/pypi/Cactus/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 3465
+    url: https://api.github.com/repos/eudicots/Cactus
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 40
+    url: https://api.github.com/repos/eudicots/Cactus/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiName
+    value: Cactus
+    url: https://pypi.org/pypi/Cactus/json
+    checkedAt: 2026-10-23
+    via: api
+  - field: pypiDownloads
+    value: "246 last month"
+    url: https://pypistats.org/api/packages/cactus/recent
+    checkedAt: 2026-10-23
+    via: api
+notFound: [deployTargets, homepage, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runtimeMin, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, contentFormats]
+unreadable: []
+notes: >
+  Stub: the README lists http://www.cactusformac.com as the "Cactus app site" among its examples, and the GitHub homepage field is empty. On 2026-10-23 neither cactusformac.com nor www.cactusformac.com resolved (dig returns nothing, also through 1.1.1.1), so no homepage is recorded, as with bowman. The dead host is an example site of the README, not a site the project names as its own, so a reviewer should decide whether stub is right; the import also moves a record with no release in four years to stub. The repository koenbok/Cactus redirects to eudicots/Cactus, which is recorded. The repository has no GitHub release; the highest tag is v3.3.3 and the PyPI package Cactus has the same version (2016-02-21), so currentMajor and latestReleaseDate come from PyPI. firstRelease is the earliest PyPI upload (2.2.1, 2013-11-26). The README's Python note says Cactus is tested on Python 2.6, 2.7, 3.4 and 3.5, which is a tested list and not a minimum. The README describes deployment to S3; the 3.0 news also names support for multiple deployment backends (Google Sites), which no page read here describes further. The README says plugins enable blogging, spriting and versioning, and that Cactus can set up nameservers for an S3 website (Amazon only).
