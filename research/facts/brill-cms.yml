@@ -1,0 +1,100 @@
+id: brill-cms
+name: Brill CMS
+status: stub
+checkedAt: 2026-10-23
+description: "Brill CMS is a React and TypeScript client that runs in the browser, served by the Brill Server, a Java application."
+facts:
+  - field: name
+    value: Brill CMS
+    url: https://github.com/brill-software/brill_client/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "For the Brill CMS to be able to access a React component"
+  - field: repository
+    value: https://github.com/brill-software/brill_client
+    url: https://api.github.com/repos/brill-software/brill_client
+    checkedAt: 2026-10-23
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/orgs/brill-software
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/brill-software/brill_client
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/brill-software/brill_server/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The Brill Server is a Spring Boot application"
+  - field: buildCommand
+    value: yarn build
+    url: https://github.com/brill-software/brill_client/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "the resulting build can be found in the Brill Client **/build** directory"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/brill-software/brill_server/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The Brill Server acts as a web server and listens for HTTP requests on a port."
+  - field: categories
+    value: [cms]
+    url: https://github.com/brill-software/brill_client/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "For the Brill CMS to be able to access a React component"
+  - field: maintainer
+    value: Brill Software Limited
+    url: https://github.com/brill-software/brill_client/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Brill Software Limited - Brill Framework, distributed under the MIT License."
+  - field: license
+    value: MIT
+    url: https://github.com/brill-software/brill_client/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The Brill Community Edition is distributed under the MIT license."
+  - field: license
+    value: Brill Software Enterprise Edition License
+    url: https://github.com/brill-software/brill_client/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "distributed under the Brill Software Enterprise Edition License."
+  - field: licenseModel
+    value: open-core
+    url: https://github.com/brill-software/brill_client/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The Enterprise Edition provides some additional features specifically for Enterprise customers."
+  - field: paidEdition
+    value: Brill Enterprise Edition
+    url: https://github.com/brill-software/brill_client/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "you require an Enterprise License, which can be obtained from Brill Software"
+  - field: lastCommitDate
+    value: 2024-04-25
+    url: https://api.github.com/repos/brill-software/brill_client/commits?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 1
+    url: https://api.github.com/repos/brill-software/brill_client
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/brill-software/brill_client/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, docs, firstRelease, currentMajor, latestReleaseDate, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, installMethod, renderingModes, usageShare, reportedInstalls, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: [https://www.brill.software]
+notes: >
+  Stub: the homepage www.brill.software resolves in DNS but did not answer (connection timed out on two attempts, 2026-10-23), so no homepage is recorded and the Developers Guide that the README links could not be read. Settle it by reading the site once it answers, or the developer guide at its own address. The client README says the Node.js server is for development only; production serves the built client from the Java server. The client repository is recorded as the CSV names it. The server, github.com/brill-software/brill_server (Java, Spring Boot, Gradle; its README configures MySQL in the local example), is public under the same MIT and Enterprise statements and is not a separate record. The GitHub repository has no release or tag, so lastCommitDate is recorded. The license statements in the client LICENSE file are recorded one per entry.

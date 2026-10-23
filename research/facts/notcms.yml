@@ -1,0 +1,74 @@
+id: notcms
+name: NotCMS
+status: hosted-service
+checkedAt: 2026-10-23
+description: "NotCMS is a hosted service that syncs Notion databases to a typed TypeScript SDK for building websites, with Notion as the editing interface."
+facts:
+  - field: name
+    value: NotCMS
+    url: https://github.com/qqpann/notcms/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "NotCMS makes it easy to create a CMS, from Notion"
+  - field: homepage
+    value: https://www.notcms.com
+    url: https://www.notcms.com
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Create & publish your website content from Notion"
+  - field: docs
+    value: https://docs.notcms.com/en/introduction
+    url: https://docs.notcms.com/en/introduction
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Use Notion to edit content and a typed SDK to build your site"
+  - field: categories
+    value: [headless-cms]
+    url: https://docs.notcms.com/en/introduction
+    checkedAt: 2026-10-23
+    via: page
+    quote: "NotCMS connects the Notion databases your team edits to the website you build"
+  - field: adminUi
+    value: "no, editing happens in Notion"
+    url: https://docs.notcms.com/en/introduction
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Writers work in Notion"
+  - field: importsFrom
+    value: [WordPress]
+    url: https://www.notcms.com/wordpress-migration
+    checkedAt: 2026-10-23
+    via: page
+    quote: "From WordPress to a site your team can update in Notion"
+  - field: maintainer
+    value: Qiushi Pan
+    url: https://www.notcms.com/tokushoho
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Seller and responsible operator Qiushi Pan"
+  - field: maintainerType
+    value: individual
+    url: https://www.notcms.com/tokushoho
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Seller and responsible operator Qiushi Pan"
+  - field: x
+    value: https://x.com/qqpann
+    url: https://www.notcms.com
+    checkedAt: 2026-10-23
+    via: page
+  - field: pricingPage
+    value: https://www.notcms.com/pricing
+    url: https://www.notcms.com/pricing
+    checkedAt: 2026-10-23
+    via: page
+  - field: apiLimits
+    value: "600 authenticated requests per 60 seconds per secret key, the same on every plan"
+    url: https://docs.notcms.com/en/usage/errors-and-rate-limits
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The limits are the same on every plan."
+notFound: [runsAs, contentStore, databases, headlessApi, i18n, multisite, livePreview, userRoles, sso, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, renderingModes, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, runtimeMin, endoflifeId, selfHostOption, sourcePublic, installMethod, paidEdition]
+unreadable: []
+notes: >
+  Hosted-service: the product is the NotCMS service with a dashboard (dash.notcms.com) that connects a Notion workspace and issues the secret key and workspace id the SDK reads, per the docs introduction and the README init step. The SDK and CLI are one npm package, notcms, built from packages/notcms of github.com/qqpann/notcms (TypeScript, user-owned repository, MIT per the npm license field, 19 stars and 283 downloads in the last week on 2026-10-23, oldest release 2026-01-17, latest release 2026-10-13); these are SDK figures and are not recorded as the product's license, adoption or release facts. The pricing page lists paid plans with prices; no price is recorded. No self-hosting of the service is stated, so selfHostOption is not recorded. The WordPress migration is a consultation offered by the vendor, so it is recorded as importsFrom only with the page's own words. Notion's user roles are Notion features, not NotCMS features, so userRoles is not recorded. The terms say Japanese law governs and the operator's address is given on request, so hqCountry is not recorded. The docs call the content API rate limited per Cloudflare location. Writers edit in Notion and the site reads synchronized content, so the content store is not recorded for NotCMS.

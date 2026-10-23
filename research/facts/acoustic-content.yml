@@ -1,0 +1,91 @@
+id: acoustic-content
+name: Acoustic Content
+status: hosted-service
+checkedAt: 2026-10-23
+description: Hosted headless content platform that stores content in its own database and delivers it through REST APIs, with a content UI and a Sites feature.
+facts:
+  - field: homepage
+    value: https://developer.goacoustic.com/acoustic-content
+    url: https://developer.goacoustic.com/acoustic-content
+    checkedAt: 2026-10-23
+    via: page
+  - field: docs
+    value: https://developer.goacoustic.com/acoustic-content/docs/api
+    url: https://developer.goacoustic.com/acoustic-content/docs/api
+    checkedAt: 2026-10-23
+    via: page
+  - field: maintainer
+    value: Acoustic, L.P.
+    url: https://www.acoustic.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "© Copyright 2026 Acoustic, L.P. All Rights Reserved."
+  - field: pricingPage
+    value: https://www.acoustic.com/pricing
+    url: https://www.acoustic.com/pricing
+    checkedAt: 2026-10-23
+    via: page
+  - field: categories
+    value: [headless-cms, hosted-service]
+    url: https://developer.goacoustic.com/acoustic-content/docs/api
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The Content REST APIs allow you to work with the content in the database."
+  - field: contentStore
+    value: Acoustic Content database
+    url: https://developer.goacoustic.com/acoustic-content/docs/api
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The Content REST APIs allow you to work with the content in the database."
+  - field: headlessApi
+    value: [rest]
+    url: https://developer.goacoustic.com/acoustic-content/docs/api
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The Content REST APIs allow you to work with the content in the database."
+  - field: adminUi
+    value: yes, hosted content UI
+    url: https://developer.goacoustic.com/acoustic-content/docs/developing-your-own-website
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The pages and content are managed by content composers in the Content UI"
+  - field: userRoles
+    value: yes
+    url: https://developer.goacoustic.com/acoustic-content/docs/api.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Each API service operation has a set of user roles that are allowed for the operation."
+  - field: livePreview
+    value: yes
+    url: https://developer.goacoustic.com/acoustic-content/docs/preview-content
+    checkedAt: 2026-10-23
+    via: page
+    quote: "In preview mode, the draft content is overlaid over the published content"
+  - field: multisite
+    value: yes
+    url: https://developer.goacoustic.com/acoustic-content/docs/accessing-your-sites-through-acoustic-content-apis
+    checkedAt: 2026-10-23
+    via: page
+    quote: "In Acoustic Content, you can map individual sites to individual hostnames."
+  - field: i18n
+    value: content items carry a locale property
+    url: https://developer.goacoustic.com/acoustic-content/docs/rendering
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The locale property of the currently rendered content item."
+  - field: importsFrom
+    value: [IBM Web Content Manager]
+    url: https://github.com/acoustic-content-samples/wchconvert-cli
+    checkedAt: 2026-10-23
+    via: api
+    quote: "converting IBM Web Content Manager content to be used with Acoustic Content"
+  - field: apiLimits
+    value: requests per second per subscription; HTTP 429 above the throughput limit
+    url: https://developer.goacoustic.com/acoustic-content/docs/api
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Content limits the number of requests per second per subscription"
+notFound: [repository, repoOwnerType, firstRelease, hqCountry, parent, basedOn, language, runtime, license, sso, selfHostOption, regions, freeTier, paidEditions, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, currentMajor, latestReleaseDate, githubStargazers, contributors, templating, databases, renderingModes, runsAs, installMethod, buildCommand, outputDir, runtimeMin, alternativeTo, successorOf, forkOf, supportedVersions]
+unreadable: []
+notes: >
+  The product page https://acoustic.com/products/content/ now answers 308 to the company home page, so the product is described from its developer documentation at developer.goacoustic.com. The company home page is a marketing site for other Acoustic products and does not name Content as a product page. The privacy notice gives offices at 1125 Oak Street in Conway, AR, but does not name a headquarters, so hqCountry is unknown. No EU hosting statement was found in the docs, so regions stays out. The Sites feature runs an Angular site application hosted on the Content CDN per the developing-your-own-website page; no renderingModes or runsAs are recorded because the docs do not give those values for the product itself. The GitHub organization acoustic-content-samples holds sample applications and tools (wchtools-cli, wchconvert-cli, wch-openapi-documentation), not the product source, so no repository is recorded; the CLI repositories carry their own licenses, which are not the product's license.

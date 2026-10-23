@@ -1,0 +1,46 @@
+id: dialoguewise
+name: Dialoguewise
+status: hosted-service
+checkedAt: 2026-10-23
+description: Hosted headless CMS that delivers multi-platform content through an API, with a web portal for authoring and deployment.
+facts:
+  - field: homepage
+    value: https://dialoguewise.com
+    url: https://docs.dialoguewise.com/getting-started/introduction/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Built with from Dialoguewise"
+  - field: docs
+    value: https://docs.dialoguewise.com
+    url: https://docs.dialoguewise.com/getting-started/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Discover what Dialoguewise is all about, the features and integrations."
+  - field: maintainer
+    value: Dialoguewise
+    url: https://docs.dialoguewise.com/getting-started/introduction/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Built with from Dialoguewise"
+  - field: categories
+    value: [headless-cms]
+    url: https://docs.dialoguewise.com/getting-started/introduction/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Dialoguewise is a headless CMS that is powerful enough for Developers and easy enough for Editors."
+  - field: adminUi
+    value: yes, web portal
+    url: https://docs.dialoguewise.com/manage-content/portal/deploy-content/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Using our web portal"
+  - field: x
+    value: https://twitter.com/DialogueWise
+    url: https://docs.dialoguewise.com/getting-started/introduction/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Twitter"
+notFound: [firstRelease, hqCountry, pricingPage, freeTier, headlessApi, contentStore, databases, livePreview, userRoles, sso, multisite, importsFrom, selfHostOption, apiLimits, regions, paidEditions, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, wikidata, repository, githubStargazers, contributors, endoflifeId]
+unreadable: [https://dialoguewise.com/ (the page is an empty JavaScript shell with no text), https://dialoguewise.com/pricing (same shell)]
+notes: >
+  The homepage answers 200 but serves only a script shell, so the homepage fact cites the footer link on the docs introduction page, and the description rests on the docs. The docs say the product is a headless CMS with a web portal, a Pilot and Publish deployment and a Test sandbox, and that it delivers content through an API at api.dialoguewise.com. The docs do not state the API style, so headlessApi is unknown. The features page lists location and device based delivery and sentiment based delivery; these are described as delivery features and no i18n field is recorded. The docs list SDKs for Angular, .Net, NativeScript and Flutter, and integration guides for Gatsby, Next.js, React and Vue. The Github repo link in the docs points to github.com/dialoguewise; no repository was read, so none is recorded. Plans, prices and the free trial are on pages that did not render, so no pricing fact is recorded. The docs state that "content is delivered via API" and list webhooks that send real-time notifications on content changes, a global CDN, image transformations through URL parameters, and a test sandbox; the starter list has no field for these, so they are noted here only. The GitHub organization dialoguewise holds client libraries and demo apps (a Dart package under BSD-3-Clause, a Gatsby source plugin) and a repository named dialoguewise with no description; none is the CMS, so no repository is recorded. The sitemap lists use-case, pricing, about and sign-up pages that render only through JavaScript.

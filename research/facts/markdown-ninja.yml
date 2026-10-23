@@ -1,0 +1,87 @@
+id: markdown-ninja
+name: Markdown Ninja
+status: stub
+checkedAt: 2026-10-23
+description: "Markdown Ninja is a Markdown-first CMS for publishing websites, blogs and newsletters, with a Go codebase and a hosted service at markdown.ninja."
+facts:
+  - field: name
+    value: Markdown Ninja
+    url: https://github.com/skerkour/markdown-ninja/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Markdown-first CMS for bloggers, minimalists and startups"
+  - field: homepage
+    value: https://markdown.ninja
+    url: https://markdown.ninja
+    checkedAt: 2026-10-23
+    via: page
+  - field: repository
+    value: https://github.com/skerkour/markdown-ninja
+    url: https://api.github.com/repos/skerkour/markdown-ninja
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://docs.markdown.ninja
+    url: https://github.com/skerkour/markdown-ninja/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "For usage documentation see"
+  - field: categories
+    value: [cms]
+    url: https://github.com/skerkour/markdown-ninja/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Markdown-first CMS for bloggers, minimalists and startups"
+  - field: maintainer
+    value: Arcane Services
+    url: https://github.com/skerkour/markdown-ninja/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2025 Arcane Services"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/skerkour
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/skerkour/markdown-ninja
+    checkedAt: 2026-10-23
+    via: api
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/skerkour/markdown-ninja/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Code is released under the GNU Affero General Public License v3.0"
+  - field: license
+    value: CC-BY-SA-4.0
+    url: https://github.com/skerkour/markdown-ninja/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Documentation and assets are released under the Creative Commons BY-SA 4.0 license"
+  - field: installMethod
+    value: docker image with a publish command
+    url: https://github.com/skerkour/markdown-ninja/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "docker run -i --rm -e MARKDOWN_NINJA_API_KEY"
+  - field: lastCommitDate
+    value: 2026-10-22
+    url: https://api.github.com/repos/skerkour/markdown-ninja/commits?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 416
+    url: https://api.github.com/repos/skerkour/markdown-ninja
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/skerkour/markdown-ninja/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [firstRelease, currentMajor, latestReleaseDate, runtime, runtimeMin, runsAs, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, maintainerType, renderingModes, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, selfHostOption]
+unreadable: []
+notes: >
+  Stub: the sources read do not settle whether a user can run Markdown Ninja on their own server. The repository holds a Dockerfile, a Go module, and developer setup notes in dev/development.md (a Docker network that blocks telemetry, a TimescaleDB container), but no operator install guide was found in the README or the dev folder. The README's publish command sends content with a MARKDOWN_NINJA_API_KEY to the hosted service at markdown.ninja, and the README links "Try it for free!" to the hosted site. The hosted site, its docs and its legal pages answer with a JavaScript shell and no text, so pricing, terms and headquarters could not be read. The docs source in docs/pages/ marks the introduction, the API page and the markdown_ninja.yml reference as "Coming soon". The Dockerfile builds mdninja and mdninja-server binaries and sets the mdninja CLI as the entry point, which does not state how a server is run. The CLI documentation at docs.markdown.ninja/cli was read, but it did not state a self-hosted install. Settle it by reading the operator documentation or the Dockerfile's entry point if the docs do not say whether the server runs outside the hosted service. The repository has no release or tag, so lastCommitDate is recorded. The repository's own README names Arcane Services as copyright holder; that is recorded as maintainer.

@@ -1,0 +1,140 @@
+id: cloud-cms
+name: Cloud CMS
+status: stub
+checkedAt: 2026-10-23
+description: Enterprise content management platform with a REST and GraphQL API, offered hosted by its maker or self-managed on Kubernetes.
+facts:
+  - field: homepage
+    value: https://gitana.io
+    url: https://gitana.io/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Native AI CMS for Enterprise Content"
+  - field: categories
+    value: [headless]
+    url: https://gitana.io/pricing
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Full GraphQL and REST API"
+  - field: docs
+    value: https://gitana.io/documentation
+    url: https://gitana.io/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Documentation"
+  - field: maintainer
+    value: Gitana Software, Inc.
+    url: https://gitana.io/privacy
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Gitana Software, Inc."
+  - field: hqCountry
+    value: US
+    url: https://gitana.io/privacy
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Boston, MA 02210, USA"
+  - field: headlessApi
+    value: [rest, graphql]
+    url: https://gitana.io/pricing
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Full GraphQL and REST API"
+  - field: adminUi
+    value: yes, a form-based editorial user interface
+    url: https://gitana.io/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "form-based editorial user interface"
+  - field: i18n
+    value: yes, multilingual content in the Starter plan
+    url: https://gitana.io/pricing
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Workflow, multilingual, scheduled publishing"
+  - field: userRoles
+    value: role-based security
+    url: https://gitana.io/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "role-based security"
+  - field: sso
+    value: Single Sign On, a Business plan feature
+    url: https://gitana.io/pricing
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Single Sign On"
+  - field: selfHostOption
+    value: yes, self-managed, run via Kubernetes in your own VPC
+    url: https://gitana.io/pricing
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Run via Kubernetes in your own VPC"
+  - field: pricingPage
+    value: https://gitana.io/pricing
+    url: https://gitana.io/pricing
+    checkedAt: 2026-10-23
+    via: page
+  - field: freeTier
+    value: "yes, a free Developer Edition"
+    url: https://gitana.io/pricing
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Free Developer Edition"
+  - field: license
+    value: proprietary
+    url: https://gitana.io/pricing/self-managed
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Commercial License"
+  - field: installMethod
+    value: "Docker images and Kubernetes configuration files with Helm charts, delivered to subscription customers"
+    url: https://gitana.io/releases
+    checkedAt: 2026-10-23
+    via: page
+    quote: "delivered as a series of containers, Kubernetes configuration files and Helm charts"
+  - field: contentStore
+    value: database
+    url: https://gitana.io/documentation/gitana/4.0/self-managed/kits
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Cloud CMS uses MongoDB as its primary data store."
+  - field: databases
+    value: ["mongodb"]
+    url: https://gitana.io/documentation/gitana/4.0/self-managed/kits
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Cloud CMS uses MongoDB as its primary data store."
+  - field: runsAs
+    value: ["always-on"]
+    url: https://gitana.io/documentation/gitana/4.0/self-managed/docker
+    checkedAt: 2026-10-23
+    via: page
+    quote: "These microservices run within Docker containers that can be orchestrated together to deliver the full platform."
+  - field: livePreview
+    value: "yes, a virtual server previews content changes for editors"
+    url: https://gitana.io/documentation/gitana/4.0/self-managed/kits
+    checkedAt: 2026-10-23
+    via: page
+    quote: "provides a real-time presentation layer for your editorial team to instantly preview content changes."
+  - field: latestReleaseDate
+    value: "2026-09-07"
+    url: https://gitana.io/releases
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Published on 09/07/2026"
+  - field: bluesky
+    value: https://bsky.app/profile/gitana.bsky.social
+    url: https://gitana.io/
+    checkedAt: 2026-10-23
+    via: page
+  - field: status
+    value: "stub"
+    url: https://gitana.io/documentation/gitana/4.0/self-managed/kubernetes
+    checkedAt: 2026-10-23
+    via: page
+    quote: "please reach out to support@gitana.io for these files."
+notFound: [repository, firstRelease, language, basedOn, parent, forkOf, successorOf, alternativeTo, templating, renderingModes, multisite, importsFrom, paidEditions, regions, apiLimits, pluginDirectory, pluginCount, forum, subreddit, mastodon, newsletter, wikidata, usageShare, reportedInstalls, endoflifeId, githubStargazers, contributors, currentMajor, npmName, npmWeeklyDownloads, repoOwnerType]
+unreadable: []
+notes: >
+  In doubt: criteria 2 and 3. The Kubernetes page says "please reach out to support@gitana.io for these files" for the 4.0 configuration files, and the self-managed overview calls the Docker Compose route deprecated, so no public install documentation or public images are known. Public install docs or published images would settle it and return the record to listed. Otherwise a self-managed option on a commercial license exists, so it is not a hosted service: the releases page says the product suite is delivered as containers, Kubernetes configuration files and Helm charts to subscription customers, the Docker page documents the images (API, UI, virtual and web shot servers) and the kits, and the Supported Stacks page lists MongoDB and ElasticSearch tiers that customers manage themselves. The Kubernetes page says the 4.0 configuration files are available from support, and the self-managed overview calls the Docker Compose route deprecated;. The pricing page also lists hosted plans and a Developer Edition listed as free; the record does not say what it limits. The site brands the product as Gitana and the product page as Cloud CMS; the record keeps the CSV name Cloud CMS. ElasticSearch is the secondary index for full-text search per the Kits page, so it is not recorded as the content store. The GitHub organization gitana (Gitana Software, Cloud CMS) publishes drivers and libraries (JavaScript, Node.js, Java and others), none of them the server, so no repository fact is recorded. The releases page lists the 3.2 line up to its newest entry while the documentation also has a 4.0 edition, so currentMajor is not recorded. The company page names the founder and a 2010 founding, which is a company date, not firstRelease. The Business plan lists Single Sign On and the Plus plan Multi-Factor Authentication; the docs name Okta, Keycloak and Ping integrations, which are not recorded as fields. The homepage also links to LinkedIn, which has no field.

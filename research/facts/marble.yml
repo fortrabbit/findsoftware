@@ -1,0 +1,134 @@
+id: marble
+name: Marble
+status: stub
+checkedAt: 2026-10-23
+description: Headless CMS for blog posts, changelogs and articles, with a web dashboard and a REST API.
+facts:
+  - field: homepage
+    value: https://marblecms.com
+    url: https://marblecms.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Super simple headless CMS"
+  - field: repository
+    value: https://github.com/usemarble/marble
+    url: https://api.github.com/repos/usemarble/marble
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://docs.marblecms.com
+    url: https://docs.marblecms.com/llms.txt
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Documentation for Marble, the simple headless CMS for writers and developers"
+  - field: license
+    value: AGPL-3.0
+    url: https://api.github.com/repos/usemarble/marble
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://marblecms.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Yes, Marble is 100% open source"
+  - field: pricingPage
+    value: https://marblecms.com/pricing
+    url: https://marblecms.com/pricing
+    checkedAt: 2026-10-23
+    via: page
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/usemarble/marble
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [headless-cms]
+    url: https://marblecms.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Marble is a headless CMS designed specifically for managing blogs, changelogs, and articles"
+  - field: runtime
+    value: [node]
+    url: https://raw.githubusercontent.com/usemarble/marble/main/.github/CONTRIBUTING.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Node.js ≥ 22.13.0"
+  - field: runtimeMin
+    value: "22"
+    url: https://raw.githubusercontent.com/usemarble/marble/main/.github/CONTRIBUTING.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Node.js ≥ 22.13.0"
+  - field: databases
+    value: [postgres]
+    url: https://raw.githubusercontent.com/usemarble/marble/main/.github/CONTRIBUTING.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "PostgreSQL database"
+  - field: installMethod
+    value: pnpm install from the monorepo, local development setup
+    url: https://raw.githubusercontent.com/usemarble/marble/main/.github/CONTRIBUTING.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "pnpm install"
+  - field: headlessApi
+    value: rest
+    url: https://raw.githubusercontent.com/usemarble/marble/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Fetch your content anywhere through the REST API"
+  - field: adminUi
+    value: yes, web dashboard
+    url: https://marblecms.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "You can create, edit and manage content through our dashboard"
+  - field: userRoles
+    value: owner, admin and member roles
+    url: https://docs.marblecms.com/llms.txt
+    checkedAt: 2026-10-23
+    via: page
+    quote: "manage Owner, Admin, and Member roles"
+  - field: githubStargazers
+    value: 384
+    url: https://api.github.com/repos/usemarble/marble
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 31
+    url: https://api.github.com/repos/usemarble/marble/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/usemarble
+    checkedAt: 2026-10-23
+    via: api
+  - field: lastCommitDate
+    value: 2026-10-22
+    url: https://api.github.com/repos/usemarble/marble/commits
+    checkedAt: 2026-10-23
+    via: api
+  - field: discord
+    value: https://discord.gg/gU44Pmwqkx
+    url: https://raw.githubusercontent.com/usemarble/marble/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Join the Discord"
+  - field: x
+    value: https://x.com/usemarblecms
+    url: https://raw.githubusercontent.com/usemarble/marble/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Follow us on Twitter"
+  - field: alternativeTo
+    value: [Ghost, Sanity, Payload, Strapi, WordPress]
+    url: https://marblecms.com/compare
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Plain comparisons of Marble and other content platforms"
+notFound: [maintainer, maintainerType, hqCountry, firstRelease, currentMajor, latestReleaseDate, latestPrereleaseDate, parent, basedOn, forkOf, successorOf, runsAs, renderingModes, contentStore, i18n, multisite, livePreview, sso, importsFrom, paidEditions, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, wikidata, docker, endoflifeId, supportedVersions, outputDir, deployTargets, npmName, packagistName]
+unreadable: []
+notes: >
+  Whether a user can install and run Marble without the hosted service is in doubt: CONTRIBUTING.md describes a local development setup that needs a Postgres database (Neon or Docker), Upstash Redis, Google and GitHub OAuth apps and Cloudflare R2, apps/api/README.md deploys the API as a Cloudflare Worker, and the docs index at docs.marblecms.com/llms.txt has no self-hosting or deployment page; a self-hosting or deployment guide from the project would settle it. The docker-compose.yml in the repository starts Postgres and Redis only, not the application. The repository has no tags or GitHub releases, so no release date or major is recorded and lastCommitDate holds the newest commit on main. The homepage sells hosted plans (Free, Hobby, Pro) on marblecms.com/pricing; no prices are recorded. Its license is AGPL-3.0 per the GitHub API and the LICENSE file, and the record does not claim a commercial license. The repository is a pnpm monorepo with a Hono REST API, a Next.js dashboard and an Astro marketing site, per CONTRIBUTING.md. The GitHub organization name is usemarble; the maintainer's legal name is not stated on any page read (the footer says "© 2026 all rights reserved", the LICENSE holds only the AGPL text, and the terms are governed by Nigerian law, which does not state a headquarters). The repository was created 2024-11-16 per the GitHub API; firstRelease is not recorded because no release or tag exists.

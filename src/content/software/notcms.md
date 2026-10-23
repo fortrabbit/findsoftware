@@ -1,0 +1,57 @@
+---
+id: notcms
+name: NotCMS
+urls:
+  home: https://www.notcms.com
+  docs: https://docs.notcms.com/en/introduction
+  pricing: https://www.notcms.com/pricing
+category:
+  - headless-cms
+description: NotCMS is a hosted service that syncs Notion databases to a typed TypeScript SDK for building websites, with Notion as the editing interface.
+status: hosted-service
+maintainer: Qiushi Pan
+maintainerType: individual
+adminUi: false
+licenseModel: saas
+social:
+  x: https://x.com/qqpann
+addedAt: 2026-10-23
+checkedAt: 2026-10-23
+sources:
+  - field: name
+    url: https://github.com/qqpann/notcms/blob/main/README.md
+    checkedAt: 2026-10-23
+  - field: urls
+    url: https://www.notcms.com
+    checkedAt: 2026-10-23
+  - field: urls
+    url: https://docs.notcms.com/en/introduction
+    checkedAt: 2026-10-23
+  - field: category
+    url: https://docs.notcms.com/en/introduction
+    checkedAt: 2026-10-23
+  - field: adminUi
+    url: https://docs.notcms.com/en/introduction
+    checkedAt: 2026-10-23
+  - field: maintainer
+    url: https://www.notcms.com/tokushoho
+    checkedAt: 2026-10-23
+  - field: maintainerType
+    url: https://www.notcms.com/tokushoho
+    checkedAt: 2026-10-23
+  - field: urls
+    url: https://www.notcms.com/pricing
+    checkedAt: 2026-10-23
+figure:
+  emoji: 🔌
+  color: "#cdb4db"
+  textColor: "#1a1a1a"
+  text: Headless CMS
+ai: authored
+---
+
+NotCMS is a hosted service that connects Notion databases to the website built from them. Writers edit content in Notion, the NotCMS dashboard connects the Notion workspace, and a TypeScript SDK published on npm as notcms reads the synchronized content for the site. Notion is the editor, so the service has no admin interface of its own.
+
+## Worth knowing
+
+The service is hosted, and paid plans are listed on the [pricing page](https://www.notcms.com/pricing). The sync and the dashboard run on the hosted service, and no self-hosted option is stated. The content API has [rate limits](https://docs.notcms.com/en/usage/errors-and-rate-limits) that are the same on every plan. Content editing depends on Notion, so the content store sits outside the software.
