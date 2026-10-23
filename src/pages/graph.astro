@@ -1,0 +1,87 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { buildGraph } from '../lib/graph';
+import { fieldOf, labelOf, slugOf } from '../lib/fields';
+import { isListed } from '../lib/providers';
+import { recordPath } from '../lib/paths';
+
+/*
+ * What the register is built on, drawn. Without JavaScript there is no graph;
+ * each record page names its parents, so the facts stay reachable.
+ */
+const software = await getCollection('software');
+const listed = new Set(software.filter(isListed).map((entry) => entry.id));
+const { nodes, edges } = buildGraph(
+  software.map((entry) => ({
+    id: entry.id,
+    name: entry.data.name,
+    description: entry.data.description,
+    language: entry.data.language,
+    basedOn: entry.data.basedOn,
+    category: (entry.data.category ?? []).map((value: string) => labelOf('category', value)),
+    status: entry.data.status && entry.data.status !== 'active' ? labelOf('status', entry.data.status) : undefined,
+    href: recordPath(entry),
+  })),
+  (record) => listed.has(record.id),
+  (id) => ({
+    label: labelOf('language', id),
+    href: `/languages/${slugOf(fieldOf.get('language')!, { id, label: labelOf('language', id) })}/`,
+  }),
+);
+const description = 'What each project in the register is built on, from the language outwards.';
+---
+
+<Base title="Graph — FindSoftware" description={description}>
+  <h1 class="visually-hidden">Graph</h1>
+
+  <noscript><p>The graph needs JavaScript. Each record page names what the software is built on.</p></noscript>
+  <div class="full-width">
+    <div class="graph" data-graph hidden>
+      <div class="graph-canvas" data-graph-canvas></div>
+      <div class="graph-tip" data-graph-tip hidden></div>
+      <div class="graph-tip graph-card" data-graph-card hidden></div>
+    </div>
+  </div>
+  <script
+    is:inline
+    type="application/json"
+    data-graph-data
+    set:html={JSON.stringify({ nodes, edges }).replaceAll('<', '\\u003c')}
+  />
+</Base>
+
+<script>
+  import '../scripts/graph';
+</script>
+
+<style>
+  .graph {
+    position: relative;
+    border: var(--rule-hairline) solid var(--color-ink);
+    margin-block: var(--space-xs) var(--space-md);
+  }
+  .graph-canvas {
+    /* As tall as the screen allows, minus a strip so the edge of the frame shows there is more page. */
+    height: max(28rem, calc(100dvh - var(--space-xl)));
+  }
+  .graph-tip {
+    position: absolute;
+    max-width: 22rem;
+    padding: var(--space-xs) var(--space-sm);
+    background: var(--color-page);
+    color: var(--color-ink);
+    border: var(--rule-hairline) solid var(--color-ink);
+    font-size: var(--text-sm);
+    line-height: var(--leading-data);
+    pointer-events: none;
+  }
+  .graph-card {
+    top: var(--space-sm);
+    left: var(--space-sm);
+    pointer-events: auto;
+  }
+  .graph-tip :global(p) {
+    margin: 0;
+  }
+</style>

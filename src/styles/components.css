@@ -913,6 +913,16 @@ html:not(.js) .theme-switch {
   padding-block: var(--row-pad);
 }
 
+/* Names across as many columns as fit, each letter's run on its own. A row never splits between two columns. */
+.columns .provider-list {
+  columns: 11rem;
+  column-gap: var(--space-md);
+}
+
+.columns .provider-list > li {
+  break-inside: avoid;
+}
+
 /*
  * What waits for the script, and what does not. The panel, its values and their
  * counts are static markup and links — a crawler reads them, and so does a

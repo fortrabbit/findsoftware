@@ -52,7 +52,10 @@ const indexable = import.meta.env.PUBLIC_INDEXABLE === 'true' && !hidden;
  * wordmark already leads back to; the map is reached from the pages that need
  * it — a nav that lists everything is a nav nobody reads.
  */
-const sections = [{ href: '/about/', label: 'About' }];
+const sections = [
+  { href: '/graph/', label: 'Graph' },
+  { href: '/about/', label: 'About' },
+];
 
 const path = Astro.url.pathname;
 const origin = Astro.site ?? Astro.url;

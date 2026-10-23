@@ -81,14 +81,14 @@ const remember = (key: string, value: string) => {
 };
 
 /*
- * Extended or slim, as a class on the results rather than as a second way to
+ * Extended, slim or columns, as a class on the results rather than as a second way to
  * build a row. It runs on every page carrying a register, including the facet
  * value pages that ship no filters at all, so it is wired apart from everything
  * below.
  */
 if (styleEl && resultsEl) {
   const stored = remembered('list-style');
-  let current = stored === 'slim' ? 'slim' : 'extended';
+  let current = stored === 'slim' || stored === 'columns' ? stored : 'extended';
 
   /* Every list on the page, not only the one on show: a toggle that skipped the
      others would change under the reader the moment they switched lists. */
@@ -96,7 +96,11 @@ if (styleEl && resultsEl) {
 
   const show = (style: string) => {
     current = style;
-    for (const list of lists) list.classList.toggle('slim', style === 'slim');
+    // Columns is the slim row laid out differently, so it carries both classes.
+    for (const list of lists) {
+      list.classList.toggle('slim', style !== 'extended');
+      list.classList.toggle('columns', style === 'columns');
+    }
     for (const button of styleEl.querySelectorAll<HTMLButtonElement>('button')) {
       button.setAttribute('aria-pressed', String(button.value === style));
     }

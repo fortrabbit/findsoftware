@@ -1,10 +1,11 @@
 ---
 import cardText from 'bootstrap-icons/icons/card-text.svg?raw';
 import listUl from 'bootstrap-icons/icons/list-ul.svg?raw';
+import columns from 'bootstrap-icons/icons/layout-three-columns.svg?raw';
 
 /*
- * Two ways to read the same list: with the description and the figure, or as
- * names. It is one markup either way — the buttons put a class on the results
+ * Three ways to read the same list: with the description and the figure, as
+ * names, or as names flowing across as many columns as fit. It is one markup either way — the buttons put a class on the results
  * and the stylesheet hides what the slim view does not want, so find.ts rebuilds
  * rows without knowing which view is on and the two cannot drift.
  *
@@ -16,6 +17,7 @@ import listUl from 'bootstrap-icons/icons/list-ul.svg?raw';
 const styles = [
   { id: 'extended', label: 'Extended', title: 'Show descriptions', icon: cardText },
   { id: 'slim', label: 'Slim', title: 'Names only', icon: listUl },
+  { id: 'columns', label: 'Columns', title: 'Names in columns', icon: columns },
 ];
 ---
 
