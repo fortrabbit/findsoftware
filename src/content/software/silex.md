@@ -19,6 +19,8 @@ hosting:
   - node
   - static
 runtimeMin: node 24
+basedOn:
+  - grapesjs
 runsAs:
   - static
   - always-on
@@ -61,6 +63,9 @@ sources:
     checkedAt: 2026-10-22
   - field: category
     url: https://www.silex.me/
+    checkedAt: 2026-10-22
+  - field: basedOn
+    url: https://raw.githubusercontent.com/silexlabs/Silex/main/README.md
     checkedAt: 2026-10-22
   - field: runtime
     url: https://docs.silex.me/developer/self-hosting/docker/

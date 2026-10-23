@@ -1,0 +1,116 @@
+id: ketchup
+name: Ketchup
+status: stub
+checkedAt: 2026-10-23
+description: Developer-first CMS written in Go, distributed as one binary with an embedded BoltDB store, a JSON API and a React admin.
+facts:
+  - field: repository
+    value: https://github.com/ketchuphq/ketchup
+    url: https://api.github.com/repos/ketchuphq/ketchup
+    checkedAt: 2026-10-23
+    via: api
+  - field: maintainer
+    value: ketchuphq
+    url: https://api.github.com/users/ketchuphq
+    checkedAt: 2026-10-23
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/ketchuphq
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/ketchuphq/ketchup
+    checkedAt: 2026-10-23
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/ketchuphq/ketchup/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Go >=1.9"
+  - field: categories
+    value: [cms]
+    url: https://github.com/ketchuphq/ketchup/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Ketchup is a developer-first CMS."
+  - field: installMethod
+    value: binary download
+    url: https://github.com/ketchuphq/ketchup/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "One binary, database included."
+  - field: installMethod
+    value: release binary download
+    url: https://github.com/ketchuphq/ketchup/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "If you want to download the latest release, visit the Releases page"
+  - field: installMethod
+    value: build from source (make)
+    url: https://github.com/ketchuphq/ketchup/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Now you should be able to compile the `ketchup` binary"
+  - field: contentStore
+    value: "database (BoltDB, embedded)"
+    url: https://github.com/ketchuphq/ketchup/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "embeddable and needs no additional setup"
+  - field: adminUi
+    value: "yes, a React admin"
+    url: https://github.com/ketchuphq/ketchup/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Migrated frontend to React."
+  - field: livePreview
+    value: yes
+    url: https://github.com/ketchuphq/ketchup/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Added live preview when editing content."
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/ketchuphq/ketchup
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/ketchuphq/ketchup/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "ASLv2"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/ketchuphq/ketchup/releases/tag/v0.3.1
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2018-06-03
+    url: https://github.com/ketchuphq/ketchup/releases/tag/v0.3.1
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2017"
+    url: https://github.com/ketchuphq/ketchup/releases/tag/v0.1.0
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 394
+    url: https://api.github.com/repos/ketchuphq/ketchup
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/ketchuphq/ketchup/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, discord, x, bluesky, mastodon, newsletter, forum, subreddit, sso, multisite, headlessApi, i18n, userRoles, renderingModes, runsAs, paidEdition, pricingPage, hqCountry, maintainerType, parent, forkOf, successorOf, alternativeTo, runtimeMin, endoflifeId, usageShare, reportedInstalls, pluginCount, pluginDirectory, wikidata, npmName, databases, templating, importsFrom, basedOn]
+unreadable:
+  - "homepage https://ketchuphq.com (HTTP 522 from the Cloudflare edge on every attempt, so the origin does not answer)"
+  - "https://ketchuphq.com/docs (linked from the README as the user documentation; HTTP 522)"
+notes: >
+  Stub: the homepage ketchuphq.com, which the GitHub repository lists, returns HTTP 522 from its Cloudflare edge on every attempt, so the project's own site and user docs cannot be read and whether they still show the software is in doubt; a reachable https answer from ketchuphq.com would settle it. No homepage is recorded. The README and the repository's own files describe the software and its build: make prepare, then make, which builds the ketchup binary with the admin embedded, and a releases page for downloads. The latest GitHub release is v0.3.1 from 2018-06-03, and the last push is 2024-11-29; the repository is not archived and names no successor. The LICENSE file has no copyright line, so the maintainer is recorded as the GitHub organization that owns the repository, which is the only name the sources give. The changelog says the admin was migrated to React and that live preview was added in 0.3.0; the README lists a JSON API and a headless use, which is not recorded as REST or GraphQL. The README says making authentication, the database and the template engine swappable is a goal that is a work in progress. Adoption: the GitHub stargazer count is 394 on the research date, and the contributors endpoint lists one contributor. The README's Go 1.9 minimum is a build requirement, so it is recorded as the Go runtime without a version. The first release is v0.1.0 from 2017-04-24, the year of the first GitHub release, and the repository was created in 2017. The README lists automatic HTTPS with Let's Encrypt certificates and themes that are version-controlled outside Ketchup and pulled in with git. The README says templates declare content fields that the frontend renders, so editors can make edits.

@@ -1,0 +1,125 @@
+id: honohub
+name: HonoHub
+status: accepted
+checkedAt: 2026-10-23
+description: Headless CMS framework that generates REST and GraphQL APIs from Drizzle schemas and runs on Hono.
+facts:
+  - field: homepage
+    value: https://v1.honohub.dev
+    url: https://v1.honohub.dev/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "HonoHub - Open Source Honojs Headless CMS"
+  - field: repository
+    value: https://github.com/rhinobase/honohub
+    url: https://api.github.com/repos/rhinobase/honohub
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://v1.honohub.dev
+    url: https://v1.honohub.dev/quickstart
+    checkedAt: 2026-10-23
+    via: page
+    quote: "In this guide, you'll learn how to set up a new project with HonoHub"
+  - field: maintainer
+    value: Rhinobase
+    url: https://raw.githubusercontent.com/rhinobase/honohub/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2024 Rhinobase"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/rhinobase
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/rhinobase/honohub
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [headless-cms, framework]
+    url: https://github.com/rhinobase/honohub/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A CMS framework built on Hono, Drizzle, Zod, and Vite"
+  - field: basedOn
+    value: [Hono, Drizzle, Zod, Vite]
+    url: https://github.com/rhinobase/honohub/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A CMS framework built on Hono, Drizzle, Zod, and Vite"
+  - field: adminUi
+    value: "yes, a React admin panel built with Vite, optional and served separately or from the API server"
+    url: https://v1.honohub.dev/admin-panel
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The Admin Panel is a React application that provides a user interface to manage your HonoHub project"
+  - field: headlessApi
+    value: [rest, graphql]
+    url: https://v1.honohub.dev/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Automatically generates RESTful and GraphQL APIs."
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/rhinobase/honohub
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/rhinobase/honohub/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/rhinobase/honohub/releases/tag/core@0.3.0
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2024-08-02
+    url: https://github.com/rhinobase/honohub/releases/tag/core@0.3.0
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2024"
+    url: https://registry.npmjs.org/honohub
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 468
+    url: https://api.github.com/repos/rhinobase/honohub
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/rhinobase/honohub/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmName
+    value: honohub
+    url: https://registry.npmjs.org/honohub
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmWeeklyDownloads
+    value: 45
+    url: https://api.npmjs.org/downloads/point/last-week/honohub
+    checkedAt: 2026-10-23
+    via: api
+  - field: x
+    value: https://x.com/rhinobaseio
+    url: https://v1.honohub.dev/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Twitter"
+  - field: installMethod
+    value: npm add honohub
+    url: https://github.com/rhinobase/honohub/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "npm add honohub"
+notFound: [databases, discord, bluesky, mastodon, newsletter, forum, subreddit, runtime, runtimeMin, runsAs, renderingModes, deployment, livePreview, i18n, userRoles, sso, multisite, paidEdition, pricingPage, hqCountry, maintainerType, parent, forkOf, successorOf, alternativeTo, endoflifeId, usageShare, reportedInstalls, pluginCount, pluginDirectory, wikidata]
+unreadable: []
+notes: >
+  The GitHub and npm homepage honohub.dev answers 200 but shows only a placeholder page ("TODO: Add a description of the project"), so the record uses v1.honohub.dev, the docs site that carries the project description, as homepage and docs. The v1 documentation describes the same architecture as the README (Hono, Drizzle, Zod, Vite), but no v1 release is tagged or on npm: the highest GitHub release and the npm latest are 0.3.0 from 2024, so currentMajor is 0 under the release rule. The README says HonoHub is in alpha and that breaking changes ship without semantic versioning. The npm package honohub is the registry figure; the repository's packages/core is that package. The REST and GraphQL pages describe the default endpoints and the useGraphQL plugin, and the README names the Discord server of Hono, which is not recorded as HonoHub's. The Admin Panel is documented as a React application that can be served from the API server or deployed as a static site, so adminUi is recorded as optional. The docs build on Drizzle without naming supported databases: the quickstart example uses a Neon PostgreSQL schema and the REST page mentions MySQL output, which only imply support, so databases is left out. The footer of the v1 site links an X account of Rhinobase (recorded as x) and a Discord invite that is the Hono server named in the README (not recorded). The quickstart mounts the hub as a route in a Hono app, the REST page says request validation uses Zod schemas generated from the Drizzle schema, and the GraphQL plugin is a separate package. The deployment page says the admin panel can be served from the API server or deployed to static hosting, and the APIs deploy wherever Hono runs. The admin panel page says the dashboard is not needed and that the APIs can be used directly as a headless CMS. The quickstart describes the project as a hub configuration file that defines collections from Drizzle schema tables.

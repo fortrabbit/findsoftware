@@ -1,0 +1,160 @@
+id: flowershow
+name: Flowershow
+status: stub
+checkedAt: 2026-10-23
+description: Publishing tool that turns Markdown folders, wikis and Obsidian vaults into websites, with a Go command line tool named fl.
+facts:
+  - field: name
+    value: Flowershow
+    url: https://github.com/flowershow/flowershow/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: Publish markdown quickly and easily
+  - field: homepage
+    value: https://flowershow.app
+    url: https://flowershow.app
+    checkedAt: 2026-10-23
+    via: page
+  - field: repository
+    value: https://github.com/flowershow/flowershow
+    url: https://github.com/flowershow/flowershow
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://flowershow.app/docs
+    url: https://flowershow.app/docs
+    checkedAt: 2026-10-23
+    via: page
+    quote: Flowershow Docs
+  - field: maintainer
+    value: Datopian
+    url: https://github.com/flowershow/flowershow/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: Flowershow is a product of Datopian
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/flowershow
+    checkedAt: 2026-10-23
+    via: api
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/flowershow/flowershow/blob/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: GNU AFFERO GENERAL PUBLIC LICENSE
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/flowershow/flowershow/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: Flowershow is proudly open-source.
+  - field: language
+    value: TypeScript
+    url: https://github.com/flowershow/flowershow
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value:
+      - publishing
+    url: https://github.com/flowershow/flowershow/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: Publish markdown quickly and easily - for docs, knowledgebases, websites and more
+  - field: installMethod
+    value:
+      - install script (fl CLI)
+    url: https://github.com/flowershow/flowershow/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: curl -fsSL https://raw.githubusercontent.com/flowershow/flowershow/main/apps/cli/install.sh | sh
+  - field: installMethod
+    value:
+      - binary download (fl CLI, Windows)
+    url: https://github.com/flowershow/flowershow/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: download `fl_windows_amd64.zip` from the latest release
+  - field: currentMajor
+    value: 2
+    url: https://github.com/flowershow/flowershow/releases/tag/cli/v2.9.0
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-22
+    url: https://github.com/flowershow/flowershow/releases/tag/cli/v2.9.0
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 1108
+    url: https://github.com/flowershow/flowershow
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 33
+    url: https://api.github.com/repos/flowershow/flowershow/contributors?per_page=1
+    checkedAt: 2026-10-23
+    via: api
+  - field: pricingPage
+    value: https://flowershow.app/pricing
+    url: https://flowershow.app/pricing
+    checkedAt: 2026-10-23
+    via: page
+  - field: basedOn
+    value:
+      - Next.js
+    url: https://github.com/flowershow/flowershow/blob/main/apps/flowershow/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: This is the main Next.js application for flowershow.app
+  - field: firstRelease
+    value: 2026
+    url: https://github.com/flowershow/flowershow/releases/tag/%40flowershow%2Fpublish%401.1.0
+    checkedAt: 2026-10-23
+    via: api
+  - field: discord
+    value: https://discord.gg/JChzM5VdFn
+    url: https://flowershow.app
+    checkedAt: 2026-10-23
+    via: page
+  - field: x
+    value: https://x.com/flowershowapp
+    url: https://flowershow.app
+    checkedAt: 2026-10-23
+    via: page
+  - field: subreddit
+    value: https://www.reddit.com/r/flowershow/
+    url: https://flowershow.app
+    checkedAt: 2026-10-23
+    via: page
+notFound:
+  - parent
+  - hqCountry
+  - runtime
+  - runtimeMin
+  - npmName
+  - npmWeeklyDownloads
+  - forum
+  - mastodon
+  - bluesky
+  - newsletter
+  - pluginDirectory
+  - pluginCount
+  - i18n
+  - multisite
+  - livePreview
+  - userRoles
+  - sso
+  - importsFrom
+  - templating
+  - wikidata
+  - endoflifeId
+  - usageShare
+  - reportedInstalls
+  - regions
+  - apiLimits
+  - renderingModes
+  - selfHostOption
+  - latestPrereleaseDate
+unreadable: []
+notes: "Stub: whether the web application can be installed and run by a user is in doubt. The project's own pages describe Flowershow as a multitenant platform that publishes sites to a hosted address, and the repository README documents only local development (Docker, PostgreSQL, MinIO) and a hosted deployment on Vercel, Neon and Cloudflare R2; no self-hosting guide was found in the docs, so a self-hosting guide, or a statement that the web app runs only as the hosted service (status hosted-service), would settle it. The installable item is the Go command line tool fl, which publishes to the hosted service. Its GitHub releases carry the cli/ tag prefix, so currentMajor is taken from cli/v2.9.0; the oldest GitHub release in the repository is @flowershow/publish@1.1.0, so firstRelease is 2026 although the repository dates from 2022 and older npm packages of the same name come from a different repository. The hosted service, Flowershow Cloud, is described in the web app README; the pricing page URL is recorded without prices. The pricing page lists a free tier and a Premium tier for custom domain, removed branding and search, which are hosting plans and not a paid edition of the code. discord, x and subreddit are the links on the homepage."

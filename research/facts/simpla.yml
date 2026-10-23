@@ -1,0 +1,119 @@
+id: simpla
+name: Simpla
+status: stub
+checkedAt: 2026-10-23
+description: Modular content system built on Web Components that edits page content inline and keeps it in a GitHub repository.
+facts:
+  - field: repository
+    value: https://github.com/simplajs/simpla
+    url: https://api.github.com/repos/simplajs/simpla
+    checkedAt: 2026-10-23
+    via: api
+  - field: name
+    value: Simpla
+    url: https://github.com/simplajs/simpla/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Simpla is a modular content system for frontend developers"
+  - field: categories
+    value: [content system]
+    url: https://github.com/simplajs/simpla/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Simpla is a modular content system for frontend developers"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/simplajs/simpla
+    checkedAt: 2026-10-23
+    via: api
+  - field: installMethod
+    value: npm i simpla
+    url: https://github.com/simplajs/simpla/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "npm i simpla"
+  - field: installMethod
+    value: load the script from unpkg
+    url: https://github.com/simplajs/simpla/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Simpla is available on NPM and Unpkg as `simpla`."
+  - field: contentStore
+    value: git (a GitHub repository)
+    url: https://github.com/simplajs/simpla/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Use Github as your backend"
+  - field: adminUi
+    value: yes, inline editing of content on the page
+    url: https://github.com/simplajs/simpla/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Edit content (safely) inline"
+  - field: runsAs
+    value: [static]
+    url: https://github.com/simplajs/simpla/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Push everything as JSON data to a static CDN"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/simplajs/simpla
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/simplajs/simpla/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: maintainer
+    value: Sean King and Bede Overend
+    url: https://raw.githubusercontent.com/simplajs/simpla/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2017 Sean King and Bede Overend"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/simplajs
+    checkedAt: 2026-10-23
+    via: api
+  - field: firstRelease
+    value: "2016"
+    url: https://registry.npmjs.org/simpla
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://registry.npmjs.org/simpla/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2017-10-23
+    url: https://registry.npmjs.org/simpla/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 523
+    url: https://api.github.com/repos/simplajs/simpla
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/simplajs/simpla/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmName
+    value: simpla
+    url: https://registry.npmjs.org/simpla/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmWeeklyDownloads
+    value: 74
+    url: https://api.npmjs.org/downloads/point/last-week/simpla
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, docs, hqCountry, maintainerType, runtime, templating, databases, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, basedOn, parent, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, forkOf, successorOf, alternativeTo, outputDir]
+unreadable: [https://www.simplajs.org/, https://docs.simplajs.org/]
+notes: >
+  Stub: the homepage simplajs.org and its docs at docs.simplajs.org both answer with the same parked page, which says the domain may be for sale, so the project's own site no longer shows the software and no homepage is recorded. The repository and the npm package still publish the code, and the README gives install steps, so criterion 3 is met from the README. A later pass settles it by finding whether the project still owns a domain or names a new homepage in its repository. No GitHub release exists: the repository has tags up to v3.0.1 and no releases, so the version and date come from the npm package simpla, which the README installs. The npm oldest upload (1.0.0, 2016-07-08) sets firstRelease. The last commit on the default branch is dated 2017-12-21. The copyright line in LICENSE names two people, recorded together as the maintainer. Simpla keeps content in a GitHub repository through an OAuth adapter (the README shows the Netlify adapter); the adapter is not recorded. The README installs the components with Bower and HTML imports, and says npm and JS support for them is coming. runsAs holds static only, from the README line about pushing data to a static CDN; no page states where the library runs.

@@ -1,0 +1,209 @@
+id: cromwell
+name: Cromwell CMS
+status: accepted
+checkedAt: 2026-10-23
+description: Headless TypeScript CMS for React and Next.js websites, with a GraphQL API, an admin panel and a theme editor.
+facts:
+  - field: homepage
+    value: https://cromwellcms.com
+    url: https://cromwellcms.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Cromwell CMS is a next-gen e-commerce and blogging platform"
+  - field: repository
+    value: https://github.com/CromwellCMS/Cromwell
+    url: https://api.github.com/repos/CromwellCMS/Cromwell
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://cromwellcms.com/docs/overview/intro
+    url: https://cromwellcms.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Documentation"
+  - field: maintainer
+    value: Astrex LLC
+    url: https://github.com/CromwellCMS/Cromwell/blob/master/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2021 Astrex LLC"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/CromwellCMS
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/CromwellCMS/Cromwell/languages
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [cms, e-commerce, headless-cms]
+    url: https://github.com/CromwellCMS/Cromwell/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "free open source headless TypeScript CMS"
+  - field: basedOn
+    value: [NestJS, TypeGraphQL, TypeORM]
+    url: https://cromwellcms.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Enterprise-grade TypeScript frameworks: Nest.js, TypeGraphQL and TypeORM"
+  - field: basedOn
+    value: [Next.js]
+    url: https://github.com/CromwellCMS/Cromwell/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Use all power of Next.js, Nest.js, TypeORM, TypeGraphQL"
+  - field: userRoles
+    value: "yes, roles with a list of permissions, created in the admin panel"
+    url: https://github.com/CromwellCMS/Cromwell/blob/master/system/core/backend/src/models/entities/role.entity.ts
+    checkedAt: 2026-10-23
+    via: page
+    quote: "export class Role extends BasePageEntity implements TRole"
+  - field: userRoles
+    value: "custom role page in the admin settings, with permissions per role"
+    url: https://github.com/CromwellCMS/Cromwell/blob/master/system/admin/src/router-pages/settings/pages/custom/CustomRole/index.tsx
+    checkedAt: 2026-10-23
+    via: page
+    quote: "export const CustomRoleSettingsPage = () => {"
+  - field: runtime
+    value: [node]
+    url: https://cromwellcms.com/docs/overview/installation
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Download and install latest Node.js v14 or 16"
+  - field: runtimeMin
+    value: "14"
+    url: https://cromwellcms.com/docs/overview/installation
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Download and install latest Node.js v14 or 16"
+  - field: databases
+    value: [sqlite, mysql, mariadb, postgres]
+    url: https://github.com/CromwellCMS/Cromwell/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "SQLite, MySQL, MariaDB, PostgreSQL are supported to use"
+  - field: contentStore
+    value: "database (SQLite, MySQL, MariaDB or PostgreSQL)"
+    url: https://github.com/CromwellCMS/Cromwell/blob/master/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "SQLite, MySQL, MariaDB, PostgreSQL are supported to use"
+  - field: adminUi
+    value: "yes, admin panel with themes and plugins"
+    url: https://cromwellcms.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Powerful admin panel with themes and plugins"
+  - field: headlessApi
+    value: graphql
+    url: https://cromwellcms.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "query our API server with GraphQL"
+  - field: headlessApi
+    value: rest
+    url: https://cromwellcms.com/docs/development/theme-development
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Additionally there is Nest.js REST API designed for other CMS transaction."
+  - field: installMethod
+    value: Docker image cromwellcms/cromwell-mariadb (docker run)
+    url: https://cromwellcms.com/docs/overview/installation
+    checkedAt: 2026-10-23
+    via: page
+    quote: "docker run -d -p 80:80 --name my-website cromwellcms/cromwell-mariadb:latest"
+  - field: installMethod
+    value: Docker Compose
+    url: https://cromwellcms.com/docs/overview/installation
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Create a new directory and place docker-compose.yml file with the following content"
+  - field: installMethod
+    value: npx @cromwell/cli create
+    url: https://cromwellcms.com/docs/overview/installation
+    checkedAt: 2026-10-23
+    via: page
+    quote: "npx @cromwell/cli create my-website-name"
+  - field: installMethod
+    value: yarn add @cromwell/cms
+    url: https://cromwellcms.com/docs/overview/installation
+    checkedAt: 2026-10-23
+    via: page
+    quote: "yarn add @cromwell/cms --exact"
+  - field: runsAs
+    value: [always-on]
+    url: https://cromwellcms.com/docs/overview/installation
+    checkedAt: 2026-10-23
+    via: page
+    quote: "The CMS has its Node.js proxy to distribute traffic to API server, Next.js server and admin panel."
+  - field: renderingModes
+    value: [server, isr]
+    url: https://cromwellcms.com/blog/intro-cromwell-cms
+    checkedAt: 2026-10-23
+    via: page
+    quote: "at run-time Next.js will use incremental static regeneration"
+  - field: templating
+    value: [jsx]
+    url: https://cromwellcms.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Make themes by writing JSX code."
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/CromwellCMS/Cromwell
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://cromwellcms.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Free and open source Cromwell CMS"
+  - field: firstRelease
+    value: "2020"
+    url: https://registry.npmjs.org/@cromwell%2fcore
+    checkedAt: 2026-10-23
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://registry.npmjs.org/@cromwell%2fcli/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2024-07-12
+    url: https://registry.npmjs.org/@cromwell%2fcli
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 753
+    url: https://api.github.com/repos/CromwellCMS/Cromwell
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/CromwellCMS/Cromwell/contributors
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmName
+    value: "@cromwell/cli"
+    url: https://registry.npmjs.org/@cromwell%2fcli/latest
+    checkedAt: 2026-10-23
+    via: api
+  - field: npmWeeklyDownloads
+    value: 55
+    url: https://api.npmjs.org/downloads/point/last-week/@cromwell/cli
+    checkedAt: 2026-10-23
+    via: api
+  - field: discord
+    value: https://discord.gg/mxmJNSZ2gn
+    url: https://cromwellcms.com/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Community Discord Issues"
+notFound: [pricingPage, hqCountry, parent, livePreview, sso, i18n, multisite, importsFrom, paidEdition, pluginDirectory, pluginCount, forum, x, bluesky, mastodon, newsletter]
+unreadable: []
+notes: >
+  The repository has no GitHub release objects; its tags are per package (for example @cromwell/utils@3.0.3). The major and release date therefore come from the npm package @cromwell/cli, the package the installation docs name (3.0.7, published 2024-07-12). The last commit on the default branch is also 2024-07-12. Neither the repository nor the registry package is archived or deprecated, and no page states the project has ended. The homepage footer reads "Copyright 2022", which is not an end signal. The CLI and npm install routes need Python and node-gyp next to Node.js 14 or 16, and the docs recommend SQLite only for development. The docs say the default install starts an API server, a Next.js server and an admin panel server behind a Node.js proxy, and that the three can be started and deployed separately. The migration docs describe an Excel-based import and export and say there are no one-click migrations from other specific CMSs. Themes are Next.js apps and plugins can extend the Nest.js REST and TypeGraphQL APIs. The firstRelease 2020 is the earliest upload of the registry package @cromwell/core (1.0.0, 2020-05-06), whose repository field points to this repository and whose author is Astrex LLC. The docs site answers 200 to the default research user agent. The homepage mentions an official theme and plugin store without a URL in the sources read, so pluginDirectory is absent. The homepage links a Patreon funding page. The README lists a "Drag-and-drop theme editor". The CLI install page runs the CMS with "npx cromwell start -d".

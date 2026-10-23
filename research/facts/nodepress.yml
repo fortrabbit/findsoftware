@@ -1,0 +1,128 @@
+id: nodepress
+name: NodePress
+status: accepted
+checkedAt: 2026-10-23
+description: Blog CMS backend built with NestJS, MongoDB and Redis, exposing a RESTful API.
+facts:
+  - field: repository
+    value: https://github.com/surmon-china/nodepress
+    url: https://api.github.com/repos/surmon-china/nodepress
+    checkedAt: 2026-10-23
+    via: api
+  - field: docs
+    value: https://github.surmon.me/nodepress
+    url: https://github.surmon.me/nodepress/
+    checkedAt: 2026-10-23
+    via: page
+    quote: "API Documentation"
+  - field: maintainer
+    value: Surmon
+    url: https://github.com/surmon-china/nodepress/blob/main/LICENSE
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Copyright (c) 2020 Surmon"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/surmon-china
+    checkedAt: 2026-10-23
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/surmon-china/nodepress/languages
+    checkedAt: 2026-10-23
+    via: api
+  - field: categories
+    value: [headless-cms]
+    url: https://api.github.com/repos/surmon-china/nodepress
+    checkedAt: 2026-10-23
+    via: api
+    quote: "A production-grade headless CMS API service for surmon.me"
+  - field: categories
+    value: [cms]
+    url: https://github.com/surmon-china/nodepress/blob/main/ARCHITECTURE.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "NodePress is a blog CMS backend built on NestJS"
+  - field: basedOn
+    value: [NestJS]
+    url: https://github.com/surmon-china/nodepress/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "built with NestJS"
+  - field: runtime
+    value: [node]
+    url: https://github.com/surmon-china/nodepress/blob/main/package.json
+    checkedAt: 2026-10-23
+    via: page
+    quote: '"node": ">=22"'
+  - field: runtimeMin
+    value: "22"
+    url: https://github.com/surmon-china/nodepress/blob/main/package.json
+    checkedAt: 2026-10-23
+    via: page
+    quote: '"node": ">=22"'
+  - field: databases
+    value: [mongodb, redis]
+    url: https://github.com/surmon-china/nodepress/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "required MongoDB and Redis"
+  - field: contentStore
+    value: "database (MongoDB)"
+    url: https://github.com/surmon-china/nodepress/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "required MongoDB and Redis"
+  - field: headlessApi
+    value: rest
+    url: https://github.com/surmon-china/nodepress/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "A RESTful API service for surmon.me blog"
+  - field: installMethod
+    value: pnpm install, then pnpm run build and pnpm run start:prod
+    url: https://github.com/surmon-china/nodepress/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "pnpm run start:prod"
+  - field: userRoles
+    value: Admin, User and Guest identities
+    url: https://github.com/surmon-china/nodepress/blob/main/ARCHITECTURE.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Admin and User are distinct user types with non-overlapping permission systems"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/surmon-china/nodepress
+    checkedAt: 2026-10-23
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/surmon-china/nodepress/blob/main/README.md
+    checkedAt: 2026-10-23
+    via: page
+    quote: "Licensed under the MIT License"
+  - field: currentMajor
+    value: 8
+    url: https://api.github.com/repos/surmon-china/nodepress/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: latestReleaseDate
+    value: 2026-03-17
+    url: https://api.github.com/repos/surmon-china/nodepress/releases
+    checkedAt: 2026-10-23
+    via: api
+  - field: githubStargazers
+    value: 1524
+    url: https://api.github.com/repos/surmon-china/nodepress
+    checkedAt: 2026-10-23
+    via: api
+  - field: contributors
+    value: 4
+    url: https://api.github.com/repos/surmon-china/nodepress/contributors
+    checkedAt: 2026-10-23
+    via: api
+notFound: [homepage, pricingPage, hqCountry, parent, adminUi, renderingModes, runsAs, livePreview, sso, i18n, multisite, importsFrom, paidEdition, pluginDirectory, pluginCount, firstRelease, npmName]
+unreadable: []
+notes: >
+  The project is the API service behind the surmon.me blog; its README lists the blog's Vue site, admin site (React), AI agent and native app as separate repositories, so no admin UI is recorded for this record. The architecture document calls it "a blog CMS backend built on NestJS" on a Fastify runtime, with JWT sign-in for one Admin account, OAuth login (Google, GitHub) for users, outbound webhooks, scheduled database backups and an AI module for summaries and comment replies. The repository description is the project's own wording and is the source of the headless-cms category. github.surmon.me/nodepress is the README rendered on the maintainer's domain, so it is recorded as docs and not as a homepage; the project has no other site. firstRelease is not recorded: the earliest GitHub tags predate the oldest GitHub release (v3.4.4, 2020-12-22), and the changelog lists v1.0.0 and v1.2.0 without dates. The runtime Node 22 comes from the engines field of package.json; the README does not state a Node version. The README lists MongoDB and Redis as required and gives install, build and start commands in its Development section; it has no separate deployment page.

@@ -15,6 +15,7 @@ hosting:
   - static
 basedOn:
   - nuxt
+  - nuxt-content
 contentStore:
   - flat-file
 templating: vue
