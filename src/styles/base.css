@@ -145,12 +145,12 @@ body > header {
   /* Baseline, not centre: the name, the nav and the field are all type, and type lines up on its baseline. */
   align-items: baseline;
   padding-top: var(--space-lg);
-  padding-bottom: var(--space-md);
+  padding-bottom: var(--space-xs);
 }
 
 body > main {
   flex: 1;
-  padding-top: var(--space-md);
+  padding-top: var(--space-xs);
 }
 
 /*
@@ -160,7 +160,12 @@ body > main {
  * announces. Before the figure-band rule below, which overrides both.
  */
 body > main:not(:has(> .crumb)) {
-  padding-top: calc(var(--space-md) + var(--text-xs) * var(--leading-tight) + var(--space-2xs));
+  padding-top: calc(var(--space-xs) + var(--text-xs) * var(--leading-tight) + var(--space-2xs));
+}
+
+/* A page whose heading is only for screen readers has nothing to line up with a crumb. */
+body > main:has(> h1.visually-hidden) {
+  padding-top: var(--space-xs);
 }
 
 body > main:has(> .figure-band:first-child),
@@ -172,7 +177,7 @@ body > footer {
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
-  margin-top: var(--space-2xl);
+  margin-top: var(--space-xl);
   padding-top: var(--space-md);
   padding-bottom: var(--space-lg);
   font-size: var(--text-sm);

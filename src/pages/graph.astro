@@ -45,7 +45,7 @@ const description = 'What each project in the register is built on, from the lan
   <h1 class="visually-hidden">Graph</h1>
 
   <noscript><p>The graph needs JavaScript. Each record page names what the software is built on.</p></noscript>
-  <div class="full-width">
+  <div class="full-width graph-frame">
     <div class="graph" data-graph hidden>
       <div class="graph-canvas" data-graph-canvas></div>
       <div class="graph-controls" role="group" aria-label="Graph view" data-graph-controls>
@@ -74,14 +74,17 @@ const description = 'What each project in the register is built on, from the lan
 </script>
 
 <style>
+  /* Close to the edges: the graph is scanned, and every pixel of width spreads it out. */
+  .graph-frame {
+    padding-inline: var(--space-xs);
+  }
   .graph {
     position: relative;
     border: var(--rule-hairline) solid var(--color-ink);
-    margin-block: var(--space-xs) var(--space-md);
   }
   .graph-canvas {
-    /* As tall as the screen allows, minus a strip so the edge of the frame shows there is more page. */
-    height: max(28rem, calc(100dvh - var(--space-xl)));
+    /* The screen below the header, so the whole graph shows on load; 5.5rem is the header and the space above the frame. */
+    height: max(28rem, calc(100dvh - 5.5rem));
   }
   .graph-tip {
     position: absolute;
