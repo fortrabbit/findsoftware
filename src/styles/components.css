@@ -1573,6 +1573,8 @@ html.js [data-find-fallback] {
   display: flex;
   gap: var(--space-xs) var(--space-md);
   flex-wrap: wrap;
+  /* The social marks are boxes beside words; centred, they sit on the words' line. */
+  align-items: center;
   font-size: var(--text-sm);
   max-width: var(--measure-data);
 }
@@ -2065,4 +2067,13 @@ article > pre {
 .record-instead {
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   gap: var(--space-lg) var(--space-xl);
+}
+
+/* A record's place in the graph, between its links and its prose. Without a script the section goes with the graph. */
+.record-graph {
+  margin-block: var(--space-md) var(--space-lg);
+}
+
+html:not(.js) .record-graph {
+  display: none;
 }

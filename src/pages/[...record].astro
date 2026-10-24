@@ -25,6 +25,8 @@ import { outboundLinkAttrs } from '../lib/links';
 import { modifiedAt, updatedAfterCheck } from '../lib/modified';
 import SocialLinks from '../components/SocialLinks.astro';
 import PageFigure from '../components/PageFigure.astro';
+import GraphFrame from '../components/GraphFrame.astro';
+import { loadGraph } from '../lib/graph-data';
 import ProviderLogo from '../components/ProviderLogo.astro';
 import FactGroups from '../components/FactGroups.astro';
 import { findhostRows } from '../lib/findhost';
@@ -166,6 +168,9 @@ const drawn = (groups: { label: string; fields: Field[] }[]) =>
   }));
 
 const related = backlinks(everyRecord as never, provider.id);
+
+// Every record in the graph; a hidden one is not in it unless something listed is built on it.
+const inGraph = (await loadGraph()).drawn.has(provider.id);
 
 /*
  * The records most like this one, drawn from the register — never from below it,
@@ -385,11 +390,18 @@ const metaDescription = data.description
           </span>
         ))
       }
+      <SocialLinks social={data.social} />
     </p>
 
-    <SocialLinks social={data.social} />
-
     <PageFigure figure={data.figure} />
+
+    {
+      inGraph && (
+        <section class="record-graph" aria-label={`${data.name} in the graph of what is built on what`}>
+          <GraphFrame record={provider.id} />
+        </section>
+      )
+    }
 
     <div class="record-layout">
       <aside class="record-specs">

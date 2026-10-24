@@ -1,0 +1,115 @@
+---
+import zoomIn from 'bootstrap-icons/icons/zoom-in.svg?raw';
+import zoomOut from 'bootstrap-icons/icons/zoom-out.svg?raw';
+import fullscreen from 'bootstrap-icons/icons/fullscreen.svg?raw';
+import fonts from 'bootstrap-icons/icons/fonts.svg?raw';
+
+interface Props {
+  /** A record page: the graph opens on this record. Absent on /graph/, where the graph is the page. */
+  record?: string;
+}
+
+const { record } = Astro.props;
+// On a record page stepping out leads to the graph page itself, opened on this record, so that control is a link.
+const controls: { value: string; label: string; icon: string; pressed?: boolean; href?: string }[] = [
+  { value: 'in', label: 'Zoom in', icon: zoomIn },
+  { value: 'out', label: 'Zoom out', icon: zoomOut },
+  record
+    ? { value: 'all', label: 'Whole graph', icon: fullscreen, href: `/graph/#${encodeURI(record)}` }
+    : { value: 'step', label: 'Step out (Esc)', icon: fullscreen },
+  { value: 'labels', label: 'Show names', icon: fonts, pressed: false },
+];
+---
+
+<div class:list={['graph', { 'on-record': record }]} data-graph data-graph-record={record}>
+  <div class="graph-canvas" data-graph-canvas></div>
+  <div class="graph-controls" role="group" aria-label="Graph view" data-graph-controls>
+    {
+      controls.map((control) =>
+        control.href ? (
+          <a href={control.href} title={control.label}>
+            <span class="visually-hidden">{control.label}</span>
+            <Fragment set:html={control.icon} />
+          </a>
+        ) : (
+          <button type="button" value={control.value} title={control.label} aria-pressed={control.pressed}>
+            <span class="visually-hidden">{control.label}</span>
+            <Fragment set:html={control.icon} />
+          </button>
+        ),
+      )
+    }
+  </div>
+</div>
+
+<script>
+  /*
+   * Both views read the one /graph.json, so a reader's browser fetches it once
+   * for the whole site. /graph/ draws at once; a record page waits until its
+   * frame comes near the screen, so a reader who never scrolls there loads
+   * neither the data nor the renderer.
+   */
+  for (const root of document.querySelectorAll<HTMLElement>('[data-graph]')) {
+    const record = root.dataset.graphRecord;
+    const start = () =>
+      Promise.all([import('../scripts/graph'), fetch('/graph.json').then((response) => response.json())])
+        .then(([{ mountGraph }, data]) => mountGraph(root, data, { record }))
+        // An empty frame says nothing; without the data the facts below still name the relations.
+        .catch(() => (root.hidden = true));
+    if (!record) start();
+    else
+      new IntersectionObserver(
+        (entries, watch) => {
+          if (!entries.some((entry) => entry.isIntersecting)) return;
+          watch.disconnect();
+          start();
+        },
+        { rootMargin: '300px' },
+      ).observe(root);
+  }
+</script>
+
+<style>
+  .graph {
+    position: relative;
+    border: var(--rule-hairline) solid var(--color-ink);
+  }
+  /* The height is held before the graph draws, so nothing below it moves when it does. */
+  .graph-canvas {
+    /* The screen below the header, so the whole graph shows on load; 5.5rem is the header and the space above the frame. */
+    height: max(28rem, calc(100dvh - 5.5rem));
+  }
+  /* On a record page the graph is one section among others, not the page. */
+  .on-record .graph-canvas {
+    height: 20rem;
+  }
+  /* Without a script there is nothing to draw; /graph/ says so, and a record's facts name its relations. */
+  :global(html:not(.js)) .graph {
+    display: none;
+  }
+  .graph-controls {
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    display: flex;
+    gap: var(--space-3xs);
+  }
+  .graph-controls button,
+  .graph-controls a {
+    display: inline-flex;
+    padding: var(--space-3xs) var(--space-2xs);
+    border: var(--rule-hairline) solid var(--color-ink);
+    border-radius: var(--radius);
+    background: var(--color-page);
+    color: var(--color-ink);
+    cursor: pointer;
+  }
+  .graph-controls button[aria-pressed='true'] {
+    background: var(--color-ink);
+    color: var(--color-page);
+  }
+  .graph-controls :global(svg) {
+    width: 1em;
+    height: 1em;
+  }
+</style>

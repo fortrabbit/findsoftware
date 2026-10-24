@@ -1,42 +1,11 @@
 ---
 import Base from '../layouts/Base.astro';
-import { buildGraph } from '../lib/graph';
-import { fieldOf, labelOf, slugOf } from '../lib/fields';
-import { isListed, loadSoftware } from '../lib/providers';
-import { recordPath } from '../lib/paths';
-import zoomIn from 'bootstrap-icons/icons/zoom-in.svg?raw';
-import zoomOut from 'bootstrap-icons/icons/zoom-out.svg?raw';
-import fullscreen from 'bootstrap-icons/icons/fullscreen.svg?raw';
-import fonts from 'bootstrap-icons/icons/fonts.svg?raw';
+import GraphFrame from '../components/GraphFrame.astro';
 
 /*
  * What the register is built on, drawn. Without JavaScript there is no graph;
  * each record page names its parents, so the facts stay reachable.
  */
-const software = await loadSoftware();
-const listed = new Set(software.filter(isListed).map((entry) => entry.id));
-const { nodes, edges } = buildGraph(
-  software.map((entry) => ({
-    id: entry.id,
-    name: entry.data.name,
-    language: entry.data.language,
-    basedOn: entry.data.basedOn,
-    category: (entry.data.category ?? []).map((value: string) => labelOf('category', value)),
-    status: entry.data.status && entry.data.status !== 'active' ? labelOf('status', entry.data.status) : undefined,
-    href: recordPath(entry),
-  })),
-  (record) => listed.has(record.id),
-  (id) => ({
-    label: labelOf('language', id),
-    href: `/languages/${slugOf(fieldOf.get('language')!, { id, label: labelOf('language', id) })}/`,
-  }),
-);
-const controls: { value: string; label: string; icon: string; pressed?: boolean }[] = [
-  { value: 'in', label: 'Zoom in', icon: zoomIn },
-  { value: 'out', label: 'Zoom out', icon: zoomOut },
-  { value: 'reset', label: 'Show all', icon: fullscreen },
-  { value: 'labels', label: 'Show names', icon: fonts, pressed: false },
-];
 const description = 'What each project in the register is built on, from the language outwards.';
 ---
 
@@ -45,84 +14,13 @@ const description = 'What each project in the register is built on, from the lan
 
   <noscript><p>The graph needs JavaScript. Each record page names what the software is built on.</p></noscript>
   <div class="full-width graph-frame">
-    <div class="graph" data-graph hidden>
-      <div class="graph-canvas" data-graph-canvas></div>
-      <div class="graph-controls" role="group" aria-label="Graph view" data-graph-controls>
-        {
-          controls.map((control) => (
-            <button type="button" value={control.value} title={control.label} aria-pressed={control.pressed}>
-              <span class="visually-hidden">{control.label}</span>
-              <Fragment set:html={control.icon} />
-            </button>
-          ))
-        }
-      </div>
-      <div class="graph-tip" data-graph-tip hidden></div>
-    </div>
+    <GraphFrame />
   </div>
-  <script
-    is:inline
-    type="application/json"
-    data-graph-data
-    set:html={JSON.stringify({ nodes, edges }).replaceAll('<', '\\u003c')}
-  />
 </Base>
-
-<script>
-  import '../scripts/graph';
-</script>
 
 <style>
   /* Close to the edges: the graph is scanned, and every pixel of width spreads it out. */
   .graph-frame {
     padding-inline: var(--space-xs);
-  }
-  .graph {
-    position: relative;
-    border: var(--rule-hairline) solid var(--color-ink);
-  }
-  .graph-canvas {
-    /* The screen below the header, so the whole graph shows on load; 5.5rem is the header and the space above the frame. */
-    height: max(28rem, calc(100dvh - 5.5rem));
-  }
-  .graph-tip {
-    position: absolute;
-    top: var(--space-sm);
-    left: var(--space-sm);
-    max-width: 18rem;
-    padding: var(--space-3xs) var(--space-2xs);
-    background: var(--color-page);
-    color: var(--color-ink);
-    border: var(--rule-hairline) solid var(--color-ink);
-    font-family: var(--font-data);
-    font-size: var(--text-xs);
-    line-height: var(--leading-data);
-  }
-  .graph-controls {
-    position: absolute;
-    top: var(--space-sm);
-    right: var(--space-sm);
-    display: flex;
-    gap: var(--space-3xs);
-  }
-  .graph-controls button {
-    display: inline-flex;
-    padding: var(--space-3xs) var(--space-2xs);
-    border: var(--rule-hairline) solid var(--color-ink);
-    border-radius: var(--radius);
-    background: var(--color-page);
-    color: var(--color-ink);
-    cursor: pointer;
-  }
-  .graph-controls button[aria-pressed='true'] {
-    background: var(--color-ink);
-    color: var(--color-page);
-  }
-  .graph-controls :global(svg) {
-    width: 1em;
-    height: 1em;
-  }
-  .graph-tip :global(p) {
-    margin: 0;
   }
 </style>

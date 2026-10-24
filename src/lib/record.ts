@@ -104,7 +104,7 @@ export function cells(field: Field, value: unknown, context: RecordContext): Cel
 }
 
 /** The relation fields read backwards, and the word each one is drawn under. */
-const backlinkLabels = [{ label: 'Built on by', field: 'basedOn' }];
+const backlinkLabels = [{ label: 'Built on it', field: 'basedOn' }];
 
 /**
  * The other end of every relation: who names this record as their parent, whose

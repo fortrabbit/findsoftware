@@ -15,7 +15,6 @@ export interface GraphRecord {
   name: string;
   language?: string;
   basedOn?: string[];
-  category?: string[];
   status?: string;
   href: string;
 }
@@ -27,9 +26,12 @@ export interface GraphNode {
   x: number;
   y: number;
   href?: string;
-  category?: string[];
-  parents?: string[];
-  status?: string;
+}
+
+/** What the browser receives, as /graph.json. */
+export interface GraphData {
+  nodes: GraphNode[];
+  edges: [string, string][];
 }
 
 /** Records with no language still need a centre; absent stays visible as absent. */
@@ -154,9 +156,6 @@ export function buildGraph(
         x: round(at.get(id)![0]),
         y: round(at.get(id)![1]),
         href: record.href,
-        category: record.category,
-        parents: parents.map((parent) => drawn.get(parent)!.name),
-        status: record.status,
       };
     }),
   ];
