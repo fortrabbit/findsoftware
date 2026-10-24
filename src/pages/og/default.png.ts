@@ -13,10 +13,9 @@ export const GET: APIRoute = async () => {
   const providers = await loadProviders();
 
   const png = await shareCard({
-    name: 'Find your next web host',
-    description:
-      'Web software recorded field by field, with a source for every answer. No scores, no rankings, no affiliate links.',
-    facts: [`${providers.length} providers`, `${facetFields.length} filters`, 'Openly licensed'],
+    name: 'Find software',
+    description: 'A directory of software to build websites and web apps. No scores, no rankings, no affiliate links.',
+    facts: [`${providers.length} projects`, `${facetFields.length} filters`, 'Openly licensed'],
   });
 
   return new Response(png, { headers: { 'Content-Type': 'image/png' } });

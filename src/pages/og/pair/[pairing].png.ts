@@ -31,7 +31,7 @@ export const GET: APIRoute = async ({ props }) => {
   const png = await shareCard({
     name: `${pairing.a.label} and ${pairing.b.label}`,
     description: `The register narrowed to one ${pairing.a.label.toLowerCase()} value and one ${pairing.b.label.toLowerCase()} value, with the narrowing in the address.`,
-    facts: [`${pages} ${pages === 1 ? 'combination' : 'combinations'}`, 'At least 8 providers each'],
+    facts: [`${pages} ${pages === 1 ? 'combination' : 'combinations'}`, 'At least 8 projects each'],
   });
 
   return new Response(png, { headers: { 'Content-Type': 'image/png' } });

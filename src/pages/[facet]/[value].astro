@@ -108,7 +108,7 @@ const combined = (await pairsFor(facet.id, value.id)).map((group) => ({
   description={description}
   markdown={`${facetIndex(facet.id)}${value.slug}.md`}
   image={valueCardPath(facet.id, value.slug)}
-  imageAlt={`A FindSoftware card: ${matches.length} providers recorded as ${value.label.toLowerCase()}.`}
+  imageAlt={`A FindSoftware card: ${matches.length} projects recorded as ${value.label.toLowerCase()}.`}
   schema={[
     {
       '@type': 'BreadcrumbList',

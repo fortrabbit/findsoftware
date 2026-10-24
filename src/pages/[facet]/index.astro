@@ -61,7 +61,7 @@ const leadOf = new Map(
 const Note = note ? (await render(note)).Content : null;
 const figure = note?.data.figure;
 
-const listing = `Every value recorded for ${facet.label.toLowerCase()}, each with the number of hosting providers that hold it and a page listing them alphabetically.`;
+const listing = `Every value recorded for ${facet.label.toLowerCase()}, each with the number of projects that hold it and a page listing them alphabetically.`;
 const description = note?.data.description ? extendDescription(note.data.description, [listing]) : listing;
 
 const origin = Astro.site?.origin ?? '';
