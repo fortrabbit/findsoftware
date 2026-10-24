@@ -20,7 +20,6 @@ const { nodes, edges } = buildGraph(
   software.map((entry) => ({
     id: entry.id,
     name: entry.data.name,
-    description: entry.data.description,
     language: entry.data.language,
     basedOn: entry.data.basedOn,
     category: (entry.data.category ?? []).map((value: string) => labelOf('category', value)),
@@ -86,6 +85,8 @@ const description = 'What each project in the register is built on, from the lan
   }
   .graph-tip {
     position: absolute;
+    top: var(--space-sm);
+    left: var(--space-sm);
     max-width: 18rem;
     padding: var(--space-3xs) var(--space-2xs);
     background: var(--color-page);

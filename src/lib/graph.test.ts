@@ -48,19 +48,6 @@ describe('built-on graph', () => {
     assert.equal(nodes.find((node) => node.key === unknownLanguage)!.href, undefined);
   });
 
-  it('the tree lists a project under each parent', () => {
-    const php = run().tree.find((item) => item.key === 'language:php')!;
-    const laravel = php.children.find((item) => item.key === 'laravel')!;
-    assert.deepEqual(
-      laravel.children.map((item) => item.key),
-      ['filament', 'livewire'],
-    );
-    assert.deepEqual(
-      laravel.children[1]!.children.map((item) => item.key),
-      ['filament'],
-    );
-  });
-
   it('starts no two records on the same spot, so none end up stacked', () => {
     const many = Array.from({ length: 40 }, (_, i) => record(`r${i}`, { language: 'php' }));
     const { nodes } = buildGraph(

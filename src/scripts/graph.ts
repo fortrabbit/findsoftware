@@ -1,11 +1,11 @@
 /**
  * Draws the graph data the page embeds with Sigma. Positions come from the
- * build, so nothing here lays anything out: it paints, explains on hover, and
- * narrows to a subtree on click.
+ * build, so nothing here lays anything out: it paints, names on hover, opens a
+ * leaf's record on click, and explains and narrows to a hub's subtree.
  */
 import Graph from 'graphology';
 import Sigma from 'sigma';
-import { fitViewportToNodes } from '@sigma/utils';
+import { drawDiscNodeHover } from 'sigma/rendering';
 import type { GraphNode } from '../lib/graph';
 
 const root = document.querySelector<HTMLElement>('[data-graph]');
@@ -21,51 +21,65 @@ if (root && data) {
   const token = (name: string) => style.getPropertyValue(name).trim();
   const ink = token('--color-ink');
   const link = token('--color-link');
+  const hub = token('--color-hub');
   const quiet = token('--color-hover');
   const page = token('--color-page');
-  // The tokens are hex; a canvas takes the same colour with an alpha for lines that overlap.
-  const alpha = (hex: string, opacity: number) => {
-    const [r, g, b] = [1, 3, 5].map((at) => parseInt(hex.slice(at, at + 2), 16));
-    return `rgba(${r}, ${g}, ${b}, ${opacity})`;
+  // Sigma's WebGL edges ignore alpha, so a faint line is the colour mixed into the page colour up front.
+  const mix = (hex: string, over: string, share: number) => {
+    const rgb = (value: string) => [1, 3, 5].map((at) => parseInt(value.slice(at, at + 2), 16));
+    const [top, base] = [rgb(hex), rgb(over)];
+    return `rgb(${top.map((channel, at) => Math.round(channel * share + base[at] * (1 - share))).join(', ')})`;
   };
+  const leafColor = mix(link, page, 0.55);
+  const branchColor = mix(hub, page, 0.7);
+  const focusEdgeColor = mix(link, page, 0.3);
   const labelSize = 10;
   const labelFont = token('--font-data');
+
+  // A hub has four or more projects built directly on it and gets the tip; fewer reads as a stray pair, so it stays a leaf and links.
+  const outDegree = new Map<string, number>();
+  for (const [source] of edges) outDegree.set(source, (outDegree.get(source) ?? 0) + 1);
+  const isHub = (key: string) => (outDegree.get(key) ?? 0) >= 4;
 
   const graph = new Graph();
   const byKey = new Map(nodes.map((node) => [node.key, node]));
   // The build lays the graph out on a square; widening it to the frame fills a screen of any shape.
   const aspect = container.clientWidth / container.clientHeight || 1;
-  for (const node of nodes) {
-    const language = node.kind === 'language';
-    graph.addNode(node.key, {
-      x: node.x * aspect,
-      y: node.y,
-      label: node.label,
-      size: language ? 7 : 4,
-      color: language ? ink : link,
-      forceLabel: language,
-    });
+  // Contrast follows depth: languages, then hubs on a language, then hubs on a hub, all named; leaves recede.
+  for (const { key, kind, label, x, y } of nodes) {
+    const shown = { x: x * aspect, y, label };
+    if (kind === 'language') graph.addNode(key, { ...shown, color: ink, size: 7, forceLabel: true });
+    else if (isHub(key))
+      graph.addNode(key, {
+        ...shown,
+        color: kind === 'root' ? hub : branchColor,
+        size: kind === 'root' ? 5.5 : 5,
+        forceLabel: true,
+      });
+    else graph.addNode(key, { ...shown, color: leafColor, size: 4, forceLabel: false });
   }
-  for (const [source, target] of edges) graph.addEdge(source, target, { color: quiet, size: 1 });
+  for (const [source, target] of edges) graph.addEdge(source, target, { size: 1 });
 
   const childrenOf = (key: string) => graph.outNeighbors(key);
   const subtree = (key: string) => {
     const seen = new Set([key]);
     const queue = [key];
-    while (queue.length)
-      for (const child of childrenOf(queue.shift()!)) if (!seen.has(child) && seen.add(child)) queue.push(child);
+    for (let at = 0; at < queue.length; at++)
+      for (const child of childrenOf(queue[at])) if (!seen.has(child) && seen.add(child)) queue.push(child);
     return seen;
   };
 
-  let focus: { key: string; members: Set<string> } | undefined;
-  let hovered: string | undefined;
+  let focus: { key: string; members: Set<string>; named: Set<string>; edges: Set<string> } | undefined;
   let pinned: string | undefined;
-  // Off by default: hundreds of names at once are unreadable and slow to paint. Languages stay named.
+  // Off by default: hundreds of names at once overlap. Languages and hubs stay named; the toggle names every node.
   let labels = false;
 
   const sigma = new Sigma(graph, container, {
     labelFont,
     labelSize,
+    // Only forced names are drawn, so Sigma's label grid never picks some by A–Z order; the hover layer names the rest.
+    labelRenderedSizeThreshold: Infinity,
+    defaultEdgeColor: quiet,
     // A halo in the page colour keeps a label readable where lines cross it.
     defaultDrawNodeLabel: (context, data) => {
       if (!data.label) return;
@@ -79,33 +93,33 @@ if (root && data) {
       context.fillStyle = ink;
       context.fillText(data.label, x, y);
     },
-    // Sigma's label grid skips a name that would overlap another; zooming in reveals the rest.
-    labelRenderedSizeThreshold: 3,
-    defaultEdgeColor: quiet,
-    zIndex: true,
+    // Sigma draws its hover box for any node under the pointer; a node outside the focus is backdrop and gets none.
+    defaultDrawNodeHover: (context, data, settings) => {
+      if (!data.backdrop) drawDiscNodeHover(context, data, settings);
+    },
+    // Sigma hands the reducers a copy, so they change it in place.
     nodeReducer: (key, attributes) => {
-      if (!focus || focus.members.has(key)) {
-        const marked = key === hovered || key === pinned || key === focus?.key;
-        const named = labels || focus || attributes.forceLabel || key === hovered;
-        return {
-          ...attributes,
-          label: named ? attributes.label : '',
-          forceLabel: attributes.forceLabel || Boolean(focus),
-          highlighted: marked,
-          zIndex: marked ? 2 : 1,
-        };
+      if (focus && !focus.members.has(key)) {
+        attributes.backdrop = true;
+        attributes.color = quiet;
+        attributes.size = 3;
+        attributes.forceLabel = false;
+        return attributes;
       }
-      return { ...attributes, color: quiet, label: '', zIndex: 0 };
+      attributes.forceLabel = labels || attributes.forceLabel || Boolean(focus?.named.has(key));
+      attributes.highlighted = key === pinned;
+      return attributes;
     },
     edgeReducer: (key, attributes) => {
       if (!focus) return attributes;
-      const inside = focus.members.has(graph.source(key)) && focus.members.has(graph.target(key));
-      return inside ? { ...attributes, color: alpha(link, 0.35), size: 1 } : { ...attributes, hidden: true };
+      if (focus.edges.has(key)) attributes.color = focusEdgeColor;
+      else attributes.hidden = true;
+      return attributes;
     },
   });
 
-  // One tip for hover and click, under the node's own label. The name is the link, so hovering a node and
-  // clicking its name opens the record; the tip lingers long enough for the pointer to reach it.
+  // One tip for hubs, in the corner of the frame so it covers no neighbours. Hovering shows it, clicking pins it.
+  const projects = new Map<string, number>();
   const describe = (node: GraphNode) => {
     tip.replaceChildren();
     const line = (text: string) => tip.append(Object.assign(document.createElement('p'), { textContent: text }));
@@ -119,73 +133,109 @@ if (root && data) {
     if (node.category?.length) line(node.category.join(', '));
     if (node.parents?.length) line(`Built on ${node.parents.join(', ')}`);
     if (node.status) line(node.status);
-    const built = subtree(node.key).size - 1;
+    if (!projects.has(node.key)) projects.set(node.key, subtree(node.key).size - 1);
+    const built = projects.get(node.key)!;
     if (node.kind === 'language') line(`${built} projects`);
     else if (built) line(`${built} built on it`);
   };
 
-  let shown: string | undefined;
-  const place = () => {
-    if (!shown) return;
-    const at = sigma.framedGraphToViewport(sigma.getNodeDisplayData(shown)!);
-    tip.style.left = `${Math.max(4, Math.min(at.x - 6, container.clientWidth - tip.offsetWidth - 4))}px`;
-    tip.style.top = `${Math.min(at.y + 10, container.clientHeight - tip.offsetHeight - 4)}px`;
+  const show = (key: string | undefined) => {
+    if (key) describe(byKey.get(key)!);
+    tip.hidden = !key;
   };
-  const show = (key: string) => {
-    shown = key;
-    describe(byKey.get(key)!);
-    tip.hidden = false;
-    place();
-  };
-  let hiding: number | undefined;
-  const hideSoon = () => {
-    clearTimeout(hiding);
-    hiding = window.setTimeout(() => {
-      if (pinned) show(pinned);
-      else {
-        shown = undefined;
-        tip.hidden = true;
-      }
-    }, 400);
-  };
-  tip.addEventListener('pointerenter', () => clearTimeout(hiding));
-  tip.addEventListener('pointerleave', hideSoon);
-  sigma.on('afterRender', place);
 
+  const outside = (key: string) => Boolean(focus && !focus.members.has(key));
+
+  // Hovering only touches the cursor and the tip: Sigma names the node in its hover layer without redrawing the graph.
   sigma.on('enterNode', ({ node }) => {
-    clearTimeout(hiding);
-    hovered = node;
-    show(node);
+    if (outside(node)) return;
+    if (isHub(node)) show(node);
     container.style.cursor = 'pointer';
-    sigma.refresh({ skipIndexation: true });
   });
   sigma.on('leaveNode', () => {
-    hovered = undefined;
     container.style.cursor = '';
-    hideSoon();
-    sigma.refresh({ skipIndexation: true });
+    show(pinned);
   });
 
-  // A click keeps the tip open; a project with others built on it also narrows the graph to them.
-  sigma.on('clickNode', ({ node }) => {
+  // Fits from the reset view's pixels: a fit from the current view zooms out on a subtree as wide as the graph.
+  const fit = (keys: Set<string>) => {
+    const cameraState = { x: 0.5, y: 0.5, ratio: 1, angle: 0 };
+    let [left, right, top, bottom] = [Infinity, -Infinity, Infinity, -Infinity];
+    let [minX, maxX, minY, maxY] = [Infinity, -Infinity, Infinity, -Infinity];
+    for (const key of keys) {
+      const point = sigma.getNodeDisplayData(key)!;
+      const at = sigma.framedGraphToViewport(point, { cameraState });
+      [left, right, top, bottom] = [
+        Math.min(left, at.x),
+        Math.max(right, at.x),
+        Math.min(top, at.y),
+        Math.max(bottom, at.y),
+      ];
+      [minX, maxX, minY, maxY] = [
+        Math.min(minX, point.x),
+        Math.max(maxX, point.x),
+        Math.min(minY, point.y),
+        Math.max(maxY, point.y),
+      ];
+    }
+    const ratio = Math.min(
+      1,
+      Math.max((right - left) / container.clientWidth, (bottom - top) / container.clientHeight) * 1.15,
+    );
+    sigma.getCamera().animate({ x: (minX + maxX) / 2, y: (minY + maxY) / 2, ratio, angle: 0 }, { duration: 400 });
+  };
+
+  const narrow = (node: string) => {
     pinned = node;
     show(node);
-    if (childrenOf(node).length) {
-      focus = { key: node, members: subtree(node) };
-      fitViewportToNodes(sigma, [...focus.members], { animate: true });
-    } else if (focus && !focus.members.has(node)) {
-      focus = undefined;
-    }
-    sigma.refresh({ skipIndexation: true });
+    const members = subtree(node);
+    // Past 80 (JavaScript, PHP, no language) the names would overlap: then only the hubs one level down are named, the rest on hover or with the toggle.
+    const children = childrenOf(node).filter((child) => members.size <= 80 || isHub(child));
+    const inside = graph.filterEdges((_, __, source, target) => members.has(source) && members.has(target));
+    focus = { key: node, members, named: new Set([node, ...children]), edges: new Set(inside) };
+    fit(members);
+    sigma.refresh();
+  };
+
+  // A leaf opens its record, in a new tab with the usual modifier keys. A hub pins its tip and narrows to its subtree.
+  sigma.on('clickNode', ({ node, event }) => {
+    if (outside(node)) return;
+    if (isHub(node)) return narrow(node);
+    const href = byKey.get(node)?.href;
+    if (!href) return;
+    const { ctrlKey, metaKey, shiftKey } = event.original as MouseEvent;
+    if (ctrlKey || metaKey || shiftKey) window.open(href, '_blank');
+    else window.location.assign(href);
   });
-  sigma.on('clickStage', () => {
+
+  // The nearest hub above, through any parent; a language has none.
+  const hubAbove = (key: string) => {
+    const queue = graph.inNeighbors(key);
+    const seen = new Set(queue);
+    for (let at = 0; at < queue.length; at++) {
+      if (isHub(queue[at])) return queue[at];
+      for (const parent of graph.inNeighbors(queue[at])) if (!seen.has(parent) && seen.add(parent)) queue.push(parent);
+    }
+  };
+  const unpin = () => {
     pinned = undefined;
-    shown = undefined;
-    tip.hidden = true;
-    if (!focus) return;
+    show(undefined);
+  };
+  const showAll = () => {
+    unpin();
     focus = undefined;
-    sigma.refresh({ skipIndexation: true });
+    sigma.refresh();
     sigma.getCamera().animatedReset();
+  };
+
+  // A click on the empty stage lets go of the tip, and of the focus if there is one.
+  sigma.on('clickStage', () => (focus ? showAll() : unpin()));
+  // Escape steps up one hub at a time; from a language, or after a zoom by hand, it returns to the whole graph.
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return;
+    const up = focus && hubAbove(focus.key);
+    if (up) narrow(up);
+    else showAll();
   });
 
   const camera = sigma.getCamera();
@@ -199,7 +249,9 @@ if (root && data) {
     if (button.value === 'labels') {
       labels = !labels;
       button.setAttribute('aria-pressed', String(labels));
-      sigma.refresh({ skipIndexation: true });
+      // Every name at once costs a frame per pan, so they step aside while the view moves.
+      sigma.setSetting('hideLabelsOnMove', labels);
+      sigma.refresh();
     }
   });
 }

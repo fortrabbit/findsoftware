@@ -3,7 +3,7 @@
  * built on nothing else around them, and everything built on those further out.
  *
  * Pure so `node --test` can hold it: the page hands in plain records and gets
- * back nodes with positions and the same tree as nested lists. The layout runs
+ * back nodes with positions and the edges between them. The layout runs
  * here, at build time, from fixed starting points, so a node sits in the same
  * place on every visit and nothing moves while the page loads.
  */
@@ -13,7 +13,6 @@ import forceAtlas2 from 'graphology-layout-forceatlas2';
 export interface GraphRecord {
   id: string;
   name: string;
-  description?: string;
   language?: string;
   basedOn?: string[];
   category?: string[];
@@ -28,17 +27,9 @@ export interface GraphNode {
   x: number;
   y: number;
   href?: string;
-  description?: string;
   category?: string[];
   parents?: string[];
   status?: string;
-}
-
-export interface TreeItem {
-  key: string;
-  label: string;
-  href?: string;
-  children: TreeItem[];
 }
 
 /** Records with no language still need a centre; absent stays visible as absent. */
@@ -51,7 +42,7 @@ const spread = (text: string) => {
   return (hash >>> 0) / 2 ** 32;
 };
 
-const byLabel = (a: { label: string }, b: { label: string }) => a.label.localeCompare(b.label, 'en');
+let laidOut: { shape: string; at: Map<string, [number, number]> } | undefined;
 
 /**
  * `show` decides which records are drawn; their parents come along whatever
@@ -61,7 +52,7 @@ export function buildGraph(
   records: GraphRecord[],
   show: (record: GraphRecord) => boolean,
   language: (id: string) => { label: string; href: string },
-): { nodes: GraphNode[]; edges: [string, string][]; tree: TreeItem[] } {
+): { nodes: GraphNode[]; edges: [string, string][] } {
   const byId = new Map(records.map((record) => [record.id, record]));
   const drawn = new Map<string, GraphRecord>();
   const add = (record: GraphRecord) => {
@@ -107,33 +98,42 @@ export function buildGraph(
     }
   }
 
-  forceAtlas2.assign(graph, {
-    iterations: 1500,
-    settings: {
-      ...forceAtlas2.inferSettings(graph),
-      gravity: 0.5,
-      scalingRatio: 20,
-      linLogMode: true,
-      barnesHutOptimize: false,
-    },
-  });
+  // The same records always land on the same spots, so the dev server, which renders the page on every request,
+  // lays a graph out once instead of each time.
+  const shape = JSON.stringify([languages, edges]);
+  if (laidOut?.shape !== shape) {
+    // Exact forces settle in 600 rounds. Past 2,000 nodes inferSettings switches to the Barnes-Hut estimate,
+    // which costs less per round but needs more of them to settle.
+    const settings = forceAtlas2.inferSettings(graph);
+    forceAtlas2.assign(graph, {
+      iterations: settings.barnesHutOptimize ? 1500 : 600,
+      settings: { ...settings, gravity: 0.5, scalingRatio: 20, linLogMode: true },
+    });
 
-  // ForceAtlas2 settles into a disc; the elliptical grid mapping stretches that disc onto a square,
-  // so the page can widen it to the frame instead of leaving the corners empty.
-  const keys = graph.nodes();
-  const cx = keys.reduce((sum, key) => sum + graph.getNodeAttribute(key, 'x'), 0) / keys.length;
-  const cy = keys.reduce((sum, key) => sum + graph.getNodeAttribute(key, 'y'), 0) / keys.length;
-  const reach =
-    Math.max(...keys.map((key) => Math.hypot(graph.getNodeAttribute(key, 'x') - cx, graph.getNodeAttribute(key, 'y') - cy))) || 1;
-  const half = (a: number, b: number) =>
-    0.5 * Math.sqrt(Math.max(0, 2 + a * a - b * b + 2 * Math.SQRT2 * a)) -
-    0.5 * Math.sqrt(Math.max(0, 2 + a * a - b * b - 2 * Math.SQRT2 * a));
-  for (const key of keys) {
-    const u = (graph.getNodeAttribute(key, 'x') - cx) / reach;
-    const v = (graph.getNodeAttribute(key, 'y') - cy) / reach;
-    graph.setNodeAttribute(key, 'x', 500 * half(u, v));
-    graph.setNodeAttribute(key, 'y', 500 * half(v, u));
+    // ForceAtlas2 settles into a disc; the elliptical grid mapping stretches that disc onto a square,
+    // so the page can widen it to the frame instead of leaving the corners empty.
+    const keys = graph.nodes();
+    const cx = keys.reduce((sum, key) => sum + graph.getNodeAttribute(key, 'x'), 0) / keys.length;
+    const cy = keys.reduce((sum, key) => sum + graph.getNodeAttribute(key, 'y'), 0) / keys.length;
+    const reach =
+      Math.max(
+        ...keys.map((key) => Math.hypot(graph.getNodeAttribute(key, 'x') - cx, graph.getNodeAttribute(key, 'y') - cy)),
+      ) || 1;
+    const half = (a: number, b: number) =>
+      0.5 * Math.sqrt(Math.max(0, 2 + a * a - b * b + 2 * Math.SQRT2 * a)) -
+      0.5 * Math.sqrt(Math.max(0, 2 + a * a - b * b - 2 * Math.SQRT2 * a));
+    for (const key of keys) {
+      const u = (graph.getNodeAttribute(key, 'x') - cx) / reach;
+      const v = (graph.getNodeAttribute(key, 'y') - cy) / reach;
+      graph.setNodeAttribute(key, 'x', 500 * half(u, v));
+      graph.setNodeAttribute(key, 'y', 500 * half(v, u));
+    }
+    laidOut = {
+      shape,
+      at: new Map(keys.map((key) => [key, [graph.getNodeAttribute(key, 'x'), graph.getNodeAttribute(key, 'y')]])),
+    };
   }
+  const at = laidOut.at;
 
   const round = (value: number) => Math.round(value * 100) / 100;
   const nodes: GraphNode[] = [
@@ -141,8 +141,8 @@ export function buildGraph(
       key,
       ...(key === unknownLanguage ? { label: 'Language not recorded' } : language(key.slice('language:'.length))),
       kind: 'language' as const,
-      x: round(graph.getNodeAttribute(key, 'x')),
-      y: round(graph.getNodeAttribute(key, 'y')),
+      x: round(at.get(key)![0]),
+      y: round(at.get(key)![1]),
     })),
     ...ids.map((id) => {
       const record = drawn.get(id)!;
@@ -151,10 +151,9 @@ export function buildGraph(
         key: id,
         label: record.name,
         kind: parents.length ? ('project' as const) : ('root' as const),
-        x: round(graph.getNodeAttribute(id, 'x')),
-        y: round(graph.getNodeAttribute(id, 'y')),
+        x: round(at.get(id)![0]),
+        y: round(at.get(id)![1]),
         href: record.href,
-        description: record.description,
         category: record.category,
         parents: parents.map((parent) => drawn.get(parent)!.name),
         status: record.status,
@@ -162,20 +161,5 @@ export function buildGraph(
     }),
   ];
 
-  // The same tree as links. A project built on two parents is listed under both; a cycle stops at the repeat.
-  const childrenOf = new Map<string, string[]>();
-  for (const [source, target] of edges) childrenOf.set(source, [...(childrenOf.get(source) ?? []), target]);
-  const label = new Map(nodes.map((node) => [node.key, node]));
-  const branch = (key: string, path: Set<string>): TreeItem => ({
-    key,
-    label: label.get(key)!.label,
-    href: label.get(key)!.href,
-    children: (childrenOf.get(key) ?? [])
-      .filter((child) => !path.has(child))
-      .map((child) => branch(child, new Set([...path, child])))
-      .sort(byLabel),
-  });
-  const tree = languages.map((language) => branch(language, new Set([language]))).sort(byLabel);
-
-  return { nodes, edges, tree };
+  return { nodes, edges };
 }
