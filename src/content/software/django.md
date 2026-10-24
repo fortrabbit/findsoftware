@@ -136,11 +136,6 @@ sources:
   - field: runsAs
     url: https://docs.djangoproject.com/en/6.1/howto/deployment/
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧱
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: Python · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

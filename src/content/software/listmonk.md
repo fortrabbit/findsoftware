@@ -81,11 +81,6 @@ sources:
   - field: runsAs
     url: https://listmonk.app/docs/installation/
     checkedAt: 2026-10-19
-figure:
-  emoji: ✉️
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: Go · Email
 ai: authored
 contentStore: null
 adminUi: null

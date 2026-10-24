@@ -81,11 +81,6 @@ sources:
   - field: latestReleaseDate
     url: https://brew.bsd.cafe/api/v1/repos/stefano/BSSG/releases?limit=50
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

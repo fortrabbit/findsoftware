@@ -86,11 +86,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/workerman/webman.json
     checkedAt: 2026-10-21
-figure:
-  emoji: 🧱
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

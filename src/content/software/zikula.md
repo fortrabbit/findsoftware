@@ -90,11 +90,6 @@ sources:
   - field: licenseModel
     url: https://github.com/zikula/core/blob/3.1.0/composer.json
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: CMS
 ai: authored
 ---
 

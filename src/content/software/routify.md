@@ -83,11 +83,6 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@roxi/routify
     checkedAt: 2026-10-22
-figure:
-  emoji: 📐
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Library
 ai: authored
 contentStore: null
 databases: null

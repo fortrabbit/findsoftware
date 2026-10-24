@@ -80,11 +80,6 @@ sources:
   - field: urls
     url: https://www.embla-carousel.com/docs/plugins
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧩
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · UI
 ai: authored
 contentStore: null
 databases: null

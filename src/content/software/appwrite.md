@@ -74,11 +74,6 @@ sources:
   - field: runsAs
     url: https://appwrite.io/docs/advanced/self-hosting/installation
     checkedAt: 2026-10-19
-figure:
-  emoji: 🏗️
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Backend
 ai: authored
 packagistDownloads: null
 ---

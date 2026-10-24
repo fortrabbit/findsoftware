@@ -93,11 +93,6 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@staart/site
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

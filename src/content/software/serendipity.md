@@ -110,11 +110,6 @@ sources:
   - field: urls
     url: https://www.s9y.org/
     checkedAt: 2026-10-20
-figure:
-  emoji: 📝
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

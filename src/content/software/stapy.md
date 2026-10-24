@@ -97,11 +97,6 @@ sources:
   - field: latestReleaseDate
     url: https://git.sr.ht/~magentix/stapy/blob/master/CHANGELOG.md
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: Python · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -75,11 +75,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/FTXInfotech/laravel-adminpanel/contributors
     checkedAt: 2026-10-20
-figure:
-  emoji: 🎛️
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: PHP · Admin
 ai: authored
 npmWeeklyDownloads: null
 ---

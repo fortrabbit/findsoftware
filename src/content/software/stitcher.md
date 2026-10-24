@@ -79,11 +79,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/pageon/stitcher-core.json
     checkedAt: 2026-10-21
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · SSG
 ai: authored
 npmWeeklyDownloads: null
 ---

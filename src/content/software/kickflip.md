@@ -108,11 +108,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/mallardduck/kickflip.json
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: PHP · SSG
 ai: authored
 npmWeeklyDownloads: null
 ---

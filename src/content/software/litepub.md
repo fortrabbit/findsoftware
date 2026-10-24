@@ -90,11 +90,6 @@ sources:
   - field: runsAs
     url: https://github.com/mirovarga/litepub/blob/master/README.md
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: Go · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

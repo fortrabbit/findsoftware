@@ -60,11 +60,6 @@ sources:
   - field: latestReleaseDate
     url: https://hex.pm/api/packages/nimble_publisher
     checkedAt: 2026-10-23
-figure:
-  emoji: 📐
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: Elixir · Library
 ai: authored
 contentStore: null
 databases: null

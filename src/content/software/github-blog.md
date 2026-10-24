@@ -68,11 +68,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/renatorib/github-blog/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · CMS
 ai: authored
 packagistDownloads: null
 ---

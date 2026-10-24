@@ -68,11 +68,6 @@ sources:
   - field: firstRelease
     url: https://rubygems.org/api/v1/versions/ace.json
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: Ruby · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

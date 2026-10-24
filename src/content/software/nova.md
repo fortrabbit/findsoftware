@@ -64,11 +64,6 @@ sources:
   - field: urls
     url: https://nova.laravel.com
     checkedAt: 2026-10-21
-figure:
-  emoji: 🎛️
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: Admin
 ai: authored
 ---
 

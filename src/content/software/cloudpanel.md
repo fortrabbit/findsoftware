@@ -67,11 +67,6 @@ sources:
   - field: githubStargazers
     url: https://github.com/cloudpanel-io/cloudpanel-ce
     checkedAt: 2026-10-19
-figure:
-  emoji: 🖥️
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: Server
 ai: authored
 contentStore: null
 databases: null

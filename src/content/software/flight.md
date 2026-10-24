@@ -88,11 +88,6 @@ sources:
   - field: urls
     url: https://docs.flightphp.com/awesome-plugins/
     checkedAt: 2026-10-20
-figure:
-  emoji: 🧱
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

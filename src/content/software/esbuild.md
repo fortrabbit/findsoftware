@@ -63,11 +63,6 @@ sources:
   - field: runsAs
     url: https://esbuild.github.io/getting-started/
     checkedAt: 2026-10-19
-figure:
-  emoji: 📦
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Go · Build
 ai: authored
 contentStore: null
 databases: null

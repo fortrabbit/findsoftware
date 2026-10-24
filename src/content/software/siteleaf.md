@@ -61,11 +61,6 @@ sources:
   - field: urls
     url: https://www.siteleaf.com/plans/
     checkedAt: 2026-10-24
-figure:
-  emoji: 📝
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: CMS
 ai: authored
 ---
 

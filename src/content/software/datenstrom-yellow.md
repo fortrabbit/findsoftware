@@ -111,11 +111,6 @@ sources:
   - field: urls
     url: https://datenstrom.se/yellow/extensions/
     checkedAt: 2026-10-24
-figure:
-  emoji: 📝
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

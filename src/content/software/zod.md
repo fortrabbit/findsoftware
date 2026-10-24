@@ -68,11 +68,6 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/zod
     checkedAt: 2026-10-19
-figure:
-  emoji: 📐
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Library
 ai: authored
 contentStore: null
 databases: null

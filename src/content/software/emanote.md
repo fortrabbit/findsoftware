@@ -105,11 +105,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/srid/emanote/contributors?per_page=1
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

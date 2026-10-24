@@ -60,11 +60,6 @@ sources:
   - field: renderingModes
     url: https://github.com/rockhardandrew/bonobo
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: C · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

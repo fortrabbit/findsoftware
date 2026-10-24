@@ -97,11 +97,6 @@ sources:
   - field: urls
     url: https://bottlepy.org/docs/dev/plugins/list.html
     checkedAt: 2026-10-24
-figure:
-  emoji: 🧱
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: Python · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

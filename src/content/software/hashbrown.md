@@ -92,11 +92,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/HashBrownCMS/hashbrown-cms/contributors?per_page=1
     checkedAt: 2026-10-23
-figure:
-  emoji: 🔌
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Headless CMS
 ai: authored
 packagistDownloads: null
 ---

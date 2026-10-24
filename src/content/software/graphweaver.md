@@ -108,11 +108,6 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@exogee/graphweaver
     checkedAt: 2026-10-23
-figure:
-  emoji: 🏗️
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Backend
 ai: authored
 packagistDownloads: null
 ---

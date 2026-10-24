@@ -111,11 +111,6 @@ sources:
   - field: i18n
     url: https://github.com/dotCMS/core/blob/main/README.md
     checkedAt: 2026-10-23
-figure:
-  emoji: 🔌
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: Java · Headless CMS
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

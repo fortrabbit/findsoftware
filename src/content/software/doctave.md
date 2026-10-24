@@ -91,11 +91,6 @@ sources:
   - field: runsAs
     url: https://github.com/Doctave/doctave/blob/master/README.md
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: Rust · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

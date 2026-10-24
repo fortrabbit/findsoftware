@@ -64,11 +64,6 @@ sources:
   - field: latestReleaseDate
     url: https://codeberg.org/api/v1/repos/wbsx/wbsx/releases
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: Go · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

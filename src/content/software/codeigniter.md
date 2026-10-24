@@ -115,11 +115,6 @@ sources:
   - field: runsAs
     url: https://codeigniter.com/user_guide/installation/installing_composer.html
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧱
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

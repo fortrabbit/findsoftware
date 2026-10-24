@@ -33,11 +33,6 @@ sources:
   - field: urls
     url: https://headly.io/pricing
     checkedAt: 2026-10-24
-figure:
-  emoji: 🔌
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: Headless CMS
 ai: authored
 ---
 

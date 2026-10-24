@@ -68,11 +68,6 @@ sources:
   - field: latestReleaseDate
     url: https://git.mills.io/api/v1/repos/prologic/zs/releases
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: Go · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

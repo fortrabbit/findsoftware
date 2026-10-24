@@ -99,11 +99,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/cecil/cecil.json
     checkedAt: 2026-10-20
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · SSG
 ai: authored
 npmWeeklyDownloads: null
 ---

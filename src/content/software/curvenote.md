@@ -91,11 +91,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/curvenote/curvenote/contributors?anon=true&per_page=100
     checkedAt: 2026-10-21
-figure:
-  emoji: 📝
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · CMS
 ai: authored
 packagistDownloads: null
 ---

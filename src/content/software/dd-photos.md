@@ -105,11 +105,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/dougdonohoe/ddphotos/contributors?per_page=1
     checkedAt: 2026-10-23
-figure:
-  emoji: 🖼️
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: Go · Media
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

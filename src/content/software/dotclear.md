@@ -95,11 +95,6 @@ sources:
   - field: latestReleaseDate
     url: https://codeberg.org/api/v1/repos/Dotclear/dotclear/releases/latest
     checkedAt: 2026-10-20
-figure:
-  emoji: 📝
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

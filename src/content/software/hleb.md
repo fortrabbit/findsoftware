@@ -96,11 +96,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/phphleb/hleb.json
     checkedAt: 2026-10-20
-figure:
-  emoji: 🧱
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

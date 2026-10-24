@@ -64,11 +64,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/ThoughtWorksInc/Binding.scala/contributors?per_page=1
     checkedAt: 2026-10-24
-figure:
-  emoji: 📐
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: Library
 ai: authored
 contentStore: null
 databases: null

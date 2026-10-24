@@ -137,11 +137,6 @@ sources:
   - field: runsAs
     url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/install
     checkedAt: 2026-10-19
-figure:
-  emoji: 📝
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: C# · CMS
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

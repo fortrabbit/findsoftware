@@ -97,11 +97,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/webmaster442/BookGen/contributors?per_page=1
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: C# · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -96,11 +96,6 @@ sources:
   - field: urls
     url: https://litekart.in
     checkedAt: 2026-10-23
-figure:
-  emoji: 🛒
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: Go · Shop
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -102,11 +102,6 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/EasyCorp/EasyAdminBundle
     checkedAt: 2026-10-20
-figure:
-  emoji: 🎛️
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: PHP · Admin
 ai: authored
 npmWeeklyDownloads: null
 ---

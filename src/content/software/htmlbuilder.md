@@ -82,11 +82,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/ArtNazarov/HtmlBuilder/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

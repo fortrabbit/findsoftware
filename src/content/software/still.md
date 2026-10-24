@@ -90,11 +90,6 @@ sources:
   - field: firstRelease
     url: https://hex.pm/api/packages/still
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Elixir · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

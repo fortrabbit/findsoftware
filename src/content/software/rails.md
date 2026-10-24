@@ -121,11 +121,6 @@ sources:
   - field: runsAs
     url: https://guides.rubyonrails.org/getting_started.html
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧱
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: Ruby · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

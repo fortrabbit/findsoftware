@@ -75,11 +75,6 @@ sources:
   - field: runsAs
     url: https://typesense.org/docs/guide/install-typesense.html
     checkedAt: 2026-10-19
-figure:
-  emoji: 🔎
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: C++ · Search
 ai: authored
 contentStore: null
 databases: null

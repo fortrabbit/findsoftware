@@ -87,11 +87,6 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/create-t3-app
     checkedAt: 2026-10-22
-figure:
-  emoji: 🧹
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Dev tool
 ai: authored
 contentStore: null
 adminUi: null

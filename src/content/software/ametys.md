@@ -98,11 +98,6 @@ sources:
   - field: templating
     url: https://docs.ametys.org/fr/ametys-v4/manuel-de-parametrage-et-d-integration/integration-graphique/definition-de-gabarit/ecriture-d-un-gabarit.html
     checkedAt: 2026-10-24
-figure:
-  emoji: 📝
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: Java · CMS
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -78,11 +78,6 @@ sources:
   - field: runsAs
     url: https://github.com/gar1t/lambdapad/blob/master/docs/articles/getting-started.md
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

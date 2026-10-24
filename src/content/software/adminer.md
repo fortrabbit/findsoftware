@@ -96,11 +96,6 @@ sources:
   - field: githubStargazers
     url: https://github.com/vrana/adminer
     checkedAt: 2026-10-19
-figure:
-  emoji: 🎛️
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · Admin
 ai: authored
 npmWeeklyDownloads: null
 ---

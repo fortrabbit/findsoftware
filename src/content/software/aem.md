@@ -62,11 +62,6 @@ sources:
   - field: adminUi
     url: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy
     checkedAt: 2026-10-24
-figure:
-  emoji: 📝
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: CMS
 ai: authored
 ---
 

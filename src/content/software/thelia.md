@@ -128,11 +128,6 @@ sources:
   - field: pluginCount
     url: https://thelia.net
     checkedAt: 2026-10-20
-figure:
-  emoji: 🛒
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: PHP · Shop
 ai: authored
 npmWeeklyDownloads: null
 ---

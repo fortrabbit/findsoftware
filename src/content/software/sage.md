@@ -93,11 +93,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/roots/sage.json
     checkedAt: 2026-10-19
-figure:
-  emoji: 📝
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

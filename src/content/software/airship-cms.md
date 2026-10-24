@@ -117,11 +117,6 @@ sources:
   - field: runsAs
     url: https://github.com/paragonie/airship-docs/blob/master/en-us/01-intro/2-Installing.md
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

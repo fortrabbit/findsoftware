@@ -71,11 +71,6 @@ sources:
   - field: license
     url: https://github.com/ReactiveMatter/passage/blob/main/README.md
     checkedAt: 2026-10-21
-figure:
-  emoji: ⚡
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: PHP · SSG
 ai: authored
 npmWeeklyDownloads: null
 ---

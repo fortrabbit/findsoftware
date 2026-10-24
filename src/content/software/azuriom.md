@@ -104,11 +104,6 @@ sources:
   - field: runsAs
     url: https://azuriom.com/docs/installation
     checkedAt: 2026-10-19
-figure:
-  emoji: 📝
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

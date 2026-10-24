@@ -79,11 +79,6 @@ sources:
   - field: latestReleaseDate
     url: https://git.dthompson.dev/haunt/tag/?h=v0.4.0
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

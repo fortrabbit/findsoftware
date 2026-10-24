@@ -61,11 +61,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/Paul-Browne/statik-site/contributors?per_page=100
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

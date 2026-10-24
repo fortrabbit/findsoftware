@@ -56,11 +56,6 @@ sources:
   - field: headlessApi
     url: https://document.microcms.io/content-api/get-list-contents
     checkedAt: 2026-10-24
-figure:
-  emoji: 🔌
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: Headless CMS
 ai: authored
 ---
 

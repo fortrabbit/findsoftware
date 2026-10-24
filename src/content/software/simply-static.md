@@ -72,11 +72,6 @@ sources:
   - field: githubStargazers
     url: https://github.com/Simply-Static/simply-static
     checkedAt: 2026-10-19
-figure:
-  emoji: ⚡
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: PHP · SSG
 ai: authored
 npmWeeklyDownloads: null
 ---

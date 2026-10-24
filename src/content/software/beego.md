@@ -102,11 +102,6 @@ sources:
   - field: templating
     url: https://github.com/beego/beego-doc/blob/main/docs/en-US/developing/web/view/README.md
     checkedAt: 2026-10-24
-figure:
-  emoji: 🧱
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: Go · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

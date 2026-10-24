@@ -74,11 +74,6 @@ sources:
   - field: urls
     url: https://outstatic.com/pricing
     checkedAt: 2026-10-22
-figure:
-  emoji: 📝
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · CMS
 ai: authored
 packagistDownloads: null
 ---

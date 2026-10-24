@@ -134,11 +134,6 @@ sources:
   - field: pluginCount
     url: https://redaxo.org/download/addons/
     checkedAt: 2026-10-20
-figure:
-  emoji: 📝
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

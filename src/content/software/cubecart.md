@@ -104,11 +104,6 @@ sources:
   - field: urls
     url: https://www.cubecart.com/upgrade
     checkedAt: 2026-10-20
-figure:
-  emoji: 🛒
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: PHP · Shop
 ai: authored
 npmWeeklyDownloads: null
 ---

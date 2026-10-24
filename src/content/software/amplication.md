@@ -80,11 +80,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/amplication/amplication/contributors
     checkedAt: 2026-10-22
-figure:
-  emoji: 🏗️
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Backend
 ai: authored
 packagistDownloads: null
 ---

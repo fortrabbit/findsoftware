@@ -85,11 +85,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/melmothx/amusewiki/contributors
     checkedAt: 2026-10-24
-figure:
-  emoji: 📚
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: Wiki
 ai: authored
 ---
 

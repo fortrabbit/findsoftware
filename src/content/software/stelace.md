@@ -95,11 +95,6 @@ sources:
   - field: urls
     url: https://github.com/stelace/stelace
     checkedAt: 2026-10-23
-figure:
-  emoji: 🏗️
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Backend
 ai: authored
 packagistDownloads: null
 ---

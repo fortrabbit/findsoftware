@@ -85,11 +85,6 @@ sources:
   - field: renderingModes
     url: https://kobweb.varabyte.com/docs/concepts/foundation/exporting
     checkedAt: 2026-10-23
-figure:
-  emoji: 🧱
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: Framework
 ai: authored
 ---
 

@@ -90,11 +90,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/dwij/laraadmin
     checkedAt: 2026-10-20
-figure:
-  emoji: 🎛️
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: PHP · Admin
 ai: authored
 npmWeeklyDownloads: null
 ---

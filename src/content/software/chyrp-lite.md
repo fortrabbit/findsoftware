@@ -92,11 +92,6 @@ sources:
   - field: githubStargazers
     url: https://github.com/xenocrat/chyrp-lite
     checkedAt: 2026-10-20
-figure:
-  emoji: 📝
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

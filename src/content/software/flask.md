@@ -82,11 +82,6 @@ sources:
   - field: runsAs
     url: https://flask.palletsprojects.com/en/stable/deploying/
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧱
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: Python · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

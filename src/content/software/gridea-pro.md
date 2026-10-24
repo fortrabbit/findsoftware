@@ -88,11 +88,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/Gridea-Pro/gridea-pro/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Go · CMS
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

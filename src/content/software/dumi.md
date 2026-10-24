@@ -95,11 +95,6 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/dumi
     checkedAt: 2026-10-21
-figure:
-  emoji: ⚡
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

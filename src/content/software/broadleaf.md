@@ -113,11 +113,6 @@ sources:
   - field: i18n
     url: https://monolith.broadleafcommerce.com/docs/core/current/broadleaf-concepts/internationalization/locale-resolution
     checkedAt: 2026-10-24
-figure:
-  emoji: 🛒
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Java · Shop
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

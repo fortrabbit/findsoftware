@@ -88,11 +88,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/teesloane/firn/contributors?per_page=1
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: Rust · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

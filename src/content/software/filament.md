@@ -124,11 +124,6 @@ sources:
   - field: pluginCount
     url: https://filamentphp.com/plugins
     checkedAt: 2026-10-18
-figure:
-  emoji: 🎛️
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · Admin
 ai: authored
 npmWeeklyDownloads: null
 ---

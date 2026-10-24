@@ -94,11 +94,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/sonata-project/SonataAdminBundle/contributors
     checkedAt: 2026-10-21
-figure:
-  emoji: 🎛️
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · Admin
 ai: authored
 npmWeeklyDownloads: null
 ---

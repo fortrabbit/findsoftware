@@ -105,11 +105,6 @@ sources:
   - field: databases
     url: https://raw.githubusercontent.com/django-oscar/django-oscar/master/docs/source/ref/platform_database_support.rst
     checkedAt: 2026-10-23
-figure:
-  emoji: 🛒
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: Python · Shop
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

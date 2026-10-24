@@ -94,11 +94,6 @@ sources:
   - field: runsAs
     url: https://hono.dev/docs/helpers/ssg
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧱
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

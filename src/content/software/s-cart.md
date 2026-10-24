@@ -117,11 +117,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/gp247/s-cart.json
     checkedAt: 2026-10-24
-figure:
-  emoji: 🛒
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Shop
 ai: authored
 ---
 

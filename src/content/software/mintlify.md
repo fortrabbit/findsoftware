@@ -81,11 +81,6 @@ sources:
   - field: i18n
     url: https://mintlify.com/docs/guides/internationalization
     checkedAt: 2026-10-22
-figure:
-  emoji: ⚡
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

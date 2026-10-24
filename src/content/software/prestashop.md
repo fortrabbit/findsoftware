@@ -117,11 +117,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/prestashop/prestashop.json
     checkedAt: 2026-10-18
-figure:
-  emoji: 🛒
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: PHP · Shop
 ai: authored
 npmWeeklyDownloads: null
 ---

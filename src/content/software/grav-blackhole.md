@@ -90,11 +90,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/barryanders/grav-plugin-blackhole/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: PHP · SSG
 ai: authored
 npmWeeklyDownloads: null
 ---

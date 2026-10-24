@@ -104,11 +104,6 @@ sources:
   - field: runtimeMin
     url: https://docs.content.bloomreach.com/getting-started/your-first-project/prerequisites
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: Java · CMS
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

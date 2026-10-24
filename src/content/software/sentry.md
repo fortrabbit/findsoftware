@@ -88,11 +88,6 @@ sources:
   - field: runsAs
     url: https://develop.sentry.dev/self-hosted/
     checkedAt: 2026-10-19
-figure:
-  emoji: 📈
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: Python · Analytics
 ai: authored
 contentStore: null
 databases: null

@@ -105,11 +105,6 @@ sources:
   - field: runtime
     url: https://raw.githubusercontent.com/metavert-io/lightcms/main/README.md
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: Go · CMS
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

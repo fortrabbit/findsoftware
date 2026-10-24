@@ -80,11 +80,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/bootique/bootique/contributors
     checkedAt: 2026-10-24
-figure:
-  emoji: 🧱
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Java · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

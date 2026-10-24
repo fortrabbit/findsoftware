@@ -115,11 +115,6 @@ sources:
   - field: runsAs
     url: https://docs.spring.io/spring-boot/reference/using/running-your-application.html
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧱
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: Java · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

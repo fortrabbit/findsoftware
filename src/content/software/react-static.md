@@ -107,11 +107,6 @@ sources:
   - field: urls
     url: https://github.com/react-static/react-static/blob/master/docs/plugins/README.md
     checkedAt: 2026-10-22
-figure:
-  emoji: ⚡
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

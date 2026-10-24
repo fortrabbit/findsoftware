@@ -31,11 +31,6 @@ sources:
   - field: installMethod
     url: https://www.jekyllpad.com/about
     checkedAt: 2026-10-24
-figure:
-  emoji: 📝
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: CMS
 ai: authored
 ---
 

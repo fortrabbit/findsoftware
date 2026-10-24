@@ -53,11 +53,6 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/uzsolt/wpwmm4
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

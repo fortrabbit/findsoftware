@@ -72,11 +72,6 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/wheat
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · CMS
 ai: authored
 packagistDownloads: null
 ---

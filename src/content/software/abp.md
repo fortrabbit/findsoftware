@@ -110,11 +110,6 @@ sources:
   - field: i18n
     url: https://github.com/abpframework/abp/blob/dev/docs/en/framework/fundamentals/localization.md
     checkedAt: 2026-10-24
-figure:
-  emoji: 🧱
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: C# · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

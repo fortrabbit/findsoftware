@@ -79,11 +79,6 @@ sources:
   - field: runsAs
     url: https://tailwindcss.com/docs/installation/using-vite
     checkedAt: 2026-10-19
-figure:
-  emoji: 🎨
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · CSS
 ai: authored
 contentStore: null
 databases: null

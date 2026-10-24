@@ -92,11 +92,6 @@ sources:
   - field: latestReleaseDate
     url: https://rubygems.org/api/v1/gems/nesta.json
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: Ruby · CMS
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -72,11 +72,6 @@ sources:
   - field: latestReleaseDate
     url: https://github.com/livewire/livewire/releases/tag/v4.4.7
     checkedAt: 2026-10-19
-figure:
-  emoji: 📐
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: PHP · Library
 ai: authored
 contentStore: null
 databases: null

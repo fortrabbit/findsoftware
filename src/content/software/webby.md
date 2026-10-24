@@ -90,11 +90,6 @@ sources:
   - field: contentStore
     url: https://raw.githubusercontent.com/TwP/webby/master/README.rdoc
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: Ruby · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

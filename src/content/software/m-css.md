@@ -76,11 +76,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/mosra/m.css/contributors?per_page=1
     checkedAt: 2026-10-23
-figure:
-  emoji: 🎨
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: CSS
 ai: authored
 ---
 

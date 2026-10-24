@@ -75,11 +75,6 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/noodlehaus/dispatch
     checkedAt: 2026-10-20
-figure:
-  emoji: 🧱
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

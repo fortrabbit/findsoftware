@@ -77,11 +77,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/activej/activej/contributors
     checkedAt: 2026-10-24
-figure:
-  emoji: 🧱
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: Java · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -80,11 +80,6 @@ sources:
   - field: runsAs
     url: https://github.com/louislam/uptime-kuma/blob/2.5.6/README.md
     checkedAt: 2026-10-19
-figure:
-  emoji: 📈
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Analytics
 ai: authored
 contentStore: null
 databases: null

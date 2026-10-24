@@ -111,11 +111,6 @@ sources:
   - field: urls
     url: https://c1.orckestra.com/Add-ons
     checkedAt: 2026-10-24
-figure:
-  emoji: 📝
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: C# · CMS
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

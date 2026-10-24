@@ -88,11 +88,6 @@ sources:
   - field: contentStore
     url: https://github.com/tomzorz/lastpage/blob/master/README.md
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: C# · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

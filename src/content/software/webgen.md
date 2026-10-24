@@ -105,11 +105,6 @@ sources:
   - field: contentStore
     url: https://webgen.gettalong.org/
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: Ruby · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

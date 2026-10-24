@@ -105,11 +105,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/microweber/microweber.json
     checkedAt: 2026-10-20
-figure:
-  emoji: 📝
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

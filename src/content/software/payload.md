@@ -157,11 +157,6 @@ sources:
   - field: runsAs
     url: https://payloadcms.com/docs/production/deployment
     checkedAt: 2026-10-19
-figure:
-  emoji: 🔌
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Headless CMS
 ai: authored
 packagistDownloads: null
 ---

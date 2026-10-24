@@ -94,11 +94,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/PHPFusion/PHPFusion/contributors?anon=true&per_page=100
     checkedAt: 2026-10-20
-figure:
-  emoji: 📝
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

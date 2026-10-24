@@ -87,11 +87,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/apiato/core.json
     checkedAt: 2026-10-20
-figure:
-  emoji: 🧱
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

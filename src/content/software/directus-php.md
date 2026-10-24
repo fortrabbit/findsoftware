@@ -80,11 +80,6 @@ sources:
   - field: headlessApi
     url: https://github.com/directus/v8-archive
     checkedAt: 2026-10-23
-figure:
-  emoji: 🔌
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: PHP · Headless CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

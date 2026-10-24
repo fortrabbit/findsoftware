@@ -475,35 +475,6 @@ function maintainerTypeOf({ maintainer, repoOwnerType, researched }) {
   return undefined;
 }
 
-const palette = ['#f4d35e', '#9ad1d4', '#f6bd60', '#b8e0d2', '#f7a399', '#cdb4db', '#a3c4f3', '#c5e1a5'];
-const emojiOf = {
-  cms: '📝',
-  'headless-cms': '🔌',
-  ssg: '⚡',
-  framework: '🧱',
-  backend: '🏗️',
-  'e-commerce': '🛒',
-  wiki: '📚',
-  community: '💬',
-  'admin-panel': '🎛️',
-  'ui-library': '🧩',
-  'css-framework': '🎨',
-  graphics: '📊',
-  library: '📐',
-  'build-tool': '📦',
-  'dev-tool': '🧹',
-  testing: '🧪',
-  'web-server': '🖥️',
-  database: '🗄️',
-  search: '🔎',
-  analytics: '📈',
-  auth: '🔑',
-  email: '✉️',
-  media: '🖼️',
-  forms: '📋',
-};
-const hash = (value) => [...value].reduce((sum, char) => (sum * 31 + char.charCodeAt(0)) >>> 0, 7);
-
 // Kinds whose records store, render or serve content; for every other kind the content fields do not apply.
 const contentKinds = new Set([
   'cms',
@@ -747,19 +718,6 @@ for (const file of facts) {
       checkedAt: String(fact.checkedAt ?? research.checkedAt ?? today).slice(0, 10),
     }));
 
-  const kind = record.category?.[0] ?? 'framework';
-  const labels = Object.fromEntries(
-    (dictionary.find((entry) => entry.id === 'language')?.values ?? []).map((v) => [v.id, v.label]),
-  );
-  const short = Object.fromEntries(
-    (dictionary.find((entry) => entry.id === 'category')?.values ?? []).map((v) => [v.id, v.short]),
-  );
-  record.figure = {
-    emoji: emojiOf[kind] ?? '🧩',
-    color: palette[hash(record.id) % palette.length],
-    textColor: '#1a1a1a',
-    text: [labels[record.language], short[kind]].filter(Boolean).join(' · ') || record.name,
-  };
   record.ai = 'authored';
 
   // Prose is written beside the facts and carried in as the record body.

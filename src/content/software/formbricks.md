@@ -96,11 +96,6 @@ sources:
   - field: runsAs
     url: https://formbricks.com/docs/self-hosting/setup/docker
     checkedAt: 2026-10-19
-figure:
-  emoji: 📋
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Forms
 ai: authored
 contentStore: null
 adminUi: null

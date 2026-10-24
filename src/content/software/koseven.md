@@ -107,11 +107,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/koseven/koseven.json
     checkedAt: 2026-10-23
-figure:
-  emoji: 🧱
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

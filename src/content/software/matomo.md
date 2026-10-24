@@ -86,11 +86,6 @@ sources:
   - field: runsAs
     url: https://matomo.org/docs/installation/
     checkedAt: 2026-10-19
-figure:
-  emoji: 📈
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: PHP · Analytics
 ai: authored
 contentStore: null
 adminUi: null

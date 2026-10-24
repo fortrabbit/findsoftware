@@ -83,11 +83,6 @@ sources:
   - field: runsAs
     url: https://docs.aiohttp.org/en/stable/deployment.html
     checkedAt: 2026-10-24
-figure:
-  emoji: 🧱
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: Python · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

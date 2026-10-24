@@ -83,11 +83,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/spectrasecure/arise/contributors?per_page=1
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

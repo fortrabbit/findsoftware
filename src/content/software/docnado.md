@@ -91,11 +91,6 @@ sources:
   - field: contentStore
     url: https://github.com/HEInventions/docnado/blob/master/README.md
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: Python · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

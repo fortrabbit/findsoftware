@@ -73,11 +73,6 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/illuminate/database
     checkedAt: 2026-10-19
-figure:
-  emoji: 📐
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: PHP · Library
 ai: authored
 contentStore: null
 adminUi: null

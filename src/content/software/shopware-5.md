@@ -92,11 +92,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/shopware/shopware.json
     checkedAt: 2026-10-24
-figure:
-  emoji: 🛒
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: Shop
 ai: authored
 ---
 

@@ -70,11 +70,6 @@ sources:
   - field: contributors
     url: https://github.com/btcpayserver/btcpayserver
     checkedAt: 2026-10-19
-figure:
-  emoji: 🛒
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: C# · Shop
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

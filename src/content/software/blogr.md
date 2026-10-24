@@ -83,11 +83,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/bahdotsh/blogr/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Rust · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

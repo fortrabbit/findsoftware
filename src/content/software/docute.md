@@ -109,11 +109,6 @@ sources:
   - field: urls
     url: https://github.com/egoist/docute/blob/master/README.md
     checkedAt: 2026-10-22
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

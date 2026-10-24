@@ -113,11 +113,6 @@ sources:
   - field: urls
     url: https://www.getlektor.com/plugins/
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: Python · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

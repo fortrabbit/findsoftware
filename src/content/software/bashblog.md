@@ -77,11 +77,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/cfenollosa/bashblog/contributors?per_page=1
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

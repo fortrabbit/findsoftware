@@ -121,11 +121,6 @@ sources:
   - field: runsAs
     url: https://laravel.com/docs/13.x/deployment
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧱
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

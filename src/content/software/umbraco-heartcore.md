@@ -56,11 +56,6 @@ sources:
   - field: hqCountry
     url: https://umbraco.com/about-us/
     checkedAt: 2026-10-24
-figure:
-  emoji: 🔌
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: Headless CMS
 ai: authored
 ---
 

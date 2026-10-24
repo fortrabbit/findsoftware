@@ -83,11 +83,6 @@ sources:
   - field: runsAs
     url: https://docs.meteor.com/tutorials/deployment/deployment.html
     checkedAt: 2026-10-21
-figure:
-  emoji: 🧱
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

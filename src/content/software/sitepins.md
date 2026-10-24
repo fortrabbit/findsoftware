@@ -98,11 +98,6 @@ sources:
   - field: runsAs
     url: https://github.com/sitepins/sitepins/blob/main/README.md
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · CMS
 ai: authored
 packagistDownloads: null
 ---

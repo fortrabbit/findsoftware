@@ -95,11 +95,6 @@ sources:
   - field: adminUi
     url: https://raw.githubusercontent.com/diefenbach/django-lfs/main/docs/user/management/shop/index.rst
     checkedAt: 2026-10-23
-figure:
-  emoji: 🛒
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: Python · Shop
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

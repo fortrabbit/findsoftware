@@ -71,11 +71,6 @@ sources:
   - field: runsAs
     url: https://eslint.org/docs/latest/use/getting-started
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧹
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Dev tool
 ai: authored
 contentStore: null
 databases: null

@@ -88,11 +88,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/BlazorStatic/BlazorStatic/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: C# · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

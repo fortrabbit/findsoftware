@@ -94,11 +94,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/Frozen-Flask/Frozen-Flask/contributors?per_page=1
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Python · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

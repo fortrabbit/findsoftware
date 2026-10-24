@@ -99,11 +99,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/craftcms/commerce.json
     checkedAt: 2026-10-20
-figure:
-  emoji: 🛒
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: PHP · Shop
 ai: authored
 npmWeeklyDownloads: null
 ---

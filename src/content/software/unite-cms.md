@@ -81,11 +81,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/unite-cms/unite-cms/contributors?per_page=100&anon=true
     checkedAt: 2026-10-20
-figure:
-  emoji: 🔌
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: PHP · Headless CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -53,11 +53,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/chriskthomas/linkfree-generator/contributors
     checkedAt: 2026-10-20
-figure:
-  emoji: ⚡
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: PHP · SSG
 ai: authored
 npmWeeklyDownloads: null
 ---

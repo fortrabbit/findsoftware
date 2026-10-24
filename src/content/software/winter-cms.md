@@ -135,11 +135,6 @@ sources:
   - field: runsAs
     url: https://wintercms.com/docs/setup/installation
     checkedAt: 2026-10-19
-figure:
-  emoji: 📝
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

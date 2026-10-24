@@ -81,11 +81,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/gilacms/gila.json
     checkedAt: 2026-10-20
-figure:
-  emoji: 📝
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

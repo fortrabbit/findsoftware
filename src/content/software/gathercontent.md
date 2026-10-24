@@ -23,11 +23,6 @@ sources:
   - field: parent
     url: https://www.bynder.com/en/blog/gathercontent-is-now-content-workflow-by-bynder/
     checkedAt: 2026-10-23
-figure:
-  emoji: 🧱
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: Framework
 ai: authored
 ---
 

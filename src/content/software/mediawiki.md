@@ -100,11 +100,6 @@ sources:
   - field: maintainer
     url: https://github.com/wikimedia/mediawiki/blob/master/COPYING
     checkedAt: 2026-10-20
-figure:
-  emoji: 📚
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · Wiki
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -84,11 +84,6 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/top-think/framework
     checkedAt: 2026-10-21
-figure:
-  emoji: 🧱
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

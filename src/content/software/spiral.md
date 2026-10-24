@@ -104,11 +104,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/spiral/framework/contributors
     checkedAt: 2026-10-21
-figure:
-  emoji: 🧱
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

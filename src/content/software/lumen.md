@@ -74,11 +74,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/laravel/lumen-framework.json
     checkedAt: 2026-10-21
-figure:
-  emoji: 🧱
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

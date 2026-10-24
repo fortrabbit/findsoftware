@@ -75,11 +75,6 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/agentejo/cockpit
     checkedAt: 2026-10-20
-figure:
-  emoji: 📝
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: CMS
 ai: authored
 ---
 

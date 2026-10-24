@@ -112,11 +112,6 @@ sources:
   - field: urls
     url: https://www.neos.io/
     checkedAt: 2026-10-20
-figure:
-  emoji: 📝
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

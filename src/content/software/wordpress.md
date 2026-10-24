@@ -131,11 +131,6 @@ sources:
   - field: runsAs
     url: https://wordpress.org/about/requirements/
     checkedAt: 2026-10-19
-figure:
-  emoji: 📝
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -75,11 +75,6 @@ sources:
   - field: urls
     url: https://raw.githubusercontent.com/vercel/commerce/main/README.md
     checkedAt: 2026-10-23
-figure:
-  emoji: 🛒
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Shop
 ai: authored
 packagistDownloads: null
 ---

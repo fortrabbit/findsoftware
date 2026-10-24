@@ -79,11 +79,6 @@ sources:
   - field: templating
     url: https://github.com/assemble/assemble/blob/master/README.md
     checkedAt: 2026-10-22
-figure:
-  emoji: ⚡
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

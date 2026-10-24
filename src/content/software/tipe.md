@@ -23,11 +23,6 @@ sources:
   - field: category
     url: https://tipe.io/
     checkedAt: 2026-10-23
-figure:
-  emoji: 🔌
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Headless CMS
 ai: authored
 ---
 

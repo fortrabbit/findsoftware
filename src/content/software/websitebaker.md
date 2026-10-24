@@ -81,11 +81,6 @@ sources:
   - field: urls
     url: https://websitebaker.org/en/home/
     checkedAt: 2026-10-24
-figure:
-  emoji: 📝
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: CMS
 ai: authored
 ---
 

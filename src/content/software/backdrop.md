@@ -68,11 +68,6 @@ sources:
   - field: runsAs
     url: https://backdropcms.org/download
     checkedAt: 2026-10-19
-figure:
-  emoji: 📝
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

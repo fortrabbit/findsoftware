@@ -75,11 +75,6 @@ sources:
   - field: runsAs
     url: https://webpack.js.org/guides/getting-started/
     checkedAt: 2026-10-19
-figure:
-  emoji: 📦
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Build
 ai: authored
 contentStore: null
 databases: null

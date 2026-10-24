@@ -85,11 +85,6 @@ sources:
   - field: licenseModel
     url: https://adduce.vale.rocks/
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: Rust · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

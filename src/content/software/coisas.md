@@ -68,11 +68,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/fiatjaf/coisas/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · CMS
 ai: authored
 packagistDownloads: null
 ---

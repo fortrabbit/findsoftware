@@ -82,11 +82,6 @@ sources:
   - field: runsAs
     url: https://pecl.php.net/package/swoole
     checkedAt: 2026-10-19
-figure:
-  emoji: 🖥️
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: C++ · Server
 ai: authored
 contentStore: null
 databases: null

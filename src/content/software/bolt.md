@@ -86,11 +86,6 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/bolt-cli
     checkedAt: 2026-10-22
-figure:
-  emoji: ⚡
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

@@ -86,11 +86,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/fictionco/fiction/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · CMS
 ai: authored
 packagistDownloads: null
 ---

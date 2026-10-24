@@ -87,11 +87,6 @@ sources:
   - field: urls
     url: https://hapi.dev/
     checkedAt: 2026-10-22
-figure:
-  emoji: 🧱
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

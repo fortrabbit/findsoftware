@@ -91,11 +91,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/litecart/litecart/contributors
     checkedAt: 2026-10-20
-figure:
-  emoji: 🛒
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · Shop
 ai: authored
 npmWeeklyDownloads: null
 ---

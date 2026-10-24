@@ -73,11 +73,6 @@ sources:
   - field: runsAs
     url: https://nakkaya.com/static.html
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

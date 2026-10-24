@@ -57,11 +57,6 @@ sources:
   - field: urls
     url: https://www.flotiq.com/
     checkedAt: 2026-10-23
-figure:
-  emoji: 🔌
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: Headless CMS
 ai: authored
 ---
 

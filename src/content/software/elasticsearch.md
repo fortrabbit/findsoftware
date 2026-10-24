@@ -80,11 +80,6 @@ sources:
   - field: runsAs
     url: https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch
     checkedAt: 2026-10-19
-figure:
-  emoji: 🔎
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: Java · Search
 ai: authored
 contentStore: null
 databases: null

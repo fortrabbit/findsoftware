@@ -91,11 +91,6 @@ sources:
   - field: urls
     url: https://github.com/duysolo/webed/blob/4.0/README.md
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

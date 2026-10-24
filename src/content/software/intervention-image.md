@@ -72,11 +72,6 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/Intervention/image
     checkedAt: 2026-10-19
-figure:
-  emoji: 🖼️
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: PHP · Media
 ai: authored
 contentStore: null
 databases: null

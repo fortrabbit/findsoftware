@@ -82,11 +82,6 @@ sources:
   - field: runsAs
     url: https://actix.rs/docs/server
     checkedAt: 2026-10-24
-figure:
-  emoji: 🧱
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Rust · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

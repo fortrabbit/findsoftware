@@ -122,11 +122,6 @@ sources:
   - field: runsAs
     url: https://jigsaw.tighten.com/docs/installation/
     checkedAt: 2026-10-19
-figure:
-  emoji: ⚡
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: PHP · SSG
 ai: authored
 npmWeeklyDownloads: null
 ---

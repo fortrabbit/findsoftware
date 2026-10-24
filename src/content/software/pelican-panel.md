@@ -95,11 +95,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/pelican/panel/contributors
     checkedAt: 2026-10-21
-figure:
-  emoji: 🧱
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

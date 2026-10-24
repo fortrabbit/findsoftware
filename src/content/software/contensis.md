@@ -51,11 +51,6 @@ sources:
   - field: i18n
     url: https://www.contensis.com/help-and-docs/guides/modelling-content/content-types/enable-or-disable-languages-for-a-content-type
     checkedAt: 2026-10-23
-figure:
-  emoji: 🔌
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: Headless CMS
 ai: authored
 ---
 

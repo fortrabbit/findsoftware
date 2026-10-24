@@ -111,11 +111,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/discourse/discourse/contributors
     checkedAt: 2026-10-19
-figure:
-  emoji: 💬
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: Ruby · Community
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

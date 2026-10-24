@@ -108,11 +108,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/axodotdev/oranda/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: Rust · SSG
 ai: authored
 packagistDownloads: null
 ---

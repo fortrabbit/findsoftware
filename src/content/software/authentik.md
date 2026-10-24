@@ -79,11 +79,6 @@ sources:
   - field: runsAs
     url: https://docs.goauthentik.io/install-config/install/docker-compose/
     checkedAt: 2026-10-19
-figure:
-  emoji: 🔑
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: Python · Auth
 ai: authored
 contentStore: null
 databases: null

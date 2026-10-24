@@ -110,11 +110,6 @@ sources:
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q2662124
     checkedAt: 2026-10-20
-figure:
-  emoji: 💬
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: PHP · Community
 ai: authored
 npmWeeklyDownloads: null
 ---

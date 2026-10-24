@@ -95,11 +95,6 @@ sources:
   - field: contentStore
     url: https://github.com/BeaconCMS/beacon/blob/main/README.md
     checkedAt: 2026-10-24
-figure:
-  emoji: 📝
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: Elixir · CMS
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

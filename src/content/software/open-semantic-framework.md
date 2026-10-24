@@ -59,11 +59,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/structureddynamics/OSF-Web-Services/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: 🧱
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

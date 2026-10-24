@@ -89,11 +89,6 @@ sources:
   - field: runsAs
     url: https://frankenphp.dev/docs/docker/
     checkedAt: 2026-10-19
-figure:
-  emoji: 🖥️
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: Go · Server
 ai: authored
 contentStore: null
 databases: null

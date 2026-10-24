@@ -92,11 +92,6 @@ sources:
   - field: firstRelease
     url: https://registry.npmjs.org/@stencil/core
     checkedAt: 2026-10-22
-figure:
-  emoji: 🧩
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · UI
 ai: authored
 contentStore: null
 databases: null

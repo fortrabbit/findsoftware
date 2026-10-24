@@ -102,11 +102,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/requarks/wiki/contributors
     checkedAt: 2026-10-19
-figure:
-  emoji: 📚
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: Wiki
 ai: authored
 ---
 

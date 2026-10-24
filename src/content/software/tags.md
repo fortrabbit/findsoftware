@@ -81,11 +81,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/braceio/tags/contributors?per_page=1
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: Python · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

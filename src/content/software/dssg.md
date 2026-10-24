@@ -87,11 +87,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/kambrium/dssg/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

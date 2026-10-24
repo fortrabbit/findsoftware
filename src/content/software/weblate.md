@@ -93,11 +93,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/WeblateOrg/weblate/contributors?anon=true
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧹
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: Python · Dev tool
 ai: authored
 adminUi: null
 headlessApi: null

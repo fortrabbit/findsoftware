@@ -66,11 +66,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/alephjs/aleph.js/contributors
     checkedAt: 2026-10-22
-figure:
-  emoji: 🧱
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

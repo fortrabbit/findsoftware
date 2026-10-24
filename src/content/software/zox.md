@@ -96,11 +96,6 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/zox
     checkedAt: 2026-10-23
-figure:
-  emoji: 🧱
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

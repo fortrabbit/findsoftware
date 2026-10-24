@@ -155,11 +155,6 @@ sources:
   - field: runsAs
     url: https://docs.strapi.io/cms/deployment
     checkedAt: 2026-10-19
-figure:
-  emoji: 🔌
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Headless CMS
 ai: authored
 packagistDownloads: null
 ---

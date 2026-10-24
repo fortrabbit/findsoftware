@@ -74,11 +74,6 @@ sources:
   - field: githubStargazers
     url: https://github.com/ionic-team/ionic-framework
     checkedAt: 2026-10-22
-figure:
-  emoji: 🧩
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · UI
 ai: authored
 contentStore: null
 databases: null

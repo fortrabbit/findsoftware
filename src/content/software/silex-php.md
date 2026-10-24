@@ -94,11 +94,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/silex/silex.json
     checkedAt: 2026-10-23
-figure:
-  emoji: 🧱
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

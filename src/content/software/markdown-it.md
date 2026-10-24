@@ -75,11 +75,6 @@ sources:
   - field: githubStargazers
     url: https://github.com/markdown-it/markdown-it
     checkedAt: 2026-10-19
-figure:
-  emoji: 📐
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Library
 ai: authored
 contentStore: null
 databases: null

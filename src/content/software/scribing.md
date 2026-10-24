@@ -101,11 +101,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/elazar/scribing.json
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: PHP · SSG
 ai: authored
 npmWeeklyDownloads: null
 ---

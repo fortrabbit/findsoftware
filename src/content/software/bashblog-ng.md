@@ -57,11 +57,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/DavidSatimeWallin/bashblog-ng/contributors?per_page=1
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

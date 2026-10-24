@@ -81,11 +81,6 @@ sources:
   - field: runsAs
     url: https://docs.opensearch.org/latest/install-and-configure/install-opensearch/tar/
     checkedAt: 2026-10-19
-figure:
-  emoji: 🔎
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Java · Search
 ai: authored
 contentStore: null
 databases: null

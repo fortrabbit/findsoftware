@@ -104,11 +104,6 @@ sources:
   - field: urls
     url: https://docs.studiocms.dev/en/start-here/getting-started/
     checkedAt: 2026-10-23
-figure:
-  emoji: 🔌
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Headless CMS
 ai: authored
 packagistDownloads: null
 ---

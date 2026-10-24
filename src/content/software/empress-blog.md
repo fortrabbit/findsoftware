@@ -84,11 +84,6 @@ sources:
   - field: githubStargazers
     url: https://github.com/empress/empress-blog
     checkedAt: 2026-10-21
-figure:
-  emoji: 📝
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · CMS
 ai: authored
 packagistDownloads: null
 ---

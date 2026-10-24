@@ -61,11 +61,6 @@ sources:
   - field: i18n
     url: https://kontent.ai/learn/docs/languages
     checkedAt: 2026-10-24
-figure:
-  emoji: 🔌
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: Headless CMS
 ai: authored
 ---
 

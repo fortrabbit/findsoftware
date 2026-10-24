@@ -90,11 +90,6 @@ sources:
   - field: pluginCount
     url: https://www.datocms.com/marketplace
     checkedAt: 2026-10-18
-figure:
-  emoji: 🔌
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Headless CMS
 ai: authored
 packagistDownloads: null
 ---

@@ -122,11 +122,6 @@ sources:
   - field: pluginCount
     url: https://starlight.astro.build/resources/plugins/
     checkedAt: 2026-10-18
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

@@ -64,11 +64,6 @@ sources:
   - field: i18n
     url: https://docs.snipcart.com/v3/setup/localization
     checkedAt: 2026-10-24
-figure:
-  emoji: 🛒
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Shop
 ai: authored
 ---
 

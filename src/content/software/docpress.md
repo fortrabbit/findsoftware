@@ -72,11 +72,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/docpress/docpress/contributors?anon=true&per_page=100
     checkedAt: 2026-10-22
-figure:
-  emoji: ⚡
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

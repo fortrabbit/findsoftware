@@ -81,11 +81,6 @@ sources:
   - field: runsAs
     url: https://github.com/valkey-io/valkey/blob/unstable/README.md
     checkedAt: 2026-10-19
-figure:
-  emoji: 🗄️
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: C · Database
 ai: authored
 contentStore: null
 databases: null

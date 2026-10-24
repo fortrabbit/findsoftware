@@ -69,11 +69,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/athena-framework/framework/contributors
     checkedAt: 2026-10-24
-figure:
-  emoji: 🧱
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: Framework
 ai: authored
 ---
 

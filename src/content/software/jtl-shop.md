@@ -87,11 +87,6 @@ sources:
   - field: urls
     url: https://www.jtl-software.com/en/ecommerce-platform
     checkedAt: 2026-10-24
-figure:
-  emoji: 🛒
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: Shop
 ai: authored
 ---
 

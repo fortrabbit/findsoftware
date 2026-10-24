@@ -77,11 +77,6 @@ sources:
   - field: githubStargazers
     url: https://github.com/greensock/GSAP
     checkedAt: 2026-10-19
-figure:
-  emoji: 📊
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Graphics
 ai: authored
 contentStore: null
 databases: null

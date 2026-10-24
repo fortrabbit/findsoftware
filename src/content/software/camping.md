@@ -91,11 +91,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/camping/camping/contributors?per_page=1
     checkedAt: 2026-10-24
-figure:
-  emoji: 🧱
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: Ruby · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

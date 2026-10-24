@@ -80,11 +80,6 @@ sources:
   - field: runsAs
     url: https://eff-certbot.readthedocs.io/en/stable/using.html
     checkedAt: 2026-10-20
-figure:
-  emoji: 🖥️
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: Python · Server
 ai: authored
 contentStore: null
 databases: null

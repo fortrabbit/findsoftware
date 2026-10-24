@@ -43,11 +43,6 @@ sources:
   - field: hqCountry
     url: https://suncel.io/terms-of-service
     checkedAt: 2026-10-24
-figure:
-  emoji: 🔌
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: Headless CMS
 ai: authored
 ---
 

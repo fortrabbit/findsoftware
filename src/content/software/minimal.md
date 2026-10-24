@@ -72,11 +72,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/lutzroeder/minimal/contributors?per_page=100&anon=true
     checkedAt: 2026-10-22
-figure:
-  emoji: ⚡
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

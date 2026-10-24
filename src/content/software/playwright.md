@@ -72,11 +72,6 @@ sources:
   - field: runsAs
     url: https://playwright.dev/docs/intro
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧪
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Testing
 ai: authored
 contentStore: null
 databases: null

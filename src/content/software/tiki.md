@@ -88,11 +88,6 @@ sources:
   - field: license
     url: https://gitlab.com/tikiwiki/tiki/-/raw/master/license.txt
     checkedAt: 2026-10-20
-figure:
-  emoji: 📚
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: PHP · Wiki
 ai: authored
 npmWeeklyDownloads: null
 ---

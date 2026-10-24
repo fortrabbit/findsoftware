@@ -140,11 +140,6 @@ sources:
   - field: runsAs
     url: https://leafphp.dev/
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧱
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

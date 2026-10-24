@@ -97,11 +97,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/tcg/voyager.json
     checkedAt: 2026-10-23
-figure:
-  emoji: 🎛️
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: PHP · Admin
 ai: authored
 npmWeeklyDownloads: null
 ---

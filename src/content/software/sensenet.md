@@ -106,11 +106,6 @@ sources:
   - field: databases
     url: https://raw.githubusercontent.com/SenseNet/sensenet/develop/deployment/readme.md
     checkedAt: 2026-10-23
-figure:
-  emoji: 🔌
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: C# · Headless CMS
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -89,11 +89,6 @@ sources:
   - field: contributors
     url: https://github.com/slackero/phpwcms
     checkedAt: 2026-10-20
-figure:
-  emoji: 📝
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

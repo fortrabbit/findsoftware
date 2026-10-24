@@ -44,11 +44,6 @@ sources:
   - field: hqCountry
     url: https://firebasestorage.googleapis.com/v0/b/flamelink-website.appspot.com/o/flamelink%2Fmedia%2FFlamelink%20Terms%20and%20Conditions%2C%20Terms%20of%20Service%20%26%20Disclaimer%202024.docx.pdf?alt=media&token=2f3d0eca-74f2-4fa8-89da-8583943c96c4
     checkedAt: 2026-10-23
-figure:
-  emoji: 🔌
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: Headless CMS
 ai: authored
 ---
 

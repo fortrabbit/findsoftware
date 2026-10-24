@@ -100,11 +100,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/aschmelyun/cleaver.json
     checkedAt: 2026-10-20
-figure:
-  emoji: ⚡
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: PHP · SSG
 ai: authored
 npmWeeklyDownloads: null
 ---

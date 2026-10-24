@@ -60,11 +60,6 @@ sources:
   - field: templating
     url: https://github.com/NBens/Statify/blob/master/statify.py
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Python · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

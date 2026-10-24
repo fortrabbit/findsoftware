@@ -59,11 +59,6 @@ sources:
   - field: runsAs
     url: https://nextjs.org/docs/app/api-reference/turbopack
     checkedAt: 2026-10-19
-figure:
-  emoji: 📦
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: Rust · Build
 ai: authored
 contentStore: null
 databases: null

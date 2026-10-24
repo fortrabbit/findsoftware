@@ -108,11 +108,6 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@sonicjs-cms/core
     checkedAt: 2026-10-23
-figure:
-  emoji: 🔌
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Headless CMS
 ai: authored
 packagistDownloads: null
 ---

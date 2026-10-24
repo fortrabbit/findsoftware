@@ -88,11 +88,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/blink/blink.json
     checkedAt: 2026-10-20
-figure:
-  emoji: 🧱
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

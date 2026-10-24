@@ -84,11 +84,6 @@ sources:
   - field: runsAs
     url: https://swetrix.com/docs/selfhosting/how-to
     checkedAt: 2026-10-19
-figure:
-  emoji: 📈
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Analytics
 ai: authored
 contentStore: null
 databases: null

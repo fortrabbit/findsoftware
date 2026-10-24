@@ -97,11 +97,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/ash-project/ash/contributors
     checkedAt: 2026-10-24
-figure:
-  emoji: 🧱
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: Elixir · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

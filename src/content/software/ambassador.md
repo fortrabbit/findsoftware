@@ -69,11 +69,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/envoy/Ambassador/contributors
     checkedAt: 2026-10-24
-figure:
-  emoji: 🧱
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: Framework
 ai: authored
 ---
 

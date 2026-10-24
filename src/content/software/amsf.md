@@ -94,11 +94,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/sparanoid/almace-scaffolding/contributors
     checkedAt: 2026-10-22
-figure:
-  emoji: ⚡
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

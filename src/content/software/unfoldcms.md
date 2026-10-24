@@ -89,11 +89,6 @@ sources:
   - field: runsAs
     url: https://unfoldcms.com/docs/getting-started
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: CMS
 ai: authored
 ---
 

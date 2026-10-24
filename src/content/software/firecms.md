@@ -119,11 +119,6 @@ sources:
   - field: firstRelease
     url: https://github.com/firecmsco/firecms/releases/tag/v1.0.0
     checkedAt: 2026-10-23
-figure:
-  emoji: 🎛️
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Admin
 ai: authored
 packagistDownloads: null
 ---

@@ -69,11 +69,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/pillars/poltergeist/contributors?per_page=100
     checkedAt: 2026-10-22
-figure:
-  emoji: ⚡
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

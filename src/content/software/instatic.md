@@ -108,11 +108,6 @@ sources:
   - field: firstRelease
     url: https://github.com/CoreBunch/Instatic/releases
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · CMS
 ai: authored
 packagistDownloads: null
 ---

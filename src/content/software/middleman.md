@@ -103,11 +103,6 @@ sources:
   - field: runtimeMin
     url: https://rubygems.org/api/v2/rubygems/middleman/versions/4.6.3.json
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: Ruby · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

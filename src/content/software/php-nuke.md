@@ -74,11 +74,6 @@ sources:
   - field: contributors
     url: https://github.com/phpnuke/phpnuke
     checkedAt: 2026-10-20
-figure:
-  emoji: 📝
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

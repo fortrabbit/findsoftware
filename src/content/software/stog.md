@@ -79,11 +79,6 @@ sources:
   - field: contributors
     url: https://framagit.org/api/v4/projects/zoggy%2Fstog/repository/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

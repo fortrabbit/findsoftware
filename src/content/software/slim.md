@@ -105,11 +105,6 @@ sources:
   - field: runsAs
     url: https://www.slimframework.com/docs/v4/start/installation.html
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧱
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

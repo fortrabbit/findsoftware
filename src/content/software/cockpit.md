@@ -99,11 +99,6 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/Cockpit-HQ/Cockpit
     checkedAt: 2026-10-20
-figure:
-  emoji: 🔌
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: PHP · Headless CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

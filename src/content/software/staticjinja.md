@@ -88,11 +88,6 @@ sources:
   - field: runsAs
     url: https://staticjinja.github.io/staticjinja/user/quickstart.html
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Python · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

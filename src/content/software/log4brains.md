@@ -80,11 +80,6 @@ sources:
   - field: contentStore
     url: https://raw.githubusercontent.com/thomvaill/log4brains/develop/README.md
     checkedAt: 2026-10-21
-figure:
-  emoji: ⚡
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

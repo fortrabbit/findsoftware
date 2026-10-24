@@ -92,11 +92,6 @@ sources:
   - field: templating
     url: https://github.com/verless/verless/blob/master/docs/template-reference.md
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: Go · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

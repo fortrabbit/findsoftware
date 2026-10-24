@@ -66,11 +66,6 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/water.css
     checkedAt: 2026-10-19
-figure:
-  emoji: 🎨
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: CSS
 ai: authored
 contentStore: null
 databases: null

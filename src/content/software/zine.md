@@ -97,11 +97,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/kristoff-it/zine/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

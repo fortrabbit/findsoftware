@@ -72,11 +72,6 @@ sources:
   - field: contributors
     url: https://github.com/centrifugal/centrifugo
     checkedAt: 2026-10-19
-figure:
-  emoji: 🏗️
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: Go · Backend
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

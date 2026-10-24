@@ -105,11 +105,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/contentacms/contenta_jsonapi/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: 🔌
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: PHP · Headless CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

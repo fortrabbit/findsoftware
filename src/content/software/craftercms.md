@@ -116,11 +116,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/craftersoftware/craftercms/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: Java · CMS
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

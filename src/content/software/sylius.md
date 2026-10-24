@@ -145,11 +145,6 @@ sources:
   - field: urls
     url: https://sylius.com/plugins/
     checkedAt: 2026-10-18
-figure:
-  emoji: 🛒
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: PHP · Shop
 ai: authored
 npmWeeklyDownloads: null
 ---

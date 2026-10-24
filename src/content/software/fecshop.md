@@ -94,11 +94,6 @@ sources:
   - field: urls
     url: https://www.fecmall.com/
     checkedAt: 2026-10-20
-figure:
-  emoji: 🛒
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: PHP · Shop
 ai: authored
 npmWeeklyDownloads: null
 ---

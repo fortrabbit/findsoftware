@@ -71,11 +71,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/statamic/ssg/contributors
     checkedAt: 2026-10-21
-figure:
-  emoji: ⚡
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: PHP · SSG
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -75,11 +75,6 @@ sources:
   - field: runsAs
     url: https://rollupjs.org/introduction/
     checkedAt: 2026-10-19
-figure:
-  emoji: 📦
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Build
 ai: authored
 contentStore: null
 databases: null

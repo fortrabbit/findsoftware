@@ -97,11 +97,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/docpad/docpad/contributors?anon=true&per_page=100
     checkedAt: 2026-10-22
-figure:
-  emoji: ⚡
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

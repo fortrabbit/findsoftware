@@ -36,11 +36,6 @@ sources:
   - field: licenseModel
     url: https://www.firstspirit.com/policies/legal/
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: CMS
 ai: authored
 ---
 

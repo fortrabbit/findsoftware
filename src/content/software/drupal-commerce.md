@@ -65,11 +65,6 @@ sources:
   - field: license
     url: https://packages.drupal.org/files/packages/8/p2/drupal/commerce.json
     checkedAt: 2026-10-20
-figure:
-  emoji: 🛒
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · Shop
 ai: authored
 npmWeeklyDownloads: null
 ---

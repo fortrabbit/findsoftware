@@ -83,11 +83,6 @@ sources:
   - field: runsAs
     url: https://docs.imgproxy.net/installation
     checkedAt: 2026-10-19
-figure:
-  emoji: 🖼️
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: Go · Media
 ai: authored
 contentStore: null
 databases: null

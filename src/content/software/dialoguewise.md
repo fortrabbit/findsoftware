@@ -31,11 +31,6 @@ sources:
   - field: adminUi
     url: https://docs.dialoguewise.com/manage-content/portal/deploy-content/
     checkedAt: 2026-10-23
-figure:
-  emoji: 🔌
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: Headless CMS
 ai: authored
 ---
 

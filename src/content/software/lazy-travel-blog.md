@@ -63,11 +63,6 @@ sources:
   - field: contentStore
     url: https://github.com/martin-martin/lazy-travel-blog/blob/master/README.md
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: Python · CMS
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -107,11 +107,6 @@ sources:
   - field: runsAs
     url: https://www.getzola.org/documentation/deployment/github-pages/
     checkedAt: 2026-10-19
-figure:
-  emoji: ⚡
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Rust · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

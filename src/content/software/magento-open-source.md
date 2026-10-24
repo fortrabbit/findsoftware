@@ -117,11 +117,6 @@ sources:
   - field: runsAs
     url: https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html
     checkedAt: 2026-10-19
-figure:
-  emoji: 🛒
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: PHP · Shop
 ai: authored
 npmWeeklyDownloads: null
 ---

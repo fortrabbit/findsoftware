@@ -60,11 +60,6 @@ sources:
   - field: latestReleaseDate
     url: https://api.github.com/repos/clayrisser/blogdown/releases
     checkedAt: 2026-10-22
-figure:
-  emoji: ⚡
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

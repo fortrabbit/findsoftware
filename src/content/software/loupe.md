@@ -78,11 +78,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/loupe/loupe.json
     checkedAt: 2026-10-19
-figure:
-  emoji: 🔎
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: PHP · Search
 ai: authored
 adminUi: null
 headlessApi: null

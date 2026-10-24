@@ -160,11 +160,6 @@ sources:
   - field: runsAs
     url: https://statamic.dev/getting-started/deploying
     checkedAt: 2026-10-19
-figure:
-  emoji: 📝
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

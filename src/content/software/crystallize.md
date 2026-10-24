@@ -51,11 +51,6 @@ sources:
   - field: i18n
     url: https://crystallize.com/docs/pim/multilingual
     checkedAt: 2026-10-23
-figure:
-  emoji: 🛒
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: Shop
 ai: authored
 ---
 

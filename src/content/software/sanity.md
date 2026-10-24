@@ -124,11 +124,6 @@ sources:
   - field: urls
     url: https://www.sanity.io/plugins
     checkedAt: 2026-10-18
-figure:
-  emoji: 🔌
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Headless CMS
 ai: authored
 packagistDownloads: null
 ---

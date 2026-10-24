@@ -103,11 +103,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/flarum/flarum/contributors
     checkedAt: 2026-10-19
-figure:
-  emoji: 💬
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: PHP · Community
 ai: authored
 npmWeeklyDownloads: null
 ---

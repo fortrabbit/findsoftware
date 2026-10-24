@@ -75,11 +75,6 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/fuma-nama/fumadocs
     checkedAt: 2026-10-21
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

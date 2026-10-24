@@ -57,11 +57,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/fukamachi/caveman/contributors
     checkedAt: 2026-10-24
-figure:
-  emoji: 🧱
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: Framework
 ai: authored
 ---
 

@@ -95,11 +95,6 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/marko
     checkedAt: 2026-10-22
-figure:
-  emoji: 🧩
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · UI
 ai: authored
 packagistDownloads: null
 ---

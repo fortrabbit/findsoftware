@@ -77,11 +77,6 @@ sources:
   - field: runsAs
     url: https://vinyl-cache.org/docs/9.1/tutorial/putting_vinyl_on_port_80.html
     checkedAt: 2026-10-19
-figure:
-  emoji: 🖥️
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: C · Server
 ai: authored
 contentStore: null
 databases: null

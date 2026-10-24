@@ -108,11 +108,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/apache/roller/contributors
     checkedAt: 2026-10-24
-figure:
-  emoji: 📝
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: Java · CMS
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

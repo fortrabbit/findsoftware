@@ -142,11 +142,6 @@ sources:
   - field: runsAs
     url: https://docs.octobercms.com/4.x/setup/installation.html
     checkedAt: 2026-10-19
-figure:
-  emoji: 📝
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

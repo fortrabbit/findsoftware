@@ -76,11 +76,6 @@ sources:
   - field: runsAs
     url: https://remark42.com/docs/getting-started/installation/
     checkedAt: 2026-10-19
-figure:
-  emoji: 💬
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: Go · Community
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

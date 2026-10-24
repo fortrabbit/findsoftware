@@ -99,11 +99,6 @@ sources:
   - field: pluginCount
     url: https://brunch.github.io/docs/getting-started
     checkedAt: 2026-10-22
-figure:
-  emoji: 📦
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Build
 ai: authored
 contentStore: null
 databases: null

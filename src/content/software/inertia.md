@@ -92,11 +92,6 @@ sources:
   - field: latestReleaseDate
     url: https://github.com/inertiajs/inertia/releases/tag/v3.9.1
     checkedAt: 2026-10-19
-figure:
-  emoji: 📐
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Library
 ai: authored
 contentStore: null
 databases: null

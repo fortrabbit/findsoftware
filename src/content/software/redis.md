@@ -80,11 +80,6 @@ sources:
   - field: runsAs
     url: https://redis.io/docs/latest/operate/oss_and_stack/install/archive/install-redis/
     checkedAt: 2026-10-19
-figure:
-  emoji: 🗄️
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: C · Database
 ai: authored
 contentStore: null
 databases: null

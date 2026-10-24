@@ -126,11 +126,6 @@ sources:
   - field: urls
     url: https://automad.org/
     checkedAt: 2026-10-24
-figure:
-  emoji: 📝
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

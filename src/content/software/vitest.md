@@ -68,11 +68,6 @@ sources:
   - field: runsAs
     url: https://vitest.dev/guide/
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧪
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Testing
 ai: authored
 contentStore: null
 databases: null

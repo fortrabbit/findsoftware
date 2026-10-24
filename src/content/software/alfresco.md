@@ -96,11 +96,6 @@ sources:
   - field: runsAs
     url: https://github.com/Alfresco/docs-alfresco/blob/master/content-services/community/install/zip/index.md
     checkedAt: 2026-10-24
-figure:
-  emoji: 📝
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: Java · CMS
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

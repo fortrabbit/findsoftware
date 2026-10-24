@@ -77,11 +77,6 @@ sources:
   - field: runsAs
     url: https://docs.roadrunner.dev/
     checkedAt: 2026-10-19
-figure:
-  emoji: 🖥️
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: Go · Server
 ai: authored
 contentStore: null
 databases: null

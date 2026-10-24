@@ -125,11 +125,6 @@ sources:
   - field: runsAs
     url: https://keystonejs.com/docs/getting-started
     checkedAt: 2026-10-19
-figure:
-  emoji: 🔌
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Headless CMS
 ai: authored
 packagistDownloads: null
 ---

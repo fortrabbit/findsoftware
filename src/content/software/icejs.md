@@ -91,11 +91,6 @@ sources:
   - field: i18n
     url: https://v3.ice.work/docs/guide/advanced/i18n
     checkedAt: 2026-10-21
-figure:
-  emoji: 🧱
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

@@ -53,11 +53,6 @@ sources:
   - field: urls
     url: https://www.swell.is/pricing
     checkedAt: 2026-10-24
-figure:
-  emoji: 🛒
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: Shop
 ai: authored
 ---
 

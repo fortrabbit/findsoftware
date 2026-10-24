@@ -89,11 +89,6 @@ sources:
   - field: urls
     url: https://www.cmsimple-xh.org/
     checkedAt: 2026-10-20
-figure:
-  emoji: 📝
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · CMS
 ai: authored
 packagistDownloads: null
 ---

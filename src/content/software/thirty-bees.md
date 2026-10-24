@@ -103,11 +103,6 @@ sources:
   - field: license
     url: https://raw.githubusercontent.com/thirtybees/thirtybees/1.7.0/LICENSES
     checkedAt: 2026-10-20
-figure:
-  emoji: 🛒
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · Shop
 ai: authored
 npmWeeklyDownloads: null
 ---

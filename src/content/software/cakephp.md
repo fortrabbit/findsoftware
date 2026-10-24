@@ -124,11 +124,6 @@ sources:
   - field: runsAs
     url: https://book.cakephp.org/5.x/installation.html
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧱
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

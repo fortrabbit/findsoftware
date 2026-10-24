@@ -64,11 +64,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/mimoduo/mimogear/contributors
     checkedAt: 2026-10-22
-figure:
-  emoji: ⚡
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

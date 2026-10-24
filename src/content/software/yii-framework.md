@@ -140,11 +140,6 @@ sources:
   - field: runsAs
     url: https://www.yiiframework.com/doc/guide/2.0/en/start-installation
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧱
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

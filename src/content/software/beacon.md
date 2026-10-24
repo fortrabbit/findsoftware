@@ -103,11 +103,6 @@ sources:
   - field: contributors
     url: https://github.com/BeaconCMS/beacon/graphs/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: Elixir · CMS
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

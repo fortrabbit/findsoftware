@@ -75,11 +75,6 @@ sources:
   - field: runsAs
     url: https://mailpit.axllent.org/docs/install/
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧹
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: Go · Dev tool
 ai: authored
 contentStore: null
 databases: null

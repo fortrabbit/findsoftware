@@ -71,11 +71,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/go-chi/chi/contributors
     checkedAt: 2026-10-24
-figure:
-  emoji: 📐
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: Go · Library
 ai: authored
 contentStore: null
 databases: null

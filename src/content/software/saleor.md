@@ -87,11 +87,6 @@ sources:
   - field: runsAs
     url: https://docs.saleor.io/setup/docker-compose.md
     checkedAt: 2026-10-19
-figure:
-  emoji: 🛒
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Python · Shop
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

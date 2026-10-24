@@ -124,11 +124,6 @@ sources:
   - field: runsAs
     url: https://svelte.dev/docs/kit/adapters
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧱
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

@@ -72,11 +72,6 @@ sources:
   - field: githubStargazers
     url: https://github.com/10up/ElasticPress
     checkedAt: 2026-10-19
-figure:
-  emoji: 🔎
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: PHP · Search
 ai: authored
 contentStore: null
 databases: null

@@ -82,11 +82,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/mreider/krems/contributors?per_page=1
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: Go · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

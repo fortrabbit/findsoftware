@@ -81,11 +81,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/vormadev/vorma/contributors?per_page=1&anon=true
     checkedAt: 2026-10-22
-figure:
-  emoji: 🧱
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: Go · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

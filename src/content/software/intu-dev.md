@@ -86,11 +86,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/intuition-dev/INTUITION/contributors
     checkedAt: 2026-10-22
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

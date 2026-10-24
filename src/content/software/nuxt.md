@@ -136,11 +136,6 @@ sources:
   - field: runsAs
     url: https://nuxt.com/docs/getting-started/deployment
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧱
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

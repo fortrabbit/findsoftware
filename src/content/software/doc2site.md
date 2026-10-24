@@ -33,11 +33,6 @@ sources:
   - field: urls
     url: https://doc2.site/pricing
     checkedAt: 2026-10-23
-figure:
-  emoji: 🔌
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: Headless CMS
 ai: authored
 ---
 

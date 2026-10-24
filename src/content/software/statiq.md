@@ -99,11 +99,6 @@ sources:
   - field: runsAs
     url: https://www.statiq.dev/web
     checkedAt: 2026-10-23
-figure:
-  emoji: 🧱
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: C# · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

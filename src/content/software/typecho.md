@@ -95,11 +95,6 @@ sources:
   - field: license
     url: https://docs.typecho.org/
     checkedAt: 2026-10-20
-figure:
-  emoji: 📝
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

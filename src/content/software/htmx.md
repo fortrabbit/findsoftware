@@ -73,11 +73,6 @@ sources:
   - field: urls
     url: https://htmx.org/extensions/
     checkedAt: 2026-10-22
-figure:
-  emoji: 🧩
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · UI
 ai: authored
 contentStore: null
 databases: null

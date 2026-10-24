@@ -76,11 +76,6 @@ sources:
   - field: installMethod
     url: https://github.com/tokio-rs/axum/blob/main/axum/src/lib.rs
     checkedAt: 2026-10-24
-figure:
-  emoji: 🧱
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: Rust · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

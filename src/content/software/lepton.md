@@ -90,11 +90,6 @@ sources:
   - field: parent
     url: https://lepton-cms.org/english/disclaimer.php
     checkedAt: 2026-10-23
-figure:
-  emoji: 📝
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: CMS
 ai: authored
 ---
 

@@ -83,11 +83,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/coast-framework/coast/contributors
     checkedAt: 2026-10-24
-figure:
-  emoji: 🧱
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: Framework
 ai: authored
 ---
 

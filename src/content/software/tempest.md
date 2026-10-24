@@ -124,11 +124,6 @@ sources:
   - field: runsAs
     url: https://tempestphp.com/3.x/extra-topics/deployments
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧱
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

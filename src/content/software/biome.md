@@ -70,11 +70,6 @@ sources:
   - field: runsAs
     url: https://biomejs.dev/guides/getting-started/
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧹
-  color: "#9ad1d4"
-  textColor: "#1a1a1a"
-  text: Rust · Dev tool
 ai: authored
 contentStore: null
 databases: null

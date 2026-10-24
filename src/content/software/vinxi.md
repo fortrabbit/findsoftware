@@ -96,11 +96,6 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/vinxi
     checkedAt: 2026-10-22
-figure:
-  emoji: 📐
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Library
 ai: authored
 contentStore: null
 databases: null

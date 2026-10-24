@@ -79,11 +79,6 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/shadcn
     checkedAt: 2026-10-19
-figure:
-  emoji: 🧩
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · UI
 ai: authored
 contentStore: null
 databases: null

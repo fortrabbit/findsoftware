@@ -56,11 +56,6 @@ sources:
   - field: urls
     url: https://www.cosmicjs.com/
     checkedAt: 2026-10-23
-figure:
-  emoji: 🔌
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: Headless CMS
 ai: authored
 ---
 

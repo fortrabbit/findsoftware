@@ -84,11 +84,6 @@ sources:
   - field: runsAs
     url: https://www.meilisearch.com/docs/resources/self_hosting/getting_started/install_locally
     checkedAt: 2026-10-19
-figure:
-  emoji: 🔎
-  color: "#c5e1a5"
-  textColor: "#1a1a1a"
-  text: Rust · Search
 ai: authored
 databases: null
 adminUi: null

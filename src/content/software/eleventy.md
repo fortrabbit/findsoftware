@@ -135,11 +135,6 @@ sources:
   - field: runsAs
     url: https://www.11ty.dev/docs/deployment/
     checkedAt: 2026-10-19
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

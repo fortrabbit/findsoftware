@@ -90,11 +90,6 @@ sources:
   - field: renderingModes
     url: https://renatoathaydes.github.io/magnanimous/sections/docs/get_started.html
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: Go · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

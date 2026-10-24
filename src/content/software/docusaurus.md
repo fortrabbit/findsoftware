@@ -130,11 +130,6 @@ sources:
   - field: runsAs
     url: https://docusaurus.io/docs/deployment
     checkedAt: 2026-10-19
-figure:
-  emoji: ⚡
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · SSG
 ai: authored
 packagistDownloads: null
 ---

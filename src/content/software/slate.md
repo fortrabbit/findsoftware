@@ -101,11 +101,6 @@ sources:
   - field: licenseModel
     url: https://raw.githubusercontent.com/slatedocs/slate/v2.13.1/LICENSE
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: Ruby · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

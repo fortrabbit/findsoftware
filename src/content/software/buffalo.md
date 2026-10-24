@@ -95,11 +95,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/gobuffalo/buffalo/contributors?per_page=1
     checkedAt: 2026-10-24
-figure:
-  emoji: 🧱
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: Go · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -155,11 +155,6 @@ sources:
   - field: runsAs
     url: https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Installation/Install.html
     checkedAt: 2026-10-19
-figure:
-  emoji: 📝
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: PHP · CMS
 ai: authored
 npmWeeklyDownloads: null
 ---

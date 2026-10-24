@@ -68,11 +68,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/kumbia/framework.json
     checkedAt: 2026-10-20
-figure:
-  emoji: 🧱
-  color: "#f6bd60"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

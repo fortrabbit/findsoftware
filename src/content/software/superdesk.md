@@ -108,11 +108,6 @@ sources:
   - field: runsAs
     url: https://github.com/superdesk/superdesk/blob/v3.5/README.md
     checkedAt: 2026-10-23
-figure:
-  emoji: 🔌
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: Python · Headless CMS
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

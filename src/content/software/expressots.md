@@ -84,11 +84,6 @@ sources:
   - field: githubStargazers
     url: https://github.com/expressots/expressots
     checkedAt: 2026-10-21
-figure:
-  emoji: 🧱
-  color: "#cdb4db"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

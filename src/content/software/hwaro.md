@@ -89,11 +89,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/hahwul/hwaro/contributors
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: SSG
 ai: authored
 ---
 

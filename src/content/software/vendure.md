@@ -98,11 +98,6 @@ sources:
   - field: runsAs
     url: https://docs.vendure.io/current/core/deployment/server-resource-requirements
     checkedAt: 2026-10-19
-figure:
-  emoji: 🛒
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Shop
 ai: authored
 packagistDownloads: null
 ---

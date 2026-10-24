@@ -50,11 +50,6 @@ sources:
   - field: i18n
     url: https://commercelayer.io/
     checkedAt: 2026-10-24
-figure:
-  emoji: 🛒
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: Shop
 ai: authored
 ---
 

@@ -96,11 +96,6 @@ sources:
   - field: hqCountry
     url: https://github.com/shuup/shuup/blob/master/README.rst
     checkedAt: 2026-10-23
-figure:
-  emoji: 🛒
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: Python · Shop
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

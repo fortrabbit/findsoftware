@@ -86,11 +86,6 @@ sources:
   - field: latestReleaseDate
     url: https://docs.cs-cart.com/latest/history/index.html
     checkedAt: 2026-10-20
-figure:
-  emoji: 🛒
-  color: "#a3c4f3"
-  textColor: "#1a1a1a"
-  text: PHP · Shop
 ai: authored
 npmWeeklyDownloads: null
 ---

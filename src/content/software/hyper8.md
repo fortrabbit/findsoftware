@@ -96,11 +96,6 @@ sources:
   - field: latestReleaseDate
     url: https://codeberg.org/api/v1/repos/simonrepp/hyper8/tags
     checkedAt: 2026-10-23
-figure:
-  emoji: ⚡
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: Rust · SSG
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

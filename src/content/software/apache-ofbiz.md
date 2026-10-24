@@ -92,11 +92,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/apache/ofbiz-framework/contributors
     checkedAt: 2026-10-24
-figure:
-  emoji: 🧱
-  color: "#f7a399"
-  textColor: "#1a1a1a"
-  text: Java · Framework
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

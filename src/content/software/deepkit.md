@@ -83,11 +83,6 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/marcj/deepkit/contributors?anon=true&per_page=100
     checkedAt: 2026-10-21
-figure:
-  emoji: 🧱
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: JavaScript / TypeScript · Framework
 ai: authored
 packagistDownloads: null
 ---

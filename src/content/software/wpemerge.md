@@ -79,11 +79,6 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/htmlburger/wpemerge.json
     checkedAt: 2026-10-21
-figure:
-  emoji: 🧱
-  color: "#b8e0d2"
-  textColor: "#1a1a1a"
-  text: PHP · Framework
 ai: authored
 npmWeeklyDownloads: null
 ---

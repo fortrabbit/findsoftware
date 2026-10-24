@@ -65,11 +65,6 @@ sources:
   - field: firstRelease
     url: https://www.cmssy.com/changelog
     checkedAt: 2026-10-24
-figure:
-  emoji: 🔌
-  color: "#f4d35e"
-  textColor: "#1a1a1a"
-  text: Headless CMS
 ai: authored
 ---
 
