@@ -1,0 +1,129 @@
+id: apache-ofbiz
+name: Apache OFBiz
+status: accepted
+checkedAt: 2026-10-24
+description: Java suite of enterprise business applications for ERP, CRM and e-commerce, built on an entity engine, a service engine and a widget-based UI.
+facts:
+  - field: repository
+    value: https://github.com/apache/ofbiz-framework
+    url: https://api.github.com/repos/apache/ofbiz-framework
+    checkedAt: 2026-10-24
+    via: api
+  - field: homepage
+    value: https://ofbiz.apache.org/
+    url: https://ofbiz.apache.org/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Apache OFBiz is a suite of business applications flexible enough to be used across any industry"
+  - field: docs
+    value: https://ofbiz.apache.org/developers.html
+    url: https://ofbiz.apache.org/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Developers can get started on our Developers page"
+  - field: maintainer
+    value: The Apache Software Foundation
+    url: https://ofbiz.apache.org/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Copyright © 2026 The Apache Software Foundation."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/apache
+    checkedAt: 2026-10-24
+    via: api
+  - field: language
+    value: java
+    url: https://api.github.com/repos/apache/ofbiz-framework
+    checkedAt: 2026-10-24
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://ofbiz.apache.org/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Powerful Java Web Framework"
+  - field: categories
+    value: [e-commerce]
+    url: https://ofbiz.apache.org/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "ERP with integrated E-Commerce"
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/apache/ofbiz-framework/blob/release24.09.08/INSTALL
+    checkedAt: 2026-10-24
+    via: page
+    quote: "to have the Java Development Kit (JDK) version 17 installed on your system"
+  - field: runtimeMin
+    value: "17"
+    url: https://github.com/apache/ofbiz-framework/blob/release24.09.08/INSTALL
+    checkedAt: 2026-10-24
+    via: page
+    quote: "to have the Java Development Kit (JDK) version 17 installed on your system"
+  - field: installMethod
+    value: Gradle wrapper from source
+    url: https://github.com/apache/ofbiz-framework/blob/release24.09.08/INSTALL
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Unix-like OS: ./gradlew ofbiz"
+  - field: installMethod
+    value: Docker
+    url: https://github.com/apache/ofbiz-framework/blob/trunk/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "If you want to set and use Docker"
+  - field: forum
+    value: https://ofbiz.apache.org/mailing-lists.html
+    url: https://ofbiz.apache.org/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Mailing Lists"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/apache/ofbiz-framework/blob/release24.09.08/INSTALL
+    checkedAt: 2026-10-24
+    via: page
+    quote: "does not end as long as OFBiz is running"
+  - field: databases
+    value: [mysql, postgres]
+    url: https://github.com/apache/ofbiz-framework/blob/trunk/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "external database like MySQL or PostgreSQL"
+  - field: adminUi
+    value: yes, back-office web applications
+    url: https://github.com/apache/ofbiz-framework/blob/trunk/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Administrator interface"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/apache/ofbiz-framework
+    checkedAt: 2026-10-24
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://ofbiz.apache.org/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: latestReleaseDate
+    value: 2026-10-21
+    url: https://github.com/apache/ofbiz-framework/tree/release24.09.08
+    checkedAt: 2026-10-24
+    via: api
+  - field: githubStargazers
+    value: 1141
+    url: https://api.github.com/repos/apache/ofbiz-framework
+    checkedAt: 2026-10-24
+    via: api
+  - field: contributors
+    value: 102
+    url: https://api.github.com/repos/apache/ofbiz-framework/contributors
+    checkedAt: 2026-10-24
+    via: api
+notFound: [currentMajor, firstRelease, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, templating, renderingModes, pricingPage, hqCountry, paidEdition, hostedOffering, basedOn, forkOf, successorOf, alternativeTo, parent, wikidata, lastCommitDate, endoflifeId, discord, bluesky, mastodon, x, newsletter, subreddit, pluginDirectory, pluginCount, npmName, packagistName]
+unreadable: []
+notes: >
+  Status is accepted. The version scheme is release YY.MM.patch (release24.09.08), a calendar version, so currentMajor is absent. The latest tag release24.09.08 is dated by its tag object (2026-10-21); the download page says the 24.09 series release it describes is the seventh, released June 2026, so the page is behind the tags and the tag is used. The GitHub tags begin at release17.12.01 (2020), but the project's own pages say that older releases exist in the Apache archive and in a release history; no first release year is stated on a page that was read, so firstRelease is absent; the Apache archive's oldest file is from 2010 and the homepage says top level project since 2006, so neither is the first release. The trunk README and the 24.09.08 INSTALL both name a JDK; the stable tag requires version 17. The admin interfaces named in the trunk README are the order back office, the accounting back office and the webtools administrator. The trunk README links Docker documentation, recorded as an install method; the Docker pages themselves were not read. The homepage names Apache OFBiz as an ERP suite; the enterprise and CRM terms are the project's own. The Slack channel and the YouTube and Vimeo channels are not recorded.

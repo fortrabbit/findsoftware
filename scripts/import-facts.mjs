@@ -343,6 +343,7 @@ const runtimeMap = {
   'c binary': 'binary',
   'c++ binary': 'binary',
   'crystal binary': 'binary',
+  crystal: 'binary',
   elixir: 'beam',
   erlang: 'beam',
   go: 'binary',
@@ -358,6 +359,7 @@ const runtimeMap = {
   'python (pypi wrapper)': 'python',
   rust: 'binary',
   'rust binary': 'binary',
+  swift: 'binary',
 };
 // TypeScript compiles to JavaScript and shares its packages and runtimes, so the register keeps them as one value.
 const languageMap = { 'c#': 'csharp', 'c++': 'cpp', typescript: 'javascript' };

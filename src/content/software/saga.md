@@ -12,6 +12,8 @@ description: Static site generator in Swift whose site pipeline is written as Sw
 status: active
 maintainer: Loopwerk
 firstRelease: 2021
+runtime:
+  - binary
 hosting:
   - static
 templating: swim
@@ -45,6 +47,9 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://raw.githubusercontent.com/loopwerk/Saga/main/README.md
+    checkedAt: 2026-10-23
+  - field: runtime
+    url: https://getsaga.dev/docs/installation/
     checkedAt: 2026-10-23
   - field: installMethod
     url: https://getsaga.dev/docs/installation/

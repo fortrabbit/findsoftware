@@ -1,0 +1,1 @@
+Carter is a framework that adds a thin layer of extension methods over ASP.NET Core. It is installed as a NuGet package with `dotnet add package carter`, or through a `dotnet new` template, and its components are registered with ASP.NET Core dependency injection. The copyright line of the MIT-licensed source names Jonathan Channon, and the source is published on GitHub.

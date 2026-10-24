@@ -1,0 +1,5 @@
+C1 CMS is a content management system written in C# and built on the Microsoft stack. It runs on ASP.NET with the .NET Framework on Windows, stores content in XML flat files by default or in a Microsoft SQL Server database, and offers the C1 Console as its administrative interface. Developers create CMS Functions with Razor, ASP.NET User Controls, XSLT or SQL. The [installation guide](https://docs.c1.orckestra.com/Getting-started/Guide/Installation-and-Setup) installs it with the Web Platform Installer and runs it in WebMatrix, and the Azure documentation describes hosting one or more websites on Microsoft Azure or a Windows Server. Orckestra A/S maintains the software, which is available under the Mozilla Public License 1.1 or a commercial license, and the company also offers it as a fully managed service.
+
+## Worth knowing
+
+The license amends Section 11 so that disputes involving Orckestra A/S fall under Danish law and the Copenhagen City Court. The system requirements and the installation guide name .NET Framework 4.7.1 and Visual Studio 2017.

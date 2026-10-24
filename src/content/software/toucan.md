@@ -12,6 +12,8 @@ status: active
 maintainer: Binary Birds Ltd.
 maintainerType: company
 firstRelease: 2024
+runtime:
+  - binary
 hosting:
   - static
 templating: mustache
@@ -44,6 +46,9 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/toucansites/toucan/blob/main/README.md
+    checkedAt: 2026-10-23
+  - field: runtime
+    url: https://toucansites.com/docs/installation/source/
     checkedAt: 2026-10-23
   - field: installMethod
     url: https://toucansites.com/docs/installation/macos/

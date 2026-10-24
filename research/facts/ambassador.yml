@@ -1,0 +1,108 @@
+id: ambassador
+name: Ambassador
+status: accepted
+checkedAt: 2026-10-24
+description: Swift web framework for mocking HTTP API endpoints, built on the SWSGI interface and served by Embassy or another SWSGI server.
+facts:
+  - field: repository
+    value: https://github.com/envoy/Ambassador
+    url: https://api.github.com/repos/envoy/Ambassador
+    checkedAt: 2026-10-24
+    via: api
+  - field: docs
+    value: https://github.com/envoy/Ambassador/blob/master/README.md
+    url: https://github.com/envoy/Ambassador/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Super lightweight web framework in Swift based on SWSGI"
+  - field: maintainer
+    value: Envoy
+    url: https://github.com/envoy/Ambassador/blob/master/LICENSE
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Copyright (c) 2016 Envoy"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/envoy
+    checkedAt: 2026-10-24
+    via: api
+  - field: language
+    value: Swift
+    url: https://api.github.com/repos/envoy/Ambassador
+    checkedAt: 2026-10-24
+    via: api
+  - field: runtime
+    value: [swift]
+    url: https://github.com/envoy/Ambassador/blob/master/Package.swift
+    checkedAt: 2026-10-24
+    via: page
+    quote: "swift-tools-version: 6.0"
+  - field: categories
+    value: [framework]
+    url: https://github.com/envoy/Ambassador/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Super lightweight web framework in Swift"
+  - field: installMethod
+    value: Swift Package Manager
+    url: https://github.com/envoy/Ambassador/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "add the repo to `Package.swift`"
+  - field: installMethod
+    value: CocoaPods
+    url: https://github.com/envoy/Ambassador/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "To install with CocoaPod, add Embassy to your Podfile"
+  - field: installMethod
+    value: Carthage
+    url: https://github.com/envoy/Ambassador/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "To install with Carthage, add Ambassador to your Cartfile"
+  - field: license
+    value: MIT
+    url: https://github.com/envoy/Ambassador/blob/master/LICENSE
+    checkedAt: 2026-10-24
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/envoy/Ambassador
+    checkedAt: 2026-10-24
+    via: api
+  - field: firstRelease
+    value: "2016"
+    url: https://api.github.com/repos/envoy/Ambassador/tags
+    checkedAt: 2026-10-24
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/envoy/Ambassador/releases
+    checkedAt: 2026-10-24
+    via: api
+  - field: latestReleaseDate
+    value: 2018-10-10
+    url: https://api.github.com/repos/envoy/Ambassador/releases
+    checkedAt: 2026-10-24
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-09-23
+    url: https://api.github.com/repos/envoy/Ambassador/commits/b6d3cf1c7d138955871826607715fc3b7f65ee69
+    checkedAt: 2026-10-24
+    via: api
+  - field: githubStargazers
+    value: 190
+    url: https://api.github.com/repos/envoy/Ambassador
+    checkedAt: 2026-10-24
+    via: api
+  - field: contributors
+    value: 10
+    url: https://api.github.com/repos/envoy/Ambassador/contributors
+    checkedAt: 2026-10-24
+    via: api
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, headlessApi, contentStore, databases, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, renderingModes, endoflifeId, runtimeMin, npmName]
+unreadable: []
+notes: >
+  No homepage: the candidate row names none, the repository holds the only project pages, and the envoy.com link on the owner profile is the company's site, not the project's. Criterion 1 holds as the candidate row states: the framework serves HTTP for mocked endpoints. The earliest tag is v0.0.1-alpha-1 (2016-06-11). The latest stable GitHub release is v4.0.5 (2018-10-10); v5.0.0-rc.1 and v5.0.0-rc are tags without a GitHub release, and the date recorded is the commit date of the v5.0.0-rc.1 tag, so latestPrereleaseDate is a commit date, not a release date. The repository was pushed on 2026-10-02. The README says the project is "based on SWSGI", a server gateway interface whose reference implementation is the Embassy project that the package depends on; SWSGI is an interface, not a record, so basedOn is not recorded. The README names CocoaPods (pod EnvoyAmbassador), Carthage and Swift Package Manager; no download figure is recorded for CocoaPods or Carthage. runsAs is not recorded: the README states the purpose (UI automatic testing, API mocking) but not where the server runs. The Package.swift statement about the Swift tools version is on master, not on the v4.0.5 release, so it is recorded as runtime evidence only and runtimeMin is not recorded.

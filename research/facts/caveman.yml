@@ -1,0 +1,107 @@
+id: caveman
+name: Caveman2
+status: stub
+checkedAt: 2026-10-24
+description: Web application framework for Common Lisp, built on ningle and Clack.
+facts:
+  - field: homepage
+    value: https://8arrow.org/caveman/
+    url: https://8arrow.org/caveman/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Caveman2 - The real web framework"
+  - field: repository
+    value: https://github.com/fukamachi/caveman
+    url: https://api.github.com/repos/fukamachi/caveman
+    checkedAt: 2026-10-24
+    via: api
+  - field: docs
+    value: https://github.com/fukamachi/caveman/blob/master/README.markdown
+    url: https://github.com/fukamachi/caveman/blob/master/README.markdown
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Caveman2 - Lightweight web application framework"
+  - field: maintainer
+    value: Eitaro Fukamachi
+    url: https://raw.githubusercontent.com/fukamachi/caveman/master/caveman2.asd
+    checkedAt: 2026-10-24
+    via: page
+    quote: ":author \"Eitaro Fukamachi\""
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/fukamachi
+    checkedAt: 2026-10-24
+    via: api
+  - field: language
+    value: Common Lisp
+    url: https://api.github.com/repos/fukamachi/caveman
+    checkedAt: 2026-10-24
+    via: api
+  - field: runtime
+    value: [common-lisp]
+    url: https://8arrow.org/caveman/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "As Caveman2 is written in portable Common Lisp"
+  - field: basedOn
+    value: ningle
+    url: https://github.com/fukamachi/caveman/blob/master/README.markdown
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Is based on ningle"
+  - field: basedOn
+    value: Clack
+    url: https://8arrow.org/caveman/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "As Caveman2 bases on Clack"
+  - field: categories
+    value: [framework]
+    url: https://github.com/fukamachi/caveman/blob/master/README.markdown
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Lightweight web application framework"
+  - field: templating
+    value: [djula]
+    url: https://github.com/fukamachi/caveman/blob/master/README.markdown
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Caveman uses Djula as its default templating engine"
+  - field: installMethod
+    value: Quicklisp (ql:quickload)
+    url: https://8arrow.org/caveman/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "(ql:quickload :caveman2)"
+  - field: license
+    value: LLGPL
+    url: https://raw.githubusercontent.com/fukamachi/caveman/master/caveman2.asd
+    checkedAt: 2026-10-24
+    via: page
+    quote: ":license \"LLGPL\""
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/fukamachi/caveman/master/caveman2.asd
+    checkedAt: 2026-10-24
+    via: page
+    quote: ":license \"LLGPL\""
+  - field: firstRelease
+    value: "2013"
+    url: https://8arrow.org/caveman/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Caveman2 is available on Quicklisp since November 11, 2013"
+  - field: githubStargazers
+    value: 827
+    url: https://api.github.com/repos/fukamachi/caveman
+    checkedAt: 2026-10-24
+    via: api
+  - field: contributors
+    value: 16
+    url: https://api.github.com/repos/fukamachi/caveman/contributors
+    checkedAt: 2026-10-24
+    via: api
+notFound: [hqCountry, parent, maintainerType, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, renderingModes, runsAs, contentStore, currentMajor, latestReleaseDate, latestPrereleaseDate, lastCommitDate]
+unreadable: []
+notes: >
+  Doubt: the repository's only tags (11.07.0 to 12.06.0, the last dated 2012-06-19) belong to the older Caveman line, and no release or tag covers Caveman2 version 2.4.0 from caveman2.asd, so no latest release date is recorded and the status is stub until a Caveman2 release or a statement from the project settles the listing. The homepage is the project's own site and answers over https; the http address in the CSV also answers 200. The repository has no LICENSE file; the license is the :license field of caveman2.asd, recorded as the source words it (LLGPL, a Lisp lesser GPL variant, not an SPDX id). The README shows start and stop functions and a server chosen at start, which does not state how a live site is hosted, so runsAs is not recorded. The README states that the application server is chosen through Clack, with Hunchentoot, Woo and FastCGI named as options. The database layer is described as CL-DBI with datafly as the default library; no database engine is named, so databases is not recorded. Caveman2 is distributed through Quicklisp, which has no registry figure in the import list. The stargazer and contributor counts are the repository's. The name Caveman2 is the README title and the Quicklisp system name.

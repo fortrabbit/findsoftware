@@ -1,0 +1,145 @@
+id: andurel
+name: Andurel
+status: accepted
+checkedAt: 2026-10-24
+description: Full-stack web framework for Go whose command-line tool generates application code, with server-rendered pages and optional Inertia frontends.
+facts:
+  - field: repository
+    value: https://github.com/mbvlabs/andurel
+    url: https://api.github.com/repos/mbvlabs/andurel
+    checkedAt: 2026-10-24
+    via: api
+  - field: homepage
+    value: https://andurel.com
+    url: https://andurel.com
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Space-grade Go framework"
+  - field: docs
+    value: https://andurel.com/docs/latest/installation
+    url: https://andurel.com/docs/latest/installation
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Install the Andurel CLI, create an application, and start its development server."
+  - field: maintainer
+    value: Morten Vistisen
+    url: https://github.com/mbvlabs/andurel/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Created by Morten Vistisen"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/mbvlabs
+    checkedAt: 2026-10-24
+    via: api
+  - field: language
+    value: go
+    url: https://api.github.com/repos/mbvlabs/andurel
+    checkedAt: 2026-10-24
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://andurel.com/docs/latest/installation
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Go 1.26 or newer"
+  - field: runtimeMin
+    value: "1.26"
+    url: https://andurel.com/docs/latest/installation
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Go 1.26 or newer"
+  - field: categories
+    value: [framework]
+    url: https://andurel.com/docs/latest/introduction
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Andurel is a Rails-like web framework for Go."
+  - field: databases
+    value: [postgres]
+    url: https://andurel.com/docs/latest/database
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Andurel uses PostgreSQL, pgx, Bun, and SQL migrations."
+  - field: templating
+    value: templ
+    url: https://andurel.com/docs/latest/frontend-options
+    checkedAt: 2026-10-24
+    via: page
+    quote: "The default stack renders type-safe HTML with Templ."
+  - field: renderingModes
+    value: [server]
+    url: https://andurel.com/docs/latest/frontend-options
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Andurel supports server-rendered hypermedia and optional Inertia frontends from the same Go application."
+  - field: runsAs
+    value: [always-on]
+    url: https://andurel.com/docs/latest/build-and-deploy
+    checkedAt: 2026-10-24
+    via: page
+    quote: "The generated server handles termination signals and performs a bounded graceful shutdown."
+  - field: installMethod
+    value: go install
+    url: https://andurel.com/docs/latest/installation
+    checkedAt: 2026-10-24
+    via: page
+    quote: "go install github.com/mbvlabs/andurel@latest"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/mbvlabs/andurel
+    checkedAt: 2026-10-24
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/mbvlabs/andurel/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "MIT. See [LICENSE](LICENSE)."
+  - field: firstRelease
+    value: "2026"
+    url: https://github.com/mbvlabs/andurel/releases/tag/v1.0.0
+    checkedAt: 2026-10-24
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://andurel.com/docs/latest/installation
+    checkedAt: 2026-10-24
+    via: page
+    quote: "This currently installs v1.5.5"
+  - field: latestReleaseDate
+    value: 2026-07-24
+    url: https://github.com/mbvlabs/andurel/releases/tag/v1.5.5
+    checkedAt: 2026-10-24
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-10-20
+    url: https://github.com/mbvlabs/andurel/releases/tag/v2.0.0-alpha.4
+    checkedAt: 2026-10-24
+    via: api
+  - field: githubStargazers
+    value: 226
+    url: https://api.github.com/repos/mbvlabs/andurel
+    checkedAt: 2026-10-24
+    via: api
+  - field: contributors
+    value: 5
+    url: https://api.github.com/repos/mbvlabs/andurel/contributors
+    checkedAt: 2026-10-24
+    via: api
+  - field: discord
+    value: https://discord.gg/TnTBZHvat3
+    url: https://github.com/mbvlabs/andurel/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Discord: join here"
+  - field: x
+    value: https://x.com/mbvlabs
+    url: https://github.com/mbvlabs/andurel/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Twitter/X"
+notFound: [adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, hqCountry, paidEdition, hostedOffering, basedOn, forkOf, successorOf, alternativeTo, parent, wikidata, lastCommitDate, endoflifeId, bluesky, mastodon, forum, newsletter, subreddit, pluginDirectory, pluginCount, npmName, packagistName]
+unreadable: []
+notes: >
+  The stable docs at andurel.com/docs/latest describe v1.5.5 (Go 1.26, go install of the unversioned module path); the README and the homepage describe the unreleased v2 line on master, which needs Go 1.27 and whose install channel is a nightly binary. currentMajor is 1 because v2.0.0 is not published; the v2 alphas are the latestPrereleaseDate. The nightly prerelease on GitHub is not a named alpha, beta or rc and is not used. The homepage names the same Twitter/X account the README lists under Author, the maintainer's handle; it is recorded as the homepage link. The docs state the Linux and macOS targets and PostgreSQL in the installation page; the README table lists PostgreSQL, narsilc and goose. The sites built with Andurel (DeployCrate, MBV Blog, Master Golang) are other products built on it and are not hosted offerings of Andurel. The mbvlabs.com and LinkedIn links on the homepage are the maintainer's and are not recorded. The first release date is the v1.0.0 release on 2026-07-10; the repository existed from 2025-08-26 without releases. The stable documentation (introduction, frontend options, database pages) is the source for categories, databases, templating, renderingModes and runsAs; it names Templ with Datastar as the default frontend and Inertia as optional, while the README on master describes the v2 line with Inertia as the only UI. The stable docs state that Windows is not supported.

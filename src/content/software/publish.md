@@ -11,6 +11,8 @@ status: stub
 maintainer: John Sundell
 maintainerType: individual
 firstRelease: 2019
+runtime:
+  - binary
 hosting:
   - static
 contentStore:
@@ -41,6 +43,9 @@ sources:
     url: https://raw.githubusercontent.com/JohnSundell/Publish/master/LICENSE
     checkedAt: 2026-10-23
   - field: category
+    url: https://github.com/JohnSundell/Publish/blob/master/README.md
+    checkedAt: 2026-10-23
+  - field: runtime
     url: https://github.com/JohnSundell/Publish/blob/master/README.md
     checkedAt: 2026-10-23
   - field: installMethod

@@ -1,0 +1,102 @@
+id: cask
+name: Cask
+status: accepted
+checkedAt: 2026-10-24
+description: Scala web micro-framework for setting up websites, backend servers and REST APIs.
+facts:
+  - field: homepage
+    value: https://com-lihaoyi.github.io/cask/
+    url: https://com-lihaoyi.github.io/cask/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Cask is a simple Scala web framework inspired by Python's Flask project"
+  - field: repository
+    value: https://github.com/com-lihaoyi/cask
+    url: https://api.github.com/repos/com-lihaoyi/cask
+    checkedAt: 2026-10-24
+    via: api
+  - field: docs
+    value: https://com-lihaoyi.github.io/cask/
+    url: https://github.com/com-lihaoyi/cask/blob/master/readme.md
+    checkedAt: 2026-10-24
+    via: page
+  - field: maintainer
+    value: Li Haoyi
+    url: https://raw.githubusercontent.com/com-lihaoyi/cask/master/LICENSE
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Copyright (c) 2017 Li Haoyi"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/com-lihaoyi
+    checkedAt: 2026-10-24
+    via: api
+  - field: language
+    value: Scala
+    url: https://api.github.com/repos/com-lihaoyi/cask
+    checkedAt: 2026-10-24
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://com-lihaoyi.github.io/cask/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Running cask with Java 21 or later"
+  - field: categories
+    value: [framework]
+    url: https://com-lihaoyi.github.io/cask/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Cask is a simple Scala web framework"
+  - field: installMethod
+    value: Maven Central library (Mill, sbt)
+    url: https://com-lihaoyi.github.io/cask/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Cask is just a Scala library, and you can use Cask in any existing Scala project via the following coordinates"
+  - field: mavenCoordinates
+    value: com.lihaoyi:cask_3
+    url: https://repo1.maven.org/maven2/com/lihaoyi/cask_3/maven-metadata.xml
+    checkedAt: 2026-10-24
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/com-lihaoyi/cask/master/LICENSE
+    checkedAt: 2026-10-24
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/com-lihaoyi/cask/master/LICENSE
+    checkedAt: 2026-10-24
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: firstRelease
+    value: "2018"
+    url: https://api.github.com/repos/com-lihaoyi/cask/releases
+    checkedAt: 2026-10-24
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/com-lihaoyi/cask/releases
+    checkedAt: 2026-10-24
+    via: api
+  - field: latestReleaseDate
+    value: 2025-10-18
+    url: https://api.github.com/repos/com-lihaoyi/cask/releases
+    checkedAt: 2026-10-24
+    via: api
+  - field: githubStargazers
+    value: 593
+    url: https://api.github.com/repos/com-lihaoyi/cask
+    checkedAt: 2026-10-24
+    via: api
+  - field: contributors
+    value: 24
+    url: https://api.github.com/repos/com-lihaoyi/cask/contributors
+    checkedAt: 2026-10-24
+    via: api
+notFound: [hqCountry, parent, maintainerType, basedOn, forkOf, successorOf, alternativeTo, renderingModes, runtimeMin, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, latestPrereleaseDate, pypiDownloads, runsAs]
+unreadable: []
+notes: >
+  The GitHub API reports the license as NOASSERTION, but the LICENSE file in the repository is the MIT License, so the license fact cites the file. The homepage and the README name Li Haoyi as author; the LICENSE copyright line is recorded as the maintainer. The repository has GitHub releases from 0.0.1 (2018-08-12) to 0.11.0 (2025-10-18); the README and the Maven coordinates name 0.11.3, which has no GitHub release, so the highest stable GitHub release, 0.11.0, sets currentMajor and latestReleaseDate. The Maven Central metadata for cask_3 lists 0.11.3 as the latest and release version. The Scala 3 artifact cask_3 is the one the Mill coordinate with two colons resolves to; other Scala binary versions are not recorded. The page's virtual-thread section says running Cask with virtual threads needs Java 21 or later, which is recorded as the runtime quote; no general minimum Java version is stated, so runtimeMin is not recorded. The homepage describes its Flask inspiration; that is not a basedOn relation, so none is recorded. The full-stack example uses Scalatags and ScalaSql, which belong to example code, so no templating or databases fact is recorded.

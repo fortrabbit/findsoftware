@@ -11,6 +11,8 @@ status: active
 maintainer: Paul Hudson
 maintainerType: individual
 firstRelease: 2024
+runtime:
+  - binary
 renderingModes:
   - static
 installMethod: git clone and make install of the Ignite command-line tool
@@ -34,6 +36,9 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://raw.githubusercontent.com/twostraws/Ignite/main/README.md
+    checkedAt: 2026-10-23
+  - field: runtime
+    url: https://raw.githubusercontent.com/twostraws/Ignite/main/Package.swift
     checkedAt: 2026-10-23
   - field: installMethod
     url: https://raw.githubusercontent.com/twostraws/Ignite/main/README.md

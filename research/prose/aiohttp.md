@@ -1,0 +1,3 @@
+aiohttp is an asynchronous HTTP client and server library for Python, built on asyncio. The documentation covers a client session API and a web server with middlewares, signals and pluggable routing, and both client and server support WebSockets.
+
+A web application is an Application object run with web.run_app, which the deployment guide describes as a standalone server. The guide also covers running a pool of backend processes behind nginx or HAProxy, or gunicorn behind a reverse proxy, and recommends a tool such as Supervisord to restart the backends after a reboot or crash. The project is developed on GitHub under the aio-libs organization, with GitHub Discussions as a forum.

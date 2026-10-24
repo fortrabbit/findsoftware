@@ -19,6 +19,8 @@ runtime:
 hosting:
   - static
 runtimeMin: php 8.2
+basedOn:
+  - blade
 contentStore:
   - flat-file
 adminUi: false
@@ -70,6 +72,9 @@ sources:
     checkedAt: 2026-10-18
   - field: category
     url: https://hydephp.com/docs/2.x/core-concepts
+    checkedAt: 2026-10-18
+  - field: basedOn
+    url: https://hydephp.com/
     checkedAt: 2026-10-18
   - field: language
     url: https://github.com/hydephp/hyde

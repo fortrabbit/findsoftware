@@ -1,0 +1,98 @@
+id: chi
+name: chi
+status: accepted
+checkedAt: 2026-10-24
+description: Router for building Go HTTP services.
+facts:
+  - field: homepage
+    value: https://go-chi.io
+    url: https://go-chi.io/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "is a lightweight, idiomatic and composable router for building Go HTTP services"
+  - field: docs
+    value: https://go-chi.io
+    url: https://go-chi.io/pages/getting_started.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "go get github.com/go-chi/chi/v5"
+  - field: repository
+    value: https://github.com/go-chi/chi
+    url: https://api.github.com/repos/go-chi/chi
+    checkedAt: 2026-10-24
+    via: api
+  - field: maintainer
+    value: Peter Kieltyka
+    url: https://raw.githubusercontent.com/go-chi/chi/master/LICENSE
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Copyright (c) 2015-present Peter Kieltyka"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/go-chi
+    checkedAt: 2026-10-24
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/go-chi/chi
+    checkedAt: 2026-10-24
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/go-chi/chi/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "for building Go HTTP services"
+  - field: categories
+    value: [library]
+    url: https://github.com/go-chi/chi/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "is a lightweight, idiomatic and composable router for building Go HTTP services"
+  - field: installMethod
+    value: go get
+    url: https://github.com/go-chi/chi/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "go get -u github.com/go-chi/chi/v5"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/go-chi/chi/master/LICENSE
+    checkedAt: 2026-10-24
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/go-chi/chi/master/LICENSE
+    checkedAt: 2026-10-24
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2016"
+    url: https://api.github.com/repos/go-chi/chi/releases
+    checkedAt: 2026-10-24
+    via: api
+  - field: currentMajor
+    value: 5
+    url: https://api.github.com/repos/go-chi/chi/releases
+    checkedAt: 2026-10-24
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-14
+    url: https://api.github.com/repos/go-chi/chi/releases
+    checkedAt: 2026-10-24
+    via: api
+  - field: githubStargazers
+    value: 22992
+    url: https://api.github.com/repos/go-chi/chi
+    checkedAt: 2026-10-24
+    via: api
+  - field: contributors
+    value: 170
+    url: https://api.github.com/repos/go-chi/chi/contributors
+    checkedAt: 2026-10-24
+    via: api
+notFound: [hqCountry, parent, maintainerType, basedOn, forkOf, successorOf, alternativeTo, runsAs, renderingModes, runtimeMin, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, latestPrereleaseDate]
+unreadable: []
+notes: >
+  The homepage go-chi.io serves a docsify shell: the HTML from curl holds only the title, the meta tags and scripts, and the documentation loads in the browser from a source that is not in the repository, so the homepage and docs facts quote the site's raw markdown sources (go-chi.io/README.md and pages/getting_started.md), which the site serves and which match the go-chi/docs repository. The Go module has no download figure and no registry figure is recorded. The README's only Go version statements are that chi is built on the context package introduced in Go 1.7 and a 2020 benchmark run on Go 1.15.5; neither is a minimum supported version, so runtimeMin is not recorded. The go.mod directive says go 1.24 and carries a comment that chi supports the four most recent major Go versions; that comment is not recorded as a fact. The module is versioned as github.com/go-chi/chi/v5. The copyright line also names Google Inc., and the README links the separate render, docgen and httprate projects, which are not recorded here. The GitHub releases list starts at v0.9.0 on 2016-08-02, which sets firstRelease. The dictionary's router category maps to library in the import, so the category is recorded as library.

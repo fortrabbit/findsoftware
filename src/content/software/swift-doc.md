@@ -10,6 +10,8 @@ status: discontinued
 maintainer: Read Evaluate Press, LLC
 maintainerType: company
 firstRelease: 2020
+runtime:
+  - binary
 runsAs:
   - local
 renderingModes:
@@ -27,6 +29,9 @@ sources:
     checkedAt: 2026-10-23
   - field: urls
     url: https://api.github.com/repos/SwiftDocOrg/swift-doc
+    checkedAt: 2026-10-23
+  - field: runtime
+    url: https://github.com/SwiftDocOrg/swift-doc/blob/master/README.md
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/SwiftDocOrg/swift-doc/blob/master/README.md

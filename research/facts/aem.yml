@@ -1,0 +1,100 @@
+id: aem
+name: Adobe Experience Manager
+status: stub
+checkedAt: 2026-10-24
+description: Commercial content management and digital experience platform from Adobe, installable on-premise as a Java quickstart and offered as a cloud service.
+facts:
+  - field: docs
+    value: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy
+    checkedAt: 2026-10-24
+    via: page
+    quote: "On-premise : AEM deployed and managed in your corporate environment."
+  - field: categories
+    value: [cms, dxp]
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/overview
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Adobe Experience Manager (AEM) is now available as a Cloud Service."
+  - field: runtime
+    value: [jvm]
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy
+    checkedAt: 2026-10-24
+    via: page
+    quote: "The AEM server is Java-based and runs on most operating systems that support that platform."
+  - field: installMethod
+    value: standalone quickstart jar, or WAR file for a third-party application server
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy
+    checkedAt: 2026-10-24
+    via: page
+    quote: "cq-quickstart-6.5.0.war: A war file for deployment in a third-party application server."
+  - field: deployTargets
+    value: [on-premise]
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy
+    checkedAt: 2026-10-24
+    via: page
+    quote: "On-premise : AEM deployed and managed in your corporate environment."
+  - field: licenseModel
+    value: commercial
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy
+    checkedAt: 2026-10-24
+    via: page
+    quote: "You need to request a valid license key from Adobe if you do not yet have one."
+  - field: hostedOffering
+    value: AEM as a Cloud Service
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/overview
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Adobe Experience Manager (AEM) is now available as a Cloud Service."
+  - field: maintainer
+    value: Adobe
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Adobe Experience Manager"
+  - field: currentMajor
+    value: 6
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy
+    checkedAt: 2026-10-24
+    via: page
+    quote: "cq-quickstart-6.5.0.jar: A standalone executable jar file that includes everything that you need to get running."
+  - field: runsAs
+    value: [always-on]
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy
+    checkedAt: 2026-10-24
+    via: page
+    quote: "is a copy of AEM running on a server"
+  - field: contentStore
+    value: database
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy
+    checkedAt: 2026-10-24
+    via: page
+    quote: "a type of hierarchical database designed specifically for unstructured and semi-structured data"
+  - field: databases
+    value: [mongodb]
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/introduction/technical-requirements
+    checkedAt: 2026-10-24
+    via: page
+    quote: "MongoDB Enterprise 8.0"
+  - field: databases
+    value: [oracle]
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/introduction/technical-requirements
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Oracle Database 19c"
+  - field: adminUi
+    value: yes, web browser
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy
+    checkedAt: 2026-10-24
+    via: page
+    quote: "All client interaction with AEM is done through a web browser"
+  - field: multisite
+    value: yes, Multi Site Manager with live copies
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/introduction/msm
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Multi Site Manager (MSM) enables you to use the same site content in multiple locations."
+notFound: [homepage, repository, license, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, maintainerType, wikidata, headlessApi, templating, i18n, livePreview, userRoles, sso, importsFrom, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, docker, endoflifeId, supportedVersions, renderingModes, outputDir, buildCommand, pricingPage, paidEdition, paidEditions, npmName, packagistName, githubStargazers, contributors, latestReleaseDate, firstRelease, repoOwnerType]
+unreadable: [https://business.adobe.com/products/experience-manager/adobe-experience-manager.html]
+notes: >
+  Stub: the product page (business.adobe.com/products/experience-manager/adobe-experience-manager.html), the homepage the CSV names, and the sites page next to it did not answer curl at all (connection fails) on a retry at 2026-10-24 with the research User-Agent, and adobe.com answers 403, so no homepage is recorded; a later pass that can read the product page would settle it. Criterion 2 holds on the AEM 6.5 on-premise docs, which describe the quickstart jar as a self-hosted install. Adobe publishes no repository, so no GitHub figures are recorded. The Cloud Service is a hosted offering recorded as hostedOffering, not as the install, and AEM Managed Services is a third deployment the same page names. The currentMajor value 6 follows the 6.5 line; AEM as a Cloud Service is not versioned by major. No latestReleaseDate is recorded. The technical requirements page lists Oracle JDK 8 and later (8, 9, 10, 11, 17, 21) and several databases for the repository (MongoDB, Oracle Database, IBM DB2); only MongoDB and Oracle are recorded. The maintainer is recorded as the product name, Adobe; no legal notice or terms page was readable, so the legal form is not recorded. The first-release year and paid editions are not stated on the pages read.

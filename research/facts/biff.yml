@@ -1,0 +1,139 @@
+id: biff
+name: Biff
+status: accepted
+checkedAt: 2026-10-24
+description: Full-stack web framework for Clojure with SQLite, Datastar, email sign-in and an admin dashboard, composed from separate libraries.
+facts:
+  - field: homepage
+    value: https://biffweb.com
+    url: https://biffweb.com/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Biff is a full-stack web framework for Clojure"
+  - field: repository
+    value: https://github.com/jacobobryant/biff
+    url: https://api.github.com/repos/jacobobryant/biff
+    checkedAt: 2026-10-24
+    via: api
+  - field: docs
+    value: https://github.com/jacobobryant/biff/blob/master/README.md
+    url: https://github.com/jacobobryant/biff/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Biff is a composition of libraries"
+  - field: maintainer
+    value: Jacob O'Bryant
+    url: https://raw.githubusercontent.com/jacobobryant/biff/master/LICENSE
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Copyright (c) 2026 Jacob O'Bryant"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/jacobobryant
+    checkedAt: 2026-10-24
+    via: api
+  - field: language
+    value: Clojure
+    url: https://api.github.com/repos/jacobobryant/biff
+    checkedAt: 2026-10-24
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://biffweb.com/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Biff is a full-stack web framework for Clojure"
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/jacobobryant/biff/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Java 21 or higher"
+  - field: runtimeMin
+    value: "21"
+    url: https://github.com/jacobobryant/biff/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Java 21 or higher"
+  - field: installMethod
+    value: git clone of the biff-starter repository, then clj -M:run dev
+    url: https://github.com/jacobobryant/biff/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "clj -M:run dev"
+  - field: renderingModes
+    value: [server]
+    url: https://github.com/jacobobryant/biff/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "lightweight server-side rendering with"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/jacobobryant/biff/blob/master/libs/ring/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Register the module to start Jetty"
+  - field: databases
+    value: [sqlite]
+    url: https://github.com/jacobobryant/biff/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "integrates SQLite with other parts of Biff"
+  - field: databases
+    value: [xtdb]
+    url: https://github.com/jacobobryant/biff/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "an alternative to biff.sqlite"
+  - field: adminUi
+    value: yes, admin dashboard
+    url: https://github.com/jacobobryant/biff/blob/master/libs/admin/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "An admin dashboard for Biff applications"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/jacobobryant/biff
+    checkedAt: 2026-10-24
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/jacobobryant/biff/master/LICENSE
+    checkedAt: 2026-10-24
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2022"
+    url: https://api.github.com/repos/jacobobryant/biff/releases
+    checkedAt: 2026-10-24
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/jacobobryant/biff/releases
+    checkedAt: 2026-10-24
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-10
+    url: https://api.github.com/repos/jacobobryant/biff/releases
+    checkedAt: 2026-10-24
+    via: api
+  - field: githubStargazers
+    value: 1119
+    url: https://api.github.com/repos/jacobobryant/biff
+    checkedAt: 2026-10-24
+    via: api
+  - field: contributors
+    value: 26
+    url: https://api.github.com/repos/jacobobryant/biff/contributors?per_page=1
+    checkedAt: 2026-10-24
+    via: api
+  - field: newsletter
+    value: "https://biffweb.com/newsletter/"
+    url: https://github.com/jacobobryant/biff/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Subscribe to the newsletter"
+notFound: [maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, wikidata, endoflifeId, packagistName, npmName, pypiName, rubygemsName, clojarsName, clojarsDownloads, docker, outputDir]
+unreadable: []
+notes: >
+  Biff is a Clojure framework, not a CMS; its library list is in the README. The database engines are SQLite (biff.sqlite, the default) and XTDB (biff.xtdb, an alternative), as the README states. The Clojars page for com.biffweb/biff lists 0.4.2-beta (2022) as its latest version, while the README installs the 2.x libraries as com.biffweb/ring, com.biffweb/admin and similar, so no Clojars figure is recorded. The first GitHub release is v0.4.1-beta (2022-04-09), so firstRelease is 2022; the repository dates from 2020. The highest stable release is v2.0.0 (2026-09-10); the GitHub releases list has no later stable tag, and the CHANGELOG lists 2.0.1 and 2.0.2 without a matching release. The starter repository named by the README is biff-starter, cloned with git and run with clj. The newsletter link is on the README. the marketing site lists deployment tooling for an Ubuntu VPS, an uberjar or a Docker container, which the libs/tasks README confirms for Ubuntu servers. The admin library is a dashboard with usage metrics, a user directory and email alerts, which is the only admin interface recorded. The Clojurians Slack channel named in the README is not a field.

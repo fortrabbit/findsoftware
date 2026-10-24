@@ -1,0 +1,144 @@
+id: amber
+name: Amber
+status: accepted
+checkedAt: 2026-10-24
+description: Web application framework written in Crystal, with routing, controllers, views and a command-line tool for generating applications.
+facts:
+  - field: homepage
+    value: https://amberframework.org
+    url: https://amberframework.org/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Build the business, not the boilerplate"
+  - field: repository
+    value: https://github.com/amberframework/amber
+    url: https://api.github.com/repos/amberframework/amber
+    checkedAt: 2026-10-24
+    via: api
+  - field: docs
+    value: https://amberframework.org/docs/v2
+    url: https://amberframework.org/docs/v2
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Amber 2.0 Beta"
+  - field: discord
+    value: https://discord.gg/vwvP5zakSn
+    url: https://github.com/amberframework/amber/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Questions? Join our Discord"
+  - field: maintainer
+    value: Amber Team
+    url: https://github.com/amberframework/amber/blob/master/LICENSE
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Copyright (c) 2017-2019 Amber Team"
+  - field: maintainerType
+    value: community
+    url: https://github.com/amberframework/amber/blob/master/LICENSE
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Copyright (c) 2017-2019 Amber Team"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/amberframework
+    checkedAt: 2026-10-24
+    via: api
+  - field: language
+    value: Crystal
+    url: https://api.github.com/repos/amberframework/amber
+    checkedAt: 2026-10-24
+    via: api
+  - field: runtime
+    value: [crystal]
+    url: https://github.com/amberframework/amber/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "is a web application framework written in Crystal"
+  - field: runtimeMin
+    value: "1.20"
+    url: https://github.com/amberframework/amber/releases/tag/v1.5.0
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Declared Crystal requirement is now >= 1.20.0, < 2.0"
+  - field: categories
+    value: [framework]
+    url: https://github.com/amberframework/amber/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "is a web application framework written in Crystal"
+  - field: renderingModes
+    value: [server]
+    url: https://amberframework.org/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Server rendered"
+  - field: runsAs
+    value: [always-on]
+    url: https://amberframework.org/docs/v2/deployment/manual-deploy
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Terminate TLS in a reverse proxy or managed ingress and proxy to 127.0.0.1:3000"
+  - field: installMethod
+    value: Homebrew
+    url: https://github.com/amberframework/amber/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "brew install amber"
+  - field: installMethod
+    value: from source with shards and make
+    url: https://github.com/amberframework/amber/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Currently, the only option to install on Linux is from source."
+  - field: installMethod
+    value: Arch Linux package
+    url: https://github.com/amberframework/amber/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "yay -S amber"
+  - field: license
+    value: MIT
+    url: https://github.com/amberframework/amber/blob/master/LICENSE
+    checkedAt: 2026-10-24
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/amberframework/amber
+    checkedAt: 2026-10-24
+    via: api
+  - field: firstRelease
+    value: "2017"
+    url: https://api.github.com/repos/amberframework/amber/releases
+    checkedAt: 2026-10-24
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/amberframework/amber/releases
+    checkedAt: 2026-10-24
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-01
+    url: https://api.github.com/repos/amberframework/amber/releases/tags/v1.5.0
+    checkedAt: 2026-10-24
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-08-13
+    url: https://api.github.com/repos/amberframework/amber/releases/tags/v2.0.0-beta.5
+    checkedAt: 2026-10-24
+    via: api
+  - field: githubStargazers
+    value: 2607
+    url: https://api.github.com/repos/amberframework/amber
+    checkedAt: 2026-10-24
+    via: api
+  - field: contributors
+    value: 101
+    url: https://api.github.com/repos/amberframework/amber/contributors
+    checkedAt: 2026-10-24
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId]
+unreadable: []
+notes: >
+  The homepage is live and describes the 2.0 beta. The docs at amberframework.org/docs/v2 list "1.5 Stable" and "1.4.1 Legacy" documentation versions, but the 1.5 pages named by URL returned 404, so no fact is taken from v1 documentation; the v1 facts come from the README and the v1.5.0 release notes. The V2 documentation describes Grant ORM with SQLite by default and PostgreSQL or MySQL on request; because it describes the beta, databases is not recorded. The V2 manual deployment page describes a compiled binary run under systemd, which is recorded as runsAs always-on for the framework's run model. The README's Linux install steps are for v1.4.1, a superseded stable release, so installMethod cites only the Homebrew command in the README. The latest stable GitHub release is v1.5.0 (2026-08-01), so currentMajor is 1 even though the 2.0 beta releases (latest v2.0.0-beta.5, 2026-08-13) are prereleases. The README links the Amber docs at docs.amberframework.org/amber, which now redirects to amberframework.org/docs/v2. The LICENSE copyright names "Amber Team"; no legal entity is named, so maintainerType is community. The Shards package name is not recorded because the install docs name the GitHub repository. The site's stated "inspired by" list (Kemal, Rails, Phoenix, Hanami) is not a basedOn statement, so basedOn is not recorded.

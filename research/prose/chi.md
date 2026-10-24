@@ -1,0 +1,1 @@
+chi is a router for building Go HTTP services, and the README states that it is built on Go's context package. It is added to a Go module with `go get`, and the documentation site is built from markdown files that the project publishes. The copyright line of its MIT-licensed source names Peter Kieltyka.

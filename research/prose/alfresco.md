@@ -1,0 +1,5 @@
+Alfresco Community Edition is the Java content repository of Alfresco Content Services, published by Hyland Software, Inc. The documentation describes it as an enterprise content management system with document management and web content management applications; it runs on Apache Tomcat, uses MySQL, MariaDB or PostgreSQL, and can authenticate users through LDAP or SSO. The repository is a set of Java libraries for core utilities, the data model, the repository services and a REST API framework. A separate packaging project builds them into a distribution zip of web application archives and a Docker image for deployment on an application server, and it refers to a deployment project for docker-compose and Helm setups.
+
+## Worth knowing
+
+The repository holds the Community Edition only; the README names enterprise projects that extend it. The acs-deployment project installs the Enterprise version by default, with a limited trial, and the Community Edition needs no license or Quay.io account. Its libraries are published to the Alfresco Maven repository, not to Maven Central. The database and authentication documentation covers the 23.x line.
