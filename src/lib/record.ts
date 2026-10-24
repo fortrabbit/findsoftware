@@ -147,8 +147,10 @@ export function footnotes(sources: Source[] | undefined) {
 
   for (const source of sources ?? []) {
     const existing = byUrl.get(source.url);
-    if (existing) existing.fields.push(source.field);
-    else byUrl.set(source.url, { url: source.url, fields: [source.field], checkedAt: source.checkedAt });
+    if (existing) {
+      // One field cited several times by the same page is one footnote, not a run of the same number.
+      if (!existing.fields.includes(source.field)) existing.fields.push(source.field);
+    } else byUrl.set(source.url, { url: source.url, fields: [source.field], checkedAt: source.checkedAt });
   }
 
   const notes = [...byUrl.values()];
