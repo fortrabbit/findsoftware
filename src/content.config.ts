@@ -173,14 +173,14 @@ const providerFields = z
 
     /*
      * A project with no website of its own links its repository instead, and a
-     * stopped one may have neither: the domain is parked or sold. The repository
+     * stopped or doubtful one may have neither: the domain is parked or sold. The repository
      * never stands in as the home page, so the two links stay distinct facts.
      */
-    if (record.status !== 'discontinued' && !record.urls?.home && !record.urls?.repository) {
+    if (record.status !== 'discontinued' && record.status !== 'stub' && !record.urls?.home && !record.urls?.repository) {
       ctx.addIssue({
         code: 'custom',
         path: ['urls', 'home'],
-        message: 'Required unless the project has a repository or has stopped',
+        message: 'Required unless the project has a repository, has stopped or is a stub',
       });
     }
   });
