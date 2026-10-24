@@ -1,0 +1,86 @@
+id: troglio
+name: Troglio
+status: hosted-service
+checkedAt: 2026-10-24
+description: Trello Power-Up that turns the cards of a Trello board into content for a website or app, published as JSON to git or a server.
+facts:
+  - field: homepage
+    value: https://troglio.com
+    url: https://troglio.com/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Turn Trello into your CMS"
+  - field: docs
+    value: https://troglio.com/guide
+    url: https://troglio.com/guide
+    checkedAt: 2026-10-24
+    via: page
+  - field: repository
+    value: https://github.com/Troglio/troglio
+    url: https://api.github.com/repos/Troglio/troglio
+    checkedAt: 2026-10-24
+    via: api
+  - field: sourcePublic
+    value: false
+    url: https://api.github.com/repos/Troglio/troglio/contents
+    checkedAt: 2026-10-24
+    via: api
+  - field: categories
+    value: [cms]
+    url: https://github.com/Troglio/troglio/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Turn Trello into a fully fledged CMS"
+  - field: hostedOffering
+    value: Troglio Power-Up for Trello, run by Troglio
+    url: https://troglio.com/terms
+    checkedAt: 2026-10-24
+    via: page
+    quote: "the Troglio Power-Up for Trello"
+  - field: adminUi
+    value: no, the editor is the Trello board
+    url: https://troglio.com/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Write into Trello cards like if they were pages."
+  - field: livePreview
+    value: yes
+    url: https://github.com/Troglio/troglio/blob/master/README.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "visualize your changes live"
+  - field: maintainer
+    value: Troglio
+    url: https://troglio.com/terms
+    checkedAt: 2026-10-24
+    via: page
+    quote: "between you and Troglio"
+  - field: lastCommitDate
+    value: 2018-05-12
+    url: https://api.github.com/repos/Troglio/troglio/commits
+    checkedAt: 2026-10-24
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Troglio
+    checkedAt: 2026-10-24
+    via: api
+  - field: x
+    value: https://twitter.com/try_troglio
+    url: https://troglio.com/
+    checkedAt: 2026-10-24
+    via: page
+  - field: githubStargazers
+    value: 10
+    url: https://api.github.com/repos/Troglio/troglio
+    checkedAt: 2026-10-24
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/Troglio/troglio/contributors
+    checkedAt: 2026-10-24
+    via: api
+notFound: [license, licenseModel, firstRelease, currentMajor, latestReleaseDate, language, runtime, headlessApi, sso, importsFrom, paidEdition, pricingPage, i18n, multisite, userRoles, contentStore, databases, basedOn, parent, forkOf, successorOf, alternativeTo, templating, runsAs, renderingModes, hqCountry, maintainerType, wikidata, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, npmName, endoflifeId, supportedVersions, usageShare, reportedInstalls, docker, installMethod, buildCommand, outputDir, runtimeMin]
+unreadable: []
+notes: >
+  Hosted-service: the Power-Up code is not in the repository (its only file is README.md), and the terms describe the Power-Up as a hosted service offered without cost "on a trial basis for a limited time", so criterion 2 fails for a downloadable distributable; the decision from accepted to hosted-service is for the reviewer, and a published source or a self-host option would reverse it. The guide's quick start installs the Power-Up by adding a custom Power-Up in the Trello admin interface and pointing it at a backend (GitHub, GitLab, Bitbucket or a custom endpoint); the optional Express endpoint repository Troglio/express-nedb-endpoint has no license, is not the CMS, and is not recorded. The README links two starters, a basic blog built with Preact and React Static and an Express and Nedb endpoint that stores pushed data and serves it as a JSON API, and says previews open the site in an iframe with the new data. The repository has no release or tag, so lastCommitDate (2018-05-12, the newest commit on master) is what the import judges listing by. The plans page reads "Coming Soon...", so no pricing is recorded. The footer reads "© 2018 Trogl.io" and the terms name both troglio.com and trogl.io, and the maintainer is recorded as the terms name it. Content lives in Trello cards, which is an external service, so contentStore is not recorded.

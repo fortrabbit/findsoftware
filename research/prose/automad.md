@@ -1,0 +1,5 @@
+Automad keeps pages in human-readable text files, so a site needs no database. Its browser-based dashboard includes a block editor and an in-page edit mode, and templates are written in Automad's own template language and rendered on the fly. The [getting started guide](https://automad.org/getting-started) covers installation with Docker, with Composer or by uploading the distribution bundle, and asks for PHP 8.2 or newer with the gd, curl and zip modules. The dashboard is available in several languages.
+
+## Worth knowing
+
+The repository license is the O'Saasy License Agreement, which forbids offering the software as a hosted or SaaS product where its main value is the software itself. The terms-of-use page says MIT and the homepage says open-source. The guide says version 1 is no longer supported, and its Composer command installs the 2.0 line, which is in beta and described there as stable and safe for production use. The terms of use state that a minimum of telemetry data is transmitted: the domain name, the Automad version and the server type.

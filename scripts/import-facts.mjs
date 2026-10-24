@@ -437,7 +437,7 @@ function mapped(values, map, allowed, pick = (value) => value) {
  */
 const openLicense = /\b(MIT|Apache|BSD|A?GPL|LGPL|MPL|ISC|OSL|AFL|EUPL|Zlib|Unlicense|Artistic)/i;
 const restrictedLicense =
-  /\b(BUSL|BSL|SSPL|Elastic|FSL|RSAL|Commons Clause|Sustainable|proprietary|EULA|No Charge|custom|POCL|CC-BY-ND|CC-BY-NC|NoDerivatives|NonCommercial)/i;
+  /\b(BUSL|BSL|SSPL|Elastic|FSL|RSAL|Commons Clause|Sustainable|proprietary|EULA|No Charge|custom|POCL|CC-BY-ND|CC-BY-NC|NoDerivatives|NonCommercial|O'?Saasy)/i;
 const enterprisePart = /enterprise|\bee\/|x-pack|commercial licen[cs]e/i;
 const foundationName = /foundation|association|conservancy|LF Projects|\be\.\s?V\.|non-?profit|OpenJS/i;
 const legalForm =

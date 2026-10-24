@@ -1,0 +1,121 @@
+id: websitebaker
+name: WebsiteBaker
+status: stub
+checkedAt: 2026-10-24
+description: Open-source content management system for PHP and MySQL websites, with templates and add-ons.
+facts:
+  - field: name
+    value: WebsiteBaker
+    url: https://websitebaker.org/en/home/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "WebsiteBaker Open Source Content Management"
+  - field: homepage
+    value: https://websitebaker.org/en/home/
+    url: https://websitebaker.org/en/home/
+    checkedAt: 2026-10-24
+    via: page
+  - field: docs
+    value: https://help.websitebaker.org/
+    url: https://help.websitebaker.org/
+    checkedAt: 2026-10-24
+    via: page
+  - field: maintainer
+    value: WebsiteBaker Org e.V.
+    url: https://help.websitebaker.org/en/user-guide/installation/prior-to-installation.php
+    checkedAt: 2026-10-24
+    via: page
+    quote: "by WebsiteBaker Org e.V. , all rights reserved"
+  - field: categories
+    value: [cms]
+    url: https://websitebaker.org/en/home/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "open source content management system (CMS)"
+  - field: runtime
+    value: [php]
+    url: https://websitebaker.org/en/home/features/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "PHP 8.2 and up"
+  - field: runtimeMin
+    value: "8.2"
+    url: https://websitebaker.org/en/home/features/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "PHP 8.2 and up"
+  - field: runtimeMin
+    value: "8.1"
+    url: https://help.websitebaker.org/en/user-guide/installation/prior-to-installation.php
+    checkedAt: 2026-10-24
+    via: page
+    quote: "ab 8.1 bis einschließlich PHP-8.3"
+  - field: databases
+    value: [mysql, mariadb]
+    url: https://help.websitebaker.org/en/user-guide/installation/prior-to-installation.php
+    checkedAt: 2026-10-24
+    via: page
+    quote: "MySQL 5 / MariaDB 5 and up"
+  - field: databases
+    value: [mysql]
+    url: https://websitebaker.org/en/home/features/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "MySQL 5.5 or higher"
+  - field: templating
+    value: [php]
+    url: https://websitebaker.org/en/home/yourwebsitebaker/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "simple PHP and (X)HTML and CSS"
+  - field: installMethod
+    value: upload the package to the web space, then run the installer in the browser
+    url: https://websitebaker.org/en/home/yourwebsitebaker/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "just upload WebsiteBaker to your webspace"
+  - field: adminUi
+    value: "yes, a backend with WYSIWYG editors"
+    url: https://websitebaker.org/en/home/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "WYSIWYG-editors in backend"
+  - field: i18n
+    value: "yes, support of multiple languages"
+    url: https://websitebaker.org/en/home/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Support of multiple languages"
+  - field: userRoles
+    value: "yes, group based access privileges"
+    url: https://websitebaker.org/en/home/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Group based Access Privilege System"
+  - field: licenseModel
+    value: open-source
+    url: https://websitebaker.org/en/home/license/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "WebsiteBaker is Open-Source software released under the"
+  - field: currentMajor
+    value: 2
+    url: https://help.websitebaker.org/en/user-guide/installation/prior-to-installation.php
+    checkedAt: 2026-10-24
+    via: page
+    quote: "starting with WebsiteBaker 2.8.3"
+  - field: pluginDirectory
+    value: https://addon.websitebaker.org
+    url: https://websitebaker.org/en/home/
+    checkedAt: 2026-10-24
+    via: page
+  - field: forum
+    value: https://forum.websitebaker.org
+    url: https://websitebaker.org/en/home/
+    checkedAt: 2026-10-24
+    via: page
+notFound: [firstRelease, latestReleaseDate, latestPrereleaseDate, hqCountry, maintainerType, repoOwnerType, repository, license, parent, basedOn, forkOf, successorOf, alternativeTo, headlessApi, contentStore, multisite, livePreview, sso, importsFrom, paidEdition, pricingPage, renderingModes, runsAs, githubStargazers, contributors, packagistName, npmName, pluginCount, subreddit, discord, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, outputDir]
+unreadable: []
+notes: >
+  Stub: the site offers a ZIP download and an installer, and it states PHP and MySQL requirements, but no page shows a stable release version or date (the only version page is "Preview 214", a demo), and no repository names the project; the download area or a dated release list on the project's own site would settle the release age. The GitHub repository Websitebaker-zz/WebsiteBaker is empty (no pushed date, no releases, no README) and is not named by the project, so it is not a source. The license page says "released under the GNU General Public License" without a version, so no license SPDX id is recorded. The requirements conflict: the features page says "PHP 8.2 and up", and the installation guide says "ab 8.1 bis einschließlich PHP-8.3" and recommends at least 8.2; both are the project's statements and both are recorded as runtimeMin entries. The installation guide also lists Linux as the operating system and Apache as the web server. The copyright line gives 2004 to 2026 for the association, which is not a first release date, so firstRelease is unknown.
+  At the time of the last check websitebaker.org answered every request with HTTP 503 (a forbidden notice), so the quotes taken from it were confirmed on an earlier read the same day and could not be re-fetched.

@@ -7,7 +7,7 @@ urls:
 category:
   - ssg
 description: Command-line tool and Node.js module that generates static HTML files from Handlebars templates with YAML front matter.
-status: active
+status: stub
 maintainer: Neil Freeman
 maintainerType: individual
 firstRelease: 2015

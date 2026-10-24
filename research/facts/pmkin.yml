@@ -1,0 +1,75 @@
+id: pmkin
+name: PMKIN
+status: hosted-service
+checkedAt: 2026-10-24
+description: Hosted content planner and headless CMS where teams and AI agents plan, write and review content that a website reads over an API.
+facts:
+  - field: name
+    value: PMKIN
+    url: https://pmkin.io
+    checkedAt: 2026-10-24
+    via: page
+    quote: "PMKIN is where your team and your AI agents plan, write and review content together."
+  - field: homepage
+    value: https://pmkin.io
+    url: https://pmkin.io
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Agents write fast. You decide what ships."
+  - field: docs
+    value: https://pmkin.io/developers
+    url: https://pmkin.io/developers
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Fetch published content with GraphQL, automate the whole workflow with REST"
+  - field: maintainer
+    value: PMKIN
+    url: https://pmkin.io/about
+    checkedAt: 2026-10-24
+    via: page
+    quote: "We build PMKIN in Barcelona, and we use it ourselves"
+  - field: categories
+    value: [headless-cms]
+    url: https://pmkin.io/docs/what-is-pmkin
+    checkedAt: 2026-10-24
+    via: page
+    quote: "A content planner and headless CMS where your team and your AI agents take content from idea to published."
+  - field: adminUi
+    value: yes, web app with a planner (board and calendar) and a document editor
+    url: https://pmkin.io/docs/what-is-pmkin
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Open a document and write in a clean editor that saves as you type."
+  - field: headlessApi
+    value: graphql
+    url: https://pmkin.io/developers/delivery-api/overview
+    checkedAt: 2026-10-24
+    via: page
+    quote: "GraphQL over HTTPS, POST with a JSON body"
+  - field: headlessApi
+    value: rest
+    url: https://pmkin.io/developers/management-api/overview
+    checkedAt: 2026-10-24
+    via: page
+    quote: "The management API is a JSON REST API"
+  - field: sso
+    value: SAML
+    url: https://pmkin.io/docs/plans-and-billing
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Everything in Pro, plus: SAML SSO"
+  - field: x
+    value: https://x.com/pmkincms
+    url: https://pmkin.io/
+    checkedAt: 2026-10-24
+    via: page
+  - field: pricingPage
+    value: https://pmkin.io/pricing
+    url: https://pmkin.io/pricing
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Start free. Grow when your team does."
+notFound: [apiLimits, repository, firstRelease, foundedYear, parent, wikidata, basedOn, alternativeTo, hqCountry, contentStore, databases, templating, livePreview, i18n, multisite, userRoles, importsFrom, regions, selfHostOption, installMethod, runsAs, renderingModes, runtime, language, license, currentMajor, latestReleaseDate, endoflifeId, contributors, githubStargazers, npmWeeklyDownloads, packagistDownloads, reportedInstalls, usageShare, pluginCount, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, newsletter, sourcePublic, repoOwnerType]
+unreadable: []
+notes: >
+  Hosted only: PMKIN runs the service and the pages state no installable part, so criterion 2 is waived under hosted-service. The GitHub organization pmkin-cms publishes an SDK (pmkin-js, MIT, npm client), examples and a Next.js quick start; per the hosted-service rule none of them is the repository field and their licence, stars and dates are not recorded. The organization profile names a blog at https://pkmin.io (missing the i), which is not the project's site and is not recorded. No legal entity, imprint or company country appears on the terms or privacy pages; the footer says "Made with ❤️ in Barcelona", so hqCountry and a legal-form maintainer are unknown. The about page gives no founding year and no release is dated on the pages read. The delivery API rate limit is stated on the delivery API overview page as 25 requests a second per IP address. The delivery API is read-only GraphQL at content.pmkin.io and the management API is REST at api.pmkin.io, from the developer docs. Keys come as Read or Read and write; the Read key is the one a website needs. Documentation says a team can run several projects, each one website or publication with its own documents and keys; this is not recorded as multisite. The Enterprise plan lists SAML SSO and user provisioning (SCIM) on the pricing and billing pages; SCIM is provisioning, not sso, and the Enterprise tier is a hosted plan, so no paidEdition is recorded. Plans and pricing per seat are on the pricing page and are not recorded as prices. The data model page says a document body is GitHub Flavored Markdown and that each document keeps a draft and a published version; the website sees only the published one. The pricing page says an agent's changes show both its name and the person it works for. The about page says agents never see API keys, members or billing. The docs describe an MCP server through which AI agents such as Claude, ChatGPT and Cursor claim briefs, write drafts and send them to review, a planner with a board and a calendar, and a review queue where drafts are approved or sent back with notes. The footer links Twitter, which points to x.com/pmkincms.

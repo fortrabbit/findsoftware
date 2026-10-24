@@ -1,0 +1,128 @@
+id: zesty
+name: Zesty.io
+status: hosted-service
+checkedAt: 2026-10-24
+description: Hosted headless and hybrid content management system with a visual manager and REST and GraphQL APIs.
+facts:
+  - field: name
+    value: Zesty.io
+    url: https://docs.zesty.io/docs/getting-started-with-zesty
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Zesty.io is a cloud web content management system (WCMS)"
+  - field: homepage
+    value: https://www.zesty.io
+    url: https://www.zesty.io/
+    checkedAt: 2026-10-24
+    via: page
+  - field: docs
+    value: https://docs.zesty.io
+    url: https://docs.zesty.io/llms.txt
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Documentation for Zesty.io"
+  - field: maintainer
+    value: Zesty.io Platform, Inc.
+    url: https://www.zesty.io/legal/end-user-license-agreement/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Zesty.IO Platform, Inc., a Delaware corporation"
+  - field: hqCountry
+    value: US
+    url: https://www.zesty.io/legal/privacy-policy/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "write to us at ATTN: Zesty Platform, Inc., 550 West B Street, 4th Fl, San Diego, CA 92101"
+  - field: categories
+    value: [headless-cms, cms]
+    url: https://www.zesty.io/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Composable Data Driven Drag & Drop AI Assisted Hybrid and Headless CMS"
+  - field: adminUi
+    value: yes, Manager UI
+    url: https://docs.zesty.io/docs/graphql.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "in the Manager UI > Settings > Developer"
+  - field: headlessApi
+    value: [graphql]
+    url: https://docs.zesty.io/docs/graphql.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Endpoints available to power a GraphQL (GQL) server"
+  - field: headlessApi
+    value: [rest]
+    url: https://docs.zesty.io/docs/instances-api.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "A REST API for interacting with your instance resources."
+  - field: templating
+    value: Parsley
+    url: https://docs.zesty.io/llms.txt
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Zesty's view files and templating language - Parsley"
+  - field: userRoles
+    value: yes, base roles and team permissions
+    url: https://docs.zesty.io/docs/roles-permissions.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "User Roles and Permissions are applied to a user or"
+  - field: sso
+    value: Microsoft Single Sign-On
+    url: https://docs.zesty.io/docs/microsoft-single-sign-on-sso.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "You may log into Zesty.io using Microsoft Single-On"
+  - field: sso
+    value: Okta, configured as the identity provider
+    url: https://docs.zesty.io/docs/okta-sso-configuration-guide.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "configure Okta as the Identity Provider"
+  - field: i18n
+    value: multiple languages per instance, the number included depends on the plan
+    url: https://docs.zesty.io/docs/how-to-set-up-internationalization-i18n.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Setting up internationalization allows users to add multiple languages to their instance."
+  - field: pricingPage
+    value: https://www.zesty.io/pricing/
+    url: https://www.zesty.io/pricing/
+    checkedAt: 2026-10-24
+    via: page
+  - field: freeTier
+    value: yes, Free Community Plan
+    url: https://www.zesty.io/pricing/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Free - no credit card required"
+  - field: apiLimits
+    value: monthly API calls set per plan, 3,000 on the free plan
+    url: https://www.zesty.io/pricing/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "3,000 API calls/month"
+  - field: hostedOffering
+    value: Zesty.io, a cloud-based SaaS headless CMS
+    url: https://docs.zesty.io/docs/product-overview.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Zesty.io is a cloud-based, SaaS headless content management system (CMS)"
+  - field: selfHostOption
+    value: Private Cloud (Own Your Data), customers own and operate portions of the architecture that manage data
+    url: https://docs.zesty.io/docs/zestyio-private-cloud-with-akamai.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "own and operate portions of our architecture"
+  - field: renderingModes
+    value: [server]
+    url: https://docs.zesty.io/docs/webengine.md
+    checkedAt: 2026-10-24
+    via: page
+    quote: "WebEngine is a server side rendering origin for rich content and data."
+notFound: [firstRelease, repository, contentStore, databases, livePreview, multisite, importsFrom, regions, paidEditions, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, parent, endoflifeId, license, runsAs]
+unreadable: []
+notes: >
+  Zesty.io is a hosted service: the docs describe a cloud content instance, a Private Cloud with Akamai and a SaaS platform, and name no installable part beyond the Private Cloud option, where customers own and operate portions of the architecture that manage data. The homepage links a GitHub organization (github.com/zesty-io) that holds client code, not the platform, so no repository is recorded. The docs describe the instance API as read only over JSON (Instant API), a REST Instances API and a GraphQL endpoint set that a user switches on in the Manager UI. The pricing page lists SSO only under the Enterprise plan and does not name a protocol. The Community plan limits (users, bandwidth, storage) and the plan API call counts are plan limits with no prices recorded. The copyright line gives 2010 as the start of the copyright span, which is a company date and not a first release, so firstRelease is left out. The docs' Getting Started page says the platform has open-source user interfaces and that the core is built in Go and Node.js, which the hosted service runs; no license is stated and no fact is recorded from it.

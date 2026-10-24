@@ -1,0 +1,57 @@
+id: spearly
+name: Spearly CMS
+status: hosted-service
+checkedAt: 2026-10-24
+description: Hosted content platform that runs A/B tests on website content, added to existing sites with an embed tag.
+facts:
+  - field: homepage
+    value: https://spearly.com/ja/cms/
+    url: https://spearly.com/ja/cms/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "コンテンツ運営プラットフォームです"
+  - field: docs
+    value: https://docs.spearly.com/
+    url: https://docs.spearly.com/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Spearly 公式ドキュメント"
+  - field: categories
+    value: [cms]
+    url: https://spearly.com/ja/cms/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Spearly CMSは文章だけではなく、ボタン・タイトル・CTAなどサイトのあらゆるパーツを「コンテンツ」とし"
+  - field: maintainer
+    value: UNIMAL INC.
+    url: https://spearly.com/ja/cms/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "UNIMAL INC."
+  - field: installMethod
+    value: embed a tag in the page
+    url: https://spearly.com/ja/cms/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "サイトの改善したい部分にタグを埋め込むだけで導入ができます"
+  - field: adminUi
+    value: yes, admin screen
+    url: https://spearly.com/ja/cms/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Spearlyの管理画面から簡単に編集"
+  - field: pricingPage
+    value: https://spearly.com/ja/cms/pricing
+    url: https://spearly.com/ja/cms/pricing
+    checkedAt: 2026-10-24
+    via: page
+notFound: [firstRelease, currentMajor, headlessApi, contentStore, databases, livePreview, i18n, multisite, userRoles, sso, importsFrom, basedOn, parent, runtime, templating, renderingModes, runsAs, paidEdition, regions, selfHostOption, reportedInstalls, x, mastodon, bluesky, discord, newsletter, subreddit, forum, pluginDirectory, wikidata, maintainerType, hqCountry, apiLimits]
+unreadable: []
+notes: >
+  The CSV lists this row as accepted with a footer date of 2023. The homepage shows no source, distributable or install other than an embed tag and a hosted cloud app at cloud.spearly.com, so criterion 2 fails and the record is hosted-service; the reviewer decides whether the row moves.
+  The homepage at spearly.com/ja/cms/ is the Japanese page; the English path spearly.com/en/cms/ and the cms.spearly.com redirect return the same Japanese text, so the Japanese URL is the homepage.
+  The homepage footer reads "UNIMAL INC." in its copyright line, which is the name recorded; the privacy page copyright line reads "unimal". No imprint or company page with an address was found, so hqCountry stays unknown.
+  The homepage lists the e-commerce platforms CORLOR ME, Shopify, EC CUBE and makeshop as places it has been introduced; they are the project's own claims and are not recorded as importsFrom or integration fields.
+  The homepage says the tag runs on various servers and environments, including WordPress and any environment that can edit HTML; no self-host option is stated.
+  The homepage compares a sample site with Google Optimize; the comparison is not recorded.
+  The docs site at docs.spearly.com loads its content in the browser and the fetched HTML carries only the title, so no docs fact beyond the title is recorded.

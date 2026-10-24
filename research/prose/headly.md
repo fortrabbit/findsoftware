@@ -1,0 +1,1 @@
+Headly is a hosted headless CMS for structured content, with drafts, approvals, revisions and locales. Editors work in a web workspace, and developers fetch content through delivery APIs. The pricing page says the Business plan includes SSO.

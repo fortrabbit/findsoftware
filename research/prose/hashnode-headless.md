@@ -1,0 +1,1 @@
+Hashnode Headless is the headless mode of the Hashnode blogging platform. A publication on Hashnode can power a custom frontend, with its content read and written through Hashnode's GraphQL API. The headless mode is one of the features of Hashnode Pro, the paid plan, and the publication itself is hosted on Hashnode.

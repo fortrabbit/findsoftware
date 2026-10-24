@@ -1,0 +1,62 @@
+id: sheetson
+name: Sheetson
+status: hosted-service
+checkedAt: 2026-10-24
+description: Hosted service that exposes the rows of a Google Sheet as a REST API.
+facts:
+  - field: homepage
+    value: https://sheetson.com
+    url: https://sheetson.com/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Turn Google Sheets into RESTful API"
+  - field: docs
+    value: https://docs.sheetson.com/
+    url: https://docs.sheetson.com/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Welcome to the Sheetson API!"
+  - field: categories
+    value: [backend]
+    url: https://sheetson.com/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Connect a Google Sheet, get a REST endpoint."
+  - field: maintainer
+    value: Sheetson
+    url: https://sheetson.com/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "© 2026 Sheetson"
+  - field: headlessApi
+    value: rest
+    url: https://sheetson.com/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Turn Google Sheets into RESTful API"
+  - field: adminUi
+    value: "no"
+    url: https://sheetson.com/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "no admin panel to learn"
+  - field: alternativeTo
+    value: [SheetDB, Sheety, Sheet.best, Sheet2API, Sheetsu]
+    url: https://sheetson.com/vs/
+    checkedAt: 2026-10-24
+    via: page
+    quote: "Sheetson API vs Sheetsu"
+  - field: pricingPage
+    value: https://sheetson.com/#pricing
+    url: https://sheetson.com/
+    checkedAt: 2026-10-24
+    via: page
+notFound: [apiLimits, firstRelease, currentMajor, hqCountry, maintainerType, parent, basedOn, sso, userRoles, i18n, livePreview, multisite, importsFrom, runtime, templating, renderingModes, runsAs, paidEdition, regions, selfHostOption, reportedInstalls, x, mastodon, bluesky, discord, newsletter, subreddit, forum, pluginDirectory, wikidata]
+unreadable: []
+notes: >
+  The homepage footer reads "made in Singapore", which is a statement of origin and not of headquarters, so hqCountry stays unknown.
+  No legal notice, terms or imprint page was found at sheetson.com (the /terms, /privacy, /imprint and /pricing paths return 404), so the maintainer is recorded as the footer names the product.
+  The docs say every Google Sheet is a database and each tab is a table; the data stays in the user's Google Sheet and is only read through the API, so no contentStore is recorded (starter-list rule for services that read from another service).
+  The comparison page at sheetson.com/vs/ lists Sheetson API against SheetDB, Sheety, Sheet.best, Sheet2API and Sheetsu; they are recorded as alternativeTo because the project names them on its own pages. The same page also lists CSV viewer and editor tools, which are not recorded.
+  The homepage shows a Free plan and a Professional plan with prices; no prices are recorded.
+  The docs describe the endpoints as list, create, read, update and delete over the REST verbs, and the homepage calls the API RESTful. The homepage says requests are unmetered on every plan.
