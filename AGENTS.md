@@ -42,7 +42,7 @@ Carried over from FindHost, and they apply to research data already:
 - **Every fact carries its source**: a URL and the date it was read. `checkedAt` is a claim that the source was read on that date.
 - **Primary sources only.** The project's own site, repository, docs, or a registry API (GitHub, Packagist, npm, PyPI, RubyGems, endoflife.date). Directories, awesome lists and comparison sites are for discovering names, never a data source.
 - **Status decides where a record appears.** Listed by default. `hosted-service` (SaaS headless CMSs, criterion 2 waived), `discontinued` and `stub` sit beside the register. Nothing is deleted: a rejected candidate keeps a row with the criterion it fails.
-- **Software built on other software gets its own record**, with `basedOn` naming the parent: WooCommerce on WordPress, Filament on Laravel, a Hugo theme on Hugo.
+- **Software built on other software gets its own record**, with `basedOn` naming the parent: WooCommerce on WordPress, Filament on Laravel, a Hugo theme on Hugo. A plugin, module or extension is listed only when it turns its parent into another kind of software (e-commerce, static export, search, headless API, docs); general-purpose plugins (SEO, forms, galleries) stay out. An archived plugin is a `stub`, not `discontinued`.
 - **fortrabbit is not in this dataset** unless it ships software that meets the criteria. Hostability on fortrabbit is never an inclusion filter and never a field that flatters fortrabbit.
 - **No affiliate parameters in any URL.**
 

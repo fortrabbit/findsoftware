@@ -7,7 +7,7 @@ urls:
 category:
   - ssg
 description: Plugin for the Grav CMS that generates a static HTML copy of a Grav website.
-status: discontinued
+status: stub
 maintainer: Barry Anders
 maintainerType: individual
 firstRelease: 2017
