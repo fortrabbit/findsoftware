@@ -118,6 +118,23 @@ export function buildGraph(
     },
   });
 
+  // ForceAtlas2 settles into a disc; the elliptical grid mapping stretches that disc onto a square,
+  // so the page can widen it to the frame instead of leaving the corners empty.
+  const keys = graph.nodes();
+  const cx = keys.reduce((sum, key) => sum + graph.getNodeAttribute(key, 'x'), 0) / keys.length;
+  const cy = keys.reduce((sum, key) => sum + graph.getNodeAttribute(key, 'y'), 0) / keys.length;
+  const reach =
+    Math.max(...keys.map((key) => Math.hypot(graph.getNodeAttribute(key, 'x') - cx, graph.getNodeAttribute(key, 'y') - cy))) || 1;
+  const half = (a: number, b: number) =>
+    0.5 * Math.sqrt(Math.max(0, 2 + a * a - b * b + 2 * Math.SQRT2 * a)) -
+    0.5 * Math.sqrt(Math.max(0, 2 + a * a - b * b - 2 * Math.SQRT2 * a));
+  for (const key of keys) {
+    const u = (graph.getNodeAttribute(key, 'x') - cx) / reach;
+    const v = (graph.getNodeAttribute(key, 'y') - cy) / reach;
+    graph.setNodeAttribute(key, 'x', 500 * half(u, v));
+    graph.setNodeAttribute(key, 'y', 500 * half(v, u));
+  }
+
   const round = (value: number) => Math.round(value * 100) / 100;
   const nodes: GraphNode[] = [
     ...languages.map((key) => ({
