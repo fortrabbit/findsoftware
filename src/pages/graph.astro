@@ -33,11 +33,11 @@ const { nodes, edges } = buildGraph(
     href: `/languages/${slugOf(fieldOf.get('language')!, { id, label: labelOf('language', id) })}/`,
   }),
 );
-const controls = [
+const controls: { value: string; label: string; icon: string; pressed?: boolean }[] = [
   { value: 'in', label: 'Zoom in', icon: zoomIn },
   { value: 'out', label: 'Zoom out', icon: zoomOut },
   { value: 'reset', label: 'Show all', icon: fullscreen },
-  { value: 'labels', label: 'Show names', icon: fonts, pressed: 'false' },
+  { value: 'labels', label: 'Show names', icon: fonts, pressed: false },
 ];
 const description = 'What each project in the register is built on, from the language outwards.';
 ---
