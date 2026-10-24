@@ -20,7 +20,6 @@ hosting:
   - static
 runtimeMin: php 8.2
 basedOn:
-  - blade
   - vite
 contentStore:
   - flat-file

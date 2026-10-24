@@ -1,5 +1,5 @@
 ---
-id: blade
+id: blade-java
 name: Blade
 urls:
   home: https://lets-blade.github.io
