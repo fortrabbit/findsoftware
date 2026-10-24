@@ -1,9 +1,8 @@
 ---
-import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import { buildGraph } from '../lib/graph';
 import { fieldOf, labelOf, slugOf } from '../lib/fields';
-import { isListed } from '../lib/providers';
+import { isListed, loadSoftware } from '../lib/providers';
 import { recordPath } from '../lib/paths';
 import zoomIn from 'bootstrap-icons/icons/zoom-in.svg?raw';
 import zoomOut from 'bootstrap-icons/icons/zoom-out.svg?raw';
@@ -14,7 +13,7 @@ import fonts from 'bootstrap-icons/icons/fonts.svg?raw';
  * What the register is built on, drawn. Without JavaScript there is no graph;
  * each record page names its parents, so the facts stay reachable.
  */
-const software = await getCollection('software');
+const software = await loadSoftware();
 const listed = new Set(software.filter(isListed).map((entry) => entry.id));
 const { nodes, edges } = buildGraph(
   software.map((entry) => ({
