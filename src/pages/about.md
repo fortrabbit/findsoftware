@@ -27,7 +27,7 @@ GitHub stars, package downloads and plugin counts are recorded because they show
 
 Each figure carries the date it was read. Nothing on this site sorts, filters or ranks by them.
 
-## Who publishes it
+## Publisher
 
 FindSoftware is published by [fortrabbit](https://www.fortrabbit.com), a hosting company. It is the sibling of [FindHost](https://www.findhost.app), a register of hosting providers built the same way. Hosting on fortrabbit is never a reason to be listed and never a field on a record.
 
