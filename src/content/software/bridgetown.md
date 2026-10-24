@@ -23,8 +23,6 @@ hosting:
   - node
   - static
 runtimeMin: ruby 3.3
-basedOn:
-  - esbuild
 contentStore:
   - flat-file
 databases:
@@ -72,9 +70,6 @@ sources:
     checkedAt: 2026-10-18
   - field: category
     url: https://github.com/bridgetownrb/bridgetown
-    checkedAt: 2026-10-18
-  - field: basedOn
-    url: https://www.bridgetownrb.com/
     checkedAt: 2026-10-18
   - field: language
     url: https://github.com/bridgetownrb/bridgetown

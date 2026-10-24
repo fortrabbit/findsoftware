@@ -19,8 +19,6 @@ runtime:
 hosting:
   - static
 runtimeMin: php 8.2
-basedOn:
-  - vite
 contentStore:
   - flat-file
 adminUi: false
@@ -66,9 +64,6 @@ sources:
     checkedAt: 2026-10-18
   - field: category
     url: https://jigsaw.tighten.com/docs/installation/
-    checkedAt: 2026-10-18
-  - field: basedOn
-    url: https://jigsaw.tighten.com/
     checkedAt: 2026-10-18
   - field: language
     url: https://github.com/tighten/jigsaw
