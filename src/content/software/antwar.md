@@ -18,7 +18,6 @@ hosting:
   - static
 basedOn:
   - react
-  - webpack
 runsAs:
   - static
 renderingModes:

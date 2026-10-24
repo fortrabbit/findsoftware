@@ -47,12 +47,6 @@ facts:
     checkedAt: 2026-10-22
     via: page
     quote: "Documentation for the Vorma framework"
-  - field: basedOn
-    value: [vite]
-    url: https://github.com/vormadev/vorma/blob/main/README.md
-    checkedAt: 2026-10-22
-    via: page
-    quote: "The Next.js of Golang, powered by Vite."
   - field: runtime
     value: [go binary]
     url: https://github.com/vormadev/vorma/blob/main/internal/site/backend/assets/markdown/docs/vorma-basics/standard-project-structure.md
@@ -135,5 +129,5 @@ unreadable:
   - https://vorma.dev/docs (same script shell)
   - https://vorma.dev/docs/deployment (same script shell)
 notes: >
-  The live docs site returns an empty shell, so the docs facts come from the docs' Markdown source in the repository (internal/site/backend/assets/markdown). The project-structure page says a production build compiles the server program into one Go binary that, with the prod build tag, usually embeds the static assets; the CLI page names Node 22.11 or later as a prerequisite for creating a project, beside Go 1.24. The README says the frontend can use "React", "Solid", or "Preact"; not recorded as a field.
+  Vite builds the frontend assets of this Go framework; a build step in another language is not a parent, so basedOn leaves it out. The live docs site returns an empty shell, so the docs facts come from the docs' Markdown source in the repository (internal/site/backend/assets/markdown). The project-structure page says a production build compiles the server program into one Go binary that, with the prod build tag, usually embeds the static assets; the CLI page names Node 22.11 or later as a prerequisite for creating a project, beside Go 1.24. The README says the frontend can use "React", "Solid", or "Preact"; not recorded as a field.
   The project's own site and docs are client-rendered; no page text could be read, so the page facts come from the repository README, LICENSE, go.mod at tag v0.84.0 and the docs source. The homepage and docs fields come from the GitHub repository homepage and the README link. The README status section says the APIs are still evolving and sub-1.0 releases may contain breaking changes; that statement is not recorded as a field. The npm latest dist-tag is 0.84.0 (published 2026-01-21); the GitHub release for v0.84.0 is dated 2026-01-29, so latestReleaseDate follows the registry. The npm weekly figure is 0 for 2026-10-12 to 2026-10-18; the earlier CSV note of 2 per week is out of date. The npm package created date is 2026-01-01 and the GitHub repository was created 2023-09-20; the CSV note says the project was formerly Hwy, which no page read here states, so firstRelease stays unknown. The npm package author is listed as Samuel J. Cook. The repository owner is an organization named VORMA.

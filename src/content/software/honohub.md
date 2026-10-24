@@ -17,7 +17,6 @@ basedOn:
   - hono
   - drizzle
   - zod
-  - vite
 adminUi: true
 headlessApi:
   - rest

@@ -53,7 +53,7 @@ facts:
     via: page
     quote: "React-based, open-source framework"
   - field: basedOn
-    value: [react, webpack, graphql]
+    value: [react, graphql]
     url: https://registry.npmjs.org/gatsby/latest
     checkedAt: 2026-10-18
     via: api
@@ -213,4 +213,4 @@ facts:
 notFound: [hqCountry, forkOf, successorOf, databases, adminUi, headlessApi, multisite, docker, paidEditions, pricingPage, releaseCadence, endoflifeId, usageShare, forum, discord, subreddit, mastodon, bluesky, x, newsletter]
 unreadable: [https://www.gatsbyjs.com/docs/how-to/local-development/upgrading-node-js/]
 notes: >
-  Criterion 4 passes: gatsby 5.16.0 was published 2026-01-26 and 5.16.1 on 2026-02-10 (npm), about eight months before this check; v5.16 added React 19 and Node.js 24 support. No stable release has followed since February 2026, and pre-release tags (5.17.0-next, react19) last moved in December 2025, so the release gap is worth re-checking at the next refresh. The repository was last pushed 2026-10-15. Netlify acquired Gatsby Inc. on 2023-02-01 (Netlify press release); the gatsbyjs.com footer still reads Gatsby, Inc. Gatsby Cloud is discontinued and its customers are pointed to Netlify; no paid edition of the framework exists. The version support page lists v5 as Active LTS since 2022-11-08 with no end date. basedOn comes from the npm dependencies (react peer, webpack, graphql data layer stated on the homepage). The Node.js upgrade guide answered 404, so runtimeMin is from npm engines only. Gatsby's deploy docs name only Netlify with an official adapter. Coined fields used: officialAdapters, youtube; renderingModes value dsg (Deferred Static Generation) is new. contributors is the GitHub API count including anonymous contributors.
+  webpack is the build tool here, not a parent, so basedOn leaves it out. Criterion 4 passes: gatsby 5.16.0 was published 2026-01-26 and 5.16.1 on 2026-02-10 (npm), about eight months before this check; v5.16 added React 19 and Node.js 24 support. No stable release has followed since February 2026, and pre-release tags (5.17.0-next, react19) last moved in December 2025, so the release gap is worth re-checking at the next refresh. The repository was last pushed 2026-10-15. Netlify acquired Gatsby Inc. on 2023-02-01 (Netlify press release); the gatsbyjs.com footer still reads Gatsby, Inc. Gatsby Cloud is discontinued and its customers are pointed to Netlify; no paid edition of the framework exists. The version support page lists v5 as Active LTS since 2022-11-08 with no end date. basedOn comes from the npm dependencies (react peer, webpack, graphql data layer stated on the homepage). The Node.js upgrade guide answered 404, so runtimeMin is from npm engines only. Gatsby's deploy docs name only Netlify with an official adapter. Coined fields used: officialAdapters, youtube; renderingModes value dsg (Deferred Static Generation) is new. contributors is the GitHub API count including anonymous contributors.

@@ -15,8 +15,6 @@ runtime:
   - binary
 hosting:
   - binary
-basedOn:
-  - vite
 runsAs:
   - always-on
 renderingModes:
@@ -50,9 +48,6 @@ sources:
     checkedAt: 2026-10-22
   - field: category
     url: https://github.com/vormadev/vorma/blob/main/internal/site/backend/assets/markdown/docs/_index.md
-    checkedAt: 2026-10-22
-  - field: basedOn
-    url: https://github.com/vormadev/vorma/blob/main/README.md
     checkedAt: 2026-10-22
   - field: runtime
     url: https://github.com/vormadev/vorma/blob/main/internal/site/backend/assets/markdown/docs/vorma-basics/standard-project-structure.md

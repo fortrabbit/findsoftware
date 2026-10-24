@@ -24,7 +24,6 @@ hosting:
 runtimeMin: node 18
 basedOn:
   - react
-  - webpack
 contentStore:
   - flat-file
 templating: jsx

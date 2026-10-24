@@ -20,7 +20,6 @@ hosting:
 runtimeMin: node 16
 basedOn:
   - react
-  - vite
 contentStore:
   - flat-file
 templating: jsx
