@@ -44,6 +44,8 @@
   --font-display: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia, serif;
   --font-text: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-data: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+  /* Headings in the system face at its heaviest; the display serif stays with the wordmark the badge carries. */
+  --font-heading: var(--font-text);
 
   /* Type scale — the only way anything is de-emphasised */
   --text-xs: 0.75rem;
@@ -61,6 +63,7 @@
   --leading-body: 1.62;
 
   --weight-strong: 600;
+  --weight-heading: 900;
 
   /* Space scale */
   --space-3xs: 0.15rem;
@@ -101,8 +104,9 @@
   }
 }
 
-/* An explicit choice always wins over the OS preference, in both directions. */
+/* An explicit choice always wins over the OS preference, in both directions, and takes the browser's own controls with it. */
 :root[data-theme='dark'] {
+  color-scheme: dark;
   --color-page: var(--pitch);
   --color-ink: var(--paper);
   --color-link: var(--blue-300);
@@ -116,6 +120,7 @@
 }
 
 :root[data-theme='light'] {
+  color-scheme: light;
   --color-hover: var(--blue-50);
   --color-liked: var(--rose-50);
   --color-heart: var(--rose-500);
