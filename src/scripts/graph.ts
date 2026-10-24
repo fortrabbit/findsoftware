@@ -17,24 +17,33 @@ if (root && data) {
   const tip = root.querySelector<HTMLElement>('[data-graph-tip]')!;
   root.hidden = false;
 
-  const style = getComputedStyle(document.documentElement);
-  const token = (name: string) => style.getPropertyValue(name).trim();
-  const ink = token('--color-ink');
-  const link = token('--color-link');
-  const hub = token('--color-hub');
-  const quiet = token('--color-hover');
-  const page = token('--color-page');
   // Sigma's WebGL edges ignore alpha, so a faint line is the colour mixed into the page colour up front.
   const mix = (hex: string, over: string, share: number) => {
     const rgb = (value: string) => [1, 3, 5].map((at) => parseInt(value.slice(at, at + 2), 16));
     const [top, base] = [rgb(hex), rgb(over)];
     return `rgb(${top.map((channel, at) => Math.round(channel * share + base[at] * (1 - share))).join(', ')})`;
   };
-  const leafColor = mix(link, page, 0.55);
-  const branchColor = mix(hub, page, 0.7);
-  const focusEdgeColor = mix(link, page, 0.3);
+  type Tier = 'language' | 'root' | 'branch' | 'leaf';
+  // Read from the tokens, and read again when the theme changes: canvas colours do not follow CSS on their own.
+  const readColors = () => {
+    const style = getComputedStyle(document.documentElement);
+    const token = (name: string) => style.getPropertyValue(name).trim();
+    const [ink, link, hub, page] = ['--color-ink', '--color-link', '--color-hub', '--color-page'].map(token);
+    return {
+      ink,
+      page,
+      quiet: token('--color-hover'),
+      focusEdge: mix(link, page, 0.3),
+      // Contrast follows depth: languages, then hubs on a language, then hubs on a hub, all named; leaves recede.
+      tier: { language: ink, root: hub, branch: mix(hub, page, 0.7), leaf: mix(link, page, 0.55) } as Record<
+        Tier,
+        string
+      >,
+    };
+  };
+  let colors = readColors();
   const labelSize = 10;
-  const labelFont = token('--font-data');
+  const labelFont = getComputedStyle(document.documentElement).getPropertyValue('--font-data').trim();
 
   // A hub has four or more projects built directly on it and gets the tip; fewer reads as a stray pair, so it stays a leaf and links.
   const outDegree = new Map<string, number>();
@@ -45,19 +54,19 @@ if (root && data) {
   const byKey = new Map(nodes.map((node) => [node.key, node]));
   // The build lays the graph out on a square; widening it to the frame fills a screen of any shape.
   const aspect = container.clientWidth / container.clientHeight || 1;
-  // Contrast follows depth: languages, then hubs on a language, then hubs on a hub, all named; leaves recede.
   for (const { key, kind, label, x, y } of nodes) {
     const shown = { x: x * aspect, y, label };
-    if (kind === 'language') graph.addNode(key, { ...shown, color: ink, size: 7, forceLabel: true });
+    if (kind === 'language') graph.addNode(key, { ...shown, tier: 'language', size: 7, forceLabel: true });
     else if (isHub(key))
       graph.addNode(key, {
         ...shown,
-        color: kind === 'root' ? hub : branchColor,
+        tier: kind === 'root' ? 'root' : 'branch',
         size: kind === 'root' ? 5.5 : 5,
         forceLabel: true,
       });
-    else graph.addNode(key, { ...shown, color: leafColor, size: 4, forceLabel: false });
+    else graph.addNode(key, { ...shown, tier: 'leaf', size: 4, forceLabel: false });
   }
+  graph.updateEachNodeAttributes((_, attributes) => ({ ...attributes, color: colors.tier[attributes.tier as Tier] }));
   for (const [source, target] of edges) graph.addEdge(source, target, { size: 1 });
 
   const childrenOf = (key: string) => graph.outNeighbors(key);
@@ -79,7 +88,7 @@ if (root && data) {
     labelSize,
     // Only forced names are drawn, so Sigma's label grid never picks some by A–Z order; the hover layer names the rest.
     labelRenderedSizeThreshold: Infinity,
-    defaultEdgeColor: quiet,
+    defaultEdgeColor: colors.quiet,
     // A halo in the page colour keeps a label readable where lines cross it.
     defaultDrawNodeLabel: (context, data) => {
       if (!data.label) return;
@@ -88,9 +97,9 @@ if (root && data) {
       const y = data.y + labelSize / 3;
       context.lineJoin = 'round';
       context.lineWidth = 3;
-      context.strokeStyle = page;
+      context.strokeStyle = colors.page;
       context.strokeText(data.label, x, y);
-      context.fillStyle = ink;
+      context.fillStyle = colors.ink;
       context.fillText(data.label, x, y);
     },
     // Sigma draws its hover box for any node under the pointer; a node outside the focus is backdrop and gets none.
@@ -101,7 +110,7 @@ if (root && data) {
     nodeReducer: (key, attributes) => {
       if (focus && !focus.members.has(key)) {
         attributes.backdrop = true;
-        attributes.color = quiet;
+        attributes.color = colors.quiet;
         attributes.size = 3;
         attributes.forceLabel = false;
         return attributes;
@@ -112,7 +121,7 @@ if (root && data) {
     },
     edgeReducer: (key, attributes) => {
       if (!focus) return attributes;
-      if (focus.edges.has(key)) attributes.color = focusEdgeColor;
+      if (focus.edges.has(key)) attributes.color = colors.focusEdge;
       else attributes.hidden = true;
       return attributes;
     },
@@ -237,6 +246,18 @@ if (root && data) {
     if (up) narrow(up);
     else showAll();
   });
+
+  const repaint = () => {
+    colors = readColors();
+    graph.updateEachNodeAttributes((_, attributes) => ({ ...attributes, color: colors.tier[attributes.tier as Tier] }));
+    sigma.setSetting('defaultEdgeColor', colors.quiet);
+  };
+  // The theme switch sets data-theme on the root; the system setting changes the media query.
+  new MutationObserver(repaint).observe(document.documentElement, { attributeFilter: ['data-theme'] });
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', repaint);
+
+  // Scrolling over the graph scrolls the page; a trackpad pinch arrives as a wheel event with ctrlKey and still zooms.
+  root.addEventListener('wheel', (event) => event.ctrlKey || event.stopPropagation(), { capture: true });
 
   const camera = sigma.getCamera();
   const controls = root.querySelector<HTMLElement>('[data-graph-controls]')!;
