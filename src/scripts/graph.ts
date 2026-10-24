@@ -82,6 +82,7 @@ if (root && data) {
   let pinned: string | undefined;
   // Off by default: hundreds of names at once overlap. Languages and hubs stay named; the toggle names every node.
   let labels = false;
+  const teardown = new AbortController();
 
   const sigma = new Sigma(graph, container, {
     labelFont,
@@ -240,12 +241,16 @@ if (root && data) {
   // A click on the empty stage lets go of the tip, and of the focus if there is one.
   sigma.on('clickStage', () => (focus ? showAll() : unpin()));
   // Escape steps up one hub at a time; from a language, or after a zoom by hand, it returns to the whole graph.
-  document.addEventListener('keydown', (event) => {
-    if (event.key !== 'Escape') return;
-    const up = focus && hubAbove(focus.key);
-    if (up) narrow(up);
-    else showAll();
-  });
+  document.addEventListener(
+    'keydown',
+    (event) => {
+      if (event.key !== 'Escape') return;
+      const up = focus && hubAbove(focus.key);
+      if (up) narrow(up);
+      else showAll();
+    },
+    { signal: teardown.signal },
+  );
 
   const repaint = () => {
     colors = readColors();
@@ -253,26 +258,41 @@ if (root && data) {
     sigma.setSetting('defaultEdgeColor', colors.quiet);
   };
   // The theme switch sets data-theme on the root; the system setting changes the media query.
-  new MutationObserver(repaint).observe(document.documentElement, { attributeFilter: ['data-theme'] });
-  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', repaint);
+  const themeWatch = new MutationObserver(repaint);
+  themeWatch.observe(document.documentElement, { attributeFilter: ['data-theme'] });
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', repaint, { signal: teardown.signal });
+
+  // A dev-server reload runs this file again: the old graph lets go of its WebGL contexts first, or the browser runs out and drops layers.
+  import.meta.hot?.dispose(() => {
+    teardown.abort();
+    themeWatch.disconnect();
+    sigma.kill();
+  });
 
   // Scrolling over the graph scrolls the page; a trackpad pinch arrives as a wheel event with ctrlKey and still zooms.
-  root.addEventListener('wheel', (event) => event.ctrlKey || event.stopPropagation(), { capture: true });
+  root.addEventListener('wheel', (event) => event.ctrlKey || event.stopPropagation(), {
+    capture: true,
+    signal: teardown.signal,
+  });
 
   const camera = sigma.getCamera();
   const controls = root.querySelector<HTMLElement>('[data-graph-controls]')!;
-  controls.addEventListener('click', (event) => {
-    const button = (event.target as Element).closest<HTMLButtonElement>('button');
-    if (!button) return;
-    if (button.value === 'in') camera.animatedZoom({ duration: 200 });
-    if (button.value === 'out') camera.animatedUnzoom({ duration: 200 });
-    if (button.value === 'reset') camera.animatedReset({ duration: 200 });
-    if (button.value === 'labels') {
-      labels = !labels;
-      button.setAttribute('aria-pressed', String(labels));
-      // Every name at once costs a frame per pan, so they step aside while the view moves.
-      sigma.setSetting('hideLabelsOnMove', labels);
-      sigma.refresh();
-    }
-  });
+  controls.addEventListener(
+    'click',
+    (event) => {
+      const button = (event.target as Element).closest<HTMLButtonElement>('button');
+      if (!button) return;
+      if (button.value === 'in') camera.animatedZoom({ duration: 200 });
+      if (button.value === 'out') camera.animatedUnzoom({ duration: 200 });
+      if (button.value === 'reset') camera.animatedReset({ duration: 200 });
+      if (button.value === 'labels') {
+        labels = !labels;
+        button.setAttribute('aria-pressed', String(labels));
+        // Every name at once costs a frame per pan, so they step aside while the view moves.
+        sigma.setSetting('hideLabelsOnMove', labels);
+        sigma.refresh();
+      }
+    },
+    { signal: teardown.signal },
+  );
 }
