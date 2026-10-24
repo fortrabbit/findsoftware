@@ -25,9 +25,14 @@ if (root && data) {
   };
   type Tier = 'language' | 'root' | 'branch' | 'leaf';
   // Read from the tokens, and read again when the theme changes: canvas colours do not follow CSS on their own.
+  const swatch = document.createElement('canvas').getContext('2d')!;
   const readColors = () => {
     const style = getComputedStyle(document.documentElement);
-    const token = (name: string) => style.getPropertyValue(name).trim();
+    // The minifier shortens #000000 to #000; a canvas hands any colour back as six-digit hex, which mix() reads.
+    const token = (name: string) => {
+      swatch.fillStyle = style.getPropertyValue(name).trim();
+      return swatch.fillStyle;
+    };
     const [ink, link, hub, page] = ['--color-ink', '--color-link', '--color-hub', '--color-page'].map(token);
     return {
       ink,
