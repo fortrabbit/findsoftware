@@ -60,7 +60,8 @@ const beside = (await besideTheRegister()).filter((group) => !offered.has(group.
     }),
   ]}
 >
-  <h1>Find software to build your website</h1>
+  <h1>Find software</h1>
+  <p class="lead">A directory of software to build websites and web apps.</p>
 
   <ProviderRegister providers={providers} facets={facets} beside={beside} registers={registers} sort="name">
     <FindFilters facets={facets} providers={providers} registers={registers} />
