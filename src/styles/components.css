@@ -409,7 +409,7 @@ html:not(.js) .theme-switch {
 }
 
 [data-find-results].slim {
-  --row-pad: var(--space-xs);
+  --row-pad: var(--space-2xs);
 }
 
 .letter-group {
@@ -442,7 +442,13 @@ html:not(.js) .theme-switch {
 }
 
 .slim .letter-group {
-  --row-pad: var(--space-xs);
+  --row-pad: var(--space-2xs);
+}
+
+/* The slim names are set a step down; the letter follows so their baselines still meet. */
+.slim .letter-group > h2,
+.slim .provider-name {
+  font-size: var(--text-sm);
 }
 
 /*
@@ -914,13 +920,29 @@ html:not(.js) .theme-switch {
 }
 
 /* Names across as many columns as fit, each letter's run on its own. A row never splits between two columns. */
-.columns .provider-list {
-  columns: 11rem;
-  column-gap: var(--space-md);
+.slim .provider-list {
+  columns: 9rem;
+  column-gap: var(--space-sm);
 }
 
-.columns .provider-list > li {
+.slim .provider-list > li {
   break-inside: avoid;
+}
+
+/* A dated order is read top to bottom; columns would make it read like the alphabet again. */
+.slim .dated .provider-list {
+  columns: auto;
+}
+
+/* One line per name, cut short with an ellipsis: a wrapped name breaks the column's rhythm. */
+.slim .provider-body {
+  min-width: 0;
+}
+
+.slim .provider-name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /*
