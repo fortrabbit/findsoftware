@@ -7,6 +7,7 @@
 import Graph from 'graphology';
 import Sigma from 'sigma';
 import { navigate } from 'astro:transitions/client';
+import { prefetch } from 'astro:prefetch';
 import type { GraphData } from '../lib/graph';
 
 export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
@@ -33,6 +34,10 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
       ink,
       page,
       quiet: token('--color-hover'),
+      // Inside a focus: what the page is about at full strength, what stands around it fainter, the rest fainter still.
+      strong: link,
+      context: mix(link, page, 0.3),
+      backdrop: mix(token('--color-hover'), page, 0.6),
       focusEdge: mix(link, page, 0.45),
       // Contrast follows depth: languages, then hubs on a language, then hubs on a hub; leaves recede.
       tier: { language: ink, root: hub, branch: mix(hub, page, 0.7), leaf: mix(link, page, 0.55) } as Record<
@@ -71,14 +76,23 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
   for (const [source, target] of edges) graph.addEdge(source, target, { size: 1 });
 
   /*
-   * One focus at a time: `members` are drawn in colour, `named` carry their
+   * One focus at a time: `core` is what the page is about, drawn strong;
+   * `members` adds what stands around it, drawn faint; `named` carry their
    * names, `edges` are the lines kept, and `frame` is what the camera fits.
    */
   let focus:
-    { key: string; members: Set<string>; named: Set<string>; edges: Set<string>; frame: Set<string> } | undefined;
+    | {
+        key: string;
+        core: Set<string>;
+        members: Set<string>;
+        named: Set<string>;
+        edges: Set<string>;
+        frame: Set<string>;
+      }
+    | undefined;
   // Off by default: hundreds of names at once overlap. The toggle names every node.
   let labels = false;
-  // Expanded, the graph covers the screen and is explored rather than glanced at: there a hub narrows before it opens.
+  // Expanded, the graph covers the screen; it stays so across pages until Escape or its control.
   let expanded = false;
   // The dot of the row under the pointer in the list beside the graph.
   let marked: string | undefined;
@@ -134,11 +148,15 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
       }
       if (outside(key)) {
         attributes.backdrop = true;
-        attributes.color = colors.quiet;
+        attributes.color = colors.backdrop;
         attributes.size = 3;
         attributes.forceLabel = false;
         return attributes;
       }
+      if (focus && !focus.core.has(key)) {
+        attributes.color = colors.context;
+        attributes.size = 3.5;
+      } else if (focus && attributes.tier === 'leaf') attributes.color = colors.strong;
       // Within a focus only its chosen names show; the whole view names languages and hubs.
       attributes.forceLabel = labels || (focus ? focus.named.has(key) : attributes.forceLabel);
       if (key === focus?.key) {
@@ -155,16 +173,25 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
     },
   });
 
-  // Expanded, a hub narrows to its subtree first and opens its page on the second click; otherwise a click opens.
-  const narrows = (key: string) => expanded && isHub(key) && focus?.key !== key;
-  const opens = (key: string) => !outside(key) && (narrows(key) || Boolean(graph.getNodeAttribute(key, 'href')));
+  const hrefOf = (key: string) => graph.getNodeAttribute(key, 'href') as string | undefined;
+  const opens = (key: string) => !outside(key) && Boolean(hrefOf(key));
 
-  // Hovering only touches the cursor: Sigma names the node in its hover layer without redrawing the graph.
+  // The row of a dot, where the page lists it.
+  const rowOf = (key: string) => document.querySelector<HTMLElement>(`main li[data-record="${CSS.escape(key)}"]`);
+  /*
+   * Hovering a dot fetches its page ahead, so the click lands at once, and
+   * marks its row in the list; Sigma names the dot in its hover layer without
+   * redrawing the graph.
+   */
   sigma.on('enterNode', ({ node }) => {
-    if (opens(node)) container.style.cursor = 'pointer';
+    if (!opens(node)) return;
+    container.style.cursor = 'pointer';
+    prefetch(hrefOf(node)!);
+    rowOf(node)?.classList.add('graph-marked');
   });
-  sigma.on('leaveNode', () => {
+  sigma.on('leaveNode', ({ node }) => {
     container.style.cursor = '';
+    rowOf(node)?.classList.remove('graph-marked');
   });
 
   // Fits from the reset view's pixels: a fit from the current view zooms out on a subtree as wide as the graph.
@@ -188,12 +215,39 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
         Math.max(maxY, point.y),
       ];
     }
-    // Room for the outer names, and never closer than a fifth of the whole: two dots alone would fill the frame.
+    /*
+     * Names run to the right of their dots and keep their size at any zoom, so
+     * the widest name is room the dots cannot have: the fit leaves it on the
+     * right and shifts the view by half of it. Never closer than a fifth of the
+     * whole: two dots alone would fill the frame.
+     */
+    const context = document.createElement('canvas').getContext('2d')!;
+    context.font = `${labelSize}px ${labelFont}`;
+    const names = [...keys].filter((key) => focus?.named.has(key) ?? true);
+    const label = Math.min(
+      container.clientWidth / 3,
+      Math.max(0, ...names.map((key) => context.measureText(graph.getNodeAttribute(key, 'label') ?? '').width + 12)),
+    );
     const ratio = Math.min(
       1,
-      Math.max(0.2, Math.max((right - left) / container.clientWidth, (bottom - top) / container.clientHeight) * 1.25),
+      Math.max(
+        0.2,
+        (right - left) / Math.max(1, container.clientWidth * 0.9 - label),
+        ((bottom - top) / container.clientHeight) * 1.2,
+      ),
     );
-    const state = { x: (minX + maxX) / 2, y: (minY + maxY) / 2, ratio, angle: 0 };
+    // Framed units per pixel at this ratio, to turn the name's room into a shift of the view.
+    const unit =
+      ratio /
+      Math.max(
+        1e-6,
+        sigma.framedGraphToViewport({ x: 1, y: 0 }, { cameraState }).x -
+          sigma.framedGraphToViewport({ x: 0, y: 0 }, { cameraState }).x,
+      );
+    // Never further than the dots leave free: zoomed out all the way, a wide set has no room to give the names.
+    const free = Math.max(0, (container.clientWidth - (right - left) / ratio) / 2 - 8);
+    const shift = Math.min(label / 2, free);
+    const state = { x: (minX + maxX) / 2 + shift * unit, y: (minY + maxY) / 2, ratio, angle: 0 };
     if (duration) sigma.getCamera().animate(state, { duration });
     else sigma.getCamera().setState(state);
   };
@@ -223,7 +277,7 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
         if (!members.has(child) && members.add(child)) queue.push(child);
     const named = new Set([key, ...graph.outNeighbors(key).filter((child) => members.size <= 80 || isHub(child))]);
     const lines = graph.filterEdges((_, __, source, target) => members.has(source) && members.has(target));
-    focusOn({ key, members, named, edges: new Set(lines), frame: members }, duration);
+    focusOn({ key, core: members, members, named, edges: new Set(lines), frame: members }, duration);
   };
 
   /*
@@ -254,70 +308,65 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
       .sort((a, b) => distance(a) - distance(b))
       .slice(0, Math.max(8, Math.ceil(children.length * 0.85)));
     const near = [...parents.filter((parent) => !parent.startsWith('language:')), ...nearer];
-    const frame = new Set([key, ...(near.length ? near : parents)]);
-    focusOn({ key, members, named, edges: new Set(lines), frame }, duration);
+    // A small family takes its language into the frame too, or two dots fill it with nothing around them.
+    const frame = new Set([key, ...near, ...(near.length < 3 ? parents : [])]);
+    focusOn({ key, core: family, members, named, edges: new Set(lines), frame }, duration);
   };
 
   /*
-   * Records listed on the page: in colour with their parents as context, named
-   * while the names still fit, joined only among themselves. Most of the graph
-   * at once is the whole view, recoloured, with the camera left where it is.
+   * Records listed on the page, drawn as a language page draws its subtree:
+   * the records strong, the parents they hang on named, a line from each parent
+   * to each record. The records keep their names while the names still fit.
+   * Most of the graph at once is the whole view, recoloured, with the camera
+   * left where it is.
    */
   const highlight = (ids: string[], duration = 400, wait = 0) => {
     const shown = new Set(ids.filter((id) => graph.hasNode(id)));
     if (!shown.size) return focusOn(undefined, duration, wait);
-    const members = new Set([...shown, ...[...shown].flatMap((id) => graph.inNeighbors(id))]);
-    const named = new Set([...shown].filter((id) => shown.size <= 60 || isHub(id)));
-    const lines = graph.filterEdges((_, __, source, target) => shown.has(source) && shown.has(target));
-    const frame = shown.size > graph.order / 2 ? new Set<string>() : shown;
-    focusOn({ key: '', members, named, edges: new Set(lines), frame }, duration, wait);
+    const parents = new Set([...shown].flatMap((id) => graph.inNeighbors(id)));
+    const members = new Set([...shown, ...parents]);
+    const named = new Set([...parents, ...[...shown].filter((id) => shown.size <= 60 || isHub(id))]);
+    const lines = graph.filterEdges((_, __, source, target) => shown.has(target) && members.has(source));
+    // The named parents are in the frame too, or their names run off its edge.
+    const frame = shown.size > graph.order / 2 ? new Set<string>() : members;
+    focusOn({ key: '', core: members, members, named, edges: new Set(lines), frame }, duration, wait);
   };
 
+  // One click opens a dot's page, in the column and over the whole screen alike; the new page sets the focus.
   sigma.on('clickNode', ({ node, event }) => {
     if (!opens(node)) return;
-    if (narrows(node)) return narrow(node);
-    const href = graph.getNodeAttribute(node, 'href') as string;
+    const href = hrefOf(node)!;
     const { ctrlKey, metaKey, shiftKey } = event.original as MouseEvent;
     if (ctrlKey || metaKey || shiftKey) return void window.open(href, '_blank');
-    setExpanded(false);
     void navigate(href);
   });
 
-  // The nearest hub above, through any parent; a language has none.
-  const hubAbove = (key: string) => {
-    const queue = graph.inNeighbors(key);
-    const seen = new Set(queue);
-    for (let at = 0; at < queue.length; at++) {
-      if (isHub(queue[at])) return queue[at];
-      for (const parent of graph.inNeighbors(queue[at])) if (!seen.has(parent) && seen.add(parent)) queue.push(parent);
-    }
-  };
-  // What the page asked for, so leaving the expanded view returns to it.
+  // What the page asked for.
   let state = 'all';
-  // The rows listed in the page, as their records; a row inside a hidden list or hidden itself is not on show.
+  // The records listed in the page: a row names its record, or a search result its page; a hidden row is not on show.
+  const keyOf = new Map(nodes.filter((node) => node.href).map((node) => [node.href!, node.key]));
   const rows = () =>
-    [...document.querySelectorAll<HTMLElement>('main li[data-record]')]
+    [...document.querySelectorAll<HTMLElement>('main li[data-record], main li[data-href]')]
       .filter((row) => !row.closest('[hidden]'))
-      .map((row) => row.dataset.record!);
+      .map((row) => row.dataset.record ?? keyOf.get(row.dataset.href!))
+      .filter((key): key is string => Boolean(key));
   const apply = (duration = 400, wait = 0) => {
     const [kind, ...rest] = state.split(':');
     const key = rest.join(':');
     if (kind === 'record' && graph.hasNode(key)) return around(key, duration);
     if (kind === 'hub' && graph.hasNode(key)) return narrow(key, duration);
+    // A record outside the graph shows what it is built on: its nearest parent among its own, or its language.
+    if (kind === 'absent' && graph.hasNode(key))
+      return key.startsWith('language:') ? narrow(key, duration) : around(key, duration);
     if (kind === 'rows') return highlight(rows(), duration, wait);
-    // The register unfiltered is the whole graph; any filter in the address narrows it to the rows left.
-    if (kind === 'register' && [...new URLSearchParams(location.search).keys()].some((name) => name !== 'register'))
-      return highlight(rows(), duration, wait);
+    // The register unfiltered is the whole graph; a filter or another list in the address narrows it to the rows left.
+    if (kind === 'register' && location.search) return highlight(rows(), duration, wait);
     focusOn(undefined, duration, wait);
   };
-  document.addEventListener('find:results', () => state === 'register' && apply(400, 300), { signal: teardown.signal });
-
-  // Up one hub at a time inside the expanded view; at the top, back to what the page shows.
-  const stepUp = () => {
-    const up = focus?.key && hubAbove(focus.key);
-    if (up) narrow(up);
-    else apply();
-  };
+  // The filters and the search say when their rows change.
+  document.addEventListener('find:results', () => (state === 'register' || state === 'rows') && apply(400, 300), {
+    signal: teardown.signal,
+  });
 
   const expandButton = root.querySelector<HTMLButtonElement>('button[value="expand"]');
   const setExpanded = (next: boolean) => {
@@ -325,13 +374,15 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
     expanded = next;
     root.classList.toggle('expanded', next);
     expandButton?.setAttribute('aria-pressed', String(next));
-    // Over the whole screen, the page behind is out of reach for Tab and screen readers until it closes.
-    for (const part of document.querySelectorAll<HTMLElement>('body > :not([data-graph-dock])')) part.inert = next;
+    seal();
     if (next) expandButton?.focus();
     else apply(0);
   };
+  // Over the whole screen, the page behind is out of reach for Tab and screen readers until it closes; a new page too.
+  const seal = () => {
+    for (const part of document.querySelectorAll<HTMLElement>('body > :not([data-graph-dock])')) part.inert = expanded;
+  };
 
-  sigma.on('clickStage', () => expanded && focus && stepUp());
   document.addEventListener(
     'keydown',
     (event) => {
@@ -433,7 +484,7 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
     /** What the page asks the graph to show: a value of `data-graph-show` on <main>. Moves there unless `first`. */
     show(next: string, first = false) {
       state = next;
-      setExpanded(false);
+      seal();
       mark(undefined);
       apply(first ? 0 : 400);
     },

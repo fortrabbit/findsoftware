@@ -102,8 +102,11 @@ const start = () => {
           item.append(excerpt);
         }
 
+        // The graph beside the page marks the records among the results, by their page.
+        item.dataset.href = new URL(hit.url, location.origin).pathname;
         resultsEl.append(item);
       }
+      document.dispatchEvent(new Event('find:results'));
     };
 
     form.addEventListener('submit', (event) => {

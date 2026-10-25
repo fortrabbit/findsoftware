@@ -34,6 +34,7 @@ const summary = extendDescription(named.length <= 120 ? named : `${title}, in ${
 <Base
   title={`${title} — FindSoftware`}
   description={summary}
+  up={{ href: `${facetIndex(facet.id)}${value.slug}/`, label: value.label }}
   image={valueCardPath(facet.id, value.slug)}
   imageAlt={`A FindSoftware card: ${lead}.`}
   schema={[

@@ -194,8 +194,14 @@ const start = () => {
       }
 
       const query = params.toString();
-      // The router's own state rides along, or back to this entry would no longer be its navigation.
-      history.replaceState(history.state, '', query ? `${location.pathname}?${query}` : location.pathname);
+      const url = query ? `${location.pathname}?${query}` : location.pathname;
+      /*
+       * The first filter is a step of its own, so Back returns to the whole
+       * register; every tick after it refines that step in place. The router's
+       * own state rides along, or back to this entry would not be its navigation.
+       */
+      if (query && !location.search) history.pushState(history.state, '', url);
+      else history.replaceState(history.state, '', url);
     };
 
     const holds = (provider: ProviderRow, field: string, value: string) => {

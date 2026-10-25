@@ -4,6 +4,8 @@ import '../styles/base.css';
 import '../styles/components.css';
 import { ClientRouter } from 'astro:transitions';
 import GraphFrame from '../components/GraphFrame.astro';
+import arrowLeft from 'bootstrap-icons/icons/arrow-left.svg?raw';
+import arrowRight from 'bootstrap-icons/icons/arrow-right.svg?raw';
 import { outboundLinkAttrs } from '../lib/links';
 import { graph, licenceUrl } from '../lib/seo';
 
@@ -37,6 +39,13 @@ interface Props {
    * rows the filters leave). Read by the graph on every page load.
    */
   graph?: string;
+  /** A line over the graph saying why it shows what it shows, where the page's own subject is not in it. */
+  graphNote?: string;
+  /**
+   * One level up from this page: the link Escape follows and the crumb's last
+   * step. Every page but the register has one; it defaults to the register.
+   */
+  up?: { href: string; label: string };
 }
 
 const {
@@ -49,6 +58,7 @@ const {
   imageAlt = 'A FindSoftware card: the register of software to build websites with.',
   schema,
   graph: graphState = 'all',
+  graphNote,
 } = Astro.props;
 const fathomSiteId = import.meta.env.PUBLIC_FATHOM_SITE_ID;
 
@@ -61,13 +71,11 @@ const indexable = import.meta.env.PUBLIC_INDEXABLE === 'true' && !hidden;
  * wordmark already leads back to; the map is reached from the pages that need
  * it — a nav that lists everything is a nav nobody reads.
  */
-/* Search is a page of its own: the register answers Cmd-F, so a field on every page was weight for little. */
-const sections = [
-  { href: '/search/', label: 'Search' },
-  { href: '/about/', label: 'About' },
-];
+const sections = [{ href: '/about/', label: 'About' }];
 
 const path = Astro.url.pathname;
+// The register is the top; a filtered register goes up to the unfiltered one, which the script decides.
+const up = Astro.props.up ?? { href: '/', label: 'All software' };
 const origin = Astro.site ?? Astro.url;
 const canonical = new URL(path, origin).href;
 
@@ -131,7 +139,33 @@ const structured = schema && graph(new URL(origin).origin, Array.isArray(schema)
           ))
         }
       </nav>
+
+      {
+        /*
+         * Moving about without the mouse: back and forward are the browser's own
+         * history, up is a link one level up. Escape follows it, and the browser's
+         * own back and forward keys still work as ever.
+         */
+      }
+      <nav class="site-moves" aria-label="Move">
+        <button type="button" data-move="back" data-tip="Back">
+          <span class="visually-hidden">Back</span>
+          <Fragment set:html={arrowLeft} />
+        </button>
+        <a href={up.href} rel="up" data-move="up" data-tip={`Up to ${up.label} (Esc)`}>
+          <span class="visually-hidden">Up to {up.label}</span>
+          <span aria-hidden="true">ESC</span>
+        </a>
+        <button type="button" data-move="forward" data-tip="Forward">
+          <span class="visually-hidden">Forward</span>
+          <Fragment set:html={arrowRight} />
+        </button>
+      </nav>
     </header>
+
+    <main data-graph-show={graphState} data-graph-note={graphNote}>
+      <slot />
+    </main>
 
     {
       /*
@@ -140,15 +174,13 @@ const structured = schema && graph(new URL(origin).origin, Array.isArray(schema)
        * also where it stays hidden, because the router only keeps an element
        * the next page has too. Its attributes stay the first page's, so each
        * page says what the graph shows on <main data-graph-show> instead.
+       * After <main> in the source, so Tab reaches the page before the graph;
+       * the stylesheet places it.
        */
     }
     <div class="graph-dock" transition:persist="graph" hidden={graphState === 'off'} data-graph-dock>
       <GraphFrame />
     </div>
-
-    <main data-graph-show={graphState}>
-      <slot />
-    </main>
 
     <footer data-pagefind-ignore>
       <div class="footer-base">
@@ -169,6 +201,10 @@ const structured = schema && graph(new URL(origin).origin, Array.isArray(schema)
              */
           }
           <nav class="footer-nav" aria-label="Elsewhere">
+            {
+              /* Search is a page of its own: the register answers Cmd-F, so a field on every page was weight for little. */
+            }
+            <a href="/search/">Search</a>
             <a href="/about/">About</a>
             <a href="/criteria/">Listing criteria</a>
 
@@ -309,6 +345,45 @@ const structured = schema && graph(new URL(origin).origin, Array.isArray(schema)
         describe();
       };
       document.addEventListener('astro:page-load', wire);
+
+      /*
+       * Back and forward say whether there is anywhere to go, where the browser
+       * can tell (the Navigation API); elsewhere they stay on and do nothing at
+       * either end, as the browser's own buttons would. Up is off on the
+       * unfiltered register, the top.
+       */
+      const navigationApi = (window as { navigation?: { canGoBack: boolean; canGoForward: boolean } }).navigation;
+      const upLink = () => document.querySelector<HTMLAnchorElement>('[data-move="up"]');
+      const atTop = () => location.pathname === '/' && !location.search;
+      const moves = () => {
+        const [back, forward] = ['back', 'forward'].map((move) =>
+          document.querySelector<HTMLButtonElement>(`[data-move="${move}"]`),
+        );
+        if (back) back.disabled = navigationApi ? !navigationApi.canGoBack : false;
+        if (forward) forward.disabled = navigationApi ? !navigationApi.canGoForward : false;
+        const link = upLink();
+        if (link) link.toggleAttribute('aria-disabled', atTop());
+      };
+      document.addEventListener('astro:page-load', moves);
+      // Filtering changes the address in place; up from a filtered register clears it.
+      document.addEventListener('find:results', moves);
+      document.addEventListener('click', (event) => {
+        const move = (event.target as Element).closest<HTMLElement>('[data-move]')?.dataset.move;
+        if (move === 'back') history.back();
+        if (move === 'forward') history.forward();
+        if (move === 'up' && atTop()) event.preventDefault();
+      });
+
+      // Escape goes up, unless something on the page holds it: a field, an open dialog, the graph over the whole screen.
+      document.addEventListener('keydown', (event) => {
+        if (event.key !== 'Escape' || event.defaultPrevented || event.metaKey || event.ctrlKey || event.altKey) return;
+        if ((event.target as Element).closest?.('input, textarea, select, [contenteditable]')) return;
+        if (document.querySelector('dialog[open], .graph.expanded')) return;
+        const link = upLink();
+        if (!link || atTop()) return;
+        event.preventDefault();
+        void navigate(link.href);
+      });
 
       // `/` searches, the way it works everywhere else a developer types: the field on the search page, or that page.
 

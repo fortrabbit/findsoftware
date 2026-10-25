@@ -20,6 +20,7 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean 
 
 <div class="graph" role="region" data-graph aria-label="What each project is built on">
   <div class="graph-canvas" data-graph-canvas></div>
+  <p class="graph-note" data-graph-note hidden></p>
   <div
     class="graph-handle"
     role="separator"
@@ -36,6 +37,11 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean 
       controls.map((control) => (
         <button type="button" value={control.value} data-tip={control.label} aria-pressed={control.pressed}>
           <span class="visually-hidden">{control.label}</span>
+          {control.value === 'collapse' && (
+            <span class="graph-fold-text" aria-hidden="true">
+              Graph
+            </span>
+          )}
           <Fragment set:html={control.icon} />
         </button>
       ))
@@ -67,10 +73,15 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean 
       }));
 
   const stateOf = (page: Document) => page.querySelector<HTMLElement>('main')?.dataset.graphShow ?? 'off';
+  const note = root.querySelector<HTMLElement>('[data-graph-note]')!;
   // Before the swap, not on page-load: the router shows the new page first, and a column decided late reflows it.
-  document.addEventListener('astro:before-swap', (event) => {
-    dock.hidden = broken || stateOf(event.newDocument) === 'off';
-  });
+  const prepare = (page: Document) => {
+    dock.hidden = broken || stateOf(page) === 'off';
+    note.textContent = page.querySelector<HTMLElement>('main')?.dataset.graphNote ?? '';
+    note.hidden = !note.textContent;
+  };
+  prepare(document);
+  document.addEventListener('astro:before-swap', (event) => prepare(event.newDocument));
   document.addEventListener('astro:page-load', () => {
     const state = stateOf(document);
     dock.hidden = broken || state === 'off';
@@ -170,8 +181,12 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean 
     .graph.collapsed {
       height: calc(var(--space-sm) * 2 + 1.75rem);
     }
-    .graph.collapsed .graph-canvas {
+    .graph.collapsed .graph-canvas,
+    .graph.collapsed .graph-note {
       visibility: hidden;
+    }
+    .graph.collapsed .graph-fold-text {
+      display: inline;
     }
     .graph.collapsed .graph-controls button:not([value='collapse']) {
       display: none;
@@ -230,6 +245,26 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean 
     display: none;
   }
   /* On the header's line: the same distance from the top and the right as the nav from the top and the left. */
+  /* Why the graph shows what it shows, where the page's own record is not in it. */
+  .graph-note {
+    position: absolute;
+    bottom: var(--space-md);
+    left: var(--space-md);
+    max-width: calc(100% - 2 * var(--space-md));
+    margin: 0;
+    padding: var(--space-3xs) var(--space-2xs);
+    border: var(--rule-hairline) solid var(--color-ink);
+    background: var(--color-page);
+    font-family: var(--font-data);
+    font-size: var(--text-xs);
+  }
+  /* Folded, the strip says what it holds. */
+  .graph-fold-text {
+    display: none;
+    margin-right: var(--space-2xs);
+    font-family: var(--font-data);
+    font-size: var(--text-xs);
+  }
   .graph-controls {
     position: absolute;
     top: var(--space-md);
@@ -249,33 +284,6 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean 
   .graph-controls button[aria-pressed='true'] {
     background: var(--color-ink);
     color: var(--color-page);
-  }
-  /*
-   * Drawn rather than left to `title`, which waits a second and never shows on
-   * focus. Under the button, right-aligned so the last one stays on the screen.
-   */
-  .graph-controls button {
-    position: relative;
-  }
-  .graph-controls button::after {
-    position: absolute;
-    z-index: 2;
-    top: calc(100% + var(--space-3xs) * 2);
-    right: 0;
-    padding: var(--space-3xs) var(--space-2xs);
-    border: var(--rule-hairline) solid var(--color-ink);
-    background: var(--color-page);
-    color: var(--color-ink);
-    font-family: var(--font-data);
-    font-size: var(--text-xs);
-    white-space: nowrap;
-    content: attr(data-tip);
-    pointer-events: none;
-    visibility: hidden;
-  }
-  .graph-controls button:hover::after,
-  .graph-controls button:focus-visible::after {
-    visibility: visible;
   }
   .graph-controls :global(svg) {
     width: 1em;

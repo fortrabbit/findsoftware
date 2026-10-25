@@ -49,6 +49,8 @@ export default defineConfig({
   site,
   // FindHost runs on Astro's default 4321; both can serve side by side.
   server: { port: 4322 },
+  // A link's page is fetched while the pointer rests on it, so the click swaps at once; the graph's dots do the same.
+  prefetch: { prefetchAll: true, defaultStrategy: 'hover' },
   /*
    * One rule for every address: /categories/paas/ and /fortrabbit/ alike. A page
    * is a page whether it lists things or describes one, and two conventions on

@@ -73,6 +73,7 @@ const here = pairPath({ a, av, b, bv });
 
 <Base
   graph="rows"
+  up={{ href: `${facetIndex(a.id)}${av.slug}/`, label: av.label }}
   title={`${title} — FindSoftware`}
   description={summary}
   markdown={`${here.slice(0, -1)}.md`}

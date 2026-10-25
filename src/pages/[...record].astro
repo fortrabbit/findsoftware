@@ -25,7 +25,7 @@ import { outboundLinkAttrs } from '../lib/links';
 import { modifiedAt, updatedAfterCheck } from '../lib/modified';
 import SocialLinks from '../components/SocialLinks.astro';
 import PageFigure from '../components/PageFigure.astro';
-import { loadGraph } from '../lib/graph-data';
+import { loadGraph, trailOf } from '../lib/graph-data';
 import ProviderLogo from '../components/ProviderLogo.astro';
 import FactGroups from '../components/FactGroups.astro';
 import { findhostRows } from '../lib/findhost';
@@ -170,6 +170,9 @@ const related = backlinks(everyRecord as never, provider.id);
 
 // Every record in the graph; a hidden one is not in it unless something listed is built on it.
 const inGraph = (await loadGraph()).drawn.has(provider.id);
+// What it is built on, language first: the crumb over the title, and where Escape goes.
+const trail = await trailOf({ id: provider.id, basedOn: data.basedOn, language: data.language });
+const up = trail.at(-1);
 
 /*
  * The records most like this one, drawn from the register — never from below it,
@@ -303,13 +306,21 @@ const metaDescription = data.description
   hidden={!listed}
   image={cardPath(provider.id)}
   imageAlt={`A FindSoftware card for ${data.name}.`}
-  graph={inGraph ? `record:${provider.id}` : 'all'}
+  graph={inGraph ? `record:${provider.id}` : up ? `absent:${up.key}` : 'all'}
+  graphNote={inGraph ? undefined : `${data.name} is not in the graph; shown is what it is built on.`}
+  up={up ? { href: up.href, label: up.label } : undefined}
   schema={[
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'FindSoftware', item: `${origin}/` },
-        { '@type': 'ListItem', position: 2, name: data.name },
+        ...trail.map((step, index) => ({
+          '@type': 'ListItem',
+          position: index + 2,
+          name: step.label,
+          item: `${origin}${step.href}`,
+        })),
+        { '@type': 'ListItem', position: trail.length + 2, name: data.name },
       ],
     },
     {
@@ -347,6 +358,18 @@ const metaDescription = data.description
     },
   ]}
 >
+  {
+    trail.length > 0 && (
+      <p class="crumb" data-pagefind-ignore>
+        {trail.map((step, index) => (
+          <>
+            {index > 0 && ' › '}
+            <a href={step.href}>{step.label}</a>
+          </>
+        ))}
+      </p>
+    )
+  }
   <article>
     <div class="record-title">
       <ProviderLogo id={provider.id} class="record-logo" eager />

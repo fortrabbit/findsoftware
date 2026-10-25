@@ -196,10 +196,24 @@ body > footer p {
  * and the content centres in what is left. A page without it gets the old
  * single column back.
  */
+/* The graph comes after <main> in the source; above the page, the order puts it back under the header. */
+body > main,
+body > footer {
+  order: 2;
+}
+
 .graph-dock {
   --graph-height: 20rem;
+  order: 1;
   margin-top: var(--space-xs);
   padding-inline: var(--gutter);
+}
+
+/* On a phone the band leaves the title in the first screen. */
+@media (max-width: 40rem) {
+  .graph-dock {
+    --graph-height: 14rem;
+  }
 }
 
 html:not(.js) .graph-dock {
