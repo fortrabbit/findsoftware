@@ -358,18 +358,17 @@ const metaDescription = data.description
     },
   ]}
 >
-  {
-    trail.length > 0 && (
-      <p class="crumb" data-pagefind-ignore>
-        {trail.map((step, index) => (
-          <>
-            {index > 0 && ' › '}
-            <a href={step.href}>{step.label}</a>
-          </>
-        ))}
-      </p>
-    )
-  }
+  <p class="crumb" data-pagefind-ignore>
+    <a href="/">Home</a>
+    {
+      trail.map((step) => (
+        <>
+          {' › '}
+          <a href={step.href}>{step.label}</a>
+        </>
+      ))
+    }
+  </p>
   <article>
     <div class="record-title">
       <ProviderLogo id={provider.id} class="record-logo" eager />

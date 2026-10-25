@@ -1277,7 +1277,8 @@ html.js [data-find-fallback] {
  * padding sits on main rather than on an empty element here.
  */
 .crumb {
-  margin: var(--space-md) 0 var(--space-2xs);
+  /* The bottom margin is reserved on pages without a crumb too (base.css), so headings line up across pages. */
+  margin: var(--space-md) 0 var(--space-md);
   font-size: var(--text-xs);
   line-height: var(--leading-tight);
 }

@@ -28,6 +28,7 @@ export async function getStaticPaths() {
 const { facet, value, matches } = Astro.props;
 
 const { facets } = await loadFacets();
+const isLanguage = facet.field === 'language';
 
 /* Phrased in fields.yml, beside the field it describes — see subjectOf. */
 const summary = summarise(matches, facets, facet.id, subjectOf(fieldOf.get(facet.field)!, value, matches.length));
@@ -104,8 +105,8 @@ const combined = (await pairsFor(facet.id, value.id)).map((group) => ({
 ---
 
 <Base
-  graph={facet.field === 'language' ? `hub:language:${value.id}` : 'rows'}
-  up={{ href: facetIndex(facet.id), label: facet.label }}
+  graph={isLanguage ? `hub:language:${value.id}` : 'rows'}
+  up={isLanguage ? undefined : { href: facetIndex(facet.id), label: facet.label }}
   title={`${note?.data.title ?? valueTitle(facet.id, value)} — FindSoftware`}
   description={description}
   markdown={`${facetIndex(facet.id)}${value.slug}.md`}
@@ -140,8 +141,23 @@ const combined = (await pairsFor(facet.id, value.id)).map((group) => ({
     faqSchema(questions),
   ]}
 >
-  {/* The parent, and only the parent — the register is the wordmark's job. */}
-  <p class="crumb" data-pagefind-ignore><a href={facetIndex(facet.id)}>{facet.label}</a></p>
+  {
+    /*
+     * Home, then the facet. A language is the top of every record's built-on
+     * chain, so its page sits right under Home, as the records' crumbs have it.
+     */
+  }
+  <p class="crumb" data-pagefind-ignore>
+    <a href="/">Home</a>
+    {
+      !isLanguage && (
+        <>
+          {' › '}
+          <a href={facetIndex(facet.id)}>{facet.label}</a>
+        </>
+      )
+    }
+  </p>
 
   <div class="page-head">
     <h1>{value.label}</h1>

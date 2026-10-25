@@ -59,7 +59,9 @@ const summary = extendDescription(named.length <= 120 ? named : `${title}, in ${
     },
   ]}
 >
-  <p class="crumb" data-pagefind-ignore><a href={`${facetIndex(facet.id)}${value.slug}/`}>{value.label}</a></p>
+  <p class="crumb" data-pagefind-ignore>
+    <a href="/">Home</a> › <a href={`${facetIndex(facet.id)}${value.slug}/`}>{value.label}</a>
+  </p>
 
   <h1>{title}</h1>
 
