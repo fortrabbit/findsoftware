@@ -70,30 +70,6 @@ const lead = shown.slice(0, LEAD);
 const rest = shown.slice(LEAD);
 
 /*
- * Four ways in that the filter panel cannot offer: two values people arrive
- * already looking for, and the two pages that order the register by something
- * the checkboxes have no column for. Editorial, in that somebody chose which
- * four — a shortcut to a page, not a rank, and the register's own order does not
- * know they exist.
- *
- * The value links are read out of the facets rather than typed, so a value whose
- * last record goes loses its shortcut instead of leaving a link to a page the
- * build no longer writes.
- */
-const shortcut = (facetId: string, valueId: string) => {
-  const facet = facets.find((entry) => entry.id === facetId);
-  const value = facet?.values.find((entry) => entry.id === valueId);
-
-  return value && value.count > 0 ? { href: `/${facet!.id}/${value.slug}/`, label: value.label } : undefined;
-};
-
-const quicklinks = [
-  shortcut('license', 'open-source'),
-  shortcut('rendering', 'static'),
-  { href: '/hosted/', label: 'Hosted services' },
-].filter(Boolean) as { href: string; label: string }[];
-
-/*
  * The filter panel, as markup rather than as DOM built in a loop. find.ts used
  * to construct every element here, which put the whole design of the panel
  * inside a script nobody edits for design reasons.
@@ -132,10 +108,6 @@ const quicklinks = [
         </details>
       )
     }
-
-    <nav class="find-quicklinks" aria-label="Shortcuts">
-      {quicklinks.map((link) => <a href={link.href}>{link.label}</a>)}
-    </nav>
   </div>
 
   <script type="application/json" data-find-index set:html={JSON.stringify(index)} is:inline />

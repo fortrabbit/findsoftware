@@ -1205,27 +1205,9 @@ html.js [data-find-fallback] {
   margin-top: var(--space-md);
 }
 
-@container content (min-width: 37.5rem) {
-  .find-more-bar {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-  }
-
-  .find-more-bar > .find-more {
-    grid-area: 1 / 1 / 2 / 3;
-  }
-
-  .find-more-bar > .find-quicklinks {
-    grid-area: 1 / 2 / 2 / 3;
-    align-self: start;
-    justify-self: end;
-  }
-}
-
 /** A way to reach the rest, not a way to fetch them: every value is already in the markup. */
 .find-more > summary {
-  /* As wide as its two words. A block summary spans the row, and the shortcuts
-     lie over the end of it — clicking beside them would open the filters. */
+  /* As wide as its two words, so a click beside them does not open the filters. */
   width: fit-content;
   margin-bottom: var(--space-md);
   font-size: var(--text-sm);
@@ -1233,12 +1215,13 @@ html.js [data-find-fallback] {
   cursor: pointer;
 }
 
-.find-quicklinks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2xs) var(--space-md);
-  font-size: var(--text-sm);
+/* Like a quiet link: ink at rest, link colour and a rule under pointer or keyboard. */
+.find-more > summary:hover,
+.find-more > summary:focus-visible {
+  color: var(--color-link);
+  text-decoration: underline;
 }
+
 
 .find-facet {
   /* Shared with the box below, so the title's count sits over the column of counts inside it. */

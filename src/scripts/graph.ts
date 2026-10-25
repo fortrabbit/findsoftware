@@ -37,7 +37,8 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
       // Inside a focus: what the page is about at full strength, what stands around it fainter, the rest fainter still.
       strong: link,
       context: mix(link, page, 0.3),
-      backdrop: mix(token('--color-hover'), page, 0.6),
+      // From the link colour, not the hover tint: in the dark theme that is near black, and its dots read as holes in the lines.
+      backdrop: mix(link, page, 0.22),
       focusEdge: mix(link, page, 0.45),
       // Contrast follows depth: languages, then hubs on a language, then hubs on a hub; leaves recede.
       tier: { language: ink, root: hub, branch: mix(hub, page, 0.7), leaf: mix(link, page, 0.55) } as Record<
@@ -149,7 +150,7 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
       if (outside(key)) {
         attributes.backdrop = true;
         attributes.color = colors.backdrop;
-        attributes.size = 3;
+        attributes.size = 2.5;
         attributes.forceLabel = false;
         return attributes;
       }
