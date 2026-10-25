@@ -33,40 +33,6 @@
   text-underline-offset: 0.25em;
 }
 
-/* Back, up and forward, on the header's line at its right end. */
-.site-moves {
-  display: flex;
-  gap: var(--space-3xs);
-  margin-left: auto;
-}
-
-.site-moves > * {
-  display: inline-flex;
-  align-items: center;
-  padding: var(--space-3xs) var(--space-2xs);
-  border: var(--rule-hairline) solid var(--color-ink);
-  border-radius: var(--radius);
-  background: var(--color-page);
-  color: var(--color-ink);
-  font: inherit;
-  font-family: var(--font-data);
-  font-size: var(--text-xs);
-  line-height: 1;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.site-moves svg {
-  width: 1em;
-  height: 1em;
-}
-
-.site-moves > :disabled,
-.site-moves > [aria-disabled] {
-  opacity: 0.35;
-  cursor: default;
-}
-
 /*
  * A control's name, drawn under it on hover and on keyboard focus. `title`
  * waits a second and never shows on focus. Right-aligned, so the last control
@@ -1294,13 +1260,23 @@ html.js [data-find-fallback] {
   margin-top: 0;
 }
 
-/* The key that walks the trail, after its last step. */
+/* The key that walks the trail, after its last step, and a link to where it goes. */
 .crumb-key {
   margin-left: var(--space-xs);
+  color: inherit;
+  text-decoration: none;
+}
+
+.crumb-key kbd {
   padding: 0 var(--space-3xs);
   border: var(--rule-hairline) solid var(--color-ink);
   border-radius: var(--radius);
   opacity: 0.6;
+}
+
+.crumb-key:hover kbd,
+.crumb-key:focus-visible kbd {
+  opacity: 1;
 }
 
 /**

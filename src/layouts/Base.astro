@@ -4,8 +4,6 @@ import '../styles/base.css';
 import '../styles/components.css';
 import { ClientRouter } from 'astro:transitions';
 import GraphFrame from '../components/GraphFrame.astro';
-import arrowLeft from 'bootstrap-icons/icons/arrow-left.svg?raw';
-import arrowRight from 'bootstrap-icons/icons/arrow-right.svg?raw';
 import { outboundLinkAttrs } from '../lib/links';
 import { graph, licenceUrl } from '../lib/seo';
 
@@ -139,42 +137,23 @@ const structured = schema && graph(new URL(origin).origin, Array.isArray(schema)
           ))
         }
       </nav>
-
-      {
-        /*
-         * Moving about without the mouse: back and forward are the browser's own
-         * history, up is a link one level up. Escape follows it, and the browser's
-         * own back and forward keys still work as ever.
-         */
-      }
-      <nav class="site-moves" aria-label="Move">
-        <button type="button" data-move="back" data-tip="Back">
-          <span class="visually-hidden">Back</span>
-          <Fragment set:html={arrowLeft} />
-        </button>
-        <a href={up.href} rel="up" data-move="up" data-tip={`Up to ${up.label} (Esc)`}>
-          <span class="visually-hidden">Up to {up.label}</span>
-          <span aria-hidden="true">ESC</span>
-        </a>
-        <button type="button" data-move="forward" data-tip="Forward">
-          <span class="visually-hidden">Forward</span>
-          <Fragment set:html={arrowRight} />
-        </button>
-      </nav>
     </header>
 
     <main data-graph-show={graphState} data-graph-note={graphNote}>
       {
         /*
          * The way up, on every page: a page names its own trail, the rest sit right
-         * under Home. Its last link is where Escape goes, so the key is shown here.
+         * under Home. The Esc key after it links one level up, where Escape goes.
          * The unfiltered register is the top and hides it; the script shows it once
          * a filter is set.
          */
       }
       <nav class="crumb" aria-label="Breadcrumb" data-pagefind-ignore hidden={path === '/'}>
         <slot name="crumb"><a href="/">Home</a></slot>
-        <kbd class="crumb-key" title={`Esc goes up to ${up.label}`}>Esc</kbd>
+        <a class="crumb-key" href={up.href} rel="up" data-move="up" title={`Esc goes up to ${up.label}`}>
+          <span class="visually-hidden">Up to {up.label}</span>
+          <kbd aria-hidden="true">Esc</kbd>
+        </a>
       </nav>
       <slot />
     </main>
@@ -358,21 +337,10 @@ const structured = schema && graph(new URL(origin).origin, Array.isArray(schema)
       };
       document.addEventListener('astro:page-load', wire);
 
-      /*
-       * Back and forward say whether there is anywhere to go, where the browser
-       * can tell (the Navigation API); elsewhere they stay on and do nothing at
-       * either end, as the browser's own buttons would. Up is off on the
-       * unfiltered register, the top.
-       */
-      const navigationApi = (window as { navigation?: { canGoBack: boolean; canGoForward: boolean } }).navigation;
+      // Up is off on the unfiltered register, the top.
       const upLink = () => document.querySelector<HTMLAnchorElement>('[data-move="up"]');
       const atTop = () => location.pathname === '/' && !location.search;
       const moves = () => {
-        const [back, forward] = ['back', 'forward'].map((move) =>
-          document.querySelector<HTMLButtonElement>(`[data-move="${move}"]`),
-        );
-        if (back) back.disabled = navigationApi ? !navigationApi.canGoBack : false;
-        if (forward) forward.disabled = navigationApi ? !navigationApi.canGoForward : false;
         const link = upLink();
         if (link) {
           link.toggleAttribute('aria-disabled', atTop());
@@ -384,10 +352,7 @@ const structured = schema && graph(new URL(origin).origin, Array.isArray(schema)
       // Filtering changes the address in place; up from a filtered register clears it.
       document.addEventListener('find:results', moves);
       document.addEventListener('click', (event) => {
-        const move = (event.target as Element).closest<HTMLElement>('[data-move]')?.dataset.move;
-        if (move === 'back') history.back();
-        if (move === 'forward') history.forward();
-        if (move === 'up' && atTop()) event.preventDefault();
+        if ((event.target as Element).closest('[data-move="up"]') && atTop()) event.preventDefault();
       });
 
       // Escape goes up, unless something on the page holds it: a field, an open dialog, the graph over the whole screen.
