@@ -11,6 +11,7 @@ status: stub
 maintainer: John Sundell
 maintainerType: individual
 firstRelease: 2019
+language: swift
 runtime:
   - binary
 hosting:
@@ -41,6 +42,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/JohnSundell/Publish/master/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/JohnSundell/Publish
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/JohnSundell/Publish/blob/master/README.md
@@ -94,6 +98,8 @@ sources:
     url: https://api.github.com/repos/JohnSundell/Publish/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Publish is a static site generator for Swift developers, in which each website is a Swift package and its configuration, content and publishing pipeline are written as Swift code. By default it reads Markdown files from a `Content` folder, and extra items and pages can be added in code. HTML is rendered through Plot, a Swift library for HTML, so themes are written in Swift against it. The build produces static files, and the command line tool can start a localhost server for local testing and development. Built-in deployment methods publish the output to Git and GitHub.

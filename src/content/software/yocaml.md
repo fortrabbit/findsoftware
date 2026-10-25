@@ -13,6 +13,7 @@ status: active
 maintainer: The XHTMLBoy
 maintainerType: individual
 firstRelease: 2023
+language: other
 hosting:
   - static
 runsAs:
@@ -40,6 +41,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/xhtmlboi/yocaml/main/yocaml.opam
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/xhtmlboi/yocaml
     checkedAt: 2026-10-23
   - field: category
     url: https://raw.githubusercontent.com/xhtmlboi/yocaml/main/README.md
@@ -78,6 +82,8 @@ sources:
     url: https://api.github.com/repos/xhtmlboi/yocaml/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 YOCaml is a framework for building static site generators, written in OCaml. A site built with it is an OCaml program that describes how its pages are produced.

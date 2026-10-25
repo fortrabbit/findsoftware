@@ -4,6 +4,11 @@ status: accepted
 checkedAt: 2026-10-23
 description: Command-line blog compiler that turns source files and templates into website resources, designed to be driven by make.
 facts:
+  - field: language
+    value: C
+    url: https://api.github.com/repos/blogc/blogc
+    checkedAt: 2026-10-25
+    via: api
   - field: homepage
     value: https://blogc.rgm.io/
     url: https://blogc.rgm.io/
@@ -105,7 +110,7 @@ facts:
     url: https://api.github.com/repos/blogc/blogc/contributors
     checkedAt: 2026-10-23
     via: api
-notFound: [language, runtime, runtimeMin, buildCommand, renderingModes, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, pricingPage, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, outputDir, maintainerType]
+notFound: [runtime, runtimeMin, buildCommand, renderingModes, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, pricingPage, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, outputDir, maintainerType]
 unreadable: []
 notes: >
-  The homepage says blogc is "a standard autotools project" built with "./configure && make && make install", while the current README (main branch) gives a CMake build; the record uses the README. The homepage's imprint link (/imprint/) returns 404, so no legal form is stated for the maintainer and the name comes from the LICENSE copyright line. The oldest release entry is v0.1-beta.1 (2015-08-18, a prerelease); the oldest stable release is v0.1 (2015-09-16) and the highest stable is v0.20.1. The implementation language is not stated on the pages read (the homepage says only that the name has nothing to do with the language), so language is not recorded; the homepage says blogc depends only on a libc. runsAs static rests on the blogc-git-receiver manual: it rebuilds a site on push and links the built files as the web server's document root. The tool is a per-file compiler: the homepage says it builds one file at once and knows nothing about the other files of a blog, and that blogc-make can turn it into a blogging engine suitable for most users. blogc comes with its own markup language (blogc-source) and template engine, similar to but not the same as Markdown; both are coined, not recorded as fields. The homepage says the example repository uses GNU Make.
+  The homepage says blogc is "a standard autotools project" built with "./configure && make && make install", while the current README (main branch) gives a CMake build; the record uses the README. The homepage's imprint link (/imprint/) returns 404, so no legal form is stated for the maintainer and the name comes from the LICENSE copyright line. The oldest release entry is v0.1-beta.1 (2015-08-18, a prerelease); the oldest stable release is v0.1 (2015-09-16) and the highest stable is v0.20.1. The pages read do not state the implementation language, so language comes from the GitHub API, which reads C; the homepage says blogc depends only on a libc. runsAs static rests on the blogc-git-receiver manual: it rebuilds a site on push and links the built files as the web server's document root. The tool is a per-file compiler: the homepage says it builds one file at once and knows nothing about the other files of a blog, and that blogc-make can turn it into a blogging engine suitable for most users. blogc comes with its own markup language (blogc-source) and template engine, similar to but not the same as Markdown; both are coined, not recorded as fields. The homepage says the example repository uses GNU Make.

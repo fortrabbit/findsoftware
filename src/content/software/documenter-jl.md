@@ -12,6 +12,7 @@ status: active
 maintainer: Michael Hatherly, Morten Piibeleht, Fredrik Ekre, and Documenter.jl contributors
 maintainerType: community
 firstRelease: 2016
+language: other
 hosting:
   - static
 runsAs:
@@ -39,6 +40,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/JuliaDocs/Documenter.jl/master/LICENSE.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://documenter.juliadocs.org/stable/
     checkedAt: 2026-10-23
   - field: category
     url: https://documenter.juliadocs.org/stable/
@@ -71,6 +75,8 @@ sources:
     url: https://api.github.com/repos/JuliaDocs/Documenter.jl/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Documenter.jl is a documentation generator for Julia. It combines Markdown files with the docstrings of a Julia package into one inter-linked document, runs the Julia code blocks in the documentation as doctests, resolves cross references and checks for missing docstrings.

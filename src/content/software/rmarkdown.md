@@ -12,6 +12,7 @@ description: R package that renders R Markdown documents, which combine code, it
 status: active
 maintainer: Posit Software, PBC
 firstRelease: 2014
+language: r
 runsAs:
   - always-on
   - local
@@ -38,6 +39,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/rstudio/rmarkdown/main/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/rstudio/rmarkdown
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/rstudio/rmarkdown/blob/main/README.md
@@ -76,6 +80,8 @@ sources:
     url: https://github.com/rstudio/rmarkdown/blob/main/README.md
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 R Markdown is an R package that renders documents combining code, its output and prose. The package's homepage lists HTML, PDF, Word, slides, dashboards and websites among its output formats.

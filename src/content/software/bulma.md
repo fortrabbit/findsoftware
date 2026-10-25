@@ -12,6 +12,7 @@ status: active
 maintainer: Jeremy Thomas
 maintainerType: individual
 firstRelease: 2016
+language: css
 installMethod: cdn, github-release-zip, sass
 licenseModel: open-source
 license: MIT
@@ -42,6 +43,9 @@ sources:
     checkedAt: 2026-10-19
   - field: maintainerType
     url: https://registry.npmjs.org/bulma
+    checkedAt: 2026-10-19
+  - field: language
+    url: https://github.com/jgthms/bulma
     checkedAt: 2026-10-19
   - field: category
     url: https://bulma.io/
@@ -80,6 +84,7 @@ i18n: null
 renderingModes: null
 hosting: null
 runtimeMin: null
+packagistDownloads: null
 ---
 
 Bulma is a CSS framework built on Flexbox that provides ready-to-use frontend components. The stylesheet comes from a CDN, a release archive or as Sass source, so a project can load the compiled CSS or compile its own from the source. Jeremy Thomas, an individual, maintains it.

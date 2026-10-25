@@ -4,6 +4,11 @@ status: accepted
 checkedAt: 2026-10-22
 description: File-based router for universal React Native apps that run on Android, iOS and the web, part of the open-source Expo platform.
 facts:
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/expo/expo
+    checkedAt: 2026-10-25
+    via: api
   - field: homepage
     value: https://expo.dev/router
     url: https://expo.dev/router
@@ -114,7 +119,7 @@ facts:
     url: https://api.npmjs.org/downloads/point/last-week/expo-router
     checkedAt: 2026-10-22
     via: api
-notFound: [firstRelease, language, runtimeMin, githubStargazers, contributors, maintainerType, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, starters, forum, discord, mastodon, newsletter, endoflifeId, buildCommand, outputDir, deployTargets, x, bluesky, subreddit]
+notFound: [firstRelease, runtimeMin, githubStargazers, contributors, maintainerType, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, starters, forum, discord, mastodon, newsletter, endoflifeId, buildCommand, outputDir, deployTargets, x, bluesky, subreddit]
 unreadable: []
 notes: >
   The record is Expo Router. The repository is the Expo monorepo (SDK, CLI, Modules API, Router, documentation) and the router lives in its packages/expo-router directory, so repository stars and contributors, which describe the whole monorepo, are not recorded, and neither is the Node requirement of the expo package. The registry figures come from the expo-router package, which the router install page names. The router docs are on docs.expo.dev and the router has its own page on expo.dev. The EAS Hosting introduction calls it "a service for quickly deploying web projects built using the Expo Router library and React Native web"; its plans are not recorded. The expo-router package publishes no engines field, so runtimeMin is unknown. The router introduction also calls it a routing library "built with Expo", which is not recorded as basedOn.

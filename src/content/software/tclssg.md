@@ -10,6 +10,7 @@ description: Static site generator for Tcl programmers, with Markdown pages, an 
 status: active
 maintainer: D. Bohdan
 firstRelease: 2014
+language: other
 hosting:
   - static
 databases:
@@ -40,6 +41,9 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/tclssg/tclssg/blob/master/README.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/tclssg/tclssg
     checkedAt: 2026-10-23
   - field: databases
     url: https://github.com/tclssg/tclssg/blob/master/README.md
@@ -81,6 +85,8 @@ sources:
     url: https://api.github.com/repos/tclssg/tclssg/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Tclssg is a static site generator for Tcl programmers, with Markdown pages, an optional blog and Tcl code embedded in HTML templates. It is run from a cloned copy of its repository with the `ssg.tcl` script. The README lists feeds in RSS, JSON Feed and twtxt formats, and deployment over SCP, over FTP or with a custom deployment command described in the [project wiki](https://github.com/tclssg/tclssg/wiki). The README also states that the HTML output is browsable over file://.

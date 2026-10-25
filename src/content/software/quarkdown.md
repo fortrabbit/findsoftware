@@ -12,6 +12,7 @@ status: active
 maintainer: Giorgio Garofalo
 maintainerType: individual
 firstRelease: 2025
+language: other
 runtime:
   - jvm
 hosting:
@@ -41,6 +42,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://quarkdown.com/
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/iamgio/quarkdown
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/iamgio/quarkdown/blob/main/README.md
@@ -82,6 +86,8 @@ sources:
     url: https://api.github.com/repos/iamgio/quarkdown/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Quarkdown is a Markdown-based typesetting system that compiles one source into papers, presentations, knowledge bases and static websites. It writes HTML, PDF, Markdown and plain text. The compiler is written in Kotlin and runs on the JVM, and the release archives bundle a Java runtime.

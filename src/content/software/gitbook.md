@@ -12,6 +12,7 @@ description: Command-line tool and Node.js library that builds books and static 
 status: discontinued
 maintainer: GitBook INC.
 firstRelease: 2014
+language: javascript
 runtime:
   - node
 hosting:
@@ -35,6 +36,9 @@ social:
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
+  - field: language
+    url: https://api.github.com/repos/GitbookIO/gitbook
+    checkedAt: 2026-10-25
   - field: status
     url: https://raw.githubusercontent.com/GitbookIO/gitbook/legacy/README.md
     checkedAt: 2026-10-22
@@ -105,6 +109,7 @@ sources:
     url: https://www.gitbook.com/pricing
     checkedAt: 2026-10-22
 ai: authored
+packagistDownloads: null
 ---
 
 GitBook (legacy CLI) is a command-line tool and Node.js library for building books and static websites from Markdown or AsciiDoc. It is installed with npm as `gitbook-cli`, and a book is built with `gitbook build` on the developer's machine. The output is static files that any web space can serve.

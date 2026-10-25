@@ -12,6 +12,7 @@ status: stub
 maintainer: Denis Kalinin
 maintainerType: individual
 firstRelease: 2016
+language: scala
 runtime:
   - jvm
 hosting:
@@ -47,6 +48,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/denisftw/s2gen/master/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/denisftw/s2gen
     checkedAt: 2026-10-23
   - field: runtime
     url: https://github.com/denisftw/s2gen/blob/master/README.md
@@ -100,6 +104,8 @@ sources:
     url: https://api.github.com/repos/denisftw/s2gen/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 s2gen is a static site generator written in Scala. It reads content written in Markdown, renders it with Freemarker templates, and writes HTML files to a site directory, and it can build localized versions of a site alongside the default one. In monitor mode it watches for file changes and serves the generated files from an embedded web server, which the README describes as enough for testing.

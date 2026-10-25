@@ -12,6 +12,7 @@ status: active
 maintainer: Binary Birds Ltd.
 maintainerType: company
 firstRelease: 2024
+language: swift
 runtime:
   - binary
 hosting:
@@ -43,6 +44,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://github.com/toucansites/toucan/blob/main/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/toucansites/toucan
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/toucansites/toucan/blob/main/README.md
@@ -96,6 +100,8 @@ sources:
     url: https://api.github.com/repos/toucansites/toucan/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Toucan is a static site generator written in Swift. It reads Markdown content and Mustache templates from a project folder and builds every page at build time, and the generated files can be hosted on a file server. Besides generating a site, the command line has `watch` and `serve` subcommands for rebuilding and previewing. The docs describe locale and time zone settings for multi-language sites. Binary Birds maintains the project, and the project's own website is generated with Toucan.

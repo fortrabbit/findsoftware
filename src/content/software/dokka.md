@@ -11,6 +11,7 @@ description: API documentation engine for Kotlin that also documents Java source
 status: active
 maintainer: JetBrains
 firstRelease: 2015
+language: other
 installMethod: Gradle plugin
 licenseModel: open-source
 license: Apache-2.0
@@ -31,6 +32,9 @@ sources:
     url: https://raw.githubusercontent.com/Kotlin/dokka/master/README.md
     checkedAt: 2026-10-23
   - field: maintainer
+    url: https://raw.githubusercontent.com/Kotlin/dokka/master/README.md
+    checkedAt: 2026-10-23
+  - field: language
     url: https://raw.githubusercontent.com/Kotlin/dokka/master/README.md
     checkedAt: 2026-10-23
   - field: category
@@ -67,6 +71,8 @@ sources:
     url: https://api.github.com/repos/Kotlin/dokka/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Dokka is an API documentation engine for Kotlin. It reads Kotlin's KDoc comments and Java's Javadoc comments, so mixed-language projects can be documented in one build. It writes its own HTML format, Javadoc HTML and several flavors of Markdown.

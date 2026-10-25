@@ -11,6 +11,7 @@ status: discontinued
 maintainer: shopware AG
 maintainerType: company
 firstRelease: 2015
+language: php
 runtime:
   - php
 hosting:
@@ -32,6 +33,9 @@ social:
 addedAt: 2026-10-24
 checkedAt: 2026-10-24
 sources:
+  - field: language
+    url: https://api.github.com/repos/shopware5/shopware
+    checkedAt: 2026-10-25
   - field: name
     url: https://github.com/shopware5/shopware/blob/5.7/README.md
     checkedAt: 2026-10-24
@@ -93,6 +97,7 @@ sources:
     url: https://packagist.org/packages/shopware/shopware.json
     checkedAt: 2026-10-24
 ai: authored
+npmWeeklyDownloads: null
 ---
 
 Shopware 5 is open-source e-commerce software from shopware AG with an event-driven plugin system and a backend at /backend. Its README names Symfony, Doctrine and Zend Framework as technologies it is based on. It runs on PHP with a MySQL database, and its README describes installation by cloning the repository from Git.

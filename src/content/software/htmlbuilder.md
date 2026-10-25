@@ -11,6 +11,7 @@ status: active
 maintainer: Artyom Nazarov
 maintainerType: individual
 firstRelease: 2026
+language: other
 runtime:
   - binary
 hosting:
@@ -39,6 +40,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://github.com/ArtNazarov/HtmlBuilder/blob/master/LICENSE.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/ArtNazarov/HtmlBuilder
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/ArtNazarov/HtmlBuilder/blob/master/README.md
@@ -83,6 +87,8 @@ sources:
     url: https://api.github.com/repos/ArtNazarov/HtmlBuilder/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 HtmlBuilder is a generator of static HTML websites written in FreePascal and Lazarus. Its engine keeps content in an SQLite database. The README also describes a menu constructor, a built-in web server, and an Ollama client, and a way to commit the output to GitHub Pages. Translations cover English, Spanish, Chinese and Korean.

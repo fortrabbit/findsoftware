@@ -10,6 +10,7 @@ description: Scala static blog generator that renders GitHub-flavored Markdown p
 status: stub
 maintainerType: individual
 firstRelease: 2015
+language: scala
 runtime:
   - jvm
 hosting:
@@ -33,6 +34,9 @@ sources:
     url: https://api.github.com/repos/padurean/scalatic
     checkedAt: 2026-10-23
   - field: urls
+    url: https://github.com/padurean/scalatic/blob/master/README.md
+    checkedAt: 2026-10-23
+  - field: language
     url: https://github.com/padurean/scalatic/blob/master/README.md
     checkedAt: 2026-10-23
   - field: runtime
@@ -78,6 +82,8 @@ sources:
     url: https://api.github.com/repos/padurean/scalatic/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Scalatic is a static blog generator written in Scala. It renders each Markdown post to HTML by calling the GitHub API, so a build needs network access to GitHub. The generated blog is written to a target folder inside the blog's folder structure. It runs on the JVM, either from the single jar on the release page or from a clone with sbt.

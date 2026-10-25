@@ -12,6 +12,7 @@ status: stub
 maintainer: Sridhar Ratnakumar
 maintainerType: individual
 firstRelease: 2020
+language: haskell
 hosting:
   - static
 contentStore:
@@ -41,6 +42,9 @@ sources:
     checkedAt: 2026-10-23
   - field: urls
     url: https://neuron.zettel.page/install
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/srid/neuron
     checkedAt: 2026-10-23
   - field: category
     url: https://neuron.zettel.page/
@@ -88,6 +92,8 @@ sources:
     url: https://hackage.haskell.org/package/neuron
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 neuron is a Haskell app for managing plain-text notes in Zettelkasten style, which it can also publish as a static site. The README describes a directory of markdown files, linking syntax, hierarchical tagging and editor integrations. The gen command generates and serves the static site, and the README points to a template repository for publishing with GitHub Pages.

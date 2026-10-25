@@ -10,6 +10,7 @@ status: discontinued
 maintainer: Hashobject Ltd
 maintainerType: company
 firstRelease: 2016
+language: clojure
 runsAs:
   - local
 renderingModes:
@@ -32,6 +33,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/hashobject/perun/master/README.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/hashobject/perun
     checkedAt: 2026-10-23
   - field: category
     url: https://raw.githubusercontent.com/hashobject/perun/master/README.md
@@ -67,6 +71,8 @@ sources:
     url: https://api.github.com/repos/hashobject/perun/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Perun is a static site generator written in Clojure and built on the Boot build tool. It is added to a Boot project as a dependency, and it works as a collection of Boot tasks that are chained together to turn Markdown files into a static site.

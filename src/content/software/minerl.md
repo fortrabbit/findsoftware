@@ -11,6 +11,7 @@ status: stub
 maintainer: neevek
 maintainerType: individual
 firstRelease: 2013
+language: perl
 contentStore:
   - flat-file
 templating: html-template
@@ -36,6 +37,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://github.com/neevek/minerl/blob/master/README.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/neevek/minerl
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/neevek/minerl/blob/master/README.md
@@ -77,6 +81,8 @@ sources:
     url: https://api.github.com/repos/neevek/minerl
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 minerl is a blog-aware static site generator written in Perl. Pages, templates and resource files are plain files in a site directory, templates expand variables with HTML::Template, and the README describes tag pages, archives by month and template inheritance through a layout header.

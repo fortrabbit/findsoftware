@@ -9,6 +9,7 @@ category:
 description: Scala static website generator that builds pages from HAML, Markdown and other layout and content files.
 status: stub
 maintainerType: individual
+language: scala
 runtime:
   - jvm
 contentStore:
@@ -31,6 +32,9 @@ sources:
     checkedAt: 2026-10-23
   - field: urls
     url: https://github.com/wspringer/monkeyman/blob/master/README.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/wspringer/monkeyman
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/wspringer/monkeyman/blob/master/README.md
@@ -66,6 +70,8 @@ sources:
     url: https://github.com/wspringer/monkeyman/blob/master/README.md
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Monkeyman is a Scala static web site generator that builds a site from source and layout directories and serves a live preview while files change. Layouts are written in HAML, Jade, SSP or Mustache, and content files carry YAML front matter.

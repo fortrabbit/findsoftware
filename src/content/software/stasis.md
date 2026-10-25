@@ -11,6 +11,7 @@ status: active
 maintainer: Magnar Sveen
 maintainerType: individual
 firstRelease: 2014
+language: clojure
 hosting:
   - static
 runsAs:
@@ -35,6 +36,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://github.com/magnars/stasis/blob/master/README.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/magnars/stasis
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/magnars/stasis/blob/master/README.md
@@ -82,6 +86,8 @@ adminUi: null
 headlessApi: null
 templating: null
 i18n: null
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Stasis is a Clojure library of functions for building static websites, not a generator. The README says it has no batteries included: it serves pages locally while the developer works and exports the same pages as static pages to deploy on a server. The site's own code supplies the pages.

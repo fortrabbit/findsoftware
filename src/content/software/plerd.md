@@ -12,6 +12,7 @@ status: active
 maintainer: Jason McIntosh
 maintainerType: individual
 firstRelease: 2015
+language: perl
 hosting:
   - static
 contentStore:
@@ -43,6 +44,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://jmac.org/plerd/
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/jmacdotorg/plerd
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/jmacdotorg/plerd/blob/master/README.md
@@ -87,6 +91,8 @@ sources:
     url: https://api.github.com/repos/jmacdotorg/plerd/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Plerd is a blogging platform that builds a static website from a folder of Markdown files, using Template Toolkit templates for its pages. The `plerdall` program builds the whole site on demand, and `plerdwatcher` is a daemon that monitors the source folder and republishes whatever changed.

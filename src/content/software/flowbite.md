@@ -13,6 +13,7 @@ status: active
 maintainer: Bergside Inc.
 maintainerType: company
 firstRelease: 2022
+language: css
 runtime:
   - node
 basedOn:
@@ -50,6 +51,9 @@ sources:
     checkedAt: 2026-10-19
   - field: maintainerType
     url: https://registry.npmjs.org/flowbite
+    checkedAt: 2026-10-19
+  - field: language
+    url: https://github.com/themesberg/flowbite
     checkedAt: 2026-10-19
   - field: category
     url: https://flowbite.com/docs/getting-started/quickstart/
@@ -97,6 +101,7 @@ i18n: null
 renderingModes: null
 hosting: null
 runtimeMin: null
+packagistDownloads: null
 ---
 
 Flowbite is a component library built on the utility classes of Tailwind CSS and works as a Tailwind plugin. Its components are HTML markup styled with Tailwind classes, and a JavaScript file drives the interactive ones. Bergside Inc. publishes the package, and the source lives in the themesberg organization on GitHub.

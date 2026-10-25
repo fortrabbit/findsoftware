@@ -11,6 +11,7 @@ description: R package that builds blogs and websites from R Markdown files, usi
 status: active
 maintainer: Yihui Xie
 firstRelease: 2017
+language: r
 hosting:
   - static
 contentStore:
@@ -42,6 +43,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://cran.r-project.org/web/packages/blogdown/index.html
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/rstudio/blogdown
     checkedAt: 2026-10-23
   - field: category
     url: https://raw.githubusercontent.com/rstudio/blogdown/main/DESCRIPTION
@@ -83,6 +87,8 @@ sources:
     url: https://api.github.com/repos/rstudio/blogdown/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 blogdown is an R package that builds websites and blogs from R Markdown files. The package supports the Hugo static site generator best and uses it by default, and it also supports Jekyll and Hexo. It produces a website that consists of static files. The package is installed from CRAN, and the [blogdown book](https://pkg.yihui.org/blogdown/) describes the output in its introduction.

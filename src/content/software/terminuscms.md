@@ -11,6 +11,7 @@ description: Open-source knowledge graph database with git-like version control,
 status: active
 maintainer: Gettier
 firstRelease: 2019
+language: other
 headlessApi:
   - rest
   - graphql
@@ -39,6 +40,9 @@ sources:
     checkedAt: 2026-10-23
   - field: firstRelease
     url: https://api.github.com/repos/terminusdb/terminusdb/releases
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/terminusdb/terminusdb
     checkedAt: 2026-10-23
   - field: headlessApi
     url: https://raw.githubusercontent.com/terminusdb/terminusdb/main/README.md
@@ -89,6 +93,8 @@ adminUi: null
 templating: null
 i18n: null
 renderingModes: null
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 TerminusDB is a knowledge graph database that stores JSON documents as graph structures and records every change as an immutable commit, so its history can be branched, merged, diffed and queried by time. The server runs in a Docker container and exposes REST, GraphQL and WOQL interfaces. Gettier maintains the project, which is also offered as a managed service and as an Enterprise edition.

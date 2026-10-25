@@ -10,6 +10,7 @@ description: API-first WordPress CMS for developers and content creators.
 status: discontinued
 maintainer: rooftopcms
 firstRelease: 2015
+language: ruby
 basedOn:
   - wordpress
 licenseModel: open-source
@@ -21,6 +22,9 @@ contributors: 4
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
+  - field: language
+    url: https://api.github.com/repos/rooftopcms/rooftop-cms
+    checkedAt: 2026-10-25
   - field: status
     url: https://github.com/rooftopcms/rooftop-cms/blob/master/README.md
     checkedAt: 2026-10-23
@@ -61,6 +65,8 @@ sources:
     url: https://api.github.com/repos/rooftopcms/rooftop-cms
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Rooftop CMS is a WordPress-based CMS that its repository describes as API-first. The README says the project is no longer supported or maintained and suggests the WP REST API or WP-GraphQL plugins instead.

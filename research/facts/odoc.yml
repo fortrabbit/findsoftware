@@ -4,6 +4,11 @@ status: accepted
 checkedAt: 2026-10-23
 description: Documentation generator for OCaml that reads doc comments and produces HTML, LaTeX and man pages.
 facts:
+  - field: language
+    value: OCaml
+    url: https://api.github.com/repos/ocaml/odoc
+    checkedAt: 2026-10-25
+    via: api
   - field: homepage
     value: https://ocaml.github.io/odoc/
     url: https://ocaml.github.io/odoc/
@@ -93,12 +98,12 @@ facts:
     url: https://api.github.com/repos/ocaml/odoc/contributors?per_page=1
     checkedAt: 2026-10-23
     via: api
-notFound: [language, runsAs, pricingPage, hqCountry, parent, wikidata, discord, mastodon, bluesky, x, subreddit, newsletter, pluginDirectory, forkOf, successorOf, basedOn, runtime, runtimeMin, renderingModes]
+notFound: [runsAs, pricingPage, hqCountry, parent, wikidata, discord, mastodon, bluesky, x, subreddit, newsletter, pluginDirectory, forkOf, successorOf, basedOn, runtime, runtimeMin, renderingModes]
 unreadable: []
 notes: >
   The highest stable GitHub release is 3.2.1; the tag 3.0.0_beta1 is a beta and is not counted.
   The odoc suite page lists odoc-md, Sherlodoc, odoc-driver and odoc-parser as sibling packages in the same distribution; they are not separate records.
   The install page names opam as the installer, and no page states the minimum OCaml version, so runtime and runtimeMin are not recorded.
-  The LICENSE file names the copyright holders Thomas Refis, Leo White and David Sheets, who are recorded as maintainer; odoc.opam lists Daniel Bünzli, Jon Ludlam, Jules Aguillon and Paul-Elliot Anglès d'Auriac under maintainer. The README says Jane Street and Tarides funded the ongoing development. The GitHub language field reads OCaml, which no page states, so language is not recorded. The README states no run location, so runsAs is not recorded. The odoc.opam file on master restricts the OCaml version to a range for the development version, so runtimeMin is not recorded.
+  The LICENSE file names the copyright holders Thomas Refis, Leo White and David Sheets, who are recorded as maintainer; odoc.opam lists Daniel Bünzli, Jon Ludlam, Jules Aguillon and Paul-Elliot Anglès d'Auriac under maintainer. The README says Jane Street and Tarides funded the ongoing development. The language comes from the GitHub API, which reads OCaml, since no page states it. The README states no run location, so runsAs is not recorded. The odoc.opam file on master restricts the OCaml version to a range for the development version, so runtimeMin is not recorded.
   GitHub's license detection reads NOASSERTION, so the license comes from the README statement.
   The homepage is served over https.

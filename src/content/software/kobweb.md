@@ -12,6 +12,7 @@ description: Kotlin framework for building static or full stack websites and web
 status: active
 maintainer: Varabyte
 firstRelease: 2021
+language: other
 runtime:
   - jvm
 hosting:
@@ -45,6 +46,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://kobweb.varabyte.com/docs/getting-started/getting-kobweb
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/varabyte/kobweb
     checkedAt: 2026-10-23
   - field: category
     url: https://kobweb.varabyte.com/docs
@@ -86,6 +90,8 @@ sources:
     url: https://kobweb.varabyte.com/docs/concepts/foundation/exporting
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Kobweb is a Kotlin framework for websites and web apps, built on top of Compose HTML. The export step takes a snapshot of every page, so a crawler that does not run JavaScript still reads HTML. A site can be exported as a static layout of files for a static hosting provider, or built as a full stack site with a server on a JVM target. The Kobweb command-line tool drives the build through Gradle and is installed with Homebrew, Nix, Scoop, SDKMAN or a binary download. Export runs a headless browser, which it can download on the first export unless a local one is configured.

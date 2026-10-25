@@ -13,6 +13,7 @@ status: active
 maintainer: Dillon Kearns
 maintainerType: individual
 firstRelease: 2019
+language: other
 runtime:
   - node
 hosting:
@@ -51,6 +52,9 @@ sources:
   - field: category
     url: https://elm-pages.com
     checkedAt: 2026-10-21
+  - field: language
+    url: https://api.github.com/repos/dillonkearns/elm-pages
+    checkedAt: 2026-10-21
   - field: runtime
     url: https://elm-pages.com/docs/getting-started
     checkedAt: 2026-10-21
@@ -82,6 +86,7 @@ sources:
     url: https://api.npmjs.org/downloads/point/last-week/elm-pages
     checkedAt: 2026-10-21
 ai: authored
+packagistDownloads: null
 ---
 
 elm-pages is a framework for building sites and web apps in Elm. Each route is either server-rendered, for content that depends on the request, or pre-rendered to static HTML at build time, and one app can mix both. A project is created with `npx elm-pages init`, as the [getting-started guide](https://elm-pages.com/docs/getting-started) describes.

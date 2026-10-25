@@ -11,6 +11,7 @@ description: Drop-in collection of CSS styles that styles plain HTML elements wi
 status: stub
 maintainer: Kognise
 maintainerType: individual
+language: css
 runsAs:
   - static
   - browser
@@ -41,6 +42,9 @@ sources:
     checkedAt: 2026-10-19
   - field: category
     url: https://watercss.kognise.dev
+    checkedAt: 2026-10-19
+  - field: language
+    url: https://api.github.com/repos/kognise/water.css
     checkedAt: 2026-10-19
   - field: runsAs
     url: https://watercss.kognise.dev
@@ -76,6 +80,7 @@ i18n: null
 renderingModes: null
 hosting: null
 runtimeMin: null
+packagistDownloads: null
 ---
 
 Water.css is a CSS stylesheet that styles plain HTML elements, so a page needs no classes for it. A page loads it with a link tag in the head of the HTML. The stylesheet runs in the visitor's browser, and the site serves it like any other static file.

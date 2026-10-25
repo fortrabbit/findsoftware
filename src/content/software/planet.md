@@ -12,6 +12,7 @@ status: active
 maintainer: Planetable Development Team
 maintainerType: community
 firstRelease: 2022
+language: swift
 installMethod: Download for Mac
 licenseModel: open-source
 license: MIT
@@ -33,6 +34,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/Planetable/Planet/main/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/Planetable/Planet
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/Planetable/Planet/blob/main/README.md
@@ -65,6 +69,8 @@ sources:
     url: https://api.github.com/repos/Planetable/Planet/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Planet is a native macOS app, written in Swift, for building websites and blogs on a Mac and publishing them to IPFS. Its homepage offers a download for Mac, and the source code can also be built by the user.

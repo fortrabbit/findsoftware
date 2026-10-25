@@ -11,6 +11,7 @@ description: R package that provides the Distill format for R Markdown, for arti
 status: active
 maintainer: Posit Software, PBC
 firstRelease: 2019
+language: r
 installMethod: install.packages from CRAN
 licenseModel: open-source
 license: Apache-2.0
@@ -31,6 +32,9 @@ sources:
     checkedAt: 2026-10-23
   - field: urls
     url: https://github.com/rstudio/distill/blob/main/README.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://github.com/rstudio/distill/blob/main/DESCRIPTION
     checkedAt: 2026-10-23
   - field: category
     url: https://rstudio.github.io/distill/
@@ -60,6 +64,8 @@ sources:
     url: https://cran.r-project.org/src/contrib/Archive/distill/
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 distill is an R package that provides the Distill format for R Markdown, a web publishing format for scientific and technical articles. It combines the authoring features of the Distill web framework with R Markdown, and articles can be gathered into a Distill website or blog. The package is installed from CRAN.

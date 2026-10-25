@@ -12,6 +12,7 @@ status: active
 maintainer: Sridhar Ratnakumar
 maintainerType: individual
 firstRelease: 2022
+language: haskell
 runtime:
   - binary
 hosting:
@@ -50,6 +51,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://hackage.haskell.org/package/emanote
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/srid/emanote
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/srid/emanote/blob/master/emanote/README.md
@@ -106,6 +110,8 @@ sources:
     url: https://api.github.com/repos/srid/emanote/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Emanote renders a folder of plain-text notes as a website. A live server updates the preview while the notes are edited, and a separate command writes the HTML files for deployment. Output is customized through Heist templates. It is built on Ema, and the project describes itself as the spiritual successor to neuron, with a migration guide from neuron. It is written in Haskell and installed with Nix, following the [installation guide](https://emanote.srid.ca/install).

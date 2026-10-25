@@ -12,6 +12,7 @@ status: stub
 maintainer: Styx Contributors
 maintainerType: community
 firstRelease: 2016
+language: other
 hosting:
   - static
 contentStore:
@@ -43,6 +44,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://github.com/styx-static/styx/blob/master/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/styx-static/styx
     checkedAt: 2026-10-23
   - field: category
     url: https://styx-static.github.io/styx-site/
@@ -93,6 +97,8 @@ sources:
     url: https://styx-static.github.io/styx-site/documentation/index.html
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Styx is a static site generator written in the Nix expression language and installed through Nix. Content is written in Markdown, AsciiDoc or Nix, and the Nix templates of a theme produce the pages. Site configuration is declared through an interface like NixOS modules, with every declaration type-checked. The styx doc and styx site-doc commands print the embedded documentation and generate documentation for a site.

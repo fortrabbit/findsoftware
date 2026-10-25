@@ -12,6 +12,7 @@ status: stub
 maintainer: Johan Nordberg
 maintainerType: individual
 firstRelease: 2012
+language: javascript
 runtime:
   - node
 hosting:
@@ -42,6 +43,9 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/jnordberg/wintersmith/blob/master/README.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/jnordberg/wintersmith
     checkedAt: 2026-10-23
   - field: runtime
     url: https://github.com/jnordberg/wintersmith/blob/master/README.md
@@ -92,6 +96,7 @@ sources:
     url: https://github.com/jnordberg/wintersmith/blob/master/README.md
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
 ---
 
 Wintersmith is a static site generator distributed as the npm package `wintersmith`. Its contents directory holds the raw material of a site, templates render it, and the output is a static website that can be hosted anywhere. The default page plugin renders Markdown with Pug templates. The repository is on GitHub, and its README and wiki hold the documentation.

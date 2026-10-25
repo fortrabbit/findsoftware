@@ -4,6 +4,11 @@ status: accepted
 checkedAt: 2026-10-23
 description: API documentation generator for Python projects that renders modules, classes and functions from their docstrings and type annotations into HTML.
 facts:
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/mitmproxy/pdoc
+    checkedAt: 2026-10-25
+    via: api
   - field: homepage
     value: https://pdoc.dev
     url: https://pdoc.dev/
@@ -114,13 +119,13 @@ facts:
     url: https://api.github.com/repos/mitmproxy/pdoc/contributors?per_page=1
     checkedAt: 2026-10-23
     via: api
-notFound: [language, runsAs, renderingModes, pricingPage, hqCountry, parent, wikidata, discord, mastodon, bluesky, x, subreddit, newsletter, pluginDirectory, forkOf, successorOf, basedOn, forum]
+notFound: [runsAs, renderingModes, pricingPage, hqCountry, parent, wikidata, discord, mastodon, bluesky, x, subreddit, newsletter, pluginDirectory, forkOf, successorOf, basedOn, forum]
 unreadable: []
 notes: >
   The project has no GitHub release; its release history is the PyPI upload list, so currentMajor and latestReleaseDate come from PyPI, the registry the install page names.
   The PyPI history starts with version 0.0.1 uploaded in August 2013, the year the repository was created; the README credits Andrew Gallant as the original author.
   The README states the project is not associated with pdoc3, a separate project under the same name; pdoc3 has no record here.
-  pypiDownloads is the last_month figure from pypistats.org, because the PyPI JSON shows no download counts. The README says the pdoc command includes a web server with live reloading and standalone HTML output; it does not say where the tool runs or that the output is static files, so runsAs and renderingModes are not recorded. The GitHub language field reads Python, which no page states, so language is not recorded. The README recommends Sphinx for substantially more complex documentation needs.
+  pypiDownloads is the last_month figure from pypistats.org, because the PyPI JSON shows no download counts. The README says the pdoc command includes a web server with live reloading and standalone HTML output; it does not say where the tool runs or that the output is static files, so runsAs and renderingModes are not recorded. The language comes from the GitHub API, which reads Python, since no page states it. The README recommends Sphinx for substantially more complex documentation needs.
   The README names Sphinx for documentation needs beyond pdoc's scope; no basedOn is set.
   The docs state that pdoc imports the modules it documents, so the documented project's code runs when pdoc runs.
   The homepage is served over https.

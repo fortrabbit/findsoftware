@@ -10,6 +10,7 @@ description: Elm-based bootstrapper that adds pre-rendering, PWA files and SEO m
 status: stub
 maintainer: Luca Mugnaini
 maintainerType: individual
+language: other
 runtime:
   - node
 hosting:
@@ -26,6 +27,9 @@ sources:
     url: https://elm-starter.guupa.com
     checkedAt: 2026-10-22
   - field: urls
+    url: https://api.github.com/repos/lucamug/elm-starter
+    checkedAt: 2026-10-22
+  - field: language
     url: https://api.github.com/repos/lucamug/elm-starter
     checkedAt: 2026-10-22
   - field: githubStargazers
@@ -56,6 +60,8 @@ sources:
     url: https://github.com/lucamug/elm-starter/blob/master/package.json
     checkedAt: 2026-10-22
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 elm-starter is an experimental bootstrapper for Elm applications. It pre-renders pages at build time and can be added to an existing Elm project. It is installed by cloning the repository and running `npm install`, and `npm run build` builds the site for production. Luca Mugnaini maintains it under a BSD-3-Clause license.

@@ -362,7 +362,54 @@ const runtimeMap = {
   swift: 'binary',
 };
 // TypeScript compiles to JavaScript and shares its packages and runtimes, so the register keeps them as one value.
-const languageMap = { 'c#': 'csharp', 'c++': 'cpp', typescript: 'javascript' };
+// Languages held by fewer than five fact files share one value; Shell and Makefile stay unknown.
+// The HTML of a CSS kit is its language here; other HTML sites report no language.
+const cssKits = new Set(['flowbite', 'open-props']);
+const languageMap = {
+  'c#': 'csharp',
+  'c++': 'cpp',
+  typescript: 'javascript',
+  coffeescript: 'javascript',
+  vue: 'javascript',
+  svelte: 'javascript',
+  scala: 'scala',
+  haskell: 'haskell',
+  perl: 'perl',
+  swift: 'swift',
+  clojure: 'clojure',
+  r: 'r',
+  css: 'css',
+  scss: 'css',
+  sass: 'css',
+  less: 'css',
+  kotlin: 'other',
+  crystal: 'other',
+  elm: 'other',
+  'f#': 'other',
+  ocaml: 'other',
+  dart: 'other',
+  'common lisp': 'other',
+  julia: 'other',
+  racket: 'other',
+  groovy: 'other',
+  nim: 'other',
+  zig: 'other',
+  livescript: 'other',
+  stylus: 'other',
+  janet: 'other',
+  d: 'other',
+  lua: 'other',
+  scheme: 'other',
+  pascal: 'other',
+  erlang: 'other',
+  koka: 'other',
+  gleam: 'other',
+  nix: 'other',
+  tcl: 'other',
+  prolog: 'other',
+  ada: 'other',
+  awk: 'other',
+};
 const databaseMap = { mssql: 'sqlserver', postgresql: 'postgres', pgsql: 'postgres', mongo: 'mongodb' };
 const apiMap = { jsonapi: 'rest', 'admin-api': 'rest', 'store-api': 'rest', webservice: 'rest' };
 const renderMap = { headless: 'api-only' };
@@ -565,7 +612,7 @@ for (const file of facts) {
   const country = String(first('hqCountry') ?? '').toUpperCase();
   if (vocab('hqCountry').has(country)) record.hqCountry = country;
 
-  const language = mapped(first('language'), languageMap, vocab('language'))[0];
+  const language = cssKits.has(research.id) ? 'css' : mapped(first('language'), languageMap, vocab('language'))[0];
   if (language) record.language = language;
   const runtime = mapped(all('runtime'), runtimeMap, vocab('runtime'));
   if (runtime.length) record.runtime = runtime;
@@ -727,7 +774,7 @@ for (const file of facts) {
   if (record.category?.length && !holdsContent) notApplicable.push(...contentFields);
   if (record.category?.length && !deployed) notApplicable.push('hosting', 'runtimeMin');
   if (record.language && record.language !== 'php') notApplicable.push('packagistDownloads');
-  if (record.language && !['javascript', 'typescript'].includes(record.language))
+  if (record.language && !['javascript', 'typescript', 'css'].includes(record.language))
     notApplicable.push('npmWeeklyDownloads');
   // A library runs as part of the application that imports it.
   const embedded =

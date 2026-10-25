@@ -12,6 +12,7 @@ status: active
 maintainer: Loris Cro
 maintainerType: individual
 firstRelease: 2024
+language: other
 runtime:
   - binary
 hosting:
@@ -48,6 +49,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/kristoff-it/zine/main/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/kristoff-it/zine
     checkedAt: 2026-10-23
   - field: category
     url: https://zine-ssg.io/
@@ -98,6 +102,8 @@ sources:
     url: https://api.github.com/repos/kristoff-it/zine/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Zine is a static site generator written in Zig. A Zine site is a collection of content files and layouts. The build turns the content into HTML, styles it with the layouts and copies the result into an output directory, which a static host can serve. Content is written in SuperMD, an extension of Markdown, and layouts are written in SuperHTML.

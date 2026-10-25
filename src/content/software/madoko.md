@@ -11,6 +11,7 @@ status: stub
 maintainer: Microsoft Corporation
 maintainerType: company
 firstRelease: 2013
+language: other
 runtime:
   - node
 runsAs:
@@ -36,6 +37,9 @@ sources:
     url: https://github.com/koka-lang/madoko/blob/master/readme.md
     checkedAt: 2026-10-22
   - field: category
+    url: https://github.com/koka-lang/madoko/blob/master/readme.md
+    checkedAt: 2026-10-22
+  - field: language
     url: https://github.com/koka-lang/madoko/blob/master/readme.md
     checkedAt: 2026-10-22
   - field: runtime
@@ -72,6 +76,7 @@ sources:
     url: https://api.npmjs.org/downloads/point/last-week/madoko
     checkedAt: 2026-10-22
 ai: authored
+packagistDownloads: null
 ---
 
 Madoko is a Markdown processor for scholarly and technical documents, written in Koka. It runs locally as a command-line program on Node.js, installed with npm, and produces HTML and PDF output.

@@ -12,6 +12,7 @@ status: stub
 maintainer: Analog Web Framework Development Team
 maintainerType: community
 firstRelease: 2014
+language: scala
 installMethod: sbt library dependency in build.sbt
 licenseModel: open-source
 license: MIT
@@ -36,6 +37,9 @@ sources:
     checkedAt: 2026-10-24
   - field: maintainerType
     url: https://github.com/analogweb/analogweb-scala/blob/main/LICENSE
+    checkedAt: 2026-10-24
+  - field: language
+    url: https://api.github.com/repos/analogweb/analogweb-scala
     checkedAt: 2026-10-24
   - field: category
     url: https://analogweb.github.io/
@@ -65,6 +69,8 @@ sources:
     url: https://api.github.com/repos/analogweb/analogweb-scala/contributors
     checkedAt: 2026-10-24
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Analogweb Framework Scala is a web framework for Scala, used to build web APIs. Its routes are written as get blocks inside an http block, and the README's example serves a response on a localhost port from an sbt console. It includes a built-in non-blocking HTTP server, and the site names Netty and servlet containers as supported through plugins.

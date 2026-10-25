@@ -12,6 +12,7 @@ status: stub
 maintainer: SysGears, LLC
 maintainerType: company
 firstRelease: 2013
+language: other
 runtime:
   - jvm
 hosting:
@@ -47,6 +48,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://github.com/sysgears/grain/blob/master/NOTICE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/sysgears/grain
     checkedAt: 2026-10-23
   - field: runtime
     url: https://github.com/sysgears/grain/blob/master/README.md
@@ -88,6 +92,8 @@ sources:
     url: https://api.github.com/repos/sysgears/grain/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Grain is a static website generator for Groovy. A site is built from a theme project, which is run with `./grainw`, and `./grainw generate` generates the website files. Grain needs no installation of its own, because it loads as a JAR dependency of the theme project. The project's [general documentation](https://github.com/sysgears/grain/blob/master/docs/General%20Docs.md) describes it as an open source static website generator.

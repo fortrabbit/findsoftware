@@ -12,6 +12,7 @@ status: discontinued
 maintainer: Mark D. Benson
 maintainerType: individual
 firstRelease: 2014
+language: perl
 hosting:
   - static
 contentStore:
@@ -48,6 +49,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainerType
     url: https://markdbenson.com/dapper
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://github.com/markdbenson/dapper/blob/master/README.md
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/markdbenson/dapper/blob/master/README.md
@@ -89,6 +93,8 @@ sources:
     url: https://api.github.com/repos/markdbenson/dapper/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Dapper is a publishing tool for static websites, written in Perl and distributed as a CPAN module that provides the `dapper` command. Content is written as Markdown files, and layouts use the TT3 syntax from the Template::Alloy engine. A build writes the site to an `_output` directory as static files, which the README shows publishing to Amazon S3 or GitHub Pages.

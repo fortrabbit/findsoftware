@@ -12,6 +12,7 @@ status: stub
 maintainer: Roddy MacSween
 maintainerType: individual
 firstRelease: 2020
+language: other
 hosting:
   - static
 templating: jingoo
@@ -47,6 +48,9 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://raw.githubusercontent.com/roddyyaga/finch/master/README.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/roddyyaga/finch
     checkedAt: 2026-10-23
   - field: templating
     url: https://roddyyaga.github.io/finch/
@@ -85,6 +89,8 @@ sources:
     url: https://api.github.com/repos/roddyyaga/finch/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 finch is a static site generator written in OCaml. It compiles Markdown files with optional YAML frontmatter into HTML using Jingoo layout templates. The [documentation](https://roddyyaga.github.io/finch/) describes it as a site generator in the style of Jekyll and Hugo, and says a site is built by running finch in the appropriate directory.

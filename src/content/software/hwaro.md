@@ -12,6 +12,7 @@ status: active
 maintainer: HAHWUL
 maintainerType: individual
 firstRelease: 2026
+language: other
 runtime:
   - binary
 hosting:
@@ -43,6 +44,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/hahwul/hwaro/main/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/hahwul/hwaro
     checkedAt: 2026-10-23
   - field: category
     url: https://hwaro.hahwul.com/start/
@@ -90,6 +94,8 @@ sources:
     url: https://api.github.com/repos/hahwul/hwaro/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Hwaro is a static site generator written in Crystal. It reads Markdown content with TOML, YAML or JSON front matter and renders it through Jinja2-compatible templates, which the project implements with the Crinja library. The README lists multilingual support with per-language feeds and search, and an import from WordPress, Jekyll and Hugo.

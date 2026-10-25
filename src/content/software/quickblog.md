@@ -11,6 +11,7 @@ status: active
 maintainer: Michiel Borkent
 maintainerType: individual
 firstRelease: 2022
+language: clojure
 runsAs:
   - local
 installMethod: babashka git dependency in bb.edn
@@ -34,6 +35,9 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/borkdude/quickblog/blob/main/README.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/borkdude/quickblog
     checkedAt: 2026-10-23
   - field: installMethod
     url: https://github.com/borkdude/quickblog/blob/main/README.md
@@ -63,6 +67,8 @@ sources:
     url: https://api.github.com/repos/borkdude/quickblog/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 quickblog is a blog engine for Clojure and babashka, maintained by Michiel Borkent. It is added to a project as a git dependency and driven through tasks: the [quickstart](https://github.com/borkdude/quickblog/blob/main/README.md) adds a task to the project's `bb.edn`, and running `bb quickblog watch` starts an HTTP server that re-renders when files change.

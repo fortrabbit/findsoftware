@@ -11,6 +11,7 @@ description: Static site generator written in Guile Scheme that builds sites fro
 status: stub
 maintainer: David Thompson
 firstRelease: 2015
+language: other
 hosting:
   - static
 contentStore:
@@ -41,6 +42,9 @@ sources:
     url: https://git.dthompson.dev/haunt/plain/README?h=v0.4.0
     checkedAt: 2026-10-23
   - field: category
+    url: https://git.dthompson.dev/haunt/plain/README?h=v0.4.0
+    checkedAt: 2026-10-23
+  - field: language
     url: https://git.dthompson.dev/haunt/plain/README?h=v0.4.0
     checkedAt: 2026-10-23
   - field: renderingModes
@@ -80,6 +84,8 @@ sources:
     url: https://git.dthompson.dev/haunt/tag/?h=v0.4.0
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Haunt is a static site generator written in Guile Scheme. A site is configured in Scheme, and Haunt comes with builders for blogs and for Atom feeds. Posts are kept as files in a directory. Haunt is installed with Guix or built from source, and a local run previews the site.

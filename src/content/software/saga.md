@@ -12,6 +12,7 @@ description: Static site generator in Swift whose site pipeline is written as Sw
 status: active
 maintainer: Loopwerk
 firstRelease: 2021
+language: swift
 runtime:
   - binary
 hosting:
@@ -47,6 +48,9 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://raw.githubusercontent.com/loopwerk/Saga/main/README.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/loopwerk/Saga
     checkedAt: 2026-10-23
   - field: runtime
     url: https://getsaga.dev/docs/installation/
@@ -97,6 +101,8 @@ sources:
     url: https://api.github.com/repos/loopwerk/Saga/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Saga is a static site generator written in Swift, in which the site pipeline is Swift code rather than a configuration file. The [installation guide](https://getsaga.dev/docs/installation/) adds Saga as a Swift Package Manager dependency, and the `saga` command line tool can be installed with Homebrew. `saga dev` builds the site and starts a development server.

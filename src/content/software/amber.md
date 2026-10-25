@@ -12,6 +12,7 @@ status: active
 maintainer: Amber Team
 maintainerType: community
 firstRelease: 2017
+language: other
 runtime:
   - binary
 hosting:
@@ -46,6 +47,9 @@ sources:
     checkedAt: 2026-10-24
   - field: maintainerType
     url: https://github.com/amberframework/amber/blob/master/LICENSE
+    checkedAt: 2026-10-24
+  - field: language
+    url: https://api.github.com/repos/amberframework/amber
     checkedAt: 2026-10-24
   - field: runtime
     url: https://github.com/amberframework/amber/blob/master/README.md
@@ -90,6 +94,8 @@ sources:
     url: https://api.github.com/repos/amberframework/amber/contributors
     checkedAt: 2026-10-24
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Amber is a web application framework written in Crystal, with routing, controllers, views and a command-line tool that generates applications. It renders pages on the server. The 2.0 manual deployment guide builds an application into a single binary with its assets, copies it to a release directory and runs it as a service under systemd, with a TLS-terminating reverse proxy in front.

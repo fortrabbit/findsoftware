@@ -11,6 +11,7 @@ status: discontinued
 maintainer: Chip Senkbeil
 maintainerType: individual
 firstRelease: 2017
+language: scala
 runtime:
   - jvm
 templating: scalatags
@@ -39,6 +40,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://api.github.com/users/chipsenkbeil
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/chipsenkbeil/grus
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/chipsenkbeil/grus/blob/master/README.md
@@ -86,6 +90,8 @@ sources:
     url: https://api.github.com/repos/chipsenkbeil/grus/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Grus is a static site generator written in Scala. It uses Scalatags for templates and Flexmark for markdown, and it runs on the JVM: the released jar is started with `java -jar`. The README names Homebrew, the jar and an sbt plugin as the ways to install it, and says it runs on the command line. The repository is owned by Chip Senkbeil.

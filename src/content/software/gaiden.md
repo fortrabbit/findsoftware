@@ -12,6 +12,7 @@ status: active
 maintainer: The respective authors and developers
 maintainerType: community
 firstRelease: 2013
+language: other
 runtime:
   - jvm
 hosting:
@@ -44,6 +45,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://github.com/kobo/gaiden/blob/main/NOTICE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/kobo/gaiden
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/kobo/gaiden/blob/main/README.md
@@ -97,6 +101,8 @@ sources:
     url: https://api.github.com/repos/kobo/gaiden/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Gaiden is a documentation tool that turns Markdown files into HTML pages, written in Groovy. A project holds the Markdown pages next to two Groovy configuration files, one for settings and one for the list of pages. The `build` command writes the HTML pages and static resources to a build directory, and `dist` zips the HTML files.

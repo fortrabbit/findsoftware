@@ -11,6 +11,7 @@ description: Static site generator written in Julia, oriented towards technical 
 status: active
 maintainer: Thibaut Lienart
 firstRelease: 2019
+language: other
 hosting:
   - static
 runsAs:
@@ -39,6 +40,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://franklinjl.org/
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/JuliaDocs/Franklin.jl
     checkedAt: 2026-10-23
   - field: category
     url: https://franklinjl.org/
@@ -77,6 +81,8 @@ sources:
     url: https://api.github.com/repos/JuliaDocs/Franklin.jl/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Franklin is a static site generator written in Julia, oriented towards technical blogging. It is installed through Julia's package manager. The command optimize() prepares the __site folder, and its contents can then be copied to any existing web server. A local server started by Franklin shows the site as it is edited. Thibaut Lienart maintains the project, which is hosted in the JuliaDocs organization on GitHub.

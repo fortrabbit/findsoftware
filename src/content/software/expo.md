@@ -12,6 +12,7 @@ description: File-based router for universal React Native apps that run on Andro
 status: active
 maintainer: 650 Industries, Inc.
 maintainerType: company
+language: javascript
 runtime:
   - node
 hosting:
@@ -32,6 +33,9 @@ npmWeeklyDownloads: 4916934
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
+  - field: language
+    url: https://api.github.com/repos/expo/expo
+    checkedAt: 2026-10-25
   - field: urls
     url: https://expo.dev/router
     checkedAt: 2026-10-22
@@ -81,6 +85,7 @@ sources:
     url: https://api.npmjs.org/downloads/point/last-week/expo-router
     checkedAt: 2026-10-22
 ai: authored
+packagistDownloads: null
 ---
 
 Expo Router is a file-based router for React Native apps and web applications, developed in the Expo open-source repository. It is built on React Native and lets one set of routes run on Android, iOS and the web. A new project is created with create-expo-app. For the web, an app can be exported as static HTML and CSS files, or rendered by a server on each request. Static output can be served from almost any host, while the server mode runs as a server process that renders each page when it is requested.

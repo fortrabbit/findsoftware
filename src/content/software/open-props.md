@@ -11,6 +11,7 @@ status: active
 maintainer: Adam Argyle
 maintainerType: individual
 firstRelease: 2021
+language: css
 installMethod: cdn, npm
 licenseModel: open-source
 license: MIT
@@ -39,6 +40,9 @@ sources:
     checkedAt: 2026-10-19
   - field: maintainerType
     url: https://registry.npmjs.org/open-props
+    checkedAt: 2026-10-19
+  - field: language
+    url: https://github.com/argyleink/open-props
     checkedAt: 2026-10-19
   - field: category
     url: https://open-props.style/
@@ -77,6 +81,7 @@ i18n: null
 renderingModes: null
 hosting: null
 runtimeMin: null
+packagistDownloads: null
 ---
 
 Open Props is a collection of design tokens written as CSS custom properties. The homepage states that no installation is required: the tokens load from a CDN, and an npm package is the other route. Adam Argyle, an individual, maintains the project.

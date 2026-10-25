@@ -11,6 +11,7 @@ description: Modular frontend development platform built on Pug, Stylus and Java
 status: stub
 maintainer: Cygnul
 firstRelease: 2018
+language: other
 runtime:
   - node
 runtimeMin: node 8
@@ -42,6 +43,9 @@ sources:
     checkedAt: 2026-10-22
   - field: category
     url: https://github.com/platframe/platframe/blob/master/README.md
+    checkedAt: 2026-10-22
+  - field: language
+    url: https://api.github.com/repos/platframe/platframe
     checkedAt: 2026-10-22
   - field: runtime
     url: https://github.com/platframe/platframe/blob/master/README.md
@@ -83,6 +87,8 @@ sources:
     url: https://api.github.com/repos/platframe/platframe/contributors?per_page=1
     checkedAt: 2026-10-22
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Platframe is a frontend development platform for projects written with Pug templates, Stylus styles and JavaScript. Its README describes it as suitable for multi-page and single page applications, and as a static site generator.

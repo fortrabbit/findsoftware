@@ -11,6 +11,7 @@ status: active
 maintainer: Chris Penner
 maintainerType: individual
 firstRelease: 2018
+language: haskell
 runtime:
   - binary
 hosting:
@@ -54,6 +55,9 @@ sources:
   - field: installMethod
     url: https://github.com/ChrisPenner/slick-template/blob/master/README.md
     checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/ChrisPenner/slick
+    checkedAt: 2026-10-23
   - field: license
     url: https://api.github.com/repos/ChrisPenner/slick
     checkedAt: 2026-10-23
@@ -79,6 +83,8 @@ sources:
     url: https://api.github.com/repos/ChrisPenner/slick/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Slick is a static site generator written and configured in Haskell. It provides tools for building static websites on top of the Shake build system, reads content through Pandoc and renders Mustache templates. The Quick Start sends readers to the slick-template repository, which is cloned and built with stack. The template writes its output to a docs folder that GitHub Pages can serve.

@@ -11,6 +11,7 @@ description: Static site generator written in Clojure, with Markdown or AsciiDoc
 status: stub
 maintainer: Carmen La
 firstRelease: 2017
+language: clojure
 hosting:
   - static
 templating: selmer
@@ -38,6 +39,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://cryogenweb.org/
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/cryogen-project/cryogen/git/trees/master?recursive=1
     checkedAt: 2026-10-23
   - field: category
     url: https://api.github.com/repos/cryogen-project/cryogen
@@ -79,6 +83,8 @@ sources:
     url: https://github.com/cryogen-project/cryogen/blob/master/README.md
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Cryogen is a static site generator written in Clojure. A new site is created from a Leiningen template with `lein new cryogen`, or with the Clojure CLI tools clj-new and deps-new. Posts and pages are Markdown files by default, with AsciiDoc as an alternative, and the layouts use the Selmer templating engine.

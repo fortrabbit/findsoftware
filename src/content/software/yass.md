@@ -11,6 +11,7 @@ description: Static site generator written in Ada that builds a site from Markdo
 status: active
 maintainer: AJ Ianozi
 firstRelease: 2019
+language: other
 runtime:
   - binary
 hosting:
@@ -42,6 +43,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/yet-another-static-site-generator/yass/master/alire.toml
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/yet-another-static-site-generator/yass
     checkedAt: 2026-10-23
   - field: runtime
     url: https://raw.githubusercontent.com/yet-another-static-site-generator/yass/master/README.md
@@ -101,6 +105,8 @@ sources:
     url: https://api.github.com/repos/yet-another-static-site-generator/yass/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 YASS is a static site generator written in Ada and run from the console. It has no user interface. It converts Markdown files in a project directory to HTML, fills Ada Web Server templates, and writes the site to an output directory. A server mode serves the output on localhost for preview and regenerates changed files. Sitemaps and Atom feeds are generated when enabled.

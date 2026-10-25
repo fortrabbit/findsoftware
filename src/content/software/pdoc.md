@@ -11,6 +11,7 @@ description: API documentation generator for Python projects that renders module
 status: active
 maintainer: Maximilian Hils
 firstRelease: 2013
+language: python
 runtime:
   - python
 hosting:
@@ -27,6 +28,9 @@ contributors: 62
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
+  - field: language
+    url: https://api.github.com/repos/mitmproxy/pdoc
+    checkedAt: 2026-10-25
   - field: urls
     url: https://pdoc.dev/
     checkedAt: 2026-10-23
@@ -76,6 +80,8 @@ sources:
     url: https://api.github.com/repos/mitmproxy/pdoc/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 pdoc generates API documentation for Python projects. It imports the modules it is given, reads their docstrings and type annotations, and writes standalone HTML. The pdoc command includes a web server with live reloading, and the [pdoc documentation](https://pdoc.dev/docs/pdoc.html) describes its templates and options. The project is installed with pip and is maintained by Maximilian Hils.

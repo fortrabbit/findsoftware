@@ -12,6 +12,7 @@ status: active
 maintainer: rknell
 maintainerType: individual
 firstRelease: 2021
+language: other
 headlessApi:
   - rest
 installMethod: dart pub add alfred
@@ -31,6 +32,9 @@ sources:
     url: https://github.com/rknell/alfred/blob/master/README.md
     checkedAt: 2026-10-24
   - field: maintainer
+    url: https://api.github.com/repos/rknell/alfred
+    checkedAt: 2026-10-24
+  - field: language
     url: https://api.github.com/repos/rknell/alfred
     checkedAt: 2026-10-24
   - field: category
@@ -64,6 +68,8 @@ sources:
     url: https://github.com/rknell/alfred/blob/master/README.md
     checkedAt: 2026-10-24
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Alfred is a web server and REST API framework for Dart. The README describes its routing and middleware as Express-style: handlers are registered for an HTTP method and path, and a handler can return a string, a map or list (sent as JSON), a file or a binary stream instead of calling a response method. Request bodies in URL-encoded, multipart and JSON form are parsed, and the framework includes CORS middleware, static file serving, WebSocket routes and resumable file downloads.

@@ -12,6 +12,7 @@ status: active
 maintainer: pietroppeter
 maintainerType: individual
 firstRelease: 2021
+language: other
 templating: mustache
 installMethod: nimble install nimib
 licenseModel: open-source
@@ -34,6 +35,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://github.com/pietroppeter/nimib/blob/main/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/pietroppeter/nimib
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/pietroppeter/nimib/blob/main/README.md
@@ -72,6 +76,8 @@ adminUi: null
 headlessApi: null
 i18n: null
 renderingModes: null
+packagistDownloads: null
+npmWeeklyDownloads: null
 runsAs: null
 ---
 

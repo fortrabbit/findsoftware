@@ -13,6 +13,7 @@ status: active
 maintainer: Jasper Van der Jeugt
 maintainerType: individual
 firstRelease: 2009
+language: haskell
 runtime:
   - binary
 hosting:
@@ -44,6 +45,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://github.com/jaspervdj/hakyll/blob/master/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/jaspervdj/hakyll
     checkedAt: 2026-10-23
   - field: category
     url: https://jaspervdj.be/hakyll/
@@ -82,6 +86,8 @@ sources:
     url: https://api.github.com/repos/jaspervdj/hakyll/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Hakyll is a Haskell library for generating static sites. A site is defined by a Haskell program that holds its compilation rules, compiled to an executable that builds the site into HTML, and the Pandoc integration gives it Markdown and TeX support. The HTML is then uploaded to a host. The homepage points to IRC and a discussion group for questions.

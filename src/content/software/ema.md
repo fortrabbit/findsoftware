@@ -13,6 +13,7 @@ status: active
 maintainer: Sridhar Ratnakumar
 maintainerType: individual
 firstRelease: 2021
+language: haskell
 runtime:
   - binary
 hosting:
@@ -45,6 +46,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://hackage.haskell.org/package/ema
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/srid/ema
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/srid/ema/blob/master/ema/README.md
@@ -89,6 +93,8 @@ sources:
     url: https://api.github.com/repos/srid/ema/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Ema is a Haskell library toolkit for building jamstack-style static sites. A site is a Haskell program that uses the library, and the Ema live server reloads the browser when code or data changes during development. The library is listed on Hackage under the name ema.

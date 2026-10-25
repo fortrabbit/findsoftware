@@ -12,6 +12,7 @@ status: discontinued
 maintainer: Steve Kemp
 maintainerType: individual
 firstRelease: 2012
+language: perl
 hosting:
   - static
 templating: html-template
@@ -47,6 +48,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainerType
     url: https://steve.fi/software/templer/
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/skx/templer
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/skx/templer/blob/master/README.md
@@ -97,6 +101,8 @@ sources:
     url: https://api.github.com/repos/skx/templer/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Templer is a static site generator written in Perl. It expands variables in its pages and layouts with the HTML::Template module, and pages can be written in HTML, or in Textile or Markdown through plugins. A site is rebuilt by running the `templer` script in the site directory, and the output is HTML pages written to an output directory.

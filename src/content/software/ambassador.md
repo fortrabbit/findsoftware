@@ -10,6 +10,7 @@ description: Swift web framework for mocking HTTP API endpoints, built on the SW
 status: active
 maintainer: Envoy
 firstRelease: 2016
+language: swift
 runtime:
   - binary
 hosting:
@@ -32,6 +33,9 @@ sources:
     checkedAt: 2026-10-24
   - field: maintainer
     url: https://github.com/envoy/Ambassador/blob/master/LICENSE
+    checkedAt: 2026-10-24
+  - field: language
+    url: https://api.github.com/repos/envoy/Ambassador
     checkedAt: 2026-10-24
   - field: runtime
     url: https://github.com/envoy/Ambassador/blob/master/Package.swift
@@ -70,6 +74,8 @@ sources:
     url: https://api.github.com/repos/envoy/Ambassador/contributors
     checkedAt: 2026-10-24
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Ambassador is a web framework for Swift that maps URL paths to response handlers, so an app can answer HTTP requests with fixed or generated responses. It is based on SWSGI, the Swift web server gateway interface. The README's example runs it on Embassy, the HTTP server that the package depends on, and says it can run with other SWSGI-compatible servers.

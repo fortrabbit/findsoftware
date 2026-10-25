@@ -12,6 +12,7 @@ status: active
 maintainer: Fabio Cevasco
 maintainerType: individual
 firstRelease: 2017
+language: other
 hosting:
   - static
 contentStore:
@@ -42,6 +43,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/h3rald/hastysite/master/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://hastysite.h3rald.com
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/h3rald/hastysite/blob/master/README.md
@@ -86,6 +90,8 @@ sources:
     url: https://api.github.com/repos/h3rald/hastysite/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 HastySite is a static site generator written in Nim. It builds a site from content files and Mustache page templates, and the build copies the result into an output directory that any web server can serve. The program is a single executable with no dependencies and runs on the command line. You can download a pre-built binary or build it from source with Nim and the Nifty package manager. The GitHub repository states that the project moved to sourcehut on 2026-06-16.

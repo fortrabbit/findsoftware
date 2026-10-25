@@ -11,6 +11,7 @@ description: HTML manipulation tool that works as a static site generator or as 
 status: active
 maintainer: Daniil Baturin et al.
 firstRelease: 2019
+language: other
 runtime:
   - binary
 hosting:
@@ -48,6 +49,9 @@ sources:
   - field: runsAs
     url: https://soupault.net/
     checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/PataphysicalSociety/soupault
+    checkedAt: 2026-10-23
   - field: runtime
     url: https://github.com/PataphysicalSociety/soupault/blob/main/README.md
     checkedAt: 2026-10-23
@@ -82,6 +86,8 @@ sources:
     url: https://api.github.com/repos/PataphysicalSociety/soupault/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Soupault is an HTML manipulation tool that works on the element tree of each page. The project describes it as a static website generator or as an HTML post-processor for existing websites. Pages are assembled by inserting content into an element chosen with a CSS selector, and metadata is extracted from the HTML with CSS selectors instead of front matter.

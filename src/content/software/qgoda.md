@@ -13,6 +13,7 @@ maintainer: cantanea EOOD
 maintainerType: company
 firstRelease: 2018
 hqCountry: BG
+language: perl
 hosting:
   - static
 templating: template toolkit
@@ -50,6 +51,9 @@ sources:
     checkedAt: 2026-10-23
   - field: hqCountry
     url: https://www.qgoda.net/en/legal-disclosure/
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/gflohr/qgoda
     checkedAt: 2026-10-23
   - field: category
     url: https://www.qgoda.net/
@@ -91,6 +95,8 @@ sources:
     url: https://api.github.com/repos/gflohr/qgoda/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Qgoda is a static site generator for multilanguage sites with arbitrary taxonomies. Content is written in Markdown, and listings and filters can use as many taxonomies as the author defines, not only tags and categories. The Template Toolkit wraps each page, and translations use gettext and po files.

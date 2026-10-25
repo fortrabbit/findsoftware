@@ -11,6 +11,7 @@ status: active
 maintainer: Chris Penner
 maintainerType: individual
 firstRelease: 2017
+language: haskell
 runtime:
   - binary
 hosting:
@@ -41,6 +42,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/ChrisPenner/SitePipe/master/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/ChrisPenner/SitePipe
     checkedAt: 2026-10-23
   - field: runtime
     url: https://github.com/ChrisPenner/SitePipe
@@ -88,6 +92,8 @@ sources:
     url: https://api.github.com/repos/ChrisPenner/SitePipe/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 SitePipe is a static site generator in Haskell for blogs and personal websites. Posts are Markdown files with YAML metadata, and Mustache templates render them into HTML pages. Building with Stack writes the finished site into an output folder as static files.

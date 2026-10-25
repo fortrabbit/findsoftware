@@ -9,6 +9,7 @@ description: Command-line blog compiler that turns source files and templates in
 status: stub
 maintainer: Rafael G. Martins
 firstRelease: 2015
+language: c
 hosting:
   - static
 contentStore:
@@ -27,6 +28,9 @@ contributors: 3
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
+  - field: language
+    url: https://api.github.com/repos/blogc/blogc
+    checkedAt: 2026-10-25
   - field: urls
     url: https://blogc.rgm.io/
     checkedAt: 2026-10-23
@@ -76,6 +80,8 @@ sources:
     url: https://api.github.com/repos/blogc/blogc/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 blogc is a command-line blog compiler. Each run compiles one source file and its templates into website resources, and the homepage says it is designed to be used with make. It does not know about the other files of a blog. The build tool blogc-make can turn blogc into a blogging engine, according to the homepage.

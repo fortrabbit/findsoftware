@@ -11,6 +11,7 @@ description: R package that builds a static HTML website for an R package from i
 status: active
 maintainer: Hadley Wickham
 firstRelease: 2016
+language: r
 hosting:
   - static
 runsAs:
@@ -38,6 +39,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://pkgdown.r-lib.org/
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/r-lib/pkgdown
     checkedAt: 2026-10-23
   - field: category
     url: https://api.github.com/repos/r-lib/pkgdown
@@ -73,6 +77,8 @@ sources:
     url: https://api.github.com/repos/r-lib/pkgdown/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 pkgdown builds a website for an R package from its README, its function documentation and its vignettes: the README becomes the homepage, documentation in man/ generates a function reference, and vignettes render into articles. The [getting-started guide](https://pkgdown.r-lib.org/articles/pkgdown.html) describes publishing the site through GitHub Actions.

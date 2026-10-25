@@ -11,6 +11,7 @@ status: stub
 maintainer: Rizwaan Bhikha
 maintainerType: individual
 firstRelease: 2019
+language: other
 hosting:
   - static
 contentStore:
@@ -36,6 +37,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://gitlab.com/olfek/silssig/-/raw/master/LICENSE.txt
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://gitlab.com/api/v4/projects/13858056
     checkedAt: 2026-10-23
   - field: category
     url: https://gitlab.com/api/v4/projects/13858056
@@ -71,6 +75,8 @@ sources:
     url: https://gitlab.com/api/v4/projects/13858056/repository/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Silssig is a static site generator written in Dart, designed for GitHub Pages, GitLab Pages and similar services. Pages are written in Markdown and HTML, and its own directive syntax factors shared content out into templates, so each page still renders as complete HTML. The program is run on the developer's machine with Dart, and the output is a folder of files.

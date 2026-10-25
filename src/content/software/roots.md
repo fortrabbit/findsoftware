@@ -10,6 +10,7 @@ status: stub
 maintainer: Jeff Escalante
 maintainerType: individual
 firstRelease: 2012
+language: javascript
 runtime:
   - node
 hosting:
@@ -35,6 +36,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://github.com/jescalan/roots/blob/master/license.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/jescalan/roots
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/jescalan/roots/blob/master/readme.md
@@ -79,6 +83,7 @@ sources:
     url: https://api.npmjs.org/downloads/point/last-week/roots
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
 ---
 
 Roots is a static site compiler for Node.js, written in CoffeeScript and installed from npm. The README describes it as a tool for building static sites quickly.

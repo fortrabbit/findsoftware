@@ -10,6 +10,7 @@ description: Static web site generator written in Racket that builds posts and p
 status: stub
 maintainer: Greg Hendershott
 maintainerType: individual
+language: other
 hosting:
   - static
 contentStore:
@@ -35,6 +36,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/greghendershott/frog/master/frog/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/greghendershott/frog
     checkedAt: 2026-10-23
   - field: category
     url: https://raw.githubusercontent.com/greghendershott/frog/master/README.md
@@ -67,6 +71,8 @@ sources:
     url: https://api.github.com/repos/greghendershott/frog/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Frog is a static web site generator written in Racket. Posts and pages are written in Markdown or Scribble and stored as files in a project folder, and Frog generates the files that you publish, for example to a GitHub Pages repository or an Amazon S3 bucket. Racket is installed first, then the package is added with raco pkg install frog. The [Frog documentation](https://docs.racket-lang.org/frog/index.html) covers the quick start, posts, non-post pages, templates and parameters. Frog can preview the built site locally.

@@ -12,6 +12,7 @@ status: active
 maintainer: Jacob O'Bryant
 maintainerType: individual
 firstRelease: 2022
+language: clojure
 runtime:
   - jvm
 hosting:
@@ -45,6 +46,9 @@ sources:
     checkedAt: 2026-10-24
   - field: maintainer
     url: https://raw.githubusercontent.com/jacobobryant/biff/master/LICENSE
+    checkedAt: 2026-10-24
+  - field: language
+    url: https://api.github.com/repos/jacobobryant/biff
     checkedAt: 2026-10-24
   - field: category
     url: https://biffweb.com/
@@ -95,6 +99,8 @@ sources:
     url: https://api.github.com/repos/jacobobryant/biff/contributors?per_page=1
     checkedAt: 2026-10-24
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Biff is a full-stack web framework for Clojure, composed from separate libraries that each have their own documentation. It covers SQLite storage, server-side rendering with Datastar, email sign-in and an admin dashboard. A new project starts from the biff-starter repository, which is cloned with git and run with a Clojure command-line task.

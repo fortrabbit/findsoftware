@@ -11,6 +11,7 @@ description: Markdown-based static site generator for blogs and websites, writte
 status: active
 maintainer: The Starlight Network
 firstRelease: 2025
+language: other
 hosting:
   - static
 contentStore:
@@ -40,6 +41,9 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://makko.starlightnet.work/english.html
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://forge.starlightnet.work/api/v1/repos/Team/Makko/contents/README.md
     checkedAt: 2026-10-23
   - field: installMethod
     url: https://forge.starlightnet.work/api/v1/repos/Team/Makko/contents/README.md
@@ -81,6 +85,8 @@ sources:
     url: https://forge.starlightnet.work/api/v1/repos/Team/Makko/releases?limit=50
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Makko is a static site generator that turns Markdown posts into a website, with templates written in Mustache. It is a single command-line binary built with the Zig compiler: a project folder holds the posts, the templates and a `makko.json` file, and running `makko .` writes the finished site into an output folder that any HTML host can serve. The [English documentation](https://makko.starlightnet.work/english.html) describes the setup and the feeds it writes, and the project is maintained by The Starlight Network on its own Forgejo instance.

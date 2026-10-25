@@ -10,6 +10,7 @@ status: stub
 maintainer: Chase Allen James
 maintainerType: individual
 firstRelease: 2014
+language: other
 hosting:
   - static
 contentStore:
@@ -34,6 +35,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/nuex/zodiac/master/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/nuex/zodiac
     checkedAt: 2026-10-23
   - field: installMethod
     url: https://raw.githubusercontent.com/nuex/zodiac/master/README.md
@@ -75,6 +79,8 @@ sources:
     url: https://api.github.com/repos/nuex/zodiac/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Zodiac is a static website generator written in sh and awk. It runs from the command line as `zod projectdir targetdir`, and external programs such as smu convert Markdown and other markup. The project is installed from its repository with `make install`.

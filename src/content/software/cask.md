@@ -11,6 +11,7 @@ description: Scala web micro-framework for setting up websites, backend servers 
 status: active
 maintainer: Li Haoyi
 firstRelease: 2018
+language: scala
 runtime:
   - jvm
 hosting:
@@ -36,6 +37,9 @@ sources:
     checkedAt: 2026-10-24
   - field: maintainer
     url: https://raw.githubusercontent.com/com-lihaoyi/cask/master/LICENSE
+    checkedAt: 2026-10-24
+  - field: language
+    url: https://api.github.com/repos/com-lihaoyi/cask
     checkedAt: 2026-10-24
   - field: runtime
     url: https://com-lihaoyi.github.io/cask/
@@ -68,6 +72,8 @@ sources:
     url: https://api.github.com/repos/com-lihaoyi/cask/contributors
     checkedAt: 2026-10-24
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Cask is a Scala web framework that its homepage describes as inspired by Python's Flask. It is added to a Scala project as a library from Maven Central, with coordinates given for Mill and sbt, and it makes it easy to set up a website, backend server or REST API. The MIT license names Li Haoyi as the copyright holder.

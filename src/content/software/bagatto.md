@@ -11,6 +11,7 @@ description: Static site generator in which each site is a Janet program that de
 status: active
 maintainer: Z. D. Smith
 firstRelease: 2020
+language: other
 hosting:
   - static
 contentStore:
@@ -39,6 +40,9 @@ sources:
     url: https://bagatto.co/manual
     checkedAt: 2026-10-23
   - field: category
+    url: https://bagatto.co/
+    checkedAt: 2026-10-23
+  - field: language
     url: https://bagatto.co/
     checkedAt: 2026-10-23
   - field: installMethod
@@ -87,6 +91,8 @@ sources:
     url: https://git.sr.ht/~subsetpark/bagatto/refs/rss.xml
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Bagatto is a static site generator in which a site is an ordinary Janet module. The module holds a data specification, which loads source files such as Markdown articles and JSON configuration files, and a site specification, which lists each output file with its path and contents. Pages are rendered with the Temple template system. Running `bag index.janet` on the module writes the files, and the [manual](https://bagatto.co/manual) describes its two phases, the data phase and the site phase.

@@ -11,6 +11,7 @@ description: Scriptable static site generator that defines page layouts in F# sc
 status: active
 maintainer: Lambda Factory
 firstRelease: 2019
+language: other
 runtime:
   - dotnet
 hosting:
@@ -42,6 +43,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/ionide/Fornax/master/LICENSE.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/ionide/Fornax
     checkedAt: 2026-10-23
   - field: runtime
     url: https://ionide.io/Tools/fornax.html
@@ -86,6 +90,8 @@ sources:
     url: https://api.github.com/repos/ionide/Fornax/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Fornax is a scriptable static site generator that defines its page layouts with a type-safe F# DSL. It runs as a global .NET tool. The `fornax build` command writes the generated site to a `_public` folder, and `fornax watch` starts a small local webserver that hosts the site and recompiles it when files change.

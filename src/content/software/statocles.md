@@ -10,6 +10,7 @@ description: Static site generator written in Perl that builds a website from YA
 status: stub
 maintainer: Doug Bell
 maintainerType: individual
+language: perl
 hosting:
   - static
 contentStore:
@@ -38,6 +39,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/preaction/Statocles/master/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/preaction/Statocles
     checkedAt: 2026-10-23
   - field: category
     url: https://fastapi.metacpan.org/v1/pod/Statocles
@@ -70,6 +74,8 @@ sources:
     url: https://api.github.com/repos/preaction/Statocles/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Statocles is a static site generator written in Perl. It builds web pages from plain YAML and Markdown files, using the `statocles` command-line application to create, build, preview and deploy a site. Its deployment guide describes publishing to GitHub Pages or any Git-based deploy, and the finished site is static files that need no process of their own.

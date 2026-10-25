@@ -9,6 +9,7 @@ category:
 description: Blog generator written in Common Lisp that builds a static website from post files kept in a git repository.
 status: active
 maintainer: Brit Butler
+language: other
 hosting:
   - static
 templating: closure-templates
@@ -33,6 +34,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/coleslaw-org/coleslaw/master/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/coleslaw-org/coleslaw
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/coleslaw-org/coleslaw/blob/master/README.md
@@ -68,6 +72,8 @@ sources:
     url: https://api.github.com/repos/coleslaw-org/coleslaw/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Coleslaw is a blog generator written in Common Lisp. It keeps posts as files in a git repository and builds a static website from them into a staging directory. The README names Roswell and Quicklisp as ways to install it and says it should run on any conforming Common Lisp implementation, with testing done mainly on SBCL and CCL. The repository is hosted under the coleslaw-org organization on GitHub, and its LICENSE names Brit Butler as the copyright holder.

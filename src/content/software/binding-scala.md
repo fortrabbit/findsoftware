@@ -11,6 +11,7 @@ status: active
 maintainer: Yang Bo & REA Group Ltd.
 maintainerType: company
 firstRelease: 2016
+language: scala
 runtime:
   - jvm
 hosting:
@@ -33,6 +34,9 @@ sources:
     checkedAt: 2026-10-24
   - field: maintainer
     url: https://raw.githubusercontent.com/ThoughtWorksInc/Binding.scala/12.x/LICENSE
+    checkedAt: 2026-10-24
+  - field: language
+    url: https://api.github.com/repos/ThoughtWorksInc/Binding.scala
     checkedAt: 2026-10-24
   - field: category
     url: https://github.com/ThoughtWorksInc/Binding.scala/blob/12.x/README.md
@@ -72,6 +76,8 @@ headlessApi: null
 templating: null
 i18n: null
 renderingModes: null
+packagistDownloads: null
+npmWeeklyDownloads: null
 runsAs: null
 ---
 

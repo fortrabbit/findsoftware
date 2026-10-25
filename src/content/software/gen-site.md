@@ -10,6 +10,7 @@ description: Static site generator made of Lua scripts that turn a directory of 
 status: stub
 maintainer: Kartik K. Agaram
 maintainerType: individual
+language: other
 hosting:
   - static
 contentStore:
@@ -33,6 +34,9 @@ sources:
   - field: maintainer
     url: https://git.sr.ht/~akkartik/gen_site/log
     checkedAt: 2026-10-23
+  - field: language
+    url: https://git.sr.ht/~akkartik/gen_site
+    checkedAt: 2026-10-23
   - field: category
     url: https://git.sr.ht/~akkartik/gen_site
     checkedAt: 2026-10-23
@@ -52,6 +56,8 @@ sources:
     url: https://git.sr.ht/~akkartik/gen_site/blob/main/LICENSE.txt
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 gen_site is a static site generator made of Lua scripts. They turn a directory of posts into pages, index pages and feeds, and the generated site can be copied to a web host. The source is hosted on sourcehut, and the repository has no tagged release.

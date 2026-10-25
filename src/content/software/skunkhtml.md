@@ -9,6 +9,7 @@ category:
 description: Blog generator written in F# that builds a GitHub Pages site from Markdown files in a forked repository.
 status: active
 maintainerType: individual
+language: other
 runtime:
   - dotnet
 hosting:
@@ -42,6 +43,9 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/mg0x7BE/skunk-html/blob/master/README.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/mg0x7BE/skunk-html
     checkedAt: 2026-10-23
   - field: runtime
     url: https://github.com/mg0x7BE/skunk-html/blob/master/README.md
@@ -77,6 +81,8 @@ sources:
     url: https://api.github.com/repos/mg0x7BE/skunk-html/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 SkunkHTML is a blog that runs on GitHub Pages. A fork of its repository holds the Markdown posts, and GitHub Actions runs an F# program that converts the posts to HTML and deploys the result to GitHub Pages.

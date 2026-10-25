@@ -11,6 +11,7 @@ description: Static site generator written in Clojure that builds sites from org
 status: stub
 maintainer: Nurullah Akkaya
 maintainerType: individual
+language: clojure
 runtime:
   - jvm
 contentStore:
@@ -39,6 +40,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://github.com/nakkaya/static/blob/master/readme.org
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/nakkaya/static
     checkedAt: 2026-10-23
   - field: runtime
     url: https://nakkaya.com/static.html
@@ -74,6 +78,8 @@ sources:
     url: https://nakkaya.com/static.html
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Static is a static site generator written in Clojure. It parses org-mode and Markdown files, and its templates are written in Clojure with Hiccup. The project is built from source with Leiningen, and the built jar runs the site build from the command line.

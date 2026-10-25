@@ -11,6 +11,7 @@ status: active
 maintainer: Paul Hudson
 maintainerType: individual
 firstRelease: 2024
+language: swift
 runtime:
   - binary
 renderingModes:
@@ -33,6 +34,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/twostraws/Ignite/main/README.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/twostraws/Ignite
     checkedAt: 2026-10-23
   - field: category
     url: https://raw.githubusercontent.com/twostraws/Ignite/main/README.md
@@ -71,6 +75,8 @@ sources:
     url: https://api.github.com/repos/twostraws/Ignite/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Ignite is a static site builder for Swift developers. Sites are written as Swift code with a SwiftUI-like API, and the ignite build command converts that code into HTML in a Build folder. The command-line tool is installed from the source repository with make install. Paul Hudson originally created the project, as the README states.

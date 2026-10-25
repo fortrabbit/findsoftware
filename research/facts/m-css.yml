@@ -4,6 +4,11 @@ status: accepted
 checkedAt: 2026-10-23
 description: CSS framework and site and documentation theme for content-oriented websites, written without JavaScript, with a Pelican theme and Python and Doxygen documentation generators.
 facts:
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/mosra/m.css
+    checkedAt: 2026-10-25
+    via: api
   - field: homepage
     value: https://mcss.mosra.cz/
     url: https://mcss.mosra.cz/
@@ -107,7 +112,7 @@ facts:
     checkedAt: 2026-10-23
     via: page
     quote: "Twitter --- https://twitter.com/czmosra"
-notFound: [currentMajor, latestReleaseDate, firstRelease, pricingPage, hqCountry, parent, wikidata, forum, discord, mastodon, bluesky, subreddit, newsletter, runtimeMin, language]
+notFound: [currentMajor, latestReleaseDate, firstRelease, pricingPage, hqCountry, parent, wikidata, forum, discord, mastodon, bluesky, subreddit, newsletter, runtimeMin]
 unreadable: []
 notes: >
   The project has no GitHub release and no tag, so no major version or release date is recorded; lastCommitDate is the committer date of the newest commit on master, and the import judges listing by it.
@@ -115,4 +120,4 @@ notes: >
   The repository holds a Pelican theme (pelican-theme/), a Doxygen C++ documentation theme with doxygen.py, and a Python documentation theme with python.py; the generators are recorded as docs-generator in categories.
   The homepage gives Gitter as a chat, which has no field; the copyright on the homepage reads 2017 to 2024.
   The GitHub license detection reads NOASSERTION, so the license comes from the README statement.
-  The homepage is served over https. The Pelican theme and plugins state Python 3.5 and newer, and the Python and Doxygen documentation generators state Python 3.6, so no single runtimeMin is recorded. The GitHub language field reads Python, which no page states, so language is not recorded.
+  The homepage is served over https. The Pelican theme and plugins state Python 3.5 and newer, and the Python and Doxygen documentation generators state Python 3.6, so no single runtimeMin is recorded. The language comes from the GitHub API, which reads Python, since no page states it.

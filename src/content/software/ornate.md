@@ -12,6 +12,7 @@ status: stub
 maintainer: Stefan Zeiger
 maintainerType: individual
 firstRelease: 2016
+language: scala
 runtime:
   - jvm
 runsAs:
@@ -37,6 +38,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/szeiger/ornate/master/LICENSE.txt
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/szeiger/ornate
     checkedAt: 2026-10-23
   - field: runtime
     url: https://raw.githubusercontent.com/szeiger/ornate/master/README.md
@@ -78,6 +82,8 @@ sources:
     url: https://api.github.com/repos/szeiger/ornate/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Ornate is a Scala tool that builds multi-page HTML sites from Markdown sources and runs on the JVM. It is used from sbt, through an sbt plugin with the `sbt ornate` task, or from the command line with the core package. By default the site is written to `target/doc`.

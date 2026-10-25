@@ -10,6 +10,7 @@ description: Erlang static site generator that builds a site from an index modul
 status: stub
 maintainer: gar1t
 maintainerType: individual
+language: other
 runtime:
   - beam
 hosting:
@@ -41,6 +42,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://github.com/gar1t/lambdapad/blob/master/docs/articles/front-page.md
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/gar1t/lambdapad
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/gar1t/lambdapad/blob/master/docs/articles/getting-started.md
@@ -79,6 +83,8 @@ sources:
     url: https://github.com/gar1t/lambdapad/blob/master/docs/articles/getting-started.md
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Lambda Pad is a static site generator written in Erlang. A site is defined by an Erlang module, which loads its data from plain-text files such as Markdown and JSON in the project and generates the site with Django templates. Running `lpad-gen` in the project directory builds the site. The repository's docs folder holds the documentation, including a getting-started page that describes cloning the repository and running make.

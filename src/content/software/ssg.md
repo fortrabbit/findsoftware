@@ -10,6 +10,7 @@ description: Static site generator for Lustre projects, written in Gleam.
 status: active
 maintainer: lustre-labs
 firstRelease: 2023
+language: other
 runtime:
   - beam
   - node
@@ -48,6 +49,9 @@ sources:
   - field: installMethod
     url: https://github.com/lustre-labs/ssg/blob/main/README.md
     checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/lustre-labs/ssg
+    checkedAt: 2026-10-23
   - field: runtime
     url: https://github.com/lustre-labs/ssg/blob/main/README.md
     checkedAt: 2026-10-23
@@ -79,6 +83,8 @@ sources:
     url: https://api.github.com/repos/lustre-labs/ssg/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 lustre_ssg is a static site generator for Lustre projects, written in Gleam, and it runs on both Gleam's Erlang and JavaScript targets. A project declares its routes in a build script and runs it with gleam run -m build, and the output is a folder of HTML files. The README states that the package has no command line interface, no built-in server and no client-side hydration.

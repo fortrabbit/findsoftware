@@ -10,6 +10,7 @@ description: Open-source content management system built on Node.js and MongoDB,
 status: discontinued
 maintainer: David Kaneda
 firstRelease: 2013
+language: javascript
 runtime:
   - node
 hosting:
@@ -49,6 +50,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/bucketsio/buckets/master/package.json
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/bucketsio/buckets
     checkedAt: 2026-10-23
   - field: runtimeMin
     url: https://registry.npmjs.org/buckets
@@ -99,6 +103,7 @@ sources:
     url: https://api.npmjs.org/downloads/point/last-week/buckets
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
 ---
 
 Buckets is an open-source content management system that stores its content in MongoDB and publishes it through routes. Each route maps an Express-style URL pattern to a Handlebars template, and the template pulls entries from the database with an entries helper. The package is installed from npm into a Node.js application, and the running server serves the site together with an admin interface at a configurable URL segment. The README also lists REST API documentation for the project.

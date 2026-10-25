@@ -11,6 +11,7 @@ description: Python package that generates API documentation for modules and pac
 status: active
 maintainer: pdoc3
 firstRelease: 2019
+language: python
 runtime:
   - python
 hosting:
@@ -26,6 +27,9 @@ contributors: 63
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
+  - field: language
+    url: https://api.github.com/repos/pdoc3/pdoc
+    checkedAt: 2026-10-25
   - field: urls
     url: https://api.github.com/repos/pdoc3/pdoc
     checkedAt: 2026-10-23
@@ -75,6 +79,8 @@ sources:
     url: https://api.github.com/repos/pdoc3/pdoc/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 pdoc, published on PyPI as pdoc3, generates API documentation for Python modules and packages. It reads docstrings and type annotations and can render them with customized templates. The README lists a built-in development web server for previewing rendered docstrings, and the project installs with pip. The [documentation](https://pdoc3.github.io/pdoc/doc/pdoc/) is generated with pdoc itself.

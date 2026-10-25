@@ -13,6 +13,7 @@ status: active
 maintainer: Sakib Hadžiavdić
 maintainerType: individual
 firstRelease: 2018
+language: scala
 runtime:
   - jvm
 hosting:
@@ -45,6 +46,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/sake92/hepek/master/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/sake92/hepek
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/sake92/hepek/blob/master/README.md
@@ -92,6 +96,8 @@ sources:
     url: https://api.github.com/repos/sake92/hepek/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Hepek is a Scala toolkit for making websites. Its static site generator, Hepek SSG, writes Scala objects to files: each page is plain Scala built from Scalatags, a Scala DSL for HTML, and from Markdown for text, so there is no separate template language. The repository also holds Hepek Components, a library of typesafe templates, grids, forms, code highlighting and markdown rendering for the JVM and Scala.js, plus integrations for the Sharaf, Play, Http4s and ZIO frameworks.

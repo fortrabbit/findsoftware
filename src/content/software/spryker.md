@@ -12,6 +12,7 @@ status: stub
 maintainer: Spryker Systems GmbH
 maintainerType: company
 hqCountry: DE
+language: php
 runtime:
   - php
 hosting:
@@ -27,6 +28,9 @@ social:
 addedAt: 2026-10-24
 checkedAt: 2026-10-24
 sources:
+  - field: language
+    url: https://api.github.com/repos/spryker-shop/b2c-demo-shop
+    checkedAt: 2026-10-25
   - field: name
     url: https://spryker.com/
     checkedAt: 2026-10-24
@@ -64,6 +68,7 @@ sources:
     url: https://docs.spryker.com/
     checkedAt: 2026-10-24
 ai: authored
+npmWeeklyDownloads: null
 ---
 
 Spryker is a commerce platform from Spryker Systems GmbH, which describes its offer as PaaS+ Cloud Commerce. The docs describe it as a platform-as-a-service solution with a Back Office for shop administration. The public GitHub repository holds the B2C Demo Shop. Its README installs the demo shop locally by cloning the demo shop and the Docker SDK, then bootstrapping a Docker setup.

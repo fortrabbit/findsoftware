@@ -12,6 +12,7 @@ status: stub
 maintainer: Eitaro Fukamachi
 maintainerType: individual
 firstRelease: 2013
+language: other
 templating: djula
 installMethod: Quicklisp (ql:quickload)
 licenseModel: open-source
@@ -32,6 +33,9 @@ sources:
     checkedAt: 2026-10-24
   - field: maintainer
     url: https://raw.githubusercontent.com/fukamachi/caveman/master/caveman2.asd
+    checkedAt: 2026-10-24
+  - field: language
+    url: https://api.github.com/repos/fukamachi/caveman
     checkedAt: 2026-10-24
   - field: category
     url: https://github.com/fukamachi/caveman/blob/master/README.markdown
@@ -58,6 +62,8 @@ sources:
     url: https://api.github.com/repos/fukamachi/caveman/contributors
     checkedAt: 2026-10-24
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Caveman2 is a web application framework for Common Lisp, built on ningle and Clack. Djula is its default templating engine, and because it is based on Clack the same application can run on several web servers without code changes. Its source is public on GitHub.

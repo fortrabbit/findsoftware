@@ -11,6 +11,7 @@ description: Scala library and sbt plugin that generates HTML sites and EPUB and
 status: active
 maintainer: Typelevel
 firstRelease: 2016
+language: scala
 runtime:
   - jvm
 hosting:
@@ -44,6 +45,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://api.github.com/orgs/typelevel
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/typelevel/Laika
     checkedAt: 2026-10-23
   - field: category
     url: https://typelevel.org/Laika/
@@ -85,6 +89,8 @@ sources:
     url: https://api.github.com/repos/typelevel/Laika/contributors?per_page=1
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Laika turns Markdown and reStructuredText sources into HTML sites and into EPUB and PDF e-books, and is used as a Scala library or an sbt plugin. It runs on the JVM, and its library can also run in the browser through Scala.js. The sbt task laikaSite writes the HTML site to a folder in the project's target directory, and a preview task serves that folder on localhost. The project is hosted under the Typelevel organization on GitHub, and questions go to its discussions or to the Typelevel chat.

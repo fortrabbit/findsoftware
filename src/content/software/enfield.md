@@ -10,6 +10,7 @@ status: discontinued
 maintainer: Filipe Fortes
 maintainerType: individual
 firstRelease: 2012
+language: javascript
 runtime:
   - node
 runtimeMin: node 0.8
@@ -42,6 +43,9 @@ sources:
     checkedAt: 2026-10-22
   - field: maintainer
     url: https://github.com/fortes/enfield/blob/master/LICENSE
+    checkedAt: 2026-10-22
+  - field: language
+    url: https://api.github.com/repos/fortes/enfield
     checkedAt: 2026-10-22
   - field: category
     url: https://github.com/fortes/enfield/blob/master/README.md
@@ -86,6 +90,7 @@ sources:
     url: https://api.npmjs.org/downloads/point/last-week/enfield
     checkedAt: 2026-10-22
 ai: authored
+packagistDownloads: null
 ---
 
 Enfield is a Jekyll-like static site generator for Node.js. It renders Markdown posts through Liquid layouts, serves the site locally, and loads plugins from a `_plugins` directory. The README says the project aims to be as compatible as possible with Jekyll.

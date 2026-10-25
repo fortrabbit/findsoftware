@@ -12,6 +12,7 @@ status: discontinued
 maintainer: Sparanoid, Inc.
 maintainerType: company
 firstRelease: 2014
+language: css
 runtime:
   - ruby
   - node
@@ -55,6 +56,9 @@ sources:
   - field: basedOn
     url: https://sparanoid.com/lab/amsf/getting-started.html
     checkedAt: 2026-10-22
+  - field: language
+    url: https://api.github.com/repos/sparanoid/almace-scaffolding
+    checkedAt: 2026-10-22
   - field: runtime
     url: https://sparanoid.com/lab/amsf/getting-started.html
     checkedAt: 2026-10-22
@@ -95,6 +99,7 @@ sources:
     url: https://api.github.com/repos/sparanoid/almace-scaffolding/contributors
     checkedAt: 2026-10-22
 ai: authored
+packagistDownloads: null
 ---
 
 Almace Scaffolding, also called AMSF, is a framework built on Jekyll. A developer works on a site locally with Ruby and Node.js, runs Grunt tasks to serve and build it, and takes the output from a _site folder. The deployment guide says that folder can be uploaded to a web host, so the live site needs only static file serving. Sparanoid, Inc. publishes the project, and its documentation sits on the project's own site.

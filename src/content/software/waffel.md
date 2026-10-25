@@ -12,6 +12,7 @@ status: stub
 maintainer: Diego Caponera
 maintainerType: individual
 firstRelease: 2015
+language: javascript
 runtime:
   - node
 hosting:
@@ -46,6 +47,9 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://moonwave99.github.io/waffel/
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/moonwave99/waffel
     checkedAt: 2026-10-23
   - field: runtime
     url: https://moonwave99.github.io/waffel/docs/
@@ -96,6 +100,7 @@ sources:
     url: https://api.npmjs.org/downloads/point/last-week/waffel
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
 ---
 
 Waffel is a static site generator for Node.js that builds a website from a well structured data folder of content and HTML views. The project publishes it as the npm package `waffel`, which a Node.js script requires to build the site. Its views use Nunjucks, and the [documentation](https://moonwave99.github.io/waffel/docs/) covers the options, events, helpers and filters. The homepage describes the output as static site generation and lists the localization of content among its features.

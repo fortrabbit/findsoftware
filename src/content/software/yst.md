@@ -10,6 +10,7 @@ status: active
 maintainer: John MacFarlane
 maintainerType: individual
 firstRelease: 2009
+language: haskell
 runtime:
   - binary
 hosting:
@@ -39,6 +40,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://hackage.haskell.org/package/yst/yst.cabal
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/jgm/yst
     checkedAt: 2026-10-23
   - field: runtime
     url: https://raw.githubusercontent.com/jgm/yst/master/README.markdown
@@ -89,6 +93,8 @@ sources:
     url: https://api.github.com/repos/jgm/yst/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 yst is a command-line tool that generates a static website by filling string templates with data from YAML or CSV files, or from SQLite3 databases. It is written in Haskell and installed with `cabal install yst`. Running `yst` writes the site to a `site` directory. The README describes templates written as Markdown with pandoc extensions, which yst converts to HTML with pandoc.

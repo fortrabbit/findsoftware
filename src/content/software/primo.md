@@ -11,6 +11,7 @@ category:
 description: Primo is an open source content management system that builds sites from Svelte blocks and lets clients edit their content in a visual editor.
 status: active
 maintainer: Matthew Morris
+language: javascript
 runtime:
   - binary
   - node
@@ -62,6 +63,9 @@ sources:
   - field: templating
     url: https://raw.githubusercontent.com/primocms/primo/main/README.md
     checkedAt: 2026-10-22
+  - field: language
+    url: https://api.github.com/repos/primocms/primo
+    checkedAt: 2026-10-22
   - field: runtime
     url: https://raw.githubusercontent.com/primocms/primo/main/README.md
     checkedAt: 2026-10-22
@@ -99,6 +103,7 @@ sources:
     url: https://api.npmjs.org/downloads/point/last-week/primo-cli
     checkedAt: 2026-10-22
 ai: authored
+packagistDownloads: null
 ---
 
 Primo is an open source content management system. Developers build pages from reusable Svelte blocks, and clients edit the content in a visual editor in the browser. The site is kept as a database and as a folder of structured files, and the same server runs the CMS and serves the published sites. The [documentation](https://docs.primo.build/getting-started/quickstart) covers local and deployed setups.

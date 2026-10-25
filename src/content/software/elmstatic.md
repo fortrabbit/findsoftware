@@ -12,6 +12,7 @@ status: stub
 maintainer: Alex Korban
 maintainerType: individual
 firstRelease: 2017
+language: other
 hosting:
   - static
 templating: elm
@@ -42,6 +43,9 @@ sources:
     checkedAt: 2026-10-22
   - field: maintainer
     url: https://registry.npmjs.org/elmstatic/0.7.3
+    checkedAt: 2026-10-22
+  - field: language
+    url: https://api.github.com/repos/alexkorban/elmstatic/languages
     checkedAt: 2026-10-22
   - field: category
     url: https://raw.githubusercontent.com/alexkorban/elmstatic/master/README.md
@@ -86,6 +90,7 @@ sources:
     url: https://api.npmjs.org/downloads/point/last-week/elmstatic
     checkedAt: 2026-10-22
 ai: authored
+packagistDownloads: null
 ---
 
 Elmstatic is a static site generator in which page layouts are written in Elm and posts are written in Markdown or elm-markup. It is installed from npm and calls the `elm` executable during the build. According to the [project page](https://korban.net/elm/elmstatic), the output includes RSS feeds and is published to the host of your choice.

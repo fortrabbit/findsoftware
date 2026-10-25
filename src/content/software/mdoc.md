@@ -12,6 +12,7 @@ status: active
 maintainer: mdoc developers
 maintainerType: community
 firstRelease: 2018
+language: scala
 runtime:
   - jvm
 runtimeMin: jvm 11
@@ -86,7 +87,12 @@ sources:
   - field: runsAs
     url: https://scalameta.org/mdoc/docs/installation.html
     checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/scalameta/mdoc
+    checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 mdoc is a markdown documentation tool for Scala. It reads markdown sources, compiles and evaluates the Scala code blocks in them, and writes markdown in which each block shows its result, so the examples in the documentation are type-checked. It runs as the sbt-mdoc plugin in an sbt build, where the docs/mdoc task generates the documentation, from the command line through coursier, or as a library API. The project is maintained by the mdoc developers. A [migration guide](https://scalameta.org/mdoc/docs/tut.html) covers moving documentation over from tut.

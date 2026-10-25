@@ -12,6 +12,7 @@ status: active
 maintainer: INRIA
 maintainerType: individual
 firstRelease: 2012
+language: other
 hosting:
   - static
 i18n: multi-language sites
@@ -44,6 +45,9 @@ sources:
     url: https://www.good-eris.net/stog/
     checkedAt: 2026-10-23
   - field: category
+    url: https://www.good-eris.net/stog/
+    checkedAt: 2026-10-23
+  - field: language
     url: https://www.good-eris.net/stog/
     checkedAt: 2026-10-23
   - field: installMethod
@@ -80,6 +84,8 @@ sources:
     url: https://framagit.org/api/v4/projects/zoggy%2Fstog/repository/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Stog is a static site and blog generator written in OCaml. It compiles XML documents into static XML and HTML files, handles blog posts with dates, topics, keywords and RSS feeds, and supports multi-language sites. The [installation page](https://www.good-eris.net/stog/install.html) describes installing it with opam, and the source is hosted on Framagit.

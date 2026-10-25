@@ -11,6 +11,7 @@ status: stub
 maintainer: Martin Muehlbauer
 maintainerType: individual
 firstRelease: 2017
+language: other
 runtime:
   - binary
 hosting:
@@ -41,6 +42,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://github.com/kambrium/dssg/blob/master/LICENSE.txt
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://api.github.com/repos/kambrium/dssg
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/kambrium/dssg/blob/master/README.md
@@ -88,6 +92,8 @@ sources:
     url: https://api.github.com/repos/kambrium/dssg/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 DSSG is a static site generator written in the D programming language. Each page is one TOML file of key-value pairs that hold both metadata and content, and a key whose name ends in `_md` is read as Markdown and converted to HTML. Content may also be pure HTML, and a project can use several Mustache templates.

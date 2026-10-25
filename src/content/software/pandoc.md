@@ -12,6 +12,7 @@ status: active
 maintainer: John MacFarlane
 maintainerType: individual
 firstRelease: 2007
+language: haskell
 runsAs:
   - local
   - always-on
@@ -39,6 +40,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://raw.githubusercontent.com/jgm/pandoc/main/COPYRIGHT
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://github.com/jgm/pandoc/blob/main/README.md
     checkedAt: 2026-10-23
   - field: category
     url: https://pandoc.org
@@ -99,6 +103,8 @@ headlessApi: null
 templating: null
 i18n: null
 renderingModes: null
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Pandoc is a Haskell library for converting from one markup format to another, and a command-line tool that uses this library. The [installation page](https://pandoc.org/installing.html) lists installers, package managers, Docker images and binary archives for each platform. Pandoc can also run as a web server or as a CGI program, a mode the [pandoc-server page](https://pandoc.org/pandoc-server.html) describes. The project's COPYRIGHT file names John MacFarlane as the copyright holder.

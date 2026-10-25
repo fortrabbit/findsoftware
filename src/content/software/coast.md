@@ -11,6 +11,7 @@ description: Full-stack web framework for Clojure that renders HTML on the serve
 status: stub
 maintainer: Sean Walker
 firstRelease: 2018
+language: clojure
 runtime:
   - jvm
 hosting:
@@ -43,6 +44,9 @@ sources:
     checkedAt: 2026-10-24
   - field: maintainer
     url: https://raw.githubusercontent.com/coast-framework/coast/master/LICENSE
+    checkedAt: 2026-10-24
+  - field: language
+    url: https://api.github.com/repos/coast-framework/coast
     checkedAt: 2026-10-24
   - field: runtime
     url: https://raw.githubusercontent.com/coast-framework/coast/master/README.md
@@ -84,6 +88,8 @@ sources:
     url: https://api.github.com/repos/coast-framework/coast/contributors
     checkedAt: 2026-10-24
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 Coast is a full-stack web framework written in Clojure that renders HTML on the server. A project is created with a command-line script, `coast new`, and the generated development setup creates a SQLite database. Templates are written with hiccup, and the framework runs on the Java virtual machine. The MIT license names Sean Walker as the copyright holder.

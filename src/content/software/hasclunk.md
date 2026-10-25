@@ -11,6 +11,7 @@ status: stub
 maintainer: Jelle Hermsen
 maintainerType: individual
 firstRelease: 2020
+language: haskell
 runtime:
   - binary
 contentStore:
@@ -35,6 +36,9 @@ sources:
     checkedAt: 2026-10-23
   - field: maintainer
     url: https://git.sr.ht/~jelle/HasClunk/blob/main/LICENSE
+    checkedAt: 2026-10-23
+  - field: language
+    url: https://git.sr.ht/~jelle/HasClunk
     checkedAt: 2026-10-23
   - field: category
     url: https://git.sr.ht/~jelle/HasClunk
@@ -73,6 +77,8 @@ sources:
     url: https://api.github.com/repos/jelliehermsen/HasClunk/contributors
     checkedAt: 2026-10-23
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 HasClunk is a static blog generator written in Haskell. Posts are files in a `posts` directory, which HasClunk converts to HTML, using Pandoc by default, and wraps in header and footer template files. The README describes `cabal install` as the install route, after ghc and cabal are installed. Jelle Hermsen holds the copyright under the BSD-3-Clause license.
