@@ -144,7 +144,8 @@ body > header {
   gap: var(--space-sm) var(--space-xl);
   /* Baseline, not centre: the name, the nav and the field are all type, and type lines up on its baseline. */
   align-items: baseline;
-  padding-top: var(--space-lg);
+  /* As far from the top as the content is from the left edge, so the corner reads square. */
+  padding-top: var(--space-md);
   padding-bottom: var(--space-xs);
 }
 
@@ -232,6 +233,7 @@ html:not(.js) .graph-dock {
   .graph-dock > [data-graph]:not(.expanded) {
     position: sticky;
     top: 0;
-    border-width: 0 0 0 var(--rule-hairline);
+    /* As strong as the rule over the register, so the edge reads as something to take hold of. */
+    border-width: 0 0 0 var(--rule-strong);
   }
 }

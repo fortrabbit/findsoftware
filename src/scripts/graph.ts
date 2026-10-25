@@ -323,7 +323,10 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
     expanded = next;
     root.classList.toggle('expanded', next);
     expandButton?.setAttribute('aria-pressed', String(next));
-    if (!next) apply(0);
+    // Over the whole screen, the page behind is out of reach for Tab and screen readers until it closes.
+    for (const part of document.querySelectorAll<HTMLElement>('body > :not([data-graph-dock])')) part.inert = next;
+    if (next) expandButton?.focus();
+    else apply(0);
   };
 
   sigma.on('clickStage', () => expanded && focus && stepUp());
@@ -381,7 +384,13 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
     sigma.setSetting('defaultEdgeColor', colors.quiet);
   };
   // The theme switch sets data-theme on the root; the system setting changes the media query.
-  const themeWatch = new MutationObserver(repaint);
+  // The router rewrites every <html> attribute on each page; only a theme that differs repaints.
+  let theme = document.documentElement.dataset.theme;
+  const themeWatch = new MutationObserver(() => {
+    if (document.documentElement.dataset.theme === theme) return;
+    theme = document.documentElement.dataset.theme;
+    repaint();
+  });
   themeWatch.observe(document.documentElement, { attributeFilter: ['data-theme'] });
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', repaint, { signal: teardown.signal });
 

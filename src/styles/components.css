@@ -1094,7 +1094,8 @@ html.js [data-find-fallback] {
   }
 }
 
-@container content (min-width: 59.5rem) {
+/* Four across once each box has about eleven rem: the longest common label, "In the visitor's browser", still fits. */
+@container content (min-width: 46rem) {
   .find-filters-lead {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -1103,7 +1104,7 @@ html.js [data-find-fallback] {
 /* Taller as well as wider, for the same reason: entry price is a scale, and a
    scale that scrolls hides which end of it the reader is looking at. */
 .find-filters-lead .find-values {
-  --find-rows: 7.5;
+  --find-rows: 6.5;
 }
 
 /* Denser, so the second band reads as the second band. The half row stays: a
@@ -1290,6 +1291,8 @@ html.js [data-find-fallback] {
  */
 .find-facet label {
   display: flex;
+  /* Shrinks below its text, so the count keeps its place and the label is the part cut short. */
+  min-width: 0;
   gap: var(--space-2xs);
   align-items: center;
   font-size: var(--text-xs);

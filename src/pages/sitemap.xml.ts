@@ -46,8 +46,8 @@ const writtenPages = new Map(
 /* The search page draws no record of its own: nothing on it moves when one changes. */
 const undated = new Set(['/search/']);
 
-/* Pages that render noindex: a sitemap listing one contradicts the page's own head. */
-const noindex = new Set(['/stubs/']);
+/* Pages that render noindex: a sitemap listing one contradicts the page's own head. /graph/ only forwards. */
+const noindex = new Set(['/stubs/', '/graph/']);
 export const GET: APIRoute = async ({ site }) => {
   const origin = site?.origin ?? '';
   const providers = await loadIndexed();
