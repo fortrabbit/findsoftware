@@ -358,7 +358,7 @@ const metaDescription = data.description
     },
   ]}
 >
-  <p class="crumb" data-pagefind-ignore>
+  <Fragment slot="crumb">
     <a href="/">Home</a>
     {
       trail.map((step) => (
@@ -368,7 +368,7 @@ const metaDescription = data.description
         </>
       ))
     }
-  </p>
+  </Fragment>
   <article>
     <div class="record-title">
       <ProviderLogo id={provider.id} class="record-logo" eager />

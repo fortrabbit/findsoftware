@@ -105,12 +105,12 @@ const here = pairPath({ a, av, b, bv });
   ]}
 >
   {/* Both parents, because this page belongs to both and a reader may have come from either. */}
-  <p class="crumb" data-pagefind-ignore>
+  <Fragment slot="crumb">
     <a href="/">Home</a> ›
     <a href={`${facetIndex(a.id)}${av.slug}/`}>{av.label}</a>
     <span aria-hidden="true"> · </span>
     <a href={`${facetIndex(b.id)}${bv.slug}/`}>{bv.label}</a>
-  </p>
+  </Fragment>
 
   <div class="page-head">
     <h1>{title}</h1>

@@ -1269,9 +1269,7 @@ html.js [data-find-fallback] {
 }
 
 /**
- * The way up, above the title. Only the parent: the register is what the
- * wordmark does, and a trail of two links where one would do is a component
- * pretending the site is deeper than it is.
+ * The way up, above the title, ending in the link Escape follows.
  *
  * The line it takes is reserved for pages without one — see base.css, where the
  * padding sits on main rather than on an empty element here.
@@ -1289,10 +1287,20 @@ html.js [data-find-fallback] {
  * navigation under the first. Moving rather than removing keeps every H1 on the
  * same line, with or without one.
  */
-.crumb + .page-head > h1,
-.crumb + h1,
+.crumb:not([hidden]) + .page-head > h1,
+.crumb:not([hidden]) + h1,
+.crumb + article > h1,
 .crumb + article > .record-title {
   margin-top: 0;
+}
+
+/* The key that walks the trail, after its last step. */
+.crumb-key {
+  margin-left: var(--space-xs);
+  padding: 0 var(--space-3xs);
+  border: var(--rule-hairline) solid var(--color-ink);
+  border-radius: var(--radius);
+  opacity: 0.6;
 }
 
 /**

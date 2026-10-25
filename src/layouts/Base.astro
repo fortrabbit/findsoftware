@@ -164,6 +164,18 @@ const structured = schema && graph(new URL(origin).origin, Array.isArray(schema)
     </header>
 
     <main data-graph-show={graphState} data-graph-note={graphNote}>
+      {
+        /*
+         * The way up, on every page: a page names its own trail, the rest sit right
+         * under Home. Its last link is where Escape goes, so the key is shown here.
+         * The unfiltered register is the top and hides it; the script shows it once
+         * a filter is set.
+         */
+      }
+      <nav class="crumb" aria-label="Breadcrumb" data-pagefind-ignore hidden={path === '/'}>
+        <slot name="crumb"><a href="/">Home</a></slot>
+        <kbd class="crumb-key" title={`Esc goes up to ${up.label}`}>Esc</kbd>
+      </nav>
       <slot />
     </main>
 
@@ -362,7 +374,11 @@ const structured = schema && graph(new URL(origin).origin, Array.isArray(schema)
         if (back) back.disabled = navigationApi ? !navigationApi.canGoBack : false;
         if (forward) forward.disabled = navigationApi ? !navigationApi.canGoForward : false;
         const link = upLink();
-        if (link) link.toggleAttribute('aria-disabled', atTop());
+        if (link) {
+          link.toggleAttribute('aria-disabled', atTop());
+          link.tabIndex = atTop() ? -1 : 0;
+        }
+        document.querySelector('main > .crumb')?.toggleAttribute('hidden', atTop());
       };
       document.addEventListener('astro:page-load', moves);
       // Filtering changes the address in place; up from a filtered register clears it.

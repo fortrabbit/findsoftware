@@ -147,7 +147,7 @@ const combined = (await pairsFor(facet.id, value.id)).map((group) => ({
      * chain, so its page sits right under Home, as the records' crumbs have it.
      */
   }
-  <p class="crumb" data-pagefind-ignore>
+  <Fragment slot="crumb">
     <a href="/">Home</a>
     {
       !isLanguage && (
@@ -157,7 +157,7 @@ const combined = (await pairsFor(facet.id, value.id)).map((group) => ({
         </>
       )
     }
-  </p>
+  </Fragment>
 
   <div class="page-head">
     <h1>{value.label}</h1>

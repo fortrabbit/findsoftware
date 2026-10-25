@@ -162,7 +162,7 @@ body > main {
  * because markup that exists to hold space is markup a screen reader still
  * announces. Before the figure-band rule below, which overrides both.
  */
-body > main:not(:has(> .crumb)) {
+body > main:not(:has(> .crumb:not([hidden]))) {
   padding-top: calc(var(--space-xs) + var(--text-xs) * var(--leading-tight) + var(--space-md));
 }
 
