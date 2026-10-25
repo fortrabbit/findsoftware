@@ -94,6 +94,8 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
     zoomToSizeRatioFunction: () => 1,
     // A page without the graph hides it, and a hidden container has no size.
     allowInvalidContainer: true,
+    // The whole graph runs nearly to the frame's edges; the controls may sit over its top row.
+    stagePadding: 8,
     defaultEdgeColor: colors.quiet,
     // A halo in the page colour keeps a label readable where lines cross it.
     defaultDrawNodeLabel: (context, data) => {
