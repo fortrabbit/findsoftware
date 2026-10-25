@@ -31,6 +31,9 @@ latestReleaseDate: 2026-10-08
 githubStargazers: 3378
 packagistDownloads: 4037697
 contributors: 359
+packagistMonthlyDownloads: 154319
+dependentRepos: 989
+dependentPackages: 179
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -103,6 +106,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/backpack/crud.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/backpack%2Fcrud
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/backpack%2Fcrud
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/backpack/crud/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

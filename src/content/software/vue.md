@@ -34,6 +34,8 @@ latestReleaseDate: 2026-10-13
 githubStargazers: 54721
 npmWeeklyDownloads: 10175328
 contributors: 436
+dependentRepos: 902397
+dependentPackages: 95178
 social:
   x: https://x.com/vuejs
   discord: https://discord.com/invite/vue
@@ -103,6 +105,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/vue
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vue
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vue
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

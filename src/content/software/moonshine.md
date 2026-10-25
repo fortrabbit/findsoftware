@@ -27,6 +27,9 @@ currentMajor: "4"
 latestReleaseDate: 2026-10-20
 githubStargazers: 1305
 packagistDownloads: 307675
+packagistMonthlyDownloads: 17025
+dependentRepos: 4
+dependentPackages: 11
 social:
   discord: https://discord.gg/jH6RFXGcy8
 addedAt: 2026-10-21
@@ -89,6 +92,15 @@ sources:
   - field: urls
     url: https://getmoonshine.app/plugins
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/moonshine%2Fmoonshine
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/moonshine%2Fmoonshine
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/moonshine/moonshine/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

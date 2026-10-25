@@ -26,6 +26,8 @@ latestReleaseDate: 2026-03-09
 githubStargazers: 252
 packagistDownloads: 365570
 contributors: 17
+packagistMonthlyDownloads: 16035
+dependentRepos: 37
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -71,6 +73,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/statamic/ssg/contributors
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/statamic%2Fssg
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/statamic/ssg/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

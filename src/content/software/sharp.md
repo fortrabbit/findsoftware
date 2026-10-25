@@ -29,6 +29,9 @@ currentMajor: "10"
 latestReleaseDate: 2026-10-09
 githubStargazers: 800
 packagistDownloads: 68728
+packagistMonthlyDownloads: 1396
+dependentRepos: 11
+dependentPackages: 1
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -95,6 +98,15 @@ sources:
   - field: latestReleaseDate
     url: https://github.com/code16/sharp/releases/tag/v10.0.2
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/code16%2Fsharp
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/code16%2Fsharp
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/code16/sharp/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

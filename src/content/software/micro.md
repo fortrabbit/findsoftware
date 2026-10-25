@@ -27,6 +27,8 @@ latestReleaseDate: 2022-11-26
 githubStargazers: 10625
 npmWeeklyDownloads: 2640202
 contributors: 58
+dependentRepos: 16360
+dependentPackages: 679
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -78,6 +80,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/micro
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/micro
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/micro
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

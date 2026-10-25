@@ -28,6 +28,8 @@ latestReleaseDate: 2026-08-26
 githubStargazers: 19274
 npmWeeklyDownloads: 973594
 contributors: 115
+dependentRepos: 45
+dependentPackages: 83
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -85,6 +87,12 @@ sources:
   - field: urls
     url: https://elysiajs.com/quick-start.html
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/elysia
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/elysia
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

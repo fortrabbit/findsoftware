@@ -36,6 +36,7 @@ latestReleaseDate: 2024-02-19
 githubStargazers: 944
 packagistDownloads: 19111
 contributors: 1
+packagistMonthlyDownloads: 554
 social:
   x: https://twitter.com/automadcms
   forum: https://github.com/orgs/automadcms/discussions
@@ -126,6 +127,9 @@ sources:
   - field: urls
     url: https://automad.org/
     checkedAt: 2026-10-24
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/automad/automad/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

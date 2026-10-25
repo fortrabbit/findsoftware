@@ -29,6 +29,8 @@ latestReleaseDate: 2026-10-10
 githubStargazers: 95
 packagistDownloads: 4402
 contributors: 2
+packagistMonthlyDownloads: 706
+httpArchiveSites: 379
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -83,6 +85,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/drupal/varbase_project.json
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/drupal/varbase_project/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

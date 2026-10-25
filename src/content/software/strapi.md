@@ -46,6 +46,9 @@ latestReleaseDate: 2026-10-14
 githubStargazers: 73332
 npmWeeklyDownloads: 131609
 contributors: 344
+httpArchiveSites: 14
+dependentRepos: 2962
+dependentPackages: 110
 social:
   x: https://x.com/strapijs
   discord: https://discord.strapi.io
@@ -155,6 +158,15 @@ sources:
   - field: runsAs
     url: https://docs.strapi.io/cms/deployment
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40strapi%2Fstrapi
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40strapi%2Fstrapi
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

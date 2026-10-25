@@ -32,6 +32,8 @@ latestReleaseDate: 2019-05-29
 githubStargazers: 3166
 npmWeeklyDownloads: 24
 contributors: 88
+dependentRepos: 17
+dependentPackages: 14
 social:
   x: https://twitter.com/Phenomic_app
 addedAt: 2026-10-22
@@ -103,6 +105,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@phenomic/core
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40phenomic%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40phenomic%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

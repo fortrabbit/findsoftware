@@ -31,6 +31,8 @@ currentMajor: "1"
 latestReleaseDate: 2021-01-31
 githubStargazers: 378
 contributors: 20
+ecosystemsMonthlyDownloads: 40
+dependentRepos: 2
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -91,6 +93,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/Psycojoker/prosopopee/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/prosopopee
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/prosopopee
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

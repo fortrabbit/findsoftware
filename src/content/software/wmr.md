@@ -29,6 +29,8 @@ latestReleaseDate: 2022-09-27
 githubStargazers: 4908
 npmWeeklyDownloads: 213
 contributors: 32
+dependentRepos: 91
+dependentPackages: 18
 social:
   x: https://twitter.com/preactjs
 addedAt: 2026-10-23
@@ -100,6 +102,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/wmr
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/wmr
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/wmr
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

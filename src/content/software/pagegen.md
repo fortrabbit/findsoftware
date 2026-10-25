@@ -33,6 +33,8 @@ currentMajor: "4"
 latestReleaseDate: 2025-04-23
 githubStargazers: 26
 contributors: 1
+ecosystemsMonthlyDownloads: 107
+dependentRepos: 2
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -96,6 +98,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/oliverfields/pagegen/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/pagegen
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/pagegen
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

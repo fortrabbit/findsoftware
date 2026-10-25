@@ -28,6 +28,9 @@ currentMajor: "3"
 latestReleaseDate: 2026-09-12
 githubStargazers: 1139
 contributors: 51
+ecosystemsMonthlyDownloads: 181952
+dependentRepos: 19
+dependentPackages: 3
 social:
   x: https://twitter.com/apiflask
   forum: https://github.com/apiflask/apiflask/discussions
@@ -88,6 +91,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/apiflask/apiflask/contributors
     checkedAt: 2026-10-24
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/apiflask
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/apiflask
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/apiflask
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

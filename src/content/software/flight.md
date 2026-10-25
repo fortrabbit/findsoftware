@@ -26,6 +26,8 @@ currentMajor: "3"
 latestReleaseDate: 2026-10-07
 githubStargazers: 2893
 packagistDownloads: 114797
+packagistMonthlyDownloads: 14988
+dependentPackages: 5
 social:
   discord: https://discord.gg/Ysr4zqHfbX
 addedAt: 2026-10-20
@@ -88,6 +90,12 @@ sources:
   - field: urls
     url: https://docs.flightphp.com/awesome-plugins/
     checkedAt: 2026-10-20
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/flightphp%2Fcore
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/flightphp/core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

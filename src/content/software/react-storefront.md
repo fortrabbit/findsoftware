@@ -28,6 +28,8 @@ latestReleaseDate: 2022-02-17
 githubStargazers: 839
 npmWeeklyDownloads: 107
 contributors: 15
+dependentRepos: 22
+dependentPackages: 10
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -85,6 +87,12 @@ sources:
   - field: runtimeMin
     url: https://github.com/storefront-foundation/react-storefront/blob/master/README.md
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react-storefront
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react-storefront
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

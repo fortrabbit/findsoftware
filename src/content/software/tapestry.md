@@ -29,6 +29,9 @@ currentMajor: "1"
 latestReleaseDate: 2018-01-03
 githubStargazers: 32
 packagistDownloads: 631
+packagistMonthlyDownloads: 8
+dependentRepos: 4
+dependentPackages: 4
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -95,6 +98,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/tapestry-cloud/tapestry.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/tapestry-cloud%2Ftapestry
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/tapestry-cloud%2Ftapestry
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/tapestry-cloud/tapestry/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -26,6 +26,8 @@ latestReleaseDate: 2016-04-03
 githubStargazers: 47
 npmWeeklyDownloads: 9
 contributors: 1
+dependentRepos: 13
+dependentPackages: 27
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -83,6 +85,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/easystatic
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/easystatic
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/easystatic
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

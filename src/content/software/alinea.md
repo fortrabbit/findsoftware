@@ -28,6 +28,8 @@ latestReleaseDate: 2026-06-26
 githubStargazers: 854
 npmWeeklyDownloads: 1897
 contributors: 12
+dependentRepos: 3
+dependentPackages: 3
 social:
   x: https://twitter.com/alineacms
 addedAt: 2026-10-23
@@ -90,6 +92,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/alineacms/alinea/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/alinea
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/alinea
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

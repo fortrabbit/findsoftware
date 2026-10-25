@@ -28,6 +28,9 @@ currentMajor: "3"
 latestReleaseDate: 2026-09-08
 githubStargazers: 44793
 npmWeeklyDownloads: 1644
+httpArchiveSites: 824
+dependentRepos: 13
+dependentPackages: 4
 social:
   x: https://x.com/meteorjs
   discord: https://discord.gg/hZkTCaVjmT
@@ -83,6 +86,15 @@ sources:
   - field: runsAs
     url: https://docs.meteor.com/tutorials/deployment/deployment.html
     checkedAt: 2026-10-21
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/meteor
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/meteor
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

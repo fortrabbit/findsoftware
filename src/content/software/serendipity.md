@@ -36,6 +36,7 @@ currentMajor: "2"
 latestReleaseDate: 2026-07-22
 githubStargazers: 228
 contributors: 46
+httpArchiveSites: 11
 social:
   forum: https://board.s9y.org
 addedAt: 2026-10-19
@@ -110,6 +111,9 @@ sources:
   - field: urls
     url: https://www.s9y.org/
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

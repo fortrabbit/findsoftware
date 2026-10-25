@@ -14,6 +14,7 @@ hqCountry: IT
 adminUi: true
 i18n: yes
 licenseModel: saas
+httpArchiveSites: 14
 social:
   x: https://twitter.com/ReactBricks
   discord: https://discord.com/invite/8mBXKQUmyV
@@ -44,6 +45,9 @@ sources:
   - field: urls
     url: https://www.reactbricks.com/pricing
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

@@ -23,6 +23,9 @@ latestReleaseDate: 2026-07-16
 githubStargazers: 97931
 npmWeeklyDownloads: 85265574
 contributors: 354
+httpArchiveSites: 690631
+dependentRepos: 1049673
+dependentPackages: 11727
 social:
   x: https://x.com/tailwindcss
 addedAt: 2026-10-19
@@ -79,6 +82,15 @@ sources:
   - field: runsAs
     url: https://tailwindcss.com/docs/installation/using-vite
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tailwindcss
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tailwindcss
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

@@ -30,6 +30,9 @@ currentMajor: "1"
 latestReleaseDate: 2025-09-24
 githubStargazers: 418
 contributors: 5
+ecosystemsMonthlyDownloads: 308
+dependentRepos: 3
+dependentPackages: 2
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -93,6 +96,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/dinoperovic/django-salesman/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-salesman
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-salesman
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-salesman
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

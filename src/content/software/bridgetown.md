@@ -43,6 +43,8 @@ latestReleaseDate: 2026-07-06
 githubStargazers: 1372
 contributors: 95
 pluginCount: 31
+dependentRepos: 200
+dependentPackages: 43
 social:
   mastodon: https://ruby.social/@bridgetown
   discord: https://discord.gg/4E6hktQGz4
@@ -131,6 +133,12 @@ sources:
   - field: runsAs
     url: https://www.bridgetownrb.com/docs/deployment
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/bridgetown
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/bridgetown
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

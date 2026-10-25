@@ -32,6 +32,9 @@ currentMajor: "0"
 latestReleaseDate: 2026-08-25
 githubStargazers: 421
 contributors: 25
+ecosystemsMonthlyDownloads: 6962
+dependentRepos: 36
+dependentPackages: 2
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -95,6 +98,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/palewire/django-bakery/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-bakery
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-bakery
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-bakery
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

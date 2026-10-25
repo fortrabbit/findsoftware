@@ -18,6 +18,7 @@ headlessApi:
   - rest
 i18n: yes
 licenseModel: saas
+httpArchiveSites: 70
 addedAt: 2026-10-24
 checkedAt: 2026-10-24
 sources:
@@ -48,6 +49,9 @@ sources:
   - field: urls
     url: https://www.scrivito.com/pricing
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

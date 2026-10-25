@@ -29,6 +29,8 @@ currentMajor: "4"
 latestReleaseDate: 2026-10-07
 githubStargazers: 18985
 npmWeeklyDownloads: 16076
+dependentRepos: 3033
+dependentPackages: 2356
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -83,6 +85,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/egg
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/egg
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/egg
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

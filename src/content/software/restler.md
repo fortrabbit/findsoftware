@@ -28,6 +28,9 @@ latestReleaseDate: 2026-08-19
 githubStargazers: 1386
 packagistDownloads: 588089
 contributors: 2
+packagistMonthlyDownloads: 7748
+dependentRepos: 52
+dependentPackages: 6
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -88,6 +91,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/luracast/restler.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/luracast%2Frestler
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/luracast%2Frestler
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/luracast/restler/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

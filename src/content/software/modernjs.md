@@ -31,6 +31,8 @@ latestReleaseDate: 2026-10-19
 githubStargazers: 5047
 npmWeeklyDownloads: 7797
 contributors: 143
+dependentRepos: 23
+dependentPackages: 23
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -94,6 +96,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@modern-js/app-tools
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40modern-js%2Fapp-tools
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40modern-js%2Fapp-tools
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

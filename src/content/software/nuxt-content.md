@@ -41,6 +41,8 @@ latestReleaseDate: 2026-10-12
 githubStargazers: 3672
 npmWeeklyDownloads: 120115
 contributors: 316
+dependentRepos: 4679
+dependentPackages: 229
 social:
   bluesky: https://go.nuxt.com/bluesky
   discord: https://discord.gg/sBXDm6e8SP
@@ -125,6 +127,12 @@ sources:
   - field: firstRelease
     url: https://github.com/nuxt/content/releases/tag/v1.0.0
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40nuxt%2Fcontent
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40nuxt%2Fcontent
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

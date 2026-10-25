@@ -31,6 +31,8 @@ currentMajor: "3"
 latestReleaseDate: 2026-05-12
 githubStargazers: 696
 npmWeeklyDownloads: 713
+dependentRepos: 130
+dependentPackages: 2
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -85,6 +87,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/elm-pages
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/elm-pages
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/elm-pages
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

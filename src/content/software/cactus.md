@@ -28,6 +28,8 @@ currentMajor: "3"
 latestReleaseDate: 2016-02-21
 githubStargazers: 3465
 contributors: 40
+ecosystemsMonthlyDownloads: 246
+dependentRepos: 23
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -82,6 +84,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/eudicots/Cactus/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/Cactus
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/Cactus
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

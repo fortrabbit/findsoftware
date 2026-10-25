@@ -25,6 +25,9 @@ currentMajor: "2"
 latestReleaseDate: 2024-10-29
 githubStargazers: 38
 packagistDownloads: 462103
+packagistMonthlyDownloads: 8359
+dependentRepos: 6
+dependentPackages: 3
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -82,6 +85,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/acquia/acquia_cms.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/acquia%2Facquia_cms
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/acquia%2Facquia_cms
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/acquia/acquia_cms/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

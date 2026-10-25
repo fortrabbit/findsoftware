@@ -25,6 +25,8 @@ currentMajor: "5"
 latestReleaseDate: 2026-10-14
 githubStargazers: 3116
 npmWeeklyDownloads: 10066
+dependentRepos: 32
+dependentPackages: 11
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -82,6 +84,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/docus
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/docus
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/docus
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

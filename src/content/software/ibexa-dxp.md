@@ -38,6 +38,7 @@ currentMajor: "5"
 latestReleaseDate: 2026-08-20
 githubStargazers: 21
 packagistDownloads: 16553
+packagistMonthlyDownloads: 464
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -110,6 +111,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/ibexa/oss-skeleton.json
     checkedAt: 2026-10-20
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/ibexa/oss-skeleton/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

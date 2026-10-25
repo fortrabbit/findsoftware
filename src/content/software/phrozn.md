@@ -27,6 +27,8 @@ latestReleaseDate: 2014-01-04
 githubStargazers: 451
 packagistDownloads: 1312
 contributors: 14
+packagistMonthlyDownloads: 3
+dependentRepos: 8
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -87,6 +89,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/pawka/phrozn.json
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/pawka%2Fphrozn
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/pawka/phrozn/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -23,6 +23,9 @@ currentMajor: "5"
 latestReleaseDate: 2026-02-06
 githubStargazers: 361
 packagistDownloads: 118115
+packagistMonthlyDownloads: 26211
+dependentRepos: 61
+dependentPackages: 22
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -77,6 +80,15 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/code-lts/doctum
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/code-lts%2Fdoctum
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/code-lts%2Fdoctum
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/code-lts/doctum/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -19,6 +19,7 @@ i18n: yes, the cart can be translated into any language
 runsAs:
   - browser
 licenseModel: saas
+httpArchiveSites: 303
 social:
   x: https://twitter.com/snipcart
   forum: https://support.snipcart.com/
@@ -64,6 +65,9 @@ sources:
   - field: i18n
     url: https://docs.snipcart.com/v3/setup/localization
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

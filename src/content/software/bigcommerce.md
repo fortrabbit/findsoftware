@@ -19,6 +19,7 @@ headlessApi:
   - graphql
 i18n: yes, localized stores
 licenseModel: saas
+httpArchiveSites: 11787
 social:
   x: https://x.com/poweredbycmrc/
   forum: https://support.bigcommerce.com/s/community/
@@ -61,6 +62,9 @@ sources:
   - field: urls
     url: https://www.bigcommerce.com/
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

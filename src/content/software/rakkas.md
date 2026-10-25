@@ -35,6 +35,8 @@ latestReleaseDate: 2023-04-05
 githubStargazers: 1103
 npmWeeklyDownloads: 116
 contributors: 11
+dependentRepos: 12
+dependentPackages: 6
 social:
   x: https://twitter.com/cyco130
   discord: https://rakkasjs.org/chat
@@ -113,6 +115,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/rakkasjs
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/rakkasjs
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/rakkasjs
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

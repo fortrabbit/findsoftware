@@ -30,6 +30,9 @@ latestReleaseDate: 2026-10-14
 githubStargazers: 25974
 npmWeeklyDownloads: 679326
 contributors: 216
+httpArchiveSites: 63
+dependentRepos: 2769
+dependentPackages: 74
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -90,6 +93,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/redoc
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/redoc
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/redoc
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

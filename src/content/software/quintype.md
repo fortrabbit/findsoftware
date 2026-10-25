@@ -16,6 +16,7 @@ adminUi: true
 headlessApi:
   - rest
 licenseModel: saas
+httpArchiveSites: 140
 social:
   x: https://twitter.com/quintype_inc
 addedAt: 2026-10-24
@@ -42,6 +43,9 @@ sources:
   - field: adminUi
     url: https://www.quintype.com/products/newsroom-cms
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

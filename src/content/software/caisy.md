@@ -17,6 +17,7 @@ headlessApi:
   - graphql
 i18n: yes, content in several locales
 licenseModel: saas
+httpArchiveSites: 10
 social:
   x: https://twitter.com/caisyio
   discord: https://discord.com/invite/pSHPYAq59M
@@ -50,6 +51,9 @@ sources:
   - field: urls
     url: https://caisy.io/developer/docs
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

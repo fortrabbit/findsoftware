@@ -32,6 +32,7 @@ latestReleaseDate: 2020-03-20
 githubStargazers: 144
 npmWeeklyDownloads: 67
 contributors: 6
+dependentRepos: 6
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -95,6 +96,9 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/rosid
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/rosid
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

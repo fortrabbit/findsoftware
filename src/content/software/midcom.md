@@ -21,6 +21,9 @@ license: LGPL-2.1-or-later
 currentMajor: "9"
 latestReleaseDate: 2026-07-02
 packagistDownloads: 3373
+packagistMonthlyDownloads: 22
+dependentRepos: 10
+dependentPackages: 2
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -54,6 +57,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/openpsa/midcom.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/openpsa%2Fmidcom
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/openpsa%2Fmidcom
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/openpsa/midcom/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -31,6 +31,7 @@ currentMajor: "4"
 latestReleaseDate: 2026-10-22
 githubStargazers: 1813
 contributors: 145
+dependentRepos: 29
 social:
   x: https://twitter.com/avo_hq
   forum: https://github.com/avo-hq/avo/discussions
@@ -103,6 +104,9 @@ sources:
   - field: headlessApi
     url: https://avohq.io/pricing
     checkedAt: 2026-10-24
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/avo
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

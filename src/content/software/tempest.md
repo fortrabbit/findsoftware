@@ -39,6 +39,8 @@ latestReleaseDate: 2026-09-08
 githubStargazers: 2276
 packagistDownloads: 52542
 contributors: 103
+packagistMonthlyDownloads: 4684
+dependentPackages: 1
 social:
   x: https://tempestphp.com/twitter/brent
   bluesky: https://tempestphp.com/bluesky/brent
@@ -124,6 +126,12 @@ sources:
   - field: runsAs
     url: https://tempestphp.com/3.x/extra-topics/deployments
     checkedAt: 2026-10-19
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/tempest%2Fframework
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/tempest/framework/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

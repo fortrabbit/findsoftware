@@ -35,6 +35,9 @@ currentMajor: "2"
 latestReleaseDate: 2026-10-19
 githubStargazers: 27204
 npmWeeklyDownloads: 224045
+httpArchiveSites: 5353
+dependentRepos: 8110
+dependentPackages: 624
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -92,6 +95,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/quasar
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/quasar
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/quasar
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

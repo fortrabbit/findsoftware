@@ -25,6 +25,8 @@ currentMajor: "0"
 latestReleaseDate: 2024-11-02
 githubStargazers: 1381
 npmWeeklyDownloads: 7374
+dependentRepos: 6
+dependentPackages: 30
 social:
   discord: https://discord.com/invite/vTvXzBMySh
 addedAt: 2026-10-22
@@ -78,6 +80,12 @@ sources:
   - field: githubStargazers
     url: https://github.com/hattipjs/hattip
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40hattip%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40hattip%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

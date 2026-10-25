@@ -29,6 +29,8 @@ latestReleaseDate: 2026-07-11
 githubStargazers: 19
 npmWeeklyDownloads: 8
 contributors: 1
+dependentRepos: 1
+dependentPackages: 2
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -83,6 +85,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/hikarujs
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/hikarujs
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/hikarujs
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

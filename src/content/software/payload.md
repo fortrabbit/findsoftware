@@ -52,6 +52,8 @@ latestReleaseDate: 2026-10-15
 githubStargazers: 45322
 npmWeeklyDownloads: 581876
 contributors: 436
+dependentRepos: 440
+dependentPackages: 121
 addedAt: 2026-10-18
 checkedAt: 2026-10-18
 sources:
@@ -157,6 +159,12 @@ sources:
   - field: runsAs
     url: https://payloadcms.com/docs/production/deployment
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/payload
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/payload
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

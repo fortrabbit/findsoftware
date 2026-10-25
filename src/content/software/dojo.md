@@ -25,6 +25,9 @@ latestReleaseDate: 2022-03-04
 githubStargazers: 622
 npmWeeklyDownloads: 813
 contributors: 43
+httpArchiveSites: 13975
+dependentRepos: 256
+dependentPackages: 38
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -82,6 +85,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@dojo/framework
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40dojo%2Fframework
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40dojo%2Fframework
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

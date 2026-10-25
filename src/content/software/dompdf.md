@@ -27,6 +27,9 @@ latestReleaseDate: 2026-07-20
 githubStargazers: 11198
 packagistDownloads: 218979915
 contributors: 176
+packagistMonthlyDownloads: 11395011
+dependentRepos: 22012
+dependentPackages: 555
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -87,6 +90,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/dompdf/dompdf.json
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/dompdf%2Fdompdf
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/dompdf%2Fdompdf
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/dompdf/dompdf/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

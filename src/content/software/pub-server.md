@@ -34,6 +34,8 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-02-22
 npmWeeklyDownloads: 74
+dependentRepos: 3
+dependentPackages: 4
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -97,6 +99,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/pub-server
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/pub-server
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/pub-server
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

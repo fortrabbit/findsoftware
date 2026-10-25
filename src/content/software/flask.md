@@ -26,6 +26,10 @@ license: BSD-3-Clause
 currentMajor: "3"
 latestReleaseDate: 2026-02-19
 githubStargazers: 74962
+ecosystemsMonthlyDownloads: 136480505
+httpArchiveSites: 613
+dependentRepos: 119058
+dependentPackages: 2451
 social:
   discord: https://discord.gg/pallets
 addedAt: 2026-10-19
@@ -82,6 +86,18 @@ sources:
   - field: runsAs
     url: https://flask.palletsprojects.com/en/stable/deploying/
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/flask
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/flask
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/flask
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

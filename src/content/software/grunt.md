@@ -24,6 +24,8 @@ latestReleaseDate: 2026-07-28
 githubStargazers: 12232
 npmWeeklyDownloads: 733544
 contributors: 89
+dependentRepos: 720585
+dependentPackages: 39195
 social:
   x: https://twitter.com/gruntjs/
 addedAt: 2026-10-22
@@ -83,6 +85,12 @@ sources:
   - field: urls
     url: https://gruntjs.com/
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/grunt
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/grunt
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

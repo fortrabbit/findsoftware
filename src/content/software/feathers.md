@@ -28,6 +28,8 @@ currentMajor: "5"
 latestReleaseDate: 2026-09-11
 githubStargazers: 15258
 npmWeeklyDownloads: 59753
+dependentRepos: 2269
+dependentPackages: 445
 social:
   discord: https://discord.gg/qa8kez8QBx
 addedAt: 2026-10-21
@@ -81,6 +83,12 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/feathersjs/feathers
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40feathersjs%2Ffeathers
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40feathersjs%2Ffeathers
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

@@ -19,6 +19,7 @@ headlessApi:
   - graphql
 i18n: yes, language variants per content item
 licenseModel: saas
+httpArchiveSites: 630
 social:
   x: https://twitter.com/Kontent_ai
   discord: https://discord.com/invite/G3E8nDM5mB
@@ -61,6 +62,9 @@ sources:
   - field: i18n
     url: https://kontent.ai/learn/docs/languages
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

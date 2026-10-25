@@ -39,6 +39,7 @@ currentMajor: "7"
 latestReleaseDate: 2026-10-06
 githubStargazers: 3487
 pluginCount: 72008
+httpArchiveSites: 2714694
 social:
   bluesky: https://bsky.app/profile/wordpress.org
   mastodon: https://mastodon.world/@WordPress
@@ -131,6 +132,9 @@ sources:
   - field: runsAs
     url: https://wordpress.org/about/requirements/
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

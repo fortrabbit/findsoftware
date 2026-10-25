@@ -23,6 +23,8 @@ currentMajor: "5"
 latestReleaseDate: 2026-10-15
 githubStargazers: 17263
 npmWeeklyDownloads: 76554353
+dependentRepos: 30558
+dependentPackages: 11085
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -68,6 +70,12 @@ sources:
   - field: runsAs
     url: https://vitest.dev/guide/
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vitest
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vitest
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

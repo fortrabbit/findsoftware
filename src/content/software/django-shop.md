@@ -33,6 +33,8 @@ currentMajor: "1"
 latestReleaseDate: 2021-02-02
 githubStargazers: 3320
 contributors: 69
+ecosystemsMonthlyDownloads: 354
+dependentRepos: 79
 social:
   x: https://twitter.com/djangoSHOP
 addedAt: 2026-10-23
@@ -101,6 +103,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/awesto/django-shop/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-SHOP
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-SHOP
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

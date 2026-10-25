@@ -30,6 +30,7 @@ latestReleaseDate: 2019-11-26
 githubStargazers: 305
 npmWeeklyDownloads: 12
 contributors: 3
+dependentRepos: 21
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -96,6 +97,9 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/sergey
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/sergey
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

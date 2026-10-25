@@ -28,6 +28,7 @@ latestReleaseDate: 2021-03-19
 githubStargazers: 3051
 npmWeeklyDownloads: 6
 contributors: 9
+dependentPackages: 1
 social:
   discord: https://discord.gg/A2cHjg3
 addedAt: 2026-10-23
@@ -87,6 +88,9 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@chrisdiana/cmsjs
     checkedAt: 2026-10-23
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40chrisdiana%2Fcmsjs
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

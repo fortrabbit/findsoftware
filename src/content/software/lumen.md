@@ -23,6 +23,9 @@ latestReleaseDate: 2024-12-10
 githubStargazers: 1509
 packagistDownloads: 27749868
 contributors: 240
+packagistMonthlyDownloads: 256482
+dependentRepos: 7610
+dependentPackages: 806
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -74,6 +77,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/laravel/lumen-framework.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/laravel%2Flumen-framework
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/laravel%2Flumen-framework
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/laravel/lumen-framework/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

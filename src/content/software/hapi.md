@@ -28,6 +28,8 @@ latestReleaseDate: 2026-10-21
 githubStargazers: 14791
 npmWeeklyDownloads: 740794
 contributors: 201
+dependentRepos: 18401
+dependentPackages: 1017
 social:
   discord: https://discord.gg/YYxZhpKKvu
 addedAt: 2026-10-22
@@ -87,6 +89,12 @@ sources:
   - field: urls
     url: https://hapi.dev/
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40hapi%2Fhapi
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40hapi%2Fhapi
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

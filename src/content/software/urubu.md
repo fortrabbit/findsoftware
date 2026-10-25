@@ -32,6 +32,8 @@ currentMajor: "1"
 latestReleaseDate: 2026-03-30
 githubStargazers: 178
 contributors: 15
+ecosystemsMonthlyDownloads: 59
+dependentRepos: 6
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -95,6 +97,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/jandecaluwe/urubu/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/urubu
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/urubu
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

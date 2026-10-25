@@ -24,6 +24,7 @@ latestReleaseDate: 2026-10-06
 githubStargazers: 397
 packagistDownloads: 2595
 contributors: 13
+packagistMonthlyDownloads: 1024
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -81,6 +82,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/marko/core.json
     checkedAt: 2026-10-21
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/marko/core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

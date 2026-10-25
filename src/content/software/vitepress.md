@@ -38,6 +38,9 @@ latestReleaseDate: 2025-08-05
 githubStargazers: 18417
 npmWeeklyDownloads: 850580
 contributors: 438
+httpArchiveSites: 638
+dependentRepos: 5497
+dependentPackages: 2145
 wikidata: Q137265963
 addedAt: 2026-10-18
 checkedAt: 2026-10-18
@@ -123,6 +126,15 @@ sources:
   - field: runsAs
     url: https://vitepress.dev/guide/getting-started
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vitepress
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vitepress
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

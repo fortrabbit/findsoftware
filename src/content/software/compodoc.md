@@ -29,6 +29,8 @@ latestReleaseDate: 2026-06-28
 githubStargazers: 4119
 npmWeeklyDownloads: 334990
 contributors: 72
+dependentRepos: 9141
+dependentPackages: 1965
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -89,6 +91,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@compodoc/compodoc
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40compodoc%2Fcompodoc
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40compodoc%2Fcompodoc
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

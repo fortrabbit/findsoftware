@@ -41,6 +41,10 @@ currentMajor: "6"
 latestReleaseDate: 2026-10-06
 githubStargazers: 91427
 contributors: 3509
+ecosystemsMonthlyDownloads: 41143691
+httpArchiveSites: 26142
+dependentRepos: 114817
+dependentPackages: 2455
 social:
   x: https://x.com/djangoproject
   bluesky: https://bsky.app/profile/djangoproject.com
@@ -136,6 +140,18 @@ sources:
   - field: runsAs
     url: https://docs.djangoproject.com/en/6.1/howto/deployment/
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/Django
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/Django
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/Django
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

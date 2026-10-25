@@ -28,6 +28,8 @@ latestReleaseDate: 2026-08-29
 githubStargazers: 6380
 npmWeeklyDownloads: 32589
 contributors: 128
+dependentRepos: 972
+dependentPackages: 449
 social:
   x: https://twitter.com/MoleculerJS
   discord: https://discord.gg/TSEcDRP
@@ -88,6 +90,12 @@ sources:
   - field: runsAs
     url: https://moleculer.services/docs/0.15/deploying.html
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/moleculer
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/moleculer
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

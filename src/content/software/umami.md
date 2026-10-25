@@ -29,6 +29,7 @@ currentMajor: "3"
 latestReleaseDate: 2026-09-17
 githubStargazers: 39458
 contributors: 438
+httpArchiveSites: 25573
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -89,6 +90,9 @@ sources:
   - field: runsAs
     url: https://umami.is/docs/install
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 adminUi: null

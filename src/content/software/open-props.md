@@ -20,6 +20,8 @@ latestReleaseDate: 2026-01-31
 githubStargazers: 5548
 npmWeeklyDownloads: 21491
 contributors: 63
+dependentRepos: 273
+dependentPackages: 38
 social:
   x: https://twitter.com/argyleink
   discord: https://discord.gg/AqA4fU886r
@@ -71,6 +73,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/open-props
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/open-props
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/open-props
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

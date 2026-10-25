@@ -34,6 +34,7 @@ currentMajor: "3"
 latestReleaseDate: 2026-10-15
 githubStargazers: 321
 contributors: 3199
+httpArchiveSites: 67
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -109,6 +110,9 @@ sources:
   - field: contributors
     url: https://github.com/mage-os/mageos-magento2
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -33,6 +33,9 @@ latestReleaseDate: 2022-02-19
 githubStargazers: 2930
 npmWeeklyDownloads: 709
 contributors: 36
+httpArchiveSites: 63
+dependentRepos: 253
+dependentPackages: 67
 social:
   x: https://twitter.com/frontity
   forum: https://community.frontity.org/
@@ -117,6 +120,15 @@ sources:
   - field: urls
     url: https://github.com/frontity/frontity/blob/dev/README.md
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/frontity
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/frontity
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

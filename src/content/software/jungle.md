@@ -29,6 +29,8 @@ latestReleaseDate: 2020-07-18
 githubStargazers: 274
 npmWeeklyDownloads: 3
 contributors: 2
+dependentRepos: 10
+dependentPackages: 3
 social:
   x: https://twitter.com/jungle_js
 addedAt: 2026-10-22
@@ -91,6 +93,12 @@ sources:
   - field: firstRelease
     url: https://api.github.com/repos/junglejs/junglejs/releases
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/junglejs
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/junglejs
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

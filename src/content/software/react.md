@@ -25,6 +25,9 @@ latestReleaseDate: 2026-10-14
 githubStargazers: 251632
 npmWeeklyDownloads: 116163376
 contributors: 411
+httpArchiveSites: 1312185
+dependentRepos: 2830385
+dependentPackages: 275174
 social:
   x: https://twitter.com/reactjs
   bluesky: https://bsky.app/profile/react.dev
@@ -82,6 +85,15 @@ sources:
   - field: runsAs
     url: https://react.dev/reference/react-dom
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

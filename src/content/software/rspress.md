@@ -37,6 +37,8 @@ latestReleaseDate: 2026-09-29
 githubStargazers: 2351
 npmWeeklyDownloads: 40723
 contributors: 158
+dependentRepos: 1
+dependentPackages: 2
 social:
   discord: https://discord.gg/XsaKEEk4mW
 addedAt: 2026-10-22
@@ -114,6 +116,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@rspress/core
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40rspress%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40rspress%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

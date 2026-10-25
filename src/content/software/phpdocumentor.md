@@ -28,6 +28,9 @@ latestReleaseDate: 2026-05-13
 githubStargazers: 4349
 packagistDownloads: 3172755
 contributors: 209
+packagistMonthlyDownloads: 14041
+dependentRepos: 16161
+dependentPackages: 1362
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -103,6 +106,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/phpdocumentor/phpdocumentor.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/phpdocumentor%2Fphpdocumentor
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/phpdocumentor%2Fphpdocumentor
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/phpdocumentor/phpdocumentor/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

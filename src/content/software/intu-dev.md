@@ -26,6 +26,8 @@ latestReleaseDate: 2020-09-27
 githubStargazers: 29
 npmWeeklyDownloads: 31
 contributors: 9
+dependentRepos: 4
+dependentPackages: 5
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -86,6 +88,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/intuition-dev/INTUITION/contributors
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/mbake
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/mbake
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

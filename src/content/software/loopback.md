@@ -28,6 +28,8 @@ currentMajor: "7"
 latestReleaseDate: 2026-08-18
 githubStargazers: 5101
 npmWeeklyDownloads: 21870
+dependentRepos: 1919
+dependentPackages: 392
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -79,6 +81,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@loopback/core
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40loopback%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40loopback%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

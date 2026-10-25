@@ -30,6 +30,8 @@ latestReleaseDate: 2022-09-01
 githubStargazers: 434
 npmWeeklyDownloads: 1
 contributors: 3
+dependentRepos: 3
+dependentPackages: 2
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -93,6 +95,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/CONNECT-platform/codedoc/contributors?anon=true&per_page=100
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40codedoc%2Fcli
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40codedoc%2Fcli
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

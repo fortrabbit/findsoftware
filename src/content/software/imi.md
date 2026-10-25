@@ -30,6 +30,9 @@ currentMajor: "2"
 latestReleaseDate: 2026-07-31
 githubStargazers: 1185
 packagistDownloads: 47691
+packagistMonthlyDownloads: 390
+dependentRepos: 48
+dependentPackages: 30
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -90,6 +93,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/imiphp/imi.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/imiphp%2Fimi
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/imiphp%2Fimi
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/imiphp/imi/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

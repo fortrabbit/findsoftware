@@ -28,6 +28,9 @@ currentMajor: "1"
 latestReleaseDate: 2023-05-09
 githubStargazers: 2925
 packagistDownloads: 105784
+packagistMonthlyDownloads: 654
+dependentRepos: 32
+dependentPackages: 3
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -82,6 +85,15 @@ sources:
   - field: githubStargazers
     url: https://github.com/themsaid/wink
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/themsaid%2Fwink
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/themsaid%2Fwink
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/themsaid/wink/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

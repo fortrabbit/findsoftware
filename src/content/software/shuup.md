@@ -30,6 +30,9 @@ currentMajor: "3"
 latestReleaseDate: 2021-08-17
 githubStargazers: 2406
 contributors: 52
+ecosystemsMonthlyDownloads: 337
+dependentRepos: 34
+dependentPackages: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -96,6 +99,15 @@ sources:
   - field: hqCountry
     url: https://github.com/shuup/shuup/blob/master/README.rst
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/shuup
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/shuup
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/shuup
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

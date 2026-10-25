@@ -33,6 +33,8 @@ currentMajor: "2"
 latestReleaseDate: 2022-07-21
 githubStargazers: 407
 contributors: 17
+ecosystemsMonthlyDownloads: 1293
+dependentRepos: 9
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -102,6 +104,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/grow/grow/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/grow
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/grow
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

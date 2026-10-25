@@ -22,6 +22,8 @@ latestReleaseDate: 2026-05-14
 githubStargazers: 21860
 npmWeeklyDownloads: 3965350
 contributors: 194
+dependentRepos: 16100
+dependentPackages: 5162
 social:
   x: https://x.com/buildWithLit
   bluesky: https://bsky.app/profile/lit.dev
@@ -76,6 +78,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/lit
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/lit
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/lit
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

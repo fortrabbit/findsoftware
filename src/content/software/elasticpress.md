@@ -24,6 +24,8 @@ license: GPL-2.0, GPL v2 or later
 currentMajor: "5"
 latestReleaseDate: 2026-09-10
 githubStargazers: 1302
+httpArchiveSites: 725
+wordpressActiveInstalls: 8000
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -72,6 +74,12 @@ sources:
   - field: githubStargazers
     url: https://github.com/10up/ElasticPress
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: wordpressActiveInstalls
+    url: https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=elasticpress
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

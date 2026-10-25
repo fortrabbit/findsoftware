@@ -40,6 +40,8 @@ latestReleaseDate: 2026-10-08
 githubStargazers: 10524
 npmWeeklyDownloads: 566
 contributors: 46
+dependentRepos: 10
+dependentPackages: 3
 social:
   x: https://twitter.com/evershopjs
   discord: https://discord.gg/GSzt7dt7RM
@@ -127,6 +129,12 @@ sources:
   - field: renderingModes
     url: https://evershop.io/docs/development/getting-started/introduction
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40evershop%2Fevershop
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40evershop%2Fevershop
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

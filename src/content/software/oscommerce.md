@@ -32,6 +32,7 @@ license: Custom osCommerce v4 programme terms limiting use to testing, followed 
 currentMajor: "4"
 githubStargazers: 57
 contributors: 3
+httpArchiveSites: 1641
 social:
   x: https://twitter.com/osCommerce
   forum: https://www.oscommerce.com/forums/
@@ -104,6 +105,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/osCommerce/osCommerce-V4/contributors
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

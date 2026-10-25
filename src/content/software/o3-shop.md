@@ -37,6 +37,7 @@ latestReleaseDate: 2026-10-08
 githubStargazers: 6
 packagistDownloads: 1356
 contributors: 15
+packagistMonthlyDownloads: 31
 social:
   forum: https://community.o3-shop.com/
 addedAt: 2026-10-19
@@ -111,6 +112,9 @@ sources:
   - field: maintainer
     url: https://www.o3-shop.com/impressum.html
     checkedAt: 2026-10-20
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/o3-shop/o3-shop/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

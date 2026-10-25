@@ -31,6 +31,8 @@ currentMajor: "0"
 latestReleaseDate: 2026-07-11
 githubStargazers: 132
 npmWeeklyDownloads: 540
+dependentRepos: 12
+dependentPackages: 19
 social:
   bluesky: https://bsky.app/profile/projectevergreen.bsky.social
   discord: https://greenwoodjs.dev/discord/
@@ -91,6 +93,12 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/ProjectEvergreen/greenwood
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40greenwood%2Fcli
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40greenwood%2Fcli
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

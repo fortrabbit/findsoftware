@@ -35,6 +35,8 @@ currentMajor: "5"
 latestReleaseDate: 2026-07-09
 githubStargazers: 1936
 npmWeeklyDownloads: 1692
+dependentRepos: 49
+dependentPackages: 27
 social:
   bluesky: https://bsky.app/profile/foalts.org
   discord: https://discord.gg/QUrJv98
@@ -101,6 +103,12 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/FoalTS/foal
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40foal%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40foal%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

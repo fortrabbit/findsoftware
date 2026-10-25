@@ -36,6 +36,10 @@ currentMajor: "6"
 latestReleaseDate: 2026-10-09
 githubStargazers: 448
 packagistDownloads: 1387468
+packagistMonthlyDownloads: 24457
+httpArchiveSites: 9368
+dependentRepos: 62
+dependentPackages: 70
 wikidata: Q582482
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
@@ -112,6 +116,18 @@ sources:
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q582482
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/contao%2Fmanager-bundle
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/contao%2Fmanager-bundle
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/contao/manager-bundle/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

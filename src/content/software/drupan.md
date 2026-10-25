@@ -31,6 +31,8 @@ currentMajor: "3"
 latestReleaseDate: 2018-08-03
 githubStargazers: 45
 contributors: 2
+ecosystemsMonthlyDownloads: 43
+dependentRepos: 2
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -91,6 +93,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/fallenhitokiri/drupan/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/drupan
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/drupan
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

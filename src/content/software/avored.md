@@ -29,6 +29,9 @@ latestReleaseDate: 2023-02-02
 githubStargazers: 1543
 packagistDownloads: 17186
 contributors: 42
+packagistMonthlyDownloads: 346
+dependentRepos: 25
+dependentPackages: 15
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -86,6 +89,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/avored/framework.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/avored%2Fframework
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/avored%2Fframework
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/avored/framework/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

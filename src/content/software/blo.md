@@ -24,6 +24,8 @@ currentMajor: "0"
 latestReleaseDate: 2017-10-04
 githubStargazers: 9
 contributors: 1
+ecosystemsMonthlyDownloads: 75
+dependentRepos: 2
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -72,6 +74,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/savuir/blo/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/blo
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/blo
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

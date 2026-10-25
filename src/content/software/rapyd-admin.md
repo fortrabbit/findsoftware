@@ -29,6 +29,7 @@ latestReleaseDate: 2026-10-09
 githubStargazers: 862
 packagistDownloads: 691
 contributors: 6
+packagistMonthlyDownloads: 251
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -95,6 +96,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/zofe/rapyd-admin.json
     checkedAt: 2026-10-21
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/zofe/rapyd-admin/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

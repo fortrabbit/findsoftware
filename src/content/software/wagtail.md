@@ -41,6 +41,10 @@ currentMajor: "8"
 latestReleaseDate: 2026-08-25
 githubStargazers: 20574
 contributors: 1123
+ecosystemsMonthlyDownloads: 586863
+httpArchiveSites: 6309
+dependentRepos: 1955
+dependentPackages: 200
 social:
   bluesky: https://bsky.app/profile/wagtail.org
   mastodon: https://fosstodon.org/@wagtail
@@ -139,6 +143,18 @@ sources:
   - field: runsAs
     url: https://docs.wagtail.org/en/stable/deployment/index.html
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/wagtail
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/wagtail
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/wagtail
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -30,6 +30,8 @@ latestReleaseDate: 2025-11-22
 githubStargazers: 5407
 npmWeeklyDownloads: 102
 contributors: 83
+dependentRepos: 1
+dependentPackages: 2
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -81,6 +83,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@oakserver/oak
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40oakserver%2Foak
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40oakserver%2Foak
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

@@ -22,6 +22,8 @@ latestReleaseDate: 2026-08-20
 githubStargazers: 3170
 npmWeeklyDownloads: 257
 contributors: 31
+dependentRepos: 11
+dependentPackages: 1
 social:
   x: https://x.com/AndreVitorio
   discord: https://discord.gg/qEjtpn7E6F
@@ -74,6 +76,12 @@ sources:
   - field: urls
     url: https://outstatic.com/pricing
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/outstatic
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/outstatic
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

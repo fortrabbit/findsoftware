@@ -30,6 +30,7 @@ currentMajor: "2"
 latestReleaseDate: 2023-01-31
 githubStargazers: 36006
 contributors: 1
+httpArchiveSites: 318
 social:
   forum: https://github.com/slatedocs/slate/discussions
 addedAt: 2026-10-23
@@ -101,6 +102,9 @@ sources:
   - field: licenseModel
     url: https://raw.githubusercontent.com/slatedocs/slate/v2.13.1/LICENSE
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

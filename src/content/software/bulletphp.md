@@ -26,6 +26,9 @@ currentMajor: "1"
 latestReleaseDate: 2021-05-28
 githubStargazers: 415
 packagistDownloads: 50162
+packagistMonthlyDownloads: 58
+dependentRepos: 23
+dependentPackages: 1
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -71,6 +74,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/vlucas/bulletphp.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/vlucas%2Fbulletphp
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/vlucas%2Fbulletphp
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/vlucas/bulletphp/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

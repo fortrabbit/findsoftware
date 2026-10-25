@@ -28,6 +28,8 @@ latestReleaseDate: 2025-09-11
 githubStargazers: 14122
 npmWeeklyDownloads: 13151
 contributors: 66
+dependentRepos: 368
+dependentPackages: 18
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -82,6 +84,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/blitz
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/blitz
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/blitz
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

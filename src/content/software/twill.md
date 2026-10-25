@@ -37,6 +37,9 @@ latestReleaseDate: 2026-07-19
 githubStargazers: 3971
 packagistDownloads: 499344
 contributors: 179
+packagistMonthlyDownloads: 9846
+dependentRepos: 73
+dependentPackages: 16
 social:
   discord: https://discord.gg/cnWk7EFv8R
 addedAt: 2026-10-18
@@ -126,6 +129,15 @@ sources:
   - field: urls
     url: https://twillcms.com/docs/modules/capsules.html
     checkedAt: 2026-10-18
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/area17%2Ftwill
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/area17%2Ftwill
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/area17/twill/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

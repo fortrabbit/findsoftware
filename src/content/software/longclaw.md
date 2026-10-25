@@ -27,6 +27,8 @@ currentMajor: "1"
 latestReleaseDate: 2019-03-28
 githubStargazers: 402
 contributors: 16
+ecosystemsMonthlyDownloads: 50
+dependentRepos: 5
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -81,6 +83,12 @@ sources:
   - field: basedOn
     url: https://longclawshop.github.io/longclaw/
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/longclaw
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/longclaw
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -22,6 +22,7 @@ currentMajor: "14"
 latestReleaseDate: 2026-09-18
 githubStargazers: 63
 contributors: 2
+dependentRepos: 25
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -64,6 +65,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/waferbaby/dimples/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/dimples
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

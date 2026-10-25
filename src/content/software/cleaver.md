@@ -34,6 +34,7 @@ latestReleaseDate: 2022-08-28
 githubStargazers: 297
 packagistDownloads: 1031
 contributors: 4
+packagistMonthlyDownloads: 17
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -100,6 +101,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/aschmelyun/cleaver.json
     checkedAt: 2026-10-20
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/aschmelyun/cleaver/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

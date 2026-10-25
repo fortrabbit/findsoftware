@@ -25,6 +25,7 @@ license: GPL-2.0-or-later
 currentMajor: "4"
 latestReleaseDate: 2026-09-14
 packagistDownloads: 20009
+packagistMonthlyDownloads: 3650
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -82,6 +83,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/drupal/localgov.json
     checkedAt: 2026-10-20
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/drupal/localgov/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

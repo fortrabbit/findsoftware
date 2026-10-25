@@ -31,6 +31,8 @@ currentMajor: "0"
 latestReleaseDate: 2026-03-27
 githubStargazers: 1163
 npmWeeklyDownloads: 270
+dependentRepos: 34
+dependentPackages: 10
 social:
   x: https://twitter.com/ilesjs
 addedAt: 2026-10-21
@@ -90,6 +92,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/iles
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/iles
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/iles
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

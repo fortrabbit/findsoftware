@@ -18,6 +18,7 @@ headlessApi:
   - graphql
 i18n: yes, storefront translation and localized selling with Shopify Markets
 licenseModel: saas
+httpArchiveSites: 452270
 social:
   x: https://twitter.com/shopify
   forum: https://community.shopify.com/
@@ -60,6 +61,9 @@ sources:
   - field: urls
     url: https://www.shopify.com/
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

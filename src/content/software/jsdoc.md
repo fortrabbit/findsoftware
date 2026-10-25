@@ -24,6 +24,8 @@ currentMajor: "4"
 latestReleaseDate: 2025-10-08
 githubStargazers: 15469
 npmWeeklyDownloads: 1635070
+dependentRepos: 132505
+dependentPackages: 14591
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -78,6 +80,12 @@ sources:
   - field: githubStargazers
     url: https://github.com/jsdoc/jsdoc
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/jsdoc
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/jsdoc
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

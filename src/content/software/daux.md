@@ -32,6 +32,9 @@ currentMajor: "0"
 latestReleaseDate: 2026-09-10
 githubStargazers: 830
 packagistDownloads: 211056
+packagistMonthlyDownloads: 3396
+dependentRepos: 21
+dependentPackages: 3
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -92,6 +95,15 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/dauxio/daux.io
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/daux%2Fdaux.io
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/daux%2Fdaux.io
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/daux/daux.io/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

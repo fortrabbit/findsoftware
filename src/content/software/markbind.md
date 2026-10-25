@@ -26,6 +26,8 @@ currentMajor: "7"
 latestReleaseDate: 2026-08-27
 githubStargazers: 158
 npmWeeklyDownloads: 399
+dependentRepos: 8
+dependentPackages: 1
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -71,6 +73,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/markbind-cli
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/markbind-cli
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/markbind-cli
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

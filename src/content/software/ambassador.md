@@ -22,6 +22,7 @@ currentMajor: "4"
 latestReleaseDate: 2018-10-10
 githubStargazers: 190
 contributors: 10
+httpArchiveSites: 115
 addedAt: 2026-10-24
 checkedAt: 2026-10-24
 sources:
@@ -73,6 +74,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/envoy/Ambassador/contributors
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

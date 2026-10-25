@@ -24,6 +24,9 @@ latestReleaseDate: 2026-09-10
 githubStargazers: 72449
 npmWeeklyDownloads: 91268
 contributors: 315
+httpArchiveSites: 4016
+dependentRepos: 220545
+dependentPackages: 121
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -75,6 +78,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/reveal.js
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/reveal.js
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/reveal.js
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

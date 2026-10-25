@@ -30,6 +30,7 @@ license: BSD-3-Clause
 currentMajor: "3"
 latestReleaseDate: 2026-10-16
 githubStargazers: 23454
+httpArchiveSites: 4
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -87,6 +88,9 @@ sources:
   - field: runsAs
     url: https://docs.saleor.io/setup/docker-compose.md
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

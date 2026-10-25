@@ -26,6 +26,9 @@ latestReleaseDate: 2026-10-13
 githubStargazers: 42625
 npmWeeklyDownloads: 667604
 contributors: 308
+httpArchiveSites: 212
+dependentRepos: 15629
+dependentPackages: 422
 social:
   discord: https://daisyui.com/discord/
 addedAt: 2026-10-19
@@ -85,6 +88,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/daisyui
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/daisyui
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/daisyui
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

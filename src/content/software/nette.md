@@ -24,6 +24,9 @@ currentMajor: "3"
 latestReleaseDate: 2026-06-24
 githubStargazers: 452
 packagistDownloads: 16634539
+packagistMonthlyDownloads: 339846
+dependentRepos: 2335
+dependentPackages: 978
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -90,6 +93,15 @@ sources:
   - field: githubStargazers
     url: https://github.com/nette/web-project
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/nette%2Fapplication
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/nette%2Fapplication
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/nette/application/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

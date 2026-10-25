@@ -33,6 +33,9 @@ currentMajor: "9"
 latestReleaseDate: 2026-10-20
 githubStargazers: 298
 packagistDownloads: 921
+packagistMonthlyDownloads: 244
+httpArchiveSites: 1
+dependentRepos: 1
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -99,6 +102,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/cecil/cecil.json
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/cecil%2Fcecil
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/cecil/cecil/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

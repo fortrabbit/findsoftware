@@ -38,6 +38,8 @@ currentMajor: "3"
 latestReleaseDate: 2019-10-04
 githubStargazers: 42
 contributors: 4
+ecosystemsMonthlyDownloads: 63
+dependentRepos: 1
 social:
   x: https://www.twitter.com/ludovicchabant
 addedAt: 2026-10-23
@@ -115,6 +117,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/ludovicchabant/PieCrust2/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/PieCrust
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/PieCrust
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

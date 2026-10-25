@@ -32,6 +32,8 @@ latestReleaseDate: 2021-05-20
 githubStargazers: 4
 packagistDownloads: 147
 contributors: 1
+dependentRepos: 2
+dependentPackages: 1
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -98,6 +100,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/torann/skosh-generator.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/torann%2Fskosh-generator
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/torann%2Fskosh-generator
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

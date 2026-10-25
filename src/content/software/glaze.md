@@ -32,6 +32,7 @@ latestReleaseDate: 2026-03-10
 githubStargazers: 1
 packagistDownloads: 42
 contributors: 1
+packagistMonthlyDownloads: 1
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -98,6 +99,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/josbeir/glaze.json
     checkedAt: 2026-10-20
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/josbeir/glaze/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

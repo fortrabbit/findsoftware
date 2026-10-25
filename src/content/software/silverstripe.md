@@ -31,6 +31,9 @@ latestReleaseDate: 2026-09-20
 githubStargazers: 516
 packagistDownloads: 3789475
 contributors: 120
+packagistMonthlyDownloads: 59071
+dependentRepos: 2514
+dependentPackages: 1339
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -94,6 +97,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/silverstripe/cms.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/silverstripe%2Fcms
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/silverstripe%2Fcms
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/silverstripe/cms/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -34,6 +34,7 @@ currentMajor: "2"
 latestReleaseDate: 2026-09-08
 githubStargazers: 20
 contributors: 58
+httpArchiveSites: 451
 social:
   x: https://twitter.com/cmsms
   forum: https://forum.cmsmadesimple.org
@@ -109,6 +110,9 @@ sources:
   - field: urls
     url: https://www.cmsmadesimple.org
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

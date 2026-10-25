@@ -33,6 +33,8 @@ currentMajor: "0"
 latestReleaseDate: 2017-05-26
 githubStargazers: 27
 contributors: 3
+ecosystemsMonthlyDownloads: 76
+dependentRepos: 4
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -99,6 +101,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/tylerbutler/engineer/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/engineer
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/engineer
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

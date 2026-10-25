@@ -28,6 +28,8 @@ latestReleaseDate: 2026-10-20
 githubStargazers: 16303
 npmWeeklyDownloads: 807342
 contributors: 259
+dependentRepos: 1
+dependentPackages: 3
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -82,6 +84,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@scalar/api-reference
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40scalar%2Fapi-reference
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40scalar%2Fapi-reference
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

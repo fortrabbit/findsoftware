@@ -32,6 +32,9 @@ latestReleaseDate: 2022-09-21
 githubStargazers: 2528
 npmWeeklyDownloads: 704
 contributors: 105
+httpArchiveSites: 89
+dependentRepos: 532
+dependentPackages: 3
 social:
   x: https://twitter.com/ScullyIO
 addedAt: 2026-10-23
@@ -97,6 +100,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@scullyio/init
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40scullyio%2Finit
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40scullyio%2Finit
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

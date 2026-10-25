@@ -23,6 +23,8 @@ latestReleaseDate: 2025-04-04
 githubStargazers: 8452
 npmWeeklyDownloads: 18690908
 contributors: 63
+dependentRepos: 1228
+dependentPackages: 30
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -80,6 +82,12 @@ sources:
   - field: urls
     url: https://www.embla-carousel.com/docs/plugins
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/embla-carousel
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/embla-carousel
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

@@ -37,6 +37,8 @@ latestReleaseDate: 2026-10-15
 githubStargazers: 5836
 npmWeeklyDownloads: 55826
 contributors: 169
+dependentRepos: 14
+dependentPackages: 21
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -106,6 +108,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/vike
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vike
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vike
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

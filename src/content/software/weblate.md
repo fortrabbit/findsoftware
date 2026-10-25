@@ -28,6 +28,8 @@ license: GPL-3.0
 latestReleaseDate: 2026-10-09
 githubStargazers: 6113
 contributors: 2276
+ecosystemsMonthlyDownloads: 26683
+dependentRepos: 2
 social:
   x: https://x.com/WeblateOrg
 addedAt: 2026-10-19
@@ -93,6 +95,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/WeblateOrg/weblate/contributors?anon=true
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/weblate
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/weblate
+    checkedAt: 2026-10-25
 ai: authored
 adminUi: null
 headlessApi: null

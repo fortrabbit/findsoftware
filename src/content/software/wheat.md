@@ -24,6 +24,8 @@ latestReleaseDate: 2016-03-31
 githubStargazers: 1350
 npmWeeklyDownloads: 27
 contributors: 6
+dependentRepos: 29
+dependentPackages: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -72,6 +74,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/wheat
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/wheat
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/wheat
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

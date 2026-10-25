@@ -26,6 +26,8 @@ latestReleaseDate: 2015-04-15
 githubStargazers: 81
 npmWeeklyDownloads: 1
 contributors: 6
+dependentRepos: 3
+dependentPackages: 1
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -89,6 +91,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/enfield
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/enfield
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/enfield
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

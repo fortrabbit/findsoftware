@@ -31,6 +31,8 @@ latestReleaseDate: 2026-04-08
 githubStargazers: 213
 npmWeeklyDownloads: 15
 contributors: 3
+dependentRepos: 8
+dependentPackages: 9
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -91,6 +93,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/capri
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/capri
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/capri
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

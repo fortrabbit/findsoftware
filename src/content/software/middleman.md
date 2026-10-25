@@ -32,6 +32,8 @@ currentMajor: "4"
 latestReleaseDate: 2026-02-16
 githubStargazers: 7112
 contributors: 174
+dependentRepos: 18948
+dependentPackages: 89
 social:
   x: https://twitter.com/middlemanapp
 addedAt: 2026-10-23
@@ -103,6 +105,12 @@ sources:
   - field: runtimeMin
     url: https://rubygems.org/api/v2/rubygems/middleman/versions/4.6.3.json
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/middleman
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/middleman
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

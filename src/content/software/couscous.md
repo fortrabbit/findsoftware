@@ -33,6 +33,9 @@ latestReleaseDate: 2023-02-21
 githubStargazers: 839
 packagistDownloads: 72085
 contributors: 44
+packagistMonthlyDownloads: 361
+dependentRepos: 169
+dependentPackages: 36
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -99,6 +102,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/couscous/couscous.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/couscous%2Fcouscous
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/couscous%2Fcouscous
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/couscous/couscous/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -27,6 +27,8 @@ latestReleaseDate: 2026-02-05
 githubStargazers: 1577
 npmWeeklyDownloads: 29825
 contributors: 56
+dependentRepos: 668
+dependentPackages: 49
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -81,6 +83,12 @@ sources:
   - field: firstRelease
     url: https://registry.npmjs.org/vite-ssg
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vite-ssg
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vite-ssg
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

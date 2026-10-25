@@ -36,6 +36,8 @@ latestReleaseDate: 2026-09-22
 githubStargazers: 557
 npmWeeklyDownloads: 503
 contributors: 22
+dependentRepos: 1
+dependentPackages: 10
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -108,6 +110,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@exogee/graphweaver
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40exogee%2Fgraphweaver
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40exogee%2Fgraphweaver
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

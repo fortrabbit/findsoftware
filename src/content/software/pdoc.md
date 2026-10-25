@@ -25,6 +25,9 @@ currentMajor: "16"
 latestReleaseDate: 2025-10-27
 githubStargazers: 2519
 contributors: 62
+ecosystemsMonthlyDownloads: 1496003
+dependentRepos: 388
+dependentPackages: 192
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -79,6 +82,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/mitmproxy/pdoc/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/pdoc
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/pdoc
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/pdoc
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

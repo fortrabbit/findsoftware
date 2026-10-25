@@ -32,6 +32,8 @@ currentMajor: "1"
 latestReleaseDate: 2019-05-11
 githubStargazers: 1147
 contributors: 10
+ecosystemsMonthlyDownloads: 97
+dependentRepos: 5
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -92,6 +94,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/tankywoo/simiki/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/simiki
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/simiki
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

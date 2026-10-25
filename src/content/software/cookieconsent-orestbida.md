@@ -25,6 +25,8 @@ latestReleaseDate: 2025-02-04
 githubStargazers: 5713
 npmWeeklyDownloads: 298382
 contributors: 29
+dependentRepos: 82
+dependentPackages: 16
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -76,6 +78,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/vanilla-cookieconsent
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vanilla-cookieconsent
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vanilla-cookieconsent
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

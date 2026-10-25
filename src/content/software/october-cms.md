@@ -42,6 +42,10 @@ latestReleaseDate: 2026-10-12
 githubStargazers: 11146
 packagistDownloads: 271854
 contributors: 342
+packagistMonthlyDownloads: 2709
+httpArchiveSites: 5525
+dependentRepos: 7
+dependentPackages: 2
 social:
   x: https://twitter.com/octobercms
   forum: https://talk.octobercms.com
@@ -142,6 +146,18 @@ sources:
   - field: runsAs
     url: https://docs.octobercms.com/4.x/setup/installation.html
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/october%2Foctober
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/october%2Foctober
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/october/october/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

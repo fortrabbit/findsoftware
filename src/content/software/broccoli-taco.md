@@ -20,6 +20,8 @@ latestReleaseDate: 2015-04-21
 githubStargazers: 93
 npmWeeklyDownloads: 15
 contributors: 2
+dependentRepos: 8
+dependentPackages: 1
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -68,6 +70,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/broccoli-taco
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/broccoli-taco
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/broccoli-taco
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

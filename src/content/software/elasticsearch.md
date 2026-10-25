@@ -26,6 +26,7 @@ license: AGPL-3.0-only OR SSPL-1.0 OR Elastic-2.0 (triple license, default for t
 currentMajor: "9"
 latestReleaseDate: 2026-10-06
 githubStargazers: 78317
+httpArchiveSites: 10700
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -80,6 +81,9 @@ sources:
   - field: runsAs
     url: https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

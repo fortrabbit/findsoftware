@@ -22,6 +22,8 @@ currentMajor: "7"
 latestReleaseDate: 2025-09-16
 githubStargazers: 6172
 npmWeeklyDownloads: 2335603
+dependentRepos: 1063
+dependentPackages: 82
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -70,6 +72,12 @@ sources:
   - field: runsAs
     url: https://github.com/lucaong/minisearch
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/minisearch
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/minisearch
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

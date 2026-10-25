@@ -27,6 +27,9 @@ currentMajor: "9"
 latestReleaseDate: 2026-10-13
 githubStargazers: 144
 packagistDownloads: 2432278
+packagistMonthlyDownloads: 66628
+dependentRepos: 529
+dependentPackages: 416
 social:
   mastodon: https://neos.social/@team
   forum: https://discuss.neos.io
@@ -93,6 +96,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/neos/flow.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/neos%2Fflow
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/neos%2Fflow
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/neos/flow/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

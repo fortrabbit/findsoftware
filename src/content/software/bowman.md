@@ -25,6 +25,7 @@ latestReleaseDate: 2021-09-24
 githubStargazers: 21
 npmWeeklyDownloads: 1
 contributors: 2
+dependentPackages: 1
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -82,6 +83,9 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@waldronmatt/bowman
     checkedAt: 2026-10-22
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40waldronmatt%2Fbowman
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

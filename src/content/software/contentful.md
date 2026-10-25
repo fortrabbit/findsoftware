@@ -21,6 +21,9 @@ currentMajor: "11"
 latestReleaseDate: 2026-09-09
 githubStargazers: 1296
 npmWeeklyDownloads: 565968
+httpArchiveSites: 9340
+dependentRepos: 15184
+dependentPackages: 350
 wikidata: Q18348837
 addedAt: 2026-10-18
 checkedAt: 2026-10-18
@@ -76,6 +79,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/contentful
     checkedAt: 2026-10-18
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/contentful
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/contentful
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

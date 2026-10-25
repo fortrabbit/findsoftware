@@ -22,6 +22,7 @@ installMethod: docker/sdk, after cloning the demo shop and the Docker SDK
 licenseModel: source-available
 license: Spryker Demo Shop License Agreement (proprietary, evaluation use)
 githubStargazers: 53
+httpArchiveSites: 94
 social:
   x: https://twitter.com/sprysys
   bluesky: https://bsky.app/profile/spryker.com
@@ -67,6 +68,9 @@ sources:
   - field: adminUi
     url: https://docs.spryker.com/
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

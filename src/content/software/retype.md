@@ -26,6 +26,9 @@ currentMajor: "4"
 latestReleaseDate: 2026-05-25
 githubStargazers: 1340
 npmWeeklyDownloads: 4776
+httpArchiveSites: 41
+dependentRepos: 42
+dependentPackages: 5
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -74,6 +77,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/retypeapp
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/retypeapp
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/retypeapp
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

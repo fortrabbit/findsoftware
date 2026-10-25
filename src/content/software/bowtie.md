@@ -21,6 +21,7 @@ currentMajor: "1"
 latestReleaseDate: 2016-01-22
 githubStargazers: 10
 contributors: 1
+dependentRepos: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -60,6 +61,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/bowtie-io/bowtie-io/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/bowtie-io
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

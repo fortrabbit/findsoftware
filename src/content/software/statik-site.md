@@ -19,6 +19,8 @@ latestReleaseDate: 2019-03-25
 githubStargazers: 1
 npmWeeklyDownloads: 39
 contributors: 1
+dependentRepos: 1
+dependentPackages: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -61,6 +63,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/Paul-Browne/statik-site/contributors?per_page=100
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/create-statik-site
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/create-statik-site
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

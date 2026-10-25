@@ -26,6 +26,9 @@ currentMajor: "5"
 latestReleaseDate: 2026-09-01
 githubStargazers: 33278
 contributors: 560
+ecosystemsMonthlyDownloads: 451623
+dependentRepos: 470
+dependentPackages: 111
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -80,6 +83,15 @@ sources:
   - field: runsAs
     url: https://eff-certbot.readthedocs.io/en/stable/using.html
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/certbot
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/certbot
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/certbot
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

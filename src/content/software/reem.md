@@ -30,6 +30,8 @@ latestReleaseDate: 2015-05-23
 githubStargazers: 27
 npmWeeklyDownloads: 2
 contributors: 1
+dependentRepos: 5
+dependentPackages: 3
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -90,6 +92,12 @@ sources:
   - field: urls
     url: https://github.com/andrejewski/reem/blob/master/README.md
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/reem
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/reem
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

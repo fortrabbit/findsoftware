@@ -26,6 +26,8 @@ currentMajor: "0"
 latestReleaseDate: 2014-03-04
 githubStargazers: 16
 contributors: 1
+ecosystemsMonthlyDownloads: 15
+dependentRepos: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -80,6 +82,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/mhlakhani/halwa/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/halwa
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/halwa
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

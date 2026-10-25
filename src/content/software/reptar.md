@@ -29,6 +29,7 @@ latestReleaseDate: 2017-10-07
 githubStargazers: 263
 npmWeeklyDownloads: 24
 contributors: 5
+dependentRepos: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -65,6 +66,9 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/reptar
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/reptar
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

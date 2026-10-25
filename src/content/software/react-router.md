@@ -40,6 +40,9 @@ latestReleaseDate: 2026-09-15
 githubStargazers: 56610
 npmWeeklyDownloads: 33338262
 contributors: 1324
+httpArchiveSites: 203294
+dependentRepos: 1472795
+dependentPackages: 10588
 social:
   x: https://x.com/reactrouter
   discord: https://remix.run/discord
@@ -125,6 +128,15 @@ sources:
   - field: runsAs
     url: https://reactrouter.com/start/framework/rendering
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react-router
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react-router
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

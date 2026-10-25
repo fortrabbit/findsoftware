@@ -33,6 +33,8 @@ latestReleaseDate: 2023-10-30
 githubStargazers: 987
 packagistDownloads: 248708
 contributors: 14
+packagistMonthlyDownloads: 1140
+dependentRepos: 104
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -105,6 +107,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/brackets/craftable.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/brackets%2Fcraftable
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/brackets/craftable/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -38,6 +38,9 @@ latestReleaseDate: 2026-10-06
 githubStargazers: 28255
 packagistDownloads: 180984
 contributors: 268
+packagistMonthlyDownloads: 2661
+dependentRepos: 6
+dependentPackages: 4
 social:
   x: https://x.com/BagistoShop
   forum: https://forums.bagisto.com
@@ -111,6 +114,15 @@ sources:
   - field: runsAs
     url: https://devdocs.bagisto.com/getting-started/installation.html
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/bagisto%2Fbagisto
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/bagisto%2Fbagisto
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/bagisto/bagisto/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

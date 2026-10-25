@@ -29,6 +29,9 @@ latestReleaseDate: 2026-10-05
 githubStargazers: 13146
 npmWeeklyDownloads: 849888
 contributors: 254
+httpArchiveSites: 466
+dependentRepos: 22293
+dependentPackages: 7307
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -92,6 +95,15 @@ sources:
   - field: firstRelease
     url: https://registry.npmjs.org/@stencil/core
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40stencil%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40stencil%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

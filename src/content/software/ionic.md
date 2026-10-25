@@ -22,6 +22,8 @@ currentMajor: "9"
 latestReleaseDate: 2026-10-21
 githubStargazers: 52715
 npmWeeklyDownloads: 290331
+dependentRepos: 54760
+dependentPackages: 362
 social:
   x: https://twitter.com/ionicframework
   discord: https://discord.com/invite/UPYYRhtyzp
@@ -74,6 +76,12 @@ sources:
   - field: githubStargazers
     url: https://github.com/ionic-team/ionic-framework
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40ionic%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40ionic%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

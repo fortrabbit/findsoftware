@@ -31,6 +31,9 @@ latestReleaseDate: 2026-09-01
 githubStargazers: 12276
 packagistDownloads: 57412755
 contributors: 227
+packagistMonthlyDownloads: 1494272
+dependentRepos: 19403
+dependentPackages: 1313
 social:
   forum: https://discourse.slimframework.com/
 addedAt: 2026-10-18
@@ -105,6 +108,15 @@ sources:
   - field: runsAs
     url: https://www.slimframework.com/docs/v4/start/installation.html
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/slim%2Fslim
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/slim%2Fslim
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/slim/slim/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

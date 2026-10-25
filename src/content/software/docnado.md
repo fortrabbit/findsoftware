@@ -31,6 +31,8 @@ currentMajor: "1"
 latestReleaseDate: 2022-02-22
 githubStargazers: 96
 contributors: 4
+ecosystemsMonthlyDownloads: 78
+dependentRepos: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -91,6 +93,12 @@ sources:
   - field: contentStore
     url: https://github.com/HEInventions/docnado/blob/master/README.md
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/docnado
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/docnado
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

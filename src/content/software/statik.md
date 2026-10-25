@@ -32,6 +32,8 @@ currentMajor: "0"
 latestReleaseDate: 2019-10-13
 githubStargazers: 257
 contributors: 10
+ecosystemsMonthlyDownloads: 217
+dependentRepos: 7
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -101,6 +103,12 @@ sources:
   - field: runsAs
     url: https://github.com/thanethomson/statik/blob/master/README.md
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/statik
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/statik
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -28,6 +28,8 @@ currentMajor: "4"
 latestReleaseDate: 2026-09-13
 githubStargazers: 1847
 npmWeeklyDownloads: 211280
+dependentRepos: 1
+dependentPackages: 1
 social:
   x: https://twitter.com/expressots
 addedAt: 2026-10-21
@@ -84,6 +86,12 @@ sources:
   - field: githubStargazers
     url: https://github.com/expressots/expressots
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40expressots%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40expressots%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

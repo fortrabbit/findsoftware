@@ -35,6 +35,9 @@ latestReleaseDate: 2021-09-30
 githubStargazers: 6907
 npmWeeklyDownloads: 19181
 contributors: 114
+httpArchiveSites: 114
+dependentRepos: 3251
+dependentPackages: 49
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -113,6 +116,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/sapper
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/sapper
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/sapper
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

@@ -31,6 +31,10 @@ currentMajor: "9"
 latestReleaseDate: 2026-10-21
 githubStargazers: 8076
 contributors: 426
+ecosystemsMonthlyDownloads: 17684884
+httpArchiveSites: 221
+dependentRepos: 68751
+dependentPackages: 7351
 social:
   forum: https://github.com/sphinx-doc/sphinx/discussions
 addedAt: 2026-10-23
@@ -96,6 +100,18 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/sphinx-doc/sphinx/contributors
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/sphinx
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/sphinx
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/sphinx
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

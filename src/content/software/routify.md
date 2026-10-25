@@ -27,6 +27,8 @@ latestReleaseDate: 2025-09-16
 githubStargazers: 1986
 npmWeeklyDownloads: 9920
 contributors: 10
+dependentRepos: 245
+dependentPackages: 12
 social:
   discord: https://discord.gg/ntKJD5B
 addedAt: 2026-10-22
@@ -83,6 +85,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@roxi/routify
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40roxi%2Froutify
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40roxi%2Froutify
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

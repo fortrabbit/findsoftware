@@ -30,6 +30,8 @@ currentMajor: "0"
 latestReleaseDate: 2015-05-16
 githubStargazers: 347
 contributors: 17
+ecosystemsMonthlyDownloads: 70
+dependentRepos: 11
 social:
   forum: https://groups.google.com/group/blogofile-discuss
 addedAt: 2026-10-23
@@ -89,6 +91,12 @@ sources:
   - field: contentStore
     url: https://github.com/EnigmaCurry/blogofile/blob/plugins/docs/intro.rst
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/blogofile
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/blogofile
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

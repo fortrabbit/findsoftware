@@ -32,6 +32,10 @@ currentMajor: "4"
 latestReleaseDate: 2026-04-20
 githubStargazers: 13354
 contributors: 489
+ecosystemsMonthlyDownloads: 41922
+httpArchiveSites: 22
+dependentRepos: 3322
+dependentPackages: 54
 social:
   mastodon: https://fosstodon.org/@pelican
   forum: https://github.com/getpelican/pelican/discussions
@@ -111,6 +115,18 @@ sources:
   - field: runsAs
     url: https://docs.getpelican.com/en/latest/quickstart.html
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/pelican
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/pelican
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/pelican
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -30,6 +30,7 @@ license: GPL-3.0-or-later
 latestReleaseDate: 2026-03-21
 githubStargazers: 437
 contributors: 5
+ecosystemsMonthlyDownloads: 8
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -93,6 +94,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/novoid/lazyblorg/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/lazyblorg
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

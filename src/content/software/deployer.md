@@ -25,6 +25,9 @@ latestReleaseDate: 2026-05-18
 githubStargazers: 11115
 packagistDownloads: 29661128
 contributors: 479
+packagistMonthlyDownloads: 848377
+dependentRepos: 912
+dependentPackages: 189
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -91,6 +94,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/deployer/deployer.json
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/deployer%2Fdeployer
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/deployer%2Fdeployer
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/deployer/deployer/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

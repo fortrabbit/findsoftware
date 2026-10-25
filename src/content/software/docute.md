@@ -34,6 +34,8 @@ latestReleaseDate: 2019-10-03
 githubStargazers: 3801
 npmWeeklyDownloads: 518
 contributors: 14
+dependentRepos: 7
+dependentPackages: 7
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -109,6 +111,12 @@ sources:
   - field: urls
     url: https://github.com/egoist/docute/blob/master/README.md
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/docute
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/docute
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

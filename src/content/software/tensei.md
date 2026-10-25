@@ -35,6 +35,8 @@ latestReleaseDate: 2022-01-06
 githubStargazers: 568
 npmWeeklyDownloads: 56
 contributors: 7
+dependentRepos: 2
+dependentPackages: 6
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -98,6 +100,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@tensei/core
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40tensei%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40tensei%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

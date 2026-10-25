@@ -32,6 +32,9 @@ currentMajor: "1"
 latestReleaseDate: 2020-01-29
 packagistDownloads: 124
 contributors: 1
+packagistMonthlyDownloads: 2
+dependentRepos: 7
+dependentPackages: 6
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -104,6 +107,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/datashaman/tongs.json
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/datashaman%2Ftongs
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/datashaman%2Ftongs
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/datashaman/tongs/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

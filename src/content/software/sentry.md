@@ -28,6 +28,7 @@ currentMajor: "26"
 latestReleaseDate: 2026-10-16
 githubStargazers: 45600
 contributors: 1101
+httpArchiveSites: 553330
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -88,6 +89,9 @@ sources:
   - field: runsAs
     url: https://develop.sentry.dev/self-hosted/
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

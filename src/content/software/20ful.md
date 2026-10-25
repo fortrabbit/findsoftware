@@ -30,6 +30,8 @@ latestReleaseDate: 2022-06-09
 githubStargazers: 7
 npmWeeklyDownloads: 35
 contributors: 2
+dependentRepos: 1
+dependentPackages: 3
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -90,6 +92,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/20ful
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/20ful
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/20ful
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

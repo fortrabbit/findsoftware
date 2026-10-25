@@ -24,6 +24,7 @@ licenseModel: saas
 license: AGPL-3.0
 currentMajor: "5"
 latestReleaseDate: 2021-03-26
+httpArchiveSites: 71
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -78,6 +79,9 @@ sources:
   - field: description
     url: https://api.bitbucket.org/2.0/repositories/cloudrexx/cloudrexx-oss
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

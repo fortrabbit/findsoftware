@@ -30,6 +30,8 @@ latestReleaseDate: 2019-08-07
 githubStargazers: 47
 npmWeeklyDownloads: 41
 contributors: 4
+dependentRepos: 1
+dependentPackages: 1
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -99,6 +101,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/kotsu
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/kotsu
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/kotsu
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

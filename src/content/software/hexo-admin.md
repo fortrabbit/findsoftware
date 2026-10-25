@@ -31,6 +31,8 @@ latestReleaseDate: 2017-11-10
 githubStargazers: 1788
 npmWeeklyDownloads: 223
 contributors: 20
+dependentRepos: 499
+dependentPackages: 4
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -94,6 +96,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/jaredly/hexo-admin/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/hexo-admin
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/hexo-admin
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

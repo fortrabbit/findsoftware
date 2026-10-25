@@ -28,6 +28,8 @@ currentMajor: "1"
 latestReleaseDate: 2019-02-02
 githubStargazers: 3
 contributors: 1
+ecosystemsMonthlyDownloads: 35
+dependentRepos: 2
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -79,6 +81,12 @@ sources:
   - field: runsAs
     url: https://github.com/tfpk/dewar/blob/master/README.md
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/dewar
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/dewar
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -25,6 +25,8 @@ currentMajor: "0"
 latestReleaseDate: 2026-04-14
 githubStargazers: 27584
 contributors: 441
+dependentRepos: 4645
+dependentPackages: 1093
 social:
   discord: https://discord.gg/tokio
   forum: https://github.com/tokio-rs/axum/discussions
@@ -76,6 +78,12 @@ sources:
   - field: installMethod
     url: https://github.com/tokio-rs/axum/blob/main/axum/src/lib.rs
     checkedAt: 2026-10-24
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/axum
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/axum
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

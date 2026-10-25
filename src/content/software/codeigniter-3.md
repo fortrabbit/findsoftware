@@ -34,6 +34,9 @@ latestReleaseDate: 2022-03-03
 githubStargazers: 18149
 packagistDownloads: 2386120
 contributors: 621
+packagistMonthlyDownloads: 35650
+dependentRepos: 509
+dependentPackages: 69
 social:
   forum: https://forum.codeigniter.com
 addedAt: 2026-10-20
@@ -93,6 +96,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/codeigniter/framework.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/codeigniter%2Fframework
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/codeigniter%2Fframework
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/codeigniter/framework/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

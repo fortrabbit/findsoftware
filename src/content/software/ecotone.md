@@ -25,6 +25,9 @@ currentMajor: "1"
 latestReleaseDate: 2026-10-10
 githubStargazers: 576
 packagistDownloads: 628746
+packagistMonthlyDownloads: 16562
+dependentRepos: 14
+dependentPackages: 9
 social:
   discord: https://discord.gg/GwM2BSuXeg
 addedAt: 2026-10-20
@@ -90,6 +93,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/ecotone/ecotone.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/ecotone%2Fecotone
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/ecotone%2Fecotone
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/ecotone/ecotone/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

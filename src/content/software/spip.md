@@ -30,6 +30,7 @@ licenseModel: open-source
 license: GNU GPLv3, GNU/GPL
 currentMajor: "4"
 latestReleaseDate: 2026-10-07
+httpArchiveSites: 1725
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -93,6 +94,9 @@ sources:
   - field: latestReleaseDate
     url: https://www.spip.net/en_download
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

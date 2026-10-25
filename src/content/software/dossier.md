@@ -30,6 +30,8 @@ latestReleaseDate: 2025-07-25
 githubStargazers: 52
 npmWeeklyDownloads: 88
 contributors: 4
+dependentRepos: 3
+dependentPackages: 13
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -93,6 +95,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/dossierhq/dossierhq/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40dossierhq%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40dossierhq%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

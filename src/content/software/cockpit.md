@@ -33,6 +33,7 @@ currentMajor: "2"
 latestReleaseDate: 2026-08-26
 githubStargazers: 751
 packagistDownloads: 205
+packagistMonthlyDownloads: 26
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -99,6 +100,9 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/Cockpit-HQ/Cockpit
     checkedAt: 2026-10-20
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/cockpit-hq/cockpit/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

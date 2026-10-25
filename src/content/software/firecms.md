@@ -36,6 +36,7 @@ latestReleaseDate: 2026-06-23
 githubStargazers: 1281
 npmWeeklyDownloads: 752
 contributors: 40
+dependentPackages: 5
 social:
   discord: https://discord.gg/fxy7xsQm3m
 addedAt: 2026-10-23
@@ -119,6 +120,9 @@ sources:
   - field: firstRelease
     url: https://github.com/firecmsco/firecms/releases/tag/v1.0.0
     checkedAt: 2026-10-23
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40firecms%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

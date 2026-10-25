@@ -29,6 +29,8 @@ currentMajor: "1"
 latestReleaseDate: 2026-04-12
 githubStargazers: 5519
 npmWeeklyDownloads: 1385578
+dependentRepos: 48
+dependentPackages: 3
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -71,6 +73,12 @@ sources:
   - field: runsAs
     url: https://pagefind.app/docs/
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/pagefind
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/pagefind
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

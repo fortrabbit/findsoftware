@@ -30,6 +30,8 @@ latestReleaseDate: 2026-09-24
 githubStargazers: 191
 packagistDownloads: 5314
 contributors: 81
+packagistMonthlyDownloads: 279
+dependentRepos: 4
 social:
   x: https://twitter.com/basercms
   forum: https://forum.basercms.net
@@ -96,6 +98,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/baserproject/basercms/contributors?anon=true&per_page=100
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/baserproject%2Fbasercms
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/baserproject/basercms/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

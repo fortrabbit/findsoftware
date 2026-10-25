@@ -28,6 +28,8 @@ latestReleaseDate: 2017-05-23
 githubStargazers: 163
 npmWeeklyDownloads: 158
 contributors: 9
+dependentRepos: 19
+dependentPackages: 5
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -97,6 +99,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/lingon
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/lingon
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/lingon
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

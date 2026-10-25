@@ -30,6 +30,9 @@ latestReleaseDate: 2017-05-24
 githubStargazers: 86
 packagistDownloads: 853
 contributors: 8
+packagistMonthlyDownloads: 23
+dependentRepos: 23
+dependentPackages: 8
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -102,6 +105,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/carew/carew.json
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/carew%2Fcarew
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/carew%2Fcarew
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/carew/carew/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

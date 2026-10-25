@@ -33,6 +33,9 @@ currentMajor: "6"
 latestReleaseDate: 2026-10-10
 githubStargazers: 7919
 packagistDownloads: 3061779
+packagistMonthlyDownloads: 21595
+dependentRepos: 94
+dependentPackages: 14
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -96,6 +99,15 @@ sources:
   - field: githubStargazers
     url: https://github.com/vrana/adminer
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/vrana%2Fadminer
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/vrana%2Fadminer
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/vrana/adminer/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

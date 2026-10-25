@@ -30,6 +30,8 @@ latestReleaseDate: 2026-10-20
 githubStargazers: 175
 npmWeeklyDownloads: 1317
 contributors: 13
+dependentRepos: 1
+dependentPackages: 3
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -81,6 +83,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@marko/run
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40marko%2Frun
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40marko%2Frun
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

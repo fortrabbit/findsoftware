@@ -24,6 +24,8 @@ latestReleaseDate: 2019-02-08
 githubStargazers: 5586
 npmWeeklyDownloads: 516612
 contributors: 12
+dependentRepos: 5262
+dependentPackages: 390
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -72,6 +74,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/polka
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/polka
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/polka
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

@@ -24,6 +24,9 @@ currentMajor: "5"
 latestReleaseDate: 2026-10-18
 githubStargazers: 11740
 packagistDownloads: 96759211
+packagistMonthlyDownloads: 9274530
+dependentRepos: 6450
+dependentPackages: 6316
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -75,6 +78,15 @@ sources:
   - field: runsAs
     url: https://pestphp.com/docs/installation
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/pestphp%2Fpest
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/pestphp%2Fpest
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/pestphp/pest/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

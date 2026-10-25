@@ -27,6 +27,7 @@ latestReleaseDate: 2021-12-21
 githubStargazers: 237
 packagistDownloads: 92
 contributors: 46
+packagistMonthlyDownloads: 64
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -90,6 +91,9 @@ sources:
   - field: licenseModel
     url: https://github.com/zikula/core/blob/3.1.0/composer.json
     checkedAt: 2026-10-23
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/zikula/core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

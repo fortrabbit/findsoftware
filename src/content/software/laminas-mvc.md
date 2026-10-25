@@ -28,6 +28,9 @@ latestReleaseDate: 2024-11-21
 githubStargazers: 174
 packagistDownloads: 27805461
 contributors: 199
+packagistMonthlyDownloads: 519315
+dependentRepos: 1614
+dependentPackages: 363
 social:
   forum: https://discourse.laminas.dev
 addedAt: 2026-10-20
@@ -96,6 +99,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/laminas/laminas-mvc.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/laminas%2Flaminas-mvc
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/laminas%2Flaminas-mvc
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/laminas/laminas-mvc/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

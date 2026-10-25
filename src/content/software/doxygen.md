@@ -24,6 +24,7 @@ currentMajor: "1"
 latestReleaseDate: 2026-08-13
 githubStargazers: 6599
 contributors: 308
+httpArchiveSites: 18
 social:
   x: https://twitter.com/doxygen
 addedAt: 2026-10-23
@@ -83,6 +84,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/doxygen/doxygen/contributors
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

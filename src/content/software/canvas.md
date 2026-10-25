@@ -31,6 +31,8 @@ currentMajor: "7"
 latestReleaseDate: 2026-10-19
 githubStargazers: 3357
 packagistDownloads: 138150
+packagistMonthlyDownloads: 3991
+dependentRepos: 10
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -91,6 +93,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/austintoddj/canvas
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/austintoddj%2Fcanvas
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/austintoddj/canvas/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

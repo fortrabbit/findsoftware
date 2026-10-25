@@ -33,6 +33,8 @@ currentMajor: "1"
 latestReleaseDate: 2024-01-01
 githubStargazers: 118
 contributors: 3
+dependentRepos: 13
+dependentPackages: 7
 social:
   x: https://twitter.com/_gettalong
   forum: https://groups.google.com/forum/?fromgroups#!forum/webgen-users
@@ -105,6 +107,12 @@ sources:
   - field: contentStore
     url: https://webgen.gettalong.org/
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/webgen
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/webgen
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

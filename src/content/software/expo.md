@@ -30,6 +30,8 @@ license: MIT
 currentMajor: "58"
 latestReleaseDate: 2026-10-21
 npmWeeklyDownloads: 4916934
+dependentRepos: 2117
+dependentPackages: 26
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -84,6 +86,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/expo-router
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/expo-router
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/expo-router
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

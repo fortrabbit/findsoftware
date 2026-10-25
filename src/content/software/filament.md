@@ -38,6 +38,9 @@ githubStargazers: 32292
 packagistDownloads: 43663141
 contributors: 373
 pluginCount: 1156
+packagistMonthlyDownloads: 5616191
+dependentRepos: 1097
+dependentPackages: 763
 social:
   discord: https://filamentphp.com/discord
 addedAt: 2026-10-18
@@ -124,6 +127,15 @@ sources:
   - field: pluginCount
     url: https://filamentphp.com/plugins
     checkedAt: 2026-10-18
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/filament%2Ffilament
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/filament%2Ffilament
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/filament/filament/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

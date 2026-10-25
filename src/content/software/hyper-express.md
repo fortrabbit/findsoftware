@@ -26,6 +26,8 @@ currentMajor: "7"
 latestReleaseDate: 2026-07-20
 githubStargazers: 2033
 npmWeeklyDownloads: 3444
+dependentRepos: 49
+dependentPackages: 13
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -80,6 +82,12 @@ sources:
   - field: githubStargazers
     url: https://github.com/kartikk221/hyper-express
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/hyper-express
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/hyper-express
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

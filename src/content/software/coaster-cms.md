@@ -33,6 +33,8 @@ currentMajor: "8"
 latestReleaseDate: 2020-11-27
 githubStargazers: 387
 packagistDownloads: 654
+packagistMonthlyDownloads: 64
+httpArchiveSites: 15
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -102,6 +104,12 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/CoasterCms/coastercms
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/coastercms/coastercms/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -30,6 +30,9 @@ latestReleaseDate: 2023-07-08
 githubStargazers: 1583
 packagistDownloads: 68832
 contributors: 9
+packagistMonthlyDownloads: 76
+dependentRepos: 49
+dependentPackages: 2
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -90,6 +93,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/dwij/laraadmin
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/dwij%2Flaraadmin
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/dwij%2Flaraadmin
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/dwij/laraadmin/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

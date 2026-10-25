@@ -26,6 +26,7 @@ currentMajor: "0"
 latestReleaseDate: 2026-08-14
 githubStargazers: 631
 packagistDownloads: 21617
+packagistMonthlyDownloads: 1273
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -80,6 +81,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/hypervel/framework.json
     checkedAt: 2026-10-20
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/hypervel/framework/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -29,6 +29,8 @@ currentMajor: "1"
 latestReleaseDate: 2024-12-17
 githubStargazers: 1603
 npmWeeklyDownloads: 1670
+dependentRepos: 4
+dependentPackages: 4
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -80,6 +82,12 @@ sources:
   - field: contentStore
     url: https://raw.githubusercontent.com/thomvaill/log4brains/develop/README.md
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/log4brains
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/log4brains
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

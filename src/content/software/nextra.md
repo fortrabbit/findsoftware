@@ -32,6 +32,9 @@ currentMajor: "4"
 latestReleaseDate: 2025-12-04
 githubStargazers: 13941
 npmWeeklyDownloads: 141547
+httpArchiveSites: 86
+dependentRepos: 2302
+dependentPackages: 81
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -95,6 +98,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/nextra
     checkedAt: 2026-10-21
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/nextra
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/nextra
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

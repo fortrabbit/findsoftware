@@ -24,6 +24,8 @@ latestReleaseDate: 2025-02-14
 githubStargazers: 8760
 npmWeeklyDownloads: 37224
 contributors: 47
+dependentRepos: 55
+dependentPackages: 46
 social:
   discord: https://discord.gg/sPpF7fX
 addedAt: 2026-10-23
@@ -83,6 +85,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@craftjs/core
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40craftjs%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40craftjs%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

@@ -24,6 +24,8 @@ latestReleaseDate: 2023-01-31
 githubStargazers: 1471
 packagistDownloads: 3147
 contributors: 47
+packagistMonthlyDownloads: 29
+dependentRepos: 3
 social:
   forum: https://staticword.press/c/wordpress-static-site-generators/wp2static/
 addedAt: 2026-10-21
@@ -83,6 +85,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/leonstafford/wp2static.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/leonstafford%2Fwp2static
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/leonstafford/wp2static/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

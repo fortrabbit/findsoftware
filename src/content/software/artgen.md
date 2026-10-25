@@ -32,6 +32,7 @@ latestReleaseDate: 2023-03-20
 githubStargazers: 95
 npmWeeklyDownloads: 1
 contributors: 1
+dependentPackages: 2
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -101,6 +102,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/hisorange/artgen/contributors
     checkedAt: 2026-10-23
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40artgenio%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

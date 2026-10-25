@@ -39,6 +39,8 @@ latestReleaseDate: 2026-10-19
 githubStargazers: 13845
 npmWeeklyDownloads: 49626
 contributors: 160
+dependentRepos: 645
+dependentPackages: 74
 social:
   x: https://twitter.com/tinacms
   bluesky: https://bsky.app/profile/tina.io
@@ -120,6 +122,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/tinacms
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tinacms
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tinacms
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

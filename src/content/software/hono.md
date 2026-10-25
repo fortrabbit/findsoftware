@@ -33,6 +33,9 @@ currentMajor: "4"
 latestReleaseDate: 2026-10-04
 githubStargazers: 32592
 npmWeeklyDownloads: 44776538
+httpArchiveSites: 60
+dependentRepos: 668
+dependentPackages: 210
 social:
   x: https://x.com/honojs
   bluesky: https://bsky.app/profile/hono.dev
@@ -94,6 +97,15 @@ sources:
   - field: runsAs
     url: https://hono.dev/docs/helpers/ssg
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/hono
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/hono
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

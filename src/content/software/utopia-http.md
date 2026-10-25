@@ -24,6 +24,7 @@ latestReleaseDate: 2026-03-16
 githubStargazers: 297
 packagistDownloads: 142114
 contributors: 23
+packagistMonthlyDownloads: 10057
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -72,6 +73,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/utopia-php/http.json
     checkedAt: 2026-10-21
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/utopia-php/http/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

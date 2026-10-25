@@ -25,6 +25,7 @@ licenseModel: open-source
 license: Apache-2.0
 latestReleaseDate: 2026-10-16
 githubStargazers: 111760
+httpArchiveSites: 237
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -79,6 +80,9 @@ sources:
   - field: runsAs
     url: https://supabase.com/docs/guides/self-hosting
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

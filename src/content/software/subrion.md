@@ -30,6 +30,8 @@ latestReleaseDate: 2018-06-14
 githubStargazers: 284
 packagistDownloads: 130
 contributors: 15
+httpArchiveSites: 23
+dependentRepos: 4
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -96,6 +98,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/intelliants/subrion.json
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/intelliants%2Fsubrion
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -37,6 +37,8 @@ latestReleaseDate: 2026-07-06
 githubStargazers: 4996
 npmWeeklyDownloads: 270
 contributors: 30
+dependentRepos: 1109
+dependentPackages: 82
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -115,6 +117,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/harp
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/harp
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/harp
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

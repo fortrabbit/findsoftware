@@ -29,6 +29,8 @@ currentMajor: "8"
 latestReleaseDate: 2026-09-22
 githubStargazers: 905
 contributors: 134
+dependentRepos: 88
+dependentPackages: 24
 social:
   bluesky: https://bsky.app/profile/alchemy-cms.com
   mastodon: https://ruby.social/@alchemy_cms
@@ -92,6 +94,12 @@ sources:
   - field: i18n
     url: https://github.com/AlchemyCMS/alchemy_cms/blob/main/README.md
     checkedAt: 2026-10-24
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/alchemy_cms
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/alchemy_cms
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

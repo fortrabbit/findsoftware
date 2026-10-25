@@ -28,6 +28,9 @@ currentMajor: "0"
 latestReleaseDate: 2020-08-31
 githubStargazers: 30
 contributors: 5
+ecosystemsMonthlyDownloads: 1213
+dependentRepos: 25
+dependentPackages: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -85,6 +88,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/pyvec/elsa/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/elsa
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/elsa
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/elsa
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

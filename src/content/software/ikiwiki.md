@@ -25,6 +25,7 @@ licenseModel: open-source
 license: GPL-2.0-or-later
 currentMajor: "3"
 latestReleaseDate: 2026-02-01
+httpArchiveSites: 7
 social:
   forum: https://ikiwiki.info/forum/
 addedAt: 2026-10-23
@@ -81,6 +82,9 @@ sources:
   - field: latestReleaseDate
     url: https://ikiwiki.info/news/
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

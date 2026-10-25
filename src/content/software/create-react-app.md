@@ -31,6 +31,8 @@ latestReleaseDate: 2022-04-12
 githubStargazers: 103238
 npmWeeklyDownloads: 1437446
 contributors: 946
+dependentRepos: 1429227
+dependentPackages: 45896
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -103,6 +105,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/facebook/create-react-app/contributors?anon=true&per_page=100
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react-scripts
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react-scripts
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

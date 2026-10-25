@@ -21,6 +21,9 @@ currentMajor: "2"
 latestReleaseDate: 2026-02-02
 githubStargazers: 44006
 npmWeeklyDownloads: 206852
+httpArchiveSites: 20874
+dependentRepos: 41552
+dependentPackages: 5714
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -63,6 +66,15 @@ sources:
   - field: runsAs
     url: https://parceljs.org/getting-started/webapp/
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/parcel
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/parcel
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

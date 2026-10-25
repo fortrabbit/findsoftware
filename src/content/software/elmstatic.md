@@ -29,6 +29,8 @@ latestReleaseDate: 2021-08-25
 githubStargazers: 205
 npmWeeklyDownloads: 13
 contributors: 5
+dependentRepos: 4
+dependentPackages: 1
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -89,6 +91,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/elmstatic
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/elmstatic
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/elmstatic
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

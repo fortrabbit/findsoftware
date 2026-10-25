@@ -27,6 +27,9 @@ latestReleaseDate: 2026-10-09
 githubStargazers: 11543
 packagistDownloads: 3779753
 contributors: 129
+packagistMonthlyDownloads: 165436
+dependentRepos: 772
+dependentPackages: 290
 social:
   forum: https://www.workerman.net/questions
 addedAt: 2026-10-21
@@ -86,6 +89,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/workerman/workerman.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/workerman%2Fworkerman
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/workerman%2Fworkerman
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/workerman/workerman/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

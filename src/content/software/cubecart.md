@@ -34,6 +34,7 @@ currentMajor: "6"
 latestReleaseDate: 2026-10-14
 githubStargazers: 74
 contributors: 15
+httpArchiveSites: 100
 social:
   x: https://x.com/cubecart
   bluesky: https://bsky.app/profile/cubecart.com
@@ -104,6 +105,9 @@ sources:
   - field: urls
     url: https://www.cubecart.com/upgrade
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

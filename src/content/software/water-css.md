@@ -22,6 +22,8 @@ latestReleaseDate: 2021-08-11
 githubStargazers: 8654
 npmWeeklyDownloads: 711
 contributors: 48
+dependentRepos: 51
+dependentPackages: 3
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -70,6 +72,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/water.css
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/water.css
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/water.css
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

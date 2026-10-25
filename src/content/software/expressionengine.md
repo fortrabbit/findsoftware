@@ -32,6 +32,7 @@ currentMajor: "7"
 latestReleaseDate: 2026-09-21
 githubStargazers: 506
 contributors: 93
+httpArchiveSites: 2592
 social:
   x: https://twitter.com/eecms
   forum: https://expressionengine.com/forums
@@ -104,6 +105,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/ExpressionEngine/ExpressionEngine/contributors?per_page=1&anon=true
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

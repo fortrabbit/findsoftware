@@ -28,6 +28,9 @@ latestReleaseDate: 2026-08-04
 githubStargazers: 1548
 npmWeeklyDownloads: 5569
 contributors: 84
+httpArchiveSites: 769
+dependentRepos: 101
+dependentPackages: 40
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -82,6 +85,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/aurelia
     checkedAt: 2026-10-21
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/aurelia
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/aurelia
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

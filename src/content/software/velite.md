@@ -28,6 +28,7 @@ latestReleaseDate: 2026-06-17
 githubStargazers: 824
 npmWeeklyDownloads: 50083
 contributors: 21
+dependentRepos: 2
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -91,6 +92,9 @@ sources:
   - field: firstRelease
     url: https://github.com/zce/velite/releases/tag/v0.1.0
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/velite
+    checkedAt: 2026-10-25
 ai: authored
 databases: null
 adminUi: null

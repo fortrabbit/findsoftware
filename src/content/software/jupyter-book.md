@@ -29,6 +29,8 @@ latestReleaseDate: 2026-09-23
 githubStargazers: 4287
 npmWeeklyDownloads: 433
 contributors: 26
+ecosystemsMonthlyDownloads: 217891
+dependentPackages: 1
 social:
   discord: https://discord.mystmd.org
   forum: https://github.com/orgs/jupyter-book/discussions
@@ -92,6 +94,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/jupyter-book
     checkedAt: 2026-10-23
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/jupyter-book
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/jupyter-book
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

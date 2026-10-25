@@ -23,6 +23,8 @@ currentMajor: "1"
 latestReleaseDate: 2024-04-16
 githubStargazers: 333
 packagistDownloads: 2260
+packagistMonthlyDownloads: 13
+dependentRepos: 1
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -68,6 +70,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/kumbia/framework.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/kumbia%2Fframework
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/kumbia/framework/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

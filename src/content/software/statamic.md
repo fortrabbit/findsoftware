@@ -50,6 +50,10 @@ githubStargazers: 4906
 packagistDownloads: 4268843
 contributors: 365
 pluginCount: 490
+packagistMonthlyDownloads: 237310
+httpArchiveSites: 2200
+dependentRepos: 388
+dependentPackages: 377
 social:
   x: https://x.com/statamic
   bluesky: https://bsky.app/profile/statamic.com
@@ -160,6 +164,18 @@ sources:
   - field: runsAs
     url: https://statamic.dev/getting-started/deploying
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/statamic%2Fcms
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/statamic%2Fcms
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/statamic/cms/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

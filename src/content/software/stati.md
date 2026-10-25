@@ -27,6 +27,7 @@ latestReleaseDate: 2019-05-28
 githubStargazers: 24
 packagistDownloads: 79
 contributors: 1
+packagistMonthlyDownloads: 10
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -90,6 +91,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/stati/stati.json
     checkedAt: 2026-10-21
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/stati/stati/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

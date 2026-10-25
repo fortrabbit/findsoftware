@@ -27,6 +27,7 @@ latestReleaseDate: 2026-10-14
 githubStargazers: 19441
 npmWeeklyDownloads: 9167
 contributors: 441
+dependentRepos: 10
 social:
   x: https://x.com/Decap_CMS
   discord: https://decapcms.org/chat
@@ -93,6 +94,9 @@ sources:
   - field: i18n
     url: https://decapcms.org/docs/i18n/
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/decap-cms-app
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

@@ -28,6 +28,8 @@ latestReleaseDate: 2017-03-22
 githubStargazers: 13
 npmWeeklyDownloads: 9
 contributors: 3
+dependentRepos: 1
+dependentPackages: 1
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -85,6 +87,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/onessg
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/onessg
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/onessg
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

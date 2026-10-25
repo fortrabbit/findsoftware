@@ -35,6 +35,9 @@ latestReleaseDate: 2023-08-14
 githubStargazers: 2836
 npmWeeklyDownloads: 49725
 contributors: 75
+httpArchiveSites: 212
+dependentRepos: 36651
+dependentPackages: 5084
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -98,6 +101,15 @@ sources:
   - field: firstRelease
     url: https://registry.npmjs.org/vuepress
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vuepress
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vuepress
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

@@ -23,6 +23,8 @@ latestReleaseDate: 2024-12-31
 githubStargazers: 13
 npmWeeklyDownloads: 64
 contributors: 1
+dependentRepos: 1
+dependentPackages: 1
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -80,6 +82,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/mdu.js
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/mdu.js
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/mdu.js
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

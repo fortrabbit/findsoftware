@@ -28,6 +28,8 @@ currentMajor: "1"
 latestReleaseDate: 2026-01-26
 githubStargazers: 1173
 contributors: 22
+ecosystemsMonthlyDownloads: 191
+dependentRepos: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -85,6 +87,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/knadh/tg-archive/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/tg-archive
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/tg-archive
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

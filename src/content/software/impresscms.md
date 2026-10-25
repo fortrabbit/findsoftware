@@ -35,6 +35,7 @@ currentMajor: "2"
 latestReleaseDate: 2026-04-13
 githubStargazers: 30
 contributors: 40
+httpArchiveSites: 4
 social:
   x: https://www.twitter.com/ImpressCMS
   mastodon: https://phpc.social/@impresscms
@@ -111,6 +112,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/ImpressCMS/impresscms/contributors?anon=true&per_page=100
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

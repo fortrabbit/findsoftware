@@ -25,6 +25,8 @@ currentMajor: "5"
 latestReleaseDate: 2025-04-07
 githubStargazers: 17
 npmWeeklyDownloads: 25
+dependentRepos: 12
+dependentPackages: 1
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -76,6 +78,12 @@ sources:
   - field: githubStargazers
     url: https://github.com/entu/ssg
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/entu-ssg
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/entu-ssg
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

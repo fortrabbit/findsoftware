@@ -27,6 +27,9 @@ currentMajor: "1"
 latestReleaseDate: 2019-04-23
 githubStargazers: 82
 packagistDownloads: 66604
+packagistMonthlyDownloads: 715
+dependentRepos: 25
+dependentPackages: 18
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -81,6 +84,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/bookdown/bookdown.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/bookdown%2Fbookdown
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/bookdown%2Fbookdown
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/bookdown/bookdown/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

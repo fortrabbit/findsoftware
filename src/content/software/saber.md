@@ -35,6 +35,8 @@ latestReleaseDate: 2020-05-19
 githubStargazers: 2114
 npmWeeklyDownloads: 115
 contributors: 30
+dependentRepos: 135
+dependentPackages: 20
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -110,6 +112,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/saber
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/saber
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/saber
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

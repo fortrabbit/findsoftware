@@ -33,6 +33,9 @@ currentMajor: "3"
 latestReleaseDate: 2015-07-15
 githubStargazers: 1744
 contributors: 10
+httpArchiveSites: 15
+dependentRepos: 1479
+dependentPackages: 16
 social:
   x: https://twitter.com/octopress
 addedAt: 2026-10-23
@@ -104,6 +107,15 @@ sources:
   - field: contentStore
     url: https://raw.githubusercontent.com/octopress/octopress/master/README.md
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/octopress
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/octopress
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

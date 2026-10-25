@@ -30,6 +30,8 @@ currentMajor: "0"
 latestReleaseDate: 2013-12-03
 githubStargazers: 118
 contributors: 7
+ecosystemsMonthlyDownloads: 230
+dependentRepos: 17
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -87,6 +89,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/audreyfeldroy/complexity/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/complexity
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/complexity
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

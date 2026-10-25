@@ -30,6 +30,9 @@ latestReleaseDate: 2026-06-02
 githubStargazers: 860
 packagistDownloads: 32618
 contributors: 19
+packagistMonthlyDownloads: 59
+dependentRepos: 11
+dependentPackages: 8
 social:
   discord: https://discord.gg/u4qpb5P
 addedAt: 2026-10-20
@@ -98,6 +101,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/litstack/litstack/contributors
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/litstack%2Flitstack
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/litstack%2Flitstack
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/litstack/litstack/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

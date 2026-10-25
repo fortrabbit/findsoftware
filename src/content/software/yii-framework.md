@@ -37,6 +37,10 @@ currentMajor: "2"
 latestReleaseDate: 2026-05-09
 githubStargazers: 14278
 packagistDownloads: 32621651
+packagistMonthlyDownloads: 594702
+httpArchiveSites: 19336
+dependentRepos: 33911
+dependentPackages: 9497
 social:
   x: https://x.com/yiiframework
   forum: https://www.yiiframework.com/forum
@@ -140,6 +144,18 @@ sources:
   - field: runsAs
     url: https://www.yiiframework.com/doc/guide/2.0/en/start-installation
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/yiisoft%2Fyii2
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/yiisoft%2Fyii2
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/yiisoft/yii2/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

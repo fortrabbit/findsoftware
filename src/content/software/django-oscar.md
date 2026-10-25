@@ -32,6 +32,9 @@ currentMajor: "4"
 latestReleaseDate: 2026-09-29
 githubStargazers: 6627
 contributors: 288
+ecosystemsMonthlyDownloads: 71907
+dependentRepos: 319
+dependentPackages: 15
 social:
   x: https://twitter.com/django_oscar
   discord: https://discord.gg/NMwfZuJnJZ
@@ -105,6 +108,15 @@ sources:
   - field: databases
     url: https://raw.githubusercontent.com/django-oscar/django-oscar/master/docs/source/ref/platform_database_support.rst
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-oscar
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-oscar
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-oscar
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

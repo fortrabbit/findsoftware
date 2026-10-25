@@ -29,6 +29,9 @@ currentMajor: "2"
 latestReleaseDate: 2026-10-11
 githubStargazers: 2359
 contributors: 28
+ecosystemsMonthlyDownloads: 37404
+dependentRepos: 94
+dependentPackages: 6
 addedAt: 2026-10-24
 checkedAt: 2026-10-24
 sources:
@@ -89,6 +92,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/Neoteroi/BlackSheep/contributors?per_page=1
     checkedAt: 2026-10-24
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/blacksheep
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/blacksheep
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/blacksheep
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

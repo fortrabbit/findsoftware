@@ -29,6 +29,8 @@ latestReleaseDate: 2026-02-03
 githubStargazers: 7817
 npmWeeklyDownloads: 12755
 contributors: 57
+dependentRepos: 4759
+dependentPackages: 2153
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -92,6 +94,12 @@ sources:
   - field: urls
     url: https://metalsmith.io/plugins
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/metalsmith
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/metalsmith
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

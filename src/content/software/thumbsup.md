@@ -29,6 +29,7 @@ latestReleaseDate: 2023-12-03
 githubStargazers: 865
 npmWeeklyDownloads: 50
 contributors: 22
+dependentRepos: 3
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -92,6 +93,9 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/thumbsup
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/thumbsup
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

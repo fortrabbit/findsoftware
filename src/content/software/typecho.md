@@ -32,6 +32,7 @@ currentMajor: "1"
 latestReleaseDate: 2026-01-20
 githubStargazers: 12449
 contributors: 89
+httpArchiveSites: 125
 social:
   x: https://twitter.com/typecho
   forum: https://forum.typecho.org
@@ -95,6 +96,9 @@ sources:
   - field: license
     url: https://docs.typecho.org/
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -29,6 +29,9 @@ latestReleaseDate: 2024-12-23
 githubStargazers: 943
 packagistDownloads: 780954
 contributors: 18
+packagistMonthlyDownloads: 27638
+dependentRepos: 26
+dependentPackages: 5
 social:
   x: https://twitter.com/x_framework
   forum: https://github.com/clue/framework-x/discussions
@@ -95,6 +98,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/clue/framework-x.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/clue%2Fframework-x
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/clue%2Fframework-x
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/clue/framework-x/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

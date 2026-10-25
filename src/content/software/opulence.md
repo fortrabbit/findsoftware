@@ -26,6 +26,9 @@ latestReleaseDate: 2023-01-24
 githubStargazers: 716
 packagistDownloads: 29097
 contributors: 11
+packagistMonthlyDownloads: 58
+dependentRepos: 16
+dependentPackages: 2
 social:
   x: https://twitter.com/opulencephp
 addedAt: 2026-10-21
@@ -91,6 +94,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/opulence/opulence.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/opulence%2Fopulence
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/opulence%2Fopulence
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/opulence/opulence/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

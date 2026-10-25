@@ -30,6 +30,9 @@ latestReleaseDate: 2024-11-09
 githubStargazers: 3
 packagistDownloads: 2981
 contributors: 1
+packagistMonthlyDownloads: 18
+dependentRepos: 2
+dependentPackages: 1
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -93,6 +96,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/staticka/staticka.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/staticka%2Fstaticka
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/staticka%2Fstaticka
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/staticka/staticka/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

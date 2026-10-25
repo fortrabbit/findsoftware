@@ -33,6 +33,8 @@ currentMajor: "0"
 latestReleaseDate: 2017-03-09
 githubStargazers: 640
 contributors: 21
+ecosystemsMonthlyDownloads: 209
+dependentRepos: 10
 social:
   x: https://twitter.com/lfsproject
 addedAt: 2026-10-23
@@ -95,6 +97,12 @@ sources:
   - field: adminUi
     url: https://raw.githubusercontent.com/diefenbach/django-lfs/main/docs/user/management/shop/index.rst
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-lfs
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-lfs
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

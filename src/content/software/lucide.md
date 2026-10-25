@@ -19,6 +19,8 @@ latestReleaseDate: 2026-10-17
 githubStargazers: 25145
 npmWeeklyDownloads: 1000443
 contributors: 426
+dependentRepos: 69
+dependentPackages: 17
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -64,6 +66,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/lucide
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/lucide
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/lucide
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

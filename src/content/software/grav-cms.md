@@ -40,6 +40,10 @@ githubStargazers: 15687
 packagistDownloads: 90772
 contributors: 215
 pluginCount: 531
+packagistMonthlyDownloads: 1477
+httpArchiveSites: 718
+dependentRepos: 9
+dependentPackages: 2
 social:
   x: https://twitter.com/getgrav
   discord: https://chat.getgrav.org
@@ -144,6 +148,18 @@ sources:
   - field: runsAs
     url: https://learn.getgrav.org/17/basics/installation
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/getgrav%2Fgrav
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/getgrav%2Fgrav
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/getgrav/grav/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

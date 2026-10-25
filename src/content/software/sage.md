@@ -28,6 +28,9 @@ latestReleaseDate: 2026-04-26
 githubStargazers: 13280
 packagistDownloads: 347235
 contributors: 211
+packagistMonthlyDownloads: 1215
+dependentRepos: 6
+dependentPackages: 3
 social:
   x: https://x.com/rootswp
 addedAt: 2026-10-19
@@ -93,6 +96,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/roots/sage.json
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/roots%2Fsage
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/roots%2Fsage
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/roots/sage/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

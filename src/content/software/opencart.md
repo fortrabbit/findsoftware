@@ -32,6 +32,7 @@ currentMajor: "4"
 latestReleaseDate: 2026-08-11
 githubStargazers: 8218
 contributors: 329
+httpArchiveSites: 20579
 social:
   x: https://twitter.com/opencart
   forum: https://forum.opencart.com
@@ -98,6 +99,9 @@ sources:
   - field: contributors
     url: https://github.com/opencart/opencart/graphs/contributors
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

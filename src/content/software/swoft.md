@@ -29,6 +29,9 @@ latestReleaseDate: 2021-05-08
 githubStargazers: 5532
 packagistDownloads: 188516
 contributors: 38
+packagistMonthlyDownloads: 1461
+dependentRepos: 134
+dependentPackages: 99
 social:
   forum: https://github.com/swoft-cloud/forum/issues
   subreddit: https://www.reddit.com/r/swoft/
@@ -89,6 +92,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/swoft/framework.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/swoft%2Fframework
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/swoft%2Fframework
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/swoft/framework/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

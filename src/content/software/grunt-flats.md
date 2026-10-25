@@ -32,6 +32,8 @@ latestReleaseDate: 2014-12-15
 githubStargazers: 12
 npmWeeklyDownloads: 3
 contributors: 1
+dependentRepos: 3
+dependentPackages: 2
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -95,6 +97,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/grunt-flats
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/grunt-flats
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/grunt-flats
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

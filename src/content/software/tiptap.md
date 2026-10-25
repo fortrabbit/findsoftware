@@ -26,6 +26,8 @@ latestReleaseDate: 2026-10-13
 githubStargazers: 38775
 npmWeeklyDownloads: 13818734
 contributors: 545
+dependentRepos: 2259
+dependentPackages: 634
 social:
   x: https://twitter.com/tiptap_editor
   bluesky: https://bsky.app/profile/tiptap.dev
@@ -91,6 +93,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@tiptap/core
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40tiptap%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40tiptap%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

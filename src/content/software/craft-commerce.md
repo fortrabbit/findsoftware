@@ -33,6 +33,10 @@ latestReleaseDate: 2026-10-08
 githubStargazers: 242
 packagistDownloads: 438721
 contributors: 124
+packagistMonthlyDownloads: 5201
+httpArchiveSites: 617
+dependentRepos: 132
+dependentPackages: 133
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -99,6 +103,18 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/craftcms/commerce.json
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/craftcms%2Fcommerce
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/craftcms%2Fcommerce
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/craftcms/commerce/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

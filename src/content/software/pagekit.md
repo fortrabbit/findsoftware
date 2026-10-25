@@ -24,6 +24,9 @@ latestReleaseDate: 2020-01-20
 githubStargazers: 5448
 packagistDownloads: 468
 contributors: 38
+packagistMonthlyDownloads: 29
+httpArchiveSites: 32
+dependentRepos: 4
 social:
   x: https://twitter.com/pagekit
   discord: https://discord.gg/e7Kw47E
@@ -81,6 +84,15 @@ sources:
   - field: licenseModel
     url: https://github.com/pagekit/pagekit/blob/develop/README.md
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/pagekit%2Fpagekit
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/pagekit/pagekit/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

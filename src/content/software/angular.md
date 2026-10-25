@@ -35,6 +35,9 @@ latestReleaseDate: 2026-10-14
 githubStargazers: 101090
 npmWeeklyDownloads: 3429637
 contributors: 2693
+httpArchiveSites: 118500
+dependentRepos: 768558
+dependentPackages: 26429
 social:
   x: https://x.com/angular
   bluesky: https://bsky.app/profile/angular.dev
@@ -116,6 +119,15 @@ sources:
   - field: runsAs
     url: https://angular.dev/guide/ssr
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40angular%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40angular%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

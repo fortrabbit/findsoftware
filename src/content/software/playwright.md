@@ -24,6 +24,8 @@ currentMajor: "1"
 latestReleaseDate: 2026-10-14
 githubStargazers: 98050
 npmWeeklyDownloads: 68885977
+dependentRepos: 9850
+dependentPackages: 1947
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -72,6 +74,12 @@ sources:
   - field: runsAs
     url: https://playwright.dev/docs/intro
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/playwright
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/playwright
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

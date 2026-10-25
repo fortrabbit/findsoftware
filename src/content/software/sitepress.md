@@ -35,6 +35,8 @@ currentMajor: "4"
 latestReleaseDate: 2025-11-17
 githubStargazers: 396
 contributors: 7
+dependentRepos: 3
+dependentPackages: 2
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -107,6 +109,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/sitepress/sitepress/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/sitepress
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/sitepress
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

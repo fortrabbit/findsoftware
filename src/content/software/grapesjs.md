@@ -22,6 +22,9 @@ latestReleaseDate: 2026-10-15
 githubStargazers: 26331
 npmWeeklyDownloads: 264699
 contributors: 195
+httpArchiveSites: 79
+dependentRepos: 362
+dependentPackages: 180
 social:
   x: https://twitter.com/grapesjs
   discord: https://discord.gg/QAbgGXq
@@ -82,6 +85,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/grapesjs
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/grapesjs
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/grapesjs
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

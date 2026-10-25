@@ -28,6 +28,8 @@ latestReleaseDate: 2026-10-16
 githubStargazers: 171
 npmWeeklyDownloads: 431
 contributors: 8
+dependentRepos: 2
+dependentPackages: 2
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -91,6 +93,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/curvenote/curvenote/contributors?anon=true&per_page=100
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/curvenote
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/curvenote
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

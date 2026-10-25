@@ -27,6 +27,9 @@ currentMajor: "5"
 latestReleaseDate: 2026-10-09
 githubStargazers: 69578
 npmWeeklyDownloads: 86916550
+httpArchiveSites: 77324
+dependentRepos: 1853938
+dependentPackages: 93237
 social:
   x: https://x.com/UseExpressJS
   bluesky: https://bsky.app/profile/expressjs.bsky.social
@@ -84,6 +87,15 @@ sources:
   - field: runsAs
     url: https://expressjs.com/en/starter/hello-world.html
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/express
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/express
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

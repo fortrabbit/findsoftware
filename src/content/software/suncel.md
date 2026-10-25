@@ -14,6 +14,7 @@ hqCountry: FR
 adminUi: true
 i18n: yes, multiple locales, set per plan
 licenseModel: saas
+httpArchiveSites: 1
 social:
   discord: https://discord.gg/cqTR6bbC6M
 addedAt: 2026-10-24
@@ -43,6 +44,9 @@ sources:
   - field: hqCountry
     url: https://suncel.io/terms-of-service
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

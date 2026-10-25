@@ -25,6 +25,8 @@ latestReleaseDate: 2018-08-31
 githubStargazers: 11
 packagistDownloads: 151
 contributors: 1
+packagistMonthlyDownloads: 2
+dependentRepos: 1
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -73,6 +75,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/fw/last-bundle.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/fw%2Flast-bundle
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/fw/last-bundle/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -25,6 +25,7 @@ i18n: yes, support of multiple languages
 installMethod: upload the package to the web space, then run the installer in the browser
 licenseModel: open-source
 currentMajor: "2"
+httpArchiveSites: 6
 social:
   forum: https://forum.websitebaker.org
 addedAt: 2026-10-24
@@ -81,6 +82,9 @@ sources:
   - field: urls
     url: https://websitebaker.org/en/home/
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

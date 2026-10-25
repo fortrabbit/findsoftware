@@ -28,6 +28,8 @@ currentMajor: "2"
 latestReleaseDate: 2026-05-26
 githubStargazers: 17
 npmWeeklyDownloads: 5
+dependentRepos: 5
+dependentPackages: 7
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -82,6 +84,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/orison
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/orison
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/orison
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

@@ -18,6 +18,8 @@ currentMajor: "5"
 latestReleaseDate: 2026-10-17
 githubStargazers: 50456
 npmWeeklyDownloads: 40627116
+dependentRepos: 21873
+dependentPackages: 1082
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -57,6 +59,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@tanstack/react-query
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40tanstack%2Freact-query
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40tanstack%2Freact-query
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

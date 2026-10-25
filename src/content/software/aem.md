@@ -23,6 +23,7 @@ runsAs:
 installMethod: standalone quickstart jar, or WAR file for a third-party application server
 licenseModel: commercial
 currentMajor: "6"
+httpArchiveSites: 19394
 addedAt: 2026-10-24
 checkedAt: 2026-10-24
 sources:
@@ -62,6 +63,9 @@ sources:
   - field: adminUi
     url: https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

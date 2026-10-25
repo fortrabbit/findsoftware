@@ -24,6 +24,10 @@ currentMajor: "4"
 latestReleaseDate: 2026-09-28
 githubStargazers: 23586
 packagistDownloads: 114059202
+packagistMonthlyDownloads: 9404623
+httpArchiveSites: 22403
+dependentRepos: 18041
+dependentPackages: 1034
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -72,6 +76,18 @@ sources:
   - field: latestReleaseDate
     url: https://github.com/livewire/livewire/releases/tag/v4.4.7
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/livewire%2Flivewire
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/livewire%2Flivewire
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/livewire/livewire/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

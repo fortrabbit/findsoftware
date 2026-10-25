@@ -26,6 +26,9 @@ latestReleaseDate: 2026-08-24
 githubStargazers: 8870
 npmWeeklyDownloads: 52644
 contributors: 102
+httpArchiveSites: 1244
+dependentRepos: 184
+dependentPackages: 63
 social:
   x: https://x.com/builderio
   forum: https://forum.builder.io/
@@ -86,6 +89,15 @@ sources:
   - field: urls
     url: https://www.builder.io/pricing
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40builder.io%2Fsdk
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40builder.io%2Fsdk
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

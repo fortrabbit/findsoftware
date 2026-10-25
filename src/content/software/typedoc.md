@@ -22,6 +22,8 @@ currentMajor: "0"
 latestReleaseDate: 2026-07-05
 githubStargazers: 8451
 npmWeeklyDownloads: 2845089
+dependentRepos: 71458
+dependentPackages: 35918
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -67,6 +69,12 @@ sources:
   - field: runsAs
     url: https://typedoc.org/
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/typedoc
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/typedoc
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

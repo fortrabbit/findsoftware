@@ -25,6 +25,9 @@ latestReleaseDate: 2018-04-20
 githubStargazers: 3528
 packagistDownloads: 17102305
 contributors: 231
+packagistMonthlyDownloads: 60097
+dependentRepos: 9654
+dependentPackages: 1109
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -94,6 +97,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/silex/silex.json
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/silex%2Fsilex
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/silex%2Fsilex
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/silex/silex/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -30,6 +30,8 @@ latestReleaseDate: 2015-11-19
 githubStargazers: 4
 npmWeeklyDownloads: 27
 contributors: 4
+dependentRepos: 3
+dependentPackages: 2
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -93,6 +95,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/asimov-static
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/asimov-static
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/asimov-static
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

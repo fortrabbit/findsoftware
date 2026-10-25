@@ -23,6 +23,8 @@ currentMajor: "5"
 latestReleaseDate: 2017-04-10
 githubStargazers: 25
 contributors: 2
+ecosystemsMonthlyDownloads: 448
+dependentRepos: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -77,6 +79,12 @@ sources:
   - field: license
     url: https://github.com/BlendedSiteGenerator/Blended/blob/master/README.md
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/blended
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/blended
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

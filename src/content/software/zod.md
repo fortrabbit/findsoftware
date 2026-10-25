@@ -23,6 +23,8 @@ currentMajor: "4"
 latestReleaseDate: 2026-10-12
 githubStargazers: 44154
 npmWeeklyDownloads: 213499904
+dependentRepos: 122785
+dependentPackages: 6111
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -68,6 +70,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/zod
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/zod
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/zod
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

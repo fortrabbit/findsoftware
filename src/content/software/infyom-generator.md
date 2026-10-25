@@ -26,6 +26,9 @@ currentMajor: "6"
 latestReleaseDate: 2023-04-19
 githubStargazers: 3815
 packagistDownloads: 2456625
+packagistMonthlyDownloads: 15779
+dependentRepos: 1315
+dependentPackages: 19
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -74,6 +77,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/infyomlabs/laravel-generator.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/infyomlabs%2Flaravel-generator
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/infyomlabs%2Flaravel-generator
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/infyomlabs/laravel-generator/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

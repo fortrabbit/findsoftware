@@ -32,6 +32,10 @@ latestReleaseDate: 2026-10-16
 githubStargazers: 237
 packagistDownloads: 1270560
 contributors: 128
+packagistMonthlyDownloads: 23688
+httpArchiveSites: 384
+dependentRepos: 125
+dependentPackages: 156
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -98,6 +102,18 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/oxid-esales/oxideshop-ce.json
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/oxid-esales%2Foxideshop-ce
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/oxid-esales%2Foxideshop-ce
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/oxid-esales/oxideshop-ce/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

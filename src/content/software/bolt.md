@@ -29,6 +29,8 @@ latestReleaseDate: 2016-07-26
 githubStargazers: 39
 npmWeeklyDownloads: 1
 contributors: 1
+dependentRepos: 1
+dependentPackages: 2
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -86,6 +88,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/bolt-cli
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/bolt-cli
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/bolt-cli
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

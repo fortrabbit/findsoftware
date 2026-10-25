@@ -27,6 +27,9 @@ latestReleaseDate: 2025-08-15
 githubStargazers: 1217
 packagistDownloads: 218708
 contributors: 101
+packagistMonthlyDownloads: 2440
+dependentRepos: 81
+dependentPackages: 51
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -66,6 +69,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/UnionOfRAD/lithium/contributors
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/unionofrad%2Flithium
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/unionofrad%2Flithium
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/unionofrad/lithium/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

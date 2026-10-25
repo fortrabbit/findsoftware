@@ -29,6 +29,9 @@ currentMajor: "0"
 latestReleaseDate: 2025-06-15
 githubStargazers: 8798
 contributors: 189
+ecosystemsMonthlyDownloads: 6956875
+dependentRepos: 10118
+dependentPackages: 167
 social:
   forum: https://groups.google.de/group/bottlepy
 addedAt: 2026-10-24
@@ -97,6 +100,15 @@ sources:
   - field: urls
     url: https://bottlepy.org/docs/dev/plugins/list.html
     checkedAt: 2026-10-24
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/bottle
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/bottle
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/bottle
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

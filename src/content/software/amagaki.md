@@ -30,6 +30,8 @@ latestReleaseDate: 2025-11-20
 githubStargazers: 36
 npmWeeklyDownloads: 123
 contributors: 8
+dependentRepos: 11
+dependentPackages: 9
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -93,6 +95,12 @@ sources:
   - field: runsAs
     url: https://github.com/blinkk/amagaki
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40amagaki%2Famagaki
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40amagaki%2Famagaki
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

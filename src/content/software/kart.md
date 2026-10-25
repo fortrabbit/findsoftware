@@ -31,6 +31,8 @@ licenseModel: open-source
 license: MIT
 currentMajor: "0"
 latestReleaseDate: 2024-11-12
+ecosystemsMonthlyDownloads: 176
+dependentRepos: 4
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -88,6 +90,12 @@ sources:
   - field: contentStore
     url: https://kart.giacomocaironi.dev/getting-started/
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/kart
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/kart
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

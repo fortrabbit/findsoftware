@@ -28,6 +28,8 @@ latestReleaseDate: 2026-10-01
 githubStargazers: 13875
 npmWeeklyDownloads: 16095079
 contributors: 284
+dependentRepos: 26594
+dependentPackages: 433
 social:
   bluesky: https://bsky.app/profile/shiki.style
 addedAt: 2026-10-19
@@ -90,6 +92,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/shiki
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/shiki
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/shiki
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

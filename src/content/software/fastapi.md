@@ -25,6 +25,9 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-10-18
 githubStargazers: 103242
+ecosystemsMonthlyDownloads: 381578963
+dependentRepos: 43608
+dependentPackages: 2920
 social:
   bluesky: https://bsky.app/profile/fastapi.tiangolo.com
   discord: https://discord.com/invite/VQjSZaeJmf
@@ -79,6 +82,15 @@ sources:
   - field: runsAs
     url: https://fastapi.tiangolo.com/fastapi-cli/
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/fastapi
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/fastapi
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/fastapi
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

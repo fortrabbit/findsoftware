@@ -25,6 +25,7 @@ latestReleaseDate: 2023-09-25
 githubStargazers: 150
 npmWeeklyDownloads: 10
 contributors: 12
+dependentRepos: 1
 social:
   forum: https://github.com/gloriajs/gloria/discussions/
 addedAt: 2026-10-22
@@ -75,6 +76,9 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/gloriajs
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/gloriajs
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

@@ -28,6 +28,9 @@ currentMajor: "1"
 latestReleaseDate: 2026-10-06
 githubStargazers: 6577
 packagistDownloads: 492954
+packagistMonthlyDownloads: 8796
+dependentRepos: 8
+dependentPackages: 3
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -82,6 +85,15 @@ sources:
   - field: runsAs
     url: https://roots.io/bedrock/docs/installation/
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/roots%2Fbedrock
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/roots%2Fbedrock
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/roots/bedrock/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

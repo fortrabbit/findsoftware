@@ -26,6 +26,10 @@ latestReleaseDate: 2026-10-09
 githubStargazers: 8130
 packagistDownloads: 84621368
 npmWeeklyDownloads: 677722
+packagistMonthlyDownloads: 8214997
+httpArchiveSites: 17451
+dependentRepos: 782
+dependentPackages: 18
 social:
   x: https://x.com/inertiajs
   discord: https://discord.gg/inertiajs
@@ -92,6 +96,18 @@ sources:
   - field: latestReleaseDate
     url: https://github.com/inertiajs/inertia/releases/tag/v3.9.1
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40inertiajs%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40inertiajs%2Fcore
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/inertiajs/inertia-laravel/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

@@ -31,6 +31,8 @@ latestReleaseDate: 2017-07-14
 githubStargazers: 29069
 npmWeeklyDownloads: 3848
 contributors: 38
+dependentRepos: 5740
+dependentPackages: 766
 social:
   x: https://twitter.com/GitBookIO
 addedAt: 2026-10-22
@@ -108,6 +110,12 @@ sources:
   - field: urls
     url: https://www.gitbook.com/pricing
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/gitbook-cli
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/gitbook-cli
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

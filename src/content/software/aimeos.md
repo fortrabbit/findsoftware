@@ -26,6 +26,7 @@ license: MIT, LGPL-3.0-or-later
 latestReleaseDate: 2026-10-05
 githubStargazers: 5463
 packagistDownloads: 109968
+packagistMonthlyDownloads: 217
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -86,6 +87,9 @@ sources:
   - field: runsAs
     url: https://aimeos.org/docs/latest/laravel/setup/
     checkedAt: 2026-10-19
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/aimeos/aimeos/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -27,6 +27,9 @@ currentMajor: "1"
 latestReleaseDate: 2026-10-17
 githubStargazers: 530
 packagistDownloads: 371477
+packagistMonthlyDownloads: 46824
+dependentRepos: 1
+dependentPackages: 2
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -78,6 +81,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/loupe/loupe.json
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/loupe%2Floupe
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/loupe%2Floupe
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/loupe/loupe/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 adminUi: null
 headlessApi: null

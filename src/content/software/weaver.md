@@ -23,6 +23,7 @@ currentMajor: "0"
 latestReleaseDate: 2026-10-17
 githubStargazers: 7
 contributors: 1
+dependentRepos: 10
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -71,6 +72,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/davidsiaw/weaver/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/weaver
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

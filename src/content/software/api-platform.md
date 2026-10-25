@@ -30,6 +30,9 @@ latestReleaseDate: 2026-10-16
 githubStargazers: 2579
 packagistDownloads: 55190953
 contributors: 565
+packagistMonthlyDownloads: 1236368
+dependentRepos: 4312
+dependentPackages: 254
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -84,6 +87,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/api-platform/core.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/api-platform%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/api-platform%2Fcore
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/api-platform/core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

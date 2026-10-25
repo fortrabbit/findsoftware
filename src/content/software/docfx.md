@@ -30,6 +30,7 @@ currentMajor: "2"
 latestReleaseDate: 2026-09-25
 githubStargazers: 4443
 contributors: 255
+httpArchiveSites: 18
 social:
   forum: https://github.com/dotnet/docfx/discussions
 addedAt: 2026-10-23
@@ -95,6 +96,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/dotnet/docfx/contributors
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

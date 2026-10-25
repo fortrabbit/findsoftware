@@ -28,6 +28,9 @@ currentMajor: "3"
 latestReleaseDate: 2026-09-15
 githubStargazers: 6911
 packagistDownloads: 3174022
+packagistMonthlyDownloads: 61241
+dependentRepos: 433
+dependentPackages: 490
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -82,6 +85,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/hyperf/framework.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/hyperf%2Fframework
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/hyperf%2Fframework
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/hyperf/framework/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

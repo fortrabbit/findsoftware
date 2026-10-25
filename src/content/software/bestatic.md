@@ -33,6 +33,7 @@ currentMajor: "0"
 latestReleaseDate: 2025-12-28
 githubStargazers: 17
 contributors: 1
+ecosystemsMonthlyDownloads: 36
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -105,6 +106,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/tatsatb/bestatic/contributors
     checkedAt: 2026-10-23
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/Bestatic
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

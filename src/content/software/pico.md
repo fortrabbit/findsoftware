@@ -31,6 +31,10 @@ latestReleaseDate: 2020-08-29
 githubStargazers: 3902
 packagistDownloads: 38372
 contributors: 46
+packagistMonthlyDownloads: 108
+httpArchiveSites: 63
+dependentRepos: 61
+dependentPackages: 12
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -100,6 +104,18 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/picocms/Pico/contributors?anon=true&per_page=100
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/picocms%2Fpico
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/picocms%2Fpico
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/picocms/pico/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

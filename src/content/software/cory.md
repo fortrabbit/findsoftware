@@ -25,6 +25,8 @@ latestReleaseDate: 2017-06-21
 githubStargazers: 61
 npmWeeklyDownloads: 27
 contributors: 3
+dependentRepos: 1
+dependentPackages: 2
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -85,6 +87,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/cory
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/cory
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/cory
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

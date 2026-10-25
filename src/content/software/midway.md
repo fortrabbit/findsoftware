@@ -26,6 +26,8 @@ latestReleaseDate: 2026-10-18
 githubStargazers: 7757
 npmWeeklyDownloads: 4266
 contributors: 182
+dependentRepos: 145
+dependentPackages: 351
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -77,6 +79,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@midwayjs/core
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40midwayjs%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40midwayjs%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

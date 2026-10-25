@@ -30,6 +30,7 @@ currentMajor: "1"
 latestReleaseDate: 2026-03-20
 githubStargazers: 302
 contributors: 231
+ecosystemsMonthlyDownloads: 1636169
 social:
   discord: https://discord.gg/CwYAgEPHZd
 addedAt: 2026-10-23
@@ -92,6 +93,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/ProperDocs/properdocs/contributors
     checkedAt: 2026-10-23
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/properdocs
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

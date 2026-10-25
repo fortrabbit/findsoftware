@@ -23,6 +23,7 @@ latestReleaseDate: 2026-10-18
 githubStargazers: 125924
 npmWeeklyDownloads: 7302834
 contributors: 469
+httpArchiveSites: 115715
 social:
   x: https://twitter.com/shadcn
 addedAt: 2026-10-19
@@ -79,6 +80,9 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/shadcn
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

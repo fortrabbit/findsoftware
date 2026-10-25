@@ -35,6 +35,8 @@ latestReleaseDate: 2026-10-16
 githubStargazers: 15238
 npmWeeklyDownloads: 7193027
 contributors: 756
+httpArchiveSites: 17236
+dependentRepos: 3
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -104,6 +106,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@tanstack/react-start
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40tanstack%2Freact-start
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

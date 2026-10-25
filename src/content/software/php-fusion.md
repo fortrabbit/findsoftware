@@ -32,6 +32,7 @@ currentMajor: "9"
 latestReleaseDate: 2025-02-20
 githubStargazers: 122
 contributors: 53
+httpArchiveSites: 115
 social:
   forum: https://php-fusion.com/forum
 addedAt: 2026-10-20
@@ -94,6 +95,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/PHPFusion/PHPFusion/contributors?anon=true&per_page=100
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

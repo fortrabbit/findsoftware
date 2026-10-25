@@ -32,6 +32,9 @@ latestReleaseDate: 2025-08-18
 githubStargazers: 684
 packagistDownloads: 16739
 contributors: 5
+packagistMonthlyDownloads: 209
+dependentRepos: 69
+dependentPackages: 2
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -89,6 +92,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/gotzmann/comet.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/gotzmann%2Fcomet
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/gotzmann%2Fcomet
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/gotzmann/comet/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

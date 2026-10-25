@@ -33,6 +33,8 @@ latestReleaseDate: 2026-10-14
 githubStargazers: 210
 npmWeeklyDownloads: 334
 contributors: 8
+dependentRepos: 9
+dependentPackages: 2
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -96,6 +98,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/minista
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/minista
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/minista
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

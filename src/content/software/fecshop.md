@@ -31,6 +31,9 @@ latestReleaseDate: 2021-09-02
 githubStargazers: 5259
 packagistDownloads: 12487
 contributors: 12
+packagistMonthlyDownloads: 24
+dependentRepos: 12
+dependentPackages: 8
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -94,6 +97,15 @@ sources:
   - field: urls
     url: https://www.fecmall.com/
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/fancyecommerce%2Ffecshop
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/fancyecommerce%2Ffecshop
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/fancyecommerce/fecshop/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

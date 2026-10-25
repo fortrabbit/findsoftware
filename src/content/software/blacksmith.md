@@ -31,6 +31,8 @@ latestReleaseDate: 2012-12-12
 githubStargazers: 551
 npmWeeklyDownloads: 8
 contributors: 32
+dependentRepos: 6
+dependentPackages: 1
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -91,6 +93,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/blacksmith
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/blacksmith
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/blacksmith
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

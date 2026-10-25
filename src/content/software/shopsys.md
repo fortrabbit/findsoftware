@@ -36,6 +36,9 @@ latestReleaseDate: 2026-05-28
 githubStargazers: 351
 packagistDownloads: 243267
 contributors: 82
+packagistMonthlyDownloads: 7093
+dependentRepos: 12
+dependentPackages: 14
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -117,6 +120,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/shopsys/framework.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/shopsys%2Fframework
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/shopsys%2Fframework
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/shopsys/framework/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

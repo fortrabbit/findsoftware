@@ -28,6 +28,9 @@ latestReleaseDate: 2024-09-24
 githubStargazers: 11784
 packagistDownloads: 2794092
 contributors: 352
+packagistMonthlyDownloads: 25134
+dependentRepos: 2827
+dependentPackages: 157
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -97,6 +100,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/tcg/voyager.json
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/tcg%2Fvoyager
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/tcg%2Fvoyager
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/tcg/voyager/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

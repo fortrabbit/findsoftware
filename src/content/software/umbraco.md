@@ -42,6 +42,7 @@ currentMajor: "18"
 latestReleaseDate: 2026-10-06
 githubStargazers: 5270
 contributors: 1211
+httpArchiveSites: 4389
 social:
   discord: https://discord.com/invite/umbraco
   forum: https://forum.umbraco.com/
@@ -137,6 +138,9 @@ sources:
   - field: runsAs
     url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/install
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

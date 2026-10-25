@@ -27,6 +27,9 @@ currentMajor: "6"
 latestReleaseDate: 2025-09-29
 githubStargazers: 462
 packagistDownloads: 21408
+packagistMonthlyDownloads: 97
+dependentRepos: 17
+dependentPackages: 2
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -93,6 +96,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/typerocket/core.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/typerocket%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/typerocket%2Fcore
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/typerocket/core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

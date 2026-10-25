@@ -32,6 +32,8 @@ latestReleaseDate: 2026-10-15
 githubStargazers: 6602
 npmWeeklyDownloads: 33539
 contributors: 153
+ecosystemsMonthlyDownloads: 1151952
+httpArchiveSites: 602
 social:
   x: https://x.com/getflagsmith
   discord: https://discord.gg/hFhxNtXzgm
@@ -104,6 +106,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@flagsmith/flagsmith
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/flagsmith
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 templating: null

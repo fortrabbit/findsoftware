@@ -34,6 +34,9 @@ currentMajor: "9"
 latestReleaseDate: 2026-10-09
 githubStargazers: 265
 packagistDownloads: 1085126
+packagistMonthlyDownloads: 17555
+dependentRepos: 624
+dependentPackages: 589
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -112,6 +115,15 @@ sources:
   - field: urls
     url: https://www.neos.io/
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/neos%2Fneos
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/neos%2Fneos
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/neos/neos/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -36,6 +36,8 @@ latestReleaseDate: 2026-10-20
 githubStargazers: 8048
 npmWeeklyDownloads: 384
 contributors: 76
+dependentRepos: 22
+dependentPackages: 156
 social:
   x: https://x.com/WebinyCMS
   youtube: https://youtube.com/webiny
@@ -117,6 +119,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@webiny/cli
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40webiny%2Fcli
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40webiny%2Fcli
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

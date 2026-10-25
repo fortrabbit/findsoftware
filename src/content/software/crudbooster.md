@@ -32,6 +32,9 @@ latestReleaseDate: 2021-07-07
 githubStargazers: 1759
 packagistDownloads: 157499
 contributors: 38
+packagistMonthlyDownloads: 343
+dependentRepos: 273
+dependentPackages: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -98,6 +101,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/crocodicstudio/crudbooster.json
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/crocodicstudio%2Fcrudbooster
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/crocodicstudio%2Fcrudbooster
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/crocodicstudio/crudbooster/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

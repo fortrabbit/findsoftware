@@ -22,6 +22,7 @@ currentMajor: "3"
 latestReleaseDate: 2023-05-08
 githubStargazers: 1926
 packagistDownloads: 1238
+packagistMonthlyDownloads: 56
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -70,6 +71,9 @@ sources:
   - field: githubStargazers
     url: https://github.com/mix-php/mix
     checkedAt: 2026-10-21
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/mix/mix/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -124,6 +124,12 @@ const providerFields = z
     packagistDownloads: z.number().int().nonnegative().nullable().optional(),
     npmWeeklyDownloads: z.number().int().nonnegative().nullable().optional(),
     pluginCount: z.number().int().nonnegative().optional(),
+    packagistMonthlyDownloads: z.number().int().nonnegative().nullable().optional(),
+    ecosystemsMonthlyDownloads: z.number().int().nonnegative().nullable().optional(),
+    httpArchiveSites: z.number().int().nonnegative().nullable().optional(),
+    wordpressActiveInstalls: z.number().int().nonnegative().nullable().optional(),
+    dependentRepos: z.number().int().nonnegative().nullable().optional(),
+    dependentPackages: z.number().int().nonnegative().nullable().optional(),
 
     social: z
       .object({

@@ -27,6 +27,7 @@ latestReleaseDate: 2018-05-24
 githubStargazers: 57
 npmWeeklyDownloads: 1
 contributors: 3
+dependentRepos: 2
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -81,6 +82,9 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/susi
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/susi
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

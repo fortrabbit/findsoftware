@@ -21,6 +21,8 @@ currentMajor: "3"
 latestReleaseDate: 2026-10-10
 githubStargazers: 52383
 npmWeeklyDownloads: 82282633
+dependentRepos: 1703312
+dependentPackages: 231277
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -63,6 +65,12 @@ sources:
   - field: runsAs
     url: https://prettier.io/docs/install
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/prettier
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/prettier
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

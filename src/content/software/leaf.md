@@ -43,6 +43,9 @@ githubStargazers: 1324
 packagistDownloads: 53753
 contributors: 15
 pluginCount: 25
+packagistMonthlyDownloads: 2122
+dependentRepos: 38
+dependentPackages: 8
 social:
   x: https://x.com/leafphp
   discord: https://discord.gg/Pkrm9NJPE3
@@ -140,6 +143,15 @@ sources:
   - field: runsAs
     url: https://leafphp.dev/
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/leafs%2Fleaf
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/leafs%2Fleaf
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/leafs/leaf/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -44,6 +44,10 @@ githubStargazers: 3616
 packagistDownloads: 3801890
 contributors: 252
 pluginCount: 1639
+packagistMonthlyDownloads: 62585
+httpArchiveSites: 10507
+dependentRepos: 2755
+dependentPackages: 2145
 social:
   bluesky: https://bsky.app/profile/craftcms.com
   mastodon: https://masto.craftcms.com/@craftcms
@@ -154,6 +158,18 @@ sources:
   - field: runsAs
     url: https://craftcms.com/docs/5.x/install.html
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/craftcms%2Fcms
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/craftcms%2Fcms
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/craftcms/cms/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

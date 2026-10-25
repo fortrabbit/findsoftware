@@ -28,6 +28,8 @@ latestReleaseDate: 2026-05-12
 githubStargazers: 3822
 npmWeeklyDownloads: 132326
 contributors: 176
+dependentRepos: 1
+dependentPackages: 13
 social:
   x: https://x.com/buildwithfern
 addedAt: 2026-10-22
@@ -96,6 +98,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/fern-api
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/fern-api
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/fern-api
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

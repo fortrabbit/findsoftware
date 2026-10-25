@@ -24,6 +24,7 @@ license: GPL-2.0+, GPL-2.0
 currentMajor: "3"
 latestReleaseDate: 2026-10-16
 githubStargazers: 293
+wordpressActiveInstalls: 30000
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -72,6 +73,9 @@ sources:
   - field: githubStargazers
     url: https://github.com/Simply-Static/simply-static
     checkedAt: 2026-10-19
+  - field: wordpressActiveInstalls
+    url: https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=simply-static
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

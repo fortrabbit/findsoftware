@@ -24,6 +24,9 @@ latestReleaseDate: 2024-06-28
 githubStargazers: 2866
 npmWeeklyDownloads: 35
 contributors: 26
+httpArchiveSites: 4
+dependentRepos: 1
+dependentPackages: 1
 social:
   x: https://twitter.com/mavoweb
 addedAt: 2026-10-23
@@ -86,6 +89,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/mavo
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/mavo
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/mavo
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

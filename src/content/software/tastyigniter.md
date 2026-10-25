@@ -42,6 +42,7 @@ latestReleaseDate: 2026-10-12
 githubStargazers: 3803
 packagistDownloads: 47725
 contributors: 33
+packagistMonthlyDownloads: 6130
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -132,6 +133,9 @@ sources:
   - field: urls
     url: https://tastyigniter.com/marketplace
     checkedAt: 2026-10-20
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/tastyigniter/core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

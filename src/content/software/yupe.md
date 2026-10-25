@@ -34,6 +34,7 @@ currentMajor: "1"
 latestReleaseDate: 2021-09-02
 githubStargazers: 591
 packagistDownloads: 5546
+dependentRepos: 4
 social:
   x: https://twitter.com/#!/YupeCms
 addedAt: 2026-10-19
@@ -102,6 +103,9 @@ sources:
   - field: githubStargazers
     url: https://github.com/yupe/yupe
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/yupe%2Fyupe
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

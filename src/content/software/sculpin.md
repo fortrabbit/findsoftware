@@ -33,6 +33,9 @@ latestReleaseDate: 2026-07-25
 githubStargazers: 1482
 packagistDownloads: 112535
 contributors: 67
+packagistMonthlyDownloads: 1744
+dependentRepos: 126
+dependentPackages: 14
 social:
   mastodon: https://phpc.social/@sculpin
   discord: https://discord.gg/dCcjUa7YYN
@@ -102,6 +105,15 @@ sources:
   - field: urls
     url: https://sculpin.io/
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/sculpin%2Fsculpin
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/sculpin%2Fsculpin
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/sculpin/sculpin/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

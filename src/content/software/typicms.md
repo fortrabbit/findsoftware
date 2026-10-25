@@ -34,6 +34,7 @@ latestReleaseDate: 2026-10-02
 githubStargazers: 1621
 packagistDownloads: 230
 contributors: 15
+packagistMonthlyDownloads: 22
 social:
   bluesky: https://typicms.bsky.social
 addedAt: 2026-10-19
@@ -99,6 +100,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/typicms/typicms.json
     checkedAt: 2026-10-20
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/typicms/typicms/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

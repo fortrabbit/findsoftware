@@ -23,6 +23,9 @@ currentMajor: "3"
 latestReleaseDate: 2026-04-13
 githubStargazers: 29473
 npmWeeklyDownloads: 3743066
+httpArchiveSites: 765541
+dependentRepos: 20997
+dependentPackages: 1664
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -77,6 +80,15 @@ sources:
   - field: githubStargazers
     url: https://github.com/greensock/GSAP
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/gsap
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/gsap
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

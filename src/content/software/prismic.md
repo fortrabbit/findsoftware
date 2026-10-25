@@ -26,6 +26,9 @@ currentMajor: "7"
 latestReleaseDate: 2026-10-08
 githubStargazers: 177
 npmWeeklyDownloads: 112409
+httpArchiveSites: 3441
+dependentRepos: 1800
+dependentPackages: 52
 social:
   x: https://twitter.com/prismicio
   forum: https://community.prismic.io
@@ -97,6 +100,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@prismicio/client
     checkedAt: 2026-10-18
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40prismicio%2Fclient
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40prismicio%2Fclient
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

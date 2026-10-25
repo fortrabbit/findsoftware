@@ -29,6 +29,7 @@ latestReleaseDate: 2019-10-25
 githubStargazers: 27
 npmWeeklyDownloads: 5
 contributors: 3
+dependentRepos: 5
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -92,6 +93,9 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/stasis-generator
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/stasis-generator
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

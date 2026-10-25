@@ -36,6 +36,9 @@ currentMajor: "3"
 latestReleaseDate: 2026-10-01
 githubStargazers: 33425
 npmWeeklyDownloads: 35916
+httpArchiveSites: 4624
+dependentRepos: 1522
+dependentPackages: 43
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -99,6 +102,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/remix
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/remix
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/remix
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

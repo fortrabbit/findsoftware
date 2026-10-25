@@ -22,6 +22,7 @@ license: GPL-3.0
 currentMajor: "3"
 latestReleaseDate: 2020-03-03
 githubStargazers: 417
+httpArchiveSites: 43
 social:
   discord: https://discord.gg/56hYyG4
 addedAt: 2026-10-19
@@ -60,6 +61,9 @@ sources:
   - field: githubStargazers
     url: https://github.com/GetSimpleCMS/GetSimpleCMS
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

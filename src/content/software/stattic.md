@@ -30,6 +30,7 @@ currentMajor: "1"
 latestReleaseDate: 2025-06-20
 githubStargazers: 51
 contributors: 2
+ecosystemsMonthlyDownloads: 15
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -93,6 +94,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/getstattic/stattic/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/stattic
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

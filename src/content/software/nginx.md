@@ -24,6 +24,7 @@ license: BSD-2-Clause
 currentMajor: "1"
 latestReleaseDate: 2026-10-14
 githubStargazers: 31914
+httpArchiveSites: 2081367
 social:
   x: https://x.com/nginxorg
   forum: https://forum.nginx.org
@@ -81,6 +82,9 @@ sources:
   - field: runsAs
     url: https://nginx.org/en/docs/beginners_guide.html
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

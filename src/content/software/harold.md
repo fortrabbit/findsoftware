@@ -32,6 +32,8 @@ latestReleaseDate: 2026-04-11
 githubStargazers: 37
 npmWeeklyDownloads: 1
 contributors: 1
+dependentRepos: 1
+dependentPackages: 1
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -95,6 +97,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/harold-scripts
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/harold-scripts
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/harold-scripts
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

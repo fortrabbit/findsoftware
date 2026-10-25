@@ -21,6 +21,8 @@ license: MIT
 githubStargazers: 1356
 packagistDownloads: 137
 contributors: 19
+packagistMonthlyDownloads: 4
+dependentRepos: 4
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -54,6 +56,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/panique/mini.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/panique%2Fmini
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/panique/mini/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

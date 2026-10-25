@@ -28,6 +28,8 @@ currentMajor: "3"
 latestReleaseDate: 2024-08-09
 githubStargazers: 993
 contributors: 35
+dependentRepos: 799
+dependentPackages: 29
 social:
   discord: https://discord.gg/JSmPBsWgFt
   forum: https://www.rubyforum.org/tag/camping
@@ -91,6 +93,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/camping/camping/contributors?per_page=1
     checkedAt: 2026-10-24
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/camping
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/camping
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -21,6 +21,8 @@ currentMajor: "0"
 latestReleaseDate: 2026-08-08
 githubStargazers: 40099
 npmWeeklyDownloads: 183109275
+dependentRepos: 491246
+dependentPackages: 15949
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -63,6 +65,12 @@ sources:
   - field: runsAs
     url: https://esbuild.github.io/getting-started/
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/esbuild
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/esbuild
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

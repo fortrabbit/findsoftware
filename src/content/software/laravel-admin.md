@@ -28,6 +28,9 @@ latestReleaseDate: 2022-05-24
 githubStargazers: 11128
 packagistDownloads: 3257862
 contributors: 226
+packagistMonthlyDownloads: 29492
+dependentRepos: 2708
+dependentPackages: 514
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -91,6 +94,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/encore/laravel-admin.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/encore%2Flaravel-admin
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/encore%2Flaravel-admin
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/encore/laravel-admin/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

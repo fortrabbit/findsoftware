@@ -30,6 +30,8 @@ currentMajor: "5"
 latestReleaseDate: 2025-10-23
 githubStargazers: 185
 npmWeeklyDownloads: 82
+dependentRepos: 47
+dependentPackages: 14
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -84,6 +86,12 @@ sources:
   - field: githubStargazers
     url: https://github.com/empress/empress-blog
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/empress-blog
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/empress-blog
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

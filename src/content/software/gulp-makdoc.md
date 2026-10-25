@@ -27,6 +27,8 @@ latestReleaseDate: 2015-09-09
 githubStargazers: 14
 npmWeeklyDownloads: 1
 contributors: 1
+dependentRepos: 4
+dependentPackages: 1
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -84,6 +86,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/gulp-makdoc
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/gulp-makdoc
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/gulp-makdoc
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

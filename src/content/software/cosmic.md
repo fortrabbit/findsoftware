@@ -17,6 +17,7 @@ headlessApi:
   - rest
 i18n: locale versions of objects, Localization add-on
 licenseModel: saas
+httpArchiveSites: 38
 social:
   x: https://x.com/cosmicjs
   discord: https://discord.gg/MSCwQ7D6Mg
@@ -56,6 +57,9 @@ sources:
   - field: urls
     url: https://www.cosmicjs.com/
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

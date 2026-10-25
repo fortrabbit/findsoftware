@@ -24,6 +24,7 @@ license: RSALv2 or SSPLv1 or AGPLv3, BSD-3-Clause
 currentMajor: "8"
 latestReleaseDate: 2026-09-17
 githubStargazers: 77004
+httpArchiveSites: 62913
 social:
   x: https://x.com/Redisinc
 addedAt: 2026-10-19
@@ -80,6 +81,9 @@ sources:
   - field: runsAs
     url: https://redis.io/docs/latest/operate/oss_and_stack/install/archive/install-redis/
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

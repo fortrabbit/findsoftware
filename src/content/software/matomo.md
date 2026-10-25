@@ -29,6 +29,8 @@ latestReleaseDate: 2026-10-04
 githubStargazers: 21960
 packagistDownloads: 40332
 contributors: 447
+packagistMonthlyDownloads: 239
+dependentRepos: 2
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -86,6 +88,12 @@ sources:
   - field: runsAs
     url: https://matomo.org/docs/installation/
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/matomo%2Fmatomo
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/matomo/matomo/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 adminUi: null

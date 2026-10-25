@@ -39,6 +39,9 @@ latestReleaseDate: 2026-10-06
 githubStargazers: 1536
 packagistDownloads: 680567
 contributors: 78
+packagistMonthlyDownloads: 41918
+dependentRepos: 378
+dependentPackages: 223
 social:
   bluesky: https://bsky.app/profile/getkirby.com
   mastodon: https://mastodon.social/@getkirby
@@ -141,6 +144,15 @@ sources:
   - field: runsAs
     url: https://getkirby.com/docs/guide/quickstart
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/getkirby%2Fcms
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/getkirby%2Fcms
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/getkirby/cms/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

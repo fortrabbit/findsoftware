@@ -32,6 +32,8 @@ currentMajor: "3"
 latestReleaseDate: 2026-10-12
 githubStargazers: 8526
 npmWeeklyDownloads: 20006
+dependentRepos: 72
+dependentPackages: 160
 social:
   x: https://x.com/vendure_io
   discord: https://www.vendure.io/discord
@@ -98,6 +100,12 @@ sources:
   - field: runsAs
     url: https://docs.vendure.io/current/core/deployment/server-resource-requirements
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40vendure%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40vendure%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

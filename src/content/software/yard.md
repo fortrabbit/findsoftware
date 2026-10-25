@@ -25,6 +25,8 @@ currentMajor: "0"
 latestReleaseDate: 2026-07-14
 githubStargazers: 2011
 contributors: 176
+dependentRepos: 56136
+dependentPackages: 7681
 social:
   forum: https://groups.google.com/group/yardoc
 addedAt: 2026-10-23
@@ -81,6 +83,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/lsegal/yard/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/yard
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/yard
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

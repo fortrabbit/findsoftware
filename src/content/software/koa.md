@@ -26,6 +26,9 @@ latestReleaseDate: 2026-05-21
 githubStargazers: 35681
 npmWeeklyDownloads: 4181232
 contributors: 238
+httpArchiveSites: 4
+dependentRepos: 109950
+dependentPackages: 10470
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -80,6 +83,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/koa
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/koa
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/koa
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

@@ -36,6 +36,8 @@ latestReleaseDate: 2026-10-13
 githubStargazers: 3173
 packagistDownloads: 68947
 contributors: 23
+packagistMonthlyDownloads: 46
+httpArchiveSites: 269
 social:
   x: https://twitter.com/pyrocms
   discord: https://discord.gg/Sh79MvV
@@ -121,6 +123,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/pyrocms/pyrocms.json
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/pyrocms/pyrocms/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

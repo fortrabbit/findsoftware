@@ -36,6 +36,9 @@ currentMajor: "3"
 latestReleaseDate: 2026-08-07
 githubStargazers: 3949
 contributors: 85
+ecosystemsMonthlyDownloads: 5572
+dependentRepos: 95
+dependentPackages: 6
 social:
   x: https://twitter.com/getlektor
 addedAt: 2026-10-23
@@ -113,6 +116,15 @@ sources:
   - field: urls
     url: https://www.getlektor.com/plugins/
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/lektor
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/lektor
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/lektor
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

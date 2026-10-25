@@ -36,6 +36,7 @@ currentMajor: "8"
 latestReleaseDate: 2026-09-24
 githubStargazers: 58849
 contributors: 7094
+httpArchiveSites: 106934
 social:
   x: https://x.com/rails
   discord: https://discord.gg/d8N68BCw49
@@ -121,6 +122,9 @@ sources:
   - field: runsAs
     url: https://guides.rubyonrails.org/getting_started.html
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

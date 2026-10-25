@@ -28,6 +28,9 @@ latestReleaseDate: 2026-10-15
 githubStargazers: 10820
 packagistDownloads: 253490
 contributors: 272
+packagistMonthlyDownloads: 2976
+dependentRepos: 9
+dependentPackages: 3
 social:
   discord: https://phalcon.io/discord
   youtube: https://phalcon.io/youtube
@@ -100,6 +103,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/phalcon/cphalcon.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/phalcon%2Fcphalcon
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/phalcon%2Fcphalcon
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/phalcon/cphalcon/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

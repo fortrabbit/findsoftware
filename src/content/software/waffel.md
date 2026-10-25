@@ -33,6 +33,7 @@ latestReleaseDate: 2020-02-28
 githubStargazers: 35
 npmWeeklyDownloads: 55
 contributors: 2
+dependentRepos: 4
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -99,6 +100,9 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/waffel
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/waffel
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

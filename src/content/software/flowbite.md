@@ -28,6 +28,9 @@ latestReleaseDate: 2026-05-13
 githubStargazers: 9365
 npmWeeklyDownloads: 340667
 contributors: 92
+httpArchiveSites: 1213
+dependentRepos: 12099
+dependentPackages: 219
 social:
   x: https://x.com/flowbite_ui
   discord: https://discord.gg/4eeurUVvTy
@@ -91,6 +94,15 @@ sources:
   - field: runsAs
     url: https://flowbite.com/docs/getting-started/quickstart/
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/flowbite
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/flowbite
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

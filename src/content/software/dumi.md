@@ -32,6 +32,8 @@ currentMajor: "2"
 latestReleaseDate: 2026-10-19
 githubStargazers: 3795
 npmWeeklyDownloads: 12016
+dependentRepos: 1864
+dependentPackages: 3841
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -95,6 +97,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/dumi
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/dumi
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/dumi
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

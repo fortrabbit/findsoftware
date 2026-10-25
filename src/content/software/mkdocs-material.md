@@ -35,6 +35,9 @@ currentMajor: "9"
 latestReleaseDate: 2026-07-17
 githubStargazers: 27587
 contributors: 311
+ecosystemsMonthlyDownloads: 11666824
+dependentRepos: 13193
+dependentPackages: 1343
 social:
   x: https://x.com/squidfunk
   bluesky: https://bsky.app/profile/squidfunk.com
@@ -109,6 +112,15 @@ sources:
   - field: currentMajor
     url: https://api.github.com/repos/squidfunk/mkdocs-material/releases
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/mkdocs-material
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/mkdocs-material
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/mkdocs-material
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

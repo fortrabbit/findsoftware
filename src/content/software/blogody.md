@@ -7,12 +7,16 @@ category:
   - headless-cms
 description: Headless blog CMS known from its npm API client package; the website of the same name now shows an unrelated blog.
 status: stub
+dependentPackages: 2
 addedAt: 2026-10-24
 checkedAt: 2026-10-23
 sources:
   - field: status
     url: https://blogody.com/
     checkedAt: 2026-10-23
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40blogody%2Fapi-client
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

@@ -45,6 +45,10 @@ githubStargazers: 3450
 packagistDownloads: 6294025
 contributors: 267
 pluginCount: 3100
+packagistMonthlyDownloads: 246162
+httpArchiveSites: 8649
+dependentRepos: 298
+dependentPackages: 216
 social:
   discord: https://chat.shopware.com
   forum: https://forum.shopware.com
@@ -151,6 +155,18 @@ sources:
   - field: pluginCount
     url: https://api.github.com/repos/shopware/shopware
     checkedAt: 2026-10-18
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/shopware%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/shopware%2Fcore
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/shopware/core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

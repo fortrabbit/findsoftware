@@ -40,6 +40,8 @@ latestReleaseDate: 2026-10-06
 githubStargazers: 354
 contributors: 78
 pluginCount: 310
+packagistMonthlyDownloads: 39
+httpArchiveSites: 1
 wikidata: Q2136131
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
@@ -134,6 +136,12 @@ sources:
   - field: pluginCount
     url: https://redaxo.org/download/addons/
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/redaxo/core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -34,6 +34,8 @@ currentMajor: "3"
 latestReleaseDate: 2025-07-24
 githubStargazers: 18602
 npmWeeklyDownloads: 847
+dependentRepos: 26
+dependentPackages: 32
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -91,6 +93,12 @@ sources:
   - field: i18n
     url: https://v3.ice.work/docs/guide/advanced/i18n
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40ice%2Fapp
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40ice%2Fapp
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

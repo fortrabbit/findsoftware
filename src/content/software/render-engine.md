@@ -31,6 +31,9 @@ license: MIT
 latestReleaseDate: 2026-09-10
 githubStargazers: 64
 contributors: 34
+ecosystemsMonthlyDownloads: 1788
+dependentRepos: 6
+dependentPackages: 11
 social:
   discord: https://discord.gg/2xMQ4j4d8m
 addedAt: 2026-10-23
@@ -93,6 +96,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/render-engine/render-engine/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/render-engine
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/render-engine
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/render-engine
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

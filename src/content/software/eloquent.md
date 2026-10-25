@@ -28,6 +28,9 @@ currentMajor: "13"
 latestReleaseDate: 2026-10-15
 githubStargazers: 2774
 packagistDownloads: 58612233
+packagistMonthlyDownloads: 1301340
+dependentRepos: 29173
+dependentPackages: 7980
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -73,6 +76,15 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/illuminate/database
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/illuminate%2Fdatabase
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/illuminate%2Fdatabase
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/illuminate/database/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 adminUi: null

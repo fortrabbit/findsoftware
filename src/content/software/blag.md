@@ -33,6 +33,8 @@ currentMajor: "2"
 latestReleaseDate: 2025-04-27
 githubStargazers: 98
 contributors: 3
+ecosystemsMonthlyDownloads: 186
+dependentRepos: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -102,6 +104,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/venthur/blag/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/blag
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/blag
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

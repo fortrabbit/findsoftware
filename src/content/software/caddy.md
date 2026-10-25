@@ -25,6 +25,7 @@ license: Apache-2.0
 currentMajor: "2"
 latestReleaseDate: 2026-10-03
 githubStargazers: 78141
+httpArchiveSites: 11777
 social:
   x: https://twitter.com/caddyserver
   forum: https://caddy.community
@@ -82,6 +83,9 @@ sources:
   - field: runsAs
     url: https://caddyserver.com/docs/getting-started
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

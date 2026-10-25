@@ -33,6 +33,8 @@ latestReleaseDate: 2026-10-19
 githubStargazers: 11298
 npmWeeklyDownloads: 7500690
 contributors: 409
+dependentRepos: 12
+dependentPackages: 19
 social:
   x: https://x.com/nitrojsdev
   bluesky: https://bsky.app/profile/nitro.build
@@ -90,6 +92,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/nitro
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/nitro
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/nitro
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

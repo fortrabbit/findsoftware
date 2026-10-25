@@ -35,6 +35,9 @@ latestReleaseDate: 2026-05-21
 githubStargazers: 2252
 packagistDownloads: 474037
 contributors: 81
+packagistMonthlyDownloads: 5943
+dependentRepos: 615
+dependentPackages: 27
 addedAt: 2026-10-18
 checkedAt: 2026-10-18
 sources:
@@ -116,6 +119,15 @@ sources:
   - field: runsAs
     url: https://jigsaw.tighten.com/docs/installation/
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/tightenco%2Fjigsaw
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/tightenco%2Fjigsaw
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/tightenco/jigsaw/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

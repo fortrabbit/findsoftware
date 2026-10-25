@@ -28,6 +28,8 @@ latestReleaseDate: 2017-06-28
 githubStargazers: 1446
 npmWeeklyDownloads: 185
 contributors: 26
+dependentRepos: 98
+dependentPackages: 26
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -82,6 +84,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/roots
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/roots
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/roots
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

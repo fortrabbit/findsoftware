@@ -34,6 +34,9 @@ currentMajor: "1"
 latestReleaseDate: 2022-12-19
 githubStargazers: 861
 contributors: 20
+ecosystemsMonthlyDownloads: 5099
+dependentRepos: 107
+dependentPackages: 11
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -109,6 +112,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/timothycrosley/portray/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/portray
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/portray
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/portray
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

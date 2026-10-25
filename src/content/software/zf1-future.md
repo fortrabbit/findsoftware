@@ -24,6 +24,9 @@ latestReleaseDate: 2026-08-21
 githubStargazers: 494
 packagistDownloads: 4768033
 contributors: 214
+packagistMonthlyDownloads: 166274
+dependentRepos: 29
+dependentPackages: 13
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -75,6 +78,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/shardj/zf1-future.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/shardj%2Fzf1-future
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/shardj%2Fzf1-future
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/shardj/zf1-future/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

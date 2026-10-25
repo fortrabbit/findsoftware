@@ -32,6 +32,7 @@ currentMajor: "0"
 latestReleaseDate: 2026-06-17
 githubStargazers: 51
 contributors: 4
+ecosystemsMonthlyDownloads: 434
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -98,6 +99,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/lbliii/bengal/contributors
     checkedAt: 2026-10-23
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/bengal
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

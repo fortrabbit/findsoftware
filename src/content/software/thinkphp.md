@@ -24,6 +24,10 @@ currentMajor: "8"
 latestReleaseDate: 2026-01-16
 githubStargazers: 2810
 packagistDownloads: 3570486
+packagistMonthlyDownloads: 77390
+httpArchiveSites: 799
+dependentRepos: 3236
+dependentPackages: 1372
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -84,6 +88,18 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/top-think/framework
     checkedAt: 2026-10-21
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/topthink%2Fframework
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/topthink%2Fframework
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/topthink/framework/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

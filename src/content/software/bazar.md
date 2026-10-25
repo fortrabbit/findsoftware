@@ -26,6 +26,8 @@ currentMajor: "1"
 latestReleaseDate: 2026-03-12
 githubStargazers: 445
 packagistDownloads: 7835
+packagistMonthlyDownloads: 53
+dependentPackages: 1
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -80,6 +82,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/conedevelopment/bazar
     checkedAt: 2026-10-20
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/conedevelopment%2Fbazar
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/conedevelopment/bazar/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

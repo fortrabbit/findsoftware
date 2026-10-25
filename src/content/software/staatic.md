@@ -30,6 +30,7 @@ licenseModel: open-core
 license: BSD-3-Clause
 currentMajor: "1"
 latestReleaseDate: 2026-10-16
+wordpressActiveInstalls: 3000
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -87,6 +88,9 @@ sources:
   - field: latestReleaseDate
     url: https://api.wordpress.org/plugins/info/1.0/staatic.json
     checkedAt: 2026-10-21
+  - field: wordpressActiveInstalls
+    url: https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=staatic
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

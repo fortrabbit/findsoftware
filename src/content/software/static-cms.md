@@ -30,6 +30,8 @@ latestReleaseDate: 2024-04-26
 githubStargazers: 587
 npmWeeklyDownloads: 35
 contributors: 438
+dependentRepos: 10
+dependentPackages: 3
 social:
   discord: https://discord.gg/ZWJM9pBMjj
 addedAt: 2026-10-23
@@ -104,6 +106,12 @@ sources:
   - field: firstRelease
     url: https://registry.npmjs.org/@staticcms/core
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40staticcms%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40staticcms%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

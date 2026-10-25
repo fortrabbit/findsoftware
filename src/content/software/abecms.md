@@ -34,6 +34,8 @@ latestReleaseDate: 2022-09-06
 githubStargazers: 181
 npmWeeklyDownloads: 31
 contributors: 15
+dependentRepos: 1
+dependentPackages: 2
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -100,6 +102,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/abecms/abecms/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/abecms
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/abecms
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

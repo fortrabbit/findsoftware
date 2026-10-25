@@ -25,6 +25,9 @@ currentMajor: "2"
 latestReleaseDate: 2025-10-24
 githubStargazers: 5224
 contributors: 190
+httpArchiveSites: 34
+dependentRepos: 6586
+dependentPackages: 146
 social:
   x: https://twitter.com/asciidoctor
 addedAt: 2026-10-23
@@ -78,6 +81,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/asciidoctor/asciidoctor/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/asciidoctor
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/asciidoctor
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

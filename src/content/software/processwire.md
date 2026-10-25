@@ -37,6 +37,10 @@ latestReleaseDate: 2026-08-28
 githubStargazers: 1160
 packagistDownloads: 37488
 contributors: 36
+packagistMonthlyDownloads: 1518
+httpArchiveSites: 2792
+dependentRepos: 28
+dependentPackages: 30
 social:
   forum: https://processwire.com/talk/
 wikidata: Q3021710
@@ -130,6 +134,18 @@ sources:
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q3021710
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/processwire%2Fprocesswire
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/processwire%2Fprocesswire
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/processwire/processwire/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

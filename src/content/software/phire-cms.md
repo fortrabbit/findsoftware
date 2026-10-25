@@ -31,6 +31,7 @@ latestReleaseDate: 2018-10-02
 githubStargazers: 7
 packagistDownloads: 121
 contributors: 1
+dependentRepos: 4
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -88,6 +89,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/phirecms/phirecms.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/phirecms%2Fphirecms
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -25,6 +25,9 @@ latestReleaseDate: 2018-02-16
 githubStargazers: 1016
 packagistDownloads: 21717
 contributors: 4
+packagistMonthlyDownloads: 39
+dependentRepos: 8
+dependentPackages: 4
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -79,6 +82,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/phpixie/framework.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/phpixie%2Fframework
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/phpixie%2Fframework
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/phpixie/framework/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

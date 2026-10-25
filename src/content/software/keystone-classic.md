@@ -34,6 +34,8 @@ latestReleaseDate: 2019-07-15
 githubStargazers: 14486
 npmWeeklyDownloads: 307
 contributors: 222
+dependentRepos: 867
+dependentPackages: 36
 social:
   x: https://twitter.com/KeystoneJS
 addedAt: 2026-10-23
@@ -105,6 +107,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/keystone
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/keystone
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/keystone
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

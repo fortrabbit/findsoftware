@@ -24,6 +24,8 @@ latestReleaseDate: 2026-05-19
 githubStargazers: 67546
 npmWeeklyDownloads: 3626008
 contributors: 337
+dependentRepos: 39314
+dependentPackages: 6855
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -78,6 +80,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/echarts
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/echarts
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/echarts
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

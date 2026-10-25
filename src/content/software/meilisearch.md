@@ -27,6 +27,7 @@ license: MIT, BUSL-1.1 (Enterprise Edition parts only)
 currentMajor: "1"
 latestReleaseDate: 2026-10-12
 githubStargazers: 59604
+httpArchiveSites: 324
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -84,6 +85,9 @@ sources:
   - field: runsAs
     url: https://www.meilisearch.com/docs/resources/self_hosting/getting_started/install_locally
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 databases: null
 adminUi: null

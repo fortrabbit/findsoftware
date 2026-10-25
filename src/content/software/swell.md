@@ -17,6 +17,7 @@ headlessApi:
   - graphql
 i18n: region-specific languages, pricing and payment methods
 licenseModel: saas
+httpArchiveSites: 25
 social:
   x: https://x.com/swellcommerce
   forum: https://github.com/orgs/swellstores/discussions
@@ -53,6 +54,9 @@ sources:
   - field: urls
     url: https://www.swell.is/pricing
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

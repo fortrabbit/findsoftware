@@ -28,6 +28,9 @@ latestReleaseDate: 2025-06-05
 githubStargazers: 1309
 packagistDownloads: 751254
 contributors: 230
+packagistMonthlyDownloads: 862
+dependentRepos: 45
+dependentPackages: 38
 social:
   forum: https://forum.shopware.com/c/shopware-5/7
 addedAt: 2026-10-24
@@ -96,6 +99,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/shopware/shopware.json
     checkedAt: 2026-10-24
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/shopware%2Fshopware
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/shopware%2Fshopware
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/shopware/shopware/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

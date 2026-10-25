@@ -27,6 +27,8 @@ currentMajor: "1"
 latestReleaseDate: 2014-06-18
 githubStargazers: 192
 contributors: 2
+ecosystemsMonthlyDownloads: 121
+dependentRepos: 2
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -81,6 +83,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/braceio/tags/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/brace-tags
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/brace-tags
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

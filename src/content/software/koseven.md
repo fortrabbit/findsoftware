@@ -30,6 +30,8 @@ latestReleaseDate: 2020-10-12
 githubStargazers: 382
 packagistDownloads: 144703
 contributors: 33
+packagistMonthlyDownloads: 3907
+dependentRepos: 3
 social:
   forum: https://koseven.discourse.group/
 addedAt: 2026-10-23
@@ -107,6 +109,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/koseven/koseven.json
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/koseven%2Fkoseven
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/koseven/koseven/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

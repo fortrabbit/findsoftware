@@ -34,6 +34,8 @@ latestReleaseDate: 2014-11-02
 githubStargazers: 1048
 npmWeeklyDownloads: 50
 contributors: 13
+dependentRepos: 5
+dependentPackages: 1
 social:
   x: https://twitter.com/bucketsio
 addedAt: 2026-10-23
@@ -102,6 +104,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/buckets
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/buckets
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/buckets
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

@@ -28,6 +28,8 @@ latestReleaseDate: 2025-11-05
 githubStargazers: 29175
 npmWeeklyDownloads: 797
 contributors: 347
+dependentRepos: 1
+dependentPackages: 1
 social:
   discord: https://t3.gg/discord
 addedAt: 2026-10-22
@@ -87,6 +89,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/create-t3-app
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/create-t3-app
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/create-t3-app
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 adminUi: null

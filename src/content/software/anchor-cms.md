@@ -30,6 +30,8 @@ latestReleaseDate: 2018-03-07
 githubStargazers: 3289
 packagistDownloads: 3349
 contributors: 107
+dependentRepos: 1
+dependentPackages: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -102,6 +104,12 @@ sources:
   - field: adminUi
     url: https://anchorcms.com/docs/managing-content/users/
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/anchorcms%2Fanchor-cms
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/anchorcms%2Fanchor-cms
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

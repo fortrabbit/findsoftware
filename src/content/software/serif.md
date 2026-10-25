@@ -30,6 +30,7 @@ currentMajor: "0"
 latestReleaseDate: 2014-04-22
 githubStargazers: 113
 contributors: 1
+dependentRepos: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -93,6 +94,9 @@ sources:
   - field: adminUi
     url: https://rubygems.org/api/v1/gems/serif.json
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/serif
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -41,6 +41,9 @@ githubStargazers: 881
 packagistDownloads: 5744
 contributors: 151
 pluginCount: 300
+packagistMonthlyDownloads: 1027
+httpArchiveSites: 178
+dependentRepos: 4
 social:
   discord: https://discord.gg/YgwpYEE3y3
   forum: https://forum.thelia.net/
@@ -128,6 +131,15 @@ sources:
   - field: pluginCount
     url: https://thelia.net
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/thelia%2Fthelia
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/thelia/thelia/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

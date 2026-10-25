@@ -37,6 +37,10 @@ currentMajor: "8"
 latestReleaseDate: 2026-10-14
 githubStargazers: 31191
 packagistDownloads: 88119012
+packagistMonthlyDownloads: 282085
+httpArchiveSites: 10960
+dependentRepos: 22779
+dependentPackages: 3530
 social:
   x: https://twitter.com/symfony
   bluesky: https://bsky.app/profile/symfony.com
@@ -127,6 +131,18 @@ sources:
   - field: runsAs
     url: https://symfony.com/doc/current/setup.html
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/symfony%2Fsymfony
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/symfony%2Fsymfony
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/symfony/symfony/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

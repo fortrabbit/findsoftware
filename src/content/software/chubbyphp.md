@@ -23,6 +23,9 @@ currentMajor: "6"
 latestReleaseDate: 2026-09-05
 githubStargazers: 136
 packagistDownloads: 48254
+packagistMonthlyDownloads: 1024
+dependentRepos: 19
+dependentPackages: 4
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -68,6 +71,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/chubbyphp/chubbyphp-framework.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/chubbyphp%2Fchubbyphp-framework
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/chubbyphp%2Fchubbyphp-framework
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/chubbyphp/chubbyphp-framework/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

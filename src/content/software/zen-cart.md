@@ -32,6 +32,7 @@ latestReleaseDate: 2026-04-04
 githubStargazers: 426
 contributors: 62
 pluginCount: 2000
+httpArchiveSites: 519
 social:
   forum: https://www.zen-cart.com/forum.php
 addedAt: 2026-10-19
@@ -100,6 +101,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/zencart/zencart/contributors?anon=true&per_page=100
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

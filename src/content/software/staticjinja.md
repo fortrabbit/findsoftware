@@ -28,6 +28,9 @@ currentMajor: "5"
 latestReleaseDate: 2023-08-16
 githubStargazers: 341
 contributors: 27
+ecosystemsMonthlyDownloads: 8897
+dependentRepos: 63
+dependentPackages: 3
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -88,6 +91,15 @@ sources:
   - field: runsAs
     url: https://staticjinja.github.io/staticjinja/user/quickstart.html
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/staticjinja
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/staticjinja
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/staticjinja
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

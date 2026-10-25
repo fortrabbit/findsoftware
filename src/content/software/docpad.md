@@ -35,6 +35,8 @@ latestReleaseDate: 2020-09-08
 githubStargazers: 3046
 npmWeeklyDownloads: 168
 contributors: 50
+dependentRepos: 1793
+dependentPackages: 150
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -101,6 +103,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/docpad/docpad/contributors?anon=true&per_page=100
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/docpad
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/docpad
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

@@ -32,6 +32,9 @@ latestReleaseDate: 2020-02-27
 githubStargazers: 92
 packagistDownloads: 26286
 contributors: 1
+packagistMonthlyDownloads: 136
+dependentRepos: 8
+dependentPackages: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -107,6 +110,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/symplify/statie.json
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/symplify%2Fstatie
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/symplify%2Fstatie
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/symplify/statie/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

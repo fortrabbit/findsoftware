@@ -21,6 +21,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-20
 githubStargazers: 2278
+httpArchiveSites: 6
 social:
   discord: https://discord.gg/YbTmpACHWB
 addedAt: 2026-10-21
@@ -62,6 +63,9 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/lumeland/lume
     checkedAt: 2026-10-21
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

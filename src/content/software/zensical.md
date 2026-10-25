@@ -31,6 +31,7 @@ currentMajor: "0"
 latestReleaseDate: 2026-10-16
 githubStargazers: 5978
 contributors: 19
+ecosystemsMonthlyDownloads: 1402671
 social:
   x: https://x.com/zensical
   bluesky: https://bsky.app/profile/zensical.org
@@ -99,6 +100,9 @@ sources:
   - field: firstRelease
     url: https://pypi.org/pypi/zensical/json
     checkedAt: 2026-10-23
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/zensical
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

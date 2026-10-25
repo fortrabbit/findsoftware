@@ -20,6 +20,9 @@ currentMajor: "4"
 latestReleaseDate: 2026-09-22
 githubStargazers: 49577
 npmWeeklyDownloads: 167199
+httpArchiveSites: 25156
+dependentRepos: 348
+dependentPackages: 28
 social:
   x: https://twitter.com/htmx_org
 addedAt: 2026-10-22
@@ -73,6 +76,15 @@ sources:
   - field: urls
     url: https://htmx.org/extensions/
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/htmx.org
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/htmx.org
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

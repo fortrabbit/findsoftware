@@ -34,6 +34,10 @@ currentMajor: "1"
 latestReleaseDate: 2024-08-30
 githubStargazers: 22502
 contributors: 262
+ecosystemsMonthlyDownloads: 13132209
+httpArchiveSites: 726
+dependentRepos: 18004
+dependentPackages: 1494
 wikidata: Q102565362
 addedAt: 2026-10-18
 checkedAt: 2026-10-18
@@ -107,6 +111,18 @@ sources:
   - field: runsAs
     url: https://www.mkdocs.org/getting-started/
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/mkdocs
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/mkdocs
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/mkdocs
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

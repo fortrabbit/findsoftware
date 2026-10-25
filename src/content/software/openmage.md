@@ -32,6 +32,9 @@ latestReleaseDate: 2026-05-04
 githubStargazers: 932
 packagistDownloads: 259392
 contributors: 212
+packagistMonthlyDownloads: 5715
+dependentRepos: 31
+dependentPackages: 21
 social:
   x: https://twitter.com/OpenMageProject
   mastodon: https://phpc.social/@OpenMageProject
@@ -105,6 +108,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/openmage/magento-lts.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/openmage%2Fmagento-lts
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/openmage%2Fmagento-lts
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/openmage/magento-lts/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

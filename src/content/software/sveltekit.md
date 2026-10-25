@@ -42,6 +42,9 @@ latestReleaseDate: 2026-10-14
 githubStargazers: 20863
 npmWeeklyDownloads: 2003290
 contributors: 727
+httpArchiveSites: 10263
+dependentRepos: 17842
+dependentPackages: 3630
 social:
   bluesky: https://bsky.app/profile/svelte.dev
   discord: https://svelte.dev/chat
@@ -124,6 +127,15 @@ sources:
   - field: runsAs
     url: https://svelte.dev/docs/kit/adapters
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40sveltejs%2Fkit
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40sveltejs%2Fkit
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

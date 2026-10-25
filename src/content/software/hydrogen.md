@@ -27,6 +27,8 @@ latestReleaseDate: 2026-10-20
 githubStargazers: 2153
 npmWeeklyDownloads: 42489
 contributors: 139
+dependentRepos: 394
+dependentPackages: 37
 social:
   x: https://x.com/shopifydevs
   forum: https://community.shopify.dev/c/hydrogen-and-storefront-apis/9
@@ -84,6 +86,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@shopify/hydrogen
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40shopify%2Fhydrogen
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40shopify%2Fhydrogen
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

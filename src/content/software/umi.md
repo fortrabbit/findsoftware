@@ -31,6 +31,8 @@ latestReleaseDate: 2026-10-22
 githubStargazers: 16040
 npmWeeklyDownloads: 39266
 contributors: 529
+dependentRepos: 6187
+dependentPackages: 1264
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -97,6 +99,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/umi
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/umi
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/umi
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

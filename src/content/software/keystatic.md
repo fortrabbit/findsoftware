@@ -31,6 +31,8 @@ latestReleaseDate: 2026-08-26
 githubStargazers: 2476
 npmWeeklyDownloads: 102030
 contributors: 67
+dependentRepos: 10
+dependentPackages: 3
 social:
   x: https://twitter.com/thekeystatic
   discord: https://discord.gg/mudNPCMyCv
@@ -107,6 +109,12 @@ sources:
   - field: runsAs
     url: https://keystatic.com/docs/local-mode
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40keystatic%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40keystatic%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

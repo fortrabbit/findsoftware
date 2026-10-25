@@ -31,6 +31,9 @@ currentMajor: "1"
 latestReleaseDate: 2024-02-09
 githubStargazers: 797
 contributors: 28
+ecosystemsMonthlyDownloads: 174565
+dependentRepos: 185
+dependentPackages: 3
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -94,6 +97,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/Frozen-Flask/Frozen-Flask/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/Frozen-Flask
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/Frozen-Flask
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/Frozen-Flask
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

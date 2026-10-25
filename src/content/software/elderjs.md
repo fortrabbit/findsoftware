@@ -36,6 +36,8 @@ latestReleaseDate: 2022-05-31
 githubStargazers: 2123
 npmWeeklyDownloads: 133
 contributors: 19
+dependentRepos: 31
+dependentPackages: 10
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -105,6 +107,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@elderjs/elderjs
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40elderjs%2Felderjs
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40elderjs%2Felderjs
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

@@ -26,6 +26,8 @@ latestReleaseDate: 2026-07-23
 githubStargazers: 2414
 npmWeeklyDownloads: 4371
 contributors: 99
+dependentRepos: 342
+dependentPackages: 91
 social:
   x: https://twitter.com/actionherojs
 addedAt: 2026-10-19
@@ -79,6 +81,12 @@ sources:
   - field: runsAs
     url: https://github.com/actionhero/actionhero
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/actionhero
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/actionhero
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

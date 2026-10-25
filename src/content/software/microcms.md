@@ -17,6 +17,7 @@ adminUi: true
 headlessApi:
   - rest
 licenseModel: saas
+httpArchiveSites: 1020
 social:
   x: https://x.com/micro_cms
   discord: https://discord.com/invite/K3DPqw4EJ2
@@ -56,6 +57,9 @@ sources:
   - field: headlessApi
     url: https://document.microcms.io/content-api/get-list-contents
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

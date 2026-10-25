@@ -23,6 +23,7 @@ currentMajor: "0"
 latestReleaseDate: 2013-04-27
 githubStargazers: 38
 contributors: 1
+dependentRepos: 6
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -68,6 +69,9 @@ sources:
   - field: firstRelease
     url: https://rubygems.org/api/v1/versions/ace.json
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/ace
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

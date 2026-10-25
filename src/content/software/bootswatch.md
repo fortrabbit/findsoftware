@@ -23,6 +23,8 @@ latestReleaseDate: 2025-09-11
 githubStargazers: 14748
 npmWeeklyDownloads: 51033
 contributors: 91
+dependentRepos: 11027
+dependentPackages: 178
 social:
   x: https://twitter.com/bootswatch
 addedAt: 2026-10-19
@@ -76,6 +78,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/bootswatch
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/bootswatch
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/bootswatch
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

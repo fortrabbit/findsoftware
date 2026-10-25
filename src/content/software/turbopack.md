@@ -20,6 +20,9 @@ currentMajor: "16"
 latestReleaseDate: 2026-10-15
 githubStargazers: 143086
 npmWeeklyDownloads: 40841184
+httpArchiveSites: 148112
+dependentRepos: 345645
+dependentPackages: 8463
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -59,6 +62,15 @@ sources:
   - field: runsAs
     url: https://nextjs.org/docs/app/api-reference/turbopack
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/next
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/next
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

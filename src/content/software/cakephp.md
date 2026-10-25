@@ -37,6 +37,10 @@ currentMajor: "5"
 latestReleaseDate: 2026-10-03
 githubStargazers: 8788
 packagistDownloads: 21137025
+packagistMonthlyDownloads: 526075
+httpArchiveSites: 8049
+dependentRepos: 5525
+dependentPackages: 1514
 social:
   x: https://twitter.com/cakephp
   mastodon: https://phpc.social/@cakephp
@@ -124,6 +128,18 @@ sources:
   - field: runsAs
     url: https://book.cakephp.org/5.x/installation.html
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/cakephp%2Fcakephp
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/cakephp%2Fcakephp
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/cakephp/cakephp/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

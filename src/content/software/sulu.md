@@ -45,6 +45,10 @@ latestReleaseDate: 2026-10-01
 githubStargazers: 1361
 packagistDownloads: 1488376
 contributors: 198
+packagistMonthlyDownloads: 38855
+httpArchiveSites: 691
+dependentRepos: 126
+dependentPackages: 86
 social:
   x: https://x.com/sulu
 addedAt: 2026-10-19
@@ -140,6 +144,18 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/sulu/sulu.json
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/sulu%2Fsulu
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/sulu%2Fsulu
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/sulu/sulu/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -27,6 +27,9 @@ currentMajor: "3"
 latestReleaseDate: 2026-10-11
 githubStargazers: 16588
 contributors: 416
+ecosystemsMonthlyDownloads: 454165260
+dependentRepos: 66431
+dependentPackages: 5267
 social:
   forum: https://github.com/aio-libs/aiohttp/discussions
 addedAt: 2026-10-24
@@ -83,6 +86,15 @@ sources:
   - field: runsAs
     url: https://docs.aiohttp.org/en/stable/deployment.html
     checkedAt: 2026-10-24
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/aiohttp
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/aiohttp
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/aiohttp
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

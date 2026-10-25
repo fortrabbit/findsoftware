@@ -24,6 +24,9 @@ currentMajor: "13"
 latestReleaseDate: 2026-10-16
 githubStargazers: 20068
 packagistDownloads: 1023790847
+packagistMonthlyDownloads: 24154337
+dependentRepos: 777462
+dependentPackages: 122193
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -75,6 +78,15 @@ sources:
   - field: runsAs
     url: https://docs.phpunit.de/en/13.4/installation.html
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/phpunit%2Fphpunit
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/phpunit%2Fphpunit
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/phpunit/phpunit/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

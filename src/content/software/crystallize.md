@@ -16,6 +16,7 @@ headlessApi:
   - graphql
 i18n: multilingual product data
 licenseModel: saas
+httpArchiveSites: 21
 social:
   x: https://x.com/CrystallizeAPI
 addedAt: 2026-10-23
@@ -51,6 +52,9 @@ sources:
   - field: i18n
     url: https://crystallize.com/docs/pim/multilingual
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

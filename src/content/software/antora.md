@@ -26,6 +26,8 @@ currentMajor: "3"
 latestReleaseDate: 2026-10-01
 npmWeeklyDownloads: 24295
 contributors: 37
+dependentRepos: 534
+dependentPackages: 12
 social:
   x: https://twitter.com/antoraproject
   forum: https://antora.zulipchat.com
@@ -83,6 +85,12 @@ sources:
   - field: runsAs
     url: https://docs.antora.org/antora/latest/publish-to-github-pages/
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40antora%2Fcli
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40antora%2Fcli
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

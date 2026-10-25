@@ -33,6 +33,8 @@ latestReleaseDate: 2018-07-27
 githubStargazers: 468
 npmWeeklyDownloads: 57
 contributors: 6
+dependentRepos: 191
+dependentPackages: 4
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -102,6 +104,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/spike
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/spike
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/spike
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

@@ -28,6 +28,9 @@ currentMajor: "3"
 latestReleaseDate: 2026-01-21
 githubStargazers: 873
 packagistDownloads: 10128
+packagistMonthlyDownloads: 179
+dependentRepos: 71
+dependentPackages: 2
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -85,6 +88,15 @@ sources:
   - field: githubStargazers
     url: https://github.com/lizhichao/one
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/lizhichao%2Fone
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/lizhichao%2Fone
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/lizhichao/one/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -34,6 +34,7 @@ currentMajor: "1"
 latestReleaseDate: 2026-09-25
 githubStargazers: 23189
 contributors: 1488
+httpArchiveSites: 87
 social:
   x: https://twitter.com/elixirphoenix
   discord: https://discord.gg/elixir
@@ -105,6 +106,9 @@ sources:
   - field: runsAs
     url: https://hexdocs.pm/phoenix/deployment.html
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

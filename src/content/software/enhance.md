@@ -27,6 +27,8 @@ currentMajor: "1"
 latestReleaseDate: 2025-10-23
 githubStargazers: 118
 npmWeeklyDownloads: 84
+dependentRepos: 5
+dependentPackages: 5
 social:
   mastodon: https://fosstodon.org/@enhance_dev
   discord: https://enhance.dev/discord
@@ -84,6 +86,12 @@ sources:
   - field: githubStargazers
     url: https://github.com/enhance-dev/enhance
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40enhance%2Fcli
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40enhance%2Fcli
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

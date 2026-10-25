@@ -21,6 +21,9 @@ latestReleaseDate: 2026-04-07
 githubStargazers: 28782
 npmWeeklyDownloads: 4194542
 contributors: 74
+httpArchiveSites: 21730
+dependentRepos: 45352
+dependentPackages: 1967
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -72,6 +75,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@headlessui/react
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40headlessui%2Freact
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40headlessui%2Freact
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

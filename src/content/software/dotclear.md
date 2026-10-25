@@ -33,6 +33,7 @@ licenseModel: open-source
 license: AGPL-3.0, GPL
 currentMajor: "2"
 latestReleaseDate: 2026-08-25
+httpArchiveSites: 4
 social:
   forum: https://dotclear.org/category/Forum
 addedAt: 2026-10-19
@@ -95,6 +96,9 @@ sources:
   - field: latestReleaseDate
     url: https://codeberg.org/api/v1/repos/Dotclear/dotclear/releases/latest
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

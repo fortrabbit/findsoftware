@@ -36,6 +36,9 @@ githubStargazers: 41777
 npmWeeklyDownloads: 20113
 contributors: 202
 pluginCount: 512
+httpArchiveSites: 198
+dependentRepos: 21451
+dependentPackages: 368
 addedAt: 2026-10-18
 checkedAt: 2026-10-18
 sources:
@@ -120,6 +123,15 @@ sources:
   - field: runsAs
     url: https://hexo.io/docs/
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/hexo
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/hexo
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

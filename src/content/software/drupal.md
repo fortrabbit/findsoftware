@@ -46,6 +46,10 @@ latestReleaseDate: 2026-10-14
 githubStargazers: 4292
 packagistDownloads: 70956278
 pluginCount: 39446
+packagistMonthlyDownloads: 1605073
+httpArchiveSites: 94414
+dependentRepos: 5293
+dependentPackages: 770
 wikidata: Q170855
 addedAt: 2026-10-18
 checkedAt: 2026-10-18
@@ -146,6 +150,18 @@ sources:
   - field: runsAs
     url: https://www.drupal.org/docs/getting-started/system-requirements
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/drupal%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/drupal%2Fcore
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/drupal/core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

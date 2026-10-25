@@ -15,6 +15,7 @@ headlessApi:
   - rest
 i18n: yes, multi-language content with locale permissions
 licenseModel: saas
+httpArchiveSites: 151
 social:
   x: https://x.com/buttercms
 addedAt: 2026-10-23
@@ -44,6 +45,9 @@ sources:
   - field: urls
     url: https://buttercms.com/pricing
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

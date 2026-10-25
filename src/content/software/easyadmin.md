@@ -30,6 +30,9 @@ currentMajor: "5"
 latestReleaseDate: 2026-10-14
 githubStargazers: 4311
 packagistDownloads: 19672693
+packagistMonthlyDownloads: 626856
+dependentRepos: 2848
+dependentPackages: 104
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -102,6 +105,15 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/EasyCorp/EasyAdminBundle
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/easycorp%2Feasyadmin-bundle
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/easycorp%2Feasyadmin-bundle
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/easycorp/easyadmin-bundle/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -30,6 +30,9 @@ currentMajor: "1"
 latestReleaseDate: 2026-10-06
 githubStargazers: 22064
 npmWeeklyDownloads: 25721
+httpArchiveSites: 1386
+dependentRepos: 771
+dependentPackages: 166
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -90,6 +93,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@builder.io/qwik
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40builder.io%2Fqwik
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40builder.io%2Fqwik
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

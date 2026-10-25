@@ -36,6 +36,10 @@ currentMajor: "13"
 latestReleaseDate: 2026-10-16
 githubStargazers: 34963
 packagistDownloads: 598227486
+packagistMonthlyDownloads: 19732460
+httpArchiveSites: 98968
+dependentRepos: 474622
+dependentPackages: 15019
 social:
   x: https://x.com/laravel
   discord: https://discord.com/invite/laravel
@@ -121,6 +125,18 @@ sources:
   - field: runsAs
     url: https://laravel.com/docs/13.x/deployment
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/laravel%2Fframework
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/laravel%2Fframework
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/laravel/framework/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

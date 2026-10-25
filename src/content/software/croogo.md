@@ -34,6 +34,8 @@ latestReleaseDate: 2020-10-31
 githubStargazers: 811
 packagistDownloads: 7198
 contributors: 125
+packagistMonthlyDownloads: 27
+dependentRepos: 5
 social:
   x: https://twitter.com/croogo
   forum: https://groups.google.com/group/croogo
@@ -106,6 +108,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/croogo/app.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/croogo%2Fapp
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/croogo/app/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

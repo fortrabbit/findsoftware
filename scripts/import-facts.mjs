@@ -719,6 +719,12 @@ for (const file of facts) {
     npmWeeklyDownloads: 'npmWeeklyDownloads',
     contributors: 'contributors',
     pluginCount: 'pluginCount',
+    packagistMonthlyDownloads: 'packagistMonthlyDownloads',
+    ecosystemsMonthlyDownloads: 'ecosystemsMonthlyDownloads',
+    httpArchiveSites: 'httpArchiveSites',
+    wordpressActiveInstalls: 'wordpressActiveInstalls',
+    dependentRepos: 'dependentRepos',
+    dependentPackages: 'dependentPackages',
   };
   for (const [field, id] of Object.entries(adoption)) {
     const held = number(first(field));

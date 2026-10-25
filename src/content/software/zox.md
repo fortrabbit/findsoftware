@@ -33,6 +33,8 @@ latestReleaseDate: 2019-08-14
 githubStargazers: 4
 npmWeeklyDownloads: 3
 contributors: 1
+dependentRepos: 2
+dependentPackages: 3
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -96,6 +98,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/zox
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/zox
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/zox
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

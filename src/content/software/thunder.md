@@ -34,6 +34,9 @@ latestReleaseDate: 2026-10-13
 githubStargazers: 51
 packagistDownloads: 688618
 contributors: 23
+packagistMonthlyDownloads: 9165
+dependentRepos: 10
+dependentPackages: 4
 social:
   x: https://twitter.com/ThunderCoreTeam
 addedAt: 2026-10-19
@@ -108,6 +111,15 @@ sources:
   - field: license
     url: https://raw.githubusercontent.com/thunder/thunder-distribution/8.4.x/composer.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/thunder%2Fthunder-distribution
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/thunder%2Fthunder-distribution
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/thunder/thunder-distribution/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

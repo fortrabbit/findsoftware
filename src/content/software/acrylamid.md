@@ -28,6 +28,8 @@ currentMajor: "0"
 latestReleaseDate: 2014-09-11
 githubStargazers: 280
 contributors: 24
+ecosystemsMonthlyDownloads: 150
+dependentRepos: 6
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -85,6 +87,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/posativ/acrylamid/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/acrylamid
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/acrylamid
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

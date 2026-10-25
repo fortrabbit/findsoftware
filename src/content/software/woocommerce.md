@@ -38,6 +38,11 @@ latestReleaseDate: 2026-10-09
 githubStargazers: 10557
 packagistDownloads: 182504
 contributors: 345
+packagistMonthlyDownloads: 1126
+httpArchiveSites: 553677
+wordpressActiveInstalls: 7000000
+dependentRepos: 150
+dependentPackages: 14
 social:
   x: https://www.x.com/woocommerce
   forum: https://wordpress.org/support/plugin/woocommerce/
@@ -126,12 +131,27 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/woocommerce/woocommerce/contributors
     checkedAt: 2026-10-18
+  - field: wordpressActiveInstalls
+    url: https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=woocommerce
+    checkedAt: 2026-10-25
   - field: packagistDownloads
     url: https://packagist.org/packages/woocommerce/woocommerce.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://woocommerce.com/
     checkedAt: 2026-10-18
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/woocommerce%2Fwoocommerce
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/woocommerce%2Fwoocommerce
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/woocommerce/woocommerce/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -31,6 +31,9 @@ currentMajor: "0"
 latestReleaseDate: 2026-01-20
 githubStargazers: 196
 contributors: 57
+ecosystemsMonthlyDownloads: 58543
+dependentRepos: 153
+dependentPackages: 13
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -88,6 +91,15 @@ sources:
   - field: runsAs
     url: https://ablog.readthedocs.io/en/stable/manual/ablog-quick-start.html
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/ablog
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/ablog
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/ablog
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

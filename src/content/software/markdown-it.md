@@ -24,6 +24,8 @@ currentMajor: "15"
 latestReleaseDate: 2026-10-16
 githubStargazers: 21986
 npmWeeklyDownloads: 16608434
+dependentRepos: 205037
+dependentPackages: 8475
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -75,6 +77,12 @@ sources:
   - field: githubStargazers
     url: https://github.com/markdown-it/markdown-it
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/markdown-it
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/markdown-it
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

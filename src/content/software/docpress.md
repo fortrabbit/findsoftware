@@ -27,6 +27,8 @@ latestReleaseDate: 2020-07-05
 githubStargazers: 878
 npmWeeklyDownloads: 281
 contributors: 13
+dependentRepos: 274
+dependentPackages: 55
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -72,6 +74,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/docpress/docpress/contributors?anon=true&per_page=100
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/docpress
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/docpress
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

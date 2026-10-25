@@ -37,6 +37,9 @@ latestReleaseDate: 2025-10-21
 githubStargazers: 17587
 npmWeeklyDownloads: 3924
 contributors: 471
+httpArchiveSites: 26
+dependentRepos: 660
+dependentPackages: 20
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -106,6 +109,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@redwoodjs/core
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40redwoodjs%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40redwoodjs%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

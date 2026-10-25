@@ -43,6 +43,9 @@ githubStargazers: 55938
 npmWeeklyDownloads: 154909
 contributors: 4380
 pluginCount: 3000
+httpArchiveSites: 9457
+dependentRepos: 112555
+dependentPackages: 2461
 social:
   youtube: https://www.youtube.com/gatsbyjs
 wikidata: Q95972615
@@ -136,6 +139,15 @@ sources:
   - field: runsAs
     url: https://www.gatsbyjs.com/docs/conceptual/rendering-options
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/gatsby
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/gatsby
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

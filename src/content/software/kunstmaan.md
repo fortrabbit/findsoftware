@@ -35,6 +35,7 @@ latestReleaseDate: 2026-09-06
 githubStargazers: 413
 packagistDownloads: 2405
 contributors: 194
+packagistMonthlyDownloads: 35
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -107,6 +108,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/kunstmaan/cms-skeleton
     checkedAt: 2026-10-20
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/kunstmaan/cms-skeleton/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

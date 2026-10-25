@@ -29,6 +29,9 @@ latestReleaseDate: 2026-02-24
 githubStargazers: 2694
 packagistDownloads: 99830
 contributors: 28
+packagistMonthlyDownloads: 2514
+dependentRepos: 31
+dependentPackages: 51
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -86,6 +89,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/workerman/webman.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/workerman%2Fwebman
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/workerman%2Fwebman
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/workerman/webman/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

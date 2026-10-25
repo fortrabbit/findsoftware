@@ -34,6 +34,8 @@ latestReleaseDate: 2026-07-26
 githubStargazers: 3014
 npmWeeklyDownloads: 35
 contributors: 40
+dependentRepos: 5
+dependentPackages: 3
 social:
   mastodon: https://fosstodon.org/@silex
   forum: https://community.silex.me
@@ -112,6 +114,12 @@ sources:
   - field: renderingModes
     url: https://www.silex.me/
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40silexlabs%2Fsilex
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40silexlabs%2Fsilex
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

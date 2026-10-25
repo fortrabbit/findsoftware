@@ -26,6 +26,7 @@ currentMajor: "8"
 latestReleaseDate: 2022-10-08
 githubStargazers: 33
 contributors: 3
+httpArchiveSites: 33
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -74,6 +75,9 @@ sources:
   - field: contributors
     url: https://github.com/phpnuke/phpnuke
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

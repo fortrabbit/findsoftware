@@ -19,6 +19,7 @@ headlessApi:
   - rest
 i18n: yes, more than 200 languages, with custom languages
 licenseModel: saas
+httpArchiveSites: 1396
 social:
   x: https://x.com/contentstack
   discord: https://discord.com/invite/NyWJ68gdDw
@@ -61,6 +62,9 @@ sources:
   - field: urls
     url: https://www.contentstack.com/marketplace
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

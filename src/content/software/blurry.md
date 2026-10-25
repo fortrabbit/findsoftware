@@ -31,6 +31,7 @@ currentMajor: "0"
 latestReleaseDate: 2026-10-13
 githubStargazers: 36
 contributors: 5
+ecosystemsMonthlyDownloads: 363
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -94,6 +95,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/blurry-dev/blurry/contributors
     checkedAt: 2026-10-23
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/blurry-cli
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

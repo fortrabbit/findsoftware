@@ -35,6 +35,7 @@ latestReleaseDate: 2026-07-11
 githubStargazers: 488
 packagistDownloads: 4358
 contributors: 13
+packagistMonthlyDownloads: 211
 social:
   x: https://x.com/HydeFramework
   discord: https://discord.hydephp.com
@@ -128,6 +129,9 @@ sources:
   - field: runsAs
     url: https://hydephp.com/docs/2.x/
     checkedAt: 2026-10-19
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/hyde/hyde/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

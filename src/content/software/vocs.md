@@ -36,6 +36,7 @@ latestReleaseDate: 2026-10-14
 githubStargazers: 1566
 npmWeeklyDownloads: 24407
 contributors: 43
+dependentPackages: 1
 social:
   discord: https://discord.gg/SghfWBKexF
   forum: https://github.com/wevm/vocs/discussions
@@ -108,6 +109,9 @@ sources:
   - field: firstRelease
     url: https://registry.npmjs.org/vocs
     checkedAt: 2026-10-22
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vocs
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

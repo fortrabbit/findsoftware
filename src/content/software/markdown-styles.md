@@ -29,6 +29,8 @@ latestReleaseDate: 2021-02-15
 githubStargazers: 1885
 npmWeeklyDownloads: 2187
 contributors: 14
+dependentRepos: 83
+dependentPackages: 100
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -83,6 +85,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/markdown-styles
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/markdown-styles
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/markdown-styles
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

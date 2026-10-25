@@ -25,6 +25,9 @@ latestReleaseDate: 2026-07-23
 githubStargazers: 31553
 npmWeeklyDownloads: 40625
 contributors: 207
+httpArchiveSites: 54
+dependentRepos: 2469
+dependentPackages: 210
 social:
   discord: https://discord.gg/3NwKFyR
 addedAt: 2026-10-21
@@ -78,6 +81,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/docsifyjs/docsify/contributors?anon=true&per_page=100
     checkedAt: 2026-10-21
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/docsify
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/docsify
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

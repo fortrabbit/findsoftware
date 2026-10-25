@@ -31,6 +31,8 @@ latestReleaseDate: 2014-12-07
 githubStargazers: 1160
 npmWeeklyDownloads: 52
 contributors: 12
+dependentRepos: 37
+dependentPackages: 16
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -100,6 +102,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/punch
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/punch
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/punch
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

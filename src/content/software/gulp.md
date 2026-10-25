@@ -24,6 +24,8 @@ latestReleaseDate: 2025-06-01
 githubStargazers: 32920
 npmWeeklyDownloads: 942444
 contributors: 220
+dependentRepos: 447157
+dependentPackages: 81436
 social:
   x: https://twitter.com/gulpjs
 addedAt: 2026-10-22
@@ -80,6 +82,12 @@ sources:
   - field: urls
     url: https://gulpjs.com/
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/gulp
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/gulp
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

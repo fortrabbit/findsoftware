@@ -27,6 +27,9 @@ currentMajor: "5"
 latestReleaseDate: 2026-10-15
 githubStargazers: 1172
 packagistDownloads: 46833
+packagistMonthlyDownloads: 581
+httpArchiveSites: 107
+dependentRepos: 4
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -78,6 +81,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/forkcms/forkcms.json
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/forkcms%2Fforkcms
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/forkcms/forkcms/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

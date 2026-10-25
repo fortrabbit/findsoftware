@@ -32,6 +32,8 @@ latestReleaseDate: 2026-08-30
 githubStargazers: 3213
 npmWeeklyDownloads: 2110
 contributors: 55
+dependentRepos: 21
+dependentPackages: 5
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -92,6 +94,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/remult
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/remult
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/remult
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

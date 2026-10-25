@@ -38,6 +38,7 @@ latestReleaseDate: 2023-05-08
 githubStargazers: 208
 npmWeeklyDownloads: 39
 contributors: 3
+dependentRepos: 2
 social:
   x: https://twitter.com/slicknode
 addedAt: 2026-10-23
@@ -115,6 +116,9 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/slicknode
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/slicknode
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

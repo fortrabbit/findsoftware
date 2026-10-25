@@ -32,6 +32,8 @@ currentMajor: "2"
 latestReleaseDate: 2026-08-25
 githubStargazers: 1238
 contributors: 56
+dependentRepos: 19
+dependentPackages: 7
 social:
   x: https://twitter.com/Camaleon_CMs
 addedAt: 2026-10-24
@@ -97,6 +99,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/owen2345/camaleon-cms/contributors?per_page=1
     checkedAt: 2026-10-24
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/camaleon_cms
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/camaleon_cms
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

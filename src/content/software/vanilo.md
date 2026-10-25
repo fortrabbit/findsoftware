@@ -34,6 +34,9 @@ latestReleaseDate: 2026-09-25
 githubStargazers: 879
 packagistDownloads: 80430
 contributors: 25
+packagistMonthlyDownloads: 2826
+dependentRepos: 25
+dependentPackages: 1
 social:
   x: https://x.com/vanilo_io
   discord: https://discord.gg/kG3XDMRFpa
@@ -97,6 +100,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/vanilo/framework.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/vanilo%2Fframework
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/vanilo%2Fframework
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/vanilo/framework/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -26,6 +26,7 @@ latestReleaseDate: 2026-01-29
 githubStargazers: 1600
 packagistDownloads: 12380
 contributors: 22
+packagistMonthlyDownloads: 128
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -89,6 +90,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/phalapi/phalapi.json
     checkedAt: 2026-10-21
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/phalapi/phalapi/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

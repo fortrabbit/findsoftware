@@ -28,6 +28,8 @@ latestReleaseDate: 2026-05-05
 githubStargazers: 13950
 npmWeeklyDownloads: 1504810
 contributors: 629
+dependentRepos: 5993
+dependentPackages: 392
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -85,6 +87,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@apollo/server
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40apollo%2Fserver
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40apollo%2Fserver
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

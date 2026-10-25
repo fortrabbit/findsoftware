@@ -36,6 +36,9 @@ githubStargazers: 8460
 npmWeeklyDownloads: 981
 contributors: 120
 pluginCount: 214
+httpArchiveSites: 150
+dependentRepos: 3680
+dependentPackages: 13
 social:
   x: https://twitter.com/gridsome
   discord: https://discord.gg/daeay6n
@@ -111,6 +114,15 @@ sources:
   - field: pluginCount
     url: https://gridsome.org/plugins/
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/gridsome
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/gridsome
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

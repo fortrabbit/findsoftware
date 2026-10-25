@@ -34,6 +34,9 @@ currentMajor: "16"
 latestReleaseDate: 2026-10-15
 githubStargazers: 143110
 npmWeeklyDownloads: 41069423
+httpArchiveSites: 404724
+dependentRepos: 345645
+dependentPackages: 8463
 social:
   x: https://x.com/nextjs
   discord: https://discord.com/invite/bUG2bvbtHy
@@ -102,6 +105,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/next
     checkedAt: 2026-10-21
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/next
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/next
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

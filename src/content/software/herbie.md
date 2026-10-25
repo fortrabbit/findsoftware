@@ -26,6 +26,9 @@ currentMajor: "2"
 latestReleaseDate: 2025-05-23
 githubStargazers: 90
 packagistDownloads: 2267
+packagistMonthlyDownloads: 7
+dependentRepos: 28
+dependentPackages: 22
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -77,6 +80,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/getherbie/herbie.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/getherbie%2Fherbie
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/getherbie%2Fherbie
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/getherbie/herbie/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

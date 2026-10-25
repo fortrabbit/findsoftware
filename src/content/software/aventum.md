@@ -35,6 +35,7 @@ latestReleaseDate: 2021-02-11
 githubStargazers: 2
 npmWeeklyDownloads: 1
 contributors: 1
+dependentPackages: 2
 social:
   discord: https://discord.gg/tmXT64N
 addedAt: 2026-10-23
@@ -109,6 +110,9 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@aventum/cli
     checkedAt: 2026-10-23
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40aventum%2Fcli
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

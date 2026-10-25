@@ -32,6 +32,8 @@ currentMajor: "0"
 latestReleaseDate: 2026-07-06
 githubStargazers: 22241
 contributors: 336
+dependentRepos: 454
+dependentPackages: 175
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -98,6 +100,12 @@ sources:
   - field: runtime
     url: https://rust-lang.github.io/mdBook/guide/installation.html
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/mdbook
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/mdbook
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

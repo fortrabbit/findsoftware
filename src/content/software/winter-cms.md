@@ -41,6 +41,7 @@ latestReleaseDate: 2026-08-19
 githubStargazers: 1522
 packagistDownloads: 47293
 contributors: 340
+packagistMonthlyDownloads: 862
 social:
   x: https://twitter.com/usewintercms
   discord: https://discord.gg/D5MFSPH6Ux
@@ -135,6 +136,9 @@ sources:
   - field: runsAs
     url: https://wintercms.com/docs/setup/installation
     checkedAt: 2026-10-19
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/wintercms/winter/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

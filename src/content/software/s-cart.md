@@ -36,6 +36,7 @@ latestReleaseDate: 2026-10-22
 githubStargazers: 736
 packagistDownloads: 189
 contributors: 2
+packagistMonthlyDownloads: 16
 addedAt: 2026-10-24
 checkedAt: 2026-10-24
 sources:
@@ -117,6 +118,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/gp247/s-cart.json
     checkedAt: 2026-10-24
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/gp247/s-cart/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

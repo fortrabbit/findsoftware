@@ -23,6 +23,8 @@ currentMajor: "12"
 latestReleaseDate: 2026-10-12
 githubStargazers: 76865
 npmWeeklyDownloads: 9298648
+dependentRepos: 78379
+dependentPackages: 6141
 social:
   x: https://twitter.com/nestframework
   discord: https://discord.com/invite/G7Qnnhy
@@ -71,6 +73,12 @@ sources:
   - field: runsAs
     url: https://github.com/nestjs/nest
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40nestjs%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40nestjs%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

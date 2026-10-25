@@ -35,6 +35,8 @@ latestReleaseDate: 2026-10-13
 githubStargazers: 13
 packagistDownloads: 227
 contributors: 1
+packagistMonthlyDownloads: 4
+dependentRepos: 4
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -113,6 +115,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/samwilson/basildon.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/samwilson%2Fbasildon
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/samwilson/basildon/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

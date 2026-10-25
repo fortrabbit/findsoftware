@@ -32,6 +32,8 @@ latestReleaseDate: 2022-12-04
 githubStargazers: 185
 npmWeeklyDownloads: 9
 contributors: 4
+dependentRepos: 3
+dependentPackages: 3
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -98,6 +100,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@astronomersiva/lego
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40astronomersiva%2Flego
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40astronomersiva%2Flego
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

@@ -31,6 +31,9 @@ latestReleaseDate: 2024-02-07
 githubStargazers: 802
 packagistDownloads: 213423
 contributors: 71
+packagistMonthlyDownloads: 1365
+dependentRepos: 53
+dependentPackages: 29
 social:
   x: https://twitter.com/luyadev
   forum: https://github.com/orgs/luyadev/discussions
@@ -100,6 +103,15 @@ sources:
   - field: urls
     url: https://luya.io/guide/
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/luyadev%2Fluya-core
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/luyadev%2Fluya-core
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/luyadev/luya-core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

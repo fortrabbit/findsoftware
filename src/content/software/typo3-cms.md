@@ -45,6 +45,9 @@ latestReleaseDate: 2026-10-13
 githubStargazers: 1215
 packagistDownloads: 14685571
 pluginCount: 9198
+packagistMonthlyDownloads: 493892
+dependentRepos: 3856
+dependentPackages: 3067
 social:
   bluesky: https://bsky.app/profile/typo3.com
   mastodon: https://typo3.social/@typo3
@@ -155,6 +158,15 @@ sources:
   - field: runsAs
     url: https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Installation/Install.html
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/typo3%2Fcms-core
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/typo3%2Fcms-core
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/typo3/cms-core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

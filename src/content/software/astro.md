@@ -42,6 +42,9 @@ latestReleaseDate: 2026-10-15
 githubStargazers: 63303
 npmWeeklyDownloads: 4676006
 contributors: 1250
+httpArchiveSites: 49450
+dependentRepos: 18705
+dependentPackages: 915
 social:
   x: https://x.com/astrodotbuild
   bluesky: https://bsky.app/profile/astro.build
@@ -142,6 +145,15 @@ sources:
   - field: runsAs
     url: https://docs.astro.build/en/guides/integrations-guide/node/
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/astro
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/astro
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

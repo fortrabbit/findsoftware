@@ -27,6 +27,7 @@ latestReleaseDate: 2019-03-01
 githubStargazers: 2154
 packagistDownloads: 526
 contributors: 56
+dependentRepos: 4
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -84,6 +85,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/panique/huge.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/panique%2Fhuge
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

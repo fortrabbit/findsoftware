@@ -24,6 +24,8 @@ currentMajor: "11"
 latestReleaseDate: 2023-04-11
 githubStargazers: 537
 packagistDownloads: 1538
+packagistMonthlyDownloads: 42
+dependentRepos: 2
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -75,6 +77,12 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/noodlehaus/dispatch
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/noodlehaus%2Fdispatch
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/noodlehaus/dispatch/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

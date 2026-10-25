@@ -40,6 +40,8 @@ latestReleaseDate: 2026-10-18
 githubStargazers: 13905
 npmWeeklyDownloads: 41787
 contributors: 217
+dependentRepos: 1
+dependentPackages: 1
 social:
   x: https://x.com/EmDashCMS
   discord: https://discord.gg/YY9vBaQRYt
@@ -127,6 +129,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/emdash
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/emdash
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/emdash
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

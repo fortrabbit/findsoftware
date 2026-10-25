@@ -24,6 +24,8 @@ latestReleaseDate: 2023-06-29
 githubStargazers: 3540
 npmWeeklyDownloads: 12671
 contributors: 74
+dependentRepos: 1488
+dependentPackages: 19
 social:
   x: https://twitter.com/contentlayerdev
   discord: https://discord.gg/rytFErsARm
@@ -90,6 +92,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/contentlayer
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/contentlayer
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/contentlayer
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

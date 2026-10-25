@@ -32,6 +32,9 @@ latestReleaseDate: 2026-10-15
 githubStargazers: 14459
 npmWeeklyDownloads: 18885
 contributors: 130
+httpArchiveSites: 2085
+dependentRepos: 3348
+dependentPackages: 241
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -95,6 +98,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/marko
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/marko
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/marko
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

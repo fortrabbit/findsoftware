@@ -22,6 +22,7 @@ currentMajor: "2"
 latestReleaseDate: 2013-12-13
 githubStargazers: 615
 contributors: 26
+dependentRepos: 115
 social:
   x: https://twitter.com/ruhohblog
   forum: https://groups.google.com/forum/?fromgroups#!forum/ruhoh
@@ -76,6 +77,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/ruhoh/ruhoh.rb/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/ruhoh
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

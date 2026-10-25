@@ -37,6 +37,9 @@ latestReleaseDate: 2025-08-14
 githubStargazers: 3439
 packagistDownloads: 14063
 contributors: 71
+packagistMonthlyDownloads: 72
+dependentRepos: 5
+dependentPackages: 1
 social:
   discord: https://discord.gg/Bsue9ey
 addedAt: 2026-10-19
@@ -105,6 +108,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/microweber/microweber.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/microweber%2Fmicroweber
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/microweber%2Fmicroweber
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/microweber/microweber/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

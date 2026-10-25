@@ -32,6 +32,8 @@ currentMajor: "8"
 latestReleaseDate: 2025-05-17
 githubStargazers: 2750
 contributors: 210
+ecosystemsMonthlyDownloads: 5789
+dependentRepos: 85
 social:
   x: https://x.com/GetNikola
 addedAt: 2026-10-23
@@ -103,6 +105,12 @@ sources:
   - field: latestReleaseDate
     url: https://api.github.com/repos/getnikola/nikola/releases/latest
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/Nikola
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/Nikola
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

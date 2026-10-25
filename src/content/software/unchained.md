@@ -35,6 +35,8 @@ latestReleaseDate: 2026-10-16
 githubStargazers: 204
 npmWeeklyDownloads: 467
 contributors: 15
+dependentRepos: 1
+dependentPackages: 1
 social:
   x: https://x.com/unchained_shop
   discord: https://discord.gg/WGdYTqtw72
@@ -113,6 +115,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@unchainedshop/platform
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40unchainedshop%2Fplatform
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40unchainedshop%2Fplatform
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

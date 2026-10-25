@@ -33,6 +33,9 @@ latestReleaseDate: 2025-06-13
 githubStargazers: 1257
 packagistDownloads: 16686
 contributors: 16
+packagistMonthlyDownloads: 115
+dependentRepos: 13
+dependentPackages: 12
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -105,6 +108,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/badaso/core.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/badaso%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/badaso%2Fcore
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/badaso/core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

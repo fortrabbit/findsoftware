@@ -34,6 +34,8 @@ latestReleaseDate: 2026-09-28
 githubStargazers: 924
 npmWeeklyDownloads: 2052
 contributors: 29
+dependentRepos: 2
+dependentPackages: 2
 social:
   discord: https://discord.gg/3Jsuxs2KJt
 addedAt: 2026-10-23
@@ -117,6 +119,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@conduitplatform/grpc-sdk
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40conduitplatform%2Fgrpc-sdk
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40conduitplatform%2Fgrpc-sdk
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

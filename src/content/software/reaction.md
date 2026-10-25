@@ -28,6 +28,8 @@ latestReleaseDate: 2023-06-13
 githubStargazers: 12399
 npmWeeklyDownloads: 195
 contributors: 166
+dependentRepos: 1
+dependentPackages: 1
 social:
   x: https://twitter.com/getreaction
   discord: https://discord.gg/Bwm63tBcQY
@@ -95,6 +97,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/reaction-cli
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/reaction-cli
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/reaction-cli
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

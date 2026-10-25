@@ -27,6 +27,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-04-28
 githubStargazers: 13797
+httpArchiveSites: 4
 social:
   discord: https://discord.com/invite/deno
 addedAt: 2026-10-21
@@ -80,6 +81,9 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/freshframework/fresh
     checkedAt: 2026-10-21
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

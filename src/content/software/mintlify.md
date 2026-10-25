@@ -25,6 +25,8 @@ license: Elastic-2.0
 currentMajor: "4"
 latestReleaseDate: 2026-10-22
 npmWeeklyDownloads: 129661
+dependentRepos: 39
+dependentPackages: 12
 social:
   x: https://x.com/mintlify
 addedAt: 2026-10-22
@@ -81,6 +83,12 @@ sources:
   - field: i18n
     url: https://mintlify.com/docs/guides/internationalization
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/mint
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/mint
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

@@ -23,6 +23,8 @@ currentMajor: "10"
 latestReleaseDate: 2026-10-16
 githubStargazers: 27571
 npmWeeklyDownloads: 95255486
+dependentRepos: 1569244
+dependentPackages: 424118
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -71,6 +73,12 @@ sources:
   - field: runsAs
     url: https://eslint.org/docs/latest/use/getting-started
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/eslint
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/eslint
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

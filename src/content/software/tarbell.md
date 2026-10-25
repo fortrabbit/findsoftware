@@ -32,6 +32,8 @@ currentMajor: "1"
 latestReleaseDate: 2017-12-19
 githubStargazers: 164
 contributors: 15
+ecosystemsMonthlyDownloads: 27
+dependentRepos: 6
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -98,6 +100,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/tarbell-project/tarbell/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/tarbell
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/tarbell
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -34,6 +34,8 @@ latestReleaseDate: 2013-11-17
 githubStargazers: 23
 npmWeeklyDownloads: 14
 contributors: 2
+dependentRepos: 1
+dependentPackages: 2
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -97,6 +99,12 @@ sources:
   - field: runtimeMin
     url: https://github.com/colynb/generator-go-static/blob/master/package.json
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/generator-go-static
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/generator-go-static
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

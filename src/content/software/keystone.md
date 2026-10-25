@@ -44,6 +44,8 @@ latestReleaseDate: 2026-08-31
 githubStargazers: 9978
 npmWeeklyDownloads: 4328
 contributors: 263
+dependentRepos: 133
+dependentPackages: 37
 addedAt: 2026-10-18
 checkedAt: 2026-10-18
 sources:
@@ -125,6 +127,12 @@ sources:
   - field: runsAs
     url: https://keystonejs.com/docs/getting-started
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40keystone-6%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40keystone-6%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

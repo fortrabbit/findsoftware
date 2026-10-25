@@ -24,6 +24,8 @@ currentMajor: "4"
 latestReleaseDate: 2026-10-18
 githubStargazers: 26301
 npmWeeklyDownloads: 75471125
+dependentRepos: 1133301
+dependentPackages: 130345
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -75,6 +77,12 @@ sources:
   - field: runsAs
     url: https://rollupjs.org/introduction/
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/rollup
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/rollup
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

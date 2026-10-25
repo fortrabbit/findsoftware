@@ -16,6 +16,7 @@ headlessApi:
   - graphql
 i18n: yes, localized properties and locales
 licenseModel: saas
+httpArchiveSites: 565
 social:
   x: https://twitter.com/Amplience
 addedAt: 2026-10-23
@@ -42,6 +43,9 @@ sources:
   - field: i18n
     url: https://amplience.com/developers/docs/concepts/content-delivery/
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

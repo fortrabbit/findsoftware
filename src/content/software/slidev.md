@@ -37,6 +37,8 @@ latestReleaseDate: 2026-09-16
 githubStargazers: 49174
 npmWeeklyDownloads: 81683
 contributors: 377
+dependentRepos: 570
+dependentPackages: 145
 social:
   x: https://x.com/slidevjs
   discord: https://chat.sli.dev
@@ -115,6 +117,12 @@ sources:
   - field: firstRelease
     url: https://registry.npmjs.org/@slidev/cli
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40slidev%2Fcli
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40slidev%2Fcli
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

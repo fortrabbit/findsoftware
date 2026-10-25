@@ -25,6 +25,9 @@ latestReleaseDate: 2022-04-16
 githubStargazers: 457
 packagistDownloads: 143672
 contributors: 5
+packagistMonthlyDownloads: 799
+dependentRepos: 30
+dependentPackages: 11
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -79,6 +82,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/htmlburger/wpemerge.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/htmlburger%2Fwpemerge
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/htmlburger%2Fwpemerge
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/htmlburger/wpemerge/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -47,6 +47,8 @@ githubStargazers: 60962
 npmWeeklyDownloads: 1378576
 contributors: 1371
 pluginCount: 336
+dependentRepos: 70778
+dependentPackages: 3031
 social:
   x: https://x.com/nuxt_js
   bluesky: https://bsky.app/profile/nuxt.com
@@ -136,6 +138,12 @@ sources:
   - field: runsAs
     url: https://nuxt.com/docs/getting-started/deployment
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/nuxt
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/nuxt
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

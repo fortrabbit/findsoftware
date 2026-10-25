@@ -30,6 +30,8 @@ currentMajor: "7"
 latestReleaseDate: 2026-10-15
 githubStargazers: 47697
 npmWeeklyDownloads: 11432886
+dependentRepos: 43750
+dependentPackages: 1287
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -81,6 +83,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/prisma
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/prisma
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/prisma
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 adminUi: null

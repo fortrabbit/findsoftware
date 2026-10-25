@@ -25,6 +25,9 @@ latestReleaseDate: 2020-10-15
 githubStargazers: 474
 packagistDownloads: 8335
 contributors: 9
+packagistMonthlyDownloads: 168
+dependentRepos: 73
+dependentPackages: 3
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -79,6 +82,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/simple-swoole/simps.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/simple-swoole%2Fsimps
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/simple-swoole%2Fsimps
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/simple-swoole/simps/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

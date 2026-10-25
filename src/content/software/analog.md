@@ -30,6 +30,8 @@ latestReleaseDate: 2026-10-14
 githubStargazers: 3194
 npmWeeklyDownloads: 17824
 contributors: 191
+dependentRepos: 16
+dependentPackages: 3
 social:
   discord: https://chat.analogjs.org
 addedAt: 2026-10-19
@@ -89,6 +91,12 @@ sources:
   - field: runsAs
     url: https://analogjs.org/docs/features/deployment/overview
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40analogjs%2Fplatform
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40analogjs%2Fplatform
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

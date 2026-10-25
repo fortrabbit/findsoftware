@@ -27,6 +27,7 @@ latestReleaseDate: 2019-08-15
 githubStargazers: 1727
 npmWeeklyDownloads: 3
 contributors: 8
+dependentRepos: 1
 social:
   x: https://twitter.com/ericalli
 addedAt: 2026-10-23
@@ -80,6 +81,9 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/static-site-boilerplate
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/static-site-boilerplate
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

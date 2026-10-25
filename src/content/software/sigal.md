@@ -32,6 +32,9 @@ currentMajor: "2"
 latestReleaseDate: 2026-02-06
 githubStargazers: 949
 contributors: 61
+ecosystemsMonthlyDownloads: 370
+dependentRepos: 6
+dependentPackages: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -98,6 +101,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/saimn/sigal/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/sigal
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/sigal
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/sigal
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

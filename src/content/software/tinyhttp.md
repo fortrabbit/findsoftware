@@ -35,6 +35,8 @@ latestReleaseDate: 2026-10-20
 githubStargazers: 2909
 npmWeeklyDownloads: 372164
 contributors: 63
+dependentRepos: 94
+dependentPackages: 56
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -113,6 +115,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@tinyhttp/app
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40tinyhttp%2Fapp
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40tinyhttp%2Fapp
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

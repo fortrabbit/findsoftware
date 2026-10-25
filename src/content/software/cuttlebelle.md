@@ -32,6 +32,8 @@ license: GPL-3.0, GNU-GPLv3
 githubStargazers: 553
 npmWeeklyDownloads: 35
 contributors: 7
+dependentRepos: 20
+dependentPackages: 3
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -98,6 +100,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/cuttlebelle/cuttlebelle/contributors?anon=true&per_page=100
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/cuttlebelle
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/cuttlebelle
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

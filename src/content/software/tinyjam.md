@@ -30,6 +30,8 @@ latestReleaseDate: 2021-06-30
 githubStargazers: 171
 npmWeeklyDownloads: 18
 contributors: 3
+dependentRepos: 3
+dependentPackages: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -90,6 +92,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/tinyjam
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tinyjam
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tinyjam
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

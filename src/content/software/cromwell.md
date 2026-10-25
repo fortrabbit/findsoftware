@@ -45,6 +45,8 @@ latestReleaseDate: 2024-07-12
 githubStargazers: 753
 npmWeeklyDownloads: 55
 contributors: 3
+dependentRepos: 1
+dependentPackages: 5
 social:
   discord: https://discord.gg/mxmJNSZ2gn
 addedAt: 2026-10-23
@@ -137,6 +139,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@cromwell/cli
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40cromwell%2Fcli
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40cromwell%2Fcli
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

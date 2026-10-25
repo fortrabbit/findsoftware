@@ -16,6 +16,7 @@ headlessApi:
   - rest
   - graphql
 licenseModel: saas
+httpArchiveSites: 20
 social:
   x: https://x.com/commercetools
 addedAt: 2026-10-24
@@ -48,6 +49,9 @@ sources:
   - field: headlessApi
     url: https://docs.commercetools.com/api
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

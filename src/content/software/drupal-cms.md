@@ -34,6 +34,7 @@ license: GPL-2.0-or-later
 currentMajor: "2"
 latestReleaseDate: 2026-10-14
 packagistDownloads: 110756
+packagistMonthlyDownloads: 7967
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -97,6 +98,9 @@ sources:
   - field: firstRelease
     url: https://repo.packagist.org/p2/drupal/cms.json
     checkedAt: 2026-10-20
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/drupal/cms/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -29,6 +29,8 @@ latestReleaseDate: 2026-10-22
 githubStargazers: 5922
 npmWeeklyDownloads: 84297
 contributors: 235
+httpArchiveSites: 10
+dependentRepos: 1
 social:
   discord: https://discord.com/invite/solidjs
   subreddit: https://reddit.com/r/solidjs
@@ -92,6 +94,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@solidjs/start
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40solidjs%2Fstart
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

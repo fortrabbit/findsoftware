@@ -31,6 +31,9 @@ latestReleaseDate: 2026-06-03
 githubStargazers: 2125
 packagistDownloads: 20195452
 contributors: 826
+packagistMonthlyDownloads: 198232
+dependentRepos: 2269
+dependentPackages: 326
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -94,6 +97,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/sonata-project/SonataAdminBundle/contributors
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/sonata-project%2Fadmin-bundle
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/sonata-project%2Fadmin-bundle
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/sonata-project/admin-bundle/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

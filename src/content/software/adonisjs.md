@@ -28,6 +28,9 @@ latestReleaseDate: 2026-10-05
 githubStargazers: 19151
 npmWeeklyDownloads: 108887
 contributors: 75
+httpArchiveSites: 401
+dependentRepos: 1234
+dependentPackages: 393
 social:
   x: https://x.com/adonisframework
   discord: https://discord.com/invite/vDcEjq6
@@ -89,6 +92,15 @@ sources:
   - field: runsAs
     url: https://docs.adonisjs.com/guides/getting-started/deployment
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40adonisjs%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40adonisjs%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

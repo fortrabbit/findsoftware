@@ -29,6 +29,7 @@ currentMajor: "4"
 latestReleaseDate: 2026-10-05
 githubStargazers: 33
 packagistDownloads: 1355
+packagistMonthlyDownloads: 180
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -89,6 +90,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/mukurtu/mukurtu.json
     checkedAt: 2026-10-20
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/mukurtu/mukurtu/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -30,6 +30,9 @@ latestReleaseDate: 2025-10-25
 githubStargazers: 3103
 packagistDownloads: 387334
 contributors: 65
+packagistMonthlyDownloads: 8113
+dependentRepos: 40
+dependentPackages: 9
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -87,6 +90,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/apiato/core.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/apiato%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/apiato%2Fcore
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/apiato/core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

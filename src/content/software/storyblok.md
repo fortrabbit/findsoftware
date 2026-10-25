@@ -26,6 +26,9 @@ currentMajor: "4"
 latestReleaseDate: 2026-10-09
 githubStargazers: 68
 npmWeeklyDownloads: 135386
+httpArchiveSites: 4165
+dependentRepos: 127
+dependentPackages: 18
 social:
   x: https://www.x.com/storyblok
   bluesky: https://bsky.app/profile/storyblok.com
@@ -103,6 +106,15 @@ sources:
   - field: urls
     url: https://www.storyblok.com/apps
     checkedAt: 2026-10-18
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40storyblok%2Fjs
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40storyblok%2Fjs
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

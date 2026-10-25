@@ -34,6 +34,8 @@ currentMajor: "0"
 latestReleaseDate: 2020-05-18
 githubStargazers: 362
 contributors: 2
+ecosystemsMonthlyDownloads: 102
+dependentRepos: 45
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -106,6 +108,12 @@ sources:
   - field: i18n
     url: https://mynt.uhnomoli.com/docs/quickstart/
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/mynt
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/mynt
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

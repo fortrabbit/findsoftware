@@ -30,6 +30,7 @@ latestReleaseDate: 2026-09-18
 githubStargazers: 255
 packagistDownloads: 280020
 contributors: 1
+packagistMonthlyDownloads: 39
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -96,6 +97,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/phphleb/hleb.json
     checkedAt: 2026-10-20
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/phphleb/hleb/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -21,6 +21,9 @@ latestReleaseDate: 2026-10-16
 githubStargazers: 7126
 npmWeeklyDownloads: 5981
 contributors: 43
+httpArchiveSites: 89
+dependentRepos: 156
+dependentPackages: 8
 social:
   x: https://twitter.com/plasmicapp
   forum: https://forum.plasmic.app/
@@ -81,6 +84,15 @@ sources:
   - field: latestReleaseDate
     url: https://registry.npmjs.org/@plasmicapp%2floader-react
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40plasmicapp%2Floader-react
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40plasmicapp%2Floader-react
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

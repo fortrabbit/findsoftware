@@ -32,6 +32,9 @@ currentMajor: "4"
 latestReleaseDate: 2025-01-29
 githubStargazers: 51715
 contributors: 1264
+httpArchiveSites: 1955
+dependentRepos: 490112
+dependentPackages: 2298
 social:
   x: https://twitter.com/jekyllrb
   forum: https://talk.jekyllrb.com/
@@ -111,6 +114,15 @@ sources:
   - field: runsAs
     url: https://jekyllrb.com/docs/
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/jekyll
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/jekyll
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

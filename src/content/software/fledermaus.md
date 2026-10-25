@@ -31,6 +31,8 @@ latestReleaseDate: 2017-12-25
 githubStargazers: 76
 npmWeeklyDownloads: 5
 contributors: 2
+dependentRepos: 5
+dependentPackages: 7
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -97,6 +99,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/fledermaus
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/fledermaus
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/fledermaus
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

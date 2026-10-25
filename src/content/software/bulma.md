@@ -21,6 +21,9 @@ latestReleaseDate: 2025-04-19
 githubStargazers: 50038
 npmWeeklyDownloads: 171571
 contributors: 382
+httpArchiveSites: 2241
+dependentRepos: 64999
+dependentPackages: 1694
 social:
   x: https://twitter.com/bulmaio
 addedAt: 2026-10-19
@@ -74,6 +77,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/bulma
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/bulma
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/bulma
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

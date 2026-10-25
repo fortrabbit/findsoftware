@@ -34,6 +34,10 @@ currentMajor: "9"
 latestReleaseDate: 2026-10-06
 githubStargazers: 852
 packagistDownloads: 179972
+packagistMonthlyDownloads: 6927
+httpArchiveSites: 4020
+dependentRepos: 56
+dependentPackages: 37
 wikidata: Q1935459
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
@@ -101,6 +105,18 @@ sources:
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q1935459
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/concrete5%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/concrete5%2Fcore
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/concrete5/core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

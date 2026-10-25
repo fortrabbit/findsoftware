@@ -23,6 +23,7 @@ currentMajor: "10"
 latestReleaseDate: 2026-10-13
 githubStargazers: 11997
 contributors: 185
+httpArchiveSites: 611
 social:
   x: https://x.com/aspboilerplate
 addedAt: 2026-10-24
@@ -73,6 +74,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/aspnetboilerplate/aspnetboilerplate/contributors
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

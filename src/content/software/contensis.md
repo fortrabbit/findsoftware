@@ -18,6 +18,7 @@ headlessApi:
   - rest
 i18n: multilingual content, languages enabled per content type with a multilingual license key
 licenseModel: saas
+httpArchiveSites: 83
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -51,6 +52,9 @@ sources:
   - field: i18n
     url: https://www.contensis.com/help-and-docs/guides/modelling-content/content-types/enable-or-disable-languages-for-a-content-type
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

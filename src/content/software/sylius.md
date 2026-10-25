@@ -43,6 +43,7 @@ latestReleaseDate: 2026-10-14
 githubStargazers: 8560
 packagistDownloads: 6391247
 contributors: 324
+httpArchiveSites: 175
 social:
   x: https://twitter.com/Sylius
 wikidata: Q97379963
@@ -145,6 +146,9 @@ sources:
   - field: urls
     url: https://sylius.com/plugins/
     checkedAt: 2026-10-18
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

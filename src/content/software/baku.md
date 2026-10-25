@@ -30,6 +30,8 @@ currentMajor: "1"
 latestReleaseDate: 2025-10-18
 githubStargazers: 22
 contributors: 2
+ecosystemsMonthlyDownloads: 80
+dependentRepos: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -87,6 +89,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/vladris/baku/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/baku
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/baku
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

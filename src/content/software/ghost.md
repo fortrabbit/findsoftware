@@ -44,6 +44,9 @@ latestReleaseDate: 2026-10-15
 githubStargazers: 55562
 npmWeeklyDownloads: 8768
 contributors: 369
+httpArchiveSites: 2997
+dependentRepos: 468
+dependentPackages: 8
 social:
   forum: https://forum.ghost.org
 wikidata: Q16251204
@@ -149,6 +152,15 @@ sources:
   - field: runsAs
     url: https://docs.ghost.org/install/ubuntu
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ghost
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ghost
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

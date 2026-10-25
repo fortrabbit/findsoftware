@@ -37,6 +37,9 @@ latestReleaseDate: 2026-07-10
 githubStargazers: 66517
 npmWeeklyDownloads: 864860
 contributors: 1367
+httpArchiveSites: 1580
+dependentRepos: 16786
+dependentPackages: 229
 social:
   x: https://x.com/docusaurus
   discord: https://discord.gg/docusaurus
@@ -129,6 +132,15 @@ sources:
   - field: runsAs
     url: https://docusaurus.io/docs/deployment
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40docusaurus%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40docusaurus%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

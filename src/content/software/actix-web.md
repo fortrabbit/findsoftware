@@ -26,6 +26,8 @@ currentMajor: "4"
 latestReleaseDate: 2026-10-23
 githubStargazers: 24880
 contributors: 386
+dependentRepos: 6843
+dependentPackages: 1049
 social:
   discord: https://discord.gg/NWpN5mmg3x
 addedAt: 2026-10-24
@@ -82,6 +84,12 @@ sources:
   - field: runsAs
     url: https://actix.rs/docs/server
     checkedAt: 2026-10-24
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/actix-web
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/actix-web
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -24,6 +24,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-09
 githubStargazers: 8512
+httpArchiveSites: 3
 social:
   discord: https://discord.gg/spiralphp
 addedAt: 2026-10-19
@@ -77,6 +78,9 @@ sources:
   - field: runsAs
     url: https://docs.roadrunner.dev/
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

@@ -37,6 +37,10 @@ latestReleaseDate: 2026-10-13
 githubStargazers: 3879
 packagistDownloads: 4114254
 contributors: 777
+packagistMonthlyDownloads: 68830
+httpArchiveSites: 2349
+dependentRepos: 308
+dependentPackages: 316
 social:
   forum: https://github.com/orgs/pimcore/discussions
 addedAt: 2026-10-19
@@ -114,6 +118,18 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/pimcore/pimcore
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/pimcore%2Fpimcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/pimcore%2Fpimcore
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/pimcore/pimcore/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

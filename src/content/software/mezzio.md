@@ -26,6 +26,9 @@ latestReleaseDate: 2026-06-10
 githubStargazers: 397
 packagistDownloads: 4285638
 contributors: 116
+packagistMonthlyDownloads: 119185
+dependentRepos: 315
+dependentPackages: 90
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -83,6 +86,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/mezzio/mezzio.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/mezzio%2Fmezzio
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/mezzio%2Fmezzio
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/mezzio/mezzio/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

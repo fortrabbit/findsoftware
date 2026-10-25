@@ -36,6 +36,9 @@ latestReleaseDate: 2026-10-15
 githubStargazers: 19974
 npmWeeklyDownloads: 140317
 contributors: 131
+httpArchiveSites: 198
+dependentRepos: 17987
+dependentPackages: 864
 social:
   bluesky: https://bsky.app/profile/11ty.dev
   mastodon: https://neighborhood.11ty.dev/@11ty
@@ -135,6 +138,15 @@ sources:
   - field: runsAs
     url: https://www.11ty.dev/docs/deployment/
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%4011ty%2Feleventy
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%4011ty%2Feleventy
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

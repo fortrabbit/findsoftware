@@ -34,6 +34,9 @@ latestReleaseDate: 2026-10-13
 githubStargazers: 6364
 npmWeeklyDownloads: 596741
 contributors: 187
+httpArchiveSites: 10824
+dependentRepos: 4507
+dependentPackages: 245
 social:
   x: https://x.com/sanity_io
   bluesky: https://bsky.app/profile/sanity.io
@@ -124,6 +127,15 @@ sources:
   - field: urls
     url: https://www.sanity.io/plugins
     checkedAt: 2026-10-18
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/sanity
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/sanity
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

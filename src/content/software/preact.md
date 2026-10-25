@@ -21,6 +21,9 @@ latestReleaseDate: 2026-10-08
 githubStargazers: 38945
 npmWeeklyDownloads: 23228055
 contributors: 352
+httpArchiveSites: 385816
+dependentRepos: 78992
+dependentPackages: 3803
 social:
   x: https://twitter.com/preactjs
   bluesky: https://bsky.app/profile/preactjs.com
@@ -72,6 +75,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/preact
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/preact
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/preact
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

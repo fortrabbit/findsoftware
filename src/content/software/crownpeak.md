@@ -15,6 +15,7 @@ renderingModes:
   - static
   - server
 licenseModel: saas
+httpArchiveSites: 21
 addedAt: 2026-10-24
 checkedAt: 2026-10-23
 sources:
@@ -36,6 +37,9 @@ sources:
   - field: licenseModel
     url: https://www.firstspirit.com/policies/legal/
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

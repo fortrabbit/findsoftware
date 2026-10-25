@@ -22,6 +22,7 @@ currentMajor: "6"
 latestReleaseDate: 2023-06-08
 githubStargazers: 5832
 contributors: 86
+dependentRepos: 118
 social:
   x: https://twitter.com/daattali
   forum: https://github.com/daattali/beautiful-jekyll/discussions
@@ -76,6 +77,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/daattali/beautiful-jekyll/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/beautiful-jekyll-theme
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

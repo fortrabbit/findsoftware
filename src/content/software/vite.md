@@ -25,6 +25,9 @@ currentMajor: "8"
 latestReleaseDate: 2026-10-08
 githubStargazers: 83396
 npmWeeklyDownloads: 118790515
+httpArchiveSites: 108197
+dependentRepos: 363358
+dependentPackages: 31388
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -79,6 +82,15 @@ sources:
   - field: runsAs
     url: https://vite.dev/guide/static-deploy.html
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vite
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vite
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

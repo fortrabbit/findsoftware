@@ -43,6 +43,8 @@ latestReleaseDate: 2026-09-28
 githubStargazers: 36787
 npmWeeklyDownloads: 123119
 contributors: 456
+dependentRepos: 397
+dependentPackages: 212
 addedAt: 2026-10-18
 checkedAt: 2026-10-18
 sources:
@@ -142,6 +144,12 @@ sources:
   - field: runsAs
     url: https://docs.medusajs.com/learn/installation
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40medusajs%2Fmedusa
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40medusajs%2Fmedusa
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

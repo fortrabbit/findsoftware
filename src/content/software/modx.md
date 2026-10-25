@@ -32,6 +32,10 @@ currentMajor: "3"
 latestReleaseDate: 2026-08-26
 githubStargazers: 1413
 packagistDownloads: 11752
+packagistMonthlyDownloads: 838
+httpArchiveSites: 5508
+dependentRepos: 5
+dependentPackages: 1
 social:
   forum: https://forums.modx.com/
 addedAt: 2026-10-19
@@ -100,6 +104,18 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/modx/revolution.json
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/modx%2Frevolution
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/modx%2Frevolution
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/modx/revolution/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

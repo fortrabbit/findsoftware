@@ -27,6 +27,7 @@ latestReleaseDate: 2022-09-21
 githubStargazers: 103
 npmWeeklyDownloads: 14
 contributors: 1
+dependentPackages: 2
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -84,6 +85,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/0xsuk/agitcms/contributors
     checkedAt: 2026-10-23
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/agitcms
+    checkedAt: 2026-10-25
 ai: authored
 databases: null
 headlessApi: null

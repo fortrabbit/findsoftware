@@ -28,6 +28,9 @@ currentMajor: "7"
 latestReleaseDate: 2026-10-14
 githubStargazers: 22568
 npmWeeklyDownloads: 154305
+httpArchiveSites: 5020
+dependentRepos: 7078
+dependentPackages: 3968
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -82,6 +85,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/ember-source
     checkedAt: 2026-10-21
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ember-source
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ember-source
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

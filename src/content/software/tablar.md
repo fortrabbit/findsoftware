@@ -26,6 +26,9 @@ currentMajor: "13"
 latestReleaseDate: 2026-09-05
 githubStargazers: 308
 packagistDownloads: 23914
+packagistMonthlyDownloads: 1183
+dependentRepos: 1
+dependentPackages: 1
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -86,6 +89,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/takielias/tablar.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/takielias%2Ftablar
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/takielias%2Ftablar
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/takielias/tablar/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

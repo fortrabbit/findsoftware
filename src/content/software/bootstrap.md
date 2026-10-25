@@ -23,6 +23,9 @@ latestReleaseDate: 2025-08-26
 githubStargazers: 174999
 npmWeeklyDownloads: 3209276
 contributors: 357
+httpArchiveSites: 2235330
+dependentRepos: 874564
+dependentPackages: 17952
 social:
   x: https://x.com/getbootstrap
   forum: https://github.com/twbs/bootstrap/discussions
@@ -80,6 +83,15 @@ sources:
   - field: runsAs
     url: https://getbootstrap.com/docs/5.3/getting-started/introduction/
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/bootstrap
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/bootstrap
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

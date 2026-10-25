@@ -30,6 +30,8 @@ currentMajor: "1"
 latestReleaseDate: 2023-05-01
 githubStargazers: 4
 contributors: 2
+ecosystemsMonthlyDownloads: 26
+dependentRepos: 3
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -90,6 +92,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/jamstackpy/jamstack/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/jamstack
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/jamstack
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

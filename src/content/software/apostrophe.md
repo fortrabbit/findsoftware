@@ -41,6 +41,9 @@ latestReleaseDate: 2026-10-14
 githubStargazers: 4653
 npmWeeklyDownloads: 18160
 contributors: 98
+httpArchiveSites: 321
+dependentRepos: 147
+dependentPackages: 57
 social:
   x: https://x.com/apostrophecms
   discord: https://discord.com/invite/XkbRNq7
@@ -128,6 +131,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/apostrophe
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/apostrophe
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/apostrophe
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

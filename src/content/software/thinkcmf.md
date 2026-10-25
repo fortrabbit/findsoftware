@@ -35,6 +35,8 @@ latestReleaseDate: 2024-09-30
 githubStargazers: 2159
 packagistDownloads: 19950
 contributors: 41
+packagistMonthlyDownloads: 85
+dependentRepos: 1
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -107,6 +109,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/thinkcmf/thinkcmf.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/thinkcmf%2Fthinkcmf
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/thinkcmf/thinkcmf/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

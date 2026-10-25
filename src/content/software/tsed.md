@@ -32,6 +32,8 @@ latestReleaseDate: 2026-10-13
 githubStargazers: 3090
 npmWeeklyDownloads: 17268
 contributors: 183
+dependentRepos: 351
+dependentPackages: 92
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -89,6 +91,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@tsed/core
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40tsed%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40tsed%2Fcore
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

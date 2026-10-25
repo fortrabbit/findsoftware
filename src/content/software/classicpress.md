@@ -31,6 +31,9 @@ latestReleaseDate: 2026-09-23
 githubStargazers: 863
 packagistDownloads: 3359
 contributors: 150
+packagistMonthlyDownloads: 13
+dependentRepos: 1
+dependentPackages: 1
 social:
   x: https://twitter.com/GetClassicPress
   forum: https://forums.classicpress.net
@@ -100,6 +103,15 @@ sources:
   - field: urls
     url: https://www.classicpress.net
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/classicpress%2Fclassicpress
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/classicpress%2Fclassicpress
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/classicpress/classicpress/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

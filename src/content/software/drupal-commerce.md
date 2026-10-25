@@ -23,6 +23,7 @@ licenseModel: open-source
 license: GPL-2.0-or-later
 currentMajor: "3"
 latestReleaseDate: 2026-10-16
+httpArchiveSites: 905
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -65,6 +66,9 @@ sources:
   - field: license
     url: https://packages.drupal.org/files/packages/8/p2/drupal/commerce.json
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

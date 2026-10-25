@@ -22,6 +22,9 @@ latestReleaseDate: 2026-10-20
 githubStargazers: 31989
 npmWeeklyDownloads: 418249
 contributors: 328
+httpArchiveSites: 108408
+dependentRepos: 15131
+dependentPackages: 189
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -73,6 +76,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/alpinejs
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/alpinejs
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/alpinejs
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

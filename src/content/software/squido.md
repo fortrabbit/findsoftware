@@ -34,6 +34,8 @@ latestReleaseDate: 2023-12-16
 githubStargazers: 68
 npmWeeklyDownloads: 3
 contributors: 1
+dependentRepos: 7
+dependentPackages: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -103,6 +105,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/squido
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/squido
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/squido
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

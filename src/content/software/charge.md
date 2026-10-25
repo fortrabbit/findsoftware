@@ -31,6 +31,8 @@ latestReleaseDate: 2020-03-12
 githubStargazers: 428
 npmWeeklyDownloads: 33
 contributors: 10
+dependentRepos: 65
+dependentPackages: 1
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -94,6 +96,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@static/charge
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40static%2Fcharge
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40static%2Fcharge
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

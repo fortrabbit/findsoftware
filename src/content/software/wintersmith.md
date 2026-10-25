@@ -32,6 +32,8 @@ latestReleaseDate: 2018-11-19
 githubStargazers: 3476
 npmWeeklyDownloads: 867
 contributors: 41
+dependentRepos: 973
+dependentPackages: 84
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -95,6 +97,12 @@ sources:
   - field: urls
     url: https://github.com/jnordberg/wintersmith/blob/master/README.md
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/wintersmith
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/wintersmith
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

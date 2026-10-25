@@ -32,6 +32,7 @@ currentMajor: "0"
 latestReleaseDate: 2026-10-13
 githubStargazers: 90146
 contributors: 933
+httpArchiveSites: 6148
 social:
   mastodon: https://fosstodon.org/@gohugoio
   forum: https://discourse.gohugo.io/
@@ -108,6 +109,9 @@ sources:
   - field: runsAs
     url: https://gohugo.io/getting-started/usage/
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

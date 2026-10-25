@@ -23,6 +23,9 @@ latestReleaseDate: 2023-08-07
 githubStargazers: 13105
 npmWeeklyDownloads: 480996
 contributors: 98
+httpArchiveSites: 128976
+dependentRepos: 7204
+dependentPackages: 189
 social:
   forum: https://discuss.hotwired.dev/
 addedAt: 2026-10-23
@@ -76,6 +79,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@hotwired/stimulus
     checkedAt: 2026-10-23
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40hotwired%2Fstimulus
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40hotwired%2Fstimulus
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

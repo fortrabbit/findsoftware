@@ -36,6 +36,9 @@ latestReleaseDate: 2023-02-05
 githubStargazers: 693
 packagistDownloads: 40326
 contributors: 17
+packagistMonthlyDownloads: 522
+dependentRepos: 78
+dependentPackages: 10
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -105,6 +108,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/phpmv/ubiquity.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/phpmv%2Fubiquity
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/phpmv%2Fubiquity
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/phpmv/ubiquity/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

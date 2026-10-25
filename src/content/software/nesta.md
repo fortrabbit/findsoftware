@@ -32,6 +32,8 @@ currentMajor: "0"
 latestReleaseDate: 2024-11-19
 githubStargazers: 899
 contributors: 23
+dependentRepos: 130
+dependentPackages: 25
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -92,6 +94,12 @@ sources:
   - field: latestReleaseDate
     url: https://rubygems.org/api/v1/gems/nesta.json
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/nesta
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/nesta
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

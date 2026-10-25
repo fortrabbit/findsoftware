@@ -24,6 +24,9 @@ currentMajor: "4"
 latestReleaseDate: 2026-10-17
 githubStargazers: 14378
 packagistDownloads: 232455341
+packagistMonthlyDownloads: 8362991
+dependentRepos: 53975
+dependentPackages: 2117
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -72,6 +75,15 @@ sources:
   - field: githubStargazers
     url: https://api.github.com/repos/Intervention/image
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/intervention%2Fimage
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/intervention%2Fimage
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/intervention/image/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

@@ -30,6 +30,9 @@ latestReleaseDate: 2026-03-21
 githubStargazers: 4799
 packagistDownloads: 2648579
 contributors: 178
+packagistMonthlyDownloads: 35731
+dependentRepos: 186
+dependentPackages: 55
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -96,6 +99,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/orchid/platform.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/orchid%2Fplatform
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/orchid%2Fplatform
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/orchid/platform/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

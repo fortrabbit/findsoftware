@@ -35,6 +35,7 @@ currentMajor: "10"
 latestReleaseDate: 2026-10-06
 githubStargazers: 14456
 contributors: 312
+httpArchiveSites: 91
 social:
   x: https://twitter.com/abpframework
   discord: https://abp.io/join-discord
@@ -110,6 +111,9 @@ sources:
   - field: i18n
     url: https://github.com/abpframework/abp/blob/dev/docs/en/framework/fundamentals/localization.md
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

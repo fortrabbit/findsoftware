@@ -22,6 +22,8 @@ currentMajor: "2"
 latestReleaseDate: 2026-09-30
 githubStargazers: 25976
 npmWeeklyDownloads: 10876309
+dependentRepos: 587
+dependentPackages: 330
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -70,6 +72,12 @@ sources:
   - field: runsAs
     url: https://biomejs.dev/guides/getting-started/
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40biomejs%2Fbiome
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40biomejs%2Fbiome
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

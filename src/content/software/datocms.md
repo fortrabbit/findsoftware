@@ -25,6 +25,9 @@ license: MIT
 githubStargazers: 12
 npmWeeklyDownloads: 79424
 pluginCount: 196
+httpArchiveSites: 2036
+dependentRepos: 23
+dependentPackages: 8
 social:
   forum: https://community.datocms.com
 addedAt: 2026-10-18
@@ -90,6 +93,15 @@ sources:
   - field: pluginCount
     url: https://www.datocms.com/marketplace
     checkedAt: 2026-10-18
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40datocms%2Fcma-client
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40datocms%2Fcma-client
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

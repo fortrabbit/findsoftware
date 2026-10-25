@@ -29,6 +29,8 @@ latestReleaseDate: 2026-10-07
 githubStargazers: 36163
 npmWeeklyDownloads: 4649796
 contributors: 188
+dependentRepos: 4425
+dependentPackages: 1267
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -86,6 +88,12 @@ sources:
   - field: firstRelease
     url: https://registry.npmjs.org/solid-js
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/solid-js
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/solid-js
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

@@ -28,6 +28,9 @@ currentMajor: "1"
 latestReleaseDate: 2020-12-24
 githubStargazers: 4020
 packagistDownloads: 555110
+packagistMonthlyDownloads: 5780
+dependentRepos: 256
+dependentPackages: 168
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -82,6 +85,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/dcat/laravel-admin.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/dcat%2Flaravel-admin
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/dcat%2Flaravel-admin
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/dcat/laravel-admin/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

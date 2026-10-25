@@ -31,6 +31,9 @@ latestReleaseDate: 2017-07-09
 githubStargazers: 500
 packagistDownloads: 880
 contributors: 52
+packagistMonthlyDownloads: 1
+httpArchiveSites: 332
+dependentRepos: 5
 social:
   x: https://twitter.com/impresspages
 addedAt: 2026-10-19
@@ -108,6 +111,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/impresspages/impresspages.json
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/impresspages%2Fimpresspages
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/impresspages/impresspages/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

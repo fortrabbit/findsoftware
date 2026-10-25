@@ -23,6 +23,8 @@ license: AGPL-3.0-or-later
 githubStargazers: 2498
 packagistDownloads: 9771
 contributors: 16
+packagistMonthlyDownloads: 2
+dependentRepos: 4
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -74,6 +76,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/graham-campbell/bootstrap-cms.json
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/graham-campbell%2Fbootstrap-cms
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/graham-campbell/bootstrap-cms/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

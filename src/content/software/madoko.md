@@ -24,6 +24,8 @@ latestReleaseDate: 2020-03-03
 githubStargazers: 413
 npmWeeklyDownloads: 43
 contributors: 1
+dependentRepos: 7
+dependentPackages: 3
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -75,6 +77,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/madoko
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/madoko
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/madoko
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

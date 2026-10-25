@@ -31,6 +31,8 @@ currentMajor: "0"
 latestReleaseDate: 2024-01-07
 githubStargazers: 293
 contributors: 42
+dependentRepos: 213
+dependentPackages: 1
 social:
   x: https://twitter.com/awestructed
 addedAt: 2026-10-23
@@ -96,6 +98,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/awestruct/awestruct/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/awestruct
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/awestruct
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

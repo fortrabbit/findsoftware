@@ -25,6 +25,8 @@ latestReleaseDate: 2023-09-03
 githubStargazers: 2889
 packagistDownloads: 56393
 contributors: 11
+packagistMonthlyDownloads: 11
+dependentRepos: 4
 addedAt: 2026-10-19
 checkedAt: 2026-10-20
 sources:
@@ -79,6 +81,12 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/lavalite/cms
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/lavalite%2Fcms
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/lavalite/cms/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

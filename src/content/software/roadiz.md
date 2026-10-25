@@ -41,6 +41,9 @@ latestReleaseDate: 2026-10-17
 githubStargazers: 6
 packagistDownloads: 13659
 contributors: 8
+packagistMonthlyDownloads: 526
+dependentRepos: 5
+dependentPackages: 7
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -119,6 +122,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/roadiz/core-bundle-dev-app/contributors?anon=true&per_page=100
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/roadiz%2Fcore-bundle
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/roadiz%2Fcore-bundle
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/roadiz/core-bundle/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

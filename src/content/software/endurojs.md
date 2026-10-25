@@ -26,6 +26,9 @@ latestReleaseDate: 2019-01-15
 githubStargazers: 681
 npmWeeklyDownloads: 60
 contributors: 12
+httpArchiveSites: 2
+dependentRepos: 17
+dependentPackages: 4
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -77,6 +80,15 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/enduro
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/enduro
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/enduro
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

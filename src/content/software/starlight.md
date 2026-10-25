@@ -36,6 +36,9 @@ githubStargazers: 9426
 npmWeeklyDownloads: 884121
 contributors: 353
 pluginCount: 53
+httpArchiveSites: 372
+dependentRepos: 35
+dependentPackages: 30
 social:
   discord: https://astro.build/chat
 addedAt: 2026-10-18
@@ -122,6 +125,15 @@ sources:
   - field: pluginCount
     url: https://starlight.astro.build/resources/plugins/
     checkedAt: 2026-10-18
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40astrojs%2Fstarlight
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40astrojs%2Fstarlight
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

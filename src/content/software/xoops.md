@@ -31,6 +31,7 @@ licenseModel: open-source
 license: GPL-2.0, GPL version 2
 currentMajor: "2"
 latestReleaseDate: 2026-10-17
+httpArchiveSites: 688
 social:
   x: https://twitter.com/XoopsProject
   forum: https://xoops.org/modules/newbb/
@@ -97,6 +98,9 @@ sources:
   - field: urls
     url: https://xoops.gitbook.io/xoops-install-upgrade/introduction
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

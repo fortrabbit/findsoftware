@@ -32,6 +32,9 @@ currentMajor: "4"
 latestReleaseDate: 2026-09-30
 githubStargazers: 519
 contributors: 21
+ecosystemsMonthlyDownloads: 8670
+dependentRepos: 39
+dependentPackages: 2
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -101,6 +104,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/meeb/django-distill/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-distill
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-distill
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-distill
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

@@ -31,6 +31,10 @@ currentMajor: "3"
 latestReleaseDate: 2026-07-21
 githubStargazers: 2715
 packagistDownloads: 712610
+packagistMonthlyDownloads: 13670
+httpArchiveSites: 568
+dependentRepos: 202
+dependentPackages: 53
 social:
   forum: https://groups.google.com/forum/#!forum/f3-framework
 addedAt: 2026-10-20
@@ -102,6 +106,18 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/bcosca/fatfree-core.json
     checkedAt: 2026-10-20
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/bcosca%2Ffatfree-core
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/bcosca%2Ffatfree-core
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/bcosca/fatfree-core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

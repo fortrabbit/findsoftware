@@ -27,6 +27,10 @@ currentMajor: "18"
 latestReleaseDate: 2024-06-14
 githubStargazers: 1946
 contributors: 122
+ecosystemsMonthlyDownloads: 539450
+httpArchiveSites: 72
+dependentRepos: 2898
+dependentPackages: 94
 social:
   forum: https://groups.google.com/group/cherrypy-users
 addedAt: 2026-10-24
@@ -92,6 +96,18 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/cherrypy/cherrypy/contributors
     checkedAt: 2026-10-24
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/cherrypy
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/cherrypy
+    checkedAt: 2026-10-25
+  - field: ecosystemsMonthlyDownloads
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/cherrypy
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

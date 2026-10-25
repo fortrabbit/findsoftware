@@ -35,6 +35,9 @@ latestReleaseDate: 2026-09-30
 githubStargazers: 9226
 packagistDownloads: 24164
 contributors: 257
+packagistMonthlyDownloads: 4029
+httpArchiveSites: 49565
+dependentRepos: 2
 wikidata: Q1080982
 addedAt: 2026-10-18
 checkedAt: 2026-10-18
@@ -117,6 +120,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/prestashop/prestashop.json
     checkedAt: 2026-10-18
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/prestashop%2Fprestashop
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/prestashop/prestashop/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

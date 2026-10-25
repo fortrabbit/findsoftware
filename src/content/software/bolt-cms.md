@@ -45,6 +45,10 @@ latestReleaseDate: 2026-10-09
 githubStargazers: 592
 packagistDownloads: 152999
 contributors: 108
+packagistMonthlyDownloads: 3187
+httpArchiveSites: 315
+dependentRepos: 69
+dependentPackages: 50
 social:
   x: https://twitter.com/boltcms
 addedAt: 2026-10-18
@@ -140,6 +144,18 @@ sources:
   - field: runsAs
     url: https://docs.boltcms.io/5.2/installation/installation
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/bolt%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/bolt%2Fcore
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/bolt/core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

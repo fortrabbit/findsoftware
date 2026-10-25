@@ -25,6 +25,8 @@ latestReleaseDate: 2017-05-20
 githubStargazers: 4256
 npmWeeklyDownloads: 943
 contributors: 40
+dependentRepos: 9435
+dependentPackages: 259
 addedAt: 2026-10-22
 checkedAt: 2026-10-22
 sources:
@@ -79,6 +81,12 @@ sources:
   - field: templating
     url: https://github.com/assemble/assemble/blob/master/README.md
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/assemble
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/assemble
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

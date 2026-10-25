@@ -29,6 +29,8 @@ latestReleaseDate: 2026-10-13
 githubStargazers: 37281
 npmWeeklyDownloads: 9325750
 contributors: 432
+dependentRepos: 16712
+dependentPackages: 3270
 social:
   x: https://x.com/fastifyjs
   discord: https://discord.gg/fastify
@@ -92,6 +94,12 @@ sources:
   - field: urls
     url: https://www.fastify.dev/
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/fastify
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/fastify
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

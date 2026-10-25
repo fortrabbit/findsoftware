@@ -24,6 +24,7 @@ latestReleaseDate: 2026-08-18
 githubStargazers: 4511
 packagistDownloads: 5
 contributors: 37
+packagistMonthlyDownloads: 14
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -75,6 +76,9 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/laruence/yaf.json
     checkedAt: 2026-10-21
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/laruence/yaf/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

@@ -22,6 +22,8 @@ latestReleaseDate: 2026-10-07
 githubStargazers: 9558
 npmWeeklyDownloads: 84207
 contributors: 377
+dependentRepos: 102
+dependentPackages: 164
 social:
   x: https://x.com/_carbondesign
 addedAt: 2026-10-19
@@ -78,6 +80,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@carbon/react
     checkedAt: 2026-10-19
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40carbon%2Freact
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40carbon%2Freact
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

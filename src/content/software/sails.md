@@ -37,6 +37,8 @@ latestReleaseDate: 2026-05-27
 githubStargazers: 22780
 npmWeeklyDownloads: 21525
 contributors: 290
+dependentRepos: 7207
+dependentPackages: 540
 social:
   x: https://twitter.com/sailsjs
 addedAt: 2026-10-22
@@ -111,6 +113,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/sails
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/sails
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/sails
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

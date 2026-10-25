@@ -27,6 +27,9 @@ latestReleaseDate: 2026-10-06
 githubStargazers: 88411
 npmWeeklyDownloads: 4210714
 contributors: 412
+httpArchiveSites: 94724
+dependentRepos: 56439
+dependentPackages: 8815
 social:
   discord: https://svelte.dev/chat
 addedAt: 2026-10-22
@@ -98,6 +101,15 @@ sources:
   - field: firstRelease
     url: https://registry.npmjs.org/svelte
     checkedAt: 2026-10-22
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/svelte
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/svelte
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

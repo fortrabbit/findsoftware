@@ -30,6 +30,7 @@ currentMajor: "0"
 latestReleaseDate: 2009-07-25
 githubStargazers: 265
 contributors: 7
+dependentRepos: 24
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -90,6 +91,9 @@ sources:
   - field: contentStore
     url: https://raw.githubusercontent.com/TwP/webby/master/README.rdoc
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/webby
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

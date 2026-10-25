@@ -30,6 +30,7 @@ currentMajor: "0"
 latestReleaseDate: 2026-08-19
 githubStargazers: 308
 contributors: 5
+dependentRepos: 1
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -90,6 +91,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/benpickles/parklife/contributors
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/parklife
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

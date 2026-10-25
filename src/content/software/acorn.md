@@ -29,6 +29,9 @@ latestReleaseDate: 2026-09-22
 githubStargazers: 1008
 packagistDownloads: 2737269
 contributors: 54
+packagistMonthlyDownloads: 122389
+dependentRepos: 152
+dependentPackages: 47
 addedAt: 2026-10-20
 checkedAt: 2026-10-20
 sources:
@@ -86,6 +89,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/roots/acorn.json
     checkedAt: 2026-10-20
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/roots%2Facorn
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/roots%2Facorn
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/roots/acorn/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

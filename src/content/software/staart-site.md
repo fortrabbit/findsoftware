@@ -30,6 +30,8 @@ latestReleaseDate: 2020-04-27
 githubStargazers: 43
 npmWeeklyDownloads: 75
 contributors: 3
+dependentRepos: 9
+dependentPackages: 6
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -93,6 +95,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@staart/site
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40staart%2Fsite
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40staart%2Fsite
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

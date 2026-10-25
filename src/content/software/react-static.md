@@ -33,6 +33,8 @@ latestReleaseDate: 2021-10-11
 githubStargazers: 10335
 npmWeeklyDownloads: 1421
 contributors: 221
+dependentRepos: 862
+dependentPackages: 87
 social:
   x: https://twitter.com/reactstaticjs
 addedAt: 2026-10-22
@@ -107,6 +109,12 @@ sources:
   - field: urls
     url: https://github.com/react-static/react-static/blob/master/docs/plugins/README.md
     checkedAt: 2026-10-22
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react-static
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react-static
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

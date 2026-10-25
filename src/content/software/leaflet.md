@@ -23,6 +23,9 @@ latestReleaseDate: 2023-05-18
 githubStargazers: 45768
 npmWeeklyDownloads: 5075628
 contributors: 1032
+httpArchiveSites: 163457
+dependentRepos: 50451
+dependentPackages: 2635
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:
@@ -74,6 +77,15 @@ sources:
   - field: urls
     url: https://leafletjs.com/plugins.html
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/leaflet
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/leaflet
+    checkedAt: 2026-10-25
 ai: authored
 contentStore: null
 databases: null

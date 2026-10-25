@@ -34,6 +34,8 @@ currentMajor: "0"
 latestReleaseDate: 2025-02-27
 githubStargazers: 2926
 contributors: 34
+dependentRepos: 2128
+dependentPackages: 5
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:
@@ -103,6 +105,12 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/jekyll/jekyll-admin/contributors?per_page=1
     checkedAt: 2026-10-23
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/jekyll-admin
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/jekyll-admin
+    checkedAt: 2026-10-25
 ai: authored
 packagistDownloads: null
 ---

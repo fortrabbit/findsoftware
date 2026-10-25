@@ -21,6 +21,8 @@ i18n: content localization as a core feature, several locales per entry
 licenseModel: saas
 githubStargazers: 616
 npmWeeklyDownloads: 2881
+dependentRepos: 1
+dependentPackages: 3
 social:
   x: https://twitter.com/hygraph
   youtube: https://www.youtube.com/@Hygraph
@@ -75,6 +77,12 @@ sources:
   - field: urls
     url: https://hygraph.com/marketplace
     checkedAt: 2026-10-18
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40hygraph%2Fmanagement-sdk
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40hygraph%2Fmanagement-sdk
+    checkedAt: 2026-10-25
 ai: authored
 ---
 

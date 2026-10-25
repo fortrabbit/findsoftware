@@ -35,6 +35,9 @@ latestReleaseDate: 2026-08-05
 githubStargazers: 2067
 packagistDownloads: 2612768
 contributors: 52
+packagistMonthlyDownloads: 99331
+dependentRepos: 119
+dependentPackages: 72
 social:
   x: https://twitter.com/spiralphp
   discord: https://discord.gg/V6EK4he
@@ -104,6 +107,15 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/spiral/framework/contributors
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/spiral%2Fframework
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/spiral%2Fframework
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/spiral/framework/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

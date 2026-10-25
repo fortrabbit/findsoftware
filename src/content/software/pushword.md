@@ -47,6 +47,9 @@ latestReleaseDate: 2026-10-20
 githubStargazers: 30
 packagistDownloads: 22989
 contributors: 2
+packagistMonthlyDownloads: 3196
+dependentRepos: 14
+dependentPackages: 13
 addedAt: 2026-10-21
 checkedAt: 2026-10-21
 sources:
@@ -143,6 +146,15 @@ sources:
   - field: packagistDownloads
     url: https://packagist.org/packages/pushword/core.json
     checkedAt: 2026-10-21
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/pushword%2Fcore
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/pushword%2Fcore
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/pushword/core/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---

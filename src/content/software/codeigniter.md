@@ -36,6 +36,10 @@ currentMajor: "4"
 latestReleaseDate: 2026-10-09
 githubStargazers: 5988
 packagistDownloads: 4729461
+packagistMonthlyDownloads: 319920
+httpArchiveSites: 44417
+dependentRepos: 2160
+dependentPackages: 257
 social:
   x: https://twitter.com/CodeIgniterPhp
   forum: https://forum.codeigniter.com
@@ -115,6 +119,18 @@ sources:
   - field: runsAs
     url: https://codeigniter.com/user_guide/installation/installing_composer.html
     checkedAt: 2026-10-19
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/codeigniter4%2Fframework
+    checkedAt: 2026-10-25
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/codeigniter4%2Fframework
+    checkedAt: 2026-10-25
+  - field: packagistMonthlyDownloads
+    url: https://packagist.org/packages/codeigniter4/framework/stats.json
+    checkedAt: 2026-10-25
 ai: authored
 npmWeeklyDownloads: null
 ---
