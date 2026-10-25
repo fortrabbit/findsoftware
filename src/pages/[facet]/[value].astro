@@ -104,6 +104,7 @@ const combined = (await pairsFor(facet.id, value.id)).map((group) => ({
 ---
 
 <Base
+  graph={facet.field === 'language' ? `hub:language:${value.id}` : 'rows'}
   title={`${note?.data.title ?? valueTitle(facet.id, value)} — FindSoftware`}
   description={description}
   markdown={`${facetIndex(facet.id)}${value.slug}.md`}

@@ -151,6 +151,8 @@ body > header {
 body > main {
   flex: 1;
   padding-top: var(--space-xs);
+  /* The content's layouts follow the width they get, which the graph beside them changes, not the screen's. */
+  container: content / inline-size;
 }
 
 /*
@@ -185,4 +187,51 @@ body > footer {
 
 body > footer p {
   margin: 0;
+}
+
+/*
+ * The graph, one element kept across page loads. On a narrow screen it sits
+ * above the page; on a wide one it is a column on the right, sticky to the top,
+ * and the content centres in what is left. A page without it gets the old
+ * single column back.
+ */
+.graph-dock {
+  --graph-height: 20rem;
+  margin-top: var(--space-xs);
+  padding-inline: var(--gutter);
+}
+
+html:not(.js) .graph-dock {
+  display: none;
+}
+
+@media (min-width: 80rem) {
+  body:has(> .graph-dock:not([hidden])) {
+    /* A width dragged by the reader, kept on the root, or a share of the screen. */
+    --graph-width: var(--graph-drag, clamp(22rem, 30vw, 34rem));
+    --gutter: max(var(--space-md), (100vw - var(--graph-width) - var(--measure-page)) / 2);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) var(--graph-width);
+    grid-template-rows: auto 1fr auto;
+  }
+
+  body > header,
+  body > main,
+  body > footer {
+    grid-column: 1;
+  }
+
+  body > .graph-dock {
+    --graph-height: 100dvh;
+    grid-row: 1 / span 3;
+    grid-column: 2;
+    margin: 0;
+    padding: 0;
+  }
+
+  .graph-dock > [data-graph]:not(.expanded) {
+    position: sticky;
+    top: 0;
+    border-width: 0 0 0 var(--rule-hairline);
+  }
 }

@@ -2,6 +2,8 @@
 import '../styles/tokens.css';
 import '../styles/base.css';
 import '../styles/components.css';
+import { ClientRouter } from 'astro:transitions';
+import GraphFrame from '../components/GraphFrame.astro';
 import { outboundLinkAttrs } from '../lib/links';
 import { graph, licenceUrl } from '../lib/seo';
 
@@ -29,6 +31,12 @@ interface Props {
    * and the site, which the nodes refer to by `@id`; shapes in lib/seo.ts.
    */
   schema?: Record<string, unknown> | Record<string, unknown>[];
+  /**
+   * What the graph beside the page shows: `all`, `off`, `record:<id>`,
+   * `hub:<key>`, `rows` (the records listed on the page) or `register` (the
+   * rows the filters leave). Read by the graph on every page load.
+   */
+  graph?: string;
 }
 
 const {
@@ -40,6 +48,7 @@ const {
   image = '/og/default.png',
   imageAlt = 'A FindSoftware card: the register of software to build websites with.',
   schema,
+  graph: graphState = 'all',
 } = Astro.props;
 const fathomSiteId = import.meta.env.PUBLIC_FATHOM_SITE_ID;
 
@@ -52,8 +61,9 @@ const indexable = import.meta.env.PUBLIC_INDEXABLE === 'true' && !hidden;
  * wordmark already leads back to; the map is reached from the pages that need
  * it — a nav that lists everything is a nav nobody reads.
  */
+/* Search is a page of its own: the register answers Cmd-F, so a field on every page was weight for little. */
 const sections = [
-  { href: '/graph/', label: 'Graph' },
+  { href: '/search/', label: 'Search' },
   { href: '/about/', label: 'About' },
 ];
 
@@ -72,7 +82,7 @@ const structured = schema && graph(new URL(origin).origin, Array.isArray(schema)
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" transition:animate="none">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -99,6 +109,8 @@ const structured = schema && graph(new URL(origin).origin, Array.isArray(schema)
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content={imageAlt} />
     <meta name="twitter:card" content="summary_large_image" />
+    {/* Pages swap in place, so the graph beside them survives a link; without JavaScript links load pages as ever. */}
+    <ClientRouter fallback="swap" />
     {
       structured && (
         <script type="application/ld+json" set:html={JSON.stringify(structured).replace(/</g, '\\u003c')} is:inline />
@@ -119,20 +131,22 @@ const structured = schema && graph(new URL(origin).origin, Array.isArray(schema)
           ))
         }
       </nav>
-
-      <form class="site-search" role="search" aria-label="Site" action="/search/">
-        <input
-          type="search"
-          name="q"
-          placeholder="Search software"
-          aria-label="Search"
-          title="Press / to search"
-          data-search-shortcut
-        />
-      </form>
     </header>
 
-    <main>
+    {
+      /*
+       * Kept across page loads: the router moves this element into the next
+       * page as it is, with its canvas and its state. Rendered on every page,
+       * also where it stays hidden, because the router only keeps an element
+       * the next page has too. Its attributes stay the first page's, so each
+       * page says what the graph shows on <main data-graph-show> instead.
+       */
+    }
+    <div class="graph-dock" transition:persist="graph" hidden={graphState === 'off'} data-graph-dock>
+      <GraphFrame />
+    </div>
+
+    <main data-graph-show={graphState}>
       <slot />
     </main>
 
@@ -222,26 +236,40 @@ const structured = schema && graph(new URL(origin).origin, Array.isArray(schema)
     </footer>
 
     <script is:inline>
-      // Before first paint, or the page flashes the wrong theme on the way in.
-      // Guarded: a browser that blocks site data throws on the accessor, and
-      // the `js` class below has to be set regardless.
-      try {
-        const stored = localStorage.getItem('theme');
-        if (stored === 'dark' || stored === 'light') document.documentElement.dataset.theme = stored;
-      } catch {}
+      // A block, so a second run of this script declares nothing twice.
+      {
+        // Before first paint, or the page flashes the wrong theme on the way in.
+        // Guarded: a browser that blocks site data throws on the accessor, and
+        // the `js` class below has to be set regardless.
+        const settle = (root) => {
+          try {
+            const stored = localStorage.getItem('theme');
+            if (stored === 'dark' || stored === 'light') root.dataset.theme = stored;
+            // The graph column's width, as the reader last dragged it.
+            const width = Number(localStorage.getItem('graph-width'));
+            if (width) root.style.setProperty('--graph-drag', `${width}px`);
+          } catch {}
 
-      /*
-       * Same reason. The filter panel is static markup and ships visible, so a
-       * crawler reads its links and a reader sees it immediately; the controls
-       * inside it only work once find.ts has run. This says which world we are
-       * in early enough that nothing appears, disappears or moves afterwards.
-       */
-      document.documentElement.classList.add('js');
+          /*
+           * Same reason. The filter panel is static markup and ships visible, so a
+           * crawler reads its links and a reader sees it immediately; the controls
+           * inside it only work once find.ts has run. This says which world we are
+           * in early enough that nothing appears, disappears or moves afterwards.
+           */
+          root.classList.add('js');
+        };
+        settle(document.documentElement);
+        // The router copies the next page's <html> attributes over this one's, which drops both; set them on the new page before it shows.
+        document.addEventListener('astro:before-swap', (event) => settle(event.newDocument.documentElement));
+      }
     </script>
 
     <script>
+      import { navigate } from 'astro:transitions/client';
+
       const root = document.documentElement;
-      const choices = document.querySelectorAll<HTMLButtonElement>('[data-theme-set]');
+      // The footer arrives anew with every page, so the buttons are looked up again each time.
+      let choices: NodeListOf<HTMLButtonElement>;
 
       /*
        * Each button is a state rather than a move, so each says whether it is the
@@ -258,29 +286,31 @@ const structured = schema && graph(new URL(origin).origin, Array.isArray(schema)
         }
       };
 
-      for (const choice of choices) {
-        choice.addEventListener('click', () => {
-          const wanted = choice.dataset.themeSet!;
+      const wire = () => {
+        choices = document.querySelectorAll<HTMLButtonElement>('[data-theme-set]');
+        for (const choice of choices) {
+          choice.addEventListener('click', () => {
+            const wanted = choice.dataset.themeSet!;
 
-          // System is the absence of a choice, so choosing it removes one.
-          if (wanted === 'system') delete root.dataset.theme;
-          else root.dataset.theme = wanted;
+            // System is the absence of a choice, so choosing it removes one.
+            if (wanted === 'system') delete root.dataset.theme;
+            else root.dataset.theme = wanted;
 
-          try {
-            if (wanted === 'system') localStorage.removeItem('theme');
-            else localStorage.setItem('theme', wanted);
-          } catch {
-            /* Storage blocked: the theme still applies for this page. */
-          }
+            try {
+              if (wanted === 'system') localStorage.removeItem('theme');
+              else localStorage.setItem('theme', wanted);
+            } catch {
+              /* Storage blocked: the theme still applies for this page. */
+            }
 
-          describe();
-        });
-      }
+            describe();
+          });
+        }
+        describe();
+      };
+      document.addEventListener('astro:page-load', wire);
 
-      describe();
-
-      // `/` focuses search, the way it works everywhere else a developer types.
-      const field = document.querySelector<HTMLInputElement>('[data-search-shortcut]');
+      // `/` searches, the way it works everywhere else a developer types: the field on the search page, or that page.
 
       document.addEventListener('keydown', (event) => {
         if (event.key !== '/' || event.metaKey || event.ctrlKey || event.altKey) return;
@@ -293,8 +323,10 @@ const structured = schema && graph(new URL(origin).origin, Array.isArray(schema)
         if (typing) return;
 
         event.preventDefault();
-        field?.focus();
-        field?.select();
+        const field = document.querySelector<HTMLInputElement>('[data-search-input]');
+        if (!field) return void navigate('/search/');
+        field.focus();
+        field.select();
       });
     </script>
   </body>

@@ -3,88 +3,212 @@ import zoomIn from 'bootstrap-icons/icons/zoom-in.svg?raw';
 import zoomOut from 'bootstrap-icons/icons/zoom-out.svg?raw';
 import fullscreen from 'bootstrap-icons/icons/fullscreen.svg?raw';
 import fonts from 'bootstrap-icons/icons/fonts.svg?raw';
+import chevron from 'bootstrap-icons/icons/chevron-up.svg?raw';
 
-interface Props {
-  /** A record page: the graph opens on this record. Absent on /graph/, where the graph is the page. */
-  record?: string;
-}
-
-const { record } = Astro.props;
-// On a record page stepping out leads to the graph page itself, opened on this record, so that control is a link.
-const controls: { value: string; label: string; icon: string; pressed?: boolean; href?: string }[] = [
+/*
+ * The one graph of the site, rendered once by Base.astro and kept by the router
+ * across page loads. Each page names what it shows on <main data-graph-show>.
+ */
+const controls: { value: string; label: string; icon: string; pressed?: boolean }[] = [
   { value: 'in', label: 'Zoom in', icon: zoomIn },
   { value: 'out', label: 'Zoom out', icon: zoomOut },
-  record
-    ? { value: 'all', label: 'Whole graph', icon: fullscreen, href: `/graph/#${encodeURI(record)}` }
-    : { value: 'step', label: 'Step out (Esc)', icon: fullscreen },
+  { value: 'expand', label: 'Whole screen (Esc to leave)', icon: fullscreen, pressed: false },
   { value: 'labels', label: 'Show names', icon: fonts, pressed: false },
+  { value: 'collapse', label: 'Hide the graph', icon: chevron, pressed: false },
 ];
 ---
 
-<div class:list={['graph', { 'on-record': record }]} data-graph data-graph-record={record}>
+<div class="graph" data-graph aria-label="What each project is built on">
   <div class="graph-canvas" data-graph-canvas></div>
+  <div
+    class="graph-handle"
+    role="separator"
+    aria-orientation="vertical"
+    aria-label="Graph width"
+    title="Drag to resize, double-click to reset"
+    tabindex="0"
+    data-graph-handle
+  >
+  </div>
   <div class="graph-controls" role="group" aria-label="Graph view" data-graph-controls>
     {
-      controls.map((control) =>
-        control.href ? (
-          <a href={control.href} title={control.label}>
-            <span class="visually-hidden">{control.label}</span>
-            <Fragment set:html={control.icon} />
-          </a>
-        ) : (
-          <button type="button" value={control.value} title={control.label} aria-pressed={control.pressed}>
-            <span class="visually-hidden">{control.label}</span>
-            <Fragment set:html={control.icon} />
-          </button>
-        ),
-      )
+      controls.map((control) => (
+        <button type="button" value={control.value} title={control.label} aria-pressed={control.pressed}>
+          <span class="visually-hidden">{control.label}</span>
+          <Fragment set:html={control.icon} />
+        </button>
+      ))
     }
   </div>
 </div>
 
 <script>
+  import type { mountGraph } from '../scripts/graph';
+
   /*
-   * Both views read the one /graph.json, so a reader's browser fetches it once
-   * for the whole site. /graph/ draws at once; a record page waits until its
-   * frame comes near the screen, so a reader who never scrolls there loads
-   * neither the data nor the renderer.
+   * The data and the renderer load once per visit, after the first page that
+   * shows the graph has painted; a page without the graph loads neither.
+   * Every page load after that only tells the graph what to show.
    */
-  for (const root of document.querySelectorAll<HTMLElement>('[data-graph]')) {
-    const record = root.dataset.graphRecord;
-    const start = () =>
-      Promise.all([import('../scripts/graph'), fetch('/graph.json').then((response) => response.json())])
-        .then(([{ mountGraph }, data]) => mountGraph(root, data, { record }))
-        // An empty frame says nothing; without the data the facts below still name the relations.
-        .catch(() => (root.hidden = true));
-    if (!record) start();
-    else
-      new IntersectionObserver(
-        (entries, watch) => {
-          if (!entries.some((entry) => entry.isIntersecting)) return;
-          watch.disconnect();
-          start();
-        },
-        { rootMargin: '300px' },
-      ).observe(root);
-  }
+  const dock = document.querySelector<HTMLElement>('[data-graph-dock]')!;
+  const root = dock.querySelector<HTMLElement>('[data-graph]')!;
+  let mounted: Promise<ReturnType<typeof mountGraph> | undefined> | undefined;
+  let broken = false;
+
+  const mount = () =>
+    (mounted ??= Promise.all([import('../scripts/graph'), fetch('/graph.json').then((response) => response.json())])
+      .then(([{ mountGraph }, data]) => mountGraph(root, data))
+      // An empty frame says nothing; without the data every page still names its relations.
+      .catch(() => {
+        broken = true;
+        dock.hidden = true;
+        return undefined;
+      }));
+
+  document.addEventListener('astro:page-load', () => {
+    const state = document.querySelector<HTMLElement>('main')?.dataset.graphShow ?? 'off';
+    dock.hidden = broken || state === 'off';
+    if (dock.hidden) return;
+    if (mounted) return void mounted.then((graph) => graph?.show(state));
+    const idle = window.requestIdleCallback ?? ((run: () => void) => setTimeout(run, 1));
+    idle(() => void mount().then((graph) => graph?.show(state, true)));
+  });
+
+  /*
+   * The column's left edge drags. The width lives on the root as --graph-drag,
+   * where the theme script in Base.astro restores it before the first paint and
+   * on every page the router brings in. Bounded so neither side disappears.
+   */
+  const handle = root.querySelector<HTMLElement>('[data-graph-handle]')!;
+  const bounds = (width: number) => Math.round(Math.min(Math.max(width, 320), innerWidth * 0.7));
+  const setWidth = (width: number | undefined) => {
+    const style = document.documentElement.style;
+    try {
+      if (width === undefined) localStorage.removeItem('graph-width');
+      else localStorage.setItem('graph-width', String(width));
+    } catch {}
+    if (width === undefined) style.removeProperty('--graph-drag');
+    else style.setProperty('--graph-drag', `${width}px`);
+    handle.setAttribute('aria-valuenow', String(Math.round(root.offsetWidth)));
+  };
+  handle.addEventListener('pointerdown', (event) => {
+    event.preventDefault();
+    handle.setPointerCapture(event.pointerId);
+    document.documentElement.classList.add('graph-dragging');
+    const move = (next: PointerEvent) => setWidth(bounds(innerWidth - next.clientX));
+    const stop = () => {
+      document.documentElement.classList.remove('graph-dragging');
+      handle.removeEventListener('pointermove', move);
+    };
+    handle.addEventListener('pointermove', move);
+    handle.addEventListener('pointerup', stop, { once: true });
+    handle.addEventListener('pointercancel', stop, { once: true });
+  });
+  handle.addEventListener('dblclick', () => setWidth(undefined));
+  handle.addEventListener('keydown', (event) => {
+    const step = { ArrowLeft: 32, ArrowRight: -32 }[event.key];
+    if (!step) return;
+    event.preventDefault();
+    setWidth(bounds(root.offsetWidth + step));
+  });
+
+  /*
+   * Above the page, on a narrow screen, the graph folds to a strip. Phones start
+   * folded; a reader's own choice is kept, where storage allows it.
+   */
+  const fold = root.querySelector<HTMLButtonElement>('button[value="collapse"]')!;
+  const setFolded = (folded: boolean) => {
+    root.classList.toggle('collapsed', folded);
+    fold.setAttribute('aria-pressed', String(folded));
+    fold.title = folded ? 'Show the graph' : 'Hide the graph';
+  };
+  let stored: string | null = null;
+  try {
+    stored = localStorage.getItem('graph-folded');
+  } catch {}
+  setFolded(stored ? stored === 'true' : matchMedia('(max-width: 40rem)').matches);
+  fold.addEventListener('click', () => {
+    const folded = !root.classList.contains('collapsed');
+    setFolded(folded);
+    try {
+      localStorage.setItem('graph-folded', String(folded));
+    } catch {}
+  });
 </script>
 
 <style>
   .graph {
     position: relative;
+    height: var(--graph-height, 20rem);
     border: var(--rule-hairline) solid var(--color-ink);
+    background: var(--color-page);
   }
-  /* The height is held before the graph draws, so nothing below it moves when it does. */
   .graph-canvas {
-    /* The screen below the header, so the whole graph shows on load; 5.5rem is the header and the space above the frame. */
-    height: max(28rem, calc(100dvh - 5.5rem));
+    height: 100%;
+    /* While a resize settles the canvas keeps its old size; what overhangs is cut, not spilled over the page. */
+    overflow: hidden;
   }
-  /* On a record page the graph is one section among others, not the page. */
-  .on-record .graph-canvas {
-    height: 20rem;
+  /* Folded, the controls stay as a strip, so the graph can be unfolded again. Only above the page: the column never folds. */
+  @media (max-width: 79.99rem) {
+    .graph.collapsed {
+      height: calc(var(--space-sm) * 2 + 1.75rem);
+    }
+    .graph.collapsed .graph-canvas {
+      visibility: hidden;
+    }
+    .graph.collapsed .graph-controls button:not([value='collapse']) {
+      display: none;
+    }
+    .graph.collapsed button[value='collapse'] {
+      background: var(--color-page);
+      color: var(--color-ink);
+    }
+    .graph.collapsed button[value='collapse'] :global(svg) {
+      transform: rotate(180deg);
+    }
   }
-  /* Without a script there is nothing to draw; /graph/ says so, and a record's facts name its relations. */
-  :global(html:not(.js)) .graph {
+  @media (min-width: 80rem) {
+    button[value='collapse'] {
+      display: none;
+    }
+  }
+  /* A strip over the column's left rule; only the column resizes, above the page there is nothing to drag. */
+  .graph-handle {
+    display: none;
+  }
+  @media (min-width: 80rem) {
+    .graph:not(.expanded) .graph-handle {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      bottom: 0;
+      left: -0.3rem;
+      display: block;
+      width: 0.6rem;
+      cursor: col-resize;
+      touch-action: none;
+    }
+    .graph-handle:hover,
+    .graph-handle:focus-visible,
+    :global(.graph-dragging) .graph-handle {
+      background: linear-gradient(to right, transparent 40%, var(--color-link) 40% 60%, transparent 60%);
+      outline: none;
+    }
+  }
+  /* While dragging, the pointer may cross text; nothing gets selected and the cursor holds. */
+  :global(.graph-dragging) {
+    cursor: col-resize;
+    user-select: none;
+  }
+  /* Over everything, the whole screen to explore; Escape or the control brings it back. */
+  .graph.expanded {
+    position: fixed;
+    z-index: 10;
+    inset: 0;
+    height: auto;
+    border: 0;
+  }
+  .graph.expanded button[value='collapse'] {
     display: none;
   }
   .graph-controls {
@@ -94,8 +218,7 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean;
     display: flex;
     gap: var(--space-3xs);
   }
-  .graph-controls button,
-  .graph-controls a {
+  .graph-controls button {
     display: inline-flex;
     padding: var(--space-3xs) var(--space-2xs);
     border: var(--rule-hairline) solid var(--color-ink);

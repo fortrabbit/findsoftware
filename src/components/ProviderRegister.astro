@@ -166,7 +166,7 @@ const groups = dated ? groupsOf(providers) : letterGroups;
 
 <ListControls sort={sort} />
 
-<div data-pagefind-ignore data-find-results>
+<div class="slim" data-pagefind-ignore data-find-results>
   {
     groups.map((group) => (
       <section class:list={['letter-group', { dated }]} id={group.anchor}>
@@ -191,7 +191,7 @@ const groups = dated ? groupsOf(providers) : letterGroups;
    * concerned.
    */
   others.map((register) => (
-    <div data-pagefind-ignore data-find-list={register.key} hidden>
+    <div class="slim" data-pagefind-ignore data-find-list={register.key} hidden>
       {groupsOf(register.rows).map((group) => (
         <section class:list={['letter-group', { dated }]}>
           {!dated && <h2>{group.label}</h2>}

@@ -25,7 +25,6 @@ import { outboundLinkAttrs } from '../lib/links';
 import { modifiedAt, updatedAfterCheck } from '../lib/modified';
 import SocialLinks from '../components/SocialLinks.astro';
 import PageFigure from '../components/PageFigure.astro';
-import GraphFrame from '../components/GraphFrame.astro';
 import { loadGraph } from '../lib/graph-data';
 import ProviderLogo from '../components/ProviderLogo.astro';
 import FactGroups from '../components/FactGroups.astro';
@@ -304,6 +303,7 @@ const metaDescription = data.description
   hidden={!listed}
   image={cardPath(provider.id)}
   imageAlt={`A FindSoftware card for ${data.name}.`}
+  graph={inGraph ? `record:${provider.id}` : 'all'}
   schema={[
     {
       '@type': 'BreadcrumbList',
@@ -394,14 +394,6 @@ const metaDescription = data.description
     </p>
 
     <PageFigure figure={data.figure} />
-
-    {
-      inGraph && (
-        <section class="record-graph" aria-label={`${data.name} in the graph of what is built on what`}>
-          <GraphFrame record={provider.id} />
-        </section>
-      )
-    }
 
     <div class="record-layout">
       <aside class="record-specs">

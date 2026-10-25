@@ -1,26 +1,32 @@
 ---
-import Base from '../layouts/Base.astro';
-import GraphFrame from '../components/GraphFrame.astro';
+import { loadGraph } from '../lib/graph-data';
 
 /*
- * What the register is built on, drawn. Without JavaScript there is no graph;
- * each record page names its parents, so the facts stay reachable.
+ * The graph is beside every page now, so its old page only forwards: a shared
+ * /graph/#<id> to that record, anything else to the register. The hash never
+ * reaches a server, so the map from id to page travels with the page.
  */
-const description = 'What each project in the register is built on, from the language outwards.';
+const { nodes } = await loadGraph();
+const pages = Object.fromEntries(nodes.filter((node) => node.href).map((node) => [node.key, node.href]));
 ---
 
-<Base title="Graph — FindSoftware" description={description}>
-  <h1 class="visually-hidden">Graph</h1>
-
-  <noscript><p>The graph needs JavaScript. Each record page names what the software is built on.</p></noscript>
-  <div class="full-width graph-frame">
-    <GraphFrame />
-  </div>
-</Base>
-
-<style>
-  /* Close to the edges: the graph is scanned, and every pixel of width spreads it out. */
-  .graph-frame {
-    padding-inline: var(--space-xs);
-  }
-</style>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content="0; url=/" />
+    <link rel="canonical" href={new URL('/', Astro.site ?? Astro.url).href} />
+    <title>Graph — FindSoftware</title>
+    <script is:inline define:vars={{ pages }}>
+      let key = '';
+      try {
+        key = decodeURIComponent(location.hash.slice(1));
+      } catch {}
+      location.replace(Object.hasOwn(pages, key) ? pages[key] : '/');
+    </script>
+  </head>
+  <body>
+    <p><a href="/">The graph is on the register now.</a></p>
+  </body>
+</html>

@@ -1,17 +1,15 @@
 /**
  * Draws the "built on" graph with Sigma. Positions come from the build, so
- * nothing here lays anything out: it paints, names on hover, opens a record on
- * click, and on /graph/ narrows to a hub's subtree before opening it.
- *
- * A record page mounts the same graph on one record: its family named, its
- * siblings as dots, the rest of the register behind them. There every dot opens
- * its record at once, and nothing narrows.
+ * nothing here lays anything out: it paints, names on hover and opens a record
+ * on click. One graph serves the whole visit: the router keeps it across page
+ * loads, and each page tells it what to show through `show()`.
  */
 import Graph from 'graphology';
 import Sigma from 'sigma';
+import { navigate } from 'astro:transitions/client';
 import type { GraphData } from '../lib/graph';
 
-export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData, { record: page }: { record?: string } = {}) {
+export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
   const container = root.querySelector<HTMLElement>('[data-graph-canvas]')!;
 
   // Sigma's WebGL edges ignore alpha, so a faint line is the colour mixed into the page colour up front.
@@ -80,6 +78,10 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData, { rec
     { key: string; members: Set<string>; named: Set<string>; edges: Set<string>; frame: Set<string> } | undefined;
   // Off by default: hundreds of names at once overlap. The toggle names every node.
   let labels = false;
+  // Expanded, the graph covers the screen and is explored rather than glanced at: there a hub narrows before it opens.
+  let expanded = false;
+  // The dot of the row under the pointer in the list beside the graph.
+  let marked: string | undefined;
   const teardown = new AbortController();
   const outside = (key: string) => Boolean(focus && !focus.members.has(key));
 
@@ -88,8 +90,10 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData, { rec
     labelSize,
     // Only forced names are drawn, so Sigma's label grid never picks some by A–Z order; the hover layer names the rest.
     labelRenderedSizeThreshold: Infinity,
-    // A record page zooms in close; dots keep their size there instead of swelling with the zoom.
-    ...(page ? { zoomToSizeRatioFunction: () => 1 } : {}),
+    // A record zooms in close; dots keep their size there instead of swelling with the zoom.
+    zoomToSizeRatioFunction: () => 1,
+    // A page without the graph hides it, and a hidden container has no size.
+    allowInvalidContainer: true,
     defaultEdgeColor: colors.quiet,
     // A halo in the page colour keeps a label readable where lines cross it.
     defaultDrawNodeLabel: (context, data) => {
@@ -121,6 +125,11 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData, { rec
     },
     // Sigma hands the reducers a copy, so they change it in place.
     nodeReducer: (key, attributes) => {
+      // Drawn in the hover layer, named and boxed, in colour even when it is outside the focus.
+      if (key === marked) {
+        attributes.highlighted = true;
+        return attributes;
+      }
       if (outside(key)) {
         attributes.backdrop = true;
         attributes.color = colors.quiet;
@@ -144,8 +153,8 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData, { rec
     },
   });
 
-  // On /graph/ a hub narrows to its subtree first and opens its page on the second click; elsewhere a click opens.
-  const narrows = (key: string) => !page && isHub(key) && focus?.key !== key;
+  // Expanded, a hub narrows to its subtree first and opens its page on the second click; otherwise a click opens.
+  const narrows = (key: string) => expanded && isHub(key) && focus?.key !== key;
   const opens = (key: string) => !outside(key) && (narrows(key) || Boolean(graph.getNodeAttribute(key, 'href')));
 
   // Hovering only touches the cursor: Sigma names the node in its hover layer without redrawing the graph.
@@ -187,18 +196,19 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData, { rec
     else sigma.getCamera().setState(state);
   };
 
-  // On /graph/ the address follows the view, so it can be copied and shared; replaceState fires no hashchange.
-  const remember = (key: string | undefined) => {
-    if (page) return;
-    if (key) history.replaceState(null, '', `#${encodeURI(key)}`);
-    else if (location.hash) history.replaceState(null, '', location.pathname + location.search);
-  };
+  const camera = sigma.getCamera();
+  const reset = (duration: number) =>
+    duration ? camera.animatedReset({ duration }) : camera.setState({ x: 0.5, y: 0.5, ratio: 1, angle: 0 });
 
-  const focusOn = (next: NonNullable<typeof focus>, duration: number) => {
+  // Colours change at once; with `wait` the camera follows once the changes stop, so three ticks move it once.
+  let moving: ReturnType<typeof setTimeout> | undefined;
+  const focusOn = (next: typeof focus, duration: number, wait = 0) => {
     focus = next;
-    remember(next.key);
-    fit(next.frame, duration);
     sigma.refresh();
+    clearTimeout(moving);
+    const move = () => (next?.frame.size ? fit(next.frame, duration) : reset(duration));
+    if (wait) moving = setTimeout(move, wait);
+    else move();
   };
 
   // A hub and everything built on it. Past 80 (JavaScript, PHP, no language) the names would overlap: then only
@@ -246,13 +256,29 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData, { rec
     focusOn({ key, members, named, edges: new Set(lines), frame }, duration);
   };
 
+  /*
+   * Records listed on the page: in colour with their parents as context, named
+   * while the names still fit, joined only among themselves. Most of the graph
+   * at once is the whole view, recoloured, with the camera left where it is.
+   */
+  const highlight = (ids: string[], duration = 400, wait = 0) => {
+    const shown = new Set(ids.filter((id) => graph.hasNode(id)));
+    if (!shown.size) return focusOn(undefined, duration, wait);
+    const members = new Set([...shown, ...[...shown].flatMap((id) => graph.inNeighbors(id))]);
+    const named = new Set([...shown].filter((id) => shown.size <= 60 || isHub(id)));
+    const lines = graph.filterEdges((_, __, source, target) => shown.has(source) && shown.has(target));
+    const frame = shown.size > graph.order / 2 ? new Set<string>() : shown;
+    focusOn({ key: '', members, named, edges: new Set(lines), frame }, duration, wait);
+  };
+
   sigma.on('clickNode', ({ node, event }) => {
     if (!opens(node)) return;
     if (narrows(node)) return narrow(node);
     const href = graph.getNodeAttribute(node, 'href') as string;
     const { ctrlKey, metaKey, shiftKey } = event.original as MouseEvent;
-    if (ctrlKey || metaKey || shiftKey) window.open(href, '_blank');
-    else window.location.assign(href);
+    if (ctrlKey || metaKey || shiftKey) return void window.open(href, '_blank');
+    setExpanded(false);
+    void navigate(href);
   });
 
   // The nearest hub above, through any parent; a language has none.
@@ -264,38 +290,89 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData, { rec
       for (const parent of graph.inNeighbors(queue[at])) if (!seen.has(parent) && seen.add(parent)) queue.push(parent);
     }
   };
-  const showAll = () => {
-    focus = undefined;
-    remember(undefined);
-    sigma.refresh();
-    sigma.getCamera().animatedReset();
+  // What the page asked for, so leaving the expanded view returns to it.
+  let state = 'all';
+  // The rows listed in the page, as their records; a row inside a hidden list or hidden itself is not on show.
+  const rows = () =>
+    [...document.querySelectorAll<HTMLElement>('main li[data-record]')]
+      .filter((row) => !row.closest('[hidden]'))
+      .map((row) => row.dataset.record!);
+  const apply = (duration = 400, wait = 0) => {
+    const [kind, ...rest] = state.split(':');
+    const key = rest.join(':');
+    if (kind === 'record' && graph.hasNode(key)) return around(key, duration);
+    if (kind === 'hub' && graph.hasNode(key)) return narrow(key, duration);
+    if (kind === 'rows') return highlight(rows(), duration, wait);
+    // The register unfiltered is the whole graph; any filter in the address narrows it to the rows left.
+    if (kind === 'register' && [...new URLSearchParams(location.search).keys()].some((name) => name !== 'register'))
+      return highlight(rows(), duration, wait);
+    focusOn(undefined, duration, wait);
   };
-  // Escape and the step-out button: up one hub at a time; from a language, or after a zoom by hand, the whole graph.
+  document.addEventListener('find:results', () => state === 'register' && apply(400, 300), { signal: teardown.signal });
+
+  // Up one hub at a time inside the expanded view; at the top, back to what the page shows.
   const stepUp = () => {
-    const up = focus && hubAbove(focus.key);
+    const up = focus?.key && hubAbove(focus.key);
     if (up) narrow(up);
-    else showAll();
+    else apply();
   };
 
-  if (!page) {
-    sigma.on('clickStage', () => focus && showAll());
-    document.addEventListener(
-      'keydown',
-      (event) => {
-        // Escape in the site search belongs to the search.
-        if (event.key !== 'Escape' || event.defaultPrevented) return;
-        if ((event.target as Element).closest('input, textarea, select, [contenteditable]')) return;
-        stepUp();
-      },
-      { signal: teardown.signal },
-    );
+  const expandButton = root.querySelector<HTMLButtonElement>('button[value="expand"]');
+  const setExpanded = (next: boolean) => {
+    if (next === expanded) return;
+    expanded = next;
+    root.classList.toggle('expanded', next);
+    expandButton?.setAttribute('aria-pressed', String(next));
+    if (!next) apply(0);
+  };
+
+  sigma.on('clickStage', () => expanded && focus && stepUp());
+  document.addEventListener(
+    'keydown',
+    (event) => {
+      // Escape in the site search belongs to the search.
+      if (!expanded || event.key !== 'Escape' || event.defaultPrevented) return;
+      if ((event.target as Element).closest('input, textarea, select, [contenteditable]')) return;
+      setExpanded(false);
+    },
+    { signal: teardown.signal },
+  );
+
+  // A row hovered or focused in the list names its dot; the camera stays, so the list does not set the graph moving.
+  const mark = (next: string | undefined) => {
+    if (next === marked || (next && !graph.hasNode(next))) return;
+    const previous = marked;
+    marked = next;
+    sigma.refresh({ partialGraph: { nodes: [previous, next].filter((key): key is string => Boolean(key)) } });
+  };
+  const rowAt = (target: EventTarget | null) =>
+    (target as Element | null)?.closest?.<HTMLElement>('main li[data-record]')?.dataset.record;
+  for (const [enter, leave] of [
+    ['pointerover', 'pointerout'],
+    ['focusin', 'focusout'],
+  ] as const) {
+    document.addEventListener(enter, (event) => mark(rowAt(event.target)), { signal: teardown.signal });
+    document.addEventListener(leave, (event) => rowAt((event as FocusEvent).relatedTarget) || mark(undefined), {
+      signal: teardown.signal,
+    });
   }
+
+  // Hidden, shown, expanded, docked or dragged: any new size of the frame is a resize, not only the window's.
+  // Debounced: a dragged column resizes every frame, and the graph settles once the drag stops.
+  let settling: ReturnType<typeof setTimeout> | undefined;
+  const sized = new ResizeObserver(() => {
+    clearTimeout(settling);
+    settling = setTimeout(() => sigma.resize(), 150);
+  });
+  sized.observe(container);
 
   // A new frame shape re-widens the square layout to it, and the camera fits the focus again.
   sigma.on('resize', () => {
     const widen = aspect();
     graph.updateEachNodeAttributes((_, attributes) => ({ ...attributes, x: attributes.square * widen }));
-    if (focus) fit(focus.frame, 0);
+    // The fit reads the drawn positions, so they are brought up to date first.
+    sigma.refresh();
+    if (focus?.frame.size) fit(focus.frame, 0);
   });
 
   const repaint = () => {
@@ -312,6 +389,7 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData, { rec
   import.meta.hot?.dispose(() => {
     teardown.abort();
     themeWatch.disconnect();
+    sized.disconnect();
     sigma.kill();
   });
 
@@ -321,7 +399,6 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData, { rec
     signal: teardown.signal,
   });
 
-  const camera = sigma.getCamera();
   root.querySelector<HTMLElement>('[data-graph-controls]')!.addEventListener(
     'click',
     (event) => {
@@ -329,7 +406,7 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData, { rec
       if (!button) return;
       if (button.value === 'in') camera.animatedZoom({ duration: 200 });
       if (button.value === 'out') camera.animatedUnzoom({ duration: 200 });
-      if (button.value === 'step') stepUp();
+      if (button.value === 'expand') setExpanded(!expanded);
       if (button.value === 'labels') {
         labels = !labels;
         button.setAttribute('aria-pressed', String(labels));
@@ -341,21 +418,13 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData, { rec
     { signal: teardown.signal },
   );
 
-  if (page) {
-    if (graph.hasNode(page)) around(page, 0);
-    return;
-  }
-  // /graph/#<id> opens on that record, as a hub's subtree when it is one; a record page's whole-graph link lands here,
-  // and a hash changed in an open tab moves the view without a reload. A hash naming nothing shows the whole graph.
-  const land = (duration: number) => {
-    let key = '';
-    try {
-      key = decodeURIComponent(location.hash.slice(1));
-    } catch {}
-    if (!graph.hasNode(key)) return focus && showAll();
-    if (isHub(key)) narrow(key, duration);
-    else around(key, duration);
+  return {
+    /** What the page asks the graph to show: a value of `data-graph-show` on <main>. Moves there unless `first`. */
+    show(next: string, first = false) {
+      state = next;
+      setExpanded(false);
+      mark(undefined);
+      apply(first ? 0 : 400);
+    },
   };
-  land(0);
-  window.addEventListener('hashchange', () => land(400), { signal: teardown.signal });
 }

@@ -1,6 +1,7 @@
 /**
- * The register's "built on" graph, laid out once per build for /graph/, for
- * /graph.json, and for each record page to ask whether it is in it.
+ * The register's "built on" graph, laid out once per build for /graph.json,
+ * for the old /graph/ address to forward, and for each record page to ask
+ * whether it is in it.
  */
 import { buildGraph, type GraphData as Drawing } from './graph';
 import { fieldOf, labelOf, slugOf } from './fields';
