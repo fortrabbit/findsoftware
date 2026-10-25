@@ -361,10 +361,10 @@ const runtimeMap = {
   'rust binary': 'binary',
   swift: 'binary',
 };
-// TypeScript compiles to JavaScript and shares its packages and runtimes, so the register keeps them as one value.
-// Languages held by fewer than five fact files share one value; Shell and Makefile stay unknown.
 // The HTML of a CSS kit is its language here; other HTML sites report no language.
 const cssKits = new Set(['flowbite', 'open-props']);
+// TypeScript compiles to JavaScript and shares its packages and runtimes, so the register keeps them as one value.
+// Languages held by fewer than five fact files share one value; Shell and Makefile stay unknown.
 const languageMap = {
   'c#': 'csharp',
   'c++': 'cpp',
