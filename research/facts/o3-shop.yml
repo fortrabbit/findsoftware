@@ -165,6 +165,21 @@ facts:
     checkedAt: "2026-10-20"
     via: "page"
     quote: "gemeinschaftlich betrieben von den nachfolgend genannten Stellen"
+  - field: dependentRepos
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/o3-shop%2Fo3-shop
+    checkedAt: 2026-10-25
+    via: api
+  - field: dependentPackages
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/o3-shop%2Fo3-shop
+    checkedAt: 2026-10-25
+    via: api
+  - field: packagistMonthlyDownloads
+    value: 31
+    url: https://packagist.org/packages/o3-shop/o3-shop/stats.json
+    checkedAt: 2026-10-25
+    via: api
 notFound: ["hqCountry", "firstRelease", "pricingPage", "paidEdition", "wikidata", "parent", "headlessApi", "sso", "livePreview", "userRoles", "endoflifeId", "npmName", "pluginDirectory", "multisite"]
 unreadable: []
 notes: "The legal notice names two parties as joint operators, xt:Commerce GmbH (Innsbruck, Austria) and Eric Jankowfsky, and both are recorded as stated. The homepage links the source as github.com/o3-shop/shop-ce, so that is the repository and the star count and contributors come from it. The composer project package o3-shop/o3-shop is the one the install docs name; its repository is github.com/o3-shop/o3-shop. The CSV lists 5.5k packagist downloads; the package the install docs name shows 1356 total on the date read, so the CSV figure is replaced. The requirements conflict: the installation page says PHP 8.0 or higher and MySQL 5.7+ or MariaDB 10.3+, the handbook says PHP 7.4 to 8.2 and MySQL 5.5 to 8.0; the composer.json of shop-ce requires ^7.4 || ^8.0, so runtimeMin follows the handbook and composer file. The project states a fork of OXID Community Edition 6.4.3 and the handbook names migration from OXID eShop; the copyright line credits OXID eSales AG. No ended signal was found; status stays accepted. The shop-ce repository was pushed on the date read."

@@ -185,7 +185,7 @@ facts:
   - field: wordpressActiveInstalls
     value: 7000000
     url: https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=woocommerce
-    checkedAt: 2026-10-18
+    checkedAt: 2026-10-25
     via: api
   - field: wordpressDownloads
     value: 469948211
@@ -227,6 +227,26 @@ facts:
     value: organization
     url: https://api.github.com/users/woocommerce
     checkedAt: 2026-10-20
+    via: api
+  - field: httpArchiveSites
+    value: 553677
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+    via: api
+  - field: dependentRepos
+    value: 150
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/woocommerce%2Fwoocommerce
+    checkedAt: 2026-10-25
+    via: api
+  - field: dependentPackages
+    value: 14
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/woocommerce%2Fwoocommerce
+    checkedAt: 2026-10-25
+    via: api
+  - field: packagistMonthlyDownloads
+    value: 1126
+    url: https://packagist.org/packages/woocommerce/woocommerce/stats.json
+    checkedAt: 2026-10-25
     via: api
 notFound: [hqCountry, forkOf, successorOf, adminUi, i18n, multisite, renderingModes, buildCommand, outputDir, deployTargets, docker, paidEditions, pricingPage, supportedVersions, endoflifeId, usageShare, pluginCount, starters, discord, subreddit, mastodon, bluesky, newsletter, npmName]
 unreadable: []

@@ -113,12 +113,6 @@ facts:
     url: https://github.com/Simply-Static/simply-static
     checkedAt: 2026-10-19
     via: api
-  - field: wordpressActiveInstalls
-    value: 30,000+
-    url: https://wordpress.org/plugins/simply-static/
-    checkedAt: 2026-10-19
-    via: page
-    quote: "Active installations 30,000+"
   - field: wordpressDownloads
     value: 2076212 total
     url: https://api.wordpress.org/plugins/info/1.0/simply-static.json
@@ -128,6 +122,11 @@ facts:
     value: organization
     url: https://api.github.com/users/Simply-Static
     checkedAt: 2026-10-20
+    via: api
+  - field: wordpressActiveInstalls
+    value: 30000
+    url: https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=simply-static
+    checkedAt: 2026-10-25
     via: api
 notFound: [hqCountry, maintainerType, parent, firstRelease, endoflifeId, pluginDirectory, pluginCount, starters, forum, discord, subreddit, mastodon, bluesky, x, newsletter, freeTier, adminUi, headlessApi, docker, npmName, packagistName, pypiDownloads, npmWeeklyDownloads, usageShare, databases, contentStore, multisite, sso, i18n, userRoles, serverNeeds]
 unreadable: []

@@ -98,12 +98,6 @@ facts:
     url: https://github.com/10up/ElasticPress
     checkedAt: 2026-10-19
     via: api
-  - field: wordpressActiveInstalls
-    value: 8,000+
-    url: https://wordpress.org/plugins/elasticpress/
-    checkedAt: 2026-10-19
-    via: page
-    quote: "Active installations 8,000+"
   - field: wordpressDownloads
     value: 1155259 total
     url: https://api.wordpress.org/plugins/info/1.0/elasticpress.json
@@ -113,6 +107,16 @@ facts:
     value: organization
     url: https://api.github.com/users/10up
     checkedAt: 2026-10-20
+    via: api
+  - field: httpArchiveSites
+    value: 725
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-25
+    via: api
+  - field: wordpressActiveInstalls
+    value: 8000
+    url: https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=elasticpress
+    checkedAt: 2026-10-25
     via: api
 notFound: [hqCountry, parent, firstRelease, endoflifeId, pluginDirectory, pluginCount, starters, forum, discord, subreddit, mastodon, bluesky, x, newsletter, paidEditions, pricingPage, adminUi, headlessApi, docker, deployTargets, npmName, packagistName, pypiDownloads, npmWeeklyDownloads, usageShare, databases, contentStore, multisite, sso, i18n, userRoles, serverNeeds]
 unreadable: []
