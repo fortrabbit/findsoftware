@@ -36,8 +36,8 @@ A fact file turns into a record once `fields.yml` exists: its field names map to
 
 Carried over from FindHost, and they apply to research data already:
 
-- **Nothing may rank, score, boost, weight or order by quality.** The default order is alphabetical.
-- **Adoption figures are data, never an order.** Stars, downloads and plugin counts are recorded, each with its date, and shown with the reasons they do not compare (About page, section "Adoption figures"). No sort, filter, facet or default order uses them. Validate fails an Adoption field with `facet` or `ordered`.
+- **Nothing may rank, score, boost, weight or order by quality.** The default order is alphabetical. The usage band (`src/lib/usage.ts`) is the single exception: it measures use, not quality, and appears only on the usage page and as graph dot size.
+- **Adoption figures are data, never an order.** Stars, downloads, dependent counts, plugin counts and site counts are recorded, each with its date, and shown with the reasons they do not compare (About page, section "Adoption figures"). No sort, filter, facet or default order uses them. The usage band is the one measure built from them, and it stays on the usage page and in graph dot size. Validate fails an Adoption field with `facet` or `ordered`.
 - **Absent means unknown.** Never guess, never infer, never default to a flattering value. A fact not found stays out of the file.
 - **Every fact carries its source**: a URL and the date it was read. `checkedAt` is a claim that the source was read on that date.
 - **Primary sources only.** The project's own site, repository, docs, or a registry API (GitHub, Packagist, npm, PyPI, RubyGems, endoflife.date). Directories, awesome lists and comparison sites are for discovering names, never a data source. One exception, for adoption figures only: ecosyste.ms (registry downloads, dependent package and repository counts) and HTTP Archive (site counts), which compute them from registry and crawl data no single project publishes.

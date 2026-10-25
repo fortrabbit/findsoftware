@@ -1,0 +1,75 @@
+---
+import Base from '../layouts/Base.astro';
+import ProviderRegister from '../components/ProviderRegister.astro';
+import { loadFacets } from '../lib/facets';
+import { licenceUrl, providerList, publisherRef, websiteRef } from '../lib/seo';
+import { loadBands } from '../lib/usage-data';
+
+/*
+ * The register grouped by usage band, top band first. Alphabetical inside each
+ * band, the order the register itself uses; no band orders the register.
+ */
+const { facets, providers } = await loadFacets();
+const bands = await loadBands();
+
+const groups = [5, 4, 3, 2, 1].map((band) => ({
+  band,
+  rows: providers.filter((provider) => bands.get(provider.id) === band),
+}));
+const unmeasured = providers.filter((provider) => !bands.has(provider.id));
+
+const origin = Astro.site?.origin ?? '';
+const description =
+  'Each record grouped by how much it is used, from the adoption figures it holds. A band says how many people use a project, not whether it is good.';
+---
+
+<Base
+  graph="rows"
+  title="Usage — FindSoftware"
+  description={description}
+  schema={[
+    {
+      '@type': 'CollectionPage',
+      url: `${origin}/usage/`,
+      name: 'Usage',
+      description,
+      inLanguage: 'en',
+      isPartOf: websiteRef(origin),
+      publisher: publisherRef(origin),
+      license: licenceUrl,
+      mainEntity: providerList(origin, providers),
+    },
+  ]}
+>
+  <h1>Usage</h1>
+
+  <p class="annotation">
+    Each record sits in a band from 1 to 5, from the adoption figures it holds: stars, downloads, dependents and sites.
+    Band 5 is the top fifth of the records that have any figure. A band counts use, not quality, and is rough. Records
+    with no figure are not measured. Details are on the <a href="/about/#adoption-figures">About page</a>.
+  </p>
+
+  {
+    groups.map((group) =>
+      group.rows.length > 0 ? (
+        <section>
+          <h2>Band {group.band}</h2>
+          <ProviderRegister providers={group.rows} facets={facets} bare />
+        </section>
+      ) : null,
+    )
+  }
+
+  {
+    unmeasured.length > 0 && (
+      <section>
+        <h2>Not measured</h2>
+        <ProviderRegister providers={unmeasured} facets={facets} bare />
+      </section>
+    )
+  }
+</Base>
+
+<script>
+  import '../scripts/find.ts';
+</script>

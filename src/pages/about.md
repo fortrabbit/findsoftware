@@ -19,13 +19,15 @@ FindSoftware lists the tools web creators build with: content management systems
 
 ## Adoption figures
 
-GitHub stars, package downloads and plugin counts are recorded because they show that people use a project. They do not compare across records:
+GitHub stars, package downloads and plugin counts are recorded because they show that people use a project. They do not compare across records on their own:
 
 - **Stars** count bookmarks, not use. They grow with a project's age and with attention on launch days, and they stay when a project is abandoned. Software hosted outside GitHub has none, and a repository holding several products shares one count.
 - **Downloads** include CI runs, mirrors and installs pulled in as a dependency of another package. Registries count different periods: npm per week, Packagist in total.
 - **Plugin counts** depend on what each directory lists: some include themes and abandoned entries, some do not.
 
-Each figure carries the date it was read. Nothing on this site sorts, filters or ranks by them.
+Each figure carries the date it was read. Nothing on this site sorts, filters or ranks by them, except the usage band below.
+
+The usage band on the [Usage](/usage/) page puts each record in one of five bands, from its place among the records holding each of its figures, averaged and cut into fifths. It is rough: the figures cover different periods, and a record with fewer figures rests on fewer of them. No band means not measured, not unused. The band counts use, not quality.
 
 ## Publisher
 

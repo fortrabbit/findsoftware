@@ -16,6 +16,8 @@ export interface GraphRecord {
   language?: string;
   basedOn?: string[];
   status?: string;
+  /** The usage band, 1 to 5, when the record holds adoption figures. */
+  band?: number;
   href: string;
 }
 
@@ -26,6 +28,7 @@ export interface GraphNode {
   x: number;
   y: number;
   href?: string;
+  band?: number;
 }
 
 /** What the browser receives, as /graph.json. */
@@ -156,6 +159,7 @@ export function buildGraph(
         x: round(at.get(id)![0]),
         y: round(at.get(id)![1]),
         href: record.href,
+        ...(record.band === undefined ? {} : { band: record.band }),
       };
     }),
   ];

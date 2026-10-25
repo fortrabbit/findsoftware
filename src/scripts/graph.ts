@@ -9,6 +9,7 @@ import Sigma from 'sigma';
 import { navigate } from 'astro:transitions/client';
 import { prefetch } from 'astro:prefetch';
 import type { GraphData } from '../lib/graph';
+import { dotScale } from '../lib/usage';
 
 export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
   const container = root.querySelector<HTMLElement>('[data-graph-canvas]')!;
@@ -59,7 +60,7 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
   // The build lays the graph out on a square; widening it to the frame fills a screen of any shape.
   const aspect = () => container.clientWidth / container.clientHeight || 1;
   const graph = new Graph();
-  for (const { key, kind, label, x, y, href } of nodes) {
+  for (const { key, kind, label, x, y, href, band } of nodes) {
     const tier: Tier = kind === 'language' ? 'language' : !isHub(key) ? 'leaf' : kind === 'root' ? 'root' : 'branch';
     graph.addNode(key, {
       square: x,
@@ -69,7 +70,7 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
       href,
       tier,
       color: colors.tier[tier],
-      size: { language: 7, root: 5.5, branch: 5, leaf: 4 }[tier],
+      size: { language: 7, root: 5.5, branch: 5, leaf: 4 }[tier] * dotScale(band),
       // Languages and hubs are named in the whole view; leaves on hover or with the toggle.
       forceLabel: tier !== 'leaf',
     });

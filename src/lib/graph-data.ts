@@ -7,6 +7,7 @@ import { buildGraph, type GraphData as Drawing } from './graph';
 import { fieldOf, labelOf, slugOf } from './fields';
 import { isListed, loadSoftware } from './providers';
 import { recordPath } from './paths';
+import { loadBands } from './usage-data';
 
 export interface GraphData extends Drawing {
   /** Every record drawn: the listed ones and the parents they bring along. */
@@ -17,6 +18,7 @@ let built: Promise<GraphData> | undefined;
 
 const make = async (): Promise<GraphData> => {
   const software = await loadSoftware();
+  const bands = await loadBands();
   const listed = new Set(software.filter(isListed).map((entry) => entry.id));
   const { nodes, edges } = buildGraph(
     software.map((entry) => ({
@@ -25,6 +27,7 @@ const make = async (): Promise<GraphData> => {
       language: entry.data.language,
       basedOn: entry.data.basedOn,
       href: recordPath(entry),
+      band: bands.get(entry.id),
     })),
     (record) => listed.has(record.id),
     (id) => ({
