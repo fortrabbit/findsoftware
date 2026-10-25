@@ -1,1 +1,0 @@
-Moodle is a learning platform that its [README](https://github.com/moodle/moodle/blob/v5.3.0/README.md) describes as free and open source software to download and run on the user's own web server. The README also names MoodleCloud as a hosting option from Moodle. The moodle.com site names Moodle Pty Ltd as owner of the Moodle trademarks.

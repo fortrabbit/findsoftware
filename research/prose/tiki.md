@@ -1,3 +1,0 @@
-Tiki Wiki CMS Groupware is a PHP application that combines a wiki, a content management system and groupware in one installation. The README lists wiki pages, trackers, file galleries, forums, blogs, articles and calendars among the built-in features.
-
-The files are unpacked into a document root served by a web server such as Apache, with the database in MySQL, and setup finishes in the browser. Administration runs through control panels. The Tiki Software Community Association, a not-for-profit organization registered in Ontario, Canada, is the maintainer, and the project is community-managed.

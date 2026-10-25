@@ -1,1 +1,0 @@
-MediaWiki is wiki software that its homepage describes as a collaboration and documentation platform. Its files are uploaded to a web server, and an installation script run in the browser sets up the wiki and the database that holds its content, as the [installation manual](https://www.mediawiki.org/wiki/Manual:Installing_MediaWiki) describes.

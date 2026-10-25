@@ -2,12 +2,12 @@
 layout: ../layouts/Article.astro
 title: Listing criteria
 published: 2026-10-18
-updated: 2026-10-22
+updated: 2026-10-25
 description: The five criteria a piece of software meets to be listed on FindSoftware, and where a record appears when it fails one.
 lead: What a project needs to be listed, and where its record goes when it falls short.
 ---
 
-1. **Used to build, run or extend a website or web app.** It serves HTTP, produces web output, or is a library, plugin or tool added to one. Software built on other software, such as a WordPress plugin or a Hugo theme, gets its own record.
+1. **Used to build or extend a website or web app.** A creator builds their own site or app with it, or adds it to one: a framework, CMS, generator, library or tool, or a service such as analytics, comments or search. A finished application that is only installed and used is out, such as a social network, a forum, a wiki engine, a learning platform or a status page. Software built on other software, such as a WordPress plugin or a Hugo theme, gets its own record.
 2. **Installable by the user.** Source code or a distributable is available.
 3. **Documented installation or deployment.** Install steps in the README count.
 4. **Not declared ended.** What counts as an end signal is under Defunct below.

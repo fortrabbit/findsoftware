@@ -1,1 +1,0 @@
-DokuWiki is a wiki engine written in PHP. Pages and uploaded media are stored as files under the data directory of an installation, and the project's composer manifest describes it as not requiring a database. To set it up, the files are copied to a web space with PHP and install.php is opened in a browser.
