@@ -17,7 +17,6 @@ runtime:
   - beam
 hosting:
   - elixir
-runtimeMin: beam 1.14
 basedOn:
   - phoenix
 contentStore:
@@ -65,9 +64,6 @@ sources:
     url: https://github.com/BeaconCMS/beacon
     checkedAt: 2026-10-23
   - field: runtime
-    url: https://hexdocs.pm/beacon/installation.html
-    checkedAt: 2026-10-23
-  - field: runtimeMin
     url: https://hexdocs.pm/beacon/installation.html
     checkedAt: 2026-10-23
   - field: basedOn

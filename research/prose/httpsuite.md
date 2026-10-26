@@ -1,0 +1,1 @@
+httpsuite is a Go library for parsing request bodies and path parameters, writing responses, and returning RFC 9457 problem details from HTTP handlers. It is installed with `go get` and used inside handlers, not run as a server of its own. Its validation adapter is a separate optional module.

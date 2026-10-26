@@ -1,0 +1,98 @@
+id: fw1
+name: FW/1
+status: accepted
+checkedAt: 2026-10-26
+description: Lightweight convention-over-configuration MVC framework for CFML applications, with support for REST APIs.
+facts:
+  - field: homepage
+    value: https://framework-one.github.io/
+    url: https://framework-one.github.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Framework One - is a family of small, lightweight, convention-over-configuration frameworks, primarily for CFML."
+  - field: repository
+    value: https://github.com/framework-one/fw1
+    url: https://api.github.com/repos/framework-one/fw1
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://framework-one.github.io/documentation/
+    url: https://framework-one.github.io/documentation/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Getting Started with FW/1"
+  - field: maintainer
+    value: Sean Corfield
+    url: https://github.com/framework-one/fw1/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2009-2024, Sean Corfield"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/framework-one
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: CFML
+    url: https://framework-one.github.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "primarily for CFML"
+  - field: categories
+    value: [framework]
+    url: https://framework-one.github.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "small, lightweight, convention-over-configuration frameworks"
+  - field: installMethod
+    value: CommandBox, box install fw1
+    url: https://framework-one.github.io/documentation/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "box install fw1"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/framework-one/fw1/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The use and distribution terms for this software are covered by the Apache Software License 2.0"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/framework-one/fw1/blob/develop/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: forum
+    value: https://groups.google.com/g/framework-one
+    url: https://framework-one.github.io/documentation/
+    checkedAt: 2026-10-26
+    via: page
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/framework-one/fw1/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2022-04-18
+    url: https://api.github.com/repos/framework-one/fw1/releases/latest
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: https://api.github.com/repos/framework-one/fw1/commits/2.0alpha
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 368
+    url: https://api.github.com/repos/framework-one/fw1
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 40
+    url: https://api.github.com/repos/framework-one/fw1/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [runtime, runsAs, renderingModes, pricingPage, paidEdition, adminUi, headlessApi, sso, i18n, userRoles, livePreview, importsFrom, databases, contentStore, basedOn, pluginDirectory, clojarsName, npmName, discord, x, bluesky, mastodon, newsletter, subreddit, parent, hqCountry, latestPrereleaseDate]
+unreadable: []
+notes: >
+  The homepage answers over https (the http address redirects to https), so the https address is linked. The Apache Software License 2.0 statement appears in the README and in the changelog entry "Clarified license (Apache Source License 2.0), added LICENSE file." The GitHub API reports the license as NOASSERTION, so no license fact is taken from it. The documentation page states "The FW/1 documentation is copyright (c) 2009-2018 Sean Corfield and is made available under Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)" for the documentation, not the software; it covers the documentation only, so it is no license entry for the software, which takes its license from the README and LICENSE. The project links its Google group as http://groups.google.com/group/framework-one/, which redirects to the https address recorded as forum. The docs list the requirements for 4.2 as Adobe ColdFusion 10 or later and Lucee 4.5.0 or later. The documentation page names Adobe ColdFusion and Lucee as the supported engines; no page states that they run on the JVM, so runtime is left out. The documentation says "FW/1 was created in July 2009"; the oldest tag is 2.0alpha dated 2011-08-14 and the oldest tag listing has no 1.x tags, so firstRelease is the tag year. The highest stable GitHub release is v4.3.0 dated 2022-04-18; the README's deploy badge names 4.3.2, and no 4.3.2 release or tag exists in the repository at read time. The last push to the default branch is dated 2024-07-15. The 4.x documentation is labelled "4.3 Documentation (beta)" on the documentation page. The repository is not archived. The CFML Slack channel is a chat link and not a recorded field.

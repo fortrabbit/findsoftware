@@ -1,0 +1,1 @@
+Helidon is a Java microservices framework whose web core runs on virtual threads. The Helidon CLI's `helidon init` command creates a quickstart project, which is built with Maven and run as a standalone JVM process.

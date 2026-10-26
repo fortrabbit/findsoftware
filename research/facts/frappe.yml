@@ -1,0 +1,220 @@
+id: frappe
+name: Frappe Framework
+status: accepted
+checkedAt: 2026-10-26
+description: Python and JavaScript low-code web framework for building data-driven web applications, with a built-in admin interface, roles and permissions.
+facts:
+  - field: homepage
+    value: https://frappe.io/framework
+    url: https://frappe.io/framework
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Frappe Framework makes it super easy to build such applications with a low code architecture."
+  - field: repository
+    value: https://github.com/frappe/frappe
+    url: https://api.github.com/repos/frappe/frappe
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://docs.frappe.io/framework
+    url: https://github.com/frappe/frappe/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Official documentation"
+  - field: forum
+    value: https://discuss.frappe.io/
+    url: https://github.com/frappe/frappe/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+  - field: x
+    value: https://twitter.com/frappetech
+    url: https://frappe.io/framework
+    checkedAt: 2026-10-26
+    via: page
+  - field: maintainer
+    value: Frappe Technologies Pvt. Ltd.
+    url: https://github.com/frappe/frappe/blob/develop/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2016-2021 Frappe Technologies Pvt. Ltd."
+  - field: hqCountry
+    value: IN
+    url: https://docs.frappe.io/legal/policies/privacy-policy
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Frappe is located in India"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/frappe
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/frappe/frappe
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [python, node]
+    url: https://docs.frappe.io/framework/user/en/installation
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Install nvm, node, and yarn"
+  - field: runtimeMin
+    value: "3.14"
+    url: https://github.com/frappe/frappe/blob/v16.53.0/pyproject.toml
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'requires-python = ">=3.14,<3.15"'
+  - field: installMethod
+    value: uv tool install frappe-bench, then bench init
+    url: https://docs.frappe.io/framework/user/en/installation
+    checkedAt: 2026-10-26
+    via: page
+    quote: "uv tool install frappe-bench"
+  - field: installMethod
+    value: Docker, docker compose with frappe_docker
+    url: https://github.com/frappe/frappe/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "docker compose -f pwd.yml up -d"
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.frappe.io/framework/user/en/bench/guides/setup-production
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Supervisor makes sure that the process that power the Frappe system keep running"
+  - field: categories
+    value: [framework, low-code]
+    url: https://github.com/frappe/frappe/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Low Code Web Framework For Real World Applications"
+  - field: templating
+    value: [jinja2]
+    url: https://docs.frappe.io/framework/user/en/api/jinja
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Render a jinja template string or file with context."
+  - field: headlessApi
+    value: [rest]
+    url: https://github.com/frappe/frappe/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Automatically generated RESTful API for all models"
+  - field: adminUi
+    value: yes
+    url: https://github.com/frappe/frappe/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Provides a pre-built, customizable admin dashboard for managing application data"
+  - field: userRoles
+    value: yes
+    url: https://github.com/frappe/frappe/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Comprehensive user and role management system to control access and permissions"
+  - field: databases
+    value: [mariadb]
+    url: https://github.com/frappe/frappe/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "uses Python and MariaDB on the server side"
+  - field: databases
+    value: [postgres]
+    url: https://docs.frappe.io/framework/user/en/installation
+    checkedAt: 2026-10-26
+    via: page
+    quote: "If you plan to use PostgreSQL instead of MariaDB"
+  - field: multisite
+    value: yes
+    url: https://frappe.io/framework/deployment
+    checkedAt: 2026-10-26
+    via: page
+    quote: "With Bench, you can easily create, manage, and deploy multiple sites on a single server."
+  - field: i18n
+    value: yes
+    url: https://docs.frappe.io/framework/user/en/guides/basics/translations
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Create a CSV file for each language in the translations folder."
+  - field: sso
+    value: [LDAP]
+    url: https://docs.frappe.io/framework/user/en/integration/ldap-integration
+    checkedAt: 2026-10-26
+    via: page
+    quote: "you will able to login to your frappe app by using your LDAP credentials"
+  - field: sso
+    value: [OIDC]
+    url: https://docs.frappe.io/framework/user/en/guides/integration/openid_connect_and_frappe_social_login
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Frappe also uses Open ID connect essential standard for authenticating users."
+  - field: pluginDirectory
+    value: https://frappecloud.com/marketplace
+    url: https://frappe.io/framework
+    checkedAt: 2026-10-26
+    via: page
+  - field: hostedOffering
+    value: Frappe Cloud
+    url: https://github.com/frappe/frappe/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "You can try Frappe Cloud"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/frappe/frappe
+    checkedAt: 2026-10-26
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/frappe/frappe/blob/develop/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/frappe/frappe/blob/develop/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The MIT License"
+  - field: firstRelease
+    value: "2013"
+    url: https://api.github.com/repos/frappe/frappe/releases?per_page=100
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 16
+    url: https://api.github.com/repos/frappe/frappe/releases?per_page=100
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-22
+    url: https://api.github.com/repos/frappe/frappe/releases/tags/v16.53.0
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 10999
+    url: https://api.github.com/repos/frappe/frappe
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 293
+    url: https://api.github.com/repos/frappe/frappe/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+  - field: pypiName
+    value: frappe-bench
+    url: https://pypi.org/pypi/frappe-bench/json
+    checkedAt: 2026-10-26
+    via: api
+  - field: pypiDownloads
+    value: 389351 (last month)
+    url: https://pypistats.org/api/packages/frappe-bench/recent
+    checkedAt: 2026-10-26
+    via: api
+notFound: [basedOn, pricingPage, paidEdition, parent, successorOf, forkOf, alternativeTo, renderingModes, contentStore, livePreview, importsFrom, endoflifeId, lastCommitDate, pluginCount, discord, subreddit, mastodon, bluesky, newsletter, wikidata, usageShare, reportedInstalls, selfHostOption, freeTier, apiLimits, regions]
+unreadable: []
+notes: >
+  The install docs name frappe-bench (the bench CLI that scaffolds and runs a Frappe bench), so pypiName and pypiDownloads come from that package. The CSV adoption note (pypi 1.1k/wk) does not match the frappe-bench figure of 389351 last month and is replaced. The homepage link is https://frappe.io/framework; the docs site is docs.frappe.io/framework. The current major is 16: the highest stable GitHub release is v16.53.0 (2026-10-22), and v15.124.0 is a lower major still in support. The first GitHub release is v3.2.0 (2013-12-12), the earliest in the releases list; the project itself dates from 2011 by repository creation, which is not a release. The installation page lists NodeJS 24 and Python 3.14 for v16 and develop, and the pyproject at the v16.53.0 tag requires Python >=3.14,<3.15; runtimeMin is taken from the tag. The README calls the framework the base of ERPNext, a finished application that is not a candidate here, so no basedOn parent is recorded. The README describes an MCP server; no feature page was read for it. endoflife.date has no frappe product, so no endoflifeId. The privacy policy names Frappe Technologies Pvt. Ltd. and India; the Frappe Cloud terms name Mumbai arbitration, which is not used for hqCountry. The deployment page of frappe.io says the host needs MariaDB, Redis and Socket.io, and the web-framework page lists a built-in CMS with file-based routing. The docs statements on rendering were not found, so renderingModes is unknown.
+  The README calls ERPNext the first application built on the framework and says the framework is built for it.
+  The production guide configures Supervisor and nginx on a server and says "Nginx is a web server and we use it to serve static files and proxy rest of the requests to frappe." The README says "Started in 2005, Frappe Framework was inspired by the Semantic Web." The Frappe Cloud hosted service is run by the same company.

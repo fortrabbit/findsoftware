@@ -16,7 +16,6 @@ runtime:
   - beam
 hosting:
   - elixir
-runtimeMin: beam 1.17
 databases:
   - postgres
   - sqlite
@@ -56,9 +55,6 @@ sources:
     url: https://github.com/ash-project/ash/blob/main/documentation/topics/about_ash/what-is-ash.md
     checkedAt: 2026-10-24
   - field: runtime
-    url: https://github.com/ash-project/ash/blob/v3.37.0/mix.exs
-    checkedAt: 2026-10-24
-  - field: runtimeMin
     url: https://github.com/ash-project/ash/blob/v3.37.0/mix.exs
     checkedAt: 2026-10-24
   - field: installMethod

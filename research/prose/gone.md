@@ -1,0 +1,1 @@
+Gone is a dependency injection framework for Go, and the gonectl scaffolding tool creates its projects. The README does not say whether the framework is used for web applications, so this record stays a stub until a reviewer settles that.

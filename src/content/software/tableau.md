@@ -15,7 +15,6 @@ runtime:
   - beam
 hosting:
   - elixir
-runtimeMin: beam 1.15
 templating: heex, temple, eex
 installMethod: mix archive, mix dependency
 licenseModel: open-source
@@ -49,9 +48,6 @@ sources:
     url: https://github.com/elixir-tools/tableau/blob/main/README.md
     checkedAt: 2026-10-23
   - field: runtime
-    url: https://github.com/elixir-tools/tableau/blob/main/mix.exs
-    checkedAt: 2026-10-23
-  - field: runtimeMin
     url: https://github.com/elixir-tools/tableau/blob/main/mix.exs
     checkedAt: 2026-10-23
   - field: installMethod

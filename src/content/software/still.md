@@ -14,7 +14,6 @@ firstRelease: 2020
 language: elixir
 runtime:
   - beam
-runtimeMin: beam 1.11
 templating: slime
 runsAs:
   - local
@@ -80,9 +79,6 @@ sources:
     checkedAt: 2026-10-23
   - field: runtime
     url: https://stillstatic.io/
-    checkedAt: 2026-10-23
-  - field: runtimeMin
-    url: https://hexdocs.pm/still/getting_started.html
     checkedAt: 2026-10-23
   - field: runsAs
     url: https://hexdocs.pm/still/getting_started.html

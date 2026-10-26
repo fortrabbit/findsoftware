@@ -641,10 +641,9 @@ for (const file of facts) {
   // The lowest version named, cut to what changes at most yearly: Node majors, PHP and Python minors.
   const runtimeMin = String(first('runtimeMin') ?? '').match(/(\d+)(?:\.(\d+))?/);
   if (runtimeMin) {
-    const name =
-      String(first('runtimeMin'))
-        .match(/^[a-z]+/i)?.[0]
-        ?.toLowerCase() ?? runtime[0];
+    const prefix = String(first('runtimeMin')).match(/^[a-z]+/i)?.[0]?.toLowerCase();
+    // An Elixir version is no BEAM version: only an OTP or Erlang release names the VM minimum.
+    const name = /^(otp|erlang)$/.test(prefix) ? 'beam' : runtime[0] === 'beam' && !prefix ? undefined : (prefix ?? runtime[0]);
     // Node before 4 numbered its release lines by the minor (0.8, 0.10), so a zero major keeps it.
     const minor = runtimeMin[2] !== undefined && (name !== 'node' || runtimeMin[1] === '0') ? `.${runtimeMin[2]}` : '';
     // Only a runtime the dictionary knows: a bare number, a Go or Rust toolchain or an ES level is not a runtime minimum.

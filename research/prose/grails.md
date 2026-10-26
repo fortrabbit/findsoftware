@@ -1,0 +1,3 @@
+Grails is a web application framework for the JVM, built on Spring Boot and used with the Apache Groovy language. Views can use GSP, JSON Views or Markup Views. GORM, its data access toolkit, has implementations for Hibernate (SQL), MongoDB, Cassandra and Neo4j, and an application without a data source block connects to an in-memory H2 database. The framework supports internationalization out of the box.
+
+An application can be packaged as a WAR file or run as a regular Java application. The Apache Software Foundation supports the project. The README points to plugins.grails.org for the plugins available to the framework.

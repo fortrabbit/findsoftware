@@ -1,0 +1,137 @@
+id: helidon
+name: Helidon
+status: accepted
+checkedAt: 2026-10-26
+description: Cloud-native open-source Java framework for writing microservices on a web core that runs on virtual threads.
+facts:
+  - field: homepage
+    value: https://helidon.io
+    url: https://helidon.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Helidon is a cloud-native"
+  - field: repository
+    value: https://github.com/helidon-io/helidon
+    url: https://api.github.com/repos/helidon-io/helidon
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://helidon.io/docs/core/v27/
+    url: https://helidon.io/docs/core/v27/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "You must have Java and Maven installed on your system to use Helidon."
+  - field: maintainer
+    value: Oracle and/or its affiliates
+    url: https://helidon.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright © 2018, 2026 Oracle and/or its affiliates."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/helidon-io
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/helidon-io/helidon
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://helidon.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Helidon is a cloud-native"
+  - field: runtime
+    value: [jvm]
+    url: https://helidon.io/docs/core/v27/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Helidon requires Java 27+."
+  - field: runtimeMin
+    value: "27"
+    url: https://helidon.io/docs/core/v27/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Helidon requires Java 27+."
+  - field: installMethod
+    value: helidon init (Helidon CLI), Maven
+    url: https://helidon.io/docs/core/v27/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "helidon init --batch -Dflavor=se -Dapp-type=quickstart"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/helidon-io/helidon
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: "27"
+    url: https://api.github.com/repos/helidon-io/helidon/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-20"
+    url: https://api.github.com/repos/helidon-io/helidon/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2018"
+    url: https://api.github.com/repos/helidon-io/helidon/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 3841
+    url: https://api.github.com/repos/helidon-io/helidon
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 95
+    url: https://api.github.com/repos/helidon-io/helidon/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+  - field: x
+    value: https://twitter.com/helidon_project
+    url: https://helidon.io/
+    checkedAt: 2026-10-26
+    via: page
+  - field: runsAs
+    value: ["always-on"]
+    url: https://helidon.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Helidon applications are standalone JVM processes"
+  - field: license
+    value: "Apache-2.0"
+    url: https://github.com/helidon-io/helidon/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Helidon is available under Apache License 2.0."
+  - field: mavenCoordinates
+    value: io.helidon.webserver:helidon-webserver
+    url: https://github.com/helidon-io/helidon/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Just use our Maven releases (GroupID `io.helidon`)."
+  - field: mavenCoordinates
+    value: io.helidon.webserver:helidon-webserver
+    url: https://repo1.maven.org/maven2/io/helidon/webserver/helidon-webserver/maven-metadata.xml
+    checkedAt: 2026-10-26
+    via: api
+  - field: databases
+    value: [mysql, mongodb]
+    url: https://helidon.io/docs/core/v27/raw/modules/dbclient.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "against a relational or non-relations databases (such as MySQL and MongoDB)"
+  - field: sso
+    value: [OIDC]
+    url: https://helidon.io/docs/core/v27/raw/guides/oidc.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Learn how to set up OpenID Connect (OIDC)"
+notFound: [basedOn, renderingModes, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, importsFrom, hqCountry, parent, alternativeTo, forkOf, successorOf, pluginDirectory, pluginCount, reportedInstalls, discord, bluesky, mastodon, newsletter, subreddit, wikidata, npmName, endoflifeId]
+unreadable: []
+notes: >
+  The homepage shows Helidon 27.0.0 and the docs for Helidon 27 state the Java 27 requirement; the GitHub release 27.0.1 is the highest stable release and sets currentMajor. The 4.x and 3.x release lines are published on the same repository with their own tags; the record follows the highest stable release, as the write rules say. The README names the Maven group id io.helidon; the web server artifact io.helidon.webserver:helidon-webserver is read from Maven Central's metadata. The X link is the project's homepage link without visible text, so it carries no quote. The homepage also links a community Slack (slack.helidon.io) and Stack Overflow tag; slack is not a field. The homepage describes Helidon applications as standalone JVM processes, which is the runsAs quote. The Oracle copyright holder name is recorded as the LICENSE and footer state it.

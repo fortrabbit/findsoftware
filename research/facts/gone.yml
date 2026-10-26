@@ -1,0 +1,91 @@
+id: gone
+name: Gone
+status: stub
+checkedAt: 2026-10-26
+description: Dependency injection framework for Go that wires components together through struct tags.
+facts:
+  - field: repository
+    value: https://github.com/gone-io/gone
+    url: https://api.github.com/repos/gone-io/gone
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/gone-io/gone/tree/main/docs
+    url: https://github.com/gone-io/gone/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "More Documents"
+  - field: maintainer
+    value: roc
+    url: https://raw.githubusercontent.com/gone-io/gone/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2017-2022 roc"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/gone-io
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/gone-io/gone
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/gone-io/gone/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "go install github.com/gone-io/gonectl@latest"
+  - field: installMethod
+    value: go install github.com/gone-io/gonectl@latest, then gonectl create
+    url: https://github.com/gone-io/gone/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "gonectl create myproject"
+  - field: categories
+    value: [dependency-injection]
+    url: https://github.com/gone-io/gone/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "lightweight dependency injection framework"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/gone-io/gone
+    checkedAt: 2026-10-26
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/gone-io/gone/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "released under the MIT License"
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/gone-io/gone/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2022"
+    url: https://api.github.com/repos/gone-io/gone/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2025-06-10
+    url: https://api.github.com/repos/gone-io/gone/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 131
+    url: https://api.github.com/repos/gone-io/gone
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/gone-io/gone/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, pricingPage, paidEdition, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, contentStore, databases, runsAs, renderingModes, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, packagistName, npmName, runtimeMin, outputDir]
+unreadable: []
+notes: >
+  In doubt on criterion 1 (used to build or extend a website or web app): the core README describes a dependency injection framework and names no HTTP server or web use, while the goner component library in the same organization ships a gin component; a reviewer settles it by reading the gonectl project template or the goner gin component documentation, then moves the status. The project's own site is not known: the CSV row has no homepage, the README links only its repository docs, and gone.io redirects to a domain sale page (atom.com), so no homepage is recorded. The license is stated twice: the GitHub license API reports MIT, and the README reads "released under the MIT License". The LICENSE copyright line names roc, recorded as the maintainer because it is the only name the project states. The docs folder holds the guides for injection, providers, lazy fill, circular dependencies and the v1-to-v2 update. The ecosystem component repository is github.com/gone-io/goner, not recorded as a fact. The README describes the project as a dependency injection framework and does not use "web" anywhere, so the categories value is taken from the README's own words.

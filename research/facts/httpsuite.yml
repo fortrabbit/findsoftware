@@ -1,0 +1,91 @@
+id: httpsuite
+name: httpsuite
+status: accepted
+checkedAt: 2026-10-26
+description: Go library for parsing HTTP requests, writing responses and returning RFC 9457 problem responses, with a stdlib-only core module.
+facts:
+  - field: repository
+    value: https://github.com/rluders/httpsuite
+    url: https://api.github.com/repos/rluders/httpsuite
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/rluders/httpsuite/blob/main/README.md
+    url: https://github.com/rluders/httpsuite/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "is a Go library for request parsing, response writing, and RFC 9457 problem responses"
+  - field: categories
+    value: [library]
+    url: https://github.com/rluders/httpsuite/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "is a Go library for request parsing, response writing, and RFC 9457 problem responses"
+  - field: maintainer
+    value: Ricardo Lüders
+    url: https://raw.githubusercontent.com/rluders/httpsuite/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2024 Ricardo Lüders"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/rluders
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/rluders/httpsuite
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [go binary]
+    url: https://github.com/rluders/httpsuite/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "is a Go library for request parsing, response writing, and RFC 9457 problem responses"
+  - field: installMethod
+    value: go get
+    url: https://github.com/rluders/httpsuite/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "go get github.com/rluders/httpsuite/v3"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/rluders/httpsuite
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/rluders/httpsuite/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2024"
+    url: https://api.github.com/repos/rluders/httpsuite/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/rluders/httpsuite/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-23
+    url: https://api.github.com/repos/rluders/httpsuite/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 43
+    url: https://api.github.com/repos/rluders/httpsuite
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/rluders/httpsuite/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, runtimeMin, outputDir, renderingModes, runsAs, npmName, packagistName]
+unreadable: []
+notes: >
+  No homepage is recorded: the CSV homepage is the pkg.go.dev reference page for the module, a Go documentation index rather than the project's own site, and the repository has no site of its own. The repository says it is a library used inside handlers, so no runsAs is recorded: the README shows no deployment, only go get and in-code use. The CSV scope changed on 2026-10-19 from boundary to accepted as a helper library; criterion 1 holds because the README describes it as a library for request parsing and response writing in HTTP handlers. The module path is github.com/rluders/httpsuite/v3; the validation adapter at github.com/rluders/httpsuite/validation/playground is a separate optional module the README names, and it is not recorded. The README names Chi, Gorilla Mux and net/http as the routers it works with; these are not recorded as basedOn because the project does not describe itself as built on them. There is no Go module download figure, so none is recorded. The GitHub contributors endpoint returns one contributor with no further page.

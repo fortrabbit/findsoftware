@@ -17,7 +17,6 @@ runtime:
   - beam
 hosting:
   - static
-runtimeMin: beam 1.8
 contentStore:
   - flat-file
 templating: eex
@@ -55,9 +54,6 @@ sources:
     url: https://api.github.com/repos/Dalgona/Serum
     checkedAt: 2026-10-23
   - field: runtime
-    url: https://dalgona.github.io/Serum/getting-started.html
-    checkedAt: 2026-10-23
-  - field: runtimeMin
     url: https://dalgona.github.io/Serum/getting-started.html
     checkedAt: 2026-10-23
   - field: category

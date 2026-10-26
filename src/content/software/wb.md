@@ -16,7 +16,6 @@ runtime:
   - beam
 hosting:
   - static
-runtimeMin: beam 1.11
 contentStore:
   - flat-file
 templating: eex
@@ -55,9 +54,6 @@ sources:
     checkedAt: 2026-10-23
   - field: runtime
     url: https://raw.githubusercontent.com/aerosol/wb/develop/mix.exs
-    checkedAt: 2026-10-23
-  - field: runtimeMin
-    url: https://raw.githubusercontent.com/aerosol/wb/develop/doc-food/docs/installation.md
     checkedAt: 2026-10-23
   - field: installMethod
     url: https://raw.githubusercontent.com/aerosol/wb/develop/doc-food/docs/installation.md

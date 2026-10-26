@@ -1,0 +1,133 @@
+id: fuego
+name: Fuego
+status: accepted
+checkedAt: 2026-10-26
+description: Go web framework for building APIs and web applications, generating OpenAPI documentation from handler code.
+facts:
+  - field: homepage
+    value: https://go-fuego.dev/
+    url: https://go-fuego.dev/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The framework for busy Go developers"
+  - field: repository
+    value: https://github.com/go-fuego/fuego
+    url: https://api.github.com/repos/go-fuego/fuego
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://go-fuego.dev/docs/
+    url: https://go-fuego.dev/docs/
+    checkedAt: 2026-10-26
+    via: page
+  - field: discord
+    value: https://discord.gg/9csuB6WNsq
+    url: https://github.com/go-fuego/fuego/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "https://discord.gg/9csuB6WNsq"
+  - field: maintainer
+    value: go-fuego
+    url: https://github.com/go-fuego/fuego/blob/main/LICENSE.txt
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2024 go-fuego"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/go-fuego
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/go-fuego/fuego
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/go-fuego/fuego/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Production-ready Go API framework generating OpenAPI documentation from code."
+  - field: runtimeMin
+    value: "1.22"
+    url: https://go-fuego.dev/docs/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Golang v1.22"
+  - field: installMethod
+    value: go mod init, go mod tidy, go run
+    url: https://go-fuego.dev/docs/tutorials/hello-world
+    checkedAt: 2026-10-26
+    via: page
+    quote: "go mod tidy"
+  - field: runsAs
+    value: [always-on]
+    url: https://go-fuego.dev/docs/internals/architecture
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The default net/http server that Fuego uses to listen for incoming requests."
+  - field: basedOn
+    value: [net/http]
+    url: https://github.com/go-fuego/fuego/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Fuego is built on top of `net/http`,"
+  - field: categories
+    value: [api-framework]
+    url: https://github.com/go-fuego/fuego/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Production-ready Go API framework generating OpenAPI documentation from code."
+  - field: templating
+    value: [go templates, templ, gomponents]
+    url: https://github.com/go-fuego/fuego/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Also empowers templating with `html/template`, `a-h/templ` and `maragudk/gomponents`"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/go-fuego/fuego
+    checkedAt: 2026-10-26
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/go-fuego/fuego/blob/main/LICENSE.txt
+    checkedAt: 2026-10-26
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/go-fuego/fuego/blob/main/LICENSE.txt
+    checkedAt: 2026-10-26
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2023"
+    url: https://api.github.com/repos/go-fuego/fuego/releases?per_page=100
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/go-fuego/fuego/releases?per_page=100
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-15
+    url: https://proxy.golang.org/github.com/go-fuego/fuego/@latest
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 1774
+    url: https://api.github.com/repos/go-fuego/fuego
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 68
+    url: https://api.github.com/repos/go-fuego/fuego/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+notFound: [pricingPage, paidEdition, parent, successorOf, forkOf, alternativeTo, headlessApi, adminUi, userRoles, sso, i18n, multisite, livePreview, importsFrom, contentStore, databases, renderingModes, endoflifeId, lastCommitDate, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, hostedOffering, selfHostOption, freeTier, apiLimits, regions, hqCountry, pypiName, npmName]
+unreadable: []
+notes: >
+  The highest stable GitHub release is v0.18.0 (2025-02-05), so currentMajor is 0. The Go proxy lists v0.21.0 (2026-09-15) as the latest version, which is the latestReleaseDate, and also lists v1.0.0 and v1.0.1, but go.mod retracts both ("Published accidentally", "Contains retractions only"), so currentMajor stays 0. The docs say Go 1.22 or above; go.mod at v0.18.0 names 1.23.3 and at v0.21.0 names 1.26.6, which the docs do not state. The Go module has no registry download figure. The site footer names "Fuego, Inc.", while LICENSE.txt names go-fuego; the LICENSE line is recorded as the maintainer. The README compares the framework with Chi, Gin, Fiber and Echo; that comparison is not recorded as alternativeTo because it is not a comparison page of the project. The Gin and Echo adaptors are documented on the docs site, and the README describes them as ways to generate OpenAPI for an existing server. The docs index page has no description sentence, so the docs value is recorded without a quote.
+  The README describes OpenAPI generation from code, routing with middleware and grouping, serialization of JSON, XML and HTML forms, validation through go-playground/validator, RFC 9457 error handling and html/template rendering.

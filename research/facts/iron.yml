@@ -1,0 +1,113 @@
+id: iron
+name: Iron
+status: accepted
+checkedAt: 2026-10-26
+description: High-level Rust web framework built on hyper, for extensible web applications.
+facts:
+  - field: repository
+    value: https://github.com/iron/iron
+    url: https://api.github.com/repos/iron/iron
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://docs.rs/iron
+    url: https://raw.githubusercontent.com/iron/iron/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The documentation is hosted"
+  - field: maintainer
+    value: Jonathan Reem
+    url: https://raw.githubusercontent.com/iron/iron/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "is the core maintainer and author of Iron"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/iron/iron
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/iron/iron
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [rust]
+    url: https://raw.githubusercontent.com/iron/iron/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "built in and for Rust"
+  - field: categories
+    value: [framework]
+    url: https://raw.githubusercontent.com/iron/iron/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "high level web framework built in and for Rust"
+  - field: basedOn
+    value: [hyper]
+    url: https://raw.githubusercontent.com/iron/iron/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "built on hyper"
+  - field: installMethod
+    value: cargo dependency
+    url: https://raw.githubusercontent.com/iron/iron/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "just add Iron to your"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/iron/iron
+    checkedAt: 2026-10-26
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/iron/iron/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: runsAs
+    value: [always-on]
+    url: https://raw.githubusercontent.com/iron/iron/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "can scale horizontally on more machines behind a load balancer"
+  - field: firstRelease
+    value: "2014"
+    url: https://crates.io/api/v1/crates/iron
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://crates.io/api/v1/crates/iron
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2019-08-14
+    url: https://crates.io/api/v1/crates/iron
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 6106
+    url: https://api.github.com/repos/iron/iron
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 130
+    url: https://api.github.com/repos/iron/iron/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateName
+    value: iron
+    url: https://crates.io/api/v1/crates/iron
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateDownloads
+    value: 2841975 total
+    url: https://crates.io/api/v1/crates/iron
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, adminUi, headlessApi, contentStore, databases, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, forum, subreddit, mastodon, bluesky, x, newsletter, chat, renderingModes, deployTargets, buildCommand, outputDir, hostedOffering, npmName, packagistName, pypiName]
+unreadable: []
+notes: >
+  The ironframework.io site named by the CSV does not resolve (DNS lookup fails), and no page of the project names a homepage (the README, Cargo.toml and the GitHub repository homepage field are empty of it), so no homepage is recorded. The last commit on master is 2021-03-12 (merge of a site link update); the last release is 0.6.1 on crates.io, 2019-08-14, and the repository has tags but no GitHub releases. The import moves a record with no release in four years to stub on its own, so the status stays accepted here. The README says no plugins or middleware are bundled with Iron and names separate repositories for routing, mounting, static file serving and logging. The README names IRC channels (#rust-webdev, #iron, #rust on the Mozilla network) for help; no chat URL is recorded. The LICENSE copyright line reads "Copyright (c) 2014 Iron Core Team", which differs from the maintainer named in the README; both are stated by the project, and the reviewer should decide which maintainer statement the record shows. The major is 0 because the highest stable release is 0.6.1. crateDownloads is the crates.io total of 2841975; the 90-day figure (184090 recent_downloads) is not recorded. The docs.rs page for the iron crate is the documentation the README names; its meta description reads "The main crate for Iron.".

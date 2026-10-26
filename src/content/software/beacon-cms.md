@@ -17,7 +17,6 @@ runtime:
   - beam
 hosting:
   - elixir
-runtimeMin: beam 1.14
 contentStore:
   - database
 databases:
@@ -54,9 +53,6 @@ sources:
     url: https://github.com/BeaconCMS/beacon/blob/main/README.md
     checkedAt: 2026-10-24
   - field: runtime
-    url: https://hexdocs.pm/beacon/installation.html
-    checkedAt: 2026-10-24
-  - field: runtimeMin
     url: https://hexdocs.pm/beacon/installation.html
     checkedAt: 2026-10-24
   - field: installMethod

@@ -1,0 +1,1 @@
+gorilla/mux is the router package of the Gorilla web toolkit, which the toolkit's homepage lists first among its packages. The package matches requests by host, path prefix, method, header, query value or a custom function, and subrouters let a group of routes share the same conditions. Routes can be named and their URLs built back from the registered patterns.

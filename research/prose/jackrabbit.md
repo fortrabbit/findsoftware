@@ -1,0 +1,3 @@
+Apache Jackrabbit is a Java implementation of the Content Repository for Java Technology API (JCR), a hierarchical content store with support for structured and unstructured content. Java code uses it through the JCR API, and the [standalone server](https://jackrabbit.apache.org/standalone-server.html) runs a repository from a single jar that is started with `java -jar`.
+
+The deployment models page describes three setups: a repository embedded in an application, a shared resource of an application server, and a repository server. The standalone server listens on localhost port 8080 once started. The configuration page says that most persistence managers store data in databases, which may have to be set up separately. The Apache Software Foundation maintains the project.

@@ -1,0 +1,133 @@
+id: go-zero
+name: go-zero
+status: accepted
+checkedAt: 2026-10-26
+description: Go web and RPC framework with code generation from API definitions, built-in resilience components and the goctl command-line tool.
+facts:
+  - field: homepage
+    value: https://go-zero.dev
+    url: https://go-zero.dev/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Build resilient microservices in Go with less code and more confidence"
+  - field: repository
+    value: https://github.com/zeromicro/go-zero
+    url: https://api.github.com/repos/zeromicro/go-zero
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/zeromicro/go-zero
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://go-zero.dev/guides/deployment/docker/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "compile to a single static binary"
+  - field: docs
+    value: https://go-zero.dev
+    url: https://go-zero.dev/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "go-zero Documentation"
+  - field: runtimeMin
+    value: "1.21"
+    url: https://go-zero.dev/getting-started/installation/golang/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "go-zero requires Go 1.21 or later"
+  - field: categories
+    value: [framework]
+    url: https://github.com/zeromicro/go-zero/blob/master/readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "a web and rpc framework with lots of builtin engineering practices"
+  - field: installMethod
+    value: go get
+    url: https://github.com/zeromicro/go-zero/blob/master/readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "go get -u github.com/zeromicro/go-zero"
+  - field: runsAs
+    value: [always-on]
+    url: https://go-zero.dev/guides/deployment/bare-metal/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "using nohup as a process daemon"
+  - field: databases
+    value: mysql
+    url: https://go-zero.dev/guides/database/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Connect and query MySQL"
+  - field: databases
+    value: mongodb
+    url: https://go-zero.dev/guides/database/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Connect and query MongoDB"
+  - field: databases
+    value: redis
+    url: https://go-zero.dev/guides/database/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Connect and query Redis"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/zeromicro/go-zero
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: Junfeng Wan
+    url: https://go-zero.dev/community/about/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Junfeng Wan (kevwan)"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/zeromicro
+    checkedAt: 2026-10-26
+    via: api
+  - field: discord
+    value: https://discord.gg/4JQvC5A4Fe
+    url: https://github.com/zeromicro/go-zero/blob/master/readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Join the chat via https://discord.gg/4JQvC5A4Fe"
+  - field: forum
+    value: https://github.com/zeromicro/go-zero/discussions
+    url: https://go-zero.dev/community/about/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "GitHub Discussions — Long-form Q&A and feature requests"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/zeromicro/go-zero/releases/tags/v1.10.3
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: 2020
+    url: https://api.github.com/repos/zeromicro/go-zero/releases/tags/v1.0.0
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-01
+    url: https://api.github.com/repos/zeromicro/go-zero/releases/tags/v1.10.3
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 33404
+    url: https://api.github.com/repos/zeromicro/go-zero
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 323
+    url: https://api.github.com/repos/zeromicro/go-zero/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [pricingPage, hqCountry, parent, forkOf, successorOf, alternativeTo, renderingModes, contentStore, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, hostedOffering, latestPrereleaseDate, usageShare, reportedInstalls, pluginDirectory, pluginCount, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId]
+unreadable: []
+notes: >
+  The repository holds goctl tags (tools/goctl/vX) next to the framework tags; the framework's newest stable tag is v1.10.3 (2026-08-01), and currentMajor and latestReleaseDate follow it. The goctl tools are part of the same repository and install docs, so goctl is described on the record, not split out. The LICENSE copyright line reads "Copyright (c) 2022 zeromicro"; the maintainer is the author named on the About page, and the account that owns the repository is the organization zeromicro. The docs at go-zero.dev describe the API definition language, goctl generation for many languages and a Kubernetes and Docker deployment path; only the bare-metal page states the daemon model, so runsAs is the bare-metal value. The MCP and AI tooling links in the README point to other repositories (ai-context, zero-skills, mcp-zero) that are not sources for this record. The README states that go-zero is listed in the CNCF Cloud Native Landscape; that listing is not a field here. The go-zero.dev docs are in English, Simplified Chinese and Korean; the i18n field describes the software's own multilingual support and is not set from documentation translations.

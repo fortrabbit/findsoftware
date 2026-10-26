@@ -1,0 +1,3 @@
+Goravel is a Go web application framework that provides routing, an ORM, validation, queues, events, cache and a console in one framework. Projects are created with the goravel installer, which runs `goravel new`, and when the application starts, the framework runs the HTTP server among the runners it starts automatically.
+
+The project's own comparison page sets Goravel side by side with Laravel and says that Goravel follows Laravel's structure. Templates for HTML responses are rendered by a view engine, and a localization module handles translation. Database drivers exist for MySQL, PostgreSQL, SQL Server and SQLite.

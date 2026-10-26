@@ -16,7 +16,6 @@ runtime:
   - beam
 hosting:
   - elixir
-runtimeMin: beam 1.15
 installMethod: Mix dependency, or escript installed with mix escript.install
 licenseModel: open-source
 license: Apache-2.0
@@ -43,9 +42,6 @@ sources:
     url: https://github.com/elixir-lang/ex_doc/blob/main/README.md
     checkedAt: 2026-10-23
   - field: runtime
-    url: https://github.com/elixir-lang/ex_doc/blob/main/README.md
-    checkedAt: 2026-10-23
-  - field: runtimeMin
     url: https://github.com/elixir-lang/ex_doc/blob/main/README.md
     checkedAt: 2026-10-23
   - field: installMethod
