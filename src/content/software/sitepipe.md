@@ -7,7 +7,7 @@ urls:
 category:
   - ssg
 description: Haskell static site generator for blogs and personal websites that renders loaded files through Mustache templates.
-status: active
+status: stub
 maintainer: Chris Penner
 maintainerType: individual
 firstRelease: 2017

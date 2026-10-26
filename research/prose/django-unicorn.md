@@ -1,0 +1,1 @@
+Unicorn is a reactive component framework for Django that adds interactive components to regular Django templates. It is built on Django, installed as a Python package with pip, and its components are written as Django templates and Python classes.

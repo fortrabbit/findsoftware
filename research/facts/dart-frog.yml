@@ -1,0 +1,115 @@
+id: dart-frog
+name: Dart Frog
+status: accepted
+checkedAt: 2026-10-26
+description: Minimalistic backend framework for Dart that builds routes and middleware on shelf and compiles production builds to a Docker image.
+facts:
+  - field: homepage
+    value: https://dart-frog.dev
+    url: https://dart-frog.dev/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A fast, minimalistic backend framework for Dart."
+  - field: repository
+    value: https://github.com/dart-frog-dev/dart_frog
+    url: https://api.github.com/repos/dart-frog-dev/dart_frog
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://dart-frog.dev/getting-started/
+    url: https://dart-frog.dev/getting-started/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Dart Frog provides a simple core with a small API surface area"
+  - field: discord
+    value: https://dart-frog.dev/discord
+    url: https://dart-frog.dev/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Join the growing Dart Frog community on Discord"
+  - field: maintainer
+    value: Very Good Ventures
+    url: https://raw.githubusercontent.com/dart-frog-dev/dart_frog/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2022 Very Good Ventures"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/dart-frog-dev
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Dart
+    url: https://api.github.com/repos/dart-frog-dev/dart_frog
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [dart]
+    url: https://dart-frog.dev/getting-started/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "In order to use Dart Frog you must have the"
+  - field: runtimeMin
+    value: "3.0"
+    url: https://dart-frog.dev/getting-started/
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'Dart Frog requires Dart ">=3.0.0 <4.0.0"'
+  - field: categories
+    value: [framework, backend]
+    url: https://github.com/dart-frog-dev/dart_frog/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A fast, minimalistic backend framework for Dart"
+  - field: basedOn
+    value: [shelf, mason]
+    url: https://github.com/dart-frog-dev/dart_frog/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Dart Frog is built on top of shelf and mason"
+  - field: installMethod
+    value: dart pub global activate
+    url: https://github.com/dart-frog-dev/dart_frog/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "dart pub global activate dart_frog_cli"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/dart-frog-dev/dart_frog/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2022"
+    url: https://pub.dev/api/packages/dart_frog
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/dart-frog-dev/dart_frog/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2025-11-03
+    url: https://pub.dev/api/packages/dart_frog
+    checkedAt: 2026-10-26
+    via: api
+  - field: pubName
+    value: dart_frog
+    url: https://pub.dev/api/packages/dart_frog
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 2273
+    url: https://api.github.com/repos/dart-frog-dev/dart_frog
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 44
+    url: https://api.github.com/repos/dart-frog-dev/dart_frog/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [runsAs, pricingPage, paidEdition, renderingModes, parent, forkOf, successorOf, alternativeTo, maintainerType, hqCountry, wikidata, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, packagistName, endoflifeId, supportedVersions, hosting, selfHostOption]
+unreadable: []
+notes: >
+  The homepage https://dart-frog.dev answers over https and is the project's own site; the CSV row lists the http address, which is not used. The repository is a monorepo: the README installs the dart_frog_cli package, and the framework is the dart_frog package on pub.dev. The major comes from the highest stable dart_frog_cli release (1.2.14), and the dart_frog framework package is also on major 1. The latestReleaseDate is the publish date of the dart_frog framework package (2025-11-03, v1.2.6); the dart_frog_cli package, which the install command names, was last published 2026-03-23. The pub figure recorded is the pubName only: pub.dev publishes a 30-day download count on its score endpoint, but the register records no pub download figure. The first pub.dev publish of dart_frog is 2022-05-23. The maintainer line on the LICENSE file and the README sentence both read Very Good Ventures; the company's legal notice pages were not reachable (the terms and privacy links return a 404 or redirect), and its about page states no headquarters, so no legal form or hqCountry is recorded. The runtime is recorded as dart. The docs' Dockerfile AOT-compiles the app to a native executable and starts it, but no page states how the server runs on a host, so runsAs is left out. The getting started page says the production build includes a Dockerfile so that the app can be deployed anywhere, and the deploy chapter has pages for Google Cloud Run, AWS App Runner, Digital Ocean App Platform, Clever Cloud and Railway. The page also says Dart Frog is inspired by remix.run, next.js and express.js. The language is recorded as Dart, which the import maps to other. The docs' Daemon page describes the IDE daemon and is not a hosting fact. The Discord link on the homepage is the only community channel recorded.

@@ -1,0 +1,131 @@
+id: cowboy
+name: Cowboy
+status: accepted
+checkedAt: 2026-10-26
+description: HTTP server for Erlang/OTP that provides routing, handlers, WebSocket, HTTP/2 and REST support.
+facts:
+  - field: homepage
+    value: https://ninenines.eu
+    url: https://ninenines.eu/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Small, fast, modern HTTP server."
+  - field: repository
+    value: https://github.com/ninenines/cowboy
+    url: https://api.github.com/repos/ninenines/cowboy
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://ninenines.eu/docs/en/cowboy/2.20/guide/
+    url: https://ninenines.eu/docs/en/cowboy/2.20/guide/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Cowboy 2.20 User Guide"
+  - field: maintainer
+    value: Loïc Hoguin
+    url: https://raw.githubusercontent.com/ninenines/cowboy/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2011-2026, Loïc Hoguin"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/ninenines
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Erlang
+    url: https://api.github.com/repos/ninenines/cowboy
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [http-server]
+    url: https://raw.githubusercontent.com/ninenines/cowboy/master/README.asciidoc
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Cowboy is a small, fast and modern HTTP server for Erlang/OTP."
+  - field: runtime
+    value: [erlang]
+    url: https://raw.githubusercontent.com/ninenines/cowboy/master/doc/src/guide/introduction.asciidoc
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Cowboy is developed for Erlang/OTP 27.0 and newer."
+  - field: runtimeMin
+    value: "27"
+    url: https://raw.githubusercontent.com/ninenines/cowboy/master/doc/src/guide/introduction.asciidoc
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Cowboy is developed for Erlang/OTP 27.0 and newer."
+  - field: installMethod
+    value: Erlang.mk dependency, DEPS = cowboy
+    url: https://raw.githubusercontent.com/ninenines/cowboy/master/doc/src/guide/getting_started.asciidoc
+    checkedAt: 2026-10-26
+    via: page
+    quote: "DEPS = cowboy"
+  - field: runsAs
+    value: [always-on]
+    url: https://raw.githubusercontent.com/ninenines/cowboy/master/doc/src/guide/getting_started.asciidoc
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Build and start the release, then open http://localhost:8080"
+  - field: license
+    value: ISC
+    url: https://raw.githubusercontent.com/ninenines/cowboy/master/doc/src/guide/introduction.asciidoc
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Cowboy uses the ISC License."
+  - field: license
+    value: ISC
+    url: https://api.github.com/repos/ninenines/cowboy
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/ninenines/cowboy/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Permission to use, copy, modify, and/or distribute this software for any"
+  - field: firstRelease
+    value: "2011"
+    url: https://api.github.com/repos/ninenines/cowboy/tags
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://hex.pm/api/packages/cowboy
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-08
+    url: https://hex.pm/api/packages/cowboy
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 7520
+    url: https://api.github.com/repos/ninenines/cowboy
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 120
+    url: https://api.github.com/repos/ninenines/cowboy/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: hexName
+    value: cowboy
+    url: https://hex.pm/api/packages/cowboy
+    checkedAt: 2026-10-26
+    via: api
+  - field: hexDownloads
+    value: 150875084 total
+    url: https://hex.pm/api/packages/cowboy
+    checkedAt: 2026-10-26
+    via: api
+  - field: discord
+    value: https://discord.gg/x25nNq2fFE
+    url: https://raw.githubusercontent.com/ninenines/cowboy/master/README.asciidoc
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Discord server"
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, maintainerType, databases, contentStore, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, endoflifeId, renderingModes, headlessApi, outputDir]
+unreadable: []
+notes: >
+  The project has no GitHub releases; its version tags run from 0.2.0 (commit of 2011-09-05) to 2.20.0, so firstRelease comes from the oldest tag and currentMajor, latestReleaseDate and the stable version come from the Hex package cowboy, which names 2.20.0 as latest stable. The first Hex upload is 1.0.0 of 2014-08-01, later than the tag. The README says Cowboy uses Ranch for managing connections; that is recorded as a dependency in the text and not as basedOn, since the project does not call Ranch its parent. The user guide's Erlang.mk and rebar examples and the release chapter are the install and run sources; the guide's getting started chapter uses relx for the release. The maintainer name is the copyright holder in LICENSE; the organization ninenines owns the repository. The site ninenines.eu serves over https and lists Cowboy, Cowlib, Erlang.mk, Gun and Ranch as projects of the same author. The introduction names HTTP/1.1, HTTP/2, WebSocket, Server-Sent Events and Webmachine-based REST as supported; these are not recorded as fields because the field list has no protocol list.

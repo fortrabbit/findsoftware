@@ -1,0 +1,1 @@
+Django Ninja is a web framework for building APIs with Django and Python type hints. It builds REST-style APIs, and is distributed on PyPI and maintained by the copyright holder named in its license file.

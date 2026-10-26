@@ -1,0 +1,1 @@
+django CMS is a content management system built on the Django framework. It gives editors a front-end toolbar on the site, supports multilingual content, and can run in a headless mode that serves content through a REST API instead of HTML pages. It is maintained by the django CMS Association, a non-profit.

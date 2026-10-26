@@ -1,0 +1,137 @@
+id: emmett
+name: Emmett
+status: accepted
+checkedAt: 2026-10-26
+description: Full-stack Python web framework designed with simplicity in mind.
+facts:
+  - field: homepage
+    value: https://emmett.sh
+    url: https://emmett.sh/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Emmett - the web framework for inventors"
+  - field: repository
+    value: https://github.com/emmett-framework/emmett
+    url: https://api.github.com/repos/emmett-framework/emmett
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://emmett.sh/docs
+    url: https://github.com/emmett-framework/emmett/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The documentation is available at"
+  - field: maintainer
+    value: Giovanni Barillari
+    url: https://raw.githubusercontent.com/emmett-framework/emmett/master/pyproject.toml
+    checkedAt: 2026-10-26
+    via: page
+    quote: '{ name = "Giovanni Barillari"'
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/emmett-framework
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/emmett-framework/emmett
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/emmett-framework/emmett/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Emmett is a full-stack Python web framework designed with simplicity in mind."
+  - field: runtime
+    value: [python]
+    url: https://raw.githubusercontent.com/emmett-framework/emmett/master/docs/installation.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "You will need Python version 3.9 or higher in order to get Emmett working."
+  - field: runtimeMin
+    value: "3.10"
+    url: https://pypi.org/pypi/emmett/json
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtimeMin
+    value: "3.9"
+    url: https://raw.githubusercontent.com/emmett-framework/emmett/master/docs/installation.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "You will need Python version 3.9 or higher in order to get Emmett working."
+  - field: installMethod
+    value: pip install emmett
+    url: https://raw.githubusercontent.com/emmett-framework/emmett/master/docs/installation.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "$ pip install emmett"
+  - field: license
+    value: BSD-3-Clause
+    url: https://raw.githubusercontent.com/emmett-framework/emmett/master/pyproject.toml
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'license = "BSD-3-Clause"'
+  - field: firstRelease
+    value: "2014"
+    url: https://api.github.com/repos/emmett-framework/emmett/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/emmett-framework/emmett/releases/latest
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-08
+    url: https://api.github.com/repos/emmett-framework/emmett/releases/latest
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 1239
+    url: https://api.github.com/repos/emmett-framework/emmett
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 23
+    url: https://api.github.com/repos/emmett-framework/emmett/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: pypiName
+    value: emmett
+    url: https://pypi.org/pypi/emmett/json
+    checkedAt: 2026-10-26
+    via: api
+  - field: pypiDownloads
+    value: 534 (last month)
+    url: https://pypistats.org/api/packages/emmett/recent
+    checkedAt: 2026-10-26
+    via: api
+  - field: databases
+    value: [sqlite, postgres, mysql, sqlserver, mongodb]
+    url: https://raw.githubusercontent.com/emmett-framework/emmett/master/docs/orm.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "This is the list of the supported database engines"
+  - field: templating
+    value: Renoir
+    url: https://raw.githubusercontent.com/emmett-framework/emmett/master/docs/templates.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Emmett provides the *Renoir* templating engine"
+  - field: i18n
+    value: yes, Severus engine
+    url: https://raw.githubusercontent.com/emmett-framework/emmett/master/docs/languages.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Emmett provides *Severus* as its integrated internationalization engine"
+  - field: runsAs
+    value: [always-on]
+    url: https://raw.githubusercontent.com/emmett-framework/emmett/master/docs/deployment.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "In order to run your application in production you can just use the included `serve` command"
+notFound: [maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, adminUi, headlessApi, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, renderingModes, contentStore]
+unreadable: []
+notes: >
+  The README and installation page say Python 3.9 or higher; the pyproject.toml of the 2.8.2 release and the PyPI metadata say requires-python >=3.10. Both are recorded as separate runtimeMin entries, the PyPI one first, and the docs and registry disagree. The docs site emmett.sh/docs renders with JavaScript and its pages were not read there; the docs were read from the docs folder of the repository. The included server is Granian, named in the deployment page; it is not recorded as a field. Auth creates AuthGroup and AuthPermission tables (auth.md); no userRoles fact is recorded because the docs do not name roles. The PyPI download figure is the last_month value from pypistats.org. The README says Emmett is released under the BSD License, with the contents of the validators and libs folders included under their original licenses. The license is BSD-3-Clause in pyproject.toml and LICENSE, with the copyright line in LICENSE naming Giovanni Barillari. The first GitHub release is v0.1.7 (2014-12-18).

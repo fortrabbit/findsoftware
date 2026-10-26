@@ -1,0 +1,1 @@
+Cuba is a Ruby microframework for web development, installed as a gem. The README says it was originally inspired by Rum, a mapper for Rack applications, and lists ERB, Haml, Sass and CoffeeScript among the template engines an app can render with.

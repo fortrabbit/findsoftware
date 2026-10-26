@@ -1,0 +1,133 @@
+id: crow
+name: Crow
+status: accepted
+checkedAt: 2026-10-26
+description: C++ microframework for building HTTP and WebSocket web services, with routing, JSON, templates and middleware.
+facts:
+  - field: homepage
+    value: https://crowcpp.org
+    url: https://crowcpp.org/master/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A Fast and Easy to use microframework for the web."
+  - field: repository
+    value: https://github.com/CrowCpp/Crow
+    url: https://api.github.com/repos/CrowCpp/Crow
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://crowcpp.org/master/
+    url: https://crowcpp.org/master/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Crow is a C++ framework for creating HTTP or Websocket web services."
+  - field: maintainer
+    value: CrowCpp
+    url: https://raw.githubusercontent.com/CrowCpp/Crow/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "2020-2022, CrowCpp"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/CrowCpp
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: C++
+    url: https://api.github.com/repos/CrowCpp/Crow
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [micro-framework]
+    url: https://crowcpp.org/master/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A Fast and Easy to use microframework for the web."
+  - field: runtime
+    value: [binary]
+    url: https://crowcpp.org/master/getting_started/setup/linux/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "C++ compiler with at least C++17 support."
+  - field: installMethod
+    value: single header crow_all.h, or CMake, or a package manager
+    url: https://crowcpp.org/master/getting_started/setup/linux/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "You can also download the crow_all.h file and simply include that into your project."
+  - field: installMethod
+    value: AUR package crow (Arch)
+    url: https://crowcpp.org/master/getting_started/setup/linux/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Crow is available for Arch based distros through the AUR package"
+  - field: installMethod
+    value: Homebrew, brew install crow
+    url: https://crowcpp.org/master/getting_started/setup/macos/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "brew install crow"
+  - field: installMethod
+    value: vcpkg, vcpkg install crow
+    url: https://crowcpp.org/master/getting_started/setup/windows/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "vcpkg install crow"
+  - field: templating
+    value: [mustache]
+    url: https://crowcpp.org/master/guides/templating/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Templating (Mustache)"
+  - field: runsAs
+    value: [always-on]
+    url: https://crowcpp.org/master/guides/syste/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "In order to have Systemd recognize your application, you need to create a .service file"
+  - field: license
+    value: BSD-3-Clause
+    url: https://raw.githubusercontent.com/CrowCpp/Crow/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "BSD 3-Clause License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/CrowCpp/Crow/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "BSD 3-Clause License"
+  - field: firstRelease
+    value: "2017"
+    url: https://api.github.com/repos/CrowCpp/Crow/tags
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/CrowCpp/Crow/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-07
+    url: https://api.github.com/repos/CrowCpp/Crow/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-10-03
+    url: https://api.github.com/repos/CrowCpp/Crow/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 5016
+    url: https://api.github.com/repos/CrowCpp/Crow
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 176
+    url: https://api.github.com/repos/CrowCpp/Crow/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, maintainerType, databases, contentStore, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, endoflifeId, renderingModes, headlessApi, outputDir, runtimeMin]
+unreadable: []
+notes: >
+  The LICENSE file in the repository says BSD 3-Clause; the documentation page at crowcpp.org/master/ carries the MIT permission text inside an HTML comment without naming a license, so no MIT entry is recorded. GitHub reports NOASSERTION for the repository. The project's homepage at https://crowcpp.org redirects to /master/, where the documentation and the homepage text are. The home page's chat link goes to gitter.im/crowfork/community, which is not a field here. The setup page requires a C++17 compiler and Asio headers 1.28 to 1.30; runtimeMin is left out because C++17 is a compiler standard, not a runtime version. The GitHub release v1.3.5 is a prerelease dated 2026-10-03, newer than the stable v1.3.4, so it is recorded as latestPrereleaseDate. The tags start at v0.1 (commit of 2017-09-17), earlier than the repository creation in 2018. The guides page for systemd is the source for always-on: it describes a Crow application as a program that a systemd service unit starts.

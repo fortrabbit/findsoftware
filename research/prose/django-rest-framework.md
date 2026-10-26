@@ -1,0 +1,1 @@
+Django REST framework is a toolkit for building Web APIs, added to a Django project as an app: the README tells users to add "rest_framework" to the INSTALLED_APPS setting. Its community discussion runs through a Google Group.

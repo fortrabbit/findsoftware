@@ -1,0 +1,121 @@
+id: flamingo
+name: Flamingo
+status: accepted
+checkedAt: 2026-10-26
+description: Go web framework for building modular, pluggable web applications and microservices.
+facts:
+  - field: homepage
+    value: https://www.flamingo.me
+    url: https://www.flamingo.me/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Flamingo is a performant open source framework based on Go."
+  - field: repository
+    value: https://github.com/i-love-flamingo/flamingo
+    url: https://api.github.com/repos/i-love-flamingo/flamingo
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://docs.flamingo.me
+    url: https://github.com/i-love-flamingo/flamingo/blob/master/Readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "read the documentation under docs.flamingo.me"
+  - field: maintainer
+    value: AOE GmbH
+    url: https://github.com/i-love-flamingo/flamingo/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2020 AOE GmbH"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/i-love-flamingo
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/i-love-flamingo/flamingo
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [go binary]
+    url: https://github.com/i-love-flamingo/flamingo/blob/master/docs/1.%20Flamingo%20Basics/5.%20Flamingo%20Production.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "build/compile a standalone binary without any external dependencies"
+  - field: installMethod
+    value: go mod init, then go run main.go
+    url: https://github.com/i-love-flamingo/flamingo/blob/master/docs/0.%20Introduction/1.%20Getting%20Started.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "the first time this will download and pin all necessary dependencies"
+  - field: categories
+    value: [web-framework]
+    url: https://github.com/i-love-flamingo/flamingo/blob/master/Readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Flamingo is a web framework based on Go."
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/i-love-flamingo/flamingo
+    checkedAt: 2026-10-26
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/i-love-flamingo/flamingo/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: templating
+    value: [go templates, pug]
+    url: https://github.com/i-love-flamingo/flamingo/blob/master/Readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Flexible templating engines. (gotemplates and pugtemplates)"
+  - field: i18n
+    value: yes
+    url: https://github.com/i-love-flamingo/flamingo/blob/master/Readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Localisation support"
+  - field: renderingModes
+    value: [server]
+    url: https://github.com/i-love-flamingo/flamingo/blob/master/Readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "pugtemplate template engine for server side rendering"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/i-love-flamingo/flamingo/blob/master/Readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Default serve command - starts on Port 3322"
+  - field: githubStargazers
+    value: 561
+    url: https://api.github.com/repos/i-love-flamingo/flamingo
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 37
+    url: https://api.github.com/repos/i-love-flamingo/flamingo/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2018"
+    url: https://api.github.com/repos/i-love-flamingo/flamingo/commits/v2.0.0
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/i-love-flamingo/flamingo/releases?per_page=100
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-21
+    url: https://api.github.com/repos/i-love-flamingo/flamingo/releases?per_page=100
+    checkedAt: 2026-10-26
+    via: api
+notFound: [hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pricingPage, paidEdition, adminUi, runtimeMin, headlessApi, contentStore, databases, multisite, livePreview, userRoles, sso, importsFrom, usageShare, reportedInstalls, npmName, pypiName, packagistName]
+unreadable: []
+notes: >
+  The homepage names two products: Flamingo (this record) and Flamingo Commerce, which the README lists under its ecosystem as a separate repository (i-love-flamingo/flamingo-commerce) and which the homepage presents as built on Flamingo Core; that repository has no record here. The README's Gophers Slack channel and mailing address have no field. The homepage's Twitter link points to the AOE People account, not to a project account, so no x value is recorded. The README names Dingo for dependency injection and describes the module concept as "based on Dingo"; no basedOn is recorded because the README does not name Dingo as the framework the project is built on. The docs pages for localization and gotemplate answer 404 on master, so the README's feature list is the source for i18n and templating. The go.mod directive at the v3.17.5 tag reads go 1.26.0, but no docs page states a minimum Go version (the Getting Started page still says "Go >= 1.13"), so runtimeMin is left out. The docs site docs.flamingo.me is the documentation the README names. firstRelease is the oldest tag v2.0.0 (2018-06-18); the repository was created 2019-04-02.

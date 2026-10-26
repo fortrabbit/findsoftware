@@ -1,0 +1,111 @@
+id: cppcms
+name: CppCMS
+status: accepted
+checkedAt: 2026-10-26
+description: C++ web development framework for building web applications and web services, served by its own HTTP, FastCGI or SCGI front end.
+facts:
+  - field: repository
+    value: https://github.com/artyom-beilis/cppcms
+    url: https://api.github.com/repos/artyom-beilis/cppcms
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: Artyom Beilis
+    url: https://raw.githubusercontent.com/artyom-beilis/cppcms/master/COPYING.TXT
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (C) 2008-2018 Artyom Beilis (Tonkikh)"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/artyom-beilis
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: C++
+    url: https://api.github.com/repos/artyom-beilis/cppcms
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: http://cppcms.com/wikipp/en/page/main
+    checkedAt: 2026-10-26
+    via: page
+    quote: "CppCMS is a Free High Performance Web Development Framework"
+  - field: runtime
+    value: [binary]
+    url: http://cppcms.com/wikipp/en/page/cppcms_1x_build
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Modern C++ Compiler"
+  - field: installMethod
+    value: CMake build, then make install
+    url: http://cppcms.com/wikipp/en/page/cppcms_1x_build
+    checkedAt: 2026-10-26
+    via: page
+    quote: "make install"
+  - field: runsAs
+    value: [always-on]
+    url: http://cppcms.com/wikipp/en/page/cppcms_1x_tut_hello
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The run() function exits when the process receives"
+  - field: templating
+    value: [CppCMS template language]
+    url: http://cppcms.com/wikipp/en/page/cppcms_1x_tut_hello_templates
+    checkedAt: 2026-10-26
+    via: page
+    quote: "CppCMS's web pages are written in a special template language"
+  - field: i18n
+    value: yes
+    url: http://cppcms.com/wikipp/en/page/cppcms_1x
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Internationalization and Localization"
+  - field: license
+    value: MIT
+    url: http://cppcms.com/wikipp/en/page/main
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Starting from version 1.2 it is available under MIT license."
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/artyom-beilis/cppcms/master/COPYING.TXT
+    checkedAt: 2026-10-26
+    via: page
+    quote: "under the terms of the MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/artyom-beilis/cppcms/master/MIT.TXT
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: firstRelease
+    value: "2010"
+    url: http://cppcms.com/wikipp/en/page/releases_1x
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Released: 2010-06-24"
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/artyom-beilis/cppcms/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2025-11-02
+    url: https://api.github.com/repos/artyom-beilis/cppcms/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 528
+    url: https://api.github.com/repos/artyom-beilis/cppcms
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 6
+    url: https://api.github.com/repos/artyom-beilis/cppcms/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, docs, basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, maintainerType, contentStore, databases, adminUi, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, endoflifeId, renderingModes, headlessApi, outputDir, runtimeMin]
+unreadable: []
+notes: >
+  The project's site answers only over plain http (http://cppcms.com serves the wiki; https://cppcms.com does not connect), so no homepage and no docs link are recorded; the wiki pages are cited over http as sources. The home page labels the 2.x.x line as stable. The home page labels the 2.x.x line as stable and links it to the page titled "CppCMS 1.x.x - Stable"; the documentation page's own title says 1.x.x, so the version is taken from the GitHub release v2.0.1 (2025-11-02), the highest stable. GitHub reports the license as NOASSERTION; the repository's COPYING.TXT and MIT.TXT state MIT, and the project's home page says MIT from version 1.2 on, so licenses before 1.2 are not stated and not recorded. The build page lists a C++ compiler, zlib and PCRE as mandatory and ICU and gcrypt or OpenSSL as recommended; these are not recorded as databases or fields. The project describes itself as a framework and not as a CMS, so categories is framework. The project has no package in a registry in the sources read. The first version in the changelog with a date is 0.99.1 of 2010-06-24; the GitHub tags start at v1.0.5 of 2014, so the changelog date is used.

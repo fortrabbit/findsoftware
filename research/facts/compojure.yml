@@ -1,0 +1,125 @@
+id: compojure
+name: Compojure
+status: accepted
+checkedAt: 2026-10-26
+description: Routing library for Ring that composes Clojure web applications from small, independent route definitions.
+facts:
+  - field: repository
+    value: https://github.com/weavejester/compojure
+    url: https://api.github.com/repos/weavejester/compojure
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/weavejester/compojure/wiki
+    url: https://raw.githubusercontent.com/weavejester/compojure/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "[Wiki](https://github.com/weavejester/compojure/wiki)"
+  - field: forum
+    value: https://groups.google.com/group/compojure
+    url: https://raw.githubusercontent.com/weavejester/compojure/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "[Google Group](http://groups.google.com/group/compojure)"
+  - field: maintainer
+    value: James Reeves
+    url: https://raw.githubusercontent.com/weavejester/compojure/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright © 2025 James Reeves"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/weavejester/compojure
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [library]
+    url: https://raw.githubusercontent.com/weavejester/compojure/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A small routing library for"
+  - field: basedOn
+    value: [ring]
+    url: https://raw.githubusercontent.com/weavejester/compojure/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "routing library for [Ring][1]"
+  - field: language
+    value: clojure
+    url: https://api.github.com/repos/weavejester/compojure
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/weavejester/compojure/wiki/PaaS-Platforms
+    checkedAt: 2026-10-26
+    via: page
+    quote: "you can run them on Java PaaS"
+  - field: installMethod
+    value: Maven dependency in deps.edn or Leiningen project
+    url: https://raw.githubusercontent.com/weavejester/compojure/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Add the following dependency to your deps.edn file"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/weavejester/compojure/wiki/PaaS-Platforms
+    checkedAt: 2026-10-26
+    via: page
+    quote: "you can run them on Java PaaS"
+  - field: license
+    value: EPL-1.0
+    url: https://api.github.com/repos/weavejester/compojure
+    checkedAt: 2026-10-26
+    via: api
+  - field: license
+    value: Eclipse Public License
+    url: https://raw.githubusercontent.com/weavejester/compojure/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Distributed under the Eclipse Public License, the same as Clojure."
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/weavejester/compojure/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Distributed under the Eclipse Public License"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/weavejester/compojure/tags
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2025-09-15
+    url: https://api.github.com/repos/weavejester/compojure/commits/1.7.2
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2009"
+    url: https://api.github.com/repos/weavejester/compojure/commits/0.1.0
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 4114
+    url: https://api.github.com/repos/weavejester/compojure
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 36
+    url: https://api.github.com/repos/weavejester/compojure/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+  - field: clojarsName
+    value: compojure/compojure
+    url: https://clojars.org/api/artifacts/compojure/compojure
+    checkedAt: 2026-10-26
+    via: api
+  - field: clojarsDownloads
+    value: 19656763
+    url: https://clojars.org/api/artifacts/compojure/compojure
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, renderingModes, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, runtimeMin, outputDir]
+unreadable: []
+notes: >
+  No homepage: the GitHub homepage field is empty and the API documentation at http://weavejester.github.io/compojure is served over plain http only, so it is not linked (homepage is in notFound). The repository has no GitHub releases; the highest stable version is the tag 1.7.2, which Clojars also lists as latest_version, so currentMajor and latestReleaseDate come from the tag. The Clojars figure is the artifact's total downloads across all versions, read on 2026-10-26. The project's Clojars listing gives no upload dates, so firstRelease is the date of the oldest tag, 0.1.0. The README and the wiki Getting Started page name Ring and the web application; basedOn Ring is the parent the README states. The category is recorded as library, the scope note's routing library. Clojure 1.9.0 appears as a build dependency only, not as a stated runtime requirement, so runtimeMin is not recorded. The repository has a second license statement in project.clj ("Eclipse Public License", same as the README); both are recorded. Last push 2025-09-15; not archived; no end statement found.

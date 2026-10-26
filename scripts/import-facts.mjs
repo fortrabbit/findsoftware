@@ -352,6 +352,8 @@ const runtimeMap = {
   haskell: 'binary',
   'jvm (bundled openjdk)': 'jvm',
   native: 'binary',
+  nim: 'binary',
+  ocaml: 'binary',
   'node (npm wrapper)': 'node',
   'pascal binary': 'binary',
   'php (embedded in go binary)': 'binary',

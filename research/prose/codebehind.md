@@ -1,0 +1,3 @@
+CodeBehind Framework is a full-stack web framework that runs under ASP.NET Core and is installed from NuGet into an ASP.NET Core project. Its pages are aspx files that take Razor or standard syntax and can follow an MVC pattern, a model-view pattern, a controller-view pattern, or a view-only pattern. A project wires it in from Program.cs with an AddCodeBehind call and a UseCodeBehind call. The README calls it an alternative to ASP.NET Core and says it can also be used with Razor Pages and ASP.NET Core MVC.
+
+The [how-to guide](https://github.com/elanatframework/CodeBehind/blob/elanat_framework/doc/how_to_use_code_behind.md) walks through a Visual Studio setup.

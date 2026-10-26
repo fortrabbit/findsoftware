@@ -14,6 +14,8 @@ maintainer: The XHTMLBoy
 maintainerType: individual
 firstRelease: 2023
 language: other
+runtime:
+  - binary
 hosting:
   - static
 runsAs:
@@ -44,6 +46,9 @@ sources:
     checkedAt: 2026-10-23
   - field: language
     url: https://api.github.com/repos/xhtmlboi/yocaml
+    checkedAt: 2026-10-23
+  - field: runtime
+    url: https://yocaml.github.io/tutorial/setup.html
     checkedAt: 2026-10-23
   - field: category
     url: https://raw.githubusercontent.com/xhtmlboi/yocaml/main/README.md

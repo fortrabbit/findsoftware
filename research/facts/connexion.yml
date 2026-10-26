@@ -1,0 +1,117 @@
+id: connexion
+name: Connexion
+status: accepted
+checkedAt: 2026-10-26
+description: Python framework that builds an API from an OpenAPI or Swagger specification and validates requests and responses against it.
+facts:
+  - field: homepage
+    value: https://connexion.readthedocs.io/en/latest/
+    url: https://github.com/spec-first/connexion
+    checkedAt: 2026-10-26
+    via: api
+  - field: repository
+    value: https://github.com/spec-first/connexion
+    url: https://api.github.com/repos/spec-first/connexion
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://connexion.readthedocs.io/en/latest/
+    url: https://raw.githubusercontent.com/spec-first/connexion/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Explore the docs"
+  - field: maintainer
+    value: Robbe Sneyders and Ruwan Lambrichts
+    url: https://raw.githubusercontent.com/spec-first/connexion/main/NOTICE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright 2021 Robbe Sneyders Copyright 2021 Ruwan Lambrichts"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/spec-first
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://raw.githubusercontent.com/spec-first/connexion/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Connexion is a modern Python web framework"
+  - field: language
+    value: python
+    url: https://api.github.com/repos/spec-first/connexion
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://raw.githubusercontent.com/spec-first/connexion/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Connexion is a modern Python web framework"
+  - field: runtimeMin
+    value: "3.9"
+    url: https://pypi.org/pypi/connexion/json
+    checkedAt: 2026-10-26
+    via: api
+  - field: installMethod
+    value: pip
+    url: https://raw.githubusercontent.com/spec-first/connexion/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "You can install connexion using pip:"
+  - field: runsAs
+    value: [always-on]
+    url: https://raw.githubusercontent.com/spec-first/connexion/main/docs/quickstart.rst
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Or with gunicorn (which is recommended in production)."
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/spec-first/connexion
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/spec-first/connexion/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Apache License"
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/spec-first/connexion/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2025-10-13
+    url: https://api.github.com/repos/spec-first/connexion/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2015"
+    url: https://api.github.com/repos/spec-first/connexion/commits/v0.4
+    checkedAt: 2026-10-26
+    via: api
+  - field: pypiName
+    value: connexion
+    url: https://pypi.org/pypi/connexion/json
+    checkedAt: 2026-10-26
+    via: api
+  - field: pypiDownloads
+    value: 3995599 last month
+    url: https://pypistats.org/api/packages/connexion/recent
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 4612
+    url: https://api.github.com/repos/spec-first/connexion
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 215
+    url: https://api.github.com/repos/spec-first/connexion/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+notFound: [maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, renderingModes, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, outputDir]
+unreadable: []
+notes: >
+  The PyPI JSON downloads block reads -1, so pypiDownloads comes from pypistats.org (last_month). The docs page at the homepage is the Read the Docs site; the quickstart and the README name Starlette and Flask only as hosts for other app classes: the FlaskApp leverages Flask, and the lifespan page links the Starlette documentation, but no page states that Connexion is built on either, so basedOn is not recorded. The README's quickstart runs the app with uvicorn for development and recommends gunicorn with uvicorn workers in production; runsAs is always-on from that statement. The release major and date come from the GitHub release 3.3.0 (2025-10-13), the highest stable release. The minimum Python is the PyPI requires_python value of the latest release; pyproject.toml says >=3.10 for the development branch, which is not recorded. The NOTICE file names the copyright holders Robbe Sneyders and Ruwan Lambrichts. Last push 2026-10-20; not archived.
