@@ -1,0 +1,119 @@
+id: syro
+name: Syro
+status: accepted
+checkedAt: 2026-10-26
+description: Simple router for web applications, written in Ruby and distributed as a gem.
+facts:
+  - field: homepage
+    value: https://soveran.github.io/syro/
+    url: https://soveran.github.io/syro/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Simple router for web applications"
+  - field: repository
+    value: https://github.com/soveran/syro
+    url: https://api.github.com/repos/soveran/syro
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/soveran/syro/blob/master/README.md
+    url: https://github.com/soveran/syro/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Syro is a very simple router for web applications."
+  - field: categories
+    value: [router]
+    url: https://github.com/soveran/syro/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Syro is a very simple router for web applications."
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/soveran/syro
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://files.soveran.com/syro/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Syro is a router for"
+  - field: installMethod
+    value: gem install
+    url: https://github.com/soveran/syro/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "$ gem install syro"
+  - field: runsAs
+    value: [always-on]
+    url: https://files.soveran.com/syro/ch12.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Start the server with the following command:"
+  - field: license
+    value: MIT
+    url: https://github.com/soveran/syro/blob/master/syro.gemspec
+    checkedAt: 2026-10-26
+    via: page
+    quote: "s.license           = \"MIT\""
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/soveran/syro
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/soveran/syro/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: maintainer
+    value: Michel Martens
+    url: https://github.com/soveran/syro/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2015 Michel Martens"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/soveran
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2015"
+    url: https://rubygems.org/api/v1/versions/syro.json
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/soveran/syro/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2021-03-21
+    url: https://rubygems.org/api/v1/versions/syro.json
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 137
+    url: https://api.github.com/repos/soveran/syro
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 10
+    url: https://api.github.com/repos/soveran/syro/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: rubygemsName
+    value: syro
+    url: https://rubygems.org/api/v1/gems/syro.json
+    checkedAt: 2026-10-26
+    via: api
+  - field: rubygemsDownloads
+    value: 227408 total
+    url: https://rubygems.org/api/v1/gems/syro.json
+    checkedAt: 2026-10-26
+    via: api
+notFound: [hqCountry, maintainerType, basedOn, alternativeTo, forkOf, successorOf, parent, wikidata, pricingPage, paidEdition, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, discord, x, bluesky, mastodon, newsletter, subreddit, forum, pluginDirectory, pluginCount, usageShare, reportedInstalls, endoflifeId, supportedVersions, buildCommand, outputDir, docker, freeTier, apiLimits, regions, selfHostOption, runtimeMin]
+unreadable: []
+notes: >
+  Category: the CSV row says framework and micro-framework, but the README calls Syro "a very simple router for web applications" and the homepage says "Simple router for web applications", so the category is router. Homepage: the CSV row lists http://soveran.github.io/syro/, which answers 200 over http and over https; the https address is recorded because it is the project's own site and is served over https. Relation to Cuba: the README says Syro was created "in the tradition of libraries like Rum and Cuba", that its design is inspired by some Cuba applications, and that the first idea was a new Cuba version that broke compatibility; no page calls it a fork or a successor, so basedOn and forkOf are not recorded. Releases: the highest stable GitHub release is 3.1.0 (2018-02-01); the tags 3.1.1 and 3.2.0 have no GitHub release, and the gem is at 3.2.1 (2021-03-21), the newest stable upload. latestReleaseDate is the gem date of 3.2.1 (2021-03-21), newer than the GitHub release 3.1.0 (2018-02-01); major 3 is the same under both. firstRelease 2015 is the gem's first upload 0.0.1 (2015-04-23), the same year as the repository's creation. runtime: the tutorial states Syro is a router for web development with Ruby; the gemspec states no Ruby version, so runtimeMin is absent. runsAs always-on is the tutorial's "Running a webserver" chapter: a config.ru started with rackup. The tutorial's template chapter uses Mote as an example; the README says no rendering is built in, so no templating value is recorded. The README's community link is an IRC channel on freenode, not a field. The README says the framework provides no security features, rendering features or Rack middleware support out of the box; those are stated limits, not recorded as fields.

@@ -1,0 +1,1 @@
+WebGo is a router for Go that its project describes as a microframework for building web applications. Applications built with it run server side as a Go program that starts its own HTTP server, with handlers that have the signature of the standard library's HTTP handler. It is distributed as a Go module, and the project is maintained under the name Naughty Gopher.

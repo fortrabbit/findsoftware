@@ -1,0 +1,1 @@
+Starlette is a lightweight framework and toolkit for building async web services in Python. It is an ASGI application: after the pip install, it is run by an ASGI server such as [uvicorn](https://uvicorn.dev), which the project README gives as an example. Jinja2 templates are an optional dependency, needed only where an application renders them.

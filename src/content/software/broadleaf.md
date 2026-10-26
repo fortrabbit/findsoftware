@@ -19,6 +19,8 @@ runtime:
   - jvm
 hosting:
   - java
+basedOn:
+  - spring-framework
 databases:
   - mysql
   - postgres
@@ -63,6 +65,9 @@ sources:
     url: https://raw.githubusercontent.com/BroadleafCommerce/BroadleafCommerce/develop-7.0.x/README.md
     checkedAt: 2026-10-24
   - field: runtime
+    url: https://raw.githubusercontent.com/BroadleafCommerce/BroadleafCommerce/develop-7.0.x/README.md
+    checkedAt: 2026-10-24
+  - field: basedOn
     url: https://raw.githubusercontent.com/BroadleafCommerce/BroadleafCommerce/develop-7.0.x/README.md
     checkedAt: 2026-10-24
   - field: installMethod

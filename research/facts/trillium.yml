@@ -1,0 +1,130 @@
+id: trillium
+name: Trillium
+status: accepted
+checkedAt: 2026-10-26
+description: Modular async Rust web framework whose features are separate opt-in crates composed around one Handler trait.
+facts:
+  - field: homepage
+    value: https://trillium.rs
+    url: https://api.github.com/repos/trillium-rs/trillium
+    checkedAt: 2026-10-26
+    via: api
+  - field: repository
+    value: https://github.com/trillium-rs/trillium
+    url: https://api.github.com/repos/trillium-rs/trillium
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://docs.trillium.rs
+    url: https://github.com/trillium-rs/trillium/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The rustdocs represent the best way to learn about any of trillium's individual crates"
+  - field: maintainer
+    value: Jacob Rothstein
+    url: https://github.com/trillium-rs/trillium/blob/main/LICENSE-MIT
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2021 Jacob Rothstein"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/trillium-rs/trillium
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/trillium-rs/trillium
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://trillium.rs/guide/welcome
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Trillium is a modular async Rust web framework"
+  - field: runtime
+    value: [binary]
+    url: https://trillium.rs/guide/welcome
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Trillium is a modular async Rust web framework"
+  - field: installMethod
+    value: cargo add of the trillium crate and a runtime adapter
+    url: https://trillium.rs/guide/welcome
+    checkedAt: 2026-10-26
+    via: page
+    quote: "cargo add trillium trillium-smol"
+  - field: templating
+    value: [askama, tera, handlebars]
+    url: https://trillium.rs/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Templates — Askama, Tera, and Handlebars"
+  - field: runsAs
+    value: [always-on]
+    url: https://trillium.rs/guide/welcome
+    checkedAt: 2026-10-26
+    via: page
+    quote: "it binds a port, listens for TCP connections, and drives the async executor"
+  - field: license
+    value: MIT OR Apache-2.0
+    url: https://github.com/trillium-rs/trillium/blob/main/trillium/Cargo.toml
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'license = "MIT OR Apache-2.0"'
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/trillium-rs/trillium
+    checkedAt: 2026-10-26
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/trillium-rs/trillium/blob/main/LICENSE-MIT
+    checkedAt: 2026-10-26
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/trillium-rs/trillium/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Licensed under either of"
+  - field: firstRelease
+    value: "2021"
+    url: https://crates.io/api/v1/crates/trillium/versions
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://crates.io/api/v1/crates/trillium
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-22
+    url: https://crates.io/api/v1/crates/trillium/versions
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 379
+    url: https://api.github.com/repos/trillium-rs/trillium
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 11
+    url: https://api.github.com/repos/trillium-rs/trillium/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateName
+    value: trillium
+    url: https://crates.io/api/v1/crates/trillium
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateDownloads
+    value: 254531 total
+    url: https://crates.io/api/v1/crates/trillium
+    checkedAt: 2026-10-26
+    via: api
+notFound: [pricingPage, paidEdition, basedOn, forkOf, successorOf, alternativeTo, parent, hqCountry, maintainerType, contentStore, databases, adminUi, headlessApi, renderingModes, sso, multisite, livePreview, userRoles, i18n, importsFrom, buildCommand, outputDir, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, npmName, packagistName, pypiName, runtimeMin]
+unreadable: []
+notes: >
+  The homepage (trillium.rs) and the guide (trillium.rs/guide/welcome) answer over https and name the same project. The homepage calls Trillium a "modular async Rust web toolkit" and the guide calls it a "web framework"; categories records framework, as the crate keywords do. The project is a set of crates, and the umbrella crate trillium is at 1.4.1 (crates.io, 2026-10-22), which is the package the install docs name, so currentMajor, latestReleaseDate and crateDownloads follow it; the GitHub releases list also carries separate crates (for example trillium-client v0.9.20 on 2026-10-24) that are not the umbrella package. The GitHub API reports Apache-2.0 while trillium/Cargo.toml says "MIT OR Apache-2.0" and the README says both licenses apply at the user's option; each statement is its own license entry. The root workspace Cargo.toml states no rust-version, and the crates.io version metadata carries no rust_version, so runtimeMin is not recorded. runsAs holds always-on from the welcome page, which says the runtime adapter binds a port and listens for TCP connections; the AWS Lambda adapter is listed there too, and the page does not say whether it runs per request, so no per-request value is recorded. The homepage and guide show the copyright holder as Jacob Rothstein (LICENSE-MIT, 2021) with no company or legal form; no hqCountry is stated. Commercial support and consulting are offered on the homepage but no paid edition is named, so paidEdition is not recorded. The homepage says routing, sessions, WebSockets, templates and an HTTP client are separate crates and that nothing else compiles unless it is added, that the runtime is chosen by an adapter (tokio, smol, async-std or AWS Lambda), and that TLS comes from rustls, native-tls or OpenSSL. The homepage says Trillium takes semver seriously and reached 1.0 with a commitment to the current API shape.

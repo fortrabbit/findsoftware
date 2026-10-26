@@ -1,0 +1,114 @@
+id: synrc-rest
+name: REST
+status: accepted
+checkedAt: 2026-10-26
+description: Erlang framework for REST JSON services, with record transformations generated at compile time and storage on ETS or KVS.
+facts:
+  - field: homepage
+    value: https://rest.n2o.dev
+    url: https://rest.n2o.dev/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "REST is a framework with typed JSON."
+  - field: repository
+    value: https://github.com/synrc/rest
+    url: https://api.github.com/repos/synrc/rest
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://rest.n2o.dev
+    url: https://rest.n2o.dev/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Just plug REST endpoint directly to your Cowboy router"
+  - field: categories
+    value: [api-framework]
+    url: https://github.com/synrc/rest/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "REST: framework with typed JSON"
+  - field: language
+    value: Erlang
+    url: https://api.github.com/repos/synrc/rest/languages
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [erlang]
+    url: https://github.com/synrc/rest/blob/master/mix.exs
+    checkedAt: 2026-10-26
+    via: page
+    quote: "REST erlang interface generator"
+  - field: headlessApi
+    value: [rest]
+    url: https://rest.n2o.dev/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "gain the JSON access for both in-memory ETS and persistent"
+  - field: license
+    value: MIT
+    url: https://github.com/synrc/rest/blob/master/mix.exs
+    checkedAt: 2026-10-26
+    via: page
+    quote: "licenses: [\"MIT\"]"
+  - field: license
+    value: MIT
+    url: https://github.com/synrc/rest/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/synrc/rest/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: maintainer
+    value: Synrc Research Center
+    url: https://github.com/synrc/rest/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2013 Dmitry Bushmelev, Synrc Research Center"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/synrc
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2014"
+    url: https://api.github.com/repos/synrc/rest/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 6
+    url: https://hex.pm/api/packages/rest
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2021-11-07
+    url: https://hex.pm/api/packages/rest
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 83
+    url: https://api.github.com/repos/synrc/rest
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 5
+    url: https://api.github.com/repos/synrc/rest/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: hexName
+    value: rest
+    url: https://hex.pm/api/packages/rest
+    checkedAt: 2026-10-26
+    via: api
+  - field: hexDownloads
+    value: 2748 total
+    url: https://hex.pm/api/packages/rest
+    checkedAt: 2026-10-26
+    via: api
+notFound: [installMethod, databases, hqCountry, maintainerType, basedOn, alternativeTo, forkOf, successorOf, parent, wikidata, pricingPage, paidEdition, renderingModes, runsAs, contentStore, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, discord, x, bluesky, mastodon, newsletter, subreddit, forum, pluginDirectory, pluginCount, usageShare, reportedInstalls, endoflifeId, supportedVersions, buildCommand, outputDir, docker, freeTier, apiLimits, regions, selfHostOption]
+unreadable: []
+notes: >
+  Name: the CSV row says "rest", a generic word; the homepage heading is REST, used here. Language: the CSV row says elixir, but GitHub's language breakdown is Erlang first (Erlang 31914 bytes, HTML 9974, Elixir 1337), the source is src/*.erl and rebar.config builds it; the mix.exs file is an Elixir project file, so language is Erlang and the reviewer should confirm. Registry and major: the highest stable GitHub release is 5.10 (2018-11-12), but the Hex package rest is at 6.11.1 (2021-11-07), a higher major, so the registry rule applies: currentMajor 6, latestReleaseDate from Hex. The Hex package is named by mix.exs as app rest; the homepage's dependency examples name bpe and erp instead, so hexName is the package mix.exs names. Hex listed 10 releases; 6.1.1 and 6.11.1 are the only 6.x ones. firstRelease 2014 is the GitHub release 1.5.0 (2014-05-19), older than the Hex upload 2015-03-24. Maintainer: the LICENSE copyright line names Dmitry Bushmelev and Synrc Research Center; the GitHub owner is the synrc organization whose profile lists synrc.com; no legal form was found on any page, so the name is recorded as the license states it. License: GitHub reports NOASSERTION, which is not a license statement, so it is not recorded; mix.exs and LICENSE agree on MIT. The homepage shows "NOV 2021 ... VER 6.11", which matches the Hex date. databases and installMethod are not recorded: mix.exs lists rocksdb only as a dependency, and the homepage dependency examples name bpe and erp, not rest. The homepage and README say the first goal, fast record to proplist transformations, is met by parse_transform code generation for tuple transformations, and that the second, the smallest framework, is met by leaving out routing, so endpoints are plugged into a Cowboy router. Storage is in-memory ETS or persistent KVS, per the homepage. runsAs is not recorded: the homepage says the REST endpoints plug into a Cowboy router, which does not state a process model. The homepage and the README both use the phrase "Smallest REST framework", which is not recorded as a claim. The homepage is https and answers 200 after an http 301.

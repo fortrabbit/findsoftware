@@ -1,0 +1,127 @@
+id: summer-rs
+name: summer-rs
+status: accepted
+checkedAt: 2026-10-26
+description: Rust application framework inspired by Spring Boot, with plugins for web, database, scheduling and other integrations.
+facts:
+  - field: homepage
+    value: https://summer-rs.github.io/
+    url: https://summer-rs.github.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "summer-rs is a application framework written in rust inspired by java's spring-boot"
+  - field: repository
+    value: https://github.com/summer-rs/summer-rs
+    url: https://api.github.com/repos/summer-rs/summer-rs
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://summer-rs.github.io/docs/getting-started/introduction/
+    url: https://summer-rs.github.io/docs/getting-started/introduction/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "summer-rs is application framework written in Rust, inspired by Java's SpringBoot"
+  - field: categories
+    value: [framework]
+    url: https://summer-rs.github.io/docs/getting-started/introduction/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "summer-rs is application framework written in Rust, inspired by Java's SpringBoot"
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/summer-rs/summer-rs
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [rust]
+    url: https://summer-rs.github.io/docs/getting-started/quick-start/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "rust ≥ 1.75"
+  - field: runtimeMin
+    value: "1.75"
+    url: https://summer-rs.github.io/docs/getting-started/quick-start/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "rust ≥ 1.75"
+  - field: installMethod
+    value: cargo (Cargo.toml dependency)
+    url: https://summer-rs.github.io/docs/getting-started/quick-start/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Add the following dependencies to your Cargo.toml file"
+  - field: databases
+    value: [mysql, postgres, sqlite]
+    url: https://summer-rs.github.io/docs/plugins/summer-sqlx/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "You can replace postgres , mysql , sqlite feature to select the appropriate database driver."
+  - field: license
+    value: MIT
+    url: https://github.com/summer-rs/summer-rs/blob/master/LICENSE-MIT
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: licenseModel
+    value: open-source
+    url: https://summer-rs.github.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Released under the MIT License."
+  - field: maintainer
+    value: Holmofy
+    url: https://github.com/summer-rs/summer-rs/blob/master/LICENSE-MIT
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2024 Holmofy"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/summer-rs/summer-rs
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2024"
+    url: https://summer-rs.github.io/blog/spring-rs-initial-version/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Posted 2024-08-04"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/summer-rs/summer-rs/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-17
+    url: https://crates.io/api/v1/crates/summer
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 1025
+    url: https://api.github.com/repos/summer-rs/summer-rs
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 12
+    url: https://api.github.com/repos/summer-rs/summer-rs/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateName
+    value: summer
+    url: https://crates.io/api/v1/crates/summer
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateDownloads
+    value: 5446 total
+    url: https://crates.io/api/v1/crates/summer
+    checkedAt: 2026-10-26
+    via: api
+  - field: pluginDirectory
+    value: https://summer-rs.github.io/docs/plugins/
+    url: https://summer-rs.github.io/docs/plugins/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Community contributed plugins"
+notFound: [runsAs, templating, importsFrom, hqCountry, maintainerType, basedOn, alternativeTo, forkOf, successorOf, parent, wikidata, pricingPage, paidEdition, renderingModes, contentStore, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, discord, x, bluesky, mastodon, newsletter, subreddit, forum, usageShare, reportedInstalls, endoflifeId, supportedVersions, buildCommand, outputDir, pluginCount, npmName, packagistName, docker, freeTier, apiLimits, regions, selfHostOption]
+unreadable: []
+notes: >
+  Rename: the project was published as spring-rs until 0.4.x. The migration post says it was renamed to summer-rs at 0.5.0 (2026-03-21), and the crates changed from spring-* to summer-*. Recorded under the current name only, with no successorOf, because the repository is the same. The first post, titled "summer-rs initial version released", is dated 2024-08-04; the oldest GitHub tag is 0.0.9 (2024-09-06), so firstRelease 2024 holds either way. Major: the highest stable GitHub release is 0.7.1 (2026-05-25), so currentMajor is 0. latestReleaseDate is the crates.io date of 0.7.2 (2026-10-17), which is newer than the GitHub release 0.7.1 (2026-05-25). runsAs is not recorded: the docs show a port configuration key and "cargo run" but no page states that the application runs as a server process. Databases are the drivers the summer-sqlx page lists. The summer-web page says Axum is a dependency and that summer-web is a web framework based on Axum; the core framework's parent is not stated, so basedOn is not recorded. The installation and deployment URLs return 404; the docs source under docs/content holds no deployment page. The FAQ page only links to GitHub issues labeled question. The README lists 16 plugins and the docs index lists 19, so pluginCount is left out as a count that moves.

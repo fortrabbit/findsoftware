@@ -18,6 +18,8 @@ runtime:
 hosting:
   - python
 runtimeMin: python 3.10
+basedOn:
+  - starlette
 databases:
   - sqlite
 runsAs:
@@ -60,6 +62,9 @@ sources:
     checkedAt: 2026-10-26
   - field: category
     url: https://github.com/AnswerDotAI/fasthtml/blob/main/README.md
+    checkedAt: 2026-10-26
+  - field: basedOn
+    url: https://fastht.ml/about/tech
     checkedAt: 2026-10-26
   - field: databases
     url: https://fastht.ml/about/tech

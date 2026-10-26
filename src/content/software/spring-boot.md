@@ -18,6 +18,8 @@ runtime:
 hosting:
   - java
 runtimeMin: jvm 17
+basedOn:
+  - spring-framework
 templating: thymeleaf, freemarker, groovy, mustache
 i18n: yes
 runsAs:
@@ -66,6 +68,9 @@ sources:
     checkedAt: 2026-10-18
   - field: category
     url: https://spring.io/projects/spring-boot
+    checkedAt: 2026-10-18
+  - field: basedOn
+    url: https://docs.spring.io/spring-boot/system-requirements.html
     checkedAt: 2026-10-18
   - field: language
     url: https://github.com/spring-projects/spring-boot

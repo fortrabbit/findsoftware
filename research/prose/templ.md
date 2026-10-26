@@ -1,0 +1,1 @@
+templ is an HTML templating language for Go, and its output can be rendered to static HTML files. The [installation page](https://templ.guide/quick-start/installation) gives `go install`, a GitHub binary download, a Nix flake and a Docker image as ways to get the `templ` command.

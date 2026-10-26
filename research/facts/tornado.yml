@@ -1,0 +1,138 @@
+id: tornado
+name: Tornado
+status: accepted
+checkedAt: 2026-10-26
+description: Python web framework and asynchronous networking library that runs its own HTTP server rather than WSGI.
+facts:
+  - field: homepage
+    value: https://www.tornadoweb.org/
+    url: https://www.tornadoweb.org/en/stable/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Current version: 6.6"
+  - field: repository
+    value: https://github.com/tornadoweb/tornado
+    url: https://api.github.com/repos/tornadoweb/tornado
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://www.tornadoweb.org/en/stable/
+    url: https://www.tornadoweb.org/en/stable/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "User's guide"
+  - field: maintainer
+    value: Facebook
+    url: https://github.com/tornadoweb/tornado/blob/master/tornado/web.py
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright 2009 Facebook"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/tornadoweb/tornado
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/tornadoweb/tornado
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework, library]
+    url: https://www.tornadoweb.org/en/stable/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Tornado is a Python web framework and asynchronous networking library"
+  - field: runtime
+    value: [python]
+    url: https://www.tornadoweb.org/en/stable/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Tornado requires Python 3"
+  - field: runtimeMin
+    value: "3.11"
+    url: https://pypi.org/pypi/tornado/json
+    checkedAt: 2026-10-26
+    via: api
+    quote: '"requires_python":">=3.11"'
+  - field: installMethod
+    value: pip install tornado
+    url: https://www.tornadoweb.org/en/stable/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "pip install tornado"
+  - field: templating
+    value: [tornado templates]
+    url: https://www.tornadoweb.org/en/stable/guide/templates.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Tornado includes a simple, fast, and flexible templating language"
+  - field: i18n
+    value: tornado.locale internationalization support
+    url: https://www.tornadoweb.org/en/stable/locale.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Internationalization support"
+  - field: runsAs
+    value: [always-on]
+    url: https://www.tornadoweb.org/en/stable/guide/running.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Configure your operating system or process manager to run this program to start the server"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/tornadoweb/tornado
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/tornadoweb/tornado/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Apache License Version 2.0, January 2004"
+  - field: firstRelease
+    value: "2010"
+    url: https://pypi.org/pypi/tornado/json
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 6
+    url: https://pypi.org/pypi/tornado/json
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-21
+    url: https://pypi.org/pypi/tornado/json
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 22168
+    url: https://api.github.com/repos/tornadoweb/tornado
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 384
+    url: https://api.github.com/repos/tornadoweb/tornado/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: pypiName
+    value: tornado
+    url: https://pypi.org/pypi/tornado/json
+    checkedAt: 2026-10-26
+    via: api
+  - field: forum
+    value: https://groups.google.com/forum/#!forum/python-tornado
+    url: https://www.tornadoweb.org/en/stable/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Mailing lists: discussion and announcements"
+  - field: pypiDownloads
+    value: "97656241 (last month)"
+    url: https://pypistats.org/api/packages/tornado/recent
+    checkedAt: 2026-10-26
+    via: api
+    quote: '"last_month":97656241'
+notFound: [pricingPage, paidEdition, basedOn, forkOf, successorOf, alternativeTo, parent, hqCountry, maintainerType, contentStore, databases, adminUi, headlessApi, renderingModes, sso, multisite, livePreview, userRoles, importsFrom, usageShare, reportedInstalls, pluginDirectory, pluginCount, subreddit, discord, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, npmName, packagistName, buildCommand, outputDir]
+unreadable: []
+notes: >
+  The GitHub homepage field and the README name http://www.tornadoweb.org, which redirects to https://www.tornadoweb.org/ and then to the docs; the https address answers, so it is recorded as the homepage. The repository has no GitHub release objects, only tags; the newest stable tag is v6.6.0, the same as the PyPI release 6.6, so currentMajor and latestReleaseDate come from PyPI, where the 6.6 files were uploaded on 2026-10-21. The PyPI JSON reports no download counts (its downloads figures are -1), so pypiDownloads comes from pypistats.org (last_month). firstRelease is the year of the oldest PyPI upload (0.2, 2010-05-18), since no GitHub release exists and the repository's creation in 2009 is not a release date; the release notes start at 1.0 (July 2010) and say there were earlier versions. The project states it was originally developed at FriendFeed and that it is not based on WSGI; neither is a field, so both stay in the prose source only. The maintainer is recorded as the copyright line and the PyPI author name, Facebook; no legal form is stated. No page names a database. The index page says Tornado is designed for Unix-like platforms and will also run on Windows, which is not officially supported or recommended for production use and lacks multi-process mode. The index page says Tornado is not based on WSGI, is typically run with one thread per process, and that its code is not thread-safe except for IOLoop.add_callback. The running guide recommends one process per CPU and a load balancer such as nginx in front of processes that listen on different ports. The index page says the project was originally developed at FriendFeed.

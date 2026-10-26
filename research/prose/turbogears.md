@@ -1,0 +1,3 @@
+TurboGears is a Python web framework that runs from a single file and can grow into a generated full-stack project with templates, database models and authentication. Its [features page](https://turbogears.org/features.html) lists Kajiki, Jinja2, Genshi and Mako as template engines, SQL databases through SQLAlchemy and MongoDB through Ming. Authentication uses pluggable identity backends through repoze.who, and the page names LDAP and OAuth among them.
+
+For production, the [deployment guide](https://turbogears.readthedocs.io/en/latest/cookbook/deploy/index.html) describes a WSGI server behind a reverse proxy, or Apache with mod_wsgi.

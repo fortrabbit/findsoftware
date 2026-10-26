@@ -17,6 +17,8 @@ hosting:
   - dotnet
   - static
 runtimeMin: dotnet 3.1
+basedOn:
+  - websharper
 contentStore:
   - flat-file
 i18n: multiple languages, with a language selector
@@ -51,6 +53,9 @@ sources:
     url: https://github.com/granicz/SiteFi/blob/master/README.md
     checkedAt: 2026-10-23
   - field: runtimeMin
+    url: https://github.com/granicz/SiteFi/blob/master/README.md
+    checkedAt: 2026-10-23
+  - field: basedOn
     url: https://github.com/granicz/SiteFi/blob/master/README.md
     checkedAt: 2026-10-23
   - field: category

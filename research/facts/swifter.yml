@@ -1,0 +1,121 @@
+id: swifter
+name: Swifter
+status: accepted
+checkedAt: 2026-10-26
+description: Tiny HTTP server engine written in Swift.
+facts:
+  - field: repository
+    value: https://github.com/httpswift/swifter
+    url: https://api.github.com/repos/httpswift/swifter
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/httpswift/swifter/blob/stable/README.md
+    url: https://github.com/httpswift/swifter/blob/stable/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Tiny http server engine written in Swift programming language."
+  - field: categories
+    value: [web-server]
+    url: https://github.com/httpswift/swifter/blob/stable/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Tiny http server engine written in Swift programming language."
+  - field: language
+    value: Swift
+    url: https://api.github.com/repos/httpswift/swifter
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [swift]
+    url: https://github.com/httpswift/swifter/blob/stable/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Tiny http server engine written in Swift programming language."
+  - field: installMethod
+    value: Swift Package Manager
+    url: https://github.com/httpswift/swifter/blob/stable/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Swift Package Manager."
+  - field: installMethod
+    value: CocoaPods
+    url: https://github.com/httpswift/swifter/blob/stable/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "CocoaPods? Yes."
+  - field: installMethod
+    value: Carthage
+    url: https://github.com/httpswift/swifter/blob/stable/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Carthage? Also yes."
+  - field: installMethod
+    value: Docker
+    url: https://github.com/httpswift/swifter/blob/stable/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "docker run -d -p 9080:9080"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/httpswift/swifter/blob/stable/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "docker run -d -p 9080:9080"
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/httpswift/swifter
+    checkedAt: 2026-10-26
+    via: api
+  - field: license
+    value: BSD
+    url: https://github.com/httpswift/swifter/blob/stable/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Redistribution and use in source and binary forms"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/httpswift/swifter/blob/stable/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Redistribution and use in source and binary forms"
+  - field: maintainer
+    value: Damian Kołakowski
+    url: https://github.com/httpswift/swifter/blob/stable/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2014, Damian Kołakowski"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/httpswift
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2015"
+    url: https://api.github.com/repos/httpswift/swifter/git/refs/tags/1.0.2
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/httpswift/swifter/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2020-09-26
+    url: https://api.github.com/repos/httpswift/swifter/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 4018
+    url: https://api.github.com/repos/httpswift/swifter
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 78
+    url: https://api.github.com/repos/httpswift/swifter/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, runtimeMin, hqCountry, maintainerType, basedOn, alternativeTo, forkOf, successorOf, parent, wikidata, pricingPage, paidEdition, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, discord, x, bluesky, mastodon, newsletter, subreddit, forum, pluginDirectory, pluginCount, usageShare, reportedInstalls, endoflifeId, supportedVersions, buildCommand, outputDir, cocoapodsName, docker, freeTier, apiLimits, regions, selfHostOption]
+unreadable: []
+notes: >
+  No homepage: GitHub lists none and the CSV row is empty; the repository is the only project address, so homepage is not recorded. The README is the documentation; no separate docs site was found. Registries: the install docs name Swift Package Manager, CocoaPods ('Swifter', pod version 1.5.0 in the README) and Carthage; each install route is its own installMethod entry; no download figure is recorded for CocoaPods or SPM. Release history: the highest stable GitHub release is 1.5.0 (2020-09-26), with 1.5.0-rc.1 (2020-09-17) recorded only as prerelease history and therefore no latestPrereleaseDate, since it is older than the stable release. The CHANGELOG starts at 1.4.6, so firstRelease comes from the oldest tag, 1.0.2 (tag object dated 2015-10-06); reviewer may decide the tag is a version-numbered release and keep 2015. runtimeMin is not recorded: the only Swift minimum is the swift-tools-version line in Package.swift (5.0), a manifest comment and no page statement, and the README names Swift versions only in a badge image. The category is web-server only: the README calls the master branch an "experimental web-framework layer" (the default branch is stable), and the 2.0 branch (async IO) is experimental. The README lists platforms (Linux, macOS, tvOS) in a badge only, and WebSockets appear in code examples; no field carries either. The LICENSE copyright line names Damian Kołakowski, and the podspec names the same author. The owner is the httpswift organization; the maintainer as the project states it is the individual named in LICENSE.

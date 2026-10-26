@@ -1,0 +1,133 @@
+id: unfiltered
+name: Unfiltered
+status: accepted
+checkedAt: 2026-10-26
+description: Scala toolkit for handling HTTP requests across several server backends, including Jetty, Netty and servlet containers.
+facts:
+  - field: homepage
+    value: https://unfiltered.ws/
+    url: https://unfiltered.ws/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Unfiltered is a toolkit for servicing HTTP requests in Scala"
+  - field: repository
+    value: https://github.com/unfiltered/unfiltered
+    url: https://api.github.com/repos/unfiltered/unfiltered
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://unfiltered.ws/
+    url: https://unfiltered.ws/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "This documentation walks through basic functionality of the library"
+  - field: maintainer
+    value: Nathan Hamblen / Doug Tangren
+    url: https://github.com/unfiltered/unfiltered/blob/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2010-2014 Nathan Hamblen / Doug Tangren"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/unfiltered
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: scala
+    url: https://api.github.com/repos/unfiltered/unfiltered
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [toolkit]
+    url: https://unfiltered.ws/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Unfiltered is a toolkit for servicing HTTP requests in Scala"
+  - field: runtime
+    value: [jvm]
+    url: https://unfiltered.ws/03.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The Java Servlet API enables you to write applications that run on servlet containers"
+  - field: installMethod
+    value: sbt or Maven dependency from Maven Central
+    url: https://unfiltered.ws/04.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'libraryDependencies += "ws.unfiltered" %% "unfiltered-filter" % "0.12.1"'
+  - field: runsAs
+    value: [always-on]
+    url: https://unfiltered.ws/01.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "unfiltered.jetty.Server.anylocal.plan(echo).run()"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/unfiltered/unfiltered
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/unfiltered/unfiltered/blob/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: firstRelease
+    value: "2010"
+    url: https://repo1.maven.org/maven2/net/databinder/unfiltered_2.7.5/
+    checkedAt: 2026-10-26
+    via: api
+    quote: "2010-05-19 03:48"
+  - field: currentMajor
+    value: 0
+    url: https://repo1.maven.org/maven2/ws/unfiltered/unfiltered-filter_3/maven-metadata.xml
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2025-01-12
+    url: https://repo1.maven.org/maven2/ws/unfiltered/unfiltered-filter_3/0.12.1/
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 710
+    url: https://api.github.com/repos/unfiltered/unfiltered
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 59
+    url: https://api.github.com/repos/unfiltered/unfiltered/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: mavenCoordinates
+    value: ws.unfiltered:unfiltered-filter_3
+    url: https://repo1.maven.org/maven2/ws/unfiltered/unfiltered-filter_3/maven-metadata.xml
+    checkedAt: 2026-10-26
+    via: api
+  - field: forum
+    value: https://groups.google.com/forum/#!forum/unfiltered-scala
+    url: https://unfiltered.ws/05.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "We also have a mailing list and gitter"
+  - field: forum
+    value: https://gitter.im/unfiltered/unfiltered
+    url: https://unfiltered.ws/05.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "We also have a mailing list and gitter"
+  - field: runsAs
+    value: [always-on]
+    url: https://unfiltered.ws/03.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "applications that run on servlet containers, anything from Tomcat to Google App Engine"
+  - field: latestPrereleaseDate
+    value: 2026-05-02
+    url: https://repo1.maven.org/maven2/ws/unfiltered/unfiltered-filter_3/
+    checkedAt: 2026-10-26
+    via: api
+    quote: "2026-05-02 02:56"
+notFound: [maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, renderingModes, templating, contentStore, databases, adminUi, headlessApi, i18n, userRoles, sso, livePreview, multisite, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, outputDir, runtimeMin, hqCountry]
+unreadable: []
+notes: >
+  The CSV boundary (no versioned release found) is settled by the Maven Central release 0.12.1, which the homepage and project setup page name as the current version; no GitHub release exists, so the tags are the only git releases, and the highest stable Maven version is 0.12.1 (the Maven release element names the 0.13.0-M6 milestone, which is not stable). The first release year comes from the oldest upload on Maven Central under the net.databinder group id: version 0.1.0 of unfiltered_2.7.5, listed on 2010-05-19. The GitHub tag 0.1.0 sits on the same day. The LICENSE copyright line names Nathan Hamblen and Doug Tangren for 2010 to 2014 and carries no legal form; the project says nothing later, so the reviewer may want to confirm the maintainer. The runtime follows the bindings page, which describes the Java Servlet API and Java NIO based modules; the homepage names no runtime version, so runtimeMin is left out. The Scala version on the Maven artifacts is 2.13 and 3; the mavenCoordinates value uses the Scala 3 artifact named on the project setup page. The README describes the core library as request extractors and response combinators, and the homepage describes an intent as the partial function a plan declares for requests. The homepage describes plans and intents, and the bindings page lists the servlet filter, Jetty and Netty modules. The Netty and servlet backends are server modules named on the bindings page; runsAs rests on the Jetty example's run() call and on the bindings page's statement that applications run on servlet containers. The community page links a Google Groups mailing list and a Gitter room, both recorded as forum. The database module in the project setup page is a Slick example template, so no database is recorded.

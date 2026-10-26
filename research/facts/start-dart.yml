@@ -1,0 +1,106 @@
+id: start-dart
+name: Start
+status: stub
+checkedAt: 2026-10-26
+description: Sinatra-inspired web framework for Dart, with routes, static file serving, WebSocket handlers and JSON responses.
+facts:
+  - field: repository
+    value: https://github.com/lvivski/start
+    url: https://api.github.com/repos/lvivski/start
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/lvivski/start/blob/master/README.md
+    url: https://github.com/lvivski/start/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Sinatra inspired web framework."
+  - field: maintainer
+    value: Yehor Lvivski
+    url: https://github.com/lvivski/start/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2012 Yehor Lvivski"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/lvivski/start
+    checkedAt: 2026-10-26
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://api.github.com/repos/lvivski/start
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Dart
+    url: https://api.github.com/repos/lvivski/start
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: dart
+    url: https://pub.dev/api/packages/start
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtimeMin
+    value: "2.0"
+    url: https://pub.dev/api/packages/start
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/lvivski/start/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Sinatra inspired web framework."
+  - field: installMethod
+    value: "pub dependency (start: ^0.4.1)"
+    url: https://pub.dev/packages/start
+    checkedAt: 2026-10-26
+    via: page
+    quote: "start: ^0.4.1"
+  - field: license
+    value: MIT
+    url: https://github.com/lvivski/start/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "(The MIT License)"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/lvivski/start/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "(The MIT License)"
+  - field: firstRelease
+    value: "2012"
+    url: https://pub.dev/api/packages/start
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://pub.dev/api/packages/start
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2021-05-11
+    url: https://pub.dev/api/packages/start
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 530
+    url: https://api.github.com/repos/lvivski/start
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 16
+    url: https://api.github.com/repos/lvivski/start/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+  - field: pubName
+    value: start
+    url: https://pub.dev/api/packages/start
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, renderingModes, templating, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, contentStore, databases, usageShare, reportedInstalls, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, outputDir, buildCommand, maintainerType, npmName]
+unreadable: []
+notes: >
+  Doubt: the install steps are in doubt. The README shows an import and a server example but no install command, and the pub.dev Installing section lists only a dependency line (start: ^0.4.1), which the rule counts as install steps that only list dependencies, so the record is a stub until a page names an install step beyond the dependency line, for example a getting-started page. The project has no GitHub release; its tags run from v0.0.1 to v0.2.7 and the pub.dev versions run past them to 0.4.1 (2021-05-11), so currentMajor and latestReleaseDate come from pub.dev as the rule for a repository without releases requires, and the CSV date for v0.2.7 (2014-08-16) is a tag from before 0.4.x. The pub.dev page labels the package "Dart 3 incompatible" and its SDK constraint is >=2.0.0 <3.0.0, so runtimeMin is 2.0 from the pubspec, and the label is recorded here, not as a field. The last commit on the default branch is 2021-05-11, the same day as the last pub.dev release. The pubspec homepage is http://github.com/lvivski/start, which is the repository itself, so no homepage is recorded. The license is stated in the README as "(The MIT License)" with the copyright line naming Yehor Lvivski, and pub.dev lists no license field in the pubspec. The pub.dev download counter is not recorded because the brief gives no figure field for pub.dev. The GitHub repository was created 2012-03-16 and the first pub.dev upload is version 0.0.1 on 2012-12-19; firstRelease is 2012 from pub.dev.

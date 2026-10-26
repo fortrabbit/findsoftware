@@ -1,0 +1,125 @@
+id: trot
+name: Trot
+status: accepted
+checkedAt: 2026-10-26
+description: Elixir web micro-framework built on Plug and Cowboy, for routing HTTP requests and writing APIs.
+facts:
+  - field: repository
+    value: https://github.com/hexedpackets/trot
+    url: https://api.github.com/repos/hexedpackets/trot
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://trot.hexdocs.pm/
+    url: https://trot.hexdocs.pm/
+    checkedAt: 2026-10-26
+    via: page
+  - field: maintainer
+    value: William Huba
+    url: https://github.com/hexedpackets/trot/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright 2015 William Huba"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/hexedpackets
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: elixir
+    url: https://api.github.com/repos/hexedpackets/trot
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [micro-framework]
+    url: https://github.com/hexedpackets/trot/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Trot is an Elixir web micro-framework based on Plug and Cowboy"
+  - field: basedOn
+    value: [Plug, Cowboy]
+    url: https://github.com/hexedpackets/trot/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "based on Plug and Cowboy"
+  - field: runtime
+    value: [elixir]
+    url: https://github.com/hexedpackets/trot/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Trot is an Elixir web micro-framework based on Plug and Cowboy"
+  - field: installMethod
+    value: mix dependency from GitHub
+    url: https://github.com/hexedpackets/trot/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: '{:trot, github: "hexedpackets/trot"}'
+  - field: templating
+    value: [eex, haml]
+    url: https://github.com/hexedpackets/trot/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Trot can be used to render EEx templates (the default engine include with Elixir), HAML templates through Calliope"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/hexedpackets/trot
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/hexedpackets/trot/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Apache License"
+  - field: firstRelease
+    value: "2015"
+    url: https://github.com/hexedpackets/trot/blob/master/CHANGELOG.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "0.2.0 - May 20, 2015"
+  - field: currentMajor
+    value: 0
+    url: https://hex.pm/api/packages/trot
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2018-07-25
+    url: https://hex.pm/api/packages/trot
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 417
+    url: https://api.github.com/repos/hexedpackets/trot
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 9
+    url: https://api.github.com/repos/hexedpackets/trot/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: hexName
+    value: trot
+    url: https://hex.pm/api/packages/trot
+    checkedAt: 2026-10-26
+    via: api
+  - field: hexDownloads
+    value: 4689 total
+    url: https://hex.pm/api/packages/trot
+    checkedAt: 2026-10-26
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/hexedpackets/trot/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "port to listen on for incoming HTTP requests"
+  - field: renderingModes
+    value: [server]
+    url: https://github.com/hexedpackets/trot/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Trot can be used to render EEx templates"
+notFound: [homepage, maintainerType, hqCountry, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, outputDir, buildCommand]
+unreadable: []
+notes: >
+  Repository only: the GitHub homepage field is empty and no project site was found, so no homepage is recorded. The releases are tags only, with the v0.7.0 tag of 2018-07-25 matching the Hex release of the same date; the highest stable release is 0.7.0, major 0. The last push to master is 2019-09-09 and the README and CHANGELOG carry no statement that the project has ended, so the status stays accepted; the reviewer may want to decide whether a 2018 release is stale. The v0.7.0 mix.exs requires Elixir 1.4 and master requires 1.6; no runtimeMin is recorded because an Elixir version is not a BEAM runtime minimum and the README states no OTP version. The README describes route macros for each HTTP method and a handler that can return a body, a status code, a JSON-encodable object or a redirect. The README gives no deployment guide and no database, so runsAs rests on the README's configuration of a port to listen on for incoming HTTP requests, and renderingModes on its template rendering inside route handlers; the README also describes a devserver started with mix trot.server. The README has no mention of a mix hex dependency; install is from GitHub. The Hex package hexDownloads figure is the all-time total. The docs link is the Hex documentation build of v0.7.0.
