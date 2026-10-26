@@ -1,0 +1,102 @@
+id: pavex
+name: Pavex
+status: stub
+checkedAt: 2026-10-26
+description: Rust framework for building APIs.
+facts:
+  - field: repository
+    value: https://github.com/LukeMathWalker/pavex
+    url: https://api.github.com/repos/LukeMathWalker/pavex
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/LukeMathWalker/pavex/blob/main/docs/getting_started/index.md
+    url: https://github.com/LukeMathWalker/pavex/blob/main/docs/getting_started/index.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "you need its command-line interface"
+  - field: firstRelease
+    value: "2022"
+    url: https://crates.io/api/v1/crates/pavex/versions
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: Luca Palmieri
+    url: https://api.github.com/users/LukeMathWalker
+    checkedAt: 2026-10-26
+    via: api
+    quote: "Luca Palmieri"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/LukeMathWalker
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/LukeMathWalker/pavex
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [rust]
+    url: https://github.com/LukeMathWalker/pavex/blob/main/docs/getting_started/index.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Rust's toolchain manager"
+  - field: categories
+    value: [framework]
+    url: https://github.com/LukeMathWalker/pavex/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Pavex is a new framework to build APIs with Rust"
+  - field: installMethod
+    value: installer script from GitHub releases
+    url: https://github.com/LukeMathWalker/pavex/blob/main/docs/getting_started/index.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "https://pavex.dev/install.sh"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/LukeMathWalker/pavex/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0."
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/LukeMathWalker/pavex/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0."
+  - field: currentMajor
+    value: 0
+    url: https://crates.io/api/v1/crates/pavex
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2025-11-10
+    url: https://api.github.com/repos/LukeMathWalker/pavex/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 2072
+    url: https://api.github.com/repos/LukeMathWalker/pavex
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 23
+    url: https://api.github.com/repos/LukeMathWalker/pavex/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateName
+    value: pavex
+    url: https://crates.io/api/v1/crates/pavex
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateDownloads
+    value: 96132
+    url: https://crates.io/api/v1/crates/pavex
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, basedOn, runtimeMin, headlessApi, livePreview, sso, importsFrom, multisite, i18n, userRoles, contentStore, databases, adminUi, templating, renderingModes, runsAs, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, pluginDirectory, pluginCount, buildCommand, outputDir, selfHostOption, apiLimits, regions, freeTier, usageShare, reportedInstalls, docker]
+unreadable: [https://pavex.dev/docs/]
+notes: >
+  Stub: the README says "Pavex is currently in closed beta" and asks readers to sign up on pavex.dev for early access. Installation in docs/getting_started/index.md runs the CLI installer at https://pavex.dev/install.sh, which now redirects to the installer asset of GitHub release 0.2.10. The same page then asks for activation in Pavex's console (console.pavex.dev/wizard/install), which does not resolve (DNS failure on 2026-10-26), so whether a user can complete installation is the open question. What would settle it: a working activation route or a stated public install that does not need the console. Homepage: pavex.dev answers with a 301 to the GitHub repository for its root and for /docs/ and /docs/getting_started/, so the project's own site is gone and no homepage is recorded; the docs are read from the repository docs/ folder. The highest stable version is 0.2.10 on crates.io and GitHub, so currentMajor is 0. firstRelease is 2022 from the first crates.io upload of pavex (0.1.0, 2022-07-09), which is older than the first GitHub release (2024-01-12). The registry figure is the framework crate pavex (96132 total downloads); the pavex_cli crate, which works like a scaffolder, has 73196 total downloads and is left out of the fields. No rust-version is stated on crates.io or in Cargo.toml, so runtimeMin is unknown. The maintainer is the owner of the repository account, recorded from the GitHub profile name; no legal name or company appears on a page read.

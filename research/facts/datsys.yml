@@ -1,0 +1,82 @@
+id: datsys
+name: Datsys
+status: stub
+checkedAt: 2026-10-26
+description: Clojure and ClojureScript web application framework built on Datomic or DataScript, Reagent and component-based system wiring.
+facts:
+  - field: repository
+    value: https://github.com/metasoarous/datsys
+    url: https://api.github.com/repos/metasoarous/datsys
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: Christopher T. Small
+    url: https://github.com/metasoarous/datsys/blob/dev/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "This library is authored by Christopher T. Small"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/metasoarous/datsys
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Clojure
+    url: https://api.github.com/repos/metasoarous/datsys
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/metasoarous/datsys/blob/dev/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A web application development framework embracing"
+  - field: forkOf
+    value: Rente
+    url: https://github.com/metasoarous/datsys/blob/dev/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "This code was initially developed as a fork of Rente, but has diverged"
+  - field: installMethod
+    value: clone the repository and run lein repl
+    url: https://github.com/metasoarous/datsys/blob/dev/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "To get running, clone, and cd into the project directory"
+  - field: databases
+    value: [datomic]
+    url: https://github.com/metasoarous/datsys/blob/dev/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Assuming you want to use the free version of Datomic to test things out"
+  - field: license
+    value: EPL-1.0
+    url: https://github.com/metasoarous/datsys/blob/dev/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICENSE"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/metasoarous/datsys/blob/dev/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICENSE"
+  - field: lastCommitDate
+    value: 2017-06-15
+    url: https://api.github.com/repos/metasoarous/datsys/commits
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 232
+    url: https://api.github.com/repos/metasoarous/datsys
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 7
+    url: https://api.github.com/repos/metasoarous/datsys/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, docs, hqCountry, maintainerType, parent, basedOn, successorOf, alternativeTo, runtime, runtimeMin, runsAs, renderingModes, contentStore, templating, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, currentMajor, firstRelease, latestReleaseDate, endoflifeId, clojarsName, clojarsDownloads]
+unreadable: []
+notes: >
+  Stub: the project has no GitHub release and no tag, so the import judges it by lastCommitDate (2017-06-15 on the default branch dev), which is more than four years old, and criterion 4 moves it to stub; a newer commit on the default branch or a tagged release would settle it. The CSV row says no versioned release found and was not a rejection. The README names Datsys as formerly Catalysis, which is a rename of this project, not a successor. The README says the project is a fork of Rente, whose repository it does not link, so forkOf is recorded by name only. The homepage field is empty and the README has no project site; the Heroku deploy button and app.json are not recorded as a deployment field. The project.clj carries version 0.0.1-alpha3, which is not a GitHub release and is not recorded as currentMajor. The runtime is not stated on any page the README links, so runtime is unknown here. The README roadmap and Datsync, Datview, Datreactor and Datspec are sibling libraries, not parents, and no basedOn is recorded. The README links a Gitter chat channel (https://gitter.im/metasoarous/datsys) and a Heroku deploy section its author says was copied from Rente and not tried, so neither is recorded as a field. Prose sources: the README's architecture section names the four libraries Datsync, Datview, Datreactor and Datspec, says they are modular and can be used on their own, and says the system is assembled with Stuart Sierra's Component library. The Usage section says the system is started from the REPL with (run) and that the app is opened in a browser at localhost on the port set by PORT.

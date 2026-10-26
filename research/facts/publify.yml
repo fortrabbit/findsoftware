@@ -1,0 +1,146 @@
+id: publify
+name: Publify
+status: accepted
+checkedAt: 2026-10-26
+description: Blogging and web publishing software built on Ruby on Rails, formerly known as Typo.
+facts:
+  - field: repository
+    value: https://github.com/publify/publify
+    url: https://api.github.com/repos/publify/publify
+    checkedAt: 2026-10-26
+    via: api
+  - field: homepage
+    value: https://publify.github.io/
+    url: https://publify.github.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Publify is the oldest and most powerful Ruby on Rails blogware"
+  - field: maintainer
+    value: Publify
+    url: https://publify.github.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "This project is maintained by Publify"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/publify/publify
+    checkedAt: 2026-10-26
+    via: api
+  - field: x
+    value: https://twitter.com/getpublify
+    url: https://publify.github.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Publify on Twitter"
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/publify/publify
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://api.github.com/repos/publify/publify/releases/tags/v11.0.0
+    checkedAt: 2026-10-26
+    via: api
+    quote: "supports Ruby 3.2 through 4.0"
+  - field: runtimeMin
+    value: Ruby 3.2
+    url: https://api.github.com/repos/publify/publify/releases/tags/v11.0.0
+    checkedAt: 2026-10-26
+    via: api
+    quote: "supports Ruby 3.2 through 4.0"
+  - field: basedOn
+    value: [Ruby on Rails]
+    url: https://github.com/publify/publify/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The Ruby on Rails publishing software formerly known as Typo"
+  - field: categories
+    value: [blog]
+    url: https://publify.github.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A classic multi user blogging engine"
+  - field: databases
+    value: [mysql, postgresql, sqlite]
+    url: https://github.com/publify/publify/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A database engine, MySQL, PgSQL or SQLite3"
+  - field: contentStore
+    value: [database]
+    url: https://github.com/publify/publify/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A database engine, MySQL, PgSQL or SQLite3"
+  - field: adminUi
+    value: yes
+    url: https://publify.github.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The login / password to the admin"
+  - field: i18n
+    value: yes
+    url: https://publify.github.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Multilingual: Publify is (more or less) translated in English"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/publify/publify/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "web: bundle exec puma -C config/puma.rb"
+  - field: installMethod
+    value: [release archive]
+    url: https://github.com/publify/publify/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "You can download the latest Publify stable release"
+  - field: installMethod
+    value: [git clone]
+    url: https://github.com/publify/publify/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "clone the Publify repository"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/publify/publify
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/publify/publify/master/MIT-LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining"
+  - field: firstRelease
+    value: "2004"
+    url: https://publify.github.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Publify has been around since 2004"
+  - field: currentMajor
+    value: 11
+    url: https://api.github.com/repos/publify/publify/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-23
+    url: https://api.github.com/repos/publify/publify/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 1855
+    url: https://api.github.com/repos/publify/publify
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 72
+    url: https://api.github.com/repos/publify/publify/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [maintainerType, hqCountry, parent, forkOf, successorOf, alternativeTo, headlessApi, multisite, livePreview, userRoles, sso, importsFrom, templating, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, wikidata, docker, endoflifeId, supportedVersions, outputDir, buildCommand, docs]
+unreadable: []
+notes: >
+  The homepage http address redirects to the https address, which answers, so the https address is recorded. The README install section still describes Rails 5.2 and Ruby 2.5 to 2.7; the runtime fact is taken from the release notes of v11.0.0 instead, and the README's database list is the one the install section names. The Gemfile lists mysql2, pg and sqlite3. The application is installed from a release archive or a git clone, not as a gem, so no rubygems figure is recorded; the publify_core engine gem is named in the v11.0.0 release notes and is left out. The project's own homepage calls itself the oldest Ruby on Rails blogware and says it has existed since 2004, which predates the earliest GitHub release (release_7_0_0-beta1, 2013-09-05); firstRelease follows the homepage statement. The project was previously named Typo, a rename stated in the README; no successorOf is recorded. The homepage's demo credentials are not recorded. Current maintainers are four named people in the README; the project's own homepage names the project as the maintainer, which is what is recorded. The homepage Twitter link is a twitter.com address.

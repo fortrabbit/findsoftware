@@ -1,0 +1,3 @@
+Pavex is a framework for building APIs in Rust. Its docs and installer were served from pavex.dev, which now redirects to the GitHub repository, so the documentation is read from the repository's docs folder.
+
+Working on a Pavex project requires the pavex command-line interface, installed with an installer script attached to a GitHub release, and the docs name rustup and a Rust toolchain as its other requirements. The README states the project is in closed beta and asks readers to sign up for early access, and the installation page asks for activation in a console that does not currently resolve.

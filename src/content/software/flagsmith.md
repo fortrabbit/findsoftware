@@ -16,6 +16,9 @@ language: python
 runtime:
   - python
   - node
+hosting:
+  - python
+  - node
 runtimeMin: python 3.11
 databases:
   - postgres
@@ -117,7 +120,6 @@ contentStore: null
 templating: null
 i18n: null
 renderingModes: null
-hosting: null
 packagistDownloads: null
 ---
 

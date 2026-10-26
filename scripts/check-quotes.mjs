@@ -41,7 +41,7 @@ const entities = {
 // Curly quotes, dashes and markup differ between page and quote without changing the words.
 // Markup is stripped only from HTML: in a raw source file, `<?php ... ?>` would take the code with it.
 const stripMarkup = (text) =>
-  text.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, ' ').replace(/<[^>]+>/g, ' ');
+  text.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, ' ').replace(/<\/?[a-z!][^<>]*>/gi, ' ');
 const normalize = (text, html = false) =>
   (html ? stripMarkup(String(text)) : String(text))
     .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')

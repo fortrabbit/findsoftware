@@ -1,0 +1,5 @@
+pretix is a ticket shop application for events, with an online shop, point of sale and an administration interface for reports and team permissions. It is written in Python and runs as a self-hosted application, installed with pip or as a Docker image, with gunicorn serving the web application. The [installation guide](https://docs.pretix.eu/self-hosting/installation/general/) recommends PostgreSQL as the database, and the [API documentation](https://docs.pretix.eu/dev/api/index.html) describes a REST-style API. The company behind it, pretix GmbH, is based in Heidelberg, Germany, and also offers pretix Hosted.
+
+## Worth knowing
+
+Some features are marked as available only in the Hosted and Enterprise editions, not in the Community edition. The license is the GNU AGPL v3 with additional terms. The [LICENSE file](https://github.com/pretix/pretix/blob/master/LICENSE) waives AGPL section 13 only for use outside a list of purposes, which includes offering pretix to third parties as a service, and says the attribution notice at the bottom of generated pages may not be removed.

@@ -1,0 +1,112 @@
+id: optimizely-cms
+name: Optimizely CMS
+status: accepted
+checkedAt: 2026-10-26
+description: Commercial .NET content management system from Optimizely, installed from NuGet packages on Microsoft SQL Server.
+facts:
+  - field: homepage
+    value: https://www.optimizely.com/products/content-management/
+    url: https://www.optimizely.com/products/content-management/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Optimizely CMS"
+  - field: docs
+    value: https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/install-cms13
+    url: https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/install-cms13
+    checkedAt: 2026-10-26
+    via: page
+    quote: "This guide covers a fresh installation of Optimizely CMS 13."
+  - field: description
+    value: Commercial .NET content management system from Optimizely, installed from NuGet packages on Microsoft SQL Server.
+    url: https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/install-cms13
+    checkedAt: 2026-10-26
+    via: page
+    quote: "This guide covers a fresh installation of Optimizely CMS 13."
+  - field: maintainer
+    value: Optimizely North America Inc.
+    url: https://www.optimizely.com/legal/privacy-notice
+    checkedAt: 2026-10-26
+    via: page
+    quote: "referring to Optimizely North America Inc. and Optimizely AB"
+  - field: maintainerType
+    value: company
+    url: https://www.optimizely.com/legal/privacy-notice
+    checkedAt: 2026-10-26
+    via: page
+    quote: "referring to Optimizely North America Inc. and Optimizely AB"
+  - field: runtime
+    value: [dotnet]
+    url: https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/install-cms13
+    checkedAt: 2026-10-26
+    via: page
+    quote: "CMS 13 requires .NET 10"
+  - field: runtimeMin
+    value: .NET 10
+    url: https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/install-cms13
+    checkedAt: 2026-10-26
+    via: page
+    quote: "CMS 13 requires .NET 10"
+  - field: installMethod
+    value: dotnet new install EPiServer.Templates, then the epi-alloy-mvc template
+    url: https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/install-cms13
+    checkedAt: 2026-10-26
+    via: page
+    quote: "dotnet new install EPiServer.Templates"
+  - field: databases
+    value: [mssql]
+    url: https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/install-cms13
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Microsoft SQL Server 2022 or Azure SQL (compatibility level 140+)"
+  - field: headlessApi
+    value: rest
+    url: https://support.optimizely.com/hc/en-us/articles/44937048830221-2026-Optimizely-CMS-13-release-notes
+    checkedAt: 2026-10-26
+    via: page
+    quote: "the CMS REST API"
+  - field: licenseModel
+    value: commercial
+    url: https://docs.developers.optimizely.com/content-management-system/v13.0.0-CMS/docs/install-cms13
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A commercial license is required for testing and production environments."
+  - field: currentMajor
+    value: 13
+    url: https://support.optimizely.com/hc/en-us/articles/44937048830221-2026-Optimizely-CMS-13-release-notes
+    checkedAt: 2026-10-26
+    via: page
+    quote: "EPiServer.CMS.Core 13.1.0"
+  - field: latestReleaseDate
+    value: 2026-06-01
+    url: https://support.optimizely.com/hc/en-us/articles/44937048830221-2026-Optimizely-CMS-13-release-notes
+    checkedAt: 2026-10-26
+    via: page
+    quote: "June 1"
+  - field: categories
+    value: [cms, dxp]
+    url: https://www.optimizely.com/products/content-management/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Optimizely CMS"
+  - field: hostedOffering
+    value: CMS (SaaS)
+    url: https://docs.optimizely.com/cms-saas/docs
+    checkedAt: 2026-10-26
+    via: page
+    quote: "CMS (SaaS) provides the flexibility and scalability"
+  - field: multisite
+    value: true
+    url: https://www.optimizely.com/products/content-management/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Multi-site/multi-channel management"
+  - field: pricingPage
+    value: https://www.optimizely.com/plans
+    url: https://www.optimizely.com/products/content-management/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Plans &amp; pricing"
+notFound: [language, license, nugetName, nugetDownloads, firstRelease, latestPrereleaseDate, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, adminUi, templating, i18n, livePreview, userRoles, sso, importsFrom, paidEdition, endoflifeId, supportedVersions, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, githubStargazers, contributors, repository, outputDir, buildCommand, freeTier, runsAs, renderingModes, selfHostOption]
+unreadable: []
+notes: >
+  The product page at optimizely.com describes a hosted, agentic CMS with front-end hosting and edge delivery, next to the self-hosted CMS 13 whose install guide covers a SQL Server deployment on .NET 10. The Optimizely docs name a separate hosted edition, CMS (SaaS), beside the self-hosted CMS 13, which the hostedOffering fact records. The install guide requires Opti ID and Optimizely Graph for CMS 13, both included in the license. The CSV row has no repository; the NuGet package EPiServer.CMS.Core is named by the release notes and the package-family page, but a NuGet search and the flat-container lookup on 2026-10-26 returned no record for it, so nugetName is not recorded and the release notes are the only registry-side statement. The release notes page is a running log, and the latest entry read is for EPiServer.CMS.Core 13.1.0 dated June 1, which is the major and date recorded here. The legal entity named on the privacy notice is Optimizely North America Inc. with Optimizely AB; no page read gives the company's seat, so hqCountry is not recorded.

@@ -1,0 +1,1 @@
+Puput is a Django app that adds a blog to a Django project, built on the Wagtail content management system. It is installed with pip or as a Docker image, and the blog is edited through an admin site. The documentation describes import paths for Zinnia, WordPress and Blogger blog data.

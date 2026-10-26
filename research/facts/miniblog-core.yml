@@ -1,0 +1,114 @@
+id: miniblog-core
+name: Miniblog.Core
+status: discontinued
+checkedAt: 2026-10-26
+description: ASP.NET Core blog engine, installed as a dotnet project template.
+facts:
+  - field: status
+    value: discontinued
+    url: https://raw.githubusercontent.com/madskristensen/Miniblog.Core/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "is taking pull requests, but is not actively working on it"
+  - field: repository
+    value: https://github.com/madskristensen/Miniblog.Core
+    url: https://api.github.com/repos/madskristensen/Miniblog.Core
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: Mads Kristensen
+    url: https://raw.githubusercontent.com/madskristensen/Miniblog.Core/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright 2017 Mads Kristensen"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/madskristensen
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: C#
+    url: https://api.github.com/repos/madskristensen/Miniblog.Core
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [dotnet]
+    url: https://raw.githubusercontent.com/madskristensen/Miniblog.Core/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Blog engine for ASP.NET Core 10"
+  - field: runtimeMin
+    value: "ASP.NET Core 10"
+    url: https://raw.githubusercontent.com/madskristensen/Miniblog.Core/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Blog engine for ASP.NET Core 10"
+  - field: categories
+    value: [blog]
+    url: https://raw.githubusercontent.com/madskristensen/Miniblog.Core/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A full-featured yet simple blog engine built on ASP.NET Core 10."
+  - field: installMethod
+    value: dotnet new install of a NuGet template package
+    url: https://www.nuget.org/packages/MadsKristensen.AspNetCore.Miniblog
+    checkedAt: 2026-10-26
+    via: page
+    quote: "This package contains a .NET Template Package you can call from the shell/command line"
+  - field: installMethod
+    value: dotnet new --install MadsKristensen.AspNetCore.Miniblog, then dotnet new miniblog
+    url: https://raw.githubusercontent.com/madskristensen/Miniblog.Core/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "dotnet new --install MadsKristensen.AspNetCore.Miniblog"
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/madskristensen/Miniblog.Core/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/madskristensen/Miniblog.Core/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: nugetName
+    value: MadsKristensen.AspNetCore.Miniblog
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:MadsKristensen.AspNetCore.Miniblog
+    checkedAt: 2026-10-26
+    via: api
+  - field: nugetDownloads
+    value: 29516
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:MadsKristensen.AspNetCore.Miniblog
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.nuget.org/v3/registration5-semver1/madskristensen.aspnetcore.miniblog/index.json
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2017"
+    url: https://api.nuget.org/v3/registration5-semver1/madskristensen.aspnetcore.miniblog/index.json
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2017-10-31
+    url: https://api.nuget.org/v3/registration5-semver1/madskristensen.aspnetcore.miniblog/index.json
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 1524
+    url: https://api.github.com/repos/madskristensen/Miniblog.Core
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 30
+    url: https://api.github.com/repos/madskristensen/Miniblog.Core/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, docs, buildCommand, outputDir, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, hqCountry, maintainerType, basedOn, parent, forkOf, successorOf, alternativeTo, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, selfHostOption, hostedOffering, npmName, packagistName, npmWeeklyDownloads, lastCommitDate]
+unreadable: [https://miniblogcore.azurewebsites.net/]
+notes: >
+  Discontinued on the README's own statement that the maintainer "is taking pull requests, but is not actively working on it", which the project states about itself. The live demo and homepage https://miniblogcore.azurewebsites.net/ does not resolve (NXDOMAIN), so no homepage is recorded. The install steps are present in the README (dotnet new --install, then dotnet new miniblog) and on the NuGet page, so criterion 3 holds. The package on NuGet is the one the install docs name; its last upload is 1.0.3 on 2017-10-31, so latestReleaseDate is old, and the repository's last commit on master is 2025-11-24 (not recorded, since a registry release exists). The repository has no GitHub release or tag; the API's license field reads NOASSERTION because the LICENSE file is a short header, and the file itself states Apache License 2.0. The README's "Deploy to Azure" button is not recorded. runsAs is left out: the README's run instructions after its link list cannot be read by check-quotes, and no page states the hosting model in a quotable line. The GitHub profile names Microsoft as company; that is a profile field, not a statement by the project, so no parent is recorded. nugetDownloads is the package total, not a period figure. The README's Open Live Writer support and comments are not fields and are not recorded. The NuGet page for version 1.0.3 carries a notice that the package has at least one critical-severity vulnerability, citing GHSA-958r-g534-ccmr; no field holds advisories, so it is recorded here for the reviewer.

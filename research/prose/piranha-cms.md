@@ -1,0 +1,3 @@
+Piranha CMS is a content management system for ASP.NET Core, built on .NET 8 and Entity Framework Core. It runs as an integrated CMS inside an ASP.NET Core application or as a headless content store for other applications. Content is kept in a database through Entity Framework Core, and the project publishes data packages for SQL Server, SQLite, MySQL and PostgreSQL. Several sites, each with its own content structure, can be mapped to hostnames or subdomains.
+
+The Manager, its admin panel, is built with Bootstrap and Vue.js. New projects come from templates installed with the dotnet CLI, and the templates include a Razor Pages project.

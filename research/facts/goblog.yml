@@ -1,0 +1,129 @@
+id: goblog
+name: GoBlog
+status: accepted
+checkedAt: 2026-10-26
+description: Single-user, multi-blog publishing platform written in Go, with IndieWeb and ActivityPub support.
+facts:
+  - field: repository
+    value: https://github.com/jlelse/GoBlog
+    url: https://api.github.com/repos/jlelse/GoBlog
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/jlelse/GoBlog/tree/master/docs
+    url: https://raw.githubusercontent.com/jlelse/GoBlog/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Documentation"
+  - field: maintainer
+    value: Jan-Lukas Else
+    url: https://raw.githubusercontent.com/jlelse/GoBlog/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2020 - 2025 Jan-Lukas Else"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/jlelse
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/jlelse/GoBlog
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://raw.githubusercontent.com/jlelse/GoBlog/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "written in Go"
+  - field: categories
+    value: [blog]
+    url: https://raw.githubusercontent.com/jlelse/GoBlog/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "single-user, multi-blog platform written in Go"
+  - field: installMethod
+    value: Docker image or go build from source
+    url: https://raw.githubusercontent.com/jlelse/GoBlog/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Docker (Recommended)"
+  - field: runsAs
+    value: [always-on]
+    url: https://raw.githubusercontent.com/jlelse/GoBlog/master/docs/advanced.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "returns HTTP 200 when the server is running"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/jlelse/GoBlog
+    checkedAt: 2026-10-26
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/jlelse/GoBlog/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/jlelse/GoBlog/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "MIT License"
+  - field: githubStargazers
+    value: 281
+    url: https://api.github.com/repos/jlelse/GoBlog
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 6
+    url: https://api.github.com/repos/jlelse/GoBlog/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+  - field: lastCommitDate
+    value: 2026-10-21
+    url: https://api.github.com/repos/jlelse/GoBlog/commits?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+  - field: contentStore
+    value: database
+    url: https://raw.githubusercontent.com/jlelse/GoBlog/master/docs/configuration.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "SQLite database (posts, comments, sessions, etc.)"
+  - field: databases
+    value: [sqlite]
+    url: https://raw.githubusercontent.com/jlelse/GoBlog/master/docs/configuration.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "SQLite database (posts, comments, sessions, etc.)"
+  - field: adminUi
+    value: yes, web editor and settings UI
+    url: https://raw.githubusercontent.com/jlelse/GoBlog/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Web editor with live preview and formatting toolbar"
+  - field: sso
+    value: [OIDC]
+    url: https://raw.githubusercontent.com/jlelse/GoBlog/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "or OIDC (OpenID Connect)"
+  - field: multisite
+    value: yes, multiple blogs in one installation
+    url: https://raw.githubusercontent.com/jlelse/GoBlog/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Multiple blogs under one installation"
+  - field: i18n
+    value: separate blogs per language within one installation
+    url: https://raw.githubusercontent.com/jlelse/GoBlog/master/docs/advanced.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Separate blogs for different languages"
+notFound: [homepage, firstRelease, currentMajor, latestReleaseDate, latestPrereleaseDate, endoflifeId, runtimeMin, renderingModes, livePreview, userRoles, headlessApi, templating, importsFrom, paidEdition, pricingPage, hqCountry, maintainerType, basedOn, parent, forkOf, successorOf, alternativeTo, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, packagistName, npmWeeklyDownloads, selfHostOption, hostedOffering]
+unreadable: [https://goblog.app/]
+notes: >
+  The homepage goblog.app answers with a 302 to https://github.com/jlelse/GoBlog, so it is the repository, not a project site, and no homepage is recorded. The repository has no releases and no tags (releases and tags API both empty), so currentMajor, latestReleaseDate and firstRelease are unknown; the repository was created 2021-09-20 per the API, which is not a release date. Under AGENTS.md a project that never tags a release is judged by its last commit (lastCommitDate 2026-10-21), so the record stays accepted. go.mod declares go 1.27.0, but it is a repository file, not a page, so no runtimeMin is recorded. The README calls GoBlog a blogging platform with an editor, settings UI, plugins and a Matrix chat room; the chat room has no field. livePreview is not recorded: the editor preview renders inside the editor, not on the published site. Categories: a blog platform, mapped to cms by the import. The GitHub profile location is a personal profile, not a company headquarters, so hqCountry is unknown.

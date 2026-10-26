@@ -1,0 +1,104 @@
+id: confetti
+name: Confetti Framework
+status: accepted
+checkedAt: 2026-10-26
+description: Go web application framework for building API servers with routing, middleware and validation.
+facts:
+  - field: homepage
+    value: https://confetti-framework.github.io/docs/
+    url: https://confetti-framework.github.io/docs/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Confetti Framework enables you to write idiomatic Go on a robust foundation"
+  - field: repository
+    value: https://github.com/confetti-framework/confetti
+    url: https://api.github.com/repos/confetti-framework/confetti
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://confetti-framework.github.io/docs/
+    url: https://github.com/confetti-framework/confetti/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Confetti has extensive and thorough documentation"
+  - field: maintainer
+    value: Confetti
+    url: https://github.com/confetti-framework/docs/blob/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2019 Confetti"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/confetti-framework/confetti
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/confetti-framework/confetti
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://confetti-framework.github.io/docs/get-started/installation.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Confetti is a lightweight web framework written in Go"
+  - field: categories
+    value: [framework]
+    url: https://github.com/confetti-framework/confetti/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Confetti is a web application framework with an expressive, elegant syntax"
+  - field: installMethod
+    value: GitHub template repository, then go run cmd/api/main.go api:serve
+    url: https://confetti-framework.github.io/docs/get-started/installation.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'Click on "Use this template" and then "Create a repository"'
+  - field: runsAs
+    value: [always-on]
+    url: https://confetti-framework.github.io/docs/architecture-concepts/lifecycle.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "This server listens for incoming requests"
+  - field: license
+    value: MIT
+    url: https://github.com/confetti-framework/confetti/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Confetti Framework is open-sourced software licensed under the MIT license"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/confetti-framework/confetti/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Confetti Framework is open-sourced software licensed under the MIT license"
+  - field: firstRelease
+    value: "2021"
+    url: https://api.github.com/repos/confetti-framework/confetti/releases/tags/v0.20.4
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/confetti-framework/confetti/releases/tags/v1.0.0
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2025-02-18
+    url: https://api.github.com/repos/confetti-framework/confetti/releases/tags/v1.0.0
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 450
+    url: https://api.github.com/repos/confetti-framework/confetti
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 9
+    url: https://api.github.com/repos/confetti-framework/confetti/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, renderingModes, runtimeMin, endoflifeId]
+unreadable: []
+notes: >
+  The CSV row (candidates-other-languages.csv) lists no repository and says repo not found; the homepage links github.com/confetti-framework/confetti, which exists (450 stars, Go, not archived, last push 2025-02-22), so the row's criterion is superseded. The repository has no LICENSE file; the license is the README statement, and the GitHub API reports license as null. The docs repository LICENSE carries the copyright line used as maintainer. Highest stable GitHub release is v1.0.0 (2025-02-18, not a prerelease); the earliest GitHub release is v0.1.0 (2019-11-01) and the tags up to v0.17.0-rc.1 are flagged prereleases, so firstRelease is the year of the oldest release not flagged a prerelease and not named rc (v0.20.4, 2021-02-07); the first prerelease year is 2019. The CSV row saying repo not found is superseded: the repository exists. The v1.0.0 release notes state the framework is completely dependency-free. The Go module has no registry download figure; none recorded. The framework has no database or deployment page; the configuration page says only that a database connection is configured, with no database named. The Dockerfile in the repository is a development reflex watcher and is not cited. Prose sources: the documentation's lifecycle page (https://confetti-framework.github.io/docs/architecture-concepts/lifecycle.html) describes middleware wrapping each request before the controller, and the logging page (https://confetti-framework.github.io/docs/the-basics/logging.html) says controllers return errors to a central error handler in internal/pkg/handler, which is where logging is customized. The your-first-project page (https://confetti-framework.github.io/docs/get-started/your-first-project.html) registers an endpoint with handler.New, and the configuration page (https://confetti-framework.github.io/docs/the-basics/configuration.html) says configuration is read through typed environment helpers in the config directory and that a .env file is copied from .env.example. The installation page runs the API server with go run cmd/api/main.go api:serve. The homepage says Confetti enables writing idiomatic Go on a robust foundation. The documentation has pages for routing, middleware and validation.

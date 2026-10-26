@@ -1,0 +1,135 @@
+id: poem
+name: Poem
+status: accepted
+checkedAt: 2026-10-26
+description: Full-featured web framework written in Rust.
+facts:
+  - field: repository
+    value: https://github.com/poem-web/poem
+    url: https://api.github.com/repos/poem-web/poem
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://docs.rs/poem
+    url: https://raw.githubusercontent.com/poem-web/poem/master/poem/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "[Docs](https://docs.rs/poem)"
+  - field: maintainer
+    value: sunli
+    url: https://raw.githubusercontent.com/poem-web/poem/master/Cargo.toml
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'authors = ["sunli'
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/poem-web/poem
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/poem-web/poem
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://raw.githubusercontent.com/poem-web/poem/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A full-featured and easy-to-use web framework with the Rust programming language."
+  - field: runtime
+    value: [rust]
+    url: https://raw.githubusercontent.com/poem-web/poem/master/poem/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The minimum supported Rust version for this crate is `1.94.0`."
+  - field: runtimeMin
+    value: "1.85"
+    url: https://crates.io/api/v1/crates/poem
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtimeMin
+    value: "1.94"
+    url: https://raw.githubusercontent.com/poem-web/poem/master/poem/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The minimum supported Rust version for this crate is `1.94.0`."
+  - field: i18n
+    value: yes
+    url: https://raw.githubusercontent.com/poem-web/poem/master/poem/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Support for internationalization"
+  - field: discord
+    value: https://discord.gg/qWWNxwasb7
+    url: https://raw.githubusercontent.com/poem-web/poem/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+  - field: runsAs
+    value: [always-on]
+    url: https://raw.githubusercontent.com/poem-web/poem/master/poem/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'Server::new(TcpListener::bind("0.0.0.0:3000"))'
+  - field: installMethod
+    value: [cargo]
+    url: https://raw.githubusercontent.com/poem-web/poem/master/poem/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "[Cargo package](https://crates.io/crates/poem)"
+  - field: license
+    value: MIT OR Apache-2.0
+    url: https://raw.githubusercontent.com/poem-web/poem/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Licensed under either of"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/poem-web/poem
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/poem-web/poem/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Licensed under either of"
+  - field: firstRelease
+    value: "2020"
+    url: https://crates.io/api/v1/crates/poem
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://crates.io/api/v1/crates/poem
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2025-07-28
+    url: https://crates.io/api/v1/crates/poem
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 4459
+    url: https://api.github.com/repos/poem-web/poem
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 145
+    url: https://api.github.com/repos/poem-web/poem/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateName
+    value: poem
+    url: https://crates.io/api/v1/crates/poem
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateDownloads
+    value: 877180
+    url: https://crates.io/api/v1/crates/poem
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, pricingPage, paidEdition, hostedOffering, usageShare, reportedInstalls, pluginDirectory, pluginCount, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, outputDir, pypiName, npmName]
+unreadable: []
+notes: >
+  No homepage: the GitHub repository and the crate name the repository itself as homepage and the project has no site of its own in its README, so the record is repo-only. The poem.rs address did not connect when checked, and it appears nowhere in the project's pages. The highest stable GitHub release is v2.0.0 (2022-05-31), which is major 2; the crate registry's stable 3.1.12 (2025-07-28) has a higher major, so currentMajor is 3 from crates.io. Poem 4 is in development on the master branch (the workspace Cargo.toml version and the CHANGELOG "[4.0.0] - Unreleased" entry), with no release, so it is not recorded as current. The README badge and the crate README state an MSRV of 1.94.0 for the repository, while the latest release 3.1.12 declares rust_version 1.85 in crates.io; the first runtimeMin entry is the release's crates.io declaration and the second is the README's 1.94.0 statement for the development branch. Two license statements are recorded: the README and workspace Cargo.toml say MIT OR Apache-2.0 and the GitHub repository field detects Apache-2.0. The maintainer is the author named in the workspace Cargo.toml (sunli), an individual; no legal name is stated. The first crate upload is 0.1.0 on 2020-08-05, which predates the GitHub repository creation (2021-08-11), so firstRelease uses the registry. The crateDownloads figure is the last-90-days count from crates.io (recent_downloads); the all-time total is 6152227. The Discord link is the badge image link in the repository README, so it has no visible text to quote. The README's runsAs statement is the example server listening on a port, quoted as the runtime model.

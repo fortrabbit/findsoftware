@@ -1,0 +1,1 @@
+Prologue is a web framework written in Nim, installed with nimble. The [deployment guide](https://planety.github.io/prologue/deployment/) describes running the application server as a process behind nginx, which hands requests to it on a local port. The framework ships no template engine; the [views page](https://planety.github.io/prologue/views/) recommends karax.

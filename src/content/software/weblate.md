@@ -15,6 +15,8 @@ hqCountry: CZ
 language: python
 runtime:
   - python
+hosting:
+  - python
 runtimeMin: python 3.12
 contentStore:
   - database
@@ -107,7 +109,6 @@ headlessApi: null
 templating: null
 i18n: null
 renderingModes: null
-hosting: null
 packagistDownloads: null
 npmWeeklyDownloads: null
 ---

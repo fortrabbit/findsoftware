@@ -1,0 +1,3 @@
+OpenResty is a web platform that bundles the nginx core, a set of third-party nginx modules and their dependencies into one build, and adds LuaJIT so that request handling can be scripted in Lua. The bundle is written in C and maintained by OpenResty Inc. It runs as a long-lived nginx process that is started with its own configuration file.
+
+Installation is through Homebrew, through binary packages for Linux distributions, or by building the source, as the [installation page](https://openresty.org/en/installation.html) describes. The [project homepage](https://openresty.org/) presents it as a web platform built on Nginx and LuaJIT.

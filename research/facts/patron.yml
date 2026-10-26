@@ -1,0 +1,110 @@
+id: patron
+name: patron
+status: accepted
+checkedAt: 2026-10-26
+description: Go framework for creating microservices, with components for HTTP, gRPC and asynchronous message processing.
+facts:
+  - field: repository
+    value: https://github.com/beatlabs/patron
+    url: https://api.github.com/repos/beatlabs/patron
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/beatlabs/patron/tree/master/docs
+    url: https://github.com/beatlabs/patron/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "API docs"
+  - field: forkOf
+    value: mantzas/patron
+    url: https://github.com/beatlabs/patron/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "This fork is maintained by Beat Engineering"
+  - field: maintainer
+    value: Beat Engineering
+    url: https://github.com/beatlabs/patron/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "This fork is maintained by Beat Engineering"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/beatlabs
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2018"
+    url: https://api.github.com/repos/mantzas/patron/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: installMethod
+    value: Go module github.com/beatlabs/patron, imported by package path
+    url: https://github.com/beatlabs/patron/blob/master/docs/api/components/http.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "github.com/beatlabs/patron/component/http"
+  - field: databases
+    value: [mongodb]
+    url: https://github.com/beatlabs/patron/blob/master/docs/api/clients/mongo.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "MongoDB client"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/beatlabs/patron
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/beatlabs/patron/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "needs Go 1.24 as a minimum"
+  - field: runtimeMin
+    value: "1.24"
+    url: https://github.com/beatlabs/patron/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "needs Go 1.24 as a minimum"
+  - field: categories
+    value: [framework, microservices]
+    url: https://github.com/beatlabs/patron/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Patron is a framework for creating microservices"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/beatlabs/patron/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/beatlabs/patron/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/beatlabs/patron/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2025-01-29
+    url: https://api.github.com/repos/beatlabs/patron/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 127
+    url: https://api.github.com/repos/beatlabs/patron
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 53
+    url: https://api.github.com/repos/beatlabs/patron/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, successorOf, alternativeTo, basedOn, headlessApi, livePreview, sso, importsFrom, multisite, i18n, contentStore, adminUi, templating, renderingModes, runsAs, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, pluginDirectory, pluginCount, buildCommand, outputDir, selfHostOption, apiLimits, regions, freeTier, usageShare, reportedInstalls, docker]
+unreadable: []
+notes: >
+  The docs name the Go module path for every package (github.com/beatlabs/patron/component/http) and show import blocks, so the library is added to a Go project by import path; no go get command appears on any page read, so criteria 2 and 3 are judged to hold on the import paths and the status follows the release rule. No homepage: the repository's homepage field is empty, and the thebeat.co link in the README is the maintainer company's site, not the project's. The repository is a fork of mantzas/patron (GitHub reports the parent and the README says "This fork is maintained by Beat Engineering"); the README also names Sotiris Mantzaris as the original creator. The firstRelease year comes from the earliest release on the upstream mantzas/patron repository (2018-06-04); the fork's own earliest release is 2019-01-31, and its latest release is v0.74.0. The maintainer is recorded as the README names it; no legal name or company form appears on any page read. The docs also describe client packages for SQL (database/sql wrapper), Redis, Elasticsearch, MQTT and message brokers; only MongoDB maps to the databases vocabulary. No runsAs is recorded because the pages state that the service hosts HTTP endpoints, not the process model of a deployed service. Go modules have no download figure, so no registry figure is recorded.

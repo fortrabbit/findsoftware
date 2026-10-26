@@ -1,0 +1,70 @@
+id: oracle-adf
+name: Oracle ADF
+status: accepted
+checkedAt: 2026-10-26
+description: Java EE application framework from Oracle for building enterprise applications in JDeveloper and running them on an application server with the ADF runtime installed.
+facts:
+  - field: homepage
+    value: https://www.oracle.com/database/technologies/developer-tools/adf/
+    url: https://www.oracle.com/database/technologies/developer-tools/adf/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Oracle ADF is an end-to-end Java EE framework"
+  - field: docs
+    value: https://docs.oracle.com/en/middleware/developer-tools/adf/14.1.2/index.html
+    url: https://docs.oracle.com/en/middleware/developer-tools/adf/14.1.2/index.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Oracle Application Development Framework (ADF) 14.1.2.0.0"
+  - field: categories
+    value: [framework]
+    url: https://www.oracle.com/database/technologies/developer-tools/adf/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "end-to-end Java EE framework that simplifies application development"
+  - field: language
+    value: Java
+    url: https://www.oracle.com/database/technologies/developer-tools/adf/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Faster and Simpler Java-based Application Development"
+  - field: runtime
+    value: [jvm]
+    url: https://docs.oracle.com/en/middleware/developer-tools/jdeveloper/14.1.2/release-notes-jdev-adf/index.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "You can also leverage the new features and capabilities provided in Java 17 and Java 21."
+  - field: currentMajor
+    value: 14
+    url: https://docs.oracle.com/en/middleware/developer-tools/adf/14.1.2/index.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Oracle Application Development Framework (ADF) 14.1.2.0.0"
+  - field: installMethod
+    value: ADF runtime installed into the application server, for WebLogic Server with the Oracle Fusion Middleware installers
+    url: https://docs.oracle.com/en/middleware/developer-tools/adf/12.2.1.4/administer/deploying-adf-applications.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The application server requires the ADF runtime to run ADF applications."
+  - field: maintainer
+    value: Oracle Corporation
+    url: https://www.oracle.com/legal/copyright.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Oracle Corporation"
+  - field: hqCountry
+    value: US
+    url: https://www.oracle.com/legal/copyright.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Redwood Shores, CA 94065"
+  - field: forum
+    value: https://forums.oracle.com/ords/apexds/domain/dev-community/category/java_development_tools?tags=application-development-in-java,jdeveloper-and-adf
+    url: https://docs.oracle.com/en/middleware/developer-tools/adf/14.1.2/index.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Discussion Forum"
+notFound: [firstRelease, latestReleaseDate, repoOwnerType, repository, license, licenseModel, paidEdition, pricingPage, runsAs, renderingModes, basedOn, parent, forkOf, successorOf, alternativeTo, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, hostedOffering, selfHostOption, pluginDirectory, pluginCount, discord, x, mastodon, bluesky, newsletter, subreddit, usageShare, reportedInstalls, endoflifeId, supportedVersions, runtimeMin, wikidata, buildCommand, outputDir, docker, githubStargazers, contributors]
+unreadable: [https://www.oracle.com/application-development/technologies/adf/ (404 for curl, the CSV homepage), https://www.oracle.com/ (403 for curl), https://www.oracle.com/application-development/technologies/adf/downloads.html (404), https://www.oracle.com/downloads/licenses/adf-essentials.html (404)]
+notes: >
+  Boundary resolved: the CSV row says no versioned release was found, but Oracle's ADF documentation states a current release, 14.1.2.0.0, and the ADF homepage lists it as the "14 Release (14.1.2.0)"; currentMajor is 14 from that page, not from a registry, so it is a vendor statement and not a GitHub release. The CSV homepage https://www.oracle.com/application-development/technologies/adf/ answers 404 to curl, so the homepage recorded is the ADF page Oracle links as its technical overview. Criterion 2 holds on the install pages: the application server needs the ADF runtime, installed into WebLogic Server with the Fusion Middleware installers; the pages read name no other server, so GlassFish is not recorded. The license was not found: no page read states the license of ADF or ADF Essentials, and the Oracle license pages named in the links did not answer, so license and licenseModel are unknown. The ADF homepage labels "Oracle ADF Essentials - FREE"; that is a price statement without a license, so no paidEdition is recorded. The 14.1.2 index says the release runs on a newer platform and keeps the development features of 12.2.1.4. The ADF runtime requirement names no minimum Java version: the release notes name Java 17 and Java 21, so runtimeMin is absent. No first release year is stated on the pages read; the older-version list names 10.1.3 and 11.1.1.9 without dates. The ADF homepage calls ADF an end-to-end Java EE framework, and the 14.1.2 index says it builds on Java EE standards and open-source technologies; no basedOn is recorded because a standard is not a parent project. The 12.2.1.4 deployment page says ADF applications are packaged as an EAR file for deployment and that installing the runtime is not required when JDeveloper runs them in its Integrated WebLogic Server; it also says the application server runs ADF applications; no run model (always-on, per-request) is stated, so runsAs is absent. Oracle Java Cloud Service is named as a deployment target on that same page, and the free cloud tier link on the homepage is generic, so neither is recorded as hostedOffering.

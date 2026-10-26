@@ -1,0 +1,117 @@
+id: rack-app
+name: Rack::App
+status: accepted
+checkedAt: 2026-10-26
+description: Minimalist Ruby framework for building Rack applications with a Sinatra-style DSL.
+facts:
+  - field: repository
+    value: https://github.com/rack-app/rack-app
+    url: https://api.github.com/repos/rack-app/rack-app
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/rack-app/rack-app/wiki
+    url: https://raw.githubusercontent.com/rack-app/rack-app/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Official website How To examples"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/rack-app
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/rack-app/rack-app
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://raw.githubusercontent.com/rack-app/rack-app/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "is a minimalist web framework"
+  - field: runtime
+    value: [ruby]
+    url: https://api.github.com/repos/rack-app/rack-app
+    checkedAt: 2026-10-26
+    via: api
+  - field: installMethod
+    value: gem
+    url: https://raw.githubusercontent.com/rack-app/rack-app/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "gem install rack-app"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/rack-app/rack-app
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/rack-app/rack-app/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "released under the Apache License V2"
+  - field: rubygemsName
+    value: rack-app
+    url: https://rubygems.org/api/v1/gems/rack-app.json
+    checkedAt: 2026-10-26
+    via: api
+  - field: rubygemsDownloads
+    value: 2167713 total
+    url: https://rubygems.org/api/v1/gems/rack-app.json
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2015"
+    url: https://rubygems.org/api/v1/versions/rack-app.json
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 11
+    url: https://api.github.com/repos/rack-app/rack-app/tags?per_page=100
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2023-09-14
+    url: https://rubygems.org/api/v1/versions/rack-app.json
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 410
+    url: https://api.github.com/repos/rack-app/rack-app
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 12
+    url: https://api.github.com/repos/rack-app/rack-app/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: Adam Luzsi
+    url: https://rubygems.org/api/v1/gems/rack-app.json
+    checkedAt: 2026-10-26
+    via: api
+  - field: basedOn
+    value: rack
+    url: https://raw.githubusercontent.com/rack-app/rack-app/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "allowing writing functional and minimalist rack-based applications"
+  - field: templating
+    value: [erb]
+    url: https://raw.githubusercontent.com/rack-app/rack-app/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "use ./app/layout.html.erb as layout"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/rack-app/rack-app/wiki/getting%E2%80%90started
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Your app should now be running at"
+notFound: [homepage, parent, forkOf, successorOf, alternativeTo, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, contentStore, databases, paidEdition, pricingPage, hqCountry, maintainerType, hostedOffering, endoflifeId, npmName, packagistName, wikidata, lastCommitDate, subreddit, discord, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, pluginCount, pluginDirectory, runtimeMin, buildCommand, dependentRepos]
+unreadable: [http://www.rack-app.com/]
+notes: >
+  Status is accepted. The gem's documentation_uri on RubyGems is http://www.rack-app.com/, which answers 403 to the research user agent (a bot check), and https://www.rack-app.com/ and https://rack-app.com/ answer the same; the site is unreadable, so no homepage is recorded and homepage is in notFound. The GitHub wiki linked from the README as the official how-to site (Official website How To examples) and set as the gemspec homepage is recorded as docs; its pages load their content with JavaScript, so only its navigation was read. The README says the framework is inspired by Sinatra, grape and rack; this is recorded as no basedOn because the README says inspired, not built on, and the only dependency it names is rack, which is recorded as basedOn. Templating is recorded from the README's front_end extension example, whose layout file is layout.html.erb; the extension is a separate gem, rack-app-front_end, which the README says adds dependencies. The maintainer is the gem's author line on RubyGems; the README's copyright line covers the logo only. The README lists parameter validation, per-endpoint middleware, file upload and download, streaming, app mounting, static file serving and a built-in test module, says the framework is meant to be used by seasoned web developers, and says it will not gain features without real-life use cases. The README says it is used in production and that it powers Heroku-hosted micro-services; these are statements without a figure and runsAs comes from the wiki's getting-started guide, which starts the application with bundle exec rackup and a config.ru file. The minimum Ruby version is not stated by the gemspec or the README, so runtimeMin is unknown. The RubyGems version history starts with 0.1.0 on 2015-10-03, which matches the first GitHub tag. The highest stable tag is v11.0.2 (2023-09-14); there are no GitHub release objects, and the RubyGems version 11.0.2 is dated 2023-09-14. The homepage_uri on RubyGems is the wiki and the gemspec homepage is the wiki too. The prose claims about the router, the Gemfile entry and mounting come from the README (https://raw.githubusercontent.com/rack-app/rack-app/master/README.md): "The routing uses a prefix tree, thus adding a large number of API endpoints won't affect the routing lookup time"; "Add this line to your application's Gemfile: gem 'rack-app'"; "App mounting so you can create separated controllers for different task", with the usage example "mount SomeAppClass".

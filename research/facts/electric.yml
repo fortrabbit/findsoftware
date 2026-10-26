@@ -1,0 +1,127 @@
+id: electric
+name: Electric Clojure
+status: accepted
+checkedAt: 2026-10-26
+description: Clojure dialect and library for full-stack reactive web interfaces, whose compiler infers the frontend and backend boundary.
+facts:
+  - field: homepage
+    value: https://electric.hyperfiddle.net/
+    url: https://github.com/hyperfiddle/electric3-starter-app/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Tutorial: https://electric.hyperfiddle.net/"
+  - field: repository
+    value: https://github.com/hyperfiddle/electric
+    url: https://api.github.com/repos/hyperfiddle/electric
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://docs.google.com/document/d/1frkb5URGFZUdWyCDl9moGFcPcLuDtW-M-HnCJOHkuDA/
+    url: https://github.com/hyperfiddle/electric/blob/master/Readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Tutorial and reference"
+  - field: x
+    value: https://x.com/dustingetz
+    url: https://github.com/hyperfiddle/electric/blob/master/Readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "for updates, follow us on twitter"
+  - field: maintainer
+    value: Hyperfiddle
+    url: https://tana.pub/lQwRvGRaQ7hM/electric-v3-license-change
+    checkedAt: 2026-10-26
+    via: page
+    quote: "it is the business of my company Hyperfiddle"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/hyperfiddle/electric
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Clojure
+    url: https://api.github.com/repos/hyperfiddle/electric
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/hyperfiddle/electric3-starter-app/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "must run one single JVM that is shared by both the Clojure REPL and shadow-cljs"
+  - field: categories
+    value: [framework]
+    url: https://clojars.org/api/artifacts/com.hyperfiddle/electric
+    checkedAt: 2026-10-26
+    via: api
+    quote: "A reactive Clojure dialect for web development that uses a compiler to infer the frontend/backend boundary"
+  - field: installMethod
+    value: add com.hyperfiddle/electric as a deps.edn dependency, or clone the starter app
+    url: https://github.com/hyperfiddle/electric/blob/master/Readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'com.hyperfiddle/electric {:mvn/version "v3-alpha-SNAPSHOT"}'
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.google.com/document/d/1TgExchcIyWd4BH9qwb4vjp7uaBjWyBtPWEkGqSfvlTk/export?format=txt
+    checkedAt: 2026-10-26
+    via: page
+    quote: "persistent server connection assumed"
+  - field: license
+    value: Hyperfiddle Business Source License
+    url: https://clojars.org/api/artifacts/com.hyperfiddle/electric
+    checkedAt: 2026-10-26
+    via: api
+    quote: "Hyperfiddle Business Source License"
+  - field: license
+    value: free for bootstrappers and non-commercial use, otherwise commercial
+    url: https://github.com/hyperfiddle/electric/blob/master/Readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "free for bootstrappers and non-commercial use"
+  - field: licenseModel
+    value: source-available
+    url: https://tana.pub/lQwRvGRaQ7hM/electric-v3-license-change
+    checkedAt: 2026-10-26
+    via: page
+    quote: "changing the licensing model to a source available business license"
+  - field: paidEdition
+    value: commercial license for commercial use
+    url: https://tana.pub/lQwRvGRaQ7hM/electric-v3-license-change
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Commercial use costs $480/month/developer"
+  - field: firstRelease
+    value: "2022"
+    url: https://api.github.com/repos/hyperfiddle/electric/commits/v20220722
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-02-04
+    url: https://api.github.com/repos/hyperfiddle/electric/commits/v3-alpha-d8066cb0
+    checkedAt: 2026-10-26
+    via: api
+  - field: clojarsName
+    value: com.hyperfiddle/electric
+    url: https://clojars.org/api/artifacts/com.hyperfiddle/electric
+    checkedAt: 2026-10-26
+    via: api
+  - field: clojarsDownloads
+    value: 43927
+    url: https://clojars.org/api/artifacts/com.hyperfiddle/electric
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 2142
+    url: https://api.github.com/repos/hyperfiddle/electric
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 15
+    url: https://api.github.com/repos/hyperfiddle/electric/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, hqCountry, currentMajor, latestReleaseDate, runtimeMin, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, wikidata, endoflifeId, maintainerType, lastCommitDate]
+unreadable: []
+notes: >
+  Accepted with no stable release: every GitHub tag and Clojars version is an alpha, snapshot or 2022 date tag, so currentMajor and latestReleaseDate are absent and the newest alpha is latestPrereleaseDate. The CSV says only alpha tags and was read as a question about stability, not as a failed criterion: the README gives the dependency line and the starter app gives run and deployment steps, and the repository has been pushed in 2026. The homepage electric.hyperfiddle.net answers 200 over https with a JavaScript-rendered page (a tutorial app) and is recorded as homepage, cited from the starter app README that links it as the tutorial; facts are cited from readable pages. The GitHub API reports no license; the license statements are the Clojars entry (Hyperfiddle Business Source License) and the README (free for bootstrappers and non-commercial use), recorded as separate entries. The founder's license announcement, linked from the README, is dated 2024 Oct 20 and states that commercial use is paid; no price is recorded. The Clojars downloads figure is the all-time total of the artifact, and the Clojars API lists the artifact as latest_release v3-alpha-ca05cbc93, which is not a GitHub tag. The 2022 tag v20220722 is the earliest GitHub tag and is the firstRelease year; the repository was created in 2020. The Google doc Mission, Position, Business, Community (export text) states that the project is not for server-side rendering and assumes a persistent server connection; the homepage's tutorial and the starter app's README are cited only where quoted. The prose facts about the compiler inferring the frontend and backend boundary are from the README and the Clojars description. Prose sources: the README describes Electric as full-stack differential dataflow for UI, and says the compiler infers the frontend and backend boundary from the code. The Google doc states that Electric is not built for server-side rendering and that the project assumes a persistent server connection. The starter app README shows a Docker image and a Fly deployment, and a single JVM shared by the REPL and shadow-cljs in development. Prose sources for the compiler: the README says the Electric compiler macros infer at compile time the implied frontend and backend boundary from the code and generate the corresponding full-stack app, and that client and server expressions compose directly in the same function; the Clojars description says the same. The starter app README gives the development command clj -A:dev -X dev/-main and the production steps: an uberjar run with java -cp, a Docker image run on port 8080, and a Fly deploy. The license announcement says commercial use is licensed separately under a source available business license, and the README points to it. The README also says the compiler turns the program into separate reactive client and server target programs that cooperate.

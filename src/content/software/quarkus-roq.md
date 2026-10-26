@@ -17,6 +17,8 @@ runtime:
   - jvm
 hosting:
   - static
+basedOn:
+  - quarkus
 templating: qute
 runsAs:
   - static
@@ -47,6 +49,9 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://iamroq.dev/
+    checkedAt: 2026-10-23
+  - field: basedOn
+    url: https://github.com/quarkiverse/quarkus-roq/blob/main/README.md
     checkedAt: 2026-10-23
   - field: language
     url: https://api.github.com/repos/quarkiverse/quarkus-roq

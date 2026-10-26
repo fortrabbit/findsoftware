@@ -1,0 +1,107 @@
+id: oracle-apex
+name: Oracle APEX
+status: accepted
+checkedAt: 2026-10-26
+description: Low-code platform from Oracle for building and deploying data-driven web applications inside an Oracle Database.
+facts:
+  - field: homepage
+    value: https://www.oracle.com/apex/
+    url: https://www.oracle.com/apex/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Oracle APEX AI Application Generator helps organizations use AI to create secure, scalable, data-driven enterprise applications"
+  - field: docs
+    value: https://docs.oracle.com/en/database/oracle/apex/26.2/index.html
+    url: https://docs.oracle.com/en/database/oracle/apex/26.2/index.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Oracle APEX Release 26.2"
+  - field: categories
+    value: [low-code]
+    url: https://docs.oracle.com/en/database/oracle/apex/index.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "is a low-code development platform"
+  - field: repository
+    value: https://github.com/oracle/apex
+    url: https://api.github.com/repos/oracle/apex
+    checkedAt: 2026-10-26
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/oracle
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: Oracle Corporation
+    url: https://www.oracle.com/legal/copyright.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Oracle Corporation"
+  - field: hqCountry
+    value: US
+    url: https://www.oracle.com/legal/copyright.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Redwood Shores, CA 94065"
+  - field: databases
+    value: [oracle]
+    url: https://docs.oracle.com/en/database/oracle/apex/26.2/htmig/apex-installation-requirements.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Oracle APEX release 26.2 requires an Oracle Database release 19c"
+  - field: contentStore
+    value: database
+    url: https://docs.oracle.com/en/database/oracle/apex/26.2/htmig/about-apex-architecture.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "pages are dynamically generated using metadata stored within the Oracle database"
+  - field: installMethod
+    value: SQL install scripts into an Oracle Database, with Oracle REST Data Services (ORDS) as the web server
+    url: https://docs.oracle.com/en/database/oracle/apex/26.2/htmig/toc.htm
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Installing and Configuring Oracle REST Data Services and Oracle APEX"
+  - field: hostedOffering
+    value: Oracle APEX in Oracle Cloud Infrastructure, with a free tier
+    url: https://www.oracle.com/apex/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Get started with Oracle APEX in OCI for free"
+  - field: githubStargazers
+    value: 661
+    url: https://api.github.com/repos/oracle/apex
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 8
+    url: https://api.github.com/repos/oracle/apex/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.oracle.com/en/database/oracle/apex/26.2/htmig/about-apex-architecture.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "deployed into Oracle WebLogic Server or Apache Tomcat application servers"
+  - field: forum
+    value: https://forums.oracle.com/ords/apexds/domain/dev-community/category/apex
+    url: https://www.oracle.com/apex/
+    checkedAt: 2026-10-26
+    via: page
+  - field: userRoles
+    value: users and roles, with row and column level data access control
+    url: https://www.oracle.com/apex/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "fine-grained control over users, roles, and data access"
+  - field: sso
+    value: federation with identity providers
+    url: https://www.oracle.com/apex/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Easily federate with popular identity providers (IdPs) to enable single sign-on"
+notFound: [firstRelease, latestReleaseDate, currentMajor, language, license, licenseModel, paidEdition, pricingPage, renderingModes, basedOn, parent, forkOf, successorOf, alternativeTo, adminUi, headlessApi, templating, i18n, multisite, livePreview, importsFrom, selfHostOption, maintainerType, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, endoflifeId, supportedVersions, runtimeMin, buildCommand, outputDir, docker, sourcePublic]
+unreadable: [https://apex.oracle.com (403 with an Oracle error page to curl, the CSV homepage)]
+notes: >
+  The CSV homepage https://apex.oracle.com answers 403 with an "experiencing technical difficulty" page to curl, so the homepage recorded is Oracle's product page at https://www.oracle.com/apex/, which answers 200. The current release is 26.2 in Oracle's documentation; APEX versions are year and month (26.2), a calendar version, so currentMajor is absent by the rule for calendar versions, and no release date is stated on the pages read. The oracle/apex GitHub repository, which GitHub reports under the UPL-1.0 license, holds sample code, starter apps and plug-ins, not the APEX engine; the repository is recorded for that reason and the engine's license was not found on the pages read, so license and licenseModel are absent. The product page states that APEX is included at no additional cost with supported Oracle Database editions and that there are no separate license fees; that is a price statement without a license, so it is not recorded as a fact field. ORDS, the Java web server, has licensing costs for WebLogic Server where that is the chosen server, per the requirements page. Database Vault is a licensable option of Oracle Database Enterprise Edition, not an APEX edition, so paidEdition is absent. The CSV names the language as PL/SQL; no fetched page states the language in those words, so language is absent. The databases value oracle is new in this batch. ORDS is a Java-based web server (a J2EE application) in front of the database; APEX itself runs inside the Oracle Database, and the register has no runtime value for that, so no runtime is recorded and the runsAs fact cites the ORDS deployment statement. The product page's social links are Oracle corporate accounts, not APEX's, and are not recorded. The product page mentions Oracle Autonomous AI Database and an Always Free tier; the hosted fact cites only the product page text.

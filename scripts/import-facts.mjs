@@ -602,9 +602,11 @@ for (const file of facts) {
   const runtime = mapped(all('runtime'), runtimeMap, vocab('runtime'));
   if (runtime.length) record.runtime = runtime;
   const hostingOf = { jvm: 'java', beam: 'elixir' };
-  // A build tool, test runner or client-side library never runs on the live server, so it has no hosting need.
+  // A build tool, test runner or client-side library never runs on the live server, so it has no hosting need,
+  // unless a source says it runs as a server process (a UI library rendered from Python or Java).
   const buildOnly = new Set(['build-tool', 'dev-tool', 'testing', 'ui-library', 'css-framework', 'graphics']);
-  const deployed = !record.category?.length || record.category.some((value) => !buildOnly.has(value));
+  const servesProcess = all('runsAs').some((value) => ['always-on', 'per-request'].includes(lower(value)));
+  const deployed = !record.category?.length || servesProcess || record.category.some((value) => !buildOnly.has(value));
   if (record.status !== 'hosted-service' && deployed) {
     const modes = all('renderingModes').map((mode) => lower(mode));
     const runsAs = all('runsAs').map((value) => lower(value));

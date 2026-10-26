@@ -19,6 +19,8 @@ runtime:
 hosting:
   - python
 runtimeMin: python 3.5
+basedOn:
+  - pyramid
 databases:
   - postgres
   - mysql
@@ -63,6 +65,9 @@ sources:
     url: https://kotti.readthedocs.io/en/latest/first_steps/installation.html
     checkedAt: 2026-10-26
   - field: category
+    url: https://raw.githubusercontent.com/Kotti/Kotti/master/README.rst
+    checkedAt: 2026-10-26
+  - field: basedOn
     url: https://raw.githubusercontent.com/Kotti/Kotti/master/README.rst
     checkedAt: 2026-10-26
   - field: adminUi

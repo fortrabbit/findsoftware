@@ -1,0 +1,112 @@
+id: radiance
+name: Radiance
+status: accepted
+checkedAt: 2026-10-26
+description: Web application environment for Common Lisp, for personal websites and deployable applications.
+facts:
+  - field: homepage
+    value: https://shirakumo.org/docs/radiance
+    url: https://shirakumo.org/docs/radiance
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Radiance is a web application environment, which is sort of like a web framework"
+  - field: repository
+    value: https://codeberg.org/shirakumo/radiance
+    url: https://codeberg.org/api/v1/repos/shirakumo/radiance
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://shirakumo.org/docs/radiance
+    url: https://shirakumo.org/docs/radiance
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Radiance is a web application environment"
+  - field: maintainer
+    value: Yukari Hafner
+    url: https://codeberg.org/shirakumo/radiance/raw/branch/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2014 Yukari Hafner"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Shirakumo
+    checkedAt: 2026-10-26
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://codeberg.org/api/v1/repos/shirakumo/radiance/languages
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Common Lisp
+    url: https://codeberg.org/api/v1/repos/shirakumo/radiance/languages
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://codeberg.org/shirakumo/radiance/raw/branch/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Radiance is a web application environment, which is sort of like a web framework"
+  - field: runtime
+    value: [common-lisp]
+    url: https://codeberg.org/shirakumo/radiance/raw/branch/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "(ql:quickload :radiance)"
+  - field: installMethod
+    value: Quicklisp dist (ql-dist:install-dist, then ql:quickload)
+    url: https://codeberg.org/shirakumo/radiance/raw/branch/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "distributed via Quicklisp in a separate dist"
+  - field: license
+    value: zlib
+    url: https://codeberg.org/shirakumo/radiance/raw/branch/master/radiance.asd
+    checkedAt: 2026-10-26
+    via: page
+    quote: ':license "zlib"'
+  - field: licenseModel
+    value: open-source
+    url: https://codeberg.org/shirakumo/radiance/raw/branch/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "This software is provided 'as-is'"
+  - field: lastCommitDate
+    value: 2026-10-15
+    url: https://codeberg.org/api/v1/repos/shirakumo/radiance/commits?limit=1
+    checkedAt: 2026-10-26
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://codeberg.org/shirakumo/radiance-tutorial/raw/branch/master/Part%207.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "If you want to run Radiance in the background as a service"
+  - field: databases
+    value: [postgres]
+    url: https://codeberg.org/shirakumo/radiance-tutorial/raw/branch/master/Part%207.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Connecting to PostgreSQL databases through Postmodern"
+  - field: databases
+    value: [sqlite]
+    url: https://codeberg.org/shirakumo/radiance-tutorial/raw/branch/master/Part%207.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Using the simple SQLite single-file in-process database."
+  - field: templating
+    value: [clip]
+    url: https://codeberg.org/shirakumo/radiance-tutorial/raw/branch/master/Part%201.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Clip will always output XHTML5, and set the appropriate content-type header for that."
+  - field: contributors
+    value: 8
+    url: https://api.github.com/repos/Shirakumo/radiance/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+notFound: [maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, renderingModes, contentStore, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, runtimeMin, outputDir, buildCommand, currentMajor, firstRelease, latestReleaseDate, latestPrereleaseDate, githubStargazers]
+unreadable: []
+notes: >
+  The GitHub repository Shirakumo/radiance is archived, and its README says the project moved to Codeberg in August 2025 and no longer takes issues or pull requests there; the project's own page shirakumo.org/projects/radiance redirects to codeberg.org/shirakumo/radiance, so Codeberg is recorded as the repository and the archive is not a discontinued signal under AGENTS.md. The CSV row said discontinued; the status is accepted because the project moved, and the status follows the release rule. The Codeberg repository has no releases and no tags, and the GitHub repository had none either, so currentMajor and firstRelease are not recorded: radiance.asd and the docs page both state version 2.1.2, which is a declared version and not a release, and the Quicklisp dist at dist.shirakumo.org lists commit hashes only. The newest commit on the default branch is dated 2026-10-15 on Codeberg, recorded as lastCommitDate. The GitHub stargazer count (340) belongs to the archived mirror and is not recorded as githubStargazers; the Codeberg repository shows 7 stars. The shirakumo.org home page calls Shirakumo a collective for open source software and a video game studio, and lists Yukari Hafner as lead author; no imprint with a legal form or country was found, so hqCountry is not recorded. The docs page at shirakumo.org/docs/radiance is the project's own generated documentation and is used as homepage and docs; the project's shirakumo.org/projects page is a redirect to Codeberg. The GitHub profile location of the organization is not used. The tutorial (Part 7, deployment) describes running Radiance as a long-running Lisp process behind an existing HTTP server, so runsAs is always-on; its server implementations are Hunchentoot (default), Wookie and Woo, and the database implementations listed are Postgres (Postmodern) and SQLite (Lambdalite is the default). The tutorial does not give a Lisp implementation requirement beyond "a running Lisp implementation", so runtimeMin is not recorded. The radiance-bootstrap project is a separate repository and is not recorded as a fact here.

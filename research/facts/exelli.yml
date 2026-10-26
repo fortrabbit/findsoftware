@@ -1,0 +1,101 @@
+id: exelli
+name: exelli
+status: stub
+checkedAt: 2026-10-26
+description: Elixir wrapper around the Elli server with a routing and handler syntax.
+facts:
+  - field: repository
+    value: https://github.com/pigmej/exelli
+    url: https://api.github.com/repos/pigmej/exelli
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: Jędrzej Nowak
+    url: https://github.com/pigmej/exelli/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright 2014 Jędrzej Nowak"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/pigmej/exelli
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Elixir
+    url: https://api.github.com/repos/pigmej/exelli
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [elixir]
+    url: https://github.com/pigmej/exelli/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Elli elixir wrapper with some sugar sytnax goodies"
+  - field: categories
+    value: [router]
+    url: https://github.com/pigmej/exelli/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Elli elixir wrapper with some sugar sytnax goodies"
+  - field: basedOn
+    value: Elli
+    url: https://github.com/pigmej/exelli/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Elli elixir wrapper with some sugar sytnax goodies"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/pigmej/exelli/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/pigmej/exelli/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: hexName
+    value: exelli
+    url: https://hex.pm/api/packages/exelli
+    checkedAt: 2026-10-26
+    via: api
+  - field: hexDownloads
+    value: 781
+    url: https://hex.pm/api/packages/exelli
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2014"
+    url: https://hex.pm/api/packages/exelli
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://hex.pm/api/packages/exelli
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2014-12-06
+    url: https://hex.pm/api/packages/exelli
+    checkedAt: 2026-10-26
+    via: api
+  - field: lastCommitDate
+    value: 2022-06-05
+    url: https://api.github.com/repos/pigmej/exelli/commits
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 16
+    url: https://api.github.com/repos/pigmej/exelli
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/pigmej/exelli/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, docs, hqCountry, parent, successorOf, forkOf, alternativeTo, installMethod, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, runtimeMin, endoflifeId, mavenCoordinates]
+unreadable: []
+notes: >
+  Stub: in doubt on criterion 3 and 4. The README has no installation steps: its only dependency instruction is "Add it to mix.exs" for an extra Elli middleware, and the Hex package page shows a dependency line (configs in the Hex API response) but no install page. The project never tags or releases on GitHub, so the import judges it by lastCommitDate (2022-06-05 on master), which is more than four years old; a documented install or a newer commit would settle it. Hex is the package registry the dependency line names, and its only version is 0.1.0, uploaded 2014-12-06, so currentMajor is 0 and firstRelease is 2014 from the registry upload rather than a GitHub tag. The hexDownloads figure of 781 is the all-time total from the Hex API (downloads.all); the same response gives 15 for the last week, not recorded. GitHub reports the license as NOASSERTION, and the Hex metadata lists Apache 2.0; the LICENSE file is the Apache License 2.0. The Hex package has no retirements. The README links no homepage, docs or forum. Prose sources: the README shows a handler module using Exelli.Handler with get and post blocks, a router module that enables handlers and middleware with prefixes, and a call to Exelli.elli_start to start Elli with them, and says that other Elli middleware can be enabled after adding it to mix.exs. The same README shows Exelli.elli_start accepting a plain list of middleware and handler entries in place of a router.
