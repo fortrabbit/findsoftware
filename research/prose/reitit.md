@@ -1,0 +1,1 @@
+reitit is a data-driven router for Clojure and ClojureScript. Its [documentation](https://cljdoc.org/d/metosin/reitit/CURRENT) is hosted on cljdoc. The README says Metosin Oy, a consulting company, develops and maintains the library, and that discussion happens in a channel on the Clojurians Slack. It is distributed on Clojars under the metosin group.

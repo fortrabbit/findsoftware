@@ -1,0 +1,126 @@
+id: rk-boot
+name: rk-boot
+status: accepted
+checkedAt: 2026-10-26
+description: Go library that starts and manages a microservice's backend components, such as web frameworks, databases and middleware, from a YAML file.
+facts:
+  - field: homepage
+    value: https://rk.mofcloud.com/
+    url: https://rk.mofcloud.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Opensource project maintained by rk-dev"
+  - field: repository
+    value: https://github.com/rookie-ninja/rk-boot
+    url: https://api.github.com/repos/rookie-ninja/rk-boot
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://rkdocs.mofcloud.com/
+    url: https://rk.mofcloud.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Please visit documentation for various plugins"
+  - field: maintainer
+    value: rookie ninja
+    url: https://rkdocs.mofcloud.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright © 2022 rookie ninja"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/rookie-ninja
+    checkedAt: 2026-10-26
+    via: api
+  - field: repoCreated
+    value: 2020-07-31
+    url: https://api.github.com/repos/rookie-ninja/rk-boot
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/rookie-ninja/rk-boot
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/rookie-ninja/rk-boot/blob/v2.2.22/go.mod
+    checkedAt: 2026-10-26
+    via: page
+    quote: "go 1.18"
+  - field: runtimeMin
+    value: "1.18"
+    url: https://github.com/rookie-ninja/rk-boot/blob/v2.2.22/go.mod
+    checkedAt: 2026-10-26
+    via: page
+    quote: "go 1.18"
+  - field: categories
+    value: [framework, microservices]
+    url: https://github.com/rookie-ninja/rk-boot/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Build microservice with rk-boot and let the team take over clean and tidy code."
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/rookie-ninja/rk-boot
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/rookie-ninja/rk-boot/blob/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: installMethod
+    value: go get
+    url: https://github.com/rookie-ninja/rk-boot/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "go get github.com/rookie-ninja/rk-boot/v2"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/rookie-ninja/rk-boot/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "boot.WaitForShutdownSig(context.TODO())"
+  - field: databases
+    value: [mysql, postgres, sqlite, sqlserver, mongodb]
+    url: https://rkdocs.mofcloud.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Database MySQL PostgreSQL Redis SQLite SqlServer MongoDB ClickHouse"
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/rookie-ninja/rk-boot/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2024-04-09
+    url: https://api.github.com/repos/rookie-ninja/rk-boot/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2020"
+    url: https://api.github.com/repos/rookie-ninja/rk-boot/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 567
+    url: https://api.github.com/repos/rookie-ninja/rk-boot
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 8
+    url: https://api.github.com/repos/rookie-ninja/rk-boot/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: slack
+    value: https://rk-syz1767.slack.com/
+    url: https://github.com/rookie-ninja/rk-boot/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Slack channel (English)"
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, adminUi, headlessApi, renderingModes, templating, multisite, i18n, livePreview, userRoles, sso, importsFrom, paidEdition, paidEditions, pricingPage, freeTier, hostedOffering, selfHostOption, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, buildCommand, outputDir, latestPrereleaseDate]
+unreadable: [https://rkdev.info/]
+notes: >
+  The README's "Official Site" link, rkdev.info, has no DNS record and answers nothing, so it is listed as unreadable and is not recorded as the homepage. The CSV homepage, rk.mofcloud.com, is the project's own landing page ("Opensource project maintained by rk-dev", the plugin list and a link to the documentation), and it is recorded as homepage; the name rk-dev is the project's own, and the docs copyright line names "rookie ninja", which is recorded as maintainer. The docs site is rkdocs.mofcloud.com (the rookie-ninja/rk-docs source); the plugin pages for each database are linked from the docs site and are not read one by one. The database list is the docs site's Database section; ClickHouse and Redis are in that list but outside the dictionary's database values, so they are named here and not in the databases fact. The highest stable GitHub release is v2.2.22 (2024-04-09) on the v2 module, and the repository last pushed on 2024-10-04; there is no end or deprecation statement. The first GitHub release is v1.0.0 (2020-11-22), which gives 2020. The go.mod at the v2.2.22 tag declares go 1.18. The Go module is github.com/rookie-ninja/rk-boot/v2; the Go proxy has no download figure, so none is recorded. The README describes rk-boot as starting and configuring a gin server, and the docs list gin, gRPC, echo, gf, fiber, gorilla/mux and go-zero as the web frameworks it wraps; those are plugins of rk-boot, not parents of it, so basedOn is not recorded. The Slack link is the project's invite workspace from the README; no other community link was found. The rk-docs plugin pages and the README example describe the YAML entries (for example a gin entry with a name, a port and an enabled flag) that the application registers handlers on. The landing page lists rk-boot as a set of plugins for web frameworks, databases and clouds, and the rk-cloud plugins for AWS and Tencent are not recorded.

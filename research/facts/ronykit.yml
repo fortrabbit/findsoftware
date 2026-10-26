@@ -1,0 +1,133 @@
+id: ronykit
+name: RonyKit
+status: accepted
+checkedAt: 2026-10-26
+description: "Go toolkit for building API servers that serve REST and RPC from one handler."
+facts:
+  - field: repository
+    value: "https://github.com/clubpay/ronykit"
+    url: https://api.github.com/repos/clubpay/ronykit
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: "https://github.com/clubpay/ronykit/tree/main/docs"
+    url: https://github.com/clubpay/ronykit/blob/main/README.MD
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Installation, first server, core concepts"
+  - field: maintainer
+    value: "Ehsan Moosa"
+    url: https://raw.githubusercontent.com/clubpay/ronykit/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2021, Ehsan Moosa"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/clubpay
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2022"
+    url: https://api.github.com/repos/clubpay/ronykit/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/clubpay/ronykit
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/clubpay/ronykit/blob/main/README.MD
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A Go toolkit for building high-performance API servers"
+  - field: runtime
+    value: [go]
+    url: https://github.com/clubpay/ronykit/blob/main/README.MD
+    checkedAt: 2026-10-26
+    via: page
+    quote: "go install github.com/clubpay/ronykit/ronyup@latest"
+  - field: runtimeMin
+    value: "1.25"
+    url: https://github.com/clubpay/ronykit/blob/main/docs/getting-started.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "You need Go 1.25+"
+  - field: installMethod
+    value: homebrew
+    url: https://github.com/clubpay/ronykit/blob/main/README.MD
+    checkedAt: 2026-10-26
+    via: page
+    quote: "brew install clubpay/tap/ronyup"
+  - field: installMethod
+    value: go install
+    url: https://github.com/clubpay/ronykit/blob/main/README.MD
+    checkedAt: 2026-10-26
+    via: page
+    quote: "go install github.com/clubpay/ronykit/ronyup@latest"
+  - field: installMethod
+    value: go get
+    url: https://github.com/clubpay/ronykit/blob/main/docs/getting-started.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "go get github.com/clubpay/ronykit/rony@latest"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/clubpay/ronykit/blob/main/docs/getting-started.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "starts the server and blocks until a shutdown signal arrives"
+  - field: headlessApi
+    value: [rest]
+    url: https://github.com/clubpay/ronykit/blob/main/README.MD
+    checkedAt: 2026-10-26
+    via: page
+    quote: "serve REST and RPC (WebSocket) from the same handler"
+  - field: databases
+    value: [postgres]
+    url: https://github.com/clubpay/ronykit/blob/main/docs/ronyup-guide.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Prefer **Postgres + sqlc** as the default storage stack"
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/clubpay/ronykit
+    checkedAt: 2026-10-26
+    via: api
+  - field: license
+    value: BSD-3-Clause
+    url: https://raw.githubusercontent.com/clubpay/ronykit/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "BSD 3-Clause License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/clubpay/ronykit/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "BSD 3-Clause License"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/clubpay/ronykit/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-25
+    url: https://api.github.com/repos/clubpay/ronykit/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 38
+    url: https://api.github.com/repos/clubpay/ronykit
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 8
+    url: https://api.github.com/repos/clubpay/ronykit/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, pricingPage, freeTier, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, renderingModes, buildCommand, outputDir, maintainerType, templating]
+unreadable: []
+notes: >
+  No homepage: the project has none on GitHub and its README links only to docs in the repository. The root module is v0.27.4 (GitHub release, 2026-10-25); the ronyup CLI is a separate module with its own tags (ronyup/v0.6.8, 2026-10-25), and both give major 0. The first release is v0.1.1 (2022-01-27); the v0.0.1 tag is dated 2022-01-22, so the year is 2022 either way. The getting-started page states Go 1.25+ and is recorded as runtimeMin; rony/go.mod declares a higher Go and the ee package README states Go 1.27, which are not recorded. The repository states no paid edition; the ee directory is code in the same repository. The README names REST and RPC (WebSocket) as the protocols one handler serves; only REST is recorded as headlessApi. databases is the storage stack the ronyup guide says its MCP server prefers by default. Go modules carry no download figure, so none is recorded.

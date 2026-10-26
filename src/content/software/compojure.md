@@ -16,6 +16,8 @@ runtime:
   - jvm
 hosting:
   - java
+basedOn:
+  - ring
 runsAs:
   - always-on
 installMethod: Maven dependency in deps.edn or Leiningen project
@@ -40,6 +42,9 @@ sources:
     url: https://raw.githubusercontent.com/weavejester/compojure/master/README.md
     checkedAt: 2026-10-26
   - field: category
+    url: https://raw.githubusercontent.com/weavejester/compojure/master/README.md
+    checkedAt: 2026-10-26
+  - field: basedOn
     url: https://raw.githubusercontent.com/weavejester/compojure/master/README.md
     checkedAt: 2026-10-26
   - field: language

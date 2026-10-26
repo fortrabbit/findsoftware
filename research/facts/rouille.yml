@@ -1,0 +1,113 @@
+id: rouille
+name: rouille
+status: stub
+checkedAt: 2026-10-26
+description: Synchronous Rust web micro-framework library that serves HTTP requests from a listening socket.
+facts:
+  - field: repository
+    value: https://github.com/tomaka/rouille
+    url: https://api.github.com/repos/tomaka/rouille
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://docs.rs/rouille
+    url: https://raw.githubusercontent.com/tomaka/rouille/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "[the documentation](https://docs.rs/rouille)"
+  - field: maintainer
+    value: Pierre Krieger
+    url: https://raw.githubusercontent.com/tomaka/rouille/master/Cargo.toml
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'authors = ["Pierre Krieger'
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/tomaka/rouille
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/tomaka/rouille
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [micro-framework]
+    url: https://raw.githubusercontent.com/tomaka/rouille/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Rouille is a micro-web-framework library."
+  - field: runtime
+    value: [rust]
+    url: https://raw.githubusercontent.com/tomaka/rouille/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Rouille, a Rust web micro-framework"
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.rs/rouille/latest/rouille/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Listening to a port is done by calling the start_server function"
+  - field: license
+    value: Apache-2.0 OR MIT
+    url: https://raw.githubusercontent.com/tomaka/rouille/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Licensed under either of"
+  - field: license
+    value: MIT/Apache-2.0
+    url: https://raw.githubusercontent.com/tomaka/rouille/master/Cargo.toml
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'license = "MIT/Apache-2.0"'
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/tomaka/rouille
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/tomaka/rouille/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Licensed under either of"
+  - field: firstRelease
+    value: "2016"
+    url: https://crates.io/api/v1/crates/rouille
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/tomaka/rouille/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2023-04-24
+    url: https://api.github.com/repos/tomaka/rouille/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 1242
+    url: https://api.github.com/repos/tomaka/rouille
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 44
+    url: https://api.github.com/repos/tomaka/rouille/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateName
+    value: rouille
+    url: https://crates.io/api/v1/crates/rouille
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateDownloads
+    value: 5154238 last 90 days
+    url: https://crates.io/api/v1/crates/rouille
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, installMethod, runtimeMin, basedOn, hqCountry, maintainerType, parent, forkOf, successorOf, alternativeTo, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, hostedOffering, reportedInstalls, usageShare, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, outputDir, npmName, packagistName]
+unreadable: []
+notes: >
+  Stub: no page of the project states how to add the crate to a project; the README, the docs.rs crate and function pages, the examples and the CHANGELOG carry no dependency line. The README points to the docs.rs documentation and to the examples folder for getting started; docs.rs shows code only and the examples are Rust files with no install step, and no rust-version is stated in the current manifest (the CHANGELOG's minimum Rust versions are historical, so runtimeMin is not recorded). What would settle it: a page or README section stating the Cargo dependency line, or the crate's getting-started guide. The project has no homepage of its own; the crates.io entry and the GitHub repository name no site, so homepage is absent. The README says database handling and templating are not directly handled by the library. It says the library creates a listening socket, and its FAQ says each request is handled in its own dedicated thread with synchronous I/O. The crates.io figure is the 90-day count (recent_downloads); the all-time total is 18142691. The last crate upload is 3.6.2 on 2023-04-24 and the last push on the default branch is 2025-06-17; no archive flag, deprecation or end statement was found. The GitHub releases start at v3.1.0 in 2021, but the crate's first upload is 0.1.0 on 2016-01-24, older than any GitHub release, so firstRelease uses the registry. The maintainer is the Cargo.toml author; no legal name is stated.

@@ -1,0 +1,93 @@
+id: snap
+name: Snap
+status: stub
+checkedAt: 2026-10-26
+description: Haskell web framework and server with a snaplets API for composing applications from pieces, plus sessions, authentication and templates.
+facts:
+  - field: repository
+    value: https://github.com/snapframework/snap
+    url: https://api.github.com/repos/snapframework/snap
+    checkedAt: 2026-10-26
+    via: api
+  - field: hackageName
+    value: snap
+    url: https://hackage.haskell.org/package/snap
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/snapframework/snap/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Snap is a simple and fast web development framework and server written in"
+  - field: language
+    value: Haskell
+    url: https://api.github.com/repos/snapframework/snap
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [haskell]
+    url: https://github.com/snapframework/snap/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "written in Haskell"
+  - field: installMethod
+    value: cabal install snap-templates, then snap init to create a project
+    url: https://github.com/snapframework/snap-templates/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "cabal install snap-templates"
+  - field: license
+    value: BSD-3-Clause
+    url: https://hackage.haskell.org/package/snap-1.1.3.3/snap.cabal
+    checkedAt: 2026-10-26
+    via: page
+    quote: "BSD-3-Clause"
+  - field: maintainer
+    value: Ozgun Ataman, Doug Beardsley, Gregory Collins, Carl Howells, Chris Smith
+    url: https://hackage.haskell.org/package/snap-1.1.3.3/snap.cabal
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Gregory Collins, Carl Howells, Chris Smith"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/snapframework
+    checkedAt: 2026-10-26
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/snapframework/snap
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://hackage.haskell.org/package/snap-1.1.3.3/snap.cabal
+    checkedAt: 2026-10-26
+    via: page
+    quote: "version:        1.1.3.3"
+  - field: latestReleaseDate
+    value: 2023-10-23
+    url: https://hackage.haskell.org/package/snap-1.1.3.3
+    checkedAt: 2026-10-26
+    via: page
+    quote: "2023-10-23T17:15:56Z"
+  - field: firstRelease
+    value: "2010"
+    url: https://hackage.haskell.org/package/snap-0.3.0
+    checkedAt: 2026-10-26
+    via: page
+    quote: "2010-12-20T18:06:16Z"
+  - field: githubStargazers
+    value: 460
+    url: https://api.github.com/repos/snapframework/snap
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 53
+    url: https://api.github.com/repos/snapframework/snap/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, docs, licenseModel, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginCount, wikidata, docker, endoflifeId, supportedVersions, runtimeMin, outputDir, buildCommand, npmName, packagistName]
+unreadable: [https://snapframework.com/, http://snapframework.com/docs, http://www.snapframework.com/]
+notes: >
+  Doubt: the homepage the repository and the cabal file name, snapframework.com, does not answer from this environment (DNS resolves to 97.107.130.19, but connections to ports 80 and 443 time out on repeated tries, for both the apex and www), so no page of the project's own site was read and no homepage is recorded; a later check from a working network that finds the site answering over https settles whether the record is accepted, with homepage and the docs and FAQ pages read. The README names the site as http://www.snapframework.com/, which is not https and is not linked. The GitHub repository has tags up to 1.1.3.2 and no GitHub releases, and Hackage holds 1.1.3.3, uploaded by cydparser on 2023-10-23, which is the newest registry version and is recorded as latestReleaseDate; the first component of the PVP version, 1, is the major. firstRelease is the upload date of the oldest Hackage version, 0.3.0. The maintainer field in the cabal file holds only an address, so the author names stand in as the maintainer; a reviewer may want to decide that. The Hackage description gives the install steps (cabal install snap snap-templates, then snap init), and the snap-templates README gives cabal install snap-templates and snap init. An Internet Archive copy of the site exists and was not used as a source.

@@ -1,0 +1,3 @@
+Scotty is a Haskell web framework inspired by Ruby's Sinatra. It is built on WAI, the web application interface, and runs on the Warp web server. A page is defined by an HTTP verb, a URL pattern and the content it returns, and the project says any template language will do, since anything that returns a Text value works.
+
+The package is published on Hackage, and its cabal file names "The Scotty maintainers" as the maintainer. The [README](https://github.com/scotty-web/scotty/blob/master/README.md) runs its examples with runghc or stack, and each example starts a server that runs until it is stopped. Tutorials and related projects are collected in the [Scotty wiki](https://github.com/scotty-web/scotty/wiki).

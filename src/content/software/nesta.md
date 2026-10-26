@@ -19,6 +19,8 @@ runtime:
 hosting:
   - ruby
   - static
+basedOn:
+  - sinatra
 runsAs:
   - static
   - local
@@ -63,6 +65,9 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://github.com/gma/nesta/blob/main/README.md
+    checkedAt: 2026-10-23
+  - field: basedOn
+    url: https://nestacms.com/about/
     checkedAt: 2026-10-23
   - field: runtime
     url: https://nestacms.com/docs/quick-start/

@@ -1,0 +1,102 @@
+id: sitefinity
+name: Progress Sitefinity
+status: accepted
+checkedAt: 2026-10-26
+description: Commercial .NET content management and digital experience platform from Progress, offered on-premises or as a cloud service.
+facts:
+  - field: homepage
+    value: https://www.progress.com/sitefinity-cms
+    url: https://www.progress.com/sitefinity-cms
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Progress Sitefinity"
+  - field: maintainer
+    value: Progress Software Corporation
+    url: https://www.progress.com/sitefinity-cms
+    checkedAt: 2026-10-26
+    via: page
+    quote: "2026 Progress Software Corporation and/or its subsidiaries or affiliates"
+  - field: docs
+    value: https://www.progress.com/documentation/sitefinity-cms
+    url: https://www.progress.com/documentation/sitefinity-cms/system-requirements
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Before installing Sitefinity CMS, you have to ensure that your system meets the following requirements"
+  - field: runtimeMin
+    value: ".NET Framework 4.8"
+    url: https://www.progress.com/documentation/sitefinity-cms/system-requirements
+    checkedAt: 2026-10-26
+    via: page
+    quote: "NET Framework 4.8 on supported Windows versions."
+  - field: databases
+    value: [sqlserver]
+    url: https://www.progress.com/documentation/sitefinity-cms/system-requirements
+    checkedAt: 2026-10-26
+    via: page
+    quote: "SQL Server 2016, 2017, 2019, 2022, and 2025"
+  - field: installMethod
+    value: NuGet package (full package for MVC mode, lighter package for hybrid ASP.NET Core mode)
+    url: https://www.progress.com/documentation/sitefinity-cms/install-sitefinity
+    checkedAt: 2026-10-26
+    via: page
+    quote: "You install Sitefinity CMS with the full NuGet package"
+  - field: headlessApi
+    value: [rest, graphql]
+    url: https://www.progress.com/sitefinity-cms
+    checkedAt: 2026-10-26
+    via: page
+    quote: "robust REST and OData/GraphQL endpoints"
+  - field: multisite
+    value: yes
+    url: https://www.progress.com/sitefinity-cms
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Multisite Management"
+  - field: forum
+    value: https://community.progress.com/s/topic/0TO4Q00000026ITWAY/sitefinity-general-discussions
+    url: https://www.progress.com/sitefinity-cms
+    checkedAt: 2026-10-26
+    via: page
+  - field: categories
+    value: [cms, dxp]
+    url: https://www.progress.com/sitefinity-cms
+    checkedAt: 2026-10-26
+    via: page
+    quote: "One CMS Unifying Content, Experiences & AI"
+  - field: runtime
+    value: [dotnet]
+    url: https://www.progress.com/sitefinity-cms
+    checkedAt: 2026-10-26
+    via: page
+    quote: "with ASP.NET Core & Next.js"
+  - field: selfHostOption
+    value: yes, on-premises deployment
+    url: https://www.progress.com/sitefinity-cms
+    checkedAt: 2026-10-26
+    via: page
+    quote: "on-premises (self-hosted or via a partner)"
+  - field: hostedOffering
+    value: Sitefinity Cloud, a PaaS on Microsoft Azure, and a managed SaaS option
+    url: https://www.progress.com/sitefinity-cms
+    checkedAt: 2026-10-26
+    via: page
+    quote: "a cloud-based Azure-hosted Platform as a Service (PaaS)"
+  - field: nugetName
+    value: Telerik.Sitefinity.All
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:Telerik.Sitefinity.All
+    checkedAt: 2026-10-26
+    via: api
+  - field: nugetDownloads
+    value: 4215809
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:Telerik.Sitefinity.All
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 15
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:Telerik.Sitefinity.All
+    checkedAt: 2026-10-26
+    via: api
+notFound: [repository, language, runsAs, renderingModes, license, licenseModel, latestReleaseDate, endoflifeId, supportedVersions, pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, adminUi, userRoles, sso, i18n, livePreview, contentStore, templating, importsFrom, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, githubStargazers, contributors, npmName, packagistName]
+unreadable: []
+notes: >
+  Criteria 2 and 3 hold: the product page states an on-premises option, and the documentation has system requirements and installation pages for Sitefinity CMS 15.4 (Windows, IIS, SQL Server, NuGet). The documentation calls the full package legacy MVC mode next to a hybrid mode with an ASP.NET Core renderer. No end statement was found. No page read gives license terms for the on-premises product, so license and licenseModel are left out; the documentation only describes activating an installed license. The NuGet package Telerik.Sitefinity.All is the package the candidate row names, and the major 15 comes from its latest listed version, which matches the 15.4 documentation. The CSV row's last release date is not confirmed by a page or registry field read here, so latestReleaseDate is left out. The community forum link is the product's discussion topic on the Progress community site.

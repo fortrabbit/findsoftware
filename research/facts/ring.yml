@@ -1,0 +1,114 @@
+id: ring
+name: Ring
+status: accepted
+checkedAt: 2026-10-26
+description: Clojure library that abstracts HTTP into one API so web applications, servers and frameworks can share handlers, requests and middleware.
+facts:
+  - field: repository
+    value: https://github.com/ring-clojure/ring
+    url: https://api.github.com/repos/ring-clojure/ring
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/ring-clojure/ring/wiki
+    url: https://github.com/ring-clojure/ring/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "contains more in-depth documentation on how to use Ring"
+  - field: maintainer
+    value: Mark McGranaghan, James Reeves & contributors
+    url: https://github.com/ring-clojure/ring/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright © 2009-2026 Mark McGranaghan, James Reeves & contributors."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/ring-clojure
+    checkedAt: 2026-10-26
+    via: api
+  - field: repoCreated
+    value: 2012-04-29
+    url: https://api.github.com/repos/ring-clojure/ring
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Clojure
+    url: https://api.github.com/repos/ring-clojure/ring
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/ring-clojure/ring/blob/master/CHANGELOG.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The `ring/ring-core` library now requires Java 11+"
+  - field: runtimeMin
+    value: "11"
+    url: https://github.com/ring-clojure/ring/blob/master/CHANGELOG.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The `ring/ring-core` library now requires Java 11+"
+  - field: categories
+    value: [library]
+    url: https://github.com/ring-clojure/ring/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Ring is a Clojure web applications library"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/ring-clojure/ring
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/ring-clojure/ring/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Released under the MIT license."
+  - field: installMethod
+    value: deps.edn or Leiningen dependency
+    url: https://github.com/ring-clojure/ring/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "add the following dependency to your `deps.edn` file"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/ring-clojure/ring/git/refs/tags/1.15.6
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-19
+    url: https://github.com/ring-clojure/ring/blob/master/CHANGELOG.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "## 1.15.6 (2026-10-19)"
+  - field: firstRelease
+    value: "2009"
+    url: https://github.com/ring-clojure/ring/blob/master/CHANGELOG.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "## 0.1.0 (2009-09-06)"
+  - field: clojarsName
+    value: ring/ring-core
+    url: https://clojars.org/api/artifacts/ring/ring-core
+    checkedAt: 2026-10-26
+    via: api
+  - field: clojarsDownloads
+    value: 41768541
+    url: https://clojars.org/api/artifacts/ring/ring-core
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 3891
+    url: https://api.github.com/repos/ring-clojure/ring
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 133
+    url: https://api.github.com/repos/ring-clojure/ring/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, renderingModes, runsAs, templating, multisite, i18n, livePreview, userRoles, sso, importsFrom, paidEdition, paidEditions, pricingPage, freeTier, hostedOffering, selfHostOption, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, buildCommand, outputDir, latestPrereleaseDate, chat, slack]
+unreadable: []
+notes: >
+  No homepage is recorded: the project has no site of its own, only the GitHub repository and the wiki, so the CSV's GitHub address is the repository and the record is repo-only. The generated API documentation at ring-clojure.github.io/ring is a reference, not a homepage. The project has no GitHub releases; the highest stable tag is 1.15.6 (tag date 2026-10-19), so currentMajor is 1 and latestReleaseDate comes from the CHANGELOG entry for that tag. The 2.0.0-alpha1 tag and the 1.15.0-RC1 and beta tags are prereleases and are not recorded as latestPrereleaseDate, which is only set when newer than the latest release. The CHANGELOG's first entry is 0.1.0 on 2009-09-06, which predates the repository's creation in 2012, so firstRelease is 2009. The Java 11 requirement is stated for ring-core in the 1.14.0 entry; no later entry changes it, so it is recorded as the minimum of the latest release. The README lists ring-core, ring-devel, ring-servlet, ring-jakarta-servlet and ring-jetty-adapter as its libraries, and says SPEC.md gives a complete description of the Ring interface. The CHANGELOG 1.14.0 entry also says ring-jetty-adapter requires Java 17 or later, which is why it is not the runtimeMin. The README's copyright line names two people and the contributors; that is recorded as the maintainer statement, with the GitHub organization ring-clojure as the repository owner. Ring says it is inspired by Python's WSGI and Ruby's Rack; that is inspiration, not a stated parent, so basedOn is not recorded. The clojarsDownloads figure is the total for ring/ring-core, the core package named in the README install section; the monorepo's other packages (ring-jetty-adapter and the rest) are not counted. The wiki at github.com/ring-clojure/ring/wiki is listed as docs because the README names it as the in-depth documentation; its pages were not read.

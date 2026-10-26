@@ -23,6 +23,8 @@ hosting:
   - node
   - static
 runtimeMin: ruby 3.3
+basedOn:
+  - roda
 contentStore:
   - flat-file
 databases:
@@ -73,6 +75,9 @@ sources:
   - field: category
     url: https://github.com/bridgetownrb/bridgetown
     checkedAt: 2026-10-18
+  - field: basedOn
+    url: https://www.bridgetownrb.com/
+    checkedAt: 2026-10-24
   - field: language
     url: https://github.com/bridgetownrb/bridgetown
     checkedAt: 2026-10-18

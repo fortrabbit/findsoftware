@@ -1,0 +1,120 @@
+id: rustless
+name: Rustless
+status: stub
+checkedAt: 2026-10-26
+description: REST-like API micro-framework for Rust, built on the Iron web framework.
+facts:
+  - field: repository
+    value: https://github.com/rustless/rustless
+    url: https://api.github.com/repos/rustless/rustless
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://docs.rs/rustless/
+    url: https://raw.githubusercontent.com/rustless/rustless/master/Cargo.toml
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'documentation = "https://docs.rs/rustless/*/rustless/"'
+  - field: maintainer
+    value: Stanislav Panferov
+    url: https://raw.githubusercontent.com/rustless/rustless/master/Cargo.toml
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'authors = ["Stanislav Panferov'
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/rustless/rustless
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/rustless/rustless
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [api-framework]
+    url: https://raw.githubusercontent.com/rustless/rustless/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "REST-like API micro-framework for Rust."
+  - field: runtime
+    value: [rust]
+    url: https://raw.githubusercontent.com/rustless/rustless/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "REST-like API micro-framework for Rust."
+  - field: basedOn
+    value: [iron]
+    url: https://raw.githubusercontent.com/rustless/rustless/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "on top of the [Iron](https://github.com/iron/iron) web framework"
+  - field: installMethod
+    value: [cargo]
+    url: https://raw.githubusercontent.com/rustless/rustless/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "[dependencies.rustless]"
+  - field: runsAs
+    value: [always-on]
+    url: https://raw.githubusercontent.com/rustless/rustless/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'iron::Iron::new(app).http("0.0.0.0:4000").unwrap();'
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/rustless/rustless/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/rustless/rustless/master/Cargo.toml
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'license = "MIT"'
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/rustless/rustless/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: firstRelease
+    value: "2014"
+    url: https://crates.io/api/v1/crates/rustless
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://crates.io/api/v1/crates/rustless
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2016-12-08
+    url: https://crates.io/api/v1/crates/rustless
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 623
+    url: https://api.github.com/repos/rustless/rustless
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 15
+    url: https://api.github.com/repos/rustless/rustless/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateName
+    value: rustless
+    url: https://crates.io/api/v1/crates/rustless
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateDownloads
+    value: 265 last 90 days
+    url: https://crates.io/api/v1/crates/rustless
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, hqCountry, maintainerType, parent, forkOf, successorOf, alternativeTo, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, hostedOffering, reportedInstalls, usageShare, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, outputDir, runtimeMin, npmName, packagistName]
+unreadable: ["http://rustless.org/ and https://rustless.org/ (no answer)"]
+notes: >
+  Stub: the project's own site named in the README, rustless.org, does not answer over http or https, and the API docs it links (rustless.org/rustless/doc) are on that site; the docs.rs address in the crate manifest is the one docs link that remains, and it redirects. The code is still public, the crate is on crates.io, and the README gives an installation line (a Cargo git dependency, and the 0.10.0 crate in its example), so the open question is whether a reader can still install and run it. What would settle it: a live site or a maintainer statement about the project's state, or a docs.rs page for the 0.10.0 crate read as the install reference. The README says the library is in the early stages, that APIs may change and that the library is synchronous under Iron and Hyper, and recommends a reverse proxy such as Nginx. The last commit on the default branch is 2018-07-09, the last crates.io upload 0.10.0 is 2016-12-08, and no GitHub releases exist; the tags run to v0.9.0. The GitHub tag list has no release objects, so currentMajor and latestReleaseDate come from the crates.io registry, the stable release with no GitHub releases to read. The first crates.io upload is 0.1.0 on 2014-11-29, which predates the GitHub tags, so firstRelease uses the registry. The README says the framework is built on top of Iron, which is recorded as basedOn. The README also says it is a port of the Ruby Grape library; a port is not a parent project, so Grape is not recorded as basedOn. The complex example uses rust-postgres, but the README presents it as an example application, so no databases field is recorded. The last push to the repository was 2018-07-09 and no archive flag or deprecation is set. The Stanislav Panferov name appears as the Cargo.toml author and LICENSE copyright holder; no legal form is stated.

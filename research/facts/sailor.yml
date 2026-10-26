@@ -1,0 +1,121 @@
+id: sailor
+name: Sailor
+status: stub
+checkedAt: 2026-10-26
+description: Lua MVC web framework for building web applications on Apache, Nginx and other Lua-capable web servers.
+facts:
+  - field: status
+    value: stub
+    url: https://sailorproject.org/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Anchored in Digital Innovation"
+  - field: repository
+    value: https://github.com/sailorproject/sailor
+    url: https://api.github.com/repos/sailorproject/sailor
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/sailorproject/sailor/tree/master/docs
+    url: https://github.com/sailorproject/sailor/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "/docs - this one is supposed to have documentation"
+  - field: maintainer
+    value: Etiene Dalcol
+    url: https://github.com/sailorproject/sailor/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright 2013-2014 Etiene Dalcol"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/sailorproject
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Lua
+    url: https://api.github.com/repos/sailorproject/sailor
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://api.github.com/repos/sailorproject/sailor
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [lua]
+    url: https://github.com/sailorproject/sailor/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Compatible with Lua 5.1, Lua 5.2 and LuaJIT."
+  - field: runtimeMin
+    value: "Lua 5.1"
+    url: https://github.com/sailorproject/sailor/blob/master/docs/INSTALL_LINUX.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Sailor is compatible with both 5.1 and 5.2."
+  - field: installMethod
+    value: LuaRocks, luarocks install sailor
+    url: https://github.com/sailorproject/sailor/blob/master/docs/INSTALL_LINUX.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "luarocks install sailor"
+  - field: templating
+    value: [lua-pages]
+    url: https://github.com/sailorproject/sailor/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "/views - this is where your lua pages in .lp will go"
+  - field: databases
+    value: [mysql, postgresql, sqlite]
+    url: https://github.com/sailorproject/sailor/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Compatible with MySQL, PostgreSQL, SQLite and other databases supported by the luasql library"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/sailorproject/sailor
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/sailorproject/sailor/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: firstRelease
+    value: "2014"
+    url: https://api.github.com/repos/sailorproject/sailor/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestPrereleaseDate
+    value: 2015-12-02
+    url: https://api.github.com/repos/sailorproject/sailor/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 937
+    url: https://api.github.com/repos/sailorproject/sailor
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 26
+    url: https://api.github.com/repos/sailorproject/sailor/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+  - field: forum
+    value: https://groups.google.com/forum/#!forum/sailor-l
+    url: https://github.com/sailorproject/sailor/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Join our google group for mail list and support"
+  - field: x
+    value: https://twitter.com/sailor_lua
+    url: https://github.com/sailorproject/sailor/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "https://twitter.com/sailor_lua"
+notFound: [homepage, currentMajor, latestReleaseDate, hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, renderingModes, contentStore, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, newsletter, wikidata, endoflifeId, npmName, packagistName]
+unreadable: []
+notes: >
+  Doubt: the homepage sailorproject.org, listed as the project's site in the candidate row over plain http and on the repository, now serves an unrelated business and science blog for both the root and the docs route, so no homepage is recorded and status is stub; a live project site or a stable release would settle it. The repository has no stable release: every GitHub release is a prerelease from v0.1-venus (2014-01-10) to v0.5-alpha (2015-12-02), so currentMajor and latestReleaseDate are unknown. The rockspecs directory lists LuaRocks versions 0.2.1 to 0.5-4, but LuaRocks is not a registry this set reads, so no version figure is recorded. The open issue "Maintainers wanted" (issue 173, last updated 2025-08-22) is a maintainer's call for help, not a statement that the project has ended, so it is not a status fact. The last push was 2022-10-28; the repository is not archived. The README's Gitter badge has no field in this schema and is left out. The install page names Apache with mod_lua, Nginx, Lwan, Lighttpd and CGI servers as hosts, but no page states a request model, so runsAs is not recorded. The maintainer is the copyright holder named in LICENSE; the repository owner is the organization Sailor Project.

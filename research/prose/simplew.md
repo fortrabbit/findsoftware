@@ -1,0 +1,1 @@
+SimpleW is a web server for .NET that a program can run on its own or embed in another .NET application. A project adds it from NuGet with one package reference, and the server then stays active while it listens.

@@ -1,0 +1,115 @@
+id: sharaf
+name: sharaf
+status: accepted
+checkedAt: 2026-10-26
+description: Scala 3 web framework for HTTP servers with routing, typed request parsing, HTML templates and OpenAPI-generated routes.
+facts:
+  - field: homepage
+    value: https://sake92.github.io/sharaf/
+    url: https://sake92.github.io/sharaf/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Sharaf is a minimalistic Scala 3 web framework"
+  - field: repository
+    value: https://github.com/sake92/sharaf
+    url: https://api.github.com/repos/sake92/sharaf
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://sake92.github.io/sharaf/
+    url: https://raw.githubusercontent.com/sake92/sharaf/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Documentation at https://sake92.github.io/sharaf/"
+  - field: discord
+    value: https://discord.gg/g9KVY3WkMG
+    url: https://sake92.github.io/sharaf/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "GitHub Discord"
+  - field: maintainer
+    value: Sakib Hadžiavdić
+    url: https://repo1.maven.org/maven2/ba/sake/sharaf-undertow_3/0.20.0/sharaf-undertow_3-0.20.0.pom
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Sakib Hadžiavdić"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/sake92
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Scala
+    url: https://api.github.com/repos/sake92/sharaf
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://sake92.github.io/sharaf/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "minimalistic Scala 3 web framework"
+  - field: runtime
+    value: [jvm]
+    url: https://sake92.github.io/sharaf/reference/servers.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "sharaf-undertow Undertow JVM Stable"
+  - field: installMethod
+    value: library dependency for Scala CLI, sbt or Mill
+    url: https://sake92.github.io/sharaf/reference/dependencies.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "//> using dep ba.sake::sharaf-undertow:0.20.0"
+  - field: runsAs
+    value: [always-on]
+    url: https://sake92.github.io/sharaf/tutorials/hello-world.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Server started at http://localhost:8181"
+  - field: templating
+    value: [twirl]
+    url: https://sake92.github.io/sharaf/philosophy/why-sharaf.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Twirl for HTML"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/sake92/sharaf/blob/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: mavenCoordinates
+    value: ba.sake:sharaf-undertow_3
+    url: https://repo1.maven.org/maven2/ba/sake/sharaf-undertow_3/maven-metadata.xml
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2024"
+    url: https://api.github.com/repos/sake92/sharaf/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/sake92/sharaf/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-28
+    url: https://api.github.com/repos/sake92/sharaf/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 68
+    url: https://api.github.com/repos/sake92/sharaf
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/sake92/sharaf/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, maintainerType, runtimeMin, renderingModes, buildCommand, outputDir, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, hqCountry, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, sourcePublic, hostedOffering, selfHostOption]
+unreadable: []
+notes: >
+  Sharaf is an Apache-2.0 Scala 3 library on Maven Central (ba.sake, artifact sharaf-undertow_3 named by the install docs); the highest stable GitHub release is 0.20.0, so currentMajor is 0, matching the pre-1.0 numbering. The oldest GitHub release is 0.7.0 (2024-05-29), and the earliest Maven upload in the metadata is 0.10.0, so firstRelease is taken from GitHub. The maintainer is named in the POM developer element as Sakib Hadžiavdić, with the GitHub owner sake92 as a user account; no page gives a company or country. The homepage is an https GitHub Pages site. The docs describe Undertow as the stable server, http4s and the JDK HTTP server as beta, and Scala Native executables as experimental or examples. runsAs comes from the Hello World tutorial, which starts the server and says it started on localhost; no page states a deployment model beyond that. The SQL tutorial uses an in-memory H2 database in its example, which is a tutorial choice, so databases is left out. The docs state OpenAPI-first route generation but no REST or GraphQL statement that fits headlessApi, so it is left out. The README describes route matching on method and path, request parsing into case classes with optional validation, HTML through an html interpolator, server-sent events, OpenAPI-first generation of models and routes through OpenApi4s, GraalVM and Scala Native examples, and an AWS Lambda starter that runs the Undertow app through the Lambda Web Adapter. The homepage and README state no paid tier, pricing page, or sponsorship link.

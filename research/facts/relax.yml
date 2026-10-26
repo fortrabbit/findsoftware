@@ -1,0 +1,102 @@
+id: relax
+name: relax
+status: accepted
+checkedAt: 2026-10-26
+description: Elixir toolset for building JSON:API (jsonapi.org) endpoints and serializers.
+facts:
+  - field: repository
+    value: https://github.com/AgilionApps/relax
+    url: https://api.github.com/repos/AgilionApps/relax
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://hexdocs.pm/relax/
+    url: https://github.com/AgilionApps/relax/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "See http://hexdocs.pm/relax for detailed usage and documentation"
+  - field: maintainer
+    value: Agilion Apps, LLC
+    url: https://github.com/AgilionApps/relax/blob/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright 2014 Agilion Apps, LLC"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/AgilionApps
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Elixir
+    url: https://api.github.com/repos/AgilionApps/relax
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: elixir
+    url: https://github.com/AgilionApps/relax/blob/master/mix.exs
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'elixir: "~> 1.0"'
+  - field: categories
+    value: [framework]
+    url: https://github.com/AgilionApps/relax/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Relax APIs are composed of a Router and Resources for handling requests"
+  - field: basedOn
+    value: [plug]
+    url: https://github.com/AgilionApps/relax/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A Plug based toolset for building simple jsonapi.org spec APIS"
+  - field: headlessApi
+    value: [jsonapi]
+    url: https://github.com/AgilionApps/relax/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A Plug based toolset for building simple jsonapi.org spec APIS"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/AgilionApps/relax/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Relax source code is released under Apache 2 License."
+  - field: currentMajor
+    value: 0
+    url: https://hex.pm/api/packages/relax
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2015-08-29
+    url: https://hex.pm/api/packages/relax
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://hex.pm/api/packages/relax
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 123
+    url: https://api.github.com/repos/AgilionApps/relax
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 5
+    url: https://api.github.com/repos/AgilionApps/relax/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: hexName
+    value: relax
+    url: https://hex.pm/api/packages/relax
+    checkedAt: 2026-10-26
+    via: api
+  - field: hexDownloads
+    value: 4370
+    url: https://hex.pm/api/packages/relax
+    checkedAt: 2026-10-26
+    via: api
+notFound: [hqCountry, paidEdition, pricingPage, renderingModes, runsAs, adminUi, contentStore, databases, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, parent, alternativeTo, discord, x, wikidata]
+unreadable: []
+notes: >
+  No homepage: the repository and the Hex documentation are the only project pages, so homepage is absent. The README calls Relax Alpha software with APIs still stabilizing and says the project is pre 1.0; no page states that the project has ended, and no archive or deprecation flag is set. Activity is old: the repository's pushed_at is 2016-05-14, and the newest Hex release is 0.3.0 from 2015-08-29, so the record is stale and a reviewer should decide whether it stays accepted (the import moves a record with no release in four years to stub on its own). The GitHub repository has tags v0.0.1, v0.0.2 and v0.1.0 and no GitHub releases; the CSV lastRelease 2015-07-03 is the v0.1.0 tag, and the Hex registry has later versions, so the registry figures are used for the release fields. firstRelease is 2014 from the oldest Hex upload (0.0.1, 2014-12-17); the repository was created 2014-11-29. The mix.exs elixir requirement is "~> 1.0", which is not a minimum version of the release, so runtimeMin is absent. The Hex package description reads "A jsonapi.org serializer and optional server implementation in Elixir"; the README describes the project as a Plug based toolset, and the record follows the README. The hexdocs page describes the resource and router modules but states no run model, so runsAs is absent. The Hex download figure is the all-time total.

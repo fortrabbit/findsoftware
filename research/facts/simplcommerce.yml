@@ -1,0 +1,140 @@
+id: simplcommerce
+name: SimplCommerce
+status: accepted
+checkedAt: 2026-10-26
+description: Open-source e-commerce system built on .NET Core, organized as a set of modules inside one application.
+facts:
+  - field: homepage
+    value: https://www.simplcommerce.com
+    url: https://www.simplcommerce.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A simple, cross platform, modularized ecommerce system built on .NET Core"
+  - field: repository
+    value: https://github.com/simplcommerce/SimplCommerce
+    url: https://api.github.com/repos/simplcommerce/SimplCommerce
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://docs.simplcommerce.com/
+    url: https://github.com/simplcommerce/SimplCommerce/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "https://docs.simplcommerce.com/"
+  - field: maintainer
+    value: SimplCommerce
+    url: https://www.simplcommerce.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "2026 SimplCommerce"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/simplcommerce
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: C#
+    url: https://api.github.com/repos/simplcommerce/SimplCommerce
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [e-commerce]
+    url: https://www.simplcommerce.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A simple, cross platform, modularized ecommerce system"
+  - field: basedOn
+    value: .NET
+    url: https://github.com/simplcommerce/SimplCommerce/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "built on .NET Core"
+  - field: runtime
+    value: [dotnet]
+    url: https://github.com/simplcommerce/SimplCommerce/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Visual Studio 2022 and .NET 8"
+  - field: runtimeMin
+    value: "8"
+    url: https://github.com/simplcommerce/SimplCommerce/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Visual Studio 2022 and .NET 8"
+  - field: installMethod
+    value: build from source with Visual Studio or the .NET SDK
+    url: https://github.com/simplcommerce/SimplCommerce/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Build the whole solution."
+  - field: installMethod
+    value: Docker image (testing only)
+    url: https://github.com/simplcommerce/SimplCommerce/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "For testing purpose only `docker run -p 5000:80 simplcommerce/ci-build`"
+  - field: databases
+    value: [sqlserver, postgresql, mysql, sqlite]
+    url: https://www.simplcommerce.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Microsoft SQL Server, PostgreSQL, MySQL, SQLite"
+  - field: contentStore
+    value: database
+    url: https://github.com/simplcommerce/SimplCommerce/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "This action will create the database schema."
+  - field: adminUi
+    value: yes, back-office at /Admin
+    url: https://github.com/simplcommerce/SimplCommerce/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The back-office can be accessed via /Admin"
+  - field: i18n
+    value: yes
+    url: https://www.simplcommerce.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "It's very easy to translate to your own language"
+  - field: licenseModel
+    value: open-source
+    url: https://www.simplcommerce.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "SimplCommerce is free and fully open source on GitHub"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/simplcommerce/SimplCommerce
+    checkedAt: 2026-10-26
+    via: api
+  - field: license
+    value: Apache 2.0
+    url: https://github.com/simplcommerce/SimplCommerce/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "SimplCommerce is licensed under the Apache 2.0 license."
+  - field: firstRelease
+    value: "2017"
+    url: https://api.github.com/repos/simplcommerce/SimplCommerce/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestPrereleaseDate
+    value: 2018-06-16
+    url: https://api.github.com/repos/simplcommerce/SimplCommerce/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 4414
+    url: https://api.github.com/repos/simplcommerce/SimplCommerce
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 75
+    url: https://api.github.com/repos/simplcommerce/SimplCommerce/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [currentMajor, latestReleaseDate, pricingPage, hqCountry, maintainerType, parent, forkOf, successorOf, alternativeTo, headlessApi, userRoles, sso, livePreview, multisite, templating, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, runsAs, renderingModes, outputDir, buildCommand, npmName, packagistName, nugetName, nugetDownloads]
+unreadable: []
+notes: >
+  The homepage is https (http redirects to https) and the README links its docs at docs.simplcommerce.com. Criterion 1 holds (a store system a creator installs and extends). Criterion 2 and 3 hold: the README gives the install steps for Visual Studio and for Mac and Linux with PostgreSQL, and a Docker image for testing only. The project has no stable GitHub release: its only tags are prereleases and older .netcore tags, the newest being v1.0.0-rc from 2018-06-16, so currentMajor and latestReleaseDate are not recorded and no registry release exists. The import will move the record to stub under the four-year rule on its own, so the status is left as the candidate row says; a reviewer decides whether that is wanted. The docs repository (github.com/simplcommerce/docs) was last pushed 2023-01-11 and its developer guide still names ASP.NET Core 3.1, so only the README and homepage are used for current versions. The maintainer is recorded as the project name: the homepage footer carries a copyright line with no legal form, and the LICENSE file has no copyright line. The homepage names OAuth 2.0 and OpenID Connect as integration features, which is not recorded as sso because it describes what the software offers other applications, not how its users sign in. No runsAs is recorded: no page the project controls states how the live site is hosted.

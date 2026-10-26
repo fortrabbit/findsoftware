@@ -13,6 +13,8 @@ status: active
 maintainer: Very Good Ventures
 firstRelease: 2022
 language: dart
+basedOn:
+  - shelf
 installMethod: dart pub global activate
 licenseModel: open-source
 license: MIT
@@ -41,6 +43,9 @@ sources:
     url: https://api.github.com/repos/dart-frog-dev/dart_frog
     checkedAt: 2026-10-26
   - field: category
+    url: https://github.com/dart-frog-dev/dart_frog/blob/main/README.md
+    checkedAt: 2026-10-26
+  - field: basedOn
     url: https://github.com/dart-frog-dev/dart_frog/blob/main/README.md
     checkedAt: 2026-10-26
   - field: installMethod
