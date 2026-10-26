@@ -17,6 +17,8 @@ runtime:
 hosting:
   - static
 runtimeMin: dotnet 8
+basedOn:
+  - blazor
 contentStore:
   - flat-file
 templating: razor
@@ -56,6 +58,9 @@ sources:
     url: https://github.com/BlazorStatic/BlazorStatic/blob/master/README.md
     checkedAt: 2026-10-23
   - field: category
+    url: https://github.com/BlazorStatic/BlazorStatic/blob/master/README.md
+    checkedAt: 2026-10-23
+  - field: basedOn
     url: https://github.com/BlazorStatic/BlazorStatic/blob/master/README.md
     checkedAt: 2026-10-23
   - field: renderingModes

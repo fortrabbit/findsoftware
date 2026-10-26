@@ -19,6 +19,8 @@ runtime:
 hosting:
   - dotnet
 runtimeMin: dotnet 9.0
+basedOn:
+  - blazor
 databases:
   - mongodb
 adminUi: true
@@ -63,6 +65,9 @@ sources:
     url: https://github.com/fluentcms/FluentCMS/blob/dev/README.md
     checkedAt: 2026-10-26
   - field: installMethod
+    url: https://github.com/fluentcms/FluentCMS/blob/dev/README.md
+    checkedAt: 2026-10-26
+  - field: basedOn
     url: https://github.com/fluentcms/FluentCMS/blob/dev/README.md
     checkedAt: 2026-10-26
   - field: category

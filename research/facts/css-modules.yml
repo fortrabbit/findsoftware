@@ -1,0 +1,47 @@
+id: css-modules
+name: CSS Modules
+status: stub
+checkedAt: 2026-10-26
+description: File convention that scopes CSS class and animation names locally, compiled by bundlers and build tools.
+facts:
+  - field: repository
+    value: https://github.com/css-modules/css-modules
+    url: https://api.github.com/repos/css-modules/css-modules
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/css-modules/css-modules/tree/master/docs
+    url: https://raw.githubusercontent.com/css-modules/css-modules/master/docs/get-started.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Setting up CSS Modules"
+  - field: maintainer
+    value: css-modules
+    url: https://api.github.com/repos/css-modules/css-modules
+    checkedAt: 2026-10-26
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/css-modules/css-modules
+    checkedAt: 2026-10-26
+    via: api
+  - field: lastCommitDate
+    value: 2024-03-23
+    url: https://api.github.com/repos/css-modules/css-modules/commits
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 18039
+    url: https://api.github.com/repos/css-modules/css-modules
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 24
+    url: https://api.github.com/repos/css-modules/css-modules/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, firstRelease, currentMajor, latestReleaseDate, latestPrereleaseDate, language, runtime, runtimeMin, runsAs, renderingModes, installMethod, license, licenseModel, basedOn, categories, hqCountry, paidEdition, pricingPage, endoflifeId, npmName, npmWeeklyDownloads, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, usageShare, databases, contentStore, templating, i18n, sso, adminUi, headlessApi]
+unreadable: []
+notes: >
+  Doubt: the repository holds documentation for a file convention and no installable package, so criterion 2 cannot be judged; the setup page lists bundlers and frameworks that support the convention (Webpack's css-loader, Vite through Lightning CSS, PostCSS through postcss-modules and others) and gives no install step for this repository. Settling it needs a decision on whether a specification repository that no project installs is a candidate at all; a reviewer should decide that before any fact moves. The repository has no GitHub release or tag and no LICENSE file in its root listing, so no license and no firstRelease are recorded. The npm package named css-modules (0.3.0) is a different project and is not used. The repository has no homepage, so the docs link is the repository's own docs folder. The owner is the css-modules GitHub organization, the only name the repository gives as maintainer.
+  The README defines a CSS Module as a CSS file where all class names and animation names are scoped locally by default, says such files compile to a low-level interchange format called ICSS, and says importing one from a JavaScript module exports an object that maps local names to global names. The repository description reads "Documentation about css-modules".

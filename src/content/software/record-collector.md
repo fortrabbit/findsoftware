@@ -16,6 +16,8 @@ runtime:
   - dotnet
 hosting:
   - static
+basedOn:
+  - blazor
 contentStore:
   - flat-file
 templating: blazor
@@ -61,6 +63,9 @@ sources:
     checkedAt: 2026-10-23
   - field: runsAs
     url: https://record-collector.net/pages/getting-started/
+    checkedAt: 2026-10-23
+  - field: basedOn
+    url: https://record-collector.net/
     checkedAt: 2026-10-23
   - field: installMethod
     url: https://record-collector.net/pages/getting-started/

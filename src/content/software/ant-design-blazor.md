@@ -20,6 +20,7 @@ hosting:
   - static
 runtimeMin: dotnet 3.1
 basedOn:
+  - blazor
   - ant-design
 i18n: yes
 runsAs:

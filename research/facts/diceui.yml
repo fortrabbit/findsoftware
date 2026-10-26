@@ -1,0 +1,95 @@
+id: diceui
+name: Dice UI
+status: accepted
+checkedAt: 2026-10-26
+description: A set of accessible React components, distributed as copy-paste source through the shadcn/ui CLI.
+facts:
+  - field: homepage
+    value: https://diceui.com
+    url: https://diceui.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Accessible shadcn/ui components built with React, TypeScript, and Tailwind CSS."
+  - field: repository
+    value: https://github.com/sadmann7/diceui
+    url: https://github.com/sadmann7/diceui
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://diceui.com/docs/introduction
+    url: https://diceui.com/docs/introduction
+    checkedAt: 2026-10-26
+    via: page
+  - field: maintainer
+    value: Sadman Sakib
+    url: https://github.com/sadmann7/diceui/blob/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2024 Sadman Sakib"
+  - field: maintainerType
+    value: individual
+    url: https://api.github.com/users/sadmann7
+    checkedAt: 2026-10-26
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/sadmann7
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://github.com/sadmann7/diceui
+    checkedAt: 2026-10-26
+    via: api
+  - field: basedOn
+    value: shadcn/ui
+    url: https://diceui.com/docs/introduction
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Dice UI is a collection of fully composable components that extend shadcn/ui"
+  - field: categories
+    value: [copy-paste]
+    url: https://diceui.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copy-paste ready, and customizable."
+  - field: installMethod
+    value: shadcn CLI
+    url: https://github.com/sadmann7/diceui/blob/main/docs/content/docs/components/base/action-bar.mdx
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'npx shadcn@latest add "@diceui/action-bar"'
+  - field: license
+    value: MIT
+    url: https://github.com/sadmann7/diceui
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/sadmann7/diceui
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: 2024
+    url: https://api.github.com/repos/sadmann7/diceui/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 2098
+    url: https://github.com/sadmann7/diceui
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 18
+    url: https://api.github.com/repos/sadmann7/diceui/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+  - field: x
+    value: https://x.com/sadmann17
+    url: https://diceui.com/
+    checkedAt: 2026-10-26
+    via: page
+notFound: [runtime, runtimeMin, runsAs, renderingModes, currentMajor, latestReleaseDate, npmName, npmWeeklyDownloads, dependentPackages, dependentRepos, httpArchiveSites, hqCountry, pricingPage, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, endoflifeId, eolPolicy, releaseCadence, alternativeTo, parent, forkOf, successorOf, packagistName]
+unreadable: []
+notes: >
+  The www.diceui.com homepage answers with Cloudflare error 526 (invalid SSL certificate), and www.sadmn.com, the maintainer's site, does the same; the apex diceui.com answers 200 with the project's own page, so it is the homepage. The install command is a shadcn registry item, shown as npx shadcn@latest add "@diceui/action-bar" in the component page source, rather than an npm install of one package. The repository is a monorepo of per-component packages (@diceui/combobox, @diceui/mention and others) with one GitHub release per package tag, and the install docs name no single package, so currentMajor and latestReleaseDate are not recorded; a reviewer should decide whether the newest package release (@diceui/mention 1.0.0, 2026-08-28) stands for the project. No npm figure is recorded for the same reason. The homepage links the maintainer's X account from the "Built by" line, recorded as x. The introduction page credits Base UI as the default component primitives and Radix UI as the alternative primitives; they are not recorded as basedOn. firstRelease is 2024, the year of the oldest package release (December 2024). Contributors counts contributor accounts from the API list with per_page=1, read from the Link header.

@@ -1,0 +1,1 @@
+concrete.css is a classless CSS stylesheet built for lightness and simplicity. It styles plain HTML elements directly, without class names, and it is loaded either as a link in the page head or as an npm package imported into a project. The stylesheet switches to a dark theme when the operating system uses one. The project names Milligram and Skeleton as its inspiration.

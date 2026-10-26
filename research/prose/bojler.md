@@ -1,0 +1,1 @@
+Bojler is an email framework for developing responsive and lightweight email templates. Its source is SCSS and HTML, and it is installed from a downloaded release archive or a clone of the repository. Building it needs Node.js and npm, and a local development server compiles the source as it changes. Slicejack created the project and publishes it under the MIT license.

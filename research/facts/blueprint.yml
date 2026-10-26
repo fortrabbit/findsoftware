@@ -1,0 +1,132 @@
+id: blueprint
+name: Blueprint
+status: accepted
+checkedAt: 2026-10-26
+description: React UI toolkit of components and styles for data-dense web interfaces, developed at Palantir.
+facts:
+  - field: homepage
+    value: https://blueprintjs.com/
+    url: https://blueprintjs.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A React-based UI toolkit for the web"
+  - field: repository
+    value: https://github.com/palantir/blueprint
+    url: https://github.com/palantir/blueprint
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://blueprintjs.com/docs/
+    url: https://blueprintjs.com/docs/
+    checkedAt: 2026-10-26
+    via: page
+  - field: firstRelease
+    value: 2016
+    url: https://registry.npmjs.org/@blueprintjs/core
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: Palantir Technologies
+    url: https://registry.npmjs.org/@blueprintjs/core
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainerType
+    value: company
+    url: https://blueprintjs.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Blueprint is an open source project developed at Palantir."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/palantir
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://github.com/palantir/blueprint
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [ui-library]
+    url: https://blueprintjs.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A React-based UI toolkit for the web"
+  - field: basedOn
+    value: React
+    url: https://github.com/palantir/blueprint
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Blueprint is a React-based UI toolkit for the web."
+  - field: installMethod
+    value: [npm]
+    url: https://github.com/palantir/blueprint/blob/develop/packages/docs-app/src/getting-started.mdx
+    checkedAt: 2026-10-26
+    via: page
+    quote: "pnpm add @blueprintjs/core react react-dom"
+  - field: runsAs
+    value: browser
+    url: https://github.com/palantir/blueprint
+    checkedAt: 2026-10-26
+    via: page
+    quote: "which run in modern browsers"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/palantir/blueprint
+    checkedAt: 2026-10-26
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://blueprintjs.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Licensed under Apache-2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/palantir/blueprint
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 6
+    url: https://github.com/palantir/blueprint/releases/tag/@blueprintjs/core@6.21.0
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-30
+    url: https://github.com/palantir/blueprint/releases/tag/@blueprintjs/core@6.21.0
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 22164
+    url: https://github.com/palantir/blueprint
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 426
+    url: https://github.com/palantir/blueprint
+    checkedAt: 2026-10-26
+    via: api
+  - field: npmName
+    value: "@blueprintjs/core"
+    url: https://registry.npmjs.org/@blueprintjs/core
+    checkedAt: 2026-10-26
+    via: api
+  - field: npmWeeklyDownloads
+    value: 189242
+    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@blueprintjs/core
+    checkedAt: 2026-10-26
+    via: api
+  - field: dependentPackages
+    value: 432
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@blueprintjs%2Fcore
+    checkedAt: 2026-10-26
+    via: api
+  - field: dependentRepos
+    value: 5906
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@blueprintjs%2Fcore
+    checkedAt: 2026-10-26
+    via: api
+notFound: [hqCountry, parent, paidEdition, sso, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, importsFrom, renderingModes, templating, runtime, runtimeMin, httpArchiveSites, discord, x, bluesky, mastodon, newsletter, forum, subreddit, pluginDirectory, pluginCount, endoflifeId, eolPolicy]
+unreadable: []
+notes: >
+  Monorepo: the npm package named by the install docs is @blueprintjs/core (core), so the core package is recorded; the repository publishes several packages (icons, table, select, datetime, and build tooling), and the per-package GitHub releases are the release signal. The GitHub release for @blueprintjs/core 6.21.0 (2026-09-30) is the highest stable release, so currentMajor is 6; npm's next tag (6.0.0-alpha.1) is a prerelease and is not used. The install docs are the getting-started page source in the docs app, read on GitHub, since blueprintjs.com/docs renders client-side. The homepage footer shows "© 2014–2018 Palantir Technologies", which is out of date, so the npm author field, Palantir Technologies, is recorded as maintainer. The palantir.com footer reads "© 2025 Palantir Technologies Inc. All rights reserved.", but it is served inside a script payload, so the legal form Inc. is not recorded as a checked quote. Palantir's headquarters is not stated on any page read, so hqCountry is not set. The core package's peer dependencies are react and react-dom, versions 18 and 19 (package.json at packages/core); a manifest is a source but not a runtime statement, so runtime is not set. The npm downloads figure is the sum for 2026-10-18 to 2026-10-24. The first npm upload is 0.1.0 on 2016-11-11, and the repository was created on 2016-10-25. The homepage has GitHub and careers links only, and the README links no social account. The HTTP Archive technology list has no Blueprint entry. The getting-started page says each package contains a CSS file and a collection of ES modules exposing React components, and that the icon font stylesheet comes from the icons package, imported next to the core stylesheet. The README lists icons, date and time, select, table and color packages in the repository.

@@ -1,0 +1,128 @@
+id: crayons
+name: Crayons
+status: accepted
+checkedAt: 2026-10-26
+description: Library of web components that follows the Freshworks Design System, published by Freshworks.
+facts:
+  - field: homepage
+    value: https://crayons.freshworks.com
+    url: https://crayons.freshworks.com
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Craft great apps with an open-source and framework-agnostic component library."
+  - field: repository
+    value: https://github.com/freshworks-oss/crayons
+    url: https://api.github.com/repos/freshworks-oss/crayons
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://crayons.freshworks.com/introduction/
+    url: https://raw.githubusercontent.com/freshworks-oss/crayons/next/www/introduction/readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "You can install a specific version of `Crayons` using `crayons@v[version]`"
+  - field: firstRelease
+    value: 2020
+    url: https://registry.npmjs.org/@freshworks/crayons
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: Freshworks Inc
+    url: https://crayons.freshworks.com
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright © Freshworks Inc. All Rights Reserved"
+  - field: maintainerType
+    value: company
+    url: https://crayons.freshworks.com
+    checkedAt: 2026-10-26
+    via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/freshworks-oss/crayons
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/freshworks-oss/crayons
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [component-library]
+    url: https://crayons.freshworks.com
+    checkedAt: 2026-10-26
+    via: page
+    quote: "framework-agnostic component library"
+  - field: basedOn
+    value: [Stencil]
+    url: https://raw.githubusercontent.com/freshworks-oss/crayons/next/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "This project is built with StencilJS"
+  - field: installMethod
+    value: [npm]
+    url: https://raw.githubusercontent.com/freshworks-oss/crayons/next/www/introduction/readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "npm install @freshworks/crayons@v4 --save"
+  - field: installMethod
+    value: [cdn]
+    url: https://raw.githubusercontent.com/freshworks-oss/crayons/next/www/introduction/readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "From your app’s root `html` file add the following scripts:"
+  - field: i18n
+    value: yes
+    url: https://raw.githubusercontent.com/freshworks-oss/crayons/next/www/introduction/readme.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "[i18n](https://crayons.freshworks.com/utilities/i18n) support"
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/@freshworks/crayons
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://registry.npmjs.org/@freshworks/crayons
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/freshworks-oss/crayons/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2023-07-05
+    url: https://registry.npmjs.org/@freshworks/crayons
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-09-12
+    url: https://api.github.com/repos/freshworks-oss/crayons/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 248
+    url: https://api.github.com/repos/freshworks-oss/crayons
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 42
+    url: https://api.github.com/repos/freshworks-oss/crayons/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: npmName
+    value: '@freshworks/crayons'
+    url: https://registry.npmjs.org/@freshworks/crayons
+    checkedAt: 2026-10-26
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1081 (2026-10-18 to 2026-10-24)
+    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@freshworks/crayons
+    checkedAt: 2026-10-26
+    via: api
+notFound: [runtime, runtimeMin, runsAs, renderingModes, hqCountry, paidEdition, pricingPage, endoflifeId, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, usageShare, databases, contentStore, templating, sso, adminUi, headlessApi]
+unreadable: [https://crayons.freshworks.com/introduction/ (403 to the fetcher; read from the docs source in the repository)]
+notes: >
+  The npm dist-tag latest is 2.13.4 (2022-03-30), older than the v4 line the docs install (npm install @freshworks/crayons@v4); the highest stable GitHub release of the package is @freshworks/crayons@4.2.0 (2023-07-05), so currentMajor is 4. The newest release is the prerelease @freshworks/crayons@4.3.0-dew.19 (GitHub, 2026-09-12); it is not on npm under a dist-tag. This record was a boundary row only because the window held prereleases and no stable release: a pre-release in four years keeps a record listed under the import's rule, so the status is accepted. The homepage refuses the fetcher (403), so social and community links on it were not readable; the CSV row should move from boundary to accepted. The README says a React wrapper is available, which is recorded here and not as a framework fact. The root package.json of the next branch names the package crayons (MIT, author Freshworks Inc), which is the monorepo root and not the install target; the repository has no LICENSE file on the next branch, so the license is the npm statement. The docs site refuses the fetcher (403); the docs were read from the www folder of the repository, which the site builds from. Contributors is the page number of the rel="last" link with per_page=1.

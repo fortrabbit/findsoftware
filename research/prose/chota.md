@@ -1,0 +1,1 @@
+Chota is a CSS framework that applies a few basic styles to plain HTML elements, following HTML semantics, and does not rely on many class names. It includes a 12-column grid, a handful of components and utilities, CSS variables for theming, a dark mode switch and icon support. It uses no preprocessor, and the README points to a fork for Sass support.

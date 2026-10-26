@@ -1,0 +1,5 @@
+Blazor is a web UI framework in which the components are written in Razor and C#, and the same components can run in one of several hosting models. In the Blazor Server model they execute on the server inside an ASP.NET Core app and update the page over a SignalR connection. In the WebAssembly model they run in the browser on a .NET runtime that is downloaded with the app. Blazor Web Apps combine static rendering, interactive server rendering and client-side rendering in one app. Microsoft maintains it as part of the ASP.NET Core repository, and the templates come from the .NET SDK and Visual Studio.
+
+## Worth knowing
+
+The hosting model decides what the site needs. A Blazor Server app needs a running ASP.NET Core server, and the docs state that serverless deployment is not possible for it. A standalone WebAssembly app can be served as static files from a CDN, but the docs state that it is limited to a subset of the .NET APIs and that its browser runtime must be downloaded before the app starts.
