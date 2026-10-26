@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import { loadFacets, loadPairPages } from '../lib/facets';
 import { pairPath } from '../lib/pairs';
 import { loadProviders } from '../lib/providers';
-import { recordMarkdownPath, recordPath } from '../lib/paths';
+import { recordMarkdownPath } from '../lib/paths';
 
 /**
  * The dataset is the asset and being cited is the distribution thesis, so the
@@ -65,6 +65,7 @@ export const GET: APIRoute = async ({ site }) => {
     `- [software.csv, the same records as one table](${origin}/software.csv)`,
     `- [llms-full.txt, the whole register as one document](${origin}/llms-full.txt)`,
     `- [feed.xml, records ordered by the date they were last checked](${origin}/feed.xml)`,
+    `- [openapi.json, these files described as a read-only API](${origin}/openapi.json)`,
     '',
     /*
      * The rule, said once, rather than a second URL beside two hundred links. A
@@ -76,7 +77,11 @@ export const GET: APIRoute = async ({ site }) => {
      * false of the three list pages beside the register — a 404 for anything that
      * believed it.
      */
-    'A record, a facet value and a whole facet each have a markdown copy at the same address with `.md` appended: /kirby.md, /categories/cms.md, /categories/index.md. So does every written page: /about.md, /criteria.md.',
+    'A record, a facet value and a whole facet each have a markdown copy at the same address with `.md` appended: /kirby.md, /categories/cms.md, /categories/index.md. So does every written page: /about.md, /criteria.md. A record also has a JSON copy with `.json` appended, every field with its source and the date it was read: /kirby.json.',
+    '',
+    '## Facets',
+    '',
+    ...facets.map((facet) => `- [${facet.label}](${origin}/${facet.id}/index.md): ${facet.values.length} values`),
     '',
     /*
      * Two facets at once — "PHP CMSs with a database" — which is the shape of the
@@ -104,10 +109,8 @@ export const GET: APIRoute = async ({ site }) => {
     '',
     `## Software (${providers.length})`,
     '',
-    ...providers.map(
-      (provider) =>
-        `- [${provider.data.name}](${origin}${recordPath(provider)}): ${provider.data.description ?? 'No description recorded yet.'} — record as markdown: ${origin}${recordMarkdownPath(provider)}`,
-    ),
+    // Names only, each at its markdown copy: the descriptions are in llms-full.txt, and an index is read whole.
+    ...providers.map((provider) => `- [${provider.data.name}](${origin}${recordMarkdownPath(provider)})`),
     '',
   ];
 

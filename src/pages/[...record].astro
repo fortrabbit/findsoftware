@@ -4,7 +4,7 @@ import Base from '../layouts/Base.astro';
 import { fieldGroups, fieldOf, labelOf, type Field } from '../lib/fields';
 import { backlinks, cells, footnotes } from '../lib/record';
 import { asideKindGroup, isListed, loadSoftware } from '../lib/providers';
-import { recordMarkdownPath, recordPath } from '../lib/paths';
+import { recordJsonPath, recordMarkdownPath, recordPath } from '../lib/paths';
 import { asideGroupOf, loadFacets } from '../lib/facets';
 import { toRow } from '../lib/rows';
 import { similarTo } from '../lib/similar';
@@ -15,6 +15,7 @@ import {
   joinAnd,
   licenceUrl,
   providerId,
+  softwareNode,
   publisherRef,
   recordTitle,
   soften,
@@ -304,6 +305,7 @@ const metaDescription = data.description
   title={recordTitle(data.name, categoryLabels)}
   description={metaDescription}
   markdown={recordMarkdownPath(provider)}
+  json={recordJsonPath(provider)}
   markdownInPage
   hidden={!listed}
   image={cardPath(provider.id)}
@@ -346,17 +348,7 @@ const metaDescription = data.description
        * the record — nothing is asserted here that the page does not show. The
        * `@id` is what every list naming this provider points at.
        */
-      about: {
-        '@type': 'SoftwareApplication',
-        '@id': providerId(origin, recordPath(provider)),
-        name: data.name,
-        ...(data.description ? { description: data.description } : {}),
-        ...(data.urls?.home ? { url: data.urls.home } : {}),
-        applicationCategory: 'DeveloperApplication',
-        ...(data.currentMajor ? { softwareVersion: data.currentMajor } : {}),
-        ...(data.urls?.repository ? { codeRepository: data.urls.repository } : {}),
-        ...(social.length ? { sameAs: social } : {}),
-      },
+      about: softwareNode(origin, recordPath(provider), data, social, pathOf),
     },
   ]}
 >
@@ -568,6 +560,7 @@ const metaDescription = data.description
       </span>
       <a href={editUrl} {...outboundLinkAttrs(editUrl, 'record')}>Edit on GitHub</a>
       <a href={recordMarkdownPath(provider)}>This page as markdown</a>
+      <a href={recordJsonPath(provider)}>as JSON</a>
     </p>
     {
       /*

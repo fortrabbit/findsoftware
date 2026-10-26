@@ -640,3 +640,13 @@ test.describe('where to host it', () => {
     await expect(block.locator('.host-publisher')).toHaveCount(0);
   });
 });
+
+test.describe('records for machines', () => {
+  test('a record has a JSON copy with its sources, announced in the head', async ({ page, request }) => {
+    await page.goto('/kirby/');
+    await expect(page.locator('link[rel="alternate"][type="application/json"]')).toHaveAttribute('href', '/kirby.json');
+    const body = await (await request.get('/kirby.json')).json();
+    expect(body.record.id).toBe('kirby');
+    expect(body.record.sources.length).toBeGreaterThan(0);
+  });
+});

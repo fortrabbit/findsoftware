@@ -1,6 +1,15 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { dataset, extendDescription, graph, joinAnd, organization, providerList, recordTitle } from './seo.ts';
+import {
+  dataset,
+  extendDescription,
+  graph,
+  joinAnd,
+  organization,
+  providerList,
+  recordTitle,
+  softwareNode,
+} from './seo.ts';
 
 test('a record title carries as many categories as the budget allows', () => {
   assert.equal(recordTitle('Hetzner', ['VPS', 'Bare metal', 'IaaS']), 'Hetzner — VPS, Bare metal, IaaS — FindSoftware');
@@ -97,4 +106,28 @@ test('a description gains whole facts while they fit, and skips one that does no
 test('names are joined the way a sentence lists them', () => {
   assert.equal(joinAnd(['A']), 'A');
   assert.equal(joinAnd(['A', 'B', 'C']), 'A, B and C');
+});
+
+test('a record is software and source code, with only SPDX licenses linked and only held parents named', () => {
+  const node = softwareNode(
+    'https://x.test',
+    '/woocommerce/',
+    {
+      name: 'WooCommerce',
+      urls: { repository: 'https://github.com/woocommerce/woocommerce' },
+      language: 'php',
+      license: 'GPL-2.0-or-later, Commercial License',
+      maintainer: 'Jane Doe',
+      maintainerType: 'individual',
+      basedOn: ['wordpress', 'not-a-record'],
+    },
+    [],
+    new Map([['wordpress', '/wordpress/']]),
+  );
+  assert.deepEqual(node['@type'], ['SoftwareApplication', 'SoftwareSourceCode']);
+  assert.equal(node.license, 'https://spdx.org/licenses/GPL-2.0-or-later.html');
+  assert.equal(node.programmingLanguage, 'PHP');
+  assert.deepEqual(node.maintainer, { '@type': 'Person', name: 'Jane Doe' });
+  assert.deepEqual(node.isBasedOn, [{ '@id': 'https://x.test/wordpress/#software' }]);
+  assert.equal(node.codeRepository, 'https://github.com/woocommerce/woocommerce');
 });

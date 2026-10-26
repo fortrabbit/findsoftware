@@ -1,4 +1,5 @@
-import { titleOf } from './fields.ts';
+import spdx from '../data/spdx-ids.json' with { type: 'json' };
+import { labelOf, titleOf } from './fields.ts';
 
 /**
  * What a page calls itself to a search engine, and the structured data under it.
@@ -124,6 +125,79 @@ export const websiteRef = (origin: string) => ({ '@id': `${origin}/#website` });
 
 /** A provider as the subject of its record page, addressable from every list that names it. */
 export const providerId = (origin: string, href: string) => `${origin}${href}#software`;
+
+const spdxIds = new Set(spdx.ids);
+
+interface SoftwareFacts {
+  name: string;
+  description?: string | null;
+  urls?: { home?: string | null; repository?: string | null; docs?: string | null } | null;
+  category?: string[] | null;
+  language?: string | null;
+  runtime?: string[] | null;
+  license?: string | null;
+  maintainer?: string | null;
+  maintainerType?: string | null;
+  firstRelease?: number | null;
+  currentMajor?: string | null;
+  latestReleaseDate?: Date | string | null;
+  basedOn?: string[] | null;
+}
+
+/**
+ * A record as software, built only from fields the page shows. It is typed as
+ * source code too, because the repository and the language belong to the code
+ * and schema.org defines them only there. A license links to SPDX when the
+ * record holds an SPDX id; any other wording stays on the page alone. A parent
+ * the register holds is named by its own `@id`, so the two nodes connect.
+ */
+export const softwareNode = (
+  origin: string,
+  href: string,
+  data: SoftwareFacts,
+  sameAs: string[],
+  pathOf: Map<string, string>,
+) => {
+  const licenses = (data.license ?? '')
+    .split(',')
+    .map((entry) => entry.trim())
+    .filter((entry) => spdxIds.has(entry))
+    .map((id) => `https://spdx.org/licenses/${id}.html`);
+  const parents = (data.basedOn ?? []).flatMap((id) => {
+    const path = pathOf.get(id);
+    return path ? [{ '@id': providerId(origin, path) }] : [];
+  });
+  const released = data.latestReleaseDate ? new Date(data.latestReleaseDate).toISOString().slice(0, 10) : undefined;
+  return {
+    '@type': ['SoftwareApplication', 'SoftwareSourceCode'],
+    '@id': providerId(origin, href),
+    name: data.name,
+    ...(data.description ? { description: data.description } : {}),
+    ...(data.urls?.home ? { url: data.urls.home } : {}),
+    applicationCategory: 'DeveloperApplication',
+    ...(data.category?.length
+      ? { applicationSubCategory: data.category.map((value) => labelOf('category', value)) }
+      : {}),
+    ...(data.language ? { programmingLanguage: labelOf('language', data.language) } : {}),
+    ...(data.runtime?.length ? { runtimePlatform: data.runtime.map((value) => labelOf('runtime', value)) } : {}),
+    ...(data.currentMajor ? { softwareVersion: data.currentMajor } : {}),
+    ...(released ? { dateModified: released } : {}),
+    ...(data.firstRelease ? { dateCreated: String(data.firstRelease) } : {}),
+    ...(licenses.length ? { license: licenses.length === 1 ? licenses[0] : licenses } : {}),
+    ...(data.maintainer
+      ? {
+          maintainer: {
+            '@type': data.maintainerType === 'individual' ? 'Person' : 'Organization',
+            name: data.maintainer,
+          },
+        }
+      : {}),
+    ...(data.urls?.repository ? { codeRepository: data.urls.repository } : {}),
+    ...(data.urls?.docs ? { softwareHelp: { '@type': 'CreativeWork', url: data.urls.docs } } : {}),
+    ...(parents.length ? { isBasedOn: parents } : {}),
+    ...(sameAs.length ? { sameAs } : {}),
+  };
+};
 
 /**
  * Providers as a list. Each entry points at the provider node on its record

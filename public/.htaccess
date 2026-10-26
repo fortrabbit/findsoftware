@@ -84,3 +84,25 @@ ErrorDocument 404 /404.html
 <IfModule mod_headers.c>
   Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://cdn.usefathom.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cdn.usefathom.com; font-src 'self'; connect-src 'self' https://cdn.usefathom.com; form-action 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'"
 </IfModule>
+
+# An agent that asks for markdown or JSON gets the twin of the page it named,
+# at the same address. Only where the twin exists; a browser asks for HTML first
+# and is never sent here. Vary tells a cache that the answer depends on Accept.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_ACCEPT} !text/html
+  RewriteCond %{HTTP_ACCEPT} text/markdown
+  RewriteCond %{REQUEST_URI} ^/(.+)/$
+  RewriteCond %{DOCUMENT_ROOT}/%1.md -f
+  RewriteRule ^(.+)/$ /$1.md [L]
+  RewriteCond %{HTTP_ACCEPT} !text/html
+  RewriteCond %{HTTP_ACCEPT} application/json
+  RewriteCond %{REQUEST_URI} ^/(.+)/$
+  RewriteCond %{DOCUMENT_ROOT}/%1.json -f
+  RewriteRule ^(.+)/$ /$1.json [L]
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|md|json)$">
+    Header append Vary Accept
+  </FilesMatch>
+</IfModule>

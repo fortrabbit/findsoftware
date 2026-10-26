@@ -41,3 +41,8 @@ export function recordPath(record: Addressable): string {
 export function recordMarkdownPath(record: Addressable): string {
   return `${recordPath(record).slice(0, -1)}.md`;
 }
+
+/** The same record as JSON, every field with its sources, written from the same rule. */
+export function recordJsonPath(record: Addressable): string {
+  return `${recordPath(record).slice(0, -1)}.json`;
+}
