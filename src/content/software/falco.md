@@ -11,7 +11,7 @@ description: F# toolkit for building full-stack web applications on ASP.NET Core
 status: active
 maintainer: Pim Brouwers
 firstRelease: 2020
-language: other
+language: fsharp
 runtime:
   - dotnet
 hosting:

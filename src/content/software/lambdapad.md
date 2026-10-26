@@ -10,7 +10,7 @@ description: Erlang static site generator that builds a site from an index modul
 status: stub
 maintainer: gar1t
 maintainerType: individual
-language: other
+language: erlang
 runtime:
   - beam
 hosting:

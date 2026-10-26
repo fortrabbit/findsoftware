@@ -11,7 +11,7 @@ description: Static site generator written in Julia, oriented towards technical 
 status: active
 maintainer: Thibaut Lienart
 firstRelease: 2019
-language: other
+language: julia
 hosting:
   - static
 runsAs:

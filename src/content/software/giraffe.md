@@ -11,7 +11,7 @@ description: F# micro web framework for building web applications on ASP.NET Cor
 status: active
 maintainer: Dustin Moris Gorski
 firstRelease: 2018
-language: other
+language: fsharp
 runtime:
   - dotnet
 hosting:

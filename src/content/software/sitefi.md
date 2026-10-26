@@ -10,7 +10,7 @@ description: F# static blog generator that builds HTML pages from Markdown artic
 status: active
 maintainer: Adam Granicz, IntelliFactory
 maintainerType: individual
-language: other
+language: fsharp
 runtime:
   - dotnet
 hosting:

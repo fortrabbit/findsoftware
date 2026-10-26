@@ -1,0 +1,162 @@
+id: jpress
+name: JPress
+status: stub
+checkedAt: 2026-10-26
+description: Java content management system for websites with articles, pages, products and forms, extended by plugins and templates.
+facts:
+  - field: status
+    value: stub
+    url: https://www.jpress.cn/
+    checkedAt: 2026-10-26
+    via: page
+  - field: repository
+    value: https://github.com/JPressProjects/jpress
+    url: https://api.github.com/repos/JPressProjects/jpress
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: JPressProjects
+    url: https://api.github.com/users/JPressProjects
+    checkedAt: 2026-10-26
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/JPressProjects
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2018"
+    url: https://api.github.com/repos/JPressProjects/jpress/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [cms, blog]
+    url: https://github.com/JPressProjects/jpress/blob/v5.x/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "一个使用 Java 开发的、类似 WordPress 的产品"
+  - field: language
+    value: Java
+    url: https://github.com/JPressProjects/jpress/blob/v5.x/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "starter/src/main/java/io.jpress.Starter"
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/JPressProjects/jpress/blob/v5.1.2/pom.xml
+    checkedAt: 2026-10-26
+    via: page
+    quote: "<maven.compiler.target>1.8</maven.compiler.target>"
+  - field: runtimeMin
+    value: "8"
+    url: https://github.com/JPressProjects/jpress/blob/v5.1.2/pom.xml
+    checkedAt: 2026-10-26
+    via: page
+    quote: "<maven.compiler.target>1.8</maven.compiler.target>"
+  - field: installMethod
+    value: docker-compose
+    url: https://github.com/JPressProjects/jpress/blob/v5.x/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "docker-compose up -d"
+  - field: installMethod
+    value: install.sh one-line install script
+    url: https://github.com/JPressProjects/jpress/blob/v5.x/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "bash install.sh 80"
+  - field: installMethod
+    value: build from source with Maven
+    url: https://github.com/JPressProjects/jpress/blob/v5.x/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "mvn clean package"
+  - field: docker
+    value: fuhai/jpress:v5.1.2 image in docker-compose.yml
+    url: https://github.com/JPressProjects/jpress/blob/v5.1.2/docker-compose.yml
+    checkedAt: 2026-10-26
+    via: page
+    quote: "image: fuhai/jpress:v5.1.2"
+  - field: databases
+    value: [mysql]
+    url: https://github.com/JPressProjects/jpress/blob/v5.1.2/docker-compose.yml
+    checkedAt: 2026-10-26
+    via: page
+    quote: "image: mysql:5.7"
+  - field: contentStore
+    value: database
+    url: https://github.com/JPressProjects/jpress/blob/v5.x/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "安装的过程会自动建库建表"
+  - field: adminUi
+    value: yes, admin menus extended by plugins
+    url: https://github.com/JPressProjects/jpress/blob/v5.x/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "支持通过插件动态扩展后台菜单和用户中心菜单"
+  - field: userRoles
+    value: yes
+    url: https://github.com/JPressProjects/jpress/blob/v5.x/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "用户多角色功能"
+  - field: multisite
+    value: yes
+    url: https://github.com/JPressProjects/jpress/blob/v5.x/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "支持站点绑定独立域名"
+  - field: i18n
+    value: yes
+    url: https://github.com/JPressProjects/jpress/blob/v5.x/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "支持多站点、多语种自动切换等"
+  - field: importsFrom
+    value: [WordPress, Hexo, Jekyll]
+    url: https://github.com/JPressProjects/jpress/blob/v5.x/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "WordPress、Hexo、Jekyll、微信公众号等文章一键导入"
+  - field: license
+    value: LGPL-3.0
+    url: https://api.github.com/repos/JPressProjects/jpress
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/JPressProjects/jpress/v5.x/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Version 3, 29 June 2007"
+  - field: currentMajor
+    value: 5
+    url: https://api.github.com/repos/JPressProjects/jpress/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2024-08-30
+    url: https://api.github.com/repos/JPressProjects/jpress/commits/v5.1.2
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 2734
+    url: https://api.github.com/repos/JPressProjects/jpress
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 40
+    url: https://api.github.com/repos/JPressProjects/jpress/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: reportedInstalls
+    value: 100000+ websites
+    url: https://api.github.com/repos/JPressProjects/jpress
+    checkedAt: 2026-10-26
+    via: api
+    quote: "10w+ 网站使用 JPress"
+notFound: [homepage, docs, hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, renderingModes, templating, headlessApi, livePreview, sso, paidEdition, pricingPage, usageShare, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, discord, wikidata, endoflifeId, supportedVersions, outputDir, buildCommand, npmName, packagistName]
+unreadable: [https://www.jpress.cn/, http://doc.jpress.cn/manual/]
+notes: >
+  The homepage of this project, http://www.jpress.cn, is in doubt: it redirects to https://www.jpress.cn/, whose certificate has expired (curl reports "certificate has expired"), so no https homepage is recorded and homepage is listed in notFound; a valid https certificate would settle it and move the record to accepted. The documentation at doc.jpress.cn answers only over plain http and is not linked, so docs is listed in notFound. The README links the manual, development and API documents on doc.jpress.cn only. The GitHub language breakdown counts JavaScript above Java, but the README runs the Java main class io.jpress.Starter, so only Java is recorded. The README describes JPress as similar to WordPress; that comparison is not recorded as basedOn. The tag v5.1.2 has no GitHub release, so latestReleaseDate is the date of its commit; the newest GitHub release is v5.1.1 (2024-07-05). firstRelease is the oldest GitHub release (v1.0-beta1, 2018-10-08); the README says the project started in 2015, which is a statement of the project's start, not a release. The contact channels are QQ groups and a WeChat group, and no Discord, X, Bluesky, Mastodon or newsletter link appears in the README. The runtime minimum is the compiler target 1.8 in the v5.1.2 pom. No page states how the process runs on the host, so runsAs is left out. The VIP membership on the website is not recorded as paidEdition, since no edition page was readable. The repository owner has no legal name on the GitHub profile, so the owner name is recorded as the maintainer.

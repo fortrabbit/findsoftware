@@ -12,7 +12,7 @@ status: active
 maintainer: HAHWUL
 maintainerType: individual
 firstRelease: 2026
-language: other
+language: crystal
 runtime:
   - binary
 hosting:

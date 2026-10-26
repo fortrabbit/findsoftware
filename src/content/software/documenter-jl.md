@@ -12,7 +12,7 @@ status: active
 maintainer: Michael Hatherly, Morten Piibeleht, Fredrik Ekre, and Documenter.jl contributors
 maintainerType: community
 firstRelease: 2016
-language: other
+language: julia
 hosting:
   - static
 runsAs:

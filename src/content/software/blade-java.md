@@ -17,6 +17,8 @@ runtime:
 hosting:
   - java
 runtimeMin: jvm 8
+basedOn:
+  - netty
 templating: built-in, jetbrick
 runsAs:
   - always-on
@@ -46,6 +48,9 @@ sources:
     url: https://api.github.com/repos/lets-blade/blade
     checkedAt: 2026-10-24
   - field: category
+    url: https://github.com/lets-blade/blade/blob/v2.1.3/README.md
+    checkedAt: 2026-10-24
+  - field: basedOn
     url: https://github.com/lets-blade/blade/blob/v2.1.3/README.md
     checkedAt: 2026-10-24
   - field: templating

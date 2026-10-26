@@ -9,7 +9,7 @@ category:
 description: Blog generator written in Common Lisp that builds a static website from post files kept in a git repository.
 status: active
 maintainer: Brit Butler
-language: other
+language: common-lisp
 hosting:
   - static
 templating: closure-templates

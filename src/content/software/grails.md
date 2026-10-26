@@ -13,7 +13,7 @@ status: active
 maintainer: The Apache Software Foundation
 maintainerType: foundation
 firstRelease: 2006
-language: other
+language: groovy
 runtime:
   - jvm
 hosting:

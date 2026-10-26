@@ -12,7 +12,7 @@ status: active
 maintainer: rknell
 maintainerType: individual
 firstRelease: 2021
-language: other
+language: dart
 headlessApi:
   - rest
 installMethod: dart pub add alfred

@@ -11,7 +11,7 @@ status: stub
 maintainer: Rizwaan Bhikha
 maintainerType: individual
 firstRelease: 2019
-language: other
+language: dart
 hosting:
   - static
 contentStore:

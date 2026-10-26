@@ -12,7 +12,7 @@ status: stub
 maintainer: Alex Korban
 maintainerType: individual
 firstRelease: 2017
-language: other
+language: elm
 hosting:
   - static
 templating: elm

@@ -1,0 +1,145 @@
+id: mojolicious
+name: Mojolicious
+status: accepted
+checkedAt: 2026-10-26
+description: Perl real-time web framework for building web applications, with a built-in web server and a toolkit for HTTP and WebSocket clients and servers.
+facts:
+  - field: homepage
+    value: https://mojolicious.org
+    url: https://mojolicious.org/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Mojolicious is a fresh take on Perl web development"
+  - field: docs
+    value: https://docs.mojolicious.org
+    url: https://mojolicious.org/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Tutorial"
+  - field: repository
+    value: https://github.com/mojolicious/mojo
+    url: https://api.github.com/repos/mojolicious/mojo
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: Sebastian Riedel
+    url: https://mojolicious.org/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Sebastian Riedel and the Mojolicious contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/mojolicious
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Perl
+    url: https://api.github.com/repos/mojolicious/mojo
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [perl]
+    url: https://mojolicious.org/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "no requirements besides Perl 5.26.0"
+  - field: runtimeMin
+    value: "Perl 5.26"
+    url: https://mojolicious.org/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "no requirements besides Perl 5.26.0"
+  - field: categories
+    value: [framework]
+    url: https://mojolicious.org/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Mojolicious is a real-time web framework"
+  - field: renderingModes
+    value: [server]
+    url: https://mojolicious.org/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Built-in non-blocking I/O web server"
+  - field: runsAs
+    value: [always-on]
+    url: https://mojolicious.org/perldoc/Mojolicious/Guides/Cookbook
+    checkedAt: 2026-10-26
+    via: page
+    quote: "To manage the web server with systemd"
+  - field: runsAs
+    value: [per-request]
+    url: https://mojolicious.org/perldoc/Mojolicious/Guides/Cookbook
+    checkedAt: 2026-10-26
+    via: page
+    quote: "CGI is supported out of the box and your Mojolicious application will automatically detect that it is executed as a CGI script"
+  - field: installMethod
+    value: cpanm, the CPAN client
+    url: https://mojolicious.org/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "curl -L https://cpanmin.us | perl - -M https://cpan.metacpan.org -n Mojolicious"
+  - field: templating
+    value: perl-ish templates
+    url: https://mojolicious.org/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Perl-ish templates"
+  - field: license
+    value: Artistic-2.0
+    url: https://api.github.com/repos/mojolicious/mojo
+    checkedAt: 2026-10-26
+    via: api
+  - field: license
+    value: The Artistic License 2.0
+    url: https://raw.githubusercontent.com/mojolicious/mojo/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The Artistic License 2.0"
+  - field: currentMajor
+    value: 9
+    url: https://fastapi.metacpan.org/v1/release/Mojolicious
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-24
+    url: https://fastapi.metacpan.org/v1/release/Mojolicious
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2010"
+    url: https://raw.githubusercontent.com/mojolicious/mojo/main/Changes
+    checkedAt: 2026-10-26
+    via: page
+    quote: "1.0  2010-12-26"
+  - field: cpanName
+    value: Mojolicious
+    url: https://fastapi.metacpan.org/v1/release/Mojolicious
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 2756
+    url: https://api.github.com/repos/mojolicious/mojo
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 153
+    url: https://api.github.com/repos/mojolicious/mojo/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+  - field: forum
+    value: https://forum.mojolicious.org
+    url: https://mojolicious.org/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Forum"
+  - field: mastodon
+    value: https://fosstodon.org/@mojolicious
+    url: https://mojolicious.org/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Mastodon"
+notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, hostedOffering, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, bluesky, x, newsletter, wikidata, endoflifeId, npmName, packagistName, maintainerType]
+unreadable: []
+notes: >
+  Framework in Perl with a source repository on GitHub and a distribution on CPAN. GitHub has tags (v9.53 is the newest tag) and no release objects, so currentMajor and latestReleaseDate come from the CPAN release, which reads 9.53 as the latest release on 2026-10-24. The homepage says the framework is "based upon years of experience developing the Catalyst framework", which describes the authors' experience and not a parent the code is built on; basedOn is absent. The homepage calls the software "Free and Open Source" and the repository license file is the Artistic License 2.0; both are recorded. The homepage states "Most popular distribution on CPAN" as a claim without a figure, so no adoption figure is recorded. The cookbook names Hypnotoad, Morbo and Apache/CGI and PSGI as deployment routes; only the two runsAs values with a quoted statement are recorded. The firstRelease comes from the end of the Changes file, which is in reverse order and whose oldest entry is version 1.0 dated 2010-12-26. The maintainer name is the one the homepage copyright line gives.

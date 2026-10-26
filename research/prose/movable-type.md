@@ -1,0 +1,5 @@
+Movable Type is a publishing and blogging system from Six Apart, with its core written in Perl. Content is kept in a database, and templates written in the Movable Type markup language turn it into pages. A site can publish static files, generate pages on request in dynamic mode (which uses PHP, optional otherwise), or use both, and one installation can run several websites and blogs. It is installed by uploading the program files to a web server over FTP or SSH and running a configuration wizard in the browser, or from an Amazon Machine Image on AWS Marketplace.
+
+## Worth knowing
+
+Use is under a Movable Type license, and the product life cycle page says license holders may use version 9 under the same terms. The Advanced edition adds Oracle Database, Microsoft SQL Server and LDAP sign-in. The Cloud Service is offered to Japanese customers only. The installation guide names Movable Type Pro and Movable Type Open Source as the two versions to download; the open source line is recorded as a separate record.

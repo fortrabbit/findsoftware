@@ -11,7 +11,7 @@ description: Markdown-based static site generator for blogs and websites, writte
 status: active
 maintainer: The Starlight Network
 firstRelease: 2025
-language: other
+language: zig
 hosting:
   - static
 contentStore:

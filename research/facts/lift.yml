@@ -1,0 +1,139 @@
+id: lift
+name: Lift
+status: accepted
+checkedAt: 2026-10-26
+description: Scala web framework for building interactive web applications that run on Java servlet containers.
+facts:
+  - field: homepage
+    value: https://liftweb.net/
+    url: https://liftweb.net/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Lift open source software licensed under an Apache 2.0"
+  - field: repository
+    value: https://github.com/lift/framework
+    url: https://api.github.com/repos/lift/framework
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/lift/framework/blob/main/README.md
+    url: https://github.com/lift/framework/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "You can create a new Lift project using your favorite build system by adding Lift as a dependency."
+  - field: maintainer
+    value: Lift Committers and Contributors
+    url: https://github.com/lift/framework/blob/main/build.sbt
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Lift Committers and Contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/lift
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Scala
+    url: https://api.github.com/repos/lift/framework
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/lift/framework/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "an elegant JVM language"
+  - field: runtimeMin
+    value: "Java 11"
+    url: https://github.com/lift/framework/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Java >= 11"
+  - field: categories
+    value: [framework]
+    url: https://github.com/lift/framework/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The Lift Web Framework"
+  - field: installMethod
+    value: sbt new with lift/basic-app.g8 or lift/blank-app.g8
+    url: https://github.com/lift/framework/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "sbt new lift/basic-app.g8"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/lift/framework/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "deploy to your favorite Servlet Container and app server"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/lift/framework
+    checkedAt: 2026-10-26
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/lift/framework/blob/main/LICENSE.txt
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Apache License"
+  - field: licenseModel
+    value: open-source
+    url: https://liftweb.net/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Lift open source software licensed under an Apache 2.0"
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/lift/framework/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-17
+    url: https://api.github.com/repos/lift/framework/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 1283
+    url: https://api.github.com/repos/lift/framework
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 83
+    url: https://api.github.com/repos/lift/framework/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: 2008
+    url: https://search.maven.org/solrsearch/select?q=g:net.liftweb+AND+a:lift-webkit&core=gav&rows=200&wt=json
+    checkedAt: 2026-10-26
+    via: api
+  - field: mavenCoordinates
+    value: net.liftweb:lift-webkit
+    url: https://github.com/lift/framework/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "net.liftweb"
+  - field: forum
+    value: https://groups.google.com/forum/#!forum/liftweb
+    url: https://github.com/lift/framework/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The Lift Google Group is the official place for support"
+  - field: pluginDirectory
+    value: https://liftweb.net/lift_modules
+    url: https://github.com/lift/framework/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Lift modules directory"
+  - field: installMethod
+    value: add lift-webkit as an sbt or Maven dependency
+    url: https://github.com/lift/framework/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Add Lift to your `pom.xml` like so"
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, endoflifeId, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, maintainerType, hqCountry, packagistName, npmName]
+unreadable: []
+notes: >
+  The homepage answers over http and redirects to https://liftweb.net/, which is recorded. The README's Java compatibility table gives Java 11 for the 4.0 line, so runtimeMin is that row. The highest stable GitHub release is 4.0.0-release (2026-05-17); the 4.0.0-RC1 and M-series prereleases are not used. The maintainer is the organizationName in build.sbt, not a legal entity; no page states a legal form or seat. firstRelease is the oldest upload of net.liftweb:lift-webkit on Maven Central (2008-11-25, version 0.7); the oldest GitHub release is 2.6-M1 from 2014. Persistence components (Mapper and Record) are no longer in the main repository as of 4.0.

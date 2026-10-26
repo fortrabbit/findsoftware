@@ -1,0 +1,128 @@
+id: nitrogen
+name: Nitrogen
+status: accepted
+checkedAt: 2026-10-26
+description: Erlang web framework for building interactive, Ajax-rich web applications.
+facts:
+  - field: homepage
+    value: https://nitrogenproject.com
+    url: https://nitrogenproject.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Nitrogen Web Framework for Erlang"
+  - field: repository
+    value: https://github.com/nitrogen/nitrogen
+    url: https://api.github.com/repos/nitrogen/nitrogen
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://nitrogenproject.com/doc/index.html
+    url: https://nitrogenproject.com/doc/index.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Documentation"
+  - field: x
+    value: https://twitter.com/nitrogenproject
+    url: https://nitrogenproject.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Follow @nitrogenproject"
+  - field: discord
+    value: https://discord.gg/ppGBxhM
+    url: https://nitrogenproject.com/community
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Join our Discord Server"
+  - field: forum
+    value: https://groups.google.com/group/nitrogenweb
+    url: https://nitrogenproject.com/community
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Subscribe to the Nitrogen Google Group"
+  - field: templating
+    value: [nitrogen-templates]
+    url: https://nitrogenproject.com/learn
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Nitrogen includes a simple but powerful template system"
+  - field: runsAs
+    value: [always-on]
+    url: https://nitrogenproject.com/doc/index.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "To attach to a detached Nitrogen console"
+  - field: maintainer
+    value: Rusty Klophaus/Jesse Gumm
+    url: https://raw.githubusercontent.com/nitrogen/nitrogen/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2008-2022 Rusty Klophaus/Jesse Gumm"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/nitrogen
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Erlang
+    url: https://api.github.com/repos/nitrogen/nitrogen
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://raw.githubusercontent.com/nitrogen/nitrogen/master/README.markdown
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Nitrogen is an Erlang-based web framework"
+  - field: runtime
+    value: [erlang]
+    url: https://raw.githubusercontent.com/nitrogen/nitrogen/master/README.markdown
+    checkedAt: 2026-10-26
+    via: page
+    quote: "pure Erlang technology stack"
+  - field: installMethod
+    value: [download archive, make]
+    url: https://nitrogenproject.com/doc/index.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "make rel_inets"
+  - field: installMethod
+    value: [download archive]
+    url: https://nitrogenproject.com/downloads
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Each platform download is a self-contained installation of Nitrogen"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/nitrogen/nitrogen/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: firstRelease
+    value: "2009"
+    url: https://api.github.com/repos/nitrogen/nitrogen/commits/v1.0
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/nitrogen/nitrogen/tags
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2020-11-15
+    url: https://api.github.com/repos/nitrogen/nitrogen/commits/v2.4.0
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 982
+    url: https://api.github.com/repos/nitrogen/nitrogen
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 29
+    url: https://api.github.com/repos/nitrogen/nitrogen/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, renderingModes, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, subreddit, mastodon, bluesky, newsletter, wikidata, docker, endoflifeId, supportedVersions, runtimeMin, maintainerType]
+unreadable: []
+notes: >
+  The tags are the only release markers: the repository has no GitHub releases, so currentMajor is the highest stable tag v2.4.0 (2020-11-15), and latestReleaseDate is that tag's commit date. The master README describes an upgrade from Nitrogen 2 to Nitrogen 3 and the docs point at a tutorial, but no 3.x tag exists and no Hex package was found under the name nitrogen (hex.pm returns 404), so the major stays 2. The homepage is recorded with https: the CSV row gives http, which redirects to https and answers 200. The LICENSE file names two copyright holders as "Rusty Klophaus/Jesse Gumm"; the record keeps that wording. The homepage links to a 2014 talk and a 2020 book; neither is a fact field. The contributor count is read from the contributors endpoint with per_page=1 and the page number of the last link (29). The docs state that the starter application runs on Inets, Erlang's built-in HTTP server, and that Nitrogen is started, stopped and attached to as a detached console with bin/nitrogen. The downloads page offers five web servers to run it on: Cowboy, Inets, Mochiweb, Webmachine and Yaws. The learn page says it uses an event-driven model, supports websockets with an ajax fallback, and runs on any platform that runs Erlang.

@@ -10,7 +10,7 @@ description: Elm-based bootstrapper that adds pre-rendering, PWA files and SEO m
 status: stub
 maintainer: Luca Mugnaini
 maintainerType: individual
-language: other
+language: elm
 runtime:
   - node
 hosting:

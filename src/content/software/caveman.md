@@ -12,7 +12,7 @@ status: stub
 maintainer: Eitaro Fukamachi
 maintainerType: individual
 firstRelease: 2013
-language: other
+language: common-lisp
 templating: djula
 installMethod: Quicklisp (ql:quickload)
 licenseModel: open-source

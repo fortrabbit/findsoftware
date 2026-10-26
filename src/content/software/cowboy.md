@@ -11,7 +11,7 @@ description: HTTP server for Erlang/OTP that provides routing, handlers, WebSock
 status: active
 maintainer: Loïc Hoguin
 firstRelease: 2011
-language: other
+language: erlang
 runtime:
   - beam
 hosting:

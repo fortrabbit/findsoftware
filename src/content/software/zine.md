@@ -12,7 +12,7 @@ status: active
 maintainer: Loris Cro
 maintainerType: individual
 firstRelease: 2024
-language: other
+language: zig
 runtime:
   - binary
 hosting:

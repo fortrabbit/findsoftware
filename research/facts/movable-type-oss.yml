@@ -1,0 +1,117 @@
+id: movable-type-oss
+name: Movable Type Open Source
+status: accepted
+checkedAt: 2026-10-26
+description: Source code line of Movable Type, the Perl publishing and blogging system, kept in the movabletype/movabletype repository.
+facts:
+  - field: repository
+    value: https://github.com/movabletype/movabletype
+    url: https://api.github.com/repos/movabletype/movabletype
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://www.movabletype.org/documentation/installation/
+    url: https://www.movabletype.org/documentation/installation/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Get the latest version of Movable Type Pro or Movable Type Open Source"
+  - field: maintainer
+    value: Six Apart Ltd.
+    url: https://github.com/movabletype/movabletype/blob/develop/mt.cgi
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Movable Type (r) (C) Six Apart Ltd. All Rights Reserved."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/movabletype
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Perl
+    url: https://api.github.com/repos/movabletype/movabletype
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [perl]
+    url: https://github.com/movabletype/movabletype/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Perl 5.16.3 or greater, with its core modules"
+  - field: runtimeMin
+    value: "5.16.3"
+    url: https://github.com/movabletype/movabletype/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Perl 5.16.3 or greater, with its core modules"
+  - field: databases
+    value: [mysql]
+    url: https://github.com/movabletype/movabletype/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Access to a database like MySQL"
+  - field: categories
+    value: [blog, cms]
+    url: https://github.com/movabletype/movabletype/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "the premiere solution for your blogging and website management needs"
+  - field: license
+    value: custom
+    url: https://github.com/movabletype/movabletype/blob/develop/mt.cgi
+    checkedAt: 2026-10-26
+    via: page
+    quote: "This code cannot be redistributed without permission from www.sixapart.com."
+  - field: license
+    value: custom
+    url: https://github.com/movabletype/movabletype/blob/develop/lib/MT.pm
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The license that applies is the one you agreed to when downloading Movable Type."
+  - field: currentMajor
+    value: 9
+    url: https://api.github.com/repos/movabletype/movabletype/tags
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-25
+    url: https://api.github.com/repos/movabletype/movabletype/commits/60206300cefb494580930b04bc6849641f64ffd3
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 434
+    url: https://api.github.com/repos/movabletype/movabletype
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 34
+    url: https://api.github.com/repos/movabletype/movabletype/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2001"
+    url: https://www.movabletype.org/about/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "launched in 2001"
+  - field: hqCountry
+    value: JP
+    url: https://www.movabletype.org/about/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Six Apart has its global headquarters in Tokyo"
+  - field: installMethod
+    value: upload the files to a directory enabled for CGI scripts, then open it in the browser for the installation screens
+    url: https://github.com/movabletype/movabletype/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Upload all of Movable Type's files into a directory or folder accessible via your web browser"
+  - field: runsAs
+    value: [per-request]
+    url: https://github.com/movabletype/movabletype/blob/develop/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "enabled to execute CGI scripts"
+notFound: [homepage, pricingPage, licenseModel, hostedOffering, paidEdition, basedOn, parent, forkOf, successorOf, alternativeTo, adminUi, headlessApi, templating, i18n, multisite, userRoles, sso, contentStore, renderingModes, usageShare, reportedInstalls, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, pluginDirectory, pluginCount, endoflifeId, npmName, packagistName]
+unreadable: []
+notes: >
+  Open source code line of Movable Type, published from the movabletype/movabletype repository. The CSV marked it as a boundary; it is accepted here because the repository holds the source, the installation guide on movabletype.org names "Movable Type Open Source" as a download, and the repository is public. Two license statements were found and recorded as the files word them. The repository has no LICENSE file on develop or at the mt9.3.0 tag, and GitHub reports no license (api license field is null). The mt.cgi header says "This code cannot be redistributed without permission from www.sixapart.com." and the POD in lib/MT.pm says "The license that applies is the one you agreed to when downloading Movable Type." Both give value custom, which the import reads as a restricted license; the record therefore reads as source-available, not open source. The homepage is not linked: https://www.movabletype.org/ is the product site of the commercial Movable Type, shared with the movable-type record, and the repository is the project's own source. The default branch is develop. The tags listing has no GitHub release objects; the highest stable tag is mt9.3.0 (the mt-6.8.1, mt-7.8.0 and mtpa tags belong to earlier lines), so currentMajor is 9 and latestReleaseDate is the committer date of the mt9.3.0 tag commit (2026-09-25). firstRelease is the year the product site states Movable Type was launched; the oldest tag in the repository is mt3.31 (annotated 2006-07-15). The develop README names Perl 5.16.3 or greater and MySQL as the example database; other databases and the MT 9 feature set are not stated by a page of this record, so they are left out. The installation guide is cited only for the line that names this code as a download. hqCountry is that of Six Apart, from the product site's about page.

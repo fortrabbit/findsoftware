@@ -13,7 +13,7 @@ status: active
 maintainer: Dillon Kearns
 maintainerType: individual
 firstRelease: 2019
-language: other
+language: elm
 runtime:
   - node
 hosting:

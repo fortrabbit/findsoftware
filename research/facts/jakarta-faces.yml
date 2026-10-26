@@ -1,0 +1,127 @@
+id: jakarta-faces
+name: Eclipse Mojarra
+status: accepted
+checkedAt: 2026-10-26
+description: Eclipse's implementation of the Jakarta Faces specification for building Java web user interfaces.
+facts:
+  - field: homepage
+    value: https://eclipse-ee4j.github.io/mojarra/
+    url: https://eclipse-ee4j.github.io/mojarra/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Eclipse EE4J implementation of Jakarta Faces"
+  - field: repository
+    value: https://github.com/eclipse-ee4j/mojarra
+    url: https://api.github.com/repos/eclipse-ee4j/mojarra
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/eclipse-ee4j/mojarra/blob/main/README.md
+    url: https://github.com/eclipse-ee4j/mojarra/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Eclipse's implementation of the Jakarta Faces 4.1 specification."
+  - field: maintainer
+    value: Eclipse Foundation AISBL
+    url: https://www.eclipse.org/legal/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright © Eclipse Foundation AISBL. All rights reserved."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/eclipse-ee4j
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/eclipse-ee4j/mojarra
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://eclipse-ee4j.github.io/mojarra/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Eclipse EE4J implementation of the Jakarta Faces specification"
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/eclipse-ee4j/mojarra/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Java 17"
+  - field: runtimeMin
+    value: "17"
+    url: https://github.com/eclipse-ee4j/mojarra/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Java 17"
+  - field: installMethod
+    value: Maven dependency or manual JAR files
+    url: https://github.com/eclipse-ee4j/mojarra/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "In case you're using Maven, you can find below the necessary coordinates"
+  - field: mavenCoordinates
+    value: org.glassfish:jakarta.faces
+    url: https://repo1.maven.org/maven2/org/glassfish/jakarta.faces/maven-metadata.xml
+    checkedAt: 2026-10-26
+    via: api
+  - field: templating
+    value: [facelets]
+    url: https://github.com/eclipse-ee4j/mojarra/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "create a Facelets file"
+  - field: license
+    value: EPL-2.0
+    url: https://raw.githubusercontent.com/eclipse-ee4j/mojarra/main/LICENSE.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Eclipse Public License - v 2.0"
+  - field: license
+    value: GPL2 w/ CPE
+    url: https://raw.githubusercontent.com/eclipse-ee4j/mojarra/main/pom.xml
+    checkedAt: 2026-10-26
+    via: page
+    quote: "GPL2 w/ CPE"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/eclipse-ee4j/mojarra/main/LICENSE.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Eclipse Public License - v 2.0"
+  - field: firstRelease
+    value: "2007"
+    url: https://search.maven.org/solrsearch/select?q=g:javax.faces+AND+a:jsf-impl&core=gav&rows=300&wt=json
+    checkedAt: 2026-10-26
+    via: api
+  - field: hqCountry
+    value: BE
+    url: https://www.eclipse.org/org/foundation/contact.php
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The mailing address of our headquarters in Belgium is"
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/eclipse-ee4j/mojarra/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-23
+    url: https://api.github.com/repos/eclipse-ee4j/mojarra/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 186
+    url: https://api.github.com/repos/eclipse-ee4j/mojarra
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 67
+    url: https://api.github.com/repos/eclipse-ee4j/mojarra/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [pricingPage, parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, outputDir]
+unreadable: []
+notes: >
+  The homepage eclipse-ee4j.github.io/mojarra is the project's own site (GitHub Pages of the repository). Its text still shows Jakarta Faces 2.3 documentation, so the homepage is cited only for the description line and the name of the implementation. Mojarra implements the Jakarta Faces specification and is not built on another project, so basedOn is not recorded. The README and the pom.xml name a Maven artifact org.glassfish:jakarta.faces; no download figure is recorded because Maven publishes none. The oldest Maven Central upload of the implementation is javax.faces:jsf-impl 1.2_05 from 2007 (its pom: "Sun's Implementation of the JSF 1.2 Specification"), older than the GitHub tag 2.3.3.102 dated 2018-06-07, so firstRelease follows Maven Central. The record describes Mojarra, the implementation; name, repository and Maven artifact all belong to it, and the Jakarta Faces specification is a separate document. The LICENSE file names EPL 2.0 only, and the pom names EPL 2.0 with GPL2 w/ CPE as the secondary license; each statement is recorded as the project words it. The README header carries the same secondary license as an SPDX line inside an HTML comment, which the quote checker cannot read, so it is not recorded separately. hqCountry comes from the foundation contact page. The README does not state a rendering mode or a runtime for the servlet container, so renderingModes and runsAs are not recorded.

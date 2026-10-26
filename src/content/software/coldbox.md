@@ -13,6 +13,7 @@ status: active
 maintainer: Ortus Solutions, Corp
 maintainerType: company
 firstRelease: 2018
+language: cfml
 runtime:
   - jvm
 hosting:
@@ -42,6 +43,9 @@ sources:
     checkedAt: 2026-10-26
   - field: maintainer
     url: https://github.com/ColdBox/coldbox-platform/blob/development/license.txt
+    checkedAt: 2026-10-26
+  - field: language
+    url: https://github.com/ColdBox/coldbox-platform/blob/development/readme.md
     checkedAt: 2026-10-26
   - field: runtime
     url: https://github.com/ColdBox/coldbox-platform/blob/development/readme.md
@@ -83,6 +87,8 @@ sources:
     url: https://github.com/ColdBox/coldbox-platform/blob/development/readme.md
     checkedAt: 2026-10-26
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 ColdBox is an HMVC web framework, built around modules that nest inside an application, with conventions in place of configuration. It runs on BoxLang and on CFML engines. Its dependency injection (WireBox), caching (CacheBox) and logging (LogBox) components are also published as libraries for other BoxLang or CFML applications.

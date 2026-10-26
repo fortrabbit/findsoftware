@@ -12,7 +12,7 @@ status: stub
 maintainer: SysGears, LLC
 maintainerType: company
 firstRelease: 2013
-language: other
+language: groovy
 runtime:
   - jvm
 hosting:

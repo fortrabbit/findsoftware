@@ -1,0 +1,126 @@
+id: kratos
+name: Kratos
+status: accepted
+checkedAt: 2026-10-26
+description: Go framework for building HTTP and gRPC microservices, with application lifecycle, generated transports, middleware and configuration.
+facts:
+  - field: homepage
+    value: https://go-kratos.dev
+    url: https://go-kratos.dev/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The Go framework for microservices"
+  - field: repository
+    value: https://github.com/go-kratos/kratos
+    url: https://api.github.com/repos/go-kratos/kratos
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://go-kratos.dev/docs/
+    url: https://go-kratos.dev/docs/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Kratos v3 Documentation"
+  - field: discord
+    value: https://discord.gg/BWzJsUJ
+    url: https://go-kratos.dev/
+    checkedAt: 2026-10-26
+    via: page
+  - field: maintainer
+    value: go-kratos
+    url: https://github.com/go-kratos/kratos/blob/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2020 go-kratos"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/go-kratos/kratos
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2019"
+    url: https://api.github.com/repos/go-kratos/kratos/releases?per_page=100
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/go-kratos/kratos
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://go-kratos.dev/docs/getting-started/start/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The core module requires Go 1.25"
+  - field: runtimeMin
+    value: "1.25"
+    url: https://go-kratos.dev/docs/getting-started/start/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The core module requires Go 1.25"
+  - field: categories
+    value: [framework, microservices]
+    url: https://go-kratos.dev/docs/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Build Go microservices with Kratos v3"
+  - field: installMethod
+    value: git clone of the kratos-layout project template, then make init
+    url: https://go-kratos.dev/docs/getting-started/start/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Clone the template and install its development commands"
+  - field: runsAs
+    value: [always-on]
+    url: https://go-kratos.dev/docs/component/application/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "kratos.App coordinates transport servers, service registration, lifecycle hooks, signals, and graceful shutdown."
+  - field: installMethod
+    value: go install of the kratos CLI
+    url: https://go-kratos.dev/docs/getting-started/start/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "go install github.com/go-kratos/kratos/cmd/kratos/v3@latest"
+  - field: installMethod
+    value: Docker image built from the template Dockerfile
+    url: https://go-kratos.dev/docs/devops/docker/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The project template builds the service in a Go image and copies only the"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/go-kratos/kratos
+    checkedAt: 2026-10-26
+    via: api
+  - field: license
+    value: MIT
+    url: https://go-kratos.dev/docs/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Kratos is distributed under the MIT License"
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/go-kratos/kratos/releases?per_page=100
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-06-26
+    url: https://api.github.com/repos/go-kratos/kratos/releases/latest
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 25993
+    url: https://api.github.com/repos/go-kratos/kratos
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 289
+    url: https://api.github.com/repos/go-kratos/kratos/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+notFound: [hqCountry, pricingPage, paidEdition, databases, contentStore, adminUi, templating, i18n, sso, userRoles, livePreview, multisite, importsFrom, subreddit, mastodon, bluesky, x, newsletter, forum, pluginDirectory, endoflifeId]
+unreadable: []
+notes: >
+  Core module is github.com/go-kratos/kratos/v3; the CLI and each contrib integration (JWT, OpenTelemetry, Consul, Sentry and others) are separate Go modules with their own versions, per the docs landing page. The integrations page says "Kratos has no runtime plugin loader", so there is no plugin directory; extensions are Go modules wired in at compile time. The project template (kratos-layout) uses MySQL, Ent and Wire, and the docs state "Kratos itself does not require Wire, Ent, MySQL, or that exact package layout", so databases are not recorded for the framework. The homepage header links an external "Blades" product (Blades Agent), a separate project not recorded here. The homepage links GitHub, Discord, the blog RSS and a Chinese-language site; only Discord and GitHub are facts. Major v2 (2022 to 2025 releases) is the prior line; the migration guide is at go-kratos.dev/docs/migration/v3-new-features/. The first GitHub release, v0.1.0, is dated 2019-06-11 and gives firstRelease 2019.

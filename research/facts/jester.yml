@@ -1,0 +1,86 @@
+id: jester
+name: Jester
+status: stub
+checkedAt: 2026-10-26
+description: Web framework for Nim that provides a DSL for defining routes and building web applications.
+facts:
+  - field: repository
+    value: https://github.com/dom96/jester
+    url: https://api.github.com/repos/dom96/jester
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/dom96/jester/blob/master/readme.markdown
+    url: https://github.com/dom96/jester/blob/master/readme.markdown
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Jester provides a DSL for quickly creating web applications in Nim"
+  - field: maintainer
+    value: Dominik Picheta
+    url: https://raw.githubusercontent.com/dom96/jester/master/license.txt
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (C) 2012 Dominik Picheta"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/dom96
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Nim
+    url: https://api.github.com/repos/dom96/jester
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/dom96/jester/blob/master/readme.markdown
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The sinatra-like web framework for Nim"
+  - field: runtime
+    value: [binary]
+    url: https://github.com/dom96/jester/blob/master/readme.markdown
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Compile and run with"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/dom96/jester/master/jester.nimble
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'license = "MIT"'
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/dom96/jester/master/jester.nimble
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'license = "MIT"'
+  - field: firstRelease
+    value: "2016"
+    url: https://api.github.com/repos/dom96/jester/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/dom96/jester/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2023-06-18
+    url: https://api.github.com/repos/dom96/jester/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 1626
+    url: https://api.github.com/repos/dom96/jester
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 41
+    url: https://api.github.com/repos/dom96/jester/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, templating, renderingModes, runsAs, runtimeMin, installMethod, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, docker, endoflifeId, supportedVersions, outputDir, maintainerType]
+unreadable: []
+notes: >
+  Criterion 3 is in doubt: the README (readme.markdown) documents only a compile-and-run example and no installation of the library into a project, and jester.nimble lists dependencies without an install step. A README or Nimble directory line "nimble install jester" would settle it and move the record to accepted. The project has no website of its own: the GitHub repository is the only source, so no homepage is recorded. The README says applications should run behind a reverse proxy before production use and that the library is not yet hardened against HTTP security exploits, and it says the public internet should not reach it; recorded for the prose only. The jester.nimble requires nim 1.0.0 or later and httpbeast 0.4.0 or later on non-Windows systems; the Nim compiler is a build tool, so no runtimeMin is recorded. The latest stable release is v0.6.0 (2023-06-18); the default branch has commits in July 2026 and the repository is not archived. The Nimble registry, which carries the package, is not one of the registries in the rule set, so no registry figure or name is recorded. The LICENSE copyright line names the author; the repository owner is a user account, so the maintainer is the author named in the license.

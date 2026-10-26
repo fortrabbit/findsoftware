@@ -1,0 +1,132 @@
+id: lapis
+name: Lapis
+status: accepted
+checkedAt: 2026-10-26
+description: Web framework for Lua and MoonScript that runs inside the Nginx worker of OpenResty, with routing, HTML templating, models and migrations.
+facts:
+  - field: homepage
+    value: https://leafo.net/lapis/
+    url: https://leafo.net/lapis/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A web framework for Lua"
+  - field: repository
+    value: https://github.com/leafo/lapis
+    url: https://api.github.com/repos/leafo/lapis
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://leafo.net/lapis/reference.html
+    url: https://leafo.net/lapis/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Reference Manual"
+  - field: discord
+    value: https://discord.gg/Y75ZXrD
+    url: https://leafo.net/lapis/
+    checkedAt: 2026-10-26
+    via: page
+  - field: maintainer
+    value: Leaf Corcoran
+    url: https://raw.githubusercontent.com/leafo/lapis/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2023 Leaf Corcoran"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/leafo/lapis
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2013"
+    url: https://api.github.com/repos/leafo/lapis/tags?per_page=100
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: MoonScript
+    url: https://api.github.com/repos/leafo/lapis
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Lua
+    url: https://leafo.net/lapis/reference/getting_started.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Lapis is a web framework written for Lua and MoonScript"
+  - field: runtime
+    value: [lua]
+    url: https://leafo.net/lapis/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "For Lua 5.1+/LuaJIT"
+  - field: runtimeMin
+    value: "Lua 5.1"
+    url: https://leafo.net/lapis/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "For Lua 5.1+/LuaJIT"
+  - field: categories
+    value: [framework]
+    url: https://leafo.net/lapis/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "A web framework for Lua"
+  - field: installMethod
+    value: luarocks install lapis
+    url: https://leafo.net/lapis/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "luarocks install lapis"
+  - field: runsAs
+    value: [always-on]
+    url: https://leafo.net/lapis/reference/getting_started.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Your web application is run directly inside of Nginx"
+  - field: databases
+    value: [postgresql, mysql, sqlite]
+    url: https://leafo.net/lapis/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "PostgreSQL/MySQL/SQLite backed models"
+  - field: templating
+    value: [etlua]
+    url: https://leafo.net/lapis/reference/etlua_templates.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "etlua Templates"
+  - field: templating
+    value: [html-builder]
+    url: https://leafo.net/lapis/reference/html_generation.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "HTML Builder Syntax"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/leafo/lapis
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/leafo/lapis/releases?per_page=100
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-29
+    url: https://api.github.com/repos/leafo/lapis/releases/latest
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 3354
+    url: https://api.github.com/repos/leafo/lapis
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 46
+    url: https://api.github.com/repos/leafo/lapis/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+notFound: [hqCountry, pricingPage, paidEdition, contentStore, adminUi, i18n, sso, userRoles, livePreview, multisite, importsFrom, renderingModes, pluginDirectory, forum, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, basedOn, successorOf, forkOf, alternativeTo, parent]
+unreadable: []
+notes: >
+  The CSV homepage is http://leafo.net/lapis/; the same path answers over https after a redirect, so the https address is recorded. Lapis is a framework without its own HTTP server: the server backends page lists OpenResty, cqueues with lua-http, and golapis (experimental), and OpenResty is the default that the getting started guide describes. OpenResty is the server the project targets, not a parent the project says it is built on, so basedOn is not recorded. The repository language is MoonScript; the framework supports both Lua and MoonScript applications, and both are recorded. The repository's first tag is v0.0.1, dated 2013-07-23 by its commit, which gives firstRelease 2013; the earliest GitHub release is 1.6.0 (2017). The Lapis Console and the lapis-* repositories linked from the homepage are separate projects and are not recorded. The homepage and the reference manual state version 1.20.0 as the latest release.

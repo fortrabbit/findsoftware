@@ -1,0 +1,114 @@
+id: nickel
+name: Nickel
+status: accepted
+checkedAt: 2026-10-26
+description: Rust web application framework with an API inspired by Express, using routes, middleware and mustache templates.
+facts:
+  - field: homepage
+    value: https://nickel-org.github.io/
+    url: https://nickel-org.github.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "nickel.rs web application framework for rust"
+  - field: repository
+    value: https://github.com/nickel-org/nickel.rs
+    url: https://api.github.com/repos/nickel-org/nickel.rs
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://nickel-org.github.io/getting-started.html
+    url: https://nickel-org.github.io/getting-started.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Getting started with nickel.rs is extremely easy"
+  - field: maintainer
+    value: Christoph Burgdorf
+    url: https://raw.githubusercontent.com/nickel-org/nickel.rs/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2014 Christoph Burgdorf"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/nickel-org/nickel.rs
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/nickel-org/nickel.rs
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://raw.githubusercontent.com/nickel-org/nickel.rs/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "a simple and lightweight foundation for web applications written in Rust"
+  - field: runtime
+    value: [rust]
+    url: https://raw.githubusercontent.com/nickel-org/nickel.rs/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "written in Rust"
+  - field: templating
+    value: [mustache]
+    url: https://nickel-org.github.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Nickel supports defining templates with mustache.rs"
+  - field: installMethod
+    value: Cargo dependency in Cargo.toml
+    url: https://raw.githubusercontent.com/nickel-org/nickel.rs/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "[dependencies.nickel]"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/nickel-org/nickel.rs/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/nickel-org/nickel.rs/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: firstRelease
+    value: "2015"
+    url: https://crates.io/api/v1/crates/nickel/versions
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://crates.io/api/v1/crates/nickel
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2019-01-15
+    url: https://crates.io/api/v1/crates/nickel
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 3047
+    url: https://api.github.com/repos/nickel-org/nickel.rs
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 52
+    url: https://api.github.com/repos/nickel-org/nickel.rs/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateName
+    value: nickel
+    url: https://crates.io/api/v1/crates/nickel
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateDownloads
+    value: 1237585 total
+    url: https://crates.io/api/v1/crates/nickel
+    checkedAt: 2026-10-26
+    via: api
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, databases, contentStore, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, renderingModes, runsAs, runtimeMin, endoflifeId, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, packagistName, npmName]
+unreadable: []
+notes: >
+  The repository has no GitHub releases; its tags run from 0.2.0 (2015-04-12) to 0.9.0, while the crates.io package nickel has stable versions to 0.11.0 (2019-01-15). With no GitHub release, the registry gives currentMajor and latestReleaseDate; the crates.io version list gives the first upload, 0.2.0 of 2015-04-12. The default branch master was last pushed 2022-05-10 and the README's development plan lists 0.11.x as bug fixes only and 0.12.x on master with hyper 0.14, not a stated end of the project. The README says nickel.rs is "inspired by" Express; that is not a parent, so basedOn is not recorded. The README links a Gitter chat in its badge; it is not recorded as forum. The homepage at nickel-org.github.io answers over https and is the project's own GitHub Pages site. The CSV row shows a homepage over http; the https address answers and is used here. The maintainer is the copyright holder in LICENSE; the README names four maintainers (jolhoeft, cburgdorf, Ryman, SimonPersson) and calls the project a community effort. The crate's download count is the total from crates.io. No page states how a nickel app runs on a host, so runsAs is left out. The homepage lists routing with parameters and wildcards, middleware including a static files handler, JSON body mapping onto structs, a custom error handler and mustache templates.

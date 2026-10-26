@@ -12,7 +12,7 @@ status: stub
 maintainer: Roddy MacSween
 maintainerType: individual
 firstRelease: 2020
-language: other
+language: ocaml
 hosting:
   - static
 templating: jingoo

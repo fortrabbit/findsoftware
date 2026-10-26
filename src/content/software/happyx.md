@@ -10,7 +10,7 @@ description: Macro-oriented asynchronous full-stack web framework written in Nim
 status: active
 maintainer: HapticX
 firstRelease: 2023
-language: other
+language: nim
 runtime:
   - binary
 hosting:

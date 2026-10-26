@@ -11,7 +11,7 @@ description: Documentation generator for OCaml that reads doc comments and produ
 status: active
 maintainer: Thomas Refis, Leo White and David Sheets
 firstRelease: 2017
-language: other
+language: ocaml
 installMethod: opam
 licenseModel: open-source
 license: ISC

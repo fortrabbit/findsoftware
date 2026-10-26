@@ -10,7 +10,7 @@ description: Static site generator for Lustre projects, written in Gleam.
 status: active
 maintainer: lustre-labs
 firstRelease: 2023
-language: other
+language: gleam
 runtime:
   - beam
   - node

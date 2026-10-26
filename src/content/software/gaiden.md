@@ -12,7 +12,7 @@ status: active
 maintainer: The respective authors and developers
 maintainerType: community
 firstRelease: 2013
-language: other
+language: groovy
 runtime:
   - jvm
 hosting:

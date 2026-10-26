@@ -14,7 +14,7 @@ maintainer: http4k Ltd
 maintainerType: company
 firstRelease: 2017
 hqCountry: GB
-language: other
+language: kotlin
 runtime:
   - jvm
 hosting:

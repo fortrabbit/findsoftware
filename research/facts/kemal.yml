@@ -1,0 +1,145 @@
+id: kemal
+name: Kemal
+status: accepted
+checkedAt: 2026-10-26
+description: Web framework for Crystal for building web applications and APIs, with routing, middleware, JSON handling and WebSocket support.
+facts:
+  - field: homepage
+    value: https://kemalcr.com
+    url: https://kemalcr.com
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Fast, Effective, Simple web framework for Crystal"
+  - field: repository
+    value: https://github.com/kemalcr/kemal
+    url: https://api.github.com/repos/kemalcr/kemal
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://kemalcr.com/guide/
+    url: https://kemalcr.com/guide/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "This guide assumes that you already have Crystal installed."
+  - field: maintainer
+    value: Serdar Doğruyol
+    url: https://raw.githubusercontent.com/kemalcr/kemal/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2016 Serdar Doğruyol"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/kemalcr
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2015"
+    url: https://api.github.com/repos/kemalcr/kemal/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/kemalcr/kemal/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Simple Web Framework for Crystal"
+  - field: language
+    value: Crystal
+    url: https://api.github.com/repos/kemalcr/kemal/languages
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [crystal]
+    url: https://github.com/kemalcr/kemal/blob/master/shard.yml
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'crystal: ">= 1.12.0"'
+  - field: runtimeMin
+    value: "1.12"
+    url: https://github.com/kemalcr/kemal/blob/master/shard.yml
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'crystal: ">= 1.12.0"'
+  - field: installMethod
+    value: shards dependency, then shards install
+    url: https://kemalcr.com/guide/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Then add kemal to the shard.yml file as a dependency."
+  - field: templating
+    value: [ecr]
+    url: https://github.com/kemalcr/kemal/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Built-in ECR template engine"
+  - field: alternativeTo
+    value: [Sinatra, Flask, Express]
+    url: https://github.com/kemalcr/kemal/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "How is Kemal different from Sinatra / Flask / Express?"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/kemalcr/kemal/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/kemalcr/kemal/master/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/kemalcr/kemal/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-17
+    url: https://api.github.com/repos/kemalcr/kemal/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 3929
+    url: https://api.github.com/repos/kemalcr/kemal
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 81
+    url: https://api.github.com/repos/kemalcr/kemal/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: reportedInstalls
+    value: 5M+ downloads since 2015
+    url: https://github.com/kemalcr/kemal/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "5M+ downloads since 2015"
+  - field: runsAs
+    value: [always-on]
+    url: https://kemalcr.com/guide/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Create a systemd service to manage your Kemal application."
+  - field: buildCommand
+    value: crystal build --release --no-debug src/your_app.cr
+    url: https://kemalcr.com/guide/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Create an optimized production binary:"
+  - field: x
+    value: https://twitter.com/crystalkemal
+    url: https://kemalcr.com
+    checkedAt: 2026-10-26
+    via: page
+  - field: discord
+    value: https://discord.gg/prSVAZJEpz
+    url: https://kemalcr.com
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Discord"
+notFound: [hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, renderingModes, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, wikidata, docker, endoflifeId, supportedVersions, mavenCoordinates, outputDir, npmName, packagistName]
+unreadable: []
+notes: >
+  The homepage shows "Latest Version v1.13.0" while the GitHub releases list v1.15.0 (2026-10-17); the GitHub release is recorded. The runtime minimum is the shard.yml constraint crystal >= 1.12.0, which matches the guide's "Kemal 1.14 requires Crystal >= 1.12.0". The README badge says "Crystal-1.19+", a newer statement that conflicts with shard.yml and is not recorded; a reviewer should decide which one counts. The guide's Deployment chapter has a "Systemd Service" section that manages the compiled binary as a service, which is the runsAs statement. The homepage footer links Discord; the project's X link in the header is an icon labeled "Kemal on X" that points to a twitter.com address, and it is recorded as written; the maintainer's personal x.com accounts are not the project's. The homepage and the README state that Crystal compiles to native code. The README reports "5M+ downloads since 2015" and the homepage repeats it; no registry figure applies because Crystal shards are installed from the GitHub repository. The README FAQ names Sinatra, Flask and Express in its comparison question; these are recorded as alternativeTo because the project names them. The license is MIT by the LICENSE file and the GitHub API; the guide and README name no other license.

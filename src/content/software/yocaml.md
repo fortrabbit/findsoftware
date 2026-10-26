@@ -13,7 +13,7 @@ status: active
 maintainer: The XHTMLBoy
 maintainerType: individual
 firstRelease: 2023
-language: other
+language: ocaml
 runtime:
   - binary
 hosting:

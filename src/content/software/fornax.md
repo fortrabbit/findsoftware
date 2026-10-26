@@ -11,7 +11,7 @@ description: Scriptable static site generator that defines page layouts in F# sc
 status: active
 maintainer: Lambda Factory
 firstRelease: 2019
-language: other
+language: fsharp
 runtime:
   - dotnet
 hosting:

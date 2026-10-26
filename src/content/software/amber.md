@@ -12,7 +12,7 @@ status: active
 maintainer: Amber Team
 maintainerType: community
 firstRelease: 2017
-language: other
+language: crystal
 runtime:
   - binary
 hosting:

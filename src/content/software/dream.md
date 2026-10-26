@@ -11,7 +11,7 @@ description: OCaml web framework built from plain handler and middleware functio
 status: active
 maintainer: Anton Bachin
 firstRelease: 2021
-language: other
+language: ocaml
 runtime:
   - binary
 hosting:

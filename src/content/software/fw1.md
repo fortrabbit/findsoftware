@@ -11,6 +11,7 @@ description: Lightweight convention-over-configuration MVC framework for CFML ap
 status: stub
 maintainer: Sean Corfield
 firstRelease: 2011
+language: cfml
 installMethod: CommandBox, box install fw1
 licenseModel: open-source
 license: Apache-2.0
@@ -34,6 +35,9 @@ sources:
     checkedAt: 2026-10-26
   - field: maintainer
     url: https://github.com/framework-one/fw1/blob/develop/README.md
+    checkedAt: 2026-10-26
+  - field: language
+    url: https://framework-one.github.io/
     checkedAt: 2026-10-26
   - field: category
     url: https://framework-one.github.io/
@@ -63,6 +67,8 @@ sources:
     url: https://api.github.com/repos/framework-one/fw1/contributors
     checkedAt: 2026-10-26
 ai: authored
+packagistDownloads: null
+npmWeeklyDownloads: null
 ---
 
 FW/1 is a convention-over-configuration MVC framework for CFML applications, the language of Adobe ColdFusion and Lucee. The project home describes FW/1 as one framework in a family that is primarily for CFML, and the documentation says it covers REST APIs as well as MVC applications. Install it with [CommandBox](https://framework-one.github.io/documentation/) using box install fw1.

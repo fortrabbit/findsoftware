@@ -12,7 +12,7 @@ status: active
 maintainer: Adrian Salceanu and Genie.jl Contributors
 maintainerType: community
 firstRelease: 2018
-language: other
+language: julia
 databases:
   - sqlite
   - mysql

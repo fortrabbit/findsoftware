@@ -12,7 +12,7 @@ description: Minimalistic backend framework for Dart that builds routes and midd
 status: active
 maintainer: Very Good Ventures
 firstRelease: 2022
-language: other
+language: dart
 installMethod: dart pub global activate
 licenseModel: open-source
 license: MIT

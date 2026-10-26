@@ -11,7 +11,7 @@ description: API documentation engine for Kotlin that also documents Java source
 status: active
 maintainer: JetBrains
 firstRelease: 2015
-language: other
+language: kotlin
 installMethod: Gradle plugin
 licenseModel: open-source
 license: Apache-2.0

@@ -11,7 +11,7 @@ description: HTML manipulation tool that works as a static site generator or as 
 status: active
 maintainer: Daniil Baturin et al.
 firstRelease: 2019
-language: other
+language: ocaml
 runtime:
   - binary
 hosting:

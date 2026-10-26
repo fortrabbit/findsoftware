@@ -11,7 +11,7 @@ description: Crystal web framework built from reusable, independent components.
 status: active
 maintainer: George Dietrich
 firstRelease: 2022
-language: other
+language: crystal
 runtime:
   - binary
 hosting:

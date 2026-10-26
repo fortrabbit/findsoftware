@@ -12,7 +12,7 @@ status: active
 maintainer: Giorgio Garofalo
 maintainerType: individual
 firstRelease: 2025
-language: other
+language: kotlin
 runtime:
   - jvm
 hosting:

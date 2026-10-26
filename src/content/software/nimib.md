@@ -12,7 +12,7 @@ status: active
 maintainer: pietroppeter
 maintainerType: individual
 firstRelease: 2021
-language: other
+language: nim
 templating: mustache
 installMethod: nimble install nimib
 licenseModel: open-source

@@ -1,0 +1,3 @@
+Kit is a Clojure web framework that its README describes as a template with a set of libraries. A new application is created from the kit-clj template with the neil tool, and the libraries are published on Clojars, where the core library is kit-core. Kit is built on Integrant, and the libraries cover database access for PostgreSQL, MySQL and SQLite, and Selmer templating. The Luminus site names Kit as its successor.
+
+Applications run on the JVM. The documentation says Kit requires JDK 11 or greater, builds a standalone jar with the Clojure CLI, and shows that jar started with java -jar. The deployment guide runs the jar as a service that starts when the system boots.

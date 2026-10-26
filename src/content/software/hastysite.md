@@ -12,7 +12,7 @@ status: active
 maintainer: Fabio Cevasco
 maintainerType: individual
 firstRelease: 2017
-language: other
+language: nim
 hosting:
   - static
 contentStore:

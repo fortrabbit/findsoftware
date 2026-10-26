@@ -10,7 +10,7 @@ description: Book-publishing system written in Racket that embeds code in text d
 status: active
 maintainer: Matthew Butterick
 maintainerType: individual
-language: other
+language: racket
 hosting:
   - static
 runsAs:

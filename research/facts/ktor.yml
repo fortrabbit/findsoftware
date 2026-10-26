@@ -1,0 +1,132 @@
+id: ktor
+name: Ktor
+status: accepted
+checkedAt: 2026-10-26
+description: Kotlin framework for building asynchronous servers and HTTP clients, extended with plugins and engines.
+facts:
+  - field: homepage
+    value: https://ktor.io
+    url: https://ktor.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Build Asynchronous Servers and Clients in Kotlin"
+  - field: repository
+    value: https://github.com/ktorio/ktor
+    url: https://api.github.com/repos/ktorio/ktor
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://ktor.io/docs/welcome.html
+    url: https://ktor.io/
+    checkedAt: 2026-10-26
+    via: page
+  - field: subreddit
+    value: https://www.reddit.com/r/ktor/
+    url: https://ktor.io/support/
+    checkedAt: 2026-10-26
+    via: page
+  - field: maintainer
+    value: JetBrains
+    url: https://ktor.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Supported and developed by JetBrains"
+  - field: parent
+    value: JetBrains
+    url: https://ktor.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Built and backed by JetBrains"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/ktorio/ktor
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: "2018"
+    url: https://api.github.com/repos/ktorio/ktor/releases/tags/0.9.2
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Kotlin
+    url: https://ktor.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Ktor is built from the ground up using Kotlin and Coroutines"
+  - field: runtime
+    value: [jvm]
+    url: https://ktor.io/docs/server-engines.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Netty JVM"
+  - field: categories
+    value: [framework]
+    url: https://ktor.io/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Create asynchronous client and server applications"
+  - field: installMethod
+    value: web-based Ktor project generator, or Gradle or Maven dependencies on io.ktor artifacts
+    url: https://ktor.io/docs/server-create-a-new-project.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "using the web-based Ktor project generator"
+  - field: mavenCoordinates
+    value: io.ktor:ktor-server-core
+    url: https://ktor.io/docs/server-dependencies.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "ktor-server-core : contains core Ktor functionality"
+  - field: runsAs
+    value: [always-on]
+    url: https://ktor.io/docs/server-create-and-configure.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "we run a server with the Netty engine and listen on the 8080 port"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/ktorio/ktor
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/ktorio/ktor/releases?per_page=100
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-18
+    url: https://api.github.com/repos/ktorio/ktor/releases/latest
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 14554
+    url: https://api.github.com/repos/ktorio/ktor
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 401
+    url: https://api.github.com/repos/ktorio/ktor/contributors?per_page=1
+    checkedAt: 2026-10-26
+    via: api
+  - field: templating
+    value: [html-dsl, freemarker, velocity, mustache, thymeleaf, pebble, jte]
+    url: https://ktor.io/docs/server-templating.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "HTML DSL CSS DSL FreeMarker Velocity Mustache Thymeleaf Pebble JTE"
+  - field: sso
+    value: [ldap]
+    url: https://ktor.io/docs/server-auth.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "LDAP is an open and cross-platform protocol used for directory services authentication"
+  - field: sso
+    value: [oidc]
+    url: https://ktor.io/docs/server-auth.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The Oidc plugin reads a provider's discovery document"
+notFound: [hqCountry, pricingPage, paidEdition, databases, contentStore, adminUi, i18n, userRoles, livePreview, multisite, importsFrom, runtimeMin, discord, mastodon, bluesky, newsletter, pluginDirectory, renderingModes, endoflifeId, successorOf, forkOf, alternativeTo]
+unreadable: []
+notes: >
+  The support page sends questions to Stack Overflow (tag ktor) and issues to YouTrack, and points to the Kotlin Slack Ktor channel; none of these is recorded as a field. The homepage and support page both link x.com/kotlin, which is the Kotlin language account, not a Ktor account, so x is not recorded. Ktor's docs pages list the JVM engines (Netty, Jetty, Tomcat, CIO and the servlet engine) and the CIO engine also targets Native, JavaScript and WasmJs; only the JVM runtime is recorded. No minimum JDK is stated on the pages read, so runtimeMin is left out. The first GitHub release is 0.9.0, a prerelease dated 2017-10-31; the oldest stable release is 0.9.2 (2018-04-23), which firstRelease uses. The server creation page also describes deploying a Ktor application as a servlet inside a container such as Tomcat or Jetty. The latest release is 3.6.0; no prerelease is newer. The Maven artifact io.ktor:ktor-server-core first appears in Maven Central as 1.0.0-rc, which the registry gives without a date.

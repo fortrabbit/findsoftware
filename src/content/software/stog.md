@@ -12,7 +12,7 @@ status: active
 maintainer: INRIA
 maintainerType: individual
 firstRelease: 2012
-language: other
+language: ocaml
 hosting:
   - static
 i18n: multi-language sites

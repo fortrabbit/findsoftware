@@ -12,7 +12,7 @@ description: Kotlin framework for building static or full stack websites and web
 status: active
 maintainer: Varabyte
 firstRelease: 2021
-language: other
+language: kotlin
 runtime:
   - jvm
 hosting:

@@ -9,7 +9,7 @@ category:
 description: Blog generator written in F# that builds a GitHub Pages site from Markdown files in a forked repository.
 status: active
 maintainerType: individual
-language: other
+language: fsharp
 runtime:
   - dotnet
 hosting:

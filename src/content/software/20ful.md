@@ -11,7 +11,7 @@ status: stub
 maintainer: Iļja Ketris
 maintainerType: individual
 firstRelease: 2020
-language: other
+language: javascript
 runtime:
   - node
 hosting:

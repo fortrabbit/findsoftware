@@ -10,7 +10,7 @@ description: Static web site generator written in Racket that builds posts and p
 status: stub
 maintainer: Greg Hendershott
 maintainerType: individual
-language: other
+language: racket
 hosting:
   - static
 contentStore:
