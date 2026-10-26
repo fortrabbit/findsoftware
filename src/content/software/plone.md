@@ -21,6 +21,8 @@ hosting:
   - python
   - node
 runtimeMin: python 3.10
+basedOn:
+  - zope
 databases:
   - postgres
   - mysql
@@ -61,6 +63,9 @@ sources:
     checkedAt: 2026-10-26
   - field: maintainer
     url: https://plone.org/foundation/about
+    checkedAt: 2026-10-26
+  - field: basedOn
+    url: https://6.docs.plone.org/admin-guide/configure-zope.html
     checkedAt: 2026-10-26
   - field: language
     url: https://api.github.com/repos/plone/Products.CMFPlone

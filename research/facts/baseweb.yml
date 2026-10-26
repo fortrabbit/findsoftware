@@ -1,0 +1,120 @@
+id: baseweb
+name: Base Web
+status: accepted
+checkedAt: 2026-10-26
+description: React component library that implements Base, a design system, for web apps.
+facts:
+  - field: homepage
+    value: https://baseweb.design
+    url: https://github.com/uber/baseweb
+    checkedAt: 2026-10-26
+    via: api
+  - field: repository
+    value: https://github.com/uber/baseweb
+    url: https://github.com/uber/baseweb
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://baseweb.design
+    url: https://github.com/uber/baseweb/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "To read the documentation, please visit [baseweb.design](https://baseweb.design)."
+  - field: firstRelease
+    value: 2018
+    url: https://github.com/uber/baseweb/releases/tag/v1.0.2
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: Uber Technologies, Inc.
+    url: https://github.com/uber/baseweb/blob/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) Uber Technologies, Inc."
+  - field: maintainerType
+    value: company
+    url: https://github.com/uber/baseweb/blob/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/uber
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://github.com/uber/baseweb
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [component-library, design-system]
+    url: https://github.com/uber/baseweb/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Base is a design system comprised of modern, responsive, living components."
+  - field: basedOn
+    value: React
+    url: https://github.com/uber/baseweb/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Base Web is the React implementation of Base."
+  - field: installMethod
+    value: [npm]
+    url: https://github.com/uber/baseweb/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "On npm, you can find Base Web as `baseui`."
+  - field: license
+    value: MIT
+    url: https://github.com/uber/baseweb
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/uber/baseweb
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 18
+    url: https://registry.npmjs.org/baseui
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-02
+    url: https://registry.npmjs.org/baseui
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 9024
+    url: https://github.com/uber/baseweb
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 240
+    url: https://github.com/uber/baseweb
+    checkedAt: 2026-10-26
+    via: api
+  - field: npmWeeklyDownloads
+    value: 39112
+    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/baseui
+    checkedAt: 2026-10-26
+    via: api
+  - field: npmName
+    value: baseui
+    url: https://registry.npmjs.org/baseui
+    checkedAt: 2026-10-26
+    via: api
+  - field: dependentPackages
+    value: 93
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/baseui
+    checkedAt: 2026-10-26
+    via: api
+  - field: dependentRepos
+    value: 768
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/baseui
+    checkedAt: 2026-10-26
+    via: api
+notFound: [hqCountry, runtime, runtimeMin, pricingPage, paidEdition, endoflifeId, usageShare, httpArchiveSites, forum, discord, x, bluesky, mastodon, subreddit, newsletter, pluginDirectory, pluginCount, renderingModes, runsAs, templating]
+unreadable: [https://baseweb.design/ (the response is an empty JavaScript shell with no page text), https://baseweb.design/getting-started (404)]
+notes: >
+  The homepage is a JavaScript shell, so homepage comes from the repository's homepage field and docs from the README link. The README has a Maintenance status notice: the maintainers are "limiting our engagement with this repository while still mirroring our internal development"; it does not say the project has ended, so the status stays accepted for a reviewer to decide. The npm package baseui is the install target and its latest is 18.2.0 (2026-07-02), a higher major than the highest GitHub release v13.0.0 (2023-06-13), so currentMajor comes from the registry. The blog post "Open Source Engagement and Future" (source: documentation-site/pages/blog/open-source-engagement/index.mdx in the repository, linked from the README notice) says Uber no longer actively reviews and merges pull requests or takes part in the issues section, has closed the issue tracker, mirrors the source from an internal monorepo, and drives development by its internal needs; it also says the library remains maintained and that main commits are published as 0.0.0-next versions, with an occasional new stable major. That is no end statement. The npm weekly figure is the sum of daily downloads for 2026-10-18 to 2026-10-24 from the range endpoint, because the last-week endpoint returned the window 2026-06-25 to 2026-07-01. The npm baseui package has versions from 2016, but its 0.0.1 description does not identify the project, so firstRelease uses the oldest GitHub tag v1.0.2 (tagged 2018-08-29). The repository description calls it a React component library, and the peer dependencies are react and styletron-react.

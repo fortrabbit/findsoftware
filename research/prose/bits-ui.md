@@ -1,0 +1,1 @@
+Bits UI is a set of headless component primitives for Svelte 5. Its README describes the primitives as flexible, unstyled and accessible, and they are installed from npm as bits-ui. A project supplies the appearance of each component itself.

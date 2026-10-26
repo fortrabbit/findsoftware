@@ -1,0 +1,117 @@
+id: agnosticui
+name: AgnosticUI
+status: accepted
+checkedAt: 2026-10-26
+description: Component library whose source a CLI copies into the project, for React, Vue, Svelte and Lit.
+facts:
+  - field: homepage
+    value: https://agnosticui.com/
+    url: https://agnosticui.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The entire UI library lives in your project (React, Vue, Lit, Svelte, Solid, and more)"
+  - field: repository
+    value: https://github.com/AgnosticUI/agnosticui
+    url: https://api.github.com/repos/AgnosticUI/agnosticui
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://agnosticui.com/installation.html
+    url: https://agnosticui.com/installation.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "There are two installation paths: the CLI (recommended, agent-ready) and the npm package"
+  - field: firstRelease
+    value: 2020
+    url: https://api.github.com/repos/AgnosticUI/agnosticui
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: AgnosticUI
+    url: https://github.com/AgnosticUI/agnosticui/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Apache License 2.0 © AgnosticUI"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/AgnosticUI
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://github.com/AgnosticUI/agnosticui
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [component-library, web-components]
+    url: https://agnosticui.com/
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The entire UI library lives in your project"
+  - field: basedOn
+    value: Lit
+    url: https://github.com/AgnosticUI/agnosticui/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "AgnosticUI's components are authored as Lit Web Components"
+  - field: installMethod
+    value: npx CLI that copies source into the project
+    url: https://agnosticui.com/installation.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "npx agnosticui-cli init"
+  - field: installMethod
+    value: npm package
+    url: https://agnosticui.com/installation.html
+    checkedAt: 2026-10-26
+    via: page
+    quote: "npm install agnosticui-core"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/AgnosticUI/agnosticui
+    checkedAt: 2026-10-26
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/AgnosticUI/agnosticui
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-06-30
+    url: https://registry.npmjs.org/agnosticui-core
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 832
+    url: https://api.github.com/repos/AgnosticUI/agnosticui
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 15
+    url: https://api.github.com/repos/AgnosticUI/agnosticui/contributors
+    checkedAt: 2026-10-26
+    via: api
+  - field: npmName
+    value: agnosticui-cli
+    url: https://registry.npmjs.org/agnosticui-cli
+    checkedAt: 2026-10-26
+    via: api
+  - field: npmWeeklyDownloads
+    value: 3
+    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/agnosticui-cli
+    checkedAt: 2026-10-26
+    via: api
+  - field: dependentPackages
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/agnosticui-cli
+    checkedAt: 2026-10-26
+    via: api
+  - field: dependentRepos
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/agnosticui-cli
+    checkedAt: 2026-10-26
+    via: api
+notFound: [currentMajor, latestReleaseDate, pricingPage, paidEdition, x, bluesky, mastodon, discord, newsletter, forum, subreddit, pluginDirectory, pluginCount, runtime, runtimeMin, runsAs, renderingModes, endoflifeId, usageShare, hqCountry, maintainerType, reportedInstalls]
+unreadable: []
+notes: >
+  No stable release exists on GitHub or npm. The GitHub releases are 2020 prereleases of the v1 line (v1.0.3-x, v1.0.1-x) and the v2 line is tagged only as alpha (v2.0.0-alpha.15 and alpha.13). The npm dist-tag latest is agnosticui-cli 2.0.0-alpha.25 (2026-04-30); agnosticui-core is at 2.0.0-alpha.30 (2026-06-30), which is the latestPrereleaseDate. The install page offers two paths: the CLI (recommended) and the npm package agnosticui-core; the registry figures are for agnosticui-cli, the recommended path, and agnosticui-core had 24 downloads in the same week. npmWeeklyDownloads is the sum of the daily downloads for 2026-10-18 to 2026-10-24 from the range endpoint. The install page is headed "Experimental Alpha" and says "This library is a work-in-progress. We are releasing it early to gather feedback, but it is not ready for production." Nothing there ends the project, so the record is accepted on criteria 1 to 5, with currentMajor and latestReleaseDate absent because no stable version exists; a reviewer may want the alpha label on the record. The npm package named agnosticui does not exist. The v1 packages (agnostic-react, agnostic-vue and so on) are the legacy line named in the README, not this record. The organization has no legal name on the homepage, installation, about, terms or license pages, so the maintainer is recorded as the README names it and maintainerType is left to the import. The CLI runs under npx, so Node is implied, but no page states a runtime. The install page says the project needs a build tool that compiles TypeScript (Vite, esbuild or rollup); no runsAs or renderingModes is stated. HTTP Archive has no technology named for AgnosticUI.

@@ -1,0 +1,85 @@
+id: zewo
+name: Zewo
+status: accepted
+checkedAt: 2026-10-26
+description: Lightweight library for web applications in Swift, built on coroutines.
+facts:
+  - field: repository
+    value: https://github.com/Zewo/Zewo
+    url: https://api.github.com/repos/Zewo/Zewo
+    checkedAt: 2026-10-26
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/Zewo/Zewo/tags
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: Zewo
+    url: https://github.com/Zewo/Zewo/blob/master/LICENSE.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2015 Zewo"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Zewo
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Swift
+    url: https://api.github.com/repos/Zewo/Zewo
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [swift]
+    url: https://github.com/Zewo/Zewo/blob/master/Package.swift
+    checkedAt: 2026-10-26
+    via: page
+    quote: "swift-tools-version:5.1"
+  - field: runtimeMin
+    value: "5.1"
+    url: https://github.com/Zewo/Zewo/blob/master/Package.swift
+    checkedAt: 2026-10-26
+    via: page
+    quote: "swift-tools-version:5.1"
+  - field: categories
+    value: [library]
+    url: https://github.com/Zewo/Zewo/blob/master/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Zewo is not a web framework. Zewo is a lightweight library for web applications in Swift."
+  - field: license
+    value: MIT
+    url: https://github.com/Zewo/Zewo/blob/master/LICENSE.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/Zewo/Zewo
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/Zewo/Zewo/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2018-04-13
+    url: https://api.github.com/repos/Zewo/Zewo/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 1841
+    url: https://api.github.com/repos/Zewo/Zewo
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 29
+    url: https://api.github.com/repos/Zewo/Zewo/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, docs, pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, renderingModes, runsAs, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, wikidata, endoflifeId, maintainerType, installMethod, x]
+unreadable: [https://zewo.io/ (TLS fails over https; plain http answers), https://docs.zewo.io/ (no https; read at http://docs.zewo.io/)]
+notes: >
+  The homepage zewo.io and the docs at docs.zewo.io answer only over plain http (https gets no TLS response), so neither is linked and homepage and docs are in notFound. The x link (twitter.com/zewo_io) and the install steps (Swift Package Manager) appear only on those plain-http pages and nowhere on an https page, so installMethod and x are not recorded; the README has no install section. The README says Zewo is not a web framework and calls itself a library; categories follow that wording, not the CSV's framework. The last push and last commit are 2020-03-26; the last release is 0.16.1 (2018-04-13). No archive flag, deprecation or end statement was found, so status stays accepted; the import moves a record with no release for four years to stub on its own. firstRelease is 2015 from the tag 0.1.0, whose commit is dated 2015-12-26; the oldest GitHub release object is 0.8.0 (2017). Maintainer is the copyright holder in LICENSE.md, with no legal form. The runtime value swift follows existing records; runtimeMin is the swift-tools-version the manifest declares. Whether the code can be installed without the plain-http docs is for a reviewer: the manifest declares a library product, but no https page gives install steps.

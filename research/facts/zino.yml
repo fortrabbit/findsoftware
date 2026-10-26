@@ -1,0 +1,124 @@
+id: zino
+name: zino
+status: accepted
+checkedAt: 2026-10-26
+description: Spec-driven framework for composable applications in Rust.
+facts:
+  - field: repository
+    value: https://github.com/zino-rs/zino
+    url: https://api.github.com/repos/zino-rs/zino
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://docs.rs/zino
+    url: https://github.com/zino-rs/zino/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Documentation"
+  - field: firstRelease
+    value: 2022
+    url: https://crates.io/api/v1/crates/zino/versions
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: Zan Pan
+    url: https://github.com/zino-rs/zino/blob/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2022-2026 Zan Pan"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/zino-rs/zino/blob/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Copyright (c) 2022-2026 Zan Pan"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/zino-rs
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/zino-rs/zino
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [rust]
+    url: https://github.com/zino-rs/zino/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'rust-version = "1.95"'
+  - field: runtimeMin
+    value: "1.95"
+    url: https://crates.io/api/v1/crates/zino/versions
+    checkedAt: 2026-10-26
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/zino-rs/zino/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "strongly opinionated framework for composable applications in Rust"
+  - field: databases
+    value: [mysql, postgres, sqlite]
+    url: https://github.com/zino-rs/zino/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Expressive ORM for MySQL, PostgreSQL and SQLite based on"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/zino-rs/zino/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Here is the simplest application to run a server:"
+  - field: installMethod
+    value: cargo (Cargo.toml dependency)
+    url: https://github.com/zino-rs/zino/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: 'zino = { version = "0.46", features = ["axum"] }'
+  - field: license
+    value: MIT
+    url: https://github.com/zino-rs/zino/blob/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/zino-rs/zino
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://crates.io/api/v1/crates/zino
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-26
+    url: https://crates.io/api/v1/crates/zino
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateName
+    value: zino
+    url: https://crates.io/api/v1/crates/zino
+    checkedAt: 2026-10-26
+    via: api
+  - field: crateDownloads
+    value: 171083 total
+    url: https://crates.io/api/v1/crates/zino
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 1154
+    url: https://api.github.com/repos/zino-rs/zino
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 13
+    url: https://api.github.com/repos/zino-rs/zino/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, renderingModes, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, npmWeeklyDownloads, mavenCoordinates]
+unreadable: []
+notes: >
+  No homepage: the crates.io record and the repository's homepage field both name https://deepwiki.com/zino-rs/zino, a third-party generated wiki rather than the project's own site, and it answered 429 when read. The README gives no own site. The GitHub releases end at 0.43.0 (2026-03-28); tags run to 0.46.2 and crates.io has 0.46.3 (2026-10-26) without GitHub release objects, so currentMajor and latestReleaseDate follow the newer crates.io upload, and runtimeMin is the rust_version crates.io lists for that release (1.95), which the README's Cargo.toml example repeats. crateDownloads is the all-time total from crates.io. The crate's first upload is 0.1.0 (2022-12-29), the same day as the repository. Maintainer is the copyright holder in LICENSE with no legal form; the README's "Community" section names no other contact. The README's integrations (actix-web, axum, dioxus) are named as integrations, not a parent, so basedOn is absent.

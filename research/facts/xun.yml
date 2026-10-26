@@ -1,0 +1,132 @@
+id: xun
+name: Xun
+status: accepted
+checkedAt: 2026-10-26
+description: Go web framework that routes with the standard library's net/http mux and renders pages with html/template.
+facts:
+  - field: repository
+    value: https://github.com/yaitoo/xun
+    url: https://api.github.com/repos/yaitoo/xun
+    checkedAt: 2026-10-26
+    via: api
+  - field: docs
+    value: https://github.com/yaitoo/xun/tree/main/docs
+    url: https://github.com/yaitoo/xun/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "See `docs/content.md` §1.4 for the full convention."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/yaitoo
+    checkedAt: 2026-10-26
+    via: api
+  - field: maintainer
+    value: Yaitoo
+    url: https://api.github.com/users/yaitoo
+    checkedAt: 2026-10-26
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/yaitoo/xun
+    checkedAt: 2026-10-26
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/yaitoo/xun/blob/main/go.mod
+    checkedAt: 2026-10-26
+    via: page
+    quote: "go 1.26.0"
+  - field: runtimeMin
+    value: "1.26"
+    url: https://github.com/yaitoo/xun/blob/main/go.mod
+    checkedAt: 2026-10-26
+    via: page
+    quote: "go 1.26.0"
+  - field: categories
+    value: [framework]
+    url: https://github.com/yaitoo/xun/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Xun is a web framework built on Go's built-in html/template and net/http package’s router."
+  - field: basedOn
+    value: [Go net/http]
+    url: https://github.com/yaitoo/xun/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "built on Go's built-in html/template and net/http package’s router"
+  - field: templating
+    value: [html/template]
+    url: https://github.com/yaitoo/xun/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Works with Go's built-in `html/template`"
+  - field: contentStore
+    value: flat-file
+    url: https://github.com/yaitoo/xun/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Drop a `.md` file into `content/` and it auto-registers as"
+  - field: renderingModes
+    value: [server]
+    url: https://github.com/yaitoo/xun/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "It is built-in support for Server-Side Rendering (SSR)."
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/yaitoo/xun/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "http.ListenAndServe(\":80\", http.DefaultServeMux)"
+  - field: installMethod
+    value: go get
+    url: https://github.com/yaitoo/xun/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "go get github.com/yaitoo/xun@latest"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/yaitoo/xun
+    checkedAt: 2026-10-26
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/yaitoo/xun/blob/main/LICENSE
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/yaitoo/xun/blob/main/README.md
+    checkedAt: 2026-10-26
+    via: page
+    quote: "Apache-2.0 license"
+  - field: firstRelease
+    value: "2024"
+    url: https://proxy.golang.org/github.com/yaitoo/xun/@v/v1.0.0.info
+    checkedAt: 2026-10-26
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/yaitoo/xun/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-12
+    url: https://api.github.com/repos/yaitoo/xun/releases
+    checkedAt: 2026-10-26
+    via: api
+  - field: githubStargazers
+    value: 93
+    url: https://api.github.com/repos/yaitoo/xun
+    checkedAt: 2026-10-26
+    via: api
+  - field: contributors
+    value: 6
+    url: https://api.github.com/repos/yaitoo/xun/contributors
+    checkedAt: 2026-10-26
+    via: api
+notFound: [homepage, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, docker, endoflifeId, supportedVersions, outputDir, npmName, packagistName, pypiName, goModule]
+unreadable: []
+notes: >
+  No homepage: the GitHub repository has no homepage set, and the README names no project website. The examples use yaitoo.cn and xun@yaitoo.cn; those are an author's domain in sample code, not a project page, so nothing is linked. Module path github.com/yaitoo/xun with no /v2 suffix, so the major is 1. Oldest tag v1.0.0 has a Go module proxy time of 2024-12-25 (the GitHub releases list starts at v1.0.3 on 2025-01-01), so firstRelease is 2024. The LICENSE file is the unfilled Apache template with no copyright line, so the maintainer is the name of the GitHub organization that owns the repository (Yaitoo, from the users API); its profile location gives no legal name or headquarters country, so hqCountry is left unknown. i18n is not recorded as yes: the README's "i18n support" covers validation messages from the form package, not translated pages. The README's Deploy section describes a single self-contained binary; the runsAs always-on value rests on its ListenAndServe call and the framework's Start method. The contentStore value is the app's own content/ folder of Markdown files, read by the Content engine.

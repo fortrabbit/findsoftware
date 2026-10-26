@@ -1,0 +1,1 @@
+7.css is a CSS framework for building interface components that look like Windows 7, and it styles HTML with CSS alone. The project says it is built on XP.css, which it describes as an extension of 98.CSS. Pages can load it from unpkg or install it from npm, and the [documentation](https://khang-nd.github.io/7.css/) lists the components.

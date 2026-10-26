@@ -1,0 +1,1 @@
+98.css is a CSS library for building interfaces that look like Windows 98. It takes semantic HTML and styles it to match that interface, and it can be loaded from unpkg, installed with npm, or downloaded from the GitHub releases page. The [documentation](https://jdan.github.io/98.css/) covers its components.
