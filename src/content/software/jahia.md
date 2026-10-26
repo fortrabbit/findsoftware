@@ -9,7 +9,7 @@ urls:
 category:
   - cms
 description: Java content management and digital experience platform, with a visual content editor and multisite management.
-status: active
+status: stub
 maintainer: Jahia Solutions Group SA
 maintainerType: company
 firstRelease: 2011

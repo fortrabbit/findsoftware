@@ -8,7 +8,7 @@ urls:
 category:
   - backend
 description: Java implementation of the Content Repository for Java Technology API (JCR), a hierarchical content store with search, versioning and transactions.
-status: active
+status: stub
 maintainer: The Apache Software Foundation
 maintainerType: foundation
 firstRelease: 2006
