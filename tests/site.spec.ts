@@ -623,3 +623,20 @@ test.describe('search', () => {
     await expect(page.locator('[data-search-results] a').first()).toBeVisible();
   });
 });
+
+test.describe('where to host it', () => {
+  // The publisher's slot is disclosed on the About page and appears only where FindHost lists fortrabbit.
+  test('labels fortrabbit as the publisher on a record FindHost lists it for', async ({ page }) => {
+    await page.goto('/kirby/');
+    const block = page.locator('.hosting-block');
+    await expect(block.locator('.host-publisher')).toContainText('fortrabbit');
+    await expect(block.locator('.host-label')).toHaveText('Publisher');
+  });
+
+  test('shows no publisher slot where FindHost does not list fortrabbit', async ({ page }) => {
+    await page.goto('/nextjs/');
+    const block = page.locator('.hosting-block');
+    await expect(block.locator('.host-list > li')).toHaveCount(4);
+    await expect(block.locator('.host-publisher')).toHaveCount(0);
+  });
+});

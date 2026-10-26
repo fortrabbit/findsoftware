@@ -33,6 +33,12 @@ The usage band on the [Usage](/usage/) page puts each record in one of five band
 
 FindSoftware is published by [fortrabbit](https://www.fortrabbit.com), a hosting company. It is the sibling of [FindHost](https://www.findhost.app), a register of hosting providers built the same way. Hosting on fortrabbit is never a reason to be listed and never a field on a record.
 
+## Hosting suggestions
+
+A record page names up to four hosts from [FindHost](https://www.findhost.app): hosts that list the software, or, where FindHost has no page for the software, hosts that run its runtime. Hosts built for that one software come first. The rest are drawn by a fixed hash of the record and the host, so a page shows the same hosts on every build and another page shows others. No measure of quality enters the pick, and the hosts shown are listed alphabetically. Each links to its own site and to its FindHost page, and a link below the list leads to all of them.
+
+When FindHost lists fortrabbit for the software, fortrabbit appears first, labeled "Publisher", on top of the four.
+
 ## Credits
 
 Records are researched by AI agents from primary sources only: the project's own site, its repository and package registries, never directories or comparison sites. A second agent checks every fact against its quote, and a script fetches each quoted page again to confirm the words are still there. A person reads the records after they are published and corrects what is wrong. Each record says how much of its description a machine wrote. The data is licensed CC BY 4.0, the code MIT.

@@ -1,0 +1,73 @@
+---
+/**
+ * Where a record can be hosted, from FindHost: the filter pages over FindHost's
+ * whole register for what it needs, then a few hosts by name. Each host links to its own site
+ * and, beside it, to its FindHost page. fortrabbit publishes this site, so when
+ * FindHost lists it here it takes a labeled slot of its own above the others.
+ */
+import type { HostSuggestions } from '../lib/findhost';
+import type { Row } from './FactGroups.astro';
+
+interface Props {
+  name: string;
+  suggestions?: HostSuggestions;
+  rows: Row[];
+}
+
+const { name, suggestions, rows } = Astro.props;
+---
+
+<div class="fact-groups hosting-block">
+  {
+    rows.length > 0 && (
+      <section class="fact-group">
+        <h2>Hosting needs</h2>
+        <dl class="fact-list">
+          {rows.map((row) => (
+            <>
+              <dt title={row.label}>{row.label}</dt>
+              <dd>
+                {row.cells.map((cell, index) => (
+                  <>
+                    {index > 0 && ', '}
+                    <a href={cell.href}>{cell.text}</a>
+                  </>
+                ))}
+              </dd>
+            </>
+          ))}
+        </dl>
+      </section>
+    )
+  }
+  {
+    suggestions && (
+      <section class="fact-group">
+        <h2>Hosting for {name}</h2>
+        <ul class="host-list">
+          {suggestions.publisher && (
+            <li class="host-publisher">
+              <a href={suggestions.publisher.url}>{suggestions.publisher.name}</a>
+              <span class="host-label">Publisher</span>
+              <a class="host-findhost" href={suggestions.publisher.findhost}>
+                FindHost →
+              </a>
+            </li>
+          )}
+          {suggestions.hosts.map((host) => (
+            <li>
+              <a href={host.url}>{host.name}</a>
+              <a class="host-findhost" href={host.findhost}>
+                FindHost →
+              </a>
+            </li>
+          ))}
+        </ul>
+        <p>
+          <a href={suggestions.all}>All {suggestions.total} hosts on FindHost</a> ·{' '}
+          <a href="/about/#hosting-suggestions">How we pick</a>
+        </p>
+      </section>
+    )
+  }
+</div>

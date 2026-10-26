@@ -29,7 +29,7 @@ const { groups, class: className } = Astro.props;
         <dl class="fact-list">
           {group.rows.map((row) => (
             <>
-              <dt>{row.label}</dt>
+              <dt title={row.label}>{row.label}</dt>
               <dd>
                 {row.cells.map((cell, index) => (
                   <>

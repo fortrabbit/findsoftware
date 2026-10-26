@@ -2,6 +2,8 @@
 
 A ratings-free register of software to build websites, web apps and web-based services, in every language: CMSs, frameworks, static site generators, e-commerce, UI and CSS libraries, site search, services, build tools, server software and the packages built on top of them. Published by fortrabbit. Sibling of [FindHost](https://www.findhost.app). "FindSoftware" is a working title.
 
+A record page names up to four hosts from FindHost, picked by a stable hash, never by quality. When FindHost lists fortrabbit for the software, fortrabbit shows first, labeled "Publisher", on top of the four.
+
 ## Run locally
 
 ```sh

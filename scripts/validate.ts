@@ -975,6 +975,14 @@ for (const name of existsSync(logoDir) ? readdirSync(logoDir).filter((file) => !
   if (!logos[name.replace(/\.png$/, '')]) fail(join(logoDir, name), `not in ${logoManifest}`);
 }
 
+// Hosts named on record pages link straight to the provider: https only, and no query string that could carry a referral.
+const hostsFile = 'src/data/findhost-hosts.yml';
+for (const host of parseYaml(readFileSync(hostsFile, 'utf8')) as { id: string; url?: string }[]) {
+  if (!host.url) fail(hostsFile, `${host.id} has no home URL`);
+  else if (!host.url.startsWith('https://') || /[?#]/.test(host.url))
+    fail(hostsFile, `${host.id} URL ${host.url} must be https with no query or fragment`);
+}
+
 if (errors.length) {
   console.error(`\n${errors.length} problem${errors.length === 1 ? '' : 's'}:\n`);
   for (const error of errors) console.error(`  ${error}`);

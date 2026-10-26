@@ -1188,7 +1188,6 @@ html.js [data-find-fallback] {
   text-decoration: underline;
 }
 
-
 .find-facet {
   /* Shared with the box below, so the title's count sits over the column of counts inside it. */
   --find-pad: var(--space-xs);
@@ -1629,6 +1628,11 @@ html.js [data-find-fallback] {
   margin-top: var(--space-xl);
 }
 
+/* The groups inside it join the outer grid as its own cells. */
+.record-near > .fact-groups {
+  display: contents;
+}
+
 .fact-group {
   display: flow-root;
   margin: 0;
@@ -1679,7 +1683,8 @@ html.js [data-find-fallback] {
 
 .fact-list {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
+  /* The value keeps at least two fifths of the row; a label longer than the rest ends in an ellipsis. */
+  grid-template-columns: minmax(0, max-content) minmax(40%, 1fr);
   gap: 0 var(--space-sm);
   align-items: baseline;
   max-width: none;
@@ -1688,7 +1693,10 @@ html.js [data-find-fallback] {
 }
 
 .fact-list > dt {
+  overflow: hidden;
   padding: var(--space-3xs) 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: var(--text-xs);
   line-height: var(--leading-data);
 }
@@ -2064,4 +2072,31 @@ article > pre {
 .record-instead {
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   gap: var(--space-lg) var(--space-xl);
+}
+
+/* Hosts by name, each with its FindHost page beside it. */
+.host-list {
+  margin: 0 0 var(--space-xs);
+  padding: 0;
+  font-family: var(--font-data);
+  font-size: var(--text-xs);
+  line-height: var(--leading-data);
+  list-style: none;
+}
+
+.host-list > li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--space-2xs);
+  align-items: baseline;
+  padding: var(--space-3xs) 0;
+}
+
+.host-findhost {
+  margin-left: auto;
+  font-size: 0.85em;
+}
+
+.host-label {
+  font-size: 0.75em;
 }

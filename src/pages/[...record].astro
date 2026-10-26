@@ -28,7 +28,8 @@ import PageFigure from '../components/PageFigure.astro';
 import { loadGraph, trailOf } from '../lib/graph-data';
 import ProviderLogo from '../components/ProviderLogo.astro';
 import FactGroups from '../components/FactGroups.astro';
-import { findhostRows } from '../lib/findhost';
+import { findhostRows, hostsFor } from '../lib/findhost';
+import HostingBlock from '../components/HostingBlock.astro';
 
 export async function getStaticPaths() {
   const providers = await loadSoftware();
@@ -116,6 +117,7 @@ const farGroups = knownGroups.filter((group) => !besideTheProse.includes(group.l
 
 // Unset, the site builds without links to FindHost rather than to a guessed address.
 const hosts = findhostRows(import.meta.env.FINDHOST_URL, provider.id, data.name, data);
+const hostSuggestions = hostsFor(import.meta.env.FINDHOST_URL, provider.id, data.hosting);
 
 const missing = applicable.filter((field) => !held(valueOf(field.id)));
 const total = applicable.length;
@@ -438,12 +440,19 @@ const metaDescription = data.description
           )
         }
 
-        <FactGroups groups={drawn(nearGroups)} />
+        {/* One grid for every group beside the prose, so a short group leaves no hole the next one cannot fill. */}
+        <div class="fact-groups record-near">
+          <FactGroups groups={drawn(nearGroups)} />
 
-        {/* Facts about this record held on other records, drawn from their side of the relation. */}
-        {related.length > 0 && <FactGroups groups={[{ label: 'Related', rows: related }]} />}
+          {/* Facts about this record held on other records, drawn from their side of the relation. */}
+          {related.length > 0 && <FactGroups groups={[{ label: 'Related', rows: related }]} />}
 
-        {hosts.length > 0 && <FactGroups groups={[{ label: 'Where to host it', rows: hosts }]} />}
+          {
+            (hosts.length > 0 || hostSuggestions) && (
+              <HostingBlock name={data.name} suggestions={hostSuggestions} rows={hosts} />
+            )
+          }
+        </div>
 
         {
           missing.length > 0 && (
