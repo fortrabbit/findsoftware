@@ -13,8 +13,11 @@ maintainer: Jason McIntosh
 maintainerType: individual
 firstRelease: 2015
 language: perl
+runtime:
+  - perl
 hosting:
   - static
+runtimeMin: perl 5.26
 contentStore:
   - flat-file
 adminUi: false
@@ -49,6 +52,12 @@ sources:
     url: https://api.github.com/repos/jmacdotorg/plerd
     checkedAt: 2026-10-23
   - field: category
+    url: https://github.com/jmacdotorg/plerd/blob/master/README.md
+    checkedAt: 2026-10-23
+  - field: runtime
+    url: https://github.com/jmacdotorg/plerd/blob/master/README.md
+    checkedAt: 2026-10-23
+  - field: runtimeMin
     url: https://github.com/jmacdotorg/plerd/blob/master/README.md
     checkedAt: 2026-10-23
   - field: installMethod

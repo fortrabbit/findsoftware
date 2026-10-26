@@ -13,8 +13,11 @@ maintainer: Mark D. Benson
 maintainerType: individual
 firstRelease: 2014
 language: perl
+runtime:
+  - perl
 hosting:
   - static
+runtimeMin: perl 5.8
 contentStore:
   - flat-file
 templating: tt3
@@ -53,6 +56,9 @@ sources:
   - field: language
     url: https://github.com/markdbenson/dapper/blob/master/README.md
     checkedAt: 2026-10-23
+  - field: runtime
+    url: https://github.com/markdbenson/dapper/blob/master/README.md
+    checkedAt: 2026-10-23
   - field: category
     url: https://github.com/markdbenson/dapper/blob/master/README.md
     checkedAt: 2026-10-23
@@ -70,6 +76,9 @@ sources:
     checkedAt: 2026-10-23
   - field: installMethod
     url: https://github.com/markdbenson/dapper/blob/master/README.md
+    checkedAt: 2026-10-23
+  - field: runtimeMin
+    url: https://fastapi.metacpan.org/v1/release/App-Dapper
     checkedAt: 2026-10-23
   - field: license
     url: https://github.com/markdbenson/dapper/blob/master/README.md

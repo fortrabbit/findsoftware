@@ -11,6 +11,8 @@ status: stub
 maintainer: Doug Bell
 maintainerType: individual
 language: perl
+runtime:
+  - perl
 hosting:
   - static
 contentStore:
@@ -45,6 +47,9 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://fastapi.metacpan.org/v1/pod/Statocles
+    checkedAt: 2026-10-23
+  - field: runtime
+    url: https://api.github.com/repos/preaction/Statocles
     checkedAt: 2026-10-23
   - field: renderingModes
     url: https://fastapi.metacpan.org/v1/pod/Statocles

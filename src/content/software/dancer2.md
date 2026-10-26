@@ -14,6 +14,11 @@ maintainer: Dancer Core Developers
 maintainerType: community
 firstRelease: 2013
 language: perl
+runtime:
+  - perl
+hosting:
+  - perl
+runtimeMin: perl 5.014
 templating: template-tiny, template-toolkit
 runsAs:
   - always-on
@@ -47,6 +52,12 @@ sources:
     checkedAt: 2026-10-26
   - field: language
     url: https://api.github.com/repos/PerlDancer/Dancer2
+    checkedAt: 2026-10-26
+  - field: runtimeMin
+    url: https://fastapi.metacpan.org/v1/release/Dancer2
+    checkedAt: 2026-10-26
+  - field: runtime
+    url: https://github.com/PerlDancer/Dancer2/blob/main/README.md
     checkedAt: 2026-10-26
   - field: category
     url: https://github.com/PerlDancer/Dancer2/blob/main/README.md

@@ -11,7 +11,10 @@ category:
 description: Wiki compiler that builds wiki pages into a static website, storing page history in a revision control system, with blogging support.
 status: active
 maintainer: Joey
+runtime:
+  - perl
 hosting:
+  - perl
   - static
 adminUi: true
 i18n: yes, translating individual wiki pages with po files
@@ -48,6 +51,9 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://ikiwiki.info/features/
+    checkedAt: 2026-10-23
+  - field: runtime
+    url: https://ikiwiki.info/install/
     checkedAt: 2026-10-23
   - field: installMethod
     url: https://ikiwiki.info/download/

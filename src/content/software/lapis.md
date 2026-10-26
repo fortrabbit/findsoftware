@@ -13,6 +13,11 @@ maintainer: Leaf Corcoran
 maintainerType: individual
 firstRelease: 2013
 language: other
+runtime:
+  - lua
+hosting:
+  - lua
+runtimeMin: lua 5.1
 databases:
   - postgres
   - mysql
@@ -52,6 +57,12 @@ sources:
     checkedAt: 2026-10-26
   - field: language
     url: https://leafo.net/lapis/reference/getting_started.html
+    checkedAt: 2026-10-26
+  - field: runtime
+    url: https://leafo.net/lapis/
+    checkedAt: 2026-10-26
+  - field: runtimeMin
+    url: https://leafo.net/lapis/
     checkedAt: 2026-10-26
   - field: category
     url: https://leafo.net/lapis/

@@ -15,6 +15,11 @@ maintainerType: company
 firstRelease: 2001
 hqCountry: JP
 language: perl
+runtime:
+  - perl
+hosting:
+  - perl
+runtimeMin: perl 5.16
 contentStore:
   - database
 databases:
@@ -63,6 +68,9 @@ sources:
     url: https://www.movabletype.org/about/
     checkedAt: 2026-10-26
   - field: language
+    url: https://www.movabletype.org/about/features/
+    checkedAt: 2026-10-26
+  - field: runtime
     url: https://www.movabletype.org/about/features/
     checkedAt: 2026-10-26
   - field: installMethod
@@ -130,6 +138,9 @@ sources:
     checkedAt: 2026-10-26
   - field: urls
     url: https://www.movabletype.org/
+    checkedAt: 2026-10-26
+  - field: runtimeMin
+    url: https://movabletype.jp/documentation/mt9/start-guide/about-movable-type/system-requirements/
     checkedAt: 2026-10-26
   - field: urls
     url: https://www.movabletype.com/

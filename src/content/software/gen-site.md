@@ -11,6 +11,8 @@ status: stub
 maintainer: Kartik K. Agaram
 maintainerType: individual
 language: other
+runtime:
+  - lua
 hosting:
   - static
 contentStore:
@@ -38,6 +40,9 @@ sources:
     url: https://git.sr.ht/~akkartik/gen_site
     checkedAt: 2026-10-23
   - field: category
+    url: https://git.sr.ht/~akkartik/gen_site
+    checkedAt: 2026-10-23
+  - field: runtime
     url: https://git.sr.ht/~akkartik/gen_site
     checkedAt: 2026-10-23
   - field: renderingModes

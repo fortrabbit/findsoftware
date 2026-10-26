@@ -12,6 +12,8 @@ maintainer: neevek
 maintainerType: individual
 firstRelease: 2013
 language: perl
+runtime:
+  - perl
 contentStore:
   - flat-file
 templating: html-template
@@ -42,6 +44,9 @@ sources:
     url: https://api.github.com/repos/neevek/minerl
     checkedAt: 2026-10-23
   - field: category
+    url: https://github.com/neevek/minerl/blob/master/README.md
+    checkedAt: 2026-10-23
+  - field: runtime
     url: https://github.com/neevek/minerl/blob/master/README.md
     checkedAt: 2026-10-23
   - field: installMethod

@@ -13,6 +13,8 @@ maintainer: Steve Kemp
 maintainerType: individual
 firstRelease: 2012
 language: perl
+runtime:
+  - perl
 hosting:
   - static
 templating: html-template
@@ -53,6 +55,9 @@ sources:
     url: https://api.github.com/repos/skx/templer
     checkedAt: 2026-10-23
   - field: category
+    url: https://github.com/skx/templer/blob/master/README.md
+    checkedAt: 2026-10-23
+  - field: runtime
     url: https://github.com/skx/templer/blob/master/README.md
     checkedAt: 2026-10-23
   - field: templating

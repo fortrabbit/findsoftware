@@ -14,6 +14,8 @@ maintainerType: company
 firstRelease: 2018
 hqCountry: BG
 language: perl
+runtime:
+  - perl
 hosting:
   - static
 templating: template toolkit
@@ -63,6 +65,9 @@ sources:
     checkedAt: 2026-10-23
   - field: templating
     url: https://github.com/gflohr/qgoda/blob/main/README.md
+    checkedAt: 2026-10-23
+  - field: runtime
+    url: https://www.qgoda.net/en/docs/installation/
     checkedAt: 2026-10-23
   - field: installMethod
     url: https://www.qgoda.net/en/docs/installation/

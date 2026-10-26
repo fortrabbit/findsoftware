@@ -12,6 +12,8 @@ maintainer: Giovanni Simoni
 maintainerType: individual
 firstRelease: 2016
 language: perl
+runtime:
+  - perl
 hosting:
   - static
 contentStore:
@@ -43,6 +45,9 @@ sources:
     checkedAt: 2026-10-23
   - field: language
     url: https://api.github.com/repos/dacav/App-PFT
+    checkedAt: 2026-10-23
+  - field: runtime
+    url: https://raw.githubusercontent.com/dacav/App-PFT/master/README.md
     checkedAt: 2026-10-23
   - field: category
     url: https://raw.githubusercontent.com/dacav/App-PFT/master/README.md

@@ -13,6 +13,11 @@ maintainerType: company
 firstRelease: 2001
 hqCountry: JP
 language: perl
+runtime:
+  - perl
+hosting:
+  - perl
+runtimeMin: perl 5.16
 databases:
   - mysql
 runsAs:
@@ -38,6 +43,12 @@ sources:
     checkedAt: 2026-10-26
   - field: language
     url: https://api.github.com/repos/movabletype/movabletype
+    checkedAt: 2026-10-26
+  - field: runtime
+    url: https://github.com/movabletype/movabletype/blob/develop/README.md
+    checkedAt: 2026-10-26
+  - field: runtimeMin
+    url: https://github.com/movabletype/movabletype/blob/develop/README.md
     checkedAt: 2026-10-26
   - field: databases
     url: https://github.com/movabletype/movabletype/blob/develop/README.md

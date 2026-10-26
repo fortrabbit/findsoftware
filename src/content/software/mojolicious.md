@@ -12,6 +12,11 @@ status: active
 maintainer: Sebastian Riedel
 firstRelease: 2010
 language: perl
+runtime:
+  - perl
+hosting:
+  - perl
+runtimeMin: perl 5.26
 templating: perl-ish templates
 runsAs:
   - always-on
@@ -45,6 +50,12 @@ sources:
     checkedAt: 2026-10-26
   - field: language
     url: https://api.github.com/repos/mojolicious/mojo
+    checkedAt: 2026-10-26
+  - field: runtime
+    url: https://mojolicious.org/
+    checkedAt: 2026-10-26
+  - field: runtimeMin
+    url: https://mojolicious.org/
     checkedAt: 2026-10-26
   - field: category
     url: https://mojolicious.org/
