@@ -11,6 +11,11 @@ status: active
 maintainer: Posit Software, PBC
 firstRelease: 2012
 language: r
+runtime:
+  - r
+hosting:
+  - r
+runtimeMin: r 3.1
 runsAs:
   - always-on
 installMethod: install.packages from CRAN
@@ -40,6 +45,12 @@ sources:
     checkedAt: 2026-10-26
   - field: category
     url: https://cran.r-project.org/package=shiny
+    checkedAt: 2026-10-26
+  - field: runtime
+    url: https://raw.githubusercontent.com/rstudio/shiny/main/DESCRIPTION
+    checkedAt: 2026-10-26
+  - field: runtimeMin
+    url: https://raw.githubusercontent.com/rstudio/shiny/main/DESCRIPTION
     checkedAt: 2026-10-26
   - field: installMethod
     url: https://raw.githubusercontent.com/rstudio/shiny/main/README.md

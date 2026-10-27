@@ -11,6 +11,11 @@ maintainer: Robert Åkerblom-Andersson
 maintainerType: individual
 firstRelease: 2014
 language: dart
+runtime:
+  - dart
+hosting:
+  - dart
+runtimeMin: dart 1.9
 databases:
   - mongodb
 renderingModes:
@@ -44,6 +49,12 @@ sources:
     checkedAt: 2026-10-26
   - field: language
     url: https://api.github.com/repos/Scorpiion/vane
+    checkedAt: 2026-10-26
+  - field: runtime
+    url: https://github.com/Scorpiion/vane
+    checkedAt: 2026-10-26
+  - field: runtimeMin
+    url: https://pub.dev/api/packages/vane
     checkedAt: 2026-10-26
   - field: renderingModes
     url: https://github.com/Scorpiion/vane

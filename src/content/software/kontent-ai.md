@@ -23,6 +23,8 @@ httpArchiveSites: 630
 social:
   x: https://twitter.com/Kontent_ai
   discord: https://discord.com/invite/G3E8nDM5mB
+  facebook: https://www.facebook.com/Kontentai
+  instagram: https://www.instagram.com/kontent_ai/
 addedAt: 2026-10-24
 checkedAt: 2026-10-24
 sources:

@@ -37,6 +37,8 @@ githubStargazers: 736
 packagistDownloads: 189
 contributors: 2
 packagistMonthlyDownloads: 16
+social:
+  facebook: https://www.facebook.com/GP247.official/
 addedAt: 2026-10-24
 checkedAt: 2026-10-24
 sources:

@@ -11,6 +11,11 @@ maintainer: Jaguar Authors
 maintainerType: community
 firstRelease: 2016
 language: dart
+runtime:
+  - dart
+hosting:
+  - dart
+runtimeMin: dart 2.12
 runsAs:
   - always-on
 licenseModel: open-source
@@ -30,6 +35,12 @@ sources:
     checkedAt: 2026-10-26
   - field: language
     url: https://api.github.com/repos/Jaguar-dart/jaguar
+    checkedAt: 2026-10-26
+  - field: runtime
+    url: https://pub.dev/api/packages/jaguar
+    checkedAt: 2026-10-26
+  - field: runtimeMin
+    url: https://pub.dev/api/packages/jaguar
     checkedAt: 2026-10-26
   - field: category
     url: https://raw.githubusercontent.com/Jaguar-dart/jaguar/master/README.md

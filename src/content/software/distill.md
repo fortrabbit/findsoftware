@@ -12,6 +12,10 @@ status: active
 maintainer: Posit Software, PBC
 firstRelease: 2019
 language: r
+runtime:
+  - r
+hosting:
+  - r
 installMethod: install.packages from CRAN
 licenseModel: open-source
 license: Apache-2.0
@@ -34,6 +38,9 @@ sources:
     url: https://github.com/rstudio/distill/blob/main/README.md
     checkedAt: 2026-10-23
   - field: language
+    url: https://github.com/rstudio/distill/blob/main/DESCRIPTION
+    checkedAt: 2026-10-23
+  - field: runtime
     url: https://github.com/rstudio/distill/blob/main/DESCRIPTION
     checkedAt: 2026-10-23
   - field: category

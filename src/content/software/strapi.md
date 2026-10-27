@@ -52,6 +52,8 @@ dependentPackages: 110
 social:
   x: https://x.com/strapijs
   discord: https://discord.strapi.io
+  facebook: https://www.facebook.com/strapijs/
+  instagram: https://www.instagram.com/strapijs/
 wikidata: Q105826887
 addedAt: 2026-10-18
 checkedAt: 2026-10-18

@@ -12,8 +12,11 @@ status: active
 maintainer: Yihui Xie
 firstRelease: 2017
 language: r
+runtime:
+  - r
 hosting:
   - static
+runtimeMin: r 3.5
 contentStore:
   - flat-file
 runsAs:
@@ -46,6 +49,12 @@ sources:
     checkedAt: 2026-10-23
   - field: language
     url: https://api.github.com/repos/rstudio/blogdown
+    checkedAt: 2026-10-23
+  - field: runtime
+    url: https://raw.githubusercontent.com/rstudio/blogdown/main/DESCRIPTION
+    checkedAt: 2026-10-23
+  - field: runtimeMin
+    url: https://raw.githubusercontent.com/rstudio/blogdown/main/DESCRIPTION
     checkedAt: 2026-10-23
   - field: category
     url: https://raw.githubusercontent.com/rstudio/blogdown/main/DESCRIPTION

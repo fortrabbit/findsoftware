@@ -1,9 +1,15 @@
 id: gestalt
 name: Gestalt
-status: stub
+status: discontinued
 checkedAt: 2026-10-27
 description: Pinterest's design system, with a React component library and written design guidelines.
 facts:
+  - field: status
+    value: discontinued
+    url: https://github.com/pinterest/gestalt/blob/HEAD/README.md
+    checkedAt: 2026-10-27
+    via: page
+    quote: "This project is no longer actively maintained and has reached end of life."
   - field: homepage
     value: https://gestalt.pinterest.systems/
     url: https://gestalt.pinterest.systems/
@@ -108,4 +114,4 @@ facts:
 notFound: [pricingPage, paidEdition, hqCountry, endoflifeId, runtime, runsAs, renderingModes, discord, forum, x, bluesky, mastodon, subreddit, newsletter, pluginDirectory, usageShare, reportedInstalls, httpArchiveSites]
 unreadable: []
 notes: >
-  Doubt: whether the project has ended. The README on the default branch carries an end-of-life notice ("This project is no longer actively maintained and has reached end of life"; "Deprecated as of November 2025"; a placeholder migration link to your-org/new-repo), committed 2026-10-05, while the same README lists v177.0.13 as the last supported version, a release dated 2026-01-07, and the repository has commits after November 2025. The homepage shows no notice and presents the design system as current. The npm latest is 177.0.12 (published 2025-12-09) and has no .13 release on npm, so the GitHub release list and the registry disagree. Settle it by the maintainer's own dated announcement or a registry deprecation flag; until then the record stays a stub rather than discontinued. The homepage links only the Pinterest site, a v1 docs page and two Pinterest design blog articles, and no community, social or newsletter link. The CSV figure of 39.1k weekly downloads does not match the gestalt package count of 2,248 for 2026-10-18 to 2026-10-24; the package the install docs name is gestalt, and the figure here is that package's own count. The GitHub org Pinterest is recorded as the maintainer as the README states it; no legal form was found on the homepage, the README or the LICENSE, which has no copyright line. The first GitHub release is v0.57.0 from 2018-02-22, and the npm registry's creation date of 2012 belongs to a different package history, so it is not used. The npm package dependents counts come from ecosyste.ms.
+  Frank ruled discontinued on 2026-10-27. The README on the default branch carries an end-of-life notice ("This project is no longer actively maintained and has reached end of life"; "Deprecated as of November 2025"; a placeholder migration link to your-org/new-repo), committed 2026-10-05, while the same README lists v177.0.13 as the last supported version, a release dated 2026-01-07, and the repository has commits after November 2025. The homepage shows no notice and presents the design system as current. The npm latest is 177.0.12 (published 2025-12-09) and has no .13 release on npm, so the GitHub release list and the registry disagree. The migration link points to a placeholder (your-org/new-repo), and the later commits and the v177.0.13 release are context. The homepage links only the Pinterest site, a v1 docs page and two Pinterest design blog articles, and no community, social or newsletter link. The CSV figure of 39.1k weekly downloads does not match the gestalt package count of 2,248 for 2026-10-18 to 2026-10-24; the package the install docs name is gestalt, and the figure here is that package's own count. The GitHub org Pinterest is recorded as the maintainer as the README states it; no legal form was found on the homepage, the README or the LICENSE, which has no copyright line. The first GitHub release is v0.57.0 from 2018-02-22, and the npm registry's creation date of 2012 belongs to a different package history, so it is not used. The npm package dependents counts come from ecosyste.ms.

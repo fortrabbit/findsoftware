@@ -37,6 +37,7 @@ githubStargazers: 248
 contributors: 15
 social:
   x: https://twitter.com/raythahq
+  instagram: https://instagram.com/raythahq
 addedAt: 2026-10-26
 checkedAt: 2026-10-26
 sources:

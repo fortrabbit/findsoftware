@@ -13,6 +13,11 @@ status: active
 maintainer: Very Good Ventures
 firstRelease: 2022
 language: dart
+runtime:
+  - dart
+hosting:
+  - dart
+runtimeMin: dart 3.0
 basedOn:
   - shelf
 installMethod: dart pub global activate
@@ -41,6 +46,12 @@ sources:
     checkedAt: 2026-10-26
   - field: language
     url: https://api.github.com/repos/dart-frog-dev/dart_frog
+    checkedAt: 2026-10-26
+  - field: runtime
+    url: https://dart-frog.dev/getting-started/
+    checkedAt: 2026-10-26
+  - field: runtimeMin
+    url: https://dart-frog.dev/getting-started/
     checkedAt: 2026-10-26
   - field: category
     url: https://github.com/dart-frog-dev/dart_frog/blob/main/README.md

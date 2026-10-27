@@ -210,7 +210,22 @@ facts:
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tinacms
     checkedAt: 2026-10-25
     via: api
+  - field: facebook
+    value: https://www.facebook.com/tinacms/
+    url: https://tina.io
+    checkedAt: 2026-10-27
+    via: page
+  - field: instagram
+    value: https://www.instagram.com/tinacms_/
+    url: https://tina.io
+    checkedAt: 2026-10-27
+    via: page
+  - field: threads
+    value: https://www.threads.com/@tinacms_
+    url: https://tina.io
+    checkedAt: 2026-10-27
+    via: page
 notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, templating, multisite, i18n, userRoles, sso, importsFrom, paidEdition, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, subreddit, mastodon, newsletter, wikidata, docker, endoflifeId, supportedVersions, runtimeMin, outputDir, maintainerType]
 unreadable: []
 notes: >
-  The monorepo publishes many packages under tinacms and @tinacms scopes; the package the install docs use (npx create-tina-app, a create-* scaffolder) is not the figure base, so the core package tinacms is the registry id, at 3.15.0 (2026-10-19), major 3. firstRelease is the year of the first npm publish of the tinacms package itself (0.3.0, October 2019); the oldest GitHub release belongs to another monorepo package. The tina.io footer links Bluesky, YouTube, LinkedIn, Facebook and Instagram as icons only (image alt text), so those facts carry no quote. The maintainer is SSW USA as named in the tina.io terms; the terms give no legal form and no headquarters, so hqCountry is not recorded. The README lists named maintainers, which are individuals; they are not recorded as the maintainer. TinaCloud is the hosted backend next to the open source CMS: it provides a hosted GraphQL endpoint, Git integration, user management and editorial workflow features, per the TinaCloud overview; no prices are recorded, and userRoles is not recorded from the open source package because the user management statement is about the hosted service. The self-hosted backend has its own database adapter, auth module and Git provider, and the docs say some features are not available when self-hosting. The docs Setup Overview and the Astro and Next.js starters are the front-end options; no basedOn is recorded because the docs name starters, not a framework the CMS is built on.
+  The monorepo publishes many packages under tinacms and @tinacms scopes; the package the install docs use (npx create-tina-app, a create-* scaffolder) is not the figure base, so the core package tinacms is the registry id, at 3.15.0 (2026-10-19), major 3. firstRelease is the year of the first npm publish of the tinacms package itself (0.3.0, October 2019); the oldest GitHub release belongs to another monorepo package. The tina.io footer links Bluesky, YouTube, LinkedIn, Facebook, Instagram and Threads as icons only (image alt text). The maintainer is SSW USA as named in the tina.io terms; the terms give no legal form and no headquarters, so hqCountry is not recorded. The README lists named maintainers, which are individuals; they are not recorded as the maintainer. TinaCloud is the hosted backend next to the open source CMS: it provides a hosted GraphQL endpoint, Git integration, user management and editorial workflow features, per the TinaCloud overview; no prices are recorded, and userRoles is not recorded from the open source package because the user management statement is about the hosted service. The self-hosted backend has its own database adapter, auth module and Git provider, and the docs say some features are not available when self-hosting. The docs Setup Overview and the Astro and Next.js starters are the front-end options; no basedOn is recorded because the docs name starters, not a framework the CMS is built on.

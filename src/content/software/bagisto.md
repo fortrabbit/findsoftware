@@ -45,6 +45,7 @@ social:
   x: https://x.com/BagistoShop
   forum: https://forums.bagisto.com
   youtube: https://www.youtube.com/c/Bagisto/
+  facebook: https://www.facebook.com/groups/bagisto/
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:

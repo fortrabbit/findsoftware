@@ -47,6 +47,9 @@ social:
   discord: https://discord.com/invite/zumN63Ybpf
   forum: https://github.com/tinacms/tinacms/discussions
   youtube: https://www.youtube.com/@TinaCMS
+  facebook: https://www.facebook.com/tinacms/
+  instagram: https://www.instagram.com/tinacms_/
+  threads: https://www.threads.com/@tinacms_
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:

@@ -12,6 +12,8 @@ maintainer: Rizwaan Bhikha
 maintainerType: individual
 firstRelease: 2019
 language: dart
+runtime:
+  - dart
 hosting:
   - static
 contentStore:
@@ -40,6 +42,9 @@ sources:
     checkedAt: 2026-10-23
   - field: language
     url: https://gitlab.com/api/v4/projects/13858056
+    checkedAt: 2026-10-23
+  - field: runtime
+    url: https://gitlab.com/olfek/silssig/-/raw/master/README.md
     checkedAt: 2026-10-23
   - field: category
     url: https://gitlab.com/api/v4/projects/13858056

@@ -1,7 +1,7 @@
-Foundation is an open-source front-end project. Its CSS framework for websites, Foundation for Sites, is published on npm as foundation-sites and can also be installed with yarn, a command-line tool, a starter download or CDN links. The project began at ZURB, which handed it over in 2019, and version 6 continues on its own branch with bug fixes.
+Yeti is a layout and styling framework from Foundation, written for web designers. The [project's site](https://foundationcss.com/yeti/) describes one stylesheet linked from a page, using native CSS features such as container queries, cascade layers and nesting in place of Sass or JavaScript. Layouts are named and set with data attributes, and type and space come from one token scale.
 
-The repository now also holds Yeti, a CSS-first layout and styling framework that is in beta and has no package to install yet. The README calls Yeti the successor to Foundation for Sites.
+It lives in the repository that held Foundation for Sites, which it succeeds. The earlier framework continues on its own branch with bug fixes.
 
 ## Worth knowing
 
-The repository carries two licenses: the version 6 package is MIT, while Yeti is licensed under the Functional Source License, which converts each release to MIT two years after it ships.
+Yeti is labeled beta but not yet released: its install guide says there is no package on npm and nothing to download yet, so today it is used by cloning the repository and building it. The license is the Functional Source License with an MIT future license, which allows use and modification but reserves offering Yeti itself as a competing product.

@@ -18,6 +18,10 @@ headlessApi:
   - rest
 i18n: yes
 licenseModel: saas
+social:
+  facebook: https://www.facebook.com/preprcms
+  instagram: https://www.instagram.com/preprcms
+  threads: https://www.threads.com/@preprcms
 addedAt: 2026-10-24
 checkedAt: 2026-10-24
 sources:

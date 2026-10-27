@@ -8,7 +8,6 @@ urls:
   pricing: https://pretix.eu/about/en/pricing
   plugins: https://marketplace.pretix.eu/
 category:
-  - community
   - e-commerce
 description: Ticket shop application for conferences, festivals and other events, with an online shop and point of sale.
 status: active

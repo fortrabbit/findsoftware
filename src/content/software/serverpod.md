@@ -15,6 +15,11 @@ maintainer: Serverpod AB
 maintainerType: company
 firstRelease: 2021
 language: dart
+runtime:
+  - dart
+hosting:
+  - dart
+runtimeMin: dart 3.12
 databases:
   - postgres
   - sqlite
@@ -55,6 +60,12 @@ sources:
     checkedAt: 2026-10-26
   - field: category
     url: https://github.com/serverpod/serverpod/blob/main/README.md
+    checkedAt: 2026-10-26
+  - field: runtime
+    url: https://docs.serverpod.dev/quickstart
+    checkedAt: 2026-10-26
+  - field: runtimeMin
+    url: https://docs.serverpod.dev/quickstart
     checkedAt: 2026-10-26
   - field: runsAs
     url: https://docs.serverpod.dev/deployments/custom-hosting/hosting-elsewhere

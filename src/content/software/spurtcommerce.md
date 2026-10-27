@@ -39,6 +39,8 @@ contributors: 8
 social:
   x: https://twitter.com/spurtcommerce
   discord: https://discord.com/invite/hyW4MXXn8n
+  facebook: https://www.facebook.com/spurtcommerce/
+  instagram: https://www.instagram.com/spurtcommerce/
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:

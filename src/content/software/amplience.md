@@ -19,6 +19,8 @@ licenseModel: saas
 httpArchiveSites: 565
 social:
   x: https://twitter.com/Amplience
+  facebook: https://www.facebook.com/amplienceltd
+  instagram: https://www.instagram.com/amplience
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:

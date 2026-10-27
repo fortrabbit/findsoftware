@@ -1,82 +1,71 @@
 ---
 id: franken-ui
-name: Franken UI
+name: 0build
 urls:
-  home: https://franken-ui.dev/
-  repository: https://github.com/franken-ui/ui
-  docs: https://franken-ui.dev/docs/installation
+  home: https://0build.dev
+  repository: https://github.com/0builddotdev/0build
+  docs: https://0build.dev/docs/latest/kit/introduction/
 category:
   - ui-library
-description: HTML-first UI component library built on UIkit and extended with LitElement.
-status: stub
-maintainer: Reden
+description: Frontend design system of CSS and web components, delivered from a CDN and built on UIkit.
+status: active
+maintainer: 0build
 maintainerType: individual
 firstRelease: 2024
-language: javascript
-installMethod: npm
+language: css
+runsAs:
+  - browser
+installMethod: cdn
 licenseModel: open-source
 license: MIT
-currentMajor: "2"
-latestReleaseDate: 2026-01-18
-githubStargazers: 2608
-npmWeeklyDownloads: 377
-contributors: 2
+githubStargazers: 30
 addedAt: 2026-10-27
 checkedAt: 2026-10-27
 sources:
-  - field: status
-    url: https://github.com/franken-ui/ui/blob/master/README.md
+  - field: urls
+    url: https://0build.dev/docs/latest/kit/introduction/
     checkedAt: 2026-10-27
   - field: urls
-    url: https://franken-ui.dev/
+    url: https://github.com/0builddotdev/0build
     checkedAt: 2026-10-27
   - field: urls
-    url: https://github.com/franken-ui/ui
-    checkedAt: 2026-10-27
-  - field: urls
-    url: https://franken-ui.dev/docs/installation
+    url: https://0build.dev/docs/latest/kit/introduction/
     checkedAt: 2026-10-27
   - field: firstRelease
     url: https://registry.npmjs.org/franken-ui
     checkedAt: 2026-10-27
   - field: maintainer
-    url: https://franken-ui.dev/
+    url: https://raw.githubusercontent.com/0builddotdev/0build/master/LICENSE.md
     checkedAt: 2026-10-27
   - field: maintainerType
-    url: https://registry.npmjs.org/franken-ui
+    url: https://0build.dev/docs/latest/kit/release-notes/
     checkedAt: 2026-10-27
   - field: language
-    url: https://github.com/franken-ui/ui
+    url: https://github.com/0builddotdev/0build
     checkedAt: 2026-10-27
   - field: category
-    url: https://franken-ui.dev/
+    url: https://0build.dev/docs/latest/kit/introduction/
     checkedAt: 2026-10-27
   - field: installMethod
-    url: https://franken-ui.dev/docs/installation
+    url: https://0build.dev/docs/latest/kit/installation/
     checkedAt: 2026-10-27
   - field: installMethod
-    url: https://franken-ui.dev/docs/installation
+    url: https://0build.dev/docs/latest/kit/release-notes/
+    checkedAt: 2026-10-27
+  - field: runsAs
+    url: https://0build.dev/docs/latest/kit/installation/
     checkedAt: 2026-10-27
   - field: license
-    url: https://github.com/franken-ui/ui
+    url: https://github.com/0builddotdev/0build
+    checkedAt: 2026-10-27
+  - field: license
+    url: https://raw.githubusercontent.com/0builddotdev/0build/master/LICENSE.md
     checkedAt: 2026-10-27
   - field: licenseModel
-    url: https://github.com/franken-ui/ui
-    checkedAt: 2026-10-27
-  - field: currentMajor
-    url: https://registry.npmjs.org/franken-ui
-    checkedAt: 2026-10-27
-  - field: latestReleaseDate
-    url: https://registry.npmjs.org/franken-ui
+    url: https://github.com/0builddotdev/0build
     checkedAt: 2026-10-27
   - field: githubStargazers
-    url: https://github.com/franken-ui/ui
-    checkedAt: 2026-10-27
-  - field: contributors
-    url: https://github.com/franken-ui/ui
-    checkedAt: 2026-10-27
-  - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/franken-ui
+    url: https://github.com/0builddotdev/0build
     checkedAt: 2026-10-27
 ai: authored
 contentStore: null
@@ -89,11 +78,12 @@ renderingModes: null
 hosting: null
 runtimeMin: null
 packagistDownloads: null
-runsAs: null
 ---
 
-Franken UI is an HTML-first component library built on UIkit and extended with LitElement. It installs from npm, and the install page also describes a CDN route.
+0build is a frontend design system of CSS classes and web components, formerly called Franken UI. Its [documentation](https://0build.dev/docs/latest/kit/introduction/) describes a kit of components built on UIkit, with the look of shadcn/ui and coss/ui, plus a set of utility classes for one-off adjustments. Components are plain HTML elements and classes, so a page uses them without a build step.
+
+It loads from a CDN: stylesheets and scripts are linked from the page, and everything runs in the visitor's browser. The maintainer moved the project off npm for that reason, as the [release notes](https://0build.dev/docs/latest/kit/release-notes/) explain. The old repositories and websites stay online as they were.
 
 ## Worth knowing
 
-The project's README and homepage both say "Franken is now 0build" and point to the 0build site.
+The project is a single maintainer's work and is still numbered below 1.0. The release notes record breaking changes between 0.x versions, such as renamed display classes and a changed shorthand syntax.

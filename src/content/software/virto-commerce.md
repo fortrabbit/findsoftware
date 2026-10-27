@@ -44,6 +44,7 @@ contributors: 94
 social:
   x: https://twitter.com/virtocommerce
   forum: https://www.virtocommerce.org/
+  facebook: https://www.facebook.com/virtocommerce
 addedAt: 2026-10-26
 checkedAt: 2026-10-26
 sources:

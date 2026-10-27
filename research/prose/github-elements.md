@@ -1,1 +1,0 @@
-GitHub Elements is GitHub's collection of open source web components. The [repository](https://github.com/github/github-elements) lists its custom elements, each kept in a repository of its own with an example page, and holds no release of its own.

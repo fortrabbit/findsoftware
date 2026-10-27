@@ -12,8 +12,11 @@ status: active
 maintainer: Yihui Xie
 firstRelease: 2016
 language: r
+runtime:
+  - r
 hosting:
   - static
+runtimeMin: r 3.5
 runsAs:
   - static
 renderingModes:
@@ -44,6 +47,12 @@ sources:
     checkedAt: 2026-10-23
   - field: language
     url: https://api.github.com/repos/rstudio/bookdown
+    checkedAt: 2026-10-23
+  - field: runtime
+    url: https://raw.githubusercontent.com/rstudio/bookdown/main/DESCRIPTION
+    checkedAt: 2026-10-23
+  - field: runtimeMin
+    url: https://raw.githubusercontent.com/rstudio/bookdown/main/DESCRIPTION
     checkedAt: 2026-10-23
   - field: category
     url: https://raw.githubusercontent.com/rstudio/bookdown/main/README.md

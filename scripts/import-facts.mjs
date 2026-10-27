@@ -303,7 +303,7 @@ const categoryMap = {
   'test-runner': 'testing',
   theme: '',
   'theme-framework': '',
-  ticketing: 'community',
+  ticketing: 'e-commerce',
   'time-series': 'database',
   tls: 'web-server',
   toolkit: 'library',
@@ -718,7 +718,7 @@ for (const file of facts) {
   }
 
   const social = {};
-  for (const key of ['x', 'bluesky', 'mastodon', 'discord', 'forum', 'subreddit', 'youtube']) {
+  for (const key of ['x', 'bluesky', 'mastodon', 'discord', 'forum', 'subreddit', 'youtube', 'facebook', 'instagram', 'threads']) {
     const url = https(first(key));
     if (url) social[key] = url;
   }
@@ -745,6 +745,9 @@ for (const file of facts) {
     forum: 'social',
     subreddit: 'social',
     youtube: 'social',
+    facebook: 'social',
+    instagram: 'social',
+    threads: 'social',
   };
   // A record cites only what it carries; the fact file keeps the rest for MR-409.
   const carried = (field) => (renamed[field] ?? field) in record || field === 'description';

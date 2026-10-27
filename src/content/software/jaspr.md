@@ -14,10 +14,13 @@ maintainerType: community
 firstRelease: 2022
 language: dart
 runtime:
+  - dart
   - binary
 hosting:
+  - dart
   - binary
   - static
+runtimeMin: dart 3.8
 runsAs:
   - static
   - always-on
@@ -60,6 +63,9 @@ sources:
     checkedAt: 2026-10-26
   - field: runtime
     url: https://raw.githubusercontent.com/schultek/jaspr/main/docs/dev/deploying.mdx
+    checkedAt: 2026-10-26
+  - field: runtimeMin
+    url: https://pub.dev/api/packages/jaspr
     checkedAt: 2026-10-26
   - field: renderingModes
     url: https://docs.jaspr.site/dev/modes

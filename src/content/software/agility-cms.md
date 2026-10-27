@@ -17,6 +17,8 @@ headlessApi:
   - graphql
 i18n: yes, multilingual content and locales
 licenseModel: saas
+social:
+  instagram: https://www.instagram.com/agilitycms/
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:

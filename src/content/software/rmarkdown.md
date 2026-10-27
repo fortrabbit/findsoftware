@@ -13,6 +13,11 @@ status: active
 maintainer: Posit Software, PBC
 firstRelease: 2014
 language: r
+runtime:
+  - r
+hosting:
+  - r
+runtimeMin: r 3.0
 runsAs:
   - always-on
   - local
@@ -48,6 +53,12 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://pkgs.rstudio.com/rmarkdown/reference/render_site.html
+    checkedAt: 2026-10-23
+  - field: runtime
+    url: https://cran.r-project.org/package=rmarkdown
+    checkedAt: 2026-10-23
+  - field: runtimeMin
+    url: https://cran.r-project.org/package=rmarkdown
     checkedAt: 2026-10-23
   - field: installMethod
     url: https://github.com/rstudio/rmarkdown/blob/main/README.md

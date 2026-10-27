@@ -21,6 +21,7 @@ httpArchiveSites: 10
 social:
   x: https://twitter.com/caisyio
   discord: https://discord.com/invite/pSHPYAq59M
+  instagram: https://www.instagram.com/caisy.io/
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:

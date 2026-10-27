@@ -4,4 +4,4 @@ The [homepage](https://gestalt.pinterest.systems/) describes the system, and the
 
 ## Worth knowing
 
-The repository README opens with a notice that the project is no longer actively maintained and has reached end of life, while the homepage presents the design system as current, so the record's status is unsettled.
+The repository README opens with a notice that the project is no longer actively maintained and has reached end of life.

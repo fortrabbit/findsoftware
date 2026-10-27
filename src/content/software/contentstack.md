@@ -23,6 +23,8 @@ httpArchiveSites: 1396
 social:
   x: https://x.com/contentstack
   discord: https://discord.com/invite/NyWJ68gdDw
+  facebook: https://www.facebook.com/contentstack
+  instagram: https://www.instagram.com/contentstack/
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:

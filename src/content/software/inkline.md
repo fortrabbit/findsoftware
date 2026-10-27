@@ -8,7 +8,7 @@ urls:
 category:
   - ui-library
 description: Vue 3 UI component library for building accessible Vue.js design systems.
-status: active
+status: stub
 maintainer: Alex Grozav
 maintainerType: individual
 firstRelease: 2019

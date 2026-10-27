@@ -38,6 +38,8 @@ social:
   x: https://twitter.com/EnonicHQ
   forum: https://discuss.enonic.com
   youtube: https://www.youtube.com/user/EnonicCommunity
+  facebook: https://www.facebook.com/enonic.no
+  instagram: https://www.instagram.com/enonichq
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:

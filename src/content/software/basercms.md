@@ -35,6 +35,8 @@ dependentRepos: 4
 social:
   x: https://twitter.com/basercms
   forum: https://forum.basercms.net
+  facebook: https://www.facebook.com/basercms
+  instagram: https://www.instagram.com/basercms/
 addedAt: 2026-10-19
 checkedAt: 2026-10-19
 sources:

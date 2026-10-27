@@ -15,6 +15,7 @@ runtime:
   - beam
 hosting:
   - static
+runtimeMin: r 17
 contentStore:
   - flat-file
 templating: django
@@ -50,6 +51,9 @@ sources:
     url: https://github.com/gar1t/lambdapad/blob/master/docs/articles/getting-started.md
     checkedAt: 2026-10-23
   - field: runtime
+    url: https://github.com/gar1t/lambdapad/blob/master/docs/articles/getting-started.md
+    checkedAt: 2026-10-23
+  - field: runtimeMin
     url: https://github.com/gar1t/lambdapad/blob/master/docs/articles/getting-started.md
     checkedAt: 2026-10-23
   - field: installMethod

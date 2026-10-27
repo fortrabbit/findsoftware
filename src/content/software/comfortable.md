@@ -19,6 +19,8 @@ i18n: per-field translatable content, fallback language
 licenseModel: saas
 social:
   x: https://x.com/cmftable
+  facebook: https://www.facebook.com/cmftable/
+  instagram: https://www.instagram.com/cmftable/
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:

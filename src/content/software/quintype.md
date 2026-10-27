@@ -19,6 +19,8 @@ licenseModel: saas
 httpArchiveSites: 140
 social:
   x: https://twitter.com/quintype_inc
+  facebook: https://www.facebook.com/Quintypetechnologies/
+  instagram: https://www.instagram.com/quintypetech/
 addedAt: 2026-10-24
 checkedAt: 2026-10-24
 sources:

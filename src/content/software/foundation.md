@@ -1,101 +1,61 @@
 ---
 id: foundation
-name: Foundation
+name: Yeti
 urls:
-  home: https://foundationcss.com
+  home: https://foundationcss.com/yeti/
   repository: https://github.com/foundation/yeti
-  docs: https://get.foundation/sites/docs/
+  docs: https://foundationcss.com/yeti/
 category:
   - css-framework
-description: Open-source front-end CSS framework for websites, published on npm as foundation-sites, whose repository now also holds Yeti.
+description: CSS-first layout and styling framework for web designers, from Foundation, in beta in the repository that held Foundation for Sites.
 status: stub
 maintainer: Aspect Services, LLC
 maintainerType: company
 firstRelease: 2011
-language: javascript
-installMethod: npm
-licenseModel: open-core
-license: MIT, FSL-1.1-MIT
-currentMajor: "6"
-latestReleaseDate: 2024-09-27
-githubStargazers: 29808
-npmWeeklyDownloads: 57086
+runsAs:
+  - browser
+licenseModel: source-available
+license: FSL-1.1-MIT
+githubStargazers: 29807
 contributors: 327
-httpArchiveSites: 129714
-dependentRepos: 16370
-dependentPackages: 364
 social:
-  x: https://twitter.com/FoundationCSS
   mastodon: https://mastodon.social/@foundationcss
-  forum: https://github.com/foundation/foundation-sites/discussions
+  forum: https://github.com/foundation/yeti/discussions
 addedAt: 2026-10-27
 checkedAt: 2026-10-27
 sources:
+  - field: status
+    url: https://www.foundationcss.com/yeti/guides/install/
+    checkedAt: 2026-10-27
   - field: urls
-    url: https://foundationcss.com/
+    url: https://foundationcss.com/yeti/
     checkedAt: 2026-10-27
   - field: urls
     url: https://github.com/foundation/yeti
     checkedAt: 2026-10-27
   - field: urls
-    url: https://get.foundation/sites/docs/
+    url: https://foundationcss.com/yeti/
     checkedAt: 2026-10-27
   - field: firstRelease
     url: https://foundationcss.com/about/
     checkedAt: 2026-10-27
   - field: maintainer
-    url: https://github.com/foundation/yeti/blob/develop/LICENSE
-    checkedAt: 2026-10-27
-  - field: installMethod
-    url: https://get.foundation/sites/docs/installation.html
-    checkedAt: 2026-10-27
-  - field: installMethod
-    url: https://get.foundation/sites/docs/installation.html
-    checkedAt: 2026-10-27
-  - field: installMethod
-    url: https://get.foundation/sites/docs/installation.html
-    checkedAt: 2026-10-27
-  - field: installMethod
-    url: https://get.foundation/sites/docs/installation.html
-    checkedAt: 2026-10-27
-  - field: installMethod
-    url: https://get.foundation/sites/docs/installation.html
-    checkedAt: 2026-10-27
-  - field: language
-    url: https://github.com/foundation/yeti
+    url: https://raw.githubusercontent.com/foundation/yeti/develop/LICENSE
     checkedAt: 2026-10-27
   - field: category
-    url: https://github.com/foundation/yeti
+    url: https://github.com/foundation/yeti/blob/develop/README.md
+    checkedAt: 2026-10-27
+  - field: runsAs
+    url: https://github.com/foundation/yeti/blob/develop/README.md
     checkedAt: 2026-10-27
   - field: license
-    url: https://github.com/foundation/yeti
-    checkedAt: 2026-10-27
-  - field: license
-    url: https://github.com/foundation/yeti
-    checkedAt: 2026-10-27
-  - field: currentMajor
-    url: https://github.com/foundation/yeti/releases/tag/v6.9.0
-    checkedAt: 2026-10-27
-  - field: latestReleaseDate
-    url: https://github.com/foundation/yeti/releases/tag/v6.9.0
+    url: https://github.com/foundation/yeti/blob/develop/README.md
     checkedAt: 2026-10-27
   - field: githubStargazers
     url: https://github.com/foundation/yeti
     checkedAt: 2026-10-27
   - field: contributors
     url: https://github.com/foundation/yeti
-    checkedAt: 2026-10-27
-  - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/foundation-sites
-    checkedAt: 2026-10-27
-  - field: dependentPackages
-    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/foundation-sites
-    checkedAt: 2026-10-27
-  - field: dependentRepos
-    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/foundation-sites
-    checkedAt: 2026-10-27
-  - field: httpArchiveSites
-    url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-27
 ai: authored
 contentStore: null
@@ -107,13 +67,12 @@ i18n: null
 renderingModes: null
 hosting: null
 runtimeMin: null
-packagistDownloads: null
 ---
 
-Foundation is an open-source front-end project. Its CSS framework for websites, Foundation for Sites, is published on npm as foundation-sites and can also be installed with yarn, a command-line tool, a starter download or CDN links. The project began at ZURB, which handed it over in 2019, and version 6 continues on its own branch with bug fixes.
+Yeti is a layout and styling framework from Foundation, written for web designers. The [project's site](https://foundationcss.com/yeti/) describes one stylesheet linked from a page, using native CSS features such as container queries, cascade layers and nesting in place of Sass or JavaScript. Layouts are named and set with data attributes, and type and space come from one token scale.
 
-The repository now also holds Yeti, a CSS-first layout and styling framework that is in beta and has no package to install yet. The README calls Yeti the successor to Foundation for Sites.
+It lives in the repository that held Foundation for Sites, which it succeeds. The earlier framework continues on its own branch with bug fixes.
 
 ## Worth knowing
 
-The repository carries two licenses: the version 6 package is MIT, while Yeti is licensed under the Functional Source License, which converts each release to MIT two years after it ships.
+Yeti is labeled beta but not yet released: its install guide says there is no package on npm and nothing to download yet, so today it is used by cloning the repository and building it. The license is the Functional Source License with an MIT future license, which allows use and modification but reserves offering Yeti itself as a competing product.

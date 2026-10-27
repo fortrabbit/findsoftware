@@ -140,6 +140,9 @@ const providerFields = z
         forum: publicUrl.optional(),
         subreddit: publicUrl.optional(),
         youtube: publicUrl.optional(),
+        facebook: publicUrl.optional(),
+        instagram: publicUrl.optional(),
+        threads: publicUrl.optional(),
       })
       .optional(),
 

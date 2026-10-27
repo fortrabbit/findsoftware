@@ -13,8 +13,8 @@ maintainerType: individual
 firstRelease: 2019
 language: css
 installMethod: npm
-licenseModel: open-source
-license: License Agreement for CSS＊GG & GLYF＊APP, MIT, SEE LICENSE
+licenseModel: source-available
+license: License Agreement for CSS＊GG & GLYF＊APP, SEE LICENSE
 currentMajor: "2"
 latestReleaseDate: 2024-08-26
 githubStargazers: 10059
@@ -54,9 +54,6 @@ sources:
     checkedAt: 2026-10-26
   - field: category
     url: https://raw.githubusercontent.com/astrit/css.gg/main/README.md
-    checkedAt: 2026-10-26
-  - field: license
-    url: https://raw.githubusercontent.com/astrit/css.gg/main/LICENSE.md
     checkedAt: 2026-10-26
   - field: license
     url: https://raw.githubusercontent.com/astrit/css.gg/main/LICENSE.md

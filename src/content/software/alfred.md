@@ -13,6 +13,11 @@ maintainer: rknell
 maintainerType: individual
 firstRelease: 2021
 language: dart
+runtime:
+  - dart
+hosting:
+  - dart
+runtimeMin: dart 2.17
 headlessApi:
   - rest
 installMethod: dart pub add alfred
@@ -36,6 +41,12 @@ sources:
     checkedAt: 2026-10-24
   - field: language
     url: https://api.github.com/repos/rknell/alfred
+    checkedAt: 2026-10-24
+  - field: runtime
+    url: https://pub.dev/packages/alfred/install
+    checkedAt: 2026-10-24
+  - field: runtimeMin
+    url: https://pub.dev/api/packages/alfred
     checkedAt: 2026-10-24
   - field: category
     url: https://github.com/rknell/alfred/blob/master/README.md

@@ -12,8 +12,11 @@ status: active
 maintainer: Hadley Wickham
 firstRelease: 2016
 language: r
+runtime:
+  - r
 hosting:
   - static
+runtimeMin: r 4.1
 runsAs:
   - static
 renderingModes:
@@ -45,6 +48,12 @@ sources:
     checkedAt: 2026-10-23
   - field: category
     url: https://api.github.com/repos/r-lib/pkgdown
+    checkedAt: 2026-10-23
+  - field: runtime
+    url: https://cran.r-project.org/package=pkgdown
+    checkedAt: 2026-10-23
+  - field: runtimeMin
+    url: https://cran.r-project.org/package=pkgdown
     checkedAt: 2026-10-23
   - field: runsAs
     url: https://cran.r-project.org/package=pkgdown

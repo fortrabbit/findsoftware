@@ -27,6 +27,9 @@ contributors: 108
 social:
   x: https://x.com/Astryxdesign
   discord: https://discord.com/invite/XnsUcFykEP
+  facebook: https://www.facebook.com/astryxdesign
+  instagram: https://www.instagram.com/astryxdesign
+  threads: https://www.threads.com/@astryxdesign
 addedAt: 2026-10-26
 checkedAt: 2026-10-26
 sources:

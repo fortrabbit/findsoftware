@@ -12,6 +12,11 @@ status: stub
 maintainer: Tom Yeh/Potix
 firstRelease: 2013
 language: dart
+runtime:
+  - dart
+hosting:
+  - dart
+runtimeMin: dart 3.0
 templating: rsp
 installMethod: pub dependency in pubspec.yaml
 licenseModel: open-source
@@ -39,6 +44,12 @@ sources:
     checkedAt: 2026-10-26
   - field: language
     url: https://api.github.com/repos/rikulo/stream
+    checkedAt: 2026-10-26
+  - field: runtime
+    url: https://github.com/rikulo/stream/blob/master/pubspec.yaml
+    checkedAt: 2026-10-26
+  - field: runtimeMin
+    url: https://github.com/rikulo/stream/blob/master/pubspec.yaml
     checkedAt: 2026-10-26
   - field: category
     url: https://github.com/rikulo/stream/blob/master/README.md

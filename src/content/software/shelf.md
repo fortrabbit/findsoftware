@@ -12,6 +12,11 @@ maintainer: the Dart project authors
 maintainerType: community
 firstRelease: 2014
 language: dart
+runtime:
+  - dart
+hosting:
+  - dart
+runtimeMin: dart 3.9
 runsAs:
   - always-on
 installMethod: pub dependency in pubspec.yaml
@@ -38,6 +43,12 @@ sources:
     checkedAt: 2026-10-26
   - field: category
     url: https://pub.dev/packages/shelf
+    checkedAt: 2026-10-26
+  - field: runtime
+    url: https://raw.githubusercontent.com/dart-lang/shelf/master/pkgs/shelf/README.md
+    checkedAt: 2026-10-26
+  - field: runtimeMin
+    url: https://pub.dev/api/packages/shelf
     checkedAt: 2026-10-26
   - field: installMethod
     url: https://pub.dev/packages/shelf

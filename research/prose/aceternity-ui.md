@@ -2,4 +2,4 @@ Aceternity UI is a React component library of animated components, blocks and te
 
 ## Worth knowing
 
-The terms reserve all intellectual property rights, and the Aceternity License covers items bought or downloaded on the site, so the material is under a commercial license. The site names no repository or package for the library itself, so this record stays a stub until one is found.
+The terms reserve all intellectual property rights, and the Aceternity License covers items bought or downloaded on the site, so the material is under a commercial license.

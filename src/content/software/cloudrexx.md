@@ -25,6 +25,8 @@ license: AGPL-3.0
 currentMajor: "5"
 latestReleaseDate: 2021-03-26
 httpArchiveSites: 71
+social:
+  instagram: https://www.instagram.com/cloudrexxag/
 addedAt: 2026-10-23
 checkedAt: 2026-10-23
 sources:

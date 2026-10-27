@@ -12,6 +12,11 @@ maintainer: Yehor Lvivski
 maintainerType: individual
 firstRelease: 2012
 language: dart
+runtime:
+  - dart
+hosting:
+  - dart
+runtimeMin: dart 2.0
 installMethod: "pub dependency (start: ^0.4.1)"
 licenseModel: open-source
 license: MIT
@@ -33,6 +38,12 @@ sources:
     checkedAt: 2026-10-26
   - field: language
     url: https://api.github.com/repos/lvivski/start
+    checkedAt: 2026-10-26
+  - field: runtime
+    url: https://pub.dev/api/packages/start
+    checkedAt: 2026-10-26
+  - field: runtimeMin
+    url: https://pub.dev/api/packages/start
     checkedAt: 2026-10-26
   - field: category
     url: https://github.com/lvivski/start/blob/master/README.md

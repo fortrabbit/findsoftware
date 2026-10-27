@@ -26,6 +26,8 @@ httpArchiveSites: 94
 social:
   x: https://twitter.com/sprysys
   bluesky: https://bsky.app/profile/spryker.com
+  facebook: https://www.facebook.com/Spryker/
+  instagram: https://www.instagram.com/spryker/
 addedAt: 2026-10-24
 checkedAt: 2026-10-24
 sources:
