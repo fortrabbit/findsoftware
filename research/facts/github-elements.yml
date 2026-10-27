@@ -1,0 +1,64 @@
+id: github-elements
+name: GitHub Elements
+status: stub
+checkedAt: 2026-10-27
+description: GitHub's collection of open source web components, each published from its own repository.
+facts:
+  - field: repository
+    value: https://github.com/github/github-elements
+    url: https://github.com/github/github-elements
+    checkedAt: 2026-10-27
+    via: api
+  - field: maintainer
+    value: GitHub
+    url: https://github.com/github/github-elements/blob/main/LICENSE
+    checkedAt: 2026-10-27
+    via: page
+    quote: "Copyright (c) 2019 GitHub"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/github
+    checkedAt: 2026-10-27
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://github.com/github/github-elements
+    checkedAt: 2026-10-27
+    via: api
+  - field: categories
+    value: [web-components, component-library]
+    url: https://raw.githubusercontent.com/github/github-elements/main/README.md
+    checkedAt: 2026-10-27
+    via: page
+    quote: "GitHub's Web Component collection."
+  - field: license
+    value: MIT
+    url: https://github.com/github/github-elements/blob/main/LICENSE
+    checkedAt: 2026-10-27
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/github/github-elements/blob/main/LICENSE
+    checkedAt: 2026-10-27
+    via: page
+    quote: "MIT License"
+  - field: lastCommitDate
+    value: 2026-10-19
+    url: https://github.com/github/github-elements/commits/main
+    checkedAt: 2026-10-27
+    via: api
+  - field: githubStargazers
+    value: 2905
+    url: https://github.com/github/github-elements
+    checkedAt: 2026-10-27
+    via: api
+  - field: contributors
+    value: 13
+    url: https://github.com/github/github-elements
+    checkedAt: 2026-10-27
+    via: api
+notFound: [homepage, docs, firstRelease, currentMajor, latestReleaseDate, installMethod, runtime, runsAs, pricingPage, paidEdition, hqCountry, endoflifeId, basedOn, npmName, npmWeeklyDownloads, discord, forum, x, bluesky, mastodon, subreddit, newsletter, pluginDirectory, usageShare, reportedInstalls, httpArchiveSites, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  Doubt: whether the collection is a candidate at all, or each element is one, and what install step the record would cite; the repository ships no code of its own. Its README lists 17 custom elements, each in its own repository with its own example site, and the repository has no tag or release. The CSV homepage is a webcomponents.org collection page, a third-party directory, so no project homepage is recorded. The npm name github-elements is a security placeholder (version 0.0.1-security, repository npm/security-holder), not a package of this project. Settle it by deciding the candidate unit: the collection with an install page of its own, or each element as a sibling candidate with its own package. No homepage, docs site or community link appears in the README or the repository metadata beyond the third-party webcomponents.org page. The lastCommitDate is the committer date of the newest commit on main, read from the commits endpoint, since no release exists.

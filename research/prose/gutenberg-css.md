@@ -1,0 +1,1 @@
+Gutenberg is a stylesheet for printing web pages. It adds classes for hiding elements, forcing and avoiding page breaks, and printing backgrounds, as the [README](https://github.com/BafS/Gutenberg) describes. It installs from npm or yarn, or loads from unpkg as a CDN, and the project provides two themes.

@@ -1,0 +1,122 @@
+id: forge
+name: Tyler Forge
+status: accepted
+checkedAt: 2026-10-27
+description: Design system and Web Components library, with framework adapters, for building web applications.
+facts:
+  - field: homepage
+    value: https://forge.tylerdev.io
+    url: https://forge.tylerdev.io/
+    checkedAt: 2026-10-27
+    via: page
+  - field: repository
+    value: https://github.com/tyler-technologies-oss/forge
+    url: https://github.com/tyler-technologies-oss/forge
+    checkedAt: 2026-10-27
+    via: api
+  - field: docs
+    value: https://forge.tylerdev.io/
+    url: https://forge.tylerdev.io/
+    checkedAt: 2026-10-27
+    via: page
+  - field: firstRelease
+    value: 2022
+    url: https://registry.npmjs.org/@tylertech%2fforge
+    checkedAt: 2026-10-27
+    via: api
+  - field: maintainer
+    value: Tyler Technologies, Inc.
+    url: https://github.com/tyler-technologies-oss/forge/blob/main/packages/forge/package.json
+    checkedAt: 2026-10-27
+    via: page
+    quote: "Tyler Technologies, Inc."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/tyler-technologies-oss
+    checkedAt: 2026-10-27
+    via: api
+  - field: hqCountry
+    value: US
+    url: https://www.tylertech.com/
+    checkedAt: 2026-10-27
+    via: page
+    quote: "Plano, Texas 75024"
+  - field: language
+    value: TypeScript
+    url: https://github.com/tyler-technologies-oss/forge
+    checkedAt: 2026-10-27
+    via: api
+  - field: categories
+    value: [design-system, web-components]
+    url: https://github.com/tyler-technologies-oss/forge
+    checkedAt: 2026-10-27
+    via: page
+    quote: "a design system and component library for building modern web applications"
+  - field: installMethod
+    value: npm
+    url: https://github.com/tyler-technologies-oss/forge/blob/main/packages/forge/src/stories/getting-started/Installation.mdx
+    checkedAt: 2026-10-27
+    via: page
+    quote: "This is the recommended way to install Forge."
+  - field: installMethod
+    value: cdn
+    url: https://github.com/tyler-technologies-oss/forge/blob/main/packages/forge/src/stories/getting-started/Installation.mdx
+    checkedAt: 2026-10-27
+    via: page
+    quote: "To use Forge via CDN, include the following script tag in your HTML:"
+  - field: runsAs
+    value: browser
+    url: https://github.com/tyler-technologies-oss/forge/blob/main/packages/forge/src/stories/getting-started/Installation.mdx
+    checkedAt: 2026-10-27
+    via: page
+    quote: "to register them in the browser's custom element registry"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/tyler-technologies-oss/forge/blob/main/LICENSE
+    checkedAt: 2026-10-27
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: currentMajor
+    value: 3
+    url: https://github.com/tyler-technologies-oss/forge/releases/tag/@tylertech/forge@3.23.0
+    checkedAt: 2026-10-27
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-21
+    url: https://github.com/tyler-technologies-oss/forge/releases/tag/@tylertech/forge@3.23.0
+    checkedAt: 2026-10-27
+    via: api
+  - field: githubStargazers
+    value: 73
+    url: https://github.com/tyler-technologies-oss/forge
+    checkedAt: 2026-10-27
+    via: api
+  - field: contributors
+    value: 35
+    url: https://github.com/tyler-technologies-oss/forge
+    checkedAt: 2026-10-27
+    via: api
+  - field: npmName
+    value: "@tylertech/forge"
+    url: https://registry.npmjs.org/@tylertech%2fforge
+    checkedAt: 2026-10-27
+    via: api
+  - field: npmWeeklyDownloads
+    value: 2265
+    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@tylertech/forge
+    checkedAt: 2026-10-27
+    via: api
+  - field: dependentPackages
+    value: 1
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@tylertech%2fforge
+    checkedAt: 2026-10-27
+    via: api
+  - field: dependentRepos
+    value: 4
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@tylertech%2fforge
+    checkedAt: 2026-10-27
+    via: api
+notFound: [pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pricingPage, paidEdition, endoflifeId, runtime, runtimeMin, renderingModes, basedOn, httpArchiveSites, usageShare, selfHostOption, eolPolicy, releaseCadence, reportedInstalls]
+unreadable: [https://forge.tylerdev.io/forge/v3/]
+notes: >
+  The homepage answers with a meta refresh to forge/v3/, a Storybook app that renders no text without JavaScript, so the docs fact cites the Installation page in the repository, the page the docs site publishes. The install docs name @tylertech/forge; the monorepo's latest GitHub release is forge-mcp@1.3.1 (2026-10-26), a different package, so currentMajor and latestReleaseDate use the @tylertech/forge@3.23.0 tag. The npm dist-tags include next (3.0.0-next.31) and dev (3.14.4-dev.0), and the newest prerelease in npm is 2026-05-13, older than the latest release, so latestPrereleaseDate is not recorded. The version-2 line is still published on npm, which is a maintained older major, not an end. The design system is described by the README as a derivative of Material Design; that is a design language and not a software parent, so basedOn is not recorded. The maintainer is the author named in the package.json, and the Apache license file names no copyright holder. The headquarters quote is the Tyler Technologies corporate address on its own site; the country code follows from Texas. The npm weekly figure is the sum of the daily counts for 2026-10-18 to 2026-10-24. The contributors count is the last page of the per_page=1 listing. runsAs is browser because the installation page has the page import the components to register them in the browser's custom element registry. The public documentation site is the forge.tylerdev.io Storybook; forge.tylertech.com, which the package README calls the design system site, answers with a sign-in redirect. The package README says the web components can be used with any modern web framework or no framework at all, and the repository README lists React and Angular adapter packages beside the core web components package. The installation page describes the package as ES modules, pre-built CSS stylesheets and Sass sources, and links framework guides for Angular, React, Vue, Svelte and Blazor. The repository also holds a rich text editor package and an MCP server package, each released separately.

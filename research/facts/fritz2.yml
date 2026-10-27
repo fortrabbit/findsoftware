@@ -1,0 +1,125 @@
+id: fritz2
+name: fritz2
+status: accepted
+checkedAt: 2026-10-27
+description: Lightweight, typesafe library for building reactive web apps in Kotlin, with a set of headless components.
+facts:
+  - field: homepage
+    value: https://www.fritz2.dev/
+    url: https://www.fritz2.dev/
+    checkedAt: 2026-10-27
+    via: page
+    quote: "is a lightweight, typesafe, data-driven library for building reactive web-apps in pure Kotlin"
+  - field: repository
+    value: https://github.com/fritztwo/fritz2
+    url: https://github.com/fritztwo/fritz2
+    checkedAt: 2026-10-27
+    via: api
+  - field: docs
+    value: https://www.fritz2.dev/docs/
+    url: https://www.fritz2.dev/docs/
+    checkedAt: 2026-10-27
+    via: page
+  - field: firstRelease
+    value: 2020
+    url: https://github.com/jwstegemann/fritz2/releases/tag/v0.1
+    checkedAt: 2026-10-27
+    via: api
+  - field: maintainer
+    value: Jens Stegemann
+    url: https://github.com/fritztwo/fritz2/blob/master/LICENSE
+    checkedAt: 2026-10-27
+    via: page
+    quote: "Copyright (c) 2021 Jens Stegemann"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/fritztwo/fritz2/blob/master/LICENSE
+    checkedAt: 2026-10-27
+    via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/fritztwo
+    checkedAt: 2026-10-27
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/fritztwo/fritz2
+    checkedAt: 2026-10-27
+    via: api
+  - field: language
+    value: Kotlin
+    url: https://github.com/fritztwo/fritz2
+    checkedAt: 2026-10-27
+    via: api
+  - field: categories
+    value: [ui-library]
+    url: https://www.fritz2.dev/
+    checkedAt: 2026-10-27
+    via: page
+    quote: "as well as a set of headless components"
+  - field: installMethod
+    value: [gradle]
+    url: https://www.fritz2.dev/docs/start/
+    checkedAt: 2026-10-27
+    via: page
+    quote: "set up a Kotlin multiplatform-project using one of these options"
+  - field: runsAs
+    value: [browser]
+    url: https://www.fritz2.dev/docs/start/
+    checkedAt: 2026-10-27
+    via: page
+    quote: "The index.html is just a normal web-page."
+  - field: license
+    value: MIT
+    url: https://github.com/fritztwo/fritz2
+    checkedAt: 2026-10-27
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/fritztwo/fritz2
+    checkedAt: 2026-10-27
+    via: api
+  - field: mavenCoordinates
+    value: dev.fritz2:core
+    url: https://repo1.maven.org/maven2/dev/fritz2/core/maven-metadata.xml
+    checkedAt: 2026-10-27
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://github.com/jwstegemann/fritz2/releases/tag/v0.14.6
+    checkedAt: 2026-10-27
+    via: api
+  - field: latestReleaseDate
+    value: 2023-07-27
+    url: https://github.com/jwstegemann/fritz2/releases/tag/v0.14.6
+    checkedAt: 2026-10-27
+    via: api
+  - field: latestPrereleaseDate
+    value: 2025-12-17
+    url: https://github.com/fritztwo/fritz2/releases/tag/v1.0-RC21
+    checkedAt: 2026-10-27
+    via: api
+  - field: githubStargazers
+    value: 23
+    url: https://github.com/fritztwo/fritz2
+    checkedAt: 2026-10-27
+    via: api
+  - field: contributors
+    value: 25
+    url: https://github.com/fritztwo/fritz2
+    checkedAt: 2026-10-27
+    via: api
+  - field: dependentRepos
+    value: 12
+    url: https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/dev.fritz2%3Acore
+    checkedAt: 2026-10-27
+    via: api
+  - field: dependentPackages
+    value: 4
+    url: https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/dev.fritz2%3Acore
+    checkedAt: 2026-10-27
+    via: api
+notFound: [runtime, runtimeMin, renderingModes, basedOn, paidEdition, pricingPage, hqCountry, parent, forkOf, successorOf, alternativeTo, endoflifeId, usageShare, reportedInstalls, discord, bluesky, mastodon, x, newsletter, forum, subreddit, pluginDirectory, pluginCount, wikidata, httpArchiveSites]
+unreadable: []
+notes: >
+  The project's repository moved on 2025-07-07 to the fritztwo organization, and the old jwstegemann/fritz2 repository is archived with a README notice that the official development "has been moved to a dedicated organization and therefore a new repository"; the website and the Maven Central coordinates stayed the same, per the blog post "Yesterday - Today - Tomorrow" on fritz2.dev. A move is no end, so the status stays accepted and the new repository is the record's repository. The new repository's counts are its own: 23 stars against 705 on the archived one, and 25 contributors. The new repository has only release candidates (v1.0-RC21, 2025-12-17, marked as a prerelease by name though GitHub lists it as a full release); the highest stable release is v0.14.6 on the old repository (2023-07-27), which Maven Central also lists as 0.14.6, the highest non-RC version there. So currentMajor is 0 while the 1.0 line remains a release candidate. The Maven Central search API timestamps the 0.14.6 upload separately; the GitHub date is used. The docs page at /docs/start/ gives the build file with the dev.fritz2:core dependency; the Kotlin/JS browser target and the JVM target are both in that build file, and no page names a runtime or runsAs value, so none is recorded. The maintainer is named in the LICENSE of the new repository; the blog names two founders, Jens Stegemann and Jan Weidenhaupt, and the license names one. No download figure exists for Maven Central.

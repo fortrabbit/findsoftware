@@ -1,0 +1,1 @@
+Framework7 is a framework for building mobile, desktop and web apps with a native look and feel. The project describes it as free and open source. It installs from npm, and the install guide names the Framework7 CLI as the most recommended way to start an app.

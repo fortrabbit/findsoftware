@@ -1,0 +1,1 @@
+Griffel is a CSS-in-JS library from Microsoft for React, where styles are written as JavaScript objects. The [install page](https://griffel.js.org/react/install) describes the default setup as a runtime engine: install the package and use it in code directly. Griffel can also run at build time, through the webpack and Vite transforms that the install guide names.

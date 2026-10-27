@@ -1,0 +1,128 @@
+id: govuk-frontend
+name: GOV.UK Frontend
+status: accepted
+checkedAt: 2026-10-27
+description: CSS, JavaScript and Nunjucks components for building government services in the style of GOV.UK.
+facts:
+  - field: homepage
+    value: https://frontend.design-system.service.gov.uk/
+    url: https://frontend.design-system.service.gov.uk/
+    checkedAt: 2026-10-27
+    via: page
+    quote: "GOV.UK Frontend provides the elements developers need to create consistent"
+  - field: repository
+    value: https://github.com/alphagov/govuk-frontend
+    url: https://github.com/alphagov/govuk-frontend
+    checkedAt: 2026-10-27
+    via: api
+  - field: docs
+    value: https://frontend.design-system.service.gov.uk/installing-with-npm/
+    url: https://frontend.design-system.service.gov.uk/installing-with-npm/
+    checkedAt: 2026-10-27
+    via: page
+  - field: firstRelease
+    value: 2018
+    url: https://github.com/alphagov/govuk-frontend/releases
+    checkedAt: 2026-10-27
+    via: api
+  - field: maintainer
+    value: Government Digital Service
+    url: https://github.com/alphagov/govuk-frontend/blob/main/LICENSE.txt
+    checkedAt: 2026-10-27
+    via: page
+    quote: "Crown Copyright (Government Digital Service)"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/alphagov
+    checkedAt: 2026-10-27
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://github.com/alphagov/govuk-frontend
+    checkedAt: 2026-10-27
+    via: api
+  - field: categories
+    value: [design-system, css-framework]
+    url: https://frontend.design-system.service.gov.uk/
+    checkedAt: 2026-10-27
+    via: page
+    quote: "GOV.UK Frontend provides the elements developers need to create consistent"
+  - field: installMethod
+    value: [npm]
+    url: https://frontend.design-system.service.gov.uk/installing-with-npm/
+    checkedAt: 2026-10-27
+    via: page
+    quote: "npm install govuk-frontend --save"
+  - field: installMethod
+    value: [github-release-zip]
+    url: https://frontend.design-system.service.gov.uk/install-using-precompiled-files/
+    checkedAt: 2026-10-27
+    via: page
+    quote: "at the bottom of the latest GOV.UK Frontend release note"
+  - field: templating
+    value: [nunjucks]
+    url: https://frontend.design-system.service.gov.uk/use-nunjucks/
+    checkedAt: 2026-10-27
+    via: page
+    quote: "You can use our Nunjucks code to generate the HTML for pages and components."
+  - field: i18n
+    value: yes, component text can be translated
+    url: https://frontend.design-system.service.gov.uk/localise-govuk-frontend/
+    checkedAt: 2026-10-27
+    via: page
+    quote: "There are three types of text you might want to translate into another language."
+  - field: license
+    value: MIT
+    url: https://github.com/alphagov/govuk-frontend
+    checkedAt: 2026-10-27
+    via: api
+  - field: license
+    value: Open Government Licence v3.0
+    url: https://frontend.design-system.service.gov.uk/
+    checkedAt: 2026-10-27
+    via: page
+    quote: "Open Government Licence v3.0"
+  - field: currentMajor
+    value: 6
+    url: https://github.com/alphagov/govuk-frontend/releases/tag/v6.6.0
+    checkedAt: 2026-10-27
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-15
+    url: https://github.com/alphagov/govuk-frontend/releases/tag/v6.6.0
+    checkedAt: 2026-10-27
+    via: api
+  - field: githubStargazers
+    value: 1476
+    url: https://github.com/alphagov/govuk-frontend
+    checkedAt: 2026-10-27
+    via: api
+  - field: contributors
+    value: 77
+    url: https://github.com/alphagov/govuk-frontend
+    checkedAt: 2026-10-27
+    via: api
+  - field: npmName
+    value: govuk-frontend
+    url: https://registry.npmjs.org/govuk-frontend
+    checkedAt: 2026-10-27
+    via: api
+  - field: npmWeeklyDownloads
+    value: 160886
+    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/govuk-frontend
+    checkedAt: 2026-10-27
+    via: api
+  - field: dependentPackages
+    value: 140
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/govuk-frontend
+    checkedAt: 2026-10-27
+    via: api
+  - field: dependentRepos
+    value: 1529
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/govuk-frontend
+    checkedAt: 2026-10-27
+    via: api
+notFound: [runtime, runtimeMin, hqCountry, parent, pricingPage, paidEdition, endoflifeId, packagistName, adminUi, sso, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, usageShare, reportedInstalls, wikidata]
+unreadable: []
+notes: >
+  The get-started page is archived and points to the npm installation page, which was read. Node.js is required by the Nunjucks macros ("To use Nunjucks, your application and any frameworks that support your application must use Node.js") but no runtime fact is recorded for the package itself, which is CSS and browser JavaScript. The install page states "GOV.UK Frontend requires Node.js version 12.17.0 or later to support ECMAScript (ES) modules", while the npm manifest of the latest release declares engines node >= 4.2.0; no runtimeMin is recorded, because the Node lines concern the Nunjucks macros and the build tooling of a front-end package. Maintainer is the copyright holder in the LICENSE, Crown Copyright (Government Digital Service); the GitHub organization alphagov is the same body and its profile location is London, but no legal or imprint page was read, so hqCountry is unknown. The homepage footer states that content is under the Open Government Licence v3.0 while the code is MIT; both are recorded as separate license entries. Browser grades are on the browser-support page; runsAs is not recorded because no page states the JavaScript runs in the browser. Contributors counted from the contributors endpoint per_page=1 last page, without anonymous contributors. The first GitHub release is v0.0.24-alpha dated 2018-03-01.
