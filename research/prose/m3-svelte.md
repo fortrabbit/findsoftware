@@ -1,0 +1,1 @@
+M3 Svelte is a set of Svelte components that implements the Material 3 design system. A project installs the m3-svelte package from npm together with a Vite plugin, a Material Symbols icon set and a font package that the quick start names. KTibow maintains the package and publishes its source on GitHub.

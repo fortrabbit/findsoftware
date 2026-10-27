@@ -1,0 +1,1 @@
+maryUI is a set of UI components for Livewire, styled with daisyUI and Tailwind CSS. The package ships no CSS of its own and relies on daisyUI and Tailwind for styling. A project installs it with Composer and runs the php artisan mary:install command. Robson Tenório maintains it as an individual on GitHub.

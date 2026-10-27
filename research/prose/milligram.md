@@ -1,0 +1,1 @@
+Milligram sets base styles, a CSS reset and a flexbox grid for pages through one stylesheet. The homepage says to add the stylesheet and the reset in the header of a project, and describes the grid as built on the CSS Flexible Box Layout Module. The MIT-licensed code is maintained by CJ Patoilo.

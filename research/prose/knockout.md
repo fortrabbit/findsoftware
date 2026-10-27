@@ -1,0 +1,3 @@
+Knockout is a JavaScript library for the Model-View-ViewModel pattern. A view model holds observable data, and declarative bindings in the HTML keep the page in sync with that data, so the interface updates when the model changes. It runs in the browser and works with any server technology or none.
+
+A project installs Knockout from npm as knockout, or downloads a built file from the [project website](https://knockoutjs.com/). The [documentation](https://knockoutjs.com/documentation/introduction.html) is on the project website, and the source is on GitHub. The Knockout.js team maintains it under the MIT license.

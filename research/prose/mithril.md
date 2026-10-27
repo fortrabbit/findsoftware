@@ -1,0 +1,1 @@
+Mithril.js is a client-side JavaScript framework for building single page applications, and it runs in the visitor's browser. It can be loaded from a CDN to try it out, or installed from npm into a project. The tutorial on the project's site shows an HTML-style view syntax through Babel's JSX plugin. The documentation is on the project's website.

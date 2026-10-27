@@ -1,0 +1,137 @@
+id: kvision
+name: KVision
+status: accepted
+checkedAt: 2026-10-27
+description: Object-oriented web framework for Kotlin/JS with a hierarchy of ready-to-use UI components.
+facts:
+  - field: homepage
+    value: https://kvision.io
+    url: https://raw.githubusercontent.com/rjaros/kvision/master/README.md
+    checkedAt: 2026-10-27
+    via: page
+    quote: "https://kvision.io"
+  - field: repository
+    value: https://github.com/rjaros/kvision
+    url: https://api.github.com/repos/rjaros/kvision
+    checkedAt: 2026-10-27
+    via: api
+  - field: docs
+    value: https://kvision.gitbook.io/kvision-guide/
+    url: https://kvision.gitbook.io/kvision-guide/
+    checkedAt: 2026-10-27
+    via: page
+    quote: "This is a guide for KVision - an object oriented web framework for Kotlin/JS."
+  - field: maintainer
+    value: Robert Jaros
+    url: https://raw.githubusercontent.com/rjaros/kvision/master/LICENSE
+    checkedAt: 2026-10-27
+    via: page
+    quote: "Copyright (c) 2017-present Robert Jaros"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/rjaros
+    checkedAt: 2026-10-27
+    via: api
+  - field: language
+    value: Kotlin
+    url: https://api.github.com/repos/rjaros/kvision
+    checkedAt: 2026-10-27
+    via: api
+  - field: categories
+    value: [web-framework, ui-library]
+    url: https://raw.githubusercontent.com/rjaros/kvision/master/README.md
+    checkedAt: 2026-10-27
+    via: page
+    quote: "gives you a rich hierarchy of ready to use GUI components"
+  - field: basedOn
+    value: bootstrap
+    url: https://raw.githubusercontent.com/rjaros/kvision/master/README.md
+    checkedAt: 2026-10-27
+    via: page
+    quote: "Based on Bootstrap styles, typography and components."
+  - field: templating
+    value: [handlebars]
+    url: https://kvision.gitbook.io/kvision-guide/introduction.md
+    checkedAt: 2026-10-27
+    via: page
+    quote: "built-in support for Handlebars templates"
+  - field: i18n
+    value: yes
+    url: https://raw.githubusercontent.com/rjaros/kvision/master/README.md
+    checkedAt: 2026-10-27
+    via: page
+    quote: "Internationalization support based on gettext translations"
+  - field: installMethod
+    value: gradle
+    url: https://kvision.gitbook.io/kvision-guide/1.-getting-started-1/setting-up.md
+    checkedAt: 2026-10-27
+    via: page
+    quote: "KVision applications are built with Gradle"
+  - field: runsAs
+    value: [browser]
+    url: https://kvision.gitbook.io/kvision-guide/2.-frontend-development-guide.md
+    checkedAt: 2026-10-27
+    via: page
+    quote: "KVision applications can run fully in the browser without any backend"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/rjaros/kvision/master/LICENSE
+    checkedAt: 2026-10-27
+    via: page
+    quote: "The MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/rjaros/kvision/master/LICENSE
+    checkedAt: 2026-10-27
+    via: page
+    quote: "The MIT License"
+  - field: currentMajor
+    value: 9
+    url: https://repo1.maven.org/maven2/io/kvision/kvision/maven-metadata.xml
+    checkedAt: 2026-10-27
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-13
+    url: https://github.com/rjaros/kvision/releases/tag/9.7.0
+    checkedAt: 2026-10-27
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: https://github.com/rjaros/kvision/releases/tag/0.0.1
+    checkedAt: 2026-10-27
+    via: api
+  - field: mavenCoordinates
+    value: io.kvision:kvision
+    url: https://repo1.maven.org/maven2/io/kvision/kvision/maven-metadata.xml
+    checkedAt: 2026-10-27
+    via: api
+  - field: githubStargazers
+    value: 1350
+    url: https://api.github.com/repos/rjaros/kvision
+    checkedAt: 2026-10-27
+    via: api
+  - field: contributors
+    value: 20
+    url: https://api.github.com/repos/rjaros/kvision/contributors?per_page=1
+    checkedAt: 2026-10-27
+    via: api
+  - field: dependentPackages
+    value: 52
+    url: https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/io.kvision%3Akvision
+    checkedAt: 2026-10-27
+    via: api
+  - field: dependentRepos
+    value: 23
+    url: https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/io.kvision%3Akvision
+    checkedAt: 2026-10-27
+    via: api
+  - field: discord
+    value: https://discord.gg/SdsN3arN2w
+    url: https://raw.githubusercontent.com/rjaros/kvision/master/README.md
+    checkedAt: 2026-10-27
+    via: page
+    quote: "on the Discord server"
+notFound: [paidEdition, pricingPage, hqCountry, httpArchiveSites, npmName, npmWeeklyDownloads, pluginDirectory, forum, x, usageShare, reportedInstalls, renderingModes, runtime]
+unreadable: []
+notes: >
+  The homepage kvision.io serves a JavaScript shell; the body is not in the raw HTML, so the homepage fact is cited to the README link to the site. Maven Central publishes no download count, so no download figure is recorded. The maintainer is the copyright holder named in LICENSE; the GitHub profile lists Poland as location, which is not a legal address and is not recorded. The guide's setup page states that the build needs JDK 25 or higher; it is a build requirement and is not recorded as runtime or runtimeMin. The production build is a zip of the application files (./gradlew clean zip), and no page names the zip as static files. The Kotlin Slack channel #kvision is a chat link with no field. The README names Ktor, Jooby, Spring Boot, Javalin, Vert.x and Micronaut as server frameworks for fullstack applications through the Kilua RPC library; these are integrations, not basedOn statements. The first GitHub tag is 0.0.1 (2018-02-09); ecosyste.ms lists 2021-02-13 as the first Maven release for io.kvision:kvision, a later date, so the GitHub date stands.

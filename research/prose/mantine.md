@@ -1,0 +1,1 @@
+Mantine is a React components library with hooks and a theming system, published on npm as @mantine/core and related @mantine/* packages. A project installs the packages with yarn or npm. Vitaly Rtishchev builds and maintains it together with other contributors.

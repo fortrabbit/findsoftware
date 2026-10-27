@@ -1,0 +1,1 @@
+LaTeX.css is a CSS stylesheet that makes a website look like a LaTeX document. The project calls it almost class-less, so most elements need no classes, and optional class names add special styles for elements such as the author block, abstract, lemmas and theorems. Pages load the stylesheet with a link tag or install it from npm. Vincent Dörig maintains it.

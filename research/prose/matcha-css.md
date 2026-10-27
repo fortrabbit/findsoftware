@@ -1,0 +1,1 @@
+matcha.css is a stylesheet that styles plain HTML elements to match a default browser stylesheet. A page loads it with one link tag to the project's hosted file, and the same package is published on npm. The README states that it has no build steps and no JavaScript.

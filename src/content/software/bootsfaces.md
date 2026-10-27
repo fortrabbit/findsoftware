@@ -20,6 +20,7 @@ hosting:
 runtimeMin: jvm 11
 basedOn:
   - bootstrap
+  - jquery-ui
   - jakarta-faces
 runsAs:
   - always-on
