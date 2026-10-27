@@ -1,0 +1,1 @@
+MVP.css is a stylesheet that styles HTML elements directly, so a page written in plain HTML gets default styling without class names. A page loads the single stylesheet from a CDN, from npm or from a downloaded copy.

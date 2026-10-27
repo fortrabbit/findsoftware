@@ -1,0 +1,155 @@
+id: pharos
+name: Pharos
+status: accepted
+checkedAt: 2026-10-27
+description: JSTOR's design system, a web component library with React wrappers for building products in the JSTOR brand.
+facts:
+  - field: homepage
+    value: https://pharos.jstor.org
+    url: https://pharos.jstor.org
+    checkedAt: 2026-10-27
+    via: page
+    quote: Pharos, JSTOR's design system, guides us to create cohesive
+  - field: repository
+    value: https://github.com/ithaka/pharos
+    url: https://api.github.com/repos/ithaka/pharos
+    checkedAt: 2026-10-27
+    via: api
+  - field: docs
+    value: https://pharos.jstor.org/getting-started/
+    url: https://pharos.jstor.org/getting-started/
+    checkedAt: 2026-10-27
+    via: page
+    quote: "Install the Pharos design system using one of the following commands:"
+  - field: firstRelease
+    value: 2021
+    url: https://registry.npmjs.org/@ithaka/pharos
+    checkedAt: 2026-10-27
+    via: api
+  - field: maintainer
+    value: Ithaka Harbors, Inc.
+    url: https://github.com/ithaka/pharos/blob/develop/LICENSE
+    checkedAt: 2026-10-27
+    via: page
+    quote: Copyright (c) 2021 Ithaka Harbors, Inc.
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/ithaka
+    checkedAt: 2026-10-27
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/ithaka/pharos
+    checkedAt: 2026-10-27
+    via: api
+  - field: categories
+    value:
+      - ui-library
+    url: https://github.com/ithaka/pharos/blob/develop/packages/pharos/README.md
+    checkedAt: 2026-10-27
+    via: page
+    quote: Pharos provides a web component library for building products consistent with the JSTOR brand.
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/ithaka/pharos
+    checkedAt: 2026-10-27
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/ithaka/pharos
+    checkedAt: 2026-10-27
+    via: api
+  - field: currentMajor
+    value: 14
+    url: https://registry.npmjs.org/@ithaka/pharos
+    checkedAt: 2026-10-27
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-23
+    url: https://api.github.com/repos/ithaka/pharos/releases
+    checkedAt: 2026-10-27
+    via: api
+  - field: githubStargazers
+    value: 134
+    url: https://api.github.com/repos/ithaka/pharos
+    checkedAt: 2026-10-27
+    via: api
+  - field: contributors
+    value: 37
+    url: https://api.github.com/repos/ithaka/pharos/contributors?per_page=1
+    checkedAt: 2026-10-27
+    via: api
+  - field: npmName
+    value: "@ithaka/pharos"
+    url: https://registry.npmjs.org/@ithaka/pharos
+    checkedAt: 2026-10-27
+    via: api
+  - field: npmWeeklyDownloads
+    value: 350 (2026-10-18 to 2026-10-24)
+    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@ithaka/pharos
+    checkedAt: 2026-10-27
+    via: api
+  - field: dependentPackages
+    value: 3
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40ithaka%2Fpharos
+    checkedAt: 2026-10-27
+    via: api
+  - field: dependentRepos
+    value: 1
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40ithaka%2Fpharos
+    checkedAt: 2026-10-27
+    via: api
+  - field: parent
+    value: ITHAKA
+    url: https://pharos.jstor.org/
+    checkedAt: 2026-10-27
+    via: page
+    quote: ITHAKA. All Rights Reserved.
+  - field: installMethod
+    value: npm
+    url: https://github.com/ithaka/pharos/blob/develop/packages/pharos/README.md
+    checkedAt: 2026-10-27
+    via: page
+    quote: $ npm install @ithaka/pharos
+  - field: installMethod
+    value: yarn
+    url: https://pharos.jstor.org/getting-started/
+    checkedAt: 2026-10-27
+    via: page
+    quote: yarn add @ithaka / pharos
+notFound:
+  - basedOn
+  - runtime
+  - runtimeMin
+  - hqCountry
+  - runsAs
+  - renderingModes
+  - templating
+  - databases
+  - contentStore
+  - headlessApi
+  - adminUi
+  - i18n
+  - multisite
+  - livePreview
+  - userRoles
+  - sso
+  - importsFrom
+  - usageShare
+  - reportedInstalls
+  - pluginDirectory
+  - pluginCount
+  - forum
+  - discord
+  - subreddit
+  - mastodon
+  - bluesky
+  - x
+  - newsletter
+  - pricingPage
+  - paidEdition
+  - docker
+  - endoflifeId
+  - httpArchiveSites
+unreadable: []
+notes: "Monorepo: ithaka/pharos holds @ithaka/pharos (the component library, the package the install page names), @ithaka/pharos-cli and @ithaka/pharos-site. Every figure and the currentMajor come from @ithaka/pharos; GitHub release tags are per package, and the highest stable tag of @ithaka/pharos is in the 14 line. The default branch is develop. The getting-started page names yarn and npm. The core README says the package only exports component classes that the application registers on the custom element registry under a scoping prefix, that every component sets a data-pharos-component attribute so bundler minification of class names needs a keep-names setting, and that scoped custom element registries are not yet finalized, so a polyfill is required. The React wrappers live in lib/react-components. The getting-started install tree lists icon assets, design token styles and typography styles inside the package. The LICENSE copyright names Ithaka Harbors, Inc., the legal name recorded as maintainer. The Pharos site footer carries the copyright line of ITHAKA, recorded as parent; the site's \"JSTOR is part of ITHAKA\" sentence describes JSTOR, not Pharos. No page read gives the headquarters, so hqCountry is not recorded. Contributors counts contributor accounts from the API list with per_page=1, read from the Link header."

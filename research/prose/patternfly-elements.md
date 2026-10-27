@@ -1,0 +1,1 @@
+PatternFly Elements is a set of web components that follow the PatternFly design. They install from npm as @patternfly/elements or load from a CDN, and the homepage shows them used in plain HTML as well as in React, Vue, Angular and Svelte. The components are described as community-created, and the repository's license names Red Hat, Inc. as copyright holder.

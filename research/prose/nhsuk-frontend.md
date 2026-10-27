@@ -1,0 +1,5 @@
+NHS.UK frontend is the code for building user interfaces for NHS websites and services, maintained by NHS England and published on npm as nhsuk-frontend. The npm route gives a project the Sass source, which it forwards into its own stylesheet, the JavaScript that starts all components with an initAll call, and Nunjucks macros for the components. The [installation guide](https://github.com/nhsuk/nhsuk-frontend/blob/main/docs/installation/installing-with-npm.md) describes that route, and the [precompiled-files guide](https://github.com/nhsuk/nhsuk-frontend/blob/main/docs/installation/installing-compiled.md) describes copying the built CSS, JavaScript and assets into a project instead.
+
+## Worth knowing
+
+The precompiled files cannot change the Sass settings, cannot use the Nunjucks macros and cannot import single components, so the guide points live applications to the npm route. The npm route needs Node.js and Dart Sass in the project's build. The README points to the NHS digital service manual for component examples and guidance.
