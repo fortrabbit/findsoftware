@@ -220,7 +220,7 @@ html:not(.js) .graph-dock {
   display: none;
 }
 
-@media (min-width: 80rem) {
+@media (min-width: 64rem) {
   body:has(> .graph-dock:not([hidden])) {
     /* A width dragged by the reader, kept on the root, or a share of the screen. */
     --graph-width: var(--graph-drag, clamp(22rem, 30vw, 34rem));

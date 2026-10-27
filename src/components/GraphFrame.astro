@@ -177,7 +177,7 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean 
     overflow: hidden;
   }
   /* Folded, the controls stay as a strip, so the graph can be unfolded again. Only above the page: the column never folds. */
-  @media (max-width: 79.99rem) {
+  @media (max-width: 63.99rem) {
     .graph.collapsed {
       height: calc(var(--space-sm) * 2 + 1.75rem);
     }
@@ -200,7 +200,7 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean 
     }
   }
   /* The column never folds, so it has no fold control; as specific as the rule that shows the controls. */
-  @media (min-width: 80rem) {
+  @media (min-width: 64rem) {
     .graph-controls button[value='collapse'] {
       display: none;
     }
@@ -209,7 +209,7 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean 
   .graph-handle {
     display: none;
   }
-  @media (min-width: 80rem) {
+  @media (min-width: 64rem) {
     .graph:not(.expanded) .graph-handle {
       position: absolute;
       z-index: 1;
