@@ -12,6 +12,8 @@ maintainer: Moudy
 maintainerType: individual
 firstRelease: 2014
 language: javascript
+basedOn:
+  - broccoli
 installMethod: npm install -g
 licenseModel: open-source
 license: MIT
@@ -41,6 +43,9 @@ sources:
     url: https://api.github.com/repos/moudy/broccoli-taco
     checkedAt: 2026-10-22
   - field: category
+    url: https://github.com/moudy/broccoli-taco/blob/master/package.json
+    checkedAt: 2026-10-22
+  - field: basedOn
     url: https://github.com/moudy/broccoli-taco/blob/master/package.json
     checkedAt: 2026-10-22
   - field: installMethod
