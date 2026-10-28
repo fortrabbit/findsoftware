@@ -1,0 +1,114 @@
+id: ex-elasticlunr
+name: Elasticlunr
+status: accepted
+checkedAt: 2026-10-28
+description: Elixir full-text search library that indexes JSON documents and answers queries inside the application, a port of Elasticlunr.js.
+facts:
+  - field: repository
+    value: https://github.com/heywhy/ex_elasticlunr
+    url: https://api.github.com/repos/heywhy/ex_elasticlunr
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://hexdocs.pm/elasticlunr
+    url: https://github.com/heywhy/ex_elasticlunr/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Documentation can be found at hexdocs.pm"
+  - field: installMethod
+    value: hex dependency in mix.exs
+    url: https://github.com/heywhy/ex_elasticlunr/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "adding `elasticlunr` to your list of dependencies in mix.exs"
+  - field: maintainer
+    value: Atanda Rasheed
+    url: https://raw.githubusercontent.com/heywhy/ex_elasticlunr/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2021 Atanda Rasheed"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/heywhy/ex_elasticlunr/v0.6.6/mix.exs
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'maintainers: ["Atanda Rasheed"],'
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/heywhy
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Elixir
+    url: https://api.github.com/repos/heywhy/ex_elasticlunr
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [elixir]
+    url: https://raw.githubusercontent.com/heywhy/ex_elasticlunr/v0.6.6/mix.exs
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'elixir: "~> 1.11",'
+  - field: categories
+    value: [search-library]
+    url: https://github.com/heywhy/ex_elasticlunr/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Elasticlunr is a small, full-text search library for use in the Elixir environment."
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/heywhy/ex_elasticlunr/v0.6.6/mix.exs
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'licenses: ["MIT License"],'
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/heywhy/ex_elasticlunr/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/heywhy/ex_elasticlunr/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 0
+    url: https://hex.pm/api/packages/elasticlunr
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2022-02-26
+    url: https://hex.pm/api/packages/elasticlunr
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2021"
+    url: https://hex.pm/api/packages/elasticlunr
+    checkedAt: 2026-10-28
+    via: api
+  - field: hexName
+    value: elasticlunr
+    url: https://hex.pm/api/packages/elasticlunr
+    checkedAt: 2026-10-28
+    via: api
+  - field: hexDownloads
+    value: 6955 total
+    url: https://hex.pm/api/packages/elasticlunr
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 193
+    url: https://api.github.com/repos/heywhy/ex_elasticlunr
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/heywhy/ex_elasticlunr/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, runtimeMin, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, pypiDownloads, packagistName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, hostedOffering, regions, facebook, instagram, threads]
+unreadable: []
+notes: >
+  Status is accepted per the CSV. The last Hex release is 0.6.6 (2022-02-26), no GitHub release exists (the tags run to v0.6.6), the last commit on master is 2022-03-05 and no retirement flag is set on Hex. Under the import rule, a record with no release in four years becomes stub on its own; this file does not set it. Repository and hexdocs are the only project links: hexdocs.pm is the project's docs, not a homepage, so homepage is not recorded. The README calls the package a port of Elasticlunr.js ("It's a port of Elasticlunr.js with more improvements" in mix.exs); a port is not recorded as basedOn because it is a reimplementation, not a built-on framework, and the JavaScript library has no record. The mix.exs on master says version 0.6.4 while the v0.6.6 tag and Hex say 0.6.6; the tagged file is used for elixir and maintainers. currentMajor is 0, the major of 0.6.6, as the source states it. runtimeMin is absent: mix.exs states the Elixir requirement (elixir ~> 1.11) but no OTP minimum. The owner's name on GitHub is Rasheed Atanda; the LICENSE and mix.exs name Atanda Rasheed, which is recorded. Index storage is a coined kind, kept here: the README ("Elasticlunr allows you to write your indexes to whatever storage provider you want.") lists Blackhole, Disk and S3 providers (S3 as the separate ex_elasticlunr_s3 package). The Hex package has no retirement, and its description and README make no end statement.

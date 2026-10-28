@@ -1,0 +1,1 @@
+FZF for JavaScript is a port of the main matching algorithm of the FZF fuzzy finder, written so that it can be used in a browser. The package is installed with npm under the name fzf. The [documentation](https://fzf.netlify.app) is linked from the README. The original FZF is a fuzzy finder for command lines, and the README names it as the origin of the algorithm.

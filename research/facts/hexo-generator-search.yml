@@ -1,0 +1,117 @@
+id: hexo-generator-search
+name: hexo-generator-search
+status: accepted
+checkedAt: 2026-10-28
+description: Hexo plugin that writes a search index file, in XML or JSON, into a Hexo site's generated output for a client-side search.
+facts:
+  - field: repository
+    value: https://github.com/wzpan/hexo-generator-search
+    url: https://api.github.com/repos/wzpan/hexo-generator-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/wzpan/hexo-generator-search/blob/master/README.md
+    url: https://github.com/wzpan/hexo-generator-search/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Generate search data for Hexo 3.x and 4.x"
+  - field: maintainer
+    value: Mao shuhao
+    url: https://raw.githubusercontent.com/wzpan/hexo-generator-search/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2015 Mao shuhao"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/wzpan
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/wzpan/hexo-generator-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/wzpan/hexo-generator-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-index]
+    url: https://github.com/wzpan/hexo-generator-search/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This plugin is used for generating a search index file"
+  - field: basedOn
+    value: [hexo]
+    url: https://github.com/wzpan/hexo-generator-search/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Generate search data for Hexo 3.x and 4.x"
+  - field: runtime
+    value: [node]
+    url: https://registry.npmjs.org/hexo-generator-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: installMethod
+    value: [npm]
+    url: https://github.com/wzpan/hexo-generator-search/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm install hexo-generator-search --save"
+  - field: runsAs
+    value: [static, local]
+    url: https://github.com/wzpan/hexo-generator-search/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "After executing `hexo g` you will get the generated result at your public folder"
+  - field: runsAs
+    value: [browser]
+    url: https://github.com/wzpan/hexo-generator-search/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This script tells the browser how to grab search data"
+  - field: npmName
+    value: hexo-generator-search
+    url: https://registry.npmjs.org/hexo-generator-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1255
+    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/hexo-generator-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://registry.npmjs.org/hexo-generator-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2021-06-05
+    url: https://registry.npmjs.org/hexo-generator-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://registry.npmjs.org/hexo-generator-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: lastCommitDate
+    value: 2023-05-11
+    url: https://api.github.com/repos/wzpan/hexo-generator-search/commits?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 494
+    url: https://api.github.com/repos/wzpan/hexo-generator-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 11
+    url: https://api.github.com/repos/wzpan/hexo-generator-search/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [runtimeMin, homepage, hqCountry, parent, wikidata, endoflifeId, forkOf, successorOf, alternativeTo, i18n, templating, sso, multisite, livePreview, userRoles, adminUi, headlessApi, contentStore, databases, renderingModes, paidEdition, pricingPage, selfHostOption, licenseModel, packagistName, pypiName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  Repository only, no homepage: the README links the demo site and demo outputs on GitHub, and no project website is named. The GitHub repository has no release and no tag; the registry is the release source (npm 2.4.3, published 2021-06-05, the latest version of 19), so currentMajor and latestReleaseDate are from npm. Criterion 4: the registry's last release is more than four years old, and the default branch's last commit is 2023-05-11; the import moves a record with no release in four years to stub. The LICENSE copyright line names "Mao shuhao", the package.json author is "wzpan", and the GitHub owner is the user wzpan; the maintainer is recorded from the LICENSE line and the reviewer decides whether that differs from the person who maintains the repository. The README states support for Hexo 3.x and 4.x only; that is a compatibility statement about the parent and is not recorded as a runtime or runtimeMin. The npm engines field of the latest version reads ">= 0.10.0"; for a build plugin it says nothing about the Node version a Hexo site needs, so no runtimeMin is recorded. npmWeeklyDownloads is the sum of the daily figures from 2026-10-19 to 2026-10-25 (the range endpoint); the point endpoint for the last week gave a different window. The plugin sits in the Hexo build: the generated index is a file in the public folder, and the search script runs in the visitor's browser, which is why both runsAs values are recorded.

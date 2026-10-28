@@ -1,0 +1,117 @@
+id: elasticsearch-rails
+name: Elasticsearch Rails
+status: accepted
+checkedAt: 2026-10-28
+description: Ruby gem of Elasticsearch integrations for Ruby on Rails applications, maintained by Elastic.
+facts:
+  - field: repository
+    value: https://github.com/elastic/elasticsearch-rails
+    url: https://api.github.com/repos/elastic/elasticsearch-rails
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://www.elastic.co/guide/en/elasticsearch/client/ruby-api/current/ruby_on_rails.html
+    url: https://rubygems.org/api/v1/gems/elasticsearch-rails.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Elasticsearch B.V.
+    url: https://raw.githubusercontent.com/elastic/elasticsearch-rails/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Licensed to Elasticsearch B.V. under one or more contributor"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/elastic/elasticsearch-rails
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://rubygems.org/api/v1/versions/elasticsearch-rails.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-integration]
+    url: https://raw.githubusercontent.com/elastic/elasticsearch-rails/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This repository contains various Ruby and Rails integrations for"
+  - field: basedOn
+    value: rails
+    url: https://raw.githubusercontent.com/elastic/elasticsearch-rails/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "contains various features for Ruby on Rails applications"
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/elastic/elasticsearch-rails
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://raw.githubusercontent.com/elastic/elasticsearch-rails/v8.0.1/elasticsearch-rails/elasticsearch-rails.gemspec
+    checkedAt: 2026-10-28
+    via: page
+    quote: "s.required_ruby_version = '>= 3'"
+  - field: runtimeMin
+    value: "Ruby 3"
+    url: https://raw.githubusercontent.com/elastic/elasticsearch-rails/v8.0.1/elasticsearch-rails/elasticsearch-rails.gemspec
+    checkedAt: 2026-10-28
+    via: page
+    quote: "s.required_ruby_version = '>= 3'"
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/elastic/elasticsearch-rails/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This software is licensed under the Apache 2 license"
+  - field: installMethod
+    value: [gem install]
+    url: https://raw.githubusercontent.com/elastic/elasticsearch-rails/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "gem install elasticsearch-rails"
+  - field: rubygemsName
+    value: elasticsearch-rails
+    url: https://rubygems.org/api/v1/gems/elasticsearch-rails.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: rubygemsDownloads
+    value: 67787447
+    url: https://rubygems.org/api/v1/gems/elasticsearch-rails.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 8
+    url: https://api.github.com/repos/elastic/elasticsearch-rails/releases/tags/v8.0.1
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2025-09-01
+    url: https://api.github.com/repos/elastic/elasticsearch-rails/releases/tags/v8.0.1
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 3083
+    url: https://api.github.com/repos/elastic/elasticsearch-rails
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 99
+    url: https://api.github.com/repos/elastic/elasticsearch-rails/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 22
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/elasticsearch-rails
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 2495
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/elasticsearch-rails
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, paidEdition, licenseModel, endoflifeId, latestPrereleaseDate, packagistName, npmName, npmWeeklyDownloads, pypiDownloads, packagistDownloads, pluginDirectory, pluginCount, starters, usageShare, reportedInstalls, forum, discord, subreddit, mastodon, bluesky, x, newsletter, sourcePublic]
+unreadable: []
+notes: >
+  Monorepo: the repository holds three gems, elasticsearch-model, elasticsearch-persistence and elasticsearch-rails. This record is the elasticsearch-rails gem, the one the README names for Rails; its rubygems and ecosyste.ms figures are for that gem. The README says the Elasticsearch client and Ruby API come from the elasticsearch-ruby project; that is a dependency statement, not a successor. The gemspec at v8.0.1 lists the authors as "Elastic Client Library Maintainers" and the homepage as the Elastic Rails docs page; the legal name Elasticsearch B.V. comes from the license text. The README says the libraries follow the Elasticsearch major versions, so the major 8 matches the Elasticsearch 8.x line. The README says the libraries are compatible with Ruby 3.0 and higher, and the gemspec at v8.0.1 states required_ruby_version '>= 3'; the record uses the gemspec. The README lists Rails application templates for generating an example app and says an Elasticsearch cluster is needed to run them; no runsAs is recorded, since no page states where the library runs in production. The GitHub repository has releases from several gems in one list, including prereleases; the registry starts with version 0.0.0 uploaded 2013-09-25. The rubygems downloads figure is the all-time total. The release date 2025-09-01 is the rubygems and GitHub date for 8.0.1. The repository's last push is 2025-10-08, and the README points to the Elastic support lifecycle page for version support, not to an end of the project.

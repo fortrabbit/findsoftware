@@ -1,0 +1,69 @@
+id: google-agent-search
+name: Agent Search
+status: stub
+checkedAt: 2026-10-28
+description: Google Cloud hosted service that builds search engines over websites and enterprise data and grounds generative AI apps in that data.
+facts:
+  - field: homepage
+    value: https://cloud.google.com/products/gemini-enterprise-agent-platform/agent-search
+    url: https://cloud.google.com/products/gemini-enterprise-agent-platform/agent-search
+    checkedAt: 2026-10-28
+    via: page
+  - field: docs
+    value: https://docs.cloud.google.com/generative-ai-app-builder/docs/try-enterprise-search
+    url: https://cloud.google.com/products/gemini-enterprise-agent-platform/agent-search
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Read product documentation for detailed instructions"
+  - field: pricingPage
+    value: https://cloud.google.com/generative-ai-app-builder/pricing
+    url: https://cloud.google.com/generative-ai-app-builder/pricing
+    checkedAt: 2026-10-28
+    via: page
+  - field: categories
+    value: [search]
+    url: https://cloud.google.com/products/gemini-enterprise-agent-platform/agent-search
+    checkedAt: 2026-10-28
+    via: page
+    quote: "helps developers build Google-quality search experiences for websites"
+  - field: maintainer
+    value: Google LLC
+    url: https://policies.google.com/terms?hl=en
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Google LLC and its subsidiaries"
+  - field: headlessApi
+    value: rest
+    url: https://docs.cloud.google.com/generative-ai-app-builder/docs/migrate-from-cse
+    checkedAt: 2026-10-28
+    via: page
+  - field: adminUi
+    value: Google Cloud console
+    url: https://cloud.google.com/products/gemini-enterprise-agent-platform/agent-search
+    checkedAt: 2026-10-28
+    via: page
+    quote: "You can access via the Google Cloud Console"
+  - field: importsFrom
+    value: [Programmable Search Engine (Custom Search Site Restricted JSON API)]
+    url: https://docs.cloud.google.com/generative-ai-app-builder/docs/migrate-from-cse
+    checkedAt: 2026-10-28
+    via: page
+  - field: i18n
+    value: documented language list per data store
+    url: https://docs.cloud.google.com/generative-ai-app-builder/docs/languages-locales
+    checkedAt: 2026-10-28
+    via: page
+  - field: regions
+    value: [US multi-region, EU multi-region]
+    url: https://docs.cloud.google.com/generative-ai-app-builder/docs/locations
+    checkedAt: 2026-10-28
+    via: page
+  - field: userRoles
+    value: predefined IAM roles
+    url: https://docs.cloud.google.com/generative-ai-app-builder/docs/access-control
+    checkedAt: 2026-10-28
+    via: page
+notFound: [hqCountry, parent, wikidata, firstRelease, currentMajor, latestReleaseDate, repository, license, licenseModel, language, runtime, runtimeMin, installMethod, runsAs, renderingModes, contentStore, databases, templating, sso, livePreview, multisite, selfHostOption, apiLimits, paidEdition, endoflifeId, npmName, packagistName, pypiName, githubStargazers, contributors, npmWeeklyDownloads, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, alternativeTo, basedOn, forkOf, successorOf]
+unreadable: [cloud.google.com/terms (JavaScript shell with no legal text), cloud.google.com/terms/index (404)]
+notes: >
+  Criterion 1 is in doubt: Agent Search is an enterprise search and RAG platform, and a site search widget is one use among others; a visitor-facing site search widget on a creator's site (the product page's website search) would settle it as in, an enterprise-data and RAG-only focus would put it out. Held as a stub until then. The docs.cloud.google.com pages return different bodies on different requests, so the sentences for headlessApi, importsFrom, userRoles, regions and i18n are not kept as quotes; the URLs and the read date stand. Renamed: the product page reads "Agent Search on Gemini Enterprise Agent Platform (formerly Vertex AI Search)" and the migration page says "Vertex AI Search is being renamed to Agent Search"; the record follows the new name. The maintainer is Google LLC from the consumer terms at policies.google.com/terms, which define "Google LLC and its subsidiaries"; the Google Cloud service terms were not readable, so the cloud contracting entity and the headquarters country are not recorded. The consumer terms also name Google Ireland Limited as the service provider in the EEA, which is a consumer-terms statement and is not recorded as the maintainer. The website search widget is deployed as an HTML component from the console (product page), or the API is used directly; a search app takes a site URL and indexes it. Search and grounding use Google's own models; the product page says data is not used to train models, which is not recorded as a field. The Custom Search Site Restricted JSON API of Programmable Search Engine is a documented migration source (importsFrom); the migration page states the API key versus OAuth 2.0 difference. The candidate row's category "vector-search" is not recorded: the product page's Vector Search is a separate Google Cloud product (docs.cloud.google.com Vector Search quickstart), and the product page presents it as the component under Agent Search. The candidate's boundary question (whether a hosted enterprise search and RAG service is a site-building tool under criterion 1) is decided by the website search widget and the site search pages, not by the RAG and generative answer features.

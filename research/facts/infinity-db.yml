@@ -1,0 +1,140 @@
+id: infinity-db
+name: Infinity
+status: accepted
+checkedAt: 2026-10-28
+description: AI-native database server that runs hybrid search over dense and sparse vectors, tensors, full text and structured data.
+facts:
+  - field: homepage
+    value: https://infiniflow.org
+    url: https://infiniflow.org
+    checkedAt: 2026-10-28
+    via: page
+  - field: repository
+    value: https://github.com/infiniflow/infinity
+    url: https://github.com/infiniflow/infinity
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://infiniflow.org/docs/dev/category/get-started
+    url: https://github.com/infiniflow/infinity/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: InfiniFlow
+    url: https://infiniflow.org
+    checkedAt: 2026-10-28
+    via: page
+    quote: "© InfiniFlow 2026"
+  - field: categories
+    value: [vector-database, search-server]
+    url: https://github.com/infiniflow/infinity/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The AI-native database built for LLM applications"
+  - field: language
+    value: C++
+    url: https://github.com/infiniflow/infinity
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [c++ binary]
+    url: https://github.com/infiniflow/infinity/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A single-binary architecture with no dependencies"
+  - field: runsAs
+    value: [always-on]
+    url: https://infiniflow.org/docs/dev/deploy_infinity_server
+    checkedAt: 2026-10-28
+    via: page
+    quote: "sudo systemctl start infinity"
+  - field: serverNeeds
+    value: [x86_64 CPU with AVX2 support, Linux with glibc 2.17+, Windows 10+ with WSL/WSL2, macOS]
+    url: https://github.com/infiniflow/infinity/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "CPU: x86_64 with AVX2 support."
+  - field: installMethod
+    value: [docker]
+    url: https://github.com/infiniflow/infinity/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "docker run -d --name infinity"
+  - field: installMethod
+    value: [binary download]
+    url: https://infiniflow.org/docs/dev/deploy_infinity_server
+    checkedAt: 2026-10-28
+    via: page
+    quote: "You can download the binary package (deb, rpm, or tgz)"
+  - field: installMethod
+    value: [build from source]
+    url: https://github.com/infiniflow/infinity/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "See the Build from Source guide"
+  - field: installMethod
+    value: [pip]
+    url: https://github.com/infiniflow/infinity/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "pip install infinity-sdk==0.7.4"
+  - field: pypiName
+    value: infinity-sdk
+    url: https://pypi.org/pypi/infinity-sdk/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiDownloads
+    value: 13185 (last month)
+    url: https://pypistats.org/api/packages/infinity-sdk/recent
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/infiniflow/infinity/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Apache License Version 2.0, January 2004"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/infiniflow/infinity/releases/tag/v0.7.4
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-09
+    url: https://github.com/infiniflow/infinity/releases/tag/v0.7.4
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2024
+    url: https://github.com/infiniflow/infinity/releases/tag/v0.1.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 4747
+    url: https://github.com/infiniflow/infinity
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 59
+    url: https://github.com/infiniflow/infinity/graphs/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: discord
+    value: https://discord.com/invite/jEfRUwEYEV
+    url: https://infiniflow.org
+    checkedAt: 2026-10-28
+    via: page
+  - field: x
+    value: https://x.com/infiniflowai
+    url: https://infiniflow.org
+    checkedAt: 2026-10-28
+    via: page
+  - field: forum
+    value: https://github.com/infiniflow/infinity/discussions
+    url: https://github.com/infiniflow/infinity/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+notFound: [hqCountry, basedOn, adminUi, headlessApi, sso, i18n, multisite, livePreview, userRoles, databases, contentStore, renderingModes, paidEdition, pluginDirectory, subreddit, mastodon, bluesky, newsletter, wikidata, pricingPage, runtimeMin]
+unreadable: []
+notes: >
+  A database server for AI applications: the server runs as a process the install starts (Docker container, systemd service from the deb or rpm package) and clients connect over the network; the Python client infinity-sdk is the install the README names for the client side, and pypiDownloads counts that client only. The client needs Python 3.11 to 3.13 (requires_python is at least 3.11 and below 3.14); no runtimeMin is recorded because the server is not written in Python. The README Docker example and the dev docs use a nightly tag; the docs banner gives v0.7.4 as the latest documented version. The newest GitHub prerelease, a nightly dated 2026-01-20, predates v0.7.4, so no latestPrereleaseDate is recorded. The README lists an HTTP API reference; the page does not say REST or GraphQL, so headlessApi is not recorded. The footer copyright names InfiniFlow with no legal form and no country; the owner is an organization on GitHub. The README also lists an embedded mode: Infinity "Embedded in Python as a module", beside the server deployments with client and server as separate processes. The CSV homepage was empty and the site is infiniflow.org.

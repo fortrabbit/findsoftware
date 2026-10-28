@@ -1,0 +1,5 @@
+Infinity is an AI-native database server. It stores tables with vector, tensor, full-text and structured columns, and answers hybrid queries that combine dense and sparse vector search, tensor matching and full-text search with filters. The server runs as a single binary, started as a Docker container or as a system service from its deb or rpm package, and the README also names an embedded mode as a Python module. Applications reach it over the network through a client, which the [README](https://github.com/infiniflow/infinity/blob/main/README.md) installs from pip for Python. In the Docker and binary deployments, client and server run as separate processes.
+
+## Worth knowing
+
+The server keeps running as a process, so it needs a host that keeps services alive. A static web space cannot run it. The README's Docker example uses the nightly image tag, and the documentation banner points to a released version as the latest, so a reader who wants a fixed release has to pick the tag and the documentation version by hand.

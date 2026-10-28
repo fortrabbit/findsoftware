@@ -1,0 +1,138 @@
+id: blast
+name: Blast
+status: discontinued
+checkedAt: 2026-10-28
+description: Full-text search and indexing server written in Go on top of Bleve, with gRPC and RESTful APIs.
+facts:
+  - field: status
+    value: discontinued
+    url: https://raw.githubusercontent.com/mosuka/blast/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This project has not been maintained for a long time."
+  - field: status
+    value: discontinued
+    url: https://api.github.com/repos/mosuka/blast
+    checkedAt: 2026-10-28
+    via: api
+  - field: repository
+    value: https://github.com/mosuka/blast
+    url: https://api.github.com/repos/mosuka/blast
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/mosuka/blast/blob/master/README.md
+    url: https://raw.githubusercontent.com/mosuka/blast/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Blast is a full-text search and indexing server"
+  - field: maintainer
+    value: Minoru Osuka
+    url: https://raw.githubusercontent.com/mosuka/blast/master/Dockerfile
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MAINTAINER Minoru Osuka"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/mosuka
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/mosuka/blast
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-server]
+    url: https://raw.githubusercontent.com/mosuka/blast/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Blast is a full-text search and indexing server written in Go"
+  - field: basedOn
+    value: bleve
+    url: https://raw.githubusercontent.com/mosuka/blast/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "written in Go built on top of Bleve"
+  - field: runtime
+    value: [go binary]
+    url: https://raw.githubusercontent.com/mosuka/blast/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "it will build the binary of the platform you are using"
+  - field: runtimeMin
+    value: Go 1.14
+    url: https://raw.githubusercontent.com/mosuka/blast/v0.10.0/go.mod
+    checkedAt: 2026-10-28
+    via: page
+    quote: "go 1.14"
+  - field: installMethod
+    value: [compile from source with make]
+    url: https://raw.githubusercontent.com/mosuka/blast/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "$ make"
+  - field: installMethod
+    value: [docker]
+    url: https://raw.githubusercontent.com/mosuka/blast/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "docker pull mosuka/blast:latest"
+  - field: docker
+    value: mosuka/blast
+    url: https://raw.githubusercontent.com/mosuka/blast/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "docker pull mosuka/blast:latest"
+  - field: runsAs
+    value: [always-on]
+    url: https://raw.githubusercontent.com/mosuka/blast/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Starting server is easy as follows:"
+  - field: headlessApi
+    value: [rest]
+    url: https://raw.githubusercontent.com/mosuka/blast/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "or traditional RESTful API"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/mosuka/blast
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/mosuka/blast/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Apache License Version 2.0, January 2004"
+  - field: firstRelease
+    value: "2018"
+    url: https://api.github.com/repos/mosuka/blast/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/mosuka/blast/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2021-01-18
+    url: https://api.github.com/repos/mosuka/blast/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1074
+    url: https://api.github.com/repos/mosuka/blast
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/mosuka/blast/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, hqCountry, maintainerType, parent, forkOf, successorOf, alternativeTo, renderingModes, contentStore, databases, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, outputDir, npmName, packagistName, pypiDownloads, npmWeeklyDownloads, dependentPackages, dependentRepos, httpArchiveSites, hostedOffering, lastCommitDate]
+unreadable: []
+notes: >
+  Discontinued on two signals: the README opens with "This project has been taken over by Phalanx" and says "This project has not been maintained for a long time.", and the GitHub repository is archived. The last push to master is 2021-12-10. The README names https://github.com/mosuka/phalanx as the successor; that is a separate project and is not recorded as a fact here, so a Phalanx candidate would need its own row. The project's own site is absent: the repository has no homepage, so none is recorded. The highest stable GitHub release is v0.10.0 (2021-01-18), and go.mod at that tag declares go 1.14, which is the runtimeMin recorded. The Go module path github.com/mosuka/blast has no registry download figure. The Dockerfile uses golang:1.15.6 for the build stage, not a runtime. The README notes that some Bleve extensions need C/C++ libraries (cld2, icu, libstemmer, leveldb) at build time, and the Japanese analyser uses kagome. The README lists faceted search, spatial search, search result highlighting and index replication with Raft consensus, these are features and not fields. The maintainer name is from the MAINTAINER line of the Dockerfile; the LICENSE carries no copyright line. The README's example data directory and docker container show the node stores the index and Raft logs in a data directory; the page does not name a storage kind, so contentStore is absent.

@@ -1,0 +1,128 @@
+id: django-elasticsearch-dsl
+name: Django Elasticsearch DSL
+status: accepted
+checkedAt: 2026-10-28
+description: Django package that indexes Django models into Elasticsearch through elasticsearch-dsl-py, with signal-based sync and management commands.
+facts:
+  - field: repository
+    value: https://github.com/django-es/django-elasticsearch-dsl
+    url: https://api.github.com/repos/django-es/django-elasticsearch-dsl
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://django-elasticsearch-dsl.readthedocs.io/en/latest/
+    url: https://django-elasticsearch-dsl.readthedocs.io/en/latest/quickstart.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Install Django Elasticsearch DSL:"
+  - field: maintainer
+    value: Sabricot
+    url: https://pypi.org/pypi/django-elasticsearch-dsl/json
+    checkedAt: 2026-10-28
+    via: api
+    quote: "\"author\":\"Sabricot\""
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/django-es
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/django-es/django-elasticsearch-dsl/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: license
+    value: Apache-2.0
+    url: https://pypi.org/pypi/django-elasticsearch-dsl/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/django-es/django-elasticsearch-dsl/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/django-es/django-elasticsearch-dsl
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://pypi.org/pypi/django-elasticsearch-dsl/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtimeMin
+    value: "3.9"
+    url: https://pypi.org/pypi/django-elasticsearch-dsl/json
+    checkedAt: 2026-10-28
+    via: api
+    quote: "\"requires_python\":\">=3.9\""
+  - field: basedOn
+    value: [django]
+    url: https://pypi.org/pypi/django-elasticsearch-dsl/json
+    checkedAt: 2026-10-28
+    via: api
+    quote: "Wrapper around elasticsearch-dsl-py for django models"
+  - field: categories
+    value: [search]
+    url: https://raw.githubusercontent.com/django-es/django-elasticsearch-dsl/master/README.rst
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Django Elasticsearch DSL is a package that allows indexing of django models in elasticsearch."
+  - field: installMethod
+    value: [pip]
+    url: https://django-elasticsearch-dsl.readthedocs.io/en/latest/quickstart.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Install Django Elasticsearch DSL:"
+  - field: firstRelease
+    value: "2017"
+    url: https://api.github.com/repos/django-es/django-elasticsearch-dsl/tags
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 9
+    url: https://pypi.org/pypi/django-elasticsearch-dsl/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2025-07-23
+    url: https://pypi.org/pypi/django-elasticsearch-dsl/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1057
+    url: https://api.github.com/repos/django-es/django-elasticsearch-dsl
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 49
+    url: https://api.github.com/repos/django-es/django-elasticsearch-dsl/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiName
+    value: django-elasticsearch-dsl
+    url: https://pypi.org/pypi/django-elasticsearch-dsl/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiDownloads
+    value: 79543 last week
+    url: https://pypistats.org/api/packages/django-elasticsearch-dsl/recent
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 3
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-elasticsearch-dsl
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 945
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-elasticsearch-dsl
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, forkOf, successorOf, alternativeTo, endoflifeId, supportedVersions, pricingPage, paidEdition, freeTier, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, runsAs, renderingModes, selfHostOption, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, facebook, instagram, wikidata, docker]
+unreadable: []
+notes: >
+  No homepage is recorded: the GitHub homepage field is empty, and the only project-owned site is the Read the Docs documentation, recorded as docs; a reviewer decides whether the docs site is the homepage. The README lists Django signal receivers on save and delete, management commands for creating, deleting, rebuilding and populating indices, and a rule to match the library's major version to the Elasticsearch major version. The quickstart describes a Document subclass registered with the registry.register_document decorator, and ELASTICSEARCH_DSL settings passed to elasticsearch-dsl-py. The Read the Docs build shows version 7.1.1 in its title while PyPI has 9.0 (uploaded 2025-07-23) and GitHub has no tag for 9.0 or 8.1 to 8.2; the highest stable GitHub release is 8.0 (2023-10-01). Because the registry major 9 is higher than the GitHub major 8, currentMajor comes from PyPI, as the write-record rule states. The PyPI project URL names github.com/sabricot/django-elasticsearch-dsl, which now serves the django-es repository; the author on PyPI and setup.py is Sabricot, and the GitHub organization django-es hosts the repository. The LICENSE file names "Apache Software License 2.0" in its first line and "Licensed under the Apache License, Version 2.0" in its body, and PyPI names the same license: one license, two wordings. The LICENSE copyright line names "Sabre", which is not recorded as maintainer. The README says the package is "built as a thin wrapper around elasticsearch-py"; elasticsearch-py is the Python client of the Elasticsearch engine and no record exists for it, so basedOn stays at django (the PyPI summary "Wrapper around elasticsearch-dsl-py for django models" states the Django parent; the README line "Django >= 4.2" is a requirement and no basedOn quote) and a reviewer decides whether the elasticsearch record applies. The PyPI 9.0 release requires elasticsearch>=9.0.0,<10.0.0, a dependency and not a basedOn statement. Runtime minimum Python 3.9 comes from requires_python of the 9.0 release and matches the README's list of supported versions. The pypistats figure is last week's downloads, read 2026-10-28; the ecosyste.ms counts are for pypi.org. The GitHub repository license field reads NOASSERTION, so the license comes from the LICENSE file and the PyPI metadata. The Read the Docs page for pip install is recorded through the quickstart's install line.

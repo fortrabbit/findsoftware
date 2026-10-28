@@ -1,0 +1,116 @@
+id: hibernate-search
+name: Hibernate Search
+status: accepted
+checkedAt: 2026-10-28
+description: Java library that indexes Hibernate ORM entities into Apache Lucene or Elasticsearch and runs full-text queries against them.
+facts:
+  - field: homepage
+    value: https://hibernate.org/search/
+    url: https://hibernate.org/search/
+    checkedAt: 2026-10-28
+    via: page
+  - field: repository
+    value: https://github.com/hibernate/hibernate-search
+    url: https://github.com/hibernate/hibernate-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://hibernate.org/search/documentation/
+    url: https://hibernate.org/search/documentation/
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: Hibernate
+    url: https://hibernate.org/search/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright © Hibernate."
+  - field: categories
+    value: [search-integration]
+    url: https://hibernate.org/search/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Full-text search for entities"
+  - field: language
+    value: Java
+    url: https://github.com/hibernate/hibernate-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://docs.hibernate.org/search/8.4/reference/en-US/html_single/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Java Runtime 17, 21 or 25"
+  - field: runtimeMin
+    value: "17"
+    url: https://github.com/hibernate/hibernate-search/blob/8.4.0.Final/pom.xml
+    checkedAt: 2026-10-28
+    via: page
+    quote: "<java-version.main.release>17</java-version.main.release>"
+  - field: installMethod
+    value: [maven]
+    url: https://docs.hibernate.org/search/8.4/getting-started/orm/en-US/html_single/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The Hibernate Search artifacts can be found in Maven’s Central Repository"
+  - field: mavenCoordinates
+    value: org.hibernate.search:hibernate-search-mapper-orm
+    url: https://repo1.maven.org/maven2/org/hibernate/search/hibernate-search-mapper-orm/maven-metadata.xml
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/hibernate/hibernate-search/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Apache License version 2.0 (Apache-2.0)"
+  - field: currentMajor
+    value: 8
+    url: https://github.com/hibernate/hibernate-search/releases/tag/8.4.0.Final
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-27
+    url: https://github.com/hibernate/hibernate-search/releases/tag/8.4.0.Final
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-09-28
+    url: https://github.com/hibernate/hibernate-search/releases/tag/9.0.0.Beta1
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2010
+    url: https://github.com/hibernate/hibernate-search/tree/3.3.0.Alpha1
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 537
+    url: https://github.com/hibernate/hibernate-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 65
+    url: https://github.com/hibernate/hibernate-search/graphs/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: forum
+    value: https://discourse.hibernate.org/c/hibernate-search
+    url: https://hibernate.org/search/
+    checkedAt: 2026-10-28
+    via: page
+  - field: x
+    value: https://x.com/hibernate
+    url: https://hibernate.org/search/
+    checkedAt: 2026-10-28
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/hibernate.org
+    url: https://hibernate.org/search/
+    checkedAt: 2026-10-28
+    via: page
+notFound: [hqCountry, adminUi, headlessApi, runsAs, renderingModes, paidEdition, sso, i18n, multisite, livePreview, userRoles, databases, contentStore, pluginDirectory, discord, subreddit, mastodon, newsletter, wikidata, pricingPage]
+unreadable: []
+notes: >
+  Adds full-text search to Java applications that use Hibernate ORM, with local Lucene indexes or a remote Elasticsearch or OpenSearch cluster that is configured separately; it ships no server of its own, so runsAs is not recorded. The 8.4 reference states Java Runtime 17, 21 or 25; the 8.4.0.Final pom sets the release target to 17. The homepage releases table lists 8.4 as latest stable and 9.0 as development; 9.0.0.Beta1 is the newest tag and is a beta, so it is latestPrereleaseDate. GitHub marks 9.0.0.Beta1 as its latest release; the brief's stable rule keeps currentMajor at 8. firstRelease comes from the 3.3.0.Alpha1 tag commit date (2010-07-26): GitHub lists no release before 4.4.1 (2014). It is built on Hibernate ORM (the reference heading reads "Supported frameworks when integrating into Hibernate ORM"); Hibernate ORM has no record, so basedOn is not recorded. Maintainer is the footer copyright "Hibernate."; the Commonhaus foundation appears only as a membership link, so no legal form is recorded. The Maven artifact hibernate-search-mapper-orm starts at 6.0 on Maven Central; earlier releases shipped under other artifacts, so no Maven first-upload date is recorded.

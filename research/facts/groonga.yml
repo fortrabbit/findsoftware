@@ -1,0 +1,132 @@
+id: groonga
+name: Groonga
+status: accepted
+checkedAt: 2026-10-28
+description: Open-source full-text search engine and column store, provided as a C library and as a built-in server command.
+facts:
+  - field: homepage
+    value: https://groonga.org
+    url: https://groonga.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Groonga is an open-source fulltext search engine and column store"
+  - field: repository
+    value: https://github.com/groonga/groonga
+    url: https://api.github.com/repos/groonga/groonga
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://groonga.org/docs/
+    url: https://groonga.org/docs/
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: Groonga Project
+    url: https://groonga.org/docs/characteristic.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Groonga Project"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/groonga
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: LGPL-2.1
+    url: https://groonga.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Groonga is released under the GNU Lesser General Public License version 2.1"
+  - field: language
+    value: C
+    url: https://api.github.com/repos/groonga/groonga
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-library]
+    url: https://groonga.org/docs/characteristic.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The basic functions of Groonga are provided in a C library"
+  - field: categories
+    value: [search-server]
+    url: https://groonga.org/docs/characteristic.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Groonga provides a built-in server command which supports HTTP"
+  - field: runsAs
+    value: [always-on]
+    url: https://groonga.org/docs/characteristic.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Groonga provides a built-in server command which supports HTTP"
+  - field: installMethod
+    value: [apt packages]
+    url: https://groonga.org/docs/install/ubuntu.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Register Groonga APT repository"
+  - field: installMethod
+    value: [homebrew]
+    url: https://groonga.org/docs/install/mac_os_x.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "2.2.2. Homebrew"
+  - field: installMethod
+    value: [macports]
+    url: https://groonga.org/docs/install/mac_os_x.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "install Groonga by MacPorts"
+  - field: installMethod
+    value: [build from source with cmake]
+    url: https://groonga.org/docs/install/cmake.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This document describes how to build Groonga from source with CMake"
+  - field: installMethod
+    value: [docker]
+    url: https://groonga.org/docs/install/docker.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "install Groonga image via DockerHub"
+  - field: contentStore
+    value: own database files (column store)
+    url: https://groonga.org/docs/characteristic.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Groonga is also a column-oriented database management system (DBMS)"
+  - field: firstRelease
+    value: 2009
+    url: https://api.github.com/repos/groonga/groonga/git/commits/de1fb9d64861879806b01f813503f3653464237d
+    checkedAt: 2026-10-28
+    via: api
+  - field: successorOf
+    value: Senna
+    url: https://api.github.com/repos/groonga/groonga
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-16
+    url: https://api.github.com/repos/groonga/groonga/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 16
+    url: https://api.github.com/repos/groonga/groonga/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 859
+    url: https://api.github.com/repos/groonga/groonga
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 58
+    url: https://api.github.com/repos/groonga/groonga/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [hqCountry, parent, wikidata, endoflifeId, runtime, runtimeMin, headlessApi, adminUi, basedOn, alternativeTo, forkOf, i18n, templating, sso, multisite, livePreview, userRoles, databases, renderingModes, paidEdition, pricingPage, selfHostOption, licenseModel, npmName, packagistName, pypiName, rubygemsName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmWeeklyDownloads]
+unreadable: []
+notes: >
+  Repository: groonga/groonga. Repository description says "Groonga is the successor project to Senna" (successorOf Senna, which has no record in this dataset). The project's own pages name Mroonga (MySQL storage engine), PGroonga (PostgreSQL extension) and the Ruby binding as related projects; they are separate software and are not basedOn Groonga here. firstRelease 2009 is the commit of the oldest tag in the repository (release-0.0.3, 2009-04-25, after the rename "Senna -> groonga" on 2009-01-14); the project's news pages for Groonga start with 0.7.6 in 2010, so the tag is the earliest dated source. The entries on the "News in Senna period" page (2005 and 2006) belong to Senna and are not Groonga releases. The homepage gives a 2009 copyright range for the project. The docs describe the library and the server command (characteristic page), so runsAs is always-on for the server and the library runs inside the application that links it. The HTTP interface is named as a built-in server protocol (HTTP, memcached binary protocol and Groonga Query Transfer Protocol), not as REST or GraphQL, so headlessApi is not recorded. Tokenizers include word tokenizers (MeCab when installed) and n-gram tokenizers; no language field is recorded. The documentation says the project is in C; no runtime or runtimeMin is recorded because the native build needs no runtime version. The project's license statement on the homepage is the only license wording found; the repository's COPYING file is LGPL-2.1 per the GitHub API. Contributors count is the page number of the rel=last link with per_page=1.

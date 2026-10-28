@@ -1,0 +1,47 @@
+id: google-programmable-search
+name: Programmable Search Engine
+status: hosted-service
+checkedAt: 2026-10-28
+description: Google service for creating a search engine over chosen websites, served as a Google results page or embedded in a web page.
+facts:
+  - field: homepage
+    value: https://programmablesearchengine.google.com
+    url: https://programmablesearchengine.google.com/about/
+    checkedAt: 2026-10-28
+    via: page
+  - field: docs
+    value: https://developers.google.com/custom-search/docs/overview
+    url: https://developers.google.com/custom-search/docs/overview
+    checkedAt: 2026-10-28
+    via: page
+  - field: categories
+    value: [search]
+    url: https://programmablesearchengine.google.com/about/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Help people find what they need on your website"
+  - field: maintainer
+    value: Google LLC
+    url: https://policies.google.com/terms?hl=en
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Google LLC and its subsidiaries"
+  - field: adminUi
+    value: Control Panel
+    url: https://developers.google.com/custom-search/docs/overview
+    checkedAt: 2026-10-28
+    via: page
+  - field: headlessApi
+    value: rest
+    url: https://developers.google.com/custom-search/v1/overview
+    checkedAt: 2026-10-28
+    via: page
+  - field: apiLimits
+    value: 100 search queries per day free on the Custom Search JSON API
+    url: https://developers.google.com/custom-search/v1/overview
+    checkedAt: 2026-10-28
+    via: page
+notFound: [paidEdition, hqCountry, parent, wikidata, firstRelease, currentMajor, latestReleaseDate, repository, license, licenseModel, language, runtime, runtimeMin, installMethod, runsAs, renderingModes, contentStore, databases, templating, sso, i18n, livePreview, multisite, userRoles, selfHostOption, pricingPage, endoflifeId, npmName, packagistName, pypiName, githubStargazers, contributors, npmWeeklyDownloads, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, alternativeTo, basedOn, forkOf, successorOf, importsFrom]
+unreadable: [programmablesearchengine.google.com/about/faq/ (404), programmablesearchengine.google.com/about/pricing/ (404), developers.google.com/custom-search/v1/deprecation (404)]
+notes: >
+  The developers.google.com pages return different bodies on different requests, so the sentences quoted for docs, adminUi, headlessApi and apiLimits are not kept as quotes; the URLs and the read date stand. Status: hosted-service (the search element and the Control Panel are still offered), but two API endpoints have end dates stated on Google's own pages. The Custom Search Site Restricted JSON API "will cease to serve traffic on January 8, 2025" (developers.google.com/custom-search/v1/site_restricted_api); the Custom Search JSON API "is closed to new customers" and its "service discontinuation on January 1, 2027" is stated on developers.google.com/custom-search/v1/overview. The record stays hosted-service because the search element and the Control Panel live on; the API closures are notes and a Worth knowing line. Both pages name Google's Agent Search (Vertex AI Search) as the replacement for site search; that replacement is recorded on google-agent-search, not as successorOf here, because the Element and the Control Panel continue. The maintainer is Google LLC from the consumer terms at policies.google.com/terms, which define "Google LLC and its subsidiaries"; no Google Cloud or Programmable Search legal entity page was read. The Custom Search JSON API and the Programmable Search Element are separate offerings with separate prices; the Paid Search Element (an ad-free version of the search element) is a plan tier and no paidEdition; the overview names four offerings (Standard, Non-profit, Paid Search Element and Custom Search JSON API) and they are not split into candidates. The Site Restricted JSON API's successor page on Google Cloud (Agent Search) is noted here only for the migration path.

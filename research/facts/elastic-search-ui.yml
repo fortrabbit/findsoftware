@@ -1,0 +1,111 @@
+id: elastic-search-ui
+name: Search UI
+status: accepted
+checkedAt: 2026-10-28
+description: JavaScript library from Elastic for building search interfaces on Elasticsearch and other search APIs, usable with React or plain JavaScript.
+facts:
+  - field: homepage
+    value: https://docs.elastic.co/search-ui
+    url: https://docs.elastic.co/search-ui
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Search UI is a JavaScript library from Elastic"
+  - field: repository
+    value: https://github.com/elastic/search-ui
+    url: https://api.github.com/repos/elastic/search-ui
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://docs.elastic.co/search-ui
+    url: https://docs.elastic.co/search-ui
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Reference documentation : API docs, tutorials, and usage guides"
+  - field: maintainer
+    value: Elasticsearch B.V.
+    url: https://docs.elastic.co/search-ui
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Elasticsearch B.V. All Rights Reserved"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/elastic
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2019
+    url: https://registry.npmjs.org/@elastic/search-ui
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-ui]
+    url: https://docs.elastic.co/search-ui
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Search UI is a JavaScript library from Elastic"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/elastic/search-ui
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/elastic/search-ui
+    checkedAt: 2026-10-28
+    via: api
+  - field: installMethod
+    value: [npm]
+    url: https://github.com/elastic/search-ui
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm install @elastic/search-ui @elastic/react-search-ui @elastic/react-search-ui-views"
+  - field: installMethod
+    value: [yarn]
+    url: https://github.com/elastic/search-ui
+    checkedAt: 2026-10-28
+    via: page
+    quote: "yarn add @elastic/search-ui @elastic/react-search-ui @elastic/react-search-ui-views"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/elastic/search-ui/releases/tags/v1.24.2
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2025-08-05
+    url: https://api.github.com/repos/elastic/search-ui/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: "@elastic/search-ui"
+    url: https://registry.npmjs.org/@elastic/search-ui/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 51392
+    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@elastic/search-ui
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1982
+    url: https://api.github.com/repos/elastic/search-ui
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 58
+    url: https://api.github.com/repos/elastic/search-ui/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 18
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@elastic%2Fsearch-ui
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 148
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@elastic%2Fsearch-ui
+    checkedAt: 2026-10-28
+    via: api
+notFound: [hqCountry, maintainerType, runtime, runtimeMin, runsAs, renderingModes, basedOn, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, parent, forkOf, successorOf, alternativeTo, wikidata, pricingPage, paidEdition, licenseModel, endoflifeId, latestPrereleaseDate, packagistName, pypiDownloads, packagistDownloads, pluginDirectory, pluginCount, starters, usageShare, reportedInstalls, forum, discord, subreddit, mastodon, bluesky, x, newsletter, sourcePublic]
+unreadable: []
+notes: >
+  The docs URL docs.elastic.co/search-ui redirects to elastic.co/docs/solutions/search/site-or-app/search-ui. Monorepo: the npm figures and npmName are for @elastic/search-ui, the core package the install line names first; the React and Views packages are separate packages and their downloads are not counted. The npm figure counts downloads of the core package from every install route, as the install docs name it. GitHub reports TypeScript as the repository language; the docs call the library JavaScript, so the record lists TypeScript from the repository and the docs wording stays in the description. Elastic describes the library as headless: it separates logic from presentation, offers built-in React components or custom ones built from the ground up, keeps searches, paging and filters in the URL, and works with React, vanilla JavaScript or any front-end framework; the docs name no built-in basedOn parent, so basedOn is absent, and no page says it runs in the browser, so runsAs is absent, a reviewer decision. Connectors named on the docs: Elasticsearch and Elastic Site Search (Swiftype). The docs say "Important Enterprise Search is not available in Elastic Stack 9.0+", a statement about Enterprise Search, not this library. The App Search and Workplace Search tutorials are marked deprecated; that is a tutorial status, not an end signal. Releases: the highest stable GitHub release is v1.24.2 (2025-08-05), major 1; the oldest GitHub release is v0.5.0 (2019-03-06) and the oldest npm upload 0.1.0 (2019-01-03), so firstRelease is 2019 either way. The README says "Maintained by Elastic, the team behind Elasticsearch." The legal name Elasticsearch B.V. is from the docs footer copyright line; the privacy statement names Elastic N.V. as the group company, not recorded as parent because no page states that Elasticsearch B.V. is its subsidiary. The terms of use name offices in Amsterdam, which is no registered-seat statement, so hqCountry is absent.

@@ -1,0 +1,121 @@
+id: docfind
+name: docfind
+status: accepted
+checkedAt: 2026-10-28
+description: Rust document search engine that compiles a full-text index into a WebAssembly module for search in the browser.
+facts:
+  - field: homepage
+    value: https://microsoft.github.io/docfind/
+    url: https://microsoft.github.io/docfind/
+    checkedAt: 2026-10-28
+    via: page
+  - field: repository
+    value: https://github.com/microsoft/docfind
+    url: https://github.com/microsoft/docfind
+    checkedAt: 2026-10-28
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/microsoft/docfind
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Microsoft Corporation
+    url: https://github.com/microsoft/docfind/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) Microsoft Corporation"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/microsoft
+    checkedAt: 2026-10-28
+    via: api
+  - field: hqCountry
+    value: US
+    url: https://www.microsoft.com/en-us/legal/terms-of-use
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Manufacturer is Microsoft Corporation, One Microsoft Way, Redmond, WA 98052-6399."
+  - field: firstRelease
+    value: 2025
+    url: https://api.github.com/repos/microsoft/docfind/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/microsoft/docfind/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: language
+    value: Rust
+    url: https://github.com/microsoft/docfind/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A high-performance document search engine built in Rust with WebAssembly support."
+  - field: categories
+    value: [search-index]
+    url: https://github.com/microsoft/docfind/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Build the index and generate a WASM module"
+  - field: runsAs
+    value: [browser]
+    url: https://github.com/microsoft/docfind/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Compile to WASM for browser-based search with no server required"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/microsoft/docfind/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Self-contained CLI tool to build a .wasm file out of a collection of documents"
+  - field: installMethod
+    value: [shell install script]
+    url: https://github.com/microsoft/docfind/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "curl -fsSL https://microsoft.github.io/docfind/install.sh | sh"
+  - field: installMethod
+    value: [PowerShell install script]
+    url: https://github.com/microsoft/docfind/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "irm https://microsoft.github.io/docfind/install.ps1 | iex"
+  - field: installMethod
+    value: [binary download from GitHub releases]
+    url: https://github.com/microsoft/docfind/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Download the binary for your platform from the latest release"
+  - field: installMethod
+    value: [build from source]
+    url: https://github.com/microsoft/docfind/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "./scripts/build.sh"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/microsoft/docfind/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2025-11-19
+    url: https://api.github.com/repos/microsoft/docfind/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 697
+    url: https://api.github.com/repos/microsoft/docfind
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 5
+    url: https://api.github.com/repos/microsoft/docfind/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [docs, runtime, basedOn, runtimeMin, renderingModes, pricingPage, paidEdition, maintainerType, endoflifeId, pluginDirectory, pluginCount, forum, discord, mastodon, bluesky, x, newsletter, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, pypiName, pypiDownloads, crateName, crateDownloads, rubygemsName, usageShare, reportedInstalls, docker, dependentPackages, dependentRepos, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, serverNeeds]
+unreadable: []
+notes: >
+  The project has no documentation site: the README on GitHub is the only documentation, and the homepage at microsoft.github.io/docfind is a demo that searches 50,000 news articles, so no docs fact is recorded. The LICENSE file is the MIT License under the line "Copyright (c) Microsoft Corporation"; GitHub reports NOASSERTION because of that leading line. The Microsoft terms page (https://www.microsoft.com/en-us/legal/terms-of-use) names "Microsoft Corporation, One Microsoft Way, Redmond, WA 98052-6399" as manufacturer; hqCountry US is recorded from that address, as for other company-address records. No registry package: crates.io and npm return 404 for docfind; the PyPI package named docfind is an unrelated project (homepage cmdeniz.dev) and is not used. The install script and binaries come from GitHub releases; releases v0.1.0 (2025-11-11) to v0.5.1 (2025-11-19) are the only releases, so firstRelease is the year of v0.1.0. The README names Rust dependencies (fst, fsst-rs, rake, wasm-bindgen) and prior art (Algolia, Typesense, Lunr.js, Stork, tinysearch); none is stated as the project's parent, so basedOn is absent. The README calls the CLI and WASM output a demo index of 50,000 AG News articles; the demo is not a hosted service. runsAs local is the CLI that builds the index on the developer's machine; the WASM output is served with the site's static files and runs in the visitor's browser. Categories: CSV lists static-site, but the README describes a search index builder, not a site generator, so static-site is not recorded. runtime is not recorded: the CLI is a self-contained binary that runs only when building the index, and the output needs no runtime on the host. Building from source needs Rust, wasm-pack and Node.js (the latter for esbuild), per the README; the prebuilt binaries need none of them.

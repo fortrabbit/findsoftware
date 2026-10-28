@@ -1,0 +1,66 @@
+id: azure-ai-search
+name: Azure AI Search
+status: stub
+checkedAt: 2026-10-28
+description: Fully managed, cloud-hosted Microsoft Azure service that connects your data to AI.
+facts:
+  - field: status
+    value: stub
+    url: https://azure.microsoft.com/en-us/products/ai-services/ai-search
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Azure AI Search is Foundry IQ."
+  - field: homepage
+    value: https://azure.microsoft.com/en-us/products/ai-services/ai-search
+    url: https://azure.microsoft.com/en-us/products/ai-services/ai-search
+    checkedAt: 2026-10-28
+    via: page
+  - field: docs
+    value: https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search
+    url: https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: Microsoft Corporation
+    url: https://www.microsoft.com/en-us/privacy/privacystatement
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Microsoft Corporation, One Microsoft Way, Redmond, Washington 98052, USA"
+  - field: maintainerType
+    value: company
+    url: https://www.microsoft.com/en-us/privacy/privacystatement
+    checkedAt: 2026-10-28
+    via: page
+  - field: hqCountry
+    value: US
+    url: https://www.microsoft.com/en-us/privacy/privacystatement
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Redmond, Washington 98052, USA"
+  - field: pricingPage
+    value: https://azure.microsoft.com/en-us/pricing/details/search/
+    url: https://azure.microsoft.com/en-us/pricing/details/search/
+    checkedAt: 2026-10-28
+    via: page
+  - field: categories
+    value: [search-server]
+    url: https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Azure AI Search is a fully managed, cloud-hosted service that connects your data to AI."
+  - field: adminUi
+    value: yes, Azure portal
+    url: https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Azure AI Search is available through the Azure portal"
+  - field: freeTier
+    value: yes, a free limited search service tier
+    url: https://learn.microsoft.com/en-us/azure/search/search-sku-tier
+    checkedAt: 2026-10-28
+    via: page
+    quote: "There is also a free, limited search service tier"
+notFound: [repository, repoOwnerType, language, runtime, license, licenseModel, currentMajor, latestReleaseDate, githubStargazers, contributors, firstRelease, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, multisite, livePreview, userRoles, sso, selfHostOption, regions, headlessApi, contentStore, databases, paidEdition, apiLimits, i18n, runsAs, renderingModes, templating, installMethod, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, x, facebook, instagram, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, endoflifeId, httpArchiveSites]
+unreadable: []
+notes: >
+  Stub: the product page says "Azure AI Search is Foundry IQ." and its pricing page is titled "Foundry IQ (Azure AI Search)", while the Learn pages say "Azure AI Search is available through the Azure portal, REST APIs, and Azure SDKs. It also underpins Foundry IQ", which describes Foundry IQ as a layer on the service. The doubt is whether the record follows the Foundry IQ name (a rename, which would make Foundry IQ the product) or stays on Azure AI Search as the service under the layer; a reviewer settles it from Microsoft's naming, or from a later page that drops one of the two statements. The record needs that decision before it can be accepted. The GitHub repository Azure/azure-sdk-for-js (npm @azure/search-documents, 290k downloads a week in the candidates row) is the SDK for the service, so no repository is recorded and its figures are not used. The service is described as cloud-hosted with no installable server, so criterion 2 is waived for hosted-service; the record is stub, not hosted-service, until the name is settled. The docs state the service connects to Microsoft Entra ID for service-to-service authentication and authorization; that is not a single sign-on feature for users and is not recorded as sso. The docs' region-support page lists region availability by feature through a preview management API and names regions only for specific features, so no regions value is recorded. The product page states no social links for the service. The Learn pages' Microsoft Corporation legal name comes from the privacy statement's controller address, since the terms page gives no company address.

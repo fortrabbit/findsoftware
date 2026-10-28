@@ -1,0 +1,89 @@
+id: amazon-cloudsearch
+name: Amazon CloudSearch
+status: stub
+checkedAt: 2026-10-28
+description: Fully managed AWS service in the cloud that sets up, manages and scales a search solution for a website or application.
+facts:
+  - field: status
+    value: stub
+    url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/what-is-cloudsearch.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Amazon CloudSearch is no longer available to new customers."
+  - field: homepage
+    value: https://aws.amazon.com/cloudsearch/
+    url: https://aws.amazon.com/cloudsearch/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Amazon CloudSearch is a fully managed custom search service"
+  - field: docs
+    value: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/what-is-cloudsearch.html
+    url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/what-is-cloudsearch.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Amazon CloudSearch is a fully managed service in the cloud"
+  - field: maintainer
+    value: Amazon Web Services, Inc.
+    url: https://aws.amazon.com/terms/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Amazon Web Services, Inc."
+  - field: maintainerType
+    value: company
+    url: https://aws.amazon.com/terms/
+    checkedAt: 2026-10-28
+    via: page
+  - field: hqCountry
+    value: US
+    url: https://aws.amazon.com/terms/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Seattle, WA 98108-1226"
+  - field: pricingPage
+    value: https://aws.amazon.com/cloudsearch/pricing/
+    url: https://aws.amazon.com/cloudsearch/pricing/
+    checkedAt: 2026-10-28
+    via: page
+  - field: categories
+    value: [search-server]
+    url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/what-is-cloudsearch.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "makes it easy to set up, manage, and scale a search solution for your website or application"
+  - field: regions
+    value: US East, US West (Oregon, N. California), EU (Ireland, Frankfurt), South America (Sao Paulo), Asia Pacific (Singapore, Tokyo, Sydney, Seoul)
+    url: https://aws.amazon.com/cloudsearch/faqs/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Amazon CloudSearch is available in the following AWS Regions"
+  - field: i18n
+    value: yes, 34 languages with per-field language configuration
+    url: https://aws.amazon.com/cloudsearch/faqs/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "34 languages, plus"
+  - field: adminUi
+    value: yes, AWS Management Console
+    url: https://aws.amazon.com/cloudsearch/faqs/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "With a few clicks in the AWS Management Console"
+  - field: x
+    value: https://x.com/awscloud
+    url: https://aws.amazon.com/cloudsearch/
+    checkedAt: 2026-10-28
+    via: page
+  - field: facebook
+    value: https://www.facebook.com/amazonwebservices
+    url: https://aws.amazon.com/cloudsearch/
+    checkedAt: 2026-10-28
+    via: page
+  - field: instagram
+    value: https://www.instagram.com/amazonwebservices/
+    url: https://aws.amazon.com/cloudsearch/
+    checkedAt: 2026-10-28
+    via: page
+notFound: [repository, repoOwnerType, language, runtime, license, licenseModel, currentMajor, latestReleaseDate, githubStargazers, contributors, firstRelease, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, multisite, livePreview, userRoles, sso, selfHostOption, headlessApi, contentStore, databases, paidEdition, freeTier, apiLimits, runsAs, renderingModes, templating, installMethod, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, endoflifeId, httpArchiveSites]
+unreadable: []
+notes: >
+  Stub on a criterion 4 doubt: the developer guide says "Amazon CloudSearch is no longer available to new customers. Existing customers of Amazon CloudSearch can continue to use the service as usual.", so a new user cannot adopt it, while the AWS Big Data Blog post on moving to Amazon OpenSearch Service states that "AWS continues to support CloudSearch and continues to invest in security and availability improvements." The record returns to hosted-service if AWS reopens the service to new customers or a reviewer rules that continued support for existing customers keeps it listed; an AWS end-of-life statement makes it discontinued. The blog names OpenSearch Service as the recommended successor, which is no end signal on its own. The FAQ states IAM integration, which is access control for AWS accounts and is not recorded as sso or userRoles. The pricing page states a free trial offer for new customers; that is not recorded as freeTier, and no prices are recorded. The FAQ lists 2011-02-01 and 2013-01-01 API versions; the record covers the service, not an API version. The developer guide's limits page holds quotas that are not recorded as apiLimits. The AWS terms name Amazon Web Services, Inc. at a Seattle, WA address for the AWS Site, which the record uses as the legal name and country. No repository is recorded: the service is closed source and the candidates row has no repository. The httpArchiveSites figure is not recorded because the HTTP Archive technology list has no entry for CloudSearch. The social links are the AWS-wide links on the product page, not links specific to CloudSearch. The FAQ regions list gives the regions as its own text; the regions field is filled from that sentence and the list is not a statement of data residency.

@@ -1,0 +1,106 @@
+id: elasticlunr
+name: Elasticlunr.js
+status: accepted
+checkedAt: 2026-10-28
+description: Lightweight full-text search engine in JavaScript for building a search index in the browser or in Node.js.
+facts:
+  - field: repository
+    value: https://github.com/weixsong/elasticlunr.js
+    url: https://api.github.com/repos/weixsong/elasticlunr.js
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Wei Song
+    url: https://raw.githubusercontent.com/weixsong/elasticlunr.js/master/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"author": "Wei Song"'
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/weixsong/elasticlunr.js
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://registry.npmjs.org/elasticlunr
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-index]
+    url: https://raw.githubusercontent.com/weixsong/elasticlunr.js/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Elasticlunr.js is a lightweight full-text search engine developed in JavaScript for browser search and offline search."
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/weixsong/elasticlunr.js
+    checkedAt: 2026-10-28
+    via: api
+  - field: runsAs
+    value: [browser]
+    url: https://raw.githubusercontent.com/weixsong/elasticlunr.js/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Elasticlunr.js is a lightweight full-text search engine developed in JavaScript for browser search and offline search."
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/weixsong/elasticlunr.js/master/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"license": "MIT"'
+  - field: installMethod
+    value: [npm]
+    url: https://raw.githubusercontent.com/weixsong/elasticlunr.js/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm install elasticlunr"
+  - field: installMethod
+    value: [source file include]
+    url: https://raw.githubusercontent.com/weixsong/elasticlunr.js/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Simply include the elasticlunr.js source file in the page that you want to use it."
+  - field: currentMajor
+    value: 0
+    url: https://registry.npmjs.org/elasticlunr/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2016-09-08
+    url: https://registry.npmjs.org/elasticlunr
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: elasticlunr
+    url: https://registry.npmjs.org/elasticlunr/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 15099
+    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/elasticlunr
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 2064
+    url: https://api.github.com/repos/weixsong/elasticlunr.js
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 29
+    url: https://api.github.com/repos/weixsong/elasticlunr.js/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 83
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/elasticlunr
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 1603
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/elasticlunr
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, docs, maintainerType, runtime, runtimeMin, renderingModes, basedOn, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, parent, forkOf, successorOf, alternativeTo, wikidata, pricingPage, paidEdition, licenseModel, endoflifeId, latestPrereleaseDate, packagistName, pypiDownloads, packagistDownloads, pluginDirectory, pluginCount, starters, usageShare, reportedInstalls, forum, discord, subreddit, mastodon, bluesky, x, newsletter, sourcePublic]
+unreadable: []
+notes: >
+  The README opens with "As I'm now focusing on new domain, hope that someone who interested on this project could help to maintain this repository", a call for a new maintainer, which is no end signal, so the status stays accepted; the import's four-year rule hides the record. The doubt is whether the project is still maintained; a new maintainer or release would settle it. The homepage elasticlunr.com answers over plain http only (https does not connect), so it is not linked; the API documentation and example at elasticlunr.com are on the same host and are not linked either. The npm package homepage points to weixsong.github.io, the author's blog, which is not the project's site. The latest npm release is 0.9.5 (2016-09-08); the package.json on the default branch says 0.9.6 while npm's latest is 0.9.5, so the release date comes from the registry. The GitHub repository has no releases and 30 tags; the last push is 2022-12-10. The README says the library builds an index ahead of time and loads it on the client side for static web pages and offline document sets, that fields are chosen with addField when the index is created, that query-time boosting is a feature, and that it is supported in all modern browsers; browsers without ES5 need a shim. Node.js use is documented with npm install elasticlunr. The README says the library is developed based on Lunr.js and is more flexible, with query-time boosting and field search; Lunr.js has no record in this dataset, so no basedOn. The npm figure counts the elasticlunr package only, not the lunr-languages add-ons. Major 0 is the registry major, since the project has no 1.x release.

@@ -1,0 +1,128 @@
+id: django-haystack
+name: Haystack
+status: accepted
+checkedAt: 2026-10-28
+description: Django app that puts one search API in front of pluggable backends such as Solr, Elasticsearch, Whoosh and Xapian.
+facts:
+  - field: homepage
+    value: https://haystacksearch.org/
+    url: https://haystacksearch.org/
+    checkedAt: 2026-10-28
+    via: page
+  - field: repository
+    value: https://github.com/django-haystack/django-haystack
+    url: https://github.com/django-haystack/django-haystack
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://django-haystack.readthedocs.io/en/master/
+    url: https://django-haystack.readthedocs.io/en/master/
+    checkedAt: 2026-10-28
+    via: page
+  - field: sourcePublic
+    value: true
+    url: https://github.com/django-haystack/django-haystack
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Daniel Lindsley
+    url: https://github.com/django-haystack/django-haystack/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2009-2013, Daniel Lindsley."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/django-haystack
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2009
+    url: https://pypi.org/pypi/django-haystack/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/django-haystack/django-haystack/blob/v3.4.0/pyproject.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'license = "BSD-3-Clause"'
+  - field: language
+    value: Python
+    url: https://github.com/django-haystack/django-haystack/blob/v3.4.0/pyproject.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Programming Language :: Python :: 3.9"
+  - field: runtime
+    value: [python]
+    url: https://github.com/django-haystack/django-haystack/blob/v3.4.0/pyproject.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'requires-python = ">=3.9"'
+  - field: runtimeMin
+    value: "3.9"
+    url: https://github.com/django-haystack/django-haystack/blob/v3.4.0/pyproject.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'requires-python = ">=3.9"'
+  - field: categories
+    value: [search-integration]
+    url: https://django-haystack.readthedocs.io/en/master/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Haystack provides modular search for Django."
+  - field: basedOn
+    value: [django]
+    url: https://github.com/django-haystack/django-haystack/blob/v3.4.0/pyproject.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Pluggable search for Django."
+  - field: installMethod
+    value: [pip]
+    url: https://django-haystack.readthedocs.io/en/master/tutorial.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Use your favorite Python package manager to install the app from PyPI"
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/django-haystack/django-haystack/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-06-04
+    url: https://api.github.com/repos/django-haystack/django-haystack/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 3723
+    url: https://api.github.com/repos/django-haystack/django-haystack
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 191
+    url: https://api.github.com/repos/django-haystack/django-haystack/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiName
+    value: django-haystack
+    url: https://pypi.org/pypi/django-haystack/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiDownloads
+    value: 211566 (last month)
+    url: https://pypistats.org/api/packages/django-haystack/recent
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 30
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-haystack
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 4650
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-haystack
+    checkedAt: 2026-10-28
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, maintainerType, endoflifeId, pluginDirectory, pluginCount, forum, discord, mastodon, bluesky, x, newsletter, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, usageShare, reportedInstalls, docker, serverNeeds]
+unreadable: []
+notes: >
+  Name is "Haystack" in the README title and homepage; the registry id is django-haystack. The name collides with deepset's Haystack LLM framework, which is not this project. License: pyproject and the LICENSE file state BSD-3-Clause (GitHub reports NOASSERTION because the LICENSE text is a custom wording of the BSD terms); the README and homepage say "BSD licensed". The LICENSE file also says the software was MIT-licensed before April 17, 2009; that older license is not recorded in the license field. Maintainer is the copyright holder named in LICENSE and the pyproject author. Install from PyPI; the tutorial also gives pip install "django-haystack[elasticsearch]" for the Elasticsearch extra. The search engine (Solr, Elasticsearch) runs as its own service that the Haystack app connects to; no page states a runsAs value for the app itself. The readthedocs master pages show "Haystack 2.5.0 documentation" and the homepage news stops at 2.6.0 (2017); the release figures come from GitHub and PyPI, which show 3.4.0. The homepage and docs carry an https link (haystacksearch.org answers over https). Mailing list at groups.google.com/group/django-haystack is named in the README and homepage ("There is a mailing list available for general discussion"), not recorded as forum. Search backends the README names (coined searchBackends, kept in notes): Solr, Elasticsearch, Whoosh, Xapian, from "plug in different search backends (such as Solr, Elasticsearch, Whoosh, Xapian, etc.)". firstRelease is the oldest PyPI upload (1.0.0-rc1, 2009-11-23) because it predates the oldest GitHub release (v2.2.0, 2014). pypiDownloads is pypistats last_month; last_week was 64176 on the same day.

@@ -1,0 +1,1 @@
+Fuse.js is a fuzzy-search library written in TypeScript with no dependencies. The README says it works in the browser and on the server. The [documentation](https://fusejs.io/) holds the API reference, the configuration options and the interactive demos.

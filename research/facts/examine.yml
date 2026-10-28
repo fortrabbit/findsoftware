@@ -1,0 +1,123 @@
+id: examine
+name: Examine
+status: accepted
+checkedAt: 2026-10-28
+description: .NET library that indexes and searches data through a fluent API, wrapping the Lucene.NET search engine.
+facts:
+  - field: homepage
+    value: https://shazwazza.github.io/Examine/
+    url: https://shazwazza.github.io/Examine/
+    checkedAt: 2026-10-28
+    via: page
+  - field: repository
+    value: https://github.com/Shazwazza/Examine
+    url: https://api.github.com/repos/Shazwazza/Examine
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://shazwazza.github.io/Examine/
+    url: https://shazwazza.github.io/Examine/
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: Shannon Deminick
+    url: https://raw.githubusercontent.com/Shazwazza/Examine/dev/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2026 Shannon Deminick"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/Shazwazza/Examine/dev/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2026 Shannon Deminick"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/Shazwazza
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: C#
+    url: https://api.github.com/repos/Shazwazza/Examine
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [dotnet]
+    url: https://shazwazza.github.io/Examine/
+    checkedAt: 2026-10-28
+    via: page
+    quote: ".NET 8.0, .NET 9.0, .NET 10.0"
+  - field: runtimeMin
+    value: "8.0"
+    url: https://github.com/Shazwazza/Examine/blob/v4.0.1/src/Directory.Build.props
+    checkedAt: 2026-10-28
+    via: page
+    quote: "<TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>"
+  - field: categories
+    value: [search-library]
+    url: https://github.com/Shazwazza/Examine/blob/dev/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Examine allows you to index and search data easily"
+  - field: installMethod
+    value: NuGet package via Install-Package
+    url: https://github.com/Shazwazza/Examine/blob/dev/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "PM> Install-Package Examine"
+  - field: installMethod
+    value: NuGet package via dotnet add package
+    url: https://shazwazza.github.io/Examine/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "dotnet add package Examine --version 4.0.0"
+  - field: nugetName
+    value: Examine
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:Examine
+    checkedAt: 2026-10-28
+    via: api
+  - field: nugetDownloads
+    value: 23600018 total
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:Examine
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/Shazwazza/Examine
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/Shazwazza/Examine/dev/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/Shazwazza/Examine/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-07
+    url: https://api.github.com/repos/Shazwazza/Examine/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2013"
+    url: https://api.nuget.org/v3/registration5-semver1/examine/index.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 412
+    url: https://api.github.com/repos/Shazwazza/Examine
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 30
+    url: https://api.github.com/repos/Shazwazza/Examine/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, wikidata, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, hqCountry, usageShare, reportedInstalls, npmName, packagistName, pypiDownloads, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, hostedOffering, regions, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  Status is accepted per the CSV; the repository is not archived and the NuGet package is not deprecated. Highest stable GitHub release is v4.0.1 (2026-10-07), so currentMajor is 4; v4.0.0-beta.7 (2026-06-07) is older than the release and is no latestPrereleaseDate. firstRelease is 2013: the NuGet registration shows the first upload 0.1.51.2941 on 2013-04-04, and the oldest GitHub release is v0.1.52.2941 (2013-09-12). The CSV row says the library is an index library under Umbraco; neither the README nor the documentation site names Umbraco, so no basedOn Umbraco is recorded and the umbraco category is not used. The project's own pages say Examine wraps the Lucene.Net engine, which is a parent with no record in this dataset, so basedOn is not recorded (Lucene.Net, quote "wraps the Lucene.Net indexing/searching engine"). The target frameworks are net8.0, net9.0 and net10.0 in src/Directory.Build.props at v4.0.1; the runtimeMin 8.0 is the lowest one. The maintainer is named as Shannon Deminick by the LICENSE copyright line and the Company and Authors fields of Directory.Build.props; no legal form or country is stated, so hqCountry is absent. The GitHub owner profile lists a location, which is not a company seat and is not recorded. The NuGet figure is the package Examine's totalDownloads on the day of the check.

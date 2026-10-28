@@ -1,0 +1,109 @@
+id: elasticlunr-rs
+name: elasticlunr-rs
+status: stub
+checkedAt: 2026-10-28
+description: Rust crate that ports elasticlunr.js to build search indexes compatible with it, for generating static document search indexes.
+facts:
+  - field: repository
+    value: https://github.com/mattico/elasticlunr-rs
+    url: https://api.github.com/repos/mattico/elasticlunr-rs
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://docs.rs/elasticlunr-rs
+    url: https://raw.githubusercontent.com/mattico/elasticlunr-rs/master/Cargo.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'documentation = "https://docs.rs/elasticlunr-rs"'
+  - field: maintainer
+    value: Matt Ickstadt
+    url: https://raw.githubusercontent.com/mattico/elasticlunr-rs/master/Cargo.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'authors = ["Matt Ickstadt'
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/mattico/elasticlunr-rs
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://crates.io/api/v1/crates/elasticlunr-rs
+    checkedAt: 2026-10-28
+    via: api
+  - field: basedOn
+    value: elasticlunr
+    url: https://raw.githubusercontent.com/mattico/elasticlunr-rs/master/Cargo.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A partial port of elasticlunr.js to Rust"
+  - field: categories
+    value: [search-index]
+    url: https://raw.githubusercontent.com/mattico/elasticlunr-rs/master/Cargo.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: "for generating static document search indexes"
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/mattico/elasticlunr-rs
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [rust]
+    url: https://crates.io/api/v1/crates/elasticlunr-rs
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtimeMin
+    value: "1.60.0"
+    url: https://crates.io/api/v1/crates/elasticlunr-rs/3.1.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: "(MIT OR Apache-2.0) AND MIT"
+    url: https://crates.io/api/v1/crates/elasticlunr-rs/3.1.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/mattico/elasticlunr-rs/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-26
+    url: https://crates.io/api/v1/crates/elasticlunr-rs/3.1.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: crateName
+    value: elasticlunr-rs
+    url: https://crates.io/api/v1/crates/elasticlunr-rs
+    checkedAt: 2026-10-28
+    via: api
+  - field: crateDownloads
+    value: 1997683 recent (90 days)
+    url: https://crates.io/api/v1/crates/elasticlunr-rs
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 58
+    url: https://api.github.com/repos/mattico/elasticlunr-rs
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 19
+    url: https://api.github.com/repos/mattico/elasticlunr-rs/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 9
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/elasticlunr-rs
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 472
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/elasticlunr-rs
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, maintainerType, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, parent, forkOf, successorOf, alternativeTo, wikidata, pricingPage, paidEdition, licenseModel, endoflifeId, latestPrereleaseDate, installMethod, npmName, npmWeeklyDownloads, packagistName, pypiDownloads, packagistDownloads, pluginDirectory, pluginCount, starters, usageShare, reportedInstalls, forum, discord, subreddit, mastodon, bluesky, x, newsletter, sourcePublic, hqCountry]
+unreadable: []
+notes: >
+  Doubt on criterion 3: neither the README nor the docs.rs page for 3.1.0 states how to add the crate (no cargo add or Cargo.toml dependency line); the README shows only a code example. A documented install line in the README or on docs.rs would settle it. Maintenance: the README badge and text say "This library is passively maintained to support existing users. New users are encouraged to use a different library such as tinysearch or Pagefind". Passive maintenance with a 2026 release is not recorded as an end; a reviewer decides whether the recommendation of other libraries is a successor statement. The GitHub repository has one release, v3.0.0 (2022-06-02); the crates.io registry carries 3.1.0 (2026-07-26), the newest stable version, and the same major 3. The crates.io first upload is 0.1.0 (2017-11-12). The repository has no homepage. The crate downloads figure is the 90-day count; the all-time total at the same check is 9,504,746. The README says the code includes elasticlunr.js code "Copyright (C) 2017 by Wei Song, used under license" and the license is dual Apache-2.0 and MIT under the README, with the crate expression "(MIT OR Apache-2.0) AND MIT" as stated; GitHub detects Apache-2.0 for the repository, which is not recorded as a second license statement. The 3.1.0 crate lists rust-version 1.60.0, which the README calls the MSRV. The README says the library is intended for generating compatible search indices, and its example writes the index out as pretty JSON; it names no runtime location, so no runsAs. The author's email address in Cargo.toml is not recorded.

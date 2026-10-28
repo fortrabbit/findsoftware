@@ -1,0 +1,120 @@
+id: gofound
+name: GoFound
+status: accepted
+checkedAt: 2026-10-28
+description: Full-text search engine written in Go, run as a standalone HTTP server with its own index and admin interface.
+facts:
+  - field: repository
+    value: https://github.com/sea-team/gofound
+    url: https://api.github.com/repos/sea-team/gofound
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/sea-team/gofound/tree/main/docs
+    url: https://github.com/sea-team/gofound/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "## 文档"
+  - field: maintainer
+    value: sea-team
+    url: https://api.github.com/repos/sea-team/gofound
+    checkedAt: 2026-10-28
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/sea-team
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/sea-team/gofound
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/sea-team/gofound
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-server]
+    url: https://github.com/sea-team/gofound/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "一个golang实现的全文检索引擎"
+  - field: runtime
+    value: [go binary]
+    url: https://github.com/sea-team/gofound/blob/main/docs/compile.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "编译之前需要安装对于的golang版本"
+  - field: runtimeMin
+    value: "1.18"
+    url: https://github.com/sea-team/gofound/blob/v1.4.1/go.mod
+    checkedAt: 2026-10-28
+    via: page
+    quote: "go 1.18"
+  - field: installMethod
+    value: [binary download, compile from source, docker]
+    url: https://github.com/sea-team/gofound/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "二进制文件下载"
+  - field: installMethod
+    value: [docker]
+    url: https://github.com/sea-team/gofound/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "docker build -t gofound ."
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/sea-team/gofound/blob/main/docs/example.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "启动成后，就可以调用"
+  - field: contentStore
+    value: leveldb
+    url: https://github.com/sea-team/gofound/blob/main/docs/storage.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "存储文件采用的是leveldb存储"
+  - field: adminUi
+    value: yes, web admin built with vue, element-ui and vite
+    url: https://github.com/sea-team/gofound/blob/main/docs/compile.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "admin基于vue+element-ui+vite"
+  - field: alternativeTo
+    value: [elasticsearch]
+    url: https://github.com/sea-team/gofound/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "和ES比较"
+  - field: firstRelease
+    value: 2022
+    url: https://api.github.com/repos/sea-team/gofound/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2023-04-10
+    url: https://api.github.com/repos/sea-team/gofound/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/sea-team/gofound/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1595
+    url: https://api.github.com/repos/sea-team/gofound
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 13
+    url: https://api.github.com/repos/sea-team/gofound/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, hqCountry, parent, wikidata, endoflifeId, npmName, packagistName, pypiName, licenseModel, databases, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, templating, renderingModes, paidEdition, pricingPage, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmWeeklyDownloads]
+unreadable: []
+notes: >
+  The repository is sea-team/gofound; newpanjing/gofound redirects to it (GitHub 301) and the README's release links still point at newpanjing. The README names newpanjing as lead (负责人) and sea-team is the GitHub organisation; no legal name or country appears in the sources, so maintainer is the organisation name. No homepage: the project's README gives only a demo page (simpleui.72wo.com) and an admin demo IP, and the sea-team org blog (simpleui.88cto.com) is not the project's site. Last commit on the default branch is 2024-05-27 (api); latest stable release v1.4.1 is 2023-04-10. The README says the project is built on golang-jieba for Chinese word segmentation and uses leveldb for persistence (docs/index.md and docs/storage.md); the go.mod dependencies (gin, gojieba, goleveldb) are not recorded as basedOn. Official language SDKs for Java, Python and Node.js are separate repositories (gofound-java, gofound-python, gofound-nodejs) and no SDK figures are recorded here. The docs and the README are in Chinese; the HTTP API is documented in docs/api.md and its style (REST or other) is not named in the pages read, so headlessApi is not recorded. The listed user sites in the README are not adoption figures recorded here.

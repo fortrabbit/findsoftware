@@ -1,0 +1,95 @@
+id: drupal-search-api
+name: Search API
+status: accepted
+checkedAt: 2026-10-28
+description: Drupal module that provides a framework for creating searches on Drupal entities, backed by a search server or Drupal's own database.
+facts:
+  - field: homepage
+    value: https://www.drupal.org/project/search_api
+    url: https://www.drupal.org/project/search_api
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This module provides a framework for easily creating searches on any entity known to Drupal"
+  - field: repository
+    value: https://git.drupalcode.org/project/search_api
+    url: https://www.drupal.org/project/search_api
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Source code"
+  - field: docs
+    value: https://www.drupal.org/docs/contributed-modules/search-api
+    url: https://www.drupal.org/project/search_api
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Documentation for Search API 8.x+"
+  - field: maintainer
+    value: drunken monkey
+    url: https://www.drupal.org/project/search_api
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Created by drunken monkey on 5 May 2010"
+  - field: firstRelease
+    value: 2010
+    url: https://updates.drupal.org/release-history/search_api/7.x
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-integration]
+    url: https://www.drupal.org/project/search_api
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This module provides a framework for easily creating searches on any entity known to Drupal"
+  - field: basedOn
+    value: drupal
+    url: https://www.drupal.org/project/search_api
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Works with Drupal: ^10.3 || ^11 || ^12"
+  - field: language
+    value: PHP
+    url: https://packages.drupal.org/files/packages/8/p2/drupal/search_api.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://packages.drupal.org/files/packages/8/p2/drupal/search_api.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: GPL-2.0-or-later
+    url: https://git.drupalcode.org/project/search_api/-/raw/8.x-1.42/composer.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"license": "GPL-2.0-or-later"'
+  - field: installMethod
+    value: [composer]
+    url: https://www.drupal.org/project/search_api
+    checkedAt: 2026-10-28
+    via: page
+    quote: "composer require 'drupal/search_api:^1.42'"
+  - field: currentMajor
+    value: 1
+    url: https://updates.drupal.org/release-history/search_api/8.x
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-11
+    url: https://updates.drupal.org/release-history/search_api/8.x
+    checkedAt: 2026-10-28
+    via: api
+  - field: pluginDirectory
+    value: https://www.drupal.org/project/search_api/ecosystem
+    url: https://www.drupal.org/project/search_api
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Projects that extend this"
+  - field: reportedInstalls
+    value: 214878
+    url: https://www.drupal.org/project/search_api
+    checkedAt: 2026-10-28
+    via: page
+    quote: "214,878 sites report using this module"
+notFound: [maintainerType, repoOwnerType, runtimeMin, runsAs, renderingModes, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, githubStargazers, contributors, npmName, packagistName, npmWeeklyDownloads, packagistDownloads, pypiDownloads, endoflifeId, latestPrereleaseDate, pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, starters, usageShare, forum, discord, subreddit, mastodon, bluesky, x, newsletter, dependentPackages, dependentRepos, sourcePublic]
+unreadable: []
+notes: >
+  Drupal module on drupal.org, repository on git.drupalcode.org (GitLab, no GitHub mirror, so no GitHub figures). The project's declared "Home page" link is drunkenmonkey.at/topic/search-api, the maintainer's own site; homepage is the drupal.org project page instead, a reviewer decision. Maintainers listed on the project page are borisson_ and drunken monkey; the record names drunken monkey as the creator. Release history from updates.drupal.org: 8.x-1.42 released 2026-10-11 is the highest stable release, major 1 (the 8.x in the version string is the Drupal core line). The 7.x line starts 2010-08-19 (7.x-1.0-beta1), the oldest release in the repository. The project page shows 214,878 sites, the CSV row had 170,882. Requirements from the project page: the Views module for the Views integration and the Facets module for facets, plus at least one search backend module. The Database search module in the project "indexes and searches content using Drupal's own database" and is meant for testing and smaller sites. Named backends on the page are Solr and Elasticsearch. The composer.json at 8.x-1.42 has no php constraint, so no runtimeMin. Language and runtime come from the Drupal composer package metadata, as for drupal-commerce. Security advisories cover stable releases. The project page says the Search API does not provide access restrictions on its own: keeping only accessible items in an index or in results is the site owner's responsibility, with node access checks available as a data alteration. The release history at updates.drupal.org states maintenance status "Actively maintained".

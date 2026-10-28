@@ -1,0 +1,1 @@
+fuzzysort is a fuzzy-search library for JavaScript that fuzzy-matches search text against strings and against object properties, with scores and highlighting. It is installed with npm, and a browser build can be imported from jsDelivr. The README is the only documentation in the repository, and the project links a demo page from it.

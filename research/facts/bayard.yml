@@ -1,0 +1,103 @@
+id: bayard
+name: Bayard
+status: accepted
+checkedAt: 2026-10-28
+description: Full-text search and indexing server written in Rust, with cluster membership discovery and gRPC and REST endpoints.
+facts:
+  - field: repository
+    value: https://github.com/mosuka/bayard
+    url: https://api.github.com/repos/mosuka/bayard
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/mosuka/bayard/tree/main/docs
+    url: https://raw.githubusercontent.com/mosuka/bayard/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Getting Started"
+  - field: maintainer
+    value: Minoru Osuka
+    url: https://raw.githubusercontent.com/mosuka/bayard/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2022 Minoru Osuka."
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/mosuka
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/mosuka/bayard
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-server]
+    url: https://raw.githubusercontent.com/mosuka/bayard/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Bayard is a full-text search and indexing server"
+  - field: runtime
+    value: [rust binary]
+    url: https://raw.githubusercontent.com/mosuka/bayard/main/docs/build.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "cargo build"
+  - field: installMethod
+    value: [compile from source with cargo build]
+    url: https://raw.githubusercontent.com/mosuka/bayard/main/docs/build.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "cargo build"
+  - field: runsAs
+    value: [always-on]
+    url: https://raw.githubusercontent.com/mosuka/bayard/main/docs/getting_started.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "start Bayard on a single node and then use that node to perform basic indexing and searching"
+  - field: headlessApi
+    value: [rest]
+    url: https://raw.githubusercontent.com/mosuka/bayard/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Bayard provides endpoints through gRPC and RESTful API."
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/mosuka/bayard
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/mosuka/bayard/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2019"
+    url: https://api.github.com/repos/mosuka/bayard/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/mosuka/bayard/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2022-08-03
+    url: https://api.github.com/repos/mosuka/bayard/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1868
+    url: https://api.github.com/repos/mosuka/bayard
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 13
+    url: https://api.github.com/repos/mosuka/bayard/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, renderingModes, contentStore, databases, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, supportedVersions, runtimeMin, outputDir, npmName, packagistName, pypiDownloads, crateName, crateDownloads, npmWeeklyDownloads, dependentPackages, dependentRepos, httpArchiveSites, hostedOffering, lastCommitDate]
+unreadable: [https://bayard-search.github.io/bayard/ (404, GitHub Pages site not found)]
+notes: >
+  No project homepage: the GitHub homepage field is empty, the Cargo.toml homepage points at the repository, and the GitHub Pages address the Cargo.toml documentation field names answers 404. Repo-only record, so no homepage fact. The license is MIT in the GitHub API, the LICENSE file and Cargo.toml; all three agree, so one statement is recorded. The highest stable GitHub release is v0.9.0 (2022-08-03); the last push to the default branch is 2023-03-06, and the repository is not archived. The Cargo.toml version (0.9.0) matches that release. The crate named bayard exists on crates.io, but the install docs name only cargo build from source, so no crate figure is recorded. The Dockerfile builds from rust:1.62.1 but no image is published by the project, so no docker field. The build needs protoc (protobuf-compiler), stated in docs/build.md. The README calls the server "Multilingual support" among its features; the analyzers page lists lindera (Chinese, Japanese, Korean) and stemmers for 18 languages, but no i18n field is recorded because that field describes localization of a CMS. The README says the server is a "master node-less cluster" with gossip-based membership discovery over the SWIM protocol and index sharding and replication; these are features, not fields. Tantivy is a dependency in bayard/Cargo.toml, but no page names it as the base, so basedOn is absent. The data directory holds index files on disk (docs/getting_started.md shows a directory tree); the page does not name a storage kind, so contentStore is absent. Release age: the latest release is more than four years before the check date, so the import will move this record to stub on its own; status is left at accepted per AGENTS.md.

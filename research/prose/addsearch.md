@@ -1,0 +1,3 @@
+AddSearch is a hosted site search service run by AddSearch Oy, a company in Espoo, Finland. The service indexes a website through its crawler or through an API, and the site adds it with script tags in its source code. Account users are managed inside the service, and the terms describe an administrator portal for it. The [documentation](https://www.addsearch.com/docs/) describes the service's features for indexing and search.
+
+The record covers the hosted service only. The client libraries that AddSearch publishes on GitHub and npm are separate code, and their figures are not part of this record.
