@@ -14,6 +14,12 @@ import type { Facet, ProviderRow } from './facets';
  * Two sentences and no more. Three facts about a page are read; six are skipped,
  * and a wall of counted nouns reads as filler however true each number is.
  */
+/** How many of the rows the default view shows, where it hides any: the list under the sentence starts at that number. */
+const momentumSentence = (rows: ProviderRow[]) => {
+  const shown = rows.filter((row) => !row.quiet).length;
+  return shown < rows.length ? `${shown} of them have momentum and show by default.` : undefined;
+};
+
 export function summarise(matches: ProviderRow[], facets: Facet[], facetId: string, subject: string): string {
   return valueSentences(matches, facets, facetId, subject).join(' ');
 }
@@ -96,6 +102,7 @@ export function valueSentences(matches: ProviderRow[], facets: Facet[], facetId:
 
   return [
     `${count} ${noun} ${subject}, listed alphabetically.`,
+    momentumSentence(matches),
     context && `${context[0]!.toUpperCase()}${context.slice(1)}.`,
   ].filter((sentence): sentence is string => Boolean(sentence));
 }
@@ -162,6 +169,7 @@ function pairSentences(page: PairSummary, facets: Facet[]): string[] {
 
   return [
     `${count} ${noun} ${page.aSubject} and ${page.bSubject}, listed alphabetically.`,
+    momentumSentence(matches),
     `That is ${count} of the ${wider.total} that ${wider.subject}.`,
     contrast && `${contrast.label} on ${contrast.here} of them, against ${contrast.there} of the ${wider.total}.`,
   ].filter((sentence): sentence is string => Boolean(sentence));

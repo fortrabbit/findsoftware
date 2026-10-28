@@ -11,7 +11,7 @@ FindSoftware lists the tools web creators build with: content management systems
 
 ## Rules
 
-- **No ranking.** The order is alphabetical. Stars and downloads are recorded as facts with a date, never used to sort or filter.
+- **No ranking.** The order is alphabetical. Stars and downloads are recorded as facts with a date, never used to sort. [Momentum](#momentum) decides which records the default view shows.
 - **Absent means unknown.** A blank field was not found, not a "no".
 - **Every fact has a source.** The numbered list at the bottom of each record says where it came from and when.
 - **No affiliate links.**
@@ -25,9 +25,23 @@ GitHub stars, package downloads and plugin counts are recorded because they show
 - **Downloads** include CI runs, mirrors and installs pulled in as a dependency of another package. Registries count different periods: npm per week, Packagist in total.
 - **Plugin counts** depend on what each directory lists: some include themes and abandoned entries, some do not.
 
-Each figure carries the date it was read. Nothing on this site sorts, filters or ranks by them, except the usage band below.
+Each figure carries the date it was read. Nothing on this site sorts or ranks by them. The usage band and momentum below are the two measures built from them.
 
 The usage band on the [Usage](/usage/) page puts each record in one of five bands, from its place among the records holding each of its figures, averaged and cut into fifths. It is rough: the figures cover different periods, and a record with fewer figures rests on fewer of them. No band means not measured, not unused. The band counts use, not quality.
+
+## Momentum
+
+The register, the lists and the graph show the records with momentum by default. "Show all" above each list brings back the rest; every record keeps its page and stays in search. Momentum is measured by a script from public APIs, never typed by hand, and each measurement carries its date.
+
+A record has momentum when it had a release, a pre-release or a push to its repository in the last 12 months, and one of these:
+
+- **Activity:** at least 104 commits to the default branch in the last 13 weeks, and in the last 26 weeks at least one and a half times as many as in the 26 before.
+- **Downloads:** up 25% or more against the same weeks a year ago, from at least 4,000 npm downloads in 28 days or a daily average of 33 on Packagist.
+- **Wide use:** usage band 5, the top fifth on the [Usage](/usage/) page.
+
+A record not measured yet is shown. Growth counts a young project rising from few downloads the same as a large one, and wide use keeps a project people rely on when its activity is steady.
+
+A person can also take a record out of the default view after looking at it. It becomes a stub, with the reason recorded. This is the one judgement in the default view, and it only ever removes a record.
 
 ## Publisher
 

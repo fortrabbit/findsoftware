@@ -75,7 +75,11 @@ const filtered = Astro.slots.has('default');
  *
  * The wording matches what find.ts writes here once a filter changes.
  */
-const summary = `${providers.length} ${providers.length === 1 ? 'project' : 'projects'}.`;
+const shown = providers.filter((provider) => !provider.quiet).length;
+const summary = `${shown} ${shown === 1 ? 'project' : 'projects'}.`;
+
+/* Rows out of the default view, in every list on the page: the toggle shows them all at once. */
+const quiet = [...providers, ...others.flatMap((register) => register.rows)].filter((row) => row.quiet).length;
 
 // Grouped by initial so the register can be scanned and linked to without JavaScript.
 const letterOf = (name: string) => {
@@ -164,7 +168,8 @@ const groups = dated ? groupsOf(providers) : letterGroups;
   filtered && <slot />
 }
 
-<ListControls sort={sort} />
+{/* Where the filter panel runs, the momentum choice is one of its boxes. */}
+<ListControls sort={sort} quiet={filtered ? 0 : quiet} />
 
 <div class="slim" data-pagefind-ignore data-find-results>
   {

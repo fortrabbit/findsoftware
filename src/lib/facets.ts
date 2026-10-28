@@ -2,6 +2,7 @@ import { asideCategoryOf, asideOf, facetFields, fields } from './fields';
 import { asideGroup, isListed, loadAsideProviders, loadProviders, loadSoftware } from './providers';
 import { byName, countValues, rowHolds, toRow, type Facet, type FacetValue, type ProviderRow } from './rows';
 import { pairIndexPath, pairPages, pairPath, type PairPage } from './pairs';
+import { inDefaultView, loadMomentum } from './momentum-data';
 
 /*
  * The shapes live in lib/rows.ts, with the functions that build them, and are
@@ -79,8 +80,13 @@ export const loadAsides = once(async (): Promise<Aside[]> => {
     for (const { key, label } of named.values())
       if (!groups.has(key)) groups.set(key, { key, label, of: source, rows: [] });
 
+  const momentum = await loadMomentum();
   for (const record of await loadAsideProviders()) {
-    groups.get(asideGroup(record)!)!.rows.push({ ...toRow(record as never), status: String(record.data.status) });
+    groups.get(asideGroup(record)!)!.rows.push({
+      ...toRow(record as never),
+      status: String(record.data.status),
+      quiet: !inDefaultView(momentum, record.id),
+    });
   }
 
   return [...groups.values()].map((group) => ({ ...group, rows: group.rows.sort(byName) }));
@@ -153,7 +159,10 @@ export const asideGroupOf = async (key: string): Promise<Aside> => {
 
 export const loadFacets = once(async (): Promise<{ facets: Facet[]; providers: ProviderRow[] }> => {
   const records = await loadProviders();
-  const providers = records.map((record) => toRow(record as never)).sort(byName);
+  const momentum = await loadMomentum();
+  const providers = records
+    .map((record) => ({ ...toRow(record as never), quiet: !inDefaultView(momentum, record.id) }))
+    .sort(byName);
 
   // Dictionary order is the record page's; the panel offers the most-asked
   // first, which is what `filterOrder` in fields.yml sorts these by.

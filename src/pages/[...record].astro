@@ -31,6 +31,7 @@ import ProviderLogo from '../components/ProviderLogo.astro';
 import FactGroups from '../components/FactGroups.astro';
 import { findhostRows, hostsFor } from '../lib/findhost';
 import HostingBlock from '../components/HostingBlock.astro';
+import { loadMomentum } from '../lib/momentum-data';
 
 export async function getStaticPaths() {
   const providers = await loadSoftware();
@@ -277,6 +278,15 @@ const failed =
 
 const notice = failed ?? (typeof data.status === 'string' ? statusNotice[data.status] : undefined);
 
+/* Why a listed record is out of the default view, in the words the About page explains. */
+const verdict = (await loadMomentum()).get(provider.id);
+const quietNotice =
+  verdict && !verdict.shown
+    ? verdict.why === 'inactive'
+      ? 'Not in the default view: no release or push to its repository in the last 12 months.'
+      : 'Not in the default view: no rising activity, download growth or wide use measured.'
+    : undefined;
+
 /*
  * The categories this record holds, in dictionary order and in the filter
  * column's shorter wording where it has one — the title is the narrowest place
@@ -420,12 +430,13 @@ const metaDescription = data.description
            * thing the record answers, and the box gave it a weight the sentence
            * does not need: being a stub is a ruling, not an alarm.
            */
-          notice && (
+          (notice || quietNotice) && (
             <div class="fact-groups">
               <section class="fact-group">
                 <h2>Status</h2>
                 <p>
-                  {notice} {data.status === 'stub' && <a href="/criteria/">Listing criteria</a>}
+                  {notice ?? quietNotice} {data.status === 'stub' && <a href="/criteria/">Listing criteria</a>}
+                  {!notice && <a href="/about/#momentum">What decides the default view</a>}
                 </p>
               </section>
             </div>

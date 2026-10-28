@@ -1,0 +1,25 @@
+# What puts a record in the default view, applied at build time to the figures
+# scripts/momentum.mjs measured into momentum.json. Move a number and rebuild;
+# nothing needs measuring again. Aim: about a third of the listed records shown.
+# The About page states these numbers.
+
+# A release, pre-release or push to the default branch within this many months.
+activeMonths: 12
+
+# Then any one of the three below.
+
+# Commits in the last 13 weeks, with the last 26 weeks at least `trend` times the 26 before.
+commits:
+  last13Weeks: 104
+  trend: 1.5
+
+# Downloads up by `growth` (0.25 is 25%) against the same window a year ago.
+# Today's figure must reach the floor, so a jump from 10 to 20 is no growth;
+# the year-ago figure may be anything, so a young package counts.
+downloads:
+  growth: 0.25
+  npm28Floor: 4000
+  packagistDailyFloor: 33
+
+# A usage band at or above this keeps an active record in on its own.
+popularityBand: 5

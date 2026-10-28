@@ -1,0 +1,50 @@
+---
+import type { ProviderRow } from '../lib/facets';
+
+interface Props {
+  /** Every row the panel narrows, in every list it can switch to. */
+  rows: ProviderRow[];
+}
+
+const { rows } = Astro.props;
+const shown = rows.filter((row) => !row.quiet).length;
+
+/*
+ * The default view or every record, one answer at a time like the register
+ * box beside it. It narrows the list and the graph together, and the choice
+ * is remembered across pages, so it is a radio of its own rather than a
+ * facet: no record holds a value for it, the measurement does.
+ */
+---
+
+<div class="find-facet find-register" role="group" aria-labelledby="facet-momentum">
+  <h2 class="find-facet-title" id="facet-momentum">
+    <span>Momentum</span>
+    <a class="find-jump" href="/about/#momentum">?<span class="visually-hidden"> What decides it</span></a>
+  </h2>
+
+  <div class="find-values">
+    {
+      [
+        { value: 'momentum', label: 'With momentum', count: shown },
+        { value: 'all', label: 'Show all', count: rows.length },
+      ].map((option) => (
+        <div class="find-row">
+          <label>
+            <input
+              type="radio"
+              name="momentum"
+              data-momentum-option
+              value={option.value}
+              checked={option.value === 'momentum'}
+              autocomplete="off"
+              disabled
+            />
+            <span class="find-value">{option.label}</span>
+          </label>
+          <span class="find-count">{option.count}</span>
+        </div>
+      ))
+    }
+  </div>
+</div>

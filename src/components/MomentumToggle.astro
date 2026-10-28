@@ -1,0 +1,31 @@
+---
+/*
+ * The default view or everything: records out of it for want of momentum are
+ * drawn hidden, and this puts them back. Two words rather than an icon, since
+ * what it hides is a decision a reader should be able to read.
+ *
+ * Absent until find.ts runs, like the style toggle: without the script it
+ * would be a control that does nothing.
+ */
+interface Props {
+  /** How many rows on the page are out of the default view. */
+  quiet: number;
+}
+
+const { quiet } = Astro.props;
+---
+
+<div class="list-style list-momentum" role="group" aria-label="Which projects" data-list-momentum>
+  <button
+    type="button"
+    value="momentum"
+    title="Active, with rising activity, downloads or wide use"
+    aria-pressed="true"
+    disabled
+  >
+    With momentum
+  </button>
+  <button type="button" value="all" title={`Also the ${quiet} without`} aria-pressed="false" disabled>
+    Show all
+  </button>
+</div>

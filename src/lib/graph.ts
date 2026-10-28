@@ -18,6 +18,8 @@ export interface GraphRecord {
   status?: string;
   /** The usage band, 1 to 5, when the record holds adoption figures. */
   band?: number;
+  /** Out of the default view for want of momentum. */
+  quiet?: boolean;
   href: string;
 }
 
@@ -29,6 +31,8 @@ export interface GraphNode {
   y: number;
   href?: string;
   band?: number;
+  /** Hidden until the reader asks for every record: out of the default view, and no parent of a record in it. */
+  quiet?: true;
 }
 
 /** What the browser receives, as /graph.json. */
@@ -140,6 +144,18 @@ export function buildGraph(
   }
   const at = laidOut.at;
 
+  // A parent of a record in the default view stays drawn with it, quiet or not: a child without its parent reads as a root.
+  const carried = new Set<string>();
+  const carry = (id: string) => {
+    for (const parent of drawn.get(id)?.basedOn ?? [])
+      if (drawn.has(parent) && !carried.has(parent)) {
+        carried.add(parent);
+        carry(parent);
+      }
+  };
+  const inView = (record: GraphRecord) => show(record) && !record.quiet;
+  for (const record of drawn.values()) if (inView(record)) carry(record.id);
+
   const round = (value: number) => Math.round(value * 100) / 100;
   const nodes: GraphNode[] = [
     ...languages.map((key) => ({
@@ -160,6 +176,7 @@ export function buildGraph(
         y: round(at.get(id)![1]),
         href: record.href,
         ...(record.band === undefined ? {} : { band: record.band }),
+        ...(inView(record) || carried.has(id) ? {} : { quiet: true as const }),
       };
     }),
   ];

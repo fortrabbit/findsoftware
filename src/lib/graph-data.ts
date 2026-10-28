@@ -8,6 +8,7 @@ import { fieldOf, labelOf, slugOf } from './fields';
 import { isListed, loadSoftware } from './providers';
 import { recordPath } from './paths';
 import { loadBands } from './usage-data';
+import { inDefaultView, loadMomentum } from './momentum-data';
 
 export interface GraphData extends Drawing {
   /** Every record drawn: the listed ones and the parents they bring along. */
@@ -19,6 +20,7 @@ let built: Promise<GraphData> | undefined;
 const make = async (): Promise<GraphData> => {
   const software = await loadSoftware();
   const bands = await loadBands();
+  const momentum = await loadMomentum();
   const listed = new Set(software.filter(isListed).map((entry) => entry.id));
   const { nodes, edges } = buildGraph(
     software.map((entry) => ({
@@ -28,6 +30,7 @@ const make = async (): Promise<GraphData> => {
       basedOn: entry.data.basedOn,
       href: recordPath(entry),
       band: bands.get(entry.id),
+      quiet: listed.has(entry.id) && !inDefaultView(momentum, entry.id),
     })),
     (record) => listed.has(record.id),
     (id) => ({
@@ -66,8 +69,8 @@ export const trailOf = async (record: { id: string; basedOn?: string[]; language
 
   const start = byKey.has(record.id)
     ? parentOf.get(record.id)
-    : [...(record.basedOn ?? []), record.language && `language:${record.language}`].find(
-        (key): key is string => Boolean(key && byKey.has(key)),
+    : [...(record.basedOn ?? []), record.language && `language:${record.language}`].find((key): key is string =>
+        Boolean(key && byKey.has(key)),
       );
   const steps: Step[] = [];
   for (let key = start; key && byKey.has(key) && !steps.some((step) => step.key === key); key = parentOf.get(key)) {
