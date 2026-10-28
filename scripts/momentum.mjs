@@ -59,6 +59,19 @@ async function get(url, headers = {}, tries = 6) {
 
 const sum = (values) => values.reduce((a, b) => a + b, 0);
 
+// npm's API sometimes reports zero for every package on a day it failed to count. A day on which a
+// package as busy as react shows zero is such an outage: it is left out, and the sum scaled back to 28 days.
+const OUTAGE_PROBE = 'react';
+const outageDays = async (window) => {
+  const probe = await get(`https://api.npmjs.org/downloads/range/${window}/${OUTAGE_PROBE}`);
+  return new Set((probe?.downloads ?? []).filter((day) => !day.downloads).map((day) => day.day));
+};
+const outage = { now: await outageDays(npmWindow), then: await outageDays(npmWindowYearAgo) };
+const scaled = (range, skip) => {
+  const days = (range?.downloads ?? []).filter((day) => !skip.has(day.day));
+  return days.length ? Math.round((sum(days.map((day) => day.downloads)) * 28) / days.length) : undefined;
+};
+
 async function measure(record) {
   const figures = { checkedAt: date };
   const sources = [];
@@ -74,11 +87,13 @@ async function measure(record) {
     if (repo || stats) sources.push(`https://api.github.com/repos/${record.github}/stats/participation`);
   }
   if (record.npm) {
-    const now = await get(`https://api.npmjs.org/downloads/point/${npmWindow}/${record.npm}`);
-    const then = await get(`https://api.npmjs.org/downloads/point/${npmWindowYearAgo}/${record.npm}`);
-    if (typeof now?.downloads === 'number') figures.npm28 = now.downloads;
-    if (typeof then?.downloads === 'number') figures.npm28YearAgo = then.downloads;
-    if (now || then) sources.push(`https://api.npmjs.org/downloads/point/${npmWindow}/${record.npm}`);
+    const now = await get(`https://api.npmjs.org/downloads/range/${npmWindow}/${record.npm}`);
+    const then = await get(`https://api.npmjs.org/downloads/range/${npmWindowYearAgo}/${record.npm}`);
+    const npm28 = scaled(now, outage.now);
+    const npm28YearAgo = scaled(then, outage.then);
+    if (npm28 !== undefined) figures.npm28 = npm28;
+    if (npm28YearAgo !== undefined) figures.npm28YearAgo = npm28YearAgo;
+    if (now || then) sources.push(`https://api.npmjs.org/downloads/range/${npmWindow}/${record.npm}`);
     await wait(400);
   }
   if (record.packagist) {
