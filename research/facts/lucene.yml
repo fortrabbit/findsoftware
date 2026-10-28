@@ -1,0 +1,124 @@
+id: lucene
+name: Apache Lucene
+status: accepted
+checkedAt: 2026-10-28
+description: Java full-text search library that applications embed to index documents and run searches over them.
+facts:
+  - field: homepage
+    value: https://lucene.apache.org/
+    url: https://lucene.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The Apache Lucene™ project develops open-source search software."
+  - field: repository
+    value: https://github.com/apache/lucene
+    url: https://api.github.com/repos/apache/lucene
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://lucene.apache.org/core/documentation.html
+    url: https://lucene.apache.org/core/documentation.html
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: The Apache Software Foundation
+    url: https://lucene.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright © 2011-2026 The Apache Software Foundation"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/apache
+    checkedAt: 2026-10-28
+    via: api
+  - field: hqCountry
+    value: US
+    url: https://www.apache.org/foundation/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "ASF is a U.S. 501(c)(3) charitable organization"
+  - field: firstRelease
+    value: "2000"
+    url: https://lucene.apache.org/core/10_5_2/changes/Changes.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Release 0.01 [2000-03-30]"
+  - field: categories
+    value: [search-library]
+    url: https://lucene.apache.org/core/10_5_2/index.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Lucene is not a complete application, but rather a code library and API that can easily be used to add search capabilities to applications."
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/apache/lucene
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://lucene.apache.org/core/10_5_2/SYSTEM_REQUIREMENTS.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Apache Lucene runs on Java 21 or greater."
+  - field: runtimeMin
+    value: "21"
+    url: https://lucene.apache.org/core/10_5_2/SYSTEM_REQUIREMENTS.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Apache Lucene runs on Java 21 or greater."
+  - field: installMethod
+    value: [binary download]
+    url: https://lucene.apache.org/core/downloads.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The lucene-VERSION.zip or .tar.gz"
+  - field: mavenCoordinates
+    value: org.apache.lucene:lucene-core
+    url: https://repo1.maven.org/maven2/org/apache/lucene/lucene-core/maven-metadata.xml
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 10
+    url: https://api.github.com/repos/apache/lucene/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-04
+    url: https://api.github.com/repos/apache/lucene/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/apache/lucene
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://lucene.apache.org/core/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Apache 2.0 licensed"
+  - field: githubStargazers
+    value: 3598
+    url: https://api.github.com/repos/apache/lucene
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 314
+    url: https://api.github.com/repos/apache/lucene/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 1307
+    url: https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/org.apache.lucene%3Alucene-core
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 16650
+    url: https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/org.apache.lucene%3Alucene-core
+    checkedAt: 2026-10-28
+    via: api
+notFound: [pricingPage, paidEdition, basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, endoflifeId, latestPrereleaseDate, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, pypiDownloads, nugetName, nugetDownloads, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, lastCommitDate, selfHostOption, apiLimits, regions, hostedOffering, maintainerType]
+unreadable: []
+notes: >
+  Status is accepted. The repository apache/lucene also holds Solr tags (releases/solr/...), so the Lucene release comes from the releases/lucene/ tags; the homepage says Solr has moved to its own top level project. The highest stable release is releases/lucene/10.5.2 (2026-10-04); the GitHub release list has no prerelease, and the Maven metadata agrees on 10.5.2 as the release. The homepage says Lucene is the search core of Apache Solr, Elasticsearch and OpenSearch; those products build on Lucene in their own pages, so no basedOn is recorded here. PyLucene is a Python binding that the homepage lists as a sub project with its own page at lucene.apache.org/pylucene; it is not a separate candidate in this area. The install docs name the binary archive (lucene-VERSION.zip, which holds the lucene-core jar); Maven Central holds the same artifact, so mavenCoordinates is recorded from the Maven repository and no Maven install step is claimed. Maven publishes no download figure, so no download count is recorded. The first Maven upload is 2006 (version 1.9.1), so firstRelease comes from the changelog instead; Release 0.01 is dated 2000-03-30 in Changes.html. The homepage copyright line gives the maintainer; the ASF about page gives the U.S. charitable status, and the ASF contact page gives the Wilmington, DE mailing address. The docs page and the release notes page name the system requirements as Java 21 or greater for 10.5.2.

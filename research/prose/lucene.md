@@ -1,0 +1,3 @@
+Apache Lucene is a Java library that an application embeds to build a search index from its own documents and run queries against it. The project describes it as a code library and API that an application calls to add search, so the application builds the index and runs the queries itself. The [project homepage](https://lucene.apache.org/) names Lucene as the search core of Apache Solr, Elasticsearch and OpenSearch, which are separate products.
+
+Lucene ships as a binary archive whose jar holds the core library, and Maven Central publishes the same core artifact. PyLucene, a Python binding, is documented on its own page of the project site.

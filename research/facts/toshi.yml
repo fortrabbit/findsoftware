@@ -1,0 +1,119 @@
+id: toshi
+name: Toshi
+status: stub
+checkedAt: 2026-10-28
+description: Full-text search server written in Rust that serves a JSON query API over indexes built with Tantivy.
+facts:
+  - field: status
+    value: stub
+    url: https://crates.io/api/v1/crates/toshi
+    checkedAt: 2026-10-28
+    via: api
+  - field: homepage
+    value: https://toshi.rs
+    url: https://toshi.rs/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Toshi is an experimental full text search engine written in Rust"
+  - field: repository
+    value: https://github.com/toshi-search/Toshi
+    url: https://api.github.com/repos/toshi-search/Toshi
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/toshi-search/Toshi/blob/master/README.md
+    url: https://github.com/toshi-search/Toshi/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Toshi can be built using `cargo build --release`"
+  - field: maintainer
+    value: Stephen Carman
+    url: https://github.com/toshi-search/Toshi/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2018 Stephen Carman"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/toshi-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/toshi-search/Toshi/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/toshi-search/Toshi
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [rust]
+    url: https://github.com/toshi-search/Toshi/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Toshi can be built using `cargo build --release`"
+  - field: categories
+    value: [search-server]
+    url: https://github.com/toshi-search/Toshi/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Toshi is meant to be a full-text search engine similar to Elasticsearch"
+  - field: basedOn
+    value: tantivy
+    url: https://toshi.rs/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "based on top of Tantivy"
+  - field: installMethod
+    value: [cargo build from source]
+    url: https://github.com/toshi-search/Toshi/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Toshi can be built using `cargo build --release`"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/toshi-search/Toshi/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The port Toshi will bind to upon start."
+  - field: crateName
+    value: toshi
+    url: https://crates.io/api/v1/crates/toshi
+    checkedAt: 2026-10-28
+    via: api
+  - field: crateDownloads
+    value: 1899 (total)
+    url: https://crates.io/api/v1/crates/toshi
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: https://crates.io/api/v1/crates/toshi/versions
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2018-10-18
+    url: https://crates.io/api/v1/crates/toshi/versions
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://crates.io/api/v1/crates/toshi
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 4253
+    url: https://api.github.com/repos/toshi-search/Toshi
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 17
+    url: https://api.github.com/repos/toshi-search/Toshi/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [hqCountry, parent, pricingPage, paidEdition, adminUi, headlessApi, contentStore, databases, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, selfHostOption, forum, discord, x, bluesky, mastodon, newsletter, pluginDirectory, pluginCount, npmName, npmWeeklyDownloads, usageShare, reportedInstalls, lastCommitDate]
+unreadable: []
+notes: >
+  In doubt, so stub. The only registry release is crate toshi 0.1.0 (2018-10-18), and its crates.io metadata names no repository, so the link between that crate and toshi-search/Toshi is unconfirmed. A crate published from this repository, or a statement by the maintainer, would settle it. The repository has no GitHub release or tag. The default branch's newest commit is dated 2023-10-12 (api), while pushed_at is 2026-06-28. The README and toshi.rs both call Toshi experimental and not production ready. The README's "1.39.0" build requirement is not recorded as runtimeMin: it is an old statement with no current release to tie it to. Data and indices are written under the configured data path ("The data path where Toshi will store its data and indices."), so no contentStore is recorded. The crate download count is a total, all time. The project site toshi.rs answers over https.

@@ -1,0 +1,109 @@
+id: searchkick
+name: Searchkick
+status: accepted
+checkedAt: 2026-10-28
+description: Ruby gem that adds search to Active Record and Mongoid models, backed by an Elasticsearch or OpenSearch server.
+facts:
+  - field: repository
+    value: https://github.com/ankane/searchkick
+    url: https://api.github.com/repos/ankane/searchkick
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/ankane/searchkick/blob/master/README.md
+    url: https://github.com/ankane/searchkick/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/ankane
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Andrew Kane
+    url: https://github.com/ankane/searchkick/blob/master/LICENSE.txt
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2013-2026 Andrew Kane"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/ankane/searchkick
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://rubygems.org/api/v1/versions/searchkick.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/ankane/searchkick
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: ruby
+    url: https://github.com/ankane/searchkick/blob/v6.2.0/searchkick.gemspec
+    checkedAt: 2026-10-28
+    via: page
+  - field: runtimeMin
+    value: "3.3"
+    url: https://github.com/ankane/searchkick/blob/v6.2.0/searchkick.gemspec
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'spec.required_ruby_version = ">= 3.3"'
+  - field: categories
+    value: [search-integration]
+    url: https://github.com/ankane/searchkick/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Add `searchkick` to models you want to search."
+  - field: installMethod
+    value: Gemfile gem, added to an application's Gemfile
+    url: https://github.com/ankane/searchkick/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Add these lines to your application’s Gemfile:"
+  - field: currentMajor
+    value: 6
+    url: https://api.github.com/repos/ankane/searchkick/tags
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-27
+    url: https://rubygems.org/api/v1/versions/searchkick.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 6720
+    url: https://api.github.com/repos/ankane/searchkick
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 117
+    url: https://api.github.com/repos/ankane/searchkick/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: rubygemsName
+    value: searchkick
+    url: https://rubygems.org/api/v1/gems/searchkick.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: rubygemsDownloads
+    value: 29473208
+    url: https://rubygems.org/api/v1/gems/searchkick.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 12
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/searchkick
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 1314
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/searchkick
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, runsAs, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, multisite, livePreview, userRoles, sso, i18n, templating, headlessApi, contentStore, databases, adminUi, paidEdition, pricingPage, apiLimits, regions, selfHostOption, renderingModes, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, pypiName, pypiDownloads, packagistName, packagistDownloads, endoflifeId, latestPrereleaseDate, lastCommitDate, httpArchiveSites]
+unreadable: []
+notes: >
+  The project has no site of its own beyond its GitHub repository, so no homepage is recorded. The README title, the rubygems name and the gemspec all say searchkick. The repository has no GitHub releases, only version tags; the highest stable tag is v6.2.0, which rubygems also lists as 6.2.0, published 2026-10-27 (the candidates row's 2026-06-05 is 6.1.2). The rubygems total of 29,473,208 downloads is the gem's all-time count, not a weekly figure. The README says the latest version works with Elasticsearch 8 and 9 and OpenSearch 2 and 3, and that Elasticsearch 7 and OpenSearch 1 need version 5.5.2; the search server is a separate process and the gem runs inside the application, so runsAs is not recorded for the gem; the engine it needs (Elasticsearch or OpenSearch) is a separate process started by its own commands. The README's "works with Active Record and Mongoid" names two ORMs; it does not say the gem is built on Rails, so no basedOn is recorded and a reviewer decides whether Rails should be one. The README's "Battle-tested at Instacart" links to Instacart's open source page; it is a company statement, not a usage figure, and it is not recorded as reportedInstalls. Not recorded because the README states no value: a hosted option, a license other than MIT, a pricing or support page. The README's "Searchjoy" and "Autosuggest" links name the author's separate gems, not a parent. The rubygems download total is recorded and not compared with the GitHub stars.

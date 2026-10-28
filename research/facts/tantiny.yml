@@ -1,0 +1,127 @@
+id: tantiny
+name: Tantiny
+status: accepted
+checkedAt: 2026-10-28
+description: Embeddable full-text search library for Ruby that builds its index with the Tantivy search engine library.
+facts:
+  - field: repository
+    value: https://github.com/altertable-ai/tantiny
+    url: https://github.com/altertable-ai/tantiny
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/altertable-ai/tantiny/blob/main/README.md
+    url: https://github.com/altertable-ai/tantiny/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+  - field: firstRelease
+    value: 2022
+    url: https://rubygems.org/api/v1/versions/tantiny.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Altertable
+    url: https://github.com/altertable-ai/tantiny/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "we agreed transfering ownership of the gem to Altertable"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/altertable-ai
+    checkedAt: 2026-10-28
+    via: api
+  - field: forkOf
+    value: baygeldin/tantiny
+    url: https://github.com/altertable-ai/tantiny/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This is a fork of the original Tantiny gem"
+  - field: license
+    value: MIT
+    url: https://github.com/altertable-ai/tantiny
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Ruby
+    url: https://github.com/altertable-ai/tantiny
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: ruby
+    url: https://github.com/altertable-ai/tantiny/blob/tantiny/v0.4.2/tantiny.gemspec
+    checkedAt: 2026-10-28
+    via: page
+  - field: runtimeMin
+    value: "3.2"
+    url: https://github.com/altertable-ai/tantiny/blob/tantiny/v0.4.2/tantiny.gemspec
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'spec.required_ruby_version = ">= 3.2"'
+  - field: installMethod
+    value: gem install
+    url: https://github.com/altertable-ai/tantiny/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "$ gem install tantiny"
+  - field: installMethod
+    value: Gemfile (bundler)
+    url: https://github.com/altertable-ai/tantiny/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Add this line to your application's Gemfile:"
+  - field: categories
+    value: [search-library]
+    url: https://github.com/altertable-ai/tantiny/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "minimalistic full-text search library for Ruby"
+  - field: basedOn
+    value: tantivy
+    url: https://github.com/altertable-ai/tantiny/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "full-text search library for Ruby based on"
+  - field: githubStargazers
+    value: 14
+    url: https://github.com/altertable-ai/tantiny
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 5
+    url: https://api.github.com/repos/altertable-ai/tantiny/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: rubygemsName
+    value: tantiny
+    url: https://rubygems.org/api/v1/gems/tantiny.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: rubygemsDownloads
+    value: 13761
+    url: https://rubygems.org/api/v1/gems/tantiny.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/tantiny
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 2
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/tantiny
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/altertable-ai/tantiny/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2025-11-04
+    url: https://api.github.com/repos/altertable-ai/tantiny/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, hqCountry, maintainerType, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, sso, paidEdition, pricingPage, endoflifeId, packagistName, npmName, pypiDownloads, usageShare, reportedInstalls, latestPrereleaseDate]
+unreadable: []
+notes: >
+  The repository is a fork of baygeldin/tantiny, which GitHub reports as archived and last pushed 2025-10-31; the README records the transfer of the gem to Altertable, so the archive is a move and no end signal. The gem's RubyGems authors are Sylvain Utard and Alexander Baygeldin, and the LICENSE copyright line names Alexander Baygeldin (2022); the maintainer is recorded as the README names it. The README says searches return document ids and the documents are not stored in the index, and that the index lives in a path or in memory. Precompiled native binaries come from GitHub releases; Rust is needed only when no binary matches the platform, so Ruby alone is the runtime. The README says the library needs no separate server or process, that a schema declares the indexed fields, that a search returns document ids, and that writes lock the index, so one writer process is recommended. Tantiny has no site of its own: the repository and the gem page are the only sources, so no homepage. The GitHub release tags are named tantiny/vX.Y.Z; the 0.2.2 and 0.3.x uploads on RubyGems predate the fork and carry the 2022 firstRelease.

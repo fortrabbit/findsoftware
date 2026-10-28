@@ -1,0 +1,91 @@
+id: redisearch
+name: RediSearch
+status: stub
+checkedAt: 2026-10-28
+description: Query and indexing engine module for Redis that adds full-text search, secondary indexing, vector similarity search and aggregations.
+facts:
+  - field: repository
+    value: https://github.com/RediSearch/RediSearch
+    url: https://github.com/RediSearch/RediSearch
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://redis.io/docs/latest/develop/ai/search-and-query/
+    url: https://redis.io/docs/latest/develop/ai/search-and-query/
+    checkedAt: 2026-10-28
+    via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/RediSearch/RediSearch
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://api.github.com/repos/RediSearch/RediSearch/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: basedOn
+    value: redis
+    url: https://raw.githubusercontent.com/RediSearch/RediSearch/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "RediSearch is a [Redis module](https://redis.io/modules) that provides querying, secondary indexing, and full-text search for Redis."
+  - field: categories
+    value: [search-index]
+    url: https://raw.githubusercontent.com/RediSearch/RediSearch/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "RediSearch is a [Redis module](https://redis.io/modules) that provides querying, secondary indexing, and full-text search for Redis."
+  - field: categories
+    value: [database-extension]
+    url: https://raw.githubusercontent.com/RediSearch/RediSearch/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "RediSearch is a [Redis module](https://redis.io/modules) that provides querying, secondary indexing, and full-text search for Redis."
+  - field: language
+    value: Rust
+    url: https://github.com/RediSearch/RediSearch
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: RSALv2 or SSPLv1
+    url: https://raw.githubusercontent.com/RediSearch/RediSearch/v2.10.31/LICENSE.txt
+    checkedAt: 2026-10-28
+    via: page
+    quote: "(i) Redis Source Available License 2.0 (RSALv2) or (ii) the Server Side Public License v1 (SSPLv1)"
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/RediSearch/RediSearch/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-06-17
+    url: https://api.github.com/repos/RediSearch/RediSearch/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 6245
+    url: https://github.com/RediSearch/RediSearch
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 128
+    url: https://api.github.com/repos/RediSearch/RediSearch/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: hostedOffering
+    value: distributed RediSearch in Redis Cloud and Redis Enterprise
+    url: https://raw.githubusercontent.com/RediSearch/RediSearch/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "distributed RediSearch is available as part of [Redis Cloud](https://redis.com/redis-enterprise-cloud/overview/)"
+  - field: discord
+    value: https://discord.gg/knMsnYmwXu
+    url: https://raw.githubusercontent.com/RediSearch/RediSearch/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Join us in [#redisearch on the Redis Discord](https://discord.gg/knMsnYmwXu)"
+notFound: [maintainer, homepage, pricingPage, paidEdition, installMethod, runsAs, renderingModes, databases, contentStore, adminUi, headlessApi, i18n, multisite, sso, mastodon, bluesky, x, newsletter, forum, subreddit, pluginDirectory, npmName, packagistName, pypiName, rubygemsName, endoflifeId, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  Doubt: the README says "We no longer release standalone versions of RediSearch" and "Starting with Redis 8, Redis Query Engine (RediSearch) is integral to Redis", while the repository still publishes maintenance releases on the 2.6, 2.8 and 2.10 lines (v2.10.31, 2026-06-17) and was pushed 2026-10-28; this would be settled by deciding whether the standalone end is a discontinued signal, whether the record follows Redis Query Engine inside Redis, or whether the maintenance releases keep it accepted. The first non-prerelease GitHub release is v0.99.0 (2017-11-15); earlier tags are prereleases. No README or LICENSE text names Redis Ltd as the project's owner, so no maintainer is recorded; the Redis licensing page names Redis Ltd only as the licensor of commercial licenses. The license is taken from the v2.10.31 tag; the master branch LICENSE adds AGPLv3 for Redis 8, recorded in notes only. The homepage redisearch.io does not resolve (connection failure), and the docs live on redis.io, so no homepage is recorded. Installation is through Redis 8 or Redis Cloud; no separate install route is recorded because the README says the module is no longer installed separately. Categories are mapped from the README's module description; the CSV's database-extension category maps to database in the import.

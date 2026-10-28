@@ -1,0 +1,140 @@
+id: xapiand
+name: Xapiand
+status: stub
+checkedAt: 2026-10-28
+description: RESTful search and storage engine in one C++ binary, with full-text, geospatial and range queries over JSON or MessagePack documents.
+facts:
+  - field: homepage
+    value: https://kronuz.github.io/Xapiand
+    url: https://kronuz.github.io/Xapiand/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Search and Storage Server"
+  - field: repository
+    value: https://github.com/Kronuz/Xapiand
+    url: https://api.github.com/repos/Kronuz/Xapiand
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://kronuz.github.io/Xapiand/installation/
+    url: https://kronuz.github.io/Xapiand/installation/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Installation"
+  - field: maintainer
+    value: Dubalu LLC
+    url: https://github.com/Kronuz/Xapiand/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2015-2026 Dubalu LLC"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/Kronuz
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: C++
+    url: https://api.github.com/repos/Kronuz/Xapiand
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [c++ binary]
+    url: https://github.com/Kronuz/Xapiand
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A single C++20 binary"
+  - field: categories
+    value: [search-server]
+    url: https://github.com/Kronuz/Xapiand
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A RESTful search and storage engine in one binary."
+  - field: basedOn
+    value: [xapian]
+    url: https://github.com/Kronuz/Xapiand
+    checkedAt: 2026-10-28
+    via: page
+    quote: "built on a customized in-tree fork of"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/Kronuz/Xapiand
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/Kronuz/Xapiand/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License"
+  - field: license
+    value: GPL
+    url: https://github.com/Kronuz/Xapiand
+    checkedAt: 2026-10-28
+    via: page
+    quote: "carries Xapian's own (GPL) license"
+  - field: headlessApi
+    value: [rest]
+    url: https://github.com/Kronuz/Xapiand
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A RESTful HTTP API over a schemaless document store"
+  - field: contentStore
+    value: own append-only volume files
+    url: https://github.com/Kronuz/Xapiand
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Haystack-inspired append-only volume format"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/Kronuz/Xapiand
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Send it JSON or MessagePack"
+  - field: installMethod
+    value: [docker]
+    url: https://github.com/Kronuz/Xapiand
+    checkedAt: 2026-10-28
+    via: page
+    quote: "docker run -p 8880:8880 --rm ghcr.io/kronuz/xapiand:latest"
+  - field: installMethod
+    value: [homebrew]
+    url: https://github.com/Kronuz/Xapiand
+    checkedAt: 2026-10-28
+    via: page
+    quote: "brew install Kronuz/tap/xapiand"
+  - field: installMethod
+    value: [rpm and deb packages]
+    url: https://github.com/Kronuz/Xapiand
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Each release also ships RPM and DEB packages"
+  - field: installMethod
+    value: [cmake from source]
+    url: https://github.com/Kronuz/Xapiand
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Requires a C++20 compiler, CMake 3.16 or newer"
+  - field: latestPrereleaseDate
+    value: 2026-10-17
+    url: https://api.github.com/repos/Kronuz/Xapiand/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2026
+    url: https://api.github.com/repos/Kronuz/Xapiand/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 362
+    url: https://api.github.com/repos/Kronuz/Xapiand
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 7
+    url: https://api.github.com/repos/Kronuz/Xapiand/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [currentMajor, latestReleaseDate, runtimeMin, hqCountry, parent, paidEdition, pricingPage, adminUi, databases, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, pypiName, pypiDownloads, usageShare, reportedInstalls, endoflifeId, sso, userRoles, i18n, multisite, livePreview, importsFrom, templating, renderingModes]
+unreadable: []
+notes: >
+  Criterion 4 is in doubt: the project has alpha releases only and no stable release; a stable release would settle it.   No stable release exists: the GitHub releases are v1.0.0-alpha.1 to v1.0.0-alpha.9, which the API marks as not prerelease although the tag names say alpha, and the repository tags run to v1.0.0-alpha.10, which the docs site header shows as the current version without a release object. The latest prerelease date is the alpha.9 release; no currentMajor is recorded because no stable release exists, and the reviewer decides whether a record with alpha releases only meets criterion 4. The first release is alpha.1 (2026-07-05); the repository dates from 2015 and carries no earlier tags, so firstRelease 2026 is the oldest release in the repository. The README names the license MIT with copyright "2015-2026 Dubalu LLC"; no legal form or country for Dubalu LLC was found on dubalu.com, whose homepage does not name it. The bundled Xapian fork under src/xapian carries Xapian's GPL license, recorded as a second license statement without a version, since the README says only "(GPL)"; the Xapian record gives GPL v2 or later. The README names the build requirement as C++20 with CMake 3.16 and OpenSSL 3 for the default TLS build; this is a build requirement, not a runtime minimum, so runtimeMin is not recorded. The project describes its clustering as per-shard primary election over Raft with pull-based replication; this is not a field here. The docs site title reads "Search and Storage Server".

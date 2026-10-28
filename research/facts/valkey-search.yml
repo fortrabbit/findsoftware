@@ -1,0 +1,103 @@
+id: valkey-search
+name: valkey-search
+status: accepted
+checkedAt: 2026-10-28
+description: Valkey module, written in C++, that adds search and vector indexing to the Valkey datastore.
+facts:
+  - field: repository
+    value: https://github.com/valkey-io/valkey-search
+    url: https://github.com/valkey-io/valkey-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/valkey-io/valkey-search/blob/main/QUICK_START.md
+    url: https://github.com/valkey-io/valkey-search/blob/main/QUICK_START.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Follow these steps to set up, build, and run the Valkey server with the valkey-search module"
+  - field: firstRelease
+    value: 2025
+    url: https://api.github.com/repos/valkey-io/valkey-search/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: valkey-search contributors
+    url: https://github.com/valkey-io/valkey-search/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2024-present, valkey-search contributors"
+  - field: maintainerType
+    value: community
+    url: https://github.com/valkey-io/valkey-search/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2024-present, valkey-search contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/valkey-io/valkey-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-server]
+    url: https://github.com/valkey-io/valkey-search/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "provided as a Valkey module, is a high-performance Search engine"
+  - field: basedOn
+    value: valkey
+    url: https://github.com/valkey-io/valkey-search/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "provided as a Valkey module"
+  - field: language
+    value: C++
+    url: https://github.com/valkey-io/valkey-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [c++ shared library]
+    url: https://github.com/valkey-io/valkey-search/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "To start Valkey with the module"
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/valkey-io/valkey-search/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "BSD 3-Clause License"
+  - field: installMethod
+    value: [build from source]
+    url: https://github.com/valkey-io/valkey-search/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "valkey-search uses CMake for its build system"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/valkey-io/valkey-search/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-07
+    url: https://api.github.com/repos/valkey-io/valkey-search/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-10-26
+    url: https://api.github.com/repos/valkey-io/valkey-search/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 149
+    url: https://api.github.com/repos/valkey-io/valkey-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 56
+    url: https://api.github.com/repos/valkey-io/valkey-search/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, parent, endoflifeId, pluginDirectory, pluginCount, starters, forum, discord, subreddit, mastodon, bluesky, x, newsletter, paidEdition, pricingPage, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, hqCountry, npmName, packagistName, pypiDownloads, usageShare, reportedInstalls, deployTargets, docker, wikidata]
+unreadable: []
+notes: >
+  No homepage: the repository and its quick start are the project's own pages; the command reference the README links is on valkey.io, the Valkey project's site. Valkey 9.1.0 or later is named as the server to use in QUICK_START.md; no field fits that requirement. Build needs GCC 12 or later, or Clang 16 or later (README). The QUICK_START.md names a pre-built Docker bundle at a Docker section the README does not contain, so no docker install route is recorded. The README calls it a search engine; recorded as search-server. The module's copyright names "valkey-search contributors"; the Valkey project under LF Projects is named on the valkey record, not on this module's pages. The latest release by date is 1.1.1 (2026-07-15); latestReleaseDate follows the releases/latest endpoint, which reports 1.2.1 (2026-07-07). Fields coined: none.

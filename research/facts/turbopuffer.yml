@@ -1,0 +1,61 @@
+id: turbopuffer
+name: turbopuffer
+status: hosted-service
+checkedAt: 2026-10-28
+description: Hosted vector and full-text search database built on object storage, offered as a managed cloud service.
+facts:
+  - field: homepage
+    value: https://turbopuffer.com
+    url: https://turbopuffer.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Vector and Full-Text Search Database"
+  - field: docs
+    value: https://turbopuffer.com/docs
+    url: https://turbopuffer.com/docs
+    checkedAt: 2026-10-28
+    via: page
+  - field: pricingPage
+    value: https://turbopuffer.com/pricing
+    url: https://turbopuffer.com/pricing
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: turbopuffer Inc.
+    url: https://turbopuffer.com/terms-of-service
+    checkedAt: 2026-10-28
+    via: page
+    quote: "turbopuffer Inc."
+  - field: categories
+    value: [vector-search, search-index]
+    url: https://turbopuffer.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "fast search engine built on object storage"
+  - field: contentStore
+    value: [object storage]
+    url: https://turbopuffer.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "vector and full-text search built on object storage"
+  - field: regions
+    value: [aws, gcp, azure]
+    url: https://turbopuffer.com/docs/regions
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Regions AWS GCP Azure"
+  - field: sso
+    value: SSO (protocol not named)
+    url: https://turbopuffer.com/pricing
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Single Sign-On (SSO)"
+  - field: x
+    value: https://x.com/turbopuffer
+    url: https://turbopuffer.com/
+    checkedAt: 2026-10-28
+    via: page
+notFound: [hqCountry, parent, firstRelease, selfHostOption, paidEdition, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, importsFrom, forum, discord, bluesky, mastodon, newsletter, pluginDirectory, pluginCount, npmName, npmWeeklyDownloads, usageShare, reportedInstalls, currentMajor, latestReleaseDate, contributors, githubStargazers, repository]
+unreadable: [https://turbopuffer.com/terms (404), https://turbopuffer.com/privacy (404)]
+notes: >
+  Hosted service: no installable server, so no install, runtime or runsAs facts. The SDK repository github.com/turbopuffer/turbopuffer-typescript and the npm package @turbopuffer/turbopuffer are clients, not this service's repository, and are not recorded as facts. The @turbopuffer/turbopuffer npm package is at 2.12.0 (latest) and had 772,872 downloads from 2026-10-19 to 2026-10-25 (api.npmjs.org range), and the npm package turbopuffer 1.0.1 is a placeholder that prints a wrong-package message. The pricing page lists three plans (launch, scale, enterprise) with prices; no prices are recorded, and the plans are not editions of an open source product, so paidEdition is not recorded. The pricing page lists "Single Sign-On (SSO)" in the scale and enterprise plans; the protocol is not named, so the value is recorded as stated. Single-tenancy and BYOC deployments run in the customer's VPC on AWS, GCP or Azure, as the regions page describes; that is a managed deployment, not a self-host option. The regions page names no EU region. The docs say RBAC is not built in ("turbopuffer doesn't provide built-in mechanisms for row/document-level RBAC" on the permissions page at /docs/permissions), so userRoles is not recorded. Legal governing law is the State of Delaware (terms of service); no headquarters country is stated on the legal pages. The GitHub organization location is "Canada"; a co-founder's about-page location is Ottawa, Canada; neither is recorded as hqCountry. The about memo is dated 4 October 2023; it is not a first release, so firstRelease is not recorded.

@@ -1,0 +1,84 @@
+id: pinecone
+name: Pinecone
+status: hosted-service
+checkedAt: 2026-10-28
+description: Hosted vector database service for storing, searching and reranking embeddings through a managed API and console.
+facts:
+  - field: homepage
+    value: https://www.pinecone.io
+    url: https://www.pinecone.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The trusted AI knowledge company"
+  - field: docs
+    value: https://docs.pinecone.io/
+    url: https://docs.pinecone.io/
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: Pinecone Systems, Inc.
+    url: https://www.pinecone.io/legal/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "© Pinecone Systems, Inc. | San Francisco, CA"
+  - field: hqCountry
+    value: US
+    url: https://www.pinecone.io/legal/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "© Pinecone Systems, Inc. | San Francisco, CA"
+  - field: categories
+    value: [vector-database]
+    url: https://www.pinecone.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Pinecone is a fully managed vector database built for AI."
+  - field: headlessApi
+    value: [rest]
+    url: https://docs.pinecone.io/guides/indexes/understanding-indexes
+    checkedAt: 2026-10-28
+    via: page
+    quote: "POST /indexes in the REST API is schema-only."
+  - field: adminUi
+    value: yes, Pinecone console
+    url: https://docs.pinecone.io/admin/security/manage-rbac
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Assign and manage roles for users, service accounts, and API keys using the Pinecone console"
+  - field: userRoles
+    value: yes, role-based access control (RBAC)
+    url: https://docs.pinecone.io/admin/security/manage-rbac
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Pinecone uses role-based access controls (RBAC) to manage access to resources."
+  - field: regions
+    value: AWS, Azure and GCP, with a choice of cloud and region
+    url: https://www.pinecone.io/pricing/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Choose your cloud and region"
+  - field: pricingPage
+    value: https://www.pinecone.io/pricing/
+    url: https://www.pinecone.io/pricing/
+    checkedAt: 2026-10-28
+    via: page
+  - field: freeTier
+    value: yes, Starter plan
+    url: https://www.pinecone.io/pricing/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Starter For trying out and for small applications."
+  - field: x
+    value: https://x.com/pinecone
+    url: https://www.pinecone.io/
+    checkedAt: 2026-10-28
+    via: page
+  - field: discord
+    value: https://discord.gg/qU3yVdqRda
+    url: https://www.pinecone.io/
+    checkedAt: 2026-10-28
+    via: page
+notFound: [sso, repository, parent, basedOn, language, runtime, paidEdition, selfHostOption, importsFrom, i18n, multisite, livePreview, templating, bluesky, mastodon, subreddit, newsletter, forum, pluginDirectory, pluginCount, starters, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, pypiDownloads, endoflifeId, firstRelease, latestReleaseDate, currentMajor, githubStargazers, contributors, wikidata, maintainerLegal, apiLimits, databases, contentStore, installMethod, runsAs, renderingModes]
+unreadable: []
+notes: >
+  Hosted service with no installable server: no repository field and no install method are recorded. The npm package @pinecone-database/pinecone is the client SDK, and the pinecone-io/pinecone-ts-client repository is an SDK repository; per the hosted-service rule, neither feeds a field. The CSV row named the SDK repository pinecone-io/pinecone-ts-client; it is kept out of the record. Pricing lists four plans (Starter, Builder, Standard, Enterprise); the Starter plan is free to start and the paid plans are hosted plan tiers, so no paidEdition fact is recorded. sso is left out for doubt: the pricing page lists "RBAC SSO (SAML 2.0)" on the Standard plan, while the security page at www.pinecone.io/security/ marks SSO (SAML 2.0) as "Coming Soon" and the docs page on single sign-on describes it as configured through Okta. Bring Your Own Cloud (BYOC) runs a privately managed Pinecone region inside the customer's own AWS, Azure or Google Cloud account (enterprise page); it is a hosted deployment option, not an installable part, so no selfHostOption is recorded. The Pinecone Nexus product and the pg_pinecone Postgres extension (announced on the homepage banner, with a blog post at /blog/introducing-pg-pinecone/) are separate products and are not on this record; pg_pinecone was not read and would need its own candidate. Compliance statements (SOC 2 Type II, HIPAA BAA on request, GDPR) sit on the enterprise and security pages and are not recorded as fields. The company is Pinecone Systems, Inc. (legal page and terms); the terms give Pinecone Systems Inc. with a San Francisco address. The homepage links x.com/pinecone, discord.gg and github.com/pinecone-io; the GitHub organization is not recorded as a repository. No first release date is stated on the pages read, so firstRelease is not recorded.

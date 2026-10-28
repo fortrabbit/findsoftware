@@ -1,0 +1,1 @@
+match-sorter is a JavaScript library that filters and sorts an array of values or objects by how well each item matches a search string. It ranks matches in a fixed order, from case-sensitive equality through starts-with and word-starts-with to acronym and letter-order matches. Kent C. Dodds maintains it, and it is installed from npm.

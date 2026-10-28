@@ -1,0 +1,99 @@
+id: lunr-core
+name: Lunr-Core
+status: stub
+checkedAt: 2026-10-28
+description: Small full-text search library for .NET applications, ported from Lunr.js.
+facts:
+  - field: repository
+    value: https://github.com/bleroy/lunr-core
+    url: https://api.github.com/repos/bleroy/lunr-core
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Bertrand Le Roy
+    url: https://raw.githubusercontent.com/bleroy/lunr-core/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2020 Bertrand Le Roy"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/bleroy/lunr-core
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2020"
+    url: https://api.github.com/repos/bleroy/lunr-core/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-library]
+    url: https://raw.githubusercontent.com/bleroy/lunr-core/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Lunr-core is a small, full text search library for use in small applications."
+  - field: basedOn
+    value: [lunr]
+    url: https://raw.githubusercontent.com/bleroy/lunr-core/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "It's a port of lunr.js to .NET Core."
+  - field: language
+    value: C#
+    url: https://api.github.com/repos/bleroy/lunr-core
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [dotnet]
+    url: https://raw.githubusercontent.com/bleroy/lunr-core/main/LunrCore/LunrCore.csproj
+    checkedAt: 2026-10-28
+    via: page
+    quote: "<TargetFrameworks>netstandard2.0;net6.0;net8.0;net10.0</TargetFrameworks>"
+  - field: nugetName
+    value: LunrCore
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:LunrCore
+    checkedAt: 2026-10-28
+    via: api
+  - field: nugetDownloads
+    value: 409010
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:LunrCore
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/bleroy/lunr-core/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2021-12-03
+    url: https://api.github.com/repos/bleroy/lunr-core/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/bleroy/lunr-core
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 574
+    url: https://api.github.com/repos/bleroy/lunr-core
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 11
+    url: https://api.github.com/repos/bleroy/lunr-core/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 1
+    url: https://packages.ecosyste.ms/api/v1/registries/nuget.org/packages/lunrcore
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 10
+    url: https://packages.ecosyste.ms/api/v1/registries/nuget.org/packages/lunrcore
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, docs, pricingPage, paidEdition, parent, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, runtimeMin, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, licenseModel, endoflifeId, latestPrereleaseDate, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, pypiDownloads, usageShare, reportedInstalls, pluginDirectory, pluginCount, installMethod, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, lastCommitDate, selfHostOption, apiLimits, regions, hostedOffering, hqCountry]
+unreadable: []
+notes: >
+  Stub: criterion 3 cannot be judged from the sources. The README's Installation section sits inside an HTML comment, so the rendered page shows no install step; its Documentation item is a to-do; no docs site exists. This is settled by a rendered install section, a published docs page or a NuGet readme with install steps. The CSV row names the NuGet package Lunr-Core, but the NuGet id is LunrCore; the Lunr-Core query returns no package, and LunrCore holds the 409010 downloads recorded here. The LunrCoreLmdb and Carbon.Lunr packages are separate packages and are not counted. The README says the library is 100% compatible with lunr.js, so an index built with it can be read by lunr.js; this is recorded as a README statement and not as a field. The maintainer is Bertrand Le Roy as the LICENSE copyright line and the csproj Authors line name him; the csproj Company line names Decent Consulting, which is noted here and not recorded as the maintainer. The releases list holds 2.3.8 (2020-07-26) as the oldest release and 2.3.10 (2021-12-03) as the newest, which the NuGet registry matches. The csproj targets netstandard2.0 next to net6.0, net8.0 and net10.0; no single minimum runtime is stated, so runtimeMin is absent. The repository has no homepage in its metadata, so no homepage is recorded.

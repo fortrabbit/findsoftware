@@ -1,0 +1,121 @@
+id: opensearchserver
+name: OpenSearchServer
+status: stub
+checkedAt: 2026-10-28
+description: Full-text search engine server written in Java, with a web interface, crawlers and a REST API.
+facts:
+  - field: repository
+    value: https://github.com/jaeksoft/opensearchserver
+    url: https://api.github.com/repos/jaeksoft/opensearchserver
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Emmanuel Keller / Jaeksoft
+    url: https://raw.githubusercontent.com/jaeksoft/opensearchserver/v1.5.14/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright Emmanuel Keller / Jaeksoft (2008-2016)"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/jaeksoft
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/jaeksoft/opensearchserver
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://raw.githubusercontent.com/jaeksoft/opensearchserver/v1.5.14/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "You need to have a JAVA 7 (or newer) runtime on your server"
+  - field: runtimeMin
+    value: "7"
+    url: https://raw.githubusercontent.com/jaeksoft/opensearchserver/v1.5.14/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "You need to have a JAVA 7 (or newer) runtime on your server"
+  - field: categories
+    value: [search-server]
+    url: https://raw.githubusercontent.com/jaeksoft/opensearchserver/v1.5.14/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "OpenSearchServer is a powerful, enterprise-class, search engine program"
+  - field: installMethod
+    value: [binary download]
+    url: https://raw.githubusercontent.com/jaeksoft/opensearchserver/v1.5.14/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Download the last ZIP or the TAR.GZ archive"
+  - field: runsAs
+    value: [always-on]
+    url: https://raw.githubusercontent.com/jaeksoft/opensearchserver/v1.5.14/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Shell to start the server on Unix"
+  - field: adminUi
+    value: yes, web user interface
+    url: https://raw.githubusercontent.com/jaeksoft/opensearchserver/v1.5.14/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Using the web user interface, the crawlers (web, file, database, ...) and the REST/RESTFul API"
+  - field: headlessApi
+    value: [rest]
+    url: https://raw.githubusercontent.com/jaeksoft/opensearchserver/v1.5.14/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "the REST/RESTFul API"
+  - field: license
+    value: GPL-3.0
+    url: https://raw.githubusercontent.com/jaeksoft/opensearchserver/v1.5.14/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This software is licensed under the GPL v3."
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/jaeksoft/opensearchserver/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/jaeksoft/opensearchserver/v1.5.14/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This software is licensed under the GPL v3."
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/jaeksoft/opensearchserver/commits/v1.5.14
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2016-08-09
+    url: https://api.github.com/repos/jaeksoft/opensearchserver/commits/v1.5.14
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2009
+    url: https://api.github.com/repos/jaeksoft/opensearchserver/commits/1.0b2
+    checkedAt: 2026-10-28
+    via: api
+  - field: mavenCoordinates
+    value: com.jaeksoft:opensearchserver
+    url: https://repo1.maven.org/maven2/com/jaeksoft/opensearchserver/maven-metadata.xml
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 517
+    url: https://api.github.com/repos/jaeksoft/opensearchserver
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 12
+    url: https://api.github.com/repos/jaeksoft/opensearchserver/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, docs, hqCountry, parent, successorOf, forkOf, hostedService, pricingPage, paidEdition, renderingModes, contentStore, databases, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, discord, x, bluesky, mastodon, subreddit, newsletter, forum, pluginDirectory, pluginCount, npmName, packagistName, pypiDownloads, usageShare, reportedInstalls, endoflifeId, lastCommitDate, basedOn]
+unreadable: [https://www.opensearchserver.com/ (no answer within 60 seconds on http and https, 2026-10-28; the DNS record resolves to 157.245.244.52), https://www.opensearchserver.com/documentation (same)]
+notes: >
+  Stub: the project's own homepage and documentation did not answer on 2026-10-28 (two attempts, 60 seconds each, over http and https; the name resolves), so no homepage is linked and the status is a stub; a later pass should retry the site, and if it still does not answer, decide whether the software is rejected or discontinued. Criterion 4 is the second doubt: the newest tag, v1.5.14, is dated 2016-08-09 and the default branch's last commit is 2021-08-09, with no GitHub release and no Maven Central version after 1.5.14 (its maven-metadata lastUpdated is 2016-08-09). The GitHub API lists no releases; latestReleaseDate is the date of the tagged commit, not a release record. The README of the default branch names Apache 2.0 and says "Docker image ... Not yet there.. coming soon", while the v1.5.14 README names GPL v3 for the released code; both license statements are recorded as their own entries, and GitHub also reports Apache-2.0 for the repository. The README says the software is "based on Lucene"; Lucene is not a record id, so basedOn stays empty. The default branch README says the product "Supports 18 languages" and that it has a JDBC crawler; these are not recorded. The v1.5.14 README gives Java 7 as the minimum runtime; the release tag is from 2016 so the Java statement is historical and the reviewer should confirm it before listing. The HTTP Archive technologies list does not carry OpenSearchServer. The README badges link a Gitter chat, which is not a field.

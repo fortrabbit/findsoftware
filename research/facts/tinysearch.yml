@@ -1,0 +1,158 @@
+id: tinysearch
+name: tinysearch
+status: accepted
+checkedAt: 2026-10-28
+description: Full-text search engine for static websites that compiles a Rust-built search index into WebAssembly for the browser.
+facts:
+  - field: repository
+    value: https://github.com/tinysearch/tinysearch
+    url: https://github.com/tinysearch/tinysearch
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/tinysearch/tinysearch/blob/master/README.md
+    url: https://github.com/tinysearch/tinysearch/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+  - field: firstRelease
+    value: 2019
+    url: https://crates.io/api/v1/crates/tinysearch/versions
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Matthias Endler
+    url: https://github.com/tinysearch/tinysearch/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Matthias Endler (@mre)"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/tinysearch
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: Apache-2.0 OR MIT
+    url: https://github.com/tinysearch/tinysearch/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "tinysearch is licensed under either of"
+  - field: language
+    value: Rust
+    url: https://github.com/tinysearch/tinysearch
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: rust
+    url: https://github.com/tinysearch/tinysearch/blob/v0.11.1/Cargo.toml
+    checkedAt: 2026-10-28
+    via: page
+  - field: runtimeMin
+    value: "1.85"
+    url: https://github.com/tinysearch/tinysearch/blob/v0.11.1/Cargo.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'rust-version = "1.85"'
+  - field: runsAs
+    value: browser
+    url: https://github.com/tinysearch/tinysearch/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "compiled to WebAssembly to run in a browser"
+  - field: runsAs
+    value: static
+    url: https://github.com/tinysearch/tinysearch/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Since we bundle all search indices for all articles into one static binary"
+  - field: runsAs
+    value: local
+    url: https://github.com/tinysearch/tinysearch/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Generate WASM files with demo for development"
+  - field: installMethod
+    value: cargo install
+    url: https://github.com/tinysearch/tinysearch/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "cargo install tinysearch"
+  - field: installMethod
+    value: cargo add (library)
+    url: https://github.com/tinysearch/tinysearch/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "cargo add tinysearch"
+  - field: installMethod
+    value: docker
+    url: https://github.com/tinysearch/tinysearch/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "you can also use our nightly-built Docker images"
+  - field: categories
+    value: [search-index]
+    url: https://github.com/tinysearch/tinysearch/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "tinysearch is a lightweight, fast, full-text search engine"
+  - field: alternativeTo
+    value: [elasticlunr]
+    url: https://github.com/tinysearch/tinysearch/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "It can be seen as an alternative to"
+  - field: githubStargazers
+    value: 2978
+    url: https://github.com/tinysearch/tinysearch
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 22
+    url: https://api.github.com/repos/tinysearch/tinysearch/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: crateName
+    value: tinysearch
+    url: https://crates.io/api/v1/crates/tinysearch
+    checkedAt: 2026-10-28
+    via: api
+  - field: crateDownloads
+    value: 52246
+    url: https://crates.io/api/v1/crates/tinysearch
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/tinysearch
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/tinysearch
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/tinysearch/tinysearch/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-14
+    url: https://api.github.com/repos/tinysearch/tinysearch/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: buildCommand
+    value: "tinysearch --release -m wasm -p wasm_output fixtures/index.json"
+    url: https://github.com/tinysearch/tinysearch/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "tinysearch --release -m wasm -p wasm_output fixtures/index.json"
+  - field: outputDir
+    value: "wasm_output"
+    url: https://github.com/tinysearch/tinysearch/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "tinysearch --release -m wasm -p wasm_output fixtures/index.json"
+notFound: [homepage, hqCountry, maintainerType, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, sso, paidEdition, pricingPage, endoflifeId, packagistName, npmName, pypiDownloads, usageShare, reportedInstalls, latestPrereleaseDate, basedOn, forum, discord, x, mastodon, bluesky, newsletter]
+unreadable: []
+notes: >
+  No homepage is linked: the GitHub homepage field points to endler.dev/2019/tinysearch, a blog post by the maintainer that the README lists among sites using tinysearch, so it is not the project's own site; a reviewer may decide otherwise. The README names Jekyll, Hugo, Zola, Cobalt and Pelican as static site generators it is used with, and lists sites that use it; neither is recorded as a field. The README says tinysearch is a Rust and WebAssembly port of Python code from an article on stavros.io, which is a source and not a parent. Other maintainers named in the README are Jorge-Luis Betancourt and Mad Mike. The GitHub license is Apache-2.0 alone while the README and Cargo.toml state Apache-2.0 OR MIT; the wordings are one entry. The 0.6.x releases are marked as prereleases on GitHub and are excluded from the major; the crates.io uploads 0.1.0 and 0.1.1 from 2019 are older than the first GitHub tag, so they set the firstRelease. The README lists the endler.dev blog and two other sites as users, which are not recorded. The README's binaryen optimizer is a build tool the install uses, not a runtime.

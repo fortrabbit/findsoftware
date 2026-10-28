@@ -1,0 +1,119 @@
+id: sunspot
+name: Sunspot
+status: accepted
+checkedAt: 2026-10-28
+description: "Ruby library that provides a DSL for indexing Ruby objects and searching them through the Solr search engine."
+facts:
+  - field: homepage
+    value: https://sunspot.github.io
+    url: https://sunspot.github.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Sunspot: Solr-powered search for Ruby objects"
+  - field: repository
+    value: https://github.com/sunspot/sunspot
+    url: https://api.github.com/repos/sunspot/sunspot
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/sunspot/sunspot/blob/master/README.md
+    url: https://github.com/sunspot/sunspot/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Sunspot is a Ruby library for expressive, powerful interaction with the Solr search engine."
+  - field: maintainer
+    value: Mat Brown
+    url: https://github.com/sunspot/sunspot/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2008 Mat Brown"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/sunspot/sunspot/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2008 Mat Brown"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/sunspot
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/sunspot/sunspot
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://github.com/sunspot/sunspot/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Sunspot is a Ruby library for expressive, powerful interaction with the Solr search engine."
+  - field: categories
+    value: [search]
+    url: https://github.com/sunspot/sunspot/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Sunspot is a Ruby library for expressive, powerful interaction with the Solr search engine."
+  - field: installMethod
+    value: [bundler]
+    url: https://github.com/sunspot/sunspot/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "gem 'sunspot_rails'"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/sunspot/sunspot
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/sunspot/sunspot/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: rubygemsName
+    value: sunspot
+    url: https://rubygems.org/api/v1/gems/sunspot.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: rubygemsDownloads
+    value: 6786260 (total)
+    url: https://rubygems.org/api/v1/gems/sunspot.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/sunspot/sunspot/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2024-07-16
+    url: https://api.github.com/repos/sunspot/sunspot/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2009"
+    url: https://rubygems.org/api/v1/versions/sunspot.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 2977
+    url: https://api.github.com/repos/sunspot/sunspot
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 190
+    url: https://api.github.com/repos/sunspot/sunspot/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: basedOn
+    value: [solr]
+    url: https://sunspot.github.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Sunspot: Solr-powered search for Ruby objects"
+notFound: [hqCountry, parent, forkOf, successorOf, alternativeTo, pricingPage, paidEdition, npmName, packagistName, pypiName, endoflifeId, usageShare, reportedInstalls, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, contentStore, databases, adminUi, runsAs, renderingModes, runtimeMin, docker, wikidata]
+unreadable: []
+notes: >
+  The monorepo holds the core gem sunspot, the Rails integration sunspot_rails and the bundled Solr distribution sunspot_solr, all MIT-licensed at v2.7.1; the rubygems figure is for the core gem sunspot. The README says sunspot_solr is a pre-packaged Solr distribution "for use in development. Not for use in production", so a production site needs its own Solr server, which runs as an always-on process; no runsAs is recorded for the library itself. basedOn is solr, from the homepage title "Solr-powered search for Ruby objects"; rails is not a parent: the README says the sunspot_rails gem integrates Sunspot into Rails and the homepage says "Use it with or without Rails", so Rails is the integration target, not the parent of the core. The gemspecs and the CI matrix list Ruby 2.5 to 3.x in CI, but no required_ruby_version is stated in the gemspec at v2.7.1, so runtimeMin is not recorded. The LICENSE copyright line names Mat Brown (2008); the gemspec authors list has several names, which are not recorded as the maintainer. The homepage is served over https and the gemspec homepage is the same address. The rubygems homepage_uri still points to an older address, which is not recorded. The RubyGems version history starts with 0.9.7 (2009-09-24), and the oldest GitHub tag v0.0.2 is a 2009-02-14 commit, so firstRelease is 2009 either way. The GitHub releases start with v2.2.8 (2018), and the 2.x tags are the stable line.

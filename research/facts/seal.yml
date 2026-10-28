@@ -1,0 +1,123 @@
+id: seal
+name: SEAL
+status: accepted
+checkedAt: 2026-10-28
+description: PHP library that gives one interface for adding, removing and searching documents across several search engines.
+facts:
+  - field: homepage
+    value: https://php-cmsig.github.io/search/
+    url: https://php-cmsig.github.io/search/index.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The SEAL project is a PHP library designed to simplify the process of interacting with different search engines"
+  - field: docs
+    value: https://php-cmsig.github.io/search/getting-started/index.html
+    url: https://php-cmsig.github.io/search/getting-started/index.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "composer require cmsig/seal"
+  - field: repository
+    value: https://github.com/PHP-CMSIG/search
+    url: https://api.github.com/repos/PHP-CMSIG/search
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Alexander Schranz
+    url: https://github.com/PHP-CMSIG/seal/blob/0.12.19/composer.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: "\"name\": \"Alexander Schranz\""
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/PHP-CMSIG
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2023"
+    url: https://repo.packagist.org/p2/cmsig/seal.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/PHP-CMSIG/search
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/PHP-CMSIG/seal/blob/0.12.19/composer.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: "\"php\": \"^8.1\""
+  - field: runtimeMin
+    value: "8.1"
+    url: https://github.com/PHP-CMSIG/seal/blob/0.12.19/composer.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: "\"php\": \"^8.1\""
+  - field: categories
+    value: [search-library]
+    url: https://php-cmsig.github.io/search/index.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The SEAL project is a PHP library designed to simplify the process of interacting with different search engines"
+  - field: installMethod
+    value: [composer require]
+    url: https://php-cmsig.github.io/search/getting-started/index.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "composer require cmsig/seal"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/PHP-CMSIG/search
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/PHP-CMSIG/seal/blob/0.12/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: packagistName
+    value: cmsig/seal
+    url: https://repo.packagist.org/p2/cmsig/seal.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistDownloads
+    value: 547754 total
+    url: https://packagist.org/packages/cmsig/seal.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistDownloads
+    value: 92263 monthly
+    url: https://packagist.org/packages/cmsig/seal.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 41
+    url: https://packagist.org/packages/cmsig/seal.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://repo.packagist.org/p2/cmsig/seal.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-15
+    url: https://repo.packagist.org/p2/cmsig/seal.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 443
+    url: https://api.github.com/repos/PHP-CMSIG/search
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 28
+    url: https://api.github.com/repos/PHP-CMSIG/search/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, npmName, npmWeeklyDownloads, runsAs, renderingModes, lastCommitDate, hostedOffering]
+unreadable: []
+notes: >
+  The install docs name composer require cmsig/seal, the core package, so the Packagist name cmsig/seal is recorded. The repository field names the monorepo PHP-CMSIG/search, where development happens; PHP-CMSIG/seal is a read-only split whose README says issues belong in the main repository, so the stars, contributor count, language and license come from the monorepo. The candidates row's packagist 522.1k total is stale: Packagist gives 547,754 total today. The ecosyste.ms API gives 0 dependent packages and 0 dependent repositories for cmsig/seal, while Packagist lists 41 dependents; the Packagist figure is recorded and the disagreement is for the reviewer. The introduction says the library is inspired by Doctrine DBAL and Flysystem; that is inspiration, not a basedOn statement, and the framework integration packages (Laravel, Symfony, Spiral, Mezzio, Yii) are separate packages that are not recorded here. The introduction says the data is stored in the search engine (Loupe, Meilisearch, Algolia, Elasticsearch, Opensearch, Redisearch, Solr, Typesense), not in SEAL, so no contentStore is recorded. The README calls the project heavily under development. The first tag is 0.1.0, and its commit is dated 2023-05-11, the same day as the first Packagist upload; the repository was created 2022-12-20. The repository has no GitHub releases, only tags, and the default branch is 0.12. The category search-integration in the candidates row is not used: the core package is a library and the integrations are separate packages. The maintainer is Alexander Schranz by the composer.json authors field and the LICENSE copyright line; the organization PHP-CMSIG is the repository owner.

@@ -1,0 +1,3 @@
+Ransack is a Ruby gem that adds searching and sorting to a Rails application. It is a library rather than a server: it runs inside the application and has no separate process or content store of its own.
+
+The gem is added to the Gemfile and installed with bundle install. The project documents PostgreSQL, MySQL, MariaDB and SQLite as supported databases, ships translation files for predicate and attribute names, and the [getting started guide](https://activerecord-hackery.github.io/ransack/getting-started/) covers installation for the supported Rails and Ruby versions. Sean Carroll is named as a maintainer, with Deivid Rodriguez and Greg Molnar.

@@ -1,0 +1,160 @@
+id: sosse
+name: SOSSE
+status: stub
+checkedAt: 2026-10-28
+description: "Self-hosted search engine that crawls and archives web pages, using Selenium for pages that need JavaScript, and searches their content."
+facts:
+  - field: repository
+    value: https://github.com/biolds/sosse
+    url: https://api.github.com/repos/biolds/sosse
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://sosse.readthedocs.io/en/stable/index.html
+    url: https://sosse.readthedocs.io/en/stable/index.html
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: Laurent Defert
+    url: https://sosse.readthedocs.io/en/stable/install/docker.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright © 2022-2025, Laurent Defert"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/biolds
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Python
+    url: https://github.com/biolds/sosse/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Sosse is written in Python"
+  - field: runtime
+    value: [python]
+    url: https://github.com/biolds/sosse/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Sosse is written in Python"
+  - field: runtimeMin
+    value: "3.11"
+    url: https://pypi.org/pypi/sosse/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search]
+    url: https://github.com/biolds/sosse/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "built for powerful web archiving, crawling, and search"
+  - field: license
+    value: AGPL-3.0
+    url: https://api.github.com/repos/biolds/sosse
+    checkedAt: 2026-10-28
+    via: api
+  - field: installMethod
+    value: [pip]
+    url: https://sosse.readthedocs.io/en/stable/install/pip.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "/opt/sosse-venv/bin/pip install sosse"
+  - field: installMethod
+    value: [debian package]
+    url: https://sosse.readthedocs.io/en/stable/install/debian.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "apt install -y sosse"
+  - field: installMethod
+    value: [docker]
+    url: https://github.com/biolds/sosse/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "docker run -p 8005:80 biolds/sosse:stable"
+  - field: runsAs
+    value: [always-on]
+    url: https://sosse.readthedocs.io/en/stable/install/debian.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "enable the daemons and start them"
+  - field: databases
+    value: [postgres]
+    url: https://github.com/biolds/sosse/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Sosse uses PostgreSQL for data storage."
+  - field: contentStore
+    value: [database]
+    url: https://github.com/biolds/sosse/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Sosse uses PostgreSQL for data storage."
+  - field: adminUi
+    value: "yes, for crawlers and statistics"
+    url: https://github.com/biolds/sosse/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Admins can configure crawlers and view statistics"
+  - field: currentMajor
+    value: 1
+    url: https://pypi.org/pypi/sosse/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2025-10-16
+    url: https://pypi.org/pypi/sosse/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2023"
+    url: https://pypi.org/pypi/sosse/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 408
+    url: https://api.github.com/repos/biolds/sosse
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/biolds/sosse/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiName
+    value: sosse
+    url: https://pypi.org/pypi/sosse/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiDownloads
+    value: 4 (last month)
+    url: https://pypistats.org/api/packages/sosse/recent
+    checkedAt: 2026-10-28
+    via: api
+  - field: discord
+    value: https://discord.gg/Vt9cMf7BGK
+    url: https://github.com/biolds/sosse/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Join the Discord server to get help, share ideas, or discuss Sosse!"
+  - field: installMethod
+    value: [docker-compose]
+    url: https://sosse.readthedocs.io/en/stable/install/docker_compose.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "docker-compose up -d"
+  - field: headlessApi
+    value: [rest]
+    url: https://sosse.readthedocs.io/en/stable/user/rest_api.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A rest API is available, it can be explored with a Swagger user interface."
+  - field: userRoles
+    value: "fine-grained permissions by group and by user"
+    url: https://sosse.readthedocs.io/en/stable/permissions.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "fine-grained permissions can be defined by group and by user"
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, pricingPage, paidEdition, npmName, packagistName, endoflifeId, usageShare, reportedInstalls, templating, i18n, multisite, livePreview, sso, importsFrom, forum, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, wikidata, maintainerType]
+unreadable: [https://sosse.io/ (TLS certificate covers another host)]
+notes: >
+  Doubt: the homepage sosse.io does not load over TLS, because the certificate it serves is for a Netlify host, so no homepage is recorded; a working https page on sosse.io, or a new homepage the project names, would settle it. Criterion 1 needs a reviewer's judgement too: Sosse is a standalone search and archive application that crawls pages, not a search component added to a site. The README and PyPI metadata name sosse.io as the official website, and the PyPI project names gitlab.com/biolds1/sosse as its source; the GitHub repository is recorded as the repository. The project has tags up to v1.14.2 but no GitHub releases, so currentMajor and latestReleaseDate come from PyPI, and firstRelease matches the v1.0.0 tag commit (2023-04-30). The PyPI pypistats recent endpoint reports last_week 22 and last_month 4, which is inconsistent; the last-month figure is recorded per the convention and the last-week figure differs. The Python package names Django in its classifiers and the uWSGI config comments mention Django; the docs do not state the parent, so no basedOn is recorded. Debian packages come from a repository on piggledy.org that the Debian install page names. No license statement other than AGPL-3.0 was found, and the README and LICENSE agree. The docs footer gives the name Laurent Defert; no legal notice was found.

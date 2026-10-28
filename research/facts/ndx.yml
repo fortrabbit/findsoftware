@@ -1,0 +1,98 @@
+id: ndx
+name: ndx
+status: stub
+checkedAt: 2026-10-28
+description: Lightweight full-text indexing and search library for JavaScript and TypeScript, with a dynamic inverted index.
+facts:
+  - field: repository
+    value: https://github.com/localvoid/ndx
+    url: https://api.github.com/repos/localvoid/ndx
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Boris Kaul
+    url: https://raw.githubusercontent.com/localvoid/ndx/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2016-2023 Boris Kaul"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/localvoid/ndx/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/localvoid
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://registry.npmjs.org/ndx
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/localvoid/ndx
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-library]
+    url: https://raw.githubusercontent.com/localvoid/ndx/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Lightweight Full-Text Indexing and Searching Library."
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/localvoid/ndx
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/localvoid/ndx/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: npmName
+    value: ndx
+    url: https://registry.npmjs.org/ndx/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1708 (2026-09-28 to 2026-10-04)
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/ndx
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 9
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ndx
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 16
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ndx
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 156
+    url: https://api.github.com/repos/localvoid/ndx
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/localvoid/ndx/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://registry.npmjs.org/ndx/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2023-03-14
+    url: https://registry.npmjs.org/ndx
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, docs, parent, basedOn, forkOf, successorOf, alternativeTo, installMethod, runtime, runsAs, runtimeMin, hostedOffering, paidEdition, hqCountry, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, endoflifeId, pricingPage, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, starters, docker, packagistName, pypiName, pypiDownloads, packagistDownloads, usageShare, reportedInstalls, deployTargets, latestPrereleaseDate]
+unreadable: []
+notes: >
+  Criterion 3 is in doubt: the GitHub README and the npm package (which carries no readme field) show import examples from "ndx" and "ndx/query" but no install command, so a documented install is not found; a README install section or an install page would settle it. The repository has no GitHub release, and the npm package has 16 versions, the latest 2.0.1 (2023-03-14); the registry's stable version gives currentMajor, and latestReleaseDate follows npm. The last commit on the default branch is 2023-03-15, so the project is under the four-year limit of criterion 4 until March 2027. The README badge links github.com/ndx-search/ndx; GitHub resolves that address to localvoid/ndx, so the repository is recorded at localvoid/ndx. The homepage field on npm points to the same repository, so no homepage is recorded. The README calls the library a lightweight full-text indexing and searching library for documents stored on disk (IndexedDB), and names no runtime; runsAs is not recorded. The npm weekly figure is the sum of the range 2026-09-28 to 2026-10-04, a full week. The README describes BM25 ranking, per-field score boosting and a trie-based inverted index, and states that queries support only disjunction operators and that the index stores no term locations. It names alternative solutions (a uFuzzy benchmark link and fst) without a migration or comparison page, so alternativeTo is not recorded. The HTTP Archive technologies list does not carry ndx.

@@ -1,0 +1,3 @@
+LIFTI is a .NET library that builds a full-text index in memory. An application adds text against a key, or configures an index to read text from the properties of an object, and then runs queries that combine terms with operators. The index can be serialized to a stream and read back later, and the [docs](https://mikegoatly.github.io/lifti/docs) describe writing it to a backing file as changes are made.
+
+Searching uses the English Porter stemmer by default, and the docs describe implementing a custom stemmer for other needs. The package is distributed through NuGet, and the docs name client applications such as Blazor and ASP.NET applications that search a long list of words as use cases.

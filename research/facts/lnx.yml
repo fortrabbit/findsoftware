@@ -1,0 +1,127 @@
+id: lnx
+name: lnx
+status: accepted
+checkedAt: 2026-10-28
+description: Open-source search server that serves a tantivy-based search index through a REST API, with typo-tolerant queries.
+facts:
+  - field: homepage
+    value: https://lnx.rs
+    url: https://lnx.rs/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "An open-source, lightning-fast and typo tolerant search engine"
+  - field: repository
+    value: https://github.com/lnx-search/lnx
+    url: https://api.github.com/repos/lnx-search/lnx
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://docs.lnx.rs
+    url: https://docs.lnx.rs/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Lnx Documentation"
+  - field: maintainer
+    value: Harrison Burt
+    url: https://raw.githubusercontent.com/lnx-search/lnx/0.9.0/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2021 Harrison Burt"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/lnx-search/lnx/0.9.0/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2021 Harrison Burt"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/lnx-search
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-server]
+    url: https://lnx.rs/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "An open-source, lightning-fast and typo tolerant search engine"
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/lnx-search/lnx
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [rust binary]
+    url: https://raw.githubusercontent.com/lnx-search/lnx/0.9.0/Cargo.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: "lnx-server"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/lnx-search/lnx
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/lnx-search/lnx/0.9.0/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/lnx-search/lnx/0.9.0/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: installMethod
+    value: docker
+    url: https://lnx.rs/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Quick start with docker"
+  - field: runsAs
+    value: [always-on]
+    url: https://lnx.rs/
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'docker run -p "8000:8000" chillfish8/lnx:latest'
+  - field: headlessApi
+    value: rest
+    url: https://raw.githubusercontent.com/lnx-search/lnx/0.9.0/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "via REST"
+  - field: i18n
+    value: 17 Latin languages
+    url: https://lnx.rs/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Currently lnx supports 17 latin languages."
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/lnx-search/lnx/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2022-06-25
+    url: https://api.github.com/repos/lnx-search/lnx/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2021"
+    url: https://api.github.com/repos/lnx-search/lnx/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1457
+    url: https://api.github.com/repos/lnx-search/lnx
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 2
+    url: https://api.github.com/repos/lnx-search/lnx/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, databases, contentStore, livePreview, userRoles, sso, multisite, adminUi, templating, renderingModes, selfHostOption, hostedService, regions, apiLimits, paidEdition, freeTier, pricingPage, endoflifeId, runtimeMin, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, crateName, crateDownloads, latestPrereleaseDate, lastCommitDate, hqCountry, deployTargets, buildCommand, outputDir]
+unreadable: []
+notes: >
+  The candidates row named the default branch of the repository, which the README marks as the active development branch (0.10.0-lighting-feature) and tells readers to check out the latest stable release, tag 0.9.0. The GitHub API reports 0.9.0-master (2022-10-05) as the latest release; the README and the tag 0.9.0 (2022-06-25) are taken as the stable release, so latestReleaseDate is 2022-06-25. The 0.9.0-master build is not recorded as a prerelease: it is a build from the master branch and not an alpha, beta or release candidate. The reviewer should decide whether it counts as the latest release. The latest release is more than four years old on 2026-10-28, so the import moves the record to stub under the four-year rule; status is left accepted here. The stable major is 0, since the 0.x series has no major version of its own; the rule records the major only. The crate name lnx is not recorded: no page names crates.io as an install route. The Cargo workspace at 0.9.0 declares no rust-version, so no runtimeMin is recorded; the development branch README names rustc 1.81 for building from source, and that is the development branch, not the stable release. The homepage quick start runs the Docker image chillfish8/lnx; the image tag is latest, so no version is recorded for it. The 0.9.0 README and the homepage give the REST server, and the docs at docs.lnx.rs are an OpenAPI reference rendered from the server's openapi.json. The README says lnx stands on tokio, hyper and tantivy; those are not records, so no basedOn is recorded and the names are kept here. The homepage footer reads "2021 lnx search", and the LICENSE copyright line names Harrison Burt, the name used as maintainer; the GitHub organization lnx-search is the repository owner, with a location of the United Kingdom that is not a legal notice, so no hqCountry is recorded. The README's Limitations section says lnx is not distributed yet and lists metrics as not yet offered. The homepage names 17 latin languages and says Chinese, Japanese and Korean are planned.

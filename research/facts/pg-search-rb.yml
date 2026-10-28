@@ -1,0 +1,130 @@
+id: pg-search-rb
+name: pg_search
+status: accepted
+checkedAt: 2026-10-28
+description: Ruby gem that adds PostgreSQL full-text search scopes to Active Record models.
+facts:
+  - field: repository
+    value: https://github.com/Casecommons/pg_search
+    url: https://github.com/Casecommons/pg_search
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/Casecommons/pg_search/blob/master/README.md
+    url: https://github.com/Casecommons/pg_search/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "pg_search builds named scopes that take advantage of PostgreSQL's full text search"
+  - field: firstRelease
+    value: 2011
+    url: https://rubygems.org/api/v1/versions/pg_search.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Casebook, PBC
+    url: https://github.com/Casecommons/pg_search/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2010-2026 Casebook, PBC"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Casecommons
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/Casecommons/pg_search/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Licensed under the MIT license"
+  - field: language
+    value: Ruby
+    url: https://github.com/Casecommons/pg_search
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-integration]
+    url: https://github.com/Casecommons/pg_search/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "pg_search builds named scopes that take advantage of PostgreSQL's full text search"
+  - field: basedOn
+    value: rails
+    url: https://github.com/Casecommons/pg_search/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This isn't necessary for Rails projects, which gain the Rake tasks via a Railtie"
+  - field: runtime
+    value: [ruby]
+    url: https://github.com/Casecommons/pg_search/blob/v2.4.0/pg_search.gemspec
+    checkedAt: 2026-10-28
+    via: page
+    quote: 's.required_ruby_version = ">= 3.3"'
+  - field: runtimeMin
+    value: Ruby 3.3
+    url: https://github.com/Casecommons/pg_search/blob/v2.4.0/pg_search.gemspec
+    checkedAt: 2026-10-28
+    via: page
+    quote: 's.required_ruby_version = ">= 3.3"'
+  - field: databases
+    value: [postgres]
+    url: https://github.com/Casecommons/pg_search/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "PostgreSQL 9.2+"
+  - field: installMethod
+    value: [gem]
+    url: https://github.com/Casecommons/pg_search/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "$ gem install pg_search"
+  - field: installMethod
+    value: [gemfile]
+    url: https://github.com/Casecommons/pg_search/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "add this line to your Gemfile"
+  - field: currentMajor
+    value: 2
+    url: https://rubygems.org/api/v1/gems/pg_search.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-07
+    url: https://rubygems.org/api/v1/gems/pg_search.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1589
+    url: https://github.com/Casecommons/pg_search
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 74
+    url: https://api.github.com/repos/Casecommons/pg_search/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: rubygemsName
+    value: pg_search
+    url: https://rubygems.org/api/v1/gems/pg_search.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: rubygemsDownloads
+    value: 53756864
+    url: https://rubygems.org/api/v1/gems/pg_search.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 31
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/pg_search
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 6913
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/pg_search
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, runsAs, renderingModes, paidEdition, hostedOffering, pricingPage, adminUi, headlessApi, sso, i18n, contentStore, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, pypiDownloads, npmName, packagistName, endoflifeId, pluginCount, starters, npmWeeklyDownloads, hqCountry]
+unreadable: []
+notes: >
+  No project site: the GitHub homepage field points at casebook.net, the maintainer's case-management product site, which does not mention pg_search; the gem's RubyGems homepage is the repository. The license is MIT in the README, the LICENSE file and the gemspec; one wording, one entry. Tags run to v2.4.0 with no GitHub releases; the registry's 2.4.0 matches the tag, so the major and the release date come from RubyGems. The maintainer's address is not on the pages read, so hqCountry is absent. The README points to PostgreSQL extensions for some features (a wiki page, not read); it also links a Gitter chat, which no field holds. The gem's minimum runtime is the gemspec's required_ruby_version at the 2.4.0 tag; the README's "Ruby 3.3+" agrees. The PostgreSQL extension of the same name is a different project, ParadeDB's pg_search, and has its own record. Active Record 8.0 is a required dependency; the basedOn entry names Rails because the README places the gem in Rails projects via a Railtie.

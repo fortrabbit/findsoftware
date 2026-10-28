@@ -1,0 +1,137 @@
+id: norch
+name: Norch
+status: accepted
+checkedAt: 2026-10-28
+description: Standalone search server, installed with npm, that indexes JSON documents and answers queries over an HTTP API.
+facts:
+  - field: repository
+    value: https://github.com/fergiemcdowall/norch
+    url: https://api.github.com/repos/fergiemcdowall/norch
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://fergiemcdowall.github.io/norch/www_root/openapi/
+    url: https://raw.githubusercontent.com/fergiemcdowall/norch/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Checkout the OpenAPI documentation"
+  - field: maintainer
+    value: fergiemcdowall
+    url: https://api.github.com/users/fergiemcdowall
+    checkedAt: 2026-10-28
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/fergiemcdowall
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/fergiemcdowall/norch
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://raw.githubusercontent.com/fergiemcdowall/norch/v1.0.1/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"node": ">=18"'
+  - field: runtimeMin
+    value: "18"
+    url: https://raw.githubusercontent.com/fergiemcdowall/norch/v1.0.1/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"node": ">=18"'
+  - field: categories
+    value: [search-server]
+    url: https://raw.githubusercontent.com/fergiemcdowall/norch/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Norch is a stand alone search server that can be installed with npm"
+  - field: installMethod
+    value: [npx]
+    url: https://raw.githubusercontent.com/fergiemcdowall/norch/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "In a terminal type `npx norch`"
+  - field: installMethod
+    value: [npm]
+    url: https://raw.githubusercontent.com/fergiemcdowall/norch/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Norch is a stand alone search server that can be installed with npm"
+  - field: runsAs
+    value: [always-on]
+    url: https://raw.githubusercontent.com/fergiemcdowall/norch/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Norch is a stand alone search server"
+  - field: databases
+    value: [leveldb]
+    url: https://raw.githubusercontent.com/fergiemcdowall/norch/v1.0.1/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A search engine based on Node.js and LevelDB"
+  - field: adminUi
+    value: yes, web uploader and search pages
+    url: https://raw.githubusercontent.com/fergiemcdowall/norch/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Add documents by going to quickstart on your"
+  - field: headlessApi
+    value: [rest]
+    url: https://raw.githubusercontent.com/fergiemcdowall/norch/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Checkout the OpenAPI documentation"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/fergiemcdowall/norch/v1.0.1/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"license": "MIT"'
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/fergiemcdowall/norch/v1.0.1/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"license": "MIT"'
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/fergiemcdowall/norch/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2025-08-18
+    url: https://api.github.com/repos/fergiemcdowall/norch/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://api.github.com/repos/fergiemcdowall/norch/commits/v0.2.1
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: norch
+    url: https://registry.npmjs.org/norch/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 16 (2026-09-28 to 2026-10-04)
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/norch
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 657
+    url: https://api.github.com/repos/fergiemcdowall/norch
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 12
+    url: https://api.github.com/repos/fergiemcdowall/norch/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, hqCountry, parent, successorOf, forkOf, hostedService, pricingPage, paidEdition, renderingModes, contentStore, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, discord, x, bluesky, mastodon, subreddit, newsletter, forum, pluginDirectory, pluginCount, packagistName, pypiDownloads, usageShare, reportedInstalls, endoflifeId, lastCommitDate, basedOn]
+unreadable: []
+notes: >
+  The repository's homepage field points to the repository itself, so no homepage is recorded. The package description names LevelDB as the store, recorded as databases leveldb from package.json. The package depends on search-index 6.0.1 and the README says Norch "uses the search-index query language"; a dependency and a query language are not a basedOn statement, so basedOn stays empty. The npm package's "next" dist-tag (1.0.0-rc5) is a prerelease and is not recorded. The npm weekly figure is the sum of the daily downloads for 2026-09-28 to 2026-10-04 (16), per the range endpoint, a full week; the figure in the candidates row is stale. The first GitHub tag is v0.2.1 (2013-07-05); npm lists versions from 2014, and the oldest release of this repository sets firstRelease. The maintainer is named by the GitHub user and the npm maintainer entry; no legal name or copyright line is published in the repository (no LICENSE file is detected by GitHub, and the README license section is only a badge), so no legal form is recorded. The README's MIT badge agrees with package.json. The repository has no LICENSE file that GitHub can read, so the license is taken from package.json at v1.0.1. The HTTP Archive technologies list does not carry Norch. The README also shows programmatic use inside a Node project.

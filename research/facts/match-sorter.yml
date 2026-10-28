@@ -1,0 +1,110 @@
+id: match-sorter
+name: match-sorter
+status: accepted
+checkedAt: 2026-10-28
+description: JavaScript library that filters and sorts an array by how well each item matches a search string, with a fixed ranking order.
+facts:
+  - field: repository
+    value: https://github.com/kentcdodds/match-sorter
+    url: https://api.github.com/repos/kentcdodds/match-sorter
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Kent C. Dodds
+    url: https://raw.githubusercontent.com/kentcdodds/match-sorter/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2020 Kent C. Dodds"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/kentcdodds/match-sorter/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/kentcdodds
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://api.github.com/repos/kentcdodds/match-sorter/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/kentcdodds/match-sorter
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [fuzzy-match]
+    url: https://raw.githubusercontent.com/kentcdodds/match-sorter/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Simple, expected, and deterministic best-match sorting of an array in JavaScript"
+  - field: installMethod
+    value: npm
+    url: https://raw.githubusercontent.com/kentcdodds/match-sorter/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm install match-sorter"
+  - field: alternativeTo
+    value: Fuse.js
+    url: https://raw.githubusercontent.com/kentcdodds/match-sorter/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "You might try [Fuse.js](https://github.com/krisk/Fuse)."
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/kentcdodds/match-sorter
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/kentcdodds/match-sorter/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: npmName
+    value: match-sorter
+    url: https://registry.npmjs.org/match-sorter/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 4224892 (2026-09-28 to 2026-10-04)
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/match-sorter
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 583
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/match-sorter
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 50987
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/match-sorter
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 4116
+    url: https://api.github.com/repos/kentcdodds/match-sorter
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 41
+    url: https://api.github.com/repos/kentcdodds/match-sorter/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 8
+    url: https://api.github.com/repos/kentcdodds/match-sorter/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-04-15
+    url: https://api.github.com/repos/kentcdodds/match-sorter/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, docs, parent, basedOn, forkOf, successorOf, hostedOffering, paidEdition, hqCountry, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runtime, runsAs, runtimeMin, endoflifeId, pricingPage, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, starters, docker, packagistName, pypiName, pypiDownloads, packagistDownloads, usageShare, reportedInstalls, deployTargets]
+unreadable: []
+notes: >
+  No homepage is recorded: the npm and GitHub homepage fields point to the npm page and the repository README, and the author's personal site is not the project's. The README names no runtime, and it states the browser global only in a code comment ("window.matchSorter.matchSorter"), so runsAs and runtime are left out. The README's Node usage ("require('match-sorter')") is also a code comment. The ranking order in the README (case-sensitive equality, equality, starts with, and so on) is a description of the matcher, and the category fuzzy-match is taken from the candidate row. The npm weekly figure is the sum of the range 2026-09-28 to 2026-10-04, a full week; the API returns zero days for the later weeks. The ecosyste.ms counts are for the npm package. The maintainer is the copyright holder in the LICENSE file. The README's "Inspiration" section says the code was extracted from the author's earlier library genie; genie is not recorded as basedOn because the README names it as the source of code, not as the platform the library is built on. The README names no docs site, so docs is not recorded. The HTTP Archive technologies list does not carry match-sorter.

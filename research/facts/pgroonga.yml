@@ -1,0 +1,137 @@
+id: pgroonga
+name: PGroonga
+status: accepted
+checkedAt: 2026-10-28
+description: PostgreSQL extension that adds a full-text search index for all languages, using Groonga as the index engine.
+facts:
+  - field: homepage
+    value: https://pgroonga.github.io/
+    url: https://pgroonga.github.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "PostgreSQL extension to use Groonga as the index."
+  - field: repository
+    value: https://github.com/pgroonga/pgroonga
+    url: https://api.github.com/repos/pgroonga/pgroonga
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://pgroonga.github.io/overview/
+    url: https://pgroonga.github.io/overview/
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: PGroonga Project
+    url: https://pgroonga.github.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "© 2015-2026 PGroonga Project"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/pgroonga
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: PostgreSQL
+    url: https://pgroonga.github.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "PGroonga is released under PostgreSQL license that is similar to BSD license and MIT license."
+  - field: licenseModel
+    value: open-source
+    url: https://pgroonga.github.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "PGroonga is released under PostgreSQL license that is similar to BSD license and MIT license."
+  - field: language
+    value: C
+    url: https://api.github.com/repos/pgroonga/pgroonga
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [database-extension]
+    url: https://pgroonga.github.io/overview/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "PGroonga is a PostgreSQL extension."
+  - field: categories
+    value: [postgres]
+    url: https://pgroonga.github.io/overview/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "PGroonga is a PostgreSQL extension."
+  - field: basedOn
+    value: groonga
+    url: https://pgroonga.github.io/overview/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "PGroonga provides a new index access method that uses Groonga"
+  - field: databases
+    value: [postgresql]
+    url: https://pgroonga.github.io/overview/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "PGroonga is a PostgreSQL extension."
+  - field: runtimeMin
+    value: PostgreSQL 12
+    url: https://pgroonga.github.io/install/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Here are supported PostgreSQL versions: 12 13 14 15 16 17 18"
+  - field: installMethod
+    value: [apt packages]
+    url: https://pgroonga.github.io/install/debian.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Install postgresql-*-pgdg-pgroonga package"
+  - field: installMethod
+    value: [homebrew]
+    url: https://pgroonga.github.io/install/macos.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "You can install PGroonga by Homebrew: $ brew install pgroonga"
+  - field: installMethod
+    value: [compile from source]
+    url: https://pgroonga.github.io/install/source.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Build and install PGroonga with Meson and Ninja"
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/pgroonga/pgroonga/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-09
+    url: https://api.github.com/repos/pgroonga/pgroonga/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/pgroonga/pgroonga/releases/tags/0.9.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 757
+    url: https://api.github.com/repos/pgroonga/pgroonga
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 10
+    url: https://api.github.com/repos/pgroonga/pgroonga/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: x
+    value: https://twitter.com/groonga/
+    url: https://pgroonga.github.io/community/
+    checkedAt: 2026-10-28
+    via: page
+  - field: facebook
+    value: https://www.facebook.com/groonga
+    url: https://pgroonga.github.io/community/
+    checkedAt: 2026-10-28
+    via: page
+notFound: [runtime, hqCountry, parent, paidEdition, pricingPage, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, discord, mastodon, bluesky, subreddit, newsletter, pluginDirectory, pluginCount, starters, usageShare, reportedInstalls, packagistName, npmName, npmWeeklyDownloads, pypiDownloads, endoflifeId, runsAs, renderingModes, forum, wikidata]
+unreadable: []
+notes: >
+  The homepage link is https. The site and the README both name the license as the PostgreSQL license. The README and COPYING file give the copyright as Portions Copyright (c) 2015-2019, Sutou Kouhei and the site footer as the PGroonga Project; the maintainer is recorded as the site states it. No legal entity or country is stated for the project. The Windows packages bundle Groonga (LGPL 2.1), MeCab, LZ4, msgpack-c, xxHash and the NAIST dictionary under their own licenses; these are not the license of PGroonga and are listed on the homepage. The x and facebook links are the Groonga accounts; the community page says they share PGroonga information. The Zulip chat room (groonga.zulipchat.com) is named on the community page and is not recorded as a forum field. ClearCode Inc. sells PGroonga technical support (support page); it is not the maintainer. Supabase offers PGroonga on its managed PostgreSQL (users page); it is a third party, not a PGroonga hosted offering. The install page lists PostgreSQL 12 to 18 as supported; the runtime is the PostgreSQL server the extension loads into, and no page states a runsAs value, and PostgreSQL is not a runtime value in the field list, so runtime is not recorded. The Windows install page names an installer and a zip package for each PostgreSQL version. The FreeBSD install page was not read; the install page lists it.

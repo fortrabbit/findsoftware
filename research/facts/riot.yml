@@ -1,0 +1,106 @@
+id: riot
+name: Riot
+status: accepted
+checkedAt: 2026-10-28
+description: Go library for indexing and searching text, numeric, date, geo and vector data inside an application.
+facts:
+  - field: repository
+    value: https://github.com/vcaesar/riot
+    url: https://api.github.com/repos/vcaesar/riot
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/vcaesar/riot/blob/main/README.md
+    url: https://github.com/vcaesar/riot/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A fast, modern text indexing library in Go"
+  - field: maintainer
+    value: vcaesar
+    url: https://github.com/vcaesar/riot
+    checkedAt: 2026-10-28
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/vcaesar
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2017"
+    url: https://api.github.com/repos/vcaesar/riot/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/vcaesar/riot
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-library]
+    url: https://github.com/vcaesar/riot/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A fast, modern text indexing library in Go"
+  - field: runtime
+    value: [go binary]
+    url: https://github.com/vcaesar/riot/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A fast, modern text indexing library in Go"
+  - field: runtimeMin
+    value: "Go 1.26.0"
+    url: https://github.com/vcaesar/riot/blob/v1.32.0/go.mod
+    checkedAt: 2026-10-28
+    via: page
+    quote: "go 1.26.0"
+  - field: installMethod
+    value: [go get]
+    url: https://github.com/vcaesar/riot/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "go get -u github.com/vcaesar/riot"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/vcaesar/riot
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/vcaesar/riot/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Apache License Version 2.0, January 2004"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/vcaesar/riot/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-28
+    url: https://api.github.com/repos/vcaesar/riot/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 6058
+    url: https://api.github.com/repos/vcaesar/riot
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 9
+    url: https://api.github.com/repos/vcaesar/riot/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fvcaesar%2Friot
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fvcaesar%2Friot
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, hqCountry, parent, basedOn, successorOf, alternativeTo, importsFrom, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, npmName, packagistName, pypiDownloads, runsAs, renderingModes, lastCommitDate, hostedOffering]
+unreadable: []
+notes: >
+  The README lists the field types text, numeric, date, boolean, IP, geo point and vector, and query types including phrase, prefix, fuzzy, numeric range, KNN and ANN; its gse package wraps riot with a tokenizer for Chinese and Japanese text. Library, not a server: the README installs it with go get and its examples are Go programs run with go run; the CLI in cmd/riot is named only in AGENTS.md, so it is not a fact. The CSV row names search-server and cites ZincSearch; neither appears in this README, which names zed as a separate distributed search engine built on riot, so search-server is not recorded and the reviewer should decide. The README says riot is "forked from" Bluge (github.com/blugelabs/bluge); that is a stated fork, kept here in notes because no record exists for Bluge. No homepage: the repository is the only site, so none is recorded. The maintainer is not named by the project: the repository owner account vcaesar is recorded, the GitHub profile name is not used. The LICENSE file has no copyright line and AUTHORS lists Bluge authors. The index is stored on disk at a path given to DefaultConfig or in memory with InMemoryOnlyConfig, both in the README examples; no storage field is recorded. The Go module has no download figure; the ecosyste.ms counts are for the module github.com/vcaesar/riot, whose latest_release_number (v1.30.0) is behind GitHub's v1.32.0, so the GitHub release is used. The first GitHub release is 0.10.0 (2017-11-21); the repository was created 2017-06-21.

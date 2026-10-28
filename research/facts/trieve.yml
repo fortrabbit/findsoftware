@@ -1,0 +1,77 @@
+id: trieve
+name: Trieve
+status: stub
+checkedAt: 2026-10-28
+description: Open-source API platform for search, recommendations and retrieval-augmented generation over uploaded chunks, with self-hosting described in its README.
+facts:
+  - field: repository
+    value: https://github.com/devflowinc/trieve
+    url: https://api.github.com/repos/devflowinc/trieve
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Devflow, Inc
+    url: https://api.github.com/users/devflowinc
+    checkedAt: 2026-10-28
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/devflowinc
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/devflowinc/trieve
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/devflowinc/trieve
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-server, vector-search]
+    url: https://github.com/devflowinc/trieve/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "All-in-one solution for search, recommendations, and RAG"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/devflowinc/trieve/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Start services for local dev"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/devflowinc/trieve/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2024
+    url: https://api.github.com/repos/devflowinc/trieve/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2025-03-07
+    url: https://api.github.com/repos/devflowinc/trieve/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 2722
+    url: https://api.github.com/repos/devflowinc/trieve
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 54
+    url: https://api.github.com/repos/devflowinc/trieve/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: discord
+    value: https://discord.gg/CuJVfgZf54
+    url: https://github.com/devflowinc/trieve/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+notFound: [homepage, hqCountry, parent, pricingPage, paidEdition, installMethod, adminUi, headlessApi, contentStore, databases, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, selfHostOption, forum, x, bluesky, mastodon, newsletter, pluginDirectory, pluginCount, npmName, npmWeeklyDownloads, pypiName, pypiDownloads, usageShare, reportedInstalls]
+unreadable: [https://trieve.ai (no DNS answer), https://docs.trieve.ai (connection timed out; the README links it for the API reference and the self-hosting guides)]
+notes: >
+  In doubt, so stub, and no homepage. The project site trieve.ai does not resolve, and docs.trieve.ai, the documentation the README links for self-hosting guides, did not connect (curl error 28). The README names the self-hosting guides (AWS, GCP, Kubernetes, docker compose) and the Local Development section lists cargo and yarn steps, but no install page could be read. What would settle it: a live docs site or self-hosting guide, or a live project site. Releases: seven GitHub releases; v0.13.0 (2024-12-06) is the highest stable application release, and trieve-helm-0.2.2 (2025-03-07) is the newest stable release, a Helm chart; latestReleaseDate takes GitHub's newest. No prerelease is listed; the repository has a v0.11.9-pre tag. The LICENSE file on main returns 404, so the MIT license is taken from the repository's license field (api). The GitHub organization profile gives the location "United States of America", which is not a legal notice and is not recorded as hqCountry. Hosted offering: the README links dashboard.trieve.ai with "Sign Up (1k chunks free)"; that host did not connect and no plan page was read. The README links three Discord invites; the one on the Join Discord badge is recorded. The README's "docker compose" embedding files are for local development.

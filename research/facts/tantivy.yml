@@ -1,0 +1,109 @@
+id: tantivy
+name: Tantivy
+status: accepted
+checkedAt: 2026-10-28
+description: Full-text search engine library written in Rust, with which programs build their own search engines.
+facts:
+  - field: repository
+    value: https://github.com/quickwit-oss/tantivy
+    url: https://github.com/quickwit-oss/tantivy
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://docs.rs/tantivy/
+    url: https://docs.rs/tantivy/
+    checkedAt: 2026-10-28
+    via: page
+  - field: firstRelease
+    value: 2016
+    url: https://crates.io/api/v1/crates/tantivy/versions
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Paul Masurel
+    url: https://github.com/quickwit-oss/tantivy/blob/0.27.0/Cargo.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Paul Masurel"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/quickwit-oss
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/quickwit-oss/tantivy
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Rust
+    url: https://github.com/quickwit-oss/tantivy
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: rust
+    url: https://github.com/quickwit-oss/tantivy/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Tantivy works on stable Rust"
+  - field: runtimeMin
+    value: "1.88"
+    url: https://github.com/quickwit-oss/tantivy/blob/0.27.0/Cargo.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'rust-version = "1.88"'
+  - field: categories
+    value: [search-library]
+    url: https://github.com/quickwit-oss/tantivy/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Fast full-text search engine library written in Rust"
+  - field: githubStargazers
+    value: 16355
+    url: https://github.com/quickwit-oss/tantivy
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 197
+    url: https://api.github.com/repos/quickwit-oss/tantivy/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: crateName
+    value: tantivy
+    url: https://crates.io/api/v1/crates/tantivy
+    checkedAt: 2026-10-28
+    via: api
+  - field: crateDownloads
+    value: 21047840
+    url: https://crates.io/api/v1/crates/tantivy
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 74
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/tantivy
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 395
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/tantivy
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/quickwit-oss/tantivy/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-17
+    url: https://crates.io/api/v1/crates/tantivy/versions
+    checkedAt: 2026-10-28
+    via: api
+  - field: installMethod
+    value: [cargo]
+    url: https://crates.io/crates/tantivy
+    checkedAt: 2026-10-28
+    via: page
+notFound: [homepage, hqCountry, maintainerType, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, sso, paidEdition, pricingPage, endoflifeId, packagistName, npmName, pypiDownloads, usageShare, reportedInstalls, latestPrereleaseDate, basedOn]
+unreadable: []
+notes: >
+  Criterion 3 holds through the crates.io registry page, which gives the install line (cargo add tantivy, a Cargo.toml dependency); the README itself covers only cloning the repository and running cargo test, and that page renders in JavaScript, so the fact carries no quote. The homepage at https://tantivy-search.github.io/ answers 404 at the root while its /examples/basic_search.html and /bench/ pages answer 200, so no homepage is linked and the choice is for a reviewer. The README calls Quickwit a distributed search engine built on Tantivy, which is a separate project and no basedOn statement; it says Tantivy is strongly inspired by Apache Lucene's design, which is no basedOn either. The README's FAQ lists tantiny as a Ruby binding and tantivy-py as a Python one; the bindings are their own records. GitHub's highest stable release is 0.26.1 (2026-05-10); 0.27.0 is on crates.io and as a tag but has no GitHub release, so the latest release date comes from crates.io and the major is 0 on both. The Cargo.toml authors line also carries an email address, which is not recorded. The maintainer is recorded as the Cargo manifest names the person; the README speaks of "our" distributed search engine as Quickwit, so the organisation name could be the maintainer instead.

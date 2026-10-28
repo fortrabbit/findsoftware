@@ -1,0 +1,117 @@
+id: solr
+name: Apache Solr
+status: accepted
+checkedAt: 2026-10-28
+description: Open source search platform built on Apache Lucene that runs as a Java server process.
+facts:
+  - field: homepage
+    value: https://solr.apache.org/
+    url: https://solr.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Solr is the blazing-fast, open source, multi-modal search platform"
+  - field: repository
+    value: https://github.com/apache/solr
+    url: https://api.github.com/repos/apache/solr
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://solr.apache.org/guide/solr/latest/
+    url: https://solr.apache.org/guide/solr/latest/deployment-guide/installing-solr.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Apache Solr Reference Guide"
+  - field: firstRelease
+    value: "2006"
+    url: https://github.com/apache/solr/blob/releases/solr/1.1.0/CHANGES.txt
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Release 1.1.0 20061221"
+  - field: maintainer
+    value: The Apache Software Foundation
+    url: https://solr.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright © 2026 The Apache Software Foundation"
+  - field: hqCountry
+    value: US
+    url: https://www.apache.org/foundation/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "ASF is a U.S. 501(c)(3) charitable organization"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/apache
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/apache/solr
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/apache/solr
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-server]
+    url: https://solr.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "open source, multi-modal search platform"
+  - field: runtime
+    value: [jvm]
+    url: https://solr.apache.org/guide/solr/latest/deployment-guide/system-requirements.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "You will need the Java Runtime Environment (JRE) version 21 or higher."
+  - field: runtimeMin
+    value: "21"
+    url: https://solr.apache.org/guide/solr/latest/deployment-guide/system-requirements.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "You will need the Java Runtime Environment (JRE) version 21 or higher."
+  - field: installMethod
+    value: binary download (tgz from the Apache mirrors)
+    url: https://solr.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Click here to download the Solr binary from the available mirrors."
+  - field: installMethod
+    value: docker image solr
+    url: https://solr.apache.org/downloads.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Docker: solr:10.0.0"
+  - field: docker
+    value: solr
+    url: https://solr.apache.org/downloads.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Docker: solr:10.0.0"
+  - field: runsAs
+    value: [always-on]
+    url: https://solr.apache.org/guide/solr/latest/deployment-guide/installing-solr.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This will start Solr in the background, listening on port 8983."
+  - field: currentMajor
+    value: 10
+    url: https://repo1.maven.org/maven2/org/apache/solr/solr-core/maven-metadata.xml
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1691
+    url: https://api.github.com/repos/apache/solr
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 322
+    url: https://api.github.com/repos/apache/solr/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [pricingPage, paidEditions, basedOn, parent, endoflifeId, pluginDirectory, pluginCount, starters, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, databases, contentStore, hostedOffering, mavenCoordinates, latestReleaseDate]
+unreadable: []
+notes: >
+  No GitHub release exists for apache/solr: the repository holds release tags only (releases/solr/<version>), so the release date and the version come from Maven Central. Maven Central's solr-core metadata names 10.1.0 as the release, with its tag dated 2026-10-22; the Maven search index still lists 10.0.0 (2026-03-03) as the newest upload, and no release timestamp for 10.1.0 was found, so latestReleaseDate is not recorded. The project's own downloads page, read 2026-10-28, names 10.0.0 as the most recent release, which contradicts the Maven metadata and the tag; a reviewer should decide the current version. The docs link is the Reference Guide, read through its installing page. The install docs name the binary and the Docker image, not a Maven artifact; SolrJ and solr-core are the Java client and library, so no mavenCoordinates and no registry figure is recorded. The Solr homepage describes the software as built on the full-text, vector, and geospatial search capabilities of Apache Lucene; Lucene is no record in this set, so no basedOn is recorded. firstRelease is the 1.1.0 release line in CHANGES.txt on the release tag (20061221), older than the earliest Maven upload (1.3.0, 2008). The Apache Software Foundation page gives the organization as a U.S. 501(c)(3); no street address or headquarters city is stated, so hqCountry rests on that statement and a reviewer should confirm it. The homepage and the install pages carry no social links. The Solr Reference Guide lists the Solr Admin UI as the server's own console; it is not recorded as adminUi because the field describes a content admin. The guide names ZooKeeper for SolrCloud clusters, which is not a database the software stores in and is not recorded.

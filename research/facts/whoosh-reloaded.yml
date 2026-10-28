@@ -1,0 +1,113 @@
+id: whoosh-reloaded
+name: Whoosh Reloaded
+status: discontinued
+checkedAt: 2026-10-28
+description: Pure-Python full-text indexing and search library, distributed on PyPI as whoosh-reloaded.
+facts:
+  - field: status
+    value: discontinued
+    url: https://github.com/Sygil-Dev/whoosh-reloaded
+    checkedAt: 2026-10-28
+    via: page
+    quote: "NO LONGER MAINTAINED"
+  - field: homepage
+    value: https://sygil-dev.github.io/whoosh-reloaded/
+    url: https://sygil-dev.github.io/whoosh-reloaded/
+    checkedAt: 2026-10-28
+    via: page
+  - field: repository
+    value: https://github.com/Sygil-Dev/whoosh-reloaded
+    url: https://api.github.com/repos/Sygil-Dev/whoosh-reloaded
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://whoosh-reloaded.readthedocs.io/en/latest/
+    url: https://github.com/Sygil-Dev/whoosh-reloaded
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Online Documentation"
+  - field: maintainer
+    value: Sygil-Dev Organization
+    url: https://github.com/Sygil-Dev/whoosh-reloaded
+    checkedAt: 2026-10-28
+    via: page
+    quote: "maintained currently by the Sygil-Dev Organization"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Sygil-Dev
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/Sygil-Dev/whoosh-reloaded
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/Sygil-Dev/whoosh-reloaded
+    checkedAt: 2026-10-28
+    via: page
+    quote: "implemented in pure Python"
+  - field: categories
+    value: [search-library]
+    url: https://github.com/Sygil-Dev/whoosh-reloaded
+    checkedAt: 2026-10-28
+    via: page
+    quote: "full-text indexing and searching library"
+  - field: license
+    value: BSD-2-Clause
+    url: https://github.com/Sygil-Dev/whoosh-reloaded
+    checkedAt: 2026-10-28
+    via: page
+    quote: "simplified BSD (A.K.A."
+  - field: installMethod
+    value: [pip]
+    url: https://github.com/Sygil-Dev/whoosh-reloaded
+    checkedAt: 2026-10-28
+    via: page
+    quote: "pip install whoosh-reloaded"
+  - field: installMethod
+    value: [pip from git]
+    url: https://github.com/Sygil-Dev/whoosh-reloaded
+    checkedAt: 2026-10-28
+    via: page
+    quote: "pip install git+https://github.com/Sygil-Dev/whoosh-reloaded.git"
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/Sygil-Dev/whoosh-reloaded/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2024-02-02
+    url: https://api.github.com/repos/Sygil-Dev/whoosh-reloaded/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2024
+    url: https://api.github.com/repos/Sygil-Dev/whoosh-reloaded/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiName
+    value: whoosh-reloaded
+    url: https://pypi.org/pypi/whoosh-reloaded/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiDownloads
+    value: 20547 (last week)
+    url: https://pypistats.org/api/packages/whoosh-reloaded/recent
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 239
+    url: https://api.github.com/repos/Sygil-Dev/whoosh-reloaded
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 45
+    url: https://api.github.com/repos/Sygil-Dev/whoosh-reloaded/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [runtimeMin, forkOf, basedOn, hqCountry, parent, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, paidEdition, pricingPage, adminUi, headlessApi, databases, contentStore, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, usageShare, reportedInstalls, latestPrereleaseDate, endoflifeId, sso, userRoles, i18n, multisite, livePreview, importsFrom, templating, renderingModes, runsAs]
+unreadable: []
+notes: >
+  The README opens with a notice that the repository is "NO LONGER MAINTAINED", the only end signal found; it is the project's own README and the status is discontinued for that reason. The PyPI release history holds two uploads (2.7.4 and 2.7.5, both 2024), the GitHub releases list holds three (v2.7.4.3, v2.7.4.4, v2.7.5), and the repository tags reach back to v2.5.6, with no release object for them. The readthedocs and project pages title themselves "Whoosh 3.0.0 documentation" while the newest release is 2.7.5; the major is taken from the release, not the docs. The CSV row calls the project a fork of Whoosh; the README says Whoosh was created by Matt Chaput and does not call this project a fork, so no forkOf fact is recorded; the original is a separate candidate (mchaput/whoosh, last pushed 2024-01-03). The LICENSE.txt file reads "Copyright 2011 Matt Chaput", and the README credits Matt Chaput as creator. The license is stated as "simplified BSD" in the README and "Two-clause BSD license" on PyPI, one license in two wordings. No Python minimum is stated: setup.py sets no python_requires and the PyPI classifiers list Python 2.7 and 3.4 through 3.12, so runtimeMin is not recorded. The Python classifiers are not a minimum statement. The pypiDownloads figure is pypistats last_week at the check date, 20547; the registry's own API reports no download figure.

@@ -1,0 +1,116 @@
+id: oramacore
+name: OramaCore
+status: accepted
+checkedAt: 2026-10-28
+description: Search and vector database server, written in Rust, that runs from a Docker image and adds an LLM interface to a collection's search.
+facts:
+  - field: repository
+    value: https://github.com/oramasearch/oramacore
+    url: https://github.com/oramasearch/oramacore
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/oramasearch/oramacore/blob/develop/docs/api.md
+    url: https://github.com/oramasearch/oramacore/blob/develop/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "See the API notes for supervision and configuration"
+  - field: firstRelease
+    value: 2025
+    url: https://github.com/oramasearch/oramacore/releases/tag/0.0.1
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: OramaSearch, Inc.
+    url: https://orama.com/legal/terms
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This agreement is between you and OramaSearch, Inc., a Delaware corporation"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/oramasearch
+    checkedAt: 2026-10-28
+    via: api
+  - field: hqCountry
+    value: US
+    url: https://orama.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "San Francisco, CA"
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/oramasearch/oramacore/blob/develop/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "AGPLv3"
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/oramasearch/oramacore/blob/develop/LICENSE.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "GNU AFFERO GENERAL PUBLIC LICENSE"
+  - field: language
+    value: Rust
+    url: https://github.com/oramasearch/oramacore
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-server, vector-search]
+    url: https://github.com/oramasearch/oramacore/blob/develop/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "It includes a fully-fledged full-text search engine, vector database, LLM interface"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/oramasearch/oramacore/blob/develop/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "while the HTTP server runs"
+  - field: installMethod
+    value: [docker, docker compose]
+    url: https://github.com/oramasearch/oramacore/blob/develop/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "is by following the docker-compose.yml file that you can find in this repository"
+  - field: serverNeeds
+    value: [NVIDIA GPU highly recommended]
+    url: https://github.com/oramasearch/oramacore/blob/develop/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "An NVIDIA GPU is highly recommended for running the application"
+  - field: serverNeeds
+    value: [minimum one NVIDIA A100 for production usage]
+    url: https://github.com/oramasearch/oramacore/blob/develop/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "For production usage, we recommend using minimum one NVIDIA A100"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/oramasearch/oramacore/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-13
+    url: https://api.github.com/repos/oramasearch/oramacore/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 265
+    url: https://github.com/oramasearch/oramacore
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 12
+    url: https://api.github.com/repos/oramasearch/oramacore/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: hostedOffering
+    value: Orama Cloud
+    url: https://docs.orama.com/docs/cloud
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Run Orama at scale. Managed."
+notFound: [homepage, paidEdition, pricingPage, adminUi, headlessApi, sso, i18n, databases, contentStore, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, pypiDownloads, packagistName, npmName, endoflifeId, pluginCount, starters, dependentPackages, dependentRepos]
+unreadable: [https://docs.oramacore.com/docs, https://docs.oramacore.com/docs/guide/configuration]
+notes: >
+  No live homepage: the README links docs.oramacore.com, which does not resolve (DNS failure), and the candidates row's docs.orama.com is Orama's own docs site, not an OramaCore site; homepage is left out for the reviewer to decide. The record is kept accepted because install steps (docker-compose.yml, the Docker image, docs/api.md) and the public AGPL-3.0 source are on GitHub. The Cargo.toml has no author and the LICENSE has no copyright line, so the maintainer is the company the cloud docs name ("which we called OramaCore"), taken from orama.com's terms; the reviewer confirms that attribution. The SDK @orama/core (npm, "JavaScript and TypeScript client for OramaCore") is a client package and holds no figures here; its window downloads read 0. Its first GitHub release is 0.0.1 (2025-01-16), though the repository was created in 2024. The cloud docs page says in its script payload (not visible text) that "Orama 4.0" is a Rust rewrite called OramaCore that "now powers the cloud version of Orama"; no check-quotes can read that payload, so the hostedOffering quote is the visible title.

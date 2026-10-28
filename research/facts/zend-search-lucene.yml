@@ -1,0 +1,94 @@
+id: zend-search-lucene
+name: Zend Search Lucene
+status: stub
+checkedAt: 2026-10-28
+description: PHP full-text search library, the Zend Framework 1 Lucene search component packaged for Composer.
+facts:
+  - field: repository
+    value: https://github.com/zf1/zend-search-lucene
+    url: https://api.github.com/repos/zf1/zend-search-lucene
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: zf1
+    url: https://packagist.org/packages/zf1/zend-search-lucene.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/zf1
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/zf1/zend-search-lucene
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/zf1/zend-search-lucene/blob/master/composer.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: ">=5.2.11"
+  - field: runtimeMin
+    value: "5.2.11"
+    url: https://github.com/zf1/zend-search-lucene/blob/master/composer.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: ">=5.2.11"
+  - field: categories
+    value: [search-library]
+    url: https://github.com/zf1/zend-search-lucene
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Zend Framework 1 Search Lucene package"
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/zf1/zend-search-lucene
+    checkedAt: 2026-10-28
+    via: api
+  - field: installMethod
+    value: [composer]
+    url: https://github.com/zf1/zend-search-lucene
+    checkedAt: 2026-10-28
+    via: page
+    quote: "to the require section of your composer.json"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/zf1/zend-search-lucene/git/refs/tags/release-1.12.20
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2017-07-12
+    url: https://packagist.org/packages/zf1/zend-search-lucene.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://packagist.org/packages/zf1/zend-search-lucene.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistName
+    value: zf1/zend-search-lucene
+    url: https://packagist.org/packages/zf1/zend-search-lucene.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistDownloads
+    value: 372779 (total)
+    url: https://packagist.org/packages/zf1/zend-search-lucene.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 7
+    url: https://api.github.com/repos/zf1/zend-search-lucene
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/zf1/zend-search-lucene/contributors?per_page=100
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, docs, basedOn, forkOf, hqCountry, parent, paidEdition, pricingPage, adminUi, headlessApi, databases, contentStore, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, npmName, npmWeeklyDownloads, pypiName, pypiDownloads, usageShare, reportedInstalls, latestPrereleaseDate, endoflifeId, sso, userRoles, i18n, multisite, livePreview, importsFrom, templating, renderingModes, runsAs]
+unreadable: []
+notes: >
+  In doubt: the package has no release since 2017-07-12, and the Zend Framework site at framework.zend.com says "Zend Framework is now the Laminas Project!", which a reviewer must read as an end of this component or as a rename the record should follow; a statement from the Zend Framework 1 project or the zf1 account naming this package as ended or succeeded would settle it. The import moves a record with no release in four years to stub by itself, so the status is stub either way. The README says the package "is a part of the Zend Framework 1" and the composer homepage is framework.zend.com; no homepage is recorded because the package has no site of its own and the framework site now describes the framework as Laminas. The Zend Framework 1 parent has no record id (zf1-future is a separate community continuation candidate), so basedOn is not recorded. The LICENSE.txt copyright line reads "Copyright (c) 2005-2015, Zend Technologies USA, Inc.", the copyright holder of the framework code; the maintainer recorded is the zf1 Packagist and GitHub account. The endoflife.date product for Zend Framework does not exist (404), so no endoflifeId is recorded. The composer require says php >=5.2.11, the minimum the package declares for its latest version 1.12.20; the README says nothing about a runtime minimum. Packagist shows no abandoned flag. The package is ZF1 component 1.12.20, the newest of 18 Packagist versions; the GitHub repository has no release objects, only tags.

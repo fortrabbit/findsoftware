@@ -1,0 +1,195 @@
+id: quickwit
+name: Quickwit
+status: accepted
+checkedAt: 2026-10-28
+description: Open-source search engine for logs and traces that indexes data on object storage and runs as a single binary or a cluster.
+facts:
+  - field: homepage
+    value: https://quickwit.io
+    url: https://quickwit.io/
+    checkedAt: 2026-10-28
+    via: page
+  - field: repository
+    value: https://github.com/quickwit-oss/quickwit
+    url: https://github.com/quickwit-oss/quickwit
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://quickwit.io/docs
+    url: https://quickwit.io/docs
+    checkedAt: 2026-10-28
+    via: page
+  - field: firstRelease
+    value: 2021
+    url: https://quickwit.io/blog/quickwit-joins-datadog
+    checkedAt: 2026-10-28
+    via: page
+    quote: "We launched our first version on July 13, 2021."
+  - field: maintainer
+    value: Quickwit, Inc.
+    url: https://quickwit.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright © 2026 Quickwit, Inc."
+  - field: maintainerType
+    value: company
+    url: https://quickwit.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright © 2026 Quickwit, Inc."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/quickwit-oss/quickwit
+    checkedAt: 2026-10-28
+    via: api
+  - field: parent
+    value: Datadog
+    url: https://quickwit.io/blog/quickwit-joins-datadog
+    checkedAt: 2026-10-28
+    via: page
+    quote: "We are thrilled to announce that Quickwit is joining Datadog!"
+  - field: categories
+    value: [search-server]
+    url: https://quickwit.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Sub-second search & analytics engine on cloud storage"
+  - field: language
+    value: Rust
+    url: https://github.com/quickwit-oss/quickwit
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [rust binary]
+    url: https://quickwit.io/docs/get-started/installation
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Quickwit compiles to a single binary"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/quickwit-oss/quickwit
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/quickwit-oss/quickwit/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Quickwit is open-source under the Apache License, Version 2.0 - Apache-2.0."
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/quickwit-oss/quickwit/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-22
+    url: https://api.github.com/repos/quickwit-oss/quickwit/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 11747
+    url: https://github.com/quickwit-oss/quickwit
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 120
+    url: https://api.github.com/repos/quickwit-oss/quickwit/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: installMethod
+    value: [binary download]
+    url: https://quickwit.io/docs/get-started/installation
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Linux/MacOS binaries that you can download manually or with the install script"
+  - field: installMethod
+    value: [install script]
+    url: https://quickwit.io/docs/get-started/installation
+    checkedAt: 2026-10-28
+    via: page
+    quote: "curl -L https://raw.githubusercontent.com/quickwit-oss/quickwit/main/install.sh | sh"
+  - field: installMethod
+    value: [docker image]
+    url: https://quickwit.io/docs/get-started/installation
+    checkedAt: 2026-10-28
+    via: page
+    quote: "docker run --rm quickwit/quickwit --version"
+  - field: installMethod
+    value: [helm chart]
+    url: https://quickwit.io/docs/deployment/deployment-modes
+    checkedAt: 2026-10-28
+    via: page
+    quote: "We provide a Helm chart to help you deploy Quickwit on Kubernetes."
+  - field: installMethod
+    value: [glasskube]
+    url: https://quickwit.io/docs/get-started/installation
+    checkedAt: 2026-10-28
+    via: page
+  - field: alternativeTo
+    value: [Elasticsearch, Solr]
+    url: https://raw.githubusercontent.com/quickwit-oss/quickwit/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "How is Quickwit different from traditional search engines like Elasticsearch or Solr?"
+  - field: docker
+    value: quickwit/quickwit
+    url: https://quickwit.io/docs/get-started/installation
+    checkedAt: 2026-10-28
+    via: page
+    quote: "docker run --rm quickwit/quickwit --version"
+  - field: serverNeeds
+    value: [linux (officially supported), x86-64 or aarch64 binaries]
+    url: https://quickwit.io/docs/get-started/installation
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Quickwit is officially only supported for Linux."
+  - field: runsAs
+    value: [always-on]
+    url: https://quickwit.io/docs/deployment/deployment-modes
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Nodes always serve the REST API and the search and admin UI."
+  - field: databases
+    value: [postgres]
+    url: https://quickwit.io/docs/deployment/deployment-modes
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The Metastore stores index metadata in a PostgreSQL-compatible database or cloud-hosted file."
+  - field: contentStore
+    value: [object storage (Amazon S3, MinIO)]
+    url: https://quickwit.io/docs/deployment/deployment-modes
+    checkedAt: 2026-10-28
+    via: page
+    quote: "In cluster mode, you must store your index data on a shared storage backend such as Amazon S3 or MinIO."
+  - field: contentStore
+    value: [local files]
+    url: https://quickwit.io/docs/get-started/installation
+    checkedAt: 2026-10-28
+    via: page
+    quote: "qwdata/ : the default data directory."
+  - field: adminUi
+    value: yes, search and admin UI served by every node
+    url: https://quickwit.io/docs/deployment/deployment-modes
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Nodes always serve the REST API and the search and admin UI."
+  - field: headlessApi
+    value: rest
+    url: https://quickwit.io/docs/reference/rest-api
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The OpenAPI specification of the REST API is available at /openapi.json"
+  - field: discord
+    value: https://discord.gg/MT27AG5EVE
+    url: https://quickwit.io/
+    checkedAt: 2026-10-28
+    via: page
+  - field: x
+    value: https://twitter.com/quickwit_inc
+    url: https://quickwit.io/
+    checkedAt: 2026-10-28
+    via: page
+notFound: [pricingPage, hqCountry, sso, multisite, paidEdition, hostedOffering, runtimeMin, pluginDirectory, forum, mastodon, bluesky, newsletter, npmName, packagistName, pypiName, subreddit, endoflifeId]
+unreadable: []
+notes: >
+  Quickwit joined Datadog (blog post dated January 9, 2025, which states the team will build a new product with Datadog and release a new version under Apache 2.0). The repository is active (pushed 2026-10-27) and has stable releases to v0.9.3, so no end signal; the parent fact is for reviewer decision. The homepage says the engine is powered by tantivy, a Rust search library; no tantivy record exists, so basedOn is omitted. The homepage's logs and traces wording is not recorded as a second category, because log-search has no mapped value. Releases tagged lambda-* and nightly are not versioned stable releases; currentMajor follows v0.9.3. The installation page lists libssl as an external dependency for production systems, which is not recorded as a fact. The homepage links LinkedIn and YouTube (no field for them). The homepage footer names Quickwit, Inc. with no legal address or country; hqCountry stays unknown. The docs version selector shows 0.9.0 while the latest GitHub release is v0.9.3.

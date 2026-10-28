@@ -1,0 +1,127 @@
+id: lucene-net
+name: Apache Lucene.NET
+status: accepted
+checkedAt: 2026-10-28
+description: C# full-text search library, ported from Apache Lucene, that .NET applications reference to index and search documents.
+facts:
+  - field: homepage
+    value: https://lucenenet.apache.org/
+    url: https://lucenenet.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Lucene.Net is a port of the Lucene search library, written in C# and targeted at .NET runtime users."
+  - field: repository
+    value: https://github.com/apache/lucenenet
+    url: https://api.github.com/repos/apache/lucenenet
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://lucenenet.apache.org/docs.html
+    url: https://lucenenet.apache.org/docs.html
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: The Apache Software Foundation
+    url: https://raw.githubusercontent.com/apache/lucenenet/master/NOTICE.txt
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright 2006-2026 The Apache Software Foundation"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/apache
+    checkedAt: 2026-10-28
+    via: api
+  - field: hqCountry
+    value: US
+    url: https://www.apache.org/foundation/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "ASF is a U.S. 501(c)(3) charitable organization"
+  - field: firstRelease
+    value: "2011"
+    url: https://api.nuget.org/v3/registration5-gz-semver2/lucene.net/index.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-library]
+    url: https://lucenenet.apache.org/docs/4.8.0-beta00018/index.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Lucene.NET is not a complete application, but rather a code library and API that can easily be used to add search capabilities to applications."
+  - field: basedOn
+    value: [lucene]
+    url: https://lucenenet.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Lucene.Net is a port of the Lucene search library"
+  - field: language
+    value: C#
+    url: https://api.github.com/repos/apache/lucenenet
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [dotnet]
+    url: https://lucenenet.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "targeted at .NET runtime users"
+  - field: installMethod
+    value: [nuget]
+    url: https://lucenenet.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "dotnet add package Lucene.Net --prerelease"
+  - field: nugetName
+    value: Lucene.Net
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:Lucene.Net
+    checkedAt: 2026-10-28
+    via: api
+  - field: nugetDownloads
+    value: 53563889
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:Lucene.Net
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.nuget.org/v3/registration5-gz-semver2/lucene.net/index.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2012-10-26
+    url: https://api.nuget.org/v3/registration5-gz-semver2/lucene.net/index.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-06-22
+    url: https://api.github.com/repos/apache/lucenenet/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/apache/lucenenet
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 2422
+    url: https://api.github.com/repos/apache/lucenenet
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 84
+    url: https://api.github.com/repos/apache/lucenenet/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 124
+    url: https://packages.ecosyste.ms/api/v1/registries/nuget.org/packages/Lucene.Net
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/nuget.org/packages/Lucene.Net
+    checkedAt: 2026-10-28
+    via: api
+notFound: [pricingPage, paidEdition, parent, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, runtimeMin, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, endoflifeId, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, pypiDownloads, mavenCoordinates, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, lastCommitDate, selfHostOption, apiLimits, regions, hostedOffering, maintainerType, licenseModel]
+unreadable: []
+notes: >
+  Status is accepted: the project's own download page marks Lucene 3.0.3 as Stable and the homepage lists 4.8.0 beta builds with the latest prerelease dated 2026-06-22. The homepage calls 4.8.0 Beta the latest version and its install line uses --prerelease, so the NuGet stable 3.0.3 (published 2012-10-26) is the install target only with an explicit version. currentMajor is 3 because GitHub's release list holds only 4.8.0 betas, so no stable GitHub release exists and the registry's stable version is used; a reviewer should decide whether currentMajor should be 4 while the 4.8 line stays a beta. The 3.0.3 package targets .NET 3.5 and 4.0 (lib/NET35, lib/NET40) and the 4.8.0-beta00018 package targets .NET Framework 4.6.2, .NET Standard 2.0 and 2.1, net6.0 and net8.0; the .NET Framework minimum is notes only, so runtimeMin is absent. The NuGet figure is the totalDownloads of the Lucene.Net id across all versions. The homepage, the nuspec of the 4.8.0 package and the NOTICE file all name The Apache Software Foundation; the maintainer quote is from NOTICE.txt on the default branch. firstRelease 2011 is the oldest NuGet upload of Lucene.Net (2.9.2.2, 2011-09-30). The 2006 entry at the foot of CHANGES.txt is inherited Lucene Java history, not a Lucene.NET release; earlier Apache source releases may exist but no primary page dates them. The GitHub tags for the 1.x and 2.x lines carry commit dates from the 2012 repository migration, so they are not used for firstRelease. The repository's latest commit is dated 2026-10-25. The homepage's basedOn statement is a port statement in the project's own words; Lucene.NET is not a fork in the forkOf sense.

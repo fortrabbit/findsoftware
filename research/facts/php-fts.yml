@@ -1,0 +1,125 @@
+id: php-fts
+name: PHP-FTS
+status: accepted
+checkedAt: 2026-10-28
+description: Pure PHP full-text search library that keeps its index in files on disk, with typo tolerance, filters and facets.
+facts:
+  - field: repository
+    value: https://github.com/olivier-ls/php-fts
+    url: https://api.github.com/repos/olivier-ls/php-fts
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/olivier-ls/php-fts/blob/main/README.md
+    url: https://github.com/olivier-ls/php-fts/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A self-contained full-text search engine written in pure PHP."
+  - field: maintainer
+    value: Olivier
+    url: https://github.com/olivier-ls/php-fts/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2025 Olivier"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/olivier-ls
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/olivier-ls/php-fts/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/olivier-ls/php-fts/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/olivier-ls/php-fts
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-library]
+    url: https://github.com/olivier-ls/php-fts/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A self-contained full-text search engine written in pure PHP."
+  - field: runtime
+    value: [php]
+    url: https://github.com/olivier-ls/php-fts/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "PHP 8.1 or higher"
+  - field: runtimeMin
+    value: PHP 8.1
+    url: https://repo.packagist.org/p2/ols/php-fts.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: installMethod
+    value: [composer require]
+    url: https://github.com/olivier-ls/php-fts/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "composer require ols/php-fts"
+  - field: installMethod
+    value: [copy source into project]
+    url: https://github.com/olivier-ls/php-fts/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "copy `src/` into your project"
+  - field: contentStore
+    value: [flat-file]
+    url: https://github.com/olivier-ls/php-fts/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Documents are stored in it in readable form"
+  - field: runsAs
+    value: [per-request]
+    url: https://github.com/olivier-ls/php-fts/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A request opens the directory, reads what it needs, and ends"
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/olivier-ls/php-fts/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-14
+    url: https://api.github.com/repos/olivier-ls/php-fts/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2026
+    url: https://repo.packagist.org/p2/ols/php-fts.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistName
+    value: ols/php-fts
+    url: https://repo.packagist.org/p2/ols/php-fts.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistDownloads
+    value: 29
+    url: https://packagist.org/packages/ols/php-fts.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 147
+    url: https://api.github.com/repos/olivier-ls/php-fts
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/olivier-ls/php-fts/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, hqCountry, parent, paidEdition, pricingPage, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, discord, mastodon, bluesky, x, subreddit, newsletter, forum, pluginDirectory, pluginCount, starters, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, pypiDownloads, endoflifeId, renderingModes, databases, basedOn, wikidata, maintainerLegal]
+unreadable: []
+notes: >
+  The GitHub homepage field points to the Packagist package, not to a project site, so no homepage is recorded. The project has no site; the README and repository are its only pages. The LICENSE and composer.json name the author only as Olivier, with no legal name or country. The Packagist total is 29 downloads and 3 in the last month, as the package page states. The README says the library is for projects where a dedicated search service is not an option and names Elasticsearch, Meilisearch and Typesense as alternatives; this is not recorded as an alternativeTo fact because it is a recommendation, not a factual relationship. The 2.0.0 release is a rewrite: the README says a 1.x index cannot be opened by 2.x. The 1.x releases (1.1.4 as a GitHub release, 1.0.0 as a tag and Packagist version) are not the latest line. The README says the library has no extensions, no external services and no dependencies. The README says to keep the index directory outside the web root, because documents are stored in it in readable form. The README says the index is not for millions of documents and that writes are one writer at a time; these limits are not recorded as fields. The Packagist page lists the release date of 1.0.0 on 2026-05-06, the same day as the repository creation. The README claims 26 writing systems; this is search behaviour, not an i18n field.

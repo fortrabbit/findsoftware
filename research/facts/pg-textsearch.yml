@@ -1,0 +1,116 @@
+id: pg-textsearch
+name: pg_textsearch
+status: accepted
+checkedAt: 2026-10-28
+description: PostgreSQL extension that adds BM25 relevance-ranked full-text search indexes to Postgres.
+facts:
+  - field: repository
+    value: https://github.com/timescale/pg_textsearch
+    url: https://github.com/timescale/pg_textsearch
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/timescale/pg_textsearch/blob/main/README.md
+    url: https://github.com/timescale/pg_textsearch/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Modern ranked text search for Postgres"
+  - field: docs
+    value: https://www.tigerdata.com/docs/use-timescale/latest/extensions/pg-textsearch
+    url: https://www.tigerdata.com/docs/use-timescale/latest/extensions/pg-textsearch
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Install and tune pg_textsearch (v1.1.0) for BM25 full-text search on Tiger Cloud and self-hosted deployments"
+  - field: hostedOffering
+    value: Tiger Cloud
+    url: https://www.tigerdata.com/blog/introducing-pg_textsearch-true-bm25-ranking-hybrid-retrieval-postgres
+    checkedAt: 2026-10-28
+    via: page
+    quote: "pg_textsearch is available now on Tiger Cloud for all customers"
+  - field: firstRelease
+    value: 2025
+    url: https://github.com/timescale/pg_textsearch/releases/tag/v0.0.1
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Timescale, Inc.
+    url: https://raw.githubusercontent.com/timescale/pg_textsearch/main/NOTICE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2025-2026 Timescale, Inc. d/b/a Tiger Data"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/timescale
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: PostgreSQL
+    url: https://github.com/timescale/pg_textsearch/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The PostgreSQL License"
+  - field: language
+    value: C
+    url: https://github.com/timescale/pg_textsearch
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [search-index, database-extension]
+    url: https://github.com/timescale/pg_textsearch/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Modern ranked text search for Postgres"
+  - field: databases
+    value: [postgres]
+    url: https://github.com/timescale/pg_textsearch/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "pg_textsearch supports PostgreSQL 17 and 18"
+  - field: runtimeMin
+    value: PostgreSQL 17
+    url: https://github.com/timescale/pg_textsearch/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "pg_textsearch supports PostgreSQL 17 and 18"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/timescale/pg_textsearch/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "then restart the server"
+  - field: installMethod
+    value: [binary download]
+    url: https://github.com/timescale/pg_textsearch/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Download pre-built binaries from the Releases page"
+  - field: installMethod
+    value: [make from source]
+    url: https://github.com/timescale/pg_textsearch/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "make install # may need sudo"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/timescale/pg_textsearch/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-02
+    url: https://api.github.com/repos/timescale/pg_textsearch/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 4046
+    url: https://github.com/timescale/pg_textsearch
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 12
+    url: https://api.github.com/repos/timescale/pg_textsearch/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, hqCountry, paidEdition, pricingPage, adminUi, headlessApi, sso, i18n, contentStore, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, pypiDownloads, npmName, packagistName, endoflifeId, pluginCount, starters, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  No project site beyond the repository and the Tiger Data docs and blog pages. The Tiger Data home page and its docs index do not mention pg_textsearch. The LICENSE is the PostgreSQL License; the GitHub description's "Postgres OSS licensed" is the same license and is not a second entry. CONTRIBUTING.md says the project was originally named Tapir, and pg_textsearch.control carries a 1.6.0-dev version that no release tag matches. The maintainer's name is the legal name from the NOTICE, with Tiger Data as the trade name; no page read gives a country, so hqCountry is absent. The runtime is the PostgreSQL server itself, so no runtime value is recorded. The README's Windows build route is not recorded as its own install method.
