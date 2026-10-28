@@ -19,7 +19,7 @@ license: Apache-2.0
 currentMajor: "177"
 latestReleaseDate: 2026-01-07
 githubStargazers: 4383
-npmWeeklyDownloads: 2248
+npmWeeklyDownloads: 54786
 contributors: 139
 dependentRepos: 215
 dependentPackages: 10
@@ -72,8 +72,8 @@ sources:
     url: https://github.com/pinterest/gestalt
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/gestalt
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/gestalt
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/gestalt
     checkedAt: 2026-10-27

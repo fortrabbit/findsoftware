@@ -23,7 +23,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-02-09
 githubStargazers: 2148
-npmWeeklyDownloads: 102378
+npmWeeklyDownloads: 214977
 contributors: 128
 dependentRepos: 5600
 dependentPackages: 67
@@ -88,8 +88,8 @@ sources:
     url: https://api.github.com/repos/themesberg/flowbite-react/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/flowbite-react
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/flowbite-react
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/flowbite-react
     checkedAt: 2026-10-27

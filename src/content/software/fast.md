@@ -25,7 +25,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-15
 githubStargazers: 9684
-npmWeeklyDownloads: 143671
+npmWeeklyDownloads: 258708
 contributors: 152
 dependentRepos: 479
 dependentPackages: 111
@@ -84,8 +84,8 @@ sources:
     url: https://github.com/microsoft/fast
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@microsoft/fast-element
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@microsoft/fast-element
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40microsoft%2Ffast-element
     checkedAt: 2026-10-26

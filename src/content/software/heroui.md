@@ -22,7 +22,7 @@ license: Apache-2.0
 currentMajor: "3"
 latestReleaseDate: 2026-09-17
 githubStargazers: 31039
-npmWeeklyDownloads: 515173
+npmWeeklyDownloads: 770905
 contributors: 235
 social:
   x: https://x.com/hero_ui
@@ -82,8 +82,8 @@ sources:
     url: https://api.github.com/repos/heroui-inc/heroui/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@heroui/react
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@heroui/react
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

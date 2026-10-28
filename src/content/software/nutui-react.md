@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-07-07
 githubStargazers: 1219
-npmWeeklyDownloads: 2660
+npmWeeklyDownloads: 2248
 contributors: 129
 dependentRepos: 2
 dependentPackages: 12
@@ -79,8 +79,8 @@ sources:
     url: https://api.github.com/repos/jdf2e/nutui-react/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@nutui/nutui-react
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@nutui/nutui-react
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40nutui%2Fnutui-react
     checkedAt: 2026-10-27

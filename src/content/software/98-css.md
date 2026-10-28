@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2025-04-28
 githubStargazers: 11572
-npmWeeklyDownloads: 4513
+npmWeeklyDownloads: 5343
 contributors: 34
 dependentRepos: 114
 dependentPackages: 8
@@ -72,8 +72,8 @@ sources:
     url: https://registry.npmjs.org/98.css
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/98.css
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/98.css
+    checkedAt: 2026-10-28
   - field: githubStargazers
     url: https://api.github.com/repos/jdan/98.css
     checkedAt: 2026-10-26

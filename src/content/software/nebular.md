@@ -25,7 +25,7 @@ license: MIT
 currentMajor: "17"
 latestReleaseDate: 2026-01-15
 githubStargazers: 8121
-npmWeeklyDownloads: 13705
+npmWeeklyDownloads: 24572
 contributors: 108
 dependentRepos: 3209
 dependentPackages: 40
@@ -93,8 +93,8 @@ sources:
     url: https://api.github.com/repos/akveo/nebular/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@nebular/theme
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@nebular/theme
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@nebular%2Ftheme
     checkedAt: 2026-10-27

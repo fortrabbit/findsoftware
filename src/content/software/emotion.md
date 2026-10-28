@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "11"
 latestReleaseDate: 2024-12-09
 githubStargazers: 18023
-npmWeeklyDownloads: 13027151
+npmWeeklyDownloads: 24906382
 contributors: 304
 httpArchiveSites: 163632
 dependentRepos: 273331
@@ -82,8 +82,8 @@ sources:
     url: https://github.com/emotion-js/emotion
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@emotion/react
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@emotion/react
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40emotion%2Freact
     checkedAt: 2026-10-26

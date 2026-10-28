@@ -23,7 +23,7 @@ license: MIT, TW Elements EULA for Premium Access features
 currentMajor: "2"
 latestReleaseDate: 2024-03-04
 githubStargazers: 13183
-npmWeeklyDownloads: 13914
+npmWeeklyDownloads: 32902
 contributors: 120
 dependentRepos: 2416
 dependentPackages: 97
@@ -101,7 +101,7 @@ sources:
     url: https://api.github.com/repos/mdbootstrap/TW-Elements/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/tw-elements
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/tw-elements
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tw-elements

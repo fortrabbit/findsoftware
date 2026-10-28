@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-05-06
 githubStargazers: 1887
-npmWeeklyDownloads: 108
+npmWeeklyDownloads: 1814
 contributors: 38
 dependentRepos: 9
 dependentPackages: 6
@@ -80,7 +80,7 @@ sources:
     url: https://api.github.com/repos/vexip-ui/vexip-ui/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/vexip-ui
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/vexip-ui
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vexip-ui

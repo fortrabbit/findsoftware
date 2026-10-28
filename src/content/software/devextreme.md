@@ -22,7 +22,7 @@ license: commercial
 currentMajor: "26"
 latestReleaseDate: 2026-10-26
 githubStargazers: 1916
-npmWeeklyDownloads: 196083
+npmWeeklyDownloads: 360323
 contributors: 180
 dependentRepos: 1827
 dependentPackages: 260
@@ -86,8 +86,8 @@ sources:
     url: https://api.github.com/repos/DevExpress/DevExtreme/contributors?per_page=1
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/devextreme
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/devextreme
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/devextreme
     checkedAt: 2026-10-26

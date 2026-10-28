@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "22"
 latestReleaseDate: 2026-09-25
 githubStargazers: 13044
-npmWeeklyDownloads: 32894
+npmWeeklyDownloads: 102284
 contributors: 173
 dependentRepos: 1173
 dependentPackages: 75
@@ -62,7 +62,7 @@ sources:
     url: https://github.com/primer/css
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@primer/css
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@primer/css
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@primer%2Fcss

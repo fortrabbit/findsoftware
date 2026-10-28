@@ -23,7 +23,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-08-28
 githubStargazers: 40708
-npmWeeklyDownloads: 1031176
+npmWeeklyDownloads: 2006693
 contributors: 412
 httpArchiveSites: 9096
 dependentRepos: 42120
@@ -104,8 +104,8 @@ sources:
     url: https://github.com/chakra-ui/chakra-ui
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@chakra-ui/react
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@chakra-ui/react
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40chakra-ui%2Freact
     checkedAt: 2026-10-26

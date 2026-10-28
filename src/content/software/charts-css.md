@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2025-07-21
 githubStargazers: 6582
-npmWeeklyDownloads: 7820
+npmWeeklyDownloads: 20511
 contributors: 2
 dependentRepos: 54
 dependentPackages: 6
@@ -85,8 +85,8 @@ sources:
     url: https://github.com/ChartsCSS/charts.css
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/charts.css
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/charts.css
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/charts.css
     checkedAt: 2026-10-26

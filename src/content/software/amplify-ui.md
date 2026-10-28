@@ -22,7 +22,7 @@ license: Apache-2.0
 currentMajor: "6"
 latestReleaseDate: 2026-10-02
 githubStargazers: 1144
-npmWeeklyDownloads: 250293
+npmWeeklyDownloads: 447861
 contributors: 159
 dependentRepos: 2646
 dependentPackages: 77
@@ -80,8 +80,8 @@ sources:
     url: https://github.com/aws-amplify/amplify-ui
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@aws-amplify/ui-react
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@aws-amplify/ui-react
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@aws-amplify%2Fui-react
     checkedAt: 2026-10-26

@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "8"
 latestReleaseDate: 2026-07-28
 githubStargazers: 18224
-npmWeeklyDownloads: 506061
+npmWeeklyDownloads: 967009
 contributors: 54
 httpArchiveSites: 53521
 dependentRepos: 92929
@@ -87,8 +87,8 @@ sources:
     url: https://github.com/ionic-team/ionicons
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/ionicons
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/ionicons
+    checkedAt: 2026-10-28
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-27

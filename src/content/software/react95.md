@@ -17,7 +17,7 @@ license: MIT
 currentMajor: "10"
 latestReleaseDate: 2026-10-20
 githubStargazers: 3841
-npmWeeklyDownloads: 838
+npmWeeklyDownloads: 1148
 contributors: 48
 dependentRepos: 40
 dependentPackages: 3
@@ -66,7 +66,7 @@ sources:
     url: https://api.github.com/repos/React95/React95/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@react95/core
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@react95/core
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40react95%2Fcore

@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "21"
 latestReleaseDate: 2026-06-22
 githubStargazers: 8218
-npmWeeklyDownloads: 353935
+npmWeeklyDownloads: 751319
 contributors: 184
 dependentRepos: 63448
 dependentPackages: 989
@@ -76,8 +76,8 @@ sources:
     url: https://github.com/ng-bootstrap/ng-bootstrap
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@ng-bootstrap/ng-bootstrap
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@ng-bootstrap/ng-bootstrap
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40ng-bootstrap%2Fng-bootstrap
     checkedAt: 2026-10-27

@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-05
 githubStargazers: 6911
-npmWeeklyDownloads: 1400419
+npmWeeklyDownloads: 2583012
 contributors: 274
 social:
   x: https://twitter.com/unovue
@@ -75,7 +75,7 @@ sources:
     url: https://api.github.com/repos/unovue/reka-ui/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/reka-ui
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/reka-ui
     checkedAt: 2026-10-28
   - field: i18n
     url: https://reka-ui.com/

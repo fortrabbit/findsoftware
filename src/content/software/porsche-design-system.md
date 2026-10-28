@@ -20,7 +20,7 @@ license: Apache-2.0, Porsche Design System Assets License Agreement
 currentMajor: "4"
 latestReleaseDate: 2026-10-23
 githubStargazers: 674
-npmWeeklyDownloads: 22957
+npmWeeklyDownloads: 40669
 contributors: 34
 dependentRepos: 7
 dependentPackages: 4
@@ -73,7 +73,7 @@ sources:
     url: https://github.com/porsche-design-system/porsche-design-system
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@porsche-design-system/components-js
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@porsche-design-system/components-js
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@porsche-design-system%2Fcomponents-js

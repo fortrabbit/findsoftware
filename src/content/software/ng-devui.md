@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "18"
 latestReleaseDate: 2024-12-03
 githubStargazers: 1814
-npmWeeklyDownloads: 251
+npmWeeklyDownloads: 1076
 contributors: 28
 dependentRepos: 43
 dependentPackages: 3
@@ -69,8 +69,8 @@ sources:
     url: https://github.com/DevCloudFE/ng-devui
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/ng-devui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/ng-devui
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ng-devui
     checkedAt: 2026-10-27

@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2018-09-09
 githubStargazers: 38780
-npmWeeklyDownloads: 20990
+npmWeeklyDownloads: 41844
 contributors: 239
 dependentRepos: 27491
 dependentPackages: 379
@@ -80,8 +80,8 @@ sources:
     url: https://api.github.com/repos/Dogfalo/materialize/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/materialize-css
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/materialize-css
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/materialize-css
     checkedAt: 2026-10-27

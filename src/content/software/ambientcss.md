@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-09-12
 githubStargazers: 587
-npmWeeklyDownloads: 178
+npmWeeklyDownloads: 233
 contributors: 2
 addedAt: 2026-10-26
 checkedAt: 2026-10-26
@@ -73,8 +73,8 @@ sources:
     url: https://api.github.com/repos/kikkupico/ambientcss/contributors
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@ambientcss/css
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@ambientcss/css
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

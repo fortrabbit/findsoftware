@@ -18,7 +18,7 @@ license: Apache-2.0, MIT
 currentMajor: "7"
 latestReleaseDate: 2023-12-27
 githubStargazers: 11319
-npmWeeklyDownloads: 445591
+npmWeeklyDownloads: 854979
 contributors: 21
 dependentRepos: 20548
 dependentPackages: 1046
@@ -74,8 +74,8 @@ sources:
     url: https://api.github.com/repos/Templarian/MaterialDesign/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@mdi/font
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@mdi/font
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40mdi%2Ffont
     checkedAt: 2026-10-27

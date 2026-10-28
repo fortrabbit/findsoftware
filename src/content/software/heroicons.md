@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2024-11-18
 githubStargazers: 23887
-npmWeeklyDownloads: 2827223
+npmWeeklyDownloads: 5022557
 contributors: 33
 dependentRepos: 45181
 dependentPackages: 1362
@@ -71,8 +71,8 @@ sources:
     url: https://api.github.com/repos/tailwindlabs/heroicons/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@heroicons/react
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@heroicons/react
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40heroicons%2Freact
     checkedAt: 2026-10-27

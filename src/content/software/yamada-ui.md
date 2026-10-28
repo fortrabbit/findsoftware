@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-28
 githubStargazers: 1034
-npmWeeklyDownloads: 9394
+npmWeeklyDownloads: 44221
 contributors: 208
 dependentRepos: 3
 social:
@@ -78,7 +78,7 @@ sources:
     url: https://api.github.com/repos/yamada-ui/yamada-ui/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@yamada-ui/react
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@yamada-ui/react
     checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40yamada-ui%2Freact

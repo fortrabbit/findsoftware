@@ -17,7 +17,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2020-04-26
 githubStargazers: 11729
-npmWeeklyDownloads: 61402
+npmWeeklyDownloads: 105594
 contributors: 63
 httpArchiveSites: 333
 dependentRepos: 13974
@@ -64,7 +64,7 @@ sources:
     url: https://registry.npmjs.org/tachyons
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/tachyons
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/tachyons
     checkedAt: 2026-10-28
   - field: githubStargazers
     url: https://api.github.com/repos/tachyons-css/tachyons

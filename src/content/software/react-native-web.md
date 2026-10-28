@@ -24,7 +24,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-10-08
 githubStargazers: 22157
-npmWeeklyDownloads: 5058986
+npmWeeklyDownloads: 8426698
 contributors: 201
 dependentRepos: 139616
 dependentPackages: 2444
@@ -88,7 +88,7 @@ sources:
     url: https://api.github.com/repos/necolas/react-native-web/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/react-native-web
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/react-native-web
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react-native-web

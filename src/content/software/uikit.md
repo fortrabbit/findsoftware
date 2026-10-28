@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-26
 githubStargazers: 18532
-npmWeeklyDownloads: 27250
+npmWeeklyDownloads: 64671
 contributors: 36
 httpArchiveSites: 77377
 dependentRepos: 5073
@@ -97,7 +97,7 @@ sources:
     url: https://github.com/uikit/uikit
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/uikit
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/uikit
     checkedAt: 2026-10-28
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies

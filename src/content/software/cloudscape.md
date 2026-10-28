@@ -23,7 +23,7 @@ license: Apache-2.0, Apache 2.0 License
 currentMajor: "3"
 latestReleaseDate: 2026-10-26
 githubStargazers: 2670
-npmWeeklyDownloads: 121171
+npmWeeklyDownloads: 245133
 contributors: 88
 dependentRepos: 229
 dependentPackages: 13
@@ -90,8 +90,8 @@ sources:
     url: https://api.github.com/repos/cloudscape-design/components/contributors
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@cloudscape-design/components
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@cloudscape-design/components
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@cloudscape-design/components
     checkedAt: 2026-10-26

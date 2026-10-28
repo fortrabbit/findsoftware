@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-09-08
 githubStargazers: 2250
-npmWeeklyDownloads: 17938
+npmWeeklyDownloads: 28301
 contributors: 11
 dependentRepos: 2
 dependentPackages: 2
@@ -74,7 +74,7 @@ sources:
     url: https://api.github.com/repos/reshaped-ui/reshaped/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/reshaped
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/reshaped
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/reshaped

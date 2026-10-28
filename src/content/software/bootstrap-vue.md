@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2022-10-26
 githubStargazers: 14409
-npmWeeklyDownloads: 109753
+npmWeeklyDownloads: 222299
 contributors: 324
 dependentRepos: 50893
 dependentPackages: 1036
@@ -89,8 +89,8 @@ sources:
     url: https://api.github.com/repos/bootstrap-vue/bootstrap-vue/contributors?per_page=1
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/bootstrap-vue
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/bootstrap-vue
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/bootstrap-vue
     checkedAt: 2026-10-26

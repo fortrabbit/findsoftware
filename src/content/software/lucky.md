@@ -33,7 +33,7 @@ contributors: 88
 social:
   bluesky: https://bsky.app/profile/luckyframework.org
   discord: https://discord.com/invite/HeqJUcb
-addedAt: 2026-10-26
+addedAt: 2026-10-28
 checkedAt: 2026-10-26
 sources:
   - field: urls

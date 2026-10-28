@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "9"
 latestReleaseDate: 2025-12-08
 githubStargazers: 24242
-npmWeeklyDownloads: 4200
+npmWeeklyDownloads: 14656
 contributors: 96
 dependentRepos: 1146
 dependentPackages: 8
@@ -88,8 +88,8 @@ sources:
     url: https://api.github.com/repos/mdbootstrap/mdb-ui-kit/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/mdb-ui-kit
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/mdb-ui-kit
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/mdb-ui-kit
     checkedAt: 2026-10-27

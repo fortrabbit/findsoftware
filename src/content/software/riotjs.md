@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "10"
 latestReleaseDate: 2026-08-06
 githubStargazers: 14922
-npmWeeklyDownloads: 4459
+npmWeeklyDownloads: 7948
 contributors: 175
 httpArchiveSites: 2319
 dependentRepos: 958
@@ -71,7 +71,7 @@ sources:
     url: https://api.github.com/repos/riot/riot/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/riot
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/riot
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/riot

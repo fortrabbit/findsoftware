@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2025-11-20
 githubStargazers: 2378
-npmWeeklyDownloads: 1723
+npmWeeklyDownloads: 3989
 contributors: 31
 addedAt: 2026-10-27
 checkedAt: 2026-10-27
@@ -75,8 +75,8 @@ sources:
     url: https://github.com/chakra-ui/park-ui
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@park-ui/cli
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@park-ui/cli
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

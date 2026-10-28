@@ -19,7 +19,7 @@ currentMajor: "16"
 latestReleaseDate: 2026-10-25
 githubStargazers: 26101
 packagistDownloads: 271160
-npmWeeklyDownloads: 1196232
+npmWeeklyDownloads: 1934866
 contributors: 429
 dependentRepos: 814
 dependentPackages: 81
@@ -83,7 +83,7 @@ sources:
     url: https://api.github.com/repos/simple-icons/simple-icons/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/simple-icons
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/simple-icons
     checkedAt: 2026-10-28
   - field: packagistDownloads
     url: https://packagist.org/packages/simple-icons/simple-icons.json

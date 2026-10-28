@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2021-01-18
 githubStargazers: 2956
-npmWeeklyDownloads: 41670
+npmWeeklyDownloads: 28865
 contributors: 7
 dependentRepos: 478
 dependentPackages: 49
@@ -77,8 +77,8 @@ sources:
     url: https://api.github.com/repos/Andy-set-studio/modern-css-reset
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/modern-css-reset
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/modern-css-reset
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/modern-css-reset
     checkedAt: 2026-10-27

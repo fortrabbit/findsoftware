@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "9"
 latestReleaseDate: 2024-09-26
 githubStargazers: 10509
-npmWeeklyDownloads: 271482
+npmWeeklyDownloads: 643447
 contributors: 253
 dependentRepos: 94686
 dependentPackages: 1802
@@ -74,7 +74,7 @@ sources:
     url: https://api.github.com/repos/reactstrap/reactstrap/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/reactstrap
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/reactstrap
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/reactstrap

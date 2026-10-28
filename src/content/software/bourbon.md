@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "7"
 latestReleaseDate: 2023-01-23
 githubStargazers: 8993
-npmWeeklyDownloads: 65683
+npmWeeklyDownloads: 194305
 contributors: 109
 dependentRepos: 21510
 dependentPackages: 112
@@ -80,8 +80,8 @@ sources:
     url: https://api.github.com/repos/thoughtbot/bourbon/contributors?per_page=1
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/bourbon
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/bourbon
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/bourbon
     checkedAt: 2026-10-26

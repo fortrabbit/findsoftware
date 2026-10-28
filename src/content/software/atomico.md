@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-07-19
 githubStargazers: 1281
-npmWeeklyDownloads: 32523
+npmWeeklyDownloads: 72907
 contributors: 7
 social:
   x: https://twitter.com/atomicojs
@@ -71,8 +71,8 @@ sources:
     url: https://api.github.com/repos/atomicojs/atomico/contributors?per_page=1
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/atomico
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/atomico
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

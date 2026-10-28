@@ -21,7 +21,7 @@ license: CC0-1.0
 currentMajor: "13"
 latestReleaseDate: 2021-09-14
 githubStargazers: 5315
-npmWeeklyDownloads: 1782517
+npmWeeklyDownloads: 3413445
 contributors: 52
 dependentRepos: 1049096
 dependentPackages: 418
@@ -83,7 +83,7 @@ sources:
     url: https://api.github.com/repos/csstools/sanitize.css/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/sanitize.css
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/sanitize.css
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/sanitize.css

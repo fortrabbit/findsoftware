@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "8"
 latestReleaseDate: 2026-01-29
 githubStargazers: 7399
-npmWeeklyDownloads: 566501
+npmWeeklyDownloads: 1126219
 contributors: 120
 httpArchiveSites: 19598
 dependentRepos: 3505
@@ -90,7 +90,7 @@ sources:
     url: https://api.github.com/repos/hotwired/turbo/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@hotwired/turbo
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@hotwired/turbo
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40hotwired%2Fturbo

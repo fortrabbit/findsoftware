@@ -22,7 +22,7 @@ license: Apache-2.0, MIT
 currentMajor: "9"
 latestReleaseDate: 2026-10-14
 githubStargazers: 3444
-npmWeeklyDownloads: 3003
+npmWeeklyDownloads: 7611
 contributors: 48
 dependentRepos: 315
 dependentPackages: 12
@@ -86,7 +86,7 @@ sources:
     url: https://api.github.com/repos/hperrin/svelte-material-ui/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/svelte-material-ui
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/svelte-material-ui
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/svelte-material-ui

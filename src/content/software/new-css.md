@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2020-05-20
 githubStargazers: 4051
-npmWeeklyDownloads: 520
+npmWeeklyDownloads: 494
 contributors: 11
 dependentRepos: 51
 dependentPackages: 5
@@ -76,8 +76,8 @@ sources:
     url: https://github.com/xz/new.css
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@exampledev/new.css
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@exampledev/new.css
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40exampledev%2Fnew.css
     checkedAt: 2026-10-27

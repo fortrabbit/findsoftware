@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2023-08-24
 githubStargazers: 54009
-npmWeeklyDownloads: 79407
+npmWeeklyDownloads: 160879
 contributors: 401
 httpArchiveSites: 87027
 dependentRepos: 81720
@@ -81,8 +81,8 @@ sources:
     url: https://github.com/ElemeFE/element
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/element-ui
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/element-ui
+    checkedAt: 2026-10-28
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-26

@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-23
 githubStargazers: 9217
-npmWeeklyDownloads: 125553
+npmWeeklyDownloads: 196434
 contributors: 197
 dependentRepos: 1
 addedAt: 2026-10-28
@@ -79,7 +79,7 @@ sources:
     url: https://api.github.com/repos/huntabyte/shadcn-svelte/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/shadcn-svelte
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/shadcn-svelte
     checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/shadcn-svelte

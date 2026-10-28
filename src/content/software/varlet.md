@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-25
 githubStargazers: 5341
-npmWeeklyDownloads: 1631
+npmWeeklyDownloads: 3610
 contributors: 111
 dependentRepos: 38
 dependentPackages: 13
@@ -83,7 +83,7 @@ sources:
     url: https://api.github.com/repos/varletjs/varlet/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@varlet/ui
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@varlet/ui
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40varlet%2Fui

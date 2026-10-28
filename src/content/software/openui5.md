@@ -21,7 +21,7 @@ license: Apache-2.0
 currentMajor: "1"
 latestReleaseDate: 2026-10-27
 githubStargazers: 3322
-npmWeeklyDownloads: 30094
+npmWeeklyDownloads: 75921
 contributors: 267
 httpArchiveSites: 247
 dependentRepos: 187
@@ -83,8 +83,8 @@ sources:
     url: https://api.github.com/repos/UI5/openui5/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@openui5/sap.ui.core
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@openui5/sap.ui.core
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40openui5%2Fsap.ui.core
     checkedAt: 2026-10-27

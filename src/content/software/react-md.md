@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "7"
 latestReleaseDate: 2026-06-25
 githubStargazers: 2326
-npmWeeklyDownloads: 284
+npmWeeklyDownloads: 1038
 contributors: 70
 dependentPackages: 1
 addedAt: 2026-10-28
@@ -76,7 +76,7 @@ sources:
     url: https://api.github.com/repos/mlaursen/react-md/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@react-md/core
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@react-md/core
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40react-md%2Fcore

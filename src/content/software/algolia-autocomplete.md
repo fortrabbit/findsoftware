@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-09-28
 githubStargazers: 5266
-npmWeeklyDownloads: 96791
+npmWeeklyDownloads: 234113
 contributors: 134
 dependentRepos: 989
 dependentPackages: 50
@@ -81,7 +81,7 @@ sources:
     url: https://api.github.com/repos/algolia/autocomplete/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@algolia/autocomplete-js
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@algolia/autocomplete-js
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40algolia%2Fautocomplete-js

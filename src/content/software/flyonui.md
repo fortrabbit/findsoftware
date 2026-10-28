@@ -24,7 +24,7 @@ license: MIT, FlyonUI Pro License
 currentMajor: "2"
 latestReleaseDate: 2025-09-26
 githubStargazers: 2537
-npmWeeklyDownloads: 6135
+npmWeeklyDownloads: 11735
 contributors: 9
 social:
   x: https://x.com/flyonui
@@ -87,8 +87,8 @@ sources:
     url: https://github.com/themeselection/flyonui
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/flyonui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/flyonui
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

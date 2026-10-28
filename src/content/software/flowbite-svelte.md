@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-04-07
 githubStargazers: 2790
-npmWeeklyDownloads: 42490
+npmWeeklyDownloads: 112332
 contributors: 161
 dependentRepos: 426
 dependentPackages: 74
@@ -84,8 +84,8 @@ sources:
     url: https://api.github.com/repos/themesberg/flowbite-svelte/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/flowbite-svelte
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/flowbite-svelte
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/flowbite-svelte
     checkedAt: 2026-10-27

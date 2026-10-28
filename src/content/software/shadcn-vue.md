@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-28
 githubStargazers: 10742
-npmWeeklyDownloads: 59112
+npmWeeklyDownloads: 130301
 contributors: 236
 dependentRepos: 2
 social:
@@ -75,7 +75,7 @@ sources:
     url: https://github.com/unovue/shadcn-vue
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/shadcn-vue
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/shadcn-vue
     checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/shadcn-vue

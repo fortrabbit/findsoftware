@@ -18,11 +18,11 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-09
 githubStargazers: 10920
-npmWeeklyDownloads: 60358
+npmWeeklyDownloads: 76524
 contributors: 74
 dependentRepos: 35
 dependentPackages: 15
-addedAt: 2026-10-27
+addedAt: 2026-10-28
 checkedAt: 2026-10-27
 sources:
   - field: urls
@@ -65,8 +65,8 @@ sources:
     url: https://github.com/microsoft/fluentui-system-icons
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@fluentui/svg-icons
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@fluentui/svg-icons
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@fluentui%2fsvg-icons
     checkedAt: 2026-10-27

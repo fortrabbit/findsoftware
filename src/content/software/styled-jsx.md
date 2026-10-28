@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2025-04-30
 githubStargazers: 7773
-npmWeeklyDownloads: 42306114
+npmWeeklyDownloads: 70483449
 contributors: 79
 dependentRepos: 322498
 dependentPackages: 1022
@@ -65,7 +65,7 @@ sources:
     url: https://api.github.com/repos/vercel/styled-jsx/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/styled-jsx
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/styled-jsx
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/styled-jsx

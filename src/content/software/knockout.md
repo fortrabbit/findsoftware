@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-03-25
 githubStargazers: 10561
-npmWeeklyDownloads: 90554
+npmWeeklyDownloads: 165489
 contributors: 81
 httpArchiveSites: 18127
 dependentRepos: 2165
@@ -84,8 +84,8 @@ sources:
     url: https://api.github.com/repos/knockout/knockout
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/knockout
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/knockout
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/knockout
     checkedAt: 2026-10-27

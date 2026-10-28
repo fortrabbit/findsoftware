@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2024-07-07
 githubStargazers: 1399
-npmWeeklyDownloads: 253
+npmWeeklyDownloads: 573
 contributors: 22
 dependentRepos: 57
 dependentPackages: 15
@@ -79,7 +79,7 @@ sources:
     url: https://api.github.com/repos/svelteuidev/svelteui/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@svelteuidev/core
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@svelteuidev/core
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40svelteuidev%2Fcore

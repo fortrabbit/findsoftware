@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-08-12
 githubStargazers: 2475
-npmWeeklyDownloads: 1801
+npmWeeklyDownloads: 3211
 contributors: 16
 addedAt: 2026-10-28
 checkedAt: 2026-10-28
@@ -66,7 +66,7 @@ sources:
     url: https://github.com/webtui/webtui
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@webtui/css
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@webtui/css
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

@@ -24,7 +24,7 @@ license: Apache-2.0
 currentMajor: "5"
 latestReleaseDate: 2026-10-26
 githubStargazers: 4079
-npmWeeklyDownloads: 20878
+npmWeeklyDownloads: 44181
 contributors: 265
 dependentRepos: 155
 dependentPackages: 6
@@ -88,7 +88,7 @@ sources:
     url: https://github.com/taiga-family/taiga-ui
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/%40taiga-ui%2Fcdk
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/%40taiga-ui%2Fcdk
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40taiga-ui%2Fcdk

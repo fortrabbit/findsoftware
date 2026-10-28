@@ -20,7 +20,7 @@ license: Apache-2.0
 currentMajor: "1"
 latestReleaseDate: 2026-10-09
 githubStargazers: 15989
-npmWeeklyDownloads: 3428747
+npmWeeklyDownloads: 5869802
 contributors: 411
 dependentRepos: 51
 dependentPackages: 1
@@ -70,7 +70,7 @@ sources:
     url: https://api.github.com/repos/adobe/react-spectrum/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/react-aria-components
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/react-aria-components
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react-aria-components

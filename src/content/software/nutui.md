@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2025-07-25
 githubStargazers: 6512
-npmWeeklyDownloads: 1631
+npmWeeklyDownloads: 3160
 contributors: 125
 dependentRepos: 154
 dependentPackages: 49
@@ -73,8 +73,8 @@ sources:
     url: https://api.github.com/repos/jd-opensource/nutui/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@nutui/nutui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@nutui/nutui
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40nutui%2Fnutui
     checkedAt: 2026-10-27

@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "6"
 latestReleaseDate: 2026-10-26
 githubStargazers: 99905
-npmWeeklyDownloads: 2418704
+npmWeeklyDownloads: 4517087
 contributors: 376
 httpArchiveSites: 20614
 dependentRepos: 113307
@@ -80,8 +80,8 @@ sources:
     url: https://github.com/ant-design/ant-design
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/antd
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/antd
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/antd
     checkedAt: 2026-10-26

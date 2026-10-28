@@ -22,7 +22,7 @@ license: Apache-2.0
 currentMajor: "12"
 latestReleaseDate: 2026-10-26
 githubStargazers: 981
-npmWeeklyDownloads: 1485
+npmWeeklyDownloads: 4995
 contributors: 91
 addedAt: 2026-10-26
 checkedAt: 2026-10-26
@@ -82,8 +82,8 @@ sources:
     url: https://github.com/sumup-oss/circuit-ui
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@sumup-oss/circuit-ui
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@sumup-oss/circuit-ui
+    checkedAt: 2026-10-28
   - field: i18n
     url: https://github.com/sumup-oss/circuit-ui/blob/main/docs/introduction/4-internationalization.mdx
     checkedAt: 2026-10-26

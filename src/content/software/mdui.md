@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-07-14
 githubStargazers: 4537
-npmWeeklyDownloads: 3796
+npmWeeklyDownloads: 7206
 contributors: 12
 httpArchiveSites: 50
 dependentRepos: 81
@@ -80,8 +80,8 @@ sources:
     url: https://github.com/zdhxiong/mdui
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/mdui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/mdui
+    checkedAt: 2026-10-28
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-27

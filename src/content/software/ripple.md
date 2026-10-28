@@ -23,7 +23,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-10-27
 githubStargazers: 7412
-npmWeeklyDownloads: 997
+npmWeeklyDownloads: 4540
 contributors: 79
 dependentRepos: 8
 dependentPackages: 2
@@ -87,7 +87,7 @@ sources:
     url: https://api.github.com/repos/Ripple-TS/ripple/contributors?per_page=1&anon=true
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/ripple
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/ripple
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ripple

@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-08-20
 githubStargazers: 1128
-npmWeeklyDownloads: 3346
+npmWeeklyDownloads: 13093
 contributors: 33
 dependentRepos: 1
 dependentPackages: 1
@@ -79,7 +79,7 @@ sources:
     url: https://api.github.com/repos/techniq/svelte-ux/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/svelte-ux
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/svelte-ux
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/svelte-ux

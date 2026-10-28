@@ -22,7 +22,7 @@ license: MIT, fonts and icons subject to the assets license agreement
 currentMajor: "9"
 latestReleaseDate: 2026-10-26
 githubStargazers: 20368
-npmWeeklyDownloads: 260921
+npmWeeklyDownloads: 529421
 contributors: 383
 dependentRepos: 535
 dependentPackages: 58
@@ -86,8 +86,8 @@ sources:
     url: https://github.com/microsoft/fluentui
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@fluentui/react-components
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@fluentui/react-components
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@fluentui%2freact-components
     checkedAt: 2026-10-27

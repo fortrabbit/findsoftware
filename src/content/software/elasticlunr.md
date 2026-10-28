@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2016-09-08
 githubStargazers: 2064
-npmWeeklyDownloads: 15099
+npmWeeklyDownloads: 34854
 contributors: 29
 dependentRepos: 1603
 dependentPackages: 83
@@ -60,7 +60,7 @@ sources:
     url: https://registry.npmjs.org/elasticlunr
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/elasticlunr
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/elasticlunr
     checkedAt: 2026-10-28
   - field: githubStargazers
     url: https://api.github.com/repos/weixsong/elasticlunr.js

@@ -17,7 +17,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2024-03-29
 githubStargazers: 395
-npmWeeklyDownloads: 1246619
+npmWeeklyDownloads: 1989596
 contributors: 10
 dependentRepos: 1
 dependentPackages: 16
@@ -60,8 +60,8 @@ sources:
     url: https://api.github.com/repos/phosphor-icons/core/contributors?per_page=1
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@phosphor-icons/core
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@phosphor-icons/core
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40phosphor-icons%2Fcore
     checkedAt: 2026-10-27

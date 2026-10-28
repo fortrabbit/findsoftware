@@ -23,7 +23,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-08-31
 githubStargazers: 24408
-npmWeeklyDownloads: 50219
+npmWeeklyDownloads: 142564
 contributors: 366
 httpArchiveSites: 984
 dependentRepos: 14315
@@ -94,7 +94,7 @@ sources:
     url: https://api.github.com/repos/youzan/vant/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/vant
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/vant
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vant

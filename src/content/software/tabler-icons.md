@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-27
 githubStargazers: 22488
-npmWeeklyDownloads: 2875422
+npmWeeklyDownloads: 4700432
 contributors: 103
 dependentRepos: 4762
 dependentPackages: 214
@@ -72,7 +72,7 @@ sources:
     url: https://api.github.com/repos/tabler/tabler-icons/releases
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@tabler/icons
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@tabler/icons
     checkedAt: 2026-10-28
   - field: githubStargazers
     url: https://api.github.com/repos/tabler/tabler-icons

@@ -20,7 +20,7 @@ license: Apache-2.0
 currentMajor: "2"
 latestReleaseDate: 2026-07-15
 githubStargazers: 11379
-npmWeeklyDownloads: 97024
+npmWeeklyDownloads: 164473
 contributors: 132
 dependentRepos: 29
 dependentPackages: 54
@@ -81,8 +81,8 @@ sources:
     url: https://api.github.com/repos/material-components/material-web
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@material%2Fweb
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@material%2Fweb
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40material%2Fweb
     checkedAt: 2026-10-27

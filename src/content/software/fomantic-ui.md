@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2025-02-23
 githubStargazers: 3769
-npmWeeklyDownloads: 10208
+npmWeeklyDownloads: 22440
 contributors: 256
 dependentRepos: 605
 dependentPackages: 37
@@ -85,8 +85,8 @@ sources:
     url: https://github.com/fomantic/Fomantic-UI
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/fomantic-ui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/fomantic-ui
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/fomantic-ui
     checkedAt: 2026-10-27

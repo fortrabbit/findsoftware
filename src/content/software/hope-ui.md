@@ -16,7 +16,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2022-08-01
 githubStargazers: 844
-npmWeeklyDownloads: 1863
+npmWeeklyDownloads: 1474
 contributors: 3
 dependentRepos: 69
 dependentPackages: 7
@@ -66,8 +66,8 @@ sources:
     url: https://api.github.com/repos/hope-ui/legacy-hope/contributors?per_page=1
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@hope-ui/solid
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@hope-ui/solid
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40hope-ui%2Fsolid
     checkedAt: 2026-10-27

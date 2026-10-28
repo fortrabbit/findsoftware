@@ -17,7 +17,7 @@ license: Remix Icon License v1.0, Apache-2.0
 currentMajor: "4"
 latestReleaseDate: 2026-01-29
 githubStargazers: 8439
-npmWeeklyDownloads: 134072
+npmWeeklyDownloads: 227279
 contributors: 15
 dependentRepos: 1582
 dependentPackages: 226
@@ -66,7 +66,7 @@ sources:
     url: https://api.github.com/repos/Remix-Design/RemixIcon/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/remixicon
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/remixicon
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/remixicon

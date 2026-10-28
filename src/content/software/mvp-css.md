@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-09-14
 githubStargazers: 5130
-npmWeeklyDownloads: 1626
+npmWeeklyDownloads: 2152
 contributors: 26
 dependentRepos: 19
 dependentPackages: 6
@@ -81,8 +81,8 @@ sources:
     url: https://api.github.com/repos/andybrewer/mvp/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/mvp.css
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/mvp.css
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/mvp.css
     checkedAt: 2026-10-27

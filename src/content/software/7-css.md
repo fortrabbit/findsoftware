@@ -13,13 +13,15 @@ maintainer: Khang Nguyen Duy
 maintainerType: individual
 firstRelease: 2020
 language: css
+basedOn:
+  - xp-css
 installMethod: cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "0"
 latestReleaseDate: 2025-07-27
 githubStargazers: 2472
-npmWeeklyDownloads: 629
+npmWeeklyDownloads: 870
 contributors: 29
 dependentRepos: 8
 dependentPackages: 4
@@ -53,6 +55,9 @@ sources:
   - field: installMethod
     url: https://github.com/khang-nd/7.css/blob/main/README.md
     checkedAt: 2026-10-26
+  - field: basedOn
+    url: https://github.com/khang-nd/7.css/blob/main/README.md
+    checkedAt: 2026-10-26
   - field: license
     url: https://api.github.com/repos/khang-nd/7.css
     checkedAt: 2026-10-26
@@ -66,8 +71,8 @@ sources:
     url: https://api.github.com/repos/khang-nd/7.css/releases
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/7.css
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/7.css
+    checkedAt: 2026-10-28
   - field: githubStargazers
     url: https://api.github.com/repos/khang-nd/7.css
     checkedAt: 2026-10-26

@@ -23,7 +23,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-27
 githubStargazers: 739
-npmWeeklyDownloads: 86272
+npmWeeklyDownloads: 120210
 contributors: 13
 social:
   discord: https://discord.gg/vuetify
@@ -79,7 +79,7 @@ sources:
     url: https://github.com/vuetifyjs/0
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@vuetify/v0
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@vuetify/v0
     checkedAt: 2026-10-28
   - field: hqCountry
     url: https://github.com/vuetifyjs/vuetify/blob/master/packages/docs/src/pages/en/legal/mcp-privacy.md

@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2024-11-11
 githubStargazers: 21694
-npmWeeklyDownloads: 102541
+npmWeeklyDownloads: 294587
 contributors: 269
 dependentRepos: 10958
 dependentPackages: 4396
@@ -74,8 +74,8 @@ sources:
     url: https://github.com/vueComponent/ant-design-vue
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/ant-design-vue
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/ant-design-vue
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ant-design-vue
     checkedAt: 2026-10-26

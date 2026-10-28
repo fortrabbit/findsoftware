@@ -25,7 +25,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-22
 githubStargazers: 1192
-npmWeeklyDownloads: 2656
+npmWeeklyDownloads: 4840
 contributors: 33
 social:
   x: https://x.com/zard_ui
@@ -88,7 +88,7 @@ sources:
     url: https://api.github.com/repos/zard-ui/zardui/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/zard-cli
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/zard-cli
     checkedAt: 2026-10-28
   - field: i18n
     url: https://www.zardui.com/docs/rtl

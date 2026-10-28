@@ -33,7 +33,7 @@ githubStargazers: 45
 contributors: 2
 ecosystemsMonthlyDownloads: 43
 dependentRepos: 2
-addedAt: 2026-10-23
+addedAt: 2026-10-28
 checkedAt: 2026-10-23
 sources:
   - field: urls

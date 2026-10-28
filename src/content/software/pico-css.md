@@ -20,7 +20,7 @@ currentMajor: "2"
 latestReleaseDate: 2025-03-15
 githubStargazers: 16832
 packagistDownloads: 21235
-npmWeeklyDownloads: 33059
+npmWeeklyDownloads: 63801
 contributors: 61
 httpArchiveSites: 193
 dependentRepos: 572
@@ -80,8 +80,8 @@ sources:
     url: https://api.github.com/repos/picocss/pico/contributors?per_page=1
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@picocss/pico
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@picocss/pico
+    checkedAt: 2026-10-28
   - field: packagistDownloads
     url: https://packagist.org/packages/picocss/pico.json
     checkedAt: 2026-10-27

@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2024-03-01
 githubStargazers: 1019
-npmWeeklyDownloads: 124
+npmWeeklyDownloads: 190
 contributors: 12
 addedAt: 2026-10-26
 checkedAt: 2026-10-26
@@ -81,8 +81,8 @@ sources:
     url: https://api.github.com/repos/illright/attractions/contributors?per_page=1
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/attractions
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/attractions
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

@@ -18,7 +18,7 @@ license: MIT, Creative Commons BY-SA 4.0 (documentation)
 currentMajor: "4"
 latestReleaseDate: 2016-12-29
 githubStargazers: 928
-npmWeeklyDownloads: 58
+npmWeeklyDownloads: 39
 contributors: 12
 dependentRepos: 16
 dependentPackages: 8
@@ -79,8 +79,8 @@ sources:
     url: https://api.github.com/repos/ConciseCSS/concise.css/contributors
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/concise.css
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/concise.css
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/concise.css
     checkedAt: 2026-10-26

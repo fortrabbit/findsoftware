@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2024-10-17
 githubStargazers: 3748
-npmWeeklyDownloads: 4301
+npmWeeklyDownloads: 7391
 contributors: 127
 dependentRepos: 164
 dependentPackages: 10
@@ -87,7 +87,7 @@ sources:
     url: https://api.github.com/repos/epicmaxco/vuestic-ui/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/vuestic-ui
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/vuestic-ui
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vuestic-ui

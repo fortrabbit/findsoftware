@@ -23,7 +23,7 @@ license: PrimeUI License, MIT
 currentMajor: "11"
 latestReleaseDate: 2026-10-22
 githubStargazers: 8310
-npmWeeklyDownloads: 3526
+npmWeeklyDownloads: 6939
 contributors: 347
 social:
   discord: https://discord.gg/gzKFYnpmCY
@@ -85,7 +85,7 @@ sources:
     url: https://api.github.com/repos/primefaces/primereact/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@primereact%2Fui
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@primereact%2Fui
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

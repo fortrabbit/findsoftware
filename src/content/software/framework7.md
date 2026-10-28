@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "9"
 latestReleaseDate: 2026-09-28
 githubStargazers: 18775
-npmWeeklyDownloads: 16076
+npmWeeklyDownloads: 47880
 contributors: 148
 dependentRepos: 999
 dependentPackages: 65
@@ -79,8 +79,8 @@ sources:
     url: https://github.com/framework7io/framework7
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/framework7
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/framework7
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/framework7
     checkedAt: 2026-10-27

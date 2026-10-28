@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-08-11
 githubStargazers: 30582
-npmWeeklyDownloads: 4060
+npmWeeklyDownloads: 7331
 contributors: 65
 httpArchiveSites: 2800
 dependentRepos: 34
@@ -85,8 +85,8 @@ sources:
     url: https://api.github.com/repos/layui/layui/contributors?per_page=1&anon=false
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/layui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/layui
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/layui
     checkedAt: 2026-10-27

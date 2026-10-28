@@ -25,7 +25,7 @@ license: MIT
 currentMajor: "9"
 latestReleaseDate: 2026-09-26
 githubStargazers: 3189
-npmWeeklyDownloads: 3609
+npmWeeklyDownloads: 7295
 contributors: 21
 dependentRepos: 98
 dependentPackages: 62
@@ -90,8 +90,8 @@ sources:
     url: https://api.github.com/repos/hybridsjs/hybrids/contributors?per_page=1
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/hybrids
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/hybrids
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/hybrids
     checkedAt: 2026-10-27

@@ -21,7 +21,7 @@ license: custom license based on MIT, not an SPDX identifier, Polaris Design Gui
 currentMajor: "13"
 latestReleaseDate: 2025-03-26
 githubStargazers: 6164
-npmWeeklyDownloads: 169286
+npmWeeklyDownloads: 347733
 contributors: 337
 dependentRepos: 1041
 dependentPackages: 89
@@ -83,8 +83,8 @@ sources:
     url: https://api.github.com/repos/Shopify/polaris-react-archive/contributors?per_page=1
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@shopify/polaris
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@shopify/polaris
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40shopify%2Fpolaris
     checkedAt: 2026-10-27

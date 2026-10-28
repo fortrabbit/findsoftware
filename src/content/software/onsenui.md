@@ -20,7 +20,7 @@ license: Apache-2.0
 currentMajor: "2"
 latestReleaseDate: 2026-06-16
 githubStargazers: 8854
-npmWeeklyDownloads: 4218
+npmWeeklyDownloads: 7109
 contributors: 104
 dependentRepos: 557
 dependentPackages: 25
@@ -80,8 +80,8 @@ sources:
     url: https://api.github.com/repos/OnsenUI/OnsenUI/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/onsenui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/onsenui
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/onsenui
     checkedAt: 2026-10-27

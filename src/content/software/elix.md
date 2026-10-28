@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "15"
 latestReleaseDate: 2021-11-13
 githubStargazers: 838
-npmWeeklyDownloads: 4423
+npmWeeklyDownloads: 8500
 contributors: 12
 dependentRepos: 39
 dependentPackages: 55
@@ -83,8 +83,8 @@ sources:
     url: https://github.com/elix/elix
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/elix
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/elix
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/elix
     checkedAt: 2026-10-26

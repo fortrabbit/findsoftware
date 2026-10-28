@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-26
 githubStargazers: 5242
-npmWeeklyDownloads: 1006605
+npmWeeklyDownloads: 1749510
 contributors: 141
 dependentRepos: 494
 dependentPackages: 49
@@ -72,7 +72,7 @@ sources:
     url: https://api.github.com/repos/chakra-ui/zag/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@zag-js/core
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@zag-js/core
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40zag-js%2Fcore

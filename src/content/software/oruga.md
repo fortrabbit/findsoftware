@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-09-21
 githubStargazers: 1163
-npmWeeklyDownloads: 4103
+npmWeeklyDownloads: 8233
 contributors: 85
 dependentRepos: 104
 dependentPackages: 29
@@ -78,8 +78,8 @@ sources:
     url: https://github.com/oruga-ui/oruga
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@oruga-ui/oruga-next
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@oruga-ui/oruga-next
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40oruga-ui%2Foruga-next
     checkedAt: 2026-10-27

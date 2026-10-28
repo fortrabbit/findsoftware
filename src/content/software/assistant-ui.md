@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-10-22
 githubStargazers: 12758
-npmWeeklyDownloads: 1312057
+npmWeeklyDownloads: 2367302
 contributors: 191
 dependentPackages: 1
 social:
@@ -80,8 +80,8 @@ sources:
     url: https://github.com/assistant-ui/assistant-ui
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@assistant-ui/react
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@assistant-ui/react
+    checkedAt: 2026-10-28
   - field: urls
     url: https://www.assistant-ui.com/pricing
     checkedAt: 2026-10-26

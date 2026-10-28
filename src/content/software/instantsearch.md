@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-26
 githubStargazers: 4065
-npmWeeklyDownloads: 614373
+npmWeeklyDownloads: 1503275
 contributors: 212
 dependentRepos: 1512
 dependentPackages: 72
@@ -77,7 +77,7 @@ sources:
     url: https://api.github.com/repos/algolia/instantsearch/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/instantsearch.js
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/instantsearch.js
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/instantsearch.js

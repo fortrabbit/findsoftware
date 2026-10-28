@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2020-07-02
 githubStargazers: 11304
-npmWeeklyDownloads: 4848
+npmWeeklyDownloads: 6766
 contributors: 26
 dependentRepos: 1045
 dependentPackages: 98
@@ -83,7 +83,7 @@ sources:
     url: https://github.com/picturepan2/spectre/graphs/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/spectre.css
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/spectre.css
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/spectre.css

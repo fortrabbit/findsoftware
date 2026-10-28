@@ -23,7 +23,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-23
 githubStargazers: 4413
-npmWeeklyDownloads: 17771
+npmWeeklyDownloads: 32977
 contributors: 16
 social:
   x: https://x.com/hunvreus
@@ -83,8 +83,8 @@ sources:
     url: https://github.com/hunvreus/basecoat
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/basecoat-css
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/basecoat-css
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

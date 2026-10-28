@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2023-01-24
 githubStargazers: 3946
-npmWeeklyDownloads: 21501
+npmWeeklyDownloads: 41202
 contributors: 17
 dependentRepos: 6
 dependentPackages: 41
@@ -86,7 +86,7 @@ sources:
     url: https://github.com/tw-in-js/twind
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@twind/core
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@twind/core
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@twind%2Fcore

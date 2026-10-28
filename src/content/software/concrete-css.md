@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2025-03-15
 githubStargazers: 633
-npmWeeklyDownloads: 70
+npmWeeklyDownloads: 200
 contributors: 7
 dependentRepos: 3
 dependentPackages: 1
@@ -75,8 +75,8 @@ sources:
     url: https://api.github.com/repos/louismerlin/concrete.css/contributors
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/concrete.css
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/concrete.css
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/concrete.css
     checkedAt: 2026-10-26

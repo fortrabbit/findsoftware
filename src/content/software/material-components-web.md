@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "14"
 latestReleaseDate: 2022-04-28
 githubStargazers: 17039
-npmWeeklyDownloads: 18196
+npmWeeklyDownloads: 61594
 contributors: 371
 dependentRepos: 4007
 dependentPackages: 231
@@ -80,8 +80,8 @@ sources:
     url: https://api.github.com/repos/material-components/material-components-web
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/material-components-web
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/material-components-web
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/material-components-web
     checkedAt: 2026-10-27

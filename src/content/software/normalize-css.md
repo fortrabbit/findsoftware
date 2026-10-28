@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "8"
 latestReleaseDate: 2018-11-09
 githubStargazers: 53493
-npmWeeklyDownloads: 808563
+npmWeeklyDownloads: 1629501
 contributors: 35
 dependentRepos: 168359
 dependentPackages: 6333
@@ -75,8 +75,8 @@ sources:
     url: https://github.com/necolas/normalize.css
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/normalize.css
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/normalize.css
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/normalize.css
     checkedAt: 2026-10-27

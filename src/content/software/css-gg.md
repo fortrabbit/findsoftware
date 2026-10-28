@@ -18,7 +18,7 @@ license: License Agreement for CSS＊GG & GLYF＊APP, SEE LICENSE
 currentMajor: "2"
 latestReleaseDate: 2024-08-26
 githubStargazers: 10059
-npmWeeklyDownloads: 7878
+npmWeeklyDownloads: 12356
 contributors: 6
 social:
   x: https://twitter.com/astritmalsija
@@ -77,8 +77,8 @@ sources:
     url: https://api.github.com/repos/astrit/css.gg/contributors
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/css.gg
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/css.gg
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

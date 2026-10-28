@@ -23,7 +23,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-26
 githubStargazers: 41031
-npmWeeklyDownloads: 682171
+npmWeeklyDownloads: 1302405
 contributors: 431
 httpArchiveSites: 21761
 dependentRepos: 79231
@@ -88,7 +88,7 @@ sources:
     url: https://github.com/vuetifyjs/vuetify
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/vuetify
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/vuetify
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vuetify

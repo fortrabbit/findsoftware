@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2024-11-10
 githubStargazers: 1432
-npmWeeklyDownloads: 422
+npmWeeklyDownloads: 1473
 contributors: 15
 dependentRepos: 3
 social:
@@ -83,8 +83,8 @@ sources:
     url: https://api.github.com/repos/StaticMania/keep-react
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/keep-react
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/keep-react
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/keep-react
     checkedAt: 2026-10-27

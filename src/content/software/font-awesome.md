@@ -20,7 +20,7 @@ license: CC-BY-4.0, OFL-1.1, MIT
 currentMajor: "7"
 latestReleaseDate: 2026-07-15
 githubStargazers: 76998
-npmWeeklyDownloads: 1642899
+npmWeeklyDownloads: 3552179
 contributors: 5
 httpArchiveSites: 1779611
 dependentRepos: 160781
@@ -89,8 +89,8 @@ sources:
     url: https://github.com/FortAwesome/Font-Awesome
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@fortawesome/fontawesome-free
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@fortawesome/fontawesome-free
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@fortawesome%2ffontawesome-free
     checkedAt: 2026-10-27

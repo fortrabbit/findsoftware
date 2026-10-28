@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "7"
 latestReleaseDate: 2026-10-10
 githubStargazers: 13277
-npmWeeklyDownloads: 2477
+npmWeeklyDownloads: 4022
 contributors: 29
 dependentRepos: 48
 dependentPackages: 111
@@ -74,8 +74,8 @@ sources:
     url: https://api.github.com/repos/Tencent/omi/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/omi
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/omi
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/omi
     checkedAt: 2026-10-27

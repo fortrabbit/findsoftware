@@ -23,7 +23,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-04-01
 githubStargazers: 3771
-npmWeeklyDownloads: 6033
+npmWeeklyDownloads: 23241
 contributors: 17
 dependentRepos: 1
 dependentPackages: 12
@@ -90,8 +90,8 @@ sources:
     url: https://github.com/standardagents/arrow-js
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@arrow-js/core
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@arrow-js/core
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@arrow-js%2Fcore
     checkedAt: 2026-10-26

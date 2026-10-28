@@ -23,7 +23,7 @@ licenseModel: open-core
 license: Apache-2.0, LicenseRef-LICENSE
 latestReleaseDate: 2026-10-15
 githubStargazers: 2584
-npmWeeklyDownloads: 22521
+npmWeeklyDownloads: 77552
 contributors: 282
 httpArchiveSites: 13999
 dependentRepos: 232
@@ -98,8 +98,8 @@ sources:
     url: https://api.github.com/repos/telerik/kendo-ui-core
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@progress/kendo-ui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@progress/kendo-ui
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40progress%2Fkendo-ui
     checkedAt: 2026-10-27

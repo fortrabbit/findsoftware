@@ -19,7 +19,7 @@ license: Apache-2.0
 currentMajor: "2"
 latestReleaseDate: 2025-11-25
 githubStargazers: 412
-npmWeeklyDownloads: 2468
+npmWeeklyDownloads: 4756
 contributors: 18
 dependentRepos: 27
 dependentPackages: 3
@@ -69,7 +69,7 @@ sources:
     url: https://api.github.com/repos/itemsapi/itemsjs/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/itemsjs
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/itemsjs
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/itemsjs

@@ -22,7 +22,7 @@ license: Apache-2.0
 currentMajor: "3"
 latestReleaseDate: 2026-10-21
 githubStargazers: 73
-npmWeeklyDownloads: 2265
+npmWeeklyDownloads: 5838
 contributors: 35
 dependentRepos: 4
 dependentPackages: 1
@@ -78,8 +78,8 @@ sources:
     url: https://github.com/tyler-technologies-oss/forge
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@tylertech/forge
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@tylertech/forge
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@tylertech%2fforge
     checkedAt: 2026-10-27

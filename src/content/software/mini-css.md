@@ -17,7 +17,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2018-10-27
 githubStargazers: 2948
-npmWeeklyDownloads: 665
+npmWeeklyDownloads: 600
 contributors: 19
 dependentRepos: 343
 dependentPackages: 12
@@ -76,8 +76,8 @@ sources:
     url: https://github.com/Chalarangelo/mini.css
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/mini.css
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/mini.css
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/mini.css
     checkedAt: 2026-10-27

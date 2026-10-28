@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "14"
 latestReleaseDate: 2026-10-23
 githubStargazers: 134
-npmWeeklyDownloads: 350
+npmWeeklyDownloads: 49
 contributors: 37
 dependentRepos: 1
 dependentPackages: 3
@@ -67,8 +67,8 @@ sources:
     url: https://api.github.com/repos/ithaka/pharos/contributors?per_page=1
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@ithaka/pharos
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@ithaka/pharos
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40ithaka%2Fpharos
     checkedAt: 2026-10-27

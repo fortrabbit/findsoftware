@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2023-05-12
 githubStargazers: 2211
-npmWeeklyDownloads: 49671
+npmWeeklyDownloads: 117016
 contributors: 12
 dependentRepos: 858
 dependentPackages: 99
@@ -74,7 +74,7 @@ sources:
     url: https://api.github.com/repos/bvaughn/js-search/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/js-search
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/js-search
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/js-search

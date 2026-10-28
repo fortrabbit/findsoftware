@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-02-22
 githubStargazers: 458
-npmWeeklyDownloads: 48649
+npmWeeklyDownloads: 95409
 contributors: 23
 addedAt: 2026-10-28
 checkedAt: 2026-10-28
@@ -74,7 +74,7 @@ sources:
     url: https://api.github.com/repos/vscode-elements/elements/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@vscode-elements/elements
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@vscode-elements/elements
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

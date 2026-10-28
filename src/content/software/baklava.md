@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-06-30
 githubStargazers: 1392
-npmWeeklyDownloads: 3829
+npmWeeklyDownloads: 6000
 contributors: 72
 dependentRepos: 1
 dependentPackages: 1
@@ -78,8 +78,8 @@ sources:
     url: https://github.com/Trendyol/baklava
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@trendyol/baklava
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@trendyol/baklava
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40trendyol%2Fbaklava
     checkedAt: 2026-10-26

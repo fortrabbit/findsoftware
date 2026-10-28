@@ -22,7 +22,7 @@ license: MIT, MIT License
 currentMajor: "5"
 latestReleaseDate: 2026-08-19
 githubStargazers: 6085
-npmWeeklyDownloads: 36790
+npmWeeklyDownloads: 51302
 contributors: 156
 social:
   bluesky: https://bsky.app/profile/skeleton.dev
@@ -83,7 +83,7 @@ sources:
     url: https://api.github.com/repos/skeletonlabs/skeleton/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@skeletonlabs/skeleton-svelte
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@skeletonlabs/skeleton-svelte
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

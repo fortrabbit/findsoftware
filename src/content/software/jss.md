@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "10"
 latestReleaseDate: 2024-05-14
 githubStargazers: 7044
-npmWeeklyDownloads: 1427273
+npmWeeklyDownloads: 3201523
 contributors: 128
 httpArchiveSites: 37513
 dependentRepos: 290512
@@ -84,8 +84,8 @@ sources:
     url: https://api.github.com/repos/cssinjs/jss/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/jss
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/jss
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/jss
     checkedAt: 2026-10-27

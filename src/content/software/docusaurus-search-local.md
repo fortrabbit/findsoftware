@@ -25,7 +25,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-07-29
 githubStargazers: 907
-npmWeeklyDownloads: 249813
+npmWeeklyDownloads: 440294
 contributors: 32
 dependentRepos: 586
 dependentPackages: 8
@@ -84,7 +84,7 @@ sources:
     url: https://api.github.com/repos/easyops-cn/docusaurus-search-local/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@easyops-cn/docusaurus-search-local
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@easyops-cn/docusaurus-search-local
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@easyops-cn%2fdocusaurus-search-local

@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "9"
 latestReleaseDate: 2026-10-25
 githubStargazers: 31877
-npmWeeklyDownloads: 1783567
+npmWeeklyDownloads: 3305015
 contributors: 460
 httpArchiveSites: 937
 dependentRepos: 8511
@@ -78,8 +78,8 @@ sources:
     url: https://api.github.com/repos/mantinedev/mantine
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@mantine/core
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@mantine/core
+    checkedAt: 2026-10-28
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-27

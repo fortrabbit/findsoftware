@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-27
 githubStargazers: 14286
-npmWeeklyDownloads: 150045
+npmWeeklyDownloads: 227058
 contributors: 242
 dependentRepos: 264
 dependentPackages: 44
@@ -80,7 +80,7 @@ sources:
     url: https://github.com/tamagui/tamagui
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/tamagui
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/tamagui
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tamagui

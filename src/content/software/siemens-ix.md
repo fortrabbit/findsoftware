@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-12
 githubStargazers: 387
-npmWeeklyDownloads: 15388
+npmWeeklyDownloads: 54124
 contributors: 70
 dependentRepos: 3
 dependentPackages: 7
@@ -75,7 +75,7 @@ sources:
     url: https://github.com/siemens/ix
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@siemens/ix
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@siemens/ix
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40siemens%2Fix

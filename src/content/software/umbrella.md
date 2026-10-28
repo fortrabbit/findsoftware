@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-24
 githubStargazers: 2349
-npmWeeklyDownloads: 1322
+npmWeeklyDownloads: 2953
 contributors: 28
 dependentRepos: 61
 dependentPackages: 21
@@ -75,7 +75,7 @@ sources:
     url: https://api.github.com/repos/franciscop/umbrella/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/umbrellajs
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/umbrellajs
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/umbrellajs

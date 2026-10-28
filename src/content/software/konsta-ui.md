@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-09-28
 githubStargazers: 4281
-npmWeeklyDownloads: 13493
+npmWeeklyDownloads: 23896
 contributors: 26
 dependentRepos: 61
 dependentPackages: 7
@@ -76,8 +76,8 @@ sources:
     url: https://api.github.com/repos/konstaui/konsta/contributors?per_page=1
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/konsta
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/konsta
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/konsta
     checkedAt: 2026-10-27

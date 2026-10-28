@@ -21,7 +21,7 @@ license: MIT, Ariakit Plus License, Ariakit.com Proprietary License
 currentMajor: "0"
 latestReleaseDate: 2026-10-14
 githubStargazers: 8629
-npmWeeklyDownloads: 925748
+npmWeeklyDownloads: 1507994
 contributors: 117
 dependentRepos: 306
 dependentPackages: 62
@@ -87,8 +87,8 @@ sources:
     url: https://api.github.com/repos/ariakit/ariakit/contributors
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@ariakit/react
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@ariakit/react
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40ariakit%2Freact
     checkedAt: 2026-10-26

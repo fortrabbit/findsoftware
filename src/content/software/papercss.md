@@ -18,7 +18,7 @@ license: ISC
 currentMajor: "1"
 latestReleaseDate: 2023-05-29
 githubStargazers: 4197
-npmWeeklyDownloads: 349
+npmWeeklyDownloads: 522
 contributors: 40
 dependentRepos: 164
 dependentPackages: 10
@@ -77,8 +77,8 @@ sources:
     url: https://github.com/papercss/papercss
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/papercss
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/papercss
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/papercss
     checkedAt: 2026-10-27

@@ -19,7 +19,7 @@ license: BSD-2-Clause
 currentMajor: "1"
 latestReleaseDate: 2026-04-15
 githubStargazers: 796
-npmWeeklyDownloads: 296
+npmWeeklyDownloads: 332
 contributors: 11
 dependentRepos: 1
 dependentPackages: 2
@@ -75,8 +75,8 @@ sources:
     url: https://github.com/bigskysoftware/missing
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/missing.css
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/missing.css
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/missing.css
     checkedAt: 2026-10-27

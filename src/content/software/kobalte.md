@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-09-07
 githubStargazers: 1881
-npmWeeklyDownloads: 2285350
+npmWeeklyDownloads: 2807851
 contributors: 51
 dependentRepos: 101
 dependentPackages: 14
@@ -78,8 +78,8 @@ sources:
     url: https://api.github.com/repos/kobaltedev/kobalte
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@kobalte/core
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@kobalte/core
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40kobalte%2Fcore
     checkedAt: 2026-10-27

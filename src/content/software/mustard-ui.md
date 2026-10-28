@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2020-02-28
 githubStargazers: 1017
-npmWeeklyDownloads: 89
+npmWeeklyDownloads: 102
 contributors: 6
 dependentRepos: 59
 dependentPackages: 9
@@ -77,8 +77,8 @@ sources:
     url: https://api.github.com/repos/kylelogue/mustard-ui
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/mustard-ui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/mustard-ui
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/mustard-ui
     checkedAt: 2026-10-27

@@ -21,7 +21,7 @@ license: MIT, OFL-1.1
 currentMajor: "18"
 latestReleaseDate: 2026-10-06
 githubStargazers: 433
-npmWeeklyDownloads: 13904
+npmWeeklyDownloads: 46047
 contributors: 115
 dependentRepos: 1354
 dependentPackages: 51
@@ -77,8 +77,8 @@ sources:
     url: https://api.github.com/repos/vmware-clarity/ng-clarity/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@clr/angular
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@clr/angular
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40clr%2Fangular
     checkedAt: 2026-10-27

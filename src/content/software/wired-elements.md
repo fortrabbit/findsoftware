@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2020-06-20
 githubStargazers: 10848
-npmWeeklyDownloads: 1014
+npmWeeklyDownloads: 1544
 contributors: 13
 dependentRepos: 100
 dependentPackages: 17
@@ -73,7 +73,7 @@ sources:
     url: https://github.com/rough-stuff/wired-elements
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/wired-elements
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/wired-elements
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/wired-elements

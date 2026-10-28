@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-03-22
 githubStargazers: 334
-npmWeeklyDownloads: 120
+npmWeeklyDownloads: 114
 contributors: 12
 dependentRepos: 1
 dependentPackages: 3
@@ -80,8 +80,8 @@ sources:
     url: https://api.github.com/repos/blueprintui/blueprintui/contributors?per_page=1
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@blueprintui/components
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@blueprintui/components
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40blueprintui%2Fcomponents
     checkedAt: 2026-10-26

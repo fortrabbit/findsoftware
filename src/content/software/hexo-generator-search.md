@@ -29,7 +29,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2021-06-05
 githubStargazers: 494
-npmWeeklyDownloads: 1255
+npmWeeklyDownloads: 5583
 contributors: 11
 addedAt: 2026-10-28
 checkedAt: 2026-10-28
@@ -68,7 +68,7 @@ sources:
     url: https://github.com/wzpan/hexo-generator-search/blob/master/README.md
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/hexo-generator-search
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/hexo-generator-search
     checkedAt: 2026-10-28
   - field: firstRelease
     url: https://registry.npmjs.org/hexo-generator-search

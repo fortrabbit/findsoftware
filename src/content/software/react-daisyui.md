@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2024-09-18
 githubStargazers: 1093
-npmWeeklyDownloads: 9666
+npmWeeklyDownloads: 22674
 contributors: 40
 dependentRepos: 250
 dependentPackages: 12
@@ -72,7 +72,7 @@ sources:
     url: https://api.github.com/repos/daisyui/react-daisyui/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/react-daisyui
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/react-daisyui
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react-daisyui

@@ -23,7 +23,7 @@ license: MIT, Web Awesome Pro License
 currentMajor: "3"
 latestReleaseDate: 2026-09-24
 githubStargazers: 1383
-npmWeeklyDownloads: 132374
+npmWeeklyDownloads: 473785
 contributors: 157
 social:
   x: https://x.com/webawesomer
@@ -96,7 +96,7 @@ sources:
     url: https://github.com/shoelace-style/webawesome
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@awesome.me/webawesome
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@awesome.me/webawesome
     checkedAt: 2026-10-28
   - field: i18n
     url: https://webawesome.com/docs/localization

@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "18"
 latestReleaseDate: 2026-07-02
 githubStargazers: 9024
-npmWeeklyDownloads: 39112
+npmWeeklyDownloads: 70780
 contributors: 240
 dependentRepos: 768
 dependentPackages: 93
@@ -77,8 +77,8 @@ sources:
     url: https://github.com/uber/baseweb
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/baseui
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/baseui
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/baseui
     checkedAt: 2026-10-26

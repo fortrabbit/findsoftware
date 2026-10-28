@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2024-09-05
 githubStargazers: 7430
-npmWeeklyDownloads: 289152
+npmWeeklyDownloads: 635497
 contributors: 16
 dependentRepos: 88656
 dependentPackages: 246
@@ -71,8 +71,8 @@ sources:
     url: https://api.github.com/repos/sindresorhus/modern-normalize
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/modern-normalize
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/modern-normalize
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/modern-normalize
     checkedAt: 2026-10-27

@@ -21,7 +21,7 @@ license: MIT, Apache-2.0 for the BlueprintJS icons
 currentMajor: "7"
 latestReleaseDate: 2023-06-21
 githubStargazers: 12427
-npmWeeklyDownloads: 7022
+npmWeeklyDownloads: 17614
 contributors: 143
 dependentRepos: 910
 dependentPackages: 100
@@ -85,8 +85,8 @@ sources:
     url: https://github.com/segmentio/evergreen
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/evergreen-ui
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/evergreen-ui
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/evergreen-ui
     checkedAt: 2026-10-26

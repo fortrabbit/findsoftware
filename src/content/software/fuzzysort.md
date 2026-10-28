@@ -17,7 +17,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-08-13
 githubStargazers: 4355
-npmWeeklyDownloads: 9239435
+npmWeeklyDownloads: 14554982
 contributors: 4
 dependentRepos: 1542
 dependentPackages: 127
@@ -55,7 +55,7 @@ sources:
     url: https://raw.githubusercontent.com/farzher/fuzzysort/master/LICENSE
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/fuzzysort
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/fuzzysort
     checkedAt: 2026-10-28
   - field: githubStargazers
     url: https://api.github.com/repos/farzher/fuzzysort

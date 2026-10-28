@@ -24,7 +24,7 @@ license: MIT
 currentMajor: "9"
 latestReleaseDate: 2026-10-09
 githubStargazers: 99279
-npmWeeklyDownloads: 6372942
+npmWeeklyDownloads: 12503562
 contributors: 417
 dependentRepos: 163982
 dependentPackages: 7981
@@ -82,8 +82,8 @@ sources:
     url: https://api.github.com/repos/mui/material-ui
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@mui/material
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@mui/material
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40mui%2Fmaterial
     checkedAt: 2026-10-27

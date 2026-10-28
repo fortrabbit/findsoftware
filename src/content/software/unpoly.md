@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-26
 githubStargazers: 2796
-npmWeeklyDownloads: 3635
+npmWeeklyDownloads: 5320
 contributors: 39
 dependentRepos: 38
 dependentPackages: 3
@@ -83,7 +83,7 @@ sources:
     url: https://api.github.com/repos/unpoly/unpoly/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/unpoly
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/unpoly
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/unpoly

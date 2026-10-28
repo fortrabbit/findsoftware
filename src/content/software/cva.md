@@ -19,7 +19,7 @@ license: Apache-2.0
 currentMajor: "0"
 latestReleaseDate: 2024-11-26
 githubStargazers: 6907
-npmWeeklyDownloads: 42493776
+npmWeeklyDownloads: 83559474
 contributors: 30
 dependentRepos: 12840
 dependentPackages: 710
@@ -75,8 +75,8 @@ sources:
     url: https://api.github.com/repos/joe-bell/cva/contributors?per_page=1
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/class-variance-authority
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/class-variance-authority
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/class-variance-authority
     checkedAt: 2026-10-26

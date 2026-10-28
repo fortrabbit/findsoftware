@@ -20,7 +20,7 @@ license: Apache-2.0
 currentMajor: "0"
 latestReleaseDate: 2026-10-22
 githubStargazers: 611
-npmWeeklyDownloads: 21011
+npmWeeklyDownloads: 47359
 contributors: 56
 social:
   discord: https://discord.gg/NTdjc5r3gC
@@ -76,8 +76,8 @@ sources:
     url: https://github.com/ng-primitives/ng-primitives
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/ng-primitives
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/ng-primitives
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

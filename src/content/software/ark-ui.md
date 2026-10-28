@@ -14,6 +14,8 @@ maintainer: Chakra Systems Inc.
 maintainerType: company
 firstRelease: 2022
 language: javascript
+basedOn:
+  - zag
 i18n: LocaleProvider sets the locale and direction of the app
 installMethod: npm
 licenseModel: open-core
@@ -21,7 +23,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-05
 githubStargazers: 5439
-npmWeeklyDownloads: 668308
+npmWeeklyDownloads: 1229584
 contributors: 99
 dependentRepos: 26
 dependentPackages: 62
@@ -52,6 +54,9 @@ sources:
   - field: category
     url: https://ark-ui.com/
     checkedAt: 2026-10-26
+  - field: basedOn
+    url: https://ark-ui.com/docs/overview/about
+    checkedAt: 2026-10-26
   - field: installMethod
     url: https://github.com/chakra-ui/ark
     checkedAt: 2026-10-26
@@ -77,8 +82,8 @@ sources:
     url: https://github.com/chakra-ui/ark
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@ark-ui/react
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@ark-ui/react
+    checkedAt: 2026-10-28
   - field: i18n
     url: https://ark-ui.com/react/docs/utilities/locale
     checkedAt: 2026-10-26

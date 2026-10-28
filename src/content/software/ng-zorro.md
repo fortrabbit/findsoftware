@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "22"
 latestReleaseDate: 2026-10-10
 githubStargazers: 9190
-npmWeeklyDownloads: 244122
+npmWeeklyDownloads: 601963
 contributors: 304
 dependentRepos: 5280
 dependentPackages: 485
@@ -94,8 +94,8 @@ sources:
     url: https://github.com/NG-ZORRO/ng-zorro-antd
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/ng-zorro-antd
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/ng-zorro-antd
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ng-zorro-antd
     checkedAt: 2026-10-27

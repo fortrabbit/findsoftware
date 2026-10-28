@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-06-30
 githubStargazers: 12689
-npmWeeklyDownloads: 5868569
+npmWeeklyDownloads: 10634641
 contributors: 90
 dependentRepos: 341865
 dependentPackages: 6872
@@ -73,7 +73,7 @@ sources:
     url: https://api.github.com/repos/react-icons/react-icons/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/react-icons
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/react-icons
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react-icons

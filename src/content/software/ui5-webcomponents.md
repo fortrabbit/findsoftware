@@ -22,7 +22,7 @@ license: Apache-2.0
 currentMajor: "2"
 latestReleaseDate: 2026-10-21
 githubStargazers: 1785
-npmWeeklyDownloads: 51968
+npmWeeklyDownloads: 95969
 contributors: 122
 dependentRepos: 210
 dependentPackages: 79
@@ -83,7 +83,7 @@ sources:
     url: https://github.com/UI5/webcomponents
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@ui5/webcomponents
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@ui5/webcomponents
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@ui5%2Fwebcomponents

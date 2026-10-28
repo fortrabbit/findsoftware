@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-12
 githubStargazers: 19439
-npmWeeklyDownloads: 12197667
+npmWeeklyDownloads: 19064097
 contributors: 116
 httpArchiveSites: 176974
 dependentRepos: 30
@@ -78,7 +78,7 @@ sources:
     url: https://github.com/radix-ui/primitives
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/radix-ui
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/radix-ui
     checkedAt: 2026-10-28
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies

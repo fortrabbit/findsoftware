@@ -21,7 +21,7 @@ license: CC0-1.0
 currentMajor: "3"
 latestReleaseDate: 2026-08-18
 githubStargazers: 7230
-npmWeeklyDownloads: 48821
+npmWeeklyDownloads: 101252
 contributors: 197
 httpArchiveSites: 1054
 dependentRepos: 131
@@ -87,7 +87,7 @@ sources:
     url: https://api.github.com/repos/uswds/uswds
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@uswds/uswds
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@uswds/uswds
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40uswds%2Fuswds

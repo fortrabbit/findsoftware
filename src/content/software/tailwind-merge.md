@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-09-12
 githubStargazers: 5701
-npmWeeklyDownloads: 54073592
+npmWeeklyDownloads: 107067280
 contributors: 40
 dependentRepos: 20922
 dependentPackages: 1253
@@ -68,7 +68,7 @@ sources:
     url: https://github.com/dcastil/tailwind-merge
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/tailwind-merge
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/tailwind-merge
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tailwind-merge

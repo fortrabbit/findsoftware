@@ -23,7 +23,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-09-01
 githubStargazers: 2802
-npmWeeklyDownloads: 4882
+npmWeeklyDownloads: 9830
 contributors: 111
 dependentRepos: 158
 dependentPackages: 14
@@ -87,7 +87,7 @@ sources:
     url: https://github.com/vuestorefront/storefront-ui
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@storefront-ui/vue
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@storefront-ui/vue
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40storefront-ui%2Fvue

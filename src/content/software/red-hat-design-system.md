@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-08
 githubStargazers: 154
-npmWeeklyDownloads: 2062
+npmWeeklyDownloads: 6356
 contributors: 33
 dependentRepos: 5
 dependentPackages: 2
@@ -79,7 +79,7 @@ sources:
     url: https://api.github.com/repos/RedHat-UX/red-hat-design-system/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@rhds/elements
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@rhds/elements
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40rhds%2Felements

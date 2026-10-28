@@ -23,7 +23,7 @@ license: MIT, Community license for organizations under $2M in annual revenue, p
 currentMajor: "1"
 latestReleaseDate: 2026-10-23
 githubStargazers: 41960
-npmWeeklyDownloads: 82907
+npmWeeklyDownloads: 144688
 contributors: 147
 dependentRepos: 107
 dependentPackages: 12
@@ -83,7 +83,7 @@ sources:
     url: https://registry.npmjs.org/@tabler%2Fcore
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@tabler/core
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@tabler/core
     checkedAt: 2026-10-28
   - field: githubStargazers
     url: https://api.github.com/repos/tabler/tabler

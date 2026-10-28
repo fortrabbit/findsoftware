@@ -27,7 +27,7 @@ npmWeeklyDownloads: 298382
 contributors: 29
 dependentRepos: 82
 dependentPackages: 16
-addedAt: 2026-10-19
+addedAt: 2026-10-28
 checkedAt: 2026-10-19
 sources:
   - field: urls

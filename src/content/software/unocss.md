@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "66"
 latestReleaseDate: 2026-10-26
 githubStargazers: 18988
-npmWeeklyDownloads: 348652
+npmWeeklyDownloads: 577187
 contributors: 420
 httpArchiveSites: 5600
 dependentRepos: 4166
@@ -89,7 +89,7 @@ sources:
     url: https://api.github.com/repos/unocss/unocss/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/unocss
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/unocss
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/unocss

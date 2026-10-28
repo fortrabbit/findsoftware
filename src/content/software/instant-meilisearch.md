@@ -24,7 +24,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-09-16
 githubStargazers: 533
-npmWeeklyDownloads: 26183
+npmWeeklyDownloads: 54588
 contributors: 39
 social:
   discord: https://discord.meilisearch.com
@@ -68,7 +68,7 @@ sources:
     url: https://github.com/meilisearch/meilisearch-js-plugins/blob/main/packages/instant-meilisearch/README.md
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@meilisearch/instant-meilisearch
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@meilisearch/instant-meilisearch
     checkedAt: 2026-10-28
   - field: license
     url: https://github.com/meilisearch/meilisearch-js-plugins/blob/main/LICENSE

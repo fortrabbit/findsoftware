@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-09-14
 githubStargazers: 12083
-npmWeeklyDownloads: 45288
+npmWeeklyDownloads: 139898
 contributors: 287
 dependentRepos: 6495
 dependentPackages: 995
@@ -83,8 +83,8 @@ sources:
     url: https://github.com/ant-design/ant-design-mobile
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/antd-mobile
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/antd-mobile
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/antd-mobile
     checkedAt: 2026-10-26

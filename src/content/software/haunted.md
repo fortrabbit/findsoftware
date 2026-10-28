@@ -21,7 +21,7 @@ license: BSD-2-Clause
 currentMajor: "6"
 latestReleaseDate: 2025-02-21
 githubStargazers: 2724
-npmWeeklyDownloads: 11161
+npmWeeklyDownloads: 12057
 contributors: 30
 dependentRepos: 109
 dependentPackages: 88
@@ -80,8 +80,8 @@ sources:
     url: https://api.github.com/repos/matthewp/haunted/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/haunted
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/haunted
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/haunted
     checkedAt: 2026-10-27

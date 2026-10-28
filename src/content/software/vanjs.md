@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-07-16
 githubStargazers: 4452
-npmWeeklyDownloads: 1580
+npmWeeklyDownloads: 2743
 contributors: 23
 dependentRepos: 1
 dependentPackages: 8
@@ -85,7 +85,7 @@ sources:
     url: https://api.github.com/repos/vanjs-org/van
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/vanjs-core
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/vanjs-core
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vanjs-core

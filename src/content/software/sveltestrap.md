@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "7"
 latestReleaseDate: 2025-02-04
 githubStargazers: 218
-npmWeeklyDownloads: 4366
+npmWeeklyDownloads: 8440
 contributors: 15
 social:
   discord: https://discord.gg/VS9T72ucaU
@@ -79,7 +79,7 @@ sources:
     url: https://api.github.com/repos/sveltestrap/sveltestrap/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@sveltestrap/sveltestrap
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@sveltestrap/sveltestrap
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

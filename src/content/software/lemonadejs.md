@@ -23,7 +23,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-01-13
 githubStargazers: 473
-npmWeeklyDownloads: 12379
+npmWeeklyDownloads: 29238
 contributors: 10
 dependentRepos: 1
 dependentPackages: 38
@@ -82,8 +82,8 @@ sources:
     url: https://api.github.com/repos/lemonadejs/lemonadejs/contributors?per_page=1&anon=false
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/lemonadejs
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/lemonadejs
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/lemonadejs
     checkedAt: 2026-10-27

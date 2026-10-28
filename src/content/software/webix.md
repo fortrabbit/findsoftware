@@ -25,7 +25,7 @@ license: GPL-3.0, GPL v3 with a FLOSS exception, commercial license
 currentMajor: "11"
 latestReleaseDate: 2026-04-23
 githubStargazers: 458
-npmWeeklyDownloads: 1214
+npmWeeklyDownloads: 2262
 contributors: 6
 httpArchiveSites: 142
 dependentRepos: 75
@@ -100,7 +100,7 @@ sources:
     url: https://github.com/webix-hub/webix
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/webix
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/webix
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/webix

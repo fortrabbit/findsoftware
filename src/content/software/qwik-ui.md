@@ -24,7 +24,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-06-14
 githubStargazers: 694
-npmWeeklyDownloads: 3889
+npmWeeklyDownloads: 11367
 contributors: 72
 dependentRepos: 2
 dependentPackages: 2
@@ -85,7 +85,7 @@ sources:
     url: https://github.com/qwikifiers/qwik-ui
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@qwik-ui/headless
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@qwik-ui/headless
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40qwik-ui%2Fheadless

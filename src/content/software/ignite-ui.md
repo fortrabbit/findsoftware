@@ -26,7 +26,7 @@ license: MIT, Infragistics Commercial License, SEE LICENSE IN LICENSE
 currentMajor: "22"
 latestReleaseDate: 2026-10-26
 githubStargazers: 599
-npmWeeklyDownloads: 9309
+npmWeeklyDownloads: 18137
 contributors: 115
 dependentRepos: 609
 dependentPackages: 11
@@ -110,8 +110,8 @@ sources:
     url: https://api.github.com/repos/IgniteUI/igniteui-angular/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/igniteui-angular
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/igniteui-angular
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/igniteui-angular
     checkedAt: 2026-10-27

@@ -19,7 +19,7 @@ license: MIT, CC-BY-4.0
 currentMajor: "4"
 latestReleaseDate: 2025-11-02
 githubStargazers: 661
-npmWeeklyDownloads: 180
+npmWeeklyDownloads: 472
 contributors: 14
 dependentRepos: 30
 dependentPackages: 4
@@ -84,7 +84,7 @@ sources:
     url: https://github.com/jmjuanes/siimple
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/siimple
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/siimple
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/siimple

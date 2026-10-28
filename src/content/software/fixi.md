@@ -19,7 +19,7 @@ license: 0BSD
 currentMajor: "0"
 latestReleaseDate: 2026-04-25
 githubStargazers: 1326
-npmWeeklyDownloads: 40
+npmWeeklyDownloads: 44
 contributors: 11
 social:
   discord: https://htmx.org/discord
@@ -75,8 +75,8 @@ sources:
     url: https://api.github.com/repos/bigskysoftware/fixi/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/fixi-js
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/fixi-js
+    checkedAt: 2026-10-28
 ai: authored
 packagistDownloads: null
 ---

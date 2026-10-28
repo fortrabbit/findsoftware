@@ -19,7 +19,7 @@ licenseModel: open-source
 license: MIT
 latestReleaseDate: 2026-07-14
 githubStargazers: 2803
-npmWeeklyDownloads: 207
+npmWeeklyDownloads: 264
 contributors: 8
 dependentRepos: 1
 dependentPackages: 2
@@ -75,8 +75,8 @@ sources:
     url: https://api.github.com/repos/yued-fe/lulu/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/lu2
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/lu2
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/lu2
     checkedAt: 2026-10-27

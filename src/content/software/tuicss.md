@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2023-07-19
 githubStargazers: 1986
-npmWeeklyDownloads: 68
+npmWeeklyDownloads: 84
 contributors: 7
 dependentRepos: 5
 dependentPackages: 1
@@ -71,7 +71,7 @@ sources:
     url: https://api.github.com/repos/vinibiavatti1/TuiCss/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/tuicss
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/tuicss
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tuicss

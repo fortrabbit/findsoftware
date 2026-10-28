@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2022-03-25
 githubStargazers: 19193
-npmWeeklyDownloads: 2662
+npmWeeklyDownloads: 3932
 contributors: 101
 dependentRepos: 572
 dependentPackages: 229
@@ -74,8 +74,8 @@ sources:
     url: https://api.github.com/repos/hyperapp/hyperapp/contributors?per_page=1
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/hyperapp
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/hyperapp
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/hyperapp
     checkedAt: 2026-10-27

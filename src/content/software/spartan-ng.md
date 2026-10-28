@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-27
 githubStargazers: 2965
-npmWeeklyDownloads: 42244
+npmWeeklyDownloads: 63450
 contributors: 146
 dependentRepos: 1
 social:
@@ -82,7 +82,7 @@ sources:
     url: https://github.com/spartan-ng/spartan/graphs/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@spartan-ng/cli
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@spartan-ng/cli
     checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40spartan-ng%2Fcli

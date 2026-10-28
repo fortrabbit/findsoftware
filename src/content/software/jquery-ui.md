@@ -23,7 +23,7 @@ license: MIT, CC0-1.0
 currentMajor: "1"
 latestReleaseDate: 2026-01-29
 githubStargazers: 11335
-npmWeeklyDownloads: 423104
+npmWeeklyDownloads: 940182
 contributors: 328
 httpArchiveSites: 1832842
 dependentRepos: 21377
@@ -86,8 +86,8 @@ sources:
     url: https://api.github.com/repos/jquery/jquery-ui/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/jquery-ui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/jquery-ui
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/jquery-ui
     checkedAt: 2026-10-27

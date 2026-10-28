@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-10-19
 githubStargazers: 1972
-npmWeeklyDownloads: 3638
+npmWeeklyDownloads: 9019
 contributors: 161
 dependentRepos: 3
 dependentPackages: 6
@@ -84,8 +84,8 @@ sources:
     url: https://api.github.com/repos/ing-bank/lion/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@lion/ui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@lion/ui
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@lion%2fui
     checkedAt: 2026-10-27

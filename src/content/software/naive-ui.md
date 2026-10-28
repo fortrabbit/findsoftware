@@ -22,7 +22,7 @@ license: MIT, CC-BY-4.0
 currentMajor: "2"
 latestReleaseDate: 2026-08-27
 githubStargazers: 18588
-npmWeeklyDownloads: 104850
+npmWeeklyDownloads: 234643
 contributors: 346
 httpArchiveSites: 1847
 dependentRepos: 2861
@@ -90,8 +90,8 @@ sources:
     url: https://api.github.com/repos/tusen-ai/naive-ui/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/naive-ui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/naive-ui
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/naive-ui
     checkedAt: 2026-10-27

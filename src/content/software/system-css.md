@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2023-03-18
 githubStargazers: 3921
-npmWeeklyDownloads: 153
+npmWeeklyDownloads: 315
 contributors: 11
 dependentRepos: 1
 dependentPackages: 1
@@ -66,7 +66,7 @@ sources:
     url: https://registry.npmjs.org/@sakun%2Fsystem.css
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@sakun/system.css
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@sakun/system.css
     checkedAt: 2026-10-28
   - field: githubStargazers
     url: https://api.github.com/repos/sakofchit/system.css

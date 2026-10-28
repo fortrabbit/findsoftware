@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2025-03-09
 githubStargazers: 908
-npmWeeklyDownloads: 2522
+npmWeeklyDownloads: 1705
 contributors: 7
 dependentRepos: 17
 dependentPackages: 6
@@ -67,8 +67,8 @@ sources:
     url: https://api.github.com/repos/ostastudio/pollen/contributors?per_page=1
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/pollen-css
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/pollen-css
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/pollen-css
     checkedAt: 2026-10-27

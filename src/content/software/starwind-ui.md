@@ -25,7 +25,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-23
 githubStargazers: 758
-npmWeeklyDownloads: 518
+npmWeeklyDownloads: 660
 contributors: 13
 social:
   x: https://x.com/boston343builds
@@ -85,7 +85,7 @@ sources:
     url: https://github.com/starwind-ui/starwind-ui
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/starwind
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/starwind
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

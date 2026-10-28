@@ -13,6 +13,8 @@ maintainer: 0build
 maintainerType: individual
 firstRelease: 2024
 language: css
+basedOn:
+  - uikit
 runsAs:
   - browser
 installMethod: cdn
@@ -45,6 +47,9 @@ sources:
     checkedAt: 2026-10-27
   - field: category
     url: https://0build.dev/docs/latest/kit/introduction/
+    checkedAt: 2026-10-27
+  - field: basedOn
+    url: https://cdn.jsdelivr.net/gh/0builddotdev/0build@0.6.13/dist/js/uikit.min.js
     checkedAt: 2026-10-27
   - field: installMethod
     url: https://0build.dev/docs/latest/kit/installation/

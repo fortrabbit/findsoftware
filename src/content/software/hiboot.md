@@ -27,7 +27,7 @@ currentMajor: "1"
 latestReleaseDate: 2026-02-28
 githubStargazers: 180
 contributors: 6
-addedAt: 2026-10-26
+addedAt: 2026-10-28
 checkedAt: 2026-10-26
 sources:
   - field: urls

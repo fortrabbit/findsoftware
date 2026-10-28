@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2025-01-24
 githubStargazers: 724
-npmWeeklyDownloads: 1227
+npmWeeklyDownloads: 1403
 contributors: 6
 social:
   discord: https://discord.com/invite/solidjs
@@ -81,8 +81,8 @@ sources:
     url: https://api.github.com/repos/corvudev/corvu/contributors
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/corvu
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/corvu
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

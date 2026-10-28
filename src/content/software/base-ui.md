@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-09
 githubStargazers: 11241
-npmWeeklyDownloads: 12607707
+npmWeeklyDownloads: 19271066
 contributors: 319
 httpArchiveSites: 8390
 social:
@@ -80,8 +80,8 @@ sources:
     url: https://github.com/mui/base-ui
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@base-ui/react
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@base-ui/react
+    checkedAt: 2026-10-28
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-26

@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2025-05-11
 githubStargazers: 22610
-npmWeeklyDownloads: 806618
+npmWeeklyDownloads: 1615086
 contributors: 416
 dependentRepos: 291194
 dependentPackages: 5446
@@ -76,7 +76,7 @@ sources:
     url: https://api.github.com/repos/react-bootstrap/react-bootstrap/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/react-bootstrap
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/react-bootstrap
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react-bootstrap

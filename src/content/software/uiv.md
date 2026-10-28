@@ -23,7 +23,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-09-09
 githubStargazers: 937
-npmWeeklyDownloads: 10491
+npmWeeklyDownloads: 27725
 contributors: 49
 dependentRepos: 185
 dependentPackages: 11
@@ -82,7 +82,7 @@ sources:
     url: https://api.github.com/repos/wxsms/uiv/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/uiv
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/uiv
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/uiv

@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2023-02-22
 githubStargazers: 4926
-npmWeeklyDownloads: 341
+npmWeeklyDownloads: 629
 contributors: 10
 dependentRepos: 21
 dependentPackages: 1
@@ -68,8 +68,8 @@ sources:
     url: https://github.com/BafS/Gutenberg
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/gutenberg-css
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/gutenberg-css
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/gutenberg-css
     checkedAt: 2026-10-27

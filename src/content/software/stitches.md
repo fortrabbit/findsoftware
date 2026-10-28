@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2022-04-25
 githubStargazers: 7764
-npmWeeklyDownloads: 871763
+npmWeeklyDownloads: 1599520
 contributors: 48
 httpArchiveSites: 679
 dependentRepos: 5046
@@ -81,7 +81,7 @@ sources:
     url: https://github.com/stitchesjs/stitches
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@stitches/react
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@stitches/react
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40stitches%2Freact

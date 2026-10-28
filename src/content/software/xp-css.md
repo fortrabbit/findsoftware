@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2022-10-25
 githubStargazers: 3130
-npmWeeklyDownloads: 1837
+npmWeeklyDownloads: 2807
 contributors: 24
 dependentRepos: 42
 dependentPackages: 3
@@ -77,7 +77,7 @@ sources:
     url: https://api.github.com/repos/botoxparty/XP.css/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/xp.css
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/xp.css
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/xp.css

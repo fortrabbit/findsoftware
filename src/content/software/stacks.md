@@ -23,7 +23,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-16
 githubStargazers: 681
-npmWeeklyDownloads: 2983
+npmWeeklyDownloads: 9471
 contributors: 52
 dependentRepos: 19
 dependentPackages: 6
@@ -82,7 +82,7 @@ sources:
     url: https://github.com/StackExchange/Stacks/graphs/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@stackoverflow/stacks
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@stackoverflow/stacks
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40stackoverflow%2Fstacks

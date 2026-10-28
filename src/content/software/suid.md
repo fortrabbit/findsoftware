@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2025-06-14
 githubStargazers: 749
-npmWeeklyDownloads: 1540
+npmWeeklyDownloads: 6815
 contributors: 15
 dependentRepos: 49
 dependentPackages: 11
@@ -76,7 +76,7 @@ sources:
     url: https://api.github.com/repos/swordev/suid/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@suid/material
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@suid/material
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@suid%2Fmaterial

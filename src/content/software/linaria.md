@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "8"
 latestReleaseDate: 2026-08-10
 githubStargazers: 12351
-npmWeeklyDownloads: 479147
+npmWeeklyDownloads: 750987
 contributors: 146
 dependentRepos: 1605
 dependentPackages: 141
@@ -82,8 +82,8 @@ sources:
     url: https://api.github.com/repos/callstack/linaria/contributors?per_page=1&anon=false
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@linaria/core
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@linaria/core
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40linaria%2Fcore
     checkedAt: 2026-10-27

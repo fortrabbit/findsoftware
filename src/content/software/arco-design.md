@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-12
 githubStargazers: 5748
-npmWeeklyDownloads: 60019
+npmWeeklyDownloads: 61812
 contributors: 116
 dependentRepos: 271
 dependentPackages: 212
@@ -81,8 +81,8 @@ sources:
     url: https://github.com/arco-design/arco-design
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@arco-design/web-react
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@arco-design/web-react
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40arco-design%2Fweb-react
     checkedAt: 2026-10-26

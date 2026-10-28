@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2020-12-13
 githubStargazers: 2539
-npmWeeklyDownloads: 178
+npmWeeklyDownloads: 2858
 contributors: 19
 dependentRepos: 65
 dependentPackages: 15
@@ -69,8 +69,8 @@ sources:
     url: https://api.github.com/repos/heyui/heyui/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/heyui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/heyui
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/heyui
     checkedAt: 2026-10-27

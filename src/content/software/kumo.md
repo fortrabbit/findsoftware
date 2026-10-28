@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-26
 githubStargazers: 4137
-npmWeeklyDownloads: 358682
+npmWeeklyDownloads: 466661
 contributors: 63
 addedAt: 2026-10-27
 checkedAt: 2026-10-27
@@ -79,8 +79,8 @@ sources:
     url: https://api.github.com/repos/cloudflare/kumo/contributors?per_page=1
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@cloudflare/kumo
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@cloudflare/kumo
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

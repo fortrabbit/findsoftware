@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2024-09-03
 githubStargazers: 3108
-npmWeeklyDownloads: 1207
+npmWeeklyDownloads: 777
 contributors: 3
 dependentRepos: 65
 dependentPackages: 6
@@ -82,8 +82,8 @@ sources:
     url: https://github.com/halfmoonui/halfmoon
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/halfmoon
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/halfmoon
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/halfmoon
     checkedAt: 2026-10-27

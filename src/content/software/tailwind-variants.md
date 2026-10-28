@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-08-03
 githubStargazers: 3320
-npmWeeklyDownloads: 3134875
+npmWeeklyDownloads: 5059788
 contributors: 23
 dependentRepos: 4238
 dependentPackages: 174
@@ -84,7 +84,7 @@ sources:
     url: https://github.com/heroui-inc/tailwind-variants
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/tailwind-variants
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/tailwind-variants
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tailwind-variants

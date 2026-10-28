@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "7"
 latestReleaseDate: 2026-10-24
 githubStargazers: 3878
-npmWeeklyDownloads: 1427
+npmWeeklyDownloads: 1451
 contributors: 42
 dependentRepos: 171
 dependentPackages: 10
@@ -62,8 +62,8 @@ sources:
     url: https://api.github.com/repos/franciscop/picnic/contributors?per_page=1
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/picnic
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/picnic
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/picnic
     checkedAt: 2026-10-27

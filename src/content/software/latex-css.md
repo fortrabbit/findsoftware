@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-05-13
 githubStargazers: 3482
-npmWeeklyDownloads: 248
+npmWeeklyDownloads: 360
 contributors: 28
 dependentRepos: 9
 dependentPackages: 2
@@ -73,8 +73,8 @@ sources:
     url: https://api.github.com/repos/vincentdoerig/latex-css/contributors?per_page=1&anon=false
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/latex.css
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/latex.css
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/latex.css
     checkedAt: 2026-10-27

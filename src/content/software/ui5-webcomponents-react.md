@@ -22,7 +22,7 @@ license: Apache-2.0
 currentMajor: "2"
 latestReleaseDate: 2026-10-27
 githubStargazers: 543
-npmWeeklyDownloads: 31899
+npmWeeklyDownloads: 61917
 contributors: 52
 dependentRepos: 59
 dependentPackages: 17
@@ -81,7 +81,7 @@ sources:
     url: https://github.com/UI5/webcomponents-react
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@ui5/webcomponents-react
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@ui5/webcomponents-react
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@ui5%2Fwebcomponents-react

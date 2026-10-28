@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-09-15
 githubStargazers: 2267
-npmWeeklyDownloads: 1506
+npmWeeklyDownloads: 667
 contributors: 103
 dependentRepos: 8
 dependentPackages: 43
@@ -74,7 +74,7 @@ sources:
     url: https://api.github.com/repos/opentiny/tiny-vue/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@opentiny%2Fvue
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@opentiny%2Fvue
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@opentiny%2Fvue

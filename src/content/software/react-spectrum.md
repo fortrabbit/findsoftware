@@ -21,7 +21,7 @@ license: Apache-2.0
 currentMajor: "3"
 latestReleaseDate: 2026-10-09
 githubStargazers: 15989
-npmWeeklyDownloads: 1008960
+npmWeeklyDownloads: 1795173
 contributors: 411
 dependentRepos: 263
 dependentPackages: 68
@@ -77,7 +77,7 @@ sources:
     url: https://api.github.com/repos/adobe/react-spectrum/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@adobe/react-spectrum
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@adobe/react-spectrum
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40adobe%2Freact-spectrum

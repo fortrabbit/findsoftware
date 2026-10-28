@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2025-09-13
 githubStargazers: 1943
-npmWeeklyDownloads: 82
+npmWeeklyDownloads: 77
 contributors: 6
 addedAt: 2026-10-27
 checkedAt: 2026-10-27
@@ -76,8 +76,8 @@ sources:
     url: https://api.github.com/repos/lowlighter/matcha
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@lowlighter%2Fmatcha
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@lowlighter%2Fmatcha
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

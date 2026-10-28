@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-18
 githubStargazers: 5551
-npmWeeklyDownloads: 1303
+npmWeeklyDownloads: 2720
 contributors: 27
 addedAt: 2026-10-27
 checkedAt: 2026-10-27
@@ -66,8 +66,8 @@ sources:
     url: https://api.github.com/repos/knadh/oat/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@knadh/oat
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@knadh/oat
+    checkedAt: 2026-10-28
   - field: installMethod
     url: https://oat.ink/usage/
     checkedAt: 2026-10-27

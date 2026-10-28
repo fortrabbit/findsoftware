@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "8"
 latestReleaseDate: 2023-04-13
 githubStargazers: 7033
-npmWeeklyDownloads: 52821
+npmWeeklyDownloads: 79983
 contributors: 33
 dependentRepos: 1079
 dependentPackages: 194
@@ -82,8 +82,8 @@ sources:
     url: https://github.com/fabiospampinato/cash
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/cash-dom
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/cash-dom
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/cash-dom
     checkedAt: 2026-10-26

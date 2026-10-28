@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-10-23
 githubStargazers: 13759
-npmWeeklyDownloads: 220744
+npmWeeklyDownloads: 347020
 contributors: 108
 social:
   x: https://x.com/Astryxdesign
@@ -85,8 +85,8 @@ sources:
     url: https://api.github.com/repos/facebook/astryx/contributors?per_page=1
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@astryxdesign/core
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@astryxdesign/core
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

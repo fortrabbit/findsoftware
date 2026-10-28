@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "13"
 latestReleaseDate: 2023-06-20
 githubStargazers: 1551
-npmWeeklyDownloads: 80
+npmWeeklyDownloads: 107
 contributors: 11
 dependentRepos: 3
 dependentPackages: 5
@@ -82,8 +82,8 @@ sources:
     url: https://github.com/BlazeSoftware/atoms
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@blaze/atoms
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@blaze/atoms
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@blaze%2Fatoms
     checkedAt: 2026-10-26

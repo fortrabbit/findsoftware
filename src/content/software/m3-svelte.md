@@ -21,7 +21,7 @@ license: Apache-2.0 OR GPL-3.0-only
 currentMajor: "7"
 latestReleaseDate: 2026-09-20
 githubStargazers: 468
-npmWeeklyDownloads: 366
+npmWeeklyDownloads: 758
 contributors: 17
 dependentRepos: 5
 dependentPackages: 1
@@ -79,8 +79,8 @@ sources:
     url: https://api.github.com/repos/KTibow/m3-svelte
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/m3-svelte
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/m3-svelte
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/m3-svelte
     checkedAt: 2026-10-27

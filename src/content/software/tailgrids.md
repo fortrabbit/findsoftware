@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-08-04
 githubStargazers: 1655
-npmWeeklyDownloads: 26
+npmWeeklyDownloads: 176
 contributors: 10
 social:
   x: https://x.com/tailgrids
@@ -78,7 +78,7 @@ sources:
     url: https://github.com/TailGrids/tailgrids
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/%40tailgrids%2Fcli
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/%40tailgrids%2Fcli
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

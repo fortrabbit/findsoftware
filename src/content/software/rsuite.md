@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "6"
 latestReleaseDate: 2026-10-04
 githubStargazers: 8696
-npmWeeklyDownloads: 113944
+npmWeeklyDownloads: 211647
 contributors: 140
 dependentRepos: 1914
 dependentPackages: 179
@@ -82,7 +82,7 @@ sources:
     url: https://api.github.com/repos/rsuite/rsuite/contributors?per_page=1&anon=true
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/rsuite
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/rsuite
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/rsuite

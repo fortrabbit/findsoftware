@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2020-06-18
 githubStargazers: 10215
-npmWeeklyDownloads: 2043
+npmWeeklyDownloads: 2081
 contributors: 27
 httpArchiveSites: 180
 dependentRepos: 1390
@@ -87,8 +87,8 @@ sources:
     url: https://github.com/milligram/milligram
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/milligram
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/milligram
+    checkedAt: 2026-10-28
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-27

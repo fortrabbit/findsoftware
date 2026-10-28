@@ -23,7 +23,7 @@ license: "custom: public domain in the United States; worldwide royalty-free lic
 currentMajor: "8"
 latestReleaseDate: 2026-06-24
 githubStargazers: 158
-npmWeeklyDownloads: 6447
+npmWeeklyDownloads: 11085
 contributors: 26
 dependentRepos: 13
 dependentPackages: 20
@@ -87,8 +87,8 @@ sources:
     url: https://github.com/RocketCommunicationsInc/astro
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@astrouxds/astro-web-components
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@astrouxds/astro-web-components
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@astrouxds%2Fastro-web-components
     checkedAt: 2026-10-26

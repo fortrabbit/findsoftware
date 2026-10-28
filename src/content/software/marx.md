@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-08-21
 githubStargazers: 1710
-npmWeeklyDownloads: 507
+npmWeeklyDownloads: 1385
 contributors: 16
 dependentRepos: 24
 dependentPackages: 3
@@ -72,8 +72,8 @@ sources:
     url: https://api.github.com/repos/mblode/marx
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/marx-css
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/marx-css
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/marx-css
     checkedAt: 2026-10-27

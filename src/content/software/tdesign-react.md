@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-23
 githubStargazers: 973
-npmWeeklyDownloads: 24036
+npmWeeklyDownloads: 233797
 contributors: 210
 dependentRepos: 45
 dependentPackages: 23
@@ -82,7 +82,7 @@ sources:
     url: https://api.github.com/repos/Tencent/tdesign-react/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/tdesign-react
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/tdesign-react
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tdesign-react

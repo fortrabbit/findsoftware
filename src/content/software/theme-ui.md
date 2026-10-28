@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-01-02
 githubStargazers: 5409
-npmWeeklyDownloads: 40027
+npmWeeklyDownloads: 80711
 contributors: 133
 dependentRepos: 17191
 dependentPackages: 1013
@@ -83,7 +83,7 @@ sources:
     url: https://api.github.com/repos/system-ui/theme-ui/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/theme-ui
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/theme-ui
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/theme-ui

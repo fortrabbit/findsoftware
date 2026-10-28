@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-05-13
 githubStargazers: 3275
-npmWeeklyDownloads: 7741944
+npmWeeklyDownloads: 12932591
 contributors: 59
 dependentRepos: 24739
 dependentPackages: 189
@@ -72,8 +72,8 @@ sources:
     url: https://github.com/cristianbote/goober
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/goober
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/goober
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/goober
     checkedAt: 2026-10-27

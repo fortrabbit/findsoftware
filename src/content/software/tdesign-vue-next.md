@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-15
 githubStargazers: 2200
-npmWeeklyDownloads: 20950
+npmWeeklyDownloads: 45204
 contributors: 330
 dependentRepos: 65
 dependentPackages: 31
@@ -80,7 +80,7 @@ sources:
     url: https://api.github.com/repos/Tencent/tdesign-vue-next/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/tdesign-vue-next
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/tdesign-vue-next
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tdesign-vue-next

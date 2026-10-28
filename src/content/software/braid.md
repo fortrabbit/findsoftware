@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "34"
 latestReleaseDate: 2026-10-19
 githubStargazers: 1573
-npmWeeklyDownloads: 3875
+npmWeeklyDownloads: 11837
 contributors: 38
 dependentRepos: 15
 dependentPackages: 13
@@ -69,8 +69,8 @@ sources:
     url: https://api.github.com/repos/seek-oss/braid-design-system/contributors?per_page=1
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/braid-design-system
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/braid-design-system
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/braid-design-system
     checkedAt: 2026-10-26

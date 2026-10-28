@@ -25,7 +25,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2019-12-30
 githubStargazers: 6511
-npmWeeklyDownloads: 2901
+npmWeeklyDownloads: 10459
 contributors: 33
 dependentRepos: 182
 dependentPackages: 50
@@ -89,8 +89,8 @@ sources:
     url: https://api.github.com/repos/imba/imba/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/imba
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/imba
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/imba
     checkedAt: 2026-10-27

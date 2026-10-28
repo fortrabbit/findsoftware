@@ -21,7 +21,7 @@ license: BSD-3-Clause
 currentMajor: "0"
 latestReleaseDate: 2023-04-25
 githubStargazers: 957
-npmWeeklyDownloads: 2430920
+npmWeeklyDownloads: 4770213
 contributors: 5
 dependentRepos: 271
 dependentPackages: 39
@@ -65,7 +65,7 @@ sources:
     url: https://raw.githubusercontent.com/ajitid/fzf-for-js/dev/license.txt
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/fzf
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/fzf
     checkedAt: 2026-10-28
   - field: githubStargazers
     url: https://api.github.com/repos/ajitid/fzf-for-js

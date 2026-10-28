@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2024-05-01
 githubStargazers: 26025
-npmWeeklyDownloads: 153758
+npmWeeklyDownloads: 287577
 contributors: 46
 dependentRepos: 4870
 dependentPackages: 769
@@ -81,8 +81,8 @@ sources:
     url: https://github.com/feathericons/feather
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/feather-icons
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/feather-icons
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/feather-icons
     checkedAt: 2026-10-26

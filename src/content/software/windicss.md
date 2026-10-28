@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2022-06-30
 githubStargazers: 6499
-npmWeeklyDownloads: 31004
+npmWeeklyDownloads: 72195
 contributors: 48
 dependentRepos: 2910
 dependentPackages: 440
@@ -83,7 +83,7 @@ sources:
     url: https://github.com/windicss/windicss
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/windicss
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/windicss
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/windicss

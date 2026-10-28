@@ -19,7 +19,7 @@ license: MIT, CC BY-NC-SA 4.0
 currentMajor: "0"
 latestReleaseDate: 2025-02-05
 githubStargazers: 1432
-npmWeeklyDownloads: 385
+npmWeeklyDownloads: 444
 contributors: 11
 dependentRepos: 52
 dependentPackages: 4
@@ -92,8 +92,8 @@ sources:
     url: https://github.com/Spiderpig86/Cirrus
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/cirrus-ui
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/cirrus-ui
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/cirrus-ui
     checkedAt: 2026-10-26

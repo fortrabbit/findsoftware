@@ -23,7 +23,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2025-11-08
 githubStargazers: 14505
-npmWeeklyDownloads: 16678
+npmWeeklyDownloads: 27754
 contributors: 247
 dependentRepos: 2115
 dependentPackages: 413
@@ -85,8 +85,8 @@ sources:
     url: https://github.com/MithrilJS/mithril.js
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/mithril
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/mithril
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/mithril
     checkedAt: 2026-10-27

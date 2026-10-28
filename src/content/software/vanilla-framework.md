@@ -19,7 +19,7 @@ license: LGPL-3.0
 currentMajor: "4"
 latestReleaseDate: 2026-10-16
 githubStargazers: 989
-npmWeeklyDownloads: 10806
+npmWeeklyDownloads: 27943
 contributors: 86
 dependentRepos: 219
 dependentPackages: 26
@@ -75,7 +75,7 @@ sources:
     url: https://api.github.com/repos/canonical/vanilla-framework
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/vanilla-framework
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/vanilla-framework
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vanilla-framework

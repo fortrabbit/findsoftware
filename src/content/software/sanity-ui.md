@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-20
 githubStargazers: 178
-npmWeeklyDownloads: 1370751
+npmWeeklyDownloads: 2325268
 contributors: 36
 dependentRepos: 6581
 dependentPackages: 259
@@ -81,7 +81,7 @@ sources:
     url: https://api.github.com/repos/sanity-io/ui/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@sanity/ui
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@sanity/ui
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@sanity%2Fui

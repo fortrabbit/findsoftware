@@ -21,7 +21,7 @@ license: PrimeUI License, MIT
 currentMajor: "22"
 latestReleaseDate: 2026-10-22
 githubStargazers: 12485
-npmWeeklyDownloads: 431819
+npmWeeklyDownloads: 943630
 contributors: 365
 dependentRepos: 12692
 dependentPackages: 898
@@ -81,7 +81,7 @@ sources:
     url: https://github.com/primefaces/primeng
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/primeng
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/primeng
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/primeng

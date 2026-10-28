@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-27
 githubStargazers: 768
-npmWeeklyDownloads: 78
+npmWeeklyDownloads: 243
 contributors: 2
 addedAt: 2026-10-27
 checkedAt: 2026-10-27
@@ -69,8 +69,8 @@ sources:
     url: https://api.github.com/repos/zumerlab/orbit/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@zumer/orbit
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@zumer/orbit
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

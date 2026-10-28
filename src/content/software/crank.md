@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-09-04
 githubStargazers: 2799
-npmWeeklyDownloads: 912
+npmWeeklyDownloads: 1123
 contributors: 29
 addedAt: 2026-10-26
 checkedAt: 2026-10-26
@@ -88,8 +88,8 @@ sources:
     url: https://api.github.com/repos/bikeshaving/crank/contributors
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@b9g/crank
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@b9g/crank
+    checkedAt: 2026-10-28
 ai: authored
 packagistDownloads: null
 ---

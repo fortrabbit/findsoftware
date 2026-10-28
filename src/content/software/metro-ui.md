@@ -23,7 +23,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2025-10-22
 githubStargazers: 7084
-npmWeeklyDownloads: 154
+npmWeeklyDownloads: 190
 contributors: 54
 httpArchiveSites: 107
 social:
@@ -87,8 +87,8 @@ sources:
     url: https://github.com/olton/metroui
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@olton/metroui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@olton/metroui
+    checkedAt: 2026-10-28
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-27

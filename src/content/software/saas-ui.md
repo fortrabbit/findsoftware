@@ -21,7 +21,7 @@ license: MIT, proprietary (Saas UI Pro License Agreement)
 currentMajor: "0"
 latestReleaseDate: 2025-10-23
 githubStargazers: 1659
-npmWeeklyDownloads: 328
+npmWeeklyDownloads: 222
 contributors: 39
 social:
   x: https://twitter.com/saas_js
@@ -78,7 +78,7 @@ sources:
     url: https://api.github.com/repos/saas-js/saas-ui/contributors?per_page=1&anon=true
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@saas-ui/cli
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@saas-ui/cli
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

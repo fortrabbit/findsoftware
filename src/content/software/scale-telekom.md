@@ -20,7 +20,7 @@ installMethod: npm
 licenseModel: open-source
 license: MPL-2.0
 githubStargazers: 429
-npmWeeklyDownloads: 3318
+npmWeeklyDownloads: 8033
 contributors: 53
 dependentRepos: 4
 dependentPackages: 6
@@ -79,7 +79,7 @@ sources:
     url: https://api.github.com/repos/telekom/scale/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@telekom/scale-components
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@telekom/scale-components
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@telekom%2Fscale-components

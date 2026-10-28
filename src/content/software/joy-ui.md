@@ -19,7 +19,7 @@ basedOn:
 installMethod: npm, pnpm, yarn
 licenseModel: open-source
 license: MIT
-npmWeeklyDownloads: 89212
+npmWeeklyDownloads: 153623
 dependentRepos: 3318
 dependentPackages: 63
 social:
@@ -69,8 +69,8 @@ sources:
     url: https://api.github.com/repos/mui/material-ui
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@mui/joy
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@mui/joy
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40mui%2Fjoy
     checkedAt: 2026-10-27

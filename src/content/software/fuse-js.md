@@ -22,7 +22,7 @@ license: Apache-2.0
 currentMajor: "7"
 latestReleaseDate: 2026-07-13
 githubStargazers: 20513
-npmWeeklyDownloads: 9003838
+npmWeeklyDownloads: 17367008
 contributors: 77
 dependentRepos: 76600
 dependentPackages: 601
@@ -83,7 +83,7 @@ sources:
     url: https://raw.githubusercontent.com/krisk/Fuse/main/LICENSE
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/fuse.js
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/fuse.js
     checkedAt: 2026-10-28
   - field: githubStargazers
     url: https://api.github.com/repos/krisk/Fuse

@@ -24,7 +24,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-27
 githubStargazers: 68
-npmWeeklyDownloads: 884
+npmWeeklyDownloads: 1864
 contributors: 42
 addedAt: 2026-10-27
 checkedAt: 2026-10-27
@@ -87,8 +87,8 @@ sources:
     url: https://api.github.com/repos/sbb-design-systems/lyne-components/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@sbb-esta/lyne-elements
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@sbb-esta/lyne-elements
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

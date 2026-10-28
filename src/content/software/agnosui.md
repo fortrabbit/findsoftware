@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-06-17
 githubStargazers: 85
-npmWeeklyDownloads: 511
+npmWeeklyDownloads: 1030
 contributors: 13
 dependentRepos: 2
 dependentPackages: 8
@@ -75,8 +75,8 @@ sources:
     url: https://api.github.com/repos/AmadeusITGroup/AgnosUI/contributors
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@agnos-ui/core
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@agnos-ui/core
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@agnos-ui%2Fcore
     checkedAt: 2026-10-26

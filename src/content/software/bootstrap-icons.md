@@ -20,7 +20,7 @@ currentMajor: "1"
 latestReleaseDate: 2026-10-08
 githubStargazers: 8162
 packagistDownloads: 2524660
-npmWeeklyDownloads: 516907
+npmWeeklyDownloads: 970202
 contributors: 48
 httpArchiveSites: 115923
 dependentRepos: 33555
@@ -79,8 +79,8 @@ sources:
     url: https://api.github.com/repos/twbs/icons/contributors?per_page=1
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/bootstrap-icons
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/bootstrap-icons
+    checkedAt: 2026-10-28
   - field: packagistDownloads
     url: https://packagist.org/packages/twbs/bootstrap-icons.json
     checkedAt: 2026-10-26

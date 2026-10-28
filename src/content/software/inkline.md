@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2024-11-18
 githubStargazers: 1470
-npmWeeklyDownloads: 6036
+npmWeeklyDownloads: 13383
 dependentRepos: 72
 dependentPackages: 7
 social:
@@ -85,8 +85,8 @@ sources:
     url: https://api.github.com/repos/uxfront-com/inkline
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@inkline/inkline
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@inkline/inkline
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40inkline%2Finkline
     checkedAt: 2026-10-27

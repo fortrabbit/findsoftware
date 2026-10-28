@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "22"
 latestReleaseDate: 2026-10-21
 githubStargazers: 25038
-npmWeeklyDownloads: 1442983
+npmWeeklyDownloads: 3000263
 contributors: 422
 httpArchiveSites: 4609
 dependentRepos: 180132
@@ -79,8 +79,8 @@ sources:
     url: https://github.com/angular/components
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@angular/material
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@angular/material
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@angular%2Fmaterial
     checkedAt: 2026-10-26

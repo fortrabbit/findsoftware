@@ -24,7 +24,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-05
 githubStargazers: 4385
-npmWeeklyDownloads: 975760
+npmWeeklyDownloads: 1518354
 contributors: 129
 social:
   x: https://twitter.com/docsearch_
@@ -87,7 +87,7 @@ sources:
     url: https://api.github.com/repos/algolia/docsearch/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@docsearch/js
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@docsearch/js
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

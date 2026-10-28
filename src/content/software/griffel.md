@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-09-23
 githubStargazers: 1282
-npmWeeklyDownloads: 360919
+npmWeeklyDownloads: 645356
 contributors: 46
 dependentRepos: 642
 dependentPackages: 161
@@ -80,8 +80,8 @@ sources:
     url: https://github.com/microsoft/griffel
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@griffel/react
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@griffel/react
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40griffel%2Freact
     checkedAt: 2026-10-27

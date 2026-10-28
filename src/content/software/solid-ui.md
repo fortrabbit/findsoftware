@@ -24,7 +24,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-01-14
 githubStargazers: 1550
-npmWeeklyDownloads: 3907
+npmWeeklyDownloads: 1468
 contributors: 28
 addedAt: 2026-10-28
 checkedAt: 2026-10-28
@@ -84,7 +84,7 @@ sources:
     url: https://github.com/stefan-karger/solid-ui/graphs/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/solidui-cli
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/solidui-cli
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

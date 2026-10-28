@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2022-12-11
 githubStargazers: 2769
-npmWeeklyDownloads: 10099
+npmWeeklyDownloads: 29686
 contributors: 6
 dependentRepos: 321
 dependentPackages: 5
@@ -80,7 +80,7 @@ sources:
     url: https://api.github.com/repos/NeXTs/Jets.js/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/jets
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/jets
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/jets

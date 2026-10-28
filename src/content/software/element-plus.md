@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-09-30
 githubStargazers: 27829
-npmWeeklyDownloads: 405630
+npmWeeklyDownloads: 777074
 contributors: 413
 dependentRepos: 7465
 dependentPackages: 3762
@@ -88,8 +88,8 @@ sources:
     url: https://github.com/element-plus/element-plus
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/element-plus
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/element-plus
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/element-plus
     checkedAt: 2026-10-26

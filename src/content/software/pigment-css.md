@@ -17,7 +17,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-05-22
 githubStargazers: 1120
-npmWeeklyDownloads: 37751
+npmWeeklyDownloads: 36534
 contributors: 29
 social:
   x: https://x.com/PigmentCSS
@@ -64,8 +64,8 @@ sources:
     url: https://api.github.com/repos/mui/pigment-css/contributors?per_page=1
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@pigment-css/react
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@pigment-css/react
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-08-04
 githubStargazers: 2622
-npmWeeklyDownloads: 13833
+npmWeeklyDownloads: 22199
 contributors: 31
 dependentRepos: 11
 dependentPackages: 6
@@ -72,8 +72,8 @@ sources:
     url: https://github.com/beercss/beercss
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/beercss
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/beercss
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/beercss
     checkedAt: 2026-10-26

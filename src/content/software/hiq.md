@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2024-07-23
 githubStargazers: 328
-npmWeeklyDownloads: 166
+npmWeeklyDownloads: 296
 contributors: 7
 dependentRepos: 13
 dependentPackages: 4
@@ -75,8 +75,8 @@ sources:
     url: https://api.github.com/repos/jonathanharrell/hiq/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/hiq
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/hiq
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/hiq
     checkedAt: 2026-10-27

@@ -23,7 +23,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2022-08-06
 githubStargazers: 4052
-npmWeeklyDownloads: 630
+npmWeeklyDownloads: 1762
 contributors: 28
 dependentRepos: 155
 dependentPackages: 24
@@ -82,8 +82,8 @@ sources:
     url: https://api.github.com/repos/JosephusPaye/Keen-UI
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/keen-ui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/keen-ui
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/keen-ui
     checkedAt: 2026-10-27

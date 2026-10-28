@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2025-05-23
 githubStargazers: 570
-npmWeeklyDownloads: 20
+npmWeeklyDownloads: 49
 contributors: 9
 dependentRepos: 4
 dependentPackages: 10
@@ -75,8 +75,8 @@ sources:
     url: https://github.com/sergejcodes/minze
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/minze
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/minze
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/minze
     checkedAt: 2026-10-27

@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "19"
 latestReleaseDate: 2026-10-23
 githubStargazers: 8774
-npmWeeklyDownloads: 350586
+npmWeeklyDownloads: 574859
 contributors: 104
 dependentRepos: 1985
 dependentPackages: 69
@@ -69,8 +69,8 @@ sources:
     url: https://api.github.com/repos/primer/octicons/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@primer/octicons
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@primer/octicons
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40primer%2Focticons
     checkedAt: 2026-10-27

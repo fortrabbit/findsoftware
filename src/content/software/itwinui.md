@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-09-17
 githubStargazers: 125
-npmWeeklyDownloads: 46747
+npmWeeklyDownloads: 81088
 contributors: 53
 dependentRepos: 26
 dependentPackages: 40
@@ -74,8 +74,8 @@ sources:
     url: https://api.github.com/repos/iTwin/iTwinUI/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@itwin/itwinui-react
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@itwin/itwinui-react
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@itwin%2Fitwinui-react
     checkedAt: 2026-10-27

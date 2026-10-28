@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-09-15
 githubStargazers: 10442
-npmWeeklyDownloads: 1190369
+npmWeeklyDownloads: 2541441
 contributors: 146
 dependentRepos: 1
 dependentPackages: 6
@@ -75,7 +75,7 @@ sources:
     url: https://api.github.com/repos/facebook/stylex/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@stylexjs/stylex
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@stylexjs/stylex
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@stylexjs%2Fstylex

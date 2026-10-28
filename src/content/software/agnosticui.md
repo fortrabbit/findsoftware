@@ -18,7 +18,7 @@ installMethod: npx CLI that copies source into the project
 licenseModel: open-source
 license: Apache-2.0
 githubStargazers: 832
-npmWeeklyDownloads: 3
+npmWeeklyDownloads: 26
 contributors: 15
 addedAt: 2026-10-26
 checkedAt: 2026-10-26
@@ -66,8 +66,8 @@ sources:
     url: https://api.github.com/repos/AgnosticUI/agnosticui/contributors
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/agnosticui-cli
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/agnosticui-cli
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

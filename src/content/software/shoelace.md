@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2025-03-11
 githubStargazers: 13823
-npmWeeklyDownloads: 91246
+npmWeeklyDownloads: 169869
 contributors: 173
 dependentRepos: 197
 dependentPackages: 139
@@ -84,7 +84,7 @@ sources:
     url: https://github.com/shoelace-style/shoelace
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@shoelace-style/shoelace
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@shoelace-style/shoelace
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40shoelace-style%2Fshoelace

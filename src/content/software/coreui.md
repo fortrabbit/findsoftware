@@ -23,7 +23,7 @@ license: MIT, CC BY 3.0 (documentation)
 currentMajor: "5"
 latestReleaseDate: 2026-10-04
 githubStargazers: 882
-npmWeeklyDownloads: 101466
+npmWeeklyDownloads: 220134
 contributors: 354
 httpArchiveSites: 390
 dependentRepos: 5458
@@ -107,8 +107,8 @@ sources:
     url: https://api.github.com/repos/coreui/coreui/contributors
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@coreui/coreui
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@coreui/coreui
+    checkedAt: 2026-10-28
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-26

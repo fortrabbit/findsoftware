@@ -39,7 +39,7 @@ social:
   x: https://x.com/everplatform
   discord: https://discord.gg/msqRJ4w
   forum: https://github.com/ever-co/ever-demand/discussions
-addedAt: 2026-10-23
+addedAt: 2026-10-28
 checkedAt: 2026-10-23
 sources:
   - field: name

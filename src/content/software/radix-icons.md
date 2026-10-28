@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2024-11-14
 githubStargazers: 2709
-npmWeeklyDownloads: 3808294
+npmWeeklyDownloads: 6427968
 contributors: 15
 dependentRepos: 10183
 dependentPackages: 565
@@ -68,7 +68,7 @@ sources:
     url: https://github.com/radix-ui/icons
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@radix-ui/react-icons
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@radix-ui/react-icons
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40radix-ui%2Freact-icons

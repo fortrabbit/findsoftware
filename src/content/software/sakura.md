@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2025-06-24
 githubStargazers: 4394
-npmWeeklyDownloads: 375
+npmWeeklyDownloads: 515
 contributors: 39
 dependentRepos: 33
 dependentPackages: 6
@@ -81,7 +81,7 @@ sources:
     url: https://api.github.com/repos/oxalorg/sakura/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/sakura.css
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/sakura.css
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/sakura.css

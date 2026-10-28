@@ -24,7 +24,7 @@ license: MIT, Preline UI Fair Use License
 currentMajor: "5"
 latestReleaseDate: 2026-08-31
 githubStargazers: 6514
-npmWeeklyDownloads: 35822
+npmWeeklyDownloads: 79870
 contributors: 32
 httpArchiveSites: 369
 dependentRepos: 282
@@ -86,7 +86,7 @@ sources:
     url: https://github.com/htmlstreamofficial/preline
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/preline
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/preline
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/preline

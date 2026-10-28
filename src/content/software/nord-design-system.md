@@ -17,7 +17,7 @@ licenseModel: commercial
 license: SEE LICENSE IN LICENSE.md, Nordhealth Terms of Use
 currentMajor: "5"
 latestReleaseDate: 2026-10-15
-npmWeeklyDownloads: 3409
+npmWeeklyDownloads: 14070
 dependentRepos: 4
 dependentPackages: 4
 addedAt: 2026-10-27
@@ -57,8 +57,8 @@ sources:
     url: https://registry.npmjs.org/@nordhealth%2Fcomponents
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@nordhealth/components
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@nordhealth/components
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40nordhealth%2Fcomponents
     checkedAt: 2026-10-27

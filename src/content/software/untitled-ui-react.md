@@ -25,7 +25,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-10-02
 githubStargazers: 1985
-npmWeeklyDownloads: 2358
+npmWeeklyDownloads: 6967
 contributors: 15
 social:
   x: https://x.com/untitledui
@@ -91,7 +91,7 @@ sources:
     url: https://api.github.com/repos/untitleduico/react/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/untitledui
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/untitledui
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

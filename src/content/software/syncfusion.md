@@ -22,7 +22,7 @@ license: Syncfusion Essential Studio License Agreement (proprietary), Community 
 currentMajor: "35"
 latestReleaseDate: 2026-10-27
 githubStargazers: 449
-npmWeeklyDownloads: 32048
+npmWeeklyDownloads: 38468
 contributors: 23
 dependentRepos: 887
 dependentPackages: 16
@@ -78,7 +78,7 @@ sources:
     url: https://api.github.com/repos/syncfusion/ej2-javascript-ui-controls/releases
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@syncfusion/ej2
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@syncfusion/ej2
     checkedAt: 2026-10-28
   - field: githubStargazers
     url: https://api.github.com/repos/syncfusion/ej2-javascript-ui-controls

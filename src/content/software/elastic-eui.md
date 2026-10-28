@@ -22,7 +22,7 @@ license: SSPL-1.0 OR Elastic-2.0, Elastic-2.0
 currentMajor: "123"
 latestReleaseDate: 2026-10-19
 githubStargazers: 6377
-npmWeeklyDownloads: 125222
+npmWeeklyDownloads: 439334
 contributors: 300
 dependentRepos: 444
 dependentPackages: 32
@@ -86,8 +86,8 @@ sources:
     url: https://eui.elastic.co/docs/utilities/i18n/
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@elastic/eui
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@elastic/eui
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40elastic%2Feui
     checkedAt: 2026-10-26

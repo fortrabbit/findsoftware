@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "8"
 latestReleaseDate: 2019-05-08
 githubStargazers: 5900
-npmWeeklyDownloads: 8046
+npmWeeklyDownloads: 13472
 contributors: 23
 dependentRepos: 445
 dependentPackages: 72
@@ -72,8 +72,8 @@ sources:
     url: https://github.com/basscss/basscss
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/basscss
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/basscss
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/basscss
     checkedAt: 2026-10-26

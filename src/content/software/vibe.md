@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-19
 githubStargazers: 691
-npmWeeklyDownloads: 81830
+npmWeeklyDownloads: 211031
 contributors: 186
 social:
   forum: https://github.com/mondaycom/vibe/discussions
@@ -81,7 +81,7 @@ sources:
     url: https://api.github.com/repos/mondaycom/vibe/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@vibe/core
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@vibe/core
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

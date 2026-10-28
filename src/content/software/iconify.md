@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-19
 githubStargazers: 6374
-npmWeeklyDownloads: 99087
+npmWeeklyDownloads: 151913
 contributors: 37
 dependentRepos: 329
 dependentPackages: 47
@@ -86,8 +86,8 @@ sources:
     url: https://api.github.com/repos/iconify/iconify/contributors?per_page=1
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/iconify-icon
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/iconify-icon
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/iconify-icon
     checkedAt: 2026-10-27

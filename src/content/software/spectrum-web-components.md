@@ -20,7 +20,7 @@ license: Apache-2.0, ISC
 currentMajor: "1"
 latestReleaseDate: 2026-10-14
 githubStargazers: 1547
-npmWeeklyDownloads: 40645
+npmWeeklyDownloads: 90354
 contributors: 114
 dependentRepos: 46
 dependentPackages: 31
@@ -76,7 +76,7 @@ sources:
     url: https://github.com/adobe/spectrum-web-components/graphs/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@spectrum-web-components/theme
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@spectrum-web-components/theme
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40spectrum-web-components%2Ftheme

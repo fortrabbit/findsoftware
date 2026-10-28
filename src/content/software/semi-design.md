@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-09
 githubStargazers: 10437
-npmWeeklyDownloads: 18080
+npmWeeklyDownloads: 22871
 contributors: 151
 dependentRepos: 148
 dependentPackages: 38
@@ -82,7 +82,7 @@ sources:
     url: https://api.github.com/repos/DouyinFE/semi-design/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@douyinfe/semi-ui
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@douyinfe/semi-ui
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40douyinfe%2Fsemi-ui

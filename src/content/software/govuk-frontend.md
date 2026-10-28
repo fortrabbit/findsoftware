@@ -21,7 +21,7 @@ license: MIT, Open Government Licence v3.0
 currentMajor: "6"
 latestReleaseDate: 2026-10-15
 githubStargazers: 1476
-npmWeeklyDownloads: 160886
+npmWeeklyDownloads: 278965
 contributors: 77
 dependentRepos: 1529
 dependentPackages: 140
@@ -80,8 +80,8 @@ sources:
     url: https://github.com/alphagov/govuk-frontend
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/govuk-frontend
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/govuk-frontend
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/govuk-frontend
     checkedAt: 2026-10-27

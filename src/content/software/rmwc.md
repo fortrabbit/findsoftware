@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "14"
 latestReleaseDate: 2024-10-24
 githubStargazers: 1658
-npmWeeklyDownloads: 8225
+npmWeeklyDownloads: 15261
 contributors: 63
 dependentRepos: 506
 dependentPackages: 49
@@ -82,7 +82,7 @@ sources:
     url: https://api.github.com/repos/rmwc/rmwc/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@rmwc/base
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@rmwc/base
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40rmwc%2Fbase

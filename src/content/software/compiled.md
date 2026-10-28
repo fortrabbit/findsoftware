@@ -20,7 +20,7 @@ license: Apache-2.0
 currentMajor: "2"
 latestReleaseDate: 2026-08-25
 githubStargazers: 2054
-npmWeeklyDownloads: 380201
+npmWeeklyDownloads: 758929
 contributors: 78
 dependentRepos: 548
 dependentPackages: 19
@@ -73,8 +73,8 @@ sources:
     url: https://api.github.com/repos/atlassian-labs/compiled/contributors
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@compiled/react
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@compiled/react
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@compiled/react
     checkedAt: 2026-10-26

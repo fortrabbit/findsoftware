@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "38"
 latestReleaseDate: 2026-10-23
 githubStargazers: 3925
-npmWeeklyDownloads: 39791
+npmWeeklyDownloads: 66506
 contributors: 228
 dependentRepos: 199
 dependentPackages: 22
@@ -71,7 +71,7 @@ sources:
     url: https://github.com/primer/react
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@primer/react
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@primer/react
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@primer%2Freact

@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-10-26
 githubStargazers: 613
-npmWeeklyDownloads: 1753
+npmWeeklyDownloads: 3539
 contributors: 20
 dependentRepos: 1
 social:
@@ -81,8 +81,8 @@ sources:
     url: https://github.com/fulldotdev/ui
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/fulldev-ui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/fulldev-ui
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/fulldev-ui
     checkedAt: 2026-10-27

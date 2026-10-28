@@ -19,7 +19,7 @@ license: Apache-2.0
 currentMajor: "13"
 latestReleaseDate: 2026-10-22
 githubStargazers: 5
-npmWeeklyDownloads: 4938
+npmWeeklyDownloads: 3659
 contributors: 20
 dependentRepos: 1
 dependentPackages: 4
@@ -75,8 +75,8 @@ sources:
     url: https://api.github.com/repos/AlaskaAirlines/auro-button/contributors?per_page=1
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@aurodesignsystem/auro-button
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@aurodesignsystem/auro-button
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@aurodesignsystem%2Fauro-button
     checkedAt: 2026-10-26

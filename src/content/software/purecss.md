@@ -19,7 +19,7 @@ license: BSD-3-Clause
 currentMajor: "3"
 latestReleaseDate: 2026-09-28
 githubStargazers: 23713
-npmWeeklyDownloads: 10506
+npmWeeklyDownloads: 19079
 contributors: 72
 dependentRepos: 1117
 dependentPackages: 322
@@ -69,7 +69,7 @@ sources:
     url: https://api.github.com/repos/pure-css/pure/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/purecss
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/purecss
     checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/purecss

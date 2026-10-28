@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2023-12-10
 githubStargazers: 13196
-npmWeeklyDownloads: 149583
+npmWeeklyDownloads: 373121
 contributors: 302
 dependentRepos: 48726
 dependentPackages: 1180
@@ -76,7 +76,7 @@ sources:
     url: https://api.github.com/repos/Semantic-Org/Semantic-UI-React/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/semantic-ui-react
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/semantic-ui-react
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/semantic-ui-react

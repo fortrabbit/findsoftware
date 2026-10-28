@@ -25,7 +25,7 @@ license: SEE LICENSE.md, Esri Master License Agreement (MLA)
 currentMajor: "5"
 latestReleaseDate: 2026-10-20
 githubStargazers: 374
-npmWeeklyDownloads: 143320
+npmWeeklyDownloads: 279617
 contributors: 71
 dependentRepos: 324
 dependentPackages: 32
@@ -99,8 +99,8 @@ sources:
     url: https://github.com/Esri/calcite-design-system
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@esri/calcite-components
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@esri/calcite-components
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@esri%2Fcalcite-components
     checkedAt: 2026-10-26

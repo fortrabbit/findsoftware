@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2022-03-22
 githubStargazers: 4554
-npmWeeklyDownloads: 18141
+npmWeeklyDownloads: 30557
 contributors: 51
 dependentRepos: 618
 dependentPackages: 16
@@ -74,8 +74,8 @@ sources:
     url: https://github.com/geist-org/geist-ui/blob/master/pages/en-us/guide/introduction.mdx
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@geist-ui/core
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@geist-ui/core
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40geist-ui%2Fcore
     checkedAt: 2026-10-27

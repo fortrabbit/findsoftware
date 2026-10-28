@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "6"
 latestReleaseDate: 2026-10-15
 githubStargazers: 859
-npmWeeklyDownloads: 80673
+npmWeeklyDownloads: 192973
 contributors: 187
 dependentRepos: 1823
 dependentPackages: 235
@@ -86,8 +86,8 @@ sources:
     url: https://github.com/patternfly/patternfly-react
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@patternfly/react-core
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@patternfly/react-core
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@patternfly%2Freact-core
     checkedAt: 2026-10-27

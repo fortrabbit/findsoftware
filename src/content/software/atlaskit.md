@@ -20,7 +20,7 @@ licenseModel: open-source
 license: Apache-2.0, Atlassian Design System License Agreement
 currentMajor: "25"
 latestReleaseDate: 2026-10-26
-npmWeeklyDownloads: 137313
+npmWeeklyDownloads: 258883
 dependentRepos: 846
 dependentPackages: 286
 addedAt: 2026-10-26
@@ -69,8 +69,8 @@ sources:
     url: https://registry.npmjs.org/@atlaskit/button
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@atlaskit/button
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@atlaskit/button
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@atlaskit%2Fbutton
     checkedAt: 2026-10-26

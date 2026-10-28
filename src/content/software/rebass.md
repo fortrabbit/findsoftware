@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2019-10-28
 githubStargazers: 7895
-npmWeeklyDownloads: 14440
+npmWeeklyDownloads: 33556
 contributors: 48
 dependentRepos: 5150
 dependentPackages: 385
@@ -69,7 +69,7 @@ sources:
     url: https://api.github.com/repos/rebassjs/rebass/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/rebass
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/rebass
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/rebass

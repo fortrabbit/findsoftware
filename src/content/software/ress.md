@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "6"
 latestReleaseDate: 2026-08-08
 githubStargazers: 2082
-npmWeeklyDownloads: 36444
+npmWeeklyDownloads: 76931
 contributors: 10
 dependentRepos: 662
 dependentPackages: 55
@@ -72,7 +72,7 @@ sources:
     url: https://api.github.com/repos/filipelinhares/ress/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/ress
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/ress
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ress

@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "10"
 latestReleaseDate: 2025-09-16
 githubStargazers: 507
-npmWeeklyDownloads: 162
+npmWeeklyDownloads: 1016
 contributors: 13
 dependentRepos: 75
 dependentPackages: 6
@@ -76,8 +76,8 @@ sources:
     url: https://github.com/balmjs/balm-ui
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/balm-ui
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/balm-ui
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/balm-ui
     checkedAt: 2026-10-26

@@ -24,7 +24,7 @@ license: MIT
 currentMajor: "10"
 latestReleaseDate: 2026-10-04
 githubStargazers: 16456
-npmWeeklyDownloads: 158492
+npmWeeklyDownloads: 304288
 contributors: 183
 httpArchiveSites: 3
 dependentRepos: 2265
@@ -92,8 +92,8 @@ sources:
     url: https://api.github.com/repos/infernojs/inferno/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/inferno
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/inferno
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/inferno
     checkedAt: 2026-10-27

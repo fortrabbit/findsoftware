@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2022-12-01
 githubStargazers: 1953
-npmWeeklyDownloads: 459
+npmWeeklyDownloads: 1449
 contributors: 15
 dependentRepos: 15
 dependentPackages: 22
@@ -84,8 +84,8 @@ sources:
     url: https://api.github.com/repos/master-co/css
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@master/css
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@master/css
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40master%2Fcss
     checkedAt: 2026-10-27

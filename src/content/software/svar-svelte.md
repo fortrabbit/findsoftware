@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-09-01
 githubStargazers: 272
-npmWeeklyDownloads: 25783
+npmWeeklyDownloads: 42216
 contributors: 3
 social:
   forum: https://forum.svar.dev
@@ -77,7 +77,7 @@ sources:
     url: https://api.github.com/repos/svar-widgets/core/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@svar-ui/svelte-core
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@svar-ui/svelte-core
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

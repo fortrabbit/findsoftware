@@ -18,7 +18,7 @@ license: MIT, GPL-3.0-or-later
 currentMajor: "1"
 latestReleaseDate: 2023-02-09
 githubStargazers: 1169
-npmWeeklyDownloads: 29
+npmWeeklyDownloads: 38
 contributors: 9
 dependentRepos: 1
 dependentPackages: 1
@@ -74,8 +74,8 @@ sources:
     url: https://api.github.com/repos/alvaromontoro/almond.css/contributors
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/almond.css
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/almond.css
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/almond.css
     checkedAt: 2026-10-26

@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2025-08-06
 githubStargazers: 1143
-npmWeeklyDownloads: 14623
+npmWeeklyDownloads: 40533
 contributors: 11
 dependentRepos: 114
 dependentPackages: 61
@@ -73,7 +73,7 @@ sources:
     url: https://github.com/WebReflection/uhtml
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/uhtml
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/uhtml
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/uhtml

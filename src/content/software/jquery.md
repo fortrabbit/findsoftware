@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-01-18
 githubStargazers: 59901
-npmWeeklyDownloads: 8817367
+npmWeeklyDownloads: 17969301
 contributors: 298
 httpArchiveSites: 5581844
 dependentRepos: 998742
@@ -87,8 +87,8 @@ sources:
     url: https://api.github.com/repos/jquery/jquery/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/jquery
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/jquery
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/jquery
     checkedAt: 2026-10-27

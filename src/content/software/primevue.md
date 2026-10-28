@@ -23,7 +23,7 @@ license: PrimeUI License, MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-22
 githubStargazers: 14448
-npmWeeklyDownloads: 465045
+npmWeeklyDownloads: 1073893
 contributors: 399
 dependentRepos: 2453
 dependentPackages: 263
@@ -88,7 +88,7 @@ sources:
     url: https://api.github.com/repos/primefaces/primevue/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/primevue
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/primevue
     checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/primevue

@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2023-07-05
 githubStargazers: 248
-npmWeeklyDownloads: 1081
+npmWeeklyDownloads: 9860
 contributors: 42
 addedAt: 2026-10-26
 checkedAt: 2026-10-26
@@ -82,8 +82,8 @@ sources:
     url: https://api.github.com/repos/freshworks-oss/crayons/contributors
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@freshworks/crayons
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@freshworks/crayons
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

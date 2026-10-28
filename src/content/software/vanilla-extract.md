@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-10-08
 githubStargazers: 10441
-npmWeeklyDownloads: 1907446
+npmWeeklyDownloads: 3193302
 contributors: 140
 dependentRepos: 8615
 dependentPackages: 598
@@ -76,7 +76,7 @@ sources:
     url: https://api.github.com/repos/vanilla-extract-css/vanilla-extract
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@vanilla-extract/css
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@vanilla-extract/css
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40vanilla-extract%2Fcss

@@ -20,7 +20,7 @@ license: Apache-2.0
 currentMajor: "2"
 latestReleaseDate: 2026-10-22
 githubStargazers: 8352
-npmWeeklyDownloads: 21245
+npmWeeklyDownloads: 48480
 contributors: 362
 dependentRepos: 2633
 dependentPackages: 161
@@ -75,8 +75,8 @@ sources:
     url: https://github.com/grommet/grommet
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/grommet
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/grommet
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/grommet
     checkedAt: 2026-10-27

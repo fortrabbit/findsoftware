@@ -19,7 +19,7 @@ license: MIT, CC-BY-4.0, OFL-1.1, Boxicons Pro License
 currentMajor: "3"
 latestReleaseDate: 2026-03-01
 githubStargazers: 3184
-npmWeeklyDownloads: 1531
+npmWeeklyDownloads: 1264
 contributors: 1
 social:
   x: https://x.com/boxicons
@@ -95,8 +95,8 @@ sources:
     url: https://api.github.com/repos/box-icons/boxicons/contributors?per_page=1
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@boxicons/core
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@boxicons/core
+    checkedAt: 2026-10-28
 ai: authored
 contentStore: null
 databases: null

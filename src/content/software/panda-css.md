@@ -24,7 +24,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-22
 githubStargazers: 6236
-npmWeeklyDownloads: 349822
+npmWeeklyDownloads: 565899
 contributors: 179
 httpArchiveSites: 4431
 dependentRepos: 67
@@ -96,8 +96,8 @@ sources:
     url: https://github.com/chakra-ui/panda
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@pandacss/dev
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@pandacss/dev
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40pandacss%2Fdev
     checkedAt: 2026-10-27

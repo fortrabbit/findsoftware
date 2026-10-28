@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-04-08
 githubStargazers: 1864
-npmWeeklyDownloads: 730
+npmWeeklyDownloads: 988
 contributors: 44
 dependentRepos: 52
 dependentPackages: 3
@@ -75,8 +75,8 @@ sources:
     url: https://api.github.com/repos/kuma-ui/kuma-ui/contributors?per_page=1
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@kuma-ui/core
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@kuma-ui/core
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@kuma-ui%2Fcore
     checkedAt: 2026-10-27

@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "1"
 latestReleaseDate: 2025-04-01
 githubStargazers: 28091
-npmWeeklyDownloads: 713573
+npmWeeklyDownloads: 1352328
 contributors: 288
 httpArchiveSites: 84116
 dependentRepos: 34984
@@ -80,8 +80,8 @@ sources:
     url: https://api.github.com/repos/jashkenas/backbone/contributors?per_page=1
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/backbone
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/backbone
+    checkedAt: 2026-10-28
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-26

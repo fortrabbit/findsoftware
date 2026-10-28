@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-09-24
 githubStargazers: 993
-npmWeeklyDownloads: 3070
+npmWeeklyDownloads: 5580
 contributors: 301
 dependentRepos: 56
 dependentPackages: 2
@@ -71,8 +71,8 @@ sources:
     url: https://api.github.com/repos/materializecss/materialize/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@materializecss/materialize
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@materializecss/materialize
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40materializecss%2Fmaterialize
     checkedAt: 2026-10-27

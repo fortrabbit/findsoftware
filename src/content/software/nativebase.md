@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2023-03-06
 githubStargazers: 20367
-npmWeeklyDownloads: 24296
+npmWeeklyDownloads: 65023
 contributors: 220
 dependentRepos: 19016
 dependentPackages: 391
@@ -87,8 +87,8 @@ sources:
     url: https://api.github.com/repos/GeekyAnts/NativeBase/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/native-base
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/native-base
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/native-base
     checkedAt: 2026-10-27

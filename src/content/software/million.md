@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2024-06-04
 githubStargazers: 17660
-npmWeeklyDownloads: 30869
+npmWeeklyDownloads: 36698
 contributors: 124
 dependentRepos: 139
 dependentPackages: 22
@@ -84,8 +84,8 @@ sources:
     url: https://github.com/aidenybai/million
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/million
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/million
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/million
     checkedAt: 2026-10-27

@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-23
 githubStargazers: 3631
-npmWeeklyDownloads: 829165
+npmWeeklyDownloads: 1373291
 contributors: 138
 dependentRepos: 10
 dependentPackages: 11
@@ -79,8 +79,8 @@ sources:
     url: https://github.com/huntabyte/bits-ui
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/bits-ui
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/bits-ui
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/bits-ui
     checkedAt: 2026-10-26

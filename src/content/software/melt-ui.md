@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2025-03-28
 githubStargazers: 4199
-npmWeeklyDownloads: 100140
+npmWeeklyDownloads: 195420
 contributors: 117
 dependentRepos: 11
 dependentPackages: 23
@@ -82,8 +82,8 @@ sources:
     url: https://github.com/melt-ui/melt-ui
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@melt-ui/svelte
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@melt-ui/svelte
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40melt-ui%2Fsvelte
     checkedAt: 2026-10-27

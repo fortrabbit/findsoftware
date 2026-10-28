@@ -23,7 +23,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-10-15
 githubStargazers: 7033
-npmWeeklyDownloads: 468063
+npmWeeklyDownloads: 799093
 contributors: 394
 dependentRepos: 70
 dependentPackages: 45
@@ -93,8 +93,8 @@ sources:
     url: https://api.github.com/repos/nuxt/ui/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@nuxt/ui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@nuxt/ui
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40nuxt%2Fui
     checkedAt: 2026-10-27

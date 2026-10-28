@@ -19,7 +19,7 @@ license: Apache-2.0
 currentMajor: "1"
 latestReleaseDate: 2025-08-05
 githubStargazers: 1982
-npmWeeklyDownloads: 51392
+npmWeeklyDownloads: 109783
 contributors: 58
 dependentRepos: 148
 dependentPackages: 18
@@ -63,7 +63,7 @@ sources:
     url: https://api.github.com/repos/elastic/search-ui/releases/latest
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@elastic/search-ui
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@elastic/search-ui
     checkedAt: 2026-10-28
   - field: githubStargazers
     url: https://api.github.com/repos/elastic/search-ui

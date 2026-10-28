@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2022-01-18
 githubStargazers: 9689
-npmWeeklyDownloads: 1886
+npmWeeklyDownloads: 2678
 contributors: 12
 httpArchiveSites: 237
 dependentRepos: 52
@@ -76,8 +76,8 @@ sources:
     url: https://github.com/vuejs/petite-vue
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/petite-vue
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/petite-vue
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/petite-vue
     checkedAt: 2026-10-27

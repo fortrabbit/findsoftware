@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2025-01-17
 githubStargazers: 3434
-npmWeeklyDownloads: 1751
+npmWeeklyDownloads: 5068
 contributors: 42
 dependentRepos: 155
 dependentPackages: 53
@@ -71,7 +71,7 @@ sources:
     url: https://api.github.com/repos/redom/redom/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/redom
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/redom
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/redom

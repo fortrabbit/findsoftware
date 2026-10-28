@@ -24,7 +24,7 @@ license: MIT
 currentMajor: "0"
 latestReleaseDate: 2026-07-27
 githubStargazers: 955
-npmWeeklyDownloads: 7222
+npmWeeklyDownloads: 11928
 contributors: 54
 dependentRepos: 85
 dependentPackages: 5
@@ -86,8 +86,8 @@ sources:
     url: https://github.com/themesberg/flowbite-vue
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/flowbite-vue
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/flowbite-vue
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/flowbite-vue
     checkedAt: 2026-10-27

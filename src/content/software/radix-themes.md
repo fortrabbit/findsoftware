@@ -18,7 +18,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-01-31
 githubStargazers: 8803
-npmWeeklyDownloads: 738519
+npmWeeklyDownloads: 1156016
 contributors: 27
 dependentRepos: 2
 dependentPackages: 33
@@ -72,7 +72,7 @@ sources:
     url: https://github.com/radix-ui/themes
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@radix-ui/themes
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@radix-ui/themes
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40radix-ui%2Fthemes

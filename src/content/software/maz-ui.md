@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-27
 githubStargazers: 564
-npmWeeklyDownloads: 9678
+npmWeeklyDownloads: 21053
 contributors: 12
 dependentRepos: 24
 dependentPackages: 4
@@ -77,8 +77,8 @@ sources:
     url: https://api.github.com/repos/LouisMazel/maz-ui/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/maz-ui
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/maz-ui
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/maz-ui
     checkedAt: 2026-10-27

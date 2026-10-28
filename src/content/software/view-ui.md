@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "4"
 latestReleaseDate: 2021-11-19
 githubStargazers: 2624
-npmWeeklyDownloads: 3617
+npmWeeklyDownloads: 6759
 contributors: 159
 dependentRepos: 2350
 dependentPackages: 817
@@ -72,7 +72,7 @@ sources:
     url: https://api.github.com/repos/view-design/ViewUI/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/view-design
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/view-design
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/view-design

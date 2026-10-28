@@ -24,7 +24,7 @@ license: MIT, MIT License
 currentMajor: "3"
 latestReleaseDate: 2026-08-31
 githubStargazers: 9508
-npmWeeklyDownloads: 21832
+npmWeeklyDownloads: 50050
 contributors: 367
 dependentRepos: 7664
 dependentPackages: 219
@@ -93,8 +93,8 @@ sources:
     url: https://github.com/buefy/buefy
     checkedAt: 2026-10-26
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/buefy
-    checkedAt: 2026-10-26
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/buefy
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/buefy
     checkedAt: 2026-10-26

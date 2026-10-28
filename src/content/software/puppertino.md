@@ -19,7 +19,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-06
 githubStargazers: 1202
-npmWeeklyDownloads: 48
+npmWeeklyDownloads: 6
 contributors: 7
 social:
   x: https://twitter.com/Puppertino_css
@@ -69,7 +69,7 @@ sources:
     url: https://api.github.com/repos/codedgar/Puppertino/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@codedgar%2Fpuppertino
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@codedgar%2Fpuppertino
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

@@ -17,7 +17,7 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2019-12-17
 githubStargazers: 21854
-npmWeeklyDownloads: 983
+npmWeeklyDownloads: 1713
 contributors: 55
 dependentRepos: 789
 dependentPackages: 12
@@ -70,8 +70,8 @@ sources:
     url: https://github.com/nostalgic-css/NES.css
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/nes.css
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/nes.css
+    checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/nes.css
     checkedAt: 2026-10-27

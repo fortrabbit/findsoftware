@@ -21,7 +21,7 @@ license: MIT, MIT, except third-party components under other terms
 currentMajor: "2"
 latestReleaseDate: 2026-03-12
 githubStargazers: 27450
-npmWeeklyDownloads: 2150
+npmWeeklyDownloads: 7280
 contributors: 24
 dependentRepos: 2536
 dependentPackages: 154
@@ -80,7 +80,7 @@ sources:
     url: https://github.com/Tencent/weui
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/weui
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/weui
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/weui

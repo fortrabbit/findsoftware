@@ -20,7 +20,7 @@ license: MIT
 currentMajor: "6"
 latestReleaseDate: 2026-10-12
 githubStargazers: 41060
-npmWeeklyDownloads: 6939471
+npmWeeklyDownloads: 13245038
 contributors: 346
 httpArchiveSites: 173531
 dependentRepos: 448028
@@ -80,7 +80,7 @@ sources:
     url: https://github.com/styled-components/styled-components
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/styled-components
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/styled-components
     checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/styled-components

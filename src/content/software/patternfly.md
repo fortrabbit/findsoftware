@@ -21,7 +21,7 @@ license: MIT
 currentMajor: "6"
 latestReleaseDate: 2026-10-15
 githubStargazers: 821
-npmWeeklyDownloads: 54607
+npmWeeklyDownloads: 133229
 contributors: 77
 dependentRepos: 1103
 dependentPackages: 123
@@ -82,8 +82,8 @@ sources:
     url: https://github.com/patternfly/patternfly
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@patternfly/patternfly
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@patternfly/patternfly
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@patternfly%2Fpatternfly
     checkedAt: 2026-10-27

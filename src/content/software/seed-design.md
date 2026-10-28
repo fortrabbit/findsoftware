@@ -22,7 +22,7 @@ license: Apache-2.0
 currentMajor: "3"
 latestReleaseDate: 2026-10-22
 githubStargazers: 1182
-npmWeeklyDownloads: 16225
+npmWeeklyDownloads: 24690
 contributors: 31
 social:
   instagram: https://www.instagram.com/daangn
@@ -90,7 +90,7 @@ sources:
     url: https://api.github.com/repos/daangn/seed-design/contributors?per_page=1
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@seed-design/react
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@seed-design/react
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

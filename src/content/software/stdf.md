@@ -22,7 +22,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-10-01
 githubStargazers: 779
-npmWeeklyDownloads: 17
+npmWeeklyDownloads: 387
 contributors: 8
 dependentRepos: 2
 social:
@@ -85,7 +85,7 @@ sources:
     url: https://github.com/any-tdf/any-tdf
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/stdf
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/stdf
     checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/stdf

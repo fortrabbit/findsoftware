@@ -21,7 +21,7 @@ license: Apache-2.0, Vaadin Commercial License and Service Terms
 currentMajor: "25"
 latestReleaseDate: 2026-10-22
 githubStargazers: 585
-npmWeeklyDownloads: 27637
+npmWeeklyDownloads: 55038
 contributors: 121
 social:
   x: https://x.com/vaadin
@@ -83,7 +83,7 @@ sources:
     url: https://api.github.com/repos/vaadin/web-components
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@vaadin/react-components
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@vaadin/react-components
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

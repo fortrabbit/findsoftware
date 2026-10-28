@@ -21,7 +21,7 @@ license: Apache-2.0
 currentMajor: "2"
 latestReleaseDate: 2026-10-27
 githubStargazers: 106
-npmWeeklyDownloads: 1838
+npmWeeklyDownloads: 1883
 contributors: 18
 addedAt: 2026-10-27
 checkedAt: 2026-10-27
@@ -66,8 +66,8 @@ sources:
     url: https://api.github.com/repos/NVIDIA/elements/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/@nvidia-elements/core
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@nvidia-elements/core
+    checkedAt: 2026-10-28
   - field: urls
     url: https://raw.githubusercontent.com/NVIDIA/elements/main/README.md
     checkedAt: 2026-10-27

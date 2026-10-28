@@ -25,7 +25,7 @@ license: MIT
 currentMajor: "9"
 latestReleaseDate: 2026-10-27
 githubStargazers: 1800
-npmWeeklyDownloads: 52361
+npmWeeklyDownloads: 115206
 contributors: 89
 dependentRepos: 210
 dependentPackages: 121
@@ -99,8 +99,8 @@ sources:
     url: https://api.github.com/repos/salesforce/lwc/contributors
     checkedAt: 2026-10-27
   - field: npmWeeklyDownloads
-    url: https://api.npmjs.org/downloads/range/2026-10-18:2026-10-24/lwc
-    checkedAt: 2026-10-27
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/lwc
+    checkedAt: 2026-10-28
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/lwc
     checkedAt: 2026-10-27
