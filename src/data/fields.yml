@@ -203,7 +203,7 @@
     - { id: elixir, label: Elixir }
     - { id: dart, label: Dart }
     - { id: r, label: R }
-    - { id: binary, label: Single binary, subject: 'run{|s} as a single binary' }
+    - { id: binary, label: Binary, subject: 'run{|s} as a single binary' }
     - { id: static, label: Static files, subject: 'need{|s} only static file hosting' }
 
 - id: language
@@ -267,7 +267,7 @@
     - { id: lua, label: Lua }
     - { id: dart, label: Dart }
     - { id: r, label: R }
-    - { id: binary, label: Single binary, subject: 'ship{|s} as a single binary' }
+    - { id: binary, label: Binary, subject: 'ship{|s} as a single binary' }
     - { id: beam, label: Erlang VM }
     - { id: jvm, label: Java VM }
     - { id: dotnet, label: .NET }
@@ -347,11 +347,11 @@
   multiple: true
   values:
     - { id: static, label: Static files, subject: 'deploy{|s} as static files' }
-    - { id: per-request, label: A script per request }
-    - { id: always-on, label: An always-on process }
-    - { id: scheduled, label: A scheduled task, subject: 'run{|s} as a scheduled task, from cron or a timer' }
-    - { id: browser, label: "In the visitor's browser", subject: "run{|s} in the visitor's browser" }
-    - { id: local, label: Only in development, subject: 'run{|s} only in development, never on the live site' }
+    - { id: per-request, label: Per request, subject: 'run{|s} as a script per request' }
+    - { id: always-on, label: Always on, subject: 'run{|s} as an always-on process' }
+    - { id: scheduled, label: Scheduled, subject: 'run{|s} as a scheduled task, from cron or a timer' }
+    - { id: browser, label: In the browser, subject: "run{|s} in the visitor's browser" }
+    - { id: local, label: Dev only, subject: 'run{|s} only in development, never on the live site' }
 
 - id: renderingModes
   label: Rendering
