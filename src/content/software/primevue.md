@@ -3,13 +3,12 @@ id: primevue
 name: PrimeVue
 urls:
   home: https://primevue.dev
-  repository: https://github.com/primefaces/primevue
   docs: https://primevue.dev/installation/
   pricing: https://primeui.dev/pricing
 category:
   - ui-library
 description: Vue UI component library made by PrimeTek, published on npm.
-status: stub
+status: active
 maintainer: PrimeTek Informatics Bilisim AS
 maintainerType: company
 firstRelease: 2019
@@ -18,13 +17,10 @@ language: javascript
 basedOn:
   - vue
 installMethod: npm
-licenseModel: open-core
-license: PrimeUI License, MIT
+license: PrimeUI License, PrimeUI Community License, free per developer for eligible individuals and organizations
 currentMajor: "5"
 latestReleaseDate: 2026-10-22
-githubStargazers: 14448
 npmWeeklyDownloads: 1073893
-contributors: 399
 dependentRepos: 2453
 dependentPackages: 263
 social:
@@ -35,9 +31,6 @@ checkedAt: 2026-10-28
 sources:
   - field: urls
     url: https://primevue.dev/
-    checkedAt: 2026-10-28
-  - field: urls
-    url: https://api.github.com/repos/primefaces/primevue
     checkedAt: 2026-10-28
   - field: urls
     url: https://primevue.dev/installation/
@@ -70,7 +63,7 @@ sources:
     url: https://primeui.dev/licenses
     checkedAt: 2026-10-28
   - field: license
-    url: https://github.com/primefaces/primevue/blob/master/LICENSE.md
+    url: https://primeui.dev/licenses/community
     checkedAt: 2026-10-28
   - field: urls
     url: https://primeui.dev/pricing
@@ -80,12 +73,6 @@ sources:
     checkedAt: 2026-10-28
   - field: latestReleaseDate
     url: https://registry.npmjs.org/primevue
-    checkedAt: 2026-10-28
-  - field: githubStargazers
-    url: https://api.github.com/repos/primefaces/primevue
-    checkedAt: 2026-10-28
-  - field: contributors
-    url: https://api.github.com/repos/primefaces/primevue/contributors
     checkedAt: 2026-10-28
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/primevue
@@ -114,4 +101,4 @@ PrimeVue is a Vue UI component library that PrimeTek publishes on npm. The [Vite
 
 ## Worth knowing
 
-The current line is licensed under the PrimeUI License, which requires a license key. A free Community License covers eligible users, and a paid Commercial License is licensed per developer. The earlier line on GitHub remains under the MIT License, and the README of that repository says it no longer receives active development and points to PrimeUI.
+The current line, PrimeVue 5, is distributed as a compiled package under the PrimeUI License and needs a PrimeUI license key. The license offers a free Community License for eligible individuals and organizations and a paid Commercial License per developer. PrimeVue moved into PrimeUI in 2026. The earlier line, PrimeVue 4, is MIT-licensed; its public repository receives security fixes only.

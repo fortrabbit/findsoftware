@@ -2,4 +2,4 @@ PrimeNG is a UI component library for Angular, published by PrimeTek Informatics
 
 ## Worth knowing
 
-The current line is distributed as a compiled package under the PrimeUI License, and the installation page asks for a PrimeUI license key. Its Commercial tier, under the PrimeUI Commercial Suite, includes PrimeUI PRO components. Earlier releases are MIT-licensed, and the repository that holds them says it is no longer under active development and receives security fixes only.
+The current line is distributed as a compiled package under the PrimeUI License and needs a PrimeUI license key. The license offers a free Community License for eligible individuals and organizations and a paid Commercial License per developer, which sits in the PrimeUI Commercial Suite with PrimeUI PRO components. PrimeNG moved into PrimeUI in 2026. The earlier line, PrimeNG 21 and before, is MIT-licensed; its public repository receives security fixes only.

@@ -2,4 +2,4 @@ PrimeReact is a React UI component library that PrimeTek publishes on npm. The [
 
 ## Worth knowing
 
-The current line is licensed under the PrimeUI License, which requires a license key. A free Community License covers eligible users, and a paid Commercial License is licensed per developer. The earlier line on GitHub remains under the MIT License, and the README of that repository says it no longer receives active development and points to PrimeUI.
+The current line is distributed as a compiled package under the PrimeUI License and needs a PrimeUI license key. The license offers a free Community License for eligible individuals and organizations and a paid Commercial License per developer. PrimeReact moved into PrimeUI in 2026. The earlier line, PrimeReact 10 and before, is MIT-licensed; its public repository receives security fixes only.

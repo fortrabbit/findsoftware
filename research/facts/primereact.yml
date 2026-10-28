@@ -1,6 +1,6 @@
 id: primereact
 name: PrimeReact
-status: stub
+status: accepted
 checkedAt: 2026-10-28
 description: React UI component library made by PrimeTek, published on npm.
 facts:
@@ -10,11 +10,6 @@ facts:
     checkedAt: 2026-10-28
     via: page
     quote: "Enhance your web applications with PrimeReact's comprehensive suite of customizable, feature-rich UI components."
-  - field: repository
-    value: https://github.com/primefaces/primereact
-    url: https://api.github.com/repos/primefaces/primereact
-    checkedAt: 2026-10-28
-    via: api
   - field: docs
     value: https://primereact.dev/docs/styled/guides/introduction
     url: https://primereact.dev/docs/styled/guides/introduction
@@ -79,17 +74,17 @@ facts:
     via: page
     quote: "Every PrimeUI product is covered by a plain-language license."
   - field: license
-    value: MIT
-    url: https://github.com/primefaces/primereact/blob/master/LICENSE.md
+    value: PrimeUI Community License, free per developer for eligible individuals and organizations
+    url: https://primeui.dev/licenses/community
     checkedAt: 2026-10-28
     via: page
-    quote: "The MIT License (MIT)"
+    quote: "Free per-developer license for eligible individuals and organizations."
   - field: paidEdition
-    value: PrimeUI Commercial License
+    value: PrimeUI Commercial License, licensed per developer
     url: https://primeui.dev/licenses/commercial
     checkedAt: 2026-10-28
     via: page
-    quote: "Commercial Suite includes PrimeNG, PrimeReact, and PrimeVue, PrimeBlocks, Theme Designer, all PrimeUI Pro components"
+    quote: "The Software is licensed per developer."
   - field: pricingPage
     value: https://primeui.dev/pricing
     url: https://primeui.dev/pricing
@@ -108,16 +103,6 @@ facts:
   - field: latestReleaseDate
     value: 2026-10-22
     url: https://registry.npmjs.org/primereact
-    checkedAt: 2026-10-28
-    via: api
-  - field: githubStargazers
-    value: 8310
-    url: https://api.github.com/repos/primefaces/primereact
-    checkedAt: 2026-10-28
-    via: api
-  - field: contributors
-    value: 347
-    url: https://api.github.com/repos/primefaces/primereact/contributors
     checkedAt: 2026-10-28
     via: api
   - field: npmName
@@ -140,7 +125,7 @@ facts:
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@primereact%2Fui
     checkedAt: 2026-10-28
     via: api
-notFound: [runtime, runtimeMin, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, renderingModes, templating, runsAs, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEditionCommunity, usageShare, httpArchiveSites, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, outputDir, packagistName, rubygemsName, sourcePublic]
+notFound: [repository, runtime, runtimeMin, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, renderingModes, templating, runsAs, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEditionCommunity, usageShare, httpArchiveSites, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, outputDir, packagistName, rubygemsName, sourcePublic]
 unreadable: [https://primereact.dev/docs/styled/guides/installation (JavaScript-rendered; the markdown source was read instead), https://github.com/primefaces/primereact-nextchapter (404 for an anonymous and an authenticated request)]
 notes: >
-  Doubt: the GitHub repository the CSV names (primefaces/primereact) is at its 10.x line, with a README that says it "is no longer under active development and receives security fixes only" and that "Development continues at a new home", the PrimeUI site. The current line (11.2.2, released 2026-10-22) lives in primefaces/primereact-nextchapter, named in the npm repository field, which answers 404 here, so its source, its README and its license file in the repository cannot be read. The announcement at primeui.dev/nextchapter says "PrimeReact remains PrimeReact" and that PrimeUI provides a unified license for the core libraries, which reads as a continuation under the same name; a reviewer decides whether that is a move (accepted) or a replacement (discontinued), and whether the 11 line's commercial license leaves the record on the open-source register. Settled by a readable copy of the nextchapter repository or a PrimeUI statement that names PrimeReact's status. License: the 11 line's npm packages (primereact, @primereact/ui, @primereact/core, all 11.2.2) carry a PrimeUI License file that requires a license key; the tarball LICENSE.md says the package "is part of PrimeUI, a family of commercial UI libraries", with a Community License free for eligible organizations (under $1,000,000 annual gross revenue, fewer than 5 developers, fewer than 10 employees, under $3,000,000 outside funding; individuals, students, non-profits and non-commercial open source projects also qualify) and a paid Commercial License per developer. The 10.x line on GitHub is MIT (LICENSE.md, "Copyright (c) 2016-2025 PrimeTek"); it is an older license and goes here, not in the license field. The install docs for the 11 line name @primereact/ui, so npmName and npmWeeklyDownloads follow it; the legacy package primereact averaged 207280 downloads in the week 2026-10-19 to 2026-10-25 (npm range API), and its dependents are 316 packages and 2807 repositories (ecosyste.ms), which are not recorded because the install docs name a different package. The GitHub language breakdown is CSS by bytes, then JavaScript; language is recorded as JavaScript because the package ships React components. The primereact.org address redirects to primereact.dev. The primeui.dev company page names the legal entity and its Ankara address. The HTTP Archive technologies list has no PrimeReact entry. The npm package primereact has no deprecation flag. The repository's contributors are counted from the per_page=1 Link header.
+  Moved into PrimeUI in 2026 (Frank's decision 2026-10-28, the record follows the product). The public repository primefaces/primereact receives security fixes only; its README says it "is no longer under active development and receives security fixes only" and that development continues at PrimeUI. The current line (11.2.2, released 2026-10-22) ships compiled under the PrimeUI License. No repository is recorded: the npm packages name primefaces/primereact-nextchapter, which answers 404 for an anonymous and an authenticated request, and the public primefaces/primereact repository holds the 10.x line. Both repositories are listed here; neither supplies stars or contributors for the current line, so none are recorded (the old repository showed 8310 stars and 347 contributors on 2026-10-28). License: the 11 line's npm packages (primereact, @primereact/ui, @primereact/core, all 11.2.2) carry a PrimeUI License file that requires a license key; its LICENSE.md says the package "is part of PrimeUI, a family of commercial UI libraries", with a Community License free for eligible organizations (under $1,000,000 annual gross revenue, fewer than 5 developers, fewer than 10 employees, under $3,000,000 outside funding; individuals, students, non-profits and non-commercial open source projects also qualify) and a paid Commercial License per developer. The 10.x line is MIT (LICENSE.md, "Copyright (c) 2016-2025 PrimeTek"); license facts describe the latest release, so it is not recorded as a license. The install docs for the 11 line name @primereact/ui, so npmName and npmWeeklyDownloads follow it; the legacy package primereact averaged 207280 downloads in the week 2026-10-19 to 2026-10-25 (npm range API), and its dependents are 316 packages and 2807 repositories (ecosyste.ms), which are not recorded because the install docs name a different package. The GitHub language breakdown of the old repository is CSS by bytes, then JavaScript; language is recorded as JavaScript because the package ships React components. The primereact.org address redirects to primereact.dev. The primeui.dev company page names the legal entity and its Ankara address. The HTTP Archive technologies list has no PrimeReact entry.

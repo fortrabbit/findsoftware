@@ -1,6 +1,6 @@
 id: primeng
 name: PrimeNG
-status: stub
+status: accepted
 checkedAt: 2026-10-28
 description: UI component library for Angular, distributed as the npm package primeng.
 facts:
@@ -10,11 +10,6 @@ facts:
     checkedAt: 2026-10-28
     via: page
     quote: "Angular UI Component Library"
-  - field: repository
-    value: https://github.com/primefaces/primeng
-    url: https://github.com/primefaces/primeng
-    checkedAt: 2026-10-28
-    via: api
   - field: docs
     value: https://primeng.dev/installation
     url: https://primeng.dev/installation
@@ -67,17 +62,17 @@ facts:
     via: page
     quote: "Every PrimeUI product is covered by a plain-language license."
   - field: license
-    value: MIT
-    url: https://github.com/primefaces/primeng/blob/master/LICENSE.md
+    value: PrimeUI Community License, free per developer for eligible individuals and organizations
+    url: https://primeui.dev/licenses/community
     checkedAt: 2026-10-28
     via: page
-    quote: "PRIMENG COMMUNITY VERSIONS LICENSE"
+    quote: "Free per-developer license for eligible individuals and organizations."
   - field: paidEdition
-    value: "PrimeUI Commercial Suite, with PrimeUI PRO components"
-    url: https://primeui.dev/nextchapter
+    value: PrimeUI Commercial License, licensed per developer
+    url: https://primeui.dev/licenses/commercial
     checkedAt: 2026-10-28
     via: page
-    quote: "PrimeUI PRO components included in the Commercial Suite as they are released"
+    quote: "The Software is licensed per developer."
   - field: pricingPage
     value: https://primeui.dev/pricing
     url: https://primeui.dev/pricing
@@ -91,16 +86,6 @@ facts:
   - field: latestReleaseDate
     value: 2026-10-22
     url: https://registry.npmjs.org/primeng
-    checkedAt: 2026-10-28
-    via: api
-  - field: githubStargazers
-    value: 12485
-    url: https://github.com/primefaces/primeng
-    checkedAt: 2026-10-28
-    via: api
-  - field: contributors
-    value: 365
-    url: https://github.com/primefaces/primeng
     checkedAt: 2026-10-28
     via: api
   - field: npmName
@@ -138,7 +123,7 @@ facts:
     url: https://primeng.dev/
     checkedAt: 2026-10-28
     via: page
-notFound: [hqCountry, runtime, runtimeMin, runsAs, renderingModes, endoflifeId, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, contentStore, databases, bluesky, mastodon, newsletter, subreddit, pluginDirectory, pluginCount, usageShare, reportedInstalls, httpArchiveSites, parent, lastCommitDate]
+notFound: [repository, hqCountry, runtime, runtimeMin, runsAs, renderingModes, endoflifeId, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, contentStore, databases, bluesky, mastodon, newsletter, subreddit, pluginDirectory, pluginCount, usageShare, reportedInstalls, httpArchiveSites, parent, lastCommitDate]
 unreadable: [https://github.com/primefaces/primeng-nextchapter]
 notes: >
-  Doubt: the default branch README of primefaces/primeng says the repository "is no longer under active development and receives security fixes only" and that PrimeNG continues as part of PrimeUI, and the current npm major names primefaces/primeng-nextchapter as its repository, which answers 404 to the GitHub API and to the web. It would be settled by a public source repository for the current line, or by Frank's call on following the PrimeUI product (record keeps status stub until then). The current line is a compiled package under the PrimeUI License; the installation page says "Provide your PrimeUI license key." and primeui.dev/licenses/community names the MIT-licensed versions as PrimeNG 21, PrimeVue 4, PrimeReact 10 and earlier. The MIT license of the 21.x line is an older license: "The MIT License (MIT)" under PRIMENG COMMUNITY VERSIONS LICENSE in the repository's LICENSE.md, copyright 2016-2026 PrimeTek; it is recorded as its own entry. The installation page names the npm package primeng, so the registry figures are that package's and no legacy package figure exists. The CSV homepage primeng.org answers 301 to https://primeng.dev/, which is recorded. The npm dist-tag rc is 22.1.0-rc.2, older than the latest release, so no latestPrereleaseDate. The GitHub release list tops out at 21.1.10 (2026-09-09), so the registry major 22 is used as currentMajor, per the registry rule for a higher registry major. The maintainer's legal form and country are not stated on the pages read, so hqCountry is absent.
+  Moved into PrimeUI in 2026 (Frank's decision 2026-10-28, the record follows the product). The public repository primefaces/primeng receives security fixes only; its README says it "is no longer under active development and receives security fixes only" and that PrimeNG continues as part of PrimeUI. The current line ships compiled under the PrimeUI License: the installation page says "Provide your PrimeUI license key." and the npm package's LICENSE.md describes a free Community License for eligible individuals and organizations and a paid Commercial License per developer. No repository is recorded: the npm package primeng 22.1.4 names primefaces/primeng-nextchapter, which answers 404, and the public primefaces/primeng repository holds the older line. Both repositories are listed here; neither supplies stars or contributors for the current line, so none are recorded (the old repository showed 12485 stars and 365 contributors on 2026-10-28). The older line, PrimeNG 21 and earlier, is MIT-licensed ("The MIT License (MIT)" under PRIMENG COMMUNITY VERSIONS LICENSE in that repository's LICENSE.md, copyright 2016-2026 PrimeTek); license facts describe the latest release, so it is not recorded as a license. primeui.dev/licenses/community names the MIT-licensed versions as PrimeNG 21, PrimeVue 4, PrimeReact 10 and earlier. The installation page names the npm package primeng, so the registry figures are that package's. The CSV homepage primeng.org answers 301 to https://primeng.dev/, which is recorded. The npm dist-tag rc is 22.1.0-rc.2, older than the latest release, so no latestPrereleaseDate. The GitHub release list of the old repository tops out at 21.1.10 (2026-09-09), so the registry major 22 is used as currentMajor. The maintainer's legal form and country are not stated on the pages read, so hqCountry is absent.
