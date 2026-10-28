@@ -1,0 +1,3 @@
+The Red Hat Design System is a set of framework-agnostic Web Components and design tokens that carry the Red Hat brand into digital experiences. The components are published as @rhds/elements on npm, and the install docs also offer the Red Hat CDN and jsDelivr. Red Hat, Inc. maintains the project under the MIT license in the RedHat-UX organization, and the design tokens and icons ship as separate packages.
+
+The Red Hat CDN accepts requests only from redhat.com domains, so a project outside them installs from npm. The install page says to use jsDelivr and other public CDNs for development only.

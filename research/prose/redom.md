@@ -1,0 +1,1 @@
+RE:DOM is a JavaScript library for creating user interfaces. It provides helpers for creating DOM elements and keeping them in sync with data, and it does not use a virtual DOM. It is installed from npm. Juha Lindstedt and contributors maintain it under the MIT license.

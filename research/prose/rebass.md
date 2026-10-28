@@ -1,0 +1,1 @@
+Rebass is a set of React primitive UI components built with Styled System. Its core package, rebass, is installed from npm. The default package uses Emotion, and a separate entry point, rebass/styled-components, serves projects that use Styled Components.

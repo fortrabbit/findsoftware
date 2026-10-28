@@ -1,0 +1,1 @@
+ress is a CSS reset stylesheet that is installed with npm or yarn, or loaded from a CDN. It uses Normalize.css under the hood with customizations, and a project's own stylesheet builds on the base it sets.

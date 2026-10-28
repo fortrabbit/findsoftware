@@ -1,0 +1,1 @@
+Reagent is a ClojureScript interface to React. Components are plain ClojureScript functions that return Hiccup-like markup, and the library is added to a project as a Clojars dependency in project.clj. The README says to provide React through npm when using a tool such as Shadow-cljs.

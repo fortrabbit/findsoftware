@@ -1,0 +1,117 @@
+id: porsche-design-system
+name: Porsche Design System
+status: accepted
+checkedAt: 2026-10-28
+description: Design system of Web Components with npm wrapper packages for React, Angular, Vue and vanilla JavaScript, published by Porsche AG.
+facts:
+  - field: homepage
+    value: https://designsystem.porsche.com/
+    url: https://designsystem.porsche.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "We provide publicly available npm packages for modern frameworks, all powered by Web Components with TypeScript and SSR support."
+  - field: repository
+    value: https://github.com/porsche-design-system/porsche-design-system
+    url: https://github.com/porsche-design-system/porsche-design-system
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://designsystem.porsche.com/v4/developing/introduction/
+    url: https://designsystem.porsche.com/v4/developing/introduction/
+    checkedAt: 2026-10-28
+    via: page
+  - field: categories
+    value: [component-library, design-system]
+    url: https://designsystem.porsche.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Coded component library"
+  - field: firstRelease
+    value: 2022
+    url: https://registry.npmjs.org/@porsche-design-system/components-js
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Dr. Ing. h.c. F. Porsche AG
+    url: https://designsystem.porsche.com/v4/license/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2022 Dr. Ing. h.c. F. Porsche AG"
+  - field: hqCountry
+    value: DE
+    url: https://designsystem.porsche.com/v4/license/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "with Dr. Ing. h.c. F. Porsche AG, Germany"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/porsche-design-system
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://github.com/porsche-design-system/porsche-design-system
+    checkedAt: 2026-10-28
+    via: api
+  - field: installMethod
+    value: [npm]
+    url: https://designsystem.porsche.com/v4/developing/vanilla-js/getting-started/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm install @porsche-design-system/components-js"
+  - field: license
+    value: Apache-2.0
+    url: https://designsystem.porsche.com/v4/license/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The Porsche Design System source code is licensed under the Apache License, Version 2.0"
+  - field: license
+    value: Porsche Design System Assets License Agreement
+    url: https://designsystem.porsche.com/v4/license/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "solely to develop, test, and distribute software applications, websites, and interfaces on behalf of Porsche"
+  - field: currentMajor
+    value: 4
+    url: https://github.com/porsche-design-system/porsche-design-system/releases/tag/v4.10.1
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-23
+    url: https://github.com/porsche-design-system/porsche-design-system/releases/tag/v4.10.1
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 674
+    url: https://github.com/porsche-design-system/porsche-design-system
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 34
+    url: https://github.com/porsche-design-system/porsche-design-system
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: "@porsche-design-system/components-js"
+    url: https://registry.npmjs.org/@porsche-design-system/components-js
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 22957
+    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@porsche-design-system/components-js
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 4
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@porsche-design-system%2Fcomponents-js
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 7
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@porsche-design-system%2Fcomponents-js
+    checkedAt: 2026-10-28
+    via: api
+notFound: [basedOn, runtime, runtimeMin, runsAs, renderingModes, endoflifeId, pricingPage, paidEdition, usageShare, reportedInstalls, httpArchiveSites, discord, x, bluesky, mastodon, newsletter, forum, pluginDirectory, pluginCount, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, contentStore, databases, hostedOffering]
+unreadable: [https://designsystem.porsche.com/v4/news/changelog/, https://designsystem.porsche.com/v4/legal-notice/]
+notes: >
+  The root address answers 302 to /v4/, the v4 documentation; the record links the root as the CSV does. The page banner calls /v4/ an earlier release and links to a newer documentation, which was not followed; GitHub's highest stable release is v4.10.1 (2026-10-23), so currentMajor is 4. The GitHub release list holds v1.0.0 to v3.35.0 dated 2026-08-28, a backfill, so firstRelease comes from npm: the earliest version in the registry time field is 2.12.0 (2022-05-19). The license page gives two licenses: Apache-2.0 for the source and a Porsche Design System Assets License Agreement for fonts, icons and marque, which restricts use to Porsche applications; licenseModel is left to the import. The core package is components-js (monorepo); the framework wrappers are components-angular, components-react and components-vue, each its own npm package. The docs say the components are rendered by Stencil and that styling is offered for Tailwind CSS (recommended), SCSS, Emotion and Vanilla Extract; neither is recorded as basedOn because the pages name them as a rendering compiler and styling options, not as the software the design system is built on. The docs list Slack and a Figma library; neither has a field in the starter list. The npm figure is the components-js package; the monorepo's npm packages for frameworks are not summed.

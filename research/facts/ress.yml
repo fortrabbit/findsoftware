@@ -1,0 +1,117 @@
+id: ress
+name: ress
+status: accepted
+checkedAt: 2026-10-28
+description: CSS reset stylesheet installed with npm or loaded from a CDN, applying a common base to browser default styles.
+facts:
+  - field: homepage
+    value: https://ress.page
+    url: https://ress.page/
+    checkedAt: 2026-10-28
+    via: page
+  - field: repository
+    value: https://github.com/filipelinhares/ress
+    url: https://github.com/filipelinhares/ress
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://ress.page/docs
+    url: https://ress.page/docs
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm install ress"
+  - field: firstRelease
+    value: 2015
+    url: https://github.com/filipelinhares/ress/tags
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Filipe Linhares
+    url: https://github.com/filipelinhares/ress/blob/master/LICENSE.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright © 2016 Filipe Linhares"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/filipelinhares/ress
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: CSS
+    url: https://api.github.com/repos/filipelinhares/ress/languages
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [css-framework]
+    url: https://github.com/filipelinhares/ress/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Modern CSS reset"
+  - field: installMethod
+    value: [npm]
+    url: https://ress.page/docs
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm install ress"
+  - field: installMethod
+    value: [yarn]
+    url: https://ress.page/docs
+    checkedAt: 2026-10-28
+    via: page
+    quote: "yarn add ress"
+  - field: installMethod
+    value: [cdn]
+    url: https://github.com/filipelinhares/ress/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "https://unpkg.com/ress/dist/ress.min.css"
+  - field: license
+    value: MIT
+    url: https://github.com/filipelinhares/ress/blob/master/LICENSE.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 6
+    url: https://registry.npmjs.org/ress
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-08
+    url: https://registry.npmjs.org/ress
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 2082
+    url: https://github.com/filipelinhares/ress
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 10
+    url: https://api.github.com/repos/filipelinhares/ress/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 36444
+    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/ress
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: ress
+    url: https://registry.npmjs.org/ress
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 55
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ress
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 662
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ress
+    checkedAt: 2026-10-28
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, runtime, runtimeMin, runsAs, renderingModes, usageShare, reportedInstalls, httpArchiveSites, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, forkOf, successorOf, basedOn, licenseModel]
+unreadable: []
+notes: >
+  The repository has tags but no GitHub releases, so latestReleaseDate and currentMajor come from the npm package ress: its latest version 6.0.0 matches the highest stable tag 6.0.0, and the npm time entry gives its publish date. The older tags (v1.2.2 and the v-prefixed lines) are not the current line. firstRelease 2015 is the oldest tag, v0.3.0, dated by its commit (2015-11-13); the npm registry starts at 1.0.0 in 2016. The README says the project "uses Normalize.css under the hood with some customizations", a dependency and not a basedOn statement. The categories value is css-framework because the import map has no css-reset value; the reviewer decides whether that mapping fits a reset. The CDN links (unpkg, jsDelivr) are part of installMethod. The homepage and docs pages answer over HTTPS and carry the install text in their HTML.

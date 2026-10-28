@@ -1,0 +1,1 @@
+Reka UI is a Vue component library of unstyled, accessible primitive components, installed from npm into a Vue project. The components supply behavior and accessibility, and the project supplies its own styling. The repository was previously named Radix Vue.
