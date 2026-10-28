@@ -1,0 +1,123 @@
+id: django-vite
+name: django-vite
+status: accepted
+checkedAt: 2026-10-28
+description: Django template integration that loads Vite development server assets in dev mode and built Vite manifest assets in production.
+facts:
+  - field: repository
+    value: https://github.com/MrBin99/django-vite
+    url: https://api.github.com/repos/MrBin99/django-vite
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/MrBin99/django-vite
+    url: https://github.com/MrBin99/django-vite/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Integration of [ViteJS](https://vitejs.dev/) in a Django project."
+  - field: categories
+    value: [build-plugin]
+    url: https://github.com/MrBin99/django-vite/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Integration of [ViteJS](https://vitejs.dev/) in a Django project."
+  - field: basedOn
+    value: [django]
+    url: https://github.com/MrBin99/django-vite/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Integration of [ViteJS](https://vitejs.dev/) in a Django project."
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/MrBin99/django-vite
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: python
+    url: https://github.com/MrBin99/django-vite/blob/3.2.0/setup.py
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"Programming Language :: Python :: 3.10",'
+  - field: templating
+    value: [django]
+    url: https://github.com/MrBin99/django-vite/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "{% load django_vite %}"
+  - field: installMethod
+    value: pip install django-vite
+    url: https://github.com/MrBin99/django-vite/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "pip install django-vite"
+  - field: maintainer
+    value: MrBin99
+    url: https://github.com/MrBin99/django-vite/blob/3.2.0/setup.py
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'author="MrBin99"'
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/MrBin99
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/MrBin99/django-vite
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/MrBin99/django-vite/3.2.0/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: firstRelease
+    value: "2021"
+    url: https://api.github.com/repos/MrBin99/django-vite/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/MrBin99/django-vite/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-14
+    url: https://github.com/MrBin99/django-vite/releases/tag/3.2.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiName
+    value: django-vite
+    url: https://pypi.org/pypi/django-vite/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiDownloads
+    value: 1239036 (last month)
+    url: https://pypistats.org/api/packages/django-vite/recent
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 841
+    url: https://api.github.com/repos/MrBin99/django-vite
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 21
+    url: https://api.github.com/repos/MrBin99/django-vite/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 6
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-vite
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 41
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-vite
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, pricingPage, hqCountry, parent, forkOf, successorOf, alternativeTo, runtimeMin, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, packagistName]
+unreadable: []
+notes: >
+  The GitHub repository has no homepage, so none is recorded; the README is the only documentation. The record is basedOn django, which the README states ("in a Django project" and the INSTALLED_APPS setup). Vite (ViteJS) is the tool whose assets the package loads; it goes here in notes and not into basedOn. The GitHub license is Apache-2.0; setup.py says "Apache License, Version 2.0" and the LICENSE file is the Apache 2.0 text. These are one license in two wordings and are one entry. The Python minimum is not stated: setup.py lists classifiers from 3.8 and requires Django (>=3.2), so runtimeMin is unknown. The highest stable GitHub release is 3.2.0 (2026-09-14); the tags carry no v prefix. The oldest GitHub release is 1.0.0 (2021-04-03), and the PyPI first upload is 1.0.0 on 2021-04-03. The dev mode serves assets from the ViteJS development server, which the developer runs; no runsAs statement is recorded because the README does not name one. The pypistats figure is the last-month count from the recent endpoint. The ecosyste.ms counts are for the pypi.org package django-vite.

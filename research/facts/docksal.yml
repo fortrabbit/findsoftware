@@ -1,0 +1,114 @@
+id: docksal
+name: Docksal
+status: accepted
+checkedAt: 2026-10-28
+description: Command-line tool and Docker Compose stacks that set up local web development environments on macOS, Windows and Linux.
+facts:
+  - field: homepage
+    value: https://docksal.io
+    url: https://docksal.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "All-purpose web-development environment based on Docker and Docker Compose."
+  - field: repository
+    value: https://github.com/docksal/docksal
+    url: https://api.github.com/repos/docksal/docksal
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://docs.docksal.io
+    url: https://github.com/docksal/docksal/blob/develop/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "More advanced use cases and tutorials are available in the Documentation"
+  - field: maintainer
+    value: Docksal
+    url: https://raw.githubusercontent.com/docksal/docksal/develop/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2016-2020 Docksal"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/docksal
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [local-dev-env]
+    url: https://github.com/docksal/docksal/blob/develop/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Docker powered web development environments for macOS, Windows, and Linux."
+  - field: language
+    value: Shell
+    url: https://api.github.com/repos/docksal/docksal
+    checkedAt: 2026-10-28
+    via: api
+  - field: runsAs
+    value: [local]
+    url: https://docksal.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "All-purpose web-development environment based on Docker and Docker Compose."
+  - field: installMethod
+    value: install script (bash <(curl -fsSL https://get.docksal.io))
+    url: https://docs.docksal.io/getting-started/setup/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "bash <(curl -fsSL https://get.docksal.io)"
+  - field: databases
+    value: [mysql]
+    url: https://docs.docksal.io/stack/images-versions/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "5.7 means software version, in this case MySQL 5.7."
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/docksal/docksal/develop/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/docksal/docksal/develop/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2016"
+    url: https://api.github.com/repos/docksal/docksal/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/docksal/docksal/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2024-05-24
+    url: https://api.github.com/repos/docksal/docksal/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 721
+    url: https://api.github.com/repos/docksal/docksal
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 76
+    url: https://api.github.com/repos/docksal/docksal/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: x
+    value: https://twitter.com/docksalio
+    url: https://docksal.io/
+    checkedAt: 2026-10-28
+    via: page
+  - field: youtube
+    value: https://www.youtube.com/docksal
+    url: https://docksal.io/
+    checkedAt: 2026-10-28
+    via: page
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runtime, runtimeMin, renderingModes, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, pypiDownloads, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, facebook, instagram, threads, wikidata, lastCommitDate, sourcePublic]
+unreadable: []
+notes: >
+  Docksal is a command-line tool (fin) and a set of Docker Compose stacks, written in Shell; it runs on the developer's machine on macOS, Windows and Linux. Operating systems and runtime per the install page, read 2026-10-28: macOS with VirtualBox or Docker Desktop, Linux (Debian, Ubuntu and Fedora distributions supported by the install script, others by manual Docker setup), and Windows 10 with WSL 1 and either VirtualBox or Docker Desktop; the install page says "Do NOT install or upgrade to WSL 2. It is not yet supported in Docksal". The install page also says "Docker Desktop for Mac v4.29.0" and "Docker Desktop for Windows v4.29.0" as the versions it was checked with; no versions are recorded. The stock images named on the images page include MySQL and MariaDB; only MySQL has a quote for its own version line, so databases records mysql alone. The first release is the oldest GitHub release in this repository: v1.0.0-rc1 dated 2016-11-23, a prerelease; the first stable release is v1.0.0 dated 2017-01-30, and the year 2016 is the rc. The latest stable release is v1.19.0 dated 2024-05-24; the newest prerelease, v1.13.0-rc2 dated 2019-11-26, is older, so no latestPrereleaseDate is recorded. The default branch develop has commits as recent as 2026-10-26 (a merge of a phpMyAdmin image change), so the project is not archived and no end statement was found; the CSV row's commit date of 2025-12-19 is older than the API. The README names GitHub Discussions and a Drupal Slack room; neither has a schema field and both stay out of the record. The homepage footer reads "© 2015-2021 Docksal Team" and lists maintainers Leonid Makarov, Oleksii Chekulaiev and Sean Dietrich, while the LICENSE copyright reads "Docksal"; the maintainer is recorded from the LICENSE. The homepage names FFW Agency, EPAM Systems and Kanopi Studios as supporters; they are not recorded as a parent, a company behind the software in the criterion 5 sense, or a hosting partner. The homepage lists Drupal, WordPress, Magento, Laravel, Symfony, Grav, Hugo and Gatsby boilerplates; these are project templates from the Docksal organization, and no basedOn is recorded because the project states no parent. The docs site lists a Sponsor link and a Versions page, not read further.

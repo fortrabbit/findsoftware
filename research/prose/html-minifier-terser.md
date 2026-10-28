@@ -1,0 +1,3 @@
+html-minifier-terser is a JavaScript HTML minifier. The npm package provides a command line tool and a Node.js function: the command line tool is installed globally with `npm install html-minifier-terser -g`, and the Node.js package is installed with `npm install html-minifier-terser`. Besides the markup, the package can minify the CSS and JavaScript inside a page, so it runs in a build step or on a developer's machine rather than on the live site.
+
+The package describes itself as a fork of html-minifier, the earlier project by kangax. The [README](https://github.com/terser/html-minifier-terser/blob/v7.2.0/README.md) lists the options and the command line usage.

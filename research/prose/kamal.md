@@ -1,0 +1,3 @@
+Kamal deploys web apps that run in Docker containers to servers it reaches over SSH. The command-line tool builds the image, pushes it to a registry, pulls it onto each server and starts a new container. kamal-proxy then routes traffic to the new container once it answers its health check. The project was originally built for Rails apps and works with any web app that can be containerized. It was formerly known as MRSK.
+
+Kamal is installed with gem install kamal, or run from a Docker container when Ruby is not available. The [installation guide](https://kamal-deploy.org/docs/installation/) says that the first setup installs Docker on any server that lacks it, which needs root access over SSH.

@@ -1,0 +1,91 @@
+id: github-pages-deploy-action
+name: GitHub Pages Deploy Action
+status: accepted
+checkedAt: 2026-10-28
+description: GitHub Action that pushes a project's built folder to a branch that GitHub Pages serves.
+facts:
+  - field: repository
+    value: https://github.com/JamesIves/github-pages-deploy-action
+    url: https://api.github.com/repos/JamesIves/github-pages-deploy-action
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/JamesIves/github-pages-deploy-action/blob/dev/README.md
+    url: https://github.com/JamesIves/github-pages-deploy-action/blob/dev/README.md
+    checkedAt: 2026-10-28
+    via: page
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/JamesIves/github-pages-deploy-action
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/JamesIves/github-pages-deploy-action/blob/dev/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: maintainer
+    value: James Ives
+    url: https://github.com/JamesIves/github-pages-deploy-action/blob/dev/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2021 James Ives"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/JamesIves
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/JamesIves/github-pages-deploy-action
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [deploy-tool]
+    url: https://github.com/JamesIves/github-pages-deploy-action/blob/dev/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Automatically deploy your project to"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/JamesIves/github-pages-deploy-action/blob/dev/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "You can include the action in your workflow to trigger on any event that"
+  - field: installMethod
+    value: "GitHub Actions workflow step"
+    url: https://github.com/JamesIves/github-pages-deploy-action/blob/dev/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "uses: JamesIves/github-pages-deploy-action@v4"
+  - field: firstRelease
+    value: "2019"
+    url: https://api.github.com/repos/JamesIves/github-pages-deploy-action/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/JamesIves/github-pages-deploy-action/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-08
+    url: https://api.github.com/repos/JamesIves/github-pages-deploy-action/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 4618
+    url: https://api.github.com/repos/JamesIves/github-pages-deploy-action
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 39
+    url: https://api.github.com/repos/JamesIves/github-pages-deploy-action/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, packagistName, endoflifeId, latestPrereleaseDate, supportedVersions, npmWeeklyDownloads, packagistDownloads]
+unreadable: []
+notes: >
+  The only homepage candidate is the GitHub Marketplace listing (https://github.com/marketplace/actions/deploy-to-github-pages), which the CSV row and the repository's homepage field name. A marketplace page is a directory, so no homepage is recorded; a reviewer may choose to link it. The default branch is dev, and README and action.yml were read there and at tag v4.9.0. action.yml declares the node24 runner runtime, which is the GitHub runner's and not something a user installs, so no runtime is recorded. The README calls Ubuntu the primary platform and gives a Windows workaround with artifacts; recorded here, not as a field. The README says the action depends on rsync, which a container job must install, and the lfs input needs Git LFS on the runner; neither is a field. The install channel is the GitHub Marketplace and the uses line, with no registry package. The GitHub contributors endpoint was read with per_page=1 and its last page is 39.
+  The README says the branch input defaults to gh-pages, clean is on by default, single-commit wipes the existing history of the deployment branch, the action deploys with the repository token by default and accepts a personal access token or an ssh-key, and without a token or ssh-key the workflow needs Read and Write permissions for GITHUB_TOKEN or contents: write in the workflow file.

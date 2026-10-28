@@ -1,0 +1,3 @@
+Jampack is a post-processing tool for the output of a static site generator. It runs after the generator has written the site, optimizes the images in that output folder, and compresses the HTML, CSS, JavaScript, SVG and image files in a second pass. The project describes itself as neither a bundler nor a framework.
+
+Projects install it from npm as a development dependency and call it from their build script after the generator, so every build of the site passes through it. For images it produces responsive srcset variants and lazy loading. It inlines critical CSS and prefetches the links on a page, so later navigations are faster.

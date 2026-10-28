@@ -1,0 +1,94 @@
+id: mako
+name: Mako
+status: stub
+checkedAt: 2026-10-28
+description: "Web bundler based on Rust, distributed on npm as @umijs/mako and started with npm create mako."
+facts:
+  - field: repository
+    value: "https://github.com/utooland/utoo"
+    url: "https://api.github.com/repos/umijs/mako"
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: "Ant UED"
+    url: "https://raw.githubusercontent.com/utooland/utoo/next/LICENSE"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2025-present Ant UED"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/utooland"
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Rust
+    url: "https://api.github.com/repos/utooland/utoo"
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [build-tool]
+    url: "https://registry.npmjs.org/@umijs%2fmako"
+    checkedAt: 2026-10-28
+    via: api
+    quote: "web bundler based on Rust"
+  - field: runtime
+    value: [node]
+    url: "https://registry.npmjs.org/@umijs/mako/latest"
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtimeMin
+    value: "16"
+    url: "https://registry.npmjs.org/@umijs/mako/latest"
+    checkedAt: 2026-10-28
+    via: api
+  - field: installMethod
+    value: "npm create mako"
+    url: "https://registry.npmjs.org/@umijs%2fmako"
+    checkedAt: 2026-10-28
+    via: api
+    quote: "npm create mako"
+  - field: license
+    value: MIT
+    url: "https://registry.npmjs.org/@umijs/mako/latest"
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: "https://raw.githubusercontent.com/utooland/utoo/next/LICENSE"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining"
+  - field: currentMajor
+    value: 0
+    url: "https://registry.npmjs.org/@umijs/mako/latest"
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2025-11-06
+    url: "https://registry.npmjs.org/@umijs%2fmako"
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 2552
+    url: "https://api.github.com/repos/utooland/utoo"
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 22
+    url: "https://api.github.com/repos/utooland/utoo/contributors"
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: "@umijs/mako"
+    url: "https://registry.npmjs.org/@umijs/mako/latest"
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 47330
+    url: "https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/@umijs/mako"
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, docs, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, firstRelease, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, dependentPackages, dependentRepos]
+unreadable: ["https://makojs.dev/ (connection failed on 2026-10-28, twice)"]
+notes: >
+  Doubt: whether Mako is still its own product or has been folded into the Utoo toolchain, and which package its install docs name today. The project's site makojs.dev refused connections on the check date, so no homepage or docs page could be read; the registry README of @umijs/mako (latest 0.11.15, published 2025-11-06, not deprecated) names makojs.dev and "npm create mako" and is the install source used here. The repository umijs/mako now redirects to utooland/utoo, whose README describes the Utoo toolchain and its @utoo/pack bundler and does not name Mako; the utoo repository's features list cites Mako configuration docs, and its pack-schema crate describes itself as a schema generator for Mako configuration files. A later pass should settle the question by reading makojs.dev once it answers: if Mako continues, record its own homepage and docs; if utoo replaces it under a named successor, mark the record discontinued with the successor in notes. The npm package named mako is a different project (makojs/core) and is not used. The utooland/utoo repository holds releases for two products (utoopack and utoo), so no GitHub release date is recorded and currentMajor is taken from the npm latest version. The LICENSE copyright line reads 2025-present, so the maintainer is recorded as the name it gives, Ant UED. The stars and contributors count the moved repository as a whole, and the npm figure is the week 2026-09-28 to 2026-10-04 for @umijs/mako (the CSV figure is older). The README states the bundler is used by Ant Group and Umi and Dumi integrate it; those are usage claims without figures, so no reportedInstalls is recorded. Dependent counts from ecosyste.ms returned no record for @umijs/mako.

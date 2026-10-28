@@ -1,0 +1,135 @@
+id: backstopjs
+name: BackstopJS
+status: accepted
+checkedAt: 2026-10-28
+description: Visual regression testing tool that captures screenshots of a web app over time and compares them against approved references.
+facts:
+  - field: homepage
+    value: https://garris.github.io/BackstopJS/
+    url: https://garris.github.io/BackstopJS/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Visual regression testing for web apps"
+  - field: repository
+    value: https://github.com/garris/BackstopJS
+    url: https://api.github.com/repos/garris/BackstopJS
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/garris/BackstopJS/blob/master/README.md
+    url: https://github.com/garris/BackstopJS/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "BackstopJS automates visual regression testing of your webapp"
+  - field: maintainer
+    value: Garris Shipon
+    url: https://raw.githubusercontent.com/garris/BackstopJS/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2014 Garris Shipon"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/garris
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/garris/BackstopJS
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [testing]
+    url: https://github.com/garris/BackstopJS/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "BackstopJS automates visual regression testing of your webapp"
+  - field: runtime
+    value: [node]
+    url: https://raw.githubusercontent.com/garris/BackstopJS/master/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"node": ">=16.0.0"'
+  - field: runtimeMin
+    value: "node 16"
+    url: https://raw.githubusercontent.com/garris/BackstopJS/master/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"node": ">=16.0.0"'
+  - field: installMethod
+    value: npm install -g backstopjs
+    url: https://github.com/garris/BackstopJS/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm install -g backstopjs"
+  - field: installMethod
+    value: docker image backstopjs/backstopjs, started by the --docker flag
+    url: https://github.com/garris/BackstopJS/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "spin up a BackstopJS container from https://hub.docker.com/r/backstopjs/backstopjs/"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/garris/BackstopJS/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Run globally or locally as a standalone package app"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/garris/BackstopJS
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/garris/BackstopJS/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: firstRelease
+    value: "2014"
+    url: https://api.github.com/repos/garris/BackstopJS/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 6
+    url: https://registry.npmjs.org/backstopjs/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2024-09-07
+    url: https://registry.npmjs.org/backstopjs
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 7190
+    url: https://api.github.com/repos/garris/BackstopJS
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 157
+    url: https://api.github.com/repos/garris/BackstopJS/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: backstopjs
+    url: https://registry.npmjs.org/backstopjs/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 111010
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/backstopjs
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 178
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/backstopjs
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 2576
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/backstopjs
+    checkedAt: 2026-10-28
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, buildCommand, outputDir, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: []
+notes: >
+  The README's News section says "BackstopJS needs a new maintainer/owner." and asks interested people to get in touch; a call for a new maintainer is no end signal, so the status is accepted. The repository still takes commits (last push 2026-10-10) and the last npm release is 6.3.25 from 2024-09-07. The CSV homepage backstopjs.org answers over https and redirects to garris.github.io/BackstopJS/, which the homepage fact records. The GitHub releases list stops at v3.8.8 (2019-01-21) among its stable entries, so currentMajor is taken from the npm latest tag 6.3.25, a registry major higher than the GitHub release; v6.3.25 is not a git tag, and the manifest at master carries version 6.3.25 and the engines field. The contributors count is the last page of the contributors endpoint. The Docker Hub image backstopjs/backstopjs reports 2,290,795 pulls in its listing; it is not recorded as a figure. The npm weekly figure is the sum of the seven days 2026-09-28 to 2026-10-04. The README describes an in-browser report UI with approve actions; it is a test report, not an admin interface, so adminUi stays unknown. Engines: Puppeteer and Playwright are the browser engines the README names; no basedOn is recorded because no parent is stated. The README describes the workflow (backstop init, test, approve), scenarios captured at the viewport sizes set in the config, the HTML report with approval of changed screenshots, the scenario and config files kept in backstop_data by default, and the Docker rendering that keeps text rendering the same across machines.

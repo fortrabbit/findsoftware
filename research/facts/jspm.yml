@@ -1,0 +1,118 @@
+id: jspm
+name: JSPM
+status: accepted
+checkedAt: 2026-10-28
+description: Command-line package manager and development server that generates and maintains browser import maps for ES module projects.
+facts:
+  - field: homepage
+    value: https://jspm.org
+    url: https://jspm.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Standards based import map package management"
+  - field: repository
+    value: https://github.com/jspm/jspm
+    url: https://api.github.com/repos/jspm/jspm
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://jspm.org/docs/cli/
+    url: https://jspm.org/docs/cli/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "jspm build"
+  - field: maintainer
+    value: JSPM
+    url: https://api.github.com/users/jspm
+    checkedAt: 2026-10-28
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/jspm
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/jspm/jspm
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [build-tool]
+    url: https://jspm.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Standards based import map package management"
+  - field: runtime
+    value: [node]
+    url: https://jspm.org/getting-started
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Ensure you have Node.js installed."
+  - field: installMethod
+    value: npm install -g jspm
+    url: https://jspm.org/getting-started
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm install -g jspm"
+  - field: runsAs
+    value: [local]
+    url: https://jspm.org/getting-started
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This will launch the local server on http://localhost:5776"
+  - field: runsAs
+    value: [static]
+    url: https://jspm.org/getting-started
+    checkedAt: 2026-10-28
+    via: page
+    quote: "upload the generated HTML file (e.g., index.html)"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/jspm/jspm
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/jspm/jspm/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: firstRelease
+    value: "2013"
+    url: https://registry.npmjs.org/jspm
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/jspm/jspm/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-05
+    url: https://api.github.com/repos/jspm/jspm/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 3867
+    url: https://api.github.com/repos/jspm/jspm
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 80
+    url: https://api.github.com/repos/jspm/jspm/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: jspm
+    url: https://registry.npmjs.org/jspm/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: "16705 (2026-09-28 to 2026-10-04)"
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/jspm
+    checkedAt: 2026-10-28
+    via: api
+notFound: [hqCountry, basedOn, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, runtimeMin, endoflifeId, renderingModes, dependentPackages, dependentRepos, lastCommitDate, latestPrereleaseDate, packagistName, pypiName, usageShare, reportedInstalls]
+unreadable: []
+notes: >
+  The repository is a monorepo (cli, generator, import-map); the install docs name the jspm npm package, so its tags (4.x, the highest 4.7.0 on 2026-10-05) and its weekly figure are recorded, and @jspm/generator tags (2.x) are not. The npm package jspm was first published 2013-04-21 (0.0.1), a month after the repository was created 2013-03-22; firstRelease follows the registry. The FAQ says the Foundation funds the jspm.io CDN; it does not name the Foundation as the owner of the CLI, so the maintainer is the GitHub organization that owns the repository, JSPM (no LICENSE copyright line or package.json author names anyone). The FAQ words the Foundation as "a member-run Canadian not-for-profit corporation" that funds the CDN; it is no maintainer or hqCountry statement for the software. The jspm.io CDN is a hosted service next to the open source tools ("jspm.io is the JSPM CDN provider service"); it is noted here with no prices and not recorded as a field. The deployment section of the getting-started page says the dist files go to a web server, and the CLI page describes jspm build as a RollupJS build into dist. The "Deprecating jspm.dev" blog post concerns a domain, not the software, so it is no end signal. The LICENSE file has no copyright line. The npm figure is the sum of 2026-09-28 to 2026-10-04 (16705). The getting-started page lists the providers jspm.io, nodemodules, esm.sh, unpkg, skypack and jsdelivr, and says jspm.io is still recommended for compatibility. The FAQ calls jspm.io "designed as a highly available production modules CDN" and links a status page. The CLI page says the tool operates on importmap.js, which it creates when it does not exist, and the getting-started page names jspm.io as the default provider; the CLI page also describes install, serve and build.

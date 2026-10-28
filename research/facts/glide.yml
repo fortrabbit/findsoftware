@@ -1,0 +1,131 @@
+id: glide
+name: Glide
+status: accepted
+checkedAt: 2026-10-28
+description: PHP library that resizes, crops and applies effects to images on demand through an HTTP API.
+facts:
+  - field: homepage
+    value: https://glide.thephpleague.com/
+    url: https://glide.thephpleague.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Glide is a wonderfully easy on-demand image manipulation library written in PHP."
+  - field: repository
+    value: https://github.com/thephpleague/glide
+    url: https://api.github.com/repos/thephpleague/glide
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://glide.thephpleague.com/
+    url: https://github.com/thephpleague/glide/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Full documentation can be found at"
+  - field: license
+    value: MIT
+    url: https://github.com/thephpleague/glide/blob/4.2.0/composer.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"license": "MIT"'
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/thephpleague/glide/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: maintainer
+    value: Jonathan Reinink
+    url: https://github.com/thephpleague/glide/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2015 Jonathan Reinink"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/thephpleague
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/thephpleague/glide
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [image-processing, image-server]
+    url: https://github.com/thephpleague/glide/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Glide is a wonderfully easy on-demand image manipulation library written in PHP."
+  - field: runtime
+    value: [php]
+    url: https://github.com/thephpleague/glide/blob/4.2.0/composer.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"php": "^8.3"'
+  - field: runtimeMin
+    value: "8.3"
+    url: https://github.com/thephpleague/glide/blob/4.2.0/composer.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"php": "^8.3"'
+  - field: installMethod
+    value: "composer require league/glide"
+    url: https://glide.thephpleague.com/4.0/installation/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "composer require league/glide"
+  - field: installMethod
+    value: "zip download of a GitHub release"
+    url: https://glide.thephpleague.com/4.0/installation/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This project is also available for download as a .zip file on GitHub."
+  - field: firstRelease
+    value: "2015"
+    url: https://api.github.com/repos/thephpleague/glide/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/thephpleague/glide/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-10
+    url: https://api.github.com/repos/thephpleague/glide/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistName
+    value: league/glide
+    url: https://repo.packagist.org/p2/league/glide.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistDownloads
+    value: 56591903
+    url: https://packagist.org/packages/league/glide.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 106
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/league%2Fglide
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 6236
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/league%2Fglide
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 2629
+    url: https://api.github.com/repos/thephpleague/glide
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 53
+    url: https://api.github.com/repos/thephpleague/glide/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [pricingPage, runsAs, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, npmWeeklyDownloads, endoflifeId, latestPrereleaseDate, supportedVersions, hostedOffering]
+unreadable: []
+notes: >
+  The homepage is https and answers 200 over both http and https. No page states a process model, so runsAs is left out; the simple-example routes show a request passed to the server, which is no statement of one. The maintainer is the copyright line of LICENSE; the docs footer says "The League of Extraordinary Packages" and the homepage says "Glide was created by Jonathan Reinink", so "The League of Extraordinary Packages" is noted here and not recorded. The composer.json names two authors (Jonathan Reinink and Titouan Galopin); only the LICENSE copyright is recorded as maintainer. Installed image drivers are GD (default), Imagick and libvips, named on the image driver page, and the framework adapters (Laravel, Slim, Symfony, Zend, CakePHP) are listed on the installation page; neither is a field. Intervention Image and Flysystem are dependencies named in the README, not basedOn statements. Packagist's monthly downloads at the read date were 1008629; the recorded figure is the total. ecosyste.ms counts were read from the packagist.org registry entry for league/glide. Contributors counted across all pages (per_page=1, last page 53).
+  The simple example page says an image link carries its manipulation parameters in the query string (w, h, fit), that the server reads the source and writes a cache, and that for simplicity it omits HTTP signatures, which matter in production. The source-and-cache page says the source and cache can be local paths or Flysystem filesystems, and the README says manipulated images are cached automatically. The installation page lists framework adapters for CakePHP, Laravel, Slim, Symfony and Zend.

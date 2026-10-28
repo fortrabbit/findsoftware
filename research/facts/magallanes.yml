@@ -1,0 +1,125 @@
+id: magallanes
+name: Magallanes
+status: accepted
+checkedAt: 2026-10-28
+description: "Deployment tool written in PHP that deploys PHP applications to SSH hosts and runs tasks before and after each deployment."
+facts:
+  - field: homepage
+    value: "https://www.magephp.com/"
+    url: "https://www.magephp.com/"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Magallanes is a deployment tool made with PHP and for PHP applications"
+  - field: repository
+    value: "https://github.com/andres-montanez/Magallanes"
+    url: "https://api.github.com/repos/andres-montanez/Magallanes"
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: "https://www.magephp.com/"
+    url: "https://www.magephp.com/"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Magallanes v5 - Documentation"
+  - field: x
+    value: "https://www.twitter.com/magephp"
+    url: "https://www.magephp.com/"
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: "Andrés Montañez"
+    url: "https://raw.githubusercontent.com/andres-montanez/Magallanes/master/LICENSE"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2011 - 2022 Andrés Montañez"
+  - field: repoOwnerType
+    value: user
+    url: "https://api.github.com/users/andres-montanez"
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: PHP
+    url: "https://api.github.com/repos/andres-montanez/Magallanes"
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [dev-tool]
+    url: "https://www.magephp.com/"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Magallanes is a deployment tool made with PHP and for PHP applications"
+  - field: runtime
+    value: [php]
+    url: "https://raw.githubusercontent.com/andres-montanez/Magallanes/5.0.0/composer.json"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "\"php\": \"^8.0\""
+  - field: runtimeMin
+    value: "8.0"
+    url: "https://raw.githubusercontent.com/andres-montanez/Magallanes/5.0.0/composer.json"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "\"php\": \"^8.0\""
+  - field: installMethod
+    value: "composer require-dev, then vendor/bin/mage"
+    url: "https://www.magephp.com/"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "composer require andres-montanez/magallanes:^5.0"
+  - field: runsAs
+    value: [local]
+    url: "https://www.magephp.com/"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Just like typing bin/mage deploy production"
+  - field: license
+    value: MIT
+    url: "https://raw.githubusercontent.com/andres-montanez/Magallanes/5.0.0/composer.json"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "\"license\": \"MIT\""
+  - field: licenseModel
+    value: open-source
+    url: "https://raw.githubusercontent.com/andres-montanez/Magallanes/master/LICENSE"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any"
+  - field: firstRelease
+    value: "2013"
+    url: "https://api.github.com/repos/andres-montanez/Magallanes/releases"
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 5
+    url: "https://api.github.com/repos/andres-montanez/Magallanes/releases"
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2022-04-15
+    url: "https://api.github.com/repos/andres-montanez/Magallanes/releases"
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 687
+    url: "https://api.github.com/repos/andres-montanez/Magallanes"
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 13
+    url: "https://api.github.com/repos/andres-montanez/Magallanes/contributors"
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistName
+    value: andres-montanez/magallanes
+    url: "https://repo.packagist.org/p2/andres-montanez/magallanes.json"
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistDownloads
+    value: 1171064
+    url: "https://packagist.org/packages/andres-montanez/magallanes.json"
+    checkedAt: 2026-10-28
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, wikidata, endoflifeId, npmName, npmWeeklyDownloads, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  Stub candidate under the four-year rule: the latest stable release is 5.0.0 (2022-04-15), more than four years before the check, so the import moves the record to stub on its own; status stays accepted here as the skill says. The repository is not archived and was pushed 2022-09-05; Packagist reports no abandoned flag. The homepage is served at www.magephp.com after a redirect from magephp.com. The docs are on the homepage itself: Overview, Installation, Configuration, SSH, Tar, Rsync, Workflow, Built In Tasks and Cookbook sections. The README calls it a deployment tool for PHP applications and points to the homepage for documentation. The deploy strategies are Tar and Rsync over SSH: the homepage says the strategies are inferred from configuration (Releases enabled or not), and the hosts are reached by passwordless SSH keys. The homepage says "Just like typing bin/mage deploy production" and the run is from a terminal, which is the local statement. The Packagist first version is 1.0.0; the GitHub oldest release v1.0.0 is dated 2013-12-18, which gives firstRelease. The maintainer is named in the LICENSE and composer.json authors; The GitHub location of the owner is Montevideo, Uruguay, and the company field names a company; neither is a legal imprint, so hqCountry is not recorded. The homepage x link is a nav href with no visible text, so no quote is recorded. The homepage still names version 3 and 4 as maintained or previous; no successor is stated, so successorOf is not recorded. The Packagist monthly figure is 8240; only the total is recorded. The homepage says "All configuration is handled by one single YAML file in the root of the project: .mage.yml", lists the built-in tasks as Deploy, Git, Composer, Symfony, File System, Execute and Sleep, and has Custom Tasks and Cookbook sections. The homepage says that enabling releases gives rollback, with the number of releases kept set per environment. Its warning says that a global Composer install cannot use custom tasks, because the app autoloader is not used.

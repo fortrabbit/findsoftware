@@ -1,0 +1,115 @@
+id: laradock
+name: Laradock
+status: accepted
+checkedAt: 2026-10-28
+description: Docker Compose setup and CLI that starts a pre-configured local stack of PHP, web server and service containers for PHP projects.
+facts:
+  - field: homepage
+    value: https://laradock.io
+    url: https://laradock.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A full PHP development environment for Docker"
+  - field: repository
+    value: https://github.com/laradock/laradock
+    url: https://api.github.com/repos/laradock/laradock
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://laradock.io/docs/getting-started
+    url: https://laradock.io/docs/getting-started
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This guide gets Laradock running for your project"
+  - field: maintainer
+    value: Mahmoud Zalt
+    url: https://raw.githubusercontent.com/laradock/laradock/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2015-2026 Mahmoud Zalt"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/laradock/laradock/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2015-2026 Mahmoud Zalt"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/laradock
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [local-dev-env]
+    url: https://raw.githubusercontent.com/laradock/laradock/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Laradock is a full PHP development environment for Docker"
+  - field: language
+    value: Dockerfile
+    url: https://api.github.com/repos/laradock/laradock
+    checkedAt: 2026-10-28
+    via: api
+  - field: runsAs
+    value: [local]
+    url: https://raw.githubusercontent.com/laradock/laradock/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "so nothing gets installed on your own machine"
+  - field: installMethod
+    value: git clone, then ./laradock start
+    url: https://raw.githubusercontent.com/laradock/laradock/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Clone Laradock inside your PHP project"
+  - field: installMethod
+    value: docker compose directly, without the CLI
+    url: https://raw.githubusercontent.com/laradock/laradock/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Skip the CLI and run"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/laradock/laradock/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/laradock/laradock/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "free and open-source under the MIT license"
+  - field: sourcePublic
+    value: true
+    url: https://github.com/laradock/laradock
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2016"
+    url: https://api.github.com/repos/laradock/laradock/releases?per_page=100
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 20
+    url: https://api.github.com/repos/laradock/laradock/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-15
+    url: https://api.github.com/repos/laradock/laradock/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 12678
+    url: https://api.github.com/repos/laradock/laradock
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 378
+    url: https://api.github.com/repos/laradock/laradock/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [reportedInstalls, basedOn, parent, forkOf, successorOf, alternativeTo, hostedOffering, paidEdition, pricingPage, renderingModes, runtime, runtimeMin, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, usageShare, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, docker, endoflifeId, npmName, packagistName, npmWeeklyDownloads, dependentPackages, dependentRepos, hqCountry]
+unreadable: []
+notes: >
+  Requirements from the getting-started page and the README: Docker with Docker Compose v2.20 or newer; the homepage shows Linux, macOS and Windows ("3 Platforms Linux · macOS · Windows"). The ./laradock ship command builds one image that the README says can run on Kubernetes, Google Cloud Run, AWS ECS, Kamal or a server; that is the deployed application, so no always-on runsAs is recorded for Laradock itself. The homepage's "5M+ Downloads From Docker Hub" is not recorded as reportedInstalls, since Docker Hub counts pulls, not installs. The README's service list (MySQL, PostgreSQL, MariaDB, MongoDB, Redis and others) describes service containers, not the software's own data store, so databases is not recorded. GitHub reports the language as Dockerfile, a value outside the import's language vocabulary, so the import will leave it out; the repository holds Dockerfiles and a shell CLI. firstRelease is 2016 from the oldest stable tag v0.2.0 (2016-02-17); the repository was created in 2015 and the README's "since 2015" is not a release date. The current major is 20 from tag v20.4 (2026-07-15), the highest stable release. The maintainer's name comes from the LICENSE copyright line; the README's maintainer table lists about twenty people, and the project's own site names no company. No country is stated.

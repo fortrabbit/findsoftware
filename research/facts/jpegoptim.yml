@@ -1,0 +1,104 @@
+id: jpegoptim
+name: jpegoptim
+status: accepted
+checkedAt: 2026-10-28
+description: Command-line utility that optimizes and compresses JPEG files with lossless Huffman table optimization and optional lossy quality limits.
+facts:
+  - field: homepage
+    value: https://www.kokkonen.net/tjko/projects.html
+    url: https://www.kokkonen.net/tjko/projects.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "jpegoptim - utility to optimize jpeg files"
+  - field: repository
+    value: https://github.com/tjko/jpegoptim
+    url: https://api.github.com/repos/tjko/jpegoptim
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/tjko/jpegoptim/blob/main/jpegoptim.1
+    url: https://raw.githubusercontent.com/tjko/jpegoptim/main/jpegoptim.1
+    checkedAt: 2026-10-28
+    via: page
+    quote: "utility to optimize/compress JPEG/JFIF files"
+  - field: maintainer
+    value: Timo Kokkonen
+    url: https://raw.githubusercontent.com/tjko/jpegoptim/main/COPYRIGHT
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (C) 1996-2026  Timo Kokkonen"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/tjko
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: C
+    url: https://api.github.com/repos/tjko/jpegoptim
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [build-tool, media]
+    url: https://raw.githubusercontent.com/tjko/jpegoptim/main/jpegoptim.1
+    checkedAt: 2026-10-28
+    via: page
+    quote: "is used to optimize/compress jpeg files"
+  - field: runtime
+    value: [binary]
+    url: https://github.com/tjko/jpegoptim/blob/main/README
+    checkedAt: 2026-10-28
+    via: page
+    quote: "then compile the program"
+  - field: installMethod
+    value: source build with ./configure, make and make install
+    url: https://github.com/tjko/jpegoptim/blob/main/README
+    checkedAt: 2026-10-28
+    via: page
+    quote: "./configure"
+  - field: runsAs
+    value: [local]
+    url: https://raw.githubusercontent.com/tjko/jpegoptim/main/jpegoptim.1
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Any (other) input files specified on command-line are ignored."
+  - field: license
+    value: GPL-3.0-or-later
+    url: https://raw.githubusercontent.com/tjko/jpegoptim/main/COPYRIGHT
+    checkedAt: 2026-10-28
+    via: page
+    quote: "SPDX-License-Identifier: GPL-3.0-or-later"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/tjko/jpegoptim/main/COPYRIGHT
+    checkedAt: 2026-10-28
+    via: page
+    quote: "JPEGoptim is free software"
+  - field: firstRelease
+    value: "2022"
+    url: https://api.github.com/repos/tjko/jpegoptim/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/tjko/jpegoptim/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2025-09-15
+    url: https://api.github.com/repos/tjko/jpegoptim/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1827
+    url: https://api.github.com/repos/tjko/jpegoptim
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 22
+    url: https://api.github.com/repos/tjko/jpegoptim/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, runtimeMin, endoflifeId, packagistName, npmName, rubygemsName, pypiName, reportedInstalls, dependentPackages, dependentRepos, lastCommitDate, latestPrereleaseDate, hqCountry, maintainerType, renderingModes]
+unreadable: []
+notes: >
+  The homepage was http://www.iki.fi/tjko/projects.html in the candidates row; that address redirects to https://www.kokkonen.net/tjko/projects.html, which answers 200 over https, so the https address is recorded. The page is the maintainer's personal project list and the only page naming the project's own source archives; the project has no site of its own, and a reviewer may decide that this page is not a project homepage. The repository's main branch README (named README, no extension) says "Jpegoptim v1.5.7beta"; that beta has no GitHub release or tag, so it is no latestPrereleaseDate. The GitHub releases start at v1.4.7 (2022-04-13); the README history lists v1.0 as the first public release without a date, so firstRelease is the year of the oldest GitHub release and may be earlier. The COPYRIGHT file states "SPDX-License-Identifier: GPL-3.0-or-later" while the GitHub license and the LICENSE file are GPL version 3; one license in two wordings, recorded once in the COPYRIGHT wording. The man page is the usage source: it describes files given on the command line, so runsAs is local. Homebrew formula analytics (formulae.brew.sh, read 2026-10-28) show 4953 installs in 365 days for the jpegoptim formula, which is not a registry in the adoption list and is kept here only. The README requires the Independent JPEG Group's libjpeg version 6b or later (libjpeg-turbo or mozjpeg also named); that requirement is recorded here, not as a field. The maintainer's legal name is the copyright holder named in the COPYRIGHT file; no company or country is stated. The man page says that by default jpegoptim modifies the input files when they are optimized, and that the -d option saves the optimized files to another directory.

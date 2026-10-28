@@ -1,0 +1,132 @@
+id: flyenv
+name: FlyEnv
+status: accepted
+checkedAt: 2026-10-28
+description: Native local development environment for Windows, macOS and Linux that runs runtimes, databases and web servers on the host, with local sites, HTTPS and an MCP server for AI coding agents.
+facts:
+  - field: homepage
+    value: https://flyenv.com/
+    url: https://flyenv.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Open Source / AI-Ready / macOS, Windows, Linux"
+  - field: repository
+    value: https://github.com/xpf0000/FlyEnv
+    url: https://api.github.com/repos/xpf0000/FlyEnv
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2020
+    url: https://api.github.com/repos/xpf0000/FlyEnv/git/refs/tags/v1.0.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Pengfei Xu
+    url: https://github.com/xpf0000/FlyEnv/blob/v4.20.2/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"name": "Pengfei Xu"'
+  - field: maintainerType
+    value: individual
+    url: https://api.github.com/users/xpf0000
+    checkedAt: 2026-10-28
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/xpf0000
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/xpf0000/FlyEnv
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [local-dev-env]
+    url: https://github.com/xpf0000/FlyEnv/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "FlyEnv is a native local development environment for Windows, macOS, and Linux."
+  - field: installMethod
+    value: download installer or package for Windows, macOS or Linux
+    url: https://flyenv.com/download
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Choose the build for your system. FlyEnv is available for Windows, macOS and Linux."
+  - field: installMethod
+    value: brew install flyenv
+    url: https://github.com/xpf0000/FlyEnv/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "brew install flyenv"
+  - field: runsAs
+    value: [local]
+    url: https://flyenv.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Run your local stack directly on the host OS, without a container layer."
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/xpf0000/FlyEnv/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "BSD 3-Clause License"
+  - field: license
+    value: MIT
+    url: https://github.com/xpf0000/FlyEnv/blob/v4.20.2/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"license": "MIT"'
+  - field: paidEdition
+    value: FlyEnv License, a one-time purchase that unlocks premium features on one device
+    url: https://flyenv.com/license
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A one-time purchase unlocks premium features on one device."
+  - field: pricingPage
+    value: https://flyenv.com/license
+    url: https://flyenv.com/license
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A one-time purchase unlocks premium features on one device."
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/xpf0000/FlyEnv/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-24
+    url: https://api.github.com/repos/xpf0000/FlyEnv/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 3317
+    url: https://api.github.com/repos/xpf0000/FlyEnv
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 77
+    url: https://api.github.com/repos/xpf0000/FlyEnv/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://flyenv.com/guide/what-is-flyenv
+    url: https://flyenv.com/
+    checkedAt: 2026-10-28
+    via: page
+  - field: alternativeTo
+    value: [laragon, mamp, laravel-herd, xampp, servbay]
+    url: https://flyenv.com/compare/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Compare FlyEnv with XAMPP, Laragon, MAMP, Herd, ServBay and Docker"
+  - field: discord
+    value: https://discord.gg/u5SuMGxjPE
+    url: https://github.com/xpf0000/FlyEnv/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Discord: https://discord.gg/u5SuMGxjPE"
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, renderingModes, i18n, multisite, livePreview, userRoles, sso, importsFrom, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, npmWeeklyDownloads, endoflifeId, supportedVersions, outputDir, buildCommand, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  The package manifest names Node 18 for building the app and Electron as its shell; no runtime is recorded, since the app installs as a desktop application. The site footer reads "Copyright © 2019-present Alex Xu" while package.json names Pengfei Xu. The compare page also covers Docker, which has no matching record here. Operating systems: Windows (installer and portable .exe), macOS (Apple Silicon and Intel .dmg, and brew), Linux (.deb and .rpm, x64 and arm64), per the download page and the README. The download page says Windows builds are code-signed through SignPath Foundation; no field holds that. Two license statements disagree: the README and the LICENSE file say BSD 3-Clause, and package.json at v4.20.2 says MIT. Both are recorded as entries, the latest release is the source for both, and a reviewer must pick the one the record shows. The copyright line in LICENSE reads "Copyright (c) 2023, 徐鹏飞 (Pengfei Xu)"; the record uses the package.json author name. The first GitHub release is v4.0.0 (2024-07-29), and older tags v1.0.0 (2020-04-19 commit) to v3.x exist without releases; firstRelease uses the v1.0.0 tag commit date, so a reviewer may prefer 2024 from the release list. The product is a desktop application: it installs and runs runtimes and services on the operating system. The desktop app's dependency list includes electron ^39.8.10 in devDependencies, recorded only as a fact in this note, and no runtime value for it. The paid license sells premium features; the price is not recorded. The Chinese-language README and the README table comparing it with Laragon and Laravel Herd are not recorded as alternativeTo. The GitHub repository has a discussions board that is not a field. The download and license pages were read at the URLs above, and the release versions match v4.20.2 on GitHub.

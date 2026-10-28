@@ -1,0 +1,109 @@
+id: devilbox
+name: Devilbox
+status: accepted
+checkedAt: 2026-10-28
+description: Docker-based local development environment for PHP projects, with web servers, PHP versions, databases and development tools as containers.
+facts:
+  - field: repository
+    value: https://github.com/cytopia/devilbox
+    url: https://api.github.com/repos/cytopia/devilbox
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://devilbox.readthedocs.io
+    url: https://github.com/cytopia/devilbox/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "skimmed over the **[documentation](https://devilbox.readthedocs.io)**"
+  - field: categories
+    value: [local-dev-env]
+    url: https://github.com/cytopia/devilbox/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "highly customisable zero-conf PHP Docker stack"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/cytopia/devilbox
+    checkedAt: 2026-10-28
+    via: api
+  - field: runsAs
+    value: [local]
+    url: https://github.com/cytopia/devilbox/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "a swiss army knife for local development"
+  - field: installMethod
+    value: git clone, then docker-compose up
+    url: https://github.com/cytopia/devilbox/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "docker-compose up httpd php mysql"
+  - field: maintainer
+    value: cytopia
+    url: https://raw.githubusercontent.com/cytopia/devilbox/master/LICENSE.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2016 cytopia"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/cytopia
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2016"
+    url: https://api.github.com/repos/cytopia/devilbox/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/cytopia/devilbox
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/cytopia/devilbox/master/LICENSE.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/cytopia/devilbox/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2022-12-18
+    url: https://github.com/cytopia/devilbox/releases/tag/v2.4.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestPrereleaseDate
+    value: 2023-01-03
+    url: https://github.com/cytopia/devilbox/releases/tag/v3.0.0-beta-0.3
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 4469
+    url: https://api.github.com/repos/cytopia/devilbox
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 66
+    url: https://api.github.com/repos/cytopia/devilbox/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: discord
+    value: https://discord.gg/2wP3V6kBj4
+    url: https://github.com/cytopia/devilbox/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "[Discord chat](https://discord.gg/2wP3V6kBj4)"
+  - field: forum
+    value: https://devilbox.discourse.group
+    url: https://github.com/cytopia/devilbox/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "[forums](https://devilbox.discourse.group)"
+notFound: [homepage, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runtime, runtimeMin, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, packagistName, pypiName]
+unreadable:
+  - https://devilbox.readthedocs.io/en/latest/readings/purpose.html (404, page not found)
+notes: >
+  The homepage in the repository is http://devilbox.org. It answers 200 over plain http and does not answer over https, so no homepage is recorded (AGENTS.md: a site that answers only over plain http is not linked). The docs are the Read the Docs site at devilbox.readthedocs.io; its install page was read at /en/latest/getting-started/install-the-devilbox.html. The README states the requirements as Docker Engine 17.06.0+ and Docker Compose 1.16.0+, and it supports Linux, macOS, Windows and WSL2. Docker is the runtime of the stack, not a runtime of the record, so runtime is unknown. The README lists the containers the stack starts (Apache, Nginx, PHP, MySQL, MariaDB, PerconaDB, PostgreSQL, MongoDB, Redis, Memcached and others). They are development services the developer starts, so databases stays unknown for the record. The README does not name a parent project; it lists supported frameworks (CakePHP, Laravel, WordPress and others) as examples. Highest stable GitHub release is v2.4.0 (2022-12-18), and v3.0.0-beta-0.3 (2023-01-03) is the newest pre-release. The oldest release is 0.8-pre (2016-11-03), which the import reads as the 2016 start. The default branch was last pushed 2024-04-19; no archive flag, deprecation or end statement was found in the README or the docs read. The newest stable release is more than three years old: the import moves the record to stub if no release or pre-release appears by 2026-12-18. The README names the maintainer only as cytopia, from the copyright line; no legal name or company is stated. The README's sponsorship links (GitHub Sponsors, Patreon) are not recorded.

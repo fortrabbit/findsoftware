@@ -1,0 +1,109 @@
+id: chassis
+name: Chassis
+status: accepted
+checkedAt: 2026-10-28
+description: Vagrant-based local virtual server, installed from a Git repository, that runs a WordPress site with PHP, nginx and MySQL on the developer's machine.
+facts:
+  - field: homepage
+    value: https://chassis.io/
+    url: https://chassis.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Chassis is an open source virtual server for your WordPress site, built using"
+  - field: repository
+    value: https://github.com/Chassis/Chassis
+    url: https://api.github.com/repos/Chassis/Chassis
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://docs.chassis.io/en/latest/
+    url: https://docs.chassis.io/en/latest/quickstart/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Chassis is a virtual server for WordPress, designed for simplicity and speed."
+  - field: maintainer
+    value: Ryan McCue & Bronson Quick
+    url: https://docs.chassis.io/en/latest/quickstart/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Ryan McCue & Bronson Quick"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/Chassis/Chassis
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [local-dev-env]
+    url: https://github.com/Chassis/Chassis/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Chassis is a virtual server for your WordPress site, built using"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/Chassis/Chassis
+    checkedAt: 2026-10-28
+    via: api
+  - field: multisite
+    value: subdomain and subdirectory
+    url: https://github.com/Chassis/Chassis/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "we support both subdomain and subdirectory multisite out of the box"
+  - field: runsAs
+    value: [local]
+    url: https://docs.chassis.io/en/latest/quickstart/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Browse to http://vagrant.local and you should see your site!"
+  - field: installMethod
+    value: git clone
+    url: https://docs.chassis.io/en/latest/quickstart/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "git clone --recursive https://github.com/Chassis/Chassis"
+  - field: installMethod
+    value: vagrant up
+    url: https://docs.chassis.io/en/latest/quickstart/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Boot up a Virtual Machine"
+  - field: license
+    value: LGPL-3.0
+    url: https://api.github.com/repos/Chassis/Chassis
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://chassis.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Chassis is an open source virtual server for your WordPress site, built using"
+  - field: firstRelease
+    value: "2019"
+    url: https://api.github.com/repos/Chassis/Chassis/releases/tags/2.2
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 5
+    url: https://github.com/Chassis/Chassis/releases/tag/5.4.2
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2024-03-23
+    url: https://github.com/Chassis/Chassis/releases/tag/5.4.2
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 616
+    url: https://api.github.com/repos/Chassis/Chassis
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 36
+    url: https://api.github.com/repos/Chassis/Chassis/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, runtime, runtimeMin, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, livePreview, userRoles, sso, importsFrom, pricingPage, paidEdition, hqCountry, maintainerType, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, packagistName, npmName, endoflifeId, docker, buildCommand, outputDir, lastCommitDate, latestPrereleaseDate, npmWeeklyDownloads, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  The homepage http://chassis.io/ redirects to https://docs.chassis.io/en/latest/, so the https form of the site is recorded; the site is the project's documentation. The docs header reads "Chassis 6.0.0 documentation", but no tag or GitHub release 6.x exists (the highest stable release is 5.4.2, 2024-03-23) and the repository has no 6.x tag; currentMajor follows the releases, so a reviewer should decide whether the docs version is the current major. The GitHub releases/latest endpoint returns 5.4.1 (2023-12-24), not 5.4.2; the highest stable release by version is 5.4.2. The first GitHub release is 2.2 (2019-12-11); the oldest release is recorded, and the repository was created in 2013 with no earlier release. The README says Chassis is built using Vagrant; Vagrant has no record in the dataset, so it stays in notes, and the README does not name WordPress as a parent (Chassis is a tool for a WordPress site). The quickstart requires VirtualBox and Vagrant on macOS, Windows and Linux, and the box runs PHP 8.1, nginx and MySQL; the docs do not state the box as a runtime of the tool, so runtime and databases are not recorded. The docs footer names Ryan McCue and Bronson Quick with a 2021 copyright year; the LICENSE file is the unmodified LGPL-3.0 text with no project copyright line. The repository was last pushed 2026-10-06 and is not archived; the last release is 2024-03-23 (about 2.6 years before the check), which is within the four-year window. The README FAQ compares Chassis with VVV, which has no fact file yet, so no alternativeTo is recorded.

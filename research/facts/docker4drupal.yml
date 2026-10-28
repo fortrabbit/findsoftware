@@ -1,0 +1,131 @@
+id: docker4drupal
+name: Docker4Drupal
+status: accepted
+checkedAt: 2026-10-28
+description: Docker Compose stack of container images for running a local Drupal development environment on Linux, macOS and Windows.
+facts:
+  - field: homepage
+    value: https://wodby.com/docker4drupal
+    url: https://wodby.com/docker4drupal
+    checkedAt: 2026-10-28
+    via: page
+  - field: repository
+    value: https://github.com/wodby/docker4drupal
+    url: https://api.github.com/repos/wodby/docker4drupal
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://wodby.com/docs/1.0/stacks/drupal/local
+    url: https://github.com/wodby/docker4drupal/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Full documentation is available at https://wodby.com/docs/1.0/stacks/drupal/local."
+  - field: maintainer
+    value: Wodby Inc.
+    url: https://wodby.com/terms
+    checkedAt: 2026-10-28
+    via: page
+    quote: "a binding agreement between you and Wodby Inc."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/wodby
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [local-dev-env]
+    url: https://github.com/wodby/docker4drupal/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Docker4Drupal is a project designed to help you spin up local environment with Docker Compose."
+  - field: language
+    value: Shell
+    url: https://api.github.com/repos/wodby/docker4drupal
+    checkedAt: 2026-10-28
+    via: api
+  - field: runsAs
+    value: [local]
+    url: https://github.com/wodby/docker4drupal/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "to spin up local environment on Linux, Mac OS X and Windows"
+  - field: installMethod
+    value: git clone of the repository at its latest stable tag
+    url: https://wodby.com/docs/1.0/stacks/drupal/local
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Clone docker4drupal repository and switch to the latest stable tag"
+  - field: installMethod
+    value: download of docker4drupal.tar.gz from the latest release
+    url: https://wodby.com/docs/1.0/stacks/drupal/local
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Download and unpack docker4drupal.tar.gz from the latest stable release"
+  - field: databases
+    value: [mariadb]
+    url: https://github.com/wodby/docker4drupal/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "[MariaDB] | 12.3, 11.8, 11.4, 10.11, 10.6"
+  - field: databases
+    value: [postgres]
+    url: https://github.com/wodby/docker4drupal/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "[PostgreSQL] | 18, 17, 16, 15, 14"
+  - field: license
+    value: MIT
+    url: https://github.com/wodby/docker4drupal/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This project is licensed under the MIT open source license."
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/wodby/docker4drupal/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This project is licensed under the MIT open source license."
+  - field: hostedOffering
+    value: Drupal stack on Wodby
+    url: https://github.com/wodby/docker4drupal/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "If you want to deploy a consistent stack with orchestrations to your own server, check out Drupal stack on Wodby"
+  - field: firstRelease
+    value: "2016"
+    url: https://api.github.com/repos/wodby/docker4drupal/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 6
+    url: https://api.github.com/repos/wodby/docker4drupal/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-24
+    url: https://api.github.com/repos/wodby/docker4drupal/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1265
+    url: https://api.github.com/repos/wodby/docker4drupal
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 43
+    url: https://api.github.com/repos/wodby/docker4drupal/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: discord
+    value: https://discord.wodby.com/wodbycloud
+    url: https://wodby.com/docker4drupal
+    checkedAt: 2026-10-28
+    via: page
+  - field: x
+    value: https://x.com/wodbycloud
+    url: https://wodby.com/docker4drupal
+    checkedAt: 2026-10-28
+    via: page
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runtime, runtimeMin, renderingModes, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, pypiDownloads, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, facebook, instagram, threads, wikidata, lastCommitDate, latestPrereleaseDate, sourcePublic]
+unreadable: []
+notes: >
+  Docker4Drupal is a set of Docker Compose files and images, not a Drupal module or an application; the record is a local development environment for Drupal sites. The README and the local docs page name Docker as the required runtime: "Install Docker (Linux, Docker for Mac or Docker for Windows (10+ Pro))" and, on Linux, docker compose (docs page, read 2026-10-28). Operating systems per the same page: Linux, macOS and Windows 10 Pro or later, with macOS and Windows sections on file permissions and synchronization. The stack's containers, read from the README table: Nginx or Apache, Drupal CMS or vanilla Drupal, PHP, MariaDB or PostgreSQL, Valkey or Redis, Memcached, Solr, OpenSearch, Varnish (Vinyl), Node.js, Mailpit, Traefik and others; the databases facts cover the two database containers. The first release is the oldest GitHub release in this repository, 1.0.0 dated 2016-07-28 (the repository was created 2016-07-13); the repository holds 135 non-prerelease releases, and the newest is 6.2.15 dated 2026-10-24. The 6.0.4-rc prerelease is not used. The README links the project's Discord and Slack; the Slack link (slack.wodby.com) has no schema field and stays here. The terms name the company as Wodby Inc. and the site footer says Wodby, Inc.; no country of the company is stated on the terms, privacy or about pages (the terms name Delaware law, which is a governing law, not a headquarters), so hqCountry is not recorded. The homepage is the Wodby page for the project, and the README links the docs at wodby.com; the docs are the Wodby documentation. Wodby Cloud is the hosted option, with its prices on its own pages; those are not recorded. A Drupal stack built on Drupal is not a basedOn statement: the README calls it "optimized for Drupal" and does not name Drupal as the software it extends.

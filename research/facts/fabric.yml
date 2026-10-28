@@ -1,0 +1,120 @@
+id: fabric
+name: Fabric
+status: accepted
+checkedAt: 2026-10-28
+description: Python library that runs shell commands on remote hosts over SSH and returns the results as Python objects.
+facts:
+  - field: homepage
+    value: https://www.fabfile.org/
+    url: https://www.fabfile.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Fabric is a high level Python (2.7, 3.4+) library designed to execute shell commands remotely over SSH"
+  - field: docs
+    value: https://docs.fabfile.org
+    url: https://www.fabfile.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Detailed usage and API documentation can be found at our code documentation site, docs.fabfile.org"
+  - field: repository
+    value: https://github.com/fabric/fabric
+    url: https://api.github.com/repos/fabric/fabric
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Jeff Forcier
+    url: https://raw.githubusercontent.com/fabric/fabric/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2020 Jeff Forcier."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/fabric
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/fabric/fabric
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://www.fabfile.org/installing.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "pip install fabric"
+  - field: categories
+    value: [deploy-tool]
+    url: https://api.github.com/repos/fabric/fabric
+    checkedAt: 2026-10-28
+    via: api
+    quote: "Simple, Pythonic remote execution and deployment."
+  - field: installMethod
+    value: pip install fabric
+    url: https://www.fabfile.org/installing.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "pip install fabric"
+  - field: license
+    value: BSD-2-Clause
+    url: https://api.github.com/repos/fabric/fabric
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2008"
+    url: https://pypi.org/pypi/fabric/json
+    checkedAt: 2026-10-28
+    via: api
+    quote: "2008-01-13T21:36:02"
+  - field: currentMajor
+    value: 3
+    url: https://pypi.org/pypi/fabric/json
+    checkedAt: 2026-10-28
+    via: api
+    quote: "3.2.3"
+  - field: latestReleaseDate
+    value: 2026-04-06
+    url: https://pypi.org/pypi/fabric/json
+    checkedAt: 2026-10-28
+    via: api
+    quote: "2026-04-06T00:00:10"
+  - field: githubStargazers
+    value: 15521
+    url: https://api.github.com/repos/fabric/fabric
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 17
+    url: https://api.github.com/repos/fabric/fabric/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiName
+    value: fabric
+    url: https://pypi.org/pypi/fabric/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiDownloads
+    value: "7402988 (last month)"
+    url: https://pypistats.org/api/packages/fabric/recent
+    checkedAt: 2026-10-28
+    via: api
+  - field: x
+    value: https://twitter.com/pyfabric
+    url: https://pypi.org/pypi/fabric/json
+    checkedAt: 2026-10-28
+    via: api
+    quote: "https://twitter.com/pyfabric"
+  - field: dependentPackages
+    value: 163
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/fabric
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 5399
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/fabric
+    checkedAt: 2026-10-28
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, wikidata, npmName, packagistName, docker, selfHostOption]
+unreadable: []
+notes: >
+  Scope call for the reviewer: the CSV row was boundary as a generic SSH task runner and moved to accepted in the 2026-10-19 scope pass; the project describes a library for remote execution and deployment, so criterion 1 rests on its deployment wording. It builds on Invoke and Paramiko ("It builds on top of Invoke ... and Paramiko"), which are dependencies and not records, so no basedOn is recorded; the setup.py install_requires lists invoke, paramiko, decorator and deprecated. The setup.py field is written python_requres (misspelled), so the >=3.6 value is not enforced by the installer and no runtimeMin is recorded; PyPI reports no requires_python. The project's own homepage text still says "Python (2.7, 3.4+)", which is out of date against the 3.2.3 manifest, and the record uses the manifest. The repository has no GitHub releases; PyPI carries the releases, and the repository tags run to 3.2.3. The PyPI 0.0.1 upload (2008-01-13) is the first release. The installing page says a separate fabric2 PyPI entry exists for migrating users and that fabric3 is an unauthorized fork; neither is recorded. The PyPI project URLs, which come from the package's setup.py, list the Twitter account https://twitter.com/pyfabric; it is recorded as x. The pypistats figure is the last-month count of the fabric package and is not a weekly figure.

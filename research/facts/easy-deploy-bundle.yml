@@ -1,0 +1,126 @@
+id: easy-deploy-bundle
+name: EasyDeployBundle
+status: stub
+checkedAt: 2026-10-28
+description: Symfony bundle that deploys a Symfony application over SSH from the developer's machine to one or more servers.
+facts:
+  - field: status
+    value: stub
+    url: https://easycorp.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The admin generator for Symfony applications since 2015"
+  - field: repository
+    value: https://github.com/EasyCorp/easy-deploy-bundle
+    url: https://api.github.com/repos/EasyCorp/easy-deploy-bundle
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/EasyCorp/easy-deploy-bundle/tree/master/doc
+    url: https://github.com/EasyCorp/easy-deploy-bundle/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "* [Installation](doc/installation.md)"
+  - field: maintainer
+    value: Javier Eguiluz
+    url: https://raw.githubusercontent.com/EasyCorp/easy-deploy-bundle/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2017 Javier Eguiluz"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/EasyCorp
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [deploy-tool]
+    url: https://github.com/EasyCorp/easy-deploy-bundle/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "EasyDeployBundle is the easiest way to deploy your Symfony applications."
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/EasyCorp/easy-deploy-bundle
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/EasyCorp/easy-deploy-bundle/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Your local machine: PHP 7.1 or higher and a SSH client."
+  - field: runtimeMin
+    value: php 7.2
+    url: https://github.com/EasyCorp/easy-deploy-bundle/blob/v1.0.6/composer.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"php": ">=7.2.0"'
+  - field: basedOn
+    value: symfony
+    url: https://github.com/EasyCorp/easy-deploy-bundle/blob/master/doc/installation.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "distributed as a bundle that must be installed in each Symfony application"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/EasyCorp/easy-deploy-bundle/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Your local machine: PHP 7.1 or higher and a SSH client."
+  - field: installMethod
+    value: composer require --dev
+    url: https://github.com/EasyCorp/easy-deploy-bundle/blob/master/doc/installation.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "composer require --dev easycorp/easy-deploy-bundle"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/EasyCorp/easy-deploy-bundle/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/EasyCorp/easy-deploy-bundle/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: firstRelease
+    value: "2017"
+    url: https://api.github.com/repos/EasyCorp/easy-deploy-bundle/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/EasyCorp/easy-deploy-bundle/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2020-01-30
+    url: https://api.github.com/repos/EasyCorp/easy-deploy-bundle/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistName
+    value: easycorp/easy-deploy-bundle
+    url: https://packagist.org/packages/easycorp/easy-deploy-bundle.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistDownloads
+    value: 318384
+    url: https://packagist.org/packages/easycorp/easy-deploy-bundle.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 467
+    url: https://api.github.com/repos/EasyCorp/easy-deploy-bundle
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 8
+    url: https://api.github.com/repos/EasyCorp/easy-deploy-bundle/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, hqCountry, parent, forkOf, successorOf, alternativeTo, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, npmName, npmWeeklyDownloads, pypiDownloads, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, youtube, facebook, instagram, threads, newsletter, wikidata, lastCommitDate, latestPrereleaseDate, sourcePublic]
+unreadable: []
+notes: >
+  In doubt: the project's own site no longer shows EasyDeployBundle, so the record stays a stub without a homepage; what would settle it is the vendor's site or a release naming the bundle again, or a statement that the bundle has ended. The CSV homepage https://easycorp.io/EasyDeploy answers 404 (read 2026-10-28), and the homepage https://easycorp.io/ shows only EasyAdmin, the company's admin generator, with no mention of deployment. The repository's own homepage field points to the same 404 URL. The install guide (doc/installation.md, default branch) and README still describe the bundle, so the criterion 3 install steps exist in the repository. The last release is v1.0.6 dated 2020-01-30 and the last commit on the default branch is also dated 2020-01-30; the repository's pushed_at is 2024-01-04, a later push that does not add a release. The import will move a record with no release in four years to stub on its own, so this file records the date and the status is set here by the dead vendor page. The Packagist package easycorp/easy-deploy-bundle reports 318384 total downloads (read 2026-10-28; monthly 1568). The README says the local machine needs "PHP 7.1 or higher" while the v1.0.6 manifest requires php >=7.2.0; runtimeMin follows the manifest. The README lists Symfony 2.7 to 4.x applications, and the manifest's symfony constraints go up to 5.0; neither is an end statement. The license is MIT per the GitHub API and the LICENSE file body; the LICENSE file names Javier Eguiluz, the GitHub organization is EasyCorp, and the easycorp.io footer names EasyCorp as the company. The maintainer is recorded from the LICENSE copyright line. Software built on Symfony: the install guide calls it a bundle to install in each Symfony application, which is the basedOn statement.

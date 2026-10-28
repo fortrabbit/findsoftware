@@ -1,0 +1,123 @@
+id: laravel-valet
+name: Laravel Valet
+status: accepted
+checkedAt: 2026-10-28
+description: Development environment for Laravel sites on macOS that serves each site on a .test domain through Nginx and DnsMasq.
+facts:
+  - field: repository
+    value: https://github.com/laravel/valet
+    url: https://api.github.com/repos/laravel/valet
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://laravel.com/docs/valet
+    url: https://laravel.com/docs/valet
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Laravel Valet is a development environment for macOS minimalists."
+  - field: categories
+    value: [local-dev-env]
+    url: https://laravel.com/docs/valet
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Laravel Valet is a development environment for macOS minimalists."
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/laravel/valet
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://laravel.com/docs/valet
+    checkedAt: 2026-10-28
+    via: page
+    quote: "After installing PHP, you are ready to install the Composer package manager"
+  - field: runtimeMin
+    value: "php 7.1"
+    url: https://github.com/laravel/valet/blob/v4.12.0/composer.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: "^7.1|^8.0"
+  - field: runsAs
+    value: [local]
+    url: https://laravel.com/docs/valet
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Valet will automatically start its required services each time your machine boots."
+  - field: installMethod
+    value: [composer global require]
+    url: https://laravel.com/docs/valet
+    checkedAt: 2026-10-28
+    via: page
+    quote: "composer global require laravel/valet"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/laravel/valet
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/laravel/valet/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Laravel Valet is open-sourced software licensed under the"
+  - field: currentMajor
+    value: 4
+    url: https://github.com/laravel/valet/releases/tag/v4.12.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-03-10
+    url: https://github.com/laravel/valet/releases/tag/v4.12.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://github.com/laravel/valet/releases/tag/v1.1.3
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Taylor Otwell
+    url: https://raw.githubusercontent.com/laravel/valet/main/composer.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Taylor Otwell"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/laravel
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 2606
+    url: https://api.github.com/repos/laravel/valet
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 202
+    url: https://api.github.com/repos/laravel/valet/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistName
+    value: laravel/valet
+    url: https://packagist.org/packages/laravel/valet.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistDownloads
+    value: 926431
+    url: https://packagist.org/packages/laravel/valet.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 13
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/laravel/valet
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 33
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/laravel/valet
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, pricingPage, hqCountry, paidEdition, basedOn, databases, contentStore, renderingModes, endoflifeId, pluginDirectory, discord, x, bluesky, subreddit, forum, newsletter]
+unreadable: []
+notes: >
+  The docs page is the only project page; the repository homepage field points to it, so it is recorded as docs and homepage stays out. The docs say Valet "requires macOS and Homebrew" and that PHP 8.0 or higher is needed for Valet's own scripts; runtimeMin takes the composer.json constraint at v4.12.0 (^7.1|^8.0), so the 8.0 statement is not recorded as the minimum. The docs point to Laravel Herd, which includes Valet, PHP and Composer, for developers who want the same on macOS or Windows; the pointer is no end signal. Valet runs Nginx and DnsMasq on the developer's Mac. The LICENSE copyright names Taylor Otwell and Adam Wathan (angle brackets keep it out of the quote check), and composer.json lists Taylor Otwell first among three authors; no page names a company as owner of the repository. The Packagist total is the figure from packagist.org on 2026-10-28.

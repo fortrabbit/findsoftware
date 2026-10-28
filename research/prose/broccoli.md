@@ -1,0 +1,3 @@
+Broccoli is an asset pipeline that runs on Node and is backend-agnostic. A project describes its build in a `Brocfile.js`, which exports a function that returns a tree: either a directory path or a graph of plugin nodes that transform and combine other trees. The function receives the options the command line passes, including the environment.
+
+The command line is a separate package, broccoli-cli. Its `broccoli build` command writes the output once, and `broccoli serve` runs a development server. The README advises against running the server on a production host and suggests serving the built files from a web server instead. Plugins are published on npm under the broccoli-plugin keyword, and a `Builder` class lets other Node code run a graph directly.

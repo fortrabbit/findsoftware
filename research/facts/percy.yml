@@ -1,0 +1,46 @@
+id: percy
+name: Percy
+status: hosted-service
+checkedAt: 2026-10-28
+description: Hosted visual testing and review service at percy.io, fed by snapshots from a command-line client.
+facts:
+  - field: homepage
+    value: https://percy.io
+    url: https://percy.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "All-in-one visual testing and review platform"
+  - field: docs
+    value: https://docs.percy.io/docs/cli-overview
+    url: https://docs.percy.io/docs/cli-overview
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Use the Percy CLI to approve, unapprove, reject, or delete builds on percy.io directly from the command line."
+  - field: maintainer
+    value: BrowserStack
+    url: https://www.browserstack.com/percy
+    checkedAt: 2026-10-28
+    via: page
+    quote: "© 2026 BrowserStack. All rights reserved."
+  - field: parent
+    value: BrowserStack
+    url: https://www.browserstack.com/company
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Percy joined the family"
+  - field: categories
+    value: [testing]
+    url: https://percy.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "All-in-one visual testing and review platform"
+  - field: pricingPage
+    value: https://www.browserstack.com/pricing?product=percy
+    url: https://www.browserstack.com/pricing?product=percy
+    checkedAt: 2026-10-28
+    via: page
+    quote: "10,000 screenshots/month"
+notFound: [hqCountry, wikidata, basedOn, forkOf, successorOf, alternativeTo, firstRelease, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, selfHostOption, regions, apiLimits, paidEdition, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, x, subreddit, mastodon, bluesky, newsletter]
+unreadable: []
+notes: >
+  Status hosted-service per the CSV row; criterion 2 is waived for hosted services, and the open-source CLI is the client, not the service. The record takes nothing from the client repository github.com/percy/cli, per the rule for SDK and client repositories. That repository's packages/cli/LICENSE is the MIT License with the copyright line "Copyright © Perceptual Inc.", which the record does not use because no page says how that name relates to Percy. The repository has 87 stars; the npm package @percy/cli is at latest 1.32.12 (no deprecation), with 549944 downloads for 2026-09-28 to 2026-10-04 by the build-dev window, where the CSV's 279.8k was stale. The CLI is installed with npm install --save-dev @percy/cli; that install route is not recorded as an installMethod because the service record has none. The maintainer comes from the footer of the product page; the BrowserStack terms page names no legal entity, so no legal form is recorded, and no country is stated, so hqCountry is left out. The terms page names Delaware law, which is not a headquarters statement. The pricing page lists plan screenshot quotas; prices are not recorded, and the free plan's screenshot count differs between the product page and the pricing page, so no freeTier is recorded. The product page says roles and permissions are assigned for projects and tests on the pricing page, but that line is not tied to Percy alone, so userRoles is left out. The data-centers page covers device labs, not Percy's storage, so regions is left out. The percy.io homepage is an application shell; its title is quoted.

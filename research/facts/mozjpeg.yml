@@ -1,0 +1,111 @@
+id: mozjpeg
+name: MozJPEG
+status: accepted
+checkedAt: 2026-10-28
+description: "JPEG encoder that patches libjpeg-turbo to produce smaller JPEG files at the same visual quality, usable as a drop-in libjpeg library."
+facts:
+  - field: repository
+    value: https://github.com/mozilla/mozjpeg
+    url: https://api.github.com/repos/mozilla/mozjpeg
+    checkedAt: 2026-10-28
+    via: api
+    quote: "\"full_name\":\"mozilla/mozjpeg\""
+  - field: maintainer
+    value: Mozilla
+    url: https://github.com/mozilla/mozjpeg/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Mozilla JPEG Encoder Project"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/mozilla
+    checkedAt: 2026-10-28
+    via: api
+    quote: "\"type\":\"Organization\""
+  - field: firstRelease
+    value: "2014"
+    url: https://api.github.com/repos/mozilla/mozjpeg/releases
+    checkedAt: 2026-10-28
+    via: api
+    quote: "\"published_at\":\"2014-03-05T17:01:19Z\""
+  - field: language
+    value: C
+    url: https://api.github.com/repos/mozilla/mozjpeg
+    checkedAt: 2026-10-28
+    via: api
+    quote: "\"language\":\"C\""
+  - field: categories
+    value: [image-processing]
+    url: https://github.com/mozilla/mozjpeg/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MozJPEG is meant to be used as a library in graphics programs and image processing tools"
+  - field: categories
+    value: [asset-optimizer]
+    url: https://github.com/mozilla/mozjpeg/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "to losslessly reduce file size"
+  - field: installMethod
+    value: CMake build from source, the same as libjpeg-turbo
+    url: https://github.com/mozilla/mozjpeg/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MozJPEG is built exactly the same way as libjpeg-turbo"
+  - field: installMethod
+    value: "vcpkg: ./vcpkg install mozjpeg"
+    url: https://github.com/mozilla/mozjpeg/blob/master/BUILDING.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "./vcpkg install mozjpeg"
+  - field: license
+    value: IJG
+    url: https://github.com/mozilla/mozjpeg/blob/v4.1.1/LICENSE.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The IJG (Independent JPEG Group) License"
+  - field: license
+    value: Zlib
+    url: https://github.com/mozilla/mozjpeg/blob/v4.1.1/LICENSE.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The zlib License"
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/mozilla/mozjpeg/blob/v4.1.1/LICENSE.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The Modified (3-clause) BSD License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/mozilla/mozjpeg/blob/v4.1.1/LICENSE.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "is covered by three compatible BSD-style open source licenses"
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/mozilla/mozjpeg/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+    quote: "\"tag_name\":\"v4.1.1\""
+  - field: latestReleaseDate
+    value: 2022-08-15
+    url: https://api.github.com/repos/mozilla/mozjpeg/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+    quote: "\"published_at\":\"2022-08-15T01:41:40Z\""
+  - field: githubStargazers
+    value: 5739
+    url: https://api.github.com/repos/mozilla/mozjpeg
+    checkedAt: 2026-10-28
+    via: api
+    quote: "\"stargazers_count\":5739"
+  - field: contributors
+    value: 77
+    url: https://api.github.com/repos/mozilla/mozjpeg/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, docs, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runtime, runtimeMin, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, packagistName, endoflifeId, outputDir, buildCommand, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  The project has no website of its own; the GitHub repository is the only home, so no homepage is recorded. The README calls MozJPEG a patch for libjpeg-turbo, which is recorded here in prose only because no record exists for it. The cjpeg command-line tool is described by the README as a demo "not intended for serious use"; the project is a library. The latest GitHub release is v4.1.1 (2022-08-15). A tag v4.1.5 exists without a GitHub release; it is not counted. The release date is more than four years old, so the import moves the record to stub on its own. The LICENSE.md at v4.1.1 covers three licenses: the IJG license for the libjpeg API library, the modified 3-clause BSD license for the TurboJPEG API library and the build system, and the zlib license for the SIMD extensions. The file describes libjpeg-turbo, which MozJPEG patches. The GitHub API reports the license as NOASSERTION, so the entries come from the file. The maintainer is named by the project as "Mozilla"; the Mozilla legal page is a navigation list naming the Mozilla Foundation and gives no address, so no legal name or hqCountry is recorded. The README criterion-1 statement names graphics programs and image processing tools, not websites; whether the record meets criterion 1 is for the reviewer.

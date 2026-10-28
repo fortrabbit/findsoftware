@@ -1,0 +1,125 @@
+id: oxipng
+name: Oxipng
+status: accepted
+checkedAt: 2026-10-28
+description: Multithreaded lossless PNG and APNG compression optimizer, usable as a command-line tool or a Rust library.
+facts:
+  - field: repository
+    value: https://github.com/oxipng/oxipng
+    url: https://api.github.com/repos/oxipng/oxipng
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://docs.rs/oxipng
+    url: https://github.com/oxipng/oxipng/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "all of the library functions"
+  - field: maintainer
+    value: Joshua Holmer
+    url: https://raw.githubusercontent.com/oxipng/oxipng/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2016 Joshua Holmer"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/oxipng
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/oxipng/oxipng
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [asset-optimizer, image-processing]
+    url: https://github.com/oxipng/oxipng/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Oxipng is a multithreaded lossless PNG/APNG compression optimizer."
+  - field: runtimeMin
+    value: "1.88.0"
+    url: https://raw.githubusercontent.com/oxipng/oxipng/v10.2.1/Cargo.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'rust-version = "1.88.0"'
+  - field: runsAs
+    value: [local]
+    url: https://github.com/oxipng/oxipng/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Oxipng is a command-line utility."
+  - field: installMethod
+    value: cargo install oxipng
+    url: https://github.com/oxipng/oxipng/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "cargo install oxipng"
+  - field: installMethod
+    value: Docker image
+    url: https://github.com/oxipng/oxipng/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A Docker image is availlable at"
+  - field: installMethod
+    value: Windows download from the GitHub releases page
+    url: https://github.com/oxipng/oxipng/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Oxipng for Windows can be downloaded via the"
+  - field: installMethod
+    value: package managers listed by Repology
+    url: https://github.com/oxipng/oxipng/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Oxipng is known to be packaged for the environments listed below."
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/oxipng/oxipng
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/oxipng/oxipng/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: firstRelease
+    value: "2016"
+    url: https://api.github.com/repos/oxipng/oxipng/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 10
+    url: https://api.github.com/repos/oxipng/oxipng/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-02
+    url: https://api.github.com/repos/oxipng/oxipng/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 4306
+    url: https://api.github.com/repos/oxipng/oxipng
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 51
+    url: https://api.github.com/repos/oxipng/oxipng/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: crateName
+    value: oxipng
+    url: https://crates.io/api/v1/crates/oxipng
+    checkedAt: 2026-10-28
+    via: api
+  - field: crateDownloads
+    value: 2280776
+    url: https://crates.io/api/v1/crates/oxipng
+    checkedAt: 2026-10-28
+    via: api
+notFound: [runtime, homepage, hqCountry, wikidata, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, renderingModes, endoflifeId, selfHostOption, npmName, npmWeeklyDownloads, packagistName, pypiDownloads, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, x, subreddit, mastodon, bluesky, newsletter, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  Status accepted per the CSV row. Rust is the language, and fields.yml lists no rust runtime, so no runtime is recorded; the README calls a source build primarily useful for developing on Oxipng, and runtimeMin is the Rust version for that build. No homepage: the GitHub homepage field is empty and the README names no project website; the repository is the only project site. The README's "Software using Oxipng" list names ImageOptim, Squoosh and others, which are not recorded as they are not the project's own pages. The crate figure is the total download count of crates.io (2280776); the same API reports 597857 recent downloads over 90 days, which is not recorded as the figure. The npm package named oxipng (version 1.0.1) is a separate JavaScript port by another author and is not the project's package, so no npm figure is recorded. The README states the minimum Rust version as 1.85.1, while the Cargo.toml at the v10.2.1 tag and the crates.io record state 1.88.0; runtimeMin follows the manifest at the latest release tag. The first GitHub release is v0.1.0 from 2016-03-03. Docker, the Windows download and the Repology package list are installation routes the README names; pre-commit hook use is a git integration and is not an installMethod. The maintainer is the copyright holder named in the LICENSE; the crates.io owner list names two more users, not recorded. The README's MANUAL.txt is a second docs link; not recorded as docs because the docs.rs page is the library reference.

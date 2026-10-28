@@ -1,0 +1,125 @@
+id: jsbundling-rails
+name: jsbundling-rails
+status: accepted
+checkedAt: 2026-10-28
+description: Rails gem that bundles JavaScript with Bun, esbuild, rollup.js or Webpack and delivers the output through the Rails asset pipeline.
+facts:
+  - field: repository
+    value: https://github.com/rails/jsbundling-rails
+    url: https://api.github.com/repos/rails/jsbundling-rails
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/rails/jsbundling-rails/blob/main/README.md
+    url: https://github.com/rails/jsbundling-rails/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "to bundle your JavaScript, then deliver it via the asset pipeline in Rails"
+  - field: maintainer
+    value: David Heinemeier Hansson
+    url: https://raw.githubusercontent.com/rails/jsbundling-rails/main/MIT-LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2021 David Heinemeier Hansson"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/rails
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/rails/jsbundling-rails
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [build-tool]
+    url: https://github.com/rails/jsbundling-rails/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Use Bun, esbuild, rollup.js, or Webpack to bundle your JavaScript"
+  - field: basedOn
+    value: rails
+    url: https://github.com/rails/jsbundling-rails/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "then deliver it via the asset pipeline in Rails"
+  - field: runtime
+    value: [ruby]
+    url: https://rubygems.org/api/v1/versions/jsbundling-rails.json
+    checkedAt: 2026-10-28
+    via: api
+    quote: '"platform":"ruby"'
+  - field: runtime
+    value: [node]
+    url: https://github.com/rails/jsbundling-rails/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "you must already have node installed on your system"
+  - field: installMethod
+    value: bin/bundle add jsbundling-rails, then bin/rails javascript:install
+    url: https://github.com/rails/jsbundling-rails/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "./bin/bundle add jsbundling-rails"
+  - field: installMethod
+    value: rails new with -j bun, esbuild, rollup or webpack
+    url: https://github.com/rails/jsbundling-rails/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "rails new myapp -j"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/rails/jsbundling-rails/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "running the bundler in watch mode in a terminal"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/rails/jsbundling-rails
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/rails/jsbundling-rails/main/MIT-LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: firstRelease
+    value: "2021"
+    url: https://rubygems.org/api/v1/versions/jsbundling-rails.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/rails/jsbundling-rails/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2024-07-29
+    url: https://api.github.com/repos/rails/jsbundling-rails/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 922
+    url: https://api.github.com/repos/rails/jsbundling-rails
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 68
+    url: https://api.github.com/repos/rails/jsbundling-rails/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: rubygemsName
+    value: jsbundling-rails
+    url: https://rubygems.org/api/v1/gems/jsbundling-rails.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: rubygemsDownloads
+    value: 25496553
+    url: https://rubygems.org/api/v1/gems/jsbundling-rails.json
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, runtimeMin, endoflifeId, hqCountry, maintainerType, renderingModes, dependentPackages, dependentRepos, npmName, lastCommitDate, latestPrereleaseDate]
+unreadable: []
+notes: >
+  No homepage: the repository names none (the GitHub homepage field is empty), so the record links the repository only. The README says the bundled output is delivered "via the asset pipeline in Rails", which is the basedOn statement. The gemspec declares no required_ruby_version, so runtimeMin is not recorded. Node is needed for the esbuild, rollup and webpack installers; the Bun installer needs the Bun runtime ("you must have the Bun runtime already installed"), which is not recorded as a runtime value. The README describes a deploy-time step ("When you deploy your application to production, the javascript:build task attaches to the assets:precompile task"); it is not recorded as runsAs. The GitHub releases start at v0.2.0 (2021-11-15); the first gem upload, v0.1.0, is dated 2021-09-06 on RubyGems, which gives firstRelease. The last push is 2026-05-30, after the last release of 2024-07-29. The repository was created 2021-09-06 under the rails organization; the MIT-LICENSE copyright names David Heinemeier Hansson. The README says the bundled output goes to app/assets/builds, a directory the installer adds to .gitignore by default; in watch mode the bundler writes app/javascript/application.js to app/assets/builds/application.js, and ./bin/dev starts the Rails server and the watcher together. For webpack features such as code splitting and hot module reloading, the README names shakapacker, the official fork of webpacker.

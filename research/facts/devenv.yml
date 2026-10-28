@@ -1,0 +1,113 @@
+id: devenv
+name: devenv
+status: accepted
+checkedAt: 2026-10-28
+description: Nix-based tool that declares a developer environment in a devenv.nix file (packages, languages, services, processes and tasks) and activates it in the shell.
+facts:
+  - field: homepage
+    value: https://devenv.sh
+    url: https://devenv.sh/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Your whole development environment, declared."
+  - field: repository
+    value: https://github.com/cachix/devenv
+    url: https://api.github.com/repos/cachix/devenv
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://devenv.sh/getting-started/
+    url: https://raw.githubusercontent.com/cachix/devenv/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Getting Started"
+  - field: maintainer
+    value: Cachix
+    url: https://www.cachix.org/about
+    checkedAt: 2026-10-28
+    via: page
+    quote: "we've shipped open-source developer tools like devenv and secretspec"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/cachix/devenv
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/cachix/devenv
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [local-dev-env]
+    url: https://raw.githubusercontent.com/cachix/devenv/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Fast, Declarative, Reproducible, and Composable Developer Environments"
+  - field: runsAs
+    value: [local]
+    url: https://devenv.sh/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Give every developer and CI the same fast, reproducible environment."
+  - field: installMethod
+    value: "nix profile install nixpkgs#devenv"
+    url: https://devenv.sh/getting-started/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "nix profile install nixpkgs#devenv"
+  - field: installMethod
+    value: "nix-env --install --attr devenv from the nixpkgs-unstable tarball"
+    url: https://devenv.sh/getting-started/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "nix-env --install --attr devenv"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/cachix/devenv
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/cachix/devenv/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: firstRelease
+    value: "2022"
+    url: https://api.github.com/repos/cachix/devenv/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/cachix/devenv/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-24
+    url: https://api.github.com/repos/cachix/devenv/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 7782
+    url: https://api.github.com/repos/cachix/devenv
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 312
+    url: https://api.github.com/repos/cachix/devenv/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: discord
+    value: https://discord.gg/naMgvexb6q
+    url: https://raw.githubusercontent.com/cachix/devenv/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+  - field: x
+    value: https://x.com/devenv_nix
+    url: https://devenv.sh/
+    checkedAt: 2026-10-28
+    via: page
+notFound: [hqCountry, basedOn, parent, runtime, runtimeMin, pricingPage, paidEdition, adminUi, contentStore, databases, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, wikidata, endoflifeId, supportedVersions, forkOf, successorOf, alternativeTo, maintainerType]
+unreadable: []
+notes: >
+  The maintainer is recorded as Cachix: the cachix.org about page says the team has "shipped open-source developer tools like devenv and secretspec" and the repository owner is the cachix GitHub organization. The company behind the Cachix brand is Enlambda OÜ in the terms page of cachix.org, which covers the Cachix web application; no devenv page names that legal entity, so neither the legal name nor a country is recorded. The getting-started page names Nix as the install base: devenv is installed from nixpkgs with the Nix installer from nixos.org as a prerequisite, and the README names Nix as its basis; Nix has no record, so basedOn stays empty. Supported platforms are stated as "Linux, macOS, x64, and ARM64 (including WSL2)" in the README and as Linux, macOS, Windows (WSL2) and Docker on the install page; no runtime is recorded because the CLI is a native binary the page does not name. Languages (over 50) and services (over 40) are listed on the homepage, not recorded as fields. The cloud offering: the cloud page says "cloud.devenv.sh is in private beta, sign up for early access", and no field exists for a hosted cloud beside the open source tool, so it stays in notes. The highest stable GitHub release is v2.4.0 (2026-09-24); the README's usage banner names version 2.0.0 and is not used. There is no prerelease. The machines page (new in 2.4, marked experimental) says a machine is a NixOS, nix-darwin or home-manager configuration that "devenv machines" installs or deploys over SSH from the developer side, and the containers page builds OCI images from the environment with "devenv container build"; both are CLI actions run from a developer machine, so runsAs stays local and no deployment mode is recorded. The Discord link comes from a README badge and carries no quote; the X link comes from the homepage navigation. The getting-started page says inputs such as nixpkgs and devenv modules are downloaded and pinned in a devenv.lock lockfile.

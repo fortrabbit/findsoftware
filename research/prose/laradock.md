@@ -1,0 +1,3 @@
+Laradock is a Docker Compose setup for running PHP projects locally. It ships pre-configured containers for a web server, PHP and other services, and a command-line script that starts the stack. Clone the repository into a PHP project and start it with the script, or run Docker Compose directly against the same files.
+
+The stack runs on Linux, macOS and Windows and needs Docker with Compose v2.20 or newer. The project's ship command builds a production image from the stack, which can then run on Kubernetes, Google Cloud Run, AWS ECS, Kamal or a single server. The MIT-licensed project is maintained by Mahmoud Zalt and contributors.

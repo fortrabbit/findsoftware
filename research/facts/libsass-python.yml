@@ -1,0 +1,130 @@
+id: libsass-python
+name: libsass-python
+status: discontinued
+checkedAt: 2026-10-28
+description: Python binding for LibSass that compiles Sass and SCSS to CSS, published on PyPI as libsass.
+facts:
+  - field: status
+    value: discontinued
+    url: https://github.com/sass/libsass-python/blob/main/README.rst
+    checkedAt: 2026-10-28
+    via: page
+    quote: "LibSass has reached its end of life."
+  - field: homepage
+    value: https://sass.github.io/libsass-python/
+    url: https://sass.github.io/libsass-python/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This package provides a simple Python extension module sass which is"
+  - field: repository
+    value: https://github.com/sass/libsass-python
+    url: https://api.github.com/repos/sass/libsass-python
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://sass.github.io/libsass-python/
+    url: https://github.com/sass/libsass-python/blob/main/README.rst
+    checkedAt: 2026-10-28
+    via: page
+    quote: "There's the user guide manual and the full API reference"
+  - field: categories
+    value: [css-preprocessor]
+    url: https://sass.github.io/libsass-python/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "binding LibSass (written in C/C++ by Hampton Catlin and Aaron Leung)."
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/sass/libsass-python
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://sass.github.io/libsass-python/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "It currently supports CPython 3.7+ and PyPy 3!"
+  - field: runtimeMin
+    value: "python 3.8"
+    url: https://pypi.org/pypi/libsass/json
+    checkedAt: 2026-10-28
+    via: api
+    quote: ">=3.8"
+  - field: installMethod
+    value: [pip]
+    url: https://github.com/sass/libsass-python/blob/main/README.rst
+    checkedAt: 2026-10-28
+    via: page
+    quote: "pip install libsass"
+  - field: license
+    value: MIT
+    url: https://github.com/sass/libsass-python/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/sass/libsass-python/blob/main/README.rst
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The above three are all distributed under"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/sass/libsass-python/releases/tag/0.23.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2024-01-06
+    url: https://github.com/sass/libsass-python/releases/tag/0.23.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://pypi.org/pypi/libsass/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Hong Minhee
+    url: https://github.com/sass/libsass-python/blob/main/README.rst
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Hong Minhee wrote this Python binding of LibSass"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/sass
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 569
+    url: https://api.github.com/repos/sass/libsass-python
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 76
+    url: https://api.github.com/repos/sass/libsass-python/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiName
+    value: libsass
+    url: https://pypi.org/pypi/libsass/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiDownloads
+    value: "2966210 (last month)"
+    url: https://pypistats.org/api/packages/libsass/recent
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 76
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/libsass
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 2445
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/libsass
+    checkedAt: 2026-10-28
+    via: api
+notFound: [pricingPage, hqCountry, paidEdition, basedOn, endoflifeId, pluginDirectory, discord, x, bluesky, subreddit, forum, newsletter, contentStore, databases, renderingModes, runsAs]
+unreadable: []
+notes: >
+  The end-of-life statement is in the README on the default branch: "LibSass has reached its end of life. It will no longer receive updates of any kind, nor will its wrapper libraries. Users should migrate to Dart Sass at their earliest convenience. See also https://github.com/attakei/sass-embedded-python." The repository is archived on GitHub (api archived true, pushed_at 2025-10-24), which matches the candidates row. The successor the README names is Dart Sass, and the README links sass-embedded-python; neither is recorded as a successor field. The project's own site still shows version 0.23.0 documentation. The binding wraps LibSass, a C/C++ library in the same organization; that library has no record here, so basedOn stays out. The site says "CPython 3.7+" while the PyPI requires_python field reads ">=3.8" for the latest release; runtimeMin takes the registry value. currentMajor is 0 because the latest stable release is 0.23.0. The releases list starts at 0.1.0 on 2013-09-25 and PyPI's oldest upload is 0.1.0 on 2012-08-17. The PyPI figure comes from pypistats.org, which the AGENTS.md exception allows for PyPI downloads. The GitHub stargazer count and the PyPI figures were read 2026-10-28.

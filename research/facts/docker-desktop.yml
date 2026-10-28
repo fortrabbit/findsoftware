@@ -1,0 +1,107 @@
+id: docker-desktop
+name: Docker Desktop
+status: accepted
+checkedAt: 2026-10-28
+description: Desktop application that installs the Docker Engine, Docker CLI and Docker Compose on macOS, Windows and Linux for building and running containers.
+facts:
+  - field: homepage
+    value: https://www.docker.com/products/docker-desktop/
+    url: https://www.docker.com/products/docker-desktop/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Download Docker Desktop"
+  - field: docs
+    value: https://docs.docker.com/desktop/
+    url: https://docs.docker.com/desktop/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Docker Desktop is a one-click-install application for your Mac, Linux, or Windows environment"
+  - field: maintainer
+    value: Docker, Inc.
+    url: https://www.docker.com/legal/docker-terms-service/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Legal notices may be sent to Docker, Inc., 3790 El Camino Real Suite 1052, Palo Alto, CA 94306-3314"
+  - field: hqCountry
+    value: US
+    url: https://www.docker.com/legal/docker-terms-service/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Docker, Inc., 3790 El Camino Real #1052, Palo Alto, CA 94306, USA"
+  - field: categories
+    value: [local-dev-env]
+    url: https://docs.docker.com/desktop/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Docker Desktop is a one-click-install application for your Mac, Linux, or Windows environment"
+  - field: runsAs
+    value: [local]
+    url: https://docs.docker.com/desktop/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Docker Desktop is a one-click-install application for your Mac, Linux, or Windows environment"
+  - field: installMethod
+    value: download
+    url: https://docs.docker.com/desktop/setup/install/mac-install/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This page provides download links, system requirements, and step-by-step installation instructions for Docker Desktop on Mac."
+  - field: license
+    value: proprietary (Docker Subscription Service Agreement)
+    url: https://docs.docker.com/subscription-billing/desktop-license/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Docker Desktop is licensed under the Docker Subscription Service Agreement"
+  - field: licenseModel
+    value: commercial
+    url: https://docs.docker.com/subscription-billing/desktop-license/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Docker Desktop requires a paid subscription for: Professional use in larger organizations"
+  - field: paidEdition
+    value: "Docker Pro, Team and Business subscriptions include Docker Desktop, under the Docker Subscription Service Agreement"
+    url: https://docs.docker.com/subscription-billing/desktop-license/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Paid subscriptions that include Docker Desktop: Docker Pro, Team, and Business subscriptions"
+  - field: pricingPage
+    value: https://www.docker.com/pricing/
+    url: https://www.docker.com/products/docker-desktop/
+    checkedAt: 2026-10-28
+    via: page
+  - field: latestReleaseDate
+    value: 2026-10-26
+    url: https://docs.docker.com/desktop/release-notes/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "2026-10-26"
+  - field: currentMajor
+    value: 4
+    url: https://docs.docker.com/desktop/release-notes/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "4.97.0"
+  - field: x
+    value: https://twitter.com/docker
+    url: https://www.docker.com/products/docker-desktop/
+    checkedAt: 2026-10-28
+    via: page
+  - field: youtube
+    value: https://www.youtube.com/user/dockerrun
+    url: https://www.docker.com/products/docker-desktop/
+    checkedAt: 2026-10-28
+    via: page
+  - field: facebook
+    value: https://www.facebook.com/docker.run
+    url: https://www.docker.com/products/docker-desktop/
+    checkedAt: 2026-10-28
+    via: page
+  - field: instagram
+    value: https://www.instagram.com/dockerinc/
+    url: https://www.docker.com/products/docker-desktop/
+    checkedAt: 2026-10-28
+    via: page
+notFound: [repository, firstRelease, language, runtime, runtimeMin, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, githubStargazers, contributors, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, pypiDownloads, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, basedOn, parent, forkOf, successorOf, alternativeTo, lastCommitDate, latestPrereleaseDate, wikidata, sourcePublic]
+unreadable: []
+notes: >
+  No repository: Docker Desktop has no public source repository of its own (the docker/desktop-release-notes repository returns 404 via the GitHub API on 2026-10-28), so the record is a desktop app with a download install, not a GitHub-sourced one. Operating systems, read 2026-10-28: macOS, where the install page says Docker Desktop "is supported on the current and two previous major macOS releases"; Windows 10 22H2 and Windows 11 23H2 or later (Enterprise, Pro or Education editions, with Home limited to Linux containers); and Linux distributions (Ubuntu, Debian, Fedora) from the Linux install page. The Homebrew cask, which lists version 4.97.0 and depends on macOS 14 or later, is a distribution channel and not a fact source here. The release notes page starts at 4.0.0 dated 2021-08-31 and says older release notes are kept in the documentation repository, so firstRelease is not recorded: the earliest entry on the page is not the product's first release. The release notes (4.0.0 entry, read 2026-10-28) say Docker Desktop "remains free for small businesses (fewer than 250 employees AND less than $10 million in annual revenue), personal use, education, and non-commercial open source projects." The Docker Desktop license page says it distributes components "licensed under the GNU General Public License" and links their source; this is a statement about bundled components, not a license of the product, so it is not a license entry. The Docker Desktop license page and the Docker Subscription Service Agreement name the paid subscriptions (Pro, Team, Business); their prices are on the pricing page and are not recorded. The footer social links on the product page are recorded as found: the X link is written as twitter.com in the page. The LinkedIn link (https://www.linkedin.com/company/docker) has no schema field and stays here. Adoption: the CSV row's Homebrew figure (528.1k cask installs per year, read 2026-10-19) is not re-read and not recorded; the company (Docker, Inc.) is the criterion 5 signal.

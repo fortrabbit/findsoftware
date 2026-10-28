@@ -1,0 +1,139 @@
+id: lighthouse
+name: Lighthouse
+status: accepted
+checkedAt: 2026-10-28
+description: Open-source automated tool that audits web pages and web apps for performance, accessibility, SEO and best practices.
+facts:
+  - field: homepage
+    value: "https://developer.chrome.com/docs/lighthouse/overview/"
+    url: "https://developer.chrome.com/docs/lighthouse/overview/"
+    checkedAt: 2026-10-28
+    via: page
+  - field: repository
+    value: "https://github.com/GoogleChrome/lighthouse"
+    url: "https://api.github.com/repos/GoogleChrome/lighthouse"
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: "https://developer.chrome.com/docs/lighthouse/overview/"
+    url: "https://developer.chrome.com/docs/lighthouse/overview/"
+    checkedAt: 2026-10-28
+    via: page
+  - field: categories
+    value: ["dev-tool"]
+    url: "https://github.com/GoogleChrome/lighthouse/blob/main/readme.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Lighthouse analyzes web apps and web pages, collecting modern performance metrics and insights on developer best practices."
+  - field: language
+    value: "JavaScript"
+    url: "https://api.github.com/repos/GoogleChrome/lighthouse"
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: ["node"]
+    url: "https://github.com/GoogleChrome/lighthouse/blob/main/readme.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Lighthouse requires Node 22 (LTS) or later."
+  - field: runtimeMin
+    value: "node 22.19"
+    url: "https://github.com/GoogleChrome/lighthouse/blob/v13.6.0/package.json"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "\"node\": \">=22.19\""
+  - field: installMethod
+    value: "npm install -g lighthouse"
+    url: "https://developer.chrome.com/docs/lighthouse/overview/"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm install -g lighthouse"
+  - field: installMethod
+    value: "Chrome DevTools panel"
+    url: "https://github.com/GoogleChrome/lighthouse/blob/main/readme.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Lighthouse is integrated directly into the Chrome DevTools"
+  - field: installMethod
+    value: "Chrome Web Store extension"
+    url: "https://github.com/GoogleChrome/lighthouse/blob/main/readme.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "install the extension"
+  - field: runsAs
+    value: ["local"]
+    url: "https://github.com/GoogleChrome/lighthouse/blob/main/readme.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Lighthouse runs locally, auditing a page using a local version of the Chrome browser installed on the machine"
+  - field: license
+    value: "Apache-2.0"
+    url: "https://api.github.com/repos/GoogleChrome/lighthouse"
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: "open-source"
+    url: "https://raw.githubusercontent.com/GoogleChrome/lighthouse/main/LICENSE"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Apache License"
+  - field: maintainer
+    value: "Google LLC"
+    url: "https://github.com/GoogleChrome/lighthouse/blob/v13.6.0/package.json"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "\"author\": \"Google LLC\""
+  - field: repoOwnerType
+    value: "organization"
+    url: "https://api.github.com/users/GoogleChrome"
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2016"
+    url: "https://api.github.com/repos/GoogleChrome/lighthouse/releases"
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 13
+    url: "https://api.github.com/repos/GoogleChrome/lighthouse/releases/latest"
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-27"
+    url: "https://api.github.com/repos/GoogleChrome/lighthouse/releases/latest"
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 30966
+    url: "https://api.github.com/repos/GoogleChrome/lighthouse"
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 366
+    url: "https://api.github.com/repos/GoogleChrome/lighthouse/contributors?per_page=1"
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: "lighthouse"
+    url: "https://registry.npmjs.org/lighthouse/latest"
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: "6061796 (2026-09-28 to 2026-10-04)"
+    url: "https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/lighthouse"
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 547
+    url: "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/lighthouse"
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 5477
+    url: "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/lighthouse"
+    checkedAt: 2026-10-28
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, hostedOffering, outputDir, buildCommand]
+unreadable: []
+notes: >
+  Lighthouse is the audit tool itself. The Chrome extension was superseded by the DevTools panel; the extension is listed under installMethod because the README still names it. The category is dev-tool: the project describes itself as a tool for developers ("insights on developer best practices") and the mapping has no performance-audit value. Criterion 1 rests on a creator running it against their own site, not on building one; a reviewer may want this as a testing category instead. The GitHub releases list also includes a non-version release named lantern-test-data (2026-10-09); it is test data, not a version of the package, and is excluded from latestReleaseDate. The npm figure is the lighthouse package named by the install docs; the weekly figure is the sum of 2026-09-28 to 2026-10-04 per the build-dev rule. The tags list contains 1.0.x and 1.1.x versions; the oldest GitHub release is 1.1.1 (2016-08-06), so firstRelease is 2016. Maintainer is Google LLC as the package.json author states; the legal notice for hqCountry was not checked. The repository's own release tags use v-prefix; the current major is taken from v13.6.0. The Lighthouse CI product is a separate project and is not recorded here. PageSpeed Insights runs Lighthouse on Google's servers; that is a hosted service of Google's and is not recorded as a hostedOffering. The LICENSE file words the license as "Apache License, Version 2.0", the same license as the API id. The README states Lighthouse runs locally and that reports are not sent to a remote server.

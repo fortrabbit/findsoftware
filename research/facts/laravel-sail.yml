@@ -1,0 +1,134 @@
+id: laravel-sail
+name: Laravel Sail
+status: accepted
+checkedAt: 2026-10-28
+description: Docker-based local development environment for Laravel applications, driven by a sail command-line script stored in the project.
+facts:
+  - field: homepage
+    value: "https://laravel.com/docs/sail"
+    url: "https://laravel.com/docs/sail"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Laravel Sail is a light-weight command-line interface for interacting with Laravel's default Docker development environment."
+  - field: repository
+    value: "https://github.com/laravel/sail"
+    url: "https://api.github.com/repos/laravel/sail"
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: "https://laravel.com/docs/sail"
+    url: "https://laravel.com/docs/sail"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Laravel Sail is a light-weight command-line interface for interacting with Laravel's default Docker development environment."
+  - field: maintainer
+    value: "Taylor Otwell"
+    url: "https://github.com/laravel/sail/blob/1.x/LICENSE.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) Taylor Otwell"
+  - field: repoOwnerType
+    value: "organization"
+    url: "https://api.github.com/repos/laravel/sail"
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2020"
+    url: "https://repo.packagist.org/p2/laravel/sail.json"
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: "1"
+    url: "https://api.github.com/repos/laravel/sail/releases"
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-13"
+    url: "https://api.github.com/repos/laravel/sail/releases/latest"
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: "Shell"
+    url: "https://api.github.com/repos/laravel/sail"
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: ["local-dev-env"]
+    url: "https://laravel.com/docs/sail"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Laravel Sail is a light-weight command-line interface for interacting with Laravel's default Docker development environment."
+  - field: databases
+    value: ["mysql"]
+    url: "https://laravel.com/docs/sail"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "your application's compose.yaml file contains an entry for a MySQL container"
+  - field: databases
+    value: ["mongodb"]
+    url: "https://laravel.com/docs/sail"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "contains an entry for a MongoDB Atlas Local container which provides the MongoDB document database"
+  - field: installMethod
+    value: "composer require laravel/sail --dev, then php artisan sail:install"
+    url: "https://laravel.com/docs/sail"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "composer require laravel/sail --dev"
+  - field: runsAs
+    value: ["local"]
+    url: "https://github.com/laravel/sail/blob/1.x/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Other than Docker, no software or libraries are required to be installed on your local computer before using Sail."
+  - field: license
+    value: "MIT"
+    url: "https://api.github.com/repos/laravel/sail"
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: "MIT"
+    url: "https://github.com/laravel/sail/blob/1.x/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Laravel Sail is open-sourced software licensed under the MIT license"
+  - field: githubStargazers
+    value: 1921
+    url: "https://api.github.com/repos/laravel/sail"
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 174
+    url: "https://api.github.com/repos/laravel/sail/contributors?per_page=1"
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistName
+    value: "laravel/sail"
+    url: "https://packagist.org/packages/laravel/sail.json"
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistDownloads
+    value: "240077197 (total)"
+    url: "https://packagist.org/packages/laravel/sail.json"
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistDownloads
+    value: "11312198 (monthly)"
+    url: "https://packagist.org/packages/laravel/sail.json"
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 600
+    url: "https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/laravel%2Fsail"
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 122698
+    url: "https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/laravel%2Fsail"
+    checkedAt: 2026-10-28
+    via: api
+notFound: [runtime, runtimeMin, hqCountry, pricingPage, paidEdition, parent, basedOn, contentStore, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, templating, npmName, pypiDownloads, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, hostedOffering]
+unreadable: []
+notes: >
+  Operating systems: the docs say "Laravel Sail is supported on macOS, Linux, and Windows" (Windows through WSL2). Default branch is 1.x; latest stable release v1.69.0 is 2026-10-13, the first Packagist upload (v0.0.1) is 2020-12-04. The Composer package requires php "^8.0" at v1.69.0, which is the installer's requirement; the README says no software besides Docker is needed on the local computer, so runtime and runtimeMin are not recorded. The databases field lists the MySQL and MongoDB service containers the docs describe; Redis and Valkey have no vocabulary value. Sail is derived from Vessel by Chris Fidao, per the README; Vessel has no record. The language is Shell per the GitHub API, and the Composer package ships the PHP and sail script. Dependency counts come from ecosyste.ms for the Packagist package laravel/sail.

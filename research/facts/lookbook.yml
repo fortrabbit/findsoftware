@@ -1,0 +1,125 @@
+id: lookbook
+name: Lookbook
+status: accepted
+checkedAt: 2026-10-28
+description: "UI development environment for Ruby on Rails apps that renders component previews and Markdown pages in a browsable inspector."
+facts:
+  - field: homepage
+    value: "https://lookbook.build/"
+    url: "https://lookbook.build/"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Lookbook is a UI development environment for Ruby on Rails applications"
+  - field: repository
+    value: "https://github.com/lookbook-hq/lookbook"
+    url: "https://api.github.com/repos/lookbook-hq/lookbook"
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: "https://lookbook.build/guide/installation"
+    url: "https://lookbook.build/guide/installation"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Installing Lookbook"
+  - field: maintainer
+    value: "Mark Perkins"
+    url: "https://raw.githubusercontent.com/lookbook-hq/lookbook/main/LICENSE.txt"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2021 Mark Perkins"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/lookbook-hq"
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Ruby
+    url: "https://api.github.com/repos/lookbook-hq/lookbook"
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [dev-tool]
+    url: "https://lookbook.build/"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "UI development environment for Ruby on Rails applications"
+  - field: basedOn
+    value: [rails]
+    url: "https://github.com/lookbook-hq/lookbook/blob/main/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Lookbook is implemented as an isolated Rails Engine"
+  - field: runtime
+    value: [ruby]
+    url: "https://github.com/lookbook-hq/lookbook/blob/main/lookbook.gemspec"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "spec.required_ruby_version = \">= 2.7.0\""
+  - field: runtimeMin
+    value: "2.7"
+    url: "https://github.com/lookbook-hq/lookbook/blob/v2.3.15/lookbook.gemspec"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "spec.required_ruby_version = \">= 2.7.0\""
+  - field: installMethod
+    value: "Gemfile gem, then bundle install"
+    url: "https://lookbook.build/guide/installation"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Add lookbook to your Gemfile"
+  - field: templating
+    value: [erb]
+    url: "https://lookbook.build/"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "You can use ERB within them"
+  - field: license
+    value: MIT
+    url: "https://api.github.com/repos/lookbook-hq/lookbook"
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: "https://raw.githubusercontent.com/lookbook-hq/lookbook/main/LICENSE.txt"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: firstRelease
+    value: "2021"
+    url: "https://api.github.com/repos/lookbook-hq/lookbook/releases"
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 2
+    url: "https://api.github.com/repos/lookbook-hq/lookbook/releases"
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-31
+    url: "https://api.github.com/repos/lookbook-hq/lookbook/releases"
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1101
+    url: "https://api.github.com/repos/lookbook-hq/lookbook"
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 80
+    url: "https://api.github.com/repos/lookbook-hq/lookbook/contributors"
+    checkedAt: 2026-10-28
+    via: api
+  - field: rubygemsName
+    value: lookbook
+    url: "https://rubygems.org/api/v1/gems/lookbook.json"
+    checkedAt: 2026-10-28
+    via: api
+  - field: rubygemsDownloads
+    value: 11493785
+    url: "https://rubygems.org/api/v1/gems/lookbook.json"
+    checkedAt: 2026-10-28
+    via: api
+notFound: [hqCountry, parent, forkOf, successorOf, alternativeTo, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, npmWeeklyDownloads, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  Lookbook is the Rails engine the gem lookbook provides; the gem's Ruby requirement is ">= 2.7.0" in lookbook.gemspec at tag v2.3.15. Two license wordings: the LICENSE.txt file reads "The MIT License (MIT)" and the README reads "The gem is available as open source under the terms of the MIT License"; both name MIT and are recorded as one license entry. The first GitHub release is v0.1 (2021-07-29); the first RubyGems version listed is 0.2.0 (2021-08-19); firstRelease is 2021 either way. The homepage says Lookbook is "free, open-source and used by teams of all sizes", with company logos and no count, so no reportedInstalls is recorded. The homepage has no discord, bluesky, mastodon, x or newsletter link; its links are the GitHub repository, the demo at demo.lookbook.build and the author's personal site. The installation guide puts the gem in the development group and mounts the engine inside a development check, and the production guide says Lookbook "does not require any configuration changes to run in production", so the server model is not stated and runsAs is not recorded. The concepts page says a scenario is "roughly analogous" to a Storybook story; that is no basedOn statement. ViewComponent and Phlex are named as components Lookbook previews, and ViewComponent is a gem dependency; neither is a parent. The gem's documentation for Markdown pages says ERB is usable inside them. The homepage and the README name Rails as the host; basedOn is taken from the README's "isolated Rails Engine" wording. The npm and dependent-package counts are not used because the project is a gem. The repository's releases are read from the API with pagination; the oldest is v0.1 and the highest stable release is v2.3.15, so currentMajor is 2. The maintainer is Mark Perkins as the LICENSE copyright line and README state; the GitHub organization is lookbook-hq. The guide pages were read on lookbook.build; the docs/ source in the repository was not. The concepts page says each public method of a preview class is a scenario, and the homepage says Lookbook is compatible with ViewComponent, Phlex and ActionView partials; the production page says the gem must move to the production group and the mount must drop its development check.

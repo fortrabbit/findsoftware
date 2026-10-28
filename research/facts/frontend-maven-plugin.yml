@@ -1,0 +1,123 @@
+id: frontend-maven-plugin
+name: frontend-maven-plugin
+status: accepted
+checkedAt: 2026-10-28
+description: Maven plugin that downloads Node and npm for a project and runs npm, Yarn, Grunt, Gulp, Webpack and other frontend tools as part of the Maven build.
+facts:
+  - field: repository
+    value: https://github.com/eirslett/frontend-maven-plugin
+    url: https://api.github.com/repos/eirslett/frontend-maven-plugin
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/eirslett/frontend-maven-plugin/blob/master/README.md
+    url: https://github.com/eirslett/frontend-maven-plugin/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This plugin downloads/installs Node and NPM locally for your project"
+  - field: firstRelease
+    value: 2013
+    url: https://search.maven.org/solrsearch/select?q=g:com.github.eirslett+AND+a:frontend-maven-plugin&core=gav&rows=200&wt=json
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Eirik Sletteberg
+    url: https://github.com/eirslett/frontend-maven-plugin/blob/frontend-plugins-2.0.2/pom.xml
+    checkedAt: 2026-10-28
+    via: page
+    quote: "<name>Eirik Sletteberg</name>"
+  - field: maintainerType
+    value: individual
+    url: https://api.github.com/users/eirslett
+    checkedAt: 2026-10-28
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/eirslett
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/eirslett/frontend-maven-plugin
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [build-plugin]
+    url: https://github.com/eirslett/frontend-maven-plugin/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This plugin downloads/installs Node and NPM locally for your project"
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/eirslett/frontend-maven-plugin/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Maven 3.6 and Java 17"
+  - field: runtimeMin
+    value: Java 17
+    url: https://github.com/eirslett/frontend-maven-plugin/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Maven 3.6 and Java 17"
+  - field: installMethod
+    value: Maven plugin declaration in pom.xml
+    url: https://github.com/eirslett/frontend-maven-plugin/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Include the plugin as a dependency in your Maven project."
+  - field: runsAs
+    value: [local]
+    url: https://github.com/eirslett/frontend-maven-plugin/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The Node usage is intended as part of a frontend build"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/eirslett/frontend-maven-plugin
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/eirslett/frontend-maven-plugin/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Apache 2.0"
+  - field: mavenCoordinates
+    value: com.github.eirslett:frontend-maven-plugin
+    url: https://repo1.maven.org/maven2/com/github/eirslett/frontend-maven-plugin/maven-metadata.xml
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://repo1.maven.org/maven2/com/github/eirslett/frontend-maven-plugin/maven-metadata.xml
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-28
+    url: https://repo1.maven.org/maven2/com/github/eirslett/frontend-maven-plugin/maven-metadata.xml
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 4382
+    url: https://api.github.com/repos/eirslett/frontend-maven-plugin
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 123
+    url: https://api.github.com/repos/eirslett/frontend-maven-plugin/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 9
+    url: https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/com.github.eirslett:frontend-maven-plugin
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 228
+    url: https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/com.github.eirslett:frontend-maven-plugin
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, renderingModes, i18n, multisite, livePreview, userRoles, sso, importsFrom, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, npmWeeklyDownloads, endoflifeId, supportedVersions, outputDir, buildCommand]
+unreadable: []
+notes: >
+  No homepage: the project has no website of its own, only the GitHub repository and its README, so the repository is the only project URL. The repository has no GitHub releases; the GitHub tags frontend-plugins-x.y.z are the release markers, and the newest is frontend-plugins-2.0.2 (2026-07-28). The stable line is 2.0.2 on Maven Central, which sets currentMajor 2 under the registry fallback. The master pom is at 2.0.3-SNAPSHOT and is not a release. The latestReleaseDate is the lastUpdated stamp of the Maven Central maven-metadata.xml (20260728184320), the registry's date for the latest version. The first Maven Central upload is 0.0.3 (2013-09-20), the repository was created 2013-08-30. The README says Windows, OS X and Linux, and that the plugin supports Maven 3.6 with Java 17 and Maven 4. Node and npm are downloaded from nodejs.org and not installed globally; the plugin does not support an already installed Node. The Maven Central maven-metadata lists versions 0.0.3 to 2.0.2; the solr index lists only up to 1.15.1, so the upload dates of the 2.x versions come from the metadata file, not from search. Maven publishes no download figure, so none is recorded. The README names Bower, Grunt, Gulp, Jspm, Karma and Webpack as tools the plugin runs; these are not basedOn statements, since the plugin runs them and does not build on them.

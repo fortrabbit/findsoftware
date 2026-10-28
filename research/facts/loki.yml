@@ -1,0 +1,129 @@
+id: loki
+name: Loki
+status: accepted
+checkedAt: 2026-10-28
+description: "Visual regression testing tool that screenshots Storybook stories and compares them with reference images."
+facts:
+  - field: homepage
+    value: "https://loki.js.org/"
+    url: "https://loki.js.org/"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Loki makes it easy to test your Storybook project for visual regressions."
+  - field: repository
+    value: "https://github.com/oblador/loki"
+    url: "https://api.github.com/repos/oblador/loki"
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: "https://loki.js.org/getting-started.html"
+    url: "https://loki.js.org/getting-started.html"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Running your first tests"
+  - field: maintainer
+    value: "Joel Arvidsson"
+    url: "https://github.com/oblador/loki/blob/master/LICENSE"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2017 Joel Arvidsson"
+  - field: repoOwnerType
+    value: user
+    url: "https://api.github.com/users/oblador"
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: JavaScript
+    url: "https://api.github.com/repos/oblador/loki"
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [testing]
+    url: "https://github.com/oblador/loki/blob/master/packages/loki/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Visual Regression Testing for Storybook"
+  - field: basedOn
+    value: [storybook]
+    url: "https://github.com/oblador/loki/blob/master/packages/loki/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Visual Regression Testing for Storybook"
+  - field: runtime
+    value: [node]
+    url: "https://loki.js.org/getting-started.html"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Node 16+"
+  - field: installMethod
+    value: "yarn add loki --dev, then yarn loki init"
+    url: "https://loki.js.org/getting-started.html"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "yarn add loki --dev"
+  - field: runsAs
+    value: [local]
+    url: "https://loki.js.org/continuous-integration.html"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Loki is built with the intention of running on a continuous integration server"
+  - field: license
+    value: MIT
+    url: "https://api.github.com/repos/oblador/loki"
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: "https://github.com/oblador/loki/blob/master/LICENSE"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: firstRelease
+    value: "2017"
+    url: "https://registry.npmjs.org/loki"
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 0
+    url: "https://api.github.com/repos/oblador/loki/releases"
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2024-08-27
+    url: "https://api.github.com/repos/oblador/loki/releases"
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1915
+    url: "https://api.github.com/repos/oblador/loki"
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 62
+    url: "https://api.github.com/repos/oblador/loki/contributors"
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: loki
+    url: "https://registry.npmjs.org/loki/latest"
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 27338
+    url: "https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/loki"
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 137
+    url: "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/loki"
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 315
+    url: "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/loki"
+    checkedAt: 2026-10-28
+    via: api
+notFound: [x, hqCountry, parent, forkOf, successorOf, alternativeTo, runtimeMin, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, wikidata, endoflifeId]
+unreadable: []
+notes: >
+  Monorepo: the root README points to packages/loki/README.md, and the npm package loki is packages/loki (repository.directory in its manifest at v0.35.1), so the package README is the source. The package README names Joel Arvidsson as Author and Tomas Echeverri Valencia as Maintainer; the maintainer fact follows the LICENSE copyright line, the second name is not recorded. The npm version 0.0.0 uploaded in 2013 predates the repository (created 2017-07-10) and is read as another project, so firstRelease uses the 0.1.0 upload of 2017-07-10; the oldest GitHub release is v0.17.0 (2019-06-04). Latest stable release v0.35.1 (2024-08-27) is inside the four-year window; the repository was pushed on the check date and has no archive flag. Node 16+ is stated on the getting-started page, but the v0.35.1 manifest has no engines field, so runtimeMin is left out until a manifest states it. The x link on the homepage is the author's personal account and is not recorded. The homepage lists BBC under "Users of Loki" with no count, so no reportedInstalls. The serverless renderer guide URL guessed as serverless-renderer.html returned 404; the other guide pages were read. The npm figure is the week 2026-09-28 to 2026-10-04. The README says "Loki will not start any servers for you". The getting-started page says the reference images "should be checked into your git repository" and lists the optional dependencies: GraphicsMagick for the gm diffing engine, Docker for the chrome.docker target and Chrome 59+ for the chrome.app target. The README lists Chrome in AWS Lambda among the supported platforms.

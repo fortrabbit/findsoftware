@@ -1,0 +1,122 @@
+id: grass
+name: grass
+status: accepted
+checkedAt: 2026-10-28
+description: Sass compiler written in Rust that turns Sass stylesheets into plain CSS, as a library and a command-line binary.
+facts:
+  - field: repository
+    value: https://github.com/connorskees/grass
+    url: https://api.github.com/repos/connorskees/grass
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://docs.rs/grass/
+    url: https://github.com/connorskees/grass/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Documentation"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/connorskees/grass
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/connorskees/grass/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: maintainer
+    value: Connor Skees
+    url: https://github.com/connorskees/grass/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2020 Connor Skees"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/connorskees
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/connorskees/grass
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [css-processor]
+    url: https://github.com/connorskees/grass/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This crate aims to provide a high level interface for compiling Sass into plain CSS."
+  - field: runtime
+    value: [rust]
+    url: https://api.github.com/repos/connorskees/grass
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtimeMin
+    value: "rust 1.70"
+    url: https://crates.io/api/v1/crates/grass/versions
+    checkedAt: 2026-10-28
+    via: api
+  - field: runsAs
+    value: [local]
+    url: https://github.com/connorskees/grass/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "a binary that is intended to act as an invisible replacement to the Sass commandline executable"
+  - field: installMethod
+    value: "cargo install grass"
+    url: https://docs.rs/grass/latest/grass/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "cargo install grass"
+  - field: firstRelease
+    value: "2020"
+    url: https://crates.io/api/v1/crates/grass/versions
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://crates.io/api/v1/crates/grass
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2024-08-04
+    url: https://crates.io/api/v1/crates/grass
+    checkedAt: 2026-10-28
+    via: api
+  - field: crateName
+    value: grass
+    url: https://crates.io/api/v1/crates/grass
+    checkedAt: 2026-10-28
+    via: api
+  - field: crateDownloads
+    value: 2610741
+    url: https://crates.io/api/v1/crates/grass
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 29
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/grass
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 49
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/grass
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 594
+    url: https://api.github.com/repos/connorskees/grass
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 19
+    url: https://api.github.com/repos/connorskees/grass/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, packagistName, endoflifeId, latestPrereleaseDate, supportedVersions, hostedOffering]
+unreadable: []
+notes: >
+  No homepage: the repository's homepage field and the README both point to docs.rs/grass, the crate's documentation, and the project has no site of its own. The GitHub repository has tags up to 0.13.4 but no GitHub releases; latestReleaseDate and currentMajor come from crates.io, the registry that the install docs name (cargo install grass). The last commit on master is 2025-07-25, read from the commits endpoint, which the record does not need because the crate has releases; the four-year stub rule is not reached (last crate release 2024-08-04). The README says grass aims for feature parity with dart-sass and targets dart-sass 1.54.3; dart-sass and libsass are named as references, not as parents, so basedOn is not recorded. The crate's recent 90-day downloads were 461846 at the read date; the recorded figure is the total. ecosyste.ms counts were read from the crates.io entry. The MSRV in runtimeMin is the rust_version of crate version 0.13.4 in the crates.io registry. The README's known missing features are tracked in an issue, not a field. The crate's license is MIT in the GitHub and crates.io metadata; the LICENSE copyright matches.
+  The README says grass aims for complete feature parity with dart-sass, the reference implementation, that a deviation counts as a bug except in error messages and spans, that @forward and more complex uses of @use are the rough edges, and that known missing features and bugs are tracked in one issue. It also says grass is not a drop-in replacement for libsass, and that stylesheets moved from libsass need changes that a move to dart-sass would also need.

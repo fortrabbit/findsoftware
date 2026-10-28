@@ -1,0 +1,3 @@
+Astro for VS Code is the official Visual Studio Code extension for Astro projects. It adds language support for .astro files and is powered by the Astro language server. The extension covers highlighting, diagnostics, completions with auto-imports, formatting through Prettier, symbols and go to definition, and it adds a TypeScript plugin for importing Astro components into JavaScript and TypeScript files.
+
+It installs from the VS Code Marketplace, and the Astro editor setup docs name the Open VSX registry as a second route for editors such as Cursor and VSCodium. It runs inside the editor on the developer's machine.

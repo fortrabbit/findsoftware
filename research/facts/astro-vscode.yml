@@ -1,0 +1,106 @@
+id: astro-vscode
+name: Astro
+status: accepted
+checkedAt: 2026-10-28
+description: Visual Studio Code extension that adds language support for .astro files, powered by the Astro language server.
+facts:
+  - field: homepage
+    value: https://astro.build
+    url: https://raw.githubusercontent.com/withastro/astro/main/packages/language-tools/vscode/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "See our website at astro.build"
+  - field: repository
+    value: https://github.com/withastro/astro
+    url: https://api.github.com/repos/withastro/astro
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://docs.astro.build/en/editor-setup/
+    url: https://docs.astro.build/en/editor-setup/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "We maintain an official Astro VS Code Extension"
+  - field: maintainer
+    value: The Astro Technology Company
+    url: https://astro.build/blog/joining-cloudflare/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The Astro Technology Company – the company behind the Astro web framework – is joining Cloudflare!"
+  - field: maintainerType
+    value: company
+    url: https://astro.build/blog/joining-cloudflare/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The Astro Technology Company – the company behind the Astro web framework – is joining Cloudflare!"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/withastro
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/withastro/astro
+    checkedAt: 2026-10-28
+    via: api
+  - field: basedOn
+    value: [astro]
+    url: https://docs.astro.build/en/editor-setup/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "We maintain an official Astro VS Code Extension"
+  - field: categories
+    value: [editor-extension]
+    url: https://raw.githubusercontent.com/withastro/astro/main/packages/language-tools/vscode/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Provides language support for `.astro` files"
+  - field: installMethod
+    value: VS Code Marketplace, extension astro-build.astro-vscode
+    url: https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Launch VS Code Quick Open"
+  - field: installMethod
+    value: Open VSX Registry
+    url: https://docs.astro.build/en/editor-setup/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "available on the Open VSX registry for editors like Cursor or VSCodium"
+  - field: runsAs
+    value: [local]
+    url: https://raw.githubusercontent.com/withastro/astro/main/packages/language-tools/vscode/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Provides language support for `.astro` files"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/withastro/astro/main/packages/language-tools/vscode/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"license": "MIT"'
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/withastro/astro/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: firstRelease
+    value: "2021"
+    url: https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/withastro/astro/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-08
+    url: https://api.github.com/repos/withastro/astro/releases
+    checkedAt: 2026-10-28
+    via: api
+notFound: [hqCountry, parent, forkOf, successorOf, alternativeTo, runtime, runtimeMin, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, endoflifeId, npmName, packagistName, npmWeeklyDownloads, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, newsletter, dependentPackages, dependentRepos, discord, x, bluesky, mastodon, subreddit]
+unreadable: []
+notes: >
+  The extension lives in the withastro/astro monorepo at packages/language-tools/vscode, and its tags are astro-vscode@<version>. The repository's stars (63,545) and contributors belong to the monorepo that also ships the Astro framework, so no githubStargazers or contributors figure is recorded for this extension. The VS Code Marketplace listing reports 1,608,375 installs (read 2026-10-28; the gallery API reported 1,607,247 the same day); recorded here as vscodeInstalls with its date, not as a field. The marketplace display name is "Astro", which the record uses; the README title is "Astro support for Visual Studio Code". The social links on astro.build belong to Astro, not to the extension, so none are recorded. The extension is a VS Code extension, so its parent for basedOn is Astro, which the docs call its official extension; VS Code is not a record. The extension's package.json license is MIT and the root LICENSE of the monorepo (copyright 2021 Fred K. Schott) is MIT too. The homepage is the Astro site named by the extension's README; the extension has no site of its own. The firstRelease year comes from the marketplace publishedDate of 2021-05-17, the oldest upload the gallery API reports; the GitHub releases for the extension start at 2.16.0 (2025-10-30). The language is the monorepo's language as GitHub reports it, TypeScript. The Open VSX listing is an install route named by the docs, and the Astro docs also name a Zed extension, a JetBrains plugin and community extensions for Nova, which are not recorded. The README lists the features: syntax and semantic highlighting, diagnostic messages, IntelliSense completions with auto-imports, Emmet completions, props completions for JSX, TSX, Vue and Svelte components, code actions, formatting powered by Prettier and prettier-plugin-astro, symbols, hover information, go to definition and inlay hints, and a TypeScript plugin for importing Astro components into JavaScript and TypeScript files. The language server that powers the extension is in the monorepo under packages/language-tools/language-server.

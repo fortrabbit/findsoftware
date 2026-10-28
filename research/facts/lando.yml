@@ -1,0 +1,146 @@
+id: lando
+name: Lando
+status: accepted
+checkedAt: 2026-10-28
+description: Free, open-source local development tool that runs Docker-based development environments for web projects from a Landofile.
+facts:
+  - field: homepage
+    value: https://lando.dev
+    url: https://lando.dev/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Lando is a free and open-source dev tool run by the Lando Alliance"
+  - field: repository
+    value: https://github.com/lando/lando
+    url: https://api.github.com/repos/lando/lando
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://docs.lando.dev/getting-started/
+    url: https://docs.lando.dev/getting-started/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "What is Lando?"
+  - field: maintainer
+    value: Lando Alliance
+    url: https://raw.githubusercontent.com/lando/lando/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2025 Lando Alliance"
+  - field: maintainerType
+    value: foundation
+    url: https://lando.dev/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "a 501(c)(3) nonprofit"
+  - field: hqCountry
+    value: US
+    url: https://docs.lando.dev/terms
+    checkedAt: 2026-10-28
+    via: page
+    quote: "a nonprofit organization based in Washington, D.C."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/lando
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [local-dev-env]
+    url: https://docs.lando.dev/getting-started/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "a free, open source, cross-platform, local development environment"
+  - field: language
+    value: JavaScript
+    url: https://raw.githubusercontent.com/lando/core/v3.26.9/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: "\"node\": \">=20.17.0\""
+  - field: runtime
+    value: [node]
+    url: https://raw.githubusercontent.com/lando/core/v3.26.9/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: "\"node\": \">=20.17.0\""
+  - field: runtimeMin
+    value: "Node 20.17.0"
+    url: https://raw.githubusercontent.com/lando/core/v3.26.9/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: "\"node\": \">=20.17.0\""
+  - field: runsAs
+    value: [local]
+    url: https://docs.lando.dev/getting-started/requirements.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Lando is basically a PaaS running on your computer"
+  - field: installMethod
+    value: setup script for macOS, Linux and WSL (curl piped to bash)
+    url: https://docs.lando.dev/install/macos.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The macOS quickstart is to paste the below into a terminal and execute it."
+  - field: installMethod
+    value: PowerShell setup script for Windows
+    url: https://docs.lando.dev/install/windows.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The Windows quickstart is to paste the below into a PowerShell terminal and execute it."
+  - field: installMethod
+    value: from source, git clone of lando/core
+    url: https://docs.lando.dev/install/source.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Before you install from source you need to first make sure"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/lando/lando/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/lando/lando/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Lando is and always will be FREE and OPEN SOURCE"
+  - field: sourcePublic
+    value: true
+    url: https://github.com/lando/lando/blob/main/.gitmodules
+    checkedAt: 2026-10-28
+    via: page
+  - field: firstRelease
+    value: "2020"
+    url: https://api.github.com/repos/lando/lando/releases?per_page=100
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/lando/lando/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-20
+    url: https://api.github.com/repos/lando/lando/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 4246
+    url: https://api.github.com/repos/lando/lando
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 185
+    url: https://api.github.com/repos/lando/lando/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: x
+    value: https://twitter.com/devwithlando
+    url: https://raw.githubusercontent.com/lando/lando/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Follow on Twitter"
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, hostedOffering, paidEdition, pricingPage, renderingModes, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, wikidata, docker, endoflifeId, npmName, packagistName, npmWeeklyDownloads, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  The repository lando/lando is the umbrella repository: it holds the releases and the README, and its source directories are submodules (core, core-next, hyperdrive, mailpit, setup-lando, website). The CLI source is lando/core (MIT, package @lando/core 3.26.9, engines node >=20.17.0), which the source install guide clones; reviewer to decide whether repository should be lando/core. Stars, contributors and releases are read from lando/lando, as the CSV row names it. The homepage gives "50,000+ Developers Supported" and "Used by 50,000+ developers across 300+ organizations"; these count developers, not installs, so no reportedInstalls is recorded. The Lando Alliance is a 501(c)(3) nonprofit, recorded as foundation; the homepage and the terms page say nonprofit, not foundation, so a reviewer may prefer community. The terms page names the entity "Lando Alliance" with no legal form. firstRelease is 2020 from the oldest stable-named tag v3.0.0 (2020-05-05), which GitHub marks as a prerelease, and v3.0.1 (2020-05-08); the 2017 alpha tags are alphas. Platforms from the requirements page: macOS 12 or higher, Windows 10 Home or Pro 21H2 or higher with WSL2, and Linux with kernel 4.x or higher. Docker Engine is required and the installers install it. Lando is "built on Docker container technology" per the what-it-do page; Docker is no record, so no basedOn. Services and recipes lists (MySQL, MariaDB, Postgres and others) are service containers, not recorded as databases. The Slack channel has no field. The Lando Alliance Terms are dated 2025-07-04 and govern the software under MIT.

@@ -1,0 +1,103 @@
+id: ansistrano
+name: Ansistrano
+status: accepted
+checkedAt: 2026-10-28
+description: Ansible roles that deploy applications with a Capistrano-style workflow, with a companion role for rollback.
+facts:
+  - field: homepage
+    value: https://ansistrano.com
+    url: https://ansistrano.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Ansistrano"
+  - field: repository
+    value: https://github.com/ansistrano/deploy
+    url: https://api.github.com/repos/ansistrano/deploy
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/ansistrano/deploy/tree/master/docs
+    url: https://raw.githubusercontent.com/ansistrano/deploy/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Role variables"
+  - field: maintainer
+    value: Carlos Buenosvinos
+    url: https://raw.githubusercontent.com/ansistrano/deploy/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2014-2021 Carlos Buenosvinos"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/ansistrano/deploy/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2014-2021 Carlos Buenosvinos"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/ansistrano
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: YAML
+    url: https://api.github.com/repos/ansistrano/deploy
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [deploy-tool]
+    url: https://raw.githubusercontent.com/ansistrano/deploy/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "are Ansible roles to manage application deployments with a Capistrano-style workflow"
+  - field: installMethod
+    value: ansible-galaxy install ansistrano.deploy ansistrano.rollback
+    url: https://raw.githubusercontent.com/ansistrano/deploy/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "ansible-galaxy install ansistrano.deploy ansistrano.rollback"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/ansistrano/deploy/blob/master/docs/getting-started.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Ansible in your deployer machine"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/ansistrano/deploy
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/ansistrano/deploy/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: firstRelease
+    value: "2015"
+    url: https://api.github.com/repos/ansistrano/deploy/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/ansistrano/deploy/tags
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-03-24
+    url: https://api.github.com/repos/ansistrano/deploy/tags
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 2409
+    url: https://api.github.com/repos/ansistrano/deploy
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 92
+    url: https://api.github.com/repos/ansistrano/deploy/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runtime, runtimeMin, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, endoflifeId, npmName, packagistName, npmWeeklyDownloads, packagistDownloads, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, dependentPackages, dependentRepos]
+unreadable: ["https://ansistrano.com/ answers 200 with a JavaScript app shell and no text in the raw page; only its title was read"]
+notes: >
+  The project's own site ansistrano.com serves a JavaScript shell, so every fact comes from the repository's README and docs folder (getting-started, overview, deployment, role-variables, rollback, hooks, examples). The project is distributed through Ansible Galaxy, which the brief's registry list does not cover, so no registry download or package figure is recorded. The README describes the roles as Ansible roles; Ansible is not a record id, so basedOn is absent, and no runtime value is recorded because the docs name Ansible on the deployer machine without naming a runtime. The GitHub releases page stops at 2.2.0 (2017-02-23), while the tags run to 4.4.0 (commit dated 2026-03-24); currentMajor 4 and latestReleaseDate come from the tags, which the reviewer should confirm as the release source. The oldest release is 1.1.0 (2015-10-27) and the oldest tag 1.0.0 (2015-09-28), so firstRelease is 2015 either way. The docs list companies under "Who is using Ansistrano?" in docs/overview.md; that list is a usage signal, not a count, and is not recorded as a figure. The anonymous usage statistics endpoint (ansistrano.com/info) counts deployments, not installs, so it is not recorded as reportedInstalls. The maintainer is the copyright holder named in LICENSE (2014-2021); the GitHub owner is the organization ansistrano. The hqCountry of the maintainer is not stated on any page read. The overview (docs/overview.md) describes the flow as a setup phase that creates the releases folder, a code update that puts the new release on the host, a symlink phase that moves current to it, and a cleanup phase that keeps the number of releases set by ansistrano_keep_releases; the rollback role moves current back to an earlier release. The README lists the deployment strategies rsync, rsync_direct, git, svn, hg, download, download_unarchive, s3, s3_unarchive, gcs and gcs_unarchive, and the getting-started page says rsync is needed on the target machine for the rsync, rsync_direct and git strategies.

@@ -1,0 +1,106 @@
+id: glyphhanger
+name: glyphhanger
+status: accepted
+checkedAt: 2026-10-28
+description: Command-line tool that finds the glyphs a web page uses and subsets web font files to them.
+facts:
+  - field: repository
+    value: https://github.com/zachleat/glyphhanger
+    url: https://api.github.com/repos/zachleat/glyphhanger
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/zachleat/glyphhanger/blob/main/README.md
+    url: https://github.com/zachleat/glyphhanger/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "It can subset web fonts."
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/glyphhanger/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Zach Leatherman
+    url: https://github.com/zachleat/glyphhanger/blob/v6.0.0/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"name": "Zach Leatherman"'
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/zachleat
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/zachleat/glyphhanger
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [asset-optimizer]
+    url: https://github.com/zachleat/glyphhanger/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "It can subset web fonts."
+  - field: runtime
+    value: [node]
+    url: https://github.com/zachleat/glyphhanger/blob/v6.0.0/package.json
+    checkedAt: 2026-10-28
+    via: page
+  - field: installMethod
+    value: "npm install -g glyphhanger"
+    url: https://github.com/zachleat/glyphhanger/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm install -g glyphhanger"
+  - field: firstRelease
+    value: "2017"
+    url: https://registry.npmjs.org/glyphhanger
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 6
+    url: https://api.github.com/repos/zachleat/glyphhanger/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-06-05
+    url: https://api.github.com/repos/zachleat/glyphhanger/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: glyphhanger
+    url: https://registry.npmjs.org/glyphhanger/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 985
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/glyphhanger
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 10
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/glyphhanger
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 46
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/glyphhanger
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 907
+    url: https://api.github.com/repos/zachleat/glyphhanger
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 10
+    url: https://api.github.com/repos/zachleat/glyphhanger/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, packagistName, endoflifeId, latestPrereleaseDate, supportedVersions, hostedOffering, runsAs]
+unreadable: []
+notes: >
+  Homepage: the repository's homepage field points to https://www.zachleat.com/web/glyphhanger/, which is a blog post by the maintainer announcing the tool (https, 200), not a project site; no homepage is recorded and a reviewer may link it. The repository zachleat/glyphhanger is a fork of filamentgroup/glyphhanger, which GitHub reports archived (last push 2021-07-01); its README links the archived issue list. The move to the fork is a relocation, not an end, so status stays accepted and the repository is the fork. The fork's GitHub releases start at v4.0.0 (2026-06-05); firstRelease is from the npm registry, where version 1.0.0 was uploaded 2017-01-11 under the same package name. The LICENSE copyright line reads "Copyright (c) 2017 Filament Group", while package.json names Zach Leatherman as author; the author is recorded as maintainer and a reviewer may decide otherwise. The README requires pyftsubset (fonttools, Python) for subsetting, and says glyphhanger uses Puppeteer and headless Chrome; these are requirements, not fields. The README's alternatives (unicode-ranger, subfont, glypht) and the related Unicode Range Interchange are named on the project's own pages; no record ids exist for them, so they are not recorded as alternativeTo. The npm weekly figure is the period 2026-09-28 to 2026-10-04, per the brief. Contributors counted across all pages (per_page=1, last page 10).
+  The README says the default output is a Unicode range for the characters used on a page or in files; --subset writes TTF, WOFF and WOFF2 files, --css writes a @font-face block, --spider follows local links, --family and --onlyVisible limit the characters read, and --cssSelector limits them to matching elements.
+  By default the page reader runs Puppeteer with headless Chrome; a --jsdom mode reads pages without it. The README shows the tool reading multiple URLs. runsAs is not recorded: the README gives command examples, not a statement of where it runs.
