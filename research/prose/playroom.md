@@ -1,0 +1,3 @@
+Playroom is a code-oriented design environment that renders JSX written against a team's own component library. It shows designs across several themes and screen sizes at once, and its README describes it as a zero-install environment.
+
+Playroom runs as a local development server while a design system is being worked on. For publishing, it builds into a standalone bundle that the [README](https://github.com/seek-oss/playroom/blob/master/README.md) says can be deployed next to existing design system documentation. It is installed as the npm package named in the README, and the repository is a pnpm workspace whose public package is Playroom itself.

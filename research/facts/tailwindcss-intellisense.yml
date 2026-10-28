@@ -1,0 +1,92 @@
+id: tailwindcss-intellisense
+name: Tailwind CSS IntelliSense
+status: accepted
+checkedAt: 2026-10-28
+description: "Visual Studio Code extension that adds autocomplete, linting, hover previews and a CSS language mode for Tailwind CSS projects."
+facts:
+  - field: docs
+    value: "https://tailwindcss.com/docs/editor-setup"
+    url: "https://tailwindcss.com/docs/editor-setup"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The official Tailwind CSS IntelliSense extension for Visual Studio Code enhances the Tailwind development experience"
+  - field: repository
+    value: "https://github.com/tailwindlabs/tailwindcss-intellisense"
+    url: "https://api.github.com/repos/tailwindlabs/tailwindcss-intellisense"
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: ["editor-extension"]
+    url: "https://tailwindcss.com/docs/editor-setup"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The official Tailwind CSS IntelliSense extension for Visual Studio Code"
+  - field: basedOn
+    value: ["tailwindcss"]
+    url: "https://raw.githubusercontent.com/tailwindlabs/tailwindcss-intellisense/v0.16.0/packages/vscode-tailwindcss/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Tailwind CSS IntelliSense enhances the Tailwind development experience"
+  - field: language
+    value: "TypeScript"
+    url: "https://api.github.com/repos/tailwindlabs/tailwindcss-intellisense"
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: "MIT"
+    url: "https://raw.githubusercontent.com/tailwindlabs/tailwindcss-intellisense/v0.16.0/packages/vscode-tailwindcss/LICENSE"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: "open-source"
+    url: "https://raw.githubusercontent.com/tailwindlabs/tailwindcss-intellisense/v0.16.0/packages/vscode-tailwindcss/LICENSE"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: installMethod
+    value: ["VS Code Marketplace"]
+    url: "https://raw.githubusercontent.com/tailwindlabs/tailwindcss-intellisense/v0.16.0/packages/vscode-tailwindcss/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Install via the Visual Studio Code Marketplace"
+  - field: firstRelease
+    value: "2018"
+    url: "https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss"
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: "0"
+    url: "https://api.github.com/repos/tailwindlabs/tailwindcss-intellisense/releases"
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: "2026-07-17"
+    url: "https://api.github.com/repos/tailwindlabs/tailwindcss-intellisense/releases/tags/v0.16.0"
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: "Tailwind Labs, Inc."
+    url: "https://raw.githubusercontent.com/tailwindlabs/tailwindcss-intellisense/v0.16.0/packages/vscode-tailwindcss/LICENSE"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) Tailwind Labs, Inc."
+  - field: repoOwnerType
+    value: "organization"
+    url: "https://api.github.com/users/tailwindlabs"
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 3478
+    url: "https://api.github.com/repos/tailwindlabs/tailwindcss-intellisense"
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 51
+    url: "https://api.github.com/repos/tailwindlabs/tailwindcss-intellisense/contributors?per_page=1"
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, parent, hqCountry, maintainerType, runtime, runtimeMin, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, alternativeTo, paidEdition, pricingPage, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, dependentPackages, dependentRepos, endoflifeId, supportedVersions, buildCommand, outputDir, usageShare, reportedInstalls, forkOf, successorOf]
+unreadable: []
+notes: >
+  The extension has no website of its own; the Tailwind docs page at tailwindcss.com/docs/editor-setup is the parent project's site, so no homepage is recorded and the docs field points there. The repository is a pnpm monorepo: the extension lives in packages/vscode-tailwindcss, and the root has no LICENSE, which is why the GitHub API reports the license as null; the MIT license is the package's own LICENSE at tag v0.16.0. The marketplace listing bradlc.vscode-tailwindcss (publisher bradlc, display name Tailwind Labs) reports 14837708 installs on 2026-10-28 and a first published date of 2018-08-21, older than the oldest GitHub tag (v0.3.0, 2020-06-11), so firstRelease is 2018. The highest stable GitHub release is v0.16.0 (2026-07-17); the GitHub version line is 0.x, so currentMajor is 0 and the minor line is 0.16. The extension's package.json at v0.16.0 sets engines vscode ^1.67.0, which states the VS Code host version, not a runtime minimum for the tool, so runtimeMin stays unknown. The README states the extension activates in a project with a CSS file that imports tailwindcss, or, for earlier versions, a Tailwind CSS config file. It also lists a Tailwind CSS language mode and a class sorting command marked pre-release. The README states the extension activates when the workspace uses tailwindcss, which is the basis for basedOn tailwindcss. The docs page states the extension is for Visual Studio Code; the marketplace lists pricing as free, recorded in no field. No page states that the extension runs on the developer's machine in those words, so runsAs stays unknown for a reviewer to decide. The GitHub organization profile is the maintainer name source only where the license names none; here the LICENSE copyright line names Tailwind Labs, Inc. The Tailwind CSS language server packages in the same monorepo are separately published packages and are not recorded as records of their own.

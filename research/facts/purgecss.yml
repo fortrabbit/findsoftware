@@ -1,0 +1,123 @@
+id: purgecss
+name: PurgeCSS
+status: accepted
+checkedAt: 2026-10-28
+description: Tool that removes unused CSS selectors by matching them against the markup and scripts of a project, producing smaller stylesheets.
+facts:
+  - field: homepage
+    value: https://purgecss.com
+    url: https://purgecss.com
+    checkedAt: 2026-10-28
+    via: page
+    quote: "PurgeCSS is a tool to remove unused CSS from your project"
+  - field: repository
+    value: https://github.com/FullHuman/purgecss
+    url: https://api.github.com/repos/FullHuman/purgecss
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://purgecss.com
+    url: https://raw.githubusercontent.com/FullHuman/purgecss/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "You can find the PurgeCSS documentation on"
+  - field: maintainer
+    value: Full Human LTD
+    url: https://purgecss.com
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright © 2018-present Full Human LTD"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/FullHuman
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [build-tool]
+    url: https://purgecss.com
+    checkedAt: 2026-10-28
+    via: page
+    quote: "PurgeCSS is a tool to remove unused CSS from your project"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/FullHuman/purgecss
+    checkedAt: 2026-10-28
+    via: api
+  - field: runsAs
+    value: [local]
+    url: https://purgecss.com/CLI.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "You can either install PurgeCSS as a dev dependency"
+  - field: installMethod
+    value: npm install purgecss --save-dev
+    url: https://raw.githubusercontent.com/FullHuman/purgecss/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm install purgecss --save-dev"
+  - field: installMethod
+    value: npm i -g purgecss
+    url: https://purgecss.com/CLI.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm i -g purgecss"
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/purgecss/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/FullHuman/purgecss/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2020 Full Human"
+  - field: firstRelease
+    value: "2017"
+    url: https://registry.npmjs.org/purgecss
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 8
+    url: https://api.github.com/repos/FullHuman/purgecss/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-01-24
+    url: https://api.github.com/repos/FullHuman/purgecss/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 8053
+    url: https://api.github.com/repos/FullHuman/purgecss
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 85
+    url: https://api.github.com/repos/FullHuman/purgecss/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: purgecss
+    url: https://registry.npmjs.org/purgecss/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1540290
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/purgecss
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 294
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/purgecss
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 169179
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/purgecss
+    checkedAt: 2026-10-28
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, maintainerType, runtime, runtimeMin, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, endoflifeId, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, packagistName]
+unreadable: []
+notes: >
+  The repository is a pnpm monorepo that publishes several packages (purgecss core, postcss-purgecss, purgecss-webpack-plugin, gulp, grunt, rollup, vue-cli plugins); the npm package purgecss is the core one the install docs name, and its GitHub releases (v8.0.0 is the highest stable, 2026-01-24) are used. The npm package has a next dist-tag at 6.0.0-alpha.0, which is a prerelease and is not recorded. The npm registry's first upload is 0.1.0 (2017-07-08), which sets firstRelease. The LICENSE copyright line says "Full Human" and the homepage footer says "Full Human LTD"; the footer is recorded as maintainer. The comparison page on the project's site compares PurgeCSS with UnCSS and PurifyCSS: neither has a record, so no alternativeTo is written. The npm weekly figure is the sum of the seven daily counts for 2026-09-28 to 2026-10-04. No page names Node.js or an engines range, so runtime and runtimeMin are not recorded; the install is through npm. The homepage links a site at full-human.health, which is not identified on the project's pages as the company's, so it is not recorded. The CSV category css-processor maps to css-framework in the import; build-tool is recorded, as for the other asset-optimizer tools. The README says PurgeCSS analyzes the content and CSS files, matches the selectors in the CSS to the content, and removes the unused selectors from the CSS; the CLI page says PurgeCSS is available via a command line interface and can be used by itself or with a configuration file; the README's package table lists the plugins for PostCSS, webpack, Gulp, Grunt and Rollup as separate packages.

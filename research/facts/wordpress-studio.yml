@@ -1,0 +1,98 @@
+id: wordpress-studio
+name: WordPress Studio
+status: accepted
+checkedAt: 2026-10-28
+description: "Free desktop app for creating and managing local WordPress sites and for building and testing plugins and themes."
+facts:
+  - field: homepage
+    value: "https://developer.wordpress.com/studio/"
+    url: "https://developer.wordpress.com/studio/"
+    checkedAt: 2026-10-28
+    via: page
+  - field: repository
+    value: "https://github.com/Automattic/studio"
+    url: "https://api.github.com/repos/Automattic/studio"
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: "https://developer.wordpress.com/docs/developer-tools/studio/"
+    url: "https://raw.githubusercontent.com/Automattic/studio/trunk/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Review the documentation"
+  - field: maintainer
+    value: "Automattic Inc."
+    url: "https://wordpress.com/tos/"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "© Automattic Inc."
+  - field: categories
+    value: ["local-dev-env"]
+    url: "https://raw.githubusercontent.com/Automattic/studio/trunk/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "is an open source desktop application for creating and managing WordPress sites"
+  - field: language
+    value: "TypeScript"
+    url: "https://api.github.com/repos/Automattic/studio"
+    checkedAt: 2026-10-28
+    via: api
+  - field: runsAs
+    value: ["local"]
+    url: "https://raw.githubusercontent.com/Automattic/studio/trunk/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "is an open source desktop application for creating and managing WordPress sites"
+  - field: installMethod
+    value: ["download"]
+    url: "https://raw.githubusercontent.com/Automattic/studio/trunk/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Simply download the app to start building and testing"
+  - field: hostedOffering
+    value: "cloud-hosted preview sites"
+    url: "https://raw.githubusercontent.com/Automattic/studio/trunk/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Share a stable, cloud-hosted preview link"
+  - field: license
+    value: "GPL-2.0-or-later"
+    url: "https://raw.githubusercontent.com/Automattic/studio/trunk/package.json"
+    checkedAt: 2026-10-28
+    via: api
+    quote: "\"license\": \"GPL-2.0-or-later\""
+  - field: licenseModel
+    value: "open-source"
+    url: "https://raw.githubusercontent.com/Automattic/studio/trunk/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "WordPress Studio is GPLv2 licensed"
+  - field: firstRelease
+    value: "2024"
+    url: "https://api.github.com/repos/Automattic/studio/releases?per_page=100"
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 2
+    url: "https://api.github.com/repos/Automattic/studio/releases?per_page=100"
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-21"
+    url: "https://api.github.com/repos/Automattic/studio/releases?per_page=100"
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 547
+    url: "https://api.github.com/repos/Automattic/studio"
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 76
+    url: "https://api.github.com/repos/Automattic/studio/contributors?per_page=1"
+    checkedAt: 2026-10-28
+    via: api
+notFound: [hqCountry, pricingPage, paidEdition, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, runtime, runtimeMin, buildCommand, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, outputDir, endoflifeId, npmName, npmWeeklyDownloads, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  Desktop app for macOS (Intel and Apple Silicon, macOS 13 or newer), Windows (x64 or ARM64 per the README; 64-bit per the developer docs) and Linux (64-bit Debian based per the developer docs; x64 or ARM64 per the README), installed from the download page; the Windows install from the Microsoft Store is named in the docs. The project's own site is developer.wordpress.com/studio/; wordpress.studio answers 302 to it and is not recorded. The README's Studio Sync feature pushes to or pulls from WordPress.com or Pressable sites, and it can import any WordPress site to work on locally; the Studio CLI exposes features outside the app; Preview Sites are cloud-hosted and expire after seven days without updates. The company is named as Automattic Inc. in the wordpress.com footer; the country (US) appears only in the wordpress.com JSON-LD and no quote was checked, so hqCountry is not recorded. The GitHub license detection reads GPL-2.0; the README and LICENSE say GPLv2, and package.json says GPL-2.0-or-later, so the more specific package.json statement is the one license entry and the README wording is noted here. The repository's default branch is trunk. No paid tier was found and the README calls the app free. The app is not published to npm as a library, so no npm figure is recorded. The GitHub contributor count is the repository's figure.

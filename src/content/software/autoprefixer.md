@@ -16,6 +16,8 @@ language: javascript
 runtime:
   - node
 runtimeMin: node 10
+basedOn:
+  - postcss
 runsAs:
   - local
 installMethod: npm install postcss postcss-cli autoprefixer
@@ -95,6 +97,9 @@ sources:
     checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/autoprefixer
+    checkedAt: 2026-10-28
+  - field: basedOn
+    url: https://github.com/postcss/autoprefixer/blob/main/README.md
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

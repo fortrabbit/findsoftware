@@ -1,0 +1,103 @@
+id: puma-dev
+name: puma-dev
+status: accepted
+checkedAt: 2026-10-28
+description: Zero-config development server for macOS and Linux that starts Rack and Rails apps on demand under local domains such as .test, using Puma.
+facts:
+  - field: homepage
+    value: https://puma.dev/
+    url: https://puma.dev/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Puma-dev helps users manage their ruby web apps under development."
+  - field: repository
+    value: https://github.com/puma/puma-dev
+    url: https://api.github.com/repos/puma/puma-dev
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/puma/puma-dev/blob/master/README.md
+    url: https://raw.githubusercontent.com/puma/puma-dev/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A fast, zero-config development server for macOS and Linux"
+  - field: maintainer
+    value: Evan Phoenix
+    url: https://raw.githubusercontent.com/puma/puma-dev/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2016, Evan Phoenix"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/puma
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [dev-tool]
+    url: https://raw.githubusercontent.com/puma/puma-dev/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A fast, zero-config development server for macOS and Linux"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/puma/puma-dev
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://raw.githubusercontent.com/puma/puma-dev/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "You may download binaries for macOS and Linux"
+  - field: runsAs
+    value: [local]
+    url: https://raw.githubusercontent.com/puma/puma-dev/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A fast, zero-config development server for macOS and Linux"
+  - field: installMethod
+    value: brew install puma/puma/puma-dev
+    url: https://raw.githubusercontent.com/puma/puma-dev/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "brew install puma/puma/puma-dev"
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/puma/puma-dev
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: BSD-3-Clause
+    url: https://raw.githubusercontent.com/puma/puma-dev/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without"
+  - field: firstRelease
+    value: "2016"
+    url: https://api.github.com/repos/puma/puma-dev/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/puma/puma-dev/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2023-02-25
+    url: https://api.github.com/repos/puma/puma-dev/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1807
+    url: https://api.github.com/repos/puma/puma-dev
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 44
+    url: https://api.github.com/repos/puma/puma-dev/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, endoflifeId, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, npmName, packagistName, rubygemsName, runtimeMin]
+unreadable: []
+notes: >
+  Operating systems: the README title says "for macOS and Linux"; Linux needs extra steps for the root CA, .test resolution and ports 80 and 443, and the README says Linux does not run in the background automatically. The README says puma-dev is "the emotional successor to pow"; no record exists for pow, so no successorOf is written. The apps it serves are Rack and Rails apps run by Puma, and the README tells users to add the puma gem to each app's Gemfile; puma is a gem the apps use, not the parent of this tool, so no basedOn is written, and no record exists for puma. The Homebrew formula is in the puma/puma tap; formulae.brew.sh has no page for it, so install counts are not recorded. Several early GitHub releases (v0.2 to v0.18.0, and 0.11) are flagged as pre-releases; the highest stable release is v0.18.3 (2023-02-25); the default branch's last commit has the same date; the major is 0. Criterion 4: the last release is under four years old, so it is accepted now; without a new release by 2027-02-25 the import moves it to stub. The repository's pushed_at (2024-05-13) is later than the last commit; the commit date is used. The README links the project webpage at puma.dev, which is recorded as homepage. The README highlights are easy startup and idle shutdown of Rack and Rails apps, access through the .test subdomain (configurable), and https; apps are added by symlinking their directory into ~/.puma-dev, and a proxy file can point a name at another port or host; the README says the server supports Linux as well as macOS.

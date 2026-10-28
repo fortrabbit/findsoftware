@@ -1,0 +1,122 @@
+id: phoenix-esbuild
+name: esbuild for Phoenix
+status: accepted
+checkedAt: 2026-10-28
+description: Mix tasks for installing the esbuild CLI and invoking it from Elixir projects, such as Phoenix applications.
+facts:
+  - field: repository
+    value: https://github.com/phoenixframework/esbuild
+    url: https://api.github.com/repos/phoenixframework/esbuild
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://hexdocs.pm/esbuild
+    url: https://hexdocs.pm/esbuild
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: Wojtek Mach, José Valim
+    url: https://github.com/phoenixframework/esbuild/blob/main/LICENSE.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2021 Wojtek Mach, José Valim."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/phoenixframework/esbuild
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Elixir
+    url: https://api.github.com/repos/phoenixframework/esbuild
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: ["build-plugin"]
+    url: https://github.com/phoenixframework/esbuild/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Mix tasks for installing and invoking esbuild"
+  - field: basedOn
+    value: "esbuild"
+    url: https://github.com/phoenixframework/esbuild/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Mix tasks for installing and invoking esbuild"
+  - field: runtime
+    value: ["elixir"]
+    url: https://github.com/phoenixframework/esbuild/blob/v0.10.1/mix.exs
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'elixir: "~> 1.14"'
+  - field: installMethod
+    value: "Mix dependency in mix.exs, then mix esbuild.install"
+    url: https://github.com/phoenixframework/esbuild/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Now you can install esbuild by running"
+  - field: runsAs
+    value: ["local"]
+    url: https://github.com/phoenixframework/esbuild/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "For development, we want to enable watch mode."
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/phoenixframework/esbuild
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT License
+    url: https://github.com/phoenixframework/esbuild/blob/main/LICENSE.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2021"
+    url: https://hex.pm/api/packages/esbuild/releases/0.1.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://hex.pm/api/packages/esbuild
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-19
+    url: https://hex.pm/api/packages/esbuild/releases/0.10.1
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 277
+    url: https://api.github.com/repos/phoenixframework/esbuild
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 33
+    url: https://api.github.com/repos/phoenixframework/esbuild/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: hexName
+    value: esbuild
+    url: https://hex.pm/api/packages/esbuild
+    checkedAt: 2026-10-28
+    via: api
+  - field: hexDownloads
+    value: 21018053 total
+    url: https://hex.pm/api/packages/esbuild
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 49
+    url: https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/esbuild
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 1680
+    url: https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/esbuild
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, forkOf, successorOf, alternativeTo, runtimeMin, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, pypiDownloads, endoflifeId, wikidata, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: []
+notes: >
+  No GitHub release or tag-based release page exists; the Hex package esbuild is the registry the install docs name (mix.exs dependency "{:esbuild, ...}"), and its 24 uploads run from 0.1.0 (2021-07-18) to 0.10.1 (2026-10-19), so currentMajor, firstRelease and latestReleaseDate come from Hex. The repository tags run v0.1.0 onward to v0.10.1, the highest stable tag. The GitHub homepage field is empty; the Hex package links name esbuild.github.io, which is the upstream esbuild project's site and is not recorded as this project's homepage. The README says the project installs and invokes esbuild, so basedOn esbuild is recorded; Phoenix is described under "Adding to Phoenix" as the application it is added to and is not recorded as a parent. runtimeMin is not recorded: mix.exs requires Elixir "~> 1.14", but an Elixir version is not a BEAM runtime minimum. The Hex package maintainers list is empty; maintainer comes from the LICENSE copyright line. The Hex license list says MIT. The Hex metadata marks 0.8.0 retired as invalid, which is not a project end. The contributors figure counts all pages of the contributors endpoint.

@@ -15,6 +15,8 @@ language: javascript
 runtime:
   - node
 runtimeMin: node 22
+basedOn:
+  - postcss
 runsAs:
   - local
 installMethod: npm install cssnano postcss --save-dev
@@ -86,6 +88,9 @@ sources:
     checkedAt: 2026-10-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/cssnano
+    checkedAt: 2026-10-28
+  - field: basedOn
+    url: https://github.com/cssnano/cssnano/blob/main/README.md
     checkedAt: 2026-10-28
 ai: authored
 contentStore: null

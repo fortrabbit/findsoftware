@@ -1,0 +1,110 @@
+id: s3deploy
+name: s3deploy
+status: accepted
+checkedAt: 2026-10-28
+description: Command-line tool that uploads a static website to Amazon S3 and CloudFront, comparing ETag hashes so that only changed files are sent.
+facts:
+  - field: repository
+    value: "https://github.com/bep/s3deploy"
+    url: "https://api.github.com/repos/bep/s3deploy"
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: "https://github.com/bep/s3deploy/blob/master/README.md"
+    url: "https://github.com/bep/s3deploy/blob/master/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The flags can be set in one of (in priority order)"
+  - field: maintainer
+    value: "Bjørn Erik Pedersen"
+    url: "https://github.com/bep/s3deploy/blob/master/LICENSE"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2018 Bjørn Erik Pedersen"
+  - field: repoOwnerType
+    value: "user"
+    url: "https://api.github.com/repos/bep/s3deploy"
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: "Go"
+    url: "https://api.github.com/repos/bep/s3deploy"
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: "go binary"
+    url: "https://github.com/bep/s3deploy/blob/master/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "s3deploy is a Go application"
+  - field: runtimeMin
+    value: "1.25"
+    url: "https://github.com/bep/s3deploy/blob/v2.16.0/go.mod"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "go 1.25.0"
+  - field: categories
+    value: ["deploy-tool"]
+    url: "https://github.com/bep/s3deploy/blob/master/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A simple tool to deploy static websites to Amazon S3 and CloudFront"
+  - field: installMethod
+    value: "download pre-built binaries from GitHub releases"
+    url: "https://github.com/bep/s3deploy/blob/master/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Pre-built binaries can be found"
+  - field: installMethod
+    value: "go install github.com/bep/s3deploy/v2@latest"
+    url: "https://github.com/bep/s3deploy/blob/master/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "go install github.com/bep/s3deploy/v2@latest"
+  - field: installMethod
+    value: "brew install --cask bep/tap/s3deploy"
+    url: "https://github.com/bep/s3deploy/blob/master/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "brew install --cask bep/tap/s3deploy"
+  - field: runsAs
+    value: ["local"]
+    url: "https://github.com/bep/s3deploy/blob/master/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "is a perfect tool to use with a continuous integration tool"
+  - field: license
+    value: "MIT"
+    url: "https://github.com/bep/s3deploy/blob/master/LICENSE"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 2
+    url: "https://api.github.com/repos/bep/s3deploy/releases"
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: "2026-04-09"
+    url: "https://api.github.com/repos/bep/s3deploy/releases"
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2017"
+    url: "https://api.github.com/repos/bep/s3deploy/releases"
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 551
+    url: "https://api.github.com/repos/bep/s3deploy"
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 14
+    url: "https://api.github.com/repos/bep/s3deploy/contributors"
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, paidEdition, npmName, packagistName, npmWeeklyDownloads, packagistDownloads, pypiDownloads, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, wikidata]
+unreadable: []
+notes: >
+  No homepage: the GitHub homepage field is empty and the README names no site of its own, so the repository is the only project link. The LICENSE copyright line dates 2018 while the repository was created in 2016; the maintainer is taken from that line as written. Deploy target: Amazon S3 and CloudFront, with CloudFront cache invalidation; no fields for deploy target exist, so it stays here. The README says s3deploy is "optimal in combination with" static site generators such as Hugo: a usage statement, not basedOn. The Homebrew install is a cask from the bep/tap tap and needs sudo, per the README. The README lists two alternatives (go3up, s3up) by name; they are not records here. Go modules have no download figure and no registry id is recorded. The install route run on a developer machine or in CI is a CLI; the runsAs local fact cites the CI statement, since the README command examples are not a runsAs statement. The first GitHub release is v1.0 from 2017-04-23 (api).

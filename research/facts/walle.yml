@@ -1,0 +1,138 @@
+id: walle
+name: Walle
+status: accepted
+checkedAt: 2026-10-28
+description: Self-hosted deployment system that releases project code from git to target servers and rolls releases back through a web interface.
+facts:
+  - field: homepage
+    value: https://walle-web.io
+    url: https://walle-web.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "walle 瓦力 - 部署系统"
+  - field: repository
+    value: https://github.com/meolu/walle-web
+    url: https://api.github.com/repos/meolu/walle-web
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://walle-web.io/docs/2/installation.html
+    url: https://raw.githubusercontent.com/meolu/walle-web/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "快速安装"
+  - field: maintainer
+    value: wushuiyong
+    url: https://raw.githubusercontent.com/meolu/walle-web/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright 2015 wushuiyong"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/meolu
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/meolu/walle-web
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [deploy-tool]
+    url: https://raw.githubusercontent.com/meolu/walle-web/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "支持各种web代码发布"
+  - field: installMethod
+    value: git clone, then sh admin.sh init
+    url: https://walle-web.io/docs/2/installation.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "sh admin.sh init"
+  - field: installMethod
+    value: docker-compose with community images
+    url: https://walle-web.io/docs/2/installation_docker.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "为社区提供了 Docker 版本"
+  - field: runsAs
+    value: [always-on]
+    url: https://walle-web.io/docs/2/installation.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "升级完需要重启walle服务"
+  - field: runtime
+    value: [python]
+    url: https://walle-web.io/docs/2/dependency.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Python 3.5+ 和 Python 2.7+"
+  - field: databases
+    value: [mysql]
+    url: https://walle-web.io/docs/2/dependency.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MySQL 5.6.5以上"
+  - field: contentStore
+    value: database
+    url: https://walle-web.io/docs/2/installation.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "创建一个数据库 walle"
+  - field: adminUi
+    value: yes, web console for deployments
+    url: https://walle-web.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "实时websocket"
+  - field: userRoles
+    value: yes, SUPER, OWNER, MASTER, DEVELOPER and REPORTER roles
+    url: https://walle-web.io/docs/2/architecture.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "SUPER 超管"
+  - field: x
+    value: https://twitter.com/wushuiyong
+    url: https://walle-web.io/
+    checkedAt: 2026-10-28
+    via: page
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/meolu/walle-web
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/meolu/walle-web/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Apache License"
+  - field: firstRelease
+    value: "2015"
+    url: https://api.github.com/repos/meolu/walle-web/commits/v0.8.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/meolu/walle-web/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2019-04-16
+    url: https://api.github.com/repos/meolu/walle-web/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 11981
+    url: https://api.github.com/repos/meolu/walle-web
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 44
+    url: https://api.github.com/repos/meolu/walle-web/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runtimeMin, renderingModes, headlessApi, templating, i18n, multisite, livePreview, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, wikidata, endoflifeId, lastCommitDate]
+unreadable: []
+notes: >
+  Repository meolu/walle-web (Apache-2.0, Python), homepage walle-web.io and the 2.x install docs, read 2026-10-28. Highest stable release is v2.0.1 (2019-04-16), so latestReleaseDate is over four years old; the import moves the record to stub, status stays accepted here. The alpha tag is dated 2018-12-09 and is older than the latest release, so no latestPrereleaseDate. firstRelease 2015 is the author date of tag v0.8.0 (2015-11-01); the GitHub releases for v0.8.0 to v1.0.0 were published on 2016-01-24, and the repository was created 2015-09-11. Runtime conflict: the dependency page says "Python 3.5+ 和 Python 2.7+", the installation page says to install Python 2.7 with pip, and the README roadmap lists "Python 3.7+兼容" for 2.0.1; no runtimeMin is recorded. Operating system: the dependency page says Linux with Bash, git and ssh, and that it does not support Windows and should not be installed on a Mac. The installation page says the service must be deployed inside an intranet ("务必部署在内网！"). The architecture page says the host must hold SSH keys trusted by the code host and by every target machine; deployment runs through SSH. The homepage lists deployment requests with review, a real-time websocket console, rollback, roles and notifications. The Docker page says the Docker version was contributed by a community member and uses community images (alenx/walle-web). The homepage meta description names "walle 瓦力数字科技有限公司"; no record of a company is made because the homepage does not name it as owner, and hqCountry is not stated by any page read. The About page says the maintainer runs a data platform at another company; that is not recorded. The Gitee mirror and the Weibo link are not facts. The README names the maintainer's WeChat as 吴水永, the name the LICENSE gives as wushuiyong; the reviewer decides which form the record shows.

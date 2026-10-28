@@ -1,0 +1,119 @@
+id: webOptimizer
+name: WebOptimizer
+status: accepted
+checkedAt: 2026-10-28
+description: ASP.NET Core middleware that bundles and minifies CSS and JavaScript files at runtime and keeps the output in memory.
+facts:
+  - field: repository
+    value: https://github.com/ligershark/WebOptimizer
+    url: https://api.github.com/repos/ligershark/WebOptimizer
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://ligershark.github.io/WebOptimizer/
+    url: https://ligershark.github.io/WebOptimizer/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "ASP.NET Core WebOptimizer Docs"
+  - field: categories
+    value: [asset-pipeline]
+    url: https://raw.githubusercontent.com/ligershark/WebOptimizer/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "bundling and minification of CSS and JavaScript files at runtime"
+  - field: basedOn
+    value: aspnet-core
+    url: https://raw.githubusercontent.com/ligershark/WebOptimizer/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "ASP.NET Core middleware for bundling and minification of CSS and JavaScript files at runtime"
+  - field: maintainer
+    value: LigerShark
+    url: https://raw.githubusercontent.com/ligershark/WebOptimizer/master/src/WebOptimizer.Core/WebOptimizer.Core.csproj
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright © LigerShark"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/ligershark
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: C#
+    url: https://api.github.com/repos/ligershark/WebOptimizer
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [dotnet]
+    url: https://raw.githubusercontent.com/ligershark/WebOptimizer/master/src/WebOptimizer.Core/WebOptimizer.Core.csproj
+    checkedAt: 2026-10-28
+    via: page
+    quote: "<TargetFrameworks>net8.0</TargetFrameworks>"
+  - field: runtime
+    value: [dotnet]
+    url: https://raw.githubusercontent.com/ligershark/WebOptimizer/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "ASP.NET Core middleware for bundling and minification of CSS and JavaScript files at runtime"
+  - field: runtimeMin
+    value: "8.0"
+    url: https://raw.githubusercontent.com/ligershark/WebOptimizer/master/src/WebOptimizer.Core/WebOptimizer.Core.csproj
+    checkedAt: 2026-10-28
+    via: page
+    quote: "<TargetFrameworks>net8.0</TargetFrameworks>"
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/ligershark/WebOptimizer/master/src/WebOptimizer.Core/WebOptimizer.Core.csproj
+    checkedAt: 2026-10-28
+    via: page
+    quote: "<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/ligershark/WebOptimizer
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.nuget.org/v3/registration5-semver1/ligershark.weboptimizer.core/index.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: "2025-09-03"
+    url: https://api.nuget.org/v3/registration5-semver1/ligershark.weboptimizer.core/index.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2017"
+    url: https://api.nuget.org/v3/registration5-semver1/ligershark.weboptimizer.core/index.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: installMethod
+    value: dotnet add package
+    url: https://raw.githubusercontent.com/ligershark/WebOptimizer/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "dotnet add package LigerShark.WebOptimizer.Core"
+  - field: nugetName
+    value: LigerShark.WebOptimizer.Core
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:LigerShark.WebOptimizer.Core
+    checkedAt: 2026-10-28
+    via: api
+  - field: nugetDownloads
+    value: 15558733 total
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:LigerShark.WebOptimizer.Core
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 839
+    url: https://api.github.com/repos/ligershark/WebOptimizer
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 60
+    url: https://api.github.com/repos/ligershark/WebOptimizer/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, pricingPage, hqCountry, parent, runsAs, forum, discord, x, bluesky, mastodon, newsletter, pluginDirectory, reportedInstalls, usageShare, paidEdition, databases, adminUi, sso, latestPrereleaseDate]
+unreadable: []
+notes: >
+  The README says "we can use globbing patterns" to minify all CSS files in a folder and its sub folders, and "glob is supported to add wildcard paths" for tag helper assets. The csproj references Microsoft.AspNetCore.App, so the library runs inside the site's ASP.NET Core application and the host needs .NET. ASP.NET Core middleware. The pipeline is registered in Startup or Program code with services.AddWebOptimizer and app.UseWebOptimizer; output is generated on the first browser request and kept in memory, and the README says that no output files are generated on disk. Caching options are enableMemoryCache and enableDiskCache with a cacheDirectory; the README says the disk cache speeds up application restarts by loading pipeline assets from disk. Tag helpers add a version string to script and link tags that point at registered files, and the README says cache busting cannot be disabled. An inline attribute on link and script tags inlines the file content into the page. Repository has no GitHub release or tag; the release dates and majors come from the NuGet package LigerShark.WebOptimizer.Core, whose stable versions run from 1.0.189 (2017-11-13) to 3.0.477 (2025-09-03). Early prerelease uploads are dated 2017-08-10 onward; the unlisted entries dated 1900-01-01 are placeholders and were not used for firstRelease. No prerelease is newer than the latest stable upload. The README links a demo site (weboptimizer.azurewebsites.net); it is a demo of the library and no project homepage is set, for the reviewer to decide. The NuGet search reports totalDownloads 15558733, recorded as the total. Compiling SCSS needs the separate LigerShark.WebOptimizer.Sass package (README); it is not recorded as a plugin. Repository last pushed 2025-09-03 on master. runsAs is left out: the README describes middleware inside an ASP.NET Core application and names no server or process model, for the reviewer to decide. The README header also says master targets ASP.NET Core 3.0 and points ASP.NET Core 2.x users to a 2.0 branch; the csproj targets net8.0.

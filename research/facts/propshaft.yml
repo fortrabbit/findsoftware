@@ -1,0 +1,141 @@
+id: propshaft
+name: Propshaft
+status: accepted
+checkedAt: 2026-10-28
+description: Asset pipeline library for Rails that serves and digest-stamps the app's stylesheets, JavaScript and images without bundling them.
+facts:
+  - field: repository
+    value: https://github.com/rails/propshaft
+    url: https://api.github.com/repos/rails/propshaft
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/rails/propshaft/blob/main/README.md
+    url: https://raw.githubusercontent.com/rails/propshaft/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Propshaft is an asset pipeline library for Rails."
+  - field: maintainer
+    value: Basecamp
+    url: https://raw.githubusercontent.com/rails/propshaft/main/MIT-LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2021 Basecamp"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/rails
+    checkedAt: 2026-10-28
+    via: api
+  - field: basedOn
+    value: rails
+    url: https://raw.githubusercontent.com/rails/propshaft/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Propshaft is an asset pipeline library for Rails."
+  - field: categories
+    value: [build-tool]
+    url: https://raw.githubusercontent.com/rails/propshaft/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Propshaft is an asset pipeline library for Rails."
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/rails/propshaft
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://raw.githubusercontent.com/rails/propshaft/v1.3.2/propshaft.gemspec
+    checkedAt: 2026-10-28
+    via: page
+    quote: 's.required_ruby_version = ">= 2.7.0"'
+  - field: runtimeMin
+    value: "2.7"
+    url: https://raw.githubusercontent.com/rails/propshaft/v1.3.2/propshaft.gemspec
+    checkedAt: 2026-10-28
+    via: page
+    quote: 's.required_ruby_version = ">= 2.7.0"'
+  - field: runsAs
+    value: [local]
+    url: https://raw.githubusercontent.com/rails/propshaft/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "they'll be served by a development server"
+  - field: runsAs
+    value: [local]
+    url: https://raw.githubusercontent.com/rails/propshaft/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "will copy all of them into `public/assets` when precompiling"
+  - field: installMethod
+    value: rails new myapp -a propshaft
+    url: https://raw.githubusercontent.com/rails/propshaft/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "rails new myapp -a propshaft"
+  - field: license
+    value: MIT
+    url: https://rubygems.org/api/v1/gems/propshaft.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/rails/propshaft/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "released under the MIT License"
+  - field: importsFrom
+    value: [Sprockets]
+    url: https://raw.githubusercontent.com/rails/propshaft/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Migrating from Sprockets"
+  - field: firstRelease
+    value: "2021"
+    url: https://api.github.com/repos/rails/propshaft/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/rails/propshaft/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-04-17
+    url: https://api.github.com/repos/rails/propshaft/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1047
+    url: https://api.github.com/repos/rails/propshaft
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 61
+    url: https://api.github.com/repos/rails/propshaft/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: rubygemsName
+    value: propshaft
+    url: https://rubygems.org/api/v1/gems/propshaft.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: rubygemsDownloads
+    value: 35912115
+    url: https://rubygems.org/api/v1/gems/propshaft.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 1
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/propshaft
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 317
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/propshaft
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hqCountry, maintainerType, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, endoflifeId, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, npmName]
+unreadable: []
+notes: >
+  No homepage: the repository's homepage field is empty and the README names none, so the record links the repository only. The gemspec names David Heinemeier Hansson as author; the MIT-LICENSE copyright line names Basecamp, which is recorded as maintainer, the legal notice's name. The README says that with Rails 8 Propshaft is the default asset pipeline for new applications; this is not recorded as a field. The precompile copy into public/assets is a build output, not a statement about how the site is served, so runsAs holds local only, from the development server and precompile quotes. The runtimeMin is from the gemspec at tag v1.3.2 (required_ruby_version). The GitHub releases start at v0.2.1 (2021-11-09); the repository was created 2021-09-18, so firstRelease is 2021. The RubyGems downloads figure is the total for all versions. ecosyste.ms counts dependent packages and repositories for the rubygems.org package. The README "Migrating from Sprockets" section is a migration guide; Sprockets has no record, so it stays in importsFrom as a name, not a record id. The README says Propshaft has a configurable load path of directories from the app and its gems, that digest stamping lets assets use long-expiry cache headers, and that it makes all assets in the configured paths available for serving. The README says Propshaft was explicitly not designed to provide full transpiler capabilities, and that it digests CSS url() references to the digested file names, that precompiling leaves a manifest file that maps logical paths to digested names, and that development needs no precompile step; these are in the README, and the migration section says projects that rely on Sprockets transpiling need a Node-based transpiler instead.

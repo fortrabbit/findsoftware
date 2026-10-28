@@ -1,0 +1,121 @@
+id: webp-server-go
+name: WebP Server Go
+status: accepted
+checkedAt: 2026-10-28
+description: Go server that serves JPEG, PNG and other images as WebP or AVIF on the fly, at the URL of the original image, placed behind a web server or CDN.
+facts:
+  - field: homepage
+    value: https://webp.sh/
+    url: https://webp.sh/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This is a Server based on Golang, which allows you to serve WebP images on the fly."
+  - field: repository
+    value: https://github.com/webp-sh/webp_server_go
+    url: https://api.github.com/repos/webp-sh/webp_server_go
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://docs.webp.sh/
+    url: https://raw.githubusercontent.com/webp-sh/webp_server_go/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "[Documentation](https://docs.webp.sh/)"
+  - field: categories
+    value: [image-server]
+    url: https://raw.githubusercontent.com/webp-sh/webp_server_go/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This is a Server based on Golang, which allows you to serve WebP images on the fly."
+  - field: maintainer
+    value: WebP Cloud Services
+    url: https://webp.se/about/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "WebP Cloud Services is an independent, distributed team in Shanghai and Helsingborg"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/webp-sh
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/webp-sh/webp_server_go
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://raw.githubusercontent.com/webp-sh/webp_server_go/0.16.2/go.mod
+    checkedAt: 2026-10-28
+    via: page
+    quote: "go 1.27"
+  - field: runtimeMin
+    value: "1.27"
+    url: https://raw.githubusercontent.com/webp-sh/webp_server_go/0.16.2/go.mod
+    checkedAt: 2026-10-28
+    via: page
+    quote: "go 1.27"
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.webp.sh/deployment/binary/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "To keep this program running, refer to process managers such as systemd or supervisord"
+  - field: installMethod
+    value: docker
+    url: https://raw.githubusercontent.com/webp-sh/webp_server_go/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "image: webpsh/webp-server-go"
+  - field: installMethod
+    value: binary download
+    url: https://docs.webp.sh/deployment/binary/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Download the webp-server-go from"
+  - field: hostedOffering
+    value: WebP Cloud
+    url: https://webp.se/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Point WebP Cloud at your existing images"
+  - field: license
+    value: GPL-3.0
+    url: https://api.github.com/repos/webp-sh/webp_server_go
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: GPLv3
+    url: https://raw.githubusercontent.com/webp-sh/webp_server_go/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "WebP Server is under the GPLv3"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/webp-sh/webp_server_go/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-06"
+    url: https://api.github.com/repos/webp-sh/webp_server_go/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2020"
+    url: https://api.github.com/repos/webp-sh/webp_server_go/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 2006
+    url: https://api.github.com/repos/webp-sh/webp_server_go
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 15
+    url: https://api.github.com/repos/webp-sh/webp_server_go/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [pricingPage, hqCountry, parent, forum, discord, x, bluesky, mastodon, newsletter, pluginDirectory, reportedInstalls, usageShare, paidEdition, databases, adminUi, sso, latestPrereleaseDate, npmName, packagistName, basedOn, renderingModes]
+unreadable: []
+notes: >
+  Go server (module webp_server_go) that converts images on request: the README lists JPEG, PNG, BMP, GIF, SVG, HEIC, NEF and WEBP as inputs, and output as WebP, AVIF or JXL (docs.webp.sh). A reverse proxy such as Nginx or Caddy sits in front of it for public use (quick start). Docker is the recommended route: the README says "We strongly recommend using Docker" because the binary can hit glibc and dependency problems. The binary page says the binary needs libvips installed (brew, apt or dnf) and notes "a potential memory leak problem with this server and remains unsolved". The Docker images are published on Docker Hub (webpsh/webp-server-go) and GHCR (docs deployment page); the README header badge shows Docker pulls with no figure. Go modules have no download figure, so none is recorded. The release list has 78 GitHub releases; the oldest is 0.0.3 (2020-03-01) and the repository was created 2020-02-09. No prerelease is listed. Two license statements: the GitHub detection reads GPL-3.0 and the README says "WebP Server is under the GPLv3". The LICENSE file is the GPL v3 text and names no copyright holder. Maintainer: the about page of webp.se describes WebP Cloud Services as the team and says it keeps the core WebP Server project on GitHub; no legal entity name, legal form or HQ country is stated, so hqCountry is absent and the maintainer is the name the page uses. WebP Cloud (webp.se) is the hosted offering next to this project: its plans are hosting tiers and not a paidEdition, no prices are recorded, its homepage names regions in Germany, Finland and the United States, and its features are on its own pages. The webp.se homepage links an x.com account, which belongs to the hosted service, so no x fact is recorded. The README names a blog (blog.webp.se) and a status page; neither is a field. The project also names a "WebP Cloud Services" public Fly service; not recorded as a fact.

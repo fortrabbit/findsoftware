@@ -1,0 +1,119 @@
+id: webpacker
+name: Webpacker
+status: discontinued
+checkedAt: 2026-10-28
+description: "Rails gem that manages app-like JavaScript modules with webpack, no longer developed by the Rails team."
+facts:
+  - field: status
+    value: discontinued
+    url: "https://raw.githubusercontent.com/rails/webpacker/master/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Webpacker has been retired"
+  - field: repository
+    value: "https://github.com/rails/webpacker"
+    url: "https://api.github.com/repos/rails/webpacker"
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: "https://github.com/rails/webpacker/blob/5-x-stable/README.md"
+    url: "https://raw.githubusercontent.com/rails/webpacker/5-x-stable/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "bundle exec rails webpacker:install"
+  - field: categories
+    value: ["build-tool"]
+    url: "https://raw.githubusercontent.com/rails/webpacker/v5.4.4/webpacker.gemspec"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Use webpack to manage app-like JavaScript modules in Rails"
+  - field: basedOn
+    value: "rails"
+    url: "https://raw.githubusercontent.com/rails/webpacker/v5.4.4/webpacker.gemspec"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Use webpack to manage app-like JavaScript modules in Rails"
+  - field: language
+    value: "Ruby"
+    url: "https://api.github.com/repos/rails/webpacker"
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: ["ruby"]
+    url: "https://raw.githubusercontent.com/rails/webpacker/v5.4.4/webpacker.gemspec"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "s.required_ruby_version = \">= 2.4.0\""
+  - field: runtimeMin
+    value: "ruby 2.4"
+    url: "https://raw.githubusercontent.com/rails/webpacker/v5.4.4/webpacker.gemspec"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "s.required_ruby_version = \">= 2.4.0\""
+  - field: installMethod
+    value: ["gem"]
+    url: "https://raw.githubusercontent.com/rails/webpacker/5-x-stable/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "gem 'webpacker', '~> 5.x'"
+  - field: license
+    value: "MIT"
+    url: "https://raw.githubusercontent.com/rails/webpacker/v5.4.4/webpacker.gemspec"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "s.license  = \"MIT\""
+  - field: licenseModel
+    value: "open-source"
+    url: "https://raw.githubusercontent.com/rails/webpacker/v5.4.4/webpacker.gemspec"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "s.license  = \"MIT\""
+  - field: firstRelease
+    value: "2016"
+    url: "https://rubygems.org/api/v1/versions/webpacker.json"
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 5
+    url: "https://rubygems.org/api/v1/gems/webpacker.json"
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: "2023-01-31"
+    url: "https://rubygems.org/api/v1/versions/webpacker.json"
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 5270
+    url: "https://api.github.com/repos/rails/webpacker"
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 418
+    url: "https://api.github.com/repos/rails/webpacker/contributors?per_page=1"
+    checkedAt: 2026-10-28
+    via: api
+  - field: rubygemsName
+    value: "webpacker"
+    url: "https://rubygems.org/api/v1/gems/webpacker.json"
+    checkedAt: 2026-10-28
+    via: api
+  - field: rubygemsDownloads
+    value: 96644006
+    url: "https://rubygems.org/api/v1/gems/webpacker.json"
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 111
+    url: "https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/webpacker"
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 120458
+    url: "https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/webpacker"
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, maintainer, maintainerType, hqCountry, parent, forkOf, successorOf, alternativeTo, pricingPage, paidEdition, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, outputDir, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName]
+unreadable: []
+notes: >
+  The master README opens "Webpacker has been retired" and says the Rails team will no longer evolve Webpacker in an official Rails capacity. The README names jsbundling-rails with webpack, import maps (importmap-rails) and Shakapacker as the routes for existing apps; Shakapacker (github.com/shakacode/shakapacker) continues the unreleased v6 line and is not recorded as a successor record. The README says security issues on the Ruby side follow the normal Rails maintenance schedule, and that the JavaScript libraries are no longer updated. The repository is not archived; its last push is 2024-07-16 and the README is the only end statement. The GitHub repository has no releases; the last gem release is 5.4.4 on RubyGems (2023-01-31), so latestReleaseDate and currentMajor come from RubyGems. The install steps come from the 5-x-stable README (gem 'webpacker', '~> 5.x' and the install task). The maintainer is not recorded: the gemspec names David Heinemeier Hansson and Gaurav Tiwari as authors, and no page names a maintainer of record. The first RubyGems version is 0.1 (2016-12-07), the repository creation date. No homepage exists; the repository is the only project page. The gemspec sets the Ruby floor for the 5.x line, Ruby 2.4.0 or later. The 5-x-stable README says Webpacker ships two binstubs, ./bin/webpack and ./bin/webpack-dev-server, and hooks webpacker:compile into assets:precompile; the 5-x-stable docs/webpack.md says Webpacker generates config/webpack files for the test, development and production environments.

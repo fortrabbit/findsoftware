@@ -1,0 +1,116 @@
+id: warden
+name: Warden
+status: accepted
+checkedAt: 2026-10-28
+description: Command-line tool that runs Docker-based local development environments for web projects, with shared proxy services so several environments run at once.
+facts:
+  - field: homepage
+    value: https://warden.dev
+    url: https://warden.dev/
+    checkedAt: 2026-10-28
+    via: page
+  - field: repository
+    value: https://github.com/wardenenv/warden
+    url: https://api.github.com/repos/wardenenv/warden
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://docs.warden.dev/
+    url: https://docs.warden.dev/
+    checkedAt: 2026-10-28
+    via: page
+  - field: categories
+    value: [local-dev-env]
+    url: https://raw.githubusercontent.com/wardenenv/warden/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Warden is a CLI utility for orchestrating Docker based developer environments"
+  - field: maintainer
+    value: David Alger
+    url: https://raw.githubusercontent.com/wardenenv/warden/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2019 David Alger"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/wardenenv
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Shell
+    url: https://api.github.com/repos/wardenenv/warden
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/wardenenv/warden
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/wardenenv/warden/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/wardenenv/warden/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: "2026-04-14"
+    url: https://api.github.com/repos/wardenenv/warden/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestPrereleaseDate
+    value: "2026-09-29"
+    url: https://api.github.com/repos/wardenenv/warden/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2019"
+    url: https://api.github.com/repos/wardenenv/warden/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: runsAs
+    value: [local]
+    url: https://warden.dev/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Warden runs three layers of services on your development machine"
+  - field: installMethod
+    value: homebrew
+    url: https://docs.warden.dev/installing.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "brew install wardenenv/warden/warden"
+  - field: installMethod
+    value: git clone
+    url: https://docs.warden.dev/installing.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "git clone -b main https://github.com/wardenenv/warden.git /opt/warden"
+  - field: githubStargazers
+    value: 476
+    url: https://api.github.com/repos/wardenenv/warden
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 48
+    url: https://api.github.com/repos/wardenenv/warden/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: discord
+    value: https://discord.gg/dckp5HZgcu
+    url: https://warden.dev/
+    checkedAt: 2026-10-28
+    via: page
+  - field: mastodon
+    value: https://phpc.social/@warden
+    url: https://warden.dev/
+    checkedAt: 2026-10-28
+    via: page
+notFound: [pricingPage, hqCountry, parent, forum, x, bluesky, newsletter, pluginDirectory, reportedInstalls, usageShare, npmName, packagistName, paidEdition, runtime, databases, adminUi, sso]
+unreadable: []
+notes: >
+  Shell CLI that drives Docker Compose files. Supported environment types on the environments page: Drupal, Laravel, Magento 1, Magento 2, Shopware, Symfony, WordPress, plus Local for custom environments; the homepage lists the same stacks ("Full support for Drupal, Laravel, Magento 1, Magento 2, Shopware, Symfony, Wordpress and custom project environment configurations on macOS and Linux"). Operating systems: macOS and Linux, Windows through WSL2 (installing page). Prerequisites on the installing page: Docker Desktop for Mac, Docker for Linux or Docker for Windows, docker-compose version 2 or later, and Mutagen 0.11.4 or later on macOS for sync sessions. Homepage copyright reads "Copyright © 2019-2022 by The Warden Project & David Alger"; the LICENSE copyright line names David Alger, which is the maintainer recorded here. Sponsorship on OpenCollective and GitHub Sponsors is not a paid edition. Repository was created 2019-05-29 under the davidalger account and moved to the wardenenv organization; the first release is 0.1.0-beta1 on 2019-06-03. Adoption: 476 stars and 48 contributors on 2026-10-28; no npm, Packagist or PyPI package applies. The Docker images are published on Docker Hub under wardenenv (images page); they are not a separate software record. Docs copyright reads 2019-2022. README features: Traefik for SSL termination and request routing, Portainer, Dnsmasq for .test domains, an SSH tunnel to database containers, wildcard certificates issued by Warden, and per-project custom environment definitions.

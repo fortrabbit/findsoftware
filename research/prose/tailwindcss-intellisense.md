@@ -1,0 +1,3 @@
+Tailwind CSS IntelliSense is an extension for Visual Studio Code that works in projects using Tailwind CSS. It adds autocomplete for class names, CSS functions and directives, linting for CSS and markup, and hover previews that show the CSS behind a class name. A Tailwind CSS language mode keeps CSS support when Tailwind-specific at-rules are used, and the extension is installed from the Visual Studio Code Marketplace.
+
+The extension activates only in a workspace that uses tailwindcss: a CSS file that imports the framework's stylesheet for current versions, or a configuration file for earlier ones. The project's source is a pnpm monorepo, and the extension is one package in it.

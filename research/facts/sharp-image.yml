@@ -1,0 +1,130 @@
+id: sharp-image
+name: sharp
+status: accepted
+checkedAt: 2026-10-28
+description: Node.js module that resizes and converts JPEG, PNG, WebP, AVIF and other image formats, using the libvips image library.
+facts:
+  - field: homepage
+    value: https://sharp.pixelplumbing.com
+    url: https://sharp.pixelplumbing.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The typical use case for this high speed Node-API module"
+  - field: repository
+    value: https://github.com/lovell/sharp
+    url: https://api.github.com/repos/lovell/sharp
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://sharp.pixelplumbing.com/install
+    url: https://sharp.pixelplumbing.com/install
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm install sharp"
+  - field: maintainer
+    value: Lovell Fuller
+    url: https://github.com/lovell/sharp/blob/main/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"author": "Lovell Fuller'
+  - field: maintainerType
+    value: individual
+    url: https://github.com/lovell/sharp/blob/main/package.json
+    checkedAt: 2026-10-28
+    via: page
+    quote: '"author": "Lovell Fuller'
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/lovell
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/lovell/sharp
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [media-processing, asset-optimizer]
+    url: https://github.com/lovell/sharp/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "convert large images in common formats to"
+  - field: runtime
+    value: [node, deno, bun]
+    url: https://github.com/lovell/sharp/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Node.js (>= 20.9.0), Deno and Bun."
+  - field: runtimeMin
+    value: node 20
+    url: https://registry.npmjs.org/sharp/latest
+    checkedAt: 2026-10-28
+    via: api
+    quote: '"node":">=20.9.0"'
+  - field: installMethod
+    value: npm install sharp
+    url: https://sharp.pixelplumbing.com/install
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm install sharp"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/lovell/sharp
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/lovell/sharp/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: firstRelease
+    value: "2013"
+    url: https://registry.npmjs.org/sharp
+    checkedAt: 2026-10-28
+    via: api
+    quote: '"0.0.1":"2013-08-20T23:01:27.754Z"'
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/lovell/sharp/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-27
+    url: https://api.github.com/repos/lovell/sharp/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 32806
+    url: https://api.github.com/repos/lovell/sharp
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 229
+    url: https://api.github.com/repos/lovell/sharp/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: sharp
+    url: https://registry.npmjs.org/sharp/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: "133705513 (2026-09-28 to 2026-10-04)"
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/sharp
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 4168
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/sharp
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 178353
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/sharp
+    checkedAt: 2026-10-28
+    via: api
+notFound: [parent, forkOf, successorOf, basedOn, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, paidEdition, pricingPage, pluginDirectory, subreddit, mastodon, bluesky, x, newsletter, discord, forum, wikidata, endoflifeId, latestPrereleaseDate, lastCommitDate, hqCountry, usageShare, reportedInstalls, rubygemsName, packagistName, pypiDownloads]
+unreadable: []
+notes: >
+  The homepage is the project's own site over https; the repository names it as homepage. The install page gives the npm route and the prebuilt binaries; the README and homepage name libvips as the image library it uses, and libvips is not a record. The package.json author field names Lovell Fuller and the GitHub owner is a user account; no company is stated, so maintainerType is individual. The README states Node.js (>= 20.9.0), Deno and Bun as runtimes; runtimeMin is the Node minimum from the registry's engines field for the latest version. The package is a library that the consuming Node process loads, and no page states a runsAs value, so runsAs is not recorded; the install page's AWS Lambda section describes packaging node_modules for a deployment package and is not a runsAs statement. The GitHub releases start at v0.20.0 (2018), but the npm registry has version 0.0.1 uploaded on 2013-08-20, so firstRelease takes the registry upload. The major is 0 because every stable release is 0.x; a reviewer may decide how a 0.x major is shown. The release v0.35.5-rc.1 (2026-09-27) is a prerelease of the release recorded as latest and is not newer, so no latestPrereleaseDate is recorded. The npm weekly figure is the sum of the seven days 2026-09-28 to 2026-10-04. The CSV id is sharp-image because the Laravel admin panel Sharp holds the id sharp. The install page's Open Collective libvips link is a funding link and not a field. The category choice rests on the README's "convert large images in common formats to" and the Node-API module description; media-processing and asset-optimizer are both mapped by the import.

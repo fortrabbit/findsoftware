@@ -1,0 +1,118 @@
+id: takeout
+name: Takeout
+status: accepted
+checkedAt: 2026-10-28
+description: "Command-line tool that starts one Docker container per local development dependency, such as MySQL or Redis."
+facts:
+  - field: docs
+    value: "https://github.com/tighten/takeout/blob/master/README.md"
+    url: "https://github.com/tighten/takeout/blob/master/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Takeout is a CLI tool for spinning up tiny Docker containers"
+  - field: repository
+    value: "https://github.com/tighten/takeout"
+    url: "https://api.github.com/repos/tighten/takeout"
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: ["local-dev-env"]
+    url: "https://github.com/tighten/takeout/blob/master/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Takeout is a CLI tool for spinning up tiny Docker containers, one for each of your development environment dependencies"
+  - field: runsAs
+    value: ["local"]
+    url: "https://github.com/tighten/takeout/blob/master/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "one for each of your development environment dependencies"
+  - field: language
+    value: "PHP"
+    url: "https://api.github.com/repos/tighten/takeout"
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: php
+    url: "https://github.com/tighten/takeout/blob/master/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "PHP installed (latest major version)"
+  - field: runtimeMin
+    value: "PHP 8.2"
+    url: "https://repo.packagist.org/p2/tightenco/takeout.json"
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: "MIT"
+    url: "https://api.github.com/repos/tighten/takeout"
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: "open-source"
+    url: "https://raw.githubusercontent.com/tighten/takeout/master/LICENSE.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: installMethod
+    value: ["docker"]
+    url: "https://github.com/tighten/takeout/blob/master/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The recommended way to install Takeout is the dockerized version via an alias"
+  - field: installMethod
+    value: ["composer"]
+    url: "https://github.com/tighten/takeout/blob/master/README.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "If you opt for the PHP/Composer installation (not recommended)"
+  - field: firstRelease
+    value: "2020"
+    url: "https://api.github.com/repos/tighten/takeout/releases"
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: "3"
+    url: "https://api.github.com/repos/tighten/takeout/releases"
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: "2026-01-29"
+    url: "https://api.github.com/repos/tighten/takeout/releases/latest"
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: "Tighten Co."
+    url: "https://raw.githubusercontent.com/tighten/takeout/master/LICENSE.md"
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) Tighten Co."
+  - field: repoOwnerType
+    value: "organization"
+    url: "https://api.github.com/users/tighten"
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistName
+    value: "tightenco/takeout"
+    url: "https://packagist.org/packages/tightenco/takeout.json"
+    checkedAt: 2026-10-28
+    via: api
+  - field: packagistDownloads
+    value: 21142
+    url: "https://packagist.org/packages/tightenco/takeout.json"
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1655
+    url: "https://api.github.com/repos/tighten/takeout"
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 55
+    url: "https://api.github.com/repos/tighten/takeout/contributors?per_page=1"
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, basedOn, parent, hqCountry, maintainerType, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, alternativeTo, paidEdition, pricingPage, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmWeeklyDownloads, dependentPackages, dependentRepos, endoflifeId, supportedVersions, buildCommand, outputDir, usageShare, reportedInstalls, forkOf, successorOf]
+unreadable: []
+notes: >
+  Takeout has no website of its own; the repository README is its documentation, so no homepage is recorded. The Docker image tighten/takeout on Docker Hub is the recommended route and its image publishing is in the repository, but no Docker Hub figure is recorded. The Composer package tightenco/takeout is the registry package the README names for the PHP route, so packagistName is that package; its total is 21142 downloads on the Packagist page read 2026-10-28, and monthly is 28. The Packagist p2 record lists the latest version v3.2.1 (2026-01-29) with require php ^8.2 and license MIT. The README says the PHP route supports only the current major version of PHP, and the Composer example pins the 2.9 line, so the composer route is not the current major. The first GitHub release is v1.0.0 (2020-08-26). The tool is described as a Docker-based development-only dependency manager; the README's "CLI tool" sentence is the quoted runsAs source. The README lists macOS, Linux, Windows 10 and WSL2 as supported platforms and recommends the Docker image through a shell alias. The README says deleting a container, which it calls disabling a service, leaves its data in a Docker volume, and it uses Meilisearch and Redis as examples of services. The Docker alias pulls tighten/takeout:latest. The README names Laravel Valet as a tool it is meant to be paired with; that is a pairing, not a basis, so basedOn stays unknown. The copyright line names "Tighten Co." and the Tighten website footer reads "©2026 Tighten Co"; no page read names a country or a legal form, so hqCountry stays unknown. The repository is not archived and its last push is 2026-04-09.

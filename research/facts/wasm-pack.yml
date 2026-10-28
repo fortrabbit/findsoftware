@@ -1,0 +1,144 @@
+id: wasm-pack
+name: wasm-pack
+status: accepted
+checkedAt: 2026-10-28
+description: Command-line tool that builds Rust crates into WebAssembly packages for JavaScript, with npm publishing support.
+facts:
+  - field: homepage
+    value: https://wasm-bindgen.github.io/wasm-pack/
+    url: https://wasm-bindgen.github.io/wasm-pack/
+    checkedAt: 2026-10-28
+    via: page
+  - field: repository
+    value: https://github.com/wasm-bindgen/wasm-pack
+    url: https://api.github.com/repos/wasm-bindgen/wasm-pack
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://wasm-bindgen.github.io/wasm-pack/book/
+    url: https://wasm-bindgen.github.io/wasm-pack/book/
+    checkedAt: 2026-10-28
+    via: page
+  - field: categories
+    value: [build-tool]
+    url: https://wasm-bindgen.github.io/wasm-pack/book/prerequisites/index.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "since wasm-pack is a build tool"
+  - field: runsAs
+    value: [local]
+    url: https://wasm-bindgen.github.io/wasm-pack/book/prerequisites/index.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "First you’ll want to install the wasm-pack CLI"
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/wasm-bindgen/wasm-pack
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [rust]
+    url: https://wasm-bindgen.github.io/wasm-pack/book/prerequisites/index.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "you’ll want to make sure you have Rust installed"
+  - field: maintainer
+    value: drager
+    url: https://github.com/wasm-bindgen/wasm-pack/blob/HEAD/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "is maintained by [drager]"
+  - field: discord
+    value: https://discordapp.com/channels/442252698964721669/443151097398296587
+    url: https://github.com/wasm-bindgen/wasm-pack/blob/HEAD/README.md
+    checkedAt: 2026-10-28
+    via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/wasm-bindgen
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT OR Apache-2.0
+    url: https://raw.githubusercontent.com/wasm-bindgen/wasm-pack/v0.15.0/Cargo.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'license = "MIT OR Apache-2.0"'
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/wasm-bindgen/wasm-pack
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/wasm-bindgen/wasm-pack/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: "2026-05-15"
+    url: https://api.github.com/repos/wasm-bindgen/wasm-pack/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2018"
+    url: https://crates.io/api/v1/crates/wasm-pack/versions
+    checkedAt: 2026-10-28
+    via: api
+  - field: installMethod
+    value: cargo install
+    url: https://wasm-bindgen.github.io/wasm-pack/installer
+    checkedAt: 2026-10-28
+    via: page
+    quote: "cargo install wasm-pack"
+  - field: installMethod
+    value: npm
+    url: https://wasm-bindgen.github.io/wasm-pack/installer
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm install -g wasm-pack"
+  - field: installMethod
+    value: shell script
+    url: https://wasm-bindgen.github.io/wasm-pack/installer
+    checkedAt: 2026-10-28
+    via: page
+    quote: "curl https://wasm-bindgen.github.io/wasm-pack/installer/init.sh -sSf | sh"
+  - field: installMethod
+    value: windows installer
+    url: https://wasm-bindgen.github.io/wasm-pack/installer
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Download and run wasm-pack-init.exe"
+  - field: githubStargazers
+    value: 7293
+    url: https://api.github.com/repos/wasm-bindgen/wasm-pack
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 156
+    url: https://api.github.com/repos/wasm-bindgen/wasm-pack/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: crateName
+    value: wasm-pack
+    url: https://crates.io/api/v1/crates/wasm-pack
+    checkedAt: 2026-10-28
+    via: api
+  - field: crateDownloads
+    value: 6627301 total
+    url: https://crates.io/api/v1/crates/wasm-pack
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: wasm-pack
+    url: https://registry.npmjs.org/wasm-pack/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 111161
+    url: https://api.npmjs.org/downloads/range/2026-09-28:2026-10-04/wasm-pack
+    checkedAt: 2026-10-28
+    via: api
+notFound: [pricingPage, hqCountry, parent, runtimeMin, forum, x, bluesky, mastodon, newsletter, pluginDirectory, reportedInstalls, usageShare, paidEdition, databases, adminUi, sso, basedOn, pypiName, packagistName]
+unreadable: []
+notes: >
+  Rust build tool: the CLI compiles a Rust crate to WebAssembly, generates JavaScript bindings and a pkg folder with a package.json for npm, and runs browser tests (book command pages). Build targets in the book are bundler, nodejs, web, no-modules and deno. The book's own prerequisites say Rust 1.30.0 or later ("Make sure rustc -V prints out at least 1.30.0"), and the README repeats it; the v0.15.0 Cargo.toml has no rust-version field, so runtimeMin is left out and a reviewer should decide whether the book statement counts. Maintainer: the README names drager; LICENSE-MIT carries the line "Copyright (c) 2018 Ashley Williams"; the README governance section says the project "was started by ashleygwilliams and is maintained by drager", and Cargo.toml lists Jesper Håkansson as a second author. The GitHub licence detection shows Apache-2.0 while Cargo.toml and npm both state MIT OR Apache-2.0; both statements are recorded. Install routes: cargo, npm (the book's installer page names the npm package, which downloads a precompiled binary), the curl installer script, and a Windows installer. The npm figure counts downloads of the npm package named on the installer page for the week 2026-09-28 to 2026-10-04. crates.io shows 1139343 downloads in the last 90 days alongside the 6627301 total. The README header has a Chat link to a Discord channel (discordapp.com/channels/442252698964721669/443151097398296587); recorded as a discord fact without a quote. The prerequisites page says that publishing to npm needs npm installed and configured, and that the project intends to rewrite the npm registry client so a Node runtime is no longer needed for that step. The book says wasm-pack uses wasm-bindgen (it runs without installing wasm-bindgen with --mode no-install), but no page names it as a parent, so no basedOn is set. Repository created 2018-02-12; crate first version uploaded 2018-03-16.

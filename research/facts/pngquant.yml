@@ -1,0 +1,110 @@
+id: pngquant
+name: pngquant
+status: accepted
+checkedAt: 2026-10-28
+description: Lossy PNG compressor distributed as a command-line utility and as a library.
+facts:
+  - field: homepage
+    value: https://pngquant.org
+    url: https://pngquant.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "pngquant is a command-line utility and a library for lossy compression of PNG images"
+  - field: repository
+    value: https://github.com/kornelski/pngquant
+    url: https://api.github.com/repos/kornelski/pngquant
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Kornel Lesiński
+    url: https://pngquant.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "pngquant is developed by Kornel Lesiński and contributors"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/kornelski/pngquant
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Rust
+    url: https://pngquant.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The latest version is written in Rust"
+  - field: categories
+    value: ["asset-optimizer", "image-processing"]
+    url: https://pngquant.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "lossy compression of PNG images"
+  - field: runsAs
+    value: ["local"]
+    url: https://pngquant.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "pngquant is a command-line utility and a library"
+  - field: installMethod
+    value: "binary download (macOS)"
+    url: https://pngquant.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Binary for macOS"
+  - field: installMethod
+    value: "brew install pngquant (Homebrew)"
+    url: https://pngquant.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "you can run brew install pngquant too"
+  - field: license
+    value: "GPL v3 or later"
+    url: https://github.com/kornelski/pngquant/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Under GPL v3 or later with an additional copyright notice"
+  - field: license
+    value: "commercial license"
+    url: https://github.com/kornelski/pngquant/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "a commercial license for use in non-GPL software"
+  - field: firstRelease
+    value: "2013"
+    url: https://api.github.com/repos/kornelski/pngquant/commits/1.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://pngquant.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The latest stable version of pngquant CLI is 3.0.3"
+  - field: latestReleaseDate
+    value: 2023-10-29
+    url: https://api.github.com/repos/kornelski/pngquant/commits/3.0.3
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 5767
+    url: https://api.github.com/repos/kornelski/pngquant
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 44
+    url: https://api.github.com/repos/kornelski/pngquant/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: crateName
+    value: pngquant
+    url: https://crates.io/api/v1/crates/pngquant
+    checkedAt: 2026-10-28
+    via: api
+  - field: crateDownloads
+    value: 92528 total
+    url: https://crates.io/api/v1/crates/pngquant
+    checkedAt: 2026-10-28
+    via: api
+notFound: [docs, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runtime, runtimeMin, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, pypiDownloads, endoflifeId, wikidata, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: []
+notes: >
+  No GitHub release object exists; the repository carries tags only, the highest stable one 3.0.3 (commit date 2023-10-29, also named on the homepage as the latest stable CLI version), so latestReleaseDate comes from that tag commit. The major 3 comes from the homepage and the CHANGELOG heading "version 3.0". The CHANGELOG gives no year for its first entry ("version 0.70 - first public release"); firstRelease 2013 is the author date of the oldest tag, 1.0, on a history that was imported later, so the reviewer should check it. The homepage says the latest version is written in Rust and the previous one in C99, both under the GPL or a commercial license; the GitHub language statistics list C first, and the record keeps Rust as the homepage states it. The GitHub license API reports NOASSERTION, so no license comes from it; the two README statements are recorded as separate entries and licenseModel is left to the import. The commercial license is bought through supso.org, which is not recorded as pricingPage; it names no price on the page read. The homepage lists Homebrew: the formulae API reports 25441 installs over 365 days (read 2026-10-28), recorded here only because no field holds it. The Homebrew formula license reads "GPL-3.0-or-later AND HPND AND BSD-2-Clause", which is a registry statement and is not recorded. The compression engine is a separate library, libimagequant, and the GUIs and web service listed on the homepage (ImageOptim, Pngyu, PNGoo, ImageOptim API) are third-party and not recorded. Criterion 1 rests on the homepage: the images "are compatible with all web browsers", and the tool is used from shell scripts and server-side software; no page names a website build step, so the reviewer should confirm the criterion.
