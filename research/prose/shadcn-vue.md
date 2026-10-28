@@ -1,0 +1,1 @@
+shadcn-vue is a set of components for Vue applications, built to work with all Vue frameworks according to its [installation guide](https://shadcn-vue.com/docs/installation/vite). The CLI copies component source into the project, so the project owns and edits the code. The unovue organization maintains the project.

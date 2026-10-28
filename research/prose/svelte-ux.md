@@ -1,0 +1,1 @@
+Svelte UX is a collection of Svelte components, actions, stores and utilities for building interactive applications. The components are built with Tailwind CSS. The library is published on npm as svelte-ux, and a create-svelte-ux scaffolder starts a new project with it.

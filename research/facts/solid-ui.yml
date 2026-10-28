@@ -1,0 +1,135 @@
+id: solid-ui
+name: SolidUI
+status: accepted
+checkedAt: 2026-10-28
+description: Copy-and-paste components for Solid, an unofficial port of shadcn/ui and tremor-raw, styled with Tailwind CSS.
+facts:
+  - field: homepage
+    value: https://www.solid-ui.com
+    url: https://www.solid-ui.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Build your component library."
+  - field: repository
+    value: https://github.com/stefan-karger/solid-ui
+    url: https://github.com/stefan-karger/solid-ui
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://www.solid-ui.com/docs/introduction
+    url: https://www.solid-ui.com/docs/introduction
+    checkedAt: 2026-10-28
+    via: page
+    quote: "It's a collection of re-usable components that you can copy and paste into your apps."
+  - field: categories
+    value: [copy-paste]
+    url: https://www.solid-ui.com/docs/introduction
+    checkedAt: 2026-10-28
+    via: page
+    quote: "It's a collection of re-usable components that you can copy and paste into your apps."
+  - field: firstRelease
+    value: 2023
+    url: https://registry.npmjs.org/solidui-cli
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Stefan E-K
+    url: https://github.com/stefan-karger/solid-ui/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2023 Stefan E-K"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/stefan-karger
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://github.com/stefan-karger/solid-ui
+    checkedAt: 2026-10-28
+    via: api
+  - field: basedOn
+    value: [solid]
+    url: https://www.solid-ui.com/docs/introduction
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This is an unofficial port of shadcn/ui & tremor-raw to Solid"
+  - field: basedOn
+    value: [kobalte, corvu]
+    url: https://www.solid-ui.com/docs/introduction
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Built with Kobalte & corvu."
+  - field: basedOn
+    value: [tailwindcss]
+    url: https://www.solid-ui.com/docs/installation/vite
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Add Tailwind and its configuration"
+  - field: installMethod
+    value: cli
+    url: https://www.solid-ui.com/docs/cli
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npx solidui-cli@latest init"
+  - field: installMethod
+    value: manual
+    url: https://www.solid-ui.com/docs/installation/manual
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Add dependencies to your project manually."
+  - field: license
+    value: MIT
+    url: https://github.com/stefan-karger/solid-ui/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/stefan-karger/solid-ui
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://github.com/stefan-karger/solid-ui/releases/tag/solidui-cli@0.7.2
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-01-14
+    url: https://registry.npmjs.org/solidui-cli
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1550
+    url: https://github.com/stefan-karger/solid-ui
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 28
+    url: https://github.com/stefan-karger/solid-ui/graphs/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: solidui-cli
+    url: https://registry.npmjs.org/solidui-cli
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 3907
+    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/solidui-cli
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/solidui-cli
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/solidui-cli
+    checkedAt: 2026-10-28
+    via: api
+notFound: [hqCountry, httpArchiveSites, usageShare, runtime, runtimeMin, runsAs, renderingModes, templating, i18n, sso, databases, contentStore, adminUi, headlessApi, paidEdition, pricingPage, pluginDirectory, pluginCount, forum, discord, x, mastodon, bluesky, subreddit, newsletter, endoflifeId, lastCommitDate, reportedInstalls]
+unreadable: [https://www.solid-ui.com/docs/installation]
+notes: >
+  The docs installation URL returns a page-not-found view, so the Vite, SolidStart and manual installation pages were read at docs/installation/manual. The homepage and introduction call the project a port of shadcn/ui and tremor-raw; that is recorded in the description and not as basedOn, because the project does not call itself a fork. The introduction says the project is not a component library and is not distributed through npm, yet the CLI solidui-cli is published on npm; the npm figures count that CLI, not component copies. The npm package named solid-ui belongs to another project (SolidOS) and is not used. The homepage's X link is the shadcn account, not the project's, so no x fact is recorded. Tailwind CSS is recorded in basedOn because the Vite installation page has the user install and configure it before running the CLI. The LICENSE file carries two copyright lines, shadcn 2023 and Stefan E-K 2023, both under MIT; the maintainer is the second, as the about page credits the port to Stefan E-K and Michael Essiet. currentMajor is the CLI package's major, 0, from the GitHub release solidui-cli@0.7.2; the component code has no separate version. The project's own about page names shadcn, tremor-raw, Kobalte, corvu, tabler and Lucide as credits.

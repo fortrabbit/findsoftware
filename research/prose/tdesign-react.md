@@ -1,0 +1,3 @@
+TDesign React is a UI component library for React that belongs to the TDesign project. A project adds it with npm, yarn or pnpm, or loads it as a script from a CDN, imports components such as Button from the package, and loads the stylesheet from the package's es/style folder. The package ships CommonJS, ES module and UMD builds, and the TDesign documentation in the Tencent/tdesign repository describes the differences between them.
+
+The README says the React library's API and UI are consistent with the TDesign libraries for other frameworks, such as the [TDesign Vue Next](https://github.com/Tencent/tdesign-vue-next) library for Vue 3.
