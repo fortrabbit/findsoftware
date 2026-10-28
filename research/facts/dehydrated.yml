@@ -1,0 +1,116 @@
+id: dehydrated
+name: dehydrated
+status: accepted
+checkedAt: 2026-10-28
+description: Command-line ACME client, written as a bash script, that obtains and renews TLS certificates from ACME certificate authorities such as Let's Encrypt and ZeroSSL.
+facts:
+  - field: homepage
+    value: https://dehydrated.io
+    url: https://dehydrated.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Dehydrated is a client for signing certificates with an ACME-server"
+  - field: repository
+    value: https://github.com/dehydrated-io/dehydrated
+    url: https://api.github.com/repos/dehydrated-io/dehydrated
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/dehydrated-io/dehydrated/tree/master/docs
+    url: https://raw.githubusercontent.com/dehydrated-io/dehydrated/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "For getting started I recommend taking a look at"
+  - field: maintainer
+    value: ZeroSSL GmbH
+    url: https://zerossl.com/imprint/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "ZeroSSL GmbH"
+  - field: maintainerType
+    value: company
+    url: https://raw.githubusercontent.com/dehydrated-io/dehydrated/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This repository is officially maintained by"
+  - field: hqCountry
+    value: AT
+    url: https://zerossl.com/imprint/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Austria"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/dehydrated-io
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://api.github.com/repos/dehydrated-io/dehydrated/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [acme-client]
+    url: https://dehydrated.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Dehydrated is a client for signing certificates with an ACME-server"
+  - field: language
+    value: Shell
+    url: https://api.github.com/repos/dehydrated-io/dehydrated
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [bash]
+    url: https://raw.githubusercontent.com/dehydrated-io/dehydrated/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "implemented as a relatively simple (zsh-compatible) bash-script"
+  - field: installMethod
+    value: tarball download
+    url: https://dehydrated.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Download .tar.gz"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/dehydrated-io/dehydrated/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/dehydrated-io/dehydrated/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: runsAs
+    value: [scheduled]
+    url: https://raw.githubusercontent.com/dehydrated-io/dehydrated/master/docs/man/dehydrated.1
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This can happen through a cron job or a timer."
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/dehydrated-io/dehydrated/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2025-05-17
+    url: https://api.github.com/repos/dehydrated-io/dehydrated/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 6263
+    url: https://api.github.com/repos/dehydrated-io/dehydrated
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 89
+    url: https://api.github.com/repos/dehydrated-io/dehydrated/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, runtimeMin, paidEdition, pricingPage, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, contentStore, renderingModes, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, packagistName, npmName, docker, endoflifeId]
+unreadable: []
+notes: >
+  The project's pages name two maintainers. The README on the default branch says the repository "is officially maintained by ZeroSSL", and the ZeroSSL imprint names ZeroSSL GmbH, Vienna, Austria, as the company; the homepage says "dehydrated is maintained by lukas2511", and the LICENSE copyright line reads "Copyright (c) 2015-2021 Lukas Schauer". The record takes ZeroSSL GmbH because the repository README names it as the maintainer and the imprint gives its legal name; the reviewer decides between that and the individual on the homepage. The zerossl.com footer carries "© 2026 HID Global Corporation, part of ASSA ABLOY"; the project states no ownership, so parent is left out. currentMajor is 0 from the highest stable release v0.7.2 (2025-05-17); the minor line is not recorded. The first GitHub release is v0.1.0 (2016-04-08). There are no prereleases. The repository was last pushed 2026-04-30 and is not archived; release age does not end the record. No end signal was found. The README says the client needs openssl, cURL, sed, grep, awk and mktemp, and the homepage lists the same tools; no runtimeMin is stated. The man page in the repository says certificates are requested and updated on a regular basis through a cron job or a timer, which is the scheduled statement; the --cron option alone is a command option. The README supports ACME v1 and v2, wildcard certificates and the challenge types http-01, dns-01, dns-persist-01 and tls-alpn-01, and names ZeroSSL and Let's Encrypt as certificate authorities; these are no fields in the starter list and are not recorded. The scheduled value rests on the README usage line for the cron command, which runs signing and renewal; the docs do not name a crontab or timer. The homepage has a "Buy me a coffee" link and the README an IRC channel on libera.chat; neither has a field. No install method beyond the tarball and the copy of the example config into /etc/dehydrated is documented; no package manager route was found in the project's pages. The GitHub API reports the license as MIT, which matches the LICENSE file.

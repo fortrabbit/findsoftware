@@ -1,0 +1,133 @@
+id: ajenti
+name: Ajenti
+status: stub
+checkedAt: 2026-10-28
+description: Modular admin panel for Linux and BSD servers, built with Python and AngularJS, that manages system settings, services, files and packages from a browser.
+facts:
+  - field: repository
+    value: https://github.com/ajenti/ajenti
+    url: https://api.github.com/repos/ajenti/ajenti
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://docs.ajenti.org/en/latest/
+    url: https://docs.ajenti.org/en/latest/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Ajenti Web Interface Platform"
+  - field: maintainer
+    value: Eugene Pankov
+    url: https://github.com/ajenti/ajenti/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2017 Eugene Pankov"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/ajenti/ajenti/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2017 Eugene Pankov"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/ajenti
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [control-panel]
+    url: https://github.com/ajenti/ajenti/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Ajenti is a Linux & BSD modular server admin panel."
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/ajenti/ajenti
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/ajenti/ajenti/blob/v2.2.18/ajenti-core/setup.py
+    checkedAt: 2026-10-28
+    via: page
+    quote: "python_requires='>=3'"
+  - field: runtimeMin
+    value: "python >=3"
+    url: https://github.com/ajenti/ajenti/blob/v2.2.18/ajenti-core/setup.py
+    checkedAt: 2026-10-28
+    via: page
+    quote: "python_requires='>=3'"
+  - field: installMethod
+    value: [install script into a virtual environment]
+    url: https://docs.ajenti.org/en/latest/man/install.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Automatic Installation in virtual environment"
+  - field: installMethod
+    value: [pip install ajenti-panel]
+    url: https://github.com/ajenti/ajenti/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Ajenti 2 can be easy installed with pip and the provided script"
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.ajenti.org/en/latest/man/install.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "delivered with an init script"
+  - field: adminUi
+    value: yes, web browser interface
+    url: https://docs.ajenti.org/en/latest/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Clean, modern and responsive UI"
+  - field: templating
+    value: [AngularJS]
+    url: https://docs.ajenti.org/en/latest/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "AngularJS templating."
+  - field: license
+    value: MIT
+    url: https://github.com/ajenti/ajenti/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/ajenti/ajenti/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 2
+    url: https://github.com/ajenti/ajenti/releases/tag/v2.2.15
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-25
+    url: https://pypi.org/pypi/ajenti-panel/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiName
+    value: ajenti-panel
+    url: https://pypi.org/pypi/ajenti-panel/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiDownloads
+    value: 272 per week (last_week)
+    url: https://pypistats.org/api/packages/ajenti-panel/recent
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 7968
+    url: https://api.github.com/repos/ajenti/ajenti
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 25
+    url: https://api.github.com/repos/ajenti/ajenti/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, parent, wikidata, hqCountry, endoflifeId, pricingPage, headlessApi, sso, contentStore, databases, i18n, pluginDirectory, pluginCount, forum, discord, subreddit, newsletter, reportedInstalls, usageShare, x, mastodon, bluesky]
+unreadable: ["http://ajenti.org/core/ and https://ajenti.org/ (302 to github.com/ajenti/ajenti)"]
+notes: >
+  Doubt: whether a general Linux admin panel with stock plugins for system settings, services, cron, packages, network and files is a website tool. Criterion 1 needs the panel's own pages to say it serves, protects or exposes websites or web apps (managing websites or web servers); the docs list stock plugins (check_certificates, cron, dashboard, datetime, docker, filemanager, fstab, network, notepad, packages, plugins, power, services, session_list, settings, terminal, users) and none is a website or web server manager, and the Fail2ban rule protects the panel itself. A reviewer settles it by reading the plugin pages for websites or web servers; if none exists, reject on criterion 1. The homepage ajenti.org answers with a redirect to github.com/ajenti/ajenti, so the project's own site is the repository and homepage is left out. The docs at docs.ajenti.org show version 2.2.18 in their title; the docs pages were read over https. The latest stable release is 2.2.18 on PyPI (uploaded 2026-10-25) and tag v2.2.18 (commit 2026-10-25); the GitHub release list stops at v2.2.15 (2026-03-31), so latestReleaseDate follows PyPI and the GitHub release date is 2026-03-31. The docs say "Supports Python 3.5+." while ajenti-core/setup.py at the tag says python_requires '>=3'; runtimeMin follows the manifest as the rule says, the 3.5 statement stays in the docs. The MIT license is the only license text in the repository; GitHub detects it as MIT. The docs' install script at scripts/install.sh installs at OS level and the docs call it not recommended, so it is not recorded as a route. The README calls the panel "Ajenti 2"; the Python package for the panel is ajenti-panel. PyPI reports the license as null. The GitHub homepage field points to http://ajenti.org/core/, which redirects to GitHub.

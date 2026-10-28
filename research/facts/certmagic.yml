@@ -1,0 +1,96 @@
+id: certmagic
+name: CertMagic
+status: accepted
+checkedAt: 2026-10-28
+description: Go library that obtains and renews TLS certificates from ACME certificate authorities for Go programs.
+facts:
+  - field: repository
+    value: https://github.com/caddyserver/certmagic
+    url: https://api.github.com/repos/caddyserver/certmagic
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://pkg.go.dev/github.com/caddyserver/certmagic
+    url: https://github.com/caddyserver/certmagic/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "describes how to use this in full detail"
+  - field: maintainer
+    value: Matthew Holt
+    url: https://github.com/caddyserver/certmagic/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "CertMagic is a project by Matthew Holt, who is the author"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/caddyserver
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2020
+    url: https://api.github.com/repos/caddyserver/certmagic/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [library, tls]
+    url: https://github.com/caddyserver/certmagic/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "in one powerful and easy-to-use library"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/caddyserver/certmagic
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://api.github.com/repos/caddyserver/certmagic
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtimeMin
+    value: "go 1.26"
+    url: https://github.com/caddyserver/certmagic/blob/v0.25.6/go.mod
+    checkedAt: 2026-10-28
+    via: page
+    quote: "go 1.26.0"
+  - field: installMethod
+    value: go-get
+    url: https://github.com/caddyserver/certmagic/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "go get github.com/caddyserver/certmagic"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/caddyserver/certmagic
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/caddyserver/certmagic/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "CertMagic is licensed under Apache 2.0"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/caddyserver/certmagic/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-30
+    url: https://api.github.com/repos/caddyserver/certmagic/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 5616
+    url: https://api.github.com/repos/caddyserver/certmagic
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 77
+    url: https://api.github.com/repos/caddyserver/certmagic/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, hqCountry, parent, wikidata, pricingPage, paidEdition, hostedOffering, runsAs, renderingModes, databases, contentStore, adminUi, basedOn, forkOf, successorOf, alternativeTo, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, endoflifeId, dockerPulls, sso, i18n, multisite, userRoles, livePreview, importsFrom, npmName]
+unreadable: []
+notes: >
+  No project site of its own: the repository is the only project URL, the pkg.go.dev page is the Go documentation index, and caddyserver.com documents Caddy, so homepage is not recorded. An embedded library: no runsAs, as the server-infra rule sets for libraries. The README names the Caddy Web Server as the program that uses this library ("The same library used by the Caddy Web Server"); Caddy is not built on CertMagic, so no basedOn is recorded. The README says "Go 1.21 or newer" in its Requirements section; go.mod at the latest release tag (v0.25.6) declares go 1.26.0, and runtimeMin takes the manifest value. The README text is older than the manifest. The maintainer is the author named in the README; the LICENSE copyright line states the author owns the copyright and names no legal form. The first GitHub release is v0.10.0 of 2020-03-07; tags start at v0.5.0 without releases. currentMajor is 0: the project has published only v0.x releases. The README links the author's X account (x.com/mholt6) as a personal link, not as a project channel, so no x fact is recorded. The README wording "licensed under Apache 2.0" matches the GitHub SPDX id, so one license entry is kept. The runtime vocabulary has no go value, so binary stays for the compiled Go program that embeds the library. The Go module has no download figure and no npm or registry package is recorded.

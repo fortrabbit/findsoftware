@@ -1,0 +1,146 @@
+id: apache-traffic-server
+name: Apache Traffic Server
+status: accepted
+checkedAt: 2026-10-28
+description: Open-source caching proxy server for HTTP/1.1 and HTTP/2 traffic, used for forward and reverse proxying.
+facts:
+  - field: name
+    value: Apache Traffic Server
+    url: https://trafficserver.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Apache Traffic Server"
+  - field: homepage
+    value: https://trafficserver.apache.org/
+    url: https://trafficserver.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant caching proxy server."
+  - field: repository
+    value: https://github.com/apache/trafficserver
+    url: https://github.com/apache/trafficserver
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://docs.trafficserver.apache.org/en/latest/
+    url: https://docs.trafficserver.apache.org/en/latest/
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: The Apache Software Foundation
+    url: https://trafficserver.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright © 2026 The Apache Software Foundation"
+  - field: maintainerType
+    value: foundation
+    url: https://www.apache.org/foundation/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The Apache® Software Foundation is a 501(c)(3) nonprofit organization."
+  - field: hqCountry
+    value: US
+    url: https://www.apache.org/foundation/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "ASF is a U.S. 501(c)(3) charitable organization"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/apache
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2010
+    url: https://archive.apache.org/dist/trafficserver/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "apache-trafficserver-incubating-2.0.0-alpha.tar.bz2 2010-05-04 04:05"
+  - field: categories
+    value: [reverse-proxy]
+    url: https://docs.trafficserver.apache.org/en/latest/getting-started/index.en.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "forward and reverse proxying of HTTP/HTTPS traffic"
+  - field: categories
+    value: [cache]
+    url: https://trafficserver.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "caching proxy server"
+  - field: categories
+    value: [load-balancer]
+    url: https://trafficserver.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "add load balancing by adding a proxy layer"
+  - field: language
+    value: C++
+    url: https://github.com/apache/trafficserver
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://docs.trafficserver.apache.org/en/latest/admin-guide/installation/index.en.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "In order to build Traffic Server from source you will need the following development tools"
+  - field: currentMajor
+    value: "10"
+    url: https://api.github.com/repos/apache/trafficserver/tags
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-20
+    url: https://trafficserver.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Apache Traffic Server v10.2.1 and v10.1.5 security release"
+  - field: license
+    value: Apache-2.0
+    url: https://trafficserver.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Licensed under the Apache License"
+  - field: licenseModel
+    value: open-source
+    url: https://trafficserver.apache.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Licensed under the Apache License"
+  - field: installMethod
+    value: [source tarball]
+    url: https://docs.trafficserver.apache.org/en/latest/admin-guide/installation/index.en.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Compressed archives of the source code for Traffic Server are available"
+  - field: installMethod
+    value: [git clone]
+    url: https://docs.trafficserver.apache.org/en/latest/admin-guide/installation/index.en.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Traffic Server uses a public Git repository"
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.trafficserver.apache.org/en/latest/admin-guide/installation/index.en.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This command starts all the processes that work together to process Traffic Server requests"
+  - field: githubStargazers
+    value: 1994
+    url: https://api.github.com/repos/apache/trafficserver
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 225
+    url: https://api.github.com/repos/apache/trafficserver/contributors
+    checkedAt: 2026-10-28
+    via: api
+  - field: httpArchiveSites
+    value: 2930
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-10-28
+    via: api
+notFound: [pricingPage, paidEdition, runtimeMin, endoflifeId, adminUi, headlessApi, templating, i18n, multisite, userRoles, livePreview, contentStore, databases, renderingModes, pluginDirectory, pluginCount, docker, dockerPulls, discord, x, bluesky, mastodon, subreddit, newsletter, forum, reportedInstalls, usageShare, npmName, npmWeeklyDownloads, packagistName, pypiName, pypiDownloads, wikidata, hostedOffering, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, sso, selfHostOption]
+unreadable: []
+notes: >
+  The GitHub repository has no releases; the highest stable tag is 10.2.1, so currentMajor is 10. The project's own pages disagree on the 10.2.1 date: the downloads page labels it "Released August 17, 2026" (the 10.2.0 date in the news), while the homepage news lists "October 20, 2026 Apache Traffic Server v10.2.1 and v10.1.5 security release" and the 10.2.1 tag's commit is dated 2026-10-19; latestReleaseDate follows the news, and a reviewer should settle it. The downloads page also lists a LTS line, "Traffic Server 9.2.16 LTS Released October 20, 2026 Long Term Support v9.x Release"; that line sits beside the 10.x latest stable and is not recorded as currentMajor. The docs "latest" pages describe "What's New in ATS v11.x", and no 11.x tag exists; that is the development branch, not a release. firstRelease is the date of the earliest file in the Apache distribution archive (2.0.0-alpha, uploaded 2010-05-04), the project's first published release file, and the repository was created in 2009. The archive is a download directory, not a changelog. The homepage says "Powering major CDNs and content providers worldwide" and lists customers on its Customers page; these are claims with no figure and are not recorded. The project's pages name the Via Header Decoder, traffic_ctl and traffic_top as administration tools; these are command-line tools, so adminUi is not recorded. The user support channel is a mailing list and the #traffic-server channel on ASF Slack; no field takes them. The Apache Software Foundation is a U.S. 501(c)(3) per its own foundation page, which gives a tax ID; the ID is not recorded. The docs state that the project does not provide binary downloads, so the install routes are the source archive and a git clone. Fields coined here: none.

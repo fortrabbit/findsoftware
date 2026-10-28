@@ -1,0 +1,131 @@
+id: cert-manager
+name: cert-manager
+status: accepted
+checkedAt: 2026-10-28
+description: Kubernetes controller that issues and renews X.509 TLS certificates for workloads in a Kubernetes or OpenShift cluster.
+facts:
+  - field: homepage
+    value: https://cert-manager.io
+    url: https://cert-manager.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "cert-manager is a powerful and extensible X.509 certificate controller for Kubernetes and OpenShift workloads."
+  - field: repository
+    value: https://github.com/cert-manager/cert-manager
+    url: https://api.github.com/repos/cert-manager/cert-manager
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://cert-manager.io/docs/
+    url: https://cert-manager.io/docs/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "cert-manager creates TLS certificates for workloads in your Kubernetes or OpenShift cluster"
+  - field: maintainer
+    value: The cert-manager Authors
+    url: https://cert-manager.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "© 2026 The cert-manager Authors."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/cert-manager
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://api.github.com/repos/cert-manager/cert-manager/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [acme-client, tls]
+    url: https://cert-manager.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Automated issuance and renewal of certificates to secure Ingress with TLS"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/cert-manager/cert-manager
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://api.github.com/repos/cert-manager/cert-manager
+    checkedAt: 2026-10-28
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://cert-manager.io/docs/installation/best-practice/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Use two replicas to ensures that there is a standby Pod scheduled to a Node which is ready to take leadership"
+  - field: installMethod
+    value: kubectl-apply
+    url: https://cert-manager.io/docs/installation/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The default static configuration can be installed as follows:"
+  - field: installMethod
+    value: helm
+    url: https://cert-manager.io/docs/installation/helm/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "cert-manager provides Helm charts as a first-class method of installation on both Kubernetes and OpenShift."
+  - field: installMethod
+    value: cmctl
+    url: https://cert-manager.io/docs/installation/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "to quickly install cert-manager."
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/cert-manager/cert-manager
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/cert-manager/cert-manager
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/cert-manager/cert-manager/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-23
+    url: https://api.github.com/repos/cert-manager/cert-manager/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 14138
+    url: https://api.github.com/repos/cert-manager/cert-manager
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 382
+    url: https://api.github.com/repos/cert-manager/cert-manager/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: forum
+    value: https://groups.google.com/forum/#!forum/cert-manager-dev
+    url: https://raw.githubusercontent.com/cert-manager/cert-manager/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Google Group"
+  - field: mastodon
+    value: https://infosec.exchange/@CertManager
+    url: https://cert-manager.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Follow on Mastodon"
+  - field: x
+    value: https://twitter.com/CertManager
+    url: https://cert-manager.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Follow on Twitter"
+notFound: [hqCountry, parent, wikidata, pricingPage, paidEdition, hostedOffering, runtimeMin, renderingModes, databases, contentStore, adminUi, basedOn, forkOf, successorOf, alternativeTo, pluginDirectory, pluginCount, discord, subreddit, bluesky, newsletter, usageShare, endoflifeId, dockerPulls, sso, i18n, multisite, userRoles, livePreview, importsFrom]
+unreadable: []
+notes: >
+  Boundary row: a Kubernetes-only controller. The settled server-infra rule puts Kubernetes-only controllers in scope, and the homepage states the job for Ingress: "Automated issuance and renewal of certificates to secure Ingress with TLS". Status is set to accepted for that reason; the CSV row still says boundary and a reviewer confirms it. The homepage says the project was created by Jetstack (linked to jetstack.io) and donated to the CNCF in 2020; no parent is recorded because the page names no company that owns it today. The maintainer is the project's own name from the footer, "The cert-manager Authors", with the Linux Foundation as the site's copyright holder; the Linux Foundation is not recorded as maintainer because the project does not name it that way. The homepage links a Slack workspace (kubernetes.slack.com) and no field covers Slack. The first GitHub release is v0.1.0 of 2017-10-13; the repository was created in 2017-05. Images are published under quay.io, not Docker Hub, so no dockerPulls figure is recorded. Go modules have no download figure. No release is marked prerelease in the release list. The homepage's "5 million+ daily downloads" is a claim without a source and is not recorded.

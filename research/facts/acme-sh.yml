@@ -1,0 +1,121 @@
+id: acme-sh
+name: acme.sh
+status: accepted
+checkedAt: 2026-10-28
+description: ACME protocol client written in POSIX shell that issues, installs and renews TLS certificates from ACME certificate authorities.
+facts:
+  - field: homepage
+    value: https://acme.sh
+    url: https://acme.sh/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "acme.sh - sponsored and maintained by ZeroSSL since 2021"
+  - field: repository
+    value: https://github.com/acmesh-official/acme.sh
+    url: https://api.github.com/repos/acmesh-official/acme.sh
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://github.com/acmesh-official/acme.sh/wiki
+    url: https://github.com/acmesh-official/acme.sh/wiki
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: ZeroSSL GmbH
+    url: https://zerossl.com/legal/imprint
+    checkedAt: 2026-10-28
+    via: page
+    quote: "ZeroSSL GmbH"
+  - field: maintainerType
+    value: company
+    url: https://zerossl.com/legal/imprint
+    checkedAt: 2026-10-28
+    via: page
+    quote: "ZeroSSL GmbH"
+  - field: hqCountry
+    value: AT
+    url: https://zerossl.com/legal/imprint
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Salzgries 19/3+4 1010 Wien Austria"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/acmesh-official
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://github.com/acmesh-official/acme.sh/releases/tag/1.2.2
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [acme-client, tls]
+    url: https://acme.sh/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Free ACME Client"
+  - field: language
+    value: Shell
+    url: https://api.github.com/repos/acmesh-official/acme.sh
+    checkedAt: 2026-10-28
+    via: api
+  - field: installMethod
+    value: [shell script fetched with curl]
+    url: https://github.com/acmesh-official/acme.sh
+    checkedAt: 2026-10-28
+    via: page
+    quote: "curl https://get.acme.sh | sh -s email=my@example.com"
+  - field: installMethod
+    value: [git clone and --install]
+    url: https://github.com/acmesh-official/acme.sh
+    checkedAt: 2026-10-28
+    via: page
+    quote: "git clone https://github.com/acmesh-official/acme.sh.git"
+  - field: installMethod
+    value: [docker image from ghcr.io]
+    url: https://github.com/acmesh-official/acme.sh/wiki/Run-acme.sh-in-docker
+    checkedAt: 2026-10-28
+    via: page
+    quote: "docker run --rm ghcr.io/acmesh-official/acme.sh"
+  - field: runsAs
+    value: [scheduled]
+    url: https://github.com/acmesh-official/acme.sh
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Create daily cron job to check and renew the certs if needed."
+  - field: license
+    value: GPL-3.0
+    url: https://github.com/acmesh-official/acme.sh/blob/master/LICENSE.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Version 3, 29 June 2007"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/acmesh-official/acme.sh/blob/master/LICENSE.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "GNU GENERAL PUBLIC LICENSE"
+  - field: currentMajor
+    value: 3
+    url: https://github.com/acmesh-official/acme.sh/releases/tag/3.1.6
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-20
+    url: https://github.com/acmesh-official/acme.sh/releases/tag/3.1.6
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 47868
+    url: https://api.github.com/repos/acmesh-official/acme.sh
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 378
+    url: https://api.github.com/repos/acmesh-official/acme.sh/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [hostedOffering, x, parent, wikidata, endoflifeId, runtime, runtimeMin, adminUi, headlessApi, sso, templating, contentStore, databases, pluginDirectory, pricingPage, newsletter, discord, forum, subreddit, usageShare, reportedInstalls, dockerPulls, mastodon, bluesky, npmWeeklyDownloads]
+unreadable: []
+notes: >
+  The homepage at acme.sh is run by ZeroSSL: its title is "acme.sh - Free ACME Client Sponsored by ZeroSSL", it says "sponsored and maintained by ZeroSSL since 2021", and its navigation sells ZeroSSL certificates, a Management Console, a REST API and Enterprise SSL. The project's wiki and README are the open-source source of truth; the ZeroSSL products (Management Console, REST API, paid certificates) are paid CA services and not a hosted acme.sh, so no hostedOffering is recorded. The default certificate authority is ZeroSSL, and the README also lists Let's Encrypt, SSL.com, Google Public CA, Actalis and any RFC 8555 CA; those are not hostedOffering facts. The license is GPL-3.0 as GitHub reports it and as LICENSE.md reads (GNU GPL version 3, no "or later" wording was found); no other license statement exists. The language is Shell per GitHub; the import has no mapping for Shell, so the record gets no language value; runtime has no value for POSIX sh and is left out. The runtime needs a POSIX shell with curl or wget; the README tested list includes BSDs, macOS, Solaris and OpenWRT. The homepage claims support for 180+ DNS providers for DNS validation; it is a count the homepage states, recorded here only. The README calls the project "Docker ready" and links the Docker Hub image neilpang/acme.sh, which has 29,684,253 pulls on Docker Hub as of 2026-10-28; the install docs (the Docker guide) name ghcr.io/acmesh-official/acme.sh, a GitHub Container Registry image with no pull count, so no dockerPulls value is recorded. The GitHub API lists 50 releases; the oldest is 1.2.2 (2016-04-06) and the repository was created 2015-12-26. Release tags from 3.1.6 on are signed with the maintainer's SSH key, per the README. The README links a personal account of the original author (Neil Pang); it is not recorded as x. The acme.sh homepage footer links the Imprint at zerossl.com/legal/imprint, which names ZeroSSL GmbH, the basis for the maintainer. The README also lists a Gitter lobby (gitter.im/acme-sh/Lobby) and an OpenCollective page; neither has a field. The sponsor is recorded as maintainer per the homepage's wording; the GitHub organization is acmesh-official.

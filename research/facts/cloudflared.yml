@@ -1,0 +1,151 @@
+id: cloudflared
+name: cloudflared
+status: accepted
+checkedAt: 2026-10-28
+description: Command-line tunneling daemon that connects a web server or other origin to the Cloudflare network without opening inbound firewall ports.
+facts:
+  - field: name
+    value: cloudflared
+    url: https://github.com/cloudflare/cloudflared
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Contains the command-line client for Cloudflare Tunnel"
+  - field: homepage
+    value: https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/
+    url: https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "can connect HTTP web servers, SSH servers"
+  - field: repository
+    value: https://github.com/cloudflare/cloudflared
+    url: https://api.github.com/repos/cloudflare/cloudflared
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/
+    url: https://github.com/cloudflare/cloudflared
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Extensive documentation can be found in the"
+  - field: maintainer
+    value: Cloudflare, Inc.
+    url: https://www.cloudflare.com/website-terms/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Cloudflare, Inc. and its affiliates"
+  - field: maintainerType
+    value: company
+    url: https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/downloads/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "maintained by Cloudflare"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/cloudflare
+    checkedAt: 2026-10-28
+    via: api
+  - field: hqCountry
+    value: US
+    url: https://www.cloudflare.com/website-terms/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "101 Townsend St, San Francisco, CA 94107"
+  - field: categories
+    value: [reverse-proxy]
+    url: https://github.com/cloudflare/cloudflared
+    checkedAt: 2026-10-28
+    via: page
+    quote: "a tunneling daemon that proxies traffic from the Cloudflare network to your origins."
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/cloudflare/cloudflared
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://github.com/cloudflare/cloudflared
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Downloads are available as standalone binaries"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/cloudflare/cloudflared
+    checkedAt: 2026-10-28
+    via: page
+    quote: "a tunneling daemon that proxies traffic from the Cloudflare network to your origins."
+  - field: installMethod
+    value: [binary download]
+    url: https://github.com/cloudflare/cloudflared
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Downloads are available as standalone binaries"
+  - field: installMethod
+    value: [docker]
+    url: https://github.com/cloudflare/cloudflared
+    checkedAt: 2026-10-28
+    via: page
+    quote: "available on DockerHub"
+  - field: installMethod
+    value: [debian packages]
+    url: https://github.com/cloudflare/cloudflared
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Debian, RPM, and Homebrew packages"
+  - field: installMethod
+    value: [rpm packages]
+    url: https://github.com/cloudflare/cloudflared
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Debian, RPM, and Homebrew packages"
+  - field: installMethod
+    value: [homebrew]
+    url: https://github.com/cloudflare/cloudflared
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Debian, RPM, and Homebrew packages"
+  - field: installMethod
+    value: [build from source]
+    url: https://github.com/cloudflare/cloudflared
+    checkedAt: 2026-10-28
+    via: page
+    quote: "To build from source, install the required version of go"
+  - field: docker
+    value: cloudflare/cloudflared
+    url: https://github.com/cloudflare/cloudflared
+    checkedAt: 2026-10-28
+    via: page
+    quote: "available on DockerHub"
+  - field: dockerPulls
+    value: "247101561 (2026-10-28)"
+    url: https://hub.docker.com/v2/repositories/cloudflare/cloudflared/
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-27
+    url: https://api.github.com/repos/cloudflare/cloudflared/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2020
+    url: https://api.github.com/repos/cloudflare/cloudflared/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/cloudflare/cloudflared
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 16327
+    url: https://api.github.com/repos/cloudflare/cloudflared
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 105
+    url: https://api.github.com/repos/cloudflare/cloudflared/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [currentMajor, runtimeMin, paidEdition, pricingPage, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, contentStore, databases, renderingModes, parent, basedOn, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, npmName, packagistName, endoflifeId]
+unreadable: []
+notes: >
+  The client has no major version of its own: releases are dated YYYY.M.patch (latest 2026.10.5), so currentMajor is absent. The GitHub tag count is 280 and the first non-prerelease release is 2020-06-30. The Cloudflare Tunnel service the client connects to is hosted by Cloudflare and needs a Cloudflare account and a website added to it (the README's "Before you use Cloudflare Tunnel" section); the hosted service is not a record of its own here, and the reviewer decides whether a client for a hosted service stays in, which the wave rules answer yes when the pages say it exposes web servers (the overview says "you can connect HTTP web servers"). The CSV row's homepage (developers.cloudflare.com/cloudflare-one/connections/connect-networks/) answers 200; the project's repository names the tunnel overview page as its homepage, and that page is used. The Go toolchain minimum sits in the README's development section (go 1.27.3 or later) and is a build requirement, not a runtime, so no runtimeMin is recorded. Docker Hub official status is not claimed: the image is cloudflare/cloudflared. The CSV lastRelease (2026-10-15) differs from the API release (2026-10-27); the API value is recorded. Fields coined here: none; hostedOffering is not a dictionary field, so the hosted service is recorded in notes only.

@@ -1,0 +1,133 @@
+id: bandit
+name: Bandit
+status: accepted
+checkedAt: 2026-10-28
+description: HTTP server written in Elixir for Plug and WebSock applications, including Phoenix.
+facts:
+  - field: repository
+    value: https://github.com/mtrudel/bandit
+    url: https://api.github.com/repos/mtrudel/bandit
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://bandit.hexdocs.pm
+    url: https://github.com/mtrudel/bandit/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: Mat Trudel
+    url: https://github.com/mtrudel/bandit/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2020 Mat Trudel"
+  - field: maintainerType
+    value: individual
+    url: https://api.github.com/users/mtrudel
+    checkedAt: 2026-10-28
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/mtrudel
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [web-server]
+    url: https://github.com/mtrudel/bandit/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Bandit is an HTTP server for Plug and WebSock apps."
+  - field: language
+    value: Elixir
+    url: https://api.github.com/repos/mtrudel/bandit
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [elixir]
+    url: https://github.com/mtrudel/bandit/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Bandit is written entirely in Elixir"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/mtrudel/bandit/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "using Bandit to serve your endpoint"
+  - field: installMethod
+    value: hex dependency
+    url: https://github.com/mtrudel/bandit/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Bandit is available in Hex"
+  - field: installMethod
+    value: mix.exs dependency
+    url: https://github.com/mtrudel/bandit/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "by adding `bandit` to your list of dependencies in `mix.exs`"
+  - field: currentMajor
+    value: "1"
+    url: https://api.github.com/repos/mtrudel/bandit/git/refs/tags/1.14.1
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-28
+    url: https://api.github.com/repos/mtrudel/bandit/git/refs/tags/1.14.1
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: "2020"
+    url: https://hex.pm/api/packages/bandit
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/mtrudel/bandit
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/mtrudel/bandit/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/mtrudel/bandit/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: hexName
+    value: bandit
+    url: https://hex.pm/api/packages/bandit
+    checkedAt: 2026-10-28
+    via: api
+  - field: hexDownloads
+    value: "16903125 total (2026-10-28)"
+    url: https://hex.pm/api/packages/bandit
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 28
+    url: https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/bandit
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 67
+    url: https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/bandit
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 1932
+    url: https://api.github.com/repos/mtrudel/bandit
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 63
+    url: https://api.github.com/repos/mtrudel/bandit/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, basedOn, forkOf, successorOf, alternativeTo, runtimeMin, pricingPage, paidEdition, hostedOffering, contentStore, databases, adminUi, headlessApi, templating, i18n, sso, importsFrom, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, packagistName, endoflifeId, renderingModes]
+unreadable: []
+notes: >
+  Bandit has no project website: the README links only the API docs on bandit.hexdocs.pm, a Hex-generated page, so homepage is absent and the docs field holds that link. The maintainer is the copyright holder named in the MIT LICENSE, Mat Trudel; the GitHub owner is the user mtrudel. maintainerType is listed as notFound because the import derives it from the name and repoOwnerType. The README says Bandit is the default HTTP server for Phoenix since release 1.7.11 of the framework and that Thousand Island is the library it is built on; neither is basedOn, since Phoenix uses Bandit and Thousand Island is a library with no record. The highest stable tag is 1.14.1 (2026-10-28), and Hex lists the same version as latest; a GitHub release object does not exist, so the tag commit date is the release date. The first release is the 0.1.0 upload on Hex (2020-11-05), the same day as its GitHub tag. Hex retires 1.10.0 for an improper DEFLATE implementation (reason other); a retirement is a warning on one version, not an end signal, so status stays accepted. The runtime is elixir, which the import maps to BEAM; no runtimeMin is recorded because the README states only Elixir ~> 1.13 in mix.exs and no OTP minimum. The ecosyste.ms figures count hex.pm packages and repositories that depend on bandit.

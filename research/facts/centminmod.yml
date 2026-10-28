@@ -1,0 +1,100 @@
+id: centminmod
+name: Centmin Mod
+status: accepted
+checkedAt: 2026-10-28
+description: Shell menu based installer for an Nginx LEMP stack on AlmaLinux and Rocky Linux servers.
+facts:
+  - field: homepage
+    value: https://centminmod.com
+    url: https://centminmod.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Centmin Mod Menu"
+  - field: repository
+    value: https://github.com/centminmod/centminmod
+    url: https://api.github.com/repos/centminmod/centminmod
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://centminmod.com/getstarted.html
+    url: https://github.com/centminmod/centminmod/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Getting Started Guide"
+  - field: maintainer
+    value: George Liu
+    url: https://github.com/centminmod/centminmod/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "created and is developed by George Liu"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/centminmod/centminmod/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "created and is developed by George Liu"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/centminmod
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [web-server]
+    url: https://github.com/centminmod/centminmod/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Centmin Mod LEMP stack was created and is developed by George Liu"
+  - field: language
+    value: Shell
+    url: https://api.github.com/repos/centminmod/centminmod
+    checkedAt: 2026-10-28
+    via: api
+  - field: databases
+    value: [mariadb]
+    url: https://centminmod.com/changelog
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MariaDB 10.6 default (EL7-EL9), 10.11 for EL10"
+  - field: installMethod
+    value: unattended command line installer
+    url: https://github.com/centminmod/centminmod/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Centmin Mod Unattended Command Line Install (highly recommended)"
+  - field: license
+    value: GPL-3.0
+    url: https://raw.githubusercontent.com/centminmod/centminmod/master/license.txt
+    checkedAt: 2026-10-28
+    via: page
+    quote: "GNU GENERAL PUBLIC LICENSE"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/centminmod/centminmod/master/license.txt
+    checkedAt: 2026-10-28
+    via: page
+    quote: "GNU GENERAL PUBLIC LICENSE"
+  - field: forum
+    value: https://community.centminmod.com
+    url: https://github.com/centminmod/centminmod/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Centmin Mod Community forum"
+  - field: lastCommitDate
+    value: 2026-10-24
+    url: https://api.github.com/repos/centminmod/centminmod/commits?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 667
+    url: https://api.github.com/repos/centminmod/centminmod
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 6
+    url: https://api.github.com/repos/centminmod/centminmod/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [currentMajor, hqCountry, runtime, runtimeMin, runsAs, parent, basedOn, forkOf, successorOf, alternativeTo, latestReleaseDate, latestPrereleaseDate, endoflifeId, pricingPage, paidEdition, freeTier, hostedOffering, adminUi, headlessApi, i18n, multisite, userRoles, sso, discord, x, subreddit, mastodon, bluesky, newsletter, pluginDirectory, pluginCount, wikidata, usageShare, reportedInstalls, npmName, packagistName, dockerPulls]
+unreadable: []
+notes: >
+  Releases are git branches named by version (132.00stable, 140.00beta01, 141.00beta01), not tags or GitHub releases; the repository's tags are pre-resync markers. So no release date exists to record, and the rule for projects without a release tag applies: lastCommitDate is the committer date of the newest commit on master (2026-10-24); the stable branch 132.00stable also shows 2026-10-27, but that is a branch date. The project's changelog page gives dates for versions up to 2019 and none for the current branches. No currentMajor is recorded: the branch numbers (132.00stable is the current stable branch per the changelog) are not semver majors. The 141.00beta01 branch is the beta and its branch date is not recorded. The git-clone install is marked deprecated in the README and is not an install method. The installer targets AlmaLinux and Rocky Linux 8 to 10 (and CentOS 7 on 132.00stable only, which the project lists as EOL); no runtime or runsAs value is recorded because the pages do not state a runtime or service model in a form the fields hold. The changelog's MariaDB line gives the default database version, and the menu's MySQL Management section is not recorded. The boundary reviewer should decide whether a shell installer for a LEMP stack counts as server software for websites (criterion 1) and whether branch-named releases count (criterion 4); the rule for no tagged releases was applied. The homepage quote is the menu banner text.

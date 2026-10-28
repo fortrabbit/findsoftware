@@ -1,0 +1,114 @@
+id: adminerevo
+name: AdminerEvo
+status: discontinued
+checkedAt: 2026-10-28
+description: Fork of Adminer, a database management tool distributed as a single PHP file, that its maintainer closed in 2025.
+facts:
+  - field: status
+    value: discontinued
+    url: https://github.com/adminerevo/adminerevo/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "I'm going to close the repository"
+  - field: status
+    value: discontinued (repository archived)
+    url: https://api.github.com/repos/adminerevo/adminerevo
+    checkedAt: 2026-10-28
+    via: api
+  - field: repository
+    value: https://github.com/adminerevo/adminerevo
+    url: https://api.github.com/repos/adminerevo/adminerevo
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: adminerevo
+    url: https://api.github.com/users/adminerevo
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainerType
+    value: community
+    url: https://github.com/adminerevo/adminerevo/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "I am now starting to take over the project"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/adminerevo
+    checkedAt: 2026-10-28
+    via: api
+  - field: forkOf
+    value: adminer
+    url: https://github.com/adminerevo/adminerevo/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "I am now starting to take over the project under a slightly different name"
+  - field: categories
+    value: [db-admin]
+    url: https://github.com/adminerevo/adminerevo/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Database management in a single PHP file"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/adminerevo/adminerevo
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/adminerevo/adminerevo/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "PHP 5+"
+  - field: installMethod
+    value: [single PHP file download]
+    url: https://github.com/adminerevo/adminerevo/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "wget -c https://github.com/adminerevo/adminerevo/releases/download/v4.8.4/adminer-4.8.4.php"
+  - field: databases
+    value: [mysql, mariadb, postgresql, sqlite, mssql, oracle, mongodb]
+    url: https://github.com/adminerevo/adminerevo/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MySQL, MariaDB, PostgreSQL, SQLite, MS SQL, Oracle, Elasticsearch, MongoDB"
+  - field: license
+    value: Apache-2.0 OR GPL-2.0-only
+    url: https://github.com/adminerevo/adminerevo/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "SPDX-License-Identifier: Apache-2.0 OR GPL-2.0-only"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/adminerevo/adminerevo/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This work is dual-licensed under Apache 2.0 and GPL 2.0."
+  - field: firstRelease
+    value: 2023
+    url: https://github.com/adminerevo/adminerevo/releases/tag/v4.8.2
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://github.com/adminerevo/adminerevo/releases/tag/v4.8.4
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2024-04-07
+    url: https://github.com/adminerevo/adminerevo/releases/tag/v4.8.4
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 748
+    url: https://api.github.com/repos/adminerevo/adminerevo
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 134
+    url: https://api.github.com/repos/adminerevo/adminerevo/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, docs, hqCountry, parent, wikidata, endoflifeId, runtimeMin, adminUi, runsAs, pricingPage, forum, discord, subreddit, newsletter, reportedInstalls, usageShare, pluginDirectory, dockerPulls]
+unreadable: ["https://docs.adminerevo.org/ (DNS does not resolve, 2026-10-28)", "https://adminerevo.org/ (DNS does not resolve, 2026-10-28)"]
+notes: >
+  The status is discontinued on two signals: the repository is archived (GitHub API, archived true, last push 2025-01-24), and the README states the closure in its own words: "I'm going to close the repository", and names pematon/adminer as the option the maintainer points to. The README calls the maintainer "L." and no legal name or company appears on the project's pages, so the maintainer is the GitHub organization adminerevo, recorded as community. The GitHub homepage field points to docs.adminerevo.org, which does not resolve; no other homepage was found, so homepage is left out and no homepage fact is written. The README's "Information from the original developer" table gives the supported databases and "Requirements PHP 5+"; those statements come from the original developer and describe Adminer, so they are recorded only as the README states them. The license is stated once in two wordings (SPDX identifier and "dual-licensed under Apache 2.0 and GPL 2.0"), recorded as one entry. The API lists three releases, v4.8.2 (2023-07-21), v4.8.3 and v4.8.4 (2024-04-07); the repository holds tags back to v4.1.0, which are not releases and are not used for firstRelease. The README gives no statement on how the file is served, so runsAs is not recorded; Elasticsearch is listed in the README and has no databases value in the dictionary. The CSV row says the archive followed Adminer resuming development; the README does not say that, so the record does not state it.

@@ -1,0 +1,115 @@
+id: cwp
+name: Control Web Panel
+status: accepted
+checkedAt: 2026-10-28
+description: Linux control panel for managing web hosting, websites and servers on dedicated servers and VPS, with a free core and a paid CWPpro edition.
+facts:
+  - field: homepage
+    value: https://control-webpanel.com
+    url: https://control-webpanel.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "CWP is a modern and advanced Linux control panel for web hosting providers and system admins."
+  - field: docs
+    value: https://docs.control-webpanel.com/
+    url: https://control-webpanel.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Docs (for CWP Users)"
+  - field: forum
+    value: https://forum.centos-webpanel.com/
+    url: https://control-webpanel.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Forums"
+  - field: maintainer
+    value: LINANTO LLC
+    url: https://control-webpanel.com/terms-of-service
+    checkedAt: 2026-10-28
+    via: page
+    quote: "LINANTO LLC"
+  - field: maintainerType
+    value: company
+    url: https://control-webpanel.com/terms-of-service
+    checkedAt: 2026-10-28
+    via: page
+    quote: "LINANTO LLC"
+  - field: hqCountry
+    value: GE
+    url: https://control-webpanel.com/terms-of-service
+    checkedAt: 2026-10-28
+    via: page
+    quote: "0160 Tbilisi, Pekin Avenue N44 GEORGIA"
+  - field: categories
+    value: [control-panel]
+    url: https://control-webpanel.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "CWP is a modern and advanced Linux control panel for web hosting providers and system admins."
+  - field: adminUi
+    value: yes, web control panel for hosting accounts and server administration
+    url: https://control-webpanel.com/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "CWP is built with a modern, intuitive, and fully responsive interface."
+  - field: databases
+    value: [mariadb, postgres, mongodb]
+    url: https://control-webpanel.com/features
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Control WebPanel support popular databases including MariaDB, MongoDB, and PostgreSQL."
+  - field: installMethod
+    value: [installer script run with wget on a fresh AlmaLinux, CentOS, Rocky or Oracle Linux server]
+    url: https://control-webpanel.com/installation-instructions
+    checkedAt: 2026-10-28
+    via: page
+    quote: "wget http://centos-webpanel.com/cwp-el9-latest"
+  - field: runsAs
+    value: [always-on]
+    url: https://control-webpanel.com/installation-instructions
+    checkedAt: 2026-10-28
+    via: page
+    quote: "all CWP services start correctly"
+  - field: license
+    value: Control Web Panel License Info (proprietary, free to use)
+    url: https://control-webpanel.com/terms-of-service
+    checkedAt: 2026-10-28
+    via: page
+    quote: "it is not allowed to modify or use any part of the code"
+  - field: paidEdition
+    value: CWPpro
+    url: https://control-webpanel.com/cwppro
+    checkedAt: 2026-10-28
+    via: page
+    quote: "CWPpro also has more features and security improvement"
+  - field: pricingPage
+    value: https://control-webpanel.com/cwppro
+    url: https://control-webpanel.com/cwppro
+    checkedAt: 2026-10-28
+    via: page
+  - field: currentMajor
+    value: 1
+    url: https://control-webpanel.com/changelog
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Version 1.26 (released 26/10/2026)"
+  - field: latestReleaseDate
+    value: 2026-10-26
+    url: https://control-webpanel.com/changelog
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Version 1.26 (released 26/10/2026)"
+  - field: facebook
+    value: https://www.facebook.com/profile.php?id=100087735060817
+    url: https://control-webpanel.com/
+    checkedAt: 2026-10-28
+    via: page
+  - field: x
+    value: https://twitter.com/ControlWebPanel
+    url: https://control-webpanel.com/
+    checkedAt: 2026-10-28
+    via: page
+notFound: [firstRelease, language, runtime, runtimeMin, repository, sourcePublic, githubStargazers, contributors, packagistName, npmName, endoflifeId, pluginDirectory, pluginCount, discord, newsletter, subreddit, mastodon, bluesky, reportedInstalls, usageShare, templating, i18n, multisite, userRoles, sso, contentStore, headlessApi, importsFrom, renderingModes]
+unreadable: ["https://control-webpanel.com/pricing (404)", "https://control-webpanel.com/product (404)", "https://docs.control-webpanel.com/docs/installation (2019 page, not used)", "http://newsletter.control-webpanel.com/lists/5f2727d15a044/sign-up (plain http, answers 403 over https)"]
+notes: >
+  No source repository: a GitHub search for control-webpanel and centos-webpanel names returned nothing for this project, and the homepage and docs link no repository, so no repository, stars or package field is recorded. The CSV row says the homepage is https://control-webpanel.com; it answers over https. The product is free to use under a proprietary license: the terms page says the software is free to use by everyone and forbids modification and reuse of the code, so license is recorded as stated; no open-source license is claimed. The CSV row's version 1.12 is stale: the changelog now lists 1.26 released 2026-10-26. currentMajor is 1 from the changelog entry "Version 1.26"; the changelog header "CWP7" names the product line (it follows CentOS 7 and covers EL8 and EL9 systems) and is not recorded as a major. licenseModel is left to the import, which derives it from the license statement. The changelog's oldest dated entry is 0.9.8.1166 on 2023-08-08, so firstRelease stays unknown from these pages. The CWPpro page sells CWPpro licenses on monthly and yearly terms; the prices are not recorded. The install page lists the supported systems as AlmaLinux 8 and 9, CentOS 7, 8 and 9, Rocky Linux and Oracle Linux, with at least 2 GB of RAM, and says CWP must be installed on a fresh OS and has no uninstaller; these are not recorded as fields. The homepage counters "0 Servers Running CWP" and "0 Partners" are placeholders and are not recorded. The homepage footer names LINANTO LLC (Georgia/Tbilisi); the terms page gives the company address in Tbilisi. The docs site pages read are from 2019 and 2020 and say nothing about current versions. YouTube (youtube.com/c/centoswebpanel_cwp) is linked from the docs site and the homepage; no youtube field is in the starter list, so it is not recorded. The wiki at wiki.centos-webpanel.com answers over https and is linked from the homepage; no wiki field is in the starter list. The homepage says a modules marketplace is planned for pro users; no marketplace page was found, so pluginDirectory is not recorded.

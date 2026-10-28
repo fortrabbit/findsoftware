@@ -1,0 +1,133 @@
+id: dqlite
+name: dqlite
+status: accepted
+checkedAt: 2026-10-28
+description: Embeddable, replicated SQL database library in C that extends SQLite across a cluster of machines using Raft consensus.
+facts:
+  - field: homepage
+    value: https://dqlite.io
+    url: https://dqlite.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Dqlite is a fast, embedded, persistent SQL database with Raft consensus"
+  - field: repository
+    value: https://github.com/canonical/dqlite
+    url: https://api.github.com/repos/canonical/dqlite
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://dqlite.io/docs/
+    url: https://dqlite.io/docs/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Dqlite (distributed SQLite) is a fast, embedded and persistent SQL database"
+  - field: forum
+    value: https://discourse.dqlite.io
+    url: https://dqlite.io/
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: Canonical Ltd
+    url: https://dqlite.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "© 2026 Canonical Ltd."
+  - field: maintainerType
+    value: company
+    url: https://dqlite.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "© 2026 Canonical Ltd."
+  - field: parent
+    value: Canonical Group Limited
+    url: https://canonical.com/legal/data-privacy
+    checkedAt: 2026-10-28
+    via: page
+    quote: "will be the responsibility of Canonical Group Limited"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/canonical
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: https://api.github.com/repos/canonical/dqlite/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [database, sqlite]
+    url: https://dqlite.io/docs/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Dqlite (distributed SQLite) is a fast, embedded and persistent SQL database"
+  - field: language
+    value: C
+    url: https://api.github.com/repos/canonical/dqlite
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://dqlite.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Portable C-Raft and dqlite are both written in C"
+  - field: installMethod
+    value: Ubuntu PPA (development release)
+    url: https://dqlite.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Install on Ubuntu (bleeding edge)"
+  - field: installMethod
+    value: build from source with autotools
+    url: https://raw.githubusercontent.com/canonical/dqlite/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "To build libdqlite from source you'll need:"
+  - field: basedOn
+    value: sqlite
+    url: https://dqlite.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Dqlite (distributed SQLite) extends SQLite across a cluster of machines"
+  - field: license
+    value: LGPL-3.0 with a static linking exception
+    url: https://raw.githubusercontent.com/canonical/dqlite/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This software is licensed under the LGPLv3"
+  - field: licenseModel
+    value: open-source
+    url: https://dqlite.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Published under the LGPLv3 license with a static linking exception"
+  - field: databases
+    value: [sqlite]
+    url: https://dqlite.io/docs/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "It extends SQLite across a cluster of machines"
+  - field: latestReleaseDate
+    value: 2026-07-02
+    url: https://api.github.com/repos/canonical/dqlite/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/canonical/dqlite/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 4418
+    url: https://api.github.com/repos/canonical/dqlite
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 32
+    url: https://api.github.com/repos/canonical/dqlite/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [hqCountry, forkOf, successorOf, alternativeTo, runtimeMin, runsAs, renderingModes, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, contentStore, pricingPage, paidEdition, hostedOffering, pluginDirectory, pluginCount, subreddit, discord, mastodon, bluesky, x, facebook, instagram, newsletter, wikidata, usageShare, reportedInstalls, packagistName, npmName, pypiName, docker, dockerPulls, endoflifeId, latestPrereleaseDate]
+unreadable: ["https://dqlite.io/docs/protocol (redirects, not followed to a page)"]
+notes: >
+  Criterion 1 reads as a library, not a site tool: dqlite is an embedded database engine that an application links against, the same class as the SQLite-like rows settled in this wave. Its homepage says it "extends SQLite across a cluster of machines"; basedOn names sqlite from the homepage's own words; the import keeps it once a sqlite record exists. The categories are "database" and "sqlite"; both reach the record as database. The license is one statement in three wordings: the LICENSE file "licensed under the LGPLv3" with a special exception for static linking, the README "a slightly modified version of LGPLv3", and the homepage "Published under the LGPLv3 license with a static linking exception"; the GitHub API reports NOASSERTION, so the license entry comes from the LICENSE file and the model from the homepage. The maintainer is Canonical Ltd, from the copyright lines on the homepage ("© 2026 Canonical Ltd.") and the LICENSE ("Copyright (C) 2017-2025 Canonical Ltd."). The parent is Canonical Group Limited as the privacy policy names the group entity. Canonical's contact page lists "Canonical Group Limited" in London and "Canonical Limited" in Douglas, Isle of Man, and does not say which one is the copyright holder, so hqCountry is absent. The first GitHub release is v0.1.0 (2018-07-30); the repository was created in 2017. The latest release is v1.18.7 (2026-07-02), the only major is 1; the newest prerelease, v1.17.0-rc1 (2024-10-18), is older than the latest release. The README requires a Linux kernel with native async I/O and lists libuv and SQLite as build dependencies; no runtimeMin is stated. The README names go-dqlite, the Go client in another repository, and the wire protocol page, which redirects; neither is a field here. The CSV row gives the Ubuntu dev PPA as the install route; the README calls it the latest development release. The social links on the dqlite.io page are Ubuntu-wide (Facebook, Instagram, LinkedIn, YouTube) and are not recorded. No runsAs is recorded: the docs describe the library inside an application, and no page says a dqlite process runs as a daemon or service.

@@ -1,0 +1,142 @@
+id: cpanel
+name: cPanel
+status: accepted
+checkedAt: 2026-10-28
+description: Proprietary web hosting control panel and server management software, sold as cPanel & WHM licenses for servers that host websites.
+facts:
+  - field: homepage
+    value: https://cpanel.net
+    url: https://cpanel.net/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Millions of websites rely on cPanel to manage hosting, applications, and infrastructure."
+  - field: docs
+    value: https://docs.cpanel.net
+    url: https://docs.cpanel.net/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Welcome to cPanel & WHM's documentation website!"
+  - field: forum
+    value: https://forums.cpanel.net
+    url: https://cpanel.net/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Forums"
+  - field: maintainer
+    value: WebPros International, LLC
+    url: https://www.webpros.com/legal/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "WebPros International, LLC"
+  - field: maintainerType
+    value: company
+    url: https://www.webpros.com/legal/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "WebPros International, LLC"
+  - field: hqCountry
+    value: US
+    url: https://www.webpros.com/legal/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "WebPros International L.L.C., 1100 W 23rd St, Houston, TX 77008 / USA"
+  - field: categories
+    value: [control-panel]
+    url: https://cpanel.net/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Web Hosting Control Panel & Server Management Tools"
+  - field: installMethod
+    value: installer script
+    url: https://docs.cpanel.net/installation-guide/install
+    checkedAt: 2026-10-28
+    via: page
+    quote: "To install cPanel & WHM on your server, run the following command:"
+  - field: currentMajor
+    value: 138
+    url: https://docs.cpanel.net/changelogs/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This document lists the cases and bugs worked on during the version 138 release cycle."
+  - field: latestReleaseDate
+    value: 2026-10-26
+    url: https://docs.cpanel.net/changelogs/138-change-log/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "138.0.19 2026-10-26"
+  - field: license
+    value: cPanel & WebHost Manager (WHM) End User License Agreement
+    url: https://cpanel.net/eula/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "cPanel & WebHost Manager (WHM) End User License Agreement"
+  - field: licenseModel
+    value: commercial
+    url: https://cpanel.net/eula/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "cPanel & WebHost Manager (WHM) End User License Agreement"
+  - field: pricingPage
+    value: https://cpanel.net/pricing/
+    url: https://cpanel.net/pricing/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Choose the plan that fits your workflow"
+  - field: adminUi
+    value: yes (WHM, the server administration interface)
+    url: https://docs.cpanel.net/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Access your WHM account, learn WHM features, navigate WHM interfaces, and more."
+  - field: runsAs
+    value: always-on
+    url: https://docs.cpanel.net/knowledge-base/general-systems-administration/how-to-configure-your-firewall-for-cpanel-services/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This daemon monitors cPanel & WHM services."
+  - field: sso
+    value: OIDC
+    url: https://docs.cpanel.net/whm/security-center/manage-external-authentications/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Most OpenID Connect-compliant identity providers require"
+  - field: databases
+    value: [mysql, mariadb]
+    url: https://docs.cpanel.net/cpanel/databases/mysql-databases/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Force short prefix for MySQL and MariaDB databases"
+  - field: databases
+    value: [postgresql]
+    url: https://docs.cpanel.net/cpanel/databases/postgresql-databases/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Add a PostgreSQL user"
+  - field: subreddit
+    value: https://www.reddit.com/r/cpanel/
+    url: https://cpanel.net/
+    checkedAt: 2026-10-28
+    via: page
+  - field: facebook
+    value: https://facebook.com/cpanel
+    url: https://cpanel.net/
+    checkedAt: 2026-10-28
+    via: page
+  - field: instagram
+    value: https://www.instagram.com/cpanel/
+    url: https://cpanel.net/
+    checkedAt: 2026-10-28
+    via: page
+  - field: x
+    value: https://x.com/cpanel
+    url: https://cpanel.net/
+    checkedAt: 2026-10-28
+    via: page
+notFound: [repository, docs-source, runtime, language, firstRelease, endoflifeId, pluginDirectory, pluginCount, githubStargazers, contributors, reportedInstalls, usageShare, npmName, packagistName, discord, bluesky, mastodon, newsletter, hostedOffering, basedOn]
+unreadable:
+  - https://cpanel.net/about/ (404)
+  - https://cpanel.net/legal/ and /terms/ (404)
+  - https://www.webpros.com/about/ (404)
+  - https://docs.cpanel.net/installation/ pages (404)
+notes: >
+  cPanel has no public repository for the product: the GitHub organization cpanel publishes Perl task distributions and modules, not the control panel, so no repository field is recorded. The product is installed from a downloaded installer, per the installation guide ("To install cPanel & WHM on your server, run the following command:"), so criterion 2 holds through the distributable, not through source. The CSV row gave 138.0.15 dated 2026-10-08; the 138 change log lists 138.0.19 dated 2026-10-26 as the newest version, and that is recorded. The license is the cPanel & WebHost Manager (WHM) End User License Agreement, whose PDF (cpanel.net/wp-content/uploads/2026/09/EULA-document.pdf, read as text) grants "a limited, non-exclusive, license to (a) install" the software; the license grant is not quoted in a fact because the quote checker reads HTML pages and the license is in a PDF. The licence is per server, and the installation guide says cPanel only licenses publicly visible static IP addresses with working DNS, and that cPanel does not provide an uninstaller (removal means reformatting the server). The installation guide asks for a freshly installed operating system, and its system requirement pages cover AlmaLinux, CloudLinux, Rocky Linux and Ubuntu. The pricing page lists Solo (1 account), Admin (up to 5), Pro (up to 30) and Premier (up to 100) plans, with monthly and annual billing and some plans available on cloud or VPS only; the pricing FAQ says cPanel does not provide web-hosting services; no prices are recorded. The product name on the record is cPanel; WHM is its server-level interface and cPanel the account-level one, per the docs home page. A cPanel & WHM trial is offered from the pricing page, and no edition or free tier is recorded from it. The legal name appears as WebPros International, LLC on the legal page and as WebPros International L.L.C. on the license and imprint pages; one legal entity, two wordings. The GitHub org cpanel is a separate matter: its public repositories are Perl tasks. The docs describe a "cPanel DNSOnly" installation and a separate Nova product on cpanel.net; these are not recorded here. The firewall documentation says the cPanel Server Daemon (cpsrvd) listens on a port, which is the always-on statement. The plan tiers (Solo, Admin, Pro, Premier) differ by account count and are no edition with added features, so no paidEdition is recorded. The docs list OpenID Connect identity providers for logging in to cPanel, WHM and Webmail, recorded as sso OIDC. The MySQL, MariaDB and PostgreSQL database interfaces are cPanel account features that manage databases on the server.

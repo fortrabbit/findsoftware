@@ -1,0 +1,119 @@
+id: emissary-ingress
+name: Emissary-ingress
+status: accepted
+checkedAt: 2026-10-28
+description: Kubernetes-native API gateway and Layer 7 load balancer built on the Envoy Proxy, configured through Kubernetes resources.
+facts:
+  - field: name
+    value: Emissary-ingress
+    url: https://emissary-ingress.dev/
+    checkedAt: 2026-10-28
+    via: page
+  - field: homepage
+    value: https://emissary-ingress.dev
+    url: https://emissary-ingress.dev/
+    checkedAt: 2026-10-28
+    via: page
+  - field: repository
+    value: https://github.com/emissary-ingress/emissary
+    url: https://github.com/emissary-ingress/emissary
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://emissary-ingress.dev/docs/
+    url: https://emissary-ingress.dev/docs/
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: Emissary-ingress Authors
+    url: https://emissary-ingress.dev/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Emissary-ingress Authors"
+  - field: maintainerType
+    value: community
+    url: https://github.com/emissary-ingress/emissary
+    checkedAt: 2026-10-28
+    via: page
+    quote: "the community is now more important than ever"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/emissary-ingress
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: https://api.github.com/repos/emissary-ingress/emissary/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [api-gateway, load-balancer]
+    url: https://github.com/emissary-ingress/emissary
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Layer 7 load balancer"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/emissary-ingress/emissary
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/emissary-ingress/emissary/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-19
+    url: https://api.github.com/repos/emissary-ingress/emissary/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/emissary-ingress/emissary/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Apache License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/emissary-ingress/emissary/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Apache License"
+  - field: installMethod
+    value: helm-chart
+    url: https://emissary-ingress.dev/docs/4.0/topics/install/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Helm, the package manager for Kubernetes, is the recommended way to install"
+  - field: installMethod
+    value: kubernetes-yaml
+    url: https://emissary-ingress.dev/docs/4.0/topics/install/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "directly apply Kubernetes YAML"
+  - field: installMethod
+    value: docker-image
+    url: https://emissary-ingress.dev/docs/4.0/topics/install/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The Docker install will let you try the Emissary locally in seconds"
+  - field: runsAs
+    value: always-on
+    url: https://emissary-ingress.dev/docs/4.0/about/features-and-benefits/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Scaling the Emissary is as simple as changing the replicas in your deployment"
+  - field: githubStargazers
+    value: 4522
+    url: https://api.github.com/repos/emissary-ingress/emissary
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 196
+    url: https://api.github.com/repos/emissary-ingress/emissary/contributors
+    checkedAt: 2026-10-28
+    via: api
+notFound: [dockerPulls, hqCountry, parent, forkOf, successorOf, basedOn, runtime, runtimeMin, endoflifeId, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, userRoles, sso, renderingModes, hostedOffering, paidEdition, pricingPage, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, packagistName, pypiName, npmWeeklyDownloads, pypiDownloads, packagistDownloads, httpArchiveSites, alternativeTo]
+unreadable: []
+notes: >
+  Kubernetes-only controller, in scope as server software. The README says the project "was formerly known as Ambassador API Gateway"; no Ambassador record exists, so no successorOf is recorded. The README says the project is a CNCF Incubating project and that "at this point, Emissary's original parent company has stepped back from direct involvement in the project"; no parent is recorded because the company is no longer the owner. The homepage in the candidates CSV pointed to the company's product page; the project's own site emissary-ingress.dev is recorded. The GitHub language is Python by bytes (about 1.83 MB Python, 1.26 MB Go); the go.mod module is github.com/emissary-ingress/emissary/v3 with go 1.25.0, so the Go share is substantial, and a reviewer should decide whether language is Go. No runtime is recorded because the dictionary has no Go runtime and the controller ships as container images. The docs at emissary-ingress.dev/docs/4.0 are the v4.0 line; the install page links Helm and YAML install guides that are separate pages and were not fetched. No dockerPulls figure is recorded: the install docs name only the registry namespace docker.io/emissaryingress/ and no image, and the Docker Hub emissaryingress/emissary record was last updated 2025-04-03. The oldest GitHub release is 0.35.3 from 2018; the repository was created in 2017, so firstRelease follows the release list. Releases v4.0.0 and v4.1.0 are the v4 line, and the frozen v3.10 and v2.5 branches are not an end signal. Stars and contributors come from the default branch repo. The README names the CNCF Slack channel as the community space, and no X, Discord or other social link is recorded. Fields coined here: none.

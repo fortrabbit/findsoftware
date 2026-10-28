@@ -1,0 +1,69 @@
+id: boulder
+name: Boulder
+status: stub
+checkedAt: 2026-10-28
+description: ACME-based certificate authority written in Go, the software that runs Let's Encrypt.
+facts:
+  - field: repository
+    value: https://github.com/letsencrypt/boulder
+    url: https://api.github.com/repos/letsencrypt/boulder
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Internet Security Research Group
+    url: https://letsencrypt.org/about/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "It is a service provided by the Internet Security Research Group (ISRG)"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/letsencrypt
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [tls]
+    url: https://github.com/letsencrypt/boulder/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This is an implementation of an ACME-based CA"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/letsencrypt/boulder
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: MPL-2.0
+    url: https://github.com/letsencrypt/boulder/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This project is licensed under the Mozilla Public License 2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/letsencrypt/boulder/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "This project is licensed under the Mozilla Public License 2.0"
+  - field: firstRelease
+    value: "2022"
+    url: https://api.github.com/repos/letsencrypt/boulder/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-27
+    url: https://api.github.com/repos/letsencrypt/boulder/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 5776
+    url: https://api.github.com/repos/letsencrypt/boulder
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 133
+    url: https://api.github.com/repos/letsencrypt/boulder/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, maintainerType, hqCountry, currentMajor, runtime, runtimeMin, runsAs, installMethod, pricingPage, paidEdition, parent, basedOn, forkOf, successorOf, alternativeTo, adminUi, headlessApi, databases, i18n, multisite, userRoles, sso, discord, x, forum, subreddit, mastodon, bluesky, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, endoflifeId, npmName, packagistName, wikidata]
+unreadable: []
+notes: >
+  Doubt: whether Boulder is in scope. The boundary rule admits a certificate authority only when its own pages say it serves, protects or exposes websites or web apps. Boulder's README says it "is the software that runs Let's Encrypt" and that it is "intended only to support the Web PKI"; the website statement ("enable HTTPS (SSL/TLS) for websites") is on letsencrypt.org/about, the service, not on Boulder's pages. The README also says the Docker development environment is "not suitable for production usage" and that the maintainers "recommend evaluating a project other than Boulder" for organizations, so no site owner installs it to serve a site. Settle by a boundary decision on whether CA software that only its operator runs counts as server software for websites. The project has no homepage of its own (repository homepage field is empty); the operator's site is letsencrypt.org. The release tags are calendar strings (v0.20261027.0), so currentMajor is not recorded. The Internet Security Research Group is named as the copyright holder (LICENSE.txt "Copyright 2016 ISRG") and as the service provider on letsencrypt.org/about; the legal form and country are not on the pages read. firstRelease is the oldest GitHub release, release-2022-03-22.

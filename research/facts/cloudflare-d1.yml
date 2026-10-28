@@ -1,0 +1,82 @@
+id: cloudflare-d1
+name: Cloudflare D1
+status: hosted-service
+checkedAt: 2026-10-28
+description: Managed serverless SQL database that Cloudflare runs for Workers and Pages projects, with SQLite's SQL semantics.
+facts:
+  - field: name
+    value: Cloudflare D1
+    url: https://developers.cloudflare.com/d1/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "D1 is Cloudflare's managed, serverless database with SQLite's SQL semantics"
+  - field: homepage
+    value: https://developers.cloudflare.com/d1/
+    url: https://developers.cloudflare.com/d1/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Create new serverless SQL databases to query from your Workers and Pages projects."
+  - field: docs
+    value: https://developers.cloudflare.com/d1/
+    url: https://developers.cloudflare.com/d1/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Create new serverless SQL databases to query from your Workers and Pages projects."
+  - field: maintainer
+    value: Cloudflare, Inc.
+    url: https://www.cloudflare.com/website-terms/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Cloudflare, Inc. Attn: Legal Department"
+  - field: maintainerType
+    value: company
+    url: https://www.cloudflare.com/website-terms/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Cloudflare, Inc. Attn: Legal Department"
+  - field: hqCountry
+    value: US
+    url: https://www.cloudflare.com/website-terms/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "101 Townsend St, San Francisco, CA 94107"
+  - field: categories
+    value: [database]
+    url: https://developers.cloudflare.com/d1/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "D1 is Cloudflare's managed, serverless database"
+  - field: databases
+    value: [sqlite]
+    url: https://developers.cloudflare.com/d1/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "with SQLite's SQL semantics"
+  - field: firstRelease
+    value: 2023
+    url: https://developers.cloudflare.com/d1/platform/changelog/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The D1 public beta is here"
+  - field: pricingPage
+    value: https://developers.cloudflare.com/d1/platform/pricing/
+    url: https://developers.cloudflare.com/d1/platform/pricing/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Will D1 always have a Free plan?"
+  - field: regions
+    value: "eu, fedramp (databases restricted to a jurisdiction; the European Union and FedRAMP-compliant data centers)"
+    url: https://developers.cloudflare.com/d1/configuration/data-location/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Restrict database to a jurisdiction"
+  - field: apiLimits
+    value: "1000 queries per Worker invocation on Workers Paid, 50 on Free"
+    url: https://developers.cloudflare.com/d1/platform/limits/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Queries per Worker invocation (read subrequest limits ) 1000 (Workers Paid) / 50 (Free)"
+notFound: [repository, selfHostOption, language, runtime, runtimeMin, currentMajor, latestReleaseDate, endoflifeId, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, importsFrom, contentStore, renderingModes, runsAs, parent, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, githubStargazers, contributors, usageShare, reportedInstalls, npmName, packagistName, paidEdition]
+unreadable: []
+notes: >
+  Cloudflare D1 has no public repository of its own; the workers-sdk repository holds Wrangler and the client tooling, which the hosted-service rules take nothing from. The record sits on the D1 docs at developers.cloudflare.com, whose overview names it a managed serverless database for Workers and Pages projects. Plans: the overview says it is "Available on Free and Paid plans" and the pricing page is linked without prices. The Free plan and Workers Paid plan limits differ (database size, storage, queries per invocation); only the query limit is recorded as apiLimits, and the database-size and storage limits are on the limits page for the reviewer to add if wanted. Data location: the default placement is automatic, and a database can be restricted to the European Union or to FedRAMP-compliant data centers; this is recorded under regions. The firstRelease year is the public beta in the changelog (2023-09-28); the changelog shows a legacy alpha before it and no general-availability date, so the reviewer decides whether a beta counts as a first release. The maintainer legal name and the headquarters city are from the website terms (Cloudflare, Inc., 101 Townsend St, San Francisco); the terms also name California law, so the country is taken from the company address. Plans are stated on the overview as "Available on Free and Paid plans"; no installation route exists, so no installMethod is recorded. Coined fields: none. The read-replication feature is in beta on the changelog and is not recorded as a field. 

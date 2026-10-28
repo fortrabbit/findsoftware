@@ -1,0 +1,135 @@
+id: cockpit-project
+name: Cockpit
+status: stub
+checkedAt: 2026-10-28
+description: Web-based graphical interface for administering Linux servers, through a browser on the server's own port.
+facts:
+  - field: name
+    value: Cockpit
+    url: https://cockpit-project.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Cockpit is a web-based graphical interface for servers"
+  - field: homepage
+    value: https://cockpit-project.org/
+    url: https://cockpit-project.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The easy-to-use, integrated, glanceable, and open web-based interface for your servers"
+  - field: repository
+    value: https://github.com/cockpit-project/cockpit
+    url: https://api.github.com/repos/cockpit-project/cockpit
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://cockpit-project.org/guide/latest/
+    url: https://cockpit-project.org/running
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Running Cockpit"
+  - field: maintainer
+    value: Cockpit Project
+    url: https://cockpit-project.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Cockpit is a Red Hat sponsored free software project"
+  - field: maintainerType
+    value: community
+    url: https://cockpit-project.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Cockpit is a Red Hat sponsored free software project"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/cockpit-project
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [admin-panel]
+    url: https://cockpit-project.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Cockpit is a web-based graphical interface for servers"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/cockpit-project/cockpit
+    checkedAt: 2026-10-28
+    via: api
+  - field: installMethod
+    value: [distribution packages]
+    url: https://cockpit-project.org/running
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Install cockpit: sudo dnf install cockpit"
+  - field: mastodon
+    value: https://fosstodon.org/@Cockpit
+    url: https://cockpit-project.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Mastodon"
+  - field: license
+    value: LGPL-2.1-or-later
+    url: https://cockpit-project.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "released under the LGPL v2.1+"
+  - field: license
+    value: GPL-3.0-or-later
+    url: https://github.com/cockpit-project/cockpit
+    checkedAt: 2026-10-28
+    via: page
+    quote: "GPL-3.0 or later"
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/cockpit-project/cockpit
+    checkedAt: 2026-10-28
+    via: page
+    quote: "BSD-3"
+  - field: license
+    value: MIT
+    url: https://github.com/cockpit-project/cockpit
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT"
+  - field: license
+    value: CC-BY-SA-3.0
+    url: https://github.com/cockpit-project/cockpit
+    checkedAt: 2026-10-28
+    via: page
+    quote: "CC-BY-SA-3.0"
+  - field: licenseModel
+    value: open-source
+    url: https://cockpit-project.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Cockpit is free to use and available under the GNU LGPL"
+  - field: currentMajor
+    value: 370
+    url: https://cockpit-project.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Version 370"
+  - field: latestReleaseDate
+    value: 2026-10-22
+    url: https://api.github.com/repos/cockpit-project/cockpit/releases/latest
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://api.github.com/repos/cockpit-project/cockpit/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 15293
+    url: https://api.github.com/repos/cockpit-project/cockpit
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 231
+    url: https://api.github.com/repos/cockpit-project/cockpit/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+notFound: [hqCountry, parent, runsAs, runtime, runtimeMin, pricingPage, paidEdition, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, contentStore, databases, renderingModes, forum, discord, subreddit, bluesky, x, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, npmName, packagistName, endoflifeId, dockerPulls]
+unreadable: ["https://cockpit-project.org/guide/latest/ (empty to a plain fetch; the guide did not render)"]
+notes: >
+  Doubt: Cockpit is a general administration interface for a Linux server, and its homepage and running page describe containers, storage, networks and logs with no web server or website it manages, so criterion 1 cannot be judged; a page of the Cockpit guide that says it manages web servers, websites or web apps (for example through a web server or domain feature) would settle it, and the reviewer decides whether a general server admin UI is in. The id avoids the Cockpit CMS collision (cockpit.yml). The GitHub API reports no license (NOASSERTION), so the license entries come from the homepage ("released under the LGPL v2.1+") and the README's license list (GPL-3.0 or later, BSD-3, MIT, CC-BY-SA-3.0 for parts); the wordings are recorded as separate entries. The homepage's "Version 370" (released 22 Oct 2026) is recorded as currentMajor, since the project numbers releases sequentially. The homepage says Cockpit "doesn't eat resources or even run in the background when you're not using it. It runs on demand, thanks to systemd socket activation", so runsAs always-on is not recorded. The running page's "If you want to also run a web server to log in directly" is a Fedora CoreOS note, not a runsAs statement, and was not used. The homepage in the CSV was http://www.cockpit-project.org/ in the API; the https site answers 200 and is used. Coined fields: none.

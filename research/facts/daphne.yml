@@ -1,0 +1,129 @@
+id: daphne
+name: Daphne
+status: accepted
+checkedAt: 2026-10-28
+description: HTTP, HTTP/2 and WebSocket protocol server for ASGI applications, developed to power Django Channels.
+facts:
+  - field: repository
+    value: https://github.com/django/daphne
+    url: https://api.github.com/repos/django/daphne
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://channels.readthedocs.io/en/stable/installation.html
+    url: https://channels.readthedocs.io/en/stable/installation.html
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: Django Software Foundation
+    url: https://github.com/django/daphne/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) Django Software Foundation and individual contributors."
+  - field: maintainerType
+    value: foundation
+    url: https://github.com/django/daphne/blob/main/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) Django Software Foundation and individual contributors."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/django
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [app-server]
+    url: https://github.com/django/daphne
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Daphne is a HTTP, HTTP2 and WebSocket protocol server for"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/django/daphne
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/django/daphne/blob/4.2.3/pyproject.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'requires-python = ">=3.9"'
+  - field: runtimeMin
+    value: "3.9"
+    url: https://github.com/django/daphne/blob/4.2.3/pyproject.toml
+    checkedAt: 2026-10-28
+    via: page
+    quote: 'requires-python = ">=3.9"'
+  - field: installMethod
+    value: [pip]
+    url: https://channels.readthedocs.io/en/stable/installation.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "python -m pip install -U 'channels[daphne]'"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/django/daphne
+    checkedAt: 2026-10-28
+    via: page
+    quote: "If daphne is being run inside a process manager"
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/django/daphne
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/django/daphne
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://pypi.org/pypi/daphne/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://github.com/django/daphne/blob/main/CHANGELOG.txt
+    checkedAt: 2026-10-28
+    via: page
+    quote: "4.2.3 (2026-07-21)"
+  - field: latestReleaseDate
+    value: 2026-07-21
+    url: https://github.com/django/daphne/blob/main/CHANGELOG.txt
+    checkedAt: 2026-10-28
+    via: page
+    quote: "4.2.3 (2026-07-21)"
+  - field: githubStargazers
+    value: 2688
+    url: https://api.github.com/repos/django/daphne
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 70
+    url: https://api.github.com/repos/django/daphne/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiName
+    value: daphne
+    url: https://pypi.org/pypi/daphne/json
+    checkedAt: 2026-10-28
+    via: api
+  - field: pypiDownloads
+    value: 1111316 (last week)
+    url: https://pypistats.org/api/packages/daphne/recent
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 37
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/daphne
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 5881
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/daphne
+    checkedAt: 2026-10-28
+    via: api
+notFound: [homepage, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, pricingPage, paidEdition, hqCountry, endoflifeId, usageShare, reportedInstalls, packagistName, npmName, databases, adminUi, sso, templating, i18n, multisite, userRoles, contentStore, headlessApi, importsFrom, renderingModes, wikidata]
+unreadable: ["https://github.com/django/daphne/releases (no releases object: /releases/latest returns 404)"]
+notes: >
+  Repository-only project: the CSV row names no homepage, the README links only the main Channels readme, and no separate project site was found, so no homepage is recorded. The docs fact is the Channels installation page, because Daphne ships inside the Channels project and its install instructions are there; the Daphne README itself gives no pip install line. The repository has no GitHub releases; the tags run from 0.8 to 4.2.3, and 4.2.3 is the newest stable tag, dated 2026-07-21 by its tag and by the CHANGELOG entry. firstRelease is 2016 from the earliest PyPI upload (0.8.1, 2016-02-09); the tag 0.8 dates from the same month. runtimeMin is taken from the 4.2.3 pyproject, which says requires-python ">=3.9". The README on the main branch says "Daphne requires Python 3.10 or later", a newer statement not yet in a release; a reviewer should decide whether runtimeMin follows the release manifest (3.9, recorded) or the README (3.10). The license is recorded once as BSD-3-Clause from GitHub; the pyproject and PyPI metadata state "BSD" and the LICENSE file is the BSD three-clause text. The maintainer is the Django Software Foundation as the LICENSE copyright line names it; the foundation's legal address is not on any page read, so hqCountry is not recorded. The README shows the run command: daphne is pointed at an ASGI application such as django_project.asgi:application, binds to localhost port 8000 by default, can listen on a UNIX socket behind a proxy, can run inside a process manager, and terminates HTTP/2 natively when started with TLS through Twisted endpoint strings. The Channels docs say the Daphne package is installed as the channels[daphne] extra and does not show a standalone install command; the PyPI package daphne installs on its own. The README says Daphne is developed to power Django Channels; that is a statement about the server's purpose, not a parent it is built on, so basedOn is not recorded. The pypiDownloads figure is the last-week count from pypistats, which AGENTS.md allows for PyPI. The dependent counts come from ecosyste.ms for the PyPI package. Protocol support stated in the README (HTTP/2 natively with TLS, WebSocket, UNIX sockets, Twisted endpoint strings) is not in the starter list and is not recorded as a field. Adoption: 2688 stars, 70 contributors, 37 dependent packages and 5881 dependent repositories as read on 2026-10-28.

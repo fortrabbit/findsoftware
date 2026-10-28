@@ -1,0 +1,1 @@
+Apache Cassandra is an open source NoSQL distributed database, maintained by the Apache Software Foundation. It runs on the Java Virtual Machine and is installed from a Docker image pulled from Docker Hub, a binary tarball, or RPM and YUM packages.

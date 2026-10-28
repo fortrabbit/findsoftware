@@ -1,0 +1,131 @@
+id: easypanel
+name: Easypanel
+status: accepted
+checkedAt: 2026-10-28
+description: Self-hosted server management panel that deploys apps, databases and templated services on servers the user runs, using Docker.
+facts:
+  - field: name
+    value: Easypanel
+    url: https://easypanel.io/
+    checkedAt: 2026-10-28
+    via: page
+  - field: homepage
+    value: https://easypanel.io
+    url: https://easypanel.io/
+    checkedAt: 2026-10-28
+    via: page
+  - field: docs
+    value: https://easypanel.io/docs
+    url: https://easypanel.io/docs
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: Easypanel
+    url: https://easypanel.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "© 2026 Easypanel, All rights reserved"
+  - field: firstRelease
+    value: 2023
+    url: https://easypanel.io/changelog?page=8
+    checkedAt: 2026-10-28
+    via: page
+  - field: categories
+    value: [control-panel]
+    url: https://easypanel.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Self-hosted server management panel."
+  - field: currentMajor
+    value: 2
+    url: https://easypanel.io/changelog
+    checkedAt: 2026-10-28
+    via: page
+  - field: latestReleaseDate
+    value: 2026-10-22
+    url: https://easypanel.io/changelog
+    checkedAt: 2026-10-28
+    via: page
+  - field: sourcePublic
+    value: false
+    url: https://github.com/easypanel-io/community
+    checkedAt: 2026-10-28
+    via: page
+  - field: license
+    value: proprietary
+    url: https://easypanel.io/terms
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Easypanel and its licensors retain all rights in the Services, brand, website, and software"
+  - field: licenseModel
+    value: commercial
+    url: https://easypanel.io/terms
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Paid plans are licensed per server unless the offer says otherwise."
+  - field: paidEdition
+    value: "Hobby, Growth and Business plans, licensed per server, add features such as unlimited projects and multiple users"
+    url: https://easypanel.io/pricing
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Everything in Free, plus:"
+  - field: pricingPage
+    value: https://easypanel.io/pricing
+    url: https://easypanel.io/pricing
+    checkedAt: 2026-10-28
+    via: page
+  - field: installMethod
+    value: install-script
+    url: https://easypanel.io/docs
+    checkedAt: 2026-10-28
+    via: page
+    quote: "curl -sSL https://get.easypanel.io | sh"
+  - field: installMethod
+    value: docker-image
+    url: https://easypanel.io/docs
+    checkedAt: 2026-10-28
+    via: page
+    quote: "easypanel/easypanel setup"
+  - field: installMethod
+    value: cloud-marketplace
+    url: https://easypanel.io/docs
+    checkedAt: 2026-10-28
+    via: page
+    quote: "You can install Easypanel using our one-click solution in several cloud providers."
+  - field: runsAs
+    value: always-on
+    url: https://easypanel.io/docs
+    checkedAt: 2026-10-28
+    via: page
+    quote: "initializes Docker Swarm, and starts"
+  - field: databases
+    value: [postgresql, mysql, mongodb, redis]
+    url: https://easypanel.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Postgres, MySQL, MongoDB, and Redis as first-class services"
+  - field: dockerPulls
+    value: "7716582 (2026-10-28)"
+    url: https://hub.docker.com/v2/repositories/easypanel/easypanel/
+    checkedAt: 2026-10-28
+    via: api
+  - field: reportedInstalls
+    value: 66,000+ active servers
+    url: https://easypanel.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Powering 66,000+ active servers"
+  - field: x
+    value: https://twitter.com/easypanel_io
+    url: https://easypanel.io/
+    checkedAt: 2026-10-28
+    via: page
+  - field: discord
+    value: https://discord.gg/9bcDSXcZQ7
+    url: https://easypanel.io/
+    checkedAt: 2026-10-28
+    via: page
+notFound: [hqCountry, maintainerType, parent, forkOf, successorOf, basedOn, language, runtime, runtimeMin, repository, githubStargazers, contributors, endoflifeId, contentStore, adminUi, headlessApi, templating, i18n, multisite, userRoles, sso, renderingModes, hostedOffering, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, usageShare, npmName, packagistName, pypiName, npmWeeklyDownloads, pypiDownloads, packagistDownloads, httpArchiveSites]
+unreadable: []
+notes: >
+  No source repository is public: the software ships as the easypanel/easypanel Docker image and an install script from get.easypanel.io. The easypanel-io/community repository holds a README only, so it is the sourcePublic citation and no repository is recorded. That README begins with "**DEPRECATED** This repository is no longer active. All the content was moved and consolidate to https://feedback.easypanel.io"; it is the community repository, not the product, and the changelog shows releases through 2.38.0 dated October 22, 2026, so no end signal is recorded. The project's own changelog has 80 entries over eight pages; the oldest, 1.13.0, is dated January 3, 2023, which sets firstRelease. The site says "Join 145,000+ self-hosters"; that second count is not recorded, the server count is. The terms name Easypanel without a legal entity, and the privacy policy names no controller, so no legal form or hqCountry is recorded. The terms name Lemon Squeezy as merchant of record for purchases; no record field takes it. Stars and contributors are not recorded because the source repository is not public. The Free plan is not a paid edition. The docker runtime is not a runtime value in the dictionary, so no runtime is recorded. The Growth tier lists multiple users and access control; no userRoles fact is recorded because the page places them in a paid tier and the free plan does not have them. Fields coined here: none.

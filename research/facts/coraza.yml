@@ -1,0 +1,121 @@
+id: coraza
+name: Coraza
+status: accepted
+checkedAt: 2026-10-28
+description: Web application firewall library written in Go that runs ModSecurity SecLang rule sets, including the OWASP Core Rule Set, inside web servers and proxies.
+facts:
+  - field: homepage
+    value: https://www.coraza.io
+    url: https://www.coraza.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Open source Web Application Firewall for APIs and web applications."
+  - field: repository
+    value: https://github.com/corazawaf/coraza
+    url: https://api.github.com/repos/corazawaf/coraza
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://www.coraza.io/docs/tutorials/introduction/
+    url: https://www.coraza.io/docs/tutorials/introduction/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Coraza is an open source, enterprise-grade, high performance Web Application Firewall (WAF)"
+  - field: firstRelease
+    value: 2021
+    url: https://github.com/corazawaf/coraza/releases
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: OWASP Foundation, Inc.
+    url: https://owasp.org/about/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "incorporated as the OWASP Foundation, Inc., a United States nonprofit"
+  - field: maintainerType
+    value: foundation
+    url: https://owasp.org/about/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "is a 501(c)(3) nonprofit foundation that works to improve the security of software"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/corazawaf
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [waf]
+    url: https://github.com/corazawaf/coraza/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Web Application Firewall (WAF) ready to protect your beloved applications"
+  - field: language
+    value: go
+    url: https://api.github.com/repos/corazawaf/coraza
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtime
+    value: go
+    url: https://github.com/corazawaf/coraza/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Coraza can be used as a library for your Go program"
+  - field: runtimeMin
+    value: Go 1.25
+    url: https://github.com/corazawaf/coraza/blob/v3.8.1/go.mod
+    checkedAt: 2026-10-28
+    via: api
+    quote: "go 1.25.0"
+  - field: installMethod
+    value: go module
+    url: https://github.com/corazawaf/coraza/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Coraza can be used as a library for your Go program"
+  - field: currentMajor
+    value: 3
+    url: https://github.com/corazawaf/coraza/releases/tag/v3.8.1
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-02
+    url: https://github.com/corazawaf/coraza/releases/tag/v3.8.1
+    checkedAt: 2026-10-28
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/corazawaf/coraza
+    checkedAt: 2026-10-28
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/corazawaf/coraza/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Coraza is an open source, enterprise-grade, high performance Web Application Firewall (WAF)"
+  - field: githubStargazers
+    value: 3972
+    url: https://api.github.com/repos/corazawaf/coraza
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 58
+    url: https://api.github.com/repos/corazawaf/coraza/contributors?per_page=1
+    checkedAt: 2026-10-28
+    via: api
+  - field: forum
+    value: https://github.com/corazawaf/coraza/discussions
+    url: https://github.com/corazawaf/coraza/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Github Discussions"
+  - field: x
+    value: https://twitter.com/corazaio
+    url: https://github.com/corazawaf/coraza/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "[@corazaio](https://twitter.com/corazaio)"
+notFound: [hqCountry, pricingPage, paidEdition, endoflifeId, discord, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, basedOn, runsAs, renderingModes, sso, databases, contentStore, adminUi]
+unreadable: []
+notes: >
+  Coraza is a library at its core, per the README; its integrations (the Caddy module, the NGINX dynamic module through libcoraza, the Envoy and proxy-wasm filters, HAProxy SPOE, Traefik middleware) run inside the host server, so no runsAs is recorded; the runtime is go because the README says Coraza is written in Go and used as a library for a Go program. The README lists a Linux distribution or Mac as prerequisites and says Windows is not supported yet; TinyGo is an alternative compiler. Connectors page (https://www.coraza.io/connectors/) lists the integrations and their stability: Caddy, Envoy (core and contrib), proxy-wasm, HAProxy SPOA, Traefik, Apache APISIX and libcoraza are listed; the README marks Caddy, proxy-wasm and HAProxy as stable, experimental or needing a maintainer, and the docs introduction and the README disagree on HAProxy and Traefik (preview in the docs, experimental in the README). The README says Coraza is a drop-in alternative to the OWASP ModSecurity Engine with partial compatibility, and the homepage calls it a replacement for ModSecurity; not recorded as alternativeTo because the ModSecurity record does not exist in this dataset. The OWASP Foundation is the legal name of the maintainer per the about page; the project is an OWASP Production Project, and the foundation's about page says it is a 501(c)(3) nonprofit, and its incorporation country is no project headquarters, so hqCountry is left out. The release list paginates to v1.0.0-beta.1 (2021-07-29), the oldest tag, so firstRelease is 2021; no stable release predates v1.0.0. The latest prerelease is v3.0.0-rc.3 (2023), older than the latest release, so latestPrereleaseDate is left out. The Go module has no download figure, so no registry figure is recorded. Repository is public Apache-2.0; the coraza.io site redirects the bare domain to www. Build tags and FIPS mode are in the README and are not recorded as facts.

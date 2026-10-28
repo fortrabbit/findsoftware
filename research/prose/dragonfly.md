@@ -1,0 +1,5 @@
+Dragonfly is an in-memory data store written in C++ and shipped as a native binary. It runs as a server process that answers Redis and Memcached clients on a port, so applications that use those protocols can connect to it. The [getting-started guide](https://www.dragonflydb.io/docs/getting-started) lists Docker, Docker Compose, a Helm chart, a Kubernetes operator, a binary download and Linux packages as ways to start it. Its own [comparison page](https://www.dragonflydb.io/dragonfly-vs-redis) names Redis as the product it is compared with.
+
+## Worth knowing
+
+The license is source-available rather than open source. The Dragonfly Business Source License 1.1 does not allow the work to be used as part of an in-memory data store product or service, or offered as a service. The license changes to Apache 2.0 on a fixed change date. The company also sells Dragonfly Cloud as a hosted service, and a Self-Managed plan that adds LDAP authentication and role-based access control, priced on request.
