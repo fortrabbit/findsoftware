@@ -25,8 +25,6 @@ interface ProviderRow {
   register: string;
   facets: Record<string, string | string[]>;
   notApplicable: string[];
-  /** Out of the default view for want of momentum. */
-  quiet?: boolean;
 }
 
 interface Register {
@@ -124,41 +122,6 @@ const start = () => {
     show(current);
   }
 
-  /*
-   * The default view or every record. Rows out of the default view arrive
-   * hidden; "Show all" puts them back, on every list page, so the choice is
-   * remembered like the list style. Where the filters run they own which rows
-   * show, so they are handed the change rather than this touching rows itself.
-   */
-  const momentumEl = document.querySelector<HTMLElement>('[data-list-momentum]');
-  let showAll = remembered('list-momentum') === 'all';
-  let onMomentum = () => {
-    for (const row of document.querySelectorAll<HTMLElement>('main li[data-quiet]')) row.hidden = !showAll;
-    for (const group of document.querySelectorAll<HTMLElement>('main .letter-group')) {
-      group.hidden = !group.querySelector('li[data-record]:not([hidden])');
-    }
-    document.dispatchEvent(new Event('find:results'));
-  };
-  const pressMomentum = () => {
-    for (const button of momentumEl?.querySelectorAll<HTMLButtonElement>('button') ?? []) {
-      button.setAttribute('aria-pressed', String((button.value === 'all') === showAll));
-    }
-  };
-  if (momentumEl) {
-    for (const button of momentumEl.querySelectorAll<HTMLButtonElement>('button[disabled]')) button.disabled = false;
-    momentumEl.addEventListener('click', (event) => {
-      const button = (event.target as HTMLElement).closest<HTMLButtonElement>('button');
-      if (!button || (button.value === 'all') === showAll) return;
-      showAll = button.value === 'all';
-      remember('list-momentum', showAll ? 'all' : 'momentum');
-      track(`list ${button.value}`);
-      pressMomentum();
-      onMomentum();
-      document.dispatchEvent(new Event('list:momentum'));
-    });
-    pressMomentum();
-  }
-
   if (filtersEl && resultsEl && summaryEl && indexEl) {
     const { facets, providers, registers } = JSON.parse(indexEl.textContent!) as {
       facets: Facet[];
@@ -251,7 +214,7 @@ const start = () => {
 
     /* The list on show before any facet narrows it. Every number on the page is
      taken from this rather than from every row the page happens to carry. */
-    const listed = () => providers.filter((provider) => provider.register === register && (showAll || !provider.quiet));
+    const listed = () => providers.filter((provider) => provider.register === register);
 
     const matches = () =>
       listed().filter((provider) =>
@@ -304,17 +267,6 @@ const start = () => {
         });
       }
 
-      for (const input of filtersEl.querySelectorAll<HTMLInputElement>('input[data-momentum-option]')) {
-        input.addEventListener('change', () => {
-          if (!input.checked || (input.value === 'all') === showAll) return;
-          showAll = input.value === 'all';
-          remember('list-momentum', showAll ? 'all' : 'momentum');
-          track('filter momentum');
-          renderResults();
-          document.dispatchEvent(new Event('list:momentum'));
-        });
-      }
-
       for (const input of filtersEl.querySelectorAll<HTMLInputElement>('input[disabled]')) input.disabled = false;
     };
 
@@ -324,12 +276,6 @@ const start = () => {
      * that sits under the "More filters" disclosure opens it.
      */
     const syncFilters = () => {
-      for (const input of filtersEl.querySelectorAll<HTMLInputElement>('input[data-momentum-option]')) {
-        input.checked = (input.value === 'all') === showAll;
-        /* A remembered "Show all" is a choice the reader cannot see behind the disclosure. */
-        if (input.checked && showAll) input.closest<HTMLDetailsElement>('details')?.setAttribute('open', '');
-      }
-
       for (const input of filtersEl.querySelectorAll<HTMLInputElement>('input[data-register-option]')) {
         input.checked = input.value === register;
         /* A list asked for in the address is a narrowing the reader cannot see:
@@ -459,14 +405,10 @@ const start = () => {
       document.dispatchEvent(new Event('find:results'));
     };
 
-    onMomentum = renderResults;
-
     readUrl();
     wireFilters();
     syncFilters();
     renderResults();
-  } else if (showAll) {
-    onMomentum();
   }
 };
 

@@ -31,7 +31,7 @@ The usage band on the [Usage](/usage/) page puts each record in one of five band
 
 ## Momentum
 
-The register, the lists and the graph show the records with momentum by default. "Show all" above each list brings back the rest; every record keeps its page and stays in search. Momentum is measured by a script from public APIs, never typed by hand, and each measurement carries its date.
+The register, the lists and the graph show the records with momentum by default. The [full list](/all/) holds the rest as well; every record keeps its page and stays in search. Momentum is measured by a script from public APIs, never typed by hand, and each measurement carries its date.
 
 A record has momentum when it had a release, a pre-release or a push to its repository in the last 12 months, and one of these:
 

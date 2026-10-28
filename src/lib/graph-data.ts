@@ -21,7 +21,10 @@ const make = async (): Promise<GraphData> => {
   const software = await loadSoftware();
   const bands = await loadBands();
   const momentum = await loadMomentum();
-  const listed = new Set(software.filter(isListed).map((entry) => entry.id));
+  // The register's default view; a parent without momentum still comes along with its children.
+  const listed = new Set(
+    software.filter((entry) => isListed(entry) && inDefaultView(momentum, entry.id)).map((entry) => entry.id),
+  );
   const { nodes, edges } = buildGraph(
     software.map((entry) => ({
       id: entry.id,
@@ -30,7 +33,6 @@ const make = async (): Promise<GraphData> => {
       basedOn: entry.data.basedOn,
       href: recordPath(entry),
       band: bands.get(entry.id),
-      quiet: listed.has(entry.id) && !inDefaultView(momentum, entry.id),
     })),
     (record) => listed.has(record.id),
     (id) => ({

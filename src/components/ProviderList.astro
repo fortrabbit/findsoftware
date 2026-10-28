@@ -13,8 +13,6 @@ interface Row {
   figure?: { emoji: string; color: string; textColor: string };
   /** Ours: we like it. Drawn as a heart, the one editorial mark a row carries. */
   favorite?: boolean;
-  /** Out of the default view: drawn hidden, and find.ts shows it under "Show all". */
-  quiet?: boolean;
   /*
    * A measured bar under the body and its figure at the end of the row. Only
    * /reach/ sets it: the register is alphabetical and a bar in it would imply an
@@ -54,8 +52,6 @@ const { providers, namesOnly = false } = Astro.props;
           id={provider.meter ? provider.id : undefined}
           class={twoLine ? undefined : 'one-line'}
           data-record={provider.id}
-          data-quiet={provider.quiet ? '' : undefined}
-          hidden={provider.quiet}
         >
           {/* A logo where one is on file, then the emoji, then the initial, so a gap never looks like a broken row. */}
           {logoOf(provider.id) ? (

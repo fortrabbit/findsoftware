@@ -1,7 +1,6 @@
 ---
 import FindFacet from './FindFacet.astro';
 import FindRegister from './FindRegister.astro';
-import FindMomentum from './FindMomentum.astro';
 import type { Facet, RegisterList } from '../lib/facets';
 
 import type { ProviderRow } from '../lib/facets';
@@ -48,7 +47,6 @@ const index = {
     register,
     facets: row.facets,
     notApplicable: row.notApplicable,
-    quiet: row.quiet || undefined,
   })),
 };
 
@@ -56,10 +54,6 @@ const index = {
  * A facet no record answers yet is a column of nothing. It appears the moment
  * the data does, without anyone remembering to add it.
  */
-/* The register's own rows: its count is the one the sentence above the list gives. */
-const allRows = registers[0]?.rows ?? providers;
-const quietRows = allRows.some((row) => row.quiet);
-
 const shown = facets.filter((facet) => facet.values.some((value) => value.count > 0));
 
 /*
@@ -108,7 +102,6 @@ const rest = shown.slice(LEAD);
             {rest.map((facet) => (
               <FindFacet facet={facet} />
             ))}
-            {quietRows && <FindMomentum rows={allRows} />}
             {/* Last: it is the one box that changes what the others count. */}
             {registers.length > 1 && <FindRegister registers={registers} current={current} />}
           </div>

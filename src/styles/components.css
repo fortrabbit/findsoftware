@@ -947,8 +947,7 @@ html:not(.js) .theme-switch {
  * says so is set before first paint. Nothing appears late and nothing moves.
  */
 html:not(.js) .find-row input[type='checkbox'],
-html:not(.js) .list-style,
-html:not(.js) .list-momentum {
+html:not(.js) .list-style {
   display: none;
 }
 
@@ -1054,11 +1053,6 @@ html.js [data-find-fallback] {
 .list-style button[aria-pressed='true'] {
   background: var(--color-ink);
   color: var(--color-page);
-}
-
-/* Words, not icons, at the size of the order tabs beside them. */
-.list-momentum button {
-  font-size: var(--text-sm);
 }
 
 .list-style svg {

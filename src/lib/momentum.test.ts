@@ -48,6 +48,8 @@ describe('momentumOf', () => {
     // A young package that barely existed a year ago.
     assert.equal(momentumOf({ ...base, packagistDaily: 227, packagistDailyYearAgo: 19 }, {}, 1, t).shown, true);
     assert.equal(momentumOf({ ...base, npm28: 4400, npm28YearAgo: 4500 }, {}, 1, t).shown, false);
+    // No year-ago figure is unknown growth, not growth from zero.
+    assert.equal(momentumOf({ ...base, npm28: 90000 }, {}, 1, t).shown, false);
   });
 
   it('keeps popularity off when no band threshold is set', () => {

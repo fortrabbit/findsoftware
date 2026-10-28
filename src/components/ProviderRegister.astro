@@ -32,7 +32,7 @@ interface Props {
    * They were one list, read as one sentence naming eight numbers, and parsed
    * as none.
    */
-  beside?: { key: string; label: string; href: string; count: number; of: 'status' | 'kind' }[];
+  beside?: { key: string; label: string; phrase?: string; href: string; count: number; of: 'status' | 'kind' }[];
   /*
    * Which order the rows are in, and so which tab is lit. Only the register
    * offers a choice — a narrowed page is one order, the alphabet, and shows no
@@ -75,11 +75,7 @@ const filtered = Astro.slots.has('default');
  *
  * The wording matches what find.ts writes here once a filter changes.
  */
-const shown = providers.filter((provider) => !provider.quiet).length;
-const summary = `${shown} ${shown === 1 ? 'project' : 'projects'}.`;
-
-/* Rows out of the default view, in every list on the page: the toggle shows them all at once. */
-const quiet = [...providers, ...others.flatMap((register) => register.rows)].filter((row) => row.quiet).length;
+const summary = `${providers.length} ${providers.length === 1 ? 'project' : 'projects'}.`;
 
 // Grouped by initial so the register can be scanned and linked to without JavaScript.
 const letterOf = (name: string) => {
@@ -98,7 +94,7 @@ const letterOf = (name: string) => {
  */
 const heldLinks = beside.map((group, index) => ({
   href: group.href,
-  text: `${group.count} ${group.label.toLowerCase()}`,
+  text: `${group.count} ${group.phrase ?? group.label.toLowerCase()}`,
   tail: index < beside.length - 1 ? ', ' : '.',
 }));
 
@@ -168,8 +164,7 @@ const groups = dated ? groupsOf(providers) : letterGroups;
   filtered && <slot />
 }
 
-{/* Where the filter panel runs, the momentum choice is one of its boxes. */}
-<ListControls sort={sort} quiet={filtered ? 0 : quiet} />
+<ListControls sort={sort} />
 
 <div class="slim" data-pagefind-ignore data-find-results>
   {

@@ -3,7 +3,7 @@
 # nothing needs measuring again. Aim: about a third of the listed records shown.
 # The About page states these numbers.
 
-# A release, pre-release or push to the default branch within this many months.
+# A release, pre-release or push to the repository within this many months.
 activeMonths: 12
 
 # Then any one of the three below.
@@ -15,7 +15,7 @@ commits:
 
 # Downloads up by `growth` (0.25 is 25%) against the same window a year ago.
 # Today's figure must reach the floor, so a jump from 10 to 20 is no growth;
-# the year-ago figure may be anything, so a young package counts.
+# a small year-ago figure counts, so a young package can pass. An unmeasured one shows no growth.
 downloads:
   growth: 0.25
   npm28Floor: 4000

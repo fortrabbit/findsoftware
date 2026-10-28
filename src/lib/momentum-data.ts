@@ -2,7 +2,7 @@
  * The momentum verdict of every listed record, once per build: the measured
  * figures from src/data/momentum.json cut by the thresholds in
  * src/data/momentum.yml. A record that is out of the default view keeps its
- * page, stays in search and shows under "Show all".
+ * page, stays in search and is on the full list at /all/.
  */
 import { existsSync, readFileSync } from 'node:fs';
 import { parse as parseYaml } from 'yaml';

@@ -71,8 +71,6 @@ export interface ProviderRow {
   notApplicable: string[];
   /** Only on a hidden row: `stub`. Absent on everything in the register. */
   status?: string;
-  /** Out of the default view for want of momentum: drawn hidden, shown under "Show all". */
-  quiet?: boolean;
 }
 
 /** Alphabetical, always — see the sort rule in AGENTS.md. */

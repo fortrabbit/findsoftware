@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
-import { loadAsides, loadDrafts, loadFacets } from '../lib/facets';
+import { loadAsides, loadDrafts, loadFacets, loadListed } from '../lib/facets';
 import { credit, licenceUrl } from '../lib/seo';
 import { newest } from '../lib/modified';
 
@@ -14,7 +14,9 @@ import { newest } from '../lib/modified';
  * a filter.
  */
 export const GET: APIRoute = async ({ site }) => {
-  const { facets, providers } = await loadFacets();
+  const { facets, providers: register } = await loadFacets();
+  const shown = new Set(register.map((row) => row.id));
+  const providers = (await loadListed()).map((row) => ({ ...row, momentum: shown.has(row.id) }));
   const drafts = await loadDrafts();
   const asides = await loadAsides();
 
@@ -41,7 +43,7 @@ export const GET: APIRoute = async ({ site }) => {
     attribution: credit,
     ...(checked.length ? { checkedAt: new Date(Math.max(...checked)).toISOString().slice(0, 10) } : {}),
     ...(modified ? { modifiedAt: modified.toISOString().slice(0, 10) } : {}),
-    note: 'Attributes are recorded, never scored. An absent field means unknown, never zero and never bad.',
+    note: 'Attributes are recorded, never scored. An absent field means unknown, never zero and never bad. `momentum` says whether the site shows a record by default; the About page states the thresholds.',
   };
 
   return new Response(JSON.stringify({ meta, facets, software: providers, drafts, asides }), {

@@ -46,9 +46,10 @@ async function get(url, headers = {}, tries = 6) {
     const response = await fetch(url, { headers: { ...UA, ...headers } });
     if (url.startsWith('https://api.github.com/'))
       ghLeft = Number(response.headers.get('x-ratelimit-remaining') ?? ghLeft);
-    // 202 is GitHub still computing the statistics; 429 and 5xx are worth another try.
-    if (response.status === 202 || response.status === 429 || response.status >= 500) {
-      await wait(2000 * (i + 1));
+    // 202 is GitHub still computing the statistics; 429, 5xx and GitHub's secondary rate limit (403 with retry-after) are worth another try.
+    const limited = response.status === 403 && response.headers.has('retry-after');
+    if (response.status === 202 || response.status === 429 || response.status >= 500 || limited) {
+      await wait(Math.max(2000 * (i + 1), 1000 * Number(response.headers.get('retry-after') ?? 0)));
       continue;
     }
     return response.ok ? response.json() : undefined;
@@ -132,7 +133,9 @@ async function worker() {
   while (due.length) {
     if (ghLeft < RESERVE) return;
     const record = due.shift();
-    held[record.id] = await measure(record);
+    const measured = await measure(record);
+    // Nothing answered: keep what was measured before, so a failed run neither hides a record nor claims a fresh check.
+    if (measured.sources.length) held[record.id] = measured;
     if (++done % 50 === 0) {
       save();
       console.log(`${done} measured, GitHub calls left ${ghLeft}`);

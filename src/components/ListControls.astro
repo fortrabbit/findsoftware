@@ -1,6 +1,5 @@
 ---
 import ListStyleToggle from './ListStyleToggle.astro';
-import MomentumToggle from './MomentumToggle.astro';
 
 /**
  * What sits between a list and its heading: which order it is in, and how much
@@ -15,8 +14,6 @@ import MomentumToggle from './MomentumToggle.astro';
 interface Props {
   /** Which order this page is already in. Absent means the page offers no choice of order. */
   sort?: Sort;
-  /** How many rows on the page are out of the default view. None, and the page offers no choice. */
-  quiet?: number;
 }
 
 export type Sort = 'name' | 'updated' | 'added';
@@ -27,7 +24,7 @@ export const orders: { id: Sort; label: string; href: string }[] = [
   { id: 'added', label: 'Added', href: '/added/' },
 ];
 
-const { sort, quiet = 0 } = Astro.props;
+const { sort } = Astro.props;
 ---
 
 <div class="list-controls">
@@ -43,6 +40,5 @@ const { sort, quiet = 0 } = Astro.props;
     )
   }
 
-  {quiet > 0 && <MomentumToggle quiet={quiet} />}
   <ListStyleToggle />
 </div>

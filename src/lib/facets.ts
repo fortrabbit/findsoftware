@@ -50,6 +50,8 @@ export interface Aside {
   key: string;
   /** The word the register uses for it, and the heading of its page. */
   label: string;
+  /** What the sentence over the register calls it, where the heading would read wrong after a count. */
+  phrase?: string;
   /*
    * Which question put the records here. `status` is a record of ours we do not
    * count — it stopped trading, it sells nothing itself, we have not finished
@@ -80,13 +82,8 @@ export const loadAsides = once(async (): Promise<Aside[]> => {
     for (const { key, label } of named.values())
       if (!groups.has(key)) groups.set(key, { key, label, of: source, rows: [] });
 
-  const momentum = await loadMomentum();
   for (const record of await loadAsideProviders()) {
-    groups.get(asideGroup(record)!)!.rows.push({
-      ...toRow(record as never),
-      status: String(record.data.status),
-      quiet: !inDefaultView(momentum, record.id),
-    });
+    groups.get(asideGroup(record)!)!.rows.push({ ...toRow(record as never), status: String(record.data.status) });
   }
 
   return [...groups.values()].map((group) => ({ ...group, rows: group.rows.sort(byName) }));
@@ -99,7 +96,11 @@ export const loadAsides = once(async (): Promise<Aside[]> => {
  * disagree about what exists.
  */
 export const asideGroups = once(async (): Promise<Aside[]> => {
-  return [...(await loadAsides()), { key: 'stubs', label: 'Stubs', of: 'status' as const, rows: await loadDrafts() }];
+  return [
+    ...(await loadAsides()),
+    { key: 'stubs', label: 'Stubs', of: 'status' as const, rows: await loadDrafts() },
+    { key: 'all', label: 'All software', phrase: 'in the full list', of: 'status' as const, rows: await loadListed() },
+  ];
 });
 
 /**
@@ -111,6 +112,7 @@ export const besideTheRegister = async () =>
   (await asideGroups()).map((group) => ({
     key: group.key,
     label: group.label,
+    phrase: group.phrase,
     href: `/${group.key}/`,
     count: group.rows.length,
     of: group.of,
@@ -157,12 +159,19 @@ export const asideGroupOf = async (key: string): Promise<Aside> => {
   return group;
 };
 
+/** Every listed record, with momentum or without: the full list at /all/ and the downloadable dataset. */
+export const loadListed = once(async (): Promise<ProviderRow[]> =>
+  (await loadProviders()).map((record) => toRow(record as never)).sort(byName),
+);
+
+/*
+ * The register as the site shows it: the listed records with momentum. Facet
+ * counts, value pages and the find index are built from these alone, so the
+ * default view ships nothing it would only hide.
+ */
 export const loadFacets = once(async (): Promise<{ facets: Facet[]; providers: ProviderRow[] }> => {
-  const records = await loadProviders();
   const momentum = await loadMomentum();
-  const providers = records
-    .map((record) => ({ ...toRow(record as never), quiet: !inDefaultView(momentum, record.id) }))
-    .sort(byName);
+  const providers = (await loadListed()).filter((row) => inDefaultView(momentum, row.id));
 
   // Dictionary order is the record page's; the panel offers the most-asked
   // first, which is what `filterOrder` in fields.yml sorts these by.

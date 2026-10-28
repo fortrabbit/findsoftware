@@ -13,7 +13,7 @@
 /** What scripts/momentum.mjs measured for one record, each figure absent when its source had no answer. */
 export interface MomentumFigures {
   checkedAt: string;
-  /** Last push to the default branch, as GitHub reports it. */
+  /** Last push to any branch of the repository, as GitHub reports it. */
   pushedAt?: string;
   /** Commits to the default branch in the last 13 weeks, the last 26, and the 26 before those. */
   commits13?: number;
@@ -32,7 +32,7 @@ export interface Thresholds {
   activeMonths: number;
   /** Commits in the last 13 weeks, and the last 26 weeks against the 26 before, as a ratio. */
   commits: { last13Weeks: number; trend: number };
-  /** Growth against a year ago, as a fraction. Today's figure must reach the floor, so 10 to 20 downloads is no growth; a year ago may be anything, so a young tool counts. */
+  /** Growth against a year ago, as a fraction. Today's figure must reach the floor, so 10 to 20 downloads is no growth; a small year-ago figure counts, so a young tool can pass. */
   downloads: { growth: number; npm28Floor: number; packagistDailyFloor: number };
   /** A usage band at or above this keeps an active record in on its own. Absent turns it off. */
   popularityBand?: number;
@@ -51,8 +51,9 @@ const monthsBefore = (day: string, months: number) => {
 const isoDay = (value: unknown) =>
   value instanceof Date ? value.toISOString().slice(0, 10) : typeof value === 'string' ? value.slice(0, 10) : undefined;
 
+// A year-ago figure nobody measured is unknown, not zero, so it shows no growth.
 const grew = (now: number | undefined, then: number | undefined, floor: number, growth: number) =>
-  now !== undefined && now >= floor && now >= (then ?? 0) * (1 + growth);
+  now !== undefined && then !== undefined && now >= floor && now >= then * (1 + growth);
 
 /**
  * The verdict for one record. A record nobody has measured yet is shown: a new

@@ -36,7 +36,11 @@ const Note = note ? (await render(note)).Content : null;
  * sentence for every group, because the fact they have in common is the fact
  * that matters: they are not the register.
  */
-const counted = `${rows.length} ${rows.length === 1 ? 'record' : 'records'}, kept out of the register and out of its count.`;
+const { providers: register } = await loadFacets();
+const counted =
+  key === 'all'
+    ? `${rows.length} records: the ${register.length} with momentum the register shows, and ${rows.length - register.length} without.`
+    : `${rows.length} ${rows.length === 1 ? 'record' : 'records'}, kept out of the register and out of its count.`;
 
 const origin = Astro.site?.origin ?? '';
 ---
@@ -69,7 +73,17 @@ const origin = Astro.site?.origin ?? '';
 
   {Note && <Note />}
 
-  <p class="annotation">{counted}</p>
+  <p class="annotation">
+    {counted}
+    {
+      key === 'all' && (
+        <>
+          {' '}
+          <a href="/about/#momentum">What decides momentum</a>
+        </>
+      )
+    }
+  </p>
 
   {
     /* The register's own list, letters and all: one list on the site, however it was narrowed. */
