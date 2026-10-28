@@ -1,0 +1,1 @@
+VSCode Elements is a web component library for building the user interface of Visual Studio Code extensions. It re-implements the UI controls of the VS Code webview as web components, for use in extension views. It is built on the [Lit](https://lit.dev/) library and installed from npm as `@vscode-elements/elements`.

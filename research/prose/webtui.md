@@ -1,0 +1,1 @@
+WebTUI is a CSS library that styles web pages with the look of terminal user interfaces. The package is installed from npm as `@webtui/css` or loaded from a CDN link, and the [documentation](https://webtui.ironclad.sh/start/intro) describes its components. The copyright in its MIT-licensed repository belongs to WebTUI, and the documentation site lives in the same repository.

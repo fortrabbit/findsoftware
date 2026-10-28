@@ -1,0 +1,128 @@
+id: vanilla-extract
+name: vanilla-extract
+status: accepted
+checkedAt: 2026-10-28
+description: Build-time CSS tool that lets styles be written in TypeScript, with locally scoped class names and CSS variables.
+facts:
+  - field: homepage
+    value: https://vanilla-extract.style
+    url: https://vanilla-extract.style/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Zero-runtime Stylesheets-in-TypeScript"
+  - field: repository
+    value: https://github.com/vanilla-extract-css/vanilla-extract
+    url: https://api.github.com/repos/vanilla-extract-css/vanilla-extract
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://vanilla-extract.style/documentation/getting-started/
+    url: https://vanilla-extract.style/documentation/getting-started/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Vanilla-extract requires that you have set up a bundler and configured it to handle CSS"
+  - field: firstRelease
+    value: 2021
+    url: https://registry.npmjs.org/@vanilla-extract/css
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: SEEK
+    url: https://github.com/vanilla-extract-css/vanilla-extract/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Copyright (c) 2021 SEEK"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/vanilla-extract-css
+    checkedAt: 2026-10-28
+    via: api
+  - field: discord
+    value: https://discord.gg/6nCfPwwz6w
+    url: https://vanilla-extract.style/
+    checkedAt: 2026-10-28
+    via: page
+  - field: forum
+    value: https://github.com/vanilla-extract-css/vanilla-extract/discussions
+    url: https://vanilla-extract.style/
+    checkedAt: 2026-10-28
+    via: page
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/vanilla-extract-css/vanilla-extract
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [css-framework]
+    url: https://vanilla-extract.style/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Zero-runtime Stylesheets-in-TypeScript"
+  - field: installMethod
+    value: npm
+    url: https://vanilla-extract.style/documentation/getting-started/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm install @vanilla-extract/css"
+  - field: runsAs
+    value: local
+    url: https://github.com/vanilla-extract-css/vanilla-extract/blob/master/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "All styles generated at build time"
+  - field: license
+    value: MIT
+    url: https://github.com/vanilla-extract-css/vanilla-extract/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/vanilla-extract-css/vanilla-extract/blob/master/LICENSE
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/@vanilla-extract/css
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-08
+    url: https://registry.npmjs.org/@vanilla-extract/css
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 10441
+    url: https://api.github.com/repos/vanilla-extract-css/vanilla-extract
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 140
+    url: https://api.github.com/repos/vanilla-extract-css/vanilla-extract
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: "@vanilla-extract/css"
+    url: https://registry.npmjs.org/@vanilla-extract/css
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1907446
+    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/@vanilla-extract/css
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 598
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40vanilla-extract%2Fcss
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 8615
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40vanilla-extract%2Fcss
+    checkedAt: 2026-10-28
+    via: api
+notFound: [basedOn, runtime, runtimeMin, renderingModes, adminUi, headlessApi, contentStore, databases, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, paidEdition, subreddit, mastodon, bluesky, x, facebook, instagram, threads, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, httpArchiveSites, endoflifeId, successorOf, forkOf, parent, alternativeTo, selfHostOption, wikidata, hqCountry, maintainerType, lastCommitDate, latestPrereleaseDate]
+unreadable: []
+notes: >
+  The README says vanilla-extract can "generate static CSS files at build time"; that is a build output, not a page stating that a site's output is static files, so runsAs holds local only. Monorepo: the repository holds the @vanilla-extract/css package (the install guide's npm package), the bundler integrations and the optional packages Sprinkles, Recipes and Dynamic CSS, each on its own npm name. Those packages are not records here; the docs describe Sprinkles as "built on top of vanilla-extract", a relation between packages of one repository. The npm figures and the currentMajor and latestReleaseDate come from @vanilla-extract/css: latest 1.21.3 (2026-10-08), the same tag date as the newest release of the repository, which is the integration package at 8.0.11. The @vanilla-extract/css GitHub tags have no stable prerelease newer than the latest stable; npm dist-tags carry canary builds (for example "1.21.3-replace-deepmerge-20261008001944"), which are not prereleases. The first registry upload of @vanilla-extract/css is 0.1.0 (2021-03-26), older than the first GitHub release 0.2.0 (2021-04-12), so firstRelease takes the registry date. The LICENSE copyright line names SEEK, which is also the npm author; the project pages do not give a legal entity or a country, so hqCountry is not recorded. The docs list the bundler integrations (Astro, esbuild, Gatsby, Next.js, Parcel, Remix, Rollup, Vite, Webpack); the Vite integration installs @vanilla-extract/vite-plugin with npm, a package of the same repository. The README's optional runtime for development and testing is not recorded as a runtime. HTTP Archive has an entry "Stitches" but none for vanilla-extract, so httpArchiveSites is not recorded. The site's Discord link and GitHub Discussions link are the community links on the homepage; the discussions page is recorded as forum, the same convention as other records. Contributors counts contributor accounts from the API list with per_page=1, read from the Link header (page 140).

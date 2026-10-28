@@ -1,0 +1,125 @@
+id: vanilla-framework
+name: Vanilla Framework
+status: accepted
+checkedAt: 2026-10-28
+description: Extensible CSS framework written in Sass by the Canonical Web Team, published as the vanilla-framework npm package.
+facts:
+  - field: homepage
+    value: https://vanillaframework.io
+    url: https://vanillaframework.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A simple, extensible CSS framework"
+  - field: repository
+    value: https://github.com/canonical/vanilla-framework
+    url: https://api.github.com/repos/canonical/vanilla-framework
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://vanillaframework.io/docs
+    url: https://vanillaframework.io/docs
+    checkedAt: 2026-10-28
+    via: page
+    quote: "For information on overriding settings and importing only parts of Vanilla"
+  - field: firstRelease
+    value: 2015
+    url: https://registry.npmjs.org/vanilla-framework
+    checkedAt: 2026-10-28
+    via: api
+  - field: maintainer
+    value: Canonical Ltd
+    url: https://github.com/canonical/vanilla-framework/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Code licensed LGPLv3 by Canonical Ltd"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/canonical
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: Sass
+    url: https://vanillaframework.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "written in Sass by the Canonical Web Team"
+  - field: categories
+    value: [css-framework]
+    url: https://vanillaframework.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "A simple, extensible CSS framework"
+  - field: installMethod
+    value: npm
+    url: https://vanillaframework.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The recommended method of including Vanilla Framework in your project is via npm or yarn"
+  - field: installMethod
+    value: cdn
+    url: https://vanillaframework.io/docs
+    checkedAt: 2026-10-28
+    via: page
+    quote: "You can add Vanilla directly to your markup"
+  - field: installMethod
+    value: github-release-zip
+    url: https://vanillaframework.io/docs
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Download the latest version of Vanilla from GitHub"
+  - field: license
+    value: LGPL-3.0
+    url: https://github.com/canonical/vanilla-framework/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Code licensed LGPLv3 by Canonical Ltd"
+  - field: licenseModel
+    value: open-source
+    url: https://vanillaframework.io/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Backed by open-source code"
+  - field: currentMajor
+    value: 4
+    url: https://github.com/canonical/vanilla-framework/releases/tag/v4.61.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-16
+    url: https://github.com/canonical/vanilla-framework/releases/tag/v4.61.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 989
+    url: https://api.github.com/repos/canonical/vanilla-framework
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 86
+    url: https://api.github.com/repos/canonical/vanilla-framework
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: vanilla-framework
+    url: https://registry.npmjs.org/vanilla-framework
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 10806
+    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/vanilla-framework
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 26
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vanilla-framework
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 219
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/vanilla-framework
+    checkedAt: 2026-10-28
+    via: api
+notFound: [basedOn, runtime, runtimeMin, runsAs, renderingModes, adminUi, headlessApi, contentStore, databases, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, paidEdition, subreddit, mastodon, bluesky, x, facebook, instagram, threads, discord, forum, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, httpArchiveSites, endoflifeId, successorOf, forkOf, parent, alternativeTo, selfHostOption, wikidata, hqCountry, maintainerType, lastCommitDate, latestPrereleaseDate]
+unreadable: []
+notes: >
+  The README says the framework is designed to be used directly or through themes that extend or supplement its patterns. The GitHub API reports the language as HTML (the repository holds the docs and examples); the package ships compiled CSS and Sass source, and the homepage states it is written in Sass, so language is recorded from that page. The npm package is the one the install guide names; its first registry upload is 2015-03-18, older than the first GitHub release (1.0.0-rc3, a prerelease, 2016-09-22), so firstRelease takes the registry date. The highest stable GitHub release is v4.61.0 (2026-10-16), the same as the npm latest tag. The GitHub prereleases run from 1.0.0-rc2 to v4.0.0-rc.1 and are older than the latest stable, so no latestPrereleaseDate is recorded. The README states the code is LGPLv3 by Canonical Ltd; the LICENSE file is the LGPL text, which carries no project copyright line, so the maintainer comes from the README. Canonical's legal page (canonical.com/legal) names Canonical Ltd; no page read gives its headquarters, so hqCountry is not recorded. The project's chat is a Matrix room, linked from the README and the homepage; no forum field is recorded for a chat room. Reviewer decision: whether a Matrix room gets its own field. The docs' hotlink route points at a CDN file on assets.ubuntu.com and the docs name a GitHub download for the latest version; these are recorded as their own installMethod entries. The HTTP Archive "Vanilla" technology is a forum software, not this framework, so httpArchiveSites is not recorded. The npm weekly figure is the sum of daily downloads for 2026-10-19 to 2026-10-25; the homepage's download figures are not recorded. Contributors counts contributor accounts from the API list with per_page=1, read from the Link header (page 86).

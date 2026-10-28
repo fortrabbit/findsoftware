@@ -1,0 +1,137 @@
+id: windicss
+name: Windi CSS
+status: stub
+checkedAt: 2026-10-28
+description: Utility-first CSS framework that generates utility classes on demand while the project's build runs.
+facts:
+  - field: status
+    value: stub
+    url: https://github.com/windicss/windicss/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+    quote: "We are sunsetting Windi CSS and we recommend new projects to seek for alternatives."
+  - field: status
+    value: stub
+    url: https://windicss.org/posts/sunsetting.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "we no longer have the necessary time and resources to actively work on the project"
+  - field: discord
+    value: https://discord.gg/aRYWm8r8Eq
+    url: https://github.com/windicss/windicss/blob/main/README.md
+    checkedAt: 2026-10-28
+    via: page
+  - field: homepage
+    value: https://windicss.org/
+    url: https://windicss.org/
+    checkedAt: 2026-10-28
+    via: page
+  - field: repository
+    value: https://github.com/windicss/windicss
+    url: https://github.com/windicss/windicss
+    checkedAt: 2026-10-28
+    via: api
+  - field: docs
+    value: https://windicss.org/guide/
+    url: https://windicss.org/guide/
+    checkedAt: 2026-10-28
+    via: page
+  - field: maintainer
+    value: The Windi CSS Team
+    url: https://windicss.org/posts/sunsetting.html
+    checkedAt: 2026-10-28
+    via: page
+    quote: "The Windi CSS Team"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/windicss
+    checkedAt: 2026-10-28
+    via: api
+  - field: firstRelease
+    value: 2020
+    url: https://github.com/windicss/windicss/releases/tag/v1.0.0
+    checkedAt: 2026-10-28
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://github.com/windicss/windicss/releases/tag/v3.5.6
+    checkedAt: 2026-10-28
+    via: api
+  - field: latestReleaseDate
+    value: 2022-06-30
+    url: https://github.com/windicss/windicss/releases/tag/v3.5.6
+    checkedAt: 2026-10-28
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://github.com/windicss/windicss
+    checkedAt: 2026-10-28
+    via: api
+  - field: categories
+    value: [utility-css]
+    url: https://windicss.org/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "Next generation utility-first CSS framework."
+  - field: alternativeTo
+    value: tailwindcss
+    url: https://windicss.org/guide/
+    checkedAt: 2026-10-28
+    via: page
+    quote: "think about Windi CSS as an on-demand alternative to Tailwind"
+  - field: runtime
+    value: [node]
+    url: https://github.com/windicss/windicss/blob/v3.5.6/package.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: runtimeMin
+    value: "12"
+    url: https://github.com/windicss/windicss/blob/v3.5.6/package.json
+    checkedAt: 2026-10-28
+    via: api
+  - field: installMethod
+    value: [npm]
+    url: https://windicss.org/integrations/javascript
+    checkedAt: 2026-10-28
+    via: page
+    quote: "npm i -D windicss"
+  - field: license
+    value: MIT
+    url: https://github.com/windicss/windicss
+    checkedAt: 2026-10-28
+    via: api
+  - field: githubStargazers
+    value: 6499
+    url: https://github.com/windicss/windicss
+    checkedAt: 2026-10-28
+    via: api
+  - field: contributors
+    value: 48
+    url: https://github.com/windicss/windicss
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmName
+    value: windicss
+    url: https://registry.npmjs.org/windicss
+    checkedAt: 2026-10-28
+    via: api
+  - field: npmWeeklyDownloads
+    value: 31004
+    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/windicss
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentPackages
+    value: 440
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/windicss
+    checkedAt: 2026-10-28
+    via: api
+  - field: dependentRepos
+    value: 2910
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/windicss
+    checkedAt: 2026-10-28
+    via: api
+notFound: [hqCountry, parent, basedOn, runsAs, renderingModes, endoflifeId, usageShare, pricingPage, paidEdition, subreddit, bluesky, mastodon, x, newsletter, forum, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, httpArchiveSites, pluginDirectory, pluginCount, releaseCadence]
+unreadable: []
+notes: >
+  In doubt: the README and homepage say Windi CSS is sunsetting, while the sunsetting post says "Windi CSS is not deprecated" and that security fixes continue (sunsetting notice vs not deprecated). An archived repository, an npm deprecation or a stated end would settle it. Status is stub until then.
+  The sunsetting post says the team no longer has the time to work on the project. The post recommends UnoCSS and Tailwind CSS for new projects; that is a recommendation, not a fact, and is not recorded. The npm package carries no deprecated flag and the last GitHub commit on the default branch is dated 2023-04-15. The docs pages for integrations (Vite, CLI, JavaScript API) are the install routes; the npm package is windicss. The GitHub organization is windicss; the npm author and the LICENSE copyright name an individual, Veritas Raven, and the project's own sunsetting post names its team, which is the maintainer recorded here. The docs state no Node minimum; runtimeMin is the npm engines field at tag v3.5.6. The HTTP Archive list has no Windi CSS entry. The discord link is the README badge, whose alt text the quote check cannot read, so it carries no quote.
