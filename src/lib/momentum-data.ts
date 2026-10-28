@@ -24,7 +24,7 @@ const make = async (): Promise<Map<string, Verdict>> => {
   const bands = await loadBands();
   const verdicts = new Map<string, Verdict>();
   for (const entry of (await loadSoftware()).filter(isListed)) {
-    verdicts.set(entry.id, momentumOf(figures[entry.id], entry.data, bands.get(entry.id), thresholds));
+    verdicts.set(entry.id, momentumOf(Object.hasOwn(figures, entry.id) ? figures[entry.id] : undefined, entry.data, bands.get(entry.id), thresholds));
   }
   return verdicts;
 };

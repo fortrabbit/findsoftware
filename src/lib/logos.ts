@@ -38,7 +38,7 @@ export const logoEntries = () => entries;
 
 /** The address to draw, with the fetch date on it so a re-fetched logo is not served from a stale cache. */
 export const logoOf = (id: string) => {
-  const entry = entries[id];
+  const entry = Object.hasOwn(entries, id) ? entries[id] : undefined;
   return (
     entry && {
       src: `/logos/${logoFile(id)}?v=${entry.fetchedAt}`,

@@ -43,7 +43,7 @@ export function findhostRows(
 
   const rows: FindhostRow[] = [
     { label: 'Hosts that run', cells: linked('runtimes', data.hosting ?? [], (value) => labelOf('hosting', value)) },
-    { label: 'Hosts that support', cells: linked('software', [softwareId[id] ?? id], () => name) },
+    { label: 'Hosts that support', cells: linked('software', [(Object.hasOwn(softwareId, id) ? softwareId[id] : id)], () => name) },
     {
       label: 'Managed databases',
       cells: linked('databases', [...(data.databases ?? []), id], (value) =>
@@ -104,7 +104,7 @@ export function hostsFor(
   pool: Host[] = listed,
 ): HostSuggestions | undefined {
   if (!base) return undefined;
-  const software = softwareId[id] ?? id;
+  const software = (Object.hasOwn(softwareId, id) ? softwareId[id] : id);
   const runtime = (hosting ?? []).find((value) => pages.runtimes.includes(value));
   const [facet, value] = pages.software.includes(software)
     ? (['software', software] as const)
