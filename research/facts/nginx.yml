@@ -51,7 +51,7 @@ facts:
     checkedAt: 2026-10-19
     via: page
   - field: currentMajor
-    value: "1.30"
+    value: 1
     url: https://nginx.org/en/download.html
     checkedAt: 2026-10-19
     via: page
@@ -124,4 +124,4 @@ facts:
 notFound: [hqCountry, firstRelease, runtimeMin, eolPolicy, releaseCadence, paidEditions, pricingPage, freeTier, parent, contributors, pluginDirectory, pluginCount, adminUi, headlessApi, i18n, multisite, userRoles, sso, serverNeeds, processModel, renderingModes, discord, subreddit, mastodon, bluesky, newsletter, usageShare, packagistName, npmName, pypiDownloads, npmWeeklyDownloads, packagistDownloads, wikidata]
 unreadable: []
 notes: >
-  Two license statements: the GitHub API reports BSD-2-Clause and the homepage states the 2-clause BSD License; both are recorded and agree. Mainline is 1.31.7 and stable is 1.30.6 on the download page; currentMajor follows the stable line. Commercial support and the NGINX Plus edition come from F5, Inc.; no price is stated on the F5 pages, so paidEditions is not recorded. The homepage says enterprise distributions, commercial support and training are available from F5, Inc.; F5 ownership is not stated on these pages, so parent is not recorded. The Docker Hub pull count in candidates-server-infra.csv (13.5B) was not re-read. NGINX Unit (unit.nginx.org) is a separate application server and has no fact file here. Fields coined here: none.
+  Two license statements: the GitHub API reports BSD-2-Clause and the homepage states the 2-clause BSD License; both are recorded and agree. Mainline is 1.31.7 and stable is 1.30.6 on the download page; currentMajor is the major of the stable line (1.30). Commercial support and the NGINX Plus edition come from F5, Inc.; no price is stated on the F5 pages, so paidEditions is not recorded. The homepage says enterprise distributions, commercial support and training are available from F5, Inc.; F5 ownership is not stated on these pages, so parent is not recorded. The Docker Hub pull count in candidates-server-infra.csv (13.5B) was not re-read. NGINX Unit (unit.nginx.org) is a separate application server and has no fact file here. Fields coined here: none.
