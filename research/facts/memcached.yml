@@ -1,0 +1,148 @@
+id: memcached
+name: Memcached
+status: accepted
+checkedAt: 2026-10-29
+description: Distributed in-memory key-value cache daemon that applications use to store results of database and API calls.
+facts:
+  - field: name
+    value: Memcached
+    url: https://memcached.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "distributed memory object caching system"
+  - field: homepage
+    value: https://memcached.org
+    url: https://memcached.org/
+    checkedAt: 2026-10-29
+    via: page
+  - field: repository
+    value: https://github.com/memcached/memcached
+    url: https://api.github.com/repos/memcached/memcached
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://docs.memcached.org
+    url: https://memcached.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Many common questions are answered at the"
+  - field: maintainer
+    value: Danga Interactive, Inc.
+    url: https://github.com/memcached/memcached/blob/master/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Copyright (c) 2003, Danga Interactive, Inc."
+  - field: maintainerType
+    value: company
+    url: https://github.com/memcached/memcached/blob/master/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Copyright (c) 2003, Danga Interactive, Inc."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/memcached
+    checkedAt: 2026-10-29
+    via: api
+  - field: categories
+    value: [key-value]
+    url: https://memcached.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Memcached is an in-memory key-value store for small chunks of arbitrary data"
+  - field: language
+    value: c
+    url: https://api.github.com/repos/memcached/memcached
+    checkedAt: 2026-10-29
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://memcached.org/downloads
+    checkedAt: 2026-10-29
+    via: page
+    quote: "./configure && make && make test && sudo make install"
+  - field: currentMajor
+    value: 1
+    url: https://memcached.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "v1.6.45"
+  - field: latestReleaseDate
+    value: 2026-07-09
+    url: https://memcached.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "(2026-7-9)"
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/memcached/memcached/blob/master/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without"
+  - field: licenseModel
+    value: open-source
+    url: https://memcached.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Free & open source, high-performance, distributed memory object caching system"
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.memcached.org/serverguide/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Memcached on its own is just a key/value storage daemon."
+  - field: installMethod
+    value: "apt package"
+    url: https://docs.memcached.org/serverguide/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "apt-get install memcached"
+  - field: installMethod
+    value: "yum package"
+    url: https://docs.memcached.org/serverguide/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "yum install memcached"
+  - field: installMethod
+    value: "homebrew"
+    url: https://docs.memcached.org/serverguide/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "brew install memcached"
+  - field: installMethod
+    value: "build from source"
+    url: https://docs.memcached.org/serverguide/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "make && make test && sudo make install"
+  - field: githubStargazers
+    value: 14301
+    url: https://api.github.com/repos/memcached/memcached
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 199
+    url: https://api.github.com/repos/memcached/memcached/contributors?per_page=1&anon=false
+    checkedAt: 2026-10-29
+    via: api
+  - field: discord
+    value: https://discord.gg/AuD7kJTdvS
+    url: https://memcached.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "join the Discord Chat"
+  - field: forum
+    value: https://groups.google.com/group/memcached
+    url: https://memcached.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "memcached mailing list"
+  - field: firstRelease
+    value: "2003"
+    url: https://github.com/memcached/memcached/blob/master/ChangeLog
+    checkedAt: 2026-10-29
+    via: page
+    quote: "update to version 1.0.2"
+notFound: [parent, hqCountry, pricingPage, paidEdition, hostedOffering, adminUi, headlessApi, renderingModes, sso, i18n, multisite, userRoles, subreddit, mastodon, bluesky, x, newsletter, usageShare, pluginDirectory, pluginCount, wikidata, runtimeMin, templating, contentStore, dockerPulls, databases]
+unreadable: []
+notes: >
+  The LICENSE copyright line names Danga Interactive, Inc. (2003), which the maintainer field records under the rule for LICENSE copyright lines; a reviewer should decide this. The homepage says "This page is maintained by Dormando", and the about page credits Brad Fitzpatrick as the original developer for LiveJournal in 2003; neither is recorded as the maintainer. The homepage lists Netflix as a supporter and a CacheForge business-support link; neither is a field. The release list starts at 1.2.7 (2009-04-03) and the oldest tag is 1.2.0 (tagger date 2009-03-03); firstRelease follows the project's ChangeLog file, whose oldest entries from June 2003 record versions 1.0.2 to 1.0.4. The docs say Docker can be used but name no image, so the Docker Hub library/memcached count (13,425,578,918 pulls) is not recorded as dockerPulls. The latest tag 1.6.45 is dated 2026-07-10 (annotated tagger date); the release notes and homepage date it 2026-7-9, and that date is recorded. No GitHub release objects exist; the release notes wiki is the project's release record. The mailing list is recorded as forum. The homepage says memcached is "intended for use in speeding up dynamic web applications by alleviating database load" and that its API is "available for most popular languages". Fields coined here: none. The downloads page says a source build needs the libevent development package (libevent-dev on Debian and Ubuntu, libevent-devel on Red Hat and CentOS).

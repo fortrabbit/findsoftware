@@ -1,0 +1,161 @@
+id: haproxy
+name: HAProxy
+status: accepted
+checkedAt: 2026-10-29
+description: Load balancer and reverse proxy for TCP and HTTP applications, built as a single multi-threaded daemon.
+facts:
+  - field: name
+    value: HAProxy
+    url: https://www.haproxy.org
+    checkedAt: 2026-10-29
+    via: page
+  - field: homepage
+    value: https://www.haproxy.org
+    url: https://www.haproxy.org
+    checkedAt: 2026-10-29
+    via: page
+  - field: repository
+    value: https://github.com/haproxy/haproxy
+    url: https://api.github.com/repos/haproxy/haproxy
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://docs.haproxy.org/3.4/intro.html
+    url: https://docs.haproxy.org/3.4/intro.html
+    checkedAt: 2026-10-29
+    via: page
+  - field: maintainer
+    value: Willy Tarreau
+    url: https://raw.githubusercontent.com/haproxy/haproxy/master/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Willy Tarreau"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/haproxy/haproxy/master/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Willy Tarreau"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/haproxy
+    checkedAt: 2026-10-29
+    via: api
+  - field: categories
+    value: [load-balancer, reverse-proxy]
+    url: https://www.haproxy.org
+    checkedAt: 2026-10-29
+    via: page
+    quote: "HAProxy is a free, very fast and reliable reverse-proxy"
+  - field: language
+    value: C
+    url: https://api.github.com/repos/haproxy/haproxy
+    checkedAt: 2026-10-29
+    via: api
+  - field: runtime
+    value: c binary
+    url: https://docs.haproxy.org/3.4/management.html
+    checkedAt: 2026-10-29
+    via: page
+    quote: "HAProxy is a multi-threaded, event-driven, non-blocking daemon."
+  - field: installMethod
+    value: docker-image
+    url: https://www.haproxy.org
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Alpine-based Docker images"
+  - field: installMethod
+    value: source-tarball
+    url: https://www.haproxy.org/download/3.4/src/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "haproxy-3.4.7.tar.gz"
+  - field: installMethod
+    value: debian-ubuntu-packages
+    url: https://www.haproxy.org
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Debian/Ubuntu packages"
+  - field: forum
+    value: https://discourse.haproxy.org/
+    url: https://www.haproxy.org
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Discussions"
+  - field: docker
+    value: haproxy (Docker Hub official image)
+    url: https://www.haproxy.org
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Alpine-based Docker images"
+  - field: dockerPulls
+    value: "1135860642 (2026-10-29)"
+    url: https://hub.docker.com/v2/repositories/library/haproxy/
+    checkedAt: 2026-10-29
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.haproxy.org/3.4/management.html
+    checkedAt: 2026-10-29
+    via: page
+    quote: "HAProxy is a multi-threaded, event-driven, non-blocking daemon."
+  - field: license
+    value: GPL-2.0
+    url: https://github.com/haproxy/haproxy/blob/master/doc/gpl.txt
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Version 2, June 1991"
+  - field: license
+    value: LGPL-2.1
+    url: https://github.com/haproxy/haproxy/blob/master/doc/lgpl.txt
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Version 2.1, February 1999"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/haproxy/haproxy/master/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "This program is released under the GPL with the additional exemption that compiling, linking, and/or using OpenSSL is allowed."
+  - field: paidEdition
+    value: HAProxy Enterprise
+    url: https://www.haproxy.com
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Upgrade to HAProxy Enterprise"
+  - field: endoflifeId
+    value: haproxy
+    url: https://endoflife.date/api/haproxy.json
+    checkedAt: 2026-10-29
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://www.haproxy.org
+    checkedAt: 2026-10-29
+    via: page
+  - field: latestReleaseDate
+    value: 2026-10-14
+    url: https://www.haproxy.org/download/3.4/src/CHANGELOG
+    checkedAt: 2026-10-29
+    via: page
+    quote: "2026/10/14 : 3.4.7"
+  - field: firstRelease
+    value: 2000
+    url: https://www.haproxy.org/download/3.4/src/CHANGELOG
+    checkedAt: 2026-10-29
+    via: page
+    quote: "2000/11/29 : first fully working release with complete FSMs and timeouts."
+  - field: githubStargazers
+    value: 6956
+    url: https://api.github.com/repos/haproxy/haproxy
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 303
+    url: https://api.github.com/repos/haproxy/haproxy/contributors
+    checkedAt: 2026-10-29
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, adminUi, headlessApi, databases, contentStore, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, freeTier, hostedOffering, usageShare, reportedInstalls, pluginDirectory, pluginCount, x, mastodon, bluesky, discord, subreddit, newsletter, wikidata, runtimeMin, renderingModes, packagistName, npmName, npmWeeklyDownloads, packagistDownloads, pypiDownloads, lastCommitDate, eolPolicy]
+unreadable: []
+notes: >
+  Primary release source: GitHub has no release objects for haproxy/haproxy and the repository is a mirror of git.haproxy.org (its description says so); versions and dates come from haproxy.org (homepage "Latest versions" table, download/3.4/src listing and CHANGELOG). Latest stable is 3.4.7 (2026-10-14) on the 3.4 LTS branch; the 3.5-dev10 snapshot (2026-10-28) is development, not a prerelease, so latestPrereleaseDate is left out. Branch end-of-life dates (3.4 LTS to 2031-Q2, 3.3 to 2027-Q1, 3.0 LTS to 2029-Q2, 3.2 LTS to 2030-Q2, 3.1 unmaintained) come from endoflife.date and are not typed here; the homepage also says "2.9" through "1.x" are unmaintained. License: the LICENSE file states the exemption for OpenSSL and says the include files are LGPL, and doc/gpl.txt is GPL version 2; both are recorded as separate license entries. The GitHub API reports NOASSERTION, so no SPDX value comes from it. Maintainer: the LICENSE file ends with the name Willy Tarreau, who is recorded; the company copyright line on haproxy.com names HAProxy Technologies, LLC, and the homepage speaks of "the HAProxy core team". The trademark "HAProxy" is registered to HAProxy Technologies SAS (haproxy.com legal page), a separate legal entity from HAProxy Technologies, LLC. The Docker Hub link on haproxy.org is hub.docker.com/_/haproxy, the official library image, so dockerPulls counts library/haproxy. The HAProxy Enterprise product page offers pricing on request ("Request pricing information"), so no price is recorded. The community forum is linked from haproxy.org with an http URL; the https address answers 200 and is recorded. A Slack workspace and an IRC channel are listed on the homepage and have no field. hostedOffering: the privacy notice mentions "cloud delivery services" without naming a hosted product, so none is recorded. Fields coined here: none.

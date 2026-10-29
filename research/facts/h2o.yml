@@ -1,0 +1,125 @@
+id: h2o
+name: H2O
+status: stub
+checkedAt: 2026-10-29
+description: Optimized HTTP/1.x, HTTP/2 and HTTP/3 web server written in C.
+facts:
+  - field: name
+    value: H2O
+    url: https://h2o.examp1e.net
+    checkedAt: 2026-10-29
+    via: page
+  - field: homepage
+    value: https://h2o.examp1e.net
+    url: https://h2o.examp1e.net
+    checkedAt: 2026-10-29
+    via: page
+    quote: "H2O is a new generation HTTP server"
+  - field: repository
+    value: https://github.com/h2o/h2o
+    url: https://api.github.com/repos/h2o/h2o
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://h2o.examp1e.net/configure.html
+    url: https://h2o.examp1e.net/configure.html
+    checkedAt: 2026-10-29
+    via: page
+  - field: maintainer
+    value: DeNA Co., Ltd.
+    url: https://raw.githubusercontent.com/h2o/h2o/master/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Copyright (c) 2014 DeNA Co., Ltd."
+  - field: maintainerType
+    value: company
+    url: https://raw.githubusercontent.com/h2o/h2o/master/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Copyright (c) 2014 DeNA Co., Ltd."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/h2o
+    checkedAt: 2026-10-29
+    via: api
+  - field: categories
+    value: [web-server, reverse-proxy]
+    url: https://h2o.examp1e.net
+    checkedAt: 2026-10-29
+    via: page
+    quote: "the optimized HTTP/1.x, HTTP/2, HTTP/3 server"
+  - field: language
+    value: C
+    url: https://api.github.com/repos/h2o/h2o
+    checkedAt: 2026-10-29
+    via: api
+  - field: runtime
+    value: c binary
+    url: https://h2o.examp1e.net/install.html
+    checkedAt: 2026-10-29
+    via: page
+    quote: "When complete, H2O will be installed under"
+  - field: installMethod
+    value: build-from-source-cmake
+    url: https://h2o.examp1e.net/install.html
+    checkedAt: 2026-10-29
+    via: page
+    quote: "build the obtained source using CMake"
+  - field: installMethod
+    value: library-libh2o
+    url: https://h2o.examp1e.net/faq.html
+    checkedAt: 2026-10-29
+    via: page
+    quote: "H2O can also be used as a software library."
+  - field: lastCommitDate
+    value: 2026-10-29
+    url: https://api.github.com/repos/h2o/h2o/commits?per_page=1
+    checkedAt: 2026-10-29
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://h2o.examp1e.net/install.html
+    checkedAt: 2026-10-29
+    via: page
+    quote: "without the use of -m option the server runs as a foreground process"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/h2o/h2o/master/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/h2o/h2o/master/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/h2o/h2o/releases
+    checkedAt: 2026-10-29
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://github.com/h2o/h2o/releases/tag/v2.2.6
+    checkedAt: 2026-10-29
+    via: api
+  - field: latestReleaseDate
+    value: 2019-08-13
+    url: https://github.com/h2o/h2o/releases/tag/v2.2.6
+    checkedAt: 2026-10-29
+    via: api
+  - field: githubStargazers
+    value: 11559
+    url: https://api.github.com/repos/h2o/h2o
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 140
+    url: https://api.github.com/repos/h2o/h2o/contributors
+    checkedAt: 2026-10-29
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, adminUi, headlessApi, databases, contentStore, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, mastodon, bluesky, x, subreddit, newsletter, wikidata, endoflifeId, runtimeMin, renderingModes, dockerPulls, packagistName, npmName, npmWeeklyDownloads, packagistDownloads, hostedOffering]
+unreadable: []
+notes: >
+  Doubt: criterion 4 cannot be judged mechanically because the project stopped publishing versions and ships from master. The install page says "As of April 2023, we have ceased to release versions." and the repository's tag-no-more-releases release (2026-01-19) says "In 2019, we decided to stop tagging versions", which contradicts the install page's date; the newest stable tag is v2.2.6 (2019-08-13), so the import's four-year rule would move the record to stub, and the page says "Users are advised to use the up-to-date commit of the master branch". Settling it means deciding whether a project that ships only from master counts as released: if it does, set status accepted (lastCommitDate is recorded from the newest master commit, 2026-10-29). The record stays stub until then. The homepage is served over https (HTTP/2 200 at h2o.examp1e.net, redirecting plain http to https). The homepage footer reads "Copyright © 2015-2025 DeNA Co., Ltd. et al." and the site reports server version 2.3.0-DEV, so the homepage is dated; the license copyright is "Copyright (c) 2014 DeNA Co., Ltd." (the LICENSE file has no "et al." contributors line). The DeNA homepage (dena.com/intl/) names no country, so hqCountry is left out. currentMajor is 2 as the highest stable tag; the master branch reports 2.3.0-DEV and the minor line stays in notes. Scripting: mruby (Rack-based) is a build option; it is not recorded as a runtime. Fields coined here: none.

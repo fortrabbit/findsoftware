@@ -1,0 +1,130 @@
+id: granian
+name: Granian
+status: accepted
+checkedAt: 2026-10-29
+description: Rust HTTP server that serves Python applications written to the ASGI, RSGI and WSGI interfaces.
+facts:
+  - field: name
+    value: Granian
+    url: https://raw.githubusercontent.com/emmett-framework/granian/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Granian is a Rust HTTP server for Python applications"
+  - field: repository
+    value: https://github.com/emmett-framework/granian
+    url: https://api.github.com/repos/emmett-framework/granian
+    checkedAt: 2026-10-29
+    via: api
+  - field: maintainer
+    value: Giovanni Barillari
+    url: https://raw.githubusercontent.com/emmett-framework/granian/master/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Copyright 2021 Giovanni Barillari"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/emmett-framework/granian/master/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Copyright 2021 Giovanni Barillari"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/emmett-framework
+    checkedAt: 2026-10-29
+    via: api
+  - field: firstRelease
+    value: 2022
+    url: https://api.github.com/repos/emmett-framework/granian/releases
+    checkedAt: 2026-10-29
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/emmett-framework/granian/languages
+    checkedAt: 2026-10-29
+    via: api
+  - field: categories
+    value: [app-server]
+    url: https://raw.githubusercontent.com/emmett-framework/granian/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Granian is a Rust HTTP server for Python applications"
+  - field: runtime
+    value: [python]
+    url: https://raw.githubusercontent.com/emmett-framework/granian/v2.8.7/pyproject.toml
+    checkedAt: 2026-10-29
+    via: page
+    quote: "requires-python = '>=3.10'"
+  - field: runtimeMin
+    value: "3.10"
+    url: https://raw.githubusercontent.com/emmett-framework/granian/v2.8.7/pyproject.toml
+    checkedAt: 2026-10-29
+    via: page
+    quote: "requires-python = '>=3.10'"
+  - field: installMethod
+    value: pip (PyPI package granian)
+    url: https://raw.githubusercontent.com/emmett-framework/granian/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "You can install Granian using pip"
+  - field: runsAs
+    value: [always-on]
+    url: https://raw.githubusercontent.com/emmett-framework/granian/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Granian is a Rust HTTP server for Python applications"
+  - field: license
+    value: BSD-3-Clause
+    url: https://raw.githubusercontent.com/emmett-framework/granian/master/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/emmett-framework/granian/master/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without"
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/emmett-framework/granian/releases
+    checkedAt: 2026-10-29
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-28
+    url: https://api.github.com/repos/emmett-framework/granian/releases
+    checkedAt: 2026-10-29
+    via: api
+  - field: githubStargazers
+    value: 5758
+    url: https://api.github.com/repos/emmett-framework/granian
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 55
+    url: https://api.github.com/repos/emmett-framework/granian/contributors
+    checkedAt: 2026-10-29
+    via: api
+  - field: pypiName
+    value: granian
+    url: https://pypi.org/pypi/granian/json
+    checkedAt: 2026-10-29
+    via: api
+  - field: pypiDownloads
+    value: "3283157 (last week, as of 2026-10-29)"
+    url: https://pypistats.org/api/packages/granian/recent
+    checkedAt: 2026-10-29
+    via: api
+  - field: dependentPackages
+    value: 5
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/granian
+    checkedAt: 2026-10-29
+    via: api
+  - field: dependentRepos
+    value: 45
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/granian
+    checkedAt: 2026-10-29
+    via: api
+notFound: [docs, homepage, hqCountry, parent, forkOf, successorOf, basedOn, alternativeTo, pricingPage, paidEdition, freeTier, hostedOffering, endoflifeId, eolPolicy, releaseCadence, headlessApi, adminUi, i18n, multisite, userRoles, sso, templating, contentStore, databases, forum, discord, x, bluesky, mastodon, subreddit, newsletter, pluginDirectory, pluginCount, npmName, packagistName, dockerPulls, npmWeeklyDownloads, reportedInstalls, wikidata, renderingModes, serverNeeds]
+unreadable: ["https://granian.emmett.sh/ (no DNS answer)"]
+notes: >
+  No project website: the PyPI and GitHub homepage fields name only the repository, granian.emmett.sh does not resolve, and emmett.sh (the Emmett framework's site, the organization of the repository) does not mention Granian, so homepage is absent. The LICENSE copyright line names Giovanni Barillari, which is the maintainer; the GitHub organization is emmett-framework, and no page names a legal form or country, so hqCountry is absent. firstRelease is 2022 from the oldest GitHub release (v0.1.0-alpha.1, 2022-04-18); the PyPI first upload (0.1.5) is 2022-12-05, and the LICENSE says 2021, which is not a release date. The README describes the project as built on top of Hyper and Tokio, Rust libraries that are not records, so basedOn is absent. The Rust-built package is installed with pip and runs Python applications, hence runtime python, with requires-python >=3.10 from the v2.8.7 pyproject; the language is Rust by GitHub. The README calls Granian an HTTP server that Python applications are served with ("serve it using Granian CLI"), which is the always-on statement; its option list also has a worker-process count. The repository docs folder holds only the RSGI spec, and the README names no docs site or deployment page, so no docs fact is recorded. Dependents are from ecosyste.ms for the PyPI package. pypistats figures are the last week's downloads as of the date recorded. Fields coined here: none.

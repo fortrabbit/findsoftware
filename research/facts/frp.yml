@@ -1,0 +1,122 @@
+id: frp
+name: frp
+status: accepted
+checkedAt: 2026-10-29
+description: Reverse proxy that exposes services behind a NAT or firewall to the internet through a server with a public IP address, written in Go.
+facts:
+  - field: homepage
+    value: https://gofrp.org
+    url: https://gofrp.org/en/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Simple and Efficient Intranet Penetration Tool"
+  - field: repository
+    value: https://github.com/fatedier/frp
+    url: https://api.github.com/repos/fatedier/frp
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://gofrp.org/en/docs/
+    url: https://gofrp.org/en/docs/
+    checkedAt: 2026-10-29
+    via: page
+  - field: x
+    value: https://x.com/fatedier
+    url: https://gofrp.org/en/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Follow @fatedier on X for the latest updates."
+  - field: maintainer
+    value: The frp Authors
+    url: https://gofrp.org/en/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "© 2026 The frp Authors All Rights Reserved"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/fatedier
+    checkedAt: 2026-10-29
+    via: api
+  - field: firstRelease
+    value: "2016"
+    url: https://api.github.com/repos/fatedier/frp/releases
+    checkedAt: 2026-10-29
+    via: api
+  - field: adminUi
+    value: yes, web interfaces for server dashboard and client admin UI
+    url: https://gofrp.org/en/docs/overview/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Provides user interfaces for both server and client"
+  - field: categories
+    value: [reverse-proxy, tunnel]
+    url: https://github.com/fatedier/frp/blob/dev/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "frp is a fast reverse proxy that allows you to expose a local server located behind a NAT or firewall to the Internet"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/fatedier/frp
+    checkedAt: 2026-10-29
+    via: api
+  - field: runtime
+    value: [go binary]
+    url: https://gofrp.org/en/docs/setup/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "without additional dependencies"
+  - field: installMethod
+    value: binary download from the GitHub release page
+    url: https://gofrp.org/en/docs/setup/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "You can download the latest version of client and server binary files from the GitHub Release page."
+  - field: runsAs
+    value: [always-on]
+    url: https://gofrp.org/en/docs/setup/systemd/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "background running configuration, and boot auto-start of the frps server"
+  - field: currentMajor
+    value: "0"
+    url: https://github.com/fatedier/frp/blob/dev/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "We will transition from version 0 to version 1 at the appropriate time"
+  - field: latestReleaseDate
+    value: 2026-10-14
+    url: https://api.github.com/repos/fatedier/frp/releases
+    checkedAt: 2026-10-29
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/fatedier/frp/blob/v0.71.1/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/fatedier/frp/blob/dev/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "frp is an open source project"
+  - field: githubStargazers
+    value: 110286
+    url: https://api.github.com/repos/fatedier/frp
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 139
+    url: https://api.github.com/repos/fatedier/frp/contributors?per_page=1
+    checkedAt: 2026-10-29
+    via: api
+  - field: pluginDirectory
+    value: https://github.com/gofrp/plugin
+    url: https://github.com/fatedier/frp/blob/dev/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "A repository for frp plugins"
+notFound: [runtimeMin, pricingPage, hostedOffering, parent, basedOn, forkOf, successorOf, alternativeTo, discord, forum, newsletter, mastodon, bluesky, wikidata, dockerPulls, pluginCount, reportedInstalls, usageShare, endoflifeId, sso, databases, templating, i18n]
+unreadable: []
+notes: >
+  Boundary question settled: the README and the examples say frp forwards HTTP and HTTPS requests to internal web services by domain name ("Accessing Internal Web Services with Custom Domains in LAN"), so criterion 1 holds, and frp is no website host. The current line is 0.x: the README says the project will move from version 0 to version 1 at an appropriate time, so currentMajor is 0 and the minor line 0.71 stays in notes. The README Development Status describes a version 2 in development that will not be compatible with version 1, while version 1 continues to get releases; that is no end signal. The homepage footer states "© 2026 The frp Authors", recorded as the maintainer; the Apache LICENSE carries the unfilled template line, the homepage names fatedier as the author to follow on X, and the repository is owned by that user account. The stable release v0.71.1 was published 2026-10-14; the default branch of the repository is dev. The Go minimum is stated only as "consistent with the latest Go language requirements", with no version on the pages read, so runtimeMin is unknown; the go.mod at the release tag was not read. The README lists a Docker example for exposing the Docker socket but no Docker image as an install route. The category tunnel has no entry in the import's categoryMap, so only reverse-proxy maps. The README and homepage list GitHub Sponsors and PayPal donation links, which no field here holds.

@@ -1,0 +1,153 @@
+id: lighttpd
+name: lighttpd
+status: accepted
+checkedAt: 2026-10-29
+description: Web server written in C with FastCGI, CGI, authentication, output compression and URL rewriting modules.
+facts:
+  - field: name
+    value: lighttpd
+    url: https://redmine.lighttpd.net/projects/lighttpd/wiki
+    checkedAt: 2026-10-29
+    via: page
+    quote: "lighttpd (pronounced /lighty/)"
+  - field: homepage
+    value: https://www.lighttpd.net
+    url: https://www.lighttpd.net/
+    checkedAt: 2026-10-29
+    via: page
+  - field: repository
+    value: https://github.com/lighttpd/lighttpd1.4
+    url: https://api.github.com/repos/lighttpd/lighttpd1.4
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://redmine.lighttpd.net/projects/lighttpd/wiki
+    url: https://redmine.lighttpd.net/projects/lighttpd/wiki
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Please read through Configuration and Reference documentation below."
+  - field: maintainer
+    value: Jan Kneschke
+    url: https://raw.githubusercontent.com/lighttpd/lighttpd1.4/master/COPYING
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Copyright (c) 2004, Jan Kneschke, incremental"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/lighttpd
+    checkedAt: 2026-10-29
+    via: api
+  - field: language
+    value: C
+    url: https://api.github.com/repos/lighttpd/lighttpd1.4
+    checkedAt: 2026-10-29
+    via: api
+  - field: runtime
+    value: binary
+    url: https://redmine.lighttpd.net/projects/lighttpd/wiki
+    checkedAt: 2026-10-29
+    via: page
+    quote: "lighttpd binary packages"
+  - field: categories
+    value: [web-server]
+    url: https://redmine.lighttpd.net/projects/lighttpd/wiki
+    checkedAt: 2026-10-29
+    via: page
+    quote: "is a secure, fast, standards compliant, and very flexible web server"
+  - field: firstRelease
+    value: "2004"
+    url: https://raw.githubusercontent.com/lighttpd/lighttpd1.4/master/NEWS
+    checkedAt: 2026-10-29
+    via: api
+    quote: "- 1.0.2 - 2004-02-07"
+  - field: latestReleaseDate
+    value: 2026-07-08
+    url: https://redmine.lighttpd.net/projects/lighttpd/wiki
+    checkedAt: 2026-10-29
+    via: page
+    quote: "1.4.85 : 2026-07-08 bug fixes"
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/lighttpd/lighttpd1.4
+    checkedAt: 2026-10-29
+    via: api
+  - field: license
+    value: revised BSD
+    url: https://www.lighttpd.net/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "lighttpd is released under the Open Source revised BSD license"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/lighttpd/lighttpd1.4/master/COPYING
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without"
+  - field: installMethod
+    value: debian and ubuntu packages
+    url: https://redmine.lighttpd.net/projects/lighttpd/wiki/GetLighttpd
+    checkedAt: 2026-10-29
+    via: page
+    quote: "aptitude install lighttpd lighttpd-doc"
+  - field: installMethod
+    value: fedora packages
+    url: https://redmine.lighttpd.net/projects/lighttpd/wiki/GetLighttpd
+    checkedAt: 2026-10-29
+    via: page
+    quote: "dnf install lighttpd lighttpd-mod_openssl"
+  - field: installMethod
+    value: openSUSE packages
+    url: https://redmine.lighttpd.net/projects/lighttpd/wiki/GetLighttpd
+    checkedAt: 2026-10-29
+    via: page
+    quote: "zypper install lighttpd"
+  - field: installMethod
+    value: gentoo emerge
+    url: https://redmine.lighttpd.net/projects/lighttpd/wiki/GetLighttpd
+    checkedAt: 2026-10-29
+    via: page
+    quote: "emerge lighttpd"
+  - field: installMethod
+    value: FreeBSD ports
+    url: https://redmine.lighttpd.net/projects/lighttpd/wiki/GetLighttpd
+    checkedAt: 2026-10-29
+    via: page
+    quote: "cd /usr/ports/www/lighttpd"
+  - field: installMethod
+    value: build from source (automake, cmake, meson or scons)
+    url: https://redmine.lighttpd.net/projects/lighttpd/wiki/InstallFromSource
+    checkedAt: 2026-10-29
+    via: page
+    quote: "./configure -C --prefix=/usr/local"
+  - field: githubStargazers
+    value: 713
+    url: https://api.github.com/repos/lighttpd/lighttpd1.4
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 45
+    url: https://api.github.com/repos/lighttpd/lighttpd1.4/contributors
+    checkedAt: 2026-10-29
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://redmine.lighttpd.net/projects/lighttpd/wiki/InstallFromSource
+    checkedAt: 2026-10-29
+    via: page
+    quote: "there are many ways to set up lighttpd to run as a daemon"
+  - field: currentMajor
+    value: 1
+    url: https://redmine.lighttpd.net/projects/lighttpd/wiki
+    checkedAt: 2026-10-29
+    via: page
+    quote: "1.4.85 : 2026-07-08 bug fixes"
+  - field: forum
+    value: https://redmine.lighttpd.net/projects/lighttpd/boards
+    url: https://www.lighttpd.net/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "for documentation, wiki, forum and issue tracker"
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, pricingPage, paidEdition, freeTier, runtimeMin, renderingModes, endoflifeId, npmName, packagistName, dockerPulls, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, adminUi, headlessApi, contentStore, databases, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, hostedOffering]
+unreadable: ["https://www.lighttpd.net/download/ (404)", "https://redmine.lighttpd.net/projects/lighttpd/wiki/Docs_Installation (404)"]
+notes: >
+  The homepage answers over https and is the project's own site; the GitHub mirror says "main repo still on lighttpd.net", so the repository is the mirror the GitHub API reports, and the lighttpd.net source is not separately read. The license is stated two ways, the GitHub API (BSD-3-Clause) and the homepage ("Open Source revised BSD license"); both are recorded and agree, and the COPYING file is the BSD text. The COPYING copyright line names "Jan Kneschke, incremental"; incremental is a second name in that line and is not recorded as the maintainer, and the wiki and homepage name no maintainer or legal entity, so the maintainer follows the line and a reviewer should decide whether the project's current maintainer is "lighty labs" as the site title shows. No hqCountry was found on a page naming the country. The release line is lighttpd-1.4.x, a semver-style number whose major is 1; the newest stable is 1.4.85 (2026-07-08) per the wiki and homepage. The forum board URL linked from the homepage answered 402 to curl, so it is recorded from the homepage statement only; IRC on libera is named on the wiki and has no field. The GitHub repository has no releases, only tags; the release date comes from the wiki's Latest Release line and the homepage news. The oldest entry in NEWS is 1.0.2 (2004-02-07), and the NEWS file is the project's changelog, so firstRelease is 2004. The install page names the build frameworks automake, cmake, meson and scons, and a PCRE build dependency; these are build requirements, not a runtime minimum. The module list on the configuration options page names mod_fastcgi, mod_proxy and mod_openssl; the proxy module is not a reverse-proxy statement and categories stay web-server. Fields coined here: none.

@@ -1,0 +1,122 @@
+id: freenginx
+name: freenginx
+status: accepted
+checkedAt: 2026-10-29
+description: HTTP and reverse proxy server, written in C, that the project describes as an effort to preserve free and open development of nginx.
+facts:
+  - field: name
+    value: freenginx
+    url: https://freenginx.org/en/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "freenginx is an effort to preserve free and open development of nginx"
+  - field: homepage
+    value: https://freenginx.org
+    url: https://freenginx.org/en/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "freenginx is an effort to preserve free and open development of nginx"
+  - field: repository
+    value: https://github.com/freenginx/nginx
+    url: https://api.github.com/repos/freenginx/nginx
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://freenginx.org/en/docs/
+    url: https://freenginx.org/en/
+    checkedAt: 2026-10-29
+    via: page
+  - field: maintainer
+    value: freenginx
+    url: https://github.com/freenginx/nginx
+    checkedAt: 2026-10-29
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/freenginx/nginx
+    checkedAt: 2026-10-29
+    via: api
+  - field: categories
+    value: [web-server, reverse-proxy]
+    url: https://freenginx.org/en/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "an HTTP and reverse proxy server"
+  - field: language
+    value: C
+    url: https://api.github.com/repos/freenginx/nginx
+    checkedAt: 2026-10-29
+    via: api
+  - field: runtime
+    value: c binary
+    url: https://github.com/freenginx/nginx
+    checkedAt: 2026-10-29
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://freenginx.org/en/download.html
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Stable version"
+  - field: latestReleaseDate
+    value: 2026-10-27
+    url: https://freenginx.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "freenginx-1.30.2 stable and freenginx-1.31.5 mainline versions has been released"
+  - field: firstRelease
+    value: "2024"
+    url: https://freenginx.org/2024.html
+    checkedAt: 2026-10-29
+    via: page
+    quote: "2024-02-20 freenginx-1.25.4 mainline version has been released."
+  - field: license
+    value: 2-clause BSD-like license
+    url: https://freenginx.org/en/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "2-clause BSD-like license"
+  - field: licenseModel
+    value: open-source
+    url: https://freenginx.org/en/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "2-clause BSD-like license"
+  - field: installMethod
+    value: source-mercurial
+    url: https://freenginx.org/en/download.html
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Mercurial repositories with source code"
+  - field: installMethod
+    value: windows-binary
+    url: https://freenginx.org/en/download.html
+    checkedAt: 2026-10-29
+    via: page
+    quote: "freenginx/Windows-1.31.5"
+  - field: runsAs
+    value: [always-on]
+    url: https://freenginx.org/en/docs/control.html
+    checkedAt: 2026-10-29
+    via: page
+    quote: "The master process supports the following signals:"
+  - field: forum
+    value: https://freenginx.org/en/support.html
+    url: https://freenginx.org/en/support.html
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Mailing lists can be browsed"
+  - field: githubStargazers
+    value: 181
+    url: https://api.github.com/repos/freenginx/nginx
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 69
+    url: https://api.github.com/repos/freenginx/nginx/contributors
+    checkedAt: 2026-10-29
+    via: api
+notFound: [hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, runtimeMin, renderingModes, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, dockerPulls, npmName, packagistName, pypiDownloads, npmWeeklyDownloads, packagistDownloads, endoflifeId]
+unreadable: []
+notes: >
+  Mercurial is the primary source: the homepage and download page point to freenginx.org/hg/nginx, and the GitHub repository is a mirror ("Mirror of http://freenginx.org/hg/nginx/"); the GitHub repository is recorded because it is the one the API reads. The project has no GitHub releases; release data comes from the homepage news and the download page. The homepage puts both 1.30.2 (stable) and 1.31.5 (mainline) on 2026-10-27; currentMajor is 1 under the major-only rule, and the stable line 1.30 and mainline line 1.31 go here; nginx.yml still records "1.30" and reviewer should align it. No freenginx.org page uses the word "fork", and the GitHub description says "Mirror of", so forkOf is left out; the homepage says "an effort to preserve free and open development of nginx", and the 2024 news entry says "The goal of the project is to keep nginx development free from arbitrary corporate actions". Mailing lists on the support page are the community channel. The homepage states the license as "2-clause BSD-like license", GitHub reports no license, and the LICENSE file at freenginx.org/LICENSE names the copyright holders Igor Sysoev (2002-2021) and Nginx, Inc. (2011-2024); the legal entity is not named as maintainer because the project names none, so maintainer is the GitHub organization. The 2024 news list ends with the project announcement dated 2024-02-14; the first release entry is 1.25.4 dated 2024-02-20. The control documentation states the master process and worker processes model that backs runsAs. Fields coined: none.

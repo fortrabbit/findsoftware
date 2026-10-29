@@ -1,0 +1,138 @@
+id: litefs
+name: LiteFS
+status: accepted
+checkedAt: 2026-10-29
+description: FUSE-based file system that replicates SQLite databases across a cluster of machines.
+facts:
+  - field: name
+    value: LiteFS
+    url: https://github.com/superfly/litefs
+    checkedAt: 2026-10-29
+    via: page
+    quote: "LiteFS is a FUSE-based file system for replicating SQLite databases across a cluster of machines"
+  - field: homepage
+    value: https://docs.fly.io/litefs
+    url: https://docs.fly.io/litefs
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Replicate SQLite across nodes with LiteFS, a distributed file system"
+  - field: repository
+    value: https://github.com/superfly/litefs
+    url: https://api.github.com/repos/superfly/litefs
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://docs.fly.io/litefs/getting-started-fly
+    url: https://docs.fly.io/litefs/getting-started-fly
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Set up a LiteFS cluster on Fly.io"
+  - field: maintainer
+    value: Fly.io, Inc.
+    url: https://fly.io/legal/terms-of-service
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Welcome and thank you for your interest in Fly.io, Inc."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/superfly
+    checkedAt: 2026-10-29
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/superfly/litefs
+    checkedAt: 2026-10-29
+    via: api
+  - field: runtime
+    value: binary
+    url: https://docs.fly.io/litefs/getting-started-fly
+    checkedAt: 2026-10-29
+    via: page
+    quote: "The litefs binary is self-contained"
+  - field: categories
+    value: [database]
+    url: https://docs.fly.io/litefs
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Replicate SQLite across nodes with LiteFS, a distributed file system"
+  - field: databases
+    value: [sqlite]
+    url: https://raw.githubusercontent.com/superfly/litefs/main/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "LiteFS is a FUSE-based file system for replicating SQLite databases across a cluster of machines"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/superfly/litefs/releases/tag/v0.5.14
+    checkedAt: 2026-10-29
+    via: api
+  - field: latestReleaseDate
+    value: 2025-04-22
+    url: https://github.com/superfly/litefs/releases/tag/v0.5.14
+    checkedAt: 2026-10-29
+    via: api
+  - field: firstRelease
+    value: "2022"
+    url: https://github.com/superfly/litefs/releases/tag/v0.1.0-alpha1
+    checkedAt: 2026-10-29
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/superfly/litefs
+    checkedAt: 2026-10-29
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/superfly/litefs/main/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: installMethod
+    value: docker image flyio/litefs, copied into the application image
+    url: https://docs.fly.io/litefs/getting-started-fly
+    checkedAt: 2026-10-29
+    via: page
+    quote: "can pull in the litefs binary by copying it from the official Docker image"
+  - field: installMethod
+    value: prebuilt binary from the GitHub releases page
+    url: https://docs.fly.io/litefs/faq
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Download prebuilt LiteFS binaries for amd64 or arm64 from GitHub releases"
+  - field: installMethod
+    value: Fly.io deployment with litefs.yml, a volume and a Consul lease
+    url: https://docs.fly.io/litefs/getting-started-fly
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Set up a LiteFS cluster on Fly.io"
+  - field: dockerPulls
+    value: "118722 (2026-10-29)"
+    url: https://hub.docker.com/v2/repositories/flyio/litefs/
+    checkedAt: 2026-10-29
+    via: api
+  - field: githubStargazers
+    value: 4908
+    url: https://api.github.com/repos/superfly/litefs
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 19
+    url: https://api.github.com/repos/superfly/litefs/contributors
+    checkedAt: 2026-10-29
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.fly.io/litefs/getting-started-fly
+    checkedAt: 2026-10-29
+    via: page
+    quote: "it can act as a simple supervisor process"
+  - field: alternativeTo
+    value: [litestream]
+    url: https://docs.fly.io/litefs/faq
+    checkedAt: 2026-10-29
+    via: page
+    quote: "LiteFS improves upon Litestream by adding live"
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, pricingPage, paidEdition, freeTier, runtimeMin, renderingModes, endoflifeId, npmName, packagistName, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, adminUi, headlessApi, contentStore, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, hostedOffering]
+unreadable: ["https://docs.fly.io/litefs/cloud (404)"]
+notes: >
+  The README says "This project is actively maintained but is currently in a beta state", and the badge reads status beta; the Fly.io docs say "LiteFS is outside our scope of support. We are not able to provide support or guidance for it. Use with caution." Neither is an end statement, so the status stays accepted; a reviewer should decide whether the support disclaimer changes the listing. The repository was pushed 2026-10-28 and its latest release is v0.5.14 (2025-04-22). The first GitHub release is v0.1.0-alpha1 (2022-07-12), so firstRelease is 2022. The Fly.io terms name Fly.io, Inc.; no country was found on the pages read, so hqCountry is absent. Runs as: the getting-started page says LiteFS "can either be run on its own or it can act as a simple supervisor process", recorded as always-on. The FAQ compares LiteFS with Litestream and says it was originally split off of Litestream; that is recorded as alternativeTo, not forkOf or successorOf. The config page names the lease types "consul" and "static". The FAQ states write throughput of about 100 transactions per second because of FUSE, and the README says the SQLite TCL test suite is a work in progress. The Docker image is on Docker Hub as flyio/litefs and the install page names the 0.5 tag. The LiteFS Cloud path under docs.fly.io returns 404, so no hostedOffering is recorded. Fields coined here: none.

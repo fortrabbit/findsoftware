@@ -1,0 +1,116 @@
+id: gloo-gateway
+name: Gloo Gateway
+status: discontinued
+checkedAt: 2026-10-29
+description: Envoy-based Kubernetes API gateway and ingress controller that implements the Kubernetes Gateway API.
+facts:
+  - field: status
+    value: discontinued
+    url: https://raw.githubusercontent.com/solo-io/gloo/main/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Gloo OSS will reach end of life on December 31st, 2026."
+  - field: name
+    value: Gloo Gateway
+    url: https://raw.githubusercontent.com/solo-io/gloo/main/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "About Gloo Gateway"
+  - field: repository
+    value: https://github.com/solo-io/gloo
+    url: https://api.github.com/repos/solo-io/gloo
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://docs.solo.io/gateway/latest/
+    url: https://raw.githubusercontent.com/solo-io/gloo/main/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Check out the docs"
+  - field: maintainer
+    value: Solo.io, Inc.
+    url: https://raw.githubusercontent.com/solo-io/gloo/main/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Copyright 2017 Solo.io, Inc."
+  - field: maintainerType
+    value: company
+    url: https://raw.githubusercontent.com/solo-io/gloo/main/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Copyright 2017 Solo.io, Inc."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/solo-io
+    checkedAt: 2026-10-29
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: https://api.github.com/repos/solo-io/gloo/git/ref/tags/0.2.26
+    checkedAt: 2026-10-29
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/solo-io/gloo/languages
+    checkedAt: 2026-10-29
+    via: api
+  - field: categories
+    value: [api-gateway, ingress-controller]
+    url: https://raw.githubusercontent.com/solo-io/gloo/main/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Gloo Gateway is a feature-rich, fast, and flexible Kubernetes-native ingress controller and next-generation API gateway"
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/solo-io/gloo/main/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/solo-io/gloo/main/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/solo-io/gloo/releases
+    checkedAt: 2026-10-29
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-21
+    url: https://api.github.com/repos/solo-io/gloo/releases
+    checkedAt: 2026-10-29
+    via: api
+  - field: githubStargazers
+    value: 171
+    url: https://api.github.com/repos/solo-io/gloo
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 188
+    url: https://api.github.com/repos/solo-io/gloo/contributors
+    checkedAt: 2026-10-29
+    via: api
+  - field: installMethod
+    value: install in a Kubernetes cluster
+    url: https://docs.solo.io/gateway/latest/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Install Gloo Gateway in a Kubernetes cluster."
+  - field: installMethod
+    value: glooctl CLI
+    url: https://docs.solo.io/gateway/latest/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Install the glooctl CLI"
+  - field: x
+    value: https://twitter.com/soloio_inc
+    url: https://raw.githubusercontent.com/solo-io/gloo/main/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Follow us on Twitter"
+notFound: [homepage, paidEdition, hqCountry, parent, forkOf, successorOf, basedOn, alternativeTo, pricingPage, freeTier, hostedOffering, endoflifeId, eolPolicy, releaseCadence, headlessApi, i18n, multisite, userRoles, sso, templating, contentStore, databases, forum, discord, bluesky, mastodon, subreddit, newsletter, pluginDirectory, pluginCount, npmName, pypiName, packagistName, dockerPulls, npmWeeklyDownloads, pypiDownloads, dependentPackages, dependentRepos, reportedInstalls, wikidata, runtime, runtimeMin, runsAs, renderingModes, adminUi]
+unreadable: []
+notes: >
+  Status is discontinued: the repository README carries an end-of-life notice for Gloo OSS, the open source edition in this repository, with releases still published (v1.22.7, 2026-10-21). The same README says Gloo OSS was donated to the CNCF "rebranded as kgateway", and calls kgateway "the natural successor to Gloo OSS" at https://kgateway.dev; kgateway is not a candidate in any candidates CSV and has no record, so successorOf is absent and a reviewer should decide whether kgateway becomes its own candidate and whether this record follows it. The solo.io product page for Gloo Gateway now presents kgateway ("Solo Enterprise for kgateway"), and the docs at docs.solo.io/gateway/latest present the Solo Enterprise for kgateway edition; the rename rule would make this record follow kgateway, which is a reviewer decision. GitHub reports solo-io/gloo as a fork of kgateway-dev/kgateway (created 2024-11-07); the README does not state a fork, so forkOf is absent. firstRelease is 2018 from the author date of the oldest tag in the repository (0.2.26, 2018-05-30); the GitHub release list starts in 2024 because the repository is a fork created then, which carries the old tags. The kgateway site says the project "was launched in 2018 as Gloo"; that date is not a release date of this repository and is not used. currentMajor is 1 from the highest stable release v1.22.7; the minor line 1.22 is not recorded. The install route is quoted from the docs landing page, and the glooctl CLI from its sidebar; Helm appears only in the docs option list, which is not quoted. The solo.io product page for Gloo Gateway is a sales page for Solo Enterprise for kgateway, so it is no homepage for this community edition, and its enterprise extensions are a separate kgateway product, so paidEdition is absent. The README's Enterprise Trial link is not a statement of an edition. The maintainer is the LICENSE copyright line. The CSV's stars (171) are this fork's own count. Fields coined here: none.

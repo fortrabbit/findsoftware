@@ -1,0 +1,151 @@
+id: enhance-cp
+name: Enhance
+status: accepted
+checkedAt: 2026-10-29
+description: Hosting control panel for running websites, email, databases and backups across one or more Linux servers in a single cluster.
+facts:
+  - field: homepage
+    value: https://enhance.com
+    url: https://enhance.com/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "The next-gen hosting control panel"
+  - field: docs
+    value: https://enhance.com/docs
+    url: https://enhance.com/docs
+    checkedAt: 2026-10-29
+    via: page
+  - field: forum
+    value: https://community.enhance.com/
+    url: https://enhance.com/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Community Forum"
+  - field: x
+    value: https://twitter.com/enhancecp
+    url: https://enhance.com/
+    checkedAt: 2026-10-29
+    via: page
+  - field: maintainer
+    value: Enhance Hosting Automation Ltd
+    url: https://enhance.com/terms
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Enhance Hosting Automation Ltd (company number 11757770)"
+  - field: maintainerType
+    value: company
+    url: https://enhance.com/terms
+    checkedAt: 2026-10-29
+    via: page
+  - field: hqCountry
+    value: GB
+    url: https://enhance.com/terms
+    checkedAt: 2026-10-29
+    via: page
+    quote: "our registered office is at 19 Burgess Wood Road, Beaconsfield HP9 1EQ, United Kingdom"
+  - field: categories
+    value: [control-panel]
+    url: https://enhance.com/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "The next-gen hosting control panel"
+  - field: language
+    value: rust
+    url: https://enhance.com/faqs
+    checkedAt: 2026-10-29
+    via: page
+    quote: "under the hood we use Rust"
+  - field: installMethod
+    value: [install script]
+    url: https://enhance.com/docs/getting-started/installation-guide.html
+    checkedAt: 2026-10-29
+    via: page
+    quote: 'bash -c "$(curl https://install.enhance.com/install.sh)"'
+  - field: runsAs
+    value: [always-on]
+    url: https://enhance.com/faqs
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Enhance itself runs with very little overheads from management daemons"
+  - field: adminUi
+    value: web control panel
+    url: https://enhance.com/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Manage servers, sites, customers, and global settings from one unified dashboard."
+  - field: userRoles
+    value: yes
+    url: https://enhance.com/faqs
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Features like role-based access, WordPress security tools"
+  - field: headlessApi
+    value: rest
+    url: https://enhance.com/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Every Enhance feature can be controlled via REST API."
+  - field: databases
+    value: [mysql, mariadb, postgres]
+    url: https://enhance.com/product/technology
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Enhance deploys MySQL (8.0 or 8.1 ) , MariaDB (10.0 LTS or 11) or PostgreSQL (16)"
+  - field: currentMajor
+    value: 12
+    url: https://enhance.com/support/release-notes
+    checkedAt: 2026-10-29
+    via: page
+    quote: "12.26.4 Latest 29th October 2026"
+  - field: latestReleaseDate
+    value: 2026-10-29
+    url: https://enhance.com/support/release-notes
+    checkedAt: 2026-10-29
+    via: page
+    quote: "12.26.4 Latest 29th October 2026"
+  - field: license
+    value: Enhance Licence Agreement (proprietary)
+    url: https://enhance.com/terms
+    checkedAt: 2026-10-29
+    via: page
+    quote: "rights in the Enhance Software are licensed (not sold) to you"
+  - field: licenseModel
+    value: commercial
+    url: https://enhance.com/terms
+    checkedAt: 2026-10-29
+    via: page
+    quote: "rights in the Enhance Software are licensed (not sold) to you"
+  - field: pricingPage
+    value: https://enhance.com/pricing
+    url: https://enhance.com/pricing
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Scalable Per-Website Pricing"
+  - field: reportedInstalls
+    value: "461,266+ websites deployed"
+    url: https://enhance.com/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "461,266+ Websites Deployed"
+  - field: importsFrom
+    value: [cPanel]
+    url: https://enhance.com/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Transfer sites from cPanel to Enhance via the UI or as root."
+  - field: importsFrom
+    value: [Plesk]
+    url: https://enhance.com/support/release-notes
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Plesk importer"
+  - field: i18n
+    value: yes
+    url: https://enhance.com/support/release-notes
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Added Slovenian language support (beta)."
+notFound: [sourcePublic, repository, firstRelease, runtime, runtimeMin, basedOn, endoflifeId, githubStargazers, contributors, paidEdition, pluginDirectory, discord, subreddit, mastodon, bluesky, newsletter, packagistName, npmName]
+unreadable: []
+notes: >
+  Enhance is a commercial control panel: its terms license the software per website and the pricing page prices the licence, so no paidEdition is recorded. The terms define the software as "micro-service-based software" and the FAQ says the frontend is React and TypeScript with Rust underneath; no page states that the server ships as a native binary, so no runtime is recorded. The install guide requires Ubuntu 24.04 LTS on x86_64 and lists the requirements that rule out ARM and containers; the install script installs its packages with apt. Web servers Apache, Nginx, LiteSpeed and OpenLiteSpeed are offered per server, and PHP 5.6 to 8.5 runs per website, both stated on the technology page; no field records them. The release-notes page lists 12.26.4 as the latest release dated 29th October 2026, which replaces the 12.25.14 in the CSV row. No first release date is printed on any page read, and the release notes list only back to Core 9.1.2 (26 March 2023) before an "older release notes" link that points to the same page; firstRelease is left out. The terms name Enhance Hosting Automation Ltd (company number 11757770) with a registered office in Beaconsfield, England; the footer gives the same company name in upper case. A LinkedIn company page is linked from the homepage footer; no social field for it exists yet. No page states whether the source is published, so sourcePublic is left out. The homepage shows a 4.8 out of 5 rating and the pricing page a monthly calculator; neither is recorded. The GitHub repository EnhanceSoftware/Enhance returns 404, so there is no repository fact.

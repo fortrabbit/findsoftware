@@ -1,0 +1,136 @@
+id: envoy
+name: Envoy
+status: accepted
+checkedAt: 2026-10-29
+description: Open source edge and service proxy for cloud-native applications.
+facts:
+  - field: homepage
+    value: https://www.envoyproxy.io
+    url: https://www.envoyproxy.io/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Envoy is an open source edge and service proxy"
+  - field: repository
+    value: https://github.com/envoyproxy/envoy
+    url: https://api.github.com/repos/envoyproxy/envoy
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://www.envoyproxy.io/docs/envoy/v1.40.2/start/start
+    url: https://www.envoyproxy.io/docs/envoy/v1.40.2/start/start
+    checkedAt: 2026-10-29
+    via: page
+  - field: maintainer
+    value: Envoy Project Authors
+    url: https://www.envoyproxy.io/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "2026 © Envoy Project Authors"
+  - field: categories
+    value: [reverse-proxy]
+    url: https://www.envoyproxy.io/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Envoy is an open source edge and service proxy"
+  - field: categories
+    value: [load-balancer]
+    url: https://www.envoyproxy.io/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Envoy supports advanced load balancing features"
+  - field: language
+    value: C++
+    url: https://api.github.com/repos/envoyproxy/envoy
+    checkedAt: 2026-10-29
+    via: api
+  - field: runtime
+    value: binary
+    url: https://www.envoyproxy.io/docs/envoy/v1.40.2/start/install
+    checkedAt: 2026-10-29
+    via: page
+    quote: "download the static binary from the GitHub release page"
+  - field: runsAs
+    value: [always-on]
+    url: https://www.envoyproxy.io/docs/envoy/v1.40.2/start/quick-start/run-envoy
+    checkedAt: 2026-10-29
+    via: page
+    quote: "starting Envoy as a system daemon"
+  - field: installMethod
+    value: [docker]
+    url: https://www.envoyproxy.io/docs/envoy/v1.40.2/start/install
+    checkedAt: 2026-10-29
+    via: page
+    quote: "The Envoy project provides a number of pre-built Docker images"
+  - field: installMethod
+    value: [binary-download]
+    url: https://www.envoyproxy.io/docs/envoy/v1.40.2/start/install
+    checkedAt: 2026-10-29
+    via: page
+    quote: "download the static binary from the GitHub release page"
+  - field: installMethod
+    value: [homebrew]
+    url: https://www.envoyproxy.io/docs/envoy/v1.40.2/start/install
+    checkedAt: 2026-10-29
+    via: page
+    quote: "You can install Envoy on Mac OSX using the official brew repositories."
+  - field: dockerPulls
+    value: "5796932552 (2026-10-29)"
+    url: https://hub.docker.com/v2/repositories/envoyproxy/envoy/
+    checkedAt: 2026-10-29
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/envoyproxy/envoy
+    checkedAt: 2026-10-29
+    via: api
+  - field: license
+    value: Apache License, Version 2.0
+    url: https://github.com/envoyproxy/envoy/blob/main/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/envoyproxy/envoy/blob/main/LICENSE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: currentMajor
+    value: 1
+    url: https://github.com/envoyproxy/envoy/releases/tag/v1.40.2
+    checkedAt: 2026-10-29
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-27
+    url: https://github.com/envoyproxy/envoy/releases/tag/v1.40.2
+    checkedAt: 2026-10-29
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://api.github.com/repos/envoyproxy/envoy/releases
+    checkedAt: 2026-10-29
+    via: api
+  - field: endoflifeId
+    value: envoy
+    url: https://endoflife.date/envoy
+    checkedAt: 2026-10-29
+    via: api
+  - field: githubStargazers
+    value: 29157
+    url: https://api.github.com/repos/envoyproxy/envoy
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 379
+    url: https://api.github.com/repos/envoyproxy/envoy/contributors?per_page=1
+    checkedAt: 2026-10-29
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/envoyproxy
+    checkedAt: 2026-10-29
+    via: api
+notFound: [paidEdition, basedOn, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, hqCountry, packagistName, npmName, hostedOffering]
+unreadable: []
+notes: >
+  Envoy is hosted by the Cloud Native Computing Foundation and its homepage calls it a graduated project; the copyright line names "Envoy Project Authors", recorded as maintainer, and CNCF hosting is stated only in notes. The stable docs path is v1.40.2: the unversioned latest docs show 1.41.0-dev, so they are not cited. The GitHub stable release list is the source for currentMajor (1, minor line 1.40 not recorded) and latestReleaseDate; no prerelease appears in the releases API. firstRelease is the oldest stable GitHub release, published 2016-09-12. The homepage and community page link no Discord, X or Slack account; the community page lists the envoy-maintainers Google group, not recorded as a forum. Extension points stated on the homepage (Wasm, Lua, Go and Rust dynamic modules, external processing) and the xDS configuration APIs are not fields and are not recorded. Envoy Gateway, Envoy AI Gateway and other projects built on Envoy are separate software and are not part of this record.

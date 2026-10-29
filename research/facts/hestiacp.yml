@@ -1,0 +1,132 @@
+id: hestiacp
+name: HestiaCP
+status: accepted
+checkedAt: 2026-10-29
+description: Web control panel for Debian and Ubuntu servers that manages web domains, mail, DNS zones and databases from one dashboard.
+facts:
+  - field: homepage
+    value: https://hestiacp.com/
+    url: https://hestiacp.com/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Hestia Control Panel | Open-source web server control panel."
+  - field: repository
+    value: https://github.com/hestiacp/hestiacp
+    url: https://api.github.com/repos/hestiacp/hestiacp
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://hestiacp.com/docs/introduction/getting-started
+    url: https://hestiacp.com/docs/introduction/getting-started
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Hestia must be installed on top of a fresh operating system installation to ensure proper functionality"
+  - field: maintainer
+    value: Hestia Control Panel
+    url: https://hestiacp.com/team
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Copyright © 2019-present Hestia Control Panel"
+  - field: maintainerType
+    value: community
+    url: https://hestiacp.com/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Supported by the community"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/hestiacp
+    checkedAt: 2026-10-29
+    via: api
+  - field: categories
+    value: [control-panel]
+    url: https://hestiacp.com/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Open-source web server control panel"
+  - field: language
+    value: Shell
+    url: https://api.github.com/repos/hestiacp/hestiacp/languages
+    checkedAt: 2026-10-29
+    via: api
+  - field: adminUi
+    value: yes, web interface and command line
+    url: https://raw.githubusercontent.com/hestiacp/hestiacp/main/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "provide administrators an easy to use web and command line interface"
+  - field: databases
+    value: [mariadb, mysql, postgres]
+    url: https://raw.githubusercontent.com/hestiacp/hestiacp/main/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "MariaDB/MySQL and/or PostgreSQL databases"
+  - field: i18n
+    value: web interface translations, community-contributed
+    url: https://raw.githubusercontent.com/hestiacp/hestiacp/release/CONTRIBUTING.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "improve the quality of the translations used in Hestia Control Panel's web interface"
+  - field: installMethod
+    value: install script (hst-install.sh)
+    url: https://raw.githubusercontent.com/hestiacp/hestiacp/main/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Download the installation script for the latest release"
+  - field: license
+    value: GPL-3.0
+    url: https://api.github.com/repos/hestiacp/hestiacp
+    checkedAt: 2026-10-29
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://hestiacp.com/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Released under the GPLv3 License."
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/hestiacp/hestiacp/releases
+    checkedAt: 2026-10-29
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-14
+    url: https://api.github.com/repos/hestiacp/hestiacp/releases/latest
+    checkedAt: 2026-10-29
+    via: api
+  - field: firstRelease
+    value: "2019"
+    url: https://raw.githubusercontent.com/hestiacp/hestiacp/release/CHANGELOG.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "[0.9.8-28] - 2019-05-16"
+  - field: githubStargazers
+    value: 4555
+    url: https://api.github.com/repos/hestiacp/hestiacp
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 348
+    url: https://api.github.com/repos/hestiacp/hestiacp/contributors?per_page=1
+    checkedAt: 2026-10-29
+    via: api
+  - field: forum
+    value: https://forum.hestiacp.com/
+    url: https://raw.githubusercontent.com/hestiacp/hestiacp/main/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "visit our forum to search for potential solutions"
+  - field: x
+    value: https://twitter.com/HestiaPanel
+    url: https://hestiacp.com/
+    checkedAt: 2026-10-29
+    via: page
+  - field: facebook
+    value: https://www.facebook.com/hestiacp
+    url: https://hestiacp.com/
+    checkedAt: 2026-10-29
+    via: page
+notFound: [runsAs, pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, endoflifeId, npmName, packagistName, pypiName, runtime, runtimeMin, dependentRepos, dependentPackages, pluginDirectory, pluginCount, discord, mastodon, bluesky, subreddit, newsletter, wikidata, usageShare, reportedInstalls, contentStore, headlessApi, templating, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, supportedVersions, hostedOffering, selfHostOption]
+unreadable: []
+notes: >
+  Status accepted: GPL-3.0 on GitHub, an install script on Debian and Ubuntu, and a current release (2026-09-14). The README says "is licensed under GPL v3 ... and is based on the [VestaCP](https://vestacp.com/) project". VestaCP has no record in research/facts, so the parent is named here and not recorded as basedOn; the CSV note "fork of VestaCP" is the same statement. The README also restricts use of the names "Hestia Control Panel", "HestiaCP" and the logo: no selling or redistribution under those names, no alteration of the name or logo. These are trademark terms beside the GPL-3.0 license, not a second license, so licenseModel stays open-source; a reviewer should confirm. runsAs is absent: the configuration page's FAQ restarts the "hestia" unit with "systemctl restart hestia", which is a command and no statement that the panel runs as a service or daemon, and no page uses those words. The docs and the install page name a backend port (default 8083) but do not say what runs on it. The panel's web interface is PHP (the repository's web folder, PHP 1.25 MB of about 4.2 MB of code by GitHub's byte count, and the hestia-php package the docs mention), but no page states the panel's runtime, so runtime is absent. The GitHub primary language is Shell. The team page names a project founder (Raphael Schneeberger) and no legal entity; the copyright line names Hestia Control Panel, so the maintainer is recorded as that name. No imprint or legal notice was found (hestiacp.com/imprint and /privacy return 404), so hqCountry is absent. The changelog is in the release branch; its oldest entry is 0.9.8-28 dated 2019-05-16, earlier than the oldest GitHub release 1.0.3 (2019-07-09), so firstRelease follows the changelog. The docs site docs.hestiacp.com redirects to hestiacp.com/docs. The X and Facebook links are icon links in the site navigation (aria-label twitter and facebook) and carry no quote. The homepage's Donate page and the README's PayPal and crypto addresses are not a paid tier.

@@ -1,0 +1,1 @@
+Fail2Ban is a Python daemon that scans log files, such as the sshd and Apache logs, for repeated failed logins and bans the offending IP addresses through system firewall rules. It installs from Linux distribution packages or from source with setup.py, and its README describes enabling it as an automatic service.

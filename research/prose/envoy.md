@@ -1,0 +1,3 @@
+Envoy is an edge and service proxy written in C++. It runs as a server process that handles the network traffic of the applications beside it. The [install guide](https://www.envoyproxy.io/docs/envoy/v1.40.2/start/install) names three ways to get it: the official Docker images, the static binary on the GitHub releases page, and Homebrew on macOS. The [quick-start guide](https://www.envoyproxy.io/docs/envoy/v1.40.2/start/quick-start/run-envoy) describes starting it as a system daemon.
+
+Envoy is hosted by the Cloud Native Computing Foundation. Its extensions can be written in Wasm, Lua, Go or Rust, and its configuration can change at runtime through the xDS APIs. Projects built on Envoy, such as Envoy Gateway, are separate software.

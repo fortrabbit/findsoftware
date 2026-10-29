@@ -1,0 +1,120 @@
+id: getssl
+name: getssl
+status: accepted
+checkedAt: 2026-10-29
+description: Bash script that obtains and renews SSL certificates from Let's Encrypt ACME servers, copies them to remote servers and reloads services.
+facts:
+  - field: name
+    value: getssl
+    url: https://api.github.com/repos/srvrco/getssl
+    checkedAt: 2026-10-29
+    via: api
+  - field: repository
+    value: https://github.com/srvrco/getssl
+    url: https://api.github.com/repos/srvrco/getssl
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://github.com/srvrco/getssl/wiki
+    url: https://raw.githubusercontent.com/srvrco/getssl/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "additional help pages on the wiki"
+  - field: maintainer
+    value: serverco
+    url: https://api.github.com/users/srvrco
+    checkedAt: 2026-10-29
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/srvrco
+    checkedAt: 2026-10-29
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://api.github.com/repos/srvrco/getssl/releases
+    checkedAt: 2026-10-29
+    via: api
+  - field: language
+    value: Shell
+    url: https://api.github.com/repos/srvrco/getssl/languages
+    checkedAt: 2026-10-29
+    via: api
+  - field: categories
+    value: [acme-client]
+    url: https://raw.githubusercontent.com/srvrco/getssl/master/getssl
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Obtain SSL certificates from the letsencrypt.org ACME server"
+  - field: license
+    value: GPL-3.0-or-later
+    url: https://raw.githubusercontent.com/srvrco/getssl/master/getssl
+    checkedAt: 2026-10-29
+    via: page
+    quote: "(at your option) any later version."
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/srvrco/getssl/master/getssl
+    checkedAt: 2026-10-29
+    via: page
+    quote: "This program is free software: you can redistribute it and/or modify"
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/srvrco/getssl/releases
+    checkedAt: 2026-10-29
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-14
+    url: https://api.github.com/repos/srvrco/getssl/releases
+    checkedAt: 2026-10-29
+    via: api
+  - field: githubStargazers
+    value: 2233
+    url: https://api.github.com/repos/srvrco/getssl
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 98
+    url: https://api.github.com/repos/srvrco/getssl/contributors
+    checkedAt: 2026-10-29
+    via: api
+  - field: installMethod
+    value: manual download of the script (curl)
+    url: https://raw.githubusercontent.com/srvrco/getssl/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "curl --silent https://raw.githubusercontent.com/srvrco/getssl/latest/getssl > getssl ; chmod 700 getssl"
+  - field: installMethod
+    value: make install from the release tarball
+    url: https://raw.githubusercontent.com/srvrco/getssl/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "use the provided Makefile with each release tarball. Use the `install` target."
+  - field: installMethod
+    value: git clone
+    url: https://raw.githubusercontent.com/srvrco/getssl/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "git clone https://github.com/srvrco/getssl.git"
+  - field: installMethod
+    value: RPM and DEB packages on the release page
+    url: https://raw.githubusercontent.com/srvrco/getssl/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Red Hat Package Manager (RPM) packages and Debian (DEB) packages for binary installation"
+  - field: installMethod
+    value: Arch Linux AUR packages
+    url: https://raw.githubusercontent.com/srvrco/getssl/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "For Arch Linux there are packages in the AUR"
+  - field: runsAs
+    value: [scheduled]
+    url: https://raw.githubusercontent.com/srvrco/getssl/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Runs as a daily cron"
+notFound: [homepage, hqCountry, parent, forkOf, successorOf, basedOn, alternativeTo, runtime, runtimeMin, renderingModes, pricingPage, paidEdition, freeTier, hostedOffering, endoflifeId, eolPolicy, releaseCadence, adminUi, headlessApi, i18n, multisite, userRoles, sso, templating, contentStore, databases, forum, discord, x, bluesky, mastodon, subreddit, newsletter, pluginDirectory, pluginCount, npmName, pypiName, packagistName, dockerPulls, npmWeeklyDownloads, pypiDownloads, dependentPackages, dependentRepos, reportedInstalls, wikidata]
+unreadable: []
+notes: >
+  No project website: the repository names no site, the homepage field is empty, and the CSV's homepage is the GitHub URL, so homepage is absent. The only organisation site found, serverco.com, returns "Page not currently active" and names no legal entity or country; it is not linked. The maintainer is the GitHub organisation name serverco, since neither the script header, the README nor the LICENSE (FSF text) names a maintainer; the script's revision history names contributors (dstosberg, jsnider2) and is not a maintainer statement. The README's packages section links https://github.com/jeffmerkey/getssl/releases as "the release page for this project", a different account; the repository is srvrco/getssl and no fork or move is stated, so forkOf and successorOf are absent. The README's manual install path fetches from the latest branch of the same repository. The runtime is bash ("GetSSL was written in standard bash"), a value the runtime vocabulary does not hold, so runtime is absent. firstRelease is 2016: the script's revision history starts 2016-01-08 at v0.1 and the oldest GitHub release is v1.0 from 2016-06-04. Releases are stable only; no prerelease is listed. The README describes the script as able to copy certificates to remote servers over ssh, sftp or ftp, and reload services after renewal (the README names apache, nginx and postfix as examples), from the features list; its overview says it can "be run on a server, a desktop computer, or even a virtualbox". The license is the script header's "either version 3 of the License, or (at your option) any later version"; GitHub's API reports GPL-3.0 from the LICENSE file, the same license in another wording. The README says the script runs on "virtually all unix machines, including BSD, most Linux distributions, macOS" and has a section on Windows Server and IIS through WSL; the Unix-like requirement is recorded here, not as runtime. Fields coined here: none.

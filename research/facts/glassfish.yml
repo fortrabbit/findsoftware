@@ -1,0 +1,155 @@
+id: glassfish
+name: Eclipse GlassFish
+status: accepted
+checkedAt: 2026-10-29
+description: Open-source Jakarta EE application server, distributed as a server package and as an embedded executable JAR.
+facts:
+  - field: name
+    value: Eclipse GlassFish
+    url: https://glassfish.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Eclipse GlassFish is a lightweight yet powerful open-source application server"
+  - field: homepage
+    value: https://glassfish.org
+    url: https://api.github.com/repos/eclipse-ee4j/glassfish
+    checkedAt: 2026-10-29
+    via: api
+  - field: repository
+    value: https://github.com/eclipse-ee4j/glassfish
+    url: https://api.github.com/repos/eclipse-ee4j/glassfish
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://glassfish.org/documentation
+    url: https://glassfish.org/documentation
+    checkedAt: 2026-10-29
+    via: page
+  - field: maintainer
+    value: Eclipse Foundation AISBL
+    url: https://www.eclipse.org/legal/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Copyright © Eclipse Foundation AISBL. All rights reserved."
+  - field: maintainerType
+    value: foundation
+    url: https://glassfish.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Continuously maintained under the Eclipse Foundation"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/eclipse-ee4j
+    checkedAt: 2026-10-29
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://search.maven.org/solrsearch/select?q=g:org.glassfish.main.distributions+AND+a:glassfish&core=gav&rows=200&wt=json
+    checkedAt: 2026-10-29
+    via: api
+  - field: mavenCoordinates
+    value: org.glassfish.main.distributions:glassfish
+    url: https://repo1.maven.org/maven2/org/glassfish/main/distributions/glassfish/maven-metadata.xml
+    checkedAt: 2026-10-29
+    via: api
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/eclipse-ee4j/glassfish/languages
+    checkedAt: 2026-10-29
+    via: api
+  - field: categories
+    value: [app-server]
+    url: https://glassfish.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Eclipse GlassFish is a lightweight yet powerful open-source application server"
+  - field: license
+    value: EPL-2.0
+    url: https://raw.githubusercontent.com/eclipse-ee4j/glassfish/main/NOTICE.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0"
+  - field: license
+    value: GPL-2.0 WITH Classpath-exception-2.0
+    url: https://raw.githubusercontent.com/eclipse-ee4j/glassfish/main/NOTICE.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/eclipse-ee4j/glassfish/main/NOTICE.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0"
+  - field: currentMajor
+    value: 8
+    url: https://api.github.com/repos/eclipse-ee4j/glassfish/releases
+    checkedAt: 2026-10-29
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-04
+    url: https://api.github.com/repos/eclipse-ee4j/glassfish/releases
+    checkedAt: 2026-10-29
+    via: api
+  - field: githubStargazers
+    value: 444
+    url: https://api.github.com/repos/eclipse-ee4j/glassfish
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 89
+    url: https://api.github.com/repos/eclipse-ee4j/glassfish/contributors
+    checkedAt: 2026-10-29
+    via: api
+  - field: installMethod
+    value: zip distribution (server)
+    url: https://glassfish.org/download
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Eclipse GlassFish 8.0.5, Jakarta EE Platform 11 (zip)"
+  - field: installMethod
+    value: embedded executable JAR
+    url: https://glassfish.org/docs/latest/embedded-server-guide.html
+    checkedAt: 2026-10-29
+    via: page
+    quote: "No installation or configuration of embedded Eclipse GlassFish is"
+  - field: installMethod
+    value: Docker image ghcr.io/eclipse-ee4j/glassfish
+    url: https://github.com/eclipse-ee4j/glassfish.docker/wiki
+    checkedAt: 2026-10-29
+    via: page
+    quote: "docker run -p 8080:8080 -p 4848:4848 ghcr.io/eclipse-ee4j/glassfish"
+  - field: installMethod
+    value: Maven coordinates
+    url: https://glassfish.org/download
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Maven coordinates"
+  - field: runsAs
+    value: [always-on]
+    url: https://glassfish.org/docs/latest/quick-start-guide.html
+    checkedAt: 2026-10-29
+    via: page
+    quote: "The command starts the default domain, domain1"
+  - field: runtime
+    value: [jvm]
+    url: https://glassfish.org/docs/latest/embedded-server-guide.html
+    checkedAt: 2026-10-29
+    via: page
+    quote: "inside any Virtual Machine for the Java platform"
+  - field: runtimeMin
+    value: 21
+    url: https://glassfish.org/download
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Eclipse GlassFish 8 requires JDK 21 or higher."
+  - field: adminUi
+    value: yes, administration console
+    url: https://glassfish.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "the full application server with administration console"
+notFound: [hqCountry, parent, forkOf, successorOf, basedOn, alternativeTo, pricingPage, paidEdition, freeTier, hostedOffering, endoflifeId, eolPolicy, releaseCadence, headlessApi, i18n, multisite, userRoles, sso, templating, contentStore, databases, forum, discord, x, bluesky, mastodon, subreddit, newsletter, pluginDirectory, pluginCount, npmName, pypiName, packagistName, dockerPulls, npmWeeklyDownloads, pypiDownloads, dependentPackages, dependentRepos, reportedInstalls, wikidata]
+unreadable: ["https://glassfish.org/about (404)", "https://glassfish.org/news (404)"]
+notes: >
+  The download page says Java EE "has been contributed to the Eclipse Foundation" and links an archived Java EE GlassFish project in a separate place; the page does not call Eclipse GlassFish its successor or a rename, so successorOf and formerName are absent. firstRelease is 2012 from the oldest Maven Central upload of org.glassfish.main.distributions:glassfish (3.1.2, 2012-02-17). The oldest GitHub release is 6.0.0-M2-servlet5 (2020-07-20), so a reviewer may prefer 2020 under the same-repository rule. The GitHub license field is NOASSERTION; NOTICE.md on the main branch gives the dual EPL-2.0 OR GPL-2.0 with Classpath exception statement, recorded as two license entries with the same quote. The LICENSE file on main is the EPL 2.0 text. NOTICE.md and LICENSE were read on main, not at the 8.0.5 tag. The maintainer is Eclipse Foundation AISBL from the copyright line of eclipse.org's legal page. The foundation's organisation page says it is "based in Brussels", a city, and names no country, so hqCountry is absent. The Docker image is published to GitHub Container Registry (ghcr.io); no Docker Hub figure is recorded because the install docs name the ghcr.io image. The compatibility page says GlassFish "is a Compatible Implementation of a number of Jakarta EE Specifications" and the FAQ says the project was "started by Sun Microsystems, then sponsored by Oracle Corporation, and now living at the Eclipse Foundation"; neither names a parent record, so basedOn and parent stay absent. Professional services and support companies listed on the support page are not recorded. The social links in the glassfish.org footer belong to the Eclipse Foundation and are not recorded. Fields coined here: none.

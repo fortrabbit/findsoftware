@@ -1,0 +1,110 @@
+id: fail2ban
+name: Fail2Ban
+status: stub
+checkedAt: 2026-10-29
+description: Python daemon that scans log files for repeated failed logins and bans the offending IP addresses through system firewall rules.
+facts:
+  - field: repository
+    value: https://github.com/fail2ban/fail2ban
+    url: https://api.github.com/repos/fail2ban/fail2ban
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://fail2ban.readthedocs.io/
+    url: https://github.com/fail2ban/fail2ban/blob/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Developers documentation"
+  - field: maintainer
+    value: fail2ban
+    url: https://api.github.com/users/fail2ban
+    checkedAt: 2026-10-29
+    via: api
+  - field: maintainerType
+    value: community
+    url: https://github.com/fail2ban/fail2ban/blob/master/THANKS
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Fail2Ban grew into"
+  - field: forum
+    value: https://lists.sourceforge.net/lists/listinfo/fail2ban-users
+    url: https://github.com/fail2ban/fail2ban/blob/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "[mailing list](https://lists.sourceforge.net/lists/listinfo/fail2ban-users)"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/fail2ban
+    checkedAt: 2026-10-29
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/fail2ban/fail2ban
+    checkedAt: 2026-10-29
+    via: api
+  - field: runtime
+    value: python
+    url: https://github.com/fail2ban/fail2ban/blob/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Python >= 3.5 or PyPy3"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/fail2ban/fail2ban/blob/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "To enable fail2ban as an automatic service"
+  - field: installMethod
+    value: [linux-distribution-packages]
+    url: https://github.com/fail2ban/fail2ban/blob/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "likely already packaged for your Linux distribution"
+  - field: installMethod
+    value: [source-setup-py]
+    url: https://github.com/fail2ban/fail2ban/blob/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "sudo python setup.py install"
+  - field: license
+    value: GPL-2.0-or-later
+    url: https://github.com/fail2ban/fail2ban/blob/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "either version 2 of the License, or (at your option) any later version."
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/fail2ban/fail2ban/blob/master/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "either version 2 of the License, or (at your option) any later version."
+  - field: firstRelease
+    value: 2004
+    url: https://github.com/fail2ban/fail2ban/blob/master/ChangeLog
+    checkedAt: 2026-10-29
+    via: page
+    quote: "ver. 0.1.0 (2004/10/12) - alpha"
+  - field: currentMajor
+    value: 1
+    url: https://github.com/fail2ban/fail2ban/releases/tag/1.1.1
+    checkedAt: 2026-10-29
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-15
+    url: https://github.com/fail2ban/fail2ban/releases/tag/1.1.1
+    checkedAt: 2026-10-29
+    via: api
+  - field: githubStargazers
+    value: 18904
+    url: https://api.github.com/repos/fail2ban/fail2ban
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 248
+    url: https://api.github.com/repos/fail2ban/fail2ban/contributors?per_page=1
+    checkedAt: 2026-10-29
+    via: api
+notFound: [homepage, categories, runtimeMin, paidEdition, basedOn, endoflifeId, pricingPage, pluginDirectory, discord, subreddit, mastodon, bluesky, x, newsletter, packagistName, npmName, pypiName, hqCountry]
+unreadable: ["https://github.com/fail2ban/fail2ban/wiki"]
+notes: >
+  Doubt: whether a host intrusion-prevention daemon belongs beside WAFs and reverse proxies, which the boundary rule admits only when its own pages say it protects websites or web apps. The README names sshd and Apache logs among its out-of-the-box inputs, and the project describes services in general; no page read says it protects a website or web app. The wiki's list of filters, read on its own pages, would settle it. The README names www.fail2ban.org as the project website; it redirects to https://github.com/fail2ban/fail2ban, so no homepage is recorded: the repository is not a project site. The README's runtime line, "Python >= 3.5 or PyPy3", is on master, and setup.py at tag 1.1.1 names no Python version, so runtimeMin is not recorded. The GPL wording is one entry: the README says "version 2 of the License, or (at your option) any later version" and COPYING is the GPL version 2 text. The THANKS file says Cyril Jaquier originally developed it until 2010 and that it grew into a community-driven project, so the maintainer is the GitHub organization and the type is community. The forum fact is the users mailing list the README names. The repository ships filters for Apache logs under config/filter.d (apache-auth, apache-badbots and others), which is not a statement that the project protects websites. No category value in the import map fits a host intrusion-prevention daemon; the categories fact is left for the reviewer. No PyPI package exists under fail2ban (pypi.org returns 404).

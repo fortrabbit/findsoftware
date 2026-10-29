@@ -1,0 +1,142 @@
+id: keepalived
+name: Keepalived
+status: accepted
+checkedAt: 2026-10-29
+description: Routing software for Linux that provides load balancing with IPVS and high availability with VRRP.
+facts:
+  - field: homepage
+    value: https://www.keepalived.org
+    url: https://www.keepalived.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Keepalived is a routing software written in C"
+  - field: repository
+    value: https://github.com/acassen/keepalived
+    url: https://api.github.com/repos/acassen/keepalived
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://www.keepalived.org/documentation/
+    url: https://www.keepalived.org/documentation/user-guide/introduction/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Keepalived provides frameworks for both load balancing and high availability"
+  - field: maintainer
+    value: Alexandre Cassen
+    url: https://www.keepalived.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Copyright © 2000 - 2026 Alexandre Cassen"
+  - field: maintainerType
+    value: individual
+    url: https://www.keepalived.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Copyright © 2000 - 2026 Alexandre Cassen"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/acassen
+    checkedAt: 2026-10-29
+    via: api
+  - field: categories
+    value: [load-balancer, high-availability]
+    url: https://www.keepalived.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Load balancing & high availability for Linux"
+  - field: language
+    value: C
+    url: https://api.github.com/repos/acassen/keepalived
+    checkedAt: 2026-10-29
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://www.keepalived.org/documentation/user-guide/installing/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "compile from source"
+  - field: runsAs
+    value: [always-on]
+    url: https://www.keepalived.org/documentation/user-guide/installing/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Enable it so the daemon starts at boot"
+  - field: installMethod
+    value: build from source (configure, make, make install)
+    url: https://www.keepalived.org/documentation/user-guide/installing/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Compiling and Building from Source"
+  - field: license
+    value: GPL-2.0-or-later
+    url: https://www.keepalived.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "either version 2 of the License, or any later version"
+  - field: currentMajor
+    value: 2
+    url: https://www.keepalived.org/download/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Keepalived 2.4.3"
+  - field: latestReleaseDate
+    value: 2026-07-20
+    url: https://www.keepalived.org/download/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Released July 20, 2026"
+  - field: firstRelease
+    value: "2000"
+    url: https://www.keepalived.org/documentation/changelog/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "2000-12-22"
+  - field: githubStargazers
+    value: 4733
+    url: https://api.github.com/repos/acassen/keepalived
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 148
+    url: https://api.github.com/repos/acassen/keepalived/contributors
+    checkedAt: 2026-10-29
+    via: api
+  - field: x
+    value: https://twitter.com/keepalived
+    url: https://www.keepalived.org/
+    checkedAt: 2026-10-29
+    via: page
+  - field: installMethod
+    value: "distribution package (apt)"
+    url: https://www.keepalived.org/download/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "sudo apt install keepalived"
+  - field: installMethod
+    value: "distribution package (dnf)"
+    url: https://www.keepalived.org/download/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "sudo dnf install keepalived"
+  - field: installMethod
+    value: "distribution package (pacman)"
+    url: https://www.keepalived.org/download/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "sudo pacman -S keepalived"
+  - field: installMethod
+    value: "distribution package (apk)"
+    url: https://www.keepalived.org/download/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "sudo apk add keepalived"
+  - field: forum
+    value: https://groups.io/g/keepalived-users
+    url: https://www.keepalived.org/community/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "is the place to ask questions, share configurations and follow announcements"
+notFound: [pricingPage, paidEdition, dockerPulls, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, newsletter, wikidata, docker, npmName, packagistName, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, livePreview, multisite, userRoles, sso, importsFrom, renderingModes, hqCountry, endoflifeId]
+unreadable: []
+notes: >
+  The homepage states the license as "GNU General Public License ... either version 2 of the License, or any later version", which is GPL-2.0-or-later; GitHub detects GPL-2.0 for the same project, one license entry. The documentation's own license page (copyright 2001-2015) covers the manual, not the software, and is not recorded. Highest stable release is 2.4.3 per the download page; the project has no GitHub releases, only tags, so the tag v2.4.3 (commit date 2026-07-20) matches the page. Major 2 is the major of the stable line; the minor line is not recorded. The first changelog entry is release 0.2.1 dated 2000-12-22; GitHub tags do not reach back that far. The CSV's "date from git tag" is the same date as the project's download page. Keepalived is a Layer 4 load balancer and VRRP failover daemon for server pools; none of its pages name websites or web apps, so criterion 1 is held through its load-balancer role, a judgement for the reviewer. The download page says the main site provides no binary packages. The forum field is the Keepalived Users Group at Groups.io; the old SourceForge mailing lists are inactive and not recorded. The introduction page states that IPVS gives Layer 4 load balancing, that health checkers keep load-balanced server pools current, and that VRRP gives high availability; the installation page says the package ships a systemd unit and gives configure, make and make install as the source build. The download page says most Linux distributions ship Keepalived as a mainline package.

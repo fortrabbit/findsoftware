@@ -1,0 +1,129 @@
+id: maxscale
+name: MariaDB MaxScale
+status: discontinued
+checkedAt: 2026-10-29
+description: Database proxy that routes statements from applications to MariaDB and MySQL backend servers, with load balancing and high availability.
+facts:
+  - field: status
+    value: discontinued
+    url: https://github.com/mariadb-corporation/MaxScale/blob/24.02/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "The Open Source version of MaxScale is no longer supported or maintained."
+  - field: name
+    value: MariaDB MaxScale
+    url: https://github.com/mariadb-corporation/MaxScale/blob/24.02/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "The MariaDB MaxScale is an intelligent proxy"
+  - field: repository
+    value: https://github.com/mariadb-corporation/MaxScale
+    url: https://api.github.com/repos/mariadb-corporation/MaxScale
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://mariadb.com/docs/maxscale
+    url: https://github.com/mariadb-corporation/MaxScale/blob/24.02/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Please access the full documentation"
+  - field: maintainer
+    value: MariaDB plc
+    url: https://github.com/mariadb-corporation/MaxScale/blob/24.02/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "MaxScale by MariaDB plc"
+  - field: maintainerType
+    value: company
+    url: https://github.com/mariadb-corporation/MaxScale/blob/24.02/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "MaxScale by MariaDB plc"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/mariadb-corporation
+    checkedAt: 2026-10-29
+    via: api
+  - field: categories
+    value: [db-proxy]
+    url: https://github.com/mariadb-corporation/MaxScale/blob/24.02/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "is an intelligent proxy that allows"
+  - field: language
+    value: cpp
+    url: https://api.github.com/repos/mariadb-corporation/MaxScale
+    checkedAt: 2026-10-29
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://mariadb.com/docs/maxscale/maxscale-management/deployment/installation-and-configuration
+    checkedAt: 2026-10-29
+    via: page
+    quote: "building from source code"
+  - field: latestReleaseDate
+    value: 2024-08-27
+    url: https://api.github.com/repos/mariadb-corporation/MaxScale/git/refs/tags/maxscale-24.08.0
+    checkedAt: 2026-10-29
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://api.github.com/repos/mariadb-corporation/MaxScale/git/refs/tags/maxscale-0.4.2
+    checkedAt: 2026-10-29
+    via: api
+  - field: databases
+    value: [mariadb, mysql]
+    url: https://mariadb.com/docs/maxscale/maxscale-quickstart-guides/maxscale-getting-started-guide
+    checkedAt: 2026-10-29
+    via: page
+    quote: "for your MariaDB and MySQL deployments"
+  - field: runsAs
+    value: [always-on]
+    url: https://mariadb.com/docs/maxscale/maxscale-quickstart-guides/maxscale-getting-started-guide
+    checkedAt: 2026-10-29
+    via: page
+    quote: "start and enable the MaxScale service"
+  - field: installMethod
+    value: [apt and dnf packages]
+    url: https://mariadb.com/docs/maxscale/maxscale-quickstart-guides/maxscale-getting-started-guide
+    checkedAt: 2026-10-29
+    via: page
+    quote: "sudo apt install -y maxscale"
+  - field: installMethod
+    value: [binary tarball]
+    url: https://mariadb.com/docs/maxscale/maxscale-management/deployment/installation-and-configuration
+    checkedAt: 2026-10-29
+    via: page
+    quote: "installing via tarballs"
+  - field: installMethod
+    value: [build from source]
+    url: https://mariadb.com/docs/maxscale/maxscale-management/deployment/installation-and-configuration
+    checkedAt: 2026-10-29
+    via: page
+    quote: "building from source code"
+  - field: forum
+    value: https://groups.google.com/forum/#!forum/maxscale
+    url: https://github.com/mariadb-corporation/MaxScale/blob/24.02/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "A Google Group exists for MaxScale"
+  - field: githubStargazers
+    value: 1497
+    url: https://api.github.com/repos/mariadb-corporation/MaxScale
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 39
+    url: https://api.github.com/repos/mariadb-corporation/MaxScale/contributors?per_page=1&anon=false
+    checkedAt: 2026-10-29
+    via: api
+  - field: license
+    value: BUSL-1.1
+    url: https://github.com/mariadb-corporation/MaxScale/blob/maxscale-24.08.0/licenses/LICENSE2408.TXT
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Business Source License 1.1"
+notFound: [homepage, hqCountry, parent, paidEdition, pricingPage, hostedOffering, adminUi, headlessApi, renderingModes, sso, i18n, multisite, userRoles, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, pluginDirectory, pluginCount, wikidata, runtimeMin, templating, contentStore, dockerPulls, currentMajor]
+unreadable: ["https://github.com/mariadb-corporation/MaxScale/wiki (not read)"]
+notes: >
+  Status is discontinued from the repository's own README on the 24.02 branch, the default branch: "NOTE The Open Source version of MaxScale is no longer supported or maintained. A fully supported version can be obtained" from MariaDB plc's contact page. The same README says the open source release line is "licensed under the Business Source License" "up until version 24.02", with change dates from 21.06 (2024-06-03) to 24.02 (2027-04-10). GitHub reports NOASSERTION. The newest tag is maxscale-24.08.0 (annotated tag tagger date 2024-08-27); the repository has no GitHub release objects. The license file for the newest tag, licenses/LICENSE2408.TXT at maxscale-24.08.0, is Business Source License 1.1 with MariaDB plc as licensor, an additional use grant for fewer than three production server instances and a change date of 2027-09-09 to GPL version 2 or later; the README on the default branch says the BSL applies up until version 24.02. The versions use a year.month scheme (24.08), so currentMajor is not recorded. The CSV row names a 2025-12-31 release and the tag maxscale-22.08.18; neither appears in the tag list fetched (232 tags, the newest by version maxscale-24.08.0), so the CSV date is not used. The homepage is not recorded: the mariadb.com MaxScale product page is the enterprise sales page, and the open source repository names the documentation at mariadb.com/docs/maxscale. The Docker Hub repository mariadb/maxscale has 9,264,649 pulls, but the docs' Docker guide names an image in the private MariaDB Enterprise Registry that needs a subscription token, so dockerPulls is not recorded. The docs say MaxScale "follows the MariaDB Enterprise release schedule". The README describes load balancing and high availability "transparently to the applications", with plugin components for protocols and routing decisions, and a fully supported version is named as available from MariaDB plc through its contact page. The firstRelease value is the year of the oldest tag in the repository, maxscale-0.4.2 (annotated tag dated 2016-09-22); the repository was created 2013-12-16, and the older history is not in the tag list, so a reviewer should confirm the year. Fields coined here: none.

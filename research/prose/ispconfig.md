@@ -1,0 +1,3 @@
+ISPConfig is a PHP control panel for managing websites, databases and cron jobs on Linux servers from a web browser. It has separate administrator, reseller and client logins, and its homepage states that the panel is translated into more than 20 languages.
+
+The project offers an official autoinstaller for a "Perfect Server" setup with ISPConfig, and a tar.gz download from the project's site for installing the panel itself. The panel supports Apache2 and nginx for web serving and MariaDB or MySQL for databases. A separate migration tool imports data from ISPConfig 2, Plesk, cPanel and Confixx.

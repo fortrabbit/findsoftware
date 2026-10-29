@@ -1,0 +1,136 @@
+id: kvrocks
+name: Apache Kvrocks
+status: accepted
+checkedAt: 2026-10-29
+description: Distributed key-value NoSQL database that stores data in RocksDB and accepts Redis clients and Redis cluster SDKs.
+facts:
+  - field: homepage
+    value: https://kvrocks.apache.org/
+    url: https://kvrocks.apache.org/
+    checkedAt: 2026-10-29
+    via: page
+  - field: repository
+    value: https://github.com/apache/kvrocks
+    url: https://github.com/apache/kvrocks
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://kvrocks.apache.org/docs/getting-started/
+    url: https://kvrocks.apache.org/docs/getting-started/
+    checkedAt: 2026-10-29
+    via: page
+  - field: maintainer
+    value: The Apache Software Foundation
+    url: https://github.com/apache/kvrocks/blob/unstable/NOTICE
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Copyright 2022-2026 The Apache Software Foundation"
+  - field: maintainerType
+    value: foundation
+    url: https://kvrocks.apache.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Copyright © 2026 The Apache Software Foundation"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/apache
+    checkedAt: 2026-10-29
+    via: api
+  - field: firstRelease
+    value: 2019
+    url: https://github.com/apache/kvrocks/releases/tag/v1.0.1
+    checkedAt: 2026-10-29
+    via: api
+  - field: categories
+    value: [key-value, database]
+    url: https://kvrocks.apache.org/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "A distributed key value NoSQL database that uses RocksDB as storage engine and is compatible with Redis protocol."
+  - field: language
+    value: C++
+    url: https://github.com/apache/kvrocks
+    checkedAt: 2026-10-29
+    via: api
+  - field: runtime
+    value: c++ binary
+    url: https://kvrocks.apache.org/docs/getting-started/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "The binary file kvrocks will be generated at build dir if everything goes well."
+  - field: currentMajor
+    value: 2
+    url: https://github.com/apache/kvrocks/releases
+    checkedAt: 2026-10-29
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-19
+    url: https://github.com/apache/kvrocks/releases/tag/v2.17.0
+    checkedAt: 2026-10-29
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/apache/kvrocks
+    checkedAt: 2026-10-29
+    via: api
+  - field: license
+    value: Apache License Version 2.0
+    url: https://github.com/apache/kvrocks/blob/unstable/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Apache Kvrocks is licensed under the Apache License Version 2.0"
+  - field: installMethod
+    value: [docker-image, source-build]
+    url: https://kvrocks.apache.org/docs/getting-started/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "You can either get started with Apache Kvrocks™ with Docker or compile a binary from source."
+  - field: runsAs
+    value: [always-on]
+    url: https://kvrocks.apache.org/docs/getting-started/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Run the Kvrocks server by:"
+  - field: dockerPulls
+    value: "4361195 (2026-10-29)"
+    url: https://hub.docker.com/r/apache/kvrocks
+    checkedAt: 2026-10-29
+    via: api
+  - field: githubStargazers
+    value: 4480
+    url: https://github.com/apache/kvrocks
+    checkedAt: 2026-10-29
+    via: api
+  - field: contributors
+    value: 189
+    url: https://github.com/apache/kvrocks/graphs/contributors
+    checkedAt: 2026-10-29
+    via: api
+  - field: installMethod
+    value: [source-tarball]
+    url: https://kvrocks.apache.org/download/
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Apache Kvrocks™ is released as a source artifact."
+  - field: importsFrom
+    value: [Redis]
+    url: https://github.com/apache/kvrocks/blob/unstable/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "To migrate from Redis to Kvrocks, use"
+  - field: alternativeTo
+    value: [redis]
+    url: https://github.com/apache/kvrocks/blob/unstable/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Kvrocks intends to decrease the cost of memory and increase the capacity while compared to Redis."
+  - field: x
+    value: https://twitter.com/apache_kvrocks
+    url: https://github.com/apache/kvrocks/blob/unstable/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "X (Twitter)"
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, renderingModes, headlessApi, templating, i18n, multisite, userRoles, sso, livePreview, contentStore, databases, adminUi, runtimeMin, endoflifeId, pricingPage, paidEdition, hostedOffering, discord, bluesky, mastodon, newsletter, forum, subreddit, youtube, pluginDirectory, pluginCount, npmName, packagistName, pypiDownloads, npmWeeklyDownloads, packagistDownloads, usageShare, reportedInstalls, wikidata]
+unreadable: []
+notes: >
+  The maintainer is The Apache Software Foundation, as the NOTICE states. The ASF page read at apache.org/foundation calls the foundation a U.S. 501(c)(3) nonprofit; a foundation incorporation is no project HQ, so hqCountry is not recorded and the reviewer decides. The storage engine is RocksDB, which has no record of its own, so it is not basedOn. The README says Kvrocks is compatible with Redis clients and Redis cluster SDKs, and its introduction says it aims to lower memory cost compared with Redis; the README sentence comparing it to Redis and its migration tools (RedisShake, kvrocks2redis) are recorded as alternativeTo and importsFrom. The Docker image is in the apache namespace on Docker Hub (not the official library), and its pull count is the figure the getting-started page names. The homepage links GitHub and a Zulip chat (kvrocks.zulipchat.com); no Zulip field exists, so none was coined. Companion repositories named on the docs (kvrocks-controller, kvrocks-exporter, kvrocks-search, kvrocks2redis) are separate projects and are not recorded here. The first release is v1.0.1 of 2019-08-23 (the repository was created 2019-08-15); the current stable line is 2.17.0 (2026-09-19), so currentMajor is 2. The README lists supported platforms as Linux and macOS on x86_64, ARM and RISC-V. The download page says the project releases source artifacts only. The README social section also links Medium, which has no field. Fields coined here: none.

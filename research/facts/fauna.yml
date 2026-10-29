@@ -1,0 +1,43 @@
+id: fauna
+name: Fauna
+status: stub
+checkedAt: 2026-10-29
+description: Transactional database delivered as a web-native API, queried with FQL through an official JavaScript driver.
+facts:
+  - field: name
+    value: Fauna
+    url: https://github.com/fauna/fauna-js/blob/main/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "Official JavaScript Driver for Fauna v10 (current)"
+  - field: repository
+    value: https://github.com/fauna/fauna-js
+    url: https://api.github.com/repos/fauna/fauna-js
+    checkedAt: 2026-10-29
+    via: api
+  - field: docs
+    value: https://docs.fauna.com/fauna/current/
+    url: https://github.com/fauna/fauna-js/blob/main/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "See the Fauna Documentation"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/fauna/fauna-js
+    checkedAt: 2026-10-29
+    via: api
+  - field: categories
+    value: [database]
+    url: https://github.com/fauna/fauna-js/blob/main/README.md
+    checkedAt: 2026-10-29
+    via: page
+    quote: "to configure and query your databases"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/fauna/fauna-js
+    checkedAt: 2026-10-29
+    via: api
+notFound: [homepage, maintainer, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, firstRelease, currentMajor, latestReleaseDate, runtime, runtimeMin, installMethod, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, license, licenseModel, paidEdition, pricingPage, freeTier, hostedOffering, regions, apiLimits, selfHostOption, githubStargazers, contributors, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, packagistName, npmWeeklyDownloads, endoflifeId]
+unreadable: [https://fauna.com/, https://www.fauna.com/, https://docs.fauna.com/fauna/current/, https://docs.fauna.com/]
+notes: >
+  The description follows the GitHub organization bio (api.github.com/users/fauna). Doubt: fauna.com did not answer on 2026-10-29 (TCP connect to the AWS address timed out on every attempt over HTTP and HTTPS, and docs.fauna.com did not answer either), so it is unknown whether the hosted database is still offered; a readable homepage or docs page, or a published end notice, would settle it, and a readable homepage that describes the hosted service would make this a hosted-service record. The only readable source is the driver repository (fauna/fauna-js, last pushed 2025-02-10, no archive flag, no deprecation statement): AGENTS.md says hosted-service records take nothing from SDK or client repositories, so its license (MPL-2.0 in package.json and the README), stars (57) and npm install instructions (npm install fauna) are kept here as notes, not as facts. The README states the driver works only with FQL v10 and points queries at https://db.fauna.com/ through FAUNA_ENDPOINT, which indicates a hosted service without a self-host option, but no page read states it. Sibling driver repositories (fauna/faunadb-js, deprecated for Fauna v4; fauna/fauna-python, fauna/fauna-go, fauna/fauna-jvm for v10) are clients and are not candidates here. Fields coined: none.
