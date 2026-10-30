@@ -1,0 +1,5 @@
+Pangolin publishes web applications and private networks through a reverse proxy and WireGuard tunnels, and applies identity-based access rules to them. The control plane is the Pangolin server application. It keeps its state in a SQLite or PostgreSQL database and pushes configuration to nodes, site connectors and clients over WebSocket. Users can sign in through an external OIDC identity provider. The [quick install guide](https://docs.pangolin.net/self-host/quick-install) runs a self-hosted server through an installer that starts its containers with Docker. A node runs several cooperating processes, among them Traefik and Gerbil, as the [system architecture](https://docs.pangolin.net/development/system-architecture) page describes. Pangolin Cloud, a managed service, runs the same codebase as the self-hosted server.
+
+## Worth knowing
+
+The repository is not uniformly AGPL-3: files that carry the Fossorial Commercial License header follow that license instead. The Enterprise Edition features need a license key on a separate Docker image, as the [Enterprise Edition page](https://docs.pangolin.net/self-host/enterprise-edition) states.

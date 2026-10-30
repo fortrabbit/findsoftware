@@ -1,0 +1,96 @@
+id: mssql
+name: Microsoft SQL Server
+status: accepted
+checkedAt: 2026-10-30
+description: "Proprietary relational database management system from Microsoft, with Express, Standard and Enterprise editions."
+facts:
+  - field: name
+    value: Microsoft SQL Server
+    url: https://learn.microsoft.com/en-us/sql/sql-server/what-is-sql-server
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Microsoft SQL Server is a relational database management system (RDBMS)."
+  - field: homepage
+    value: https://www.microsoft.com/en-us/sql-server
+    url: https://www.microsoft.com/en-us/sql-server
+    checkedAt: 2026-10-30
+    via: page
+  - field: docs
+    value: https://learn.microsoft.com/en-us/sql/sql-server/what-is-sql-server
+    url: https://learn.microsoft.com/en-us/sql/sql-server/what-is-sql-server
+    checkedAt: 2026-10-30
+    via: page
+  - field: maintainer
+    value: Microsoft Corporation
+    url: https://www.microsoft.com/en-us/legal/terms-of-use
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Manufacturer is Microsoft Corporation, One Microsoft Way, Redmond, WA 98052-6399."
+  - field: maintainerType
+    value: company
+    url: https://www.microsoft.com/en-us/legal/terms-of-use
+    checkedAt: 2026-10-30
+    via: page
+  - field: hqCountry
+    value: US
+    url: https://www.microsoft.com/en-us/legal/terms-of-use
+    checkedAt: 2026-10-30
+    via: page
+    quote: "One Microsoft Way, Redmond, WA 98052-6399"
+  - field: categories
+    value: [database]
+    url: https://learn.microsoft.com/en-us/sql/sql-server/what-is-sql-server
+    checkedAt: 2026-10-30
+    via: page
+  - field: license
+    value: Microsoft SQL Server License Terms
+    url: https://learn.microsoft.com/en-us/sql/sql-server/what-is-sql-server
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Microsoft SQL Server License Terms and Information"
+  - field: currentMajor
+    value: 17
+    url: https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2025
+    checkedAt: 2026-10-30
+    via: page
+    quote: "SQL Server 2025 (17.x)"
+  - field: latestReleaseDate
+    value: 2026-10-22
+    url: https://support.microsoft.com/en-us/servicing/sql/sql-server-2025/kb5005684-build-versions
+    checkedAt: 2026-10-30
+    via: page
+    quote: "CU10 (Latest) 17.0.5035.5 2025.170.5035.5 17.0.25.223 2025.170.25.223 KB5125471 October 22, 2026"
+  - field: installMethod
+    value: [windows-setup]
+    url: https://learn.microsoft.com/en-us/sql/sql-server/what-is-sql-server
+    checkedAt: 2026-10-30
+    via: page
+    quote: "You can install SQL Server on Windows or Linux"
+  - field: installMethod
+    value: [linux-packages]
+    url: https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-setup
+    checkedAt: 2026-10-30
+    via: page
+    quote: "sudo apt-get install mssql-server"
+  - field: installMethod
+    value: [linux-container]
+    url: https://learn.microsoft.com/en-us/sql/sql-server/what-is-sql-server
+    checkedAt: 2026-10-30
+    via: page
+    quote: "deploy it in a Linux container"
+  - field: runsAs
+    value: [always-on]
+    url: https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-setup
+    checkedAt: 2026-10-30
+    via: page
+    quote: "sudo systemctl start mssql-server"
+  - field: hostedOffering
+    value: [Azure SQL Database, Azure SQL Managed Instance]
+    url: https://learn.microsoft.com/en-us/sql/sql-server/what-is-sql-server
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Database Engine is also used by the following products and services"
+notFound: [paidEdition, firstRelease, runtimeMin, runtime, repository, language, pricingPage, adminUi, headlessApi, i18n, multisite, userRoles, sso, templating, renderingModes, apiLimits, regions, selfHostOption, parent, basedOn, forkOf, successorOf, githubStargazers, contributors, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, packagistName, npmName, pypiDownloads, npmWeeklyDownloads, dockerPulls, httpArchiveSites, wikidata]
+unreadable: []
+notes: >
+  No public repository: the pages read name no source repository for the product, so sourcePublic and repository are left out and criterion 2 rests on the documented self-install (Windows setup, Linux packages, container). The license entry is the wording the learn page gives; the Microsoft licensing docs page names "Product Terms" for current use terms, and the license model is left to the import. Versions: the editions page names SQL Server 2025 as product version 17.x, recorded as currentMajor 17; the year name is not a major. The build list gives CU10 as the latest update with the release date October 22, 2026, replacing the month-only date in the candidates CSV. The learn quickstart shows a 2017 container tag, which is stale, so no container tag is recorded. The Docker Hub count does not apply: the image is published on mcr.microsoft.com. paidEdition is not recorded: the editions page lists Standard and Enterprise (licensed per core or per server with CAL) and calls Express the free edition, but does not call Standard or Enterprise paid, so no paid quote exists on it. hostedOffering lists the two Azure services the what-is page names as using the Database Engine. firstRelease is not on any page read. Fields coined: none. Applications connect with Transact-SQL, and the editions page calls Express the entry-level, free database.

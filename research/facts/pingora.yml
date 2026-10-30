@@ -1,0 +1,136 @@
+id: pingora
+name: Pingora
+status: accepted
+checkedAt: 2026-10-30
+description: Rust framework for building fast, programmable network services, including HTTP proxies and load balancers.
+facts:
+  - field: repository
+    value: https://github.com/cloudflare/pingora
+    url: https://github.com/cloudflare/pingora
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://github.com/cloudflare/pingora/blob/main/docs/user_guide/index.md
+    url: https://github.com/cloudflare/pingora/blob/main/docs/user_guide/index.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "In this guide, we will cover the most used features, operations and settings of Pingora."
+  - field: maintainer
+    value: Cloudflare, Inc.
+    url: https://www.cloudflare.com/website-terms/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The Websites and Online Services are operated by Cloudflare, Inc."
+  - field: maintainerType
+    value: company
+    url: https://www.cloudflare.com/website-terms/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The Websites and Online Services are operated by Cloudflare, Inc."
+  - field: hqCountry
+    value: US
+    url: https://www.cloudflare.com/website-terms/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Cloudflare, Inc. 101 Townsend St, San Francisco, CA 94107 USA"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/cloudflare
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [framework]
+    url: https://github.com/cloudflare/pingora/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Pingora is a Rust framework to"
+  - field: categories
+    value: [reverse-proxy]
+    url: https://github.com/cloudflare/pingora/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "the logic and APIs to build HTTP proxies"
+  - field: language
+    value: Rust
+    url: https://github.com/cloudflare/pingora
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://github.com/cloudflare/pingora/blob/main/docs/user_guide/systemd.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "simply install a version of the binary and then call"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/cloudflare/pingora/blob/main/docs/user_guide/daemon.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "When a Pingora server is configured to run as a daemon"
+  - field: installMethod
+    value: cargo (crates.io)
+    url: https://github.com/cloudflare/pingora/blob/main/docs/quick_start.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "add the following to your dependencies"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/cloudflare/pingora/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This project is Licensed under Apache License, Version 2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/cloudflare/pingora/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This project is Licensed under Apache License, Version 2.0"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/cloudflare/pingora/releases/tag/0.9.0
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-09
+    url: https://github.com/cloudflare/pingora/releases/tag/0.9.0
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2024
+    url: https://crates.io/api/v1/crates/pingora/versions
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 27743
+    url: https://github.com/cloudflare/pingora
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 108
+    url: https://github.com/cloudflare/pingora
+    checkedAt: 2026-10-30
+    via: api
+  - field: crateName
+    value: pingora
+    url: https://crates.io/api/v1/crates/pingora
+    checkedAt: 2026-10-30
+    via: api
+  - field: crateDownloads
+    value: 9846344 (total)
+    url: https://crates.io/api/v1/crates/pingora
+    checkedAt: 2026-10-30
+    via: api
+  - field: dependentPackages
+    value: 1
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/pingora
+    checkedAt: 2026-10-30
+    via: api
+  - field: dependentRepos
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/pingora
+    checkedAt: 2026-10-30
+    via: api
+notFound: [homepage, pricingPage, forum, discord, pluginDirectory, sso, i18n, renderingModes, contentStore, databases, endoflifeId]
+unreadable: []
+notes: >
+  The repository has no project website: the GitHub homepage field is empty and the README links only a Cloudflare blog post, which is not the project's site, so no homepage is recorded. The maintainer is Cloudflare, Inc. from the terms page, the company that operates the Cloudflare websites; neither the LICENSE nor the README names a copyright holder, so the GitHub organization cloudflare is the repository owner. The repository is a Rust workspace of crates; the crate named in the install guide is pingora, and the README lists the others. The runtime is a compiled Rust program built with cargo; the systemd guide installs the program as a binary and the daemonization guide describes running the server as a daemon. The README states an MSRV of Rust 1.85 and build requirements of Clang and Perl 5; no field holds them, and runtimeMin is not recorded for a binary. Pingora is a library that an application embeds, so the runsAs value describes the server process the quick start builds, not a deployed site. The README marks caching APIs as experimental and volatile. firstRelease is the oldest crates.io upload of 0.1.0 (2024-02-28), which is older than the GitHub tag 0.1.0 (2024-04-05); the crate's 0.0.0 upload of 2022-12-07 is a placeholder, not a release. The CSV's adoption note reads "gh 27.6k stars"; the figure here is read 2026-10-30. Adoption figures are recorded with their periods; the crate's recent downloads (90 days) are not recorded.

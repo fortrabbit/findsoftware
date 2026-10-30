@@ -1,0 +1,110 @@
+id: modsecurity
+name: ModSecurity
+status: accepted
+checkedAt: 2026-10-30
+description: Open-source web application firewall engine, with a C++ library that web server connectors call for each request.
+facts:
+  - field: homepage
+    value: https://modsecurity.org/
+    url: https://modsecurity.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "A trusted, community-driven open-source WAF engine protecting real-world web applications."
+  - field: repository
+    value: https://github.com/owasp-modsecurity/ModSecurity
+    url: https://github.com/owasp-modsecurity/ModSecurity
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://modsecurity.org/docs/
+    url: https://modsecurity.org/docs/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Two engine generations are maintained"
+  - field: maintainer
+    value: OWASP Foundation
+    url: https://modsecurity.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "OWASP® Foundation, the leading open community dedicated to application security"
+  - field: categories
+    value: [web-server]
+    url: https://modsecurity.org/docs/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "ModSecurity is an open source, cross-platform web application firewall (WAF) engine"
+  - field: language
+    value: C++
+    url: https://github.com/owasp-modsecurity/ModSecurity
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: [c++ binary]
+    url: https://github.com/owasp-modsecurity/ModSecurity/blob/v3/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This library is written in C++ using the C++17 standard."
+  - field: installMethod
+    value: autotools source build of libmodsecurity
+    url: https://github.com/owasp-modsecurity/ModSecurity/blob/v3/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "On Unix-like systems, the project uses autotools for the compilation process."
+  - field: installMethod
+    value: Windows build
+    url: https://github.com/owasp-modsecurity/ModSecurity/blob/v3/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Windows build information can be found"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/owasp-modsecurity/ModSecurity/blob/v3/master/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: licenseModel
+    value: open-source
+    url: https://modsecurity.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "ModSecurity is an open-source, cross-platform web application firewall (WAF) module"
+  - field: currentMajor
+    value: 3
+    url: https://github.com/owasp-modsecurity/ModSecurity/releases/tag/v3.0.17
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-29
+    url: https://github.com/owasp-modsecurity/ModSecurity/releases/tag/v3.0.17
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2002
+    url: https://modsecurity.org/history/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "ModSecurity began as Ivan Ristić's personal quest in 2002"
+  - field: githubStargazers
+    value: 9844
+    url: https://github.com/owasp-modsecurity/ModSecurity
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 98
+    url: https://api.github.com/repos/owasp-modsecurity/ModSecurity/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/orgs/owasp-modsecurity
+    checkedAt: 2026-10-30
+    via: api
+  - field: x
+    value: https://x.com/ModSecurity
+    url: https://modsecurity.org/
+    checkedAt: 2026-10-30
+    via: page
+notFound: [hqCountry, runtimeMin, runsAs, reportedInstalls, paidEdition, pricingPage, parent, basedOn, successorOf, forkOf, endoflifeId, dockerPulls, npmName, packagistName, pypiName, crateName, forum, discord, bluesky, mastodon, subreddit, newsletter, usageShare, pluginDirectory, adminUi, headlessApi, databases, i18n, multisite, userRoles, sso, renderingModes, wikidata]
+unreadable: []
+notes: >
+  Accepted row. Criterion 1: the docs say the engine protects web applications from attacks, so it is a web application firewall in scope, recorded as web-server. currentMajor 3 is the highest stable release on GitHub (v3.0.17, 2026-09-29); the v2 line is also maintained (v2.9.15, released the same day), and the docs name both generations. The homepage release box (3.0.16) and the docs' v3 line (3.0.17) disagree; GitHub is used, and the docs page is the only project source quoting the v3 number. Connectors are separate repositories: the NGINX connector is ModSecurity-nginx and the Apache connector is ModSecurity-apache, named in the README and the docs. runtime c++ binary follows the library's own language; no page states the process it runs in, so runsAs is not recorded. The FAQ calls it a module that runs inside the web server, which is the connectors' runtime, not a separate process. firstRelease 2002 is the start year the history page gives for the project (a personal project that became the Apache module); the GitHub repository dates from 2011, so a reviewer may prefer a release year. The docs say "Securing tens of millions of domains", undated and with no figure, so reportedInstalls is not recorded. Sponsorship by Trustwave ended in 2024 per the README's sponsor note, and Trustwave's commercial ModSecurity offerings were retired in 2021 per the history page; neither is an end statement, the FAQ says the project is not end of life. maintainer OWASP Foundation follows the homepage's custodianship statement; the OWASP contact page has no postal address, so hqCountry is not recorded. The Slack link (owasp.slack.com) and the LinkedIn link have no field. The GeoIP library note in the README is a dependency statement, not a status. Prose sources: the SecRules language and the library's connector model from the README, the IIS packaging of v2 from the docs page, and the OWASP maintenance and sponsorship statements from the FAQ and history pages. Fields coined: none.

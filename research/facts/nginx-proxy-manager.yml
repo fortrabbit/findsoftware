@@ -1,0 +1,164 @@
+id: nginx-proxy-manager
+name: Nginx Proxy Manager
+status: accepted
+checkedAt: 2026-10-30
+description: Web admin interface for managing Nginx reverse proxy hosts, distributed as a Docker image with free Let's Encrypt certificates.
+facts:
+  - field: name
+    value: Nginx Proxy Manager
+    url: https://nginxproxymanager.com/
+    checkedAt: 2026-10-30
+    via: page
+  - field: homepage
+    value: https://nginxproxymanager.com/
+    url: https://nginxproxymanager.com/
+    checkedAt: 2026-10-30
+    via: page
+  - field: repository
+    value: https://github.com/NginxProxyManager/nginx-proxy-manager
+    url: https://github.com/NginxProxyManager/nginx-proxy-manager
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://nginxproxymanager.com/guide/
+    url: https://nginxproxymanager.com/guide/
+    checkedAt: 2026-10-30
+    via: page
+  - field: maintainer
+    value: Jamie Curnow
+    url: https://github.com/NginxProxyManager/nginx-proxy-manager/blob/v2.16.0/backend/package.json
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Jamie Curnow"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/NginxProxyManager/nginx-proxy-manager/blob/v2.16.0/backend/package.json
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Jamie Curnow"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/NginxProxyManager
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [reverse-proxy]
+    url: https://nginxproxymanager.com/guide/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "accomplish reverse proxying hosts with SSL termination"
+  - field: language
+    value: TypeScript
+    url: https://github.com/NginxProxyManager/nginx-proxy-manager
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: node
+    url: https://nginxproxymanager.com/setup/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This is due to Nodejs dropping support for armhf."
+  - field: installMethod
+    value: docker compose (image jc21/nginx-proxy-manager)
+    url: https://nginxproxymanager.com/setup/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Create a docker-compose.yml file"
+  - field: dockerPulls
+    value: 291407225 (2026-10-30)
+    url: https://hub.docker.com/v2/repositories/jc21/nginx-proxy-manager/
+    checkedAt: 2026-10-30
+    via: api
+  - field: databases
+    value: sqlite
+    url: https://nginxproxymanager.com/setup/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "the SQLite DB file within the container"
+  - field: databases
+    value: [mysql, mariadb]
+    url: https://nginxproxymanager.com/setup/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Using MySQL / MariaDB Database"
+  - field: databases
+    value: postgres
+    url: https://nginxproxymanager.com/setup/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Using Postgres database"
+  - field: adminUi
+    value: yes, web admin interface based on Tabler
+    url: https://nginxproxymanager.com/guide/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Beautiful and Secure Admin Interface based on Tabler"
+  - field: userRoles
+    value: yes, users with view or manage permissions per host
+    url: https://nginxproxymanager.com/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Configure other users to either view or manage their own hosts."
+  - field: currentMajor
+    value: 2
+    url: https://github.com/NginxProxyManager/nginx-proxy-manager/releases/tag/v2.16.0
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-24
+    url: https://github.com/NginxProxyManager/nginx-proxy-manager/releases/tag/v2.16.0
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: https://github.com/NginxProxyManager/nginx-proxy-manager/releases/tag/1.0.1
+    checkedAt: 2026-10-30
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/NginxProxyManager/nginx-proxy-manager
+    checkedAt: 2026-10-30
+    via: api
+  - field: license
+    value: MIT
+    url: https://nginxproxymanager.com/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Released under the MIT License."
+  - field: licenseModel
+    value: open-source
+    url: https://nginxproxymanager.com/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Released under the MIT License."
+  - field: runsAs
+    value: [always-on]
+    url: https://nginxproxymanager.com/guide/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "When your docker container is running, connect to it on port"
+  - field: forum
+    value: https://github.com/NginxProxyManager/nginx-proxy-manager/discussions
+    url: https://nginxproxymanager.com/guide/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Discussions"
+  - field: subreddit
+    value: https://reddit.com/r/nginxproxymanager
+    url: https://nginxproxymanager.com/guide/
+    checkedAt: 2026-10-30
+    via: page
+  - field: githubStargazers
+    value: 34587
+    url: https://github.com/NginxProxyManager/nginx-proxy-manager
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 300
+    url: https://github.com/NginxProxyManager/nginx-proxy-manager/graphs/contributors
+    checkedAt: 2026-10-30
+    via: api
+notFound: [parent, hqCountry, pricingPage, paidEdition, runtimeMin, renderingModes, headlessApi, templating, i18n, multisite, sso, contentStore, pluginDirectory, pluginCount, discord, x, bluesky, mastodon, newsletter, youtube, wikidata, endoflifeId, npmName, packagistName, npmWeeklyDownloads, packagistDownloads, pypiDownloads, usageShare, reportedInstalls, dependentRepos, dependentPackages, lastCommitDate]
+unreadable: []
+notes: >
+  The maintainer is the author in backend/package.json at the v2.16.0 tag ("Jamie Curnow", with an address that is not recorded); the LICENSE file names only "Copyright (c) 2017" and the homepage names "jc21.com" as the copyright holder, so the maintainer's legal name is not confirmed by a legal page. The root package.json and backend/package.json state version 2.0.0 at the v2.16.0 tag, so no version was taken from them. There is no engines field, so no runtimeMin. runsAs always-on rests on the guide's statement that the running container serves the admin interface on port 81 (the compose files also set restart unless-stopped). The guide names the Docker image tag "jc21/nginx-proxy-manager:2.16.0" in its setup examples; the README uses docker.io/jc21/nginx-proxy-manager:latest. The Docker Hub pull count of 291407225 was read on 2026-10-30; the CSV figure (287.2M) is older. The setup page says armv7 is no longer supported from 2.14; that statement is not recorded as a field. The Docker Hub page is not a social field; GitHub Discussions is recorded as forum. Fields coined here: none.

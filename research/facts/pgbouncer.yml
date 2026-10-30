@@ -1,0 +1,127 @@
+id: pgbouncer
+name: PgBouncer
+status: accepted
+checkedAt: 2026-10-30
+description: Lightweight connection pooler for PostgreSQL, written in C.
+facts:
+  - field: homepage
+    value: https://www.pgbouncer.org
+    url: https://www.pgbouncer.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "PgBouncer - lightweight connection pooler for PostgreSQL"
+  - field: repository
+    value: https://github.com/pgbouncer/pgbouncer
+    url: https://api.github.com/repos/pgbouncer/pgbouncer
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://www.pgbouncer.org/config.html
+    url: https://www.pgbouncer.org/config.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "PgBouncer config"
+  - field: maintainer
+    value: Marko Kreen
+    url: https://github.com/pgbouncer/pgbouncer/blob/master/COPYRIGHT
+    checkedAt: 2026-10-30
+    via: api
+    quote: "Copyright (c) 2007-2009 Marko Kreen"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/pgbouncer/pgbouncer/blob/master/COPYRIGHT
+    checkedAt: 2026-10-30
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/pgbouncer/pgbouncer
+    checkedAt: 2026-10-30
+    via: api
+  - field: language
+    value: C
+    url: https://api.github.com/repos/pgbouncer/pgbouncer
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://www.pgbouncer.org/install.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "PgBouncer compilation and installation"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/pgbouncer/pgbouncer/releases/latest
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-14
+    url: https://api.github.com/repos/pgbouncer/pgbouncer/releases/latest
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2007
+    url: https://www.pgbouncer.org/changelog.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "2007-03-13 - PgBouncer 1.0"
+  - field: license
+    value: ISC
+    url: https://github.com/pgbouncer/pgbouncer/blob/master/COPYRIGHT
+    checkedAt: 2026-10-30
+    via: api
+    quote: "ISC License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/pgbouncer/pgbouncer/blob/master/COPYRIGHT
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [db-proxy]
+    url: https://www.pgbouncer.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Lightweight connection pooler for PostgreSQL"
+  - field: databases
+    value: [postgres]
+    url: https://www.pgbouncer.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Lightweight connection pooler for PostgreSQL"
+  - field: runsAs
+    value: [always-on]
+    url: https://www.pgbouncer.org/install.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "To run PgBouncer as a Windows service, you need to configure the"
+  - field: installMethod
+    value: [build-from-source-autoconf]
+    url: https://www.pgbouncer.org/install.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "When dependencies are installed, build with Autoconf:"
+  - field: installMethod
+    value: [build-from-source-meson]
+    url: https://www.pgbouncer.org/install.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "or with Meson (experimental):"
+  - field: installMethod
+    value: [source tarball]
+    url: https://www.pgbouncer.org/downloads/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Source releases"
+  - field: githubStargazers
+    value: 4424
+    url: https://api.github.com/repos/pgbouncer/pgbouncer
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 116
+    url: https://api.github.com/repos/pgbouncer/pgbouncer/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+notFound: [pricingPage, hqCountry, runtimeMin, endoflifeId, paidEdition, hostedOffering, pluginDirectory, forum, discord, x, bluesky, mastodon, newsletter, contentStore, adminUi, headlessApi, multisite, userRoles, importsFrom, dockerPulls, sso]
+unreadable: []
+notes: >
+  The COPYRIGHT file names Marko Kreen and Skype Technologies OÜ for 2007-2009, and the site footer says "PgBouncer Authors"; the maintainer follows the copyright line, and the Skype Technologies OÜ entity is named here only. GitHub reports the license as NOASSERTION; the ISC statement is in the COPYRIGHT file, which is the only license statement found. The changelog's first entry is 1.0 dated 2007-03-13, and the project's 1.5 entry carries the tagline "Bouncing Satisfied Clients Since 2007". The install page names the Windows service and the systemd integration (Type=notify) as ways to run the daemon; only the Windows service statement is quoted. LDAP and PAM authentication of database clients (the install page and the changelog) is not recorded as sso: it validates the users of the pooler, not a sign-in to an admin interface. The downloads page lists source tarballs; the community page links a chat room and a Stack Overflow tag, which have no field. No package registry is named by the install docs, so no download figure is recorded. The Autoconf build is marked as the recommended choice for production builds on the install page.

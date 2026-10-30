@@ -1,0 +1,121 @@
+id: mysql
+name: MySQL
+status: accepted
+checkedAt: 2026-10-30
+description: Open source SQL database server, developed by the MySQL team at Oracle, with a source distribution and pre-built packages.
+facts:
+  - field: name
+    value: MySQL
+    url: https://raw.githubusercontent.com/mysql/mysql-server/trunk/README
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This is a release of MySQL, an SQL database server."
+  - field: homepage
+    value: https://www.mysql.com
+    url: https://api.github.com/repos/mysql/mysql-server
+    checkedAt: 2026-10-30
+    via: api
+  - field: repository
+    value: https://github.com/mysql/mysql-server
+    url: https://api.github.com/repos/mysql/mysql-server
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://dev.mysql.com/doc/
+    url: https://raw.githubusercontent.com/mysql/mysql-server/trunk/README
+    checkedAt: 2026-10-30
+    via: page
+    quote: "For further information on MySQL or additional documentation, visit http://dev.mysql.com/doc/"
+  - field: maintainer
+    value: Oracle and/or its affiliates
+    url: https://raw.githubusercontent.com/mysql/mysql-server/trunk/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (c) 1997, 2026, Oracle and/or its affiliates."
+  - field: maintainerType
+    value: company
+    url: https://raw.githubusercontent.com/mysql/mysql-server/trunk/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (c) 1997, 2026, Oracle and/or its affiliates."
+  - field: parent
+    value: Oracle
+    url: https://raw.githubusercontent.com/mysql/mysql-server/trunk/README
+    checkedAt: 2026-10-30
+    via: page
+    quote: "MySQL is brought to you by the MySQL team at Oracle."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/mysql
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [database]
+    url: https://raw.githubusercontent.com/mysql/mysql-server/trunk/README
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This is a release of MySQL, an SQL database server."
+  - field: language
+    value: cpp
+    url: https://api.github.com/repos/mysql/mysql-server
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://raw.githubusercontent.com/mysql/mysql-server/trunk/INSTALL
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Pre-built binaries in different package formats can be found on"
+  - field: latestReleaseDate
+    value: 2026-10-20
+    url: https://api.github.com/repos/mysql/mysql-server/commits/mysql-26.10.0
+    checkedAt: 2026-10-30
+    via: api
+  - field: endoflifeId
+    value: mysql
+    url: https://endoflife.date/api/mysql.json
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2000
+    url: https://api.github.com/repos/mysql/mysql-server/commits/d4f80989140ab210055629214b107235083e6cc8
+    checkedAt: 2026-10-30
+    via: api
+  - field: license
+    value: GPL-2.0
+    url: https://raw.githubusercontent.com/mysql/mysql-server/trunk/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This software is released under version 2 of the GNU General Public License (GPLv2)"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/mysql/mysql-server/trunk/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This software is released under version 2 of the GNU General Public License (GPLv2)"
+  - field: installMethod
+    value: "build from source"
+    url: https://raw.githubusercontent.com/mysql/mysql-server/trunk/INSTALL
+    checkedAt: 2026-10-30
+    via: page
+    quote: "You can find information about how to install from a source distribution"
+  - field: installMethod
+    value: "pre-built binary packages"
+    url: https://raw.githubusercontent.com/mysql/mysql-server/trunk/INSTALL
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Pre-built binaries in different package formats can be found on"
+  - field: githubStargazers
+    value: 12491
+    url: https://api.github.com/repos/mysql/mysql-server
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 128
+    url: https://api.github.com/repos/mysql/mysql-server/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+notFound: [hqCountry, forkOf, successorOf, basedOn, alternativeTo, runsAs, dockerPulls, paidEdition, pricingPage, databases, adminUi, headlessApi, renderingModes, i18n, multisite, userRoles, sso, templating, contentStore, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, npmName, packagistName, pypiName, npmWeeklyDownloads, packagistDownloads, pypiDownloads, usageShare, reportedInstalls, wikidata, currentMajor, runtimeMin]
+unreadable: ["https://www.mysql.com/ answered 403 to the research client (a bot check); not read, and not retried with another user agent", "https://dev.mysql.com/ answered 403 to the research client (a bot check); the docs, downloads and install pages were not read"]
+notes: >
+  The homepage is taken from the repository's homepage field, which says http://www.mysql.com/; the https address answers, but only with the bot check, so no page of the vendor site is quoted. Calendar version: the current release is 26.10.0 (MYSQL_VERSION sets the maturity to INNOVATION and names 9.7.0 as the previous LTS), so currentMajor is not recorded; the line is 26.10 and the LTS line is 9.7 (endoflife.date lists 9.7 as lts with an end of life of 2034-04-30). The release tags mysql-9.7.x and mysql-26.x both exist; latestReleaseDate is the commit date of tag mysql-26.10.0, the newest. firstRelease is 2000 from the commit date of the oldest release tag in the repository (mysql-3.23.22-beta); the project's own first-release year is not readable. License: the LICENSE file states GPLv2 with additional permissions, including the Universal FOSS Exception for the Connector; the SPDX id GPL-2.0 is recorded and the permissions are not. The MySQL Enterprise Edition and the commercial licence are not on any page read here, so paidEdition is not recorded and a reviewer should check the vendor pages before the record is published. The Docker Hub official image mysql had pull_count 5223059874 on 2026-10-30; it is not recorded as dockerPulls because the install docs that name the image could not be read. runsAs is not recorded: mysqld_safe's man page calls it "the recommended way to start a mysqld server on Unix", which names a server process but no run mode in a quotable sentence. The copyright holder is "Oracle and/or its affiliates" as the LICENSE and README state it; the legal entity and its country are not on any page read, so hqCountry is not recorded. Fields coined here: none.

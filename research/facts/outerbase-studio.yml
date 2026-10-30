@@ -1,0 +1,144 @@
+id: outerbase-studio
+name: Outerbase Studio
+status: accepted
+checkedAt: 2026-10-30
+description: Browser-based graphical client for managing SQLite, LibSQL and other SQL databases.
+facts:
+  - field: name
+    value: Outerbase Studio
+    url: https://github.com/outerbase/studio/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "**Outerbase Studio** is a lightweight, browser-based GUI for managing SQL databases"
+  - field: homepage
+    value: https://studio.outerbase.com
+    url: https://studio.outerbase.com/
+    checkedAt: 2026-10-30
+    via: page
+  - field: repository
+    value: https://github.com/outerbase/studio
+    url: https://api.github.com/repos/outerbase/studio
+    checkedAt: 2026-10-30
+    via: api
+  - field: maintainer
+    value: Outerbase, Inc.
+    url: https://outerbase.com/terms/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Provider: Outerbase, Inc."
+  - field: maintainerType
+    value: company
+    url: https://outerbase.com/terms/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Provider: Outerbase, Inc."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/outerbase
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2024
+    url: https://github.com/outerbase/studio/releases/tag/v0.1.0
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [db-admin]
+    url: https://github.com/outerbase/studio/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "lightweight, browser-based GUI for managing SQL databases"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/outerbase/studio
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://github.com/outerbase/studio/blob/v0.10.2/Dockerfile
+    checkedAt: 2026-10-30
+    via: page
+    quote: "FROM node:20-alpine AS builder"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/outerbase/studio/releases/tag/v0.10.2
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2025-03-31
+    url: https://github.com/outerbase/studio/releases/tag/v0.10.2
+    checkedAt: 2026-10-30
+    via: api
+  - field: license
+    value: AGPL-3.0
+    url: https://api.github.com/repos/outerbase/studio
+    checkedAt: 2026-10-30
+    via: api
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/outerbase/studio/blob/master/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "GNU AFFERO GENERAL PUBLIC LICENSE"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/outerbase/studio/blob/master/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "GNU AFFERO GENERAL PUBLIC LICENSE"
+  - field: adminUi
+    value: yes, browser-based GUI
+    url: https://github.com/outerbase/studio/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "lightweight, browser-based GUI for managing SQL databases"
+  - field: installMethod
+    value: Cloudflare Workers deploy button
+    url: https://github.com/outerbase/studio/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Deploy to Cloudflare"
+  - field: installMethod
+    value: desktop app (Windows, Mac)
+    url: https://github.com/outerbase/studio/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Outerbase Studio Desktop is a lightweight Electron wrapper for the Outerbase Studio web version."
+  - field: githubStargazers
+    value: 5999
+    url: https://api.github.com/repos/outerbase/studio
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 16
+    url: https://api.github.com/repos/outerbase/studio/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+  - field: databases
+    value: [sqlite]
+    url: https://github.com/outerbase/studio/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "SQLite (local files)"
+  - field: databases
+    value: [mysql]
+    url: https://github.com/outerbase/studio/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "MySQL (beta, limited features)"
+  - field: databases
+    value: [postgres]
+    url: https://github.com/outerbase/studio/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "PostgreSQL (beta, limited features)"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/outerbase/studio/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Outerbase Studio Desktop is a lightweight Electron wrapper for the Outerbase Studio web version."
+notFound: [docs, hqCountry, basedOn, runtimeMin, renderingModes, hostedOffering, paidEdition, pricingPage, endoflifeId, forum, discord, subreddit, x, bluesky, mastodon, newsletter, pluginDirectory, sso, multisite, i18n, importsFrom, userRoles, contentStore, headlessApi, templating, npmName, npmWeeklyDownloads]
+unreadable: ["https://docs.outerbase.com/ (404)"]
+notes: >
+  The project's docs link on outerbase.com returns 404, so no docs fact is recorded. The Dockerfile at tag v0.10.2 builds with node:20-alpine and starts node server.js, but no page the project names states a runtime minimum or a run mode, so runtimeMin stays out for a reviewer to decide. The Cloudflare route runs through the repository's deploy script (opennextjs-cloudflare), which no page describes as per-request. The README says MySQL and PostgreSQL support is beta and that the desktop app enables their drivers; Turso/LibSQL, Cloudflare D1, rqlite, StarbaseDB and Val.town are named as SQLite-based databases. The owner is Outerbase, Inc. under Delaware law (terms page); no page names an HQ country. The outerbase.com Pricing page covers the Outerbase platform (Free, Pro, Enterprise), not Studio, so no pricingPage or paidEdition fact is recorded. The studio.outerbase.com homepage states it runs in the browser, and the repository default branch has commits after v0.10.2 (pushed 2026-03-25); the latest release is 2025-03-31. An npm package @outerbase/studio (ISC, 0.2.7) exists but no project page or the README names it, so it is not recorded. Stars read 2026-10-30; the outerbase.com studio page shows an older count. runsAs local is the desktop app, a desktop database client; the web version is a server app and no page states how it is hosted. The studio.outerbase.com homepage is a JavaScript app with no readable text, so it carries no quote.

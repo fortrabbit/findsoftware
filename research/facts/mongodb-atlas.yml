@@ -1,0 +1,70 @@
+id: mongodb-atlas
+name: MongoDB Atlas
+status: hosted-service
+checkedAt: 2026-10-30
+description: "Multi-cloud database service from MongoDB, Inc. that deploys and manages MongoDB databases."
+facts:
+  - field: name
+    value: MongoDB Atlas
+    url: https://www.mongodb.com/docs/atlas/
+    checkedAt: 2026-10-30
+    via: page
+  - field: homepage
+    value: https://www.mongodb.com/products/platform
+    url: https://www.mongodb.com/products/platform
+    checkedAt: 2026-10-30
+    via: page
+  - field: docs
+    value: https://www.mongodb.com/docs/atlas/
+    url: https://www.mongodb.com/docs/atlas/
+    checkedAt: 2026-10-30
+    via: page
+  - field: maintainer
+    value: MongoDB, Inc.
+    url: https://www.mongodb.com/legal/terms-of-use
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Legal Department, MongoDB, Inc., 1633 Broadway, 38th Floor New York, NY 10019."
+  - field: maintainerType
+    value: company
+    url: https://www.mongodb.com/legal/terms-of-use
+    checkedAt: 2026-10-30
+    via: page
+  - field: hqCountry
+    value: US
+    url: https://www.mongodb.com/legal/terms-of-use
+    checkedAt: 2026-10-30
+    via: page
+    quote: "MongoDB controls this site from its New York, NY, USA offices"
+  - field: categories
+    value: [database]
+    url: https://www.mongodb.com/docs/atlas/
+    checkedAt: 2026-10-30
+    via: page
+  - field: userRoles
+    value: yes
+    url: https://www.mongodb.com/docs/atlas/reference/user-roles/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Atlas user roles define the actions Atlas users can perform in organizations, projects, or both."
+  - field: sso
+    value: federated identity provider
+    url: https://www.mongodb.com/docs/atlas/security/federated-authentication/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "You configure MongoDB Atlas to authenticate using data passed from your IdP"
+  - field: importsFrom
+    value: MongoDB source clusters (live migration)
+    url: https://www.mongodb.com/docs/atlas/live-migration/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Atlas can pull a source cluster into an Atlas cluster using the procedure described in this section."
+  - field: pricingPage
+    value: https://www.mongodb.com/pricing
+    url: https://www.mongodb.com/pricing
+    checkedAt: 2026-10-30
+    via: page
+notFound: [firstRelease, runtimeMin, language, adminUi, headlessApi, i18n, multisite, templating, renderingModes, apiLimits, regions, selfHostOption, parent, basedOn, forkOf, successorOf, repository, repoOwnerType, githubStargazers, contributors, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata]
+unreadable: []
+notes: >
+  Homepage: the link https://www.mongodb.com/atlas redirects to https://www.mongodb.com/products/platform, which is used here. Hosting: the cloud-providers reference says "Atlas supports deploying clusters onto the following cloud providers" and names AWS, Google Cloud and Azure; no data-region or EU-hosting statement was read, so regions is left out. Legal entity and country come from the terms of use, which apply to the whole site and are the same entity as the mongodb record. The sso statement comes from the federated-authentication page. Pricing: the pricing page lists tiers (Free, Flex, Dedicated) and its prices are not recorded. The Atlas record takes nothing from the MongoDB Server repository, per the hosted-service rule. The server software that Atlas runs is the separate mongodb record. Fields coined: none.

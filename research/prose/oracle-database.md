@@ -1,0 +1,3 @@
+Oracle AI Database is a relational database from Oracle America, Inc., and the product that Oracle's own pages now call Oracle AI Database 26ai. It is installed on Linux from an RPM or a ZIP package, or as a Docker image from Oracle's container registry. Its free edition is licensed under the Oracle Free Use Terms and Conditions. Programs received under an Oracle license agreement are governed by that agreement instead.
+
+The free edition is limited to two CPUs, two gigabytes of memory and twelve gigabytes of user data, and Oracle does not support it or send it patches. Oracle's licensing guide lists the features that the free edition leaves out.

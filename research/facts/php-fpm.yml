@@ -1,0 +1,116 @@
+id: php-fpm
+name: PHP-FPM
+status: accepted
+checkedAt: 2026-10-30
+description: FastCGI process manager for PHP, built as an optional SAPI in the PHP source tree.
+facts:
+  - field: homepage
+    value: https://www.php.net/
+    url: https://www.php.net/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "general-purpose scripting language that is especially suited to web development"
+  - field: repository
+    value: https://github.com/php/php-src
+    url: https://api.github.com/repos/php/php-src
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://www.php.net/manual/en/install.fpm.php
+    url: https://www.php.net/manual/en/install.fpm.php
+    checkedAt: 2026-10-30
+    via: page
+    quote: "FPM (FastCGI Process Manager) is a primary PHP FastCGI implementation"
+  - field: maintainer
+    value: The PHP Group
+    url: https://raw.githubusercontent.com/php/php-src/php-8.5.12/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (c) 1999 - 2024 The PHP Group"
+  - field: maintainerType
+    value: community
+    url: https://raw.githubusercontent.com/php/php-src/php-8.5.12/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (c) 1999 - 2024 The PHP Group"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/php
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [app-server]
+    url: https://www.php.net/manual/en/install.fpm.php
+    checkedAt: 2026-10-30
+    via: page
+    quote: "FPM (FastCGI Process Manager) is a primary PHP FastCGI implementation"
+  - field: language
+    value: C
+    url: https://api.github.com/repos/php/php-src
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://www.php.net/manual/en/install.fpm.php
+    checkedAt: 2026-10-30
+    via: page
+    quote: "a primary PHP FastCGI implementation"
+  - field: installMethod
+    value: [build PHP from source with --enable-fpm]
+    url: https://www.php.net/manual/en/install.fpm.install.php
+    checkedAt: 2026-10-30
+    via: page
+    quote: "you need to add --enable-fpm"
+  - field: runsAs
+    value: [always-on]
+    url: https://www.php.net/manual/en/install.fpm.configuration.php
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Send FPM to background."
+  - field: firstRelease
+    value: 2010
+    url: https://github.com/php/php-src/blob/php-5.3.3/NEWS
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Added FastCGI Process Manager (FPM) SAPI."
+  - field: license
+    value: PHP-3.01
+    url: https://raw.githubusercontent.com/php/php-src/php-8.5.12/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The PHP License, version 3.01"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/php/php-src/php-8.5.12/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without"
+  - field: currentMajor
+    value: 8
+    url: https://github.com/php/php-src/releases/tag/php-8.5.12
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-21
+    url: https://github.com/php/php-src/releases/tag/php-8.5.12
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 41732
+    url: https://api.github.com/repos/php/php-src
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 229
+    url: https://api.github.com/repos/php/php-src/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+  - field: endoflifeId
+    value: php
+    url: https://endoflife.date/api/php.json
+    checkedAt: 2026-10-30
+    via: api
+notFound: [parent, wikidata, hqCountry, pricingPage, forum, discord, subreddit, newsletter, mastodon, bluesky, x, pluginDirectory, npmName, packagistName, dockerPulls, sso, i18n, templating, contentStore, databases, adminUi, headlessApi, renderingModes, multisite, userRoles, reportedInstalls, usageShare]
+unreadable: []
+notes: >
+  PHP-FPM ships inside the PHP source tree, so its release is the PHP release: the record follows php-src tags and the endoflife.date php cycles. The highest stable tag is php-8.5.12 (2026-10-21), so currentMajor is 8 and the 8.5 line goes to notes. The install route is the manual's installation page (install.fpm.install.php), which names the --enable-fpm configure option. The php.net manual states that php-fpm "must not be reachable from an untrusted network". The LICENSE at the 8.5.12 tag is the PHP License, version 3.01. The php.net license page says the PHP License version 4 (SPDX BSD-3-Clause) applies from PHP 8.6, and GitHub detects BSD-3-Clause for the repository; neither is the license of the latest stable release, so both stay in these notes only. An 8.6 beta tag exists (php-8.6.0beta3, 2026-09-08), but it is older than the latest release, so no latestPrereleaseDate is recorded. The runtime is php because FPM runs PHP code and is built from the PHP source tree. firstRelease is the year of PHP 5.3.3, whose NEWS lists "Added FastCGI Process Manager (FPM) SAPI." The maintainer is named by the copyright line as The PHP Group; no legal form is stated. The CSV row's release date (2026-09-24) is older than the 8.5.12 tag and is replaced here.

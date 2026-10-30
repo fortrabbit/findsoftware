@@ -1,0 +1,123 @@
+id: payara
+name: Payara Server
+status: stub
+checkedAt: 2026-10-30
+description: Open-source Jakarta EE application server, distributed as a ZIP bundle, that runs on a Java virtual machine.
+facts:
+  - field: name
+    value: Payara Server
+    url: https://github.com/payara/Payara/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Payara Server Community is a cloud-native, innovative open-source middleware platform"
+  - field: homepage
+    value: https://www.payara.org/
+    url: https://www.payara.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "A new payara.org is coming."
+  - field: repository
+    value: https://github.com/payara/Payara
+    url: https://api.github.com/repos/payara/Payara
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://docs.azul.com/payara-community/
+    url: https://docs.azul.com/payara-community/general-info/getting-started.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Payara Server can be downloaded from the Azul Payara official website"
+  - field: maintainer
+    value: Payara Foundation
+    url: https://github.com/payara/Payara/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "is a trademark of the Payara Foundation"
+  - field: maintainerType
+    value: foundation
+    url: https://github.com/payara/Payara/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "is a trademark of the Payara Foundation"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/payara
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://github.com/payara/Payara/releases/tag/payara-server-4.1.144
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [app-server]
+    url: https://github.com/payara/Payara/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "supports Jakarta EE (Java EE) applications in any environment"
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/payara/Payara
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://docs.azul.com/payara-community/general-info/supported-platforms.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Azul Payara currently runs the following Java Virtual Machines:"
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.azul.com/payara-community/general-info/getting-started.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Once the server is up and running, type this URL"
+  - field: installMethod
+    value: ZIP bundle
+    url: https://docs.azul.com/payara-community/general-info/getting-started.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Download the ZIP bundle to a directory of your choosing and then unzip."
+  - field: license
+    value: CDDL-1.1
+    url: https://github.com/payara/Payara/blob/main/LICENSE.txt
+    checkedAt: 2026-10-30
+    via: page
+    quote: "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL)Version 1.1"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/payara/Payara/blob/main/LICENSE.txt
+    checkedAt: 2026-10-30
+    via: page
+    quote: "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL)Version 1.1"
+  - field: hostedOffering
+    value: Payara Qube (Managed)
+    url: https://docs.payara.fish/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Fully managed deployment platform for Jakarta EE, Spring Boot, and Quarkus applications."
+  - field: latestReleaseDate
+    value: 2026-10-14
+    url: https://github.com/payara/Payara/releases/tag/payara-server-7.2026.10
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 921
+    url: https://api.github.com/repos/payara/Payara
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 111
+    url: https://api.github.com/repos/payara/Payara/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+  - field: adminUi
+    value: yes, browser-based Administration Console
+    url: https://docs.azul.com/payara-community/general-info/getting-started.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "type this URL http://localhost:4848 in your browser to access the Administration Console"
+notFound: [currentMajor, runtimeMin, hqCountry, basedOn, paidEdition, pricingPage, renderingModes, endoflifeId, forum, discord, subreddit, x, bluesky, mastodon, newsletter, pluginDirectory, sso, multisite, i18n, importsFrom, templating, contentStore, databases, headlessApi, userRoles, npmName, mavenCoordinates, reportedInstalls]
+unreadable: ["https://www.payara.fish/ (301 to azul.com/products/payara-server)", "https://docs.payara.fish/community/docs/latest/documentation/ (404)", "https://www.payara.fish/terms/ (503)", "https://www.payara.fish/enterprise/ (redirect, Azul page)"]
+notes: >
+  Doubt: www.payara.fish now answers with a 301 to azul.com's Payara Server product page (migration dated July 2026 in the redirect), the community download and documentation are branded "Azul Payara Community" at docs.azul.com, and payara.org says "A new payara.org is coming" with "© 2026 Payara Foundation"; a statement from the Payara Foundation on who maintains the community edition and which address is its homepage would settle the homepage and maintainer fields, and until then status is stub. The GitHub repository is still the payara org and its latest stable release is payara-server-7.2026.10 (2026-10-14); the version scheme is 7.YEAR.n, so currentMajor is left out for a reviewer (the line is 7). The GitHub license is NOASSERTION; LICENSE.txt is CDDL 1.1 without a copyright line, and no page names a second license. Mapping the Payara Enterprise edition: the README names it and the docs index says production users "should use the Payara Enterprise Edition", but no fetched page states a price or paid license, so paidEdition stays out. Java runtime minimum is not stated on the pages read; the release notes say "stable, fully supported production" Enterprise runtimes for Azul Payara Server, which is recorded only as text. The README also covers Payara Micro Community in the same repository, which is not a separate record. The Azul pages describe Azul Payara Server as a product and Azul as the vendor (about page); whether that makes Azul the maintainer is the open question above. The supported platforms page lists Java 21 and 25 builds in its table without a sentence stating a minimum, so runtimeMin stays out. The README names a Payara Forum as plain text without a link.

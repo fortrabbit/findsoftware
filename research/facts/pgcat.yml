@@ -1,0 +1,125 @@
+id: pgcat
+name: PgCat
+status: accepted
+checkedAt: 2026-10-30
+description: PostgreSQL pooler and proxy with sharding, load balancing, failover and mirroring support, written in Rust.
+facts:
+  - field: repository
+    value: https://github.com/postgresml/pgcat
+    url: https://api.github.com/repos/postgresml/pgcat
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://github.com/postgresml/pgcat/blob/main/CONFIG.md
+    url: https://github.com/postgresml/pgcat/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: api
+    quote: "See **[Configuration](https://github.com/levkk/pgcat/blob/main/CONFIG.md)**."
+  - field: maintainer
+    value: PgCat Contributors
+    url: https://github.com/postgresml/pgcat/blob/main/LICENSE
+    checkedAt: 2026-10-30
+    via: api
+    quote: "Copyright (c) 2023 PgCat Contributors"
+  - field: maintainerType
+    value: community
+    url: https://github.com/postgresml/pgcat/blob/main/LICENSE
+    checkedAt: 2026-10-30
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/postgresml/pgcat
+    checkedAt: 2026-10-30
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/postgresml/pgcat
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://github.com/postgresml/pgcat/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: api
+    quote: "cargo build --release"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/postgresml/pgcat/releases/tags/v1.2.0
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2024-08-30
+    url: https://api.github.com/repos/postgresml/pgcat/releases/tags/v1.2.0
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2022
+    url: https://api.github.com/repos/postgresml/pgcat/releases/tags/v0.1.0-alpha
+    checkedAt: 2026-10-30
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/postgresml/pgcat/blob/main/LICENSE
+    checkedAt: 2026-10-30
+    via: api
+    quote: "Permission is hereby granted, free of charge, to any person obtaining"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/postgresml/pgcat/blob/main/LICENSE
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [db-proxy]
+    url: https://github.com/postgresml/pgcat/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: api
+    quote: "PostgreSQL pooler and proxy (like PgBouncer)"
+  - field: databases
+    value: [postgres]
+    url: https://github.com/postgresml/pgcat/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: api
+    quote: "PostgreSQL pooler and proxy"
+  - field: alternativeTo
+    value: pgbouncer
+    url: https://github.com/postgresml/pgcat/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: api
+    quote: "PostgreSQL pooler and proxy (like PgBouncer)"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/postgresml/pgcat/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: api
+    quote: "The pooler is configured to spawn 4 workers"
+  - field: installMethod
+    value: [docker image]
+    url: https://github.com/postgresml/pgcat/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: api
+    quote: "A Docker image is available from"
+  - field: installMethod
+    value: [build-from-source-cargo]
+    url: https://github.com/postgresml/pgcat/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: api
+    quote: "cargo build --release"
+  - field: discord
+    value: https://discord.gg/DmyJP3qJ7U
+    url: https://raw.githubusercontent.com/postgresml/pgcat/main/README.md
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 4025
+    url: https://api.github.com/repos/postgresml/pgcat
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 55
+    url: https://api.github.com/repos/postgresml/pgcat/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+notFound: [homepage, pricingPage, hqCountry, runtimeMin, endoflifeId, paidEdition, hostedOffering, pluginDirectory, forum, x, bluesky, mastodon, newsletter, contentStore, adminUi, headlessApi, multisite, userRoles, importsFrom, parent, dockerPulls]
+unreadable: []
+notes: >
+  The repository is the only project site found: the README names no website, and the repository has no homepage field, so no homepage is recorded. The releases named pgcat-0.2.x (latest pgcat-0.2.5, 2024-11-11) are Helm chart releases ("A Helm chart for PgCat" in the release body), not software releases; currentMajor and latestReleaseDate come from v1.2.0 (2024-08-30), the newest software release. The default branch's Cargo.toml says version 1.3.0 with no tag. The first release is the alpha v0.1.0-alpha (2022-02-22, marked prerelease); the first stable release v1.0.0 is dated 2023-03-25. The README's configuration link points to levkk/pgcat, the earlier owner of the same repository. The README's "Join our Discord!" is the alt text of a badge. The LICENSE copyright line names "PgCat Contributors", and the README names no company; the PostgresML name appears only as the repository owner and in a case study link. The repository owner is an organization, and a Helm chart named in the releases is not an install route the README names, so it is left out of installMethod.

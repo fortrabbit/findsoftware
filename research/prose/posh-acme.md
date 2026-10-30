@@ -1,0 +1,5 @@
+Posh-ACME is a PowerShell module and ACME client that creates SSL/TLS certificates from an ACME certificate authority such as Let's Encrypt. It validates domains through DNS and HTTP challenge plugins, and it can import the finished certificate into the Windows certificate store. It is installed from the PowerShell Gallery with Install-Module, and it runs on Windows PowerShell with a .NET Framework release and on PowerShell Core across all supported platforms. Renewals are run by a job on the host, such as Windows Task Scheduler or cron. The module is by Ryan Bolger and is published on GitHub.
+
+## Worth knowing
+
+The module only obtains certificates and does not deploy them to a web server or service. The certificate import into the Windows store works only on Windows. The [documentation](https://poshac.me/docs/latest/) describes a local HTTP challenge listener for validation, and its guide on alternate trust chains notes that a website on Windows, such as one served by IIS, can keep serving the default chain.

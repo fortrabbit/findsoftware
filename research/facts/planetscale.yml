@@ -1,0 +1,96 @@
+id: planetscale
+name: PlanetScale
+status: hosted-service
+checkedAt: 2026-10-30
+description: Managed cloud database hosting for MySQL-compatible Vitess and PostgreSQL databases.
+facts:
+  - field: homepage
+    value: https://planetscale.com
+    url: https://planetscale.com/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "the world’s fastest and most scalable cloud hosting for Vitess, Neki, and Postgres"
+  - field: docs
+    value: https://planetscale.com/docs
+    url: https://planetscale.com/docs
+    checkedAt: 2026-10-30
+    via: page
+  - field: pricingPage
+    value: https://planetscale.com/pricing
+    url: https://planetscale.com/pricing
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Our Enterprise plan comes with all of the same platform features you get with the Base plan"
+  - field: maintainer
+    value: PlanetScale, Inc.
+    url: https://planetscale.com/legal/siteterms
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Care of PlanetScale, Inc."
+  - field: maintainerType
+    value: company
+    url: https://planetscale.com/legal/siteterms
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Care of PlanetScale, Inc."
+  - field: hqCountry
+    value: US
+    url: https://planetscale.com/legal/siteterms
+    checkedAt: 2026-10-30
+    via: page
+    quote: "PlanetScale administers and operates the Site from its location in San Francisco, California, U.S.A."
+  - field: categories
+    value: [database]
+    url: https://planetscale.com/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "cloud hosting for Vitess, Neki, and Postgres"
+  - field: databases
+    value: [mysql]
+    url: https://planetscale.com/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "PlanetScale offers Vitess/MySQL, Neki, and Postgres"
+  - field: databases
+    value: [postgres]
+    url: https://planetscale.com/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "gives you a fully managed PostgreSQL cluster built for performance and reliability"
+  - field: regions
+    value: AWS, GCP and Azure regions, including EU regions (Frankfurt, Dublin, London, Belgium)
+    url: https://planetscale.com/docs/plans/regions
+    checkedAt: 2026-10-30
+    via: page
+    quote: "AWS eu-central-1 (Frankfurt)"
+  - field: importsFrom
+    value: MySQL
+    url: https://planetscale.com/docs/what-is-planetscale
+    checkedAt: 2026-10-30
+    via: page
+    quote: "You connect your internet-accessible MySQL database to PlanetScale"
+  - field: sso
+    value: SSO, available as a paid add-on on the Base plan
+    url: https://planetscale.com/docs/planetscale-plans
+    checkedAt: 2026-10-30
+    via: page
+    quote: "SSO and Business support options are available on the Base plan for an additional fee."
+  - field: x
+    value: https://twitter.com/planetscale
+    url: https://planetscale.com/
+    checkedAt: 2026-10-30
+    via: page
+  - field: facebook
+    value: https://www.facebook.com/planetscaledata
+    url: https://planetscale.com/
+    checkedAt: 2026-10-30
+    via: page
+  - field: youtube
+    value: https://www.youtube.com/planetscale
+    url: https://planetscale.com/
+    checkedAt: 2026-10-30
+    via: page
+notFound: [repository, firstRelease, parent, selfHostOption, apiLimits, userRoles, i18n, livePreview, paidEdition, endoflifeId, latestReleaseDate, githubStargazers, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, newsletter, runsAs, renderingModes, wikidata, reportedInstalls]
+unreadable: ["https://planetscale.com/terms (404; the terms link is /legal/siteterms)", "https://planetscale.com/security (404; the security page is /docs/security)"]
+notes: >
+  Hosted-service record with no open source product of its own: the GitHub organization planetscale holds the database-js client, which is not the service and takes no license, stars, npm version or release date here. Vitess, which the homepage says is "maintained and managed by PlanetScale", is a separate open source project with no record in this dataset, so no basedOn or hosting-of-open-source link is recorded. The about page says PlanetScale "was founded in 2018 by the co-creators and maintainers of the Vitess project"; a founding year is not a first release, so firstRelease is not recorded, and the reviewer decides whether to show it. Neki, the sharded Postgres product, is named on the homepage and docs as part of the same service. The Enterprise plan offers "Bring your own cloud": PlanetScale deploys into the customer's AWS or GCP account and manages it, which is a hosted deployment option rather than an installable part, so selfHostOption is not recorded. The docs list Business Associate Agreements and a Data Processing Addendum; no field holds them. The regions page lists AWS, GCP and Azure regions; the EU regions named in the regions field are AWS eu-central-1 (Frankfurt), eu-west-1 (Dublin), eu-west-2 (London) and GCP europe-west1 (St Ghislain, Belgium). The plan tiers, add-ons and prices are left out on purpose: plan tiers are not a paid edition and prices change more than yearly.

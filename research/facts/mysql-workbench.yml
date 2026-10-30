@@ -1,0 +1,116 @@
+id: mysql-workbench
+name: MySQL Workbench
+status: discontinued
+checkedAt: 2026-10-30
+description: Graphical desktop tool for working with MySQL servers and databases, with SQL development, data modeling and administration.
+facts:
+  - field: status
+    value: discontinued (the repository description calls the 8.0 line end of life)
+    url: https://api.github.com/repos/mysql/mysql-workbench
+    checkedAt: 2026-10-30
+    via: api
+    quote: "This repository contains the now EOL version of MySQL Workbench 8."
+  - field: name
+    value: MySQL Workbench
+    url: https://raw.githubusercontent.com/mysql/mysql-workbench/8.0/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This is a release of MySQL Workbench, a graphical tool for working with MySQL servers and databases."
+  - field: repository
+    value: https://github.com/mysql/mysql-workbench
+    url: https://api.github.com/repos/mysql/mysql-workbench
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://dev.mysql.com/doc/workbench/en/
+    url: https://raw.githubusercontent.com/mysql/mysql-workbench/8.0/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "For more information on MySQL Workbench, visit"
+  - field: maintainer
+    value: Oracle and/or its affiliates
+    url: https://raw.githubusercontent.com/mysql/mysql-workbench/8.0/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (c) 2007, 2026, Oracle and/or its affiliates."
+  - field: maintainerType
+    value: company
+    url: https://raw.githubusercontent.com/mysql/mysql-workbench/8.0/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (c) 2007, 2026, Oracle and/or its affiliates."
+  - field: parent
+    value: Oracle
+    url: https://raw.githubusercontent.com/mysql/mysql-workbench/8.0/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "MySQL Workbench is brought to you by the MySQL team at Oracle."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/mysql
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [db-admin]
+    url: https://raw.githubusercontent.com/mysql/mysql-workbench/8.0/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "MySQL Workbench is a graphical tool for working with MySQL servers and databases."
+  - field: language
+    value: cpp
+    url: https://api.github.com/repos/mysql/mysql-workbench
+    checkedAt: 2026-10-30
+    via: api
+  - field: databases
+    value: [mysql]
+    url: https://raw.githubusercontent.com/mysql/mysql-workbench/8.0/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "MySQL Workbench fully supports MySQL server versions 5.6 and higher."
+  - field: runsAs
+    value: [local]
+    url: https://raw.githubusercontent.com/mysql/mysql-workbench/8.0/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "MySQL Workbench is a graphical tool for working with MySQL servers and databases."
+  - field: currentMajor
+    value: 8
+    url: https://api.github.com/repos/mysql/mysql-workbench/git/ref/tags/8.0.47
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-04-02
+    url: https://api.github.com/repos/mysql/mysql-workbench/commits/dc3590dbfbee29c87e201d4ef53607e5deb0e4f9
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/mysql/mysql-workbench/commits/b47169b83538727ea47635eed0e1d669abd8530d
+    checkedAt: 2026-10-30
+    via: api
+  - field: license
+    value: GPL-2.0
+    url: https://raw.githubusercontent.com/mysql/mysql-workbench/8.0/License.txt
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This software is released under version 2 of the GNU General Public License (GPLv2)"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/mysql/mysql-workbench/8.0/License.txt
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This software is released under version 2 of the GNU General Public License (GPLv2)"
+  - field: githubStargazers
+    value: 1003
+    url: https://api.github.com/repos/mysql/mysql-workbench
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 17
+    url: https://api.github.com/repos/mysql/mysql-workbench/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+notFound: [homepage, hqCountry, forkOf, successorOf, basedOn, alternativeTo, installMethod, runtime, runtimeMin, adminUi, headlessApi, renderingModes, i18n, multisite, userRoles, sso, templating, contentStore, paidEdition, pricingPage, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, npmName, packagistName, pypiName, npmWeeklyDownloads, packagistDownloads, pypiDownloads, usageShare, reportedInstalls, dockerPulls, wikidata, endoflifeId]
+unreadable: ["https://mysqlworkbench.org/ fails TLS: the certificate does not match the host name, so the project's own site cannot be read", "https://dev.mysql.com/doc/workbench/en/ answered 403 to the research client (a bot check); not read"]
+notes: >
+  Status is discontinued: the repository description says "This repository contains the now EOL version of MySQL Workbench 8. For the new Workbench, see https://github.com/mysql/mysql-shell-plugins". The end statement outranks the dead homepage: the homepage the README links, mysqlworkbench.org, fails TLS with a certificate that does not match its host name, so no homepage is recorded. The successor is a separate project in the same organization, mysql-shell-plugins, which is not recorded as a field. The README names no end of life, and the repository still tags 8.0.47 (2026-04-02). The desktop client is in scope as a developer tool with runsAs local. The GitHub repository has no releases, only tags: currentMajor 8 is the 8.0 line of the highest stable tag, and latestReleaseDate is the commit date of that tag. firstRelease is the commit date of the oldest release tag (6.2.5, 2015-03-04). License: GPL-2.0 from the License.txt; the file adds permissions, recorded in no field. The README names its download page only as an http link that answered 403 to the research client, so install routes and runtime are not recorded. Fields coined here: none.

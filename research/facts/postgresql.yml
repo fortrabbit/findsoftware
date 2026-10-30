@@ -1,0 +1,145 @@
+id: postgresql
+name: PostgreSQL
+status: accepted
+checkedAt: 2026-10-30
+description: Open source object-relational database system that uses and extends the SQL language.
+facts:
+  - field: name
+    value: PostgreSQL
+    url: https://www.postgresql.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The world's most advanced open source database"
+  - field: homepage
+    value: https://www.postgresql.org
+    url: https://www.postgresql.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The world's most advanced open source database"
+  - field: docs
+    value: https://www.postgresql.org/docs/
+    url: https://www.postgresql.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "through the official documentation"
+  - field: repository
+    value: https://github.com/postgres/postgres
+    url: https://api.github.com/repos/postgres/postgres
+    checkedAt: 2026-10-30
+    via: api
+  - field: maintainer
+    value: The PostgreSQL Global Development Group
+    url: https://www.postgresql.org/about/licence/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Portions Copyright © 1996-2026, The PostgreSQL Global Development Group"
+  - field: maintainerType
+    value: community
+    url: https://www.postgresql.org/about/licence/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Portions Copyright © 1996-2026, The PostgreSQL Global Development Group"
+  - field: firstRelease
+    value: 1989
+    url: https://www.postgresql.org/docs/current/history.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "was released to a few external users in June 1989"
+  - field: categories
+    value: [database]
+    url: https://www.postgresql.org/about/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "PostgreSQL is a powerful, open source object-relational database system"
+  - field: language
+    value: C
+    url: https://api.github.com/repos/postgres/postgres
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: c binary
+    url: https://api.github.com/repos/postgres/postgres
+    checkedAt: 2026-10-30
+    via: api
+  - field: contentStore
+    value: database
+    url: https://www.postgresql.org/about/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "safely store and scale the most complicated data workloads"
+  - field: runsAs
+    value: [always-on]
+    url: https://www.postgresql.org/docs/current/app-postgres.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "postgres should be started as a background process, perhaps at boot time"
+  - field: installMethod
+    value: os-packages-and-installers
+    url: https://www.postgresql.org/download/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "ready-to-use packages or installers for various platforms"
+  - field: installMethod
+    value: source-code-archive
+    url: https://www.postgresql.org/download/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "as well as a source code archive if you want to build it yourself"
+  - field: currentMajor
+    value: 18
+    url: https://www.postgresql.org/versions.json
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-13
+    url: https://www.postgresql.org/versions.json
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-10-15
+    url: https://www.postgresql.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "PostgreSQL 19 Rc 1 Released!"
+  - field: endoflifeId
+    value: postgresql
+    url: https://endoflife.date/api/postgresql.json
+    checkedAt: 2026-10-30
+    via: api
+  - field: license
+    value: PostgreSQL License
+    url: https://www.postgresql.org/about/licence/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "PostgreSQL is released under the PostgreSQL License"
+  - field: licenseModel
+    value: open-source
+    url: https://www.postgresql.org/about/licence/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "a liberal Open Source license, similar to the BSD or MIT licenses"
+  - field: forum
+    value: https://lists.postgresql.org
+    url: https://www.postgresql.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The PostgreSQL mailing lists enable you to interact with active community participants"
+  - field: githubStargazers
+    value: 22636
+    url: https://api.github.com/repos/postgres/postgres
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 42
+    url: https://api.github.com/repos/postgres/postgres/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/postgres/postgres
+    checkedAt: 2026-10-30
+    via: api
+notFound: [hqCountry, parent, successorOf, forkOf, basedOn, alternativeTo, paidEdition, paidEditions, freeTier, pricingPage, runtimeMin, renderingModes, databases, adminUi, headlessApi, templating, i18n, multisite, userRoles, sso, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, reportedInstalls, usageShare, npmName, packagistName, pypiName, packagistDownloads, npmWeeklyDownloads, dockerPulls, wikidata, apiLimits, selfHostOption, regions, hostedOffering]
+unreadable: []
+notes: >
+  The GitHub repository postgres/postgres is a mirror of the project's own Git repository, and the project takes contributions outside GitHub; the repository is recorded as the source link, and its version and date come from the project's own versions.json. The current major is 18 (current true in versions.json; 18 is supported until 2030-11-14 per endoflife.date). Major 19 is in release candidate: PostgreSQL 19 RC 1 was released 2026-10-15 per the homepage, and no stable 19 is listed, so currentMajor stays at 18. The release date 2026-08-13 is the date of the latest minor releases of the supported majors in versions.json. firstRelease 1989 is the first release the history page names: "Version 1 ... was released to a few external users in June 1989". The implementation of POSTGRES began in 1986 (history page) and the about page says the origins date back to 1986; that is the start of the research project, not a release, so it is kept here only. The versions.json list begins at 6.3 (1998). The Docker Hub official image postgres has 12124485399 pulls (last updated 2026-10-28), but the download page names no container image, so dockerPulls is not recorded under the install-docs rule. The license is the PostgreSQL License as the license page states it; GitHub detects no license. The runtime value is "c binary" on the same basis as other compiled servers, not a page quote. Postgres is recorded as a database; the databases field is not used because the project is the database itself. The DB server runs as a background process by the postgres docs. Fields coined here: none.

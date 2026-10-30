@@ -1,0 +1,114 @@
+id: nvm
+name: nvm
+status: accepted
+checkedAt: 2026-10-30
+description: POSIX shell script that installs and switches between multiple Node.js versions for one user.
+facts:
+  - field: name
+    value: nvm
+    url: https://github.com/nvm-sh/nvm
+    checkedAt: 2026-10-30
+    via: api
+  - field: repository
+    value: https://github.com/nvm-sh/nvm
+    url: https://github.com/nvm-sh/nvm
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://github.com/nvm-sh/nvm/blob/master/README.md
+    url: https://github.com/nvm-sh/nvm/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "nvm is a version manager for node.js"
+  - field: maintainer
+    value: Jordan Harband
+    url: https://github.com/nvm-sh/nvm/blob/master/LICENSE.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (c) 2014 Jordan Harband"
+  - field: maintainer
+    value: Jordan Harband
+    url: https://api.github.com/users/ljharb
+    checkedAt: 2026-10-30
+    via: api
+  - field: maintainerType
+    value: individual
+    url: https://github.com/nvm-sh/nvm/blob/master/LICENSE.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (c) 2014 Jordan Harband"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/nvm-sh
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [dev-tool]
+    url: https://github.com/nvm-sh/nvm/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "nvm is a version manager for node.js"
+  - field: language
+    value: Shell
+    url: https://github.com/nvm-sh/nvm
+    checkedAt: 2026-10-30
+    via: api
+  - field: installMethod
+    value: install script (curl or wget)
+    url: https://github.com/nvm-sh/nvm/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Running either of the above commands downloads a script and runs it."
+  - field: installMethod
+    value: git clone
+    url: https://github.com/nvm-sh/nvm/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Git Install"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/nvm-sh/nvm/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "designed to be installed per-user, and invoked per-shell"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/nvm-sh/nvm/releases/tag/v0.40.8
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-21
+    url: https://github.com/nvm-sh/nvm/releases/tag/v0.40.8
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2010
+    url: https://api.github.com/repos/nvm-sh/nvm/commits/v0.0.1
+    checkedAt: 2026-10-30
+    via: api
+    quote: "2010-04-20T23:51:07Z"
+  - field: license
+    value: MIT
+    url: https://github.com/nvm-sh/nvm/blob/master/LICENSE.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: license
+    value: MIT
+    url: https://github.com/nvm-sh/nvm
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 95715
+    url: https://github.com/nvm-sh/nvm
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 399
+    url: https://github.com/nvm-sh/nvm/graphs/contributors
+    checkedAt: 2026-10-30
+    via: api
+notFound: [homepage, parent, hqCountry, pricingPage, paidEdition, runtime, runtimeMin, renderingModes, adminUi, headlessApi, templating, i18n, multisite, userRoles, sso, contentStore, databases, pluginDirectory, pluginCount, forum, discord, x, bluesky, mastodon, newsletter, youtube, wikidata, endoflifeId, packagistName, npmName, npmWeeklyDownloads, packagistDownloads, pypiDownloads, usageShare, reportedInstalls, dependentRepos, dependentPackages, lastCommitDate, hostedOffering]
+unreadable: []
+notes: >
+  Boundary row settled in for this wave: a runtime version manager is a developer tool, runsAs local. The repository has no project website; the README is the documentation, so no homepage. Copyright lines disagree: LICENSE.md names Tim Caswell (2010) and Jordan Harband (2014), and the README says "Copyright OpenJS Foundation and nvm contributors"; the README names the sole maintainer as @ljharb, and the GitHub profile of ljharb has the name Jordan Harband (api users/ljharb, recorded as a maintainer fact). The maintainer field takes the LICENSE line; the README's copyright notice line "Copyright OpenJS Foundation and nvm contributors" is not recorded as maintainer or parent. The README's Enterprise Support section names HeroDevs, a third party, and is not recorded. firstRelease is the year of the commit tagged v0.0.1 (2010-04-20, api); the oldest GitHub release is v0.20.0 (2014-12-22). The LICENSE.md line "Copyright (c) 2010 Tim Caswell" is consistent with that year. The language Shell is not in the language vocabulary, so it is dropped on import. Requirements stated by the README: a POSIX-compliant shell (sh, dash, ksh, zsh, bash) on unix, macOS or Windows WSL, git v1.7.10+ for the git install, and a C++ compiler when Node.js is built from source; none is a runtime value. The README says Homebrew installation is not supported and that Fish is not supported. Fields coined here: none.

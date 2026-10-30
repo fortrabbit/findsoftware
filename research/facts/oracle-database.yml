@@ -1,0 +1,87 @@
+id: oracle-database
+name: Oracle AI Database
+status: accepted
+checkedAt: 2026-10-30
+description: Commercial relational database from Oracle, with a free developer edition and fully supported paid editions.
+facts:
+  - field: homepage
+    value: https://www.oracle.com/database/
+    url: https://www.oracle.com/database/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Oracle AI Database natively architects AI into your business data"
+  - field: docs
+    value: https://docs.oracle.com/en/database/oracle/oracle-database/26/
+    url: https://docs.oracle.com/en/database/oracle/oracle-database/26/
+    checkedAt: 2026-10-30
+    via: page
+  - field: maintainer
+    value: Oracle America, Inc.
+    url: https://www.oracle.com/downloads/licenses/oracle-free-license.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "refers to Oracle America, Inc."
+  - field: maintainerType
+    value: company
+    url: https://www.oracle.com/downloads/licenses/oracle-free-license.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "refers to Oracle America, Inc."
+  - field: categories
+    value: [database]
+    url: https://www.oracle.com/database/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Oracle AI Database natively architects AI into your business data"
+  - field: installMethod
+    value: [rpm]
+    url: https://docs.oracle.com/en/database/oracle/oracle-database/26/xeinl/installing-oracle-database-free.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "RPM file required for performing an RPM-based installation"
+  - field: installMethod
+    value: [zip-download]
+    url: https://www.oracle.com/database/technologies/oracle-database-software-downloads.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Oracle AI Database 26ai for Linux x86-64 ZIP"
+  - field: installMethod
+    value: [docker-image]
+    url: https://www.oracle.com/database/free/faq/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "an Oracle Linux-based Docker image can be pulled via"
+  - field: license
+    value: Oracle Free Use Terms and Conditions
+    url: https://www.oracle.com/downloads/licenses/oracle-free-license.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Your use of this Program is governed by the Free Use Terms and Conditions"
+  - field: license
+    value: Oracle license agreement (including the Oracle Master Agreement)
+    url: https://www.oracle.com/downloads/licenses/oracle-free-license.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "including but not limited to the Oracle Master Agreement"
+  - field: licenseModel
+    value: commercial
+    url: https://www.oracle.com/downloads/licenses/oracle-free-license.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "unless you have received this Program (alone or as part of another Oracle product) under an Oracle license agreement"
+  - field: paidEdition
+    value: Oracle Database Enterprise Edition, Oracle Database Standard Edition 2
+    url: https://www.oracle.com/database/free/faq/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "To obtain patches you must be on a fully supported edition, such as Oracle Database Enterprise Edition or Oracle Database Standard Edition 2."
+  - field: forum
+    value: https://forums.oracle.com/ords/apexds/domain/dev-community/category/oracle-database-free
+    url: https://www.oracle.com/database/free/faq/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Oracle AI Database Free Forum"
+notFound: [firstRelease, currentMajor, runsAs, adminUi, pricingPage, latestReleaseDate, hqCountry, parent, language, runtime, runtimeMin, endoflifeId, basedOn, renderingModes, databases, contentStore, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, dockerPulls, githubStargazers, repository, sourcePublic, discord, x, subreddit, mastodon, bluesky, newsletter, pluginDirectory, pluginCount, npmWeeklyDownloads, packagistDownloads, pypiDownloads, usageShare, httpArchiveSites, reportedInstalls, selfHostOption, wikidata, forkOf, successorOf, alternativeTo]
+unreadable: [https://docs.oracle.com/en/database/oracle/oracle-database/26/dblic/index.html]
+notes: >
+  Boundary row from the CSV: no repository exists, and the release date was not read from the own site. This record is accepted on criterion 2 (a documented self-install: RPM, ZIP, Docker image and Windows download) and on criterion 4 (no end signal found on the own site). A reviewer decides whether the missing release date is enough to hold the listing: the four-year rule needs a date, and none is on the pages read. The newest RPM named on the install guide is 23.26.2, and the download link on the Free page names 23.26.3; the release date of those files is not on any page read, and the installation guide page carries only a "July 2026" document date, which is not recorded as latestReleaseDate. The version line is 26ai (the product name) on 23.26 numbering, so no currentMajor is recorded. The product was renamed to Oracle AI Database 26ai, so the name follows the new product; the CSV name is Oracle Database. The Free edition has resource limits (2 CPUs, 2 GB RAM, 12 GB user data) and is not supported and gets no patches; the features not included are listed in the Oracle AI Database Licensing Guide, which is script-loaded and was not readable, so paidEdition rests on the FAQ's statement that patches require a fully supported edition, and a reviewer may want the feature list. The Oracle Free Use Terms are the free edition's license; the paid editions are under an Oracle license agreement, as the license page says, so both statements are recorded. The maintainer is Oracle America, Inc. as the Free Use Terms define "Oracle"; no page read names Oracle's headquarters country, so hqCountry is left out. Runtime is not recorded: no page states how the database binaries run, and no page says the database runs as a service. The Docker image is at container-registry.oracle.com, which has no pull count, so no dockerPulls value. The Free FAQ's statement that the Free edition is not supported is recorded in notes, not as a status.
