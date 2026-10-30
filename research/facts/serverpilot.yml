@@ -1,0 +1,61 @@
+id: serverpilot
+name: ServerPilot
+status: hosted-service
+checkedAt: 2026-10-30
+description: Hosted server management service that sets up servers at any cloud provider and runs web apps on them.
+facts:
+  - field: homepage
+    value: https://serverpilot.io
+    url: https://serverpilot.io
+    checkedAt: 2026-10-30
+    via: page
+  - field: docs
+    value: https://serverpilot.io/docs/
+    url: https://serverpilot.io/docs/
+    checkedAt: 2026-10-30
+    via: page
+  - field: pricingPage
+    value: https://serverpilot.io/pricing/
+    url: https://serverpilot.io/pricing/
+    checkedAt: 2026-10-30
+    via: page
+  - field: maintainer
+    value: Less Bits, Inc.
+    url: https://serverpilot.io/privacy/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Less Bits, Inc., the company that owns and operates ServerPilot"
+  - field: hqCountry
+    value: US
+    url: https://serverpilot.io/privacy/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "We're headquartered in the United States."
+  - field: categories
+    value: [control-panel]
+    url: https://serverpilot.io/docs/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Create an app to host any type of website, from dynamic web applications to static sites."
+  - field: databases
+    value: [mysql]
+    url: https://serverpilot.io/docs/what-is-serverpilot/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "including Nginx, Apache, MySQL, and multiple versions of PHP."
+  - field: adminUi
+    value: yes, web dashboard
+    url: https://serverpilot.io/docs/what-is-serverpilot/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "In ServerPilot’s dashboard, you can create apps, manage settings,"
+  - field: installMethod
+    value: ServerPilot installer run on an Ubuntu LTS server (automated)
+    url: https://serverpilot.io/docs/get-started/connect-server/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "ServerPilot will install and configure everything necessary for"
+notFound: [firstRelease, currentMajor, latestReleaseDate, language, runtime, runsAs, renderingModes, basedOn, forkOf, successorOf, parent, sso, userRoles, i18n, livePreview, importsFrom, selfHostOption, apiLimits, regions, multisite, headlessApi, wikidata, discord, x, bluesky, mastodon, subreddit, newsletter, youtube, usageShare, reportedInstalls, pluginDirectory, npmName, packagistName, paidEdition]
+unreadable: []
+notes: >
+  Hosted-service: criterion 2 waived by the CSV row (no repository, SaaS). Criterion 1 holds on its own pages: the homepage and docs say it hosts "any application" and offers "One-click WordPress", and the docs page states it creates apps "to host any type of website". The pages read name no social profile, so no social field is recorded. Maintainer and hqCountry come from the privacy page and terms (Less Bits, Inc. is "SERVERPILOT, US, OR WE", Delaware governing law at serverpilot.io/terms/). The company page says ServerPilot is part of the same company as EarlyDog, a separate cloud-ops service; no record. Pricing has three hosted tiers (Economy, Business, First Class) billed by server and app, hourly; these are hosted plans, so no paidEdition, and no prices are recorded. The what-is page says "Your servers belong to you and stay in your account at your preferred cloud provider." and that the installer sets up Nginx, Apache, MySQL and several PHP versions. The same page says "You can directly use your cloud provider's features such as automated backups." A 14-day free trial is in the account docs. The docs name Google Cloud, AWS and DigitalOcean as providers and the what-is page says "any other server provider"; no deployTargets field is recorded. The features page names MySQL; the packages docs also install MongoDB, Redis, Memcached and ImageMagick on the server. The docs recommend two-factor authentication; no SSO or user-role feature is documented. The API is named in the features page ("Use ServerPilot's API") with no limits stated, so apiLimits is absent. No page on the site gives a founding or first-release year, so firstRelease is absent. Blog posts from 2026 cover security patches, not releases. Fields coined: none.

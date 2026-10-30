@@ -1,0 +1,3 @@
+Redis Insight is a visual tool from Redis Ltd for developers who use Redis. It runs as a desktop application on Windows, macOS or Linux, and as a Docker container that serves the interface to a browser on port 5540. The README says it is built with Electron, Monaco Editor and NodeJS.
+
+The [install documentation](https://redis.io/docs/latest/operate/redisinsight/install/install-on-docker/) also covers Kubernetes and AWS EC2, and the README lists several app stores and a source build. The Redis Insight homepage describes the tool as free to use. The README points to a repository of packages for building data visualization plugins.

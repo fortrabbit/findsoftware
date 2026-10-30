@@ -1,0 +1,131 @@
+id: simple-acme
+name: simple-acme
+status: accepted
+checkedAt: 2026-10-30
+description: Command-line ACME client that obtains and renews Let's Encrypt and other ACME certificates, with IIS installation on Windows.
+facts:
+  - field: homepage
+    value: https://simple-acme.com
+    url: https://simple-acme.com
+    checkedAt: 2026-10-30
+    via: page
+  - field: repository
+    value: https://github.com/simple-acme/simple-acme
+    url: https://github.com/simple-acme/simple-acme
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://simple-acme.com/manual/getting-started
+    url: https://simple-acme.com/manual/getting-started
+    checkedAt: 2026-10-30
+    via: page
+  - field: maintainer
+    value: WouterTinus
+    url: https://simple-acme.com/manual/about/simple-acme
+    checkedAt: 2026-10-30
+    via: page
+    quote: "under same account ( WouterTinus ) as the one used for simple-acme"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/simple-acme/simple-acme
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2024
+    url: https://github.com/simple-acme/simple-acme/releases/tag/v2.3.0.1797
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [acme-client]
+    url: https://github.com/simple-acme/simple-acme/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "A simple cross platform ACME client"
+  - field: language
+    value: C#
+    url: https://github.com/simple-acme/simple-acme
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: [dotnet]
+    url: https://simple-acme.com
+    checkedAt: 2026-10-30
+    via: page
+    quote: "dotnet tool on NuGet.org"
+  - field: runtimeMin
+    value: "10"
+    url: https://github.com/simple-acme/simple-acme/blob/v2.4.1/src/main/wacs.csproj
+    checkedAt: 2026-10-30
+    via: page
+    quote: "<TargetFramework>net10.0</TargetFramework>"
+  - field: runsAs
+    value: [scheduled]
+    url: https://simple-acme.com/manual/getting-started
+    checkedAt: 2026-10-30
+    via: page
+    quote: "A scheduled task is created in the Windows Task Scheduler, which will run the program every day."
+  - field: installMethod
+    value: xcopy (zip download from GitHub releases)
+    url: https://simple-acme.com
+    checkedAt: 2026-10-30
+    via: page
+    quote: "xcopy installation and upgrade"
+  - field: installMethod
+    value: Chocolatey package
+    url: https://simple-acme.com
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Available on Chocolatey"
+  - field: installMethod
+    value: WinGet package
+    url: https://simple-acme.com
+    checkedAt: 2026-10-30
+    via: page
+    quote: "WinGet and as a"
+  - field: installMethod
+    value: dotnet tool from NuGet.org
+    url: https://simple-acme.com
+    checkedAt: 2026-10-30
+    via: page
+    quote: "dotnet tool on NuGet.org"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/simple-acme/simple-acme/blob/main/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/simple-acme/simple-acme
+    checkedAt: 2026-10-30
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://github.com/simple-acme/simple-acme/releases/tag/v2.4.1
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-06
+    url: https://github.com/simple-acme/simple-acme/releases/tag/v2.4.1
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 660
+    url: https://github.com/simple-acme/simple-acme
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 111
+    url: https://api.github.com/repos/simple-acme/simple-acme/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+  - field: importsFrom
+    value: win-acme
+    url: https://simple-acme.com/manual/upgrading
+    checkedAt: 2026-10-30
+    via: page
+    quote: "simple-acme is an xcopy upgrade for any 2.x.x version of win-acme."
+notFound: [basedOn, forkOf, successorOf, alternativeTo, parent, hqCountry, wikidata, x, discord, bluesky, mastodon, subreddit, newsletter, forum, youtube, usageShare, reportedInstalls, pluginDirectory, npmName, packagistName, endoflifeId, dockerPulls, sso, adminUi, userRoles, i18n, livePreview, multisite, headlessApi, templating, selfHostOption, apiLimits, regions, pricingPage, paidEdition, renderingModes, hostedOffering, latestPrereleaseDate]
+unreadable: []
+notes: >
+  Status accepted: the repository is not archived; the latest stable GitHub release is v2.4.1 (2026-10-06), major 2. The about page says "simple-acme is a clone of win-acme version 2.2.9.1" and the README says "Forked from win-acme". win-acme has a candidate row in candidates-server-infra.csv but no fact file yet, so the fork is recorded here only and forkOf is absent until that record exists. firstRelease 2024 is the oldest GitHub release (v2.3.0.1797, 2024-10-18), matching the about page's "It's first release (version 2.3.0)". The repository's tags include 1.9.4-beta tags inherited from win-acme's history, so the oldest tag is not used. Maintainer: no page gives a legal name or a copyright line; LICENSE has no copyright line; the about page names the GitHub account WouterTinus. The homepage links a GitHub Sponsors page; it is a donation page, so no x field is recorded. Support is donations via GitHub Sponsors and Patreon; no paid edition. The runtime is .NET; src/main/wacs.csproj at v2.4.1 targets net10.0, which gives runtimeMin 10. The homepage says "Runs on Windows 2012+ and Linux (beta)" and "Runs on x86, x64 and ARM"; the download page lists full builds that load plugins and trimmed builds that do not. The download page also hosts plugins for the program (download#plugins); no plugin repository is recorded. The default validation is an HTTP server run by the program itself on ports 80 and 443 (getting-started), which the record does not turn into runsAs. The GitHub contributors count uses per_page=1 and the rel=last page. hqCountry is absent: no page names a country or address. Fields coined: none.

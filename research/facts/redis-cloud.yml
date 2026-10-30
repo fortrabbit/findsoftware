@@ -1,0 +1,111 @@
+id: redis-cloud
+name: Redis Cloud
+status: hosted-service
+checkedAt: 2026-10-30
+description: Fully managed hosted Redis service from Redis Ltd that runs databases on public clouds.
+facts:
+  - field: name
+    value: Redis Cloud
+    url: https://redis.io/cloud/
+    checkedAt: 2026-10-30
+    via: page
+  - field: homepage
+    value: https://redis.io/cloud/
+    url: https://redis.io/cloud/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redis Cloud is the fully-managed version of"
+  - field: docs
+    value: https://redis.io/docs/latest/operate/rc/
+    url: https://redis.io/docs/latest/operate/rc/
+    checkedAt: 2026-10-30
+    via: page
+  - field: maintainer
+    value: Redis Ltd
+    url: https://redis.io/legal/cloud-tos/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redis Ltd., a limited company"
+  - field: maintainerType
+    value: company
+    url: https://redis.io/legal/cloud-tos/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redis Ltd., a limited company"
+  - field: categories
+    value: [database, cache]
+    url: https://redis.io/cloud/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redis Cloud supports a wide range of use cases, including caching"
+  - field: pricingPage
+    value: https://redis.io/pricing/
+    url: https://redis.io/pricing/
+    checkedAt: 2026-10-30
+    via: page
+  - field: sso
+    value: SAML
+    url: https://redis.io/pricing/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "SAML SSO, RBAC, encryption in transit"
+  - field: userRoles
+    value: RBAC
+    url: https://redis.io/pricing/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "SAML SSO, RBAC, encryption in transit"
+  - field: adminUi
+    value: yes, web console
+    url: https://redis.io/docs/latest/operate/rc/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redis Cloud console security and account management"
+  - field: importsFrom
+    value: Amazon ElastiCache
+    url: https://redis.io/tutorials/migration/elasticache-to-redis-cloud/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "You can migrate from AWS ElastiCache to Redis Cloud"
+  - field: selfHostOption
+    value: Redis Software, for on-premise environments
+    url: https://redis.io/cloud/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redis Software is for on-premise environments"
+  - field: regions
+    value: AWS, Google Cloud and Azure regions, including EU regions such as Frankfurt
+    url: https://redis.io/docs/latest/operate/rc/supported-regions/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Frankfurt, Germany"
+  - field: x
+    value: https://x.com/Redisinc
+    url: https://redis.io/cloud/
+    checkedAt: 2026-10-30
+    via: page
+  - field: facebook
+    value: https://www.facebook.com/Redisinc
+    url: https://redis.io/cloud/
+    checkedAt: 2026-10-30
+    via: page
+  - field: instagram
+    value: https://www.instagram.com/redisinc/
+    url: https://redis.io/cloud/
+    checkedAt: 2026-10-30
+    via: page
+  - field: youtube
+    value: https://www.youtube.com/c/redisinc
+    url: https://redis.io/cloud/
+    checkedAt: 2026-10-30
+    via: page
+  - field: basedOn
+    value: redis
+    url: https://redis.io/cloud/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redis Cloud is the fully-managed version of the fastest and most feature-rich Redis"
+notFound: [hqCountry, firstRelease, currentMajor, latestReleaseDate, language, runtime, runtimeMin, repository, githubStargazers, contributors, paidEdition, parent, forkOf, alternativeTo, i18n, livePreview, multisite, headlessApi, license, licenseModel, installMethod, runsAs, renderingModes, endoflifeId, dockerPulls, npmName, packagistName, forum, discord, subreddit, mastodon, bluesky, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, wikidata]
+unreadable: []
+notes: >
+  Three Redis entities sign the Cloud terms, depending on where the customer is domiciled: Redis Inc., a Delaware corporation with offices in San Francisco, for Asia, Pacific and the Americas; Redis Ltd., with a registered office in Tel-Aviv, for Israel; and Redis EMEA Ltd., with a registered office in London, for Europe, the United Kingdom, the Middle East and Africa. The maintainer is recorded as Redis Ltd because the license page and the privacy policy name it as the company behind Redis; the choice and the headquarters country are for the reviewer, so hqCountry is not recorded. The Redis Cloud tiers Free, Essentials and Pro are hosted plans, so no paidEdition is recorded, and no price is recorded. The pricing page lists Essentials and Pro with SAML SSO and RBAC; the access-control docs describe SAML single sign-on, so sso is SAML. The Redis Cloud homepage calls the service the fully-managed version of Redis, recorded as basedOn redis; the Azure Managed Redis page says it is built on Redis Cloud technology, which is another product. The homepage footer also links LinkedIn, which has no field. The homepage compare menu lists Redis against other products; those pages describe Redis, not Redis Cloud, so no alternativeTo is recorded. The Redis Cloud pages name "Redis 8.4" and the open-source framework "Redis 8.8"; versions are not recorded. The hosted service has no repository, so no stars, contributors or SDK figures are recorded, as the rule for hosted records requires. The regions value names the cloud providers from the pricing page and the regions page lists EU regions. Fields coined here: none.

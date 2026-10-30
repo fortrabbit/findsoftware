@@ -1,0 +1,121 @@
+id: pyenv
+name: pyenv
+status: accepted
+checkedAt: 2026-10-30
+description: Shell-based version manager that switches between multiple installed Python versions.
+facts:
+  - field: docs
+    value: https://github.com/pyenv/pyenv/blob/master/README.md
+    url: https://raw.githubusercontent.com/pyenv/pyenv/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "pyenv lets you easily switch between multiple versions of Python"
+  - field: repository
+    value: https://github.com/pyenv/pyenv
+    url: https://api.github.com/repos/pyenv/pyenv
+    checkedAt: 2026-10-30
+    via: api
+  - field: maintainer
+    value: Yamashita, Yuu
+    url: https://raw.githubusercontent.com/pyenv/pyenv/master/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (c) 2013 Yamashita, Yuu"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/pyenv/pyenv/master/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (c) 2013 Yamashita, Yuu"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/pyenv
+    checkedAt: 2026-10-30
+    via: api
+  - field: forkOf
+    value: rbenv
+    url: https://raw.githubusercontent.com/pyenv/pyenv/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This project was forked from rbenv"
+  - field: categories
+    value: [dev-tool]
+    url: https://raw.githubusercontent.com/pyenv/pyenv/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "pyenv lets you easily switch between multiple versions of Python"
+  - field: language
+    value: Shell
+    url: https://api.github.com/repos/pyenv/pyenv
+    checkedAt: 2026-10-30
+    via: api
+  - field: runsAs
+    value: [local]
+    url: https://raw.githubusercontent.com/pyenv/pyenv/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Lets you change the global Python version on a per-user basis"
+  - field: installMethod
+    value: pyenv-installer script
+    url: https://raw.githubusercontent.com/pyenv/pyenv/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Automatic installer (Recommended)"
+  - field: installMethod
+    value: git clone into ~/.pyenv
+    url: https://raw.githubusercontent.com/pyenv/pyenv/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "git clone https://github.com/pyenv/pyenv.git ~/.pyenv"
+  - field: installMethod
+    value: Homebrew formula
+    url: https://raw.githubusercontent.com/pyenv/pyenv/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "brew install pyenv"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/pyenv/pyenv
+    checkedAt: 2026-10-30
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/pyenv/pyenv/master/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining"
+  - field: firstRelease
+    value: "2012"
+    url: https://api.github.com/repos/pyenv/pyenv/commits/v0.1.0
+    checkedAt: 2026-10-30
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/pyenv/pyenv/releases
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-26
+    url: https://api.github.com/repos/pyenv/pyenv/releases
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 45169
+    url: https://api.github.com/repos/pyenv/pyenv
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 404
+    url: https://api.github.com/repos/pyenv/pyenv/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+  - field: pluginDirectory
+    value: https://github.com/pyenv/pyenv/wiki/Plugins
+    url: https://raw.githubusercontent.com/pyenv/pyenv/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "as well as a catalog of some useful existing plugins for common needs."
+notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, basedOn, successorOf, alternativeTo, runtime, runtimeMin, endoflifeId, hostedOffering, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, npmName, packagistName, dockerPulls, rubygemsName, importsFrom]
+unreadable: []
+notes: >
+  No homepage: the repository's GitHub homepage field is empty, the README names no project site, and the README links only the wiki and the pyenv-installer repository. The README says the project "was forked from rbenv and ruby-build, and modified for Python"; the rbenv record is the only parent with a record, so forkOf is rbenv; ruby-build has no record. The README says pyenv "was made from pure shell scripts", so no runtime is recorded: the runtime vocabulary has no shell value, and the language Shell falls outside the language vocabulary, so the import drops it (as with phpenv). The LICENSE names two copyright holders, "Yamashita, Yuu" and "Sam Stephenson"; the maintainer follows the first line, and the second holder is the rbenv author. The README does not say the tool runs on a developer machine or in CI; runsAs local follows the boundary ruling for runtime version managers, and the quote is the README's per-user statement. firstRelease is 2012 from the oldest tag, v0.1.0 (commit 2012-08-31), which predates the oldest GitHub release (v1.0.9, 2017-03-24) and has no release entry. The CSV lastRelease (2026-10-14) is stale: v2.8.14 is the newest stable release (2026-10-26), and v2.8.14 is the highest stable version, so currentMajor is 2. The GitHub repository was created 2012-08-31. The README links the Gitter chat through a badge; no chat field exists, so it is not recorded. The README says pyenv does not officially support Windows and does not work outside the Windows Subsystem for Linux, and points to the pyenv-win fork. The Homebrew install is named as an option in the README; the README also names an automatic installer, recorded as its own route.

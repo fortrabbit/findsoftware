@@ -1,0 +1,112 @@
+id: spinupwp
+name: SpinupWP
+status: hosted-service
+checkedAt: 2026-10-30
+description: Hosted control panel that connects over SSH to servers the user brings and manages WordPress sites on them.
+facts:
+  - field: name
+    value: SpinupWP
+    url: https://spinupwp.com/
+    checkedAt: 2026-10-30
+    via: page
+  - field: homepage
+    value: https://spinupwp.com
+    url: https://spinupwp.com/
+    checkedAt: 2026-10-30
+    via: page
+  - field: docs
+    value: https://spinupwp.com/docs/
+    url: https://spinupwp.com/docs/
+    checkedAt: 2026-10-30
+    via: page
+  - field: pricingPage
+    value: https://spinupwp.com/pricing/
+    url: https://spinupwp.com/pricing/
+    checkedAt: 2026-10-30
+    via: page
+  - field: maintainer
+    value: SpinupWP Inc.
+    url: https://spinupwp.com/terms/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "SpinupWP Inc. (“we”, “us”, or “our”) will provide the Services to you"
+  - field: maintainerType
+    value: company
+    url: https://spinupwp.com/terms/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "SpinupWP Inc. (“we”, “us”, or “our”) will provide the Services to you"
+  - field: hqCountry
+    value: CA
+    url: https://spinupwp.com/terms/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "PO Box 363, Springfield, Ontario, Canada N0L 2J0"
+  - field: categories
+    value: [control-panel]
+    url: https://spinupwp.com/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "modern cloud server control panel"
+  - field: licenseModel
+    value: saas
+    url: https://spinupwp.com/terms/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "will provide the Services to you"
+  - field: adminUi
+    value: yes, web dashboard for servers and sites
+    url: https://spinupwp.com/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "modern cloud server control panel"
+  - field: databases
+    value: [mysql]
+    url: https://spinupwp.com/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "SpinupWP will install the latest stable versions of Nginx, PHP, MySQL, and Redis"
+  - field: multisite
+    value: yes
+    url: https://spinupwp.com/pricing/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "WordPress multisite support"
+  - field: userRoles
+    value: yes, per-server access and permissions
+    url: https://spinupwp.com/pricing/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Limit user access to specific servers and permissions"
+  - field: regions
+    value: United States (application and databases, DigitalOcean)
+    url: https://spinupwp.com/privacy/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Our application and its databases run on DigitalOcean servers in the United States."
+  - field: forum
+    value: https://community.spinupwp.com
+    url: https://spinupwp.com/community/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Only existing customers can gain access to the SpinupWP community."
+  - field: x
+    value: https://twitter.com/spinupwp
+    url: https://spinupwp.com/
+    checkedAt: 2026-10-30
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/spinupwp.com
+    url: https://spinupwp.com/
+    checkedAt: 2026-10-30
+    via: page
+  - field: alternativeTo
+    value: [cpanel, plesk, easyengine, gridpane, ploi, runcloud, serverpilot]
+    url: https://spinupwp.com/compare/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "our tool lets you easily compare the most popular VPS control panels available today"
+notFound: [repository, firstRelease, parent, basedOn, language, runtime, runtimeMin, license, currentMajor, latestReleaseDate, selfHostOption, pluginDirectory, headlessApi, templating, i18n, sso, contentStore, renderingModes, installMethod, apiLimits, hostedOffering, usageShare, reportedInstalls, githubStargazers, npmWeeklyDownloads, packagistDownloads, pypiDownloads, dockerPulls, discord, subreddit, mastodon, newsletter, youtube, facebook, instagram, threads, wikidata]
+unreadable: []
+notes: >
+  Hosted service, criterion 2 waived. The homepage calls it "a modern cloud server control panel designed to manage WordPress sites"; it connects to the user's server over SSH and runs commands, so the description follows that and does not claim the software runs on the managed server. The about page says it was a Delicious Brains product until Delicious Brains was sold to WP Engine in June 2022, and that the founder "has continued on with SpinupWP as an independent company"; no parent is recorded. The footer's "From the creators of the Delicious Brains plugins" names a sister company, not a parent. The about page says "Founded in 2017"; that is a company founding year, not a first release, so firstRelease is absent. Prices on the pricing page (per user, per site monitor, plan names) are not recorded. The compare page lists "SpinupWP vs" entries for cPanel, Plesk, EasyEngine, GridPane, Ploi, RunCloud and ServerPilot, recorded as alternativeTo where a fact file exists; Cloudways has no fact file, and "Laravel" names no single record, so both are left out. The free trial and the trial terms are not fields. The REST API and PHP SDK named on the homepage and the API Docs link are not recorded as headlessApi or apiLimits: the API controls servers and sites and the docs give no limits on the pages read; the SDK is a client library and is not used as a source. Sign-in with GitHub, Google or X is account login, not a single sign-on protocol, so sso is absent. The community forum at community.spinupwp.com is open to existing customers by invitation only. The homepage's "used by thousands of teams" is not a count, so reportedInstalls is absent. The privacy page places the company in Ontario, Canada and the application and databases on DigitalOcean in the United States; no EU hosting is stated. Social links are the footer's twitter.com/spinupwp and bsky.app/profile/spinupwp.com icons. The footer's LinkedIn company page is not a social field.

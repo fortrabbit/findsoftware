@@ -1,0 +1,3 @@
+Static Web Server is a web server for serving a folder of static files, with TLS, compression and access controls configured from the command line or a TOML file. It is written in Rust and ships as a single binary with no runtime dependencies.
+
+The [download and install page](https://static-web-server.net/v2/download-install) documents a binary installer script, several package managers, a WebAssembly runtime and a Docker image, and the project also documents a source build with Cargo. On Windows the binary can run in a Windows Service context, and one running instance can host more than one static website through virtual hosting.

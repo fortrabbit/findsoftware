@@ -1,0 +1,109 @@
+id: pound
+name: Pound
+status: accepted
+checkedAt: 2026-10-30
+description: Reverse proxy, load balancer and HTTPS front-end for web servers.
+facts:
+  - field: homepage
+    value: https://www.gnu.org.ua/software/pound/
+    url: https://www.gnu.org.ua/software/pound/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This edition of the Pound Manual"
+  - field: repository
+    value: https://github.com/graygnuorg/pound
+    url: https://api.github.com/repos/graygnuorg/pound
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://www.gnu.org.ua/software/pound/manual/
+    url: https://www.gnu.org.ua/software/pound/manual/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This edition of the Pound Manual"
+  - field: maintainer
+    value: Sergey Poznyakoff
+    url: https://raw.githubusercontent.com/graygnuorg/pound/master/NEWS
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (C) 2018-2026 Sergey Poznyakoff"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/graygnuorg/pound/master/NEWS
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (C) 2018-2026 Sergey Poznyakoff"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/graygnuorg
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [reverse-proxy, load-balancer]
+    url: https://raw.githubusercontent.com/graygnuorg/pound/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "reverse proxy, load balancer and HTTPS front-end for Web"
+  - field: language
+    value: c
+    url: https://api.github.com/repos/graygnuorg/pound
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://raw.githubusercontent.com/graygnuorg/pound/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "the binary will be installed at"
+  - field: runsAs
+    value: [always-on]
+    url: https://www.gnu.org.ua/software/pound/manual/Usage.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "detaches itself from the controlling terminal and starts serving incoming requests"
+  - field: installMethod
+    value: build from a source tarball
+    url: https://raw.githubusercontent.com/graygnuorg/pound/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "If you are building __pound__ from a tarball"
+  - field: installMethod
+    value: build from a git clone with ./bootstrap
+    url: https://raw.githubusercontent.com/graygnuorg/pound/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "If you cloned __pound__ from the repository"
+  - field: license
+    value: GPL-3.0
+    url: https://api.github.com/repos/graygnuorg/pound
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: "2022"
+    url: https://api.github.com/repos/graygnuorg/pound/releases
+    checkedAt: 2026-10-30
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/graygnuorg/pound/releases
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-29
+    url: https://api.github.com/repos/graygnuorg/pound/releases
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 70
+    url: https://api.github.com/repos/graygnuorg/pound
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 7
+    url: https://api.github.com/repos/graygnuorg/pound/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runtimeMin, endoflifeId, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, packagistName, importsFrom]
+unreadable: [www.gnu.org/software/pound (404), www.apsis.ch/pound (redirects to a personal site, david-maucher.ch, not the project's own)]
+notes: >
+  Homepage is the maintainer's Pound site on gnu.org.ua, which serves the manual; gnu.org/software/pound returns 404 and is not linked. The README says the original was written by Robert Segall at Apsis GmbH, that Apsis discontinued it on 2022-09-19, and that Sergey Poznyakoff continued development from a fork; the manual's Overview says the fork was taken "as a base". No record exists for Apsis pound, so no forkOf or successorOf is written. firstRelease is the oldest GitHub release, v4.0 (2022-12-02): the repository was created in 2018, has no tags below v4.0, and NEWS starts at 4.0, so no earlier release year is stated by a source. The README says pound is "distributed under the GNU General Public License, Version 3, or (at your option) any later version"; the GitHub API reports GPL-3.0. One license, recorded as GPL-3.0 from the API; the README wording is the "or later" variant. The CSV lastRelease (2026-05-26) is v4.23; the newest stable release is v4.24 (2026-10-29), recorded here. currentMajor is 4, since the README says the versioning starts at 4.0. Contributors is the page count of the contributors endpoint with per_page=1. The README says pound "is not a web server", though it can serve static files through special backends, so no renderingModes is recorded. The management client poundctl is a command-line tool, so no adminUi is recorded. Lua is an optional extension named in the README, not a templating or runtime fact. The README says pound "does not access the hard-disk at all" apart from reading certificate files on start. The README names OpenSSL (1.1.x or 3.0.x) as the build requirement, with PCRE2 and Lua optional.

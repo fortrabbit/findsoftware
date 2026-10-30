@@ -1,0 +1,92 @@
+id: upstash
+name: Upstash Redis
+status: hosted-service
+checkedAt: 2026-10-30
+description: Managed, serverless Redis-compatible database that Upstash runs in the cloud, with optional replication across regions.
+facts:
+  - field: name
+    value: Upstash Redis
+    url: https://upstash.com/docs/redis/overall/getstarted
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Upstash Redis is a highly available, infinitely scalable Redis-compatible database"
+  - field: homepage
+    value: https://upstash.com
+    url: https://upstash.com/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Serverless Redis in the cloud with low latency and durable storage"
+  - field: docs
+    value: https://upstash.com/docs/redis/overall/getstarted
+    url: https://upstash.com/docs/redis/overall/getstarted
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Upstash Redis is a highly available, infinitely scalable Redis-compatible database"
+  - field: maintainer
+    value: Upstash, Inc.
+    url: https://upstash.com/trust/terms.pdf
+    checkedAt: 2026-10-30
+    via: page
+  - field: maintainerType
+    value: company
+    url: https://upstash.com/trust/terms.pdf
+    checkedAt: 2026-10-30
+    via: page
+  - field: categories
+    value: [database]
+    url: https://upstash.com/docs/redis/overall/getstarted
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redis-compatible database"
+  - field: databases
+    value: [redis]
+    url: https://upstash.com/docs/redis/overall/getstarted
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redis-compatible database"
+  - field: regions
+    value: "eu (Ireland, London UK, Frankfurt Germany, Belgium); also US, Canada, Brazil, India, Singapore, Japan, Australia and South Africa on AWS and GCP regions"
+    url: https://upstash.com/docs/redis/features/globaldatabase
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Frankfurt, Germany"
+  - field: apiLimits
+    value: "requests above the plan's max request size are rejected with an exception"
+    url: https://upstash.com/pricing
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Requests above the max request size are rejected with an exception."
+  - field: sso
+    value: SAML
+    url: https://upstash.com/pricing
+    checkedAt: 2026-10-30
+    via: page
+    quote: "SAML Single Sign-On (SSO)"
+  - field: pricingPage
+    value: https://upstash.com/pricing
+    url: https://upstash.com/pricing
+    checkedAt: 2026-10-30
+    via: page
+    quote: "What is included in free tier?"
+  - field: x
+    value: https://twitter.com/upstash
+    url: https://upstash.com/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Follow us on X to stay up to date with the latest news from Upstash."
+  - field: discord
+    value: https://upstash.com/discord
+    url: https://upstash.com/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Join our Discord community to chat with other developers and the Upstash team."
+  - field: hqCountry
+    value: US
+    url: https://upstash.com/
+    checkedAt: 2026-10-30
+    via: page
+notFound: [repository, selfHostOption, language, runtime, runtimeMin, currentMajor, latestReleaseDate, endoflifeId, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, importsFrom, contentStore, renderingModes, runsAs, installMethod, parent, basedOn, forkOf, successorOf, alternativeTo, firstRelease, paidEdition, forum, subreddit, mastodon, bluesky, newsletter, pluginDirectory, pluginCount, githubStargazers, contributors, usageShare, reportedInstalls, npmName, packagistName, npmWeeklyDownloads, wikidata]
+unreadable: []
+notes: >
+  Scope: this record covers Upstash Redis, the product the server-infra row names. The same company sells Vector, QStash, Workflow, Box and Blob; QStash has its own row in candidates-app-services.csv, and the others are not recorded here. The CSV repository https://github.com/upstash/redis-js is the TypeScript client SDK (MIT, released as @upstash/redis), and the CSV lastRelease 2026-09-21 comes from that SDK. Under the hosted-service rule, SDK license, stars, npm figures and release dates are not recorded on this record; the SDK repository is no source for the service. The homepage https://upstash.com lists the Redis product first and the company's other products beside it. The pricing page lists a free tier with 250MB data size and 500K commands per month, Pay as you go and Fixed plans, and Enterprise with custom limits, plus SOC-2 compliance on the Prod Pack; these are plan terms and not recorded as fields, since the rules hold plan tiers are no paidEdition. The pricing table's column for the SAML SSO row is not clear in the text; the sso fact is recorded from the feature list on the same page. The regions list comes from the Global Database page (AWS and GCP regions, EU locations named there). The Upstash Terms of Service (a PDF, which check-quotes cannot read; the sentence was confirmed with pdftotext on 2026-10-30) name Upstash, Inc. as a Delaware corporation; Delaware is a state of incorporation, so it gives no headquarters. hqCountry US comes from the Organization structured data (JSON-LD) on the homepage, which gives the address region CA and the country US; check-quotes cannot read script content, so that fact has no quote. The Terms of Service and Privacy Policy facts cite PDFs, so they carry no quote either. The docs page "Compare Upstash Redis to Alternatives" names AWS ElastiCache, AWS MemoryDB, Redis Labs, AWS DynamoDB and FaunaDB; none has a record under that name, so no alternativeTo is recorded. No firstRelease year appears on the pages read, so none is recorded. No self-hosting option is stated on the pages read. The record is named Upstash Redis for the product scope, while the CSV row name is Upstash; a reviewer decides the display name. Fields coined here: none.
+  The Global Database page describes writes going to a primary region and replicating to read regions, and the homepage describes Upstash Redis as serverless.

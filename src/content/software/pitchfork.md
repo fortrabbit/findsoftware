@@ -17,6 +17,8 @@ runtime:
 hosting:
   - ruby
 runtimeMin: ruby 2.5
+basedOn:
+  - unicorn
 runsAs:
   - always-on
 installMethod: Bundler (Gemfile)
@@ -85,6 +87,9 @@ sources:
     checkedAt: 2026-10-30
   - field: contributors
     url: https://github.com/Shopify/pitchfork
+    checkedAt: 2026-10-30
+  - field: basedOn
+    url: https://github.com/Shopify/pitchfork/blob/master/README.md
     checkedAt: 2026-10-30
 ai: authored
 contentStore: null

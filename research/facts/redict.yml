@@ -1,0 +1,126 @@
+id: redict
+name: Redict
+status: accepted
+checkedAt: 2026-10-30
+description: Distributed key/value store, an independent LGPL-licensed fork of Redis.
+facts:
+  - field: name
+    value: Redict
+    url: https://redict.io/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redict is a distributed key/value store"
+  - field: homepage
+    value: https://redict.io
+    url: https://redict.io/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redict is an independent fork of Redis"
+  - field: repository
+    value: https://codeberg.org/redict/redict
+    url: https://codeberg.org/redict/redict
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://redict.io/docs/
+    url: https://redict.io/docs/install/
+    checkedAt: 2026-10-30
+    via: page
+  - field: maintainer
+    value: Redict project
+    url: https://redict.io/docs/community/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The Redict project is hosted on"
+  - field: maintainerType
+    value: community
+    url: https://redict.io/docs/license/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The copyright of Redict is held in common by all contributors"
+  - field: forkOf
+    value: redis
+    url: https://redict.io/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "independent fork of Redis"
+  - field: categories
+    value: [key-value]
+    url: https://redict.io/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redict is a distributed key/value store"
+  - field: language
+    value: C
+    url: https://codeberg.org/redict/redict/raw/branch/main/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "a standard C11 toolchain"
+  - field: runtime
+    value: binary
+    url: https://redict.io/docs/install/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "suitable C11 toolchain and GNU make"
+  - field: currentMajor
+    value: 7
+    url: https://codeberg.org/redict/redict/releases/tag/7.3.6
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2025-10-08
+    url: https://codeberg.org/redict/redict/releases/tag/7.3.6
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2024
+    url: https://redict.io/posts/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "the first stable version of our copyleft fork of Redis"
+  - field: license
+    value: LGPL-3.0-only
+    url: https://redict.io/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Lesser GNU General public license (LGPL-3.0-only)"
+  - field: installMethod
+    value: system package manager
+    url: https://redict.io/docs/install/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "From your system package manager, such as aptitude"
+  - field: installMethod
+    value: docker image
+    url: https://redict.io/docs/install/containers/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "registry.redict.io/redict"
+  - field: installMethod
+    value: source build
+    url: https://redict.io/docs/install/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "suitable C11 toolchain and GNU make"
+  - field: runsAs
+    value: [always-on]
+    url: https://redict.io/docs/usage/admin/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redict is designed to be a long-running process in your server."
+  - field: importsFrom
+    value: Redis
+    url: https://redict.io/docs/redis-compat/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redict is compatible with your Redis® configuration file and original database"
+  - field: license
+    value: BSD-3-Clause
+    url: https://redict.io/docs/license/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redict is a fork of Redis® OSS 7.2.4, which is distributed under the terms of the permissive BSD 3-Clause license."
+notFound: [hqCountry, contributors, pricingPage, paidEdition, freeTier, adminUi, i18n, sso, userRoles, multisite, livePreview, headlessApi, databases, forum, parent, successorOf, alternativeTo, basedOn, endoflifeId, dockerPulls, githubStargazers, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, wikidata]
+unreadable: []
+notes: >
+  Codeberg is the only forge that carries the project; there is no GitHub mirror, so releases come from the Codeberg API. The Codeberg API shows 356 stars at the time of reading; no star field exists for forges other than GitHub, so the figure is not recorded, and its contributors endpoint answers 404, so contributors is not counted. The highest stable release is 7.3.6 (2025-10-08, confirmed by the project's release post), which is on the 7.3 line; the minor line is not a field. The homepage calls Redict a fork of Redis OSS 7.2.4. firstRelease 2024 is the year of the release post announcing 7.3.0 as the first stable version (2024-04-03). The license page says changes made by Redict are LGPL-3.0-only on top of the Redis OSS 7.2.4 source, which is BSD-3-Clause, so both statements are recorded; the LICENSES folder also holds LGPL-3.0-or-later.txt, but the license page explains why only LGPL-3.0-only applies. The community page names Matrix and IRC chat and a mailing list, which have no field. The maintainer is named only as "the Redict project"; no legal entity or country is stated. The docker route is the project's own registry, registry.redict.io, not Docker Hub, so no dockerPulls figure exists. Fields coined here: none.

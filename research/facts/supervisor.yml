@@ -1,0 +1,137 @@
+id: supervisor
+name: Supervisor
+status: accepted
+checkedAt: 2026-10-30
+description: Client/server process control system, written in Python, that starts, stops and monitors programs on UNIX-like operating systems.
+facts:
+  - field: name
+    value: Supervisor
+    url: https://supervisord.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Supervisor is a client/server system that allows its users to monitor and control a number of processes on UNIX-like operating systems."
+  - field: homepage
+    value: https://supervisord.org/
+    url: https://supervisord.org/
+    checkedAt: 2026-10-30
+    via: page
+  - field: repository
+    value: https://github.com/Supervisor/supervisor
+    url: https://github.com/Supervisor/supervisor
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://supervisord.org/
+    url: https://supervisord.org/
+    checkedAt: 2026-10-30
+    via: page
+  - field: maintainer
+    value: Agendaless Consulting
+    url: https://supervisord.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright 2004-2026, Agendaless Consulting and Contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Supervisor
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [process-manager]
+    url: https://supervisord.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Supervisor is a client/server system"
+  - field: language
+    value: Python
+    url: https://github.com/Supervisor/supervisor
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: python
+    url: https://supervisord.org/introduction.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "written entirely in Python"
+  - field: runtimeMin
+    value: python 3.4
+    url: https://supervisord.org/introduction.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Supervisor is intended to work on Python 3 version 3.4 or later"
+  - field: installMethod
+    value: pip install supervisor
+    url: https://supervisord.org/installing.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "pip install supervisor"
+  - field: installMethod
+    value: distribution package
+    url: https://supervisord.org/installing.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Installing a Distribution Package"
+  - field: runsAs
+    value: [always-on]
+    url: https://supervisord.org/running.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "resulting process will daemonize itself and detach from the terminal"
+  - field: adminUi
+    value: yes, browser interface served by supervisord over an internet socket
+    url: https://supervisord.org/introduction.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "supervisorctl may be accessed via a browser if you start"
+  - field: license
+    value: BSD-derived
+    url: https://github.com/Supervisor/supervisor/blob/main/setup.py
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This software is subject to the provisions of the BSD-like license at"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/Supervisor/supervisor/blob/main/LICENSES.txt
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without modification, are permitted"
+  - field: currentMajor
+    value: 4
+    url: https://github.com/Supervisor/supervisor/tree/4.3.0
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2025-08-23
+    url: https://github.com/Supervisor/supervisor/tree/4.3.0
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2004
+    url: https://supervisord.org/changes.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "1.0.3 or “Alpha 3” (2004-05-26)"
+  - field: pypiName
+    value: supervisor
+    url: https://pypi.org/pypi/supervisor/json
+    checkedAt: 2026-10-30
+    via: api
+  - field: pypiDownloads
+    value: 7278447 (last month)
+    url: https://pypistats.org/api/packages/supervisor/recent
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 9154
+    url: https://api.github.com/repos/Supervisor/supervisor
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 148
+    url: https://api.github.com/repos/Supervisor/supervisor/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+notFound: [hqCountry, parent, endoflifeId, pricingPage, paidEdition, headlessApi, templating, i18n, multisite, userRoles, sso, contentStore, databases, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, youtube, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, dockerPulls, dependentRepos, dependentPackages, httpArchiveSites, renderingModes, lastCommitDate]
+unreadable: []
+notes: >
+  The CSV homepage and the PyPI homepage use http://supervisord.org; that host answers only as a redirect to https://supervisord.org/, which answers 200, so the https address is recorded. Criterion 1 is a judgment: Supervisor is a general process manager, and its own pages tie it to web use only through FastCGI process groups ("Supervisor can manage groups of FastCGI processes that all listen on the same socket"), the status stays accepted under the area ruling. The project has no GitHub releases; the 4.3.0 tag commit date (2025-08-23, the same day as the PyPI upload) is the release date. The license is described in setup.py and LICENSES.txt as a BSD-like license from repoze.org; no SPDX identifier matches and GitHub reports NOASSERTION, so the value is recorded as stated. The PyPI author is Chris McDonough; the copyright holder named on the project's pages is Agendaless Consulting, so that is the maintainer. The repository is not archived and was last pushed 2025-12-21. Platform: the introduction page says Supervisor works on just about everything except Windows. Fields coined here: none.

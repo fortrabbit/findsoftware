@@ -1,0 +1,138 @@
+id: puma
+name: Puma
+status: accepted
+checkedAt: 2026-10-30
+description: Multi-threaded HTTP 1.1 server for Ruby and Rack applications.
+facts:
+  - field: homepage
+    value: https://puma.io/
+    url: https://puma.io/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "fast and concurrent HTTP 1.1 server for Ruby web applications"
+  - field: repository
+    value: https://github.com/puma/puma
+    url: https://api.github.com/repos/puma/puma
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://puma.io/puma/
+    url: https://puma.io/puma/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Puma: A Ruby Web Server Built For Parallelism"
+  - field: maintainer
+    value: Evan Phoenix
+    url: https://raw.githubusercontent.com/puma/puma/main/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (c) 2019, Evan Phoenix"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/puma/puma/main/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (c) 2019, Evan Phoenix"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/puma
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [app-server]
+    url: https://raw.githubusercontent.com/puma/puma/main/docs/architecture.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Puma is a threaded Ruby HTTP application server"
+  - field: language
+    value: ruby
+    url: https://api.github.com/repos/puma/puma
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://raw.githubusercontent.com/puma/puma/main/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Puma also works well with Ruby (MRI) and JRuby"
+  - field: runtimeMin
+    value: ">=3.0"
+    url: https://raw.githubusercontent.com/puma/puma/v8.0.2/puma.gemspec
+    checkedAt: 2026-10-30
+    via: page
+    quote: 'required_ruby_version = Gem::Requirement.new(">= 3.0")'
+  - field: runsAs
+    value: [always-on]
+    url: https://raw.githubusercontent.com/puma/puma/main/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "It is common to use process monitors with Puma."
+  - field: installMethod
+    value: gem install (RubyGems)
+    url: https://raw.githubusercontent.com/puma/puma/main/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "gem install puma"
+  - field: installMethod
+    value: Gemfile entry with bundler
+    url: https://puma.io/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "just add Puma to your project's Gemfile"
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/puma/puma
+    checkedAt: 2026-10-30
+    via: api
+  - field: license
+    value: BSD-3-Clause
+    url: https://raw.githubusercontent.com/puma/puma/main/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "BSD 3-Clause License"
+  - field: firstRelease
+    value: "2011"
+    url: https://puma.io/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Puma was created by Evan Phoenix in late 2011"
+  - field: currentMajor
+    value: 8
+    url: https://api.github.com/repos/puma/puma/releases
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-27
+    url: https://api.github.com/repos/puma/puma/releases
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 7922
+    url: https://api.github.com/repos/puma/puma
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 402
+    url: https://api.github.com/repos/puma/puma/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+  - field: rubygemsName
+    value: puma
+    url: https://rubygems.org/api/v1/gems/puma.json
+    checkedAt: 2026-10-30
+    via: api
+  - field: rubygemsDownloads
+    value: "622617600 (total)"
+    url: https://rubygems.org/api/v1/gems/puma.json
+    checkedAt: 2026-10-30
+    via: api
+  - field: alternativeTo
+    value: [unicorn]
+    url: https://puma.io/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Unicorn - 1076 Mb"
+notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, endoflifeId, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, npmName, packagistName, dockerPulls]
+unreadable: []
+notes: >
+  The puma.io site says Puma was "created by Evan Phoenix in late 2011 as a derivative of Mongrel", which is the project's own first-release year; the GitHub repository was created 2011-09-23 and the oldest RubyGems upload is 0.8.0 (2011-10-25). The changelog starts at 1.0.0 (2012-03-29). The README says the HTTP parser is "inherited from Mongrel" and the site says the project "comes from a long line of ruby webservers derived from Zed Shaw's seminal work on Mongrel"; no Mongrel record exists and no source says "fork of" or "based on", so no forkOf or basedOn is written. The README says Puma "is currently the most popular Ruby webserver" and "is the default server for Ruby on Rails"; the first is a comparison without a figure and the second is a Rails statement, so neither is recorded as a relation or as reportedInstalls. Two release lines are maintained: 8.0.2 is the highest stable version (currentMajor 8) and 7.2.1 was published the same day (2026-05-27, the newest stable release by date); v7.0.0.pre1 is the only prerelease tag on the releases list since 2025. The LICENSE copyright line names Evan Phoenix (2019) with "Some code by Zed Shaw, (c) 2005"; the maintainer follows the LICENSE copyright line. The RubyGems figure is the total downloads of the puma gem, which is the package the install docs name; the CSV's earlier figure (617.0M) is older. The gemspec sets required_ruby_version to ">= 3.0" at the v8.0.2 tag. The puma.io site and README name no social, forum or plugin link, and no paid edition or hosted service. The homepage section "Puma Vs. Other Webservers" charts Puma against Unicorn and Rainbows!; Unicorn has a record, so it is recorded as alternativeTo, and Rainbows! has none.

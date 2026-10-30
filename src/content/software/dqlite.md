@@ -18,6 +18,8 @@ runtime:
   - binary
 hosting:
   - binary
+basedOn:
+  - sqlite
 databases:
   - sqlite
 installMethod: Ubuntu PPA (development release)
@@ -67,6 +69,9 @@ sources:
     checkedAt: 2026-10-28
   - field: installMethod
     url: https://raw.githubusercontent.com/canonical/dqlite/master/README.md
+    checkedAt: 2026-10-28
+  - field: basedOn
+    url: https://dqlite.io/
     checkedAt: 2026-10-28
   - field: license
     url: https://raw.githubusercontent.com/canonical/dqlite/master/LICENSE

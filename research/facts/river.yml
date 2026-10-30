@@ -1,0 +1,122 @@
+id: river
+name: River
+status: stub
+checkedAt: 2026-10-30
+description: Reverse proxy application written in Rust, built on Cloudflare's Pingora library.
+facts:
+  - field: name
+    value: River
+    url: https://github.com/memorysafety/river/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Reverse Proxy Application based on the"
+  - field: homepage
+    value: https://www.memorysafety.org/initiative/reverse-proxy/
+    url: https://www.memorysafety.org/initiative/reverse-proxy/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "River Reverse Proxy - Prossimo"
+  - field: repository
+    value: https://github.com/memorysafety/river
+    url: https://github.com/memorysafety/river
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://onevariable.com/river-user-manual/
+    url: https://onevariable.com/river-user-manual/config/kdl.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "River User Manual"
+  - field: maintainer
+    value: Internet Security Research Group
+    url: https://www.memorysafety.org/initiative/reverse-proxy/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "2026 Internet Security Research Group"
+  - field: hqCountry
+    value: US
+    url: https://www.abetterinternet.org/terms-of-service
+    checkedAt: 2026-10-30
+    via: page
+    quote: "548 Market St, PMB 77519, San Francisco, California 94104-5401"
+  - field: categories
+    value: [reverse-proxy]
+    url: https://github.com/memorysafety/river/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Reverse Proxy Application based on the"
+  - field: language
+    value: Rust
+    url: https://github.com/memorysafety/river
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: binary
+    url: https://github.com/memorysafety/river/blob/main/user-manual/src/install.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Pre-compiled versions of River and installation instructions are provided on"
+  - field: installMethod
+    value: binary download from GitHub releases
+    url: https://github.com/memorysafety/river/blob/main/user-manual/src/install.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Pre-compiled versions of River and installation instructions are provided on"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/memorysafety/river/blob/main/user-manual/src/config/cli.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "the River application will run until it is commanded"
+  - field: basedOn
+    value: pingora
+    url: https://www.memorysafety.org/initiative/reverse-proxy/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Built on Cloudflare's Pingora framework"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/memorysafety/river/releases/tag/v0.5.0
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2024-08-30
+    url: https://github.com/memorysafety/river/releases/tag/v0.5.0
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2024
+    url: https://www.memorysafety.org/initiative/reverse-proxy/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "February 28, 2024 Announcing River"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/memorysafety/river
+    checkedAt: 2026-10-30
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/memorysafety/river/blob/main/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: githubStargazers
+    value: 2353
+    url: https://github.com/memorysafety/river
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 3
+    url: https://api.github.com/repos/memorysafety/river/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/memorysafety/river
+    checkedAt: 2026-10-30
+    via: api
+notFound: [pricingPage, paidEdition, runtimeMin, endoflifeId, packagistName, npmName, crateName, dockerPulls, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, dependentPackages, dependentRepos, httpArchiveSites, adminUi, headlessApi, i18n, multisite, userRoles, sso, contentStore, databases, renderingModes, parent, successorOf, forkOf, alternativeTo, wikidata, selfHostOption]
+unreadable: []
+notes: >
+  Doubt on criterion 4: the project page says "Development is currently paused while we focus resources on other projects. We hope to get back to it soon." A resumed release or an end statement settles it. The repository's homepage field and the Prossimo initiative page are the same link; the page is the River project page on the Prossimo site, and Prossimo is an initiative of the Internet Security Research Group. The CLI help names the project "A reverse proxy from Prossimo", so the maintainer follows the footer copyright line on the same site. The 548 Market St address is the group's address on its terms page; the page names no country, and the mailing address carries "USA". Status is stub because of the pause, which is no end statement. The README says "Until further notice, there is no expectation of stability." currentMajor 0 stands for the 0.x line. firstRelease 2024 is the Prossimo announcement date (2024-02-28); the oldest GitHub tag is v0.0.0 (2024-03-25) and the repository was created 2024-02-12. The install page lists builds for x86-64 Linux (GNU and MUSL libc) and aarch64 macOS. The user manual lives at onevariable.com, which the README links; the repository carries the same manual under user-manual/. Configuration is by KDL file (the CLI flags --daemonize, --upgrade and --pidfile are documented in the manual). runtimeMin not recorded: the Cargo manifests state no rust-version. The project exposes no registry package for install; the crate named river is not in the install docs. Fields coined: none.

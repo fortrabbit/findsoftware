@@ -1,0 +1,113 @@
+id: waitress
+name: Waitress
+status: accepted
+checkedAt: 2026-10-30
+description: Production-quality pure-Python WSGI server for Python 3 that has no dependencies outside the standard library.
+facts:
+  - field: homepage
+    value: https://docs.pylonsproject.org/projects/waitress/en/latest/
+    url: https://docs.pylonsproject.org/projects/waitress/en/latest/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Waitress is meant to be a production-quality pure-Python WSGI server"
+  - field: repository
+    value: https://github.com/Pylons/waitress
+    url: https://api.github.com/repos/Pylons/waitress
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://docs.pylonsproject.org/projects/waitress/en/latest/usage.html
+    url: https://docs.pylonsproject.org/projects/waitress/en/latest/usage.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The following code will run waitress on port 8080"
+  - field: maintainer
+    value: Pylons Project
+    url: https://docs.pylonsproject.org/projects/waitress/en/latest/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The Pylons Project web site is the main online source of Waitress support and development information."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Pylons
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [app-server]
+    url: https://docs.pylonsproject.org/projects/waitress/en/latest/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Waitress is meant to be a production-quality pure-Python WSGI server"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/Pylons/waitress/languages
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://raw.githubusercontent.com/Pylons/waitress/main/README.rst
+    checkedAt: 2026-10-30
+    via: page
+    quote: "It runs on CPython on Unix and Windows under Python 3.9+."
+  - field: runtimeMin
+    value: ">=3.9.0"
+    url: https://pypi.org/pypi/waitress/json
+    checkedAt: 2026-10-30
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.pylonsproject.org/projects/waitress/en/latest/usage.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The following code will run waitress on port 8080 on all available IP addresses"
+  - field: license
+    value: ZPL-2.1
+    url: https://github.com/Pylons/waitress/blob/v3.0.2/LICENSE.txt
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Zope Public License (ZPL) Version 2.1"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/Pylons/waitress/blob/v3.0.2/LICENSE.txt
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This license has been certified as open source."
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/Pylons/waitress/releases/latest
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2024-11-16
+    url: https://api.github.com/repos/Pylons/waitress/releases/latest
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: "2011"
+    url: https://api.github.com/repos/Pylons/waitress/commits/0.1
+    checkedAt: 2026-10-30
+    via: api
+  - field: pypiName
+    value: waitress
+    url: https://pypi.org/pypi/waitress/json
+    checkedAt: 2026-10-30
+    via: api
+  - field: pypiDownloads
+    value: "6459024 (last month)"
+    url: https://pypistats.org/api/packages/waitress/recent
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 1602
+    url: https://api.github.com/repos/Pylons/waitress
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 57
+    url: https://api.github.com/repos/Pylons/waitress/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+notFound: [maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, paidEdition, pricingPage, hostedOffering, selfHostOption, installMethod, npmName, packagistName, endoflifeId, dockerPulls, dependentRepos, dependentPackages, forum, discord, x, mastodon, bluesky, subreddit, newsletter, pluginDirectory, pluginCount, wikidata, usageShare, reportedInstalls, contentStore, headlessApi, templating, adminUi, multisite, livePreview, userRoles, sso, importsFrom, i18n, renderingModes, supportedVersions]
+unreadable: ["https://pypi.org/project/waitress/ (bot challenge, not retried)"]
+notes: >
+  Accepted. Waitress is a WSGI server that an application runs under, so runsAs is always-on from the usage page, which runs it on a port until stopped ("Press Ctrl-C ... to exit the server"); the runner page calls waitress-serve "useful for development, and in production situations". The Pylons Project is the maintainer the docs name; the PyPI metadata names the same maintainer and lists the author as "Zope Foundation and Contributors", and the docs footer reads "Copyright 2012-2026, Agendaless Consulting", so the legal holders differ by page and a reviewer decides the maintainer name. The LICENSE file names ZPL 2.1 with no copyright line; the GitHub license is NOASSERTION. firstRelease is 2011 from the first tag (0.1), whose commit date (2011-12-30) matches the first PyPI upload; the repository was created on 2011-12-17. The changelog on the repository covers 3.0.0 onwards, so it gives no earlier date. The CHANGES file lists "4.0.0 (unreleased)", which is not a release and is not a prerelease, so latestPrereleaseDate is absent. runtimeMin takes the PyPI requires_python of the latest release (3.0.2); the README agrees with 3.9+. No docs page, README or PyPI metadata shows a pip command (the PyPI project page answers with a bot challenge); the Heroku section only says to include waitress in requirements.txt, so installMethod is absent; the usage and deployment pages document how to run the server, which is the criterion 3 evidence. The pypistats figure is the "last_month" total for the day of the read; the PyPI JSON reports no download figure. The reverse-proxy page says "Waitress does not natively support TLS" and describes running it behind a reverse proxy. Waitress is not built on another project: the README names Flask, ASP.NET Core and uvloop only as inspirations, and the docs name no parent, so basedOn is absent.

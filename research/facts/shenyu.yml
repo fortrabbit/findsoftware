@@ -1,0 +1,134 @@
+id: shenyu
+name: Apache ShenYu
+status: accepted
+checkedAt: 2026-10-30
+description: Java-native API gateway for HTTP, Dubbo, gRPC and WebSocket services, with plugins for authentication, traffic control and observability.
+facts:
+  - field: homepage
+    value: https://shenyu.apache.org
+    url: https://shenyu.apache.org
+    checkedAt: 2026-10-30
+    via: page
+  - field: repository
+    value: https://github.com/apache/shenyu
+    url: https://github.com/apache/shenyu
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://shenyu.apache.org/docs/
+    url: https://shenyu.apache.org/docs/
+    checkedAt: 2026-10-30
+    via: page
+  - field: maintainer
+    value: The Apache Software Foundation
+    url: https://shenyu.apache.org
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright © 2026 The Apache Software Foundation."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/apache/shenyu
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2019
+    url: https://github.com/apache/shenyu/tree/1.0.2
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [api-gateway]
+    url: https://shenyu.apache.org
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Connect, secure, and govern your APIs with an extensible, multi-protocol gateway."
+  - field: language
+    value: Java
+    url: https://github.com/apache/shenyu
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: jvm
+    url: https://github.com/apache/shenyu/blob/v2.7.1/pom.xml
+    checkedAt: 2026-10-30
+    via: page
+    quote: "<java.version>17</java.version>"
+  - field: runtimeMin
+    value: "17"
+    url: https://github.com/apache/shenyu/blob/v2.7.1/pom.xml
+    checkedAt: 2026-10-30
+    via: page
+    quote: "<java.version>17</java.version>"
+  - field: installMethod
+    value: binary package (bootstrap tar.gz)
+    url: https://shenyu.apache.org/docs/deployment/deployment-quick/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "download apache-shenyu-2.7.1-bootstrap-bin.tar.gz"
+  - field: installMethod
+    value: docker image apache/shenyu-bootstrap
+    url: https://shenyu.apache.org/docs/deployment/deployment-docker/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "docker pull apache/shenyu-bootstrap:2.7.1"
+  - field: installMethod
+    value: docker-compose
+    url: https://shenyu.apache.org/docs/deployment/deployment-docker-compose/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "docker-compose -f ./shenyu-${VERSION}/docker-compose.yaml up -d"
+  - field: adminUi
+    value: yes, ShenYu Admin management console
+    url: https://shenyu.apache.org
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Manage plugins, selectors, and routing rules from one visual console."
+  - field: databases
+    value: [mysql, postgres, oracle]
+    url: https://shenyu.apache.org/docs/deployment/deployment-docker/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "use MySQL to store data, follow the guide document to initialize the database"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/apache/shenyu
+    checkedAt: 2026-10-30
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/apache/shenyu
+    checkedAt: 2026-10-30
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://github.com/apache/shenyu/releases/tag/v2.7.1
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-08
+    url: https://github.com/apache/shenyu/releases/tag/v2.7.1
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-10-28
+    url: https://github.com/apache/shenyu/tree/v2.7.2-rc20261029
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 8908
+    url: https://github.com/apache/shenyu
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 386
+    url: https://api.github.com/repos/apache/shenyu/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+  - field: dockerPulls
+    value: 86602 (2026-10-30)
+    url: https://hub.docker.com/v2/repositories/apache/shenyu-bootstrap/
+    checkedAt: 2026-10-30
+    via: api
+notFound: [basedOn, forkOf, successorOf, alternativeTo, parent, hqCountry, wikidata, discord, x, bluesky, mastodon, forum, subreddit, newsletter, youtube, usageShare, reportedInstalls, pluginDirectory, npmName, packagistName, endoflifeId, sso, userRoles, i18n, livePreview, importsFrom, multisite, headlessApi, templating, selfHostOption, apiLimits, regions, pricingPage, paidEdition, runsAs, renderingModes]
+unreadable: []
+notes: >
+  Status accepted: the repository is not archived; the latest stable GitHub release is v2.7.1 (2026-07-08), major 2. The tag v2.7.2 (commit 2026-10-27) and two release-candidate tags (v2.7.2-rc20261028, v2.7.2-rc20261029) exist without GitHub releases; the newest rc tag is recorded as latestPrereleaseDate. The Apache download page (https://shenyu.apache.org/download/, read 2026-10-30) lists 2.7.1 as the latest release, so v2.7.2 is not recorded as stable. firstRelease 2019 is the oldest tag, 1.0.2 (commit 2019-01-17); the first GitHub release is 2.2.1 (2020-09-20), and the repository was created in 2018. The site names no founding year. Maintainer: the homepage footer and the NOTICE file name The Apache Software Foundation; a foundation is no project HQ, so hqCountry is absent. The homepage links the dev mailing list, which is not a forum, so no forum field is recorded. Runtime: the pom at v2.7.1 sets java.version 17, and the deployment guide says "Install JDK17+ locally". runsAs is not recorded: the quick start runs the bootstrap with start.sh and the docker guide runs it with docker run -d, but no page calls it a server, daemon or service, so runsAs stays out. databases: the docker guide names MySQL, PostgreSQL and Oracle for the admin console's own data store, so they describe shenyu-admin, not the gateway. dockerPulls counts apache/shenyu-bootstrap, the gateway image the docker guide names; apache/shenyu-admin has 449931 pulls (not recorded). Community: the homepage names the dev mailing list (lists.apache.org) and GitHub only. The README marks some plugins as deprecated (Hystrix, Apollo); those are plugin notices, not an end of the project, so the status is unchanged. The plugin center in the docs is documentation, not a plugin directory. Fields coined: none.

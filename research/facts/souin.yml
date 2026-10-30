@@ -1,0 +1,123 @@
+id: souin
+name: Souin
+status: accepted
+checkedAt: 2026-10-30
+description: HTTP cache system written in Go that runs as middleware or a plugin in reverse proxies and Go web frameworks.
+facts:
+  - field: name
+    value: Souin
+    url: https://docs.souin.io/docs/introduction/
+    checkedAt: 2026-10-30
+    via: page
+  - field: homepage
+    value: https://docs.souin.io
+    url: https://github.com/darkweak/souin
+    checkedAt: 2026-10-30
+    via: api
+  - field: repository
+    value: https://github.com/darkweak/souin
+    url: https://api.github.com/repos/darkweak/souin
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://docs.souin.io/docs/
+    url: https://docs.souin.io/docs/
+    checkedAt: 2026-10-30
+    via: page
+  - field: maintainer
+    value: Sylvain Combraque
+    url: https://github.com/darkweak/souin/blob/master/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (c) 2020-present Sylvain COMBRAQUE"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/darkweak
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [web-server]
+    url: https://github.com/darkweak/souin/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "placed on top of your current reverse-proxy whether it's Apache, Nginx"
+  - field: language
+    value: Go
+    url: https://docs.souin.io/docs/introduction/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Souin is a powerful HTTP cache system written in go"
+  - field: runtime
+    value: binary
+    url: https://github.com/darkweak/souin/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Since it's written in go, it can be deployed on any server"
+  - field: runtimeMin
+    value: "1.25"
+    url: https://github.com/darkweak/souin/blob/v1.7.9/go.mod
+    checkedAt: 2026-10-30
+    via: page
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/darkweak/souin
+    checkedAt: 2026-10-30
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/darkweak/souin/releases/latest
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-16
+    url: https://api.github.com/repos/darkweak/souin/releases/latest
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2019
+    url: https://github.com/darkweak/souin/releases/tag/v1.0.0
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 1013
+    url: https://api.github.com/repos/darkweak/souin
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 37
+    url: https://api.github.com/repos/darkweak/souin/contributors
+    checkedAt: 2026-10-30
+    via: api
+  - field: dockerPulls
+    value: "20070 (2026-10-30)"
+    url: https://hub.docker.com/r/darkweak/souin
+    checkedAt: 2026-10-30
+    via: api
+  - field: installMethod
+    value: [docker-image]
+    url: https://docs.souin.io/docs/quickstart/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The easiest way to try the HTTP cache is to run the docker container image"
+  - field: installMethod
+    value: [xcaddy-build]
+    url: https://docs.souin.io/docs/middlewares/caddy/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "xcaddy build --with github.com/darkweak/souin/plugins/caddy"
+  - field: installMethod
+    value: [standalone-from-source]
+    url: https://docs.souin.io/docs/quickstart/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "run the golang standalone server"
+  - field: pluginDirectory
+    value: https://github.com/darkweak/souin/tree/master/plugins
+    url: https://github.com/darkweak/souin/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "To use Souin as caddy module, you can refer to the Caddy module integration folder"
+notFound: [basedOn, parent, forkOf, hqCountry, paidEdition, pricingPage, endoflifeId, latestPrereleaseDate, headlessApi, adminUi, templating, i18n, multisite, userRoles, sso, contentStore, databases, renderingModes, usageShare, reportedInstalls, npmWeeklyDownloads, packagistDownloads, pypiDownloads, discord, forum, subreddit, mastodon, bluesky, x, youtube, facebook, instagram, threads, newsletter, wikidata, httpArchiveSites, hostedOffering]
+unreadable: []
+notes: >
+  No basedOn: the README names Caddy, Traefik, Tyk, Apache and Nginx as places it sits, and the Go framework list runs past twenty, so no single parent is stated. The standalone server is "deprecated but still maintained for testing purpose"; the docs call the Caddy module the recommended way, so the standalone route is an install route with that caveat, and runsAs is absent because the module runs inside the proxy process. Since v1.7.0 Souin ships one in-memory storage; Badger, Etcd, NutsDB, Olric, Otter, Redis and Simplefs are cache backends added at build time, not databases. The Caddy docs call github.com/caddyserver/cache-handler "the stable version" of the same module; no forkOf is recorded. The Docker Hub count is for darkweak/souin:latest, the image the quickstart names. The oldest GitHub release is v0.1 (2019-11-20, prerelease); v1.0.0 followed on 2019-12-06, so firstRelease is 2019. The LICENSE copyright line names Sylvain Combraque from 2020; the README names no company. The docs site's HTML head holds a Hugo theme's author and email metadata, which describe the theme and not the project, so they are not used. The CSV categories "cache" and "http-cache" have no categoryMap value, so categories uses web-server.

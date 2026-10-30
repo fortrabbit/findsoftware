@@ -1,0 +1,118 @@
+id: squid
+name: Squid
+status: accepted
+checkedAt: 2026-10-30
+description: Caching proxy for the web, written in C++, supporting HTTP, HTTPS and FTP and usable as a server accelerator.
+facts:
+  - field: homepage
+    value: https://www.squid-cache.org
+    url: https://www.squid-cache.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more."
+  - field: repository
+    value: https://github.com/squid-cache/squid
+    url: https://api.github.com/repos/squid-cache/squid
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://www.squid-cache.org/Doc/
+    url: https://www.squid-cache.org/Doc/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Squid Documentation"
+  - field: maintainer
+    value: The Squid Software Foundation
+    url: https://raw.githubusercontent.com/squid-cache/squid/master/README
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (C) 1996-2026 The Squid Software Foundation and contributors"
+  - field: maintainerType
+    value: foundation
+    url: https://www.squid-cache.org/Foundation/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The Foundation was incorporated as a Colorado, USA non-profit in 2011"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/squid-cache/squid
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [cache, proxy]
+    url: https://www.squid-cache.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more."
+  - field: language
+    value: C++
+    url: https://api.github.com/repos/squid-cache/squid
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://raw.githubusercontent.com/squid-cache/squid/master/INSTALL
+    checkedAt: 2026-10-30
+    via: page
+    quote: "To build and install the Squid Cache, type:"
+  - field: installMethod
+    value: os-packages
+    url: https://www.squid-cache.org/Download/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Many operating systems include Squid in their ports/packages system."
+  - field: installMethod
+    value: build-from-source-configure-make
+    url: https://www.squid-cache.org/Download/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The source can be obtained with git from"
+  - field: installMethod
+    value: binary-download
+    url: https://www.squid-cache.org/Download/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "They are available for a variety of platforms, including Windows."
+  - field: runsAs
+    value: [always-on]
+    url: https://wiki.squid-cache.org/SquidFaq/InstallingSquid
+    checkedAt: 2026-10-30
+    via: page
+    quote: "If you want to run squid in the background, as a daemon process"
+  - field: license
+    value: GPLv2+
+    url: https://raw.githubusercontent.com/squid-cache/squid/master/README
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Squid software is distributed under GPLv2+ license"
+  - field: licenseModel
+    value: open-source
+    url: https://www.squid-cache.org/Foundation/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "We do not charge in any manner for our software"
+  - field: currentMajor
+    value: 7
+    url: https://www.squid-cache.org/Versions/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "v7.7 (released 2026-08-24)"
+  - field: latestReleaseDate
+    value: 2026-08-24
+    url: https://api.github.com/repos/squid-cache/squid/releases/latest
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 3133
+    url: https://api.github.com/repos/squid-cache/squid
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 192
+    url: https://api.github.com/repos/squid-cache/squid/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+notFound: [firstRelease, renderingModes, runtimeMin, hqCountry, docker, dockerPulls, pricingPage, freeTier, paidEditions, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, adminUi, headlessApi, i18n, multisite, userRoles, sso, contentStore, databases, templating, endoflifeId, parent, basedOn, npmName, packagistName, usageShare]
+unreadable: []
+notes: >
+  The homepage is the project site, which names the Squid Software Foundation as the governing body and states the GPL. The README gives the copyright holder as the Foundation and states the license as GPLv2+; the COPYING file is GPL version 2 and the GitHub API reports GPL-2.0, which is the same license in two wordings. The Foundation page says it was incorporated as a Colorado, USA non-profit, which gives no project headquarters, so hqCountry is absent. The versions page says the developers can only support the latest stable version and that support for older versions may be available through distributions or third parties, and the current series is 7.7, so currentMajor is 7 and the minor line is not recorded. The latest GitHub release is SQUID_7_7 (2026-08-24). The release list begins with HISTORIC_RELEASES and SQUID_3_0_PRE1 imports from 2024-12-30, so firstRelease is absent: the ChangeLog gives no release date for its earliest entries, and no page on the site or wiki states a first-release year (the about page says Squid is based on the Harvest Cache Daemon of the early 1990s, and the README copyright line starts in 1996, which is not a release date). The homepage describes Squid as a server accelerator and names website content acceleration; the FAQ page on installing Squid describes running it in the background as a daemon process, which is the runsAs source. The Docker Hub image ubuntu/squid (59,266,029 pulls) is Canonical's image, not one the project names, so no dockerPulls is recorded. The project's own download page names no Docker image. Contributors counted without anon across all pages (last page 192). The mailing lists page lists squid-users for community support, which has no field. Fields coined here: none.

@@ -1,0 +1,64 @@
+id: runcloud
+name: RunCloud
+status: hosted-service
+checkedAt: 2026-10-30
+description: Hosted control panel that connects, provisions and manages the server and web application infrastructure its users run at cloud providers or on their own hardware.
+facts:
+  - field: name
+    value: RunCloud
+    url: https://runcloud.io
+    checkedAt: 2026-10-30
+    via: page
+    quote: "RunCloud - PHP Cloud Server Management Panel"
+  - field: homepage
+    value: https://runcloud.io
+    url: https://runcloud.io
+    checkedAt: 2026-10-30
+    via: page
+    quote: "A simple yet powerful control panel for cloud servers"
+  - field: docs
+    value: https://runcloud.io/docs
+    url: https://runcloud.io/docs
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Help, Support, and Documentation for RunCloud"
+  - field: pricingPage
+    value: https://runcloud.io/pricing
+    url: https://runcloud.io/pricing
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Transparent, Simple Pricing"
+  - field: maintainer
+    value: RunCloud Sdn Bhd
+    url: https://runcloud.io/legal/tos
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This website is operated by RunCloud Sdn Bhd."
+  - field: maintainerType
+    value: company
+    url: https://runcloud.io/legal/tos
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This website is operated by RunCloud Sdn Bhd."
+  - field: categories
+    value: [control-panel]
+    url: https://runcloud.io
+    checkedAt: 2026-10-30
+    via: page
+    quote: "A simple yet powerful control panel for cloud servers"
+  - field: databases
+    value: [mysql, mariadb]
+    url: https://runcloud.io/docs/mysql-mariadb-migration
+    checkedAt: 2026-10-30
+    via: page
+    quote: "How to migrate between MySQL and MariaDB"
+  - field: userRoles
+    value: custom roles per workspace
+    url: https://runcloud.io/docs/create-and-manage-workspace-roles
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Custom roles in your Workspace allow you to define specific permissions that can be assigned to team members"
+notFound: [hqCountry, firstRelease, regions, apiLimits, selfHostOption, sso, i18n, multisite, livePreview, importsFrom, adminUi, headlessApi, contentStore, templating, x, discord, mastodon, bluesky, subreddit, newsletter, forum, repository, githubStargazers, contributors, parent, successorOf, alternativeTo, basedOn, language, runtime, runsAs, renderingModes, currentMajor, latestReleaseDate, pluginDirectory, pluginCount, usageShare, reportedInstalls, packagistName, npmName, wikidata]
+unreadable: ["https://runcloud.io/pricing (the plan table renders in JavaScript; only the heading and the call to action are in the page text, so plan features are not read)", "https://runcloud.io/changelog (renders in JavaScript; no entries in the page text)"]
+notes: >
+  Hosted-service record: RunCloud runs as a web panel at manage.runcloud.io and installs its agent on servers the user owns; the homepage names Vultr, Linode, UpCloud, Hetzner, AWS, Google Cloud and DigitalOcean as cloud providers, and the docs name on-premise servers too ("RunCloud supports all major cloud providers and on-premise servers"). The provider list is not a field. The docs name NGINX and OpenLiteSpeed as web server stacks and PHP as the application runtime; no field holds them. Criterion 2 is waived for a hosted service, and no repository is linked from the pages read. The legal form Sdn Bhd is Malaysian; no page read names a country, so hqCountry is absent. The features and docs pages read: homepage, features page, docs index, the API introduction (base URL on manage.runcloud.io, key and secret from the profile menu, no rate limit stated), the workspace roles page and the MySQL and MariaDB migration page. The pricing page shows a free trial ("Free 7-days trial") and does not state plan features in text read here. The homepage's "Free 7-days trial" is not recorded as a field. No founding year is on any page read, so firstRelease is absent. The connect guide says it shows how to connect a server "manually using SSH"; provisioning runs through the dashboard: the connect guide's steps are "Choose Manual Installation" and then entering server details, with no public install command on the pages read. The CSV overlaps FindHost's server-management territory as the row states. Fields coined: none.

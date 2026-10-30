@@ -1,0 +1,1 @@
+Tengine is a web server and reverse proxy based on nginx, and its [documentation](https://tengine.taobao.org/documentation.html) says most configuration options match nginx's. It is built from C source with configure and make, and each release also comes as RPM, Debian and Alpine packages and as a container image.

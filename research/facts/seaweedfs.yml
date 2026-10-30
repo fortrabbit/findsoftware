@@ -1,0 +1,198 @@
+id: seaweedfs
+name: SeaweedFS
+status: accepted
+checkedAt: 2026-10-30
+description: Distributed file system and S3-compatible object store, written in Go, shipped as one weed binary.
+facts:
+  - field: repository
+    value: https://github.com/seaweedfs/seaweedfs
+    url: https://github.com/seaweedfs/seaweedfs
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://github.com/seaweedfs/seaweedfs/wiki
+    url: https://github.com/seaweedfs/seaweedfs
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Wiki Documentation"
+  - field: maintainer
+    value: Seaweed Data
+    url: https://seaweedfs.com/docs/eula/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Publisher: Seaweed Data"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/seaweedfs/seaweedfs
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://github.com/seaweedfs/seaweedfs/releases/tag/v0.69
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [object-storage]
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "serves an S3 object store, a POSIX file system, and a lakehouse with S3 Tables"
+  - field: language
+    value: Go
+    url: https://github.com/seaweedfs/seaweedfs
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: go binary
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "One `weed` binary serves an S3 object store, a POSIX file system, and a lakehouse with S3 Tables"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "To run master, volume server, filer, S3, and WebDAV as separate services:"
+  - field: installMethod
+    value: binary download from GitHub releases
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Download the latest binary from the releases page and unzip the single"
+  - field: installMethod
+    value: install script (curl) to /usr/local/bin
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "let the install script put it in"
+  - field: installMethod
+    value: docker image chrislusf/seaweedfs
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "docker run -p 8333:8333 -v weed-data:/data"
+  - field: installMethod
+    value: Docker Compose
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "docker compose -f seaweedfs-compose.yml -p seaweedfs up"
+  - field: installMethod
+    value: Helm chart for Kubernetes
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "helm install seaweedfs seaweedfs/seaweedfs -n seaweedfs --create-namespace -f values.yaml"
+  - field: installMethod
+    value: build from source with make install
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "cd seaweedfs/weed && make install"
+  - field: adminUi
+    value: yes, Admin UI served by the weed process
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "the Iceberg REST catalog, and the Admin UI"
+  - field: sso
+    value: OIDC for Admin UI logins (Enterprise edition)
+    url: https://seaweedfs.com/docs/comparison/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Sign operators in through your existing SSO"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: license
+    value: SeaweedFS Enterprise Edition End User License Agreement
+    url: https://seaweedfs.com/docs/eula/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The Software is licensed, not sold."
+  - field: paidEdition
+    value: SeaweedFS Enterprise Edition
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "SeaweedFS Enterprise Edition, which has advanced features"
+  - field: pricingPage
+    value: https://seaweedfs.com/docs/pricing/
+    url: https://seaweedfs.com/docs/pricing/
+    checkedAt: 2026-10-30
+    via: page
+  - field: currentMajor
+    value: 4
+    url: https://github.com/seaweedfs/seaweedfs/releases/tag/4.51
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-25
+    url: https://github.com/seaweedfs/seaweedfs/releases/tag/4.51
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 35828
+    url: https://github.com/seaweedfs/seaweedfs
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 399
+    url: https://api.github.com/repos/seaweedfs/seaweedfs/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+  - field: dockerPulls
+    value: 36903214 (2026-10-30)
+    url: https://hub.docker.com/v2/repositories/chrislusf/seaweedfs/
+    checkedAt: 2026-10-30
+    via: api
+  - field: alternativeTo
+    value: minio
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "MinIO ceased development"
+  - field: alternativeTo
+    value: rustfs
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Compared to MinIO, RustFS"
+  - field: alternativeTo
+    value: ceph
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Compared to Ceph"
+  - field: databases
+    value: [mysql, postgres, sqlite, mongodb]
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "LevelDB, RocksDB, SQLite, MySQL, PostgreSQL, Cassandra, HBase, MongoDB, Redis"
+  - field: subreddit
+    value: https://www.reddit.com/r/SeaweedFS/
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Reddit"
+  - field: x
+    value: https://twitter.com/SeaweedFS
+    url: https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Twitter"
+notFound: [homepage, endoflifeId, runtimeMin, basedOn, forkOf, successorOf, parent, hqCountry, wikidata, discord, bluesky, mastodon, newsletter, usageShare, reportedInstalls, pluginDirectory, npmName, packagistName, contentStore, headlessApi, templating, i18n, multisite, userRoles, renderingModes, livePreview]
+unreadable: []
+notes: >
+  Community channels: Slack, Telegram and the Google mailing list are named in the README and have no field. Homepage: seaweedfs.com opens on "SeaweedFS Enterprise - Scalable Distributed Storage" and sells the Enterprise edition, so under the Enterprise sales page rule it is no homepage for the community edition; no homepage is recorded. Status accepted: the repository is not archived, the latest stable release is 4.51 (published 2026-10-25, the highest stable GitHub release, major 4), and the README links the project's Docker image and binaries. The docs link is the wiki named in the README; seaweedfs.com/docs/ runs the Enterprise product's pages, and the pages read are the EULA, pricing and the Open Source vs. Enterprise comparison. The comparison page's Enterprise column marks as Enterprise-only: S3 over RDMA, Data Recovery, Point-in-Time Recovery, Customizable EC Ratio, Automatic EC Shard Repair, Automatic EC Volume Vacuum, EC Bitrot Scrub, Admin UI OIDC Login, Admin Audit Log, zstd Storage Compression, Sealed Directories and Central Metrics Monitoring. The sso fact comes from that table, so it is an Enterprise feature. Maintainer: the open source repository belongs to the seaweedfs GitHub organization, and the EULA names "Seaweed Data" as publisher of the Enterprise Edition; no page names a legal form or a country, so hqCountry is absent.  The GitHub contributors count (399) uses per_page=1 and the rel=last page. firstRelease 2015 is the oldest GitHub release (v0.69, 2015-04-21); the repository was created in 2014. The README says "as Apr 25, 2026 MinIO ceased development" and names RustFS as a MinIO reimplementation; RustFS and Ceph are recorded as alternativeTo from the README's comparison headings. The README's other comparisons (HDFS, GlusterFS, MooseFS) have no records. The filer's metadata stores are the README's list; LevelDB, RocksDB and similar stores outside the databases vocabulary are not recorded. The README's S3 STS with OIDC and LDAP is for S3 clients, so only the Admin UI login is recorded as sso. The EULA license entry is the Enterprise Edition's own license; the open source license is Apache-2.0. The go.mod of tag 4.51 declares go 1.26.6; runtimeMin is left out because the runtime value is a binary. Docker Hub figure is for chrislusf/seaweedfs, the image the README names. Maven Central's client artifact (com.github.chrislusf:seaweedfs-client) is a library and is not recorded. Fields coined: none.

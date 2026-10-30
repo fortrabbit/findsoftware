@@ -13,6 +13,8 @@ maintainer: Gel Data Inc.
 maintainerType: company
 firstRelease: 2019
 language: python
+basedOn:
+  - postgresql
 databases:
   - postgres
 adminUi: true
@@ -123,6 +125,9 @@ sources:
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/gel
     checkedAt: 2026-10-29
+  - field: basedOn
+    url: https://www.geldata.com/
+    checkedAt: 2026-10-30
 ai: authored
 contentStore: null
 templating: null

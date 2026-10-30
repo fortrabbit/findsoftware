@@ -1,0 +1,125 @@
+id: tomee
+name: Apache TomEE
+status: accepted
+checkedAt: 2026-10-30
+description: Jakarta EE application server built on Apache Tomcat, distributed in Web Profile, MicroProfile, Plus and Plume flavors.
+facts:
+  - field: homepage
+    value: https://tomee.apache.org
+    url: https://tomee.apache.org/
+    checkedAt: 2026-10-30
+    via: page
+  - field: repository
+    value: https://github.com/apache/tomee
+    url: https://api.github.com/repos/apache/tomee
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://tomee.apache.org/documentation.html
+    url: https://tomee.apache.org/documentation.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Apache TomEE Documentation"
+  - field: maintainer
+    value: The Apache Software Foundation
+    url: https://raw.githubusercontent.com/apache/tomee/main/NOTICE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright 1999-2026 The Apache Software Foundation"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/apache
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: https://tomee.apache.org/download-archive.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "1.0.0-beta-1 2 Oct 2011"
+  - field: categories
+    value: [app-server]
+    url: https://tomee.apache.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "application server extends Apache Tomcat"
+  - field: basedOn
+    value: tomcat
+    url: https://tomee.apache.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "application server extends Apache Tomcat that is assembled from a vanilla Apache Tomcat zip file"
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/apache/tomee
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: jvm
+    url: https://tomee.apache.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "It runs on Java 17 or higher."
+  - field: runtimeMin
+    value: "17"
+    url: https://tomee.apache.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "It runs on Java 17 or higher."
+  - field: runsAs
+    value: [always-on]
+    url: https://tomee.apache.org/tomee-10.2/docs/deamon/lin-service.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "This page demonstrates running as a service with systemd"
+  - field: installMethod
+    value: [binary download, zip and tar.gz]
+    url: https://tomee.apache.org/downloads.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "TomEE Webprofile ZIP"
+  - field: currentMajor
+    value: 10
+    url: https://api.github.com/repos/apache/tomee/releases
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-17
+    url: https://api.github.com/repos/apache/tomee/releases/latest
+    checkedAt: 2026-10-30
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/apache/tomee
+    checkedAt: 2026-10-30
+    via: api
+  - field: license
+    value: CDDL
+    url: https://raw.githubusercontent.com/apache/tomee/main/NOTICE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "under the CDDL license"
+  - field: x
+    value: https://twitter.com/apachetomee
+    url: https://tomee.apache.org/
+    checkedAt: 2026-10-30
+    via: page
+  - field: githubStargazers
+    value: 479
+    url: https://api.github.com/repos/apache/tomee
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 133
+    url: https://api.github.com/repos/apache/tomee/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+  - field: facebook
+    value: https://www.facebook.com/ApacheTomEE/
+    url: https://tomee.apache.org/
+    checkedAt: 2026-10-30
+    via: page
+notFound: [hqCountry, parent, alternativeTo, forkOf, successorOf, endoflifeId, pricingPage, paidEdition, hostedOffering, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, userRoles, sso, renderingModes, livePreview, importsFrom, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, usageShare, npmName, packagistName, pypiName, dockerPulls, mavenCoordinates, wikidata]
+unreadable: []
+notes: >
+  The current major is 10: 10.2.0 is the highest stable release. The 11.0.0-M1 milestone (2026-07-02) is a prerelease older than the latest release, so no latestPrereleaseDate is recorded; the downloads page calls it a milestone not for production. The Web Profile, MicroProfile, Plus and Plume flavors are all open source downloads; no paid edition is named. The download page's security notice says the software is maintained by unpaid volunteers with no guarantee that vulnerabilities get fixed; it is not recorded as a status fact. The NOTICE names the CDDL for schema files included from Glassfish; the version is not stated, so the value is CDDL. The firstRelease 2011 is the TomEE 1.0.0-beta-1 "plus" row in the project's download archive, dated 2 Oct 2011; the reviewer may check the archive for an earlier TomEE row. The install page on the site is an old OpenEJB Eclipse instruction and is not used. The Docker build in the README is a build route, not a published image, so no dockerPulls. The Maven plugin named in the README is a build artifact of the project, not an install route, so no mavenCoordinates. The homepage counts 100 contributors and the API count is 133; the API count is recorded. Fields coined here: none.

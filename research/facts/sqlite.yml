@@ -1,0 +1,124 @@
+id: sqlite
+name: SQLite
+status: accepted
+checkedAt: 2026-10-30
+description: Public-domain C library that implements a self-contained SQL database engine in a single file.
+facts:
+  - field: name
+    value: SQLite
+    url: https://sqlite.org/about.html
+    checkedAt: 2026-10-30
+    via: page
+  - field: homepage
+    value: https://sqlite.org
+    url: https://sqlite.org/
+    checkedAt: 2026-10-30
+    via: page
+  - field: repository
+    value: https://sqlite.org/src
+    url: https://sqlite.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "SQLite source code is in the public-domain"
+  - field: docs
+    value: https://sqlite.org/docs.html
+    url: https://sqlite.org/docs.html
+    checkedAt: 2026-10-30
+    via: page
+  - field: maintainer
+    value: Hipp, Wyrick & Company, Inc.
+    url: https://sqlite.org/prosupport.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Hipp, Wyrick & Company, Inc., (Hwaci), a"
+  - field: maintainerType
+    value: company
+    url: https://sqlite.org/copyright.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "the company that employs all the developers of SQLite"
+  - field: categories
+    value: [database]
+    url: https://sqlite.org/about.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "SQLite is an embedded SQL database engine."
+  - field: language
+    value: C
+    url: https://sqlite.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "SQLite is a C-language library that implements a"
+  - field: license
+    value: public domain
+    url: https://sqlite.org/copyright.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "All of the code and documentation in SQLite has been dedicated to the public domain"
+  - field: licenseModel
+    value: open-source
+    url: https://sqlite.org/copyright.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "SQLite is open-source, meaning that you can make as many copies of it as you want"
+  - field: currentMajor
+    value: 3
+    url: https://endoflife.date/api/sqlite.json
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-16
+    url: https://sqlite.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Version 3.54.1 (2026-10-16)"
+  - field: firstRelease
+    value: 2000
+    url: https://sqlite.org/about.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The SQLite project was started on 2000-05-09"
+  - field: endoflifeId
+    value: sqlite
+    url: https://endoflife.date/sqlite
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 10857
+    url: https://api.github.com/repos/sqlite/sqlite
+    checkedAt: 2026-10-30
+    via: api
+  - field: installMethod
+    value: [amalgamation-source]
+    url: https://sqlite.org/download.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "C source code as an amalgamation"
+  - field: installMethod
+    value: [precompiled-binaries]
+    url: https://sqlite.org/download.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Precompiled Binaries for Linux"
+  - field: installMethod
+    value: [precompiled-wasm-bundle]
+    url: https://sqlite.org/download.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "A precompiled bundle of sqlite3.wasm and its JavaScript APIs"
+  - field: installMethod
+    value: [android-library]
+    url: https://sqlite.org/download.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "A precompiled Android library"
+  - field: forum
+    value: https://sqlite.org/forum/forum
+    url: https://sqlite.org/support.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "SQLite Forum . This is the preferred"
+notFound: [parent, basedOn, forkOf, successorOf, hqCountry, runtime, runtimeMin, runsAs, databases, contentStore, headlessApi, adminUi, templating, i18n, multisite, userRoles, sso, renderingModes, paidEdition, pricingPage, hostedOffering, pluginDirectory, reportedInstalls, contributors, usageShare, npmWeeklyDownloads, packagistDownloads, pypiDownloads, dockerPulls, discord, x, bluesky, mastodon, subreddit, newsletter, youtube, facebook, instagram, threads, wikidata]
+unreadable: []
+notes: >
+  The record is the library, not a server: the about page calls it "an in-process library" with no separate server process, so no runsAs and no runtime are recorded; the sqlite3 command-line tools in the precompiled binaries are a developer tool and no runsAs local statement is recorded. The canonical source is the Fossil repository at sqlite.org/src; the GitHub repository sqlite/sqlite is an official Git mirror ("Official Git mirror of the SQLite source tree", GitHub API description), and its 10857 stars are the adoption figure recorded, dated 2026-10-30. The mirror's contributor count is not recorded because the project does not take outside contributions ("Open-Source, not Open-Contribution" on the copyright page). The latest release is 3.54.1 (2026-10-16); the major is 3, from the endoflife.date cycle 3 with eol false. The project's own start date is 2000-05-09 ("The SQLite project was started on"); version 1.0 followed on 2000-08-17 per the chronology page, so firstRelease agrees with the project's own year. The public-domain statement is the license and is recorded as its own wording, public domain; the copyright page's "Open-Source, not Open-Contribution" wording is the licenseModel quote. The paid-support page names the company as Hipp, Wyrick & Company, Inc. (Hwaci), a Georgia corporation with headquarters in Charlotte, North Carolina; the copyright page calls Hwaci the company that employs the developers. No page names a country, so hqCountry is absent. Hwaci sells a Warranty of Title, a legal document, not an edition; no paidEdition is recorded. The project's own estimate, not a count and so not a reportedInstalls field, is worded "it seems likely that there are over one trillion (1e12) SQLite databases in active use". The homepage's "most used database engine in the world" and the about page's "most widely deployed database" are comparative claims and are not recorded as fields. The Docker Hub and package registry figures are not recorded: no install route names a registry package. The support page's "SQLite Forum" is the public forum the project names as preferred; the quote is the text around the link. The keyword "database" is the category; the databases field is absent because SQLite is the database itself, not a software that offers a choice of databases.

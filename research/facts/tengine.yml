@@ -1,0 +1,133 @@
+id: tengine
+name: Tengine
+status: accepted
+checkedAt: 2026-10-30
+description: High-performance web server and reverse proxy based on nginx, originated by Taobao, with added features for high-traffic websites.
+facts:
+  - field: name
+    value: Tengine
+    url: https://tengine.taobao.org/
+    checkedAt: 2026-10-30
+    via: page
+  - field: homepage
+    value: https://tengine.taobao.org
+    url: https://tengine.taobao.org/
+    checkedAt: 2026-10-30
+    via: page
+  - field: repository
+    value: https://github.com/alibaba/tengine
+    url: https://github.com/alibaba/tengine
+    checkedAt: 2026-10-30
+    via: api
+  - field: docs
+    value: https://tengine.taobao.org/documentation.html
+    url: https://tengine.taobao.org/documentation.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Most of the configuration options are the same as Nginx's."
+  - field: maintainer
+    value: Alibaba Group Holding Limited
+    url: https://github.com/alibaba/tengine/blob/master/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (C) 2010-2026 Alibaba Group Holding Limited"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/alibaba
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [web-server, reverse-proxy]
+    url: https://github.com/alibaba/tengine/blob/master/README.markdown
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Tengine is a high-performance web server and reverse proxy originated by"
+  - field: basedOn
+    value: nginx
+    url: https://tengine.taobao.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "It is based on the Nginx HTTP server"
+  - field: language
+    value: C
+    url: https://github.com/alibaba/tengine
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: c binary
+    url: https://github.com/alibaba/tengine/blob/master/README.markdown
+    checkedAt: 2026-10-30
+    via: page
+    quote: "/usr/local/tengine/sbin/tengine"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/alibaba/tengine/blob/master/README.markdown
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The server runs as `/usr/sbin/tengine` with `/etc/tengine/tengine.conf`"
+  - field: installMethod
+    value: source build (./configure, make, make install)
+    url: https://github.com/alibaba/tengine/blob/master/README.markdown
+    checkedAt: 2026-10-30
+    via: page
+    quote: "sudo make install"
+  - field: installMethod
+    value: distribution packages (.rpm, .deb, .apk) on each release
+    url: https://github.com/alibaba/tengine/blob/master/README.markdown
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Every release ships `.rpm`, `.deb` and `.apk` packages"
+  - field: installMethod
+    value: container image ghcr.io/alibaba/tengine
+    url: https://github.com/alibaba/tengine/blob/master/README.markdown
+    checkedAt: 2026-10-30
+    via: page
+    quote: "docker pull ghcr.io/alibaba/tengine:latest"
+  - field: license
+    value: BSD-2-Clause
+    url: https://github.com/alibaba/tengine/blob/master/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without"
+  - field: licenseModel
+    value: open-source
+    url: https://tengine.taobao.org/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Tengine has been an open source project since December 2011"
+  - field: currentMajor
+    value: 3
+    url: https://github.com/alibaba/tengine/releases/tag/3.1.0
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2023-11-06
+    url: https://tengine.taobao.org/changelog.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Tengine-3.1.0 [06 Nov 2023]"
+  - field: latestPrereleaseDate
+    value: 2026-09-04
+    url: https://github.com/alibaba/tengine/releases/tag/3.2.0-rc5
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: https://tengine.taobao.org/changelog.html
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Tengine-1.2.0 [29 Nov 2011]"
+  - field: githubStargazers
+    value: 13412
+    url: https://api.github.com/repos/alibaba/tengine
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 97
+    url: https://api.github.com/repos/alibaba/tengine/contributors?per_page=1
+    checkedAt: 2026-10-30
+    via: api
+notFound: [hqCountry, parent, forkOf, endoflifeId, pricingPage, paidEdition, hostedOffering, adminUi, headlessApi, templating, i18n, multisite, userRoles, sso, contentStore, databases, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, youtube, wikidata, usageShare, reportedInstalls, dockerPulls, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, dependentRepos, dependentPackages, httpArchiveSites, renderingModes, lastCommitDate]
+unreadable: []
+notes: >
+  Status and criterion 4: the last stable release is 3.1.0 (GitHub release 2023-10-27); the only releases since are release candidates 3.2.0-rc1 to rc5, the newest on 2026-09-04. Criterion 4 counts a pre-release for listing, so the record stays accepted. No page declares the project ended. The project's changelog dates 3.1.0 as "[06 Nov 2023]" while the GitHub release is dated 2023-10-27; the changelog date is recorded. The README names a 3.2.0 package URL and says every release ships packages, but there is no 3.2.0 release or tag on GitHub (the lookup returned 404), so no stable 3.2.0 date is recorded. The license is BSD-2-Clause on GitHub; the LICENSE file lists Alibaba Group Holding Limited, Nginx, Inc. and Igor Sysoev as copyright holders, and the maintainer is recorded from the Alibaba line. No page found gives Alibaba Group's headquarters country or address, so hqCountry is not recorded. The README says the container images are published on every release, which the install fact does not quote. The Tengine-Ingress controller (github.com/alibaba/tengine-ingress) is a separate repository and is not recorded here. The README states all features of nginx-1.31.5 are inherited, a version figure that is not recorded. Fields coined here: none.

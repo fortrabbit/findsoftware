@@ -1,0 +1,1 @@
+rbenv manages which installed Ruby version runs on a machine, per project directory. The [project site](https://rbenv.org/) gives the install script and names Sam Stephenson as the original creator of rbenv. Ruby versions are installed through the ruby-build plugin, which provides the rbenv install command.

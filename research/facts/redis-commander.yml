@@ -1,0 +1,137 @@
+id: redis-commander
+name: Redis Commander
+status: accepted
+checkedAt: 2026-10-30
+description: Node.js web application for viewing and editing the data of one or more Redis servers in a browser.
+facts:
+  - field: name
+    value: Redis Commander
+    url: https://github.com/joeferner/redis-commander
+    checkedAt: 2026-10-30
+    via: api
+  - field: homepage
+    value: https://joeferner.github.io/redis-commander/
+    url: https://joeferner.github.io/redis-commander/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redis-Commander is a node.js web application"
+  - field: repository
+    value: https://github.com/joeferner/redis-commander
+    url: https://github.com/joeferner/redis-commander
+    checkedAt: 2026-10-30
+    via: api
+  - field: maintainer
+    value: Joseph M. Ferner
+    url: https://github.com/joeferner/redis-commander/blob/master/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (c) 2016 Joseph M. Ferner"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/joeferner/redis-commander/blob/master/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Copyright (c) 2016 Joseph M. Ferner"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/joeferner
+    checkedAt: 2026-10-30
+    via: api
+  - field: categories
+    value: [db-admin]
+    url: https://github.com/joeferner/redis-commander
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Web-UI to display and edit data within multiple different Redis servers"
+  - field: language
+    value: JavaScript
+    url: https://github.com/joeferner/redis-commander
+    checkedAt: 2026-10-30
+    via: api
+  - field: runtime
+    value: node
+    url: https://registry.npmjs.org/redis-commander/latest
+    checkedAt: 2026-10-30
+    via: api
+    quote: "\"node\":\">=12.0\""
+  - field: runtimeMin
+    value: "12"
+    url: https://registry.npmjs.org/redis-commander/latest
+    checkedAt: 2026-10-30
+    via: api
+    quote: "\"node\":\">=12.0\""
+  - field: currentMajor
+    value: 0
+    url: https://registry.npmjs.org/redis-commander/latest
+    checkedAt: 2026-10-30
+    via: api
+  - field: latestReleaseDate
+    value: 2025-05-24
+    url: https://registry.npmjs.org/redis-commander
+    checkedAt: 2026-10-30
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://registry.npmjs.org/redis-commander
+    checkedAt: 2026-10-30
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/joeferner/redis-commander/blob/master/LICENSE
+    checkedAt: 2026-10-30
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: installMethod
+    value: npm
+    url: https://github.com/joeferner/redis-commander
+    checkedAt: 2026-10-30
+    via: page
+    quote: "npm install -g redis-commander"
+  - field: installMethod
+    value: docker image
+    url: https://github.com/joeferner/redis-commander
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Or run Redis Commander as Docker image"
+  - field: installMethod
+    value: helm chart
+    url: https://github.com/joeferner/redis-commander
+    checkedAt: 2026-10-30
+    via: page
+    quote: "helm -n myspace install redis-web-ui ./k8s/helm-chart/redis-commander"
+  - field: runsAs
+    value: [always-on]
+    url: https://joeferner.github.io/redis-commander/
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Redis-Commander is a node.js web application"
+  - field: adminUi
+    value: yes, web UI
+    url: https://github.com/joeferner/redis-commander
+    checkedAt: 2026-10-30
+    via: page
+    quote: "Web-UI to display and edit data within multiple different Redis servers"
+  - field: npmName
+    value: redis-commander
+    url: https://registry.npmjs.org/redis-commander
+    checkedAt: 2026-10-30
+    via: api
+  - field: npmWeeklyDownloads
+    value: "3545 (2026-10-19 to 2026-10-25)"
+    url: https://api.npmjs.org/downloads/range/2026-10-19:2026-10-25/redis-commander
+    checkedAt: 2026-10-30
+    via: api
+  - field: githubStargazers
+    value: 4002
+    url: https://github.com/joeferner/redis-commander
+    checkedAt: 2026-10-30
+    via: api
+  - field: contributors
+    value: 83
+    url: https://github.com/joeferner/redis-commander
+    checkedAt: 2026-10-30
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, alternativeTo, successorOf, dockerPulls, sso, userRoles, i18n, livePreview, multisite, headlessApi, paidEdition, pricingPage, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, endoflifeId, wikidata]
+unreadable: []
+notes: >
+  The latest release is the npm latest, 0.9.0 (2025-05-24), so currentMajor is 0 for the 0.x line. The repository tag v0.9.1 (commit of 2025-07-21) has no GitHub release object and was never published to npm, so it is not the latest release. The package name and first version are from npm: 0.0.1 is dated 2012-06-22, and the repository was created 2012-06-18; no page states a first-release year, so firstRelease 2012 is the npm upload date. The LICENSE copyright line names "Joseph M. Ferner" while the project homepage and package.json name "Joe Ferner"; the copyright line is recorded as the maintainer. The Docker route is the GitHub Container Registry image ghcr.io/joeferner/redis-commander, which the README names; the README says new versions are not published to Docker Hub, so no Docker Hub pull figure is recorded. The README says installation through yarn is not supported; no install entry is recorded for it. The Helm chart is installed from a local checkout of the repository, as there is no chart repository. runsAs rests on the homepage calling it a node.js web application; the README says the container makes it available at localhost:8081, and the command line options include the address and port the server runs on. npmWeeklyDownloads is the sum of daily downloads for 2026-10-19 to 2026-10-25, and counts installs of 0.9.0 and earlier. The README also names Redis Sentinel and Redis Cluster connections, which have no field. Fields coined here: none.
