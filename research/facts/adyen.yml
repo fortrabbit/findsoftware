@@ -1,0 +1,83 @@
+id: adyen
+name: Adyen
+status: hosted-service
+checkedAt: 2026-10-31
+description: Hosted payment platform that accepts online and in-person payments and sends payouts through one API.
+facts:
+  - field: homepage
+    value: https://www.adyen.com
+    url: https://www.adyen.com/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "One platform for payments, data, and financial products."
+  - field: docs
+    value: https://docs.adyen.com/
+    url: https://docs.adyen.com/
+    checkedAt: 2026-10-31
+    via: page
+  - field: categories
+    value: [payments]
+    url: https://www.adyen.com/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "One platform for payments, data, and financial products."
+  - field: maintainer
+    value: Adyen N.V.
+    url: https://www.adyen.com/legal/terms-and-conditions
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Adyen N.V., a company registered with the Dutch Chamber of Commerce"
+  - field: hqCountry
+    value: NL
+    url: https://www.adyen.com/legal/terms-and-conditions
+    checkedAt: 2026-10-31
+    via: page
+    quote: "having its seat at Simon Carmiggeltstraat 6-50, 1011 DJ in Amsterdam, the Netherlands"
+  - field: pricingPage
+    value: https://www.adyen.com/pricing
+    url: https://www.adyen.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+  - field: pricingModel
+    value: per transaction, a fixed processing fee plus a fee set by the payment method
+    url: https://www.adyen.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "For each transaction, we charge a fixed processing fee + a fee determined by the payment method"
+  - field: sso
+    value: [SAML]
+    url: https://docs.adyen.com/account/single-sign-on
+    checkedAt: 2026-10-31
+    via: page
+    quote: "The Customer Area supports SSO based on the Security Assertion Markup Language (SAML) 2.0 protocol"
+  - field: userRoles
+    value: yes, roles for the Customer Area
+    url: https://docs.adyen.com/account/user-roles
+    checkedAt: 2026-10-31
+    via: page
+    quote: "User roles are sets of permissions that determine what the user can do in the Customer Area"
+  - field: regions
+    value: "data centers such as US or AU, through location-based live endpoints set up on request"
+    url: https://docs.adyen.com/development-resources/live-endpoints
+    checkedAt: 2026-10-31
+    via: page
+    quote: "connect to a certain data center of the Adyen payments platform (for example, US or AU data centers)"
+  - field: x
+    value: https://x.com/Adyen
+    url: https://www.adyen.com/
+    checkedAt: 2026-10-31
+    via: page
+  - field: facebook
+    value: https://www.facebook.com/AdyenPayments/
+    url: https://www.adyen.com/
+    checkedAt: 2026-10-31
+    via: page
+  - field: newsletter
+    value: https://www.adyen.com/newsletter
+    url: https://www.adyen.com/
+    checkedAt: 2026-10-31
+    via: page
+notFound: [repository, repoOwnerType, language, runtime, license, licenseModel, currentMajor, latestReleaseDate, githubStargazers, contributors, firstRelease, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, multisite, livePreview, selfHostOption, headlessApi, contentStore, databases, paidEdition, freeTier, apiLimits, runsAs, renderingModes, templating, installMethod, runtimeMin, adminUi, i18n, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, endoflifeId, maintainerType]
+unreadable: []
+notes: >
+  Coined fields kept out of the file: the docs' libraries page says libraries are connected to managed package systems (Composer, Gradle, Maven, npm, NuGet, PyPi, RubyGems); the about page says Adyen was founded in 2006 in Amsterdam; the homepage links a LinkedIn company page (linkedin.com/company/adyen).   The record covers the hosted Adyen payment platform. The GitHub repository Adyen/adyen-node-api-library is the Node.js client library for the API, not the service, so no repository, license, stars or contributor figure is recorded; in notes only, it is MIT, 139 stars and last pushed 2026-10-30 (api, 2026-10-31), and its latest release v32.2.0 is dated 2026-09-24. The npm package @adyen/api-library had 340275 downloads for 2026-10-23 to 2026-10-29 (api); the candidates row figure of 135.8k a week is stale and not used. Adyen N.V. is the legal entity named in the terms; the seat address gives the country. The homepage and about page are marketing pages, so no product features beyond those stated are recorded. The homepage states "Backed by US, UK, and EU banking licenses" and "99.999% historical platform uptime"; neither has a field, so neither is recorded. The docs state Customer Area SSO and user roles; they do not state whether these are offered on every plan, so no plan tier is recorded. The homepage's Discord and Bluesky links are absent; the docs footer links twitter.com/adyendevs for developers, not recorded as a field. The docs' "Server-side libraries" page is the only language statement and lists package systems, not languages, so it is recorded here and not as a field. The pricing page states no free tier, and the pricing model field records the transaction fee wording only, without prices. The homepage's "Service Status" link is not a field. The candidates row names the npm package as the adoption figure; this is an SDK, so it stays in notes.

@@ -1,0 +1,3 @@
+YugabyteDB is a distributed SQL database that runs as YB-TServer and YB-Master server processes. The `yugabyted` utility starts and manages them on a laptop, and its reference says it also runs production deployments on VMs. The [quick start](https://docs.yugabyte.com/stable/quick-start/linux/) installs from a tar.gz archive and sets up a single-host cluster for development, and the [Helm chart guide](https://docs.yugabyte.com/stable/deploy/kubernetes/single-zone/eks/helm-chart/) covers a Kubernetes install, shown on Amazon EKS.
+
+YugabyteDB Aeon is the fully managed cloud service that runs next to the open-source database.

@@ -1,0 +1,7 @@
+Casdoor is an identity provider and single sign-on server: applications send users to it to sign in, and it returns a verified identity over OAuth 2.0, OpenID Connect, SAML or CAS. The [overview](https://casdoor.org/docs/overview) describes it as an identity and access management platform, with LDAP and RADIUS for applications and devices that speak only those protocols. Users, applications, sign-in pages and providers are managed in a web admin console. Several organizations can share one installation, and each has its own users, groups, roles, applications and branding.
+
+The project is a single Go program that serves the built frontend on one port, and it runs on a database that the operator connects through `conf/app.conf`. The [server installation guide](https://casdoor.org/docs/basic/server-installation) covers a pre-built binary and a build from source, and the Docker Hub images and a Helm chart are the other routes the project documents. The repository is Apache-2.0 licensed, and the pricing page says Casdoor Cloud is operated by Casbin Inc.
+
+## Worth knowing
+
+The server needs a database that the operator provides, and the all-in-one Docker image uses an embedded SQLite file that the project describes as not for production. Casdoor Cloud is a dedicated instance that the project hosts and keeps upgraded, sold on the cloud plans of the pricing page, and self-hosting is listed there as free.

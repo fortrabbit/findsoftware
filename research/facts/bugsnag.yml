@@ -1,0 +1,85 @@
+id: bugsnag
+name: BugSnag
+status: accepted
+checkedAt: 2026-10-31
+description: "Error monitoring and performance monitoring service for mobile, web, desktop and server applications, offered as a hosted platform and as an on-premises installation."
+facts:
+  - field: homepage
+    value: "https://www.bugsnag.com"
+    url: https://www.bugsnag.com
+    checkedAt: 2026-10-31
+    via: page
+  - field: docs
+    value: "https://docs.bugsnag.com"
+    url: https://docs.bugsnag.com
+    checkedAt: 2026-10-31
+    via: page
+  - field: maintainer
+    value: "SmartBear Software Inc."
+    url: https://smartbear.com/terms-of-use/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "SmartBear Software Inc., 450 Artisan Way, Somerville, MA 02145, USA"
+  - field: maintainerType
+    value: company
+    url: https://smartbear.com/terms-of-use/
+    checkedAt: 2026-10-31
+    via: page
+  - field: hqCountry
+    value: US
+    url: https://smartbear.com/terms-of-use/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "SmartBear Software Inc., 450 Artisan Way, Somerville, MA 02145, USA"
+  - field: categories
+    value: [error-tracking]
+    url: https://www.bugsnag.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Full-stack error monitoring for mobile, web, desktop, and server applications"
+  - field: hostedOffering
+    value: "BugSnag hosted platform"
+    url: https://www.bugsnag.com/security
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Whether you use our BugSnag hosted platform or choose our on-premises BugSnag Enterprise offering"
+  - field: pricingPage
+    value: "https://www.bugsnag.com/pricing"
+    url: https://www.bugsnag.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+  - field: freeTier
+    value: "free plan with 7 days of data retention"
+    url: https://www.bugsnag.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Our Free tier includes 7 days of data retention"
+  - field: sso
+    value: [SAML]
+    url: https://www.bugsnag.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "SAML single sign-on"
+  - field: userRoles
+    value: "user roles and permissions"
+    url: https://www.bugsnag.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "User roles and permissions"
+  - field: installMethod
+    value: [kubernetes]
+    url: https://docs.bugsnag.com/on-premise/clustered/installation/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "BugSnag On-premise uses Replicated KOTS to perform and manage installations."
+  - field: license
+    value: proprietary
+    url: https://docs.bugsnag.com/on-premise/clustered/installation/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "upload the BugSnag On-premise license file you received from BugSnag"
+notFound: [repository, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, eolPolicy, regions, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, githubStargazers, contributors, npmName, npmWeeklyDownloads, packagistName, pypiDownloads, currentMajor, latestReleaseDate, firstRelease, language, runtime, runtimeMin, licenseModel, renderingModes, runsAs, adminUi, headlessApi, templating, i18n, multisite, livePreview, importsFrom, contentStore, databases, selfHostOption, apiLimits, pricingModel]
+unreadable: []
+notes: >
+  The pricing page says "BugSnag supports 50+ platforms across mobile, web, desktop, and server apps." (sdk languages, not recorded as a field). The on-premises install is sold as the Enterprise offering, which also lists SAML single sign-on; it is the product as a whole, not an edition of open source software, so no paidEdition is recorded. Status is accepted, not hosted-service as the candidate row says: the on-premises install is documented (the High availability installation guide, the single node and airgapped guides, and the Replicated KOTS steps), so criterion 2 holds for the proprietary self-install. The docs say a first install starts with contacting BugSnag for a license and a guided installation, and that the legacy single-machine version is deprecated. The on-premises install needs a Kubernetes cluster from 1.25 to 1.36 and SMTP credentials; those are noted here, not recorded as fields. The SDK repository (bugsnag/bugsnag-js) and its npm package @bugsnag/js are the client side and are not recorded, per the hosted-service rule; the server code is not public, so no repository is recorded. The homepage links x.com/smartbear and a SmartBear LinkedIn page; both are the parent company's accounts and are not recorded as the product's own links. The maintainer is SmartBear Software Inc. (terms, Somerville, MA, USA); the legal footer of the product site reads "© 2026 SmartBear Software", and the on-premises docs carry SmartBear branding; the parent is not recorded as a separate field. The security page claims "industry's strictest certifications for security, privacy, and control" and the pricing page lists "PCI and PHI compliance via On-Premises"; these are compliance claims and are not recorded as fields. The pricing page lists 30+ third-party integrations and Splunk and Amazon SQS data forwarding; no field fits, so they stay here. The pricing page's Enterprise tier is the only tier that lists SAML single sign-on and on-premises deployment, so the paidEdition fact covers that tier. The privacy and terms pages at the product domain are missing (404); the SmartBear terms are used for the legal name and address.
+

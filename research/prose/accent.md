@@ -1,0 +1,3 @@
+Accent is an open-source web app for managing translations, maintained by Mirego. Translators and developers work in its web UI, and the accent-cli npm package connects a project's locale files to an Accent instance. The app is written in Elixir on the Phoenix framework and keeps its data in PostgreSQL. Its GraphQL API, which the README describes as open and documented, serves the UI and the CLI.
+
+The README lists three install routes: the official Docker image, a source build run with mix and Make, and a Heroku setup. The Docker run starts the web server on port 4000 and migrates the database on startup.

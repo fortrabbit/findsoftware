@@ -1,0 +1,249 @@
+id: casdoor
+name: Casdoor
+status: accepted
+checkedAt: 2026-10-31
+description: Open-source identity and access management and single sign-on platform with a web admin console.
+facts:
+  - field: name
+    value: Casdoor
+    url: https://casdoor.org/docs/overview
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Casdoor is an open-source identity and access management (IAM) and single sign-on (SSO) platform."
+  - field: homepage
+    value: https://casdoor.ai
+    url: https://casdoor.ai
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Open-Source AI-Native IAM / SSO Platform with MCP Server"
+  - field: repository
+    value: https://github.com/casdoor/casdoor
+    url: https://github.com/casdoor/casdoor
+    checkedAt: 2026-10-31
+    via: api
+  - field: docs
+    value: https://casdoor.org/docs/overview
+    url: https://casdoor.org/docs/overview
+    checkedAt: 2026-10-31
+    via: page
+  - field: pricingPage
+    value: https://www.casdoor.com/pricing
+    url: https://www.casdoor.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+  - field: maintainer
+    value: Casdoor contributors
+    url: https://casdoor.org
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Copyright © 2026 Casdoor contributors."
+  - field: maintainerType
+    value: community
+    url: https://casdoor.org
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Copyright © 2026 Casdoor contributors."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/casdoor
+    checkedAt: 2026-10-31
+    via: api
+  - field: categories
+    value: [identity-provider, sso]
+    url: https://casdoor.org/docs/overview
+    checkedAt: 2026-10-31
+    via: page
+    quote: "identity and access management (IAM) and single sign-on (SSO) platform"
+  - field: language
+    value: Go
+    url: https://github.com/casdoor/casdoor
+    checkedAt: 2026-10-31
+    via: api
+  - field: runtime
+    value: [go binary]
+    url: https://casdoor.org/docs/basic/server-installation
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Binaries are available for Linux, macOS, and Windows, each for x86_64 and arm64."
+  - field: runtimeMin
+    value: "Go 1.26"
+    url: https://github.com/casdoor/casdoor/blob/v4.25.0/go.mod
+    checkedAt: 2026-10-31
+    via: api
+    quote: "go 1.26.0"
+  - field: installMethod
+    value: [binary-download]
+    url: https://casdoor.org/docs/basic/server-installation
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Download the archive for your platform from GitHub Releases"
+  - field: installMethod
+    value: [source-build]
+    url: https://casdoor.org/docs/basic/server-installation
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Build from source"
+  - field: installMethod
+    value: [docker]
+    url: https://casdoor.org/docs/basic/try-with-docker
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Casdoor publishes two images on Docker Hub"
+  - field: installMethod
+    value: [helm]
+    url: https://github.com/casdoor/casdoor/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Requires Helm v3 and a running cluster"
+  - field: docker
+    value: casbin/casdoor
+    url: https://casdoor.org/docs/basic/try-with-docker
+    checkedAt: 2026-10-31
+    via: page
+    quote: "casbin/casdoor Casdoor only Production, connected to your own database"
+  - field: docker
+    value: casbin/casdoor-all-in-one
+    url: https://casdoor.org/docs/basic/try-with-docker
+    checkedAt: 2026-10-31
+    via: page
+    quote: "casbin/casdoor-all-in-one Casdoor with an embedded SQLite database and default settings"
+  - field: dockerPulls
+    value: 1888357 (2026-10-31)
+    url: https://hub.docker.com/v2/repositories/casbin/casdoor/
+    checkedAt: 2026-10-31
+    via: api
+  - field: dockerPulls
+    value: 525558 (2026-10-31)
+    url: https://hub.docker.com/v2/repositories/casbin/casdoor-all-in-one/
+    checkedAt: 2026-10-31
+    via: api
+  - field: databases
+    value: [mysql, mariadb, postgresql, cockroachdb, sqlserver, oracle, sqlite, tidb]
+    url: https://casdoor.org/docs/basic/server-installation
+    checkedAt: 2026-10-31
+    via: page
+    quote: "supports the databases that have an XORM driver"
+  - field: runsAs
+    value: [always-on]
+    url: https://casdoor.org/docs/basic/server-installation
+    checkedAt: 2026-10-31
+    via: page
+    quote: "you run a single process on a single port"
+  - field: adminUi
+    value: yes, admin console
+    url: https://casdoor.org/docs/basic/server-installation
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Sign in to the admin console at http://localhost:8000"
+  - field: sso
+    value: [oidc, oauth2, saml, cas]
+    url: https://casdoor.org/docs/overview
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Casdoor is an OAuth 2.0 and OIDC provider, a SAML identity provider, and a CAS server."
+  - field: sso
+    value: [ldap, radius]
+    url: https://casdoor.org/docs/overview
+    checkedAt: 2026-10-31
+    via: page
+    quote: "It also serves LDAP and RADIUS for applications, VPNs, and network devices that only speak those protocols."
+  - field: userRoles
+    value: yes, roles per organization
+    url: https://casdoor.org/docs/overview
+    checkedAt: 2026-10-31
+    via: page
+    quote: "each with its own users, groups, roles, applications, and branding"
+  - field: i18n
+    value: multiple languages, with community translation
+    url: https://casdoor.org
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Português Українська Help translate"
+  - field: importsFrom
+    value: [Active Directory, Keycloak, Okta]
+    url: https://casdoor.org/docs/overview
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Syncers import users from LDAP, Active Directory, Keycloak, Okta, and other systems"
+  - field: alternativeTo
+    value: [keycloak]
+    url: https://casdoor.org/docs/overview
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Casdoor vs. Keycloak"
+  - field: alternativeTo
+    value: [authentik]
+    url: https://casdoor.org/docs/overview
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Casdoor vs. Authentik"
+  - field: alternativeTo
+    value: [auth0]
+    url: https://casdoor.org/docs/overview
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Casdoor vs. Auth0"
+  - field: license
+    value: Apache-2.0
+    url: https://www.casdoor.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Casdoor is open source under the Apache-2.0 License."
+  - field: licenseModel
+    value: open-source
+    url: https://www.casdoor.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Casdoor is open source under the Apache-2.0 License."
+  - field: hostedOffering
+    value: Casdoor Cloud, a dedicated instance hosted and kept upgraded by the project
+    url: https://casdoor.org
+    checkedAt: 2026-10-31
+    via: page
+    quote: "a dedicated Casdoor instance that we host and keep upgraded"
+  - field: regions
+    value: Singapore or Japan
+    url: https://www.casdoor.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Hosted in Singapore or Japan"
+  - field: currentMajor
+    value: 4
+    url: https://github.com/casdoor/casdoor/releases/tag/v4.25.0
+    checkedAt: 2026-10-31
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-30"
+    url: https://github.com/casdoor/casdoor/releases/tag/v4.25.0
+    checkedAt: 2026-10-31
+    via: api
+  - field: firstRelease
+    value: "2021"
+    url: https://github.com/casdoor/casdoor/releases/tag/v1.0.0
+    checkedAt: 2026-10-31
+    via: api
+  - field: githubStargazers
+    value: 14720
+    url: https://github.com/casdoor/casdoor
+    checkedAt: 2026-10-31
+    via: api
+  - field: contributors
+    value: 321
+    url: https://github.com/casdoor/casdoor
+    checkedAt: 2026-10-31
+    via: api
+  - field: forum
+    value: https://github.com/casdoor/casdoor/discussions
+    url: https://github.com/casdoor/casdoor/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "GitHub Discussions"
+  - field: discord
+    value: https://discord.gg/5rPsrAzK7S
+    url: https://casdoor.org
+    checkedAt: 2026-10-31
+    via: page
+notFound: [wikidata, parent, forkOf, endoflifeId, eolPolicy, contentStore, headlessApi, templating, renderingModes, multisite, livePreview, paidEdition, freeTier, hqCountry, selfHostOption, pluginDirectory, pluginCount, starters, mastodon, bluesky, x, newsletter, subreddit, usageShare, reportedInstalls, npmName, packagistName, pypiName]
+unreadable: []
+notes: >
+  The overview says applications send users to Casdoor to sign in, that it returns a verified identity over OAuth 2.0, OpenID Connect, SAML or CAS, and that the operator manages users, applications, sign-in pages and providers in a web-based admin console. The server reads its database settings from conf/app.conf, and the Docker all-in-one image is marked "Not for production" on the Docker page.   The homepage is casdoor.ai in the README and the repository, and casdoor.org serves the same site with the documentation; both are the project's own sites, and the homepage fact cites casdoor.ai. The copyright line on casdoor.org reads "Copyright © 2026 Casdoor contributors", while the pricing page on casdoor.com, which sells Casdoor Cloud, carries "© 2026 Casbin Inc." and says "Casdoor Cloud is operated by Casbin Inc."; the LICENSE file is the unfilled Apache 2.0 template with no copyright line, so the maintainer follows the project's own site footer, "Casdoor contributors" (the source file headers read "The Casdoor Authors"), and Casbin Inc., the operator of Casdoor Cloud, stays in these notes. The SDK integrations listed on the overview are C++, C#, Go, Java, JavaScript, Lua, PHP, Perl, Ruby, Rust, Haskell and Python. The company's country is not stated on the pages read, so hqCountry is not recorded. The pricing page lists a self-hosted option "Free (Apache-2.0)" alongside the cloud plans, and the cloud plans are not paid editions, so no paidEdition is recorded. The documentation's comparison pages (Casdoor vs. Keycloak, Authentik, Auth0, Logto) name records for alternativeTo; Logto has no record, so it is not listed. The docs say Casdoor uses Casbin for its permission model; that is a library the project builds on, not a parent software, so no basedOn is recorded. The overview calls Casdoor part of the CNCF Landscape, which the homepage repeats; a landscape listing is not a project governance statement, so no foundation is recorded. The server runs as one process serving the built frontend; the frontend build needs Node.js LTS 20 and Yarn 1.x, a build requirement not a runtime. The GitHub release list starts at v1.0.0 (2021-08-14), which is the first release year. The homepage Discord link is the community invite on casdoor.org. The Docker Compose route builds the image from source, and the README calls the all-in-one image the evaluation path. The Helm route uses an OCI chart at ghcr.io/casdoor/helm-charts/casdoor, and the Kubernetes operator and Terraform routes are not recorded.

@@ -1,0 +1,54 @@
+id: autumn
+name: Autumn
+status: stub
+checkedAt: 2026-10-31
+description: Billing and entitlements layer that sits between an app and Stripe for AI and SaaS products.
+facts:
+  - field: homepage
+    value: https://useautumn.com
+    url: https://useautumn.com
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Billing Infrastructure for AI Startups"
+  - field: docs
+    value: https://docs.useautumn.com/welcome
+    url: https://docs.useautumn.com/welcome
+    checkedAt: 2026-10-31
+    via: page
+  - field: pricingPage
+    value: https://useautumn.com/pricing
+    url: https://useautumn.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+  - field: maintainer
+    value: Rebase, Inc.
+    url: https://useautumn.com/terms
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Rebase, Inc. (d/b/a Autumn)"
+  - field: categories
+    value: [payments, billing]
+    url: https://docs.useautumn.com/welcome
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Autumn is your source of truth for billing and entitlements between your application and Stripe."
+  - field: freeTier
+    value: yes, a Free plan
+    url: https://useautumn.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Perfect while finding PMF. Everything you need to start."
+  - field: discord
+    value: https://discord.com/invite/STqxY92zuS
+    url: https://useautumn.com
+    checkedAt: 2026-10-31
+    via: page
+  - field: x
+    value: https://x.com/autumnpricing
+    url: https://useautumn.com
+    checkedAt: 2026-10-31
+    via: page
+notFound: [repository, repoOwnerType, language, runtime, license, licenseModel, currentMajor, latestReleaseDate, githubStargazers, contributors, firstRelease, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, multisite, livePreview, userRoles, sso, selfHostOption, headlessApi, contentStore, databases, paidEdition, apiLimits, hqCountry, runsAs, renderingModes, templating, installMethod, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, adminUi, i18n, endoflifeId, regions]
+unreadable: [github.com/useautumn/autumn (404 to the GitHub API and the web)]
+notes: >
+  Doubt: whether a user can install Autumn itself. The CSV row names github.com/useautumn/autumn, which returns 404 to the GitHub API and to the web, so no repository, license or release is recorded. The welcome page says "Autumn is open source. You can self-host anytime, or export all your data." but the docs index has no self-host install page; the install paths shown are the SDKs (npm autumn-js, pip autumn-sdk), the atmn CLI and an edge cache deployed with a CloudFormation stack in the customer's AWS account. A public server repository or a self-host install page would settle it, and then the record would move to accepted or hosted-service. Autumn builds on Stripe: subscriptions and payment details stay in the customer's Stripe account. The welcome page says an app queries Autumn inline to learn what a customer may do, that Autumn manages subscription state, credit balances, feature entitlements and usage enforcement, and that the SDKs default to fail-open and fail-fast. The terms and privacy page name Rebase, Inc., a Delaware corporation doing business as Autumn; the Delaware incorporation is no headquarters country, so hqCountry is unknown. The pricing page lists Free, Pro and Scale plans, recorded without prices; these are hosted plans, so no paidEdition. The homepage links LinkedIn (linkedin.com/company/useautumn) and Discord; LinkedIn is not a field. The SDK repositories (useautumn/typescript, useautumn/autumn-py) are client packages and are not recorded.

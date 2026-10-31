@@ -1,0 +1,141 @@
+id: xata
+name: Xata
+status: accepted
+checkedAt: 2026-10-31
+description: Open-source platform for running many PostgreSQL instances on Kubernetes, with copy-on-write branching and scale-to-zero.
+facts:
+  - field: name
+    value: Xata
+    url: https://xata.io/
+    checkedAt: 2026-10-31
+    via: page
+  - field: homepage
+    value: https://xata.io
+    url: https://xata.io/
+    checkedAt: 2026-10-31
+    via: page
+  - field: repository
+    value: https://github.com/xataio/xata
+    url: https://github.com/xataio/xata
+    checkedAt: 2026-10-31
+    via: api
+  - field: docs
+    value: https://xata.io/docs
+    url: https://xata.io/docs
+    checkedAt: 2026-10-31
+    via: page
+  - field: pricingPage
+    value: https://xata.io/pricing
+    url: https://xata.io/pricing
+    checkedAt: 2026-10-31
+    via: page
+  - field: maintainer
+    value: Xatabase, Inc.
+    url: https://xata.io/terms
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Xatabase, Inc."
+  - field: hqCountry
+    value: US
+    url: https://xata.io/privacy
+    checkedAt: 2026-10-31
+    via: page
+    quote: "San Francisco CA 94114-2512 US"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/xataio
+    checkedAt: 2026-10-31
+    via: api
+  - field: x
+    value: https://twitter.com/xata
+    url: https://github.com/xataio/xata
+    checkedAt: 2026-10-31
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/xata.io
+    url: https://github.com/xataio/xata
+    checkedAt: 2026-10-31
+    via: page
+  - field: categories
+    value: [database]
+    url: https://github.com/xataio/xata
+    checkedAt: 2026-10-31
+    via: page
+    quote: "platform for self-hosting a large number of Postgres instances on top of Kubernetes"
+  - field: databases
+    value: [postgres]
+    url: https://xata.io/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Xata runs vanilla PostgreSQL"
+  - field: language
+    value: Go
+    url: https://github.com/xataio/xata
+    checkedAt: 2026-10-31
+    via: api
+  - field: installMethod
+    value: local development with kind and Tilt
+    url: https://github.com/xataio/xata
+    checkedAt: 2026-10-31
+    via: page
+    quote: "To run locally, you need the following prerequisites"
+  - field: installMethod
+    value: Helm charts on a Kubernetes cluster
+    url: https://xata.io/open-source/xata-core
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Xata ships as Helm charts for Kubernetes."
+  - field: installMethod
+    value: helm install of the xata chart from the project chart repository
+    url: https://xata.io/open-source/quickstart
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Install the control plane: helm install xata xata/xata"
+  - field: selfHostOption
+    value: "Open Source plan, self-managed: self-host on your own infrastructure"
+    url: https://xata.io/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Self-host on your own infrastructure."
+  - field: hostedOffering
+    value: "Xata Cloud, fully managed and pay as you go"
+    url: https://xata.io/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Fully managed. Pay as you go."
+  - field: sso
+    value: OIDC
+    url: https://xata.io/docs/platform/sso
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Xata connects to identity providers over OpenID Connect (OIDC)"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/xataio/xata
+    checkedAt: 2026-10-31
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/xataio/xata
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Xata is a pure open-source, cloud-native, platform"
+  - field: lastCommitDate
+    value: 2026-10-23
+    url: https://github.com/xataio/xata
+    checkedAt: 2026-10-31
+    via: api
+  - field: githubStargazers
+    value: 1105
+    url: https://github.com/xataio/xata
+    checkedAt: 2026-10-31
+    via: api
+  - field: contributors
+    value: 18
+    url: https://api.github.com/repos/xataio/xata/contributors?per_page=1
+    checkedAt: 2026-10-31
+    via: api
+notFound: [firstRelease, currentMajor, latestReleaseDate, runtime, runtimeMin, runsAs, renderingModes, parent, regions, adminUi, contentStore, headlessApi, templating, i18n, multisite, userRoles, paidEdition, dockerPulls, npmName, npmWeeklyDownloads, packagistName, pypiName, discord, subreddit, newsletter, forum, mastodon, facebook, pluginDirectory, pluginCount, usageShare, reportedInstalls, wikidata, basedOn, forkOf, alternativeTo, successorOf, apiLimits, freeTier]
+unreadable: []
+notes: >
+  Status: the CSV row says hosted-service, but the repository xataio/xata is an Apache 2.0 platform whose README says it is for self-hosting on Kubernetes and gives a local install with kind and Tilt; the pricing page lists an Open Source plan, free and self-managed, to self-host on your own infrastructure. The self-install route is the basis for accepted: the xata.io open-source quickstart and Xata Core pages document a Helm install on a Kubernetes cluster ("helm repo add xata https://charts.xata.io", "helm install xata xata/xata"), beyond the README's kind and Tilt development setup. The docs deployment-models page covers Xata Cloud and bring-your-own-cloud, not self-management. The CSV repository, xataio/client-ts, is the archived Lite SDK for TypeScript (deprecated, Apache 2.0, 125 stars) and is not the software; its figures are not recorded. The TypeScript SDK (ts-sdk) and CLI repositories are active but are clients, not the platform. The homepage shows 12.3k next to the sign-in links, which the repository API does not match (1105 stars), so the homepage figure is not recorded. No GitHub release or tag exists, so lastCommitDate is the committer date of the newest commit on main. Maintainer: the terms and privacy pages name Xatabase, Inc., and the privacy page gives its legal mailing address in San Francisco, US; the homepage footer copyright reads Xatabase Inc. without the comma. Cloud and self-host: the pricing page lists a Xata Cloud plan with observability, SOC 2 and GDPR compliance and AWS and GCP multi-region, a BYOC option where Xata installs the data plane in the customer's cloud (AWS, Azure, GCP, Hetzner or on-premises, by the deployment-models page), and an AWS Marketplace listing for BYOC; plan tiers are hosting, so paidEdition stays out. Compliance (the security page says SOC-2, HIPAA and GDPR compliant) is a coined kind and goes here: compliance SOC-2, HIPAA, GDPR. Regions: the pricing page names providers for multi-region, not region names, and no EU hosting statement was found, so regions stays out. The sso page covers the Xata console sign-in for organizations, and SAML is not supported out of the box. The README says the platform uses Keycloak for its auth service; that is no sso field value. The README advises against the open-source platform for a single Postgres instance, which it says would be overkill on a Kubernetes cluster, and against offering it as a public Postgres-as-a-Service to end customers, where it points to BYOC. Fields coined here: none beyond the notes above.

@@ -1,0 +1,191 @@
+id: wso2-apim
+name: WSO2 API Manager
+status: accepted
+checkedAt: 2026-10-31
+description: Java-based API management platform for designing, publishing, securing and analyzing APIs, with a gateway that serves them and a developer portal.
+facts:
+  - field: name
+    value: WSO2 API Manager
+    url: https://github.com/wso2/product-apim/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+  - field: repository
+    value: https://github.com/wso2/product-apim
+    url: https://github.com/wso2/product-apim
+    checkedAt: 2026-10-31
+    via: api
+  - field: docs
+    value: https://apim.docs.wso2.com/en/latest/
+    url: https://github.com/wso2/product-apim/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Read our documentation"
+  - field: discord
+    value: https://discord.gg/wso2
+    url: https://github.com/wso2/product-apim/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Join the conversation on Discord"
+  - field: x
+    value: https://twitter.com/wso2
+    url: https://github.com/wso2/product-apim/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+  - field: maintainer
+    value: WSO2 Inc
+    url: https://github.com/wso2/product-apim/blob/master/pom.xml
+    checkedAt: 2026-10-31
+    via: page
+    quote: "WSO2 Inc"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/wso2
+    checkedAt: 2026-10-31
+    via: api
+  - field: categories
+    value: [api-gateway]
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/get-started/overview.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Enterprise-grade API gateway with rate limiting"
+  - field: language
+    value: Java
+    url: https://github.com/wso2/product-apim
+    checkedAt: 2026-10-31
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/wso2/product-apim/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "This product requires a JDK to run"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/install-and-setup/install/installing-the-product/installing-api-m-as-a-linux-service.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "To run the product as a service, create a startup script and add it to the boot sequence"
+  - field: installMethod
+    value: zip archive download
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/install-and-setup/install/installing-the-product/installing-api-m-runtime.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "select Zip Archive to get a download link to the All-in-one API Manager distribution as a ZIP file"
+  - field: installMethod
+    value: Kubernetes with Helm charts
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/install-and-setup/install/installation-options.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "You can follow the guides available in https://github.com/wso2/helm-apim"
+  - field: installMethod
+    value: Docker and Docker Compose
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/install-and-setup/install/installation-options.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "You can follow the guides available in https://github.com/wso2/docker-apim"
+  - field: installMethod
+    value: Puppet
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/install-and-setup/install/installation-options.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "You can follow the guides available in https://github.com/wso2/puppet-apim"
+  - field: adminUi
+    value: "yes, web portals"
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/install-and-setup/install/installing-the-product/running-the-api-m.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Follow the steps given below to run the WSO2 API Manager runtime and access its web portals"
+  - field: contentStore
+    value: [database]
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/install-and-setup/setup/setting-up-databases/overview.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "WSO2 API Manager is shipped with an H2 database for storing data."
+  - field: databases
+    value: [postgres, mysql, sqlserver, oracle]
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/install-and-setup/install/installation-prerequisites.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "WSO2 recommends that you use an industry-standard RDBMS such as Oracle, PostgreSQL, MySQL, MS SQL"
+  - field: i18n
+    value: "yes, the API Publisher and Developer Portal can be localized"
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/reference/customize-product/customizations/adding-internationalization.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "The steps below explain how you can localize the API Publisher and the Developer Portal"
+  - field: multisite
+    value: "yes, multi-tenancy"
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/get-started/key-concepts.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "A tenant in WSO2 API Manager is a logically isolated entity"
+  - field: userRoles
+    value: API Publisher role
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/get-started/key-concepts.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "An API publisher (API provider) is an API product manager"
+  - field: userRoles
+    value: API Creator role
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/get-started/key-concepts.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "An API Creator is a person in a technical role"
+  - field: userRoles
+    value: API Subscriber role
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/get-started/key-concepts.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "A subscriber is a consumer of an API"
+  - field: userRoles
+    value: Admin role
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/get-started/key-concepts.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "The admin user is responsible for managing the Admin Portal"
+  - field: sso
+    value: OIDC
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/install-and-setup/setup/sso/configuring-identity-server-as-external-idp-using-oidc.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "WSO2 API Manager uses the OIDC Single Sign-On feature by default"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/wso2/product-apim
+    checkedAt: 2026-10-31
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/wso2/docs-apim/blob/4.7.0/en/docs/get-started/overview.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "WSO2 API Manager is a fully open-source API management platform"
+  - field: currentMajor
+    value: 4
+    url: https://github.com/wso2/product-apim/releases/tag/v4.7.0
+    checkedAt: 2026-10-31
+    via: api
+  - field: latestReleaseDate
+    value: 2026-04-29
+    url: https://github.com/wso2/product-apim/releases/latest
+    checkedAt: 2026-10-31
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://github.com/wso2/product-apim/releases/tag/v1.9.0-M2
+    checkedAt: 2026-10-31
+    via: api
+  - field: githubStargazers
+    value: 1042
+    url: https://github.com/wso2/product-apim
+    checkedAt: 2026-10-31
+    via: api
+  - field: contributors
+    value: 233
+    url: https://api.github.com/repos/wso2/product-apim/contributors?per_page=1
+    checkedAt: 2026-10-31
+    via: api
+notFound: [homepage, hqCountry, parent, pricingPage, paidEdition, runtimeMin, dockerPulls, npmName, packagistName, pypiName, subreddit, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, wikidata, basedOn, forkOf, alternativeTo, successorOf, templating, headlessApi, renderingModes, hostedOffering, mastodon, bluesky, facebook, instagram, threads, forum]
+unreadable: ["https://wso2.com/api-manager/ (403, Cloudflare bot challenge; the product page the CSV names as homepage)", "https://wso2.com/api-management/ (403, the product page the README links)", "https://wso2.com/legal/ (403)", "https://wso2.com/about/ (403)", "https://apim.docs.wso2.com/en/latest/ (403; the docs are read from the docs-apim source repository at branch 4.7.0)"]
+notes: >
+  Homepage: every wso2.com page answered 403 with a Cloudflare challenge, so no homepage fact is recorded and the record stands on its repository; the next pass should add homepage once a page can be read, since the README points to wso2.com/api-management/. The docs were read from the wso2/docs-apim repository at branch 4.7.0, the source of apim.docs.wso2.com; those GitHub blob links are the cited pages. Maintainer: pom.xml names the organization WSO2 Inc, and the docs mkdocs copyright line says the same; no legal notice or country page could be read, so hqCountry stays out. Licenses: the LICENSE file is Apache 2.0 and the README badge says Apache 2.0; one license. Editions: the docs describe an Enterprise package (API Control Plane, Traffic Manager and Classic Gateway, distributed) beside the All-in-one package, and a WSO2 Subscription that gives the private registry images and WSO2 Updates; no page states features the open package lacks, so paidEdition stays out. The subscription pages say WSO2 Updates ship bug and security fixes, which is support, not features. Runtime: the README says the product needs a JDK and the docs name JDK 21 and 25 as tested; the pom at branch 4.7.0 sets a 1.8 source level in one plugin block, which is not a runtime statement, so runtimeMin stays out. The admin web portals are the Management Console, the API Publisher and the Developer Portal, named on the same docs page. Other products in the docs: an AI gateway and an MCP gateway (ai-gateway folder) and a Choreo analytics cloud that its page marks deprecated in favor of a Moesif-powered analytics; none recorded as a field. Fields coined here: none.

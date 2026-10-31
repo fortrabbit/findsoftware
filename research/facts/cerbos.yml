@@ -1,0 +1,203 @@
+id: cerbos
+name: Cerbos
+status: accepted
+checkedAt: 2026-10-31
+description: Open-core authorization engine that evaluates access policies for applications and services over HTTP and gRPC.
+facts:
+  - field: name
+    value: Cerbos
+    url: https://github.com/cerbos/cerbos
+    checkedAt: 2026-10-31
+    via: api
+    quote: "Cerbos is an open-core authorization management platform"
+  - field: homepage
+    value: https://www.cerbos.dev/
+    url: https://www.cerbos.dev/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Authorization management platform"
+  - field: repository
+    value: https://github.com/cerbos/cerbos
+    url: https://github.com/cerbos/cerbos
+    checkedAt: 2026-10-31
+    via: api
+  - field: docs
+    value: https://docs.cerbos.dev/cerbos/latest/
+    url: https://docs.cerbos.dev/cerbos/latest/
+    checkedAt: 2026-10-31
+    via: page
+  - field: pricingPage
+    value: https://www.cerbos.dev/pricing
+    url: https://www.cerbos.dev/pricing
+    checkedAt: 2026-10-31
+    via: page
+  - field: maintainer
+    value: Zenauth Ltd
+    url: https://www.cerbos.dev/terms-of-service
+    checkedAt: 2026-10-31
+    via: page
+    quote: "is a copyrighted work belonging to Zenauth Ltd"
+  - field: maintainerType
+    value: company
+    url: https://www.cerbos.dev/terms-of-service
+    checkedAt: 2026-10-31
+    via: page
+    quote: "is a copyrighted work belonging to Zenauth Ltd"
+  - field: hqCountry
+    value: GB
+    url: https://www.cerbos.dev/terms-of-service
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Albert Bridge Road, London, SW11 4PF, UK"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/cerbos
+    checkedAt: 2026-10-31
+    via: api
+  - field: categories
+    value: [authorization]
+    url: https://github.com/cerbos/cerbos
+    checkedAt: 2026-10-31
+    via: api
+    quote: "open-core authorization management platform"
+  - field: language
+    value: Go
+    url: https://github.com/cerbos/cerbos
+    checkedAt: 2026-10-31
+    via: api
+  - field: runtime
+    value: [go binary]
+    url: https://docs.cerbos.dev/cerbos/latest/installation/binary
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Cerbos PDP binaries are available for multiple operating systems and architectures"
+  - field: runtimeMin
+    value: "Go 1.27"
+    url: https://github.com/cerbos/cerbos/blob/v0.57.0/go.mod
+    checkedAt: 2026-10-31
+    via: api
+    quote: "go 1.27.3"
+  - field: installMethod
+    value: binary download
+    url: https://docs.cerbos.dev/cerbos/latest/installation/binary
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Cerbos PDP binaries are available for multiple operating systems and architectures"
+  - field: installMethod
+    value: container image
+    url: https://docs.cerbos.dev/cerbos/latest/installation/container
+    checkedAt: 2026-10-31
+    via: page
+    quote: "docker run --rm --name cerbos -p 3592:3592 ghcr.io/cerbos/cerbos:0.57.0"
+  - field: installMethod
+    value: helm chart
+    url: https://docs.cerbos.dev/cerbos/latest/installation/helm
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Add the Cerbos Helm repository:"
+  - field: docker
+    value: ghcr.io/cerbos/cerbos
+    url: https://docs.cerbos.dev/cerbos/latest/installation/container
+    checkedAt: 2026-10-31
+    via: page
+    quote: "docker run --rm --name cerbos -p 3592:3592 ghcr.io/cerbos/cerbos:0.57.0"
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.cerbos.dev/cerbos/latest/deployment/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Cerbos can be deployed as a service or as a sidecar."
+  - field: databases
+    value: [mysql]
+    url: https://docs.cerbos.dev/cerbos/latest/configuration/storage
+    checkedAt: 2026-10-31
+    via: page
+    quote: "The MySQL storage backend is one of the dynamic stores"
+  - field: databases
+    value: [postgresql]
+    url: https://docs.cerbos.dev/cerbos/latest/configuration/storage
+    checkedAt: 2026-10-31
+    via: page
+    quote: "baseDriver: postgres"
+  - field: databases
+    value: [sqlite]
+    url: https://docs.cerbos.dev/cerbos/latest/configuration/storage
+    checkedAt: 2026-10-31
+    via: page
+    quote: "In-memory ephemeral database"
+  - field: contentStore
+    value: [git, disk, blob storage]
+    url: https://docs.cerbos.dev/cerbos/latest/configuration/storage
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Git is the preferred method of storing Cerbos policies."
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/cerbos/cerbos/blob/main/LICENSE
+    checkedAt: 2026-10-31
+    via: api
+    quote: "Version 2.0, January 2004"
+  - field: licenseModel
+    value: open-core
+    url: https://github.com/cerbos/cerbos
+    checkedAt: 2026-10-31
+    via: api
+    quote: "open-core authorization management platform"
+  - field: paidEdition
+    value: Enterprise plan with self-hosted Cerbos Hub and SSO support
+    url: https://www.cerbos.dev/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Self-hosted Cerbos Hub"
+  - field: hostedOffering
+    value: Cerbos Hub, a hosted policy control plane
+    url: https://docs.cerbos.dev/cerbos/latest/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Try Cerbos Hub for free"
+  - field: freeTier
+    value: Cerbos PDP is free forever
+    url: https://www.cerbos.dev/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Free forever"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/cerbos/cerbos/releases/tag/v0.57.0
+    checkedAt: 2026-10-31
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-23"
+    url: https://github.com/cerbos/cerbos/releases/tag/v0.57.0
+    checkedAt: 2026-10-31
+    via: api
+  - field: firstRelease
+    value: "2021"
+    url: https://github.com/cerbos/cerbos/releases/tag/v0.0.0-alpha0
+    checkedAt: 2026-10-31
+    via: api
+  - field: githubStargazers
+    value: 4639
+    url: https://github.com/cerbos/cerbos
+    checkedAt: 2026-10-31
+    via: api
+  - field: contributors
+    value: 34
+    url: https://github.com/cerbos/cerbos
+    checkedAt: 2026-10-31
+    via: api
+  - field: compatibleWith
+    value: [AuthZEN Authorization API]
+    url: https://www.cerbos.dev/comparisons
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Cerbos PDP implements the AuthZEN Authorization API."
+  - field: x
+    value: https://x.com/cerbosdev
+    url: https://www.cerbos.dev/
+    checkedAt: 2026-10-31
+    via: page
+notFound: [wikidata, parent, forkOf, successorOf, importsFrom, alternativeTo, endoflifeId, eolPolicy, templating, renderingModes, i18n, multisite, livePreview, userRoles, sso, adminUi, headlessApi, selfHostOption, pluginDirectory, pluginCount, starters, forum, discord, mastodon, bluesky, subreddit, newsletter, usageShare, reportedInstalls, npmName, packagistName, pypiName, sdkLanguages, regions, apiLimits, dockerPulls]
+unreadable: []
+notes: >
+  The deployment page says Cerbos PDP is a stateless system that makes decisions from the information the calling application passes to it, and recommends TLS on the link to the application regardless of the deployment model. The storage page says the MySQL store is one of the dynamic stores that supports adding or updating policies at runtime through the Admin API, and that the disk driver serves .yaml, .yml or .json files from a directory tree.   The GitHub description, the README and the pricing page call the project open-core: the PDP is Apache-2.0 and is "Free forever", and the Enterprise plan adds SSO support and a self-hosted Cerbos Hub. Cerbos Hub is the policy control plane (docs navigation) and has a hosted sign-up (the docs link "Try Cerbos Hub for free"); Cerbos Synapse is a context enrichment layer, not recorded. The footer copyright reads "© 2026 Cerbos.dev"; the terms of service say the site belongs to Zenauth Ltd, and the about page says the team is headquartered in London and fully remote, so the hqCountry comes from the terms' contact address. The docs version selector lists 0.58.0-prerelease, but the GitHub releases list shows no prerelease, so no latestPrereleaseDate is recorded. The container image is published on GitHub Container Registry, so no Docker Hub figure is recorded. The PDP exposes HTTP on port 3592 and gRPC on port 3593 by default, from the container page; those are API statements, not a headlessApi value, since the API decides access and serves no content. The docs' PEP SDKs and integrations are client libraries and ORM integrations, not recorded as sdkLanguages. The oldest GitHub release is v0.0.0-alpha0 (2021-03-23), so firstRelease is 2021. The compare pages (https://www.cerbos.dev/comparisons) name PlainID, Axiomatics, PingAuthorize and EmpowerID and the FAQ names OPA; none has a record, so no alternativeTo is recorded. The community Slack is linked in the footer and has no field; community.cerbos.dev answered 429 and stays unread. The homepage markets the product for AI agents and IAM teams; no field records that.

@@ -1,0 +1,138 @@
+id: adnanh-webhook
+name: webhook
+status: accepted
+checkedAt: 2026-10-31
+description: "Go server that exposes HTTP hooks and runs configured shell commands when a request matches a hook's rules."
+facts:
+  - field: repository
+    value: https://github.com/adnanh/webhook
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: api
+  - field: docs
+    value: https://github.com/adnanh/webhook
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: page
+    quote: "to see the detailed description of what properties a hook can contain"
+  - field: maintainer
+    value: "Adnan Hajdarevic"
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Copyright (c) 2015 Adnan Hajdarevic"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Copyright (c) 2015 Adnan Hajdarevic"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/adnanh
+    checkedAt: 2026-10-31
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://github.com/adnanh/webhook/releases/tag/1.0.4
+    checkedAt: 2026-10-31
+    via: api
+  - field: categories
+    value: [automation, webhooks]
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: page
+    quote: "is a lightweight configurable tool written in Go"
+  - field: language
+    value: Go
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: api
+  - field: runtime
+    value: [go binary]
+    url: https://github.com/adnanh/webhook/blob/2.8.3/go.mod
+    checkedAt: 2026-10-31
+    via: api
+  - field: runtimeMin
+    value: "Go 1.21 (go.mod at 2.8.3)"
+    url: https://github.com/adnanh/webhook/blob/2.8.3/go.mod
+    checkedAt: 2026-10-31
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://github.com/adnanh/webhook/releases/tag/2.8.3
+    checkedAt: 2026-10-31
+    via: api
+  - field: latestReleaseDate
+    value: "2026-02-12"
+    url: https://github.com/adnanh/webhook/releases/tag/2.8.3
+    checkedAt: 2026-10-31
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: githubStargazers
+    value: 12201
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: api
+  - field: contributors
+    value: 60
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: api
+  - field: installMethod
+    value: [source-build]
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Building from source"
+  - field: installMethod
+    value: [binary-download]
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Prebuilt binaries for different architectures are available at"
+  - field: installMethod
+    value: [apt]
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: page
+    quote: "sudo apt-get install webhook"
+  - field: installMethod
+    value: [snap]
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Snap store"
+  - field: installMethod
+    value: [freebsd-pkg]
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: page
+    quote: "pkg install webhook"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: page
+    quote: "listen on a regular TCP port or on a Unix domain socket"
+  - field: pluginDirectory
+    value: https://github.com/adnanh/webhook-contrib
+    url: https://github.com/adnanh/webhook
+    checkedAt: 2026-10-31
+    via: page
+    quote: "collections of tools and helpers related to"
+notFound: [homepage, pricingPage, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, multisite, i18n, livePreview, userRoles, sso, paidEdition, apiLimits, adminUi, headlessApi, contentStore, databases, renderingModes, templating, selfHostOption, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, dockerPulls, packagistDownloads, pypiDownloads, endoflifeId, facebook, instagram]
+unreadable: []
+notes: >
+  The GitHub homepage field is empty and the README names no project website, so no homepage is recorded. The CSV row is accepted for the webhook server: a site's git host or chat tool calls an HTTP hook, which runs a configured command, and the README gives a GitHub push-to-redeploy example. The README's Docker section names only community images (almir/webhook, roxedus/webhook, thecatlady/webhook, lwlook/webhook), which the project does not own, so no Docker installMethod and no dockerPulls are recorded. The README names a Go 1.21 requirement for building from source, which matches go.mod at the 2.8.3 tag. The oldest release in the repository is 1.0.4, dated 2015-03-13. The README's Multipart and Templates sections describe the server's own configuration handling, which is not a site templating fact. The README lists sponsors (DigitalOcean, BrowserStack) and an OpenCollective, PayPal and Patreon funding route, which are not fields. The README warns that a hook without a trigger-rule can be triggered by anyone who knows its endpoint, and points to the Hook rules page; it also describes serving https with the -secure flag and systemd socket activation. The README's Hook examples and webhook-contrib links are recorded only as docs and pluginDirectory.

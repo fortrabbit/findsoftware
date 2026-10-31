@@ -1,0 +1,130 @@
+id: auth0
+name: Auth0
+status: hosted-service
+checkedAt: 2026-10-31
+description: Hosted customer identity service that handles user login, single sign-on and user management for apps through APIs and SDKs.
+facts:
+  - field: homepage
+    value: https://auth0.com
+    url: https://auth0.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+  - field: docs
+    value: https://auth0.com/docs
+    url: https://auth0.com/docs
+    checkedAt: 2026-10-31
+    via: page
+  - field: pricingPage
+    value: https://auth0.com/pricing
+    url: https://auth0.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+  - field: categories
+    value: [identity-provider, auth]
+    url: https://auth0.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "The first and last auth platform you'll ever need"
+  - field: maintainer
+    value: Auth0, LLC
+    url: https://www.okta.com/legal/privacy-policy/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Auth0, LLC is wholly owned by Okta."
+  - field: maintainerType
+    value: company
+    url: https://www.okta.com/legal/privacy-policy/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Auth0, LLC is wholly owned by Okta."
+  - field: parent
+    value: Okta, Inc.
+    url: https://www.okta.com/legal/privacy-policy/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Auth0, LLC is wholly owned by Okta."
+  - field: hqCountry
+    value: US
+    url: https://www.okta.com/legal/privacy-policy/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "100 First Street, Floor 6, San Francisco, CA 94105, USA"
+  - field: protocols
+    value: [oidc, oauth2]
+    url: https://auth0.com/docs/authenticate/protocols/openid-connect-protocol
+    checkedAt: 2026-10-31
+    via: page
+    quote: "OpenID Connect (OIDC) is an identity layer built on top of the OAuth 2.0 framework."
+  - field: protocols
+    value: [saml]
+    url: https://auth0.com/docs/authenticate/protocols/saml
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Auth0 supports the SAML protocol and can serve as the IdP, the SP, or both"
+  - field: protocols
+    value: [webauthn]
+    url: https://auth0.com/docs/authenticate/login/auth0-universal-login/passwordless-login/webauthn-device-biometrics
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Configure WebAuthn with Device Biometrics for Passwordless Authentication"
+  - field: protocols
+    value: [scim]
+    url: https://auth0.com/docs/authenticate/protocols/scim
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Auth0 supports inbound SCIM for selected Enterprise Identity Providers"
+  - field: sso
+    value: [saml]
+    url: https://auth0.com/docs/authenticate/protocols/saml
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Auth0 supports the SAML protocol and can serve as the IdP, the SP, or both"
+  - field: sso
+    value: [ldap]
+    url: https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Active Directory/LDAP"
+  - field: sso
+    value: [oidc]
+    url: https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Enterprise connections using OpenID Connect or Okta Workforce as the identity provider can support the following"
+  - field: freeTier
+    value: "yes, Free plan up to 25,000 monthly active users"
+    url: https://auth0.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Up to 25,000 monthly active users"
+  - field: pricingModel
+    value: per monthly active user, with plan tiers
+    url: https://auth0.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "How many monthly active users?"
+  - field: userRoles
+    value: "yes, role-based access control per organization, from the Essentials plan"
+    url: https://auth0.com/pricing
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Role-based Access Control Per Organization"
+  - field: forum
+    value: https://community.auth0.com/
+    url: https://auth0.com
+    checkedAt: 2026-10-31
+    via: page
+  - field: newsletter
+    value: https://developer.auth0.com/newsletter
+    url: https://auth0.com
+    checkedAt: 2026-10-31
+    via: page
+  - field: x
+    value: https://twitter.com/auth0
+    url: https://auth0.com
+    checkedAt: 2026-10-31
+    via: page
+notFound: [regions, firstRelease, currentMajor, license, licenseModel, language, runtime, githubStargazers, contributors, repository, repoOwnerType, hqCity, wikidata, basedOn, forkOf, successorOf, alternativeTo, importsFrom, adminUi, headlessApi, templating, i18n, multisite, livePreview, selfHostOption, paidEdition, apiLimits, discord, subreddit, mastodon, bluesky, pluginDirectory, pluginCount, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, endoflifeId, latestReleaseDate, installMethod, runsAs, renderingModes]
+unreadable: []
+notes: >
+  The record covers the hosted Auth0 service. The GitHub organization auth0 publishes client libraries (the auth0.js browser SDK among them) and the auth0-cli command line tool; they are SDKs and tools for the service, so no repository, license, stars or npm figure is recorded here (the CSV row gave 132.9 thousand weekly npm downloads for auth0-js and 1.1 thousand stars for the SDK repository; both are client-side figures and stay in the CSV). The pricing page describes four deployment types (public cloud multi-tenant, private cloud basic and others) without naming data regions, so regions is unknown. The service has no open-source server, and no install step, so repository, license, releases and installMethod are not recorded. The pricing page's "Private Deployment Add-on" and the Private Cloud on AWS and Azure options are dedicated, vendor-managed deployments, not a self-install, so selfHostOption is unknown. The pricing page lists Free, Essentials, Professional and Enterprise plans without the prices recorded here, and the B2B plan features it names (Self-Service SSO, SCIM) are recorded as they appear in the Free column of the table. The privacy policy names Okta, Inc. (including its subsidiary Auth0, LLC) with a San Francisco address; hqCountry follows that address. The page of the company (okta.com/company) names a San Francisco headquarters too. No founding year or first release was found on the pages read, so firstRelease is unknown. The enterprise identity providers page lists Active Directory/LDAP, OpenID Connect and SAML, each recorded as its own sso entry. The pricing page says to build in 30+ languages and frameworks; this is a coined kind, so it stays in notes. The security page redirects to security.okta.com, which lists GDPR, HIPAA, SOC 2 and ISO 27001 / 27017 / 27018 reports for Okta; these are claims of the parent with no field. No page read lists data regions.

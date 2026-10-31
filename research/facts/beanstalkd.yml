@@ -1,0 +1,147 @@
+id: beanstalkd
+name: beanstalkd
+status: accepted
+checkedAt: 2026-10-31
+description: General-purpose work queue server that one process fills with jobs and other processes take them from.
+facts:
+  - field: homepage
+    value: https://beanstalkd.github.io/
+    url: https://beanstalkd.github.io/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Beanstalk is a simple, fast work queue."
+  - field: docs
+    value: https://github.com/beanstalkd/beanstalkd/blob/master/doc/protocol.txt
+    url: https://github.com/beanstalkd/beanstalkd/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "for details of the network protocol."
+  - field: repository
+    value: https://github.com/beanstalkd/beanstalkd
+    url: https://github.com/beanstalkd/beanstalkd
+    checkedAt: 2026-10-31
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/beanstalkd
+    checkedAt: 2026-10-31
+    via: api
+  - field: maintainer
+    value: Keith Rarick
+    url: https://beanstalkd.github.io/download.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Keith Rarick"
+  - field: language
+    value: C
+    url: https://github.com/beanstalkd/beanstalkd
+    checkedAt: 2026-10-31
+    via: api
+  - field: runtime
+    value: c binary
+    url: https://github.com/beanstalkd/beanstalkd/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "$ ./beanstalkd"
+  - field: categories
+    value: [jobs]
+    url: https://beanstalkd.github.io/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "running time-consuming tasks asynchronously"
+  - field: license
+    value: MIT
+    url: https://beanstalkd.github.io/download.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Beanstalk is distributed under the MIT license"
+  - field: licenseModel
+    value: open-source
+    url: https://beanstalkd.github.io/download.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Beanstalk is distributed under the MIT license"
+  - field: installMethod
+    value: [apt-get]
+    url: https://beanstalkd.github.io/download.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "sudo apt-get install beanstalkd"
+  - field: installMethod
+    value: [homebrew]
+    url: https://beanstalkd.github.io/download.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "brew install beanstalkd"
+  - field: installMethod
+    value: [source-build]
+    url: https://github.com/beanstalkd/beanstalkd/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "$ make"
+  - field: installMethod
+    value: [macports]
+    url: https://beanstalkd.github.io/download.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "sudo port install beanstalkd"
+  - field: installMethod
+    value: [yum]
+    url: https://beanstalkd.github.io/download.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "su -c 'yum install beanstalkd'"
+  - field: installMethod
+    value: [yaourt]
+    url: https://beanstalkd.github.io/download.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "yaourt -S beanstalkd"
+  - field: installMethod
+    value: [emerge]
+    url: https://beanstalkd.github.io/download.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "sudo emerge beanstalkd"
+  - field: runsAs
+    value: [always-on]
+    url: https://beanstalkd.github.io/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "This starts up beanstalkd listening on address 10.0.1.5, port 11300."
+  - field: forum
+    value: https://groups.google.com/g/beanstalk-talk
+    url: https://beanstalkd.github.io/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Mailing List"
+  - field: firstRelease
+    value: 2007
+    url: https://github.com/beanstalkd/beanstalkd/tags
+    checkedAt: 2026-10-31
+    via: api
+  - field: latestReleaseDate
+    value: 2023-03-12
+    url: https://beanstalkd.github.io/download.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "released on 12 March 2023"
+  - field: currentMajor
+    value: 1
+    url: https://github.com/beanstalkd/beanstalkd/tags
+    checkedAt: 2026-10-31
+    via: api
+  - field: githubStargazers
+    value: 6704
+    url: https://github.com/beanstalkd/beanstalkd
+    checkedAt: 2026-10-31
+    via: api
+  - field: contributors
+    value: 66
+    url: https://github.com/beanstalkd/beanstalkd
+    checkedAt: 2026-10-31
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, multisite, livePreview, userRoles, sso, selfHostOption, headlessApi, contentStore, databases, paidEdition, apiLimits, hqCountry, runtimeMin, renderingModes, templating, i18n, adminUi, pluginDirectory, pluginCount, subreddit, mastodon, bluesky, x, discord, newsletter, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, endoflifeId, pricingPage, hostedOffering, dockerPulls, maintainerType, latestPrereleaseDate]
+unreadable: []
+notes: >
+  Criterion 4 is met by the 1.13 tag of 2023-03-12, which falls inside the four-year window; the project has tags only, no GitHub releases. The first tag, v0.1, is dated 2007-10-16 by its commit, which predates the GitHub repository (created 2008-03-31), so firstRelease is 2007. The default branch's newest commit is dated 2025-03-18, and the repository has no archive or end statement. The LICENSE file's copyright line reads "Copyright (c) 2007 The authors of beanstalkd."; the homepage names Keith Rarick as its contact, which is the maintainer recorded here. The download page's package routes are each an installMethod entry; the Arch route is given as yaourt, which the page names. The README requires Linux (2.6.17 or later), Mac OS X, FreeBSD or Illumos and a C99 compiler, which is an OS and compiler statement, so runtimeMin is unknown. The homepage's history says Philotic, Inc. developed the first version for a Facebook application, which is no field. The Google group beanstalk-talk is the project's mailing list, and the protocol is documented at doc/protocol.txt in the repository. The homepage says it was originally designed for reducing the latency of page views in high-volume web applications, says there is no configuration file and only a handful of command-line options, points to the adm directory for running it as a background service, and its example puts a job, reserves it, runs it and deletes it. Client libraries are listed on a GitHub wiki and are not recorded.

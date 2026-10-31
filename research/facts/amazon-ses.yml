@@ -1,0 +1,68 @@
+id: amazon-ses
+name: Amazon SES
+status: hosted-service
+checkedAt: 2026-10-31
+description: Cloud email service from Amazon Web Services for sending and receiving email through an SMTP interface or an API.
+facts:
+  - field: homepage
+    value: https://aws.amazon.com/ses/
+    url: https://aws.amazon.com/ses/
+    checkedAt: 2026-10-31
+    via: page
+  - field: docs
+    value: https://docs.aws.amazon.com/ses/latest/dg/Welcome.html
+    url: https://docs.aws.amazon.com/ses/latest/dg/Welcome.html
+    checkedAt: 2026-10-31
+    via: page
+  - field: categories
+    value: [transactional-email]
+    url: https://docs.aws.amazon.com/ses/latest/dg/Welcome.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "is an email platform that provides an easy, cost-effective way for you to send and receive email"
+  - field: protocols
+    value: [SMTP, Amazon SES API]
+    url: https://docs.aws.amazon.com/ses/latest/dg/Welcome.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "by using the Amazon SES SMTP interface , or by making calls directly to the Amazon SES API"
+  - field: maintainer
+    value: Amazon Web Services, Inc.
+    url: https://aws.amazon.com/privacy/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "For any prospective or current customers of Amazon Web Services, Inc., our mailing address is"
+  - field: hqCountry
+    value: US
+    url: https://aws.amazon.com/privacy/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Amazon Web Services, Inc. is located in the United States"
+  - field: parent
+    value: Amazon.com, Inc.
+    url: https://aws.amazon.com/privacy/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "affiliates that Amazon.com, Inc. controls, including Amazon Web Services"
+  - field: pricingPage
+    value: https://aws.amazon.com/ses/pricing/
+    url: https://aws.amazon.com/ses/pricing/
+    checkedAt: 2026-10-31
+    via: page
+  - field: pricingModel
+    value: pay-as-you-go, based on the volume of emails sent and received
+    url: https://aws.amazon.com/ses/pricing/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "is a pay-as-you-go service based on the volume of emails sent and received"
+  - field: regions
+    value: available in several AWS Regions
+    url: https://docs.aws.amazon.com/ses/latest/dg/regions.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "SES is available in several AWS Regions around the world."
+notFound: [repository, repoOwnerType, language, runtime, license, licenseModel, currentMajor, latestReleaseDate, githubStargazers, contributors, firstRelease, basedOn, forkOf, successorOf, alternativeTo, importsFrom, multisite, livePreview, userRoles, sso, headlessApi, contentStore, databases, paidEdition, freeTier, apiLimits, selfHostOption, hostedOffering, runsAs, renderingModes, templating, installMethod, runtimeMin, adminUi, i18n, pluginDirectory, pluginCount, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, pypiName, maintainerType]
+unreadable: []
+notes: >
+  The record covers the hosted SES service. The GitHub repository aws/aws-sdk-js-v3 is the JavaScript SDK that calls the service, not the service, so no repository, license or stars are recorded: in notes only, it is Apache-2.0 with 3678 stars (api, 2026-10-31). The npm package @aws-sdk/client-ses is that SDK; its sum of downloads for 2026-10-23 to 2026-10-29 is 5601349 (api), and its latest version 3.1161.0 is Apache-2.0 and not deprecated; the candidates row figure of 2.3M a week is stale and not used. The AWS Free Tier text on the pricing page names SES only as a service that new customers' credits can be applied to, so no free tier is recorded. The regions page names no list of regions, so the regions value only states that the service is offered in several AWS Regions. The privacy page gives the mailing address in Seattle, Washington. The parent value rests on the privacy page's statement that Amazon.com, Inc. controls the affiliates it names, including Amazon Web Services. Amazon Web Services, Inc. is named as the contracting party in the terms; no separate page for the SES product's own legal entity was read.
+  The developer guide's welcome page states that SES sends marketing emails, transactional emails and newsletters, that it can receive email, that bounce and complaint notifications go to Amazon Simple Notification Service, and that IAM controls user access to sending. These statements are not recorded as fields.

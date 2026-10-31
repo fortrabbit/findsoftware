@@ -1,0 +1,157 @@
+id: wildfly
+name: WildFly
+status: accepted
+checkedAt: 2026-10-31
+description: Java application server that runs Jakarta EE and MicroProfile applications from a zip distribution, with a web administration console.
+facts:
+  - field: homepage
+    value: https://www.wildfly.org
+    url: https://www.wildfly.org/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "A powerful, modular, & lightweight application server"
+  - field: repository
+    value: https://github.com/wildfly/wildfly
+    url: https://api.github.com/repos/wildfly/wildfly
+    checkedAt: 2026-10-31
+    via: api
+  - field: docs
+    value: https://docs.wildfly.org/
+    url: https://docs.wildfly.org/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "The official WildFly 42 documentation provides comprehensive guides on installation, administration, development, and more."
+  - field: forum
+    value: https://groups.google.com/forum/#!forum/wildfly
+    url: https://www.wildfly.org/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Forums"
+  - field: maintainer
+    value: WildFly community
+    url: https://www.wildfly.org/about/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Wild Fly is an open source community project sponsored by the Commonhaus Foundation."
+  - field: maintainerType
+    value: community
+    url: https://www.wildfly.org/about/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Wild Fly is an open source community project sponsored by the Commonhaus Foundation."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/wildfly
+    checkedAt: 2026-10-31
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://search.maven.org/solrsearch/select?q=g:org.wildfly+AND+a:wildfly-dist&core=gav&rows=200&wt=json
+    checkedAt: 2026-10-31
+    via: api
+  - field: mavenCoordinates
+    value: org.wildfly:wildfly-dist
+    url: https://repo1.maven.org/maven2/org/wildfly/wildfly-dist/maven-metadata.xml
+    checkedAt: 2026-10-31
+    via: api
+    quote: "<artifactId>wildfly-dist"
+  - field: categories
+    value: [app-server]
+    url: https://www.wildfly.org/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "A powerful, modular, & lightweight application server"
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/wildfly/wildfly
+    checkedAt: 2026-10-31
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://docs.wildfly.org/42/Getting_Started_Guide.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Java SE 17 or later."
+  - field: runtimeMin
+    value: Java SE 17
+    url: https://docs.wildfly.org/42/Getting_Started_Guide.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Java SE 17 or later."
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.wildfly.org/42/Getting_Started_Guide.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "so it can be started/stopped automatically when your system boots up or is shut down"
+  - field: adminUi
+    value: "yes, web administration console"
+    url: https://www.wildfly.org/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "a web based administration console"
+  - field: installMethod
+    value: zip or tgz distribution extracted to a directory
+    url: https://docs.wildfly.org/42/Getting_Started_Guide.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Simply extract your chosen download to the directory of your choice."
+  - field: installMethod
+    value: WildFly Maven Plugin
+    url: https://docs.wildfly.org/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Provision & package a WildFly server fit for your application"
+  - field: installMethod
+    value: container image
+    url: https://docs.wildfly.org/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Our original container image that provides a standalone WildFly server."
+  - field: installMethod
+    value: Helm chart for Kubernetes and OpenShift
+    url: https://docs.wildfly.org/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "with a Helm Chart"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/wildfly/wildfly
+    checkedAt: 2026-10-31
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://www.wildfly.org/about/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Wild Fly is fully open. All components are open source"
+  - field: currentMajor
+    value: 42
+    url: https://github.com/wildfly/wildfly/releases/tag/42.0.0.Final
+    checkedAt: 2026-10-31
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-22
+    url: https://github.com/wildfly/wildfly/releases/tag/42.0.0.Final
+    checkedAt: 2026-10-31
+    via: api
+  - field: githubStargazers
+    value: 3199
+    url: https://api.github.com/repos/wildfly/wildfly
+    checkedAt: 2026-10-31
+    via: api
+  - field: contributors
+    value: 298
+    url: https://api.github.com/repos/wildfly/wildfly/contributors?per_page=1
+    checkedAt: 2026-10-31
+    via: api
+  - field: x
+    value: https://x.com/WildFlyAS
+    url: https://www.wildfly.org/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Follow us"
+notFound: [basedOn, forkOf, successorOf, alternativeTo, parent, hqCountry, wikidata, discord, bluesky, mastodon, facebook, subreddit, newsletter, youtube, usageShare, reportedInstalls, pluginDirectory, pluginCount, npmName, packagistName, endoflifeId, dockerPulls, renderingModes, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, databases, contentStore, paidEdition, pricingPage, hostedOffering, selfHostOption, latestPrereleaseDate, sourcePublic]
+unreadable: []
+notes: >
+  Accepted: a Java application server on GitHub (Apache-2.0, not archived, last push 2026-10-30) that the Getting Started guide runs from a zip or tgz distribution with standalone.sh or domain.sh. The stable release is 42.0.0.Final (2026-10-22), major 42; the 42.0.0.Beta1 prerelease (2026-10-08) is older than the final, so latestPrereleaseDate is absent. firstRelease is 2013 from the Maven Central upload of org.wildfly:wildfly-dist: its first version 8.0.0.Alpha1 has a timestamp of 2013-05-18 in the search.maven.org index, which is older than the oldest GitHub release (17.0.0.Beta1, 2019-05-24); the project's own pages give no first release date. The maintainer is recorded as the about page words it, "an open source community project sponsored by the Commonhaus Foundation"; the foundation sponsors the project and is not recorded as parent. Maintenance policy from the about page: the 41 series is maintained until 42 is released, and earlier releases are no longer maintained; that is a support policy, not an end signal, so the status is accepted. The about page also names the Commonhaus Foundation OSSI as a source of end-of-life support for organizations that depend on EOL releases; a third party's support is not recorded. The Getting Started guide says Java SE 17 or later and recommends Java SE 25; runtimeMin is the minimum. The WildFly Preview and EE 10 variants share the distribution family and are not recorded as separate records. The downloads page and news page name the Maven Central Galleon feature packs for WildFly 42; the install docs name the zip, so Maven coordinates are recorded only as the registry id of the distribution. Contributors counted with per_page=1 and the rel="last" page, which is 298. The homepage lists Zulip chat (wildfly.zulipchat.com) and the Google Groups forum; the forum field takes the Google group. The x field is an icon link in the homepage footer (x.com/WildFlyAS), quoted by the footer's "Follow us" label because the icon has no text. The GitHub homepage field in the API is https://wildfly.org; https://www.wildfly.org answers 200 and is recorded. Fields coined: none.

@@ -19,6 +19,8 @@ runtime:
 hosting:
   - perl
 runtimeMin: perl 5.16
+basedOn:
+  - webmin
 databases:
   - mysql
   - mariadb
@@ -106,6 +108,9 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/virtualmin/virtualmin-gpl/contributors?per_page=1
     checkedAt: 2026-10-30
+  - field: basedOn
+    url: https://www.virtualmin.com/
+    checkedAt: 2026-10-31
 ai: authored
 contentStore: null
 headlessApi: null

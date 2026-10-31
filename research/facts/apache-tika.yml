@@ -1,0 +1,142 @@
+id: apache-tika
+name: Apache Tika
+status: accepted
+checkedAt: 2026-10-31
+description: Java toolkit that detects and extracts metadata and text from over a thousand different file types, such as PPT, XLS and PDF.
+facts:
+  - field: homepage
+    value: https://tika.apache.org/
+    url: https://tika.apache.org/
+    checkedAt: 2026-10-31
+    via: page
+  - field: docs
+    value: https://tika.apache.org/docs/4.2.x/index.html
+    url: https://tika.apache.org/docs/4.2.x/index.html
+    checkedAt: 2026-10-31
+    via: page
+  - field: repository
+    value: https://github.com/apache/tika
+    url: https://github.com/apache/tika
+    checkedAt: 2026-10-31
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/apache
+    checkedAt: 2026-10-31
+    via: api
+  - field: maintainer
+    value: The Apache Software Foundation
+    url: https://tika.apache.org/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Tika is a project of the Apache Software Foundation"
+  - field: maintainerType
+    value: foundation
+    url: https://tika.apache.org/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Tika is a project of the Apache Software Foundation"
+  - field: categories
+    value: [documents]
+    url: https://tika.apache.org/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "detects and extracts metadata and text from over a thousand different file types"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/apache/tika
+    checkedAt: 2026-10-31
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/apache/tika
+    checkedAt: 2026-10-31
+    via: api
+  - field: language
+    value: Java
+    url: https://github.com/apache/tika
+    checkedAt: 2026-10-31
+    via: api
+  - field: runtime
+    value: jvm
+    url: https://tika.apache.org/download.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Tika 4.x requires Java 17 or later"
+  - field: runtimeMin
+    value: "17"
+    url: https://tika.apache.org/download.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Tika 4.x requires Java 17 or later"
+  - field: installMethod
+    value: [Maven]
+    url: https://tika.apache.org/download.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "The same jars are published to Maven Central for dependency resolution"
+  - field: installMethod
+    value: [docker]
+    url: https://tika.apache.org/docs/4.2.x/using-tika/docker.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "docker run -d -p 127.0.0.1:9998:9998 apache/tika:X.Y.Z"
+  - field: installMethod
+    value: [zip distribution]
+    url: https://tika.apache.org/download.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Tika 4.x ships zip distributions, not runnable jars."
+  - field: mavenCoordinates
+    value: org.apache.tika:tika-core
+    url: https://repo1.maven.org/maven2/org/apache/tika/tika-core/maven-metadata.xml
+    checkedAt: 2026-10-31
+    via: api
+  - field: dockerPulls
+    value: 73129361 (2026-10-31)
+    url: https://hub.docker.com/r/apache/tika
+    checkedAt: 2026-10-31
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://tika.apache.org/docs/4.2.x/using-tika/server/index.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "tika-server exposes Tika over HTTP, standalone or in a container."
+  - field: runsAs
+    value: [always-on]
+    url: https://tika.apache.org/download.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "server distribution, includes service install scripts"
+  - field: currentMajor
+    value: 4
+    url: https://github.com/apache/tika/tags
+    checkedAt: 2026-10-31
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-28
+    url: https://tika.apache.org/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Apache Tika 4.2.0 has been released!"
+  - field: firstRelease
+    value: 2009
+    url: https://search.maven.org/solrsearch/select?q=g:org.apache.tika+AND+a:tika-core&core=gav&rows=200&wt=json
+    checkedAt: 2026-10-31
+    via: api
+  - field: githubStargazers
+    value: 4119
+    url: https://github.com/apache/tika
+    checkedAt: 2026-10-31
+    via: api
+  - field: contributors
+    value: 168
+    url: https://github.com/apache/tika
+    checkedAt: 2026-10-31
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, multisite, livePreview, userRoles, sso, headlessApi, contentStore, databases, templating, i18n, renderingModes, adminUi, hqCountry, paidEdition, freeTier, apiLimits, selfHostOption, hostedOffering, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, facebook, instagram, linkedin, youtube, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, pypiName, endoflifeId, regions]
+unreadable: []
+notes: >
+  Accepted: a Java toolkit that embeds in an application or runs as a server, and the project's own docs state both, so criterion 1 holds through the tika-server and Java API routes. The GitHub repository has no GitHub releases; the highest stable tag is 4.2.0, a stable tag with no prerelease in its name, and the 4.0.0-beta-1-rc1 and 4.0.0-alpha-1 tags are prereleases. The homepage news dates the 4.2.0 release 28 October 2026, and the tag's commit is dated 2026-10-25 (api), so latestReleaseDate follows the homepage. The Maven Central metadata gives tika-core as the latest version 4.2.0; its earliest upload in the search index is 0.4, dated 2009-07-27, which is older than the earliest tag 0.1-incubating (commit 2010-05-12), so firstRelease is 2009. The homepage says Tika "was formerly a subproject of Apache Lucene"; that is a history statement, so it is in notes only and no parent or forkOf is recorded. The homepage links an AI agent skills directory on GitHub; it is not an installation route for the library and was not recorded. The Docker Hub count is for the image the docs name, apache/tika (the docker image name is not a field). The homepage description gives the file-type count (over a thousand file types), and the mailing lists are on the mail-lists page; neither has a field.
+  The Java API getting-started page states that for most use cases Tika should run as a separate service rather than be embedded, because a parser crash then cannot affect the application, and that PipesForkParser parses in a separate JVM when embedding. These statements are not recorded as fields.

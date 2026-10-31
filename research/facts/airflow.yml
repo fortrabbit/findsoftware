@@ -1,0 +1,133 @@
+id: airflow
+name: Apache Airflow
+status: stub
+checkedAt: 2026-10-31
+description: Open-source platform for developing, scheduling and monitoring batch workflows written as Python code.
+facts:
+  - field: homepage
+    value: https://airflow.apache.org
+    url: https://airflow.apache.org/
+    checkedAt: 2026-10-31
+    via: page
+  - field: docs
+    value: https://airflow.apache.org/docs/apache-airflow/stable/index.html
+    url: https://airflow.apache.org/docs/apache-airflow/stable/index.html
+    checkedAt: 2026-10-31
+    via: page
+  - field: repository
+    value: https://github.com/apache/airflow
+    url: https://github.com/apache/airflow
+    checkedAt: 2026-10-31
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/apache
+    checkedAt: 2026-10-31
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/apache/airflow
+    checkedAt: 2026-10-31
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/apache/airflow
+    checkedAt: 2026-10-31
+    via: api
+  - field: maintainer
+    value: The Apache Software Foundation
+    url: https://github.com/apache/airflow/blob/3.3.2/NOTICE
+    checkedAt: 2026-10-31
+    via: api
+    quote: "Copyright 2016-2026 The Apache Software Foundation"
+  - field: maintainerType
+    value: foundation
+    url: https://github.com/apache/airflow/blob/3.3.2/NOTICE
+    checkedAt: 2026-10-31
+    via: api
+  - field: categories
+    value: [workflow-engine]
+    url: https://airflow.apache.org/docs/apache-airflow/stable/index.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Airflow is a platform for orchestrating batch workflows."
+  - field: language
+    value: Python
+    url: https://github.com/apache/airflow/blob/3.3.2/airflow-core/pyproject.toml
+    checkedAt: 2026-10-31
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html
+    checkedAt: 2026-10-31
+    via: page
+  - field: runtimeMin
+    value: "3.10"
+    url: https://github.com/apache/airflow/blob/3.3.2/airflow-core/pyproject.toml
+    checkedAt: 2026-10-31
+    via: api
+    quote: 'requires-python = ">=3.10,!=3.15"'
+  - field: installMethod
+    value: [pip, uv, docker, helm]
+    url: https://airflow.apache.org/docs/apache-airflow/stable/start.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Officially supported installation methods are pip or uv"
+  - field: pypiName
+    value: apache-airflow
+    url: https://pypi.org/pypi/apache-airflow/json
+    checkedAt: 2026-10-31
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/overview.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "An API Server , which serves the REST API and presents a user interface"
+  - field: adminUi
+    value: yes, a web-based UI
+    url: https://airflow.apache.org/docs/apache-airflow/stable/index.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "A web-based UI helps you visualize, manage, and debug your workflows."
+  - field: databases
+    value: [sqlite]
+    url: https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Which starts a minimal system with an auto-generated admin password and SQLite database"
+  - field: currentMajor
+    value: 3
+    url: https://github.com/apache/airflow/releases
+    checkedAt: 2026-10-31
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-17
+    url: https://github.com/apache/airflow/releases
+    checkedAt: 2026-10-31
+    via: api
+  - field: endoflifeId
+    value: apache-airflow
+    url: https://endoflife.date/apache-airflow
+    checkedAt: 2026-10-31
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://github.com/apache/airflow/tags
+    checkedAt: 2026-10-31
+    via: api
+  - field: githubStargazers
+    value: 47331
+    url: https://github.com/apache/airflow
+    checkedAt: 2026-10-31
+    via: api
+  - field: contributors
+    value: 411
+    url: https://github.com/apache/airflow
+    checkedAt: 2026-10-31
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, multisite, livePreview, userRoles, sso, headlessApi, contentStore, templating, i18n, renderingModes, paidEdition, hqCountry, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, facebook, instagram, linkedin, newsletter, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, pypiDownloads, dockerPulls, selfHostOption, hostedOffering]
+unreadable: [pypistats.org (429 rate limit, apache-airflow recent downloads not read; not retried)]
+notes: >
+  Doubt: Airflow is a batch pipeline orchestrator that people log into and operate; its REST API (JWT-authenticated, with documented CORS settings) triggers and manages DAG runs and is no documented wiring into a website or web app, so the status stays stub (criterion 1). A page showing a site or app calling Airflow as a component would settle it. The homepage links a YouTube channel and the Slack workspace apache-airflow.slack.com, which have no field. The registry package apache-airflow on PyPI is the install route the docs name (pip, latest version 3.3.2, requires-python ">=3.10,!=3.15"). Release figures come from the core tags only: the repository is a monorepo whose provider packages have their own tags (providers-...), and the highest stable core tag is 3.3.2 (published 2026-09-17). The oldest core tag found is 0.2.1, whose commit is dated 2015-01-22; the first PyPI upload is 1.8.1 (2017-05-09), so firstRelease takes the tag date. The contributor count is the rel="last" page number of the contributors endpoint with per_page=1 (411). The docs' Helm chart and Docker image pages are named in the installation page; the chart and image repositories were not read. The start page's standalone command starts all components locally; the core-concepts page says the API server serves the REST API and the UI, which is the runsAs always-on statement. The apache.org sites give no hq country and the foundation's address was not read. pypistats.org answered 429 to the recent-downloads request; the figure is not retried and not recorded.
+  The public REST API, per its security page, requires a JWT token in the Authorization header, obtained from the auth manager's token endpoint. The docs describe the standalone command as a way to try Airflow without all production complexity. These statements are not recorded as fields.

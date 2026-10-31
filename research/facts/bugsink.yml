@@ -1,0 +1,211 @@
+id: bugsink
+name: Bugsink
+status: accepted
+checkedAt: 2026-10-31
+description: "Self-hosted error tracking server that accepts events from Sentry SDKs, with an optional managed version run by the same company."
+facts:
+  - field: homepage
+    value: "https://www.bugsink.com"
+    url: https://www.bugsink.com
+    checkedAt: 2026-10-31
+    via: page
+  - field: repository
+    value: "https://github.com/bugsink/bugsink"
+    url: https://github.com/bugsink/bugsink
+    checkedAt: 2026-10-31
+    via: api
+  - field: docs
+    value: "https://www.bugsink.com/docs/"
+    url: https://www.bugsink.com/docs/installation/
+    checkedAt: 2026-10-31
+    via: page
+  - field: maintainer
+    value: "Bugsink B.V."
+    url: https://github.com/bugsink/bugsink/blob/2.6.2/LICENSE
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Copyright (c) 2023-present Bugsink B.V."
+  - field: maintainerType
+    value: company
+    url: https://www.bugsink.com/about/
+    checkedAt: 2026-10-31
+    via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/bugsink
+    checkedAt: 2026-10-31
+    via: api
+  - field: hqCountry
+    value: NL
+    url: https://www.bugsink.com/about/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Bugsink B.V. is based in the Netherlands."
+  - field: language
+    value: Python
+    url: https://github.com/bugsink/bugsink
+    checkedAt: 2026-10-31
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/bugsink/bugsink/blob/2.6.2/pyproject.toml
+    checkedAt: 2026-10-31
+    via: page
+    quote: 'requires-python = ">=3.11"'
+  - field: runtimeMin
+    value: "Python 3.11"
+    url: https://github.com/bugsink/bugsink/blob/2.6.2/pyproject.toml
+    checkedAt: 2026-10-31
+    via: page
+    quote: 'requires-python = ">=3.11"'
+  - field: categories
+    value: [error-tracking]
+    url: https://www.bugsink.com
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Self-hosted Error Tracking"
+  - field: sdkCompatibility
+    value: "Sentry SDKs"
+    url: https://www.bugsink.com/connect-any-application/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Bugsink supports Sentry SDKs for Python, JavaScript, Ruby, PHP, Java, Go, Rust, and many more."
+  - field: alternativeTo
+    value: [sentry]
+    url: https://www.bugsink.com/connect-any-application/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "If you’re currently using Sentry and want to switch to Bugsink"
+  - field: databases
+    value: [sqlite, mysql, postgresql]
+    url: https://www.bugsink.com/docs/installation/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "with the option to choose between MySQL / PostgreSQL for persistent storage or SQLite for simplicity"
+  - field: contentStore
+    value: "SQLite, MySQL or PostgreSQL"
+    url: https://www.bugsink.com/docs/installation/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "with the option to choose between MySQL / PostgreSQL for persistent storage or SQLite for simplicity"
+  - field: installMethod
+    value: [docker]
+    url: https://www.bugsink.com/docs/installation/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Ideal for those who prefer containerized deployments."
+  - field: installMethod
+    value: [docker-compose]
+    url: https://www.bugsink.com/docs/docker-compose-install/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Bugsink can be installed using Docker Compose."
+  - field: installMethod
+    value: [pip]
+    url: https://www.bugsink.com/docs/local-install-using-virtualenv/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "You can install Bugsink using pip"
+  - field: docker
+    value: "bugsink/bugsink"
+    url: https://www.bugsink.com/docs/installation/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "docker pull bugsink/bugsink:latest"
+  - field: dockerPulls
+    value: "588881 (2026-10-31)"
+    url: https://hub.docker.com/v2/repositories/bugsink/bugsink/
+    checkedAt: 2026-10-31
+    via: api
+  - field: pypiName
+    value: bugsink
+    url: https://pypi.org/pypi/bugsink/json
+    checkedAt: 2026-10-31
+    via: api
+  - field: pypiDownloads
+    value: "5172 (last month)"
+    url: https://pypistats.org/api/packages/bugsink/recent
+    checkedAt: 2026-10-31
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://www.bugsink.com/docs/installation/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Gunicorn to handle application processes"
+  - field: license
+    value: PolyForm-Shield-1.0.0
+    url: https://github.com/bugsink/bugsink/blob/2.6.2/LICENSE
+    checkedAt: 2026-10-31
+    via: page
+    quote: "PolyForm Shield License 1.0.0"
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/bugsink/bugsink/blob/2.6.2/LICENSE
+    checkedAt: 2026-10-31
+    via: page
+    quote: "(BSD 3-Clause License)"
+  - field: license
+    value: MIT
+    url: https://github.com/bugsink/bugsink/blob/2.6.2/LICENSE
+    checkedAt: 2026-10-31
+    via: page
+    quote: "(MIT License)"
+  - field: license
+    value: "proprietary, ee/ directory only"
+    url: https://github.com/bugsink/bugsink/blob/2.6.2/ee/LICENSE
+    checkedAt: 2026-10-31
+    via: page
+    quote: "you may not use the Software in this directory"
+  - field: userRoles
+    value: "superuser, team admin members, project admin members"
+    url: https://www.bugsink.com/docs/permissions/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Each team and project has admin members ."
+  - field: hostedOffering
+    value: "Managed Bugsink"
+    url: https://www.bugsink.com
+    checkedAt: 2026-10-31
+    via: page
+    quote: "or self-host the same product on infrastructure you control."
+  - field: regions
+    value: "EU (GDPR-friendly), managed plans"
+    url: https://www.bugsink.com
+    checkedAt: 2026-10-31
+    via: page
+    quote: "EU (GDPR-friendly)"
+  - field: discord
+    value: "https://discord.gg/6Af6Yzz77C"
+    url: https://www.bugsink.com
+    checkedAt: 2026-10-31
+    via: page
+  - field: currentMajor
+    value: 2
+    url: https://github.com/bugsink/bugsink/releases/tag/2.6.2
+    checkedAt: 2026-10-31
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-22"
+    url: https://github.com/bugsink/bugsink/releases/tag/2.6.2
+    checkedAt: 2026-10-31
+    via: api
+  - field: firstRelease
+    value: "2024"
+    url: https://pypi.org/pypi/bugsink/json
+    checkedAt: 2026-10-31
+    via: api
+  - field: githubStargazers
+    value: 2156
+    url: https://github.com/bugsink/bugsink
+    checkedAt: 2026-10-31
+    via: api
+  - field: contributors
+    value: 42
+    url: https://github.com/bugsink/bugsink
+    checkedAt: 2026-10-31
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, wikidata, endoflifeId, eolPolicy, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, packagistName, npmWeeklyDownloads, paidEdition, pricingPage, adminUi, headlessApi, templating, i18n, multisite, livePreview, sso, importsFrom, renderingModes, freeTier, pricingModel, apiLimits, selfHostOption, dependentPackages, dependentRepos, httpArchiveSites]
+unreadable: []
+notes: >
+  The pricing page is not a separate URL: the homepage pricing section is anchored on /#pricing, so no pricingPage is recorded. The managed plans carry prices on the homepage; none are recorded. The self-hosted edition is free with "All Features" and "Unlimited users", and the paid "Premium Support" line is paid support, which is not an edition, so paidEdition is absent. The license sources are the LICENSE file at tag 2.6.2 (PolyForm Shield 1.0.0 for most content, BSD 3-Clause for the sentry directory, MIT for the Heroicons SVG icons) and ee/LICENSE, which says there is no public ee license and that the directory may not be used without a license from Bugsink B.V. Each license statement is its own entry. The licenseModel is left to the import rules, which read the ee/ statement as an enterprise part; the ee/ directory's content is not described on any page read, so nothing more is recorded. The GitHub API reports the license as NOASSERTION. The first release of the Python package is 0.0.1 (2024-02-21, PyPI upload history); the changelog starts at 1.2.0 (2025-02-11), and no GitHub release object exists before 2025-02-22. The only prerelease, 2.0.0a1 (2025-09-05), is older than 2.6.2, so no latestPrereleaseDate is recorded. The Docker install page says the quick throw-away instance uses SQLite and loses its data when the container is removed. The Docker Hub figure is the count for bugsink/bugsink, the image the installation page names. The pypistats figure is the last-month count. The homepage shows "1400+ teams use Bugsink every week" and "GitHub 2.2K" and these are not recorded as adoption fields. The homepage and about page name the company as Bugsink B.V. in Utrecht; the terms say the software is "provided by Bugsink B.V." and the governing law is the Netherlands. The Kubernetes guides are user-contributed manifests with no official guide, and the one-click platforms (Coolify, Caprover, Dokploy, Railway, PikaPods and others) are user-contributed or third-party listings, so no installMethod is recorded for them. The LinkedIn link has no field. The docs also describe Virtualenv install and Single Server Production with Gunicorn behind Nginx; Gunicorn gives runsAs always-on.

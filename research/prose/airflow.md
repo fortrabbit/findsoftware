@@ -1,0 +1,3 @@
+Apache Airflow is an open-source platform for developing, scheduling and monitoring batch workflows, and workflows are written as Python code. A web-based UI shows, manages and debugs the workflows. The start page documents installation with pip or uv, and the installation page also names the official Docker images and a Helm chart for Kubernetes. The standalone command starts a minimal local system with an SQLite database, which the docs present as a way to try the software without production setup.
+
+The project's public REST API requires a JWT token, and its security page documents CORS settings for requests made from browser scripts.

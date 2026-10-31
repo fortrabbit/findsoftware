@@ -1,0 +1,131 @@
+id: win-acme
+name: win-acme
+status: accepted
+checkedAt: 2026-10-31
+description: ACME client for Windows that obtains and renews TLS certificates from Let's Encrypt and other ACME services and installs them in IIS and other stores.
+facts:
+  - field: homepage
+    value: https://www.win-acme.com
+    url: https://www.win-acme.com/
+    checkedAt: 2026-10-31
+    via: page
+    quote: "A simple ACMEv2 client for Windows (for use with Let's Encrypt et al.)"
+  - field: repository
+    value: https://github.com/win-acme/win-acme
+    url: https://api.github.com/repos/win-acme/win-acme
+    checkedAt: 2026-10-31
+    via: api
+  - field: docs
+    value: https://www.win-acme.com/manual/getting-started
+    url: https://www.win-acme.com/manual/getting-started
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Unzip files to a non-temporary folder, so that the scheduled task will be able to run."
+  - field: maintainer
+    value: ZeroSSL
+    url: https://github.com/win-acme/win-acme/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "This repository is officially maintained by"
+  - field: maintainerType
+    value: company
+    url: https://github.com/win-acme/win-acme/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "This repository is officially maintained by"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/win-acme
+    checkedAt: 2026-10-31
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://github.com/win-acme/win-acme/releases/tag/v0.6
+    checkedAt: 2026-10-31
+    via: api
+  - field: categories
+    value: [acme-client]
+    url: https://github.com/win-acme/win-acme/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "This is a ACMEv2 client for Windows"
+  - field: language
+    value: C#
+    url: https://api.github.com/repos/win-acme/win-acme
+    checkedAt: 2026-10-31
+    via: api
+  - field: runtime
+    value: [dotnet]
+    url: https://github.com/win-acme/win-acme/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Alternatively install .NET Core"
+  - field: runtimeMin
+    value: "7"
+    url: https://github.com/win-acme/win-acme/blob/v2.2.9.1701/src/main/wacs.csproj
+    checkedAt: 2026-10-31
+    via: page
+    quote: "<TargetFramework>net7.0</TargetFramework>"
+  - field: runsAs
+    value: [scheduled]
+    url: https://www.win-acme.com/manual/automatic-renewal
+    checkedAt: 2026-10-31
+    via: page
+    quote: "The task runs every day and checks two conditions to determine if it should renew"
+  - field: installMethod
+    value: zip download, unpacked and run as wacs.exe
+    url: https://github.com/win-acme/win-acme/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Download the .zip file from the download menu, unpack it to a location on your hard disk"
+  - field: installMethod
+    value: dotnet tool from NuGet
+    url: https://github.com/win-acme/win-acme/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "dotnet tool install win-acme --global"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/win-acme/win-acme
+    checkedAt: 2026-10-31
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/win-acme/win-acme/blob/master/LICENSE
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Apache License Version 2.0, January 2004"
+  - field: currentMajor
+    value: 2
+    url: https://github.com/win-acme/win-acme/releases/tag/v2.2.9.1701
+    checkedAt: 2026-10-31
+    via: api
+  - field: latestReleaseDate
+    value: 2024-05-25
+    url: https://github.com/win-acme/win-acme/releases/tag/v2.2.9.1701
+    checkedAt: 2026-10-31
+    via: api
+  - field: nugetName
+    value: win-acme
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:win-acme
+    checkedAt: 2026-10-31
+    via: api
+  - field: nugetDownloads
+    value: "59354 (total)"
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:win-acme
+    checkedAt: 2026-10-31
+    via: api
+  - field: githubStargazers
+    value: 5832
+    url: https://api.github.com/repos/win-acme/win-acme
+    checkedAt: 2026-10-31
+    via: api
+  - field: contributors
+    value: 93
+    url: https://api.github.com/repos/win-acme/win-acme/contributors?per_page=1
+    checkedAt: 2026-10-31
+    via: api
+notFound: [basedOn, forkOf, successorOf, alternativeTo, parent, hqCountry, wikidata, x, discord, bluesky, mastodon, facebook, subreddit, forum, newsletter, youtube, usageShare, reportedInstalls, pluginDirectory, pluginCount, npmName, packagistName, endoflifeId, dockerPulls, renderingModes, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, databases, contentStore, adminUi, paidEdition, pricingPage, hostedOffering, selfHostOption, latestPrereleaseDate, sourcePublic]
+unreadable: []
+notes: >
+  Accepted: the CSV row stays accepted. The GitHub repository is not archived and was pushed 2026-06-09; the latest stable release is v2.2.9.1701 (2024-05-25), major 2. The v2.2.9.1680 prerelease (2024-05-16) is older than the stable release, so latestPrereleaseDate is absent. The CSV says "succeeded by simple-acme fork". The README says "This repository is officially maintained by ZeroSSL", and neither the README nor win-acme.com says the project has ended or names simple-acme as its successor; simple-acme's own pages call it a clone, which is no end signal for win-acme, so status stays accepted. firstRelease is 2015 from the oldest GitHub release (v0.6, 2015-11-13); the NuGet registration index starts at 2020-10-17, which is later. Not recorded as parent: the zerossl.com legal page footer reads "© 2026 HID Global Corporation, part of ASSA ABLOY. All Rights Reserved." and names no owner of win-acme. The maintainer stays ZeroSSL as the README words it; hqCountry is absent because no page of ZeroSSL or HID named a country for the maintainer. The csproj at the latest tag (src/main/wacs.csproj) sets TargetFramework net7.0, and its <Authors> is "Wouter Tinus and many others" (also the NuGet authors): authors are no maintainer statement, so they stay here. The system requirements page says Microsoft supports .NET 7 on Windows Server 2016 and higher, and lists older builds for .NET 6 (version 2.1.23, Windows 2012) and .NET 5 (2.1.20); those older builds are not runtimeMin. The homepage names IIS: "A very simple interface to create and install certificates on a local IIS server"; no field holds IIS, so it is not recorded. The ZeroSSL homepage and README mention paid certificates; those are certificate services, not editions of win-acme, so paidEdition is absent. The NuGet total count is the search API's totalDownloads for the dotnet tool package. Fields coined: none.

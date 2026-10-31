@@ -1,0 +1,171 @@
+id: buggregator
+name: Buggregator
+status: accepted
+checkedAt: 2026-10-31
+description: "Debugging server that receives exceptions, variable dumps, emails, profiles and logs from application SDKs and shows them in one real-time web UI."
+facts:
+  - field: homepage
+    value: "https://buggregator.dev"
+    url: https://buggregator.dev
+    checkedAt: 2026-10-31
+    via: page
+  - field: repository
+    value: "https://github.com/buggregator/server"
+    url: https://github.com/buggregator/server
+    checkedAt: 2026-10-31
+    via: api
+  - field: docs
+    value: "https://docs.buggregator.dev"
+    url: https://docs.buggregator.dev
+    checkedAt: 2026-10-31
+    via: page
+  - field: maintainer
+    value: "Buggregator"
+    url: https://github.com/buggregator/server
+    checkedAt: 2026-10-31
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/buggregator
+    checkedAt: 2026-10-31
+    via: api
+  - field: language
+    value: Go
+    url: https://github.com/buggregator/server
+    checkedAt: 2026-10-31
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://docs.buggregator.dev
+    checkedAt: 2026-10-31
+    via: page
+    quote: "The result is a single ~30 MB self-contained binary with everything built in"
+  - field: categories
+    value: [dev-tool, error-tracking]
+    url: https://buggregator.dev
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Catch unhandled exceptions with full stack traces via Sentry SDK."
+  - field: alternativeTo
+    value: [sentry]
+    url: https://buggregator.dev
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Replaces your local dev stack — for free"
+  - field: compatibleWith
+    value: ["Sentry SDK", "Symfony VarDumper", "Monolog"]
+    url: https://buggregator.dev
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Already using Sentry SDK, VarDumper, or Monolog?"
+  - field: databases
+    value: [sqlite]
+    url: https://github.com/buggregator/server/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "a single self-contained binary with an embedded SQLite database"
+  - field: contentStore
+    value: "embedded SQLite, in memory by default or file-based"
+    url: https://docs.buggregator.dev
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Embedded SQLite — in-memory by default for instant startup, or file-based for persistence."
+  - field: installMethod
+    value: [binary-download]
+    url: https://docs.buggregator.dev
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Download and run"
+  - field: installMethod
+    value: [docker]
+    url: https://docs.buggregator.dev
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Or use Docker"
+  - field: installMethod
+    value: [source-build]
+    url: https://github.com/buggregator/server/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Building from Source"
+  - field: docker
+    value: "ghcr.io/buggregator/server"
+    url: https://docs.buggregator.dev
+    checkedAt: 2026-10-31
+    via: page
+    quote: "ghcr.io/buggregator/server:latest"
+  - field: runsAs
+    value: [local]
+    url: https://buggregator.dev
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Made for dev environments."
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.buggregator.dev
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Buggregator runs beside your application as a standalone server"
+  - field: installMethod
+    value: [helm]
+    url: https://docs.buggregator.dev/config/helm-chart.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Deploy Buggregator on Kubernetes using the official Helm chart."
+  - field: sso
+    value: [OIDC]
+    url: https://docs.buggregator.dev/config/sso.html
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Buggregator supports Single Sign-On (SSO) for secure user authentication via OAuth2/OIDC."
+  - field: license
+    value: MIT
+    url: https://github.com/buggregator/server/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Buggregator is open-sourced software licensed under the MIT License."
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/buggregator/server/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+    quote: "Buggregator is open-sourced software licensed under the MIT License."
+  - field: discord
+    value: "https://discord.gg/uxr5gw2p"
+    url: https://buggregator.dev
+    checkedAt: 2026-10-31
+    via: page
+  - field: x
+    value: "https://twitter.com/buggregator"
+    url: https://github.com/buggregator/server/blob/master/README.md
+    checkedAt: 2026-10-31
+    via: page
+  - field: currentMajor
+    value: 2
+    url: https://github.com/buggregator/server/releases/tag/v2.4.1
+    checkedAt: 2026-10-31
+    via: api
+  - field: latestReleaseDate
+    value: "2026-08-17"
+    url: https://github.com/buggregator/server/releases/tag/v2.4.1
+    checkedAt: 2026-10-31
+    via: api
+  - field: firstRelease
+    value: "2022"
+    url: https://github.com/buggregator/server/releases/tag/1.0-rc.1
+    checkedAt: 2026-10-31
+    via: api
+  - field: githubStargazers
+    value: 1079
+    url: https://github.com/buggregator/server
+    checkedAt: 2026-10-31
+    via: api
+  - field: contributors
+    value: 5
+    url: https://github.com/buggregator/server
+    checkedAt: 2026-10-31
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, wikidata, endoflifeId, eolPolicy, regions, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, usageShare, reportedInstalls, npmName, packagistName, npmWeeklyDownloads, pypiDownloads, dockerPulls, hostedOffering, paidEdition, pricingPage, runtimeMin, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, importsFrom, renderingModes, maintainerType, hqCountry]
+unreadable: []
+notes: >
+  The project has two lines: v2.x is the Go binary in this repository, and the 1.x branch is the PHP version, which the docs and README point to. The record follows v2 (highest stable release v2.4.1, 2026-08-17). The first GitHub release is 1.0-rc.1 (2022-12-28), a prerelease that starts the Go line's release history in this repository; the repository itself was created 2022-05-10. Prerelease tags on the repository are all from 2025 or earlier, so latestPrereleaseDate is not recorded. The docs call the server a "single ~30 MB" binary and the install routes are the binary download, Docker from ghcr.io and a source build; no Docker Hub image is named by the install docs, so no dockerPulls is recorded (the README badge points to Docker Hub butschster/buggregator, which is not the image the install docs name). Two Discord invite links appear: the homepage's discord.gg/uxr5gw2p, recorded, and the README badge's discord.gg/vDsCD3EKUB, which is not recorded. The x field comes from the README badge only, not the homepage. The homepage lists PostgreSQL/MySQL as an external database, but the database docs page says SQLite is the database, so only sqlite is recorded. The homepage states "3M+ Downloads", a download count without a date or a registry; it is not recorded. The alternativeTo statement names Sentry (local), Mailhog, Mailtrap, Ray, Blackfire, XHProf, RequestBin, Inspector.dev, Charles, Fiddler and mitmproxy; only sentry has a record here, so the other names stay in these notes. The homepage describes the project as a debugging server for PHP; the record describes what it receives from SDKs and shows, since the SDK list also covers JavaScript, Python and Ruby on the homepage. Buggregator Trap is a separate PHP package from the same organization, installed with composer; it is not recorded here. The docs say "Free forever. No paid plans. No feature gates." and are recorded here only in notes, since no free-tier field applies to a self-hosted tool. The MCP server is a built-in module of the binary and the docs have an MCP page; no field exists for it. The copyright line on the homepage reads "© 2026 Buggregator", and no legal entity or country was found, so maintainer is the organization name and hqCountry is absent. Go version for building from source is 1.22 per the README; the binary itself has no runtimeMin stated on any page read. The runtime is recorded as binary per the compiled-server rule.
