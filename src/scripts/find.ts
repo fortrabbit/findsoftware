@@ -304,12 +304,16 @@ const start = () => {
        * Their labels name a group rather than what is in it, and "28 server
        * management" reads as a phrase cut short.
        */
+      const number = new Intl.NumberFormat('en');
       const said =
         register === home
-          ? `${total} ${total === 1 ? 'project' : 'projects'}`
-          : `${total} in ${registers.find((entry) => entry.key === register)?.label}`;
+          ? `${number.format(total)} with momentum`
+          : `${number.format(total)} in ${registers.find((entry) => entry.key === register)?.label}`;
 
-      summaryEl.textContent = activeFacets().length ? `${found} of ${said}.` : `${said}.`;
+      /* Unfiltered on the register, the sentence goes on in the aside, which brings its own full stop. */
+      const continued = register === home && !activeFacets().length && document.querySelector('[data-find-aside]');
+      const counted = activeFacets().length ? `${number.format(found)} of ${said}` : said;
+      summaryEl.textContent = continued ? counted : `${counted}.`;
     };
 
     /**
@@ -390,7 +394,7 @@ const start = () => {
       /* One list on show, and it is a whole list rather than rows picked out of
        several: the register's own markup is what says how many hosts there are. */
       for (const [key, list] of listOf) list.hidden = key !== register;
-      if (aside) aside.hidden = register !== home;
+      if (aside) aside.hidden = register !== home || activeFacets().length > 0;
 
       for (const [id, row] of rowOf) row.hidden = !found.has(id);
 

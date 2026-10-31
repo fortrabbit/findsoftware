@@ -117,7 +117,9 @@ const here = pairPath({ a, av, b, bv });
     <a class="find-onward" data-pagefind-ignore href={`/?${a.id}=${av.id}&${b.id}=${bv.id}`}>Combine filters →</a>
   </div>
 
-  <p class="annotation">{opening}</p>
+  <p class="annotation">
+    {opening} Counts only projects with momentum; the <a class="quiet-link" href="/all/">full list</a> has the rest.
+  </p>
 
   <ProviderRegister providers={matches} facets={facets} seed={{ facet: a.id, value: av.id, label: title }} />
 

@@ -169,7 +169,9 @@ const combined = (await pairsFor(facet.id, value.id)).map((group) => ({
   {Note && <Note />}
 
   {/* What we know about the set, after what a person wrote about it. */}
-  <p class="annotation">{counted}</p>
+  <p class="annotation">
+    {counted} Counts only projects with momentum; the <a class="quiet-link" href="/all/">full list</a> has the rest.
+  </p>
 
   {
     /*

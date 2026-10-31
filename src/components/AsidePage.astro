@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import PageFigure from './PageFigure.astro';
 import ProviderRegister from './ProviderRegister.astro';
-import { asideGroupOf, loadFacets } from '../lib/facets';
+import { asideGroupOf, besideTheRegister, loadFacets } from '../lib/facets';
 import { licenceUrl, providerList, publisherRef, websiteRef } from '../lib/seo';
 
 /**
@@ -37,10 +37,30 @@ const Note = note ? (await render(note)).Content : null;
  * that matters: they are not the register.
  */
 const { providers: register } = await loadFacets();
+const number = new Intl.NumberFormat('en');
+
+/* What puts a record in each group, so the page says what it holds as well as how many. */
+const holds: Record<string, string> = {
+  defunct: 'ended: the repository is archived, the package is deprecated, or the project says it has stopped',
+  stubs: 'checked but not listed yet: in doubt on a criterion, or without a release in four years',
+  hosted: 'offered only as a hosted service, with nothing to install',
+  boundary: 'not yet decided whether they belong in the directory',
+};
+
+/* The other groups, linked, so each page names what it leaves out. */
+const others = (await besideTheRegister()).filter((other) => other.key !== key && other.key !== 'all' && other.count > 0);
 const counted =
   key === 'all'
-    ? `${rows.length} records: the ${register.length} with momentum the register shows, and ${rows.length - register.length} without.`
-    : `${rows.length} ${rows.length === 1 ? 'record' : 'records'}, kept out of the register and out of its count.`;
+    ? {
+        lead: `${number.format(rows.length)} listed: `,
+        strong: `${number.format(register.length)} with momentum`,
+        tail: `, shown on the home page, and ${number.format(rows.length - register.length)} without.`,
+      }
+    : {
+        lead: '',
+        strong: `${number.format(rows.length)} ${rows.length === 1 ? 'project' : 'projects'}`,
+        tail: holds[key] ? ` ${holds[key]}. Not in the home page count or the full list; each keeps its page.` : ', kept out of the home page count and the full list.',
+      };
 
 const origin = Astro.site?.origin ?? '';
 ---
@@ -74,7 +94,20 @@ const origin = Astro.site?.origin ?? '';
   {Note && <Note />}
 
   <p class="annotation">
-    {counted}
+    {counted.lead}<strong>{counted.strong}</strong>{counted.tail}
+    {
+      others.length > 0 && (
+        <>
+          {' Elsewhere: '}
+          {others.map((other, index) => (
+            <>
+              <a class="quiet-link" href={other.href}>{`${number.format(other.count)} ${other.count === 1 ? other.label.toLowerCase().replace(/s$/, '') : other.label.toLowerCase()}`}</a>
+              {index < others.length - 1 ? ', ' : '.'}
+            </>
+          ))}
+        </>
+      )
+    }
     {
       key === 'all' && (
         <>

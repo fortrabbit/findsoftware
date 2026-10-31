@@ -75,7 +75,8 @@ const filtered = Astro.slots.has('default');
  *
  * The wording matches what find.ts writes here once a filter changes.
  */
-const summary = `${providers.length} ${providers.length === 1 ? 'project' : 'projects'}.`;
+const number = new Intl.NumberFormat('en');
+const summary = `${number.format(providers.length)} with momentum`;
 
 // Grouped by initial so the register can be scanned and linked to without JavaScript.
 const letterOf = (name: string) => {
@@ -92,10 +93,13 @@ const letterOf = (name: string) => {
  * in the row they are nav and keep what the dictionary wrote, which is also the
  * only way "Domains and DNS" survives being about DNS.
  */
-const heldLinks = beside.map((group, index) => ({
+/* The full list is what the count is a part of; the rest are what it leaves out. */
+const fullList = beside.find((group) => group.key === 'all');
+const excluded = beside.filter((group) => group.key !== 'all');
+const heldLinks = excluded.map((group, index) => ({
   href: group.href,
-  text: `${group.count} ${group.phrase ?? group.label.toLowerCase()}`,
-  tail: index < beside.length - 1 ? ', ' : '.',
+  text: `${number.format(group.count)} ${group.label.toLowerCase()}`,
+  tail: index < excluded.length - 1 ? ', ' : '.',
 }));
 
 const letterGroups = [...new Set(providers.map((provider) => letterOf(provider.name)))].sort().map((letter) => ({
@@ -135,12 +139,21 @@ const groups = dated ? groupsOf(providers) : letterGroups;
   !seed && !bare && (
     <div class="register-head">
       <p class="annotation" data-find-summary>
-        <span data-find-count>{summary}</span>{' '}
-        {heldLinks.length > 0 && (
+        <strong data-find-count>{fullList || heldLinks.length > 0 ? summary : `${summary}.`}</strong>
+        {(fullList || heldLinks.length > 0) && (
           /* The register's own edges, so they go when another list is on show:
              what stopped trading and what we have not finished are facts about
              the register, not about the holding companies. */
           <span data-find-aside>
+            {fullList && (
+              <>
+                {' out of '}
+                <a class="quiet-link" href={fullList.href}>
+                  {`${number.format(fullList.count)} listed`}
+                </a>
+              </>
+            )}
+            {heldLinks.length > 0 ? '. Not counted: ' : '.'}
             {heldLinks.map((link) => (
               <>
                 {/* Links, drawn as the sentence rather than as links: these are an
