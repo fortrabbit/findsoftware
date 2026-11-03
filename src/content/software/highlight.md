@@ -6,7 +6,7 @@ urls:
 category:
   - analytics
 description: Open-source full-stack monitoring platform for error monitoring, session replay and logs, offered as a hosted service and as a Docker self-hosted install.
-status: stub
+status: discontinued
 maintainer: Highlight Inc.
 maintainerType: company
 parent: LaunchDarkly
