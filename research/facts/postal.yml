@@ -1,0 +1,142 @@
+id: postal
+name: Postal
+status: accepted
+checkedAt: 2026-11-03
+description: Mail delivery platform that sends and receives e-mail for websites and web applications, run on the operator's own servers.
+facts:
+  - field: repository
+    value: https://github.com/postalserver/postal
+    url: https://github.com/postalserver/postal
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://docs.postalserver.io/
+    url: https://docs.postalserver.io/
+    checkedAt: 2026-11-03
+    via: page
+  - field: categories
+    value: [email]
+    url: https://docs.postalserver.io/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Postal is a complete and fully featured mail delivery platform"
+  - field: maintainer
+    value: Krystal Hosting Ltd
+    url: https://github.com/postalserver/postal/blob/main/MIT-LICENCE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright 2017-2024 Krystal Hosting Ltd"
+  - field: hqCountry
+    value: GB
+    url: https://krystal.io/legal
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Registered in England and Wales"
+  - field: repoOwnerType
+    value: organization
+    url: https://github.com/postalserver/postal
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2021
+    url: https://github.com/postalserver/postal/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: ruby
+    url: https://github.com/postalserver/postal
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/postalserver/postal
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://github.com/postalserver/postal/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-06-03
+    url: https://github.com/postalserver/postal/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 16919
+    url: https://github.com/postalserver/postal
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 46
+    url: https://github.com/postalserver/postal
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: docker-compose
+    url: https://docs.postalserver.io/getting-started/prerequisites/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Postal runs entirely using containers"
+  - field: installMethod
+    value: bash-install-script
+    url: https://docs.postalserver.io/getting-started/postal-command/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The postal command used throughout these docs is a small Bash script"
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.postalserver.io/other/containers/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "There are 3 processes that need to be running for a successful Postal installation."
+  - field: databases
+    value: [mariadb]
+    url: https://docs.postalserver.io/getting-started/prerequisites/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MariaDB (10.6 or higher)"
+  - field: sso
+    value: [oidc]
+    url: https://docs.postalserver.io/features/oidc/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Postal supports OpenID Connect (OIDC)"
+  - field: userRoles
+    value: [global-administrators, organization-members]
+    url: https://docs.postalserver.io/features/users-and-permissions/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Postal has a simple permission model with two kinds of user."
+  - field: adminUi
+    value: "yes, web interface for mail servers and mail logs"
+    url: https://docs.postalserver.io/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Manage your mail servers and view mail logs through an easy to user web interface."
+  - field: alternativeTo
+    value: [sendgrid, mailgun, postmark]
+    url: https://github.com/postalserver/postal
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Think Sendgrid, Mailgun or Postmark but open source and ready for you to run on your own servers."
+  - field: forum
+    value: https://github.com/postalserver/postal/discussions
+    url: https://github.com/postalserver/postal
+    checkedAt: 2026-11-03
+    via: page
+    quote: "ask for help or request a feature"
+  - field: discord
+    value: https://discord.postalserver.io
+    url: https://docs.postalserver.io/
+    checkedAt: 2026-11-03
+    via: page
+  - field: x
+    value: https://x.com/postalserverio
+    url: https://docs.postalserver.io/
+    checkedAt: 2026-11-03
+    via: page
+notFound: [homepage, headlessApi, contentStore, multisite, livePreview, i18n, templating, selfHostOption, hostedOffering, paidEdition, pricingPage, runtime, runtimeMin, licenseModel, renderingModes, pluginDirectory, pluginCount, subreddit, mastodon, bluesky, newsletter, facebook, instagram, threads, linkedin, wikidata, parent, basedOn, forkOf, successorOf, importsFrom, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, endoflifeId, packagistName, dockerPulls, apiLimits, regions]
+unreadable: []
+notes: >
+  No homepage is recorded: postalserver.io answers with a 301 to github.com/postalserver/install, the repository of the installation helper, so the docs site at docs.postalserver.io stands as the docs link. The docs source is github.com/postalserver/docs, which the docs edit links name. The HTTP API takes JSON over HTTP (the docs do not call it REST): POST requests to /api/v1 endpoints send messages, authenticated by an X-Server-API-Key header (developer/api page; apiStyles is not a dictionary field, so the style goes to notes). The project's webhooks page lists events sent to HTTP endpoints, and the receiving-by-HTTP page describes incoming mail posted to an application's own URL; these are the wiring of a website or app to the software, and the coined webhooks field is not in the dictionary. Postal runs as containers from ghcr.io/postalserver/postal, so no runtime is recorded for the host; the runtime inside the image is Ruby, from the repository language. The prerequisites page says MySQL is not supported in place of MariaDB, so only mariadb is recorded. The releases list holds 2.0.0-beta.1 (2021-08-01) as the oldest entry, which sets firstRelease, and no prerelease newer than 3.3.7. Per the copyright lines in MIT-LICENCE, the 2024 copyright holders Adam Cooke and Charlie Smurthwaite are individuals, not the maintainer. Krystal Hosting Ltd is named as a sponsor on the docs home page (supported by krystal.io), which is not a fact field. The FAQ describes Postal as a mail transport agent and not a mailing list manager. Contributor count is the non-anonymous page count of the contributors endpoint. The API reference says each mail server has its own API credential, and the prerequisites page says Postal provisions a database for each mail server. The installation page says the helper generates the configuration files and that the containers start with postal start.

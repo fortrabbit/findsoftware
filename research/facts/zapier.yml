@@ -1,0 +1,94 @@
+id: zapier
+name: Zapier
+status: hosted-service
+checkedAt: 2026-11-03
+description: Hosted no-code automation service that connects web apps and AI agents into workflows.
+facts:
+  - field: homepage
+    value: https://zapier.com
+    url: https://zapier.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "No-code automation across 9,000+ apps"
+  - field: docs
+    value: https://help.zapier.com
+    url: https://help.zapier.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Welcome to the Help Center"
+  - field: pricingPage
+    value: https://zapier.com/pricing
+    url: https://zapier.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Zapier, Inc.
+    url: https://zapier.com/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Zapier, Inc. is a Delaware corporation"
+  - field: categories
+    value: [automation]
+    url: https://zapier.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Do-it-yourself automation for workflows"
+  - field: sso
+    value: SAML 2.0, SCIM
+    url: https://zapier.com/security-compliance
+    checkedAt: 2026-11-03
+    via: page
+    quote: "SAML 2.0 + SCIM"
+  - field: userRoles
+    value: role-based access by role and workspace
+    url: https://zapier.com/security-compliance
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Define who can view, build, or manage, and what apps and actions they can use, set by role and workspace."
+  - field: hqCountry
+    value: US
+    url: https://zapier.com/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "548 Market St. #62411 San Francisco, CA 94104-5401"
+  - field: forum
+    value: https://community.zapier.com
+    url: https://community.zapier.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Zapier Community | Ask, Learn, Share, Connect"
+  - field: regions
+    value: United States, cloud service
+    url: https://zapier.com/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Zapier operates or controls the operation of the Service from a cloud service located in the United States."
+  - field: x
+    value: https://x.com/zapier
+    url: https://zapier.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: facebook
+    value: http://www.facebook.com/ZapierApp
+    url: https://zapier.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: youtube
+    value: https://www.youtube.com/user/ZapierApp
+    url: https://zapier.com
+    checkedAt: 2026-11-03
+    via: page
+notFound: [repository, adminUi, headlessApi, paidEdition, selfHostOption, databases, contentStore, i18n, multisite, livePreview, templating, renderingModes, importsFrom, alternativeTo, pluginDirectory, discord, wikidata, sourcePublic, apiLimits, firstRelease, npmName]
+unreadable: []
+notes: >
+  Hosted-service row: no self-install route is named on the pages read (homepage, pricing, security and compliance, terms, privacy, about, developer docs), so the status stays hosted-service.
+  The developer documentation at docs.zapier.com/integrations is the integration builder's guide, not the product's user documentation, so docs points at the Help Center instead.
+  The SDK repository zapier/zapier-platform (GitHub reports no single license; 567 stars on 2026-11-03; latest tag zapier-platform-schema@19.3.0 on the tags list, no GitHub release) and the npm package zapier-platform-core (CSV figure 73.0k a week, not re-read here) are developer toolkits for building integrations; per the hosted-service rule they are not recorded as fields.
+  The homepage also presents the "Zapier SDK" for AI coding agents and Zapier MCP; they are product lines, not install routes for the service, and no field holds them.
+  The security page's FAQ says Enterprise adds SSO (SAML) and SCIM provisioning, while the pricing page lists SAML SSO under the Team plan; both are hosted plan tiers, so no paidEdition fact is recorded.
+  The pricing page offers a "Free forever" plan and "Try it free" sign-up; the free tier is a coined freeTier value and goes to this note only, with no price recorded.
+  The homepage's social links carry utm tracking parameters; the recorded URLs strip them. The Facebook link is http on the homepage and is recorded as stated.
+  The terms say the company operates from a cloud service in the United States; that is the regions fact. The terms name Zapier, Inc. as a Delaware corporation and the about page footer reads "© 2026 Zapier Inc.", so the maintainer is recorded from the terms; hqCountry comes from the notice address in the terms (San Francisco, CA).
+  The security page names SOC 2 Type II and SOC 3, GDPR and CCPA, and GDPR UK; these compliance claims are coined and go here only.
+  The LinkedIn company page (linkedin.com/company/zapier) is a coined field and is not recorded.
+  The homepage's GitHub link (github.com/zapier) is the organization that publishes the SDK repository; no field holds it.

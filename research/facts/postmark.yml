@@ -1,0 +1,96 @@
+id: postmark
+name: Postmark
+status: hosted-service
+checkedAt: 2026-11-03
+description: Hosted transactional email service that sends application e-mail through an HTTP API and SMTP.
+facts:
+  - field: homepage
+    value: https://postmarkapp.com
+    url: https://postmarkapp.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Since 2010, we've delivered billions of emails for companies of all sizes"
+  - field: docs
+    value: https://postmarkapp.com/developer
+    url: https://postmarkapp.com/developer
+    checkedAt: 2026-11-03
+    via: page
+  - field: pricingPage
+    value: https://postmarkapp.com/pricing
+    url: https://postmarkapp.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: categories
+    value: [email]
+    url: https://postmarkapp.com/email-api
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A powerful email API to make email sending a breeze"
+  - field: maintainer
+    value: AC PM, LLC
+    url: https://postmarkapp.com/terms-of-service
+    checkedAt: 2026-11-03
+    via: page
+    quote: "entire agreement between AC PM, LLC"
+  - field: parent
+    value: ActiveCampaign, LLC
+    url: https://www.activecampaign.com/legal/privacy-policy
+    checkedAt: 2026-11-03
+    via: page
+    quote: "ActiveCampaign, and its related bodies corporate (including AC PM LLC"
+  - field: regions
+    value: "primary servers at a data center outside Chicago and on AWS; no EU servers planned"
+    url: https://postmarkapp.com/eu-privacy
+    checkedAt: 2026-11-03
+    via: page
+    quote: "We currently don't have plans to add servers in the EU"
+  - field: alternativeTo
+    value: sendgrid
+    url: https://postmarkapp.com/compare/sendgrid-alternative
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Postmark is a solid Twilio SendGrid alternative"
+  - field: alternativeTo
+    value: mailgun
+    url: https://postmarkapp.com/compare/mailgun-alternative
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Postmark is a Mailgun alternative"
+  - field: alternativeTo
+    value: amazon-ses
+    url: https://postmarkapp.com/compare/amazon-ses-alternative
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Postmark is an excellent Amazon SES alternative"
+  - field: alternativeTo
+    value: sparkpost
+    url: https://postmarkapp.com/compare/sparkpost-alternative
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Postmark is a solid SparkPost alternative"
+  - field: alternativeTo
+    value: resend
+    url: https://postmarkapp.com/compare/resend-alternative
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Postmark is a Resend alternative"
+  - field: newsletter
+    value: https://postmarkapp.com/newsletter
+    url: https://postmarkapp.com/newsletter
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Our monthly newsletter is packed full of email tips, product announcements, and interviews with industry experts."
+  - field: discord
+    value: https://discord.com/invite/cHzm4PYmvs
+    url: https://postmarkapp.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: x
+    value: https://x.com/postmarkapp
+    url: https://postmarkapp.com/
+    checkedAt: 2026-11-03
+    via: page
+notFound: [hqCountry, firstRelease, sso, userRoles, i18n, multisite, livePreview, selfHostOption, repository, language, runtime, license, currentMajor, latestReleaseDate, githubStargazers, contributors, pluginDirectory, forum, subreddit, mastodon, bluesky, facebook, instagram, threads, wikidata, basedOn, forkOf, successorOf, importsFrom, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, endoflifeId, headlessApi, paidEdition, apiLimits, databases, contentStore, runsAs, renderingModes, installMethod, templating, adminUi]
+unreadable: []
+notes: >
+  Hosted-service record: the SDK repository ActiveCampaign/postmark.js (MIT, 361 stars, pushed 2026-07-10 on the GitHub API) and the npm package postmark (version 5.1.0 on the registry's latest endpoint) are client libraries and are recorded here only as notes, per the hosted-service rule. The homepage quote is the service-history sentence; the "Since 2010" statement is a service history, not a first release. The terms name AC PM, LLC as the contracting party and the privacy notice calls AC PM LLC a related body corporate of ActiveCampaign, which the parent fact quotes. No hqCountry: the terms give a governing law of the State of Illinois and no principal address. The pricing page lists "User Roles" and "Multi-Region Routing (SMTP)" as plan features and "Number of Users" per plan, without a sentence stating what the roles are, so userRoles and the routing feature are not recorded. The API is HTTP JSON: the homepage example posts to api.postmarkapp.com/email with the X-Postmark-Server-Token header, and inbound email and delivery events are webhooks; the coined fields apiStyles and webhooks are not in the dictionary, so they are not recorded. The developer page's SMTP service and inbound email pages describe the same product. The pricing page states a free Developer plan with 100 emails every month that never expires, and the LinkedIn company page is linked from the homepage; both are coined fields (freeTier, linkedin) and sit here in notes. The vendor pages do not describe a self-install, so selfHostOption is unknown. firstRelease is unknown.

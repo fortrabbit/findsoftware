@@ -1,0 +1,62 @@
+id: ssoready
+name: SSOReady
+status: stub
+checkedAt: 2026-11-03
+description: Open-source service that adds SAML and SCIM support to an application through an HTTP API and language SDKs.
+facts:
+  - field: status
+    value: stub
+    url: https://github.com/ssoready/ssoready
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/ssoready/ssoready
+    url: https://github.com/ssoready/ssoready
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://github.com/ssoready/ssoready
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/ssoready
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Codomain Data Corporation
+    url: https://github.com/ssoready/ssoready/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright 2024 Codomain Data Corporation (dba SSOReady)"
+  - field: categories
+    value: [sso]
+    url: https://github.com/ssoready/ssoready/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "open-source, straightforward** way to add SAML and SCIM support to your product"
+  - field: license
+    value: MIT
+    url: https://github.com/ssoready/ssoready
+    checkedAt: 2026-11-03
+    via: api
+  - field: lastCommitDate
+    value: 2025-08-28
+    url: https://api.github.com/repos/ssoready/ssoready/commits?per_page=1
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 1531
+    url: https://github.com/ssoready/ssoready
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 10
+    url: https://github.com/ssoready/ssoready
+    checkedAt: 2026-11-03
+    via: api
+notFound: [homepage, docs, firstRelease, currentMajor, latestReleaseDate, runtime, runtimeMin, installMethod, runsAs, databases, pricingPage, hqCountry, parent, basedOn, alternativeTo, importsFrom, headlessApi, adminUi, userRoles, sso, i18n, multisite, livePreview, contentStore, renderingModes, templating, paidEdition, hostedOffering, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, npmName, packagistName, pypiName, endoflifeId, wikidata, usageShare, reportedInstalls, dockerPulls, latestPrereleaseDate, forkOf, successorOf]
+unreadable: [https://ssoready.com (does not resolve), https://ssoready.com/docs (does not resolve)]
+notes: >
+  Doubt first: the homepage ssoready.com and its docs, which the README links for the quickstarts and for "self-host yourself", do not resolve (checked 2026-11-03), and the repository holds no self-hosting guide, only a docker-compose.yaml next to the source, so criterion 3 (documented installation) is unsettled. Settling it needs a readable install guide, from the project's site or its repository. Status is stub for that reason; it is not discontinued because the repository is not archived and neither the README nor any page read states an end. The repository has no tags or releases, so the last commit on the default branch (2025-08-28) is the listing date. Criterion 1: the README documents an HTTP API and SDKs that an application calls ("Get SAML Redirect URL" and "Redeem SAML Access Code" for SAML, "List SCIM Users" for SCIM), so it is a service wired into a product, not an end-user app. The README names a cloud-hosted instance, a self-hosted option and an Enterprise plan with a Management API, custom domains and support; none of it is recorded as a field because the pricing and docs pages are gone. The SDKs live in separate repositories (ssoready-typescript, -python, -go, -java, -csharp, -ruby, -php) and give the service nothing. The repository language is TypeScript per the GitHub API, though go.mod and cmd/ show a Go backend. Y Combinator W24 per the README. The LICENSE copyright line names Codomain Data Corporation (dba SSOReady).

@@ -1,0 +1,78 @@
+id: upstash-qstash
+name: Upstash QStash
+status: hosted-service
+checkedAt: 2026-11-03
+description: Hosted HTTP message delivery and scheduling service that calls an endpoint with retries, delays and cron schedules.
+facts:
+  - field: homepage
+    value: https://upstash.com/docs/qstash
+    url: https://upstash.com/docs/qstash
+    checkedAt: 2026-11-03
+    via: page
+  - field: docs
+    value: https://upstash.com/docs/qstash/overall/getstarted
+    url: https://upstash.com/docs/qstash/overall/getstarted
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Upstash, Inc.
+    url: https://upstash.com/trust/terms.pdf
+    checkedAt: 2026-11-03
+    via: page
+  - field: categories
+    value: [jobs]
+    url: https://upstash.com/docs/qstash/features/schedules
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Schedules can be configured using cron expressions."
+  - field: categories
+    value: [message-queue]
+    url: https://upstash.com/docs/qstash/overall/compare
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You publish a message over HTTP, and QStash delivers it to your endpoint later"
+  - field: regions
+    value: EU region
+    url: https://upstash.com/docs/qstash/howto/multi-region
+    checkedAt: 2026-11-03
+    via: page
+    quote: "https://qstash-eu-central-1.upstash.io"
+  - field: regions
+    value: US region
+    url: https://upstash.com/docs/qstash/howto/multi-region
+    checkedAt: 2026-11-03
+    via: page
+    quote: "https://qstash-us-east-1.upstash.io"
+  - field: apiLimits
+    value: request bodies over the plan's max message size return HTTP 412
+    url: https://upstash.com/pricing/qstash
+    checkedAt: 2026-11-03
+    via: page
+    quote: "If the request body sent to QStash exceeds the limit, the API returns an HTTP 412 error."
+  - field: sso
+    value: SAML, on the Enterprise plan
+    url: https://upstash.com/pricing/qstash
+    checkedAt: 2026-11-03
+    via: page
+    quote: "SAML Single Sign-On (SSO)"
+  - field: pricingPage
+    value: https://upstash.com/pricing/qstash
+    url: https://upstash.com/pricing/qstash
+    checkedAt: 2026-11-03
+    via: page
+  - field: discord
+    value: https://upstash.com/discord
+    url: https://upstash.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Join our Discord community to chat with other developers and the Upstash team."
+  - field: x
+    value: https://twitter.com/upstash
+    url: https://upstash.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Follow us on X to stay up to date with the latest news from Upstash."
+notFound: [repository, repoOwnerType, language, runtime, runtimeMin, license, licenseModel, currentMajor, latestReleaseDate, latestPrereleaseDate, githubStargazers, contributors, firstRelease, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, multisite, livePreview, userRoles, adminUi, headlessApi, templating, i18n, contentStore, databases, renderingModes, runsAs, installMethod, selfHostOption, paidEdition, hqCountry, maintainerType, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, endoflifeId, lastCommitDate, dockerPulls]
+unreadable: []
+notes: >
+  Hosted service: QStash runs only on Upstash's infrastructure, and the QStash pages read name no self-install route, so the record is hosted-service under criterion 2. Criterion 1 holds because the docs describe publishing messages over HTTP so that QStash calls an endpoint of a site or app, the wiring the brief names. The SDK repository upstash/qstash-js (MIT, 272 stars, npm @upstash/qstash) is the client library and is not recorded as this service's repository; its license, stars and npm figure stay here in notes, per the hosted-service rule. The candidates row's 381.6k weekly npm figure is not recorded. Upstash Workflow is a separate product with its own docs (/docs/workflow/getstarted), not part of this record. The docs also describe a QStash CLI development server that runs locally, keeps data in memory and is for testing during development (howto/local-development); it is no production self-install route, so the record stays hosted-service and selfHostOption is unknown. The compare page "How QStash compares to BullMQ, Kafka, Amazon SQS, Amazon SNS, and Google Pub/Sub" names five products with no record ids here, so alternativeTo is unknown. The API is HTTP: the docs describe publishing over HTTP and the sidebar lists a REST section, but no API-style sentence names REST, so no apiStyles value is recorded. The plans offer a free tier with 1,000 messages a day, recorded here without prices; it is a plan feature, not a field. Prod Pack and Enterprise are plan tiers, so no paidEdition is recorded. The pricing page lists SAML Single Sign-On under Enterprise; the Enterprise page says it "is available upon request for Enterprise customers". The message-queue category maps to database in the import's categoryMap, so a reviewer should decide whether the category stays. Maintainer is Upstash, Inc., a Delaware corporation, per the terms PDF (no quote kept for a PDF source); the homepage footer says "Based in California", which names a state, not a country, so hqCountry is unknown. No release, changelog or repository release date is recorded: the changelog's oldest visible entry is October 2023, which does not establish a first release, so firstRelease is unknown. The compare page says QStash delivers messages with retries, delays, ordering, rate limits and a dead letter queue.

@@ -1,0 +1,205 @@
+id: stack-auth
+name: Hexclave
+status: accepted
+checkedAt: 2026-11-03
+description: Open-source user infrastructure platform for authentication, teams, payments, email and analytics, with a managed cloud and a self-hostable server.
+facts:
+  - field: formerName
+    value: Stack Auth
+    url: https://docs.hexclave.com/migration
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Stack Auth is now Hexclave."
+  - field: homepage
+    value: https://www.hexclave.com
+    url: https://www.hexclave.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Hexclave is the open-source platform for everything user"
+  - field: docs
+    value: https://docs.hexclave.com
+    url: https://docs.hexclave.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/hexclave/hexclave
+    url: https://github.com/hexclave/hexclave
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://github.com/hexclave/hexclave
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Stackframe
+    url: https://github.com/hexclave/hexclave/blob/dev/packages/template/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright 2024 Stackframe"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/hexclave
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2024
+    url: https://registry.npmjs.org/@stackframe/stack
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [identity-server, payments, transactional-email]
+    url: https://github.com/hexclave/hexclave/blob/dev/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Hexclave handles everything around your users: authentication, teams, payments, emails, analytics, and much more."
+  - field: installMethod
+    value: docker
+    url: https://docs.hexclave.com/guides/other/self-host
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The supported production path is the stackauth/server Docker image"
+  - field: installMethod
+    value: npm (SDK packages)
+    url: https://docs.hexclave.com/guides/getting-started/setup
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can install the correct JavaScript Hexclave SDK into your project by running the following command"
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.hexclave.com/guides/other/self-host
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The container starts two services"
+  - field: license
+    value: MIT
+    url: https://github.com/hexclave/hexclave/blob/dev/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "client code and examples are licensed under an open-source MIT license"
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/hexclave/hexclave/blob/dev/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "server components are licensed under an open-source AGPLv3 license"
+  - field: license
+    value: commercial enterprise license, available on request
+    url: https://github.com/hexclave/hexclave/blob/dev/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "We also have enterprise licenses available, if you prefer"
+  - field: pricingPage
+    value: https://www.hexclave.com/pricing
+    url: https://www.hexclave.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: hostedOffering
+    value: managed cloud
+    url: https://www.hexclave.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "let us hold the keys with managed cloud"
+  - field: adminUi
+    value: yes, the Hexclave dashboard
+    url: https://docs.hexclave.com/guides/other/self-host
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The dashboard is where you manage projects, users, auth methods, and app settings."
+  - field: userRoles
+    value: yes, RBAC roles and team permissions
+    url: https://docs.hexclave.com/guides/apps/rbac/overview
+    checkedAt: 2026-11-03
+    via: page
+    quote: "compose them into higher-level roles"
+  - field: sso
+    value: [OIDC]
+    url: https://docs.hexclave.com/guides/apps/authentication/auth-providers/custom-oidc
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Connect any OpenID Connect identity provider to Hexclave"
+  - field: sso
+    value: [OAuth]
+    url: https://www.hexclave.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "OIDC / OAuth SSO"
+  - field: headlessApi
+    value: rest
+    url: https://docs.hexclave.com/api/overview
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Stack offers a REST API for backends & frontends of any programming language or framework."
+  - field: databases
+    value: postgres
+    url: https://docs.hexclave.com/guides/other/self-host
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Self-hosting requires PostgreSQL 15 or newer."
+  - field: databases
+    value: clickhouse
+    url: https://docs.hexclave.com/guides/other/self-host
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The ClickHouse admin user must be able to create databases, tables, views, users, grants, and row policies."
+  - field: contentStore
+    value: postgres
+    url: https://docs.hexclave.com/guides/other/self-host
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Stores Hexclave data and is migrated by the server image on startup unless you disable migrations."
+  - field: importsFrom
+    value: [Clerk, Auth0, Firebase Auth, Supabase Auth]
+    url: https://www.hexclave.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Hexclave imports from Clerk, Auth0, Firebase Auth, and Supabase Auth without forcing your users to reset their passwords."
+  - field: githubStargazers
+    value: 6884
+    url: https://github.com/hexclave/hexclave
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 70
+    url: https://github.com/hexclave/hexclave
+    checkedAt: 2026-11-03
+    via: api
+  - field: npmName
+    value: "@hexclave/js"
+    url: https://registry.npmjs.org/@hexclave/js/latest
+    checkedAt: 2026-11-03
+    via: api
+  - field: npmWeeklyDownloads
+    value: "281604 (2026-10-26 to 2026-11-01)"
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/@hexclave/js
+    checkedAt: 2026-11-03
+    via: api
+  - field: dockerPulls
+    value: "201761 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/stackauth/server/
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/hexclave/hexclave/releases/tag/dashboard-v1.0.135
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-30"
+    url: https://github.com/hexclave/hexclave/releases/tag/dashboard-v1.0.135
+    checkedAt: 2026-11-03
+    via: api
+  - field: x
+    value: https://x.com/hexclave
+    url: https://www.hexclave.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: discord
+    value: https://discord.hexclave.com
+    url: https://www.hexclave.com
+    checkedAt: 2026-11-03
+    via: page
+notFound: [runtime, hqCountry, wikidata, i18n, multisite, livePreview, selfHostOption, regions, apiLimits, alternativeTo, forkOf, successorOf, parent, basedOn, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, usageShare, reportedInstalls, packagistName, pypiName, endoflifeId, renderingModes, templating, runtimeMin, paidEdition, latestPrereleaseDate, lastCommitDate]
+unreadable: [https://www.hexclave.com/terms, https://www.hexclave.com/privacy]
+notes: >
+  Stack Auth was renamed to Hexclave; the docs migration page says so, and the About page says the project "now presents those capabilities as Hexclave". The record follows the new name, keeps the id and records the old name as formerName. The homepage stack-auth.com redirects to www.hexclave.com, and the repository stack-auth/stack-auth redirects to hexclave/hexclave. The homepage footer says "© 2026 Hexclave, Inc.", while the LICENSE copyright lines say "Copyright 2024 Stackframe"; the maintainer follows the LICENSE copyright line per the wave 46 ruling, and the terms and privacy links in the homepage footer answer 404, so no contracting party is readable and the LICENSE line stands. No page gives a country for the company, so hqCountry is absent. License: the root LICENSE says client code and examples are MIT and server components AGPLv3; apps/backend/LICENSE and apps/dashboard/LICENSE are the AGPL text, and packages/ui, packages/shared, packages/template and packages/sc carry the MIT text. The enterprise line comes from the root LICENSE and the pricing FAQ ("Commercial licenses are available if AGPL doesn't fit"); it is recorded as worded, not as paidEdition. The pricing page lists Free, Team and Growth plans without prices; The custom-oidc page says Custom OIDC providers require a Team plan or above; the sso fact is stated without that plan gate, which the reviewer may want to add to notes. firstRelease is the 2024 npm upload of the legacy @stackframe/stack package (1.0.0, 2024-03-04), the same project under its old name; the GitHub releases in this repository start in April 2026. latestReleaseDate is the newest stable GitHub release (dashboard-v1.0.135, 2026-10-30); the npm @hexclave/js latest version 1.0.134 was published 2026-10-28, and the GitHub releases are dashboard and emulator builds, not SDK tags. The npm figure is the @hexclave/js package, the core SDK; @hexclave/next had 19,620 downloads in the same window and the legacy @stackframe/stack 12,507, both kept here for reference only (the legacy package is replaced by the @hexclave/* packages per the migration page). The SDKs are @hexclave/js, @hexclave/next, @hexclave/react and @hexclave/tanstack-start. The self-host page names the stackauth/server Docker image, whose Docker Hub pull count is recorded. Self-hosting needs PostgreSQL 15 or newer, ClickHouse, a cron scheduler calling internal endpoints (not recorded as runsAs, since the scheduler is outside the image), an SMTP or provider email setup, Svix for webhooks, and S3-compatible storage; Freestyle is required for custom email sending. No runtime is recorded: the self-host page ships a Docker image and only mentions "Node deployments" in passing, which does not state what runs the server. The self-host page says the project is fully open source and recommends the cloud for most users. Protocols named on the pages: OIDC, OAuth, passkeys, CLI auth (kept in notes, not a field). Coined or pricing-only items left to notes: the free tier ("Free, $0 forever", up to 10,000 auth users), plan limits, HIPAA and SOC 2 Type II offered through custom enterprise contracts, and the Node 24 sandbox snapshot used by custom email code, which runs in Freestyle and is not the server runtime. The docs advertise a REST API for any language (headlessApi is recorded for the REST style). The pricing page and the README also name a Discord link (discord.hexclave.com); no newsletter, Bluesky or Mastodon link appears on the homepage.

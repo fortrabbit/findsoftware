@@ -1,0 +1,78 @@
+id: urlbox
+name: Urlbox
+status: hosted-service
+checkedAt: 2026-11-03
+description: Hosted screenshot and PDF rendering API that turns web pages and HTML into images and PDFs for other sites and apps.
+facts:
+  - field: homepage
+    value: https://urlbox.com
+    url: https://urlbox.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: docs
+    value: https://urlbox.com/docs
+    url: https://urlbox.com/docs
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Urlbox Ltd
+    url: https://urlbox.com/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Terms and Conditions of Urlbox Ltd"
+  - field: hqCountry
+    value: GB
+    url: https://urlbox.com/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Urlbox Ltd - 53 Shaftesbury Avenue, Roundhay, Leeds, England, LS8 1DR"
+  - field: categories
+    value: [image-processing]
+    url: https://urlbox.com/docs/quickstart
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Quickly learn how to use Urlbox's website screenshot API"
+  - field: categories
+    value: [pdf-generation]
+    url: https://urlbox.com/docs/api
+    checkedAt: 2026-11-03
+    via: page
+    quote: "a PDF is a render"
+  - field: regions
+    value: US or EU infrastructure
+    url: https://urlbox.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "US or EU infrastructure"
+  - field: headlessApi
+    value: [rest]
+    url: https://urlbox.com/docs/quickstart
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Urlbox also offers a JSON-based REST API for synchronous and asynchronous rendering."
+  - field: apiLimits
+    value: requests per minute, depending on the plan
+    url: https://urlbox.com/docs/api/rate-limits
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The rate limit is dependent on your current plan and gives you a certain number of requests per minute."
+  - field: firstRelease
+    value: 2012
+    url: https://urlbox.com/about
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Urlbox has been turning HTML to images and URLs into screenshots since 2012."
+  - field: pricingPage
+    value: https://urlbox.com/pricing
+    url: https://urlbox.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: x
+    value: https://twitter.com/urlboxhq
+    url: https://urlbox.com/
+    checkedAt: 2026-11-03
+    via: page
+notFound: [repository, repoOwnerType, language, runtime, runtimeMin, license, licenseModel, currentMajor, latestReleaseDate, latestPrereleaseDate, githubStargazers, contributors, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, multisite, livePreview, userRoles, sso, adminUi, templating, i18n, contentStore, databases, renderingModes, runsAs, installMethod, selfHostOption, paidEdition, maintainerType, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, endoflifeId, lastCommitDate, dockerPulls]
+unreadable: []
+notes: >
+  Hosted service: the API renders in Urlbox's own cloud. The only self-hosting route the site names is "On Premises" (pricing table) and "US, EU, or on-premise deployment options" (homepage), which needs a sales contact, so the record stays hosted-service and selfHostOption is unknown. The API is at api.urlbox.com (POST /v1/render/sync per the API reference) and the quick start calls it a JSON-based REST API; the webhooks page describes receiving a notification when a render is generated, which is the wiring a site uses. The webhooks page is not recorded as a field. The SDK repository urlbox/urlbox-node (MIT, 26 stars, not archived) and its npm package urlbox are client libraries and are not recorded, per the hosted-service rule. The pricing table lists team members per plan (10 and 20), a seat count, so userRoles is unknown. No SSO, role or i18n statement was found on the homepage, pricing page, quick start, API reference or terms; those pages were read, not every docs page. The About page says Urlbox has turned HTML into screenshots since 2012; that year is recorded as firstRelease, the service start. The security page names SOC 2 Type II attestation and GDPR compliance (compliance is a coined kind, noted here only). The terms name Urlbox Ltd, registered in England and Wales (company number 08267269), with its registered address in Leeds, England; no other legal entity is named. The API reference documents the render endpoint as a POST request that accepts JSON or form data.

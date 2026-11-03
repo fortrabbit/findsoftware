@@ -1,0 +1,118 @@
+id: triplit
+name: Triplit
+status: stub
+checkedAt: 2026-11-03
+description: Open-source TypeScript database that syncs data between server and browser in real time.
+facts:
+  - field: repository
+    value: https://github.com/aspen-cloud/triplit
+    url: https://api.github.com/repos/aspen-cloud/triplit
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/aspen-cloud
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: aspen-cloud
+    url: https://api.github.com/users/aspen-cloud
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [sync-engine]
+    url: https://github.com/aspen-cloud/triplit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Triplit is an open-source database that syncs data between server and browser in real-time."
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/aspen-cloud/triplit
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://github.com/aspen-cloud/triplit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Node server for syncing data between Triplit clients"
+  - field: license
+    value: AGPL-3.0
+    url: https://api.github.com/repos/aspen-cloud/triplit
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: "2023"
+    url: https://api.github.com/repos/aspen-cloud/triplit/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: "1"
+    url: https://api.github.com/repos/aspen-cloud/triplit/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2025-07-31"
+    url: https://api.github.com/repos/aspen-cloud/triplit/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 3118
+    url: https://api.github.com/repos/aspen-cloud/triplit
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 19
+    url: https://github.com/aspen-cloud/triplit/graphs/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: npmName
+    value: "@triplit/client"
+    url: https://registry.npmjs.org/@triplit/client/latest
+    checkedAt: 2026-11-03
+    via: api
+  - field: npmWeeklyDownloads
+    value: "274905 (2026-10-26 to 2026-11-01, npm @triplit/client package)"
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/@triplit/client
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: Docker image aspencloud/triplit-server
+    url: https://github.com/aspen-cloud/triplit/blob/main/packages/docs/src/pages/self-hosting/index.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Each release of the server is published as a Docker image"
+  - field: databases
+    value: [sqlite]
+    url: https://github.com/aspen-cloud/triplit/blob/main/packages/docs/src/pages/self-hosting/docker.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This will run the Triplit server with SQLite as a storage engine"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/aspen-cloud/triplit/blob/main/packages/docs/src/pages/self-hosting/index.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You will need to expose the server to the internet so that clients can connect to it."
+  - field: adminUi
+    value: yes, admin dashboard
+    url: https://github.com/aspen-cloud/triplit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Durable server-side storage with an admin dashboard"
+  - field: discord
+    value: https://discord.gg/q89sGWHqQ5
+    url: https://github.com/aspen-cloud/triplit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The best way to get in touch is to join our Discord"
+  - field: x
+    value: https://twitter.com/triplit_dev
+    url: https://github.com/aspen-cloud/triplit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can follow us on Twitter/X"
+notFound: [homepage, docs, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, headlessApi, templating, i18n, renderingModes, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, selfHostOption, hostedOffering, runtimeMin, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, wikidata, usageShare, reportedInstalls, pypiDownloads, packagistDownloads, endoflifeId, contentStore]
+unreadable: ["https://triplit.dev/ (TLS handshake fails, checked 2026-11-03)", "https://triplit.dev/docs (same host, not reachable)", "https://www.triplit.dev/ (no connection, checked 2026-11-03)"]
+notes: >
+  Doubt: the homepage triplit.dev, which also hosts the docs and the getting-started guide the README links to, fails the TLS handshake on every attempt on 2026-11-03, so the install route and the runtime rest on the README and on the docs source in the repository (packages/docs, the self-hosting pages), and whether the project is still maintained rests on the repository (last push 2026-01-19, newest stable release 2025-07-31); a working homepage or a maintainer's statement on the project's status would settle it. Criterion 4 shows no end signal: the repository is not archived and the npm package @triplit/client carries no deprecated flag. The README's install route is "npm create triplit-app@latest my-app" for a new project and "npm install --save-dev @triplit/cli" for an existing one; the create-triplit-app package and @triplit/cli release at the same tags, so they are not recorded as npmName. The README names pluggable storage providers (SQLite, IndexedDB, LevelDB, Memory) and a development sync server started with "npm run triplit dev", which the README presents as the local development route; the development server is not recorded as a field. The repository docs describe production self-hosting as the server Docker image (Node.js or Bun variants) with a mounted volume for durable SQLite or LMDB storage (lmdb noted here), JWT_SECRET configuration and a /healthcheck endpoint. The repository docs also say Triplit Cloud is no longer accepting new users and recommend self-hosting, so no hostedOffering is recorded. The license appears as AGPL-3.0 in the GitHub API and as AGPL-3.0-only on npm for @triplit/client: one license, two wordings, the GitHub wording is recorded. The repository is a monorepo with per-package tags; the newest stable client tag is @triplit/client 1.0.50, the newest release of any package is 2025-07-31, and the first tag is @triplit/client 0.0.28 of 2023-07-24. The candidates row cites 119.1k weekly downloads for @triplit/client; the range endpoint for 2026-10-26 to 2026-11-01 gives the figure recorded here. The SDK packages and the React and Svelte bindings are not recorded.

@@ -1,0 +1,137 @@
+id: s3proxy
+name: S3Proxy
+status: accepted
+checkedAt: 2026-11-03
+description: Java server that speaks the S3 API and forwards requests to other object storage backends, such as AWS S3, Azure Blob Storage, Google Cloud Storage, the local filesystem and SFTP.
+facts:
+  - field: repository
+    value: https://github.com/gaul/s3proxy
+    url: https://github.com/gaul/s3proxy
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://github.com/gaul/s3proxy/wiki
+    url: https://github.com/gaul/s3proxy
+    checkedAt: 2026-11-03
+    via: page
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/gaul
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Andrew Gaul
+    url: https://github.com/gaul/s3proxy
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (C) 2014-2026 Andrew Gaul"
+  - field: categories
+    value: [s3-compatible]
+    url: https://github.com/gaul/s3proxy
+    checkedAt: 2026-11-03
+    via: page
+    quote: "S3Proxy implements the S3 API"
+  - field: language
+    value: Java
+    url: https://github.com/gaul/s3proxy
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: jvm
+    url: https://github.com/gaul/s3proxy
+    checkedAt: 2026-11-03
+    via: page
+    quote: "S3Proxy requires Java 17 or newer to run."
+  - field: runtimeMin
+    value: "17"
+    url: https://github.com/gaul/s3proxy
+    checkedAt: 2026-11-03
+    via: page
+    quote: "S3Proxy requires Java 17 or newer to run."
+  - field: installMethod
+    value: docker
+    url: https://github.com/gaul/s3proxy
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Docker Hub hosts a Docker image"
+  - field: installMethod
+    value: binary download
+    url: https://github.com/gaul/s3proxy
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Users can download releases from GitHub."
+  - field: installMethod
+    value: source build
+    url: https://github.com/gaul/s3proxy
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Developers can build the project by running"
+  - field: installMethod
+    value: Kubernetes reference manifests
+    url: https://github.com/gaul/s3proxy
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Reference manifests show how to wire the Docker image"
+  - field: installMethod
+    value: maven
+    url: https://github.com/gaul/s3proxy
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Maven Central hosts S3Proxy artifacts"
+  - field: dockerPulls
+    value: "10305005 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/andrewgaul/s3proxy/
+    checkedAt: 2026-11-03
+    via: api
+  - field: mavenCoordinates
+    value: org.gaul:s3proxy
+    url: https://repo1.maven.org/maven2/org/gaul/s3proxy/maven-metadata.xml
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/gaul/s3proxy/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/gaul/s3proxy
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: x
+    value: https://twitter.com/S3Proxy
+    url: https://github.com/gaul/s3proxy/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Twitter Follow"
+  - field: githubStargazers
+    value: 2414
+    url: https://github.com/gaul/s3proxy
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 73
+    url: https://github.com/gaul/s3proxy
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://github.com/gaul/s3proxy/releases/tag/s3proxy-1.0.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://github.com/gaul/s3proxy/releases/tag/s3proxy-4.1.1
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-10
+    url: https://github.com/gaul/s3proxy/releases/tag/s3proxy-4.1.1
+    checkedAt: 2026-11-03
+    via: api
+notFound: [homepage, basedOn, parent, forkOf, successorOf, importsFrom, multisite, livePreview, userRoles, sso, selfHostOption, headlessApi, contentStore, databases, paidEdition, apiLimits, templating, i18n, adminUi, renderingModes, runsAs, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, discord, newsletter, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, endoflifeId, latestPrereleaseDate, pricingPage, hostedOffering]
+unreadable: []
+notes: >
+  Accepted under criterion 1 because S3 clients call S3Proxy as an API: the README says "S3Proxy implements the S3 API and proxies requests", and its backends are the S3 API's storage targets. The repository has no homepage on GitHub and no separate project site, so no homepage is recorded. The README's Support section names Stack Overflow (https://stackoverflow.com/questions/tagged/s3proxy) and GitHub issues, and offers commercial support by email; none is recorded as a field. The runsAs value is unknown: the README shows a start command and a Kubernetes example with health probes, but no page states that it runs as a server process. The README does not name a parent or library for the proxy layer; the configuration keys use the jclouds prefix, which is no basedOn statement. The README lists middlewares (bucket aliasing, eventual consistency modeling, latency, read-only and others) as built into the proxy; these are features, not separate records. The license is also stated in the LICENSE file as Apache License, Version 2.0, and the repository's license API field is Apache-2.0. The maintainer is named in the README copyright line and in pom.xml as Andrew Gaul; the GitHub account is gaul. The Maven Central artifact is org.gaul:s3proxy; its releases and first upload dates come from maven-metadata.xml (https://repo1.maven.org/maven2/org/gaul/s3proxy/maven-metadata.xml), not recorded here. The Docker image is andrewgaul/s3proxy, which the README links, and the Docker Hub pull count is for it. The README says Linux and Mac OS X users can run the executable jar and Windows users invoke java -jar, and lists embedding into Java applications as a use case. The Helm chart the README mentions is third-party and not recorded. The current major is from the highest stable GitHub release, s3proxy-4.1.1 (2026-09-10); the release list has no prerelease. Storage backends named in the README: aws-s3, azureblob, filesystem, google-cloud-storage, openstack-swift, sftp and transient.

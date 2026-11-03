@@ -1,0 +1,67 @@
+id: stripe
+name: Stripe
+status: hosted-service
+checkedAt: 2026-11-03
+description: Hosted payments and billing platform, with APIs and a dashboard, operated by Stripe, LLC.
+facts:
+  - field: homepage
+    value: https://stripe.com
+    url: https://stripe.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: docs
+    value: https://docs.stripe.com
+    url: https://docs.stripe.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: pricingPage
+    value: https://stripe.com/pricing
+    url: https://stripe.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Stripe, LLC
+    url: https://stripe.com/en-de/legal/ssa
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Stripe, LLC"
+  - field: categories
+    value: [payments, billing]
+    url: https://stripe.com/en-de
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Accept payments, offer financial services and implement custom revenue models"
+  - field: adminUi
+    value: "yes, the Stripe Dashboard"
+    url: https://stripe.com/en-de
+    checkedAt: 2026-11-03
+    via: page
+    quote: "right from the Stripe Dashboard, no code required."
+  - field: headlessApi
+    value: rest
+    url: https://docs.stripe.com/api
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The Stripe API is organized around REST"
+  - field: sso
+    value: [SAML]
+    url: https://docs.stripe.com/get-started/account/sso?locale=en-US
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Stripe supports Security Assertion Markup Language (SAML) 2.0"
+  - field: userRoles
+    value: "yes, user roles for team members"
+    url: https://docs.stripe.com/get-started/account/teams/roles?locale=en-US
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Give team members controlled access to your Stripe account."
+  - field: apiLimits
+    value: "global API limit of 100 requests per second in live mode"
+    url: https://docs.stripe.com/rate-limits?locale=en-US
+    checkedAt: 2026-11-03
+    via: page
+    quote: "100 requests per second"
+notFound: [repository, repoOwnerType, language, runtime, license, licenseModel, currentMajor, latestReleaseDate, githubStargazers, contributors, firstRelease, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, multisite, livePreview, selfHostOption, contentStore, databases, paidEdition, i18n, regions, runsAs, renderingModes, templating, installMethod, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, endoflifeId]
+unreadable: [https://docs.stripe.com/data-residency (404), https://docs.stripe.com/get-started/migrations (404), https://docs.stripe.com/get-started/data-localization (404)]
+notes: >
+  Hosted-service record for the Stripe platform. The GitHub organization stripe (github.com/stripe, linked from the homepage) publishes SDKs; its repositories, licenses, stars and npm packages are not recorded, per the hosted-service rule. Quotes come from the English pages (stripe.com/en-de and the docs, read with an English Accept-Language header); the default request to stripe.com is served in German. The Stripe Services Agreement lists the contracting entity per country: Stripe, LLC for the United States, Stripe Payments Europe, Limited for most of Europe including Germany, plus other regional entities (Stripe Payments UK Ltd, Stripe Payments Company, Stripe Payments Canada, Ltd. and others); the maintainer is Stripe, LLC, the United States row, which also carries the copyright line in the site footer. The agreement and the privacy notice give no postal address for any entity, so hqCountry is unknown and no firstRelease year is stated. The agreement's Ireland terms apply to countries it does not list outside the Americas. The pricing page lists plan tiers and add-on prices; plan tiers are hosting tiers, so no paidEdition is recorded and no prices are recorded. The SSO page states SAML 2.0 for the Dashboard login. The API reference describes a REST API that applications call, with SDKs; webhooks, Connect and Terminal are product features without a field. The homepage links one YouTube video, not a channel, so no youtube field is recorded.

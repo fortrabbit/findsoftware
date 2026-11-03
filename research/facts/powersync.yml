@@ -1,0 +1,177 @@
+id: powersync
+name: PowerSync
+status: accepted
+checkedAt: 2026-11-03
+description: "Sync service that keeps a client-side SQLite database in step with a backend database, self-hostable as a Docker image."
+facts:
+  - field: homepage
+    value: https://www.powersync.com
+    url: https://www.powersync.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "PowerSync is a sync engine that consists of two components"
+  - field: docs
+    value: https://docs.powersync.com
+    url: https://docs.powersync.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/powersync-ja/powersync-service
+    url: https://github.com/powersync-ja/powersync-service
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/powersync-ja
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: FSL-1.1-ALv2
+    url: https://github.com/powersync-ja/powersync-service/blob/v1.27.2/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Functional Source License, Version 1.1, ALv2 Future License"
+  - field: categories
+    value: [sync-engine]
+    url: https://www.powersync.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "PowerSync is a sync engine that consists of two components"
+  - field: language
+    value: TypeScript
+    url: https://github.com/powersync-ja/powersync-service
+    checkedAt: 2026-11-03
+    via: api
+  - field: databases
+    value: [postgres, mongodb, mysql, sqlserver]
+    url: https://www.powersync.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Connects to these backend databases Postgres MongoDB Azure DocumentDB MySQL SQL Server"
+  - field: databases
+    value: [postgres, mongodb]
+    url: https://docs.powersync.com/configuration/powersync-service/self-hosted-instances
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MongoDB and Postgres are supported."
+  - field: databases
+    value: [postgres, mongodb, mysql, sqlserver, convex]
+    url: https://docs.powersync.com/architecture/powersync-service
+    checkedAt: 2026-11-03
+    via: page
+    quote: "replicating data from your source database (Postgres, MongoDB, MySQL, SQL Server or Convex)"
+  - field: installMethod
+    value: docker
+    url: https://docs.powersync.com/intro/self-hosting
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The PowerSync Service can be self-hosted using Docker."
+  - field: installMethod
+    value: "PowerSync CLI, for local development"
+    url: https://docs.powersync.com/intro/self-hosting
+    checkedAt: 2026-11-03
+    via: page
+    quote: "which sets up a Docker Compose stack for you."
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.powersync.com/configuration/powersync-service/self-hosted-instances
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A PowerSync instance is a running deployment of the PowerSync Service"
+  - field: currentMajor
+    value: 1
+    url: https://github.com/powersync-ja/powersync-service/releases/tag/v1.27.2
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-24
+    url: https://github.com/powersync-ja/powersync-service/releases/tag/v1.27.2
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2022
+    url: https://www.powersync.com/company
+    checkedAt: 2026-11-03
+    via: page
+    quote: "In 2022, JourneyApps spun off the PowerSync engine into the standalone"
+  - field: githubStargazers
+    value: 399
+    url: https://github.com/powersync-ja/powersync-service
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 30
+    url: https://github.com/powersync-ja/powersync-service
+    checkedAt: 2026-11-03
+    via: api
+  - field: dockerPulls
+    value: "1111736 (2026-11-03)"
+    url: https://hub.docker.com/r/journeyapps/powersync-service/
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Journey Mobile, Inc.
+    url: https://github.com/powersync-ja/powersync-service/blob/v1.27.2/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright 2023-2026 Journey Mobile, Inc."
+  - field: pricingPage
+    value: https://www.powersync.com/pricing
+    url: https://www.powersync.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: hostedOffering
+    value: "PowerSync Cloud, with PowerSync Service as an isolated cloud service"
+    url: https://www.powersync.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "PowerSync Service (isolated cloud service)"
+  - field: paidEdition
+    value: Enterprise Self-Hosted Edition, on custom pricing
+    url: https://docs.powersync.com/intro/self-hosting
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Self-hosting of PowerSync is also available in an Enterprise Self-Hosted Edition with dedicated support plans, advanced functionality and custom pricing."
+  - field: importsFrom
+    value: MongoDB Atlas Device Sync
+    url: https://docs.powersync.com/migration-guides/atlas-device-sync
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Migrating from the discontinued MongoDB Atlas Device Sync to PowerSync"
+  - field: alternativeTo
+    value: electric-sql
+    url: https://docs.powersync.com/migration-guides/electric
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This guide is for users looking to migrate to an alternative cloud provider of a Postgres-backed sync engine, namely PowerSync."
+  - field: parent
+    value: JourneyApps
+    url: https://www.powersync.com/company
+    checkedAt: 2026-11-03
+    via: page
+    quote: "In 2022, JourneyApps spun off the PowerSync engine into the standalone"
+  - field: x
+    value: https://x.com/powersync_
+    url: https://docs.powersync.com/intro/self-hosting
+    checkedAt: 2026-11-03
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/powersync.com
+    url: https://docs.powersync.com/intro/self-hosting
+    checkedAt: 2026-11-03
+    via: page
+  - field: discord
+    value: https://discord.com/invite/powersync
+    url: https://docs.powersync.com/intro/self-hosting
+    checkedAt: 2026-11-03
+    via: page
+  - field: newsletter
+    value: https://forms.powersync.com/subscribe
+    url: https://docs.powersync.com/intro/self-hosting
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Subscribe to monthly product update emails"
+notFound: [licenseModel, runtime, runtimeMin, latestPrereleaseDate, lastCommitDate, hqCountry, basedOn, forkOf, successorOf, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, selfHostOption, renderingModes, pluginDirectory, pluginCount, forum, subreddit, mastodon, facebook, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, pypiDownloads, endoflifeId, apiLimits, freeTier, regions]
+unreadable: []
+notes: >
+  Accepted record for the self-hosted PowerSync Service, the Open Edition the self-hosting docs describe; the cloud service, the dashboard and the client SDKs are not the recorded software. The docs say "The PowerSync Dashboard is currently not available when self-hosting PowerSync", so dashboard features are cloud-only and are not recorded. License: the LICENSE file at tag v1.27.2 is FSL-1.1-ALv2 (Functional Source License, Version 1.1, with the Apache 2.0 future license); the default branch main carries an Apache License 2.0 file, and the GitHub API reports Apache-2.0 for the repository. The license of the latest release is recorded; the Apache 2.0 statement on main and the GitHub detection go to the reviewer, who decides whether the main-branch wording changes the record. The pricing page calls the open-source link "Open-Source" and the docs call the self-hosted build the "PowerSync Open Edition"; neither page states a license for it beyond the LICENSE file. The docs page for the Enterprise Self-Hosted Edition gives custom pricing and a sales contact. The source database list on the homepage includes Azure DocumentDB, which is not in the databases value; the pricing navigation lists Sync Postgres, Sync MongoDB, Sync Azure DocumentDB, Sync MySQL and Sync SQL Server. The installation subpages for Docker, Kubernetes and source build returned 404 when read; the Docker route is from the self-hosting overview and the Kubernetes and EKS guides are deployment platform guides listed there. The current major is taken from the highest stable release v1.27.2 (tag family v1). The company page dates the standalone PowerSync product to 2022, which sets firstRelease; the oldest tag in this repository is @powersync/service-core@0.1.1, committed 2024-06-04 (repository created 2024-05-30). The company page says JourneyApps is headquartered in Denver, Colorado, which names no country, and the footer legal name is Journey Mobile, Inc., so hqCountry stays unknown and the page's JourneyApps is recorded as parent. The open-source page says the server-side PowerSync Service and CLI are available under the Functional Source License; the licensing page names the Open Edition as source-available under that license and the Enterprise Self-Hosted Edition as under a commercial agreement. The Docker Hub image journeyapps/powersync-service is the one the self-hosting docs name. The client SDKs (JavaScript, Dart/Flutter, Kotlin, Swift, .NET, Rust) are separate repositories and their figures are not recorded. The migration guide for Electric Cloud moves users to PowerSync Cloud and is not recorded as importsFrom; it is the source of the alternativeTo entry. Atlas Device Sync is a MongoDB Atlas product, so no alternativeTo mongodb-atlas is recorded. The compare page "PowerSync vs Neon Realtime" names a Neon product; Neon is not recorded as alternativeTo because the compared product is Neon Realtime, not the Neon record, so the reviewer decides. The Cloud plans on the pricing page (Free, Pro, Team, Enterprise) are hosting tiers and carry no prices here. The Enterprise Self-Hosted Edition is the paid edition; its page gives no feature list beyond the sentence quoted. The homepage links LinkedIn and YouTube; those links go to notes. The footer legal name is Journey Mobile, Inc., and no headquarters country is stated, so hqCountry is unknown. The Docker demo configuration runs a Node.js example; that is an example, not a runtime statement, so no runtime value is recorded.

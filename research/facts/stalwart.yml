@@ -1,0 +1,192 @@
+id: stalwart
+name: Stalwart
+status: accepted
+checkedAt: 2026-11-03
+description: Open-source mail and collaboration server written in Rust, serving SMTP, IMAP, JMAP, CalDAV, CardDAV and WebDAV.
+facts:
+  - field: homepage
+    value: https://stalw.art
+    url: https://stalw.art
+    checkedAt: 2026-11-03
+    via: page
+  - field: docs
+    value: https://stalw.art/docs/install/
+    url: https://stalw.art/docs/install/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/stalwartlabs/stalwart
+    url: https://github.com/stalwartlabs/stalwart
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Rust
+    url: https://github.com/stalwartlabs/stalwart
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Stalwart Labs LLC
+    url: https://github.com/stalwartlabs/stalwart/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (C) 2020, Stalwart Labs LLC"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/stalwartlabs
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2022
+    url: https://stalw.art/about/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "the first public release shipped in September 2022"
+  - field: categories
+    value: [smtp-server]
+    url: https://stalw.art
+    checkedAt: 2026-11-03
+    via: page
+    quote: "An SMTP server that authenticates senders (DKIM, SPF, DMARC, ARC)"
+  - field: runtime
+    value: [binary]
+    url: https://stalw.art/docs/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The server is a single binary written in Rust."
+  - field: installMethod
+    value: docker
+    url: https://stalw.art/docs/install/platform/docker/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This tutorial runs Stalwart from the official container image with Docker or Docker Compose"
+  - field: installMethod
+    value: installation script (Linux, macOS, FreeBSD)
+    url: https://stalw.art/docs/install/platform/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Installation script with a systemd, SysV init, launchd or rc.d service"
+  - field: installMethod
+    value: helm chart (Kubernetes)
+    url: https://stalw.art/docs/cluster/orchestration/kubernetes/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Stalwart runs on Kubernetes from a Helm chart."
+  - field: installMethod
+    value: Windows binary
+    url: https://stalw.art/docs/install/platform/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Binary run as a service under NSSM"
+  - field: runsAs
+    value: [always-on]
+    url: https://stalw.art/docs/install/platform/linux/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "registers a service with the host’s service manager, which starts the server at boot"
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/stalwartlabs/stalwart/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This project is dual-licensed under the GNU Affero General Public License v3.0"
+  - field: license
+    value: SELv2 (proprietary, commercial use)
+    url: https://github.com/stalwartlabs/stalwart/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "is a proprietary license designed for commercial use"
+  - field: paidEdition
+    value: Enterprise edition, per-mailbox subscription
+    url: https://stalw.art/pricing/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Stalwart Enterprise gives you a complete mail and collaboration platform for a per-mailbox rate that drops as you grow."
+  - field: pricingPage
+    value: https://stalw.art/pricing/
+    url: https://stalw.art/pricing/
+    checkedAt: 2026-11-03
+    via: page
+  - field: adminUi
+    value: yes, Stalwart web admin (WebUI)
+    url: https://stalw.art/docs/management/webui/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The WebUI is the browser interface of a Stalwart server."
+  - field: userRoles
+    value: yes, roles of permissions
+    url: https://stalw.art/docs/auth/authorization/roles/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A role is a named set of permissions"
+  - field: sso
+    value: [ldap, oidc]
+    url: https://stalw.art
+    checkedAt: 2026-11-03
+    via: page
+    quote: "LDAP, OIDC, SQL, or built-in auth"
+  - field: sso
+    value: [oauth2, oidc]
+    url: https://stalw.art/docs/auth/oauth/openid-connect/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The built-in OAuth server is also an OpenID Connect provider."
+  - field: databases
+    value: [rocksdb, foundationdb, postgresql, mysql, sqlite, redis]
+    url: https://github.com/stalwartlabs/stalwart/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Pluggable storage backends with **RocksDB**, **FoundationDB**, **PostgreSQL**, **mySQL**, **SQLite**, **S3-Compatible**, **Azure** and **Redis** support."
+  - field: githubStargazers
+    value: 15682
+    url: https://github.com/stalwartlabs/stalwart
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 55
+    url: https://github.com/stalwartlabs/stalwart
+    checkedAt: 2026-11-03
+    via: api
+  - field: dockerPulls
+    value: "3112682 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/stalwartlabs/stalwart/
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/stalwartlabs/stalwart/releases/tag/v1.0.2
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-11-02"
+    url: https://github.com/stalwartlabs/stalwart/releases/tag/v1.0.2
+    checkedAt: 2026-11-03
+    via: api
+  - field: x
+    value: https://twitter.com/stalwartlabs/
+    url: https://stalw.art
+    checkedAt: 2026-11-03
+    via: page
+  - field: mastodon
+    value: https://mastodon.social/@stalwartlabs
+    url: https://stalw.art
+    checkedAt: 2026-11-03
+    via: page
+  - field: discord
+    value: https://discord.gg/vhqRgdhguq
+    url: https://stalw.art
+    checkedAt: 2026-11-03
+    via: page
+  - field: subreddit
+    value: https://www.reddit.com/r/stalwartlabs
+    url: https://stalw.art
+    checkedAt: 2026-11-03
+    via: page
+  - field: forum
+    value: https://support.stalw.art
+    url: https://stalw.art
+    checkedAt: 2026-11-03
+    via: page
+notFound: [hqCountry, wikidata, alternativeTo, forkOf, successorOf, parent, basedOn, pluginDirectory, pluginCount, bluesky, newsletter, usageShare, reportedInstalls, packagistName, npmName, pypiName, endoflifeId, renderingModes, templating, runtimeMin, latestPrereleaseDate, lastCommitDate, i18n, multisite, livePreview, hostedOffering, regions, apiLimits, selfHostOption]
+unreadable: []
+notes: >
+  Boundary row settled as accepted: the project's own docs describe an HTTP form endpoint (POST /form; the page says "The HTML form posts directly to Stalwart, which validates the submission") that websites post to, and Stalwart then delivers the submission as email, which is a site sending mail through the server (wave 49 ruling); the reviewer should confirm that reading, since the rest of the server is an end-user mail system. The license pair is the README statement: AGPL-3.0 for the community edition and SELv2 for the Enterprise edition, which the README says is the rest of the features; the GitHub license API returns no license, so the two statements are recorded as worded. The Enterprise edition is sold per mailbox, and the pricing page says the server "reverts to Community" on cancellation, so paidEdition stands. The company is Stalwart Labs LLC (US) and Stalwart Labs Ltd (UK, the second entity used for UK, EU, EEA and Switzerland contracts per the legal page); the about page says the company is incorporated in both the United States and the United Kingdom, so hqCountry is absent. firstRelease is 2022 from the about page, which says the first public release shipped in September 2022; the oldest GitHub release is v0.3.0 from 2023-07-16. Managed e-mail (stalw.art/managed-email) is a planned service: it says it is taking expressions of interest and goes live in 2027, so no hostedOffering is recorded. The discord, x and mastodon links are the homepage links. Storage backends listed in the README also include S3-compatible and Azure object stores, not recorded as databases. The docs list 17 languages for full-text search (README), which is search, not i18n. The management API at stalw.art/docs/http/api/ is recorded only as a note. The compare page names no other product. The migration page describes a migration service that goes live in 2027, so importsFrom is not recorded. The forum is the Discourse board at support.stalw.art, linked from the homepage. The sso entries hold the directories accounts can come from (LDAP, an OpenID Connect identity provider) and the built-in OAuth 2.0 server, which is also an OpenID Connect provider other apps sign in with. The homepage also links a Matrix room (matrix.to/#/#stalwart:matrix.org); no field holds it. Multi-tenancy is an Enterprise feature (tenants page: "This feature is available in the Enterprise edition of Stalwart."); no field records it. The form endpoint docs are at stalw.art/docs/http/form-submission/. The about page gives a US address (Sheridan, WY) and a UK address (London) without naming the entity at each, so hqCountry stays unknown. JMAP is an HTTP and JSON protocol, not a REST statement, so headlessApi is not recorded.

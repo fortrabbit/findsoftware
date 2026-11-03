@@ -1,0 +1,5 @@
+Sockudo is a self-hosted realtime server written in Rust. It serves WebSocket connections and HTTP publish requests, and it keeps strict Protocol V1 compatibility with the Pusher protocol, so existing Pusher clients and backend SDKs can be pointed at it. Protocol V2 adds Sockudo-native events and features such as message recovery and history. The [migration guide](https://sockudo.io/docs/getting-started/migration) describes moving from Pusher Channels or Soketi. The server ships as a Linux binary, a container image, a crate built with cargo, a Docker Compose stack and a Helm chart. The Docker Compose stack starts the server with Prometheus metrics, a dashboard UI and a dashboard API.
+
+## Worth knowing
+
+Protocol defaults vary by SDK, so the README asks each package to be checked before Protocol V2 is assumed to be on. The prebuilt binary installer is Linux only; other platforms build from crates.io or source. The homepage also names an opt-in compatibility layer for Ably REST and WebSocket clients, which leaves out Live Objects.

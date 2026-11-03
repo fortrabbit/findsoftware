@@ -1,0 +1,194 @@
+id: vault
+name: HashiCorp Vault
+status: accepted
+checkedAt: 2026-11-03
+description: "Server for storing, accessing and encrypting secrets, with an HTTP API, a CLI and a web interface, that applications can call for credentials and keys."
+facts:
+  - field: homepage
+    value: "https://developer.hashicorp.com/vault"
+    url: https://developer.hashicorp.com/vault
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Secure, store, and tightly control access to tokens, passwords, certificates, encryption keys for protecting secrets, and other sensitive data using a UI, CLI, or HTTP API."
+  - field: repository
+    value: "https://github.com/hashicorp/vault"
+    url: https://api.github.com/repos/hashicorp/vault
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://developer.hashicorp.com/vault/docs"
+    url: https://developer.hashicorp.com/vault/docs
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Vault product documentation"
+  - field: maintainer
+    value: "IBM Corp."
+    url: https://raw.githubusercontent.com/hashicorp/vault/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "(c) 2024 IBM Corp."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/hashicorp
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/hashicorp/vault
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [go-binary]
+    url: https://developer.hashicorp.com/vault/docs/get-vault
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Download a precompiled binary or"
+  - field: installMethod
+    value: [package-manager]
+    url: https://developer.hashicorp.com/vault/docs/get-vault
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Install Vault Community edition with supported package managers"
+  - field: installMethod
+    value: [binary-download]
+    url: https://developer.hashicorp.com/vault/docs/get-vault
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Download a precompiled binary or"
+  - field: installMethod
+    value: [helm]
+    url: https://developer.hashicorp.com/vault/docs/get-vault
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Use helm to install Vault for Kubernetes"
+  - field: installMethod
+    value: [source-build]
+    url: https://developer.hashicorp.com/vault/docs/get-vault
+    checkedAt: 2026-11-03
+    via: page
+    quote: "build Vault from code and"
+  - field: categories
+    value: [secrets]
+    url: https://developer.hashicorp.com/vault
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Manage Secrets & Protect Sensitive Data"
+  - field: license
+    value: BUSL-1.1
+    url: https://raw.githubusercontent.com/hashicorp/vault/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Business Source License 1.1"
+  - field: licenseModel
+    value: source-available
+    url: https://raw.githubusercontent.com/hashicorp/vault/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Business Source License 1.1"
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/hashicorp/vault/git/ref/tags/v0.1.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://github.com/hashicorp/vault/releases/tag/v2.2.1
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-22"
+    url: https://github.com/hashicorp/vault/releases/tag/v2.2.1
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 36462
+    url: https://api.github.com/repos/hashicorp/vault
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 386
+    url: https://api.github.com/repos/hashicorp/vault/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://developer.hashicorp.com/vault/docs/commands/server
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The server command starts a Vault server that responds to API requests."
+  - field: adminUi
+    value: "yes, web interface"
+    url: https://developer.hashicorp.com/vault/docs/configuration/ui
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Vault features a user interface (web interface) for interacting with Vault."
+  - field: sso
+    value: [OIDC]
+    url: https://developer.hashicorp.com/vault/docs/auth/jwt
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The OIDC method allows authentication via a configured OIDC provider"
+  - field: sso
+    value: [LDAP]
+    url: https://developer.hashicorp.com/vault/docs/about-vault/what-is-vault
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Clients authenticate with manually generated tokens, protocols like LDAP, or third-party providers like Azure and AWS."
+  - field: sso
+    value: [SAML]
+    url: https://developer.hashicorp.com/vault/docs/auth/saml
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The saml auth method allows users to authentication with Vault using their identity"
+  - field: userRoles
+    value: "yes, policies and identity groups"
+    url: https://developer.hashicorp.com/vault/docs/concepts/policies
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Policies provide a declarative way to grant or forbid access to certain paths and operations in Vault."
+  - field: databases
+    value: [postgres]
+    url: https://developer.hashicorp.com/vault/docs/configuration/storage/postgresql
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The PostgreSQL storage backend is used to persist Vault's data in a"
+  - field: databases
+    value: [mysql]
+    url: https://developer.hashicorp.com/vault/docs/configuration/storage/mysql
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The MySQL storage backend is used to persist Vault's data in a MySQL"
+  - field: paidEdition
+    value: "Vault Enterprise"
+    url: https://developer.hashicorp.com/vault/docs/enterprise
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A Vault Enterprise license needs to be applied to a Vault cluster"
+  - field: hostedOffering
+    value: "HCP Vault Dedicated, managed by the vendor"
+    url: https://developer.hashicorp.com/vault/docs/about-vault/what-is-vault
+    checkedAt: 2026-11-03
+    via: page
+    quote: "HCP Vault Dedicated runs Vault in the cloud using the same binary as self-managed Vault Enterprise."
+  - field: pluginDirectory
+    value: "https://developer.hashicorp.com/vault/integrations"
+    url: https://developer.hashicorp.com/vault/docs/about-vault/what-is-vault
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Use plugins from the curated plugin registry or"
+  - field: forum
+    value: "https://discuss.hashicorp.com/c/vault"
+    url: https://raw.githubusercontent.com/hashicorp/vault/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Discussion forum: [Discuss](https://discuss.hashicorp.com/c/vault)"
+  - field: newsletter
+    value: "https://groups.google.com/group/hashicorp-announce"
+    url: https://raw.githubusercontent.com/hashicorp/vault/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Announcement list: [Google Groups](https://groups.google.com/group/hashicorp-announce)"
+notFound: [runtimeMin, renderingModes, headlessApi, templating, i18n, multisite, livePreview, contentStore, importsFrom, alternativeTo, hqCountry, parent, forkOf, successorOf, wikidata, endoflifeId, npmName, packagistName, pypiDownloads, dockerPulls, pricingPage, discord, x, bluesky, subreddit, mastodon, usageShare, reportedInstalls, regions, selfHostOption, pluginCount]
+unreadable: [https://www.hashicorp.com/products/vault/pricing (429), https://www.hashicorp.com/legal/terms-of-service (429), https://www.hashicorp.com/privacy (429)]
+notes: >
+  The homepage www.vaultproject.io answers with a redirect to developer.hashicorp.com/vault, which is recorded as the homepage. The LICENSE file names the Licensed Work as Vault 1.15.0 or later under the Business Source License 1.1, with a Change License of MPL 2.0 four years after publication; the license fact describes the latest release. Releases before 1.15.0 are under MPL-2.0: the LICENSE file at the v1.14.0 tag reads "Copyright (c) 2015 HashiCorp, Inc." and "Mozilla Public License, version 2.0". The what-is page says Vault encrypts data at rest, gates access with authentication and policies, and audits all activity; the README says it records a detailed audit log. The LICENSE Additional Use Grant allows production use but not offering the Licensed Work to third parties on a hosted or embedded basis in order to compete with IBM Corp's paid versions of it. The LICENSE parameters name the Licensor as International Business Machines Corporation (IBM); the maintainer is the copyright line's IBM Corp. and the Terms link (429, unreadable) would name the contracting party. The paidEdition quote states that Vault Enterprise needs a license applied to the cluster; no page read names a price or a paid license, so the paid nature of the Enterprise edition is for the reviewer to confirm, and the pricing page (429) could settle it. The SSO protocols come from the OIDC and SAML auth method pages and the what-is page naming LDAP; the SAML method needs an Enterprise license (its page says so), and the auth methods list marks it ENT. Kerberos and RADIUS are also auth methods on that list and are not recorded in sso. The storage page lists Raft, the file system, Consul, etcd, PostgreSQL, MySQL, MSSQL, CockroachDB, DynamoDB, Cassandra, CouchDB and others as storage options; PostgreSQL and MySQL are recorded as databases from their storage backend pages (community supported), and integrated Raft storage is the recommended default. Apps call Vault's HTTP API (the what-is page and the README point to examples for calling Vault from application code), which is the criterion 1 link. The Docker image is not named by the install page, so dockerPulls is not recorded. The coined kinds are not recorded as fields: the HTTP API is named on the homepage ("using a UI, CLI, or HTTP API"). The README names a Google Group announcement list (recorded as newsletter) and the community forum on Discuss.

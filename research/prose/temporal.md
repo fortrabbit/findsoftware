@@ -1,0 +1,5 @@
+Temporal is a durable execution platform: its server runs workflows and retries failed steps. The server is built from Go binaries that the [deployment guide](https://docs.temporal.io/self-hosted-guide/deployment) describes running as separate services, through Docker Compose, a Helm chart on Kubernetes, or systemd units. Production deployments keep persistence in MySQL, PostgreSQL or Cassandra, and the advanced visibility store in Elasticsearch or OpenSearch. The Temporal Web UI runs alongside the service for viewing workflow executions. Temporal Technologies Inc. maintains the project, and the company also offers the Temporal Service as a hosted product, Temporal Cloud.
+
+## Worth knowing
+
+The docs say a self-hosted Temporal Service should be secured like a database and kept off the public internet. Self-hosted installs have no role-based access control or audit logging out of the box; the SSO and user roles that the docs describe belong to Temporal Cloud. The `temporal server start-dev` command starts a development server that the docs say is not meant for production.

@@ -1,0 +1,5 @@
+ToolJet is a builder for internal tools and dashboards. Its visual app builder connects to databases, APIs and SaaS data sources, and built apps can be embedded in other applications. ToolJet runs as a server that the [Docker guide](https://docs.tooljet.com/docs/setup/docker/) deploys with Docker Compose, and the same docs cover Helm and an AWS AMI. PostgreSQL holds application definitions and encrypted data source credentials. Instance administrators manage the server from a settings page. ToolJet Solutions, Inc. maintains the project, and ToolJet Cloud is its hosted version.
+
+## Worth knowing
+
+The Community Edition is AGPL-3.0, and the README describes a separate Enterprise set on top of it. The licensing docs say a self-hosted instance needs a Trial or Paid license key for premium features such as OpenID SSO login and audit logs, and the README places role-based access control, SCIM provisioning and workflows under the Enterprise set. The README also lists SSO support in the Community Edition, which the licensing docs do not match.

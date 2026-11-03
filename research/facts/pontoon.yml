@@ -1,0 +1,120 @@
+id: pontoon
+name: Pontoon
+status: accepted
+checkedAt: 2026-11-03
+description: Web-based translation management system that pulls strings from version control and writes translations back, run by Mozilla for its localization community.
+facts:
+  - field: homepage
+    value: https://pontoon.mozilla.org
+    url: https://pontoon.mozilla.org/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Pontoon is a simple and intuitive tool that requires little technical skills to use it."
+  - field: docs
+    value: https://pontoon.mozilla.org/docs/
+    url: https://pontoon.mozilla.org/docs/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/mozilla/pontoon
+    url: https://github.com/mozilla/pontoon
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [translation-platform]
+    url: https://pontoon.mozilla.org/docs/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Pontoon is Mozilla's translation management system (TMS)"
+  - field: maintainer
+    value: Mozilla Foundation
+    url: https://github.com/mozilla/pontoon/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2012, Mozilla Foundation"
+  - field: maintainerType
+    value: foundation
+    url: https://github.com/mozilla/pontoon/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://github.com/mozilla/pontoon
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://github.com/mozilla/pontoon/tags
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: python
+    url: https://github.com/mozilla/pontoon
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/mozilla/pontoon
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-02
+    url: https://github.com/mozilla/pontoon/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: docker
+    url: https://github.com/mozilla/pontoon
+    checkedAt: 2026-11-03
+    via: page
+    quote: "It describes how Mozilla deploys Pontoon — as a Docker image running on Google Cloud Platform"
+  - field: databases
+    value: [postgres]
+    url: https://pontoon.mozilla.org/docs/dev/developer-setup/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "the PostgreSQL container needs to do some work before it becomes available to the server container"
+  - field: sso
+    value: [oauth]
+    url: https://pontoon.mozilla.org/docs/dev/deployment/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "These values are typically obtained by registering an OAuth application with the provider."
+  - field: adminUi
+    value: yes, Django admin console for administrators
+    url: https://pontoon.mozilla.org/docs/admin/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The Pontoon admin console is available at /admin/"
+  - field: userRoles
+    value: [contributor, translator, team-manager]
+    url: https://pontoon.mozilla.org/docs/admin/managing-users/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "To change a user's role (Contributor, Translator, Team Manager)"
+  - field: headlessApi
+    value: [rest]
+    url: https://pontoon.mozilla.org/docs/dev/api/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Pontoon provides a set of RESTful endpoints via the Django REST Framework"
+  - field: forum
+    value: https://github.com/mozilla/pontoon/discussions
+    url: https://github.com/mozilla/pontoon
+    checkedAt: 2026-11-03
+    via: page
+    quote: "For feedback, support, and 3rd party deployments, check out GitHub Discussions"
+  - field: githubStargazers
+    value: 1677
+    url: https://github.com/mozilla/pontoon
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 136
+    url: https://github.com/mozilla/pontoon
+    checkedAt: 2026-11-03
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, i18n, multisite, livePreview, templating, selfHostOption, hostedOffering, paidEdition, pricingPage, runtime, runtimeMin, currentMajor, renderingModes, runsAs, apiLimits, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, facebook, instagram, threads, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, endoflifeId, contentStore, regions, latestPrereleaseDate, dockerPulls, packagistName]
+unreadable: []
+notes: >
+  Pontoon is Mozilla's own localization platform, which the homepage and the docs present as the tool Mozilla localizers use; the deployment page says it is designed for Google Cloud Platform, with Docker images built from the repository's Dockerfile, and that its production and development servers run on MozCloud. Its release tags are dated versions (v2026.11.02), so no currentMajor is recorded: calendar versions have no major. The oldest tag, dated 2012-04-06 by name, points to a commit dated 2012-04-05, which sets firstRelease. The REST API's write endpoints (translation, pretranslation and suggestion uploads) and the Git and Mercurial sync are the wiring that this record rests on: the API is for localization pipelines and the sync writes translations back into project repositories, so the reviewer decides whether these count as a site or app wired to the software under criterion 1. The record is listed as accepted in the candidates row, and no decision was taken here. The Mozilla foundation's headquarters country is not stated on the pages read (homepage, about, privacy), so hqCountry is unknown. The developer setup page says its steps are for development only; production runs from the Docker images, which the deployment page describes without a process-model sentence, so runsAs is not recorded. Python is the repository language; no page states a Python runtime, so runtime is not recorded. The sync with version control, the scheduled jobs, the notification emails and the community health score are documented features without fact fields. The authentication providers listed (Mozilla Accounts, GitHub, GitLab, Google, Keycloak) are each named as an OAuth application in the deployment docs; the protocol statement is the OAuth sentence only. Contributor count is the non-anonymous page count (136) of the contributors endpoint. The admin guide says only administrators can open the admin console. The README says the instance Docker setup is the way Mozilla deploys and may need adapting for another platform; its developer setup is not for production. The default authentication method is a Django login for accounts created from the command line; the providers are optional.

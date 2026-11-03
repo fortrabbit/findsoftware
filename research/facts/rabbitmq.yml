@@ -1,0 +1,228 @@
+id: rabbitmq
+name: RabbitMQ
+status: accepted
+checkedAt: 2026-11-03
+description: Open source multi-protocol messaging and streaming broker that applications use to pass messages between services.
+facts:
+  - field: name
+    value: RabbitMQ
+    url: https://www.rabbitmq.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "RabbitMQ is Free and Open Source Software."
+  - field: homepage
+    value: https://www.rabbitmq.com/
+    url: https://www.rabbitmq.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "RabbitMQ is Free and Open Source Software."
+  - field: repository
+    value: https://github.com/rabbitmq/rabbitmq-server
+    url: https://api.github.com/repos/rabbitmq/rabbitmq-server
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://www.rabbitmq.com/docs/documentation
+    url: https://www.rabbitmq.com/docs/documentation
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Broadcom Inc.
+    url: https://github.com/rabbitmq/rabbitmq-server/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "(c) 2007-2026 Broadcom. All Rights Reserved."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/rabbitmq
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: "2008"
+    url: https://api.github.com/repos/rabbitmq/rabbitmq-server/git/refs/tags/rabbitmq_v1_4_0
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Erlang
+    url: https://www.rabbitmq.com/docs/which-erlang
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This guide covers Erlang/OTP version requirements"
+  - field: runtime
+    value: [erlang]
+    url: https://www.rabbitmq.com/docs/which-erlang
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Erlang 27 is supported."
+  - field: runtimeMin
+    value: "OTP 27"
+    url: https://www.rabbitmq.com/docs/which-erlang
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Minimum required Erlang/OTP Maximum supported Erlang/OTP Notes 4.4.0 4.3.7 27.0 29.x"
+  - field: categories
+    value: [message-broker, jobs]
+    url: https://www.rabbitmq.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "RabbitMQ is a powerful, enterprise grade open source messaging and streaming broker"
+  - field: installMethod
+    value: apt (Debian, Ubuntu)
+    url: https://www.rabbitmq.com/docs/install-debian
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Team RabbitMQ produces our own Debian packages for every release, including patch releases"
+  - field: installMethod
+    value: dnf or yum (RHEL, CentOS Stream, Fedora)
+    url: https://www.rabbitmq.com/docs/install-rpm
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Installing the package using the *.rabbitmq.com dnf/yum repositories (this option is highly recommended)"
+  - field: installMethod
+    value: Homebrew
+    url: https://www.rabbitmq.com/docs/install-homebrew
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Installing the RabbitMQ formula will install key dependencies such as a supported Erlang/OTP version"
+  - field: installMethod
+    value: Chocolatey (Windows)
+    url: https://www.rabbitmq.com/docs/install-windows
+    checkedAt: 2026-11-03
+    via: page
+    quote: "RabbitMQ packages are distributed via Chocolatey"
+  - field: installMethod
+    value: Windows installer (.exe)
+    url: https://www.rabbitmq.com/docs/install-windows
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The official RabbitMQ installer is produced for every RabbitMQ release"
+  - field: installMethod
+    value: generic UNIX binary build (tar.xz)
+    url: https://www.rabbitmq.com/docs/install-generic-unix
+    checkedAt: 2026-11-03
+    via: page
+    quote: "RabbitMQ releases include a binary package for Linux, MacOS, and *BSD systems."
+  - field: installMethod
+    value: Docker image
+    url: https://www.rabbitmq.com/docs/download
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Experimenting with RabbitMQ on your workstation? Try the community Docker image"
+  - field: installMethod
+    value: Kubernetes operator
+    url: https://www.rabbitmq.com/docs/download
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Open source RabbitMQ Cluster Kubernetes Operator by VMware"
+  - field: dockerPulls
+    value: "3907695014 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/library/rabbitmq/
+    checkedAt: 2026-11-03
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://www.rabbitmq.com/docs/install-debian
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The server is started as a daemon by default when the"
+  - field: runsAs
+    value: [always-on]
+    url: https://www.rabbitmq.com/docs/install-windows
+    checkedAt: 2026-11-03
+    via: page
+    quote: "It installs RabbitMQ as a Windows service and starts it using the default configuration."
+  - field: license
+    value: MPL-2.0
+    url: https://www.rabbitmq.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Free under the Mozilla Public License 2.0"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/rabbitmq/rabbitmq-server/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Some RabbitMQ server OCF files are licensed under the Apache Software License 2.0."
+  - field: licenseModel
+    value: open-source
+    url: https://www.rabbitmq.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "RabbitMQ is Free and Open Source Software."
+  - field: paidEdition
+    value: VMware Tanzu RabbitMQ, a commercial edition with longer support timelines, 24x7 support and disaster recovery features
+    url: https://www.rabbitmq.com/commercial-features
+    checkedAt: 2026-11-03
+    via: page
+    quote: "VMware Tanzu RabbitMQ, a commercial edition of RabbitMQ, includes features and support beyond the open source edition"
+  - field: sso
+    value: [ldap]
+    url: https://www.rabbitmq.com/docs/ldap
+    checkedAt: 2026-11-03
+    via: page
+    quote: "RabbitMQ can use LDAP to perform authentication and authorisation by deferring to external LDAP"
+  - field: sso
+    value: [oauth2]
+    url: https://www.rabbitmq.com/docs/oauth2
+    checkedAt: 2026-11-03
+    via: page
+    quote: "lets applications (clients) and users authenticate and authorize using JWT-encoded OAuth 2.0 access tokens"
+  - field: userRoles
+    value: yes, user tags and per-virtual-host permissions
+    url: https://www.rabbitmq.com/docs/access-control
+    checkedAt: 2026-11-03
+    via: page
+    quote: "users can have tags associated with them"
+  - field: userRoles
+    value: yes, user tags and per-virtual-host permissions
+    url: https://www.rabbitmq.com/docs/access-control
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Different users can be granted access only to specific virtual hosts"
+  - field: adminUi
+    value: yes, browser-based management UI from the management plugin
+    url: https://www.rabbitmq.com/docs/management
+    checkedAt: 2026-11-03
+    via: page
+    quote: "along with a browser-based UI and a command line tool"
+  - field: discord
+    value: https://www.rabbitmq.com/discord
+    url: https://github.com/rabbitmq/rabbitmq-server/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Community Discord server"
+  - field: forum
+    value: https://github.com/rabbitmq/rabbitmq-server/discussions
+    url: https://github.com/rabbitmq/rabbitmq-server/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The recommended community forums are"
+  - field: githubStargazers
+    value: 13955
+    url: https://api.github.com/repos/rabbitmq/rabbitmq-server
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 287
+    url: https://api.github.com/repos/rabbitmq/rabbitmq-server/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://github.com/rabbitmq/rabbitmq-server/releases/tag/v4.4.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-20
+    url: https://github.com/rabbitmq/rabbitmq-server/releases/tag/v4.3.7
+    checkedAt: 2026-11-03
+    via: api
+  - field: endoflifeId
+    value: rabbitmq
+    url: https://endoflife.date/api/rabbitmq.json
+    checkedAt: 2026-11-03
+    via: api
+notFound: [maintainerType, hqCountry, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, headlessApi, i18n, multisite, livePreview, importsFrom, templating, renderingModes, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, x, bluesky, mastodon, newsletter, subreddit, wikidata, selfHostOption, regions, apiLimits, hostedOffering]
+unreadable: [https://www.broadcom.com/company/legal/terms-of-use]
+notes: >
+  The copyright line of the repository README reads "(c) 2007-2026 Broadcom" and the term is defined as Broadcom Inc. and/or its subsidiaries, recorded as maintainer. The contact page says "As the owner of RabbitMQ, VMware Tanzu employs the core engineering team"; Tanzu is a business unit inside the maintainer Broadcom, so no parent is recorded. Protocols the homepage names: AMQP 1.0 and MQTT 5.0. The Docker image the download page shows is rabbitmq:4-management. The LICENSE file names MPL 2.0 for the server and its tier 1 plugins and Apache 2.0 for some OCF files, recorded as two license entries. GitHub's detected license is NOASSERTION because of the two statements. The GitHub language statistic reads JavaScript because of the management UI; the server is written in Erlang, recorded as the language. The firstRelease of 2008 is the commit date of tag rabbitmq_v1_4_0, the oldest tag in the repository by commit date among those checked; the project's 2007 origin is not on a page read here. The runtimeMin is the Erlang/OTP minimum of the 4.4.0 row of the compatibility matrix on the which-erlang page. The management plugin's HTTP API manages and monitors nodes and clusters; it does not serve site content, so headlessApi is not recorded. The compare page names Kafka, which has no fact file in this repository, so no alternativeTo is recorded. The Docker image is the community-maintained image, and the Docker Hub library/rabbitmq pull count is the one recorded. Tanzu RabbitMQ on Kubernetes and Amazon MQ for RabbitMQ appear on the download page; neither is a hosted offering of the open source server by the project, so no hostedOffering is recorded. The LDAP docs page is the source of the ldap sso value; the OAuth 2 backend page is the source of the oauth2 value. The footer Terms of Use link (broadcom.com) is a JavaScript shell, so hqCountry stays unknown. The Windows installer installs RabbitMQ as a Windows service.

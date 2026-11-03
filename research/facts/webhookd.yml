@@ -1,0 +1,127 @@
+id: webhookd
+name: webhookd
+status: accepted
+checkedAt: 2026-11-03
+description: Go webhook server that runs a shell script or external process for each HTTP request, with the script output returned in streamed or buffered form.
+facts:
+  - field: repository
+    value: https://github.com/ncarlier/webhookd
+    url: https://github.com/ncarlier/webhookd
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://github.com/ncarlier/webhookd#readme
+    url: https://github.com/ncarlier/webhookd/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "All available parameters and environment variables are detailed in"
+  - field: maintainer
+    value: Nicolas Carlier
+    url: https://github.com/ncarlier/webhookd/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2020 Nicolas Carlier"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/ncarlier/webhookd/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2020 Nicolas Carlier"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/ncarlier
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://github.com/ncarlier/webhookd/releases/tag/v0.0.1
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [webhooks, automation]
+    url: https://github.com/ncarlier/webhookd/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A minimalist, powerful webhook server designed to easily trigger shell scripts and run external processes via HTTP requests"
+  - field: language
+    value: Go
+    url: https://github.com/ncarlier/webhookd
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://github.com/ncarlier/webhookd/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Download the binary for your architecture using one of these scripts"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/ncarlier/webhookd/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "If installing system-wide, the service is pre-configured."
+  - field: installMethod
+    value: go install
+    url: https://github.com/ncarlier/webhookd/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "For developers who have Go installed"
+  - field: installMethod
+    value: binary download script
+    url: https://github.com/ncarlier/webhookd/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Download the binary for your architecture using one of these scripts"
+  - field: installMethod
+    value: docker
+    url: https://github.com/ncarlier/webhookd/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Run webhookd in a container for quick setup"
+  - field: installMethod
+    value: apt
+    url: https://github.com/ncarlier/webhookd/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "For Debian users, install via our custom repository"
+  - field: license
+    value: MIT
+    url: https://github.com/ncarlier/webhookd/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/ncarlier/webhookd/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 1
+    url: https://github.com/ncarlier/webhookd/releases/tag/v1.22.1
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-22"
+    url: https://github.com/ncarlier/webhookd/releases/tag/v1.22.1
+    checkedAt: 2026-11-03
+    via: api
+  - field: dockerPulls
+    value: 675801 (2026-11-03)
+    url: https://hub.docker.com/r/ncarlier/webhookd
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 1104
+    url: https://github.com/ncarlier/webhookd
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 14
+    url: https://github.com/ncarlier/webhookd
+    checkedAt: 2026-11-03
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hostedOffering, selfHostOption, adminUi, userRoles, sso, headlessApi, databases, contentStore, templating, i18n, multisite, livePreview, importsFrom, alternativeTo, forkOf, successorOf, parent, basedOn, wikidata, discord, forum, subreddit, mastodon, bluesky, x, newsletter, facebook, instagram, pluginDirectory, pluginCount, npmName, packagistName, npmWeeklyDownloads, reportedInstalls, usageShare, regions, apiLimits, endoflifeId, eolPolicy, latestPrereleaseDate, hqCountry]
+unreadable: []
+notes: >
+  No project website is named: the repository homepage field is empty and the README names no site (its APT link goes to a third-party package repository, packages.azlux.fr, and is not a homepage). The repository is the source. Criterion 1: the README says the directory structure "dictates the webhook URL", and the Upstream Authentication and Signature Verification sections describe calls from services such as Discord and reverse proxies; a site or service sending a webhook to the server is the wiring. The README's Post-Hook Notifications section sends script output to Mattermost, Slack, Discord and email; those are outbound, not fields. The README names Authelia, Pomerium and Traefik as upstream authentication providers for the server; they are not recorded as parents or sso. The protocols the server speaks are HTTP, server-sent events and chunked transfer coding, and the optional TLS with ACME; none is an sso value. The maintainer is the copyright holder on the LICENSE file (Nicolas Carlier) and the GitHub profile type is user. The first release is v0.0.1, a GitHub prerelease dated 2014-09-24, so firstRelease is 2014 under the prerelease rule. The highest stable release is v1.22.1 (2026-10-22); v0.0.1 is the only prerelease kept in the list. The Docker image ncarlier/webhookd is named in the README; dockerPulls is the Docker Hub pull count of that image. The README states a 1-99 exit code maps to 500 and 100-255 adds 300; that is a behavior, not a field. Contributors is the page number of the rel="last" link on the contributors endpoint with per_page=1.

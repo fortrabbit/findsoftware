@@ -1,0 +1,131 @@
+id: tusd
+name: tusd
+status: accepted
+checkedAt: 2026-11-03
+description: Reference Go server for tus, an open HTTP protocol for resumable file uploads, which tus-compatible clients upload to.
+facts:
+  - field: homepage
+    value: https://tus.github.io/tusd/
+    url: https://tus.github.io/tusd/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "tusd is the official reference implementation of the tus resumable upload protocol"
+  - field: repository
+    value: https://github.com/tus/tusd
+    url: https://api.github.com/repos/tus/tusd
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://tus.github.io/tusd/
+    url: https://tus.github.io/tusd/getting-started/usage/
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Transloadit Ltd
+    url: https://github.com/tus/tusd/blob/main/LICENSE.txt
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2013-2017 Transloadit Ltd and Contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/tus
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [file-upload]
+    url: https://tus.github.io/tusd/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Can receive uploads from any tus-compatible client"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/tus/tusd
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: binary
+    url: https://tus.github.io/tusd/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Distributed as a single binary without needing a runtime"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/tus/tusd
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: "2015"
+    url: https://api.github.com/repos/tus/tusd/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: "2"
+    url: https://api.github.com/repos/tus/tusd/releases/latest
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-09-16"
+    url: https://api.github.com/repos/tus/tusd/releases/latest
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 3915
+    url: https://api.github.com/repos/tus/tusd
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 95
+    url: https://github.com/tus/tusd/graphs/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: dockerPulls
+    value: "3804012 (2026-11-03)"
+    url: https://hub.docker.com/r/tusproject/tusd
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: pre-built binary download
+    url: https://tus.github.io/tusd/getting-started/installation/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can download ready-to-use packages including binaries for OS X, Linux and Windows"
+  - field: installMethod
+    value: Docker image tusproject/tusd
+    url: https://tus.github.io/tusd/getting-started/installation/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Each release of tusd is also published as a Docker image on Docker Hub."
+  - field: installMethod
+    value: go build from a git clone
+    url: https://tus.github.io/tusd/getting-started/installation/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Once a recent Go version is installed, you can clone the git repository and build the binary"
+  - field: installMethod
+    value: Helm chart on Kubernetes
+    url: https://tus.github.io/tusd/getting-started/installation/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A Helm chart for installing tusd on Kubernetes is available"
+  - field: runsAs
+    value: [always-on]
+    url: https://tus.github.io/tusd/getting-started/usage/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Once tusd is running, any tus-compatible client can connect to tusd and upload files."
+  - field: contentStore
+    value: [local disk, AWS S3, Azure Blob Storage, Google Cloud Storage]
+    url: https://tus.github.io/tusd/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Multiple storage options for uploaded files"
+  - field: forum
+    value: https://community.transloadit.com/c/tus/6
+    url: https://tus.github.io/tusd/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "or in our community forum"
+notFound: [pricingPage, hqCountry, headlessApi, adminUi, sso, userRoles, multisite, livePreview, paidEdition, selfHostOption, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, templating, i18n, renderingModes, runtimeMin, pluginDirectory, pluginCount, subreddit, mastodon, bluesky, x, discord, newsletter, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, pypiDownloads, packagistDownloads, endoflifeId, databases, apiLimits, regions, hostedOffering, freeTier]
+unreadable: []
+notes: >
+  tusd is the server half of the tus protocol (tus.io); the protocol is an HTTP extension for resumable uploads, not an identity protocol, so no protocol field is recorded. The homepage lists the storage backends, the hook mechanisms (scripts, HTTP, gRPC) and the Go embedding option; the hook and embedding statements are not recorded as fields. The GitHub repository topics in the candidates row list object-storage; the import would map that to database, so the categories are file-upload only. The LICENSE.txt copyright line names Transloadit Ltd; tus.io has no imprint page of its own (the imprint and privacy paths answer 404) and its footer says it is created and maintained by Transloadit, so the LICENSE line is recorded; the transloadit.com imprint names Transloadit-II GmbH as the operator of the Transloadit service, which is a page of Transloadit and not of tusd. tus.io links an X account (@tus_io) and a community forum for the tus project as a whole, and the tusd docs do not link the X account, so x is not recorded. The client libraries tus-js-client, Uppy, tus-java-client, TUSKit and tusdotnet are separate projects and are not recorded here; the tus.io implementations page lists them. The tusd build requires Go 1.26 (go.mod); that is a build requirement of a binary and Docker distribution, so runtimeMin is left out. The Docker Hub figure is the tusproject/tusd image named in the install guide, pulls in total at the checkedAt date. The GitHub repository has releases back to 2015 (0.0.5-test), so firstRelease is 2015. The README of the repository was not used: the project's documentation site is the source for install and usage facts.

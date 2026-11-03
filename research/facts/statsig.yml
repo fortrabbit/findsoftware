@@ -1,0 +1,72 @@
+id: statsig
+name: Statsig
+status: hosted-service
+checkedAt: 2026-11-03
+description: Hosted product development platform for feature flags, experiments and product analytics.
+facts:
+  - field: homepage
+    value: https://www.statsig.com
+    url: https://www.statsig.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: docs
+    value: https://docs.statsig.com
+    url: https://docs.statsig.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Amplitude, Inc.
+    url: https://www.statsig.com/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "PROVIDED BY AMPLITUDE, INC."
+  - field: parent
+    value: Amplitude, Inc.
+    url: https://www.statsig.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Statsig is part of the Amplitude family"
+  - field: categories
+    value: [feature-flags]
+    url: https://www.statsig.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "feature flagging platform"
+  - field: pricingPage
+    value: https://www.statsig.com/pricing
+    url: https://www.statsig.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: sso
+    value: [SAML, OAuth]
+    url: https://www.statsig.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "SSO, SAML, OAUTH"
+  - field: sso
+    value: [SCIM]
+    url: https://www.statsig.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "SCIM User Provisioning"
+  - field: userRoles
+    value: yes, role-based access control
+    url: https://www.statsig.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Manage access to features and experiments based on roles"
+  - field: x
+    value: https://x.com/statsig
+    url: https://www.statsig.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: regions
+    value: [EU]
+    url: https://www.statsig.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Support for hosting in the EU"
+notFound: [hqCountry, wikidata, firstRelease, selfHostOption, apiLimits, alternativeTo, importsFrom, i18n, multisite, livePreview, adminUi, headlessApi, discord, forum, subreddit, mastodon, bluesky, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, latestReleaseDate, currentMajor, githubStargazers, contributors, npmName, npmWeeklyDownloads, runsAs, runtime, installMethod, license, repository]
+unreadable: [https://www.statsig.com/security (404), https://www.statsig.com/about (no text on the page, script-only), https://www.statsig.com/privacy (redirects to amplitude.com/privacy), https://docs.statsig.com/self-hosting and https://docs.statsig.com/guides/self-host (404)]
+notes: >
+  Hosted-service row. The homepage says "Statsig is part of the Amplitude family", and the terms name "AMPLITUDE, INC. ("STATSIG")" as the provider, so the maintainer and parent are Amplitude, Inc.; the privacy URL redirects to amplitude.com, which is not an end signal because the Statsig homepage still serves the product. No self-install guide was found: the self-hosting and self-host docs URLs return 404, so the record stays hosted-service. The SDK repository statsig-io/js-client-monorepo (ISC per GitHub, 18 stars, pushed 2026-10-26) and the npm package @statsig/js-client (1.8 million weekly downloads per the candidates row) are SDK figures and are kept in notes only, per the hosted-service rule. The homepage has no founding date and the about page loads its text by script, so firstRelease is absent. The pricing page lists a free starting tier ("start for free") with no prices recorded here; the free tier is a pricing-page statement and not a field. The pricing page lists Warehouse Native, Infrastructure and Product Analytics among its products; these are product lines, not install routes. The homepage lists linkedin.com/company/statsig, which is a social field not in the field list and goes here: https://linkedin.com/company/statsig. The sso entries follow the pricing page's SSO, SAML, OAuth and SCIM lines; the reviewer should check whether they are plan-gated. The homepage also links a Slack community (statsig.com/slack), which is not a recorded field. The Console API docs describe a CRUD API for managing gates, experiments and settings, not a content API, so headlessApi is not recorded.

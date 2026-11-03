@@ -1,0 +1,136 @@
+id: workos
+name: WorkOS
+status: hosted-service
+checkedAt: 2026-11-03
+description: Hosted platform of authentication, single sign-on, user management and authorization APIs for apps.
+facts:
+  - field: homepage
+    value: https://workos.com
+    url: https://workos.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Start selling to enterprise customers with just a few lines of code."
+  - field: docs
+    value: https://workos.com/docs
+    url: https://workos.com/docs
+    checkedAt: 2026-11-03
+    via: page
+  - field: pricingPage
+    value: https://workos.com/pricing
+    url: https://workos.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: WorkOS, Inc.
+    url: https://workos.com/legal/privacy
+    checkedAt: 2026-11-03
+    via: page
+    quote: "we are referring to WorkOS, Inc."
+  - field: categories
+    value: [identity-provider, sso, authorization]
+    url: https://workos.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Complete auth & user management platform"
+  - field: sso
+    value: SAML and OpenID Connect
+    url: https://workos.com/single-sign-on
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Save months of development time integrating and debugging SAML and OpenID Connect protocols."
+  - field: headlessApi
+    value: rest
+    url: https://workos.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "RESTful APIs, JSON responses, and normalized objects"
+  - field: userRoles
+    value: yes, role-based access control for users
+    url: https://workos.com/rbac
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Powerful and flexible permissions for your users."
+  - field: hqCountry
+    value: US
+    url: https://workos.com/legal/terms-of-service
+    checkedAt: 2026-11-03
+    via: page
+    quote: "if to WorkOS, 548 Market St, PMB 86125, San Francisco, CA 94104"
+  - field: sso
+    value: SCIM
+    url: https://workos.com/directory-sync
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Quickly enable SCIM provisioning from all major corporate directory providers with a single integration."
+  - field: importsFrom
+    value: [auth0]
+    url: https://workos.com/docs/migrate
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Learn how to migrate users, organizations, and enterprise connections from Auth0."
+  - field: importsFrom
+    value: [aws-cognito]
+    url: https://workos.com/docs/migrate
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Learn how to migrate users to WorkOS from AWS Cognito."
+  - field: importsFrom
+    value: [Better Auth]
+    url: https://workos.com/docs/migrate
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Learn how to migrate users and organizations from Better Auth."
+  - field: importsFrom
+    value: [clerk]
+    url: https://workos.com/docs/migrate
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Learn how to migrate users and organizations from Clerk."
+  - field: importsFrom
+    value: [descope]
+    url: https://workos.com/docs/migrate
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Learn how to migrate users and organizations from Descope."
+  - field: importsFrom
+    value: [firebase]
+    url: https://workos.com/docs/migrate
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Learn how to migrate users to WorkOS from Firebase."
+  - field: importsFrom
+    value: [stytch]
+    url: https://workos.com/docs/migrate
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Learn how to migrate users and organizations from Stytch."
+  - field: importsFrom
+    value: [supabase]
+    url: https://workos.com/docs/migrate
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Learn how to migrate users from Supabase Auth."
+  - field: x
+    value: https://twitter.com/workos
+    url: https://workos.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: youtube
+    value: https://www.youtube.com/@WorkOS/videos
+    url: https://workos.com
+    checkedAt: 2026-11-03
+    via: page
+notFound: [adminUi, paidEdition, selfHostOption, databases, contentStore, i18n, multisite, livePreview, templating, renderingModes, alternativeTo, pluginDirectory, forum, discord, wikidata, sourcePublic, regions, apiLimits, firstRelease, currentMajor, latestReleaseDate, githubStargazers, contributors, npmName, dockerPulls]
+unreadable: []
+notes: >
+  Hosted-service row: the record takes nothing from the SDK repository workos/workos-node (MIT on GitHub, 227 stars on 2026-11-03, latest release v12.1.0 on 2026-10-30) or its npm package; those stay out of the fact file, as the hosted-service rule says.
+  No self-install route is named on the pages read (homepage, docs, pricing, SSO, RBAC, legal), so the status stays hosted-service.
+  The homepage lists these products with one line each: AuthKit, Enterprise SSO, Radar, MCP Auth, Directory Sync, Role-Based Access Control, Multi-Factor Authentication, Admin Portal, FGA, auth.md, Audit Logs, Vault, Passport, Airlock and Pipes; they are not recorded as fields.
+  The pricing page states "First 1 million active users free" and an enterprise plan with "Enterprise single sign-on with SAML and OIDC support"; the free allowance is a coined freeTier value and goes here only, and no price is recorded.
+  The homepage lists SCIM and RBAC in its feature table and the Directory Sync page covers user lifecycle from corporate directories; the Directory Sync page's SCIM provisioning sentence is the SCIM sso fact.
+  The homepage's events API and webhooks (docs landing: "Learn to keep your app in sync using the events API and webhooks") and the "RESTful APIs" statement are the wiring evidence; the API is documented with an OpenAPI specification per the docs landing.
+  The legal entity is WorkOS, Inc. (terms of service and privacy policy); hqCountry comes from the notice address in section g of the terms, a full San Francisco, CA address, not from the governing-law clause.
+  The About page names no headquarters. The Security page lists SOC 2 Type 2 certification, a coined compliance value that stays here.
+  The homepage footer links GitHub (github.com/workos), LinkedIn (linkedin.com/company/workos-inc) and a podcast and blog; the LinkedIn link is a coined field and is not recorded.
+  The enterprise SLA states 99.99% uptime for enterprise customers (legal/sla); a coined value, not recorded.
+  The homepage's "Get started" and "Talk to an expert" paths and the Atlas AI coworker announcement are no field.

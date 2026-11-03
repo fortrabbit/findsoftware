@@ -1,0 +1,107 @@
+id: url-to-png
+name: URL-to-PNG
+status: accepted
+checkedAt: 2026-11-03
+description: Self-hosted HTTP service that renders a web page with Playwright and returns it as a cached PNG screenshot.
+facts:
+  - field: homepage
+    value: https://jasonraimondi.github.io/url-to-png/
+    url: https://jasonraimondi.github.io/url-to-png/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A URL to PNG generator over HTTP with a fairly simple API accessed via query params passed to the server."
+  - field: repository
+    value: https://github.com/jasonraimondi/url-to-png
+    url: https://github.com/jasonraimondi/url-to-png
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://jasonraimondi.github.io/url-to-png/getting_started/
+    url: https://jasonraimondi.github.io/url-to-png/getting_started/
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Jason Raimondi
+    url: https://github.com/jasonraimondi/url-to-png/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright 2024 Jason Raimondi"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/jasonraimondi
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [image-processing]
+    url: https://github.com/jasonraimondi/url-to-png/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A URL to PNG generator over HTTP"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/jasonraimondi/url-to-png
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://jasonraimondi.github.io/url-to-png/config/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Node environment (development, production)"
+  - field: installMethod
+    value: [docker]
+    url: https://jasonraimondi.github.io/url-to-png/getting_started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can run URL-to-PNG using Docker with the following command:"
+  - field: installMethod
+    value: [source-build]
+    url: https://jasonraimondi.github.io/url-to-png/getting_started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "To run URL-to-PNG locally, follow these steps:"
+  - field: dockerPulls
+    value: "109024 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/jasonraimondi/url-to-png/
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/jasonraimondi/url-to-png
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://jasonraimondi.github.io/url-to-png/getting_started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Released under the MIT License."
+  - field: currentMajor
+    value: 2
+    url: https://github.com/jasonraimondi/url-to-png/releases/tag/v2.1.4
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-04-18"
+    url: https://github.com/jasonraimondi/url-to-png/releases/tag/v2.1.4
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: https://github.com/jasonraimondi/url-to-png/tree/0.9.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 256
+    url: https://api.github.com/repos/jasonraimondi/url-to-png
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 7
+    url: https://api.github.com/repos/jasonraimondi/url-to-png/contributors
+    checkedAt: 2026-11-03
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, databases, paidEdition, pricingPage, hqCountry, maintainerType, selfHostOption, apiLimits, runsAs, regions, renderingModes, runtimeMin, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, endoflifeId, lastCommitDate, latestPrereleaseDate]
+unreadable: []
+notes: >
+  runsAs is left out: the pages call it a server and give a listening port, but no sentence states a process that keeps running. The config page also exposes a Prometheus metrics endpoint when METRICS is set. Criterion 5 rests on the public GitHub stars (256 on 2026-11-03) and the Docker Hub pull count; there is no company behind it, and the repository has 7 contributors. Criterion 1 holds because the usage page documents a single endpoint that a page calls from an img element ("Use in your HTML"). The docs say "The Docker image is also available on DockerHub", and the Docker Hub repository jasonraimondi/url-to-png is recorded as dockerPulls; the install command names the ghcr.io image, which has no pull figure here. The package.json at main names @jmondi/url-to-png (npm latest 2.1.2, Node engines ">= 20"); no install page names an npm route, so no npm figure is recorded and runtimeMin is left out, because the software ships as a Docker image and the engines field is a build requirement. The config page names storage providers for cached images: filesystem, S3 and CouchDB; these are caches, not a content store or a database field. The docs name the rendering engine as Playwright with Chromium, a headless browser the service runs; no runtime field records it. The first tag is 0.9.0, dated by its commit 2018-08-02; the latest stable release is v2.1.4, 2026-04-18, and no later stable release is tagged. The LICENSE copyright line also carries the maintainer's email, which is not recorded. The usage page documents one endpoint with url and width query parameters, and shows an img element calling it.

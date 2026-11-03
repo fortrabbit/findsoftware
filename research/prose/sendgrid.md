@@ -1,0 +1,1 @@
+SendGrid is a hosted email API and SMTP service. Its homepage now redirects to Twilio's product page, which says the SendGrid products "are available and fully supported on Twilio.com". Twilio Inc. is the maintaining company, with its place of business in San Francisco.

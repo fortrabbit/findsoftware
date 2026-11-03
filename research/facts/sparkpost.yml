@@ -1,0 +1,51 @@
+id: sparkpost
+name: SparkPost
+status: hosted-service
+checkedAt: 2026-11-03
+description: Hosted email sending service with an HTTP API for transactional email, now run as part of Bird.
+facts:
+  - field: homepage
+    value: https://developers.sparkpost.com
+    url: https://developers.sparkpost.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "quick to set up cloud service"
+  - field: status
+    value: hosted-service
+    url: https://developers.sparkpost.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "quick to set up cloud service"
+  - field: docs
+    value: https://developers.sparkpost.com
+    url: https://developers.sparkpost.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Send email from your app!"
+  - field: categories
+    value: [transactional-email]
+    url: https://developers.sparkpost.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Send email from your app!"
+  - field: pricingPage
+    value: https://bird.com/pricing/email
+    url: https://bird.com/pricing/email
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Bird B.V.
+    url: https://bird.com/legal/website-terms-of-use
+    checkedAt: 2026-11-03
+    via: page
+    quote: "means Bird B.V. with registered business address at Keizersgracht 268"
+  - field: hqCountry
+    value: NL
+    url: https://bird.com/legal/website-terms-of-use
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Keizersgracht 268, 1016 EV, Amsterdam, The Netherlands"
+notFound: [repository, language, runtime, runtimeMin, installMethod, runsAs, selfHostOption, regions, apiLimits, sso, userRoles, i18n, multisite, livePreview, importsFrom, adminUi, headlessApi, templating, contentStore, databases, renderingModes, currentMajor, latestReleaseDate, firstRelease, githubStargazers, npmName, npmWeeklyDownloads, contributors, license, paidEdition, endoflifeId, pluginDirectory, dockerPulls, parent, maintainerType, forum, discord, x, bluesky, mastodon, newsletter, subreddit, alternativeTo, basedOn, successorOf, forkOf]
+unreadable: []
+notes: >
+  Status: hosted-service. www.sparkpost.com answers 301 to bird.com/products/email (Bird B.V. runs SparkPost), but the service is still offered under its own name: developers.sparkpost.com answers 200 with the API reference and sign-up links, and app.sparkpost.com/join answers 200 (checked 2026-11-03). The acquired-redirect ruling applies only when the software is no longer offered, as with SendGrid on twilio.com. The SparkPost security page on bird.com is marked as an inactive archive. The homepage is the developer site developers.sparkpost.com, because www.sparkpost.com redirects to Bird. The repository SparkPost/node-sparkpost is the Node.js client library, not the service, so it is no repository field; its license, stars and npm figures are not recorded here (hosted-service rule). The developer site lists the send call as a POST to the transmissions endpoint of the API, and its examples show SDKs in several languages; no REST or GraphQL statement was quoted, so no apiStyles value is recorded. The contracting party in the Bird website terms is Bird B.V., registered at the Amsterdam address; the SparkPost security page sits under the same bird.com legal path. The pricing page lists plans with email limits and no single sign-on or user role row was found in its text. Pusher is also named in the same Bird About line; the reviewer should check the pusher record against the same redirect and acquisition wording.

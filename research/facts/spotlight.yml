@@ -1,0 +1,125 @@
+id: spotlight
+name: Spotlight
+status: accepted
+checkedAt: 2026-11-03
+description: Local development tool that gives Sentry SDKs a place on the developer's machine to send errors, traces and logs.
+facts:
+  - field: homepage
+    value: https://spotlightjs.com
+    url: https://spotlightjs.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Add Spotlight to your Sentry configuration and enable all the features:"
+  - field: repository
+    value: https://github.com/getsentry/spotlight
+    url: https://github.com/getsentry/spotlight
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://spotlightjs.com/docs/
+    url: https://spotlightjs.com/docs/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Spotlight brings the power of Sentry into your local development environment."
+  - field: categories
+    value: [error-tracking]
+    url: https://spotlightjs.com/docs/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Spotlight brings the power of Sentry into your local development environment."
+  - field: runsAs
+    value: [local]
+    url: https://github.com/getsentry/spotlight/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "a local proxy server running on your machine"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/getsentry/spotlight/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: license
+    value: Apache-2.0
+    url: https://registry.npmjs.org/@spotlightjs/spotlight/latest
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Sentry
+    url: https://github.com/getsentry/spotlight/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright 2023 Sentry"
+  - field: firstRelease
+    value: 2023
+    url: https://github.com/getsentry/spotlight/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://github.com/getsentry/spotlight
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: [npx]
+    url: https://spotlightjs.com/docs/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This starts Spotlight on http://localhost:8969 where you can access the web UI."
+  - field: installMethod
+    value: [npm]
+    url: https://spotlightjs.com/docs/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Install the Spotlight CLI globally:"
+  - field: installMethod
+    value: [binary download]
+    url: https://spotlightjs.com/docs/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Download the Spotlight desktop application for the best experience:"
+  - field: installMethod
+    value: [docker]
+    url: https://spotlightjs.com/docs/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Run Spotlight in a container:"
+  - field: currentMajor
+    value: 4
+    url: https://github.com/getsentry/spotlight/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-26
+    url: https://github.com/getsentry/spotlight/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 629
+    url: https://github.com/getsentry/spotlight
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 44
+    url: https://github.com/getsentry/spotlight
+    checkedAt: 2026-11-03
+    via: api
+  - field: npmName
+    value: "@spotlightjs/spotlight"
+    url: https://registry.npmjs.org/@spotlightjs/spotlight/latest
+    checkedAt: 2026-11-03
+    via: api
+  - field: npmWeeklyDownloads
+    value: "109967 (2026-10-26 to 2026-11-01)"
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/@spotlightjs/spotlight
+    checkedAt: 2026-11-03
+    via: api
+  - field: discord
+    value: https://discord.gg/EJjqM3XtXQ
+    url: https://spotlightjs.com/docs/
+    checkedAt: 2026-11-03
+    via: page
+notFound: [parent, basedOn, runtime, runtimeMin, pricingPage, hqCountry, maintainerType, endoflifeId, adminUi, headlessApi, sso, userRoles, i18n, templating, multisite, livePreview, contentStore, databases, renderingModes, pluginDirectory, dockerPulls, packagistName, pypiDownloads, reportedInstalls, usageShare, forum, subreddit, mastodon, bluesky, x, newsletter, latestPrereleaseDate, lastCommitDate, forkOf, successorOf, wikidata, alternativeTo, importsFrom, paidEdition, selfHostOption]
+unreadable: []
+notes: >
+  Status: accepted from the CSV row. Spotlight works without a Sentry account: the getting-started page says "You don’t need a Sentry account to use Spotlight", so the hosted-service rule does not apply. Runs locally: the README calls the Sidecar "a local proxy server running on your machine"; runsAs is local because the pages say the tool is for local development. Install routes: npx (quick start), global npm CLI, desktop app for macOS, Linux and Windows (download page on GitHub Releases), and the ghcr.io container image; the container image is on GitHub Container Registry, not Docker Hub, so no dockerPulls. Criterion 1 wiring: an app adds Spotlight to its Sentry SDK configuration with spotlight set to true in development; the homepage says the tool is "powered by Sentry SDKs, supporting 100+ languages"; that SDK wiring is the criterion 1 statement, and the SDK packages themselves are the Sentry record's concern. Legal name: the homepage footer reads "© 2025 Functional Software, Inc. (d.b.a. Sentry)"; the LICENSE copyright line names Sentry, so the maintainer is Sentry and the legal entity is in notes; the homepage says "Developed by Sentry.io", which is no ownership statement, so no parent. The GitHub license detection shows Other, but the LICENSE file is the Apache-2.0 text; the npm package states Apache-2.0. Versions: the monorepo ships the spotlight package, its releases are tagged per package, so currentMajor and latestReleaseDate follow @spotlightjs/spotlight; the oldest tag is the sidecar package of 2023-11-14. The newest prerelease is dated 2024-08, older than the latest release, so no latestPrereleaseDate. No runtime is stated on the pages read (the npm package ships a Node CLI, which is not a page statement), so runtime is left out. The Discord link is taken from the docs footer. No hosted offering, paid edition or pricing page was found.

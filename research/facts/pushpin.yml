@@ -1,0 +1,139 @@
+id: pushpin
+name: Pushpin
+status: accepted
+checkedAt: 2026-11-03
+description: "Reverse proxy server that holds client connections open for HTTP streaming, long-polling and WebSocket realtime endpoints in front of a web service."
+facts:
+  - field: homepage
+    value: https://pushpin.org
+    url: https://pushpin.org
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Pushpin is a proxy server that pins client connections open, making it easy to build realtime API endpoints."
+  - field: docs
+    value: https://pushpin.org/docs/
+    url: https://pushpin.org/docs/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/fastly/pushpin
+    url: https://github.com/fastly/pushpin
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/fastly
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://pushpin.org/docs/about/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Pushpin is licensed under the Apache License, Version 2.0."
+  - field: categories
+    value: [reverse-proxy]
+    url: https://pushpin.org
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Reverse proxy for realtime APIs"
+  - field: categories
+    value: [realtime]
+    url: https://pushpin.org
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Pushpin is a proxy server that pins client connections open, making it easy to build realtime API endpoints."
+  - field: language
+    value: Rust
+    url: https://github.com/fastly/pushpin
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: binary
+    url: https://pushpin.org/docs/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "then just run the binary in the base dir"
+  - field: installMethod
+    value: "apt package, Debian and Ubuntu"
+    url: https://pushpin.org/docs/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "sudo apt-get install pushpin"
+  - field: installMethod
+    value: Homebrew
+    url: https://pushpin.org/docs/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "brew install pushpin"
+  - field: installMethod
+    value: docker, fanout/pushpin image
+    url: https://pushpin.org/docs/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker pull fanout/pushpin"
+  - field: installMethod
+    value: build from source
+    url: https://pushpin.org/docs/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Simply run make"
+  - field: runsAs
+    value: [always-on]
+    url: https://pushpin.org/docs/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The Debian package automatically installs and configures Pushpin as a systemd service."
+  - field: currentMajor
+    value: 1
+    url: https://pushpin.org/docs/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "At this time, all releases have been for major version 1"
+  - field: latestReleaseDate
+    value: 2026-09-01
+    url: https://github.com/fastly/pushpin/releases/tag/v1.42.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://github.com/fastly/pushpin/tags
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 3865
+    url: https://github.com/fastly/pushpin
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 15
+    url: https://github.com/fastly/pushpin
+    checkedAt: 2026-11-03
+    via: api
+  - field: dockerPulls
+    value: "1186397 (2026-11-03)"
+    url: https://hub.docker.com/r/fanout/pushpin/
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Fastly, Inc.
+    url: https://pushpin.org
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Brought to you by © 2026 Fastly, Inc."
+  - field: forum
+    value: https://community.fastly.com/c/pushpin/12
+    url: https://pushpin.org/docs/about/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "If you have a question about Pushpin, feel free to post on the community forum:"
+  - field: x
+    value: https://twitter.com/pushpinorg
+    url: https://pushpin.org/docs/about/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Twitter: @pushpinorg"
+notFound: [licenseModel, runtimeMin, latestPrereleaseDate, lastCommitDate, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, multisite, livePreview, userRoles, sso, databases, contentStore, selfHostOption, headlessApi, templating, i18n, adminUi, renderingModes, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, newsletter, facebook, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, pypiDownloads, endoflifeId, apiLimits, freeTier, regions, pricingPage, hostedOffering, paidEdition]
+unreadable: [https://pushpin.org/docs/setup/ (404), https://pushpin.org/docs/changes/ (404), https://pushpin.org/docs/faq/ (404)]
+notes: >
+  Accepted: Pushpin is a server-side proxy, not a finished application, and its own pages document the integration a web backend uses: the backend answers each proxied request with GRIP response headers ("Grip-Hold: stream", "Grip-Channel: mychannel") and pushes data by POST to the control API at /publish on port 5561 ("POST /publish HTTP/1.1"). Protocols the proxy speaks, from the homepage and about page: HTTP streaming, HTTP long-polling, WebSockets, and SockJS translation for older browsers; the GRIP and ZHTTP protocols are documented in the docs; these go to notes, not a field. The about page states "Commercial support is provided by Fastly", a paid support statement, so no paidEdition is recorded. The repository language mix: Rust (about 2.0 MB of code) and C++ (about 1.8 MB), with Python, C and Shell beside them; the record keeps Rust, the repository's main language, and the C++ share stays here. The repository description says Pushpin is "used at the core of Fastly's Fanout service", and the about page links fanout.io/cloud; fanout.io/cloud redirects to Fastly's Fanout page, which does not name Pushpin, so no hostedOffering is recorded. The current release line is 1.42.0 and the install page says all releases have been major version 1. The first release is taken from the oldest tag, v1.0.0, committed 2014-09-15 (the repository was created 2012-08-29). The GitHub release list has no prerelease entries. The docs pages for setup, changes and FAQ returned 404 and were not read; the configuration, usage and about pages were read. The Docker image fanout/pushpin is the one the install page names. The maintainer is Fastly, Inc., as the homepage footer states; the pages read give no headquarters country, so hqCountry is unknown.

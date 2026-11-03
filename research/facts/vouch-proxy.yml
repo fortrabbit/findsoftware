@@ -1,0 +1,120 @@
+id: vouch-proxy
+name: Vouch Proxy
+status: accepted
+checkedAt: 2026-11-03
+description: Single sign-on proxy for Nginx that checks each request against a login from an OAuth or OIDC provider through the auth_request module.
+facts:
+  - field: repository
+    value: https://github.com/vouch/vouch-proxy
+    url: https://github.com/vouch/vouch-proxy
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://github.com/vouch/vouch-proxy
+    url: https://github.com/vouch/vouch-proxy/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "All Vouch Proxy configuration items are documented in"
+  - field: maintainer
+    value: The Vouch Proxy Authors
+    url: https://github.com/vouch/vouch-proxy/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2017 The Vouch Proxy Authors"
+  - field: maintainerType
+    value: community
+    url: https://api.github.com/users/vouch
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/vouch
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://github.com/vouch/vouch-proxy/tree/v0.2.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [auth, auth-proxy]
+    url: https://github.com/vouch/vouch-proxy/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "An SSO solution for Nginx using the auth_request module"
+  - field: language
+    value: Go
+    url: https://github.com/vouch/vouch-proxy
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [go-binary]
+    url: https://github.com/vouch/vouch-proxy/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "are built into the static binary using"
+  - field: sso
+    value: [oauth2, oidc]
+    url: https://github.com/vouch/vouch-proxy/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Vouch Proxy supports many OAuth and OIDC login providers"
+  - field: license
+    value: MIT
+    url: https://github.com/vouch/vouch-proxy/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/vouch/vouch-proxy/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: installMethod
+    value: docker
+    url: https://github.com/vouch/vouch-proxy/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Automated container builds for each Vouch Proxy release are available from"
+  - field: installMethod
+    value: source-build
+    url: https://github.com/vouch/vouch-proxy/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+  - field: installMethod
+    value: helm
+    url: https://github.com/vouch/vouch-proxy/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "are available at [https://github.com/vouch/helm-charts](https://github.com/vouch/helm-charts)"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/vouch/vouch-proxy/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Typically this will be done by running Vouch on a subdomain such as `vouch.yourdomain.com`"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/vouch/vouch-proxy/tree/v0.50.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-09-27"
+    url: https://github.com/vouch/vouch-proxy/commit/75741a1134
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 3281
+    url: https://github.com/vouch/vouch-proxy
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 66
+    url: https://github.com/vouch/vouch-proxy
+    checkedAt: 2026-11-03
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hostedOffering, selfHostOption, adminUi, userRoles, headlessApi, databases, contentStore, templating, i18n, multisite, livePreview, importsFrom, alternativeTo, forkOf, successorOf, parent, basedOn, wikidata, discord, forum, subreddit, mastodon, bluesky, x, newsletter, facebook, instagram, pluginDirectory, pluginCount, npmName, packagistName, npmWeeklyDownloads, dockerPulls, reportedInstalls, usageShare, regions, apiLimits, endoflifeId, eolPolicy, latestPrereleaseDate]
+unreadable: []
+notes: >
+  No project website is named: the repository homepage field is empty and the README links no site, so no homepage is recorded and the repository is the source. The project publishes no GitHub releases; its tags are the only versions, so currentMajor and latestReleaseDate come from the highest stable tag v0.50.0 and the date of the commit it points to (the CSV note records the same rule). The major line is 0 under semantic versioning. The LICENSE copyright line names The Vouch Proxy Authors; the GitHub organization Vouch is the owner of the repository. firstRelease takes the year of the commit the earliest tag v0.2.0 points to (2017-07-21). The Helm chart is listed in the README under the project's own helm-charts repository, maintained by named contributors; it is recorded as installMethod helm, and a reviewer may decide the chart is a third-party route. The README's Docker section names quay.io/vouch/vouch-proxy and a Docker Hub arm image voucher/vouch-proxy; the Docker pull figure of the arm image is not recorded. The go.mod go line (1.27.1) is a build requirement for a binary shipped in a container and is left out of runtimeMin. The protected-site wiring is the /validate endpoint called by Nginx auth_request (README, Installation and Configuration), which meets criterion 1. The README names login providers it supports (Google, GitHub, Okta, Keycloak and others); those are not recorded as fields. The README calls an OpenResty alternative to Nginx; not recorded. Contributors is the page number of the rel="last" link on the contributors endpoint with per_page=1.
