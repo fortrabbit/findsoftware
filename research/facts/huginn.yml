@@ -1,0 +1,142 @@
+id: huginn
+name: Huginn
+status: accepted
+checkedAt: 2026-11-03
+description: Self-hosted system for building agents that watch the web and incoming events and take automated actions on the user's behalf.
+facts:
+  - field: repository
+    value: https://github.com/huginn/huginn
+    url: https://github.com/huginn/huginn
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://github.com/huginn/huginn/wiki
+    url: https://github.com/huginn/huginn/wiki
+    checkedAt: 2026-11-03
+    via: page
+  - field: license
+    value: MIT
+    url: https://github.com/huginn/huginn
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Huginn is provided under the MIT License."
+  - field: maintainer
+    value: Andrew Cantino
+    url: https://github.com/huginn/huginn/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2013, Andrew Cantino (Iteration Labs, LLC)"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/huginn/huginn/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://github.com/huginn
+    checkedAt: 2026-11-03
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/huginn/huginn
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Ruby
+    url: https://github.com/huginn/huginn
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://github.com/huginn/huginn/blob/v2026.11.01/Gemfile
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtimeMin
+    value: Ruby 3.4 (Gemfile at v2026.11.01)
+    url: https://github.com/huginn/huginn/blob/v2026.11.01/Gemfile
+    checkedAt: 2026-11-03
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/huginn/huginn
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Huginn runs as a web process plus a background worker"
+  - field: installMethod
+    value: [docker]
+    url: https://github.com/huginn/huginn
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The quickest way to check out Huginn is the official Docker image"
+  - field: installMethod
+    value: [docker-compose]
+    url: https://github.com/huginn/huginn
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Example Compose files for MySQL and PostgreSQL are in"
+  - field: installMethod
+    value: [heroku]
+    url: https://github.com/huginn/huginn
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Heroku is still supported"
+  - field: installMethod
+    value: [yunohost]
+    url: https://github.com/huginn/huginn
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Huginn is also packaged for YunoHost"
+  - field: installMethod
+    value: [unraid]
+    url: https://github.com/huginn/huginn
+    checkedAt: 2026-11-03
+    via: page
+    quote: "available in Unraid Community Applications"
+  - field: installMethod
+    value: [source-build]
+    url: https://github.com/huginn/huginn
+    checkedAt: 2026-11-03
+    via: page
+    quote: "to install from source on Ubuntu or Debian"
+  - field: databases
+    value: [mysql, postgresql]
+    url: https://github.com/huginn/huginn
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Make sure that you have MySQL or PostgreSQL installed."
+  - field: categories
+    value: [automation]
+    url: https://github.com/huginn/huginn
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Huginn is a system for building agents that perform automated tasks for you online."
+  - field: forum
+    value: https://github.com/huginn/huginn/discussions
+    url: https://github.com/huginn/huginn
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Ask questions and share your ideas in GitHub Discussions"
+  - field: firstRelease
+    value: 2022
+    url: https://github.com/huginn/huginn/tree/v2022.01.04
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-02
+    url: https://github.com/huginn/huginn/releases/tag/v2026.11.01
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 50277
+    url: https://github.com/huginn/huginn
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 226
+    url: https://github.com/huginn/huginn/graphs/contributors
+    checkedAt: 2026-11-03
+    via: api
+notFound: [homepage, licenseModel, currentMajor, endoflifeId, basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, adminUi, headlessApi, contentStore, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, hqCountry, apiLimits, regions, selfHostOption, hostedOffering, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, dockerPulls, latestPrereleaseDate]
+unreadable: []
+notes: >
+  Accepted: the README documents wiring Huginn into other systems ("Send and receive webhooks to connect Huginn with anything else", "Watch RSS feeds, IMAP mailboxes, webhooks, and MQTT topics", "Publish your own feeds and JSON endpoints from the events your Agents collect"), so a webhook a site sends to it meets the wiring rule. There is no homepage; the GitHub repository is the only project site. Releases use calendar versions (v2026.11.01), so currentMajor is not recorded. The README says Huginn is a "hackable version of IFTTT or Zapier on your own server"; neither has a record. The copyright line names Andrew Cantino with Iteration Labs, LLC in parentheses; the record uses the individual and the company goes here only. The README recommends a Docker Compose setup on your own server for production, with a web process and a background worker, and offers a single-process image beside the all-in-one image. The YunoHost and Unraid packages are maintained by their communities and may lag behind releases. Managed hosting by sponsors is listed in the repository's doc/sponsors.md and is not recorded. Heroku and Dokku recipes are named in the README; only Heroku is recorded as an install route. The wiki was not read.

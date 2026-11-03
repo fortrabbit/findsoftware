@@ -1,0 +1,169 @@
+id: maddy
+name: Maddy
+status: stub
+checkedAt: 2026-11-03
+description: Composable all-in-one mail server that sends and receives SMTP mail, stores it for IMAP access and runs DKIM, SPF, DMARC, DANE and MTA-STS.
+facts:
+  - field: name
+    value: Maddy
+    url: https://maddy.email
+    checkedAt: 2026-11-03
+    via: page
+  - field: homepage
+    value: https://maddy.email
+    url: https://maddy.email
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Composable all-in-one mail server."
+  - field: repository
+    value: https://github.com/foxcpp/maddy
+    url: https://github.com/foxcpp/maddy
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://maddy.email
+    url: https://maddy.email
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Max Mazurov
+    url: https://github.com/foxcpp/maddy/blob/v0.9.6/maddy.go
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright © 2019-2020 Max Mazurov"
+  - field: maintainerType
+    value: individual
+    url: https://api.github.com/repos/foxcpp/maddy
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/foxcpp/maddy
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2020
+    url: https://github.com/foxcpp/maddy/releases/tag/v0.1.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: "0"
+    url: https://github.com/foxcpp/maddy/releases/tag/v0.9.6
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-03"
+    url: https://github.com/foxcpp/maddy/releases/tag/v0.9.6
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: GPL-3.0
+    url: https://github.com/foxcpp/maddy/blob/v0.9.6/COPYING
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/foxcpp/maddy/blob/v0.9.6/COPYING
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/foxcpp/maddy
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://maddy.email/tutorials/setting-up/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The tarball includes maddy executable you can copy into /usr/local/bin"
+  - field: installMethod
+    value: binary-download
+    url: https://maddy.email/tutorials/setting-up/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The tarball includes maddy executable you can copy into /usr/local/bin"
+  - field: installMethod
+    value: docker
+    url: https://maddy.email/docker/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Official Docker image is available from Docker Hub."
+  - field: installMethod
+    value: arch linux packages (AUR PKGBUILDs, maddy.email/archlinux repository)
+    url: https://maddy.email/tutorials/setting-up/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "For Arch Linux users, maddy and maddy-git PKGBUILDs are available in AUR."
+  - field: installMethod
+    value: source-build
+    url: https://maddy.email/tutorials/building-from-source/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You need C toolchain, Go toolchain and Make"
+  - field: runsAs
+    value: [always-on]
+    url: https://maddy.email
+    checkedAt: 2026-11-03
+    via: page
+    quote: "with one daemon with uniform configuration and minimal maintenance cost"
+  - field: databases
+    value: [sqlite]
+    url: https://maddy.email/internals/sqlite/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "SQLite is a perfect choice for small deployments"
+  - field: databases
+    value: [postgres]
+    url: https://maddy.email/reference/storage/imapsql/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "PostgreSQL 9.6 or newer"
+  - field: sso
+    value: LDAP
+    url: https://maddy.email/reference/auth/ldap/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "maddy supports authentication via LDAP using DN binding."
+  - field: alternativeTo
+    value: [mailcow, mail-in-a-box]
+    url: https://maddy.email/faq/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "maddy is a single piece of software implementing subset of what MailCow and MIAB offer."
+  - field: forum
+    value: https://lists.sr.ht/~foxcpp/maddy
+    url: https://maddy.email
+    checkedAt: 2026-11-03
+    via: page
+  - field: categories
+    value: [smtp-server, email]
+    url: https://maddy.email
+    checkedAt: 2026-11-03
+    via: page
+    quote: "It can send messages via SMTP (works as MTA)"
+  - field: adminUi
+    value: no
+    url: https://maddy.email/faq/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "maddy currently has no admin Web interface"
+  - field: dockerPulls
+    value: "543330 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/foxcpp/maddy/
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 6116
+    url: https://api.github.com/repos/foxcpp/maddy
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 78
+    url: https://api.github.com/repos/foxcpp/maddy/contributors?per_page=1
+    checkedAt: 2026-11-03
+    via: api
+notFound: [pricingPage, hqCountry, userRoles, i18n, livePreview, runtimeMin, importsFrom, selfHostOption, headlessApi, templating, multisite, regions, discord, newsletter, x, bluesky, mastodon, subreddit, pluginDirectory, npmName, endoflifeId, basedOn, parent]
+unreadable: []
+notes: >
+  Stub, in doubt on criterion 1: the only app the project's own pages show submitting mail through maddy is Mailman 3 (docs/third-party/mailman3.md at v0.9.6, configured to send through the Submission port with authentication and TLS), a mailing-list manager, which is itself out of scope, not a website or web app. The same page set also covers other SMTP servers forwarding to maddy's LMTP socket and Dovecot SASL. A page documenting a website or web app that sends mail through maddy would settle it. Coined fields, kept here: mailSubmitters (Mailman 3, as above) and protocols (SMTP and IMAP, plus DKIM, SPF, DMARC, DANE and MTA-STS, from the homepage). The forum entry is the project's mailing list on lists.sr.ht; the homepage also links an IRC channel. The IMAP storage is labelled "beta" in the README ("IMAP storage is \"beta\""), which is a project statement, not a fact field. The FAQ compares maddy with MailCow, Mail-in-a-Box, WildDuck and ZoneMTA; WildDuck and ZoneMTA have no fact file, so only mailcow and mail-in-a-box are recorded as alternativeTo. The project's own pages say maddy replaces Postfix, Dovecot, OpenDKIM, OpenSPF and OpenDMARC; no alternativeTo is recorded for them because the README names them as replaced components. go.mod names Go for building from source; the tarball and Docker image are the user-facing installs, so no runtimeMin is recorded. The v0.9.6 release is marked "[SECURITY]" in its title; the repository has no end statement. The maintainer is named in the copyright header of maddy.go (the header also credits Maddy Mail Server contributors); the COPYING file is the plain GPL text with no holder. Docker Hub figure is the foxcpp/maddy image named in the Docker page. Maddy's own site lists the Docker image, binary tarball and source build as install routes, recorded as installMethod entries, plus the Arch Linux packages from the setup tutorial. The tarball includes a systemd unit file (setup tutorial). The FAQ says there is no webmail and administration is done via the CLI utility.

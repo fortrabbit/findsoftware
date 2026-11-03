@@ -1,0 +1,112 @@
+id: keep
+name: Keep
+status: stub
+checkedAt: 2026-11-03
+description: "Open-source AIOps platform that receives alerts from monitoring tools and deduplicates, enriches, correlates and routes them."
+facts:
+  - field: homepage
+    value: "https://www.keephq.dev"
+    url: https://www.keephq.dev
+    checkedAt: 2026-11-03
+    via: page
+  - field: docs
+    value: "https://docs.keephq.dev"
+    url: https://docs.keephq.dev
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: "https://github.com/keephq/keep"
+    url: https://github.com/keephq/keep
+    checkedAt: 2026-11-03
+    via: api
+  - field: pricingPage
+    value: "https://www.keephq.dev/pricing"
+    url: https://www.keephq.dev/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: x
+    value: "https://twitter.com/keepalerting"
+    url: https://www.keephq.dev
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "Keep"
+    url: https://github.com/keephq/keep/blob/v0.54.3/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2024 Keep"
+  - field: repoOwnerType
+    value: organization
+    url: https://github.com/keephq/keep
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2024
+    url: https://github.com/keephq/keep/releases/tag/v0.2.9
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Python
+    url: https://github.com/keephq/keep
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/keephq/keep
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/keephq/keep/blob/v0.54.3/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "available under the \"MIT\" license"
+  - field: license
+    value: "Keep Enterprise Edition license, for content under the ee/ directory"
+    url: https://github.com/keephq/keep/blob/v0.54.3/ee/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The Keep Enterprise Edition (EE) license (the Enterprise License)"
+  - field: paidEdition
+    value: "Keep Enterprise Edition, under the Enterprise License in the ee/ directory"
+    url: https://github.com/keephq/keep/blob/v0.54.3/ee/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The Keep Enterprise Edition (EE) license (the Enterprise License)"
+  - field: hostedOffering
+    value: "Keep Cloud, a managed version of the platform"
+    url: https://www.keephq.dev/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Self-host or start managed for free"
+  - field: installMethod
+    value: docker compose
+    url: https://docs.keephq.dev/deployment/docker
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Spin up Keep with docker-compose latest images"
+  - field: sso
+    value: [oidc]
+    url: https://docs.keephq.dev/deployment/authentication/overview
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Generic OIDC - Bring your own OIDC provider"
+  - field: latestReleaseDate
+    value: 2026-09-09
+    url: https://github.com/keephq/keep/releases/tag/v0.54.3
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 12477
+    url: https://github.com/keephq/keep
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 198
+    url: https://github.com/keephq/keep
+    checkedAt: 2026-11-03
+    via: api
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, wikidata, hqCountry, currentMajor, runtimeMin, categories, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, importsFrom, selfHostOption, regions, apiLimits, renderingModes, runsAs, npmName, npmWeeklyDownloads, packagistName, pypiName, pypiDownloads, dockerPulls, mavenCoordinates, endoflifeId, latestPrereleaseDate, lastCommitDate, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, usageShare, reportedInstalls, sdkLanguages]
+unreadable: []
+notes: >
+  Doubt: criterion 1 for an end-user application. The project's pages document monitoring tools (Grafana, Datadog, PagerDuty and others, listed on the homepage and the providers index) sending alerts to Keep by webhook, and a REST API. They do not document a website or web app that sends to Keep, so it is unsettled whether monitoring-tool webhooks meet the wiring rule for an alert platform; a reviewer decides, and the answer settles this record. The homepage says "Keep is joining forces with Elastic" with a "Read more" link, which does not state an acquisition, so no parent is recorded and it is no end signal. Both license files were read at the v0.54.3 tag. Two license statements: the root LICENSE grants MIT for content outside the ee/ directory, and ee/LICENSE sets the Enterprise License for that directory; both are recorded. The root LICENSE copyright line reads "Copyright (c) 2024 Keep", recorded as maintainer; ee/LICENSE reads "Keep Alerting LTD" and the privacy policy names "Keep Alerting Inc.", which stay here. hqCountry is unknown: the privacy policy names no address. The releases run from v0.2.9 (2024-04-03), the earliest tag, to v0.54.3 (2026-09-09), so the minor line is 0.54 and no currentMajor is recorded. Keep Cloud is named as a managed option on the pricing page ("Self-host or start managed for free"); no prices are recorded. The docs name the Docker Compose start script; the images are on Google Artifact Registry (us-central1-docker.pkg.dev/keephq/keep), not Docker Hub, so no dockerPulls is recorded. The docs authentication page lists OIDC for a generic provider; its feature table marks some integrations as EE. The release-tag pyproject.toml gives version 0.54.3; no requires-python line was checked, so runtimeMin is left out. The candidates row's category "observability;alerting" is recorded in notes only, since the categories field is not set on this stub.

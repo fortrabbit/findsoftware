@@ -1,0 +1,194 @@
+id: kanidm
+name: Kanidm
+status: accepted
+checkedAt: 2026-11-03
+description: Open-source identity management server with passkeys, OAuth2 and OpenID Connect, LDAP, RADIUS and Linux login integration, written in Rust.
+facts:
+  - field: homepage
+    value: https://kanidm.com
+    url: https://kanidm.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Kanidm is a modern and simple identity management platform written in rust."
+  - field: repository
+    value: https://github.com/kanidm/kanidm
+    url: https://github.com/kanidm/kanidm
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://kanidm.github.io/kanidm/stable/
+    url: https://kanidm.github.io/kanidm/stable/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Looking for the rustdoc documentation for the libraries themselves?"
+  - field: maintainer
+    value: Kanidm project team
+    url: https://kanidm.github.io/kanidm/stable/support.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This document describes the Kanidm project teams support and release version processes"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/kanidm
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: MPL-2.0
+    url: https://github.com/kanidm/kanidm/blob/master/LICENSE.md
+    checkedAt: 2026-11-03
+    via: api
+    quote: "Mozilla Public License Version 2.0"
+  - field: categories
+    value: [identity-provider, auth]
+    url: https://kanidm.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Kanidm is a modern and simple identity management platform written in rust."
+  - field: language
+    value: Rust
+    url: https://github.com/kanidm/kanidm
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://kanidm.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "written in rust"
+  - field: sso
+    value: [oidc]
+    url: https://kanidm.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "OAuth2/OIDC Authentication provider for web SSO"
+  - field: contentStore
+    value: [database]
+    url: https://kanidm.com/comparisons/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "opted to write our own high performance database and replication system"
+  - field: installMethod
+    value: docker
+    url: https://kanidm.github.io/kanidm/stable/evaluation_quickstart.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker pull docker.io/kanidm/server:latest"
+  - field: installMethod
+    value: cargo
+    url: https://kanidm.github.io/kanidm/stable/installing_client_tools.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "you may wish to install the Kanidm CLI with cargo instead"
+  - field: installMethod
+    value: system packages
+    url: https://kanidm.github.io/kanidm/stable/installing_client_tools.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Kanidm currently is packaged for the following systems"
+  - field: alternativeTo
+    value: lldap
+    url: https://kanidm.com/comparisons/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "LLDAP is a similar project aiming for a small and easy to administer LDAP server"
+  - field: alternativeTo
+    value: keycloak
+    url: https://kanidm.com/comparisons/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Keycloak is an OIDC/OAuth2/SAML provider."
+  - field: alternativeTo
+    value: authentik
+    url: https://kanidm.com/comparisons/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Authentik is an IDM provider written in Python"
+  - field: alternativeTo
+    value: authelia
+    url: https://kanidm.com/comparisons/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Authelia and Zitadel are written in Go"
+  - field: alternativeTo
+    value: zitadel
+    url: https://kanidm.com/comparisons/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Authelia and Zitadel are written in Go"
+  - field: alternativeTo
+    value: rauthy
+    url: https://kanidm.com/comparisons/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Rauthy is a minimal OIDC provider."
+  - field: importsFrom
+    value: [freeipa]
+    url: https://kanidm.github.io/kanidm/stable/print.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Kanidm is able to synchronise from FreeIPA for the purposes of coexistence or migration."
+  - field: importsFrom
+    value: [ldap]
+    url: https://kanidm.github.io/kanidm/stable/print.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "If you have an LDAP server that supports sync repl (RFC4533 content synchronisation)"
+  - field: userRoles
+    value: "builtin privilege groups, nested groups"
+    url: https://kanidm.github.io/kanidm/stable/print.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The majority of the builtin groups are privilege groups that provide rights over Kanidm administrative actions."
+  - field: runsAs
+    value: [always-on]
+    url: https://kanidm.github.io/kanidm/stable/print.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Kanidm will alternately run as a daemon/service"
+  - field: installMethod
+    value: homebrew
+    url: https://kanidm.github.io/kanidm/stable/print.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Kanidm provides a Homebrew cask"
+  - field: installMethod
+    value: aur
+    url: https://kanidm.github.io/kanidm/stable/print.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Kanidm on AUR"
+  - field: forum
+    value: https://github.com/kanidm/kanidm/discussions
+    url: https://github.com/kanidm/kanidm/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Alternately you can open a new [GitHub discussion]."
+  - field: currentMajor
+    value: "1"
+    url: https://github.com/kanidm/kanidm/releases/tag/v1.12.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-01
+    url: https://github.com/kanidm/kanidm/releases/tag/v1.12.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2019
+    url: https://github.com/kanidm/kanidm/releases/tag/v1.0.0rc1
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 5528
+    url: https://github.com/kanidm/kanidm
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 156
+    url: https://api.github.com/repos/kanidm/kanidm/contributors
+    checkedAt: 2026-11-03
+    via: api
+notFound: [hqCountry, parent, wikidata, adminUi, i18n, multisite, livePreview, templating, headlessApi, renderingModes, databases, pricingPage, freeTier, paidEdition, hostedOffering, regions, apiLimits, usageShare, reportedInstalls, endoflifeId, npmName, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, selfHostOption, runtimeMin]
+unreadable: ["https://kanidm.com/about (404)", "https://kanidm.com/pricing (404)"]
+notes: >
+  The project's own site has no separate about, pricing or terms page; the maintainer is the project team as its support page names it. The LICENSE.md file names MPL-2.0 only; no copyright holder is stated. The repository has no stable release before 1.2.0 (2024-05-01): the support page says all earlier releases are release candidate, beta or alpha builds, so firstRelease is the oldest release of any kind (v1.0.0rc1, 2019-11-17) and the stable line starts later. The highest stable release is v1.12.0 (2026-11-01), so currentMajor is 1 and the minor line stays here. The repository also ships a Python module (pykanidm) and an rlm_kanidm FreeRADIUS module, and the support page says the Python module trails the core Rust code; these are not separate records. The homepage names a Gitter channel and the GitHub discussions as the contact points; neither is a field here. The evaluation quickstart says a production deployment should follow the installation chapter because of security considerations, and the support page gives each stable release a limited support window after its release date. The homepage lists "User Self Service via the WebUI" and "Complete CLI tooling for Administration"; no administration web interface is stated, so adminUi is not recorded. The server install chapter names containers as the preferred deployment and says Kanidm will alternately run as a daemon/service. The server supports WebAuthn, OAuth 2.0, OpenID Connect, LDAP and RADIUS (homepage). The community page names William Brown as creator and project lead; the Cargo workspace authors list William Brown and James Hodgkinson. The migration paths are sync tools for FreeIPA and for LDAP servers that support RFC4533. The Homebrew and AUR routes are listed on the client tools page. The homepage names no legal entity. No npm package is recorded: the install docs name no npm package.

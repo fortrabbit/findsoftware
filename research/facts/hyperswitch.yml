@@ -1,0 +1,186 @@
+id: hyperswitch
+name: Hyperswitch
+status: accepted
+checkedAt: 2026-11-03
+description: "Open-source payments orchestration platform that routes transactions across payment processors, with a vault, a control center and reconciliation, self-hosted or hosted by Juspay."
+facts:
+  - field: homepage
+    value: "https://hyperswitch.io"
+    url: https://hyperswitch.io
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: "https://github.com/juspay/hyperswitch"
+    url: https://github.com/juspay/hyperswitch
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://docs.hyperswitch.io"
+    url: https://docs.hyperswitch.io
+    checkedAt: 2026-11-03
+    via: page
+  - field: pricingPage
+    value: "https://hyperswitch.io/pricing"
+    url: https://hyperswitch.io/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "Juspay Technologies Private Limited"
+    url: https://hyperswitch.io/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "between Juspay Technologies Private Limited"
+  - field: maintainerType
+    value: company
+    url: https://hyperswitch.io/terms
+    checkedAt: 2026-11-03
+    via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://github.com/juspay/hyperswitch
+    checkedAt: 2026-11-03
+    via: api
+  - field: hqCountry
+    value: IN
+    url: https://hyperswitch.io/privacy-policy
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Address: #444, Stallion Business Centre, 18th Main Road, 6th Block, Koramangala, Bengaluru, Karnataka 560095."
+  - field: firstRelease
+    value: 2023
+    url: https://github.com/juspay/hyperswitch/releases/tag/v0.2.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Rust
+    url: https://github.com/juspay/hyperswitch
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://github.com/juspay/hyperswitch/blob/v1.129.0/crates/router/Cargo.toml
+    checkedAt: 2026-11-03
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.hyperswitch.io/self-hosting/guides-for-self-hosting/architecture-overview
+    checkedAt: 2026-11-03
+    via: page
+    quote: "When a payment request is received, it goes through the Router, which handles important processing and routing tasks."
+  - field: categories
+    value: [payments]
+    url: https://hyperswitch.io
+    checkedAt: 2026-11-03
+    via: page
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/juspay/hyperswitch
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: "Apache 2.0 License"
+    url: https://github.com/juspay/hyperswitch/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This product is licensed under the Apache 2.0 License."
+  - field: currentMajor
+    value: 1
+    url: https://github.com/juspay/hyperswitch/releases/tag/v1.129.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-11-02"
+    url: https://github.com/juspay/hyperswitch/releases/tag/v1.129.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 45668
+    url: https://github.com/juspay/hyperswitch
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 257
+    url: https://github.com/juspay/hyperswitch
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: [docker-compose]
+    url: https://docs.hyperswitch.io/self-hosting/want-to-explore/readme-1/unified-local-setup-using-docker.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can run Hyperswitch on your system using Docker compose"
+  - field: installMethod
+    value: [helm-chart]
+    url: https://docs.hyperswitch.io/self-hosting/want-to-explore/readme.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Hyperswitch can be deployed on Kubernetes using Helm Charts"
+  - field: databases
+    value: [postgresql]
+    url: https://docs.hyperswitch.io/self-hosting/guides-for-self-hosting/deployment-overview/system-requirements.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "PostgreSQL version 14.x is recommended for persistent storage."
+  - field: databases
+    value: [redis]
+    url: https://docs.hyperswitch.io/self-hosting/guides-for-self-hosting/deployment-overview/system-requirements.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Redis version 7.x is recommended for caching"
+  - field: adminUi
+    value: "Control Center, a no-code merchant interface shipped with the self-hosted stack"
+    url: https://docs.hyperswitch.io/self-hosting/guides-for-self-hosting/architecture-overview.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The Control Center is a no-code interface to manage and monitor your entire payment stack"
+  - field: headlessApi
+    value: [rest]
+    url: https://api-reference.hyperswitch.io/introduction
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Our APIs accept and return JSON in the HTTP body and return standard HTTP response codes."
+  - field: sso
+    value: [oidc]
+    url: https://docs.hyperswitch.io/integration-guide/control-center/configure-sso-for-the-hyperswitch-control-center
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Hyperswitch supports Single Sign-On (SSO) for the Control Center using OpenID Connect (OIDC)"
+  - field: userRoles
+    value: [Organization Admin, Merchant Admin, Profile Admin, Merchant Developer, Profile Developer, Merchant Operator, Profile Operator, Merchant IAM, Profile IAM, Profile View Only, Merchant View Only, Profile Customer Support, Customer Support]
+    url: https://docs.hyperswitch.io/integration-guide/account-management/manage-your-team.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Our system currently offers a set of default roles, each with predefined permissions"
+  - field: forum
+    value: "https://github.com/juspay/hyperswitch/discussions"
+    url: https://github.com/juspay/hyperswitch/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "visit our [GitHub Discussions](https://github.com/juspay/hyperswitch/discussions)"
+  - field: hostedOffering
+    value: "Hosted by Juspay, a fully managed service provided as APIs and SDKs"
+    url: https://hyperswitch.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "utilize a fully managed service provided by Juspay as APIs and SDKs"
+  - field: importsFrom
+    value: [stripe]
+    url: https://docs.hyperswitch.io/other-features/payment-orchestration/quickstart/migrate-from-stripe
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Fast migration guide for Stripe users"
+  - field: subreddit
+    value: "https://www.reddit.com/r/juspay_hyperswitch/"
+    url: https://docs.hyperswitch.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Discuss on Reddit"
+  - field: x
+    value: "https://x.com/hyperswitchio"
+    url: https://github.com/juspay/hyperswitch/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+notFound: [wikidata, parent, forkOf, successorOf, alternativeTo, i18n, multisite, livePreview, templating, renderingModes, contentStore, discord, bluesky, mastodon, newsletter, facebook, instagram, threads, pluginDirectory, pluginCount, npmName, packagistName, pypiDownloads, npmWeeklyDownloads, usageShare, reportedInstalls, endoflifeId, eolPolicy, releaseCadence, regions, selfHostOption, paidEdition, dockerPulls, licenseModel]
+unreadable: [docs.hyperswitch.io/self-hosting/guides-for-self-hosting/deployment-overview/system-requirements (HTML answers 500, the .md copy is read), docs.hyperswitch.io/self-hosting/guides-for-self-hosting/deployment-models (HTML answers 500, the .md copy is read), docs.hyperswitch.io/self-hosting/guides-for-self-hosting/config-management (500), docs.hyperswitch.io/self-hosting/guides-for-self-hosting/going-live (500), docs.hyperswitch.io/self-hosting/want-to-explore/troubleshooting (500)]
+notes: >
+  Current stable release v1.129.0 (2026-11-02). The CSV row's star count (45.4k) and release date (2026-10-16) are older; the facts carry today's values. The repository holds the Rust app server; the control center, web SDK, client SDKs, vault and encryption service, and the Helm and Terraform repositories are separate repositories named in the README, and they are not records here. The README calls the project a "commercial open-source payments stack"; the license is Apache 2.0 for the repository as shipped. The pricing page lists "Self-Host Community Edition", "Self-Host Enterprise Edition" (contact sales) and "Hosted Cloud" tiers, and three modules (Revenue Recovery, Cost Observability, Reconciliation) as "Paid add-on"; no paidEdition fact is written because the Enterprise tier is described as support and the add-ons are priced modules, not an edition. Reviewer decision: whether that reading holds. Production route: the self-hosting pages say the Docker Compose and the Helm quick start are "for evaluation only", and production self-hosting is documented as the Enterprise self-hosting (BYOC) program with three support tiers; criterion 3 is met by the install pages, the production statement goes to the reviewer. The legal name differs in spelling by page: "Juspay Technologies Private Limited" in the merchant terms, "Juspay Technologies Pvt Ltd" in the privacy notice; both name the same company and the terms name the legal form. The homepage footer links twitter.com/juspay, a company account; the recorded x value is the project account from the README badge. The README lists SDKs in Kotlin, Swift, TypeScript, Dart and ReScript. Redis is recorded under databases because the system requirements page names it with postgres; the docs call it a cache. The Docker images the compose file pulls are on docker.juspay.io, not Docker Hub, so no dockerPulls figure. runtime binary comes from the two [[bin]] targets (router, scheduler) in crates/router/Cargo.toml at v1.129.0. The scheduler is documented as producer and consumer processes that execute queued tasks, consistent with a second always-on process.

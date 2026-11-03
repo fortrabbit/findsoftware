@@ -1,0 +1,135 @@
+id: mailcatcher
+name: MailCatcher
+status: accepted
+checkedAt: 2026-11-03
+description: Email catcher that runs an SMTP server and shows the received messages in a web interface, written in Ruby.
+facts:
+  - field: homepage
+    value: "https://mailcatcher.me"
+    url: https://mailcatcher.me/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MailCatcher runs a super simple SMTP server which catches any message sent to it"
+  - field: repository
+    value: "https://github.com/sj26/mailcatcher"
+    url: https://api.github.com/repos/sj26/mailcatcher
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/sj26/mailcatcher
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: "Samuel Cochran"
+    url: https://github.com/sj26/mailcatcher/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2010-2011 Samuel Cochran"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/sj26/mailcatcher/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+  - field: categories
+    value: [email-testing, smtp-server]
+    url: https://mailcatcher.me/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MailCatcher runs a super simple SMTP server"
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/sj26/mailcatcher
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://github.com/sj26/mailcatcher/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MailCatcher requires Ruby 3.3 or newer."
+  - field: runtimeMin
+    value: "3.3"
+    url: https://github.com/sj26/mailcatcher/blob/v0.11.0/mailcatcher.gemspec
+    checkedAt: 2026-11-03
+    via: api
+    quote: 's.required_ruby_version = ">= 3.3"'
+  - field: installMethod
+    value: [gem install]
+    url: https://github.com/sj26/mailcatcher/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "gem install mailcatcher"
+  - field: installMethod
+    value: [docker]
+    url: https://github.com/sj26/mailcatcher/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "There is a Docker image available"
+  - field: dockerPulls
+    value: "7059101 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/sj26/mailcatcher/
+    checkedAt: 2026-11-03
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/sj26/mailcatcher/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Runs as a daemon in the background, optionally in foreground."
+  - field: license
+    value: MIT
+    url: https://github.com/sj26/mailcatcher/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Released under the MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/sj26/mailcatcher
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: "2010"
+    url: https://rubygems.org/api/v1/versions/mailcatcher.json
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://github.com/sj26/mailcatcher/releases/tag/v0.10.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 6783
+    url: https://api.github.com/repos/sj26/mailcatcher
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-09-02"
+    url: https://rubygems.org/api/v1/versions/mailcatcher.json
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 51
+    url: https://api.github.com/repos/sj26/mailcatcher/contributors?per_page=1
+    checkedAt: 2026-11-03
+    via: api
+  - field: headlessApi
+    value: [rest]
+    url: https://github.com/sj26/mailcatcher/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A fairly RESTful URL schema means you can download a list of messages in JSON"
+  - field: rubygemsName
+    value: mailcatcher
+    url: https://rubygems.org/api/v1/gems/mailcatcher.json
+    checkedAt: 2026-11-03
+    via: api
+  - field: rubygemsDownloads
+    value: "8863045 total"
+    url: https://rubygems.org/api/v1/gems/mailcatcher.json
+    checkedAt: 2026-11-03
+    via: api
+notFound: [docs, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, usageShare, reportedInstalls, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, databases, importsFrom, renderingModes, paidEdition, selfHostOption, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, npmName, packagistName, pypiDownloads, endoflifeId]
+unreadable: []
+notes: >
+  latestReleaseDate is the newest stable release by date: RubyGems 0.11.0 (2026-09-02, tag v0.11.0, no GitHub release object); the GitHub release list stops at v0.10.0 (2024-05-25), which the homepage still shows as "Latest version: 0.10.0". currentMajor is 0 either way. The LICENSE copyright line reads "Copyright (c) 2010-2011 Samuel Cochran" and the README reads "Copyright 2010-2019 Samuel Cochran"; both name the same maintainer. The README's Rails and Django snippets use development settings, but no page says MailCatcher is for local development, so runsAs is always-on from the daemon statement, not local. The Docker Hub figure is the image the README names. The Docker Hub count is read on 2026-11-03.

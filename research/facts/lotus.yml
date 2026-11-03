@@ -1,0 +1,131 @@
+id: lotus
+name: Lotus
+status: accepted
+checkedAt: 2026-11-03
+description: Pricing and billing engine for SaaS companies that runs custom subscriptions and usage-based plans, self-hosted with Docker.
+facts:
+  - field: name
+    value: Lotus
+    url: https://github.com/uselotus/lotus
+    checkedAt: 2026-11-03
+    via: api
+  - field: repository
+    value: https://github.com/uselotus/lotus
+    url: https://github.com/uselotus/lotus
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://github.com/uselotus/lotus/tree/main/docs
+    url: https://github.com/uselotus/lotus/tree/main/docs
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Lotus Tech Co.
+    url: https://github.com/uselotus/lotus/blob/0.10.2/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2023 Lotus Tech Co."
+  - field: maintainerType
+    value: company
+    url: https://github.com/uselotus/lotus/blob/0.10.2/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/uselotus/lotus
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2023
+    url: https://github.com/uselotus/lotus/releases/tag/0.9.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: "0"
+    url: https://github.com/uselotus/lotus/releases/tag/0.10.2
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2023-03-23"
+    url: https://github.com/uselotus/lotus/releases/tag/0.10.2
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/uselotus/lotus/blob/0.10.2/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/uselotus/lotus/blob/0.10.2/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/uselotus/lotus
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/uselotus/lotus
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Python (Django)"
+  - field: x
+    value: https://twitter.com/uselotusio
+    url: https://github.com/uselotus/lotus/blob/main/docs/mint.json
+    checkedAt: 2026-11-03
+    via: page
+    quote: '"twitter": "https://twitter.com/uselotusio"'
+  - field: instagram
+    value: https://www.instagram.com/uselotusio/
+    url: https://github.com/uselotus/lotus/blob/main/docs/mint.json
+    checkedAt: 2026-11-03
+    via: page
+    quote: '"instagram": "https://www.instagram.com/uselotusio/"'
+  - field: categories
+    value: [billing, payments]
+    url: https://github.com/uselotus/lotus
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Lotus is a pricing and billing engine that enables SaaS companies"
+  - field: databases
+    value: [postgresql]
+    url: https://github.com/uselotus/lotus
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Postgres (TimescaleDB)"
+  - field: adminUi
+    value: yes, control panel
+    url: https://github.com/uselotus/lotus
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Lotus provides a flexible and modular control panel"
+  - field: installMethod
+    value: docker
+    url: https://github.com/uselotus/lotus
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Install Docker Desktop and start Docker"
+  - field: installMethod
+    value: self-host-script
+    url: https://github.com/uselotus/lotus
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Run the self-hosting script:"
+  - field: contributors
+    value: 30
+    url: https://api.github.com/repos/uselotus/lotus/contributors?per_page=1
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 1842
+    url: https://api.github.com/repos/uselotus/lotus
+    checkedAt: 2026-11-03
+    via: api
+notFound: [homepage, pricingPage, hqCountry, runsAs, runtimeMin, renderingModes, headlessApi, userRoles, sso, i18n, livePreview, importsFrom, selfHostOption, forum, discord, newsletter, bluesky, mastodon, subreddit, pluginDirectory, dockerPulls, endoflifeId]
+unreadable:
+  - https://www.uselotus.io (403 to the research user agent, not retried)
+  - https://docs.uselotus.io (no connection from the research environment, not retried)
+notes: >
+  Accepted on criterion 1 as a billing service a SaaS app wires into its backend: the getting-started page says "In the app's backend, add event tracking with the Lotus SDK or API" and shows API calls that create customers and subscribe them to plans. The project site and docs site are unreadable here, so the docs field points at the docs source in the repository (docs/overview/self-hosting.mdx and getting-started.mdx). Last GitHub release 0.10.2 is dated 2023-03-23; the repository has commits after that date, which is no end signal, and no page says the project has ended; the record stays accepted for the reviewer to confirm. The README calls self-hosting "currently the only version". The README names a Slack community (join.slack.com/t/lotus-community) and Django, Celery, Redpanda, Redis and Go microservices as the tech stack; Django is not recorded as basedOn because the README does not say the project is based on it. The Dockerfile in backend uses python:3.9, a build detail of the Docker install, so no runtimeMin is recorded. The docs' footer socials also list LinkedIn (company/uselotusio). The LICENSE copyright line names "Lotus Tech Co."; no page gives its country. Coined fields: none.

@@ -1,0 +1,179 @@
+id: lldap
+name: LLDAP
+status: accepted
+checkedAt: 2026-11-03
+description: "Lightweight authentication server that exposes an LDAP interface and a web UI for managing users and groups."
+facts:
+  - field: repository
+    value: "https://github.com/lldap/lldap"
+    url: "https://api.github.com/repos/lldap/lldap"
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://github.com/lldap/lldap/blob/v0.6.3/docs/install.md"
+    url: "https://github.com/lldap/lldap/blob/v0.6.3/docs/install.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The image is available at"
+  - field: maintainer
+    value: "Valentin Tolmer"
+    url: "https://github.com/lldap/lldap/blob/v0.6.3/Cargo.toml"
+    checkedAt: 2026-11-03
+    via: page
+    quote: 'authors = ["Valentin Tolmer'
+  - field: maintainerType
+    value: "individual"
+    url: "https://github.com/lldap/lldap/blob/v0.6.3/Cargo.toml"
+    checkedAt: 2026-11-03
+    via: page
+  - field: repoOwnerType
+    value: "organization"
+    url: "https://api.github.com/users/lldap"
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2021
+    url: "https://github.com/lldap/lldap/releases"
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: ["identity-server"]
+    url: "https://github.com/lldap/lldap/blob/main/README.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "provides an opinionated, simplified LDAP interface for authentication"
+  - field: language
+    value: "Rust"
+    url: "https://api.github.com/repos/lldap/lldap"
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: ["binary"]
+    url: "https://github.com/lldap/lldap/blob/v0.6.3/docs/install.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The resulting binaries will be in"
+  - field: installMethod
+    value: "docker image lldap/lldap, with a compose example"
+    url: "https://github.com/lldap/lldap/blob/v0.6.3/docs/install.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The image is available at"
+  - field: installMethod
+    value: "rootless Podman, command line or quadlets"
+    url: "https://github.com/lldap/lldap/blob/v0.6.3/docs/install.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "LLDAP works well with rootless Podman"
+  - field: installMethod
+    value: "TrueNAS SCALE app catalog"
+    url: "https://github.com/lldap/lldap/blob/v0.6.3/docs/install.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "can be installed on TrueNAS SCALE using the built-in Apps catalog"
+  - field: installMethod
+    value: "distribution package manager"
+    url: "https://github.com/lldap/lldap/blob/v0.6.3/docs/install.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Depending on the distribution you use, it might be possible to install LLDAP"
+  - field: installMethod
+    value: "build from source with cargo"
+    url: "https://github.com/lldap/lldap/blob/v0.6.3/docs/install.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "To compile the project, you'll need:"
+  - field: docker
+    value: "lldap/lldap"
+    url: "https://github.com/lldap/lldap/blob/v0.6.3/docs/install.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The image is available at"
+  - field: dockerPulls
+    value: "5731203 (2026-11-03)"
+    url: "https://hub.docker.com/v2/repositories/lldap/lldap/"
+    checkedAt: 2026-11-03
+    via: api
+  - field: runsAs
+    value: ["always-on"]
+    url: "https://github.com/lldap/lldap/blob/v0.6.3/docs/install.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Then the service will listen on two ports, one for LDAP and one for the web"
+  - field: databases
+    value: ["sqlite", "mysql", "postgresql"]
+    url: "https://github.com/lldap/lldap/blob/main/README.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "By default, the data is stored in SQLite, but you can swap the backend with MySQL/MariaDB or PostgreSQL"
+  - field: sso
+    value: ["ldap"]
+    url: "https://github.com/lldap/lldap/blob/main/README.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "provides an opinionated, simplified LDAP interface for authentication"
+  - field: adminUi
+    value: "web front-end"
+    url: "https://github.com/lldap/lldap/blob/main/README.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The simplest way to use LLDAP is through the web front-end."
+  - field: userRoles
+    value: "administrator group lldap_admin with admin rights in the web UI"
+    url: "https://github.com/lldap/lldap/blob/main/README.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The administrator group for LLDAP is"
+  - field: headlessApi
+    value: ["graphql"]
+    url: "https://github.com/lldap/lldap/blob/main/README.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "LLDAP is also very scriptable, through its GraphQL API."
+  - field: license
+    value: "GPL-3.0-only"
+    url: "https://github.com/lldap/lldap/blob/v0.6.3/Cargo.toml"
+    checkedAt: 2026-11-03
+    via: page
+    quote: 'license = "GPL-3.0-only"'
+  - field: licenseModel
+    value: "open-source"
+    url: "https://github.com/lldap/lldap/blob/v0.6.3/Cargo.toml"
+    checkedAt: 2026-11-03
+    via: page
+    quote: 'license = "GPL-3.0-only"'
+  - field: currentMajor
+    value: 0
+    url: "https://github.com/lldap/lldap/releases/tag/v0.6.3"
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-04-30"
+    url: "https://github.com/lldap/lldap/releases/tag/v0.6.3"
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 6609
+    url: "https://api.github.com/repos/lldap/lldap"
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 178
+    url: "https://api.github.com/repos/lldap/lldap/contributors"
+    checkedAt: 2026-11-03
+    via: api
+  - field: alternativeTo
+    value: ["kanidm"]
+    url: "https://github.com/lldap/lldap/blob/main/docs/faq.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "modern identity protocols, check out Kanidm."
+  - field: discord
+    value: "https://discord.gg/h5PEdRMNyP"
+    url: "https://github.com/lldap/lldap/blob/main/README.md"
+    checkedAt: 2026-11-03
+    via: page
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, importsFrom, multisite, livePreview, i18n, contentStore, selfHostOption, paidEdition, pricingPage, apiLimits, regions, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, pypiName, runtimeMin, endoflifeId, httpArchiveSites, dependentPackages, dependentRepos, renderingModes, templating, wikidata]
+unreadable: []
+notes: >
+  The project has no website of its own: the GitHub repository is the only project page, so no homepage is recorded. The docs are the install guide in the repository at v0.6.3. The Kubernetes route in the install guide points to a third-party repository (Evantage-WS/lldap-kubernetes), so it is not recorded as an install method. The rust-version in Cargo.toml at v0.6.3 is 1.89.0, a build toolchain requirement stated in no page as a runtime minimum, so runtimeMin is left out. The LICENSE file in the repository is the GPL-3.0 text without a copyright line; the maintainer comes from the authors entry of the workspace Cargo.toml at v0.6.3. The FAQ names @nitnelave as the maintainer and main developer, states that LLDAP is hobbyist software developed by volunteers and that only one maintainer knows the whole codebase; it does not declare the project ended. The FAQ states it provides no commercial support contracts. The README links a Twitter account of the maintainer and a Buy Me A Coffee page; neither is recorded (a personal account and a donation page). The README says LLDAP integrates with many backends, from KeyCloak to Authelia to Nextcloud, and that the goal is not to provide a full LDAP server; and the FAQ compares it with OpenLDAP, FreeIPA and Kanidm; only Kanidm is a record here, and its FAQ section says to check it out when modern identity protocols are needed, so it is the alternativeTo entry. OpenLDAP and FreeIPA are no records. The GitHub contributors count is 178 across all pages. The latest release v0.6.3 is dated 2026-04-30; the oldest GitHub release is v0.2.0 (2021-11-29), so firstRelease is 2021.

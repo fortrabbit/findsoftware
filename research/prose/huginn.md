@@ -1,0 +1,3 @@
+Huginn is a self-hosted Ruby system for building agents that watch the web and incoming events and take automated actions. Agents create and consume events and pass them along a directed graph, and the README describes it as a hackable version of IFTTT or Zapier on your own server. It can receive and send webhooks, and publish feeds and JSON endpoints from the events its agents collect.
+
+Huginn runs as a web process plus a background worker, backed by MySQL or PostgreSQL. The README recommends a Docker Compose setup on your own server for production and also documents a single-container image, a source install on Ubuntu or Debian, and Heroku. Community-maintained packages exist for YunoHost and Unraid.

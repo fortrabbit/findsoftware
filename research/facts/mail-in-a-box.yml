@@ -1,0 +1,136 @@
+id: mail-in-a-box
+name: Mail-in-a-Box
+status: stub
+checkedAt: 2026-11-03
+description: One-click mail server appliance for a single Ubuntu machine, with SMTP, IMAP, webmail, a control panel and an API.
+facts:
+  - field: name
+    value: Mail-in-a-Box
+    url: https://mailinabox.email
+    checkedAt: 2026-11-03
+    via: page
+  - field: homepage
+    value: https://mailinabox.email/
+    url: https://mailinabox.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Take back control of your email with this easy-to-deploy mail server in a box."
+  - field: repository
+    value: https://github.com/mail-in-a-box/mailinabox
+    url: https://github.com/mail-in-a-box/mailinabox
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://mailinabox.email/guide.html
+    url: https://mailinabox.email/guide.html
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Joshua Tauberer
+    url: https://mailinabox.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "began this project in 2013 and is the primary maintainer"
+  - field: maintainerType
+    value: individual
+    url: https://mailinabox.email/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/mail-in-a-box/mailinabox
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://mailinabox.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "began this project in 2013"
+  - field: latestReleaseDate
+    value: "2026-09-26"
+    url: https://github.com/mail-in-a-box/mailinabox/releases/tag/v77
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: CC0-1.0
+    url: https://github.com/mail-in-a-box/mailinabox/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/mail-in-a-box/mailinabox/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/mail-in-a-box/mailinabox
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: setup-script
+    url: https://github.com/mail-in-a-box/mailinabox
+    checkedAt: 2026-11-03
+    via: page
+    quote: "sudo setup/start.sh"
+  - field: runsAs
+    value: [always-on]
+    url: https://mailinabox.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "since the box is serving HTTP anyway"
+  - field: runtime
+    value: [python]
+    url: https://github.com/mail-in-a-box/mailinabox/blob/main/pyproject.toml
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: curl-setup-script
+    url: https://mailinabox.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "curl -s https://mailinabox.email/setup.sh | sudo bash"
+  - field: forum
+    value: https://discourse.mailinabox.email/
+    url: https://mailinabox.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "discussion forum"
+  - field: mastodon
+    value: https://fosstodon.org/@MailInABox
+    url: https://mailinabox.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "@MailInABox@fosstodon.org"
+  - field: x
+    value: https://twitter.com/mailinabox
+    url: https://mailinabox.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "@Mailinabox"
+  - field: adminUi
+    value: yes, web-based control panel
+    url: https://mailinabox.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Mail-in-a-Box includes a web-based control panel"
+  - field: headlessApi
+    value: [rest]
+    url: https://mailinabox.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Control panel functionality can also be accessed over the RESTful HTTP API"
+  - field: githubStargazers
+    value: 15454
+    url: https://api.github.com/repos/mail-in-a-box/mailinabox
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 218
+    url: https://api.github.com/repos/mail-in-a-box/mailinabox/contributors?per_page=1
+    checkedAt: 2026-11-03
+    via: api
+notFound: [pricingPage, hqCountry, sso, userRoles, i18n, livePreview, importsFrom, selfHostOption, templating, multisite, regions, databases, discord, newsletter, bluesky, subreddit, pluginDirectory, runtimeMin, currentMajor, npmName, endoflifeId, basedOn, parent]
+unreadable: []
+notes: >
+  Doubt: the pages read do not show apps or websites submitting mail through the box. The homepage and README describe the box as the mail server for its own users, its control panel API and static website hosting; the guide's only relay sentence is "You may also need to configure relaying for outbound transactional email," which does not say a site or app submits mail to the box. Criterion 1 and the mail-server rule are therefore unsettled; a statement from the project's own pages that websites or apps send mail through the box's SMTP would settle it, and it would then be accepted. Boundary row in the CSV says the same. Coined fields: none. The homepage names iRedMail and Modoboa as more advanced options; neither has a fact file, so no alternativeTo is recorded. It also links a Slack chat room. The release line is v77 (published 2026-09-26); a v78 tag exists without a GitHub release, and the integer release number is a line, not a major, so currentMajor is omitted and v77 is recorded in latestReleaseDate. The LICENSE is CC0 1.0 Universal; the README says the box installs Postfix, Dovecot, Nextcloud, Roundcube and others, which are third-party components and are not records. The README says the install targets Ubuntu 22.04 LTS; that is an operating system, not a runtime, so no runtimeMin.

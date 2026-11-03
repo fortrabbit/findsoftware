@@ -1,0 +1,139 @@
+id: mailcow
+name: mailcow
+status: stub
+checkedAt: 2026-11-03
+description: Open source groupware and e-mail suite based on Docker.
+facts:
+  - field: homepage
+    value: "https://mailcow.email"
+    url: https://mailcow.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The mailserver suite with the"
+  - field: docs
+    value: "https://docs.mailcow.email/"
+    url: https://docs.mailcow.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "open source groupware/e-mail suite based on docker"
+  - field: repository
+    value: "https://github.com/mailcow/mailcow-dockerized"
+    url: https://api.github.com/repos/mailcow/mailcow-dockerized
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/mailcow/mailcow-dockerized
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: "The Infrastructure Company GmbH"
+    url: https://mailcow.email/imprint/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The Infrastructure Company GmbH"
+  - field: maintainerType
+    value: company
+    url: https://mailcow.email/imprint/
+    checkedAt: 2026-11-03
+    via: page
+  - field: hqCountry
+    value: DE
+    url: https://mailcow.email/imprint/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "47877 Willich, Germany"
+  - field: categories
+    value: [email]
+    url: https://docs.mailcow.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "open source groupware/e-mail suite based on docker"
+  - field: installMethod
+    value: [git clone, docker compose]
+    url: https://docs.mailcow.email/getstarted/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "git clone https://github.com/mailcow/mailcow-dockerized"
+  - field: license
+    value: GPL-3.0
+    url: https://api.github.com/repos/mailcow/mailcow-dockerized
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/mailcow/mailcow-dockerized
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-21"
+    url: https://api.github.com/repos/mailcow/mailcow-dockerized/releases/latest
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 13736
+    url: https://api.github.com/repos/mailcow/mailcow-dockerized
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 326
+    url: https://api.github.com/repos/mailcow/mailcow-dockerized/contributors?per_page=1
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2022
+    url: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-01
+    checkedAt: 2026-11-03
+    via: api
+  - field: databases
+    value: [mariadb]
+    url: https://docs.mailcow.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MariaDB Database for storing user information etc."
+  - field: adminUi
+    value: yes, mailcow UI
+    url: https://docs.mailcow.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "the heart of mailcow is the graphical web interface"
+  - field: sso
+    value: OIDC
+    url: https://docs.mailcow.email/manual-guides/mailcow-UI/u_e-mailcow_ui-generic-oidc/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The Client ID assigned to mailcow Client in OIDC provider."
+  - field: sso
+    value: LDAP
+    url: https://docs.mailcow.email/manual-guides/mailcow-UI/u_e-mailcow_ui-ldap/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "An optional LDAP search filter to refine which users can authenticate."
+  - field: userRoles
+    value: yes, domain administrators and mailbox users
+    url: https://docs.mailcow.email/models/model-acl/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Editing a domain administrator or a mailbox user allows to set restrictions to that account."
+  - field: forum
+    value: https://community.mailcow.email
+    url: https://docs.mailcow.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "mailcow Community @ community.mailcow.email"
+  - field: x
+    value: https://twitter.com/mailcow_email
+    url: https://docs.mailcow.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "mailcow @ X/Twitter"
+  - field: mastodon
+    value: https://mailcow.social/@doncow
+    url: https://docs.mailcow.email/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "@doncow @ mailcow.social"
+notFound: [pricingPage, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, usageShare, reportedInstalls, headlessApi, templating, i18n, multisite, livePreview, contentStore, importsFrom, renderingModes, paidEdition, selfHostOption, pluginDirectory, pluginCount, discord, subreddit, bluesky, newsletter, npmName, packagistName, pypiDownloads, dockerPulls, endoflifeId, currentMajor, runsAs, language, runtime]
+unreadable: []
+notes: >
+  Doubt: the boundary wiring test (an SMTP relay an app or website sends to) is not settled. The Unauthenticated Relaying guide (docs.mailcow.email/manual-guides/Postfix/u_e-postfix-unauthenticated-relaying/) says registered hosts or subnets may send mail without authentication and names "monitoring e-mails ... sent from Linux servers in the same network"; it names servers, not apps or websites. What would settle it: a mailcow page stating that websites or applications submit mail through its SMTP server. The docs also describe App Passwords for external mail clients, which are not apps. Stub until a reviewer decides. The README wording "Any part of mailcow itself is released under GNU General Public License, Version 3" is the same license as the GPL-3.0 entry. firstRelease is the oldest GitHub release (2022-01); the tag list starts there. The docs name PHP as the language of most web-based mailcow applications, so no language is recorded for the whole project. The docs list imapsync for migrating or retrieving remote mailboxes; no other software is named as an import source. Calendar release "2026-10" gives no currentMajor. The homepage's Mooctober 2026 post and the GitHub release 2026-10 are the same release. No runsAs is recorded: the docs call it an "e-mail server" in the introduction, which is not a daemon statement. The Docker Hub count is not recorded because the install docs name a git clone and a set of images, not one image. The maintainer is The Infrastructure Company GmbH per the imprint; mailcow is a registered word mark of that company.

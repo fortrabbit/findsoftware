@@ -1,0 +1,5 @@
+Hyperswitch is a payments orchestration platform. Its app server receives payment requests from a merchant's backend and sends each transaction to a payment processor through a connector, with routing rules and retries. A scheduler component packaged with the app runs periodic jobs, and the server keeps its data in PostgreSQL with Redis for caching. The [architecture overview](https://docs.hyperswitch.io/self-hosting/guides-for-self-hosting/architecture-overview) lists the app server, the web SDK, the card vault and the Control Center as the components of a stack. The web and mobile checkout SDKs and the Control Center are separate repositories in the same organization.
+
+## Worth knowing
+
+The [Docker Compose setup](https://docs.hyperswitch.io/self-hosting/want-to-explore/readme-1/unified-local-setup-using-docker.md) and the Helm quick start are described as evaluation setups. The enterprise self-hosting guide describes production self-hosting with Juspay support in three tiers, and a hosted version is run by Juspay as APIs and SDKs.

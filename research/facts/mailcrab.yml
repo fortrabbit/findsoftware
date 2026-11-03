@@ -1,0 +1,130 @@
+id: mailcrab
+name: MailCrab
+status: accepted
+checkedAt: 2026-11-03
+description: Email test server for development that accepts SMTP mail and shows it in a web interface, written in Rust.
+facts:
+  - field: repository
+    value: "https://github.com/tweedegolf/mailcrab"
+    url: https://api.github.com/repos/tweedegolf/mailcrab
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/tweedegolf/mailcrab
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: "tweedegolf"
+    url: https://api.github.com/repos/tweedegolf/mailcrab
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [email-testing, smtp-server]
+    url: https://github.com/tweedegolf/mailcrab/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Email test server for development, written in Rust."
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/tweedegolf/mailcrab
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://github.com/tweedegolf/mailcrab/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Single binary"
+  - field: installMethod
+    value: [docker]
+    url: https://github.com/tweedegolf/mailcrab/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can run MailCrab using docker."
+  - field: installMethod
+    value: [github-release-binary]
+    url: https://github.com/tweedegolf/mailcrab/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "There are also (single) binary builds available"
+  - field: installMethod
+    value: [helm]
+    url: https://github.com/tweedegolf/mailcrab/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "To deploy MailCrab to a Kubernetes cluster, you can use"
+  - field: dockerPulls
+    value: "423649 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/marlonb/mailcrab/
+    checkedAt: 2026-11-03
+    via: api
+  - field: runsAs
+    value: [local]
+    url: https://github.com/tweedegolf/mailcrab/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Email test server for development, written in Rust."
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/tweedegolf/mailcrab/blob/main/flydotio_deployment.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Your SMTP host is your app fly.io domain and the port is 1025"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/tweedegolf/mailcrab
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/tweedegolf/mailcrab
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: "2023"
+    url: https://api.github.com/repos/tweedegolf/mailcrab/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/tweedegolf/mailcrab/releases/tag/v1.9.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-09-17"
+    url: https://hub.docker.com/v2/repositories/marlonb/mailcrab/tags/
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 1002
+    url: https://api.github.com/repos/tweedegolf/mailcrab
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: [docker-compose]
+    url: https://github.com/tweedegolf/mailcrab/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Usage in a `docker-compose.yml` file:"
+  - field: contributors
+    value: 19
+    url: https://api.github.com/repos/tweedegolf/mailcrab/contributors?per_page=1
+    checkedAt: 2026-11-03
+    via: api
+  - field: adminUi
+    value: "yes, a web interface to view and inspect incoming email"
+    url: https://github.com/tweedegolf/mailcrab/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Web interface to view and inspect all incoming email"
+  - field: license
+    value: Apache-2.0 OR MIT
+    url: https://github.com/tweedegolf/mailcrab/blob/v1.9.0/mailcrab/Cargo.toml
+    checkedAt: 2026-11-03
+    via: page
+    quote: "license = \"Apache-2.0 OR MIT\""
+notFound: [homepage, docs, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, usageShare, reportedInstalls, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, databases, importsFrom, renderingModes, paidEdition, selfHostOption, runtimeMin, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, npmName, packagistName, pypiDownloads, endoflifeId]
+unreadable: []
+notes: >
+  No homepage: the repository is the only project site, and the GitHub homepage field is empty, so the record has no homepage link. The maintainer is the GitHub organization tweedegolf, since no page of the repository names a legal entity. The company site tweedegolf.nl (Nijmegen, Netherlands) is not linked from the README, so its address is not recorded as hqCountry. The Cargo.toml of the backend at v1.9.0 sets edition 2024 and no minimum toolchain, so runtimeMin is not recorded. The Docker Hub figure is the image the README names, marlonb/mailcrab. The Helm chart named in the README is the Kubernetes install route. The Apache-2.0 LICENSE file has no copyright line, so the maintainer comes from the organization. The LICENSE file holds the Apache text only and the Cargo manifests declare Apache-2.0 OR MIT. v1.10.0 (2026-09-17) is on crates.io and Docker Hub only; GitHub's newest release is v1.9.0. The crates.io crate mailcrab is the SMTP library core of the same repository (3511 downloads in total on 2026-11-03), not the app, so no crate figure is recorded; the app is installed from the Docker image or a binary build. The README lists a JSON HTTP API (GET /api/messages, GET /api/message/[id], POST /api/delete/[id]) and a websocket; it does not use the word REST, so no headlessApi is recorded. The README says MailCrab is inspired by MailHog and MailCatcher (no alternativeTo: inspiration is no alternative statement); messages stay in memory until restart unless MAILCRAB_RETENTION_PERIOD clears older ones; the web interface shows formatted mail, attachments, headers and raw source. The repository also holds a fly.io deployment guide (flydotio_deployment.md) and a reverse proxy guide (reverse_proxy.md).

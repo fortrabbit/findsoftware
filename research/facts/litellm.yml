@@ -1,0 +1,235 @@
+id: litellm
+name: LiteLLM
+status: accepted
+checkedAt: 2026-11-03
+description: "Open source AI gateway and LLM proxy that puts many model providers behind one OpenAI-compatible API."
+facts:
+  - field: homepage
+    value: "https://www.litellm.ai"
+    url: "https://www.litellm.ai/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "One API for 100+ LLMs, with spend tracking, auth, and guardrails."
+  - field: pricingPage
+    value: "https://www.litellm.ai/pricing"
+    url: "https://www.litellm.ai/pricing"
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: "https://github.com/BerriAI/litellm"
+    url: "https://api.github.com/repos/BerriAI/litellm"
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://docs.litellm.ai/docs/"
+    url: "https://docs.litellm.ai/docs/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The proxy is a self-hosted OpenAI-compatible gateway"
+  - field: maintainer
+    value: "Berri AI"
+    url: "https://github.com/BerriAI/litellm/blob/main/LICENSE"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2023 Berri AI"
+  - field: maintainerType
+    value: "company"
+    url: "https://www.litellm.ai/about"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Berrie AI Incorporated makes LiteLLM."
+  - field: hqCountry
+    value: "US"
+    url: "https://www.litellm.ai/about"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "San Francisco, California, USA"
+  - field: repoOwnerType
+    value: "organization"
+    url: "https://api.github.com/users/BerriAI"
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2023
+    url: "https://www.litellm.ai/about"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "released it as LiteLLM on 27 July 2023"
+  - field: categories
+    value: ["api-gateway"]
+    url: "https://www.litellm.ai/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Open-Source AI Gateway & LLM Proxy"
+  - field: language
+    value: "Python"
+    url: "https://api.github.com/repos/BerriAI/litellm"
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: ["python"]
+    url: "https://github.com/BerriAI/litellm/blob/v1.106.6/pyproject.toml"
+    checkedAt: 2026-11-03
+    via: page
+    quote: 'requires-python = ">=3.10, <3.15"'
+  - field: runtimeMin
+    value: "Python >=3.10, <3.15"
+    url: "https://github.com/BerriAI/litellm/blob/v1.106.6/pyproject.toml"
+    checkedAt: 2026-11-03
+    via: page
+    quote: 'requires-python = ">=3.10, <3.15"'
+  - field: installMethod
+    value: "Docker Compose quickstart with a Postgres container (docker-compose.quickstart.yml)"
+    url: "https://docs.litellm.ai/docs/proxy/docker_quick_start"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker compose -f docker-compose.quickstart.yml up -d"
+  - field: installMethod
+    value: "docker run with the image docker.litellm.ai/berriai/litellm"
+    url: "https://docs.litellm.ai/docs/proxy/docker_quick_start"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker.litellm.ai/berriai/litellm:latest"
+  - field: installMethod
+    value: "install script (scripts/quickstart.sh) run with sh"
+    url: "https://docs.litellm.ai/docs/proxy/docker_quick_start"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "curl -fsSL https://raw.githubusercontent.com/BerriAI/litellm/main/scripts/quickstart.sh | sh"
+  - field: installMethod
+    value: "uv tool install 'litellm[proxy]' for the CLI proxy"
+    url: "https://docs.litellm.ai/docs/proxy/quick_start"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "uv tool install 'litellm[proxy]'"
+  - field: installMethod
+    value: "uv add litellm for the Python SDK"
+    url: "https://docs.litellm.ai/docs/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "uv add litellm"
+  - field: installMethod
+    value: "Helm chart on EKS, GKE or AKS"
+    url: "https://docs.litellm.ai/docs/proxy/deploy"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "deploy with Helm on EKS, GKE, or AKS"
+  - field: docker
+    value: "ghcr.io/berriai/litellm"
+    url: "https://docs.litellm.ai/docs/proxy/deploy"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Use ghcr.io/berriai/litellm for monolithic deployments"
+  - field: runsAs
+    value: ["always-on"]
+    url: "https://docs.litellm.ai/docs/proxy/deploy"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Stateless; run 2+ replicas behind a load balancer"
+  - field: databases
+    value: ["postgresql"]
+    url: "https://docs.litellm.ai/docs/proxy/docker_quick_start"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "a Postgres database that stores your models, keys, and spend logs"
+  - field: adminUi
+    value: "built-in Admin UI"
+    url: "https://docs.litellm.ai/docs/proxy/docker_quick_start"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "send test requests from the built-in Admin UI"
+  - field: sso
+    value: "SSO and SCIM, Enterprise tier only"
+    url: "https://www.litellm.ai/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "An Enterprise tier adds SSO, RBAC, audit logs, SCIM, and dedicated support"
+  - field: userRoles
+    value: "RBAC, Enterprise tier only"
+    url: "https://www.litellm.ai/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "An Enterprise tier adds SSO, RBAC, audit logs, SCIM, and dedicated support"
+  - field: paidEdition
+    value: "Enterprise tier"
+    url: "https://www.litellm.ai/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "An Enterprise tier adds SSO, RBAC, audit logs, SCIM, and dedicated support"
+  - field: license
+    value: "MIT"
+    url: "https://github.com/BerriAI/litellm/blob/v1.106.6/pyproject.toml"
+    checkedAt: 2026-11-03
+    via: page
+    quote: 'license = "MIT"'
+  - field: license
+    value: "BerriAI Enterprise license, for the enterprise/ directory"
+    url: "https://github.com/BerriAI/litellm/blob/main/enterprise/LICENSE.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The BerriAI Enterprise license"
+  - field: licenseModel
+    value: "open-core"
+    url: "https://www.litellm.ai/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "on top of the same open-source core"
+  - field: currentMajor
+    value: 1
+    url: "https://github.com/BerriAI/litellm/releases/tag/v1.106.6"
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-28"
+    url: "https://github.com/BerriAI/litellm/releases/tag/v1.106.6"
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 62612
+    url: "https://api.github.com/repos/BerriAI/litellm"
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 370
+    url: "https://api.github.com/repos/BerriAI/litellm/contributors"
+    checkedAt: 2026-11-03
+    via: api
+  - field: pypiName
+    value: "litellm"
+    url: "https://pypi.org/pypi/litellm/json"
+    checkedAt: 2026-11-03
+    via: api
+  - field: pypiDownloads
+    value: "23076594 (last 7 days, 2026-11-03)"
+    url: "https://pypistats.org/api/packages/litellm/recent"
+    checkedAt: 2026-11-03
+    via: api
+  - field: dependentPackages
+    value: 116
+    url: "https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/litellm"
+    checkedAt: 2026-11-03
+    via: api
+  - field: dependentRepos
+    value: 1
+    url: "https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/litellm"
+    checkedAt: 2026-11-03
+    via: api
+  - field: x
+    value: "https://x.com/litellm"
+    url: "https://www.litellm.ai/"
+    checkedAt: 2026-11-03
+    via: page
+  - field: discord
+    value: "https://discord.com/invite/wuPM9dRgDw"
+    url: "https://www.litellm.ai/"
+    checkedAt: 2026-11-03
+    via: page
+  - field: youtube
+    value: "https://www.youtube.com/@LiteLLMAIGateway"
+    url: "https://www.litellm.ai/"
+    checkedAt: 2026-11-03
+    via: page
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, multisite, livePreview, i18n, apiLimits, regions, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, usageShare, reportedInstalls, npmName, endoflifeId, httpArchiveSites, renderingModes, templating, headlessApi, hostedOffering, selfHostOption, wikidata, dockerPulls]
+unreadable: []
+notes: >
+  The company is named "Berrie AI Incorporated" on the about page footer, the company table and the enterprise license copyright line ("Berrie AI Inc."), and "Berri AI" on the MIT LICENSE copyright line and in the enterprise license; the spelling differs between pages and the reviewer should confirm the legal name. The maintainer follows the MIT LICENSE copyright line, so "Berri AI" is recorded; the about page company table gives "LiteLLM (Berrie AI Incorporated)" and the headquarters "San Francisco, California, USA". The about page calls the company a Y Combinator company (Winter 2023). The repository's license is reported as NOASSERTION by GitHub because of the enterprise/ directory; the MIT statement is in pyproject.toml at v1.106.6 and the enterprise directory has its own license file, LICENSE.md, not enterprise/LICENSE as the top LICENSE file says. The enterprise license statement is recorded as its own entry, as the license is not the MIT one. The Docker Hub repository litellm/litellm exists with a pull count, but the install docs name docker.litellm.ai/berriai/litellm and ghcr.io/berriai/litellm, so no dockerPulls is recorded. A Rust AI Gateway is in beta on the homepage and docs ("LiteLLM Rust AI Gateway"), a separate binary of the same project; the record covers the Python proxy and SDK. The homepage says LiteLLM is "Open source. Self-hosted."; the docs describe Railway and Render as hosts of the same gateway, which are third-party hosts and not hostedOffering. The homepage's LinkedIn link (linkedin.com/company/90867735) is not a mapped social field and is not recorded. The releases list shows v1.106.6 (2026-10-28) as the newest stable release; ecosyste.ms reports 1.107.0, which has no GitHub release or PyPI upload, so it is not used. The contributors count on the about page (1,700+) differs from the GitHub contributor count (370) and is not recorded. The docs call the proxy an OpenAI-compatible gateway (compatibleWith, noted only, not a field). The docs state requirements of Python 3.10 or higher for the proxy; runtimeMin uses the pyproject range.

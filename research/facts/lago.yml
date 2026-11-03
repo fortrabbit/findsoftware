@@ -1,0 +1,205 @@
+id: lago
+name: Lago
+status: accepted
+checkedAt: 2026-11-03
+description: Open-source billing server for metering usage, managing subscriptions and invoicing, which apps call through its API.
+facts:
+  - field: homepage
+    value: https://www.getlago.com
+    url: https://www.getlago.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/getlago/lago
+    url: https://github.com/getlago/lago
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://getlago.com/docs
+    url: https://getlago.com/docs
+    checkedAt: 2026-11-03
+    via: page
+  - field: firstRelease
+    value: 2022
+    url: https://github.com/getlago/lago/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Get Lago Corp.
+    url: https://www.getlago.com/privacy
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Name: Get Lago Corp."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/getlago
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [billing, usage-based]
+    url: https://github.com/getlago/lago
+    checkedAt: 2026-11-03
+    via: api
+    quote: "Open Source Metering and Usage Based Billing API"
+  - field: language
+    value: Go
+    url: https://github.com/getlago/lago
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: AGPL-3.0
+    url: https://getlago.com/docs/guide/lago-self-hosted/overview
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Open source AGPL-3.0"
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/getlago/lago
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: Commercial
+    url: https://getlago.com/docs/guide/lago-self-hosted/overview
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Premium | Commercial"
+  - field: paidEdition
+    value: premium edition, with features and support that differ from the open source edition
+    url: https://getlago.com/docs/guide/lago-self-hosted/overview
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Features and support differ by edition"
+  - field: currentMajor
+    value: 1
+    url: https://github.com/getlago/lago/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-02
+    url: https://github.com/getlago/lago/releases/tag/v1.56.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 10752
+    url: https://github.com/getlago/lago
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 49
+    url: https://github.com/getlago/lago
+    checkedAt: 2026-11-03
+    via: api
+  - field: databases
+    value: postgresql
+    url: https://getlago.com/docs/guide/lago-self-hosted/docker
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Postgres database engine used to store application data"
+  - field: databases
+    value: redis
+    url: https://getlago.com/docs/guide/lago-self-hosted/docker
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Redis database engine used as a queuing system for asynchronous tasks"
+  - field: databases
+    value: clickhouse
+    url: https://getlago.com/docs/guide/lago-self-hosted/docker
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Set it to clickhouse (with LAGO_CLICKHOUSE_ENABLED set) to create every new organization on the ClickHouse event store."
+  - field: contentStore
+    value: database
+    url: https://getlago.com/docs/guide/lago-self-hosted/docker
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Postgres database engine used to store application data"
+  - field: installMethod
+    value: docker
+    url: https://getlago.com/docs/guide/lago-self-hosted/overview
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Install Lago on your infrastructure with Docker Compose for easy deployment."
+  - field: installMethod
+    value: helm
+    url: https://getlago.com/docs/guide/lago-self-hosted/overview
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Use the official Helm charts to deploy Lago on Kubernetes, scaling each component independently."
+  - field: dockerPulls
+    value: "28091 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/getlago/lago/
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://getlago.com/docs/guide/lago-self-hosted/kubernetes
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The Rails API"
+  - field: runsAs
+    value: [always-on]
+    url: https://getlago.com/docs/guide/lago-self-hosted/kubernetes
+    checkedAt: 2026-11-03
+    via: page
+    quote: "the chart creates four Deployments and a migration Job"
+  - field: adminUi
+    value: "yes, a web interface (the front-end application)"
+    url: https://getlago.com/docs/guide/lago-self-hosted/kubernetes
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The web interface"
+  - field: headlessApi
+    value: rest
+    url: https://getlago.com/docs/llms.txt
+    checkedAt: 2026-11-03
+    via: page
+    quote: "integrate the REST API"
+  - field: userRoles
+    value: "yes, three system roles; custom roles are a premium add-on"
+    url: https://getlago.com/docs/guide/security/rbac
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Lago provides three primary system roles"
+  - field: pricingPage
+    value: https://getlago.com/pricing
+    url: https://getlago.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: alternativeTo
+    value: [chargebee]
+    url: https://getlago.com/blog/lago-vs-chargebee
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Lago vs Chargebee for SaaS and AI Usage Billing"
+  - field: alternativeTo
+    value: [orb]
+    url: https://getlago.com/blog/lago-vs-orb
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Lago vs Orb: Usage-Based Billing for AI and SaaS"
+  - field: alternativeTo
+    value: [stripe]
+    url: https://getlago.com/blog/lago-vs-stripe
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Lago vs Stripe Billing: Feature Comparison, Pricing, and Open-Source Advantages"
+  - field: hostedOffering
+    value: Lago Cloud
+    url: https://getlago.com/docs/guide/lago-self-hosted/overview
+    checkedAt: 2026-11-03
+    via: page
+    quote: "To skip operating the stack, use Lago Cloud"
+  - field: x
+    value: https://x.com/getlago
+    url: https://getlago.com/docs
+    checkedAt: 2026-11-03
+    via: page
+  - field: linkedin
+    value: https://www.linkedin.com/company/getlago
+    url: https://getlago.com/docs
+    checkedAt: 2026-11-03
+    via: page
+notFound: [hqCountry, runtimeMin, basedOn, parent, forkOf, successorOf, importsFrom, sso, i18n, livePreview, multisite, templating, sdkLanguages, selfHostOption, endoflifeId, npmName, npmWeeklyDownloads, pluginDirectory, pluginCount, discord, forum, subreddit, mastodon, bluesky, newsletter, wikidata]
+unreadable: []
+notes: >
+  Drafted 2026-11-03 from the homepage, the self-hosting overview, Docker and Kubernetes pages, the API introduction, the privacy policy and GitHub. The overview's editions table gives the open source edition as AGPL-3.0 and the premium edition as Commercial, and both are recorded as license statements. The privacy policy names "Get Lago Corp." with a Dover, Delaware seat, which is the incorporation seat, so no hqCountry is recorded. A TechCrunch article calls Lago Paris-based; it is a third-party article and is not used. The docs index names the REST API, recorded as headlessApi; the API introduction also says "Integrate Lago with the JSON HTTP API, or with one of the Lago client libraries". The client library lago-javascript-client (28.2 thousand weekly downloads in the candidates row) is a client, not the server, so no npmName is recorded. The Docker page names the front application, the API, its workers, the clock worker, Postgres, Redis (a Sidekiq job queue and a cache) and a PDF service. The Docker Hub figure is for getlago/lago, the image the Docker page names. The Kubernetes page calls lago-api "The Rails API" and the Docker page names a Sidekiq queue, so the runtime is Ruby; the repository's GitHub language is Go. The Docker page's optional ClickHouse event store is recorded as a database; Postgres holds the application data.

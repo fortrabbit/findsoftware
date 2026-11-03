@@ -1,0 +1,109 @@
+id: highlight
+name: Highlight
+status: stub
+checkedAt: 2026-11-03
+description: Open-source full-stack monitoring platform for error monitoring, session replay and logs, offered as a hosted service and as a Docker self-hosted install.
+facts:
+  - field: status
+    value: stub
+    url: https://www.highlight.io/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/highlight/highlight
+    url: https://github.com/highlight/highlight
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/highlight/highlight
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Highlight Inc.
+    url: https://github.com/highlight/highlight/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2020-2023 Highlight Inc."
+  - field: license
+    value: Apache-2.0, for content outside the highlight.io/ and enterprise/ directories
+    url: https://github.com/highlight/highlight/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Content outside of the above mentioned directories or restrictions above is available under the \"Apache\" license"
+  - field: license
+    value: Highlight Enterprise License, for the enterprise/ directory
+    url: https://github.com/highlight/highlight/blob/main/enterprise/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "may only be used in production, if you (and any entity that you represent) have agreed to"
+  - field: licenseModel
+    value: open-core
+    url: https://github.com/highlight/highlight/blob/main/enterprise/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "may only be used in production, if you (and any entity that you represent) have agreed to"
+  - field: categories
+    value: [observability]
+    url: https://github.com/highlight/highlight/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The open-source, fullstack monitoring platform."
+  - field: language
+    value: [TypeScript, Go]
+    url: https://api.github.com/repos/highlight/highlight/languages
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: docker, hobby self-hosted script
+    url: https://github.com/highlight/highlight/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Deploy a hobby instance in one line on Linux with Docker"
+  - field: hostedOffering
+    value: highlight.io hosted app at app.highlight.io
+    url: https://github.com/highlight/highlight/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Hosted highlight.io (free to get started!)"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/highlight/highlight/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2025-08-08
+    url: https://github.com/highlight/highlight/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: "2022"
+    url: https://github.com/highlight/highlight/tags
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 9385
+    url: https://api.github.com/repos/highlight/highlight
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 79
+    url: https://api.github.com/repos/highlight/highlight/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: parent
+    value: LaunchDarkly
+    url: https://launchdarkly.com/blog/welcome-highlight-to-launchdarkly/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This acquisition isn’t just about adding another tool to the stack."
+  - field: paidEdition
+    value: Self-hosted Enterprise (RBAC, SSO, HA deploy and integrations the hobby deployment lacks)
+    url: https://github.com/highlight/highlight/blob/main/docs-content/general/4_company/open-source/hosting/3_self-host-enterprise.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "User Management Support (RBAC, SSO, SSL, etc..)"
+notFound: [homepage, docs, hqCountry, basedOn, forkOf, successorOf, alternativeTo, renderingModes, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, contentStore, databases, runtime, runsAs, runtimeMin, endoflifeId, npmName, dockerPulls, pricingPage, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, apiLimits, regions, selfHostOption]
+unreadable: [https://www.highlight.io/ (308 redirect to https://launchdarkly.com/), https://www.highlight.io/docs (same redirect)]
+notes: >
+  Stub: the project's own homepage https://www.highlight.io/ answers with a 308 redirect to launchdarkly.com and highlight.io/docs redirects the same way (checked 2026-11-03), so the site the project names no longer shows the software. A live project homepage, or an end statement from the project or LaunchDarkly (which would make it discontinued), would settle it. LaunchDarkly's April 2025 post says Highlight is joining the LaunchDarkly team and that the open source community will be supported; it names no end. The repository is not archived, its last push is 2026-10-23, and its newest stable release is docker-v0.5.6 of 2025-08-08; the README (default branch) still gives the Docker install steps (cd docker && ./run-hobby.sh) and names app.highlight.io as the hosted sign-up, which answered 200 with the application shell when checked. The README says the hosted app is free to get started. The README's hobby install says the app is reachable on localhost and names no process model, so no runsAs is recorded. The enterprise/ and highlight.io/ directories carry their own licenses; the enterprise license restricts production use to a subscription. The repository has 57 releases. The oldest tag, v4.3.9 (an SDK version tag, commit of 2022-08-31), sets firstRelease; the oldest GitHub release is docker-v0.1.0 of 2023-04-20. The npm package highlight.run (64.2k downloads a week in the candidates row) is the client SDK, so no npm figure is recorded. The highlight.io docs redirect; their source in the repository's docs-content/ directory was read for the hosting pages.
