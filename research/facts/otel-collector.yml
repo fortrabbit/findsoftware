@@ -1,0 +1,134 @@
+id: otel-collector
+name: OpenTelemetry Collector
+status: accepted
+checkedAt: 2026-11-03
+description: Vendor-neutral server, written in Go, that receives, processes and exports traces, metrics and logs telemetry data.
+facts:
+  - field: name
+    value: OpenTelemetry Collector
+    url: https://github.com/open-telemetry/opentelemetry-collector/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+  - field: homepage
+    value: https://opentelemetry.io
+    url: https://opentelemetry.io
+    checkedAt: 2026-11-03
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/opentelemetry.io
+    url: https://opentelemetry.io
+    checkedAt: 2026-11-03
+    via: page
+  - field: mastodon
+    value: https://fosstodon.org/@opentelemetry
+    url: https://opentelemetry.io
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/open-telemetry/opentelemetry-collector
+    url: https://github.com/open-telemetry/opentelemetry-collector
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://opentelemetry.io/docs/collector/
+    url: https://opentelemetry.io/docs/collector/
+    checkedAt: 2026-11-03
+    via: page
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/open-telemetry/opentelemetry-collector
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Go
+    url: https://github.com/open-telemetry/opentelemetry-collector
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://opentelemetry.io/docs/collector/install/binary/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "by downloading and running a prebuilt binary"
+  - field: installMethod
+    value: build from source
+    url: https://opentelemetry.io/docs/collector/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can build the latest version of the Collector based on the local operating system"
+  - field: installMethod
+    value: docker
+    url: https://opentelemetry.io/docs/collector/install/docker/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The following commands pull a Docker image and run the Collector in a container."
+  - field: installMethod
+    value: kubernetes
+    url: https://opentelemetry.io/docs/collector/install/kubernetes/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Use the following command to install the OpenTelemetry Collector as a DaemonSet"
+  - field: installMethod
+    value: binary download
+    url: https://opentelemetry.io/docs/collector/install/binary/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "by downloading and running a prebuilt binary"
+  - field: docker
+    value: otel/opentelemetry-collector
+    url: https://opentelemetry.io/docs/collector/install/docker/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker pull otel/opentelemetry-collector"
+  - field: dockerPulls
+    value: "52350885 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/otel/opentelemetry-collector/
+    checkedAt: 2026-11-03
+    via: api
+  - field: protocols
+    value: [otlp]
+    url: https://github.com/open-telemetry/opentelemetry-collector/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This code base is currently built against using OTLP protocol v1.10.0"
+  - field: runsAs
+    value: [always-on]
+    url: https://opentelemetry.io/docs/collector/deployment/gateway/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Collector instances running as a standalone service"
+  - field: latestReleaseDate
+    value: 2026-10-26
+    url: https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.164.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2019
+    url: https://github.com/open-telemetry/opentelemetry-collector/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 7728
+    url: https://github.com/open-telemetry/opentelemetry-collector
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 408
+    url: https://api.github.com/repos/open-telemetry/opentelemetry-collector/contributors?per_page=1
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/open-telemetry
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: OpenTelemetry Authors
+    url: https://opentelemetry.io/docs/collector/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "OpenTelemetry Authors"
+notFound: [currentMajor, basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, hqCountry, paidEdition, paidEditions, freeTier, pricingPage, endoflifeId, runtimeMin, wikidata, eolPolicy, pluginDirectory, pluginCount, forum, discord, subreddit, newsletter, x, npmName, npmWeeklyDownloads, packagistName, usageShare, reportedInstalls, adminUi, databases, headlessApi, i18n, templating, multisite, livePreview, userRoles, sso, renderingModes, contentStore, regions, apiLimits, selfHostOption, hostedOffering]
+unreadable: []
+notes: >
+  The newest release is v0.164.0 (2026-10-26), titled v1.70.0/v0.164.0 because the stable modules and the collector distribution version separately, so no single major applies and currentMajor is not recorded. The oldest tag v0.0.1 is a prerelease dated 2019-08-08, so firstRelease is 2019. The repository holds the core library and the otelcorecol build target; the Docker image otel/opentelemetry-collector is described on Docker Hub as the core distribution, and the docs name the opentelemetry-collector-releases repository for the ghcr.io images. The install guide gives five routes: build from source (git clone, make otelcorecol), Docker, Kubernetes, prebuilt binary, and the Linux, macOS and Windows binary pages. The Kubernetes page gives a sample manifest that starts the Collector as a DaemonSet with a gateway instance, and names the OpenTelemetry Helm charts and the Operator for production use. The project describes itself as a CNCF project on https://opentelemetry.io/about/; the CNCF is the foundation and is not recorded as parent. The Collector receives telemetry from applications instrumented with OpenTelemetry SDKs over OTLP, which is the wiring the criterion asks for. The gateway deployment page describes Collector instances "running as a standalone service" and the agent deployment page a Collector that "runs alongside the application or on the same host". The repository LICENSE file names no copyright holder; the maintainer is the name the docs footer gives. The Go requirement in the README applies to library use, not to the binary, so runtimeMin is not recorded. The contributors count is the last page number of the contributors endpoint with per_page=1. The open-telemetry GitHub profile names itself OpenTelemetry - CNCF; the owner type is organization. The community page lists Slack channels, mailing lists and a Stack Overflow tag; none has a field here.

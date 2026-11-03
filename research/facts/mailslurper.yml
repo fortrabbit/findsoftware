@@ -1,0 +1,116 @@
+id: mailslurper
+name: MailSlurper
+status: accepted
+checkedAt: 2026-11-03
+description: Small SMTP mail server that captures test email into a database and shows it in a web interface.
+facts:
+  - field: repository
+    value: "https://github.com/mailslurper/mailslurper"
+    url: https://api.github.com/repos/mailslurper/mailslurper
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/mailslurper/mailslurper
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: "Adam Presley"
+    url: https://github.com/mailslurper/mailslurper/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2013-2018 Adam Presley"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/mailslurper/mailslurper/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2013-2018 Adam Presley"
+  - field: categories
+    value: [email-testing, smtp-server]
+    url: https://github.com/mailslurper/mailslurper/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MailSlurper is a small SMTP mail server"
+  - field: language
+    value: Go
+    url: https://github.com/mailslurper/mailslurper/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Go 1.10 (or higher)"
+  - field: installMethod
+    value: [docker]
+    url: https://github.com/mailslurper/mailslurper/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker run -it --rm --name mailslurper"
+  - field: installMethod
+    value: [source-build]
+    url: https://github.com/mailslurper/mailslurper/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The following are general instructions for compiling MailSlurper"
+  - field: docker
+    value: "ghcr.io/mailslurper/mailslurper"
+    url: https://github.com/mailslurper/mailslurper/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "ghcr.io/mailslurper/mailslurper"
+  - field: license
+    value: MIT
+    url: https://github.com/mailslurper/mailslurper/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/mailslurper/mailslurper
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/mailslurper/mailslurper/releases/tag/release-1.15.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2023-08-03"
+    url: https://github.com/mailslurper/mailslurper/releases/tag/release-1.15.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://github.com/mailslurper/mailslurper/releases/tag/release-1.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 1511
+    url: https://api.github.com/repos/mailslurper/mailslurper
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 16
+    url: https://api.github.com/repos/mailslurper/mailslurper
+    checkedAt: 2026-11-03
+    via: api
+  - field: runsAs
+    value: [local]
+    url: https://api.github.com/repos/mailslurper/mailslurper
+    checkedAt: 2026-11-03
+    via: api
+    quote: "Local, web-based mail server application."
+  - field: databases
+    value: [sqlite, mysql, mssql]
+    url: https://github.com/mailslurper/mailslurper/blob/master/pkg/mailslurper/StorageType.go
+    checkedAt: 2026-11-03
+    via: api
+    quote: "defines types of database engines MailSlurper supports"
+  - field: adminUi
+    value: "yes, a web-based interface"
+    url: https://api.github.com/repos/mailslurper/mailslurper
+    checkedAt: 2026-11-03
+    via: api
+    quote: "Local, web-based mail server application."
+notFound: [homepage, docs, parent, forkOf, successorOf, basedOn, hqCountry, wikidata, runtimeMin, alternativeTo, importsFrom, multisite, livePreview, headlessApi, contentStore, paidEdition, apiLimits, i18n, templating, renderingModes, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, endoflifeId, userRoles, sso, selfHostOption, regions, runtime]
+unreadable: []
+notes: >
+  Repository only: no project site is named by the README or the repository, and https://mailslurper.com/ answers 404 and https://mailslurper.github.io/ answers 404, so homepage is not recorded. The GitHub repository reports JavaScript as its primary language because of the bundled web interface; the Go module (go.mod, go 1.13) and the README's Go build steps make it a Go program, so language is recorded as Go. The README says "MailSlurper is perfect for individual developers or small teams writing mail-enabled applications that wish to test email functionality"; the wiring statement is "configure your code and/or application server to send mail through the address where MailSlurper is running". The runsAs value rests on the repository description, which says "Local, web-based mail server application."; the reviewer decides whether that is enough for local. The database engines come from the source file pkg/mailslurper/StorageType.go and the default config.json names "dbEngine": "SQLite". Release history: the last tagged release is release-1.15.0 (2023-08-03); the repository was last pushed 2025-12-05. A README with a MIT notice dated 2013-2018 is the license statement. The Docker image is published to GitHub Container Registry, not Docker Hub, so no Docker Hub pull figure is recorded.

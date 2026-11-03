@@ -1,0 +1,203 @@
+id: ntfy
+name: ntfy
+status: accepted
+checkedAt: 2026-11-03
+description: "Self-hostable HTTP publish-subscribe server that delivers published messages as push notifications to phones, desktops and browsers."
+facts:
+  - field: homepage
+    value: https://ntfy.sh
+    url: https://ntfy.sh
+    checkedAt: 2026-11-03
+    via: page
+    quote: "ntfy (pronounced notify ) is a simple HTTP-based pub-sub notification service"
+  - field: repository
+    value: https://github.com/binwiederhier/ntfy
+    url: https://github.com/binwiederhier/ntfy
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://docs.ntfy.sh/
+    url: https://docs.ntfy.sh/
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Philipp C. Heckel
+    url: https://docs.ntfy.sh/contact/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This service is run by Philipp C. Heckel ."
+  - field: maintainerType
+    value: individual
+    url: https://api.github.com/users/binwiederhier
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/binwiederhier
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2021
+    url: https://github.com/binwiederhier/ntfy/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [realtime]
+    url: https://ntfy.sh
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Send push notifications from your app or script"
+  - field: language
+    value: Go
+    url: https://github.com/binwiederhier/ntfy
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://docs.ntfy.sh/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The ntfy server comes as a statically linked binary and is shipped as tarball, deb/rpm packages and as a Docker image."
+  - field: installMethod
+    value: binary-download
+    url: https://docs.ntfy.sh/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The ntfy server comes as a statically linked binary"
+  - field: installMethod
+    value: apt
+    url: https://docs.ntfy.sh/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "sudo apt install ntfy"
+  - field: installMethod
+    value: rpm
+    url: https://docs.ntfy.sh/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "sudo rpm -ivh"
+  - field: installMethod
+    value: homebrew (CLI only)
+    url: https://docs.ntfy.sh/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "To install the ntfy CLI ( ntfy publish and ntfy subscribe only) via Homebrew"
+  - field: installMethod
+    value: docker
+    url: https://docs.ntfy.sh/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker run -p 80:80 -it binwiederhier/ntfy serve"
+  - field: installMethod
+    value: kubernetes
+    url: https://docs.ntfy.sh/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The setup for Kubernetes is very similar to that for Docker"
+  - field: docker
+    value: binwiederhier/ntfy
+    url: https://docs.ntfy.sh/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker run -p 80:80 -it binwiederhier/ntfy serve"
+  - field: dockerPulls
+    value: "28601104 (2026-11-03)"
+    url: https://hub.docker.com/r/binwiederhier/ntfy
+    checkedAt: 2026-11-03
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.ntfy.sh/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "If you want to install ntfy server permanently as a service"
+  - field: databases
+    value: [sqlite, postgresql]
+    url: https://docs.ntfy.sh/config/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can choose between SQLite and PostgreSQL as the database backend."
+  - field: templating
+    value: [Go templates]
+    url: https://docs.ntfy.sh/publish/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "using Go templates"
+  - field: protocols
+    value: [HTTP, WebSocket]
+    url: https://docs.ntfy.sh/subscribe/api/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can consume the subscription API as either a simple HTTP stream"
+  - field: userRoles
+    value: "user and admin roles"
+    url: https://docs.ntfy.sh/config/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "implements two roles ( user and admin )"
+  - field: hostedOffering
+    value: "ntfy.sh, a public server of the same software with paid plans"
+    url: https://ntfy.sh
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Try ntfy for free without sign-up, or check out our paid plans."
+  - field: selfHostOption
+    value: "the ntfy server, as a binary, package or Docker image"
+    url: https://ntfy.sh
+    checkedAt: 2026-11-03
+    via: page
+    quote: "since it's open source, you can always self-host it"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/binwiederhier/ntfy
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: GPL-2.0
+    url: https://ntfy.sh
+    checkedAt: 2026-11-03
+    via: page
+    quote: "dual-licensed under the Apache 2.0 and GPLv2 license"
+  - field: licenseModel
+    value: open-source
+    url: https://ntfy.sh
+    checkedAt: 2026-11-03
+    via: page
+    quote: "100% free software"
+  - field: currentMajor
+    value: 2
+    url: https://github.com/binwiederhier/ntfy/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-02
+    url: https://github.com/binwiederhier/ntfy/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 35257
+    url: https://github.com/binwiederhier/ntfy
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 385
+    url: https://github.com/binwiederhier/ntfy
+    checkedAt: 2026-11-03
+    via: api
+  - field: discord
+    value: https://discord.gg/cT7ECsZj9w
+    url: https://ntfy.sh
+    checkedAt: 2026-11-03
+    via: page
+    quote: "in our chats on Discord/Matrix"
+notFound: [adminUi, sso, i18n, multisite, livePreview, pricingPage, paidEdition, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, contentStore, headlessApi, runtimeMin, renderingModes, endoflifeId, latestPrereleaseDate, lastCommitDate]
+unreadable: [https://ntfy.sh/pricing, https://ntfy.sh/tos, https://ntfy.sh/privacy]
+notes: >
+  Boundary decision: accepted. The project's own pages document apps and scripts sending through its HTTP API: the homepage says "Publishing messages is just a HTTP request, so pretty much everything under the sun can integrate with ntfy", and the publish page says "Publishing messages can be done via HTTP PUT/POST or via the ntfy CLI". The install page describes running the server as a permanent service. A reviewer should confirm this reading, since the record is an end-user push server with an API.
+  Maintainer: the contact page says "This service is run by Philipp C. Heckel." The homepage footer reads "Made with heart by Philipp Heckel © 2026 ntfy LLC. All rights reserved.", so ntfy LLC is a second legal entity named by the project and is not recorded as maintainer; no page gives its country, so hqCountry is unknown. The LICENSE file in the repository carries no copyright line.
+  License: the repository's LICENSE is the Apache 2.0 text and the repository also ships LICENSE.GPLv2; the homepage states the dual license, recorded as two license entries. The GitHub API reports Apache-2.0 only.
+  Hosted plans: the public server ntfy.sh offers a free tier without sign-up and Supporter, Pro and Business plans on the homepage; the homepage pricing section is the only readable source, because ntfy.sh/pricing returns a page that requires JavaScript. Plan prices and limits are not recorded. Plans are hosted tiers, so no paidEdition is recorded. The homepage also says "If you use ntfy without sign-up, the topic is essentially a password, so pick something that's not easily guessable."
+  Coined fields, to notes only: webhooks ("Webhooks (publish via GET)" on the publish page), apiStyles (HTTP PUT or POST, JSON, SSE, raw and WebSocket subscriptions), sdkLanguages (the publish page shows code samples in curl, CLI, HTTP, JavaScript, Go, PowerShell, Python and PHP; these are samples, not published SDK packages), deployShape (single binary, Docker, Kubernetes, Helm chart from a third party named HelmForge, which the project says it does not maintain), freeTier (see above), e-mail notifications and phone calls (both on the publish page; the homepage counts daily e-mails and phone calls per plan).
+  Clients: the homepage lists Google Play, F-Droid and the Apple Store for the mobile app, and a web app for subscribing in a browser.
+  Community: the Matrix space is at matrix.to/#/#ntfy-space:matrix.org (contact page) and GitHub Issues is the bug tracker; neither has a field.
+  Adoption: GitHub stars and the Docker Hub pull count are recorded with their dates; the homepage shows a different star count, which is not recorded.

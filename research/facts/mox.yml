@@ -1,0 +1,138 @@
+id: mox
+name: Mox
+status: accepted
+checkedAt: 2026-11-03
+description: "Full-featured mail server for sending and receiving email, with IMAP, SMTP, webmail and an HTTP/JSON webapi."
+facts:
+  - field: homepage
+    value: https://www.xmox.nl
+    url: https://www.xmox.nl
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/mjl-/mox
+    url: https://github.com/mjl-/mox
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://www.xmox.nl/install/
+    url: https://www.xmox.nl/install/
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Mechiel Lukkien
+    url: https://github.com/mjl-/mox/blob/main/LICENSE.MIT
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright 2021 Mechiel Lukkien"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/mjl-/mox/blob/main/LICENSE.MIT
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright 2021 Mechiel Lukkien"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/mjl-
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Go
+    url: https://github.com/mjl-/mox
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [smtp-server, transactional-email]
+    url: https://www.xmox.nl
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Complete email solution"
+  - field: runtime
+    value: go binary
+    url: https://www.xmox.nl/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Download a mox binary from"
+  - field: runsAs
+    value: [always-on]
+    url: https://www.xmox.nl/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "including running it as a service on Linux"
+  - field: installMethod
+    value: [binary download]
+    url: https://www.xmox.nl/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Download a mox binary from"
+  - field: installMethod
+    value: [go install]
+    url: https://www.xmox.nl/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "compile it to binary"
+  - field: installMethod
+    value: [docker]
+    url: https://www.xmox.nl/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "run mox with docker image r.xmox.nl/mox"
+  - field: adminUi
+    value: "admin web interface and webmail"
+    url: https://www.xmox.nl/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "access the admin web interface on internal IPs"
+  - field: contentStore
+    value: flat-file
+    url: https://www.xmox.nl/faq/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Messages are currently stored as individual files in standard Internet Message Format (IMF)"
+  - field: license
+    value: MIT
+    url: https://www.xmox.nl
+    checkedAt: 2026-11-03
+    via: page
+    quote: "source code is MIT-licensed"
+  - field: license
+    value: MPL-2.0
+    url: https://github.com/mjl-/mox/blob/main/LICENSE.MPLv2.0
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Mozilla Public License Version 2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://www.xmox.nl
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Mox is an open source project"
+  - field: githubStargazers
+    value: 5928
+    url: https://github.com/mjl-/mox
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 26
+    url: https://github.com/mjl-/mox
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://github.com/mjl-/mox/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-19
+    url: https://github.com/mjl-/mox/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2023
+    url: https://github.com/mjl-/mox/releases
+    checkedAt: 2026-11-03
+    via: api
+notFound: [pricingPage, hostedOffering, hqCountry, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, newsletter, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, pypiDownloads, dockerPulls, usageShare, reportedInstalls, endoflifeId, runtimeMin, basedOn, parent, forkOf, successorOf, alternativeTo, sso, userRoles, templating, i18n, multisite, livePreview, importsFrom, renderingModes, databases, paidEdition, wikidata]
+unreadable: []
+notes: >
+  The homepage link names the sources as MIT-licensed, and the repository holds two license files: LICENSE.MIT (copyright Mechiel Lukkien) and LICENSE.MPLv2.0. The README says mox is available under the MIT license and includes BSD-3-Clause code from the Go Authors and the Public Suffix List by Mozilla under the Mozilla Public License 2.0, so the MPL-2.0 file covers that bundled list; both statements are recorded as separate entries. The FAQ names #mox on irc.oftc.net, #mox:matrix.org and the Gopher Slack for discussion (chat, no forum or discord field). The maintainer is the copyright holder in LICENSE.MIT; the contact email in that line is not recorded. The GitHub profile lists a location, but no project page names the country, so hqCountry is absent. Acceptance: the project's own FAQ says apps can send transactional mail through the webapi ("The mox webapi can be used to send outgoing messages that mox composes") and SMTP submission is a documented service, so the mail server is accepted under the wave 46 rule. Coined or unrecorded kinds: protocols (IMAP4, SMTP, SPF, DKIM, DMARC, MTA-STS, DANE, DNSSEC, ACME), the webapi and webhooks (features page, webapi API documentation on pkg.go.dev), webmail, and junk filtering. The Go toolchain requirement on the install page (go 1.23 or later for compiling) is a build requirement for the source route, so runtimeMin is absent. The Docker image is on r.xmox.nl, not Docker Hub, so no dockerPulls. The install page calls the Docker route "not recommended". The bbolt index database is an embedded store and is not recorded as databases. The version line is 0.0 (currentMajor 0 by the rule for 0.x releases).

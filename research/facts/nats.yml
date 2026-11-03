@@ -1,0 +1,145 @@
+id: nats
+name: NATS
+status: accepted
+checkedAt: 2026-11-03
+description: "Messaging server that routes messages between applications and services by subject, with optional persistence through JetStream."
+facts:
+  - field: homepage
+    value: https://nats.io
+    url: https://nats.io
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/nats-io/nats-server
+    url: https://github.com/nats-io/nats-server
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://docs.nats.io
+    url: https://docs.nats.io
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: NATS Authors
+    url: https://nats.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright © NATS Authors"
+  - field: maintainerType
+    value: community
+    url: https://nats.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright © NATS Authors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/nats-io
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Go
+    url: https://github.com/nats-io/nats-server
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [realtime-server]
+    url: https://nats.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "NATS unifies messaging, streaming, and state into one real-time system"
+  - field: runtime
+    value: go binary
+    url: https://docs.nats.io/concepts/what-is-nats
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The server is one binary"
+  - field: installMethod
+    value: [docker]
+    url: https://docs.nats.io/concepts/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker run -p 4222:4222 -p 8222:8222 nats:latest"
+  - field: installMethod
+    value: [homebrew]
+    url: https://docs.nats.io/concepts/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "brew install nats-server"
+  - field: installMethod
+    value: [install script]
+    url: https://docs.nats.io/concepts/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "curl -sf https://binaries.nats.dev/nats-io/nats-server/v2@latest | sh"
+  - field: installMethod
+    value: [binary download]
+    url: https://docs.nats.io/concepts/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Download the latest release from GitHub Releases"
+  - field: dockerPulls
+    value: "260586345 (2026-11-03)"
+    url: https://hub.docker.com/_/nats
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/nats-io/nats-server
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://nats.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "NATS is a high-performance, lightweight, open-source messaging system"
+  - field: x
+    value: https://x.com/nats_io
+    url: https://nats.io
+    checkedAt: 2026-11-03
+    via: page
+  - field: githubStargazers
+    value: 20990
+    url: https://github.com/nats-io/nats-server
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 227
+    url: https://github.com/nats-io/nats-server
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://github.com/nats-io/nats-server/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-26
+    url: https://github.com/nats-io/nats-server/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-11-02
+    url: https://github.com/nats-io/nats-server/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://github.com/nats-io/nats-server/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.nats.io/concepts/what-is-nats
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Applications connect to a NATS server and exchange messages by subject"
+  - field: youtube
+    value: https://www.youtube.com/@nats_io
+    url: https://nats.io
+    checkedAt: 2026-11-03
+    via: page
+notFound: [pricingPage, hostedOffering, hqCountry, runtimeMin, endoflifeId, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, pypiDownloads, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, newsletter, usageShare, reportedInstalls, basedOn, parent, forkOf, successorOf, alternativeTo, adminUi, sso, userRoles, templating, i18n, multisite, livePreview, importsFrom, renderingModes, databases, contentStore, paidEdition, wikidata]
+unreadable: []
+notes: >
+  Acceptance: apps wire in through the client libraries (the getting-started page installs them with "npm install nats" and "go get github.com/nats-io/nats.go"), and the concepts page states that "Applications connect to a NATS server and exchange messages by subject", so the server meets the wiring rule; the CSV labels jobs and message-broker are not recorded as categories. The categories field records realtime-server alone: message-broker maps to database in the import (scripts/import-facts.mjs), and no page read calls the server a job runner, so jobs is not recorded; reviewer decides whether to add either. The maintainer is "NATS Authors" as the homepage copyright line states it; the Cloud Native Computing Foundation membership the homepage and README state is hosting and goes here, not into the maintainer field. The Synadia-published nightly images are not an official release and no install route names them. The server's Docker route names the official image "nats", which is the Docker Hub library image, so dockerPulls counts that one. The nats-server release tags list v2.14.x and v2.15.x as stable lines; currentMajor is 2 per the rule for the highest stable release. The release-candidate tags (v2.15.3-RC.1, dated 2026-11-02) are the latestPrereleaseDate. runtimeMin is absent: the go.mod directive is a build requirement for a server shipped as a binary. Coined or unrecorded kinds: the container image nats (Docker Hub library image), sdkLanguages (the homepage and README name over 40 client languages), Slack (slack.nats.io) and Stack Overflow links, the JetStream persistence and clustering features, the MQTT and WebSocket listeners.

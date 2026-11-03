@@ -1,0 +1,60 @@
+id: orb
+name: Orb
+status: hosted-service
+checkedAt: 2026-11-03
+description: Hosted usage-based billing service that meters usage, rates it against pricing plans and issues invoices, with an API for sending usage events.
+facts:
+  - field: homepage
+    value: https://www.withorb.com
+    url: https://www.withorb.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The revenue design company"
+  - field: docs
+    value: https://docs.withorb.com
+    url: https://docs.withorb.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: pricingPage
+    value: https://www.withorb.com/pricing
+    url: https://www.withorb.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Orb, Inc.
+    url: https://www.withorb.com/about
+    checkedAt: 2026-11-03
+    via: page
+    quote: "© Orb, Inc. All rights reserved."
+  - field: categories
+    value: [billing, usage-based]
+    url: https://www.withorb.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Meter and invoice for usage"
+  - field: sso
+    value: SAML or OIDC
+    url: https://www.withorb.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Log in with your identity provider through SAML or OIDC."
+  - field: userRoles
+    value: Viewer, Editor and Admin roles, plus custom roles
+    url: https://www.withorb.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Viewer, Editor, and Admin roles"
+  - field: x
+    value: https://x.com/useorb
+    url: https://www.withorb.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: youtube
+    value: https://www.youtube.com/@withOrb
+    url: https://www.withorb.com
+    checkedAt: 2026-11-03
+    via: page
+notFound: [hqCountry, regions, selfHostOption, runsAs, runtime, runtimeMin, language, license, firstRelease, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, newsletter, i18n, multisite, adminUi, livePreview, importsFrom, apiLimits, endoflifeId, dockerPulls, currentMajor, latestReleaseDate]
+unreadable: []
+notes: >
+  Hosted-service record: criterion 2 waived. The SDK repository orbcorp/orb-node (Apache-2.0, last push 2026-07-15) and its npm package orb-billing are client libraries; their license, stars and downloads are kept out of the record per the hosted-service rule. The docs landing page names REST API and the SDKs; the SDKs cover "Python, Node, Ruby, Go" (docs.withorb.com landing page), recorded here as a coined sdkLanguages fact only: Python, Node.js, Ruby, Go. The security page says Orb "uses Amazon Web Services as its cloud infrastructure provider" and holds a SOC-2 Type II report, which is a compliance claim recorded here, not as a field; it names no data region, so regions is absent. Free trial and a free tier are stated on the pricing page but are coined fields (freeTier), so they are not recorded as facts. The pricing page is a feature table whose plan columns did not survive text extraction; the SAML or OIDC single sign-on line and the viewer, editor and admin roles line are recorded as the page words them, with the plan they belong to unresolved, so the reviewer should check the table in a browser. The Platform Terms (https://www.withorb.com/terms) are governed by the laws of the State of California; that is a governing-law clause, not a headquarters statement, so hqCountry is absent. The about page footer names "Orb, Inc."; no other legal name was found. The homepage LinkedIn link has no field. The Terms of Service name no contracting party, and the privacy policy gives no address.

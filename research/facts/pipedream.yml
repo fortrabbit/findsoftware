@@ -1,0 +1,73 @@
+id: pipedream
+name: Pipedream
+status: hosted-service
+checkedAt: 2026-11-03
+description: Hosted integration platform whose Connect toolkit adds thousands of API integrations to an app or an AI agent.
+facts:
+  - field: name
+    value: Pipedream
+    url: https://pipedream.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Pipedream — The integration layer for AI agents"
+  - field: homepage
+    value: https://pipedream.com
+    url: https://pipedream.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: docs
+    value: https://pipedream.com/docs
+    url: https://pipedream.com/docs
+    checkedAt: 2026-11-03
+    via: page
+  - field: categories
+    value: [automation]
+    url: https://pipedream.com/docs
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Follow our workflow quickstart to create your first automation"
+  - field: maintainer
+    value: Pipedream, LLC
+    url: https://pipedream.com/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Pipedream, LLC, a Delaware limited liability company"
+  - field: maintainerType
+    value: company
+    url: https://pipedream.com/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Pipedream, LLC, a Delaware limited liability company"
+  - field: sso
+    value: single sign-on and SCIM on the Business tier
+    url: https://pipedream.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "SSO, SCIM, and HIPAA"
+  - field: regions
+    value: AWS us-east-1
+    url: https://pipedream.com/docs/privacy-and-security
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Pipedream is hosted on the Amazon Web Services (AWS) platform in the us-east-1 region."
+  - field: pricingPage
+    value: https://pipedream.com/pricing
+    url: https://pipedream.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: forum
+    value: "https://pipedream.com/community"
+    url: https://pipedream.com/docs
+    checkedAt: 2026-11-03
+    via: page
+    quote: "please reach out in our community forum"
+  - field: x
+    value: "https://twitter.com/pipedream"
+    url: https://pipedream.com/docs
+    checkedAt: 2026-11-03
+    via: page
+notFound: [selfHostOption, hostedOffering, apiLimits, freeTier, i18n, userRoles, databases, contentStore, adminUi, headlessApi, templating, serverNeeds, paidEdition, currentMajor, latestReleaseDate, firstRelease, language, runtime, runsAs, renderingModes, installMethod, license, licenseModel, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, usageShare, reportedInstalls, npmName, packagistName, npmWeeklyDownloads, githubStargazers, contributors, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, newsletter, facebook, multisite, livePreview, importsFrom, dockerPulls]
+unreadable: []
+notes: >
+  Hosted-only product: the homepage and the pricing page offer the service, and no self-install page was found, so status is hosted-service. The Connect toolkit (https://pipedream.com/docs/connect) is the part an app calls: the Connect SDK and the Connect Link. The homepage now markets Pipedream as "The integration layer for AI agents" and names a second product, Conduit, for companies deploying AI across an organization; the Conduit page was not read, and the description covers Connect only. The GitHub repository PipedreamHQ/pipedream holds the component registry and the Connect SDK monorepo. Its description reads "Connect APIs, remarkably fast. Free for developers." Its LICENSE is the "Pipedream Source Available License Version 1.0" and the GitHub API reports the license as NOASSERTION; per the hosted-service rule the repository license, stars and npm figures stay here: @pipedream/sdk is the npm package the homepage shows in its install line (npm i @pipedream/sdk), and its weekly downloads were not read in this pass. The TypeScript SDK repository PipedreamHQ/pipedream-sdk-typescript is linked from the docs and is not read. The legal entity: the LICENSE names "Pipedream, Inc., a Delaware corporation"; the terms page names "Pipedream, LLC, a Delaware limited liability company" as "Pipedream" in the agreement. The maintainer is the contracting party of the terms, Pipedream, LLC; the LICENSE line naming Pipedream, Inc. stays here, and the repository and its owner type are not recorded as facts. The pricing page lists a Free tier with no credit card required, a Startup tier and a Business tier with volume pricing; prices are not recorded. The pricing table lists SOC 2 Type 2 and GDPR as included on each tier; it is a coined field and stays in these notes. The security page says the data stored by the platform is hosted in AWS us-east-1, with no EU region named. The pricing page states the SSO and SCIM plan; the SSO docs (https://pipedream.com/docs/workspaces/sso/saml) describe SAML login setup for workspaces. firstRelease is not recorded: the repository was created in 2020, and its tags and releases belong to the SDK and components rather than the service. The homepage has no social links; the docs footer links Twitter and the docs support section links the community forum.
+  The Connect docs say "Connect provides a developer toolkit that lets you add 3,000 + integrations to your app or AI agent" and "You have full, code-level control over how these integrations work in your app." The docs home says Pipedream "provides the toolkit to add thousands of integrations to your app and enables you to automate any process." The homepage shows the install line "npm i @pipedream/sdk".

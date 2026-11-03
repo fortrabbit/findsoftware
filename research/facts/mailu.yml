@@ -1,0 +1,109 @@
+id: mailu
+name: Mailu
+status: stub
+checkedAt: 2026-11-03
+description: Full-featured mail server distributed as a set of Docker images, with IMAP, SMTP, webmail and an administration interface.
+facts:
+  - field: homepage
+    value: "https://mailu.io"
+    url: https://mailu.io/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "full-featured mail server as a set of Docker images"
+  - field: docs
+    value: "https://mailu.io/master/"
+    url: https://mailu.io/master/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Docker based mail server"
+  - field: repository
+    value: "https://github.com/Mailu/Mailu"
+    url: https://api.github.com/repos/Mailu/Mailu
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/Mailu/Mailu
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: "Mailu"
+    url: https://api.github.com/repos/Mailu/Mailu
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [smtp-server]
+    url: https://github.com/Mailu/Mailu/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "simple yet full-featured mail server as a set of Docker images"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/Mailu/Mailu
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: [docker-compose]
+    url: https://mailu.io/master/compose/setup.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Docker Compose configuration is stored in a file named docker-compose."
+  - field: license
+    value: MIT
+    url: https://github.com/Mailu/Mailu/blob/master/LICENSE.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/Mailu/Mailu/blob/master/LICENSE.md
+    checkedAt: 2026-11-03
+    via: page
+  - field: latestReleaseDate
+    value: "2026-10-23"
+    url: https://github.com/Mailu/Mailu/releases/tag/2024.06.67
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 7599
+    url: https://api.github.com/repos/Mailu/Mailu
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 206
+    url: https://api.github.com/repos/Mailu/Mailu
+    checkedAt: 2026-11-03
+    via: api
+  - field: adminUi
+    value: "yes, an administration interface and multiple webmails"
+    url: https://github.com/Mailu/Mailu/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "multiple Webmails and administration interface"
+  - field: databases
+    value: [sqlite]
+    url: https://mailu.io/master/configuration.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "store their configurations in a SQLite database"
+  - field: databases
+    value: [postgres, mysql]
+    url: https://mailu.io/master/configuration.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "For PostgreSQL use driver postgresql"
+  - field: installMethod
+    value: [helm]
+    url: https://mailu.io/master/kubernetes/mailu/index.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Please see the Helm Chart documentation"
+  - field: forum
+    value: https://github.com/Mailu/Mailu/discussions/categories/user-support
+    url: https://mailu.io/master/faq.html
+    checkedAt: 2026-11-03
+    via: page
+notFound: [parent, forkOf, successorOf, basedOn, hqCountry, wikidata, runtime, runtimeMin, currentMajor, firstRelease, alternativeTo, importsFrom, multisite, livePreview, headlessApi, contentStore, paidEdition, apiLimits, i18n, templating, renderingModes, runsAs, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, endoflifeId, userRoles, sso, selfHostOption, regions, dockerPulls]
+unreadable: []
+notes: >
+  Doubt: Mailu's pages document a mail server for mail clients (IMAP, SMTP, Submission, webmail) and an administration interface, but name no website or web app that submits mail through it. The only "one token per app or device" wording (https://mailu.io/master/configuration.html) concerns mail clients, and RELAYHOST is an outbound smarthost, not an app endpoint. This stays a stub until a Mailu page shows an application or website sending mail through its SMTP or submission port. The status is stub, not accepted, under the boundary rule for end-user apps. The GitHub license field reports NOASSERTION; the LICENSE.md file states the MIT License with the copyright line "Copyright (c) 2016 All Mailu contributors at the date", so the maintainer is the GitHub organization Mailu, not a named person. The latest release is calendar-versioned (2024.06.67, 2026-10-23), so no currentMajor is recorded. The oldest release in the repository is 1.8-rc (2020-10-26), but tags before it were not dated, so firstRelease is unknown. The compose setup page is the install route named by the docs; the Kubernetes route points to a Helm chart page and is recorded as helm. The MIT statement in the README ("compatible with the MIT license") repeats the LICENSE.md license and is not a separate entry. The admin and webmail interfaces are web apps people log into, which the boundary rule counts as end-user apps.

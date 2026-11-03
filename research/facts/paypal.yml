@@ -1,0 +1,63 @@
+id: paypal
+name: PayPal
+status: hosted-service
+checkedAt: 2026-11-03
+description: "Hosted payment platform whose REST APIs, JavaScript SDK and server SDKs let websites and apps accept PayPal payments."
+facts:
+  - field: homepage
+    value: https://developer.paypal.com
+    url: https://developer.paypal.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: docs
+    value: https://developer.paypal.com/api/rest/
+    url: https://developer.paypal.com/api/rest/
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: PayPal, Inc.
+    url: https://www.paypal.com/legalhub/paypal/xdeveloper-full
+    checkedAt: 2026-11-03
+    via: page
+    quote: "PayPal, Inc., a Delaware corporation"
+  - field: hqCountry
+    value: US
+    url: https://www.paypal.com/legalhub/paypal/xdeveloper-full
+    checkedAt: 2026-11-03
+    via: page
+    quote: "a Delaware corporation in the United States whose address is 2211 North First Street, San Jose, CA 95131"
+  - field: parent
+    value: PayPal Holdings, Inc.
+    url: https://www.paypal.com/us/legalhub/useragreement-full
+    checkedAt: 2026-11-03
+    via: page
+    quote: "our parent PayPal Holdings, Inc."
+  - field: categories
+    value: [payments]
+    url: https://developer.paypal.com/docs/checkout/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Accept PayPal payments on your website."
+  - field: pricingPage
+    value: https://www.paypal.com/us/business/pricing
+    url: https://www.paypal.com/us/business/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: discord
+    value: https://discord.gg/sJ2G6DyvSK
+    url: https://developer.paypal.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: x
+    value: https://x.com/paypaldev
+    url: https://developer.paypal.com/
+    checkedAt: 2026-11-03
+    via: page
+notFound: [repository, repoOwnerType, language, runtime, license, licenseModel, currentMajor, latestReleaseDate, githubStargazers, contributors, firstRelease, basedOn, forkOf, successorOf, alternativeTo, importsFrom, multisite, livePreview, userRoles, sso, i18n, headlessApi, contentStore, databases, adminUi, templating, renderingModes, installMethod, runsAs, selfHostOption, apiLimits, paidEdition, regions, reportedInstalls, usageShare, npmName, npmWeeklyDownloads, packagistName, pypiDownloads, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, facebook, instagram, wikidata, endoflifeId, lastCommitDate]
+unreadable:
+  - "https://www.paypal.com/us/webapps/mpp/about (403)"
+  - "https://www.paypal.com/us/about (403)"
+  - "https://newsroom.paypal-corp.com/about-us (403)"
+  - "https://developer.paypal.com/docs/checkout/standard/ (404)"
+notes: >
+  Hosted-service record for PayPal's developer platform at developer.paypal.com, which the CSV row names as the homepage. The GitHub repository paypal/paypal-js is the JavaScript SDK for the service, not the service's own source, so its license, stars and the npm figure for @paypal/paypal-js (471.9k a week in the CSV row) are not recorded per the hosted-service rule. The developer site lists the JavaScript SDK, a React SDK, the REST API, server SDKs, codes, webhook events, and iOS and Android SDKs; the REST API authenticates with OAuth 2.0 access tokens, and the Orders v2 API page was read. The developer footer's Discord link is the relative path /discord, which redirects to discord.gg/sJ2G6DyvSK; the redirect target is recorded as the value. The footer also lists YouTube (youtube.com/@paypaldev), LinkedIn (linkedin.com/company/paypaldev), GitHub (github.com/paypal) and Postman (postman.com/paypal), and a Developer Community sign-up link; these are not recorded as fields. The user agreement at paypal.com applies to U.S. PayPal accounts only, and the Developer Agreement names PayPal, Inc. in the United States; the parent is taken from the user agreement's definition of PayPal. The Developer Agreement lists a contracting entity per domicile in its section 17.1, and the United States entry is the one recorded. The footer of the developer site names the Developer Agreement, the Privacy Policy and the Terms of Service. The sandbox guide states that the sandbox has the same API feature set as the live environment; no prices are recorded. The business pricing page and the developer pages read state no SSO, user role or self-host option, so those fields are absent. No compliance statement was quoted, so none is recorded.

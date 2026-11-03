@@ -1,0 +1,72 @@
+id: polar
+name: Polar
+status: hosted-service
+checkedAt: 2026-11-03
+description: Hosted billing platform for usage-based and subscription payments, with a public API and webhooks that a site or app calls.
+facts:
+  - field: name
+    value: Polar
+    url: https://github.com/polarsource/polar/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Polar: A billing platform for the intelligence era"
+  - field: homepage
+    value: https://polar.sh
+    url: https://polar.sh
+    checkedAt: 2026-11-03
+    via: page
+  - field: docs
+    value: https://polar.sh/docs
+    url: https://polar.sh/docs
+    checkedAt: 2026-11-03
+    via: page
+  - field: categories
+    value: [payments, billing]
+    url: https://github.com/polarsource/polar/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Usage billing, subscriptions, seats, credits, trials, and discounts"
+  - field: maintainer
+    value: Polar Software, Inc.
+    url: https://polar.sh/legal/master-services-terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "by Polar Software, Inc. and its Affiliates"
+  - field: maintainerType
+    value: company
+    url: https://polar.sh/legal/master-services-terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "by Polar Software, Inc. and its Affiliates"
+  - field: pricingPage
+    value: https://polar.sh/resources/pricing
+    url: https://polar.sh/resources/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: x
+    value: https://x.com/polar_sh
+    url: https://polar.sh
+    checkedAt: 2026-11-03
+    via: page
+  - field: sso
+    value: [oidc]
+    url: https://polar.sh/docs/features/sso
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Polar supports any provider that implements OpenID Connect"
+  - field: userRoles
+    value: "yes, Owner, Admin and Member roles per organization"
+    url: https://polar.sh/docs/features/team-management
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Every member of an organization has one of three roles"
+  - field: discord
+    value: "https://dub.sh/polar-discord"
+    url: https://polar.sh/docs
+    checkedAt: 2026-11-03
+    via: page
+notFound: [selfHostOption, hostedOffering, i18n, regions, paidEdition, freeTier, hqCountry, firstRelease, currentMajor, latestReleaseDate, runsAs, renderingModes, installMethod, runtime, databases, contentStore, adminUi, headlessApi, templating, serverNeeds, apiLimits, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, usageShare, reportedInstalls, npmName, packagistName, npmWeeklyDownloads, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, multisite, livePreview, importsFrom, dockerPulls]
+unreadable: []
+notes: >
+  Hosted service: the platform is sold as a hosted service, with merchant-of-record fees on the pricing page (the README lists per-transaction percentages; no prices are recorded). The docs say "While self-hosting is technically possible, we recommend using our hosted service to get the full Merchant of Record benefits including global tax compliance." No self-install guide was found on the docs or the README (the repository has DEVELOPMENT.md, a development environment guide), so the record stays hosted-service and selfHostOption is not recorded. The CSV row was boundary: its wiring test passes, since the README says "You can integrate Polar on your docs, sites or services using our Public API and Webhook API" and the adapters page says the framework adapters "wire Polar checkouts and webhooks into your framework" (Next.js, Nuxt, TanStack Start, Laravel, BetterAuth; several are marked deprecated). The record is hosted-service because no install guide exists. Per the hosted-service rule the repository polarsource/polar (the platform's own server code, Python, Apache-2.0 by the LICENSE file and the README, 10453 stars on 2026-11-03, owned by a GitHub organization) is kept here and not recorded as facts; the docs describe the license as "Apache 2.0 license with 36+ contributors and growing", while the GitHub contributors endpoint counts 126 across all pages, so the API count is the one to use if the repository is ever recorded. The SDKs named in the README are polar-js (JavaScript, Node.js and browsers) and polar-python; the SDK packages' releases in the same repository are tagged sdk/ and @polar-sh/ (for example @polar-sh/checkout, @polar-sh/better-auth), so the repository has no platform release tag and latestReleaseDate and currentMajor are not recorded. The npm and PyPI figures for those SDKs are not recorded here. The README names Polar as the merchant of record: "We're the merchant of record", which the record prose can use. Polar Software, Inc. is the copyright holder on the legal page; the terms page names Polar Software, Inc. and its affiliates and sets Delaware as the arbitration seat, which is not a headquarters statement, so hqCountry is not recorded. The repository was created 2023-01-26, which is not a release date, so firstRelease is not recorded.
+  The README says Polar is "built for AI startups that need to charge for tokens, agents, and compute without building billing infrastructure from scratch." It says "We're the merchant of record, so we take on the billing boilerplate (receipts, customer accounts, dunning) and the headaches (sales tax, VAT) on your behalf."

@@ -1,0 +1,225 @@
+id: para
+name: Para
+status: accepted
+checkedAt: 2026-11-03
+description: Open-source backend server with a REST API over any database, for web and mobile apps, that can also run inside a JVM application.
+facts:
+  - field: homepage
+    value: https://paraio.org
+    url: https://paraio.org/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Para is an open-source, stateless and schemaless backend with a REST API over any database"
+  - field: docs
+    value: https://paraio.org/docs/
+    url: https://paraio.org/docs/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/Erudika/para
+    url: https://github.com/Erudika/para
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Erudika
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Erudika EOOD
+    url: https://erudika.com/imprint
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Legal Entity Erudika EOOD"
+  - field: hqCountry
+    value: BG
+    url: https://erudika.com/imprint
+    checkedAt: 2026-11-03
+    via: page
+    quote: "4 Lelinska chuka Street, Sofia 1618, Bulgaria"
+  - field: language
+    value: Java
+    url: https://github.com/Erudika/para
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://paraio.org/docs/deployment/standalone/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "java -jar para-X.Y.Z.jar"
+  - field: categories
+    value: [baas]
+    url: https://paraio.org/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A general-purpose backend for the cloud"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/Erudika/para
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/Erudika/para
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/Erudika/para/releases/tag/1.57.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-09"
+    url: https://github.com/Erudika/para/releases/tag/1.57.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://github.com/Erudika/para/releases/tag/v1.1.2
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 574
+    url: https://github.com/Erudika/para
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 15
+    url: https://github.com/Erudika/para/graphs/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: mavenCoordinates
+    value: com.erudika:para-server
+    url: https://repo1.maven.org/maven2/com/erudika/para-server/maven-metadata.xml
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: [binary-download]
+    url: https://paraio.org/docs/deployment/standalone/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Either download the executable JAR file and run it"
+  - field: installMethod
+    value: [docker]
+    url: https://paraio.org/docs/deployment/docker/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Tagged Docker images for Para are located at erudikaltd/para on Docker Hub"
+  - field: installMethod
+    value: [maven]
+    url: https://paraio.org/docs/getting-started/maven/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "To add it to your project just include this into your pom.xml"
+  - field: runsAs
+    value: [always-on]
+    url: https://paraio.org/docs/deployment/standalone/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "it is recommended to run a reverse-proxy server like NGINX in front of Para"
+  - field: databases
+    value: [h2]
+    url: https://paraio.org/docs/data-stores/sql/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Besides the default H2 implementation"
+  - field: databases
+    value: [mysql, mariadb, postgres, sqlserver, oracle, sqlite]
+    url: https://paraio.org/docs/data-stores/sql/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "adds support for all the major RDBMS - MySQL/MariaDB, PostgreSQL, Microsoft SQL Server, Oracle and SQLite"
+  - field: databases
+    value: [mongodb]
+    url: https://paraio.org/docs/data-stores/mongodb/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "the first official plugin adds support for MongoDB"
+  - field: databases
+    value: [dynamodb]
+    url: https://paraio.org/docs/data-stores/dynamodb/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "we added new functionality to AWSDynamoDAO which enables apps to share the same table"
+  - field: sso
+    value: SAML
+    url: https://paraio.org/docs/security/saml/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Para can act as a SAML service provider"
+  - field: sso
+    value: LDAP, including Active Directory
+    url: https://paraio.org/docs/security/ldap/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Users can be authenticated through an LDAP server, including Active Directory"
+  - field: sso
+    value: OAuth 2.0
+    url: https://paraio.org/docs/security/oauth2/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A generic OAuth 2.0 filter is available"
+  - field: userRoles
+    value: yes, three groups (users, mods, admins) with matching roles
+    url: https://paraio.org/docs/security/roles/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Para defines three security groups and roles"
+  - field: multisite
+    value: yes, one server hosts several apps, each with its own table, index and cache
+    url: https://github.com/Erudika/para
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Multitenancy - each app has its own table, index and cache"
+  - field: adminUi
+    value: yes, Para Web Console
+    url: https://github.com/Erudika/para
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Para Web Console - admin user interface"
+  - field: i18n
+    value: yes, language packs and currency utilities
+    url: https://github.com/Erudika/para
+    checkedAt: 2026-11-03
+    via: page
+    quote: "I18n utilities for translating language packs and working with currencies"
+  - field: hostedOffering
+    value: Para Cloud, managed hosting at paraio.com
+    url: https://paraio.org/docs/deployment/cloud/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "We offer managed Para cloud hosting"
+  - field: headlessApi
+    value: [rest]
+    url: https://paraio.org/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "a REST API over any database, search index and cache"
+  - field: databases
+    value: [cassandra]
+    url: https://paraio.org/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "SQL, MongoDB, Cassandra or DynamoDB"
+  - field: alternativeTo
+    value: [supabase, firebase, parse-server]
+    url: https://paraio.org/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Feature comparison of Para, Supabase, Firebase and Parse"
+  - field: docker
+    value: erudikaltd/para
+    url: https://paraio.org/docs/deployment/docker/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Tagged Docker images for Para are located at erudikaltd/para on Docker Hub"
+  - field: dockerPulls
+    value: "365764 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/erudikaltd/para/
+    checkedAt: 2026-11-03
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, importsFrom, livePreview, selfHostOption, contentStore, paidEdition, pricingPage, apiLimits, regions, renderingModes, runtimeMin, templating, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, pypiDownloads, endoflifeId, wikidata, freeTier]
+unreadable: []
+notes: >
+  Java backend server in the Erudika/para repository, with a REST API signed with Amazon's Signature V4 and JWT tokens (README), an embedded Jetty server in the executable JAR, and an MCP server (README and docs). The Maven artifact com.erudika:para-server has versions from 2015-04-05 (Maven Central search, first upload); the GitHub tags begin in 2014, so firstRelease is 2014. The README says the project is "fully funded and supported by" Erudika, an independent, bootstrapped company. The imprint names the legal entity Erudika EOOD at Sofia, Bulgaria; the privacy page names "Erudika Ltd." at the same address, a second wording of the same entity that is not recorded as maintainer. The company site lists an X account at x.com/erudika and a LinkedIn page, which belong to the company rather than the project, so no x field is recorded. The Para Cloud page says the managed service is free for developers and the README says premium accounts exist; no free tier or paid edition is recorded as a field, since hosting plans are not editions. The README names a comparison blog post that covers LoopBack, Usergrid, BaasBox, Deployd and Telepat; the link text names none of them, so that post gives no alternativeTo; the homepage comparison table of Para, Supabase, Firebase and Parse is the recorded statement. The README has a Gitter chat badge, which has no field. runtimeMin is not recorded: the server ships as an executable JAR, and the Java version in the pom is a build requirement. Caffeine and Hazelcast (cache), Lucene and Elasticsearch (search), and Spring Security are named in the README features list and are recorded here as stated, without fields. The webhooks feature (signed payloads, custom events) and the emailer (JavaMail or AWS SES) are documented under concepts and integrations and have no field. The new.paraio.org address linked from the homepage did not answer on 2026-11-03.

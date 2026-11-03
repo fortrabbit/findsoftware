@@ -1,0 +1,124 @@
+id: opensign
+name: OpenSign
+status: accepted
+checkedAt: 2026-11-03
+description: Open-source electronic signature application for PDF documents, with a REST API and webhooks that an application can use to send documents for signing.
+facts:
+  - field: homepage
+    value: https://www.opensignlabs.com
+    url: https://www.opensignlabs.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Your ultimate open source PDF E-Signature Solution."
+  - field: repository
+    value: https://github.com/OpenSignLabs/OpenSign
+    url: https://github.com/OpenSignLabs/OpenSign
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://docs.opensignlabs.com
+    url: https://docs.opensignlabs.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/OpenSignLabs/OpenSign
+    checkedAt: 2026-11-03
+    via: page
+    quote: "OpenSign is licensed under the AGPL-3 License."
+  - field: license
+    value: separate license for apps/OpenSignServer/cloud/customRoute, if that directory exists (license not named in the file)
+    url: https://github.com/OpenSignLabs/OpenSign/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "All content that resides under the \"apps/OpenSignServer/cloud/customRoute\" directory of this repository"
+  - field: categories
+    value: [e-signature, documents]
+    url: https://github.com/OpenSignLabs/OpenSign
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The free and open source alternative to DocuSign"
+  - field: language
+    value: JavaScript
+    url: https://github.com/OpenSignLabs/OpenSign
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: node
+    url: https://github.com/OpenSignLabs/OpenSign/blob/main/apps/OpenSignServer/package.json
+    checkedAt: 2026-11-03
+    via: page
+    quote: "\"node\": \"18 || 20 || 22\""
+  - field: firstRelease
+    value: 2023
+    url: https://api.github.com/repos/OpenSignLabs/OpenSign/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Qik Innovations Private Limited
+    url: https://www.opensignlabs.com/terms-and-conditions
+    checkedAt: 2026-11-03
+    via: page
+    quote: "a SaaS solution developed and maintained by Qik Innovations Private Limited"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/OpenSignLabs
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: docker
+    url: https://docs.opensignlabs.com/docs/self-host/docker/run-locally/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Steps to run OpenSign™ with docker on Linux/MacOS/Windows"
+  - field: databases
+    value: [mongodb]
+    url: https://github.com/OpenSignLabs/OpenSign
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The default MongoDB instance used in deployment is not persistant"
+  - field: hostedOffering
+    value: OpenSign cloud service at app.opensignlabs.com
+    url: https://www.opensignlabs.com/terms-and-conditions
+    checkedAt: 2026-11-03
+    via: page
+    quote: "a SaaS solution developed and maintained by Qik Innovations Private Limited"
+  - field: discord
+    value: https://discord.com/invite/xe9TDuyAyj
+    url: https://www.opensignlabs.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: x
+    value: https://www.twitter.com/opensignhq
+    url: https://www.opensignlabs.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: currentMajor
+    value: 3
+    url: https://github.com/OpenSignLabs/OpenSign/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-30
+    url: https://github.com/OpenSignLabs/OpenSign/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 7215
+    url: https://github.com/OpenSignLabs/OpenSign
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 36
+    url: https://github.com/OpenSignLabs/OpenSign
+    checkedAt: 2026-11-03
+    via: api
+  - field: facebook
+    value: https://www.facebook.com/profile.php?id=61551030403669
+    url: https://www.opensignlabs.com
+    checkedAt: 2026-11-03
+    via: page
+notFound: [hqCountry, runsAs, runtimeMin, pluginDirectory, forum, subreddit, mastodon, bluesky, newsletter, sso, userRoles, i18n, multisite, adminUi, endoflifeId, dockerPulls, latestPrereleaseDate, pricingPage, paidEdition]
+unreadable: []
+notes: >
+  Wiring into an app: the eSignature API page says the API lets a developer "Programmatically create, send and track signature requests with a free, open-source eSignature API and webhooks" (https://www.opensignlabs.com/esignature-api), and the API v1.2 reference lists Documents, Templates, Contacts, Webhook and Folder groups (https://docs.opensignlabs.com/docs/API-docs/v1.2); that is the criterion 1 basis. The GitHub API reports the license as NOASSERTION; the README and LICENSE give AGPL-3.0 and the carve-out above. The LICENSE file names no copyright holder; the maintainer is the company named in the terms and conditions, "Qik Innovations Pvt Ltd" in the contact block and "Qik Innovations Private Limited" in the opening paragraph, recorded in the longer form. The privacy and terms pages name no country or address, so hqCountry is absent. The README names the X account @opensignlabs while the homepage links opensignhq; the homepage link is recorded. The terms call OpenSign "a SaaS solution", and the self-host docs describe the same product, so the cloud is a hostedOffering fact. Cloud plans are on a page that did not render its text, so no pricing or freeTier fact is recorded. The README features list names multi-signer support with signing links, templates, audit trails with a completion certificate, and an API. The Docker route downloads docker-compose.yml, a Caddyfile and an env file for the operator's HOST_URL. The homepage also links LinkedIn, which has no field. The homepage advertises a free plan with unlimited e-signatures, not recorded as freeTier because the field is coined (notes only). The npm registry holds no OpenSign server package. The README also links a DigitalOcean one-click deploy (a badge, not text, so no installMethod fact is recorded). The default Docker compose stack needs MongoDB without authentication, per the warning on the run-locally page, which the docs state as a security note.

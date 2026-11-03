@@ -1,0 +1,85 @@
+id: mailtrap
+name: Mailtrap
+status: hosted-service
+checkedAt: 2026-11-03
+description: Hosted email API, SMTP and email sandbox service for testing and sending email.
+facts:
+  - field: homepage
+    value: "https://mailtrap.io"
+    url: https://mailtrap.io/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Modern Email Delivery for developer & product teams"
+  - field: docs
+    value: "https://docs.mailtrap.io/"
+    url: https://docs.mailtrap.io/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Complete email infrastructure for developers."
+  - field: pricingPage
+    value: "https://mailtrap.io/pricing/"
+    url: https://mailtrap.io/pricing/
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "Railsware Products Studio LLC"
+    url: https://mailtrap.io/privacy/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Railsware Products Studio LLC, a company incorporated in the State of Delaware"
+  - field: maintainerType
+    value: company
+    url: https://mailtrap.io/privacy/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Railsware Products Studio LLC, a company incorporated in the State of Delaware"
+  - field: hqCountry
+    value: US
+    url: https://mailtrap.io/privacy/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "having its business address at 117 E Colorado Blvd, Suite 600, Office 650, Pasadena, CA 91105"
+  - field: categories
+    value: [email-testing, transactional-email]
+    url: https://mailtrap.io/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Inspect and debug emails in staging, dev & QA environments"
+  - field: sso
+    value: "yes, sign-in through the organization's identity provider (protocol not named; listed for the Enterprise plan on the pricing page)"
+    url: https://mailtrap.io/security-and-compliance/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Let eligible teams sign in through their organization’s identity provider."
+  - field: regions
+    value: "US data centers; EU data residency in development"
+    url: https://mailtrap.io/security-and-compliance/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Customer data is hosted in US data centers. EU data residency is in development."
+  - field: x
+    value: "https://x.com/mailtrap"
+    url: https://mailtrap.io/about-us/
+    checkedAt: 2026-11-03
+    via: page
+  - field: facebook
+    value: "https://www.facebook.com/Mailtrap"
+    url: https://mailtrap.io/about-us/
+    checkedAt: 2026-11-03
+    via: page
+  - field: alternativeTo
+    value: [mailgun]
+    url: https://mailtrap.io/mailgun-alternative/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "the Mailgun alternative with high deliverability"
+  - field: alternativeTo
+    value: [amazon-ses]
+    url: https://mailtrap.io/amazon-ses-alternative/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "the cost-effective Amazon SES alternative"
+notFound: [parent, forkOf, successorOf, wikidata, basedOn, runtimeMin, importsFrom, multisite, livePreview, headlessApi, contentStore, paidEdition, apiLimits, i18n, templating, renderingModes, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, endoflifeId, userRoles, selfHostOption, linkedin, repository, repoOwnerType, language, runtime, installMethod, license, licenseModel, currentMajor, latestReleaseDate, firstRelease, githubStargazers, contributors, runsAs, databases, adminUi, dockerPulls]
+unreadable: ["https://trust.mailtrap.io/ (403)"]
+notes: >
+  Hosted service: the id is the hosted email platform, and Mailtrap Local is a separate local tool recorded as a possible candidate (mailtrap-local). Mailtrap Local facts, all read 2026-11-03: repository https://github.com/mailtrap/mailtrap-local (organization-owned), MIT license, Go, a single self-contained binary with SQLite storage, installs through Homebrew, Snap, Nix, Docker, prebuilt binaries and source build, latest release v0.4.1 on 2026-09-07, first tag v0.1.0 in 2026, 113 stars, 6 contributors, 6599 Docker Hub pulls, an SMTP server, a web sandbox and a REST API, designed for development and testing only per https://docs.mailtrap.io/email-sandbox/local. Its README says "Not a Mailtrap Sandbox replacement." Local runs without the vendor's service; its Send to Cloud button passes captured mail to the hosted Email Sandbox. The hosted sandbox, API and email marketing product are not open source. The privacy notice names Railsware Products Studio LLC, incorporated in Delaware with a Pasadena, CA business address, as the service operator. The pricing page lists a Free plan and paid tiers; free tier is a coined kind and stays in notes, with no prices. SSO appears on the Enterprise plan row only. Compliance per the security page: SOC 2 Type II, ISO 27001:2022 and SOC 3; compliance is a coined kind and stays in notes. The Mailtrap SDK repository github.com/mailtrap/mailtrap-nodejs is a client library; its figures are left out per the hosted-service rule. The About page says Mailtrap was built at Railsware and bootstrapped since 2011; that year is not a release date. The trust center (https://trust.mailtrap.io/) answered 403 and is unread. No page states user roles, so userRoles is unknown. The homepage and docs offer migration from SendGrid, Mailgun, Mailchimp, Amazon SES and Postmark; only Mailgun and Amazon SES have records.

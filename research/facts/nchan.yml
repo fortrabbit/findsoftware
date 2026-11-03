@@ -1,0 +1,151 @@
+id: nchan
+name: Nchan
+status: accepted
+checkedAt: 2026-11-03
+description: "Pub/sub server module for Nginx that delivers published messages to WebSocket, EventSource and other HTTP-based subscribers."
+facts:
+  - field: homepage
+    value: https://nchan.io
+    url: https://nchan.io
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/slact/nchan
+    url: https://github.com/slact/nchan
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://nchan.io
+    url: https://nchan.io
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Leo Ponomarev
+    url: https://github.com/slact/nchan/blob/master/LICENCE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Written by Leo Ponomarev (slact) 2009-2015."
+  - field: maintainerType
+    value: individual
+    url: https://github.com/slact/nchan/blob/master/LICENCE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Written by Leo Ponomarev (slact) 2009-2015."
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/slact
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: C
+    url: https://github.com/slact/nchan
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [realtime-server, websockets]
+    url: https://nchan.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Nchan is a scalable, flexible pub/sub server for the modern web"
+  - field: basedOn
+    value: nginx
+    url: https://nchan.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "built as a module for the Nginx web server"
+  - field: runtime
+    value: c binary
+    url: https://nchan.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A statically compiled binary and associated linux nginx installation files"
+  - field: runsAs
+    value: [always-on]
+    url: https://nchan.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "All connections are handled asynchronously and distributed among any number of worker processes"
+  - field: installMethod
+    value: [source-build]
+    url: https://nchan.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Grab the latest Nchan source from github"
+  - field: installMethod
+    value: [Homebrew]
+    url: https://nchan.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "brew install nginx-full --with-nchan-module"
+  - field: installMethod
+    value: [apt]
+    url: https://nchan.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A dynamic module build is available in the Debian package repository"
+  - field: installMethod
+    value: [rpm]
+    url: https://nchan.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Dynamic module builds for Nginx > 1.10.0 are available"
+  - field: installMethod
+    value: [AUR]
+    url: https://nchan.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "are available in the Arch User Repository"
+  - field: installMethod
+    value: [binary download]
+    url: https://nchan.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "available as a tarball"
+  - field: license
+    value: MIT
+    url: https://github.com/slact/nchan/blob/master/LICENCE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This work is distributed under the MIT Licence."
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/slact/nchan/blob/master/LICENCE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This work is distributed under the MIT Licence."
+  - field: githubStargazers
+    value: 3063
+    url: https://github.com/slact/nchan
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 35
+    url: https://github.com/slact/nchan
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/slact/nchan/tags
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-02-14
+    url: https://nchan.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The latest Nchan release is 1.3.8 (February 14, 2026)"
+  - field: firstRelease
+    value: 2009
+    url: https://github.com/slact/nchan/tags
+    checkedAt: 2026-11-03
+    via: api
+  - field: headlessApi
+    value: [rest]
+    url: https://nchan.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: "RESTful, HTTP-native API"
+notFound: [pricingPage, hostedOffering, hqCountry, runtimeMin, endoflifeId, npmName, npmWeeklyDownloads, dockerPulls, docker, packagistName, packagistDownloads, pypiDownloads, pluginDirectory, forum, discord, x, subreddit, mastodon, bluesky, newsletter, usageShare, reportedInstalls, parent, forkOf, successorOf, alternativeTo, adminUi, sso, userRoles, i18n, multisite, livePreview, importsFrom, renderingModes, databases, contentStore, paidEdition, wikidata]
+unreadable: []
+notes: >
+  Nchan has no GitHub releases, only tags, so latestReleaseDate comes from the project's own changelog sentence on nchan.io; the newest tag v1.3.8 has a commit date of 2026-02-15 (UTC), one day after the page's date, and the reviewer decides which to keep. currentMajor 1 is the highest stable tag. firstRelease is 2009 from the oldest tag (0.68, commit 2009-11-06), and the homepage says the first iteration was written in 2009-2010 as the Nginx HTTP Push Module, the predecessor the record does not link. The license file is named LICENCE, and GitHub reports NOASSERTION for it; the license statement is the file's own sentence. The npm package named "nchan" on the homepage is the browser client NchanSubscriber.js, not the server, so no npmName is recorded. The nchan.io homepage names Redis as an optional storage backend (nchan_use_redis), which is a dependency and not a database of the software, so databases is absent. Acceptance: apps publish by an HTTP POST to a publisher location, and clients subscribe over WebSocket, EventSource or long-polling, which is the wiring a site uses. Coined or unrecorded kinds: the subscriber protocols (WebSocket, EventSource, long-polling, interval polling, chunked transfer, multipart/mixed), channel groups and limits, and the NchanSubscriber.js browser client. The installMethod routes come from the install section of the homepage; the Heroku buildpack named there is a third-party repository and is not recorded.

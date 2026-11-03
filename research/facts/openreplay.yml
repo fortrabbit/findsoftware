@@ -1,0 +1,144 @@
+id: openreplay
+name: OpenReplay
+status: accepted
+checkedAt: 2026-11-03
+description: Self-hosted session replay and product analytics platform, with a tracker SDK that runs inside the monitored web or mobile app.
+facts:
+  - field: homepage
+    value: https://openreplay.com
+    url: https://openreplay.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Self-Hosted Session Replay and Product Analytics"
+  - field: repository
+    value: https://github.com/openreplay/openreplay
+    url: https://github.com/openreplay/openreplay
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://docs.openreplay.com/en/getting-started/
+    url: https://docs.openreplay.com/en/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/openreplay/openreplay
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Most of the codebase is licensed under the **AGPLv3**"
+  - field: license
+    value: MIT (some directories)
+    url: https://github.com/openreplay/openreplay
+    checkedAt: 2026-11-03
+    via: page
+    quote: "some directories are licensed under **MIT**"
+  - field: license
+    value: OpenReplay Enterprise License (commercial, ee/ directory)
+    url: https://github.com/openreplay/openreplay/blob/main/ee/LICENSE.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "To license the Enterprise Edition of OpenReplay"
+  - field: categories
+    value: [session-replay]
+    url: https://openreplay.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Self-Hosted Session Replay and Product Analytics"
+  - field: language
+    value: TypeScript
+    url: https://github.com/openreplay/openreplay
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2021
+    url: https://api.github.com/repos/openreplay/openreplay/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Asayer, Inc dba OpenReplay
+    url: https://github.com/openreplay/openreplay/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2026 Asayer, Inc dba OpenReplay"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/openreplay
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: docker compose
+    url: https://docs.openreplay.com/en/deployment/deploy-docker/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "OpenReplay stack can be installed on a single machine with Docker Compose."
+  - field: installMethod
+    value: helm
+    url: https://docs.openreplay.com/en/deployment/deploy-kubernetes/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "OpenReplay deployment is based on Helm Charts"
+  - field: installMethod
+    value: source
+    url: https://docs.openreplay.com/en/deployment/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can also deploy from source"
+  - field: databases
+    value: [postgresql]
+    url: https://docs.openreplay.com/en/deployment/deploy-kubernetes/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "We package PostgreSQL and Redis, which are required for OpenReplay."
+  - field: hostedOffering
+    value: OpenReplay Cloud (Serverless, Dedicated and Bring-Your-Own-Cloud)
+    url: https://github.com/openreplay/openreplay/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Prefer not to self-host? Run OpenReplay in our Cloud"
+  - field: currentMajor
+    value: 1
+    url: https://github.com/openreplay/openreplay/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-25
+    url: https://github.com/openreplay/openreplay/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: forum
+    value: https://forum.openreplay.com
+    url: https://openreplay.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: githubStargazers
+    value: 13092
+    url: https://github.com/openreplay/openreplay
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 76
+    url: https://github.com/openreplay/openreplay
+    checkedAt: 2026-11-03
+    via: api
+  - field: sso
+    value: [SAML, OIDC]
+    url: https://github.com/openreplay/openreplay/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "plus SSO (SAML, OIDC) for enterprise authentication"
+  - field: userRoles
+    value: "Owner, Admin and Member"
+    url: https://github.com/openreplay/openreplay/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Role-based access (Owner, Admin, Member)"
+  - field: alternativeTo
+    value: [logrocket, posthog]
+    url: https://github.com/openreplay/openreplay/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "How OpenReplay compares"
+notFound: [npmName, npmWeeklyDownloads, paidEdition, hqCountry, runsAs, runtime, runtimeMin, pluginDirectory, discord, subreddit, mastodon, bluesky, x, newsletter, i18n, multisite, adminUi, endoflifeId, dockerPulls, latestPrereleaseDate, selfHostOption]
+unreadable: []
+notes: >
+  The GitHub API reports the license as NOASSERTION, because the monorepo carries several licenses: the AGPLv3 for most files, MIT for some directories, and the Enterprise License under ee/, each recorded as its own entry from the LICENSE file or the README. The docs call Docker Compose "an experimental feature" on the Docker deployment page; the Helm chart is the route the Kubernetes page documents. The README gives a baseline of 2 vCPUs, 8 GB of RAM and 50 GB of storage for a single VM; no runtimeMin applies. The homepage lists a Slack community and the Kubernetes page sends users to Slack for help, a coined community field, so the Slack link (slack.openreplay.com, join.slack.com invite) is recorded here only: https://slack.openreplay.com. Redis is required for the Kubernetes install per the docs but is a cache, not a database field value, so it is named here, not in databases. The tracker is an SDK installed in the monitored app; @openreplay/tracker (MIT on npm, version 19.0.5) is the package the tracker docs install, it is a client package, so no npm figure is recorded as a field (445269 downloads in the 2026-10-26 to 2026-11-01 window). The README names the Cloud as a hosted service beside self-hosting, and lists Dedicated and BYOC plans. No paidEdition is recorded: the ee/ license text says it adds "additional features, functionality and support" without naming any feature of the self-hosted product. The README says SSO is "for enterprise authentication" without naming an edition. The homepage contains no X, Discord or Bluesky link. The docs path for self-hosting that the README links is the deployment overview, which states "You can also deploy from source" as a route.

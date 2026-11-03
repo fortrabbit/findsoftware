@@ -1,0 +1,1 @@
+Mailu is a mail server distributed as a set of Docker images, with webmail and an administration interface. The [Docker Compose setup guide](https://mailu.io/master/compose/setup.html) keeps its configuration in a docker-compose file, and the GitHub organization Mailu publishes the project under the MIT license.
