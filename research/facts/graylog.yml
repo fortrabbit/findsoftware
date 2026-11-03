@@ -1,0 +1,199 @@
+id: graylog
+name: Graylog
+status: accepted
+checkedAt: 2026-11-03
+description: "Free and open log management platform that collects log data from applications and devices for search and analysis."
+facts:
+  - field: repository
+    value: "https://github.com/Graylog2/graylog2-server"
+    url: "https://api.github.com/repos/Graylog2/graylog2-server"
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://go2docs.graylog.org/current/home.htm"
+    url: "https://go2docs.graylog.org/current/home.htm"
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "Graylog, Inc."
+    url: "https://go2docs.graylog.org/current/home.htm"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Graylog, Inc. | All rights reserved"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/Graylog2"
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: ["logs"]
+    url: "https://github.com/Graylog2/graylog2-server/blob/master/README.markdown"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Graylog is a free and open log management platform"
+  - field: language
+    value: "Java"
+    url: "https://api.github.com/repos/Graylog2/graylog2-server"
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: ["jvm"]
+    url: "https://go2docs.graylog.org/current/downloading_and_installing_graylog/operating_system_packages.htm"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Graylog requires Java 17 (e.g. OpenJDK)"
+  - field: runtimeMin
+    value: "Java 17"
+    url: "https://go2docs.graylog.org/current/downloading_and_installing_graylog/operating_system_packages.htm"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Graylog requires Java 17 (e.g. OpenJDK)"
+  - field: databases
+    value: ["mongodb"]
+    url: "https://go2docs.graylog.org/current/downloading_and_installing_graylog/operating_system_packages.htm"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Graylog requires a compatible version of MongoDB."
+  - field: dependencies
+    value: ["Graylog Data Node", "OpenSearch (self-managed)"]
+    url: "https://go2docs.graylog.org/current/downloading_and_installing_graylog/installing_graylog.html"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Data Node is the recommended search backend for use with Graylog"
+  - field: adminUi
+    value: "web interface"
+    url: "https://go2docs.graylog.org/current/setting_up_graylog/web_interface.htm"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "which is primarily how you use the Graylog application"
+  - field: headlessApi
+    value: ["rest"]
+    url: "https://go2docs.graylog.org/current/setting_up_graylog/rest_api_use_cases.htm"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The Graylog REST API provides the full functionality of the Graylog web UI."
+  - field: userRoles
+    value: [reader, admin]
+    url: "https://go2docs.graylog.org/current/setting_up_graylog/permission_management.html"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Every user must have either the Reader or Admin role."
+  - field: sso
+    value: ["ldap", "active-directory"]
+    url: "https://go2docs.graylog.org/current/setting_up_graylog/sso_in_graylog.htm"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Both Active Directory and LDAP are available out of the box as identity sources for Graylog Open."
+  - field: installMethod
+    value: [os-package]
+    url: "https://go2docs.graylog.org/current/downloading_and_installing_graylog/operating_system_packages.htm"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Graylog builds and hosts DEB packages for use with supported operating systems"
+  - field: installMethod
+    value: [docker-compose]
+    url: "https://go2docs.graylog.org/current/downloading_and_installing_graylog/docker_installation.htm"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The following guide will walk you through running Graylog with Docker Compose."
+  - field: installMethod
+    value: [tarball]
+    url: "https://go2docs.graylog.org/current/downloading_and_installing_graylog/operating_system_packages.htm"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Unless explicitly necessary, we do not recommend you install Graylog via tarball."
+  - field: httpApi
+    value: "GELF HTTP input that applications send messages to"
+    url: "https://go2docs.graylog.org/current/getting_in_log_data/gelf.html"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "After launching a GELF HTTP input you can use the following endpoint to send messages:"
+  - field: runsAs
+    value: ["always-on"]
+    url: "https://go2docs.graylog.org/current/setting_up_graylog/web_interface.htm"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "you have started the Graylog service"
+  - field: license
+    value: "SSPL-1.0"
+    url: "https://github.com/Graylog2/graylog2-server/blob/master/LICENSE"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Server Side Public License VERSION 1, OCTOBER 16, 2018"
+  - field: paidEdition
+    value: "Graylog Enterprise (adds Okta and OIDC sign-in to the Open edition)"
+    url: "https://go2docs.graylog.org/current/setting_up_graylog/sso_in_graylog.htm"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Graylog Enterprise adds support for Okta as well as generic OpenID Connect (OIDC) authentication"
+  - field: paidEdition
+    value: "Graylog Enterprise teams"
+    url: "https://go2docs.graylog.org/current/setting_up_graylog/users_teams.htm"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A Graylog Enterprise license is required to create and manage teams."
+  - field: currentMajor
+    value: "7"
+    url: "https://api.github.com/repos/Graylog2/graylog2-server/git/refs/tags/7.2.1"
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-19"
+    url: "https://api.github.com/repos/Graylog2/graylog2-server/commits/7.2.1"
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestPrereleaseDate
+    value: "2026-10-26"
+    url: "https://api.github.com/repos/Graylog2/graylog2-server/commits/7.3.0-alpha.1"
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2010
+    url: "https://api.github.com/repos/Graylog2/graylog2-server/commits/0.9"
+    checkedAt: 2026-11-03
+    via: api
+  - field: mavenCoordinates
+    value: "org.graylog2:graylog2-server"
+    url: "https://repo1.maven.org/maven2/org/graylog2/graylog2-server/maven-metadata.xml"
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 8172
+    url: "https://api.github.com/repos/Graylog2/graylog2-server"
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 153
+    url: "https://api.github.com/repos/Graylog2/graylog2-server/contributors?per_page=1"
+    checkedAt: 2026-11-03
+    via: api
+  - field: dockerPulls
+    value: "66628320 (2026-11-03)"
+    url: "https://hub.docker.com/v2/repositories/graylog/graylog/"
+    checkedAt: 2026-11-03
+    via: api
+  - field: forum
+    value: "https://community.graylog.org/"
+    url: "https://github.com/Graylog2/graylog2-server/blob/master/README.markdown"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "create a topic in our community discussion forums"
+  - field: x
+    value: "https://twitter.com/graylog2"
+    url: "https://go2docs.graylog.org/current/home.htm"
+    checkedAt: 2026-11-03
+    via: page
+  - field: subreddit
+    value: "https://www.reddit.com/r/graylog/"
+    url: "https://go2docs.graylog.org/current/home.htm"
+    checkedAt: 2026-11-03
+    via: page
+  - field: facebook
+    value: "https://www.facebook.com/graylog/"
+    url: "https://go2docs.graylog.org/current/home.htm"
+    checkedAt: 2026-11-03
+    via: page
+notFound: [homepage, hqCountry, pricingPage, endoflifeId, usageShare, apiLimits, regions, pluginDirectory, pluginCount, newsletter, discord, mastodon, bluesky]
+unreadable: ["https://www.graylog.org/ (403 bot check): homepage, pricing, legal, privacy and about pages"]
+notes: >
+  Accepted: the boundary question is settled by the project's own docs, which describe listener inputs (GELF, Raw HTTP, Syslog) that an application pushes log data to, so the record is an ingestion endpoint an app sends to. The homepage is not recorded because www.graylog.org answers 403 to every request, and the HQ is unread for the same reason; the maintainer name comes from the footer of the documentation site, and the repository README links the same website. GitHub reports the license as NOASSERTION; the LICENSE file is SSPL version 1. The tarball install is the route the project does not recommend. The Enterprise image is graylog/graylog-enterprise and is not counted in dockerPulls. No GitHub release objects exist; the newest stable tag is 7.2.1 and its commit date is used as the release date. firstRelease is the oldest tag (0.9, commit 2010-07-30), older than the first Maven Central upload (0.20.0-rc.1-1, 2014-01-23; first stable 0.90.0, 2014-09-23). Maven Central publishes no download figure. The repository README is README.markdown. The listener inputs named above are GELF, Raw HTTP and Syslog inputs in the inputs page.

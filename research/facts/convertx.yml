@@ -1,0 +1,93 @@
+id: convertx
+name: ConvertX
+status: stub
+checkedAt: 2026-11-03
+description: "Self-hosted online file converter with a browser interface, supporting more than a thousand file formats."
+facts:
+  - field: repository
+    value: "https://github.com/C4illin/ConvertX"
+    url: "https://api.github.com/repos/C4illin/ConvertX"
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: "C4illin"
+    url: "https://github.com/C4illin/ConvertX"
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainerType
+    value: "individual"
+    url: "https://api.github.com/users/C4illin"
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: "user"
+    url: "https://api.github.com/users/C4illin"
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: ["document-converter"]
+    url: "https://github.com/C4illin/ConvertX"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A self-hosted online file converter. Supports over a thousand different formats."
+  - field: language
+    value: "TypeScript"
+    url: "https://api.github.com/repos/C4illin/ConvertX"
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: ["bun"]
+    url: "https://github.com/C4illin/ConvertX"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Written with TypeScript, Bun and Elysia."
+  - field: installMethod
+    value: ["docker"]
+    url: "https://github.com/C4illin/ConvertX"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The image is available on GitHub Container Registry and Docker Hub"
+  - field: license
+    value: "AGPL-3.0"
+    url: "https://api.github.com/repos/C4illin/ConvertX"
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: "open-source"
+    url: "https://api.github.com/repos/C4illin/ConvertX"
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: "0"
+    url: "https://github.com/C4illin/ConvertX/releases/tag/v0.20.0"
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-28"
+    url: "https://github.com/C4illin/ConvertX/releases/tag/v0.20.0"
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2024
+    url: "https://github.com/C4illin/ConvertX/releases/tag/v0.1.0"
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 19391
+    url: "https://api.github.com/repos/C4illin/ConvertX"
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 47
+    url: "https://api.github.com/repos/C4illin/ConvertX/contributors"
+    checkedAt: 2026-11-03
+    via: api
+  - field: dockerPulls
+    value: "647842 (2026-11-03)"
+    url: "https://hub.docker.com/v2/repositories/c4illin/convertx/"
+    checkedAt: 2026-11-03
+    via: api
+notFound: [runsAs, homepage, docs, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, pluginDirectory, pluginCount, hqCountry, multisite, livePreview, i18n, templating, headlessApi, contentStore, databases, adminUi, userRoles, sso, importsFrom, paidEdition, renderingModes, apiLimits, hostedOffering, regions, endoflifeId, npmName, packagistName, npmWeeklyDownloads]
+unreadable: []
+notes: >
+  In doubt: the project's own pages document no API, SDK, webhook or embed that a website or web app calls or sends to, so the boundary test "wired into an app" is not met on the sources read; a documented integration in the README or a docs page would settle it, and until then status stays stub. The README describes a browser interface where people register accounts and convert their own files; ALLOW_UNAUTHENTICATED, UNAUTHENTICATED_USER_SHARING and WEBROOT are settings of that interface, not an integration. The repository has no docs folder and no API reference. The README names no person, so the maintainer is the GitHub account C4illin; the profile of that account names a person, which the README does not repeat. No homepage: the project has no site beyond the repository. The README's compose example is the primary install route; a source build is documented only for development (bun install, bun run dev), so no installMethod for it is recorded. The CHANGELOG mentions api only inside the word vaapi. The README shows a compose file and a docker run command; both mount ./data into the container. The README lists the converter tools behind the conversions, among them Inkscape, LibreOffice, Pandoc, ImageMagick and FFmpeg; the list is not recorded as a field.

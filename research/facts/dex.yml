@@ -1,0 +1,243 @@
+id: dex
+name: Dex
+status: accepted
+checkedAt: 2026-11-03
+description: OpenID Connect identity service that sits in front of LDAP, SAML and social login providers, so applications only speak OpenID Connect.
+facts:
+  - field: homepage
+    value: https://dexidp.io
+    url: https://dexidp.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: Federated OpenID Connect.
+  - field: docs
+    value: https://dexidp.io/docs/
+    url: https://dexidp.io/docs/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/dexidp/dex
+    url: https://github.com/dexidp/dex
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/dexidp
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Dex IdP Contributors
+    url: https://dexidp.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: Dex IdP Contributors
+  - field: categories
+    value: identity-provider
+    url: https://dexidp.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: Sits in front of LDAP, SAML, GitHub, Google and more
+  - field: categories
+    value: oidc-provider
+    url: https://dexidp.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: Federated OpenID Connect.
+  - field: language
+    value: Go
+    url: https://github.com/dexidp/dex
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value:
+      - binary
+    url: https://dexidp.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: Dex is a single static Go binary
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/dexidp/dex
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/dexidp/dex
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://github.com/dexidp/dex/releases/tag/v2.46.1
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-21
+    url: https://github.com/dexidp/dex/releases/tag/v2.46.1
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/dexidp/dex/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 11226
+    url: https://github.com/dexidp/dex
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 273
+    url: https://github.com/dexidp/dex
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: docker
+    url: https://dexidp.io/docs/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: Dex is primarily distributed as a container image
+  - field: installMethod
+    value: helm
+    url: https://dexidp.io/docs/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: A reference Kubernetes Helm chart for dex can be found at charts.dexidp.io
+  - field: installMethod
+    value: source-build
+    url: https://dexidp.io/docs/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: To build dex from source code, install a working Go environment
+  - field: docker
+    value: ghcr.io/dexidp/dex
+    url: https://dexidp.io/docs/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: ghcr.io/dexidp/dex
+  - field: docker
+    value: docker.io/dexidp/dex
+    url: https://dexidp.io/docs/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: docker.io/dexidp/dex
+  - field: dockerPulls
+    value: 12621883 (2026-11-03)
+    url: https://hub.docker.com/v2/repositories/dexidp/dex/
+    checkedAt: 2026-11-03
+    via: api
+  - field: runsAs
+    value:
+      - always-on
+    url: https://dexidp.io/
+    checkedAt: 2026-11-03
+    via: page
+    quote: Dex runs as a Kubernetes deployment, a systemd unit or a container on any substrate.
+  - field: protocols
+    value:
+      - oidc
+      - oauth2
+    url: https://dexidp.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: OIDC and OAuth2 all the way down.
+  - field: sso
+    value:
+      - ldap
+      - saml
+      - oidc
+    url: https://dexidp.io/
+    checkedAt: 2026-11-03
+    via: page
+    quote: Dex ships the login UI and upstream connectors (LDAP, SAML, GitHub, OIDC) in one process.
+  - field: databases
+    value:
+      - sqlite
+      - postgres
+      - mysql
+    url: https://dexidp.io/docs/configuration/storage/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Dex supports three flavors of SQL: SQLite3, Postgres and MySQL."
+  - field: alternativeTo
+    value: keycloak
+    url: https://dexidp.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: vs Keycloak No JVM, no database required
+  - field: alternativeTo
+    value: authentik
+    url: https://dexidp.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: vs Authentik Federates upstream, doesn't replace it
+  - field: alternativeTo
+    value: authelia
+    url: https://dexidp.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: vs Authelia / OAuth2 Proxy Protocol provider, not a gateway
+  - field: alternativeTo
+    value: oauth2-proxy
+    url: https://dexidp.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: vs Authelia / OAuth2 Proxy Protocol provider, not a gateway
+  - field: alternativeTo
+    value: aws-cognito
+    url: https://dexidp.io
+    checkedAt: 2026-11-03
+    via: page
+    quote: vs Cognito / GCP Identity Runs on your infrastructure
+  - field: forum
+    value: https://github.com/dexidp/dex/discussions
+    url: https://dexidp.io/docs/
+    checkedAt: 2026-11-03
+    via: page
+    quote: GitHub Discussions board
+  - field: alternativeTo
+    value: ory-hydra
+    url: https://dexidp.io/
+    checkedAt: 2026-11-03
+    via: page
+    quote: vs Ory Hydra Login flow and connectors included
+  - field: alternativeTo
+    value: zitadel
+    url: https://dexidp.io/
+    checkedAt: 2026-11-03
+    via: page
+    quote: vs Zitadel Protocol adapter, not a data plane
+notFound:
+  - discord
+  - x
+  - bluesky
+  - mastodon
+  - newsletter
+  - pluginDirectory
+  - pluginCount
+  - parent
+  - basedOn
+  - forkOf
+  - successorOf
+  - importsFrom
+  - multisite
+  - livePreview
+  - userRoles
+  - adminUi
+  - contentStore
+  - paidEdition
+  - selfHostOption
+  - apiLimits
+  - renderingModes
+  - templating
+  - i18n
+  - freeTier
+  - hqCountry
+  - wikidata
+  - usageShare
+  - reportedInstalls
+  - npmName
+  - npmWeeklyDownloads
+  - pricingPage
+  - subreddit
+unreadable: []
+notes: "The homepage footer reads \"Dex IdP Contributors\", which is the recorded maintainer; the repository's MAINTAINERS.md names the current maintainers group. The homepage says \"Dex is developed under the Cloud Native Computing Foundation\" and marks the project as a CNCF Sandbox project: that is hosting, so it is recorded here and not as maintainer, and no parent or hqCountry is recorded because a foundation incorporation is no project headquarters. The README marks the SAML 2.0 connector as unmaintained and likely vulnerable to auth bypasses. The storage page also lists etcd and Kubernetes custom resource definitions as storage backends; they are not SQL and are not in databases. The getting started page's build instruction says Go 1.19 or greater; no runtimeMin is recorded because that is a build requirement, not a runtime of the released binary. The docs page names the #dex channel on the CNCF Slack (cloud-native.slack.com/archives/C01HF2G1R34) and the GitHub Discussions board; the homepage footer has no social profile link. Dex provides a gRPC service for programmatic modification of its state (dexidp.io/docs/configuration/api/), off by default; the headlessApi vocabulary has no grpc value, so no field holds it. The container image entrypoint uses gomplate to pre-process the configuration file, which is a configuration feature, so templating is not recorded. The Docker Hub figure is the docker.io/dexidp/dex count from the Docker Hub API, which the docs name beside ghcr.io/dexidp/dex."

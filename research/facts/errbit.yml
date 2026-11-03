@@ -1,0 +1,185 @@
+id: errbit
+name: Errbit
+status: accepted
+checkedAt: 2026-11-03
+description: "Self-hosted error catcher, compatible with the Airbrake API, for collecting and managing errors from other applications."
+facts:
+  - field: homepage
+    value: "https://errbit.com"
+    url: https://errbit.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: "https://github.com/errbit/errbit"
+    url: https://github.com/errbit/errbit
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://errbit.com/docs/main/"
+    url: https://errbit.com/docs/main/
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "Errbit Team"
+    url: https://github.com/errbit/errbit/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2010-2026 Errbit Team"
+  - field: repoOwnerType
+    value: organization
+    url: https://github.com/errbit/errbit
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: ["error-tracking"]
+    url: https://github.com/errbit/errbit
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The open source, self-hosted error catcher"
+  - field: compatibleWith
+    value: "Airbrake API"
+    url: https://github.com/errbit/errbit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "It is Airbrake API compliant"
+  - field: firstRelease
+    value: "2013"
+    url: https://github.com/errbit/errbit/commit/224f32a1b565fc92bae758f6986a4dd7f13fd71b
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: "Ruby"
+    url: https://github.com/errbit/errbit
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: ["ruby"]
+    url: https://github.com/errbit/errbit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Ruby 4.0"
+  - field: runtimeMin
+    value: "4.0"
+    url: https://github.com/errbit/errbit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Ruby 4.0"
+  - field: databases
+    value: ["mongodb"]
+    url: https://github.com/errbit/errbit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MongoDB >= 7.0"
+  - field: adminUi
+    value: "yes, a web UI for apps and their errors"
+    url: https://github.com/errbit/errbit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Notices with identical fingerprints appear in the UI as different occurrences of the same error"
+  - field: sso
+    value: "GitHub OAuth"
+    url: https://github.com/errbit/errbit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "you should see the option to Sign in with GitHub on the Login page"
+  - field: sso
+    value: "Google OAuth"
+    url: https://github.com/errbit/errbit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "you should see the option to Sign in with Google on the Login page"
+  - field: sso
+    value: "LDAP"
+    url: https://github.com/errbit/errbit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Now login with your user from LDAP, this will create a user in the database"
+  - field: installMethod
+    value: ["git clone and bundle install"]
+    url: https://github.com/errbit/errbit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "bundle install"
+  - field: installMethod
+    value: ["docker image errbit/errbit"]
+    url: https://github.com/errbit/errbit/blob/main/docs/deployment/docker.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Errbit provides official Docker images to make Docker deployment easy."
+  - field: installMethod
+    value: ["heroku"]
+    url: https://github.com/errbit/errbit/blob/main/docs/deployment.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "official support is limited to Heroku"
+  - field: installMethod
+    value: ["dokku"]
+    url: https://github.com/errbit/errbit/blob/main/docs/deployment.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Dokku"
+  - field: installMethod
+    value: ["kubernetes (experimental)"]
+    url: https://github.com/errbit/errbit/blob/main/docs/deployment.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Kubernetes (experimental)"
+  - field: docker
+    value: "errbit/errbit"
+    url: https://github.com/errbit/errbit/blob/main/docs/deployment/docker.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "errbit/errbit:latest"
+  - field: dockerPulls
+    value: "3708409 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/errbit/errbit/
+    checkedAt: 2026-11-03
+    via: api
+  - field: userRoles
+    value: admin flag on users
+    url: https://github.com/errbit/errbit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "set the admin flag for your user"
+  - field: newsletter
+    value: https://groups.google.com/group/errbit
+    url: https://github.com/errbit/errbit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Join the Google Group to receive updates and notifications."
+  - field: runsAs
+    value: ["always-on"]
+    url: https://github.com/errbit/errbit/blob/main/docs/deployment.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Nginx or Apache can be used as a reverse-proxy to Errbit's Puma."
+  - field: license
+    value: "MIT"
+    url: https://github.com/errbit/errbit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Errbit is available as open source under the terms of the MIT License"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/errbit/errbit/releases/tag/v0.11.6
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-20"
+    url: https://github.com/errbit/errbit/releases/tag/v0.11.6
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 4270
+    url: https://api.github.com/repos/errbit/errbit
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 257
+    url: https://api.github.com/repos/errbit/errbit/contributors?per_page=1
+    checkedAt: 2026-11-03
+    via: api
+notFound: [hqCountry, basedOn, parent, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, subreddit, mastodon, bluesky, x, discord, pluginDirectory, pluginCount, regions, apiLimits, hostedOffering, paidEdition, pricingPage, i18n, multisite, livePreview, templating, headlessApi, importsFrom, usageShare, reportedInstalls, npmName, packagistName, rubygemsName, forum]
+unreadable: []
+notes: >
+  The record covers the Errbit server, an error catcher that receives notices from applications through the Airbrake API. The airbrake gem and airbrake-js client are the Airbrake project's packages, not Errbit's, so no registry figure is recorded for them. The README says Errbit is "Airbrake API compliant" and names the airbrake gem as the client; the Airbrake project is not a basedOn parent of the Errbit code. Versions: the highest stable release is v0.11.6 (2026-10-20), so currentMajor is 0 and the minor line 0.11 is not recorded. The v0.11.0.rc1 tag (2026-05-20) is a release candidate and not recorded as latestPrereleaseDate because it is older than the latest release. firstRelease is 2013 from the commit date of tag v0.1.0, which predates the first GitHub release (v0.9.0, 2020-03-16). The docs/deployment/docker.md page says no non-latest tags were published since 2023 and that the last release was v0.9.0 in 2020; the releases page lists releases up to 2026, so that Docker page is out of date and is not used as an end signal. The Errbit Team in the LICENSE copyright line is recorded as the maintainer. The docs name Heroku as the only route with official support; Dokku and Kubernetes (marked experimental) are documented in docs/deployment. Errbit states its own error log goes to an internal app named Self.Errbit; the GitHub Issues plugin is named as the only officially supported issue tracker plugin. The Google Group in the README is a mailing list for updates and is recorded as newsletter. The docs folder documents a JSON statistics API (docs/api/stats.md, /api/v1/stats/app with an API key), which no field holds. The MongoDB requirement comes from the README; the configuration page states MONGO_URL defaults to mongodb://localhost.

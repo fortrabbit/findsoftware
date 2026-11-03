@@ -1,0 +1,290 @@
+id: fusionauth
+name: FusionAuth
+status: accepted
+checkedAt: 2026-11-03
+description: "Customer identity and access management server, self-hosted or hosted by FusionAuth, with a free Community edition."
+facts:
+  - field: homepage
+    value: "https://fusionauth.io"
+    url: "https://fusionauth.io/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Authentication & User Management Software"
+  - field: repository
+    value: "https://github.com/FusionAuth/fusionauth-containers"
+    url: "https://api.github.com/repos/FusionAuth/fusionauth-containers"
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://fusionauth.io/docs/"
+    url: "https://fusionauth.io/docs/"
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "Inversoft, LLC."
+    url: "https://fusionauth.io/license"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Inversoft, LLC., dba FusionAuth, a Delaware limited liability company"
+  - field: maintainerType
+    value: "company"
+    url: "https://fusionauth.io/license"
+    checkedAt: 2026-11-03
+    via: page
+  - field: repoOwnerType
+    value: "organization"
+    url: "https://api.github.com/users/FusionAuth"
+    checkedAt: 2026-11-03
+    via: api
+  - field: sourcePublic
+    value: false
+    url: "https://api.github.com/repos/FusionAuth/fusionauth-containers/contents"
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: "https://fusionauth.io/docs/release-notes"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "12 September 2018 New Feature First made FusionAuth generally available!"
+  - field: categories
+    value: ["auth", "identity-provider"]
+    url: "https://fusionauth.io/docs/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "FusionAuth is a Customer Identity and Access Management (CIAM) server that provides:"
+  - field: runtime
+    value: ["jvm"]
+    url: "https://fusionauth.io/docs/get-started/download-and-install/reference/system-requirements"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "FusionAuth ships with its own version of Java."
+  - field: installMethod
+    value: "docker compose with fusionauth/fusionauth-app, PostgreSQL and OpenSearch"
+    url: "https://fusionauth.io/docs/get-started/download-and-install/docker"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Use the steps below to install FusionAuth, PostgreSQL, and OpenSearch using Docker Compose."
+  - field: installMethod
+    value: "package (rpm, deb, macOS, Windows, Homebrew) of fusionauth-app"
+    url: "https://fusionauth.io/docs/get-started/download-and-install/fusionauth-app"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This guide explains how to install the FusionAuth App from a package on your own server running Linux, macOS, or Windows."
+  - field: installMethod
+    value: "Kubernetes with provider guides (EKS, GKE, AKS) and a deployment guide"
+    url: "https://fusionauth.io/docs/get-started/download-and-install/kubernetes"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The following set of guides are designed to help you get FusionAuth up and running in a Kubernetes cluster as quickly and easily as possible."
+  - field: docker
+    value: "fusionauth/fusionauth-app"
+    url: "https://fusionauth.io/docs/get-started/download-and-install/docker"
+    checkedAt: 2026-11-03
+    via: page
+  - field: dockerPulls
+    value: "21658304 (2026-11-03)"
+    url: "https://hub.docker.com/v2/repositories/fusionauth/fusionauth-app/"
+    checkedAt: 2026-11-03
+    via: api
+  - field: databases
+    value: ["postgres"]
+    url: "https://fusionauth.io/docs/get-started/download-and-install/system-requirements"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Recent versions of FusionAuth require PostgreSQL 14 or newer."
+  - field: databases
+    value: ["mysql"]
+    url: "https://fusionauth.io/docs/get-started/download-and-install/system-requirements"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can also run FusionAuth with MySQL 8.0 or newer using MySQL Connector."
+  - field: runsAs
+    value: ["always-on"]
+    url: "https://fusionauth.io/docs/get-started/download-and-install/start-and-stop"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "also installs the fusionauth-search and fusionauth-app services"
+  - field: adminUi
+    value: "Admin UI on port 9011"
+    url: "https://fusionauth.io/docs/get-started/download-and-install/docker"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Visit http://localhost:9011 to access the Admin UI."
+  - field: headlessApi
+    value: ["rest"]
+    url: "https://fusionauth.io/docs/apis/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The core of FusionAuth is a set of RESTful APIs"
+  - field: templating
+    value: "Freemarker"
+    url: "https://fusionauth.io/docs/apis/themes/advanced-themes"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "via Freemarker templates"
+  - field: i18n
+    value: "localization and translation of interface text"
+    url: "https://fusionauth.io/docs/get-started/core-concepts/localization-and-internationalization"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "FusionAuth is built from the ground up with localization (often abbreviated l10n), translation and internationalization (often abbreviated i18n) in mind."
+  - field: userRoles
+    value: "role-based access"
+    url: "https://fusionauth.io/docs/get-started/core-concepts/roles"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can define as many roles as you want in an application."
+  - field: sso
+    value: ["SAML v2"]
+    url: "https://fusionauth.io/docs/lifecycle/authenticate-users/identity-providers/overview-samlv2"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "enables users to log in to FusionAuth applications via a third-party SAML v2 Identity Provider"
+  - field: sso
+    value: ["LDAP"]
+    url: "https://fusionauth.io/docs/lifecycle/migrate-users/connectors/ldap-connector"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "LDAP Connectors allow you to authenticate users against or migrate them from an LDAP server accessible to FusionAuth."
+  - field: hostedOffering
+    value: "FusionAuth Cloud"
+    url: "https://fusionauth.io/docs/cloud/cloud-vs-self-hosted"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "use FusionAuth Cloud to host your instance"
+  - field: pricingPage
+    value: "https://fusionauth.io/pricing"
+    url: "https://fusionauth.io/"
+    checkedAt: 2026-11-03
+    via: page
+  - field: freeTier
+    value: "Community edition, free and unlimited"
+    url: "https://fusionauth.io/pricing"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "FusionAuth Community is free and unlimited."
+  - field: paidEdition
+    value: "Starter, Essentials and Enterprise plans, enabled by a license key on the instance"
+    url: "https://fusionauth.io/docs/get-started/core-concepts/plans-features"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "FusionAuth has several different plans (also called editions ) which enable advanced features"
+  - field: license
+    value: "FusionAuth Customer License Agreement"
+    url: "https://fusionauth.io/license"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "governs Licensee's use of Company's FusionAuth™ software"
+  - field: licenseModel
+    value: "commercial"
+    url: "https://fusionauth.io/license"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "governs Licensee's use of Company's FusionAuth™ software"
+  - field: currentMajor
+    value: "1"
+    url: "https://fusionauth.io/docs/release-notes"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Version 1.70.0"
+  - field: latestReleaseDate
+    value: "2026-10-28"
+    url: "https://fusionauth.io/docs/release-notes"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "28 October 2026 Summary FusionAuth 1.70.0 adds OAuth 2.0 Token Exchange"
+  - field: githubStargazers
+    value: 240
+    url: "https://api.github.com/repos/FusionAuth/fusionauth-containers"
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 25
+    url: "https://api.github.com/repos/FusionAuth/fusionauth-containers/contributors?per_page=1"
+    checkedAt: 2026-11-03
+    via: api
+  - field: x
+    value: "https://x.com/fusionauth"
+    url: "https://fusionauth.io/"
+    checkedAt: 2026-11-03
+    via: page
+  - field: bluesky
+    value: "https://bsky.app/profile/fusionauth.io"
+    url: "https://fusionauth.io/"
+    checkedAt: 2026-11-03
+    via: page
+  - field: protocols
+    value: ["OAuth 2.0", "OpenID Connect", "SAML v2"]
+    url: "https://fusionauth.io/docs/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "FusionAuth provides a full implementation of OAuth2 , OpenID Connect (OIDC) , and SAML v2"
+  - field: forum
+    value: "https://fusionauth.io/community/forum/"
+    url: "https://fusionauth.io/"
+    checkedAt: 2026-11-03
+    via: page
+  - field: youtube
+    value: "https://www.youtube.com/c/FusionAuth"
+    url: "https://fusionauth.io/"
+    checkedAt: 2026-11-03
+    via: page
+  - field: alternativeTo
+    value: ["clerk"]
+    url: "https://fusionauth.io/compare/fusionauth-vs-clerk"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "FusionAuth vs Clerk"
+  - field: alternativeTo
+    value: ["aws-cognito"]
+    url: "https://fusionauth.io/compare/fusionauth-vs-cognito"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "FusionAuth vs Amazon Cognito"
+  - field: alternativeTo
+    value: ["descope"]
+    url: "https://fusionauth.io/compare/fusionauth-vs-descope"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "FusionAuth vs Descope"
+  - field: alternativeTo
+    value: ["stytch"]
+    url: "https://fusionauth.io/compare/fusionauth-vs-stytch"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "FusionAuth vs Stytch"
+  - field: alternativeTo
+    value: ["keycloak"]
+    url: "https://fusionauth.io/docs/lifecycle/migrate-users/provider-specific/keycloak"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "If you are looking to compare FusionAuth and Keycloak, this document may help"
+  - field: alternativeTo
+    value: ["auth0"]
+    url: "https://fusionauth.io/docs/lifecycle/migrate-users/provider-specific/auth0"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "If you are looking to compare FusionAuth and Auth0, see our comparison"
+  - field: importsFrom
+    value: ["Keycloak"]
+    url: "https://fusionauth.io/docs/lifecycle/migrate-users/provider-specific/keycloak"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This document will help you migrate from Keycloak to FusionAuth."
+  - field: importsFrom
+    value: ["Auth0"]
+    url: "https://fusionauth.io/docs/lifecycle/migrate-users/provider-specific/auth0"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This document explains how to migrate common Auth0 configurations to FusionAuth."
+  - field: importsFrom
+    value: ["Firebase"]
+    url: "https://fusionauth.io/docs/lifecycle/migrate-users/provider-specific/firebase"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "user data from a Firebase managed user database into FusionAuth."
+notFound: [hqCountry, parent, forkOf, successorOf, endoflifeId, language, discord, mastodon, subreddit, newsletter, usageShare, reportedInstalls, apiLimits, regions, pluginDirectory, pluginCount, contentStore, multisite, livePreview, renderingModes, selfHostOption, wikidata, basedOn, deployTargets]
+unreadable: []
+notes: >
+  Licensed under the FusionAuth Customer License Agreement, which also covers a hosting license and support services; the Free-Tier Software clause lets anyone download the free version, and the Free-Tier Licensee has no rights to the Hosted License. Paid plans are activated with a license key entered on the instance (the license page's "Reactor tab" step), so the paid plans apply to self-hosted installs as well as the cloud. The fusionauth-containers repository holds container definitions and a README only, so sourcePublic is false and stars and contributors describe that repository, not the server. The server bundles its own Java (system requirements page); the Java version is not a runtimeMin. The search engine is Elasticsearch 7.6.1 to 7.17.x or OpenSearch 2.x, per the search page ("FusionAuth currently supports Elasticsearch versions 7.6.1 through 7.17.x."); no field exists for it, so it is recorded here only. Further protocols from its API pages: OAuth 2.0 RFCs 6749, 7662, 8628, 8693, SCIM ("This page contains all of the APIs for managing Users and Groups using SCIM requests"), and WebAuthn passkeys. Maintainer legal name from the license page; the page gives a Delaware LLC, which is the incorporation state, so no hqCountry is recorded. Social links: GitHub organization fusionauth, LinkedIn and the blog are on the homepage without a matching field. The language is not recorded: no page says the server is written in Java, only that it ships its own Java runtime. The docs install page contains text addressed to AI agents; it was read as data and not followed. Release 1.70.0 is dated 28 October 2026 on the release notes page and is the fusionauth-containers tag 1.70.0 in the repository.

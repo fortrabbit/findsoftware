@@ -1,0 +1,197 @@
+id: featbit
+name: FeatBit
+status: accepted
+checkedAt: 2026-11-03
+description: "Open-source feature flag platform that can be self-hosted or used as FeatBit Cloud, with SDKs for application code."
+facts:
+  - field: homepage
+    value: "https://www.featbit.co"
+    url: https://www.featbit.co/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "FeatBit is an open-source feature flag platform for reducing release risk."
+  - field: repository
+    value: "https://github.com/featbit/featbit"
+    url: https://github.com/featbit/featbit
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://docs.featbit.co"
+    url: https://docs.featbit.co/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Current version (v6)"
+  - field: maintainer
+    value: "featbit"
+    url: https://github.com/featbit/featbit/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2022 featbit"
+  - field: repoOwnerType
+    value: organization
+    url: https://github.com/featbit/featbit
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: ["feature-flags"]
+    url: https://www.featbit.co/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "open-source feature flag platform"
+  - field: firstRelease
+    value: "2022"
+    url: https://github.com/featbit/featbit/releases/tag/1.0.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: "C#"
+    url: https://github.com/featbit/featbit
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: ["dotnet"]
+    url: https://github.com/featbit/featbit/blob/6.1.0/modules/back-end/src/Api/Api.csproj
+    checkedAt: 2026-11-03
+    via: api
+    quote: "<TargetFramework>net10.0</TargetFramework>"
+  - field: runtimeMin
+    value: ".NET 10"
+    url: https://github.com/featbit/featbit/blob/6.1.0/modules/back-end/src/Api/Api.csproj
+    checkedAt: 2026-11-03
+    via: api
+    quote: "<TargetFramework>net10.0</TargetFramework>"
+  - field: databases
+    value: ["postgres", "mongodb"]
+    url: https://docs.featbit.co/tech-stack/infrastructure-components
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Primary Database : MongoDB or Postgres for storing feature flags"
+  - field: databases
+    value: ["clickhouse"]
+    url: https://docs.featbit.co/tech-stack/infrastructure-components
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Professional version leverages ClickHouse for high-performance analytics on large datasets"
+  - field: runsAs
+    value: ["always-on"]
+    url: https://docs.featbit.co/tech-stack/application-services
+    checkedAt: 2026-11-03
+    via: page
+    quote: "FeatBit consists of three core services that work together."
+  - field: installMethod
+    value: ["docker compose"]
+    url: https://docs.featbit.co/installation/docker-compose
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker compose up -d"
+  - field: installMethod
+    value: ["kubernetes helm charts"]
+    url: https://github.com/featbit/featbit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "deploy with the official Helm charts"
+  - field: installMethod
+    value: ["aws terraform"]
+    url: https://github.com/featbit/featbit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "deploy with FeatBit's Terraform project"
+  - field: installMethod
+    value: ["microsoft aspire to azure container apps"]
+    url: https://github.com/featbit/featbit/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "deploy to Azure Container Apps with FeatBit Aspire"
+  - field: adminUi
+    value: yes, a web interface for flags, segments and experiments
+    url: https://docs.featbit.co/tech-stack/application-services
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A web interface built with React, shadcn/ui, and Tailwind CSS for managing feature flags"
+  - field: headlessApi
+    value: [rest]
+    url: https://docs.featbit.co/tech-stack/application-services
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A .NET-based RESTful backend service"
+  - field: sso
+    value: [oidc]
+    url: https://docs.featbit.co/integrations/single-sign-on/single-sign-on
+    checkedAt: 2026-11-03
+    via: page
+    quote: "SSO is available on FeatBit(an open source feature flags service) Self-hosted via OpenID Connect."
+  - field: userRoles
+    value: yes, custom roles through IAM policies
+    url: https://docs.featbit.co/iam/overview
+    checkedAt: 2026-11-03
+    via: page
+    quote: "FeatBit IAM gives you precise access control to everything in FeatBit"
+  - field: hostedOffering
+    value: "FeatBit Cloud at app.featbit.co"
+    url: https://www.featbit.co/legal/terms-and-conditions
+    checkedAt: 2026-11-03
+    via: page
+    quote: "These terms apply to FeatBit Cloud at app.featbit.co"
+  - field: paidEdition
+    value: "features behind a license key (scheduled flag changes, SSO, multi-organizations, fine-grained access control)"
+    url: https://docs.featbit.co/licenses/overview
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Certain features in FeatBit are subject to licensing restrictions and require a valid license key."
+  - field: pricingPage
+    value: "https://www.featbit.co/pricing"
+    url: https://www.featbit.co/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: freeTier
+    value: "Foundation plan, free, self-hosted"
+    url: https://www.featbit.co/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Full-featured open source platform, forever free."
+  - field: license
+    value: "MIT"
+    url: https://github.com/featbit/featbit/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MIT License"
+  - field: license
+    value: "commercial order terms for licensed features (self-hosted)"
+    url: https://www.featbit.co/company
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Order-specific commercial license terms are provided with the applicable self-hosted Order."
+  - field: currentMajor
+    value: 6
+    url: https://github.com/featbit/featbit/releases/tag/6.1.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-27"
+    url: https://github.com/featbit/featbit/releases/tag/6.1.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 1954
+    url: https://github.com/featbit/featbit
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 37
+    url: https://github.com/featbit/featbit
+    checkedAt: 2026-11-03
+    via: api
+  - field: discord
+    value: "https://discord.gg/ytK9xGJSw3"
+    url: https://docs.featbit.co/installation/docker-compose
+    checkedAt: 2026-11-03
+    via: page
+  - field: youtube
+    value: "https://www.youtube.com/@featbit"
+    url: https://www.featbit.co/
+    checkedAt: 2026-11-03
+    via: page
+notFound: [hqCountry, basedOn, parent, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, forum, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, regions, apiLimits, i18n, multisite, livePreview, templating, importsFrom, usageShare, reportedInstalls, npmName, packagistName, dockerPulls, deployTargets, maintainerType]
+unreadable: []
+notes: >
+  The LICENSE copyright line reads "Copyright (c) 2022 featbit" and is recorded as the maintainer. The company page names three contracting entities, FeatBit Inc. (Colorado, United States), FeatBit SAS (Paris, France) and Ancient Moon Software Technology Co., Ltd. (Hong Kong), and the terms name FeatBit Inc. as the default provider; none is recorded as maintainer because the LICENSE line names none of them, and no single headquarters is stated, so hqCountry is unknown. The docs call FeatBit an Open Core product: the license docs say the majority of the code is MIT and that certain features need a license key. The Cloud terms say they do not govern Community Edition or customer-managed self-hosted deployments. The pricing page lists Foundation (free, self-host), Enterprise and Enterprise Premium plans; the Enterprise tier is a paid self-hosted plan, recorded in paidEdition without prices. SSO and fine-grained access control are license-key features per the license docs, so sso and userRoles are also covered by paidEdition. The docs and the pricing page describe three self-host sizes (Standalone with Postgres, Standard with Postgres or MongoDB plus Redis, Professional with Kafka and ClickHouse), recorded through the databases facts; the message queue is Postgres, Redis or Kafka and the cache is Redis or none, per the infrastructure components page, and these are noted here only; the compose files are docker-compose.yml, docker-compose-standard.yml and docker-compose-pro.yml. The SDK packages are separate repositories and their downloads are not recorded here. The LinkedIn company page is linked from the homepage and is not recorded. The Helm chart repository is featbit/featbit-charts and the Terraform AWS and Azure projects are separate repositories. The current major is 6, the latest stable release 6.1.0 (2026-10-27). The 6.0.0-preview release is older than the stable release and is not recorded as a prerelease date.

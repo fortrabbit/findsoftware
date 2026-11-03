@@ -1,0 +1,1 @@
+docker-mailserver is a mail server packaged as a container image. It runs SMTP and IMAP services together with anti-spam and anti-virus components, and it is configured through files rather than a database. Its documentation covers relaying outbound mail through another mail service, such as Gmail or AWS SES, and the image is published to GitHub Container Registry and Docker Hub.

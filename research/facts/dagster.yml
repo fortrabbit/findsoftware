@@ -1,0 +1,161 @@
+id: dagster
+name: Dagster
+status: stub
+checkedAt: 2026-11-03
+description: Python data pipeline orchestrator for declaring, running and monitoring data assets as Python functions.
+facts:
+  - field: homepage
+    value: https://dagster.io
+    url: https://dagster.io/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/dagster-io/dagster
+    url: https://api.github.com/repos/dagster-io/dagster
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://docs.dagster.io
+    url: https://docs.dagster.io/
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Dagster Labs, Inc.
+    url: https://raw.githubusercontent.com/dagster-io/dagster/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: Copyright 2025 Dagster Labs, Inc.
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/dagster-io
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value:
+      - workflow-engine
+    url: https://github.com/dagster-io/dagster
+    checkedAt: 2026-11-03
+    via: page
+    quote: Dagster is a cloud-native data pipeline orchestrator
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/dagster-io/dagster
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value:
+      - python
+    url: https://raw.githubusercontent.com/dagster-io/dagster/1.13.28/python_modules/dagster/pyproject.toml
+    checkedAt: 2026-11-03
+    via: api
+    quote: requires-python = ">=3.10,<3.15"
+  - field: runtimeMin
+    value: Python 3.10
+    url: https://raw.githubusercontent.com/dagster-io/dagster/1.13.28/python_modules/dagster/pyproject.toml
+    checkedAt: 2026-11-03
+    via: api
+    quote: requires-python = ">=3.10,<3.15"
+  - field: installMethod
+    value: uv add dagster dagster-webserver dagster-dg-cli
+    url: https://raw.githubusercontent.com/dagster-io/dagster/master/python_modules/dagster/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: uv add dagster dagster-webserver dagster-dg-cli
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/dagster-io/dagster/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: Apache License Version 2.0, January 2004
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/dagster-io/dagster/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/dagster-io/dagster/releases/latest
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-30
+    url: https://api.github.com/repos/dagster-io/dagster/releases/latest
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 16363
+    url: https://api.github.com/repos/dagster-io/dagster
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 406
+    url: https://api.github.com/repos/dagster-io/dagster/contributors?per_page=1
+    checkedAt: 2026-11-03
+    via: api
+  - field: pypiName
+    value: dagster
+    url: https://pypi.org/pypi/dagster/json
+    checkedAt: 2026-11-03
+    via: api
+  - field: pypiDownloads
+    value: 7886605 last month (2026-11-03)
+    url: https://pypistats.org/api/packages/dagster/recent
+    checkedAt: 2026-11-03
+    via: api
+    quote: '"last_month":7886605'
+  - field: firstRelease
+    value: 2018
+    url: https://api.github.com/repos/dagster-io/dagster/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: x
+    value: https://x.com/dagster
+    url: https://dagster.io/
+    checkedAt: 2026-11-03
+    via: page
+  - field: forum
+    value: https://github.com/dagster-io/dagster/discussions
+    url: https://raw.githubusercontent.com/dagster-io/dagster/master/python_modules/dagster/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: Start a GitHub Discussion
+notFound:
+  - hqCountry
+  - parent
+  - basedOn
+  - forkOf
+  - successorOf
+  - alternativeTo
+  - importsFrom
+  - multisite
+  - livePreview
+  - userRoles
+  - sso
+  - i18n
+  - selfHostOption
+  - headlessApi
+  - templating
+  - adminUi
+  - paidEdition
+  - pricingPage
+  - pluginDirectory
+  - pluginCount
+  - discord
+  - subreddit
+  - mastodon
+  - bluesky
+  - newsletter
+  - wikidata
+  - usageShare
+  - reportedInstalls
+  - npmName
+  - npmWeeklyDownloads
+  - endoflifeId
+  - renderingModes
+  - runsAs
+  - contentStore
+  - databases
+  - apiLimits
+  - regions
+unreadable: []
+notes: "Stub, doubt first: the project's own GraphQL API page (docs.dagster.io/api/graphql) says the API lets clients query runs and launch job executions \"on custom events\", and it describes the API as \"still evolving and is subject to breaking changes\" with \"a large portion of the API is primarily for internal use by the Dagster webserver\". It is not clear that an app is meant to call it, and a data pipeline orchestrator is not a website or web app, so a reviewer should decide, as with airflow. A second doubt is ownership: the homepage banner reads \"Dagster is now part of Prefect\", the page footer reads \"Prefect Technologies, Inc.\", the terms name \"Elementl, Inc.\" as the provider, and the LICENSE copyright line reads \"Dagster Labs, Inc.\", which is the recorded maintainer. The pyproject at tag 1.13.28 gives requires-python >=3.10, while the README says Python 3.9 through 3.14; the manifest value is recorded. The docs also list an External assets REST API, not read in full. The PyPI package dagster is the install target, and the pypistats figure is the last-month count. The governing law in the terms is California, which is not a country; hqCountry is unknown."

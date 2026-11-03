@@ -1,0 +1,5 @@
+GO Feature Flag keeps feature flags in YAML files. A relay proxy loads those files from a location such as S3, GitHub or a Kubernetes ConfigMap, holds them in memory, and answers flag evaluations from OpenFeature SDKs in the application. Rollout percentages, targeting rules and new flags are edits to the files, and the proxy picks them up on its periodic polling. The software is built on OpenFeature, and the homepage lists SDKs for JavaScript, Swift, Kotlin, Go, Java, .NET, Python, PHP, Ruby, Rust and other languages. A Go service that does not want to run the proxy can use the Go module, which contains the same logic. The relay proxy installs from a Docker image, Homebrew or a binary, and the deployment guide covers Kubernetes with Helm and AWS Lambda.
+
+## Worth knowing
+
+The relay proxy needs no database; its flags are the files it loads. Changes reach running proxies on the next poll, not at the moment the file is saved. The pricing page offers paid support and training on an Enterprise plan, and the software itself is MIT-licensed and free to use.

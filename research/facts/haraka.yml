@@ -1,0 +1,131 @@
+id: haraka
+name: Haraka
+status: stub
+checkedAt: 2026-11-03
+description: "Node.js SMTP server with a plugin system, run as a filtering mail transfer agent or a mail submission server."
+facts:
+  - field: homepage
+    value: "https://haraka.github.io/"
+    url: "https://haraka.github.io/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "is an open source SMTP server written in Node.js"
+  - field: repository
+    value: "https://github.com/haraka/Haraka"
+    url: "https://api.github.com/repos/haraka/Haraka"
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://haraka.github.io/getting_started"
+    url: "https://haraka.github.io/getting_started"
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "Haraka community"
+    url: "https://haraka.github.io/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "is now maintained by the Haraka community"
+  - field: maintainerType
+    value: "community"
+    url: "https://haraka.github.io/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "is now maintained by the Haraka community"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/haraka"
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: ["smtp-server"]
+    url: "https://github.com/haraka/Haraka/blob/master/README.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "SMTP server with a modular plugin architecture"
+  - field: language
+    value: "JavaScript"
+    url: "https://api.github.com/repos/haraka/Haraka"
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: ["node"]
+    url: "https://haraka.github.io/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "is an open source SMTP server written in Node.js"
+  - field: runtimeMin
+    value: "Node 20"
+    url: "https://github.com/haraka/Haraka/blob/v3.3.5/package.json"
+    checkedAt: 2026-11-03
+    via: page
+    quote: '"node": ">=20"'
+  - field: installMethod
+    value: [npm]
+    url: "https://haraka.github.io/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "npm install Haraka -g"
+  - field: installMethod
+    value: [source-build]
+    url: "https://github.com/haraka/Haraka/blob/master/README.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Running from Source"
+  - field: runsAs
+    value: ["always-on"]
+    url: "https://haraka.github.io/plugins/daemonize"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Daemonization is now built into Haraka."
+  - field: license
+    value: "MIT"
+    url: "https://github.com/haraka/Haraka/blob/v3.3.5/package.json"
+    checkedAt: 2026-11-03
+    via: page
+    quote: '"license": "MIT"'
+  - field: currentMajor
+    value: "3"
+    url: "https://github.com/haraka/Haraka/releases/tag/v3.3.5"
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-17"
+    url: "https://github.com/haraka/Haraka/releases/tag/v3.3.5"
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: "https://api.github.com/repos/haraka/Haraka/commits/v0.2"
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 5633
+    url: "https://api.github.com/repos/haraka/Haraka"
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 185
+    url: "https://api.github.com/repos/haraka/Haraka/contributors?per_page=1"
+    checkedAt: 2026-11-03
+    via: api
+  - field: npmName
+    value: "haraka"
+    url: "https://registry.npmjs.org/haraka/latest"
+    checkedAt: 2026-11-03
+    via: api
+  - field: npmWeeklyDownloads
+    value: "3197 (2026-10-23 to 2026-10-29, npm haraka, the server package)"
+    url: "https://api.npmjs.org/downloads/range/2026-10-23:2026-10-29/haraka"
+    checkedAt: 2026-11-03
+    via: api
+  - field: pluginDirectory
+    value: "https://github.com/haraka/Haraka/blob/master/Plugins.md"
+    url: "https://github.com/haraka/Haraka/blob/master/README.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A comprehensive registry of community and core plugins"
+notFound: [hqCountry, pricingPage, endoflifeId, usageShare, apiLimits, regions, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, paidEdition, hostedOffering, sso, dockerPulls]
+unreadable: []
+notes: >
+  Stub: not yet known whether an SMTP server is software a website or web app is wired into under criterion 1 and the boundary rule for end-user apps. The README describes Haraka as a filtering MTA or a mail submission agent on port 465 (and legacy 587) with the auth and DKIM plugins, and the Outbound docs describe SMTP AUTH and relay plugins; no page read says an application, app server or web app submits or relays mail through it. A docs page showing an application sending mail through Haraka would settle it. The homepage says the project was started by Matt Sergeant and is now maintained by the Haraka community, which is recorded as the maintainer; the README names Matt Simerson as the current maintainer. The README says Haraka is not a mail store, an LDA or an IMAP server, so no databases field is recorded. The npm package haraka is the server, installed with npm install -g; its download figure is for that package. The first tag is v0.2 (commit 2011-04-05), older than the first GitHub release (v2.7.0, 2015), so the tag sets firstRelease. The engines field in package.json names node >=20 at v3.3.5. The install docs name no Docker image, so no dockerPulls figure is recorded. The README lists a mailing list as a mailto address, which is not recorded as a forum.

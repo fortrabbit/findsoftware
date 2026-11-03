@@ -1,0 +1,156 @@
+id: docker-mailserver
+name: docker-mailserver
+status: stub
+checkedAt: 2026-11-03
+description: Container-based mail server that runs SMTP, IMAP and anti-spam services from configuration files.
+facts:
+  - field: homepage
+    value: https://docker-mailserver.github.io/docker-mailserver/latest/
+    url: https://docker-mailserver.github.io/docker-mailserver/latest/
+    checkedAt: 2026-11-03
+    via: page
+    quote: production-ready fullstack but simple mail server
+  - field: docs
+    value: https://docker-mailserver.github.io/docker-mailserver/latest/
+    url: https://docker-mailserver.github.io/docker-mailserver/latest/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/docker-mailserver/docker-mailserver
+    url: https://github.com/docker-mailserver/docker-mailserver
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/docker-mailserver
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Thomas Vial & Contributors
+    url: https://github.com/docker-mailserver/docker-mailserver/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+    quote: Thomas Vial & Contributors
+  - field: categories
+    value: smtp-server
+    url: https://docker-mailserver.github.io/docker-mailserver/latest/
+    checkedAt: 2026-11-03
+    via: page
+    quote: production-ready fullstack but simple mail server
+  - field: protocols
+    value:
+      - smtp
+      - imap
+    url: https://docker-mailserver.github.io/docker-mailserver/latest/
+    checkedAt: 2026-11-03
+    via: page
+    quote: (SMTP, IMAP, LDAP, Anti-spam, Anti-virus, etc.)
+  - field: language
+    value: Shell
+    url: https://github.com/docker-mailserver/docker-mailserver
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/docker-mailserver/docker-mailserver
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/docker-mailserver/docker-mailserver
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 16
+    url: https://github.com/docker-mailserver/docker-mailserver/releases/tag/v16.0.1
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-04
+    url: https://github.com/docker-mailserver/docker-mailserver/releases/tag/v16.0.1
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2021
+    url: https://github.com/docker-mailserver/docker-mailserver/releases/tag/v8.0.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 19717
+    url: https://github.com/docker-mailserver/docker-mailserver
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 340
+    url: https://github.com/docker-mailserver/docker-mailserver
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: docker
+    url: https://docker-mailserver.github.io/docker-mailserver/latest/usage/
+    checkedAt: 2026-11-03
+    via: page
+    quote: ghcr.io/docker-mailserver/docker-mailserver:latest
+  - field: docker
+    value: ghcr.io/docker-mailserver/docker-mailserver
+    url: https://docker-mailserver.github.io/docker-mailserver/latest/usage/
+    checkedAt: 2026-11-03
+    via: page
+    quote: ghcr.io/docker-mailserver/docker-mailserver:latest
+  - field: docker
+    value: docker.io/mailserver/docker-mailserver
+    url: https://docker-mailserver.github.io/docker-mailserver/latest/usage/
+    checkedAt: 2026-11-03
+    via: page
+    quote: docker.io/mailserver/docker-mailserver
+  - field: dockerPulls
+    value: 12633503 (2026-11-03)
+    url: https://hub.docker.com/v2/repositories/mailserver/docker-mailserver/
+    checkedAt: 2026-11-03
+    via: api
+  - field: runsAs
+    value:
+      - always-on
+    url: https://docker-mailserver.github.io/docker-mailserver/latest/faq/
+    checkedAt: 2026-11-03
+    via: page
+    quote: before the postfix, amavis and other daemons are started
+notFound:
+  - parent
+  - basedOn
+  - forkOf
+  - successorOf
+  - alternativeTo
+  - importsFrom
+  - multisite
+  - livePreview
+  - userRoles
+  - adminUi
+  - headlessApi
+  - contentStore
+  - databases
+  - paidEdition
+  - selfHostOption
+  - apiLimits
+  - renderingModes
+  - templating
+  - i18n
+  - freeTier
+  - hqCountry
+  - discord
+  - x
+  - bluesky
+  - mastodon
+  - newsletter
+  - subreddit
+  - forum
+  - wikidata
+  - usageShare
+  - reportedInstalls
+  - npmName
+  - npmWeeklyDownloads
+  - pricingPage
+  - hostedOffering
+unreadable: []
+notes: |
+  Stub: not yet known whether an SMTP mail server that serves mailboxes is software a website or web app is wired into under criterion 1 and the boundary rule for end-user apps. The docs describe mailboxes read through IMAP and mail clients, and relays between mail servers ("Relay inbound and outbound mail for an internal DMS", "Configure Gmail as a relay host", the AWS SES relay page); no page read names a website or web app that sends mail to its submission port. A docs page showing an application submitting mail to docker-mailserver over SMTP would settle it. The LICENSE file has two copyright lines, "Copyright © 2016 & 2017 Thomas Vial & Contributors" and "Copyright © 2016 - 2020 The GitHub Community & Contributors"; the maintainer follows the first and the second is recorded here as the other wording of the same MIT license. The docs state the project has no SQL database ("It employs only configuration files, no SQL database"), so no databases value is recorded. The GitHub releases start at v8.0.0 (2021-01-27); the changelog lists v7.1.0 and v7.2.0 without dates, so firstRelease is the first dated release. The GitHub language is Shell, which the language map does not hold, so the record would show no language value unless the map is extended.

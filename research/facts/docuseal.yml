@@ -1,0 +1,247 @@
+id: docuseal
+name: DocuSeal
+status: accepted
+checkedAt: 2026-11-03
+description: Document signing platform that turns PDFs into fillable forms, collects signatures online, and can be self-hosted.
+facts:
+  - field: name
+    value: DocuSeal
+    url: https://www.docuseal.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "DocuSeal | Open Source Document Signing"
+  - field: homepage
+    value: https://www.docuseal.com
+    url: https://www.docuseal.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "DocuSeal | Open Source Document Signing"
+  - field: repository
+    value: https://github.com/docusealco/docuseal
+    url: https://github.com/docusealco/docuseal
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://www.docuseal.com/docs
+    url: https://www.docuseal.com/docs
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: DocuSeal, LLC
+    url: https://www.docuseal.com/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "and DocuSeal, LLC (“DocuSeal,” “us,” “we,” or “our”)"
+  - field: repoOwnerType
+    value: organization
+    url: https://github.com/docusealco/docuseal
+    checkedAt: 2026-11-03
+    via: api
+  - field: hqCountry
+    value: US
+    url: https://www.docuseal.com/contact
+    checkedAt: 2026-11-03
+    via: page
+    quote: "© 2026 DocuSeal LLC 332 S Michigan Ave, Suite 121 #5896, Chicago IL 60604"
+  - field: firstRelease
+    value: "2023"
+    url: https://github.com/docusealco/docuseal/releases/tag/1.0.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [e-signature]
+    url: https://github.com/docusealco/docuseal/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "provides secure and efficient digital document signing and processing"
+  - field: language
+    value: Ruby
+    url: https://github.com/docusealco/docuseal
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://github.com/docusealco/docuseal/blob/3.3.5/Gemfile
+    checkedAt: 2026-11-03
+    via: api
+    quote: "ruby '4.0.9'"
+  - field: runtimeMin
+    value: "4.0"
+    url: https://github.com/docusealco/docuseal/blob/3.3.5/Gemfile
+    checkedAt: 2026-11-03
+    via: api
+    quote: "ruby '4.0.9'"
+  - field: installMethod
+    value: docker run
+    url: https://github.com/docusealco/docuseal/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker run --name docuseal -p 3000:3000 -v.:/data docuseal/docuseal"
+  - field: installMethod
+    value: docker compose
+    url: https://github.com/docusealco/docuseal/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Run the app under a custom domain over https using docker compose"
+  - field: installMethod
+    value: one-click deploy on managed platforms (README lists Heroku, Railway, DigitalOcean, Render)
+    url: https://www.docuseal.com/on-premises
+    checkedAt: 2026-11-03
+    via: page
+    quote: "or deploy on your favorite managed PaaS with a single click"
+  - field: installMethod
+    value: Google Cloud Run
+    url: https://www.docuseal.com/docs/deploying-docuseal-on-google-cloud-run
+    checkedAt: 2026-11-03
+    via: page
+    quote: "How to deploy DocuSeal on Google Cloud Run?"
+  - field: installMethod
+    value: Azure Web Apps
+    url: https://www.docuseal.com/docs/deploying-docuseal-on-azure-web-apps
+    checkedAt: 2026-11-03
+    via: page
+    quote: "How to deploy DocuSeal on Azure?"
+  - field: docker
+    value: docuseal/docuseal
+    url: https://github.com/docusealco/docuseal/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker run --name docuseal -p 3000:3000 -v.:/data docuseal/docuseal"
+  - field: dockerPulls
+    value: "2757235 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/docuseal/docuseal/
+    checkedAt: 2026-11-03
+    via: api
+  - field: databases
+    value: [sqlite]
+    url: https://github.com/docusealco/docuseal/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "uses an SQLite database to store data and configurations"
+  - field: databases
+    value: [postgresql, mysql]
+    url: https://github.com/docusealco/docuseal/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "it is possible to use PostgreSQL or MySQL databases"
+  - field: contentStore
+    value: files on disk, or AWS S3, Google Storage or Azure Cloud
+    url: https://github.com/docusealco/docuseal/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Files storage on disk or AWS S3, Google Storage, Azure Cloud"
+  - field: adminUi
+    value: yes, a built-in web app with user management
+    url: https://www.docuseal.com/on-premises
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Invite your team members into the platform to create, share and manage documents with ease"
+  - field: headlessApi
+    value: [rest]
+    url: https://www.docuseal.com/on-premises
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Develop automation workflows with DocuSeal REST API and Webhooks"
+  - field: sso
+    value: yes, SAML on the Pro plan
+    url: https://www.docuseal.com/on-premises
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Secure your platform with Single Sign-On (SSO) and SAML authentication."
+  - field: userRoles
+    value: yes, on the Pro plan
+    url: https://www.docuseal.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "User roles and teams"
+  - field: i18n
+    value: 7 UI languages, signing in 14 languages
+    url: https://github.com/docusealco/docuseal/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "7 UI languages with signing available in 14 languages"
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/docusealco/docuseal
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: AGPL-3.0 with Section 7(b) additional terms requiring DocuSeal attribution
+    url: https://github.com/docusealco/docuseal/blob/master/LICENSE_ADDITIONAL_TERMS
+    checkedAt: 2026-11-03
+    via: page
+    quote: "a covered work must retain the original DocuSeal attribution in interactive"
+  - field: licenseModel
+    value: open-core
+    url: https://www.docuseal.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Everything from OSS"
+  - field: paidEdition
+    value: DocuSeal Pro, a paid license for on-premises use with features the open version lacks
+    url: https://www.docuseal.com/on-premises
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Unlock the full potential of DocuSeal with the Pro features"
+  - field: hostedOffering
+    value: DocuSeal Cloud
+    url: https://www.docuseal.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Cloud Pricing"
+  - field: regions
+    value: EU Cloud with servers in Dublin, Ireland
+    url: https://www.docuseal.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: "DocuSeal.eu Cloud is GDPR-compliant with servers located in Dublin, Ireland."
+  - field: freeTier
+    value: yes, a Basic cloud plan
+    url: https://www.docuseal.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Create Free Account"
+  - field: pricingPage
+    value: https://www.docuseal.com/pricing
+    url: https://www.docuseal.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: currentMajor
+    value: 3
+    url: https://github.com/docusealco/docuseal/releases/tag/3.3.5
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-02
+    url: https://github.com/docusealco/docuseal/releases/tag/3.3.5
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 18982
+    url: https://api.github.com/repos/docusealco/docuseal
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 6
+    url: https://api.github.com/repos/docusealco/docuseal/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: x
+    value: https://twitter.com/docusealco
+    url: https://www.docuseal.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/docuseal.com
+    url: https://www.docuseal.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: discord
+    value: https://discord.gg/qygYCDGck9
+    url: https://www.docuseal.com
+    checkedAt: 2026-11-03
+    via: page
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, livePreview, importsFrom, multisite, templating, selfHostOption, runsAs, renderingModes, pluginDirectory, pluginCount, forum, subreddit, mastodon, newsletter, facebook, instagram, youtube, wikidata, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, pypiDownloads, endoflifeId, latestPrereleaseDate, lastCommitDate, maintainerType, apiLimits]
+unreadable: []
+notes: >
+  The record covers the project and the DocuSeal Cloud service that the same code runs; the cloud offering is recorded as hostedOffering. The GitHub repository is the source of the license, stars, releases and runtime. The license file LICENSE is AGPL-3.0 (GitHub API); LICENSE_ADDITIONAL_TERMS adds a Section 7(b) attribution requirement, recorded as its own entry. The on-premises pricing lists an open source edition at no cost and a Pro edition sold per user; the prices are not recorded. The pricing page's Pro features (white-label, user roles and teams, SSO, bulk send, API and embedding) are on the paid plan, and the open source edition lists user management, multiple signers and its own SMTP. The homepage's "#1 Open Source Alternative" line is a claim the page makes about itself and is not recorded. The on-premises page says the open source self-host is free forever without limitations. The licenseModel open-core rests on the pricing page's "Everything from OSS" wording; whether Pro code sits in this repository is not stated, so the reviewer should confirm it. The contact and footer address, 332 S Michigan Ave, Chicago IL, is for DocuSeal LLC and gives the US hqCountry. The terms of service say DocuSeal, LLC is governed by Delaware law. The privacy policy names DocuSeal, LLC, and the EU representative is Euverify Ltd. The runtime is Ruby; the Dockerfile uses a Ruby 4.0.9 Alpine base image at the 3.3.5 tag, and the runtimeMin uses the Gemfile line. The Docker Hub pull count is for docuseal/docuseal, the image the README names. The docs state that the Docker image stores data in an SQLite database by default. The docs and README do not state whether the process runs as a daemon or server, so runsAs is absent. The API and webhooks are documented at docuseal.com/docs/api; the embedded signing form and form builder are documented at docuseal.com/docs/embedded, with React, Vue, Angular and JavaScript packages in GitHub repositories the record does not cite. The homepage and pricing page claim SOC 2 certification and an EU cloud; SOC 2 is recorded in notes only, as no field holds compliance claims.

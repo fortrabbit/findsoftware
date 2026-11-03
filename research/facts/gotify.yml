@@ -1,0 +1,171 @@
+id: gotify
+name: Gotify
+status: accepted
+checkedAt: 2026-11-03
+description: "Self-hosted message server that accepts messages over a REST API and delivers them to clients over a WebSocket connection."
+facts:
+  - field: homepage
+    value: "https://gotify.net"
+    url: https://gotify.net
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: "https://github.com/gotify/server"
+    url: https://github.com/gotify/server
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://gotify.net/docs/"
+    url: https://gotify.net/docs/
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "jmattheis"
+    url: https://github.com/gotify/server/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+    quote: "Copyright (c) 2018 jmattheis"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/gotify/server/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/gotify
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Go
+    url: https://github.com/gotify/server
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [realtime, websockets]
+    url: https://gotify.net
+    checkedAt: 2026-11-03
+    via: page
+    quote: "subscribing/receiving messages via a web socket connection"
+  - field: httpApi
+    value: "REST"
+    url: https://gotify.net
+    checkedAt: 2026-11-03
+    via: page
+    quote: "sending messages via a REST-API"
+  - field: httpApi
+    value: "REST, with examples in several languages"
+    url: https://gotify.net/docs/pushmsg
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Here are more examples for pushing messages in different languages."
+  - field: protocols
+    value: [WebSocket]
+    url: https://gotify.net
+    checkedAt: 2026-11-03
+    via: page
+    quote: "subscribing/receiving messages via a web socket connection"
+  - field: installMethod
+    value: [docker]
+    url: https://gotify.net/docs/install
+    checkedAt: 2026-11-03
+    via: page
+    quote: "gotify/server and ghcr.io/gotify/server are multi-arch Docker images supporting amd64, i386, arm64, armv7, and riscv64."
+  - field: installMethod
+    value: [docker-compose]
+    url: https://gotify.net/docs/install
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Example docker-compose.yaml"
+  - field: installMethod
+    value: [binary-download]
+    url: https://gotify.net/docs/install
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Download the zip with the binary for your platform from"
+  - field: installMethod
+    value: [source-build]
+    url: https://gotify.net/docs/build
+    checkedAt: 2026-11-03
+    via: page
+    quote: "If you do not want to use the docker images you can build gotify/server like this:"
+  - field: runtime
+    value: "go binary"
+    url: https://gotify.net/docs/build
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Build the Go Binary"
+  - field: runsAs
+    value: [always-on]
+    url: https://gotify.net/docs/install
+    checkedAt: 2026-11-03
+    via: page
+    quote: "By default it listens on port 80, which requires sudo."
+  - field: databases
+    value: [sqlite, mysql, postgres]
+    url: https://gotify.net/docs/config
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Type: one of sqlite3, mysql, postgres"
+  - field: sso
+    value: [oidc]
+    url: https://gotify.net/docs/oidc
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Gotify supports OpenID Connect for Single Sign-On (SSO)"
+  - field: adminUi
+    value: "web UI for managing users, clients and applications"
+    url: https://gotify.net
+    checkedAt: 2026-11-03
+    via: page
+    quote: "gotify/server features a WebUI and functionality for:"
+  - field: userRoles
+    value: [admin]
+    url: https://gotify.net/docs/oidc
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Comma-separated groups whose members are granted admin permissions."
+  - field: license
+    value: MIT
+    url: https://github.com/gotify/server/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/gotify/server/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://github.com/gotify/server/releases/tag/v3.1.1
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-09-15"
+    url: https://github.com/gotify/server/releases/tag/v3.1.1
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: https://github.com/gotify/server/releases/tag/v1.0.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 16170
+    url: https://github.com/gotify/server
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 56
+    url: https://github.com/gotify/server
+    checkedAt: 2026-11-03
+    via: api
+  - field: dockerPulls
+    value: "47885038 (2026-11-03)"
+    url: https://hub.docker.com/r/gotify/server
+    checkedAt: 2026-11-03
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, hqCountry, pricingPage, paidEdition, freeTier, endoflifeId, runtimeMin, templating, i18n, multisite, livePreview, contentStore, importsFrom, reportedInstalls, usageShare, npmName, packagistName, pypiDownloads, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, regions, apiLimits, selfHostOption, headlessApi]
+unreadable: []
+notes: >
+  Accepted as a boundary row: the project's own pages show applications sending messages to the server through its REST API, with example code in several languages (the push messages and push message examples pages), so the server is wired into an app. The server also exposes an MCP endpoint at /mcp for AI agents to send messages (guides page "AI Agents (MCP)"), not recorded as a field. The Android client (gotify/android) and the CLI (gotify/cli) are separate repositories named on the homepage; the CLI pushes messages, and the Android client shows push notifications and is listed on F-Droid and Google Play, not recorded. The LICENSE file at the default branch reads MIT License; GitHub's license detection reports NOASSERTION, so the license is recorded from the file text. The copyright line names jmattheis, the GitHub account the project's own LICENSE gives; the full name on that account is not recorded because no project page states it. The project describes itself as a push message server; the categories use realtime and websockets because the category notifications maps to email in the import, which does not describe it. Coined kind: httpApi (the homepage's REST-API). The runtime go binary follows the Go Binary heading of the build page; the install page names release binaries for several platforms. The docs also describe built-in plugins (Linux and macOS only) and a systemd service example; neither is recorded as a field. Gotify 3 moved configuration to environment variables; the install and configuration pages are the current docs.

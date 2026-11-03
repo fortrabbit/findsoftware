@@ -1,0 +1,248 @@
+id: grafana
+name: Grafana
+status: accepted
+checkedAt: 2026-11-03
+description: "Open source application for querying, visualizing, alerting on and exploring metrics, logs and traces."
+facts:
+  - field: homepage
+    value: "https://grafana.com/oss/grafana"
+    url: https://grafana.com/oss/grafana/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: "https://github.com/grafana/grafana"
+    url: https://github.com/grafana/grafana
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://grafana.com/docs/grafana/latest/"
+    url: https://grafana.com/docs/grafana/latest/introduction/
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "Raintank Inc."
+    url: https://grafana.com/legal/privacy-policy/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Raintank Inc., d/b/a Grafana Labs"
+  - field: maintainerType
+    value: company
+    url: https://grafana.com/legal/privacy-policy/
+    checkedAt: 2026-11-03
+    via: page
+  - field: hqCountry
+    value: US
+    url: https://grafana.com/legal/privacy-policy/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "165 Broadway, 23rd Floor, New York, NY 10006 United States"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/grafana
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://github.com/grafana/grafana
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [observability, monitoring]
+    url: https://grafana.com/oss/grafana/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "the open source data visualization and monitoring solution"
+  - field: httpApi
+    value: "HTTP API"
+    url: https://grafana.com/docs/grafana/latest/developers/http_api/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The following legacy APIs are available:"
+  - field: installMethod
+    value: [docker]
+    url: https://grafana.com/docs/grafana/latest/setup-grafana/installation/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can also run Grafana in a container with Docker"
+  - field: installMethod
+    value: [apt-repository]
+    url: https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "using the Grafana Labs APT repository"
+  - field: installMethod
+    value: [binary-download]
+    url: https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "by downloading a binary .tar.gz file"
+  - field: installMethod
+    value: [homebrew]
+    url: https://grafana.com/docs/grafana/latest/setup-grafana/installation/mac/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "brew install grafana"
+  - field: installMethod
+    value: [helm]
+    url: https://grafana.com/docs/grafana/latest/setup-grafana/installation/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "deploy it on Kubernetes with the Grafana Helm chart"
+  - field: runtime
+    value: binary
+    url: https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "by downloading a binary .tar.gz file"
+  - field: runsAs
+    value: [always-on]
+    url: https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Create a Grafana server systemd unit file:"
+  - field: databases
+    value: [sqlite]
+    url: https://grafana.com/docs/grafana/latest/setup-grafana/installation/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "By default Grafana uses an embedded SQLite database"
+  - field: databases
+    value: [mysql]
+    url: https://grafana.com/docs/grafana/latest/setup-grafana/installation/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MySQL 8.0 or later."
+  - field: databases
+    value: [postgres]
+    url: https://grafana.com/docs/grafana/latest/setup-grafana/installation/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "PostgreSQL 12 or later."
+  - field: contentStore
+    value: database
+    url: https://grafana.com/docs/grafana/latest/setup-grafana/installation/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Grafana requires a database to store its configuration data, such as users, data sources, and dashboards."
+  - field: sso
+    value: [oauth2]
+    url: https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configure-authentication/generic-oauth/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Grafana provides OAuth2 integrations for the following auth providers:"
+  - field: sso
+    value: [ldap]
+    url: https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configure-authentication/ldap/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The LDAP integration in Grafana allows your Grafana users to login with their LDAP credentials."
+  - field: userRoles
+    value: [viewer, editor, admin]
+    url: https://grafana.com/docs/grafana/latest/administration/roles-and-permissions/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The available roles are Viewer, Editor, and Admin."
+  - field: i18n
+    value: "UI language set by default_language"
+    url: https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This option sets the default UI language if a supported IETF language tag like en-US is available."
+  - field: embed
+    value: "panels embedded in other websites with an iframe"
+    url: https://grafana.com/docs/grafana/latest/dashboards/share-dashboards-panels/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can share a panel by embedding it on another website using an iframe."
+  - field: hostedOffering
+    value: "Grafana Cloud"
+    url: https://grafana.com/docs/grafana/latest/introduction/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Grafana Cloud is a fully managed platform hosted by Grafana Labs"
+  - field: paidEdition
+    value: "Grafana Enterprise"
+    url: https://grafana.com/docs/grafana/latest/introduction/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "adds commercial features such as enterprise data source plugins, reporting, enhanced access control, and official support."
+  - field: alternativeTo
+    value: [elasticsearch]
+    url: https://grafana.com/oss/grafana/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Elasticsearch vs. Grafana Cloud"
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/grafana/grafana/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: "Apache-2.0 for exceptions listed in LICENSING.md"
+    url: https://github.com/grafana/grafana/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: api
+    quote: "For Apache-2.0 exceptions, see"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/grafana/grafana/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 13
+    url: https://github.com/grafana/grafana/releases/tag/v13.3.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-27"
+    url: https://github.com/grafana/grafana/releases/tag/v13.3.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://github.com/grafana/grafana/releases/tag/v1.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: reportedInstalls
+    value: "1.5M+ active installs"
+    url: https://grafana.com/oss/grafana/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "1.5M+ Active installs"
+  - field: githubStargazers
+    value: 77655
+    url: https://github.com/grafana/grafana
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 372
+    url: https://github.com/grafana/grafana
+    checkedAt: 2026-11-03
+    via: api
+  - field: dockerPulls
+    value: "25211819 (2026-11-03)"
+    url: https://hub.docker.com/r/grafana/grafana-enterprise
+    checkedAt: 2026-11-03
+    via: api
+  - field: pluginCount
+    value: "150+"
+    url: https://grafana.com/oss/grafana/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "With 150+ Grafana plugins"
+  - field: x
+    value: "https://x.com/grafana"
+    url: https://github.com/grafana/grafana/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Follow @grafana on X (formerly Twitter)"
+  - field: forum
+    value: "https://community.grafana.com/"
+    url: https://github.com/grafana/grafana/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "check out our discussion forums"
+notFound: [parent, basedOn, forkOf, successorOf, wikidata, pricingPage, freeTier, endoflifeId, runtimeMin, adminUi, headlessApi, templating, multisite, livePreview, importsFrom, usageShare, npmName, packagistName, pypiDownloads, pluginDirectory, discord, subreddit, mastodon, bluesky, newsletter, regions, apiLimits, selfHostOption]
+unreadable: []
+notes: >
+  Accepted as a boundary row: the project's own sharing page says a panel can be embedded on another website with an iframe, and that embedding and anonymous access are not available in Grafana Cloud. The same sharing page says viewers must be signed in to Grafana unless anonymous access is enabled. Enterprise: the Docker and Debian install pages call Grafana Enterprise the recommended and default edition and state that it is free and includes all the features of the OSS edition, with features unlocked by a license; the paidEdition fact follows the introduction page and stands. The dockerPulls figure is for grafana/grafana-enterprise, the image the Docker install page runs; the same page names grafana/grafana as the open source image. The README gives the X account and the discussion forum. The README says the project is distributed under AGPL-3.0-only, the LICENSE file is AGPL-3.0; the Apache-2.0 exceptions are named in LICENSING.md and recorded as a second license entry. The README statement names the same AGPL license in another wording, so it is not a separate license. The legal entity Raintank Inc. comes from the privacy policy, which also gives a New York mailing address; hqCountry follows that address, and the OSS page names Grafana Labs as the brand. The language is TypeScript as GitHub reports it; the server's Go code is not stated on any page read, so no Go runtime is recorded and the runtime binary comes from the install page. Categories: dashboards has no mapping in scripts/import-facts.mjs, so the record is observability and monitoring. The reportedInstalls figure is stated on the OSS page as "1.5M+ Active installs", and the OSS page also states 67.5k GitHub stars, which the API figure replaces. Coined kinds: httpApi, embed. Grafana Cloud free tier and plans are not recorded. The OSS page links comparison pages against Grafana Cloud for Datadog, Dynatrace, Elasticsearch, New Relic, PagerDuty and Splunk; only Elasticsearch has a record, so it is the one alternativeTo entry, although the comparison names Grafana Cloud rather than the open source edition. Grafana Enterprise Traces and Grafana Cloud Traces are named on the Tempo page as products built on Tempo; they are not recorded here.

@@ -1,0 +1,182 @@
+id: grafana-loki
+name: Grafana Loki
+status: accepted
+checkedAt: 2026-11-03
+description: "Horizontally scalable log aggregation system that indexes log labels rather than the text of log lines."
+facts:
+  - field: homepage
+    value: "https://grafana.com/oss/loki"
+    url: https://grafana.com/oss/loki/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: "https://github.com/grafana/loki"
+    url: https://github.com/grafana/loki
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://grafana.com/docs/loki/latest/"
+    url: https://grafana.com/docs/loki/latest/setup/install/
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "Raintank Inc."
+    url: https://grafana.com/legal/privacy-policy/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Raintank Inc., d/b/a Grafana Labs"
+  - field: maintainerType
+    value: company
+    url: https://grafana.com/legal/privacy-policy/
+    checkedAt: 2026-11-03
+    via: page
+  - field: hqCountry
+    value: US
+    url: https://grafana.com/legal/privacy-policy/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "165 Broadway, 23rd Floor, New York, NY 10006 United States"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/grafana
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Go
+    url: https://github.com/grafana/loki
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [logs, observability]
+    url: https://grafana.com/oss/loki/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Loki is a log aggregation system designed to store and query logs from all your applications and infrastructure."
+  - field: httpApi
+    value: "HTTP API for pushing, querying and tailing logs"
+    url: https://grafana.com/docs/loki/latest/reference/loki-http-api/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Loki exposes an HTTP API for pushing, querying, and tailing log data"
+  - field: httpApi
+    value: "POST /loki/api/v1/push (log ingest endpoint)"
+    url: https://grafana.com/docs/loki/latest/reference/loki-http-api/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "POST /loki/api/v1/push"
+  - field: compatibleWith
+    value: [OpenTelemetry]
+    url: https://grafana.com/docs/loki/latest/send-data/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Loki natively supports ingesting OpenTelemetry logs over HTTP."
+  - field: contentStore
+    value: "object storage"
+    url: https://grafana.com/oss/loki/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "100% persistence to object storage means you get petabyte scale"
+  - field: hostedOffering
+    value: "Grafana Cloud"
+    url: https://grafana.com/oss/loki/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The easiest way to get started is with Grafana Cloud, our fully composable observability stack."
+  - field: installMethod
+    value: [helm]
+    url: https://grafana.com/docs/loki/latest/setup/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Install using Helm (recommended)"
+  - field: installMethod
+    value: [tanka]
+    url: https://grafana.com/docs/loki/latest/setup/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Install using Tanka"
+  - field: installMethod
+    value: [docker]
+    url: https://grafana.com/docs/loki/latest/setup/install/docker/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can install Loki and Alloy with Docker or Docker Compose if you are evaluating, testing, or developing Loki."
+  - field: installMethod
+    value: [apt-rpm-package]
+    url: https://grafana.com/docs/loki/latest/setup/install/local/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Install using APT or RPM package manager"
+  - field: installMethod
+    value: [source-build]
+    url: https://grafana.com/docs/loki/latest/setup/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Install from source"
+  - field: runtime
+    value: "go binary"
+    url: https://grafana.com/docs/loki/latest/setup/install/local/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The configuration runs Loki as a single binary."
+  - field: runsAs
+    value: [always-on]
+    url: https://grafana.com/docs/loki/latest/setup/install/local/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Start and enable the Loki service:"
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/grafana/loki/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/grafana/loki/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://github.com/grafana/loki/releases/tag/v3.7.9
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-20"
+    url: https://github.com/grafana/loki/releases/tag/v3.7.9
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2019
+    url: https://github.com/grafana/loki/releases/tag/v0.1.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 29113
+    url: https://github.com/grafana/loki
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 447
+    url: https://github.com/grafana/loki
+    checkedAt: 2026-11-03
+    via: api
+  - field: dockerPulls
+    value: "4818083199 (2026-11-03)"
+    url: https://hub.docker.com/r/grafana/loki
+    checkedAt: 2026-11-03
+    via: api
+  - field: forum
+    value: "https://community.grafana.com/c/grafana-loki/"
+    url: https://github.com/grafana/loki/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Search existing thread in the Grafana Labs community forum for Loki"
+  - field: alternativeTo
+    value: [elasticsearch]
+    url: https://grafana.com/oss/loki/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Elasticsearch vs. Grafana Cloud"
+notFound: [parent, basedOn, forkOf, successorOf, wikidata, pricingPage, paidEdition, freeTier, endoflifeId, runtimeMin, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, databases, importsFrom, reportedInstalls, usageShare, npmName, packagistName, pypiDownloads, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, regions, apiLimits, selfHostOption]
+unreadable: []
+notes: >
+  Accepted as a boundary row: the project's own pages document ingest endpoints that applications send log data to (POST /loki/api/v1/push, native OpenTelemetry log ingestion over HTTP), so it is a log ingestion endpoint an app sends to. The install page states that Grafana Loki does not come with an authentication layer and that a reverse proxy must be placed in front of it. Grafana Cloud is recorded as the hosted offering the homepage names; its free tier and plans are not recorded. The homepage states 66k+ active users; that is a user count, not an install count, and is not recorded. The firstRelease follows the oldest GitHub release v0.1.0 (2019-06-03), while the homepage says the project started at Grafana Labs in 2018. The repository's tag list includes operator tags (operator/v0.12.0); only the Loki tags are used for currentMajor and latestReleaseDate. The LICENSE file is AGPL-3.0 and the README wording is AGPL-3.0-only, the same license. The maintainer is the legal entity from the privacy policy; the Loki page names Grafana Labs as the lead of development. Coined kinds: httpApi, compatibleWith. The runtime go binary combines the docs' single binary statement with GitHub's language field. The alternativeTo entry follows the homepage comparison pages, which set Elasticsearch against Grafana Cloud rather than the open source edition; the Datadog and Splunk comparisons are not recorded. The dockerPulls figure is for grafana/loki, the image the Docker install page runs.

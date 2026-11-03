@@ -1,0 +1,145 @@
+id: datadog
+name: Datadog
+status: hosted-service
+checkedAt: 2026-11-03
+description: Hosted monitoring and security platform for infrastructure, applications, logs and errors, with agents and SDKs that send data to it.
+facts:
+  - field: homepage
+    value: https://www.datadoghq.com
+    url: https://www.datadoghq.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: The integrated platform for monitoring & security
+  - field: docs
+    value: https://docs.datadoghq.com/
+    url: https://docs.datadoghq.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: pricingPage
+    value: https://www.datadoghq.com/pricing/
+    url: https://www.datadoghq.com/pricing/
+    checkedAt: 2026-11-03
+    via: page
+  - field: categories
+    value: observability
+    url: https://www.datadoghq.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: End-to-end, simplified visibility into your stack’s health & performance
+  - field: categories
+    value: apm
+    url: https://www.datadoghq.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: Application Performance Monitoring
+  - field: categories
+    value: error-tracking
+    url: https://www.datadoghq.com
+    checkedAt: 2026-11-03
+    via: page
+    quote: Error Tracking
+  - field: maintainer
+    value: Datadog, Inc.
+    url: https://www.datadoghq.com/legal/msa/
+    checkedAt: 2026-11-03
+    via: page
+    quote: contract between Datadog, Inc., a Delaware (USA) corporation
+  - field: maintainerType
+    value: company
+    url: https://www.datadoghq.com/legal/msa/
+    checkedAt: 2026-11-03
+    via: page
+    quote: contract between Datadog, Inc., a Delaware (USA) corporation
+  - field: hqCountry
+    value: US
+    url: https://www.datadoghq.com/legal/msa/
+    checkedAt: 2026-11-03
+    via: page
+    quote: address for its New York, New York, USA headquarters
+  - field: regions
+    value: US1, US3, US5, US1-FED, US2-FED, EU1 (Germany), AP1 (Japan), AP2 (Australia), UK1 (UK)
+    url: https://docs.datadoghq.com/getting_started/site/
+    checkedAt: 2026-11-03
+    via: page
+    quote: Datadog offers different sites throughout the world.
+  - field: userRoles
+    value: yes, three default roles and custom roles
+    url: https://docs.datadoghq.com/account_management/rbac/
+    checkedAt: 2026-11-03
+    via: page
+    quote: By default, Datadog offers three roles, and you can create custom roles
+  - field: sso
+    value:
+      - saml
+    url: https://docs.datadoghq.com/account_management/saml/
+    checkedAt: 2026-11-03
+    via: page
+    quote: Configuring SAML (Security Assertion Markup Language) for your Datadog account
+  - field: x
+    value: https://twitter.com/datadoghq
+    url: https://www.datadoghq.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: facebook
+    value: https://www.facebook.com/datadoghq/
+    url: https://www.datadoghq.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: instagram
+    value: https://www.instagram.com/datadoghq/
+    url: https://www.datadoghq.com
+    checkedAt: 2026-11-03
+    via: page
+  - field: youtube
+    value: https://www.youtube.com/user/DatadogHQ
+    url: https://www.datadoghq.com
+    checkedAt: 2026-11-03
+    via: page
+notFound:
+  - repository
+  - repoOwnerType
+  - language
+  - runtime
+  - license
+  - licenseModel
+  - currentMajor
+  - latestReleaseDate
+  - githubStargazers
+  - contributors
+  - firstRelease
+  - parent
+  - basedOn
+  - forkOf
+  - successorOf
+  - alternativeTo
+  - importsFrom
+  - multisite
+  - livePreview
+  - selfHostOption
+  - headlessApi
+  - contentStore
+  - databases
+  - paidEdition
+  - apiLimits
+  - runsAs
+  - renderingModes
+  - templating
+  - i18n
+  - freeTier
+  - pluginDirectory
+  - pluginCount
+  - forum
+  - discord
+  - subreddit
+  - mastodon
+  - bluesky
+  - newsletter
+  - wikidata
+  - usageShare
+  - reportedInstalls
+  - npmName
+  - npmWeeklyDownloads
+  - hostedOffering
+  - adminUi
+unreadable: []
+notes: The record covers the hosted Datadog service. The Datadog Agent (github.com/DataDog/datadog-agent, Apache-2.0) is open source and runs on hosts, and the agent docs say "The Datadog Agent is open source and its source code is available on GitHub". The agent sends data to the hosted service and does not run it, so no repository, license or selfHostOption is recorded for the service. The SDK repository github.com/DataDog/browser-sdk (Apache-2.0) and npm @datadog/browser-rum go to notes only, per the hosted rule. The docs state that each Datadog site is completely independent and data cannot be shared across sites. The pricing page lists plan tiers without a paid edition record and offers a free trial; no free tier is stated on the pages read. The legal name comes from the subscription agreement, which names Datadog, Inc. as a Delaware corporation and refers to its New York, New York, USA headquarters; the privacy policy gives the New York address. The feature flag product is described as OpenFeature compatible on its docs page. The pricing page states usage units such as hosts, gigabytes ingested and million flag configuration requests. Session Replay and Real User Monitoring are product lines of the same service; the homepage names them, and only the three categories with quotes are recorded. The fields installMethod (agent packages, SDK installation through npm) and firstRelease (founding and product dates are not a release date) are not recorded. The site footer links LinkedIn (linkedin.com/company/datadog), not recorded as a field.

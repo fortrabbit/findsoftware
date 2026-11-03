@@ -1,0 +1,124 @@
+id: configcat
+name: ConfigCat
+status: hosted-service
+checkedAt: 2026-11-03
+description: "Feature flag and remote configuration service, offered as a hosted service, with an open-source proxy that runs in the user's own infrastructure."
+facts:
+  - field: homepage
+    value: "https://configcat.com"
+    url: "https://configcat.com/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "ConfigCat is a hosted service for feature flag and configuration management"
+  - field: docs
+    value: "https://configcat.com/docs/"
+    url: "https://configcat.com/docs/"
+    checkedAt: 2026-11-03
+    via: page
+  - field: pricingPage
+    value: "https://configcat.com/pricing/"
+    url: "https://configcat.com/pricing/"
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "ConfigCat Korlátolt Felelősségű Társaság"
+    url: "https://configcat.com/legal/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "ConfigCat Korlátolt Felelősségű Társaság, a company registered in Hungary"
+  - field: maintainerType
+    value: "company"
+    url: "https://configcat.com/legal/"
+    checkedAt: 2026-11-03
+    via: page
+  - field: hqCountry
+    value: "HU"
+    url: "https://configcat.com/legal/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "registered seat at 1136 Budapest"
+  - field: categories
+    value: ["feature-flags"]
+    url: "https://configcat.com/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "feature flag and configuration management"
+  - field: selfHostOption
+    value: "ConfigCat Proxy, a Docker image or standalone executable that caches config JSON in the user's infrastructure"
+    url: "https://configcat.com/docs/advanced/proxy/proxy-overview"
+    checkedAt: 2026-11-03
+    via: page
+  - field: selfHostOption
+    value: "On-premise plan of the ConfigCat service, deployed with Docker"
+    url: "https://configcat.com/on-premise/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Deploy ConfigCat on your own infrastructure using Docker!"
+  - field: hostedOffering
+    value: "ConfigCat hosted service"
+    url: "https://configcat.com/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "ConfigCat is a hosted service for feature flag and configuration management"
+  - field: userRoles
+    value: "yes, permission groups at product level"
+    url: "https://configcat.com/docs/advanced/team-management/team-management-basics/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Permissions & Permission Groups (Product level)"
+  - field: sso
+    value: ["saml"]
+    url: "https://configcat.com/docs/advanced/team-management/saml/saml-overview/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "SAML SSO allows your team members to sign up and log in to ConfigCat via their company accounts using your own Identity Provider (IdP)."
+  - field: sso
+    value: "third-party providers: Google, Entra ID, GitHub, Bitbucket, Microsoft"
+    url: "https://configcat.com/docs/advanced/team-management/single-sign-on-sso/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can let your organization members sign in to ConfigCat using 3rd party SSO (Single Sign-On) providers."
+  - field: importsFrom
+    value: ["LaunchDarkly"]
+    url: "https://configcat.com/docs/advanced/migration-from-launchdarkly/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This document is for current LaunchDarkly users who want to migrate to ConfigCat."
+  - field: adminUi
+    value: "yes, dashboard"
+    url: "https://configcat.com/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Turn your features ON/OFF using ConfigCat's Dashboard even after your code is deployed"
+  - field: regions
+    value: "EU-only option, included in all plans"
+    url: "https://configcat.com/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The EU-only option is included in all plans, even in the Forever Free plan."
+  - field: regions
+    value: "US, Canada, UK and Australia on Dedicated plans"
+    url: "https://configcat.com/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Starting with the Dedicated plans, you can opt for other regions, including the US, Canada, UK, or Australia."
+  - field: apiLimits
+    value: "Management API rate limited; HTTP 429 returned when a limit is exceeded"
+    url: "https://configcat.com/docs/api/reference/configcat-public-management-api/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "When the rate limit is exceeded by a request, the API returns with a HTTP 429 - Too many requests status"
+  - field: x
+    value: "https://x.com/configcat"
+    url: "https://configcat.com/"
+    checkedAt: 2026-11-03
+    via: page
+  - field: facebook
+    value: "https://www.facebook.com/configcat"
+    url: "https://configcat.com/"
+    checkedAt: 2026-11-03
+    via: page
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, forum, discord, subreddit, mastodon, bluesky, newsletter, youtube, instagram, usageShare, reportedInstalls, pluginDirectory, pluginCount, multisite, livePreview, i18n, templating, headlessApi, contentStore, databases, paidEdition, renderingModes, packagistName, npmName, npmWeeklyDownloads, pypiName, httpArchiveSites, deployTargets, repository, license, installMethod, runsAs, runtime, currentMajor, latestReleaseDate, firstRelease, githubStargazers, contributors]
+unreadable: []
+notes: >
+  Hosted service. The open-source ConfigCat Proxy (repository configcat/configcat-proxy, MIT, Go, organization-owned, current major 3, first release 2023, installed from Docker Hub or a GitHub release executable) still reads config JSON from ConfigCat's CDN with an SDK key from a ConfigCat account, and works without it only in offline mode from a cache or file; the on-premise plan on the pricing page is "Hosted or On-premise" and needs a quote and a sales contact. Vendor onboarding or a sales contact keeps the record hosted-service, so the repository, the proxy license and the proxy figures (20 stars, 6 contributors, 148002 Docker pulls on 2026-11-03) stay in notes only; the selfHostOption facts name both routes. The on-premise page says the service "is not open-source". Plan tiers (Pro, Smart, Enterprise, Dedicated) are hosting plans, so no paidEdition is recorded and no prices are recorded. The SDKs are a separate set of repositories in the configcat organisation (the candidates row names configcat/js-unified-sdk, MIT, 2 stars, no release); their figures are left out per the hosted-service rule. The homepage shows G2, TrustRadius and Trustpilot ratings; none are recorded. The homepage also states that Enterprise-level security features including SSO are in all plans; SSO and SAML are recorded from the docs. The legal name and the seat in Hungary come from the terms page at configcat.com/legal/. The HTTP API is the Public Management API at api.configcat.com, a REST API for managing flags; it is not the feature flag evaluation path. Not record fields: linkedin https://www.linkedin.com/company/configcat (https://configcat.com/).

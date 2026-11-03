@@ -1,0 +1,238 @@
+id: dagu
+name: Dagu
+status: accepted
+checkedAt: 2026-11-03
+description: Self-hostable workflow engine that runs declarative YAML workflows of scripts, commands and containers on one machine or a fleet of workers, with a built-in web UI.
+facts:
+  - field: homepage
+    value: https://dagu.sh
+    url: https://dagu.sh/
+    checkedAt: 2026-11-03
+    via: page
+    quote: Local-first orchestration that just works.
+  - field: repository
+    value: https://github.com/dagucloud/dagu
+    url: https://api.github.com/repos/dagucloud/dagu
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://docs.dagu.sh
+    url: https://docs.dagu.sh/
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Descarty, Inc.
+    url: https://dagu.sh/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: Descarty, Inc. company@descarty.com
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/dagucloud
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2022
+    url: https://api.github.com/repos/dagucloud/dagu/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value:
+      - workflow-engine
+      - jobs
+    url: https://github.com/dagucloud/dagu
+    checkedAt: 2026-11-03
+    via: page
+    quote: Dagu is a local-first workflow engine for operations and internal automation.
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/dagucloud/dagu
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value:
+      - go-binary
+    url: https://github.com/dagucloud/dagu
+    checkedAt: 2026-11-03
+    via: page
+    quote: a single binary with a built-in Web UI, no external database or message broker
+  - field: runtimeMin
+    value: Go 1.27
+    url: https://raw.githubusercontent.com/dagucloud/dagu/v2.25.2/go.mod
+    checkedAt: 2026-11-03
+    via: api
+  - field: runsAs
+    value:
+      - always-on
+    url: https://docs.dagu.sh/overview/deployment-models
+    checkedAt: 2026-11-03
+    via: page
+    quote: The always-on Dagu server sends the reports
+  - field: installMethod
+    value: install script (curl) with setup wizard
+    url: https://github.com/dagucloud/dagu
+    checkedAt: 2026-11-03
+    via: page
+    quote: curl -fsSL https://raw.githubusercontent.com/dagucloud/dagu/main/scripts/installer.sh | bash
+  - field: installMethod
+    value: Homebrew
+    url: https://github.com/dagucloud/dagu
+    checkedAt: 2026-11-03
+    via: page
+    quote: brew install dagu
+  - field: installMethod
+    value: npm wrapper that downloads the binary
+    url: https://docs.dagu.sh/getting-started/installation/npm
+    checkedAt: 2026-11-03
+    via: page
+    quote: The @dagucloud/dagu package is a thin wrapper that downloads the correct Dagu binary for your platform during postinstall.
+  - field: installMethod
+    value: Docker image on ghcr.io
+    url: https://github.com/dagucloud/dagu
+    checkedAt: 2026-11-03
+    via: page
+    quote: ghcr.io/dagucloud/dagu:latest dagu start-all
+  - field: installMethod
+    value: Helm chart
+    url: https://github.com/dagucloud/dagu
+    checkedAt: 2026-11-03
+    via: page
+    quote: helm install dagu dagu/dagu
+  - field: installMethod
+    value: PowerShell installer script
+    url: https://raw.githubusercontent.com/dagucloud/dagu/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: irm https://raw.githubusercontent.com/dagucloud/dagu/main/scripts/installer.ps1
+  - field: adminUi
+    value: yes, built-in Web UI
+    url: https://github.com/dagucloud/dagu
+    checkedAt: 2026-11-03
+    via: page
+    quote: a single binary with a built-in Web UI
+  - field: contentStore
+    value: local files for DAG definitions, run history and logs
+    url: https://github.com/dagucloud/dagu
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Self-contained: no external DBMS or message broker required."
+  - field: userRoles
+    value: role-based access control in the paid self-host license
+    url: https://github.com/dagucloud/dagu
+    checkedAt: 2026-11-03
+    via: page
+    quote: Adds SSO, RBAC, audit logging, incident SaaS integration
+  - field: sso
+    value: OIDC, optional integration with built-in authentication
+    url: https://github.com/dagucloud/dagu
+    checkedAt: 2026-11-03
+    via: page
+    quote: optional OIDC/SSO integration
+  - field: license
+    value: GPL-3.0-or-later
+    url: https://raw.githubusercontent.com/dagucloud/dagu/main/LICENSING.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: distributed under the GNU General Public License version 3 or later
+  - field: licenseModel
+    value: open-core
+    url: https://docs.dagu.sh/overview/self-host-license
+    checkedAt: 2026-11-03
+    via: page
+  - field: paidEdition
+    value: Team and Pro self-host plans, adding SSO, RBAC, audit logging and incident routing
+    url: https://dagu.sh/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: Paid licenses add SSO, RBAC, audit logging, and incident routing for teams.
+  - field: pricingPage
+    value: https://dagu.sh/pricing
+    url: https://dagu.sh/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: alternativeTo
+    value: airflow
+    url: https://github.com/dagucloud/dagu
+    checkedAt: 2026-11-03
+    via: page
+    quote: Airflow orchestrates, but you operate a platform for it
+  - field: npmName
+    value: "@dagucloud/dagu"
+    url: https://registry.npmjs.org/@dagucloud/dagu/latest
+    checkedAt: 2026-11-03
+    via: api
+  - field: npmWeeklyDownloads
+    value: 917 (2026-10-26 to 2026-11-01)
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/@dagucloud/dagu
+    checkedAt: 2026-11-03
+    via: api
+    quote: '"downloads":439'
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/dagucloud/dagu/releases/latest
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-03
+    url: https://api.github.com/repos/dagucloud/dagu/releases/latest
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 4538
+    url: https://api.github.com/repos/dagucloud/dagu
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 117
+    url: https://api.github.com/repos/dagucloud/dagu/contributors?per_page=1
+    checkedAt: 2026-11-03
+    via: api
+  - field: discord
+    value: https://discord.gg/gpahPUjGRk
+    url: https://dagu.sh/
+    checkedAt: 2026-11-03
+    via: page
+  - field: alternativeTo
+    value: temporal
+    url: https://raw.githubusercontent.com/dagucloud/dagu/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: gives durable execution, but your business logic moves into its SDK
+  - field: bluesky
+    value: https://bsky.app/profile/dagu-sh.bsky.social
+    url: https://raw.githubusercontent.com/dagucloud/dagu/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+notFound:
+  - hqCountry
+  - parent
+  - basedOn
+  - forkOf
+  - successorOf
+  - importsFrom
+  - multisite
+  - livePreview
+  - i18n
+  - selfHostOption
+  - headlessApi
+  - templating
+  - databases
+  - apiLimits
+  - regions
+  - renderingModes
+  - pluginDirectory
+  - pluginCount
+  - forum
+  - subreddit
+  - mastodon
+  - x
+  - linkedin
+  - newsletter
+  - wikidata
+  - usageShare
+  - reportedInstalls
+  - endoflifeId
+  - dockerPulls
+  - sourcePublic
+unreadable: []
+notes: "Boundary question, settled as accepted: the project's own docs document a per-DAG webhook endpoint (POST /api/v1/webhooks/{fileName}, token-authenticated) that an external caller such as a site or a SaaS can trigger, and a REST API under /api/v1 with an OpenAPI reference at docs.dagu.sh/web-ui/api. The README describes the product as operations and internal automation, so a reviewer should confirm that a webhook trigger meets the wiring rule. LICENSING.md says that a product which distributes the embedded Go API outside the GPL needs a separate written agreement with the copyright holder; commercial embedding rights are not granted by the repository. The README names a built-in MCP server for inspecting and controlling workflows, which no field records. Homepage: the candidates row gave dagu.cloud, which does not resolve; the GitHub homepage field is https://dagu.sh, which answers 200 and is recorded. The repository license reads \"GNU GPLv3\" in the README and \"GPL-3.0-or-later\" in LICENSING.md, and GitHub reports GPL-3.0; the wordings are one license, recorded from LICENSING.md. The paid self-host plans (Team, Pro) are license keys that unlock SSO, RBAC, audit logging and incident routing in the same GPL-licensed software; the docs and the terms name no separate license text for them, so no second license entry is recorded, and the plans are recorded as paidEdition without prices. Public webhook URLs and remote MCP access run through Dagu Cloud for paid plans, and Dagu Console monitoring is a beta service for self-hosted servers; neither is a hosted copy of Dagu, so no hostedOffering is recorded. The Dagu terms name \"Descarty, Inc.\" as the company; governing law is Delaware, not an address, so hqCountry is unknown. The npm package @dagucloud/dagu is a wrapper that downloads the Go binary at install time, so its weekly figure counts wrapper installs. The Docker and Helm install routes name ghcr.io and a Helm repository, not Docker Hub, so no dockerPulls value is recorded. The runtimeMin is the Go version in go.mod at the latest tag, a build requirement for the binary. The README comparison names cron, Airflow and Temporal."

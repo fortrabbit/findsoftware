@@ -1,0 +1,146 @@
+id: gotenberg
+name: Gotenberg
+status: accepted
+checkedAt: 2026-11-03
+description: "Docker-based HTTP API that converts web pages and office documents to PDF and manipulates PDF files."
+facts:
+  - field: homepage
+    value: "https://gotenberg.dev"
+    url: https://gotenberg.dev
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: "https://github.com/gotenberg/gotenberg"
+    url: https://github.com/gotenberg/gotenberg
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://gotenberg.dev/docs/getting-started/installation"
+    url: https://gotenberg.dev/docs/getting-started/installation
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "Julien Neuhart"
+    url: https://gotenberg.dev
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright © 2026 Julien Neuhart."
+  - field: maintainerType
+    value: individual
+    url: https://github.com/gotenberg/gotenberg/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/gotenberg
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Go
+    url: https://github.com/gotenberg/gotenberg
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [pdf-generation, document-converter]
+    url: https://gotenberg.dev
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Convert web pages and office documents into PDFs with a single API call."
+  - field: httpApi
+    value: "HTTP multipart/form-data"
+    url: https://gotenberg.dev/docs/getting-started/clients
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The API uses standard multipart/form-data"
+  - field: installMethod
+    value: [docker]
+    url: https://gotenberg.dev/docs/getting-started/installation
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker run --rm -p \"3000:3000\" gotenberg/gotenberg:8"
+  - field: installMethod
+    value: [docker-compose]
+    url: https://gotenberg.dev/docs/getting-started/installation
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Other services in the same Compose network can reach Gotenberg at"
+  - field: installMethod
+    value: [kubernetes]
+    url: https://gotenberg.dev/docs/getting-started/installation
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Include this in your pod’s deployment spec:"
+  - field: installMethod
+    value: [cloud-run]
+    url: https://gotenberg.dev/docs/getting-started/installation
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Preconfigured for Cloud Run:"
+  - field: installMethod
+    value: [aws-lambda]
+    url: https://gotenberg.dev/docs/getting-started/installation
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Preconfigured for AWS Lambda:"
+  - field: runsAs
+    value: [always-on]
+    url: https://gotenberg.dev/docs/getting-started/installation
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The API is now available at"
+  - field: dependencies
+    value: "Chromium, LibreOffice and PDF engines, bundled in the image"
+    url: https://gotenberg.dev
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Chromium, LibreOffice, and PDF engines included."
+  - field: license
+    value: MIT
+    url: https://github.com/gotenberg/gotenberg/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/gotenberg/gotenberg/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 8
+    url: https://github.com/gotenberg/gotenberg/releases/tag/v8.39.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-27"
+    url: https://github.com/gotenberg/gotenberg/releases/tag/v8.39.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: https://github.com/gotenberg/gotenberg/tree/1.0.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 13508
+    url: https://github.com/gotenberg/gotenberg
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 87
+    url: https://github.com/gotenberg/gotenberg
+    checkedAt: 2026-11-03
+    via: api
+  - field: dockerPulls
+    value: "102647698 (2026-11-03)"
+    url: https://hub.docker.com/r/gotenberg/gotenberg
+    checkedAt: 2026-11-03
+    via: api
+  - field: forum
+    value: "https://github.com/gotenberg/gotenberg/discussions"
+    url: https://github.com/gotenberg/gotenberg/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Questions and feedback: GitHub Discussions"
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, hqCountry, pricingPage, paidEdition, freeTier, endoflifeId, runtime, runtimeMin, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, databases, importsFrom, reportedInstalls, usageShare, npmName, packagistName, pypiDownloads, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, regions, apiLimits, selfHostOption]
+unreadable: []
+notes: >
+  The homepage states "100M+" Docker pulls and "13k+" GitHub stars; neither is recorded here (the pull count is read from Docker Hub and the star count from the API). Copyright line on the homepage and the LICENSE file both name Julien Neuhart; the GitHub organization is gotenberg. The homepage gives no legal entity or country, so hqCountry is absent. The clients page names the official PHP client (gotenberg/gotenberg-php) and points to community clients on the Awesome Gotenberg list, which is discovery only. The footer names sponsors (TheCodingMachine, pdfme, PDFBolt, FileToPDF); they are not recorded as alternatives. Installation also covers Helm and a Kubernetes example through a community chart (MaikuMori/helm-charts), and a community web UI (nktnet1/gotenui); neither is recorded as a fact of the project. The homepage features webhooks and S3 upload and download, described as Gotenberg features; they are in the docs, not recorded as fields. The runtime is not stated on any page read: GitHub reports Go as the language, and the docs do not say the server is a Go binary, so no runtime is recorded. Coined kinds: httpApi, dependencies. The sdkLanguages and installMethod values follow the glitchtip and mailpit files. Not record fields: sdkLanguages PHP (https://gotenberg.dev/docs/getting-started/clients).

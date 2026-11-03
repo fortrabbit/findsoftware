@@ -1,0 +1,155 @@
+id: flagd
+name: flagd
+status: accepted
+checkedAt: 2026-11-03
+description: "Open-source feature flag evaluation daemon that serves flag definitions over gRPC and HTTP, compatible with OpenFeature."
+facts:
+  - field: homepage
+    value: "https://flagd.dev"
+    url: "https://flagd.dev/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "flagd is a feature flag evaluation engine"
+  - field: repository
+    value: "https://github.com/open-feature/flagd"
+    url: "https://api.github.com/repos/open-feature/flagd"
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://flagd.dev/"
+    url: "https://flagd.dev/"
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "OpenFeature"
+    url: "https://openfeature.dev/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "OpenFeature is an open source CNCF incubating project under the Apache 2 license."
+  - field: maintainerType
+    value: "community"
+    url: "https://openfeature.dev/"
+    checkedAt: 2026-11-03
+    via: page
+  - field: repoOwnerType
+    value: "organization"
+    url: "https://api.github.com/repos/open-feature/flagd"
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: ["feature-flags"]
+    url: "https://github.com/open-feature/flagd/blob/main/README.md"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A feature flag daemon with a Unix philosophy."
+  - field: language
+    value: "Go"
+    url: "https://api.github.com/repos/open-feature/flagd"
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: ["binary"]
+    url: "https://flagd.dev/installation/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Binaries are available in x86/ARM."
+  - field: runtimeMin
+    value: "Go 1.27 (go.mod at flagd/v0.18.2)"
+    url: "https://github.com/open-feature/flagd/blob/flagd/v0.18.2/flagd/go.mod"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "go 1.27"
+  - field: protocols
+    value: ["gRPC", "HTTP"]
+    url: "https://flagd.dev/architecture/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "flagd RPC providers use HTTP or gRPC to request flag evaluations from flagd."
+  - field: protocols
+    value: ["OpenFeature Remote Evaluation Protocol"]
+    url: "https://flagd.dev/reference/flagd-ofrep/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "flagd supports the OpenFeature Remote Evaluation Protocol for flag evaluations."
+  - field: compatibleWith
+    value: ["OpenFeature"]
+    url: "https://flagd.dev/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "flagd is fully OpenFeature compliant"
+  - field: adminUi
+    value: "no"
+    url: "https://flagd.dev/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "It doesn't include a UI, management console or a persistence layer."
+  - field: installMethod
+    value: ["docker"]
+    url: "https://flagd.dev/installation/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker pull ghcr.io/open-feature/flagd:latest"
+  - field: installMethod
+    value: ["binary-download"]
+    url: "https://flagd.dev/installation/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Binaries are available in x86/ARM."
+  - field: installMethod
+    value: ["kubernetes"]
+    url: "https://flagd.dev/installation/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can also choose to run a Kubernetes service in front of a deployment with multiple flagd pods connecting to the same data source."
+  - field: installMethod
+    value: ["openfeature-operator"]
+    url: "https://flagd.dev/installation/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "If you're interested in a full-featured solution for using flagd in Kubernetes, consider the OpenFeature operator"
+  - field: runsAs
+    value: ["always-on"]
+    url: "https://flagd.dev/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "It runs as a separate process or directly in your application"
+  - field: license
+    value: "Apache-2.0"
+    url: "https://api.github.com/repos/open-feature/flagd"
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: "open-source"
+    url: "https://flagd.dev/"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Think of it as a ready-made, open source, OpenFeature-compliant feature flag backend system."
+  - field: currentMajor
+    value: 0
+    url: "https://api.github.com/repos/open-feature/flagd/releases"
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-28"
+    url: "https://api.github.com/repos/open-feature/flagd/releases"
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2022
+    url: "https://api.github.com/repos/open-feature/flagd/releases"
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 1020
+    url: "https://api.github.com/repos/open-feature/flagd"
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 87
+    url: "https://api.github.com/repos/open-feature/flagd/contributors"
+    checkedAt: 2026-11-03
+    via: api
+notFound: [hqCountry, pricingPage, sso, userRoles, i18n, multisite, livePreview, importsFrom, databases, contentStore, templating, paidEdition, discord, x, bluesky, mastodon, newsletter, forum, subreddit, wikidata, npmName, dockerPulls, endoflifeId, usageShare]
+unreadable: []
+notes: >
+  flagd is the daemon in the open-feature/flagd monorepo, which also tags core/ (the Go library) and flagd-proxy/ releases. The record follows the flagd/ tags: the highest stable tag is flagd/v0.18.2 (2026-10-28), so currentMajor is 0, and the 0.18 line goes here, not in the field. The install docs name the binary and the ghcr.io image, which is not Docker Hub, so no dockerPulls figure is recorded. The Go module install (go install github.com/open-feature/flagd/flagd@latest) is not recommended by the installation page and is not an install route. The architecture page describes RPC and in-process evaluation; the homepage says flagd runs as a separate process or inside the application. The maintainer is taken as OpenFeature, the project flagd belongs to; openfeature.dev calls it a CNCF incubating project; the CNCF incubation is hosting, so maintainerType is community. The docs say flagd has no UI or persistence layer, so databases and contentStore are not recorded. There is no published npm, PyPI or Packagist package for the daemon, so no registry figure is recorded. Stars and contributors are as read on 2026-11-03.

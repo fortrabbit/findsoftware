@@ -1,0 +1,119 @@
+id: featureprobe
+name: FeatureProbe
+status: accepted
+checkedAt: 2026-11-03
+description: "Open-source feature management service for feature toggles, gradual rollouts and A/B tests, self-hosted with Docker Compose."
+facts:
+  - field: homepage
+    value: "https://featureprobe.github.io/FeatureProbe/"
+    url: https://featureprobe.github.io/FeatureProbe/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Feature Management is the software engineering practice that accomplishes these goals."
+  - field: repository
+    value: "https://github.com/FeatureProbe/FeatureProbe"
+    url: https://github.com/FeatureProbe/FeatureProbe
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://featureprobe.github.io/FeatureProbe/"
+    url: https://featureprobe.github.io/FeatureProbe/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "What is Feature Management"
+  - field: maintainer
+    value: "FeatureProbe"
+    url: https://github.com/FeatureProbe
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://github.com/FeatureProbe/FeatureProbe
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: ["feature-flags"]
+    url: https://github.com/FeatureProbe/FeatureProbe/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "feature toggles to set up gates for features"
+  - field: firstRelease
+    value: "2022"
+    url: https://github.com/FeatureProbe/FeatureProbe/releases/tag/v1.1.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: "TypeScript"
+    url: https://github.com/FeatureProbe/FeatureProbe
+    checkedAt: 2026-11-03
+    via: api
+  - field: databases
+    value: ["mysql"]
+    url: https://github.com/FeatureProbe/FeatureProbe/blob/main/docker-compose.yml
+    checkedAt: 2026-11-03
+    via: page
+    quote: "jdbc:mysql://database:13306/feature_probe"
+  - field: runsAs
+    value: ["always-on"]
+    url: https://github.com/FeatureProbe/FeatureProbe/blob/main/docs/docs/tutorials/setup_own_env.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "FeatureProbe contains 5 independent images, which can only run normally after all 5 images are successfully started."
+  - field: adminUi
+    value: yes, a management portal
+    url: https://github.com/FeatureProbe/FeatureProbe/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "FeatureProbe provides a comprehensive and user-friendly management portal"
+  - field: installMethod
+    value: ["docker compose"]
+    url: https://github.com/FeatureProbe/FeatureProbe/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker compose up"
+  - field: docker
+    value: "featureprobe/api"
+    url: https://github.com/FeatureProbe/FeatureProbe/blob/main/docker-compose.yml
+    checkedAt: 2026-11-03
+    via: page
+    quote: "image: featureprobe/api"
+  - field: license
+    value: "Apache-2.0"
+    url: https://github.com/FeatureProbe/FeatureProbe/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This project is licensed under the Apache 2.0 License"
+  - field: currentMajor
+    value: 2
+    url: https://github.com/FeatureProbe/FeatureProbe/releases/tag/2.7.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2023-09-20"
+    url: https://github.com/FeatureProbe/FeatureProbe/releases/tag/2.7.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 1639
+    url: https://github.com/FeatureProbe/FeatureProbe
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 16
+    url: https://github.com/FeatureProbe/FeatureProbe
+    checkedAt: 2026-11-03
+    via: api
+  - field: slack
+    value: "https://join.slack.com/t/featureprobe/shared_invite/zt-1b5qd120x-R~dDbpgL85GgCLTtfNDj0Q"
+    url: https://featureprobe.github.io/FeatureProbe/
+    checkedAt: 2026-11-03
+    via: page
+  - field: x
+    value: "https://twitter.com/featureprobe"
+    url: https://featureprobe.github.io/FeatureProbe/
+    checkedAt: 2026-11-03
+    via: page
+notFound: [hqCountry, basedOn, parent, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, forum, discord, subreddit, mastodon, bluesky, newsletter, pluginDirectory, pluginCount, regions, apiLimits, hostedOffering, paidEdition, pricingPage, sso, userRoles, i18n, multisite, livePreview, templating, headlessApi, importsFrom, usageShare, reportedInstalls, npmName, packagistName, dockerPulls, deployTargets, runtime, runtimeMin, contentStore, maintainerType]
+unreadable: [https://featureprobe.com/ (answers over plain http only; https connection refused)]
+notes: >
+  The CSV homepage featureprobe.com answers 200 over plain http and refuses the https connection, so it is not linked. featureprobe.io resolves to an unrelated site (a redirect to beautifulhotels.co) and is not the project's site. The GitHub repository names featureprobe.github.io/FeatureProbe as its homepage, and that documentation site is used as homepage and docs. The GitHub Pages site the repository names counts as the project's own site. Activity: the last release is 2.7.0 (2023-09-20); the default branch's last commit is 2024-08-15 (a dependency bump); the docs page states "Last updated on Dec 28, 2022"; the GitHub API reports a repository push on 2026-06-01 that is not on the default branch's commit list read here. Neither the README nor the docs says the project has ended or is unmaintained, so no discontinued signal is recorded. Release age decides nothing under criterion 4, so the record stays accepted. The README describes the components: a Java API (pom.xml, Spring Boot images), a Rust server (Cargo.toml), a React admin UI and an analysis service, all shipped as Docker images; no single runtime is recorded because the install needs Docker only. The compose file runs a MariaDB 10.5.8 image while the JDBC URL names MySQL, so databases records mysql from the connection string. The README names a Gitee mirror (gitee.com/featureprobe) for Chinese users; it is not recorded. The docs state a Slack invite and a Twitter account; the Slack invite is taken from the docs homepage. The README states the project was used for over five years inside a company of 5000+ developers; the company is not named, so no company fact is recorded.
