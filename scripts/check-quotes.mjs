@@ -40,10 +40,12 @@ const entities = {
 };
 // Curly quotes, dashes and markup differ between page and quote without changing the words.
 // Markup is stripped only from HTML: in a raw source file, `<?php ... ?>` would take the code with it.
-const stripMarkup = (text) =>
-  text.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, ' ').replace(/<\/?[a-z!][^<>]*>/gi, ' ');
-const normalize = (text, html = false) =>
-  (html ? stripMarkup(String(text)) : String(text))
+// Markdown keeps the text between script tags: a README shows embed snippets there, between sentences that are quoted.
+const stripTags = (text) => text.replace(/<\/?[a-z!][^<>]*>/gi, ' ');
+const stripMarkup = (text, markdown) =>
+  stripTags(markdown ? text : text.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, ' '));
+const normalize = (text, markup = false) =>
+  (markup ? stripMarkup(String(text), markup === 'markdown') : String(text))
     .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
     .replace(/&(#x?[0-9a-f]+|[a-z0-9]+);/gi, (match, name) => {
       if (name[0] === '#')
@@ -87,8 +89,10 @@ const page = (url) => {
             ? {
                 text: normalize(
                   decode(response.headers.get('content-type'), await response.arrayBuffer()),
-                  /html/i.test(response.headers.get('content-type') ?? '') ||
-                    /\.(html?|md|markdown)$/i.test(new URL(url).pathname),
+                  /\.(md|markdown)$/i.test(new URL(url).pathname)
+                    ? 'markdown'
+                    : /html/i.test(response.headers.get('content-type') ?? '') ||
+                      /\.html?$/i.test(new URL(url).pathname),
                 ),
               }
             : { error: `${response.status}` },
