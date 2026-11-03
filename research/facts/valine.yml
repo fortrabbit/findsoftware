@@ -1,0 +1,114 @@
+id: valine
+name: Valine
+status: accepted
+checkedAt: 2026-11-03
+description: Front-end JavaScript comment system for static blogs and documentation sites, built on LeanCloud without server-side code of its own.
+facts:
+  - field: homepage
+    value: https://valine.js.org
+    url: https://valine.js.org/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A fast, simple & powerful comment system"
+  - field: repository
+    value: https://github.com/xCss/Valine
+    url: https://api.github.com/repos/xCss/Valine
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://valine.js.org
+    url: https://github.com/xCss/Valine/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "View Documentation"
+  - field: firstRelease
+    value: 2017
+    url: https://api.github.com/repos/xCss/Valine/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: xCss
+    url: https://valine.js.org/en/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Powered By xCss."
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/xCss/Valine
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/xCss/Valine
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [comments]
+    url: https://valine.js.org/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A fast, simple & powerful comment system"
+  - field: license
+    value: GPL-2.0
+    url: https://github.com/xCss/Valine/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "GPL-2.0"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/xCss/Valine/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2024-12-15
+    url: https://api.github.com/repos/xCss/Valine/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://valine.js.org/en/quickstart
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Valine has been released to npm and can be installed directly by command"
+  - field: installMethod
+    value: cdn
+    url: https://valine.js.org/en/cdn
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Recommended: unpkg"
+  - field: i18n
+    value: yes, built-in zh-CN, zh-TW, en and ja, plus custom languages
+    url: https://valine.js.org/en/i18n.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Valine Multilingual support has been supported."
+  - field: runsAs
+    value: browser
+    url: https://github.com/xCss/Valine/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "No server-side implementation."
+  - field: npmName
+    value: valine
+    url: https://registry.npmjs.org/valine/latest
+    checkedAt: 2026-11-03
+    via: api
+  - field: npmWeeklyDownloads
+    value: "2701 (2026-10-26 to 2026-11-01)"
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/valine
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 2228
+    url: https://api.github.com/repos/xCss/Valine
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 8
+    url: https://api.github.com/repos/xCss/Valine/contributors
+    checkedAt: 2026-11-03
+    via: api
+notFound: [hqCountry, runtime, runtimeMin, databases, contentStore, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, importsFrom, alternativeTo, basedOn, parent, forkOf, successorOf, pricingPage, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, packagistName, endoflifeId]
+unreadable: []
+notes: >
+  The English docs say Valine "was born in August 7, 2017" and is a "Leancloud based no back end comment system"; LeanCloud stores the comments, so the data lives on another platform. That dependency is recorded here and not as basedOn, because LeanCloud has no record in the dataset. The English docs also list a "Firebase-based comment store" under a to-do heading, which is planned and not recorded. The README says that "the src directory will be suspended from updating after v1.4.0" (quoted with backticks in the README); the project's own site and repository still show releases to v1.5.3 on 2024-12-15, so this is a partial freeze of the source directory, not an end statement. The docs name integrations with Jekyll, Hexo, Hugo, VuePress and Gatsby, which are sites that embed the comment script; no integration makes a basedOn statement. The site footer reads "Powered By xCss" and the repository owner is the user xCss, so the maintainer is recorded as the project names it. The English quickstart shows the script tag or npm import that mounts the widget with a LeanCloud appId and appKey. The homepage of the Chinese docs is the default; the English pages sit under /en/ and are the source for the English quotes. The npm figure is for the valine package the install docs name; the GitHub release and npm version agree at 1.5.3. The repository has no commit after 2024-12-15 on master per the commits endpoint, so lastCommitDate is not needed.

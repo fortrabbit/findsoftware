@@ -1,0 +1,65 @@
+id: utterances
+name: utterances
+status: accepted
+checkedAt: 2026-11-03
+description: Lightweight comments widget that stores the comments on a page as GitHub issues.
+facts:
+  - field: homepage
+    value: https://utteranc.es
+    url: https://utteranc.es/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A lightweight comments widget built on GitHub issues"
+  - field: repository
+    value: https://github.com/utterance/utterances
+    url: https://api.github.com/repos/utterance/utterances
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Jeremy Danyow
+    url: https://github.com/utterance/utterances/blob/master/LICENSE.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2018 Jeremy Danyow"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/utterance/utterances
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://utteranc.es/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Vanilla TypeScript"
+  - field: categories
+    value: [comments]
+    url: https://utteranc.es/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A lightweight comments widget built on GitHub issues"
+  - field: license
+    value: MIT
+    url: https://github.com/utterance/utterances/blob/master/LICENSE.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MIT License"
+  - field: githubStargazers
+    value: 9701
+    url: https://api.github.com/repos/utterance/utterances
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 146
+    url: https://api.github.com/repos/utterance/utterances/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: lastCommitDate
+    value: 2022-02-12
+    url: https://api.github.com/repos/utterance/utterances/commits
+    checkedAt: 2026-11-03
+    via: api
+notFound: [firstRelease, currentMajor, latestReleaseDate, latestPrereleaseDate, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, installMethod, runsAs, runtime, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pricingPage, docs, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, npmName, packagistName, npmWeeklyDownloads]
+unreadable: []
+notes: >
+  The repository has no tags and no GitHub releases, so lastCommitDate is the committer date of the newest commit on master, 2022-02-12; the import moves a record with no release in four years to stub, and this one passes that point, so the next import will hide it unless a commit lands first. The status stays accepted; the import's four-year rule decides listing. The CSV note "last push 2024-08-15" is the repository pushed_at field, which the commits endpoint does not match on master, so the commit date is the one recorded. The README says comments live in GitHub issues ("All data stored in GitHub issues"); that is a dependency on GitHub, not a store the software runs, so it stays here and out of contentStore. Users authorize the utterances app through the GitHub OAuth web flow to post, which is a dependency on GitHub, not an sso statement. The homepage embeds the widget with a script tag whose src is https://utteranc.es/client.js and whose repo and issue-term attributes are set; the snippet is code, not a sentence, so installMethod is not recorded. The widget attaches to a site as that script tag. The maintainer is taken from the LICENSE copyright line (Jeremy Danyow, 2018); the GitHub organization utterance is the repository owner. The README shows sites using utterances (Haxe documentation, sadsloth.net, danyow.net) and no record in the dataset is named there.

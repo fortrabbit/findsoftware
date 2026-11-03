@@ -1,0 +1,114 @@
+id: hatsu
+name: Hatsu
+status: accepted
+checkedAt: 2026-11-03
+description: "Self-hosted bridge that makes a static site's pages and posts reachable from the fediverse through ActivityPub."
+facts:
+  - field: homepage
+    value: "https://hatsu.cli.rs"
+    url: https://hatsu.cli.rs/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Hatsu is a self-hosted bridge that interacts with Fediverse on behalf of your static site."
+  - field: docs
+    value: "https://hatsu.cli.rs"
+    url: https://hatsu.cli.rs/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: "https://github.com/importantimport/hatsu"
+    url: https://api.github.com/repos/importantimport/hatsu
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: "2024"
+    url: https://api.github.com/repos/importantimport/hatsu/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: "藍+85CD"
+    url: https://raw.githubusercontent.com/importantimport/hatsu/v0.3.5/Cargo.toml
+    checkedAt: 2026-11-03
+    via: page
+    quote: "藍+85CD"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/importantimport
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/importantimport/hatsu
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [fediverse]
+    url: https://github.com/importantimport/hatsu/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Self-hosted & Fully-automated ActivityPub Bridge for Static Sites."
+  - field: runtime
+    value: [binary]
+    url: https://github.com/importantimport/hatsu/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Backend is written in Rust."
+  - field: runsAs
+    value: [always-on]
+    url: https://hatsu.cli.rs/admins/environments.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The hostname on which the Hatsu server listens."
+  - field: installMethod
+    value: "docker image ghcr.io/importantimport/hatsu"
+    url: https://hatsu.cli.rs/admins/install-docker.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Hatsu uses three primary tags"
+  - field: installMethod
+    value: "binary download from GitHub Releases"
+    url: https://hatsu.cli.rs/admins/install-binary.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can download both stable and beta versions of Hatsu"
+  - field: databases
+    value: [sqlite, postgres]
+    url: https://hatsu.cli.rs/admins/environments.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Should be a valid sqlite: or postgres: URL."
+  - field: license
+    value: AGPL-3.0
+    url: https://api.github.com/repos/importantimport/hatsu
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/importantimport/hatsu/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Licensed under AGPLv3"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/importantimport/hatsu/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-01
+    url: https://api.github.com/repos/importantimport/hatsu/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 258
+    url: https://api.github.com/repos/importantimport/hatsu
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 7
+    url: https://api.github.com/repos/importantimport/hatsu/contributors
+    checkedAt: 2026-11-03
+    via: api
+notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, hostedOffering, renderingModes, templating, runtimeMin, outputDir, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, facebook, newsletter, wikidata, dockerPulls, endoflifeId, supportedVersions, crateName, crateDownloads]
+unreadable: []
+notes: >
+  Criterion 1: the bridge serves a static site's fediverse presence; the site publishes a feed (JSON, Atom or RSS), serves the .well-known files Hatsu returns as static files and adds an alternate link tag to each page (docs page "Redirecting with Static files and Markup"), and the bridge runs on the creator's side, so it is accepted under the bridge rule. ActivityPub is the protocol it speaks, so it is recorded here only as prose context. The docs say it is "Hatsu is still a Work-In-Progress"; the README says it works with "any SSGs and most static hosting services". The README says a fediverse search for the site URL redirects to the matching post on the Hatsu instance, that Hatsu accepts follow requests, pushes new posts to followers' homepages, and sends replies from fediverse users back to the static site as backfeed; the intro page says Hatsu uses the site's Feed (JSON, Atom or RSS) as its data source instead of HTML pages with microformats2. The environment page lists the settings as environment variables read from a dotenv file. Hatsu is the Rust server and a Docker image; the Docker image is published to GitHub Container Registry, not Docker Hub, so no dockerPulls figure is recorded. The README badge names a minimum Rust 1.85 (MSRV); it is a build requirement for a binary and image that ships compiled, so runtimeMin is left out. The README "Fediverse compatibility" section says Hatsu uses the activitypub-federation library from the Lemmy project and includes code copied from Lemmy and activitypub-federation (AGPL-3.0 both); that is a dependency, not basedOn. The docs comparison section names Bridgy Fed and Bridgy as similar services; neither has a record, so alternativeTo is not written. The Matrix chat badge in the README is not a field. The docs, not the README, state the Docker environment variables. The currentMajor value 0 follows the 0.x version line: the repository never tagged a 1.0 release. The maintainer is the author named in Cargo.toml at the v0.3.5 tag; the GitHub owner is an organization named importantimport. The HATSU_ACCESS_TOKEN Admin API is a management API for the instance, not a headless content API, so headlessApi is not written.

@@ -1,0 +1,5 @@
+imaginary is an HTTP service that performs image operations on the requests it receives: resize, crop, rotate, watermark, format conversion and more, as listed in the [README](https://github.com/h2non/imaginary). It calls libvips through a Go binding. The README gives install routes for the Go source with `go get`, the official Docker image with a Compose example, which bundles libvips, and deployments to Fly.io, Cloud Foundry and Google Cloud Run. Images can arrive in the POST body, from a local directory mounted into the container, or from a remote URL when the server starts with the URL source flag. Optional controls are an API key, URL signatures, a request throttle and CORS support. Tomas Aparicio is named as the original author and maintainer.
+
+## Worth knowing
+
+The newest tagged release is older than the default branch, which has commits after it. The source install needs libvips installed separately, and the README offers a preinstall script for that. The Docker image is the route that needs no separate libvips setup.

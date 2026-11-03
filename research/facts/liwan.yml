@@ -1,0 +1,138 @@
+id: liwan
+name: Liwan
+status: accepted
+checkedAt: 2026-11-03
+description: "Self-hosted, privacy-first web analytics that runs as a single binary or a Docker container and keeps the data on the operator's server."
+facts:
+  - field: homepage
+    value: "https://liwan.dev"
+    url: https://liwan.dev/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: "https://github.com/explodingcamera/liwan"
+    url: https://github.com/explodingcamera/liwan
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://liwan.dev/getting-started/"
+    url: https://liwan.dev/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "Henry Gressmann"
+    url: https://henrygressmann.de/impressum
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Information according to § 5 DDG: Henry Gressmann"
+  - field: maintainerType
+    value: individual
+    url: https://henrygressmann.de/impressum
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This legal notice applies to the following websites, profiles, and projects operated by me"
+  - field: hqCountry
+    value: DE
+    url: https://henrygressmann.de/impressum
+    checkedAt: 2026-11-03
+    via: page
+    quote: "70736 Fellbach Germany"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/explodingcamera/liwan
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [analytics]
+    url: https://liwan.dev/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "liwan gives you useful insights while keeping the data on your server"
+  - field: language
+    value: Rust
+    url: https://github.com/explodingcamera/liwan
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://liwan.dev/install/binary/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The single binary is the simplest way to run liwan."
+  - field: installMethod
+    value: single binary
+    url: https://liwan.dev/install/binary/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The single binary is the simplest way to run liwan."
+  - field: installMethod
+    value: docker
+    url: https://liwan.dev/getting-started/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Run the latest liwan Docker image on your server."
+  - field: installMethod
+    value: docker compose
+    url: https://liwan.dev/install/docker-compose/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker compose up -d"
+  - field: runsAs
+    value: [always-on]
+    url: https://liwan.dev/guides/service/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "liwan can run as a service so it starts automatically when your server boots."
+  - field: adminUi
+    value: "yes, a built-in dashboard with settings for teams"
+    url: https://liwan.dev/reference/projects-and-entities/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Grant access to private projects through teams"
+  - field: databases
+    value: [duckdb]
+    url: https://liwan.dev/guides/duckdb/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "DuckDB is the embedded OLAP database used by liwan."
+  - field: sso
+    value: [oidc]
+    url: https://liwan.dev/guides/authentication/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "liwan supports sign-in through Google Workspace, Microsoft Entra ID, or any OIDC-compliant provider."
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/explodingcamera/liwan/blob/main/LICENSE.md
+    checkedAt: 2026-11-03
+    via: api
+    quote: "Version 2.0, January 2004"
+  - field: currentMajor
+    value: 1
+    url: https://github.com/explodingcamera/liwan/releases/tag/liwan-v1.8.2
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-29"
+    url: https://github.com/explodingcamera/liwan/releases/tag/liwan-v1.8.2
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2024
+    url: https://github.com/explodingcamera/liwan/tree/liwan-v0.1.0-beta.1
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 221
+    url: https://github.com/explodingcamera/liwan
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 3
+    url: https://github.com/explodingcamera/liwan/graphs/contributors
+    checkedAt: 2026-11-03
+    via: api
+notFound: [parent, forkOf, successorOf, alternativeTo, wikidata, eolPolicy, endoflifeId, npmName, packagistName, pypiDownloads, usageShare, renderingModes, templating, headlessApi, i18n, multisite, livePreview, userRoles, importsFrom, pluginDirectory, subreddit, mastodon, bluesky, x, newsletter, discord, forum, paidEdition, hostedOffering, regions, reportedInstalls, dockerPulls, runtimeMin]
+unreadable: []
+notes: >
+  Accepted on criterion 1: the homepage says a site adds a small browser script with one line of HTML, or sends events from its server, and the homepage states use "with any framework or CMS". The tracking script (tracking guide) and the server-side event API are the attach routes. An API exists with API keys and client packages (JavaScript and Rust), the npm package README calls the API experimental, and no page states its protocol, so headlessApi stays out. Runtime: a compiled Rust binary (runtime binary); runtimeMin is left out because the software ships as a binary and a Docker image, and the Cargo.toml at tag liwan-v1.8.2 names rust-version 1.99 as a build requirement. Releases: liwan-v1.8.2 (2026-10-29) is the newest stable release, a release candidate series (liwan-v1.8.0-rc.0 to rc.5, September and October 2026) is older than the stable line and is not recorded as latestPrereleaseDate. The repository tag prefix is liwan-v; the first tag is liwan-v0.1.0-beta.1 (2024-08-13). Maintainer: the LICENSE file has no copyright line; the impressum at henrygressmann.de names Henry Gressmann as the operator of liwan.dev (the page says "This legal notice applies to ... https://liwan.dev"). The address is the maintainer's own; it is recorded as hqCountry DE for the reviewer, since the maintainer is an individual. Two Docker image names: the README and homepage name ghcr.io/explodingcamera/liwan (GitHub Container Registry, not Docker Hub), so no Docker Hub pull figure exists. The authentication guide names a team assignment through the provider's groups and that a regular "User" account is created on first sign-in; no further role names are stated, so userRoles stays unknown. The dashboard and the database are built into the binary (homepage), with bot filtering and no tracking cookies stated: coined kinds (privacyClaims, botFiltering, cookieless) are in notes. The authentication guide names Google Workspace and Microsoft Entra ID beside "any OIDC-compliant provider"; only OIDC is recorded as the protocol. The impressum's phone number and email address are not recorded.

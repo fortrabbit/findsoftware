@@ -1,0 +1,104 @@
+id: nextcloud-forms
+name: Nextcloud Forms
+status: accepted
+checkedAt: 2026-11-03
+description: Survey and questionnaire app for Nextcloud that creates forms, collects responses and can embed a form in an external website.
+facts:
+  - field: repository
+    value: https://github.com/nextcloud/forms
+    url: https://api.github.com/repos/nextcloud/forms
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://github.com/nextcloud/forms/tree/main/docs
+    url: https://raw.githubusercontent.com/nextcloud/forms/main/docs/Embedding.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "it is possible to embed forms inside external websites"
+  - field: maintainer
+    value: Nextcloud GmbH
+    url: https://raw.githubusercontent.com/nextcloud/forms/main/REUSE.toml
+    checkedAt: 2026-11-03
+    via: page
+    quote: "SPDX-FileCopyrightText: 2024-2026 Nextcloud GmbH and Nextcloud contributors"
+  - field: hqCountry
+    value: DE
+    url: https://nextcloud.com/impressum/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "70192 Stuttgart Germany"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/nextcloud
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/nextcloud/forms
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [surveys]
+    url: https://raw.githubusercontent.com/nextcloud/forms/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Simple surveys and questionnaires, self-hosted"
+  - field: runtime
+    value: [php]
+    url: https://raw.githubusercontent.com/nextcloud/forms/v5.4.1/composer.json
+    checkedAt: 2026-11-03
+    via: page
+    quote: '"php": "8.2"'
+  - field: runtimeMin
+    value: "8.2"
+    url: https://raw.githubusercontent.com/nextcloud/forms/v5.4.1/composer.json
+    checkedAt: 2026-11-03
+    via: page
+    quote: '"php": "8.2"'
+  - field: installMethod
+    value: [clone into the Nextcloud apps folder and build (development setup)]
+    url: https://raw.githubusercontent.com/nextcloud/forms/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Clone this app into the `apps` folder of your Nextcloud"
+  - field: license
+    value: AGPL-3.0-or-later
+    url: https://raw.githubusercontent.com/nextcloud/forms/main/appinfo/info.xml
+    checkedAt: 2026-11-03
+    via: page
+    quote: "AGPL-3.0-or-later"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/nextcloud/forms/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "GNU AFFERO GENERAL PUBLIC LICENSE"
+  - field: firstRelease
+    value: "2019"
+    url: https://api.github.com/repos/nextcloud/forms/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 5
+    url: https://api.github.com/repos/nextcloud/forms/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-22"
+    url: https://api.github.com/repos/nextcloud/forms/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 383
+    url: https://api.github.com/repos/nextcloud/forms
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 62
+    url: https://api.github.com/repos/nextcloud/forms/contributors
+    checkedAt: 2026-11-03
+    via: api
+notFound: [homepage, basedOn, forkOf, successorOf, alternativeTo, parent, pricingPage, paidEdition, freeTier, importsFrom, headlessApi, templating, contentStore, databases, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, endoflifeId, npmName, npmWeeklyDownloads, dockerPulls, packagistName, reportedInstalls, usageShare, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, adminUi]
+unreadable: []
+notes: >
+  Criterion 1 holds on the project's own docs: Embedding.md says a public share link converted to an embeddable link is placed in an iframe on an external website, and the Forms Public API (docs/API_v3.md, openapi.json) is described for custom forms, and info.xml (description, inside a CDATA block the quote check cannot read) calls it a REST-API for integrating Forms into a service, so headlessApi is not recorded. Webhook support is named in the README and points to the Nextcloud server admin guide for the Forms events; it is recorded in notes only. basedOn nextcloud is kept out of the fields (no fact file nextcloud.yml exists; the Nextcloud server is the host the app installs into): the README says to clone the app into the apps folder of a Nextcloud, and the project does not use the word "based on"; research/facts/nextcloud.yml does not exist, so the Nextcloud dependency (info.xml nextcloud min-version 33, max-version 35) is in notes. The homepage is the GitHub repository (info.xml website and the store "Homepage" link point there), so no homepage is recorded; the Nextcloud app store page (apps.nextcloud.com/apps/forms) is a listing, not the project's own site. Release tarballs are published on GitHub releases (forms-vX.tar.gz) and the app store lists them by Nextcloud version; the store's community rating is not recorded. The store lists Tim Sattizahn as owner and several co-maintainers; the copyright line and the impressum name Nextcloud GmbH, so that is the maintainer. The license is stated two ways: the README's header comment (an HTML comment, not checkable as page text) says AGPL-3.0-only, while info.xml and the REUSE.toml say AGPL-3.0-or-later; the or-later wording is recorded and is the latest release's licence element. The GitHub API reports AGPL-3.0 from the LICENSE file, the same license text. The Forms app is not the Nextcloud server; its runtime is PHP on the Nextcloud server, from composer.json at v5.4.1. Coined kinds in notes: embedMethod (iframe from an embeddable share link, window message events for resizing and form-saved), webhooks (Nextcloud server webhook listeners for Forms events), apiStyles (OCS endpoints of the Nextcloud server, JSON or XML formatting, OpenAPI at openapi.json), exports (results as CSV in the Google Forms format). The app runs on the Nextcloud server's own database and storage; no database engine is named by the app's pages. The adminUi field is left out because the app's admin interface is not described on the pages read beyond the app itself.

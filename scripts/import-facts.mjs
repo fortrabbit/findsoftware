@@ -18,6 +18,7 @@ const categoryMap = {
   '3d': 'graphics',
   accessibility: 'ui-library',
   'acme-client': 'web-server',
+  'ad-server': 'media',
   admin: 'admin-panel',
   'ai-framework': 'framework',
   'analytics-engine': '',

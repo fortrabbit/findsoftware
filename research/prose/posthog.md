@@ -1,0 +1,5 @@
+PostHog is a product analytics platform with session replay, feature flags, experiments and surveys. It is offered as PostHog Cloud and as a self-hosted deployment of the same product. The architecture docs describe a Django web app and REST API, Rust services for event capture, a Node.js worker for ingestion, and ClickHouse, PostgreSQL and Redis as data stores. The README names a one-line deploy script for a hobby instance on Linux with Docker, and the docs describe a Docker Compose deployment that runs everything on a single machine. PostHog Inc. maintains the project.
+
+## Worth knowing
+
+The ee directory falls under the PostHog Enterprise license, which allows production use only with a valid Enterprise license, while the rest of the repository is MIT-licensed. The docs say the project does not do tagged releases for self-hosted PostHog: every commit becomes available to self-hosted instances. The project states that it provides no customer support or guarantees for open source deployments and recommends PostHog Cloud once event volume grows past what it expects a self-hosted instance to handle.

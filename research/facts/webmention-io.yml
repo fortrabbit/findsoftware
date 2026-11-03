@@ -1,0 +1,130 @@
+id: webmention-io
+name: Webmention.io
+status: accepted
+checkedAt: 2026-11-03
+description: "Webmention receiver that accepts mentions for any web page, offered as a hosted service and as open source PHP code."
+facts:
+  - field: homepage
+    value: "https://webmention.io"
+    url: https://webmention.io/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A hosted service that receives webmentions for any web page."
+  - field: hostedOffering
+    value: "webmention.io"
+    url: https://webmention.io/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A hosted service that receives webmentions for any web page."
+  - field: repository
+    value: "https://github.com/aaronpk/webmention.io"
+    url: https://api.github.com/repos/aaronpk/webmention.io
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://webmention.io/api"
+    url: https://github.com/aaronpk/webmention.io/blob/php/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The API documentation is rendered at"
+  - field: maintainer
+    value: "Aaron Parecki"
+    url: https://github.com/aaronpk/webmention.io/blob/php/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright 2018-2026 by Aaron Parecki."
+  - field: maintainerType
+    value: individual
+    url: https://github.com/aaronpk/webmention.io/blob/php/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright 2018-2026 by Aaron Parecki."
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/aaronpk
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/aaronpk/webmention.io
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [community]
+    url: https://github.com/aaronpk/webmention.io/blob/php/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This project is an implementation of the Webmention protocol"
+  - field: runtime
+    value: [php]
+    url: https://github.com/aaronpk/webmention.io/blob/php/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Written in PHP (8.2+) with no framework"
+  - field: runtimeMin
+    value: "8.2"
+    url: https://github.com/aaronpk/webmention.io/blob/php/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Requirements: PHP 8.2 with the curl, intl, mbstring, pdo_mysql, redis and xmlwriter extensions"
+  - field: databases
+    value: [mysql]
+    url: https://github.com/aaronpk/webmention.io/blob/php/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MySQL or MariaDB; Redis"
+  - field: databases
+    value: [mariadb]
+    url: https://github.com/aaronpk/webmention.io/blob/php/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MySQL or MariaDB; Redis"
+  - field: adminUi
+    value: "yes, dashboard to delete and hold webmentions"
+    url: https://github.com/aaronpk/webmention.io/blob/php/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A dashboard to delete webmentions."
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/aaronpk/webmention.io/blob/php/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "see `docs/webmention-worker@.service` for a systemd unit"
+  - field: installMethod
+    value: "composer install from the repository, then MySQL schema and php -S"
+    url: https://github.com/aaronpk/webmention.io/blob/php/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "composer install"
+  - field: license
+    value: "BSD-2-Clause"
+    url: https://raw.githubusercontent.com/aaronpk/webmention.io/main/LICENSE.txt
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Redistributions in binary form must reproduce the above copyright notice"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/aaronpk/webmention.io/blob/php/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Available under the BSD License"
+  - field: lastCommitDate
+    value: 2026-10-17
+    url: https://api.github.com/repos/aaronpk/webmention.io/commits?per_page=1
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 875
+    url: https://api.github.com/repos/aaronpk/webmention.io
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 1
+    url: https://api.github.com/repos/aaronpk/webmention.io/contributors?per_page=1
+    checkedAt: 2026-11-03
+    via: api
+notFound: [hqCountry, parent, basedOn, alternativeTo, forkOf, successorOf, contentStore, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, pricingPage, paidEdition, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, packagistName, packagistDownloads, npmName, npmWeeklyDownloads, pypiDownloads, endoflifeId, supportedVersions, outputDir, headlessApi, firstRelease, currentMajor, latestReleaseDate, dockerPulls, docker, forum]
+unreadable: []
+notes: >
+  Boundary row, accepted because the README gives an install guide for the open source code: the Development section lists requirements, composer install, the schema import, php -S and bin/worker, and it is the only install route the repository states. The hosted service at webmention.io is the same project run by the maintainer; the homepage calls it a hosted service, and the README says the receiving service can be run separately from the blogging software. A site attaches to it with a link tag (rel webmention) in its HTML or a Link header, and the homepage offers a small script that renders a page's mentions. The README says webmentions are verified in the background by bin/worker, which pops jobs from a Redis list. The default branch is php and has no tags or releases, so no version, release date or firstRelease is recorded; lastCommitDate is the newest commit on that branch. The README names the BSD License and points to LICENSE.txt, but the php branch has no LICENSE.txt; the main branch (an earlier Ruby implementation) has a LICENSE.txt with the two-clause BSD text and the 2013 copyright line, so the BSD-2-Clause entry is taken from there. The README copyright line reads 2018-2026. Redis is a job queue for bin/worker, not a database for the records, and it is recorded in the notes only. The worker is run as a systemd service per the README; the PHP front controller is not stated as a per-request process, so runsAs records always-on only. Standards and features that stay in notes: the W3C Webmention protocol and Private Webmention (code parameter), the sending endpoint with rate limits and the 429 and 503 answers, web hooks for received and deleted webmentions, the blocklists and moderation settings, IndieAuth sign-in with an indielogin.com fallback that an operator setting can switch off, the migration tool. The main branch holds earlier Ruby code, and the README of the default branch names no successor, so no successorOf is recorded. No headlessApi is recorded: the API is described as a JSON API with GET endpoints and the README never uses the word REST.

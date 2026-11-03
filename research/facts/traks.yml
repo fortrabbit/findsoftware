@@ -1,0 +1,87 @@
+id: traks
+name: Traks
+status: accepted
+checkedAt: 2026-11-03
+description: Self-hosted web analytics that runs on Cloudflare Workers, Durable Objects, D1 and R2 in the site owner's own Cloudflare account.
+facts:
+  - field: homepage
+    value: https://traks.dev
+    url: https://traks.dev/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/shivamanupadi/traks
+    url: https://api.github.com/repos/shivamanupadi/traks
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Shivaprasad Manupadi
+    url: https://github.com/shivamanupadi/traks/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2026 Shivaprasad Manupadi"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/shivamanupadi
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/shivamanupadi/traks/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MIT License"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/shivamanupadi/traks/languages
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [analytics]
+    url: https://github.com/shivamanupadi/traks/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Self-hosted, privacy-friendly web analytics built entirely on Cloudflare."
+  - field: firstRelease
+    value: "2026"
+    url: https://api.github.com/repos/shivamanupadi/traks/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/shivamanupadi/traks/releases/latest
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-03
+    url: https://api.github.com/repos/shivamanupadi/traks/releases/latest
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 337
+    url: https://api.github.com/repos/shivamanupadi/traks
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 5
+    url: https://api.github.com/repos/shivamanupadi/traks/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: databases
+    value: [sqlite]
+    url: https://github.com/shivamanupadi/traks/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "per-site SQLite Durable Objects"
+  - field: installMethod
+    value: Cloudflare install wizard at traks.dev/deploy
+    url: https://github.com/shivamanupadi/traks/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "the wizard provisions everything into your own account in about two minutes"
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, runtime, runtimeMin, runsAs, renderingModes, adminUi, headlessApi, contentStore, templating, i18n, multisite, livePreview, userRoles, sso, selfHostOption, hostedOffering, paidEdition, pricingPage, apiLimits, hqCountry, regions, docs, lastCommitDate, latestPrereleaseDate, endoflifeId, npmName, npmWeeklyDownloads, packagistName, dockerPulls, reportedInstalls, usageShare, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata]
+unreadable:
+  - https://traks.dev/docs (JavaScript shell with the same HTML for every path; the docs source is in the repository under apps/home)
+  - https://traks.dev/changelog (same JavaScript shell)
+notes: >
+  The homepage and every traks.dev path return the same JavaScript shell (an empty root element), so only the homepage's static HTML is read; its meta description repeats the README wording and is not quoted because the checker strips attributes. The README is the source for the install route, architecture and license. The repository's apps/home folder holds the traks.dev site; its docs were not read because the README and the package manifest cover the install path. The README names Cloudflare Workers, Durable Objects, D1, Pipelines, R2 Data Catalog and R2 SQL as the platform the software runs on; the runtime field is left unknown because Cloudflare Workers is not in the runtime vocabulary. The README's Node 20 requirement (Requires Node ≥ 20) is a monorepo development requirement, so runtimeMin is not recorded. The README states the open beta status of R2 Data Catalog, R2 SQL and Pipelines as of September 2026; it is recorded here only as a note, not as a field. Architecture from the README: a collect Worker validates the site key, filters bots and dual-writes each event to a Pipelines stream (the record) and to a per-site SiteLiveStore Durable Object (the live path); the Iceberg sink writes history to R2 Data Catalog, read with R2 SQL; an api Worker serves the dashboard and the metadata in D1. Auth is Better Auth on D1, email and password only. The visitor hash is an HMAC of a secret, the date, the IP address, the user agent and the site key; the dashboard receives live counts over one authenticated WebSocket; bot and agent traffic is classified and reported alongside human traffic. The live path is one Durable Object per site, and the README says the "today" count undercounts while a site's traffic is at its peak. Running an instance is billed to the owner's Cloudflare account, as the README's cost section states. The wizard's install creates both Workers, D1, KV, the R2 bucket and the Pipelines stream. Coined kinds from the README, in notes only: cookieless (cookie-free counting with a daily-rotating visitor hash), privacyClaims (no raw IP addresses stored, no personal data stored), embedMethod (a single t.js script tag served from the edge), mcpTools (analytics exposed through MCP and WebMCP tools). Maintainer is the LICENSE copyright line; no legal entity is named. The cost section gives prices, which are not recorded.

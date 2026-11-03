@@ -1,0 +1,106 @@
+id: imagor
+name: imagor
+status: accepted
+checkedAt: 2026-11-03
+description: "Image processing server and Go library that resizes, crops and filters images with libvips, using the thumbor URL syntax."
+facts:
+  - field: homepage
+    value: "https://docs.imagor.net"
+    url: https://docs.imagor.net/
+    checkedAt: 2026-11-03
+    via: page
+  - field: docs
+    value: "https://docs.imagor.net"
+    url: https://docs.imagor.net/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: "https://github.com/cshum/imagor"
+    url: https://github.com/cshum/imagor
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: "Adrian C. Shum"
+    url: https://docs.imagor.net/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright © 2026 Adrian C. Shum"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/cshum
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Go
+    url: https://github.com/cshum/imagor
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [go-binary]
+    url: https://github.com/cshum/imagor/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "image processing server and Go library"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/cshum/imagor/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "available as a HTTP server with first-class Docker support"
+  - field: installMethod
+    value: "docker"
+    url: https://github.com/cshum/imagor/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker run -p 8000:8000 shumc/imagor"
+  - field: dockerPulls
+    value: "606538 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/shumc/imagor/
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [media-processing, image-server]
+    url: https://github.com/cshum/imagor/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "image processing server and Go library"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/cshum/imagor/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-24"
+    url: https://github.com/cshum/imagor/releases/tag/v1.9.14
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/cshum/imagor/releases/tag/v1.9.14
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2021
+    url: https://github.com/cshum/imagor/tree/v0.1.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 4056
+    url: https://github.com/cshum/imagor
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 40
+    url: https://github.com/cshum/imagor
+    checkedAt: 2026-11-03
+    via: api
+  - field: alternativeTo
+    value: [thumbor]
+    url: https://github.com/cshum/imagor/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "It adopts the thumbor URL syntax representing a high-performance drop-in replacement."
+notFound: [parent, basedOn, forkOf, successorOf, importsFrom, runtimeMin, npmName, packagistName, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, forum, usageShare, reportedInstalls, wikidata, endoflifeId, adminUi, userRoles, sso, i18n, multisite, livePreview, regions, hqCountry]
+unreadable: []
+notes: >
+  The project's own site is the docs site: imagor.net answers with a redirect to docs.imagor.net, which is cited as homepage and docs. The README links the docs pages for image endpoint, filters, storage, security and configuration. The statement "It adopts the thumbor URL syntax representing a high-performance drop-in replacement" is recorded as alternativeTo thumbor, a relation the project states itself; the README does not name a parent. Coined, recorded here only: URL signing with IMAGOR_SECRET, HMAC with SHA-1 by default and SHA-256 or SHA-512 by configuration, and an expire filter (security page); output formats WebP, AVIF (experimental), JPEG and pass-through for SVG (configuration page); image library libvips through the vipsgen Go binding (README); loaders for the file system, AWS S3, Google Cloud Storage and HTTP, and storage backends (storage page); video thumbnails through a separate imagorvideo project (README). The docs configuration page lists environment variables only, and the Docker image is the install route the README and the docs home name. The HTTP image endpoint is an image URL syntax, not a headless CMS API, so headlessApi is not recorded. Commercial support and consulting by Adrian C. Shum (consulting page) is not an edition, and the imagor project stays open source per that page. Imagor Studio, listed in the ecosystem menu, is described as a self-hosted product with an early bird price; it is a separate product in the ecosystem and is not recorded as an edition. The Imagor MCP server, imagorface and the Elestio deploy button are not recorded as facts of this record. Contributors counted across all pages with per_page=1 (40). The GitHub user type is User, and the owner's name on GitHub is Adrian C. Shum.

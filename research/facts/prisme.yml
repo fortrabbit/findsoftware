@@ -1,0 +1,149 @@
+id: prisme
+name: Prisme Analytics
+status: accepted
+checkedAt: 2026-11-03
+description: "Privacy-focused web analytics that can be self-hosted with Docker Compose, stores events in ClickHouse and shows them in Grafana dashboards."
+facts:
+  - field: homepage
+    value: "https://www.prismeanalytics.com"
+    url: https://www.prismeanalytics.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: "https://github.com/prismelabs/analytics"
+    url: https://github.com/prismelabs/analytics
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://www.prismeanalytics.com/docs"
+    url: https://www.prismeanalytics.com/docs
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "Prisme Analytics"
+    url: https://www.prismeanalytics.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "© 2024 Prisme Analytics. All rights reserved."
+  - field: maintainerType
+    value: company
+    url: https://www.prismeanalytics.com/privacy/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Prisme Analytics is a privacy-first analytics company."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/prismelabs
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Go
+    url: https://github.com/prismelabs/analytics
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Written in Go"
+  - field: categories
+    value: [web-analytics]
+    url: https://www.prismeanalytics.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: license
+    value: AGPL-3.0-only
+    url: https://github.com/prismelabs/analytics/blob/v0.20.0/LICENSING.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The default license for this project is AGPL-3.0-only"
+  - field: license
+    value: MIT
+    url: https://github.com/prismelabs/analytics/blob/v0.20.0/LICENSING.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The following directories and their subdirectories are licensed under MIT"
+  - field: hostedOffering
+    value: "Prisme Cloud"
+    url: https://www.prismeanalytics.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "All features available in Prisme Cloud are available in Open Source distribution."
+  - field: regions
+    value: ["EU (cloud)"]
+    url: https://www.prismeanalytics.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Made and hosted in the EU"
+  - field: databases
+    value: [clickhouse]
+    url: https://www.prismeanalytics.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "respectively Grafana and ClickHouse"
+  - field: basedOn
+    value: [grafana]
+    url: https://www.prismeanalytics.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "built on top of state of the art Open Source data visualization and storage"
+  - field: adminUi
+    value: "yes, Grafana dashboards"
+    url: https://github.com/prismelabs/analytics
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Prisme integrates with Grafana that provides"
+  - field: userRoles
+    value: "yes, through Grafana"
+    url: https://github.com/prismelabs/analytics
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Permissions managements"
+  - field: installMethod
+    value: docker
+    url: https://www.prismeanalytics.com/docs/guides/self-host-prisme-docker/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Download the official docker-compose.yml file maintained within"
+  - field: runsAs
+    value: [always-on]
+    url: https://www.prismeanalytics.com/docs/guides/self-host-prisme-docker/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "setup your own Prisme Analytics server using"
+  - field: alternativeTo
+    value: [matomo]
+    url: https://www.prismeanalytics.com/vs/matomo/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Both Prisme Analytics and Matomo offer strong alternatives to Google Analytics"
+  - field: x
+    value: "https://x.com/prismeanalytics"
+    url: https://www.prismeanalytics.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: githubStargazers
+    value: 136
+    url: https://github.com/prismelabs/analytics
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 1
+    url: https://github.com/prismelabs/analytics
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://github.com/prismelabs/analytics/releases/tag/v0.20.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2025-06-25"
+    url: https://github.com/prismelabs/analytics/releases/tag/v0.20.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: "2024"
+    url: https://github.com/prismelabs/analytics/releases/tag/v0.1.0
+    checkedAt: 2026-11-03
+    via: api
+notFound: [runtime, hqCountry, wikidata, parent, forkOf, successorOf, pricingPage, importsFrom, paidEdition, runtimeMin, sso, contentStore, templating, i18n, multisite, livePreview, endoflifeId, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, usageShare, npmName, packagistName, pypiDownloads, renderingModes, headlessApi, reportedInstalls]
+unreadable: []
+notes: >
+  GitHub reports TypeScript as the repository language; the repository description says "Written in Go", and the server is the Go part, so language is recorded from the description. No page read states how the server is delivered as a binary, so runtime and runtimeMin are not recorded; the install guide sets it up with Docker Compose. The homepage says Prisme is "built on top of" Grafana and ClickHouse; Grafana is the one recorded as basedOn, ClickHouse as the database. The Cloud plan price on the homepage is not recorded. The terms of service and privacy pages name no legal entity, and the terms are governed by French law; no country is recorded as headquarters. The footer "vs Plausible" link points to a page that returns 404, so Plausible is not an alternativeTo statement. The LinkedIn profile (linkedin.com/company/prisme-analytics) is a coined field and stays here. Coined kinds from the homepage, recorded here only: GDPR, PPCA, PECR and Schrems II compliance, cookieless analytics, no cookie banner, a JavaScript-less tracking pixel, and the tracking script embedded with a script tag. Licenses: AGPL-3.0-only is the default for the repository, MIT applies to the tracker and deploy directories listed in LICENSING.md at v0.20.0. The GitHub API reports AGPL-3.0, the same license in a shorter wording. The 0.x version line is recorded as currentMajor 0. Contributors count is one account on the GitHub contributors endpoint.

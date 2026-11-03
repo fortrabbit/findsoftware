@@ -1,0 +1,126 @@
+id: pilbox
+name: Pilbox
+status: discontinued
+checkedAt: 2026-11-03
+description: "Image processing application server that requests images by URL and resizes, crops or converts them."
+facts:
+  - field: status
+    value: "discontinued"
+    url: "https://github.com/agschwender/pilbox/blob/master/README.rst"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This project will no longer be maintained."
+  - field: repository
+    value: "https://github.com/agschwender/pilbox"
+    url: "https://api.github.com/repos/agschwender/pilbox"
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://github.com/agschwender/pilbox/blob/master/README.rst"
+    url: "https://github.com/agschwender/pilbox/blob/master/README.rst"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Pilbox is an image processing application server"
+  - field: maintainer
+    value: "Adam Gschwender"
+    url: "https://github.com/agschwender/pilbox/blob/master/setup.py"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "author='Adam Gschwender'"
+  - field: maintainerType
+    value: "individual"
+    url: "https://github.com/agschwender/pilbox/blob/master/setup.py"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "author='Adam Gschwender'"
+  - field: sourcePublic
+    value: true
+    url: "https://github.com/agschwender/pilbox"
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: ["image-server", "media-processing"]
+    url: "https://github.com/agschwender/pilbox/blob/master/README.rst"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Pilbox is an image processing application server"
+  - field: language
+    value: "Python"
+    url: "https://api.github.com/repos/agschwender/pilbox"
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: ["python"]
+    url: "https://github.com/agschwender/pilbox/blob/master/README.rst"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Python >= 2.7"
+  - field: runsAs
+    value: ["always-on"]
+    url: "https://github.com/agschwender/pilbox/blob/master/README.rst"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "It is recommended that the application run behind a CDN for larger applications or behind varnish for smaller ones."
+  - field: runtimeMin
+    value: "2.7"
+    url: "https://github.com/agschwender/pilbox/blob/master/README.rst"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Python >= 2.7"
+  - field: installMethod
+    value: "pip"
+    url: "https://github.com/agschwender/pilbox/blob/master/README.rst"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Pilbox can be installed with pip"
+  - field: license
+    value: "Apache-2.0"
+    url: "https://github.com/agschwender/pilbox/blob/master/LICENSE.txt"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: licenseModel
+    value: "open-source"
+    url: "https://github.com/agschwender/pilbox/blob/master/LICENSE.txt"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: currentMajor
+    value: 1
+    url: "https://api.github.com/repos/agschwender/pilbox/releases"
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2018-08-11
+    url: "https://api.github.com/repos/agschwender/pilbox/releases"
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: "https://api.github.com/repos/agschwender/pilbox/tags"
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 604
+    url: "https://api.github.com/repos/agschwender/pilbox"
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 14
+    url: "https://api.github.com/repos/agschwender/pilbox/contributors?per_page=1"
+    checkedAt: 2026-11-03
+    via: api
+  - field: pypiName
+    value: "pilbox"
+    url: "https://pypi.org/pypi/pilbox/json"
+    checkedAt: 2026-11-03
+    via: api
+  - field: pypiDownloads
+    value: "314 (last month, 2026-11-03)"
+    url: "https://pypistats.org/api/packages/pilbox/recent"
+    checkedAt: 2026-11-03
+    via: api
+notFound: [homepage, renderingModes, adminUi, headlessApi, databases, contentStore, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, hostedOffering, parent, hqCountry, dockerPulls, npmName, pluginDirectory, usageShare, reportedInstalls, latestPrereleaseDate]
+unreadable: []
+notes: >
+  Discontinued by the README's first lines, "DEPRECATED. This project will no longer be maintained." The CSV row said accepted; the status is changed because the end statement is the project's own. The newest GitHub release is 1.3.4 (2018-08-11) and the newest commit on master is 2019-12-01; the age alone does not decide the status. The PyPI package names GitHub as its homepage, so no project site is recorded. The README says the application is "built on Python's Tornado web framework using the Python Imaging Library (Pillow)": Tornado and Pillow have no record ids, so they stay in notes. The GitHub topics include "deprecated". The README recommends that pilbox not be exposed to the internet, and the application includes no caching (a CDN or varnish is advised). Coined kinds, kept in notes: outputFormats (gif, jpeg, png, webp, tiff), urlSigning (HMAC-SHA1 "sig" parameter with a client key), allowedHosts (requests limited to listed hosts), imageLibrary (Pillow, with optional OpenCV and PycURL). The pypistats figure counts the last 30 days to the query date, as its period label says.

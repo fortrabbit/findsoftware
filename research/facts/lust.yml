@@ -1,0 +1,116 @@
+id: lust
+name: lust
+status: accepted
+checkedAt: 2026-11-03
+description: "Auto-optimising image server that re-encodes uploaded images into several formats and serves resized variants over HTTP."
+facts:
+  - field: repository
+    value: "https://github.com/ChillFish8/lust"
+    url: https://github.com/ChillFish8/lust
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://github.com/ChillFish8/lust/blob/master/description.md"
+    url: https://github.com/ChillFish8/lust/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: api
+    quote: "Full documentation in markdown form can also be found"
+  - field: maintainer
+    value: "Harrison Burt"
+    url: https://github.com/ChillFish8/lust/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+    quote: "Copyright (c) 2021 Harrison Burt"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/ChillFish8/lust/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+    quote: "Copyright (c) 2021 Harrison Burt"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/ChillFish8/lust
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [image-server]
+    url: https://github.com/ChillFish8/lust/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: api
+    quote: "Lust is an auto-optimising image server"
+  - field: language
+    value: Rust
+    url: https://github.com/ChillFish8/lust
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://github.com/ChillFish8/lust/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: api
+    quote: "then run `cargo build --release`"
+  - field: installMethod
+    value: docker
+    url: https://github.com/ChillFish8/lust/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: api
+    quote: "Lust has a set of pre-built, optimised docker images ready to go."
+  - field: installMethod
+    value: cargo install
+    url: https://github.com/ChillFish8/lust/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: api
+    quote: "You can install lust directly via cargo and the git flag"
+  - field: installMethod
+    value: build from source
+    url: https://github.com/ChillFish8/lust/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: api
+    quote: "To building from source, just clone this repo"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/ChillFish8/lust/blob/master/description.md
+    checkedAt: 2026-11-03
+    via: api
+    quote: "The binding host address of the server"
+  - field: databases
+    value: [scylladb]
+    url: https://github.com/ChillFish8/lust/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: api
+    quote: "consider using Scylla or a s3 compatible blob store to serve data from"
+  - field: license
+    value: MIT
+    url: https://github.com/ChillFish8/lust/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+    quote: "MIT License"
+  - field: currentMajor
+    value: 2
+    url: https://github.com/ChillFish8/lust/releases/tag/2.1.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2022-04-03"
+    url: https://github.com/ChillFish8/lust/releases/tag/2.1.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2021
+    url: https://github.com/ChillFish8/lust/releases/tag/0.1.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 435
+    url: https://github.com/ChillFish8/lust
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 5
+    url: https://github.com/ChillFish8/lust/graphs/contributors
+    checkedAt: 2026-11-03
+    via: api
+notFound: [homepage, parent, forkOf, successorOf, alternativeTo, wikidata, eolPolicy, endoflifeId, npmName, packagistName, pypiDownloads, usageShare, renderingModes, templating, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, pluginDirectory, subreddit, mastodon, bluesky, x, newsletter, discord, forum, paidEdition, hostedOffering, regions, reportedInstalls, runtimeMin]
+unreadable: []
+notes: >
+  Status stays accepted as the CSV row has it, but the import moves a record with no release in four years to stub: the newest release is 2.1.0 (2022-04-03), the repository was last pushed 2025-09-11 and is not archived. Reviewer decision: whether to set stub now or let the import move it. No homepage: the project has no site beyond its repository, so the record is a repository-only record and carries no homepage fact. Criterion 1 holds on the README's own words: the software is an image server serving variants by a size query parameter ("Build your own image CDN system your way with lust"); a site points its image URLs at it. Storage backends named in the README: a file system (testing only, per the README), ScyllaDB and S3-compatible blob stores; ScyllaDB is recorded in databases, the blob store is not a database. Sizing presets are set in a configuration file and served by the size query parameter; caching is an in-memory least recently used cache sized by cache_size in the configuration file, and the README warns that bigger images can raise RAM use. Output formats (png, jpeg, gif, webp) and the processing modes (aot, jit, realtime) are coined kinds recorded here, not as fields; the image library and URL signing are not stated in the README, so they are not recorded. The OpenAPI docs are served at /ui by the server (README). The Cargo.toml at master says version 2.0.0 while the newest release is 2.1.0; the major is 2 in both. The README's runtime is a Rust binary built with cargo or shipped in a Docker image; runtimeMin is left out because the software ships as a binary and a Docker image. Docker Hub pulls for chillfish8/lust, the image the README names in its docker run example, were 8311 on 2026-11-03 (hub.docker.com/v2/repositories/chillfish8/lust/); the count is not a field. Maintainer: the MIT copyright line names Harrison Burt; the GitHub owner is the same user.

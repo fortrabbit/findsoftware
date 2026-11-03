@@ -1,0 +1,156 @@
+id: mcaptcha
+name: mCaptcha
+status: accepted
+checkedAt: 2026-11-03
+description: Proof-of-work CAPTCHA system with a client widget and a server that validates the tokens a site receives.
+facts:
+  - field: homepage
+    value: https://mcaptcha.org
+    url: https://mcaptcha.org/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: https://github.com/mCaptcha/mCaptcha
+    url: https://api.github.com/repos/mCaptcha/mCaptcha
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://mcaptcha.org/docs/webmasters/installing-captcha/
+    url: https://mcaptcha.org/docs/webmasters/installing-captcha/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Installing mCaptcha on your website"
+  - field: maintainer
+    value: Aravinth Manivannan
+    url: https://raw.githubusercontent.com/mCaptcha/mCaptcha/master/docker-compose.yml
+    checkedAt: 2026-11-03
+    via: page
+    quote: "SPDX-FileCopyrightText: 2023 Aravinth Manivannan"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/mCaptcha
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/mCaptcha/mCaptcha
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [captcha]
+    url: https://mcaptcha.org/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "mCaptcha is proof-of-work based captcha system that is privacy focused and fully automated."
+  - field: runtime
+    value: [binary]
+    url: https://raw.githubusercontent.com/mCaptcha/mCaptcha/master/docs/DEPLOYMENT.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "sudo cp ./target/release/mcaptcha /usr/bin/"
+  - field: installMethod
+    value: docker-compose
+    url: https://github.com/mCaptcha/mCaptcha/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker-compose up -d"
+  - field: installMethod
+    value: docker
+    url: https://mcaptcha.org/docs/self-hosting/docker/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "mcaptcha/mcaptcha:latest"
+  - field: installMethod
+    value: pre-compiled binary
+    url: https://mcaptcha.org/docs/self-hosting/bare-metal/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "3.2 Install pre-compiled binary"
+  - field: installMethod
+    value: build from source with make
+    url: https://mcaptcha.org/docs/self-hosting/bare-metal/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "make dev-env && make release"
+  - field: installMethod
+    value: ansible
+    url: https://mcaptcha.org/docs/self-hosting/ansible/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Ansible playbooks to install mCaptcha are available"
+  - field: runsAs
+    value: [always-on]
+    url: https://mcaptcha.org/docs/self-hosting/bare-metal/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Systemd service configuration"
+  - field: databases
+    value: [postgres]
+    url: https://mcaptcha.org/docs/self-hosting/bare-metal/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Postgres: postgres://mcaptcha:password@localhost:5432/mcaptcha"
+  - field: databases
+    value: [mariadb]
+    url: https://mcaptcha.org/docs/self-hosting/bare-metal/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Mariadb: mysql://mcaptcha:password@localhost:3306/mcaptcha"
+  - field: adminUi
+    value: yes, dashboard for site keys and settings
+    url: https://mcaptcha.org/docs/webmasters/installing-captcha/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Create an account and sign into the mCaptcha dashboard"
+  - field: license
+    value: AGPL-3.0
+    url: https://api.github.com/repos/mCaptcha/mCaptcha
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/mCaptcha/mCaptcha/master/LICENSE.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "GNU AFFERO GENERAL PUBLIC LICENSE"
+  - field: firstRelease
+    value: "2024"
+    url: https://api.github.com/repos/mCaptcha/mCaptcha/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/mCaptcha/mCaptcha/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2024-03-15"
+    url: https://api.github.com/repos/mCaptcha/mCaptcha/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: mastodon
+    value: https://gts.batsense.net/@mcaptcha
+    url: https://mcaptcha.org/community/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "We are on the Fediverse at"
+  - field: x
+    value: https://twitter.com/m_captcha/
+    url: https://mcaptcha.org/community/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The project also has a twitter twitter presence at"
+  - field: githubStargazers
+    value: 2498
+    url: https://api.github.com/repos/mCaptcha/mCaptcha
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 17
+    url: https://api.github.com/repos/mCaptcha/mCaptcha/contributors
+    checkedAt: 2026-11-03
+    via: api
+notFound: [basedOn, forkOf, successorOf, parent, hqCountry, pricingPage, paidEdition, importsFrom, headlessApi, templating, contentStore, i18n, multisite, livePreview, userRoles, sso, renderingModes, runtimeMin, endoflifeId, npmName, npmWeeklyDownloads, packagistName, reportedInstalls, usageShare, pluginDirectory, forum, discord, subreddit, bluesky, newsletter, wikidata]
+unreadable: []
+notes: >
+  The README and DEPLOYMENT.md say the project is in development: the README says "Since we don't have a stable release yet", while GitHub marks v0.1.0 (2024-03-15) as a stable release, so currentMajor is 0 and the reviewer decides whether that release counts. The only pre-release is v0.1.0-rc1 (2024-02-23), which is the oldest tag and gives firstRelease. The docker-compose.yml SPDX header says AGPL-3.0-or-later, the same license in another wording as the GitHub AGPL-3.0, so one entry is recorded. The homepage says "Client libraries are licensed using proprietary-friendly free software licenses but the core is AGPL'd"; the client library is not this record. The installation guide offers serving the integration library yourself or loading it from a CDN such as unpkg (@mcaptcha/vanilla-glue). The deployment docs say mCaptcha does not implement SSL yet and recommend a reverse proxy such as Nginx. and the homepage calls its APIs compatible with reCAPTCHA and hCaptcha; compatibility is not an import, so nothing is recorded as importsFrom. Coined kinds left in notes: captchaMethod proof of work (SHA256), embedMethod script tag from a CDN, privacyClaims "no tracking" with cookie-free CAPTCHA routes and no IP addresses for rate limiting, redis as cache (MCAPTCHA_redis_URL), and a server-side token verification endpoint under /api/v1/pow/siteverify. The docker-compose.yml and the Docker self-hosting page name the image mcaptcha/mcaptcha:latest, while DEPLOYMENT.md builds the image locally; Docker pull counts are not recorded. The self-hosting docs name Postgres and MariaDB as supported databases and say a Redis cache (mCaptcha/cache) is optional, with an internal cache otherwise. The community page names a Matrix community, a chat route with no field. The homepage says the APIs are compatible with reCAPTCHA and hCaptcha (xCaptcha drop-in replacement); neither is a record, so no alternativeTo. The API docs section documents Rust and browser libraries, not a content API. The blog says the project was incorporated in India, which is no notice address, so hqCountry stays out. The docs badge link (mcaptcha.github.io) returns 404. The About page spells the author's name differently from the SPDX header and is not used as the maintainer source. The CONFIGURATION page mentions an instance option for commercial plans with no prices, which is not a paid edition of the software. The demo instances (demo.mcaptcha.org, demo2.mcaptcha.org) are not a hosted offering stated by the project.

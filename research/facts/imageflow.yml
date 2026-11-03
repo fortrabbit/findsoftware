@@ -1,0 +1,118 @@
+id: imageflow
+name: Imageflow
+status: accepted
+checkedAt: 2026-11-03
+description: "Image processing library and command-line tool for resizing, cropping and encoding images."
+facts:
+  - field: homepage
+    value: "https://www.imageflow.io"
+    url: https://www.imageflow.io/
+    checkedAt: 2026-11-03
+    via: page
+  - field: docs
+    value: "https://docs.imageflow.io"
+    url: https://docs.imageflow.io/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: "https://github.com/imazen/imageflow"
+    url: https://github.com/imazen/imageflow
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: "Imazen LLC"
+    url: https://www.imazen.io/legal/subscription-terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "govern your use of Imazen LLC"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/imazen
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Rust
+    url: https://github.com/imazen/imageflow
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://github.com/imazen/imageflow/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Imageflow is written in Rust"
+  - field: installMethod
+    value: "binary download"
+    url: https://github.com/imazen/imageflow/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "self-contained binaries for Windows, Ubuntu, and Mac"
+  - field: installMethod
+    value: "docker"
+    url: https://github.com/imazen/imageflow/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "We also offer Docker images for Linux"
+  - field: installMethod
+    value: "build from source with cargo"
+    url: https://github.com/imazen/imageflow/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You'll need more than just Rust to compile Imageflow, as it has a couple C dependencies."
+  - field: dockerPulls
+    value: "7098 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/imazen/imageflow_tool/
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [media-processing]
+    url: https://github.com/imazen/imageflow/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "is a command-line tool for experimenting, running batch jobs, JSON jobs,"
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/imazen/imageflow/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: "Commercial license, offered alongside AGPL-3.0"
+    url: https://www.imageflow.io/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "We also offer commercial licenses if you do not like the AGPLv3."
+  - field: pricingPage
+    value: "https://www.imazen.io/pricing"
+    url: https://www.imazen.io/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Imageflow for Rust, C, C++, Node, Go, etc"
+  - field: latestPrereleaseDate
+    value: "2026-03-31"
+    url: https://github.com/imazen/imageflow/releases/tag/v2.3.1-rc01
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://github.com/imazen/imageflow/releases/tag/v0.0.7
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 4458
+    url: https://github.com/imazen/imageflow
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 21
+    url: https://github.com/imazen/imageflow
+    checkedAt: 2026-11-03
+    via: api
+  - field: x
+    value: "https://twitter.com/imageflow_io"
+    url: https://www.imageflow.io/
+    checkedAt: 2026-11-03
+    via: page
+notFound: [hqCountry, currentMajor, latestReleaseDate, runsAs, basedOn, forkOf, successorOf, alternativeTo, importsFrom, parent, runtimeMin, npmName, packagistName, crateName, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, newsletter, forum, usageShare, reportedInstalls, wikidata, endoflifeId, adminUi, userRoles, sso, multisite, i18n, livePreview]
+unreadable: []
+notes: >
+  No stable release exists. Every GitHub tag is a release candidate or preview, and the newest is v2.3.1-rc01 (2026-03-31); the GitHub API reports the rc releases with prerelease false, but the tag names mark them as candidates, so latestPrereleaseDate holds the newest one and currentMajor and latestReleaseDate are absent. No crate named imageflow_tool exists on crates.io, so no registry fallback applies. The README badge reads "state: release candidate". This repository no longer ships an HTTP server: the README says imageflow_server was removed because its web framework is abandoned, and points to Imageflow.Server, a separate repository (imazen/imageflow-dotnet-server, also linked from the docs introduction). The record covers the library and tool in this repository, so the category is media-processing only; Imageflow.Server is a separate project that may become its own candidate. Licenses: AGPL-3.0 (LICENSE file and GitHub API) and a commercial license offered as the alternative (homepage and README, "Visit Imageresizing.net if you need an AGPLv3 exception for commercial use"); the commercial price tiers on imazen.io/pricing are product licenses by organization size and are not recorded as paidEdition, and no prices are recorded. Maintainer: Imazen LLC is the legal entity in the subscription terms, and the privacy page gives its mailing address as "Claymont, DE 19703", which names no country (DE reads as Delaware), so hqCountry is not recorded; the about page names Lilith River as owner. Language bindings (Node, Go, .NET, Ruby, Elixir, Scala) are separate repositories and not recorded. libimageflow is used in-process, so no runsAs is recorded for it; imageflow_tool is a command-line tool with no statement of where it runs. Coined, recorded here only: output formats JPEG, PNG and WebP (docs querystring page, srcset format codes); ImageResizer 4 querystring compatibility (README); an ABI of four methods for bindings (README); linear-light processing (homepage). Contributors counted across all pages with per_page=1 (21). Docker Hub image imazen/imageflow_tool is the image the README names for the tool. The homepage says "If you’re using ImageMagick, switch to imageflow_tool"; no ImageMagick record exists, so alternativeTo is not written. The homepage imageflow.io redirects to www.imageflow.io, which is cited as homepage.

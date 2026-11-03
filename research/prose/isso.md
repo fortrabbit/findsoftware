@@ -1,0 +1,3 @@
+Isso is a commenting server written in Python, with a JavaScript client that a site embeds to show and collect comments. Comments are kept in an SQLite database, and the project documents imports from Disqus and WordPress exports. The server runs as a service, and the install guide shows init scripts for running it that way. The JavaScript client finds a REST API on the server, which the project documents separately.
+
+The project describes itself as aiming to be a drop-in replacement for Disqus. An optional web administration interface moderates comments, and one server can serve comments for several websites.

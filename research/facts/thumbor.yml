@@ -1,0 +1,132 @@
+id: thumbor
+name: Thumbor
+status: accepted
+checkedAt: 2026-11-03
+description: Python image service that crops, resizes and filters images on demand from parameters in the request path.
+facts:
+  - field: homepage
+    value: https://www.thumbor.org/
+    url: https://www.thumbor.org/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "smart on-demand image cropping, resizing and filters"
+  - field: docs
+    value: https://thumbor.readthedocs.io/en/latest/
+    url: https://github.com/thumbor/thumbor/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "thumbor's documentation"
+  - field: repository
+    value: https://github.com/thumbor/thumbor
+    url: https://api.github.com/repos/thumbor/thumbor
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Globo.com
+    url: https://raw.githubusercontent.com/thumbor/thumbor/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2014 Globo.com"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/thumbor/thumbor
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [media]
+    url: https://github.com/thumbor/thumbor/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "thumbor is a smart imaging service that enables on-demand"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/thumbor/thumbor
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://raw.githubusercontent.com/thumbor/thumbor/7.8.0/pyproject.toml
+    checkedAt: 2026-11-03
+    via: page
+    quote: "requires-python = \">=3.10\""
+  - field: runtimeMin
+    value: "3.10"
+    url: https://raw.githubusercontent.com/thumbor/thumbor/7.8.0/pyproject.toml
+    checkedAt: 2026-11-03
+    via: page
+    quote: "requires-python = \">=3.10\""
+  - field: installMethod
+    value: pip install thumbor
+    url: https://thumbor.readthedocs.io/en/latest/installing.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "python -m pip install thumbor"
+  - field: installMethod
+    value: apt install thumbor (Debian and Ubuntu packages)
+    url: https://github.com/thumbor/thumbor/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "sudo apt install thumbor"
+  - field: installMethod
+    value: docker run with the official image on GitHub Container Registry
+    url: https://github.com/thumbor/thumbor/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker run -p 8888:8888 ghcr.io/thumbor/thumbor:latest"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/thumbor/thumbor/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "thumbor is an HTTP server and you can create as many different images"
+  - field: currentMajor
+    value: 7
+    url: https://api.github.com/repos/thumbor/thumbor/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: "2011"
+    url: https://api.github.com/repos/thumbor/thumbor/tags
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-30
+    url: https://api.github.com/repos/thumbor/thumbor/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/thumbor/thumbor/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/thumbor/thumbor/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: pypiName
+    value: thumbor
+    url: https://pypi.org/pypi/thumbor/json
+    checkedAt: 2026-11-03
+    via: api
+  - field: pypiDownloads
+    value: 16614 (last month)
+    url: https://pypistats.org/api/packages/thumbor/recent
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 10530
+    url: https://api.github.com/repos/thumbor/thumbor
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 170
+    url: https://api.github.com/repos/thumbor/thumbor/contributors
+    checkedAt: 2026-11-03
+    via: api
+notFound: [pricingPage, paidEdition, sso, userRoles, adminUi, livePreview, multisite, i18n, importsFrom, selfHostOption, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, hqCountry, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, endoflifeId, renderingModes, templating, contentStore, databases, headlessApi, dockerPulls, maintainerType]
+unreadable: []
+notes: >
+  Accepted, with the image-server rules: output formats, image library and URL signing are in notes only. Output formats: the homepage says "Thumbor supports webp" and lets browsers that accept WebP receive it automatically; no other format is named on the pages read. Image library: the master pyproject.toml lists Pillow as a dependency, and the README offers an optional OpenCV extra ("pip install thumbor[opencv]"); the detection docs were not read in full, so the library is not recorded as a field. URL signing: the README and getting-started page show the "unsafe" path segment for local tests; the signing key mechanism was not read in full and is not recorded. Storage: the homepage says thumbor "comes packaged with file, http, redis and mongo implementations for loaders and storages"; these are image storage backends, so databases and contentStore are not recorded. The Docker image is on GitHub Container Registry and is not a Docker Hub figure, so dockerPulls is not recorded. The docs state "Current thumbor releases require Python 3.11 or newer", while the manifest at the latest tag 7.8.0 says requires-python >=3.10 and PyPI shows >=3.10; runtimeMin follows the manifest at the latest tag, and the 3.11 docs line is for a reviewer to decide. The homepage says thumbor is "trusted by hundreds of companies worldwide" in the README; no count is recorded. The homepage https://thumbor.org/ does not answer over https (no response to a bare-domain request); the record uses the https address www.thumbor.org, which answers, and the http request for thumbor.org redirects there. The maintainer is Globo.com as the LICENSE copyright names it; the legal entity and country are not recorded because no imprint page was read. Repository and release dates: the highest stable GitHub release is 7.8.0 (2026-05-30), not a prerelease. The oldest tag is 0.1.0, whose commit is dated 2011-03-21, so firstRelease is 2011; the oldest release is 3.11.1 (2013), and the tag is older. The GitHub repository was created in 2011. The README states "thumbor is an HTTP server" and the getting-started page says to "start the process with thumbor in a console"; runsAs is always-on from the README sentence. The pypistats figure is the last month's count (16614), and last week's count is 6316.

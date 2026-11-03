@@ -1,0 +1,113 @@
+id: vemetric
+name: Vemetric
+status: hosted-service
+checkedAt: 2026-11-03
+description: Web and product analytics platform offered as a hosted service.
+facts:
+  - field: homepage
+    value: https://vemetric.com
+    url: https://vemetric.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Simple, yet powerful Web & Product Analytics"
+  - field: repository
+    value: https://github.com/vemetric/vemetric
+    url: https://api.github.com/repos/vemetric/vemetric
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://vemetric.com/docs
+    url: https://vemetric.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Learn how to integrate Vemetric into your project"
+  - field: maintainer
+    value: seriouscode GmbH
+    url: https://vemetric.com/legal/terms-of-service
+    checkedAt: 2026-11-03
+    via: page
+    quote: "seriouscode GmbH"
+  - field: hqCountry
+    value: AT
+    url: https://vemetric.com/imprint
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Siedlungsgasse 16 2111 Kleinrötz Austria"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/vemetric/vemetric
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/vemetric/vemetric
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [web-analytics, product-analytics]
+    url: https://vemetric.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Vemetric provides you with state-of-the-art web analytics"
+  - field: headlessApi
+    value: rest
+    url: https://vemetric.com/docs
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Get started with Vemetric's REST API."
+  - field: regions
+    value: EU
+    url: https://vemetric.com/docs/frequently-asked-questions
+    checkedAt: 2026-11-03
+    via: page
+    quote: "all our servers are hosted in the EU"
+  - field: pricingPage
+    value: https://vemetric.com/pricing
+    url: https://vemetric.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/vemetric/vemetric/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Vemetric is licensed under the AGPLv3 License"
+  - field: githubStargazers
+    value: 396
+    url: https://api.github.com/repos/vemetric/vemetric
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 14
+    url: https://api.github.com/repos/vemetric/vemetric/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: lastCommitDate
+    value: 2026-11-01
+    url: https://api.github.com/repos/vemetric/vemetric/commits
+    checkedAt: 2026-11-03
+    via: api
+  - field: x
+    value: https://x.com/VemetricHQ
+    url: https://vemetric.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: discord
+    value: https://discord.gg/8kwPRwAQkf
+    url: https://vemetric.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: threads
+    value: https://threads.net/@vemetric_com
+    url: https://vemetric.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/vemetric.com
+    url: https://vemetric.com/
+    checkedAt: 2026-11-03
+    via: page
+notFound: [selfHostOption, firstRelease, currentMajor, latestReleaseDate, latestPrereleaseDate, parent, basedOn, forkOf, successorOf, alternativeTo, installMethod, runsAs, runtime, contentStore, databases, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, apiLimits, forum, subreddit, mastodon, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, npmName, packagistName]
+unreadable: []
+notes: >
+  Boundary row settled as hosted-service. The repository holds the full platform under AGPL-3.0 (apps, packages, docker-compose.yml), but no page documents an install or deployment: the README says self hosting is "planned" as a Community Edition "in the future", and the FAQ answers "Can I self-host Vemetric?" with "Not yet, but I'm working on a Community Edition". Under AGENTS.md a vendor's open-source server beside the SaaS changes status only with a self-install, so the record stays hosted-service. The repository docker-compose.yml starts PostgreSQL and Redis containers; no page calls it a deployment, so it is not recorded as an installMethod. The legal notice on vemetric.com names seriouscode GmbH at Siedlungsgasse 16, 2111 Kleinrötz, Austria, and the terms of service name seriouscode GmbH as the contracting party; hqCountry AT comes from that address. The homepage says the company is "Based in the EU" and the FAQ says all servers are in the EU. The pricing page lists a free plan with 2,500 events per month and paid Professional and higher plans; no prices are recorded, and the free tier stays in notes as a coined fact. The SDKs (HTML script, JavaScript, React, Astro, Node.js, PHP, Python, Go) are client and server SDKs listed on the docs page; their repositories are not read for this record. The Discord link on the homepage is vemetric.com/discord, which redirects to the invite recorded. The homepage also links a LinkedIn company page (https://www.linkedin.com/company/vemetric), kept here as a note since linkedin is not a field. The repository has no tags or releases, so firstRelease, currentMajor and latestReleaseDate are absent. The stars and contributors figures are the platform repository's, not an SDK's.

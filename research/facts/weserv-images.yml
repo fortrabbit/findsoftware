@@ -1,0 +1,122 @@
+id: weserv-images
+name: wsrv.nl
+status: accepted
+checkedAt: 2026-11-03
+description: "Self-hostable image cache and resize service that processes images from URL parameters, built on nginx and libvips."
+facts:
+  - field: homepage
+    value: "https://wsrv.nl"
+    url: https://wsrv.nl/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "An image cache & resize service"
+  - field: repository
+    value: "https://github.com/weserv/images"
+    url: https://api.github.com/repos/weserv/images
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://wsrv.nl/docs/"
+    url: https://wsrv.nl/docs/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Our servers resize your image, cache it worldwide, and display it."
+  - field: hostedOffering
+    value: "wsrv.nl"
+    url: https://wsrv.nl/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Manipulate images on-the-fly with a worldwide cache."
+  - field: maintainer
+    value: "Andries Louw Wolthuizen and Kleis Auke Wolthuizen"
+    url: https://raw.githubusercontent.com/weserv/images/5.x/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2007-present, Andries Louw Wolthuizen and Kleis Auke Wolthuizen."
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/weserv/images/5.x/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2007-present, Andries Louw Wolthuizen and Kleis Auke Wolthuizen."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/weserv
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: C++
+    url: https://api.github.com/repos/weserv/images
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [media]
+    url: https://github.com/weserv/images/blob/5.x/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "leverages powerful libraries like libvips (for image handling and manipulation)"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/weserv/images/blob/5.x/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "nginx (used as web server, forward proxy and HTTP cache)"
+  - field: installMethod
+    value: "docker image ghcr.io/weserv/images"
+    url: https://github.com/weserv/images/blob/5.x/docker/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Pull and run the `ghcr.io/weserv/images` container."
+  - field: installMethod
+    value: "docker build from the repository"
+    url: https://github.com/weserv/images/blob/5.x/docker/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Build the container (with a specified nginx version)."
+  - field: docker
+    value: "ghcr.io/weserv/images"
+    url: https://github.com/weserv/images/blob/5.x/docker/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "ghcr.io/weserv/images:5.x"
+  - field: license
+    value: "BSD-3-Clause"
+    url: https://api.github.com/repos/weserv/images
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/weserv/images/5.x/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "BSD 3-Clause License"
+  - field: currentMajor
+    value: 5
+    url: https://api.github.com/repos/weserv/images/git/refs/tags/v5.1.2
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-01
+    url: https://api.github.com/repos/weserv/images/commits/v5.1.2
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: "2007"
+    url: https://raw.githubusercontent.com/weserv/images/5.x/CHANGELOG.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "[1.0.0] - started 2007-09-10"
+  - field: githubStargazers
+    value: 2855
+    url: https://api.github.com/repos/weserv/images
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 5
+    url: https://api.github.com/repos/weserv/images/contributors?per_page=1
+    checkedAt: 2026-11-03
+    via: api
+notFound: [runtime, hqCountry, parent, basedOn, alternativeTo, forkOf, successorOf, runtimeMin, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, pricingPage, paidEdition, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, packagistName, packagistDownloads, npmName, npmWeeklyDownloads, pypiDownloads, endoflifeId, supportedVersions, outputDir, dockerPulls]
+unreadable: []
+notes: >
+  The record is named after the project's own site, wsrv.nl; the repository is weserv/images and its README title uses that name. Accepted: the public service is the same code (the README says "Source code of wsrv.nl ... to be used on your own server(s)"), and the Docker instructions build or pull the container for a self-hosted server. The repository is not archived, its default branch is 5.x, and the last commit is 2026-11-01. The only tags are v5.0.0 and v5.1.x; no GitHub releases exist. The CHANGELOG headings say "started" with dates that differ from the tag commit dates (5.0.0 started 2019-02-07 in the changelog, while the tag commit is 2019-09-01); latestReleaseDate is taken from the v5.1.2 tag commit (2026-11-01) and the changelog heading gives 2026-10-01. firstRelease is 2007 from the 1.0.0 changelog heading, older than any tag. The image is published on GitHub Container Registry, not Docker Hub, so no pull figure is recorded. The docs list input formats (JPEG, PNG, BMP, GIF, TIFF, WebP, PDF, SVG, and others through libMagick), output formats (jpg, jxl, png, gif, tiff, webp, json), and parameters for size, fit, crop, mask, orientation, adjustment, format and cache lifetime; these are notes, not fields. The docs name libvips as the image library and the CHANGELOG says it requires libvips 8.13 or newer, a build requirement, so no runtimeMin. The docs show no URL signing parameter. No page states the process or binary the server is compiled to, so no runtime is recorded and hosting follows the Docker route. The public service runs behind Cloudflare, with an origin domain filter through OpenDNS, a rate limit per visitor IP, Valkey for rate limiting (README) and a 7-day log retention in the privacy policy; these describe the hosted service and are not statements about a self-hosted install. The FAQ says the service is free and privately funded since 2011, and that the code can be run on your own server without its filtering and limits. The homepage's figure of 20 million images per hour is traffic, not a count of sites or installs, so reportedInstalls is not recorded. The LICENSE copyright line names two people; no legal entity, address or country is stated, and the FAQ names servers near Helsinki and Falkenstein, which are server locations, not a headquarters. The homepage names Cloudflare and the README names nginx and libvips as the stack.

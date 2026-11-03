@@ -1,0 +1,100 @@
+id: hyvor-talk
+name: Hyvor Talk
+status: hosted-service
+checkedAt: 2026-11-03
+description: "Hosted comment, reaction and rating service that websites embed with a script, with moderation tools."
+facts:
+  - field: homepage
+    value: "https://hyvor.com/talk"
+    url: https://hyvor.com/talk
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Build an interactive community on your website"
+  - field: docs
+    value: "https://hyvor.com/talk/docs"
+    url: https://hyvor.com/talk/docs
+    checkedAt: 2026-11-03
+    via: page
+  - field: pricingPage
+    value: "https://hyvor.com/talk/pricing"
+    url: https://hyvor.com/talk/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "HYVOR"
+    url: https://hyvor.com/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "legal contract between HYVOR and the user"
+  - field: hqCountry
+    value: FR
+    url: https://hyvor.com/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "10 Rue de Penthièvre, 75008 Paris, France"
+  - field: categories
+    value: [comments]
+    url: https://hyvor.com/talk
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Comments, reactions and ratings for audience building"
+  - field: sso
+    value: [OIDC]
+    url: https://hyvor.com/talk
+    checkedAt: 2026-11-03
+    via: page
+    quote: "OIDC SSO for teams"
+  - field: userRoles
+    value: "yes, team members as admins and moderators"
+    url: https://hyvor.com/talk
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Add your team members as admins and moderators"
+  - field: i18n
+    value: "embeds in more than 30 languages"
+    url: https://hyvor.com/talk
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Embeds are available in more than 30 languages."
+  - field: importsFrom
+    value: [disqus, wordpress]
+    url: https://hyvor.com/talk
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Import from Disqus and WordPress in one click"
+  - field: alternativeTo
+    value: [disqus]
+    url: https://hyvor.com/talk/vs/disqus
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Looking for a Disqus alternative for commenting?"
+  - field: headlessApi
+    value: ["rest"]
+    url: https://hyvor.com/talk/docs/api-console
+    checkedAt: 2026-11-03
+    via: page
+    quote: "HTTP methods are as follows: GET - Read a resource or a list of resources"
+  - field: x
+    value: "https://x.com/HyvorHQ"
+    url: https://hyvor.com/talk
+    checkedAt: 2026-11-03
+    via: page
+  - field: bluesky
+    value: "https://bsky.app/profile/hyvor.com"
+    url: https://hyvor.com/talk
+    checkedAt: 2026-11-03
+    via: page
+  - field: discord
+    value: "https://discord.com/invite/2WRJxQB"
+    url: https://hyvor.com/talk
+    checkedAt: 2026-11-03
+    via: page
+  - field: youtube
+    value: "https://www.youtube.com/@HYVOR"
+    url: https://hyvor.com/talk
+    checkedAt: 2026-11-03
+    via: page
+notFound: [repository, firstRelease, basedOn, parent, forkOf, successorOf, contentStore, databases, adminUi, multisite, livePreview, paidEdition, freeTier, regions, selfHostOption, apiLimits, pluginDirectory, pluginCount, forum, subreddit, mastodon, facebook, newsletter, wikidata, usageShare, endoflifeId, supportedVersions, npmName, npmWeeklyDownloads, dockerPulls, reportedInstalls]
+unreadable: []
+notes: >
+  Hosted service: no self-install was found. The product has no GitHub repository of its own; the hyvor GitHub organization holds SDK and client code (hyvor-talk-libraries for JS, TS, React, Vue and Svelte; hyvor-talk-wordpress-plugin; hyvor-talk-examples for SSO back ends), recorded here only as notes under the hosted-service rule and not as the project's license, stars or downloads. The docs say the embed starts with "a simple HTML/JS snippet that you add to your website"; the homepage lists WordPress, Ghost, Shopify and other platforms as integrations. Plans are Personal, Premium, Business and Enterprise with credit-based usage on the pricing page (the pricing FAQ says a team can choose a paid plan after the trial), and a 14-day trial with all features except the custom email domain; no prices are recorded. The pricing page places user SSO on the paid plans and OIDC SSO for teams on the Enterprise plan; the homepage lists OIDC SSO for teams in the enterprise column. Stateless SSO (docs "SSO Introduction") lets a site's own accounts comment; it is a custom token flow, not a named login protocol, so sso holds OIDC only. The Data API ("All endpoints use the HTTP GET method, and returns a JSON response") and the Console API (resource reads and writes over HTTP methods, JSON) are recorded as headlessApi rest; the docs do not use the word REST. Webhooks, the Console API, the Data API, moderation rules and badges are features, not fields; the homepage describes the webhooks as notifications of events such as new comments and new members. The homepage states GDPR, CCPA and SSO compliance badges and "ISO 27001 Soon"; compliance has no field and is not recorded. The homepage says "Hyvor Talk is used by thousands of websites with millions of users", "10k+ Websites" and "30M+ Monthly Users"; none is a count, so reportedInstalls is not recorded. The legal entity is "HYVOR" on the terms, privacy and product terms pages, and no page read adds a legal form (the hyvor-relay record cites "HYVOR, SARL" from that project's own repository, a different source). The terms page gives the notice address "HYVOR, 10 Rue de Penthièvre, 75008 Paris, France". The YouTube channel link is on the homepage.

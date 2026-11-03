@@ -1,0 +1,137 @@
+id: vince
+name: vince
+status: accepted
+checkedAt: 2026-11-03
+description: Self-hosted web analytics server distributed as a single binary.
+facts:
+  - field: homepage
+    value: https://www.vinceanalytics.com
+    url: https://www.vinceanalytics.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Self hosted web analytics for everyone."
+  - field: repository
+    value: https://github.com/vinceanalytics/vince
+    url: https://api.github.com/repos/vinceanalytics/vince
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2023
+    url: https://api.github.com/repos/vinceanalytics/vince/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Geofrey Ernest
+    url: https://www.vinceanalytics.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Designed & Developed by Geofrey Ernest"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/vinceanalytics/vince
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/vinceanalytics/vince
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: binary
+    url: https://github.com/vinceanalytics/vince/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Ships a single binary with everything in it. No runtime dependency."
+  - field: runsAs
+    value: [always-on]
+    url: https://www.vinceanalytics.com/about
+    checkedAt: 2026-11-03
+    via: page
+    quote: "vince is a self hosted web analytics server"
+  - field: categories
+    value: [web-analytics]
+    url: https://www.vinceanalytics.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "vince is a cost effective, self-hosted, privacy friendly alternative to Google Analytics"
+  - field: installMethod
+    value: binary download
+    url: https://github.com/vinceanalytics/vince/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Vince ships a single executable without any dependencies."
+  - field: docs
+    value: https://www.vinceanalytics.com/blog/deploy-local/
+    url: https://github.com/vinceanalytics/vince/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+  - field: multisite
+    value: yes, no limit on the number of sites
+    url: https://github.com/vinceanalytics/vince/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "There is no limit on how many sites you can manage."
+  - field: adminUi
+    value: yes, a dashboard reached with the admin account
+    url: https://www.vinceanalytics.com/blog/config-cli/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Creates admin account that is used to access the vince instance."
+  - field: headlessApi
+    value: rest
+    url: https://www.vinceanalytics.com/blog/api-aggregate/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "GET /api/v1/stats/aggregate"
+  - field: installMethod
+    value: docker
+    url: https://www.vinceanalytics.com/blog/deploy-docker/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "vince uses github container registry to distribute container images."
+  - field: installMethod
+    value: helm
+    url: https://github.com/vinceanalytics/vince/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+  - field: installMethod
+    value: install script
+    url: https://github.com/vinceanalytics/vince/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+  - field: alternativeTo
+    value: [plausible]
+    url: https://github.com/vinceanalytics/vince/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Drop in replacement for Plausible Analytics"
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/vinceanalytics/vince/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "GNU AFFERO GENERAL PUBLIC LICENSE"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/vinceanalytics/vince/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2025-09-01
+    url: https://api.github.com/repos/vinceanalytics/vince/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 2010
+    url: https://api.github.com/repos/vinceanalytics/vince
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 7
+    url: https://api.github.com/repos/vinceanalytics/vince/contributors
+    checkedAt: 2026-11-03
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, pricingPage, paidEdition, hostedOffering, runtimeMin, contentStore, databases, templating, i18n, livePreview, userRoles, sso, importsFrom, latestPrereleaseDate, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, npmName, packagistName, endoflifeId]
+unreadable: []
+notes: >
+  The install.sh script and the Helm chart are shown only as commands in the README, so their installMethod entries carry no quote; the Docker route has a sentence on the docker deployment guide. The README credits Plausible Analytics: "vince started as a Go port of Plausible with a focus on self hosting". A port is not a fork or a based-on statement in the project's words, so no forkOf or basedOn is recorded; the Plausible relation is alternativeTo from the README's own drop-in sentence. The README says existing Plausible scripts can point at a vince instance, and the script is "< 1KB" (the README table lists it as "<1KB script"): embedMethod is a script tag, coined and kept here. The homepage describes custom storage based on Compressed Roaring Bitmaps in columnar storage, and the logs show a Pebble store under vince-data; those are storage facts that the list lacks, so they stay in notes. The project's own pages list no hosted offering and the README's comparison table marks enterprise features and hosted offering as absent, so paidEdition and hostedOffering are not recorded. The about page is the source for the server process statement; the README's "start server" command is shown as a shell line and is not quoted. The maintainer is an individual named in the footer; no company or address is given, so hqCountry is absent. The repository license is the AGPL-3.0 text, and the releases page lists the first release as v0.0.6 on 2023-06-02 (the oldest in the paginated list).

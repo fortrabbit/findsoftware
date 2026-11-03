@@ -1,0 +1,265 @@
+id: hitkeep
+name: HitKeep
+status: accepted
+checkedAt: 2026-11-03
+description: "Web analytics server that ships as one Go binary and records visits and conversions through a script added to a site's pages."
+facts:
+  - field: homepage
+    value: "https://hitkeep.com"
+    url: https://hitkeep.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: docs
+    value: "https://hitkeep.com/guides/introduction/"
+    url: https://hitkeep.com/guides/introduction/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: "https://github.com/HitKeep/hitkeep"
+    url: https://api.github.com/repos/HitKeep/hitkeep
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: "2025"
+    url: https://api.github.com/repos/HitKeep/hitkeep/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: "Pascale Beier"
+    url: https://github.com/HitKeep/hitkeep/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) Pascale Beier"
+  - field: hqCountry
+    value: DE
+    url: https://hitkeep.com/legal/imprint/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Dorotheenstieg 7 DE-45657 Recklinghausen Germany"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/HitKeep
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/HitKeep/hitkeep
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [analytics]
+    url: https://hitkeep.com/guides/introduction/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "HitKeep is privacy-first analytics for teams that want control over their data and reporting surface."
+  - field: runtime
+    value: [binary]
+    url: https://github.com/HitKeep/hitkeep/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Self-host one Go binary with embedded DuckDB and NSQ"
+  - field: runsAs
+    value: [always-on]
+    url: https://hitkeep.com/guides/installation/binary/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "For production Linux servers, use systemd to ensure HitKeep starts on boot and restarts on failure."
+  - field: installMethod
+    value: "Homebrew formula HitKeep/hitkeep/hitkeep"
+    url: https://github.com/HitKeep/hitkeep/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "install HitKeep with Homebrew"
+  - field: installMethod
+    value: "docker compose with pascalebeier/hitkeep image"
+    url: https://github.com/HitKeep/hitkeep/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "For a production-oriented self-hosted setup, download the Docker Compose file and environment template"
+  - field: installMethod
+    value: "raw release binary for Linux amd64 and arm64"
+    url: https://hitkeep.com/guides/installation/binary/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "HitKeep publishes raw release binaries for Linux servers only"
+  - field: databases
+    value: [duckdb, sqlite]
+    url: https://hitkeep.com/reference/facts-and-limits/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "DuckDB for tenant analytics, with SQLite for the shared control plane"
+  - field: dockerPulls
+    value: "48759 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/pascalebeier/hitkeep/
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/HitKeep/hitkeep
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/HitKeep/hitkeep/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "100% open source under MIT"
+  - field: sso
+    value: [oidc]
+    url: https://hitkeep.com/guides/security/single-sign-on/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "HitKeep can connect each team to one OpenID Connect (OIDC) identity provider."
+  - field: userRoles
+    value: "yes, instance roles and site roles"
+    url: https://hitkeep.com/guides/admin/permissions/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "role-based access control (RBAC) is enforced entirely on your instance"
+  - field: adminUi
+    value: "yes, web dashboard"
+    url: https://github.com/HitKeep/hitkeep/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Create a site in the dashboard"
+  - field: headlessApi
+    value: [rest]
+    url: https://hitkeep.com/api/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Interactive reference for the HitKeep REST API"
+  - field: importsFrom
+    value: [plausible]
+    url: https://hitkeep.com/guides/data/import-plausible/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "HitKeep imports Plausible history from its complete CSV export"
+  - field: alternativeTo
+    value: [matomo]
+    url: https://hitkeep.com/vs/matomo/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "If you are looking for a Matomo alternative"
+  - field: alternativeTo
+    value: [plausible]
+    url: https://hitkeep.com/vs/plausible/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "If you are looking for a Plausible alternative"
+  - field: hostedOffering
+    value: "HitKeep Cloud in an EU (Frankfurt) or US (Virginia) region"
+    url: https://hitkeep.com/pricing/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Cloud and self-hosting use the same HitKeep foundation."
+  - field: pricingPage
+    value: "https://hitkeep.com/pricing/"
+    url: https://hitkeep.com/pricing/
+    checkedAt: 2026-11-03
+    via: page
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/HitKeep/hitkeep/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-02
+    url: https://api.github.com/repos/HitKeep/hitkeep/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 105
+    url: https://api.github.com/repos/HitKeep/hitkeep
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 8
+    url: https://api.github.com/repos/HitKeep/hitkeep/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: x
+    value: "https://x.com/gethitkeep"
+    url: https://hitkeep.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: bluesky
+    value: "https://bsky.app/profile/hitkeep.com"
+    url: https://hitkeep.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: alternativeTo
+    value: ["goatcounter"]
+    url: https://hitkeep.com/vs/goatcounter/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "If you are looking for a GoatCounter alternative"
+  - field: alternativeTo
+    value: ["offen"]
+    url: https://hitkeep.com/vs/offen/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "HitKeep belongs on the shortlist when the search is narrower than “Offen alternative”"
+  - field: alternativeTo
+    value: ["openpanel"]
+    url: https://hitkeep.com/vs/openpanel/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "If you are looking for an OpenPanel Analytics alternative"
+  - field: alternativeTo
+    value: ["posthog"]
+    url: https://hitkeep.com/vs/posthog/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "If you are looking for a PostHog alternative"
+  - field: alternativeTo
+    value: ["rybbit"]
+    url: https://hitkeep.com/vs/rybbit/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "HitKeep belongs on the shortlist when the search is narrower than “Rybbit alternative”"
+  - field: alternativeTo
+    value: ["umami"]
+    url: https://hitkeep.com/vs/umami/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "HitKeep is the better Umami alternative when your main requirement is analytics you can run as one binary"
+  - field: alternativeTo
+    value: ["vince"]
+    url: https://hitkeep.com/vs/vince/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "HitKeep belongs on the shortlist when the search is narrower than “Vince alternative”"
+  - field: i18n
+    value: "dashboard UI translated into English, German, Spanish, French, Italian, Dutch and Portuguese"
+    url: https://hitkeep.com/guides/introduction/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Dashboard UI fully translated into English, German, Spanish, French, Italian, Dutch, and Portuguese"
+  - field: installMethod
+    value: "official OCI Helm chart on GitHub Container Registry"
+    url: https://hitkeep.com/guides/installation/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Install the official OCI Helm chart into a cluster you already operate."
+  - field: multisite
+    value: "yes, one instance manages several sites and teams"
+    url: https://hitkeep.com/guides/introduction/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A multi-site Overview page for operators managing more than one site"
+  - field: sso
+    value: [oauth2]
+    url: https://hitkeep.com/guides/security/oauth/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "OAuth lets an integration connect to HitKeep without asking you to create and paste an API token."
+  - field: regions
+    value: [EU, US]
+    url: https://hitkeep.com/pricing/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Choose EU (Frankfurt) or US (Virginia) during signup."
+notFound: [basedOn, parent, forkOf, successorOf, contentStore, livePreview, paidEdition, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, newsletter, wikidata, renderingModes, templating, runtimeMin, endoflifeId, supportedVersions, outputDir, usageShare, npmName, npmWeeklyDownloads]
+unreadable: []
+notes: >
+  Criterion 1: the tracker is added to a site's pages (README "Track Your First Site": "add the tracker to your pages"), and the analytics server runs on the creator's side or in HitKeep Cloud, so it is accepted under the tracker rule. Repository: the CSV row names PascaleBeier/hitkeep, which now redirects to HitKeep/hitkeep (the organization the README links), so the current repository is recorded. Maintainer: the imprint names Pascale Beier as operator at a Recklinghausen address; the LICENSE copyright line names the same person. HitKeep Cloud is a managed service with EU and US regions on the same code: hostedOffering. The license is MIT for the complete product; the README says custom tracking domains and team SSO are in the same public codebase, not a paid edition. The tracker sets no analytics cookies and respects Do Not Track (README): cookieless and privacy claims are kept here because no field exists for them. The MCP endpoint and A2A access are read-only and aggregate-only (reference pages); HitKeep is an OAuth authorization server for integrations and MCP clients (Authorization Code with PKCE S256), from 2.15.0, recorded as sso oauth2; team sign-in uses OIDC (first sso entry); Google, GitHub and Microsoft social sign-in is not recorded as sso; they are AI-era interfaces, coined and kept here. The NSQ message queue is embedded, not a database (architecture page); the README says the product needs no separate database, queue or cache. The Cloud pricing page says workspace analytics data and backups stay in the region the team chooses. The SSO guide lists the same OIDC setup for cloud and self-hosted installs. The Search Console integration, ecommerce reports, goals, funnels, Web Vitals and AI visibility reports are features (README), not fields. Imports exist for Plausible and Simple Analytics exports (docs), both with a CLI route; Simple Analytics has no record, so only Plausible is written to importsFrom. Pageviews, events and vitals are published to the embedded NSQ queue before store-local batching (architecture page). The LinkedIn company page is https://www.linkedin.com/company/hitkeep (linkedin is a coined field). The Docker Hub image is pascalebeier/hitkeep; the GitHub Container Registry also carries it (ghcr.io/hitkeep/hitkeep), which the Docker Hub figure does not count. The release list has many snapshot builds marked as prereleases; those are automated builds, not alpha, beta or RC releases, so no latestPrereleaseDate is recorded. The oldest release is v1.0.0 (2025-11-21). No runtimeMin is recorded: the binary install page gives only an OS and glibc note. The docs also describe a WordPress integration (plugin) and an @hitkeep/tracker npm package for React, Vue, Angular and Astro; both attach the tracker to a site and are not the server. The vs pages also name Simple Analytics, Fathom, Pirsch, Cloudflare Web Analytics, Google Analytics, Adobe Analytics, Piwik PRO and Clamp, which have no record. The migration page says no Matomo, Umami or Fathom history import exists.

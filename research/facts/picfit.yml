@@ -1,0 +1,110 @@
+id: picfit
+name: picfit
+status: accepted
+checkedAt: 2026-11-03
+description: "Go server that resizes and manipulates images on request, acting as a proxy in front of the storage that holds the originals."
+facts:
+  - field: repository
+    value: "https://github.com/thoas/picfit"
+    url: "https://api.github.com/repos/thoas/picfit"
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://github.com/thoas/picfit/blob/main/README.rst"
+    url: "https://github.com/thoas/picfit/blob/main/README.rst"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "picfit is a reusable Go server to manipulate images"
+  - field: maintainer
+    value: "Florent Messa"
+    url: "https://github.com/thoas/picfit/blob/main/LICENSE"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2014 Florent Messa"
+  - field: maintainerType
+    value: "individual"
+    url: "https://github.com/thoas/picfit/blob/main/LICENSE"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2014 Florent Messa"
+  - field: sourcePublic
+    value: true
+    url: "https://github.com/thoas/picfit"
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: ["image-server", "media-processing"]
+    url: "https://github.com/thoas/picfit/blob/main/README.rst"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "picfit is a reusable Go server to manipulate images"
+  - field: language
+    value: "Go"
+    url: "https://api.github.com/repos/thoas/picfit"
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: "binary"
+    url: "https://github.com/thoas/picfit/blob/main/README.rst"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You have now a binary version of picfit"
+  - field: runsAs
+    value: ["always-on"]
+    url: "https://github.com/thoas/picfit/blob/main/README.rst"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "It's recommended that the application run behind a CDN for larger applications"
+  - field: installMethod
+    value: "make build (from a git clone)"
+    url: "https://github.com/thoas/picfit/blob/main/README.rst"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You have now a binary version of picfit in the ``bin`` directory which"
+  - field: installMethod
+    value: "make docker-build"
+    url: "https://github.com/thoas/picfit/blob/main/README.rst"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "picfit has also a Docker integration to built a unix binary"
+  - field: license
+    value: "MIT"
+    url: "https://github.com/thoas/picfit/blob/main/LICENSE"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: "open-source"
+    url: "https://github.com/thoas/picfit/blob/main/LICENSE"
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 0
+    url: "https://api.github.com/repos/thoas/picfit/releases"
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-21
+    url: "https://api.github.com/repos/thoas/picfit/releases"
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: "https://api.github.com/repos/thoas/picfit/tags"
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 2343
+    url: "https://api.github.com/repos/thoas/picfit"
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 27
+    url: "https://api.github.com/repos/thoas/picfit/contributors?per_page=1"
+    checkedAt: 2026-11-03
+    via: api
+notFound: [homepage, renderingModes, adminUi, headlessApi, databases, contentStore, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, hostedOffering, parent, runtimeMin, hqCountry, dockerPulls, npmName, pypiName, pluginDirectory, usageShare, reportedInstalls, latestPrereleaseDate]
+unreadable: []
+notes: >
+  No project homepage: the repository's homepage field is a bit.ly short link, which is not the project's own site, and the README names none; the record links the repository only. The version line is 0.x: currentMajor is 0. The latest release is 0.18.1 (2026-10-21); the CSV row's date (2026-09-30) is the 0.17.0 release. The README names libvips 8.16 or later as an image library dependency and a Go compiler plus bzr, svn, hg and git for the build. The README lists a second build route as "make docker-build", which builds a unix binary through Docker. Coined kinds, kept in notes: storage backends (filesystem, S3, DigitalOcean S3, Google Cloud Storage, HTTP-loaded sources), key/value stores for generated keys (Redis, Redis cluster, in-memory cache), outputFormats (jpeg, png, gif, bmp, webp, avif), urlSigning (HMAC-SHA1 request signature with a secret key), sentry error reporting. The README says the server will be served "ideally behind an HTTP cache system like varnish", lists Ulule as a production user and names pilbox and thumbor as inspirations (not alternativeTo statements). Maintainer: the LICENSE copyright line names Florent Messa (2014); the README names no other entity.

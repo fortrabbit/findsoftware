@@ -1,0 +1,70 @@
+id: web3forms
+name: Web3Forms
+status: hosted-service
+checkedAt: 2026-11-03
+description: "Hosted form backend that sends contact-form submissions from static websites to an email inbox, without server code."
+facts:
+  - field: homepage
+    value: "https://web3forms.com"
+    url: https://docs.web3forms.com/getting-started/installation
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Create your Access key here: https://web3forms.com/"
+  - field: docs
+    value: "https://docs.web3forms.com/"
+    url: https://docs.web3forms.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Web3Forms is a simple tool to set up Contact Forms for Static Websites."
+  - field: categories
+    value: [forms]
+    url: https://docs.web3forms.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Web3Forms is a simple tool to set up Contact Forms for Static Websites."
+  - field: maintainer
+    value: "Web3Creative"
+    url: https://docs.web3forms.com/getting-started/faq
+    checkedAt: 2026-11-03
+    via: page
+    quote: "our parent company named Web3Creative which is a registered business based in Kerala, India"
+  - field: parent
+    value: "Web3Creative"
+    url: https://docs.web3forms.com/getting-started/faq
+    checkedAt: 2026-11-03
+    via: page
+    quote: "our parent company named Web3Creative"
+  - field: hqCountry
+    value: IN
+    url: https://docs.web3forms.com/getting-started/faq
+    checkedAt: 2026-11-03
+    via: page
+    quote: "a registered business based in Kerala, India"
+  - field: regions
+    value: "United States (US-East)"
+    url: https://docs.web3forms.com/getting-started/faq
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Our servers are located in the United States US-East Region."
+  - field: adminUi
+    value: "yes, dashboard for the form settings"
+    url: https://docs.web3forms.com/getting-started/pro-features
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Configure them in your dashboard"
+  - field: headlessApi
+    value: rest
+    url: https://docs.web3forms.com/getting-started/submissions-api
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This is a REST API, separate from the public form endpoint your HTML form posts to."
+  - field: apiLimits
+    value: "Submissions API: 20 requests/second (burst 50) per account; HTTP 429 above the limit"
+    url: https://docs.web3forms.com/getting-started/submissions-api
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Requests are throttled at 20 requests/second (burst 50) per account."
+notFound: [pricingPage, paidEdition, selfHostOption, sso, userRoles, i18n, runtime, language, runsAs, databases, contentStore, templating, multisite, livePreview, licenseModel, license, repository, currentMajor, latestReleaseDate, firstRelease, githubStargazers, contributors, npmName, npmWeeklyDownloads, dockerPulls, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, importsFrom, alternativeTo, basedOn, forkOf, successorOf, installMethod]
+unreadable: [https://web3forms.com/, https://web3forms.com/pricing, https://web3forms.com/docs]
+notes: >
+  Hosted-service row. The homepage web3forms.com and its pricing and docs paths answer 403 to the research user agent, so they stay unread and nothing is taken from them. The facts come from docs.web3forms.com, which answers 200. Integration is an HTML form whose action posts to the vendor's endpoint, with an access key; the docs say server-side use needs a paid plan and server IP whitelisting. The docs list features that are paid: reCaptcha and Turnstile, CC email, autoresponder, file attachments, webhooks and domain restriction, sold as Pro, Agency/Team and Starter plans; the plans and prices are not recorded because the pricing page is unread, and hosted plan tiers are not paidEdition. Coined kinds kept in notes: the free plan ("Its free!" on the docs introduction), spam protection (honeypot field, hCaptcha, reCaptcha and Turnstile), webhooks to Zapier, Make, Google Sheets, Slack, Discord and Telegram, a Pro-plan Submissions API (REST, bearer API keys) beside the public submit endpoint, and a 429 rate-limit response. The FAQ says the vendor does not store form submissions and keeps server logs with personal data for two months; a GDPR statement is made with a disclaimer. The SDK repository web3forms/web3forms-react is a client package; its license, stars and npm figures are not recorded. The maintainer and country come from the FAQ paragraph that calls Web3forms a subsidiary product of Web3Creative, a registered business based in Kerala, India; the legal notice and the terms are unread, so the legal form is unknown.

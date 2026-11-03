@@ -1,0 +1,120 @@
+id: imaginary
+name: imaginary
+status: accepted
+checkedAt: 2026-11-03
+description: "HTTP service written in Go that resizes, crops and converts images with libvips."
+facts:
+  - field: repository
+    value: "https://github.com/h2non/imaginary"
+    url: https://github.com/h2non/imaginary
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: "Tomas Aparicio"
+    url: https://raw.githubusercontent.com/h2non/imaginary/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2015-2020 Tomas Aparicio and contributors"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/h2non
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: Go
+    url: https://github.com/h2non/imaginary
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [go-binary]
+    url: https://github.com/h2non/imaginary/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "HTTP microservice written in Go"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/h2non/imaginary/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "can be used as private or public HTTP service"
+  - field: installMethod
+    value: "go get"
+    url: https://github.com/h2non/imaginary/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "go get -u github.com/h2non/imaginary"
+  - field: installMethod
+    value: "docker"
+    url: https://github.com/h2non/imaginary/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker pull h2non/imaginary"
+  - field: dockerPulls
+    value: "23058375 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/h2non/imaginary/
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [media-processing, image-server]
+    url: https://github.com/h2non/imaginary/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "for high-level image processing"
+  - field: license
+    value: MIT
+    url: https://github.com/h2non/imaginary/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2020-08-12"
+    url: https://github.com/h2non/imaginary/releases/tag/v1.2.4
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/h2non/imaginary/releases/tag/v1.2.4
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://github.com/h2non/imaginary/tree/0.1.0-rc.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 6091
+    url: https://github.com/h2non/imaginary
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 52
+    url: https://github.com/h2non/imaginary
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: "Docker Compose"
+    url: https://github.com/h2non/imaginary/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can add `imaginary` to your `docker-compose.yml` file:"
+  - field: installMethod
+    value: "Fly.io deployment button"
+    url: https://github.com/h2non/imaginary/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Deploy imaginary in seconds close to your users in Fly.io cloud by clicking on the button below:"
+  - field: installMethod
+    value: "Cloud Foundry buildpack"
+    url: https://github.com/h2non/imaginary/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Assuming you have cloudfoundry account"
+  - field: installMethod
+    value: "Google Cloud Run deployment button"
+    url: https://github.com/h2non/imaginary/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Click to deploy on Google Cloud Run:"
+notFound: [homepage, docs, runtimeMin, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, npmName, packagistName, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, forum, usageShare, reportedInstalls, wikidata, endoflifeId, adminUi, userRoles, sso, i18n, multisite, livePreview, contentStore, databases, renderingModes, regions, hqCountry]
+unreadable: []
+notes: >
+  No project site is named: the README badges and deploy buttons point to Docker Hub, fly.io, Cloud Foundry and Google Cloud Run guides, and none is the project's own site, so homepage and docs are absent (the README itself is the documentation). The latest stable release is v1.2.4 dated 2020-08-12; the default branch was last pushed 2025-11-08 (api, pushed_at). The import's four-year rule moves a record with no release or pre-release in four years to stub; status is kept as the candidate row has it, and the reviewer should expect the import to set stub. Tags as old as 0.1.0-rc.0 (2015) set firstRelease. The LICENSE copyright line names Tomas Aparicio and contributors; the README author list gives "Tomás Aparicio" as "Original author and maintainer", recorded here from LICENSE; the README license line "MIT - Tomas Aparicio" is the same license and is not a second entry. The Go requirement "Go 1.12+" and the libvips 8.8+ prerequisite are build requirements of the source install and the Docker image bundles its own, so no runtimeMin is recorded. The HTTP interface is an image API with one endpoint per operation, not a headless CMS API, so headlessApi is not recorded. Coined, recorded here only: outputFormats JPEG, PNG and WEBP (README); image library libvips through the bimg Go binding (README); urlSigning with an HMAC-SHA256 sign parameter behind -enable-url-signature (README); token authorization with -key (README); image placeholder fallback (README). Docker image h2non/imaginary is the image the README names. Contributors counted with per_page=1 across all pages (52). The repository homepage field points at a Fly.io guide, which is no project site.
