@@ -1,0 +1,108 @@
+id: go-camo
+name: go-camo
+status: accepted
+checkedAt: 2026-11-03
+description: Image proxy server that fetches non-secure images over SSL/TLS for pages served over HTTPS and checks HMAC-signed image URLs.
+facts:
+  - field: repository
+    value: https://github.com/cactus/go-camo
+    url: https://api.github.com/repos/cactus/go-camo
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Eli Janssen
+    url: https://github.com/cactus/go-camo/blob/master/LICENSE.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2012-2025 Eli Janssen"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/cactus
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [image-server]
+    url: https://github.com/cactus/go-camo/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "a special type of image proxy that proxies non-secure images over SSL/TLS"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/cactus/go-camo
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: binary
+    url: https://github.com/cactus/go-camo/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Go-Camo builds to a static binary."
+  - field: installMethod
+    value: binary-download
+    url: https://github.com/cactus/go-camo/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Download the tarball appropriate for your OS/ARCH from"
+  - field: installMethod
+    value: container-image
+    url: https://github.com/cactus/go-camo/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "There are containers built automatically from version tags"
+  - field: installMethod
+    value: source-build
+    url: https://github.com/cactus/go-camo/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "build all binaries (into ./bin/), strip debug symbols"
+  - field: installMethod
+    value: heroku
+    url: https://github.com/cactus/go-camo/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "In order to use this on Heroku with the provided Procfile, you need to:"
+  - field: dockerPulls
+    value: 234204 (2026-11-03)
+    url: https://hub.docker.com/v2/repositories/cactus4docker/go-camo/
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/cactus/go-camo
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/cactus/go-camo/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Released under the MIT license"
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/cactus/go-camo/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-23
+    url: https://api.github.com/repos/cactus/go-camo/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://api.github.com/repos/cactus/go-camo/commits/9a2206860ca4c0c7dad33e2f0eb4f690bd95e58d
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 314
+    url: https://api.github.com/repos/cactus/go-camo
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 25
+    url: https://api.github.com/repos/cactus/go-camo/contributors
+    checkedAt: 2026-11-03
+    via: api
+notFound: [runsAs, homepage, docs, hqCountry, parent, forkOf, alternativeTo, pricingPage, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, runtimeMin, databases, adminUi, renderingModes, hostedOffering, paidEdition]
+unreadable: []
+notes: >
+  Repository only: the repository field names no homepage, so none is recorded. The README is the only project page; it names a Codeberg mirror, Docker Hub and GitHub Packages container images (the README calls the containers untested), and a Heroku Procfile route; these are install routes, the mirror is not a source. The release v3.1 dated 2026-10-23 is the newest stable release and has major 3. The first tag v0.0.1 is dated 2012-07-07 by its commit. The maintainer is the person named by the LICENSE.md copyright line; the GitHub owner cactus is an organization without a name. The README describes "HMAC" URL signing, hex and base64 URL encodings, allow and deny origin filters, upstream HTTP proxying, Prometheus metrics and a Differences from Camo section; "go-camo is an implementation of such a server" names camo (github.com/atmos/camo), which has no record here, so it is not alternativeTo. The README's Known Users list names GitLab, Zulip and PyPI as users of the software and is not a field. The README names no image library and no output format conversion; it states that go-camo "validates the HMAC, decodes the URL, then requests the content from the origin server and streams it to the client." The README recommends fronting go-camo with a CDN where possible and says the container images are untested. The README says "Go-Camo does not daemonize on its own" and recommends launching it in a process supervisor for production, which does not say whether the process keeps running, so runsAs is absent; the listener flags bind an address and port for HTTP. The README says to prefer the statically compiled binary releases unless a container is needed. The Docker Hub image the README links is cactus4docker/go-camo, whose pull count is recorded. The url-tool utility in the release generates and decodes signed URLs from the command line. Go is the language; the README gives no runtime minimum for a binary install, and a go.mod go line is a build requirement, so runtimeMin is absent.

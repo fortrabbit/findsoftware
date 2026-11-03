@@ -1,0 +1,81 @@
+id: databuddy
+name: Databuddy
+status: hosted-service
+checkedAt: 2026-11-03
+description: Hosted product analytics platform for websites and apps, with error tracking, Web Vitals, feature flags and uptime monitoring.
+facts:
+  - field: homepage
+    value: https://www.databuddy.cc
+    url: https://www.databuddy.cc/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Product analytics for startups with a built-in AI analyst."
+  - field: status
+    value: hosted-service
+    url: https://www.databuddy.cc/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "privacy-first analytics platform available at https://app.databuddy.cc"
+  - field: docs
+    value: https://www.databuddy.cc/docs
+    url: https://www.databuddy.cc/developers
+    checkedAt: 2026-11-03
+    via: page
+    quote: "SDK setup, REST API guides, feature flags, Web Vitals, privacy, and integrations."
+  - field: pricingPage
+    value: https://www.databuddy.cc/pricing
+    url: https://www.databuddy.cc/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: Databuddy
+    url: https://www.databuddy.cc/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "constitute the entire agreement between you and Databuddy regarding the Service"
+  - field: categories
+    value: [analytics, product-analytics]
+    url: https://www.databuddy.cc/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Product analytics for startups with a built-in AI analyst."
+  - field: freeTier
+    value: yes, Free plan with 10,000 events a month
+    url: https://www.databuddy.cc/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Start free with 10,000 events per month."
+  - field: sso
+    value: [SAML, OIDC]
+    url: https://www.databuddy.cc/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "SSO with SAML or OIDC"
+  - field: alternativeTo
+    value: [plausible]
+    url: https://www.databuddy.cc/compare/plausible
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Compare Plausible's web analytics with Databuddy's analytics"
+  - field: alternativeTo
+    value: [umami]
+    url: https://www.databuddy.cc/compare/umami
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Compare Umami's analytics, session replays, and error tracking with Databuddy's investigations"
+  - field: discord
+    value: https://discord.gg/JTk7a38tCZ
+    url: https://www.databuddy.cc/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Discord"
+  - field: x
+    value: https://x.com/trydatabuddy
+    url: https://www.databuddy.cc/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "X"
+notFound: [repository, parent, basedOn, forkOf, successorOf, wikidata, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, endoflifeId, firstRelease, currentMajor, latestReleaseDate, githubStargazers, contributors, npmName, packagistName, pypiName, hqCountry, apiLimits, regions, selfHostOption, language, license, licenseModel]
+unreadable: []
+notes: >
+  The CSV row says accepted, but the product is hosted only and no public source is found, so criterion 2 fails and the status is hosted-service. The main repository databuddy-analytics/Databuddy in the CSV returns HTTP 404 to this client, and the docs link to databuddy-analytics/databuddy returns 404 as well; the organization's public repositories are SDK, plugin and tool repositories (Framer, Raycast, skills, better-analytics), none of them the product. The FAQ on the homepage answers "Can I self-host Databuddy?" with "No. Databuddy runs as a hosted service, so there are no servers for you to set up or maintain." That answer sits in the page's JSON-LD, which the quote check does not read, so the status quote is the terms sentence. The open-source program offers a year of the Pro plan to maintainers; it is a hosted offer, not recorded. Plans are Free, Hobby, Pro, Business, Scale and Enterprise on the pricing page, all hosted, so no paidEdition; the SSO line sits on the Scale plan. The privacy policy and data policy name the hosting subprocessors (Hetzner, Vercel, PlanetScale and others) and a ClickHouse event store, but no region is stated for the product as a whole, so regions is unknown. The terms name the contracting party only as "Databuddy" and give no notice address; the legal name "Databuddy Analytics, Inc." appears only in the page footer copyright and the JSON-LD, which is no source for the maintainer, so the maintainer is the product name. The terms name no country and say the jurisdiction is where Databuddy is incorporated, so hqCountry is unknown. The newsletter sign-up on the homepage has no URL of its own, so newsletter is not recorded. Cookieless collection ("Cookieless by default", no analytics cookies, localStorage visitor ID) and the Global Privacy Control handling are coined kinds, kept here as text. The SDK packages and the Databunny AI analyst are not recorded as fields.

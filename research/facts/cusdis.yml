@@ -1,0 +1,107 @@
+id: cusdis
+name: Cusdis
+status: discontinued
+checkedAt: 2026-11-03
+description: Open-source comment widget for websites, deprecated by its project.
+facts:
+  - field: status
+    value: discontinued
+    url: https://api.github.com/repos/djyde/cusdis
+    checkedAt: 2026-11-03
+    via: api
+  - field: status
+    value: discontinued
+    url: https://github.com/djyde/cusdis/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Cusdis is deprecated now"
+  - field: repository
+    value: https://github.com/djyde/cusdis
+    url: https://api.github.com/repos/djyde/cusdis
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://cusdis.com/doc
+    url: https://github.com/djyde/cusdis/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "https://cusdis.com/doc"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/djyde/cusdis
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: GPL-3.0
+    url: https://api.github.com/repos/djyde/cusdis
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/djyde/cusdis/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Cusdis is an open-source, lightweight (~5kb gzip), privacy-friendly alternative to Disqus."
+  - field: categories
+    value: [comments]
+    url: https://github.com/djyde/cusdis/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Lightweight comment widget, with i18n, dark mode."
+  - field: alternativeTo
+    value: [disqus]
+    url: https://github.com/djyde/cusdis/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Cusdis is an open-source, lightweight (~5kb gzip), privacy-friendly alternative to Disqus."
+  - field: i18n
+    value: yes, widget translations
+    url: https://github.com/djyde/cusdis/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Lightweight comment widget, with i18n, dark mode."
+  - field: firstRelease
+    value: "2021"
+    url: https://api.github.com/repos/djyde/cusdis/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/djyde/cusdis/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2021-11-30
+    url: https://api.github.com/repos/djyde/cusdis/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: djyde
+    url: https://api.github.com/users/djyde
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/djyde
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 2774
+    url: https://api.github.com/repos/djyde/cusdis
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 48
+    url: https://api.github.com/repos/djyde/cusdis/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: discord
+    value: https://discord.gg/eDs5fc4Jcq
+    url: https://github.com/djyde/cusdis/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "[Discord](https://discord.gg/eDs5fc4Jcq)"
+notFound: [homepage, installMethod, runtime, hqCountry, parent, basedOn, forkOf, successorOf, wikidata, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, livePreview, multisite, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, supportedVersions, runtimeMin, npmName, packagistName, pypiName, docker]
+unreadable: [https://cusdis.com/ (HTTP 521, origin not reachable), https://cusdis.com/doc (same host, not read)]
+notes: >
+  Two end signals: the repository is archived (api) and the README says "Cusdis is deprecated now" and asks users to email hi@cusdis.com for an export; no successor is named, so status is discontinued. The homepage cusdis.com answers HTTP 521 to this client, so no homepage is recorded and the docs URL is taken from the README only. The GitHub tags v1.3.1 and v1.3.2 have no release object; v1.3.2 is dated 2021-12-04 by its commit, so latestReleaseDate follows the newest GitHub release v1.3.0 (2021-11-30). The README gives the license as "GNU GPLv3" and GitHub as GPL-3.0; one entry, same license. The project names no legal person: the README says "Disqus is a company, we aren't." and the LICENSE copyright line names only the Free Software Foundation, so the maintainer is the GitHub owner djyde, with no name beyond the account. The package.json scripts and Prisma folders name sqlite, pgsql and mysql as DB_TYPE values; no sentence states it, so databases is not recorded. The README also states "Cusdis doesn't use cookies at all", "Email notification" and "Webhook" as features, and "Lightweight comment widget": cookieless, email notifications, webhooks and the widget embed are coined kinds recorded here only. The Dockerfile starts from a node base image, which states no install route or runtime for a user, so installMethod and runtime are not recorded. A Railway deploy button links a template with postgresql; a button label is not a quote, so it is not recorded as an installMethod. Sponsors are on OpenCollective and not recorded.

@@ -1,0 +1,83 @@
+id: better-stack
+name: Better Stack
+status: hosted-service
+checkedAt: 2026-11-03
+description: "Hosted observability platform that combines log management, tracing, uptime monitoring, status pages and incident management."
+facts:
+  - field: homepage
+    value: "https://betterstack.com"
+    url: https://betterstack.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The AI SRE observability stack"
+  - field: docs
+    value: "https://betterstack.com/docs/"
+    url: https://betterstack.com/docs/
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "Better Stack, Inc."
+    url: https://betterstack.com/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "owned and operated by Better Stack, Inc., a Delaware corporation"
+  - field: maintainerType
+    value: company
+    url: https://betterstack.com/terms
+    checkedAt: 2026-11-03
+    via: page
+    quote: "owned and operated by Better Stack, Inc., a Delaware corporation"
+  - field: categories
+    value: [observability, logs]
+    url: https://betterstack.com/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Collect insights across your stack"
+  - field: pricingPage
+    value: "https://betterstack.com/pricing"
+    url: https://betterstack.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+  - field: regions
+    value: "EU by default"
+    url: https://betterstack.com/security
+    checkedAt: 2026-11-03
+    via: page
+    quote: "By default, all data is stored in the EU regions"
+  - field: sso
+    value: [SAML]
+    url: https://betterstack.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Generic SAML SSO enterprise"
+  - field: userRoles
+    value: "yes, role-based access control on the Enterprise plan"
+    url: https://betterstack.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Role-based access control"
+  - field: adminUi
+    value: "yes, hosted web dashboards"
+    url: https://betterstack.com/pricing
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Shareable dashboards"
+  - field: x
+    value: "https://twitter.com/betterstackhq"
+    url: https://betterstack.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: instagram
+    value: "https://www.instagram.com/betterstackhq/"
+    url: https://betterstack.com/
+    checkedAt: 2026-11-03
+    via: page
+  - field: youtube
+    value: "https://www.youtube.com/@betterstack"
+    url: https://betterstack.com/
+    checkedAt: 2026-11-03
+    via: page
+notFound: [hqCountry, firstRelease, currentMajor, latestReleaseDate, githubStargazers, contributors, repository, repoOwnerType, language, runtime, license, licenseModel, selfHostOption, apiLimits, i18n, multisite, livePreview, headlessApi, templating, importsFrom, parent, basedOn, forkOf, successorOf, alternativeTo, hostedOffering, wikidata, usageShare, npmName, packagistName, pypiDownloads, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, facebook, threads, renderingModes, installMethod, runsAs, paidEdition, endoflifeId, eolPolicy]
+unreadable: []
+notes: >
+  Better Stack is a hosted-service record under the rule for hosted rows. Classification: the homepage hero reads "The AI SRE observability stack" and its price box compares traces, logs and metrics ingested per month, so the lead is log and telemetry ingestion, which apps reach through the HTTP API the logs docs describe ("sending your logs to our HTTP API", /docs/logs/ingesting-data/http/). The homepage also lists incident management, status pages and uptime monitoring; status pages and uptime monitors are finished applications under criterion 1, and they are not the lead. Reviewer decision: the brief asks for rejected criterion 1 only when the lead is status pages or uptime monitoring, so the record is kept; confirm. The vendor is Better Stack, Inc., a Delaware corporation (terms page); no full address with a country appears on the pages read, so hqCountry is left out, and the Delaware incorporation is not an HQ. The security page says data is stored in the EU regions by default, and the pricing form offers United States, Europe and Singapore; the enterprise page names self-serve clusters in Virginia, Oregon, Germany and Singapore. Enterprise custom VPC deployment is vendor-run, so selfHostOption is left out. The pricing page lists SSO with Google included, Azure and Okta at $5 per user per month, and SCIM on the enterprise tier; SAML is the protocol recorded. The CSV row had no repository, so no SDK, client or GitHub figure is recorded (hosted rule). The X, Instagram and YouTube links are homepage icon links without a quote. The pricing page lists a free plan for personal projects (freeTier, a coined kind). The SCIM entry on the pricing page is a list label without a sentence, so no sso value is recorded for it; LinkedIn is a coined field and is not recorded. Coined kinds, kept here: the OpenTelemetry collector, Vector and HTTP ingestion (docs), and MCP server (homepage) are integration kinds not recorded as fields.

@@ -1,0 +1,105 @@
+id: counter-dev
+name: Counter
+status: accepted
+checkedAt: 2026-11-03
+description: Privacy-friendly web analytics that counts daily unique visitors and referrers for a website, served by a Go server backed by Redis.
+facts:
+  - field: homepage
+    value: https://counter.dev
+    url: https://counter.dev/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Web Analytics made simple and therefore privacy-friendly."
+  - field: repository
+    value: https://github.com/ihucos/counter.dev
+    url: https://api.github.com/repos/ihucos/counter.dev
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Irae Hueck Costa
+    url: https://github.com/ihucos/counter.dev
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Irae Hueck Costa"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/ihucos
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/ihucos/counter.dev
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [web-analytics]
+    url: https://github.com/ihucos/counter.dev
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Shows how many people visit your web application."
+  - field: runtime
+    value: [binary]
+    url: https://github.com/ihucos/counter.dev-selfhost
+    checkedAt: 2026-11-03
+    via: page
+    quote: "all static assets are nicely inside a single binary"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/ihucos/counter.dev
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Counter is a small Go server and static assets."
+  - field: databases
+    value: [redis]
+    url: https://github.com/ihucos/counter.dev
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Everything is saved to Redis."
+  - field: installMethod
+    value: self-host binary cntr from the counter.dev-selfhost repository (prerelease builds)
+    url: https://github.com/ihucos/counter.dev-selfhost
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This is the official way to self host"
+  - field: adminUi
+    value: yes, web UI with login that shows the integration steps for each website
+    url: https://github.com/ihucos/counter.dev-selfhost
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Visit the fired up server, login and follow the integrations steps for your website there."
+  - field: license
+    value: AGPL-3.0
+    url: https://api.github.com/repos/ihucos/counter.dev
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://counter.dev/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The source code is published under the AGPL-v3 license."
+  - field: hostedOffering
+    value: counter.dev hosted service with pay-when-ready pricing
+    url: https://counter.dev/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Start paying whenever you want."
+  - field: lastCommitDate
+    value: 2026-09-04
+    url: https://api.github.com/repos/ihucos/counter.dev/commits
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 1012
+    url: https://api.github.com/repos/ihucos/counter.dev
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 19
+    url: https://api.github.com/repos/ihucos/counter.dev/contributors
+    checkedAt: 2026-11-03
+    via: api
+notFound: [firstRelease, currentMajor, latestReleaseDate, latestPrereleaseDate, docs, pricingPage, paidEdition, parent, hqCountry, basedOn, forkOf, successorOf, alternativeTo, wikidata, forum, discord, subreddit, mastodon, bluesky, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistDownloads, pypiDownloads, endoflifeId, supportedVersions, multisite, i18n, userRoles, sso, importsFrom, templating, renderingModes, headlessApi, livePreview, dockerPulls, buildCommand, outputDir]
+unreadable: []
+notes: >
+  The repository has no tag or GitHub release, so the record is judged by lastCommitDate (committer date of the newest commit on master, 2026-09-04) and no release fields are recorded. The first commit date is 2020 (repository created 2020-05-10). The main repository holds the hosted service's code and the self-host route is a separate repository, ihucos/counter.dev-selfhost, which the main README links for self-hosting; its README calls the self-hosted version beta, and its three releases (0.1, 0.2, 0.2.1, 2023) are all marked prerelease on GitHub, so no stable release exists in either repository. The self-host README says archiving is not implemented in the self-hosted version. Its download link spells the repository "counter.dev-selfhosted"; the repository read is counter.dev-selfhost. The install route is recorded from that README; a local development route (make devserver with a local Redis) is in the main README and is not a deployment route. The tracking code is given to a site after sign-up (welcome page: "Tracking code is shown after sign up."); the repository's docs/script.js is the tracking script served from counter.dev and reads a data-id attribute (default server https://t.counter.dev), so the attachment is a script tag, recorded here and not as a field. The main README names a SQL database for archiving older data without naming the engine, so databases records only Redis. The main README has two struck-through paragraphs (a fetched script hosted externally, tracking every page); they are not recorded. Privacy claims from the homepage ("No Cookies. No logging. No IP address fingerprinting.") and the README (no per-user identifiers, aggregated data only) are kept in notes as a coined kind and not as a field. The FAQ says that under the ePrivacy Directive all SaaS web analytics, counter.dev included, needs consent; recorded here as stated by the project. The README says the real-world hosting costs are covered via donations; no donation page is recorded. The maintainer is named from the README contributors list (an individual, not a company); the LICENSE file is the FSF AGPL text with no project copyright line. The README lists Ana Maria Sandoval Jimenez as a second contributor (data scientist); not recorded as maintainer. The homepage pricing is "Pay when ready"; no prices are recorded.

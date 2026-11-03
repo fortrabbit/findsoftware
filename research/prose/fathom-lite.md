@@ -1,0 +1,5 @@
+Fathom Lite is a web analytics server written in Go, published by Conva Ventures Inc. as the open-source edition of the hosted Fathom Analytics product. It ships as a single binary that stores its data in SQLite by default, with MySQL and Postgres as configurable drivers, and its dashboard runs from the same process. A site connects by copying the tracking snippet from the dashboard onto its pages, and the [install guide](https://github.com/usefathom/fathom/blob/master/docs/Installation%20instructions.md) shows the server running under a process manager so it restarts after a reboot.
+
+## Worth knowing
+
+The README says Lite no longer gets new features and that its maintainers keep fixing bugs, so it is a maintenance-only edition. The README's comparison table marks Lite as using cookies, where the hosted product is described as cookie-free. A site that uses a Content Security Policy must allow the instance host for script-src and img-src, as the [README](https://github.com/usefathom/fathom/blob/master/README.md) states. The hosted Fathom Analytics product is a paid service from the same company.

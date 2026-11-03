@@ -1,0 +1,143 @@
+id: flyimg
+name: Flyimg
+status: accepted
+checkedAt: 2026-11-03
+description: "Dockerized image server that resizes, crops and converts images on the fly from URL options, with caching."
+facts:
+  - field: homepage
+    value: "https://flyimg.io"
+    url: https://flyimg.io/
+    checkedAt: 2026-11-03
+    via: page
+  - field: repository
+    value: "https://github.com/flyimg/flyimg"
+    url: https://api.github.com/repos/flyimg/flyimg
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://docs.flyimg.io"
+    url: https://github.com/flyimg/flyimg/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Documentation available here"
+  - field: maintainer
+    value: "Sadok Ferjani"
+    url: https://raw.githubusercontent.com/flyimg/flyimg/1.12.13/composer.json
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Sadok Ferjani"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/flyimg
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/flyimg/flyimg
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://docs.flyimg.io/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "launches 2 processes: nginx and php-fpm and starts listening on port 8080"
+  - field: categories
+    value: [image-server, media-processing]
+    url: https://github.com/flyimg/flyimg/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "a Dockerized application that allows you to resize, crop, and compress images on the fly"
+  - field: license
+    value: AGPL-3.0
+    url: https://docs.flyimg.io/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The AGPL-3.0 License."
+  - field: licenseModel
+    value: open-source
+    url: https://docs.flyimg.io/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The AGPL-3.0 License."
+  - field: currentMajor
+    value: 1
+    url: https://github.com/flyimg/flyimg/releases/tag/1.12.13
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-11-03"
+    url: https://github.com/flyimg/flyimg/releases/tag/1.12.13
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://github.com/flyimg/flyimg/releases/tag/1.0.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 1233
+    url: https://api.github.com/repos/flyimg/flyimg
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 20
+    url: https://api.github.com/repos/flyimg/flyimg/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: runsAs
+    value: [always-on]
+    url: https://docs.flyimg.io/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "launches 2 processes: nginx and php-fpm and starts listening on port 8080"
+  - field: installMethod
+    value: [docker-image]
+    url: https://docs.flyimg.io/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Run the ready Docker image"
+  - field: installMethod
+    value: [source]
+    url: https://docs.flyimg.io/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "git clone https://github.com/flyimg/flyimg.git"
+  - field: installMethod
+    value: [helm-chart]
+    url: https://docs.flyimg.io/helm-chart/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This section provides the steps to install the Flyimg Helm chart using Helm."
+  - field: docker
+    value: "flyimg/flyimg"
+    url: https://github.com/flyimg/flyimg/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker pull flyimg/flyimg"
+  - field: dockerPulls
+    value: "51105 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/flyimg/flyimg/
+    checkedAt: 2026-11-03
+    via: api
+  - field: hostedOffering
+    value: "Flyimg Managed Service"
+    url: https://github.com/flyimg/flyimg/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "fully managed Flyimg SaaS for image optimization"
+  - field: x
+    value: "https://twitter.com/flyimg_"
+    url: https://docs.flyimg.io/
+    checkedAt: 2026-11-03
+    via: page
+  - field: installMethod
+    value: ["provision-scripts"]
+    url: https://docs.flyimg.io/install/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "You can spin up your own working server in 10 minutes using the provision scripts for"
+notFound: [parent, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, newsletter, usageShare, npmName, packagistName, packagistDownloads, npmWeeklyDownloads, paidEdition, sso, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, contentStore, databases, renderingModes, runtimeMin, hqCountry, importsFrom, pricingPage]
+unreadable: []
+notes: >
+  The install guide routes are the Docker image, a source build from git and a Helm chart; the Elastic Beanstalk and DigitalOcean provision scripts are recorded as one installMethod entry; the docs link their repositories without steps on the page. The composer.json at the 1.12.13 tag requires PHP 8.1 or newer, but the product ships as a Docker image, so runtimeMin is not recorded; the reviewer may decide the composer requirement counts. The license fact describes the latest release, and the composer.json at that tag also says AGPL-3.0. The maintainer is the composer.json author marked "Maintainer", since the LICENSE is the unmodified AGPL text with no copyright line. The Packagist package flyimg/flyimg exists (README badge) but no install page names it, so no Packagist figure is recorded. Image library: the repository description says the app resizes "using ImageMagick", and the README says JPEG XL output goes "via ImageMagick when enabled"; no libvips. Output formats named by the README: AVIF (default when the browser supports it), WebP, MozJPEG, PNG, GIF and JPEG XL. URL signing: the docs security page describes signature generation with encrypted URLs and domain restrictions. Storage: the storage option names local and S3 (the Flysystem adapter list also names Azure, FTP, Dropbox only as possible additions). Redis is an optional rate-limit store, not a database the software needs. Demo at demo.flyimg.io and adopters in ADOPTERS.md. Social: LinkedIn at linkedin.com/company/flyimg is linked from the docs page (coined, not recorded). The homepage carries no legal name or address; the Open Collective sponsorship page is linked from the README. Request pattern: options go in the URL path before the source image URL (for example w_250,q_50 followed by the image address), under /upload/; a second mode returns the path of the stored image as a string, and POST uploads with a body or a data URI are supported. The docs home line "One Docker container to build your own Cloudinary-like service" is a description, not a comparison page, so alternativeTo stays out.

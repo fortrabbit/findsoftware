@@ -1,0 +1,132 @@
+id: freshlytics
+name: Freshlytics
+status: accepted
+checkedAt: 2026-11-03
+description: Self-hosted web analytics service that records page views through a tracking snippet, with a dashboard for several projects.
+facts:
+  - field: repository
+    value: https://github.com/sheshbabu/freshlytics
+    url: https://api.github.com/repos/sheshbabu/freshlytics
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://github.com/sheshbabu/freshlytics/blob/master/docs/README.md
+    url: https://github.com/sheshbabu/freshlytics/blob/master/docs/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "It's a self-hosted privacy-friendly analytics service."
+  - field: maintainer
+    value: Sheshbabu
+    url: https://github.com/sheshbabu/freshlytics/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2019 Sheshbabu"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/sheshbabu
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/sheshbabu/freshlytics
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [web-analytics]
+    url: https://github.com/sheshbabu/freshlytics/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "open source privacy-friendly analytics software"
+  - field: runtime
+    value: [node]
+    url: https://github.com/sheshbabu/freshlytics/blob/1.1.0/package.json
+    checkedAt: 2026-11-03
+    via: page
+    quote: "node ./dist"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/sheshbabu/freshlytics/blob/master/docs/troubleshooting.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "It should point to the server that is hosting the freshlytics system"
+  - field: installMethod
+    value: Docker Compose file using the freshlytics/freshlytics image
+    url: https://github.com/sheshbabu/freshlytics/blob/master/docs/installation.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "image: freshlytics/freshlytics"
+  - field: installMethod
+    value: docker-compose up --build from the repository
+    url: https://github.com/sheshbabu/freshlytics/blob/master/docs/development.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker-compose up --build"
+  - field: databases
+    value: [postgres]
+    url: https://github.com/sheshbabu/freshlytics/blob/master/docs/installation.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "image: pipelinedb/pipelinedb-postgresql-11"
+  - field: userRoles
+    value: yes, admin and normal users
+    url: https://github.com/sheshbabu/freshlytics/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Users can either be Admin or normal users"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/sheshbabu/freshlytics
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/sheshbabu/freshlytics/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2019"
+    url: https://api.github.com/repos/sheshbabu/freshlytics/tags
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/sheshbabu/freshlytics/tags
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2020-04-12
+    url: https://api.github.com/repos/sheshbabu/freshlytics/tags
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 362
+    url: https://api.github.com/repos/sheshbabu/freshlytics
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 5
+    url: https://api.github.com/repos/sheshbabu/freshlytics/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: dockerPulls
+    value: "56802 (2026-11-03)"
+    url: https://hub.docker.com/r/freshlytics/freshlytics
+    checkedAt: 2026-11-03
+    via: api
+  - field: adminUi
+    value: "yes, a web dashboard for projects, users and reports"
+    url: https://github.com/sheshbabu/freshlytics/blob/master/docs/usage.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Click on the `Settings` button at the top to go to the settings page."
+  - field: docker
+    value: "freshlytics/freshlytics"
+    url: https://github.com/sheshbabu/freshlytics/blob/master/docs/installation.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "image: freshlytics/freshlytics"
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runtimeMin, endoflifeId, supportedVersions, contentStore, headlessApi, templating, i18n, multisite, livePreview, sso, importsFrom, paidEdition, pricingPage, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, renderingModes, npmName, packagistName, pypiName, selfHostOption, maintainerType]
+unreadable: []
+notes: >
+  The project's GitHub Pages site is not recorded as homepage: the repository's homepage field is empty and the README does not name the Pages address. The repository has tags 1.0.0 and 1.0.1 (both 2019-09-03), 1.1.0 (2020-04-12) and no GitHub release, so firstRelease is the oldest tag and latestReleaseDate is the newest tag, which is 2020-04-12 and is more than four years before this check; the import's four-year rule decides listing, so the status stays accepted and the reviewer decides. The tag 1.1.0 manifest says version 1.0.0-beta, which the record does not use. The tracking snippet goes in the head of each page and sends events to a collect endpoint of the instance: this is the embed method, a script tag, and it goes to notes. The README and the features say cookies are not used and that personally identifiable information is not collected: privacyClaims in notes, not a field. The installation page says the service depends on PipelineDB for data storage and the example uses the pipelinedb/pipelinedb-postgresql-11 image; the database is recorded as postgres from that image name, and PipelineDB's own status is not checked here, so a reviewer decides whether that dependency is an end signal for the stack. The Docker Hub image has 56802 pulls and a last update of 2020-08-17; the Docker image is built on Node 12 (its Dockerfile), a build requirement, so no runtimeMin. The docs' default admin credentials are not recorded. The docs describe the software as self-hosted, so no hosting service applies. PipelineDB status: the README of github.com/pipelinedb/pipelinedb says it joined Confluent and "will not have new releases beyond 1.0.0, although critical bugs will still be fixed"; that is the status of a dependency, not a statement that Freshlytics has ended, so no end signal is recorded for Freshlytics. The docs list the system requirements as 1 CPU core and 1 GB RAM.

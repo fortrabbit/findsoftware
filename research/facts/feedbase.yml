@@ -1,0 +1,130 @@
+id: feedbase
+name: Feedbase
+status: accepted
+checkedAt: 2026-11-03
+description: "Open-source feedback portal and changelog for product teams, built with Next.js and Supabase."
+facts:
+  - field: homepage
+    value: "https://feedbase.app"
+    url: https://feedbase.app/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Feedbase simplifies feedback collection, feature prioritization, and product update sharing"
+  - field: repository
+    value: "https://github.com/chroxify/feedbase"
+    url: https://api.github.com/repos/chroxify/feedbase
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://docs.feedbase.app"
+    url: https://docs.feedbase.app/introduction
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Feedbase is an open-source feedback collection and product update solution"
+  - field: maintainer
+    value: "Christo Todorov"
+    url: https://api.github.com/users/chroxify
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/chroxify
+    checkedAt: 2026-11-03
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/chroxify/feedbase
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [feedback]
+    url: https://feedbase.app/
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Feedbase simplifies feedback collection, feature prioritization, and product update sharing"
+  - field: license
+    value: AGPL-3.0
+    url: https://github.com/chroxify/feedbase/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "GNU Affero General Public License Version 3 (AGPLv3)"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/chroxify/feedbase/releases/tag/v0.1.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2024-03-08"
+    url: https://github.com/chroxify/feedbase/releases/tag/v0.1.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2024
+    url: https://github.com/chroxify/feedbase/releases/tag/v0.1.0
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 675
+    url: https://api.github.com/repos/chroxify/feedbase
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 4
+    url: https://api.github.com/repos/chroxify/feedbase/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: hostedOffering
+    value: "Feedbase Cloud, the vendor's hosted solution"
+    url: https://docs.feedbase.app/introduction
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Use our cloud hosted solution to get up and running in minutes"
+  - field: installMethod
+    value: [docker-image]
+    url: https://docs.feedbase.app/self-hosting/docker
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Either run the pre-built Docker image or build and run the Docker image yourself."
+  - field: installMethod
+    value: [vercel]
+    url: https://docs.feedbase.app/self-hosting/vercel
+    checkedAt: 2026-11-03
+    via: page
+    quote: "How to self-host Feedbase on Vercel"
+  - field: installMethod
+    value: [source]
+    url: https://docs.feedbase.app/introduction
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Develop and contribute to Feedbase locally with hot-reloading"
+  - field: discord
+    value: "https://discord.gg/UmWgwcxbpy"
+    url: https://feedbase.app/discord
+    checkedAt: 2026-11-03
+    via: page
+  - field: x
+    value: "https://x.com/0xChroxify"
+    url: https://feedbase.app/twitter
+    checkedAt: 2026-11-03
+    via: page
+  - field: databases
+    value: ["postgres"]
+    url: https://docs.feedbase.app/development/installation
+    checkedAt: 2026-11-03
+    via: page
+    quote: "you can use the Supabase CLI to start a local Postgres database"
+  - field: docker
+    value: "chroxify/feedbase"
+    url: https://docs.feedbase.app/self-hosting/docker
+    checkedAt: 2026-11-03
+    via: page
+    quote: "docker pull chroxify/feedbase"
+  - field: dockerPulls
+    value: "392 (2026-11-03)"
+    url: https://hub.docker.com/v2/repositories/chroxify/feedbase/
+    checkedAt: 2026-11-03
+    via: api
+notFound: [parent, forkOf, successorOf, alternativeTo, wikidata, endoflifeId, pluginDirectory, pluginCount, subreddit, mastodon, bluesky, newsletter, usageShare, npmName, packagistName, npmWeeklyDownloads, paidEdition, sso, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, contentStore, runtime, runtimeMin, runsAs, renderingModes, hqCountry, maintainerType, pricingPage, importsFrom]
+unreadable: []
+notes: >
+  Criterion 1 rests on the API reference: the Public API reads public project data and the Project API, with a public-scope key, is meant for the TypeScript SDK, so a creator's site or app can show the changelog or feedback. The portal itself is a hosted app the creator's users visit, so a reviewer should confirm the SDK is used on a creator's own site, or move the record to stub or rejected criterion 1. The public hub at hub.feedbase.app and custom-domain portals are the cloud product. The only release is v0.1.0 (2024-03-08), so currentMajor is 0 and the line is pre-1.0; the repository was last pushed 2025-01-03 and its README calls the project in very early stages. Self-hosting needs a Supabase project for the database and auth, per the Vercel and Docker guides; the installation page names a local Postgres database through the Supabase CLI. The Docker guide says Docker support is not fully stable. The maintainer is the GitHub owner by the name on the GitHub profile, since the README and LICENSE name no legal entity and the LICENSE has no copyright line. The terms and privacy paths at feedbase.app return 404, so no legal entity or country is recorded. The docs footer links twitter.com/0xChroxify. Single sign-on for the portal users is a JWT hand-off from the creator's own application (the SSO page), recorded here rather than as an sso protocol. The homepage lists a changelog subscription by email and RSS, custom domains for the hub and Linear and GitHub connections. The Docker Hub image was last updated 2024-03-08.

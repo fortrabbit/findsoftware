@@ -1,0 +1,126 @@
+id: commentoplusplus
+name: Commento++
+status: stub
+checkedAt: 2026-11-03
+description: Fork of Commento, a comment box that a static website embeds in place of Disqus.
+facts:
+  - field: repository
+    value: https://github.com/souramoo/commentoplusplus
+    url: https://api.github.com/repos/souramoo/commentoplusplus
+    checkedAt: 2026-11-03
+    via: api
+  - field: forkOf
+    value: commento
+    url: https://github.com/souramoo/commentoplusplus/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Original source is from @adtac at https://gitlab.com/commento/commento/ - this fork"
+  - field: maintainer
+    value: Souradip Mookerjee
+    url: https://api.github.com/users/souramoo
+    checkedAt: 2026-11-03
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/souramoo
+    checkedAt: 2026-11-03
+    via: api
+  - field: alternativeTo
+    value: [disqus]
+    url: https://github.com/souramoo/commentoplusplus/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "comments box that you can embed in your static website instead of Disqus"
+  - field: categories
+    value: [comments]
+    url: https://github.com/souramoo/commentoplusplus/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "a free, open source, fast & lightweight comments box"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/souramoo/commentoplusplus/languages
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/souramoo/commentoplusplus
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: "2020"
+    url: https://api.github.com/repos/souramoo/commentoplusplus/tags
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/souramoo/commentoplusplus/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: 2022-04-07
+    url: https://api.github.com/repos/souramoo/commentoplusplus/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 433
+    url: https://api.github.com/repos/souramoo/commentoplusplus
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 44
+    url: https://api.github.com/repos/souramoo/commentoplusplus/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: importsFrom
+    value: [Disqus]
+    url: https://github.com/souramoo/commentoplusplus/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Import from Disqus"
+  - field: databases
+    value: [postgres]
+    url: https://github.com/souramoo/commentoplusplus/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "you will need a PostgreSQL server handy"
+  - field: adminUi
+    value: yes, comment moderation dashboard
+    url: https://github.com/souramoo/commentoplusplus/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Comment moderation dashboard, to approve/delete comments across your entire domain from one place"
+  - field: installMethod
+    value: docker
+    url: https://github.com/souramoo/commentoplusplus/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Use this repo's Dockerfile"
+  - field: installMethod
+    value: binary download
+    url: https://github.com/souramoo/commentoplusplus/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Download the plug and play pre-compiled version from the"
+  - field: installMethod
+    value: build from source
+    url: https://github.com/souramoo/commentoplusplus/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "To build yourself, you can clone this repo"
+  - field: installMethod
+    value: Heroku deploy button
+    url: https://github.com/souramoo/commentoplusplus/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The button below will work for a Heroku account:"
+  - field: installMethod
+    value: Railway deploy button
+    url: https://github.com/souramoo/commentoplusplus/blob/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The button below will work for a free Railway account:"
+notFound: [homepage, docs, pricingPage, hqCountry, parent, basedOn, successorOf, runtime, runtimeMin, runsAs, contentStore, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, selfHostOption, apiLimits, regions, usageShare, reportedInstalls, packagistName, npmName, endoflifeId, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, hostedOffering, maintainerType]
+unreadable: [https://commento.souradip.me/]
+notes: >
+  The homepage in the candidates row, commento.souradip.me, does not resolve in DNS (checked 2026-11-03), and the GitHub repository names no homepage, so no homepage is recorded and the status is stub with the doubt stated here: a live project page or a restored homepage would settle it. The live demo at demo.souradip.com is a page titled "@souramoo's patched commento" that names the same patches; it is a demo, not a homepage, and is not cited as one. The LICENSE copyright line reads "Copyright 2018 Commento, Inc.", the inherited upstream copyright; the maintainer is the fork's author, named on his GitHub profile as Souradip Mookerjee (@souramoo, credited by the README). The README gives no process-model sentence: it says to run the commento binary, so runsAs is not recorded. The widget attaches with a script tag (a defer script from the instance plus a div with id commento). The README says the install docs are at docs.commento.io, the same site that returns 404 (see commento), so no docs fact is recorded. The Docker images named in the README are from a third party (caroga, on GitLab and Docker Hub), so they are not an installMethod of the project. The README names PostgreSQL and the Heroku and Railway buttons; both are routes. The last commit on master is dated 2023-06-27 (pushed_at); the last release is v1.8.7 dated 2022-04-07. The README asks for donations through PayPal and offers no paid edition. Sign-in is described as OAuth login and single sign-on without a protocol named, so sso is not recorded. Spam detection through Akismet and Perspective, wildcard domains, and guest names are feature lines only and are not recorded.

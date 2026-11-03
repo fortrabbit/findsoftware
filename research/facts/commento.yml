@@ -1,0 +1,82 @@
+id: commento
+name: Commento
+status: stub
+checkedAt: 2026-11-03
+description: Comment platform that a website embeds to let its readers post comments, with a Go server and a PostgreSQL database.
+facts:
+  - field: repository
+    value: https://gitlab.com/commento/commento
+    url: https://gitlab.com/api/v4/projects/commento%2Fcommento
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Commento, Inc.
+    url: https://gitlab.com/commento/commento/-/raw/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright 2018 Commento, Inc."
+  - field: categories
+    value: [comments]
+    url: https://gitlab.com/commento/commento/-/raw/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "a platform that you can embed in your website to allow your readers to add comments"
+  - field: language
+    value: Go
+    url: https://gitlab.com/api/v4/projects/commento%2Fcommento/languages
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: MIT
+    url: https://gitlab.com/commento/commento/-/raw/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: firstRelease
+    value: 2018
+    url: https://gitlab.com/api/v4/projects/commento%2Fcommento/repository/tags
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://gitlab.com/api/v4/projects/commento%2Fcommento/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2020-04-10"
+    url: https://gitlab.com/api/v4/projects/commento%2Fcommento/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: importsFrom
+    value: [disqus]
+    url: https://gitlab.com/commento/commento/-/raw/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "import from Disqus"
+  - field: databases
+    value: [postgresql]
+    url: https://gitlab.com/commento/commento/-/raw/master/docker-compose.yml
+    checkedAt: 2026-11-03
+    via: page
+    quote: "COMMENTO_POSTGRES: postgres://postgres:postgres@db:5432/commento"
+  - field: installMethod
+    value: docker
+    url: https://gitlab.com/commento/commento/-/raw/master/docker-compose.yml
+    checkedAt: 2026-11-03
+    via: page
+    quote: "image: registry.gitlab.com/commento/commento"
+  - field: contributors
+    value: 29
+    url: https://gitlab.com/api/v4/projects/commento%2Fcommento/repository/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: alternativeTo
+    value: [disqus]
+    url: https://gitlab.com/commento/commento/-/raw/master/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "How is this different from Disqus, Facebook Comments, and the rest?"
+notFound: [homepage, docs, pricingPage, hostedOffering, hqCountry, parent, basedOn, forkOf, successorOf, runtime, runtimeMin, runsAs, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, selfHostOption, apiLimits, regions, usageShare, reportedInstalls, packagistName, npmName, endoflifeId, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, githubStargazers]
+unreadable: [https://commento.io/, https://docs.commento.io/installation/]
+notes: >
+  The project's own site no longer answers: commento.io returns 404 for every path tried on 2026-11-03 (/, /pricing, /terms, /privacy, /legal, /about, /self-hosting), and docs.commento.io returns 404 for /, /installation/ and /installation/self-hosting/on-your-server/. The README names both as homepage and documentation, so no homepage is recorded and the status is stub with the doubt stated here: a live commento.io or docs page would settle whether the hosted offering and the install guide still exist. The repository ships a Dockerfile, docker-compose.yml and Makefile, and its GitLab wiki is empty. The README says "the hosted cloud version is not offered free of cost" and links commento.io; the site is gone, so no hostedOffering is recorded. The README also names single sign-on and OAuth login as features and links a #commento channel on Freenode; none is recorded as a field. The database comes from the docker-compose connection string, which is the only place the repository names it. Stars are on GitLab (779 on 2026-11-03) and no field here takes them. The GitLab API carries no archived flag in its response. The newest commit on master is dated 2021-02-28. The npm package named commento is an unrelated ISC package and is not recorded. Commento++ names this repository as its upstream, see commentoplusplus. The software is not recorded as basedOn or with a runtime because the read pages state no runtime; the Dockerfile builds the API with Go. Coined and not recorded as fields: a privacy-focused positioning and the free-software statement in the README (notes only).

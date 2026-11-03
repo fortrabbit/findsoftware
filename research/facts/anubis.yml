@@ -1,0 +1,167 @@
+id: anubis
+name: Anubis
+status: accepted
+checkedAt: 2026-11-03
+description: "Web application firewall that sits in front of a web service and makes each visitor solve a proof-of-work challenge before the request reaches the service, to stop scraper bots."
+facts:
+  - field: homepage
+    value: "https://anubis.techaro.lol"
+    url: https://api.github.com/repos/TecharoHQ/anubis
+    checkedAt: 2026-11-03
+    via: api
+  - field: repository
+    value: "https://github.com/TecharoHQ/anubis"
+    url: https://api.github.com/repos/TecharoHQ/anubis
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://github.com/TecharoHQ/anubis/blob/main/docs/docs/admin/installation.mdx"
+    url: https://github.com/TecharoHQ/anubis/blob/main/docs/docs/admin/installation.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Anubis is meant to sit between your reverse proxy (such as Nginx or Caddy) and your target service."
+  - field: maintainer
+    value: "Xe Iaso"
+    url: https://github.com/TecharoHQ/anubis/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2025 Xe Iaso"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/TecharoHQ
+    checkedAt: 2026-11-03
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://api.github.com/repos/TecharoHQ/anubis
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2025
+    url: https://api.github.com/repos/TecharoHQ/anubis/releases
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [waf]
+    url: https://github.com/TecharoHQ/anubis/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Anubis is a Web AI Firewall Utility"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/TecharoHQ/anubis
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://github.com/TecharoHQ/anubis/blob/main/docs/docs/admin/native-install.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Install the binary to your system:"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/TecharoHQ/anubis/blob/main/docs/docs/admin/environments/windows.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "running on Windows as a native system service"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/TecharoHQ/anubis/blob/main/docs/docs/admin/native-install.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Install the systemd unit to your system:"
+  - field: databases
+    value: [bbolt]
+    url: https://github.com/TecharoHQ/anubis/blob/main/docs/docs/admin/installation.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "persistent storage backends (like bbolt)"
+  - field: installMethod
+    value: [native-deb]
+    url: https://github.com/TecharoHQ/anubis/blob/main/docs/docs/admin/native-install.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Install the Anubis package using your package manager of choice:"
+  - field: installMethod
+    value: [native-rpm]
+    url: https://github.com/TecharoHQ/anubis/blob/main/docs/docs/admin/native-install.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "sudo dnf -y install ./anubis-$VERSION.$ARCH.rpm"
+  - field: installMethod
+    value: [tarball]
+    url: https://github.com/TecharoHQ/anubis/blob/main/docs/docs/admin/native-install.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Extract the tarball to a folder:"
+  - field: installMethod
+    value: [windows-msi]
+    url: https://github.com/TecharoHQ/anubis/blob/main/docs/docs/admin/environments/windows.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "download the MSI from the releases page and run it"
+  - field: installMethod
+    value: [docker-image]
+    url: https://github.com/TecharoHQ/anubis/blob/main/docs/docs/admin/installation.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Anubis is shipped in the Docker repo"
+  - field: installMethod
+    value: [docker-compose]
+    url: https://github.com/TecharoHQ/anubis/blob/main/docs/docs/admin/environments/docker-compose.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Below is a minimal example showing you how to set up an instance of Anubis"
+  - field: installMethod
+    value: [kubernetes]
+    url: https://github.com/TecharoHQ/anubis/blob/main/docs/docs/admin/environments/kubernetes.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "When setting up Anubis in Kubernetes, you want to make sure that you thread requests through Anubis"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/TecharoHQ/anubis
+    checkedAt: 2026-11-03
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/TecharoHQ/anubis/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: licenseModel
+    value: open-core
+    url: https://github.com/TecharoHQ/anubis/blob/main/docs/docs/admin/botstopper.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "BotStopper builds off of the open source core of Anubis"
+  - field: paidEdition
+    value: "BotStopper, a commercial version with custom branding and a private bug tracker"
+    url: https://github.com/TecharoHQ/anubis/blob/main/docs/docs/admin/botstopper.mdx
+    checkedAt: 2026-11-03
+    via: page
+    quote: "we offer a commercial version of Anubis named BotStopper"
+  - field: currentMajor
+    value: 1
+    url: https://github.com/TecharoHQ/anubis/releases/tag/v1.28.2
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-23"
+    url: https://github.com/TecharoHQ/anubis/releases/tag/v1.28.2
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 23922
+    url: https://api.github.com/repos/TecharoHQ/anubis
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 194
+    url: https://api.github.com/repos/TecharoHQ/anubis/contributors?per_page=1
+    checkedAt: 2026-11-03
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, wikidata, hqCountry, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, npmName, npmWeeklyDownloads, packagistName, pypiDownloads, httpArchiveSites, reportedInstalls, pricingPage, hostedOffering, contentStore, renderingModes, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, adminUi, runtimeMin, endoflifeId, releaseCadence]
+unreadable: ["https://anubis.techaro.lol/ (200 with the Anubis challenge page, not the site)", "https://anubis.techaro.lol/docs/ (200 with the Anubis challenge page, not the docs)"]
+notes: >
+  The homepage and docs site return Anubis's own challenge page to the research client, so the docs were read from the docs source in the repository (docs/docs/*.mdx on main). The homepage is taken from the repository's homepage field. Techaro is the company behind Anubis: the homepage reads "Protected by Anubis From Techaro" and "This website is hosted by Techaro", and BotStopper is sold by Techaro (sales@techaro.lol); the LICENSE copyright line names Xe Iaso, so Xe Iaso is the maintainer and Techaro is kept here, with no hqCountry (the homepage says "Made with ❤️ in 🇨🇦", which is not an address). BotStopper is the commercial version: the paidEdition quote is its own statement, and the Sponsors tier is its price, which is not recorded. The docs mark enterprise-only settings with an EO tag (for example CHALLENGE_TITLE and ASSET_LOOKUP_HEADER), which is BotStopper only. Thoth, the hosted GeoIP lookup from Techaro, is described as cancelled and scheduled for removal, so it is not a hostedOffering. The installation page says one Anubis instance per protected service. The releases include prereleases v1.28.0-pre1 to pre3; v1.28.0 is marked prerelease on GitHub even though its name is a stable version, and the latest stable release is v1.28.2 (2026-10-23). The first GitHub release in the list is v1.12.1 (2025-03-19) and the repository was created 2025-03-17. The README says Anubis "is a bit of a nuclear response": a site behind it is blocked from smaller scrapers and may inhibit "good bots" like the Internet Archive, which bot policy definitions can allowlist explicitly. The GitHub contributor count is 194 from the contributors endpoint across pages. The Patreon page and the GitHub Sponsors page are the project's support channels, not recorded as fields. The HTTP Archive technologies file does not list Anubis. The Docker route uses ghcr.io/techarohq/anubis, which is not a Docker Hub image, so no pull count is recorded. The install routes are the native packages (deb, rpm, tarball), the Windows MSI, the Docker image, a Docker Compose example and a Kubernetes sidecar pattern. The environment pages for nginx, caddy, apache, haproxy and traefik show configuration for the reverse proxy in front, not separate installs. Environment variables stay in the docs: BIND, TARGET, DIFFICULTY, SERVE_ROBOTS_TXT and similar are coined kinds left in notes.

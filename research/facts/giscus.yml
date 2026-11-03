@@ -1,0 +1,105 @@
+id: giscus
+name: giscus
+status: accepted
+checkedAt: 2026-11-03
+description: Comments system that stores a site's comments as GitHub Discussions and shows them on the page through a script tag.
+facts:
+  - field: homepage
+    value: https://giscus.app
+    url: https://giscus.app
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A comments system powered by GitHub Discussions"
+  - field: repository
+    value: https://github.com/giscus/giscus
+    url: https://api.github.com/repos/giscus/giscus
+    checkedAt: 2026-11-03
+    via: api
+  - field: maintainer
+    value: Sage M. Abdullah
+    url: https://github.com/giscus/giscus/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2021 Sage M. Abdullah"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/giscus
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [comments]
+    url: https://giscus.app
+    checkedAt: 2026-11-03
+    via: page
+    quote: "A comments system powered by GitHub Discussions"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/giscus/giscus
+    checkedAt: 2026-11-03
+    via: api
+  - field: installMethod
+    value: script-tag
+    url: https://giscus.app
+    checkedAt: 2026-11-03
+    via: page
+    quote: "to your website's template where you want the comments to appear"
+  - field: installMethod
+    value: self-hosted-app
+    url: https://github.com/giscus/giscus/blob/main/SELF-HOSTING.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "To self-host giscus, you need to create a new"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/giscus/giscus
+    checkedAt: 2026-11-03
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/giscus/giscus/blob/main/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "MIT License"
+  - field: i18n
+    value: multiple languages
+    url: https://giscus.app
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Supports multiple languages"
+  - field: importsFrom
+    value: [utterances, gitalk]
+    url: https://github.com/giscus/giscus/blob/main/README.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "(e.g. [utterances][utterances], [gitalk][gitalk])"
+  - field: githubStargazers
+    value: 12205
+    url: https://api.github.com/repos/giscus/giscus
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 80
+    url: https://api.github.com/repos/giscus/giscus/contributors
+    checkedAt: 2026-11-03
+    via: api
+  - field: lastCommitDate
+    value: 2026-05-26
+    url: https://api.github.com/repos/giscus/giscus/commits
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md
+    url: https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "This guide highlights advanced usage of giscus through additional configurations."
+  - field: forum
+    value: https://github.com/giscus/giscus/discussions
+    url: https://github.com/giscus/giscus/blob/main/SELF-HOSTING.md
+    checkedAt: 2026-11-03
+    via: page
+    quote: "ask them on the Q&A [discussion][discussion]"
+notFound: [firstRelease, latestReleaseDate, currentMajor, runtime, runsAs, renderingModes, databases, hqCountry, parent, forkOf, alternativeTo, pricingPage, pluginDirectory, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, packagistName]
+unreadable: []
+notes: >
+  No GitHub release and no tag exist (releases and tags lists are empty), so lastCommitDate is the committer date of the newest commit on main, 2026-05-26, and firstRelease is absent. The GitHub App creation date on giscus.app is not a release date. The script tag loads an iframe on the creator's page and the comments are written by GitHub Discussions, a second platform the creator's visitors reach through GitHub OAuth; the dependency goes to notes: the repository must be public, the giscus app must be installed on it, and Discussions must be enabled. The README says "All data is stored in GitHub Discussions" and "No database needed." Privacy claims in the README: "No tracking, no ads, always free." Attachment: a script tag with data attributes, a lazy-loaded iframe, CSS selectors .giscus and .giscus-frame, and a component library at github.com/giscus/giscus-component for React, Vue and Svelte (a second install route for that framework, not recorded). The README says "Heavily inspired by utterances", a relationship in prose only, not alternativeTo. The LICENSE lists three copyright lines: Sage M. Abdullah (2021), Jeremy Danyow (2018) and Chris Veness (2018); the two third-party lines are bundled code under the same MIT text and are not separate statements. The maintainer is the person the LICENSE copyright line names; the GitHub organization giscus is the repository owner. The self-hosted route needs a GitHub App and a deployed web app; SELF-HOSTING.md says it can be deployed "anywhere that can run a Next.js application and its serverless functions", names no runtime, so runtime and runsAs are absent, and the Next.js mention is no basedOn statement. An optional Supabase table caches GitHub access tokens; it holds no comments, so it is no databases fact. The migration route is GitHub's own conversion of issues into discussions, as the README Migrating section says. The homepage links no social profiles. The homepage says the discussion for a page is found through a chosen mapping (URL, pathname, title and others), that the giscus bot creates a discussion the first time someone comments or reacts, and that visitors authorize the giscus app through the GitHub OAuth flow or comment on the discussion on GitHub directly.

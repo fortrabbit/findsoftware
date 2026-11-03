@@ -1,0 +1,216 @@
+id: artalk
+name: Artalk
+status: accepted
+checkedAt: 2026-11-03
+description: "Self-hosted comment system that is embedded into a blog, website or web application."
+facts:
+  - field: homepage
+    value: "https://artalk.js.org"
+    url: https://artalk.js.org
+    checkedAt: 2026-11-03
+    via: api
+  - field: repository
+    value: "https://github.com/ArtalkJS/Artalk"
+    url: https://api.github.com/repos/ArtalkJS/Artalk
+    checkedAt: 2026-11-03
+    via: api
+  - field: docs
+    value: "https://artalk.js.org/en/guide/deploy.html"
+    url: https://artalk.js.org/en/guide/deploy.html
+    checkedAt: 2026-11-03
+    via: page
+  - field: maintainer
+    value: "qwqcode"
+    url: https://github.com/ArtalkJS/Artalk/blob/master/LICENSE
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Copyright (c) 2018-present, qwqcode and other contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/ArtalkJS
+    checkedAt: 2026-11-03
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://api.github.com/repos/ArtalkJS/Artalk
+    checkedAt: 2026-11-03
+    via: api
+  - field: firstRelease
+    value: 2020
+    url: https://github.com/ArtalkJS/Artalk/releases/tag/1.0.4
+    checkedAt: 2026-11-03
+    via: api
+  - field: categories
+    value: [comments]
+    url: https://artalk.js.org/en/guide/intro.html
+    checkedAt: 2026-11-03
+    via: page
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/ArtalkJS/Artalk
+    checkedAt: 2026-11-03
+    via: api
+  - field: runtime
+    value: go binary
+    url: https://artalk.js.org/en/guide/intro.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "The back end, rewritten in Golang (Artalk v2), is cross-platform, compact, and fully featured"
+  - field: installMethod
+    value: docker
+    url: https://artalk.js.org/en/guide/deploy.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "It is recommended to use Docker for deployment"
+  - field: installMethod
+    value: binary download
+    url: https://artalk.js.org/en/guide/deploy.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Download the program package from GitHub Release"
+  - field: installMethod
+    value: go install
+    url: https://artalk.js.org/en/guide/deploy.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "go install github.com/artalkjs/artalk/v2@latest"
+  - field: installMethod
+    value: build from source
+    url: https://artalk.js.org/en/guide/deploy.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Self-compile (Build from the latest code)"
+  - field: installMethod
+    value: linux distribution package
+    url: https://artalk.js.org/en/guide/deploy.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Fedora (Copr)"
+  - field: installMethod
+    value: npm
+    url: https://artalk.js.org/en/guide/deploy.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Install via npm"
+  - field: runsAs
+    value: [always-on]
+    url: https://artalk.js.org/en/guide/backend/daemon.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Update the Docker container's Restart Policy to achieve the effect of process daemonization."
+  - field: databases
+    value: [sqlite, mysql, postgresql, mssql]
+    url: https://artalk.js.org/en/guide/backend/config.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Artalk supports connecting to various databases, including SQLite, MySQL, PostgreSQL, and SQL Server"
+  - field: adminUi
+    value: "yes, a Dashboard in the sidebar of the comment widget"
+    url: https://artalk.js.org/en/guide/backend/multi-site.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "the \"Dashboard\" accessible from the sidebar"
+  - field: multisite
+    value: yes
+    url: https://artalk.js.org/en/guide/backend/multi-site.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Artalk supports multi-site management, allowing administrators to create and manage multiple sites"
+  - field: userRoles
+    value: "yes, administrator accounts with dashboard access"
+    url: https://artalk.js.org/en/guide/backend/multi-site.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Only administrators can access the \"Dashboard\" and manage comments from the frontend."
+  - field: i18n
+    value: "yes, multiple interface languages"
+    url: https://artalk.js.org/en/guide/frontend/i18n.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Currently, Artalk supports the following languages"
+  - field: importsFrom
+    value: typecho
+    url: https://artalk.js.org/en/guide/transfer.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "./artransfer typecho"
+  - field: importsFrom
+    value: wordpress
+    url: https://artalk.js.org/en/guide/transfer.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Go to the WordPress backend"
+  - field: importsFrom
+    value: disqus
+    url: https://artalk.js.org/en/guide/transfer.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Go to the Disqus backend"
+  - field: importsFrom
+    value: commento
+    url: https://artalk.js.org/en/guide/transfer.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Go to the Commento backend"
+  - field: importsFrom
+    value: waline
+    url: https://artalk.js.org/en/guide/transfer.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "For independently deployed Waline"
+  - field: importsFrom
+    value: twikoo
+    url: https://artalk.js.org/en/guide/transfer.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Twikoo can obtain the JSON file through the"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/ArtalkJS/Artalk
+    checkedAt: 2026-11-03
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://github.com/ArtalkJS/Artalk/releases/tag/v2.10.1
+    checkedAt: 2026-11-03
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-25"
+    url: https://github.com/ArtalkJS/Artalk/releases/tag/v2.10.1
+    checkedAt: 2026-11-03
+    via: api
+  - field: githubStargazers
+    value: 2361
+    url: https://api.github.com/repos/ArtalkJS/Artalk
+    checkedAt: 2026-11-03
+    via: api
+  - field: contributors
+    value: 48
+    url: https://api.github.com/repos/ArtalkJS/Artalk/contributors?per_page=1
+    checkedAt: 2026-11-03
+    via: api
+  - field: npmName
+    value: artalk
+    url: https://www.npmjs.com/package/artalk
+    checkedAt: 2026-11-03
+    via: api
+  - field: npmWeeklyDownloads
+    value: 2939
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/artalk
+    checkedAt: 2026-11-03
+    via: api
+  - field: dockerPulls
+    value: "738921 (2026-11-03)"
+    url: https://hub.docker.com/r/artalk/artalk-go
+    checkedAt: 2026-11-03
+    via: api
+  - field: forum
+    value: "https://github.com/ArtalkJS/Artalk/discussions"
+    url: https://artalk.js.org/en/guide/intro.html
+    checkedAt: 2026-11-03
+    via: page
+    quote: "Share your ideas (leave a comment below / Discussions"
+notFound: [sso, headlessApi, templating, livePreview, contentStore, hqCountry, wikidata, parent, forkOf, successorOf, alternativeTo, pricingPage, paidEdition, freeTier, renderingModes, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, packagistName, pypiDownloads, endoflifeId, eolPolicy, basedOn]
+unreadable: []
+notes: >
+  Artalk is the Go server (binary, Docker image artalk/artalk-go) plus the browser client (npm package artalk, TypeScript, about 40KB); npmWeeklyDownloads and the npm name count the client package, which the install page names. The server stores comments in SQLite by default (the database page names SQLite, MySQL, PostgreSQL and SQL Server); Redis is an optional cache, not a store. The CSV row dates the tag v2.10.1 at 2026-10-11, the releases API has it at 2026-10-25; the record uses the API date. The nightly prerelease (2026-10-28) is a build tag, not an alpha, beta or RC, so latestPrereleaseDate is left out. Maintainer follows the LICENSE copyright line; the GitHub owner is the ArtalkJS organization, whose name the docs use for the source. The intro page puts the documentation under a CC BY-NC-SA 4.0 license; that covers the documentation only, so it is not a license entry of the software. The server has an optional token exchange with an OpenID Connect issuer (ATK_AUTH_SSO_ENABLED, ATK_AUTH_SSO_ISSUER, /sso/exchange in the OpenAPI reference); it is no login protocol for the software's users, so sso is not recorded. Social login (GitHub, Google, and other OAuth providers) is for commenters and is not recorded as sso. headlessApi is left out: the API reference (OpenAPI 3, /api/v2) never uses the word REST, so a reviewer may record rest. Embedding is a script tag or the npm import, with an ES-module CDN (esm.sh, esm.run) or cdnjs, jsdelivr and unpkg for the client; coined kind embedMethod, kept here. Linux packages are Fedora Copr, Arch AUR, NixOS and Termux. The "docker compose" file is a Docker install route, not a separate installMethod. The project was first pushed to GitHub on 2018-10-02 (intro page); firstRelease is the year of the oldest tag, 1.0.4 (2020). The importsFrom list comes from the transfer page's sections; Valine is described on the transfer page through LeanCloud exports and is not recorded as an importsFrom value, since its section does not name Valine as the source. Artalk v1 (PHP backend) is the project's own earlier version and is not recorded.
