@@ -1,0 +1,111 @@
+id: commonmark-js
+name: commonmark.js
+status: accepted
+checkedAt: 2026-11-04
+description: JavaScript parser and renderer for CommonMark that turns Markdown into a syntax tree and renders it to HTML or XML.
+facts:
+  - field: repository
+    value: https://github.com/commonmark/commonmark.js
+    url: https://github.com/commonmark/commonmark.js
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: John MacFarlane
+    url: https://raw.githubusercontent.com/commonmark/commonmark.js/master/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2014, John MacFarlane"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/commonmark
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://registry.npmjs.org/commonmark
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [markdown-parser]
+    url: https://github.com/commonmark/commonmark.js
+    checkedAt: 2026-11-04
+    via: page
+    quote: "CommonMark parser and renderer in JavaScript"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/commonmark/commonmark.js
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://raw.githubusercontent.com/commonmark/commonmark.js/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "of the node installation (`node_modules/commonmark/dist/`)."
+  - field: installMethod
+    value: [npm]
+    url: https://raw.githubusercontent.com/commonmark/commonmark.js/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "You can install the library using `npm`:"
+  - field: installMethod
+    value: [cdn]
+    url: https://raw.githubusercontent.com/commonmark/commonmark.js/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "You can also use the version hosted by unpkg:"
+  - field: installMethod
+    value: [bower]
+    url: https://raw.githubusercontent.com/commonmark/commonmark.js/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Alternatively, `bower install commonmark` will install"
+  - field: license
+    value: BSD-2-Clause
+    url: https://registry.npmjs.org/commonmark/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://registry.npmjs.org/commonmark/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2024-09-19
+    url: https://github.com/commonmark/commonmark.js/releases/tag/0.31.2
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmName
+    value: commonmark
+    url: https://registry.npmjs.org/commonmark/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 1570
+    url: https://api.github.com/repos/commonmark/commonmark.js
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 48
+    url: https://api.github.com/repos/commonmark/commonmark.js/contributors
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1322994
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/commonmark
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 428
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/commonmark
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 6702
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/commonmark
+    checkedAt: 2026-11-04
+    via: api
+notFound: [homepage, docs, hqCountry, pricingPage, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, renderingModes, runsAs, runtimeMin, paidEdition, reportedInstalls, pluginDirectory, forum, discord, x, mastodon, bluesky, newsletter, wikidata, mavenCoordinates]
+unreadable: []
+notes: >
+  The GitHub API reports the license as NOASSERTION (other); the LICENSE file and the npm latest version both state BSD-2-Clause, and that is the recorded license. The package is the npm package commonmark, whose latest version is 0.31.2 (2024-09-19); the 0.31.x line is the newest stable release. The npm package has uploads from 0.9.0 on 2014-11-05, before the GitHub repository was created on 2015-01-24, so firstRelease follows the oldest npm upload (0.9.0, 2014-11-05) and not the GitHub release history (0.17, 2015-01-25). The README says the library is "the JavaScript reference implementation" of CommonMark, which has a spec and a reference implementation in C; the C implementation is not recorded. The homepage is not recorded: the npm package and the README point to commonmark.org, which is the CommonMark specification site shared by all implementations, the same call as for commonmark-java. The README says the library "does not attempt to sanitize link attributes or raw HTML", and recommends the safe option or an HTML sanitizer for untrusted input. The live dingus at try.commonmark.org is a demo and is not recorded. The README lists the single-file distributions for client-side use, and the browser and Node.js are both named, so no runsAs is recorded. The unpkg route names version 0.29.3 in its example, which is not a version fact and is not recorded. The Bower route is recorded as the README states it; Bower has no registry figure here.

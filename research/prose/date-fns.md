@@ -1,0 +1,1 @@
+date-fns is a set of functions for manipulating JavaScript dates in browsers and on Node.js, written in TypeScript. It is installed from npm, where the date-fns package is the core of a pnpm monorepo that also holds related packages. The project's documentation is linked from its [README](https://github.com/date-fns/date-fns/blob/v4.4.0/README.md) and sits on date-fns.org.

@@ -1,0 +1,120 @@
+id: doctrine-dbal
+name: Doctrine DBAL
+status: accepted
+checkedAt: 2026-11-04
+description: PHP database abstraction layer with an object-oriented API for queries and for schema introspection and management.
+facts:
+  - field: homepage
+    value: https://www.doctrine-project.org/projects/dbal.html
+    url: https://www.doctrine-project.org/projects/dbal.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Powerful PHP database abstraction layer (DBAL) with many features for database schema introspection and management."
+  - field: repository
+    value: https://github.com/doctrine/dbal
+    url: https://api.github.com/repos/doctrine/dbal
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://www.doctrine-project.org/projects/doctrine-dbal/en/4.5/index.html
+    url: https://www.doctrine-project.org/projects/doctrine-dbal/en/4.5/index.html
+    checkedAt: 2026-11-04
+    via: page
+  - field: maintainer
+    value: Doctrine Project
+    url: https://github.com/doctrine/dbal/blob/4.5.x/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2006-2018 Doctrine Project"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/doctrine
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: https://repo.packagist.org/p2/doctrine/dbal.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/doctrine/dbal
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: php
+    url: https://repo.packagist.org/p2/doctrine/dbal.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtimeMin
+    value: "8.2"
+    url: https://repo.packagist.org/p2/doctrine/dbal.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: databases
+    value: [mariadb, mysql, oracle, postgres, sqlserver, sqlite]
+    url: https://www.doctrine-project.org/projects/doctrine-dbal/en/4.5/reference/introduction.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Db2 (IBM) MariaDB MySQL (Oracle) Oracle PostgreSQL SQL Server (Microsoft) SQLite"
+  - field: categories
+    value: [query-builder]
+    url: https://www.doctrine-project.org/projects/dbal.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Powerful PHP database abstraction layer (DBAL) with many features for database schema introspection and management."
+  - field: installMethod
+    value: composer
+    url: https://www.doctrine-project.org/projects/doctrine-dbal/en/4.5/reference/introduction.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "all you need is the class loader provided by Composer"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/doctrine/dbal
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/doctrine/dbal/releases/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-26
+    url: https://api.github.com/repos/doctrine/dbal/releases/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 9699
+    url: https://api.github.com/repos/doctrine/dbal
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 333
+    url: https://api.github.com/repos/doctrine/dbal/contributors?per_page=1
+    checkedAt: 2026-11-04
+    via: api
+  - field: packagistName
+    value: doctrine/dbal
+    url: https://packagist.org/packages/doctrine/dbal.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: packagistDownloads
+    value: "653608693 (total)"
+    url: https://packagist.org/packages/doctrine/dbal.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 5191
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/doctrine%2Fdbal
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 138820
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/doctrine%2Fdbal
+    checkedAt: 2026-11-04
+    via: api
+notFound: [pricingPage, hqCountry, parent, forkOf, successorOf, alternativeTo, basedOn, contentStore, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, renderingModes, runsAs, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, npmWeeklyDownloads, pypiDownloads, selfHostOption]
+unreadable: []
+notes: >
+  The category is query-builder, taken from the CSV row; the project words name a database abstraction layer. The DBAL project page lists 5.0 and 4.6 as upcoming and 4.5.0 as stable, so currentMajor is 4 and the default branch is 4.5.x. The intro states that the DBAL "can be used independently of the Doctrine Object-Relational Mapper (ORM)"; the ORM README says it "sits on top of" the DBAL, which names the software it is built on, so the ORM and Migrations records carry basedOn doctrine-dbal. Db2 is named on the vendor list but is not in the databases vocabulary, so it is noted here and left out of the databases value. firstRelease is 2011 from the oldest Packagist upload (2.1.5, 2011-11-21); the oldest GitHub release is 2.4.0 (2013). The Packagist monthly total on 2026-11-04 was 14751097, not recorded because the field keeps the total. Stars and contributors belong to the repository; the repository is the Doctrine org's DBAL package, not a monorepo. The maintainer is the Doctrine Project as the LICENSE copyright line names it; no legal entity was found on the project site.

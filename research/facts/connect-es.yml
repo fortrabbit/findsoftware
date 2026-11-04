@@ -1,0 +1,111 @@
+id: connect-es
+name: Connect for ECMAScript
+status: accepted
+checkedAt: 2026-11-04
+description: TypeScript implementation of Connect, a family of libraries for building type-safe APIs from Protocol Buffers schemas.
+facts:
+  - field: homepage
+    value: https://connectrpc.com
+    url: https://connectrpc.com/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Connect is a family of libraries for building browser and gRPC-compatible APIs"
+  - field: repository
+    value: https://github.com/connectrpc/connect-es
+    url: https://api.github.com/repos/connectrpc/connect-es
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://connectrpc.com/docs/node/getting-started/
+    url: https://github.com/connectrpc/connect-es/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Follow our 10-minute tutorial to spin up a service in Node.js"
+  - field: maintainer
+    value: The Connect Authors
+    url: https://connectrpc.com/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright © 2022–2026 The Connect Authors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/connectrpc
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/connectrpc/connect-es
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [rpc]
+    url: https://github.com/connectrpc/connect-es/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Connect implements three RPC protocols"
+  - field: runtime
+    value: [node]
+    url: https://github.com/connectrpc/connect-es/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "brings them to TypeScript, web browsers, and Node.js"
+  - field: installMethod
+    value: npm
+    url: https://connectrpc.com/docs/node/getting-started/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "We’ll use the package manager npm"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/connectrpc/connect-es
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: "2022"
+    url: https://api.github.com/repos/connectrpc/connect-es/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/connectrpc/connect-es/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-27
+    url: https://api.github.com/repos/connectrpc/connect-es/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 1829
+    url: https://api.github.com/repos/connectrpc/connect-es
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 45
+    url: https://api.github.com/repos/connectrpc/connect-es/contributors?per_page=1
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmName
+    value: "@connectrpc/connect"
+    url: https://registry.npmjs.org/@connectrpc/connect/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmWeeklyDownloads
+    value: "8367026 (2026-10-26 to 2026-11-01)"
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/@connectrpc/connect
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 28
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@connectrpc%2Fconnect
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 6
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@connectrpc%2Fconnect
+    checkedAt: 2026-11-04
+    via: api
+notFound: [runtimeMin, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, latestPrereleaseDate, lastCommitDate, packagistName, rubygemsName, crateName, pypiDownloads, maintainerType]
+unreadable: []
+notes: >
+  The repository is a monorepo: the README lists @connectrpc/connect (the core package, which the install page uses), @connectrpc/connect-web, @connectrpc/connect-node, @connectrpc/connect-fastify, @connectrpc/connect-next and @connectrpc/connect-express under Packages. Stars, contributors and the license belong to the monorepo; the npm figure is the core package @connectrpc/connect, the one the Node.js getting-started page installs, and the range sum is seven daily values for 2026-10-26 to 2026-11-01. The homepage connectrpc.com answers 200 over https; its footer reads "Copyright © 2022–2026 The Connect Authors", which is the maintainer recorded here (a community name, so the import reads the type from the name). The homepage header reads "Created by" next to a Buf logo linking to buf.build; a creator credit is no ownership statement, so no parent is recorded. The homepage footer says "We are a Cloud Native Computing Foundation sandbox project" and links Linux Foundation terms; foundation hosting is no maintainer, parent or hqCountry. The Node.js guide and the web guide name npm as the package manager and install @connectrpc/connect with @connectrpc/connect-web or @connectrpc/validate; the README's sentence "brings them to TypeScript, web browsers, and Node.js" is recorded as runtime node, and runsAs is not recorded because no page states a process model. The README gives Node.js support as "All maintained releases of Node.js (Current, Active LTS, and the Maintenance LTS release)" and browser support as "Baseline web browsers from the last 2.5 years"; both are compatibility statements, not runtimeMin, which stays out because no number is stated. The protocol statements are gRPC, gRPC-Web and the Connect protocol (the README: "Connect implements three RPC protocols"); they are kept in notes as a coined kind. The README's Ecosystem section lists validate-es, connect-query-es, connect-playwright-es, connect-swift, connect-go and others; these are separate projects and no alternativeTo, basedOn or forkOf statement names them. The Node.js guide says npm is the package manager and that yarn and pnpm are also compatible. The README says a plain HTTP server "isn't fit for production use" and points to the server plugins guide for Fastify, Next.js and Express. The README asks readers who want Connect on Bun, Deno, Vercel's Edge Runtime or Cloudflare Workers to get in touch. The README's Migrating section links MIGRATING.md for v1 to v2; the release history runs from v0.0.7 (2022-06-15) to v2.3.0 (2026-10-27), and the current major is 2 with v1.7.0 the last 1.x release. The README's status statement ("stable and follows semantic versioning") is not a field. The contributors count is the page number of the rel="last" link on the contributors endpoint with per_page=1. The README says Connect uses Protobuf-ES for Protobuf support, and the Node.js tutorial generates code with Buf; both are kept in notes as build dependencies, not fields.

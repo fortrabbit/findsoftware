@@ -1,0 +1,126 @@
+id: cycle-orm
+name: Cycle ORM
+status: accepted
+checkedAt: 2026-11-04
+description: "PHP DataMapper ORM and data modelling engine for classic and daemonized PHP applications."
+facts:
+  - field: homepage
+    value: "https://cycle-orm.dev/"
+    url: "https://cycle-orm.dev/"
+    checkedAt: 2026-11-04
+    via: page
+  - field: repository
+    value: "https://github.com/cycle/orm"
+    url: "https://api.github.com/repos/cycle/orm"
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: "https://cycle-orm.dev/docs"
+    url: "https://cycle-orm.dev/docs"
+    checkedAt: 2026-11-04
+    via: page
+  - field: firstRelease
+    value: 2019
+    url: "https://api.github.com/repos/cycle/orm/commits/37912145c807d3071feb8086f0850b4bc41f104c"
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: "Spiral Scout"
+    url: "https://github.com/cycle/orm/blob/2.x/LICENSE"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2023 Spiral Scout"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/cycle"
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: "PHP"
+    url: "https://api.github.com/repos/cycle/orm"
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: [php]
+    url: "https://github.com/cycle/orm/blob/v2.18.1/composer.json"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "\"php\": \">=8.1\""
+  - field: runtimeMin
+    value: "8.1"
+    url: "https://github.com/cycle/orm/blob/v2.18.1/composer.json"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "\"php\": \">=8.1\""
+  - field: categories
+    value: [orm]
+    url: "https://github.com/cycle/orm/blob/2.x/README.md"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Cycle is PHP DataMapper, ORM and Data Modelling engine"
+  - field: databases
+    value: [mysql, mariadb, postgres, sqlserver, sqlite]
+    url: "https://github.com/cycle/orm/blob/2.x/README.md"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "supports MySQL, MariaDB, PostgresSQL, SQLServer, SQLite"
+  - field: installMethod
+    value: composer
+    url: "https://cycle-orm.dev/docs/intro-install/current/en"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Cycle ORM can be seamlessly integrated into your project with Composer."
+  - field: currentMajor
+    value: 2
+    url: "https://api.github.com/repos/cycle/orm/releases"
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-02"
+    url: "https://api.github.com/repos/cycle/orm/releases"
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 1327 (2026-11-04)
+    url: "https://api.github.com/repos/cycle/orm"
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 34 (2026-11-04)
+    url: "https://api.github.com/repos/cycle/orm/contributors?per_page=1"
+    checkedAt: 2026-11-04
+    via: api
+  - field: packagistName
+    value: "cycle/orm"
+    url: "https://packagist.org/packages/cycle/orm.json"
+    checkedAt: 2026-11-04
+    via: api
+  - field: packagistDownloads
+    value: {total: 1056817, monthly: 41831}
+    url: "https://packagist.org/packages/cycle/orm.json"
+    checkedAt: 2026-11-04
+    via: api
+  - field: license
+    value: "MIT"
+    url: "https://api.github.com/repos/cycle/orm"
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 72
+    url: "https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/cycle%2Form"
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 107
+    url: "https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/cycle%2Form"
+    checkedAt: 2026-11-04
+    via: api
+  - field: discord
+    value: "https://discord.gg/qF3HpXhMEP"
+    url: "https://github.com/cycle/orm/blob/2.x/README.md"
+    checkedAt: 2026-11-04
+    via: page
+notFound: [hqCountry, pricingPage, endoflifeId, x, bluesky, mastodon, forum, newsletter, pluginDirectory, wikidata, runsAs, basedOn, adminUi, headlessApi, templating, i18n, paidEdition, alternativeTo, importsFrom, sso, userRoles, multisite]
+unreadable: []
+notes: >
+  The installation page's requirements list "PHP 8.0+", while composer.json at v2.18.1 requires "php": ">=8.1"; runtimeMin follows the manifest, and the annotated-schema package (cycle/annotated) is 3.x for PHP 8.0 according to that page. The README says the engine is designed to work in classic and daemonized PHP applications, and the database list is quoted as printed, "PostgresSQL". The package name and the GitHub organization are both cycle; the maintainer is Spiral Scout, the company the README names as maintainer and the LICENSE copyright names. The README links a comparison with Eloquent and Doctrine, but its link text is a label and no alternativeTo fact is recorded from it. Spiral's own integrations (spiral/cycle-bridge, yiisoft/yii-cycle, the Laravel adapter) are separate packages and carry no basedOn. The installation page lists PHP-PDO and the PDO drivers for the chosen databases as requirements. Stars, contributors and dependents belong to the cycle/orm repository, and the Cycle organization holds several extension repositories. The Discord link comes from the README badge.

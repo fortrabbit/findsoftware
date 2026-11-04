@@ -1,0 +1,115 @@
+id: django-widget-tweaks
+name: django-widget-tweaks
+status: accepted
+checkedAt: 2026-11-04
+description: Package of template tags and filters that change form field HTML attributes and CSS classes from Django templates.
+facts:
+  - field: repository
+    value: https://github.com/django-commons/django-widget-tweaks
+    url: https://github.com/django-commons/django-widget-tweaks
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: https://pypi.org/pypi/django-widget-tweaks/json
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: Mikhail Korobov
+    url: https://github.com/django-commons/django-widget-tweaks/blob/1.5.1/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2011-2015 Mikhail Korobov"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/django-commons/django-widget-tweaks/blob/1.5.1/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2011-2015 Mikhail Korobov"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/django-commons
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: Python
+    url: https://github.com/django-commons/django-widget-tweaks
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: python
+    url: https://github.com/django-commons/django-widget-tweaks
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtimeMin
+    value: "3.9"
+    url: https://pypi.org/pypi/django-widget-tweaks/json
+    checkedAt: 2026-11-04
+    via: api
+    quote: ">=3.9"
+  - field: categories
+    value: [forms]
+    url: https://github.com/django-commons/django-widget-tweaks/blob/1.5.1/README.rst
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Tweak the form field rendering in templates, not in python-level form definitions."
+  - field: installMethod
+    value: pip
+    url: https://github.com/django-commons/django-widget-tweaks/blob/1.5.1/README.rst
+    checkedAt: 2026-11-04
+    via: page
+    quote: "You can get Django Widget Tweaks by using pip"
+  - field: license
+    value: MIT
+    url: https://github.com/django-commons/django-widget-tweaks
+    checkedAt: 2026-11-04
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/django-commons/django-widget-tweaks
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/django-commons/django-widget-tweaks/releases/tag/1.5.1
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-01-02
+    url: https://pypi.org/pypi/django-widget-tweaks/json
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 2160
+    url: https://github.com/django-commons/django-widget-tweaks
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 35
+    url: https://github.com/django-commons/django-widget-tweaks
+    checkedAt: 2026-11-04
+    via: api
+  - field: pypiName
+    value: django-widget-tweaks
+    url: https://pypi.org/pypi/django-widget-tweaks/json
+    checkedAt: 2026-11-04
+    via: api
+  - field: pypiDownloads
+    value: {lastWeek: 366959, lastMonth: 1248593}
+    url: https://pypistats.org/api/packages/django-widget-tweaks/recent
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 36
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-widget-tweaks
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 9574
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-widget-tweaks
+    checkedAt: 2026-11-04
+    via: api
+notFound: [homepage, docs, basedOn, hqCountry, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, pricingPage, paidEdition, hostedOffering, forum, discord, subreddit, bluesky, mastodon, x, newsletter, endoflifeId, usageShare, npmName, httpArchiveSites, pluginDirectory]
+unreadable: []
+notes: >
+  No homepage and no docs site: the README is the only documentation, and the PyPI and repository pages name no site of their own. The project moved from the jazzband organization to django-commons; the jazzband URLs redirect, the README still carries jazzband badges, and the PyPI homepage names jazzband. The record follows the current repository and organization. The LICENSE copyright line names Mikhail Korobov; the setup.py author is the same person. The README calls the package a Django app only through the phrases "This app provides" and "INSTALLED_APPS", and never says it extends Django, so basedOn is left out and the reviewer decides. The package takes its runtime minimum from setup.py python_requires, which the PyPI requires_python field repeats. latestReleaseDate is the registry date: the 1.5.1 files on PyPI were uploaded on 2026-01-02, while the GitHub release object for 1.5.1 is dated 2025-04-25; the reviewer decides which one the register shows. The PyPI JSON carries no download counts, so pypiDownloads comes from pypistats.org. firstRelease is the oldest PyPI upload, 0.1 on 2011-01-12. The template tags the README shows (render_field, attr, add_class) are code, not a sentence, so no templating fact is recorded. The record's stars and contributors belong to the repository.

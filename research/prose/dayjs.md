@@ -1,0 +1,1 @@
+Day.js is a JavaScript date and time library whose API the project describes as largely compatible with Moment.js. The documentation says it was designed to work both in the browser and in Node.js; in the browser it can be loaded from a CDN provider. Locales and plugins are separate modules that are added only when used.

@@ -1,0 +1,126 @@
+id: djot
+name: Djot
+status: accepted
+checkedAt: 2026-11-04
+description: Light markup syntax derived from CommonMark, with implementations in several languages.
+facts:
+  - field: homepage
+    value: https://djot.net
+    url: https://djot.net/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Djot is a light markup syntax."
+  - field: repository
+    value: https://github.com/jgm/djot
+    url: https://github.com/jgm/djot
+    checkedAt: 2026-11-04
+    via: api
+  - field: forum
+    value: https://github.com/jgm/djot/discussions
+    url: https://djot.net/
+    checkedAt: 2026-11-04
+    via: page
+  - field: firstRelease
+    value: 2022
+    url: https://github.com/jgm/djot/releases/tag/0.1.0
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: John MacFarlane
+    url: https://github.com/jgm/djot/blob/main/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (C) 2022 John MacFarlane"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/jgm/djot/blob/main/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (C) 2022 John MacFarlane"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/jgm
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [markup]
+    url: https://djot.net/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Djot is a light markup syntax."
+  - field: installMethod
+    value: npm
+    url: https://djot.net/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "To install the parser locally using npm"
+  - field: runtime
+    value: node
+    url: https://registry.npmjs.org/@djot/djot/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtimeMin
+    value: "17"
+    url: https://registry.npmjs.org/@djot/djot/latest
+    checkedAt: 2026-11-04
+    via: api
+    quote: ">=17.0.0"
+  - field: license
+    value: MIT
+    url: https://github.com/jgm/djot
+    checkedAt: 2026-11-04
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/jgm/djot
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://github.com/jgm/djot/releases/tag/0.2.0
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2024-12-19
+    url: https://registry.npmjs.org/@djot/djot/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 2056
+    url: https://github.com/jgm/djot
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 29
+    url: https://github.com/jgm/djot
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmName
+    value: "@djot/djot"
+    url: https://registry.npmjs.org/@djot/djot/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmWeeklyDownloads
+    value: 7702
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/@djot%2fdjot
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 3
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@djot%2fdjot
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 1
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@djot%2fdjot
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://github.com/jgm/djot/blob/main/doc/syntax.md
+    url: https://djot.net/
+    checkedAt: 2026-11-04
+    via: page
+notFound: [basedOn, importsFrom, hqCountry, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, pricingPage, paidEdition, hostedOffering, discord, subreddit, bluesky, mastodon, x, newsletter, endoflifeId, usageShare, pypiName, pluginDirectory, language]
+unreadable: []
+notes: >
+  The repository holds the syntax description, cheatsheet, editor tooling and a web folder with the sandbox page, but no parser; the parser the homepage installs is the npm package @djot/djot, whose registry entry names no repository, so its source is not confirmed here and the reviewer decides whether the repository or the package is the record's source. The homepage lists implementations in JavaScript, Lua, Prolog, Rust, Go and PHP, and the repository README lists seven, each published separately; none is recorded as a fact of this record. The homepage says the syntax "isn't completely stable yet" and that the official JavaScript implementation "is complete and ready for use". The GitHub repository language reads Lua, which is the pandoc filter in doc/, so no language fact is recorded. The category markup has no entry in the import's category map, so the reviewer decides which category the register shows. The npm figure is the package the homepage installs, summed over 2026-10-26 to 2026-11-01. The npm package's latest version is 0.3.2 and the repository's latest GitHub release is 0.2.0; both are major 0. The GitHub release for 0.1.0 is dated 2022-07-30, after the repository was created on 2022-07-11. The docs link is the syntax description the homepage links, read from the repository. The homepage's "Discussion forum" link goes to the repository's discussions. The GitHub statistics belong to the repository, which holds the syntax, not the npm package. The homepage shows converting a GitHub-flavored Markdown document to djot with the JavaScript implementation and pandoc; GitHub-flavored Markdown has no record, so no importsFrom is recorded.

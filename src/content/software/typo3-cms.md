@@ -23,6 +23,7 @@ hosting:
 runtimeMin: php 8.2
 basedOn:
   - symfony
+  - doctrine-dbal
 contentStore:
   - database
 databases:

@@ -1,0 +1,136 @@
+id: codeceptjs
+name: CodeceptJS
+status: accepted
+checkedAt: 2026-11-04
+description: End-to-end testing framework that writes tests as user actions and runs them through Playwright, WebDriver, Puppeteer or Appium.
+facts:
+  - field: homepage
+    value: https://codecept.io/
+    url: https://codecept.io/
+    checkedAt: 2026-11-04
+    via: page
+  - field: repository
+    value: https://github.com/codeceptjs/CodeceptJS
+    url: https://github.com/codeceptjs/CodeceptJS
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://codecept.io/quickstart/
+    url: https://codecept.io/quickstart/
+    checkedAt: 2026-11-04
+    via: page
+  - field: maintainer
+    value: DavertMik
+    url: https://github.com/codeceptjs/CodeceptJS/blob/4.x/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2015 DavertMik"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/codeceptjs
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://registry.npmjs.org/codeceptjs
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [testing]
+    url: https://github.com/codeceptjs/CodeceptJS/blob/4.x/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "CodeceptJS is a new testing framework for end-to-end testing with WebDriver (or others)."
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/codeceptjs/CodeceptJS
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://github.com/codeceptjs/CodeceptJS/blob/4.x/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "CodeceptJS 4.2 requires Node.js `22.12.0` or later."
+  - field: runtimeMin
+    value: "Node.js 22.12"
+    url: https://github.com/codeceptjs/CodeceptJS/blob/4.2.2/package.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: installMethod
+    value: [docker]
+    url: https://codecept.io/docker/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "CodeceptJS has an official docker image based on Playwright image."
+  - field: importsFrom
+    value: [cypress]
+    url: https://codecept.io/migrate-from-cypress
+    checkedAt: 2026-11-04
+    via: page
+    quote: "The migrate-cypress-to-codeceptjs skill in the CodeceptJS skills bundle does the whole port"
+  - field: successorOf
+    value: codeception
+    url: https://github.com/codeceptjs/CodeceptJS/blob/4.x/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "CodeceptJS is a successor of [Codeception](http://codeception.com), a popular full-stack testing framework for PHP."
+  - field: license
+    value: MIT
+    url: https://github.com/codeceptjs/CodeceptJS
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://github.com/codeceptjs/CodeceptJS/releases/tag/4.2.2
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-20
+    url: https://github.com/codeceptjs/CodeceptJS/releases/tag/4.2.2
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmName
+    value: codeceptjs
+    url: https://registry.npmjs.org/codeceptjs/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 4250
+    url: https://api.github.com/repos/codeceptjs/CodeceptJS
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 394
+    url: https://api.github.com/repos/codeceptjs/CodeceptJS/contributors
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmWeeklyDownloads
+    value: 463860
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/codeceptjs
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 196
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/codeceptjs
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 1377
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/codeceptjs
+    checkedAt: 2026-11-04
+    via: api
+  - field: forum
+    value: https://codecept.discourse.group
+    url: https://github.com/codeceptjs/CodeceptJS/blob/4.x/README.md
+    checkedAt: 2026-11-04
+    via: page
+  - field: x
+    value: https://x.com/codeceptjs
+    url: https://codecept.io/
+    checkedAt: 2026-11-04
+    via: page
+notFound: [hqCountry, pricingPage, parent, forkOf, wikidata, basedOn, alternativeTo, runsAs, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, renderingModes, paidEdition, reportedInstalls, pluginDirectory, discord, mastodon, bluesky, newsletter, regions, selfHostOption, sourcePublic]
+unreadable: []
+notes: >
+  The npm install command is a shell line on the installation and quickstart pages, and no sentence on those pages names npm, so installMethod npm is not recorded; the npm package is named by npmName. The README says the project is based on Mocha ("Based on Mocha testing framework"); Mocha has no record, so basedOn is left empty. The homepage says "Node 20+" and the installation page says "CodeceptJS 4.2 requires Node.js 22.12 or newer"; runtimeMin follows the engines field of the 4.2.2 tag. The helpers Playwright, Puppeteer, WebDriver and Appium are drivers the framework calls, not parents, so they are not basedOn. The migration guides name Cypress, Java Selenium, TestCafe and Protractor (only Cypress has a record, recorded as importsFrom; TestCafe, Protractor and Selenium Java have none). The runtime sentences about continuous integration state where tests run in a pipeline, not a process model, so runsAs is not recorded. The README copyright line reads "MIT © CodeceptJS Team", while LICENSE names DavertMik; the LICENSE name is the maintainer. Explorbot (a self-testing agent powered by CodeceptJS) and Testomat.io (a test management product by the CodeceptJS authors) are separate products and are not recorded as hosted offerings. The Slack chat link (bit.ly) is not a field. The npm figure covers the codeceptjs package, the period is 2026-10-26 to 2026-11-01. The dependent counts are ecosyste.ms counts for the npm package on 2026-11-04. The footer Privacy and Terms links point to "#", so no legal name or country is recorded.

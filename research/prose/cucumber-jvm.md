@@ -1,0 +1,1 @@
+Cucumber JVM runs automated tests written in plain language for projects on the Java Virtual Machine. Projects add it as a dependency from Maven Central, and the [installation guide](https://cucumber.io/docs/installation/java/) covers both Maven and Gradle.

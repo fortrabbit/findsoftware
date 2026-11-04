@@ -1,0 +1,105 @@
+id: conform
+name: Conform
+status: accepted
+checkedAt: 2026-11-04
+description: Type-safe form validation library that progressively enhances HTML forms, with React bindings and support for Remix and Next.js.
+facts:
+  - field: homepage
+    value: https://conform.guide
+    url: https://conform.guide/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Conform is a type-safe form validation library"
+  - field: repository
+    value: https://github.com/edmundhung/conform
+    url: https://api.github.com/repos/edmundhung/conform
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://conform.guide/installation
+    url: https://conform.guide/installation
+    checkedAt: 2026-11-04
+    via: page
+    quote: "To use Conform, you need to install it along with the schema library you want to support"
+  - field: maintainer
+    value: Edmund Hung
+    url: https://github.com/edmundhung/conform/blob/v1.21.3/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2022 Edmund Hung"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/edmundhung
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/edmundhung/conform
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [forms]
+    url: https://conform.guide/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Conform is a type-safe form validation library"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/edmundhung/conform
+    checkedAt: 2026-11-04
+    via: api
+  - field: basedOn
+    value: [react]
+    url: https://registry.npmjs.org/@conform-to/react/latest
+    checkedAt: 2026-11-04
+    via: api
+    quote: "Conform view adapter for react"
+  - field: firstRelease
+    value: "2022"
+    url: https://api.github.com/repos/edmundhung/conform/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/edmundhung/conform/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-31
+    url: https://api.github.com/repos/edmundhung/conform/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 2587
+    url: https://api.github.com/repos/edmundhung/conform
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 83
+    url: https://api.github.com/repos/edmundhung/conform/contributors?per_page=1
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmName
+    value: "@conform-to/react"
+    url: https://registry.npmjs.org/@conform-to/react/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmWeeklyDownloads
+    value: "415396 (2026-10-26 to 2026-11-01)"
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/@conform-to/react
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 6
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@conform-to%2Freact
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 36
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@conform-to%2Freact
+    checkedAt: 2026-11-04
+    via: api
+notFound: [runtime, runtimeMin, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, installMethod, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, latestPrereleaseDate, lastCommitDate, packagistName, rubygemsName, crateName, pypiDownloads, maintainerType]
+unreadable: []
+notes: >
+  The homepage conform.guide answers 200 over https; its overview names the project as a type-safe form validation library and the README gives the same description. The repository's README is short and points to the website for documentation. The install page shows npm commands for @conform-to/react with the schema helper packages (@conform-to/zod, @conform-to/valibot, @conform-to/yup) but no sentence names npm as the route, so no installMethod is recorded; the reviewer may decide a command-only route counts. The @conform-to/react package is the React view adapter; its npm description is "Conform view adapter for react", and the peer dependencies are react and react-dom 18 or higher. The overview says Conform gives "full support for server frameworks like Remix and Next.js" and the integration pages list React Router and Next.js; these are support statements, not basedOn. basedOn react rests on the npm description of the package the installation page names ("Conform view adapter for react"). The repository's own README title is Conform; the npm package is @conform-to/react and the registry figure comes from that package, the one the installation page names with the core library. The weekly npm figure is the sum of the seven daily values from the range endpoint for 2026-10-26 to 2026-11-01. The ecosyste.ms counts are for the same npm package. The maintainer is the LICENSE copyright holder Edmund Hung; the repository owner is a user account. The license is MIT in the LICENSE file, the npm package and the GitHub detection. The firstRelease year is from the first GitHub release v0.1.0 (2022-07-04); the repository was created 2022-04-03. The release count shows tags and releases up to v1.21.3 (2026-10-31); the current major is 1. The Standard Schema support, the Zod, Valibot and Yup helpers, and the React Router and Next.js integrations are validation and integration statements, kept in notes as coined kinds. The homepage's "Future APIs" menu lists planned APIs; they are not recorded.

@@ -1,0 +1,1 @@
+Cytoscape.js is a graph theory library for modeling networks and drawing them as graphs. Its README describes two settings for it: server-side analysis in a Node.js app, and an interactive graph in a user interface. It is installed with npm or loaded from a CDN, and its maintainer is The Cytoscape Consortium, the name the LICENSE copyright line gives.

@@ -1,0 +1,112 @@
+id: dompurify
+name: DOMPurify
+status: accepted
+checkedAt: 2026-11-04
+description: DOM-based XSS sanitizer that cleans HTML, MathML and SVG markup in the browser or on Node.js.
+facts:
+  - field: homepage
+    value: https://cure53.de/purify
+    url: https://cure53.de/purify
+    checkedAt: 2026-11-04
+    via: page
+    quote: "DOMPurify Demo"
+  - field: repository
+    value: https://github.com/cure53/DOMPurify
+    url: https://api.github.com/repos/cure53/DOMPurify
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: Dr.-Ing. Mario Heiderich, Cure53
+    url: https://github.com/cure53/DOMPurify/blob/main/package.json
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Dr.-Ing. Mario Heiderich, Cure53"
+  - field: hqCountry
+    value: DE
+    url: https://cure53.de/impressum.php
+    checkedAt: 2026-11-04
+    via: page
+    quote: "D 10629 Berlin"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/cure53
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://api.github.com/repos/cure53/DOMPurify/git/ref/tags/v0.3
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [html-sanitizer]
+    url: https://github.com/cure53/DOMPurify/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "DOM-only, super-fast, uber-tolerant XSS sanitizer for HTML, MathML and SVG"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/cure53/DOMPurify
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: node
+    url: https://github.com/cure53/DOMPurify/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "DOMPurify technically also works server-side with Node.js."
+  - field: license
+    value: MPL-2.0
+    url: https://github.com/cure53/DOMPurify/blob/main/package.json
+    checkedAt: 2026-11-04
+    via: page
+    quote: "(MPL-2.0 OR Apache-2.0)"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/cure53/DOMPurify/blob/main/package.json
+    checkedAt: 2026-11-04
+    via: page
+    quote: "(MPL-2.0 OR Apache-2.0)"
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/cure53/DOMPurify/releases/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-12
+    url: https://api.github.com/repos/cure53/DOMPurify/releases/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 17503
+    url: https://api.github.com/repos/cure53/DOMPurify
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 125
+    url: https://api.github.com/repos/cure53/DOMPurify/contributors?per_page=1
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmName
+    value: dompurify
+    url: https://registry.npmjs.org/dompurify/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmWeeklyDownloads
+    value: "95817333 (2026-10-26 to 2026-11-01)"
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/dompurify
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 1705
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/dompurify
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 56633
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/dompurify
+    checkedAt: 2026-11-04
+    via: api
+notFound: [pricingPage, parent, forkOf, successorOf, alternativeTo, basedOn, contentStore, databases, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, renderingModes, runsAs, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, newsletter, mastodon, bluesky, x, wikidata, endoflifeId, packagistName, packagistDownloads, pypiDownloads, docs, selfHostOption, installMethod]
+unreadable: []
+notes: >
+  The license is one dual statement: package.json and the README badge say "(MPL-2.0 OR Apache-2.0)", the repository LICENSE file is Apache-2.0 (GitHub detects Apache-2.0) and LICENSE-MPL carries the Mozilla text; the statement is recorded as two license entries, MPL-2.0 and Apache-2.0. The README says the library runs "as JavaScript" in all modern browsers and "works server-side with Node.js" through jsdom; both are stated, so runtime is node and no runsAs is recorded. No installMethod is recorded: the README sentence "Just include DOMPurify on your website." names no route, the script tags for dist/purify.js and dist/purify.min.js appear only in code blocks under headings, and the npm install route appears only as shell commands; the README's "We support npm officially" sits under Development and contributing and covers building the repository. npmWeeklyDownloads is the sum of the daily figures from 2026-10-26 to 2026-11-01 (api.npmjs.org range endpoint), not the last-week point endpoint. The 2.x branch is kept for MSIE; the 2.5.9 release (2026-03-05) is no current major, so currentMajor is 3. The maintainer follows package.json: the imprint at cure53.de names Dr.-Ing. Mario Heiderich as operator, trading as Cure53, at Wilmersdorfer Str. 106, Berlin, with no legal form given; the hqCountry is taken from that address. The dependent counts are ecosyste.ms figures for the npm package. The README security mailing list announces security-critical releases only; it is no newsletter, so no newsletter fact is recorded. The GitHub repository language is JavaScript; the CSV row says TypeScript, which the README does not state. The README says server-side use needs a DOM, that jsdom is the usual choice, and that happy-dom is not considered safe for it; the README also says legacy browsers such as MSIE get no sanitizing ("It simply does nothing"), names 2.5.9 as the latest version supporting MSIE and points to the 2.x branch for security updates compatible with MSIE.

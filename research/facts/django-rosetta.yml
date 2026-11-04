@@ -1,0 +1,139 @@
+id: django-rosetta
+name: django-rosetta
+status: accepted
+checkedAt: 2026-11-04
+description: Django application for translating a project's gettext catalogs in the browser.
+facts:
+  - field: repository
+    value: https://github.com/mbi/django-rosetta
+    url: https://github.com/mbi/django-rosetta
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://django-rosetta.readthedocs.io/
+    url: https://django-rosetta.readthedocs.io/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Rosetta is a Django application that eases the translation process of your Django projects."
+  - field: basedOn
+    value: django
+    url: https://django-rosetta.readthedocs.io/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Rosetta is a Django application that eases the translation process of your Django projects."
+  - field: firstRelease
+    value: 2011
+    url: https://pypi.org/pypi/django-rosetta/json
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: Marco Bonetti
+    url: https://github.com/mbi/django-rosetta/blob/v0.10.3/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2008-2023 Marco Bonetti"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/mbi/django-rosetta/blob/v0.10.3/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2008-2023 Marco Bonetti"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/mbi
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: Python
+    url: https://github.com/mbi/django-rosetta
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: python
+    url: https://github.com/mbi/django-rosetta
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [translation]
+    url: https://django-rosetta.readthedocs.io/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "eases the translation process of your Django projects"
+  - field: adminUi
+    value: yes, translation editor in the browser
+    url: https://django-rosetta.readthedocs.io/usage.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Select a file and translate each untranslated message."
+  - field: userRoles
+    value: yes, administrator only
+    url: https://django-rosetta.readthedocs.io/installation.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "access to the application is restricted to the administrator user only"
+  - field: userRoles
+    value: yes, translators group
+    url: https://django-rosetta.readthedocs.io/installation.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Create a 'translators' group in your admin interface"
+  - field: userRoles
+    value: yes, per-language translator groups
+    url: https://django-rosetta.readthedocs.io/settings.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Set to True to enable language-specific groups, which can be used to give different translators access to different languages."
+  - field: license
+    value: MIT
+    url: https://github.com/mbi/django-rosetta
+    checkedAt: 2026-11-04
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/mbi/django-rosetta
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://github.com/mbi/django-rosetta/releases/tag/v0.10.3
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2025-12-07
+    url: https://github.com/mbi/django-rosetta/releases/tag/v0.10.3
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 1154
+    url: https://github.com/mbi/django-rosetta
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 72
+    url: https://github.com/mbi/django-rosetta
+    checkedAt: 2026-11-04
+    via: api
+  - field: pypiName
+    value: django-rosetta
+    url: https://pypi.org/pypi/django-rosetta/json
+    checkedAt: 2026-11-04
+    via: api
+  - field: pypiDownloads
+    value: {lastWeek: 47609, lastMonth: 164675}
+    url: https://pypistats.org/api/packages/django-rosetta/recent
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 7
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-rosetta
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 1206
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-rosetta
+    checkedAt: 2026-11-04
+    via: api
+notFound: [homepage, hqCountry, parent, forkOf, successorOf, alternativeTo, contentStore, databases, headlessApi, templating, i18n, multisite, livePreview, sso, importsFrom, renderingModes, runsAs, runtimeMin, installMethod, pricingPage, paidEdition, hostedOffering, forum, discord, subreddit, bluesky, mastodon, x, newsletter, endoflifeId, usageShare, npmName, httpArchiveSites, pluginDirectory]
+unreadable: []
+notes: >
+  No homepage: the repository's homepage field is empty and the PyPI page links only the repository; the README links the documentation on Read the Docs, which is recorded as docs. installMethod is left out: the installation page names pip only in a shell command, and a command is no quote; the page's own sentence says Rosetta is installed by adding one entry to INSTALLED_APPS and one line to urls.py. The README and docs list automatic translation through DeepL, OpenAI and Google Translate; these are features of the editor, not fields of the record. The repository's default branch is develop; the tagged release is v0.10.3. The README's version notes say Rosetta requires Django 4.2 or later from 0.10.0, which is a dependency statement and is not recorded. Classifiers list Python 3.9 to 3.12, but setup.py names no python_requires, so runtimeMin is left out. The maintainer is the LICENSE copyright holder and the setup.py author. The 0.x line is the only line: currentMajor takes the major 0 and the reviewer decides whether a pre-1.0 major belongs in the field. The PyPI JSON carries no download counts, so pypiDownloads comes from pypistats.org. firstRelease is the oldest PyPI upload, 0.6.2 on 2011-06-16, the same day as the GitHub repository's creation.

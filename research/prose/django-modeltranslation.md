@@ -1,0 +1,1 @@
+django-modeltranslation adds translated fields to existing Django models without changing their class definitions. Models are registered for translation in a translation module of each app, in the same way the Django admin registers model classes, and the translation fields sit in the same table as the originals. It is fully integrated into the Django admin backend.

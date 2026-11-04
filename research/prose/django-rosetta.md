@@ -1,0 +1,1 @@
+Rosetta is a Django application that lets a project's translators edit its gettext catalogs in the browser. Access is limited to the administrator user, with a translators group for users who may translate, and optional per-language groups.

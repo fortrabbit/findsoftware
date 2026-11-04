@@ -1,0 +1,1 @@
+django-parler is a Django package for translating model fields. Translated fields are stored in a separate table, with automatic fallback to other languages. It is maintained on GitHub under the django-parler organization.

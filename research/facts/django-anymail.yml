@@ -1,0 +1,118 @@
+id: django-anymail
+name: Anymail
+status: accepted
+checkedAt: 2026-11-04
+description: Django email integration that sends and receives mail through transactional email service providers.
+facts:
+  - field: homepage
+    value: https://anymail.dev
+    url: https://anymail.dev
+    checkedAt: 2026-11-04
+    via: page
+  - field: repository
+    value: https://github.com/anymail/django-anymail
+    url: https://api.github.com/repos/anymail/django-anymail
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://anymail.dev/en/stable/
+    url: https://anymail.dev/en/stable/
+    checkedAt: 2026-11-04
+    via: page
+  - field: firstRelease
+    value: 2016
+    url: https://pypi.org/pypi/django-anymail/json
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: Anymail Contributors
+    url: https://github.com/anymail/django-anymail/blob/main/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2016-2024, Anymail Contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/anymail
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [transactional-email]
+    url: https://github.com/anymail/django-anymail/blob/main/README.rst
+    checkedAt: 2026-11-04
+    via: page
+    quote: "using your choice of transactional email service providers (ESPs)"
+  - field: basedOn
+    value: django
+    url: https://github.com/anymail/django-anymail/blob/main/README.rst
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Anymail lets you send and receive email in Django"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/anymail/django-anymail
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: python
+    url: https://raw.githubusercontent.com/anymail/django-anymail/v15.2/pyproject.toml
+    checkedAt: 2026-11-04
+    via: page
+    quote: 'requires-python = ">=3.10"'
+  - field: runtimeMin
+    value: "3.10"
+    url: https://raw.githubusercontent.com/anymail/django-anymail/v15.2/pyproject.toml
+    checkedAt: 2026-11-04
+    via: page
+    quote: 'requires-python = ">=3.10"'
+  - field: installMethod
+    value: pip
+    url: https://github.com/anymail/django-anymail/blob/main/README.rst
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Install Anymail from PyPI"
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/anymail/django-anymail/blob/main/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "BSD 3-Clause License"
+  - field: currentMajor
+    value: 15
+    url: https://api.github.com/repos/anymail/django-anymail/releases/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-05
+    url: https://api.github.com/repos/anymail/django-anymail/releases/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 1915
+    url: https://api.github.com/repos/anymail/django-anymail
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 69
+    url: https://api.github.com/repos/anymail/django-anymail/contributors
+    checkedAt: 2026-11-04
+    via: api
+  - field: pypiName
+    value: django-anymail
+    url: https://pypi.org/pypi/django-anymail/json
+    checkedAt: 2026-11-04
+    via: api
+  - field: pypiDownloads
+    value: 858181 (last week)
+    url: https://pypistats.org/api/packages/django-anymail/recent
+    checkedAt: 2026-11-04
+    via: api
+  - field: forum
+    value: https://github.com/anymail/django-anymail/discussions
+    url: https://anymail.dev/en/stable/help/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "ask a question in the GitHub Anymail discussions forum"
+notFound: [pricingPage, paidEdition, hostedOffering, selfHostOption, headlessApi, i18n, sso, userRoles, adminUi, templating, databases, renderingModes, runsAs, pluginDirectory, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, latestPrereleaseDate, hqCountry, parent, forkOf, successorOf, alternativeTo, wikidata, dockerPulls, reportedInstalls]
+unreadable: []
+notes: >
+  Boundary ruling applied (Frank, wave 57 rulings): accepted, because the project's own quickstart shows a Django project sending mail through it: the regular Django email functions send through the chosen ESP once the backend is set in settings. The project's README says the webhooks of each ESP connect to Django signals, which is the inbound wiring a site uses. The ESPs it names (Amazon SES, Brevo, Mailgun and others) are third-party hosted services that the library calls; Postal is named as a self-hosted ESP, and its own service is not part of this record. The PyPI packages name the mail backends as extras, for example pip install "django-anymail[mailgun]", and the quickstart shows that form. The latest stable release v15.2 is published on 2026-09-05; the PyPI 15.2 upload is the same day. The first release is version 0.1.dev1 of 2016-03-10, a development version tag, which sets firstRelease. The docs and README name Django 6.1 and 6.0 settings forms; those are not recorded as fields. The stars and contributors belong to the single package repository. The maintainer is the copyright holder named in the LICENSE line, Anymail Contributors, a project label with no legal form.

@@ -1,0 +1,96 @@
+id: commonmark-java
+name: commonmark-java
+status: accepted
+checkedAt: 2026-11-04
+description: Java library that parses CommonMark Markdown into a syntax tree and renders it to HTML or Markdown.
+facts:
+  - field: repository
+    value: https://github.com/commonmark/commonmark-java
+    url: https://github.com/commonmark/commonmark-java
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://www.javadoc.io/doc/org.commonmark/commonmark
+    url: https://github.com/commonmark/commonmark-java
+    checkedAt: 2026-11-04
+    via: page
+  - field: maintainer
+    value: Robin Stocker
+    url: https://raw.githubusercontent.com/commonmark/commonmark-java/main/LICENSE.txt
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2015, Robin Stocker"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/commonmark
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://github.com/commonmark/commonmark-java/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [markdown-parser]
+    url: https://github.com/commonmark/commonmark-java
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Java library for parsing and rendering CommonMark (Markdown)"
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/commonmark/commonmark-java
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/commonmark/commonmark-java
+    checkedAt: 2026-11-04
+    via: page
+    quote: "The library is supported on Java 11 and later."
+  - field: runtimeMin
+    value: "Java 11"
+    url: https://github.com/commonmark/commonmark-java
+    checkedAt: 2026-11-04
+    via: page
+    quote: "The library is supported on Java 11 and later."
+  - field: installMethod
+    value: [Maven dependencies]
+    url: https://raw.githubusercontent.com/commonmark/commonmark-java/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Coordinates for core library (see all on [Maven Central]):"
+  - field: mavenCoordinates
+    value: org.commonmark:commonmark
+    url: https://raw.githubusercontent.com/commonmark/commonmark-java/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Coordinates for core library (see all on [Maven Central]):"
+  - field: license
+    value: BSD-2-Clause
+    url: https://api.github.com/repos/commonmark/commonmark-java
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://github.com/commonmark/commonmark-java/releases/tag/commonmark-parent-0.32.0
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-01
+    url: https://github.com/commonmark/commonmark-java/releases/tag/commonmark-parent-0.32.0
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 2701
+    url: https://api.github.com/repos/commonmark/commonmark-java
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 55
+    url: https://api.github.com/repos/commonmark/commonmark-java/contributors
+    checkedAt: 2026-11-04
+    via: api
+notFound: [homepage, hqCountry, pricingPage, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, renderingModes, runsAs, paidEdition, reportedInstalls, npmName, dependentPackages, dependentRepos, pluginDirectory, forum, discord, x, mastodon, bluesky, newsletter, wikidata]
+unreadable: []
+notes: >
+  The repository is a monorepo: its releases are tagged commonmark-parent-<version>, and the core artifact org.commonmark:commonmark shares that version (0.32.0), so the latest release is the parent tag. The GitHub release history begins with commonmark-parent-0.1.0 on 2015-08-21, which gives firstRelease. The project is a 0.x line; the README says the API "is not considered stable yet and may break between minor releases", and currentMajor is recorded as 0 from the 0.32.0 tag. The README says the project "started out as a port of commonmark.js" (commonmark-js is a candidate in this wave, a port is not a stated basedOn and is not recorded as forkOf). The README gives the module names for Java 9 and the extension artifacts (tables, strikethrough, autolink, front matter, image attributes, task list items). It says the library "works on Android too, but that is on a best-effort basis", and the Android minimum API level is 24. The README's "Used by" list names Quarkus Roq, Lucee, Atlassian and the OpenJDK module, and the repository is credited to Atlassian as the initial developer; those are not recorded. The repository has no homepage on GitHub; commonmark.org is the CommonMark specification site and is not the library's own site. The GitHub API lists the license as BSD-2-Clause and the LICENSE file names Robin Stocker as copyright holder. The Maven Central search reports no download figure, so none is recorded. The spec compliance (CommonMark) and HTML or Markdown output formats are kept in notes, not fields.

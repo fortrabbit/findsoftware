@@ -1,0 +1,126 @@
+id: doctrine-migrations
+name: Doctrine Migrations
+status: accepted
+checkedAt: 2026-11-04
+description: PHP library for versioning a database schema and deploying changes to it.
+facts:
+  - field: homepage
+    value: https://www.doctrine-project.org/projects/migrations.html
+    url: https://www.doctrine-project.org/projects/migrations.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "PHP Doctrine Migrations project offer additional functionality"
+  - field: repository
+    value: https://github.com/doctrine/migrations
+    url: https://api.github.com/repos/doctrine/migrations
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://www.doctrine-project.org/projects/doctrine-migrations/en/3.9/index.html
+    url: https://www.doctrine-project.org/projects/doctrine-migrations/en/3.9/index.html
+    checkedAt: 2026-11-04
+    via: page
+  - field: maintainer
+    value: Doctrine Project
+    url: https://github.com/doctrine/migrations/blob/3.9.x/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2006-2018 Doctrine Project"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/doctrine
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://repo.packagist.org/p2/doctrine/migrations.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [migrations]
+    url: https://www.doctrine-project.org/projects/migrations.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "for versioning your database schema and easily deploying changes to it"
+  - field: basedOn
+    value: doctrine-dbal
+    url: https://www.doctrine-project.org/projects/doctrine-migrations/en/3.9/reference/introduction.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "offers additional functionality on top of the DBAL and ORM"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/doctrine/migrations
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: php
+    url: https://repo.packagist.org/p2/doctrine/migrations.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtimeMin
+    value: "8.1"
+    url: https://repo.packagist.org/p2/doctrine/migrations.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: installMethod
+    value: composer
+    url: https://www.doctrine-project.org/projects/doctrine-migrations/en/3.9/reference/introduction.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "installing it with Composer"
+  - field: installMethod
+    value: phar
+    url: https://www.doctrine-project.org/projects/doctrine-migrations/en/3.9/reference/introduction.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "by downloading the latest PHAR from the releases page on GitHub"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/doctrine/migrations
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/doctrine/migrations/releases/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-04
+    url: https://api.github.com/repos/doctrine/migrations/releases/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 4759
+    url: https://api.github.com/repos/doctrine/migrations
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 201
+    url: https://api.github.com/repos/doctrine/migrations/contributors?per_page=1
+    checkedAt: 2026-11-04
+    via: api
+  - field: packagistName
+    value: doctrine/migrations
+    url: https://packagist.org/packages/doctrine/migrations.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: packagistDownloads
+    value: "240167043 (total)"
+    url: https://packagist.org/packages/doctrine/migrations.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 454
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/doctrine%2Fmigrations
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 31601
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/doctrine%2Fmigrations
+    checkedAt: 2026-11-04
+    via: api
+notFound: [pricingPage, hqCountry, parent, forkOf, successorOf, alternativeTo, contentStore, databases, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, renderingModes, runsAs, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, npmWeeklyDownloads, pypiDownloads, selfHostOption]
+unreadable: [https://www.doctrine-project.org/projects/doctrine-migrations/en/latest/ (404)]
+notes: >
+  The Migrations introduction says the project "offers additional functionality on top of the DBAL and ORM", so basedOn is doctrine-dbal; the ORM is optional (the docs have a section on diffing without it) and stays in notes. The stable docs are at the 3.9 path; the latest path answers 404. The project page lists 4.0 and 3.10 as upcoming and 3.9.8 as stable, so currentMajor is 3. firstRelease is 2012 from the oldest Packagist upload (1.0-ALPHA1, 2012-10-05). The Packagist monthly figure on 2026-11-04 was 7215898, not recorded because the field keeps the total. The introduction names Composer and the PHAR download as the two install routes, each its own installMethod. The Migrations docs name no database list of their own; the DBAL record holds the vendor list.

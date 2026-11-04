@@ -1,0 +1,137 @@
+id: django-channels
+name: Channels
+status: accepted
+checkedAt: 2026-11-04
+description: Django extension that adds WebSocket, long-poll HTTP and other asynchronous protocol handling to Django projects.
+facts:
+  - field: homepage
+    value: https://channels.readthedocs.io/en/latest/
+    url: https://channels.readthedocs.io/en/latest/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Channels is a project that takes Django and extends its abilities beyond"
+  - field: repository
+    value: https://github.com/django/channels
+    url: https://api.github.com/repos/django/channels
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://channels.readthedocs.io/en/latest/
+    url: https://github.com/django/channels/blob/main/README.rst
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Documentation, installation and getting started instructions are at"
+  - field: categories
+    value: [websocket]
+    url: https://github.com/django/channels/blob/main/README.rst
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Channels augments Django to bring WebSocket, long-poll HTTP,"
+  - field: basedOn
+    value: [django]
+    url: https://github.com/django/channels/blob/main/README.rst
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Channels is an official Django Project"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/django/channels
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: python
+    url: https://github.com/django/channels/blob/4.3.2/setup.cfg
+    checkedAt: 2026-11-04
+    via: page
+    quote: "python_requires = >=3.9"
+  - field: runtimeMin
+    value: "3.9"
+    url: https://github.com/django/channels/blob/4.3.2/setup.cfg
+    checkedAt: 2026-11-04
+    via: page
+    quote: "python_requires = >=3.9"
+  - field: runsAs
+    value: [always-on]
+    url: https://channels.readthedocs.io/en/latest/deploying.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "you load them into a server, like Daphne, and you can scale the number of server processes up and down"
+  - field: installMethod
+    value: pip
+    url: https://channels.readthedocs.io/en/latest/installation.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Channels is available on PyPI"
+  - field: maintainer
+    value: Django Software Foundation
+    url: https://github.com/django/channels/blob/main/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) Django Software Foundation and individual contributors."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/django
+    checkedAt: 2026-11-04
+    via: api
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/django/channels
+    checkedAt: 2026-11-04
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/django/channels/blob/main/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without modification,"
+  - field: firstRelease
+    value: "2015"
+    url: https://pypi.org/pypi/channels/json
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://pypi.org/pypi/channels/json
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2025-11-20
+    url: https://pypi.org/pypi/channels/json
+    checkedAt: 2026-11-04
+    via: api
+  - field: pypiName
+    value: channels
+    url: https://pypi.org/pypi/channels/json
+    checkedAt: 2026-11-04
+    via: api
+  - field: pypiDownloads
+    value: 4960533 (last month)
+    url: https://pypistats.org/api/packages/channels/recent
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 6363
+    url: https://api.github.com/repos/django/channels
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 263
+    url: https://api.github.com/repos/django/channels/contributors
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 99
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/channels
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 7421
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/channels
+    checkedAt: 2026-11-04
+    via: api
+notFound: [pricingPage, hqCountry, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, packagistName]
+unreadable: []
+notes: >
+  The repository is django/channels and holds the Channels package only; the sibling packages Daphne, channels_redis and asgiref are separate repositories the README lists, and their figures are not recorded here. GitHub has no releases, only tags; the PyPI release 4.3.2 (2025-11-20) is the newest stable version and sets currentMajor and latestReleaseDate. The first PyPI upload is dated 2015-06-15, which gives firstRelease 2015; the repository was created 2015-06-03. The runtime minimum is taken from setup.cfg at tag 4.3.2 (python_requires >=3.9), as the manifest rule requires; the README at main says "All Channels projects currently support Python 3.10 and up", a conflict the reviewer should settle. The Redis channel layer (channels_redis) is an optional backend the deploying page names; no databases value is recorded for it. The maintainer is the Django Software Foundation as the LICENSE line and setup.cfg author state; the README names Carlton Gibson as the maintainer lead, not recorded as the maintainer. The pypistats figure is the last-month count from the recent endpoint.
+  The docs index says Channels "is built on a Python specification called ASGI" and builds on Django's native ASGI support, which handles plain HTTP. The installation page says to set ASGI_APPLICATION to a routing object in asgi.py that sends the "http" protocol to Django and other protocols to their own handlers. The deploying page says to run Daphne "inside either a process supervisor (systemd, supervisord) or a container orchestration system", which is the always-on process model recorded in runsAs. The README describes Channels as augmenting Django "to bring WebSocket, long-poll HTTP, task offloading and other async support".
+  The deploying page says a channel backend "will connect to one or more central servers that serve as the communication layer", and the Redis backend is one such backend; the channel layer is optional on that page.

@@ -1,0 +1,121 @@
+id: django-parler
+name: django-parler
+status: accepted
+checkedAt: 2026-11-04
+description: Django package that adds translated fields to models, stored in a separate table.
+facts:
+  - field: repository
+    value: https://github.com/django-parler/django-parler
+    url: https://github.com/django-parler/django-parler
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://django-parler.readthedocs.io/en/stable/
+    url: https://django-parler.readthedocs.io/en/stable/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "django-parler provides Django model translations without nasty hacks."
+  - field: firstRelease
+    value: 2013
+    url: https://pypi.org/pypi/django-parler/json
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: Diederik van der Boor
+    url: https://github.com/django-parler/django-parler/blob/v2.4/setup.py
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Diederik van der Boor"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/django-parler/django-parler/blob/v2.4/setup.py
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Diederik van der Boor"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/django-parler
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: Python
+    url: https://github.com/django-parler/django-parler
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: python
+    url: https://github.com/django-parler/django-parler
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [translation]
+    url: https://django-parler.readthedocs.io/en/stable/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "django-parler provides Django model translations without nasty hacks."
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/django-parler/django-parler
+    checkedAt: 2026-11-04
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/django-parler/django-parler
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://github.com/django-parler/django-parler/releases/tag/v2.4
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-14
+    url: https://github.com/django-parler/django-parler/releases/tag/v2.4
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 736
+    url: https://github.com/django-parler/django-parler
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 59
+    url: https://github.com/django-parler/django-parler
+    checkedAt: 2026-11-04
+    via: api
+  - field: pypiName
+    value: django-parler
+    url: https://pypi.org/pypi/django-parler/json
+    checkedAt: 2026-11-04
+    via: api
+  - field: pypiDownloads
+    value: {lastWeek: 41361, lastMonth: 154519}
+    url: https://pypistats.org/api/packages/django-parler/recent
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 17
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-parler
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 533
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/django-parler
+    checkedAt: 2026-11-04
+    via: api
+  - field: basedOn
+    value: django
+    url: https://github.com/django-parler/django-parler/blob/master/README.rst
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Simple Django model translations without nasty hacks."
+  - field: i18n
+    value: yes, translated model fields with fallback languages
+    url: https://django-parler.readthedocs.io/en/stable/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Automatic fallback to the other default languages."
+notFound: [homepage, installMethod, hqCountry, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, runtimeMin, pricingPage, paidEdition, hostedOffering, forum, discord, subreddit, bluesky, mastodon, x, newsletter, endoflifeId, usageShare, npmName, httpArchiveSites, pluginDirectory]
+unreadable: []
+notes: >
+  No homepage: the repository's homepage field is empty, the PyPI page links only the repository, and the README links the documentation on Read the Docs. The repository moved from the edoburu account to the django-parler organization; the PyPI homepage still names the old account, and the API figures are read from the new one. The README and PyPI summary call the package "Simple Django model translations", which names Django as what it extends, so basedOn is django. installMethod is left out: the README and quickstart show pip only in a shell command. Read the docs stable pages: the stable docs are built for 2.3 and the changelog there ends at 2.3, while 2.4 is the newest release. The package has no runtimeMin: setup.py names Django 5.1 as the install dependency and the classifiers list Python 3.10 to 3.13, a classifier is not a stated requirement. The README names django-hvad as the design it is compatible with and the background page says it is inspired by django-hvad; neither is alternativeTo or basedOn. The PyPI JSON carries no download counts, so pypiDownloads comes from pypistats.org, as in other Python records. firstRelease is the oldest PyPI upload, 0.9 on 2013-09-10, which matches the first tag v0.9. Stars and contributors are the repository's. latestReleaseDate is the v2.4 release on GitHub and the same day on PyPI.

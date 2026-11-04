@@ -1,0 +1,1 @@
+DataLoader is a JavaScript utility for Node.js services that batches the data loads an application makes and caches them. The README places it in the data fetching layer and says it is often used when implementing a graphql-js service, though it is useful in other settings too. It is installed with npm, and the copyright line names GraphQL Contributors as its maintainer.

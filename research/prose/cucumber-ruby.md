@@ -1,0 +1,1 @@
+Cucumber Ruby runs automated tests written in plain language, and it ships as the cucumber gem. Projects install the gem with the gem command or through a Gemfile, as the [installation guide](https://cucumber.io/docs/installation/ruby/) describes. Rails projects set up Cucumber through the separate cucumber-rails gem.

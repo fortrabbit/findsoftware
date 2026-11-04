@@ -1,0 +1,112 @@
+id: commonmarker
+name: Commonmarker
+status: accepted
+checkedAt: 2026-11-04
+description: Ruby gem that wraps the comrak Rust parser to convert CommonMark and GitHub Flavored Markdown to HTML.
+facts:
+  - field: repository
+    value: https://github.com/gjtorikian/commonmarker
+    url: https://api.github.com/repos/gjtorikian/commonmarker
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: Garen J. Torikian
+    url: https://github.com/gjtorikian/commonmarker/blob/v2.10.1/LICENSE.txt
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2015 Garen J. Torikian"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/gjtorikian
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: Ruby
+    url: https://github.com/gjtorikian/commonmarker/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Ruby wrapper for Rust's comrak crate"
+  - field: categories
+    value: [markdown]
+    url: https://github.com/gjtorikian/commonmarker/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Ruby wrapper for Rust's comrak crate"
+  - field: runtime
+    value: [ruby]
+    url: https://github.com/gjtorikian/commonmarker/blob/v2.10.1/commonmarker.gemspec
+    checkedAt: 2026-11-04
+    via: page
+    quote: 'spec.required_ruby_version = ">= 3.2", "< 5"'
+  - field: runtimeMin
+    value: "3.2"
+    url: https://github.com/gjtorikian/commonmarker/blob/v2.10.1/commonmarker.gemspec
+    checkedAt: 2026-11-04
+    via: page
+    quote: 'spec.required_ruby_version = ">= 3.2", "< 5"'
+  - field: installMethod
+    value: bundler
+    url: https://github.com/gjtorikian/commonmarker/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Add this line to your application's Gemfile"
+  - field: basedOn
+    value: comrak
+    url: https://github.com/gjtorikian/commonmarker/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Ruby wrapper for Rust's comrak crate"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/gjtorikian/commonmarker
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: "2015"
+    url: https://api.github.com/repos/gjtorikian/commonmarker/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/gjtorikian/commonmarker/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-16
+    url: https://api.github.com/repos/gjtorikian/commonmarker/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 566
+    url: https://api.github.com/repos/gjtorikian/commonmarker
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 41
+    url: https://api.github.com/repos/gjtorikian/commonmarker/contributors?per_page=1
+    checkedAt: 2026-11-04
+    via: api
+  - field: rubygemsName
+    value: commonmarker
+    url: https://rubygems.org/api/v1/gems/commonmarker.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: rubygemsDownloads
+    value: 99161396 total
+    url: https://rubygems.org/api/v1/gems/commonmarker.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 69
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/commonmarker
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 317893
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/commonmarker
+    checkedAt: 2026-11-04
+    via: api
+notFound: [homepage, docs, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, runsAs, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, latestPrereleaseDate, lastCommitDate, packagistName, crateName, pypiDownloads, npmWeeklyDownloads, apiLimits, regions, selfHostOption, hostedOffering, maintainerType]
+unreadable: []
+notes: >
+  The GitHub repository has no homepage, and the README names none, so no homepage is recorded; the README is the only documentation. The README title is "Commonmarker" and the gem is published as commonmarker on RubyGems. The GitHub language detection reports Rust because the gem ships a Rust extension compiled through rb-sys; the language is recorded as Ruby from the README's "Ruby wrapper" statement. The README calls the project a "Ruby wrapper for Rust's comrak crate" and the comrak homepage lists this gem among its Ruby bindings; the basedOn value is comrak, a record of this wave, and the reviewer decides whether a wrapper is a basedOn statement. The oldest RubyGems upload (0.0.1, 2015-05-10) matches the 2015 firstRelease. The README's documented install routes are the Gemfile line (bundler) and "gem install commonmarker"; the gem install route is shown only as a command, so no installMethod is recorded for it. The maintainer follows the LICENSE.txt copyright line (Garen J. Torikian, 2015); the repository owner is a user account. The license MIT is the GitHub detection; the LICENSE.txt at tag v2.10.1 states "MIT License". The rubygemsDownloads figure is the RubyGems total, not a monthly count. The README states the output is HTML only ("Commonmarker can currently only generate output in one format: HTML"), and that it "passes all of the CommonMark test suite"; both are kept out of the fields as coined kinds. The syntax highlighter plugin and the default GFM extensions are documented in the README and not recorded as fields. The runtimeMin 3.2 is the required_ruby_version of the gemspec at tag v2.10.1, which is a runtime requirement of the gem. The releases on GitHub run from v0.1.0 (2015-05-13) to v2.10.1 (2026-10-16); the major 0 line is not the current major.

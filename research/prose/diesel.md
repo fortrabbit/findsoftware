@@ -1,0 +1,3 @@
+Diesel is an ORM and query builder for Rust. It maps database rows to Rust structs, generates the mapping code from derive attributes and builds queries through a typed API. The crate is published on crates.io as `diesel` and is added to a project's `Cargo.toml` with a feature for the database it uses, as the [README](https://github.com/diesel-rs/diesel/blob/master/README.md) describes. The Diesel Core Team maintains it.
+
+The CLI tool that helps manage a project is a separate binary, installed with cargo, and the [getting started guide](https://diesel.rs/guides/getting-started) walks through a project set up for each supported database.

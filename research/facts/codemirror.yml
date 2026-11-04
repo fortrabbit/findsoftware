@@ -1,0 +1,119 @@
+id: codemirror
+name: CodeMirror
+status: accepted
+checkedAt: 2026-11-04
+description: Code editor component for the web with syntax highlighting, search and extension APIs, built as a set of npm packages.
+facts:
+  - field: homepage
+    value: https://codemirror.net/
+    url: https://codemirror.net/
+    checkedAt: 2026-11-04
+    via: page
+  - field: repository
+    value: https://code.haverbeke.berlin/codemirror/dev
+    url: https://code.haverbeke.berlin/codemirror/dev
+    checkedAt: 2026-11-04
+    via: page
+  - field: docs
+    value: https://codemirror.net/docs/guide/
+    url: https://codemirror.net/docs/guide/
+    checkedAt: 2026-11-04
+    via: page
+  - field: maintainer
+    value: Marijn Haverbeke
+    url: https://code.haverbeke.berlin/codemirror/dev/raw/branch/main/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (C) 2018 by Marijn Haverbeke"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/codemirror
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: 2009
+    url: https://codemirror.net/5/doc/releases.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "30-05-2009: Version 0.62"
+  - field: categories
+    value: [code-editor]
+    url: https://codemirror.net/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "CodeMirror is a code editor component for the web."
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/codemirror/dev
+    checkedAt: 2026-11-04
+    via: api
+  - field: installMethod
+    value: [npm]
+    url: https://code.haverbeke.berlin/codemirror/dev
+    checkedAt: 2026-11-04
+    via: page
+    quote: "install the separate packages from npm"
+  - field: license
+    value: MIT
+    url: https://codemirror.net/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "CodeMirror is open source under a permissive license ( MIT )"
+  - field: currentMajor
+    value: 6
+    url: https://registry.npmjs.org/codemirror/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2025-06-19
+    url: https://registry.npmjs.org/codemirror
+    checkedAt: 2026-11-04
+    via: api
+  - field: i18n
+    value: "yes"
+    url: https://codemirror.net/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Provide custom text to display or announce to the user."
+  - field: i18n
+    value: "yes"
+    url: https://codemirror.net/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Support mixing of right-to-left and left-to-right text."
+  - field: npmName
+    value: codemirror
+    url: https://registry.npmjs.org/codemirror/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmWeeklyDownloads
+    value: 15053575
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/codemirror
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 4580
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/codemirror
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 112084
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/codemirror
+    checkedAt: 2026-11-04
+    via: api
+  - field: pluginDirectory
+    value: https://codemirror.net/docs/community/
+    url: https://codemirror.net/docs/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "A directory of CodeMirror-related packages maintained by the community."
+  - field: forum
+    value: https://discuss.codemirror.net/
+    url: https://codemirror.net/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Discussing the project, or asking questions, is best done on the forum"
+notFound: [runsAs, hqCountry, pricingPage, parent, basedOn, importsFrom, alternativeTo, databases, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, contentStore, renderingModes, paidEdition, reportedInstalls, contributors, discord, mastodon, bluesky, x, newsletter, regions, selfHostOption, wikidata, forkOf, successorOf, runtime, runtimeMin]
+unreadable: []
+notes: >
+  The repository the project names is the forge at code.haverbeke.berlin; the GitHub copy codemirror/dev is archived because development moved, so the archive is no end signal. The mirror's stars (7806 on 2026-11-04) and contributors count (21, rel="last" page with per_page=1) are not recorded as fields because they belong to the stale copy; its language comes from that copy. The npm figure is for the codemirror package named by the install guide, which bundles the core packages; the same package name also carries the 5.x line (dist-tag version5), so the weekly figure is for all versions. latestReleaseDate and currentMajor follow the npm codemirror package (latest 6.0.2, published 2025-06-19); the individual @codemirror/* packages release more often (the changelog lists @codemirror/view 6.43.15 on 2026-10-19). firstRelease is the year of the first dated version on the CodeMirror 5 release page (0.62, 2009), which is the same project name and maintainer as CodeMirror 6; the 6.x line starts in 2022 on npm. The homepage says the library supports browsers "up from Internet Explorer 11", which is a browser list and is not recorded as runtime; no page states a process model, so runsAs is not recorded. The homepage says that commercial use carries "a social (but no legal) expectation" of funding; no paid edition exists, so paidEdition is not recorded. The i18n fact is the homepage feature "Internationalization" (custom text to display or announce); the translate example says there is no repository of translations. The language packages for Angular, CSS, Go, HTML, Java, JavaScript and others, and the CodeMirror 5 modes, are separate packages and are not recorded as fields. The archived GitHub repository codemirror/CodeMirror holds the 5.x line (MIT, 2011 created). The LICENSE on the forge reads "Copyright (C) 2018 by Marijn Haverbeke, Adrian Heine, and others" (email addresses left out here); the first-named holder, who is also the npm package author, is the recorded maintainer. The guide says the packages are distributed as ES6 modules and that it is "not currently practical to run the library without some kind of bundler" or module loader; it names Rollup and Vite. The homepage feature list also names bidirectional text (right-to-left mixed with left-to-right), recorded as a second i18n entry.

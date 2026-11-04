@@ -1,0 +1,110 @@
+id: deck-gl
+name: deck.gl
+status: accepted
+checkedAt: 2026-11-04
+description: GPU-powered framework for visual exploratory data analysis of large datasets, rendered with WebGL2 and WebGPU.
+facts:
+  - field: homepage
+    value: https://deck.gl
+    url: https://deck.gl/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "deck.gl is a GPU-powered framework for visual exploratory data analysis of large datasets"
+  - field: repository
+    value: https://github.com/visgl/deck.gl
+    url: https://api.github.com/repos/visgl/deck.gl
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://deck.gl/docs
+    url: https://github.com/visgl/deck.gl/blob/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "API documentation for the latest release"
+  - field: firstRelease
+    value: 2016
+    url: https://api.github.com/repos/visgl/deck.gl/commits/2.0.11
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: Vis.gl contributors
+    url: https://github.com/visgl/deck.gl/blob/master/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright Vis.gl contributors."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/visgl
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/visgl/deck.gl
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [graphics]
+    url: https://deck.gl/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "deck.gl is a GPU-powered framework for visual exploratory data analysis of large datasets"
+  - field: installMethod
+    value: cdn
+    url: https://github.com/visgl/deck.gl/blob/master/docs/get-started/using-standalone.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "To use deck.gl in a scripting environment, include the standalone version in a"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/visgl/deck.gl
+    checkedAt: 2026-11-04
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/visgl/deck.gl
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 9
+    url: https://api.github.com/repos/visgl/deck.gl/releases/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-30
+    url: https://api.github.com/repos/visgl/deck.gl/releases/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 14735
+    url: https://api.github.com/repos/visgl/deck.gl
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 299
+    url: https://api.github.com/repos/visgl/deck.gl/contributors?per_page=1
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmName
+    value: "@deck.gl/core"
+    url: https://registry.npmjs.org/@deck.gl/core/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1379892
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/@deck.gl/core
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 167
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@deck.gl/core
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 1800
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@deck.gl/core
+    checkedAt: 2026-11-04
+    via: api
+notFound: [pricingPage, hqCountry, runtime, runtimeMin, basedOn, forkOf, successorOf, parent, alternativeTo, databases, adminUi, headlessApi, contentStore, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, forum, discord, x, bluesky, mastodon, newsletter, subreddit, pluginDirectory, pluginCount, wikidata, maintainerType, usageShare, reportedInstalls, endoflifeId, hostedOffering, paidEdition]
+unreadable: []
+notes: >
+  Monorepo: the repository holds deck.gl, its core and layers packages, and the React and other bindings; stars and contributors belong to the monorepo. The record's registry figure is @deck.gl/core, the package the standalone guide installs and the README badge counts; for the same period the umbrella package deck.gl had 283,003 weekly downloads (https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/deck.gl). The README's "NPM Module" section gives "npm install deck.gl" as a command, not a sentence, so no npm installMethod is recorded; this is for the reviewer to decide. The repository is a vis.gl project under the OpenJS Foundation, which the homepage and README name; the LICENSE copyright line names "Vis.gl contributors", so the foundation is not the maintainer. The standalone guide says the core library "can be used by any JavaScript application" and the React guide says deck.gl is "While not directly based on React", so no basedOn is recorded. The README also names a Python package pydeck (pip install pydeck), a separate package, and a React component package; neither is recorded here. The homepage names a Slack workspace; no field holds it. The latest GitHub release v9.3.12 (2026-10-30) is newer than the npm latest 9.4.1 (2026-10-28), so latestReleaseDate is the GitHub date. No runsAs or runtime is recorded: the pages describe a WebGL2 and WebGPU library usable from JavaScript but do not state where it runs in words.
