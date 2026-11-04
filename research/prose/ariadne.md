@@ -1,0 +1,3 @@
+Ariadne is a Python library for building GraphQL servers with a schema-first approach, where the API is written in GraphQL's Schema Definition Language. It is installed with pip and works with ASGI and WSGI servers. Its feature list names integrations with Django, FastAPI, Flask and Starlette, and an OpenTelemetry extension for monitoring.
+
+The repository holds only the server library. Companion packages for a client generator, authentication utilities, AWS Lambda deployment and a GraphQL proxy are separate projects in the same ecosystem. The [documentation](https://ariadnegraphql.org/server/Docs/intro) covers the library.

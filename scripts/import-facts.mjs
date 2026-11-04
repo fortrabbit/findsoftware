@@ -44,6 +44,7 @@ const categoryMap = {
   'atomic-css-engine': 'css-framework',
   'auth-proxy': 'web-server',
   authorization: 'auth',
+  autocomplete: 'ui-library',
   automation: 'backend',
   baas: 'backend',
   'backend-as-a-service': 'backend',

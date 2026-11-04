@@ -1,0 +1,124 @@
+id: assertj
+name: AssertJ
+status: accepted
+checkedAt: 2026-11-04
+description: Java library of fluent, strongly typed assertions for unit tests, usable with JUnit, TestNG and other frameworks.
+facts:
+  - field: homepage
+    value: https://assertj.github.io/doc/
+    url: https://assertj.github.io/doc/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Fluent testing assertions for Java and the JVM"
+  - field: repository
+    value: https://github.com/assertj/assertj
+    url: https://api.github.com/repos/assertj/assertj
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://assertj.github.io/doc/
+    url: https://assertj.github.io/doc/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "This guide is for the AssertJ Core module."
+  - field: maintainer
+    value: AssertJ
+    url: https://raw.githubusercontent.com/assertj/assertj/main/pom.xml
+    checkedAt: 2026-11-04
+    via: page
+    quote: "<name>AssertJ</name>"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/assertj/assertj
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [testing, assertions]
+    url: https://raw.githubusercontent.com/assertj/assertj/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "AssertJ provides a rich and intuitive set of strongly-typed assertions"
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/assertj/assertj
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://assertj.github.io/doc/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "AssertJ Core requires Java 8 or higher."
+  - field: runtimeMin
+    value: "8"
+    url: https://assertj.github.io/doc/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "AssertJ Core requires Java 8 or higher."
+  - field: runtimeMin
+    value: "8"
+    url: https://github.com/assertj/assertj/blob/assertj-build-3.27.7/assertj-parent/pom.xml
+    checkedAt: 2026-11-04
+    via: page
+    quote: "<java.version>8</java.version>"
+  - field: installMethod
+    value: Maven dependency
+    url: https://assertj.github.io/doc/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "<artifactId>assertj-core</artifactId>"
+  - field: installMethod
+    value: Gradle dependency
+    url: https://assertj.github.io/doc/
+    checkedAt: 2026-11-04
+    via: page
+    quote: 'testImplementation("org.assertj:assertj-core:3.27.7")'
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/assertj/assertj
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://github.com/assertj/assertj/releases/tag/assertj-build-3.27.7
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-01-24
+    url: https://github.com/assertj/assertj/releases/tag/assertj-build-3.27.7
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/org.assertj:assertj-core
+    checkedAt: 2026-11-04
+    via: api
+  - field: mavenCoordinates
+    value: org.assertj:assertj-core
+    url: https://repo1.maven.org/maven2/org/assertj/assertj-core/maven-metadata.xml
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 14394
+    url: https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/org.assertj:assertj-core
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 80047
+    url: https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/org.assertj:assertj-core
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 2854
+    url: https://api.github.com/repos/assertj/assertj
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 376
+    url: https://api.github.com/repos/assertj/assertj/contributors
+    checkedAt: 2026-11-04
+    via: api
+notFound: [hqCountry, basedOn, parent, alternativeTo, importsFrom, databases, headlessApi, templating, adminUi, sso, userRoles, i18n, multisite, livePreview, renderingModes, runsAs, contentStore, selfHostOption, hostedOffering, paidEdition, pricingPage, forkOf, successorOf, pluginDirectory, pluginCount, forum, discord, bluesky, mastodon, x, newsletter, subreddit, npmName, packagistName, pypiName, reportedInstalls, usageShare, wikidata, endoflifeId, latestPrereleaseDate]
+unreadable: []
+notes: >
+  Monorepo: the repository assertj/assertj holds the AssertJ modules (core, guava, joda-time, neo4j, db, swing and others); the stars and 376 contributors belong to the whole repository, and the Maven figures are for assertj-core, the artifact the install guide names. Versions: the GitHub release list uses tags named assertj-build-<version>; the highest stable is 3.27.7 (2026-01-24); 4.0.0-M1 (2025-03-09) is a milestone and is older than the stable release, so no latestPrereleaseDate is recorded. Maven Central lists 4.0.0-M1 as its release tag, but the stable 3.27.7 is in the same metadata; the Maven major is taken from the stable line. Maintainer: the pom organization is named AssertJ (url assertj.github.io/doc/); the pom lists about ten developers; the Apache LICENSE file carries no copyright line. Runtime: the guide says Java 8 or higher, and the parent pom at the 3.27.7 tag sets java.version to 8, the compiler release of that stable line. Kotlin 1.9 or higher and Android API level 26 and up (except soft assertions and assumptions) are stated on the guide; not recorded as fields. The guide points to the Spring Boot dependency-version management for the version property assertj.version. The DB module asserts on relational database types (Table, Row, Column) and does not make AssertJ a database-backed tool, so databases is unknown. Questions go to Stack Overflow (tag assertj), which is a Q&A site and is not recorded as a forum. The maven-metadata and ecosyste.ms figures are from the Maven Central registry; Maven publishes no download figure, so none is recorded. Install routes: Maven and Gradle snippets are two installMethod entries on the guide's Get AssertJ Core section. The Gradle quote contains the version in the snippet; the version is not recorded as a field.

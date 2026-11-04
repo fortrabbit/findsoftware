@@ -1,0 +1,96 @@
+id: optimizely-saas-cms
+name: Optimizely SaaS CMS
+status: hosted-service
+checkedAt: 2026-11-04
+description: Fully managed SaaS content management system from Optimizely, with a visual editor, live preview and content delivered through Optimizely Graph's GraphQL API.
+facts:
+  - field: homepage
+    value: https://www.optimizely.com/products/content-management
+    url: https://www.optimizely.com/products/content-management
+    checkedAt: 2026-11-04
+    via: page
+  - field: docs
+    value: https://docs.developers.optimizely.com/content-management-system/v1.0.0-CMS-SaaS/docs/get-started-saas
+    url: https://docs.developers.optimizely.com/content-management-system/v1.0.0-CMS-SaaS/docs/get-started-saas
+    checkedAt: 2026-11-04
+    via: page
+  - field: maintainer
+    value: Optimizely North America Inc.
+    url: https://www.optimizely.com/legal/privacy-notice
+    checkedAt: 2026-11-04
+    via: page
+    quote: "we are referring to Optimizely North America Inc. and Optimizely AB"
+  - field: maintainerType
+    value: company
+    url: https://www.optimizely.com/legal/privacy-notice
+    checkedAt: 2026-11-04
+    via: page
+  - field: hqCountry
+    value: US
+    url: https://www.optimizely.com/legal/website-terms-of-use
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Optimizely North America Inc., Attn: General Counsel, 119 Fifth Avenue, 7th Floor, New York, NY 10003, USA"
+  - field: categories
+    value: [cms]
+    url: https://www.optimizely.com/developers/cms
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Optimizely CMS is designed for content management, digital experiences, and headless capabilities."
+  - field: headlessApi
+    value: [graphql]
+    url: https://docs.developers.optimizely.com/content-management-system/v1.0.0-CMS-SaaS/docs/get-started-saas
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Optimizely Graph uses GraphQL to provide powerful search and filtering capabilities."
+  - field: headlessApi
+    value: [rest]
+    url: https://www.optimizely.com/developers/cms
+    checkedAt: 2026-11-04
+    via: page
+    quote: "the content management API provides REST endpoints for basic content operations"
+  - field: adminUi
+    value: yes, hosted visual editor
+    url: https://www.optimizely.com/products/content-management
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Marketers get a visual, intuitive editor where they can build, preview, and publish without raising a ticket."
+  - field: livePreview
+    value: yes
+    url: https://docs.developers.optimizely.com/content-management-system/v1.0.0-CMS-SaaS/docs/enable-live-preview-saas/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "You must complete four main tasks to enable a live preview of the content."
+  - field: userRoles
+    value: yes, system and custom roles through Opti ID
+    url: https://docs.developers.optimizely.com/content-management-system/v1.0.0-CMS-SaaS/docs/get-started-saas
+    checkedAt: 2026-11-04
+    via: page
+    quote: "If you want to personalize permission levels, create custom roles"
+  - field: sso
+    value: [saml, oidc]
+    url: https://docs.optimizely.com/opti-id/docs/overview-of-configuring-your-own-sso-for-opti-id
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Security Assertion Markup Language (SAML) and OpenID Connect (OIDC)"
+  - field: i18n
+    value: yes, multiple content languages
+    url: https://docs.developers.optimizely.com/content-management-system/v1.0.0-CMS-SaaS/docs/get-started-saas
+    checkedAt: 2026-11-04
+    via: page
+    quote: "CMS (SaaS) can deliver content in multiple languages"
+  - field: licenseModel
+    value: saas
+    url: https://www.optimizely.com/developers/cms
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Fully managed service that simplifies operations, speeds time-to-market, and supports a headless-first approach."
+  - field: pricingPage
+    value: https://www.optimizely.com/plans
+    url: https://www.optimizely.com/plans
+    checkedAt: 2026-11-04
+    via: page
+notFound: [firstRelease, foundedYear, parent, basedOn, freeTier, paidEdition, selfHostOption, multisite, regions, apiLimits, importsFrom, contentStore, databases, templating, renderingModes, runsAs, runtime, installMethod, currentMajor, latestReleaseDate, contributors, reportedInstalls, usageShare, forum, discord, subreddit, mastodon, bluesky, x, linkedin, facebook, instagram, newsletter, pluginDirectory]
+unreadable: []
+notes: >
+  Optimizely SaaS CMS is the managed cloud edition of Optimizely CMS; the self-managed PaaS edition is a separate record (optimizely-cms) and is not used for this one. The plans page says "Every Optimizely plan is individually packaged" and gives no prices. The sso value comes from the Opti ID single sign-on page, which is the identity service the SaaS CMS signs users in through (get-started page: "Login Opti ID provides multiple options for managing user identity and permissions"); the get-started page says CMS (SaaS) users sign in through Opti ID, and the protocols come from the Opti ID page. The developer page links an Optimizely community Slack invite; no field exists for Slack. The maintainer is taken from the privacy notice, which names Optimizely North America Inc. and Optimizely AB; the SaaS order terms could not be found at the paths tried (legal/master-subscription-agreement, legal/saas-terms, legal/terms-of-service returned 404), so the contracting party is unconfirmed and Optimizely AB is the other entity the notice names. The hqCountry value uses the notice address of Optimizely North America Inc. from the website terms. The SaaS CMS page lists "Multi-site/multi-channel management" as a feature label without a sentence, so multisite is unknown. The SaaS docs navigation lists a "HIPAA-enabled CMS" entry; that is a compliance kind and goes to notes only. The SDK repository episerver/content-js-sdk (Apache-2.0, 21 stars at read time) and the npm package @optimizely/cms-sdk (5,229 downloads for 2026-10-26 to 2026-11-01, api.npmjs.org range) are SDK figures and are recorded here only. The product page is Optimizely's shared CMS page, which also lists the PaaS product and the agent features; agents are not fields.

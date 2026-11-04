@@ -1,0 +1,1 @@
+Ammonia is a whitelist-based HTML sanitization library written in Rust. It uses html5ever to parse its input, and a project adds it through Cargo, as the [README](https://github.com/rust-ammonia/ammonia/blob/master/README.md) shows. The [crate documentation on docs.rs](https://docs.rs/ammonia/) is the main reference, since the project has no website of its own.

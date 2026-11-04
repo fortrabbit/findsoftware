@@ -1,0 +1,136 @@
+id: behat
+name: Behat
+status: accepted
+checkedAt: 2026-11-04
+description: BDD framework for PHP that tests business expectations.
+facts:
+  - field: homepage
+    value: https://behat.org/
+    url: https://github.com/Behat/Behat/blob/4.x/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "The main website is at"
+  - field: repository
+    value: https://github.com/Behat/Behat
+    url: https://api.github.com/repos/Behat/Behat
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://docs.behat.org/en/latest/
+    url: https://github.com/Behat/Behat/blob/4.x/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "The documentation is at"
+  - field: firstRelease
+    value: 2010
+    url: https://api.github.com/repos/Behat/Behat/tags
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: Konstantin Kudryashov
+    url: https://github.com/Behat/Behat/blob/4.x/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2016 Konstantin Kudryashov"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Behat
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/Behat/Behat
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/Behat/Behat/blob/v4.0.0/composer.json
+    checkedAt: 2026-11-04
+    via: page
+    quote: '"php": ">=8.2 <8.6"'
+  - field: runtimeMin
+    value: "8.2"
+    url: https://github.com/Behat/Behat/blob/v4.0.0/composer.json
+    checkedAt: 2026-11-04
+    via: page
+    quote: '"php": ">=8.2 <8.6"'
+  - field: categories
+    value: [testing, bdd]
+    url: https://github.com/Behat/Behat/blob/4.x/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Behat is a BDD framework for PHP"
+  - field: installMethod
+    value: "composer require --dev behat/behat"
+    url: https://github.com/Behat/Behat/blob/4.x/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "composer require --dev behat/behat"
+  - field: license
+    value: MIT
+    url: https://github.com/Behat/Behat/blob/v4.0.0/composer.json
+    checkedAt: 2026-11-04
+    via: page
+    quote: '"license": "MIT"'
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/Behat/Behat/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-28
+    url: https://api.github.com/repos/Behat/Behat/releases/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 3968
+    url: https://api.github.com/repos/Behat/Behat
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 160
+    url: https://api.github.com/repos/Behat/Behat/contributors
+    checkedAt: 2026-11-04
+    via: api
+  - field: packagistName
+    value: behat/behat
+    url: https://repo.packagist.org/p2/behat/behat.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: packagistDownloads
+    value: "109402333 (total)"
+    url: https://packagist.org/packages/behat/behat.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 2113
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/behat%2Fbehat
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 13773
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/behat%2Fbehat
+    checkedAt: 2026-11-04
+    via: api
+  - field: runsAs
+    value: ["local"]
+    url: https://docs.behat.org/en/latest/quick_start.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Behat is an executable that you’ll run from the command line"
+  - field: installMethod
+    value: "behat.phar download"
+    url: https://docs.behat.org/en/latest/quick_start.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "An easier way to install Behat is to grab a latest behat.phar"
+  - field: x
+    value: "https://twitter.com/behatphp"
+    url: https://docs.behat.org/en/latest/community.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Want latest news from around community? Follow us on Twitter"
+notFound: [pricingPage, paidEdition, hqCountry, basedOn, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, databases, renderingModes, contentStore, npmName, npmWeeklyDownloads, pypiName, pypiDownloads, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter]
+unreadable: []
+notes: >
+  The homepage https://behat.org answers 200 after a redirect to https://docs.behat.org/en/latest/, the project's Sphinx documentation; the README calls behat.org the main website. The README lists current maintainers Andrew Coulton, Carlos Granados and Christophe Coevoet and names Konstantin Kudryashov as the original developer; the LICENSE copyright line names Konstantin Kudryashov, which is the maintainer recorded. The quick-start page still says "at least PHP 5.3.3", an old statement; the composer.json at v4.0.0 requires PHP >=8.2 <8.6, which is the runtimeMin recorded. The v4 line is the stable major (v4.0.0, 2026-09-28); v4.0.0-alpha1 is a prerelease and is older. The oldest tag 0.1.0 has a commit dated 2010-09-06, which gives firstRelease; the GitHub repository was created in 2011. The default branch is 4.x. The community page links a Gitter channel, which has no field here; its Twitter link gives the x field. The quick-start page shows Composer and a behat.phar download as install routes, calls Behat an executable run from the command line, and says "at least PHP 5.3.3" (old, see above). The docs home says the codebase uses Symfony components internally, which is a dependency and no basedOn statement, and calls Behat the PHP implementation of Cucumber. Stars and contributors are for the single repository.

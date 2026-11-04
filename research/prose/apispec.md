@@ -1,0 +1,1 @@
+apispec is a pluggable API specification generator for Python that currently supports the OpenAPI Specification. It is framework-agnostic: web frameworks connect through plugins, and marshmallow schemas are supported as a built-in plugin. A project installs it from PyPI with pip.

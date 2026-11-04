@@ -1,0 +1,131 @@
+id: apache-shiro
+name: Apache Shiro
+status: accepted
+checkedAt: 2026-11-04
+description: Java security framework that performs authentication, authorization, cryptography and session management.
+facts:
+  - field: homepage
+    value: https://shiro.apache.org/
+    url: https://shiro.apache.org/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Apache Shiro™ is a powerful and easy-to-use Java security framework"
+  - field: repository
+    value: https://github.com/apache/shiro
+    url: https://api.github.com/repos/apache/shiro
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://shiro.apache.org/10-minute-tutorial.html
+    url: https://shiro.apache.org/10-minute-tutorial.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Ensure you have JDK 1.8+ and Maven 3.0.3+ installed"
+  - field: firstRelease
+    value: 2010
+    url: https://search.maven.org/solrsearch/select?q=g:org.apache.shiro+AND+a:shiro-core&core=gav&rows=200&wt=json
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: The Apache Software Foundation
+    url: https://shiro.apache.org/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright &copy; 2008-2026 The Apache Software Foundation"
+  - field: maintainerType
+    value: foundation
+    url: https://shiro.apache.org/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright &copy; 2008-2026 The Apache Software Foundation"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/apache/shiro
+    checkedAt: 2026-11-04
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/apache/shiro
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [auth]
+    url: https://shiro.apache.org/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "performs authentication, authorization, cryptography, and session management"
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/apache/shiro
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://shiro.apache.org/download.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "is the current stable release (Java 17+)"
+  - field: runtimeMin
+    value: "17"
+    url: https://shiro.apache.org/download.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "is the current stable release (Java 17+)"
+  - field: installMethod
+    value: [maven]
+    url: https://shiro.apache.org/download.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "If you would like acquire Shiro through Maven"
+  - field: installMethod
+    value: [source build]
+    url: https://shiro.apache.org/download.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "The source bundle requires JDK 25+ and Maven 3.9+ to build"
+  - field: mavenCoordinates
+    value: org.apache.shiro:shiro-core
+    url: https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/maven-metadata.xml
+    checkedAt: 2026-11-04
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/apache/shiro/blob/main/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/apache/shiro/blob/main/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: currentMajor
+    value: 3
+    url: https://github.com/apache/shiro/releases/tag/shiro-root-3.0.1
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-23
+    url: https://api.github.com/repos/apache/shiro/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 4464
+    url: https://api.github.com/repos/apache/shiro
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 83
+    url: https://api.github.com/repos/apache/shiro/contributors
+    checkedAt: 2026-11-04
+    via: api
+  - field: forum
+    value: https://github.com/apache/shiro/discussions
+    url: https://shiro.apache.org/forums.html
+    checkedAt: 2026-11-04
+    via: page
+notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, paidEdition, adminUi, headlessApi, renderingModes, runsAs, sso, databases, endoflifeId, npmName, pypiName, packagistName, pluginDirectory, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, latestPrereleaseDate]
+unreadable: []
+notes: >
+  Shiro is a library a Java web app or service adds through Maven; it is not a web server. The homepage names the Apache Software Foundation in its copyright line, so the maintainer is the foundation, and the Apache License 2.0 is read from the LICENSE file on the main branch. Latest stable release is shiro-root-3.0.1 (GitHub release, 2026-08-23); the Maven Central metadata lists 3.0.1 as the release and no 3.0.2 is published there although a shiro-root-3.0.2 tag exists. Maven Central publishes no download figure, so no adoption download count is recorded. The oldest Maven Central upload is 1.0.0-incubating (2010-05-21); the oldest git tag, 1.0.0-incubating, is dated 2010-10-08. The download page lists shiro-core as required in all environments and the web module as the one for web applications; the web configuration pages describe a servlet filter and listener in web.xml. The forums page names the mailing lists as the primary forums and links GitHub Discussions, which is the forum value. The Shiro v1 and v2 end-of-life notice on the web page concerns the older majors only and is no end signal for the project. Spring, Guice and Jakarta EE integrations are listed on the site and are not recorded as basedOn. The 10-minute tutorial page says it needs JDK 1.8+ while the download page states Java 17+ for the current release; runtimeMin takes the download page, which states the current release.

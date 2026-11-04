@@ -1,0 +1,64 @@
+id: netlify-create
+name: Netlify Visual Editor
+status: stub
+checkedAt: 2026-11-04
+description: Visual editing environment in which content editors change structured content on a live preview of a site.
+facts:
+  - field: docs
+    value: https://docs.netlify.com/manage/visual-editor/overview/
+    url: https://docs.netlify.com/manage/visual-editor/overview/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Netlify Visual Editor is an environment for content editors to work with structured content in a visual way"
+  - field: status
+    value: stub
+    url: https://docs.netlify.com/manage/visual-editor/overview/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Visual Editor is only available for teams that already have it enabled through Netlify Support"
+  - field: maintainer
+    value: Netlify, Inc.
+    url: https://www.netlify.com/legal/terms-of-use/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "The Website is offered by Netlify, Inc., located at 101 2nd Street, San Francisco, CA 94105"
+  - field: hqCountry
+    value: US
+    url: https://www.netlify.com/legal/terms-of-use/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "101 2nd Street, San Francisco, CA 94105"
+  - field: installMethod
+    value: npm install -g @stackbit/cli (Visual Editor CLI)
+    url: https://docs.netlify.com/manage/visual-editor/get-started/set-up-visual-editor-locally/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "npm install -g @stackbit/cli"
+  - field: livePreview
+    value: yes, preview window inside the editor
+    url: https://docs.netlify.com/manage/visual-editor/overview/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Content changes are reflected immediately in the preview"
+  - field: userRoles
+    value: editorial permissions and member groups
+    url: https://docs.netlify.com/manage/visual-editor/editorial-permissions/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Optimize your publishing workflows for the needs of each project with editorial permissions and member groups"
+  - field: i18n
+    value: object-level and field-level localization
+    url: https://docs.netlify.com/manage/visual-editor/localization/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Visual Editor supports two types of localization"
+  - field: hostedOffering
+    value: Netlify platform, enabled per team by Netlify Support
+    url: https://docs.netlify.com/manage/visual-editor/overview/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Visual Editor is only available for teams that already have it enabled through Netlify Support"
+notFound: [homepage, firstRelease, repository, repoOwnerType, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, categories, language, runtime, runtimeMin, currentMajor, latestReleaseDate, license, licenseModel, contentStore, databases, adminUi, headlessApi, templating, multisite, runsAs, renderingModes, paidEdition, pricingPage, freeTier, apiLimits, regions, selfHostOption, sso, importsFrom, githubStargazers, contributors, npmName, npmWeeklyDownloads, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, endoflifeId, supportedVersions, dependentRepos, dependentPackages, httpArchiveSites]
+unreadable: [https://www.netlify.com/products/create/, https://www.contentful.com/]
+notes: >
+  Doubt first: the product is closed to new teams, so it is a stub until Netlify states that it is still offered or retired; the availability sentence in the overview and the set-up page says a new project or team cannot enable visual editing, so the status is stub on that statement. Netlify's Create product page (https://www.netlify.com/products/create/) redirects to https://www.netlify.com/platform/, which does not mention the Visual Editor, so no homepage is recorded; the overview docs page is the product's own page and is recorded as docs. The CSV name "Netlify Visual Editor (Create; Stackbit)" comes from discovery: the docs pages name the product Netlify Visual Editor, and the set-up page installs the Visual Editor CLI from the @stackbit scope without naming Stackbit as the product owner, so the name follows the docs. The overview says the editor is part of the Netlify platform, runs in a Node-based environment by default, and stores content back to each content source (Contentful, Contentstack, DatoCMS, Git, Hygraph, Sanity and a custom source interface). The set-up page covers a local setup from a template. Maintainer and hqCountry come from the Netlify website terms, which give the full address of Netlify, Inc. in San Francisco, California, United States; the country is taken from that US address. The @stackbit npm packages are not recorded beyond the CLI install route. No API for the software itself was found: the Content Source Interface is an API the sources provide, not an API of the visual editor, so headlessApi is not recorded.

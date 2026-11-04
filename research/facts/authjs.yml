@@ -1,0 +1,126 @@
+id: authjs
+name: Auth.js
+status: accepted
+checkedAt: 2026-11-04
+description: Authentication library for JavaScript web frameworks, with OAuth and OpenID Connect providers, email sign-in and credentials.
+facts:
+  - field: homepage
+    value: https://authjs.dev
+    url: https://authjs.dev/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Authentication for the Web."
+  - field: repository
+    value: https://github.com/nextauthjs/next-auth
+    url: https://github.com/nextauthjs/next-auth
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://authjs.dev/getting-started
+    url: https://authjs.dev/getting-started
+    checkedAt: 2026-11-04
+    via: page
+  - field: firstRelease
+    value: 2018
+    url: https://registry.npmjs.org/next-auth
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: Better Auth Inc.
+    url: https://authjs.dev/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Auth.js © Better Auth Inc."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/nextauthjs/next-auth
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/nextauthjs/next-auth
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [auth]
+    url: https://github.com/nextauthjs/next-auth
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Designed to work with any OAuth service, it supports 2.0+, OIDC"
+  - field: sso
+    value: [oauth2, oidc]
+    url: https://github.com/nextauthjs/next-auth
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Designed to work with any OAuth service, it supports 2.0+, OIDC"
+  - field: databases
+    value: [mysql, mariadb, postgres, sqlserver, mongodb, sqlite]
+    url: https://github.com/nextauthjs/next-auth
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Built-in support for MySQL, MariaDB, Postgres, Microsoft SQL Server, MongoDB, SQLite, GraphQL, etc."
+  - field: installMethod
+    value: npm
+    url: https://authjs.dev/getting-started/installation
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Start by installing the appropriate package for your framework."
+  - field: license
+    value: ISC
+    url: https://github.com/nextauthjs/next-auth
+    checkedAt: 2026-11-04
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/nextauthjs/next-auth
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://registry.npmjs.org/next-auth/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-20
+    url: https://github.com/nextauthjs/next-auth/releases/tag/next-auth@4.24.15
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 28373
+    url: https://github.com/nextauthjs/next-auth
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 454
+    url: https://github.com/nextauthjs/next-auth
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmName
+    value: next-auth
+    url: https://registry.npmjs.org/next-auth/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmWeeklyDownloads
+    value: "9057792 (2026-10-26 to 2026-11-01)"
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/next-auth
+    checkedAt: 2026-11-04
+    via: api
+  - field: discord
+    value: https://discord.com/invite/kuv7wXkHY4
+    url: https://authjs.dev/
+    checkedAt: 2026-11-04
+    via: page
+  - field: dependentPackages
+    value: 304
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/next-auth
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 19200
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/next-auth
+    checkedAt: 2026-11-04
+    via: api
+notFound: [runtime, runtimeMin, runsAs, renderingModes, basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, pricingPage, paidEdition, adminUi, templating, i18n, forum, bluesky, mastodon, x, subreddit, newsletter, pluginDirectory, pluginCount, pypiName, crateName, reportedInstalls, endoflifeId, wikidata, usageShare, importsFrom, userRoles, multisite]
+unreadable: []
+notes: >
+  Status: the homepage, the installation page and the README all say "The Auth.js project is now part of Better Auth", and the README adds "We recommend new projects to start with Better Auth unless there are some very specific feature gaps". The same pages still describe Auth.js as usable and open source, and the Better Auth blog post (better-auth.com/blog/authjs-joins-better-auth, the blog of the company that now maintains Auth.js) says the project is "now being maintained and overseen by Better Auth team", that existing users "can continue doing so", and that security patches continue ("we'll keep addressing security patches"). Under the rules a named successor while the page still describes the project as usable is no end signal, so the status is accepted; the reviewer decides whether the successor wording changes that. The maintainer is recorded as the homepage footer's copyright holder, "Auth.js © Better Auth Inc.", which is the company that now maintains the project; the GitHub organization is nextauthjs. The Better Auth company's legal address and country are not on the Auth.js pages, so hqCountry is absent. The npm latest and the highest stable GitHub release are next-auth 4.24.15 (2026-07-20), so currentMajor is 4. The install page installs next-auth@beta, which is the 5.0.0 beta line (latest prerelease 5.0.0-beta.32 of the same day); the reviewer decides whether the beta install route should move currentMajor to 5 once v5 is stable. The installation page starts with Next.js and also covers Qwik, SvelteKit and Express, with @auth/sveltekit, @auth/express and a Qwik integration command; those are framework packages of the same project, not separate installs. The README's recommendation carries the parenthetical "most notably stateless session management without a database". The README says the project is runtime-agnostic and runs on Docker, Node.js and serverless, but names no single runtime, so runtime is absent. The README describes its framework support in words that do not name a parent: it is not a basedOn statement, and the project is not a binding of Next.js. The homepage shows 22.2k stars in a widget; the GitHub API count is used. Contributors are counted from the default contributors endpoint, last page 454. The discord value is the invite that the homepage footer's Discord Community link (discord.authjs.dev) redirects to; the link on the homepage carries a tracking parameter, which is not recorded. The sso value follows the README sentence that names OAuth 2.0 and OIDC; SAML support exists only as a provider page (BoxyHQ SAML) and is not recorded as sso. The databases value is the README's built-in adapter list, with GraphQL in the same sentence left out of the databases list. The installation page gives npm, pnpm, yarn and bun commands for next-auth@beta, @auth/sveltekit and @auth/express, and a qwik add auth command. The integrations page lists NextAuth.js (next-auth) as 'v5 (beta), v4 (maintenance mode)' and says the library was born as next-auth and evolved to be framework agnostic; @auth/qwik is released, @auth/sveltekit, @auth/express and @auth/solid-start are experimental releases. The v4 maintenance mode is no end signal: the repository is not archived and next-auth is not deprecated on npm. The README carries an X badge for @authjs, but check-quotes finds no sentence for it on the page, so x is not recorded.

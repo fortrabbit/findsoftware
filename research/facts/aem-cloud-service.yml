@@ -1,0 +1,40 @@
+id: aem-cloud-service
+name: Adobe Experience Manager as a Cloud Service
+status: stub
+checkedAt: 2026-11-04
+description: Adobe's hosted edition of Experience Manager, a content management system for websites that exposes a headless content API.
+facts:
+  - field: docs
+    value: https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/introduction
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Adobe Experience Manager (AEM) as a Cloud Service is the latest offering of the AEM product line"
+  - field: categories
+    value: [cms, headless-cms]
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/introduction
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Learn how to use Adobe Experience Manager (AEM) as a Headless CMS (Content Management System)"
+  - field: headlessApi
+    value: [graphql]
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/introduction
+    checkedAt: 2026-11-04
+    via: page
+    quote: "structured content (Content Fragments) in AEM to be consumed by any app over HTTP using GraphQL"
+  - field: adminUi
+    value: yes, web-based AEM Author interface with a Page editor, Universal Editor and Content Fragment editor
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/architecture
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Provides a web-based interface (with associated APIs) for the management of Web content."
+  - field: userRoles
+    value: yes, permissions set on user groups, with Adobe IMS users and groups assigned to product profiles
+    url: https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/ims-support
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Users and Groups can be assigned to product profiles associated with an AEM as a Cloud Service instance"
+notFound: [homepage, pricingPage, firstRelease, maintainer, maintainerType, hqCountry, sso, i18n, multisite, livePreview, regions, selfHostOption, installMethod, runtime, licenseModel, license]
+unreadable: [https://business.adobe.com/products/experience-manager/sites/aem-sites.html, https://www.adobe.com/products/experience-manager/sites/aem-sites.html, https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/headless/overview.html]
+notes: >
+  Stub, because the product pages are unread and the open question is whether an installable edition is still sold: business.adobe.com accepted no connection (an HTTP/2 stream error, then no response over HTTP/1.1 within the time limit, checked 2026-11-04), www.adobe.com/products/experience-manager/sites/aem-sites.html answers 403 to the research user agent, and experienceleague.adobe.com answers 403. The settling sources are a readable product page and docs page that state the deployment model (Adobe-hosted only, or a self-managed edition), the headless API and the admin interface; the reviewer or a later pass should re-run from a reachable network. The CSV repository adobe/aem-headless-client-js is a client SDK and gives this record nothing (wave 18 rule). No fact is recorded from any unread page. The Experience League documentation pages for AEM as a Cloud Service answered 200 on 2026-11-04 and are the source of the recorded facts; the docs describe a cloud-native service with Adobe-managed delivery (a built-in CDN, autoscaling, Cloud Manager CI/CD), so no self-install is shown there, and whether another edition is still sold stays open. The unreadable list holds the pages that did not answer; the earlier Experience League headless overview URL moved to a path that answers 404.

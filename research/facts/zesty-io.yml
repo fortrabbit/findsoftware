@@ -1,0 +1,102 @@
+id: zesty-io
+name: Zesty.io
+status: hosted-service
+checkedAt: 2026-11-04
+description: Hosted headless and hybrid content management platform with a drag-and-drop editor, Parsley templating and REST and GraphQL APIs.
+facts:
+  - field: name
+    value: Zesty.io
+    url: https://www.zesty.io/
+    checkedAt: 2026-11-04
+    via: page
+  - field: homepage
+    value: https://www.zesty.io/
+    url: https://www.zesty.io/
+    checkedAt: 2026-11-04
+    via: page
+  - field: docs
+    value: https://docs.zesty.io/docs/getting-started-with-zesty
+    url: https://docs.zesty.io/docs/getting-started-with-zesty
+    checkedAt: 2026-11-04
+    via: page
+  - field: pricingPage
+    value: https://www.zesty.io/pricing/
+    url: https://www.zesty.io/pricing/
+    checkedAt: 2026-11-04
+    via: page
+  - field: maintainer
+    value: Zesty.IO Platform, Inc.
+    url: https://www.zesty.io/legal/end-user-license-agreement/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Zesty.IO Platform, Inc., a Delaware corporation"
+  - field: categories
+    value: [headless-cms]
+    url: https://www.zesty.io/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Composable, Drag and Drop, AI Assisted Headless CMS"
+  - field: headlessApi
+    value: [rest]
+    url: https://docs.zesty.io/docs/api-overview.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Instances REST API (authenticated)"
+  - field: headlessApi
+    value: [graphql]
+    url: https://docs.zesty.io/docs/graphql.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Endpoints available to power a GraphQL (GQL) server"
+  - field: templating
+    value: [parsley]
+    url: https://docs.zesty.io/docs/parsley-index.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "This index collects all Parsley syntax and methods."
+  - field: renderingModes
+    value: [static, server]
+    url: https://docs.zesty.io/docs/site-generators.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Zesty.io comes with built-in support for static site generation and server-side rendering."
+  - field: adminUi
+    value: yes, hosted Content Manager
+    url: https://docs.zesty.io/docs/instant-api-read-only.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "through the Zesty.io Content Manager"
+  - field: livePreview
+    value: yes
+    url: https://docs.zesty.io/docs/rendering.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "with its live preview feature, developers can see the impact of their changes in real time"
+  - field: userRoles
+    value: owner, admin and team roles per instance, plus custom granular roles
+    url: https://docs.zesty.io/docs/roles-permissions.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "User Roles and Permissions are applied to a user"
+  - field: sso
+    value: [OIDC]
+    url: https://docs.zesty.io/docs/okta-sso-configuration-guide.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "IdP-initiated Single Sign-On (OIDC) via Okta"
+  - field: i18n
+    value: content editing and delivery in over 160 languages
+    url: https://docs.zesty.io/docs/multilingual.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Zesty.io supports over 160 languages when editing and creating content."
+  - field: apiLimits
+    value: platform rate limits apply to headless requests, fingerprinted by client IP address and user agent
+    url: https://docs.zesty.io/docs/headless-rate-limiting.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "in order for Zesty.io platform rate limits to not have a negative impact on servicing your traffic"
+notFound: [firstRelease, foundedYear, parent, basedOn, runtime, runtimeMin, language, repository, databases, contentStore, installMethod, selfHostOption, hqCountry, multisite, importsFrom, regions, paidEditions, paidEdition, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, facebook, newsletter, usageShare, reportedInstalls, wikidata]
+unreadable: []
+notes: >
+  Hosted only; criterion 2 is waived. The platform runs on Google Cloud Platform (App Engine and Cloud Run) and uses Fastly for its cloud CDN, per the security and hosting docs; no region is stated. The GitHub organization zesty-io holds the design system, GraphQL starter and SDK repositories, and the npm SDK @zesty-io/sdk (191 a week) is an SDK figure, kept here and not in the record. Every content item has a paired JSON endpoint, and the Instance Content API is open JSON; GraphQL endpoints are turned on in Manager UI > Settings > Developer; the Instances REST API is authenticated; custom JSON endpoints are built in the code editor. Webhooks (with valid URLs and verification secrets) are documented; webhooks are a coined kind and stay in notes. Microsoft Entra sign-in uses OIDC on the common tenant; the Okta guide describes IdP-initiated OIDC. Pricing lists Single-sign on (SSO) for the Enterprise plan. Pricing shows a free Community plan with user and API call limits and paid Start Up, Business and Enterprise plans; no prices are recorded. The docs say "Zesty.io supports over 160 languages" for editing content; the Business plan lists 15 languages and Start Up 2, which are plan limits. The Twitter and Facebook footer links appear only on a page that answers 404, so no social fields are recorded. The about page says the company has 10 years in business (2025) and does not state a founding year.

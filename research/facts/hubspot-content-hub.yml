@@ -1,0 +1,59 @@
+id: hubspot-content-hub
+name: HubSpot Content Hub
+status: stub
+checkedAt: 2026-11-04
+description: Content marketing and website product inside the HubSpot customer platform, with a drag-and-drop website builder and a hosted CMS.
+facts:
+  - field: homepage
+    value: https://www.hubspot.com/products/content
+    url: https://www.hubspot.com/products/content
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Build and manage your website with a scalable CMS."
+  - field: maintainer
+    value: HubSpot, Inc.
+    url: https://legal.hubspot.com/terms-of-service
+    checkedAt: 2026-11-04
+    via: page
+    quote: "HubSpot, Inc., Two Canal Park, Cambridge, MA 02141, U.S.A."
+  - field: hqCountry
+    value: US
+    url: https://legal.hubspot.com/terms-of-service
+    checkedAt: 2026-11-04
+    via: page
+    quote: "HubSpot, Inc., Two Canal Park, Cambridge, MA 02141, U.S.A."
+  - field: categories
+    value: [cms]
+    url: https://www.hubspot.com/products/content
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Build and manage your website with a scalable CMS."
+  - field: pricingPage
+    value: https://www.hubspot.com/pricing/content
+    url: https://www.hubspot.com/pricing/content
+    checkedAt: 2026-11-04
+    via: page
+  - field: facebook
+    value: https://www.facebook.com/hubspot
+    url: https://www.hubspot.com/products/content
+    checkedAt: 2026-11-04
+    via: page
+  - field: instagram
+    value: https://www.instagram.com/hubspot/
+    url: https://www.hubspot.com/products/content
+    checkedAt: 2026-11-04
+    via: page
+  - field: x
+    value: https://x.com/HubSpot
+    url: https://www.hubspot.com/products/content
+    checkedAt: 2026-11-04
+    via: page
+  - field: youtube
+    value: https://youtube.com/user/HubSpot
+    url: https://www.hubspot.com/products/content
+    checkedAt: 2026-11-04
+    via: page
+notFound: [docs, firstRelease, parent, runtime, basedOn, templating, databases, i18n, sso, userRoles, livePreview, regions, selfHostOption, installMethod, licenseModel, license, headlessApi, multisite]
+unreadable: [https://developers.hubspot.com/docs/cms]
+notes: >
+  Stub, because criterion 1 is open: the homepage describes a drag-and-drop website builder and a hosted CMS, and the rule for a website builder is that it is out unless it gives the creator's own front end an API. HubSpot publishes a Pages API (developers.hubspot.com/docs/api-reference/legacy/cms/pages/guide, the legacy Pages API guide) that says it is used to "create, manage, and publish website and landing pages", which manages the site rather than delivering content to a separate front end, so it is not recorded as headlessApi. The CMS developer documentation at developers.hubspot.com/docs/cms answers with a login page to the research user agent, so themes, HubL and any delivery API stay unread. The reviewer should decide: reject under criterion 1 as a website builder with no front-end API, or accept if the readable CMS documentation shows a delivery API a creator's own front end calls. Free and premium plans are named on the homepage; the pricing page renders no text without JavaScript, so plan details are unread and no prices are recorded. The community forum at community.hubspot.com answers 403 to the research user agent and is unread. The Terms name HubSpot, Inc. as the contracting entity for customers in North and South America and give its Cambridge, Massachusetts address. HubSpot's own CRM and marketing hub are not this record.

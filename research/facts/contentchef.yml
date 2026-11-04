@@ -1,0 +1,59 @@
+id: contentchef
+name: ContentChef
+status: hosted-service
+checkedAt: 2026-11-04
+description: Hosted headless content management service with a schema language, content APIs and a web app for authors.
+facts:
+  - field: name
+    value: ContentChef
+    url: https://www.contentchef.io/
+    checkedAt: 2026-11-04
+    via: page
+  - field: homepage
+    value: https://www.contentchef.io/
+    url: https://www.contentchef.io/
+    checkedAt: 2026-11-04
+    via: page
+  - field: docs
+    value: https://docs.contentchef.io/
+    url: https://docs.contentchef.io/
+    checkedAt: 2026-11-04
+    via: page
+  - field: pricingPage
+    value: https://www.contentchef.io/pricing
+    url: https://www.contentchef.io/pricing
+    checkedAt: 2026-11-04
+    via: page
+  - field: maintainer
+    value: Byte-Code S.p.A
+    url: https://www.contentchef.io/terms-and-conditions
+    checkedAt: 2026-11-04
+    via: page
+    quote: "operated by Byte-Code S.p.A"
+  - field: hqCountry
+    value: IT
+    url: https://www.iubenda.com/privacy-policy/41328736
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Via Mauro Macchi,38 , 20123Milano (MI)"
+  - field: categories
+    value: [headless-cms]
+    url: https://www.contentchef.io/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "The headless CMS designed to accelerate the success of any digital experience"
+  - field: adminUi
+    value: yes, hosted web app for content authoring
+    url: https://www.contentchef.io/pricing
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Create, manage and publish all of your content from a central hub."
+  - field: facebook
+    value: https://www.facebook.com/contentchefCMS/
+    url: https://www.contentchef.io/
+    checkedAt: 2026-11-04
+    via: page
+notFound: [firstRelease, foundedYear, parent, basedOn, runtime, runtimeMin, language, repository, templating, databases, contentStore, renderingModes, installMethod, selfHostOption, headlessApi, i18n, livePreview, multisite, userRoles, sso, importsFrom, regions, apiLimits, paidEditions, paidEdition, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, wikidata]
+unreadable: [https://docs.contentchef.io/ (renders in a script; no text)]
+notes: >
+  Hosted only; criterion 2 is waived. The API documentation is a Swagger UI on the project's resources page (contentchef.github.io/contentchef-resources); the page does not say REST or GraphQL, so headlessApi is left out and the reviewer decides. The docs landing page at docs.contentchef.io renders in a script and has no readable text. The hqCountry fact cites the privacy policy linked from the site footer (hosted at iubenda), which lists Byte-Code SpA as owner at Via Mauro Macchi 38, Milano (MI); the contact page shows the same street in Milan, Italy. The footer reads "ContentChef 2020." and the CSV note says the npm SDK was released in 2026; no firstRelease is recorded from a copyright line. The npm SDK @contentchef/contentchef-node (101 a week) and the Postman collections in a GitHub repository are not recorded. The site names a 30-day trial with no credit card, and the Freelance, Team, Agency and Enterprise plans list users, spaces, media, API calls and bandwidth; no prices are recorded. The Enterprise plan asks "SSO?" as a question without naming a protocol, so sso stays out. The features page describes a schema language for content models, a UI schema builder, preview before release and scheduled visibility dates; the record does not carry a live preview field. WebHooks are listed as a Team feature; webhooks are a coined kind and stay in notes. The LinkedIn link (linkedin.com/company/content-chef-cms) is coined and stays in notes. The Enterprise plan offers shared or dedicated infrastructure, which is hosting, not a self-install.

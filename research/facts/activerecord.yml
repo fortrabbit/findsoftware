@@ -1,0 +1,126 @@
+id: activerecord
+name: Active Record
+status: accepted
+checkedAt: 2026-11-04
+description: Object-relational mapping library for Ruby that maps classes to database tables, distributed as part of Rails.
+facts:
+  - field: homepage
+    value: https://rubyonrails.org
+    url: https://rubyonrails.org/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Active Records make modeling easy"
+  - field: repository
+    value: https://github.com/rails/rails
+    url: https://api.github.com/repos/rails/rails
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://guides.rubyonrails.org/active_record_basics.html
+    url: https://github.com/rails/rails/blob/main/activerecord/README.rdoc
+    checkedAt: 2026-11-04
+    via: page
+    quote: "You can read more about Active Record in the"
+  - field: maintainer
+    value: David Heinemeier Hansson
+    url: https://github.com/rails/rails/blob/main/activerecord/MIT-LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) David Heinemeier Hansson"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/rails
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/rails/rails
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://github.com/rails/rails/blob/v8.1.4.1/activerecord/activerecord.gemspec
+    checkedAt: 2026-11-04
+    via: page
+    quote: 's.required_ruby_version = ">= 3.2.0"'
+  - field: runtimeMin
+    value: "3.2"
+    url: https://github.com/rails/rails/blob/v8.1.4.1/activerecord/activerecord.gemspec
+    checkedAt: 2026-11-04
+    via: page
+    quote: 's.required_ruby_version = ">= 3.2.0"'
+  - field: basedOn
+    value: rails
+    url: https://github.com/rails/rails/blob/v8.1.4.1/activerecord/activerecord.gemspec
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Object-relational mapper framework (part of Rails)."
+  - field: categories
+    value: [orm]
+    url: https://github.com/rails/rails/blob/main/activerecord/README.rdoc
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Active Record is an implementation of the object-relational mapping (ORM)"
+  - field: databases
+    value: [mysql, mariadb, postgres, sqlite]
+    url: https://guides.rubyonrails.org/active_record_basics.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "it will run in MySQL, MariaDB, PostgreSQL, SQLite, and others"
+  - field: installMethod
+    value: RubyGems (gem install activerecord)
+    url: https://github.com/rails/rails/blob/main/activerecord/README.rdoc
+    checkedAt: 2026-11-04
+    via: page
+    quote: "The latest version of Active Record can be installed with RubyGems"
+  - field: rubygemsName
+    value: activerecord
+    url: https://rubygems.org/api/v1/gems/activerecord.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: rubygemsDownloads
+    value: 862178076 total
+    url: https://rubygems.org/api/v1/gems/activerecord.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/rails/rails/blob/main/activerecord/README.rdoc
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Active Record is released under the MIT license"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/rails/rails/blob/main/activerecord/README.rdoc
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Active Record is released under the MIT license"
+  - field: currentMajor
+    value: 8
+    url: https://github.com/rails/rails/releases/tag/v8.1.4.1
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: "2026-11-04"
+    url: https://rubygems.org/api/v1/gems/activerecord.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: "2008"
+    url: https://api.github.com/repos/rails/rails/tags
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 58844
+    url: https://api.github.com/repos/rails/rails
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 371
+    url: https://api.github.com/repos/rails/rails/contributors
+    checkedAt: 2026-11-04
+    via: api
+notFound: [hqCountry, parent, wikidata, pricingPage, usageShare, reportedInstalls, forum, discord, mastodon, bluesky, x, newsletter, subreddit, pluginDirectory, sso, userRoles, headlessApi, adminUi, runsAs, renderingModes, npmName, rubygemsName]
+unreadable: []
+notes: >
+  Active Record is one gem in the rails/rails monorepo, so stars (58,844) and contributors (371) belong to the whole Rails project and are recorded from the repository, not from the library. The homepage is the Rails project site; Active Record has no site of its own, so the homepage quote is from rubyonrails.org. The README says "Source code can be downloaded as part of the Rails project on GitHub" and points to the activerecord directory, so the repository is the monorepo root. The rubygems figure is the activerecord gem total; the rubygems version list holds no release before 2009 although the GitHub tags start at v0.9.1 in 2008. The version 8.1.4.1 is the newest stable gem and tag and was released 2026-11-04; the 7.2 and 8.0 maintenance lines are older majors. The gemspec reads the version from RAILS_VERSION, so the gem version is the monorepo version. The copyright line in MIT-LICENSE also names Arel's authors ("Arel originally copyright (c) 2007-2016 Nick Kallen, Bryan Helmkamp, Emilio Tagua, Aaron Patterson"); other legal entities go to notes, so the maintainer follows the first line only. The README calls Active Record "Object-relational mapping in Rails" and says "Active Record is an implementation of the object-relational mapping (ORM) pattern"; the gemspec summary says "(part of Rails)", which is the basedOn statement. The guide names MySQL, MariaDB, PostgreSQL and SQLite; the README names built-in adapters for MySQL, PostgreSQL and SQLite3. The README lists associations, validations, callbacks, transactions, migrations and database adapters as its features. The README says Active Record "provides a base class that, when subclassed, sets up a mapping between the new class and an existing table in the database".

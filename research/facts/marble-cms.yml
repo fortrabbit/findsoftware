@@ -1,0 +1,85 @@
+id: marble-cms
+name: Marble
+status: hosted-service
+checkedAt: 2026-11-04
+description: Headless CMS for blogs, changelogs and articles, offered as a hosted workspace with a dashboard, a REST API and media hosting.
+facts:
+  - field: homepage
+    value: https://marblecms.com
+    url: https://marblecms.com/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Marble is a headless CMS designed specifically for managing blogs, changelogs, and articles."
+  - field: docs
+    value: https://docs.marblecms.com
+    url: https://docs.marblecms.com/introduction
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Marble is a simple, open-source headless CMS for writers and developers"
+  - field: categories
+    value: [headless-cms, hosted-service]
+    url: https://docs.marblecms.com/introduction
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Marble is a simple, open-source headless CMS for writers and developers"
+  - field: maintainer
+    value: Marble
+    url: https://marblecms.com/terms
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Marble retains all rights, title, and interest in its software, trademarks, and intellectual property."
+  - field: headlessApi
+    value: [rest]
+    url: https://docs.marblecms.com/api/introduction
+    checkedAt: 2026-11-04
+    via: page
+    quote: "The Marble API is organized around REST."
+  - field: adminUi
+    value: yes, web dashboard
+    url: https://marblecms.com/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "You can create, edit and manage content through our dashboard"
+  - field: userRoles
+    value: [owner, admin, member]
+    url: https://docs.marblecms.com/concepts/workspaces
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Each member has a role that determines what they can do"
+  - field: multisite
+    value: yes, one workspace per site
+    url: https://docs.marblecms.com/concepts/workspaces
+    checkedAt: 2026-11-04
+    via: page
+    quote: "If you manage multiple sites, create a separate"
+  - field: hostedOffering
+    value: Marble hosted workspace at marblecms.com
+    url: https://docs.marblecms.com/quickstart
+    checkedAt: 2026-11-04
+    via: page
+    quote: "You can sign up with your email, Google, or a GitHub account."
+  - field: pricingPage
+    value: https://marblecms.com/pricing
+    url: https://marblecms.com/pricing
+    checkedAt: 2026-11-04
+    via: page
+  - field: alternativeTo
+    value: [ghost, sanity, payload, strapi, wordpress, contentful]
+    url: https://marblecms.com/compare
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Plain comparisons of Marble and other content platforms"
+  - field: x
+    value: https://x.com/usemarblecms
+    url: https://marblecms.com/
+    checkedAt: 2026-11-04
+    via: page
+  - field: discord
+    value: https://discord.marblecms.com
+    url: https://marblecms.com/
+    checkedAt: 2026-11-04
+    via: page
+notFound: [repository, repoOwnerType, parent, maintainerType, hqCountry, basedOn, forkOf, successorOf, wikidata, firstRelease, currentMajor, latestReleaseDate, license, language, runtime, runtimeMin, runsAs, contentStore, databases, templating, renderingModes, installMethod, paidEdition, freeTier, apiLimits, regions, selfHostOption, i18n, livePreview, sso, importsFrom, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, newsletter, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, githubStargazers, contributors, packagistName, endoflifeId, supportedVersions, dependentRepos, dependentPackages, httpArchiveSites]
+unreadable: []
+notes: >
+  Hosted service: the vendor cloud at marblecms.com is the product, and the docs quickstart starts with sign-up and a workspace. The source is public but the docs give no self-install guide: the repository (github.com/usemarble/marble, AGPL-3.0, 384 stars on 2026-11-04, no GitHub release or tag, TypeScript) has a contributing guide that runs the stack locally for development, with PostgreSQL, Redis, Google and GitHub OAuth apps and a Cloudflare R2 bucket, and the docs index has no self-hosting or production deployment page. Under the wave 45 rule a contributor setup is no self-install guide, so the status is hosted-service and no installMethod, license or repository is recorded. The SDK and the Next.js, Astro and TanStack example repositories are separate repositories and are not recorded. The terms and privacy pages name no legal entity and give only a support address, and the terms' governing law (Nigeria) is not a headquarters statement, so the maintainer is the product name and hqCountry is unknown. The compare page covers Ghost, Sanity, Payload, Strapi, WordPress and Contentful. Plans (Free, Hobby, Pro) carry request, author, media and webhook limits that change often and are not recorded. Realtime webhooks, the MCP server, Markdown and MDX import, JSON export and Content Intelligence (readability scoring) appear on the homepage and docs and are not recorded as fields. The sign-in providers (email, Google, GitHub) are the dashboard login and are not recorded as sso.

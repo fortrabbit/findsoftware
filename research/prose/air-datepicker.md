@@ -1,0 +1,1 @@
+Air Datepicker is a datepicker written in plain JavaScript that attaches a calendar to a text field, or to a block or inline element. The README says it works in modern browsers that support native CSS variables. The package is installed from npm, and the documentation describes localizations that can be passed in or written by the developer.

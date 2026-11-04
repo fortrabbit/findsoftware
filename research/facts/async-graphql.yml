@@ -1,0 +1,130 @@
+id: async-graphql
+name: async-graphql
+status: accepted
+checkedAt: 2026-11-04
+description: GraphQL server library for Rust that defines schemas with procedural macros and runs on async/await.
+facts:
+  - field: homepage
+    value: https://async-graphql.github.io/async-graphql/en/index.html
+    url: https://async-graphql.github.io/async-graphql/en/index.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Async-graphql is a GraphQL server-side library implemented in Rust"
+  - field: repository
+    value: https://github.com/async-graphql/async-graphql
+    url: https://github.com/async-graphql/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://async-graphql.github.io/async-graphql/en/index.html
+    url: https://async-graphql.github.io/async-graphql/en/index.html
+    checkedAt: 2026-11-04
+    via: page
+  - field: firstRelease
+    value: 2020
+    url: https://crates.io/api/v1/crates/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: sunli
+    url: https://raw.githubusercontent.com/async-graphql/async-graphql/master/Cargo.toml
+    checkedAt: 2026-11-04
+    via: page
+    quote: 'authors = ["sunli'
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/async-graphql/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/async-graphql/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [graphql-server]
+    url: https://async-graphql.github.io/async-graphql/en/index.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Async-graphql is a GraphQL server-side library implemented in Rust"
+  - field: runtime
+    value: [rust]
+    url: https://crates.io/api/v1/crates/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtimeMin
+    value: "1.89"
+    url: https://crates.io/api/v1/crates/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtimeMin
+    value: "1.86"
+    url: https://github.com/async-graphql/async-graphql/blob/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Minimum supported Rust version: 1.86.0 or later"
+  - field: installMethod
+    value: [cargo]
+    url: https://async-graphql.github.io/async-graphql/en/quickstart.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: 'async-graphql = "4.0"'
+  - field: license
+    value: MIT OR Apache-2.0
+    url: https://github.com/async-graphql/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/async-graphql/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 7
+    url: https://crates.io/api/v1/crates/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-01-20
+    url: https://crates.io/api/v1/crates/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-04-21
+    url: https://crates.io/api/v1/crates/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 3689
+    url: https://github.com/async-graphql/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 254
+    url: https://github.com/async-graphql/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+  - field: crateName
+    value: async-graphql
+    url: https://crates.io/api/v1/crates/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+  - field: crateDownloads
+    value: "4324908 (recent, last 90 days)"
+    url: https://crates.io/api/v1/crates/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 139
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 451
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/async-graphql
+    checkedAt: 2026-11-04
+    via: api
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, pricingPage, paidEdition, runsAs, renderingModes, databases, sso, adminUi, templating, i18n, forum, discord, x, bluesky, mastodon, subreddit, newsletter, pluginDirectory, pluginCount, npmName, npmWeeklyDownloads, pypiName, reportedInstalls, endoflifeId, wikidata, usageShare, importsFrom]
+unreadable: []
+notes: >
+  The repository has no GitHub releases, and its tags stop at v7.0.13 while crates.io publishes 7.2.1 (2026-01-20) with no matching tag; latestReleaseDate and currentMajor come from crates.io, which states the same major as the tags. Prerelease 8.0.0-rc.5 (2026-04-21) is the newest line on crates.io and the repository's Cargo.toml version. firstRelease is the year of crate version 0.5.0 (2020-03-03), the oldest upload. The book's quickstart and integration block still show async-graphql = "4.0"; the install line is quoted as the page states it, and the current crate is 7.x. The README says the minimum supported Rust version is 1.86.0, while the crate manifest (rust-version 1.89.0 on crates.io for the latest release) gives 1.89; both are recorded as runtimeMin entries. The root https://async-graphql.github.io/ answers with a meta refresh to the book, so homepage is the book's final URL. The README names Poem, Actix-web, Warp, Rocket and Axum integrations as crates glued to a web server; they are not basedOn, because the project does not call itself a binding of any of them. The book's introduction names Juniper as the library the author used before, with the reason it was left; no record exists, so alternativeTo is absent. The README's feature list names WebSocket subscriptions, multipart uploads and Apollo Federation v2; they are not fields. Maintainer is the first Cargo.toml authors entry "sunli"; a second author, Koxiaet, is listed and the manifest's contact address is not recorded. Dual license "MIT OR Apache-2.0" is stated once in the README and the crate metadata, so it is one entry. The repository's contributors endpoint reports 254 pages at one per page, read from the rel="last" link.

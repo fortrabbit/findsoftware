@@ -1,0 +1,124 @@
+id: askama
+name: Askama
+status: accepted
+checkedAt: 2026-11-04
+description: Rust template engine based on Jinja that generates type-safe Rust code from templates at compile time.
+facts:
+  - field: homepage
+    value: https://askama.rs
+    url: https://askama.rs/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Askama implements a template rendering engine based on"
+  - field: repository
+    value: https://github.com/askama-rs/askama
+    url: https://api.github.com/repos/askama-rs/askama
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://askama.rs/en/stable/
+    url: https://raw.githubusercontent.com/askama-rs/askama/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "You can find the documentation about our syntax, features, configuration in our book"
+  - field: maintainer
+    value: Dirkjan Ochtman
+    url: https://raw.githubusercontent.com/askama-rs/askama/v0.16.1/LICENSE-MIT
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2017-2020 Dirkjan Ochtman"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/askama-rs/askama
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [templating]
+    url: https://raw.githubusercontent.com/askama-rs/askama/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "implements a template rendering engine based on"
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/askama-rs/askama
+    checkedAt: 2026-11-04
+    via: api
+  - field: templating
+    value: [jinja2]
+    url: https://raw.githubusercontent.com/askama-rs/askama/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "implements a template rendering engine based on"
+  - field: runtime
+    value: [rust]
+    url: https://raw.githubusercontent.com/askama-rs/askama/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Works on stable Rust"
+  - field: runtimeMin
+    value: "1.88"
+    url: https://raw.githubusercontent.com/askama-rs/askama/v0.16.1/Cargo.toml
+    checkedAt: 2026-11-04
+    via: page
+    quote: 'rust-version = "1.88"'
+  - field: installMethod
+    value: cargo add askama
+    url: https://raw.githubusercontent.com/askama-rs/askama/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "cargo add askama"
+  - field: license
+    value: MIT OR Apache-2.0
+    url: https://raw.githubusercontent.com/askama-rs/askama/v0.16.1/Cargo.toml
+    checkedAt: 2026-11-04
+    via: page
+    quote: 'license = "MIT OR Apache-2.0"'
+  - field: currentMajor
+    value: 0
+    url: https://github.com/askama-rs/askama/releases/tag/v0.16.1
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-04
+    url: https://github.com/askama-rs/askama/releases/tag/v0.16.1
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://crates.io/api/v1/crates/askama
+    checkedAt: 2026-11-04
+    via: api
+  - field: crateName
+    value: askama
+    url: https://crates.io/api/v1/crates/askama
+    checkedAt: 2026-11-04
+    via: api
+  - field: crateDownloads
+    value: 59325434 total
+    url: https://crates.io/api/v1/crates/askama
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 179
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/askama
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 1065
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/askama
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 1250
+    url: https://api.github.com/repos/askama-rs/askama
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 143
+    url: https://api.github.com/repos/askama-rs/askama/contributors
+    checkedAt: 2026-11-04
+    via: api
+notFound: [hqCountry, basedOn, parent, alternativeTo, importsFrom, databases, headlessApi, adminUi, sso, userRoles, i18n, multisite, livePreview, renderingModes, runsAs, contentStore, selfHostOption, hostedOffering, paidEdition, pricingPage, forkOf, successorOf, pluginDirectory, pluginCount, forum, discord, bluesky, mastodon, x, newsletter, subreddit, npmName, packagistName, pypiName, reportedInstalls, usageShare, wikidata, endoflifeId, latestPrereleaseDate, mavenCoordinates]
+unreadable: []
+notes: >
+  Maintainer: the LICENSE-MIT copyright line names Dirkjan Ochtman (2017-2020); the crates.io owner list names djc only; the repository is owned by the askama-rs organization, which lists no maintainer on the pages read. Reviewer decision whether the recorded maintainer should be the organization. License: GitHub detects Apache-2.0 alone (the detected text is the Apache file), but the workspace Cargo.toml at v0.16.1 states MIT OR Apache-2.0 and both LICENSE-MIT and LICENSE-APACHE are in the tag; recorded once as the Cargo wording. Lineage: the README says Askama was forked into Rinja and the fork was merged back into Askama; the repository is under askama-rs (created 2024-06-17), while the crate's first upload is 0.1.0 of 2017-02-15, so firstRelease is the crate upload year. A GitHub release named rinja/v0.4.0+deprecated (2025-03-29) sits in the repository; it is a Rinja artifact and is not counted as an Askama release. Not recorded: basedOn for Jinja (the template syntax is based on Jinja, which is not a record of its own); the book's install snippet shows askama 0.14.0 while the current stable is 0.16.1, so the book snippet is outdated and no version is recorded from it. Runtime: the README states "Works on stable Rust"; the crate is compiled into the user's crate, so no server runtime or runsAs is recorded. The homepage, README, Cargo manifests and the book's print page were read: the book describes web framework integration through the askama_web crate (actix-web, axum, warp and others) and states no database or i18n support. Playground at play.askama.rs and the book source (book/src) are the project's own pages. The crate's download count is the crates.io total; 90-day recent downloads are 16686769 at the same endpoint.

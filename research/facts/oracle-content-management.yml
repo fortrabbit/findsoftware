@@ -1,0 +1,52 @@
+id: oracle-content-management
+name: Oracle Content Management
+status: hosted-service
+checkedAt: 2026-11-04
+description: Cloud-based content hub from Oracle for managing content and delivering it across channels, with a REST content delivery API.
+facts:
+  - field: name
+    value: Oracle Content Management
+    url: https://docs.oracle.com/en/cloud/paas/content-cloud/index.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Oracle Content Management is a cloud-based content hub"
+  - field: homepage
+    value: https://docs.oracle.com/en/cloud/paas/content-cloud/index.html
+    url: https://docs.oracle.com/en/cloud/paas/content-cloud/index.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Oracle Content Management is a cloud-based content hub"
+  - field: docs
+    value: https://docs.oracle.com/en/cloud/paas/content-cloud/index.html
+    url: https://docs.oracle.com/en/cloud/paas/content-cloud/index.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Oracle Content Management - Get Started"
+  - field: maintainer
+    value: Oracle Corporation
+    url: https://www.oracle.com/legal/terms/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "and Oracle Corporation and its affiliated companies"
+  - field: maintainerType
+    value: company
+    url: https://www.oracle.com/legal/terms/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "and Oracle Corporation and its affiliated companies"
+  - field: categories
+    value: [headless-cms]
+    url: https://docs.oracle.com/en/cloud/paas/content-cloud/headless-cms.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "use Oracle Content Management as a headless content management system (CMS)"
+  - field: headlessApi
+    value: [rest]
+    url: https://docs.oracle.com/en/cloud/paas/content-cloud/apisdk.html
+    checkedAt: 2026-11-04
+    via: page
+    quote: "REST API for Content Delivery"
+notFound: [adminUi, sso, userRoles, i18n, multisite, livePreview, importsFrom, installMethod, runsAs, renderingModes, contentStore, databases, license, licenseModel, paidEdition, pricingPage, freeTier, firstRelease, currentMajor, latestReleaseDate, githubStargazers, contributors, npmName, npmWeeklyDownloads, usageShare, reportedInstalls, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, hqCountry, parent, regions, selfHostOption, apiLimits, endoflifeId]
+unreadable: [https://www.oracle.com/content-management/, https://www.oracle.com/cx/content-management/]
+notes: >
+  The product URL https://www.oracle.com/content-management/ answers 200 but redirects to https://www.oracle.com/cx/marketing/, an Oracle Fusion Marketing page ("Agentic Marketing for Enterprise Growth") that does not mention content management. The product's own docs at docs.oracle.com/en/cloud/paas/content-cloud are current, with pages for Headless CMS, APIs and SDKs, System Administration and Starter vs. Premium Edition, so the record is hosted-service rather than discontinued (wave 54 ruling); the docs landing is used as homepage because the product URL no longer shows the product, and a reviewer should confirm that choice. The Headless CMS page lists GraphQL only as a concept link title, so no graphql value is recorded. The Starter vs. Premium Edition page ("To take advantage of the full feature set and to increase the number of users and other items, upgrade to the Premium Edition") is a hosted plan tier and is not recorded as paidEdition; its Starter tier is described as "a free content service tier with a limited feature set". Roles, security and sign-in pages are named on the administration page but their URLs did not resolve from the link list, so sso and userRoles are unknown. The legal notice for the privacy page names Oracle America Inc. as a data privacy framework party; that is not recorded as the maintainer. No page gives a headquarters address with a country, so hqCountry is unknown. The docs menu also lists asset management, document collaboration and content capture sections, but no sentence names enterprise content management, so ecm is not recorded as a category. Pages on localization policies, multilingual sites and custom roles appear only as menu or topic titles with no sentence stating the feature, so i18n and userRoles stay unknown. The Oracle docs use the product name "Oracle Content Management (OCM)" in the groups table without a separate version or release history, so no release fields are recorded.
