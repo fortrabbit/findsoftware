@@ -72,6 +72,17 @@ function indexAfter(sorted: number[], before: (held: number) => boolean): number
  * record never counts a figure it lacks.
  */
 export function usageBands(records: { id: string; figures: Figures }[]): Map<string, number> {
+  return new Map(
+    [...usagePlaces(records)].map(([id, place]) => [id, Math.min(5, Math.floor(place * 5) + 1)] as const),
+  );
+}
+
+/**
+ * Each record's place among the scored records, 0 for the least used and just
+ * under 1 for the most used: the share of records scoring below it. The bands
+ * are this place cut into fifths; momentum reads it directly.
+ */
+export function usagePlaces(records: { id: string; figures: Figures }[]): Map<string, number> {
   const held = new Map<string, number[]>();
   for (const { figures } of records)
     for (const [field, value] of Object.entries(figures)) held.set(field, [...(held.get(field) ?? []), value!]);
@@ -84,9 +95,7 @@ export function usageBands(records: { id: string; figures: Figures }[]): Map<str
   }
 
   const scores = scored.map((entry) => entry.score).sort((a, b) => a - b);
-  return new Map(
-    scored.map(({ id, score }) => [id, Math.min(5, Math.floor(percentile(scores, score) * 5) + 1)] as const),
-  );
+  return new Map(scored.map(({ id, score }) => [id, percentile(scores, score)] as const));
 }
 
 /**

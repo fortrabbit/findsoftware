@@ -7,7 +7,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { parse as parseYaml } from 'yaml';
 import { isListed, loadSoftware } from './providers';
-import { loadBands } from './usage-data';
+import { loadUsagePlaces } from './usage-data';
 import { momentumOf, type MomentumFigures, type Thresholds, type Verdict } from './momentum';
 
 const figuresFile = 'src/data/momentum.json';
@@ -21,10 +21,10 @@ const make = async (): Promise<Map<string, Verdict>> => {
     MomentumFigures
   >;
   const thresholds = parseYaml(readFileSync(thresholdsFile, 'utf8')) as Thresholds;
-  const bands = await loadBands();
+  const places = await loadUsagePlaces();
   const verdicts = new Map<string, Verdict>();
   for (const entry of (await loadSoftware()).filter(isListed)) {
-    verdicts.set(entry.id, momentumOf(Object.hasOwn(figures, entry.id) ? figures[entry.id] : undefined, entry.data, bands.get(entry.id), thresholds));
+    verdicts.set(entry.id, momentumOf(Object.hasOwn(figures, entry.id) ? figures[entry.id] : undefined, entry.data, places.get(entry.id), thresholds));
   }
   return verdicts;
 };

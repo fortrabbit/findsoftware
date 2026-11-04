@@ -35,9 +35,9 @@ The register, the lists and the graph show the records with momentum by default.
 
 A record has momentum when it had a release, a pre-release or a push to its repository in the last 12 months, and one of these:
 
-- **Activity:** at least 104 commits to the default branch in the last 13 weeks, and in the last 26 weeks at least one and a half times as many as in the 26 before.
-- **Downloads:** up 25% or more against the same weeks a year ago, from at least 4,000 npm downloads in 28 days or a daily average of 33 on Packagist.
-- **Wide use:** usage band 5, the top fifth on the [Usage](/usage/) page.
+- **Activity:** at least 200 commits to the default branch in the last 13 weeks, and in the last 26 weeks at least twice as many as in the 26 before.
+- **Downloads:** doubled or more against the same weeks a year ago, to at least 100,000 npm downloads in 28 days or a daily average of 1,000 on Packagist.
+- **Wide use:** the top tenth of the records on the [Usage](/usage/) page.
 
 A record not measured yet is shown. Growth counts a young project rising from few downloads the same as a large one, and wide use keeps a project people rely on when its activity is steady.
 

@@ -1,6 +1,6 @@
 /**
  * Momentum: whether a record is in the default view. Relevance today decides;
- * long-term use (the usage band) keeps a record in when its activity is flat.
+ * long-term use (the usage place) keeps a record in when its activity is flat.
  * A yes or a no, never a score and never an order: lists stay alphabetical.
  *
  * The figures are measured by scripts/momentum.mjs into src/data/momentum.json;
@@ -34,8 +34,8 @@ export interface Thresholds {
   commits: { last13Weeks: number; trend: number };
   /** Growth against a year ago, as a fraction. Today's figure must reach the floor, so 10 to 20 downloads is no growth; a small year-ago figure counts, so a young tool can pass. */
   downloads: { growth: number; npm28Floor: number; packagistDailyFloor: number };
-  /** A usage band at or above this keeps an active record in on its own. Absent turns it off. */
-  popularityBand?: number;
+  /** An active record in this top share of the usage places (0.1 is the top tenth) stays in on its own. Absent turns it off. */
+  popularityTop?: number;
 }
 
 export type Verdict =
@@ -62,7 +62,7 @@ const grew = (now: number | undefined, then: number | undefined, floor: number, 
 export function momentumOf(
   figures: MomentumFigures | undefined,
   record: { latestReleaseDate?: unknown; latestPrereleaseDate?: unknown },
-  band: number | undefined,
+  usagePlace: number | undefined,
   t: Thresholds,
 ): Verdict {
   if (!figures) return { shown: true, by: 'unmeasured' };
@@ -86,7 +86,7 @@ export function momentumOf(
   )
     return { shown: true, by: 'downloads' };
 
-  if (t.popularityBand !== undefined && band !== undefined && band >= t.popularityBand)
+  if (t.popularityTop !== undefined && usagePlace !== undefined && usagePlace >= 1 - t.popularityTop)
     return { shown: true, by: 'popularity' };
 
   return { shown: false, why: 'flat' };

@@ -1,20 +1,26 @@
 /**
- * The usage band of every register record, once per build. Only the register
- * takes part: a record beside it, or a stub, is not measured.
+ * The usage band and usage place of every register record, once per build.
+ * Only the register takes part: a record beside it, or a stub, is not measured.
  */
 import { loadProviders } from './providers';
-import { figuresOf, usageBands } from './usage';
+import { figuresOf, usageBands, usagePlaces } from './usage';
 
-let built: Promise<Map<string, number>> | undefined;
+let builtBands: Promise<Map<string, number>> | undefined;
+let builtPlaces: Promise<Map<string, number>> | undefined;
 
-const make = async (): Promise<Map<string, number>> => {
-  const providers = await loadProviders();
-  return usageBands(providers.map((provider) => ({ id: provider.id, figures: figuresOf(provider.data) })));
-};
+const records = async () =>
+  (await loadProviders()).map((provider) => ({ id: provider.id, figures: figuresOf(provider.data) }));
 
 /** `astro dev` reads afresh, so an edited record shows on the next request. */
 export const loadBands = (): Promise<Map<string, number>> => {
-  if (!import.meta.env.PROD) return make();
-  built ??= make();
-  return built;
+  if (!import.meta.env.PROD) return records().then(usageBands);
+  builtBands ??= records().then(usageBands);
+  return builtBands;
+};
+
+/** Each record's place among the scored records, 0 to just under 1, for momentum. */
+export const loadUsagePlaces = (): Promise<Map<string, number>> => {
+  if (!import.meta.env.PROD) return records().then(usagePlaces);
+  builtPlaces ??= records().then(usagePlaces);
+  return builtPlaces;
 };
