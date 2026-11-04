@@ -4,6 +4,8 @@ import zoomOut from 'bootstrap-icons/icons/zoom-out.svg?raw';
 import fullscreen from 'bootstrap-icons/icons/fullscreen.svg?raw';
 import fonts from 'bootstrap-icons/icons/fonts.svg?raw';
 import chevron from 'bootstrap-icons/icons/chevron-up.svg?raw';
+import close from 'bootstrap-icons/icons/x-lg.svg?raw';
+import reopen from 'bootstrap-icons/icons/diagram-3.svg?raw';
 
 /*
  * The one graph of the site, rendered once by Base.astro and kept by the router
@@ -15,6 +17,7 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean 
   { value: 'expand', label: 'Whole screen (Esc to leave)', icon: fullscreen, pressed: false },
   { value: 'labels', label: 'Show names', icon: fonts, pressed: false },
   { value: 'collapse', label: 'Hide the graph', icon: chevron, pressed: false },
+  { value: 'close', label: 'Close the graph', icon: close, pressed: false },
 ];
 ---
 
@@ -42,7 +45,18 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean 
               Graph
             </span>
           )}
-          <Fragment set:html={control.icon} />
+          {control.value === 'close' ? (
+            <>
+              <span class="graph-close-icon">
+                <Fragment set:html={control.icon} />
+              </span>
+              <span class="graph-reopen-icon">
+                <Fragment set:html={reopen} />
+              </span>
+            </>
+          ) : (
+            <Fragment set:html={control.icon} />
+          )}
         </button>
       ))
     }
@@ -61,6 +75,8 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean 
   const root = dock.querySelector<HTMLElement>('[data-graph]')!;
   let mounted: Promise<ReturnType<typeof mountGraph> | undefined> | undefined;
   let broken = false;
+  // Closed by the reader: nothing is fetched or drawn until it is opened again. The class is set before the first paint.
+  const isClosed = () => document.documentElement.classList.contains('graph-closed');
 
   const mount = () =>
     (mounted ??= Promise.all([import('../scripts/graph'), fetch('/graph.json').then((response) => response.json())])
@@ -86,7 +102,7 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean 
     const state = stateOf(document);
     dock.hidden = broken || state === 'off';
     describeWidth();
-    if (dock.hidden) return;
+    if (dock.hidden || isClosed()) return;
     if (mounted) return void mounted.then((graph) => graph?.show(state));
     const idle = window.requestIdleCallback ?? ((run: () => void) => setTimeout(run, 1));
     idle(() => void mount().then((graph) => graph?.show(state, true)));
@@ -162,6 +178,34 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean 
       localStorage.setItem('graph-folded', String(folded));
     } catch {}
   });
+
+  /*
+   * Closing takes the graph off the page: canvases, renderer, listeners and
+   * data go, and the column leaves the layout. The button stays where it was
+   * and brings the graph back, loaded the way a first page load loads it.
+   */
+  const closer = root.querySelector<HTMLButtonElement>('button[value="close"]')!;
+  const describeClosed = (closed: boolean) => {
+    closer.setAttribute('aria-pressed', String(closed));
+    closer.dataset.tip = closed ? 'Open the graph' : 'Close the graph';
+  };
+  describeClosed(isClosed());
+  closer.addEventListener('click', () => {
+    const closed = !isClosed();
+    document.documentElement.classList.toggle('graph-closed', closed);
+    describeClosed(closed);
+    try {
+      localStorage.setItem('graph-closed', String(closed));
+    } catch {}
+    if (closed) {
+      const leaving = mounted;
+      mounted = undefined;
+      void leaving?.then((graph) => graph?.destroy());
+      return;
+    }
+    describeWidth();
+    void mount().then((graph) => graph?.show(stateOf(document), true));
+  });
 </script>
 
 <style>
@@ -188,7 +232,7 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean 
     .graph.collapsed .graph-fold-text {
       display: inline;
     }
-    .graph.collapsed .graph-controls button:not([value='collapse']) {
+    .graph.collapsed .graph-controls button:not([value='collapse'], [value='close']) {
       display: none;
     }
     .graph.collapsed button[value='collapse'] {
@@ -241,8 +285,35 @@ const controls: { value: string; label: string; icon: string; pressed?: boolean 
     height: auto;
     border: 0;
   }
-  .graph.expanded .graph-controls button[value='collapse'] {
+  .graph.expanded .graph-controls button:is([value='collapse'], [value='close']) {
     display: none;
+  }
+  /* Closed: no frame, no canvas, no note; one button, where the controls put it. */
+  :global(html.graph-closed) .graph {
+    height: calc(var(--space-sm) * 2 + 1.75rem);
+    border-color: transparent;
+    background: none;
+  }
+  :global(html.graph-closed) :is(.graph-canvas, .graph-note, .graph-handle),
+  :global(html.graph-closed) .graph-controls button:not([value='close']) {
+    display: none;
+  }
+  .graph-reopen-icon,
+  :global(html.graph-closed) .graph-close-icon {
+    display: none;
+  }
+  :global(html.graph-closed) .graph-reopen-icon {
+    display: inline-flex;
+  }
+  .graph-close-icon {
+    display: inline-flex;
+  }
+  @media (min-width: 64rem) {
+    :global(html.graph-closed) .graph {
+      width: 0;
+      height: 0;
+      border: 0;
+    }
   }
   /* On the header's line: the same distance from the top and the right as the nav from the top and the left. */
   /* Why the graph shows what it shows, where the page's own record is not in it. */

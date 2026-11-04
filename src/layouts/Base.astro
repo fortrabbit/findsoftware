@@ -281,6 +281,8 @@ const structured = schema && graph(new URL(origin).origin, Array.isArray(schema)
             // The graph column's width, as the reader last dragged it.
             const width = Number(localStorage.getItem('graph-width'));
             if (width) root.style.setProperty('--graph-drag', `${width}px`);
+            // A graph the reader closed stays out of the layout from the first paint.
+            root.classList.toggle('graph-closed', localStorage.getItem('graph-closed') === 'true');
           } catch {}
 
           /*

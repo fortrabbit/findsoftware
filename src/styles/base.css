@@ -221,7 +221,7 @@ html:not(.js) .graph-dock {
 }
 
 @media (min-width: 64rem) {
-  body:has(> .graph-dock:not([hidden])) {
+  html:not(.graph-closed) body:has(> .graph-dock:not([hidden])) {
     /* A width dragged by the reader, kept on the root, or a share of the screen. */
     --graph-width: var(--graph-drag, clamp(22rem, 30vw, 34rem));
     --gutter: max(var(--space-md), (100vw - var(--graph-width) - var(--measure-page)) / 2);
@@ -249,5 +249,13 @@ html:not(.js) .graph-dock {
     top: 0;
     /* The heaviest rule on the page, so the edge reads as something to take hold of. */
     border-width: 0 0 0 var(--rule-heavy);
+  }
+
+  /* Closed, the column is gone and only its close button stays, at the corner where the column put it. */
+  html.graph-closed body > .graph-dock {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
   }
 }

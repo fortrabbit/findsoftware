@@ -449,13 +449,21 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
   themeWatch.observe(document.documentElement, { attributeFilter: ['data-theme'] });
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', repaint, { signal: teardown.signal });
 
-  // A dev-server reload runs this file again: the old graph lets go of its WebGL contexts first, or the browser runs out and drops layers.
-  import.meta.hot?.dispose(() => {
+  // Everything the graph holds: its listeners, observers, WebGL contexts and canvases.
+  const destroy = () => {
+    clearTimeout(moving);
+    clearTimeout(settling);
+    if (expanded) setExpanded(false);
     teardown.abort();
     themeWatch.disconnect();
     sized.disconnect();
     sigma.kill();
-  });
+    container.replaceChildren();
+    container.style.cursor = '';
+    for (const row of document.querySelectorAll('.graph-marked')) row.classList.remove('graph-marked');
+  };
+  // A dev-server reload runs this file again: the old graph lets go of its WebGL contexts first, or the browser runs out and drops layers.
+  import.meta.hot?.dispose(destroy);
 
   // Scrolling over the graph scrolls the page; a trackpad pinch arrives as a wheel event with ctrlKey and still zooms.
   root.addEventListener('wheel', (event) => event.ctrlKey || event.stopPropagation(), {
@@ -490,5 +498,7 @@ export function mountGraph(root: HTMLElement, { nodes, edges }: GraphData) {
       mark(undefined);
       apply(first ? 0 : 400);
     },
+    /** Takes the graph off the page for good; mounting again starts from the data. */
+    destroy,
   };
 }
