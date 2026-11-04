@@ -1,0 +1,1 @@
+Bookshelf.js is an object-relational mapper for Node.js, built on the Knex SQL query builder. The library is initialized with a Knex client that holds the database connection, and it is designed to work with PostgreSQL, MySQL and SQLite3. It is installed from npm next to Knex and one of the database drivers.

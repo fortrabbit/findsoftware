@@ -1,0 +1,123 @@
+id: bouncer
+name: Bouncer
+status: accepted
+checkedAt: 2026-11-04
+description: PHP library for managing roles, abilities and model ownership on Eloquent models, integrated with Laravel's gate.
+facts:
+  - field: repository
+    value: https://github.com/JosephSilber/bouncer
+    url: https://api.github.com/repos/JosephSilber/bouncer
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://github.com/JosephSilber/bouncer/blob/master/readme.md
+    url: https://github.com/JosephSilber/bouncer/blob/master/readme.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "managing roles and abilities for any app using Eloquent models"
+  - field: categories
+    value: [authorization]
+    url: https://github.com/JosephSilber/bouncer/blob/master/readme.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "managing roles and abilities for any app using Eloquent models"
+  - field: userRoles
+    value: yes
+    url: https://github.com/JosephSilber/bouncer/blob/master/readme.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "managing roles and abilities for any app using Eloquent models"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/JosephSilber/bouncer
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/JosephSilber/bouncer/blob/v1.0.4/composer.json
+    checkedAt: 2026-11-04
+    via: page
+    quote: '"php": "^8.2"'
+  - field: runtimeMin
+    value: "8.2"
+    url: https://github.com/JosephSilber/bouncer/blob/v1.0.4/composer.json
+    checkedAt: 2026-11-04
+    via: page
+    quote: '"php": "^8.2"'
+  - field: installMethod
+    value: composer require silber/bouncer
+    url: https://github.com/JosephSilber/bouncer/blob/master/readme.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "composer require silber/bouncer"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/JosephSilber/bouncer
+    checkedAt: 2026-11-04
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/JosephSilber/bouncer/blob/master/readme.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Bouncer is open-sourced software licensed under the MIT license"
+  - field: maintainer
+    value: Joseph Silber
+    url: https://raw.githubusercontent.com/JosephSilber/bouncer/master/LICENSE.txt
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) <Joseph Silber>"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/JosephSilber/bouncer
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: "2015"
+    url: https://repo.packagist.org/p2/silber/bouncer.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/JosephSilber/bouncer/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-03-18
+    url: https://api.github.com/repos/JosephSilber/bouncer/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 3577
+    url: https://api.github.com/repos/JosephSilber/bouncer
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 50
+    url: https://api.github.com/repos/JosephSilber/bouncer/contributors
+    checkedAt: 2026-11-04
+    via: api
+  - field: packagistName
+    value: silber/bouncer
+    url: https://packagist.org/packages/silber/bouncer.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: packagistDownloads
+    value: 5331530 total
+    url: https://packagist.org/packages/silber/bouncer.json
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 32
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/silber%2Fbouncer
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 309
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/silber%2Fbouncer
+    checkedAt: 2026-11-04
+    via: api
+notFound: [homepage, parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, renderingModes, contentStore, databases, templating, adminUi, headlessApi, i18n, multisite, livePreview, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, hqCountry, endoflifeId, npmName, npmWeeklyDownloads, pypiDownloads, nugetDownloads, rubygemsName]
+unreadable: []
+notes: >
+  The GitHub repository has no homepage field and the project names no site of its own, so homepage is absent and the README is the docs. The README's first sentence calls Bouncer "framework-agnostic", and the install section has two routes, "Installing Bouncer in a Laravel app" and "Installing Bouncer in a non-Laravel app", both starting with the same composer command; the package requires illuminate/* packages, which is a dependency and no basedOn statement, so basedOn is absent. The CSV's laravel tag is not a category here; the README's own wording is "roles and abilities". The Alternative section names spatie/laravel-permission as a package that "nicely integrates with Laravel's built-in gate", and the CSV row for laravel-permission is a candidate without a fact file, so alternativeTo is absent until that record exists; a reviewer should add it then. The composer.json at v1.0.4 names "php": "^8.2" and the README note says v1.0.2 requires PHP 8.2+ and Laravel/Eloquent 11+ with older Laravel lines on older releases; the runtime is the composer manifest value. The LICENSE copyright line contains the name in angle brackets, which is recorded without them. The first Packagist version is v0.0.1 dated 2015-09-17, earlier than the first GitHub release (v0.0.22, 2015-11-22), so firstRelease is 2015. The Packagist name silber/bouncer differs from the repository owner, as the install docs name it. The ecosyste.ms figures are for the Packagist package silber/bouncer. No Blade directive is recorded: the README says "Bouncer does not add its own blade directives" and points to Laravel's @can. The README's feature statements, kept as notes for the prose: it grants abilities to users and roles, restricts an ability to a model type or a model instance, forbids an ability, lets a user or role own a model, and checks abilities at Laravel's gate, where "Bouncer will automatically be consulted".

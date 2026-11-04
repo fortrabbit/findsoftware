@@ -1,0 +1,122 @@
+id: capybara
+name: Capybara
+status: accepted
+checkedAt: 2026-11-04
+description: "Ruby library that simulates a user's interactions with a web application in acceptance tests."
+facts:
+  - field: homepage
+    value: "https://teamcapybara.github.io/capybara/"
+    url: "https://teamcapybara.github.io/capybara/"
+    checkedAt: 2026-11-04
+    via: page
+  - field: repository
+    value: "https://github.com/teamcapybara/capybara"
+    url: "https://github.com/teamcapybara/capybara"
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: "https://github.com/teamcapybara/capybara"
+    url: "https://github.com/teamcapybara/capybara/blob/master/README.md"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Capybara helps you test web applications by simulating how a real user would interact with your app."
+  - field: firstRelease
+    value: 2009
+    url: "https://rubygems.org/api/v1/versions/capybara.json"
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: "Thomas Walpole, Jonas Nicklas"
+    url: "https://github.com/teamcapybara/capybara/blob/master/License.txt"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2009-2018 Thomas Walpole, Jonas Nicklas"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/teamcapybara"
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: Ruby
+    url: "https://github.com/teamcapybara/capybara"
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [e2e, testing]
+    url: "https://github.com/teamcapybara/capybara/blob/master/README.md"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Capybara helps you test web applications"
+  - field: runtime
+    value: ruby
+    url: "https://github.com/teamcapybara/capybara/blob/master/README.md"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Capybara requires Ruby 3.0.0 or later."
+  - field: runtimeMin
+    value: "3.0"
+    url: "https://github.com/teamcapybara/capybara/blob/3.40.0/capybara.gemspec"
+    checkedAt: 2026-11-04
+    via: api
+  - field: installMethod
+    value: bundler
+    url: "https://github.com/teamcapybara/capybara/blob/master/README.md"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "add this line to your `Gemfile` and run `bundle install`"
+  - field: installMethod
+    value: rubygems
+    url: "https://teamcapybara.github.io/capybara/"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Capybara is available on RubyGems"
+  - field: license
+    value: MIT
+    url: "https://github.com/teamcapybara/capybara"
+    checkedAt: 2026-11-04
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: "https://github.com/teamcapybara/capybara"
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 3
+    url: "https://rubygems.org/api/v1/gems/capybara.json"
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2024-01-27
+    url: "https://rubygems.org/api/v1/gems/capybara.json"
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 10175
+    url: "https://github.com/teamcapybara/capybara"
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 325
+    url: "https://api.github.com/repos/teamcapybara/capybara/contributors"
+    checkedAt: 2026-11-04
+    via: api
+  - field: rubygemsName
+    value: capybara
+    url: "https://rubygems.org/api/v1/gems/capybara.json"
+    checkedAt: 2026-11-04
+    via: api
+  - field: rubygemsDownloads
+    value: "367526553 total"
+    url: "https://rubygems.org/api/v1/gems/capybara.json"
+    checkedAt: 2026-11-04
+    via: api
+  - field: forum
+    value: "https://github.com/orgs/teamcapybara/discussions/categories/q-a"
+    url: "https://github.com/teamcapybara/capybara/blob/master/README.md"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Ask on the discussions (please do not open an issue)"
+notFound: [runsAs, pricingPage, paidEdition, hqCountry, basedOn, sso, i18n, databases, templating, adminUi, headlessApi, renderingModes, x, bluesky, mastodon, newsletter, subreddit, discord, pluginDirectory]
+unreadable: []
+notes: >
+  Drivers are part of the library: Rack::Test runs in-process against a Rack app and Selenium drives a real browser; the README says WebKit is supported through an external gem, and the Capybara DSL is used from RSpec, Cucumber, Test::Unit and Minitest. Rails and Rack applications need no setup; a Rails app loads capybara/rails. These are integration facts for the test suite and stay out of fields. No runsAs is recorded: no page says the library is for development or CI only. The DSL visits pages, clicks links and buttons, fills in forms and queries the page, as the README sections on navigating, forms, querying and finding name. The maintainer follows the License.txt copyright line; the GitHub owner is the teamcapybara organization, which the homepage footer credits to Elabs as the site builder, not as the maintainer. The Patreon link in the README is a funding link and has no field. The Ruby mailing list on Google Groups is a discussion list linked from the homepage; the README sends help questions to GitHub Discussions, which is the forum fact. The homepage answers over both http and https; the https address is recorded. The repository has no GitHub release object, so the stable line is the RubyGems latest, 3.40.0, released 2024-01-27; its History file dates the same release 2024-01-26. The gemspec requires Ruby 3.0 or later at the same tag as the runtimeMin value.

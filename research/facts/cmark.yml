@@ -1,0 +1,122 @@
+id: cmark
+name: cmark
+status: accepted
+checkedAt: 2026-11-04
+description: C library and command-line program that parses CommonMark Markdown into a syntax tree and renders it as HTML, man, LaTeX, CommonMark or XML.
+facts:
+  - field: repository
+    value: https://github.com/commonmark/cmark
+    url: https://api.github.com/repos/commonmark/cmark
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: John MacFarlane
+    url: https://github.com/commonmark/cmark/blob/master/COPYING
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2014, John MacFarlane"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/commonmark/cmark/blob/master/COPYING
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2014, John MacFarlane"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/commonmark
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: C
+    url: https://api.github.com/repos/commonmark/cmark
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://api.github.com/repos/commonmark/cmark/commits/0.6
+    checkedAt: 2026-11-04
+    via: api
+  - field: license
+    value: BSD-2-Clause
+    url: https://github.com/commonmark/cmark/blob/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Free. BSD2-licensed."
+  - field: license
+    value: MIT
+    url: https://github.com/commonmark/cmark/blob/master/COPYING
+    checkedAt: 2026-11-04
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: license
+    value: CC-BY-SA-4.0
+    url: https://github.com/commonmark/cmark/blob/master/COPYING
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Released under the Creative Commons CC-BY-SA 4.0 license:"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/commonmark/cmark/blob/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Free. BSD2-licensed."
+  - field: installMethod
+    value: make install (source)
+    url: https://github.com/commonmark/cmark/blob/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "If you have GNU make, you can simply `make`, `make test`, and `make install`."
+  - field: installMethod
+    value: cmake (source)
+    url: https://github.com/commonmark/cmark/blob/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "For a more portable method, you can use [cmake] manually."
+  - field: installMethod
+    value: nmake (Windows, MSVC)
+    url: https://github.com/commonmark/cmark/blob/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "To compile with MSVC and NMAKE:"
+  - field: installMethod
+    value: mingw cross-compile (Windows)
+    url: https://github.com/commonmark/cmark/blob/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "You can cross-compile a Windows binary and dll on linux if you have the"
+  - field: docs
+    value: https://github.com/commonmark/cmark/tree/master/man
+    url: https://github.com/commonmark/cmark/blob/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "be found in the man pages in the `man` subdirectory."
+  - field: forum
+    value: https://talk.commonmark.org/
+    url: https://github.com/commonmark/cmark/blob/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "There is a forum for discussing CommonMark"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/commonmark/cmark/releases/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-02-14
+    url: https://api.github.com/repos/commonmark/cmark/releases/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 2041
+    url: https://api.github.com/repos/commonmark/cmark
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 98
+    url: https://api.github.com/repos/commonmark/cmark/contributors
+    checkedAt: 2026-11-04
+    via: api
+notFound: [homepage, pluginDirectory, discord, subreddit, mastodon, bluesky, x, newsletter, hqCountry, parent, runtime, runsAs, pricingPage, paidEdition, renderingModes, headlessApi, adminUi, databases, templating, i18n, sso, importsFrom, alternativeTo, basedOn, endoflifeId, npmName, packagistName, dockerPulls]
+unreadable: []
+notes: >
+  The repository has no homepage of its own: the CommonMark spec site (spec.commonmark.org, commonmark.org) is the specification's site, and the README points to it only as the source of the spec, so no homepage is recorded. The GitHub license detection reads NOASSERTION; the README states BSD2 and the COPYING file carries the BSD-2-Clause text for the library. COPYING also holds, in separate sections, a permission text for the houdini files (from Vicent Marti's houdini), the buffer files (from GitHub, Inc. code) and the utf8 files (from utf8proc), none of which names its license, so that entry is worded as the file words it; the MIT License for normalize.py (from markdowntest) and CC-BY-SA 4.0 for the spec text in test/spec.txt are named in the file. The test software is under the same BSD text as the library. The COPYING copyright line names John MacFarlane; the README credits him with the original library and program, and no legal form is given, so the maintainer is recorded as named. The firstRelease year comes from the tag 0.6, committed 2014-10-27, the oldest tag; the first GitHub release is 0.17 on 2015-01-25. The version line 0.31 is in the 0 major; the latest release is 0.31.2 (2026-02-14). The README lists wrapper libraries for Go, Haskell, Ruby, Lua, Perl, Python, R, Scala and PHP; these are other projects and are not recorded. The README names the CommonMark forum (talk.commonmark.org, an http link in the README that answers over https) for questions, recorded as forum. The README also points to the JavaScript reference implementation commonmark.js, which has no record. No runtime is recorded: the README describes a C build with cmake or make, and the library is linked into the software that calls it. Prose sources: the README's first paragraphs give the C reference implementation, the libcmark library and program, the AST and the renderers, the no-dependency and cmake statements, and the wrapper list; the Security section gives the default scrubbing of raw HTML and of the javascript, vbscript, data and file schemes, with CMARK_OPT_UNSAFE to allow them and the sanitizer recommendation.

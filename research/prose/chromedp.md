@@ -1,0 +1,3 @@
+chromedp is a Go package that drives browsers which speak the Chrome DevTools Protocol. It starts a browser or connects to one that is already running, then runs actions against its tabs: navigating, reading elements, filling in and submitting forms, intercepting requests and printing pages to PDF. The package needs no external driver. It uses only the Go standard library and the cdproto module, and it talks to the browser through a pipe.
+
+The [README](https://github.com/chromedp/chromedp/blob/main/README.md) points to an examples repository with programs for larger tasks, and to an API document.

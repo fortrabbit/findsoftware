@@ -1,0 +1,99 @@
+id: c8
+name: c8
+status: accepted
+checkedAt: 2026-11-04
+description: c8 is a code-coverage tool for Node.js that uses the built-in V8 coverage and outputs Istanbul-compatible reports.
+facts:
+  - field: repository
+    value: https://github.com/bcoe/c8
+    url: https://api.github.com/repos/bcoe/c8
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://github.com/bcoe/c8/blob/main/README.md
+    url: https://raw.githubusercontent.com/bcoe/c8/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "c8 can be configured via command-line flags, a `c8` section in `package.json`, or a JSON configuration file on disk."
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/bcoe
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: "2013"
+    url: https://registry.npmjs.org/c8
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [testing]
+    url: https://raw.githubusercontent.com/bcoe/c8/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Code-coverage using"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/bcoe/c8
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://raw.githubusercontent.com/bcoe/c8/v12.0.0/package.json
+    checkedAt: 2026-11-04
+    via: page
+    quote: "\"node\": \"^20.19.0 || ^22.12.0"
+  - field: runtimeMin
+    value: "20"
+    url: https://raw.githubusercontent.com/bcoe/c8/v12.0.0/package.json
+    checkedAt: 2026-11-04
+    via: page
+    quote: "\"node\": \"^20.19.0 || ^22.12.0"
+  - field: license
+    value: ISC
+    url: https://api.github.com/repos/bcoe/c8
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 12
+    url: https://api.github.com/repos/bcoe/c8/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-14
+    url: https://api.github.com/repos/bcoe/c8/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 2124
+    url: https://api.github.com/repos/bcoe/c8
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 41
+    url: https://api.github.com/repos/bcoe/c8/contributors
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmName
+    value: c8
+    url: https://registry.npmjs.org/c8/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmWeeklyDownloads
+    value: "5336501 for 2026-10-26 to 2026-11-01"
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/c8
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentPackages
+    value: 9964
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/c8
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 79966
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/c8
+    checkedAt: 2026-11-04
+    via: api
+notFound: [homepage, installMethod, runsAs, maintainer, hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, dockerPulls, endoflifeId, renderingModes, supportedVersions]
+unreadable: []
+notes: >
+  No homepage: the repository has no website and the npm homepage points to the README. The README's install block is a shell command (npm i c8 -g), which is not an installMethod sentence, so installMethod is left out. The README says "make sure you're running Node.js >= 12", which the manifest at v12.0.0 replaces with engines node "^20.19.0 || ^22.12.0 || >=23"; runtimeMin is taken from the manifest. The npm latest is 12.0.0, the same as the GitHub release of 2026-07-14, and a dist-tag experimental 7.0.0-alpha.0 is no release. The LICENSE.txt copyright line names only "Contributors", so no maintainer is recorded; the package.json author is Ben Coe. runsAs is left out: a CLI on a developer's machine is no runsAs statement without a page saying it is for development. The first npm upload 0.1.0 (2013-09-24) is older than the GitHub releases (from v5.0.0, 2019) and its tags (from v1.0.0). The package c8 is listed under the testing category; its install is a Node.js command-line tool.

@@ -1,0 +1,93 @@
+id: bluemonday
+name: bluemonday
+status: accepted
+checkedAt: 2026-11-04
+description: HTML sanitizer for Go that removes markup outside an allowlist from untrusted input, such as user generated content.
+facts:
+  - field: repository
+    value: https://github.com/microcosm-cc/bluemonday
+    url: https://api.github.com/repos/microcosm-cc/bluemonday
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: David Kitchen
+    url: https://raw.githubusercontent.com/microcosm-cc/bluemonday/main/LICENSE.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2014, David Kitchen"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/microcosm-cc
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/microcosm-cc/bluemonday
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://raw.githubusercontent.com/microcosm-cc/bluemonday/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "bluemonday is a HTML sanitizer implemented in Go"
+  - field: categories
+    value: [html-sanitizer]
+    url: https://raw.githubusercontent.com/microcosm-cc/bluemonday/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "bluemonday is a HTML sanitizer implemented in Go"
+  - field: runtimeMin
+    value: "Go 1.19"
+    url: https://github.com/microcosm-cc/bluemonday/blob/v1.0.27/go.mod
+    checkedAt: 2026-11-04
+    via: page
+    quote: "go 1.19"
+  - field: installMethod
+    value: go get
+    url: https://raw.githubusercontent.com/microcosm-cc/bluemonday/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Install using `go get github.com/microcosm-cc/bluemonday`"
+  - field: license
+    value: BSD-3-Clause
+    url: https://raw.githubusercontent.com/microcosm-cc/bluemonday/main/LICENSE.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Redistribution and use in source and binary forms"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/microcosm-cc/bluemonday/main/LICENSE.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Redistribution and use in source and binary forms"
+  - field: firstRelease
+    value: 2018
+    url: https://proxy.golang.org/github.com/microcosm-cc/bluemonday/@v/v1.0.0.info
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://proxy.golang.org/github.com/microcosm-cc/bluemonday/@v/v1.0.27.info
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2024-07-04
+    url: https://proxy.golang.org/github.com/microcosm-cc/bluemonday/@v/v1.0.27.info
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 3731
+    url: https://api.github.com/repos/microcosm-cc/bluemonday
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 29
+    url: https://api.github.com/repos/microcosm-cc/bluemonday/contributors?per_page=1
+    checkedAt: 2026-11-04
+    via: api
+notFound: [homepage, docs, hqCountry, pricingPage, forum, discord, subreddit, mastodon, bluesky, x, newsletter, reportedInstalls, usageShare, pluginDirectory, pluginCount, basedOn, forkOf, successorOf, alternativeTo, parent, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, paidEdition, wikidata]
+unreadable: []
+notes: >
+  Go library with no project site: the repository is the only home, so no homepage. The README names OWASP Java HTML Sanitizer and HTML Purifier as inspiration, which is no basedOn statement. The README says the default policy (UGCPolicy) and the StrictPolicy ship with the library; neither is recorded as a field. Maintainer is the LICENSE copyright holder; the organization microcosm-cc owns the repository. Stars and contributors belong to the repository. The Go module proxy gives the dates: v1.0.27 is a tag with no GitHub release object, the newest GitHub release is v1.0.26 (2023-10-12). Go libraries have no download figure, so none is recorded. The repository has no install statement beyond the README line recorded as installMethod.
+  The shipped policies are UGCPolicy, which allows a broad set of elements for user generated content, and StrictPolicy, which allows none; script and style are dropped unless the policy enables them, and the README asks that the sanitizer run after any other HTML processing.

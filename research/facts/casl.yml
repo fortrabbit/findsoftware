@@ -1,0 +1,135 @@
+id: casl
+name: CASL
+status: accepted
+checkedAt: 2026-11-04
+description: JavaScript authorization library that defines what a given user may access, for browsers and Node.js.
+facts:
+  - field: homepage
+    value: https://casl.js.org/
+    url: https://casl.js.org/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Authorization for entire TypeScript stack"
+  - field: repository
+    value: https://github.com/stalniy/casl
+    url: https://api.github.com/repos/stalniy/casl
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://stalniy.github.io/casl/v7/en/guide/intro
+    url: https://stalniy.github.io/casl/v7/en/guide/intro
+    checkedAt: 2026-11-04
+    via: page
+    quote: "is an isomorphic authorization JavaScript library which restricts what resources a given client is allowed to access"
+  - field: maintainer
+    value: Sergii Stotskyi
+    url: https://raw.githubusercontent.com/stalniy/casl/main/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2017-present Sergii Stotskyi"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/stalniy
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/stalniy/casl
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [authorization]
+    url: https://raw.githubusercontent.com/stalniy/casl/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "an isomorphic authorization JavaScript library"
+  - field: runtime
+    value: [node]
+    url: https://stalniy.github.io/casl/v7/en/guide/install
+    checkedAt: 2026-11-04
+    via: page
+    quote: "CASL is isomorphic, so can be used in browsers and in Nodejs environments."
+  - field: installMethod
+    value: npm, yarn or pnpm
+    url: https://stalniy.github.io/casl/v7/en/guide/install
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Installation through package manager is the recommended way to install CASL."
+  - field: installMethod
+    value: CDN (esm.sh)
+    url: https://stalniy.github.io/casl/v7/en/guide/install
+    checkedAt: 2026-11-04
+    via: page
+    quote: "For prototyping or learning purposes, you can use the latest version with:"
+  - field: databases
+    value: [mongodb]
+    url: https://raw.githubusercontent.com/stalniy/casl/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "which provides easy integration with MongoDB"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/stalniy/casl
+    checkedAt: 2026-11-04
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/stalniy/casl/main/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2017"
+    url: https://api.github.com/repos/stalniy/casl/commits/v0.2.0
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 7
+    url: https://registry.npmjs.org/@casl%2fability/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-31
+    url: https://api.github.com/repos/stalniy/casl/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 7111
+    url: https://api.github.com/repos/stalniy/casl
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 73
+    url: https://api.github.com/repos/stalniy/casl/contributors?per_page=1
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmName
+    value: "@casl/ability"
+    url: https://registry.npmjs.org/@casl%2fability/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmWeeklyDownloads
+    value: "2640559 for 2026-10-26 to 2026-11-01"
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/@casl/ability
+    checkedAt: 2026-11-04
+    via: api
+  - field: forum
+    value: https://github.com/stalniy/casl/discussions
+    url: https://raw.githubusercontent.com/stalniy/casl/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "[![Support](https://img.shields.io/badge/Support-github%20discussions-green?style=flat&link=https://github.com/stalniy/casl/discussions)](https://github.com/stalniy/casl/discussions)"
+  - field: dependentPackages
+    value: 243
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40casl%2Fability
+    checkedAt: 2026-11-04
+    via: api
+  - field: dependentRepos
+    value: 4787
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40casl%2Fability
+    checkedAt: 2026-11-04
+    via: api
+notFound: [maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runsAs, runtimeMin, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, latestPrereleaseDate, lastCommitDate]
+unreadable: []
+notes: >
+  The README and the install page state the same two supported environments: browsers and Node.js. The runtime value node is recorded from the install page's "can be used in browsers and in Nodejs environments" sentence, though the library also runs in browsers, so the reviewer may decide to drop it. The package manifest of @casl/ability at its latest release tag has no engines field; the README table's "Node.js 18+" is on the default branch and is not recorded as runtimeMin. The official integrations (@casl/react, @casl/vue, @casl/angular) are framework bindings of the framework-agnostic core and are not basedOn records; the Prisma, Mongoose and Angular packages are integrations listed in the README. The README says CASL is "Heavily inspired by" cancancan; that is not a basedOn or alternativeTo statement. The repository is a monorepo: stars, contributors and the license belong to stalniy/casl; the registry figures come from @casl/ability, the core package the install page names. Releases are tagged per package (for example @casl/ability@7.1.1), so the first tag v0.2.0 (commit 2017-07-18) is the oldest tag in the repository, and the oldest GitHub release is from 2018-05-28. The @casl/ability releases of 2026-10-31 include 5.4.8, 6.8.3 and 7.1.1; the newest stable major is 7. The install page documents a CDN route at esm.sh that serves the latest version, with a versioned example for major 6. The README's "Support" badge links GitHub Discussions, which the README calls its support chat; recorded as forum.

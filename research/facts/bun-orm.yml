@@ -1,0 +1,120 @@
+id: bun-orm
+name: Bun
+status: accepted
+checkedAt: 2026-11-04
+description: SQL-first object-relational mapper for Go that builds queries on database/sql.
+facts:
+  - field: homepage
+    value: https://bun.uptrace.dev
+    url: https://bun.uptrace.dev/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "The SQL-first Golang ORM"
+  - field: repository
+    value: https://github.com/uptrace/bun
+    url: https://api.github.com/repos/uptrace/bun
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://bun.uptrace.dev/guide/
+    url: https://bun.uptrace.dev/guide/
+    checkedAt: 2026-11-04
+    via: page
+  - field: categories
+    value: [orm]
+    url: https://github.com/uptrace/bun/blob/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Lightweight, SQL-first Golang ORM for PostgreSQL, MySQL, MSSQL, SQLite, and Oracle"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/uptrace/bun
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: go
+    url: https://github.com/uptrace/bun/blob/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Lightweight, SQL-first Golang ORM for PostgreSQL, MySQL, MSSQL, SQLite, and Oracle"
+  - field: databases
+    value: [postgres, mysql, sqlserver, sqlite, oracle]
+    url: https://github.com/uptrace/bun/blob/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Lightweight, SQL-first Golang ORM for PostgreSQL, MySQL, MSSQL, SQLite, and Oracle"
+  - field: runtimeMin
+    value: "1.24"
+    url: https://github.com/uptrace/bun/blob/v1.3.0/go.mod
+    checkedAt: 2026-11-04
+    via: page
+    quote: "go 1.24.0"
+  - field: installMethod
+    value: go get github.com/uptrace/bun
+    url: https://github.com/uptrace/bun/blob/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "go get github.com/uptrace/bun"
+  - field: license
+    value: BSD-2-Clause
+    url: https://api.github.com/repos/uptrace/bun
+    checkedAt: 2026-11-04
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/uptrace/bun/master/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without"
+  - field: maintainer
+    value: Vladimir Mihailenco
+    url: https://raw.githubusercontent.com/uptrace/bun/master/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2021 Vladimir Mihailenco. All rights reserved."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/uptrace/bun
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: "2021"
+    url: https://proxy.golang.org/github.com/uptrace/bun/@v/v0.1.0.info
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/uptrace/bun/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-03
+    url: https://api.github.com/repos/uptrace/bun/releases
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 5004
+    url: https://api.github.com/repos/uptrace/bun
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 132
+    url: https://api.github.com/repos/uptrace/bun/contributors
+    checkedAt: 2026-11-04
+    via: api
+  - field: forum
+    value: https://github.com/uptrace/bun/discussions
+    url: https://github.com/uptrace/bun/blob/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Get help and share ideas"
+  - field: discord
+    value: https://discord.gg/rWtp5Aj
+    url: https://raw.githubusercontent.com/uptrace/bun/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "[![Chat](https://discordapp.com/api/guilds/752070105847955518/widget.png)](https://discord.gg/rWtp5Aj)"
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, renderingModes, contentStore, templating, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, subreddit, mastodon, bluesky, x, newsletter, wikidata, hqCountry, endoflifeId, npmName, packagistName, rubygemsName, nugetName, npmWeeklyDownloads, packagistDownloads, dockerPulls]
+unreadable: []
+notes: >
+  The project's own name is "Bun" (README title "Bun: SQL-first Golang ORM"); the same name belongs to the JavaScript runtime record bun, so a reviewer should decide whether the display name needs a qualifier such as "Bun ORM". The Go module has no registry download figure, so no registry field is recorded. The repository is a single Go module, github.com/uptrace/bun; the README's driver table names the Oracle driver go-ora as a separate module, which is not recorded as a fact. The go.mod at v1.3.0 declares go 1.24.0 with toolchain go1.24.1; runtimeMin is recorded from the go line, and runtime is go, from the README sentence naming it a Golang ORM. The homepage is bun.uptrace.dev, the project's own documentation site, which the README links as its documentation. The README's getting-started link (bun.uptrace.dev/guide/golang-orm.html) returned a 468-byte response, so the guide index is cited as docs and carries no quote. The Discord invite is quoted from the README badge markup; the README lists GitHub Discussions as its community channel, recorded as forum. The LICENSE is BSD 2-clause; the GitHub API reports BSD-2-Clause. The repository is owned by the uptrace organization, which also runs the Uptrace product; the maintainer follows the LICENSE copyright line. The GitHub tag list includes submodule tags such as dbfixture/v0.1.8, which are separate modules and not used for the release line. The Go proxy lists v0.1.0 at 2021-05-18, which is the earliest version, so firstRelease is 2021. The highest stable GitHub release is v1.3.0 (2026-10-03), so currentMajor is 1.

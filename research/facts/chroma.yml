@@ -1,0 +1,109 @@
+id: chroma
+name: Chroma
+status: accepted
+checkedAt: 2026-11-04
+description: Syntax highlighter library in pure Go that converts source code and other structured text into highlighted HTML or ANSI-colored text.
+facts:
+  - field: repository
+    value: https://github.com/alecthomas/chroma
+    url: https://github.com/alecthomas/chroma
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://pkg.go.dev/github.com/alecthomas/chroma/v2
+    url: https://github.com/alecthomas/chroma/blob/v2.27.0/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "[![Go Reference](https://pkg.go.dev/badge/github.com/alecthomas/chroma/v2.svg)](https://pkg.go.dev/github.com/alecthomas/chroma/v2)"
+  - field: firstRelease
+    value: 2017
+    url: https://api.github.com/repos/alecthomas/chroma/commits/2181aa5f70c436919554159e73f7683d43cf5761
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: Alec Thomas
+    url: https://github.com/alecthomas/chroma/blob/v2.27.0/COPYING
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (C) 2017 Alec Thomas"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/alecthomas/chroma
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [syntax-highlight]
+    url: https://github.com/alecthomas/chroma/blob/v2.27.0/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "A general purpose syntax highlighter in pure Go"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/alecthomas/chroma
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/alecthomas/chroma/blob/v2.27.0/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "A general purpose syntax highlighter in pure Go"
+  - field: runtimeMin
+    value: "1.25"
+    url: https://github.com/alecthomas/chroma/blob/v2.27.0/go.mod
+    checkedAt: 2026-11-04
+    via: page
+    quote: "go 1.25"
+  - field: installMethod
+    value: [go import]
+    url: https://github.com/alecthomas/chroma/blob/v2.27.0/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "This is version 2 of Chroma, use the import path:"
+  - field: installMethod
+    value: [binary download]
+    url: https://github.com/alecthomas/chroma/blob/v2.27.0/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Binaries are available to install from"
+  - field: license
+    value: MIT
+    url: https://github.com/alecthomas/chroma/blob/v2.27.0/COPYING
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy of"
+  - field: license
+    value: OFL-1.1
+    url: https://github.com/alecthomas/chroma/blob/v2.27.0/COPYING
+    checkedAt: 2026-11-04
+    via: page
+    quote: "This Font Software is licensed under the SIL Open Font License, Version 1.1."
+  - field: currentMajor
+    value: 2
+    url: https://github.com/alecthomas/chroma/releases/tag/v2.27.0
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-06-17
+    url: https://github.com/alecthomas/chroma/releases/tag/v2.27.0
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-07-08
+    url: https://github.com/alecthomas/chroma/releases/tag/v3.0.0-alpha.5
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 5075
+    url: https://api.github.com/repos/alecthomas/chroma
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 345
+    url: https://api.github.com/repos/alecthomas/chroma/contributors
+    checkedAt: 2026-11-04
+    via: api
+notFound: [homepage, pricingPage, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, paidEdition, endoflifeId, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, npmName, packagistName, reportedInstalls, hqCountry, parent, forkOf, successorOf, alternativeTo, basedOn]
+unreadable: []
+notes: >
+  The repository is the only project site: the README names no homepage, so none is recorded. The README says "Chroma is based heavily on [Pygments]" and includes translators for Pygments lexers and styles; Pygments is not a record, so the statement sits here and not in basedOn. Stars, contributors and releases belong to the repository alecthomas/chroma, which is the library itself. GitHub reports no license (NOASSERTION) because COPYING holds the MIT text for the code and the SIL Open Font License 1.1 for the bundled Liberation, Arimo, Tinos and Cousine fonts in the SVG formatter; both are recorded as license entries. The v3.0.0-alpha.1 to alpha.5 tags appear on GitHub without the prerelease flag, so releases/latest reports an alpha: currentMajor takes v2.27.0 and latestPrereleaseDate takes alpha.5. runtime go and runtimeMin Go 1.25 come from go.mod at the latest stable tag; the import does not read Go as a hosting runtime or a runtime minimum, so review hosting on the record page. No Go module download figure exists. The README names Hugo and moor as projects that use Chroma; they are not recorded as fields. Usage as the README describes it: a program imports the module and picks a lexer, a style and a formatter from the registry each package holds; a quick-start function highlights text in one call; the HTML formatter can emit inline styles or CSS classes and optional line numbers; terminal output is available in 8-color, 256-color and true-color; the command-line interface installs from the releases page and can act as a preprocessor for less. Chroma has a Slack channel badge on the Gophers workspace, left out as a general Go community channel.

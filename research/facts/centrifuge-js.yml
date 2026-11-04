@@ -1,0 +1,126 @@
+id: centrifuge-js
+name: centrifuge-js
+status: accepted
+checkedAt: 2026-11-04
+description: JavaScript client SDK that connects a browser, Node.js or React Native app to a Centrifugo or Centrifuge server over WebSocket or HTTP-based transports.
+facts:
+  - field: homepage
+    value: https://centrifugal.dev
+    url: https://centrifugal.dev
+    checkedAt: 2026-11-04
+    via: page
+  - field: repository
+    value: https://github.com/centrifugal/centrifuge-js
+    url: https://github.com/centrifugal/centrifuge-js
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://centrifugal.dev/docs/transports/client_sdk
+    url: https://centrifugal.dev/docs/transports/client_sdk
+    checkedAt: 2026-11-04
+    via: page
+  - field: maintainer
+    value: Centrifugal Labs LTD
+    url: https://github.com/centrifugal/centrifuge-js/blob/master/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: Copyright (c) 2023 Centrifugal Labs LTD
+  - field: hqCountry
+    value: CY
+    url: https://centrifugal.dev/company
+    checkedAt: 2026-11-04
+    via: page
+    quote: Centrifugal Labs LTD is a Cyprus-registered software company
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/centrifugal
+    checkedAt: 2026-11-04
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/centrifugal/centrifuge-js
+    checkedAt: 2026-11-04
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/centrifugal/centrifuge-js/blob/master/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: The MIT License (MIT)
+  - field: language
+    value: TypeScript
+    url: https://github.com/centrifugal/centrifuge-js
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [realtime, websocket]
+    url: https://github.com/centrifugal/centrifuge-js
+    checkedAt: 2026-11-04
+    via: page
+    quote: provides a client to connect to
+  - field: installMethod
+    value: npm install
+    url: https://github.com/centrifugal/centrifuge-js
+    checkedAt: 2026-11-04
+    via: page
+    quote: SDK can be installed via
+  - field: installMethod
+    value: cdn
+    url: https://github.com/centrifugal/centrifuge-js
+    checkedAt: 2026-11-04
+    via: page
+    quote: In browser, you can import SDK from
+  - field: npmName
+    value: centrifuge
+    url: https://registry.npmjs.org/centrifuge/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmWeeklyDownloads
+    value: 2004075
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/centrifuge
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 512
+    url: https://github.com/centrifugal/centrifuge-js
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 30
+    url: https://api.github.com/repos/centrifugal/centrifuge-js/contributors?per_page=1
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 5
+    url: https://github.com/centrifugal/centrifuge-js/releases/tag/5.8.0
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-20
+    url: https://github.com/centrifugal/centrifuge-js/releases/tag/5.8.0
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://registry.npmjs.org/centrifuge
+    checkedAt: 2026-11-04
+    via: api
+  - field: x
+    value: https://twitter.com/centrifugalabs
+    url: https://centrifugal.dev
+    checkedAt: 2026-11-04
+    via: page
+  - field: discord
+    value: https://discord.gg/tYgADKx
+    url: https://centrifugal.dev
+    checkedAt: 2026-11-04
+    via: page
+  - field: youtube
+    value: https://www.youtube.com/channel/UCdQmdbYM5pzqrrRFmt6KA1Q
+    url: https://centrifugal.dev
+    checkedAt: 2026-11-04
+    via: page
+notFound: [runsAs, runtime, pricingPage, paidEdition, hostedOffering, basedOn, forkOf, successorOf, alternativeTo, pluginDirectory, forum, mastodon, bluesky, newsletter, subreddit, reportedInstalls, usageShare, endoflifeId]
+unreadable: []
+notes: >
+  The README says the SDK connects to Centrifugo or any Centrifuge-based server using pure WebSocket or one of the alternative transports (HTTP-streaming, SSE/EventSource, experimental WebTransport) from web browser, React Native or Node.js environments. That spans several environments, so no runtime and no runsAs is recorded. WebSocket is the main transport; the HTTP-based fallbacks use the server's bidirectional emulation layer, which "must be first enabled on a server-side". By default the library works with JSON only, and a separate Protobuf build sends binary payloads. SockJS usage is marked DEPRECATED in the README. Compatibility with Centrifugo v4 to v6 and Centrifuge 0.25.0 or later is stated in the README and is not a field. The README names Centrifugo and Centrifuge as the servers the SDK talks to, which is no basedOn statement. The SDK is distributed as the centrifuge package on npm, and the npm figure counts that package. firstRelease is 2015 from the npm upload of version 0.5.2 on 2015-01-22, earlier than the oldest GitHub release (2.0.0, 2018). The homepage is the Centrifugo project site, and its x, discord and youtube links are the Centrifugal project's accounts, shared with Centrifugo. The footer also lists Telegram and LinkedIn links; they are not recorded (no field). Paid Pro features belong to the Centrifugo server, not to this SDK, so no paidEdition is recorded.

@@ -1,0 +1,120 @@
+id: bookshelf
+name: Bookshelf.js
+status: accepted
+checkedAt: 2026-11-04
+description: Object-relational mapper for Node.js with models, relations and transactions, running on Knex and supporting PostgreSQL, MySQL and SQLite3.
+facts:
+  - field: homepage
+    value: https://bookshelfjs.org
+    url: https://bookshelfjs.org/
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Bookshelf is a JavaScript ORM for Node.js"
+  - field: repository
+    value: https://github.com/bookshelf/bookshelf
+    url: https://api.github.com/repos/bookshelf/bookshelf
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://bookshelfjs.org
+    url: https://raw.githubusercontent.com/bookshelf/bookshelf/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Website and documentation"
+  - field: maintainer
+    value: Tim Griesser
+    url: https://raw.githubusercontent.com/bookshelf/bookshelf/master/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2014 Tim Griesser"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/bookshelf
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/bookshelf/bookshelf
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://raw.githubusercontent.com/bookshelf/bookshelf/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Bookshelf is a JavaScript ORM for Node.js"
+  - field: runtimeMin
+    value: "6"
+    url: https://registry.npmjs.org/bookshelf
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [orm]
+    url: https://raw.githubusercontent.com/bookshelf/bookshelf/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Bookshelf is a JavaScript ORM for Node.js"
+  - field: databases
+    value: [postgres, mysql, sqlite]
+    url: https://raw.githubusercontent.com/bookshelf/bookshelf/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "It is designed to work with PostgreSQL, MySQL, and SQLite3"
+  - field: installMethod
+    value: npm
+    url: https://raw.githubusercontent.com/bookshelf/bookshelf/master/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "and either `mysql`, `pg`, or `sqlite3` from npm"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/bookshelf/bookshelf/master/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/bookshelf/bookshelf/master/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person"
+  - field: firstRelease
+    value: 2013
+    url: https://registry.npmjs.org/bookshelf
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/bookshelf
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2020-06-07
+    url: https://registry.npmjs.org/bookshelf
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmName
+    value: bookshelf
+    url: https://registry.npmjs.org/bookshelf
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmWeeklyDownloads
+    value: "65735 (2026-10-26 to 2026-11-01)"
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/bookshelf
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 6343
+    url: https://api.github.com/repos/bookshelf/bookshelf
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 150
+    url: https://api.github.com/repos/bookshelf/bookshelf/contributors?per_page=1
+    checkedAt: 2026-11-04
+    via: api
+notFound: [pricingPage, paidEdition, basedOn, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, forum, discord, subreddit, mastodon, bluesky, x, newsletter, reportedInstalls, usageShare, pluginDirectory, pluginCount, wikidata]
+unreadable: []
+notes: >
+  Status ruling for a reviewer: the newest release is 1.2.0 (2020-06-07), both on GitHub and npm, and the repository was last pushed 2024-08-10. The import moves a record with no release in four years to stub, so this record will be hidden on the next import. The repository is not archived and the npm package is not deprecated, so no end signal applies. The homepage is https; http://bookshelfjs.org redirects to it. The README says Bookshelf is "built on the Knex SQL query builder"; no Knex record exists, so basedOn is not recorded. The installation section gives the npm command "npm install bookshelf" in a code block; the one sentence recorded as installMethod names npm for the database drivers. The engines field of the latest npm version is node ">=6", recorded as runtimeMin. The npm figure is the sum of the seven daily counts from 2026-10-26 to 2026-11-01; the value carries that period. The license file states MIT with the copyright line for Tim Griesser, who is also the npm author. Stars and contributors are the repository's.
+  The README says initialization passes a Knex client instance, which holds the connection pool.

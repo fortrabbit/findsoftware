@@ -1,0 +1,110 @@
+id: canvas-confetti
+name: Canvas Confetti
+status: accepted
+checkedAt: 2026-11-04
+description: "JavaScript library that draws confetti animations on an HTML canvas."
+facts:
+  - field: homepage
+    value: "https://catdad.github.io/canvas-confetti/"
+    url: "https://catdad.github.io/canvas-confetti/"
+    checkedAt: 2026-11-04
+    via: page
+  - field: repository
+    value: "https://github.com/catdad/canvas-confetti"
+    url: "https://github.com/catdad/canvas-confetti"
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: "https://github.com/catdad/canvas-confetti"
+    url: "https://github.com/catdad/canvas-confetti/blob/master/README.md"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "When installed from `npm`, this library can be required as a client component in your project build."
+  - field: firstRelease
+    value: 2018
+    url: "https://registry.npmjs.org/canvas-confetti"
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: "Kiril Vatev"
+    url: "https://github.com/catdad/canvas-confetti/blob/master/LICENSE"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2020, Kiril Vatev"
+  - field: repoOwnerType
+    value: user
+    url: "https://api.github.com/users/catdad"
+    checkedAt: 2026-11-04
+    via: api
+  - field: language
+    value: JavaScript
+    url: "https://github.com/catdad/canvas-confetti"
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [animation-library]
+    url: "https://github.com/catdad/canvas-confetti"
+    checkedAt: 2026-11-04
+    via: api
+  - field: installMethod
+    value: npm
+    url: "https://github.com/catdad/canvas-confetti/blob/master/README.md"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "You can install this module as a component from NPM"
+  - field: installMethod
+    value: cdn
+    url: "https://github.com/catdad/canvas-confetti/blob/master/README.md"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "You can also include this library in your HTML page directly from a CDN"
+  - field: runsAs
+    value: browser
+    url: "https://github.com/catdad/canvas-confetti/blob/master/README.md"
+    checkedAt: 2026-11-04
+    via: page
+    quote: "this is a client component, and will not run in Node"
+  - field: license
+    value: ISC
+    url: "https://github.com/catdad/canvas-confetti"
+    checkedAt: 2026-11-04
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: "https://github.com/catdad/canvas-confetti"
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 1
+    url: "https://github.com/catdad/canvas-confetti/releases/tag/1.9.4"
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2025-10-25
+    url: "https://github.com/catdad/canvas-confetti/releases/tag/1.9.4"
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 12846
+    url: "https://github.com/catdad/canvas-confetti"
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 18
+    url: "https://api.github.com/repos/catdad/canvas-confetti/contributors"
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmName
+    value: canvas-confetti
+    url: "https://registry.npmjs.org/canvas-confetti"
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmWeeklyDownloads
+    value: "9540263 for 2026-10-26 to 2026-11-01"
+    url: "https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/canvas-confetti"
+    checkedAt: 2026-11-04
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, basedOn, runtime, sso, i18n, forum, discord, x, bluesky, mastodon, newsletter, subreddit, pluginDirectory]
+unreadable: []
+notes: >
+  Shipped as a single npm package, canvas-confetti, with no dependencies. The CDN route names the package at a pinned version in the jsDelivr URL; the page says to use the latest version. The npm figure is the downloads of this package for the stated week, read from the range endpoint because the point endpoint returns a stale window. The homepage is the GitHub Pages demo the README links; the same demo also answers at www.kirilv.com/canvas-confetti/ under the maintainer's own site. The README says the library "will not run in Node" but names no browser sentence beyond that and the window global; runsAs browser rests on the client-component sentence, reviewer to confirm. The CDN build exposes a confetti function on window. Options set the particle count, angle, spread, origin, colors and shapes, and the README says the reduced-motion option can be set per call or per canvas instance. The README says a call returns a promise when the browser supports promises, that calls made before an animation ends share one promise, and that the reduced-motion option is off by default. The README documents a canvas helper (confetti.create with a supplied canvas, optional web worker rendering), SVG path shapes and emoji shapes, and a reduced-motion option; these are feature statements and stay in notes, not fields. The npm first upload is 0.0.1 from 2018-02-08, older than the first GitHub tag, so firstRelease is 2018. The latest GitHub release is 1.9.4, the stable line major is 1. No prerelease tag was seen on the releases list.

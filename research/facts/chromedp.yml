@@ -1,0 +1,104 @@
+id: chromedp
+name: chromedp
+status: accepted
+checkedAt: 2026-11-04
+description: Go package that drives browsers which speak the Chrome DevTools Protocol, without an external driver.
+facts:
+  - field: repository
+    value: https://github.com/chromedp/chromedp
+    url: https://github.com/chromedp/chromedp
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://github.com/chromedp/chromedp/blob/main/docs/API.md
+    url: https://github.com/chromedp/chromedp/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "describes the API"
+  - field: firstRelease
+    value: 2018
+    url: https://api.github.com/repos/chromedp/chromedp/commits/db9a8731419af3b4aefc0216969a9e0f5d2525db
+    checkedAt: 2026-11-04
+    via: api
+  - field: maintainer
+    value: Kenneth Shaw
+    url: https://github.com/chromedp/chromedp/blob/main/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Copyright (c) 2016-2026 Kenneth Shaw"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/chromedp/chromedp
+    checkedAt: 2026-11-04
+    via: api
+  - field: categories
+    value: [browser-automation]
+    url: https://github.com/chromedp/chromedp/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Package `chromedp` drives browsers that speak the"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/chromedp/chromedp
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/chromedp/chromedp/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "The module needs Go 1.25 or newer."
+  - field: runtimeMin
+    value: "Go 1.25"
+    url: https://github.com/chromedp/chromedp/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "The module needs Go 1.25 or newer."
+  - field: installMethod
+    value: [go get]
+    url: https://github.com/chromedp/chromedp/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Install the package with `go get`."
+  - field: license
+    value: MIT
+    url: https://github.com/chromedp/chromedp/blob/main/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/chromedp/chromedp/releases/tag/v0.22.0
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-03
+    url: https://github.com/chromedp/chromedp/releases/tag/v0.22.0
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 13354
+    url: https://api.github.com/repos/chromedp/chromedp
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 46
+    url: https://api.github.com/repos/chromedp/chromedp/contributors
+    checkedAt: 2026-11-04
+    via: api
+  - field: discord
+    value: https://discord.gg/WDWAgXwJqN
+    url: https://github.com/chromedp/chromedp/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Discord Discussion"
+  - field: forum
+    value: https://github.com/chromedp/chromedp/discussions
+    url: https://github.com/chromedp/chromedp/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Ask a question, or suggest a feature, in [Discussions][discussions]."
+notFound: [homepage, pricingPage, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, paidEdition, endoflifeId, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, npmName, packagistName, reportedInstalls, hqCountry, parent, forkOf, successorOf, alternativeTo, basedOn]
+unreadable: []
+notes: >
+  No project site is named in the README, so no homepage is recorded; the Go reference on pkg.go.dev is a Go documentation host and not recorded. Stars, contributors and releases belong to the repository chromedp/chromedp. The README points to the examples repository (45 programs) and to a GitHub Discussions board; the README sends questions and feature ideas to the GitHub Discussions board, recorded as forum. What the README describes: the package starts a browser (headless by default) or connects to one that is already running, and runs actions against its tabs; the examples cover clicking, reading text, filling and submitting forms, request interception, cookies, screenshots, PDF printing, device emulation and several tabs; it needs no external driver, uses only the Go standard library and the cdproto module, and talks to the browser it starts through a pipe. The maintainer is the copyright holder named on the LICENSE line; the owning GitHub organization is chromedp. The v0.1.0 tag dates from 2018, which is the oldest tag; the repository itself was created in 2017. The README names the Chrome DevTools Protocol as the protocol it speaks; the protocol is not a record and sits here, not in basedOn. The Go minimum is recorded as runtimeMin, but the import does not map Go minimums, so review the record page for it.

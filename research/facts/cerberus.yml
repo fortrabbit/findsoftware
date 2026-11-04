@@ -1,0 +1,113 @@
+id: cerberus
+name: Cerberus
+status: accepted
+checkedAt: 2026-11-04
+description: Python library for validating data against a schema of rules, with type checking and custom validators.
+facts:
+  - field: homepage
+    value: https://docs.python-cerberus.org/
+    url: https://docs.python-cerberus.org/
+    checkedAt: 2026-11-04
+    via: page
+  - field: repository
+    value: https://github.com/pyeve/cerberus
+    url: https://github.com/pyeve/cerberus
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://docs.python-cerberus.org/
+    url: https://docs.python-cerberus.org/
+    checkedAt: 2026-11-04
+    via: page
+  - field: maintainer
+    value: Nicola Iarocci
+    url: https://github.com/pyeve/cerberus/blob/1.3.x/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: Copyright (c) 2012-2016 Nicola Iarocci.
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/pyeve
+    checkedAt: 2026-11-04
+    via: api
+  - field: license
+    value: ISC
+    url: https://github.com/pyeve/cerberus/blob/1.3.8/pyproject.toml
+    checkedAt: 2026-11-04
+    via: page
+    quote: 'License :: OSI Approved :: ISC License (ISCL)'
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/pyeve/cerberus/blob/1.3.x/LICENSE
+    checkedAt: 2026-11-04
+    via: page
+    quote: Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted
+  - field: language
+    value: Python
+    url: https://github.com/pyeve/cerberus
+    checkedAt: 2026-11-04
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/pyeve/cerberus/blob/1.3.8/pyproject.toml
+    checkedAt: 2026-11-04
+    via: page
+    quote: 'requires-python = ">=3.7"'
+  - field: runtimeMin
+    value: Python 3.7
+    url: https://github.com/pyeve/cerberus/blob/1.3.8/pyproject.toml
+    checkedAt: 2026-11-04
+    via: page
+    quote: 'requires-python = ">=3.7"'
+  - field: categories
+    value: [validation]
+    url: https://github.com/pyeve/cerberus
+    checkedAt: 2026-11-04
+    via: page
+    quote: is a lightweight and extensible data validation library for Python
+  - field: installMethod
+    value: pip install
+    url: https://github.com/pyeve/cerberus
+    checkedAt: 2026-11-04
+    via: page
+    quote: Cerberus is on PyPI_, so all you need to do is
+  - field: pypiName
+    value: Cerberus
+    url: https://pypi.org/pypi/Cerberus/json
+    checkedAt: 2026-11-04
+    via: api
+  - field: pypiDownloads
+    value: 5214551 (last month)
+    url: https://pypistats.org/api/packages/cerberus/recent
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 3281
+    url: https://github.com/pyeve/cerberus
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 53
+    url: https://api.github.com/repos/pyeve/cerberus/contributors?per_page=1
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/pyeve/cerberus/blob/1.3.8/pyproject.toml
+    checkedAt: 2026-11-04
+    via: page
+    quote: 'version = "1.3.8"'
+  - field: latestReleaseDate
+    value: 2025-11-06
+    url: https://pypi.org/pypi/Cerberus/json
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://pypi.org/pypi/Cerberus/json
+    checkedAt: 2026-11-04
+    via: api
+notFound: [runsAs, pricingPage, paidEdition, hostedOffering, basedOn, forkOf, successorOf, alternativeTo, pluginDirectory, forum, mastodon, bluesky, x, discord, newsletter, subreddit, reportedInstalls, usageShare, npmName, endoflifeId, hqCountry, sso, databases, adminUi, templating, i18n]
+unreadable: []
+notes: >
+  The homepage given in the CSV, http://python-cerberus.org, answers only with a 301 to docs.python-cerberus.org over http and then https; the record links the https docs site as the homepage, since that is where the project's own site now serves. The repository has no GitHub releases; the registry's stable version 1.3.8 (PyPI upload 2025-11-06) and the matching tag set currentMajor and latestReleaseDate. The default branch is 1.3.x. firstRelease is 2012 from the PyPI upload of 0.0.1 on 2012-10-16, earlier than the oldest GitHub tag. The README says the library has no dependencies; pyproject.toml declares one dependency, importlib-metadata, for Python below 3.8, so the README statement is not recorded as a fact. The README names Nicola Iarocci as the project's author and the LICENSE copyright line gives the same name, which is the maintainer recorded. Eve, the REST framework that uses Cerberus, is a separate project and gets no basedOn or alternativeTo. The docs' community page names a cerberus tag on Stack Overflow; a question and answer tag is no project forum, so no forum fact is recorded. The docs mention a Google Group for the Eve project, which is not Cerberus. The PyPI figure is the pypistats.org last_month count, read on 2026-11-04. In the README example a Validator is built from a schema dict and its validate method returns True for a matching dict.

@@ -1,0 +1,128 @@
+id: cesium
+name: CesiumJS
+status: accepted
+checkedAt: 2026-11-04
+description: JavaScript library for building 3D globes and 2D maps in a web browser, rendered with WebGL.
+facts:
+  - field: homepage
+    value: https://cesium.com/platform/cesiumjs/
+    url: https://cesium.com/platform/cesiumjs/
+    checkedAt: 2026-11-04
+    via: page
+  - field: repository
+    value: https://github.com/CesiumGS/cesium
+    url: https://github.com/CesiumGS/cesium
+    checkedAt: 2026-11-04
+    via: api
+  - field: docs
+    value: https://cesium.com/learn/cesiumjs-learn/
+    url: https://cesium.com/learn/cesiumjs-learn/
+    checkedAt: 2026-11-04
+    via: page
+  - field: maintainer
+    value: CesiumJS Contributors
+    url: https://github.com/CesiumGS/cesium/blob/main/LICENSE.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: Copyright 2011-2026 CesiumJS Contributors
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/CesiumGS
+    checkedAt: 2026-11-04
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/CesiumGS/cesium/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "Apache 2.0. CesiumJS is free for both commercial and non-commercial use."
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/CesiumGS/cesium/blob/main/README.md
+    checkedAt: 2026-11-04
+    via: page
+    quote: "with open source runtime engines such as CesiumJS"
+  - field: language
+    value: JavaScript
+    url: https://github.com/CesiumGS/cesium
+    checkedAt: 2026-11-04
+    via: api
+  - field: runsAs
+    value: [browser]
+    url: https://github.com/CesiumGS/cesium
+    checkedAt: 2026-11-04
+    via: page
+    quote: for creating 3D globes and 2D maps in a web browser without a plugin
+  - field: categories
+    value: [maps, 3d]
+    url: https://github.com/CesiumGS/cesium
+    checkedAt: 2026-11-04
+    via: page
+    quote: a JavaScript library for creating 3D globes and 2D maps
+  - field: installMethod
+    value: npm install
+    url: https://github.com/CesiumGS/cesium
+    checkedAt: 2026-11-04
+    via: page
+    quote: you can install CesiumJS via the
+  - field: installMethod
+    value: download
+    url: https://github.com/CesiumGS/cesium
+    checkedAt: 2026-11-04
+    via: page
+    quote: Visit the Downloads page to download a pre-built copy of CesiumJS.
+  - field: hostedOffering
+    value: Cesium ion, a commercial platform for tiling, hosting and streaming 3D content
+    url: https://github.com/CesiumGS/cesium
+    checkedAt: 2026-11-04
+    via: page
+    quote: Bring your own data for tiling, hosting, and streaming from Cesium ion.
+  - field: npmName
+    value: cesium
+    url: https://registry.npmjs.org/cesium/latest
+    checkedAt: 2026-11-04
+    via: api
+  - field: npmWeeklyDownloads
+    value: 419840
+    url: https://api.npmjs.org/downloads/range/2026-10-26:2026-11-01/cesium
+    checkedAt: 2026-11-04
+    via: api
+  - field: githubStargazers
+    value: 15917
+    url: https://github.com/CesiumGS/cesium
+    checkedAt: 2026-11-04
+    via: api
+  - field: contributors
+    value: 312
+    url: https://api.github.com/repos/CesiumGS/cesium/contributors?per_page=1
+    checkedAt: 2026-11-04
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/CesiumGS/cesium/releases/tag/1.147
+    checkedAt: 2026-11-04
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-02
+    url: https://github.com/CesiumGS/cesium/releases/tag/1.147
+    checkedAt: 2026-11-04
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://github.com/CesiumGS/cesium/tags
+    checkedAt: 2026-11-04
+    via: api
+  - field: x
+    value: https://twitter.com/CesiumJS
+    url: https://cesium.com/platform/cesiumjs/
+    checkedAt: 2026-11-04
+    via: page
+  - field: forum
+    value: https://community.cesium.com/
+    url: https://github.com/CesiumGS/cesium
+    checkedAt: 2026-11-04
+    via: page
+notFound: [pricingPage, paidEdition, basedOn, forkOf, successorOf, alternativeTo, pluginDirectory, mastodon, bluesky, discord, newsletter, subreddit, reportedInstalls, usageShare, runtime, runtimeMin, hqCountry, endoflifeId]
+unreadable: []
+notes: >
+  The homepage given in the CSV, https://cesium.com/cesiumjs/, redirects to https://cesium.com/platform/cesiumjs/, which is recorded. The LICENSE copyright line names CesiumJS Contributors, which is the maintainer recorded; the homepage footer reads "Cesium GS, Inc. 2026", a legal entity other than the copyright holder, so it is noted here and no hqCountry is recorded because the page gives no country. The README calls the platform open-core, with CesiumJS as the open source runtime and an optional commercial subscription to Cesium ion; the license fact says the library is free for commercial and non-commercial use, so licenseModel is open-source and the open-core wording stays here. Cesium ion is a hosted service next to the library and is recorded as hostedOffering because the README names it as the place to host and stream 3D tiles. The npm package engines field asks for Node.js 22.17 or higher; it is a build and tooling requirement for a browser library, so runtimeMin is not recorded. The version 1.147 is a monthly minor line; currentMajor is 1 as the semver major of the tag, and a reviewer decides whether the monthly line makes the major meaningless. The README links a Forum at community.cesium.com, recorded as the forum; the homepage also links a LinkedIn page, which has no field. The license is stated once in the README, as "Apache 2.0" there and Apache-2.0 on the repository. The repository has 224 tags; firstRelease is 2014 from tag 1.0, whose tag object is dated 2014-08-01, earlier than the oldest GitHub release (1.35, 2017) and the npm first upload (2014-11-08). The stars and contributors belong to the repository, which holds CesiumJS only.
