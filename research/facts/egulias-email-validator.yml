@@ -1,0 +1,109 @@
+id: egulias-email-validator
+name: EmailValidator
+status: accepted
+checkedAt: 2026-11-08
+description: PHP library that validates email addresses against several RFCs, with pluggable validation strategies.
+facts:
+  - field: repository
+    value: https://github.com/egulias/EmailValidator
+    url: https://api.github.com/repos/egulias/EmailValidator
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://github.com/egulias/EmailValidator/blob/4.x/README.md
+    url: https://github.com/egulias/EmailValidator/blob/4.x/README.md
+    checkedAt: 2026-11-08
+    via: page
+  - field: maintainer
+    value: Eduardo Gulias Davis
+    url: https://github.com/egulias/EmailValidator/blob/4.x/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) 2013-2023 Eduardo Gulias Davis"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/egulias/EmailValidator
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://repo.packagist.org/p2/egulias/email-validator.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [validation]
+    url: https://github.com/egulias/EmailValidator/blob/4.x/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "A library for validating emails against several RFC."
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/egulias/EmailValidator
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: php
+    url: https://repo.packagist.org/p2/egulias/email-validator.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtimeMin
+    value: "8.1"
+    url: https://repo.packagist.org/p2/egulias/email-validator.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/egulias/EmailValidator/blob/4.x/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Released under the MIT License"
+  - field: installMethod
+    value: composer
+    url: https://github.com/egulias/EmailValidator/blob/4.x/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Run the command below to install via Composer"
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/egulias/EmailValidator/releases/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2025-03-20
+    url: https://api.github.com/repos/egulias/EmailValidator/releases/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 11639
+    url: https://api.github.com/repos/egulias/EmailValidator
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 74
+    url: https://api.github.com/repos/egulias/EmailValidator/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: packagistName
+    value: egulias/email-validator
+    url: https://packagist.org/packages/egulias/email-validator.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: packagistDownloads
+    value: 822644639 (total)
+    url: https://packagist.org/packages/egulias/email-validator.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 318
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/egulias%2Femail-validator
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 433255
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/egulias%2Femail-validator
+    checkedAt: 2026-11-08
+    via: api
+notFound: [homepage, pricingPage, hqCountry, parent, forkOf, successorOf, alternativeTo, basedOn, contentStore, databases, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, renderingModes, runsAs, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, npmWeeklyDownloads, pypiDownloads]
+unreadable: []
+notes: >
+  Repository-only project: the README names no site, so homepage is absent; the README is the docs. The default branch is 4.x and the latest GitHub release is 4.0.4 (2025-03-20), which matches the Packagist latest; the Packagist package is egulias/email-validator, and the Packagist total download count is 822644639 (the candidate row's 802.8M figure is older). firstRelease is the year of the first Packagist version, 1.0.0 on 2013-05-19, the same day the repository was created. The Packagist metadata of 4.0.4 requires php >=8.1, the same as the README requirements list, which names PHP 8.1 and Composer. The maintainer follows the LICENSE copyright line, Eduardo Gulias Davis; the Packagist maintainer is the handle egulias. The README says the library "is a port from another library and work" and credits Dominic Sayers' isemail function and two later contributors; a port is not a basedOn statement, so none is recorded. The README's supported versions table marks v3.x and older as end of life and v4.x as supported; the EOL is a per-version statement, not an end signal for the project. Spoof checking and DNS checking need the PHP Intl extension, stated in the requirements section. The README says it aims to support RFC 5321, 5322, 6530, 6531, 6532 and 1035; no field holds RFC lists. The Packagist monthly figure (26638576 at check time) is not recorded: the total is the figure the registry gives as the all-time count. The README's license line says MIT License; the composer.json license is MIT. The README lists the validation strategies: RFCValidation, NoRFCWarningsValidation, DNSCheckValidation (which checks for mail-server DNS records and does not show that the mailbox exists), MultipleValidationWithAnd, MessageIDValidation, and the SpoofCheckValidation extra. The README says developers can implement their own validation by implementing the EmailValidation interface.

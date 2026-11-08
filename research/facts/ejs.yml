@@ -1,0 +1,123 @@
+id: ejs
+name: EJS
+status: accepted
+checkedAt: 2026-11-08
+description: Templating language that generates HTML from plain JavaScript written inside templates, for Node.js and the browser.
+facts:
+  - field: homepage
+    value: https://ejs.co/
+    url: https://ejs.co/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Generate HTML with plain JS."
+  - field: repository
+    value: https://github.com/mde/ejs
+    url: https://api.github.com/repos/mde/ejs
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://ejs.co/docs/
+    url: https://ejs.co/docs/
+    checkedAt: 2026-11-08
+    via: page
+  - field: maintainer
+    value: Matthew Eernisse
+    url: https://ejs.co/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "© 2026 Matthew Eernisse"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/mde
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: https://registry.npmjs.org/ejs
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [templating]
+    url: https://ejs.co/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "EJS is a simple templating language"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/mde/ejs
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: node
+    url: https://ejs.co/docs/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "It runs on the server (Node.js) and in the browser"
+  - field: runtimeMin
+    value: "0.12"
+    url: https://github.com/mde/ejs/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "supports Node versions at least back to v0.12"
+  - field: license
+    value: Apache-2.0
+    url: https://ejs.co/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Apache-2.0 licensed"
+  - field: currentMajor
+    value: 7
+    url: https://api.github.com/repos/mde/ejs/releases?per_page=40
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-18
+    url: https://api.github.com/repos/mde/ejs/releases/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 8131
+    url: https://api.github.com/repos/mde/ejs
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 123
+    url: https://api.github.com/repos/mde/ejs/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: npmName
+    value: ejs
+    url: https://registry.npmjs.org/ejs
+    checkedAt: 2026-11-08
+    via: api
+  - field: npmWeeklyDownloads
+    value: "59644117 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/ejs
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 15041
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ejs
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 1532080
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ejs
+    checkedAt: 2026-11-08
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://ejs.co/docs/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Add EJS to your project with npm"
+  - field: installMethod
+    value: script tag
+    url: https://ejs.co/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Download a browser build and drop it in a script tag."
+notFound: [pricingPage, hqCountry, parent, forkOf, successorOf, alternativeTo, basedOn, contentStore, databases, headlessApi, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, renderingModes, runsAs, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, packagistName, packagistDownloads, pypiDownloads, templating]
+unreadable: []
+notes: >
+  The GitHub repository mde/ejs has no owner-set homepage; the site ejs.co answers over https (the repository's description says http://ejs.co, which redirects to https) and is recorded as homepage. The LICENSE file in the repository keeps the template placeholder "Copyright [yyyy] [name of copyright owner]", so the copyright holder comes from the homepage footer "© 2026 Matthew Eernisse" and the package.json author "Matthew Eernisse <matthew.eernisse@gmail.com>"; no legal entity or country is stated, so hqCountry is absent. firstRelease is the oldest npm upload, 0.0.1 on 2011-02-14; the GitHub repository was created in 2014, later than the npm upload, so the npm upload sets the year. The repository's latest GitHub release is v7.0.2 (2026-10-18), which matches npm latest. runtimeMin 0.12 is the README's statement for the CommonJS build; the package.json engines field at the v7.0.2 tag is node >=0.12.18; the README says the CLI requires Node v8 or newer, a separate requirement not recorded as runtimeMin. The homepage and docs say EJS has zero dependencies, the homepage lists "Express view engine" and the docs say it complies with the Express view system (a compatibility statement, so no basedOn); the docs list the bundlers and runtimes (Rollup, Webpack, Vite, Bun, Deno and others) it is tested with. The homepage says it runs in Node and the browser; the browser build cannot load templates from the filesystem with renderFile. The homepage "Compare" section compares EJS with Handlebars, Pug and Mustache; no records exist for them, so alternativeTo is absent and the comparison stays in notes. The README warns that EJS is effectively a JavaScript runtime and that end users must not get unrestricted access to the render method; the SECURITY.md is linked from the README. The homepage gives a counted "40M+ weekly downloads" and "8.1k GitHub stars"; the recorded figures are the API and range values. The npm weekly figure is the sum of the seven daily counts from 2026-11-01 to 2026-11-07. The README says compiled templates are cached as intermediate JavaScript, and that the default escaping is for HTML content and quoted attributes, so other output contexts need another escape function; the docs say EJS ships with a CLI. The README feature list names control flow with scriptlet tags, escaped output, unescaped raw output, includes and client-side support; it says the prebuilt browser bundle compiles and renders template strings, while renderFile needs the Node.js entry point. The homepage links a Stack Overflow tag for questions; that is no forum field.

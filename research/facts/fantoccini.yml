@@ -1,0 +1,81 @@
+id: fantoccini
+name: Fantoccini
+status: stub
+checkedAt: 2026-11-08
+description: Rust crate that drives a WebDriver-compatible browser through high-level operations such as clicking elements and submitting forms.
+facts:
+  - field: repository
+    value: https://github.com/jonhoo/fantoccini
+    url: https://api.github.com/repos/jonhoo/fantoccini
+    checkedAt: 2026-11-08
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/jonhoo/fantoccini
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [testing]
+    url: https://crates.io/api/v1/crates/fantoccini
+    checkedAt: 2026-11-08
+    via: api
+  - field: license
+    value: MIT OR Apache-2.0
+    url: https://crates.io/api/v1/crates/fantoccini
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainer
+    value: Jon Gjengset
+    url: https://raw.githubusercontent.com/jonhoo/fantoccini/main/LICENSE-MIT
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) 2016 Jon Gjengset"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/jonhoo
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtimeMin
+    value: "1.67"
+    url: https://crates.io/api/v1/crates/fantoccini/versions
+    checkedAt: 2026-11-08
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://crates.io/api/v1/crates/fantoccini
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-02-28
+    url: https://crates.io/api/v1/crates/fantoccini
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://crates.io/api/v1/crates/fantoccini/versions
+    checkedAt: 2026-11-08
+    via: api
+  - field: crateName
+    value: fantoccini
+    url: https://crates.io/api/v1/crates/fantoccini
+    checkedAt: 2026-11-08
+    via: api
+  - field: crateDownloads
+    value: "4179994 total"
+    url: https://crates.io/api/v1/crates/fantoccini
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 2033
+    url: https://api.github.com/repos/jonhoo/fantoccini
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 73
+    url: https://api.github.com/repos/jonhoo/fantoccini/contributors
+    checkedAt: 2026-11-08
+    via: api
+notFound: [homepage, docs, installMethod, runtime, runsAs, renderingModes, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, pricingPage, paidEdition, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, packagistName, wikidata, endoflifeId, latestPrereleaseDate, lastCommitDate]
+unreadable: []
+notes: >
+  Criterion 3 is in doubt: the README and the docs.rs page name no install step (no cargo add line and no Cargo.toml dependency line); docs.rs shows only the dependency list. A README or docs page that names the Cargo dependency line would settle it. The crate is published on crates.io, which is a registry, not an install page of the project. The repository has no GitHub releases or tags; the release dates and the version come from crates.io (stable 0.22.1, first upload 0.2.0). The crate's license is "MIT OR Apache-2.0" on crates.io; GitHub detects Apache-2.0 from the LICENSE-APACHE file and the copyright line is in LICENSE-MIT. The README names a WebDriver process the examples assume (geckodriver or chromedriver for its tests), so no runsAs is recorded: the crate is a client and the process is the browser driver. No page sentence names Rust (the README and the crate docs say "crate" and "WebDriver"), so runtime is left out; runtimeMin is the rust_version crates.io lists for the latest version. The homepage is the repository, so no homepage is recorded. The repository row in the candidates CSV names discovery as the crate; it has no separate site.

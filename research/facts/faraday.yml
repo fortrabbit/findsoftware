@@ -1,0 +1,117 @@
+id: faraday
+name: Faraday
+status: accepted
+checkedAt: 2026-11-08
+description: Ruby HTTP client library that gives one interface over several HTTP adapters and Rack-style middleware.
+facts:
+  - field: homepage
+    value: https://lostisland.github.io/faraday
+    url: https://rubygems.org/api/v1/gems/faraday.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: repository
+    value: https://github.com/lostisland/faraday
+    url: https://api.github.com/repos/lostisland/faraday
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://lostisland.github.io/faraday
+    url: https://raw.githubusercontent.com/lostisland/faraday/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "The best starting point is the"
+  - field: categories
+    value: [data-fetching]
+    url: https://raw.githubusercontent.com/lostisland/faraday/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Faraday is an HTTP client library abstraction layer"
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/lostisland/faraday
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: ruby
+    url: https://raw.githubusercontent.com/lostisland/faraday/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Currently that means we support Ruby 3.0+"
+  - field: runtimeMin
+    value: "3.0"
+    url: https://github.com/lostisland/faraday/blob/v2.15.1/faraday.gemspec
+    checkedAt: 2026-11-08
+    via: page
+    quote: "spec.required_ruby_version = '>= 3.0'"
+  - field: installMethod
+    value: gem
+    url: https://github.com/lostisland/faraday/blob/main/docs/getting-started/quick-start.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Add this line to your application’s `Gemfile`:"
+  - field: forum
+    value: https://github.com/lostisland/faraday/discussions
+    url: https://raw.githubusercontent.com/lostisland/faraday/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+  - field: pluginDirectory
+    value: https://github.com/lostisland/awesome-faraday/
+    url: https://raw.githubusercontent.com/lostisland/faraday/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "for a list of available adapters and middleware"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/lostisland/faraday
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainer
+    value: Rick Olson, Zack Hobson
+    url: https://raw.githubusercontent.com/lostisland/faraday/main/LICENSE.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) 2009-2026 Rick Olson, Zack Hobson"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/lostisland
+    checkedAt: 2026-11-08
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/lostisland/faraday/releases/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-26
+    url: https://api.github.com/repos/lostisland/faraday/releases/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2009
+    url: https://rubygems.org/api/v1/versions/faraday.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 5956
+    url: https://api.github.com/repos/lostisland/faraday
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 271
+    url: https://api.github.com/repos/lostisland/faraday/contributors
+    checkedAt: 2026-11-08
+    via: api
+  - field: rubygemsName
+    value: faraday
+    url: https://rubygems.org/api/v1/gems/faraday.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: rubygemsDownloads
+    value: "1296078266 total"
+    url: https://rubygems.org/api/v1/gems/faraday.json
+    checkedAt: 2026-11-08
+    via: api
+notFound: [renderingModes, runsAs, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, pricingPage, paidEdition, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, packagistName, pypiName, wikidata, endoflifeId, latestPrereleaseDate, lastCommitDate]
+unreadable: []
+notes: >
+  Boundary ruling: in as an HTTP client library (the HTTP utilities ruling), so status is accepted. The README names no install route; the installMethod comes from the docs quick start, which names the Gemfile line and the gem command. The forum is the GitHub Discussions badge in the README; the plugin directory is the Awesome Faraday list the README links for adapters and middleware. The gemspec at the latest release tag requires Ruby 3.0 or later; the README repeats that minimum. The RubyGems download figure counts all downloads since the gem was first published, and the value says so. The README copyright line names "the Faraday Team" (2009 to 2026); the LICENSE line names Rick Olson and Zack Hobson, which is the maintainer recorded here. The docs site is a docsify page that loads its text by script, so the docs content is read from the docs folder of the repository. The migration page for the rest-client gem shows code changes and names no importer, so importsFrom is left out; the rest-client gem has no record, so alternativeTo is left out. Stars and contributors are for the repository. The README mentions adapters such as Net::HTTP and Typhoeus; adapters are coined kinds and stay in notes. The docs quick start describes a connection created with a base URL, default headers and query parameters, an adapter and middleware, with HTTP verb methods called on it. The docs list the included middleware as authentication, URL encoding, JSON encoding and decoding, instrumentation, logging and raising errors, and document custom adapters and custom middleware. Release dates: GitHub latest release v2.15.1 (2026-10-26); the gem's first upload 0.0.1 (2009-12-19) sets firstRelease.

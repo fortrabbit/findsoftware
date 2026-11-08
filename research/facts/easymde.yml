@@ -1,0 +1,113 @@
+id: easymde
+name: EasyMDE
+status: accepted
+checkedAt: 2026-11-08
+description: Drop-in JavaScript Markdown editor that replaces a textarea, with a toolbar, live rendering of Markdown syntax and autosave.
+facts:
+  - field: repository
+    value: https://github.com/Ionaru/easy-markdown-editor
+    url: https://api.github.com/repos/Ionaru/easy-markdown-editor
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainer
+    value: Jeroen Akkerman
+    url: https://raw.githubusercontent.com/Ionaru/easy-markdown-editor/master/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) 2017 Jeroen Akkerman."
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/Ionaru
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: https://registry.npmjs.org/easymde
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [markdown-editor]
+    url: https://raw.githubusercontent.com/Ionaru/easy-markdown-editor/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "A drop-in JavaScript text area replacement for writing beautiful and understandable Markdown."
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/Ionaru/easy-markdown-editor
+    checkedAt: 2026-11-08
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://raw.githubusercontent.com/Ionaru/easy-markdown-editor/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Via npm"
+  - field: installMethod
+    value: CDN script tag (unpkg)
+    url: https://raw.githubusercontent.com/Ionaru/easy-markdown-editor/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Via the UNPKG CDN"
+  - field: installMethod
+    value: CDN script tag (jsDelivr)
+    url: https://raw.githubusercontent.com/Ionaru/easy-markdown-editor/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Or jsDelivr"
+  - field: i18n
+    value: "yes"
+    url: https://raw.githubusercontent.com/Ionaru/easy-markdown-editor/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "can be used for customization or internationalization"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/Ionaru/easy-markdown-editor/master/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/Ionaru/easy-markdown-editor/master/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 2
+    url: https://registry.npmjs.org/easymde/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: "2026-05-03"
+    url: https://registry.npmjs.org/easymde
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestPrereleaseDate
+    value: "2026-08-11"
+    url: https://registry.npmjs.org/easymde
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 3096
+    url: https://api.github.com/repos/Ionaru/easy-markdown-editor
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 94
+    url: https://api.github.com/repos/Ionaru/easy-markdown-editor/contributors
+    checkedAt: 2026-11-08
+    via: api
+  - field: npmName
+    value: easymde
+    url: https://registry.npmjs.org/easymde/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: npmWeeklyDownloads
+    value: "292037 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/easymde
+    checkedAt: 2026-11-08
+    via: api
+notFound: [homepage, docs, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, databases, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, contentStore, renderingModes, runtime, runtimeMin, runsAs, paidEdition, pricingPage, reportedInstalls, usageShare, discord, mastodon, bluesky, x, newsletter, subreddit, forum, pluginDirectory, selfHostOption, regions, wikidata, hexName]
+unreadable: []
+notes: >
+  The homepage the CSV lists (stackblitz.com/edit/easymde) is the project's demo on a third-party service, so no homepage is recorded; the repository holds the README and the docs. The LICENSE names two copyright holders: Sparksuite, Inc. (2015, the SimpleMDE project) and Jeroen Akkerman (2017, this fork); the fork's maintainer is recorded, the 2015 holder goes here. The README says "This repository is a fork of SimpleMDE, made by Sparksuite" and "EasyMDE is a continuation of SimpleMDE"; no SimpleMDE record exists, so the fork statement is not a forkOf value. The repository is not a GitHub fork (the API reports fork false). The README says the library "is bundled with CodeMirror and depends on Font Awesome" and previews are rendered by Marked: dependencies, not basedOn statements. The fork changes list says "Support for Node 8 and beyond" and "TypeScript support"; no runtime or runsAs is recorded because the README states no sentence saying where the editor runs, and the Node line describes the 2017 fork's changes. The GitHub repository is not archived, and the npm package has no deprecated flag. The default npm dist-tag is 2.21.0 (2026-05-03); the beta line 3.0.0-beta.1 (2026-08-11) is recorded as latestPrereleaseDate because it is newer. The first tag, 1.0.0, has a 2015-06-22 commit inherited from the SimpleMDE history; the first npm version is 1.0.0 on 2018-04-23, so firstRelease is the fork's own first release, 2018; the 2015 date belongs to SimpleMDE. The GitHub repository has no GitHub releases, only tags; the highest stable version is the npm 2.21.0, which is also the tag 2.21.0. The spell checker, autosave, image upload and the Marked GitHub Flavored Markdown rendering are features, not fields. The i18n entry is the README's statement that the status message texts can be used for internationalization. The README "How it works" section says the editor is "bundled with CodeMirror" and that its toolbar and status bar are added to the top and bottom of the text area. The README's option list also says the image upload can be handled by a custom function or an upload endpoint, and that the server must check size and type because the client-side check can be bypassed.

@@ -1,0 +1,1 @@
+dygraphs is a JavaScript charting library that draws interactive, zoomable charts of time series. It is installed from npm for use with a module bundler, or loaded as a script from a CDN such as UNPKG or jsDelivr. Questions go to Stack Overflow and a Google Group.

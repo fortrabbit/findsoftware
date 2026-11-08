@@ -1,0 +1,124 @@
+id: fakerphp
+name: Faker
+status: accepted
+checkedAt: 2026-11-08
+description: PHP library that generates fake data for tests, database seeding and anonymized datasets.
+facts:
+  - field: name
+    value: Faker
+    url: https://github.com/FakerPHP/Faker/blob/2.0/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Faker is a PHP library that generates fake data for you."
+  - field: homepage
+    value: https://fakerphp.org/
+    url: https://fakerphp.org/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Faker is a PHP library that generates fake data for you."
+  - field: repository
+    value: https://github.com/FakerPHP/Faker
+    url: https://api.github.com/repos/FakerPHP/Faker
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://fakerphp.org/
+    url: https://github.com/FakerPHP/Faker/blob/2.0/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Full documentation can be found over on fakerphp.github.io"
+  - field: maintainer
+    value: François Zaninotto
+    url: https://github.com/FakerPHP/Faker/blob/2.0/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) 2011 François Zaninotto"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/FakerPHP/Faker
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://api.github.com/repos/FakerPHP/Faker/commits/v1.0.0
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [fake-data]
+    url: https://github.com/FakerPHP/Faker/blob/2.0/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Faker is a PHP library that generates fake data for you."
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/FakerPHP/Faker
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://fakerphp.org/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Faker requires PHP >= 7.4."
+  - field: runtimeMin
+    value: "7.4"
+    url: https://github.com/FakerPHP/Faker/blob/v1.24.1/composer.json
+    checkedAt: 2026-11-08
+    via: page
+    quote: '"php": "^7.4 || ^8.0",'
+  - field: license
+    value: MIT
+    url: https://github.com/FakerPHP/Faker/blob/v1.24.1/composer.json
+    checkedAt: 2026-11-08
+    via: page
+    quote: '"license": "MIT",'
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/FakerPHP/Faker/blob/2.0/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Faker is released under the MIT License."
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/FakerPHP/Faker/releases
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2024-11-21
+    url: https://api.github.com/repos/FakerPHP/Faker/releases
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 4003
+    url: https://api.github.com/repos/FakerPHP/Faker
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 392
+    url: https://api.github.com/repos/FakerPHP/Faker/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: packagistName
+    value: fakerphp/faker
+    url: https://packagist.org/packages/fakerphp/faker.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: packagistDownloads
+    value: 454325938 (total)
+    url: https://packagist.org/packages/fakerphp/faker.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 2288
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/fakerphp%2Ffaker
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 158781
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/fakerphp%2Ffaker
+    checkedAt: 2026-11-08
+    via: api
+notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, installMethod, npmName, npmWeeklyDownloads, pypiName, pypiDownloads]
+unreadable: []
+notes: >
+  The repository is a GitHub fork (the API reports fzaninotto/Faker as parent), but no page of the project states the fork, so forkOf is not recorded. The LICENSE copyright line names François Zaninotto (2011) and the record follows it; the GitHub organization FakerPHP maintains the repository, and the Packagist maintainer list (localheinz, graham-campbell, pimjansen, ceulemans) is registry data, not a maintainer statement. The default branch is 2.0, which has no release; the highest stable release is v1.24.1 (2024-11-21), the same version Packagist lists as latest, so currentMajor is 1. Packagist reports no abandoned flag. No installMethod is recorded: the only install instruction is a composer command in a code block, and the docs name composer only inside a code comment ("when installed via composer"), which does not name the route in a sentence. firstRelease is 2012 from the oldest tag in this repository (v1.0.0, commit date 2012-07-10). The README says Faker is heavily inspired by Perl's Data::Faker and Ruby's Faker; that is not basedOn. The composer.json at v1.24.1 requires PHP ^7.4 or ^8.0, so runtimeMin is 7.4. The Packagist total is the all-time figure, and dependency counts come from ecosyste.ms for packagist.org.

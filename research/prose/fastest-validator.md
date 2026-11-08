@@ -1,0 +1,3 @@
+fastest-validator is a JavaScript library that validates plain objects against a schema. Each field in the schema gets a type and rules, such as a minimum length or a numeric range. The library compiles the schema into a checker function, which returns true or a list of error objects, one for each failing field.
+
+The README lists built-in rules for types such as string, number, array, date, email and UUID. It also covers optional and nullable fields, custom and asynchronous validators, and custom error messages. The package is installed with npm, and the README shows use in Node.js, in a browser through a script tag, and in Deno. It names Moleculer as natively supported, and Fastify and Express as supported through separate packages.

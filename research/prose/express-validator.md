@@ -1,0 +1,1 @@
+express-validator is an Express.js middleware package that wraps the validators and sanitizers of validator.js, so that Express.js requests can be validated and sanitized. It is installed from npm and runs on Node.js. Its docs say it may also work with HTTP libraries whose request objects resemble the Express.js request.

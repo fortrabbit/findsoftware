@@ -1,0 +1,128 @@
+id: efcore
+name: Entity Framework Core
+status: accepted
+checkedAt: 2026-11-08
+description: Object-relational mapper for .NET that maps entity classes to databases and queries them with LINQ.
+facts:
+  - field: homepage
+    value: https://learn.microsoft.com/ef/
+    url: https://learn.microsoft.com/ef/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Entity Framework is a modern object-relation mapper"
+  - field: docs
+    value: https://learn.microsoft.com/en-us/ef/core/
+    url: https://learn.microsoft.com/en-us/ef/core/
+    checkedAt: 2026-11-08
+    via: page
+  - field: repository
+    value: https://github.com/dotnet/efcore
+    url: https://api.github.com/repos/dotnet/efcore
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://api.github.com/repos/dotnet/efcore/releases/tags/7.0.0-alpha2
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainer
+    value: .NET Foundation
+    url: https://raw.githubusercontent.com/dotnet/efcore/main/LICENSE.txt
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) .NET Foundation and Contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/dotnet
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [orm]
+    url: https://learn.microsoft.com/en-us/ef/core/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "EF Core can serve as an object-relational mapper (O/RM)"
+  - field: language
+    value: C#
+    url: https://api.github.com/repos/dotnet/efcore
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: [dotnet]
+    url: https://learn.microsoft.com/en-us/ef/core/get-started/overview/install
+    checkedAt: 2026-11-08
+    via: page
+    quote: "At runtime, EF Core requires a recent version of .NET."
+  - field: runtimeMin
+    value: "10.0"
+    url: https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/10.0.14/microsoft.entityframeworkcore.nuspec
+    checkedAt: 2026-11-08
+    via: api
+  - field: installMethod
+    value: [nuget]
+    url: https://learn.microsoft.com/en-us/ef/core/get-started/overview/install
+    checkedAt: 2026-11-08
+    via: page
+    quote: "EF Core is shipped as NuGet packages"
+  - field: databases
+    value: [sqlserver, sqlite, cosmosdb, mariadb, mysql, postgres]
+    url: https://raw.githubusercontent.com/dotnet/efcore/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "EF Core works with SQL Server, Azure SQL Database, SQLite, Azure Cosmos DB, MariaDB, MySQL, PostgreSQL"
+  - field: pluginDirectory
+    value: https://learn.microsoft.com/en-us/ef/core/providers/
+    url: https://raw.githubusercontent.com/dotnet/efcore/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "See the list of providers"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/dotnet/efcore/main/LICENSE.txt
+    checkedAt: 2026-11-08
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 10
+    url: https://github.com/dotnet/efcore/releases/tag/v10.0.13
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-25
+    url: https://api.nuget.org/v3/catalog0/data/2026.10.25.17.33.47/microsoft.entityframeworkcore.10.0.14.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 14814
+    url: https://api.github.com/repos/dotnet/efcore
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 364
+    url: https://api.github.com/repos/dotnet/efcore/contributors
+    checkedAt: 2026-11-08
+    via: api
+  - field: nugetName
+    value: Microsoft.EntityFrameworkCore
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:Microsoft.EntityFrameworkCore
+    checkedAt: 2026-11-08
+    via: api
+  - field: nugetDownloads
+    value: 2712765156 total
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:Microsoft.EntityFrameworkCore
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 5701
+    url: https://packages.ecosyste.ms/api/v1/registries/nuget.org/packages/microsoft.entityframeworkcore
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 169
+    url: https://packages.ecosyste.ms/api/v1/registries/nuget.org/packages/microsoft.entityframeworkcore
+    checkedAt: 2026-11-08
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, adminUi, headlessApi, templating, contentStore, i18n, multisite, livePreview, userRoles, sso, latestPrereleaseDate, endoflifeId, forum, discord, x, bluesky, mastodon, newsletter, subreddit, pluginCount, reportedInstalls, usageShare, packagistName, npmName]
+unreadable: []
+notes: >
+  The repository holds two projects: Entity Framework Core and Microsoft.Data.Sqlite, an ADO.NET provider for SQLite that the EF Core SQLite provider is built on. The stars and contributors belong to dotnet/efcore; the NuGet figure is Microsoft.EntityFrameworkCore, the package the install page names for the core library, and its total is the count NuGet reports for all versions. The README says the projects "are maintained by Microsoft" and the LICENSE copyright line names ".NET Foundation and Contributors"; the LICENSE line is recorded as the maintainer, and Microsoft goes to notes. The learn.microsoft.com pages are Microsoft's own documentation for the project and are cited as its homepage and docs. The README names "EF Core works with" and "and other databases through a provider plugin API"; the providers page lists more engines (Firebird, MongoDB, Oracle and others) through third-party providers, which are not recorded as databases because the sentence that names them is not quoted. The providers page warns that not all providers are maintained by the EF Core project. The hub page offers "Which version should I use - EF Core or EF 6?", a comparison of two product lines; it is not recorded as alternativeTo because it does not say alternative or switching. The install page says the runtime needs "a recent version of .NET" and points to the releases page for the minimal version; runtimeMin is the net10.0 target in the 10.0.14 nuspec, the latest stable package. The GitHub releases stop at v10.0.13 (2026-10-13), while NuGet lists 10.0.14 (2026-10-25); the NuGet date is the newest stable release. The tag v11.0.100 exists without a GitHub release, and NuGet lists only preview and release-candidate builds for major 11, so currentMajor stays 10. The newest release candidate 11.0.0-rc.3 was published on NuGet on the same day as 10.0.14, 24 seconds later, so no latestPrereleaseDate is recorded at day precision. The oldest GitHub release is 7.0.0-alpha2 (2014-07-08), from the project when it was named EF7, so firstRelease is 2014 from this repository; the NuGet package's first version 1.0.0 is not used. The license statement is MIT for the repository.

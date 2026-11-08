@@ -1,0 +1,112 @@
+id: ex-machina
+name: ExMachina
+status: accepted
+checkedAt: 2026-11-08
+description: Elixir library for defining test data factories and associations, used with Ecto and configurable for other persistence libraries.
+facts:
+  - field: repository
+    value: https://github.com/beam-community/ex_machina
+    url: https://api.github.com/repos/beam-community/ex_machina
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://hexdocs.pm/ex_machina/ExMachina.html
+    url: https://github.com/beam-community/ex_machina/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Check out the docs"
+  - field: firstRelease
+    value: 2015
+    url: https://hex.pm/api/packages/ex_machina
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainer
+    value: BEAM Community
+    url: https://github.com/beam-community/ex_machina/blob/main/LICENSE.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) 2025 BEAM Community"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/beam-community
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [testing]
+    url: https://github.com/beam-community/ex_machina/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "makes it easy to create test data and associations"
+  - field: language
+    value: Elixir
+    url: https://api.github.com/repos/beam-community/ex_machina
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: elixir
+    url: https://api.github.com/repos/beam-community/ex_machina
+    checkedAt: 2026-11-08
+    via: api
+    quote: "Create test data for Elixir applications"
+  - field: installMethod
+    value: Mix (hex)
+    url: https://github.com/beam-community/ex_machina/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "In `mix.exs`, add the ExMachina dependency"
+  - field: license
+    value: MIT
+    url: https://github.com/beam-community/ex_machina/blob/main/LICENSE.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/beam-community/ex_machina/blob/main/LICENSE.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/beam-community/ex_machina/releases/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-02
+    url: https://api.github.com/repos/beam-community/ex_machina/releases/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: hexName
+    value: ex_machina
+    url: https://hex.pm/api/packages/ex_machina
+    checkedAt: 2026-11-08
+    via: api
+  - field: hexDownloads
+    value: 112172 (week, 2026-11-08)
+    url: https://hex.pm/api/packages/ex_machina
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 2063
+    url: https://api.github.com/repos/beam-community/ex_machina
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 70
+    url: https://api.github.com/repos/beam-community/ex_machina/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 10
+    url: https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/ex_machina
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 1069
+    url: https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/ex_machina
+    checkedAt: 2026-11-08
+    via: api
+notFound: [homepage, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runtimeMin, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, selfHostOption, hostedOffering, npmName, pypiName, packagistName]
+unreadable: []
+notes: >
+  Status accepted. The project has no site of its own: the hex.pm package page is the registry listing, not the project's site, so homepage is left out. The README links the docs on hexdocs.pm; the Hex metadata also names https://ex-machina.hexdocs.pm/ as the docs HTML URL. The library's description on Hex is "A factory library by the creators of FactoryBot (née FactoryGirl)", which names the creators but is no parent: FactoryBot is inspiration per the README, not a basis, so no basedOn and no alternativeTo. The README says it "works great with Ecto" and is configurable for other persistence libraries; that is a works-with statement, so no basedOn for Ecto, although an ecto record exists. The runtime is Elixir, which runs on the Erlang VM; the OTP minimum is not stated on any page read, so runtimeMin is left out. The Hex weekly figure is the downloads.week value of the Hex package API for ex_machina; the API gives no start and end dates, so the period is recorded as week on the date read. The GitHub owner is the beam-community organization, and the LICENSE copyright line names BEAM Community, a community maintainer. The contributors count is the last page of the contributors endpoint. Test library: no runsAs, since no page states that it runs as a process. The first upload on Hex is version 0.0.1 of 2015-09-15, which sets firstRelease to 2015.

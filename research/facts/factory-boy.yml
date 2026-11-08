@@ -1,0 +1,122 @@
+id: factory-boy
+name: factory_boy
+status: accepted
+checkedAt: 2026-11-08
+description: Python library that builds test objects from declarative factory classes, as a replacement for static test fixtures.
+facts:
+  - field: homepage
+    value: https://factoryboy.readthedocs.io/en/stable/
+    url: https://factoryboy.readthedocs.io/en/stable/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "factory_boy is a fixtures replacement based on thoughtbot’s factory_bot"
+  - field: repository
+    value: https://github.com/FactoryBoy/factory_boy
+    url: https://api.github.com/repos/FactoryBoy/factory_boy
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://factoryboy.readthedocs.io/en/stable/
+    url: https://github.com/FactoryBoy/factory_boy/blob/master/README.rst
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Documentation: https://factoryboy.readthedocs.io/"
+  - field: maintainer
+    value: The FactoryBoy project
+    url: https://github.com/FactoryBoy/factory_boy/blob/master/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) The FactoryBoy project"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/FactoryBoy
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2010
+    url: https://pypi.org/pypi/factory_boy/json
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [fixtures]
+    url: https://github.com/FactoryBoy/factory_boy/blob/master/README.rst
+    checkedAt: 2026-11-08
+    via: page
+    quote: "As a fixtures replacement tool, it aims to replace static, hard to maintain fixtures"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/FactoryBoy/factory_boy
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://pypi.org/pypi/factory_boy/json
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtimeMin
+    value: "3.8"
+    url: https://pypi.org/pypi/factory_boy/json
+    checkedAt: 2026-11-08
+    via: api
+    quote: '"requires_python":">=3.8"'
+  - field: installMethod
+    value: pip, from PyPI
+    url: https://github.com/FactoryBoy/factory_boy/blob/master/README.rst
+    checkedAt: 2026-11-08
+    via: page
+    quote: "PyPI: https://pypi.org/project/factory-boy/"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/FactoryBoy/factory_boy
+    checkedAt: 2026-11-08
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/FactoryBoy/factory_boy/blob/master/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/FactoryBoy/factory_boy/tags
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2025-02-03
+    url: https://pypi.org/pypi/factory_boy/json
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 3811
+    url: https://api.github.com/repos/FactoryBoy/factory_boy
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 106
+    url: https://api.github.com/repos/FactoryBoy/factory_boy/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: pypiName
+    value: factory_boy
+    url: https://pypi.org/pypi/factory_boy/json
+    checkedAt: 2026-11-08
+    via: api
+  - field: pypiDownloads
+    value: 20158508 per month (last_month)
+    url: https://pypistats.org/api/packages/factory_boy/recent
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 206
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/factory_boy
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 16150
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/factory_boy
+    checkedAt: 2026-11-08
+    via: api
+notFound: [pricingPage, hqCountry, parent, forkOf, successorOf, alternativeTo, runsAs, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, npmWeeklyDownloads, packagistName, packagistDownloads]
+unreadable: []
+notes: >
+  The homepage is the Read the Docs stable page; the GitHub homepage field points to factoryboy.readthedocs.io, which redirects to /en/stable/. The repository has no GitHub release objects: its tags run to 3.3.3 (2025-02-03), the same date as the PyPI upload of 3.3.3, so latestReleaseDate and currentMajor come from those. firstRelease is 2010 from the PyPI 1.0.0 upload (2010-08-22), older than the oldest git tag (v1.0.4, 2011). The Credits page (https://factoryboy.readthedocs.io/en/stable/credits.html) says the project "is operated and maintained by" Jeff Widman and Raphaël Barrois; the LICENSE copyright line names The FactoryBoy project, and that line is the recorded maintainer. The README says factory_boy is based on thoughtbot's factory_bot, a Ruby library; it is a Python library modeled on it, not built on it, so no basedOn (port ruling, as commonmark-php). The ORM integrations on the ORMs page are Django, Mogo, MongoEngine and SQLAlchemy; ORMs are not databases, so no databases field is recorded. The README also lists a source install (git clone and python setup.py install); only the PyPI route is recorded as installMethod. Faker is used for random values through factory.Faker: a dependency, not a basedOn. The mailing list (googlegroups) is the project's own list, not a forum, so no forum field. Python 3.8 is the requires_python minimum of the latest PyPI release; the ORM pages do not state a minimum.

@@ -1,0 +1,123 @@
+id: elixir-gettext
+name: Gettext
+status: accepted
+checkedAt: 2026-11-08
+description: Elixir library implementing the Gettext internationalization and localization system.
+facts:
+  - field: repository
+    value: https://github.com/elixir-gettext/gettext
+    url: https://api.github.com/repos/elixir-gettext/gettext
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://gettext.hexdocs.pm/
+    url: https://github.com/elixir-gettext/gettext/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Documentation for `Gettext` is"
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/elixir-gettext/gettext/commits/v0.5.0
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainer
+    value: Dashbit
+    url: https://github.com/elixir-gettext/gettext/blob/main/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright 2020 Dashbit"
+  - field: hqCountry
+    value: PL
+    url: https://www.iubenda.com/privacy-policy/94751149
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Dashbit, Poland"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/elixir-gettext/gettext
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [i18n]
+    url: https://github.com/elixir-gettext/gettext/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Gettext is an **internationalization** (i18n) and **localization** (l10n) system"
+  - field: i18n
+    value: yes
+    url: https://github.com/elixir-gettext/gettext/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Gettext is an **internationalization** (i18n) and **localization** (l10n) system"
+  - field: language
+    value: Elixir
+    url: https://api.github.com/repos/elixir-gettext/gettext
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: [elixir]
+    url: https://github.com/elixir-gettext/gettext/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "This project is an implementation of the Gettext system in Elixir"
+  - field: installMethod
+    value: mix
+    url: https://github.com/elixir-gettext/gettext/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Add `:gettext` to your list of dependencies in `mix.exs`"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/elixir-gettext/gettext
+    checkedAt: 2026-11-08
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/elixir-gettext/gettext/blob/main/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/elixir-gettext/gettext/tags
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2025-11-08
+    url: https://hex.pm/api/packages/gettext/releases/1.0.2
+    checkedAt: 2026-11-08
+    via: api
+  - field: hexName
+    value: gettext
+    url: https://hex.pm/api/packages/gettext
+    checkedAt: 2026-11-08
+    via: api
+  - field: hexDownloads
+    value: 166183098 total
+    url: https://hex.pm/api/packages/gettext
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 494
+    url: https://api.github.com/repos/elixir-gettext/gettext
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 63
+    url: https://api.github.com/repos/elixir-gettext/gettext/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 181
+    url: https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/gettext
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 18434
+    url: https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/gettext
+    checkedAt: 2026-11-08
+    via: api
+notFound: [homepage, runtimeMin, parent, basedOn, forkOf, successorOf, alternativeTo, pricingPage, paidEdition, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, contentStore, databases, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, endoflifeId, usageShare, reportedInstalls, wikidata, hostedOffering, packagistName, npmName]
+unreadable: []
+notes: >
+  The repository has no GitHub release objects. Its newest stable tag is v1.0.2, the same version Hex publishes, uploaded 2025-11-08 according to the Hex release record, so currentMajor and latestReleaseDate come from the tag and the Hex record. The oldest tag is v0.5.0, committed 2015-09-13, the same day as the first Hex upload, which sets firstRelease to 2015. The Hex docs at gettext.hexdocs.pm are the project's documentation, so no homepage is recorded; the repository is the only other project link. The LICENSE appendix names two copyright holders: Plataformatec (2015) and Dashbit (2020). Dashbit is recorded as maintainer as the later holder; the Plataformatec attribution is not a maintainer statement of its own. hqCountry PL comes from the owner line of Dashbit's privacy policy ("Dashbit, Poland"), linked from dashbit.co. The README describes the workflow: gettext calls in source code, messages in Portable Object files under priv/gettext per locale, and mix gettext.extract and mix gettext.merge to sync them; it calls Gettext a standard for i18n across communities. mix.exs and the Hex metadata require Elixir ~> 1.14, and no OTP minimum appears in any page, so runtimeMin is left out. The Hex 'week' figure (392200 downloads over the last seven days as of 2026-11-08) is a second download figure and is not recorded as a fact. Stars and contributors belong to the single repository.

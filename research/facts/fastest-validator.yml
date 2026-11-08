@@ -1,0 +1,101 @@
+id: fastest-validator
+name: fastest-validator
+status: accepted
+checkedAt: 2026-11-08
+description: JavaScript validation library that compiles an object schema into a checker function for Node.js, browsers and Deno.
+facts:
+  - field: repository
+    value: https://github.com/icebob/fastest-validator
+    url: https://api.github.com/repos/icebob/fastest-validator
+    checkedAt: 2026-11-08
+    via: api
+  - field: x
+    value: https://twitter.com/Icebobcsi
+    url: https://raw.githubusercontent.com/icebob/fastest-validator/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/icebob/fastest-validator
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [validation]
+    url: https://raw.githubusercontent.com/icebob/fastest-validator/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "The fastest JS validator library for NodeJS | Browser | Deno."
+  - field: runtime
+    value: [node, deno]
+    url: https://raw.githubusercontent.com/icebob/fastest-validator/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "The fastest JS validator library for NodeJS | Browser | Deno."
+  - field: installMethod
+    value: npm
+    url: https://raw.githubusercontent.com/icebob/fastest-validator/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "You can install it via NPM"
+  - field: installMethod
+    value: cdn
+    url: https://raw.githubusercontent.com/icebob/fastest-validator/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "With `esm.sh`, now Typescript is supported"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/icebob/fastest-validator/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "fastest-validator is available under the MIT license."
+  - field: maintainer
+    value: Icebob
+    url: https://raw.githubusercontent.com/icebob/fastest-validator/master/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) 2017 Icebob"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/icebob
+    checkedAt: 2026-11-08
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/icebob/fastest-validator/releases/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2025-04-30
+    url: https://api.github.com/repos/icebob/fastest-validator/releases/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://registry.npmjs.org/fastest-validator
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 1463
+    url: https://api.github.com/repos/icebob/fastest-validator
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 40
+    url: https://api.github.com/repos/icebob/fastest-validator/contributors
+    checkedAt: 2026-11-08
+    via: api
+  - field: npmName
+    value: fastest-validator
+    url: https://registry.npmjs.org/fastest-validator/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: npmWeeklyDownloads
+    value: "181563 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/fastest-validator
+    checkedAt: 2026-11-08
+    via: api
+notFound: [homepage, docs, runtimeMin, runsAs, renderingModes, basedOn, hqCountry, parent, forkOf, successorOf, alternativeTo, pricingPage, paidEdition, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, usageShare, reportedInstalls, packagistName, pypiName, wikidata, endoflifeId, latestPrereleaseDate, lastCommitDate]
+unreadable: []
+notes: >
+  No homepage: the repository is the only site, and the npm homepage points to the README. The README is the documentation; it has no docs site. The README's Browser usage section shows a unpkg script tag under a heading with no sentence naming the route, so no cdn installMethod is recorded for it; the esm.sh route is named by a sentence before its snippet and is recorded. The runtime list comes from the README's own statement that the library runs for NodeJS, Browser and Deno; the browser is not a runtime value, so no runsAs is recorded. The README gives Node.js 8 only as the requirement for its async validators, and the package manifest has no engines field, so runtimeMin is left out. The x link is the maintainer's account in the README contact badge, recorded without a quote; the Tweet badge at the top names no account. The README's benchmark figures are not recorded. Stars and contributors are for the repository. The README describes a schema of fields with a type and rules (such as min and max), compiled once into a checker function that returns true or a list of error objects; built-in validators include string, number, array, date, email and uuid; it covers optional and nullable fields, custom and asynchronous validators and custom error messages (its heading says l10n; not recorded as i18n because the section only sets message text). The Supported frameworks list names Moleculer as natively supported and Fastify and Express through separate packages. The package's license is MIT in both the README and the npm package; one entry is recorded. Release dates: GitHub latest release v1.19.1 (2025-04-30); the npm first upload 0.2.0 (2017-03-08) sets firstRelease, and the oldest GitHub release (2017-07-03) falls in the same year.

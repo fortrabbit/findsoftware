@@ -1,0 +1,116 @@
+id: endroid-qr-code
+name: Endroid QR Code
+status: accepted
+checkedAt: 2026-11-08
+description: PHP library that generates QR codes as PNG, WebP, SVG, EPS or binary output.
+facts:
+  - field: repository
+    value: https://github.com/endroid/qr-code
+    url: https://api.github.com/repos/endroid/qr-code
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://api.github.com/repos/endroid/qr-code/commits/1.0.0
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainer
+    value: Jeroen van den Enden
+    url: https://github.com/endroid/qr-code/blob/main/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright 2025 (c) Jeroen van den Enden"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/endroid/qr-code
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [qr-code]
+    url: https://github.com/endroid/qr-code/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "This library helps you generate QR codes in a jiffy"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/endroid/qr-code
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/endroid/qr-code/blob/6.2.0/composer.json
+    checkedAt: 2026-11-08
+    via: page
+    quote: '"php": "^8.5"'
+  - field: runtimeMin
+    value: "8.5"
+    url: https://github.com/endroid/qr-code/blob/6.2.0/composer.json
+    checkedAt: 2026-11-08
+    via: page
+    quote: '"php": "^8.5"'
+  - field: installMethod
+    value: composer
+    url: https://github.com/endroid/qr-code/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Use Composer to install the library"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/endroid/qr-code
+    checkedAt: 2026-11-08
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/endroid/qr-code/blob/main/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: currentMajor
+    value: 6
+    url: https://api.github.com/repos/endroid/qr-code/tags
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-03
+    url: https://repo.packagist.org/p2/endroid/qr-code.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: packagistName
+    value: endroid/qr-code
+    url: https://packagist.org/packages/endroid/qr-code.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: packagistDownloads
+    value: "88236366 (total)"
+    url: https://packagist.org/packages/endroid/qr-code/stats.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: packagistMonthlyDownloads
+    value: 4199452
+    url: https://packagist.org/packages/endroid/qr-code/stats.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 4822
+    url: https://api.github.com/repos/endroid/qr-code
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 55
+    url: https://api.github.com/repos/endroid/qr-code/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 250
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/endroid%2Fqr-code
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 2162
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/endroid%2Fqr-code
+    checkedAt: 2026-11-08
+    via: api
+notFound: [homepage, docs, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, renderingModes, templating, i18n, contentStore, databases, adminUi, headlessApi, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, endoflifeId, wikidata, hostedOffering, npmName, npmWeeklyDownloads]
+unreadable: []
+notes: >
+  The README shows a builder API for content, encoding, error correction, size, margin, a logo and a label, a writer per output format with its own options, and a validation reader that is off by default because it affects performance. No homepage: the README and composer.json name no project site (composer.json homepage is the repository; the GitHub repository's website field also shows endroid.nl; the README byline links endroid.nl, the maintainer's own dashboard page with no mention of the library), so the project is repository-only. The criteria hold from the README, the composer.json at the tag and Packagist. Maintainer: the LICENSE copyright line names Jeroen van den Enden, the composer.json author of the same name; the GitHub profile names an employer, which is not a statement about this library, so no company is recorded. The README is a PHP library with a Symfony bundle in a separate repository (endroid/qr-code-bundle) that adds configuration, multiple configurations, generation routes and Twig functions; the bundle is part of the same project family and is not recorded as a plugin. Output writers named in the README are PNG, WebP, SVG, EPS and binary; these are output formats and are kept here, not in fields. Image writers need the PHP GD extension, and the validation reader and PDF writer need optional packages named in composer.json; these are requirements, not runtime minimums. The sponsor page and a coffee link on the README are not social fields. Latest tag 6.2.0 has no GitHub release object; its Packagist version time equals the tag commit time. The Packagist total is the stats endpoint figure read on 2026-11-08; the monthly figure is read from the same endpoint.

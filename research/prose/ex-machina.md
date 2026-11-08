@@ -1,0 +1,1 @@
+ExMachina is an Elixir library for defining test data factories and associations. It is published on Hex as `ex_machina` and is added to a project's `mix.exs`. The README says it works with Ecto and can be configured for other persistence libraries. The LICENSE names BEAM Community as copyright holder, and the documentation is on HexDocs.

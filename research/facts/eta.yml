@@ -1,0 +1,141 @@
+id: eta
+name: Eta
+status: accepted
+checkedAt: 2026-11-08
+description: Embedded JavaScript template engine written in TypeScript that renders templates in Node, Deno and the browser.
+facts:
+  - field: homepage
+    value: https://eta.js.org
+    url: https://eta.js.org/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Lightweight, powerful, pluggable embedded JS template engine"
+  - field: repository
+    value: https://github.com/bgub/eta
+    url: https://api.github.com/repos/bgub/eta
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://eta.js.org/docs/4.x.x/intro/quickstart
+    url: https://eta.js.org/docs/4.x.x/intro/quickstart
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Eta is a lightweight and blazing fast embedded JS templating engine"
+  - field: firstRelease
+    value: 2020
+    url: https://api.github.com/repos/bgub/eta/releases
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainer
+    value: Ben Gubler
+    url: https://github.com/bgub/eta/blob/main/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright 2025 Ben Gubler"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/bgub
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [templating]
+    url: https://eta.js.org/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Lightweight, powerful, pluggable embedded JS template engine"
+  - field: language
+    value: TypeScript
+    url: https://github.com/bgub/eta
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Written in TypeScript"
+  - field: runtime
+    value: node
+    url: https://eta.js.org/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "use it in Node, Deno, or the browser"
+  - field: runtimeMin
+    value: Node.js 20
+    url: https://github.com/bgub/eta/blob/v4.6.0/package.json
+    checkedAt: 2026-11-08
+    via: page
+    quote: '"node": ">=20"'
+  - field: installMethod
+    value: JSR
+    url: https://eta.js.org/docs/4.x.x/resources/deno
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Prefer importing from JSR"
+  - field: installMethod
+    value: browser module import
+    url: https://eta.js.org/docs/4.x.x/intro/quickstart
+    checkedAt: 2026-11-08
+    via: page
+    quote: "In browsers, import the core build"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/bgub/eta
+    checkedAt: 2026-11-08
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/bgub/eta/blob/main/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/bgub/eta/releases/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-04-25
+    url: https://api.github.com/repos/bgub/eta/releases/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: npmName
+    value: eta
+    url: https://registry.npmjs.org/eta
+    checkedAt: 2026-11-08
+    via: api
+  - field: npmWeeklyDownloads
+    value: 10973137 (2026-11-01 to 2026-11-07)
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/eta
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 1764
+    url: https://api.github.com/repos/bgub/eta
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 36
+    url: https://api.github.com/repos/bgub/eta/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 177
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/eta
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 15007
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/eta
+    checkedAt: 2026-11-08
+    via: api
+  - field: alternativeTo
+    value: [ejs]
+    url: https://eta.js.org/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "A faster, more lightweight, and more configurable EJS alternative"
+  - field: discord
+    value: https://discord.gg/27gGncJYE2
+    url: https://eta.js.org/
+    checkedAt: 2026-11-08
+    via: page
+notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, importsFrom, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, paidEdition, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, wikidata, selfHostOption, hostedOffering]
+unreadable: []
+notes: >
+  Status accepted. The package is a template engine that runs inside a Node, Deno or browser process, so runtime is node and no runsAs is recorded. The quickstart gives npm install eta only as a code block under the heading "Install Eta", with no sentence naming npm, so npm is not recorded as installMethod; the Deno page says "Prefer importing from JSR" and the quickstart says "In browsers, import the core build", which are the two routes recorded. The EJS credit: the README says parts are based on code from EJS, which is licensed under Apache-2.0; that is a credit for bundled code, not the package license, so it is not recorded as a second license entry. The homepage compares Eta with EJS ("A faster, more lightweight, and more configurable EJS alternative"); ejs has a record in this wave, so it is recorded as alternativeTo. The template syntax (<% %> tags with JavaScript) is the library's own, so the templating field is not set. The Eta v4 line is ESM-only, from the quickstart page. The npm figure is the eta package named by the quickstart, for 2026-11-01 to 2026-11-07. The npm created date (2013) belongs to a package named eta before this project, so firstRelease is the 2020 oldest GitHub release (v1.0.0-beta.0, a prerelease). The newest prerelease (eta-v4.0.0-beta.1, 2025-09-13) is older than the latest stable release, so latestPrereleaseDate is not recorded. The framework integrations (Express.js, Fastify, Koa, Vite, Node-RED, Webpack) are listed on the quickstart and README; they are third-party integrations, not records. The package requires Node.js 20 per package.json at v4.6.0, which is the runtimeMin. The maintainer is the LICENSE copyright holder, Ben Gubler, an individual account.

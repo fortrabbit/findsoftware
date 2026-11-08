@@ -1,0 +1,123 @@
+id: fabricjs
+name: Fabric.js
+status: accepted
+checkedAt: 2026-11-08
+description: JavaScript HTML5 canvas library for interactive objects, with SVG and JSON import and export.
+facts:
+  - field: homepage
+    value: https://www.fabricjs.com/
+    url: https://www.fabricjs.com/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Fabric.js is a powerful and simple Javascript HTML5 canvas library"
+  - field: docs
+    value: https://www.fabricjs.com/docs/
+    url: https://www.fabricjs.com/docs/getting-started/installing/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Fabric.js can be made available via following approaches as suited by your project"
+  - field: repository
+    value: https://github.com/fabricjs/fabric.js
+    url: https://api.github.com/repos/fabricjs/fabric.js
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainer
+    value: Andrea Bogazzi, Shachar Nen and Fabric.js contributors
+    url: https://github.com/fabricjs/fabric.js/blob/master/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) 2016-present Andrea Bogazzi, Shachar Nen and Fabric.js contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/fabricjs
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: https://registry.npmjs.org/fabric
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [graphics]
+    url: https://www.fabricjs.com/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Fabric.js is a powerful and simple Javascript HTML5 canvas library"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/fabricjs/fabric.js
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://github.com/fabricjs/fabric.js/blob/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Said so the minimum supported version of node is 20."
+  - field: runtimeMin
+    value: "node 20"
+    url: https://github.com/fabricjs/fabric.js/blob/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Said so the minimum supported version of node is 20."
+  - field: installMethod
+    value: cdn
+    url: https://www.fabricjs.com/docs/getting-started/installing/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Include a script tag within your HTML page, from any cdn that offers this service"
+  - field: license
+    value: MIT
+    url: https://github.com/fabricjs/fabric.js/blob/master/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 7
+    url: https://api.github.com/repos/fabricjs/fabric.js/releases/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-18
+    url: https://api.github.com/repos/fabricjs/fabric.js/releases/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 31549
+    url: https://api.github.com/repos/fabricjs/fabric.js
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 301
+    url: https://api.github.com/repos/fabricjs/fabric.js/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: npmName
+    value: fabric
+    url: https://registry.npmjs.org/fabric/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: npmWeeklyDownloads
+    value: "1351285 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/fabric
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 690
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/fabric
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 2295
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/fabric
+    checkedAt: 2026-11-08
+    via: api
+  - field: x
+    value: https://twitter.com/fabricjs
+    url: https://github.com/fabricjs/fabric.js/blob/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+notFound: [pricingPage, parent, forkOf, successorOf, alternativeTo, basedOn, contentStore, databases, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, renderingModes, runsAs, hqCountry, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, newsletter, mastodon, bluesky, wikidata, endoflifeId, packagistName, packagistDownloads, pypiDownloads, docker, dockerPulls, selfHostOption, mavenCoordinates, rubygemsName, rubygemsDownloads, lastCommitDate]
+unreadable: []
+notes: >
+  The CSV row gave http://fabricjs.com; the plain http address redirects to https://www.fabricjs.com/, which answers 200, so the https address is recorded. The id is fabricjs because fabric is taken by the Python Fabric record. Monorepo: stars and contributors belong to the fabric.js repository, which holds the @fabricjs packages. The npm figure is the legacy package fabric, the one the README badges and the CDN route name; the README calls it a compatibility facade that re-exports @fabricjs/browser and recommends @fabricjs/browser and @fabricjs/node for new applications. Those two packages have a 7.5.0-beta.1 latest tag and 96 and 85 downloads in the same window (sums of the daily figures), so the reviewer should confirm that fabric is the figure to keep. The npm route is not recorded as installMethod: the docs heading "Installing from npm" and the command "npm i --save fabric" have no sentence naming the route, and the README's install sentence "install the environment-specific package:" also has its route only in a code block. The docs page for the CDN route says the script tag works from cdnjs, jsdelivr or unpkg. The README's Quick Start CDN example still uses fabric@6.4.3 and the docs say "Upgrading to Fabric.js 7.0" exists; the release list's newest stable is v7.4.0 (2026-05-18), so currentMajor is 7. The README's Node.js support sentence says the minimum is 20; the docs browser-support table says Node.js 18 or newer, which is older than the README and the npm engines field, and the README is recorded. firstRelease is the year of npm version 0.5.2 (2011-08-16), the oldest registry upload, which is older than the oldest GitHub tag in the repository (1.6.2, 2016). The GitHub release list has a v7.0.0-rc1 prerelease (2025-12-15) and beta (2025-08-24), both older than the stable 7.4.0, so no latestPrereleaseDate is recorded. The x link is the Twitter address the README gives under "Fabric.js on Twitter"; the homepage has no social link. The Patreon and sponsor links and the sponsor advertisement in the README are not recorded.  The homepage lists the features Fabric.js offers: text editing, complex SVG path support, WebGL and Canvas2d image filters, animation, clip paths, on-canvas controls, TypeScript and object grouping. The README says Node.js support depends on node-canvas for the canvas and jsdom for the window, that node-canvas has its own limits and bugs, and that canvas features cannot be transpiled or polyfilled in older browsers.  The homepage also says "Fabric provides interactive object model on top of canvas element" and "Fabric also provide serialization and has SVG-to-canvas (and canvas-to-SVG) parser."
