@@ -1,0 +1,87 @@
+id: gomarkdown
+name: gomarkdown
+status: accepted
+checkedAt: 2026-11-08
+description: Go library that parses Markdown and renders it as HTML, with an optional CommonMark mode.
+facts:
+  - field: repository
+    value: https://github.com/gomarkdown/markdown
+    url: https://api.github.com/repos/gomarkdown/markdown
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://pkg.go.dev/github.com/gomarkdown/markdown
+    url: https://github.com/gomarkdown/markdown/blob/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "https://pkg.go.dev/github.com/gomarkdown/markdown : top level package"
+  - field: maintainer
+    value: gomarkdown
+    url: https://api.github.com/repos/gomarkdown/markdown
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainerType
+    value: community
+    url: https://github.com/gomarkdown/markdown/blob/master/LICENSE.txt
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright © 2018 Authors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/gomarkdown
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [markdown-parser]
+    url: https://github.com/gomarkdown/markdown/blob/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "is a Go library for parsing Markdown text and rendering as HTML"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/gomarkdown/markdown
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/gomarkdown/markdown/blob/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "is a Go library for parsing Markdown text and rendering as HTML"
+  - field: forkOf
+    value: blackfriday
+    url: https://github.com/gomarkdown/markdown/blob/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "markdown is a fork of v2 of https://github.com/russross/blackfriday."
+  - field: license
+    value: BSD-2-Clause
+    url: https://github.com/gomarkdown/markdown/blob/master/LICENSE.txt
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Markdown is distributed under the Simplified BSD License:"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/gomarkdown/markdown/blob/master/LICENSE.txt
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Markdown is distributed under the Simplified BSD License:"
+  - field: lastCommitDate
+    value: 2026-11-07
+    url: https://api.github.com/repos/gomarkdown/markdown/commits?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 1740
+    url: https://api.github.com/repos/gomarkdown/markdown
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 92
+    url: https://api.github.com/repos/gomarkdown/markdown/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+notFound: [homepage, installMethod, pricingPage, paidEdition, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, npmName, packagistName, reportedInstalls, usageShare, hqCountry, parent, basedOn, successorOf, alternativeTo, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, firstRelease, latestReleaseDate, currentMajor, wikidata]
+unreadable: []
+notes: >
+  The repository has no release objects and no tags, so the newest commit on the default branch is lastCommitDate; the import reads the project as listed by that date. No firstRelease, latestReleaseDate or currentMajor is recorded because no release exists; the repository was created in January 2018 and that is not a release. The README names no homepage and no docs site; the API documentation it links is the pkg.go.dev page for the module, recorded as docs. The install statement "You can install it with:" introduces the command for mdtohtml, a command-line tool in the same repository, installed with go install; the README gives no install line for the library, which is imported as a module, so no installMethod is recorded. The LICENSE.txt holds three copyright lines: Russ Ross (2011), Krzysztof Kowalczyk (2018) and Authors (2018); the README names no maintainer and the owning account is the gomarkdown organization, so the maintainer is recorded as the organization name, a fallback that the reviewer may replace. The README says the project is a fork of v2 of Blackfriday, which is the forkOf statement; the Blackfriday record is blackfriday. The README describes the library's split into ast, parser, html and md packages and its CommonMark mode, which uses the same tree and the parser flag; the sanitizing flags for untrusted input are also described there. The 652 CommonMark examples and the README's sanitizing advice are spec compliance and security notes, not fields. The README lists tools that import the package on pkg.go.dev, which is no fact about adoption. The license file names the Simplified BSD License, which is the BSD two-clause text; GitHub reports NOASSERTION because the file holds three copyright lines. The stars and contributors belong to the single repository. A Go module has no download figure.

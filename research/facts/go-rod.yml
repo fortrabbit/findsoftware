@@ -1,0 +1,113 @@
+id: go-rod
+name: Rod
+status: accepted
+checkedAt: 2026-11-08
+description: Go library that drives a browser over the Chrome DevTools Protocol for web automation and scraping.
+facts:
+  - field: homepage
+    value: https://go-rod.github.io/
+    url: https://github.com/go-rod/rod/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+  - field: repository
+    value: https://github.com/go-rod/rod
+    url: https://api.github.com/repos/go-rod/rod
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://go-rod.github.io/
+    url: https://github.com/go-rod/rod/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+  - field: firstRelease
+    value: 2020
+    url: https://github.com/go-rod/rod/releases/tag/v0.42.1
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainer
+    value: Yad Smood
+    url: https://github.com/go-rod/rod/blob/main/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright 2019 Yad Smood"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/go-rod/rod/blob/main/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright 2019 Yad Smood"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/go-rod
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [browser-automation]
+    url: https://github.com/go-rod/rod/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "It's designed for web automation and scraping"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/go-rod/rod
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/go-rod/go-rod.github.io/blob/main/get-started/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Golang is the only requirement"
+  - field: runtimeMin
+    value: "Go 1.21"
+    url: https://github.com/go-rod/rod/blob/v0.116.2/go.mod
+    checkedAt: 2026-11-08
+    via: page
+    quote: "go 1.21"
+  - field: license
+    value: MIT
+    url: https://github.com/go-rod/rod/blob/main/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "The MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/go-rod/rod/blob/main/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "The MIT License"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/go-rod/rod/releases/tag/v0.116.2
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2024-07-12
+    url: https://github.com/go-rod/rod/releases/tag/v0.116.2
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 7146
+    url: https://api.github.com/repos/go-rod/rod
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 57
+    url: https://api.github.com/repos/go-rod/rod/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: forum
+    value: https://github.com/go-rod/rod/discussions
+    url: https://github.com/go-rod/rod/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+  - field: discord
+    value: https://discord.gg/CpevuvY
+    url: https://github.com/go-rod/rod/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "https://discord.gg/CpevuvY"
+notFound: [pricingPage, paidEdition, installMethod, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, npmName, packagistName, reportedInstalls, usageShare, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, wikidata]
+unreadable: [https://go-rod.github.io/]
+notes: >
+  The homepage is a docsify shell whose text loads in the browser, so the homepage and docs facts cite the README's link to it and the docs source repository go-rod/go-rod.github.io, which holds the get-started, compatibility and why-rod pages; the shell's meta description reads "A Devtools driver for web automation and scraping". The README is the repository's own text and names the documentation site, the API reference on pkg.go.dev and the Discord room. No sentence names an install route: the get-started guide's "Create a module:" line introduces a command block, so no installMethod is recorded. Go module versions and dates come from the GitHub releases and the proxy; no download figure exists for a Go module. The oldest tag is v0.0.1 from January 2020, the oldest release object v0.42.1 from July 2020; firstRelease takes the year both share. The MIT license names Yad Smood as the copyright holder; the owning organization is go-rod. The compatibility page says the Docker way is recommended to run Rod on a server, which is no runsAs statement, and says that auto-downloaded browsers may fail on some platforms. The why-rod page compares Rod with Chromedp, Puppeteer and Selenium under headings and does not call them alternatives, so no alternativeTo is recorded. The README calls the protocol the library is based on the DevTools Protocol; the protocol is not a record and sits in no field. The release tags are v0.x, so currentMajor is 0.

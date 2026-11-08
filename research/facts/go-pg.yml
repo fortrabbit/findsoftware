@@ -1,0 +1,128 @@
+id: go-pg
+name: go-pg
+status: accepted
+checkedAt: 2026-11-08
+description: PostgreSQL client and ORM for Go.
+facts:
+  - field: homepage
+    value: https://pg.uptrace.dev/
+    url: https://pg.uptrace.dev/
+    checkedAt: 2026-11-08
+    via: page
+  - field: docs
+    value: https://pg.uptrace.dev/
+    url: https://pg.uptrace.dev/
+    checkedAt: 2026-11-08
+    via: page
+  - field: repository
+    value: https://github.com/go-pg/pg
+    url: https://api.github.com/repos/go-pg/pg
+    checkedAt: 2026-11-08
+    via: api
+  - field: alternativeTo
+    value: [bun-orm]
+    url: https://pg.uptrace.dev/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Please use Bun instead."
+  - field: firstRelease
+    value: 2014
+    url: https://api.github.com/repos/go-pg/pg/commits/40b574c62b81f19aa1db5518032eb90ea9a66cb7
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainer
+    value: github.com/go-pg/pg Authors
+    url: https://raw.githubusercontent.com/go-pg/pg/v10.15.1/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) 2013 github.com/go-pg/pg Authors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/go-pg
+    checkedAt: 2026-11-08
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/go-pg/pg
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://raw.githubusercontent.com/go-pg/pg/v10.15.1/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "go-pg supports 2 last Go versions and requires a Go version with"
+  - field: runtimeMin
+    value: "1.24"
+    url: https://raw.githubusercontent.com/go-pg/pg/v10.15.1/go.mod
+    checkedAt: 2026-11-08
+    via: page
+    quote: "go 1.24.0"
+  - field: categories
+    value: [orm]
+    url: https://raw.githubusercontent.com/go-pg/pg/v10.15.1/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Working with models using ORM and SQL"
+  - field: databases
+    value: [postgres]
+    url: https://raw.githubusercontent.com/go-pg/pg/v10.15.1/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "PostgreSQL multidimensional Arrays using array tag"
+  - field: installMethod
+    value: go get
+    url: https://raw.githubusercontent.com/go-pg/pg/v10.15.1/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "And then install go-pg"
+  - field: license
+    value: BSD-2-Clause
+    url: https://api.github.com/repos/go-pg/pg
+    checkedAt: 2026-11-08
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/go-pg/pg/v10.15.1/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without"
+  - field: currentMajor
+    value: 10
+    url: https://github.com/go-pg/pg/releases/tag/v10.15.1
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-29
+    url: https://github.com/go-pg/pg/releases/tag/v10.15.1
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 5779
+    url: https://api.github.com/repos/go-pg/pg
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 61
+    url: https://api.github.com/repos/go-pg/pg/contributors
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 549
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fgo-pg%2Fpg%2Fv10
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 797
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fgo-pg%2Fpg%2Fv10
+    checkedAt: 2026-11-08
+    via: api
+  - field: discord
+    value: https://discord.gg/rWtp5Aj
+    url: https://github.com/go-pg/pg/blob/v10/README.md
+    checkedAt: 2026-11-08
+    via: page
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, wikidata, pricingPage, paidEdition, forum, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, runsAs, renderingModes, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, contentStore, usageShare, reportedInstalls, npmName, packagistName, endoflifeId, supportedVersions, selfHostOption, dockerPulls]
+unreadable: []
+notes: >
+  Maintenance: the README says "go-pg is in a maintenance mode and only critical issues are addressed." and names Bun as the place new development happens; the docs homepage says "go-pg is in a maintenance mode and will NOT receive new features. Please use Bun instead." The project does not declare itself ended or unmaintained, and it still publishes tags, so the status stays accepted; a reviewer may decide the maintenance statement should make it a stub. The Bun link is recorded as alternativeTo (the docs name it as the thing to use instead), and the successor relation is left to this note because go-pg is the older project. The README's Ecosystem section lists migrations, a code generator and a sharding package, which are not recorded. The README's "Chat" badge links the Discord invite, which is recorded as discord. The repository default branch is v10; the v11.0.0-alpha tags date from 2021 and are older than the latest stable release, so no latestPrereleaseDate is recorded. The repository has tags v1 (2014-06-02 commit) and v2.1 (2014-09-12 commit), so firstRelease is 2014. The LICENSE copyright line names github.com/go-pg/pg Authors, and the README names no maintainer. The go.mod at v10.15.1 states go 1.24.0. The installation route is named in the README only as a code line after the sentence quoted under installMethod.

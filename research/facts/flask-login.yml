@@ -1,0 +1,129 @@
+id: flask-login
+name: Flask-Login
+status: accepted
+checkedAt: 2026-11-08
+description: Flask extension that manages user sessions, handling logging in, logging out and remembered sessions for Flask applications.
+facts:
+  - field: homepage
+    value: https://flask-login.readthedocs.io/en/latest/
+    url: https://flask-login.readthedocs.io/en/latest/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Flask-Login provides user session management for Flask"
+  - field: repository
+    value: https://github.com/maxcountryman/flask-login
+    url: https://api.github.com/repos/maxcountryman/flask-login
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://flask-login.readthedocs.io/en/latest/
+    url: https://flask-login.readthedocs.io/en/latest/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Flask-Login provides user session management for Flask"
+  - field: basedOn
+    value: flask
+    url: https://flask-login.readthedocs.io/en/latest/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Flask-Login provides user session management for Flask"
+  - field: maintainer
+    value: Matthew Frazier
+    url: https://github.com/maxcountryman/flask-login/blob/main/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) 2011 Matthew Frazier"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/maxcountryman
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://api.github.com/repos/maxcountryman/flask-login/commits/f07abd02547ed2ed3a35bbf3101a2523415d47fd
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [auth]
+    url: https://github.com/maxcountryman/flask-login/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "It handles the common tasks of logging in, logging out, and remembering your users' sessions"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/maxcountryman/flask-login
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://pypi.org/pypi/flask-login/json
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtimeMin
+    value: "3.7"
+    url: https://github.com/maxcountryman/flask-login/blob/0.6.3/setup.cfg
+    checkedAt: 2026-11-08
+    via: page
+    quote: "python_requires = >= 3.7"
+  - field: installMethod
+    value: pip
+    url: https://flask-login.readthedocs.io/en/latest/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Install the extension with pip"
+  - field: license
+    value: MIT
+    url: https://github.com/maxcountryman/flask-login/blob/main/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/maxcountryman/flask-login/blob/main/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person"
+  - field: currentMajor
+    value: "0"
+    url: https://api.github.com/repos/maxcountryman/flask-login/releases
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2023-10-30
+    url: https://api.github.com/repos/maxcountryman/flask-login/releases/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: pypiName
+    value: flask-login
+    url: https://pypi.org/pypi/flask-login/json
+    checkedAt: 2026-11-08
+    via: api
+  - field: pypiDownloads
+    value: 4528228 (last week)
+    url: https://pypistats.org/api/packages/flask-login/recent
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 3674
+    url: https://api.github.com/repos/maxcountryman/flask-login
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 102
+    url: https://api.github.com/repos/maxcountryman/flask-login/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 113
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/flask-login
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 8547
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/flask-login
+    checkedAt: 2026-11-08
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, adminUi, contentStore, databases, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, hostedOffering, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, forum, wikidata, endoflifeId, selfHostOption, reportedInstalls, usageShare, npmName, npmWeeklyDownloads, maintainerType, regions, apiLimits, packagistName, packagistDownloads]
+unreadable: []
+notes: >
+  The repository is a user account (maxcountryman) and the LICENSE copyright line names Matthew Frazier, so that name is recorded as maintainer. The docs site at the latest path shows the version line "Flask-Login 0.7.0 documentation", ahead of the newest GitHub release and PyPI upload, 0.6.3; the current major is taken from the release, so the docs version is not recorded. The categories value auth is a category the import maps directly; the README describes logging in, logging out and session handling and does not name authentication in those words. The runtimeMin comes from python_requires in setup.cfg at tag 0.6.3; setup.py at that tag carries only install requirements (Flask and Werkzeug), which are dependencies and are not basedOn statements. The README says Flask-Login "is not bound to any particular database system or permissions model" and names no database. The first tag is 0.1.1, dated 2012-04-17; the repository was created 2012-03-11. The PyPI figure is the pypistats last-week count; PyPI's own API reports no downloads. Stars and contributors are for the repository, which holds only the library.

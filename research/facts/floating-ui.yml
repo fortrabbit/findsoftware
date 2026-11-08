@@ -1,0 +1,111 @@
+id: floating-ui
+name: Floating UI
+status: accepted
+checkedAt: 2026-11-08
+description: JavaScript library that positions floating elements such as tooltips, popovers and dropdowns next to their anchors, with React and Vue bindings.
+facts:
+  - field: homepage
+    value: https://floating-ui.com
+    url: https://floating-ui.com
+    checkedAt: 2026-11-08
+    via: page
+    quote: "A JavaScript library to position floating elements and create interactions for them."
+  - field: repository
+    value: https://github.com/floating-ui/floating-ui
+    url: https://api.github.com/repos/floating-ui/floating-ui
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://floating-ui.com/docs/getting-started
+    url: https://floating-ui.com/docs/getting-started
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Floating UI is a library that helps you create"
+  - field: maintainer
+    value: Floating UI contributors
+    url: https://github.com/floating-ui/floating-ui/blob/master/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) 2021 Floating UI contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/floating-ui/floating-ui
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://api.github.com/repos/floating-ui/floating-ui/releases
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [ui-library]
+    url: https://github.com/floating-ui/floating-ui/blob/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "such as tooltips, popovers, dropdowns, and more"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/floating-ui/floating-ui
+    checkedAt: 2026-11-08
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/floating-ui/floating-ui
+    checkedAt: 2026-11-08
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://floating-ui.com/docs/getting-started
+    checkedAt: 2026-11-08
+    via: page
+    quote: "you can use a package manager like npm or a CDN"
+  - field: installMethod
+    value: cdn
+    url: https://floating-ui.com/docs/getting-started
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Floating UI can be loaded via CDN using ESM or UMD format."
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/floating-ui/floating-ui/releases
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-11
+    url: https://registry.npmjs.org/@floating-ui/dom
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 32793
+    url: https://api.github.com/repos/floating-ui/floating-ui
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 131
+    url: https://api.github.com/repos/floating-ui/floating-ui/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: npmName
+    value: "@floating-ui/dom"
+    url: https://registry.npmjs.org/@floating-ui/dom/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: npmWeeklyDownloads
+    value: "138319153 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@floating-ui/dom
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 917
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@floating-ui%2Fdom
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 126362
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@floating-ui%2Fdom
+    checkedAt: 2026-11-08
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runtime, runtimeMin, runsAs, renderingModes, contentStore, databases, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, newsletter, mastodon, bluesky, x, wikidata, endoflifeId, packagistName, packagistDownloads, pypiDownloads, apiLimits, regions, selfHostOption]
+unreadable: []
+notes: >
+  Monorepo: the repository holds Floating UI's packages (@floating-ui/dom, core, react, react-dom, react-native, vue, utils) and the website; the stars and contributors count belong to the whole monorepo, and the npm figure is for @floating-ui/dom, the package the getting-started page names first for the vanilla route. The tag list also holds the v2.x line of Popper v2, which is not the package the install docs name, so currentMajor is 1 from @floating-ui/dom 1.8.0 (GitHub release of 2026-07-11, also the npm latest). The README says "Popper is now Floating UI!" and points to Popper v2 on its own branch; the migration page says "Floating UI forked Popper 2" and "Learn how to migrate from Popper v2 to Floating UI." No record id popper exists in research/, so forkOf, successorOf and importsFrom stay unrecorded here; a Popper record would take them. The homepage names Base UI as "A new headless React component library built on top of Floating UI"; that is Base UI's statement and is recorded on its own record (base-ui basedOn react), not here. The LICENSE copyright line names "Floating UI contributors", a group with no legal form; the package.json author of @floating-ui/dom is "atomiks", recorded in notes only. No page states a legal entity or a country, so hqCountry stays out. The homepage links GitHub and Open Collective only; no social or newsletter link appears on the pages read. The category is ui-library because the categories import map has no positioning or tooltip value. The getting-started page says "Use on the web with vanilla JavaScript" and names Canvas, WebGL and React Native as other platforms a Platform can target; no sentence says it runs in the browser, so runsAs is not recorded. The npm download figure is the sum of the daily values from api.npmjs.org for 2026-11-01 to 2026-11-07. The React and Vue bindings are npm packages of the same project, not a basedOn statement, since the getting-started page presents them as platforms of one library.

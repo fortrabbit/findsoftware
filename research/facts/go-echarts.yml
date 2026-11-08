@@ -1,0 +1,106 @@
+id: go-echarts
+name: go-echarts
+status: accepted
+checkedAt: 2026-11-08
+description: Go library that builds charts from Go code and renders them as HTML pages that load Apache ECharts resources.
+facts:
+  - field: homepage
+    value: https://go-echarts.github.io/go-echarts/
+    url: https://go-echarts.github.io/go-echarts/
+    checkedAt: 2026-11-08
+    via: page
+  - field: docs
+    value: https://go-echarts.github.io/go-echarts/
+    url: https://go-echarts.github.io/go-echarts/
+    checkedAt: 2026-11-08
+    via: page
+  - field: repository
+    value: https://github.com/go-echarts/go-echarts
+    url: https://api.github.com/repos/go-echarts/go-echarts
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2020
+    url: https://api.github.com/repos/go-echarts/go-echarts/commits/aeae62dcf8c194b1a6a27199922ab4887b991d86
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainer
+    value: chenjiandongx
+    url: https://raw.githubusercontent.com/go-echarts/go-echarts/v2.7.3/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) 2019~now chenjiandongx"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/go-echarts
+    checkedAt: 2026-11-08
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/go-echarts/go-echarts
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://raw.githubusercontent.com/go-echarts/go-echarts/v2.7.3/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "The adorable charts library for Golang"
+  - field: runtimeMin
+    value: "1.18"
+    url: https://raw.githubusercontent.com/go-echarts/go-echarts/v2.7.3/go.mod
+    checkedAt: 2026-11-08
+    via: page
+    quote: "go 1.18"
+  - field: categories
+    value: [charts]
+    url: https://raw.githubusercontent.com/go-echarts/go-echarts/v2.7.3/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "The adorable charts library for Golang"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/go-echarts/go-echarts/v2.7.3/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/go-echarts/go-echarts/v2.7.3/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 2
+    url: https://github.com/go-echarts/go-echarts/releases/tag/v2.7.3
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-27
+    url: https://github.com/go-echarts/go-echarts/releases/tag/v2.7.3
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 7657
+    url: https://api.github.com/repos/go-echarts/go-echarts
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 63
+    url: https://api.github.com/repos/go-echarts/go-echarts/contributors
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 273
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fgo-echarts%2Fgo-echarts%2Fv2
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 194
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fgo-echarts%2Fgo-echarts%2Fv2
+    checkedAt: 2026-11-08
+    via: api
+notFound: [installMethod, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, pricingPage, paidEdition, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, databases, runsAs, renderingModes, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, contentStore, usageShare, reportedInstalls, npmName, packagistName, endoflifeId, supportedVersions, selfHostOption, dockerPulls]
+unreadable: [https://go-echarts.github.io/go-echarts/]
+notes: >
+  The handbook at https://go-echarts.github.io/go-echarts/ is a docsify page whose text loads in the browser, so it was read from its Markdown in the repository at tag v2.7.3: https://raw.githubusercontent.com/go-echarts/go-echarts/v2.7.3/docs/en-us/README.md, with the install, dive-into, render and ecosystem pages in the same folder. The handbook says go-echarts "Provide the generic HTML templates with echarts resources" and "Generate echarts required options and datasets based on go programs"; the README says go-echarts is "built on the top of other open-source projects" without naming Apache ECharts as parent, so basedOn is left empty. The output is HTML written to an io.Writer (rendering target HTML, coined kind, not a field). Stars, contributors and the repository belong to the go-echarts repository (the module is one package in it). The README says the project is developed under v2 and that v1 and v2 are incompatible; the v1.0.0 tag (2020-06-11 commit) is the oldest tag, and firstRelease follows it. The rc tags v2.4.0-rc1 (2024-01-22) and v2.4.0-rc2 (2024-05-20) are older than the latest stable release, so no latestPrereleaseDate is recorded. The maintainer is the LICENSE copyright holder; the repository is owned by the go-echarts organization. The ecosystem page lists templ, GoNB and insyra; they are not recorded. The README's classic GOPATH route is not recorded as an installMethod.

@@ -1,0 +1,112 @@
+id: globalize-rails
+name: Globalize
+status: accepted
+checkedAt: 2026-11-08
+description: Ruby gem that adds translated attribute values to ActiveRecord models in Rails.
+facts:
+  - field: repository
+    value: https://github.com/globalize/globalize
+    url: https://api.github.com/repos/globalize/globalize
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainer
+    value: Sven Fuchs, Joshua Harvey, Clemens Kofler, John-Paul Bader, Tomasz Stachewicz, Philip Arndt, Chris Salzberg
+    url: https://github.com/globalize/globalize/blob/main/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Sven Fuchs, Joshua Harvey, Clemens Kofler, John-Paul Bader, Tomasz Stachewicz, Philip Arndt, Chris Salzberg"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/globalize
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2010
+    url: https://api.github.com/repos/globalize/globalize/tags?per_page=100
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [i18n]
+    url: https://github.com/globalize/globalize/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Globalize builds on the I18n API in Ruby on Rails"
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/globalize/globalize
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: ruby
+    url: https://github.com/globalize/globalize/blob/v7.1.3/globalize.gemspec
+    checkedAt: 2026-11-08
+    via: page
+    quote: "s.required_ruby_version = '>= 3.0'"
+  - field: runtimeMin
+    value: "3.0"
+    url: https://github.com/globalize/globalize/blob/v7.1.3/globalize.gemspec
+    checkedAt: 2026-11-08
+    via: page
+    quote: "s.required_ruby_version = '>= 3.0'"
+  - field: basedOn
+    value: rails
+    url: https://github.com/globalize/globalize/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Globalize builds on the I18n API in Ruby on Rails"
+  - field: license
+    value: MIT
+    url: https://github.com/globalize/globalize/blob/main/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "The MIT License"
+  - field: installMethod
+    value: bundler
+    url: https://github.com/globalize/globalize/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "When using Bundler, put this in your Gemfile:"
+  - field: currentMajor
+    value: 7
+    url: https://api.github.com/repos/globalize/globalize/releases/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-25
+    url: https://api.github.com/repos/globalize/globalize/releases/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 2156
+    url: https://api.github.com/repos/globalize/globalize
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 138
+    url: https://api.github.com/repos/globalize/globalize/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: rubygemsName
+    value: globalize
+    url: https://rubygems.org/api/v1/gems/globalize.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: rubygemsDownloads
+    value: "14655185 total"
+    url: https://rubygems.org/api/v1/gems/globalize.json
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 93
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/globalize
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 2129
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/globalize
+    checkedAt: 2026-11-08
+    via: api
+notFound: [homepage, docs, pricingPage, parent, forkOf, successorOf, alternativeTo, contentStore, databases, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, renderingModes, runsAs, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, newsletter, mastodon, bluesky, x, wikidata, endoflifeId, packagistName, packagistDownloads, pypiDownloads, npmName, npmWeeklyDownloads, selfHostOption, hqCountry]
+unreadable: []
+notes: >
+  This record is the Ruby gem; the JavaScript library Globalize is the globalize record, and the two share a name only. The README section "Current state of the gem" says the gem "is not very actively maintained, as none of the current maintainers actively use it" and that it "should still work just fine"; that is not a statement that the project has ended, the repository was pushed on 2026-11-08 and the gem version 7.1.3 is dated 2026-05-25, so the status stays accepted and the sentence is for the reviewer. The homepage is not recorded: the README image address globalize.github.io/globalize returns a default GitHub Pages page titled "Globalize3 by svenfuchs" that links svenfuchs/globalize3, so it is no project site, and the gemspec homepage is the repository. The maintainer is the copyright line of the LICENSE, which dates the holders 2008-2014 and names seven people; the README names no current maintainer, so this is the reviewer's call. The README lists requirements of ActiveRecord 7.0 or newer and I18n; the gemspec at v7.1.3 requires Ruby 3.0 or newer and ActiveSupport, ActiveRecord and ActiveModel from 7.0 below 8.2. The README's older-ActiveRecord section pins version 6.3 for ActiveRecord 4.2 to 6.1. The firstRelease is the tag v0.0.1, commit dated 2010-07-30, the day the repository was created; the changelog begins at 3.0.0 (2013-10-24, "Initial release with new version numbering") and the earliest RubyGems upload is 4.0.0.alpha.1 (2013-10-09), so the 2010 date rests on the 0.0.x tags and the reviewer decides. The README describes model translations as "a way to translate actual user-generated content", with a blog post with multiple translations as the example, and says the gem "is seen as relatively feature complete". The README names Mobility as "a natural successor to Globalize" and lists Traco, hstore_translate, json_translate and Trasto as alternative solutions; Mobility has a candidate row but no fact file yet, and the others have no row, so no alternativeTo is recorded; Mobility is the one to add once its record exists. The official extensions globalize-accessors and globalize-versioning are separate gems that extend this one and are not recorded. The README's installation section names Bundler and a git source for pre-releases; the git route is not recorded. The rubygems downloads figure is the total from the RubyGems API.

@@ -1,0 +1,1 @@
+Final Form is a form state management library that does not depend on a view framework. Its homepage describes it as subscription-based. The core is a separate package from its bindings: the companion libraries page of the docs lists React Final Form, Vue Final Form and a web components binding as libraries that use Final Form under the hood.

@@ -1,0 +1,119 @@
+id: go-jet
+name: Jet
+status: accepted
+checkedAt: 2026-11-08
+description: Type-safe SQL builder for Go with code generation from a database schema and automatic query result mapping.
+facts:
+  - field: docs
+    value: https://github.com/go-jet/jet/wiki
+    url: https://raw.githubusercontent.com/go-jet/jet/v2.16.1/README.md
+    checkedAt: 2026-11-08
+    via: page
+  - field: repository
+    value: https://github.com/go-jet/jet
+    url: https://api.github.com/repos/go-jet/jet
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2019
+    url: https://github.com/go-jet/jet/releases/tag/v1.0.0
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainer
+    value: Goran Bjelanovic
+    url: https://raw.githubusercontent.com/go-jet/jet/v2.16.1/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright 2019-2026 Goran Bjelanovic"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/go-jet
+    checkedAt: 2026-11-08
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/go-jet/jet
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://raw.githubusercontent.com/go-jet/jet/v2.16.1/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "you need to install Go and set your Go workspace first"
+  - field: runtimeMin
+    value: "1.24"
+    url: https://raw.githubusercontent.com/go-jet/jet/v2.16.1/go.mod
+    checkedAt: 2026-11-08
+    via: page
+    quote: "go 1.24.0"
+  - field: installMethod
+    value: Go modules
+    url: https://raw.githubusercontent.com/go-jet/jet/v2.16.1/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Use the command bellow to add jet as a dependency into `go.mod` project"
+  - field: installMethod
+    value: go install
+    url: https://raw.githubusercontent.com/go-jet/jet/v2.16.1/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Option 1: Install via go install"
+  - field: categories
+    value: [query-builder]
+    url: https://raw.githubusercontent.com/go-jet/jet/v2.16.1/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "combining a type-safe SQL builder with code generation"
+  - field: databases
+    value: [postgres, mysql, sqlite]
+    url: https://raw.githubusercontent.com/go-jet/jet/v2.16.1/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Jet currently supports the following database engines: `PostgreSQL` `MySQL` `SQLite`"
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/go-jet/jet/v2.16.1/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0."
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/go-jet/jet/v2.16.1/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: currentMajor
+    value: 2
+    url: https://github.com/go-jet/jet/releases/tag/v2.16.1
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-06
+    url: https://github.com/go-jet/jet/releases/tag/v2.16.1
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 3829
+    url: https://api.github.com/repos/go-jet/jet
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 60
+    url: https://api.github.com/repos/go-jet/jet/contributors
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 37
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fgo-jet%2Fjet%2Fv2
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 13
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fgo-jet%2Fjet%2Fv2
+    checkedAt: 2026-11-08
+    via: api
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, pricingPage, paidEdition, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, runsAs, renderingModes, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, contentStore, usageShare, reportedInstalls, npmName, packagistName, endoflifeId, supportedVersions, selfHostOption, dockerPulls, maintainerType]
+unreadable: []
+notes: >
+  Jet is a SQL builder and not an ORM, as its README states; the README says so in a note under the introduction. The project has no website of its own: the README and the documentation link to the GitHub wiki, so homepage is left out and the wiki is the docs fact. The README names PostgreSQL, MySQL and SQLite as supported engines and says CockroachDB and MariaDB are tested and known to work through their wire protocols; those two are left out of databases. The library is added to a go.mod project with go get, and the jet generator is installed with go install or built from source; the generator reads a running database and writes Go packages; the README gives no process model for the generator and the library has none, so runsAs is left out. The generator's default database drivers are named in the README's Dependencies section and are not recorded. The first GitHub release is v1.0.0 (2019-07-23), and the repository was created in 2019. The LICENSE file is the Apache License 2.0 text without a copyright line; the copyright holder comes from the README. The repository owner is the go-jet user account, so maintainerType follows the user owner. The go.mod at v2.16.1 states go 1.24.0, and the README says version 1.24+ is required. The Go module has no download figure, so none is recorded.

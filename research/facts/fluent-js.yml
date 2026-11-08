@@ -1,0 +1,127 @@
+id: fluent-js
+name: Fluent.js
+status: accepted
+checkedAt: 2026-11-08
+description: JavaScript implementation of Project Fluent, a localization framework for translations with plurals, genders and grammatical cases.
+facts:
+  - field: homepage
+    value: https://projectfluent.org
+    url: https://projectfluent.org
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Fluent is a research project by Mozilla"
+  - field: repository
+    value: https://github.com/projectfluent/fluent.js
+    url: https://api.github.com/repos/projectfluent/fluent.js
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://projectfluent.org/fluent.js/modules/_fluent_bundle.html
+    url: https://projectfluent.org/fluent.js/modules/_fluent_bundle.html
+    checkedAt: 2026-11-08
+    via: page
+    quote: "A JavaScript implementation of Project Fluent, a localization framework"
+  - field: maintainer
+    value: Mozilla Foundation
+    url: https://github.com/projectfluent/fluent.js/blob/main/NOTICE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright 2013 Mozilla Foundation and others"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/projectfluent/fluent.js
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://api.github.com/repos/projectfluent/fluent.js/commits/fluent@0.1.0
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [i18n]
+    url: https://projectfluent.org
+    checkedAt: 2026-11-08
+    via: page
+    quote: "A localization system for natural-sounding translations"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/projectfluent/fluent.js
+    checkedAt: 2026-11-08
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/projectfluent/fluent.js
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: node
+    url: https://registry.npmjs.org/@fluent/bundle/0.19.1
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtimeMin
+    value: Node 18
+    url: https://registry.npmjs.org/@fluent/bundle/0.19.1
+    checkedAt: 2026-11-08
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://github.com/projectfluent/fluent.js/blob/main/fluent-bundle/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "you can install it from the npm registry"
+  - field: installMethod
+    value: standalone script
+    url: https://github.com/projectfluent/fluent.js/blob/main/fluent-bundle/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "or use it as a standalone script"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/projectfluent/fluent.js/releases
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2025-07-18
+    url: https://registry.npmjs.org/@fluent/dom
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 1010
+    url: https://api.github.com/repos/projectfluent/fluent.js
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 50
+    url: https://api.github.com/repos/projectfluent/fluent.js/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: npmName
+    value: "@fluent/bundle"
+    url: https://registry.npmjs.org/@fluent/bundle/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: npmWeeklyDownloads
+    value: "113053 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@fluent/bundle
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 38
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@fluent%2Fbundle
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 246
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@fluent%2Fbundle
+    checkedAt: 2026-11-08
+    via: api
+  - field: forum
+    value: https://discourse.mozilla.org/c/fluent
+    url: https://github.com/projectfluent/fluent.js/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Discourse: https://discourse.mozilla.org/c/fluent"
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, contentStore, databases, headlessApi, templating, adminUi, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, newsletter, mastodon, bluesky, x, wikidata, endoflifeId, packagistName, packagistDownloads, pypiDownloads, apiLimits, regions, selfHostOption]
+unreadable: []
+notes: >
+  Monorepo: the repository holds the packages @fluent/bundle, dedent, dom, langneg, react, sequence and syntax, and the stars and contributors belong to the whole monorepo; the npm figure and the runtime come from @fluent/bundle, the package the README lists first and the core of the set (its README says it "can be used both on the client-side and the server-side"). The README's "Node.js 20.19" requirement is for building the repository and is not recorded as runtimeMin; the npm metadata of the latest release (0.19.1) sets engines node ">=18.0.0", which gives runtimeMin Node 18. runsAs is left out because the package states where it runs, not a process model. The projectfluent.org homepage says "Client- and server-side implementations in JS, Python, and Rust. React bindings." Fluent for Python and Rust are their own candidates (fluent-rs is the Rust one, python-fluent is not in this area) and the React binding @fluent/react is a package of this monorepo, so neither is recorded as basedOn. The NOTICE copyright line names "Mozilla Foundation and others", recorded as the maintainer with the "and others" group in prose as "maintained by"; the package.json author "Mozilla" with a list address is not recorded. The homepage calls Fluent "a research project by Mozilla"; no page read gives a Mozilla legal address, so hqCountry stays out. currentMajor is 0 from the highest stable @fluent/bundle release, 0.19.1 (GitHub release 2025-04-02), and the package stays in 0.x. latestReleaseDate is 2025-07-18, the registry date of @fluent/dom 0.10.2, the newest stable release across the monorepo; @fluent/bundle 0.19.1 is dated 2025-04-02. firstRelease is 2017 from the tag fluent@0.1.0 (commit 2017-02-02). The forum is the Fluent category of the Mozilla Discourse, named in the README as the discussion place; Discourse hosts many Mozilla projects, so the reviewer decides whether a category link counts as the project's forum. The docs link is the generated API reference for @fluent/bundle (its version line reads v0.19.0), the only JavaScript reference page the project site links; the syntax guide at projectfluent.org/fluent/guide is for the FTL language and is not recorded here. The npm figure is the sum of the daily values from api.npmjs.org for 2026-11-01 to 2026-11-07; the CSV row carries an older figure from another package.

@@ -1,0 +1,3 @@
+go-echarts is a Go library for creating charts from Go code. The program sets the chart's options and data in Go, and the chart is written as an HTML page to any io.Writer, so a program can save the page as a file or serve it from a net/http handler. The generated page loads Apache ECharts resources along with the options the Go code produced. Charts are built from the charts, opts and types packages.
+
+The [handbook](https://go-echarts.github.io/go-echarts/) says the library generates the ECharts options and datasets from Go programs and provides the HTML templates that load ECharts, and it lists examples and an ecosystem page with integrations such as templ.

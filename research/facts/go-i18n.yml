@@ -1,0 +1,107 @@
+id: go-i18n
+name: go-i18n
+status: accepted
+checkedAt: 2026-11-08
+description: Go package and command for translating Go programs into multiple languages with message files and CLDR plural rules.
+facts:
+  - field: docs
+    value: https://pkg.go.dev/github.com/nicksnyder/go-i18n/v2
+    url: https://raw.githubusercontent.com/nicksnyder/go-i18n/v2.7.0/README.md
+    checkedAt: 2026-11-08
+    via: page
+  - field: repository
+    value: https://github.com/nicksnyder/go-i18n
+    url: https://api.github.com/repos/nicksnyder/go-i18n
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/nicksnyder/go-i18n/commits/6570d1a61e8dd40d7a98781e061ac85c907b2104
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainer
+    value: Nick Snyder
+    url: https://raw.githubusercontent.com/nicksnyder/go-i18n/v2.7.0/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) 2014 Nick Snyder"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/nicksnyder
+    checkedAt: 2026-11-08
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/nicksnyder/go-i18n
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://raw.githubusercontent.com/nicksnyder/go-i18n/v2.7.0/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "go-i18n is a Go package and a command that helps you translate Go programs into multiple languages"
+  - field: runtimeMin
+    value: "1.26"
+    url: https://raw.githubusercontent.com/nicksnyder/go-i18n/v2.7.0/go.mod
+    checkedAt: 2026-11-08
+    via: page
+    quote: "go 1.26.0"
+  - field: categories
+    value: [i18n]
+    url: https://raw.githubusercontent.com/nicksnyder/go-i18n/v2.7.0/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "go-i18n is a Go package and a command that helps you translate Go programs into multiple languages"
+  - field: i18n
+    value: pluralized strings for 200+ languages
+    url: https://raw.githubusercontent.com/nicksnyder/go-i18n/v2.7.0/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Supports pluralized strings for all 200+ languages"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/nicksnyder/go-i18n/v2.7.0/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "go-i18n is available under the MIT license."
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/nicksnyder/go-i18n/v2.7.0/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: currentMajor
+    value: 2
+    url: https://github.com/nicksnyder/go-i18n/releases/tag/v2.7.0
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-27
+    url: https://github.com/nicksnyder/go-i18n/releases/tag/v2.7.0
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 3553
+    url: https://api.github.com/repos/nicksnyder/go-i18n
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 54
+    url: https://api.github.com/repos/nicksnyder/go-i18n/contributors
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 742
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fnicksnyder%2Fgo-i18n%2Fv2
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 1189
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fnicksnyder%2Fgo-i18n%2Fv2
+    checkedAt: 2026-11-08
+    via: api
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, wikidata, pricingPage, paidEdition, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, databases, runsAs, renderingModes, installMethod, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, importsFrom, contentStore, usageShare, reportedInstalls, npmName, packagistName, endoflifeId, supportedVersions, selfHostOption, dockerPulls, maintainerType]
+unreadable: []
+notes: >
+  The repository has no project website: the README links the package documentation on pkg.go.dev and the code examples on GitHub, so homepage is left out. The README names the goi18n command as a go install line in a code block (go install with @latest for goi18n) and no sentence names the route for the package, so installMethod is left out; the import path is github.com/nicksnyder/go-i18n/v2. The README describes message files of any format (JSON, TOML, YAML), text/template placeholders and CLDR plural rules for 200+ languages, and the plural-rule code is generated from CLDR data; these are coined kinds and stay in notes. The v1 line (v1.0.0 tag, 2015-04-30 commit; GitHub release 2015-06-09) is the oldest in this repository; the module path for v1 differs, so the current module is the v2 path. The v2.0.0 betas are older than the latest stable release, so no latestPrereleaseDate is recorded. The LICENSE file names the copyright holder as Nick Snyder (2014) with the MIT text; the README wording is the same MIT license. The go.mod at v2.7.0 states go 1.26.0. Stars, contributors and dependents belong to the go-i18n repository and its module.

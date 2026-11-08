@@ -1,0 +1,1 @@
+Ginkgo is a testing framework for Go that organizes specs in nestable Describe, Context and When containers. The README says it is complemented by the Gomega matcher library, which is a separate project under the same maintainer. The docs describe it as a general purpose testing framework. The copyright line names Onsi Fakhouri, an individual, as the maintainer.

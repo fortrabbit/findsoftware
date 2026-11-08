@@ -1,0 +1,128 @@
+id: garde
+name: garde
+status: accepted
+checkedAt: 2026-11-08
+description: Validation library for Rust that checks struct fields and enum variants against rules declared with a derive macro.
+facts:
+  - field: repository
+    value: https://github.com/jprochazk/garde
+    url: https://api.github.com/repos/jprochazk/garde
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://docs.rs/garde/latest/garde/
+    url: https://github.com/jprochazk/garde/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+  - field: maintainer
+    value: Jan Procházka
+    url: https://github.com/jprochazk/garde/blob/main/LICENSE-MIT
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) 2022 Jan Procházka"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/jprochazk
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2023
+    url: https://api.github.com/repos/jprochazk/garde/commits/v0.3.0
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [validation]
+    url: https://github.com/jprochazk/garde/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "A Rust validation library"
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/jprochazk/garde
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: rust
+    url: https://github.com/jprochazk/garde/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "A Rust validation library"
+  - field: runtimeMin
+    value: "Rust 1.87"
+    url: https://github.com/jprochazk/garde/blob/v0.23.0/Cargo.toml
+    checkedAt: 2026-11-08
+    via: page
+    quote: 'rust-version = "1.87"'
+  - field: i18n
+    value: "yes, error messages can be customized by implementing an I18n trait"
+    url: https://github.com/jprochazk/garde/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Error messages produced by rules may be customized by implementing"
+  - field: installMethod
+    value: cargo
+    url: https://docs.rs/garde/latest/garde/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "To get started, install garde : cargo add garde"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/jprochazk/garde/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Apache License, Version 2.0"
+  - field: license
+    value: MIT
+    url: https://github.com/jprochazk/garde/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "MIT license"
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/jprochazk/garde
+    checkedAt: 2026-11-08
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/jprochazk/garde/releases/tags/v0.23.0
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-23
+    url: https://api.github.com/repos/jprochazk/garde/releases/tags/v0.23.0
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 907
+    url: https://api.github.com/repos/jprochazk/garde
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 22
+    url: https://api.github.com/repos/jprochazk/garde/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: crateName
+    value: garde
+    url: https://crates.io/api/v1/crates/garde
+    checkedAt: 2026-11-08
+    via: api
+  - field: crateDownloads
+    value: "6130443 (total)"
+    url: https://crates.io/api/v1/crates/garde
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 10
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/garde
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 6
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/garde
+    checkedAt: 2026-11-08
+    via: api
+notFound: [homepage, maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, databases, adminUi, headlessApi, contentStore, templating, multisite, livePreview, userRoles, sso, renderingModes, runsAs, pricingPage, paidEdition, endoflifeId, usageShare, reportedInstalls, httpArchiveSites, pluginDirectory, forum, discord, x, bluesky, mastodon, subreddit, newsletter, wikidata]
+unreadable: []
+notes: >
+  The repository is the project's only home: the README names no website, so homepage is absent and the docs link is docs.rs, which the README gives as its documentation. The README title and the crate both name the project garde; the crate page has no homepage either. Install: the README says "To get started, install `garde`:" followed by a cargo add command; the installMethod quote is that sentence as rendered on docs.rs, where the command sits in the same line. The license line in the README reads "Licensed under either of" Apache License, Version 2.0 and MIT license "at your option"; the crate registry states "MIT OR Apache-2.0", the same two licenses in another wording, so the registry wording is not a third entry. The LICENSE-MIT copyright line names Jan Procházka as the 2022 copyright holder and no company; the GitHub profile location (Czechia) is a personal profile field, not a legal address, so no hqCountry is recorded. The README says the crate is "heavily inspired by the validator crate" and "essentially a full rewrite of `validator`"; that is a stated origin, not a fork or successor statement, so no forkOf or successorOf is recorded. The README's "Integration with web frameworks" section names axum and actix-web integration crates, which supports criterion 1 (web application use). Rust version: rust-version 1.87 is set in the workspace Cargo.toml at v0.23.0 and matches the registry's rust_version for 0.23.0. The crates.io registry also reports 2,780,391 downloads in the last 90 days (recent_downloads), not recorded because the crate figure is the total. The README rule set covers required, length, range, pattern, email, url, ip and custom functions, attached per field with a garde attribute; the feature flags (derive, email, url, regex, credit-card, phone-number, unicode) are coined kinds and stay in the README. The oldest tag is v0.3.0, with a commit date of 2023-03-25, the day the repository was created; the crate was created 2023-03-24 on crates.io. The GitHub release list has no release object for v0.3.0, so the first-release year comes from the tag's commit date.

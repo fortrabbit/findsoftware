@@ -1,0 +1,112 @@
+id: globalize
+name: Globalize
+status: accepted
+checkedAt: 2026-11-08
+description: JavaScript library for internationalization and localization that formats and parses numbers, dates and messages from Unicode CLDR JSON data.
+facts:
+  - field: repository
+    value: https://github.com/globalizejs/globalize
+    url: https://api.github.com/repos/globalizejs/globalize
+    checkedAt: 2026-11-08
+    via: api
+  - field: maintainer
+    value: OpenJS Foundation
+    url: https://github.com/globalizejs/globalize/blob/master/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright OpenJS Foundation and other contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/globalizejs
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: https://api.github.com/repos/globalizejs/globalize/tags?per_page=100
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [i18n]
+    url: https://github.com/globalizejs/globalize/blob/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "A JavaScript library for internationalization and localization"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/globalizejs/globalize
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: node
+    url: https://github.com/globalizejs/globalize/blob/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Runs in browsers and Node.js"
+  - field: license
+    value: MIT
+    url: https://github.com/globalizejs/globalize/blob/master/package.json
+    checkedAt: 2026-11-08
+    via: page
+    quote: '"license": "MIT"'
+  - field: installMethod
+    value: npm
+    url: https://github.com/globalizejs/globalize/blob/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "You can use either npm or bower:"
+  - field: installMethod
+    value: bower
+    url: https://github.com/globalizejs/globalize/blob/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "You can use either npm or bower:"
+  - field: installMethod
+    value: download
+    url: https://github.com/globalizejs/globalize/blob/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "download the latest available Globalize package"
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/globalize/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2025-09-29
+    url: https://registry.npmjs.org/globalize
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 4835
+    url: https://api.github.com/repos/globalizejs/globalize
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 74
+    url: https://api.github.com/repos/globalizejs/globalize/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: npmName
+    value: globalize
+    url: https://registry.npmjs.org/globalize/latest
+    checkedAt: 2026-11-08
+    via: api
+  - field: npmWeeklyDownloads
+    value: "1762177 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/globalize
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 359
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/globalize
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 6720
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/globalize
+    checkedAt: 2026-11-08
+    via: api
+notFound: [homepage, docs, pricingPage, parent, forkOf, successorOf, alternativeTo, basedOn, contentStore, databases, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, renderingModes, runsAs, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, newsletter, mastodon, bluesky, x, wikidata, endoflifeId, packagistName, packagistDownloads, pypiDownloads, selfHostOption, hqCountry]
+unreadable: []
+notes: >
+  The globalizejs.com address answers HTTP 301 to github.com/globalizejs/globalize, so the project's own site is the repository and no homepage is recorded; a reviewer decides whether the domain counts as the homepage. The LICENSE copyright line names the OpenJS Foundation and other contributors, and the package.json author field gives the same name; the foundation is recorded as maintainer, and no hqCountry is recorded because no page gives an address. The install page names npm, bower and the GitHub release archive; each is its own installMethod entry, and only the first entry is shown on the record page. The README requirements name one external dependency, cldr.js, and the CLDR data is data rather than software, so no basedOn is recorded. The README names a Slack workspace (globalizejs.slack.com) for the community; no slack field exists, and the StackOverflow tag javascript-globalize is a general forum, so no forum is recorded. The README says Globalize provides number, date and time, currency and message formatting and parsing and plural support. The README says Globalize does not embed, hard-code or host CLDR content and expects developers to load the official CLDR JSON, and that developers can load only the modules they need (core, currency, date, message, number, plural, relative time, unit). The README also names a Globalize Compiler CLI, a separate project not covered here. The README Browser Support section lists browser versions, so no runsAs is recorded; the sentence that says where it runs is "Globalize is designed to work both in the browser, or in Node.js", which names both and so takes runtime node without runsAs. The firstRelease is the tag v0.1.0a1 (commit dated 2011-06-19), the same day as the first npm upload 0.1.0-a1. The npm package 1.7.1 is dated 2025-09-29, newer than the GitHub release object 1.7.0 (2021-08-02), so latestReleaseDate takes the registry date. The README says tests run in the browser or in Node.js; that is a development statement and is not recorded. npmWeeklyDownloads is the daily sum from the api.npmjs.org range endpoint for 2026-11-01 to 2026-11-07.

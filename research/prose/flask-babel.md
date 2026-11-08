@@ -1,0 +1,1 @@
+Flask-Babel is an extension to Flask that adds internationalization and localization support to any Flask application. Its README says it is based on the Python Babel and pytz modules, and its docs name those two packages and a copy of speaklater as the parts it is built with. The extension is installed from PyPI with pip.

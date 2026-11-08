@@ -1,0 +1,1 @@
+Formtastic is a form builder for Rails applications that renders semantic, accessible HTML forms through a Ruby DSL. It extends the Rails form builder, and its [documentation](https://rubydoc.info/github/formtastic/formtastic) is generated on rubydoc.info. It supports internationalization.

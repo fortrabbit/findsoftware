@@ -1,0 +1,101 @@
+id: ginkgo
+name: Ginkgo
+status: accepted
+checkedAt: 2026-11-08
+description: Go testing framework that organizes specs in nestable Describe, Context and When containers, paired with the Gomega matcher library.
+facts:
+  - field: homepage
+    value: https://onsi.github.io/ginkgo/
+    url: https://onsi.github.io/ginkgo/
+    checkedAt: 2026-11-08
+    via: page
+  - field: repository
+    value: https://github.com/onsi/ginkgo
+    url: https://api.github.com/repos/onsi/ginkgo
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://onsi.github.io/ginkgo/
+    url: https://onsi.github.io/ginkgo/
+    checkedAt: 2026-11-08
+    via: page
+  - field: maintainer
+    value: Onsi Fakhouri
+    url: https://github.com/onsi/ginkgo/blob/master/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) 2013-2014 Onsi Fakhouri"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/onsi
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://api.github.com/repos/onsi/ginkgo/commits/v1.0.0
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [testing]
+    url: https://github.com/onsi/ginkgo
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Ginkgo is a mature testing framework for Go"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/onsi/ginkgo
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: go
+    url: https://github.com/onsi/ginkgo
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Ginkgo is a mature testing framework for Go"
+  - field: runtimeMin
+    value: "Go 1.25"
+    url: https://github.com/onsi/ginkgo/blob/v2.34.0/go.mod
+    checkedAt: 2026-11-08
+    via: page
+    quote: "go 1.25.0"
+  - field: installMethod
+    value: go install
+    url: https://onsi.github.io/ginkgo/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "To add Ginkgo to your project, assuming you have a go.mod file setup, just go install it"
+  - field: license
+    value: MIT
+    url: https://github.com/onsi/ginkgo
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Ginkgo is MIT-Licensed"
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/onsi/ginkgo
+    checkedAt: 2026-11-08
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/onsi/ginkgo/releases/tags/v2.34.0
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-02
+    url: https://api.github.com/repos/onsi/ginkgo/releases/tags/v2.34.0
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 9070
+    url: https://api.github.com/repos/onsi/ginkgo
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 210
+    url: https://api.github.com/repos/onsi/ginkgo/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+notFound: [maintainerType, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, databases, adminUi, headlessApi, contentStore, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, pricingPage, paidEdition, endoflifeId, usageShare, reportedInstalls, httpArchiveSites, npmName, dependentPackages, dependentRepos, forum, discord, x, bluesky, mastodon, subreddit, newsletter, pluginDirectory, wikidata]
+unreadable: []
+notes: >
+  Gomega, the matcher library the README says Ginkgo is "complemented by", is a separate project under the same maintainer (github.com/onsi/gomega) and is not a basedOn statement; the docs' install sentence fetches it with a go get line. The README says Ginkgo "builds on top of Go's testing foundation": the standard library's testing package is the language's own test runner, not a record, so no basedOn is recorded. The docs homepage describes Ginkgo as "a testing framework for Go" and says it "is sometimes described as a Behavior Driven Development (BDD) framework" while being "a general purpose testing framework"; the category follows the general-purpose sentence. The homepage on the GitHub homepage field is http://onsi.github.io/ginkgo/, which redirects with a 301 to https; the https page is the record's homepage and docs. The README copyright is on the LICENSE line "Copyright (c) 2013-2014 Onsi Fakhouri" for an individual maintainer; no company or legal entity is named, so no hqCountry is recorded (the GitHub profile location, Denver, CO, is a personal profile field). The docs say Ginkgo "came together" under Pivotal in 2013; that is history, not a parent. The docs say "V1 is no longer supported"; that is a version note, not an end statement for v2. The first tag is v1.0.0 (commit date 2014-05-24); the repository was created 2013-08-23. The go.mod at v2.34.0 declares go 1.25.0, recorded as runtimeMin "Go 1.25". The stars and contributors belong to the repository, which holds the library and the ginkgo CLI together.

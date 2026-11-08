@@ -1,0 +1,112 @@
+id: fluent-rs
+name: fluent-rs
+status: stub
+checkedAt: 2026-11-08
+description: Rust implementation of Project Fluent, a localization system for natural-sounding translations.
+facts:
+  - field: homepage
+    value: https://projectfluent.org
+    url: https://projectfluent.org
+    checkedAt: 2026-11-08
+    via: page
+    quote: "A localization system for natural-sounding translations"
+  - field: repository
+    value: https://github.com/projectfluent/fluent-rs
+    url: https://api.github.com/repos/projectfluent/fluent-rs
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://docs.rs/fluent/latest/fluent/
+    url: https://docs.rs/fluent/latest/fluent/
+    checkedAt: 2026-11-08
+    via: page
+  - field: maintainer
+    value: Mozilla
+    url: https://github.com/projectfluent/fluent-rs/blob/main/LICENSE-MIT
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright 2017 Mozilla"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/projectfluent/fluent-rs
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://crates.io/api/v1/crates/fluent
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [i18n]
+    url: https://projectfluent.org
+    checkedAt: 2026-11-08
+    via: page
+    quote: "A localization system for natural-sounding translations"
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/projectfluent/fluent-rs
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: rust
+    url: https://github.com/projectfluent/fluent-rs/blob/main/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "a collection of Rust crates implementing"
+  - field: runtimeMin
+    value: Rust 1.67.0
+    url: https://github.com/projectfluent/fluent-rs/blob/fluent@0.17.0/Cargo.toml
+    checkedAt: 2026-11-08
+    via: page
+    quote: 'rust-version = "1.67.0"'
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/projectfluent/fluent-rs
+    checkedAt: 2026-11-08
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/projectfluent/fluent-rs/blob/main/fluent/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "licensed under both the Apache 2.0 and MIT licenses"
+  - field: currentMajor
+    value: 0
+    url: https://crates.io/api/v1/crates/fluent
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2025-05-23
+    url: https://crates.io/api/v1/crates/fluent
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 1376
+    url: https://api.github.com/repos/projectfluent/fluent-rs
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 50
+    url: https://api.github.com/repos/projectfluent/fluent-rs/contributors?per_page=1
+    checkedAt: 2026-11-08
+    via: api
+  - field: crateName
+    value: fluent
+    url: https://crates.io/api/v1/crates/fluent
+    checkedAt: 2026-11-08
+    via: api
+  - field: crateDownloads
+    value: "17594066 (total)"
+    url: https://crates.io/api/v1/crates/fluent
+    checkedAt: 2026-11-08
+    via: api
+  - field: forum
+    value: https://discourse.mozilla.org/c/fluent
+    url: https://github.com/projectfluent/fluent-rs/blob/main/fluent/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Discourse: https://discourse.mozilla.org/c/fluent"
+notFound: [installMethod, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, contentStore, databases, headlessApi, templating, adminUi, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, newsletter, mastodon, bluesky, x, wikidata, endoflifeId, packagistName, packagistDownloads, npmName, pypiDownloads, apiLimits, regions, selfHostOption]
+unreadable: []
+notes: >
+  Doubt on criterion 3: no page read says how to add the crate to a project. The root README and the fluent crate README show a Rust usage example with use lines and no Cargo dependency line, the docs.rs page carries no install snippet, and the only cargo install line in the repository is for cargo-release, a maintainer tool in docs/release-process.md; the crate is published on crates.io, which the CSV row relied on. Settling it needs a page of the project that names the dependency line or the crate install (a getting-started page, or a crate README with a Cargo.toml snippet). Monorepo: the workspace holds fluent, fluent-bundle, fluent-fallback, fluent-resmgr, fluent-syntax, fluent-pseudo, fluent-testing, intl-memoizer and fluent-cli; stars and contributors belong to the whole workspace, and the crate figures are for the fluent umbrella crate, which the README calls the crate to use. The CHANGELOG entry for fluent 0.16.1 (March 16, 2024) calls it a "safe harbor" release "prior to bringing on non-Mozilla community maintainers", so the maintainer line is Mozilla from the LICENSE-MIT copyright, and the crates.io owners are individual accounts that are not recorded. currentMajor is 0 from fluent 0.17.0 (crates.io max stable, GitHub release of 2025-05-23). The crate's 0.16.2 is yanked and not counted. firstRelease is 2017: the crates.io registry created the crate on 2017-01-17 and the first GitHub release, 0.0.1, is dated 2017-10-12, so the registry date gives the year. The forum is the Fluent category of the Mozilla Discourse, named in the README; the README also names a Matrix room, which has no field here. The Fluent site's language list (JS, Python, Rust) is the project's own, and the sibling fluent.js candidate is recorded separately. The crate's install route is not recorded, see the criterion 3 doubt above. The GitHub topic and crates.io category are not recorded.

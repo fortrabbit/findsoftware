@@ -1,0 +1,111 @@
+id: freesql
+name: FreeSql
+status: accepted
+checkedAt: 2026-11-08
+description: Object-relational mapper for .NET that supports many relational and analytical databases, with code-first migrations and navigation properties.
+facts:
+  - field: homepage
+    value: https://freesql.net
+    url: https://freesql.net/
+    checkedAt: 2026-11-08
+    via: page
+  - field: repository
+    value: https://github.com/dotnetcore/FreeSql
+    url: https://api.github.com/repos/dotnetcore/FreeSql
+    checkedAt: 2026-11-08
+    via: api
+  - field: docs
+    value: https://freesql.net/en/guide/
+    url: https://freesql.net/en/guide/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "FreeSql is a powerful Object-Relational Mapping (O/RM) component"
+  - field: maintainer
+    value: YeXiangQin
+    url: https://raw.githubusercontent.com/dotnetcore/FreeSql/master/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Copyright (c) 2018 YeXiangQin"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/dotnetcore
+    checkedAt: 2026-11-08
+    via: api
+  - field: firstRelease
+    value: "2019"
+    url: https://api.github.com/repos/dotnetcore/FreeSql/releases
+    checkedAt: 2026-11-08
+    via: api
+  - field: categories
+    value: [orm]
+    url: https://github.com/dotnetcore/FreeSql/blob/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "FreeSql is a powerful O/RM component"
+  - field: language
+    value: C#
+    url: https://api.github.com/repos/dotnetcore/FreeSql
+    checkedAt: 2026-11-08
+    via: api
+  - field: runtime
+    value: [dotnet]
+    url: https://freesql.net/en/guide/
+    checkedAt: 2026-11-08
+    via: page
+    quote: "supporting .NET Core 2.1+ and .NET Framework 4.0+"
+  - field: databases
+    value: [mysql, sqlserver, postgres, oracle, sqlite, firebird, clickhouse, duckdb]
+    url: https://github.com/dotnetcore/FreeSql/blob/master/README.md
+    checkedAt: 2026-11-08
+    via: page
+    quote: "Support MySql/SqlServer/PostgreSQL/Oracle/Sqlite/Firebird/达梦/人大金仓/南大通用/虚谷/神舟通用/翰高/ClickHouse/DuckDB/TDengine/QuestDB/MsAccess, etc."
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/dotnetcore/FreeSql/master/LICENSE
+    checkedAt: 2026-11-08
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/dotnetcore/FreeSql/releases
+    checkedAt: 2026-11-08
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-31
+    url: https://api.github.com/repos/dotnetcore/FreeSql/releases
+    checkedAt: 2026-11-08
+    via: api
+  - field: githubStargazers
+    value: 4409
+    url: https://api.github.com/repos/dotnetcore/FreeSql
+    checkedAt: 2026-11-08
+    via: api
+  - field: contributors
+    value: 64
+    url: https://api.github.com/repos/dotnetcore/FreeSql/contributors
+    checkedAt: 2026-11-08
+    via: api
+  - field: nugetName
+    value: FreeSql
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:FreeSql&prerelease=false
+    checkedAt: 2026-11-08
+    via: api
+  - field: nugetDownloads
+    value: "6151374 (total)"
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:FreeSql&prerelease=false
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentPackages
+    value: 156
+    url: https://packages.ecosyste.ms/api/v1/registries/nuget.org/packages/FreeSql
+    checkedAt: 2026-11-08
+    via: api
+  - field: dependentRepos
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/nuget.org/packages/FreeSql
+    checkedAt: 2026-11-08
+    via: api
+notFound: [installMethod, pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, contentStore, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, wikidata, endoflifeId, runtimeMin, npmName, npmWeeklyDownloads]
+unreadable: []
+notes: >
+  The project is FreeSql under the dotnetcore organization, a member project of the .NET Core Community according to the README badge; the community is not recorded as a parent. The NuGet package metadata names https://github.com/2881099/FreeSql as the project URL, which redirects to the dotnetcore repository; the repository field is the dotnetcore one because the README and the freesql.net docs name it. The LICENSE copyright line names YeXiangQin, while the freesql.net footer reads "Copyright © 2018-present nicye"; the LICENSE line is the recorded maintainer and the footer name is left here for review. The current release line is 3.5 (v3.5.311); the minor line is not recorded as currentMajor. The first GitHub release is v0.5.4 dated 2019-04-25, the oldest tag. The README lists more databases than the field ids: TDengine, QuestDB and MsAccess have no field id here, and the Chinese database providers (Dameng, KingbaseES, GBase, Xugu, ShenTong) sit only in the README and the get-started provider table. The get-started page lists provider packages for each database, so FreeSql ships on NuGet, but no sentence names the route, so installMethod is not recorded; the provider table names FreeSql.Provider.MySqlConnector as the recommended MySQL provider. The README names the QQ groups for chat; no forum field is recorded because a QQ group is a general chat, not the project's forum. The runtimeMin is not recorded: the README and the get-started page state supported framework versions for the library, and the packaging targetFramework values were not read. The sample project lists in the README (Zhontai.net, lin-cms, AIBPM, NetAdmin) are not recorded as importsFrom or alternativeTo, because they are projects built with FreeSql, not competitors or migrations. The contributors count is from the GitHub contributors endpoint with per_page=1; the last page is 64.

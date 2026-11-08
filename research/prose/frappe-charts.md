@@ -1,0 +1,1 @@
+Frappe Charts is a JavaScript charting library that draws responsive SVG charts with no dependencies. According to its README it began as a sales history graph for ERPNext, and it covers axis, bar, line, pie, percentage and heatmap charts. The [documentation](https://frappe.io/charts/docs) is on the project's docs site.

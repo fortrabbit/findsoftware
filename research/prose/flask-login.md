@@ -1,0 +1,1 @@
+Flask-Login is an extension to Flask that manages user sessions. It handles logging users in and out and remembering their sessions over longer periods. It is not bound to a particular database system or permissions model. The extension is installed with pip.
