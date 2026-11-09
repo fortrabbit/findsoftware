@@ -2,12 +2,22 @@
 layout: ../layouts/Article.astro
 title: About
 published: 2026-10-18
-updated: 2026-10-21
+updated: 2026-11-09
 description: Who publishes FindSoftware and why, the rules every record follows, and how records are sourced.
 lead: A register of software to build websites with, in every language, recorded field by field with a source for every answer.
 ---
 
 FindSoftware lists the tools web creators build with: content management systems, web frameworks, static site generators, headless CMSs, e-commerce, UI libraries, CSS frameworks, site search, and the plugins and packages built on them. Each record holds facts read from the project's own pages, its repository and package registries, each with a link and the date it was read.
+
+## A note from Frank
+
+I run fortrabbit, a PHP hosting company. I wanted to see what people build websites with today, in every language, PHP or not. No list I found showed that. So I started one.
+
+AI agents did most of the work. I curated and micromanaged them and barely looked at the code. Machines research the records, scripts check them against their sources, and I read them after. Expect mistakes.
+
+There is a selfish part. FindSoftware puts the fortrabbit name next to software people look for, which is cheap marketing. The rules below keep it useful anyway: nothing is ranked, and fortrabbit gets no better place than any other host, apart from the labeled publisher slot under [hosting suggestions](#hosting-suggestions).
+
+I hope it helps somebody find the small project or the alternative that no "top 10" list shows. That goes for people and for their coding agents.
 
 ## Rules
 
