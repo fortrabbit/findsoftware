@@ -15,11 +15,7 @@ type Facet = 'runtimes' | 'software' | 'databases';
 const pages = parseYaml(readFileSync('src/data/findhost.yml', 'utf8')) as Record<Facet, string[]>;
 
 // Where a record's id and FindHost's software value differ.
-const softwareId: Record<string, string> = {
-  'grav-cms': 'grav',
-  'magento-open-source': 'magento',
-  'typo3-cms': 'typo3',
-};
+const softwareId = parseYaml(readFileSync('src/data/findhost-ids.yml', 'utf8')) as Record<string, string>;
 
 export interface FindhostRow {
   label: string;
@@ -43,7 +39,10 @@ export function findhostRows(
 
   const rows: FindhostRow[] = [
     { label: 'Hosts that run', cells: linked('runtimes', data.hosting ?? [], (value) => labelOf('hosting', value)) },
-    { label: 'Hosts that support', cells: linked('software', [(Object.hasOwn(softwareId, id) ? softwareId[id] : id)], () => name) },
+    {
+      label: 'Hosts that support',
+      cells: linked('software', [Object.hasOwn(softwareId, id) ? softwareId[id] : id], () => name),
+    },
     {
       label: 'Managed databases',
       cells: linked('databases', [...(data.databases ?? []), id], (value) =>
@@ -104,7 +103,7 @@ export function hostsFor(
   pool: Host[] = listed,
 ): HostSuggestions | undefined {
   if (!base) return undefined;
-  const software = (Object.hasOwn(softwareId, id) ? softwareId[id] : id);
+  const software = Object.hasOwn(softwareId, id) ? softwareId[id] : id;
   const runtime = (hosting ?? []).find((value) => pages.runtimes.includes(value));
   const [facet, value] = pages.software.includes(software)
     ? (['software', software] as const)

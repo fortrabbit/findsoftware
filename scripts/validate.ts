@@ -983,6 +983,16 @@ for (const host of parseYaml(readFileSync(hostsFile, 'utf8')) as { id: string; u
     fail(hostsFile, `${host.id} URL ${host.url} must be https with no query or fragment`);
 }
 
+// FindHost links its software pages back through this map, so both ends must exist.
+const idsFile = 'src/data/findhost-ids.yml';
+const findhostSoftware = new Set(
+  (parseYaml(readFileSync('src/data/findhost.yml', 'utf8')) as { software: string[] }).software,
+);
+for (const [id, value] of Object.entries(parseYaml(readFileSync(idsFile, 'utf8')) as Record<string, string>)) {
+  if (!recordIds.has(id)) fail(idsFile, `"${id}" is not a record`);
+  if (!findhostSoftware.has(value)) fail(idsFile, `FindHost has no /software/${value}/ page for "${id}"`);
+}
+
 if (errors.length) {
   console.error(`\n${errors.length} problem${errors.length === 1 ? '' : 's'}:\n`);
   for (const error of errors) console.error(`  ${error}`);
