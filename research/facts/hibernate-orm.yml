@@ -1,0 +1,129 @@
+id: hibernate-orm
+name: Hibernate ORM
+status: accepted
+checkedAt: 2026-11-09
+description: Object/relational mapping library for Java that maps classes to relational database tables and implements the Jakarta Persistence specification.
+facts:
+  - field: homepage
+    value: https://hibernate.org/orm/
+    url: https://hibernate.org/orm/
+    checkedAt: 2026-11-09
+    via: page
+  - field: docs
+    value: https://hibernate.org/orm/documentation/
+    url: https://github.com/hibernate/hibernate-orm/blob/main/README.adoc
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Documentation for Hibernate ORM is available at:"
+  - field: repository
+    value: https://github.com/hibernate/hibernate-orm
+    url: https://api.github.com/repos/hibernate/hibernate-orm
+    checkedAt: 2026-11-09
+    via: api
+  - field: firstRelease
+    value: 2010
+    url: https://api.github.com/repos/hibernate/hibernate-orm/git/refs/tags/3.6.0.Beta1
+    checkedAt: 2026-11-09
+    via: api
+  - field: maintainer
+    value: Hibernate
+    url: https://hibernate.org/orm/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright © Hibernate."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/hibernate
+    checkedAt: 2026-11-09
+    via: api
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/hibernate/hibernate-orm
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [orm]
+    url: https://github.com/hibernate/hibernate-orm/blob/main/README.adoc
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Hibernate ORM is a powerful object/relational mapping solution for Java"
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/hibernate/hibernate-orm/blob/main/README.adoc
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Hibernate ORM is a powerful object/relational mapping solution for Java"
+  - field: runtimeMin
+    value: "17"
+    url: https://github.com/hibernate/hibernate-orm/blob/main/README.adoc
+    checkedAt: 2026-11-09
+    via: page
+    quote: "produces Java 17 bytecode"
+  - field: installMethod
+    value: gradle
+    url: https://github.com/hibernate/hibernate-orm/blob/7.4.15/documentation/src/main/asciidoc/introduction/Introduction.adoc
+    checkedAt: 2026-11-09
+    via: page
+    quote: "We begin with a simple https://gradle.org[Gradle] build file:"
+  - field: mavenCoordinates
+    value: org.hibernate.orm:hibernate-core
+    url: https://repo1.maven.org/maven2/org/hibernate/orm/hibernate-core/maven-metadata.xml
+    checkedAt: 2026-11-09
+    via: api
+  - field: databases
+    value: [postgres, mysql, mariadb, oracle, sqlserver]
+    url: https://hibernate.org/orm/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Hibernate is tested every day on PostgreSQL, MySQL, Db2, Oracle, SQL Server, Sybase ASE, EDB, TiDB, MariaDB, HANA, CockroachDB, H2, and HSQLDB."
+  - field: license
+    value: Apache-2.0
+    url: https://hibernate.org/orm/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Released under the ASL v2"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/hibernate/hibernate-orm/blob/main/LICENSE.txt
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: currentMajor
+    value: 7
+    url: https://github.com/hibernate/hibernate-orm/releases/tag/7.4.15
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-06
+    url: https://github.com/hibernate/hibernate-orm/releases/tag/7.4.15
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 6484
+    url: https://api.github.com/repos/hibernate/hibernate-orm
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 362
+    url: https://api.github.com/repos/hibernate/hibernate-orm/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+  - field: x
+    value: https://x.com/hibernate
+    url: https://hibernate.org/orm/
+    checkedAt: 2026-11-09
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/hibernate.org
+    url: https://hibernate.org/orm/
+    checkedAt: 2026-11-09
+    via: page
+  - field: forum
+    value: https://discourse.hibernate.org/c/hibernate-orm
+    url: https://hibernate.org/orm/
+    checkedAt: 2026-11-09
+    via: page
+notFound: [hqCountry, endoflifeId, adminUi, headlessApi, templating, contentStore, i18n, multisite, livePreview, userRoles, sso, importsFrom, discord, mastodon, newsletter, pluginDirectory, pluginCount, usageShare, paidEdition, pricingPage, forkOf, successorOf, basedOn, runsAs, renderingModes, parent, alternativeTo, npmName, npmWeeklyDownloads, packagistDownloads, pypiDownloads, dockerPulls, dependentPackages, dependentRepos, hostedOffering]
+unreadable: []
+notes: >
+  Status accepted: the repository is public and not archived, the release 7.4.15 is dated 2026-11-06, and the README names the documentation (criterion 3); Maven Central publishes org.hibernate.orm:hibernate-core, which the Gradle introduction uses. The CSV homepage is http://hibernate.org; the same host answers over https (https://hibernate.org/ and https://hibernate.org/orm/ return 200), so the https product page is the homepage. The homepage says "Hibernate is part of the Commonhaus Foundation" (hibernate.org/community/commonhaus); foundation hosting is not maintenance, so the maintainer is "Hibernate" as the site footer names it, and Commonhaus is not recorded as parent. The LICENSE file is the unfilled Apache template with no copyright holder. currentMajor is 7 (7.4.15 is the newest stable tag; the 8.0.0.Beta1 to Beta4 tags are development releases and are not used); the 8.0.0.Beta4 release date (2026-10-28) is older than the latest release, so no latestPrereleaseDate is recorded. The release list marks the 8.0 betas as not prerelease; the tag names carry Beta, so they are not used. runtimeMin 17 comes from the README sentence "The build requires at least JDK 25, and produces Java 17 bytecode." The bytecode target is the Java version a consuming application needs; the JDK 25 part is a build requirement and is not recorded. The Configuration page adds the org.hibernate.orm:hibernate-core dependency with the JDBC driver for each database. The databases quote is the homepage sentence naming the databases the project tests every day, and the value lists those the field dictionary has (Db2, Sybase ASE, EDB, TiDB, HANA, CockroachDB, H2 and HSQLDB have no dictionary entry); the homepage's community dialects module names Informix, Ingres, Teradata and incubating SQLite support, and the MongoDB and Google Spanner dialects are third-party, so none of those are recorded as databases. The dialect documentation (documentation/src/main/asciidoc/dialect) says third-party dialects are not tested by the Hibernate CI. The ORM documents built-in multi-tenancy and row-level security in the README; these are features of the ORM, not a multisite install, and are not recorded as multisite. The page describes paid support and a community forum; paid support is not an edition and is not recorded as paidEdition. The homepage describes the project as an implementation of the Jakarta Persistence specification, and the README names Jakarta Query and Jakarta Data; these are specifications the project implements, so basedOn is not recorded. Stars and contributors belong to the hibernate-orm repository, which holds the hibernate-core module and the other modules the README builds. The earliest tag found is 3.6.0.Beta1 (commit date 2010-07-21), which gives firstRelease 2010; the oldest release object found is from 2013-07-03. The Maven Central coordinates are not used for firstRelease. Hibernate Search, Hibernate Validator and Hibernate Reactive are separate projects with their own records. The homepage says Hibernate can be used in Java SE standalone applications, in EE servers such as WildFly and in containers such as Quarkus, which the project names as a supported environment.

@@ -1,0 +1,105 @@
+id: grant
+name: Grant
+status: stub
+checkedAt: 2026-11-09
+description: "Node.js OAuth proxy middleware that runs OAuth and OpenID Connect login flows for Express, Koa, Hapi, Fastify and serverless functions."
+facts:
+  - field: repository
+    value: https://github.com/simov/grant
+    url: https://api.github.com/repos/simov/grant
+    checkedAt: 2026-11-09
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/simov/grant
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [auth]
+    url: https://raw.githubusercontent.com/simov/grant/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "OAuth Proxy"
+  - field: runtime
+    value: [node]
+    url: https://raw.githubusercontent.com/simov/grant/v5.4.24/package.json
+    checkedAt: 2026-11-09
+    via: page
+    quote: "\"node\": \">=12.0.0\""
+  - field: runtimeMin
+    value: "12"
+    url: https://raw.githubusercontent.com/simov/grant/v5.4.24/package.json
+    checkedAt: 2026-11-09
+    via: page
+    quote: "\"node\": \">=12.0.0\""
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/simov/grant
+    checkedAt: 2026-11-09
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/simov/grant/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: maintainer
+    value: Simeon Velichkov
+    url: https://raw.githubusercontent.com/simov/grant/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) 2014-present, Simeon Velichkov"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/simov
+    checkedAt: 2026-11-09
+    via: api
+  - field: firstRelease
+    value: "2014"
+    url: https://registry.npmjs.org/grant
+    checkedAt: 2026-11-09
+    via: api
+  - field: currentMajor
+    value: 5
+    url: https://registry.npmjs.org/grant/latest
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2025-02-04
+    url: https://registry.npmjs.org/grant
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 4163
+    url: https://api.github.com/repos/simov/grant
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 46
+    url: https://api.github.com/repos/simov/grant/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+  - field: npmName
+    value: grant
+    url: https://registry.npmjs.org/grant/latest
+    checkedAt: 2026-11-09
+    via: api
+  - field: npmWeeklyDownloads
+    value: "321042 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/grant
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentPackages
+    value: 49
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/grant
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentRepos
+    value: 10551
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/grant
+    checkedAt: 2026-11-09
+    via: api
+notFound: [homepage, installMethod, docs, hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, packagistName, endoflifeId]
+unreadable: [https://grant.outofindex.com]
+notes: >
+  Stub: no page of the project says how to install grant itself. The README names the npm package only in a badge link and shows require('grant') in code; examples/README.md says "$ npm install" in a code block to start the example app, which installs that app's dependencies, so criterion 3 (documented installation) cannot be judged. What would settle it: a sentence or page naming the install route for the grant package. The OAuth Playground at grant.outofindex.com, which the README links, answers with a JavaScript application shell that carries no readable text, so no homepage is recorded and the page is listed as unreadable. The package's runtime is Node.js from the engines field of package.json at tag v5.4.24, the manifest the install uses; the README names no runtime in prose. The README's Configuration section sets providers in a configuration object, and its Session section says Grant uses the session to persist state between the redirects of a login; it documents OAuth 1.0a, OAuth 2.0 and OpenID Connect flows. Its Callback: Response section says Grant can also request the user profile beside the tokens. The README names Express, Koa, Hapi and Fastify as HTTP frameworks and AWS Lambda, Azure Functions, Google Cloud Functions and Vercel as serverless targets; it does not say grant is built on any of them, so no basedOn is recorded. The README's provider table lists more than 200 OAuth providers by name; no field takes that list, so it is left in these notes. Grant is an OAuth client that logs users in through other providers, so sso is not recorded, and the README's OpenID Connect section is a client feature. The README warns that the querystring transport may leak private data in server logs, and that the id_token signature is not verified by default. The version 5.x line is the current major; the README's migration guide covers v4 to v5. There are no GitHub release objects; the newest stable tag is v5.4.24, which matches the npm latest version and its release time. firstRelease is 2014 from the npm upload of version 1.0.0 (2014-06-22), which predates the oldest GitHub tag 1.0.3 (2014-08-02) and the repository's creation date (2014-10-21). The npm figure counts the package grant. The maintainer is the LICENSE copyright holder; the README names none. Stars and contributors belong to the repository.

@@ -1,0 +1,116 @@
+id: hookstate
+name: Hookstate
+status: accepted
+checkedAt: 2026-11-09
+description: State management library for React that is built on the React state hook.
+facts:
+  - field: homepage
+    value: https://hookstate.js.org/
+    url: https://hookstate.js.org/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "The most straightforward, extensible and incredibly fast state management that is based on React state hook"
+  - field: repository
+    value: https://github.com/avkonst/hookstate
+    url: https://api.github.com/repos/avkonst/hookstate
+    checkedAt: 2026-11-09
+    via: api
+  - field: docs
+    value: https://hookstate.js.org/docs/getting-started
+    url: https://hookstate.js.org/docs/getting-started
+    checkedAt: 2026-11-09
+    via: page
+  - field: maintainer
+    value: Andrey Konstantinov
+    url: https://raw.githubusercontent.com/avkonst/hookstate/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) 2019-2022 Andrey Konstantinov"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/avkonst
+    checkedAt: 2026-11-09
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/avkonst/hookstate
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [state]
+    url: https://github.com/avkonst/hookstate/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "state management that is based on React state hook"
+  - field: basedOn
+    value: [react]
+    url: https://github.com/avkonst/hookstate/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "state management that is based on React state hook"
+  - field: firstRelease
+    value: 2019
+    url: https://api.github.com/repos/avkonst/hookstate/git/commits/c2db31cee1ec84ecdd76228b6c491a94d387585b
+    checkedAt: 2026-11-09
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://hookstate.js.org/docs/getting-started
+    checkedAt: 2026-11-09
+    via: page
+    quote: "npm install --save @hookstate/core"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/avkonst/hookstate
+    checkedAt: 2026-11-09
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/avkonst/hookstate/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/avkonst/hookstate/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2025-03-20
+    url: https://registry.npmjs.org/@hookstate%2Fcore
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 1651
+    url: https://api.github.com/repos/avkonst/hookstate
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 28
+    url: https://api.github.com/repos/avkonst/hookstate/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+  - field: npmName
+    value: "@hookstate/core"
+    url: https://registry.npmjs.org/@hookstate%2Fcore
+    checkedAt: 2026-11-09
+    via: api
+  - field: npmWeeklyDownloads
+    value: "64624 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@hookstate/core
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentPackages
+    value: 60
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40hookstate%2Fcore
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentRepos
+    value: 227
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40hookstate%2Fcore
+    checkedAt: 2026-11-09
+    via: api
+notFound: [runtime, runtimeMin, runsAs, hqCountry, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, packagistName, packagistDownloads, pypiDownloads, nugetName, renderingModes, selfHostOption]
+unreadable: []
+notes: >
+  Monorepo: the repository holds the core package, the extensions (@hookstate/*), the docs and the demo apps, so the stars and the 28 contributors belong to the monorepo. The npm figure and the latest release date come from @hookstate/core, the package the install docs name; the npm name hookstate returns 404. The GitHub release v4.0.1 (2023-03-31) is older than the npm upload 4.0.2 (2025-03-20), which is why latestReleaseDate takes the npm date; both are major 4. The getting-started page gives the npm route as the command "npm install --save @hookstate/core", with "yarn add @hookstate/core" as the same registry's alternative. The homepage and README say the library "works where React works, including mobile applications and server side rendering" and "supports all recent browsers"; that is compatibility, so no runtime or runsAs is recorded. The README says "a modern alternative to Redux, Mobx, Recoil, etc."; none of those names is a record id, so alternativeTo is not recorded. The homepage link labelled "Discussions" goes to the GitHub issues list filtered to the question label, and the README says "Any questions? Just ask by raising a GitHub ticket."; no forum is recorded. Extensions are published as separate @hookstate/* packages, and the homepage names a browser extension for development tools. The getting-started page states "Hookstate consists of the core package @hookstate/core and optional extensions @hookstate/*". The firstRelease year comes from the oldest tag, 0.9.0, dated 2019-05-31 on the commit. The getting-started page states "The library does not have external or peer dependencies, except React." The homepage lists "standard plugins" for state snapshots, tracked fields, state validation and local storage persistence. The getting-started page says a "Unified API for local, global, nested, scoped, extended and all other Hookstate states" makes the application code easier to maintain.

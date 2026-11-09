@@ -1,0 +1,123 @@
+id: hls-js
+name: hls.js
+status: accepted
+checkedAt: 2026-11-09
+description: JavaScript library that plays HTTP Live Streaming video in browsers through HTML5 video and Media Source Extensions.
+facts:
+  - field: homepage
+    value: https://hlsjs.video-dev.org/demo/
+    url: https://hlsjs.video-dev.org/demo/
+    checkedAt: 2026-11-09
+    via: page
+  - field: repository
+    value: https://github.com/video-dev/hls.js
+    url: https://api.github.com/repos/video-dev/hls.js
+    checkedAt: 2026-11-09
+    via: api
+  - field: docs
+    value: https://github.com/video-dev/hls.js/blob/master/docs/API.md
+    url: https://github.com/video-dev/hls.js/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "API and usage docs, with code examples"
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/video-dev/hls.js/commits/be17f4eefb31aa96e4eb6ac11a5c1f191b13afd4
+    checkedAt: 2026-11-09
+    via: api
+  - field: maintainer
+    value: Dailymotion
+    url: https://github.com/video-dev/hls.js/blob/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) 2017 Dailymotion"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/video-dev
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [media-player, streaming]
+    url: https://github.com/video-dev/hls.js/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "It streams VOD, Live, and Low-Latency HLS assets"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/video-dev/hls.js
+    checkedAt: 2026-11-09
+    via: api
+  - field: runsAs
+    value: [browser]
+    url: https://github.com/video-dev/hls.js/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "HLS.js is only compatible with browsers supporting MediaSource extensions (MSE) API"
+  - field: installMethod
+    value: npm
+    url: https://github.com/video-dev/hls.js/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Or install the hls.js as a dependency"
+  - field: installMethod
+    value: script tag
+    url: https://github.com/video-dev/hls.js/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Directly include dist/hls.js or dist/hls.min.js in a script tag on the page"
+  - field: installMethod
+    value: GitHub release download
+    url: https://github.com/video-dev/hls.js/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Prepackaged builds are included with each release"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/video-dev/hls.js/blob/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/video-dev/hls.js/releases/tags/v1.7.4
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-28
+    url: https://api.github.com/repos/video-dev/hls.js/releases/tags/v1.7.4
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 17038
+    url: https://api.github.com/repos/video-dev/hls.js
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 332
+    url: https://api.github.com/repos/video-dev/hls.js/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+  - field: npmName
+    value: hls.js
+    url: https://registry.npmjs.org/hls.js/latest
+    checkedAt: 2026-11-09
+    via: api
+  - field: npmWeeklyDownloads
+    value: "14705223 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/hls.js
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentPackages
+    value: 695
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/hls.js
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentRepos
+    value: 3915
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/hls.js
+    checkedAt: 2026-11-09
+    via: api
+notFound: [hqCountry, runtime, runtimeMin, renderingModes, basedOn, forkOf, successorOf, parent, alternativeTo, importsFrom, databases, adminUi, headlessApi, contentStore, templating, i18n, multisite, livePreview, userRoles, sso, pricingPage, paidEdition, endoflifeId, usageShare, reportedInstalls, subreddit, mastodon, bluesky, x, newsletter, forum, discord, linkedin, pluginDirectory, pluginCount, packagistName, pypiName, dockerPulls, httpArchiveSites, wikidata]
+unreadable: []
+notes: >
+  The repository's default branch is master and the README's install section is the source for the three installMethod routes; the README's CDN examples use jsDelivr (cdn.jsdelivr.net/npm/hls.js@1) inside the script-tag route. The runsAs quote is the Compatibility section's sentence that the library only works in browsers with the MSE API. The README says the library "is not instantiable in Node.js"; a dummy export only lets a Node require succeed, so no node runtime is recorded. The LICENSE copyright line names "Dailymotion" (2017), and the README does not name a current maintainer; the video-dev GitHub organization hosts the repository and no page read names it as a legal entity, so the copyright line is followed. The GitHub API reports no license for the repository (NOASSERTION) although the LICENSE file is Apache License 2.0. The first tag v0.0.1 is committed on 2015-04-10, so firstRelease is 2015; the npm package's first upload (2016) is later. The stable line is 1.7.4 (2026-10-28); the 1.7.0 release candidates of July and August 2026 are older than that stable release. The HTTP Archive technology list does not name hls.js, so no httpArchiveSites figure is recorded. The Slack channel named in the README is a development chat and is not recorded as forum.

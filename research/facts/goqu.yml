@@ -1,0 +1,101 @@
+id: goqu
+name: goqu
+status: accepted
+checkedAt: 2026-11-09
+description: Go SQL builder and executor with an expressive query DSL that generates SQL for several database dialects.
+facts:
+  - field: homepage
+    value: https://doug-martin.github.io/goqu/
+    url: https://doug-martin.github.io/goqu/
+    checkedAt: 2026-11-09
+    via: page
+  - field: repository
+    value: https://github.com/doug-martin/goqu
+    url: https://api.github.com/repos/doug-martin/goqu
+    checkedAt: 2026-11-09
+    via: api
+  - field: docs
+    value: https://github.com/doug-martin/goqu/tree/master/docs
+    url: https://github.com/doug-martin/goqu/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+  - field: maintainer
+    value: Doug Martin
+    url: https://github.com/doug-martin/goqu/blob/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) 2017 Doug Martin"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/doug-martin
+    checkedAt: 2026-11-09
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/doug-martin/goqu
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [query-builder]
+    url: https://github.com/doug-martin/goqu/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "is an expressive SQL builder and executor"
+  - field: runtime
+    value: [go]
+    url: https://github.com/doug-martin/goqu/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "is the minimum Go version for using `goqu`"
+  - field: runtimeMin
+    value: "1.26"
+    url: https://raw.githubusercontent.com/doug-martin/goqu/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "(currently Go 1.26) is the minimum Go version for using `goqu`"
+  - field: installMethod
+    value: go modules
+    url: https://github.com/doug-martin/goqu/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "If using go modules."
+  - field: databases
+    value: [mysql, postgres, sqlite, sqlserver]
+    url: https://github.com/doug-martin/goqu/blob/master/docs/dialect.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "There are four dialects that come packaged with `goqu`"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/doug-martin/goqu
+    checkedAt: 2026-11-09
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/doug-martin/goqu/tags
+    checkedAt: 2026-11-09
+    via: api
+  - field: currentMajor
+    value: 9
+    url: https://api.github.com/repos/doug-martin/goqu/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-05
+    url: https://api.github.com/repos/doug-martin/goqu/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 2675
+    url: https://api.github.com/repos/doug-martin/goqu
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 55
+    url: https://api.github.com/repos/doug-martin/goqu/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+notFound: [hqCountry, basedOn, alternativeTo, importsFrom, headlessApi, contentStore, adminUi, templating, i18n, sso, userRoles, paidEdition, pricingPage, pluginDirectory, forum, discord, x, bluesky, mastodon, subreddit, newsletter, parent, npmName, packagistName]
+unreadable: []
+notes: >
+  The CSV homepage is http://doug-martin.github.io/goqu/; the https address answers 200 with the project's own site ("View on GitHub"), so it is recorded. The README recommends "gorm" and "hood" for ORM features, which the project names as alternatives without the word alternative, so no alternativeTo is recorded. The docs/version_migration.md page covers goqu's own major versions, not an import from other software. The dialect page names sqlite3; the value is recorded as sqlite. The README names the go directive in go.mod as the minimum Go version for using goqu, and runtimeMin records it. The dialect page says dialects work like Go drivers: none is registered until its package is imported. Go modules have no download figure. The contributors count covers the repository, and the stars and releases are the repository's too. The README says goqu "is not intended to be used as an ORM" for associations or hooks. The dialect page says a dataset keeps the dialect it was created with, and that goqu.SetDefaultDialect sets a package-level default once at startup.

@@ -1,0 +1,122 @@
+id: got
+name: Got
+status: accepted
+checkedAt: 2026-11-09
+description: Human-friendly HTTP request library for Node.js with promise and stream APIs, retries, timeouts and RFC 7234 caching.
+facts:
+  - field: repository
+    value: https://github.com/sindresorhus/got
+    url: https://api.github.com/repos/sindresorhus/got
+    checkedAt: 2026-11-09
+    via: api
+  - field: docs
+    value: https://github.com/sindresorhus/got/tree/main/documentation
+    url: https://github.com/sindresorhus/got/blob/main/readme.md
+    checkedAt: 2026-11-09
+    via: page
+  - field: forum
+    value: https://github.com/sindresorhus/got/discussions
+    url: https://github.com/sindresorhus/got/blob/main/readme.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Support questions should be asked"
+  - field: maintainer
+    value: Sindre Sorhus
+    url: https://github.com/sindresorhus/got/blob/main/license
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) Sindre Sorhus"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/sindresorhus
+    checkedAt: 2026-11-09
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/sindresorhus/got
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [data-fetching]
+    url: https://github.com/sindresorhus/got/blob/main/readme.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Human-friendly and powerful HTTP request library for Node.js"
+  - field: runtime
+    value: [node]
+    url: https://github.com/sindresorhus/got/blob/main/readme.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Human-friendly and powerful HTTP request library for Node.js"
+  - field: runtimeMin
+    value: "22"
+    url: https://github.com/sindresorhus/got/blob/v16.2.0/package.json
+    checkedAt: 2026-11-09
+    via: page
+    quote: '"node": ">=22"'
+  - field: installMethod
+    value: npm
+    url: https://raw.githubusercontent.com/sindresorhus/got/main/readme.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "npm install got"
+  - field: alternativeTo
+    value: [axios]
+    url: https://raw.githubusercontent.com/sindresorhus/got/main/readme.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "See how Got compares to other HTTP libraries"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/sindresorhus/got
+    checkedAt: 2026-11-09
+    via: api
+  - field: npmName
+    value: got
+    url: https://registry.npmjs.org/got/latest
+    checkedAt: 2026-11-09
+    via: api
+  - field: npmWeeklyDownloads
+    value: "52731478 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/got
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentPackages
+    value: 9787
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/got
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentRepos
+    value: 1332017
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/got
+    checkedAt: 2026-11-09
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://registry.npmjs.org/got
+    checkedAt: 2026-11-09
+    via: api
+  - field: currentMajor
+    value: 16
+    url: https://api.github.com/repos/sindresorhus/got/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-30
+    url: https://api.github.com/repos/sindresorhus/got/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 14962
+    url: https://api.github.com/repos/sindresorhus/got
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 185
+    url: https://api.github.com/repos/sindresorhus/got/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+notFound: [homepage, hqCountry, basedOn, importsFrom, headlessApi, contentStore, databases, adminUi, templating, i18n, sso, userRoles, runsAs, renderingModes, paidEdition, pricingPage, pluginDirectory, discord, x, bluesky, mastodon, subreddit, newsletter, parent, packagistName]
+unreadable: []
+notes: >
+  Boundary ruling for this wave: an HTTP client is a helper library, so the row is accepted; the CSV boundary state is not a record status. No homepage: the repository has none, and the npm package names the GitHub readme as its homepage. The install section shows "npm install got", recorded as installMethod. The README comparison table marks browser support as no, and the Ky line says Ky "works in the browser too", so no runsAs is recorded: the page names no sentence that says where the library runs apart from Node.js. The README says "You probably want Ky instead", and compares node-fetch, Ky, axios and superagent; only axios is a record id; the README links the comparison and an Axios migration guide, so alternativeTo is axios. Migration guides for Request, Axios and Node.js are code migrations, not import from other software. The LICENSE names Sindre Sorhus; the README's Maintainers section also lists Szymon Marczak. The npm weekly figure is the sum of the daily counts for 2026-11-01 to 2026-11-07 (the point endpoint returns a stale window); the npm package is the one the install command names. The ecosyste.ms dependent counts were read on 2026-11-09 from the last sync on 2026-11-08. The README's "Used by 10K+ packages and 5M+ repos" links the GitHub dependents page, so it is not recorded as reportedInstalls. Bundled TypeScript types, Standard Schema validation, native ESM and the RFC 7234 cache are features named in the README and are not recorded as fields. The README also lists retries on by default, advanced timeouts, a pagination API, proxy support, Unix domain sockets, hooks, instances, plugins, and a diagnostics channel. The README says the package provides no CommonJS export, and that v11 is no longer maintained.

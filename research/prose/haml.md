@@ -1,0 +1,1 @@
+Haml is a templating engine for HTML written in Ruby. Indentation shows the structure of the markup and replaces closing tags. Templates can be compiled from the command line with a render command, or used inside a Ruby web framework, and the gem is installed directly or through a Gemfile.

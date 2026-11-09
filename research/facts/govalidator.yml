@@ -1,0 +1,119 @@
+id: govalidator
+name: govalidator
+status: accepted
+checkedAt: 2026-11-09
+description: "Go package of validators and sanitizers for strings, structs and collections."
+facts:
+  - field: repository
+    value: https://github.com/asaskevich/govalidator
+    url: https://api.github.com/repos/asaskevich/govalidator
+    checkedAt: 2026-11-09
+    via: api
+  - field: homepage
+    value: https://asaskevich.dev/projects/govalidator/
+    url: https://asaskevich.dev/projects/govalidator/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "govalidator — Go validation library"
+  - field: docs
+    value: https://godoc.org/github.com/asaskevich/govalidator
+    url: https://raw.githubusercontent.com/asaskevich/govalidator/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Documentation is available here"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/asaskevich/govalidator
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [validation]
+    url: https://raw.githubusercontent.com/asaskevich/govalidator/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "A package of validators and sanitizers for strings, structs and collections."
+  - field: runtime
+    value: [go]
+    url: https://raw.githubusercontent.com/asaskevich/govalidator/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Make sure that Go is installed on your computer."
+  - field: runtimeMin
+    value: "1.13"
+    url: https://raw.githubusercontent.com/asaskevich/govalidator/v12.0.0/go.mod
+    checkedAt: 2026-11-09
+    via: page
+    quote: "go 1.13"
+  - field: installMethod
+    value: go get
+    url: https://raw.githubusercontent.com/asaskevich/govalidator/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "go get github.com/asaskevich/govalidator/v12"
+  - field: installMethod
+    value: go get (gopkg.in)
+    url: https://raw.githubusercontent.com/asaskevich/govalidator/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "go get gopkg.in/asaskevich/govalidator.v12"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/asaskevich/govalidator
+    checkedAt: 2026-11-09
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/asaskevich/govalidator/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: maintainer
+    value: Aliaksei (Alex) Saskevich
+    url: https://raw.githubusercontent.com/asaskevich/govalidator/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) 2014-2026 Aliaksei (Alex) Saskevich"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/asaskevich
+    checkedAt: 2026-11-09
+    via: api
+  - field: firstRelease
+    value: "2014"
+    url: https://api.github.com/repos/asaskevich/govalidator/commits/6fa0de0bdbbf76d3460145dc92622df8ecdc2f41
+    checkedAt: 2026-11-09
+    via: api
+  - field: currentMajor
+    value: 12
+    url: https://proxy.golang.org/github.com/asaskevich/govalidator/v12/@v/v12.0.0.info
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2026-04-14
+    url: https://proxy.golang.org/github.com/asaskevich/govalidator/v12/@v/v12.0.0.info
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 6201
+    url: https://api.github.com/repos/asaskevich/govalidator
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 91
+    url: https://api.github.com/repos/asaskevich/govalidator/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentPackages
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fasaskevich%2Fgovalidator%2Fv12
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentRepos
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fasaskevich%2Fgovalidator%2Fv12
+    checkedAt: 2026-11-09
+    via: api
+notFound: [hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, packagistName, endoflifeId]
+unreadable: []
+notes: >
+  The homepage is the project page on the maintainer's personal site, the only page for the project outside GitHub; its title is the quoted line, and its structured data names Aliaksei Saskevich as the author, which matches the LICENSE line. The latest GitHub release object is v11.0.1 (2021-03-07); the newest stable version is the v12.0.0 tag (commit dated 2026-04-14), which the README installs by its /v12 import path and the Go module proxy serves, so currentMajor is 12 under the registry rule and the release date comes from the proxy's info record. The README intro says the package is based on validator.js, a JavaScript library; that parent has no record id, so it is noted here and basedOn is left out. The Installation section gives go get for the /v12 path and a gopkg.in route, each recorded as installMethod. The README documents ValidateStruct with valid struct tags, plain validator functions, SetFieldsRequiredByDefault and custom validators through CustomTypeTagMap; its recent-breaking-changes section says the custom validator function gained a context as second parameter and that custom validators are now added with a Set method to prevent data races. The README's Recent breaking changes section and its "What to contribute" list name no end, so the status stays accepted. The dependent counts are for the /v12 module path the install docs name: 0 packages and 0 repositories. The unversioned path github.com/asaskevich/govalidator has 14620 dependent packages and 44225 dependent repositories in ecosyste.ms, but it is a different module path and is not recorded. Stars and contributors belong to the repository. The README's Sponsors and Backers blocks are Open Collective funding, not recorded.

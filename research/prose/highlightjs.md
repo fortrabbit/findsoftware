@@ -1,0 +1,1 @@
+highlight.js is a JavaScript syntax highlighter that works in the browser and on Node.js. A page can install it from npm, load it from a CDN, or use a custom bundle generated on the project's download page. The [documentation](https://highlightjs.readthedocs.io/) describes its API. The copyright line names Ivan Sagalaev, and the repository lists a core team and contributors.

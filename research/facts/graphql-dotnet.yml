@@ -1,0 +1,113 @@
+id: graphql-dotnet
+name: GraphQL.NET
+status: accepted
+checkedAt: 2026-11-09
+description: GraphQL implementation for .NET that provides the query execution engine and schema types for C# applications.
+facts:
+  - field: homepage
+    value: https://graphql-dotnet.github.io
+    url: https://graphql-dotnet.github.io/
+    checkedAt: 2026-11-09
+    via: page
+  - field: repository
+    value: https://github.com/graphql-dotnet/graphql-dotnet
+    url: https://api.github.com/repos/graphql-dotnet/graphql-dotnet
+    checkedAt: 2026-11-09
+    via: api
+  - field: docs
+    value: https://graphql-dotnet.github.io/docs/getting-started/introduction/
+    url: https://github.com/graphql-dotnet/graphql-dotnet/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "documentation site that is built from the"
+  - field: maintainer
+    value: Joseph T. McBride, Ivan Maximov, Shane Krueger
+    url: https://github.com/graphql-dotnet/graphql-dotnet/blob/master/LICENSE.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) 2015-2025 Joseph T. McBride, Ivan Maximov, Shane Krueger, et al."
+  - field: maintainerType
+    value: community
+    url: https://github.com/graphql-dotnet/graphql-dotnet/blob/master/LICENSE.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) 2015-2025 Joseph T. McBride, Ivan Maximov, Shane Krueger, et al."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/graphql-dotnet
+    checkedAt: 2026-11-09
+    via: api
+  - field: language
+    value: C#
+    url: https://api.github.com/repos/graphql-dotnet/graphql-dotnet
+    checkedAt: 2026-11-09
+    via: api
+  - field: runtime
+    value: [dotnet]
+    url: https://github.com/graphql-dotnet/graphql-dotnet/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "a query language and execution engine originally created by Facebook in 2012, in .NET"
+  - field: categories
+    value: [graphql-server]
+    url: https://github.com/graphql-dotnet/graphql-dotnet/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "a query language and execution engine originally created by Facebook in 2012, in .NET"
+  - field: installMethod
+    value: NuGet package GraphQL
+    url: https://graphql-dotnet.github.io/docs/getting-started/installation/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "dotnet add package GraphQL"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/graphql-dotnet/graphql-dotnet
+    checkedAt: 2026-11-09
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/graphql-dotnet/graphql-dotnet/blob/master/LICENSE.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: firstRelease
+    value: "2015"
+    url: https://api.github.com/repos/graphql-dotnet/graphql-dotnet/releases?per_page=100&page=2
+    checkedAt: 2026-11-09
+    via: api
+  - field: currentMajor
+    value: 8
+    url: https://api.github.com/repos/graphql-dotnet/graphql-dotnet/releases/latest
+    checkedAt: 2026-11-09
+    via: api
+    quote: "8.8.5"
+  - field: latestReleaseDate
+    value: 2026-08-18
+    url: https://api.github.com/repos/graphql-dotnet/graphql-dotnet/releases/latest
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 5985
+    url: https://api.github.com/repos/graphql-dotnet/graphql-dotnet
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 167
+    url: https://api.github.com/repos/graphql-dotnet/graphql-dotnet/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+  - field: nugetName
+    value: GraphQL
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:GraphQL
+    checkedAt: 2026-11-09
+    via: api
+  - field: nugetDownloads
+    value: "99935839 (total)"
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:GraphQL
+    checkedAt: 2026-11-09
+    via: api
+notFound: [hostedOffering, pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, headlessApi, renderingModes, runsAs, runtimeMin, contentStore, databases, adminUi, userRoles, sso, i18n, multisite, livePreview, templating, endoflifeId, lastCommitDate, latestPrereleaseDate, pluginDirectory, pluginCount, discord, forum, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, npmName, packagistName, selfHostOption, freeTier, apiLimits, regions]
+unreadable: []
+notes: >
+  The homepage at graphql-dotnet.github.io is a landing page whose visible text is the project name; its description is the GitHub repository's "GraphQL for .NET" and the docs supply the rest. The maintainer line in LICENSE.md names three people and "et al.", so the maintainer is the three names as the LICENSE states them, and the record prose says maintained by them. The README lists separate NuGet packages for serialization, document caching, DataLoader and dependency injection, all in the same repository. The README says the GraphQL specification is developed by the GraphQL Foundation and that the lexer and parser come from another repository by Marek Magdziak; neither is recorded as a field. The NuGet package GraphQL targets netstandard2.0, netstandard2.1, net5.0 and net6.0 in its csproj and catalog entry; those are compatibility targets, so no runtimeMin is recorded and no .NET Framework minimum is recorded. The ASP.NET Core guide describes the separate GraphQL.Server package set, kept in another repository, and states no process model for the library, so runsAs is not recorded; the runtime dotnet covers hosting. The README's OpenCollective badges and sponsors are not recorded. The docs install page names the NuGet packages with the dotnet CLI; no sentence names NuGet on that page, so the installMethod quote is the command. The NuGet figure is the total the search API reports; the project publishes preview packages to GitHub Packages, which is not a public registry figure and is not recorded.

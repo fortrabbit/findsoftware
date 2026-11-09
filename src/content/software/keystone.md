@@ -21,6 +21,7 @@ hosting:
 basedOn:
   - prisma
   - express
+  - graphql-js
   - nextjs
   - react
 contentStore:

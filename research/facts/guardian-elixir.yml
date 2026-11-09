@@ -1,0 +1,113 @@
+id: guardian-elixir
+name: Guardian
+status: accepted
+checkedAt: 2026-11-09
+description: Token-based authentication library for Elixir applications, with JSON Web Tokens by default and Plug integration.
+facts:
+  - field: repository
+    value: https://github.com/ueberauth/guardian
+    url: https://api.github.com/repos/ueberauth/guardian
+    checkedAt: 2026-11-09
+    via: api
+  - field: docs
+    value: https://hexdocs.pm/guardian
+    url: https://raw.githubusercontent.com/ueberauth/guardian/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "API documentation is available at"
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/ueberauth/guardian/tags
+    checkedAt: 2026-11-09
+    via: api
+  - field: maintainer
+    value: Daniel Neighman
+    url: https://raw.githubusercontent.com/ueberauth/guardian/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) 2015 Daniel Neighman"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/ueberauth
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [auth]
+    url: https://raw.githubusercontent.com/ueberauth/guardian/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Guardian is a token based authentication library for use with Elixir applications"
+  - field: language
+    value: Elixir
+    url: https://api.github.com/repos/ueberauth/guardian
+    checkedAt: 2026-11-09
+    via: api
+  - field: runtime
+    value: [elixir]
+    url: https://raw.githubusercontent.com/ueberauth/guardian/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Guardian is a token based authentication library for use with Elixir applications"
+  - field: installMethod
+    value: mix
+    url: https://raw.githubusercontent.com/ueberauth/guardian/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Add Guardian to your application to your list of dependencies in"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/ueberauth/guardian/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "This library is MIT licensed"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/ueberauth/guardian/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining"
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/ueberauth/guardian/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-17
+    url: https://api.github.com/repos/ueberauth/guardian/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 3513
+    url: https://api.github.com/repos/ueberauth/guardian
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 160
+    url: https://api.github.com/repos/ueberauth/guardian/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+  - field: hexName
+    value: guardian
+    url: https://hex.pm/api/packages/guardian
+    checkedAt: 2026-11-09
+    via: api
+  - field: hexDownloads
+    value: "16810123 (total)"
+    url: https://hex.pm/api/packages/guardian
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentPackages
+    value: 31
+    url: https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/guardian
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentRepos
+    value: 1685
+    url: https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/guardian
+    checkedAt: 2026-11-09
+    via: api
+notFound: [homepage, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runtimeMin, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId]
+unreadable: []
+notes: >
+  The repository is the only project link: the CSV homepage is the GitHub URL, and the README names no website, so no homepage is recorded. The API documentation is the hexdocs site the README links; the hexdocs readme is also at guardian.hexdocs.pm. The LICENSE file names Daniel Neighman as the 2015 copyright holder, and the README copyright line says the same. The organization ueberauth owns the repository; the Hex package lists the ueberauth owner. The README says Guardian integrates with Plug and works with Phoenix, but names no parent, so no basedOn is recorded; guardian_phoenix, guardian_db, sans_password and protego are separate packages the README lists as related, and none is a candidate. The mix.exs declares elixir "~> 1.13" at v2.5.0; the Elixir version is a language requirement, not an OTP minimum, and no page names an OTP version, so runtimeMin is left out. JSON Web Tokens are the default token type; that is a token format and is recorded here only, not as a field. The first release is the oldest tag, v0.8.1, committed 2015-12-24; the Hex package was created 2015-06-19. Stars and contributors are for the repository. The latest stable GitHub release is v2.5.0 (2026-08-17), matching the Hex latest 2.5.0; the repository was pushed on 2026-08-18 and is not archived.
+  The README Basics section names encode_and_sign, decode_and_verify, revoke and refresh as the core functions. Tracking revocation needs a separate library: the README says JWT tokens are not tracked by default, and points to GuardianDb for recording issued tokens.

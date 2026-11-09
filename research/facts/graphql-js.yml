@@ -1,0 +1,131 @@
+id: graphql-js
+name: GraphQL.js
+status: accepted
+checkedAt: 2026-11-09
+description: JavaScript implementation of the GraphQL specification, providing the parser, validator, executor and type system used to build GraphQL servers, clients and tools.
+facts:
+  - field: homepage
+    value: https://www.graphql-js.org/docs/
+    url: https://www.graphql-js.org/docs/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "GraphQL.js is the official JavaScript implementation of the GraphQL specification."
+  - field: repository
+    value: https://github.com/graphql/graphql-js
+    url: https://api.github.com/repos/graphql/graphql-js
+    checkedAt: 2026-11-09
+    via: api
+  - field: docs
+    value: https://www.graphql-js.org/docs/getting-started/
+    url: https://www.graphql-js.org/docs/getting-started/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Before getting started, you should have Node.js 22 or newer installed."
+  - field: maintainer
+    value: GraphQL Contributors
+    url: https://raw.githubusercontent.com/graphql/graphql-js/v17.1.0/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) GraphQL Contributors"
+  - field: maintainerType
+    value: community
+    url: https://raw.githubusercontent.com/graphql/graphql-js/v17.1.0/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) GraphQL Contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/graphql
+    checkedAt: 2026-11-09
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/graphql/graphql-js/commits/0.1.1
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [graphql-server]
+    url: https://www.graphql-js.org/docs/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "used to build GraphQL servers, clients, tools, and schema workflows"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/graphql/graphql-js
+    checkedAt: 2026-11-09
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://www.graphql-js.org/docs/getting-started/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Before getting started, you should have Node.js 22 or newer installed."
+  - field: runtimeMin
+    value: "22"
+    url: https://raw.githubusercontent.com/graphql/graphql-js/v17.1.0/package.json
+    checkedAt: 2026-11-09
+    via: page
+    quote: "\"node\": \"^22.0.0 || ^24.0.0 || >=26.0.0\""
+  - field: installMethod
+    value: npm package
+    url: https://raw.githubusercontent.com/graphql/graphql-js/17.x.x/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Install GraphQL.js from npm"
+  - field: npmName
+    value: graphql
+    url: https://registry.npmjs.org/graphql/latest
+    checkedAt: 2026-11-09
+    via: api
+  - field: npmWeeklyDownloads
+    value: "69974082 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/graphql
+    checkedAt: 2026-11-09
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/graphql/graphql-js/v17.1.0/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 17
+    url: https://api.github.com/repos/graphql/graphql-js/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-04
+    url: https://api.github.com/repos/graphql/graphql-js/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 20343
+    url: https://api.github.com/repos/graphql/graphql-js
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 216
+    url: https://api.github.com/repos/graphql/graphql-js/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentPackages
+    value: 16004
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/graphql
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentRepos
+    value: 412994
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/graphql
+    checkedAt: 2026-11-09
+    via: api
+notFound: [pricingPage, parent, forkOf, successorOf, alternativeTo, basedOn, contentStore, databases, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, renderingModes, runsAs, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, discord, newsletter, mastodon, bluesky, x, wikidata, endoflifeId, packagistName, pypiDownloads, selfHostOption, hqCountry]
+unreadable: []
+notes: >
+  The CSV homepage http://graphql.org/graphql-js/ redirects (308 to https, then to https://www.graphql-js.org/docs/); the project's own site is recorded as the https address it reaches.
+  The README names a community forum: "Discord channel #graphql-js" on discord.graphql.org, which is the GraphQL community server, not a server of the project; it is not recorded as forum or discord. A reviewer may decide otherwise.
+  The README says the library "can be used both in a Node server and in the browser"; per the runtime rule it records runtime node and no runsAs.
+  The README says the library can be used both in a Node server and in the browser; the record keeps runtime node and no runsAs, as the rule for libraries that name both sets.
+  The npm install route is one installMethod: the README gives npm, yarn and bun commands for the same registry.
+  The repository is managed under the GraphQL Foundation's membership agreements (EasyCLA); the README names the foundation only as a place to join for financial support, so the foundation is not the maintainer; the LICENSE line is.
+  The repository default branch is 17.x.x. Releases of older lines (v16.15.0 and v15.11.0) were published on 2026-11-04 with v17.1.0; latestReleaseDate is the newest stable release by date and currentMajor the highest stable version.
+  Stars and contributors belong to the repository, which is the reference implementation and not a monorepo.

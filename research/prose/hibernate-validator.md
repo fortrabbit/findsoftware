@@ -1,0 +1,1 @@
+Hibernate Validator is the reference implementation of Jakarta Validation, the specification for checking JavaBeans and method arguments against constraints. Constraints are declared as annotations by default, and XML validation descriptors can override and extend them. The [documentation](https://hibernate.org/validator/documentation/) covers its use.

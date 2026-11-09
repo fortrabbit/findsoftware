@@ -1,0 +1,3 @@
+HEML documents are rendered to HTML by the heml npm package. The package is used from Node.js as a module that returns the rendered HTML, the metadata from the head and any validation errors. Its command line tool has a develop command that watches a file and refreshes the browser while the email is written, and a build command that produces the email code; it inlines CSS by default. The repository is a monorepo of packages, and heml is the one the usage page installs.
+
+The project website also hosts an online editor. The usage page asks users to save their HEML and HTML locally before they leave it.

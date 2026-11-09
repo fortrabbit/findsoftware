@@ -1,0 +1,123 @@
+id: heml
+name: HEML
+status: accepted
+checkedAt: 2026-11-09
+description: Markup language and Node.js package for building responsive HTML email, with a CLI that builds HEML files into HTML.
+facts:
+  - field: homepage
+    value: https://heml.io
+    url: https://heml.io/
+    checkedAt: 2026-11-09
+    via: page
+  - field: docs
+    value: https://heml.io/docs/getting-started/guide
+    url: https://heml.io/docs/getting-started/guide
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Lets build out a simple welcome email with HEML!"
+  - field: repository
+    value: https://github.com/SparkPost/heml
+    url: https://api.github.com/repos/SparkPost/heml
+    checkedAt: 2026-11-09
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://registry.npmjs.org/heml
+    checkedAt: 2026-11-09
+    via: api
+  - field: maintainer
+    value: SparkPost
+    url: https://raw.githubusercontent.com/SparkPost/heml/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) 2017-present SparkPost"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/SparkPost
+    checkedAt: 2026-11-09
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/SparkPost/heml
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [email-templating]
+    url: https://raw.githubusercontent.com/SparkPost/heml/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "HEML is an open source markup language for building responsive email."
+  - field: runtime
+    value: [node]
+    url: https://heml.io/docs/getting-started/usage
+    checkedAt: 2026-11-09
+    via: page
+    quote: "HEML at its core is an NPM module that you can install and use in Node.js."
+  - field: installMethod
+    value: npm
+    url: https://heml.io/docs/getting-started/usage
+    checkedAt: 2026-11-09
+    via: page
+    quote: "HEML at its core is an NPM module that you can install and use in Node.js."
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/SparkPost/heml/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/SparkPost/heml/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 1
+    url: https://github.com/SparkPost/heml/releases/tag/v1.1.3
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2017-11-30
+    url: https://github.com/SparkPost/heml/releases/tag/v1.1.3
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 4290
+    url: https://api.github.com/repos/SparkPost/heml
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 8
+    url: https://api.github.com/repos/SparkPost/heml/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+  - field: npmName
+    value: heml
+    url: https://registry.npmjs.org/heml
+    checkedAt: 2026-11-09
+    via: api
+  - field: npmWeeklyDownloads
+    value: "889 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/heml
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentPackages
+    value: 8
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/heml
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentRepos
+    value: 86
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/heml
+    checkedAt: 2026-11-09
+    via: api
+  - field: x
+    value: https://twitter.com/SparkPost
+    url: https://heml.io/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Made with ❤️ by @SparkPost"
+notFound: [hqCountry, runtimeMin, endoflifeId, adminUi, headlessApi, templating, databases, contentStore, i18n, multisite, livePreview, userRoles, sso, importsFrom, forum, discord, bluesky, mastodon, newsletter, pluginDirectory, pluginCount, usageShare, paidEdition, pricingPage, forkOf, successorOf, basedOn, runsAs, renderingModes, parent, alternativeTo]
+unreadable: []
+notes: >
+  Status accepted, with a doubt the import will settle: the last release is 1.1.3 (2017-11-30), the npm latest tag is the same version, and the repository was last pushed 2020-02-09; the project states no end, so criterion 4 is left to the import's four-year rule, which moves a record with no release in four years to stub. The homepage heml.io answers over https and still shows the software; the site also hosts an online editor at heml.io/editor, which the usage page describes as a place to code HEML and save the output locally, recorded here only as a note and not as a hosted offering. The usage page gives two routes under npm: a global CLI install (npm install heml -g) and a local Node module (npm install heml); both are the npm package heml and one installMethod entry is recorded. The repository is a Lerna monorepo (packages/heml, heml-elements, heml-parse, heml-render, heml-styles, heml-validate and others); stars and contributors belong to the monorepo, and the npm figure is for the heml package the usage page names. The usage page shows the develop command for watching files and refreshing a browser and the build command for producing email code; no page states where the output runs, so runsAs is not recorded. The LICENSE copyright line is "Copyright (c) 2017-present SparkPost"; the homepage footer says "Made with ❤️ by @SparkPost" and a second footer link names the personal account of the maintainer (twitter.com/theavigoldman), which is not recorded. The earliest tag is v1.0.2-0 (2017-11-01) and the npm package was created 2017-09-19; firstRelease is the year of the earlier of these, 2017. Contributors is the number of pages of the contributors endpoint without the anon parameter (8). The usage page says the CLI inlines CSS by default and that the --embed flag turns inlining off; the Node module returns the rendered HTML, the metadata exported from the head and any validation errors.

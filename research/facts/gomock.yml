@@ -1,0 +1,90 @@
+id: gomock
+name: gomock
+status: accepted
+checkedAt: 2026-11-09
+description: Mocking framework for Go that generates mock implementations of Go interfaces, with the mockgen tool.
+facts:
+  - field: repository
+    value: https://github.com/uber-go/mock
+    url: https://api.github.com/repos/uber-go/mock
+    checkedAt: 2026-11-09
+    via: api
+  - field: docs
+    value: https://pkg.go.dev/go.uber.org/mock
+    url: https://github.com/uber-go/mock/blob/main/README.md
+    checkedAt: 2026-11-09
+    via: page
+  - field: maintainer
+    value: Uber
+    url: https://github.com/uber-go/mock/blob/main/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "we've decided to fork and maintain this going forward at Uber"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/uber-go
+    checkedAt: 2026-11-09
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/uber-go/mock
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [mocking]
+    url: https://github.com/uber-go/mock/blob/main/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "gomock is a mocking framework"
+  - field: runtime
+    value: [go]
+    url: https://github.com/uber-go/mock/blob/main/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "supports all Go versions supported by the official"
+  - field: runtimeMin
+    value: "1.23"
+    url: https://raw.githubusercontent.com/uber-go/mock/v0.6.0/go.mod
+    checkedAt: 2026-11-09
+    via: page
+    quote: "go 1.23.0"
+  - field: installMethod
+    value: go install
+    url: https://raw.githubusercontent.com/uber-go/mock/main/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "go install go.uber.org/mock/mockgen@latest"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/uber-go/mock
+    checkedAt: 2026-11-09
+    via: api
+  - field: firstRelease
+    value: 2023
+    url: https://api.github.com/repos/uber-go/mock/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/uber-go/mock/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2025-08-18
+    url: https://api.github.com/repos/uber-go/mock/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 3429
+    url: https://api.github.com/repos/uber-go/mock
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 120
+    url: https://api.github.com/repos/uber-go/mock/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+notFound: [homepage, hqCountry, basedOn, pluginDirectory, forum, discord, x, bluesky, mastodon, subreddit, newsletter, adminUi, templating, i18n, sso, userRoles, databases, paidEdition, pricingPage]
+unreadable: []
+notes: >
+  Repository only: the GitHub repository has no homepage, so none is recorded. The README says "This project originates from Google's golang/mock repo" and that Uber forked it, so golang/mock is the parent by fork; it is not a record id and is named here, not in forkOf. The README installs the mockgen tool with go install (the command under "Install the mockgen tool"). The LICENSE file has no copyright line; the maintainer is Uber as the README states it, and its legal name and hqCountry were not checked. Go modules have no download figure. Releases: v0.1.0 (2023-06-29) is the oldest tag of the package; the bazel_rule_v0.1.0 and bazel_rule_v0.2.0 tags and releases (2025) belong to the Bazel rules, and the newest of them is a prerelease, older than v0.6.0. runtimeMin is the go.mod go line at the latest tag (v0.6.0). The README describes three mockgen modes, archive, source and package, and says Google no longer maintains the original project. The README supports the two most recent Go releases, as the official Go Release Policy defines them.

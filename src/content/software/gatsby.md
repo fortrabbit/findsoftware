@@ -24,6 +24,7 @@ hosting:
 runtimeMin: node 18
 basedOn:
   - react
+  - graphql-js
 contentStore:
   - flat-file
 templating: jsx

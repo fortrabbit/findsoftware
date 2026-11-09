@@ -1,0 +1,107 @@
+id: gorp
+name: gorp
+status: accepted
+checkedAt: 2026-11-09
+description: Go library that maps structs to database tables and provides insert, update, delete and select helpers over database/sql.
+facts:
+  - field: repository
+    value: https://github.com/go-gorp/gorp
+    url: https://api.github.com/repos/go-gorp/gorp
+    checkedAt: 2026-11-09
+    via: api
+  - field: docs
+    value: https://pkg.go.dev/github.com/go-gorp/gorp/v3
+    url: https://github.com/go-gorp/gorp/blob/main/README.md
+    checkedAt: 2026-11-09
+    via: page
+  - field: forum
+    value: https://gitter.im/go-gorp/gorp
+    url: https://github.com/go-gorp/gorp/blob/main/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Use our `gitter` channel"
+  - field: maintainer
+    value: James Cooper
+    url: https://github.com/go-gorp/gorp/blob/main/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) 2012 James Cooper"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/go-gorp
+    checkedAt: 2026-11-09
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/go-gorp/gorp
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [orm]
+    url: https://api.github.com/repos/go-gorp/gorp
+    checkedAt: 2026-11-09
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/go-gorp/gorp/blob/main/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "gorp uses the Go 1 `database/sql` package."
+  - field: runtimeMin
+    value: "1.13"
+    url: https://raw.githubusercontent.com/go-gorp/gorp/v3.0.1/go.mod
+    checkedAt: 2026-11-09
+    via: page
+    quote: "go 1.13"
+  - field: installMethod
+    value: go get
+    url: https://github.com/go-gorp/gorp/blob/main/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Use `go get` or your favorite vendoring tool"
+  - field: databases
+    value: [mysql, postgres, sqlite]
+    url: https://github.com/go-gorp/gorp/blob/main/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Dialects are provided for: * MySQL * PostgreSQL * sqlite3"
+  - field: databases
+    value: [oracle, sqlserver]
+    url: https://github.com/go-gorp/gorp/blob/main/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Support is also provided for: * Oracle (contributed by @klaidliadon) * SQL Server (contributed by @qrawl)"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/go-gorp/gorp
+    checkedAt: 2026-11-09
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://api.github.com/repos/go-gorp/gorp/tags
+    checkedAt: 2026-11-09
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/go-gorp/gorp/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2019-11-27
+    url: https://api.github.com/repos/go-gorp/gorp/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 3742
+    url: https://api.github.com/repos/go-gorp/gorp
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 71
+    url: https://api.github.com/repos/go-gorp/gorp/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+notFound: [homepage, hqCountry, basedOn, alternativeTo, importsFrom, headlessApi, contentStore, adminUi, templating, i18n, sso, userRoles, paidEdition, pricingPage, pluginDirectory, discord, x, bluesky, mastodon, subreddit, newsletter, parent, npmName, packagistName]
+unreadable: []
+notes: >
+  No homepage: the repository has none and the README links no site of its own, so the record is repository only. The README's "Update 2016-11-13: Future versions" section says progress toward v2 slowed and that v2 was tagged from master; the Versioning section says "Development is not very active right now". Neither is an end statement, so the status stays accepted; the newest release is v3.0.1 (2019-11-27) and the last commit on main is 2024-11-19, so the four-year release rule moves the record to stub on import. The README says "I hesitate to call gorp an ORM"; the categories follow the repository description, "an ORM-ish library for Go". The README says Oracle and SQL Server "are not covered by CI" and that the maintainers "have no good way to test them locally"; both sit in the databases entry with that caveat. The LICENSE copyright line names James Cooper; the GitHub organization is go-gorp, and the README names individual maintainers only by GitHub handle. The README says the package is guaranteed compatible with the latest 2 major versions of Go; runtimeMin is the go.mod go line at the latest tag. The docs entry is the pkg.go.dev reference the README badge links; no further docs site exists. The README lists binding of struct fields to columns by tag or API, struct embedding, transactions, pre and post insert, update and delete hooks, optimistic locking through a version column, and CreateTables for unit tests. Raw SQL can bind to structs and slices with positional or named parameters. SQL for insert, update, delete and get is generated through the Dialect of each database, and the Dialect interface is implemented per database vendor, and the README says Postgres needs $1 placeholders in raw SQL. The README says "I hesitate to call gorp an ORM" and that gorp does not know the relationships between structs.

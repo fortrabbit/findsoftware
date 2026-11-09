@@ -1,0 +1,111 @@
+id: gorm
+name: GORM
+status: accepted
+checkedAt: 2026-11-09
+description: Go ORM library that maps structs to database tables, with associations, hooks, transactions and auto migrations.
+facts:
+  - field: homepage
+    value: https://gorm.io
+    url: https://gorm.io/
+    checkedAt: 2026-11-09
+    via: page
+  - field: repository
+    value: https://github.com/go-gorm/gorm
+    url: https://api.github.com/repos/go-gorm/gorm
+    checkedAt: 2026-11-09
+    via: api
+  - field: docs
+    value: https://gorm.io/docs/
+    url: https://gorm.io/docs/
+    checkedAt: 2026-11-09
+    via: page
+  - field: maintainer
+    value: Jinzhu
+    url: https://github.com/go-gorm/gorm/blob/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) 2013-present Jinzhu"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/go-gorm
+    checkedAt: 2026-11-09
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/go-gorm/gorm
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [orm]
+    url: https://github.com/go-gorm/gorm/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Full-Featured ORM"
+  - field: runtime
+    value: [go]
+    url: https://github.com/go-gorm/gorm/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "The fantastic ORM library for Golang"
+  - field: runtimeMin
+    value: "1.18"
+    url: https://raw.githubusercontent.com/go-gorm/gorm/v1.31.2/go.mod
+    checkedAt: 2026-11-09
+    via: page
+    quote: "go 1.18"
+  - field: installMethod
+    value: go get
+    url: https://gorm.io/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "go get -u gorm.io/gorm"
+  - field: databases
+    value: [mysql, postgres, sqlite, sqlserver, oracle]
+    url: https://gorm.io/docs/connecting_to_the_database.html
+    checkedAt: 2026-11-09
+    via: page
+    quote: "GORM officially supports the databases MySQL, PostgreSQL, GaussDB, SQLite, SQL Server TiDB, and Oracle Database"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/go-gorm/gorm
+    checkedAt: 2026-11-09
+    via: api
+  - field: firstRelease
+    value: 2020
+    url: https://api.github.com/repos/go-gorm/gorm/tags
+    checkedAt: 2026-11-09
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/go-gorm/gorm/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2026-06-25
+    url: https://api.github.com/repos/go-gorm/gorm/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 39988
+    url: https://api.github.com/repos/go-gorm/gorm
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 426
+    url: https://api.github.com/repos/go-gorm/gorm/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+  - field: forum
+    value: https://gitter.im/jinzhu/gorm
+    url: https://gorm.io/community.html
+    checkedAt: 2026-11-09
+    via: page
+  - field: x
+    value: https://twitter.com/zhangjinzhu
+    url: https://gorm.io/
+    checkedAt: 2026-11-09
+    via: page
+notFound: [hqCountry, basedOn, alternativeTo, importsFrom, headlessApi, contentStore, adminUi, templating, i18n, sso, userRoles, paidEdition, pricingPage, pluginDirectory, discord, bluesky, mastodon, subreddit, newsletter, parent, npmName, packagistName]
+unreadable: []
+notes: >
+  The homepage and the docs Install section show "go get -u gorm.io/gorm", recorded as installMethod. The community page lists a Gitter chat, recorded as forum. runtimeMin is the go.mod go line at the latest tag. GaussDB and TiDB are named in the same sentence as the officially supported databases; no databases value covers them, so they stay in notes. The GORM Gen code generator, linked from the README and the docs' CLI menu, is a separate project surface and is not recorded here. The LICENSE copyright line and the homepage copyright both name Jinzhu; the maintainer is recorded as Jinzhu, and the GitHub organization is go-gorm. The x link is the twitter.com account in the homepage footer and the Twitter Follow badge; it is the maintainer Jinzhu's own account. The Generics API and the Database Resolver and Prometheus plugins are documented features with no field of their own. The README lists associations, hooks, eager loading with Preload and Joins, nested transactions and save points, batch insert, auto migrations, a SQL builder, and composite primary keys. The connecting page shows each driver as a separate Go module, for example gorm.io/driver/mysql, passed to gorm.Open.

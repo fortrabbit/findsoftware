@@ -1,0 +1,110 @@
+id: hermes-go
+name: Hermes
+status: accepted
+checkedAt: 2026-11-09
+description: Go package that generates clean, responsive HTML e-mails and plain text versions for transactional mail.
+facts:
+  - field: repository
+    value: https://github.com/matcornic/hermes
+    url: https://api.github.com/repos/matcornic/hermes
+    checkedAt: 2026-11-09
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://github.com/matcornic/hermes/releases/tag/v1.0.0
+    checkedAt: 2026-11-09
+    via: api
+  - field: maintainer
+    value: Mathieu Cornic
+    url: https://github.com/matcornic/hermes/blob/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright 2025 Hermes - Mathieu Cornic"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/matcornic/hermes/blob/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright 2025 Hermes - Mathieu Cornic"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/matcornic
+    checkedAt: 2026-11-09
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/matcornic/hermes
+    checkedAt: 2026-11-09
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://raw.githubusercontent.com/matcornic/hermes/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Hermes is the Go port of the great mailgen engine for Node.js."
+  - field: runtimeMin
+    value: "1.24"
+    url: https://raw.githubusercontent.com/matcornic/hermes/v1.3.0/go.mod
+    checkedAt: 2026-11-09
+    via: page
+    quote: "go 1.24.2"
+  - field: categories
+    value: [email-templating]
+    url: https://raw.githubusercontent.com/matcornic/hermes/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "It's a package that generates clean, responsive HTML e-mails for sending transactional e-mails"
+  - field: installMethod
+    value: go get
+    url: https://raw.githubusercontent.com/matcornic/hermes/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "go get github.com/matcornic/hermes"
+  - field: i18n
+    value: right-to-left text direction
+    url: https://github.com/matcornic/hermes/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "To change the default text direction (left-to-right), simply override it as follows:"
+  - field: i18n
+    value: custom greeting and signature strings
+    url: https://github.com/matcornic/hermes/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "To customize the e-mail's greeting (\"Hi\") or signature (\"Yours truly\"), supply custom strings within the e-mail's `Body`"
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/matcornic/hermes/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/matcornic/hermes/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: currentMajor
+    value: 2
+    url: https://github.com/matcornic/hermes/releases/tag/v2.1.0
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2025-04-04
+    url: https://github.com/matcornic/hermes/releases/tag/v1.3.0
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 3043
+    url: https://api.github.com/repos/matcornic/hermes
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 12
+    url: https://api.github.com/repos/matcornic/hermes/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+notFound: [homepage, hqCountry, endoflifeId, adminUi, headlessApi, templating, databases, contentStore, multisite, livePreview, userRoles, sso, importsFrom, forum, discord, bluesky, x, mastodon, newsletter, pluginDirectory, pluginCount, usageShare, paidEdition, pricingPage, forkOf, successorOf, basedOn, runsAs, renderingModes, parent, alternativeTo, npmName, npmWeeklyDownloads, packagistDownloads, pypiDownloads, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  Status accepted: the repository is public, not archived, and its README documents go get (criterion 3); the last release v1.3.0 is dated 2025-04-04 and the last push 2025-04-04. The repository has no homepage of its own (the GitHub homepage field is empty), so the record is repo-only. The README calls Hermes "the Go port of the great mailgen engine for Node.js" and links mailgen; "port" is not stated as fork or based on, so no forkOf or basedOn is recorded, and mailgen is not a record. currentMajor is 2 by the rule (highest stable tag v2.1.0, 2020-01-29), but the README says the v2 tags use the import path github.com/matcornic/hermes/v2 and that v1.3.0 moved the module back to github.com/matcornic/hermes, with v1.3.0 the install line; v2.1.0 is a GitHub release object, so 2 stands, and the README's install line for v1.3.0 is noted here. runtimeMin is from the go line of go.mod at the v1.3.0 tag. The LICENSE copyright line names Hermes - Mathieu Cornic; the README license section says Apache 2.0. The README bundles two themes, default and flat, both adapted from Postmark templates, and says theme templates are embedded in the application binary; a theme implements the hermes.Theme interface to use external templates. CSS inlining since v2.1.0 uses Premailer, and Markdown content is rendered with Blackfriday; both are named in the README and not recorded as fields. The README's RTL support section and its language customizations section (custom greeting and signature strings) are the i18n entries. The Gitter link appears only inside an example sentence, not as the project's own chat, and is not recorded. No registry is named for Go modules, so no download figure is recorded. The README says CSS inlining is automatic since v2.1.0 through Premailer and can be turned off with DisableCSSInlining; a v2 release line exists and the README asks users to move back to the v1 import path.

@@ -1,0 +1,101 @@
+id: goth
+name: Goth
+status: accepted
+checkedAt: 2026-11-09
+description: "Go package for writing authentication providers, so Go web applications can sign users in through OAuth and other protocols."
+facts:
+  - field: repository
+    value: https://github.com/markbates/goth
+    url: https://api.github.com/repos/markbates/goth
+    checkedAt: 2026-11-09
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/markbates/goth
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [auth]
+    url: https://raw.githubusercontent.com/markbates/goth/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "write authentication packages for Go web applications"
+  - field: runtime
+    value: [go]
+    url: https://raw.githubusercontent.com/markbates/goth/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "write authentication packages for Go web applications"
+  - field: runtimeMin
+    value: "1.23"
+    url: https://raw.githubusercontent.com/markbates/goth/v1.82.0/go.mod
+    checkedAt: 2026-11-09
+    via: page
+    quote: "go 1.23.0"
+  - field: installMethod
+    value: go get
+    url: https://raw.githubusercontent.com/markbates/goth/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "go get github.com/markbates/goth"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/markbates/goth
+    checkedAt: 2026-11-09
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/markbates/goth/master/LICENSE.txt
+    checkedAt: 2026-11-09
+    via: page
+    quote: "MIT License"
+  - field: maintainer
+    value: Mark Bates
+    url: https://raw.githubusercontent.com/markbates/goth/master/LICENSE.txt
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) 2014 Mark Bates"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/markbates
+    checkedAt: 2026-11-09
+    via: api
+  - field: firstRelease
+    value: "2017"
+    url: https://api.github.com/repos/markbates/goth/commits/488a04ae13f57b10e55e1a32c8cd62f9cc66c671
+    checkedAt: 2026-11-09
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/markbates/goth/releases/tag/v1.82.0
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2025-08-18
+    url: https://api.github.com/repos/markbates/goth/releases/tags/v1.82.0
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 6625
+    url: https://api.github.com/repos/markbates/goth
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 156
+    url: https://api.github.com/repos/markbates/goth/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentPackages
+    value: 271
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fmarkbates%2Fgoth
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentRepos
+    value: 493
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fmarkbates%2Fgoth
+    checkedAt: 2026-11-09
+    via: api
+notFound: [homepage, docs, hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, alternativeTo, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, packagistName, endoflifeId]
+unreadable: []
+notes: >
+  Repository only: the CSV homepage and the repository's homepage field name a blog post titled "goth needs a new maintainer", which is no project site, so homepage is left out. The repository is not archived, has commits to 2026-02-11 and a release in 2025; a call for a new maintainer is no end signal. The README's Installation section shows go get github.com/markbates/goth, recorded as installMethod. The README says the package is inspired by omniauth; that is not a basedOn statement and is not recorded. The README lists supported providers by name; no field takes that list. Default sessions use the gorilla/sessions cookie store per the README's Security Notes, whose default options list Secure as false and whose example overrides gothic.Store at startup, with the comment that Secure is set to true when serving over https. The LICENSE copyright line names Mark Bates; the README names no maintainer. firstRelease is the oldest tag v1.38.0 (commit dated 2017-03-01); the oldest GitHub release is v1.44.0 (2018-01-03). Go modules have no download figure; the dependent counts are ecosyste.ms for the proxy.golang.org module github.com/markbates/goth. Stars and contributors belong to the repository.

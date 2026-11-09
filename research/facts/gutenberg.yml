@@ -1,0 +1,118 @@
+id: gutenberg
+name: Gutenberg block editor
+status: accepted
+checkedAt: 2026-11-09
+description: WordPress block editor project whose @wordpress/block-editor npm package lets other applications create standalone block editors.
+facts:
+  - field: homepage
+    value: https://wordpress.org/gutenberg/
+    url: https://raw.githubusercontent.com/WordPress/gutenberg/trunk/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "check out the block editor live demo"
+  - field: repository
+    value: https://github.com/WordPress/gutenberg
+    url: https://api.github.com/repos/WordPress/gutenberg
+    checkedAt: 2026-11-09
+    via: api
+  - field: docs
+    value: https://developer.wordpress.org/block-editor/
+    url: https://developer.wordpress.org/block-editor/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Welcome to the Block Editor Handbook"
+  - field: firstRelease
+    value: 2019
+    url: https://registry.npmjs.org/@wordpress/block-editor
+    checkedAt: 2026-11-09
+    via: api
+  - field: maintainer
+    value: The WordPress Contributors
+    url: https://registry.npmjs.org/@wordpress/block-editor/latest
+    checkedAt: 2026-11-09
+    via: api
+    quote: "The WordPress Contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/WordPress
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [block-editor]
+    url: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "This module allows you to create and use standalone block editors"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/WordPress/gutenberg
+    checkedAt: 2026-11-09
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "npm install @wordpress/block-editor --save"
+  - field: license
+    value: GPL-2.0-or-later
+    url: https://registry.npmjs.org/@wordpress/block-editor/latest
+    checkedAt: 2026-11-09
+    via: api
+    quote: "GPL-2.0-or-later"
+  - field: license
+    value: MPL-2.0
+    url: https://raw.githubusercontent.com/WordPress/gutenberg/trunk/LICENSE.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "and the Mozilla Public License, Version 2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/WordPress/gutenberg/trunk/LICENSE.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "the GNU General Public License as published by the Free Software Foundation"
+  - field: currentMajor
+    value: 20
+    url: https://api.github.com/repos/WordPress/gutenberg/git/refs/tags/@wordpress/block-editor@20.0.0
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-04
+    url: https://registry.npmjs.org/@wordpress/block-editor/latest
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 11787
+    url: https://api.github.com/repos/WordPress/gutenberg
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 438
+    url: https://api.github.com/repos/WordPress/gutenberg/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+  - field: npmName
+    value: "@wordpress/block-editor"
+    url: https://registry.npmjs.org/@wordpress/block-editor/latest
+    checkedAt: 2026-11-09
+    via: api
+  - field: npmWeeklyDownloads
+    value: "402967 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@wordpress/block-editor
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentPackages
+    value: 85
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40wordpress%2Fblock-editor
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentRepos
+    value: 1201
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40wordpress%2Fblock-editor
+    checkedAt: 2026-11-09
+    via: api
+notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, runtime, runtimeMin, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId]
+unreadable: []
+notes: >
+  The record name follows the wave 60 ruling, "Gutenberg block editor". Boundary ruling for wave 60: the Block Editor Handbook's package reference for @wordpress/block-editor says "This module allows you to create and use standalone block editors" and the packages page has a "Using the packages via npm" section, so the record is in with the npm package as its unit. The handbook's React Native mobile editor guide is not used: it says that native library is unmaintained and known to be broken on React 19. The record is the npm package, not the Gutenberg WordPress plugin: the plugin's GitHub releases (v24.x) are another product and are not used; the package's highest stable tag is @wordpress/block-editor@20.0.0, and that tag's npm publish date is 2026-11-04. The first release is the first npm upload of the package, 2019-03-06 (ecosyste.ms agrees); the repository's oldest release (2017) belongs to the Gutenberg plugin. The package is distributed under GPL-2.0-or-later, per its npm metadata. The repository LICENSE.md says contributions are dual-licensed under GPL and MPL 2.0, which is recorded as its own license entry; the project license stays GPL. The GitHub license detection reads NOASSERTION. The package says it works in an ES2015+ environment and names a babel preset polyfill for older environments; no runtime or runsAs is recorded because the page names none. The WordPress relationship is the editor WordPress uses, and the README describes the Gutenberg plugin as a way to try the editor on a WordPress site; no basedOn wordpress is recorded. The README's "block editor live demo" link is the homepage; the WordPress.org page it links is the plugin listing. Stars and contributors are for the whole monorepo, and the npm package is one of its packages. The npm weekly figure is the sum of daily downloads from 2026-11-01 to 2026-11-07. The npm package's engines field requires Node.js 22.13.0 or higher; that is a package tooling requirement, so it is not recorded as a runtime.

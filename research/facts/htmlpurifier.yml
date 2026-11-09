@@ -1,0 +1,117 @@
+id: htmlpurifier
+name: HTML Purifier
+status: accepted
+checkedAt: 2026-11-09
+description: HTML filter library written in PHP that removes XSS attacks and makes the output standards-compliant HTML.
+facts:
+  - field: repository
+    value: https://github.com/ezyang/htmlpurifier
+    url: https://api.github.com/repos/ezyang/htmlpurifier
+    checkedAt: 2026-11-09
+    via: api
+  - field: docs
+    value: https://github.com/ezyang/htmlpurifier/tree/master/docs
+    url: https://github.com/ezyang/htmlpurifier/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "See docs/ for developer-oriented documentation, code examples and an in-depth installation guide"
+  - field: maintainer
+    value: Edward Z. Yang
+    url: https://github.com/ezyang/htmlpurifier/blob/v4.19.1/composer.json
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Edward Z. Yang"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/ezyang
+    checkedAt: 2026-11-09
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/ezyang/htmlpurifier
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [html-sanitizer]
+    url: https://github.com/ezyang/htmlpurifier/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "HTML Purifier is an HTML filtering solution"
+  - field: runtime
+    value: php
+    url: https://github.com/ezyang/htmlpurifier/blob/v4.19.1/composer.json
+    checkedAt: 2026-11-09
+    via: page
+    quote: "~5.6.0 || ~7.0.0 || ~7.1.0"
+  - field: runtimeMin
+    value: "5.6"
+    url: https://github.com/ezyang/htmlpurifier/blob/v4.19.1/composer.json
+    checkedAt: 2026-11-09
+    via: page
+    quote: "~5.6.0 || ~7.0.0 || ~7.1.0"
+  - field: installMethod
+    value: composer
+    url: https://github.com/ezyang/htmlpurifier/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Package available on Composer"
+  - field: packagistName
+    value: ezyang/htmlpurifier
+    url: https://repo.packagist.org/p2/ezyang/htmlpurifier.json
+    checkedAt: 2026-11-09
+    via: api
+  - field: packagistDownloads
+    value: "398363604 (total)"
+    url: https://packagist.org/packages/ezyang/htmlpurifier.json
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentPackages
+    value: 417
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/ezyang%2Fhtmlpurifier
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentRepos
+    value: 36567
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/ezyang%2Fhtmlpurifier
+    checkedAt: 2026-11-09
+    via: api
+  - field: firstRelease
+    value: 2006
+    url: https://api.github.com/repos/ezyang/htmlpurifier/git/commits/725a8cb4a4a9d0788c54c60097c6d097d6cb29af
+    checkedAt: 2026-11-09
+    via: api
+  - field: license
+    value: LGPL-2.1
+    url: https://api.github.com/repos/ezyang/htmlpurifier
+    checkedAt: 2026-11-09
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/ezyang/htmlpurifier/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "GNU LESSER GENERAL PUBLIC LICENSE"
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/ezyang/htmlpurifier/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-15
+    url: https://api.github.com/repos/ezyang/htmlpurifier/releases
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 3349
+    url: https://api.github.com/repos/ezyang/htmlpurifier
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 95
+    url: https://api.github.com/repos/ezyang/htmlpurifier/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+notFound: [homepage, basedOn, runsAs, renderingModes, parent, forkOf, successorOf, alternativeTo, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, hqCountry, npmName, npmWeeklyDownloads, pypiDownloads, selfHostOption]
+unreadable: [https://htmlpurifier.org/]
+notes: >
+  The project's site answers only over plain http: https://htmlpurifier.org/ fails the TLS handshake (certificate name mismatch), and http://htmlpurifier.org/ serves the site, so no homepage is recorded and the site's docs, comparison, demo, news and forum pages are not linked. The site's newest news item is the 4.14.0 release (2021), while the GitHub releases list 4.19.1 on 2026-09-15; the site is stale and not used for release data. The composer.json on master and at v4.19.1 says "license": "LGPL-2.1-or-later", and the LICENSE file is the GNU LGPL version 2.1 text; GitHub reports LGPL-2.1. These are one license in two wordings, so one entry is recorded and the "or later" wording is kept here. The maintainer is the author named in composer.json; the repository has no company or foundation statement. The composer PHP constraint lists 5.6 as the lowest series, and the INSTALL file says the library is "actively tested from PHP 5.3 and up"; runtimeMin follows the manifest. The Packagist total is 398,363,604 and its monthly figure at the time was 13,126,271; the total is recorded. The CSV figure of 388.5M total is stale. Packagist reports no abandoned flag on the package. The http homepage says HTML Purifier "decomposes the whole document into tokens and removing non-whitelisted elements, checking the well-formedness and nesting of tags, and validating all attributes"; that statement is the basis of the description. The same page says HTML Purifier "is not perfect; it can interact poorly with existing JavaScript on websites". The INSTALL file lists optional extensions iconv, bcmath and tidy and optional libraries CSSTidy and Net_IDNA2. The mailing list and the forum sit on the same http site or on a Google Group, so neither is recorded.

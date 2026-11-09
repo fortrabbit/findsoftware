@@ -1,0 +1,117 @@
+id: gqlgen
+name: gqlgen
+status: accepted
+checkedAt: 2026-11-09
+description: "Go library for building GraphQL servers from a GraphQL schema, with Go code generated from it."
+facts:
+  - field: homepage
+    value: https://gqlgen.com
+    url: https://gqlgen.com/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "is a Go library for building GraphQL servers without any fuss."
+  - field: repository
+    value: https://github.com/99designs/gqlgen
+    url: https://api.github.com/repos/99designs/gqlgen
+    checkedAt: 2026-11-09
+    via: api
+  - field: docs
+    value: https://gqlgen.com/getting-started/
+    url: https://raw.githubusercontent.com/99designs/gqlgen/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Getting started tutorial"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/99designs/gqlgen
+    checkedAt: 2026-11-09
+    via: api
+  - field: categories
+    value: [graphql-server]
+    url: https://raw.githubusercontent.com/99designs/gqlgen/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "gqlgen is a Go library for building GraphQL servers without any fuss."
+  - field: runtime
+    value: [go]
+    url: https://raw.githubusercontent.com/99designs/gqlgen/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "gqlgen is a Go library for building GraphQL servers without any fuss."
+  - field: runtimeMin
+    value: "1.26"
+    url: https://raw.githubusercontent.com/99designs/gqlgen/v0.17.98/go.mod
+    checkedAt: 2026-11-09
+    via: page
+    quote: "go 1.26.0"
+  - field: installMethod
+    value: go get -tool (Go tool dependency)
+    url: https://gqlgen.com/getting-started/
+    checkedAt: 2026-11-09
+    via: page
+    quote: "add github.com/99designs/gqlgen to your project, as a tool dependency"
+  - field: alternativeTo
+    value: [graphql-go]
+    url: https://raw.githubusercontent.com/99designs/gqlgen/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "with other Go graphql"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/99designs/gqlgen
+    checkedAt: 2026-11-09
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/99designs/gqlgen
+    checkedAt: 2026-11-09
+    via: api
+  - field: maintainer
+    value: 99designs
+    url: https://api.github.com/users/99designs
+    checkedAt: 2026-11-09
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/99designs
+    checkedAt: 2026-11-09
+    via: api
+  - field: firstRelease
+    value: "2018"
+    url: https://api.github.com/repos/99designs/gqlgen/releases/tags/0.2.0
+    checkedAt: 2026-11-09
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/99designs/gqlgen/releases/tags/v0.17.98
+    checkedAt: 2026-11-09
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-22
+    url: https://api.github.com/repos/99designs/gqlgen/releases/tags/v0.17.98
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 10768
+    url: https://api.github.com/repos/99designs/gqlgen
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 420
+    url: https://api.github.com/repos/99designs/gqlgen/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentPackages
+    value: 2651
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2F99designs%2Fgqlgen
+    checkedAt: 2026-11-09
+    via: api
+  - field: dependentRepos
+    value: 3167
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2F99designs%2Fgqlgen
+    checkedAt: 2026-11-09
+    via: api
+notFound: [hqCountry, maintainerType, parent, basedOn, forkOf, successorOf, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, npmName, packagistName, endoflifeId]
+unreadable: []
+notes: >
+  The LICENSE copyright line reads "Copyright (c) 2025 gqlgen authors", which names neither a person nor a company, so the maintainer is recorded as the 99designs organization that owns the repository (profile name 99designs, location Melbourne, Australia); no page of the project gives a legal name or a headquarters country, so hqCountry is left out. The feature-comparison page at gqlgen.com compares gqlgen with gophers (graph-gophers), graphql-go and thunder (samsarahq); the README invites a comparison with other Go GraphQL implementations, and the page links graphql-go/graphql, which is the graphql-go record, so alternativeTo is graphql-go; graph-gophers/graphql-go has no record, and the thunder record is a different project. The getting-started tutorial says init creates the project layout and the config file, and that the generate command compares the schema file with the models and binds to them where it can. The README says gqlgen is based on a schema-first approach and prioritizes type safety; the FAQ says field resolvers run concurrently in separate goroutines, with worker_limit on the configuration page. These are described in the prose and not recorded as fields. The current release line is 0.17 (v0.17.98, released 2026-10-22), the major is 0 because the version is pre-1.0, and the minor line stays in these notes. The README's Quick start names the tool dependency route; the getting-started page gives go get -tool github.com/99designs/gqlgen in a code block, and the sentence quoted under installMethod names the route. The module has no npm or other download figure, so none is recorded. firstRelease is 0.2.0 (2018-06-21), the oldest release and tag of the repository (created 2018-02-11). The dependent counts are ecosyste.ms for the proxy.golang.org module github.com/99designs/gqlgen. The README and homepage link no forum, chat or social account, so none is recorded. Stars and contributors belong to the repository.

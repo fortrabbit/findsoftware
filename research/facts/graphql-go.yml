@@ -1,0 +1,104 @@
+id: graphql-go
+name: graphql-go
+status: accepted
+checkedAt: 2026-11-09
+description: Go implementation of GraphQL that follows the graphql-js reference implementation.
+facts:
+  - field: repository
+    value: https://github.com/graphql-go/graphql
+    url: https://api.github.com/repos/graphql-go/graphql
+    checkedAt: 2026-11-09
+    via: api
+  - field: docs
+    value: https://pkg.go.dev/github.com/graphql-go/graphql
+    url: https://github.com/graphql-go/graphql/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "godoc: https://pkg.go.dev/github.com/graphql-go/graphql"
+  - field: maintainer
+    value: Chris Ramón
+    url: https://github.com/graphql-go/graphql/blob/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) 2015 Chris Ramón"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/graphql-go/graphql/blob/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "Copyright (c) 2015 Chris Ramón"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/graphql-go
+    checkedAt: 2026-11-09
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/graphql-go/graphql
+    checkedAt: 2026-11-09
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/graphql-go/graphql/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "An implementation of GraphQL in Go."
+  - field: runtimeMin
+    value: "1.13"
+    url: https://github.com/graphql-go/graphql/blob/v0.8.1/go.mod
+    checkedAt: 2026-11-09
+    via: page
+    quote: "go 1.13"
+  - field: categories
+    value: [graphql-server]
+    url: https://github.com/graphql-go/graphql/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "An implementation of GraphQL in Go."
+  - field: installMethod
+    value: go get
+    url: https://github.com/graphql-go/graphql/blob/master/README.md
+    checkedAt: 2026-11-09
+    via: page
+    quote: "go get github.com/graphql-go/graphql"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/graphql-go/graphql
+    checkedAt: 2026-11-09
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/graphql-go/graphql/blob/master/LICENSE
+    checkedAt: 2026-11-09
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: firstRelease
+    value: "2016"
+    url: https://api.github.com/repos/graphql-go/graphql/releases?per_page=100
+    checkedAt: 2026-11-09
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/graphql-go/graphql/releases/latest
+    checkedAt: 2026-11-09
+    via: api
+    quote: "v0.8.1"
+  - field: latestReleaseDate
+    value: 2023-04-10
+    url: https://api.github.com/repos/graphql-go/graphql/releases/latest
+    checkedAt: 2026-11-09
+    via: api
+  - field: githubStargazers
+    value: 10141
+    url: https://api.github.com/repos/graphql-go/graphql
+    checkedAt: 2026-11-09
+    via: api
+  - field: contributors
+    value: 91
+    url: https://api.github.com/repos/graphql-go/graphql/contributors?per_page=1
+    checkedAt: 2026-11-09
+    via: api
+notFound: [homepage, hostedOffering, pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, headlessApi, renderingModes, runsAs, contentStore, databases, adminUi, userRoles, sso, i18n, multisite, livePreview, templating, endoflifeId, lastCommitDate, latestPrereleaseDate, pluginDirectory, pluginCount, discord, forum, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, reportedInstalls, packagistName, npmName, selfHostOption, freeTier, apiLimits, regions]
+unreadable: []
+notes: >
+  No homepage: the repository's homepage field is empty and the README names only the godoc page, so the repository is the only project page. The README lists queries, mutations and subscriptions as supported, and says the library follows the graphql-js reference implementation; that is a statement about conformance, not a basedOn statement, so no basedOn is recorded. The latest stable release is v0.8.1 dated 2023-04-10, a major version of 0 (pre-1.0 line); the repository's default branch has commits to 2026-06-23 and no release since, so the record stays accepted under the four-year rule until 2027-04-10, after which a release-age check would move it to stub. The go.mod go line at the v0.8.1 tag is 1.13; it is the minimum Go toolchain the module declares, and the import reads it as a runtime minimum only if the runtime vocabulary admits Go. The README lists third-party packages (graphql-go-handler, graphql-relay-go, dataloader and others); they are separate projects and not recorded. The Go module has no download figure on pkg.go.dev or the Go proxy, so no adoption download is recorded. The README's Gitter chat and the PayPal donation links are not recorded. The LICENSE copyright line names Chris Ramón alone, so that name is the maintainer; the README credits Hafiz Ismail as the author of the sibling packages and is not used for the maintainer.
