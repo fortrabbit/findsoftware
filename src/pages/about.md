@@ -3,27 +3,27 @@ layout: ../layouts/Article.astro
 title: About
 published: 2026-11-05
 updated: 2026-11-10
-description: Why FindSoftware and who.
-lead: FindSOftware is a register of software to build websites with, by language, recorded field by field.
+description: Why FindSoftware, and by whom.
+lead: FindSoftware is a register of software to build websites with, by language, recorded field by field.
 ---
 
 FindSoftware lists tools web creators build with: content management systems, web frameworks, static site generators, headless CMSs, e-commerce, UI libraries, CSS frameworks, site search, the plugins and packages built on them. Each record holds facts read from the project's own pages, its repository and package registries. The result is a database of web creation software. This website is the UI for it.
 
 ## Motivation
 
-There is so much nice software out there, so many flavors and colors, not only the big 20. This project aims to make that more visible to discover and use. That goes for people and for coding agents, specifically the later, as their role in choosing software is getting more and more important. Software creation will change because of that. Hopefully this page can positive impact on variety.
+There is so much nice software out there, so many flavors and colors, not only the big 20. This project aims to make it easier to discover and use. That goes for people and for coding agents, especially the latter, as their role in choosing software is getting more and more important. Software creation will change because of that. Hopefully this page can have a positive impact on variety.
 
-I run [fortrabbit](https://www.fortrabbit.com), a hosting company, specialized in PHP. I have a natural interest to see what people build websites with today. No list I found showed that like this. FindSoftware is the bigger sibling of [FindHost](https://www.findhost.app), a register of hosting providers built the same way.
+I run [fortrabbit](https://www.fortrabbit.com), a hosting company specialized in PHP. I have a natural interest in seeing what people build websites with today. No list I found showed that like this. FindSoftware is the bigger sibling of [FindHost](https://www.findhost.app), a register of hosting providers built the same way.
 
-Make no doubt. This is also a cheap marketing trick. FindSoftware puts the fortrabbit as a hosting provider and a publisher. I hope it is not too biased.
+Make no mistake. This is also a cheap marketing trick. FindSoftware shows fortrabbit as a hosting provider and as the publisher. I hope it is not too biased.
 
 ## Rules
 
 - **No affiliate links.**
 - **No ranking.** Order is alphabetical.
-- **Adaption is data.** Stars and downloads are recorded as facts.
+- **Adoption is data.** Stars and downloads are recorded as facts.
 - **Absent means unknown.** A blank field was not found, not a "no".
-- **Fact have sources.** The numbered list at the bottom of each record says where it came from and when.
+- **Facts have sources.** The numbered list at the bottom of each record says where each came from and when.
 - **Mechanical inclusion.** The [listing criteria](/criteria/) decide what is listed.
 
 ## Adoption figures
@@ -34,13 +34,13 @@ GitHub stars, package downloads and plugin counts are recorded because they show
 - **Downloads** include CI runs, mirrors and installs pulled in as a dependency of another package. Registries count different periods: npm per week, Packagist in total.
 - **Plugin counts** depend on what each directory lists: some include themes and abandoned entries, some do not.
 
-Each figure carries the date it was read. The usage band and momentum built from them. The usage band on the [Usage](/usage/) page puts each record in one of five bands, from its place among the records holding each of its figures, averaged and cut into fifths. It is rough: the figures cover different periods, and a record with fewer figures rests on fewer of them. No band means not measured, not unused. The band counts use, not quality.
+Each figure carries the date it was read. The usage band and momentum are built from them. The usage band on the [Usage](/usage/) page puts each record in one of five bands, from its place among the records holding each of its figures, averaged and cut into fifths. It is rough: the figures cover different periods, and a record with fewer figures rests on fewer of them. No band means not measured, not unused. The band counts use, not quality.
 
-Take those with a lot of salt grains. The data is fuzzy. Different eco systems count differently. NPM installs can not be easily compared to Packagist numbers. GitHub stars can be misleading too, some software might not be as visible on GitHub but still popular.
+Take them with a big grain of salt. The data is fuzzy. Different ecosystems count differently. npm installs can't easily be compared to Packagist numbers. GitHub stars can be misleading too: some software is popular but barely visible on GitHub.
 
 ## Momentum
 
-I found myself overwhelmed when looking at total data set of currently 2K+ software projects. The website get's a bit slow with so many records, but it also feels like a wall. The default momentum filter aims to show software that is currently popular, while keeping the old dinosaurs out.  Momentum is measured by a script from public APIs. The [full list](/all/) holds the rest as well. A record has momentum when it had a release, a pre-release or a push to its repository in the last 12 months, and one of these:
+I found myself overwhelmed when looking at the total data set of currently 2K+ software projects. The website gets a bit slow with so many records, but it also feels like a wall. The default momentum filter aims to show software that is currently popular, while keeping the old dinosaurs out. Momentum is measured by a script from public APIs. The [full list](/all/) holds the rest as well. A record has momentum when it had a release, a pre-release or a push to its repository in the last 12 months, and one of these:
 
 - **Activity:** at least 200 commits to the default branch in the last 13 weeks, and in the last 26 weeks at least twice as many as in the 26 before.
 - **Downloads:** doubled or more against the same weeks a year ago, to at least 100,000 npm downloads in 28 days or a daily average of 1,000 on Packagist.
@@ -54,9 +54,9 @@ A record page names up to four hosts from [FindHost](https://www.findhost.app): 
 
 ## Credits
 
-AI agents did most of the work, from research to code. I curated and micromanaged heavily, but barely looked at the code. 
+AI agents did most of the work, from research to code. I curated and micromanaged heavily, but barely looked at the code.
 
-Machines research the records, scripts check them against sources, I read them after, but I only have a superficial look. SoSo, please expect mistakes.
+Machines research the records, scripts check them against sources, and I read them after, but only superficially. So, please expect mistakes.
 
 Records are researched from primary sources only: the project's own site, its repository and package registries, never directories or comparison sites. A second agent checks every fact against its quote, and a script fetches each quoted page again to confirm the words are still there. The data is licensed CC BY 4.0, the code MIT.
 
