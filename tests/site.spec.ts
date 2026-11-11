@@ -395,6 +395,7 @@ test.describe('markdown copies', () => {
       ['/categories/index.md', /^# Categories/],
       ['/about.md', /^# /],
       ['/criteria.md', /^# /],
+      ['/index.md', /^# FindSoftware/],
     ] as const) {
       const answer = await page.request.get(path);
       expect(answer.status(), `${path} is served`).toBe(200);

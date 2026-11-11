@@ -100,6 +100,21 @@ ErrorDocument 404 /404.html
   RewriteCond %{REQUEST_URI} ^/(.+)/$
   RewriteCond %{DOCUMENT_ROOT}/%1.json -f
   RewriteRule ^(.+)/$ /$1.json [L]
+  RewriteCond %{HTTP_ACCEPT} !text/html
+  RewriteCond %{HTTP_ACCEPT} text/markdown
+  RewriteRule ^$ /index.md [L]
+</IfModule>
+
+# The API catalog has no extension to type it by (RFC 9727 fixes the path).
+<Files "api-catalog">
+  ForceType application/linkset+json
+</Files>
+
+# RFC 8288: the homepage names where an agent goes next, before it parses any HTML.
+<IfModule mod_headers.c>
+  <If "%{REQUEST_URI} == '/' || %{REQUEST_URI} == '/index.html'">
+    Header always set Link "</.well-known/api-catalog>; rel=\"api-catalog\", </openapi.json>; rel=\"service-desc\"; type=\"application/openapi+json\", </llms.txt>; rel=\"service-doc\"; type=\"text/plain\", </index.md>; rel=\"alternate\"; type=\"text/markdown\""
+  </If>
 </IfModule>
 <IfModule mod_headers.c>
   <FilesMatch "\.(html|md|json)$">
