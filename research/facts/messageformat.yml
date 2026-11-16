@@ -1,0 +1,118 @@
+id: messageformat
+name: messageformat
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript library for Unicode MessageFormat 2 messages, with a formatter that can serve as a polyfill for Intl.MessageFormat.
+facts:
+  - field: homepage
+    value: https://messageformat.github.io/
+    url: https://messageformat.github.io/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "the new standard for localization developed by the MessageFormat Working Group"
+  - field: docs
+    value: https://messageformat.github.io/
+    url: https://github.com/messageformat/messageformat/blob/main/mf2/messageformat/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "see the documentation site"
+  - field: repository
+    value: https://github.com/messageformat/messageformat
+    url: https://github.com/messageformat/messageformat
+    checkedAt: 2026-11-16
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://github.com/messageformat/messageformat
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://registry.npmjs.org/messageformat
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: OpenJS Foundation
+    url: https://github.com/messageformat/messageformat/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright OpenJS Foundation and contributors"
+  - field: maintainerType
+    value: foundation
+    url: https://github.com/messageformat/messageformat/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright OpenJS Foundation and contributors"
+  - field: categories
+    value: [i18n]
+    url: https://github.com/messageformat/messageformat/blob/main/mf2/messageformat/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "the new standard for localization"
+  - field: language
+    value: TypeScript
+    url: https://github.com/messageformat/messageformat
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: [npm]
+    url: https://github.com/messageformat/messageformat/blob/main/mf2/messageformat/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install --save messageformat"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/messageformat/messageformat/blob/main/mf2/messageformat/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Apache License Version 2.0, January 2004"
+  - field: license
+    value: MIT
+    url: https://github.com/messageformat/messageformat/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: currentMajor
+    value: 4
+    url: https://github.com/messageformat/messageformat/releases/tag/messageformat%404.1.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-12
+    url: https://github.com/messageformat/messageformat/releases/tag/messageformat%404.1.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1773
+    url: https://github.com/messageformat/messageformat
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 63
+    url: https://api.github.com/repos/messageformat/messageformat/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: messageformat
+    url: https://registry.npmjs.org/messageformat/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "619862 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/messageformat
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 189
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/messageformat
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 21030
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/messageformat
+    checkedAt: 2026-11-16
+    via: api
+notFound: [runtime, runtimeMin, runsAs, renderingModes, basedOn, forkOf, successorOf, parent, alternativeTo, importsFrom, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, pricingPage, paidEdition, hqCountry, endoflifeId, usageShare, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: []
+notes: >
+  A monorepo (messageformat/messageformat) holding the MF2 package messageformat (mf2/messageformat), the MF1 packages @messageformat/core and others, and the Fluent and resource packages. The record is the MF2 package, the one the root README lists first and the MF2 README installs; stars, contributors and the GitHub release history belong to the whole monorepo. The root LICENSE is MIT with the copyright line "Copyright OpenJS Foundation and contributors"; mf2/messageformat/LICENSE is Apache-2.0 for the package. Both statements are recorded as license entries. The maintainer follows the root LICENSE line, which names the OpenJS Foundation; the README says the project is "an OpenJS Foundation project", so a reviewer may prefer the project's own organization as maintainer. The npm weekly figure is the sum of downloads for 2026-11-01 to 2026-11-07. The earlier MF1 package @messageformat/core is a separate npm package with its own figure, not recorded here. The README says the v4 API differs from the earlier majors, which were built on ICU MessageFormat, and points to @messageformat/core for them. firstRelease is the first npm upload of the package name, 0.1.0 on 2012-02-28, published by Alex Sexton from the earlier repository SlexAxton/messageformat.js, which the project later moved to its own organization. The MF2 README installs with "npm install --save messageformat" under no heading; the command is recorded as the npm route. The homepage and the README name Intl.MessageFormat and ICU MessageFormat, and the README links to the MF1 documentation at messageformat.github.io/mf1; that is no basedOn statement. The package manifest sets engines to Node ^20.19, ^22.12 or >=24; the README names no Node.js and the library is also used in browsers, so no runtime is recorded.

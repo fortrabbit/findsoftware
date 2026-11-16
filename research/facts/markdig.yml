@@ -1,0 +1,132 @@
+id: markdig
+name: Markdig
+status: accepted
+checkedAt: 2026-11-16
+description: CommonMark-compliant Markdown processor for .NET that converts Markdown to HTML and exposes its syntax tree.
+facts:
+  - field: homepage
+    value: https://xoofx.github.io/markdig/
+    url: https://github.com/xoofx/markdig/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Full documentation is available at https://xoofx.github.io/markdig"
+  - field: repository
+    value: https://github.com/xoofx/markdig
+    url: https://github.com/xoofx/markdig
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://xoofx.github.io/markdig/
+    url: https://github.com/xoofx/markdig/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Full documentation is available at https://xoofx.github.io/markdig"
+  - field: maintainer
+    value: Alexandre Mutel
+    url: https://github.com/xoofx/markdig/blob/main/license.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2016-2026, Alexandre Mutel"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/xoofx/markdig/blob/main/license.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2016-2026, Alexandre Mutel"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/xoofx
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [markdown-parser]
+    url: https://github.com/xoofx/markdig/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "extensible Markdown processor for .NET"
+  - field: language
+    value: C#
+    url: https://github.com/xoofx/markdig
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [dotnet]
+    url: https://github.com/xoofx/markdig/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "extensible Markdown processor for .NET"
+  - field: runtimeMin
+    value: "2.0"
+    url: https://xoofx.github.io/markdig/docs/getting-started
+    checkedAt: 2026-11-16
+    via: page
+    quote: "It works with .NET Framework 4.6.2+, .NET Core 2.0+, and .NET 5+."
+  - field: alternativeTo
+    value: [cmark]
+    url: https://xoofx.github.io/markdig/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "20% faster than the reference C implementation (cmark)"
+  - field: installMethod
+    value: [dotnet add package]
+    url: https://xoofx.github.io/markdig/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "dotnet add package Markdig"
+  - field: license
+    value: BSD-2-Clause
+    url: https://github.com/xoofx/markdig/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "This software is released under the BSD-Clause 2 license"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/xoofx/markdig
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/xoofx/markdig/releases/tag/1.6.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-04
+    url: https://github.com/xoofx/markdig/releases/tag/1.6.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://api.github.com/repos/xoofx/markdig/commits/687584284e22240dd22ca184f674289fc5c938e6
+    checkedAt: 2026-11-16
+    via: api
+  - field: nugetName
+    value: Markdig
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:Markdig
+    checkedAt: 2026-11-16
+    via: api
+  - field: nugetDownloads
+    value: 90333749 total
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:Markdig
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 5359
+    url: https://github.com/xoofx/markdig
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 105
+    url: https://api.github.com/repos/xoofx/markdig/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 220
+    url: https://packages.ecosyste.ms/api/v1/registries/nuget.org/packages/Markdig
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, pricingPage, forum, discord, x, bluesky, mastodon, newsletter, subreddit, sso, adminUi, databases, contentStore, headlessApi, templating, i18n, multisite, livePreview, userRoles, renderingModes, runsAs, paidEdition, basedOn, forkOf, successorOf, pluginDirectory, usageShare, reportedInstalls, endoflifeId, dependentRepos]
+unreadable: []
+notes: >
+  The GitHub API reports BSD-2-Clause and the README calls the license BSD-Clause 2; the license file carries the same BSD text under the 2016-2026 copyright line, so one license entry. The homepage in the GitHub repository field is http://xoofx.github.io/markdig/; the https address answers 200 and is recorded. Repository has no monorepo split; stars and contributors belong to the single package. The README build section requires .NET 10.0 to build Markdig: a build requirement, so no runtimeMin. The getting-started page lists the targets net462, netstandard2.0, netstandard2.1, net8.0 and net10.0 (the same groups as the 1.6.0 nuspec) and says it works with .NET Core 2.0+ and .NET 5+, the source of runtimeMin; the .NET Framework 4.6.2 minimum stays here. The README line naming NETStandard 2.0 and 2.1 and NETCoreApp 2.1 and 3.1 dates from version 0.20.0. The homepage benchmark sentence compares Markdig with cmark, the reference C implementation, recorded as alternativeTo. The NuGet totalDownloads figure counts all versions of the package. ecosyste.ms reports 0 dependent repositories for the NuGet package, so no dependentRepos figure is recorded. The README lists third-party packages (Avalonia and WPF renderers, syntax highlighters) that are not the project's own; they are not plugins of the project. The homepage playground calls a remote service run by the project; it is not a hosted offering of the software and no hosted fact is recorded. The first release year comes from the oldest tag, 0.1.0, whose commit dates to 2016; the GitHub releases list starts at 0.28.0 (2022). Markdig.Signed is a second NuGet package with signed assemblies of the same code.
+  README usage: the getting-started page also names Install-Package Markdig in the Package Manager Console, the same NuGet route. Markdown.ToHtml converts with the plain CommonMark parser by default, and new MarkdownPipelineBuilder().UseAdvancedExtensions() enables the advanced set; the README lists more than 20 built-in extensions, including pipe and grid tables, footnotes, task lists, math, alert blocks and diagrams from fenced code for mermaid and nomnoml. The README also describes an abstract syntax tree with source locations and round-trip parsing that keeps whitespace. The homepage playground runs its examples on a remote service the project provides.
+  The getting-started page also shows Markdown.ToPlainText for plain text and Markdown.Convert with a custom renderer for other formats such as LaTeX or XAML. The homepage says the syntax tree powers syntax highlighters, editors and document analysis tools.

@@ -1,0 +1,131 @@
+id: mockito
+name: Mockito
+status: accepted
+checkedAt: 2026-11-16
+description: Java mocking framework that creates test doubles for unit tests, with an API for stubbing calls and verifying interactions.
+facts:
+  - field: homepage
+    value: https://mockito.org
+    url: https://mockito.org
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Tasty mocking framework for unit tests in Java"
+  - field: repository
+    value: https://github.com/mockito/mockito
+    url: https://api.github.com/repos/mockito/mockito
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://site.mockito.org
+    url: https://github.com/mockito/mockito/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "All you want to know about Mockito is hosted at The Mockito Site"
+  - field: firstRelease
+    value: 2008
+    url: https://search.maven.org/solrsearch/select?q=g:org.mockito+AND+a:mockito-core+AND+v:1.3&core=gav&rows=5&wt=json
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Mockito contributors
+    url: https://raw.githubusercontent.com/mockito/mockito/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2007 Mockito contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/mockito
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/mockito/mockito
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [testing]
+    url: https://github.com/mockito/mockito/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Most popular mocking framework for Java"
+  - field: runtime
+    value: jvm
+    url: https://github.com/mockito/mockito/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Most popular mocking framework for Java"
+  - field: runtimeMin
+    value: "11"
+    url: https://github.com/mockito/mockito/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "switches the default mockmaker to mockito-inline, and now requires Java 11."
+  - field: installMethod
+    value: maven
+    url: https://mockito.org
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mockito downloads and instructions for setting up Maven, Gradle and other build systems are available from the"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/mockito/mockito/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/mockito/mockito
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 5
+    url: https://github.com/mockito/mockito/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Current version is 5.x"
+  - field: latestReleaseDate
+    value: 2026-09-23
+    url: https://api.github.com/repos/mockito/mockito/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 15448
+    url: https://api.github.com/repos/mockito/mockito
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 314
+    url: https://api.github.com/repos/mockito/mockito/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: forum
+    value: https://groups.google.com/group/mockito
+    url: https://github.com/mockito/mockito/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Go to the [mockito mailing-list](https://groups.google.com/group/mockito) (moderated)"
+  - field: newsletter
+    value: https://groups.google.com/group/mockito
+    url: https://site.mockito.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Updates are announced via our mailing list"
+  - field: mavenCoordinates
+    value: org.mockito:mockito-core
+    url: https://repo1.maven.org/maven2/org/mockito/mockito-core/maven-metadata.xml
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 25205
+    url: https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/org.mockito:mockito-core
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 145258
+    url: https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/org.mockito:mockito-core
+    checkedAt: 2026-11-16
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, hqCountry, wikidata, endoflifeId, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, pricingPage, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, usageShare, reportedInstalls, npmName, packagistName, httpArchiveSites, paidEdition, maintainerType, hostedOffering]
+unreadable: []
+notes: >
+  Status accepted. Criterion 1: a mocking library that test code of Java applications depends on, with no application behind it. Criterion 2: published to Maven Central as org.mockito:mockito-core, the install route the homepage names; the README's Shipkit release process uses the same route. Criterion 3: the homepage points to the Central Repository for Maven and Gradle instructions. Criterion 4: the repository is not archived, the default branch main was pushed 2026-11-05, and the latest stable GitHub release is v5.24.0 (2026-09-23). The current major is 5 per the README; the minor line stays in notes. The README says Mockito 5 "requires Java 11", and the build at v5.24.0 sets the Java release to 11 in buildSrc/src/main/kotlin/mockito.java-conventions.gradle.kts, so the runtimeMin matches both. The homepage is the project's own site (mockito.org answers over https); site.mockito.org is named by the README as "The Mockito Site" and holds the documentation. The firstRelease year is the oldest Maven Central upload, version 1.3 on 2008-04-29, which is older than the GitHub tags (the oldest tag v1.0 is 2012-01-29). The LICENSE copyright line reads "Copyright (c) 2007 Mockito contributors", so maintainer is recorded in that wording and the owner of the GitHub organization is mockito. The Tidelift subscription the README names is paid support, not an edition, so no paidEdition is recorded. The project's moderated Google Group mailing list is recorded as forum (the README names it for help) and as newsletter (the homepage says updates are announced there); the Stack Overflow tag the README names is a general site and is not recorded. The project wiki page Mockito vs EasyMock says Mockito started off as an EasyMock fork and shares no code with it; EasyMock has no record, so no forkOf or alternativeTo is recorded. The Twitter links on the homepage belong to individual maintainers, not the project, so no x fact is recorded. The Maven Central download counts are not published, so no download figure is recorded. Ecosystem counts come from ecosyste.ms for the repo1.maven.org registry.

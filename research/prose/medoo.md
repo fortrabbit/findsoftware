@@ -1,0 +1,2 @@
+Medoo is a PHP library that acts as a middle layer between application code and an SQL database. Code creates a connection object from a configuration array and calls methods such as insert and select on it.
+Medoo works through PHP's PDO extension, so the PDO driver for the chosen database has to be installed and enabled on the server. The README says Medoo fits into Laravel, CodeIgniter, Yii, Slim and other PHP frameworks; it is not built on any of them.

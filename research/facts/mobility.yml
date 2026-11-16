@@ -1,0 +1,125 @@
+id: mobility
+name: Mobility
+status: accepted
+checkedAt: 2026-11-16
+description: Ruby gem that stores and retrieves translations as attributes on ActiveRecord and Sequel models.
+facts:
+  - field: repository
+    value: https://github.com/shioyama/mobility
+    url: https://api.github.com/repos/shioyama/mobility
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/shioyama/mobility/wiki
+    url: https://github.com/shioyama/mobility/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "[wiki]: https://github.com/shioyama/mobility/wiki"
+  - field: maintainer
+    value: Chris Salzberg
+    url: https://github.com/shioyama/mobility/blob/master/LICENSE.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2016 Chris Salzberg"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/shioyama
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://rubygems.org/api/v1/versions/mobility.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/shioyama/mobility
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://github.com/shioyama/mobility/blob/v1.3.2/mobility.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: "spec.required_ruby_version = '>= 2.5'"
+  - field: runtimeMin
+    value: Ruby 2.5
+    url: https://github.com/shioyama/mobility/blob/v1.3.2/mobility.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: "spec.required_ruby_version = '>= 2.5'"
+  - field: categories
+    value: [i18n]
+    url: https://github.com/shioyama/mobility/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mobility is a gem for storing and retrieving translations as attributes on a"
+  - field: databases
+    value: [postgres]
+    url: https://github.com/shioyama/mobility/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "PostgreSQL as your database."
+  - field: installMethod
+    value: gem
+    url: https://github.com/shioyama/mobility/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "gem 'mobility'"
+  - field: importsFrom
+    value: [globalize-rails]
+    url: https://github.com/shioyama/mobility/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "If you're coming from Globalize, be sure to also read the"
+  - field: alternativeTo
+    value: [globalize-rails]
+    url: https://github.com/shioyama/mobility/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "If you're coming from Globalize, be sure to also read the"
+  - field: rubygemsName
+    value: mobility
+    url: https://rubygems.org/api/v1/gems/mobility.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsDownloads
+    value: "8678029 total"
+    url: https://rubygems.org/api/v1/gems/mobility.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/shioyama/mobility
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/shioyama/mobility/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The gem is available as open source under the terms of the"
+  - field: githubStargazers
+    value: 1142
+    url: https://api.github.com/repos/shioyama/mobility
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 38
+    url: https://api.github.com/repos/shioyama/mobility/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/shioyama/mobility/releases/tag/v1.3.2
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2025-01-25
+    url: https://github.com/shioyama/mobility/releases/tag/v1.3.2
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, pricingPage, paidEdition, basedOn, forkOf, successorOf, adminUi, headlessApi, templating, contentStore, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, npmName, npmWeeklyDownloads, discord, forum, x, bluesky, mastodon, newsletter, subreddit, pluginDirectory, pluginCount, reportedInstalls, usageShare, endoflifeId, latestPrereleaseDate, dockerPulls, hostedOffering, selfHostOption, hqCountry]
+unreadable: []
+notes: >
+  The project has no homepage of its own; the README links only the GitHub repository, the RubyDoc API documentation and the wiki, so the wiki is the docs fact. The README says it is a cross-platform solution supporting ActiveRecord and Sequel ORM, with other platforms planned; that names the ORMs it works with and is not a basedOn statement, so no basedOn is recorded, and the Rails generator section does not make Rails a parent. The README's ActiveRecord requirement is ActiveRecord 7.0 or later and the Sequel requirement is Sequel 4.0 or later; both sit in the install sections and are not recorded as fields. The README describes four storage strategies: the default KeyValue backend in two shared tables, Column backends with locale-suffixed columns on the model table, a Table backend with one translation table per model, and PostgreSQL json, jsonb and hstore backends with a container option for a single jsonb column. Reads and writes follow I18n.locale unless a separate Mobility locale is set, and per-locale fallbacks can be declared. With Sequel there is no generator, so migrations are written by hand. The PostgreSQL databases fact comes from the PostgreSQL-specific backends section, which lists the json, jsonb and hstore storage options; the same section says the json backend may also work with recent MySQL versions with JSON column support, which the README says is not tested, so MySQL is not recorded. The LICENSE and the gemspec name one author; the gemspec authors field gives Chris Salzberg. The README lists companies using Mobility as pictures and three names; that list is not an adoption figure and is not recorded. The rubygemsDownloads figure is the total the RubyGems API reports. The first release year is from the oldest RubyGems version, 0.0.1, uploaded in 2016; the oldest GitHub tag v0.0.1 is from the same year. The gemspec runtime line is the one at the latest release tag v1.3.2. The README links the wiki page "Migrating from Globalize", so importsFrom and alternativeTo name globalize-rails, the Ruby gem Globalize record.

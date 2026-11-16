@@ -1,0 +1,119 @@
+id: mobx
+name: MobX
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript library that tracks observable state and re-runs the computations and components that depend on it.
+facts:
+  - field: homepage
+    value: https://mobx.js.org/
+    url: https://mobx.js.org/README.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MobX is a signal based, battle-tested library"
+  - field: docs
+    value: https://mobx.js.org/
+    url: https://github.com/mobxjs/mobx/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Documentation can be found at"
+  - field: repository
+    value: https://github.com/mobxjs/mobx
+    url: https://api.github.com/repos/mobxjs/mobx
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Michel Weststrate
+    url: https://github.com/mobxjs/mobx/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2015 Michel Weststrate"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/mobxjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/mobxjs/mobx/commits/7039663a79b4183e5e4621f671cbd59b0610aff1
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/mobxjs/mobx
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://mobx.js.org/installation.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MobX works in browsers and Node.js environments"
+  - field: categories
+    value: [state]
+    url: https://mobx.js.org/README.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "makes state management simple and scalable"
+  - field: installMethod
+    value: npm
+    url: https://mobx.js.org/installation.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install mobx"
+  - field: installMethod
+    value: CDN
+    url: https://mobx.js.org/installation.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "CDN: https://cdnjs.com/libraries/mobx / https://unpkg.com/mobx/dist/mobx.umd.production.min.js"
+  - field: npmName
+    value: mobx
+    url: https://registry.npmjs.org/mobx/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "4593715 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/mobx
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/mobxjs/mobx
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/mobxjs/mobx/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: forum
+    value: https://github.com/mobxjs/mobx/discussions
+    url: https://github.com/mobxjs/mobx/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Discuss on Github"
+  - field: githubStargazers
+    value: 28210
+    url: https://api.github.com/repos/mobxjs/mobx
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 355
+    url: https://api.github.com/repos/mobxjs/mobx/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 7
+    url: https://github.com/mobxjs/mobx/releases/tag/mobx@7.1.7
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-13
+    url: https://github.com/mobxjs/mobx/releases/tag/mobx@7.1.7
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, paidEdition, basedOn, forkOf, successorOf, alternativeTo, importsFrom, adminUi, headlessApi, templating, contentStore, databases, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, hqCountry, pluginDirectory, pluginCount, discord, x, bluesky, mastodon, newsletter, subreddit, reportedInstalls, usageShare, packagistName, packagistDownloads, endoflifeId, latestPrereleaseDate, dockerPulls, hostedOffering, selfHostOption]
+unreadable: []
+notes: >
+  The CSV homepage is http://mobx.js.org; the site answers over https, and its root page is a redirect to README.html, so the redirect target is cited. The repository is a monorepo: the GitHub stars and contributors count every package in it (mobx, mobx-react-lite, mobx-react, mobx-react-plugin, eslint-plugin-mobx and others), and the npm figure counts the mobx package the install page names. The README says a record field is updated with a normal JavaScript assignment and that the reactivity system detects changes and propagates them to where they are used, so computations that depend on the state, such as React components, run only when needed. The installation page names three React bindings (mobx-react-lite, mobx-react-plugin and mobx-react) that are separate packages in the monorepo; they get no records here and are not basedOn, since MobX is documented as framework-independent ("MobX is unopinionated and allows you to manage your application state outside of any UI framework"). The installation page says MobX works in browsers and Node.js environments that provide native Proxy support, and that is the sentence the runtime fact rests on. The pnpm and yarn commands on the installation page are the same npm registry route and are not separate installMethod entries. The CDN route names cdnjs and unpkg. The release date and major come from the mobx@7.1.7 tag, the newest stable tag of the mobx package; the mobx-react and other package tags in the same repository are not the mobx package. The first release year comes from the oldest tag, 0.0.1, whose commit is dated 2015; the npm package history starts in 2016. The README credits Mendix for supporting maintenance of MobX, and the README sponsor list and the Open Collective backers are not fields of this record. The Twitter links on the docs pages point to the authors' personal accounts, so no social field is recorded.

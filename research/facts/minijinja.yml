@@ -1,0 +1,124 @@
+id: minijinja
+name: MiniJinja
+status: stub
+checkedAt: 2026-11-16
+description: Rust template engine that follows the syntax and behavior of Jinja2, with minimal dependencies.
+facts:
+  - field: repository
+    value: https://github.com/mitsuhiko/minijinja
+    url: https://api.github.com/repos/mitsuhiko/minijinja
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://docs.rs/minijinja/
+    url: https://github.com/mitsuhiko/minijinja/blob/3.1.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Documentation"
+  - field: maintainer
+    value: Armin Ronacher
+    url: https://github.com/mitsuhiko/minijinja/blob/3.1.0/minijinja/Cargo.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Armin Ronacher"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/mitsuhiko
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/mitsuhiko/minijinja
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [templating]
+    url: https://github.com/mitsuhiko/minijinja/blob/3.1.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MiniJinja is a powerful but minimal dependency template engine"
+  - field: runtime
+    value: [rust]
+    url: https://github.com/mitsuhiko/minijinja/blob/3.1.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "It's implemented in Rust and Go"
+  - field: runtimeMin
+    value: "1.70"
+    url: https://github.com/mitsuhiko/minijinja/blob/3.1.0/minijinja/Cargo.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'rust-version = "1.70"'
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/mitsuhiko/minijinja/blob/3.1.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "License: Apache-2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/mitsuhiko/minijinja/blob/3.1.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "License: Apache-2.0"
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/mitsuhiko/minijinja/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-07
+    url: https://api.github.com/repos/mitsuhiko/minijinja/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2021
+    url: https://crates.io/api/v1/crates/minijinja
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2824
+    url: https://api.github.com/repos/mitsuhiko/minijinja
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 98
+    url: https://api.github.com/repos/mitsuhiko/minijinja/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: crateName
+    value: minijinja
+    url: https://crates.io/api/v1/crates/minijinja
+    checkedAt: 2026-11-16
+    via: api
+  - field: crateDownloads
+    value: "46190914 total"
+    url: https://crates.io/api/v1/crates/minijinja
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 84
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/minijinja
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 325
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/minijinja
+    checkedAt: 2026-11-16
+    via: api
+  - field: alternativeTo
+    value: [askama]
+    url: https://github.com/mitsuhiko/minijinja/blob/3.1.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Askama: Jinja inspired, type-safe, requires template precompilation."
+  - field: forum
+    value: https://github.com/mitsuhiko/minijinja/discussions
+    url: https://github.com/mitsuhiko/minijinja/blob/3.1.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "you can use the GitHub Discussions"
+notFound: [homepage, installMethod, hqCountry, parent, wikidata, forkOf, successorOf, importsFrom, headlessApi, runsAs, renderingModes, contentStore, databases, adminUi, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, usageShare, reportedInstalls, npmName, pypiName, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, lastCommitDate, latestPrereleaseDate, hostedOffering]
+unreadable: []
+notes: >
+  Stub: criterion 3 is not judged for the library. The README's only install command is for the minijinja-cli binary (a curl installer for a separate command line package), docs.rs has no cargo add or dependency line for the crate, and the only library route shown is a cargo tree listing of minijinja as a dependency. A page that states how to add the crate to a Cargo project would settle it. Criterion 1 holds: a template engine a Rust web app renders its pages with. The crates.io homepage field points to the repository, so there is no project site and no homepage. The README describes inheritance, filters and a Rust example that renders a template from an environment with a context, and lists a Go port (minijinja-go, its own module with its own tags), WASM and JavaScript, Python, C and CLI packages, all in the same repository; the repository's stars and contributors belong to that monorepo, and the crates.io figure covers the minijinja crate only. The README says MiniJinja is based on the syntax and behavior of the Jinja2 template engine for Python: a reimplementation in Rust, so basedOn is not recorded; the templating language is Jinja syntax and no templating fact is recorded, as in the jinja record. The README's Similar Projects section names Askama, Tera, Liquid and TinyTemplate as related Rust template engines; the list sits under the heading Similar Projects as related template engines for Rust, so alternativeTo names askama (the only one of them with a record), and the Rust Liquid crate is not the liquid record, which is Shopify's Liquid. The GitHub release list holds the minijinja crate's releases under plain version tags; the minijinja-go tags are a separate line. The LICENSE file has no copyright line, so the maintainer comes from the crate manifest authors. The import map (runtimeMap in scripts/import-facts.mjs) turns the rust runtime into binary, so a reviewer should check the runtime value on the record page. The README lists projects that use MiniJinja, which are not fields. latestPrereleaseDate is absent because the newest prerelease, 3.0.0-alpha.3, is older than the 3.1.0 release.

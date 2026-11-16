@@ -1,0 +1,128 @@
+id: mockery
+name: Mockery
+status: accepted
+checkedAt: 2026-11-16
+description: PHP mock object framework for creating test doubles with a readable API in unit tests run with PHPUnit, PHPSpec or another testing framework.
+facts:
+  - field: homepage
+    value: https://docs.mockery.io/en/stable/
+    url: https://docs.mockery.io/en/stable/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mockery is a simple yet flexible PHP mock object framework"
+  - field: repository
+    value: https://github.com/mockery/mockery
+    url: https://api.github.com/repos/mockery/mockery
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://docs.mockery.io/en/stable/
+    url: https://github.com/mockery/mockery/blob/1.6.x/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The current version can be seen at docs.mockery.io."
+  - field: firstRelease
+    value: 2010
+    url: https://api.github.com/repos/mockery/mockery/commits/0.6.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Pádraic Brady
+    url: https://github.com/mockery/mockery/blob/1.6.x/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2009-2023, Pádraic Brady"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/mockery
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/mockery/mockery
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [testing]
+    url: https://docs.mockery.io/en/stable/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "for use in unit testing with PHPUnit, PHPSpec or any other testing framework"
+  - field: runtime
+    value: php
+    url: https://docs.mockery.io/en/stable/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "PHP mock object framework"
+  - field: runtimeMin
+    value: "7.3"
+    url: https://repo.packagist.org/p2/mockery/mockery.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: composer
+    url: https://github.com/mockery/mockery/blob/1.6.x/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "composer require --dev mockery/mockery"
+  - field: installMethod
+    value: git
+    url: https://docs.mockery.io/en/stable/getting_started/installation.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mockery can be installed using Composer or by cloning it from its GitHub repository."
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/mockery/mockery/blob/1.6.x/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "BSD 3-Clause License"
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/mockery/mockery
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/mockery/mockery/releases/tags/1.6.15
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-19
+    url: https://api.github.com/repos/mockery/mockery/releases/tags/1.6.15
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 10722
+    url: https://api.github.com/repos/mockery/mockery
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 200
+    url: https://api.github.com/repos/mockery/mockery/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: mockery/mockery
+    url: https://packagist.org/packages/mockery/mockery.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: 595145420 total
+    url: https://packagist.org/packages/mockery/mockery.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 22331
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/mockery%2Fmockery
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 482492
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/mockery%2Fmockery
+    checkedAt: 2026-11-16
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, hqCountry, wikidata, endoflifeId, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, pricingPage, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, httpArchiveSites, paidEdition, maintainerType, hostedOffering]
+unreadable: []
+notes: >
+  Status accepted. Criterion 1: a test-double library that projects add as a dev dependency, so it is part of building and testing a PHP application, not an application. Criterion 2: installed with Composer from Packagist (mockery/mockery), the route the README install section names. Criterion 3: the README Installation section gives the composer command. Criterion 4: the repository is not archived; the default branch is 1.6.x and the latest GitHub release 1.6.15 is dated 2026-08-19. The README says the project transferred from padraic/mockery to mockery/mockery; the new location is the one recorded. The first tag is 0.6.0 (2010-05-27), the oldest tag and older than the Packagist uploads, so firstRelease is 2010. Currently 1.x is the major; the README says Mockery 1.3 was the last version to support HHVM 3 and PHP 5. The README calls the project "released under a New BSD License"; the LICENSE file names the BSD 3-Clause License, so one license entry is recorded. The docs homepage says Mockery is "designed as a drop in alternative to PHPUnit's phpunit-mock-objects library"; phpunit-mock-objects has no record, so the statement stays in notes and alternativeTo is not recorded. Mockery integrates with PHPUnit through helpers (MockeryTestCase and traits) without being built on it, so basedOn is not recorded. The runtimeMin 7.3 comes from the require.php of the 1.6.15 Packagist metadata. The README versioning section says some of Mockery's internals are private and open to change at any time, and that a class which is not final or a method which is not private is not part of the API the versioning scheme covers. The Packagist total download figure is cumulative since the package was first listed. The contributors count is the page number of the last contributors page, 200.

@@ -1,0 +1,128 @@
+id: mockall
+name: Mockall
+status: accepted
+checkedAt: 2026-11-16
+description: Rust library that generates mock objects from traits and structs, for controlling the responses of dependencies in unit tests.
+facts:
+  - field: repository
+    value: https://github.com/asomers/mockall
+    url: https://api.github.com/repos/asomers/mockall
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://docs.rs/mockall
+    url: https://github.com/asomers/mockall/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "See the API docs for more information."
+  - field: firstRelease
+    value: 2019
+    url: https://crates.io/api/v1/crates/mockall/versions
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Alan Somers
+    url: https://github.com/asomers/mockall/blob/master/LICENSE-MIT
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2019 Alan Somers"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/asomers
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/asomers/mockall
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [testing]
+    url: https://github.com/asomers/mockall/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A powerful mock object library for Rust."
+  - field: runtime
+    value: rust
+    url: https://github.com/asomers/mockall/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mockall is written in 100% *safe* and *stable* Rust."
+  - field: runtimeMin
+    value: "1.77.0"
+    url: https://github.com/asomers/mockall/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mockall is supported on Rust 1.77.0 and higher."
+  - field: runtimeMin
+    value: "1.77.0"
+    url: https://crates.io/api/v1/crates/mockall/versions
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: cargo
+    url: https://github.com/asomers/mockall/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "To use it this way, add this to your `Cargo.toml`:"
+  - field: license
+    value: MIT
+    url: https://github.com/asomers/mockall/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "is primarily distributed under the terms of both the MIT license"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/asomers/mockall/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "and the Apache License (Version 2.0)"
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/asomers/mockall
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://crates.io/api/v1/crates/mockall
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-06-28
+    url: https://crates.io/api/v1/crates/mockall/versions
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1853
+    url: https://api.github.com/repos/asomers/mockall
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 36
+    url: https://api.github.com/repos/asomers/mockall/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: crateName
+    value: mockall
+    url: https://crates.io/api/v1/crates/mockall
+    checkedAt: 2026-11-16
+    via: api
+  - field: crateDownloads
+    value: 193686641 total
+    url: https://crates.io/api/v1/crates/mockall
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 430
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/mockall
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 2538
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/mockall
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, wikidata, endoflifeId, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, pricingPage, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, packagistName, httpArchiveSites, paidEdition, maintainerType, hostedOffering]
+unreadable: []
+notes: >
+  Status accepted. Criterion 1: a test-time library that builds mock objects for Rust code; the README says it is "typically ... only used by unit tests", so runsAs is not recorded. Criterion 2: installed as a dev-dependency from crates.io, which the README names in its Cargo.toml example; the crate version 0.15.0 on crates.io and the GitHub tag v0.15.0 agree. Criterion 3: the Usage section gives the Cargo.toml line. Criterion 4: the repository is not archived and has commits through 2026-11-03 (pushed_at); the repository has tags but no GitHub release objects, so latestReleaseDate is the crates.io publication date of 0.15.0. The version is 0.x, so currentMajor is 0; the minor line 0.15 goes to notes. The repository has no homepage of its own: the GitHub repository and docs.rs are the only pages, so homepage is not recorded. The firstRelease year is the oldest crates.io upload, 0.1.0-pre and 0.1.0 on 2019-07-03; the oldest git tag v0.2.0 is dated 2019-08-03, the same year. The license line in README says the crate is "primarily distributed under the terms of both the MIT license and the Apache License (Version 2.0)"; the crates.io metadata of 0.15.0 reads "MIT OR Apache-2.0", and GitHub detects Apache-2.0 for the repository. The MSRV is stated in the README as Rust 1.77.0 and higher, and the crates.io rust_version of 0.15.0 is also 1.77.0; the README adds that the MSRV will not change without bumping the major or minor version. The GitHub user asomers has the name Alan Somers, and the LICENSE-MIT copyright line gives the same name.

@@ -1,0 +1,92 @@
+id: md4c
+name: MD4C
+status: stub
+checkedAt: 2026-11-16
+description: Dependency-free Markdown parser library written in C, with an HTML renderer in a separate module.
+facts:
+  - field: repository
+    value: https://github.com/mity/md4c
+    url: https://api.github.com/repos/mity/md4c
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/mity/md4c/wiki
+    url: https://github.com/mity/md4c/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: There is also a project wiki which provides
+  - field: maintainer
+    value: Martin Mitáš
+    url: https://github.com/mity/md4c/blob/master/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: Copyright © 2016-2026 Martin Mitáš
+  - field: maintainerType
+    value: individual
+    url: https://github.com/mity/md4c/blob/master/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: Copyright © 2016-2026 Martin Mitáš
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/mity
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: C
+    url: https://api.github.com/repos/mity/md4c
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [markdown]
+    url: https://github.com/mity/md4c/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: Fast, compact, dependency-free Markdown parser for C
+  - field: installMethod
+    value: copy source files
+    url: https://github.com/mity/md4c/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'or alternatively add `md4c.[hc]` directly to your code base'
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/mity/md4c
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/mity/md4c/blob/master/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: The MIT License (MIT)
+  - field: githubStargazers
+    value: 1512
+    url: https://api.github.com/repos/mity/md4c
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 52
+    url: https://api.github.com/repos/mity/md4c/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/mity/md4c/tags
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-17
+    url: https://api.github.com/repos/mity/md4c/commits/7fc1815a5eeba2af7d6120a76202bf59f3b6e6e4
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://api.github.com/repos/mity/md4c/commits/1a8ce93d6f70af56a19d032dc3832a958bad301f
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hostedOffering, basedOn, forkOf, successorOf, alternativeTo, importsFrom, parent, runtime, runtimeMin, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, hqCountry, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, reportedInstalls, usageShare, npmName, packagistName, pypiName, endoflifeId, latestPrereleaseDate, lastCommitDate, wikidata, apiLimits, regions, selfHostOption, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  Criterion 1 is in doubt, so this is a stub: the README names desktop and office software as users (Blender, LibreOffice, ONLYOFFICE, Qt, Stellarium, and others) and describes no use in a website or web app; the only web routes it names are markdown-wasm, a WebAssembly port by a third party, and a command line tool by a third party that builds browser-based books. A decision on whether a C parser with no stated web use is in the dataset would settle it. Other facts: the README's home line gives the repository, so no homepage is recorded. There are no GitHub release objects, only tags; the newest tag v0.6.0 (annotated, commit dated 2026-09-17) sets latestReleaseDate, and the oldest tag release-0.2.0 (commit dated 2016-12-27, repository created 2016-10-03) sets firstRelease. The tags are numbered v0.x, so currentMajor is 0. The README lists bindings for Ruby (md4c gem), Python (PyMD4C), PHP (PECL MD4C) and Lean (md4lean) and ports to D, C# and WebAssembly; none is the project's own package, so no registry name is recorded. The README's Parsing section gives the install route in its own words: the library is linked, or the md4c source files are added to the code base. The copyright line gives the year range 2016-2026 and the holder Martin Mitáš; the README calls it maintained as independent open-source software. The README also names a sponsorship page, which is not recorded. Stars and contributors come from the single repository.
+  The README Overview says MD4C passes the CommonMark compliance tests, is designed for applications that need to process Markdown without building a large document tree, and parses the whole document while calling application callbacks at the start and end of every block and span. The parser is md4c.c and md4c.h, which can be linked as a library or compiled into an application. Converting to HTML is a separate API in md4c-html, which the README describes under its own heading. With flags the parser also recognizes extensions such as tables, footnotes, task lists and strikethrough.

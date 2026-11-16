@@ -1,0 +1,121 @@
+id: mako-templates
+name: Mako
+status: accepted
+checkedAt: 2026-11-16
+description: Python template library that compiles templates into Python modules.
+facts:
+  - field: homepage
+    value: https://www.makotemplates.org
+    url: https://www.makotemplates.org/
+    checkedAt: 2026-11-16
+    via: page
+  - field: docs
+    value: https://docs.makotemplates.org/en/latest/
+    url: https://docs.makotemplates.org/en/latest/
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/sqlalchemy/mako
+    url: https://api.github.com/repos/sqlalchemy/mako
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: the Mako authors and contributors
+    url: https://github.com/sqlalchemy/mako/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright 2006-2026 the Mako authors and contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/sqlalchemy
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [templating]
+    url: https://www.makotemplates.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mako is a template library written in Python"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/sqlalchemy/mako
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/sqlalchemy/mako/blob/rel_1_4_3/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">=3.10"'
+  - field: runtimeMin
+    value: "3.10"
+    url: https://github.com/sqlalchemy/mako/blob/rel_1_4_3/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">=3.10"'
+  - field: installMethod
+    value: pip
+    url: https://www.makotemplates.org/download.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Or install via pip:"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/sqlalchemy/mako
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/sqlalchemy/mako/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: currentMajor
+    value: 1
+    url: https://github.com/sqlalchemy/mako/releases/tag/rel_1_4_3
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-22
+    url: https://github.com/sqlalchemy/mako/releases/tag/rel_1_4_3
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2006
+    url: https://pypi.org/pypi/Mako/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 464
+    url: https://api.github.com/repos/sqlalchemy/mako
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 56
+    url: https://api.github.com/repos/sqlalchemy/mako/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiName
+    value: Mako
+    url: https://pypi.org/pypi/Mako/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: "55973145 (last week)"
+    url: https://pypistats.org/api/packages/mako/recent
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 186
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/mako
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 19248
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/mako
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, templating, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, paidEdition, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, packagistName, httpArchiveSites]
+unreadable: []
+notes: >
+  The homepage, the download page and the docs index and usage pages are read; the docs install URL returns a redirect and was not used. Michael Bayer is named as the author in pyproject.toml at rel_1_4_3 and as the copyright holder of the website content on makotemplates.org; the LICENSE copyright line names the Mako authors and contributors, so that is the recorded maintainer and Michael Bayer is not recorded. The homepage calls Mako an embedded Python (Python Server Page) language, and says its syntax and API borrow from Django templates, Cheetah, Myghty and Genshi; the borrowing is no basedOn or alternativeTo statement. The Jinja switching page (research/facts/jinja.yml, alternativeTo mako-templates) names Mako; Mako's own pages name no alternative. The PyPI info license field is null; the MIT license comes from the GitHub license API and the LICENSE file. The repository's oldest release tag is rel_0_1_0, but the PyPI upload history starts with version 0.1.0 on 2006-12-31, which is older than any GitHub tag, so firstRelease is taken from PyPI. The PyPI figure is pypistats last_week; the value is a rolling window, not a fixed week. The community page sends development to GitHub under the SQLAlchemy organization and security reports to Tidelift. The CSV row listed 461 stars and 48.6M per week; both are older reads. The mako.yml record is a different project (a Rust-based bundler on npm) and is not used here. The homepage says Mako uses a non-XML syntax that compiles into Python modules. The docs index lists inheritance with blocks and defs, namespaces, the Mako runtime, caching and the framework integrations WSGI, Pygments and Babel; the usage page is the cited page for those integrations. The community page names GitHub under the SQLAlchemy organization as the place for issues and pull requests.

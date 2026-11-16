@@ -1,0 +1,135 @@
+id: markdoc
+name: Markdoc
+status: accepted
+checkedAt: 2026-11-16
+description: Markdown-based syntax and toolchain for building custom documentation sites, with a parser, a transform step and renderers.
+facts:
+  - field: homepage
+    value: https://markdoc.dev
+    url: https://markdoc.dev/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Markdoc is a Markdown-based syntax and toolchain for creating custom documentation sites"
+  - field: repository
+    value: https://github.com/markdoc/markdoc
+    url: https://github.com/markdoc/markdoc
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://markdoc.dev/docs
+    url: https://markdoc.dev/docs
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Follow the instructions below to install Markdoc in your app"
+  - field: maintainer
+    value: Stripe, Inc.
+    url: https://github.com/markdoc/markdoc/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2021- Stripe, Inc."
+  - field: maintainerType
+    value: company
+    url: https://github.com/markdoc/markdoc/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2021- Stripe, Inc."
+  - field: parent
+    value: Stripe, Inc.
+    url: https://markdoc.dev/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Stripe created Markdoc to power our public docs"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/markdoc
+    checkedAt: 2026-11-16
+    via: api
+  - field: x
+    value: https://twitter.com/StripeDev
+    url: https://markdoc.dev/
+    checkedAt: 2026-11-16
+    via: page
+  - field: forum
+    value: https://github.com/markdoc/markdoc/discussions
+    url: https://markdoc.dev/
+    checkedAt: 2026-11-16
+    via: page
+  - field: categories
+    value: [markdown-parser]
+    url: https://github.com/markdoc/markdoc/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Markdoc is a Markdown-based syntax and toolchain for creating custom documentation sites and experiences"
+  - field: language
+    value: TypeScript
+    url: https://github.com/markdoc/markdoc
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: [npm]
+    url: https://markdoc.dev/docs
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install @markdoc/markdoc"
+  - field: license
+    value: MIT
+    url: https://github.com/markdoc/markdoc/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/markdoc/markdoc
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://github.com/markdoc/markdoc/releases/tag/v0.5.12
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-13
+    url: https://registry.npmjs.org/@markdoc/markdoc
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2022
+    url: https://github.com/markdoc/markdoc/releases/tag/0.1.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: "@markdoc/markdoc"
+    url: https://registry.npmjs.org/@markdoc/markdoc/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "889015 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@markdoc/markdoc
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 8525
+    url: https://github.com/markdoc/markdoc
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 25
+    url: https://api.github.com/repos/markdoc/markdoc/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 55
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@markdoc%2Fmarkdoc
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 819
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@markdoc%2Fmarkdoc
+    checkedAt: 2026-11-16
+    via: api
+notFound: [runtime, runtimeMin, hqCountry, pricingPage, discord, bluesky, mastodon, newsletter, subreddit, sso, adminUi, databases, contentStore, headlessApi, templating, i18n, multisite, livePreview, userRoles, renderingModes, runsAs, paidEdition, basedOn, forkOf, successorOf, alternativeTo, pluginDirectory, usageShare, reportedInstalls, endoflifeId]
+unreadable: []
+notes: >
+  Monorepo: the repository holds the core package @markdoc/markdoc (packages/markdoc) and the Next.js integration @markdoc/next.js (packages/next.js), so stars, contributors and the repository's release list belong to both. The newest GitHub release object is @markdoc/next.js 0.6.2 (2026-11-13), a different package; the core package's newest tag is v0.5.12 (2026-11-10), and npm holds 0.5.13 (2026-11-13) with no GitHub release object, so currentMajor and latestReleaseDate follow the core package across both registries. The npm weekly figure covers @markdoc/markdoc only and carries its period. The install page also gives yarn add @markdoc/markdoc; yarn and npm use the same registry, so one installMethod entry. The README says the public renderer types require @types/react and that the React runtime is optional; the renderers are coined kinds and stay here. The homepage names a Next.js plugin for a documentation site with zero boilerplate; that is the @markdoc/next.js package, not a basedOn statement. The npm manifest gives engines node >=14.7.0 for 0.5.13; the README names Node.js only in a TypeScript module setting for code run directly by Node.js and no page states a runtime for the library, so runtime and runtimeMin are left out; the manifest engines field is the only minimum. The npm package author is Ryan Paul; the LICENSE copyright line names Stripe, Inc., which is the maintainer. The homepage says Stripe created Markdoc to power its public docs. The GitHub social link on the homepage names a Stripe developer account on Twitter, recorded as x. hqCountry is not recorded: the Stripe consumer terms give a South San Francisco address without naming the country.
+  The homepage lists custom tags and nodes, custom renderers and built-in validation as ways to extend or check content; the docs name the parse, transform and render steps, with Markdoc.renderers.html and Markdoc.renderers.react as renderers.
+  Built-in validation is a homepage feature, recorded here as a coined kind.

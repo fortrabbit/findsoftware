@@ -1,0 +1,113 @@
+id: mocha
+name: Mocha
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript test framework that runs test suites on Node.js and in the browser.
+facts:
+  - field: homepage
+    value: https://mochajs.org/
+    url: https://mochajs.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mocha is a feature-rich JavaScript test framework"
+  - field: repository
+    value: https://github.com/mochajs/mocha
+    url: https://api.github.com/repos/mochajs/mocha
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://mochajs.org
+    url: https://github.com/mochajs/mocha/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "[Documentation](https://mochajs.org)"
+  - field: maintainer
+    value: OpenJS Foundation
+    url: https://github.com/mochajs/mocha/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2011-2026 OpenJS Foundation and contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/mochajs
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: https://registry.npmjs.org/mocha
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/mochajs/mocha
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://github.com/mochajs/mocha/blob/main/docs/src/content/docs/index.mdx
+    checkedAt: 2026-11-16
+    via: page
+    quote: "running on [Node.js](https://nodejs.org) and in the browser"
+  - field: categories
+    value: [testing]
+    url: https://github.com/mochajs/mocha/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "test framework for Node.js and the browser"
+  - field: installMethod
+    value: npm
+    url: https://github.com/mochajs/mocha/blob/main/docs/src/content/docs/getting-started.mdx
+    checkedAt: 2026-11-16
+    via: page
+    quote: "install the [`mocha` package](https://www.npmjs.com/package/mocha)"
+  - field: npmName
+    value: mocha
+    url: https://registry.npmjs.org/mocha/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "14596355 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/mocha
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/mochajs/mocha
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/mochajs/mocha/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "(The MIT License)"
+  - field: discord
+    value: https://discord.gg/KeDn2uXhER
+    url: https://github.com/mochajs/mocha/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "[Discord](https://discord.gg/KeDn2uXhER) (ask questions here!)"
+  - field: githubStargazers
+    value: 22912
+    url: https://api.github.com/repos/mochajs/mocha
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 423
+    url: https://api.github.com/repos/mochajs/mocha/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 12
+    url: https://github.com/mochajs/mocha/releases/tag/v12.0.3
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-01
+    url: https://github.com/mochajs/mocha/releases/tag/v12.0.3
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, paidEdition, basedOn, forkOf, successorOf, alternativeTo, importsFrom, adminUi, headlessApi, templating, contentStore, databases, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, hqCountry, pluginDirectory, pluginCount, x, bluesky, mastodon, newsletter, subreddit, reportedInstalls, usageShare, packagistName, packagistDownloads, endoflifeId, latestPrereleaseDate, dockerPulls, hostedOffering, selfHostOption]
+unreadable: []
+notes: >
+  The homepage is https://mochajs.org/, which answers over https. The LICENSE names "OpenJS Foundation and contributors" as the copyright holder, and the README says Mocha is "an independent open-source project, maintained exclusively by volunteers" and gives the copyright as "2011-2026 OpenJS Foundation and contributors". The maintainer follows the LICENSE line, so the OpenJS Foundation is recorded; a reviewer decides whether the README's independence statement means the project should be recorded as maintained by its volunteers instead. The getting started page states that as of v12.0.0 Mocha requires Node.js "^20.19.0 || >=22.12.0". Because the project runs in the browser as well, that Node.js minimum is a build requirement and gets no runtimeMin, per the dev-libs rule; runtime node comes from the sentence naming Node.js. The getting started page shows describe and it blocks in a test file, the npx mocha command and a package.json test script. The README's Discord badge carries the Discord link; the homepage nav repeats it. The npm figure counts the mocha package the getting started page names. The first release year comes from the first npm upload, 0.0.1-alpha1, dated 2011, and the oldest git tag of the same name is from the same year. The README's claim that Mocha is one of the most depended-upon npm modules cites libraries.io and is a third-party statement, so no dependents figure is recorded. The rc tags on the release list are prereleases and do not set the current major.

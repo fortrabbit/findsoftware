@@ -1,0 +1,126 @@
+id: marked
+name: Marked
+status: accepted
+checkedAt: 2026-11-16
+description: Markdown parser and compiler written in JavaScript that converts Markdown to HTML in browsers and on Node.js.
+facts:
+  - field: homepage
+    value: https://marked.js.org
+    url: https://marked.js.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: Marked is built for speed
+  - field: repository
+    value: https://github.com/markedjs/marked
+    url: https://api.github.com/repos/markedjs/marked
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://marked.js.org
+    url: https://github.com/markedjs/marked/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: Our documentation pages are also rendered using marked
+  - field: pluginDirectory
+    value: https://marked.js.org/using_advanced
+    url: https://marked.js.org/using_advanced
+    checkedAt: 2026-11-16
+    via: page
+    quote: This is a list of extensions that can be used with marked.use(extension)
+  - field: maintainer
+    value: MarkedJS
+    url: https://github.com/markedjs/marked/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: Copyright (c) 2018+, MarkedJS
+  - field: maintainerType
+    value: community
+    url: https://github.com/markedjs/marked/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: Copyright (c) 2018+, MarkedJS
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/markedjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/markedjs/marked
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [markdown]
+    url: https://github.com/markedjs/marked/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: low-level compiler for parsing markdown without caching
+  - field: runtime
+    value: [node]
+    url: https://github.com/markedjs/marked/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: Only current and LTS Node.js versions are supported
+  - field: installMethod
+    value: npm install
+    url: https://github.com/markedjs/marked/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: npm install marked
+  - field: npmName
+    value: marked
+    url: https://registry.npmjs.org/marked
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: 126826502 (2026-11-01 to 2026-11-07)
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/marked
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/markedjs/marked/blob/v18.2.0/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"license": "MIT"'
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/markedjs/marked/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: Neither the name “Markdown” nor the names of its contributors may be used to endorse or promote products derived from this software
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/markedjs/marked/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: Permission is hereby granted, free of charge, to any person obtaining a copy
+  - field: currentMajor
+    value: 18
+    url: https://api.github.com/repos/markedjs/marked/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-09
+    url: https://api.github.com/repos/markedjs/marked/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: https://registry.npmjs.org/marked
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 37306
+    url: https://api.github.com/repos/markedjs/marked
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 273
+    url: https://api.github.com/repos/markedjs/marked/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, paidEdition, hostedOffering, basedOn, forkOf, successorOf, alternativeTo, importsFrom, parent, runtimeMin, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, hqCountry, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginCount, reportedInstalls, usageShare, packagistName, pypiName, endoflifeId, latestPrereleaseDate, lastCommitDate, wikidata, apiLimits, regions, selfHostOption, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  The docs site marked.js.org answers over https and is the project's own site; the README calls its documentation pages a rendering of marked itself. The README says marked works in a browser, on a server, and from a command line interface, and its docs say it runs in client- or server-side JavaScript projects; runtime node comes from the Node.js sentence, and no runsAs is recorded because the library names both the browser and Node.js. The package.json engines field asks for Node.js 20 or newer; for a library that also runs in the browser that minimum is a build requirement, so it is kept out of runtimeMin. The CLI is installed with npm install -g marked, which is the same npm route. GitHub detects no license for the repository because LICENSE combines two statements: the MIT license for the project, with the copyright lines MarkedJS and Christopher Jeffrey (2011-2018), and a BSD-style notice headed Markdown, copyright John Gruber (2004), which covers the original Markdown syntax text. Both are recorded as license entries since the LICENSE file ships with the package. The maintainer follows the MarkedJS copyright line; the import cannot derive the maintainer type from the name MarkedJS, so community is recorded as a fallback. The README and docs say marked does not sanitize its output HTML and recommend DOMPurify, sanitize-html, js-xss or insane on the output. The earliest npm version, 0.0.1, is dated 2011-07-24, the same day the GitHub repository was created. The npm download figure is the sum of the daily counts for the week, read on 2026-11-16. The stars and contributors belong to the single repository.

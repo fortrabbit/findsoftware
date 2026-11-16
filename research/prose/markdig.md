@@ -1,0 +1,3 @@
+Markdig is a Markdown library for .NET programs. A call to `Markdown.ToHtml` converts a string with the plain CommonMark parser, and a pipeline built with `MarkdownPipelineBuilder` switches on the built-in extensions, such as tables, footnotes, task lists, math and diagrams. The caller sets the pipeline, so an application decides which Markdown syntax it accepts.
+
+Besides HTML, the parser builds a syntax tree with source positions, which editors and document tools can use, and it can parse a document and render it back with its whitespace kept. Custom renderers turn the same tree into other formats, and a plain-text conversion strips all formatting. A second package, Markdig.Signed, ships the same code as signed assemblies.

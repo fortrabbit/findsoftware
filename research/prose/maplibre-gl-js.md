@@ -1,0 +1,3 @@
+MapLibre GL JS is a TypeScript library that renders interactive maps from vector tiles in a web browser, using WebGL. It began as a fork of mapbox-gl-js before that library moved to a license that is not open source. Its README describes the first major line as a drop-in replacement for the open-source Mapbox version. The [documentation](https://maplibre.org/maplibre-gl-js/docs/) covers the API, the style specifications, plugins and examples.
+
+The project belongs to the MapLibre organization, which describes itself as an umbrella for open-source mapping libraries. The README points to bindings for React and Angular, which are separate packages.

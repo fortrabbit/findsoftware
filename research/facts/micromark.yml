@@ -1,0 +1,134 @@
+id: micromark
+name: micromark
+status: accepted
+checkedAt: 2026-11-16
+description: Markdown parser for JavaScript that follows CommonMark and emits concrete tokens with positional information.
+facts:
+  - field: homepage
+    value: https://unifiedjs.com
+    url: https://unifiedjs.com/
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/micromark/micromark
+    url: https://github.com/micromark/micromark
+    checkedAt: 2026-11-16
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://github.com/micromark/micromark
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2020
+    url: https://github.com/micromark/micromark/releases/tag/2.0.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Titus Wormer
+    url: https://github.com/micromark/micromark/blob/main/license
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) Titus Wormer"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/micromark/micromark/blob/main/license
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) Titus Wormer"
+  - field: categories
+    value: [markdown]
+    url: https://github.com/micromark/micromark/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "an open source markdown parser written in JavaScript"
+  - field: language
+    value: JavaScript
+    url: https://github.com/micromark/micromark
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://github.com/micromark/micromark/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "In Node.js (version 16+)"
+  - field: runtime
+    value: [deno]
+    url: https://github.com/micromark/micromark/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "In Deno with [`esm.sh`][esmsh]:"
+  - field: installMethod
+    value: [npm]
+    url: https://github.com/micromark/micromark/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install micromark"
+  - field: installMethod
+    value: [cdn]
+    url: https://github.com/micromark/micromark/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "In browsers with [`esm.sh`][esmsh]:"
+  - field: license
+    value: MIT
+    url: https://github.com/micromark/micromark/blob/main/license
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License"
+  - field: currentMajor
+    value: 4
+    url: https://github.com/micromark/micromark/releases/tag/4.0.3
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-26
+    url: https://github.com/micromark/micromark/releases/tag/4.0.3
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2242
+    url: https://github.com/micromark/micromark
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 20
+    url: https://api.github.com/repos/micromark/micromark/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: micromark
+    url: https://registry.npmjs.org/micromark/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "94710995 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/micromark
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 144
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/micromark
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 151327
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/micromark
+    checkedAt: 2026-11-16
+    via: api
+  - field: forum
+    value: https://github.com/micromark/micromark/discussions
+    url: https://github.com/micromark/micromark/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: alternativeTo
+    value: [markdown-it, marked]
+    url: https://github.com/micromark/micromark/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "(alternatives to) `micromark`"
+notFound: [basedOn, forkOf, successorOf, parent, runsAs, renderingModes, runtimeMin, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, importsFrom, pricingPage, paidEdition, hqCountry, endoflifeId, usageShare, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: []
+notes: >
+  A monorepo (micromark/micromark) whose root readme is the micromark package readme; the npm package micromark is the one the Install section names. Stars, contributors and the release list belong to the monorepo, which also holds the micromark-util and micromark-extension packages. The README's own sentence "This package is ESM only" is the module format, not a runtime; the README states "In Node.js (version 16+)" on the default branch, but the latest release's npm manifest sets no engines field, so no runtimeMin is recorded. The npm weekly figure is the sum of downloads for 2026-11-01 to 2026-11-07. The npm history of the name starts with version 1.0.0 in 2014, a micro templating package by another author, so firstRelease is the 2.0.0 release of 2020-08-20 that the README's origin story names. The homepage is unifiedjs.com, the site the README names "for more about us"; micromark is one of the unified collective's projects. The comparison section names remark, marked and markdown-it as alternatives to micromark; markdown-it and marked are recorded as alternativeTo; remark is an accepted candidate row without a fact file yet, so it is left for when its record exists. The README calls the project a sibling of the Rust markdown-rs; no field holds that. The README says micromark emits concrete tokens and compiles them to HTML, that other tools can build a syntax tree from them, and that GFM, MDX, math and frontmatter support come from extensions. The README shows the same esm.sh import for Deno and for browsers, which is one cdn route; the Deno sentence is the deno runtime entry.

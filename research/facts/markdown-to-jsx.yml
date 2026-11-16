@@ -1,0 +1,109 @@
+id: markdown-to-jsx
+name: markdown-to-jsx
+status: accepted
+checkedAt: 2026-11-16
+description: Markdown parser and compiler toolchain for JavaScript and TypeScript projects, with React, React Native, SolidJS, Vue and HTML output.
+facts:
+  - field: homepage
+    value: https://markdown-to-jsx.quantizor.dev/
+    url: https://registry.npmjs.org/markdown-to-jsx/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: repository
+    value: https://github.com/quantizor/markdown-to-jsx
+    url: https://github.com/quantizor/markdown-to-jsx
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Evan Jacobs
+    url: https://registry.npmjs.org/markdown-to-jsx/9.10.6
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainerType
+    value: individual
+    url: https://registry.npmjs.org/markdown-to-jsx/9.10.6
+    checkedAt: 2026-11-16
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/quantizor
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [markdown-parser]
+    url: https://github.com/quantizor/markdown-to-jsx/blob/main/lib/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "is a gfm+commonmark compliant markdown parser and compiler toolchain for JavaScript and TypeScript-based projects"
+  - field: language
+    value: TypeScript
+    url: https://github.com/quantizor/markdown-to-jsx
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: [npm]
+    url: https://github.com/quantizor/markdown-to-jsx/blob/main/lib/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm i markdown-to-jsx"
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/markdown-to-jsx/9.10.6
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/quantizor/markdown-to-jsx
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 9
+    url: https://github.com/quantizor/markdown-to-jsx/releases/tag/markdown-to-jsx@9.10.6
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-06
+    url: https://github.com/quantizor/markdown-to-jsx/releases/tag/markdown-to-jsx@9.10.6
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://github.com/quantizor/markdown-to-jsx/releases/tag/1.0.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: markdown-to-jsx
+    url: https://registry.npmjs.org/markdown-to-jsx/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "6011860 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/markdown-to-jsx
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2393
+    url: https://github.com/quantizor/markdown-to-jsx
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 70
+    url: https://api.github.com/repos/quantizor/markdown-to-jsx/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 468
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/markdown-to-jsx
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 56285
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/markdown-to-jsx
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, pricingPage, runtimeMin, runsAs, renderingModes, forum, discord, x, bluesky, mastodon, newsletter, subreddit, sso, adminUi, databases, contentStore, headlessApi, templating, i18n, multisite, livePreview, userRoles, paidEdition, basedOn, forkOf, successorOf, alternativeTo, pluginDirectory, usageShare, reportedInstalls, endoflifeId]
+unreadable: ["https://markdown-to-jsx.quantizor.dev/ (JavaScript shell, title only)"]
+notes: >
+  The GitHub API reports no license for the repository and the repository root has no LICENSE file at the 9.10.6 tag; the npm registry gives MIT for 9.10.6, and the LICENSE file in the published npm package reads MIT with the copyright line Copyright (c) 2015-present Evan Jacobs, so the license is recorded from the registry. The README names React, React Native, SolidJS, Vue.js, HTML and Markdown entry points; the README does not call the library a binding or plugin of any of those frameworks, so no basedOn is recorded. The npm manifest gives engines node >= 18; the README names no runtime and no browser for the library, so no runtime or runtimeMin is recorded. The README links GitHub Releases as its changelog and a sponsor page; neither is a field here. The README's syntax highlighting section describes highlight.js as an integration the creator adds, not a dependency. The GitHub repository is a monorepo root (package name @markdown-to-jsx/root); the npm package markdown-to-jsx is the one the install line names, and stars and contributors belong to the repository. The first release year is the 1.0.0 release (2015-12-07), which matches the npm upload of 1.0.0 on the same date. The weekly npm figure is the sum of daily counts for 2026-11-01 to 2026-11-07.
+  The README describes React, React Native, SolidJS and Vue entry points, an HTML entry point for server output, and a markdown entry point that writes Markdown back; overrides replace any HTML tag's rendering; renderRule changes how a node type is drawn, and the README shows it for fenced code with highlight.js; raw HTML is sanitized in every renderer; function props on custom components stay strings unless evalUnserializableExpressions is set, which the README discourages for user input; the README says React Server Components work without a use client directive.
+  The README says arbitrary HTML in the input is parsed into the appropriate JSX representation, and that the library's GFM and CommonMark support is compliance with both specifications.

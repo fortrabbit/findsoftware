@@ -1,0 +1,1 @@
+MDXEditor is a React component that lets users author Markdown documents. A React project installs the package from npm and renders the component where the document is edited. The docs say the component does not support server rendering, so an app that renders pages on the server has to render the editor on the client only.

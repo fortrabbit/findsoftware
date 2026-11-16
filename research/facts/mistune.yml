@@ -1,0 +1,124 @@
+id: mistune
+name: Mistune
+status: accepted
+checkedAt: 2026-11-16
+description: Python library that parses Markdown and renders it to HTML through renderers and plugins.
+facts:
+  - field: homepage
+    value: https://mistune.lepture.com/en/latest/
+    url: https://mistune.lepture.com/en/latest/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mistune is a fast Python Markdown parser"
+  - field: repository
+    value: https://github.com/lepture/mistune
+    url: https://api.github.com/repos/lepture/mistune
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://mistune.lepture.com/en/latest/
+    url: https://mistune.lepture.com/en/latest/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mistune is a fast Python Markdown parser"
+  - field: firstRelease
+    value: 2014
+    url: https://pypi.org/pypi/mistune/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Hsiaoming Yang
+    url: https://github.com/lepture/mistune/blob/v3.4.0/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2014, Hsiaoming Yang"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/lepture
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/lepture/mistune
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [markdown-parser]
+    url: https://github.com/lepture/mistune/blob/v3.4.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A fast yet powerful Python Markdown parser with renderers and plugins"
+  - field: runtime
+    value: [python]
+    url: https://github.com/lepture/mistune/blob/v3.4.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A fast yet powerful Python Markdown parser with renderers and plugins"
+  - field: runtimeMin
+    value: "3.10"
+    url: https://github.com/lepture/mistune/blob/v3.4.0/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">=3.10"'
+  - field: installMethod
+    value: pip
+    url: https://github.com/lepture/mistune/blob/v3.4.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "$ pip install mistune"
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/lepture/mistune/blob/v3.4.0/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'license = {text = "BSD-3-Clause"}'
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/lepture/mistune/blob/v3.4.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mistune is licensed under BSD"
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/lepture/mistune/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-19
+    url: https://api.github.com/repos/lepture/mistune/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiName
+    value: mistune
+    url: https://pypi.org/pypi/mistune/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: "71197091 last month"
+    url: https://pypistats.org/api/packages/mistune/recent
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 331
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/mistune
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 64256
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/mistune
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 3085
+    url: https://api.github.com/repos/lepture/mistune
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 84
+    url: https://api.github.com/repos/lepture/mistune/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [parent, hqCountry, wikidata, forkOf, successorOf, alternativeTo, importsFrom, basedOn, headlessApi, runsAs, renderingModes, contentStore, databases, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, usageShare, reportedInstalls, npmName, rubygemsName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, lastCommitDate, latestPrereleaseDate, hostedOffering]
+unreadable: []
+notes: >
+  Accepted: a Markdown parser that Python web code calls to turn Markdown text into HTML (the README's Overview), installed with pip (criterion 2 and 3). The record's homepage is the docs site, whose PyPI Documentation link is the same address over HTTPS; the plain-HTTP address in the candidates row redirects to it. The PyPI version 3.4.0 declares requires-python >=3.10 and the tag's pyproject says the same, so runtimeMin is 3.10; the main branch pyproject says >=3.11, which is newer than the release and is left out. The LICENSE copyright line names Hsiaoming Yang with the year 2014, and the PyPI and GitHub license fields both say BSD-3-Clause. The highest stable GitHub release is v3.4.0 (2026-10-19), and the newest prerelease, v3.0.0rc5, is older, so latestPrereleaseDate is absent. firstRelease 2014 is the first PyPI upload 0.1.0 on 2014-02-26; the repository was created in February 2014. The README says create_markdown() escapes raw HTML by default and that mistune.html() enables raw HTML and several plugins, to be used for trusted input or with output sanitized elsewhere; both are features in prose, not fields. The README's benchmark table compares Mistune with markdown, markdown2, mistletoe and markdown_it; a benchmark table is not a statement of alternatives, so alternativeTo is absent. The README announces Wenmode, a Markdown parser by the same author that is inspired by lessons learned from Mistune; no sentence calls it a successor, so successorOf is absent. The pypistats figure is the last-month count read on 2026-11-16. The README's sponsors section names a commercial Office document converter as a sponsor; that is a sponsor, not a field.

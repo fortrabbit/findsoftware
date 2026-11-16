@@ -21,6 +21,7 @@ hosting:
 runtimeMin: node 20
 basedOn:
   - react
+  - mdx
 contentStore:
   - flat-file
 templating: jsx, mdx

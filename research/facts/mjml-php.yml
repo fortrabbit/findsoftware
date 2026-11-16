@@ -1,0 +1,113 @@
+id: mjml-php
+name: mjml-php
+status: accepted
+checkedAt: 2026-11-16
+description: PHP package that converts MJML email markup to HTML.
+facts:
+  - field: repository
+    value: https://github.com/spatie/mjml-php
+    url: https://api.github.com/repos/spatie/mjml-php
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: SPATIE BVBA
+    url: https://spatie.be/disclaimer
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The website spatie.be is an initiative of: SPATIE BVBA"
+  - field: hqCountry
+    value: BE
+    url: https://spatie.be/disclaimer
+    checkedAt: 2026-11-16
+    via: page
+    quote: "SPATIE BVBA Kruikstraat 22, Box 12 2018 Antwerp Belgium"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/spatie
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2023
+    url: https://api.github.com/repos/spatie/mjml-php/releases?per_page=100
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/spatie/mjml-php
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/spatie/mjml-php/blob/1.3.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "^8.2"'
+  - field: runtime
+    value: [node]
+    url: https://github.com/spatie/mjml-php/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Make sure you have installed Node 16 or higher."
+  - field: runtimeMin
+    value: PHP 8.2
+    url: https://github.com/spatie/mjml-php/blob/1.3.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "^8.2"'
+  - field: categories
+    value: [email-templating]
+    url: https://github.com/spatie/mjml-php/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Convert MJML to HTML using PHP"
+  - field: installMethod
+    value: composer
+    url: https://github.com/spatie/mjml-php/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "composer require spatie/mjml-php"
+  - field: packagistName
+    value: spatie/mjml-php
+    url: https://packagist.org/packages/spatie/mjml-php.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "1674445 (total)"
+    url: https://packagist.org/packages/spatie/mjml-php.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/spatie/mjml-php
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/spatie/mjml-php/blob/main/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: githubStargazers
+    value: 282
+    url: https://api.github.com/repos/spatie/mjml-php
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 11
+    url: https://api.github.com/repos/spatie/mjml-php/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/spatie/mjml-php/releases/tag/1.3.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-23
+    url: https://github.com/spatie/mjml-php/releases/tag/1.3.0
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, docs, pricingPage, paidEdition, basedOn, forkOf, successorOf, alternativeTo, importsFrom, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, renderingModes, runsAs, npmName, npmWeeklyDownloads, discord, forum, x, bluesky, mastodon, newsletter, subreddit, pluginDirectory, pluginCount, reportedInstalls, usageShare, endoflifeId, latestPrereleaseDate, dockerPulls, hostedOffering, selfHostOption]
+unreadable: []
+notes: >
+  The CSV homepage is a freek.dev blog post, not the project's own site, so no homepage is recorded; the repository README is the only project page. The LICENSE copyright line reads "spatie <freek@spatie.be>". The maintainer is recorded as SPATIE BVBA, the legal name the spatie.be disclaimer gives for the site and its open source work; a reviewer decides whether the LICENSE name "spatie" should stand instead, since both name the same company. The composer.json author is Freek Van der Herten, recorded in no field. The README says the package finds the node executable itself and that the MJML_NODE_PATH environment variable sets its path when it cannot, and it describes toHtml() as returning the converted HTML and convert() as returning the HTML with an errors() list for MJML's non-fatal errors. The README says the mjml JavaScript package must be installed on the server and asks for Node 16 or higher; the README says the package converts MJML and that the JavaScript mjml package must be installed, which is a dependency and no statement that the package wraps or extends MJML, so basedOn is absent (mjml has its own record, and the README's link to MJML sits in the sentence defining MJML); the Node requirement stays in the runtime fact but not in runtimeMin, because runtimeMin takes the manifest at the latest release tag. The README's Sidecar section names a companion package, spatie/mjml-sidecar, that deploys the conversion as a Lambda function through Sidecar in Laravel projects; Laravel is a deployment target there and not a parent, so no basedOn. The Packagist total is the figure the registry gave on 2026-11-16; the monthly figure in the same response was 220946 and is not recorded. The contributors count comes from the last page number of the contributors endpoint.

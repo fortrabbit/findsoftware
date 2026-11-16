@@ -1,0 +1,1 @@
+Mockito is a mocking framework for Java that creates test doubles for unit tests, with an API for stubbing calls and verifying interactions. Build tools such as Maven and Gradle fetch it from Maven Central, and the project site, linked from the README, holds the documentation. The project wiki says Mockito started as a fork of EasyMock and shares no code with it.

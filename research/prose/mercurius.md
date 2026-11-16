@@ -1,0 +1,1 @@
+Mercurius is a GraphQL adapter for Fastify that runs as a Fastify plugin on Node.js. An application registers it on a Fastify instance together with a schema and resolvers, and the same server then answers GraphQL queries. The README lists subscriptions, batched queries and persisted queries among its features; federation and gateway support ship as separate packages.

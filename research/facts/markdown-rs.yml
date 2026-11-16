@@ -1,0 +1,131 @@
+id: markdown-rs
+name: markdown-rs
+status: accepted
+checkedAt: 2026-11-16
+description: CommonMark-compliant Markdown parser for Rust that builds a syntax tree and compiles Markdown to HTML, with GFM, MDX and math extensions.
+facts:
+  - field: repository
+    value: https://github.com/wooorm/markdown-rs
+    url: https://github.com/wooorm/markdown-rs
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://docs.rs/markdown/latest/markdown/
+    url: https://github.com/wooorm/markdown-rs/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "[docs]: https://docs.rs/markdown/latest/markdown/"
+  - field: maintainer
+    value: Titus Wormer
+    url: https://github.com/wooorm/markdown-rs/blob/main/license
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2022 Titus Wormer"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/wooorm/markdown-rs/blob/main/license
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2022 Titus Wormer"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/wooorm
+    checkedAt: 2026-11-16
+    via: api
+  - field: forum
+    value: https://github.com/wooorm/markdown-rs/discussions
+    url: https://github.com/wooorm/markdown-rs/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "[discussions]: https://github.com/wooorm/markdown-rs/discussions"
+  - field: categories
+    value: [markdown-parser]
+    url: https://github.com/wooorm/markdown-rs/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "CommonMark compliant markdown parser in Rust with ASTs and extensions"
+  - field: language
+    value: Rust
+    url: https://github.com/wooorm/markdown-rs
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [rust]
+    url: https://github.com/wooorm/markdown-rs/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "is an open source markdown parser written in Rust"
+  - field: runtimeMin
+    value: "1.56"
+    url: https://github.com/wooorm/markdown-rs/blob/1.0.0/Cargo.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'rust-version = "1.56"'
+  - field: installMethod
+    value: [cargo add]
+    url: https://github.com/wooorm/markdown-rs/blob/main/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "cargo add markdown"
+  - field: license
+    value: MIT
+    url: https://github.com/wooorm/markdown-rs/blob/main/license
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/wooorm/markdown-rs
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/wooorm/markdown-rs/releases/tag/1.0.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2025-04-23
+    url: https://github.com/wooorm/markdown-rs/releases/tag/1.0.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2022
+    url: https://github.com/wooorm/markdown-rs/releases/tag/1.0.0-alpha.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: crateName
+    value: markdown
+    url: https://crates.io/api/v1/crates/markdown
+    checkedAt: 2026-11-16
+    via: api
+  - field: crateDownloads
+    value: 14429742 total
+    url: https://crates.io/api/v1/crates/markdown
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1595
+    url: https://github.com/wooorm/markdown-rs
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 16
+    url: https://api.github.com/repos/wooorm/markdown-rs/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 86
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/markdown
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 697
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/markdown
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, hqCountry, pricingPage, discord, x, bluesky, mastodon, newsletter, subreddit, sso, adminUi, databases, contentStore, headlessApi, templating, i18n, multisite, livePreview, userRoles, renderingModes, runsAs, paidEdition, basedOn, forkOf, successorOf, alternativeTo, pluginDirectory, usageShare, reportedInstalls, endoflifeId]
+unreadable: []
+notes: >
+  The project has no homepage of its own: the repository links the crate page and docs.rs, and docs.rs is the registry's rendering of the crate docs, so it is recorded as docs only. The crates.io name markdown has versions 0.0.1 to 0.1.1 dated 2015, before this repository existed; the README thanks johannhof for the crate name, so those versions are another project's and firstRelease counts this project's first GitHub pre-release, 1.0.0-alpha.1 (2022-10-14). The crate figure covers all versions of the markdown crate and is a total. The README states that markdown-rs has a sibling JavaScript project, micromark, and that mdxjs-rs wraps it to compile MDX; these are relationships named on the page, not basedOn or alternativeTo statements. The README's install line says rust edition 2018 and version 1.56 or later; the manifest at the 1.0.0 tag gives rust-version 1.56, taken as runtimeMin. The repository's last push is the 1.0.0 release date (2025-04-23); the project is not archived and the README states no end, so no status change. The README's Sponsor section names GitHub Sponsors and OpenCollective for the unified project; not fields here. The license is MIT with the copyright holder Titus Wormer; the README gives the same MIT license with the same holder.
+  The README states that the state machine is no_std with alloc, that the code is 100% safe Rust, and that HTML output is safe by default: dangerous HTML and protocols are encoded or dropped unless allow_dangerous_html or allow_dangerous_protocol is turned on. It also says MDX syntax errors come back through a Result from to_html_with_options, and advises capping input size for untrusted content.
+  The README says the state machine emits concrete tokens so that every byte is accounted for, with positional info; the API then exposes an AST (mdast) through to_mdast, whose example output carries a position on every node, or compiles to HTML through to_html; to_html_with_options takes an Options value, and Options::gfm() switches on GFM; the README lists MDX, frontmatter and math as extensions that are not on by default.
