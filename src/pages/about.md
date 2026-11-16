@@ -2,7 +2,7 @@
 layout: ../layouts/Article.astro
 title: About
 published: 2026-11-05
-updated: 2026-11-10
+updated: 2026-11-16
 description: Why FindSoftware, and by whom.
 lead: FindSoftware is a register of software to build websites with, by language, recorded field by field.
 ---
@@ -11,9 +11,9 @@ FindSoftware lists tools web creators build with: content management systems, we
 
 ## Motivation
 
-There is so much nice software out there, so many flavors and colors, not only the big 20. This project aims to make it easier to discover and use. That goes for people and for coding agents, especially the latter, as their role in choosing software is getting more and more important. Software creation will change because of that. Hopefully this page can have a positive impact on variety.
+There is so much nice software out there, so many flavors and colors, not only the big 20. This project aims to make that software easier to discover and use. That goes for people and for coding agents, especially the latter, as their role in choosing software is getting more and more important. Software creation will change because of that. Hopefully this project can have a positive impact on variety.
 
-I run [fortrabbit](https://www.fortrabbit.com), a hosting company specialized in PHP. I have a natural interest in seeing what people build websites with today. No list I found showed that like this. FindSoftware is the bigger sibling of [FindHost](https://www.findhost.app), a register of hosting providers built the same way.
+I run [fortrabbit](https://www.fortrabbit.com), a hosting company specializing in PHP. I have a natural interest in seeing what people build websites with today. No list I found showed that like this. FindSoftware is the bigger sibling of [FindHost](https://www.findhost.app), a register of hosting providers built the same way.
 
 Make no mistake. This is also a cheap marketing trick. FindSoftware shows fortrabbit as a hosting provider and as the publisher. I hope it is not too biased.
 
@@ -40,7 +40,7 @@ Take them with a big grain of salt. The data is fuzzy. Different ecosystems coun
 
 ## Momentum
 
-I found myself overwhelmed when looking at the total data set of currently 2K+ software projects. The website gets a bit slow with so many records, but it also feels like a wall. The default momentum filter aims to show software that is currently popular, while keeping the old dinosaurs out. Momentum is measured by a script from public APIs. The [full list](/all/) holds the rest as well. A record has momentum when it had a release, a pre-release or a push to its repository in the last 12 months, and one of these:
+I found myself overwhelmed when looking at the total data set, currently 3K+ software projects. The website gets a bit slow with so many records, but it also feels like a wall. The default momentum filter aims to show software that is currently popular, while keeping the old dinosaurs out. Momentum is measured by a script from public APIs. The [full list](/all/) holds the rest as well. A record has momentum when it had a release, a pre-release or a push to its repository in the last 12 months, and one of these:
 
 - **Activity:** at least 200 commits to the default branch in the last 13 weeks, and in the last 26 weeks at least twice as many as in the 26 before.
 - **Downloads:** doubled or more against the same weeks a year ago, to at least 100,000 npm downloads in 28 days or a daily average of 1,000 on Packagist.
@@ -56,7 +56,7 @@ A record page names up to four hosts from [FindHost](https://www.findhost.app): 
 
 AI agents did most of the work, from research to code. I curated and micromanaged heavily, but barely looked at the code.
 
-Machines research the records, scripts check them against sources, and I read them after, but only superficially. So, please expect mistakes.
+Machines research the records, scripts check them against sources, and I read them afterwards, but only superficially. So, please expect mistakes.
 
 Records are researched from primary sources only: the project's own site, its repository and package registries, never directories or comparison sites. A second agent checks every fact against its quote, and a script fetches each quoted page again to confirm the words are still there. The data is licensed CC BY 4.0, the code MIT.
 
@@ -64,4 +64,4 @@ Logos belong to the projects. Each one was fetched from the project's own site.
 
 ## State
 
-This is an early version. Research runs one area at a time, starting with CMSs, frameworks and static site generators.
+This is an early version. Research covers most areas now; helper libraries are the last to finish.
