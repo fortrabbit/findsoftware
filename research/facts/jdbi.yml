@@ -1,0 +1,142 @@
+id: jdbi
+name: Jdbi
+status: accepted
+checkedAt: 2026-11-16
+description: Java library for running SQL against relational databases over JDBC, with a fluent API and a declarative SQL Object API.
+facts:
+  - field: homepage
+    value: https://jdbi.org/
+    url: https://jdbi.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "a convenience library to make Java database operations simpler and more pleasant to program than raw JDBC"
+  - field: repository
+    value: https://github.com/jdbi/jdbi
+    url: https://api.github.com/repos/jdbi/jdbi
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://jdbi.org/
+    url: https://jdbi.org/
+    checkedAt: 2026-11-16
+    via: page
+  - field: firstRelease
+    value: 2007
+    url: https://repo1.maven.org/maven2/org/jdbi/jdbi/
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Jdbi
+    url: https://api.github.com/users/jdbi
+    checkedAt: 2026-11-16
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/jdbi
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/jdbi/jdbi
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [sql]
+    url: https://jdbi.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "a convenience library to make Java database operations simpler and more pleasant to program than raw JDBC"
+  - field: runtime
+    value: [jvm]
+    url: https://jdbi.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Jdbi runs on all Java versions 17 or later."
+  - field: runtimeMin
+    value: "17"
+    url: https://jdbi.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Jdbi runs on all Java versions 17 or later."
+  - field: installMethod
+    value: maven
+    url: https://jdbi.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "For Apache Maven:"
+  - field: installMethod
+    value: gradle
+    url: https://jdbi.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "For Gradle:"
+  - field: mavenCoordinates
+    value: org.jdbi:jdbi3-core
+    url: https://repo1.maven.org/maven2/org/jdbi/jdbi3-core/maven-metadata.xml
+    checkedAt: 2026-11-16
+    via: api
+  - field: databases
+    value: [postgres]
+    url: https://jdbi.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Support for Postgres data types."
+  - field: databases
+    value: [mysql]
+    url: https://jdbi.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Support for MySQL data types."
+  - field: databases
+    value: [sqlite]
+    url: https://jdbi.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Support for sqlite data types."
+  - field: databases
+    value: [oracle]
+    url: https://jdbi.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Support Oracle returning DML statements."
+  - field: license
+    value: Apache-2.0
+    url: https://jdbi.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Jdbi is licensed under the commercial friendly Apache 2.0 license."
+  - field: forum
+    value: https://github.com/jdbi/jdbi/discussions
+    url: https://jdbi.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Discussions all happen here"
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/jdbi/jdbi
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://github.com/jdbi/jdbi/releases/tag/v3.55.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-27
+    url: https://github.com/jdbi/jdbi/releases/tag/v3.55.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2146
+    url: https://api.github.com/repos/jdbi/jdbi
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 141
+    url: https://api.github.com/repos/jdbi/jdbi
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, parent, wikidata, endoflifeId, runsAs, basedOn, contentStore, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, pricingPage, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, pypiName, packagistName, dependentPackages, dependentRepos, httpArchiveSites]
+unreadable: []
+notes: >
+  Status accepted. Criterion 1: Jdbi is a library an application calls to run SQL, and the homepage says it is not an ORM; it is in the dataset as a helper library, category sql. Criterion 2: Apache-2.0 on GitHub, published to Maven Central. Criterion 3: the developer guide gives the Maven and Gradle coordinates. The jdbi/jdbi repository is a multi-module build; stars and contributors belong to the whole repository, and the Maven artifact is jdbi3-core, the core module the guide names first. Maven Central publishes no download figure. The firstRelease year is the oldest Maven Central upload of org.jdbi:jdbi, version 2.0.1 on 2007-06-26 (the directory listing); the GitHub tag 1.2.2 has a commit dated 2005-01-27, but the first published artifact is the registry date. The maintainer is the jdbi GitHub organization: the LICENSE is the Apache text without a copyright line and the repository has no NOTICE file. The guide says the project receives the Spotify FOSS 2023 Fund, which is funding, not maintenance. The guide says Jdbi runs on Java 17 or later and that releases use Java 17 bytecode; the guide says Jdbi ended support for Java 11 with version 3.50. The databases are the vendors whose modules the guide lists (jdbi3-postgres, jdbi3-mysql, jdbi3-sqlite, jdbi3-oracle12) plus H2 in its testing and SQL sections, which is not in the databases vocabulary. The guide says Apache Freemarker can render SQL statements; that is SQL templating, not web templating, so no templating value is recorded. The guide also documents Kotlin, Scala and Clojure use from the JVM, the Guava, Joda-Time, Spring and Vavr plugins and Commons Text as a SQL renderer; these are not recorded as fields. The guide is the 3.55.1-SNAPSHOT development build of the documentation; the release line is 3.55.0. The homepage is served over HTTPS, so the http link in the candidates list is not used.

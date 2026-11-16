@@ -1,0 +1,1 @@
+Hypothesis is a property-based testing library for Python. A test declares the range of inputs it should pass for, using strategies, and Hypothesis chooses inputs from that range, including edge cases a developer might not have written by hand. When a test fails, Hypothesis reports the simplest failing input it can find.

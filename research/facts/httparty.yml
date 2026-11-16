@@ -1,0 +1,106 @@
+id: httparty
+name: HTTParty
+status: accepted
+checkedAt: 2026-11-16
+description: Ruby HTTP client library that wraps web requests in class methods and a mixin for building API client classes.
+facts:
+  - field: repository
+    value: https://github.com/jnunemaker/httparty
+    url: https://api.github.com/repos/jnunemaker/httparty
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/jnunemaker/httparty/tree/main/docs
+    url: https://raw.githubusercontent.com/jnunemaker/httparty/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: forum
+    value: https://github.com/jnunemaker/httparty/discussions
+    url: https://raw.githubusercontent.com/jnunemaker/httparty/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: categories
+    value: [data-fetching]
+    url: https://github.com/jnunemaker/httparty/blob/v0.24.3/httparty.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: "makes consuming restful web services dead easy"
+  - field: installMethod
+    value: gem
+    url: https://raw.githubusercontent.com/jnunemaker/httparty/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "gem install httparty"
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/jnunemaker/httparty
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: ruby
+    url: https://raw.githubusercontent.com/jnunemaker/httparty/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Ruby 2.7.0 or higher"
+  - field: runtimeMin
+    value: "2.7"
+    url: https://github.com/jnunemaker/httparty/blob/v0.24.3/httparty.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: "'>= 2.7.0'"
+  - field: license
+    value: MIT
+    url: https://github.com/jnunemaker/httparty/blob/v0.24.3/httparty.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: "s.licenses    = ['MIT']"
+  - field: maintainer
+    value: John Nunemaker
+    url: https://raw.githubusercontent.com/jnunemaker/httparty/main/MIT-LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2008 John Nunemaker"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/jnunemaker
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/jnunemaker/httparty/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-30
+    url: https://api.github.com/repos/jnunemaker/httparty/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2009
+    url: https://rubygems.org/api/v1/versions/httparty.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 5900
+    url: https://api.github.com/repos/jnunemaker/httparty
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 210
+    url: https://api.github.com/repos/jnunemaker/httparty/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsName
+    value: httparty
+    url: https://rubygems.org/api/v1/gems/httparty.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsDownloads
+    value: "495267837 total"
+    url: https://rubygems.org/api/v1/gems/httparty.json
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, renderingModes, runsAs, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, pricingPage, paidEdition, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, packagistName, pypiName, wikidata, endoflifeId, latestPrereleaseDate, lastCommitDate]
+unreadable: []
+notes: >
+  Boundary ruling: an HTTP client is accepted (the Faraday and Got ruling), so the CSV boundary state is not a record status. No homepage: the repository is the only project site, and the RubyGems homepage is the repository. The README Install section gives the gem install command under its Install heading, which is the installMethod quote. The MIT-LICENSE copyright line names John Nunemaker; the gemspec authors also list Sandro Turriate, kept here only in notes. The gemspec summary is "Makes http fun! Also, makes consuming restful web services dead easy." The README describes an httparty executable that prints a response and can format it as XML or JSON; a command-line tool is no runsAs statement, so runsAs stays out. The docs README says that when a request sets Accept-Encoding, the br (Brotli), compress (LZW) and zstd content encodings are decompressed only with separate gems (brotli, ruby-lzws, zstd-ruby). The docs README says a response with an application/json content type is parsed into Ruby objects such as a hash or array, and that the format option suppresses this. The README shows a class that includes HTTParty, sets base_uri and calls get on its own paths, and a response that exposes body, code, message and headers. The README says "Ruby 2.7.0 or higher" and the gemspec at the latest release tag requires 2.7.0 or higher. Stars and contributors are for the repository. The RubyGems total counts downloads since the gem was first uploaded; its first upload, 0.1.0, is from 2009. The GitHub release list is the source for currentMajor; the 0.x line has no major 1 yet.

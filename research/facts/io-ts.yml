@@ -1,0 +1,106 @@
+id: io-ts
+name: io-ts
+status: accepted
+checkedAt: 2026-11-16
+description: TypeScript runtime type system whose codecs decode, encode and type-check values while the program runs.
+facts:
+  - field: homepage
+    value: https://gcanti.github.io/io-ts/
+    url: https://gcanti.github.io/io-ts/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Runtime type system for IO decoding/encoding"
+  - field: repository
+    value: https://github.com/gcanti/io-ts
+    url: https://api.github.com/repos/gcanti/io-ts
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://gcanti.github.io/io-ts/docs/modules
+    url: https://github.com/gcanti/io-ts/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Documentation of the main stable features"
+  - field: maintainer
+    value: Giulio Canti
+    url: https://github.com/gcanti/io-ts/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2017 Giulio Canti"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/gcanti/io-ts
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: "2017"
+    url: https://api.github.com/repos/gcanti/io-ts/commits/0.0.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/gcanti/io-ts
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [validation]
+    url: https://gcanti.github.io/io-ts/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "we can validate the type at runtime"
+  - field: license
+    value: MIT
+    url: https://github.com/gcanti/io-ts/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: currentMajor
+    value: "2"
+    url: https://api.github.com/repos/gcanti/io-ts/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2024-12-10
+    url: https://api.github.com/repos/gcanti/io-ts/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://github.com/gcanti/io-ts/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm i io-ts fp-ts"
+  - field: npmName
+    value: io-ts
+    url: https://registry.npmjs.org/io-ts/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: 3877224 (2026-11-01 to 2026-11-07)
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/io-ts
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 6812
+    url: https://api.github.com/repos/gcanti/io-ts
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 33
+    url: https://api.github.com/repos/gcanti/io-ts/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 1416
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/io-ts
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 44496
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/io-ts
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, adminUi, contentStore, databases, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runtime, runtimeMin, runsAs, hostedOffering, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, forum, wikidata, endoflifeId, selfHostOption, reportedInstalls, usageShare, maintainerType, regions, apiLimits, packagistName, packagistDownloads, pypiName]
+unreadable: []
+notes: >
+  The package needs fp-ts, which the README names as a peer dependency; a dependency is not basedOn, so none is recorded. The README's stable features are the index module, and the experimental modules (Decoder, Encoder, Codec, Eq, Schema) from version 2.2 are described as backward-incompatible with the stable ones and at risk of changing without notice; the README says so, and no record field covers it. The GitHub topics name runtime, types, typescript, inference and validation; the category is recorded from the homepage sentence about validating types at runtime. The CSV row also lists schema; it is left out because the only schema is the experimental Schema module, which the README says is an advanced feature in flux. The latest release (2.2.22) and the last push are both dated 2024-12-10; the npm latest tag is the same version and the package is not deprecated. The oldest tag is 0.0.1, dated 2017-02-01, which matches the npm first upload. The repository holds 109 tags.

@@ -1,0 +1,129 @@
+id: juice
+name: Juice
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript library that inlines CSS rules into the style attributes of HTML, used for HTML emails and embeds.
+facts:
+  - field: homepage
+    value: https://automattic.github.io/juice/
+    url: https://automattic.github.io/juice/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Inline CSS into style attributes, for HTML emails and embeds."
+  - field: repository
+    value: https://github.com/Automattic/juice
+    url: https://api.github.com/repos/Automattic/juice
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/Automattic/juice#readme
+    url: https://raw.githubusercontent.com/Automattic/juice/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Juice has a number of functions based on whether you want to process a file, HTML string, or a cheerio document"
+  - field: maintainer
+    value: Automattic
+    url: https://raw.githubusercontent.com/Automattic/juice/master/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2021 Automattic"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Automattic
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/Automattic/juice
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/Automattic/juice/master/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/Automattic/juice/master/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/Automattic/juice
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [css-inliner, email-templating]
+    url: https://raw.githubusercontent.com/Automattic/juice/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "HTML emails. For CSS support in email clients"
+  - field: runtime
+    value: [node]
+    url: https://raw.githubusercontent.com/Automattic/juice/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Juice's default entry imports Node-only modules"
+  - field: runtimeMin
+    value: "22"
+    url: https://raw.githubusercontent.com/Automattic/juice/v12.2.3/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"node": ">=22.12.0"'
+  - field: installMethod
+    value: npm install
+    url: https://raw.githubusercontent.com/Automattic/juice/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "you should `npm install juice -g` so it is globally available"
+  - field: npmName
+    value: juice
+    url: https://registry.npmjs.org/juice/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "4634599 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/juice
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 441
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/juice
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 7645
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/juice
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 3286
+    url: https://api.github.com/repos/Automattic/juice
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 67
+    url: https://api.github.com/repos/Automattic/juice/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 12
+    url: https://api.github.com/repos/Automattic/juice/releases/tags/v12.2.3
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-10
+    url: https://api.github.com/repos/Automattic/juice/releases/tags/v12.2.3
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: https://registry.npmjs.org/juice
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, pricingPage, forum, discord, x, bluesky, mastodon, newsletter, subreddit, parent, sso, userRoles, adminUi, headlessApi, templating, i18n, multisite, livePreview, runsAs, renderingModes, databases, contentStore, selfHostOption, paidEdition, hostedOffering, forkOf, successorOf, alternativeTo, importsFrom, basedOn, wikidata, endoflifeId, latestPrereleaseDate, pluginDirectory, pluginCount, packagistName, reportedInstalls, usageShare, pypiDownloads]
+unreadable: []
+notes: >
+  The maintainer is the copyright holder on the MIT LICENSE, Automattic; no page read names its legal form, country or a full address, so hqCountry is absent. The repository is a single package. The default entry runs in Node.js; juice/client is the browser entry, which exposes the inlining functions but not the file or remote-resource ones (no runsAs, since the project names both Node and the browser). Juice is ESM-only as of v12. The repository's README lists a PROJECTS.md page of projects that use Juice; no field takes it. The npm figure is the juice package the README names; the sums are daily downloads for 2026-11-01 to 2026-11-07. The stable release list starts at v1.0.2 (2015) on GitHub; the tags 0.0.1 to 0.0.3 date from 2011, and npm starts at 0.0.1 on 2011-10-09, so firstRelease is 2011. Rules that use pseudo-classes such as :hover cannot be inlined and stay in a style tag, per the README. The functions take an HTML string, a file, a cheerio document or remote resources, and the command-line tool works on files and directories. The README lists HTML emails and embedded HTML in third-party websites as its uses. The options object controls media queries, font faces, table attributes and template code blocks such as EJS, Handlebars and FreeMarker. The homepage is the GitHub Pages site the repository names, and the README links it as the web client to try the library.

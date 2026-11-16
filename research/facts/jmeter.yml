@@ -1,0 +1,113 @@
+id: jmeter
+name: Apache JMeter
+status: accepted
+checkedAt: 2026-11-16
+description: Java application for load testing and measuring the performance of web and other protocol services, with a GUI for building test plans and a command-line mode for runs.
+facts:
+  - field: homepage
+    value: https://jmeter.apache.org/
+    url: https://jmeter.apache.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "a 100% pure Java application designed to load test functional behavior and measure performance"
+  - field: repository
+    value: https://github.com/apache/jmeter
+    url: https://api.github.com/repos/apache/jmeter
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://jmeter.apache.org/usermanual/get-started.html
+    url: https://jmeter.apache.org/usermanual/get-started.html
+    checkedAt: 2026-11-16
+    via: page
+  - field: firstRelease
+    value: 1998
+    url: https://jmeter.apache.org/changes_history.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Apache JMeter 1.0 - Dec 15 1998"
+  - field: maintainer
+    value: The Apache Software Foundation
+    url: https://raw.githubusercontent.com/apache/jmeter/master/NOTICE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright 1998-2024 The Apache Software Foundation"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/apache
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/apache/jmeter
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [testing]
+    url: https://jmeter.apache.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "a 100% pure Java application designed to load test functional behavior and measure performance"
+  - field: runtime
+    value: [jvm]
+    url: https://jmeter.apache.org/usermanual/get-started.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "JMeter is compatible with Java 8 or higher."
+  - field: runtimeMin
+    value: "8"
+    url: https://jmeter.apache.org/usermanual/get-started.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "JMeter is compatible with Java 8 or higher."
+  - field: installMethod
+    value: binary download
+    url: https://jmeter.apache.org/usermanual/get-started.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "To install a release build, simply unzip the zip/tar file into the directory"
+  - field: runsAs
+    value: [local]
+    url: https://jmeter.apache.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "CLI mode (Command-line mode (previously called Non GUI) / headless mode) to load test from any Java compatible OS"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/apache/jmeter
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/apache/jmeter
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 5
+    url: https://github.com/apache/jmeter/releases/tag/rel/v5.6.3
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2024-01-09
+    url: https://github.com/apache/jmeter/releases/tag/rel/v5.6.3
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 9604
+    url: https://api.github.com/repos/apache/jmeter
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 91
+    url: https://api.github.com/repos/apache/jmeter
+    checkedAt: 2026-11-16
+    via: api
+  - field: x
+    value: https://twitter.com/ApacheJMeter
+    url: https://jmeter.apache.org/
+    checkedAt: 2026-11-16
+    via: page
+notFound: [hqCountry, parent, wikidata, endoflifeId, basedOn, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, pricingPage, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, usageShare, reportedInstalls, npmName, pypiName, packagistName, mavenCoordinates, dependentPackages, dependentRepos, httpArchiveSites]
+unreadable: []
+notes: >
+  Status accepted. Criterion 1: JMeter is a load-testing tool that test engineers use against a site or service; the testing category follows the dataset's rule for load-testing tools (the load-testing group is not in the category vocabulary). Criterion 2: Apache-2.0 source on GitHub, and binary releases from the project's download page. Criterion 3: the user manual's installation paragraph gives the unzip route. Stars and contributors are those of the apache/jmeter repository. The firstRelease year is the changelog entry Apache JMeter 1.0 of Dec 15 1998 (Initial version); the oldest GitHub tag is 5.2-rc4. The download page lists the 5.6.3 binaries with the note Requires Java 8+, which matches the user manual. The NOTICE copyright line names The Apache Software Foundation, and the homepage footer names the foundation too; the foundation is the maintainer here because the project is an ASF project and the NOTICE names it. The build from source route (apache-jmeter-5.6.3_src) is listed on the download page and is not recorded as a separate installMethod. The distributed-testing server mode (jmeter-server) and the CLI mode are documented in the user manual; the homepage lists a command-line mode to load test from any Java compatible OS, the runsAs local statement. The homepage names the Twitter account ApacheJMeter in its footer; it is the project's x fact. The homepage also names Maven, Gradle and Jenkins integrations for continuous integration through third-party libraries; those are not install routes for JMeter itself. The homepage says JMeter is not a browser: it works at protocol level and does not execute the JavaScript in HTML pages or render them. The user manual says GUI mode should only be used for creating the test script and CLI mode must be used for load testing, and that the release is started with the jmeter script in its bin directory.

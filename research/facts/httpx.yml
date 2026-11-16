@@ -1,0 +1,125 @@
+id: httpx
+name: HTTPX
+status: accepted
+checkedAt: 2026-11-16
+description: Python 3 HTTP client library with sync and async APIs, HTTP/2 support and an integrated command-line client.
+facts:
+  - field: homepage
+    value: https://www.python-httpx.org/
+    url: https://raw.githubusercontent.com/encode/httpx/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Project documentation is available at"
+  - field: repository
+    value: https://github.com/encode/httpx
+    url: https://api.github.com/repos/encode/httpx
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://www.python-httpx.org/
+    url: https://raw.githubusercontent.com/encode/httpx/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Project documentation is available at"
+  - field: pluginDirectory
+    value: https://www.python-httpx.org/third_party_packages/
+    url: https://raw.githubusercontent.com/encode/httpx/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "To find out about tools that integrate with HTTPX, see"
+  - field: categories
+    value: [data-fetching]
+    url: https://raw.githubusercontent.com/encode/httpx/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "HTTPX is a fully featured HTTP client library for Python 3"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/encode/httpx
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: python
+    url: https://raw.githubusercontent.com/encode/httpx/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "HTTPX is a fully featured HTTP client library for Python 3"
+  - field: runtimeMin
+    value: "3.8"
+    url: https://github.com/encode/httpx/blob/0.28.1/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">=3.8"'
+  - field: installMethod
+    value: pip
+    url: https://raw.githubusercontent.com/encode/httpx/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Install HTTPX using pip"
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/encode/httpx/blob/0.28.1/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'license = "BSD-3-Clause"'
+  - field: maintainer
+    value: Encode OSS Ltd
+    url: https://raw.githubusercontent.com/encode/httpx/master/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright © 2019, Encode OSS Ltd."
+  - field: hqCountry
+    value: GB
+    url: https://www.encode.io/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Encode OSS is a UK limited company"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/encode
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/encode/httpx/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2024-12-06
+    url: https://api.github.com/repos/encode/httpx/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-08-31
+    url: https://pypi.org/pypi/httpx/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2019
+    url: https://pypi.org/pypi/httpx/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 15796
+    url: https://api.github.com/repos/encode/httpx
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 230
+    url: https://api.github.com/repos/encode/httpx/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiName
+    value: httpx
+    url: https://pypi.org/pypi/httpx/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: "192585518 (last week)"
+    url: https://pypistats.org/api/packages/httpx/recent
+    checkedAt: 2026-11-16
+    via: api
+notFound: [renderingModes, runsAs, parent, basedOn, forkOf, successorOf, alternativeTo, pricingPage, paidEdition, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, packagistName, wikidata, endoflifeId, lastCommitDate]
+unreadable: []
+notes: >
+  Boundary ruling: an HTTP client is accepted (the Faraday, Got and HTTParty ruling), so the CSV boundary state is not a record status. The README says "HTTPX requires Python 3.9+", but the pyproject at the latest release tag says requires-python ">=3.8" and PyPI repeats that for 0.28.1; runtimeMin follows the manifest, and a reviewer should decide whether the README line should win. The LICENSE.md copyright line names Encode OSS Ltd. The Encode website says "Encode OSS is a UK limited company, trading since 2016", which names the country for the recorded maintainer, so hqCountry is GB. The latest stable release is 0.28.1 on GitHub and PyPI (December 2024). PyPI lists 1.0 development releases; the newest upload, 1.0.dev6 on 2026-08-31, sets latestPrereleaseDate. The GitHub tags also include a 1.0.0.beta0 tag whose date was not checked, so the PyPI date stands. The README says HTTPX is a "broadly requests-compatible API" and that its API layout follows requests, with credit to urllib3 for networking design; the project does not say it is based on requests, so basedOn stays out. The README lists HTTP/2, sync and async APIs, WSGI and ASGI transports, an integrated command-line client (httpx[cli]) and an optional socks extra; these are coined kinds kept in notes. The PyPI figure is the pypistats last-week count for the httpx package; the PyPI JSON gives the date of the first upload, 0.6.7 in 2019, and the first GitHub tag, 0.0.1, is from 2019 as well. Stars and contributors are for the repository.

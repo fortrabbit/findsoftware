@@ -1,0 +1,98 @@
+id: httpexpect
+name: httpexpect
+status: accepted
+checkedAt: 2026-11-16
+description: Go library for end-to-end HTTP and REST API tests, with chainable request builders and response assertions.
+facts:
+  - field: repository
+    value: https://github.com/gavv/httpexpect
+    url: https://api.github.com/repos/gavv/httpexpect
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://pkg.go.dev/github.com/gavv/httpexpect/v2
+    url: https://raw.githubusercontent.com/gavv/httpexpect/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Documentation is available on pkg.go.dev"
+  - field: forum
+    value: https://github.com/gavv/httpexpect/discussions
+    url: https://raw.githubusercontent.com/gavv/httpexpect/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Community forum and Q&A board is right on GitHub"
+  - field: discord
+    value: https://discord.gg/5SCPCuCWA9
+    url: https://raw.githubusercontent.com/gavv/httpexpect/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "you can join discord chat"
+  - field: categories
+    value: [api-testing]
+    url: https://raw.githubusercontent.com/gavv/httpexpect/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "end-to-end HTTP and REST API testing for Go"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/gavv/httpexpect
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: go
+    url: https://raw.githubusercontent.com/gavv/httpexpect/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "HTTP and REST API testing for Go (golang)"
+  - field: runtimeMin
+    value: "1.19"
+    url: https://github.com/gavv/httpexpect/blob/v2.17.0/go.mod
+    checkedAt: 2026-11-16
+    via: page
+    quote: "go 1.19"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/gavv/httpexpect/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: maintainer
+    value: Victor Gaydov
+    url: https://raw.githubusercontent.com/gavv/httpexpect/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) Victor Gaydov and contributors."
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/gavv
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/gavv/httpexpect/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2025-03-04
+    url: https://api.github.com/repos/gavv/httpexpect/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2019
+    url: https://api.github.com/repos/gavv/httpexpect/commits/v1.0.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2723
+    url: https://api.github.com/repos/gavv/httpexpect
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 72
+    url: https://api.github.com/repos/gavv/httpexpect/contributors
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, installMethod, renderingModes, runsAs, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, pricingPage, paidEdition, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pluginDirectory, pluginCount, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, packagistName, pypiName, wikidata, endoflifeId, latestPrereleaseDate, lastCommitDate]
+unreadable: []
+notes: >
+  Boundary: none; accepted as a testing library, matching the CSV row. No homepage: the CSV homepage is pkg.go.dev, which hosts the module reference rather than the project's own site, so the pkg.go.dev link is the docs field. The README has an import path under Versioning and Quick start but no install command and no sentence naming a route; installMethod is left out for a reviewer to decide. The README says httpexpect is built "on top of net/http and several utility packages"; net/http is the Go standard library and has no record id, so basedOn stays out. The Similar packages section lists gorequest, apitest, baloo, gofight, go-hit, frisby, forest and restit; none has a record id, so alternativeTo stays out. The README names testify and the standard testing package as failure reporters and lists WebSocket support, JSON Schema and JSONPath assertions, and reusable builders; these are coined kinds kept in notes. The README describes httpexpect as a set of chainable builders for HTTP requests and assertions for HTTP responses and payloads, and names the standard testing package and testify for failure reports. It says request payloads can be JSON, urlencoded or multipart forms, that a test can talk to a server through a real HTTP client or invoke the net/http or fasthttp handler directly, and that JSON Schema validation is supported through gojsonschema. The LICENSE copyright line names Victor Gaydov and contributors; the README Donating section speaks of "my open-source work", which matches. The current stable branch is v2, and the highest stable release is v2.17.0. firstRelease is the 2019 commit date of the oldest tag, v1.0.0, which is older than the v2 module's first Go proxy version. Stars and contributors are for the repository.

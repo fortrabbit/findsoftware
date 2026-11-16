@@ -1,0 +1,129 @@
+id: jsoneditor
+name: JSON Editor
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript component that provides a web-based editor for viewing, editing, formatting and validating JSON.
+facts:
+  - field: repository
+    value: https://github.com/josdejong/jsoneditor
+    url: https://api.github.com/repos/josdejong/jsoneditor
+    checkedAt: 2026-11-16
+    via: api
+  - field: homepage
+    value: https://jsoneditoronline.org
+    url: https://registry.npmjs.org/jsoneditor
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/josdejong/jsoneditor/blob/master/docs/usage.md
+    url: https://github.com/josdejong/jsoneditor/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: firstRelease
+    value: 2013
+    url: https://registry.npmjs.org/jsoneditor
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Jos de Jong
+    url: https://github.com/josdejong/jsoneditor/blob/master/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"author": "Jos de Jong'
+  - field: maintainerType
+    value: individual
+    url: https://github.com/josdejong/jsoneditor/blob/master/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"author": "Jos de Jong'
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/josdejong
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/josdejong/jsoneditor
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [editor]
+    url: https://github.com/josdejong/jsoneditor/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The editor can be used as a component in your own web application"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/josdejong/jsoneditor/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "is released as open source under the permissive the Apache 2.0 license"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/josdejong/jsoneditor/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "is released as open source under the permissive the Apache 2.0 license"
+  - field: installMethod
+    value: npm install jsoneditor
+    url: https://github.com/josdejong/jsoneditor/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "with npm (recommended)"
+  - field: installMethod
+    value: script tag from a CDN
+    url: https://github.com/josdejong/jsoneditor/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "or a CDN such as https://cdnjs.com/ or https://www.jsdelivr.com/"
+  - field: i18n
+    value: built-in translations, extendable through the languages option
+    url: https://github.com/josdejong/jsoneditor/blob/master/docs/api.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Other translations can be specified via the option `languages`."
+  - field: currentMajor
+    value: 10
+    url: https://registry.npmjs.org/jsoneditor/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-04-01
+    url: https://registry.npmjs.org/jsoneditor
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 12266
+    url: https://api.github.com/repos/josdejong/jsoneditor
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 85
+    url: https://api.github.com/repos/josdejong/jsoneditor/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: jsoneditor
+    url: https://registry.npmjs.org/jsoneditor
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: 338740
+    period: 2026-11-01/2026-11-07
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/jsoneditor
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 429
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/jsoneditor
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 2166
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/jsoneditor
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, contentStore, databases, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, renderingModes, runsAs, runtime, runtimeMin, pricingPage, paidEdition, forum, discord, x, bluesky, mastodon, newsletter, subreddit, pluginDirectory, pluginCount, httpArchiveSites, usageShare, reportedInstalls]
+unreadable: []
+notes: >
+  The successor svelte-jsoneditor is named in the README under "Successor" while the README still describes this library as usable, so it is recorded here as a note, not as a status: the successor's record would carry successorOf jsoneditor. The homepage is jsoneditoronline.org, the web application the README says the library was developed in; the npm homepage field names it and the repository names no site of its own, so the reviewer should confirm it as the project's site. The repository has no GitHub releases and its git tags, from 2012, are not releases; currentMajor and latestReleaseDate come from the npm latest version 10.4.3, and firstRelease from the first npm upload (2013). The README lists browsers (Chrome, Firefox, Safari, Edge) and says the editor "can be used as a component in your own web application", but no sentence says it runs in the visitor's browser, so runsAs and runtime are absent. The README names JSON schema validation through ajv, JMESPath queries, Ace-based code mode and the document size limit in its feature lists; these are notes, not fields. The Apache 2.0 license is stated once in the README and the LICENSE file has no copyright line, so the maintainer comes from package.json. The README asks commercial users for voluntary sponsorship; that is no license term or paidEdition.

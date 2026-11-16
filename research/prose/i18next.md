@@ -1,0 +1,5 @@
+i18next is an internationalization framework for JavaScript that stores messages as resources and looks them up with the `t()` function, with plurals, interpolation, nesting and context. It runs in browsers, Node.js and Deno, takes its resources at initialization or loads them through backend plugins, and offers optional caching and user language detection. Framework bindings for React, Vue, Angular and others are separate packages maintained by their authors, and the [plugins page](https://www.i18next.com/overview/plugins-and-utils) lists formats, extraction tools and utilities.
+
+## Worth knowing
+
+The homepage says the project is maintained by the team that builds Locize, a translation management service for i18next projects. The [getting-started guide](https://www.i18next.com/overview/getting-started) warns that switching message syntax later means converting every message, because one instance uses one syntax; the ICU and MF2 plugins replace i18next's own plural and context handling.

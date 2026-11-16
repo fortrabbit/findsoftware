@@ -1,0 +1,117 @@
+id: idb
+name: idb
+status: accepted
+checkedAt: 2026-11-16
+description: Promise-based wrapper around the browser's IndexedDB API that mirrors its methods with small usability changes.
+facts:
+  - field: repository
+    value: https://github.com/jakearchibald/idb
+    url: https://api.github.com/repos/jakearchibald/idb
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/jakearchibald/idb/blob/main/README.md
+    url: https://github.com/jakearchibald/idb/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "that mostly mirrors the IndexedDB API, but with small improvements that make a big difference to usability"
+  - field: firstRelease
+    value: 2015
+    url: https://registry.npmjs.org/idb
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Jake Archibald
+    url: https://raw.githubusercontent.com/jakearchibald/idb/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2016, Jake Archibald"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/jakearchibald
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [client-storage]
+    url: https://github.com/jakearchibald/idb/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "mostly mirrors the IndexedDB API"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/jakearchibald/idb
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://github.com/jakearchibald/idb/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install idb"
+  - field: installMethod
+    value: ES module from jsDelivr
+    url: https://github.com/jakearchibald/idb/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Using the modules method directly via jsdelivr"
+  - field: installMethod
+    value: UMD script from jsDelivr
+    url: https://github.com/jakearchibald/idb/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Using external script reference"
+  - field: license
+    value: ISC
+    url: https://api.github.com/repos/jakearchibald/idb
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/jakearchibald/idb/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted"
+  - field: currentMajor
+    value: 8
+    url: https://registry.npmjs.org/idb/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-06
+    url: https://registry.npmjs.org/idb
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: idb
+    url: https://registry.npmjs.org/idb/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "36312869 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/idb
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 7443
+    url: https://api.github.com/repos/jakearchibald/idb
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 32
+    url: https://api.github.com/repos/jakearchibald/idb/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 602
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/idb
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 782286
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/idb
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, basedOn, alternativeTo, forkOf, successorOf, parent, hqCountry, pricingPage, paidEdition, maintainerType, runtime, runtimeMin, runsAs, renderingModes, databases, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, importsFrom, forum, discord, x, bluesky, mastodon, subreddit, newsletter, pluginDirectory, packagistName, rubygemsName, endoflifeId, wikidata, dockerPulls, usageShare, reportedInstalls]
+unreadable: []
+notes: >
+  No project website: the repository's homepage field points at the npm package page, a registry page rather than the project's own site, so there is no homepage fact. Stars, contributors (32) and dependents belong to the repository and package named in the install docs. The repository has no GitHub release objects; the stable line is the registry, npm latest 8.0.4 (published 2026-10-06), which matches the newest tag v8.0.4, so currentMajor is 8. The npm upload 0.0.1 (2015-04-02) carries no metadata and 1.0.0 (2015-08-25) is the first described version; both fall in 2015. The browser-only nature is stated only by the README's browser support sentence and its script-tag sections, so no runsAs fact is recorded;. The npm route is quoted from the install command under the Installation heading; the two jsDelivr routes are quoted from their section headings. The README links idb-keyval as a simpler option for key-value storage; it is a related package, not a statement of an alternative, so no alternativeTo. The README says the library is fully typed and ships TypeScript types; that is a coined kind and stays in notes. The repository's CHANGELOG.md lists breaking changes; not a field. The README's transaction lifetime section says a transaction closes when nothing is left to do after microtasks, so awaiting other work such as a fetch between the start and the end of a transaction makes later writes fail. Its browser support section targets modern browsers and says IE is not supported.

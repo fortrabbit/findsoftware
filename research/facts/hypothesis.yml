@@ -1,0 +1,112 @@
+id: hypothesis
+name: Hypothesis
+status: accepted
+checkedAt: 2026-11-16
+description: Property-based testing library for Python that generates test inputs from declared ranges and reports the simplest failing case.
+facts:
+  - field: homepage
+    value: https://hypothesis.works
+    url: https://raw.githubusercontent.com/HypothesisWorks/hypothesis/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/HypothesisWorks/hypothesis
+    url: https://api.github.com/repos/HypothesisWorks/hypothesis
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://hypothesis.readthedocs.io/en/latest/
+    url: https://raw.githubusercontent.com/HypothesisWorks/hypothesis/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: categories
+    value: [property-based]
+    url: https://raw.githubusercontent.com/HypothesisWorks/hypothesis/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Hypothesis is the property-based testing library for Python"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/HypothesisWorks/hypothesis
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: python
+    url: https://raw.githubusercontent.com/HypothesisWorks/hypothesis/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Hypothesis is the property-based testing library for Python"
+  - field: runtimeMin
+    value: "3.11"
+    url: https://github.com/HypothesisWorks/hypothesis/blob/v6.170.15/hypothesis/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">= 3.11"'
+  - field: installMethod
+    value: pip
+    url: https://raw.githubusercontent.com/HypothesisWorks/hypothesis/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "pip install hypothesis"
+  - field: forum
+    value: https://groups.google.com/forum/#!forum/hypothesis-users
+    url: https://hypothesis.readthedocs.io/en/latest/community.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "ask for help, provide feedback, or discuss anything remotely Hypothesis related at all"
+  - field: license
+    value: MPL-2.0
+    url: https://github.com/HypothesisWorks/hypothesis/blob/v6.170.15/hypothesis/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'license = "MPL-2.0"'
+  - field: maintainer
+    value: David R. MacIver
+    url: https://raw.githubusercontent.com/HypothesisWorks/hypothesis/v6.170.15/LICENSE.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2013, David R. MacIver"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/HypothesisWorks
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 6
+    url: https://api.github.com/repos/HypothesisWorks/hypothesis/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-06
+    url: https://api.github.com/repos/HypothesisWorks/hypothesis/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://pypi.org/pypi/hypothesis/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 9171
+    url: https://api.github.com/repos/HypothesisWorks/hypothesis
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 324
+    url: https://api.github.com/repos/HypothesisWorks/hypothesis/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiName
+    value: hypothesis
+    url: https://pypi.org/pypi/hypothesis/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: "17304590 (last week)"
+    url: https://pypistats.org/api/packages/hypothesis/recent
+    checkedAt: 2026-11-16
+    via: api
+notFound: [renderingModes, runsAs, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, pricingPage, paidEdition, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, packagistName, wikidata, endoflifeId, latestPrereleaseDate, lastCommitDate]
+unreadable: []
+notes: >
+  Boundary: none; accepted as a testing library, matching the CSV row. The repository is a monorepo: the Python package sits in the hypothesis folder beside tooling, docs, benchmarks and a Rust folder, so stars and contributors belong to the repository, and the registry figures come from the hypothesis package on PyPI. The README gives "pip install hypothesis" under its Installation heading, which is the installMethod quote. The docs community page names a Stack Overflow tag (python-hypothesis) and a mailing list for questions; the mailing list is recorded as forum. The license is MPL-2.0 in the package pyproject at the latest release tag and in the LICENSE.txt, which says some code "comes from other projects" and is "dual licensed with the original license"; the GitHub API reports NOASSERTION, and the PyPI metadata has no license field. The LICENSE.txt copyright line names David R. MacIver (2013); the PyPI author field also names Zac Hatfield-Dodds, kept here only in notes. The PyPI classifiers list a pytest framework; the project does not say it is built on pytest, so basedOn stays out. firstRelease is the 2013 upload of 0.0.1 on PyPI, older than the first GitHub tag from 2018. currentMajor and latestReleaseDate follow the GitHub release v6.170.15 from 2026-11-06. The README says Hypothesis chooses inputs from the declared range, including edge cases the developer might not have thought about, and reports the simplest possible failing case. Coined kinds (strategies, stateful tests, health checks, the example database) stay in notes.

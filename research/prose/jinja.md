@@ -1,0 +1,1 @@
+Jinja is a template engine for Python. Templates hold placeholders written in a syntax close to Python, and the application passes in data to render the final document. Web frameworks such as Flask render their pages with it. Translation support in templates uses Babel, which is an optional dependency.

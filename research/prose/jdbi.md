@@ -1,0 +1,1 @@
+Jdbi is a Java library that runs SQL against relational databases over JDBC, with a fluent API and a declarative SQL Object API. The developer guide says it is a convenience library rather than an ORM. The core module, jdbi3-core, is published to Maven Central. Support for database-specific data types comes in separate modules.

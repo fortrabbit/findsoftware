@@ -1,0 +1,1 @@
+Jest is a JavaScript testing framework that bundles assertions, mock functions and snapshot testing. The homepage says it works with projects using Babel, TypeScript, Node, React, Angular and Vue. The jestjs/jest repository is a monorepo, and the npm package jest is the one the getting-started guide names. Jest runs in CI as well as on a developer's machine.

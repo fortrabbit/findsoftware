@@ -1,0 +1,136 @@
+id: json-server
+name: JSON Server
+status: accepted
+checkedAt: 2026-11-16
+description: Node.js command-line tool that serves a JSON file as a REST API.
+facts:
+  - field: repository
+    value: https://github.com/typicode/json-server
+    url: https://api.github.com/repos/typicode/json-server
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://registry.npmjs.org/json-server
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: typicode
+    url: https://github.com/typicode/json-server/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2026 typicode"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/typicode/json-server/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2026 typicode"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/typicode
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/typicode/json-server
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [api-mocking]
+    url: https://api.github.com/repos/typicode/json-server
+    checkedAt: 2026-11-16
+    via: api
+    quote: "Get a full fake REST API with zero coding in less than 30 seconds"
+  - field: runtime
+    value: [node]
+    url: https://github.com/typicode/json-server/blob/v0.17.4/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: "\"node\": \">=12\""
+  - field: runtimeMin
+    value: "node >=12"
+    url: https://github.com/typicode/json-server/blob/v0.17.4/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: "\"node\": \">=12\""
+  - field: contentStore
+    value: [flat-file]
+    url: https://github.com/typicode/json-server/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Create a `db.json` or `db.json5` file"
+  - field: headlessApi
+    value: [rest]
+    url: https://github.com/typicode/json-server/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Access your REST API"
+  - field: installMethod
+    value: npm
+    url: https://github.com/typicode/json-server/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install json-server"
+  - field: license
+    value: MIT
+    url: https://github.com/typicode/json-server/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/typicode/json-server/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/typicode/json-server/releases/tags/v0.17.4
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2023-09-29
+    url: https://api.github.com/repos/typicode/json-server/releases/tags/v0.17.4
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-03-23
+    url: https://api.github.com/repos/typicode/json-server/releases/tags/v1.0.0-beta.15
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 75746
+    url: https://api.github.com/repos/typicode/json-server
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 82
+    url: https://api.github.com/repos/typicode/json-server/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: json-server
+    url: https://registry.npmjs.org/json-server
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: 427282
+    period: 2026-11-01/2026-11-07
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/json-server
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 975
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/json-server
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 85674
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/json-server
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, docs, hqCountry, parent, basedOn, forkOf, successorOf, databases, adminUi, multisite, i18n, templating, livePreview, userRoles, sso, renderingModes, runsAs, pricingPage, paidEdition, forum, discord, x, bluesky, mastodon, newsletter, subreddit, pluginDirectory, pluginCount, httpArchiveSites, usageShare, reportedInstalls]
+unreadable: []
+notes: >
+  The repository is the only web presence, so there is no homepage. The stable line is v0.17.4 (GitHub release 2023-09-29), which gives currentMajor 0; the v1 beta (v1.0.0-beta.15, 2026-03-23) is the one the README documents and npm lists as latest. The README says the v1 beta is "usable but expect breaking changes". The runtimeMin comes from the stable tag's package.json because the beta's engines field is a prerelease value (node >=22.12.0 in v1.0.0-beta.15). runsAs is absent: the README says the server "starts at http://localhost:3000" but no sentence says the tool runs locally or in CI. The installMethod quote is the install command under the README's Install heading. The category comes from the GitHub repository description, which is the project's own words. Dependent counts are from ecosyste.ms for the npm package json-server.

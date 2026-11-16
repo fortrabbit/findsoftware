@@ -1,0 +1,129 @@
+id: js-xss
+name: js-xss
+status: accepted
+checkedAt: 2026-11-16
+description: Node.js and browser module that sanitizes untrusted HTML against a whitelist of tags and attributes to prevent cross-site scripting.
+facts:
+  - field: homepage
+    value: https://jsxss.com/
+    url: https://jsxss.com/en/index.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Sanitize untrusted HTML (to prevent XSS) with a configuration specified by a Whitelist"
+  - field: docs
+    value: https://jsxss.com/en/starter/quickstart.html
+    url: https://jsxss.com/en/starter/quickstart.html
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/leizongmin/js-xss
+    url: https://api.github.com/repos/leizongmin/js-xss
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Zongmin Lei
+    url: https://github.com/leizongmin/js-xss/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2012-2018 Zongmin Lei"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/leizongmin
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [html-sanitizer]
+    url: https://github.com/leizongmin/js-xss/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Sanitize untrusted HTML (to prevent XSS) with a configuration specified by a Whitelist"
+  - field: language
+    value: JavaScript
+    url: https://registry.npmjs.org/xss/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: node
+    url: https://registry.npmjs.org/xss/latest
+    checkedAt: 2026-11-16
+    via: api
+    quote: ">= 0.10.0"
+  - field: runtimeMin
+    value: "0.10"
+    url: https://registry.npmjs.org/xss/latest
+    checkedAt: 2026-11-16
+    via: api
+    quote: ">= 0.10.0"
+  - field: installMethod
+    value: npm
+    url: https://github.com/leizongmin/js-xss/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install xss"
+  - field: installMethod
+    value: bower
+    url: https://github.com/leizongmin/js-xss/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "bower install xss"
+  - field: license
+    value: MIT
+    url: https://github.com/leizongmin/js-xss/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/leizongmin/js-xss/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Permission is hereby granted"
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/xss/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-24
+    url: https://registry.npmjs.org/xss
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: "2012"
+    url: https://registry.npmjs.org/xss
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 5312
+    url: https://api.github.com/repos/leizongmin/js-xss
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 38
+    url: https://api.github.com/repos/leizongmin/js-xss/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: xss
+    url: https://registry.npmjs.org/xss/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "7468135 (2026-11-08 to 2026-11-14)"
+    url: https://api.npmjs.org/downloads/range/2026-11-08:2026-11-14/xss
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 899
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/xss
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 111112
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/xss
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, contentStore, databases, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, discord, newsletter, mastodon, bluesky, x, wikidata, endoflifeId, packagistName, packagistDownloads, pypiDownloads, latestPrereleaseDate, selfHostOption]
+unreadable: []
+notes: >
+  The CSV homepage http://jsxss.com answers 301 to https://jsxss.com/, so the https address is recorded; the site's own pages are under /en/ and /zh/, and the root address serves a script that redirects to /en/index.html. The repository's GitHub Pages site redirects to jsxss.com. The GitHub API reports the repository language as HTML, which does not describe the module; the language is JavaScript from the npm package. GitHub detects no license (NOASSERTION) while LICENSE carries the MIT text, which is the statement recorded. The npm package xss is the module the README names, and the repository is js-xss; the npm latest version 1.0.17 has no GitHub release object, and the newest tag is v1.0.17, so the registry version sets currentMajor and latestReleaseDate. The npm engines field says ">= 0.10.0" for Node.js, which sets runtime node and runtimeMin 0.10 as the stated minimum. The README names both the browser (script tags in its On Browser section) and Node.js, so no runsAs value is recorded. The README's Install section has an NPM and a Bower heading, each with its command, which are the two installMethod entries; the site's Quick Start page is the docs link. The README says that when the style attribute is allowed its value is processed by the separate cssfilter module (js-css-filter), a dependency and not basedOn; the module includes a default CSS whitelist. The README and the site also document an xss command line tool that processes HTML files, which is a side feature, so no runsAs is recorded for it. The README's "They are using xss module" list (nodeclub, cnpmjs.org, cocalc.com) names users without counts, so reportedInstalls is not set. The README benchmark compares the module with the validator package for reference only, which is no alternativeTo statement. The site's Community page lists only the GitHub issue tracker. firstRelease is 2012 from the npm upload of 0.0.1 on 2012-09-19; the oldest tag v0.0.5 is dated 2013 and the repository was created in 2012. The npm weekly figure is the sum of the daily figures for 2026-11-08 to 2026-11-14.

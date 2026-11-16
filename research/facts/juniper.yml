@@ -1,0 +1,118 @@
+id: juniper
+name: Juniper
+status: accepted
+checkedAt: 2026-11-16
+description: Rust library for building GraphQL servers, with separate crates that integrate it into Actix, Axum, Hyper, Rocket and Warp.
+facts:
+  - field: homepage
+    value: https://graphql-rust.github.io/juniper/
+    url: https://graphql-rust.github.io/juniper/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Juniper is a library for creating GraphQL servers in Rust"
+  - field: repository
+    value: https://github.com/graphql-rust/juniper
+    url: https://api.github.com/repos/graphql-rust/juniper
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://graphql-rust.github.io/juniper/
+    url: https://graphql-rust.github.io/juniper/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Juniper Book"
+  - field: maintainer
+    value: Magnus Hallin and others
+    url: https://raw.githubusercontent.com/graphql-rust/juniper/juniper-v0.18.0/juniper/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2016-2026 Magnus Hallin"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/graphql-rust
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: BSD-2-Clause
+    url: https://raw.githubusercontent.com/graphql-rust/juniper/juniper-v0.18.0/juniper/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "BSD 2-Clause License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/graphql-rust/juniper/juniper-v0.18.0/juniper/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "BSD 2-Clause License"
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/graphql-rust/juniper
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [graphql-server]
+    url: https://raw.githubusercontent.com/graphql-rust/juniper/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "GraphQL server library for Rust"
+  - field: runtimeMin
+    value: "1.85"
+    url: https://raw.githubusercontent.com/graphql-rust/juniper/juniper-v0.18.0/juniper/Cargo.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'rust-version = "1.85"'
+  - field: installMethod
+    value: Cargo dependency
+    url: https://graphql-rust.github.io/juniper/quickstart.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Installation [dependencies] juniper"
+  - field: crateName
+    value: juniper
+    url: https://crates.io/api/v1/crates/juniper
+    checkedAt: 2026-11-16
+    via: api
+  - field: crateDownloads
+    value: "3751297 (total)"
+    url: https://crates.io/api/v1/crates/juniper
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 78
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/juniper
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 271
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/juniper
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 5974
+    url: https://api.github.com/repos/graphql-rust/juniper
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 152
+    url: https://api.github.com/repos/graphql-rust/juniper/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/graphql-rust/juniper/releases/tags/juniper-v0.18.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-30
+    url: https://api.github.com/repos/graphql-rust/juniper/releases/tags/juniper-v0.18.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://crates.io/api/v1/crates/juniper
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, hqCountry, forum, discord, x, bluesky, mastodon, newsletter, subreddit, sso, userRoles, adminUi, headlessApi, templating, i18n, multisite, livePreview, runsAs, renderingModes, runtime, databases, contentStore, selfHostOption, paidEdition, hostedOffering, forkOf, successorOf, alternativeTo, importsFrom, basedOn, parent, wikidata, endoflifeId, latestPrereleaseDate, pluginDirectory, pluginCount, npmName, packagistName, reportedInstalls, usageShare, pypiDownloads]
+unreadable: []
+notes: >
+  Monorepo: the repository graphql-rust/juniper holds the juniper crate and the juniper_actix, juniper_axum, juniper_hyper, juniper_rocket, juniper_warp, juniper_graphql_ws and juniper_subscriptions crates; stars and 152 contributors belong to the monorepo, and the crate figure is for juniper. The current line is 0.18 (0.x, so currentMajor is 0 and the minor line stays in notes). The homepage names five web server integrations as separate crates, which are not basedOn statements. The homepage says Juniper does not include a web server and that it supports the GraphQL specification (October 2021); code-first approach is from the quickstart. Built-in types from uuid, url, chrono, jiff, time and bson are listed in the README as automatic integrations. The README also links a Gitter chat (gitter.im/juniper-graphql/Lobby) that is not a forum or discord field. The GitHub API reports the license as NOASSERTION because the LICENSE copyright line names five holders; the license in the crate manifest and LICENSE text is BSD-2-Clause. The maintainer is recorded as the first copyright holder and others: the LICENSE line names Magnus Hallin, Christoph Herzog, Christian Legnitto, Ilya Solovyiov and Kai Ren, not a company; the Cargo.toml license line says BSD-2-Clause, the LICENSE heading says BSD 2-Clause License, one license in two wordings; the repository owner is the graphql-rust organization. The install route is shown only as a Cargo.toml dependency block on the quickstart page. The schema-first juniper-from-schema crate is a separate project named in the README, not a fork. The API is not 1.0 according to the README. Not a runtime: juniper is compiled into the user's own Rust program, so no runtime is recorded; the MSRV from crates.io and the manifest is 1.85.

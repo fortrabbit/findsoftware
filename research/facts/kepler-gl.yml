@@ -1,0 +1,129 @@
+id: kepler-gl
+name: kepler.gl
+status: accepted
+checkedAt: 2026-11-16
+description: React component and web application for visual exploration of large geolocation data sets, built on MapLibre GL and deck.gl.
+facts:
+  - field: homepage
+    value: https://kepler.gl/
+    url: https://api.github.com/repos/keplergl/kepler.gl
+    checkedAt: 2026-11-16
+    via: api
+  - field: repository
+    value: https://github.com/keplergl/kepler.gl
+    url: https://api.github.com/repos/keplergl/kepler.gl
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://docs.kepler.gl/
+    url: https://docs.kepler.gl/
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: kepler.gl project contributors
+    url: https://github.com/keplergl/kepler.gl/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright contributors to the kepler.gl project"
+  - field: maintainerType
+    value: community
+    url: https://github.com/keplergl/kepler.gl/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright contributors to the kepler.gl project"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/keplergl
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/keplergl/kepler.gl
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [maps, data-viz]
+    url: https://github.com/keplergl/kepler.gl/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "data-agnostic, high-performance web-based application for visual exploration of large-scale geolocation data sets"
+  - field: basedOn
+    value: react
+    url: https://github.com/keplergl/kepler.gl/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Kepler.gl is also a React component that uses Redux to manage its state and data flow."
+  - field: basedOn
+    value: deck-gl
+    url: https://github.com/keplergl/kepler.gl/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Built on top of MapLibre GL and deck.gl"
+  - field: installMethod
+    value: npm
+    url: https://github.com/keplergl/kepler.gl/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install --save @kepler.gl/components maplibre-gl"
+  - field: installMethod
+    value: script tag (UMD build from unpkg)
+    url: https://github.com/keplergl/kepler.gl/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Load the MapLibre stylesheet and add the script tag to your HTML file as follows"
+  - field: i18n
+    value: react-intl localization with locale files and a localeMessages prop
+    url: https://docs.kepler.gl/docs/api-reference/localization
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Kepler.gl supports localization through"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/keplergl/kepler.gl
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/keplergl/kepler.gl/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: "2026-03-16"
+    url: https://api.github.com/repos/keplergl/kepler.gl/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestPrereleaseDate
+    value: "2026-11-13"
+    url: https://api.github.com/repos/keplergl/kepler.gl/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://registry.npmjs.org/kepler.gl
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: kepler.gl
+    url: https://registry.npmjs.org/kepler.gl
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: 8640
+    period: 2026-11-01/2026-11-07
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/kepler.gl
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 12096
+    url: https://api.github.com/repos/keplergl/kepler.gl
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 135
+    url: https://api.github.com/repos/keplergl/kepler.gl/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, hqCountry, runsAs, forum, x, discord, mastodon, bluesky, newsletter, pluginDirectory, alternativeTo, adminUi, sso, userRoles, databases, contentStore, renderingModes, templating, reportedInstalls, usageShare, packagistName]
+unreadable: [https://kepler.gl/]
+notes: >
+  The homepage https://kepler.gl/ answers 200 but is a JavaScript shell with nothing readable, so no fact comes from it; the repository homepage field (read over the GitHub API) names it and the GitHub-hosted GitBook docs at docs.kepler.gl are the docs. MapLibre GL has no record id here and is named in prose only; deck.gl is recorded as basedOn deck-gl from the README sentence. The README calls the library a React component that uses Redux; it names no Redux record. The Python package keplergl (PyPI) and the Jupyter widget are separate install routes and are not recorded here. The README says that when using kepler.gl as a dependency in your own app, Node 20 or a newer supported LTS is needed, which is recorded as runtime and runtimeMin; the get-started page and the "Env" section about developing the repository are build requirements and are not recorded. The docs site still says "You will need a Mapbox Access Token to use it." while the README says the default basemaps use MapLibre and Mapbox-hosted styles need the mapbox-gl package; the record keeps no hosting fact for it. No sentence in the sources states that it runs in the browser, so no runsAs is recorded. The npm dist-tag latest points to the alpha 3.3.0-alpha.21, while the highest stable GitHub release is v3.2.6 (2026-03-16); currentMajor 3 and latestReleaseDate follow the stable release. The GitHub skill-v0.0.1 release (2026-05-10) is a skill, not a version of this package, and is ignored. The LICENSE copyright line names "contributors to the kepler.gl project", and the npm and PyPI package metadata name an individual author and Uber Technologies, Inc.; those are not the recorded maintainer. The npm package @kepler.gl/components (weekly 9516 for 2026-11-01 to 2026-11-07) is a module of the same monorepo; the record uses the kepler.gl package named by the README's UMD route. Stars and contributors belong to the monorepo.

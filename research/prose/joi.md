@@ -1,0 +1,1 @@
+Joi is a JavaScript library that describes the shape of data as a schema and validates values against it. Schemas are built from chainable validator rules, can express relationships between fields such as cross-field references and conditional schemas, and can be extended with custom schema types. The project's modules page lists further modules in the joi ecosystem.

@@ -1,0 +1,106 @@
+id: kahlan
+name: Kahlan
+status: accepted
+checkedAt: 2026-11-16
+description: PHP unit and BDD test framework that stubs and monkey patches code directly.
+facts:
+  - field: homepage
+    value: https://kahlan.github.io/docs/
+    url: https://api.github.com/repos/kahlan/kahlan
+    checkedAt: 2026-11-16
+    via: api
+  - field: repository
+    value: https://github.com/kahlan/kahlan
+    url: https://api.github.com/repos/kahlan/kahlan
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://kahlan.github.io/docs/getting-started.html
+    url: https://kahlan.github.io/docs/getting-started.html
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: CrysaLEAD
+    url: https://github.com/kahlan/kahlan/blob/6.1.3/LICENSE.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2014 CrysaLEAD"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/kahlan
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/kahlan/kahlan
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [bdd]
+    url: https://github.com/kahlan/kahlan/blob/dev/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "full-featured Unit & BDD test framework"
+  - field: runtime
+    value: [php]
+    url: https://github.com/kahlan/kahlan/blob/6.1.3/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": ">=7.4"'
+  - field: runtimeMin
+    value: "7.4"
+    url: https://github.com/kahlan/kahlan/blob/6.1.3/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": ">=7.4"'
+  - field: installMethod
+    value: Composer
+    url: https://kahlan.github.io/docs/getting-started.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The recommended way to install Kahlan is with Composer as a development dependency of your project."
+  - field: license
+    value: MIT
+    url: https://github.com/kahlan/kahlan/blob/6.1.3/LICENSE.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 6
+    url: https://api.github.com/repos/kahlan/kahlan/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-13"
+    url: https://api.github.com/repos/kahlan/kahlan/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/kahlan/kahlan/commits/1.0.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1147
+    url: https://api.github.com/repos/kahlan/kahlan
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 35
+    url: https://api.github.com/repos/kahlan/kahlan/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: kahlan/kahlan
+    url: https://packagist.org/packages/kahlan/kahlan.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "1336138 (total)"
+    url: https://packagist.org/packages/kahlan/kahlan.json
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, hqCountry, runsAs, forum, x, discord, pluginDirectory, alternativeTo, basedOn, sso, databases, templating, i18n, userRoles, adminUi]
+unreadable: []
+notes: >
+  The docs site at kahlan.github.io/docs is older than the 6.1.3 release: its getting-started page states "PHP 5.5+" and its Composer line reads "kahlan/kahlan": "~4.0", so the requirement comes from composer.json at the 6.1.3 tag and the installMethod quote is the sentence that still applies. Maintainer is the LICENSE copyright line; no legal form is stated anywhere the research found. Default branch is dev. The README names an IRC channel (#kahlan on freenode) and no other community space. Adoption figures: GitHub stars and contributors on 2026-11-16, Packagist total downloads on the same day. firstRelease from the 1.0.0 tag commit, matching the Packagist first upload of 2015-01-24. The README says Kahlan lets you stub or monkey patch your code directly without any required PECL-extensions, and that mockery or prophecy are no longer needed; that describes its own stubbing and is not a basedOn statement. The README and the docs state phpdbg or Xdebug as a requirement for code coverage analysis only. The README's git clone route runs the project's own specs from a checkout and is not recorded as an install route for a user's project. The docs describe the Composer package as a development dependency, but no sentence says where tests run, so runsAs is absent.
