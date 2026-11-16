@@ -1,0 +1,120 @@
+id: splinter
+name: "Splinter"
+status: accepted
+checkedAt: 2026-11-16
+description: "Python API for web browser automation that runs on top of Selenium and other browser drivers."
+facts:
+  - field: homepage
+    value: "https://splinter.readthedocs.io/en/stable/index.html"
+    url: "https://splinter.readthedocs.io/en/stable/index.html"
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: "https://github.com/cobrateam/splinter"
+    url: "https://api.github.com/repos/cobrateam/splinter"
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: "https://splinter.readthedocs.io/en/stable/index.html"
+    url: "https://splinter.readthedocs.io/en/stable/index.html"
+    checkedAt: 2026-11-16
+    via: page
+  - field: categories
+    value: [testing]
+    url: "https://splinter.readthedocs.io/en/stable/why.html"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "You can use the same code for web browser testing with Selenium as the back-end"
+  - field: basedOn
+    value: [selenium]
+    url: "https://splinter.readthedocs.io/en/stable/why.html"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "common, high-level API on top of existing browser automation tools such as Selenium"
+  - field: forum
+    value: "https://groups.google.com/group/splinter-users"
+    url: "https://splinter.readthedocs.io/en/stable/contribute/community.html"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "list for help and announcements"
+  - field: language
+    value: Python
+    url: "https://api.github.com/repos/cobrateam/splinter"
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [python]
+    url: "https://pypi.org/pypi/splinter/json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtimeMin
+    value: "3.7"
+    url: "https://splinter.readthedocs.io/en/stable/install/install.html"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Splinter officially supports Python versions 3.7 and up"
+  - field: installMethod
+    value: [pip]
+    url: "https://splinter.readthedocs.io/en/stable/install/install.html"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "python -m pip install splinter"
+  - field: license
+    value: BSD-3-Clause
+    url: "https://api.github.com/repos/cobrateam/splinter"
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: "https://api.github.com/repos/cobrateam/splinter"
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: "CobraTeam"
+    url: "https://pypi.org/pypi/splinter/json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/cobrateam"
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2010
+    url: "https://api.github.com/repos/cobrateam/splinter/commits/0.0.1"
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 0
+    url: "https://pypi.org/pypi/splinter/json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2024-01-16
+    url: "https://pypi.org/pypi/splinter/json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2750
+    url: "https://api.github.com/repos/cobrateam/splinter"
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 150
+    url: "https://api.github.com/repos/cobrateam/splinter/contributors?per_page=1"
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiName
+    value: "splinter"
+    url: "https://pypi.org/pypi/splinter/json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: "70935 (last week, pypistats, 2026-11-16)"
+    url: "https://pypistats.org/api/packages/splinter/recent"
+    checkedAt: 2026-11-16
+    via: api
+notFound: [runsAs, paidEdition, pricingPage, hqCountry, pluginDirectory, pluginCount, discord, x, newsletter, mastodon, bluesky, subreddit, endoflifeId, selfHostOption, alternativeTo, forkOf, successorOf]
+unreadable: []
+notes: >
+  Stable docs (0.21.0) describe Splinter as a way to "write web browser automation scripts" over Selenium, zope.testbrowser, Django and Flask drivers; the README calls it "a simple and consistent API for web application automation". The git tags run to 0.21.0 (the tag commit date of the oldest, 0.0.1, is 2010-11-21), but GitHub holds release objects only up to 0.19.0 (2023-01-17); the PyPI release 0.21.0 uploaded 2024-01-16 is the newest stable version, so currentMajor is 0 and the minor line 0.21 is not recorded. The PyPI requires_python field is empty; its classifiers list Python 3.8 to 3.12, while the install page says 3.7 and up, and runtimeMin takes the page statement. The GitHub repository and the PyPI project both name the license as BSD (BSD-3-Clause on GitHub, BSD on PyPI); the LICENSE file reads "Copyright (c) 2012, splinter authors", which names no legal entity, so the maintainer is the PyPI author field, CobraTeam. Figures: 70935 is the pypistats last-week total for the rolling last seven days, read on 2026-11-16. The community page names a Google Groups mailing list for help and announcements and a Freenode IRC channel (not recorded). The homepage link in the CSV was http; the stable docs are served over https, so the https stable index is recorded. runsAs is left out: the pages say what the library is for (automation and testing) but not where it runs, and a test library's use in CI is not stated on them.

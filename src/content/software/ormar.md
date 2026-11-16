@@ -16,6 +16,8 @@ runtime:
 hosting:
   - python
 runtimeMin: python 3.11
+basedOn:
+  - sqlalchemy
 databases:
   - postgres
   - mysql
@@ -57,6 +59,9 @@ sources:
     url: https://github.com/ormar-orm/ormar/blob/0.30.0/pyproject.toml
     checkedAt: 2026-11-16
   - field: databases
+    url: https://github.com/ormar-orm/ormar/blob/master/README.md
+    checkedAt: 2026-11-16
+  - field: basedOn
     url: https://github.com/ormar-orm/ormar/blob/master/README.md
     checkedAt: 2026-11-16
   - field: installMethod

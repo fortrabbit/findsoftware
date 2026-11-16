@@ -1,0 +1,119 @@
+id: sinon
+name: Sinon.JS
+status: accepted
+checkedAt: 2026-11-16
+description: Standalone JavaScript library of test spies, stubs and mocks that works with any unit testing framework.
+facts:
+  - field: name
+    value: Sinon.JS
+    url: https://github.com/sinonjs/sinon/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Standalone and test framework agnostic JavaScript test spies, stubs and mocks"
+  - field: homepage
+    value: https://sinonjs.org/
+    url: https://sinonjs.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A library for stubbing, spying, and mocking in JavaScript tests."
+  - field: repository
+    value: https://github.com/sinonjs/sinon
+    url: https://api.github.com/repos/sinonjs/sinon
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://sinonjs.org/
+    url: https://github.com/sinonjs/sinon/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "See the [sinon project homepage](https://sinonjs.org/) for documentation on usage."
+  - field: maintainer
+    value: Christian Johansen
+    url: https://github.com/sinonjs/sinon/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2010-2017, Christian Johansen"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/sinonjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2010
+    url: https://registry.npmjs.org/sinon
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/sinonjs/sinon
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://github.com/sinonjs/sinon/blob/main/COMPATIBILITY.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "maintained node versions"
+  - field: categories
+    value: [testing]
+    url: https://github.com/sinonjs/sinon/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Standalone and test framework agnostic JavaScript test spies, stubs and mocks"
+  - field: installMethod
+    value: npm
+    url: https://github.com/sinonjs/sinon/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "via [npm](https://github.com/npm/npm)"
+  - field: installMethod
+    value: cdn
+    url: https://github.com/sinonjs/sinon/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "served by npm based CDNs such as jsDelivr and unpkg"
+  - field: npmName
+    value: sinon
+    url: https://registry.npmjs.org/sinon/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "13913129 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/sinon
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: BSD-3-Clause
+    url: https://registry.npmjs.org/sinon/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/sinonjs/sinon/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Sinon.js was released under [BSD-3](LICENSE)"
+  - field: githubStargazers
+    value: 9752
+    url: https://api.github.com/repos/sinonjs/sinon
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 347
+    url: https://api.github.com/repos/sinonjs/sinon/contributors?per_page=1&anon=false
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 22
+    url: https://registry.npmjs.org/sinon/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-20
+    url: https://registry.npmjs.org/sinon/latest
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, paidEdition, basedOn, forkOf, successorOf, alternativeTo, importsFrom, adminUi, headlessApi, templating, contentStore, databases, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, hqCountry, pluginDirectory, pluginCount, x, bluesky, mastodon, newsletter, subreddit, forum, discord, reportedInstalls, usageShare, packagistName, packagistDownloads, pypiName, pypiDownloads, rubygemsName, rubygemsDownloads, endoflifeId, latestPrereleaseDate, dockerPulls, hostedOffering, selfHostOption]
+unreadable: []
+notes: >
+  The GitHub API reports no license for the repository (NOASSERTION), so the license entry comes from the npm package's license field and the repository's package.json, which states "license": "BSD-3-Clause". The LICENSE file's wording "(The BSD License)" and the README's "BSD-3" are one license, not two. The maintainer follows the LICENSE copyright line, which dates 2010-2017 and names Christian Johansen. The repository's GitHub release objects end at v4.2.2 (2018), but the tags run to v22.1.0 and the npm latest is 22.1.0, so the major and the release date come from the npm registry, the newest stable version. The homepage says the library works "with any unit testing framework", which the README states as "test framework agnostic". The CDN route is one installMethod: the README names jsDelivr and unpkg as CDNs serving the browser build in one sentence. The COMPATIBILITY.md page names browsers as well as Node.js, and runsAs is left out because the README names both (the rule for dual-runtime libraries). The runtime node entry rests on the COMPATIBILITY.md runtimes block ("baseline 2024" and "maintained node versions"); the page names no Node minimum for the current release, so no runtimeMin is recorded. The getting-started page says Sinon works with most popular test runners, such as Mocha, Jasmine and Jest; that is no alternativeTo statement. The first release year is 2010 from the npm upload history, which predates the oldest Git tag, 0.2.3, dated 2011. The README's Stack Overflow link is a tag page, not a project forum. The stars and contributors belong to the single repository.

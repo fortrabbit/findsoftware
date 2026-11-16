@@ -1,0 +1,129 @@
+id: shoulda-matchers
+name: Shoulda Matchers
+status: accepted
+checkedAt: 2026-11-16
+description: Ruby gem that provides RSpec and Minitest one-liner matchers for testing Rails models, controllers and routes.
+facts:
+  - field: homepage
+    value: https://matchers.shoulda.io
+    url: https://matchers.shoulda.io/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Simple One-Liner Tests for Rails"
+  - field: repository
+    value: https://github.com/thoughtbot/shoulda-matchers
+    url: https://api.github.com/repos/thoughtbot/shoulda-matchers
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://matchers.shoulda.io/docs
+    url: https://matchers.shoulda.io/docs/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "shoulda-matchers Documentation - latest"
+  - field: categories
+    value: [testing]
+    url: https://github.com/thoughtbot/shoulda-matchers/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "provides RSpec and Minitest-compatible one-liners to test"
+  - field: basedOn
+    value: [rails]
+    url: https://raw.githubusercontent.com/thoughtbot/shoulda-matchers/v8.0.1/shoulda-matchers.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Simple one-liner tests for common Rails functionality"
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/thoughtbot/shoulda-matchers
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://github.com/thoughtbot/shoulda-matchers/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "tested and supported against Ruby 3.3+"
+  - field: runtimeMin
+    value: "3.3"
+    url: https://raw.githubusercontent.com/thoughtbot/shoulda-matchers/v8.0.1/shoulda-matchers.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: "s.required_ruby_version = '>= 3.3'"
+  - field: installMethod
+    value: gem
+    url: https://github.com/thoughtbot/shoulda-matchers/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Start by including `shoulda-matchers` in your Gemfile"
+  - field: license
+    value: MIT
+    url: https://rubygems.org/api/v1/gems/shoulda-matchers.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/thoughtbot/shoulda-matchers/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "It is free and open-source software"
+  - field: maintainer
+    value: Tammer Saleh and thoughtbot, inc.
+    url: https://raw.githubusercontent.com/thoughtbot/shoulda-matchers/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) Tammer Saleh and thoughtbot, inc."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/thoughtbot
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: https://rubygems.org/api/v1/versions/shoulda-matchers.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 8
+    url: https://api.github.com/repos/thoughtbot/shoulda-matchers/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-06-12
+    url: https://api.github.com/repos/thoughtbot/shoulda-matchers/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 3577
+    url: https://api.github.com/repos/thoughtbot/shoulda-matchers
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 279
+    url: https://api.github.com/repos/thoughtbot/shoulda-matchers/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsName
+    value: shoulda-matchers
+    url: https://rubygems.org/api/v1/gems/shoulda-matchers.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsDownloads
+    value: "282797998 (total)"
+    url: https://rubygems.org/api/v1/gems/shoulda-matchers.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 765
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/shoulda-matchers
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 69221
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/shoulda-matchers
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, wikidata, alternativeTo, forkOf, successorOf, parent, runsAs, renderingModes, paidEdition, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, latestPrereleaseDate, lastCommitDate, packagistName, npmName, pypiName, crateName, cranName, dockerPulls, hostedOffering, selfHostOption, pricingPage, npmWeeklyDownloads, packagistDownloads, pypiDownloads]
+unreadable: []
+notes: >
+  The gem is a test dependency: the README's Gemfile group :test and the RSpec and Minitest configuration show it is loaded by test suites, so no runsAs is recorded, since no page states where it runs. The README's Compatibility section names Ruby 3.3+, Rails 7.2+, RSpec 3.x and Minitest 5.x; the Rails version is not recorded, only the runtime and the gemspec minimum. The README says the gem also works in non-Rails apps that use ActiveRecord or ActiveModel, with a configuration block naming the library, and lists one community extension, shoulda-matchers-cucumber. The README's Team section names Pedro Paiva and Matheus Sales as current maintainers; the maintainer follows the LICENSE copyright line (Tammer Saleh and thoughtbot, inc.), and the README states that this repository is maintained and funded by thoughtbot, inc. The first RubyGems upload is 1.0.0.beta1 of 2011-01-19, earlier than the first git tag dated 2011-11-02, so firstRelease is 2011. The latest stable release is v8.0.1 (GitHub release 2026-06-12) and matches the RubyGems version. The RubyGems total download figure is recorded with its period.

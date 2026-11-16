@@ -1,0 +1,1 @@
+Sinon.JS provides test spies, stubs and mocks for JavaScript tests. It is standalone and not tied to one test framework: the project's site says it works with any unit testing framework and the getting-started page names test runners such as Mocha, Jasmine and Jest. A browser build is also served from npm-based CDNs.

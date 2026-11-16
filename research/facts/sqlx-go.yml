@@ -1,0 +1,101 @@
+id: sqlx-go
+name: sqlx
+status: accepted
+checkedAt: 2026-11-16
+description: Go library of extensions to database/sql that marshals rows into structs, maps and slices.
+facts:
+  - field: homepage
+    value: https://jmoiron.github.io/sqlx/
+    url: https://jmoiron.github.io/sqlx/
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/jmoiron/sqlx
+    url: https://api.github.com/repos/jmoiron/sqlx
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://jmoiron.github.io/sqlx/
+    url: https://github.com/jmoiron/sqlx/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: Jason Moiron
+    url: https://github.com/jmoiron/sqlx/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2013, Jason Moiron"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/jmoiron
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://api.github.com/repos/jmoiron/sqlx/git/refs/tags/sqlx-v1.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [sql]
+    url: https://github.com/jmoiron/sqlx/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "sqlx is a library which provides a set of extensions on go's standard `database/sql` library."
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/jmoiron/sqlx
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/jmoiron/sqlx/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "sqlx is a library which provides a set of extensions on go's standard `database/sql` library."
+  - field: runtimeMin
+    value: "1.10"
+    url: https://github.com/jmoiron/sqlx/blob/v1.4.0/go.mod
+    checkedAt: 2026-11-16
+    via: page
+    quote: "go 1.10"
+  - field: installMethod
+    value: go get
+    url: https://github.com/jmoiron/sqlx/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "go get github.com/jmoiron/sqlx"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/jmoiron/sqlx
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/jmoiron/sqlx/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/jmoiron/sqlx/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2024-04-23
+    url: https://api.github.com/repos/jmoiron/sqlx/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 17742
+    url: https://api.github.com/repos/jmoiron/sqlx
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 76
+    url: https://api.github.com/repos/jmoiron/sqlx/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, databases, wikidata, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, renderingModes, runsAs, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, packagistName, pypiDownloads, endoflifeId, hostedOffering]
+unreadable: []
+notes: >
+  The homepage https://jmoiron.github.io/sqlx/ is the GitHub Pages site the repository names for its user documentation; the plain http address answers too, and the https address is the one recorded. The LICENSE copyright line names Jason Moiron (2013), recorded as the maintainer; the GitHub account is a user (jmoiron) whose profile name matches, and no page gives a country, so hqCountry is absent. The README says it is a library of extensions on Go's database/sql, and the "Compatibility with the most recent two versions of Go is a requirement" statement is a support policy, not a minimum, so runtimeMin comes from the go line of go.mod at tag v1.4.0 (a build requirement for consumers of the module). The oldest tag of any kind is sqlx-v1.0 (commit 2014-04-29), which sets firstRelease. The README's "Recent Changes" section still lists 1.3.0; the latest release is v1.4.0 (2024-04-23), and the README does not say the project is in maintenance. The default branch's last push is 2024-08-15; the latest release is inside four years, and release age never decides status. The README's examples use the lib/pq and mattn sqlite3 drivers and the user documentation mentions sqlite3; no database is named as supported by sqlx itself, so databases is absent. Go modules have no download figure, so no registry field is recorded. The GitHub stars and contributors belong to the repository, which holds one module.

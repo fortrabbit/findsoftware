@@ -1,0 +1,115 @@
+id: spline-runtime
+name: "Spline Runtime"
+status: accepted
+checkedAt: 2026-11-16
+description: "JavaScript runtime that loads a Spline scene file and renders it on a canvas."
+facts:
+  - field: homepage
+    value: "https://spline.design/"
+    url: "https://spline.design/"
+    checkedAt: 2026-11-16
+    via: page
+  - field: docs
+    value: "https://docs.spline.design/"
+    url: "https://docs.spline.design/"
+    checkedAt: 2026-11-16
+    via: page
+  - field: pricingPage
+    value: "https://spline.design/pricing"
+    url: "https://spline.design/pricing"
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: "Spline, Inc."
+    url: "https://spline.design/terms"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "is owned and operated by Spline, Inc., a Delaware corporation"
+  - field: maintainerType
+    value: company
+    url: "https://spline.design/terms"
+    checkedAt: 2026-11-16
+    via: page
+  - field: hqCountry
+    value: US
+    url: "https://spline.design/privacy"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "651 N Broad St, Suite 206, Middletown, DE 19709, United States"
+  - field: categories
+    value: [3d]
+    url: "https://registry.npmjs.org/@splinetool/runtime"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "the JavaScript runtime that plays those scenes"
+  - field: language
+    value: JavaScript
+    url: "https://registry.npmjs.org/@splinetool/runtime/2.0.187"
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: [npm]
+    url: "https://registry.npmjs.org/@splinetool/runtime"
+    checkedAt: 2026-11-16
+    via: api
+    quote: "npm install @splinetool/runtime"
+  - field: firstRelease
+    value: 2021
+    url: "https://registry.npmjs.org/@splinetool/runtime"
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 2
+    url: "https://registry.npmjs.org/@splinetool/runtime/latest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-16
+    url: "https://registry.npmjs.org/@splinetool/runtime"
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: "@splinetool/runtime"
+    url: "https://registry.npmjs.org/@splinetool/runtime"
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "789308 (2026-11-01 to 2026-11-07)"
+    url: "https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@splinetool/runtime"
+    checkedAt: 2026-11-16
+    via: api
+  - field: sourcePublic
+    value: false
+    url: "https://registry.npmjs.org/@splinetool/runtime/2.0.187"
+    checkedAt: 2026-11-16
+    via: api
+  - field: discord
+    value: "https://discord.gg/M9hNDMqvnw"
+    url: "https://spline.design/"
+    checkedAt: 2026-11-16
+    via: page
+  - field: x
+    value: "https://twitter.com/splinetool"
+    url: "https://spline.design/"
+    checkedAt: 2026-11-16
+    via: page
+  - field: instagram
+    value: "https://instagram.com/splinetool"
+    url: "https://spline.design/"
+    checkedAt: 2026-11-16
+    via: page
+  - field: youtube
+    value: "https://www.youtube.com/@splinetool"
+    url: "https://spline.design/"
+    checkedAt: 2026-11-16
+    via: page
+  - field: licenseModel
+    value: commercial
+    url: "https://spline.design/terms"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "contain proprietary and confidential information that is the property of the Company"
+notFound: [license, repository, runsAs, runtime, runtimeMin, paidEdition, githubStargazers, contributors, pluginDirectory, forum, newsletter, mastodon, bluesky, subreddit, endoflifeId, selfHostOption]
+unreadable: []
+notes: >
+  No public source: the npm metadata names github.com/splinetool/spline (packages/runtime), which answers 404 through the GitHub API, so there is no repository, no GitHub release and no stars or contributor count; sourcePublic is false because the package holds build output (build/*.js, WebAssembly, .br and .gz copies), runtime.d.ts, README.md and AGENTS.md only. License: neither package.json, the tarball nor the README names a license id, so no license id is recorded; the terms page (section 15, "Company Proprietary Rights") calls the software used with the service proprietary, which is the license statement recorded as commercial. Hosted editor: scenes are designed and published in the Spline editor, a hosted platform; the pricing page lists "Code & Self-hosted exports" only on Enterprise and "Download Code Export" on Max, so no self-hosted install of the editor is recorded. Runtime: the README says the runtime "renders it on a <canvas> (WebGPU, with a WebGL fallback)" and the AGENTS page describes browser adapter selection; no page states "runs in the browser" as a sentence about the runtime, so runsAs and runtime are left out. npm figure 789308 is the sum of daily counts for 2026-11-01 to 2026-11-07; the npm "latest" tag is 2.0.187, published 2026-11-16, and the oldest npm upload is 0.6.5 on 2021-10-26. Social links are from the homepage footer. The package's AGENTS.md addresses coding agents; its instructions (remix, attribution) are not recorded as facts.

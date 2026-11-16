@@ -15,6 +15,8 @@ language: java
 runtime:
   - jvm
 runtimeMin: jvm 17
+basedOn:
+  - selenium
 runsAs:
   - local
 installMethod: maven, gradle, download
@@ -82,6 +84,9 @@ sources:
     checkedAt: 2026-11-16
   - field: contributors
     url: https://api.github.com/repos/selenide/selenide/contributors?per_page=1
+    checkedAt: 2026-11-16
+  - field: basedOn
+    url: https://github.com/selenide/selenide/blob/main/README.md
     checkedAt: 2026-11-16
 ai: authored
 contentStore: null

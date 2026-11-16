@@ -1,0 +1,101 @@
+id: squirrel
+name: Squirrel
+status: stub
+checkedAt: 2026-11-16
+description: Go library that builds SQL queries from composable parts and is not an ORM.
+facts:
+  - field: repository
+    value: https://github.com/Masterminds/squirrel
+    url: https://api.github.com/repos/Masterminds/squirrel
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://pkg.go.dev/github.com/Masterminds/squirrel
+    url: https://github.com/Masterminds/squirrel/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: The Masterminds
+    url: https://github.com/Masterminds/squirrel/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Squirrel: The Masterminds"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Masterminds
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [query-builder]
+    url: https://github.com/Masterminds/squirrel/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Squirrel helps you build SQL queries from composable parts:"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/Masterminds/squirrel
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://api.github.com/repos/Masterminds/squirrel
+    checkedAt: 2026-11-16
+    via: api
+    quote: "Fluent SQL generation for golang"
+  - field: runtimeMin
+    value: "1.14"
+    url: https://raw.githubusercontent.com/Masterminds/squirrel/v1.5.4/go.mod
+    checkedAt: 2026-11-16
+    via: page
+    quote: "go 1.14"
+  - field: license
+    value: MIT
+    url: https://github.com/Masterminds/squirrel/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/Masterminds/squirrel/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Squirrel is released under the MIT License."
+  - field: firstRelease
+    value: 2017
+    url: https://api.github.com/repos/Masterminds/squirrel/releases/tags/v1.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/Masterminds/squirrel/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2023-03-17
+    url: https://api.github.com/repos/Masterminds/squirrel/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 7989
+    url: https://api.github.com/repos/Masterminds/squirrel
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 42
+    url: https://api.github.com/repos/Masterminds/squirrel/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 2247
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2FMasterminds%2Fsquirrel
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 6317
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2FMasterminds%2Fsquirrel
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, pricingPage, paidEdition, installMethod, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, facebook, wikidata, endoflifeId, npmName, npmWeeklyDownloads, packagistName, pypiDownloads, rubygemsName, reportedInstalls, usageShare, selfHostOption, hqCountry, lastCommitDate, latestPrereleaseDate, hostedOffering, dockerPulls]
+unreadable: []
+notes: >
+  Doubt: the README opens with a maintenance statement, "Squirrel is "complete"." followed by "Bug fixes will still be merged (slowly). Bug reports are welcome, but I will not necessarily respond to them.", and carries a "Stability: Maintenance" badge, so the record is a stub, not accepted, until a reviewer decides whether a library in maintenance mode is listed; the rule for such statements is stub, not discontinued. The same doubt covers installation: the README gives only the import path (import "github.com/Masterminds/squirrel") and no install command, so criterion 3 is not settled by a project page; a reviewer should decide whether the import path or the Go module proxy counts as the documented route. No homepage: the repository is the only project page, and the README links only a GoDoc badge and an unrelated table-struct mapper (structable), so the GoDoc page the README badge links is recorded as docs. GitHub detects the license as NOASSERTION; the LICENSE file reads "MIT License" and the README says "Squirrel is released under the MIT License.", so one MIT entry is recorded and the detector gap is noted here. The LICENSE copyright line names Lann Martin, Google, and Matt Farina and Matt Butcher for 2014 to 2016; the maintainer is recorded as "Squirrel: The Masterminds", the project's own name in the LICENSE. The README says "Squirrel is not an ORM", which is why no databases fact is recorded; its PostgreSQL section ("Squirrel loves PostgreSQL") shows placeholder formatting, not a list of supported databases, so databases is left out for a reviewer to settle. firstRelease is 2017 from the v1.0 release (published 2017-10-19; its tag commit is dated 2017-08-25). No npm package exists, so no npm figure is recorded; Go modules have no download figure. The README shows SELECT and INSERT statements built with ToSql, execution through RunWith(db), a StmtCache for prepared statements and PlaceholderFormat(sq.Dollar) for numbered placeholders; these describe the code, not a databases list. The README says "If another fork (or substantially similar project) actively improves on what Squirrel does, let me know and I may link to it here", which names no record and is not recorded.

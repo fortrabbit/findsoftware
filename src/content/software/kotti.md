@@ -21,6 +21,7 @@ hosting:
 runtimeMin: python 3.5
 basedOn:
   - pyramid
+  - sqlalchemy
 databases:
   - postgres
   - mysql

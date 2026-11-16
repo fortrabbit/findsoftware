@@ -1,0 +1,116 @@
+id: sockjs-client
+name: SockJS-client
+status: stub
+checkedAt: 2026-11-16
+description: JavaScript client library that gives browsers a WebSocket-like object and falls back to other transports when WebSocket is unavailable.
+facts:
+  - field: status
+    value: stub
+    url: https://sockjs.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "IT Programming School"
+  - field: repository
+    value: https://github.com/sockjs/sockjs-client
+    url: https://api.github.com/repos/sockjs/sockjs-client
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: SockJS
+    url: https://api.github.com/orgs/sockjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/sockjs/sockjs-client
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [websockets]
+    url: https://raw.githubusercontent.com/sockjs/sockjs-client/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "SockJS is a browser JavaScript library that provides a WebSocket-like"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/sockjs/sockjs-client
+    checkedAt: 2026-11-16
+    via: api
+  - field: runsAs
+    value: [browser]
+    url: https://raw.githubusercontent.com/sockjs/sockjs-client/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "SockJS is a browser JavaScript library that provides a WebSocket-like"
+  - field: installMethod
+    value: script tag
+    url: https://raw.githubusercontent.com/sockjs/sockjs-client/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "First, you need to load the SockJS JavaScript library."
+  - field: forum
+    value: https://groups.google.com/forum/#!forum/sockjs
+    url: https://raw.githubusercontent.com/sockjs/sockjs-client/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/sockjs/sockjs-client
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/sockjs/sockjs-client/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/sockjs/sockjs-client/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2022-05-28
+    url: https://api.github.com/repos/sockjs/sockjs-client/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: https://api.github.com/repos/sockjs/sockjs-client/commits/v0.0.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: sockjs-client
+    url: https://registry.npmjs.org/sockjs-client/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "2718897 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/sockjs-client
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 8504
+    url: https://api.github.com/repos/sockjs/sockjs-client
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 55
+    url: https://api.github.com/repos/sockjs/sockjs-client/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 989
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/sockjs-client
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 2327592
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/sockjs-client
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, docs, pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, basedOn, runtime, runtimeMin, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, bluesky, mastodon, subreddit, newsletter, discord, x, reportedInstalls, usageShare, pluginDirectory, pluginCount, wikidata, endoflifeId, dockerPulls, httpArchiveSites, hostedOffering, latestPrereleaseDate, rubygemsName, pypiName]
+unreadable:
+  - https://sockjs.org/ answers 200 over https but shows an unrelated programming school site, not SockJS (http redirects there with 301)
+notes: >
+  Stub: the homepage sockjs.org (reached by a 301 from http) now serves an unrelated programming school site, so the project's own site no longer shows the software; a later pass settles it by finding a live project site or docs, and the status fact cites that page. Four-year rule: the latest stable release v1.6.1 is dated 2022-05-28, so the import moves a record like this to stub regardless; the repository was last pushed 2026-10-22. No homepage is recorded. The README lists SockJS-node (Node.js), SockJS-erlang, Spring, vert.x and other server counterparts; none is recorded as basedOn because the client is not built on them. Tidelift commercial support is paid support, not an edition. The README says SockJS tries native WebSockets first and falls back to browser transports such as streaming and polling. The README says a single SockJS session uses two browser connections to one domain, and that opening more than one SockJS connection at a time is generally a bad practice. The README names SockJS-node as the server for Node.js and lists servers for other languages. The npm figure counts the package the CDN route in the README names (sockjs-client). The forum entry is the Google Groups mailing list the README names for discussions and support; the README also has a gitter.im chat badge, which has no field. The oldest GitHub tag is v0.0.0 (a preparation commit); the v0.0.1 tag is the commit "Release 0.0.1" dated 2011-08-15, and the oldest npm upload is 2012, so firstRelease is 2011. The package.json on the default branch shows a version newer than the npm latest, which is not a release. Contributors counted with per_page=1 across all pages.

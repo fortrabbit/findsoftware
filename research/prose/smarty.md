@@ -1,0 +1,1 @@
+Smarty is a template engine for PHP. It compiles each template into a PHP script once and reuses the compiled version. The [documentation](https://smarty-php.github.io/smarty/) is published on GitHub Pages and the [project site](https://www.smarty.net/) describes the library.

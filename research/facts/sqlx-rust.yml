@@ -1,0 +1,124 @@
+id: sqlx-rust
+name: SQLx
+status: accepted
+checkedAt: 2026-11-16
+description: Async Rust SQL toolkit with compile-time checked queries and no DSL, for PostgreSQL, MySQL, MariaDB and SQLite.
+facts:
+  - field: repository
+    value: https://github.com/transact-rs/sqlx
+    url: https://api.github.com/repos/transact-rs/sqlx
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://docs.rs/sqlx
+    url: https://crates.io/api/v1/crates/sqlx
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: LaunchBadge, LLC
+    url: https://github.com/transact-rs/sqlx/blob/main/LICENSE-MIT
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Portions of this work Copyright (C) LaunchBadge, LLC"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/transact-rs
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2019
+    url: https://crates.io/api/v1/crates/sqlx/versions
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [sql]
+    url: https://github.com/transact-rs/sqlx/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "SQLx is an async, pure Rust † SQL crate featuring compile-time checked queries without a DSL."
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/transact-rs/sqlx
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [rust]
+    url: https://github.com/transact-rs/sqlx/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "SQLx is an async, pure Rust † SQL crate"
+  - field: runtimeMin
+    value: "1.94"
+    url: https://github.com/transact-rs/sqlx/blob/v0.9.0/Cargo.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'rust-version = "1.94.0"'
+  - field: databases
+    value: [postgres, mysql, mariadb, sqlite]
+    url: https://github.com/transact-rs/sqlx/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Support for [PostgreSQL], [MySQL], [MariaDB], [SQLite]."
+  - field: installMethod
+    value: cargo
+    url: https://github.com/transact-rs/sqlx/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'sqlx = { version = "0.9", features = [ "runtime-tokio" ] }'
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/transact-rs/sqlx/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Apache License, Version 2.0"
+  - field: license
+    value: MIT
+    url: https://github.com/transact-rs/sqlx/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT license"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/transact-rs/sqlx/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Licensed under either of"
+  - field: crateName
+    value: sqlx
+    url: https://crates.io/api/v1/crates/sqlx
+    checkedAt: 2026-11-16
+    via: api
+  - field: crateDownloads
+    value: 191260606 total
+    url: https://crates.io/api/v1/crates/sqlx
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://crates.io/api/v1/crates/sqlx/versions
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-21
+    url: https://crates.io/api/v1/crates/sqlx/versions
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 17677
+    url: https://api.github.com/repos/transact-rs/sqlx
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 447
+    url: https://api.github.com/repos/transact-rs/sqlx/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: discord
+    value: https://discord.gg/uuruzJ7
+    url: https://github.com/transact-rs/sqlx/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, wikidata, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, renderingModes, runsAs, pluginDirectory, forum, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, packagistName, pypiDownloads, endoflifeId, hostedOffering]
+unreadable: []
+notes: >
+  No homepage: the repository has no homepage field, the crate has none on crates.io, and the README names only the repository and the crate docs. The repository moved: launchbadge/sqlx redirects to transact-rs/sqlx (the GitHub API answers for the new owner, not a fork), but the README, the Cargo.toml at v0.9.0 and the crate's repository field still say launchbadge/sqlx, and the README's links still point there. The record uses the current repository. The LICENSE-MIT copyright lines name "SQLx Contributors" and "LaunchBadge, LLC"; the LaunchBadge line is the legal entity, recorded as the maintainer, and the README credits The LaunchBadge team and links launchbadge.com. The launchbadge.com pages show no country, so hqCountry is absent. The GitHub API reports Apache-2.0 alone, and the README states both licenses under "Licensed under either of", so each is its own entry. The MSSQL driver was removed after version 0.7 pending a rewrite under the "SQLx Pro initiative" (a GitHub discussion); that project is not recorded as a paid edition, because no page states a paid edition of this software. The first crate version 0.1.0 was published 2019-06-06 on crates.io, which sets firstRelease. The alpha 0.9.0-alpha.1 (2025-10-15) is older than the stable 0.9.0 (2026-05-21), so no latestPrereleaseDate is recorded. The README's "If you are looking for an (asynchronous) ORM" paragraph links the Ecosystem wiki page and names SeaORM and ormx only as links, not as an alternativeTo statement. The installMethod quote is the Cargo dependency line from the Install section; no sentence in the README names cargo, so a reviewer decides whether the code block is enough. The Ecosystem wiki (https://github.com/launchbadge/sqlx/wiki/Ecosystem) lists ORMs and crates built on SQLx; it is a community list, not a plugin directory, so pluginDirectory is absent. The crate's total downloads are the crates.io figure; the 90-day figure is not recorded. The README says the compile-time checked query macros connect to a development database at build time (the DATABASE_URL environment variable), and that offline mode caches the query analysis for builds without one. The GitHub repository has no releases; versions and dates come from crates.io.

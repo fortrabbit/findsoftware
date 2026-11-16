@@ -1,0 +1,113 @@
+id: simplecov
+name: SimpleCov
+status: accepted
+checkedAt: 2026-11-16
+description: Code coverage analysis tool for Ruby that merges results across test suites and produces HTML and JSON reports.
+facts:
+  - field: name
+    value: SimpleCov
+    url: https://github.com/simplecov-ruby/simplecov/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "SimpleCov is a code coverage analysis tool for Ruby."
+  - field: repository
+    value: https://github.com/simplecov-ruby/simplecov
+    url: https://api.github.com/repos/simplecov-ruby/simplecov
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/simplecov-ruby/simplecov/tree/main/docs
+    url: https://github.com/simplecov-ruby/simplecov/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "every option is documented in docs/Configuration.md"
+  - field: maintainer
+    value: "Erik Berlin, Benjamin Fleischer, Akira Matsuda, Christoph Olszowka, Tobias Pfeiffer, David Rodríguez, Xavier Shay"
+    url: https://github.com/simplecov-ruby/simplecov/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2010-2026 Erik Berlin, Benjamin Fleischer, Akira Matsuda, Christoph Olszowka, Tobias Pfeiffer, David Rodríguez, and Xavier Shay"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/simplecov-ruby
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2010
+    url: https://rubygems.org/api/v1/versions/simplecov.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/simplecov-ruby/simplecov
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://github.com/simplecov-ruby/simplecov/blob/v1.3.2/simplecov.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'gem.required_ruby_version = ">= 3.3"'
+  - field: runtimeMin
+    value: "3.3"
+    url: https://github.com/simplecov-ruby/simplecov/blob/v1.3.2/simplecov.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'gem.required_ruby_version = ">= 3.3"'
+  - field: categories
+    value: [testing]
+    url: https://github.com/simplecov-ruby/simplecov/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "SimpleCov is a code coverage analysis tool for Ruby."
+  - field: installMethod
+    value: gem
+    url: https://github.com/simplecov-ruby/simplecov/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Add SimpleCov to your `Gemfile` and `bundle install`:"
+  - field: rubygemsName
+    value: simplecov
+    url: https://rubygems.org/api/v1/gems/simplecov.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsDownloads
+    value: "520642292 (total)"
+    url: https://rubygems.org/api/v1/gems/simplecov.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/simplecov-ruby/simplecov
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/simplecov-ruby/simplecov/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining"
+  - field: githubStargazers
+    value: 4929
+    url: https://api.github.com/repos/simplecov-ruby/simplecov
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 213
+    url: https://api.github.com/repos/simplecov-ruby/simplecov/contributors?per_page=1&anon=false
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/simplecov-ruby/simplecov/releases/tag/v1.3.2
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-30
+    url: https://github.com/simplecov-ruby/simplecov/releases/tag/v1.3.2
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, pricingPage, paidEdition, basedOn, forkOf, successorOf, alternativeTo, importsFrom, adminUi, headlessApi, templating, contentStore, databases, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, hqCountry, pluginDirectory, pluginCount, x, bluesky, mastodon, newsletter, subreddit, forum, discord, reportedInstalls, usageShare, packagistName, packagistDownloads, npmName, npmWeeklyDownloads, pypiName, pypiDownloads, endoflifeId, latestPrereleaseDate, dockerPulls, hostedOffering, selfHostOption]
+unreadable: []
+notes: >
+  The project has no site of its own: the README names only the GitHub repository and the RubyGems gem, so no homepage is recorded. The maintainer follows the LICENSE copyright line, which names seven holders and no organization; the repository owner is the simplecov-ruby organization. The gem metadata lists a Google Group mailing list, which is not recorded as a forum. The README's templating mentions (ERB, Haml, Slim) describe what view coverage measures, not a templating engine the software uses, so no templating fact. runsAs is left out: the README shows SimpleCov loaded at the top of a test helper, and the README and docs/Production.md also describe measuring which lines a live process runs in production with oneshot coverage to find dead code (code that neither tests nor traffic touch), so no single value covers both. The gem bundles a simplecov command-line tool whose subcommands open, show and gate on the coverage report (README sections on the command line and on patch coverage). The README's Coverage link is Ruby's standard library, not a basedOn statement. The RubyGems download figure replaces the CSV's older count; the total is from the gem API and carries its period. The CSV row's 510.3M was an earlier reading. The release list has no prerelease newer than the stable release; the v1.0.0 release candidates are older. The README mentions alternate formatters distributed as gems and a Duel badge for another project; neither is recorded. The Ruby minimum comes from the gemspec at the v1.3.2 tag, a stated requirement of the gem.

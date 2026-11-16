@@ -19,6 +19,8 @@ runtime:
 hosting:
   - php
 runtimeMin: php 7.4
+basedOn:
+  - smarty
 contentStore:
   - database
 databases:
@@ -61,6 +63,9 @@ sources:
     checkedAt: 2026-10-20
   - field: category
     url: https://www.cmsmadesimple.org
+    checkedAt: 2026-10-20
+  - field: basedOn
+    url: https://www.cmsmadesimple.org/about/cms-made-simple
     checkedAt: 2026-10-20
   - field: language
     url: https://github.com/cmsmadesimple/cmsmadesimple

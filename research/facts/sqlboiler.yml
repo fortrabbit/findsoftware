@@ -1,0 +1,109 @@
+id: sqlboiler
+name: SQLBoiler
+status: stub
+checkedAt: 2026-11-16
+description: Go code generator that produces an ORM tailored to a database schema.
+facts:
+  - field: repository
+    value: https://github.com/aarondl/sqlboiler
+    url: https://api.github.com/repos/aarondl/sqlboiler
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://api.github.com/repos/aarondl/sqlboiler/git/ref/tags/v1.0.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Aaron Lefkowitz
+    url: https://github.com/aarondl/sqlboiler/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2025 Aaron Lefkowitz"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/aarondl
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/aarondl/sqlboiler
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [orm, codegen]
+    url: https://github.com/aarondl/sqlboiler/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "SQLBoiler is a tool to generate a Go ORM tailored to your database schema."
+  - field: runtime
+    value: [go]
+    url: https://github.com/aarondl/sqlboiler/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "SQLBoiler is a tool to generate a Go ORM tailored to your database schema."
+  - field: databases
+    value: [postgres, mysql, sqlserver, sqlite]
+    url: https://github.com/aarondl/sqlboiler/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Install sqlboiler v4 and the postgresql driver (mysql, mssql, sqlite3 also available)"
+  - field: installMethod
+    value: go install
+    url: https://github.com/aarondl/sqlboiler/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "go install github.com/aarondl/sqlboiler/v4@latest"
+  - field: installMethod
+    value: go get
+    url: https://github.com/aarondl/sqlboiler/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "go get github.com/aarondl/sqlboiler/v4"
+  - field: runtimeMin
+    value: "1.23"
+    url: https://github.com/aarondl/sqlboiler/blob/v4.19.5/go.mod
+    checkedAt: 2026-11-16
+    via: page
+  - field: alternativeTo
+    value: [sqlc]
+    url: https://github.com/aarondl/sqlboiler/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "If looking for an actively maintained alternative, consider the following:"
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/aarondl/sqlboiler/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Neither the name of Vattle or Volatile Technologies Inc. nor the"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/aarondl/sqlboiler/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Neither the name of Vattle or Volatile Technologies Inc. nor the"
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/aarondl/sqlboiler/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2025-06-27
+    url: https://api.github.com/repos/aarondl/sqlboiler/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 6981
+    url: https://api.github.com/repos/aarondl/sqlboiler
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 157
+    url: https://api.github.com/repos/aarondl/sqlboiler/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, docs, hqCountry, endoflifeId, adminUi, headlessApi, templating, contentStore, i18n, multisite, livePreview, userRoles, sso, importsFrom, forkOf, successorOf, basedOn, discord, mastodon, x, bluesky, newsletter, forum, subreddit, pluginDirectory, pluginCount, usageShare, paidEdition, pricingPage, runsAs, renderingModes, npmName, npmWeeklyDownloads, packagistDownloads, pypiDownloads, dockerPulls, dependentPackages, dependentRepos, hostedOffering, parent, reportedInstalls, sourcePublic, mavenCoordinates]
+unreadable: []
+notes: >
+  This package is currently in maintenance mode, which means: It generally does not accept new features. The README (master) says so under its Maintenance Mode heading, next to "v1, v2, and v3 are no longer maintained" and "v4 ... is the only maintained version", so the record is a stub, not discontinued: a maintenance-mode statement is no end signal, and the record stays out of the register until a person settles it. What would settle it: a maintainer statement that the project has ended, or a decision that maintenance mode counts as an end. Status stub is set by the rule for maintenance-mode statements, not by the CSV row, which had accepted. The README names Bob (https://github.com/stephenafamo/bob) and sqlc under "If looking for an actively maintained alternative"; Bob has no fact file yet, so it is kept in this note only, and sqlc is recorded as alternativeTo. The README says Bob "was created by a maintainer of SQLBoiler", which is a relationship in the note, not a fork or successor statement. currentMajor is 4 from v4.19.5 (2025-06-27), the highest stable GitHub release; the README says v4 is the only maintained version. The repository has no homepage of its own; the CSV homepage is the repository, so no homepage is recorded. The docs field is not recorded separately: the README is the documentation, and the badge links to pkg.go.dev are not a project site. The maintainer is the copyright holder named in the LICENSE file, Aaron Lefkowitz; the same file's no-endorsement clause names Vattle or Volatile Technologies Inc., a legal entity that is not the copyright line, so it is kept here and not recorded as the maintainer. The GitHub license detector returns NOASSERTION because the LICENSE text is a modified BSD-style license; the README badge says BSD, and the LICENSE text has three conditions, so BSD-3-Clause is recorded as one entry. The databases quote is the README's own install comment, which names postgresql, mysql, mssql and sqlite3; the CockroachDB driver in the README's driver table is a third-party repository (glerchundi/sqlboiler-crdb) and is not recorded as a database. runtimeMin is the go line of the go.mod at v4.19.5; the README's Requirements section still says Go 1.13, which the manifest at the latest tag supersedes. The go install and go get routes are both named in the README's Download section. Stars and contributors belong to the sqlboiler repository, a single-module repository.

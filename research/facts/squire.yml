@@ -1,0 +1,110 @@
+id: squire
+name: Squire
+status: accepted
+checkedAt: 2026-11-16
+description: HTML5 rich text editor library that a web page embeds in place of a textarea and edits as HTML.
+facts:
+  - field: repository
+    value: https://github.com/fastmail/Squire
+    url: https://api.github.com/repos/fastmail/Squire
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/fastmail/Squire/blob/master/README.md
+    url: https://github.com/fastmail/Squire/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: Neil Jenkins
+    url: https://github.com/fastmail/Squire/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright © 2011–2023 by Neil Jenkins"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/fastmail
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [rich-text]
+    url: https://github.com/fastmail/Squire/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Squire is an HTML5 rich text editor"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/fastmail/Squire
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://github.com/fastmail/Squire/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install squire-rte"
+  - field: installMethod
+    value: script tag
+    url: https://github.com/fastmail/Squire/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Squire can also be used in a script tag:"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/fastmail/Squire
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/fastmail/Squire/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Squire is released under the MIT license."
+  - field: firstRelease
+    value: 2014
+    url: https://api.github.com/repos/fastmail/Squire/git/tags/41ff391f36612f44d2aa0222f165127ff7a741c5
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://registry.npmjs.org/squire-rte/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-10
+    url: https://registry.npmjs.org/squire-rte
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: squire-rte
+    url: https://registry.npmjs.org/squire-rte/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "64481 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/squire-rte
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 21
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/squire-rte
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 875
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/squire-rte
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 4928
+    url: https://api.github.com/repos/fastmail/Squire
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 27
+    url: https://api.github.com/repos/fastmail/Squire/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, pricingPage, paidEdition, runtime, runsAs, runtimeMin, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, facebook, wikidata, endoflifeId, packagistName, pypiDownloads, rubygemsName, reportedInstalls, usageShare, selfHostOption, hqCountry, lastCommitDate, latestPrereleaseDate, hostedOffering, dockerPulls]
+unreadable: []
+notes: >
+  No project site: the repository's homepage field is empty and the README names none, so homepage is not recorded. Maintainer is Neil Jenkins as the LICENSE copyright line names him (2011–2023); the fastmail GitHub organization owns the repository, but no page names it as maintainer, so it is not recorded as one. No hqCountry: the maintainer is an individual and no page gives a country. The repository has no GitHub release object; its tags end at v1.9.0 (tag commit dated 2018-10-14) while the npm package squire-rte is at 2.x, published from the same repository, and its registry repository field still names neilj/Squire, the earlier location. Because the registry major is higher, currentMajor and latestReleaseDate follow npm, as the import rules require. firstRelease is 2014 from the v1.0.0 tag object (tagger date 2014-12-15), older than the first npm upload (2015). Runtime and runsAs are left out: the README says Squire "supports all reasonably recent browsers" and can be inserted in place of a textarea, but no sentence says it runs in the browser, so a reviewer may add runsAs browser. The README says Squire was designed to handle email composition for the Fastmail web app, that it must handle arbitrary HTML because the HTML remains the source of truth, and that it provides no toolbar, widgets or overlays, so the application builds its own UI. It says developers MUST provide a method to convert raw HTML safely into DOM nodes: Squire integrates with DOMPurify when the page has it, and otherwise needs a custom sanitizeToDOMFragment function. The README names production users (ProtonMail, SnappyMail, StartMail, Tutanota, Zoho Mail, Superhuman, Teamwork Desk, Google Earth) without any count, so reportedInstalls is not recorded. The README names no alternative editors; it says Squire differs from most other modern rich text editors without naming them.
