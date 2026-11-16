@@ -20,7 +20,7 @@ hosting:
 runtimeMin: ruby 3.0
 runsAs:
   - always-on
-installMethod: gem install (RubyGems)
+installMethod: gem install (RubyGems), Gemfile entry with bundler
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "8"

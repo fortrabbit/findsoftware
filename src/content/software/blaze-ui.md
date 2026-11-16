@@ -14,7 +14,7 @@ maintainer: Gregory Pratt
 maintainerType: individual
 firstRelease: 2016
 language: javascript
-installMethod: cdn
+installMethod: cdn, npm, git-clone
 licenseModel: open-source
 license: MIT
 currentMajor: "13"

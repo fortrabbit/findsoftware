@@ -16,7 +16,7 @@ runtime:
 runtimeMin: node 10
 basedOn:
   - webpack
-installMethod: "npm: npm install --save-dev neutrino MIDDLEWARE"
+installMethod: "npm: npm install --save-dev neutrino MIDDLEWARE, Yarn: yarn add --dev neutrino MIDDLEWARE, scaffold: npx @neutrinojs/create-project <directory-name>"
 licenseModel: open-source
 license: MPL-2.0
 currentMajor: "9"

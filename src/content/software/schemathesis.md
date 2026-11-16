@@ -19,7 +19,7 @@ basedOn:
   - hypothesis
 runsAs:
   - local
-installMethod: uv
+installMethod: uv, pip, docker
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

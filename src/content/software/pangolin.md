@@ -24,7 +24,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, installer script
 licenseModel: open-core
 license: AGPL-3.0, Fossorial Commercial License, SEE LICENSE IN LICENSE AND README.md
 currentMajor: "1"

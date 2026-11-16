@@ -23,7 +23,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: bundle install in a clone of the repository
+installMethod: bundle install in a clone of the repository, Docker image slatedocs/slate
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

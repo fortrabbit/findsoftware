@@ -13,7 +13,7 @@ maintainer: Floating UI contributors
 maintainerType: community
 firstRelease: 2016
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

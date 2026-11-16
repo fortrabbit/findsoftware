@@ -27,7 +27,7 @@ databases:
 runsAs:
   - browser
   - local
-installMethod: npm
+installMethod: npm, pnpm, yarn, bun, deno, cdn import
 licenseModel: open-source
 license: Apache-2.0, PostgreSQL
 currentMajor: "0"

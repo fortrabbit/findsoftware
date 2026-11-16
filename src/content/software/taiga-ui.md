@@ -18,7 +18,7 @@ language: javascript
 basedOn:
   - angular
 i18n: TUI_LANGUAGE token and @taiga-ui/i18n language packs
-installMethod: npm
+installMethod: npm, cli
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "5"

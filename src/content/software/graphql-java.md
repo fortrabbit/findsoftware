@@ -18,7 +18,7 @@ runtime:
 hosting:
   - java
 runtimeMin: jvm 11
-installMethod: Gradle dependency from Maven Central
+installMethod: Gradle dependency from Maven Central, Maven dependency from Maven Central
 licenseModel: open-source
 license: MIT
 currentMajor: "26"

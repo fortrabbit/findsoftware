@@ -19,7 +19,7 @@ adminUi: true
 i18n: yes, eight interface languages
 runsAs:
   - always-on
-installMethod: docker run, with the built-in H2 database
+installMethod: docker run, with the built-in H2 database, Windows package
 licenseModel: open-core
 license: MIT
 latestReleaseDate: 2021-10-27

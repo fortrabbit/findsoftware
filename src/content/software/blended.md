@@ -16,7 +16,7 @@ runtime:
 templating: html
 renderingModes:
   - static
-installMethod: pip install from PyPI
+installMethod: pip install from PyPI, git clone and pip install from source
 licenseModel: open-source
 license: GPL-3.0
 currentMajor: "5"

@@ -22,7 +22,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: compile from source with make
+installMethod: compile from source with make, docker
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

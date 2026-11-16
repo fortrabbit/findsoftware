@@ -20,7 +20,7 @@ hosting:
 runtimeMin: python 3.10
 basedOn:
   - django
-installMethod: uv
+installMethod: uv, pip
 licenseModel: open-source
 license: BSD-2-Clause, CC-BY-4.0
 currentMajor: "3"

@@ -16,7 +16,7 @@ hqCountry: PL
 language: javascript
 basedOn:
   - bootstrap
-installMethod: npm
+installMethod: npm, cdn, zip
 licenseModel: open-core
 license: MIT
 currentMajor: "9"

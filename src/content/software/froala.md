@@ -15,7 +15,7 @@ maintainerType: company
 firstRelease: 2014
 hqCountry: US
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 license: Commercial
 currentMajor: "5"
 latestReleaseDate: 2026-09-30

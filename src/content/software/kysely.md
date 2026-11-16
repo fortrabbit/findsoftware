@@ -25,7 +25,7 @@ databases:
   - mysql
   - sqlserver
   - sqlite
-installMethod: npm
+installMethod: npm, deno add (JSR)
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

@@ -23,7 +23,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: binary download from the releases page
+installMethod: binary download from the releases page, go get
 licenseModel: open-source
 license: ISC
 currentMajor: "2"

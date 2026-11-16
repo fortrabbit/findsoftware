@@ -24,7 +24,7 @@ contentStore:
 adminUi: true
 runsAs:
   - always-on
-installMethod: npm
+installMethod: npm, docker, install script
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "5"

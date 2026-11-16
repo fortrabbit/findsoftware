@@ -18,7 +18,7 @@ hosting:
   - binary
 runsAs:
   - scheduled
-installMethod: binary download from the release page
+installMethod: binary download from the release page, docker image goacme/lego, go install from source, Homebrew, Arch pacman, AUR, Snap, FreeBSD ports, Gentoo, OpenBSD ports, Go library
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

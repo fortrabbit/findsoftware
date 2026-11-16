@@ -19,7 +19,7 @@ basedOn:
   - postgresql
 databases:
   - postgres
-installMethod: apt package
+installMethod: apt package, yum or dnf package, pacman package, community-built, homebrew, macports, windows installer, docker image, build from source, kubernetes, one-line script, local development
 licenseModel: open-core
 license: Apache-2.0, Timescale License
 currentMajor: "2"

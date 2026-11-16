@@ -25,7 +25,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, docker, npm init, kubernetes
 licenseModel: open-core
 license: MPL-2.0
 currentMajor: "1"

@@ -20,7 +20,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: docker-image
+installMethod: docker-image, docker-compose, helm-chart, kubernetes-operator, binary-download, native-packages
 licenseModel: source-available
 license: BUSL-1.1
 currentMajor: "2"

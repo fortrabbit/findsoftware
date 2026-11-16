@@ -16,7 +16,7 @@ hqCountry: IL
 language: javascript
 basedOn:
   - react
-installMethod: npm
+installMethod: npm, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

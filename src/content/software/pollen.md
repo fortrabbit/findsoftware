@@ -18,7 +18,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: raco pkg install pollen
+installMethod: raco pkg install pollen, DrRacket package installer
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

@@ -24,7 +24,7 @@ headlessApi:
 i18n: yes, multi-language and translatable apps
 runsAs:
   - always-on
-installMethod: npx @contember/create
+installMethod: npx @contember/create, docker, Docker Compose
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

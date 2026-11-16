@@ -20,7 +20,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: docker-image
+installMethod: docker-image, tar-gz, homebrew, yum, dnf, apt, source-build
 licenseModel: open-core
 license: Apache-2.0, Apache 2.0
 currentMajor: "3"

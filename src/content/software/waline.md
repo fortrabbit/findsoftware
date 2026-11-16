@@ -27,7 +27,7 @@ adminUi: true
 i18n: built-in languages and customizable locale
 runsAs:
   - always-on
-installMethod: Vercel deploy button for the server
+installMethod: Vercel deploy button for the server, docker image lizheming/waline, npm package @waline/client, script from unpkg.com initialized with init(), npm package @waline/vercel run with node (self host)
 licenseModel: open-source
 license: GPL-2.0, MIT
 currentMajor: "3"

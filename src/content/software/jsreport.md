@@ -32,7 +32,7 @@ headlessApi:
 templating: handlebars, jsrender
 runsAs:
   - always-on
-installMethod: npm
+installMethod: npm, docker
 licenseModel: open-core
 license: LGPL-3.0, commercial, an enterprise license needed beyond 5 report templates on premise, commercial End User License Agreement for the commercial software
 currentMajor: "4"

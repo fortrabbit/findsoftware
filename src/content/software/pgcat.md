@@ -20,7 +20,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: docker image
+installMethod: docker image, build-from-source-cargo
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

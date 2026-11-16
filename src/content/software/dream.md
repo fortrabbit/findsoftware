@@ -19,7 +19,7 @@ hosting:
 templating: embedded ocaml
 runsAs:
   - always-on
-installMethod: opam install dream
+installMethod: opam install dream, esy
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

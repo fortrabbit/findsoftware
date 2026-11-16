@@ -29,7 +29,7 @@ runsAs:
   - always-on
 renderingModes:
   - isr
-installMethod: npx chaibuilder-app create
+installMethod: npx chaibuilder-app create, git subtree
 licenseModel: open-core
 license: BSD-3-Clause
 githubStargazers: 487

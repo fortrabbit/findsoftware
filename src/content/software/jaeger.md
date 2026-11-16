@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: binary download
+installMethod: binary download, docker, helm chart, OpenTelemetry Operator
 licenseModel: open-source
 license: Apache-2.0, Apache 2.0 License
 currentMajor: "2"

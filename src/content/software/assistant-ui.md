@@ -16,7 +16,7 @@ firstRelease: 2024
 language: javascript
 basedOn:
   - react
-installMethod: npm
+installMethod: npm, cli
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

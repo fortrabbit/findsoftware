@@ -26,7 +26,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: git clone
+installMethod: git clone, ZIP download
 licenseModel: open-source
 license: MIT
 githubStargazers: 58

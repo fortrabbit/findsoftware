@@ -23,7 +23,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: go install
+installMethod: go install, release download
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

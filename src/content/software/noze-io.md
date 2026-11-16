@@ -18,7 +18,7 @@ runtime:
 hosting:
   - binary
 templating: mustache
-installMethod: git clone, then make or swift build
+installMethod: git clone, then make or swift build, download as zip
 currentMajor: "0"
 githubStargazers: 307
 contributors: 4

@@ -21,7 +21,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: npm
+installMethod: npm, docker, helm chart
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "1"

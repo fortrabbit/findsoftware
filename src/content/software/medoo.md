@@ -25,7 +25,7 @@ databases:
   - sqlite
   - sqlserver
   - oracle
-installMethod: composer
+installMethod: composer, download
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

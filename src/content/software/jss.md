@@ -15,7 +15,7 @@ language: javascript
 runsAs:
   - browser
   - local
-installMethod: yarn
+installMethod: yarn, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "10"

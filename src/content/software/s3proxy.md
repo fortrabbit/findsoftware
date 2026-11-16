@@ -17,7 +17,7 @@ runtime:
 hosting:
   - java
 runtimeMin: jvm 17
-installMethod: docker
+installMethod: docker, binary download, source build, Kubernetes reference manifests, maven
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "4"

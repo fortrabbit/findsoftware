@@ -19,7 +19,7 @@ hosting:
 runtimeMin: python 3.10
 databases:
   - mongodb
-installMethod: pip install beanie
+installMethod: pip install beanie, poetry add beanie
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

@@ -18,7 +18,7 @@ language: javascript
 i18n: community-supported localization for 50+ languages
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, cdn (unpkg script and style sheet links), build from source (README section Build from Source)
 licenseModel: open-core
 license: MIT
 currentMajor: "3"

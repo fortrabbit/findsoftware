@@ -15,7 +15,7 @@ language: javascript
 basedOn:
   - vue
 i18n: internationalization support
-installMethod: npm
+installMethod: npm, yarn, pnpm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

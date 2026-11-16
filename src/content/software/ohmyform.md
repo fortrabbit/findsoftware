@@ -14,7 +14,7 @@ databases:
   - postgres
   - sqlite
 i18n: multi-language forms
-installMethod: Heroku deploy button
+installMethod: Heroku deploy button, Docker image
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "1"

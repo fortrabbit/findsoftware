@@ -23,7 +23,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, kubectl manifests
 licenseModel: open-core
 license: AGPL-3.0
 currentMajor: "0"

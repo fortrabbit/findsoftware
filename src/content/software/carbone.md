@@ -22,7 +22,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: npm
+installMethod: npm, docker, binary-download
 licenseModel: open-core
 license: Carbone Community License 1.0, Carbone On-Premise License, free (Community Edition)
 currentMajor: "5"

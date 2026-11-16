@@ -12,7 +12,7 @@ maintainer: Vincent Garreau
 maintainerType: individual
 firstRelease: 2014
 language: javascript
-installMethod: npm
+installMethod: npm, bower, script tag
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

@@ -17,7 +17,7 @@ basedOn:
   - stencil
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-core
 license: "custom: public domain in the United States; worldwide royalty-free license with conditions, MIT"
 currentMajor: "8"

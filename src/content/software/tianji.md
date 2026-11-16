@@ -27,7 +27,7 @@ headlessApi:
 i18n: translation files for the web client, extended by a translation command
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, Helm chart for Kubernetes, manual install from source with pnpm, run under pm2, aaPanel app store (one-click Docker install)
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

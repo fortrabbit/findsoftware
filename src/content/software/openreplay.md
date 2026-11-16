@@ -15,7 +15,7 @@ firstRelease: 2021
 language: javascript
 databases:
   - postgres
-installMethod: docker compose
+installMethod: docker compose, helm, source
 licenseModel: open-core
 license: AGPL-3.0, MIT (some directories), OpenReplay Enterprise License (commercial, ee/ directory)
 currentMajor: "1"

@@ -21,7 +21,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: prebuilt binary
+installMethod: prebuilt binary, go install, prebuilt Docker image, Kubernetes manifest (Helm)
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

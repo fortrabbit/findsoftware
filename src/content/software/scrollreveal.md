@@ -14,7 +14,7 @@ maintainer: Julian Lloyd
 maintainerType: individual
 firstRelease: 2014
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-core
 license: GPL-3.0, commercial license
 currentMajor: "4"

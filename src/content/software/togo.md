@@ -29,7 +29,7 @@ headlessApi:
 runsAs:
   - always-on
   - local
-installMethod: install script (curl | sh, PowerShell on Windows)
+installMethod: install script (curl | sh, PowerShell on Windows), go install of the togo CLI
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

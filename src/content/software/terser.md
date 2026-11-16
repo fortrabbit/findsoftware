@@ -17,7 +17,7 @@ runtime:
 runtimeMin: node 10
 runsAs:
   - local
-installMethod: npm
+installMethod: npm, browser script
 licenseModel: open-source
 license: BSD-2-Clause
 currentMajor: "5"

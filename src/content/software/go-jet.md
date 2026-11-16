@@ -20,7 +20,7 @@ databases:
   - postgres
   - mysql
   - sqlite
-installMethod: Go modules
+installMethod: Go modules, go install
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

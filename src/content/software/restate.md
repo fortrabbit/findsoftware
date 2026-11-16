@@ -22,7 +22,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: homebrew
+installMethod: homebrew, docker, binary download, npm
 licenseModel: source-available
 license: BUSL-1.1
 currentMajor: "1"

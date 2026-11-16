@@ -29,7 +29,7 @@ databases:
   - oracle
 adminUi: true
 i18n: web interface translations in 16 languages
-installMethod: install script
+installMethod: install script, manual installation
 licenseModel: open-core
 license: GPL-3.0
 currentMajor: "8"

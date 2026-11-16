@@ -13,7 +13,7 @@ maintainerType: company
 hqCountry: US
 runsAs:
   - always-on
-installMethod: windows-setup
+installMethod: windows-setup, linux-packages, linux-container
 license: Microsoft SQL Server License Terms
 currentMajor: "17"
 latestReleaseDate: 2026-10-22

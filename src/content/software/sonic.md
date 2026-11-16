@@ -18,7 +18,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: download a release from GitHub
+installMethod: download a release from GitHub, apt package for Debian-based systems, cargo install sonic-server, docker image valeriansaliou/sonic
 licenseModel: open-source
 license: MPL-2.0
 currentMajor: "1"

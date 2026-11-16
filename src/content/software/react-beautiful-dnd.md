@@ -18,7 +18,7 @@ basedOn:
 i18n: yes
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, script tag
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "13"

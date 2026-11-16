@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, binary-download, homebrew
 licenseModel: open-source
 license: Apache-2.0, Apache License, Version 2.0
 currentMajor: "1"

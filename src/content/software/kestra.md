@@ -24,7 +24,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, docker compose, kubernetes (helm chart), standalone executable jar
 licenseModel: open-core
 license: Apache-2.0
 currentMajor: "2"

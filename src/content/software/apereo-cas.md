@@ -24,7 +24,7 @@ basedOn:
 i18n: yes, described as multilingual on the homepage
 runsAs:
   - always-on
-installMethod: source-build
+installMethod: source-build, war-overlay, docker, helm
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "8"

@@ -16,7 +16,7 @@ parent: client.IO
 firstRelease: 2013
 hqCountry: CZ
 language: javascript
-installMethod: npm
+installMethod: npm, script tag (UMD build from a CDN)
 licenseModel: open-core
 license: MPL-2.0
 currentMajor: "4"

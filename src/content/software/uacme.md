@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - scheduled
-installMethod: build from source
+installMethod: build from source, distribution packages
 licenseModel: open-source
 license: GPL-3.0
 currentMajor: "1"

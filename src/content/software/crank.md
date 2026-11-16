@@ -16,7 +16,7 @@ language: javascript
 templating: jsx
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, cdn, npm create crank
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

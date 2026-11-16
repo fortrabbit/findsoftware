@@ -24,7 +24,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: npm i -g nanogen
+installMethod: npm i -g nanogen, npx nanogen
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

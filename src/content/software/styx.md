@@ -23,7 +23,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: nix profile install github:styx-static/styx
+installMethod: nix profile install github:styx-static/styx, nix-env -i styx, nix-shell -p styx
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

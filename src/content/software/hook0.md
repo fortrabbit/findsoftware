@@ -24,7 +24,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, source-build, kubernetes
 licenseModel: source-available
 license: SSPL-1.0
 latestReleaseDate: 2026-05-13

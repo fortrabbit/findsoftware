@@ -13,7 +13,7 @@ runsAs:
   - browser
 renderingModes:
   - spa
-installMethod: npm install frontpress --save
+installMethod: npm install frontpress --save, bower install, load the script from cdnjs
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

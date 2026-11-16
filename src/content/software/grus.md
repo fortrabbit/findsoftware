@@ -19,7 +19,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: Homebrew
+installMethod: Homebrew, fat jar download, sbt plugin
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

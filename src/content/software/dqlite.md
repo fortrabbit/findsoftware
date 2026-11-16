@@ -22,7 +22,7 @@ basedOn:
   - sqlite
 databases:
   - sqlite
-installMethod: Ubuntu PPA (development release)
+installMethod: Ubuntu PPA (development release), build from source with autotools
 licenseModel: open-source
 license: LGPL-3.0 with a static linking exception
 currentMajor: "1"

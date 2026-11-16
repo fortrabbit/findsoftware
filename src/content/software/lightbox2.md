@@ -13,7 +13,7 @@ maintainer: Lokesh Dhakar
 maintainerType: individual
 firstRelease: 2012
 language: javascript
-installMethod: npm
+installMethod: npm, cdn, download
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

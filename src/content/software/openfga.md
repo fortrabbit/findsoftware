@@ -23,7 +23,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, homebrew, binary-download, source-build, helm
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

@@ -18,7 +18,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: make from source
+installMethod: make from source, docker image built from the repository Dockerfile
 licenseModel: open-source
 license: ISC
 currentMajor: "1"

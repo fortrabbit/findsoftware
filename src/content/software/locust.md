@@ -17,7 +17,7 @@ runtime:
 runtimeMin: python 3.11
 runsAs:
   - local
-installMethod: pip
+installMethod: pip, docker
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

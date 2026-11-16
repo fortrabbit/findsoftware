@@ -26,7 +26,7 @@ headlessApi:
 i18n: dashboard UI translated into English, German, Spanish, French, Italian, Dutch and Portuguese
 runsAs:
   - always-on
-installMethod: Homebrew formula HitKeep/hitkeep/hitkeep
+installMethod: Homebrew formula HitKeep/hitkeep/hitkeep, docker compose with pascalebeier/hitkeep image, raw release binary for Linux amd64 and arm64, official OCI Helm chart on GitHub Container Registry
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

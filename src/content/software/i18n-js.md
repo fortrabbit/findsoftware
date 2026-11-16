@@ -17,7 +17,7 @@ runtime:
 runtimeMin: ruby 3.2
 runsAs:
   - local
-installMethod: Gemfile (Bundler)
+installMethod: Gemfile (Bundler), gem install
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

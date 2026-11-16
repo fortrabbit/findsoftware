@@ -22,7 +22,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: binary download
+installMethod: binary download, docker, kubernetes manifest
 licenseModel: open-core
 license: AGPL-3.0, commercial Enterprise License Agreement
 currentMajor: "1"

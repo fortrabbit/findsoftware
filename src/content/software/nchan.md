@@ -23,7 +23,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: source-build
+installMethod: source-build, Homebrew, apt, rpm, AUR, binary download
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

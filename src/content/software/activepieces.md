@@ -21,7 +21,7 @@ adminUi: true
 i18n: yes, UI translations managed on Crowdin
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, helm, install-script
 licenseModel: open-core
 license: MIT, Activepieces Enterprise license (packages/ee)
 currentMajor: "0"

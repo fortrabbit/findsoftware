@@ -20,7 +20,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker image
+installMethod: docker image, source build, official packages
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

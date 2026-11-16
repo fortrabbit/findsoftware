@@ -18,7 +18,7 @@ runtime:
   - binary
 hosting:
   - binary
-installMethod: binary-download
+installMethod: binary-download, os-package, docker, helm, tanka, docker-compose
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "3"

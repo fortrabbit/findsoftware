@@ -20,7 +20,7 @@ runsAs:
   - browser
   - static
   - local
-installMethod: cargo install
+installMethod: cargo install, cargo add (library), docker
 licenseModel: open-source
 license: Apache-2.0 OR MIT
 currentMajor: "0"

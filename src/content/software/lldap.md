@@ -25,7 +25,7 @@ headlessApi:
   - graphql
 runsAs:
   - always-on
-installMethod: docker image lldap/lldap, with a compose example
+installMethod: docker image lldap/lldap, with a compose example, rootless Podman, command line or quadlets, TrueNAS SCALE app catalog, distribution package manager, build from source with cargo
 licenseModel: open-source
 license: GPL-3.0-only
 currentMajor: "0"

@@ -13,7 +13,7 @@ maintainer: François Chalifour
 maintainerType: individual
 firstRelease: 2016
 language: javascript
-installMethod: npm
+installMethod: npm, shadcn, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

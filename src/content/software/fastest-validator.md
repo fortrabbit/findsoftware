@@ -17,7 +17,7 @@ runtime:
 hosting:
   - node
   - deno
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

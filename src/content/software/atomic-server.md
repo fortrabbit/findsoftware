@@ -22,7 +22,7 @@ contentStore:
 adminUi: true
 headlessApi:
   - rest
-installMethod: docker
+installMethod: docker, pre-compiled binary, cargo install atomic-server
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

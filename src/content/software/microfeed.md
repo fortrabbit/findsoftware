@@ -20,7 +20,7 @@ headlessApi:
 templating: mustache
 renderingModes:
   - server
-installMethod: npx @microfeed/cli manage (official release)
+installMethod: npx @microfeed/cli manage (official release), yarn manage in a Git-cloned source directory (official repository, fork or modified checkout), GitHub Actions
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "1"

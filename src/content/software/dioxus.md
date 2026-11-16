@@ -23,7 +23,7 @@ renderingModes:
   - server
   - static
   - spa
-installMethod: prebuilt dx binary via install script
+installMethod: prebuilt dx binary via install script, cargo binstall dioxus-cli, cargo install dioxus-cli
 licenseModel: open-source
 license: MIT OR Apache-2.0, Apache-2.0
 currentMajor: "0"

@@ -11,7 +11,7 @@ status: stub
 maintainer: Mozilla
 firstRelease: 2014
 language: c
-installMethod: CMake build from source, the same as libjpeg-turbo
+installMethod: "CMake build from source, the same as libjpeg-turbo, vcpkg: ./vcpkg install mozjpeg"
 licenseModel: open-source
 license: IJG, Zlib, BSD-3-Clause
 currentMajor: "4"

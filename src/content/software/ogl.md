@@ -13,7 +13,7 @@ maintainer: Nathan Gordon
 maintainerType: individual
 firstRelease: 2018
 language: javascript
-installMethod: npm
+installMethod: npm, cdn, download
 licenseModel: open-source
 license: Unlicense
 currentMajor: "1"

@@ -22,7 +22,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker image zerok/webmentiond
+installMethod: docker image zerok/webmentiond, go build from source with a yarn-built frontend
 licenseModel: open-source
 license: GPL-3.0
 currentMajor: "1"

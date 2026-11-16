@@ -14,7 +14,7 @@ firstRelease: 2020
 language: javascript
 basedOn:
   - vue
-installMethod: npm, yarn
+installMethod: npm, yarn, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

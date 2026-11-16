@@ -22,7 +22,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, npm (SDK packages)
 licenseModel: open-core
 license: MIT, AGPL-3.0, commercial enterprise license, available on request
 currentMajor: "1"

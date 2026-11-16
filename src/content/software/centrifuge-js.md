@@ -13,7 +13,7 @@ maintainer: Centrifugal Labs LTD
 firstRelease: 2015
 hqCountry: CY
 language: javascript
-installMethod: npm install
+installMethod: npm install, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

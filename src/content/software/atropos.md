@@ -13,7 +13,7 @@ maintainer: Vladimir Kharlampidi
 maintainerType: individual
 firstRelease: 2021
 language: javascript
-installMethod: npm
+installMethod: npm, script-tag, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

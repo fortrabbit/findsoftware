@@ -26,7 +26,7 @@ adminUi: true
 i18n: yes
 runsAs:
   - always-on
-installMethod: release archive
+installMethod: release archive, git clone
 licenseModel: open-source
 license: MIT
 currentMajor: "11"

@@ -20,7 +20,7 @@ basedOn:
   - axum
 runsAs:
   - always-on
-installMethod: cargo add spikard (Rust crate)
+installMethod: cargo add spikard (Rust crate), cargo install spikard-cli (command-line tool), pip install spikard (Python binding), pnpm add @spikard/node (Node.js binding), gem install spikard (Ruby binding), composer require goldziher/spikard (PHP binding), go get github.com/Goldziher/spikard (Go binding), dotnet add package Spikard (C# binding), dart pub add spikard (Dart binding)
 licenseModel: open-source
 license: MIT, MIT License
 currentMajor: "0"

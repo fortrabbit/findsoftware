@@ -12,7 +12,7 @@ maintainer: John MacFarlane
 maintainerType: individual
 firstRelease: 2014
 language: c
-installMethod: make install (source)
+installMethod: make install (source), cmake (source), nmake (Windows, MSVC), mingw cross-compile (Windows)
 licenseModel: open-source
 license: BSD-2-Clause, MIT, CC-BY-SA-4.0
 currentMajor: "0"

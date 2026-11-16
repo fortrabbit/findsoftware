@@ -23,7 +23,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, homebrew, rpm and deb packages, cmake from source
 licenseModel: open-source
 license: MIT, GPL
 githubStargazers: 362

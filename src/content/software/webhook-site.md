@@ -24,7 +24,7 @@ databases:
   - sqlite
 runsAs:
   - per-request
-installMethod: docker compose
+installMethod: docker compose, helm, web server with composer
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

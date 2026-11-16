@@ -27,7 +27,7 @@ adminUi: true
 i18n: yes, the API Publisher and Developer Portal can be localized
 runsAs:
   - always-on
-installMethod: zip archive download
+installMethod: zip archive download, Kubernetes with Helm charts, Docker and Docker Compose, Puppet
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "4"

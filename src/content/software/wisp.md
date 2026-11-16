@@ -20,7 +20,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: gleam add wisp_mist, with the Mist adapter package
+installMethod: gleam add wisp_mist, with the Mist adapter package, gleam add wisp_ewe, with the Ewe adapter package
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

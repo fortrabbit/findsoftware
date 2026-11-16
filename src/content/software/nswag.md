@@ -17,7 +17,7 @@ runtime:
   - dotnet
 hosting:
   - dotnet
-installMethod: nuget
+installMethod: nuget, npm, dotnet-tool, binary-download
 licenseModel: open-source
 license: MIT
 currentMajor: "14"

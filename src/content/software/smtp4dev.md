@@ -26,7 +26,7 @@ headlessApi:
 runsAs:
   - local
   - always-on
-installMethod: winget
+installMethod: winget, docker, dotnet-tool, binary-download
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "3"

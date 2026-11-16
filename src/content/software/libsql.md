@@ -17,7 +17,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: homebrew tap libsql/sqld (sqld server)
+installMethod: homebrew tap libsql/sqld (sqld server), ghcr.io/tursodatabase/libsql-server docker image, build from source with a Rust toolchain (cargo), prebuilt sqld binary from the GitHub releases page
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

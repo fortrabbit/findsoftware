@@ -28,7 +28,7 @@ templating: freemarker
 i18n: yes, language-based localized content
 runsAs:
   - always-on
-installMethod: Docker Compose
+installMethod: Docker Compose, pre-built binary archive, pre-built AMI
 licenseModel: open-core
 license: GPL-3.0
 currentMajor: "4"

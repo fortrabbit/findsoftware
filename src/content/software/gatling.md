@@ -20,7 +20,7 @@ runtime:
 runtimeMin: jvm 11
 runsAs:
   - local
-installMethod: maven
+installMethod: maven, gradle, sbt, standalone bundle
 licenseModel: open-source
 license: Apache-2.0, Gatling-Highcharts License
 currentMajor: "3"

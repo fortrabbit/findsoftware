@@ -33,7 +33,7 @@ templating: twig
 i18n: via official Winter.Translate plugin
 runsAs:
   - per-request
-installMethod: composer create-project wintercms/winter, web installer, softaculous, docker
+installMethod: composer create-project wintercms/winter, web installer, softaculous, docker, composer create-project wintercms/winter mywinter
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

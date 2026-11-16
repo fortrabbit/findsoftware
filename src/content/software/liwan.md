@@ -21,7 +21,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: single binary
+installMethod: single binary, docker, docker compose
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

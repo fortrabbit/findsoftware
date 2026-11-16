@@ -20,7 +20,7 @@ hosting:
   - node
   - deno
   - bun
-installMethod: npm
+installMethod: npm, JSR, jsDelivr CDN
 licenseModel: open-source
 license: MIT
 currentMajor: "6"

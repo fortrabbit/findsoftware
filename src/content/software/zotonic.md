@@ -27,7 +27,7 @@ adminUi: true
 i18n: yes
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, git-clone, nix
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

@@ -21,7 +21,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: binary download
+installMethod: binary download, docker, helm, install script
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "1"

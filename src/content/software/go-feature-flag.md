@@ -20,7 +20,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: docker pull gofeatureflag/go-feature-flag
+installMethod: docker pull gofeatureflag/go-feature-flag, Homebrew formula go-feature-flag, binary from the GitHub release page, Helm chart on Kubernetes, AWS Lambda deployment of the relay proxy
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

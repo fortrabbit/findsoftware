@@ -17,7 +17,7 @@ runtime:
   - binary
 hosting:
   - binary
-installMethod: autotools source build of libmodsecurity
+installMethod: autotools source build of libmodsecurity, Windows build
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "3"

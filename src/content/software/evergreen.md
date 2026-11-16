@@ -15,7 +15,7 @@ firstRelease: 2018
 language: javascript
 basedOn:
   - react
-installMethod: npm
+installMethod: npm, yarn
 licenseModel: open-source
 license: MIT, Apache-2.0 for the BlueprintJS icons
 currentMajor: "7"

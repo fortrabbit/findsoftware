@@ -16,7 +16,7 @@ runtime:
   - node
 hosting:
   - node
-installMethod: npm
+installMethod: npm, script tag, download
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

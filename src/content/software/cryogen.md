@@ -19,7 +19,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: Leiningen template (lein new cryogen)
+installMethod: Leiningen template (lein new cryogen), clj-new as a Clojure CLI tool, deps-new as a Clojure CLI tool
 license: EPL-1.0
 currentMajor: "0"
 latestReleaseDate: 2021-10-15

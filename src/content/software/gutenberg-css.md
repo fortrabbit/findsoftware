@@ -12,7 +12,7 @@ maintainer: Fabien Sa
 maintainerType: individual
 firstRelease: 2016
 language: css
-installMethod: npm
+installMethod: npm, yarn, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

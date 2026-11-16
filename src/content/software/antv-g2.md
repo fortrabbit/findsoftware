@@ -13,7 +13,7 @@ maintainer: AntV
 parent: Ant Group Co., Ltd.
 firstRelease: 2016
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

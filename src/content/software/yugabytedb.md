@@ -22,7 +22,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: tar.gz archive for Linux
+installMethod: tar.gz archive for Linux, Helm chart on Kubernetes, docker
 licenseModel: open-source
 license: Apache-2.0
 latestReleaseDate: 2026-10-23

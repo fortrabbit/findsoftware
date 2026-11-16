@@ -20,7 +20,7 @@ runtime:
 hosting:
   - php
 runtimeMin: php 7.0
-installMethod: linux-installer-script
+installMethod: linux-installer-script, homebrew, phar-download
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

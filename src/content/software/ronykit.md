@@ -21,7 +21,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: homebrew
+installMethod: homebrew, go install, go get
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "0"

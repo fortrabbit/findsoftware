@@ -18,7 +18,7 @@ runtime:
   - binary
 hosting:
   - binary
-installMethod: build from source
+installMethod: build from source, pre-built binary packages
 licenseModel: open-source
 license: GPL-2.0
 latestReleaseDate: 2026-10-20

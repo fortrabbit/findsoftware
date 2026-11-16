@@ -23,7 +23,7 @@ adminUi: true
 i18n: yes, nine locales
 runsAs:
   - always-on
-installMethod: npm global install of the tkserver server package
+installMethod: npm global install of the tkserver server package, Docker image imaegoo/twikoo, Vercel one-click deployment, Cloudflare Workers, deployed from the command line, manual include of the twikoo.js file in the site's source
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

@@ -16,7 +16,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, docker
 licenseModel: open-core
 license: AGPL-3.0, LICENSE.enterprise, for files with .ee. in their name
 currentMajor: "0"

@@ -27,7 +27,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, apache tomcat (manual install with mysql), one-click installer on aws ubuntu, docker compose
 licenseModel: open-core
 license: Apache-2.0, Aviate commercial license, for the Aviate enterprise edition only
 latestReleaseDate: 2026-09-29

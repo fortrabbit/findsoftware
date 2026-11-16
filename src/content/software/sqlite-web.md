@@ -22,7 +22,7 @@ adminUi: true
 runsAs:
   - local
   - always-on
-installMethod: pip
+installMethod: pip, docker-image
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

@@ -18,7 +18,7 @@ runtime:
 hosting:
   - python
 runtimeMin: python 3.8
-installMethod: pip, from PyPI
+installMethod: pip, from PyPI, git checkout
 licenseModel: open-source
 license: BSD-3-Clause, Unicode-3.0
 currentMajor: "2"

@@ -18,7 +18,7 @@ runtime:
 hosting:
   - python
 runtimeMin: python 3
-installMethod: pip install qpage, or the source archive
+installMethod: pip install qpage, or the source archive, exe-file download
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

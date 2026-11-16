@@ -18,7 +18,7 @@ runtime:
   - binary
 hosting:
   - binary
-installMethod: binary download
+installMethod: binary download, docker, build from source with cargo
 licenseModel: open-core
 license: AGPL-3.0, Commercial license, offered alongside AGPL-3.0
 githubStargazers: 4458

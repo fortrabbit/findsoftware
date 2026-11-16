@@ -15,7 +15,7 @@ firstRelease: 2018
 language: javascript
 runsAs:
   - browser
-installMethod: cdn
+installMethod: cdn, download, cli
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

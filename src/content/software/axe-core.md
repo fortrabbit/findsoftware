@@ -15,7 +15,7 @@ firstRelease: 2015
 language: javascript
 runsAs:
   - local
-installMethod: npm
+installMethod: npm, pnpm
 licenseModel: open-source
 license: MPL-2.0
 currentMajor: "4"

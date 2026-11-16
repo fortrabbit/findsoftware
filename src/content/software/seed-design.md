@@ -16,7 +16,7 @@ hqCountry: KR
 language: javascript
 basedOn:
   - react
-installMethod: npm
+installMethod: npm, cli
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "3"

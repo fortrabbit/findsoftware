@@ -18,7 +18,7 @@ runtime:
 runtimeMin: node 0.8
 runsAs:
   - local
-installMethod: "npm, command line: npm install uglify-js -g"
+installMethod: "npm, command line: npm install uglify-js -g, npm, programmatic: npm install uglify-js"
 licenseModel: open-source
 license: BSD-2-Clause, BSD license
 currentMajor: "3"

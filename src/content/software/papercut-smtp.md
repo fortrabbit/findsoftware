@@ -23,7 +23,7 @@ headlessApi:
 runsAs:
   - local
   - always-on
-installMethod: binary-download
+installMethod: binary-download, winget, docker, portable-zip, windows-service
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "7"

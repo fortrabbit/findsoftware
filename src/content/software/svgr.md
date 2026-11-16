@@ -18,7 +18,7 @@ runtime:
 runtimeMin: node 14
 runsAs:
   - local
-installMethod: npm install --save-dev @svgr/cli
+installMethod: npm install --save-dev @svgr/cli, npx @svgr/cli, npm install --save-dev @svgr/webpack, npm install --save-dev @svgr/core
 licenseModel: open-source
 license: MIT
 currentMajor: "8"

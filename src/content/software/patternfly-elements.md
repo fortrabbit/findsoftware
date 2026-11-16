@@ -13,7 +13,7 @@ maintainer: Red Hat, Inc.
 maintainerType: company
 firstRelease: 2018
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

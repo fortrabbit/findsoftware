@@ -28,7 +28,7 @@ runsAs:
 renderingModes:
   - static
   - server
-installMethod: docker
+installMethod: docker, executable download, maven build, tomcat war
 licenseModel: open-core
 license: Free for individuals and paid for enterprises (V4.0, V5, V6), Commercial use requires authorization from the copyright holder, MIT (V1.0, V2016, V2017, V2019, V2021)
 currentMajor: "6"

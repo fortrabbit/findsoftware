@@ -25,7 +25,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: Docker Compose quickstart with a Postgres container (docker-compose.quickstart.yml)
+installMethod: Docker Compose quickstart with a Postgres container (docker-compose.quickstart.yml), docker run with the image docker.litellm.ai/berriai/litellm, install script (scripts/quickstart.sh) run with sh, uv tool install 'litellm[proxy]' for the CLI proxy, uv add litellm for the Python SDK, Helm chart on EKS, GKE or AKS
 licenseModel: open-core
 license: MIT, BerriAI Enterprise license, for the enterprise/ directory
 currentMajor: "1"

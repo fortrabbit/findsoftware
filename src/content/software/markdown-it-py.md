@@ -19,7 +19,7 @@ runtime:
 hosting:
   - python
 runtimeMin: python 3.10
-installMethod: pip
+installMethod: pip, conda
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

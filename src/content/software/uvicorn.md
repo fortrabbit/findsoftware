@@ -20,7 +20,7 @@ hosting:
 runtimeMin: python 3.10
 runsAs:
   - always-on
-installMethod: pip
+installMethod: pip, uv
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "0"

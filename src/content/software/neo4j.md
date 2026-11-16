@@ -22,7 +22,7 @@ runtimeMin: jvm 21
 adminUi: true
 runsAs:
   - always-on
-installMethod: deb package
+installMethod: deb package, rpm package, binary tarball, docker image, windows zip archive
 licenseModel: open-core
 license: GPL-3.0
 latestReleaseDate: 2026-10-20

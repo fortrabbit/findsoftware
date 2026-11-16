@@ -19,7 +19,7 @@ runtimeMin: python 3.9
 i18n: documentation site also in French
 runsAs:
   - local
-installMethod: pip
+installMethod: pip, uv, rpm, docker
 licenseModel: open-source
 license: BSD-2-Clause
 currentMajor: "2"

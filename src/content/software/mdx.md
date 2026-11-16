@@ -19,7 +19,7 @@ hosting:
   - node
 runtimeMin: node 16
 templating: jsx
-installMethod: npm bundler integration
+installMethod: npm bundler integration, npm @mdx-js/mdx core compiler
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

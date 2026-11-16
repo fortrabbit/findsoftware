@@ -21,7 +21,7 @@ basedOn:
 renderingModes:
   - server
   - spa
-installMethod: nuget
+installMethod: nuget, dotnet-template
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "11"

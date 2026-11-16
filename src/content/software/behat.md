@@ -17,7 +17,7 @@ runtime:
 runtimeMin: php 8.2
 runsAs:
   - local
-installMethod: composer require --dev behat/behat
+installMethod: composer require --dev behat/behat, behat.phar download
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

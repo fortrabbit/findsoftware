@@ -16,7 +16,7 @@ language: javascript
 i18n: yes, a localization form setting translates the built-in form text
 runsAs:
   - browser
-installMethod: npm install formsmd
+installMethod: npm install formsmd, download the distribution files from the repository and include them with link and script tags
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

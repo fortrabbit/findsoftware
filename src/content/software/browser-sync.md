@@ -17,7 +17,7 @@ runtime:
 runtimeMin: node 8
 runsAs:
   - local
-installMethod: npm install -g browser-sync
+installMethod: npm install -g browser-sync, npm install browser-sync --save-dev
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "3"

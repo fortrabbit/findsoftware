@@ -19,7 +19,7 @@ runtime:
   - binary
 hosting:
   - binary
-installMethod: docker image
+installMethod: docker image, binary download
 licenseModel: open-core
 license: BSD-3-Clause, Weaviate License (wl/ directory)
 currentMajor: "1"

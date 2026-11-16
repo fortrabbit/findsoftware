@@ -13,7 +13,7 @@ status: active
 maintainer: Big Sky Software
 firstRelease: 2022
 language: css
-installMethod: cdn
+installMethod: cdn, npm
 licenseModel: open-source
 license: BSD-2-Clause
 currentMajor: "1"

@@ -18,7 +18,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: ros install from the git repository with Roswell
+installMethod: ros install from the git repository with Roswell, load coleslaw-cli with Quicklisp
 licenseModel: open-source
 license: BSD-2-Clause
 githubStargazers: 583

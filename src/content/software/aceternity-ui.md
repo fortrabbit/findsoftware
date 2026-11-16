@@ -14,7 +14,7 @@ maintainerType: company
 firstRelease: 2024
 basedOn:
   - react
-installMethod: copy-paste
+installMethod: copy-paste, shadcn-cli, mcp
 licenseModel: commercial
 license: proprietary (Aceternity License)
 social:

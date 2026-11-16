@@ -12,7 +12,7 @@ status: stub
 maintainer: Daniel Eden
 firstRelease: 2013
 language: css
-installMethod: npm
+installMethod: npm, yarn, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

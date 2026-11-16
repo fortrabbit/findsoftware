@@ -12,7 +12,7 @@ maintainer: Astrit
 maintainerType: individual
 firstRelease: 2019
 language: css
-installMethod: npm
+installMethod: npm, yarn, cdn
 licenseModel: source-available
 license: License Agreement for CSS＊GG & GLYF＊APP, SEE LICENSE
 currentMajor: "2"

@@ -23,7 +23,7 @@ adminUi: false
 templating: twig
 runsAs:
   - per-request
-installMethod: composer create-project
+installMethod: composer create-project, pre-bundled release
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

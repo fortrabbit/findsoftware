@@ -22,7 +22,7 @@ databases:
   - sqlite
   - sqlserver
   - oracle
-installMethod: Maven dependency org.ktorm:ktorm-core in pom.xml
+installMethod: Maven dependency org.ktorm:ktorm-core in pom.xml, Gradle dependency org.ktorm:ktorm-core
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "4"

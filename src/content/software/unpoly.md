@@ -16,7 +16,7 @@ hqCountry: DE
 language: javascript
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

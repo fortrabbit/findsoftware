@@ -26,7 +26,7 @@ runsAs:
 renderingModes:
   - server
   - static
-installMethod: go install
+installMethod: go install, GitHub binary download, Nix flake, Docker image
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

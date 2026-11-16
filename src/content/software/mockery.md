@@ -15,7 +15,7 @@ language: php
 runtime:
   - php
 runtimeMin: php 7.3
-installMethod: composer
+installMethod: composer, git
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "1"

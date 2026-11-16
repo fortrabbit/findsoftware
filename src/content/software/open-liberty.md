@@ -23,7 +23,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: maven
+installMethod: maven, gradle, zip-download, docker-image
 license: EPL-2.0
 latestReleaseDate: 2026-10-19
 githubStargazers: 1272

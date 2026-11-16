@@ -12,7 +12,7 @@ maintainer: Jake Archibald
 maintainerType: individual
 firstRelease: 2015
 language: javascript
-installMethod: npm
+installMethod: npm, ES module from jsDelivr, UMD script from jsDelivr
 licenseModel: open-source
 license: ISC
 currentMajor: "8"

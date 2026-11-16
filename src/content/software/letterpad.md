@@ -24,7 +24,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: git clone, bun install, bun run build, bun run seed, bun run start
+installMethod: git clone, bun install, bun run build, bun run seed, bun run start, Docker image abhisheksaha11/letterpad
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

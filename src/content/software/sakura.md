@@ -13,7 +13,7 @@ maintainer: Mitesh Shah
 maintainerType: individual
 firstRelease: 2016
 language: css
-installMethod: npm
+installMethod: npm, cdn, download
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

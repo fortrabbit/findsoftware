@@ -21,7 +21,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: install script (curl) with setup wizard
+installMethod: install script (curl) with setup wizard, Homebrew, npm wrapper that downloads the binary, Docker image on ghcr.io, Helm chart, PowerShell installer script
 licenseModel: open-core
 license: GPL-3.0-or-later
 currentMajor: "2"

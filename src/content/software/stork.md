@@ -22,7 +22,7 @@ runsAs:
   - browser
   - local
   - static
-installMethod: homebrew
+installMethod: homebrew, binary download, cargo
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

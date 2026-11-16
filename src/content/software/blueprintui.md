@@ -13,7 +13,7 @@ maintainer: Crylan Software LLC
 maintainerType: company
 firstRelease: 2022
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

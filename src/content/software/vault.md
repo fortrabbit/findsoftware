@@ -24,7 +24,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: package-manager
+installMethod: package-manager, binary-download, helm, source-build
 licenseModel: source-available
 license: BUSL-1.1
 currentMajor: "2"

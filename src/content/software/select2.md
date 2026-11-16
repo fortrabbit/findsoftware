@@ -16,7 +16,7 @@ language: javascript
 basedOn:
   - jquery
 i18n: message translations in many languages
-installMethod: npm
+installMethod: npm, cdn, bower, download
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

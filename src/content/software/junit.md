@@ -17,7 +17,7 @@ runtime:
 runtimeMin: jvm 17
 runsAs:
   - local
-installMethod: Maven
+installMethod: Maven, Gradle
 licenseModel: open-source
 license: EPL-2.0
 currentMajor: "6"

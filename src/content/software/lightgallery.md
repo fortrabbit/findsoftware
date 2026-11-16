@@ -16,7 +16,7 @@ maintainerType: individual
 firstRelease: 2014
 language: javascript
 i18n: translatable labels, right-to-left mirroring
-installMethod: npm
+installMethod: npm, yarn, download, cdn
 licenseModel: open-core
 license: GPL-3.0, commercial license
 currentMajor: "3"

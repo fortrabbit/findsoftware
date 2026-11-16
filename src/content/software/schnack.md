@@ -21,7 +21,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: npm
+installMethod: npm, source, docker
 license: The Lil License v1
 currentMajor: "1"
 latestReleaseDate: 2021-01-16

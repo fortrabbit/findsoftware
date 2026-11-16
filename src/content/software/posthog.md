@@ -23,7 +23,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: hobby deploy script
+installMethod: hobby deploy script, hobby installer (binary download, beta), Docker Compose
 licenseModel: open-core
 license: MIT, PostHog Enterprise license (ee directory)
 githubStargazers: 40620

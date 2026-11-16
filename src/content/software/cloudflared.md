@@ -20,7 +20,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: binary download
+installMethod: binary download, docker, debian packages, rpm packages, homebrew, build from source
 licenseModel: open-source
 license: Apache-2.0
 latestReleaseDate: 2026-10-27

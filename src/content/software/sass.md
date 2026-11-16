@@ -19,7 +19,7 @@ runtime:
 runtimeMin: dart 20.19
 runsAs:
   - local
-installMethod: download the standalone archive from GitHub releases
+installMethod: download the standalone archive from GitHub releases, npm install --save-dev sass, brew install sass/sass/sass, choco install sass, pub global activate sass
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

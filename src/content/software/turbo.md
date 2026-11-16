@@ -16,7 +16,7 @@ hqCountry: US
 language: javascript
 runsAs:
   - browser
-installMethod: jsDelivr script tag
+installMethod: jsDelivr script tag, unpkg download, npm, turbo-rails gem, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "8"

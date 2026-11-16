@@ -13,7 +13,7 @@ maintainer: Taye Adeyemi
 maintainerType: individual
 firstRelease: 2013
 language: javascript
-installMethod: npm install interactjs (pre-bundled package)
+installMethod: npm install interactjs (pre-bundled package), npm install of @interactjs/ scoped packages, one per feature, script tag from the jsDelivr or unpkg CDN, ES module imports from cdn.interactjs.io, yarn add interactjs in a Rails app
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

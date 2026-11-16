@@ -22,7 +22,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: npm
+installMethod: npm, docker, heroku
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

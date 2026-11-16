@@ -15,7 +15,7 @@ firstRelease: 2018
 language: javascript
 templating: nunjucks
 i18n: yes, component text can be translated
-installMethod: npm
+installMethod: npm, github-release-zip
 licenseModel: open-source
 license: MIT, Open Government Licence v3.0
 currentMajor: "6"

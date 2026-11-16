@@ -27,7 +27,7 @@ headlessApi:
 i18n: multiple languages
 runsAs:
   - always-on
-installMethod: binary-download
+installMethod: binary-download, docker-image, source-build, docker-compose
 licenseModel: open-source
 license: EUPL-1.2, slightly modified (Compatible Licenses appendix reduced), ISC
 currentMajor: "2"

@@ -17,7 +17,7 @@ runtime:
 hosting:
   - python
 runtimeMin: python 3.9
-installMethod: pip install
+installMethod: pip install, setup.py install, easy_install, pypm install, copy lib/markdown2.py
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

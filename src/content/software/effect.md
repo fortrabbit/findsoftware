@@ -8,7 +8,7 @@ urls:
 category:
   - library
 description: TypeScript library for building production-grade applications, with typed errors, dependency injection, concurrency, scheduling and schema validation.
-status: stub
+status: active
 maintainer: Effectful Technologies Inc
 maintainerType: company
 language: javascript

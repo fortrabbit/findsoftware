@@ -16,7 +16,7 @@ runtime:
   - binary
 runsAs:
   - local
-installMethod: cargo install
+installMethod: cargo install, npm, shell script, windows installer
 licenseModel: open-source
 license: MIT OR Apache-2.0, Apache-2.0
 currentMajor: "0"

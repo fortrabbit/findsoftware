@@ -35,7 +35,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: docker
+installMethod: docker, source
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

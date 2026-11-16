@@ -16,7 +16,7 @@ runtime:
   - node
 basedOn:
   - react
-installMethod: npm
+installMethod: npm, shadcn-cli
 licenseModel: open-source
 license: MIT
 currentMajor: "53"

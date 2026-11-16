@@ -17,7 +17,7 @@ runtime:
 basedOn:
   - prosemirror
 i18n: rtl
-installMethod: npm
+installMethod: npm, shadcn
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

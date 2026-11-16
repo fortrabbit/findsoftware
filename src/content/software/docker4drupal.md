@@ -17,7 +17,7 @@ databases:
   - postgres
 runsAs:
   - local
-installMethod: git clone of the repository at its latest stable tag
+installMethod: git clone of the repository at its latest stable tag, download of docker4drupal.tar.gz from the latest release
 licenseModel: open-source
 license: MIT
 currentMajor: "6"

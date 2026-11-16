@@ -14,7 +14,7 @@ firstRelease: 2024
 language: javascript
 basedOn:
   - angular
-installMethod: ng-add
+installMethod: ng-add, npm
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

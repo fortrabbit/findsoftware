@@ -20,7 +20,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: helm
+installMethod: helm, tanka, docker, apt-rpm-package, source-build
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "3"

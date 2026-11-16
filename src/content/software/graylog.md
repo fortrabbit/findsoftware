@@ -23,7 +23,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: os-package
+installMethod: os-package, docker-compose, tarball
 licenseModel: source-available
 license: SSPL-1.0
 currentMajor: "7"

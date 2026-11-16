@@ -18,7 +18,7 @@ runtime:
 runtimeMin: ruby 2.5
 runsAs:
   - local
-installMethod: gem install
+installMethod: gem install, bundler (Gemfile)
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

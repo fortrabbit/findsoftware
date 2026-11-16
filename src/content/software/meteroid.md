@@ -16,7 +16,7 @@ hqCountry: FR
 language: rust
 databases:
   - postgres
-installMethod: Docker Compose, minimal setup for testing and development
+installMethod: Docker Compose, minimal setup for testing and development, Helm chart in k8s/meteroid
 licenseModel: open-core
 license: AGPL-3.0
 currentMajor: "0"

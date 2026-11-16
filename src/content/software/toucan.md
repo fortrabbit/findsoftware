@@ -23,7 +23,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: Homebrew, Mint, prebuilt binary, pkg installer
+installMethod: Homebrew, Mint, prebuilt binary, pkg installer, deb package, rpm package, docker, compile from source
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

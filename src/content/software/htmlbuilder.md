@@ -24,7 +24,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: Linux installer (HtmlBuilder_installer)
+installMethod: Linux installer (HtmlBuilder_installer), pre-release download, compile the Lazarus project
 licenseModel: open-source
 license: MIT
 githubStargazers: 13

@@ -32,7 +32,7 @@ i18n: yes, per-locale entries, slugs and publishing
 runsAs:
   - always-on
   - per-request
-installMethod: npm create emdash@latest
+installMethod: npm create emdash@latest, Deploy to Cloudflare button, Dockerfile for the Node.js build
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

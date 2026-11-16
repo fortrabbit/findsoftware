@@ -14,7 +14,7 @@ language: go
 databases:
   - postgres
 adminUi: true
-installMethod: docker
+installMethod: docker, binary download, build from source, Heroku deploy button, Railway deploy button
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

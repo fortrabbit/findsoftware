@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: source-tarball
+installMethod: source-tarball, distro-packages, docker-image, source-git, homebrew, official-debian-repository, cygwin
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

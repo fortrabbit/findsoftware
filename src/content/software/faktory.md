@@ -21,7 +21,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: linux rpm and deb packages
+installMethod: linux rpm and deb packages, homebrew, docker image contribsys/faktory, aws ecs, render.com, source build, kubernetes
 licenseModel: open-core
 license: AGPL-3.0, Commercial (Faktory Enterprise)
 currentMajor: "1"

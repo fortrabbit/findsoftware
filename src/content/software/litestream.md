@@ -21,7 +21,7 @@ databases:
   - sqlite
 runsAs:
   - always-on
-installMethod: prebuilt binary download
+installMethod: prebuilt binary download, debian package, rpm package, homebrew, docker image, build from source
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

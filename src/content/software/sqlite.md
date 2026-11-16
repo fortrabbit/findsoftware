@@ -13,7 +13,7 @@ maintainer: Hipp, Wyrick & Company, Inc.
 maintainerType: company
 firstRelease: 2000
 language: c
-installMethod: amalgamation-source
+installMethod: amalgamation-source, precompiled-binaries, precompiled-wasm-bundle, android-library
 licenseModel: open-source
 license: public domain
 currentMajor: "3"

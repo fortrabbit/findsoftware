@@ -21,7 +21,7 @@ databases:
   - sqlserver
 runsAs:
   - local
-installMethod: download
+installMethod: download, AppImage, snap, build from source
 licenseModel: open-core
 license: GPL-3.0-or-later, commercial source-available license for paid features
 currentMajor: "6"

@@ -30,7 +30,7 @@ headlessApi:
 i18n: yes, translated sign-in, sign-up, account recovery and My Account interfaces
 runsAs:
   - always-on
-installMethod: binary download
+installMethod: binary download, helm, build from source
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "7"

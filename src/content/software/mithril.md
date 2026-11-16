@@ -17,7 +17,7 @@ runsAs:
   - browser
 renderingModes:
   - spa
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

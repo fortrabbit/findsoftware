@@ -19,7 +19,7 @@ basedOn:
 adminUi: true
 runsAs:
   - always-on
-installMethod: automated installer script
+installMethod: automated installer script, manual Docker Compose deployment
 licenseModel: open-core
 license: GPL-3.0
 currentMajor: "9"

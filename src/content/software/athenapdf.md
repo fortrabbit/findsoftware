@@ -19,7 +19,7 @@ hosting:
 runsAs:
   - always-on
   - local
-installMethod: docker
+installMethod: docker, source build
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

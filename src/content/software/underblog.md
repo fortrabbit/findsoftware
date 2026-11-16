@@ -23,7 +23,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: brew install freetonik/tap/underblog
+installMethod: brew install freetonik/tap/underblog, docker run freetonik/underblog, binary download
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

@@ -17,7 +17,7 @@ basedOn:
   - webpack
 runsAs:
   - local
-installMethod: yarn add poi --dev (npm package poi)
+installMethod: yarn add poi --dev (npm package poi), create-poi-app starter
 licenseModel: open-source
 license: MIT, MIT © EGOIST
 currentMajor: "12"

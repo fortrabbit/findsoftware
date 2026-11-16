@@ -20,7 +20,7 @@ runtimeMin: dotnet 8
 basedOn:
   - blazor
 templating: razor
-installMethod: dotnet add package
+installMethod: dotnet add package, dotnet new template
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

@@ -21,7 +21,7 @@ templating: vue
 i18n: yes, through the vue-i18n library
 runsAs:
   - local
-installMethod: npx maizzle new
+installMethod: npx maizzle new, vite plugin
 licenseModel: open-source
 license: MIT
 currentMajor: "6"

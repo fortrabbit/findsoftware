@@ -13,7 +13,7 @@ maintainer: Afshin Mehrabani
 firstRelease: 2020
 language: javascript
 i18n: yes
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "6"

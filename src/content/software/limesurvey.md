@@ -30,7 +30,7 @@ adminUi: true
 headlessApi:
   - rest
 i18n: multilingual surveys
-installMethod: zip download
+installMethod: zip download, command line interface
 licenseModel: open-source
 license: GPL-2.0-or-later
 currentMajor: "7"

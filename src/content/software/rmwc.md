@@ -15,7 +15,7 @@ language: javascript
 basedOn:
   - react
   - material-components-web
-installMethod: npm
+installMethod: npm, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "14"

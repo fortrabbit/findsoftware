@@ -18,7 +18,7 @@ hosting:
   - elixir
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, Kubernetes
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "3"

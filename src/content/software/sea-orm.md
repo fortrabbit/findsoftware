@@ -24,7 +24,7 @@ databases:
   - mariadb
   - postgres
   - sqlite
-installMethod: cargo
+installMethod: cargo, cargo install
 licenseModel: open-source
 license: Apache-2.0, MIT
 currentMajor: "2"

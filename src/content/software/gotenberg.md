@@ -15,7 +15,7 @@ firstRelease: 2018
 language: go
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, docker-compose, kubernetes, cloud-run, aws-lambda
 licenseModel: open-source
 license: MIT
 currentMajor: "8"

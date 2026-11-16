@@ -15,7 +15,7 @@ firstRelease: 2011
 language: cpp
 runtime:
   - binary
-installMethod: download
+installMethod: download, source
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "2"

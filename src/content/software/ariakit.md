@@ -15,7 +15,7 @@ firstRelease: 2022
 language: javascript
 basedOn:
   - react
-installMethod: npm
+installMethod: npm, CDN, for development only
 licenseModel: open-core
 license: MIT, Ariakit Plus License, Ariakit.com Proprietary License
 currentMajor: "0"

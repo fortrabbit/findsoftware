@@ -18,7 +18,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: install script (install.sh) from the master branch
+installMethod: install script (install.sh) from the master branch, binary from the GitHub release page, Homebrew formula gorush, go install github.com/appleboy/gorush, docker image appleboy/gorush, Kubernetes manifests in the k8s directory, AWS Lambda build of the server binary
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

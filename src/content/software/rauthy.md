@@ -23,7 +23,7 @@ adminUi: true
 i18n: yes, server-side translation of end-user pages
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, Kubernetes manifests, build from source
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

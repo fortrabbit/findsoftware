@@ -20,7 +20,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, kubernetes manifests, aws lambda
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

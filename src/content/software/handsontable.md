@@ -18,7 +18,7 @@ language: javascript
 i18n: built-in UI translations and custom language sets
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, cdn, nuget
 licenseModel: source-available
 license: Non-Commercial License, Commercial License Agreement
 currentMajor: "18"

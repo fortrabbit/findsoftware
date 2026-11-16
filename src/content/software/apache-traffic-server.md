@@ -20,7 +20,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: source tarball
+installMethod: source tarball, git clone
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "10"

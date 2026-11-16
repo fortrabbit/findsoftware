@@ -21,7 +21,7 @@ databases:
   - mysql
 runsAs:
   - always-on
-installMethod: apt and dnf packages
+installMethod: apt and dnf packages, binary tarball, build from source
 licenseModel: source-available
 license: BUSL-1.1
 latestReleaseDate: 2024-08-27

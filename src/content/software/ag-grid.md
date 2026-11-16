@@ -17,7 +17,7 @@ firstRelease: 2015
 hqCountry: GB
 language: javascript
 i18n: translations for commonly requested languages
-installMethod: npm install
+installMethod: npm install, CDN script tag, download
 licenseModel: open-core
 license: MIT, Commercial
 currentMajor: "36"

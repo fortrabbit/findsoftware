@@ -18,7 +18,7 @@ runtime:
 runtimeMin: python 3.8
 basedOn:
   - plotly-js
-installMethod: pip
+installMethod: pip, conda
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

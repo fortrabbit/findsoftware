@@ -15,7 +15,7 @@ firstRelease: 2011
 language: javascript
 runsAs:
   - browser
-installMethod: copy prebuilt files into the project
+installMethod: copy prebuilt files into the project, CDN (jsDelivr, cdnjs)
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "1"

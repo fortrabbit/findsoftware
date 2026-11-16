@@ -19,7 +19,7 @@ hosting:
 runsAs:
   - browser
   - always-on
-installMethod: npm create imba
+installMethod: npm create imba, pnpm create imba, bun create imba, npx create-imba
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

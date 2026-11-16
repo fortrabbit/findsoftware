@@ -21,7 +21,7 @@ basedOn:
   - sveltekit
 runsAs:
   - always-on
-installMethod: git clone, npm install, npm run dev
+installMethod: "git clone, npm install, npm run dev, Docker image: docker run -d -p 3000:3000 ghcr.io/itswadesh/svelte-commerce:latest"
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

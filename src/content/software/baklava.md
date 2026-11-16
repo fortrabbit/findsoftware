@@ -14,7 +14,7 @@ firstRelease: 2022
 language: javascript
 basedOn:
   - lit
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

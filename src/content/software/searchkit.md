@@ -20,7 +20,7 @@ basedOn:
   - elasticsearch
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, CDN script tags (jsDelivr)
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "4"

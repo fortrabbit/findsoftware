@@ -22,7 +22,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: setup-script
+installMethod: setup-script, curl-setup-script
 licenseModel: open-source
 license: CC0-1.0
 latestReleaseDate: 2026-09-26

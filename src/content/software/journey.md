@@ -27,7 +27,7 @@ runsAs:
   - local
 renderingModes:
   - server
-installMethod: download a release binary and extract it
+installMethod: download a release binary and extract it, build from source with go build
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

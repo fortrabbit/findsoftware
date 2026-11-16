@@ -18,7 +18,7 @@ hosting:
 runtimeMin: node 20
 runsAs:
   - always-on
-installMethod: npx ipx serve --dir ./
+installMethod: npx ipx serve --dir ./, bunx ipx serve --dir ./
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

@@ -23,7 +23,7 @@ runsAs:
   - per-request
 renderingModes:
   - static
-installMethod: apt-get install ikiwiki on Debian and Ubuntu
+installMethod: apt-get install ikiwiki on Debian and Ubuntu, perl Makefile.PL, make, make install from the source tarball
 licenseModel: open-source
 license: GPL-2.0-or-later
 currentMajor: "3"

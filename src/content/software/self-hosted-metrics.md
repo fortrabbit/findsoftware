@@ -23,7 +23,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker-compose
+installMethod: docker-compose, docker-image
 licenseModel: open-source
 license: AGPL-3.0, MIT
 currentMajor: "1"

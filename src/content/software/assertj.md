@@ -15,7 +15,7 @@ language: java
 runtime:
   - jvm
 runtimeMin: jvm 8
-installMethod: Maven dependency
+installMethod: Maven dependency, Gradle dependency
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "3"

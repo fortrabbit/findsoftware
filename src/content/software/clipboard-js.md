@@ -12,7 +12,7 @@ maintainer: Zeno Rocha
 maintainerType: individual
 firstRelease: 2015
 language: javascript
-installMethod: npm
+installMethod: npm, CDN, ZIP download
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

@@ -17,7 +17,7 @@ runtime:
 runtimeMin: php 8.2
 runsAs:
   - local
-installMethod: docker
+installMethod: docker, composer
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

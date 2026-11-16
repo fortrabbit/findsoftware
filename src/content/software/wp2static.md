@@ -16,7 +16,7 @@ basedOn:
   - wordpress
 renderingModes:
   - static
-installMethod: git clone with composer install
+installMethod: git clone with composer install, composer require, installer zip
 licenseModel: open-source
 license: Unlicense
 currentMajor: "7"

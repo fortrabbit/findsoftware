@@ -22,7 +22,7 @@ runtimeMin: beam 27
 adminUi: true
 runsAs:
   - always-on
-installMethod: apt (Debian, Ubuntu)
+installMethod: apt (Debian, Ubuntu), dnf or yum (RHEL, CentOS Stream, Fedora), Homebrew, Chocolatey (Windows), Windows installer (.exe), generic UNIX binary build (tar.xz), Docker image, Kubernetes operator
 licenseModel: open-core
 license: MPL-2.0, Apache-2.0
 currentMajor: "4"

@@ -25,7 +25,7 @@ headlessApi:
   - graphql
 runsAs:
   - always-on
-installMethod: docker-compose
+installMethod: docker-compose, docker-image, kubernetes-helm, source, netlify, vercel, heroku, qovery, render, railway, koyeb, zeabur
 licenseModel: open-source
 license: MIT, The MIT License (MIT)
 currentMajor: "3"

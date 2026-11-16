@@ -23,7 +23,7 @@ databases:
 templating: htl, jsp
 runsAs:
   - always-on
-installMethod: Docker image
+installMethod: Docker image, Feature Launcher with a standalone feature archive, Karaf distribution
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "14"

@@ -15,7 +15,7 @@ firstRelease: 2010
 language: javascript
 runsAs:
   - browser
-installMethod: download
+installMethod: download, npm, bower, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

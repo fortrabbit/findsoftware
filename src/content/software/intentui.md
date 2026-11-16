@@ -14,7 +14,7 @@ maintainer: Irsyad A. Panjaitan
 maintainerType: individual
 firstRelease: 2024
 language: javascript
-installMethod: cli
+installMethod: cli, copy-paste
 licenseModel: open-core
 license: MIT
 currentMajor: "4"

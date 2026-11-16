@@ -13,7 +13,7 @@ maintainer: Lucas Larroche
 maintainerType: individual
 firstRelease: 2019
 language: css
-installMethod: cdn
+installMethod: cdn, npm, composer, download archive
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

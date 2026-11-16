@@ -21,7 +21,7 @@ basedOn:
   - unicorn
 runsAs:
   - always-on
-installMethod: Bundler (Gemfile)
+installMethod: Bundler (Gemfile), gem install
 licenseModel: open-source
 license: GPL-2.0+, Ruby 1.8-specific terms
 currentMajor: "0"

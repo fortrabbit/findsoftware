@@ -24,7 +24,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: source
+installMethod: source, docker-build, netlify, vercel, render, koyeb
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

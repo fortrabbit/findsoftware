@@ -18,7 +18,7 @@ runtime:
 basedOn:
   - templ
 templating: templ
-installMethod: go install (CLI)
+installMethod: go install (CLI), go get (Go module import)
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -21,7 +21,7 @@ adminUi: true
 headlessApi:
   - rest
 i18n: yes, widget labels can be overridden per language
-installMethod: npm
+installMethod: npm, cdn, docker
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "3"

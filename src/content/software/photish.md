@@ -26,7 +26,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: gem install photish
+installMethod: gem install photish, Debian package, RPM package, Linux binaries download, Windows binaries download
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

@@ -26,7 +26,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: Docker image
+installMethod: Docker image, Kubernetes manifests, build from source
 licenseModel: open-source
 license: AGPL-3.0-only
 currentMajor: "0"

@@ -19,7 +19,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: binary download
+installMethod: binary download, Docker image, build from source with glide
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

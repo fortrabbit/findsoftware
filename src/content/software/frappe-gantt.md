@@ -15,7 +15,7 @@ firstRelease: 2016
 hqCountry: IN
 language: javascript
 i18n: yes
-installMethod: npm
+installMethod: npm, CDN
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

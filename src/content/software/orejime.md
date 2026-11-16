@@ -16,7 +16,7 @@ firstRelease: 2018
 hqCountry: FR
 language: javascript
 i18n: yes, European languages
-installMethod: npm
+installMethod: npm, CDN (jsDelivr)
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "3"

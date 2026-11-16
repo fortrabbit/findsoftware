@@ -27,7 +27,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: DUB (dub init -t vibe.d)
+installMethod: DUB (dub init -t vibe.d), ZIP package, AUR package (Arch Linux)
 licenseModel: open-source
 license: MIT, MIT public license
 currentMajor: "0"

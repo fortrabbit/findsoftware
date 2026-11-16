@@ -13,7 +13,7 @@ maintainer: Julian Garnier
 maintainerType: individual
 firstRelease: 2016
 language: javascript
-installMethod: npm
+installMethod: npm, cdn, download
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

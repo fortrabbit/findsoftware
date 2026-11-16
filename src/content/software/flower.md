@@ -22,7 +22,7 @@ runtimeMin: python 3.10
 adminUi: true
 runsAs:
   - always-on
-installMethod: pip install flower
+installMethod: pip install flower, docker image mher/flower
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "2"

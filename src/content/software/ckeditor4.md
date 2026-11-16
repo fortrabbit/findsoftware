@@ -15,7 +15,7 @@ maintainerType: company
 firstRelease: 2012
 hqCountry: PL
 i18n: over 70 localizations with full RTL support
-installMethod: npm
+installMethod: npm, cdn, manual download
 licenseModel: commercial
 license: commercial
 currentMajor: "4"

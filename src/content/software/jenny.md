@@ -18,7 +18,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: git clone, then make install
+installMethod: git clone, then make install, docker image on ghcr.io
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

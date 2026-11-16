@@ -12,7 +12,7 @@ maintainer: serverco
 firstRelease: 2016
 runsAs:
   - scheduled
-installMethod: manual download of the script (curl)
+installMethod: manual download of the script (curl), make install from the release tarball, git clone, RPM and DEB packages on the release page, Arch Linux AUR packages
 licenseModel: open-source
 license: GPL-3.0-or-later
 currentMajor: "2"

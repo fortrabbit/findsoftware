@@ -20,7 +20,7 @@ hosting:
 runtimeMin: dotnet 7
 runsAs:
   - scheduled
-installMethod: zip download, unpacked and run as wacs.exe
+installMethod: zip download, unpacked and run as wacs.exe, dotnet tool from NuGet
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

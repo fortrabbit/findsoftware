@@ -20,7 +20,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: Homebrew
+installMethod: Homebrew, binary download, npm, docker
 licenseModel: open-core
 license: MIT, Commercial, for Pro (self-hosted)
 currentMajor: "1"

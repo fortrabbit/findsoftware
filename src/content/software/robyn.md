@@ -24,7 +24,7 @@ databases:
 templating: jinja2
 runsAs:
   - always-on
-installMethod: pip
+installMethod: pip, conda-forge
 licenseModel: open-source
 license: BSD-2-Clause
 currentMajor: "0"

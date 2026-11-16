@@ -18,7 +18,7 @@ runtime:
 runtimeMin: jvm 11
 basedOn:
   - jakarta-faces
-installMethod: maven
+installMethod: maven, jar-download
 licenseModel: open-source
 license: MIT
 currentMajor: "16"

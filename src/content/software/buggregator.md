@@ -22,7 +22,7 @@ databases:
 runsAs:
   - local
   - always-on
-installMethod: binary-download
+installMethod: binary-download, docker, source-build, helm
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

@@ -17,7 +17,7 @@ language: javascript
 basedOn:
   - bootstrap
 i18n: yes
-installMethod: npm
+installMethod: npm, yarn, composer, cdn, compiled-download
 licenseModel: open-core
 license: MIT, CC BY 3.0 (documentation)
 currentMajor: "5"

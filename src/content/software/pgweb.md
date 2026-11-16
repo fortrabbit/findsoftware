@@ -20,7 +20,7 @@ hosting:
 databases:
   - postgres
 adminUi: true
-installMethod: precompiled binary from GitHub Releases
+installMethod: precompiled binary from GitHub Releases, docker image sosedoff/pgweb, homebrew formula pgweb, build from source (make)
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

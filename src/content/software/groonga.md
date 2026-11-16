@@ -14,7 +14,7 @@ firstRelease: 2009
 language: c
 runsAs:
   - always-on
-installMethod: apt packages
+installMethod: apt packages, homebrew, macports, build from source with cmake, docker
 licenseModel: open-source
 license: LGPL-2.1
 currentMajor: "16"

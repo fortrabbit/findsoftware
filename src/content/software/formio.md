@@ -28,7 +28,7 @@ headlessApi:
 i18n: yes, translation of platform areas and front-end field UI settings
 runsAs:
   - always-on
-installMethod: docker-compose
+installMethod: docker-compose, source
 licenseModel: open-core
 license: OSL-3.0
 currentMajor: "4"

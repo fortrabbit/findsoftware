@@ -18,7 +18,7 @@ runtime:
 hosting:
   - node
 runtimeMin: node 0.10
-installMethod: npm
+installMethod: npm, bower
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

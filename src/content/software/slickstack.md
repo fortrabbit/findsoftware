@@ -16,7 +16,7 @@ databases:
 adminUi: false
 runsAs:
   - scheduled
-installMethod: shell-script-wget
+installMethod: shell-script-wget, step-by-step-bash-scripts
 licenseModel: open-source
 license: GPL-3.0
 githubStargazers: 704

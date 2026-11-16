@@ -20,7 +20,7 @@ hosting:
   - dotnet
 runtimeMin: dotnet 10
 adminUi: true
-installMethod: docker image exceptionless/exceptionless
+installMethod: docker image exceptionless/exceptionless, source build (server and frontend), kubernetes (helm)
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "8"

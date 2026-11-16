@@ -18,7 +18,7 @@ basedOn:
 i18n: yes
 runsAs:
   - browser
-installMethod: download of prebuilt files
+installMethod: download of prebuilt files, npm, jsDelivr CDN
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

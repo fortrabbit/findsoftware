@@ -18,7 +18,7 @@ runtime:
 renderingModes:
   - spa
   - server
-installMethod: npm
+installMethod: npm, cdn, create-inferno-app
 licenseModel: open-source
 license: MIT
 currentMajor: "10"

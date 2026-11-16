@@ -21,7 +21,7 @@ templating: jsx
 i18n: right-to-left layout direction
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, script tag
 licenseModel: open-core
 license: MIT
 currentMajor: "4"

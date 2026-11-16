@@ -23,7 +23,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: Homebrew
+installMethod: Homebrew, pre-built binary or source build
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

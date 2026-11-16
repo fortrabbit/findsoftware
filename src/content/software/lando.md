@@ -19,7 +19,7 @@ runtime:
 runtimeMin: node 20
 runsAs:
   - local
-installMethod: setup script for macOS, Linux and WSL (curl piped to bash)
+installMethod: setup script for macOS, Linux and WSL (curl piped to bash), PowerShell setup script for Windows, from source, git clone of lando/core
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

@@ -28,7 +28,7 @@ templating: blade
 i18n: multi-language and multi-currency
 runsAs:
   - per-request
-installMethod: composer create-project gp247/s-cart
+installMethod: composer create-project gp247/s-cart, git clone from GitHub, then composer install, docker compose
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

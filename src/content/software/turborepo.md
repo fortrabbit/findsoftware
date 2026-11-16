@@ -16,7 +16,7 @@ firstRelease: 2021
 language: rust
 runsAs:
   - local
-installMethod: npm
+installMethod: npm, npm create, shell script
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

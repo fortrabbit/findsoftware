@@ -19,7 +19,7 @@ runsAs:
 renderingModes:
   - server
   - spa
-installMethod: npm
+installMethod: npm, rollup, webpack
 licenseModel: open-source
 license: MIT
 currentMajor: "9"

@@ -18,7 +18,7 @@ runtime:
 hosting:
   - node
 runtimeMin: node 18
-installMethod: npm
+installMethod: npm, standalone script
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

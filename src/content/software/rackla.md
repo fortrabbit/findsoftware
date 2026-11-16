@@ -19,7 +19,7 @@ hosting:
   - elixir
 runsAs:
   - always-on
-installMethod: Mix dependency from hex (add {:rackla, "~> 1.2"} to mix.exs deps)
+installMethod: Mix dependency from hex (add {:rackla, "~> 1.2"} to mix.exs deps), Clone the Rackla Skeleton project
 licenseModel: open-source
 license: Apache-2.0, Apache 2
 currentMajor: "1"

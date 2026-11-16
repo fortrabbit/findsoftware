@@ -15,7 +15,7 @@ language: javascript
 basedOn:
   - react
   - d3
-installMethod: npm
+installMethod: npm, cdn, deno
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

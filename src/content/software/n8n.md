@@ -25,7 +25,7 @@ databases:
   - postgres
 adminUi: true
 i18n: UI strings in a selectable locale
-installMethod: one-line setup script
+installMethod: one-line setup script, docker, docker compose, npm
 licenseModel: source-available
 license: Sustainable Use License, n8n Enterprise License
 currentMajor: "2"

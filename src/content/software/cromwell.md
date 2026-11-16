@@ -37,7 +37,7 @@ runsAs:
 renderingModes:
   - server
   - isr
-installMethod: Docker image cromwellcms/cromwell-mariadb (docker run)
+installMethod: Docker image cromwellcms/cromwell-mariadb (docker run), Docker Compose, npx @cromwell/cli create, yarn add @cromwell/cms
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

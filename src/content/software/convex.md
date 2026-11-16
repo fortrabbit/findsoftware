@@ -24,7 +24,7 @@ databases:
   - postgres
   - mysql
 adminUi: true
-installMethod: docker
+installMethod: docker, binary download
 licenseModel: source-available
 license: FSL-1.1-Apache-2.0
 latestReleaseDate: 2026-10-22

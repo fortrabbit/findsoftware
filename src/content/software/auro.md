@@ -13,7 +13,7 @@ maintainer: Alaska Airlines, Inc.
 maintainerType: company
 firstRelease: 2019
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "13"

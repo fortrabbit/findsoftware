@@ -19,7 +19,7 @@ templating: freemarker, jade, groovy, pebble, trimou, velocity
 i18n: yes, messages per language from properties files
 runsAs:
   - always-on
-installMethod: Maven dependency ro.pippo:pippo-core
+installMethod: Maven dependency ro.pippo:pippo-core, Maven archetype quickstart
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

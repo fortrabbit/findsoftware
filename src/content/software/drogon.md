@@ -26,7 +26,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: cmake build from source
+installMethod: cmake build from source, docker image, vcpkg, nix package
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

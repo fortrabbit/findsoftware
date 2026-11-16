@@ -21,7 +21,7 @@ adminUi: true
 templating: jsp
 runsAs:
   - always-on
-installMethod: binary download, zip and tar.gz
+installMethod: binary download, zip and tar.gz, windows service installer, maven central dependency
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "11"

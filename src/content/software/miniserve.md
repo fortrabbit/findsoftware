@@ -17,7 +17,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: binary download from the GitHub releases page
+installMethod: binary download from the GitHub releases page, cargo install from crates.io, Homebrew, Docker image docker.io/svenstaro/miniserve, pacman package for Arch Linux, Scoop package for Windows, Podman, Termux package, third-party Helm chart
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

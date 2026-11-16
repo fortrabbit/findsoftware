@@ -28,7 +28,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker-compose
+installMethod: docker-compose, docker-swarm
 licenseModel: open-core
 license: AGPL-3.0, AGPL-3.0 License, enterprise license for organizations that require a commercial license
 currentMajor: "0"

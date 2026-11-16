@@ -27,7 +27,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: pip3 install portray
+installMethod: pip3 install portray, poetry add portray, pipenv install portray
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

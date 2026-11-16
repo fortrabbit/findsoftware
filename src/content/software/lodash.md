@@ -8,7 +8,7 @@ urls:
 category:
   - library
 description: Modular JavaScript utility library with functions for arrays, collections, objects, strings and functions, published as npm packages and browser builds.
-status: stub
+status: active
 maintainer: OpenJS Foundation and other contributors
 maintainerType: foundation
 firstRelease: 2012

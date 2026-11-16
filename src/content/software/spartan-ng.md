@@ -16,7 +16,7 @@ basedOn:
   - angular
   - tailwindcss
 i18n: yes, right-to-left layouts
-installMethod: cli
+installMethod: cli, manual
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

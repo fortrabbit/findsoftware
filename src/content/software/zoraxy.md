@@ -21,7 +21,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: precompiled binary
+installMethod: precompiled binary, build from source with Go, Docker image
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "3"

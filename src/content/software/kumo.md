@@ -16,7 +16,7 @@ hqCountry: US
 language: javascript
 basedOn:
   - base-ui
-installMethod: npm
+installMethod: npm, cli
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

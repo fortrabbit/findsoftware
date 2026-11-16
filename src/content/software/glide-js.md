@@ -12,7 +12,7 @@ status: active
 maintainer: Jędrzej Chałubek
 firstRelease: 2014
 language: javascript
-installMethod: npm
+installMethod: npm, CDN, download
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

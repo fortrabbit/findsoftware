@@ -20,7 +20,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: go install
+installMethod: go install, docker, prebuilt binary
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

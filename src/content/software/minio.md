@@ -21,7 +21,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: go install from source
+installMethod: go install from source, docker build from the repository Dockerfile, community Helm chart or MinIO Operator on Kubernetes
 licenseModel: open-source
 license: AGPL-3.0
 latestReleaseDate: 2025-10-16

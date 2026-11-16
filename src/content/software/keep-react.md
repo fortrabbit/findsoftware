@@ -15,7 +15,7 @@ language: javascript
 basedOn:
   - react
   - tailwindcss
-installMethod: npm
+installMethod: npm, yarn, pnpm
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

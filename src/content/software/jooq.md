@@ -20,7 +20,7 @@ databases:
   - sqlite
   - sqlserver
   - oracle
-installMethod: Maven dependency
+installMethod: Maven dependency, download
 licenseModel: open-core
 license: Apache-2.0, commercial
 currentMajor: "3"

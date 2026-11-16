@@ -18,7 +18,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: clone the project and push the src folder to a gh-pages branch
+installMethod: clone the project and push the src folder to a gh-pages branch, sign in to the hosted editor with a GitHub account and a repository named username.github.io
 licenseModel: open-source
 license: MIT
 githubStargazers: 912

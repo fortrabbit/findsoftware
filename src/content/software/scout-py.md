@@ -28,7 +28,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: pip
+installMethod: pip, git clone, pip install ., docker
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

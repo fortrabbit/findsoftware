@@ -14,7 +14,7 @@ maintainer: Paweł Kuna
 maintainerType: individual
 firstRelease: 2020
 language: javascript
-installMethod: npm
+installMethod: npm, github-release-zip
 licenseModel: open-core
 license: MIT
 currentMajor: "3"

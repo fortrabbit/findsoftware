@@ -28,7 +28,7 @@ runsAs:
 renderingModes:
   - static
   - server
-installMethod: gem install sitepress
+installMethod: gem install sitepress, bundle add sitepress-rails
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

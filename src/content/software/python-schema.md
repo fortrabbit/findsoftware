@@ -15,7 +15,7 @@ runtime:
   - python
 hosting:
   - python
-installMethod: pip, from PyPI
+installMethod: pip, from PyPI, copy the file into the project
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

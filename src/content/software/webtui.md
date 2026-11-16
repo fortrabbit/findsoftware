@@ -12,7 +12,7 @@ status: active
 maintainer: WebTUI
 firstRelease: 2025
 language: css
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

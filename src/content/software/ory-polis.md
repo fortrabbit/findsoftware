@@ -32,7 +32,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, source build with pnpm, npm library
 licenseModel: open-core
 license: Apache-2.0
 latestReleaseDate: 2026-03-20

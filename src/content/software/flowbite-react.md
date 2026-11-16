@@ -17,7 +17,7 @@ basedOn:
   - react
   - tailwindcss
   - flowbite
-installMethod: npx create-flowbite-react
+installMethod: npx create-flowbite-react, npx flowbite-react init
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

@@ -12,7 +12,7 @@ maintainer: Tailwind Labs, Inc.
 maintainerType: company
 firstRelease: 2020
 language: javascript
-installMethod: copy-paste
+installMethod: copy-paste, npm
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

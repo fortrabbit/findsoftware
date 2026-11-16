@@ -15,7 +15,7 @@ firstRelease: 2013
 language: javascript
 basedOn:
   - jquery
-installMethod: npm
+installMethod: npm, bower, download, build from source
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

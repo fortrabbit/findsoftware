@@ -15,7 +15,7 @@ firstRelease: 2015
 hqCountry: US
 language: javascript
 templating: twig
-installMethod: npm
+installMethod: npm, github-release-zip
 licenseModel: open-source
 license: CC0-1.0
 currentMajor: "3"

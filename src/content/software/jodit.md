@@ -16,7 +16,7 @@ firstRelease: 2016
 hqCountry: GE
 language: javascript
 i18n: yes
-installMethod: npm
+installMethod: npm, GitHub release download, Jodit Builder zip download
 licenseModel: open-core
 license: MIT
 currentMajor: "4"

@@ -31,7 +31,7 @@ templating: fluid
 i18n: yes, results and filters per language
 runsAs:
   - scheduled
-installMethod: composer require
+installMethod: composer require, TYPO3 extension manager
 licenseModel: open-core
 license: GPL-2.0+, GPL-3.0
 currentMajor: "7"

@@ -33,7 +33,7 @@ templating: yatl, renoir
 i18n: yes
 runsAs:
   - always-on
-installMethod: pip
+installMethod: pip, uv, zip binaries, docker, source
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "1"

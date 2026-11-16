@@ -25,7 +25,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: binary-download
+installMethod: binary-download, docker-image, source, heroku-buildpack
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

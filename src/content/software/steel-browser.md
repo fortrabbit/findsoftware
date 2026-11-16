@@ -23,7 +23,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker image (ghcr.io)
+installMethod: docker image (ghcr.io), one-click deploy to Railway or Render, source (npm run dev), docker compose
 licenseModel: open-source
 license: Apache-2.0
 githubStargazers: 7915

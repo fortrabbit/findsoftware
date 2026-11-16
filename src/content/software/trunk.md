@@ -15,7 +15,7 @@ language: rust
 runsAs:
   - static
   - local
-installMethod: cargo
+installMethod: cargo, binary download, brew
 licenseModel: open-source
 license: MIT OR Apache-2.0
 currentMajor: "0"

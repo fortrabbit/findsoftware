@@ -18,7 +18,7 @@ runtime:
 runtimeMin: ruby 1.9
 runsAs:
   - local
-installMethod: gem install
+installMethod: gem install, bundler, docker
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

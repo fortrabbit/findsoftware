@@ -19,7 +19,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: npm i -D histoire
+installMethod: npm i -D histoire, pnpm i -D histoire, yarn add -D histoire
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

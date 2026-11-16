@@ -22,7 +22,7 @@ basedOn:
 adminUi: true
 runsAs:
   - always-on
-installMethod: install script (curl | sh, Linux)
+installMethod: install script (curl | sh, Linux), Homebrew, docker image rqlite/rqlite, docker image ghcr.io/rqlite/rqlite, prebuilt binary from GitHub releases, build from source with Go and a C compiler
 licenseModel: open-source
 license: MIT
 currentMajor: "10"

@@ -19,7 +19,7 @@ runtime:
 runtimeMin: node 16
 runsAs:
   - local
-installMethod: "npm: npm install typescript --save-dev"
+installMethod: "npm: npm install typescript --save-dev, NuGet: Install-Package Microsoft.TypeScript.MSBuild, Visual Studio extension"
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "7"

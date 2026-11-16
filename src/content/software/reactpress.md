@@ -32,7 +32,7 @@ runsAs:
 renderingModes:
   - server
   - isr
-installMethod: npm global install, then reactpress init
+installMethod: npm global install, then reactpress init, Docker Compose from a cloned repository, desktop client download from GitHub Releases
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

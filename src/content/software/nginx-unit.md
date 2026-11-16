@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: official binary packages
+installMethod: official binary packages, Docker official images, Homebrew tap (macOS), npm module unit-http (Node.js), build from source
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

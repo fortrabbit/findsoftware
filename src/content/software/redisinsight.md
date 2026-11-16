@@ -22,7 +22,7 @@ adminUi: true
 runsAs:
   - local
   - always-on
-installMethod: binary download
+installMethod: binary download, docker image, kubernetes manifest, aws ec2, app stores, source build
 licenseModel: source-available
 license: SSPL-1.0
 currentMajor: "3"

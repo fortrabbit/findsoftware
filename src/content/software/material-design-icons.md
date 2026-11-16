@@ -11,7 +11,7 @@ description: Material Symbols and Material Icons, two official Google icon sets 
 status: stub
 maintainer: Google
 firstRelease: 2014
-installMethod: google-fonts
+installMethod: google-fonts, self-hosting
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "4"

@@ -27,7 +27,7 @@ headlessApi:
 i18n: yes, self-service interfaces in several languages
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, helm chart
 licenseModel: open-core
 license: AGPL-3.0, Commercial Enterprise License, Apache-2.0, MIT
 currentMajor: "4"

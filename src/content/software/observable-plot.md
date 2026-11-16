@@ -13,7 +13,7 @@ maintainer: Observable, Inc.
 maintainerType: company
 firstRelease: 2021
 language: javascript
-installMethod: npm
+installMethod: npm, cdn, download
 licenseModel: open-source
 license: ISC
 currentMajor: "0"

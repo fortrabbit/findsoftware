@@ -22,7 +22,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: binary download
+installMethod: binary download, docker container run verless/verless
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

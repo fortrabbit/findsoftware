@@ -28,7 +28,7 @@ runsAs:
   - per-request
 renderingModes:
   - server
-installMethod: composer create-project
+installMethod: composer create-project, docker, manual upload of the distribution bundle
 licenseModel: open-core
 license: O'Saasy License Agreement, MIT
 currentMajor: "1"

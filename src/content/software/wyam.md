@@ -22,7 +22,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: dotnet tool install
+installMethod: dotnet tool install, release zip download from the GitHub releases page, NuGet tools package, choco install wyam
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

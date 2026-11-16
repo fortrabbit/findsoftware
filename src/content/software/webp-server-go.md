@@ -18,7 +18,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, binary download
 licenseModel: open-source
 license: GPL-3.0, GPLv3
 currentMajor: "0"

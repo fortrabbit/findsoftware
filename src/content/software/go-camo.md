@@ -14,7 +14,7 @@ runtime:
   - binary
 hosting:
   - binary
-installMethod: binary-download
+installMethod: binary-download, container-image, source-build, heroku
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

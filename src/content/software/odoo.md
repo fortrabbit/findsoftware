@@ -30,7 +30,7 @@ templating: qweb
 i18n: websites translated into multiple languages
 runsAs:
   - always-on
-installMethod: packaged installers, or source run with odoo-bin
+installMethod: packaged installers, or source run with odoo-bin, Windows installer
 licenseModel: open-core
 license: LGPL-3.0, Odoo Enterprise Subscription Agreement (proprietary)
 currentMajor: "20"

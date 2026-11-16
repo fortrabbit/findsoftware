@@ -24,7 +24,7 @@ i18n: community translations
 runsAs:
   - always-on
   - local
-installMethod: docker image
+installMethod: docker image, apt package, rpm package, pip package, windows installer, macos disk image
 licenseModel: open-source
 license: PostgreSQL
 currentMajor: "9"

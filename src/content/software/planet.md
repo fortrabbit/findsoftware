@@ -13,7 +13,7 @@ maintainer: Planetable Development Team
 maintainerType: community
 firstRelease: 2022
 language: swift
-installMethod: Download for Mac
+installMethod: Download for Mac, build from source in Xcode
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

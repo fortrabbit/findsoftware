@@ -25,7 +25,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: binary download
+installMethod: binary download, source build
 licenseModel: open-source
 license: MIT
 latestReleaseDate: 2025-01-19

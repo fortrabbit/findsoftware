@@ -21,7 +21,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: binary download
+installMethod: binary download, Homebrew, cargo install from GitHub
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

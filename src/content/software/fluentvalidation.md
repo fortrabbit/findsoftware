@@ -19,7 +19,7 @@ hosting:
   - dotnet
 runtimeMin: dotnet 8
 i18n: yes, translated default messages
-installMethod: NuGet package manager
+installMethod: NuGet package manager, dotnet CLI
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "12"

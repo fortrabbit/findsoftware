@@ -15,7 +15,7 @@ parent: OutSystems
 firstRelease: 2013
 hqCountry: US
 language: javascript
-installMethod: script tag
+installMethod: script tag, npm
 licenseModel: open-source
 license: MIT
 currentMajor: "8"

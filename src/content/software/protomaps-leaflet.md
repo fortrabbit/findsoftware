@@ -16,7 +16,7 @@ language: javascript
 basedOn:
   - leaflet
 i18n: rtl
-installMethod: npm
+installMethod: npm, script tag
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "5"

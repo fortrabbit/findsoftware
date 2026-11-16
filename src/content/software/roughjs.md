@@ -12,7 +12,7 @@ status: active
 maintainer: Preet Shihn
 firstRelease: 2018
 language: javascript
-installMethod: npm
+installMethod: npm, CDN
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

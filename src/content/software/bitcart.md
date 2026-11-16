@@ -23,7 +23,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, manual, configurator
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

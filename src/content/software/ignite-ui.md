@@ -20,7 +20,7 @@ basedOn:
 i18n: yes
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, ng add, cli
 licenseModel: open-core
 license: MIT, Infragistics Commercial License, SEE LICENSE IN LICENSE
 currentMajor: "22"

@@ -16,7 +16,7 @@ adminUi: true
 headlessApi:
   - rest
 i18n: locales managed in the builder
-installMethod: npx makeswift@latest init
+installMethod: npx makeswift@latest init, npm install @makeswift/runtime
 licenseModel: saas
 social:
   x: https://x.com/makeswifthq

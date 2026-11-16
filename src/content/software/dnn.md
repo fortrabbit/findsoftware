@@ -25,7 +25,7 @@ databases:
   - sqlserver
 adminUi: true
 i18n: yes
-installMethod: installer downloaded from GitHub releases, then the installation wizard
+installMethod: installer downloaded from GitHub releases, then the installation wizard, installation wizard
 licenseModel: open-source
 license: MIT
 currentMajor: "10"

@@ -38,7 +38,7 @@ runsAs:
   - per-request
 renderingModes:
   - server
-installMethod: composer create-project typo3/cms-base-distribution, ddev
+installMethod: composer create-project typo3/cms-base-distribution, ddev, ddev composer create-project typo3/cms-base-distribution
 licenseModel: open-source
 license: GPL-2.0-or-later, GPL-2.0
 currentMajor: "14"

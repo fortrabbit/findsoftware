@@ -15,7 +15,7 @@ firstRelease: 2006
 language: javascript
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, yarn, cdn, download
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

@@ -16,7 +16,7 @@ runtime:
   - binary
 hosting:
   - binary
-installMethod: CocoaPods
+installMethod: CocoaPods, Carthage, Swift Package Manager
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

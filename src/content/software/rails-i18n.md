@@ -18,7 +18,7 @@ hosting:
 runtimeMin: ruby 3.2
 basedOn:
   - rails
-installMethod: gem
+installMethod: gem, manual download of locale files
 licenseModel: open-source
 license: MIT
 currentMajor: "8"

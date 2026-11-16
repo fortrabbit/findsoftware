@@ -25,7 +25,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, docker-compose, pip
 licenseModel: open-core
 license: PolyForm-Shield-1.0.0, BSD-3-Clause, MIT, proprietary, ee/ directory only
 currentMajor: "2"

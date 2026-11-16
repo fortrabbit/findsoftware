@@ -17,7 +17,7 @@ runtime:
   - node
 hosting:
   - node
-installMethod: npm install jspdf
+installMethod: npm install jspdf, script tag from unpkg
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

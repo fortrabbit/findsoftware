@@ -22,7 +22,7 @@ i18n: yes
 runsAs:
   - browser
   - static
-installMethod: script tag loaded from the unpkg CDN
+installMethod: script tag loaded from the unpkg CDN, npm package (npm, pnpm or yarn)
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

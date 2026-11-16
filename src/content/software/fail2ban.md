@@ -16,7 +16,7 @@ hosting:
   - python
 runsAs:
   - always-on
-installMethod: linux-distribution-packages
+installMethod: linux-distribution-packages, source-setup-py
 licenseModel: open-source
 license: GPL-2.0-or-later
 currentMajor: "1"

@@ -18,7 +18,7 @@ databases:
   - sqlite
 runsAs:
   - browser
-installMethod: shell installer for the turso CLI
+installMethod: shell installer for the turso CLI, homebrew, cargo crate, npm package, pip package, go module, build from source with cargo, docker build
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

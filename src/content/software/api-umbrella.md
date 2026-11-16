@@ -13,7 +13,7 @@ maintainer: Alliance for Sustainable Energy, LLC
 maintainerType: company
 firstRelease: 2015
 language: ruby
-installMethod: binary packages
+installMethod: binary packages, source build
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -21,7 +21,7 @@ contentStore:
   - database
 databases:
   - sqlserver
-installMethod: Microsoft Web Platform Installer
+installMethod: Microsoft Web Platform Installer, Microsoft WebMatrix, zip file download, build from the source code
 licenseModel: open-source
 license: BSD-3-Clause, New BSD license
 currentMajor: "1"

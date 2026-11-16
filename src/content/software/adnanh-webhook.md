@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: source-build
+installMethod: source-build, binary-download, apt, snap, freebsd-pkg
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

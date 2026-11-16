@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: docker-image
+installMethod: docker-image, source-tarball, debian-ubuntu-packages
 licenseModel: open-core
 license: GPL-2.0, LGPL-2.1
 currentMajor: "3"

@@ -26,7 +26,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: go get, then go build
+installMethod: go get, then go build, go install github.com/beego/bee/v2@latest (bee tool)
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

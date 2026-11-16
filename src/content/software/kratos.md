@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: git clone of the kratos-layout project template, then make init
+installMethod: git clone of the kratos-layout project template, then make init, go install of the kratos CLI, Docker image built from the template Dockerfile
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

@@ -22,7 +22,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker image xiaojusurvey/xiaoju-survey (slim and full)
+installMethod: docker image xiaojusurvey/xiaoju-survey (slim and full), source with npm install and npm run local, docker build from the repository Dockerfile, source on a server with npm build and start, web app served by nginx
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

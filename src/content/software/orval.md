@@ -15,7 +15,7 @@ language: javascript
 runtime:
   - node
 runtimeMin: node 22
-installMethod: npm
+installMethod: npm, docker
 licenseModel: open-source
 license: MIT
 currentMajor: "8"

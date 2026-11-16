@@ -18,7 +18,7 @@ runtime:
 runtimeMin: jvm 11
 runsAs:
   - local
-installMethod: sbt plugin sbt-mdoc
+installMethod: sbt plugin sbt-mdoc, command-line through coursier, library API
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

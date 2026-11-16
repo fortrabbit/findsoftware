@@ -26,7 +26,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: gem install
+installMethod: gem install, setup.rb from a downloaded tarball
 licenseModel: open-source
 license: GPL-3.0-or-later
 currentMajor: "1"

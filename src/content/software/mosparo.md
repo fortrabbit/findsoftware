@@ -30,7 +30,7 @@ i18n: user interface translated through Weblate
 runsAs:
   - per-request
   - scheduled
-installMethod: zip archive from the releases page, uploaded to a web host
+installMethod: zip archive from the releases page, uploaded to a web host, Docker Compose with the mosparo/mosparo image, docker run with the mosparo/mosparo image, git clone, then composer and npm from the GitHub source, kubernetes helm chart
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

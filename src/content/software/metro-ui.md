@@ -17,7 +17,7 @@ language: javascript
 i18n: yes
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

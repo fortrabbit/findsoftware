@@ -13,7 +13,7 @@ maintainer: Matias Simon
 maintainerType: individual
 firstRelease: 2012
 language: javascript
-installMethod: composer
+installMethod: composer, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "6"

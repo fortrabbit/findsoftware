@@ -16,7 +16,7 @@ runtime:
   - binary
 hosting:
   - binary
-installMethod: go import
+installMethod: go import, binary download
 licenseModel: open-source
 license: MIT, OFL-1.1
 currentMajor: "2"

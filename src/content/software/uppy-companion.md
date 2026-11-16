@@ -22,7 +22,7 @@ hosting:
 runtimeMin: node 22
 runsAs:
   - always-on
-installMethod: npm
+installMethod: npm, heroku-deploy, global npm install of the standalone server, npm install into an Express app, mounted as middleware, Docker container on Kubernetes
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

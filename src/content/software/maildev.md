@@ -21,7 +21,7 @@ headlessApi:
   - rest
 runsAs:
   - local
-installMethod: npm
+installMethod: npm, npx, docker
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

@@ -14,7 +14,7 @@ firstRelease: 2019
 language: javascript
 basedOn:
   - react
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "9"

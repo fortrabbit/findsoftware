@@ -12,7 +12,7 @@ status: active
 maintainer: Luigi De Rosa, Thierry Michel, Xavier Foucrier
 firstRelease: 2016
 language: javascript
-installMethod: npm
+installMethod: npm, yarn, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

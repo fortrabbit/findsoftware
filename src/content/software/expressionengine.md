@@ -25,7 +25,7 @@ adminUi: true
 templating: HTML with ExpressionEngine template tags
 runsAs:
   - per-request
-installMethod: packaged release download
+installMethod: packaged release download, git clone and composer install
 licenseModel: open-core
 license: Apache-2.0, ExpressionEngine Pro License Agreement
 currentMajor: "7"

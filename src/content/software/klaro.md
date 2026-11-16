@@ -18,7 +18,7 @@ language: javascript
 i18n: yes, translations included out of the box
 runsAs:
   - browser
-installMethod: npm install klaro
+installMethod: npm install klaro, script tag loaded from the Klaro CDN with a version path, self-hosted compiled files from the dist folder
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "0"

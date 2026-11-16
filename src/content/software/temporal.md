@@ -24,7 +24,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, helm chart (kubernetes), server binaries
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -20,7 +20,7 @@ hosting:
 runtimeMin: php 8.2
 basedOn:
   - wordpress
-installMethod: plugin
+installMethod: plugin, composer
 licenseModel: open-core
 license: GPL-3.0, GPL-3.0-or-later
 currentMajor: "6"

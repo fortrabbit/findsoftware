@@ -26,7 +26,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: cargo install zine
+installMethod: cargo install zine, Homebrew, zineland tap, pre-built binaries from the GitHub release page, cargo build from source
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

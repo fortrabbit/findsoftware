@@ -12,7 +12,7 @@ status: stub
 maintainer: Dixon & Moe
 firstRelease: 2016
 language: javascript
-installMethod: npm
+installMethod: npm, download, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

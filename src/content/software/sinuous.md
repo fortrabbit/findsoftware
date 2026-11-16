@@ -13,7 +13,7 @@ maintainer: Wesley Luyten
 maintainerType: individual
 firstRelease: 2019
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

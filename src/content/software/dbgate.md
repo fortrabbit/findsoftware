@@ -34,7 +34,7 @@ i18n: localized into many languages
 runsAs:
   - local
   - always-on
-installMethod: desktop installers for Windows, Linux and macOS
+installMethod: desktop installers for Windows, Linux and macOS, Portable ZIP (Windows), AppImage (Linux), DEB package (Linux), Snap (Linux), Flathub (Linux), Docker image, NPM package (dbgate-serve), AWS EC2 image, Azure VM image
 licenseModel: open-core
 license: GPL-3.0
 currentMajor: "7"

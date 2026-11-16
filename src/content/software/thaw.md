@@ -17,7 +17,7 @@ runtime:
 basedOn:
   - leptos
 i18n: locale support in Calendar and DatePicker
-installMethod: cargo generate
+installMethod: cargo generate, cargo add
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

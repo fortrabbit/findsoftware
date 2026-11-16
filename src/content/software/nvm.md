@@ -13,7 +13,7 @@ maintainerType: individual
 firstRelease: 2010
 runsAs:
   - local
-installMethod: install script (curl or wget)
+installMethod: install script (curl or wget), git clone
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

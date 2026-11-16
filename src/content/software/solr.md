@@ -21,7 +21,7 @@ hosting:
 runtimeMin: jvm 21
 runsAs:
   - always-on
-installMethod: binary download (tgz from the Apache mirrors)
+installMethod: binary download (tgz from the Apache mirrors), docker image solr
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "10"

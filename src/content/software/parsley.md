@@ -14,7 +14,7 @@ maintainerType: individual
 firstRelease: 2012
 language: javascript
 i18n: built-in error messages shipped in English, with translations loaded as locale files after Parsley
-installMethod: npm
+installMethod: npm, bower, download
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

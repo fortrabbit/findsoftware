@@ -23,7 +23,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, helm, terraform (AWS)
 licenseModel: open-core
 license: MIT, Enterprise License
 currentMajor: "4"

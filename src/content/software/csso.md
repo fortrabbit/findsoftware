@@ -16,7 +16,7 @@ runtime:
 runtimeMin: node 10
 runsAs:
   - local
-installMethod: npm install csso
+installMethod: npm install csso, script tag or ESM import from a CDN (jsDelivr or unpkg)
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

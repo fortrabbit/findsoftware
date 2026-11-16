@@ -18,7 +18,7 @@ templating: blogc-template
 runsAs:
   - static
   - local
-installMethod: cmake
+installMethod: cmake, distribution packages
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "0"

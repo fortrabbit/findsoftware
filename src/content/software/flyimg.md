@@ -18,7 +18,7 @@ hosting:
   - php
 runsAs:
   - always-on
-installMethod: docker-image
+installMethod: docker-image, source, helm-chart, provision-scripts
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "1"

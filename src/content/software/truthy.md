@@ -26,7 +26,7 @@ headlessApi:
 i18n: yes
 runsAs:
   - always-on
-installMethod: npx truthy-api
+installMethod: npx truthy-api, git clone, docker-compose
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

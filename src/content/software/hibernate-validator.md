@@ -17,7 +17,7 @@ runtime:
 hosting:
   - java
 i18n: localized error messages through locale-specific resource bundles
-installMethod: Maven
+installMethod: Maven, distribution archive, build from source
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "9"

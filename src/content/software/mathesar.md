@@ -24,7 +24,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker image
+installMethod: docker image, docker compose, install script, managed platform
 licenseModel: open-source
 license: GPL-3.0
 currentMajor: "0"

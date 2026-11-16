@@ -16,7 +16,7 @@ runtime:
   - node
 hosting:
   - node
-installMethod: npm
+installMethod: npm, cdn, download, prebuilt CDN assets, build from source
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "11"

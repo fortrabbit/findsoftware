@@ -24,7 +24,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: Perl Makefile.PL
+installMethod: Perl Makefile.PL, cpanminus, Fedora package
 licenseModel: open-source
 license: GPL-3.0-or-later
 currentMajor: "1"

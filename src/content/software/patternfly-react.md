@@ -15,7 +15,7 @@ firstRelease: 2018
 language: javascript
 basedOn:
   - react
-installMethod: npm
+installMethod: npm, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "6"

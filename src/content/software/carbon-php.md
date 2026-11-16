@@ -18,7 +18,7 @@ hosting:
   - php
 runtimeMin: php 8.1
 i18n: yes, over 200 languages and over 500 regional variants
-installMethod: composer
+installMethod: composer, zip download
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

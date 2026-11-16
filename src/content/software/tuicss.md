@@ -12,7 +12,7 @@ maintainer: Vinicius Reif Biavatti
 maintainerType: individual
 firstRelease: 2019
 language: css
-installMethod: npm install tuicss
+installMethod: npm install tuicss, download the repository
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

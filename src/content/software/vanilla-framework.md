@@ -13,7 +13,7 @@ maintainer: Canonical Ltd
 maintainerType: company
 firstRelease: 2015
 language: css
-installMethod: npm
+installMethod: npm, cdn, github-release-zip
 licenseModel: open-source
 license: LGPL-3.0
 currentMajor: "4"

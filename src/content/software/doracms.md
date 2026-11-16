@@ -27,7 +27,7 @@ templating: nunjucks
 i18n: yes
 runsAs:
   - always-on
-installMethod: git clone, then pnpm install
+installMethod: git clone, then pnpm install, Docker Compose, npm install -g doracms-cli, then doracms create
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

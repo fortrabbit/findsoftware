@@ -17,7 +17,7 @@ runtime:
   - node
 hosting:
   - node
-installMethod: docker
+installMethod: docker, source-build
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

@@ -22,7 +22,7 @@ basedOn:
   - caddy
 runsAs:
   - always-on
-installMethod: Docker image dunglas/mercure
+installMethod: Docker image dunglas/mercure, Docker Compose, Helm chart, prebuilt binary, Arch Linux AUR package, custom Caddy build with xcaddy, Go library embedded in a Go binary
 licenseModel: open-core
 license: AGPL-3.0, commercial license for Mercure Enterprise
 currentMajor: "1"

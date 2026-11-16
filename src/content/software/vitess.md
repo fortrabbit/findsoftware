@@ -22,7 +22,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: binary download
+installMethod: binary download, kubernetes operator, docker image (vttestserver, for testing)
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "24"

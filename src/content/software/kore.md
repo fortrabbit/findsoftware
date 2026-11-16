@@ -21,7 +21,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: make and make install from the source tree or a verified release tarball
+installMethod: make and make install from the source tree or a verified release tarball, Homebrew (brew install kore)
 licenseModel: open-source
 license: ISC
 currentMajor: "4"

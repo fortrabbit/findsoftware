@@ -25,7 +25,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: binary download
+installMethod: binary download, install script, docker image, helm chart, glasskube
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

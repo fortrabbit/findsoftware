@@ -15,7 +15,7 @@ firstRelease: 2020
 language: css
 basedOn:
   - 98-css
-installMethod: cdn
+installMethod: cdn, npm
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

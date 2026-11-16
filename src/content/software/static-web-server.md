@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: binary-installer
+installMethod: binary-installer, homebrew, scoop, aur, nix, docker-image, wasmer, source build
 licenseModel: open-source
 license: MIT OR Apache-2.0
 currentMajor: "2"

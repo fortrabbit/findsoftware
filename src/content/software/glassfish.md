@@ -21,7 +21,7 @@ runtimeMin: jvm 21
 adminUi: true
 runsAs:
   - always-on
-installMethod: zip distribution (server)
+installMethod: zip distribution (server), embedded executable JAR, Docker image ghcr.io/eclipse-ee4j/glassfish, Maven coordinates
 licenseModel: open-source
 license: EPL-2.0, GPL-2.0 WITH Classpath-exception-2.0
 currentMajor: "8"

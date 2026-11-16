@@ -17,7 +17,7 @@ runtime:
 hosting:
   - php
 runtimeMin: php 8.3
-installMethod: composer require league/glide
+installMethod: composer require league/glide, zip download of a GitHub release
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

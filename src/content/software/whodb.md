@@ -27,7 +27,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker run with the clidey/whodb image
+installMethod: docker run with the clidey/whodb image, release binary from GitHub Releases, build from source, desktop app (Wails shell), CLI installed by a curl script, CLI installed with npm
 licenseModel: open-core
 license: Apache-2.0
 currentMajor: "0"

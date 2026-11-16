@@ -19,7 +19,7 @@ runtime:
 runtimeMin: node 22
 runsAs:
   - local
-installMethod: "npm global: npm install netlify-cli -g"
+installMethod: "npm global: npm install netlify-cli -g, npm local dev dependency: npm install --save-dev netlify-cli, Homebrew: brew install netlify-cli"
 licenseModel: open-source
 license: MIT
 currentMajor: "27"

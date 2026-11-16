@@ -15,7 +15,7 @@ runtime:
 hosting:
   - binary
 adminUi: true
-installMethod: binary download
+installMethod: binary download, release binary download, build from source (make)
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

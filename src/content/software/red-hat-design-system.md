@@ -14,7 +14,7 @@ maintainerType: company
 firstRelease: 2022
 hqCountry: US
 language: javascript
-installMethod: npm
+installMethod: npm, cdn, jsDelivr
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

@@ -23,7 +23,7 @@ adminUi: true
 i18n: yes, 10+ languages
 runsAs:
   - always-on
-installMethod: web-based installer script
+installMethod: web-based installer script, command-line installer script
 licenseModel: commercial
 license: proprietary
 currentMajor: "1"

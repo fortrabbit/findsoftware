@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: build from source (configure, make, make install)
+installMethod: build from source (configure, make, make install), distribution package (apt), distribution package (dnf), distribution package (pacman), distribution package (apk)
 licenseModel: open-source
 license: GPL-2.0-or-later
 currentMajor: "2"

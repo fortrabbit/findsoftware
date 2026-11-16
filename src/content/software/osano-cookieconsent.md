@@ -15,7 +15,7 @@ maintainerType: company
 firstRelease: 2015
 hqCountry: US
 language: javascript
-installMethod: npm
+installMethod: npm, Yarn, Bower, CDN (jsDelivr)
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

@@ -15,7 +15,7 @@ language: javascript
 basedOn:
   - angular
   - bootstrap
-installMethod: ng-add
+installMethod: ng-add, npm
 licenseModel: open-source
 license: MIT
 currentMajor: "22"

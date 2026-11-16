@@ -22,7 +22,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: gem install
+installMethod: gem install, docker
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

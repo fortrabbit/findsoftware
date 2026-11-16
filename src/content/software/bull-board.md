@@ -27,7 +27,7 @@ adminUi: true
 runsAs:
   - always-on
   - local
-installMethod: npm
+installMethod: npm, npx, docker
 licenseModel: open-source
 license: MIT
 currentMajor: "9"

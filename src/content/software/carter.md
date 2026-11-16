@@ -15,7 +15,7 @@ runtime:
   - dotnet
 hosting:
   - dotnet
-installMethod: NuGet package (dotnet add package)
+installMethod: NuGet package (dotnet add package), dotnet new template (CarterTemplate)
 licenseModel: open-source
 license: MIT
 currentMajor: "10"

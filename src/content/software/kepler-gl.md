@@ -17,7 +17,7 @@ basedOn:
   - react
   - deck-gl
 i18n: react-intl localization with locale files and a localeMessages prop
-installMethod: npm
+installMethod: npm, script tag (UMD build from unpkg)
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

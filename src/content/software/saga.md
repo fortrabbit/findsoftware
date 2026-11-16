@@ -24,7 +24,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: Swift Package Manager dependency
+installMethod: Swift Package Manager dependency, Homebrew formula loopwerk/tap/saga for the CLI
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

@@ -27,7 +27,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, helm
 licenseModel: open-core
 license: AGPL-3.0, Commercial
 currentMajor: "1"

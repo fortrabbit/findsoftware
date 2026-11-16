@@ -16,7 +16,7 @@ basedOn:
   - symfony
 runsAs:
   - local
-installMethod: shell installer
+installMethod: shell installer, homebrew, apt, dnf, apk, binary download, docker
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "5"

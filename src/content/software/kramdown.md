@@ -20,7 +20,7 @@ runtime:
 hosting:
   - ruby
 runtimeMin: ruby 2.5
-installMethod: gem install kramdown
+installMethod: gem install kramdown, setup.rb from the release tarball
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

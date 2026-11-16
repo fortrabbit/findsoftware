@@ -15,7 +15,7 @@ language: javascript
 basedOn:
   - vue
   - bootstrap
-installMethod: npm
+installMethod: npm, yarn, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

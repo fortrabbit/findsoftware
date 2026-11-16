@@ -16,7 +16,7 @@ language: javascript
 basedOn:
   - vue
 i18n: yes
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT, CC-BY-4.0
 currentMajor: "2"

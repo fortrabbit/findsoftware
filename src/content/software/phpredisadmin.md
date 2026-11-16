@@ -16,7 +16,7 @@ runtime:
 hosting:
   - php
 adminUi: true
-installMethod: composer create-project
+installMethod: composer create-project, git clone and composer install, Docker image
 licenseModel: open-source
 license: CC-BY-3.0, BSD-3-Clause (bundled Redis string matching code)
 currentMajor: "1"

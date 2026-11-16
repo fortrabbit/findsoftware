@@ -23,7 +23,7 @@ runtimeMin: node 22
 databases:
   - mongodb
 adminUi: true
-installMethod: docker
+installMethod: docker, docker-compose, kubernetes helm
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

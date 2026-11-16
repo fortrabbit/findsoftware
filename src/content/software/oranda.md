@@ -22,7 +22,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: cargo install
+installMethod: cargo install, cargo-binstall, npm package, shell installer, Nix, Homebrew, GitHub Releases download
 licenseModel: open-source
 license: MIT OR Apache-2.0
 currentMajor: "0"

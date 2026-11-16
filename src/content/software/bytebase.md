@@ -24,7 +24,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker image
+installMethod: docker image, Helm chart on Kubernetes
 licenseModel: open-core
 license: MIT, Bytebase Enterprise License (LICENSE.enterprise)
 currentMajor: "3"

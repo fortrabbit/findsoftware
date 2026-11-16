@@ -15,7 +15,7 @@ firstRelease: 2023
 language: javascript
 basedOn:
   - tailwindcss
-installMethod: npm
+installMethod: npm, yarn, pnpm
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

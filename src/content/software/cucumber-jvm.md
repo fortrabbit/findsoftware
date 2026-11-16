@@ -16,7 +16,7 @@ language: java
 runtime:
   - jvm
 runtimeMin: jvm 17
-installMethod: maven
+installMethod: maven, gradle
 licenseModel: open-source
 license: MIT
 currentMajor: "8"

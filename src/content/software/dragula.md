@@ -13,7 +13,7 @@ maintainer: Nicolas Bevacqua
 maintainerType: individual
 firstRelease: 2015
 language: javascript
-installMethod: npm
+installMethod: npm, cdn, download
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

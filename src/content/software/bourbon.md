@@ -12,7 +12,7 @@ status: discontinued
 maintainer: thoughtbot, inc.
 firstRelease: 2011
 language: css
-installMethod: rubygems
+installMethod: rubygems, npm
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

@@ -13,7 +13,7 @@ maintainer: Kev Quirk
 maintainerType: individual
 firstRelease: 2021
 language: css
-installMethod: cdn
+installMethod: cdn, npm
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

@@ -17,7 +17,7 @@ runtime:
   - binary
 hosting:
   - binary
-installMethod: cargo
+installMethod: cargo, binary download
 licenseModel: open-source
 license: BSD-2-Clause
 currentMajor: "0"

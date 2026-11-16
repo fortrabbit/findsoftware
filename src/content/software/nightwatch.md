@@ -19,7 +19,7 @@ runtime:
 runtimeMin: node 18
 runsAs:
   - local
-installMethod: npm init
+installMethod: npm init, ng add
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

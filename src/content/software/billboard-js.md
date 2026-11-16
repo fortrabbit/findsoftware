@@ -15,7 +15,7 @@ firstRelease: 2017
 language: javascript
 basedOn:
   - d3
-installMethod: npm
+installMethod: npm, CDN, download of dist files
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

@@ -14,7 +14,7 @@ firstRelease: 2016
 language: rust
 runsAs:
   - local
-installMethod: cargo install oxipng
+installMethod: cargo install oxipng, Docker image, Windows download from the GitHub releases page, package managers listed by Repology
 licenseModel: open-source
 license: MIT
 currentMajor: "10"

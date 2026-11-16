@@ -18,7 +18,7 @@ language: javascript
 i18n: setDictionary replaces the default texts
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, CDN script tag, download, install wizard (npx @jspreadsheet/install)
 licenseModel: open-core
 license: MIT
 currentMajor: "5"

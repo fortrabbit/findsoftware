@@ -13,7 +13,7 @@ firstRelease: 2011
 basedOn:
   - jquery
 i18n: right-to-left support
-installMethod: download
+installMethod: download, npm, bower, composer
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

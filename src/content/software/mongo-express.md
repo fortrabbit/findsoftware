@@ -20,7 +20,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: npm global install
+installMethod: npm global install, Docker Hub image mongo-express, Docker image built from the repository, Express middleware mounted in an existing app
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

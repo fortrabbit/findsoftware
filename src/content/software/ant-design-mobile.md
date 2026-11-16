@@ -15,7 +15,7 @@ language: javascript
 basedOn:
   - react
 i18n: yes
-installMethod: npm, yarn, pnpm, bun
+installMethod: npm, yarn, pnpm, bun, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

@@ -8,11 +8,11 @@ urls:
 category:
   - library
 description: JavaScript library for composing asynchronous and event-based programs with Observable values.
-status: stub
+status: active
 maintainer: Ben Lesh
 firstRelease: 2015
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "7"

@@ -19,7 +19,7 @@ runtimeMin: node 12
 basedOn:
   - docusaurus
 i18n: UI translations for en, de, vi and zh-CN; index languages from lunr-languages plus zh
-installMethod: npm
+installMethod: npm, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

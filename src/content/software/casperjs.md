@@ -11,7 +11,7 @@ status: discontinued
 maintainer: Nicolas Perriault
 firstRelease: 2013
 language: javascript
-installMethod: npm
+installMethod: npm, Homebrew, git clone, archive download
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -19,7 +19,7 @@ databases:
   - postgres
 runsAs:
   - local
-installMethod: install script
+installMethod: install script, apt, dnf, homebrew
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

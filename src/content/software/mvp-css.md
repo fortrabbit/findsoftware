@@ -13,7 +13,7 @@ maintainer: Andy Brewer
 maintainerType: individual
 firstRelease: 2020
 language: css
-installMethod: cdn
+installMethod: cdn, download, npm
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -20,7 +20,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: clone the repository and run with sbt
+installMethod: clone the repository and run with sbt, download the release jar and run it with java
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

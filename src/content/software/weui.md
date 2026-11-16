@@ -15,7 +15,7 @@ maintainerType: company
 parent: Tencent
 firstRelease: 2015
 language: css
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT, MIT, except third-party components under other terms
 currentMajor: "2"

@@ -20,7 +20,7 @@ runtimeMin: python 3.4
 adminUi: true
 runsAs:
   - always-on
-installMethod: pip install supervisor
+installMethod: pip install supervisor, distribution package
 licenseModel: open-source
 license: BSD-derived
 currentMajor: "4"

@@ -22,7 +22,7 @@ runtimeMin: node 24
 runsAs:
   - always-on
   - local
-installMethod: docker
+installMethod: docker, git clone and yarn install from source
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "9"

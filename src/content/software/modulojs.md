@@ -15,7 +15,7 @@ firstRelease: 2022
 language: javascript
 runsAs:
   - browser
-installMethod: script tag from unpkg.com/mdu.js
+installMethod: script tag from unpkg.com/mdu.js, npm init modulo
 licenseModel: open-source
 license: LGPL-2.1, LGPL-3.0
 currentMajor: "0"

@@ -29,7 +29,7 @@ runsAs:
 renderingModes:
   - static
   - spa
-installMethod: homebrew, snap
+installMethod: homebrew, snap, binary download, docker
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

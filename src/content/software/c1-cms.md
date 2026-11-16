@@ -26,7 +26,7 @@ databases:
   - sqlserver
 adminUi: true
 templating: razor, xslt
-installMethod: Web Platform Installer, run in WebMatrix
+installMethod: Web Platform Installer, run in WebMatrix, ZIP containing a website folder, extracted and launched in IIS
 licenseModel: open-core
 license: Mozilla Public License 1.1, MPL 1.1 with Section 11 amended to put disputes under Danish law and the Copenhagen City Court, Commercial C1 CMS License (with product warranty), offered as an alternative to the MPL 1.1
 currentMajor: "6"

@@ -20,7 +20,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: pip install -r requirements.txt
+installMethod: pip install -r requirements.txt, poetry install --no-dev, docker compose
 githubStargazers: 855
 contributors: 20
 addedAt: 2026-10-23

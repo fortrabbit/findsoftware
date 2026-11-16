@@ -22,7 +22,7 @@ hosting:
 runtimeMin: node 16
 basedOn:
   - react
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "10"

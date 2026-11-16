@@ -16,7 +16,7 @@ firstRelease: 2023
 hqCountry: DE
 language: javascript
 i18n: yes
-installMethod: npm
+installMethod: npm, script tag
 licenseModel: open-core
 license: MIT
 currentMajor: "4"

@@ -16,7 +16,7 @@ runtime:
   - binary
 hosting:
   - binary
-installMethod: go
+installMethod: go, go get -tool
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

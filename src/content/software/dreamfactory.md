@@ -32,7 +32,7 @@ databases:
 adminUi: true
 headlessApi:
   - rest
-installMethod: Linux installer dfsetup.run
+installMethod: Linux installer dfsetup.run, Windows with IIS or Apache, by step-by-step guide, Docker Compose from the df-docker repository, Helm chart, npx @dreamfactory/create-df-mcp
 licenseModel: open-core
 license: Apache-2.0, Apache 2.0 for the core platform
 currentMajor: "7"

@@ -17,7 +17,7 @@ runtime:
 hosting:
   - php
 runtimeMin: php 8.2
-installMethod: composer
+installMethod: composer, download
 licenseModel: open-source
 license: MIT, Apache-2.0
 currentMajor: "6"

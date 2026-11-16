@@ -17,7 +17,7 @@ basedOn:
   - d3
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, bower, script tag
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

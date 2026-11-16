@@ -17,7 +17,7 @@ runtime:
   - dotnet
 hosting:
   - dotnet
-installMethod: NuGet package EmbedIO
+installMethod: NuGet package EmbedIO, dotnet CLI package
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

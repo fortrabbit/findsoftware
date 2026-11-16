@@ -14,7 +14,7 @@ maintainer: Alvaro Trigo
 maintainerType: individual
 firstRelease: 2014
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: GPL-3.0, Commercial
 currentMajor: "4"

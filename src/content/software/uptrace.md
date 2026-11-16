@@ -22,7 +22,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: binary-download
+installMethod: binary-download, deb-package, rpm-package, docker, helm, ansible
 licenseModel: open-core
 license: AGPL-3.0
 currentMajor: "2"

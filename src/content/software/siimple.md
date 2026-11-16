@@ -13,7 +13,7 @@ maintainer: Josemi Juanes
 maintainerType: individual
 firstRelease: 2015
 language: css
-installMethod: npm
+installMethod: npm, yarn, CDN link (jsDelivr), CDN link (unpkg)
 licenseModel: open-source
 license: MIT, CC-BY-4.0
 currentMajor: "4"

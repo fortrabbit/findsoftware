@@ -23,7 +23,7 @@ databases:
   - postgres
   - oracle
 adminUi: true
-installMethod: binary package (bootstrap tar.gz)
+installMethod: binary package (bootstrap tar.gz), docker image apache/shenyu-bootstrap, docker-compose
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

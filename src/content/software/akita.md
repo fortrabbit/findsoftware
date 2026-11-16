@@ -13,7 +13,7 @@ maintainer: Salesforce, Inc.
 maintainerType: company
 firstRelease: 2018
 language: javascript
-installMethod: npm install
+installMethod: npm install, yarn add
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "8"

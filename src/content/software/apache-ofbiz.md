@@ -24,7 +24,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: Gradle wrapper from source
+installMethod: Gradle wrapper from source, Docker
 licenseModel: open-source
 license: Apache-2.0
 latestReleaseDate: 2026-10-21

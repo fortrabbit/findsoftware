@@ -18,7 +18,7 @@ runtime:
 hosting:
   - node
 runtimeMin: node 6
-installMethod: npm
+installMethod: npm, script tag
 licenseModel: open-source
 license: BSD-2-Clause
 currentMajor: "3"

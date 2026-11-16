@@ -14,7 +14,7 @@ firstRelease: 2015
 language: javascript
 runtime:
   - node
-installMethod: npm install konva
+installMethod: npm install konva, classical script tag from the unpkg CDN
 licenseModel: open-source
 license: MIT
 currentMajor: "10"

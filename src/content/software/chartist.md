@@ -16,7 +16,7 @@ language: javascript
 runtime:
   - node
 runtimeMin: node 14
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT, WTFPL
 currentMajor: "2"

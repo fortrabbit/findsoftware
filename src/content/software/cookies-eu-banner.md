@@ -13,7 +13,7 @@ status: active
 maintainer: Alexandre Demode
 firstRelease: 2015
 language: javascript
-installMethod: npm
+installMethod: npm, pnpm, yarn, Vite+, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

@@ -21,7 +21,7 @@ hosting:
 runtimeMin: node 20
 runsAs:
   - always-on
-installMethod: npm
+installMethod: npm, source-build
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

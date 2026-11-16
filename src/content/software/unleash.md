@@ -24,7 +24,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker compose up -d from a clone of the repository
+installMethod: docker compose up -d from a clone of the repository, docker run of the server image with a separate PostgreSQL container, Node.js from the source tree, Heroku deploy template, DigitalOcean App Platform deploy template
 licenseModel: open-core
 license: AGPL-3.0
 currentMajor: "8"

@@ -12,7 +12,7 @@ maintainer: Matthew Wagerfield
 maintainerType: individual
 firstRelease: 2014
 language: javascript
-installMethod: cdn
+installMethod: cdn, download, npm
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

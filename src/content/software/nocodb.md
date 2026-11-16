@@ -22,7 +22,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: Docker image nocodb/nocodb
+installMethod: Docker image nocodb/nocodb, install script that sets up NocoDB with Postgres and Redis on one server, binary download for local testing, Homebrew
 licenseModel: source-available
 license: Sustainable Use License
 latestReleaseDate: 2026-09-29

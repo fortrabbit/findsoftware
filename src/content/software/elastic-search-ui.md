@@ -13,7 +13,7 @@ maintainer: Elasticsearch B.V.
 maintainerType: company
 firstRelease: 2019
 language: javascript
-installMethod: npm
+installMethod: npm, yarn
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

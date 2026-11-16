@@ -14,7 +14,7 @@ maintainerType: individual
 firstRelease: 2016
 runsAs:
   - local
-installMethod: git clone, then ./laradock start
+installMethod: git clone, then ./laradock start, docker compose directly, without the CLI
 licenseModel: open-source
 license: MIT
 currentMajor: "20"

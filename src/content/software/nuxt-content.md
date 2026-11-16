@@ -33,7 +33,7 @@ runsAs:
 renderingModes:
   - static
   - server
-installMethod: pnpm add @nuxt/content
+installMethod: pnpm add @nuxt/content, select @nuxt/content in the create-nuxt module selector
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

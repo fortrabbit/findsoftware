@@ -14,7 +14,7 @@ maintainerType: individual
 language: javascript
 basedOn:
   - vue
-installMethod: copy
+installMethod: copy, cli
 licenseModel: source-available
 license: MIT + Commons Clause
 githubStargazers: 4623

@@ -13,7 +13,7 @@ maintainer: Jonathan Harrell
 maintainerType: individual
 firstRelease: 2017
 language: css
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

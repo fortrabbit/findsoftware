@@ -32,7 +32,7 @@ templating: razor, liquid
 i18n: yes
 renderingModes:
   - server
-installMethod: Publish the Smartstore.Web host project from Visual Studio
+installMethod: Publish the Smartstore.Web host project from Visual Studio, Build script producing a self-contained application, Docker image built with the dockerize scripts, Docker Compose container with a database server, Azure Marketplace
 licenseModel: open-core
 license: AGPL-3.0, AGPL-3.0, for the Community Edition
 currentMajor: "6"

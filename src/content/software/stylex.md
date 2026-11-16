@@ -13,7 +13,7 @@ maintainer: Meta Platforms, Inc.
 maintainerType: company
 firstRelease: 2022
 language: javascript
-installMethod: npm
+installMethod: npm, npm create
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

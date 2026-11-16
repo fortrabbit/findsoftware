@@ -18,7 +18,7 @@ hosting:
   - elixir
 runtimeMin: beam 25
 templating: dtl, nitro
-installMethod: mad get n2o, a rebar dependency
+installMethod: mad get n2o, a rebar dependency, Hex package
 licenseModel: open-source
 license: ISC, DHARMA License
 currentMajor: "13"

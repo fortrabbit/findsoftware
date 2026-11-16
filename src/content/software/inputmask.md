@@ -18,7 +18,7 @@ runtime:
 hosting:
   - node
 i18n: yes, right-to-left input through the dir attribute
-installMethod: script tag with the dist folder files
+installMethod: script tag with the dist folder files, npm install inputmask, for module bundlers, npm install of a framework wrapper with inputmask (React, Vue, Svelte, Angular, jQuery), jQuery plugin file jquery.inputmask.umd.js for script tags
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

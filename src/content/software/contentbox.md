@@ -33,7 +33,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: CommandBox box install
+installMethod: CommandBox box install, Docker image
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "6"

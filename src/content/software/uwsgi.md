@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: distribution packages
+installMethod: distribution packages, build from source, pip, RubyGems (gem install)
 licenseModel: open-source
 license: GPL-2.0 WITH linking exception
 currentMajor: "2"

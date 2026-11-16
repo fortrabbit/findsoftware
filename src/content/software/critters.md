@@ -13,7 +13,7 @@ firstRelease: 2018
 language: javascript
 runsAs:
   - local
-installMethod: npm i -D critters
+installMethod: npm i -D critters, yarn add -D critters
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

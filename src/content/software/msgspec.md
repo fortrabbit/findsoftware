@@ -17,7 +17,7 @@ runtime:
 hosting:
   - python
 runtimeMin: python 3.10
-installMethod: pip install msgspec
+installMethod: pip install msgspec, conda install msgspec -c conda-forge
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "0"

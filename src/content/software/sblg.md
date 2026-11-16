@@ -22,7 +22,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: source archive, ./configure, make install
+installMethod: source archive, ./configure, make install, make install
 licenseModel: open-source
 license: ISC
 currentMajor: "0"

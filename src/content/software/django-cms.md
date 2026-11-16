@@ -34,7 +34,7 @@ templating: django template language
 i18n: yes
 renderingModes:
   - server
-installMethod: pip install django-cms
+installMethod: pip install django-cms, djangocms project command after pip install, docker (django-cms-quickstart)
 licenseModel: open-source
 license: BSD-3-Clause, BSD Open-Source License
 currentMajor: "5"

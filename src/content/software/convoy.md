@@ -22,7 +22,7 @@ hosting:
 databases:
   - postgres
 adminUi: true
-installMethod: shell install script (curl), starts Docker services
+installMethod: shell install script (curl), starts Docker services, docker compose from a cloned repository, helm
 licenseModel: source-available
 license: Elastic-2.0, Software License Agreement, licensed solely for Licensee's internal business purposes
 latestReleaseDate: 2026-10-20

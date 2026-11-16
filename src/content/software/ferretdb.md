@@ -20,7 +20,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, deb-package, kubernetes, go-library
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

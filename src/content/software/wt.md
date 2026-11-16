@@ -28,7 +28,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: build from source with CMake, or a source download
+installMethod: build from source with CMake, or a source download, Windows binary builds
 licenseModel: open-source
 license: GNU General Public License, Version 2, with OpenSSL exception, Commercial license (Wt License Agreement)
 currentMajor: "4"

@@ -30,7 +30,7 @@ headlessApi:
 i18n: yes
 runsAs:
   - always-on
-installMethod: docker image
+installMethod: docker image, docker compose
 licenseModel: source-available
 license: BUSL-1.1
 latestReleaseDate: 2026-10-22

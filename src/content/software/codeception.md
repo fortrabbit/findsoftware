@@ -19,7 +19,7 @@ runtime:
 runtimeMin: php 8.2
 basedOn:
   - phpunit
-installMethod: composer require
+installMethod: composer require, phar download
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

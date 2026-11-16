@@ -15,7 +15,7 @@ firstRelease: 2015
 language: go
 runsAs:
   - local
-installMethod: go get
+installMethod: go get, go install, binary download, homebrew, apt, scoop, docker, pip, npm
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

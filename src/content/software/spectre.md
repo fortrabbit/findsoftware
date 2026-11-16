@@ -13,7 +13,7 @@ maintainer: Yan Zhu
 maintainerType: individual
 firstRelease: 2016
 language: css
-installMethod: manual
+installMethod: manual, cdn, npm, yarn, bower
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

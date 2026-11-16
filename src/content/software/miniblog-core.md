@@ -15,7 +15,7 @@ runtime:
   - dotnet
 hosting:
   - dotnet
-installMethod: dotnet new install of a NuGet template package
+installMethod: dotnet new install of a NuGet template package, dotnet new --install MadsKristensen.AspNetCore.Miniblog, then dotnet new miniblog
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

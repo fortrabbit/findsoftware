@@ -15,7 +15,7 @@ firstRelease: 2017
 language: javascript
 basedOn:
   - lit
-installMethod: CDN script (jsDelivr)
+installMethod: CDN script (jsDelivr), npm
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

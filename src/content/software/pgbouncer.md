@@ -21,7 +21,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: build-from-source-autoconf
+installMethod: build-from-source-autoconf, build-from-source-meson, source tarball
 licenseModel: open-source
 license: ISC
 currentMajor: "1"

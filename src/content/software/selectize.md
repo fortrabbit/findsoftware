@@ -15,7 +15,7 @@ language: javascript
 basedOn:
   - jquery
 i18n: right-to-left support
-installMethod: npm
+installMethod: npm, cdn, download
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

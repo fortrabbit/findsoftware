@@ -22,7 +22,7 @@ databases:
   - mariadb
 runsAs:
   - per-request
-installMethod: manual upload, zip upload and unzip on the server
+installMethod: manual upload, zip upload and unzip on the server, docker
 licenseModel: open-source
 license: GPL-3.0
 currentMajor: "2"

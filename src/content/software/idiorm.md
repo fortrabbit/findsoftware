@@ -22,7 +22,7 @@ databases:
   - sqlite
   - mysql
   - postgres
-installMethod: Packagist (Composer)
+installMethod: Packagist (Composer), copy idiorm.php into the project
 licenseModel: open-source
 license: BSD-2-Clause, BSD-3-Clause, BSD-4-Clause
 currentMajor: "1"

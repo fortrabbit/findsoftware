@@ -18,7 +18,7 @@ runtime:
 hosting:
   - node
 runtimeMin: node 0.4
-installMethod: npm
+installMethod: npm, download, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

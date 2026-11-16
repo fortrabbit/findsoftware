@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: docker-image
+installMethod: docker-image, windows-msi-installer, tarball
 licenseModel: source-available
 license: SSPL-1.0
 currentMajor: "9"

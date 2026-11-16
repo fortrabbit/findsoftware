@@ -13,7 +13,7 @@ maintainer: Simon Lecoq
 maintainerType: individual
 firstRelease: 2024
 language: css
-installMethod: stylesheet-link
+installMethod: stylesheet-link, npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

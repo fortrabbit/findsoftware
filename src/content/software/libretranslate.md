@@ -21,7 +21,7 @@ runtimeMin: python 3.8
 adminUi: true
 runsAs:
   - always-on
-installMethod: pip install libretranslate, then run libretranslate
+installMethod: pip install libretranslate, then run libretranslate, docker image libretranslate/libretranslate, clone the repository and run run.sh (Linux and macOS) or run.bat (Windows) with Docker, Helm chart libretranslate/libretranslate on Kubernetes
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "1"

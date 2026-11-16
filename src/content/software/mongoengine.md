@@ -20,7 +20,7 @@ hosting:
 runtimeMin: python 3.7
 databases:
   - mongodb
-installMethod: pip
+installMethod: pip, source
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

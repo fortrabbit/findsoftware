@@ -31,7 +31,7 @@ adminUi: true
 i18n: Web UI in multiple languages, with community translations
 runsAs:
   - always-on
-installMethod: docker image
+installMethod: docker image, Linux easy install script, Linux package manager (.deb and .rpm packages), Kubernetes autoconf controller, Terraform provider, build from source
 licenseModel: open-core
 license: AGPL-3.0
 currentMajor: "1"

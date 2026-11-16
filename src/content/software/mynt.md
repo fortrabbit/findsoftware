@@ -27,7 +27,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: pip install mynt
+installMethod: pip install mynt, pip install git+https://github.com/uhnomoli/mynt.git
 licenseModel: open-source
 license: BSD
 currentMajor: "0"

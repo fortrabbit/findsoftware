@@ -18,7 +18,7 @@ hosting:
 adminUi: true
 runsAs:
   - static
-installMethod: git clone, npm install, npm run build
+installMethod: git clone, npm install, npm run build, embed in the site's own /admin/ section
 licenseModel: open-source
 license: MIT
 githubStargazers: 333

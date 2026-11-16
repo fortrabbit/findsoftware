@@ -15,7 +15,7 @@ maintainerType: individual
 language: javascript
 basedOn:
   - svelte
-installMethod: copy-paste
+installMethod: copy-paste, shadcn CLI, jsrepo
 licenseModel: source-available
 license: MIT + Commons Clause
 githubStargazers: 391

@@ -14,7 +14,7 @@ firstRelease: 2020
 language: javascript
 runsAs:
   - browser
-installMethod: npm install
+installMethod: npm install, yarn add, HTML script element from the jsDelivr CDN
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

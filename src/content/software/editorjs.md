@@ -14,7 +14,7 @@ maintainer: CodeX
 firstRelease: 2017
 language: javascript
 i18n: internationalization of UI texts
-installMethod: npm
+installMethod: npm, cdn, local file
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

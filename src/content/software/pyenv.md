@@ -14,7 +14,7 @@ maintainerType: individual
 firstRelease: 2012
 runsAs:
   - local
-installMethod: pyenv-installer script
+installMethod: pyenv-installer script, git clone into ~/.pyenv, Homebrew formula
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

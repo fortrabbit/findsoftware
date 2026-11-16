@@ -18,7 +18,7 @@ hosting:
 runtimeMin: beam 19
 runsAs:
   - always-on
-installMethod: mix archive.install of the kitto_new archive, then mix kitto.new
+installMethod: mix archive.install of the kitto_new archive, then mix kitto.new, Docker image built from the Dockerfile that mix kitto.new scaffolds
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

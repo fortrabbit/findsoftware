@@ -18,7 +18,7 @@ basedOn:
   - meilisearch
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

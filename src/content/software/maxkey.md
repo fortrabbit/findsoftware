@@ -22,7 +22,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: Windows zip download with bundled JDK
+installMethod: Windows zip download with bundled JDK, Linux manual install with MySQL and nginx, Docker Compose, Docker install script, BaoTa panel Docker app store
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "4"

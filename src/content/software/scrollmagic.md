@@ -13,7 +13,7 @@ maintainer: Jan Paepke
 maintainerType: individual
 firstRelease: 2013
 language: javascript
-installMethod: npm
+installMethod: npm, cdn, download, script tag
 licenseModel: open-source
 license: MIT, GPL-3.0
 currentMajor: "2"

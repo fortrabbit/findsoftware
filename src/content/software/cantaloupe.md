@@ -19,7 +19,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: release-jar
+installMethod: release-jar, maven-build
 licenseModel: open-source
 license: NCSA
 currentMajor: "5"

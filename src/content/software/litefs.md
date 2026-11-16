@@ -21,7 +21,7 @@ databases:
   - sqlite
 runsAs:
   - always-on
-installMethod: docker image flyio/litefs, copied into the application image
+installMethod: docker image flyio/litefs, copied into the application image, prebuilt binary from the GitHub releases page, Fly.io deployment with litefs.yml, a volume and a Consul lease
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

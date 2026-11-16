@@ -14,7 +14,7 @@ maintainerType: foundation
 firstRelease: 2013
 language: css
 templating: Inky, Handlebars
-installMethod: ZIP download
+installMethod: ZIP download, npm, Bower, Ruby gem, email template stack
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

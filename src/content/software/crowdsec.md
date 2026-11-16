@@ -23,7 +23,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: deb and rpm packages
+installMethod: deb and rpm packages, Docker image, Helm chart, Windows installer
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

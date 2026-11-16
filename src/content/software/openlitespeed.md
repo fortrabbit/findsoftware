@@ -21,7 +21,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: linux-repository
+installMethod: linux-repository, binary, source, docker-image, one-click-script
 licenseModel: open-source
 license: GPL-3.0
 currentMajor: "1"

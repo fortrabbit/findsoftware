@@ -17,7 +17,7 @@ hosting:
   - php
 runtimeMin: php 5.5
 i18n: yes
-installMethod: composer
+installMethod: composer, download
 licenseModel: open-source
 license: LGPL-2.1-only
 currentMajor: "7"

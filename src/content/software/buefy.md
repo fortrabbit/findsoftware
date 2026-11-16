@@ -18,7 +18,7 @@ basedOn:
   - bulma
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT, MIT License
 currentMajor: "3"

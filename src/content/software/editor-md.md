@@ -17,7 +17,7 @@ basedOn:
   - codemirror
   - jquery
 i18n: multi-language
-installMethod: npm
+installMethod: npm, zip download, bower
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

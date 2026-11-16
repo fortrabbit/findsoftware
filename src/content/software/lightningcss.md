@@ -18,7 +18,7 @@ runtime:
 runtimeMin: node 12
 runsAs:
   - local
-installMethod: npm install --save-dev lightningcss
+installMethod: npm install --save-dev lightningcss, npm install --save-dev lightningcss-cli
 licenseModel: open-source
 license: MPL-2.0
 currentMajor: "1"

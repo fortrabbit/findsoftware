@@ -23,7 +23,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: Docker image electricsql/electric, with Docker Compose or docker run
+installMethod: Docker image electricsql/electric, with Docker Compose or docker run, from source as an Elixir application (mix)
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

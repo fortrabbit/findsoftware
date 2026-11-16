@@ -26,7 +26,7 @@ databases:
 adminUi: true
 headlessApi:
   - rest
-installMethod: docker pull ghcr.io/fastschema/fastschema
+installMethod: docker pull ghcr.io/fastschema/fastschema, release binary download, build from source (go build)
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

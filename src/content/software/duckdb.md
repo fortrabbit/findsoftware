@@ -16,7 +16,7 @@ hqCountry: NL
 language: cpp
 runsAs:
   - browser
-installMethod: curl-install-script
+installMethod: curl-install-script, docker-image, pip, npm, npm-wasm
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

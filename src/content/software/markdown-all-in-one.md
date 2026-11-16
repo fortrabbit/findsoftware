@@ -14,7 +14,7 @@ firstRelease: 2017
 language: javascript
 runsAs:
   - local
-installMethod: vscode-marketplace
+installMethod: vscode-marketplace, vsix
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

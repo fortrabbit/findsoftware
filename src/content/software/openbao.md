@@ -21,7 +21,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: binary-download
+installMethod: binary-download, homebrew, freebsd-pkg, linux-packages, docker, source-build, helm
 licenseModel: open-source
 license: MPL-2.0
 currentMajor: "2"

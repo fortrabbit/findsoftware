@@ -13,7 +13,7 @@ maintainer: Marek Grzybek
 maintainerType: individual
 firstRelease: 2014
 language: javascript
-installMethod: npm
+installMethod: npm, yarn, bower, cdn, download, composer
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

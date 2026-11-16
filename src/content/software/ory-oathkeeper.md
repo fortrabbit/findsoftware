@@ -22,7 +22,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: homebrew
+installMethod: homebrew, install script, scoop, docker, helm, binary download, go source build
 licenseModel: open-core
 license: Apache-2.0
 latestReleaseDate: 2026-03-20

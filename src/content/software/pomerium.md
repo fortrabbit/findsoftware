@@ -24,7 +24,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: pre-built binary
+installMethod: pre-built binary, deb and rpm packages, docker
 licenseModel: open-core
 license: Apache-2.0
 currentMajor: "0"

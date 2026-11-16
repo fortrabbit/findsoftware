@@ -13,7 +13,7 @@ maintainer: Ramakrishnan Veeraragavan
 maintainerType: individual
 firstRelease: 2026
 language: css
-installMethod: npm
+installMethod: npm, pnpm
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

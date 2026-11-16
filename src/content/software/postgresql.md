@@ -21,7 +21,7 @@ contentStore:
   - database
 runsAs:
   - always-on
-installMethod: os-packages-and-installers
+installMethod: os-packages-and-installers, source-code-archive
 licenseModel: open-source
 license: PostgreSQL License
 currentMajor: "18"

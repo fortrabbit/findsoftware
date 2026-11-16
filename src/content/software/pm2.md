@@ -23,7 +23,7 @@ hosting:
 runtimeMin: node 18
 runsAs:
   - always-on
-installMethod: npm
+installMethod: npm, bun
 licenseModel: open-core
 license: AGPL-3.0
 currentMajor: "7"

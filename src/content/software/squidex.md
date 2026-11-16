@@ -34,7 +34,7 @@ headlessApi:
 i18n: yes
 runsAs:
   - always-on
-installMethod: Docker Compose
+installMethod: Docker Compose, OS binaries (binaries.zip from the release page), Helm charts for Kubernetes
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

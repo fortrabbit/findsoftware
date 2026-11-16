@@ -36,7 +36,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: zip download
+installMethod: zip download, Magnolia CLI, WAR file
 licenseModel: open-core
 license: GPL-3.0, Magnolia DX Core license
 currentMajor: "6"

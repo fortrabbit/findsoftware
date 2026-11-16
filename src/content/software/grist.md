@@ -28,7 +28,7 @@ headlessApi:
 i18n: yes, translated to many languages
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, source-build
 licenseModel: open-core
 license: Apache-2.0
 currentMajor: "1"

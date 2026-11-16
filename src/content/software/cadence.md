@@ -24,7 +24,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: source-build
+installMethod: source-build, docker-compose, helm
 licenseModel: open-source
 license: Apache-2.0, CC-BY-4.0
 currentMajor: "1"

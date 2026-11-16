@@ -22,7 +22,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker-compose
+installMethod: docker-compose, docker, pre-compiled binary, build from source with make, ansible
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "0"

@@ -24,7 +24,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: git clone, then sh admin.sh init
+installMethod: git clone, then sh admin.sh init, docker-compose with community images
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

@@ -14,7 +14,7 @@ maintainer: Afshin Mehrabani
 firstRelease: 2013
 language: javascript
 i18n: yes
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-core
 license: AGPL-3.0, Intro.js commercial license
 currentMajor: "8"

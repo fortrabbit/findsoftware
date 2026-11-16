@@ -14,7 +14,7 @@ runtime:
   - node
 hosting:
   - node
-installMethod: npm
+installMethod: npm, cdn, bower
 licenseModel: open-source
 license: BSD-2-Clause
 currentMajor: "0"

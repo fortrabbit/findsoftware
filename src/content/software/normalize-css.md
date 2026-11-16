@@ -13,7 +13,7 @@ maintainer: Nicolas Gallagher and Jonathan Neal
 maintainerType: individual
 firstRelease: 2012
 language: css
-installMethod: npm
+installMethod: npm, download
 licenseModel: open-source
 license: MIT
 currentMajor: "8"

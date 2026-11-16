@@ -20,7 +20,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: zip or tgz distribution extracted to a directory
+installMethod: zip or tgz distribution extracted to a directory, WildFly Maven Plugin, container image, Helm chart for Kubernetes and OpenShift
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "42"

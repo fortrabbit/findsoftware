@@ -14,7 +14,7 @@ maintainer: Adam Shaw
 firstRelease: 2013
 language: javascript
 i18n: yes
-installMethod: npm
+installMethod: npm, cdn, download
 licenseModel: open-core
 license: MIT, Commercial, AGPL-3.0, non-commercial
 currentMajor: "7"

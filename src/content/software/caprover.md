@@ -15,7 +15,7 @@ firstRelease: 2017
 language: javascript
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, npm (CLI on the developer's machine), DigitalOcean one-click app
 licenseModel: open-core
 license: Apache-2.0
 currentMajor: "1"

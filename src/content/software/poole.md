@@ -22,7 +22,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: Mercurial clone, then make
+installMethod: Mercurial clone, then make, tarball download, then make
 licenseModel: open-source
 license: GPL-3.0-or-later
 social:

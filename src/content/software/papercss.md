@@ -12,7 +12,7 @@ status: active
 maintainer: Rhyne Vlaservich
 firstRelease: 2017
 language: css
-installMethod: npm
+installMethod: npm, yarn, download, cdn
 licenseModel: open-source
 license: ISC
 currentMajor: "1"

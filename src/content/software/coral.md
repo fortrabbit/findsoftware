@@ -27,7 +27,7 @@ headlessApi:
 i18n: yes, a default language set in the admin
 runsAs:
   - always-on
-installMethod: Docker image coralproject/talk
+installMethod: Docker image coralproject/talk, build from source (git clone, pnpm, build.sh)
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "9"

@@ -21,7 +21,7 @@ databases:
   - postgres
 runsAs:
   - local
-installMethod: Homebrew
+installMethod: Homebrew, shell script, binary download
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

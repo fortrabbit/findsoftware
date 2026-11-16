@@ -23,7 +23,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: git clone and bundle install
+installMethod: git clone and bundle install, docker image errbit/errbit, heroku, dokku, kubernetes (experimental)
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

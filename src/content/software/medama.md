@@ -19,7 +19,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: binary download from GitHub Releases
+installMethod: binary download from GitHub Releases, docker run with the GitHub Container Registry image, docker build from the repository, Fly.io template with a pre-configured Docker image, Railway template with a pre-configured Docker image
 licenseModel: open-source
 license: Apache-2.0, MIT
 currentMajor: "0"

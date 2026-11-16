@@ -17,7 +17,7 @@ hosting:
   - php
 runtimeMin: php 7.0
 templating: php
-installMethod: pecl install yaf
+installMethod: pecl install yaf, pie install laruence/yaf
 license: PHP-3.01
 currentMajor: "3"
 latestReleaseDate: 2026-08-18

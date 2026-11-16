@@ -27,7 +27,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: composer create-project
+installMethod: composer create-project, docker
 licenseModel: open-source
 license: GPL-3.0-or-later, GPL-3.0
 currentMajor: "9"

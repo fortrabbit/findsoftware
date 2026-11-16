@@ -16,7 +16,7 @@ runtime:
   - dotnet
 runsAs:
   - local
-installMethod: nuget
+installMethod: nuget, dotnet-templates, visual-studio-templates
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

@@ -28,7 +28,7 @@ databases:
 adminUi: true
 headlessApi:
   - rest
-installMethod: Maven dependency erupt-spring-boot-starter
+installMethod: Maven dependency erupt-spring-boot-starter, docker image
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

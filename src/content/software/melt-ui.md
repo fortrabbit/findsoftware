@@ -15,7 +15,7 @@ firstRelease: 2023
 language: javascript
 basedOn:
   - svelte
-installMethod: npm
+installMethod: npm, cli
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

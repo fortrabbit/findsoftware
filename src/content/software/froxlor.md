@@ -28,7 +28,7 @@ i18n: yes, language chosen per account
 runsAs:
   - per-request
   - scheduled
-installMethod: apt package (Debian and Ubuntu)
+installMethod: apt package (Debian and Ubuntu), tarball, git clone
 licenseModel: open-source
 license: GPL-2.0-or-later
 currentMajor: "2"

@@ -27,7 +27,7 @@ i18n: built-in multilingual routing and fallback content, right-to-left support
 renderingModes:
   - static
   - server
-installMethod: npm create astro@latest -- --template starlight
+installMethod: npm create astro@latest -- --template starlight, npx astro add starlight
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

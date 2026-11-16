@@ -15,7 +15,7 @@ firstRelease: 2009
 language: javascript
 runtime:
   - node
-installMethod: npm
+installMethod: npm, standalone download
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

@@ -17,7 +17,7 @@ runtime:
   - binary
 runsAs:
   - local
-installMethod: compile from source with CMake
+installMethod: compile from source with CMake, binary distributions
 licenseModel: open-source
 license: GPL-2.0
 currentMajor: "1"

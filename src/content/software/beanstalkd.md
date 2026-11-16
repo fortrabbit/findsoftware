@@ -18,7 +18,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: apt-get
+installMethod: apt-get, homebrew, source-build, macports, yum, yaourt, emerge
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -24,7 +24,7 @@ adminUi: false
 i18n: yes, translations contributed through Crowdin
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, binary download, helm chart (kubernetes)
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "5"

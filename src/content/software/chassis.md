@@ -14,7 +14,7 @@ firstRelease: 2019
 language: php
 runsAs:
   - local
-installMethod: git clone
+installMethod: git clone, vagrant up
 licenseModel: open-source
 license: LGPL-3.0
 currentMajor: "5"

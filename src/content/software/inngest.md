@@ -28,7 +28,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, npm, binary-download, helm-chart, docker-compose
 licenseModel: open-source
 license: Server Side Public License with delayed open source publication (DOSP) under Apache 2.0, Apache 2.0 (SDKs)
 currentMajor: "1"

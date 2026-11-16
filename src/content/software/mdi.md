@@ -12,7 +12,7 @@ status: active
 maintainer: Pictogrammers
 maintainerType: community
 firstRelease: 2018
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: Apache-2.0, MIT
 currentMajor: "7"

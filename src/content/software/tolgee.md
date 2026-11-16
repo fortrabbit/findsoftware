@@ -26,7 +26,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, java jar from GitHub release
 licenseModel: open-core
 license: Apache-2.0, Tolgee EE License
 currentMajor: "3"

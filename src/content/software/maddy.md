@@ -23,7 +23,7 @@ databases:
 adminUi: false
 runsAs:
   - always-on
-installMethod: binary-download
+installMethod: binary-download, docker, arch linux packages (AUR PKGBUILDs, maddy.email/archlinux repository), source-build
 licenseModel: open-source
 license: GPL-3.0
 currentMajor: "0"

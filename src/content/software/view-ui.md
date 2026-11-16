@@ -13,7 +13,7 @@ firstRelease: 2019
 language: javascript
 basedOn:
   - vue
-installMethod: npm
+installMethod: npm, script tag
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

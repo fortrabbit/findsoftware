@@ -17,7 +17,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: Swift Package Manager
+installMethod: Swift Package Manager, CocoaPods, Carthage, Docker
 licenseModel: open-source
 license: BSD-3-Clause, BSD
 currentMajor: "1"

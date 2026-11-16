@@ -24,7 +24,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: SDKMAN (sdk install gaiden)
+installMethod: SDKMAN (sdk install gaiden), binary distribution unpacked onto PATH, Gaiden Wrapper (gaidenw), which downloads Gaiden on first run
 licenseModel: open-source
 license: Apache-2.0, Apache License, Version 2.0
 currentMajor: "1"

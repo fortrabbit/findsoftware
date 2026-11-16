@@ -8,12 +8,12 @@ urls:
 category:
   - library
 description: JavaScript package that allows code to work with immutable state in a more convenient way.
-status: stub
+status: active
 maintainer: Michel Weststrate
 maintainerType: individual
 firstRelease: 2016
 language: javascript
-installMethod: npm install immer or yarn add immer
+installMethod: npm install immer or yarn add immer, deno install immer, script tag from the unpkg or jsDelivr CDN
 licenseModel: open-source
 license: MIT
 currentMajor: "11"

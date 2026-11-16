@@ -25,7 +25,7 @@ adminUi: true
 i18n: yes, multilingual sites
 runsAs:
   - per-request
-installMethod: spip_loader
+installMethod: spip_loader, download archive, git clone
 licenseModel: open-source
 license: GNU GPLv3, GNU/GPL
 currentMajor: "4"

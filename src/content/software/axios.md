@@ -19,7 +19,7 @@ hosting:
   - node
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, pnpm, yarn, bun, deno, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

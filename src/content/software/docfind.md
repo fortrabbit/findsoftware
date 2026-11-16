@@ -16,7 +16,7 @@ language: rust
 runsAs:
   - browser
   - local
-installMethod: shell install script
+installMethod: shell install script, PowerShell install script, binary download from GitHub releases, build from source
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

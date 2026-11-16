@@ -25,7 +25,7 @@ adminUi: true
 i18n: yes, multiple interface languages
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, binary download, go install, build from source, linux distribution package, npm
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

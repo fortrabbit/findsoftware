@@ -23,7 +23,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: rpm-package
+installMethod: rpm-package, zip-download, docker-compose, docker-cli, helm-chart
 licenseModel: open-core
 license: Apache-2.0
 currentMajor: "4"

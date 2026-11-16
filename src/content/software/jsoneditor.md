@@ -14,7 +14,7 @@ maintainerType: individual
 firstRelease: 2013
 language: javascript
 i18n: built-in translations, extendable through the languages option
-installMethod: npm install jsoneditor
+installMethod: npm install jsoneditor, script tag from a CDN
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "10"

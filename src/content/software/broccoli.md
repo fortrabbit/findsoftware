@@ -18,7 +18,7 @@ runtimeMin: node 20
 runsAs:
   - local
   - static
-installMethod: npm install --save-dev broccoli
+installMethod: npm install --save-dev broccoli, npm install --global broccoli-cli
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

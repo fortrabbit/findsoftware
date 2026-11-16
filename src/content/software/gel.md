@@ -22,7 +22,7 @@ headlessApi:
   - graphql
 runsAs:
   - always-on
-installMethod: bash installer (curl)
+installMethod: bash installer (curl), Homebrew, npm (npx gel), docker image geldata/gel, Debian/Ubuntu and RHEL/CentOS packages (gel-6), PowerShell installer, Nixpkgs
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "7"

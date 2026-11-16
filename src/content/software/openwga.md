@@ -25,7 +25,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: Gradle build producing a WAR or Debian package
+installMethod: Gradle build producing a WAR or Debian package, JavaEE web application archive, Debian package
 licenseModel: open-source
 license: GPL-3.0-or-later, GPL-3.0 with OpenWGA plugin exception, GPL-2.0 with OpenWGA plugin exception
 currentMajor: "7"

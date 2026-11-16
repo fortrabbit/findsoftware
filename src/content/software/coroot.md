@@ -21,7 +21,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, helm (Kubernetes operator)
 licenseModel: open-core
 license: Apache-2.0
 currentMajor: "1"

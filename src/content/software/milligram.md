@@ -13,7 +13,7 @@ maintainer: CJ Patoilo
 maintainerType: individual
 firstRelease: 2015
 language: css
-installMethod: npm
+installMethod: npm, yarn, bower, cdn, download
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

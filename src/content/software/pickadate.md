@@ -16,7 +16,7 @@ language: javascript
 basedOn:
   - jquery
 i18n: yes
-installMethod: download
+installMethod: download, bower
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

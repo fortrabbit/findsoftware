@@ -16,7 +16,7 @@ language: javascript
 basedOn:
   - i18next
   - react
-installMethod: npm
+installMethod: npm, download, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "18"

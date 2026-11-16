@@ -18,7 +18,7 @@ runtime:
   - ruby
 runsAs:
   - local
-installMethod: gem install kamal
+installMethod: gem install kamal, run Kamal in a Docker container
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

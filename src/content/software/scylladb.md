@@ -21,7 +21,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: web installer script (curl)
+installMethod: web installer script (curl), Linux packages (Ubuntu, Debian, CentOS, RHEL), Unified Installer without root privileges, docker image scylladb/scylla
 licenseModel: source-available
 license: ScyllaDB Software License Agreement 1.1
 latestReleaseDate: 2026-10-15

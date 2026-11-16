@@ -24,7 +24,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: git clone with pip
+installMethod: git clone with pip, Homebrew tap, Docker
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

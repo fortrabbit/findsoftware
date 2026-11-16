@@ -15,7 +15,7 @@ firstRelease: 2024
 language: javascript
 databases:
   - postgres
-installMethod: docker-image
+installMethod: docker-image, vercel, source
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "0"

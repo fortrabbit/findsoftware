@@ -33,7 +33,7 @@ runsAs:
 renderingModes:
   - server
   - spa
-installMethod: Docker image jahia/jahia-discovery, a 30-day trial for developers
+installMethod: Docker image jahia/jahia-discovery, a 30-day trial for developers, Jahia Community download
 licenseModel: open-core
 license: Apache-2.0, JSEL-2.0
 currentMajor: "8"

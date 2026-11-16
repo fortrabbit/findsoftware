@@ -17,7 +17,7 @@ language: javascript
 basedOn:
   - react
 i18n: LocaleProvider sets the locale for the app
-installMethod: npm
+installMethod: npm, pnpm, yarn, bun, cli
 licenseModel: open-core
 license: MIT
 currentMajor: "3"

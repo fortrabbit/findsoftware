@@ -18,7 +18,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: go install
+installMethod: go install, binary download script, docker, apt
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

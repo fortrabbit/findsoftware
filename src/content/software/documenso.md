@@ -27,7 +27,7 @@ headlessApi:
 i18n: translations stored as PO files per language
 runsAs:
   - always-on
-installMethod: docker image documenso/documenso
+installMethod: docker image documenso/documenso, docker compose, Railway template or manual setup, Kubernetes, from source with npm ci and npm run build, under systemd
 licenseModel: open-core
 license: AGPL-3.0, AGPL-3.0 for the Community Edition, commercial license for the Enterprise Edition
 currentMajor: "2"

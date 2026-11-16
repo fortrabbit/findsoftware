@@ -19,7 +19,7 @@ hosting:
 runtimeMin: ruby 3.2
 runsAs:
   - always-on
-installMethod: RubyGems (gem install iodine)
+installMethod: RubyGems (gem install iodine), Bundler (Gemfile)
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

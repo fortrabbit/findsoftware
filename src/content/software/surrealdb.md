@@ -21,7 +21,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: install script (Linux, macOS, Windows)
+installMethod: install script (Linux, macOS, Windows), Homebrew formula surrealdb/tap/surreal, PowerShell script (Windows), Docker image surrealdb/surrealdb
 licenseModel: source-available
 license: BUSL-1.1
 currentMajor: "3"

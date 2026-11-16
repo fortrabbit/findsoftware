@@ -14,7 +14,7 @@ maintainerType: individual
 firstRelease: 2018
 runsAs:
   - scheduled
-installMethod: PowerShell Gallery (Install-Module)
+installMethod: PowerShell Gallery (Install-Module), GitHub release download, development version from the git main branch
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

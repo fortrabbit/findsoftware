@@ -23,7 +23,7 @@ databases:
   - mysql
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, helm, source-build
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

@@ -23,7 +23,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, downloaded archive with an install script
 licenseModel: open-core
 license: Apache-2.0, SuperTokens Enterprise license for the ee/ directory
 currentMajor: "12"

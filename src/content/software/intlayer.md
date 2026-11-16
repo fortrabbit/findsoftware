@@ -22,7 +22,7 @@ runtimeMin: node 14
 databases:
   - mongodb
 adminUi: true
-installMethod: npm
+installMethod: npm, docker
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "9"

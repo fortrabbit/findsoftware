@@ -22,7 +22,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: git submodule or git clone of the repository
+installMethod: git submodule or git clone of the repository, git clone of the repository, then the documentation generator script
 licenseModel: open-source
 license: MIT
 githubStargazers: 433

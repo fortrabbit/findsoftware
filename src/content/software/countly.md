@@ -24,7 +24,7 @@ databases:
 adminUi: true
 headlessApi:
   - rest
-installMethod: install script (wget -qO- https://c.ly/install | bash) for Ubuntu or CentOS
+installMethod: install script (wget -qO- https://c.ly/install | bash) for Ubuntu or CentOS, install script bin/countly.install.sh from a stable release of the repository, Docker image countly/countly-server, docker compose from the repository (docker-compose.yml)
 licenseModel: open-core
 license: AGPL-3.0 with modified Section 7, open-source, non-commercial license (stated for Countly Lite)
 latestReleaseDate: 2026-10-30

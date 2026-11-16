@@ -16,7 +16,7 @@ basedOn:
   - svelte
   - tailwindcss
 i18n: yes, more than 60 locale packages
-installMethod: bun
+installMethod: bun, bun create
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

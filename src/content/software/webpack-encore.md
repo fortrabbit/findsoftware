@@ -19,7 +19,7 @@ basedOn:
   - webpack
 runsAs:
   - local
-installMethod: npm
+installMethod: npm, composer
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

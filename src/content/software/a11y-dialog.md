@@ -13,7 +13,7 @@ maintainer: Kitty Giraudel
 maintainerType: individual
 firstRelease: 2016
 language: javascript
-installMethod: npm
+installMethod: npm, yarn, CDN script tag (jsDelivr, unpkg)
 licenseModel: open-source
 license: MIT
 currentMajor: "8"

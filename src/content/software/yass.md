@@ -25,7 +25,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: binary download
+installMethod: binary download, alr install yass, gprbuild from source
 licenseModel: open-source
 license: GPL-3.0
 currentMajor: "3"

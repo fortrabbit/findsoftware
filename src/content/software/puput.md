@@ -24,7 +24,7 @@ basedOn:
 adminUi: true
 runsAs:
   - always-on
-installMethod: pip
+installMethod: pip, docker
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

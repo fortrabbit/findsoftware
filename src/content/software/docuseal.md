@@ -28,7 +28,7 @@ adminUi: true
 headlessApi:
   - rest
 i18n: 7 UI languages, signing in 14 languages
-installMethod: docker run
+installMethod: docker run, docker compose, one-click deploy on managed platforms (README lists Heroku, Railway, DigitalOcean, Render), Google Cloud Run, Azure Web Apps
 licenseModel: open-core
 license: AGPL-3.0, AGPL-3.0 with Section 7(b) additional terms requiring DocuSeal attribution
 currentMajor: "3"

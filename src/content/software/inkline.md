@@ -15,7 +15,7 @@ firstRelease: 2019
 language: javascript
 basedOn:
   - vue
-installMethod: cli
+installMethod: cli, npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

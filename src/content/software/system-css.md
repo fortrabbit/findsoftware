@@ -13,7 +13,7 @@ maintainer: Sakun Acharige
 maintainerType: individual
 firstRelease: 2022
 language: css
-installMethod: cdn
+installMethod: cdn, npm
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

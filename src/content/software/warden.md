@@ -13,7 +13,7 @@ maintainer: David Alger
 firstRelease: 2019
 runsAs:
   - local
-installMethod: homebrew
+installMethod: homebrew, git clone
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

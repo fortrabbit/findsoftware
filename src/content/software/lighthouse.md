@@ -18,7 +18,7 @@ runtime:
 runtimeMin: node 22
 runsAs:
   - local
-installMethod: npm install -g lighthouse
+installMethod: npm install -g lighthouse, Chrome DevTools panel, Chrome Web Store extension
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "13"

@@ -18,7 +18,7 @@ hosting:
   - elixir
 runsAs:
   - always-on
-installMethod: hex dependency
+installMethod: hex dependency, mix.exs dependency
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

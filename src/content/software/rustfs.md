@@ -21,7 +21,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: official installation script
+installMethod: official installation script, docker image rustfs/rustfs, podman, Helm chart on Kubernetes, RustFS Operator on Kubernetes, Nix flake
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

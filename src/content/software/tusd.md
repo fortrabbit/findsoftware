@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: pre-built binary download
+installMethod: pre-built binary download, Docker image tusproject/tusd, go build from a git clone, Helm chart on Kubernetes
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

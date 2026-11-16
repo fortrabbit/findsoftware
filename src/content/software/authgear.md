@@ -27,7 +27,7 @@ headlessApi:
 i18n: yes, language and localization for display texts
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, helm, binary download, authgear once
 licenseModel: open-source
 license: Apache-2.0
 latestReleaseDate: 2026-10-22

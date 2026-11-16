@@ -19,7 +19,7 @@ runtime:
 runtimeMin: node 20
 runsAs:
   - local
-installMethod: "npm: npm i -g vercel"
+installMethod: "npm: npm i -g vercel, pnpm: pnpm i -g vercel, yarn: yarn global add vercel, bun: bun add -g vercel"
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "65"

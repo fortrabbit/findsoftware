@@ -18,7 +18,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: native-deb
+installMethod: native-deb, native-rpm, tarball, windows-msi, docker-image, docker-compose, kubernetes
 licenseModel: open-core
 license: MIT
 currentMajor: "1"

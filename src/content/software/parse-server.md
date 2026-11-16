@@ -26,7 +26,7 @@ headlessApi:
 i18n: yes, localized pages and emails
 runsAs:
   - always-on
-installMethod: npm
+installMethod: npm, docker
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "9"

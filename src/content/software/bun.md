@@ -21,7 +21,7 @@ hosting:
 runsAs:
   - local
   - always-on
-installMethod: install script
+installMethod: install script, npm, homebrew, docker
 licenseModel: open-source
 license: MIT, LGPL-2
 currentMajor: "1"

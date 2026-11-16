@@ -23,7 +23,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: binary-download
+installMethod: binary-download, homebrew, freebsd-pkg, pacman, nixpkgs, nix-flake, chocolatey, scoop, docker
 licenseModel: open-source
 license: MIT
 currentMajor: "16"

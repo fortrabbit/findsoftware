@@ -23,7 +23,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: deb and rpm packages from GitHub releases or package repositories
+installMethod: deb and rpm packages from GitHub releases or package repositories, generic Linux tarball from GitHub releases, FreeBSD pkg, Docker image from DockerHub, source build from a git clone
 licenseModel: open-core
 license: GPL-3.0
 currentMajor: "3"

@@ -23,7 +23,7 @@ databases:
   - sqlserver
 runsAs:
   - local
-installMethod: composer
+installMethod: composer, phar
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

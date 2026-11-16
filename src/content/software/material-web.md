@@ -14,7 +14,7 @@ firstRelease: 2018
 language: css
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

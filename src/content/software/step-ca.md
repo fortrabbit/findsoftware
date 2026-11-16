@@ -20,7 +20,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: homebrew
+installMethod: homebrew, winget, scoop, linux-packages, linux-binaries, docker-image, kubernetes
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

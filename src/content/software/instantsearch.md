@@ -15,7 +15,7 @@ firstRelease: 2015
 language: javascript
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, cdn script tag, create-instantsearch-app
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

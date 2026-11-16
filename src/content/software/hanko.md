@@ -25,7 +25,7 @@ databases:
 i18n: yes, i18n and custom translations
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, source-build, binary-download
 licenseModel: open-core
 license: AGPL-3.0, MIT (hanko-elements and hanko-frontend-sdk), Non-Copyleft commercial license on request
 currentMajor: "3"

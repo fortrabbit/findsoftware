@@ -17,7 +17,7 @@ language: javascript
 basedOn:
   - lit
 i18n: translations (shipped set, English US default)
-installMethod: cdn
+installMethod: cdn, npm, download
 licenseModel: open-core
 license: MIT, Web Awesome Pro License
 currentMajor: "3"

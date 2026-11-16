@@ -17,7 +17,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: binary download
+installMethod: binary download, make from source
 license: PostgreSQL
 currentMajor: "1"
 latestReleaseDate: 2026-10-02

@@ -17,7 +17,7 @@ basedOn:
   - vue
   - react
   - tailwindcss
-installMethod: npm
+installMethod: npm, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

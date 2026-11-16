@@ -21,7 +21,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: apt package
+installMethod: apt package, dnf package, homebrew, docker, source build
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

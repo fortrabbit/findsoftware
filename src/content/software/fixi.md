@@ -14,7 +14,7 @@ firstRelease: 2025
 language: javascript
 runsAs:
   - browser
-installMethod: vendored copy
+installMethod: vendored copy, jsDelivr CDN, npm
 license: 0BSD
 currentMajor: "0"
 latestReleaseDate: 2026-04-25

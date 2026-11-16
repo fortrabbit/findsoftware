@@ -21,7 +21,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: build from source with CMake and Conan
+installMethod: build from source with CMake and Conan, clone the source with the Fossil client
 licenseModel: open-source
 license: WTFPL
 currentMajor: "9"

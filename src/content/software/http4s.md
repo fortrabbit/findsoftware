@@ -18,7 +18,7 @@ hosting:
   - java
 runsAs:
   - always-on
-installMethod: sbt dependency
+installMethod: sbt dependency, giter8 template, executable JAR
 licenseModel: open-source
 license: Apache 2.0, Apache-2.0, Apache 2
 currentMajor: "0"

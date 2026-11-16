@@ -18,7 +18,7 @@ hosting:
   - python
 runtimeMin: python 3.11
 i18n: input in any language supported by Unicode, including bi-directional text
-installMethod: pip, from PyPI
+installMethod: pip, from PyPI, pip, from the Git repository
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "3"

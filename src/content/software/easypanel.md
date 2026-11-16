@@ -17,7 +17,7 @@ databases:
   - mongodb
 runsAs:
   - always-on
-installMethod: install-script
+installMethod: install-script, docker-image, cloud-marketplace
 licenseModel: commercial
 license: proprietary
 currentMajor: "2"

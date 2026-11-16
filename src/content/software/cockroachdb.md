@@ -20,7 +20,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: binary download
+installMethod: binary download, docker, kubernetes, build from source
 license: CockroachDB Software License
 latestReleaseDate: 2026-10-21
 githubStargazers: 32591

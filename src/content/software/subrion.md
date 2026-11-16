@@ -22,7 +22,7 @@ adminUi: true
 i18n: yes, multilingual CMS
 runsAs:
   - per-request
-installMethod: download archive
+installMethod: download archive, Softaculous, Installatron
 licenseModel: open-source
 license: GPL-3.0, GPL v3
 currentMajor: "4"

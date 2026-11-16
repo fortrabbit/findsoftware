@@ -21,7 +21,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, linux-packages, virtual-appliance, helm
 licenseModel: open-core
 license: MPL-2.0, Apache-2.0
 latestReleaseDate: 2026-10-23

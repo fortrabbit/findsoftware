@@ -24,7 +24,7 @@ databases:
 runsAs:
   - always-on
   - local
-installMethod: one-command installer script
+installMethod: one-command installer script, Maven archetype, Maven dependency, JAR download
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

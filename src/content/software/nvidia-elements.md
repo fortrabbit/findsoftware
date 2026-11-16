@@ -15,7 +15,7 @@ firstRelease: 2026
 hqCountry: US
 language: javascript
 i18n: yes
-installMethod: npm
+installMethod: npm, cli, cdn
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

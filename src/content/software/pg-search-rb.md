@@ -20,7 +20,7 @@ basedOn:
   - rails
 databases:
   - postgres
-installMethod: gem
+installMethod: gem, gemfile
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

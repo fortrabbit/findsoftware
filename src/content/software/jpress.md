@@ -22,7 +22,7 @@ databases:
   - mysql
 adminUi: true
 i18n: yes
-installMethod: docker-compose
+installMethod: docker-compose, install.sh one-line install script, build from source with Maven
 licenseModel: open-source
 license: LGPL-3.0
 currentMajor: "5"

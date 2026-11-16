@@ -19,7 +19,7 @@ hosting:
 runtimeMin: jvm 17
 runsAs:
   - always-on
-installMethod: windows installer
+installMethod: windows installer, macos app, linux package, git and ant, docker
 licenseModel: open-source
 license: GPL-2.0-or-later, LGPL
 currentMajor: "1"

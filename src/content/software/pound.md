@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: build from a source tarball
+installMethod: build from a source tarball, build from a git clone with ./bootstrap
 licenseModel: open-source
 license: GPL-3.0
 currentMajor: "4"

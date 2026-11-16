@@ -19,7 +19,7 @@ hosting:
 runtimeMin: dotnet 10
 runsAs:
   - scheduled
-installMethod: xcopy (zip download from GitHub releases)
+installMethod: xcopy (zip download from GitHub releases), Chocolatey package, WinGet package, dotnet tool from NuGet.org
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

@@ -22,7 +22,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker-image
+installMethod: docker-image, docker-compose, heroku, render, kubernetes
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

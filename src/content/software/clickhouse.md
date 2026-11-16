@@ -24,7 +24,7 @@ contentStore:
 runsAs:
   - always-on
   - local
-installMethod: curl-install-script
+installMethod: curl-install-script, docker-image, debian-ubuntu-packages, rpm-packages
 licenseModel: open-source
 license: Apache-2.0
 latestReleaseDate: 2026-10-24

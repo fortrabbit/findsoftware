@@ -28,7 +28,7 @@ runsAs:
   - browser
 renderingModes:
   - spa
-installMethod: npx create-firecms-app
+installMethod: npx create-firecms-app, yarn create firecms-app
 licenseModel: open-core
 license: MIT, Apache-2.0, BUSL-1.1
 currentMajor: "3"

@@ -21,7 +21,7 @@ databases:
   - mysql
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, executable jar with Java 17 or higher, homebrew, source build with Maven wrapper
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "3"

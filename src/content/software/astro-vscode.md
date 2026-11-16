@@ -17,7 +17,7 @@ basedOn:
   - astro
 runsAs:
   - local
-installMethod: VS Code Marketplace, extension astro-build.astro-vscode
+installMethod: VS Code Marketplace, extension astro-build.astro-vscode, Open VSX Registry
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

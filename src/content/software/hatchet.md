@@ -23,7 +23,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker, hatchet-lite single image
+installMethod: docker, hatchet-lite single image, docker compose, kubernetes helm, hatchet CLI (wraps hatchet-lite)
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

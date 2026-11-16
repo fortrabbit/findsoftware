@@ -21,7 +21,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: Docker Compose file using the freshlytics/freshlytics image
+installMethod: Docker Compose file using the freshlytics/freshlytics image, docker-compose up --build from the repository
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -22,7 +22,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: Nix (nix-env from the repository archive)
+installMethod: Nix (nix-env from the repository archive), docker (image sridca/neuron)
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "1"

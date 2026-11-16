@@ -15,7 +15,7 @@ language: csharp
 runtime:
   - dotnet
 runtimeMin: dotnet 8.0
-installMethod: nuget
+installMethod: nuget, dotnet new template
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

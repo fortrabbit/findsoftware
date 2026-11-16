@@ -16,7 +16,7 @@ databases:
   - postgres
   - mysql
 adminUi: true
-installMethod: docker-compose
+installMethod: docker-compose, helm
 licenseModel: open-source
 license: MIT
 latestReleaseDate: 2026-10-23

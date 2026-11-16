@@ -24,7 +24,7 @@ adminUi: true
 i18n: yes, the embedded comment engine supports i18n
 runsAs:
   - always-on
-installMethod: binary-package
+installMethod: binary-package, docker, helm-chart, building-from-source
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

@@ -19,7 +19,7 @@ runtime:
 runtimeMin: node 20
 runsAs:
   - local
-installMethod: npm create stylelint@latest
+installMethod: npm create stylelint@latest, npm add -D stylelint
 licenseModel: open-source
 license: MIT
 currentMajor: "17"

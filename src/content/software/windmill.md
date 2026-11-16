@@ -27,7 +27,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, helm
 licenseModel: open-core
 license: Apache-2.0, AGPL-3.0, proprietary, proprietary (Community Edition images and binaries)
 currentMajor: "1"

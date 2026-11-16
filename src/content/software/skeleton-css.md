@@ -11,7 +11,7 @@ maintainer: Dave Gamache
 maintainerType: individual
 firstRelease: 2014
 language: css
-installMethod: github-release-zip
+installMethod: github-release-zip, git-clone
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

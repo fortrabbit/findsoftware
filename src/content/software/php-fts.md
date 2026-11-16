@@ -21,7 +21,7 @@ contentStore:
   - flat-file
 runsAs:
   - per-request
-installMethod: composer require
+installMethod: composer require, copy source into project
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

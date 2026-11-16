@@ -21,7 +21,7 @@ runtimeMin: jvm 11
 templating: zuml
 runsAs:
   - always-on
-installMethod: maven
+installMethod: maven, binary-download
 licenseModel: open-core
 license: LGPL-3.0, LGPL
 currentMajor: "10"

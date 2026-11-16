@@ -15,7 +15,7 @@ firstRelease: 2010
 language: javascript
 basedOn:
   - jquery
-installMethod: download
+installMethod: download, npm, composer
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

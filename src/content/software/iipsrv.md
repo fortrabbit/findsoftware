@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: source build with autoconf (configure, make)
+installMethod: source build with autoconf (configure, make), distribution packages (Debian and Ubuntu APT, Alpine apk, EPEL, Gentoo, FreeBSD ports), zip archives for Windows, macOS (Intel) and Solaris, docker image iipsrv/iipsrv
 licenseModel: open-core
 license: GPL-3.0, commercial license for use in a commercial product, on request
 currentMajor: "1"

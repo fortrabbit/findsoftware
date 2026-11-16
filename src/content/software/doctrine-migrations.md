@@ -19,7 +19,7 @@ hosting:
 runtimeMin: php 8.1
 basedOn:
   - doctrine-dbal
-installMethod: composer
+installMethod: composer, phar
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

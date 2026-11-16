@@ -13,7 +13,7 @@ maintainer: Disqus, Inc.
 maintainerType: company
 adminUi: true
 i18n: yes, multi-language support
-installMethod: drop-in code snippet (universal embed code)
+installMethod: drop-in code snippet (universal embed code), plugins for platforms such as WordPress
 licenseModel: saas
 httpArchiveSites: 17644
 addedAt: 2026-11-03

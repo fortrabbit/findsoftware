@@ -13,7 +13,7 @@ maintainer: Stanley Lim
 maintainerType: individual
 firstRelease: 2017
 language: css
-installMethod: npm
+installMethod: npm, yarn, cdn, github-release-zip, starter-template
 licenseModel: open-source
 license: MIT, CC BY-NC-SA 4.0
 currentMajor: "0"

@@ -18,7 +18,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: debian and ubuntu packages
+installMethod: debian and ubuntu packages, fedora packages, openSUSE packages, gentoo emerge, FreeBSD ports, build from source (automake, cmake, meson or scons)
 licenseModel: open-source
 license: BSD-3-Clause, revised BSD
 currentMajor: "1"

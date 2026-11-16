@@ -26,7 +26,7 @@ headlessApi:
 i18n: user interface translations, ten locales
 runsAs:
   - always-on
-installMethod: npm
+installMethod: npm, npx saltcorn-install, docker
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

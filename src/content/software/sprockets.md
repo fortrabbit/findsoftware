@@ -17,7 +17,7 @@ runtimeMin: ruby 2.5
 templating: erb
 runsAs:
   - static
-installMethod: gem install sprockets
+installMethod: gem install sprockets, Gemfile entry gem 'sprockets', '~> 4.0' with Bundler
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

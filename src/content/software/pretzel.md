@@ -20,7 +20,7 @@ contentStore:
 templating: liquid, razor
 runsAs:
   - local
-installMethod: GitHub Releases download (Pretzel.exe)
+installMethod: GitHub Releases download (Pretzel.exe), Chocolatey
 licenseModel: open-source
 license: MS-PL
 currentMajor: "0"

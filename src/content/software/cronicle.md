@@ -23,7 +23,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: install script run with Node.js
+installMethod: install script run with Node.js, release tarball and npm install
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

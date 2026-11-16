@@ -20,7 +20,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: binary download
+installMethod: binary download, docker image, distribution package, build from source with cargo
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "2"

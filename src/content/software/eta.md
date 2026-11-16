@@ -18,7 +18,7 @@ runtime:
 hosting:
   - node
 runtimeMin: node 20
-installMethod: JSR
+installMethod: JSR, browser module import
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

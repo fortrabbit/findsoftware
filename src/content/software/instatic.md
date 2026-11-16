@@ -27,7 +27,7 @@ runsAs:
   - always-on
 renderingModes:
   - static
-installMethod: docker compose
+installMethod: docker compose, clone the repository and run bun install and bun run dev, Railway template
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

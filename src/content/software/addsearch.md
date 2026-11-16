@@ -14,7 +14,7 @@ maintainerType: company
 hqCountry: FI
 adminUi: true
 i18n: yes, websites in more than 30 languages
-installMethod: script tags in the website source
+installMethod: script tags in the website source, script tag from the AddSearch CDN
 licenseModel: saas
 httpArchiveSites: 491
 social:

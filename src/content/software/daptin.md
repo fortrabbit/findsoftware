@@ -34,7 +34,7 @@ runsAs:
   - always-on
 renderingModes:
   - static
-installMethod: docker
+installMethod: docker, linux binary, docker compose, kustomize
 licenseModel: open-source
 license: LGPL-3.0
 currentMajor: "0"

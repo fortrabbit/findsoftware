@@ -33,7 +33,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: npx / pnpx (Lowdefy CLI)
+installMethod: npx / pnpx (Lowdefy CLI), docker
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "7"

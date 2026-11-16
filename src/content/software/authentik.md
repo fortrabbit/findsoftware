@@ -20,7 +20,7 @@ hosting:
 runtimeMin: python 3.14
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, kubernetes
 licenseModel: open-core
 license: MIT
 latestReleaseDate: 2026-10-14

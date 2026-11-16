@@ -13,7 +13,7 @@ status: active
 maintainer: Boxicons
 firstRelease: 2018
 language: javascript
-installMethod: npm
+installMethod: npm, npm (@boxicons/react), npm (@boxicons/vue), npm (@boxicons/svelte), npm (@boxicons/core), cli
 licenseModel: open-core
 license: MIT, CC-BY-4.0, OFL-1.1, Boxicons Pro License
 currentMajor: "3"

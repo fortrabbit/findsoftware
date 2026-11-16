@@ -14,7 +14,7 @@ firstRelease: 2022
 language: javascript
 basedOn:
   - solid
-installMethod: npm
+installMethod: npm, npm init
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

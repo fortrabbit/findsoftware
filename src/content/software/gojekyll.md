@@ -22,7 +22,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: docker
+installMethod: docker, binary download, go install
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

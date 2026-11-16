@@ -13,7 +13,7 @@ maintainerType: individual
 firstRelease: 2024
 runsAs:
   - local
-installMethod: homebrew tap phpenv/tap
+installMethod: homebrew tap phpenv/tap, git checkout into ~/.phpenv, phpenv-installer script
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

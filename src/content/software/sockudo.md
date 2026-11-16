@@ -22,7 +22,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: binary-download
+installMethod: binary-download, docker-compose, helm, docker, cargo
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

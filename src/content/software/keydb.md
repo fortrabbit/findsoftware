@@ -20,7 +20,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: build from source (make)
+installMethod: build from source (make), Docker image eqalpha/keydb, Debian and Ubuntu packages from the project's apt repository, RPM packages from the project's download server
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "6"

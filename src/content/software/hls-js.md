@@ -14,7 +14,7 @@ firstRelease: 2015
 language: javascript
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, script tag, GitHub release download
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

@@ -18,7 +18,7 @@ runtime:
   - binary
 hosting:
   - binary
-installMethod: go module import, go install for the CLI
+installMethod: go module import, go install for the CLI, go install
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

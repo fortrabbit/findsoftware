@@ -19,7 +19,7 @@ basedOn:
   - wordpress
 runsAs:
   - local
-installMethod: npm global
+installMethod: npm global, npm local
 licenseModel: open-source
 license: GPL-2.0-or-later
 currentMajor: "12"

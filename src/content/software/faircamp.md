@@ -26,7 +26,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: binary download
+installMethod: binary download, homebrew, aur, cargo install
 licenseModel: open-source
 license: AGPL-3.0-or-later, CC0-1.0
 currentMajor: "2"

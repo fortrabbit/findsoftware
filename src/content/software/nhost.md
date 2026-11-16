@@ -20,7 +20,7 @@ databases:
 adminUi: true
 headlessApi:
   - graphql
-installMethod: homebrew
+installMethod: homebrew, install script, nix, npm, docker compose
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

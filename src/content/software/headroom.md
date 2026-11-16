@@ -13,7 +13,7 @@ maintainer: Nick Williams
 maintainerType: individual
 firstRelease: 2013
 language: javascript
-installMethod: npm
+installMethod: npm, cdn, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

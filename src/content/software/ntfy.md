@@ -23,7 +23,7 @@ databases:
 templating: Go templates
 runsAs:
   - always-on
-installMethod: binary-download
+installMethod: binary-download, apt, rpm, homebrew (CLI only), docker, kubernetes
 licenseModel: open-source
 license: Apache-2.0, GPL-2.0
 currentMajor: "2"

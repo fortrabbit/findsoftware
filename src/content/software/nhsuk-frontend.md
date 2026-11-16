@@ -16,7 +16,7 @@ language: javascript
 templating: nunjucks
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, copy-files
 licenseModel: open-source
 license: MIT
 currentMajor: "10"

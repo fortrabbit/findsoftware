@@ -20,7 +20,7 @@ runtimeMin: node 12
 adminUi: true
 runsAs:
   - always-on
-installMethod: npm
+installMethod: npm, docker image, helm chart
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

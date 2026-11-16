@@ -13,7 +13,7 @@ status: stub
 maintainer: Davi Ferreira
 firstRelease: 2013
 language: javascript
-installMethod: npm
+installMethod: npm, bower, cdn, download
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

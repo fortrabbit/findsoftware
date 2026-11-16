@@ -17,7 +17,7 @@ runtime:
   - jvm
 hosting:
   - java
-installMethod: Maven
+installMethod: Maven, JAR on the classpath
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "3"

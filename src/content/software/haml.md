@@ -17,7 +17,7 @@ runtime:
 hosting:
   - ruby
 runtimeMin: ruby 3.2
-installMethod: gem
+installMethod: gem, bundler
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

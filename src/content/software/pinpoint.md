@@ -24,7 +24,7 @@ databases:
   - mysql
 runsAs:
   - always-on
-installMethod: release build results (executable jars)
+installMethod: release build results (executable jars), source build with Maven, docker, helm chart (pinpoint-kubernetes)
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "4"

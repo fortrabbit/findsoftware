@@ -23,7 +23,7 @@ databases:
   - mysql
 adminUi: true
 i18n: translated into more than 20 languages
-installMethod: official autoinstaller script (Perfect Server)
+installMethod: official autoinstaller script (Perfect Server), tar.gz download from ispconfig.org
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "3"

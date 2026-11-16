@@ -19,7 +19,7 @@ databases:
   - sqlserver
 runsAs:
   - always-on
-installMethod: Sitecore Install Assistant (on premises)
+installMethod: Sitecore Install Assistant (on premises), Sitecore Installation Framework (PowerShell), Sitecore Container Deployment Package (Docker Compose, Kubernetes)
 licenseModel: commercial
 currentMajor: "10"
 social:

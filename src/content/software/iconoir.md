@@ -13,7 +13,7 @@ maintainer: Luca Burgio
 maintainerType: individual
 firstRelease: 2021
 language: javascript
-installMethod: npm
+installMethod: npm, cdn, download
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

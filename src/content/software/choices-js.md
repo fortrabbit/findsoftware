@@ -12,7 +12,7 @@ maintainer: Josh Johnson
 firstRelease: 2016
 language: javascript
 i18n: right-to-left support
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "11"

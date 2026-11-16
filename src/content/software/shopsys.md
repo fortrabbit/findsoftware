@@ -28,7 +28,7 @@ adminUi: true
 headlessApi:
   - graphql
 i18n: yes, several currencies, languages and domains
-installMethod: composer create-project
+installMethod: composer create-project, docker compose
 licenseModel: source-available
 license: Shopsys Community License, Commercial License, proprietary
 currentMajor: "19"

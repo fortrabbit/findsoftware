@@ -22,7 +22,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: npx
+installMethod: npx, npm
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -18,7 +18,7 @@ databases:
   - mongodb
 headlessApi:
   - rest
-installMethod: docker
+installMethod: docker, script tag
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

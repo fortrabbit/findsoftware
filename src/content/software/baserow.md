@@ -29,7 +29,7 @@ headlessApi:
 i18n: yes, six interface languages (English, French, Dutch, German, Italian, Spanish)
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, docker-compose, helm, heroku, render, digitalocean, aws, cloudron, railway
 licenseModel: open-core
 license: MIT, Baserow Premium Edition license (PE License), Baserow Enterprise Edition license (EE License), CC-BY-SA-4.0 (docs directory)
 currentMajor: "2"

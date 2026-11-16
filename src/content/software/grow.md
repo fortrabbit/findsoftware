@@ -26,7 +26,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: pipenv install grow
+installMethod: pipenv install grow, clone the starter project
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

@@ -17,7 +17,7 @@ databases:
   - postgres
 headlessApi:
   - rest
-installMethod: git clone, then cmake and make install
+installMethod: git clone, then cmake and make install, vcpkg community port, Conan community package
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

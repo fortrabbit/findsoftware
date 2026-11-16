@@ -22,7 +22,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: shell install script (curl)
+installMethod: shell install script (curl), Homebrew, Snap, Flatpak, Chocolatey, make from source, release binary download (GitHub releases), FreeBSD ports and packages
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

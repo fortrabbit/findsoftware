@@ -11,7 +11,7 @@ maintainer: Ryan Day
 maintainerType: individual
 firstRelease: 2010
 language: javascript
-installMethod: npm
+installMethod: npm, precompiled bundle
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

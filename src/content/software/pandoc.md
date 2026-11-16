@@ -17,7 +17,7 @@ runsAs:
   - local
   - always-on
   - per-request
-installMethod: official installer and binary downloads
+installMethod: official installer and binary downloads, Homebrew, Chocolatey, MacPorts, Conda, winget, Docker image
 licenseModel: open-source
 license: GPL-2.0-or-later
 currentMajor: "3"

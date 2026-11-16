@@ -15,7 +15,7 @@ basedOn:
   - vue
 runsAs:
   - local
-installMethod: VS Code Marketplace extension Vue.volar
+installMethod: VS Code Marketplace extension Vue.volar, npm install vue-tsc typescript --save-dev
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

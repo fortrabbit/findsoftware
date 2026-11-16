@@ -18,7 +18,7 @@ basedOn:
   - algolia-autocomplete
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, bun, cdn script tag
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

@@ -18,7 +18,7 @@ runtime:
 runtimeMin: node 16
 runsAs:
   - local
-installMethod: npm install -g backstopjs
+installMethod: npm install -g backstopjs, docker image backstopjs/backstopjs, started by the --docker flag
 licenseModel: open-source
 license: MIT
 currentMajor: "6"

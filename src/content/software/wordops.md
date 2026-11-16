@@ -21,7 +21,7 @@ runtimeMin: python 3.4
 databases:
   - mariadb
 adminUi: true
-installMethod: one-step installer script
+installMethod: one-step installer script, git clone and run install script
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

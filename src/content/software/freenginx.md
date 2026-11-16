@@ -18,7 +18,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: source-mercurial
+installMethod: source-mercurial, windows-binary
 licenseModel: open-source
 license: 2-clause BSD-like license
 currentMajor: "1"

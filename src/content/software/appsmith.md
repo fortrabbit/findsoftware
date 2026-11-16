@@ -20,7 +20,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, kubernetes helm, aws ami, ansible, google cloud run, digitalocean droplet, aws ecs fargate, aws ecs ec2, azure container instance
 licenseModel: open-core
 license: Apache-2.0, Appsmith Subscription Agreement, for the Enterprise Edition
 currentMajor: "2"

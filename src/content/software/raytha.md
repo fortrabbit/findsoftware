@@ -28,7 +28,7 @@ headlessApi:
 templating: liquid
 runsAs:
   - always-on
-installMethod: Docker image raythahq/raytha, or docker compose from the repository
+installMethod: Docker image raythahq/raytha, or docker compose from the repository, One-click deploy on Railway
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

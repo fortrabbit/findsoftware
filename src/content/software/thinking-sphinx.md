@@ -26,7 +26,7 @@ databases:
 runsAs:
   - always-on
   - scheduled
-installMethod: gem
+installMethod: gem, Gemfile (bundler)
 licenseModel: open-source
 license: MIT
 currentMajor: "6"

@@ -15,7 +15,7 @@ language: javascript
 basedOn:
   - instantsearch
   - typesense
-installMethod: npm
+installMethod: npm, yarn, cdn script tag
 licenseModel: open-source
 license: MIT, Apache-2.0
 currentMajor: "3"

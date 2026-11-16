@@ -20,7 +20,7 @@ adminUi: true
 templating: AngularJS
 runsAs:
   - always-on
-installMethod: install script into a virtual environment
+installMethod: install script into a virtual environment, pip install ajenti-panel
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

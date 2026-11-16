@@ -18,7 +18,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, cargo install, build from source
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

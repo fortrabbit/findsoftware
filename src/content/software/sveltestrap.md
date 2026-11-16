@@ -14,7 +14,7 @@ firstRelease: 2023
 language: javascript
 basedOn:
   - bootstrap
-installMethod: npm
+installMethod: npm, pnpm, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

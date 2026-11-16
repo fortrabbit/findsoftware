@@ -24,7 +24,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: release binary download
+installMethod: release binary download, go install from source, Docker image built from the repository
 license: CC BY-NC 4.0
 githubStargazers: 1089
 contributors: 17

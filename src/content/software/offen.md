@@ -25,7 +25,7 @@ adminUi: true
 i18n: English, French, German, Portuguese, Spanish and Vietnamese
 runsAs:
   - always-on
-installMethod: single binary tarball from get.offen.dev
+installMethod: single binary tarball from get.offen.dev, deb package for Ubuntu and Debian, Docker image offen/offen, Heroku template repository, Uberspace, YunoHost application
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

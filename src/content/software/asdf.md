@@ -17,7 +17,7 @@ runtime:
   - binary
 runsAs:
   - local
-installMethod: homebrew
+installMethod: homebrew, zypper, pacman (AUR), pre-compiled binary, go install, git clone
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

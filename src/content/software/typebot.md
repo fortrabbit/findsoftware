@@ -22,7 +22,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: docker compose with the baptistearno/typebot-builder and typebot-viewer images
+installMethod: docker compose with the baptistearno/typebot-builder and typebot-viewer images, Vercel, one project each for the builder and the viewer, manual deployment with bun and PM2 on a Node.js server
 licenseModel: source-available
 license: FSL-1.1-Apache-2.0
 currentMajor: "3"

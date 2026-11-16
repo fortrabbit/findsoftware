@@ -14,7 +14,7 @@ maintainer: Fonticons, Inc.
 maintainerType: company
 firstRelease: 2012
 language: javascript
-installMethod: npm
+installMethod: npm, kit, self-hosted web fonts and CSS, self-hosted SVG and JavaScript
 licenseModel: open-core
 license: CC-BY-4.0, OFL-1.1, MIT
 currentMajor: "7"

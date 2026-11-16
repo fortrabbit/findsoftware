@@ -18,7 +18,7 @@ runtime:
 hosting:
   - node
 i18n: yes
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

@@ -21,7 +21,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, binary-download, linux-packages, source-build, helm-chart
 licenseModel: open-source
 license: MIT, MIT License
 currentMajor: "3"

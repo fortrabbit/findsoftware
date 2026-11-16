@@ -27,7 +27,7 @@ headlessApi:
 i18n: yes, flows, checklists and banners can be translated and delivered by the user's locale
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, coolify
 licenseModel: open-core
 license: MIT, Usertour Enterprise License
 currentMajor: "0"

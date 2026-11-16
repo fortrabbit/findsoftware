@@ -14,7 +14,7 @@ maintainerType: foundation
 firstRelease: 2017
 language: javascript
 i18n: locales through the native Intl API
-installMethod: npm
+installMethod: npm, cdn, script tag with a downloaded file
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

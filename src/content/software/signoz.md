@@ -23,7 +23,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, binary-download, helm
 licenseModel: open-core
 license: MIT, SigNoz Enterprise License
 currentMajor: "0"

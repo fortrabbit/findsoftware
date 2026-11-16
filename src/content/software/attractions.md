@@ -15,7 +15,7 @@ firstRelease: 2020
 language: javascript
 basedOn:
   - svelte
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

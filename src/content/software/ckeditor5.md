@@ -16,7 +16,7 @@ firstRelease: 2016
 hqCountry: PL
 language: javascript
 i18n: multi-language support
-installMethod: npm
+installMethod: npm, cdn, zip download
 licenseModel: open-core
 license: GPL-2.0-or-later, commercial license
 currentMajor: "49"

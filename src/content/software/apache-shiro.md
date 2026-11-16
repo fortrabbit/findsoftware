@@ -18,7 +18,7 @@ runtime:
 hosting:
   - java
 runtimeMin: jvm 17
-installMethod: maven
+installMethod: maven, source build
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "3"

@@ -19,7 +19,7 @@ databases:
   - sqlite
 runsAs:
   - local
-installMethod: appimage
+installMethod: appimage, flathub, snap store, microsoft store
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

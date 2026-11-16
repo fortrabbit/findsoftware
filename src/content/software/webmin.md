@@ -25,7 +25,7 @@ adminUi: true
 i18n: yes
 runsAs:
   - always-on
-installMethod: webmin-setup-repo.sh, then apt-get or dnf install webmin
+installMethod: webmin-setup-repo.sh, then apt-get or dnf install webmin, rpm or deb package downloaded from the project and installed with apt-get or dnf, source tarball installed with setup.sh
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "2"

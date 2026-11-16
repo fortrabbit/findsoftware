@@ -34,7 +34,7 @@ i18n: yes
 runsAs:
   - always-on
   - scheduled
-installMethod: pip
+installMethod: pip, docker
 licenseModel: open-core
 license: AGPL-3.0, AGPL-3.0 with additional terms
 latestReleaseDate: 2026-09-30

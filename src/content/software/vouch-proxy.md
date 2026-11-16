@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, source-build, helm
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

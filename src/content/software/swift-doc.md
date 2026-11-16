@@ -17,7 +17,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: brew install swiftdocorg/formulae/swift-doc
+installMethod: brew install swiftdocorg/formulae/swift-doc, docker pull swiftdoc/swift-doc:latest, git clone and make install
 licenseModel: open-source
 license: MIT
 githubStargazers: 1680

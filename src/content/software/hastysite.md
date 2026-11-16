@@ -23,7 +23,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: pre-built binary download
+installMethod: pre-built binary download, build from source with nim and nifty
 licenseModel: open-source
 license: MIT
 latestReleaseDate: 2026-06-18

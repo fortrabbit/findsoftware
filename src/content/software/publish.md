@@ -24,7 +24,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: Swift Package Manager dependency
+installMethod: Swift Package Manager dependency, make from a clone of the repository (command line tool), brew install publish
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

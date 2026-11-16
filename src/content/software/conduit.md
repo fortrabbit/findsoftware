@@ -26,7 +26,7 @@ headlessApi:
   - graphql
 runsAs:
   - always-on
-installMethod: npx @conduitplatform/cli deploy setup
+installMethod: npx @conduitplatform/cli deploy setup, Docker Compose microservices, standalone Docker image, from source with pnpm and Turbo
 licenseModel: open-source
 license: MIT, Apache-2.0
 currentMajor: "0"

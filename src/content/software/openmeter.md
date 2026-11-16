@@ -22,7 +22,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker-compose
+installMethod: docker-compose, helm
 licenseModel: open-source
 license: Apache-2.0
 latestReleaseDate: 2023-07-11

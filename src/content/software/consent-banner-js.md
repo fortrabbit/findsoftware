@@ -14,7 +14,7 @@ maintainerType: company
 firstRelease: 2024
 hqCountry: PL
 language: javascript
-installMethod: cdn
+installMethod: cdn, Google Tag Manager template, WordPress plugin, PrestaShop plugin, Cloudflare Worker injection
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

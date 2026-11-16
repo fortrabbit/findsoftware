@@ -18,7 +18,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: os-packages
+installMethod: os-packages, build-from-source-configure-make, binary-download
 licenseModel: open-source
 license: GPLv2+
 currentMajor: "7"

@@ -26,7 +26,7 @@ headlessApi:
 i18n: yes, interface translated into more than 25 languages by the community
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, binary download, source build (Go and Node.js with pnpm)
 licenseModel: open-source
 license: BSD-2-Clause
 currentMajor: "2"

@@ -24,7 +24,7 @@ adminUi: true
 headlessApi:
   - rest
 i18n: yes
-installMethod: Gemfile gem, then bin/rails generate avo:install
+installMethod: Gemfile gem, then bin/rails generate avo:install, bin/rails app:template LOCATION='https://avohq.io/app-template'
 licenseModel: open-core
 license: LGPL-3.0, Commercial
 currentMajor: "4"

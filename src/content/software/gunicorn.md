@@ -20,7 +20,7 @@ hosting:
 runtimeMin: python 3.10
 runsAs:
   - always-on
-installMethod: pip
+installMethod: pip, docker-image, system-packages, pipx, pip-from-git
 licenseModel: open-source
 license: MIT
 currentMajor: "26"

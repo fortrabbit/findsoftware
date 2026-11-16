@@ -15,7 +15,7 @@ firstRelease: 2007
 language: cpp
 runsAs:
   - always-on
-installMethod: docker image ghcr.io/weserv/images
+installMethod: docker image ghcr.io/weserv/images, docker build from the repository
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "5"

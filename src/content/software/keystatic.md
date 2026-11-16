@@ -23,7 +23,7 @@ contentStore:
 adminUi: true
 runsAs:
   - local
-installMethod: npm create @keystatic@latest
+installMethod: npm create @keystatic@latest, npm install @keystatic/core @keystatic/astro (or @keystatic/next) into an existing project
 licenseModel: open-core
 license: MIT
 currentMajor: "0"

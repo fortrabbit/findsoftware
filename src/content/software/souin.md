@@ -18,7 +18,7 @@ runtime:
   - binary
 hosting:
   - binary
-installMethod: docker-image
+installMethod: docker-image, xcaddy-build, standalone-from-source
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -20,7 +20,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: prebuilt-binary-tarball
+installMethod: prebuilt-binary-tarball, docker-image, cargo-build-from-source
 licenseModel: open-source
 license: AGPL-3.0, LGPL-3.0
 currentMajor: "2"

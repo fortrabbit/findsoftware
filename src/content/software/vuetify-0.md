@@ -17,7 +17,7 @@ language: javascript
 basedOn:
   - vue
 i18n: locale provider component
-installMethod: npm create (create-vuetify0 scaffolder)
+installMethod: npm create (create-vuetify0 scaffolder), npm install (manual setup in an existing Vue project)
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

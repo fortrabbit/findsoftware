@@ -15,7 +15,7 @@ firstRelease: 2012
 language: javascript
 runtime:
   - node
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

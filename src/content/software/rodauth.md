@@ -24,6 +24,7 @@ databases:
   - postgres
   - mysql
   - sqlserver
+installMethod: gem
 licenseModel: open-source
 license: MIT
 currentMajor: "2"
@@ -85,6 +86,9 @@ sources:
     checkedAt: 2026-11-16
   - field: contributors
     url: https://api.github.com/repos/jeremyevans/rodauth/contributors
+    checkedAt: 2026-11-16
+  - field: installMethod
+    url: https://rubygems.org/api/v1/gems/rodauth.json
     checkedAt: 2026-11-16
 ai: authored
 contentStore: null

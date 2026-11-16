@@ -19,7 +19,7 @@ runtimeMin: node 16
 i18n: yes
 runsAs:
   - local
-installMethod: npm install stylus -g
+installMethod: npm install stylus -g, pnpm add -g stylus
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

@@ -28,7 +28,7 @@ headlessApi:
   - graphql
 runsAs:
   - always-on
-installMethod: CLI (pnpx graphweaver@latest init)
+installMethod: CLI (pnpx graphweaver@latest init), docker image built from the project's own Dockerfile
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

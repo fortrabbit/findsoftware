@@ -23,7 +23,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: pip install stattic
+installMethod: pip install stattic, git clone, then pip install -e .
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

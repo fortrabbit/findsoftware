@@ -22,7 +22,7 @@ contentStore:
 adminUi: true
 runsAs:
   - always-on
-installMethod: binary download
+installMethod: binary download, go install, docker
 licenseModel: open-source
 license: MIT, MPL-2.0
 currentMajor: "0"

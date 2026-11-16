@@ -21,7 +21,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: binary packages
+installMethod: binary packages, docker, source build
 licenseModel: open-core
 license: BSD-2-Clause
 currentMajor: "1"

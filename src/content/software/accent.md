@@ -23,7 +23,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, source-build, heroku
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "1"

@@ -13,7 +13,7 @@ status: stub
 maintainer: Datopian
 firstRelease: 2026
 language: javascript
-installMethod: install script (fl CLI)
+installMethod: install script (fl CLI), binary download (fl CLI, Windows)
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "2"

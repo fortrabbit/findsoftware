@@ -22,7 +22,7 @@ runsAs:
   - static
 renderingModes:
   - spa
-installMethod: npm install @staticcms/core, bundled into a static site builder with npm support
+installMethod: npm install @staticcms/core, bundled into a static site builder with npm support, single HTML file loading the CMS from a CDN
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

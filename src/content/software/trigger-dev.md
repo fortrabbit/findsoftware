@@ -20,7 +20,7 @@ databases:
 adminUi: true
 headlessApi:
   - rest
-installMethod: Docker Compose
+installMethod: Docker Compose, Helm chart on Kubernetes
 licenseModel: open-source
 license: Apache-2.0, MIT
 currentMajor: "4"

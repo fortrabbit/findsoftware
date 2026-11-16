@@ -39,7 +39,7 @@ runsAs:
 renderingModes:
   - static
   - server
-installMethod: upload files over FTP, then run the configuration wizard in the browser
+installMethod: upload files over FTP, then run the configuration wizard in the browser, upload files over SSH, Amazon Machine Image from AWS Marketplace (AMI Edition)
 licenseModel: commercial
 license: Movable Type license, Movable Type License Agreement with Six Apart Ltd., one server and unlimited users
 currentMajor: "9"

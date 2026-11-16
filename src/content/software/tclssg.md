@@ -20,7 +20,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: git clone
+installMethod: git clone, binary download
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

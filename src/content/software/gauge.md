@@ -18,7 +18,7 @@ runtime:
   - binary
 runsAs:
   - local
-installMethod: homebrew
+installMethod: homebrew, npm, curl, zip, windows installer, chocolatey, docker
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

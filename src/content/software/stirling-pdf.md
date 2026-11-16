@@ -28,7 +28,7 @@ i18n: yes, interface in 40+ languages
 runsAs:
   - always-on
   - local
-installMethod: docker
+installMethod: docker, helm chart (Kubernetes), jar (Java), Homebrew or Scoop package (server JAR), desktop app installer (Windows, macOS, Linux)
 licenseModel: open-core
 license: MIT, Stirling PDF User License (production use needs a license)
 currentMajor: "3"

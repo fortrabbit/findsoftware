@@ -18,7 +18,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: linux-installer-script
+installMethod: linux-installer-script, deb-package, rpm-package, windows-installer, docker, zip-archive, homebrew, build-from-source
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

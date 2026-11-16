@@ -18,7 +18,7 @@ hosting:
   - node
 basedOn:
   - mobx
-installMethod: npm
+installMethod: npm, CDN
 licenseModel: open-source
 license: MIT
 currentMajor: "9"

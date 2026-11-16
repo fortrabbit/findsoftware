@@ -24,7 +24,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: shell install script
+installMethod: shell install script, cargo install seite
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

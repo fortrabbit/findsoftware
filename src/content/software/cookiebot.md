@@ -16,7 +16,7 @@ adminUi: true
 i18n: yes, 47+ languages on the Premium plans
 runsAs:
   - browser
-installMethod: script tag
+installMethod: script tag, WordPress plugin, Wix app
 licenseModel: saas
 social:
   facebook: https://www.facebook.com/CookiebotCMP/

@@ -13,7 +13,7 @@ maintainer: The Bootstrap Authors
 maintainerType: community
 firstRelease: 2019
 language: css
-installMethod: npm
+installMethod: npm, cdn, github-release-zip, composer
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

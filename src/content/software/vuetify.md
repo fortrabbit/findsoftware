@@ -17,7 +17,7 @@ language: javascript
 basedOn:
   - vue
 i18n: 42+ supported languages
-installMethod: npm create (create-vuetify scaffolder)
+installMethod: npm create (create-vuetify scaffolder), npm install (manual setup with Vite or Nuxt)
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

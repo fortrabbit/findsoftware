@@ -21,7 +21,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: binary-download
+installMethod: binary-download, docker, helm
 licenseModel: open-core
 license: Apache-2.0
 currentMajor: "1"

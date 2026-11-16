@@ -13,7 +13,7 @@ maintainer: Eric Beyer
 maintainerType: individual
 firstRelease: 2020
 language: javascript
-installMethod: npm
+installMethod: npm, UMD bundle script tag
 licenseModel: open-source
 license: MIT
 currentMajor: "6"

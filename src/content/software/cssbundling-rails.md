@@ -17,7 +17,7 @@ basedOn:
   - rails
 runsAs:
   - local
-installMethod: bin/bundle add cssbundling-rails, then bin/rails css:install:<bundler>
+installMethod: bin/bundle add cssbundling-rails, then bin/rails css:install:<bundler>, rails new myapp --css <bundler> (Rails 7+)
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

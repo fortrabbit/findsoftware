@@ -32,7 +32,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, kubernetes helm
 licenseModel: open-core
 license: Apache-2.0, MIT, for the docs and community contents of the v2 folder
 currentMajor: "2"

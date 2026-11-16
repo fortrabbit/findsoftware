@@ -14,7 +14,7 @@ maintainer: XB Software
 firstRelease: 2014
 language: javascript
 i18n: 32 locales
-installMethod: npm
+installMethod: npm, build from source
 licenseModel: open-core
 license: MIT
 currentMajor: "10"

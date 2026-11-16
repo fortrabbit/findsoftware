@@ -21,7 +21,7 @@ basedOn:
   - netty
 runsAs:
   - always-on
-installMethod: Gradle plugin io.ratpack.ratpack-java with io.ratpack:ratpack-core from Maven Central
+installMethod: Gradle plugin io.ratpack.ratpack-java with io.ratpack:ratpack-core from Maven Central, Single Groovy script
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

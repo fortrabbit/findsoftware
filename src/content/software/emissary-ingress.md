@@ -16,7 +16,7 @@ firstRelease: 2018
 language: python
 runsAs:
   - always-on
-installMethod: helm-chart
+installMethod: helm-chart, kubernetes-yaml, docker-image
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "4"

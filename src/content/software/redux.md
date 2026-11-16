@@ -12,7 +12,7 @@ status: active
 maintainer: Dan Abramov
 firstRelease: 2015
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

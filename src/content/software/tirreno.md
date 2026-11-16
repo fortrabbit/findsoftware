@@ -25,7 +25,7 @@ adminUi: true
 runsAs:
   - scheduled
   - per-request
-installMethod: docker compose from the tirreno.com compose file
+installMethod: docker compose from the tirreno.com compose file, composer require tirreno/tirreno, extract the release archive onto a PHP web server, then run the browser installer
 licenseModel: open-core
 license: AGPL-3.0, Commercial (Enterprise license)
 currentMajor: "0"

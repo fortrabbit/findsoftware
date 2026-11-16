@@ -13,7 +13,7 @@ maintainer: Jorik Tangelder (Eight Media)
 maintainerType: community
 firstRelease: 2013
 language: javascript
-installMethod: npm
+installMethod: npm, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

@@ -24,7 +24,7 @@ adminUi: true
 i18n: yes, interface in 12 languages
 runsAs:
   - always-on
-installMethod: pnpm
+installMethod: pnpm, docker compose
 licenseModel: open-source
 license: AGPL-3.0
 githubStargazers: 192

@@ -13,7 +13,7 @@ maintainer: FormKit, Inc.
 maintainerType: company
 firstRelease: 2022
 language: javascript
-installMethod: npm
+installMethod: npm, yarn, pnpm
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

@@ -17,7 +17,7 @@ language: javascript
 basedOn:
   - tailwindcss
 i18n: directional (RTL) classes and an i18next guide
-installMethod: npm install tw-elements
+installMethod: npm install tw-elements, CDN (jsDelivr), git clone of the repository, zip download
 licenseModel: open-core
 license: MIT, TW Elements EULA for Premium Access features
 currentMajor: "2"

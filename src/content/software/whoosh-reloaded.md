@@ -16,7 +16,7 @@ runtime:
   - python
 hosting:
   - python
-installMethod: pip
+installMethod: pip, pip from git
 licenseModel: open-source
 license: BSD-2-Clause
 currentMajor: "2"

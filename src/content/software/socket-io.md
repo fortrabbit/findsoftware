@@ -19,7 +19,7 @@ runtime:
 hosting:
   - node
 runtimeMin: node 10
-installMethod: npm
+installMethod: npm, yarn, pnpm, bun, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

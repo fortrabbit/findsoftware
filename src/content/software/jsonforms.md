@@ -15,7 +15,7 @@ firstRelease: 2017
 hqCountry: DE
 language: javascript
 i18n: translation function in the core component
-installMethod: npm
+installMethod: npm, git clone of the React and Material UI seed app
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

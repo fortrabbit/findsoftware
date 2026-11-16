@@ -14,7 +14,7 @@ maintainerType: individual
 firstRelease: 2018
 language: javascript
 i18n: yes
-installMethod: npm
+installMethod: npm, script tag
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

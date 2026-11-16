@@ -17,7 +17,7 @@ hqCountry: CA
 language: javascript
 basedOn:
   - lenis
-installMethod: npm
+installMethod: npm, CDN
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

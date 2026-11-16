@@ -18,7 +18,7 @@ basedOn:
   - jquery
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, cdn, download
 licenseModel: open-core
 license: Apache-2.0, LicenseRef-LICENSE
 latestReleaseDate: 2026-10-15

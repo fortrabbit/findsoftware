@@ -20,7 +20,7 @@ runtime:
 runtimeMin: jvm 21
 runsAs:
   - local
-installMethod: VS Code extension (installs the Karate CLI and Java)
+installMethod: VS Code extension (installs the Karate CLI and Java), Karate CLI (install script, bundles a JRE), Maven, Gradle, Standalone JAR
 licenseModel: open-core
 license: MIT
 currentMajor: "2"

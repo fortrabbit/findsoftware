@@ -29,7 +29,7 @@ adminUi: true
 i18n: multiple languages, with community translation
 runsAs:
   - always-on
-installMethod: binary-download
+installMethod: binary-download, source-build, docker, helm
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "4"

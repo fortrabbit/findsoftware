@@ -27,7 +27,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: Homebrew (brew install vapor)
+installMethod: Homebrew (brew install vapor), vapor new (Vapor Toolbox), cloned template repository
 licenseModel: open-source
 license: MIT, The MIT License (MIT)
 currentMajor: "4"

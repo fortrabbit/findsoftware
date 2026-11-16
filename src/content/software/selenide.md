@@ -17,7 +17,7 @@ runtime:
 runtimeMin: jvm 17
 runsAs:
   - local
-installMethod: maven
+installMethod: maven, gradle, download
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

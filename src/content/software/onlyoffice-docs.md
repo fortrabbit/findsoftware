@@ -18,7 +18,7 @@ adminUi: true
 i18n: yes, the editor interface is localized
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, apt, windows-installer
 licenseModel: open-core
 license: AGPL-3.0
 currentMajor: "10"

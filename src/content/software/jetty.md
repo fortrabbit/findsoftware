@@ -21,7 +21,7 @@ hosting:
 runtimeMin: jvm 17
 runsAs:
   - always-on
-installMethod: distribution archive (.zip or .tgz) from the download page
+installMethod: distribution archive (.zip or .tgz) from the download page, Maven Central dependency
 licenseModel: open-source
 license: EPL-2.0, Apache-2.0
 currentMajor: "12"

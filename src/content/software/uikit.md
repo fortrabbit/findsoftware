@@ -16,7 +16,7 @@ firstRelease: 2013
 hqCountry: DE
 language: javascript
 i18n: rtl
-installMethod: npm
+installMethod: npm, cdn, download-zip, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

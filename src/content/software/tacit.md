@@ -13,7 +13,7 @@ maintainer: Yegor Bugayenko
 maintainerType: individual
 firstRelease: 2015
 language: css
-installMethod: cdn
+installMethod: cdn, download
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -25,7 +25,7 @@ adminUi: true
 i18n: 98 languages, LTR and RTL
 runsAs:
   - per-request
-installMethod: distribution tarball from the downloads page
+installMethod: distribution tarball from the downloads page, Linux distribution packages, composer create-project phpmyadmin/phpmyadmin, git clone from GitHub, docker official image phpmyadmin
 licenseModel: open-source
 license: GPL-2.0-only
 currentMajor: "5"

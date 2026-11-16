@@ -26,7 +26,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, kubernetes helm charts, aws terraform, microsoft aspire to azure container apps
 licenseModel: open-core
 license: MIT, commercial order terms for licensed features (self-hosted)
 currentMajor: "6"

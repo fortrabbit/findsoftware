@@ -17,7 +17,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: binary download
+installMethod: binary download, Docker
 licenseModel: open-source
 license: Apache-2.0
 latestReleaseDate: 2022-06-28

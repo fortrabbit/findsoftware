@@ -15,7 +15,7 @@ maintainerType: company
 adminUi: true
 runsAs:
   - always-on
-installMethod: Linux packages
+installMethod: Linux packages, macOS package, Windows installer, Docker image (couchbase/server)
 licenseModel: source-available
 license: various licenses, including Business Source License 1.1 (BSL), Couchbase Community Edition license (free deployment of up to five node clusters)
 currentMajor: "8"

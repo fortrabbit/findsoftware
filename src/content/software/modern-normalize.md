@@ -12,7 +12,7 @@ maintainer: Sindre Sorhus
 maintainerType: individual
 firstRelease: 2018
 language: css
-installMethod: npm
+installMethod: npm, download, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

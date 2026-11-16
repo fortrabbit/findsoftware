@@ -25,7 +25,7 @@ headlessApi:
 runsAs:
   - scheduled
   - per-request
-installMethod: packaged release archive
+installMethod: packaged release archive, git clone, composer install, npm run build
 licenseModel: open-source
 license: GPL-2.0
 currentMajor: "1"

@@ -31,7 +31,7 @@ headlessApi:
 i18n: yes, language packs and currency utilities
 runsAs:
   - always-on
-installMethod: binary-download
+installMethod: binary-download, docker, maven
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

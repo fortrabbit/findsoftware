@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: package manager
+installMethod: package manager, windows msi installer, binary tarball, docker image
 licenseModel: open-source
 license: GPL-2.0
 currentMajor: "13"

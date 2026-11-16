@@ -13,7 +13,7 @@ maintainer: Louis Merlin
 maintainerType: individual
 firstRelease: 2019
 language: css
-installMethod: cdn
+installMethod: cdn, npm
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

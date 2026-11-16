@@ -14,7 +14,7 @@ maintainerType: company
 parent: ITHAKA
 firstRelease: 2021
 language: javascript
-installMethod: npm
+installMethod: npm, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "14"

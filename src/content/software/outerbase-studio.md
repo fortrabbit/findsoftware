@@ -21,7 +21,7 @@ databases:
 adminUi: true
 runsAs:
   - local
-installMethod: Cloudflare Workers deploy button
+installMethod: Cloudflare Workers deploy button, desktop app (Windows, Mac)
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "0"

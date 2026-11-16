@@ -12,7 +12,7 @@ status: active
 maintainer: ArkType
 firstRelease: 2022
 language: javascript
-installMethod: pnpm install arktype
+installMethod: pnpm install arktype, npm install arktype
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

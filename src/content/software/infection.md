@@ -18,7 +18,7 @@ runtime:
 runtimeMin: php 8.3
 runsAs:
   - local
-installMethod: PHAR download from the GitHub releases
+installMethod: PHAR download from the GitHub releases, Phive, composer global require infection/infection, Homebrew tap infection/homebrew-infection
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "0"

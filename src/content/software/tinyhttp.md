@@ -27,7 +27,7 @@ templating: Template engines registered per file extension, Eta documented
 runsAs:
   - always-on
   - per-request
-installMethod: pnpm
+installMethod: pnpm, npm, bun, tinyhttp CLI (tinyhttp new)
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

@@ -27,7 +27,7 @@ templating: mako, markdown
 i18n: yes, interviews in languages other than English
 runsAs:
   - always-on
-installMethod: Docker image jhpyle/docassemble
+installMethod: Docker image jhpyle/docassemble, Docker Compose, Helm chart, manual installation without Docker (installation guide), pip install docassemble.webapp
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

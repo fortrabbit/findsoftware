@@ -12,7 +12,7 @@ status: active
 maintainer: Simple Icons Collaborators
 firstRelease: 2017
 language: javascript
-installMethod: npm
+installMethod: npm, download, cdn, composer
 licenseModel: open-source
 license: CC0-1.0, CC0 1.0 Universal
 currentMajor: "16"

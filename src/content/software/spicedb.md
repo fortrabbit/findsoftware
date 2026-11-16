@@ -23,7 +23,7 @@ databases:
   - mysql
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, apt, snap, binary download, homebrew, kubernetes
 licenseModel: open-core
 license: Apache-2.0
 currentMajor: "1"

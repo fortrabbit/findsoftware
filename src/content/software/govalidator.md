@@ -17,7 +17,7 @@ runtime:
   - binary
 hosting:
   - binary
-installMethod: go get
+installMethod: go get, go get (gopkg.in)
 licenseModel: open-source
 license: MIT
 currentMajor: "12"

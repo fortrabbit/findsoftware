@@ -13,7 +13,7 @@ hosting:
 adminUi: true
 runsAs:
   - static
-installMethod: npm i simpla
+installMethod: npm i simpla, load the script from unpkg
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

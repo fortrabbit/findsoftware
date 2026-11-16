@@ -18,7 +18,7 @@ runtime:
 hosting:
   - node
 templating: liquid
-installMethod: npm
+installMethod: npm, cdn, npx
 licenseModel: open-source
 license: MIT
 currentMajor: "10"

@@ -12,7 +12,7 @@ status: stub
 maintainer: Brendan Hersh
 firstRelease: 2020
 language: css
-installMethod: npm
+installMethod: npm, cdn, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

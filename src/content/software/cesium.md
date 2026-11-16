@@ -15,7 +15,7 @@ firstRelease: 2014
 language: javascript
 runsAs:
   - browser
-installMethod: npm install
+installMethod: npm install, download
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

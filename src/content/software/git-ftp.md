@@ -16,7 +16,7 @@ runtime:
 runtimeMin: python 3.10
 runsAs:
   - local
-installMethod: pip install git-ftp
+installMethod: pip install git-ftp, brew install git git-ftp, sudo apt-get install git-ftp, git clone and sudo make install
 licenseModel: open-source
 license: GPL-3.0, GNU General Public License, Version 3.0
 currentMajor: "2"

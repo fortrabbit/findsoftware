@@ -15,7 +15,7 @@ firstRelease: 2009
 language: javascript
 runsAs:
   - browser
-installMethod: download
+installMethod: download, script tag
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

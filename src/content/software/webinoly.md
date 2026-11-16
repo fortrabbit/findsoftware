@@ -17,7 +17,7 @@ databases:
   - mysql
   - mariadb
 adminUi: true
-installMethod: download the installer with curl, then run it with sudo bash
+installMethod: download the installer with curl, then run it with sudo bash, curl piped to sudo bash
 licenseModel: open-source
 license: GPL-3.0
 currentMajor: "1"

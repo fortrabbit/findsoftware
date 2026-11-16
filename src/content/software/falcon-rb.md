@@ -20,7 +20,7 @@ hosting:
 runtimeMin: ruby 3.3
 runsAs:
   - always-on
-installMethod: rubygems
+installMethod: rubygems, bundler
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

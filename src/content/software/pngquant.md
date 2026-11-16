@@ -15,7 +15,7 @@ firstRelease: 2013
 language: rust
 runsAs:
   - local
-installMethod: binary download (macOS)
+installMethod: binary download (macOS), brew install pngquant (Homebrew)
 licenseModel: open-core
 license: GPL v3 or later, commercial license
 currentMajor: "3"

@@ -18,7 +18,7 @@ renderingModes:
   - static
   - server
   - spa
-installMethod: npm
+installMethod: npm, cli
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

@@ -16,7 +16,7 @@ firstRelease: 2011
 language: javascript
 runsAs:
   - browser
-installMethod: script tag
+installMethod: script tag, npm
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

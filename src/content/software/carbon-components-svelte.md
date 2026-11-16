@@ -15,7 +15,7 @@ firstRelease: 2019
 language: javascript
 basedOn:
   - svelte
-installMethod: npm
+installMethod: npm, pnpm, yarn, bun
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

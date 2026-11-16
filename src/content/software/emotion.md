@@ -13,7 +13,7 @@ maintainer: Emotion team
 maintainerType: community
 firstRelease: 2017
 language: javascript
-installMethod: npm
+installMethod: npm, yarn, npm-css
 licenseModel: open-source
 license: MIT
 currentMajor: "11"

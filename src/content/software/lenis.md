@@ -15,7 +15,7 @@ firstRelease: 2022
 language: javascript
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, script tag
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

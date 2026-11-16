@@ -21,7 +21,7 @@ runtimeMin: node 22
 basedOn:
   - react
 templating: jsx
-installMethod: npm create
+installMethod: npm create, npm install
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

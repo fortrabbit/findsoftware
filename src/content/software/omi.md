@@ -15,7 +15,7 @@ parent: Tencent
 firstRelease: 2017
 language: javascript
 templating: jsx
-installMethod: npm
+installMethod: npm, cli
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

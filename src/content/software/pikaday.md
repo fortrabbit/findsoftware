@@ -12,7 +12,7 @@ maintainer: David Bushell
 firstRelease: 2012
 language: javascript
 i18n: yes
-installMethod: npm
+installMethod: npm, script tag
 licenseModel: open-source
 license: MIT, BSD-2-Clause
 currentMajor: "1"

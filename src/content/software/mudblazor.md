@@ -20,7 +20,7 @@ runtimeMin: dotnet 8
 basedOn:
   - blazor
 i18n: yes
-installMethod: nuget
+installMethod: nuget, dotnet-cli, dotnet-templates
 licenseModel: open-source
 license: MIT
 currentMajor: "9"

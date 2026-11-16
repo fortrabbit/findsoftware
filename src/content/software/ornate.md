@@ -17,7 +17,7 @@ runtime:
   - jvm
 runsAs:
   - local
-installMethod: sbt plugin
+installMethod: sbt plugin, Maven Central or JCenter library, command line launcher with the core package
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

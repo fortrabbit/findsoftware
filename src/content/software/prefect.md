@@ -27,7 +27,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: pip, from PyPI
+installMethod: pip, from PyPI, uv, docker, prefecthq/prefect image running the server, docker compose, server with PostgreSQL and Redis
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "3"

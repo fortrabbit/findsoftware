@@ -25,7 +25,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, docker compose, helm chart, compile from source
 licenseModel: open-core
 license: Apache-2.0
 currentMajor: "1"

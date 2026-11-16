@@ -26,7 +26,7 @@ templating: velocity
 i18n: per-weblog locale and timezone
 runsAs:
   - always-on
-installMethod: WAR file deployed to a servlet container
+installMethod: WAR file deployed to a servlet container, Docker Compose, Maven build from source
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "6"

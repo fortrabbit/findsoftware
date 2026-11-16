@@ -18,7 +18,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker-compose
+installMethod: docker-compose, bash-install-script
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

@@ -18,7 +18,7 @@ runtime:
 hosting:
   - php
 runtimeMin: php 7.4
-installMethod: composer
+installMethod: composer, autoloader without Composer
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

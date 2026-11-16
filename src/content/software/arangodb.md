@@ -23,7 +23,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: linux packages
+installMethod: linux packages, docker, build from source
 licenseModel: source-available
 license: BUSL-1.1
 currentMajor: "3"

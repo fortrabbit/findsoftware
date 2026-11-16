@@ -21,7 +21,7 @@ runtimeMin: jvm 8
 templating: velocity, freemarker, mustache, handlebars, jade, thymeleaf, jetbrick
 runsAs:
   - always-on
-installMethod: Maven dependency com.sparkjava:spark-core
+installMethod: Maven dependency com.sparkjava:spark-core, Gradle dependency, Ivy dependency, sbt dependency, Jar download from Maven Central
 licenseModel: open-source
 license: Apache-2.0, Apache License, Version 2.0
 currentMajor: "2"

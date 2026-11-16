@@ -22,7 +22,7 @@ databases:
   - sqlserver
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, PowerSync CLI, for local development
 licenseModel: source-available
 license: FSL-1.1-ALv2
 currentMajor: "1"

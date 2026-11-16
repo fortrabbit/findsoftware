@@ -18,7 +18,7 @@ basedOn:
   - knockout
 runsAs:
   - browser
-installMethod: source-build
+installMethod: source-build, docker
 licenseModel: open-source
 license: GPL-3.0
 currentMajor: "0"

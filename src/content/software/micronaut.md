@@ -18,7 +18,7 @@ runtime:
 hosting:
   - java
 i18n: yes, locale-specific resource bundles
-installMethod: mn create-app with the Micronaut CLI
+installMethod: mn create-app with the Micronaut CLI, Micronaut CLI installed with SDKMAN, Micronaut Launch project generator, Micronaut CLI installed with Homebrew, Micronaut CLI installed with Chocolatey
 licenseModel: open-source
 license: Apache-2.0, Apache License v2, Creative Commons BY 4.0 for documentation and tutorials
 currentMajor: "5"

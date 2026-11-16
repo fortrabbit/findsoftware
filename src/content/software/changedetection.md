@@ -22,7 +22,7 @@ runtimeMin: python 3.11
 adminUi: true
 headlessApi:
   - rest
-installMethod: docker
+installMethod: docker, pip
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

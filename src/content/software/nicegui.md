@@ -25,7 +25,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: pip install nicegui
+installMethod: pip install nicegui, Docker image zauberzeug/nicegui, conda-forge package nicegui
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

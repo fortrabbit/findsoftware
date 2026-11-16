@@ -18,7 +18,7 @@ runtime:
 hosting:
   - elixir
 templating: heex
-installMethod: mix.exs dependency
+installMethod: mix.exs dependency, mix igniter.install mdex
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

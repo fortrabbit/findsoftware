@@ -23,7 +23,7 @@ databases:
 adminUi: true
 headlessApi:
   - rest
-installMethod: one-line installer script (Docker)
+installMethod: one-line installer script (Docker), BaoTa panel Docker app
 licenseModel: open-core
 license: AGPL-3.0, commercial license
 currentMajor: "1"

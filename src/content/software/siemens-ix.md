@@ -13,7 +13,7 @@ maintainer: Siemens Aktiengesellschaft
 firstRelease: 2022
 hqCountry: DE
 language: javascript
-installMethod: npm
+installMethod: npm, NuGet (SiemensIXBlazor, experimental)
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

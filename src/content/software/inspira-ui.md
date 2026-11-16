@@ -16,7 +16,7 @@ language: javascript
 basedOn:
   - tailwindcss
   - vue
-installMethod: copy-paste
+installMethod: copy-paste, cli
 licenseModel: open-core
 license: MIT
 githubStargazers: 5077

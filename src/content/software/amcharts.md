@@ -16,7 +16,7 @@ firstRelease: 2021
 hqCountry: LT
 language: javascript
 i18n: yes
-installMethod: npm
+installMethod: npm, cdn, download
 license: linkware license, commercial license
 currentMajor: "5"
 latestReleaseDate: 2026-10-26

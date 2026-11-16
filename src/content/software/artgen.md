@@ -24,7 +24,7 @@ databases:
 adminUi: true
 headlessApi:
   - rest
-installMethod: docker run artgenio/core
+installMethod: docker run artgenio/core, npx @artgenio/core
 licenseModel: open-source
 license: GPL-3.0
 currentMajor: "0"

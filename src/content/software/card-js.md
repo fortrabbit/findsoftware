@@ -13,7 +13,7 @@ maintainerType: individual
 firstRelease: 2014
 language: javascript
 i18n: messages option for translated strings
-installMethod: npm
+installMethod: npm, bower, script include
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: source tarball built with CMake
+installMethod: source tarball built with CMake, Debian and Ubuntu packages from a third-party packaging repository, FreeBSD port, OpenBSD port, macOS package (.dmg), Windows package (zip, compiled via Cygwin)
 licenseModel: open-source
 license: GPL-2.0
 currentMajor: "12"

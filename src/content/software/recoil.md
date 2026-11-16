@@ -15,7 +15,7 @@ firstRelease: 2020
 language: javascript
 basedOn:
   - react
-installMethod: npm
+installMethod: npm, bower, script tag
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

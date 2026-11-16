@@ -17,7 +17,7 @@ runtime:
 runtimeMin: node 12
 runsAs:
   - local
-installMethod: npx @squoosh/cli
+installMethod: npx @squoosh/cli, npm i -g @squoosh/cli
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

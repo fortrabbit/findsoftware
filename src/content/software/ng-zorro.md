@@ -16,7 +16,7 @@ basedOn:
   - angular
   - ant-design
 i18n: yes
-installMethod: ng-add
+installMethod: ng-add, npm, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "22"

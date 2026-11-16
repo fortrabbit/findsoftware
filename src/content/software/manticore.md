@@ -20,7 +20,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: curl install script
+installMethod: curl install script, docker, apt, rpm, homebrew, windows installer, helm
 licenseModel: open-source
 license: GPL-3.0
 currentMajor: "29"

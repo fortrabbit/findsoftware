@@ -26,7 +26,7 @@ renderingModes:
   - spa
   - server
   - static
-installMethod: npm create vue (create-vue scaffolder)
+installMethod: npm create vue (create-vue scaffolder), script tag from a CDN
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

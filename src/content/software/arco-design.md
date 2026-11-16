@@ -16,7 +16,7 @@ language: javascript
 basedOn:
   - react
 i18n: yes
-installMethod: npm
+installMethod: npm, CDN, UMD build
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

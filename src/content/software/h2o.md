@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: build-from-source-cmake
+installMethod: build-from-source-cmake, library-libh2o
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

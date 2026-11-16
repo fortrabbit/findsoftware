@@ -17,7 +17,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: Docker Compose with published images
+installMethod: Docker Compose with published images, from source with pnpm
 licenseModel: open-source
 license: AGPL-3.0, MIT
 currentMajor: "0"

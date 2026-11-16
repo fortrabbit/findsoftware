@@ -26,7 +26,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: pip
+installMethod: pip, docker image, install from source
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "9"

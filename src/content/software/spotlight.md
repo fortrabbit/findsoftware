@@ -14,7 +14,7 @@ firstRelease: 2023
 language: javascript
 runsAs:
   - local
-installMethod: npx
+installMethod: npx, npm, binary download, docker
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "4"

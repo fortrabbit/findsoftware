@@ -19,7 +19,7 @@ runsAs:
   - browser
 renderingModes:
   - spa
-installMethod: cdn
+installMethod: cdn, npm
 licenseModel: open-core
 license: GPL-3.0, GPL v3 with a FLOSS exception, commercial license
 currentMajor: "11"

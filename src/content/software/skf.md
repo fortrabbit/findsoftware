@@ -9,7 +9,7 @@ description: Plugin-based static website generator, inspired by the Suckless Web
 status: stub
 maintainer: Samir Chaouki
 maintainerType: individual
-installMethod: make install from source
+installMethod: make install from source, Arch Linux package skf-framework
 licenseModel: open-source
 license: GPL-3.0, GPL-2.0-or-later
 githubStargazers: 28

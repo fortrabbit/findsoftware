@@ -16,7 +16,7 @@ language: rust
 runtimeMin: node 10
 runsAs:
   - local
-installMethod: npm
+installMethod: npm, yarn, pnpm, bun, deno
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

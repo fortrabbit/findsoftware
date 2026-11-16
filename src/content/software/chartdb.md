@@ -24,7 +24,7 @@ databases:
   - sqlserver
 runsAs:
   - local
-installMethod: npm
+installMethod: npm, docker-image
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "1"

@@ -16,7 +16,7 @@ firstRelease: 2018
 language: javascript
 basedOn:
   - angular
-installMethod: npm
+installMethod: npm, ng add
 licenseModel: open-source
 license: MIT
 currentMajor: "22"

@@ -20,7 +20,7 @@ hosting:
 runtimeMin: dotnet 10.0
 runsAs:
   - always-on
-installMethod: dotnet tool
+installMethod: dotnet tool, docker, docker compose, build from source with the .NET SDK
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

@@ -14,7 +14,7 @@ firstRelease: 2016
 language: javascript
 basedOn:
   - redux
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

@@ -664,7 +664,8 @@ for (const file of facts) {
     value.startsWith('none') ? 'api-only' : value,
   );
   if (renderingModes.length) record.renderingModes = renderingModes;
-  if (first('installMethod')) record.installMethod = text(first('installMethod'));
+  const installRoutes = [...new Map(all('installMethod').map((route) => [lower(text(route)), text(route)])).values()];
+  if (installRoutes.length) record.installMethod = installRoutes.join(', ');
 
   // A paid edition counts when a quoted source shows it; hosting plans and support are not editions.
   const paidEdition = [...(byField.get('paidEdition') ?? []), ...(byField.get('licenseModel') ?? [])].some(

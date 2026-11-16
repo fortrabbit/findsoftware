@@ -24,7 +24,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: mix escript.install github aerosol/wb
+installMethod: mix escript.install github aerosol/wb, docker build
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

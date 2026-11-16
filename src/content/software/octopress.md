@@ -26,7 +26,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: gem install
+installMethod: gem install, Bundler Gemfile entry
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

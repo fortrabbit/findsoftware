@@ -15,7 +15,7 @@ firstRelease: 2015
 language: css
 basedOn:
   - normalize-css
-installMethod: npm
+installMethod: npm, cdn, download
 licenseModel: open-source
 license: CC0-1.0
 currentMajor: "13"

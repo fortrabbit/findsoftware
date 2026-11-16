@@ -11,7 +11,7 @@ maintainer: Angelos Chalaris
 maintainerType: individual
 firstRelease: 2016
 language: css
-installMethod: npm
+installMethod: npm, cdn, yarn, bower
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

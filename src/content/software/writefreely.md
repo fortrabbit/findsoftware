@@ -24,7 +24,7 @@ databases:
 i18n: yes
 runsAs:
   - always-on
-installMethod: release binary download, then writefreely config start
+installMethod: release binary download, then writefreely config start, Arch User Repository package
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "0"

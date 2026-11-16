@@ -11,7 +11,7 @@ maintainer: Stephen Kamenar
 maintainerType: individual
 firstRelease: 2017
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

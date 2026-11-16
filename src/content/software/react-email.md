@@ -22,7 +22,7 @@ templating: jsx
 i18n: yes
 runsAs:
   - local
-installMethod: npm
+installMethod: npm, npm create
 licenseModel: open-source
 license: MIT
 currentMajor: "6"

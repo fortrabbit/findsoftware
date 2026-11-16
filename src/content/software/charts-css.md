@@ -14,7 +14,7 @@ maintainer: Rami Yushuvaev
 maintainerType: individual
 firstRelease: 2020
 language: css
-installMethod: npm
+installMethod: npm, cdn, github-release-zip, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -33,7 +33,7 @@ templating: jinja2
 i18n: yes
 runsAs:
   - always-on
-installMethod: uv tool install frappe-bench, then bench init
+installMethod: uv tool install frappe-bench, then bench init, Docker, docker compose with frappe_docker
 licenseModel: open-source
 license: MIT
 currentMajor: "16"

@@ -18,7 +18,7 @@ hosting:
   - node
 basedOn:
   - redux
-installMethod: npm
+installMethod: npm, script tag
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

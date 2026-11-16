@@ -19,7 +19,7 @@ hosting:
   - node
   - deno
 runtimeMin: node 20
-installMethod: npm
+installMethod: npm, jsr
 licenseModel: open-source
 license: MIT
 currentMajor: "6"

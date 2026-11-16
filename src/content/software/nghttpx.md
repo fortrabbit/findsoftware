@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: build from source
+installMethod: build from source, release tar archive
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

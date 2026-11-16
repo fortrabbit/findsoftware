@@ -19,7 +19,7 @@ basedOn:
   - tailwindcss
   - react-aria
 i18n: rtl
-installMethod: cli
+installMethod: cli, copy-paste
 licenseModel: open-core
 license: MIT
 currentMajor: "0"

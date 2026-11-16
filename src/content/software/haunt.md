@@ -21,7 +21,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: guix
+installMethod: guix, build from source
 licenseModel: open-source
 license: GPL-3.0-or-later
 currentMajor: "0"

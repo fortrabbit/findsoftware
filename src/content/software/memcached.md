@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: apt package
+installMethod: apt package, yum package, homebrew, build from source
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "1"

@@ -15,7 +15,7 @@ maintainerType: individual
 language: javascript
 runsAs:
   - browser
-installMethod: npm install embla-carousel
+installMethod: npm install embla-carousel, CDN script (see CDN page)
 licenseModel: open-source
 license: MIT
 currentMajor: "8"

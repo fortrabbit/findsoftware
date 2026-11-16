@@ -21,7 +21,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: docker image ghcr.io/importantimport/hatsu
+installMethod: docker image ghcr.io/importantimport/hatsu, binary download from GitHub Releases
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "0"

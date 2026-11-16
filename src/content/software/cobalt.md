@@ -24,7 +24,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: binary download
+installMethod: binary download, cargo install, homebrew
 licenseModel: open-source
 license: Apache-2.0, MIT
 currentMajor: "0"

@@ -34,7 +34,7 @@ i18n: yes
 runsAs:
   - always-on
   - local
-installMethod: precompiled binaries from GitHub releases
+installMethod: precompiled binaries from GitHub releases, vc-build CLI (dotnet tool install -g VirtoCommerce.GlobalTool)
 licenseModel: source-available
 license: Virto Commerce Open Software License, Virto Commerce Open Source License Version 3.0 (VCOSL)
 currentMajor: "3"

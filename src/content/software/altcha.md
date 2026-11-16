@@ -27,7 +27,7 @@ i18n: 50+ languages
 runsAs:
   - browser
   - always-on
-installMethod: npm
+installMethod: npm, cdn, docker-image, docker-compose, kubernetes-helm, aws-ecs, azure-app-service, bunny-net
 licenseModel: open-core
 license: MIT, ALTCHA Sentinel End-User License Agreement
 currentMajor: "3"

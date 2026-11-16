@@ -20,7 +20,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: apt package, Debian and Ubuntu
+installMethod: apt package, Debian and Ubuntu, Homebrew, docker, fanout/pushpin image, build from source
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

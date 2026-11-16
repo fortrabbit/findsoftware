@@ -22,7 +22,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: precompiled binary from the releases page
+installMethod: precompiled binary from the releases page, Docker image glauth/glauth, Helm chart glauth/glauth
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

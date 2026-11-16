@@ -23,7 +23,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: git clone, then pip3 install -r requirements.txt
+installMethod: git clone, then pip3 install -r requirements.txt, Docker image built from the repository's Dockerfile
 licenseModel: open-source
 license: MIT
 githubStargazers: 127

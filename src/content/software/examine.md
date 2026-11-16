@@ -18,7 +18,7 @@ runtime:
 hosting:
   - dotnet
 runtimeMin: dotnet 8.0
-installMethod: NuGet package via Install-Package
+installMethod: NuGet package via Install-Package, NuGet package via dotnet add package
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

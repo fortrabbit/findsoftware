@@ -16,7 +16,7 @@ runtime:
 hosting:
   - php
 runtimeMin: php 7.4
-installMethod: composer require shardj/zf1-future
+installMethod: composer require shardj/zf1-future, git clone
 licenseModel: open-source
 license: BSD-3-Clause, Zend Framework license
 currentMajor: "1"

@@ -30,7 +30,7 @@ runsAs:
   - per-request
 renderingModes:
   - server
-installMethod: composer create-project yiisoft/yii2-app-basic, composer create-project yiisoft/yii2-app-advanced
+installMethod: composer create-project yiisoft/yii2-app-basic, composer create-project yiisoft/yii2-app-advanced, composer create-project yiisoft/app, docker
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "2"

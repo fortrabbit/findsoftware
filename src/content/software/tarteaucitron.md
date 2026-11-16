@@ -15,7 +15,7 @@ maintainerType: individual
 firstRelease: 2018
 hqCountry: FR
 language: javascript
-installMethod: download from GitHub, placed in the site's root folder
+installMethod: download from GitHub, placed in the site's root folder, download from npm, placed in the site's root folder
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -16,7 +16,7 @@ firstRelease: 2019
 language: javascript
 runsAs:
   - browser
-installMethod: npm install motion
+installMethod: npm install motion, script tag from cdn.jsdelivr.net
 licenseModel: open-source
 license: MIT
 currentMajor: "14"

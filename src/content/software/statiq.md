@@ -25,7 +25,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: dotnet add package Statiq.Web
+installMethod: dotnet add package Statiq.Web, dotnet add package Statiq.App
 licenseModel: open-core
 license: MIT, Statiq Public License 1.0.0
 githubStargazers: 1686

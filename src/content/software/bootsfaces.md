@@ -24,7 +24,7 @@ basedOn:
   - jakarta-faces
 runsAs:
   - always-on
-installMethod: maven
+installMethod: maven, gradle
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

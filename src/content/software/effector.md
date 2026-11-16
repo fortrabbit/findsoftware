@@ -20,7 +20,7 @@ hosting:
   - node
   - deno
 runtimeMin: node 11
-installMethod: npm
+installMethod: npm, CDN
 licenseModel: open-source
 license: MIT
 currentMajor: "23"

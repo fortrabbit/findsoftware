@@ -26,7 +26,7 @@ adminUi: true
 i18n: translation files (zipped)
 runsAs:
   - local
-installMethod: Windows x64 installer
+installMethod: Windows x64 installer, Windows x64 portable archive, winget, Chocolatey, Flatpak, Debian package, RPM package, macOS app bundle
 licenseModel: open-source
 license: GPL-2.0
 currentMajor: "12"

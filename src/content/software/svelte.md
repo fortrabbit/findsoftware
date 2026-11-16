@@ -19,7 +19,7 @@ runtimeMin: node 18
 renderingModes:
   - static
   - spa
-installMethod: npx sv create (SvelteKit, the recommended application framework)
+installMethod: npx sv create (SvelteKit, the recommended application framework), npm create vite with the svelte option (standalone Vite plugin)
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

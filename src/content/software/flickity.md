@@ -14,7 +14,7 @@ maintainer: Metafizzy LLC
 maintainerType: company
 firstRelease: 2015
 language: javascript
-installMethod: download
+installMethod: download, cdn, npm, bower
 licenseModel: open-core
 license: GPL-3.0, commercial license
 currentMajor: "3"

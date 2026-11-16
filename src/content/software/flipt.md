@@ -21,7 +21,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, binary-download, helm, homebrew
 licenseModel: open-core
 license: FCL-1.0-MIT, MIT
 currentMajor: "2"

@@ -18,7 +18,7 @@ runtime:
 runtimeMin: node 22
 runsAs:
   - local
-installMethod: npm install --save-dev @babel/core @babel/cli @babel/preset-env
+installMethod: npm install --save-dev @babel/core @babel/cli @babel/preset-env, yarn add --dev @babel/core @babel/cli @babel/preset-env, pnpm add --save-dev @babel/core @babel/cli @babel/preset-env, bun add --dev @babel/core @babel/cli @babel/preset-env
 licenseModel: open-source
 license: MIT
 currentMajor: "8"

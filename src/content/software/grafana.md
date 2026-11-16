@@ -27,7 +27,7 @@ databases:
 i18n: UI language set by default_language
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, apt-repository, binary-download, homebrew, helm
 licenseModel: open-core
 license: AGPL-3.0, Apache-2.0 for exceptions listed in LICENSING.md
 currentMajor: "13"

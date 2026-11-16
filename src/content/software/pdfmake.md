@@ -20,7 +20,7 @@ hosting:
 runtimeMin: node 20
 basedOn:
   - pdfkit
-installMethod: npm
+installMethod: npm, script tag, composer
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

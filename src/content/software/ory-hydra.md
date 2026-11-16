@@ -23,7 +23,7 @@ databases:
   - mysql
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, kubernetes, source
 licenseModel: open-core
 license: Apache-2.0
 latestReleaseDate: 2026-03-20

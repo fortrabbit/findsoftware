@@ -21,7 +21,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: docker image
+installMethod: docker image, kubernetes helm chart, ansible, ubuntu package from packagecloud, rhel or centos package from packagecloud, build from source with go
 licenseModel: open-core
 license: MPL-2.0, commercial license (ee folder)
 currentMajor: "5"

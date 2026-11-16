@@ -22,7 +22,7 @@ databases:
   - mysql
   - sqlite
   - mariadb
-installMethod: cargo dependency
+installMethod: cargo dependency, cargo install diesel_cli, pre-built diesel_cli binaries, cargo binstall diesel_cli
 licenseModel: open-source
 license: MIT, Apache-2.0
 currentMajor: "2"

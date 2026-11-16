@@ -19,7 +19,7 @@ hosting:
 runtimeMin: ruby 2.0
 runsAs:
   - always-on
-installMethod: RubyGems (gem install)
+installMethod: RubyGems (gem install), build from source
 licenseModel: open-source
 license: GPL-2.0-or-later, Ruby (1.8)-specific terms
 currentMajor: "6"

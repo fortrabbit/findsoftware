@@ -22,7 +22,7 @@ runsAs:
   - always-on
 renderingModes:
   - static
-installMethod: pip
+installMethod: pip, conda
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "3"

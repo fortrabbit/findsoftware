@@ -12,7 +12,7 @@ status: discontinued
 maintainer: Keenan Payne, Jaime Hernández
 firstRelease: 2014
 language: css
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT, Creative Commons BY-SA 4.0 (documentation)
 currentMajor: "4"

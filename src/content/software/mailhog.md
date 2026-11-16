@@ -22,7 +22,7 @@ adminUi: true
 runsAs:
   - local
   - always-on
-installMethod: homebrew
+installMethod: homebrew, go-install, freebsd-pkg, docker, binary-download
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

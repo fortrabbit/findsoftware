@@ -14,7 +14,7 @@ maintainer: Asial Corporation
 maintainerType: company
 firstRelease: 2013
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

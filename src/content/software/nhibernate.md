@@ -23,7 +23,7 @@ databases:
   - oracle
   - postgres
   - sqlite
-installMethod: nuget
+installMethod: nuget, binary download
 licenseModel: open-source
 license: LGPL-2.1
 currentMajor: "5"

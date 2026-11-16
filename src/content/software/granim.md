@@ -13,7 +13,7 @@ maintainer: Benjamin Blonde
 maintainerType: individual
 firstRelease: 2016
 language: javascript
-installMethod: npm
+installMethod: npm, Bower, download from the GitHub releases page
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

@@ -14,7 +14,7 @@ language: javascript
 runtime:
   - node
 runtimeMin: node 22
-installMethod: npm
+installMethod: npm, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "8"

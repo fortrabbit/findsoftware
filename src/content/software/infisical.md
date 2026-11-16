@@ -18,7 +18,7 @@ language: javascript
 databases:
   - postgres
 adminUi: true
-installMethod: docker
+installMethod: docker, docker-compose, helm-chart, linux-package, ecs-fargate, gke
 licenseModel: open-core
 license: MIT, Infisical license for the ee directories
 currentMajor: "0"

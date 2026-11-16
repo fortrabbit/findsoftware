@@ -12,7 +12,7 @@ maintainer: Francisco Presencia
 maintainerType: individual
 firstRelease: 2015
 language: css
-installMethod: npm
+installMethod: npm, bower, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

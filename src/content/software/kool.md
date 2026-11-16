@@ -19,7 +19,7 @@ runtime:
   - binary
 runsAs:
   - local
-installMethod: install script (curl piped to bash)
+installMethod: install script (curl piped to bash), Docker image kooldev/kool for CI pipelines
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

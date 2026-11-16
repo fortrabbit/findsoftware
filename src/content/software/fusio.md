@@ -28,7 +28,7 @@ headlessApi:
   - rest
 runsAs:
   - per-request
-installMethod: docker compose
+installMethod: docker compose, composer create-project, zip download, git clone
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "7"

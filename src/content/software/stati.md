@@ -19,7 +19,7 @@ hosting:
   - php
 runtimeMin: php 7.1
 templating: liquid
-installMethod: composer global require
+installMethod: composer global require, binary download
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

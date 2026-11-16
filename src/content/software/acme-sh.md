@@ -15,7 +15,7 @@ firstRelease: 2016
 hqCountry: AT
 runsAs:
   - scheduled
-installMethod: shell script fetched with curl
+installMethod: shell script fetched with curl, git clone and --install, docker image from ghcr.io
 licenseModel: open-source
 license: GPL-3.0
 currentMajor: "3"

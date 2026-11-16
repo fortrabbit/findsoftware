@@ -15,7 +15,7 @@ hqCountry: CA
 language: javascript
 basedOn:
   - react
-installMethod: npm
+installMethod: npm, yarn
 licenseModel: source-available
 license: custom license based on MIT, not an SPDX identifier, Polaris Design Guidelines License Agreement
 currentMajor: "13"

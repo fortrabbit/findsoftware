@@ -12,7 +12,7 @@ maintainer: Denis Lukov
 maintainerType: individual
 firstRelease: 2015
 language: javascript
-installMethod: CDN (jsDelivr, cdnjs)
+installMethod: CDN (jsDelivr, cdnjs), GitHub download
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -18,7 +18,7 @@ runtime:
 runtimeMin: node 22
 runsAs:
   - local
-installMethod: npm
+installMethod: npm, pnpm, yarn, bun
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

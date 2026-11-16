@@ -18,7 +18,7 @@ basedOn:
   - lit
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

@@ -22,7 +22,7 @@ hosting:
 databases:
   - mongodb
 adminUi: true
-installMethod: docker compose with heyform/community-edition image
+installMethod: docker compose with heyform/community-edition image, one-click templates on Zeabur, Sealos, RepoCloud, Alibaba Cloud and ZopDay
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "3"

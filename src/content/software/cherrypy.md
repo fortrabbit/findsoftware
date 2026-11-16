@@ -20,7 +20,7 @@ hosting:
 runtimeMin: python 3.9
 runsAs:
   - always-on
-installMethod: pip install cherrypy
+installMethod: pip install cherrypy, source checkout (git clone, python setup.py install)
 licenseModel: open-source
 license: BSD-3-Clause, BSD
 currentMajor: "18"

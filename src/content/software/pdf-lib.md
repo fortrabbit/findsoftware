@@ -20,7 +20,7 @@ runtime:
 hosting:
   - node
   - deno
-installMethod: npm
+installMethod: npm, script tag, deno
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -16,7 +16,7 @@ runtime:
   - binary
 renderingModes:
   - static
-installMethod: git clone and make install of the Ignite command-line tool
+installMethod: git clone and make install of the Ignite command-line tool, Swift Package Manager dependency
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

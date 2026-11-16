@@ -16,7 +16,7 @@ language: javascript
 basedOn:
   - stencil
 i18n: yes
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

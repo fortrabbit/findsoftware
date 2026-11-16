@@ -16,7 +16,7 @@ language: java
 templating: freemarker, groovy, thymeleaf, jade, pebble
 renderingModes:
   - static
-installMethod: binary distribution
+installMethod: binary distribution, SDKMAN, sdk install jbake, Homebrew, brew install jbake, official Docker image jbake/jbake
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

@@ -27,7 +27,7 @@ headlessApi:
 runsAs:
   - always-on
   - local
-installMethod: Homebrew (apito-cli)
+installMethod: Homebrew (apito-cli), install script, Docker Compose file written by apito init
 licenseModel: open-core
 license: AGPL-3.0, commercial license available
 currentMajor: "1"

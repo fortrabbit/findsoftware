@@ -16,7 +16,7 @@ firstRelease: 2021
 hqCountry: US
 runsAs:
   - local
-installMethod: curl install script
+installMethod: curl install script, composer require serversideup/spin --dev, npm install @serversideup/spin --dev
 licenseModel: open-source
 license: GPL-3.0
 currentMajor: "3"

@@ -33,7 +33,7 @@ headlessApi:
   - graphql
 templating: razor, liquid, liquid
 i18n: yes, content in many languages
-installMethod: dotnet new template (OrchardCore.ProjectTemplates)
+installMethod: dotnet new template (OrchardCore.ProjectTemplates), Orchard Core NuGet packages added to an ASP.NET Core app, Docker image built from the repository Dockerfile
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "3"

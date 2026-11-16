@@ -20,7 +20,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: source build
+installMethod: source build, distribution packages, windows builds from third-party vendors
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

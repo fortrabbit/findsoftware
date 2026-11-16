@@ -13,7 +13,7 @@ maintainer: Nedim Arabacı
 maintainerType: individual
 firstRelease: 2012
 language: javascript
-installMethod: npm
+installMethod: npm, yarn, composer, bower, include lib files
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

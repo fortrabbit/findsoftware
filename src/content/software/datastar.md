@@ -17,7 +17,7 @@ hqCountry: US
 language: javascript
 runsAs:
   - browser
-installMethod: cdn
+installMethod: cdn, download
 licenseModel: open-core
 license: MIT, commercial
 currentMajor: "1"

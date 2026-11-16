@@ -17,7 +17,7 @@ runtime:
   - binary
 runsAs:
   - local
-installMethod: install script from mise.run
+installMethod: install script from mise.run, Homebrew, Docker image jdxcode/mise on Docker Hub, build from source with Cargo, npm package mise, which distributes the precompiled binary, apt repository via extrepo, or the Ubuntu PPA, dnf from the jdxcode/mise COPR, pacman on Arch Linux, apk on Alpine Linux, nixpkgs, Snap, winget on Windows, PowerShell install script, Scoop on Windows, Chocolatey on Windows, MacPorts, zypper with the mise RPM repository
 licenseModel: open-source
 license: MIT
 latestReleaseDate: 2026-10-30

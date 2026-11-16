@@ -23,7 +23,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: binary-download
+installMethod: binary-download, docker, kubernetes
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

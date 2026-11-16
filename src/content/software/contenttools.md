@@ -13,7 +13,7 @@ maintainer: Getme Limited
 maintainerType: company
 firstRelease: 2016
 language: javascript
-installMethod: manual download
+installMethod: manual download, CDN
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

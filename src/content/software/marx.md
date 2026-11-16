@@ -13,7 +13,7 @@ maintainer: Matthew Blode
 maintainerType: individual
 firstRelease: 2015
 language: css
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

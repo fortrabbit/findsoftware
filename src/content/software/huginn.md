@@ -22,7 +22,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, docker-compose, heroku, yunohost, unraid, source-build
 licenseModel: open-source
 license: MIT
 latestReleaseDate: 2026-11-02

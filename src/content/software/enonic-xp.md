@@ -27,7 +27,7 @@ headlessApi:
 i18n: yes
 runsAs:
   - always-on
-installMethod: binary download
+installMethod: binary download, docker image
 licenseModel: open-core
 license: GPL-3.0
 currentMajor: "8"

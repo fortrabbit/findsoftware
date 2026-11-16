@@ -16,7 +16,7 @@ runtime:
   - node
 runsAs:
   - local
-installMethod: github-release-zip
+installMethod: github-release-zip, git-clone
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

@@ -13,7 +13,7 @@ maintainer: Gregory Petrosyan
 firstRelease: 2015
 language: javascript
 i18n: yes
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

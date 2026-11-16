@@ -20,7 +20,7 @@ runsAs:
   - browser
 renderingModes:
   - spa
-installMethod: installer
+installMethod: installer, binary-download
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "0"

@@ -12,7 +12,7 @@ maintainer: Andy Bell
 maintainerType: individual
 firstRelease: 2019
 language: css
-installMethod: npm
+installMethod: npm, cdn, git-clone
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

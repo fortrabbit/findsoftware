@@ -14,7 +14,7 @@ maintainer: MediaElement
 firstRelease: 2010
 language: javascript
 i18n: yes
-installMethod: npm install mediaelement
+installMethod: npm install mediaelement, CDN (jsDelivr, cdnjs), download from GitHub, git clone https://github.com/mediaelement/mediaelement.git, bower install mediaelement
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

@@ -12,7 +12,7 @@ maintainer: Jenil Gogari
 maintainerType: individual
 firstRelease: 2017
 language: css
-installMethod: npm
+installMethod: npm, cdn, github-release-zip, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

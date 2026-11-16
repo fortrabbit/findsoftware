@@ -15,7 +15,7 @@ maintainer: Kailash Nadh
 maintainerType: individual
 firstRelease: 2026
 language: css
-installMethod: cdn
+installMethod: cdn, npm, download
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

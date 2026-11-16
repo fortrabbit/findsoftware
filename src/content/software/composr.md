@@ -17,7 +17,7 @@ hosting:
   - php
 runsAs:
   - per-request
-installMethod: manual upload of an installation package
+installMethod: manual upload of an installation package, git clone (developers only)
 licenseModel: open-source
 license: CPAL-1.0
 currentMajor: "10"

@@ -24,7 +24,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: binary download from GitHub releases
+installMethod: binary download from GitHub releases, install script (curl) to /usr/local/bin, docker image chrislusf/seaweedfs, Docker Compose, Helm chart for Kubernetes, build from source with make install
 licenseModel: open-core
 license: Apache-2.0, SeaweedFS Enterprise Edition End User License Agreement
 currentMajor: "4"

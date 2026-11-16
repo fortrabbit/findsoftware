@@ -14,7 +14,7 @@ firstRelease: 2019
 language: javascript
 runsAs:
   - local
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

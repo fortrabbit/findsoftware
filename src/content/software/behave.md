@@ -16,7 +16,7 @@ runtime:
   - python
 runtimeMin: python 2.7
 i18n: yes
-installMethod: pip install behave
+installMethod: pip install behave, pip install git+https://github.com/behave/behave, pip install .
 licenseModel: open-source
 license: BSD-2-Clause
 currentMajor: "1"

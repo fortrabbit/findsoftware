@@ -20,7 +20,7 @@ basedOn:
   - leaflet
 renderingModes:
   - static
-installMethod: pip
+installMethod: pip, conda
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

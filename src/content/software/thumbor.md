@@ -19,7 +19,7 @@ hosting:
 runtimeMin: python 3.10
 runsAs:
   - always-on
-installMethod: pip install thumbor
+installMethod: pip install thumbor, apt install thumbor (Debian and Ubuntu packages), docker run with the official image on GitHub Container Registry
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

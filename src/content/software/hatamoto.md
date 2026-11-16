@@ -32,7 +32,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: docker compose
+installMethod: docker compose, binary download
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

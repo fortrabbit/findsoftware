@@ -23,7 +23,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: sbt plugin
+installMethod: sbt plugin, mill plugin, scala-cli with hepek-cli
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

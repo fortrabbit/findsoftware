@@ -13,7 +13,7 @@ maintainer: Kyle Logue
 maintainerType: individual
 firstRelease: 2018
 language: css
-installMethod: npm
+installMethod: npm, cdn, download
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -17,7 +17,7 @@ hosting:
 runtimeMin: jvm 21
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, zip download with OpenJDK
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "26"

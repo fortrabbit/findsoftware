@@ -27,7 +27,7 @@ templating: Freemarker
 i18n: localization and translation of interface text
 runsAs:
   - always-on
-installMethod: docker compose with fusionauth/fusionauth-app, PostgreSQL and OpenSearch
+installMethod: docker compose with fusionauth/fusionauth-app, PostgreSQL and OpenSearch, package (rpm, deb, macOS, Windows, Homebrew) of fusionauth-app, Kubernetes with provider guides (EKS, GKE, AKS) and a deployment guide
 licenseModel: commercial
 license: FusionAuth Customer License Agreement
 currentMajor: "1"

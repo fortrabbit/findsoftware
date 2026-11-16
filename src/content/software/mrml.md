@@ -15,7 +15,7 @@ runtime:
   - binary
 hosting:
   - binary
-installMethod: cargo (Cargo.toml dependency)
+installMethod: cargo (Cargo.toml dependency), pip (PyPI package mrml), cargo install (mrml-cli command-line tool)
 licenseModel: open-source
 license: MIT
 currentMajor: "6"

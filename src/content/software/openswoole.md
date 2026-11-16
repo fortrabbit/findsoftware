@@ -22,7 +22,7 @@ hosting:
 runtimeMin: php 8.3
 runsAs:
   - always-on
-installMethod: pie
+installMethod: pie, pecl, docker-image, ubuntu-ppa, rpm-repository, source
 licenseModel: open-source
 license: Apache-2.0
 latestReleaseDate: 2026-02-28

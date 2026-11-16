@@ -19,7 +19,7 @@ hosting:
   - node
 databases:
   - mongodb
-installMethod: npm, yarn or pnpm
+installMethod: npm, yarn or pnpm, CDN (esm.sh)
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

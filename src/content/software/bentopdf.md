@@ -20,7 +20,7 @@ i18n: interface available in multiple languages
 runsAs:
   - browser
   - static
-installMethod: docker
+installMethod: docker, docker-compose, source-build, helm
 licenseModel: open-core
 license: AGPL-3.0, Commercial License
 currentMajor: "2"

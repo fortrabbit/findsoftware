@@ -23,7 +23,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: download the release archive and add its bin folder to PATH
+installMethod: download the release archive and add its bin folder to PATH, build from source with Gradle
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

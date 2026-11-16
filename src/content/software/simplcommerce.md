@@ -26,7 +26,7 @@ databases:
   - sqlite
 adminUi: true
 i18n: yes
-installMethod: build from source with Visual Studio or the .NET SDK
+installMethod: build from source with Visual Studio or the .NET SDK, Docker image (testing only)
 licenseModel: open-source
 license: Apache-2.0, Apache 2.0
 githubStargazers: 4414

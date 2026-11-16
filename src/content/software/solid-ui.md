@@ -18,7 +18,7 @@ basedOn:
   - kobalte
   - corvu
   - tailwindcss
-installMethod: cli
+installMethod: cli, manual
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

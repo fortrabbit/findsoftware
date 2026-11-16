@@ -9,14 +9,14 @@ urls:
 category:
   - graphics
 description: JavaScript library for interactive vector tile maps in the browser, distributed under the Mapbox terms.
-status: stub
+status: active
 maintainer: Mapbox, Inc.
 maintainerType: company
 firstRelease: 2014
 language: javascript
 runsAs:
   - browser
-installMethod: cdn
+installMethod: cdn, npm
 license: Mapbox Web SDK license, the Mapbox Terms of Service, for use only with the relevant Mapbox products through a Mapbox account
 currentMajor: "3"
 latestReleaseDate: 2026-11-13

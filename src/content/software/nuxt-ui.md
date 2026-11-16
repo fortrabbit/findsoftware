@@ -17,7 +17,7 @@ basedOn:
   - vue
   - nuxt
 i18n: yes
-installMethod: pnpm
+installMethod: pnpm, yarn, npm, bun
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

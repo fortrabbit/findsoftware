@@ -12,7 +12,7 @@ maintainer: Indrashish Ghosh
 maintainerType: individual
 firstRelease: 2017
 language: javascript
-installMethod: npm
+installMethod: npm, cdn, download
 licenseModel: open-source
 license: MIT, ISC
 currentMajor: "0"

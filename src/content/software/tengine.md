@@ -21,7 +21,7 @@ basedOn:
   - nginx
 runsAs:
   - always-on
-installMethod: source build (./configure, make, make install)
+installMethod: source build (./configure, make, make install), distribution packages (.rpm, .deb, .apk) on each release, container image ghcr.io/alibaba/tengine
 licenseModel: open-source
 license: BSD-2-Clause
 currentMajor: "3"

@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: system package manager
+installMethod: system package manager, docker image, source build
 licenseModel: open-source
 license: LGPL-3.0-only, BSD-3-Clause
 currentMajor: "7"

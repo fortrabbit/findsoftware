@@ -23,7 +23,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: CPAN (App::Templer)
+installMethod: CPAN (App::Templer), build from a git clone (perl Makefile.PL, make install), Debian packages from the author's repository
 licenseModel: open-source
 license: GPL-2.0-or-later, Artistic-1.0-Perl
 currentMajor: "1"

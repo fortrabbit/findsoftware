@@ -23,7 +23,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: maven project, built to a jar
+installMethod: maven project, built to a jar, maven archetype
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "5"

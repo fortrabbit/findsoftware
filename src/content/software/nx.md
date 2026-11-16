@@ -16,7 +16,7 @@ firstRelease: 2018
 language: javascript
 runsAs:
   - local
-installMethod: npm
+installMethod: npm, Homebrew, Chocolatey, apt, create-nx-workspace
 licenseModel: open-source
 license: MIT
 currentMajor: "24"

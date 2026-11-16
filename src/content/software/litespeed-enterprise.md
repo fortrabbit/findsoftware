@@ -19,7 +19,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: install script run as root with a serial number
+installMethod: install script run as root with a serial number, manual tarball install from SSH as root (failsafe), pre-configured option in cPanel, Plesk or DirectAdmin, LiteSpeed Web Server Docker image
 licenseModel: commercial
 currentMajor: "6"
 latestReleaseDate: 2026-09-23

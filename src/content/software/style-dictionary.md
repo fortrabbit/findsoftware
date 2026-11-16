@@ -17,7 +17,7 @@ runtime:
 runtimeMin: node 22
 runsAs:
   - local
-installMethod: npm install -D style-dictionary
+installMethod: npm install -D style-dictionary, yarn add style-dictionary --dev
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "5"

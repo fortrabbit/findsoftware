@@ -15,7 +15,7 @@ language: ruby
 runtime:
   - ruby
 runtimeMin: ruby 3.3
-installMethod: rubygems
+installMethod: rubygems, bundler
 licenseModel: open-source
 license: MIT
 currentMajor: "12"

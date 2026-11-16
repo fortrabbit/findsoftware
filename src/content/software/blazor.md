@@ -28,7 +28,7 @@ renderingModes:
   - static
   - server
   - spa
-installMethod: dotnet-cli
+installMethod: dotnet-cli, visual-studio
 licenseModel: open-source
 license: MIT
 currentMajor: "10"

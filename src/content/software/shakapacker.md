@@ -22,7 +22,7 @@ basedOn:
   - rails
 runsAs:
   - local
-installMethod: bundle add shakapacker --strict
+installMethod: bundle add shakapacker --strict, npm install --save-dev shakapacker-rspack
 licenseModel: open-source
 license: MIT
 currentMajor: "10"

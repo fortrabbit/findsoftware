@@ -26,7 +26,7 @@ headlessApi:
 i18n: yes, translatable content languages
 runsAs:
   - always-on
-installMethod: Maven archetype project
+installMethod: Maven archetype project, build from source (Maven monorepo) for the open source releases
 licenseModel: open-source
 license: Apache-2.0, GPL-3.0 (bundled Sencha ExtJS, with Open Source License Exception for Applications)
 currentMajor: "16"

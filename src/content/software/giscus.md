@@ -12,7 +12,7 @@ status: active
 maintainer: Sage M. Abdullah
 language: javascript
 i18n: multiple languages
-installMethod: script-tag
+installMethod: script-tag, self-hosted-app
 licenseModel: open-source
 license: MIT
 githubStargazers: 12205

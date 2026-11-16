@@ -17,7 +17,7 @@ language: css
 basedOn:
   - bootstrap
 i18n: right-to-left stylesheets
-installMethod: cdn
+installMethod: cdn, npm, github-release-zip
 licenseModel: open-core
 license: MIT, Community license for organizations under $2M in annual revenue, paid license above that (ApexCharts, bundled in dist/libs)
 currentMajor: "1"

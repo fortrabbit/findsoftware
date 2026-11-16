@@ -18,7 +18,7 @@ runtimeMin: node 16
 runsAs:
   - local
   - browser
-installMethod: npm install -g svgo
+installMethod: npm install -g svgo, yarn global add svgo, pnpm add -g svgo, CDN (unpkg or jsDelivr) for the browser bundle, download svgo.browser.js from GitHub Releases
 licenseModel: open-source
 license: MIT, CC-BY-4.0
 currentMajor: "4"

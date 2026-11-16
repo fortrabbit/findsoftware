@@ -18,7 +18,7 @@ basedOn:
   - rails
 runsAs:
   - local
-installMethod: bin/bundle add jsbundling-rails, then bin/rails javascript:install
+installMethod: bin/bundle add jsbundling-rails, then bin/rails javascript:install, rails new with -j bun, esbuild, rollup or webpack
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

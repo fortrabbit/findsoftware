@@ -14,7 +14,7 @@ firstRelease: 2022
 language: rust
 runsAs:
   - local
-installMethod: nix profile install nixpkgs#devenv
+installMethod: nix profile install nixpkgs#devenv, nix-env --install --attr devenv from the nixpkgs-unstable tarball
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

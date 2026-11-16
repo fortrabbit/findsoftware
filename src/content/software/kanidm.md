@@ -21,7 +21,7 @@ contentStore:
   - database
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, cargo, system packages, homebrew, aur
 licenseModel: open-source
 license: MPL-2.0
 currentMajor: "1"

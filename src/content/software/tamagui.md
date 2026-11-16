@@ -15,7 +15,7 @@ firstRelease: 2021
 language: javascript
 basedOn:
   - react
-installMethod: npm create
+installMethod: npm create, npm package
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

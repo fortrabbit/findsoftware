@@ -36,7 +36,7 @@ i18n: yes, content localization
 renderingModes:
   - server
   - spa
-installMethod: dotnet new template (Oqtane.Application.Template)
+installMethod: dotnet new template (Oqtane.Application.Template), clone of the source code, Install.zip from GitHub releases
 licenseModel: open-source
 license: MIT
 currentMajor: "10"

@@ -23,7 +23,7 @@ databases:
   - sqlite
 runsAs:
   - always-on
-installMethod: npm
+installMethod: npm, docker
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

@@ -14,7 +14,7 @@ maintainer: Chart.js Contributors
 maintainerType: community
 firstRelease: 2014
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

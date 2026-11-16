@@ -20,7 +20,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: Percona APT, DNF and YUM repositories
+installMethod: Percona APT, DNF and YUM repositories, binary tarball, docker image
 licenseModel: open-source
 license: GPL-2.0
 currentMajor: "9"

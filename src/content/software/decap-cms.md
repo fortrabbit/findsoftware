@@ -19,7 +19,7 @@ i18n: yes
 runsAs:
   - static
   - browser
-installMethod: CDN script tag
+installMethod: CDN script tag, npm install decap-cms-app
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

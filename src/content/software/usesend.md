@@ -18,7 +18,7 @@ databases:
 adminUi: true
 headlessApi:
   - rest
-installMethod: docker
+installMethod: docker, docker-compose, railway
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "1"

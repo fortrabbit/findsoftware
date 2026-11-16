@@ -13,7 +13,7 @@ maintainer: Michał Sajnóg
 maintainerType: individual
 firstRelease: 2015
 language: javascript
-installMethod: npm
+installMethod: npm, cdn, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

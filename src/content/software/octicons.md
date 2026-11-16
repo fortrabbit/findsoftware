@@ -13,7 +13,7 @@ maintainer: GitHub, Inc.
 maintainerType: company
 firstRelease: 2014
 language: javascript
-installMethod: npm
+installMethod: npm, gem
 licenseModel: open-source
 license: MIT
 currentMajor: "19"

@@ -16,7 +16,7 @@ firstRelease: 2013
 language: javascript
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, npm create, download
 licenseModel: open-source
 license: BSD-2-Clause, CC-BY-3.0
 currentMajor: "10"

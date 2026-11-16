@@ -20,7 +20,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: rubygem (Bundler)
+installMethod: rubygem (Bundler), APT and YUM packages, automated installer
 licenseModel: open-core
 license: MIT
 currentMajor: "6"

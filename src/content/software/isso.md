@@ -25,7 +25,7 @@ headlessApi:
 i18n: yes, the client UI renders in the language set or the browser's preferred language
 runsAs:
   - always-on
-installMethod: pip install isso
+installMethod: pip install isso, official Docker image ghcr.io/isso-comments/isso:release, install from source
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

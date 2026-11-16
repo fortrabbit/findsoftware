@@ -20,7 +20,7 @@ hosting:
 adminUi: false
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, binary-download, kubernetes, openfeature-operator
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

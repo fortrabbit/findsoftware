@@ -14,7 +14,7 @@ firstRelease: 2016
 language: css
 basedOn:
   - vue
-installMethod: npm, yarn
+installMethod: npm, yarn, Balm CLI project template
 licenseModel: open-source
 license: MIT
 currentMajor: "10"

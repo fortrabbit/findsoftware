@@ -13,7 +13,7 @@ maintainer: Solo.io, Inc.
 maintainerType: company
 firstRelease: 2018
 language: go
-installMethod: install in a Kubernetes cluster
+installMethod: install in a Kubernetes cluster, glooctl CLI
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

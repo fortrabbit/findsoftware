@@ -25,7 +25,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: npm
+installMethod: npm, pnpm, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

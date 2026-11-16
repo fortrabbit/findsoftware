@@ -14,7 +14,7 @@ firstRelease: 2026
 language: javascript
 adminUi: true
 i18n: yes, a multilingual dashboard
-installMethod: Cloudflare Deploy button
+installMethod: Cloudflare Deploy button, manual deployment, importing the repository from the Worker page
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

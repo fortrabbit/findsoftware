@@ -18,7 +18,7 @@ language: javascript
 i18n: charts in any language through lang options, plus right-to-left text
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, cdn, zip download
 licenseModel: source-available
 license: Commercial, proprietary
 currentMajor: "13"

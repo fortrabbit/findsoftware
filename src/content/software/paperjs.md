@@ -15,7 +15,7 @@ language: javascript
 runtime:
   - node
 runtimeMin: node 8
-installMethod: npm
+installMethod: npm, download
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

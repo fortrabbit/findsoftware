@@ -12,7 +12,7 @@ status: active
 maintainer: Juan Martín Muda
 firstRelease: 2024
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

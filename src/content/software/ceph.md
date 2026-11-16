@@ -20,7 +20,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: cephadm
+installMethod: cephadm, rook, ceph-ansible
 licenseModel: open-source
 license: LGPL-2.1 OR LGPL-3.0, CC-BY-SA-3.0
 currentMajor: "21"

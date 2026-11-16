@@ -12,7 +12,7 @@ maintainerType: individual
 firstRelease: 2018
 language: javascript
 i18n: yes
-installMethod: npm
+installMethod: npm, CDN script tag (unpkg), CDN script tag (jsDelivr)
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

@@ -17,7 +17,7 @@ runtime:
 runtimeMin: php 8.3
 runsAs:
   - local
-installMethod: composer global require deployer/deployer
+installMethod: composer global require deployer/deployer, composer require --dev deployer/deployer, deployer.phar download, run with php deployer.phar
 licenseModel: open-source
 license: MIT
 currentMajor: "8"

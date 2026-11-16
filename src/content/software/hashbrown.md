@@ -22,7 +22,7 @@ databases:
 i18n: yes, locales set per project
 runsAs:
   - always-on
-installMethod: git clone and npm install
+installMethod: git clone and npm install, docker image
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

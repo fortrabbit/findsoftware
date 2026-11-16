@@ -12,7 +12,7 @@ status: active
 maintainer: Bodymovin
 firstRelease: 2015
 language: javascript
-installMethod: npm
+installMethod: npm, bower, cdn, download
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

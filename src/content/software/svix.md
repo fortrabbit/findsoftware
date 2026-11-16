@@ -21,7 +21,7 @@ hosting:
   - binary
 databases:
   - postgres
-installMethod: docker
+installMethod: docker, pre-compiled binary, cargo build from source
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

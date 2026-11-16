@@ -20,7 +20,7 @@ hosting:
 runtimeMin: jvm 17
 runsAs:
   - always-on
-installMethod: Maven
+installMethod: Maven, docker, zip distribution
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "4"

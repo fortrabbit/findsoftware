@@ -14,7 +14,7 @@ maintainerType: individual
 firstRelease: 2012
 language: javascript
 i18n: translations in src/locale
-installMethod: ES6 modules
+installMethod: ES6 modules, download (zip), script tag (w2ui.js and w2ui.css)
 licenseModel: open-source
 license: MIT, CC BY 3.0
 currentMajor: "2"

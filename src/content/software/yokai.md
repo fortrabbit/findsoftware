@@ -26,7 +26,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: Application template from the GitHub template repository
+installMethod: Application template from the GitHub template repository, gonew application template, go get of a module
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

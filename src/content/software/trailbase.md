@@ -24,7 +24,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: binary download
+installMethod: binary download, install script, Docker image, build from source
 licenseModel: open-source
 license: OSL-3.0
 currentMajor: "0"

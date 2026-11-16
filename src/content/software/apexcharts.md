@@ -15,7 +15,7 @@ maintainerType: company
 parent: Infragistics, Inc.
 firstRelease: 2018
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 license: ApexCharts Community License, ApexCharts Commercial License
 currentMajor: "8"
 latestReleaseDate: 2026-10-31

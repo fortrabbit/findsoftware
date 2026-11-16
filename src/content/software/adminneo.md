@@ -29,7 +29,7 @@ databases:
 adminUi: true
 runsAs:
   - per-request
-installMethod: single PHP file download
+installMethod: single PHP file download, composer package adminneo-org/adminneo, docker image adminneoorg/adminneo
 licenseModel: open-source
 license: Apache-2.0 OR GPL-2.0-only
 currentMajor: "5"

@@ -27,7 +27,7 @@ databases:
   - sqlite
 adminUi: true
 i18n: partial support for multiple languages within a site; a site can be localized into one language
-installMethod: deployment zip for the chosen database, uploaded to the site root
+installMethod: deployment zip for the chosen database, uploaded to the site root, Web Platform Installer, manual installation on IIS
 licenseModel: open-source
 license: CPL-1.0, EPL-1.0, GPL (the mojoPortal Data Library for MySQL only)
 currentMajor: "3"

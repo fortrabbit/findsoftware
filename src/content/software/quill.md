@@ -13,7 +13,7 @@ maintainer: Slab
 firstRelease: 2012
 hqCountry: US
 language: javascript
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "2"

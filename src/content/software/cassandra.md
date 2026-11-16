@@ -20,7 +20,7 @@ hosting:
   - java
 runsAs:
   - always-on
-installMethod: docker image
+installMethod: docker image, binary tarball, RPM and YUM packages
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "5"

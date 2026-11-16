@@ -23,7 +23,7 @@ adminUi: true
 i18n: multi-language and multi-currency
 runsAs:
   - per-request
-installMethod: package download with web installer
+installMethod: package download with web installer, docker
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "2"

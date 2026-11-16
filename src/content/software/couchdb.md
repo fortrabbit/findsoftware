@@ -24,7 +24,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker (apache/couchdb)
+installMethod: docker (apache/couchdb), deb or rpm packages, Windows installer, Helm chart, source build
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "3"

@@ -24,7 +24,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: copy the script
+installMethod: copy the script, make install, tarball download
 licenseModel: open-source
 license: GPL-3.0-or-later
 currentMajor: "1"

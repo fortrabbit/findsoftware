@@ -15,7 +15,7 @@ maintainerType: individual
 firstRelease: 2016
 basedOn:
   - jekyll
-installMethod: GitHub fork with GitHub Pages, or the beautiful-jekyll-theme Ruby gem
+installMethod: GitHub fork with GitHub Pages, or the beautiful-jekyll-theme Ruby gem, Ruby gem beautiful-jekyll-theme
 licenseModel: open-source
 license: MIT
 currentMajor: "6"

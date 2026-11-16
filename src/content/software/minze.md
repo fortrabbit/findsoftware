@@ -13,7 +13,7 @@ maintainer: Sergej Samsonenko
 maintainerType: individual
 firstRelease: 2022
 language: javascript
-installMethod: npm
+installMethod: npm, cli, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

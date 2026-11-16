@@ -18,7 +18,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: make build (from a git clone)
+installMethod: make build (from a git clone), make docker-build
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

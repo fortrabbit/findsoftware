@@ -23,7 +23,7 @@ hosting:
 runtimeMin: node 22
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, docker-compose, kubernetes, digitalocean, portainer
 licenseModel: open-core
 license: GPL-3.0
 currentMajor: "3"

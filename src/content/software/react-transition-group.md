@@ -15,7 +15,7 @@ firstRelease: 2016
 language: javascript
 basedOn:
   - react
-installMethod: npm
+installMethod: npm, script tag
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "4"

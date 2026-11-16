@@ -11,7 +11,7 @@ status: stub
 maintainer: B.C.Rikko
 firstRelease: 2018
 language: css
-installMethod: npm
+installMethod: npm, cdn, yarn
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

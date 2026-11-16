@@ -22,7 +22,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: download a theme project and run ./grainw, with Grain loaded as a JAR dependency
+installMethod: download a theme project and run ./grainw, with Grain loaded as a JAR dependency, Gradle plugin
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

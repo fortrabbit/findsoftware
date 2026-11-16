@@ -12,7 +12,7 @@ maintainer: Alvaro Montoro
 maintainerType: individual
 firstRelease: 2020
 language: css
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: MIT, GPL-3.0-or-later
 currentMajor: "1"

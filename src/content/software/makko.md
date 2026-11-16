@@ -22,7 +22,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: binary download from the releases page
+installMethod: binary download from the releases page, build from source with the Zig compiler
 licenseModel: open-source
 license: Zlib
 currentMajor: "3"

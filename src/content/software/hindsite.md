@@ -24,7 +24,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: go install
+installMethod: go install, pre-compiled binary
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

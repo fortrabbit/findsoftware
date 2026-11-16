@@ -8,7 +8,7 @@ urls:
 category:
   - library
 description: JavaScript utility library of general-purpose functions for arrays, objects, promises and types, with a compatibility layer for Lodash.
-status: stub
+status: active
 maintainer: Viva Republica, Inc.
 maintainerType: company
 firstRelease: 2024
@@ -18,7 +18,7 @@ runtime:
 hosting:
   - node
 runtimeMin: node 18
-installMethod: npm
+installMethod: npm, JSR (deno add), CDN import
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

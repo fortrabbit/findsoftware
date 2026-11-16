@@ -25,7 +25,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, homebrew, helm chart, kubernetes manifests, release archives (tar.gz, deb, rpm, apk)
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "1"

@@ -17,7 +17,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: go get
+installMethod: go get, docker, Docker Compose, Fly.io deployment button, Cloud Foundry buildpack, Google Cloud Run deployment button
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

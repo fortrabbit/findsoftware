@@ -12,7 +12,7 @@ status: active
 maintainer: Materialize
 firstRelease: 2020
 language: javascript
-installMethod: npm
+installMethod: npm, cdn, github-release-zip
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

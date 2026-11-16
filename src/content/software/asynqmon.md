@@ -20,7 +20,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: release binary
+installMethod: release binary, docker, source build, go module import
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

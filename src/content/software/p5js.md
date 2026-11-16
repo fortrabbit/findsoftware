@@ -15,7 +15,7 @@ maintainerType: community
 firstRelease: 2014
 language: javascript
 i18n: yes
-installMethod: download
+installMethod: download, jsDelivr CDN
 licenseModel: open-source
 license: LGPL-2.1
 currentMajor: "2"

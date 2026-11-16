@@ -20,7 +20,7 @@ databases:
   - mysql
   - mariadb
   - postgres
-installMethod: pie install phalcon/cphalcon
+installMethod: pie install phalcon/cphalcon, pecl install phalcon (deprecated)
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "5"

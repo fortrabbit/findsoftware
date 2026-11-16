@@ -27,7 +27,7 @@ runsAs:
   - always-on
   - local
   - browser
-installMethod: pip
+installMethod: pip, Homebrew, docker image datasetteproject/datasette, Datasette Desktop for Mac
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

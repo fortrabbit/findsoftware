@@ -16,7 +16,7 @@ firstRelease: 2014
 language: javascript
 runtime:
   - node
-installMethod: npm install
+installMethod: npm install, script tag, download
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

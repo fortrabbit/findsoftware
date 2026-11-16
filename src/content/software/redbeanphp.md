@@ -24,7 +24,7 @@ databases:
   - mariadb
   - postgres
   - sqlite
-installMethod: download
+installMethod: download, composer
 licenseModel: open-source
 license: BSD-3-Clause, GPL-2.0
 currentMajor: "5"

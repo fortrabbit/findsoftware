@@ -13,7 +13,7 @@ maintainer: Jordan Scales
 maintainerType: individual
 firstRelease: 2020
 language: css
-installMethod: cdn
+installMethod: cdn, npm, github-release-zip
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

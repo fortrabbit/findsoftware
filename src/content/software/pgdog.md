@@ -21,7 +21,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: helm chart
+installMethod: helm chart, docker image, binary download, aws ecs terraform module, build-from-source-cargo
 licenseModel: open-core
 license: AGPL-3.0
 currentMajor: "0"

@@ -15,7 +15,7 @@ maintainerType: individual
 firstRelease: 2021
 language: javascript
 i18n: yes, translations for the interface text
-installMethod: npm package @fancyapps/ui
+installMethod: npm package @fancyapps/ui, CDN, jsDelivr links to the npm package, manual download of the dist files, uploaded to the web server
 licenseModel: commercial
 license: Fancyapps UI License Agreement
 currentMajor: "6"

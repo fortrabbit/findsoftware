@@ -31,7 +31,7 @@ templating: razor
 i18n: yes, store languages
 runsAs:
   - always-on
-installMethod: download package, then upload to IIS
+installMethod: download package, then upload to IIS, docker
 licenseModel: open-core
 license: nopCommerce Public License Version 4.0, GNU AGPL v3.0 with additional terms, Commercial License
 currentMajor: "4"

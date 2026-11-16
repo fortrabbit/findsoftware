@@ -19,7 +19,7 @@ hosting:
 templating: mustache
 runsAs:
   - always-on
-installMethod: single header crow_all.h, or CMake, or a package manager
+installMethod: single header crow_all.h, or CMake, or a package manager, AUR package crow (Arch), Homebrew, brew install crow, vcpkg, vcpkg install crow
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "1"

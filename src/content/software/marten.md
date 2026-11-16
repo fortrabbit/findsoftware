@@ -27,7 +27,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: Homebrew (brew install marten)
+installMethod: Homebrew (brew install marten), AUR (yay -S marten), from the sources (shards install, crystal build)
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

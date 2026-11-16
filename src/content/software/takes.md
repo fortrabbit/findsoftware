@@ -20,7 +20,7 @@ hosting:
 templating: xslt, velocity
 runsAs:
   - always-on
-installMethod: Maven dependency
+installMethod: Maven dependency, Gradle dependency, jar-with-dependencies download
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -16,7 +16,7 @@ runtime:
   - binary
 runsAs:
   - local
-installMethod: download pre-built binaries from GitHub releases
+installMethod: download pre-built binaries from GitHub releases, go install github.com/bep/s3deploy/v2@latest, brew install --cask bep/tap/s3deploy
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

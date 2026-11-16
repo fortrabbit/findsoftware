@@ -21,7 +21,7 @@ runsAs:
   - always-on
 renderingModes:
   - server
-installMethod: Homebrew
+installMethod: Homebrew, from source with shards and make, Arch Linux package
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -18,7 +18,7 @@ hosting:
   - node
 runtimeMin: node 18
 i18n: error message translations through the ajv-i18n package
-installMethod: npm install
+installMethod: npm install, cdnjs browser bundle
 licenseModel: open-source
 license: MIT
 currentMajor: "8"

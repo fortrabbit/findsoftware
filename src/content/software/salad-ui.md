@@ -17,7 +17,7 @@ runtime:
   - beam
 basedOn:
   - phoenix
-installMethod: hex
+installMethod: hex, mix task
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

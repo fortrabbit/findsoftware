@@ -16,7 +16,7 @@ language: javascript
 basedOn:
   - react
 i18n: Localization and locale-aware formatting for any language and region, with default translations for a handful of essenti
-installMethod: npm
+installMethod: npm, yarn
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "12"

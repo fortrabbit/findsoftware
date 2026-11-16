@@ -22,7 +22,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker-image, debian-package, rpm
+installMethod: docker-image, debian-package, rpm, helm
 licenseModel: open-core
 license: Apache-2.0, Apache License, Version 2.0
 currentMajor: "3"

@@ -16,7 +16,7 @@ hqCountry: US
 language: go
 databases:
   - postgres
-installMethod: local development with kind and Tilt
+installMethod: local development with kind and Tilt, Helm charts on a Kubernetes cluster, helm install of the xata chart from the project chart repository
 licenseModel: open-source
 license: Apache-2.0
 githubStargazers: 1105

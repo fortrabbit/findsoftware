@@ -16,7 +16,7 @@ firstRelease: 2020
 language: javascript
 runsAs:
   - local
-installMethod: download installer or package for Windows, macOS or Linux
+installMethod: download installer or package for Windows, macOS or Linux, brew install flyenv
 licenseModel: open-core
 license: BSD-3-Clause, MIT
 currentMajor: "4"

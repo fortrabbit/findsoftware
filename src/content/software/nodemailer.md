@@ -21,7 +21,7 @@ hosting:
   - deno
   - bun
 runtimeMin: node 20
-installMethod: npm
+installMethod: npm, Deno npm specifier
 licenseModel: open-source
 license: MIT-0
 currentMajor: "10"

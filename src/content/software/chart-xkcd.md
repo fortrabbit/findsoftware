@@ -13,7 +13,7 @@ maintainer: egoist
 maintainerType: individual
 firstRelease: 2019
 language: javascript
-installMethod: cdn
+installMethod: cdn, npm
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

@@ -15,7 +15,7 @@ language: javascript
 basedOn:
   - vue
 i18n: language packages
-installMethod: pnpm
+installMethod: pnpm, yarn, create-vexip template
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

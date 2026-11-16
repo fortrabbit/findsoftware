@@ -14,7 +14,7 @@ maintainer: fomantic
 maintainerType: community
 firstRelease: 2018
 language: javascript
-installMethod: npm
+installMethod: npm, cdn, yarn, npm CSS-only package, npm LESS package
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

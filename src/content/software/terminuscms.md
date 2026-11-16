@@ -17,7 +17,7 @@ headlessApi:
   - graphql
 runsAs:
   - always-on
-installMethod: Docker image
+installMethod: Docker image, docker compose, Snap, from source code
 licenseModel: open-core
 license: Apache-2.0
 currentMajor: "12"

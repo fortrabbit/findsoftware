@@ -26,7 +26,7 @@ databases:
 templating: stencil
 runsAs:
   - always-on
-installMethod: kitura CLI (brew install kitura), or a Swift Package Manager dependency
+installMethod: kitura CLI (brew install kitura), or a Swift Package Manager dependency, Swift Package Manager dependency, Docker image built from a generated Dockerfile
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "3"

@@ -14,7 +14,7 @@ firstRelease: 2020
 language: javascript
 basedOn:
   - lit
-installMethod: npx CLI that copies source into the project
+installMethod: npx CLI that copies source into the project, npm package
 licenseModel: open-source
 license: Apache-2.0
 githubStargazers: 832

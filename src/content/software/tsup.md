@@ -20,7 +20,7 @@ basedOn:
   - esbuild
 runsAs:
   - local
-installMethod: npm
+installMethod: npm, yarn, pnpm
 licenseModel: open-source
 license: MIT
 currentMajor: "9"

@@ -15,7 +15,7 @@ firstRelease: 2025
 hqCountry: US
 language: javascript
 i18n: multilingual, texts can be translated
-installMethod: cdn
+installMethod: cdn, download
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

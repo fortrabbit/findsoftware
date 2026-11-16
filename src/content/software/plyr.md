@@ -14,7 +14,7 @@ maintainerType: individual
 firstRelease: 2015
 language: javascript
 i18n: yes
-installMethod: npm
+installMethod: npm, cdn, source build, download
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

@@ -14,7 +14,7 @@ maintainer: Jack Lukic
 maintainerType: individual
 firstRelease: 2013
 language: javascript
-installMethod: npm
+installMethod: npm, download
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

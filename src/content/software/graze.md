@@ -23,7 +23,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: download the release zip
+installMethod: download the release zip, NuGet package graze
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

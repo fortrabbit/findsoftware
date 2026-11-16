@@ -22,7 +22,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: npm install --save-dev vue-styleguidist
+installMethod: npm install --save-dev vue-styleguidist, vue add styleguidist
 licenseModel: open-source
 license: MIT
 currentMajor: "4"

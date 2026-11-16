@@ -22,7 +22,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: jpm, cloned from the git repository
+installMethod: jpm, cloned from the git repository, janet-pm install from the git repository, Arch Linux AUR package, pre-compiled build download (labelled experimental)
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "0"

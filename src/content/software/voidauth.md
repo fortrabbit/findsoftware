@@ -24,7 +24,7 @@ adminUi: true
 i18n: yes, interface translations
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, docker
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "1"

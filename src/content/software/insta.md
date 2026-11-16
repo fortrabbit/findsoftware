@@ -17,7 +17,7 @@ runtime:
   - binary
 runsAs:
   - local
-installMethod: cargo add --dev insta (crates.io)
+installMethod: cargo add --dev insta (crates.io), cargo-insta installer script (curl or PowerShell), cargo install cargo-insta
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

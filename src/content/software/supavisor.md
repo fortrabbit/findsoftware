@@ -18,7 +18,7 @@ hosting:
   - elixir
 databases:
   - postgres
-installMethod: mix (source checkout, Elixir toolchain)
+installMethod: mix (source checkout, Elixir toolchain), docker-compose (builds the repository Dockerfile)
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

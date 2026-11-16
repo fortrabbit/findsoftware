@@ -16,7 +16,7 @@ basedOn:
   - groonga
 databases:
   - postgres
-installMethod: apt packages
+installMethod: apt packages, homebrew, compile from source
 licenseModel: open-source
 license: PostgreSQL
 currentMajor: "4"

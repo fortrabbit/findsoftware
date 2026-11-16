@@ -27,7 +27,7 @@ databases:
   - mongodb
 adminUi: true
 i18n: yes, English and Arabic with RTL and LTR
-installMethod: npm install @aventum/cli -g
+installMethod: npm install @aventum/cli -g, Docker Compose template, manual installation from the server and dashboard repositories
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

@@ -20,7 +20,7 @@ databases:
   - postgres
 adminUi: true
 i18n: web interface translated into 26 languages and regions
-installMethod: install script
+installMethod: install script, git clone and installer
 licenseModel: open-source
 license: GPL-3.0
 currentMajor: "1"

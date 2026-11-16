@@ -25,7 +25,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker
+installMethod: docker, installation script (Linux, macOS, FreeBSD), helm chart (Kubernetes), Windows binary
 licenseModel: open-core
 license: AGPL-3.0, SELv2 (proprietary, commercial use)
 currentMajor: "1"

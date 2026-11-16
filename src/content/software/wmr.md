@@ -21,7 +21,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: npm i -D wmr
+installMethod: npm i -D wmr, npm init wmr
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

@@ -23,7 +23,7 @@ adminUi: true
 i18n: yes, translated interface
 runsAs:
   - local
-installMethod: Windows installer
+installMethod: Windows installer, macOS DMG, Debian package, RPM package, ZIP archive, Homebrew cask, Snap, Flatpak, Eclipse plugin
 licenseModel: open-core
 license: Apache-2.0
 latestReleaseDate: 2026-10-18

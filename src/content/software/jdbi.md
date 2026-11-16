@@ -22,7 +22,7 @@ databases:
   - mysql
   - sqlite
   - oracle
-installMethod: maven
+installMethod: maven, gradle
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "3"

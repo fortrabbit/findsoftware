@@ -22,7 +22,7 @@ headlessApi:
 templating: zmpl
 runsAs:
   - always-on
-installMethod: Jetzig command line tool generates a project
+installMethod: Jetzig command line tool generates a project, Pre-compiled binary of the command line tool, Compile the command line tool with zig build install
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

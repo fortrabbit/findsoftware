@@ -19,7 +19,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: kubectl-apply
+installMethod: kubectl-apply, helm, cmctl
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

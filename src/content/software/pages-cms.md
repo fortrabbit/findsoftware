@@ -18,7 +18,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: npm install, then npm run build and npm run start behind a reverse proxy
+installMethod: npm install, then npm run build and npm run start behind a reverse proxy, Deploy on Vercel with PostgreSQL and a GitHub App
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

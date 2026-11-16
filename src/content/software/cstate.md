@@ -21,7 +21,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: clone the cstate/example repository and deploy it with Netlify, Cloudflare Pages or another static host
+installMethod: clone the cstate/example repository and deploy it with Netlify, Cloudflare Pages or another static host, git clone of the example site with the cstate theme as a submodule, Docker image built from the repository Dockerfile
 licenseModel: open-source
 license: MIT
 currentMajor: "6"

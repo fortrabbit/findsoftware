@@ -16,7 +16,7 @@ runtime:
   - binary
 runsAs:
   - local
-installMethod: "Homebrew: brew install mkcert"
+installMethod: "Homebrew: brew install mkcert, Chocolatey: choco install mkcert, Scoop: scoop install mkcert, MacPorts: sudo port install mkcert, Arch Linux: sudo pacman -Syu mkcert, pre-built binary download, build from source with go build"
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "1"

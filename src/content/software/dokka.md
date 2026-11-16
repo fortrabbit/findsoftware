@@ -12,7 +12,7 @@ status: active
 maintainer: JetBrains
 firstRelease: 2015
 language: kotlin
-installMethod: Gradle plugin
+installMethod: Gradle plugin, Maven plugin, command line runner (jar)
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "2"

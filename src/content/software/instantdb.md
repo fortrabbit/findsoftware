@@ -23,7 +23,7 @@ databases:
 adminUi: true
 runsAs:
   - always-on
-installMethod: docker compose
+installMethod: docker compose, npm, aws
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

@@ -22,7 +22,7 @@ contentStore:
   - database
 runsAs:
   - browser
-installMethod: npm package import
+installMethod: npm package import, script tag from the dist folder
 licenseModel: open-source
 license: MIT
 currentMajor: "6"

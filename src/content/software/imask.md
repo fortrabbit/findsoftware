@@ -13,7 +13,7 @@ maintainer: uNmAnNeR
 maintainerType: individual
 firstRelease: 2017
 language: javascript
-installMethod: npm
+installMethod: npm, script tag from unpkg
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

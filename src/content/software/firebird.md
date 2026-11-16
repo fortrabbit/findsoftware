@@ -18,7 +18,7 @@ hosting:
   - binary
 runsAs:
   - always-on
-installMethod: windows-installer
+installMethod: windows-installer, linux-packages, docker, build-from-source, windows-zip, linux-distro-packages, embedded-dll
 licenseModel: open-source
 license: Initial Developer's Public License Version 1.0, InterBase Public License Version 1.0, variants of the Mozilla Public Licence 1.1 (MPL)
 currentMajor: "5"

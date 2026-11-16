@@ -25,7 +25,7 @@ databases:
   - sqlite
 adminUi: true
 i18n: multilingual content
-installMethod: Docker image (docker pull ghcr.io/mixcore/mix.core)
+installMethod: Docker image (docker pull ghcr.io/mixcore/mix.core), Docker Compose, git clone and dotnet run with the .NET SDK
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

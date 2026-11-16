@@ -21,7 +21,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: go get
+installMethod: go get, docker image
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "0"

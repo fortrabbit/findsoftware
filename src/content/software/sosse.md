@@ -26,7 +26,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: pip
+installMethod: pip, debian package, docker, docker-compose
 licenseModel: open-source
 license: AGPL-3.0
 currentMajor: "1"

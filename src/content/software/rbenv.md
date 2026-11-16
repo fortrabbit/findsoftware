@@ -15,7 +15,7 @@ maintainerType: individual
 firstRelease: 2011
 runsAs:
   - local
-installMethod: Homebrew formula
+installMethod: Homebrew formula, apt package (Debian and Ubuntu repositories), pacman package (Arch Linux), dnf package (Fedora), git clone into ~/.rbenv, install script (curl | bash), zypper package (openSUSE), rbenv-installer script
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

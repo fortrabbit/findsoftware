@@ -26,7 +26,7 @@ runsAs:
   - static
 renderingModes:
   - static
-installMethod: download release archive (tar.gz or zip)
+installMethod: download release archive (tar.gz or zip), download release archive (zip)
 licenseModel: open-source
 license: BSD-2-Clause
 currentMajor: "1"

@@ -21,7 +21,7 @@ basedOn:
   - rolldown
 runsAs:
   - local
-installMethod: npm
+installMethod: npm, pnpm, yarn, bun
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

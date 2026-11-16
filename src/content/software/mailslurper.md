@@ -19,7 +19,7 @@ databases:
 adminUi: true
 runsAs:
   - local
-installMethod: docker
+installMethod: docker, source-build
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

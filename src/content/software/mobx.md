@@ -16,7 +16,7 @@ runtime:
   - node
 hosting:
   - node
-installMethod: npm
+installMethod: npm, CDN
 licenseModel: open-source
 license: MIT
 currentMajor: "7"

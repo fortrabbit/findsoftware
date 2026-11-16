@@ -20,7 +20,7 @@ runtimeMin: jvm 11
 templating: mustache
 runsAs:
   - local
-installMethod: npm
+installMethod: npm, homebrew, scoop, pip, docker, download, jbang, script, maven, Maven plugin, Gradle plugin, Mill plugin, source
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "7"

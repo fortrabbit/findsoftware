@@ -19,7 +19,7 @@ hosting:
 runtimeMin: node 22
 databases:
   - postgres
-installMethod: docker compose up --build -d
+installMethod: docker compose up --build -d, pnpm install and pnpm dev, for local development
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

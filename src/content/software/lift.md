@@ -20,7 +20,7 @@ hosting:
   - java
 runsAs:
   - always-on
-installMethod: sbt new with lift/basic-app.g8 or lift/blank-app.g8
+installMethod: sbt new with lift/basic-app.g8 or lift/blank-app.g8, add lift-webkit as an sbt or Maven dependency
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "4"

@@ -17,7 +17,7 @@ runsAs:
   - browser
 renderingModes:
   - server
-installMethod: npm
+installMethod: npm, cdn, create-arrow-js scaffolder
 licenseModel: open-source
 license: MIT
 currentMajor: "1"

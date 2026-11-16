@@ -16,7 +16,7 @@ runtime:
   - binary
 hosting:
   - binary
-installMethod: source tarball, configure and make
+installMethod: source tarball, configure and make, distribution packages
 licenseModel: open-source
 license: GPL-2.0-or-later
 currentMajor: "2"

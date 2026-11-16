@@ -12,7 +12,7 @@ maintainer: Marcelo Dolza
 maintainerType: individual
 firstRelease: 2016
 language: javascript
-installMethod: npm
+installMethod: npm, bower
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "1"

@@ -25,7 +25,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: git clone, bundle install and yarn install, then grunt init
+installMethod: git clone, bundle install and yarn install, then grunt init, docker compose with the image sparanoid/almace-scaffolding
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

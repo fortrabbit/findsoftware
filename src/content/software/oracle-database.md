@@ -10,7 +10,7 @@ description: Commercial relational database from Oracle, with a free developer e
 status: active
 maintainer: Oracle America, Inc.
 maintainerType: company
-installMethod: rpm
+installMethod: rpm, zip-download, docker-image
 licenseModel: commercial
 license: Oracle Free Use Terms and Conditions, Oracle license agreement (including the Oracle Master Agreement)
 social:

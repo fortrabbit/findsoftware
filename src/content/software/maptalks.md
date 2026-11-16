@@ -15,7 +15,7 @@ firstRelease: 2016
 language: javascript
 runtime:
   - node
-installMethod: download
+installMethod: download, cdn, npm
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "1"

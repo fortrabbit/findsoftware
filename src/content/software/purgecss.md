@@ -14,7 +14,7 @@ firstRelease: 2017
 language: javascript
 runsAs:
   - local
-installMethod: npm install purgecss --save-dev
+installMethod: npm install purgecss --save-dev, npm i -g purgecss
 licenseModel: open-source
 license: MIT
 currentMajor: "8"

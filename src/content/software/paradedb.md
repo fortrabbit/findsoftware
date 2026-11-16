@@ -20,7 +20,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: curl install script
+installMethod: curl install script, docker, postgres.app extension, kubernetes, existing postgres cluster
 licenseModel: open-core
 license: AGPL-3.0, commercial (ParadeDB Enterprise)
 currentMajor: "0"

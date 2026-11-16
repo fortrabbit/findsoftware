@@ -20,7 +20,7 @@ runsAs:
   - local
 renderingModes:
   - static
-installMethod: phive
+installMethod: phive, phar, docker, composer
 licenseModel: open-source
 license: MIT
 currentMajor: "3"

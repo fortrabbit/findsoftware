@@ -16,7 +16,7 @@ runtime:
   - node
 hosting:
   - node
-installMethod: script tag
+installMethod: script tag, npm
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "9"

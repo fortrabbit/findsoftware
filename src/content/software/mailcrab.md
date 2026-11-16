@@ -19,7 +19,7 @@ adminUi: true
 runsAs:
   - local
   - always-on
-installMethod: docker
+installMethod: docker, github-release-binary, helm, docker-compose
 licenseModel: open-source
 license: Apache-2.0, Apache-2.0 OR MIT
 currentMajor: "1"

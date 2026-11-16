@@ -22,7 +22,7 @@ databases:
   - postgres
 runsAs:
   - always-on
-installMethod: Debian and Ubuntu packages (PGDG repository)
+installMethod: Debian and Ubuntu packages (PGDG repository), Docker image on ghcr.io, local Docker image build, local build (make)
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "1"

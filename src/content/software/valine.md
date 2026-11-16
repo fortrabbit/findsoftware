@@ -16,7 +16,7 @@ language: javascript
 i18n: yes, built-in zh-CN, zh-TW, en and ja, plus custom languages
 runsAs:
   - browser
-installMethod: npm
+installMethod: npm, cdn
 licenseModel: open-source
 license: GPL-2.0
 currentMajor: "1"

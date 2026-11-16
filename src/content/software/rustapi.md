@@ -21,7 +21,7 @@ templating: tera
 i18n: localized validation messages
 runsAs:
   - always-on
-installMethod: cargo
+installMethod: cargo, cargo install
 licenseModel: open-source
 license: MIT OR Apache-2.0, Apache-2.0
 currentMajor: "0"

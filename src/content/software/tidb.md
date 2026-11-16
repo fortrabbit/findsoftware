@@ -22,7 +22,7 @@ hosting:
 adminUi: true
 runsAs:
   - always-on
-installMethod: TiUP (bare metal cluster deployment and playground)
+installMethod: TiUP (bare metal cluster deployment and playground), TiDB Operator on Kubernetes
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "8"

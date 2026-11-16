@@ -20,7 +20,7 @@ runtimeMin: python 3.11
 basedOn:
   - django
 adminUi: true
-installMethod: pip
+installMethod: pip, pip extra headless
 licenseModel: open-source
 license: MIT
 currentMajor: "65"

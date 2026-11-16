@@ -18,7 +18,7 @@ runtime:
 runtimeMin: python 3.7
 basedOn:
   - echarts
-installMethod: pip
+installMethod: pip, source
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

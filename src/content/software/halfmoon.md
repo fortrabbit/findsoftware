@@ -15,7 +15,7 @@ firstRelease: 2020
 language: css
 basedOn:
   - bootstrap
-installMethod: npm
+installMethod: npm, yarn, download, cdn
 licenseModel: open-source
 license: MIT
 currentMajor: "2"

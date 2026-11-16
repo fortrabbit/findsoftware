@@ -18,7 +18,7 @@ hosting:
 runtimeMin: ruby 3.2
 basedOn:
   - tantivy
-installMethod: gem install
+installMethod: gem install, Gemfile (bundler)
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

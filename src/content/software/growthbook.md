@@ -29,7 +29,7 @@ headlessApi:
   - rest
 runsAs:
   - always-on
-installMethod: docker-compose
+installMethod: docker-compose, helm
 licenseModel: open-core
 license: MIT, GrowthBook Enterprise License (packages/back-end/src/enterprise, packages/front-end/enterprise, packages/shared/src/enterprise)
 currentMajor: "5"

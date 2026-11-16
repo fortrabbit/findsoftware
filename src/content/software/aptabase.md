@@ -16,7 +16,7 @@ hqCountry: RO
 language: csharp
 databases:
   - postgres
-installMethod: npm
+installMethod: npm, docker-compose
 licenseModel: open-source
 license: AGPL-3.0
 githubStargazers: 1866

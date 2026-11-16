@@ -17,7 +17,7 @@ runtime:
 runtimeMin: node 20
 runsAs:
   - local
-installMethod: npm i -D beasties
+installMethod: npm i -D beasties, yarn add -D beasties
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "0"

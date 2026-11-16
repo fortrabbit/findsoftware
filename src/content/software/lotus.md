@@ -19,7 +19,7 @@ hosting:
 databases:
   - postgres
 adminUi: true
-installMethod: docker
+installMethod: docker, self-host-script
 licenseModel: open-source
 license: MIT
 currentMajor: "0"

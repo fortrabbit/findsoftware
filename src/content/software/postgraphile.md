@@ -26,7 +26,7 @@ headlessApi:
   - graphql
 runsAs:
   - always-on
-installMethod: npm
+installMethod: npm, docker
 licenseModel: open-source
 license: MIT
 currentMajor: "5"

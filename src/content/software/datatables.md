@@ -14,7 +14,7 @@ maintainer: SpryMedia Ltd
 maintainerType: company
 firstRelease: 2010
 language: javascript
-installMethod: npm
+installMethod: npm, cdn, download builder, nuget, composer
 licenseModel: open-core
 license: MIT, Commercial
 currentMajor: "3"

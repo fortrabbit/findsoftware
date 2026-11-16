@@ -22,7 +22,7 @@ basedOn:
   - vinyl-cache
 runsAs:
   - always-on
-installMethod: docker image
+installMethod: docker image, helm chart, deb package, rpm package, source tarball
 licenseModel: open-core
 license: BSD-2-Clause
 currentMajor: "9"
