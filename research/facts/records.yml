@@ -1,0 +1,116 @@
+id: records
+name: Records
+status: accepted
+checkedAt: 2026-11-16
+description: Python library for running raw SQL queries against relational databases.
+facts:
+  - field: repository
+    value: "https://github.com/kennethreitz/records"
+    url: "https://api.github.com/repos/kennethreitz/records"
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: "https://github.com/kennethreitz/records/blob/master/README.rst"
+    url: "https://github.com/kennethreitz/records/blob/master/README.rst"
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: "Kenneth Reitz"
+    url: "https://raw.githubusercontent.com/kennethreitz/records/master/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2016, Kenneth Reitz"
+  - field: repoOwnerType
+    value: user
+    url: "https://api.github.com/users/kennethreitz"
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: "https://pypi.org/pypi/records/json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [sql]
+    url: "https://github.com/kennethreitz/records/blob/master/README.rst"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Records is a very simple, but powerful, library for making raw SQL queries"
+  - field: language
+    value: Python
+    url: "https://api.github.com/repos/kennethreitz/records"
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [python]
+    url: "https://pypi.org/pypi/records/json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: databases
+    value: [redshift, postgres, mysql, sqlite, oracle, sqlserver]
+    url: "https://github.com/kennethreitz/records/blob/master/README.rst"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Database support includes RedShift, Postgres, MySQL, SQLite, Oracle, and MS-SQL (drivers not included)."
+  - field: installMethod
+    value: pipenv
+    url: "https://github.com/kennethreitz/records/blob/master/README.rst"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Of course, the recommended installation method is"
+  - field: license
+    value: ISC
+    url: "https://raw.githubusercontent.com/kennethreitz/records/master/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "ISC License"
+  - field: licenseModel
+    value: open-source
+    url: "https://raw.githubusercontent.com/kennethreitz/records/master/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "ISC License"
+  - field: currentMajor
+    value: "0"
+    url: "https://github.com/kennethreitz/records/releases/tag/v0.6.0"
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2024-03-29
+    url: "https://github.com/kennethreitz/records/releases/tag/v0.6.0"
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiName
+    value: "records"
+    url: "https://pypi.org/pypi/records/json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: "76542 (last week)"
+    url: "https://pypistats.org/api/packages/records/recent"
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 7214
+    url: "https://api.github.com/repos/kennethreitz/records"
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 45
+    url: "https://api.github.com/repos/kennethreitz/records/contributors?per_page=1"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 11
+    url: "https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/records"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 254
+    url: "https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/records"
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, basedOn, adminUi, contentStore, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runtimeMin, runsAs, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, selfHostOption, reportedInstalls, regions, apiLimits, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, latestPrereleaseDate, hostedOffering]
+unreadable: []
+notes: >
+  The project names no website of its own: the PyPI homepage and the GitHub repository point to the same GitHub page, so no homepage is recorded. The README says the library is powered by SQLAlchemy and Tablib; that is a dependency named as a power source, not a basedOn statement, and neither has a record here. The README says database drivers are not included, so the drivers a user installs are outside this record. The README says rows read by column name, index or as a dictionary, query parameters are named, queries can be read from SQL files, and transactions and bulk queries are available; it also describes a command-line records tool for exporting queries, and export to CSV, XLS, JSON, YAML, HTML tables and Pandas DataFrames through Tablib; these are coined kinds and stay here. The README's installation line names pipenv; the install vocabulary has no pipenv value, so a reviewer may map the route to pip. The PyPI record states no requires_python, so no runtimeMin is recorded. The latest GitHub release v0.6.0 and the PyPI 0.6.0 upload are the same day. The first PyPI upload (0.1.0) is from February 2016, the same month as the oldest tag. The LICENSE copyright line names Kenneth Reitz with an email address, which is not recorded.

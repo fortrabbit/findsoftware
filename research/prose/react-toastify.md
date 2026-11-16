@@ -1,0 +1,1 @@
+React-Toastify shows notifications in a React app. The [installation guide](https://fkhadra.github.io/react-toastify/installation/) asks for one ToastContainer, rendered once in the application tree, and a toast call then shows each notification. The guide lists React 18 or above as the requirement.

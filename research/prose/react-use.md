@@ -1,0 +1,1 @@
+react-use is a collection of React hooks. The hooks cover sensors such as battery, geolocation and media queries, side effects such as cookies and local storage, component lifecycles, animations, and state. Each hook has its own page in the docs folder, and the [README](https://github.com/streamich/react-use/blob/master/README.md) lists them by group.

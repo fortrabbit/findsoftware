@@ -1,0 +1,129 @@
+id: quill
+name: Quill
+status: accepted
+checkedAt: 2026-11-16
+description: Rich text editor library that a web page embeds, exchanging content as JSON and producing HTML.
+facts:
+  - field: homepage
+    value: https://quilljs.com/
+    url: https://quilljs.com/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Your powerful rich text editor."
+  - field: repository
+    value: https://github.com/slab/quill
+    url: https://api.github.com/repos/slab/quill
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://quilljs.com/docs/quickstart
+    url: https://github.com/slab/quill/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "for documentation, guides, and live demos"
+  - field: firstRelease
+    value: 2012
+    url: https://registry.npmjs.org/quill
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Slab
+    url: https://quilljs.com/docs/quickstart
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Quill is developed and maintained by Slab"
+  - field: hqCountry
+    value: US
+    url: https://slab.com/privacy/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Covina, CA 91723 USA"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/slab
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [rich-text]
+    url: https://raw.githubusercontent.com/slab/quill/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Quill is a modern rich text editor built for compatibility and extensibility"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/slab/quill
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://quilljs.com/docs/installation
+    checkedAt: 2026-11-16
+    via: page
+    quote: "it's recommended to install Quill via npm"
+  - field: installMethod
+    value: cdn
+    url: https://quilljs.com/docs/installation
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A globally distributed and available CDN is provided, backed by jsDelivr"
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/slab/quill
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://quilljs.com/docs/quickstart
+    checkedAt: 2026-11-16
+    via: page
+    quote: "It is permissively licensed under BSD."
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/slab/quill/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2024-11-30
+    url: https://api.github.com/repos/slab/quill/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: quill
+    url: https://registry.npmjs.org/quill/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "8426663 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/quill
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 2158
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/quill
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 35962
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/quill
+    checkedAt: 2026-11-16
+    via: api
+  - field: forum
+    value: https://github.com/slab/quill/discussions
+    url: https://github.com/slab/quill/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Ask questions on Discussions"
+  - field: githubStargazers
+    value: 47370
+    url: https://api.github.com/repos/slab/quill
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 142
+    url: https://api.github.com/repos/slab/quill/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, pricingPage, paidEdition, runtime, runsAs, runtimeMin, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, packagistName, pypiDownloads, rubygemsName, reportedInstalls, usageShare, selfHostOption, lastCommitDate, latestPrereleaseDate]
+unreadable: []
+notes: >
+  The record is a browser editor library that the install docs describe as embedded in a page through a script tag or npm, so it is in scope under the editor group. No runtime fact is recorded: the homepage lists modern browsers on desktops, tablets and phones, which is a support list, and no page states that Quill runs in the browser, so runsAs is left out and the reviewer may settle it. The maintainer is Slab, as the quickstart, installation and formats pages of quilljs.com say ("developed and maintained by Slab") and the README says ("actively maintained by Slab"); the LICENSE copyright line reads "Copyright (c) 2017-2024, Slab", and the LICENSE also carries "Copyright (c) 2014, Jason Chen" and "Copyright (c) 2013, salesforce.com". The README names Jason Chen and Byron Milligan as its creators. slab.com/terms names Fallacy Labs, Inc. (doing business as Slab) as the operator of Slab's own service; that page is not on quilljs.com and does not name Quill, so the legal form is not recorded as the maintainer. The company address on slab.com/privacy is the source for hqCountry. The homepage describes an API with granular access to the editor's content, changes and events, with JSON as both input and output, and the quickstart initializes Quill with a DOM element that becomes the editor. The Formats page lists a Text Direction format by label only, so no i18n fact is recorded. The first npm upload is version 0.1.0 on 2012-03-25, older than the first GitHub tag v0.0.1 (committed 2013-02-07), so firstRelease is 2012 by the registry rule. The GitHub repository reports BSD-3-Clause and the README says BSD 3-clause; one license entry is recorded. The npm weekly figure is the sum of the daily downloads for 2026-11-01 to 2026-11-07. The repository's latest GitHub release is v2.0.3 from 2024-11-30; its latest prerelease v2.0.0-rc.5 is older than that release and is not recorded. The Community section of the README names Issues and Discussions; the Discussions link is the forum fact. The quickstart page shows a star count and a homepage star badge; those are not recorded. The docs field points to the quickstart page that the README links for documentation.

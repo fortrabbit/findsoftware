@@ -1,0 +1,118 @@
+id: reactour
+name: Reactour
+status: accepted
+checkedAt: 2026-11-16
+description: Product tour library for React that highlights parts of an app with a mask and a popover, driven by an array of steps.
+facts:
+  - field: homepage
+    value: https://www.reactour.dev
+    url: https://www.reactour.dev/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Tourist Guide into your React Components"
+  - field: repository
+    value: https://github.com/elrumordelaluz/reactour
+    url: https://api.github.com/repos/elrumordelaluz/reactour
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://docs.reactour.dev
+    url: https://docs.reactour.dev/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "the package was divided into three main packages"
+  - field: installMethod
+    value: npm
+    url: https://docs.reactour.dev/tour/quickstart
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm i @reactour/tour"
+  - field: firstRelease
+    value: 2017
+    url: https://registry.npmjs.org/reactour
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Lionel Tzatzkin
+    url: https://github.com/elrumordelaluz/reactour/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2022 Lionel Tzatzkin"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/elrumordelaluz
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/elrumordelaluz/reactour
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [product-tour]
+    url: https://docs.reactour.dev/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "create a “tour” for new users of different projects"
+  - field: alternativeTo
+    value: [intro-js]
+    url: https://docs.reactour.dev/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "trying to simplify the logic of intro.js with React components"
+  - field: basedOn
+    value: react
+    url: https://www.reactour.dev/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Tourist Guide into your React Components"
+  - field: license
+    value: MIT
+    url: https://github.com/elrumordelaluz/reactour/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 3
+    url: https://github.com/elrumordelaluz/reactour/releases/tag/3.0.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2025-05-07
+    url: https://registry.npmjs.org/@reactour/tour
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 4098
+    url: https://api.github.com/repos/elrumordelaluz/reactour
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 46
+    url: https://api.github.com/repos/elrumordelaluz/reactour/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: "@reactour/tour"
+    url: https://registry.npmjs.org/@reactour/tour
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: 282756 for 2026-11-01 to 2026-11-07
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@reactour/tour
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 12
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40reactour%2Ftour
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 65
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40reactour%2Ftour
+    checkedAt: 2026-11-16
+    via: api
+notFound: [runtime, runtimeMin, runsAs, renderingModes, importsFrom, databases, contentStore, i18n, templating, sso, adminUi, headlessApi, userRoles, multisite, livePreview, parent, forkOf, successorOf, hqCountry, pricingPage, paidEdition, usageShare, httpArchiveSites, reportedInstalls, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, endoflifeId, wikidata]
+unreadable: []
+notes: >
+  Monorepo: the repository holds the packages @reactour/tour (the main package, which the install docs name), @reactour/mask, @reactour/popover and @reactour/utils, plus the docs app. Stars and contributors belong to the monorepo. The registry figures are for @reactour/tour, the package the quick start installs; the npm package named reactour is the earlier line, its docs say it is now on branch v1, and its last publish was 1.19.4 on 2024-05-31. That is a move to the scoped package, not an end, so the status stays accepted and the v1 package has no fact of its own. Its 2026-11-01 to 2026-11-07 weekly total was 88220 downloads, not recorded. The GitHub release object 3.0.0 (2022-08-12) is the highest release object and has the same major as the newest npm stable 3.8.0 (2025-05-07). The React basedOn fact rests on the homepage sentence "Tourist Guide into your React Components"; the README says the same ("travel into your React Components"), and the npm peer dependency on react is not a basedOn statement. The maintainer is the LICENSE copyright line, Lionel Tzatzkin; the npm author field reads Lionel T. The homepage footer links the author's personal X account, which is not recorded as the project's x. The docs welcome page says the project began in 2017 as an attempt to simplify the logic of intro.js with React components, which is recorded as alternativeTo intro-js. The README says the main package uses the other packages to highlight parts of an application from an array of steps; the quick start puts a TourProvider at the application root and opens the tour with a useTour hook.

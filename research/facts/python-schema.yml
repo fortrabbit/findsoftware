@@ -1,0 +1,118 @@
+id: python-schema
+name: schema
+status: accepted
+checkedAt: 2026-11-16
+description: Python library for validating Python data structures, such as data converted from JSON or YAML.
+facts:
+  - field: name
+    value: schema
+    url: https://github.com/keleshev/schema/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "schema is a library for validating Python data structures"
+  - field: repository
+    value: https://github.com/keleshev/schema
+    url: https://api.github.com/repos/keleshev/schema
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Vladimir Keleshev
+    url: https://github.com/keleshev/schema/blob/master/LICENSE-MIT
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2012 Vladimir Keleshev"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/keleshev
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://api.github.com/repos/keleshev/schema/commits/0.1.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [validation]
+    url: https://github.com/keleshev/schema/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "is a library for validating Python data structures"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/keleshev/schema
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/keleshev/schema/blob/v0.7.8/setup.py
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Programming Language :: Python :: 3.11"
+  - field: installMethod
+    value: pip, from PyPI
+    url: https://github.com/keleshev/schema/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "pip install schema"
+  - field: installMethod
+    value: copy the file into the project
+    url: https://github.com/keleshev/schema/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "you can just drop ``schema.py`` file into your project"
+  - field: license
+    value: MIT
+    url: https://github.com/keleshev/schema/blob/v0.7.8/setup.py
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'license="MIT",'
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/keleshev/schema/blob/v0.7.8/setup.py
+    checkedAt: 2026-11-16
+    via: page
+    quote: "License :: OSI Approved :: MIT License"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/keleshev/schema/releases/tags/v0.7.6
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2025-10-11
+    url: https://pypi.org/pypi/schema/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2940
+    url: https://api.github.com/repos/keleshev/schema
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 63
+    url: https://api.github.com/repos/keleshev/schema/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiName
+    value: schema
+    url: https://pypi.org/pypi/schema/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: "21193462 per month (last_month)"
+    url: https://pypistats.org/api/packages/schema/recent
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 261
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/schema
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 2636
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/schema
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, docs, runtimeMin, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, paidEdition, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, latestPrereleaseDate, apiLimits, regions, selfHostOption, hostedOffering]
+unreadable: []
+notes: >
+  The repository has no homepage: the GitHub homepage field is empty, the setup.py url is the repository itself, and the README is the only documentation, so no homepage or docs field is recorded. The latest stable release is 0.7.8 (2025-10-11, PyPI and tag v0.7.8, CHANGELOG.md "v0.7.8 (2025-10-11)"); GitHub has release objects only up to v0.7.6 (2024-03-26), so the registry date is recorded as latestReleaseDate, and currentMajor is 0 from either. Under semantic versioning, which the README says the project follows, a 0 major is the pre-1.0 line; the minor line is not recorded. The tag's setup.py states no python_requires, and PyPI's requires_python is empty, so runtimeMin is not recorded; the setup.py classifiers at v0.7.8 list Python 3.6 through 3.11 and PyPy, and the master README says it is tested with Python 2.6 through 3.9 and PyPy, which is older text. firstRelease is 2012: the tag 0.1.0 is committed 2012-08-22, the same day as the PyPI upload of 0.1.0, and the repository was created 2012-08-19. The README example shows a Schema built from Python types, functions and containers, whose validate method returns the validated data (optionally converted) or raises SchemaError, and its first paragraph names config files, forms, external services and command-line parsing as sources of the data. The README says a dict Schema can generate a draft-07 JSON Schema, that the output can be used with JSON Schema compatible libraries, and that the result is not guaranteed to accept the same objects as the library would accept, since some validations have no JSON Schema equivalent; that is a feature and spec compliance, so it stays in notes and is not a field. The README's pip install line and the copy-the-file route are the two installMethod entries; the README also names easy_install beside pip, which is the same route. The maintainer is the copyright holder of LICENSE-MIT; the email address in that file is not recorded. The pypistats figure is last_month as read on 2026-11-16; ecosyste.ms counts are for the schema PyPI package. The contributors count is the page number of the rel="last" link on the authenticated contributors endpoint with per_page=1 (63).

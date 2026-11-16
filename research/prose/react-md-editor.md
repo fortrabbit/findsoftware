@@ -1,0 +1,1 @@
+react-md-editor is a React component that shows a markdown editor with a live preview. It is written in TypeScript and built on a plain textarea rather than on a code editor such as CodeMirror or Monaco, which the README states. The README includes a section on using it with Next.js.

@@ -1,0 +1,3 @@
+QR Code Styling is a JavaScript library for generating QR codes with a logo and styling, including an image in the center. The README's usage example appends the generated code to an element in an HTML page. Its Node Support section says the library can also be used on a node server by passing the node-canvas or jsdom object, and that getRawData then returns a Buffer instead of a Blob. The [homepage](https://qr-code-styling.com) hosts a browser demo of the generator.
+
+The README lists the qrcode-generator library as the one that receives the library's qrOptions, and links one third-party extension on npm, qr-border-plugin.

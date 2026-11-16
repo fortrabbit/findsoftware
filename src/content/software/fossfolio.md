@@ -15,6 +15,8 @@ runtime:
 hosting:
   - static
 runtimeMin: python 3.9
+basedOn:
+  - python-markdown
 contentStore:
   - flat-file
 runsAs:
@@ -50,6 +52,9 @@ sources:
     checkedAt: 2026-10-23
   - field: runtimeMin
     url: https://raw.githubusercontent.com/fossworx-labs/fossfolio/main/pyproject.toml
+    checkedAt: 2026-10-23
+  - field: basedOn
+    url: https://raw.githubusercontent.com/fossworx-labs/fossfolio/main/README.md
     checkedAt: 2026-10-23
   - field: contentStore
     url: https://raw.githubusercontent.com/fossworx-labs/fossfolio/main/README.md

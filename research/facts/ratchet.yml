@@ -1,0 +1,124 @@
+id: ratchet
+name: Ratchet
+status: accepted
+checkedAt: 2026-11-16
+description: PHP library for asynchronously serving WebSocket connections from a long-running PHP process.
+facts:
+  - field: repository
+    value: https://github.com/ratchetphp/Ratchet
+    url: https://api.github.com/repos/ratchetphp/Ratchet
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://api.github.com/repos/ratchetphp/Ratchet/git/refs/tags/v0.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Chris Boden
+    url: https://raw.githubusercontent.com/ratchetphp/Ratchet/0.4.x/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2011 Chris Boden"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/ratchetphp
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/ratchetphp/Ratchet
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: php
+    url: https://raw.githubusercontent.com/ratchetphp/Ratchet/0.4.x/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A PHP library for asynchronously serving WebSockets."
+  - field: runtimeMin
+    value: "5.4"
+    url: https://raw.githubusercontent.com/ratchetphp/Ratchet/v0.4.4/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": ">=5.4.2"'
+  - field: categories
+    value: [websockets]
+    url: https://raw.githubusercontent.com/ratchetphp/Ratchet/0.4.x/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A PHP library for asynchronously serving WebSockets."
+  - field: runsAs
+    value: [always-on]
+    url: http://socketo.me/docs/deploy
+    checkedAt: 2026-11-16
+    via: page
+    quote: "If for any reason your long running Ratchet application halted the supervisor daemon would ensure it starts back up immediately."
+  - field: installMethod
+    value: composer
+    url: https://raw.githubusercontent.com/ratchetphp/Ratchet/0.4.x/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "composer require cboden/ratchet"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/ratchetphp/Ratchet/v0.4.4/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"license": "MIT"'
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/ratchetphp/Ratchet/0.4.x/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/ratchetphp/Ratchet/releases/tag/v0.4.4
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2021-12-14
+    url: https://github.com/ratchetphp/Ratchet/releases/tag/v0.4.4
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 6435
+    url: https://api.github.com/repos/ratchetphp/Ratchet
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 50
+    url: https://api.github.com/repos/ratchetphp/Ratchet/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: cboden/ratchet
+    url: https://repo.packagist.org/p2/cboden/ratchet.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "23956117 (total)"
+    url: https://packagist.org/packages/cboden/ratchet.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 250
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/cboden%2Fratchet
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 3295
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/cboden%2Fratchet
+    checkedAt: 2026-11-16
+    via: api
+  - field: forum
+    value: https://groups.google.com/forum/#!forum/ratchet-php
+    url: https://raw.githubusercontent.com/ratchetphp/Ratchet/0.4.x/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Write a message on the Google Groups Mailing List"
+notFound: [homepage, docs, hqCountry, basedOn, endoflifeId, adminUi, headlessApi, templating, databases, contentStore, multisite, livePreview, userRoles, sso, i18n, importsFrom, alternativeTo, forkOf, successorOf, discord, x, bluesky, mastodon, newsletter, pluginDirectory, pluginCount, usageShare, reportedInstalls, paidEdition, pricingPage, npmName]
+unreadable: [http://socketo.me/ (answers only over plain http, no TLS; not linked as homepage)]
+notes: >
+  Status accepted from the candidate row. The homepage socketo.me answers only over plain http (https returns no connection), so it is not linked, and the documentation pages named here (docs/install, docs/deploy) are on the same http-only site; the install and runsAs quotes come from those pages. The default branch is 0.4.x (last pushed 2026-06-14). The latest stable release is v0.4.4 (2021-12-14), a 0.x line: currentMajor is 0 and the minor line is 0.4. The README opens "Reviving Ratchet!" and says the project is being revived, with no end statement, so no status signal. The last release is more than four years old, so the import will move this record to stub unless a newer release appears. The earliest tag is v0.1 (commit date 2012-05-11, the same date as the first Packagist version). Packagist monthly downloads at the same read: 420955 (monthly); recorded total only. The composer.json at v0.4.4 requires react, ratchet/rfc6455, guzzle psr7 and Symfony routing and http-foundation; these are dependencies, not basedOn. The README Install section names Composer and says the library supports PHP 5.4 through PHP 8+; its Requirements section says shell access is required and root access is recommended, and that a reverse proxy or a second machine is needed to serve WebSockets on port 80 or 443 beside a sync web stack. The README's "Need help?" forum link is the project's Google Group. The project's owner is the GitHub organization ratchetphp; the LICENSE copyright line names Chris Boden alone. Contributors counts the contributors endpoint with per_page=1, read from the rel="last" link (50).
