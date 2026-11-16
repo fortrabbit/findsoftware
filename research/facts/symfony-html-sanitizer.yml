@@ -1,0 +1,125 @@
+id: symfony-html-sanitizer
+name: Symfony HtmlSanitizer
+status: accepted
+checkedAt: 2026-11-16
+description: PHP component with an object-oriented API for sanitizing untrusted HTML input before it is inserted into a document.
+facts:
+  - field: homepage
+    value: https://symfony.com/packages/html-sanitizer
+    url: https://symfony.com/packages/html-sanitizer
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/symfony/html-sanitizer
+    url: https://api.github.com/repos/symfony/html-sanitizer
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://symfony.com/doc/current/html_sanitizer.html
+    url: https://symfony.com/doc/current/html_sanitizer.html
+    checkedAt: 2026-11-16
+    via: page
+  - field: categories
+    value: [html-sanitizer]
+    url: https://symfony.com/packages/html-sanitizer
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Provides an object-oriented API to sanitize untrusted HTML input"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/symfony/html-sanitizer
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: php
+    url: https://github.com/symfony/html-sanitizer/blob/v8.1.11/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": ">=8.4.1"'
+  - field: runtimeMin
+    value: "8.4"
+    url: https://github.com/symfony/html-sanitizer/blob/v8.1.11/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": ">=8.4.1"'
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/symfony/html-sanitizer
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Fabien Potencier
+    url: https://github.com/symfony/html-sanitizer/blob/8.2/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2021-present Fabien Potencier"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/symfony
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2022
+    url: https://repo.packagist.org/p2/symfony/html-sanitizer.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 8
+    url: https://github.com/symfony/html-sanitizer/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-04
+    url: https://api.github.com/repos/symfony/html-sanitizer/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-11-13
+    url: https://api.github.com/repos/symfony/html-sanitizer/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: composer
+    url: https://symfony.com/doc/current/html_sanitizer.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "composer require symfony/html-sanitizer"
+  - field: packagistName
+    value: symfony/html-sanitizer
+    url: https://packagist.org/packages/symfony/html-sanitizer.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: 71420224
+    url: https://packagist.org/packages/symfony/html-sanitizer.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistMonthlyDownloads
+    value: 9744662
+    url: https://packagist.org/packages/symfony/html-sanitizer.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 285
+    url: https://api.github.com/repos/symfony/html-sanitizer
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 25
+    url: https://api.github.com/repos/symfony/html-sanitizer/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 29
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/symfony/html-sanitizer
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 1150
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/symfony/html-sanitizer
+    checkedAt: 2026-11-16
+    via: api
+notFound: [basedOn, templating, runsAs, renderingModes, databases, contentStore, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, hqCountry, parent, forkOf, successorOf, alternativeTo, pluginDirectory, pluginCount, forum, discord, x, bluesky, mastodon, newsletter, pricingPage, paidEdition, licenseModel, maintainerType, npmName, npmWeeklyDownloads]
+unreadable: []
+notes: >
+  The HtmlSanitizer component is a read-only split of symfony/symfony; the README sends issues and pull requests to the main Symfony repository, so the stars, contributors and dependents are the split's own counts. The component docs say the sanitizer "is based on the HTML Sanitizer W3C Standard Proposal", a specification it follows, so it is not recorded as basedOn. The docs state that the Symfony framework exposes the class as the html_sanitizer service, and that the component integrates with Symfony Forms through the sanitize_html option on text fields; the docs also show a Twig filter named sanitize_html and a standalone use beside the framework use; these are not recorded as fields. The docs also say it is meant for untrusted HTML such as WYSIWYG editor output and that it rebuilds the markup from allowed elements and attributes. The Packagist totals are as of 2026-11-16 (total and monthly) from the Packagist package API. The GitHub prerelease v8.2.0-BETA2 (2026-11-13) is newer than the latest stable v8.1.11 (2026-11-04). The maintainer follows the LICENSE copyright line: Fabien Potencier.

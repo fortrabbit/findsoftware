@@ -1,0 +1,123 @@
+id: testcontainers-java
+name: Testcontainers for Java
+status: accepted
+checkedAt: 2026-11-16
+description: Java library for JUnit tests that starts throwaway instances of databases, Selenium browsers and other services in Docker containers.
+facts:
+  - field: homepage
+    value: https://testcontainers.com/
+    url: https://testcontainers.com/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Testcontainers is an open source library for providing throwaway, lightweight instances of databases"
+  - field: docs
+    value: https://java.testcontainers.org/
+    url: https://java.testcontainers.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Java library that supports JUnit tests, providing lightweight, throwaway instances of common databases"
+  - field: repository
+    value: https://github.com/testcontainers/testcontainers-java
+    url: https://api.github.com/repos/testcontainers/testcontainers-java
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Richard North
+    url: https://raw.githubusercontent.com/testcontainers/testcontainers-java/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2015-2019 Richard North"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/testcontainers/testcontainers-java
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/testcontainers/testcontainers-java
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/testcontainers/testcontainers-java/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/testcontainers/testcontainers-java
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [jvm]
+    url: https://java.testcontainers.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Java library that supports JUnit tests"
+  - field: categories
+    value: [testing]
+    url: https://java.testcontainers.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Java library that supports JUnit tests"
+  - field: installMethod
+    value: maven
+    url: https://java.testcontainers.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Using Maven you can add the following to"
+  - field: installMethod
+    value: gradle
+    url: https://java.testcontainers.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Using Gradle 5.0 or higher, you can add the following to the"
+  - field: mavenCoordinates
+    value: org.testcontainers:testcontainers
+    url: https://repo1.maven.org/maven2/org/testcontainers/testcontainers/maven-metadata.xml
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/testcontainers/testcontainers-java/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-04-20
+    url: https://api.github.com/repos/testcontainers/testcontainers-java/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://search.maven.org/solrsearch/select?q=g:org.testcontainers+AND+a:testcontainers&core=gav&rows=200&wt=json
+    checkedAt: 2026-11-16
+    via: api
+  - field: x
+    value: https://twitter.com/testcontainers
+    url: https://java.testcontainers.org/getting_help/
+    checkedAt: 2026-11-16
+    via: page
+  - field: githubStargazers
+    value: 8764
+    url: https://api.github.com/repos/testcontainers/testcontainers-java
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 441 (2026-11-16)
+    url: https://api.github.com/repos/testcontainers/testcontainers-java/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 1632
+    url: https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/org.testcontainers%3Atestcontainers
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 9134
+    url: https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/org.testcontainers%3Atestcontainers
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, runsAs, renderingModes, runtimeMin, npmName, npmWeeklyDownloads, pypiName, dockerPulls, latestPrereleaseDate, endoflifeId, bluesky, mastodon, subreddit, newsletter, discord, forum, reportedInstalls, usageShare, pluginDirectory, pluginCount, wikidata]
+unreadable: []
+notes: >
+  Status: accepted per the CSV. The CSV homepage testcontainers.org answers with a redirect to testcontainers.com, the Testcontainers project site, which covers several languages; the Java docs are at java.testcontainers.org. The LICENSE copyright line names Richard North for 2015-2019, and the README names Richard North and other authors for 2015-2021; the maintainer follows the LICENSE line. Maven Central publishes no download figure, so none is recorded. The first upload in the Maven search index is 0.9.6 from 2015-07-22, older than the first GitHub release, so firstRelease follows it. The current major comes from the highest stable GitHub release, 2.0.5. runtimeMin is left out: the repository's build.gradle sets a JDK 17 toolchain and options.release 8 (a Java 8 bytecode target), which is a build requirement and no page states a runtime minimum. The docs say Docker is needed: "Docker - please see General Docker requirements" under Prerequisites, and the system requirements page says a Docker-API compatible container runtime is needed, such as Testcontainers Cloud or a local Docker install. Testcontainers Cloud is a separate product named as one way to get that runtime; it is not a hosted offering of this software and is not recorded as one. The docs name JUnit 4, JUnit 5 and Spock as supported test frameworks, a coined kind kept here. The core library is one JAR, and each specialised module has its own Maven dependency, described on its module page. Other language ports (Go, .NET, Node.js, Python, Rust, Haskell, Ruby) are separate candidates. The docs link a Slack workspace, which has no field here. The repository has 441 contributors across all pages; stars and contributors belong to this one repository.

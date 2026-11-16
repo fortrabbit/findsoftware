@@ -1,0 +1,112 @@
+id: upper-db
+name: upper/db
+status: accepted
+checkedAt: 2026-11-16
+description: Go data access layer with an ORM-style API and raw SQL access, for PostgreSQL, MySQL, SQL Server, CockroachDB, SQLite and MongoDB.
+facts:
+  - field: homepage
+    value: https://upper.io/
+    url: https://upper.io/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A productive data access layer for Go"
+  - field: repository
+    value: https://github.com/upper/db
+    url: https://api.github.com/repos/upper/db
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://upper.io/v4/
+    url: https://raw.githubusercontent.com/upper/db/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "See upper.io/v4 for documentation and code samples."
+  - field: maintainer
+    value: The upper.io/db authors
+    url: https://raw.githubusercontent.com/upper/db/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2012-present The upper.io/db authors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/upper
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [orm]
+    url: https://upper.io/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "It provides the convenience of an ORM while allowing you to use SQL whenever needed."
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/upper/db
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://raw.githubusercontent.com/upper/db/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "data access layer (DAL) for Go"
+  - field: runtimeMin
+    value: "1.23"
+    url: https://github.com/upper/db/blob/v4.10.0/go.mod
+    checkedAt: 2026-11-16
+    via: page
+    quote: "go 1.23.0"
+  - field: installMethod
+    value: go get
+    url: https://upper.io/v4/adapter/postgresql/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Use go get to download and install the adapter"
+  - field: databases
+    value: [postgres, mysql, sqlserver, cockroachdb, mongodb, sqlite]
+    url: https://raw.githubusercontent.com/upper/db/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "PostgreSQL MySQL MSSQL CockroachDB MongoDB QL SQLite"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/upper/db
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/upper/db/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: 2016
+    url: https://api.github.com/repos/upper/db/releases?per_page=100
+    checkedAt: 2026-11-16
+    via: api
+    quote: '"published_at":"2016-09-23T23:45:52Z"'
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/upper/db/releases?per_page=100
+    checkedAt: 2026-11-16
+    via: api
+    quote: '"tag_name":"v4.10.0"'
+  - field: latestReleaseDate
+    value: 2025-03-09
+    url: https://api.github.com/repos/upper/db/releases?per_page=100
+    checkedAt: 2026-11-16
+    via: api
+    quote: '"published_at":"2025-03-09T15:14:45Z"'
+  - field: githubStargazers
+    value: 3662
+    url: https://api.github.com/repos/upper/db
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 33
+    url: https://api.github.com/repos/upper/db/contributors
+    checkedAt: 2026-11-16
+    via: api
+notFound: [parent, basedOn, runsAs, renderingModes, endoflifeId, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, alternativeTo, forkOf, successorOf, pricingPage, paidEdition, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, hqCountry, maintainerType, npmName, npmWeeklyDownloads, dependentPackages, dependentRepos, hostedOffering, selfHostOption]
+unreadable: []
+notes: >
+  The module path is github.com/upper/db/v4, and the install page names go get for each adapter (the PostgreSQL adapter page is the one cited). Go modules have no download figure, so no registry figure is recorded. The README lists MSSQL and QL adapters; QL is an embedded Go SQL engine that has no value in the databases field, so only the databases the field holds are recorded. The highest stable release is v4.10.0 (2025-03-09); the repository also carries v4.6.0-rc1 and other release-candidate tags, which are not stable and do not set the major. runtimeMin 1.23 is the go line of go.mod at the v4.10.0 tag, a library's minimum Go version. The LICENSE copyright line names "The upper.io/db authors", a community of authors rather than a legal entity, so no hqCountry is recorded. The earliest release object in the repository is v0.9.0 of 2016-09-23, which the releases API returns first. The upper.io docs site is a Docusaurus site whose visible text carries the getting-started sentence on the databases the library talks to; the README list is the quote used for databases.

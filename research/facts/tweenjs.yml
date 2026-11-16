@@ -1,0 +1,124 @@
+id: tweenjs
+name: tween.js
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript and TypeScript tweening engine that animates properties of objects with easing functions.
+facts:
+  - field: homepage
+    value: https://tweenjs.github.io/tween.js/
+    url: https://tweenjs.github.io/tween.js/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "JavaScript/TypeScript animation engine"
+  - field: repository
+    value: https://github.com/tweenjs/tween.js
+    url: https://api.github.com/repos/tweenjs/tween.js
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/tweenjs/tween.js/blob/main/docs/user_guide.md
+    url: https://raw.githubusercontent.com/tweenjs/tween.js/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "User guide"
+  - field: firstRelease
+    value: 2011
+    url: https://api.github.com/repos/tweenjs/tween.js/tags
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Tween.js authors
+    url: https://raw.githubusercontent.com/tweenjs/tween.js/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2010-2012 Tween.js authors."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/tweenjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [animation]
+    url: https://raw.githubusercontent.com/tweenjs/tween.js/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "tweening engine for easy animations"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/tweenjs/tween.js
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://raw.githubusercontent.com/tweenjs/tween.js/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install @tweenjs/tween.js"
+  - field: installMethod
+    value: script tag
+    url: https://raw.githubusercontent.com/tweenjs/tween.js/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Note that, without the `importmap`, you can import directly from a CDN"
+  - field: installMethod
+    value: source build
+    url: https://raw.githubusercontent.com/tweenjs/tween.js/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Another approach is to download the source code with git, manually build the library, then place the output in your project."
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/tweenjs/tween.js/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/tweenjs/tween.js/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License"
+  - field: currentMajor
+    value: 25
+    url: https://api.github.com/repos/tweenjs/tween.js/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2024-07-26
+    url: https://api.github.com/repos/tweenjs/tween.js/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 10156
+    url: https://api.github.com/repos/tweenjs/tween.js
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 72
+    url: https://api.github.com/repos/tweenjs/tween.js/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: "@tweenjs/tween.js"
+    url: https://registry.npmjs.org/@tweenjs%2Ftween.js/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "23416515 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@tweenjs/tween.js
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 681
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@tweenjs%2Ftween.js
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 8498
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@tweenjs%2Ftween.js
+    checkedAt: 2026-11-16
+    via: api
+notFound: [basedOn, alternativeTo, forkOf, successorOf, parent, hqCountry, pricingPage, paidEdition, runtime, runsAs, runtimeMin, renderingModes, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, forum, discord, x, bluesky, mastodon, subreddit, newsletter, pluginDirectory, pluginCount, packagistName, pypiDownloads, endoflifeId, wikidata, reportedInstalls, usageShare, lastCommitDate, contentStore]
+unreadable: []
+notes: >
+  tween.js is an animation library for web pages, accepted under the animation group of the dev-libs rules. Its README uses Node.js only for the build from source and for the build tools that bundle it, and no sentence names the browser or Node.js as the library's runtime, so runtime and runsAs stay out. The LICENSE copyright line names "Tween.js authors" as the holder, which is the maintainer here; the README names Joe Pea (@trusktr) as the maintainer, a person the LICENSE does not name. The GitHub API reports the license as NOASSERTION, so the license comes from the LICENSE text, which is the MIT License and also carries the Robert Penner easing equations copyright. The UMD global build from a CDN is marked deprecated in the README, which says the UMD file will be removed in a future major version, and so is the CommonJS build, so neither is an installMethod entry; the script tag route above is the ES module import from a CDN, which the README recommends. The README's feature list says the library tweens the properties of an object and nothing else: it does not add CSS units, does not interpolate colors and makes no animation loop of its own, so the caller drives it from an update loop; easing functions are reusable outside a tween and custom easing functions are accepted. Its example chains a target value, a duration and an easing function onto a tween and starts it, then moves an element with a CSS transform from an update callback. The GitHub repository has tags named r1 and r2 that are not version numbers; r1 has a commit date of 2011-05-18, which is firstRelease. The install docs name the scoped npm package @tweenjs/tween.js, which is the package the figures count; the README's Chinese translation and the libtween C port are not recorded. The GitHub stars and contributors belong to the single repository. The deprecation notes in the README cover build outputs and module formats, not the project, so the project is not an end signal.

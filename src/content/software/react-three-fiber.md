@@ -14,6 +14,7 @@ firstRelease: 2019
 language: javascript
 basedOn:
   - react
+  - threejs
 installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
@@ -50,6 +51,9 @@ sources:
     checkedAt: 2026-11-16
   - field: basedOn
     url: https://raw.githubusercontent.com/pmndrs/react-three-fiber/master/readme.md
+    checkedAt: 2026-11-16
+  - field: basedOn
+    url: https://github.com/pmndrs/react-three-fiber/blob/master/readme.md
     checkedAt: 2026-11-16
   - field: installMethod
     url: https://r3f.docs.pmnd.rs/getting-started/installation

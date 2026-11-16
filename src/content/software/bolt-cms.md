@@ -22,6 +22,7 @@ hosting:
 runtimeMin: php 8.2
 basedOn:
   - symfony
+  - twig
   - api-platform
 contentStore:
   - database

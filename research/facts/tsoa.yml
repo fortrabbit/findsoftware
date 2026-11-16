@@ -1,0 +1,127 @@
+id: tsoa
+name: tsoa
+status: accepted
+checkedAt: 2026-11-16
+description: Library that generates an OpenAPI specification and API routes from TypeScript controllers and models.
+facts:
+  - field: homepage
+    value: https://tsoa-community.github.io/docs/
+    url: https://tsoa-community.github.io/docs/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "OpenAPI-compliant Web APIs using TypeScript and Node"
+  - field: repository
+    value: https://github.com/lukeautry/tsoa
+    url: https://api.github.com/repos/lukeautry/tsoa
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://tsoa-community.github.io/docs/getting-started
+    url: https://tsoa-community.github.io/docs/getting-started
+    checkedAt: 2026-11-16
+    via: page
+  - field: firstRelease
+    value: 2016
+    url: https://api.github.com/repos/lukeautry/tsoa/commits/v0.0.2
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Luke Autry
+    url: https://github.com/lukeautry/tsoa/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2016 Luke Autry"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/lukeautry
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [api-layer, openapi]
+    url: https://github.com/lukeautry/tsoa/blob/master/packages/tsoa/README.MD
+    checkedAt: 2026-11-16
+    via: page
+    quote: "OpenAPI-compliant REST APIs using TypeScript and Node"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/lukeautry/tsoa
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://github.com/lukeautry/tsoa/blob/master/packages/tsoa/README.MD
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Node.js 22.12 or later, 24 or 26"
+  - field: runtimeMin
+    value: "18"
+    url: https://github.com/lukeautry/tsoa/blob/v6.6.0/packages/tsoa/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"node": ">=18.0.0"'
+  - field: installMethod
+    value: npm
+    url: https://tsoa-community.github.io/docs/getting-started
+    checkedAt: 2026-11-16
+    via: page
+    quote: "yarn add tsoa express"
+  - field: license
+    value: MIT
+    url: https://github.com/lukeautry/tsoa/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/lukeautry/tsoa
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 6
+    url: https://api.github.com/repos/lukeautry/tsoa/releases/tags/v6.6.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2024-12-08
+    url: https://api.github.com/repos/lukeautry/tsoa/releases/tags/v6.6.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-11-15
+    url: https://api.github.com/repos/lukeautry/tsoa/releases/tags/v7.0.0-rc.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 3976
+    url: https://api.github.com/repos/lukeautry/tsoa
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 195
+    url: https://api.github.com/repos/lukeautry/tsoa/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: tsoa
+    url: https://registry.npmjs.org/tsoa
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "580957 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/tsoa
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 77
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tsoa
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 711
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tsoa
+    checkedAt: 2026-11-16
+    via: api
+notFound: [basedOn, forkOf, successorOf, parent, hqCountry, databases, adminUi, headlessApi, contentStore, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, alternativeTo, pricingPage, endoflifeId, usageShare, reportedInstalls, forum, discord, bluesky, mastodon, x, newsletter, subreddit, pluginDirectory, runsAs, renderingModes]
+unreadable: []
+notes: >
+  The root README.MD is a symlink to packages/tsoa/README.MD, and that file is the one read. The npm dist-tag latest points to 7.0.0-alpha.0, a prerelease, so the stable line is taken from GitHub: v6.6.0 (published 2024-12-08) is the newest stable release object and sets currentMajor, latestReleaseDate and runtimeMin. A tag v6.6.1 (committed 2025-01-27) has no GitHub release object and no npm version; a reviewer may decide whether it counts as the latest release. The 7.0.0-rc.0 release (2026-11-15) is the latestPrereleaseDate. runtime node comes from the main-branch README (Node.js 22.12 or later), while runtimeMin comes from the v6.6.0 manifest, which states node >=18.0.0. Routes are generated for Express, Hapi, Koa and Fastify, which the README names as supported middleware; tsoa is not built on any of them, so basedOn stays empty. The README asks for additional maintainers because of the number of pull requests and issues; that is a request for help, not an end statement. Stars and contributors are checked 2026-11-16.

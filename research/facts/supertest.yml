@@ -1,0 +1,124 @@
+id: supertest
+name: SuperTest
+status: accepted
+checkedAt: 2026-11-16
+description: Node.js library that tests HTTP servers with a fluent API of request and response assertions.
+facts:
+  - field: repository
+    value: https://github.com/forwardemail/supertest
+    url: https://api.github.com/repos/forwardemail/supertest
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/forwardemail/supertest/blob/master/README.md
+    url: https://raw.githubusercontent.com/forwardemail/supertest/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The motivation with this module is to provide a high-level abstraction for testing"
+  - field: maintainer
+    value: TJ Holowaychuk
+    url: https://raw.githubusercontent.com/forwardemail/supertest/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2014 TJ Holowaychuk"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/forwardemail/supertest/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2014 TJ Holowaychuk"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/forwardemail
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/forwardemail/supertest
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [api-testing]
+    url: https://raw.githubusercontent.com/forwardemail/supertest/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "HTTP assertions made easy via"
+  - field: basedOn
+    value: [superagent]
+    url: https://raw.githubusercontent.com/forwardemail/supertest/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "HTTP assertions made easy via [superagent](http://github.com/ladjs/superagent)"
+  - field: runtime
+    value: [node]
+    url: https://api.github.com/repos/forwardemail/supertest
+    checkedAt: 2026-11-16
+    via: api
+    quote: "Super-agent driven library for testing node.js HTTP servers"
+  - field: runtimeMin
+    value: "14"
+    url: https://raw.githubusercontent.com/forwardemail/supertest/v7.3.2/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"node": ">=14.18.0"'
+  - field: installMethod
+    value: npm
+    url: https://raw.githubusercontent.com/forwardemail/supertest/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install supertest --save-dev"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/forwardemail/supertest
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 7
+    url: https://api.github.com/repos/forwardemail/supertest/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-07
+    url: https://api.github.com/repos/forwardemail/supertest/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://registry.npmjs.org/supertest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: supertest
+    url: https://registry.npmjs.org/supertest/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "25263492 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/supertest
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 19319
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/supertest
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 416427
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/supertest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 14412
+    url: https://api.github.com/repos/forwardemail/supertest
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 92
+    url: https://api.github.com/repos/forwardemail/supertest/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, pluginDirectory, pluginCount, discord, forum, x, bluesky, mastodon, subreddit, newsletter, reportedInstalls, usageShare, packagistName, pypiName, endoflifeId, dockerPulls, httpArchiveSites, hostedOffering, latestPrereleaseDate, wikidata, lastCommitDate]
+unreadable: []
+notes: >
+  No homepage: the repository names no site, and the README title links to the superagent documentation site at forwardemail.github.io/superagent, which describes superagent, the library supertest is built on. The README says the module is "HTTP assertions made easy via superagent" and that it is driven by superagent; that is the basedOn statement. The repository description names node.js HTTP servers, which is the runtime statement, and the README shows require('supertest') in Node examples. No runsAs is recorded: the README does not say where the tests run beyond the examples. The README's Notes section says the library is "Inspired by" api-easy; that is inspiration, not alternativeTo or basedOn. The README names express, cookie-parser and should as example dependencies in its examples; they are not basedOn. The install section is the Getting Started section and gives one npm command with --save-dev. The LICENSE copyright line names TJ Holowaychuk and "other contributors"; the maintainer is recorded from the named holder. The README says the library is maintained for Forward Email and Lad, both GitHub organizations. The npm weekly figure is the sum of the daily counts for 2026-11-01 to 2026-11-07 for the package the install command names. The ecosyste.ms dependent counts were read on 2026-11-16. The first npm upload is 2012-06-26 and the repository was created on 2012-06-27, so firstRelease is 2012.
+  The README says supertest works with any test framework and shows mocha examples, that request() accepts an http.Server or a function and binds the server to an ephemeral port when it is not already listening, and that an expect() failure inside end() does not throw and must be passed to done or rethrown.

@@ -1,0 +1,135 @@
+id: typia
+name: Typia
+status: accepted
+checkedAt: 2026-11-16
+description: TypeScript transformer library that compiles pure TypeScript types into runtime validators, JSON serializers and random generators.
+facts:
+  - field: homepage
+    value: https://typia.io
+    url: https://typia.io/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Transform pure TypeScript types into 20,000x faster runtime validators, JSON serializers, and LLM schemas"
+  - field: repository
+    value: https://github.com/samchon/typia
+    url: https://api.github.com/repos/samchon/typia
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://typia.io/docs/
+    url: https://typia.io/docs/
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: Jeongho Nam
+    url: https://raw.githubusercontent.com/samchon/typia/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2022 Jeongho Nam"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/samchon
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [validation]
+    url: https://raw.githubusercontent.com/samchon/typia/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Super-fast Runtime Validators"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/samchon/typia
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://raw.githubusercontent.com/samchon/typia/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm i typia"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/samchon/typia/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/samchon/typia/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: 2022
+    url: https://api.github.com/repos/samchon/typia/commits/v2.0.2
+    checkedAt: 2026-11-16
+    via: api
+    quote: '"date":"2022-04-20T02:03:21Z"'
+  - field: currentMajor
+    value: 15
+    url: https://api.github.com/repos/samchon/typia/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: "2026-11-14"
+    url: https://api.github.com/repos/samchon/typia/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 5969
+    url: https://api.github.com/repos/samchon/typia
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 96
+    url: https://api.github.com/repos/samchon/typia/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: typia
+    url: https://registry.npmjs.org/typia/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "503887 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/typia
+    checkedAt: 2026-11-16
+    via: api
+  - field: ecosystemsMonthlyDownloads
+    value: "1786277 last month"
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/typia
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 94
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/typia
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 123
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/typia
+    checkedAt: 2026-11-16
+    via: api
+  - field: discord
+    value: https://discord.gg/E94XhzrUCZ
+    url: https://raw.githubusercontent.com/samchon/typia/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "https://discord.gg/E94XhzrUCZ"
+  - field: alternativeTo
+    value: [class-validator]
+    url: https://typia.io/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "AOT-compiled runtime validators outperform class-validator by 20,000x."
+  - field: alternativeTo
+    value: [zod]
+    url: https://typia.io/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Define a separate schema object (Zod, io-ts, class-validator decorators)"
+notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, importsFrom, wikidata, runtime, runtimeMin, runsAs, renderingModes, hostedOffering, selfHostOption, adminUi, headlessApi, templating, i18n, databases, contentStore, multisite, livePreview, userRoles, sso, x, bluesky, mastodon, subreddit, newsletter, forum, pluginDirectory, pluginCount, reportedInstalls, usageShare, packagistName, hexName, endoflifeId, latestPrereleaseDate, regions, apiLimits]
+unreadable: []
+notes: >
+  Accepted: a compile-time transformer that a TypeScript project installs from npm and builds with ttsc; the validators it emits are plain JavaScript in the build output. For bundlers such as Vite, Next.js, Webpack, Rollup and esbuild, the README points to the @ttsc/unplugin package from the ttsc project. The setup page says typia is a compile-time transformer, so the build runs through the TypeScript 7 transformer path; the current setup needs typia, typescript and ttsc (0.37.0 or newer), and the legacy setup page covers projects pinned to typia 12 and TypeScript below 7. The setup page states that the stock tsc, ts-node and tsx cannot apply the transform, and that ttsx runs TypeScript directly. Because typia runs at build time, no runtime, runtimeMin or runsAs is recorded: no page names the runtime environment of the emitted code. The README's function list names is, assert, validate, the JSON schema, stringify and parse functions, the LLM harness, Protocol Buffer and random functions, and says typia.is<T>() is transformed into a dedicated type checker by analyzing the type at compile time, with no runtime reflection; these are feature areas and are not recorded as fields. The utilization pages name MCP, the Vercel AI SDK, LangChain, NestJS, tRPC and Hono as places where typia is used; they are integrations the docs describe, not a parent or importsFrom. The homepage names class-validator in a speed comparison and lists Zod, io-ts and class-validator decorators under "Traditional Approach", so class-validator and zod are alternativeTo values; io-ts and class-transformer have no record. The README says typia was inspired by typescript-is; that is a credit, not forkOf or basedOn. The benchmark and speed claims on the homepage and README are the project's own measurements and are not recorded. The first GitHub tag in the repository's tag list, v2.0.2, has a commit dated 2022-04-20, and the first npm upload is 2022-10-20; firstRelease is 2022 either way. The latest stable release is v15.4.1 (2026-11-14), which matches the npm latest 15.4.1. The Open Collective backers link is a sponsorship page, not a paid edition. The repository is owned by the user samchon; LICENSE names Jeongho Nam, so that is the maintainer. The discord link is the badge's target in the README.

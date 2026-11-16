@@ -1,0 +1,1 @@
+uniforms is a React form library that builds a form from a schema. Bridge packages connect it to schema formats, and theme packages render its fields in UI kits, each installed as its own package. Its homepage and docs set it beside Formik, redux-form, React Final Form and react-hook-form in a comparison table.

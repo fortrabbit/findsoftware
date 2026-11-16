@@ -22,6 +22,7 @@ hosting:
 runtimeMin: node 14
 basedOn:
   - nestjs
+  - typeorm
 databases:
   - sqlite
   - mysql

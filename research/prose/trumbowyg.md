@@ -1,0 +1,1 @@
+Trumbowyg is a WYSIWYG editor that runs as a jQuery plugin. The docs' basics section shows the call that turns a div into the editor, and the installation section says to load jQuery before Trumbowyg. The docs describe a language parameter for translating the interface, and the project's site links a directory of plugins that extend the editor.

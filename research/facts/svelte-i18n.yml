@@ -1,0 +1,112 @@
+id: svelte-i18n
+name: svelte-i18n
+status: accepted
+checkedAt: 2026-11-16
+description: Internationalization library for Svelte that keeps the current locale, message dictionaries and formatters in Svelte stores.
+facts:
+  - field: repository
+    value: https://github.com/kaisermann/svelte-i18n
+    url: https://api.github.com/repos/kaisermann/svelte-i18n
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/kaisermann/svelte-i18n/blob/main/docs/Getting%20Started.md
+    url: https://raw.githubusercontent.com/kaisermann/svelte-i18n/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Documentation / Getting Started"
+  - field: maintainer
+    value: Christian Kaisermann
+    url: https://raw.githubusercontent.com/kaisermann/svelte-i18n/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright 2017 Christian Kaisermann"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/kaisermann/svelte-i18n/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright 2017 Christian Kaisermann"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/kaisermann
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/kaisermann/svelte-i18n
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [i18n]
+    url: https://raw.githubusercontent.com/kaisermann/svelte-i18n/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Internationalization for Svelte."
+  - field: basedOn
+    value: [svelte]
+    url: https://raw.githubusercontent.com/kaisermann/svelte-i18n/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Internationalization for Svelte."
+  - field: installMethod
+    value: npm
+    url: https://github.com/kaisermann/svelte-i18n/blob/main/docs/Getting%20Started.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "yarn add svelte-i18n"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/kaisermann/svelte-i18n
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://registry.npmjs.org/svelte-i18n/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2024-10-21
+    url: https://registry.npmjs.org/svelte-i18n
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: https://registry.npmjs.org/svelte-i18n
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: svelte-i18n
+    url: https://registry.npmjs.org/svelte-i18n/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "177366 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/svelte-i18n
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 81
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/svelte-i18n
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 586
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/svelte-i18n
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1380
+    url: https://api.github.com/repos/kaisermann/svelte-i18n
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 25
+    url: https://api.github.com/repos/kaisermann/svelte-i18n/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runtime, runtimeMin, runsAs, pluginDirectory, pluginCount, discord, forum, x, bluesky, mastodon, subreddit, newsletter, reportedInstalls, usageShare, packagistName, pypiName, endoflifeId, dockerPulls, httpArchiveSites, hostedOffering, latestPrereleaseDate, wikidata, lastCommitDate]
+unreadable: []
+notes: >
+  Status: accepted. The README opens with a notice: "svelte-i18n is due to some reworking, like moving from a singleton to instances. This will be worked on when I find the time and priority". That is a statement of deferred work, not a maintenance-mode or do-not-use statement, so the row stays accepted; a reviewer should decide whether it counts as a maintenance notice. The repository is not archived, the npm latest version 4.0.1 is not deprecated, and the latest npm upload is 2024-10-21, inside the four-year window. No GitHub release object exists; the newest stable tag is v4.0.0 and the npm stable version 4.0.1 is the newer one, so currentMajor and latestReleaseDate come from the npm registry. The README has no homepage; the npm package names the GitHub README as its homepage, so no homepage is recorded. Requirements in the README: Node ">= 11.15.0" and browsers "Chrome 38+, Edge 16+, Firefox 13+, Opera 25+, Safari 8+". Both name a platform, and the Node line is a requirement of the Svelte tooling rather than a runtime the library serves, so neither runtime nor runtimeMin is recorded and no runsAs (the README gives a browser support list, not a sentence about where it runs). A reviewer should decide whether the Node requirement is a runtime statement; the npm engines field at the main branch is ">= 16". The Svelte-Kit guide says the library supports SSR, which is compatibility and not renderingModes. The FAQ names intl-messageformat, which the library builds its formatting on; that is a dependency, not basedOn. The Migration guide covers v1 to v3 of this library, so importsFrom is absent. The install section of the Getting Started guide shows "yarn add svelte-i18n", recorded as the npm registry route. The npm weekly figure is the sum of the daily counts for 2026-11-01 to 2026-11-07 for the package the install guide names. The ecosyste.ms dependent counts were read on 2026-11-16 from a sync dated 2026-11-09. The CSV row names 70.5k a week, a different window, which the record does not use.
+  The Getting Started guide says a locale dictionary is a regular JSON object. It loads dictionaries with addMessages for synchronous imports and with register for loaders, and init sets fallbackLocale and initialLocale; the Svelte-Kit guide sets the locale on the server from the Accept-Language header.

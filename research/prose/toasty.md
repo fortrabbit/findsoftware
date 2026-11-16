@@ -1,0 +1,1 @@
+Toasty is an async ORM for Rust that maps structs annotated with derive macros to databases. Its guide describes SQL support for SQLite, Turso, PostgreSQL and MySQL, and NoSQL support for DynamoDB. A project adds it to Cargo.toml as a dependency, and the source is on [GitHub](https://github.com/tokio-rs/toasty).

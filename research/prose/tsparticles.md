@@ -1,0 +1,3 @@
+tsParticles draws animated particle effects, confetti and fireworks in a web page. It is written in TypeScript and published on npm as a set of packages: the install guide starts with an engine package and a bundle such as slim, and it also lists CDN hosts for the same files. The library depends on browser APIs, so it runs in the visitor's browser.
+
+The README names official wrappers for several frameworks, including React, Vue and Angular. A compatibility package takes configurations written for particles.js, which the README names as the migration route. The [installation guide](https://particles.js.org/guide/installation) lists the npm and CDN options.

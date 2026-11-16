@@ -1,0 +1,1 @@
+swagger-php is a PHP library that generates OpenAPI documentation from PHP attributes and from existing PHPDoc comments in the source code. It can be used from PHP code or through the `openapi` command line interface that ships with the package.

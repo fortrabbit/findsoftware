@@ -1,0 +1,122 @@
+id: undici
+name: undici
+status: accepted
+checkedAt: 2026-11-16
+description: HTTP/1.1 client written from scratch for Node.js, with its own request API and a fetch implementation.
+facts:
+  - field: homepage
+    value: https://undici.nodejs.org/
+    url: https://undici.nodejs.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "An HTTP/1.1 client, written from scratch for Node.js."
+  - field: repository
+    value: https://github.com/nodejs/undici
+    url: https://api.github.com/repos/nodejs/undici
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://undici.nodejs.org/
+    url: https://undici.nodejs.org/
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: Matteo Collina
+    url: https://raw.githubusercontent.com/nodejs/undici/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) Matteo Collina and Undici contributors"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/nodejs
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: https://registry.npmjs.org/undici
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/nodejs/undici
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [data-fetching]
+    url: https://raw.githubusercontent.com/nodejs/undici/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "An HTTP/1.1 client, written from scratch for Node.js."
+  - field: runtime
+    value: [node]
+    url: https://raw.githubusercontent.com/nodejs/undici/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "An HTTP/1.1 client, written from scratch for Node.js."
+  - field: runtimeMin
+    value: "22"
+    url: https://raw.githubusercontent.com/nodejs/undici/v8.12.4/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"node": ">=22.19.0"'
+  - field: installMethod
+    value: [npm]
+    url: https://raw.githubusercontent.com/nodejs/undici/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm i undici"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/nodejs/undici
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 8
+    url: https://api.github.com/repos/nodejs/undici/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-05
+    url: https://api.github.com/repos/nodejs/undici/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 7740
+    url: https://api.github.com/repos/nodejs/undici
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 422
+    url: https://api.github.com/repos/nodejs/undici/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: undici
+    url: https://registry.npmjs.org/undici/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "326484951 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/undici
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 1956
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/undici
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 98048
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/undici
+    checkedAt: 2026-11-16
+    via: api
+  - field: forum
+    value: https://github.com/nodejs/undici/discussions
+    url: https://raw.githubusercontent.com/nodejs/undici/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Have a question about using Undici?"
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, hqCountry, paidEdition, pricingPage, runsAs, renderingModes, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, packagistName, pypiName, dockerPulls, httpArchiveSites, hostedOffering, latestPrereleaseDate, wikidata, lastCommitDate]
+unreadable: []
+notes: >
+  Accepted as an HTTP client under the wave 69 ruling. Node.js bundles a built-in fetch() that the README says is powered by undici, and undici's own page compares the two under "Undici vs. Fetch"; no record id is named, so no field holds it. The repository nodejs/undici is a Node.js project under the nodejs organization, and the LICENSE copyright line names Matteo Collina and Undici contributors; the README's Collaborators and Releasers lists name more people, recorded in no field. The stars and contributors belong to the repository, which holds only this package. The README says the HTTP/1 parser requires WebAssembly and that Client and dispatcher requests fail where WebAssembly is unavailable, for example Node.js started with --jitless, so the module does not run there. The README's Long Term Support table lists 5.x, 6.x, 7.x and 8.x lines with their Node.js ranges; only the current major is recorded, and runtimeMin is the 8.x line's minimum from the package.json at the v8.12.4 tag. The README's API methods are request, stream, pipeline, connect and fetch, and its Benchmarks table names node-fetch, axios, request, got and superagent in a results table with no sentence calling them alternatives, so no alternativeTo is recorded; a reviewer may decide. The README also points questions to GitHub Discussions and to the OpenJS Slack channel; the Slack link is a general foundation chat and is not recorded. The homepage footer links the Node.js and OpenJS accounts and Discord, which are not undici's own, so no social field is recorded. The npm weekly figure is for the undici package the install line names, over 2026-11-01 to 2026-11-07.

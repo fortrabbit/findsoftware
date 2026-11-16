@@ -1,0 +1,1 @@
+uPlot is a JavaScript chart library for time series, lines, areas, OHLC and bar charts, drawn on a Canvas 2D context. Its [docs folder](https://github.com/leeoniya/uPlot/blob/master/docs/README.md) opens with a conceptual overview.

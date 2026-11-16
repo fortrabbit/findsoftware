@@ -1,0 +1,1 @@
+Toastify JS is a vanilla JavaScript library that shows stacked toast notification messages on a web page. It is installed from npm and imported into a module, or its script and stylesheet are loaded from the jsDelivr CDN.

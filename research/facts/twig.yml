@@ -1,0 +1,124 @@
+id: twig
+name: Twig
+status: accepted
+checkedAt: 2026-11-16
+description: Template engine for PHP that compiles templates to optimized PHP code and can run untrusted templates in a sandbox.
+facts:
+  - field: homepage
+    value: https://twig.symfony.com/
+    url: https://twig.symfony.com/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The flexible, fast, and secure template engine for PHP"
+  - field: repository
+    value: https://github.com/twigphp/Twig
+    url: https://api.github.com/repos/twigphp/Twig
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://twig.symfony.com/doc/3.x/intro.html
+    url: https://twig.symfony.com/doc/3.x/intro.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Welcome to the documentation for Twig, the flexible, fast, and secure template engine for PHP."
+  - field: firstRelease
+    value: 2009
+    url: https://api.github.com/repos/twigphp/Twig/tags
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Twig Team
+    url: https://raw.githubusercontent.com/twigphp/Twig/3.x/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2009-present by the Twig Team."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/twigphp
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [templating]
+    url: https://raw.githubusercontent.com/twigphp/Twig/3.x/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Twig is a template language for PHP."
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/twigphp/Twig
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/twigphp/Twig/blob/v3.30.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": ">=8.1.0"'
+  - field: runtimeMin
+    value: "8.1.0"
+    url: https://github.com/twigphp/Twig/blob/v3.30.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": ">=8.1.0"'
+  - field: installMethod
+    value: composer
+    url: https://twig.symfony.com/doc/3.x/intro.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The recommended way to install Twig is via Composer:"
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/twigphp/Twig/blob/v3.30.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"license": "BSD-3-Clause"'
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/twigphp/Twig/blob/v3.30.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"license": "BSD-3-Clause"'
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/twigphp/Twig/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-25
+    url: https://api.github.com/repos/twigphp/Twig/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 8380
+    url: https://api.github.com/repos/twigphp/Twig
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 401
+    url: https://api.github.com/repos/twigphp/Twig/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: twig/twig
+    url: https://packagist.org/packages/twig/twig.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "513258663 (total)"
+    url: https://packagist.org/packages/twig/twig.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 5847
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/twig%2Ftwig
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 131829
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/twig%2Ftwig
+    checkedAt: 2026-11-16
+    via: api
+notFound: [basedOn, alternativeTo, forkOf, successorOf, parent, hqCountry, pricingPage, paidEdition, runsAs, renderingModes, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, forum, discord, x, bluesky, mastodon, subreddit, newsletter, pluginDirectory, pluginCount, npmName, pypiDownloads, endoflifeId, wikidata, reportedInstalls, usageShare, lastCommitDate, contentStore]
+unreadable: []
+notes: >
+  Twig is a PHP template engine, accepted as a templating library used by PHP sites and applications. The composer.json at the latest release tag v3.30.0 gives PHP 8.1 as the minimum, the same figure the docs state in their prerequisites, so runtimeMin is 8.1.0 and the runtime is php. The LICENSE copyright line names the Twig Team, the composer.json authors list names Fabien Potencier as Lead Developer and Armin Ronacher as Project Founder; those people are notes and the maintainer follows the LICENSE. The docs state the documentation is under the new BSD license; that is the documentation's license, so it is notes and not a second license entry. The GitHub API reports the repository default branch as 3.x; the release figures come from the releases API. The newest pre-release is v4.0.0-alpha1, dated 2026-05-17, which is older than the 3.30.0 release, so it is not latestPrereleaseDate. The README says Twig's syntax is similar to the Django and Jinja template languages; that is a description of syntax, not an alternative named by the project, so no alternativeTo. The docs list Symfony, Drupal, phpBB and other projects as users of Twig, and that is a list of users, not a basedOn or importsFrom relation. The README's sponsor block names Blackfire.io and is left out. The Packagist total counts all downloads of twig/twig since its first upload; the ecosyste.ms counts are its dependent Packagist packages and repositories. The homepage says Twig compiles templates down to plain optimized PHP code, and its sandbox mode evaluates templates in which the user has access to a limited set of tags, filters and object methods defined by the developer; the docs introduction says a loader finds templates, an environment stores the configuration, and render() loads a named template with variables, with a cache option for compiled templates. Automatic output escaping is also a feature the homepage names.

@@ -22,6 +22,7 @@ hosting:
 runtimeMin: php 8.3
 basedOn:
   - symfony
+  - twig
 contentStore:
   - flat-file
 adminUi: true

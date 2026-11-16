@@ -1,0 +1,116 @@
+id: tera
+name: Tera
+status: accepted
+checkedAt: 2026-11-16
+description: "Rust template engine whose syntax is inspired by Jinja2 and the Django template language."
+facts:
+  - field: homepage
+    value: https://keats.github.io/tera/
+    url: https://keats.github.io/tera/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "To use Tera in your Rust projects, simply add it to your Cargo.toml"
+  - field: repository
+    value: https://github.com/Keats/tera
+    url: https://api.github.com/repos/Keats/tera
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://docs.rs/tera
+    url: https://github.com/Keats/tera/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "API documentation is available on"
+  - field: firstRelease
+    value: 2016
+    url: https://crates.io/api/v1/crates/tera
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Vincent Prouillet
+    url: https://github.com/Keats/tera/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2025 Vincent Prouillet"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/Keats
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [templating]
+    url: https://github.com/Keats/tera/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Tera is a template engine inspired by"
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/Keats/tera
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [rust]
+    url: https://keats.github.io/tera/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "To use Tera in your Rust projects"
+  - field: installMethod
+    value: cargo
+    url: https://keats.github.io/tera/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "To use Tera in your Rust projects, simply add it to your Cargo.toml"
+  - field: license
+    value: MIT
+    url: https://crates.io/api/v1/crates/tera
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://crates.io/api/v1/crates/tera
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: "2"
+    url: https://crates.io/api/v1/crates/tera
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: "2026-09-11"
+    url: https://crates.io/api/v1/crates/tera
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 4350
+    url: https://api.github.com/repos/Keats/tera
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 18 (2026-11-16)
+    url: https://api.github.com/repos/Keats/tera/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: crateName
+    value: tera
+    url: https://crates.io/api/v1/crates/tera
+    checkedAt: 2026-11-16
+    via: api
+  - field: crateDownloads
+    value: 43745099 total
+    url: https://crates.io/api/v1/crates/tera
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 434
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/tera
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 1342
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/tera
+    checkedAt: 2026-11-16
+    via: api
+notFound: [parent, basedOn, alternativeTo, successorOf, forkOf, importsFrom, pricingPage, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, endoflifeId, docker, runtimeMin, runsAs, renderingModes, sso, headlessApi, adminUi, databases, contentStore, i18n, hqCountry, paidEdition]
+unreadable: []
+notes: >
+  The CSV homepage is the plain http address; the site also answers over https with the same content, so the https address is recorded. There are no GitHub releases: the repository has 44 tags (v2.4.0 is the newest) and the release source is crates.io, so currentMajor, latestReleaseDate and firstRelease come from the crate. The crate's first upload is 0.1.0 on 2016-04-04, older than the oldest tag (v0.2.0, 2016-09-27). The README says Tera is inspired by Jinja2 and the Django template language and that it intentionally deviates from both: inspired by is not a based-on statement, so basedOn stays empty. The getting-started page and the GitHub description say the syntax is based on Jinja2 and Django templates, which names the syntax, not software Tera extends, and the README says only the overall look and feel is similar. The README names a v1 migration guide for existing users (MIGRATION.md), which is a version upgrade inside the project and not an importsFrom statement. The optional tera-contrib crate holds filters and functions that need third-party dependencies; it is part of the same repository and is not a separate record. The crate manifest sets edition 2024 and no rust-version, so no runtimeMin is recorded. The LICENSE copyright line names Vincent Prouillet, and the repository owner is the user Keats. The GitHub contributors count covers the repository.

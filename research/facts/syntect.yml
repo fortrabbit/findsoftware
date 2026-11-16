@@ -1,0 +1,112 @@
+id: syntect
+name: syntect
+status: accepted
+checkedAt: 2026-11-16
+description: "Rust library that highlights source code using Sublime Text syntax definitions."
+facts:
+  - field: repository
+    value: "https://github.com/trishume/syntect"
+    url: "https://api.github.com/repos/trishume/syntect"
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: "https://docs.rs/syntect"
+    url: "https://github.com/trishume/syntect/blob/master/Readme.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "API docs with examples"
+  - field: maintainer
+    value: "Tristan Hume"
+    url: "https://github.com/trishume/syntect/blob/master/LICENSE.txt"
+    checkedAt: 2026-11-16
+    via: api
+    quote: "Copyright (c) 2017 Tristan Hume, Keith Hall, Google Inc and other contributors"
+  - field: repoOwnerType
+    value: user
+    url: "https://api.github.com/users/trishume"
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: "https://crates.io/api/v1/crates/syntect/versions"
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [syntax-highlight]
+    url: "https://github.com/trishume/syntect/blob/master/Readme.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "is a syntax highlighting library for Rust"
+  - field: language
+    value: Rust
+    url: "https://api.github.com/repos/trishume/syntect"
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [rust]
+    url: "https://github.com/trishume/syntect/blob/master/Readme.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "is a syntax highlighting library for Rust"
+  - field: installMethod
+    value: cargo
+    url: "https://github.com/trishume/syntect/blob/master/Readme.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "You can add it to your `Cargo.toml` with the following command"
+  - field: license
+    value: MIT
+    url: "https://github.com/trishume/syntect/blob/master/LICENSE.txt"
+    checkedAt: 2026-11-16
+    via: api
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: "https://github.com/trishume/syntect/blob/master/LICENSE.txt"
+    checkedAt: 2026-11-16
+    via: api
+    quote: "MIT License"
+  - field: currentMajor
+    value: "5"
+    url: "https://api.github.com/repos/trishume/syntect/releases"
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2025-09-27
+    url: "https://api.github.com/repos/trishume/syntect/releases"
+    checkedAt: 2026-11-16
+    via: api
+  - field: crateName
+    value: "syntect"
+    url: "https://crates.io/api/v1/crates/syntect"
+    checkedAt: 2026-11-16
+    via: api
+  - field: crateDownloads
+    value: "41203449 (total)"
+    url: "https://crates.io/api/v1/crates/syntect"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 225
+    url: "https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/syntect"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 920
+    url: "https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/syntect"
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2464
+    url: "https://api.github.com/repos/trishume/syntect"
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 88
+    url: "https://api.github.com/repos/trishume/syntect/contributors?per_page=1"
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, pricingPage, paidEdition, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, runtimeMin, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, hqCountry, wikidata, selfHostOption, hostedOffering, regions, apiLimits, endoflifeId, maintainerType]
+unreadable: []
+notes: >
+  Status accepted from the CSV row. The README says: "I consider this project mostly complete, I still maintain it and review PRs, but it's not under heavy development." The maintainer says the project is still maintained and pull requests are reviewed, so this is no end or maintenance-mode statement. Criteria 1 to 3: a syntax highlighting library for Rust programs, installed with cargo add, with a documented Cargo.toml route. Criterion 4: the newest stable release is v5.3.0 (2025-09-27, GitHub release and crates.io), the repository is not archived, and the default branch had commits on 2026-10-31. The homepage is absent: crates.io lists no homepage, and docs.rs is the generated API documentation, recorded as docs. The crate's first version 0.3.2 is dated 2016-06-20 on crates.io, the oldest release of any kind, so firstRelease is 2016. No rust-version is set in Cargo.toml at the latest tag or on crates.io, so runtimeMin is unset. The LICENSE copyright line names Tristan Hume, Keith Hall and Google Inc with other contributors; the maintainer is the first named holder, and Google Inc is a separate legal entity. The README says the library is used in production by at least two companies and lists open source projects that use it (bat, Scribe, syntect_server, xi-editor and others); these are not counts and are not recorded. crates.io reports 17,749,512 downloads over the recent window in addition to the 41,203,449 total recorded. The README lists built-in output to colored HTML pre tags or 24-bit ANSI terminal escape sequences; output formats are coined kinds and stay in notes. It also describes two regex engines, the default oniguruma and a pure Rust fancy-regex mode. Stars and contributors belong to the single repository.

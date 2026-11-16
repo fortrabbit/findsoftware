@@ -1,0 +1,118 @@
+id: ueberauth
+name: Überauth
+status: accepted
+checkedAt: 2026-11-16
+description: Elixir authentication library for Plug-based web applications that runs the request and callback phases of third-party login strategies.
+facts:
+  - field: repository
+    value: https://github.com/ueberauth/ueberauth
+    url: https://api.github.com/repos/ueberauth/ueberauth
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://hexdocs.pm/ueberauth
+    url: https://raw.githubusercontent.com/ueberauth/ueberauth/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: Sonny Scroggin
+    url: https://raw.githubusercontent.com/ueberauth/ueberauth/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2015 Sonny Scroggin"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/ueberauth
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [auth]
+    url: https://raw.githubusercontent.com/ueberauth/ueberauth/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "An Elixir Authentication System for Plug-based Web Applications"
+  - field: language
+    value: Elixir
+    url: https://api.github.com/repos/ueberauth/ueberauth
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [elixir]
+    url: https://raw.githubusercontent.com/ueberauth/ueberauth/v0.11.0/mix.exs
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'elixir: "~> 1.14",'
+  - field: installMethod
+    value: mix
+    url: https://hex.pm/api/packages/ueberauth
+    checkedAt: 2026-11-16
+    via: api
+    quote: '"name":"ueberauth"'
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/ueberauth/ueberauth/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/ueberauth/ueberauth/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: firstRelease
+    value: 2015
+    url: https://hex.pm/api/packages/ueberauth
+    checkedAt: 2026-11-16
+    via: api
+    quote: '"inserted_at":"2015-11-15T19:04:00.793351Z"'
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/ueberauth/ueberauth/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-11"
+    url: https://api.github.com/repos/ueberauth/ueberauth/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1718
+    url: https://api.github.com/repos/ueberauth/ueberauth
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 103
+    url: https://api.github.com/repos/ueberauth/ueberauth/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: hexName
+    value: ueberauth
+    url: https://hex.pm/api/packages/ueberauth
+    checkedAt: 2026-11-16
+    via: api
+  - field: hexDownloads
+    value: "10562993 total"
+    url: https://hex.pm/api/packages/ueberauth
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 123
+    url: https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/ueberauth
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 680
+    url: https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/ueberauth
+    checkedAt: 2026-11-16
+    via: api
+  - field: pluginDirectory
+    value: https://github.com/ueberauth/ueberauth/wiki/List-of-Strategies
+    url: https://raw.githubusercontent.com/ueberauth/ueberauth/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "[Wiki](https://github.com/ueberauth/ueberauth/wiki/List-of-Strategies) for a"
+notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, wikidata, runsAs, renderingModes, hostedOffering, selfHostOption, adminUi, headlessApi, templating, i18n, databases, contentStore, multisite, livePreview, userRoles, sso, x, bluesky, mastodon, subreddit, newsletter, discord, forum, pluginCount, reportedInstalls, usageShare, npmName, packagistName, pypiName, endoflifeId, latestPrereleaseDate, regions, apiLimits, runtimeMin, ecosystemsMonthlyDownloads]
+unreadable: []
+notes: >
+  Accepted: an authentication library that a Phoenix or other Plug application adds as a Hex dependency to start third-party login through strategy packages. Monorepo: the GitHub repository holds the core library and the strategy packages under strategies/ (Apple, Facebook, GitHub, Google, Twitter and others), each published to Hex separately. Stars and contributors belong to the monorepo; the Hex figures and the mix route are for the core package ueberauth, which the README badges name. The README installs strategy packages ({:ueberauth_github, "~> 0.8"}) rather than the core package; the core route is recorded from the Hex package, which has no install sentence. The name is the README title, Überauth; the Hex package and the GitHub repository use ueberauth. The latest stable release is v0.11.0 (2026-10-11), which matches the Hex latest; the major is 0, and the minor line 11 is not recorded as a field. The repository's release list shows strategy releases among the core ones, so the 2026-10-11 date is the core release. The first release is v0.1.0 (2015-11-15), which matches the Hex 0.1.0 upload. The mix.exs at v0.11.0 requires Elixir ~> 1.14; the Elixir version is a language requirement, no OTP minimum is stated, so runtimeMin is not recorded. The tagline names Plug-based web applications; Plug has no record in research/facts, so no basedOn is recorded. The README says Überauth is heavily inspired by Omniauth and "You could call it a port but it is significantly different"; that is a credit, not forkOf or alternativeTo. The README says Ueberauth provides only the initial authentication challenge and does not authenticate each request, and that it integrates with mix phx.gen.auth; Guardian is named for request authentication, and the Guardian record is a separate project. The README describes the request phase (a redirect to an OAuth2 authorization URL or a form) and the callback phase, which yields an Ueberauth.Auth struct or an Ueberauth.Failure struct for the application's controller, and it shows the router and controller code for Phoenix. The Customization section lists providers in config/config.exs, and the default request and callback paths are /auth/<provider> and /auth/<provider>/callback. The README's Ueberauth.Strategy.Test module is a testing helper for controllers, not recorded as a field. The Hex all-time download total is the only figure recorded; the ecosyste.ms figure for Hex is a total and is not recorded per month. The Hex package lists no maintainers; the LICENSE line names Sonny Scroggin, which is the maintainer.

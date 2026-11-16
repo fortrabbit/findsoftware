@@ -1,0 +1,100 @@
+id: tape
+name: tape
+status: accepted
+checkedAt: 2026-11-16
+description: TAP-producing test harness for Node.js and browsers, run from test files or the tape command.
+facts:
+  - field: repository
+    value: https://github.com/tape-testing/tape
+    url: https://api.github.com/repos/tape-testing/tape
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: James Halliday
+    url: https://raw.githubusercontent.com/tape-testing/tape/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2012 James Halliday"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/tape-testing
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [testing]
+    url: https://raw.githubusercontent.com/tape-testing/tape/master/readme.markdown
+    checkedAt: 2026-11-16
+    via: page
+    quote: "producing test harness for node and browsers"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/tape-testing/tape
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: node
+    url: https://raw.githubusercontent.com/tape-testing/tape/master/readme.markdown
+    checkedAt: 2026-11-16
+    via: page
+    quote: "producing test harness for node and browsers"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/tape-testing/tape/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: 2012
+    url: https://registry.npmjs.org/tape
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 5
+    url: https://registry.npmjs.org/tape
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-14
+    url: https://registry.npmjs.org/tape
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: tape
+    url: https://registry.npmjs.org/tape
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "910013 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/tape
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 5798
+    url: https://api.github.com/repos/tape-testing/tape
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 100
+    url: https://api.github.com/repos/tape-testing/tape/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 37690
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tape
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 297164
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tape
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://raw.githubusercontent.com/tape-testing/tape/master/readme.markdown
+    checkedAt: 2026-11-16
+    via: page
+    quote: "With [npm](https://npmjs.org) do:"
+notFound: [homepage, docs, runtimeMin, runsAs, renderingModes, hqCountry, maintainerType, pricingPage, paidEdition, pluginDirectory, forum, discord, x, bluesky, newsletter, basedOn, alternativeTo, importsFrom, databases, sso, adminUi, headlessApi, templating, i18n]
+unreadable: []
+notes: >
+  Repository only: the project has no website of its own. The GitHub repository sets no homepage and the npm package names the repository as its homepage, so no homepage is recorded, and the README is the only documentation. The README says "TAP-producing test harness for node and browsers" and its examples run tests with node or the tape binary; no page states where tests run as a service, so no runsAs is recorded, and the runtime is node. The TAP output format (TAP version 13 in the examples) is a specification the output follows, recorded here rather than as a field. The maintainer follows the LICENSE copyright line (James Halliday); the package.json author is Jordan Harband, and the npm maintainers are ljharb, domenic and raynos, so the maintainer's name differs by source. The repository has no GitHub release objects and its tags match the npm versions, so currentMajor and latestReleaseDate come from the npm registry (5.10.3, 2026-10-14). The git tag v0.0.0 dates from 2012-11-25, the same day as the npm 0.0.0 upload that firstRelease records. npm marks versions 4.6.1 and 5.6.2 deprecated; neither is the latest version, so no end signal applies. The README's "Things that go well with tape" section lists pretty reporters, uncaught-exception helpers, babel preloading and other test-syntax packages; none is a plugin of tape recorded as pluginDirectory, and none is an alternative the project names. The package has no engines field in its manifest, so no runtimeMin is recorded. The GitHub repository reports JavaScript as its language. The README says the assertion methods are heavily influenced or copied from the methods in node-tap; that is a stated influence, not an alternative or a fork, so no relationship field is recorded. The README's "Things that go well with tape" section says the core is minimal and extra features come from other modules used alongside tape.
