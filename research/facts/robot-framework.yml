@@ -1,0 +1,136 @@
+id: robot-framework
+name: Robot Framework
+status: accepted
+checkedAt: 2026-11-16
+description: Open source automation framework for acceptance testing, test automation and robotic process automation, implemented in Python.
+facts:
+  - field: homepage
+    value: https://robotframework.org/
+    url: https://robotframework.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "an open source automation framework for test automation"
+  - field: repository
+    value: https://github.com/robotframework/robotframework
+    url: https://api.github.com/repos/robotframework/robotframework
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://docs.robotframework.org/docs
+    url: https://docs.robotframework.org/docs
+    checkedAt: 2026-11-16
+    via: page
+    quote: "We hope these guides will help you get started with Robot Framework faster and easier"
+  - field: maintainer
+    value: Robot Framework Foundation
+    url: https://github.com/robotframework/robotframework/blob/v7.5.1/src/robot/__init__.py
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright 2016- Robot Framework Foundation"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/robotframework
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/robotframework/robotframework
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://robotframework.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Robot Framework is implemented with Python, so you need"
+  - field: runtimeMin
+    value: "3.8"
+    url: https://github.com/robotframework/robotframework/blob/v7.5.1/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Robot Framework requires Python 3.8 or newer"
+  - field: categories
+    value: [testing]
+    url: https://github.com/robotframework/robotframework/blob/v7.5.1/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "a generic open source automation framework for acceptance testing"
+  - field: installMethod
+    value: pip
+    url: https://github.com/robotframework/robotframework/blob/v7.5.1/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "pip install robotframework"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/robotframework/robotframework/blob/v7.5.1/LICENSE.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Apache License Version 2.0, January 2004"
+  - field: license
+    value: CC-BY-3.0
+    url: https://github.com/robotframework/robotframework/blob/v7.5.1/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Robot Framework documentation and other similar content use the"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/robotframework/robotframework/blob/v7.5.1/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Robot Framework is open source software provided under the"
+  - field: currentMajor
+    value: 7
+    url: https://api.github.com/repos/robotframework/robotframework/releases/tags/v7.5.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: "2026-11-02"
+    url: https://api.github.com/repos/robotframework/robotframework/releases/tags/v7.5.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: "2008"
+    url: https://api.github.com/repos/robotframework/robotframework/commits/2.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiName
+    value: robotframework
+    url: https://pypi.org/pypi/robotframework/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: 835158 per week (last_week)
+    url: https://pypistats.org/api/packages/robotframework/recent
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 11987
+    url: https://api.github.com/repos/robotframework/robotframework
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 212
+    url: https://api.github.com/repos/robotframework/robotframework/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: newsletter
+    value: https://seu2.cleverreach.com/f/362604-365504/
+    url: https://robotframework.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Subscribe to Robot Framework Newsletter"
+  - field: forum
+    value: https://forum.robotframework.org/
+    url: https://github.com/robotframework/robotframework/blob/v7.5.1/README.rst
+    checkedAt: 2026-11-16
+    via: page
+  - field: x
+    value: https://twitter.com/robotframework
+    url: https://robotframework.org/
+    checkedAt: 2026-11-16
+    via: page
+notFound: [hqCountry, parent, wikidata, pricingPage, usageShare, reportedInstalls, discord, mastodon, bluesky, subreddit, pluginDirectory, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, alternativeTo, forkOf, successorOf, basedOn, runsAs, renderingModes, paidEdition, npmName, npmWeeklyDownloads, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  The CSV lists the homepage as http://robotframework.org; the https address answers 200 and is recorded. The README calls the framework "a generic open source automation framework for acceptance testing, acceptance test driven development (ATDD), and robotic process automation (RPA)", so the category is testing, and the criterion 1 reading is a test and RPA tool that a creator runs against a site, not a site component; the testing-library ruling covers it. The README says tests are run "from the command line using the robot command", which is a usage statement and not a runsAs statement, so runsAs is left out. Development is "sponsored by non-profit Robot Framework Foundation"; the copyright line of src/robot/__init__.py reads "Copyright 2008-2015 Nokia Networks" and "Copyright 2016- Robot Framework Foundation", so the foundation is recorded as maintainer by the current line and the Nokia line goes here only. The LICENSE file carries no copyright line. The README gives a second license for documentation and other similar content (Creative Commons Attribution 3.0 Unported), recorded as its own entry. The Python minimum comes from the README at v7.5.1, which states Python 3.8 or newer. The PyPI figure is the pypistats last_week count for the robotframework package. The stars and contributors belong to the robotframework repository, which holds the framework itself and no other package. The firstRelease year comes from the 2.0 tag commit dated 2008-06-24, which is an ordinary commit and not a repository import. Libraries in Python, Java and other languages extend it; the homepage and README name the ecosystem but no parent. The homepage lists a Slack workspace and a Forum; the forum link is taken from the README and the Slack link is not a field.

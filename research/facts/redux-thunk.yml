@@ -1,0 +1,105 @@
+id: redux-thunk
+name: Redux Thunk
+status: accepted
+checkedAt: 2026-11-16
+description: Redux middleware that lets action creators return functions, which can dispatch actions and read the store state.
+facts:
+  - field: repository
+    value: https://github.com/reduxjs/redux-thunk
+    url: https://api.github.com/repos/reduxjs/redux-thunk
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://redux.js.org/usage/writing-logic-thunks
+    url: https://redux.js.org/usage/writing-logic-thunks
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Writing Logic with Thunks"
+  - field: categories
+    value: [state]
+    url: https://github.com/reduxjs/redux-thunk/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "for Redux. It allows writing functions with logic inside"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/reduxjs/redux-thunk
+    checkedAt: 2026-11-16
+    via: api
+  - field: basedOn
+    value: [redux]
+    url: https://github.com/reduxjs/redux-thunk/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "for Redux. It allows writing functions with logic inside"
+  - field: installMethod
+    value: npm
+    url: https://github.com/reduxjs/redux-thunk/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install redux-thunk"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/reduxjs/redux-thunk
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Dan Abramov
+    url: https://github.com/reduxjs/redux-thunk/blob/master/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2015-present Dan Abramov"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/reduxjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://github.com/reduxjs/redux-thunk/releases/tag/v0.1.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://github.com/reduxjs/redux-thunk/releases/tag/v3.1.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2023-12-04
+    url: https://github.com/reduxjs/redux-thunk/releases/tag/v3.1.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 17654
+    url: https://api.github.com/repos/reduxjs/redux-thunk
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 49
+    url: https://api.github.com/repos/reduxjs/redux-thunk/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: redux-thunk
+    url: https://registry.npmjs.org/redux-thunk/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "49830643 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/redux-thunk
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 7365
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/redux-thunk
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 591408
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/redux-thunk
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, parent, forkOf, successorOf, alternativeTo, hqCountry, wikidata, runtime, runtimeMin, runsAs, renderingModes, pricingPage, paidEdition, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, latestPrereleaseDate, lastCommitDate, packagistName, pypiName, rubygemsName, crateName, cranName, dockerPulls, hostedOffering, selfHostOption]
+unreadable: []
+notes: >
+  The npm homepage field points to the GitHub repository and the project has no site of its own, so no homepage is recorded. The npm package redux-thunk is the one the install section names; the yarn line is the same registry route. The README says the thunk middleware is not directly included with the Redux core library and that @reduxjs/toolkit uses it by default, so the Redux Toolkit relation belongs to that record. The peer dependency on redux ^5.0.0 is a dependency statement, not the basedOn statement, which rests on the README sentence "for Redux". The latest GitHub release is v3.1.0 (2023-12-04); the v3.0.0 prereleases (alpha, beta, rc) are all older than it, so no latestPrereleaseDate is recorded. The oldest release, v0.1.0, and the npm 0.1.0 upload share the date 2015-07-13. The npm weekly figure is the sum of the daily downloads for 2026-11-01 to 2026-11-07. None of the pages names a runtime, so no runtime is recorded. The maintainer follows the LICENSE copyright line. The README says the middleware lets an action creator return a function that receives the store's dispatch and getState methods, that applyMiddleware installs it on a store made with createStore, that it is not directly included with the Redux core library, and that Redux Toolkit's configureStore adds it by default.

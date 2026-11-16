@@ -1,0 +1,123 @@
+id: roughjs
+name: Rough.js
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript graphics library that draws shapes and paths in a hand-drawn, sketchy style on Canvas and SVG.
+facts:
+  - field: homepage
+    value: "https://roughjs.com"
+    url: "https://roughjs.com/"
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: "https://github.com/rough-stuff/rough"
+    url: "https://api.github.com/repos/rough-stuff/rough"
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: "https://github.com/rough-stuff/rough/wiki"
+    url: "https://raw.githubusercontent.com/rough-stuff/rough/master/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Full Rough.js API"
+  - field: maintainer
+    value: "Preet Shihn"
+    url: "https://raw.githubusercontent.com/rough-stuff/rough/master/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2019 Preet Shihn"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/rough-stuff"
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: "TypeScript"
+    url: "https://registry.npmjs.org/roughjs/latest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: ["canvas"]
+    url: "https://raw.githubusercontent.com/rough-stuff/rough/master/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Rough.js works with both"
+  - field: installMethod
+    value: "npm"
+    url: "https://raw.githubusercontent.com/rough-stuff/rough/master/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install --save roughjs"
+  - field: installMethod
+    value: "CDN"
+    url: "https://raw.githubusercontent.com/rough-stuff/rough/master/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Or get the latest using unpkg"
+  - field: license
+    value: "MIT"
+    url: "https://raw.githubusercontent.com/rough-stuff/rough/master/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: "open-source"
+    url: "https://raw.githubusercontent.com/rough-stuff/rough/master/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2018"
+    url: "https://registry.npmjs.org/roughjs"
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 4
+    url: "https://registry.npmjs.org/roughjs/latest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: "2023-11-20"
+    url: "https://registry.npmjs.org/roughjs"
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 21388
+    url: "https://api.github.com/repos/rough-stuff/rough"
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 10
+    url: "https://api.github.com/repos/rough-stuff/rough/contributors?per_page=1"
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: "roughjs"
+    url: "https://registry.npmjs.org/roughjs/latest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: 25368428
+    url: "https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/roughjs"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 138
+    url: "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/roughjs"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 717
+    url: "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/roughjs"
+    checkedAt: 2026-11-16
+    via: api
+  - field: x
+    value: "https://twitter.com/RoughLib"
+    url: "https://raw.githubusercontent.com/rough-stuff/rough/master/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "[@RoughLib](https://twitter.com/RoughLib) on Twitter."
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, runtime, runtimeMin, runsAs, renderingModes, hqCountry, pricingPage, paidEdition, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, forum, discord, subreddit, mastodon, bluesky, newsletter, pluginDirectory, pluginCount, wikidata, endoflifeId, packagistName, pypiDownloads, rubygemsName, reportedInstalls, usageShare, selfHostOption, lastCommitDate, latestPrereleaseDate, maintainerType, dockerPulls]
+unreadable: []
+notes: >
+  The homepage http://roughjs.com in the candidate row answers with a redirect to https://roughjs.com/, so the https address is recorded. The GitHub releases stop at v3.1.0 (2019-03-14); the npm registry carries 4.x (latest 4.6.6, 2023-11-20) and its major is higher, so currentMajor is 4 from npm and latestReleaseDate comes from npm. The first upload on npm and the oldest GitHub tag v1.0.0 both date to 2018-03-02. The repository was pshihn/rough before it moved to rough-stuff; the API figures are for rough-stuff/rough. The GitHub language field reads HTML; the TypeScript value rests on the npm package declaring bin/rough.d.ts as its types file. The README states "Rough.js is a small (<9 kB) graphics library" and the homepage "<9kB gzipped": a coined bundle-size fact, kept in notes. The runtime and runsAs are left empty: the homepage and README name Canvas and SVG as the drawing targets and "Browser IIFE" as a bundle name, but no page says the library runs in the browser. The README says the library defines primitives to draw lines, curves, arcs, polygons, circles and ellipses and also draws SVG paths. Contributors count is the last page of the contributors endpoint at per_page=1. The homepage lists Excalidraw, diagrams.net, Terrastruct, Cube, SheetJS, Poster Maker and Chartle as supporters; they are sponsors, not dependencies, and are not recorded.

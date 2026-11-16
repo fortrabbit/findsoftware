@@ -1,0 +1,118 @@
+id: ruby-sanitize
+name: Sanitize
+status: accepted
+checkedAt: 2026-11-16
+description: Ruby library that cleans HTML and CSS strings by keeping only the elements, attributes and properties on an allowlist.
+facts:
+  - field: repository
+    value: "https://github.com/rgrove/sanitize"
+    url: "https://api.github.com/repos/rgrove/sanitize"
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: "https://rubydoc.info/gems/sanitize/Sanitize"
+    url: "https://raw.githubusercontent.com/rgrove/sanitize/main/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "[API Docs](https://rubydoc.info/gems/sanitize/Sanitize)"
+  - field: maintainer
+    value: "Ryan Grove"
+    url: "https://raw.githubusercontent.com/rgrove/sanitize/main/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright Ryan Grove"
+  - field: repoOwnerType
+    value: user
+    url: "https://api.github.com/users/rgrove"
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: "Ruby"
+    url: "https://api.github.com/repos/rgrove/sanitize"
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: ["html-sanitizer"]
+    url: "https://raw.githubusercontent.com/rgrove/sanitize/main/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Sanitize is an allowlist-based HTML and CSS sanitizer."
+  - field: runtime
+    value: ["ruby"]
+    url: "https://github.com/rgrove/sanitize/blob/v7.0.2/sanitize.gemspec"
+    checkedAt: 2026-11-16
+    via: page
+    quote: 's.required_ruby_version = ">= 3.2.0"'
+  - field: runtimeMin
+    value: "3.2"
+    url: "https://github.com/rgrove/sanitize/blob/v7.0.2/sanitize.gemspec"
+    checkedAt: 2026-11-16
+    via: page
+    quote: 's.required_ruby_version = ">= 3.2.0"'
+  - field: installMethod
+    value: "gem"
+    url: "https://raw.githubusercontent.com/rgrove/sanitize/main/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "gem install sanitize"
+  - field: license
+    value: "MIT"
+    url: "https://github.com/rgrove/sanitize/blob/v7.0.2/sanitize.gemspec"
+    checkedAt: 2026-11-16
+    via: page
+    quote: 's.licenses = ["MIT"]'
+  - field: licenseModel
+    value: "open-source"
+    url: "https://raw.githubusercontent.com/rgrove/sanitize/main/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2008"
+    url: "https://api.github.com/repos/rgrove/sanitize/commits/release-1.0.0"
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 7
+    url: "https://api.github.com/repos/rgrove/sanitize/releases/latest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: "2026-11-02"
+    url: "https://api.github.com/repos/rgrove/sanitize/releases/latest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2054
+    url: "https://api.github.com/repos/rgrove/sanitize"
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 41
+    url: "https://api.github.com/repos/rgrove/sanitize/contributors?per_page=1"
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsName
+    value: "sanitize"
+    url: "https://rubygems.org/api/v1/gems/sanitize.json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsDownloads
+    value: "141703750 total"
+    url: "https://rubygems.org/api/v1/gems/sanitize.json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 260
+    url: "https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/sanitize"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 10715
+    url: "https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/sanitize"
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, hqCountry, pricingPage, paidEdition, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, wikidata, endoflifeId, packagistName, npmName, pypiDownloads, reportedInstalls, usageShare, selfHostOption, lastCommitDate, latestPrereleaseDate, maintainerType, dockerPulls]
+unreadable: []
+notes: >
+  The project has no website of its own: the README's Home link and the gemspec homepage both point to the GitHub repository, and the Online Demo at sanitize-web.fly.dev is a demo, not a homepage, so no homepage is recorded. The README says "Sanitize is based on the Nokogiri HTML5 parser" and "Crass", which parses CSS; both are declared runtime dependencies in the gemspec (nokogiri >= 1.19.7, crass ~> 1.0.8), and neither has a record, so no basedOn is recorded. The README's warning that Sanitize cannot fully sanitize math or svg elements, and its noscript note, are coined facts kept out of fields. The maintainer follows the LICENSE copyright line, which names Ryan Grove; the contact address on the same line is not recorded. The gemspec authors field also names Ryan Grove. The repository is owned by the user account rgrove. The current major 7 and the latest release v7.0.2 (2026-11-02) are from the GitHub release object. The runtimeMin is from the gemspec at the v7.0.2 tag. The README gives no Ruby version and no runtime sentence beyond the install line, so runtime ruby is recorded from the gemspec's required_ruby_version. The oldest tag release-1.0.0 is dated by its commit (2008-12-25), older than the oldest RubyGems upload of 1.0.0 (2009-07-25), so firstRelease is 2008. RubyGems also lists 2.0.x development versions as prereleases, dated before the stable line; none is newer than v7.0.2, so no latestPrereleaseDate is recorded. The RubyGems download figure is the gem total.

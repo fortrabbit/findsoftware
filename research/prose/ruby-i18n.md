@@ -1,0 +1,1 @@
+Ruby I18n is a Ruby internationalization and localization library with a swappable backend. The README says most use is inside Rails applications and it also documents use without Rails. Alternative backends include an ActiveRecord backend that keeps translations in a database and a KeyValue backend.

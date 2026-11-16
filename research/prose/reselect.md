@@ -1,0 +1,1 @@
+Reselect is a JavaScript library for creating memoized selector functions that derive data from state. The docs describe it as commonly used with Redux and usable with any plain JavaScript data, and the Redux Toolkit package includes it.

@@ -1,0 +1,1 @@
+Responses is a test utility for Python code that calls the requests library. A test registers the canned HTTP responses it needs, and the [README](https://github.com/getsentry/responses/blob/master/README.rst) serves as the documentation.

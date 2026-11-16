@@ -1,0 +1,98 @@
+id: sangria
+name: Sangria
+status: accepted
+checkedAt: 2026-11-16
+description: GraphQL implementation for Scala that defines schemas in Scala code and executes GraphQL queries against them.
+facts:
+  - field: homepage
+    value: https://sangria-graphql.github.io/
+    url: https://github.com/sangria-graphql/sangria/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "More info and the documentation can be found in the project home page"
+  - field: repository
+    value: https://github.com/sangria-graphql/sangria
+    url: https://api.github.com/repos/sangria-graphql/sangria
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://sangria-graphql.github.io/getting-started/
+    url: https://sangria-graphql.github.io/getting-started/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Here is how you can add it to your SBT project"
+  - field: maintainer
+    value: "Oleg Ilyenko"
+    url: https://raw.githubusercontent.com/sangria-graphql/sangria/main/build.sbt
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'Developer("OlegIlyenko", "Oleg Ilyenko"'
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/sangria-graphql
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Scala
+    url: https://github.com/sangria-graphql/sangria/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "is a scala GraphQL library"
+  - field: categories
+    value: [graphql-server]
+    url: https://github.com/sangria-graphql/sangria/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "is a scala GraphQL library"
+  - field: installMethod
+    value: sbt
+    url: https://sangria-graphql.github.io/getting-started/
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'libraryDependencies += "org.sangria-graphql" %% "sangria"'
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/sangria-graphql/sangria/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Sangria is licensed under Apache License, Version 2.0"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/sangria-graphql/sangria/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Sangria is licensed under Apache License, Version 2.0"
+  - field: firstRelease
+    value: "2015"
+    url: https://repo1.maven.org/maven2/org/sangria-graphql/sangria_2.11/
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/sangria-graphql/sangria/releases/tags/v4.2.20
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-28
+    url: https://api.github.com/repos/sangria-graphql/sangria/releases/tags/v4.2.20
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1962
+    url: https://api.github.com/repos/sangria-graphql/sangria
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 60
+    url: https://api.github.com/repos/sangria-graphql/sangria/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: mavenCoordinates
+    value: org.sangria-graphql:sangria_2.13
+    url: https://repo1.maven.org/maven2/org/sangria-graphql/sangria_2.13/maven-metadata.xml
+    checkedAt: 2026-11-16
+    via: api
+notFound: [runtime, runtimeMin, runsAs, renderingModes, basedOn, forkOf, successorOf, alternativeTo, parent, hqCountry, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, hostedOffering, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, packagistName, npmName, npmWeeklyDownloads]
+unreadable: []
+notes: >
+  The README names no JVM: it says "a scala GraphQL library", and the getting-started page says "Sangria is a Scala GraphQL implementation", so runtime is left out for the reviewer to decide. The README and the getting-started page name no minimum runtime. The download page lists Scala 2.11 and 2.12 for the artifacts and states a stale latest version; the release tag v4.2.20 and the Maven metadata are used instead. The Maven artifact sangria_2.13 is the one the README badge names; a sangria_3 artifact also exists on Maven Central, not recorded. Maven publishes no download figure, so none is recorded. The oldest Maven Central upload under the sangria name is sangria_2.11 0.2.0 from 2015-08-02, which sets firstRelease; the sangria_2.13 artifact starts later. The 4.3.0-RC1 pre-release on Maven Central predates the latest release, so no latestPrereleaseDate is recorded. The build.sbt developers list names Oleg Ilyenko first and Yann Simon second; the first is recorded as the maintainer, and the license wording in the README is the only one (build.sbt says "Apache License, ASL Version 2.0", the same license). The README calls the library "a spec compliant GraphQL implementation" that works with Apollo, Relay and GraphiQL; that compatibility is not a field. The project chat is on Gitter and questions go to StackOverflow; neither has a field in the register. The sangria-relay, sangria-circe and other companion artifacts are separate packages, not recorded. The home page has no social links. The getting-started page builds a schema in Scala code, then exposes it over HTTP with akka-http and Play; the sangria-playground repository is named as an example of a GraphQL server written with Play.

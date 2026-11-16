@@ -1,0 +1,117 @@
+id: rough-notation
+name: Rough Notation
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript library that creates and animates hand-drawn annotations on a web page.
+facts:
+  - field: homepage
+    value: "https://roughnotation.com/"
+    url: "https://roughnotation.com/"
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: "https://github.com/rough-stuff/rough-notation"
+    url: "https://api.github.com/repos/rough-stuff/rough-notation"
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: "https://github.com/rough-stuff/rough-notation"
+    url: "https://raw.githubusercontent.com/rough-stuff/rough-notation/master/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "When you create an annotation object, you pass in a config."
+  - field: maintainer
+    value: "Preet Shihn"
+    url: "https://raw.githubusercontent.com/rough-stuff/rough-notation/master/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2020 Preet Shihn"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/rough-stuff"
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: "TypeScript"
+    url: "https://registry.npmjs.org/rough-notation/latest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: ["animation"]
+    url: "https://raw.githubusercontent.com/rough-stuff/rough-notation/master/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A small JavaScript library to create and animate annotations on a web page"
+  - field: installMethod
+    value: "npm"
+    url: "https://raw.githubusercontent.com/rough-stuff/rough-notation/master/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install --save rough-notation"
+  - field: license
+    value: "MIT"
+    url: "https://raw.githubusercontent.com/rough-stuff/rough-notation/master/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: "open-source"
+    url: "https://raw.githubusercontent.com/rough-stuff/rough-notation/master/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2020"
+    url: "https://registry.npmjs.org/rough-notation"
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 0
+    url: "https://registry.npmjs.org/rough-notation/latest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: "2020-10-30"
+    url: "https://registry.npmjs.org/rough-notation"
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 9750
+    url: "https://api.github.com/repos/rough-stuff/rough-notation"
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 14
+    url: "https://api.github.com/repos/rough-stuff/rough-notation/contributors?per_page=1"
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: "rough-notation"
+    url: "https://registry.npmjs.org/rough-notation/latest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: 162966
+    url: "https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/rough-notation"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 18
+    url: "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/rough-notation"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 429
+    url: "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/rough-notation"
+    checkedAt: 2026-11-16
+    via: api
+  - field: x
+    value: "https://twitter.com/preetster"
+    url: "https://roughnotation.com/"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "@preetster"
+notFound: [runsAs, basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, runtime, runtimeMin, hqCountry, pricingPage, paidEdition, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, forum, discord, subreddit, mastodon, bluesky, newsletter, pluginDirectory, pluginCount, wikidata, endoflifeId, packagistName, pypiDownloads, rubygemsName, reportedInstalls, usageShare, selfHostOption, lastCommitDate, latestPrereleaseDate, maintainerType, dockerPulls]
+unreadable: []
+notes: >
+  The package has no GitHub release or tag; npm is the only release source. The npm versions run 0.0.1 (2020-05-25) to 0.5.1 (2020-10-30), so currentMajor is the 0 line of the npm latest version and latestReleaseDate is 2020-10-30. Under AGENTS.md criterion 4 a release older than four years moves the listing to stub on import; the status is kept accepted here because no end signal exists (the repository is not archived, the npm package is not deprecated, and no page states an end). The repository was pshihn/rough-notation before it moved to rough-stuff; the API figures are for rough-stuff/rough-notation. The README says "Rough Notation uses RoughJS", a runtime dependency on the roughjs record; a dependency is not basedOn, so no basedOn is recorded. The homepage and README name third-party wrappers for React, Svelte, Vue, Web Components and Angular; they are not recorded. The README gives a 3.83kb gzipped size and the homepage says 3.8kb: a coined bundle-size fact, kept here as notes only. The README's unpkg script loading (ES module and IIFE) appears only in code blocks and in sentences that name no route, so no CDN installMethod is recorded; a reviewer may decide that "Or load the ES module directly" names the CDN route. No sentence says where the library runs, so runsAs stays out. The README says annotating adds an SVG element as a sibling of the annotated element, which can cause trouble in a table. The homepage link to Twitter is the X fact; the homepage also links Open Collective (sponsorship, not a field) and the GitHub repository. Contributors count is the last page of the contributors endpoint at per_page=1.

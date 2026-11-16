@@ -1,0 +1,118 @@
+id: relay
+name: Relay
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript framework for building data-driven React applications on GraphQL, with a compiler that precomputes each component's queries.
+facts:
+  - field: homepage
+    value: https://relay.dev/
+    url: https://relay.dev/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The GraphQL client that scales with you."
+  - field: repository
+    value: https://github.com/meta/relay
+    url: https://api.github.com/repos/meta/relay
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://relay.dev/docs/
+    url: https://relay.dev/docs/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Relay is a powerful GraphQL client for React"
+  - field: categories
+    value: [frontend-framework]
+    url: https://github.com/meta/relay/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Relay is a JavaScript framework for building data-driven React applications."
+  - field: language
+    value: JavaScript
+    url: https://github.com/meta/relay/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Relay is a JavaScript framework for building data-driven React applications."
+  - field: basedOn
+    value: [react]
+    url: https://github.com/meta/relay/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Relay is a JavaScript framework for building data-driven React applications."
+  - field: installMethod
+    value: npm
+    url: https://relay.dev/docs/getting-started/quick-start/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install relay-runtime react-relay"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/meta/relay
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Meta Platforms, Inc.
+    url: https://github.com/meta/relay/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) Meta Platforms, Inc. and affiliates."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/meta
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://registry.npmjs.org/react-relay
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 21
+    url: https://github.com/meta/relay/releases/tag/v21.0.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-27
+    url: https://github.com/meta/relay/releases/tag/v21.0.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 18981
+    url: https://api.github.com/repos/meta/relay
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 291
+    url: https://api.github.com/repos/meta/relay/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: relay-runtime
+    url: https://registry.npmjs.org/relay-runtime/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "6115613 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/relay-runtime
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 210
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/relay-runtime
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 76213
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/relay-runtime
+    checkedAt: 2026-11-16
+    via: api
+  - field: x
+    value: https://twitter.com/RelayFramework/
+    url: https://relay.dev/help
+    checkedAt: 2026-11-16
+    via: page
+    quote: "We are on Twitter as"
+notFound: [parent, forkOf, successorOf, alternativeTo, hqCountry, wikidata, runtime, runtimeMin, runsAs, renderingModes, pricingPage, paidEdition, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, endoflifeId, latestPrereleaseDate, lastCommitDate, packagistName, pypiName, rubygemsName, crateName, cranName, dockerPulls, hostedOffering, selfHostOption]
+unreadable: []
+notes: >
+  The repository moved from facebook/relay to meta/relay; the old name redirects, so the final URL is recorded. It is a monorepo: the npm package relay-runtime is the core package, and the quick start installs it with react-relay, the React binding that shares the same install line. The relay-runtime figure is recorded; react-relay and relay-compiler are separate packages with their own counts, not recorded. Stars, contributors and the release list belong to the monorepo. The latest GitHub release is v21.0.1 (2026-05-27) and the newest stable release of the package is the same; the rc releases of v13 are older than the latest release, so no latestPrereleaseDate is recorded. The first npm upload of react-relay is 0.0.0 dated 2015-03-29, earlier than the GitHub repository's creation date of 2015-08-10, so the year 2015 comes from the registry. The home page says Relay "requires a Babel plugin, and to also run the Relay Compiler"; the quick start installs babel-plugin-relay, graphql and relay-compiler as dev dependencies, which is the same npm route. GitHub reports the repository's primary language as Rust, while the README calls Relay a JavaScript framework; the language field records the README statement. The home page says the runtime works "on the browser or device", which is not a browser-only statement, so no runsAs is recorded. No page states a Node.js runtime for the framework. The maintainer follows the LICENSE copyright line; the page footer names the same legal entity. The home page says components declare their data dependencies and that the compiler aggregates them into efficient requests, while the runtime keeps every component that reads the same data up to date. The docs say Relay is used with React and that the quick start adds the Babel plugin and the compiler as development dependencies. The home page says Relay pre-computes much of its work at build time, and that it relies on GraphQL best practices, including connections and Global Object Identification, which the GraphQL server should follow.

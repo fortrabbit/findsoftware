@@ -1,0 +1,129 @@
+id: responses
+name: Responses
+status: accepted
+checkedAt: 2026-11-16
+description: Python utility library for mocking out the requests library so that tests can register canned HTTP responses.
+facts:
+  - field: repository
+    value: "https://github.com/getsentry/responses"
+    url: "https://api.github.com/repos/getsentry/responses"
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: "https://github.com/getsentry/responses/blob/master/README.rst"
+    url: "https://raw.githubusercontent.com/getsentry/responses/master/README.rst"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A utility library for mocking out the ``requests`` Python library."
+  - field: maintainer
+    value: "David Cramer"
+    url: "https://raw.githubusercontent.com/getsentry/responses/master/setup.py"
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'author="David Cramer"'
+  - field: maintainerType
+    value: individual
+    url: "https://raw.githubusercontent.com/getsentry/responses/master/setup.py"
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'author="David Cramer"'
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/getsentry"
+    checkedAt: 2026-11-16
+    via: api
+  - field: sourcePublic
+    value: true
+    url: "https://api.github.com/repos/getsentry/responses"
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Python
+    url: "https://api.github.com/repos/getsentry/responses"
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [api-mocking]
+    url: "https://raw.githubusercontent.com/getsentry/responses/master/README.rst"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A utility library for mocking out the ``requests`` Python library."
+  - field: runtime
+    value: [python]
+    url: "https://raw.githubusercontent.com/getsentry/responses/master/README.rst"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Responses requires Python 3.8 or newer"
+  - field: runtimeMin
+    value: "3.8"
+    url: "https://raw.githubusercontent.com/getsentry/responses/master/README.rst"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Responses requires Python 3.8 or newer"
+  - field: installMethod
+    value: pip
+    url: "https://raw.githubusercontent.com/getsentry/responses/master/README.rst"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "pip install responses"
+  - field: license
+    value: Apache-2.0
+    url: "https://raw.githubusercontent.com/getsentry/responses/master/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Version 2.0, January 2004"
+  - field: licenseModel
+    value: open-source
+    url: "https://raw.githubusercontent.com/getsentry/responses/master/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Apache License"
+  - field: currentMajor
+    value: 0
+    url: "https://api.github.com/repos/getsentry/responses/releases"
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-26
+    url: "https://api.github.com/repos/getsentry/responses/releases/latest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: "2013"
+    url: "https://pypi.org/pypi/responses/json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 4343
+    url: "https://api.github.com/repos/getsentry/responses"
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 144
+    url: "https://api.github.com/repos/getsentry/responses/contributors?per_page=1"
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiName
+    value: "responses"
+    url: "https://pypi.org/pypi/responses/json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: "65995989 (last month)"
+    url: "https://pypistats.org/api/packages/responses/recent"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 550
+    url: "https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/responses"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 10260
+    url: "https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/responses"
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, hqCountry, pricingPage, paidEdition, pluginDirectory, forum, discord, x, bluesky, mastodon, subreddit, newsletter, usageShare, reportedInstalls, basedOn, importsFrom, alternativeTo, forkOf, successorOf, runsAs, renderingModes, headlessApi, sso, userRoles, i18n, databases, templating, adminUi, contentStore, multisite, livePreview, parent, npmName, packagistName, crateName, latestPrereleaseDate]
+unreadable: []
+notes: >
+  Accepted: a Python test utility for mocking the requests library, installed from PyPI, with the README naming pip. No homepage: the repository names none, and PyPI lists the GitHub repository as its homepage. The README note says "Responses requires Python 3.8 or newer, and requests >= 2.30.0"; the requests dependency is a dependency, not a basedOn statement, and the tagline names requests as the library it mocks, which is a mocking relationship, not an extension. A later pass may decide whether a target-library tagline states basedOn requests; none is recorded. The repository owner is the getsentry GitHub organization. The README does not name Sentry, and no page names a legal entity, so no maintainer is recorded from the owner. The maintainer comes from the setup.py author; the Apache LICENSE has no copyright line. The LICENSE file is the Apache License 2.0 text. currentMajor is 0 (0.x releases), with the 0.26 minor line the latest on 2026-08-26. No latestPrereleaseDate: the repository has no prerelease. firstRelease: PyPI lists 0.1.0 uploaded 2013-11-25, and the 0.1.0 tag is dated 2013-11-25 too. pypistats last_month is a rolling 30-day window read on 2026-11-16. The dependent counts come from ecosyste.ms, last synced 2026-11-16. The README's install line is a bare pip command under the Installing heading, recorded as pip with that command as the quote.

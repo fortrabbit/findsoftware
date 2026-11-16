@@ -15,6 +15,7 @@ firstRelease: 2021
 language: javascript
 basedOn:
   - prosemirror
+  - remark
 runsAs:
   - browser
 installMethod: npm

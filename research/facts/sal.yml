@@ -1,0 +1,112 @@
+id: sal
+name: Sal
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript library that animates page elements as they scroll into view.
+facts:
+  - field: homepage
+    value: https://mciastek.github.io/sal/
+    url: https://mciastek.github.io/sal/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Lightweight scroll animation library"
+  - field: repository
+    value: https://github.com/mciastek/sal
+    url: https://api.github.com/repos/mciastek/sal
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/mciastek/sal/blob/master/README.md
+    url: https://github.com/mciastek/sal/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Then simply initialize Sal in your script file"
+  - field: maintainer
+    value: "Mirosław Ciastek"
+    url: https://raw.githubusercontent.com/mciastek/sal/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2017 Mirosław Ciastek"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/mciastek
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://github.com/mciastek/sal/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "scroll animation library, written in vanilla JavaScript"
+  - field: categories
+    value: [animation-library]
+    url: https://github.com/mciastek/sal/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "scroll animation library, written in vanilla JavaScript"
+  - field: installMethod
+    value: npm
+    url: https://github.com/mciastek/sal/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install --save sal.js"
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/sal.js/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/mciastek/sal/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2017"
+    url: https://registry.npmjs.org/sal.js
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://registry.npmjs.org/sal.js/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2021-05-01
+    url: https://registry.npmjs.org/sal.js
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 3694
+    url: https://api.github.com/repos/mciastek/sal
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 6
+    url: https://api.github.com/repos/mciastek/sal/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: sal.js
+    url: https://registry.npmjs.org/sal.js/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "5163 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/sal.js
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 11
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/sal.js
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 580
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/sal.js
+    checkedAt: 2026-11-16
+    via: api
+notFound: [runtime, runtimeMin, runsAs, renderingModes, basedOn, forkOf, successorOf, alternativeTo, parent, hqCountry, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, hostedOffering, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, packagistName, mavenCoordinates]
+unreadable: []
+notes: >
+  The four-year rule applies: the newest npm release, 0.8.5, dates from 2021-05-01 and the repository has no GitHub release, only tags v0.5.0 to v0.8.5; its last push is 2023-01-07, so the import will move this record to stub under AGENTS.md criterion 4 unless a release lands. The status is left as the CSV row has it. The homepage is the GitHub Pages site the repository names; its "Github / Docs" link points to the repository. The LICENSE copyright line reads "Mirosław Ciastek" while the README and the homepage say "Mirek Ciastek"; the LICENSE line is recorded. The README calls the library "less than 2.8 kb" and "No dependencies!"; bundle size is a coined kind and stays here. The README says the library is "based on the Intersection Observer", a browser API, not a parent project, so no basedOn is recorded. No sentence states that it runs in the browser, so runsAs is left out for the reviewer to decide. The README describes the usage: an element with a data-sal attribute naming the animation (fade, slide-up and others) is animated when a script calls sal(), with data-sal-duration, data-sal-delay and data-sal-easing options, and sal:in and sal:out events. The npm figure counts sal.js downloads for the week 2026-11-01 to 2026-11-07. The GitHub repository reports HTML as its language because of its demo site; the package is JavaScript. The README asks for the sal.css stylesheet to be imported with the script, says the library is based on the Intersection Observer API, which it calls experimental and for which it suggests a polyfill, and asks sites that must work without JavaScript to add a noscript block that turns the animation styles off.

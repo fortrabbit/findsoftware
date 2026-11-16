@@ -1,0 +1,132 @@
+id: rodauth
+name: Rodauth
+status: accepted
+checkedAt: 2026-11-16
+description: Ruby authentication framework, built as a Roda plugin, for login, account management and multifactor authentication in Rack applications.
+facts:
+  - field: homepage
+    value: https://rodauth.jeremyevans.net/
+    url: https://rodauth.jeremyevans.net/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Rodauth is Ruby's most advanced authentication framework"
+  - field: repository
+    value: https://github.com/jeremyevans/rodauth
+    url: https://api.github.com/repos/jeremyevans/rodauth
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://rodauth.jeremyevans.net/documentation.html
+    url: https://rodauth.jeremyevans.net/documentation.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "All features in Rodauth must be explicitly enabled"
+  - field: maintainer
+    value: Jeremy Evans
+    url: https://github.com/jeremyevans/rodauth/blob/2.50.0/MIT-LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2015-2026 Jeremy Evans and contributors"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/jeremyevans
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/jeremyevans/rodauth
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://github.com/jeremyevans/rodauth/blob/2.50.0/rodauth.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: 's.required_ruby_version = ">= 1.9.2"'
+  - field: runtimeMin
+    value: "1.9"
+    url: https://github.com/jeremyevans/rodauth/blob/2.50.0/README.rdoc
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The minimum Ruby version required to run the current version of Rodauth is 1.9.2"
+  - field: basedOn
+    value: roda
+    url: https://github.com/jeremyevans/rodauth/blob/2.50.0/README.rdoc
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Rodauth is a Roda plugin and loaded the same way other Roda plugins are loaded"
+  - field: categories
+    value: [auth]
+    url: https://github.com/jeremyevans/rodauth/blob/2.50.0/README.rdoc
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Rodauth is Ruby's most advanced authentication framework, designed to work in any rack application"
+  - field: databases
+    value: [postgres, mysql, sqlserver]
+    url: https://github.com/jeremyevans/rodauth/blob/2.50.0/README.rdoc
+    checkedAt: 2026-11-16
+    via: page
+    quote: "When used with PostgreSQL, MySQL, and Microsoft SQL Server in the default configuration"
+  - field: license
+    value: MIT
+    url: https://rodauth.jeremyevans.net/development.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Rodauth is distributed under the MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://rodauth.jeremyevans.net/development.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Rodauth is distributed under the MIT License"
+  - field: currentMajor
+    value: 2
+    url: https://rubygems.org/api/v1/gems/rodauth.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: "2026-11-02"
+    url: https://rubygems.org/api/v1/gems/rodauth.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: "2015"
+    url: https://rubygems.org/api/v1/versions/rodauth.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsName
+    value: rodauth
+    url: https://rubygems.org/api/v1/gems/rodauth.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsDownloads
+    value: 1316570 total
+    url: https://rubygems.org/api/v1/gems/rodauth.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1943
+    url: https://api.github.com/repos/jeremyevans/rodauth
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 44
+    url: https://api.github.com/repos/jeremyevans/rodauth/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: forum
+    value: https://github.com/jeremyevans/rodauth/discussions
+    url: https://rodauth.jeremyevans.net/development.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "You can join in on the discussions"
+  - field: alternativeTo
+    value: devise
+    url: https://rodauth.jeremyevans.net/why.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "There are other authentication frameworks for Ruby, such as Devise"
+notFound: [installMethod, hqCountry, parent, wikidata, pricingPage, usageShare, reportedInstalls, discord, mastodon, bluesky, x, newsletter, subreddit, pluginDirectory, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, forkOf, successorOf, runsAs, renderingModes, paidEdition, npmName, npmWeeklyDownloads, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  The CSV homepage is http://rodauth.jeremyevans.net; the https address answers 200 and is recorded. The README's first sentence is "Rodauth is Ruby's most advanced authentication framework, designed to work in any rack application. It's built using Roda and Sequel", so the Sequel half of the built-on statement has no record and stays here; the database library is not a fact field. The gemspec lists sequel and roda as runtime dependencies, which is a dependency statement and not the basedOn source; the basedOn quote is the README's "Rodauth is a Roda plugin". The Ruby minimum is 1.9.2 in both the README and the gemspec; the runtimeMin value keeps the major.minor form used for Ruby, so it reads 1.9. The only gem command in the README, "gem install --development rodauth", installs development dependencies for running tests and no page states an install route, so installMethod stays out. The README's "Similar Projects" section names Devise, Authlogic and Sorcery as Rails-specific; the Why page calls them "other authentication frameworks" and says Rodauth "offers many advantages over competing frameworks". Only Devise has a record, so alternativeTo keeps that one. The README describes an HTML and JSON API for the auth features; it is not a REST content API, so headlessApi stays out. The LDAP and Facebook examples in the README are custom authentication code the application writes and are not an sso feature. The documentation index lists a "Translate with I18n gem" feature and a separate rodauth-i18n gem; no sentence states i18n support, so i18n stays out. The rodauth-rails gem, written by another maintainer, is a Rails integration and has no record here. The version 2.50.0 is the highest stable tag, and the RubyGems first version 0.9.0 dates from 2015-08-12, the same day as the 0.9.0 tag commit. Stars and contributors belong to the rodauth repository. The sentence on the Why page names the rival frameworks as Rails-specific; the record keeps that comparison out of the description.

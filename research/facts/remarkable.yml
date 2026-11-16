@@ -1,0 +1,129 @@
+id: remarkable
+name: Remarkable
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript markdown parser that follows CommonMark and renders markdown to HTML, with syntax extensions and plugins.
+facts:
+  - field: homepage
+    value: https://jonschlinkert.github.io/remarkable/demo/
+    url: https://jonschlinkert.github.io/remarkable/demo/
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/jonschlinkert/remarkable
+    url: https://github.com/jonschlinkert/remarkable
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/jonschlinkert/remarkable/tree/master/docs
+    url: https://github.com/jonschlinkert/remarkable/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "See the [docs](docs/) directory for documentation"
+  - field: repoOwnerType
+    value: user
+    url: https://github.com/jonschlinkert/remarkable
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://registry.npmjs.org/remarkable
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Jon Schlinkert
+    url: https://github.com/jonschlinkert/remarkable/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2014-present, Jon Schlinkert"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/jonschlinkert/remarkable/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2014-present, Jon Schlinkert"
+  - field: categories
+    value: [markdown]
+    url: https://github.com/jonschlinkert/remarkable/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Markdown parser done right"
+  - field: language
+    value: JavaScript
+    url: https://github.com/jonschlinkert/remarkable
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://github.com/jonschlinkert/remarkable/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "node.js:"
+  - field: runtimeMin
+    value: "6"
+    url: https://github.com/jonschlinkert/remarkable/blob/v2.0.1/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"node": ">= 6.0.0"'
+  - field: installMethod
+    value: [npm]
+    url: https://github.com/jonschlinkert/remarkable/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install remarkable --save"
+  - field: installMethod
+    value: [cdn]
+    url: https://github.com/jonschlinkert/remarkable/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "jsDeliver CDN"
+  - field: license
+    value: MIT
+    url: https://github.com/jonschlinkert/remarkable/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 2
+    url: https://github.com/jonschlinkert/remarkable/releases/tag/v2.0.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2020-05-25
+    url: https://registry.npmjs.org/remarkable
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 5842
+    url: https://github.com/jonschlinkert/remarkable
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 38
+    url: https://api.github.com/repos/jonschlinkert/remarkable/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: remarkable
+    url: https://registry.npmjs.org/remarkable/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "1730832 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/remarkable
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 657
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/remarkable
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 25524
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/remarkable
+    checkedAt: 2026-11-16
+    via: api
+notFound: [basedOn, alternativeTo, forkOf, successorOf, parent, runsAs, renderingModes, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, importsFrom, pricingPage, paidEdition, hqCountry, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: []
+notes: >
+  Latest stable release 2.0.1 on npm, published 2020-05-25; the GitHub release list holds only v2.0.0 (2019-08-07), so currentMajor 2 comes from that release and latestReleaseDate from the npm registry. The repository was last pushed 2024-05-17, is not archived, and npm carries no deprecation on 2.0.1; the release age alone is no end signal, and four years without a release make the import move the record to stub. Status stays accepted. firstRelease is 2014 from the npm upload of 0.1.0 (2014-08-29), older than the oldest GitHub tag 1.0.0 (2014-10-16). The README says footnotes, tables and strikethrough are enabled by default and that a commonmark preset enables strict CommonMark mode. The README says the default configuration is similar to GFM with HTML disabled, that it supports CommonMark with syntax extensions (footnotes, tables, strikethrough), that syntax rules can be added or replaced, and that it has a typographer option and presets; these are coined kinds left in notes. The README's community plugins link is an npm keyword search, not a project directory, so no pluginDirectory. The README benchmark compares against marked-0.3.2 and the CommonMark reference; it is a benchmark, not a statement of alternative, so no alternativeTo (marked has a record, marked.yml). The npm figure is the sum of daily downloads for 2026-11-01 to 2026-11-07. The live demo at the homepage answers 200 over https. The package.json at v2.0.1 declares engines node >= 6.0.0. The LICENSE names two copyright holders, Jon Schlinkert and Vitaly Puzrin (2014); the maintainer is the first holder, and the README's authors list names Alex Kocharin and Vitaly Puzrin too.

@@ -1,0 +1,1 @@
+Selenide is a Java library for automated UI tests of web applications, powered by Selenium WebDriver. It offers a fluent API on top of it and runs from an IDE or a build script such as Ant or Maven, not on the site under test.

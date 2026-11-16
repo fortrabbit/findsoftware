@@ -1,0 +1,115 @@
+id: rust-validator
+name: validator
+status: accepted
+checkedAt: 2026-11-16
+description: Rust crate with a custom derive macro that validates the fields of a struct against declared rules.
+facts:
+  - field: repository
+    value: https://github.com/Keats/validator
+    url: https://api.github.com/repos/Keats/validator
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://docs.rs/validator
+    url: https://raw.githubusercontent.com/Keats/validator/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: Vincent Prouillet
+    url: https://raw.githubusercontent.com/Keats/validator/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2016 Vincent Prouillet"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/Keats
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://crates.io/api/v1/crates/validator
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [validation]
+    url: https://raw.githubusercontent.com/Keats/validator/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Macros 1.1 custom derive to simplify struct validation"
+  - field: language
+    value: Rust
+    url: https://api.github.com/repos/Keats/validator
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [rust]
+    url: https://api.github.com/repos/Keats/validator
+    checkedAt: 2026-11-16
+    via: api
+    quote: "Simple validation for Rust structs"
+  - field: runtimeMin
+    value: "1.88"
+    url: https://crates.io/api/v1/crates/validator/0.21.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: cargo
+    url: https://docs.rs/validator/latest/validator/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Add the validator to the dependencies in the Cargo.toml file."
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/Keats/validator
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/Keats/validator/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 0
+    url: https://crates.io/api/v1/crates/validator/0.21.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-27
+    url: https://crates.io/api/v1/crates/validator/0.21.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2529
+    url: https://api.github.com/repos/Keats/validator
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 83
+    url: https://api.github.com/repos/Keats/validator/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: crateName
+    value: validator
+    url: https://crates.io/api/v1/crates/validator
+    checkedAt: 2026-11-16
+    via: api
+  - field: crateDownloads
+    value: "77776255 (total)"
+    url: https://crates.io/api/v1/crates/validator
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 231
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/validator
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 1357
+    url: https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/validator
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, basedOn, alternativeTo, forkOf, successorOf, parent, hqCountry, pricingPage, paidEdition, runsAs, renderingModes, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, contentStore, forum, discord, x, bluesky, mastodon, subreddit, newsletter, pluginDirectory, pluginCount, packagistName, npmName, pypiDownloads, endoflifeId, wikidata, reportedInstalls, usageShare, lastCommitDate]
+unreadable: []
+notes: >
+  The record id is rust-validator because go-playground-validator already holds the name validator; the README title and crate name are validator. The repository has no GitHub release objects: its tags stop at v0.20.1, while the crates.io registry lists 0.21.0 published on 2026-07-27 with no matching tag. The registry's stable version therefore sets currentMajor 0 and latestReleaseDate, and the minor line 0.21 stays in notes. The 0.21.0 metadata states a rust_version of 1.88, which is recorded as runtimeMin; the workspace Cargo.toml on master states the same value. The README says the crate is inspired by marshmallow and Django validators, which is no basedOn or alternativeTo statement. The docs.rs page for 0.21.0 still shows a 0.16 dependency line in its installation example, so the sentence is quoted and the version is left out. The README's features list names the derive and derive_nightly_features cargo features, which are not recorded. The first crates.io version 0.1.0 is from December 2016, the same month as the GitHub repository. The download figure is the crate's all-time total. The GitHub stars and contributors belong to the single repository, a Cargo workspace whose members are validator, validator_derive and validator_derive_tests; the crate the install line names is validator.

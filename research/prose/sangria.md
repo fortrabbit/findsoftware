@@ -1,0 +1,1 @@
+Sangria is a GraphQL implementation for Scala. A schema is defined in Scala code, and the library executes GraphQL queries against it. The README calls it spec compliant and says it works with Apollo, Relay and GraphiQL. Its example applications serve queries over HTTP with akka-http and with the Play framework.

@@ -1,0 +1,102 @@
+id: roadie
+name: Roadie
+status: stub
+checkedAt: 2026-11-16
+description: Ruby gem that inlines stylesheets and rewrites relative URLs in HTML emails.
+facts:
+  - field: repository
+    value: https://github.com/Mange/roadie
+    url: https://api.github.com/repos/Mange/roadie
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Magnus Bergmark
+    url: https://github.com/Mange/roadie/blob/v5.3.1/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2009-2016 Magnus Bergmark, Jim Neath / Purify, and contributors"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/Mange
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/Mange/roadie
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://github.com/Mange/roadie/blob/v5.3.1/roadie.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: 's.required_ruby_version = ">= 3.3"'
+  - field: runtimeMin
+    value: "3.3"
+    url: https://github.com/Mange/roadie/blob/v5.3.1/roadie.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: 's.required_ruby_version = ">= 3.3"'
+  - field: categories
+    value: [email-templating, css-inliner]
+    url: https://github.com/Mange/roadie/blob/v5.3.1/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Roadie tries to make sending HTML emails a little less painful by inlining stylesheets and rewriting relative URLs"
+  - field: installMethod
+    value: gem
+    url: https://github.com/Mange/roadie/blob/v5.3.1/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Add this gem to your Gemfile as recommended by Rubygems"
+  - field: license
+    value: MIT
+    url: https://github.com/Mange/roadie/blob/v5.3.1/roadie.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: 's.license = "MIT"'
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/Mange/roadie/blob/v5.3.1/roadie.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: 's.license = "MIT"'
+  - field: currentMajor
+    value: 5
+    url: https://rubygems.org/api/v1/gems/roadie.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: "2026-07-11"
+    url: https://rubygems.org/api/v1/gems/roadie.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: "2010"
+    url: https://api.github.com/repos/Mange/roadie/commits/v0.1.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsName
+    value: roadie
+    url: https://rubygems.org/api/v1/gems/roadie.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsDownloads
+    value: 27867547 total
+    url: https://rubygems.org/api/v1/gems/roadie.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1347
+    url: https://api.github.com/repos/Mange/roadie
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 39
+    url: https://api.github.com/repos/Mange/roadie/contributors
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, hqCountry, parent, wikidata, pricingPage, usageShare, reportedInstalls, discord, mastodon, bluesky, x, newsletter, subreddit, forum, pluginDirectory, docs, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, alternativeTo, basedOn, forkOf, successorOf, runsAs, renderingModes, paidEdition, npmName, npmWeeklyDownloads, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  This gem is now in passive maintenance mode, per the README badge and banner, which link to issue 155 of the repository; a maintenance-mode statement by the maintainer makes the status stub, not discontinued, so the record stays off the register until a person decides it, and the same sentence is on the master branch. The project has no homepage: the README names only the repository, the RubyGems page and an omniref mirror of its documentation, so homepage is absent and docs is left out, since omniref is a third-party site. The LICENSE copyright line names Magnus Bergmark, Jim Neath / Purify and contributors; Jim Neath and Purify are other legal parties and stay here, and the README copyright line runs to 2022 where the LICENSE runs to 2016. The gemspec requires Ruby 3.3 or newer at v5.3.1 and the README names no minimum, so runtime and runtimeMin come from the gemspec. The README says the gem was "previously tied to Rails" and now serves any HTML documents; roadie-rails is a separate Rails integration by the same author and has no record, so basedOn stays empty. The first version appears as a tag dated 2010-01-02 (v0.1.1), earlier than the 2011 first RubyGems upload. The "legacy" tag of 2010-05-24 is not a version and does not move firstRelease. The stars and contributors belong to the Roadie repository. The rubygems total is the download count of the roadie gem.

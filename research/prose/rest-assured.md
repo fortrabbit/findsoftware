@@ -1,0 +1,1 @@
+REST Assured is a Java library for testing REST services. A test sends an HTTP request and checks the response in one chain of calls, covering the status, headers, cookies and body, with JSON and XML paths for the body. The project also ships modules for Spring MockMvc and WebTestClient, Kotlin and Scala.

@@ -1,0 +1,1 @@
+Scrollama is a JavaScript library for scrollytelling. It uses IntersectionObserver instead of scroll events to fire callbacks as the reader scrolls past steps. The README is the project's documentation, and the homepage is a basic example page.

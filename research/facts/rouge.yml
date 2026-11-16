@@ -1,0 +1,122 @@
+id: rouge
+name: Rouge
+status: stub
+checkedAt: 2026-11-16
+description: Pure Ruby syntax highlighter that renders HTML or terminal output, with stylesheets compatible with Pygments.
+facts:
+  - field: repository
+    value: https://github.com/rouge-ruby/rouge
+    url: https://api.github.com/repos/rouge-ruby/rouge
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://rouge-ruby.github.io/docs/
+    url: https://github.com/rouge-ruby/rouge/blob/v5.1.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Rouge's documentation is available at"
+  - field: maintainer
+    value: Jeanine Adkisson
+    url: https://github.com/rouge-ruby/rouge/blob/v5.1.0/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2012 Jeanine Adkisson."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/rouge-ruby
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/rouge-ruby/rouge
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://github.com/rouge-ruby/rouge/blob/v5.1.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Rouge is compatible with all versions of Ruby from 3.0 onwards"
+  - field: runtimeMin
+    value: "3.0"
+    url: https://github.com/rouge-ruby/rouge/blob/v5.1.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Rouge is compatible with all versions of Ruby from 3.0 onwards"
+  - field: basedOn
+    value: pygments
+    url: https://github.com/rouge-ruby/rouge/blob/v5.1.0/rouge.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A pure-ruby colorizer based on pygments"
+  - field: categories
+    value: [syntax-highlight]
+    url: https://github.com/rouge-ruby/rouge/blob/v5.1.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "is a pure Ruby syntax highlighter"
+  - field: installMethod
+    value: gem
+    url: https://github.com/rouge-ruby/rouge/blob/v5.1.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "gem install rouge"
+  - field: license
+    value: MIT
+    url: https://github.com/rouge-ruby/rouge/blob/v5.1.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Rouge is released under the MIT license"
+  - field: license
+    value: BSD-2-Clause
+    url: https://github.com/rouge-ruby/rouge/blob/v5.1.0/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/rouge-ruby/rouge/blob/v5.1.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Rouge is released under the MIT license"
+  - field: currentMajor
+    value: 5
+    url: https://api.github.com/repos/rouge-ruby/rouge/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: "2026-08-06"
+    url: https://api.github.com/repos/rouge-ruby/rouge/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: "2012"
+    url: https://api.github.com/repos/rouge-ruby/rouge/commits/v0.0.2
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsName
+    value: rouge
+    url: https://rubygems.org/api/v1/gems/rouge.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsDownloads
+    value: 341008603 total
+    url: https://rubygems.org/api/v1/gems/rouge.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 3458
+    url: https://api.github.com/repos/rouge-ruby/rouge
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 420
+    url: https://api.github.com/repos/rouge-ruby/rouge/contributors
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, hqCountry, parent, wikidata, pricingPage, usageShare, reportedInstalls, discord, mastodon, bluesky, x, newsletter, subreddit, forum, pluginDirectory, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, alternativeTo, forkOf, successorOf, runsAs, renderingModes, paidEdition, npmName, npmWeeklyDownloads, dependentPackages, dependentRepos]
+unreadable:
+  - "https://rouge.jneen.ca/ (502 on three requests, 2026-11-16)"
+  - "http://rouge.jneen.net/ (redirects to the same 502 host)"
+notes: >
+  Stub: the project site named in the CSV and in the gem metadata, https://rouge.jneen.ca/ (reached from rouge.jneen.net too), answered 502 on every request on 2026-11-16, so no homepage is recorded; a 200 answer from that site with its own description would settle it, and the record can then return to accepted, since the repository, README and gem are public and document an install. The README and the gemspec both state the license: "Rouge is released under the MIT license" and the LICENSE file carries a second license, BSD-2-Clause, for the lexers adapted from Pygments ("Many of the lexers in this project are adaptations of those in Pygments"); the two are recorded as separate entries, and GitHub reports the repository license as NOASSERTION. The gemspec summary "A pure-ruby colorizer based on pygments" states the parent, so basedOn is pygments, while the README says only that its HTML output is "compatible with stylesheets designed for Pygments". The README names Jekyll's default highlighter and the Middleman, RDoc and Rails integrations, all third-party or downstream, and none is recorded. The maintainers in the README are Jeanine Adkisson, Drew Blessing, Goro Fuji and Tan Le; the LICENSE copyright line names Jeanine Adkisson alone, so she is the maintainer and the others stay here. Stars and contributors belong to the rouge repository. The first version is the v0.0.2 tag of 2012-09-01, and the first gem upload is 0.0.1 of 2012-08-30, both in 2012. The rubygems total is the download count of the rouge gem.

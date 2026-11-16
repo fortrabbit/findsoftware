@@ -1,0 +1,113 @@
+id: req-elixir
+name: Req
+status: accepted
+checkedAt: 2026-11-16
+description: Batteries-included HTTP client library for Elixir, built on Finch and extended through steps.
+facts:
+  - field: docs
+    value: https://hexdocs.pm/req
+    url: https://github.com/wojtekmach/req/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Hex Docs"
+  - field: repository
+    value: https://github.com/wojtekmach/req
+    url: https://github.com/wojtekmach/req
+    checkedAt: 2026-11-16
+    via: api
+  - field: repoOwnerType
+    value: user
+    url: https://github.com/wojtekmach/req
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2021
+    url: https://hex.pm/api/packages/req
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Wojtek Mach
+    url: https://github.com/wojtekmach/req/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2021 Wojtek Mach"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/wojtekmach/req/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2021 Wojtek Mach"
+  - field: categories
+    value: [data-fetching]
+    url: https://github.com/wojtekmach/req/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "batteries-included HTTP client for Elixir"
+  - field: language
+    value: Elixir
+    url: https://github.com/wojtekmach/req
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [elixir]
+    url: https://github.com/wojtekmach/req/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "batteries-included HTTP client for Elixir"
+  - field: installMethod
+    value: [mix dependency]
+    url: https://github.com/wojtekmach/req/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The easiest way to use Req is with [`Mix.install/2`]"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/wojtekmach/req/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/wojtekmach/req/releases/tag/v0.7.5
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-06
+    url: https://github.com/wojtekmach/req/releases/tag/v0.7.5
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1333
+    url: https://github.com/wojtekmach/req
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 107
+    url: https://api.github.com/repos/wojtekmach/req/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: hexName
+    value: req
+    url: https://hex.pm/api/packages/req
+    checkedAt: 2026-11-16
+    via: api
+  - field: hexDownloads
+    value: "20122964 total"
+    url: https://hex.pm/api/packages/req
+    checkedAt: 2026-11-16
+    via: api
+  - field: pluginDirectory
+    value: https://github.com/wojtekmach/req/blob/main/README.md#related-packages
+    url: https://github.com/wojtekmach/req/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "There are many packages that extend the Req library"
+  - field: runtimeMin
+    value: {elixir: "~> 1.15"}
+    url: https://hex.pm/api/packages/req/releases/0.7.5
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, forkOf, successorOf, parent, runsAs, renderingModes, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, importsFrom, alternativeTo, pricingPage, paidEdition, hqCountry, endoflifeId, usageShare, reportedInstalls, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  Req is a general-purpose HTTP client, in under the wave 68 ruling that names req-elixir as an HTTP client; the Hex package req is the one the README's Mix.install line names, and the repository is the only source link. The Hex package names GitHub and a changelog page (hexdocs.pm/req/changelog.html) as its links and no homepage, so no homepage is recorded; the CSV's homepage hexdocs.pm/req is the package documentation, recorded as docs. The README says Req is built on top of Finch and inspired by cURL, Requests and Tesla; the Finch named there is the Elixir HTTP client, which has no record, and the id finch belongs to an OCaml generator, so no basedOn is recorded; the inspiration names are not alternativeTo. The latest stable release on GitHub and Hex is 0.7.5 (2026-10-06), so currentMajor is 0 and the line 0.7 goes here. The 0.8.0-rc.0 prerelease (2026-08-18) is older than 0.7.5 and is not a latestPrereleaseDate; the README's Mix.install line pins "~> 0.8.0-rc", which the README shows as the usage version. The README says v0.8 revamps the internals and deprecates response and error steps in favour of step wrappers, which matters for custom steps and plugins. The Hex release metadata of 0.7.5 declares an Elixir requirement of ~> 1.15, recorded as runtimeMin; the README names no OTP minimum. The README says Req gives automatic response body decoding, following redirects and retrying on errors, with features broken into steps that can be re-used, re-arranged or replaced by new ones. The Hex figure is the total downloads the Hex API reports for the package req; the Hex API also reports 440347 in the last week, not recorded. The first release is 2021 from the Hex upload of 0.1.0 (2021-07-15), and the repository's tag v0.1.0 is in the same year. Features listed in the README (request and response streaming, retries, redirects, Plug-based mocks, AWS V4 signing, Req.Test, pluggable adapters with Finch as default) are coined kinds and stay in notes. The ElixirConf talks in the README's Presentations section are not recorded. The contributor count is from the last page of the contributors endpoint.

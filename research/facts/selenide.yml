@@ -1,0 +1,126 @@
+id: selenide
+name: Selenide
+status: accepted
+checkedAt: 2026-11-16
+description: Java framework for automated browser UI tests, with a concise fluent API over Selenium WebDriver.
+facts:
+  - field: homepage
+    value: https://selenide.org/
+    url: https://selenide.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Selenide is a framework for test automation powered by Selenium WebDriver"
+  - field: repository
+    value: https://github.com/selenide/selenide
+    url: https://api.github.com/repos/selenide/selenide
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://selenide.org/quick-start.html
+    url: https://selenide.org/quick-start.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Just add Selenide dependency to your project, and you are done."
+  - field: maintainer
+    value: Andrei Solntsev & Selenide committers
+    url: https://github.com/selenide/selenide/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) [2011-2025] [Andrei Solntsev & Selenide committers]"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/selenide/selenide
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://search.maven.org/solrsearch/select?q=g:com.codeborne+AND+a:selenide&core=gav&rows=200&start=200&wt=json
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [browser-automation]
+    url: https://selenide.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Selenide is a framework for test automation powered by Selenium WebDriver"
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/selenide/selenide
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: jvm
+    url: https://github.com/selenide/selenide/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Selenide is a framework for writing easy-to-read and easy-to-maintain automated tests in Java."
+  - field: runtimeMin
+    value: "17"
+    url: https://selenide.org/2023/10/25/selenide-7.0.0/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "To use Selenide 7.+, you will need to compile & run your tests with Java 17+."
+  - field: runsAs
+    value: [local]
+    url: https://selenide.org/quick-start.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "You can run from IDE, or as an ANT script, or “mvn test”."
+  - field: mavenCoordinates
+    value: com.codeborne:selenide
+    url: https://repo1.maven.org/maven2/com/codeborne/selenide/maven-metadata.xml
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: maven
+    url: https://selenide.org/quick-start.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Add these lines to file pom.xml:"
+  - field: installMethod
+    value: gradle
+    url: https://selenide.org/quick-start.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Add these lines to file build.gradle:"
+  - field: installMethod
+    value: download
+    url: https://selenide.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Just add selenide.jar to your project and you are done."
+  - field: license
+    value: MIT
+    url: https://github.com/selenide/selenide/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "distributed under the MIT license"
+  - field: currentMajor
+    value: 7
+    url: https://api.github.com/repos/selenide/selenide/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-25
+    url: https://api.github.com/repos/selenide/selenide/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1916
+    url: https://api.github.com/repos/selenide/selenide
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 125
+    url: https://api.github.com/repos/selenide/selenide/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: x
+    value: https://twitter.com/selenide
+    url: https://selenide.org/
+    checkedAt: 2026-11-16
+    via: page
+notFound: [basedOn, headlessApi, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, alternativeTo, renderingModes, pricingPage, paidEdition, hostedOffering, selfHostOption, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, newsletter, forum, endoflifeId, latestPrereleaseDate, hqCountry, parent, forkOf, successorOf, wikidata, dockerPulls, reportedInstalls, usageShare, npmName, npmWeeklyDownloads, packagistName, contentStore, databases, apiLimits, regions]
+unreadable: []
+notes: >
+  Selenide is a test library: the quick start says tests run from an IDE or a build script such as Ant or mvn test, recorded as runsAs local. The README says Selenide "is based on and is compatible with Selenium WebDriver 4.0+"; no selenium record exists in research/facts, so the parent stays in notes and basedOn is unset. The README's "Look for detailed comparison of Selenide and Selenium WebDriver API" link is a comparison with the same parent, not an alternativeTo statement. Maintainer: the LICENSE copyright line reads "Copyright (c) [2011-2025] [Andrei Solntsev & Selenide committers]", and the README says the library was "originally designed and developed by Andrei Solntsev" and "is maintained by a group of enthusiast[s]"; the homepage footer says "The project is maintained by" without a name in the captured text. hqCountry is not stated. firstRelease 2012 is the oldest Maven Central upload (version 1.0, 2012-02-10); the GitHub repository was created 2012-02-07. Runtime: the README names Java, and the 7.0.0 release post says Selenide 7.+ needs Java 17+, recorded as runtimeMin. Versions: latest stable 7.19.1 is the highest GitHub release, 2026-10-25. The Maven Central artifact com.codeborne:selenide publishes no download figure, so none is recorded. The README also lists Selenide CLI and Selenide MCP (AI agent tooling, npm package @selenide/cli and selenide-mcp), plugins for Appium, Moon, Selenoid, Selenium Grid and video recording (modules inside the repository), and a Selenide Video Recorder; none is a separate record. The homepage Contacts section links a Google group by mailto address, which is no forum URL, plus Gitter and Telegram chats; none is recorded. The "Selenide Supports Ukraine" banner and sponsors are not recorded. Stars and contributors belong to the single repository.

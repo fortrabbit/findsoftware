@@ -1,0 +1,122 @@
+id: resty
+name: Resty
+status: accepted
+checkedAt: 2026-11-16
+description: "Go library for HTTP, REST and server-sent events clients."
+facts:
+  - field: homepage
+    value: https://resty.dev/
+    url: https://resty.dev/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Simple HTTP, REST, and SSE client library for Go"
+  - field: docs
+    value: https://resty.dev/docs/
+    url: https://resty.dev/docs/
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/go-resty/resty
+    url: https://api.github.com/repos/go-resty/resty
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Jeevanandam M.
+    url: https://resty.dev/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Jeevanandam M."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/go-resty/resty
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/go-resty/resty/commits/v0.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [data-fetching]
+    url: https://resty.dev/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Simple HTTP, REST, and SSE client library for Go"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/go-resty/resty
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://resty.dev/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Minimum required Go version is go1.23"
+  - field: runtimeMin
+    value: "1.23"
+    url: https://github.com/go-resty/resty/blob/v2.17.2/go.mod
+    checkedAt: 2026-11-16
+    via: page
+    quote: "go 1.23.0"
+  - field: installMethod
+    value: go modules
+    url: https://github.com/go-resty/resty/blob/v3/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Resty fully adapted to `go mod` capabilities since `v1.10.0` release."
+  - field: license
+    value: MIT
+    url: https://github.com/go-resty/resty/blob/v3/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Resty released under MIT"
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/go-resty/resty
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/go-resty/resty/releases/tags/v2.17.2
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-02-14
+    url: https://api.github.com/repos/go-resty/resty/releases/tags/v2.17.2
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-09-06
+    url: https://api.github.com/repos/go-resty/resty/releases/tags/v3.0.0-rc.4
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 11831
+    url: https://api.github.com/repos/go-resty/resty
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 161
+    url: https://api.github.com/repos/go-resty/resty/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 5089
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fgo-resty%2Fresty%2Fv2
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 7496
+    url: https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fgo-resty%2Fresty%2Fv2
+    checkedAt: 2026-11-16
+    via: api
+  - field: forum
+    value: https://github.com/go-resty/resty/discussions
+    url: https://github.com/go-resty/resty/blob/v3/README.md
+    checkedAt: 2026-11-16
+    via: page
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, pricingPage, hqCountry, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, pluginDirectory, discord, x, bluesky, mastodon, newsletter, subreddit, endoflifeId]
+unreadable: []
+notes: >
+  The stable line is v2 (tag v2.17.2, GitHub release 2026-02-14); the v3 branch is the default branch and its homepage says "NOTE: Resty v3 is in release candidate", with v3.0.0-rc.4 (2026-09-06) the newest prerelease, so currentMajor is 2 and latestPrereleaseDate is the rc. The v2 module path is github.com/go-resty/resty/v2 and the README names it; the homepage install line for v3 is a prerelease and is not recorded as the install route. The go.mod at v2.17.2 declares go 1.23.0, which gives runtimeMin; the v3 README says "Use go1.23 and above." too. The README "Creator" section names Jeevanandam M. and the homepage footer copyright line uses the same name; no company or country is stated, so no hqCountry is recorded. The documentation and website are released under Apache-2.0 per the README ("Resty [Documentation](https://github.com/go-resty/docs) and website released under Apache-2.0"); that is a separate repository, so it is not a second license entry of the library. The Go module has no download figure. Dependents come from ecosyste.ms for the Go module path of v2. The sponsor links (GitHub Sponsors, PayPal) are not recorded. The README names GitHub Discussions for feedback and usage stories, recorded as forum. Contributors are the last page number of the contributors endpoint with per_page=1.
