@@ -1,0 +1,122 @@
+id: peewee
+name: peewee
+status: accepted
+checkedAt: 2026-11-16
+description: Small Python object-relational mapper with a query builder, asyncio support and migrations for SQLite, MySQL, MariaDB and PostgreSQL.
+facts:
+  - field: homepage
+    value: https://docs.peewee-orm.com/en/latest/
+    url: https://docs.peewee-orm.com/en/latest/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Peewee is a simple and small ORM."
+  - field: repository
+    value: https://github.com/coleifer/peewee
+    url: https://api.github.com/repos/coleifer/peewee
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://docs.peewee-orm.com/en/latest/
+    url: https://docs.peewee-orm.com/en/latest/
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: Charles Leifer
+    url: https://github.com/coleifer/peewee/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2010 Charles Leifer"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/coleifer
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2010
+    url: https://pypi.org/pypi/peewee/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [orm]
+    url: https://github.com/coleifer/peewee/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Peewee is a simple and small ORM."
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/coleifer/peewee
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/coleifer/peewee/blob/4.5.3/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">=3.8"'
+  - field: runtimeMin
+    value: Python 3.8
+    url: https://github.com/coleifer/peewee/blob/4.5.3/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">=3.8"'
+  - field: installMethod
+    value: pip
+    url: https://github.com/coleifer/peewee/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "pip install peewee"
+  - field: databases
+    value: [sqlite, mysql, mariadb, postgres]
+    url: https://github.com/coleifer/peewee/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "supports sqlite, mysql, mariadb, postgresql"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/coleifer/peewee
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/coleifer/peewee/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-07
+    url: https://api.github.com/repos/coleifer/peewee/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 12006
+    url: https://api.github.com/repos/coleifer/peewee
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 132
+    url: https://api.github.com/repos/coleifer/peewee/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiName
+    value: peewee
+    url: https://pypi.org/pypi/peewee/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: "41071694 (last month)"
+    url: https://pypistats.org/api/packages/peewee/recent
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 236
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/peewee
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 7932
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/peewee
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, hqCountry, parent, forkOf, successorOf, basedOn, alternativeTo, contentStore, multisite, adminUi, headlessApi, templating, i18n, userRoles, sso, importsFrom, renderingModes, runsAs, paidEdition, endoflifeId, usageShare, reportedInstalls, pluginDirectory, discord, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: []
+notes: >
+  The homepage given in the candidate row, http://docs.peewee-orm.com/, redirects to http only, so it is not linked; the https docs index at docs.peewee-orm.com/en/latest/ answers 200 and is recorded as homepage and docs. The repository is coleifer/peewee and the install docs name the pip package peewee. The LICENSE copyright line and the docs footer both name Charles Leifer; the repository owner is the user coleifer. The latest stable release is 4.5.3 from 2026-10-07, so currentMajor is 4. The PyPI first upload is 0.1.0 from 2010-10-18, which sets firstRelease. The pypistats figure is the last-month count from the recent endpoint, read on 2026-11-16, because the PyPI JSON reports -1. The README names a mailing list at an http Google Groups address and an IRC channel for questions; neither is recorded as forum because the mailing list address is plain http. The README says asyncio support is built on the aiosqlite, asyncpg and aiomysql drivers, and that migrations come from a diff-based runner; both are coined kinds kept here in prose only. The README's flask, fastapi and pydantic lines name integrations, which are not basedOn statements. The README says the library is a single module with no required dependencies, and that the MySQL, PostgreSQL and async database drivers are optional extras. The README names integrations with Flask, FastAPI and pydantic and says it has been used in production since 2010. Its examples define models as Python classes with field types, create tables from them, and describe the query builder as one that exposes the full power of SQL.

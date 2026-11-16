@@ -1,0 +1,123 @@
+id: passport
+name: Passport
+status: accepted
+checkedAt: 2026-11-16
+description: Authentication middleware for Node.js that authenticates requests through pluggable strategies.
+facts:
+  - field: homepage
+    value: https://www.passportjs.org/
+    url: https://www.passportjs.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Simple, unobtrusive authentication for Node.js"
+  - field: repository
+    value: https://github.com/jaredhanson/passport
+    url: https://api.github.com/repos/jaredhanson/passport
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://www.passportjs.org/docs/
+    url: https://www.passportjs.org/docs/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Passport is middleware for Node.js that makes it easy to implement"
+  - field: firstRelease
+    value: 2011
+    url: https://api.github.com/repos/jaredhanson/passport/commits/39f0a131457064b2c8bf6b5622bafb4ca22c1fcc
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Jared Hanson
+    url: https://github.com/jaredhanson/passport/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2011-2021 Jared Hanson"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/jaredhanson
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [auth]
+    url: https://github.com/jaredhanson/passport/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Passport's sole purpose is to authenticate requests"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/jaredhanson/passport
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://www.passportjs.org/concepts/authentication/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Passport is authentication middleware for Node.js"
+  - field: installMethod
+    value: npm
+    url: https://github.com/jaredhanson/passport/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install passport"
+  - field: sso
+    value: [OpenID, OAuth]
+    url: https://www.passportjs.org/features/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Single sign-on with OpenID and OAuth"
+  - field: pluginCount
+    value: "500+"
+    url: https://www.passportjs.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "500+ Strategies Now!"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/jaredhanson/passport
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://registry.npmjs.org/passport/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2023-11-27
+    url: https://registry.npmjs.org/passport
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 23517
+    url: https://api.github.com/repos/jaredhanson/passport
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 32
+    url: https://api.github.com/repos/jaredhanson/passport/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: passport
+    url: https://registry.npmjs.org/passport/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "10269685 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/passport
+    checkedAt: 2026-11-16
+    via: api
+  - field: x
+    value: https://twitter.com/passportjs
+    url: https://www.passportjs.org/
+    checkedAt: 2026-11-16
+    via: page
+  - field: facebook
+    value: https://www.facebook.com/passportjs
+    url: https://www.passportjs.org/
+    checkedAt: 2026-11-16
+    via: page
+notFound: [basedOn, runsAs, renderingModes, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, wikidata, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, contentStore, databases, paidEdition, pricingPage, discord, bluesky, mastodon, instagram, newsletter, subreddit, pluginDirectory, runtimeMin, packagistName, packagistDownloads, pypiDownloads, usageShare, reportedInstalls, latestPrereleaseDate, endoflifeId, lastCommitDate, forum]
+unreadable: []
+notes: >
+  The project has no GitHub release object; its tags run from v0.1.0 (commit dated 2011-10-08) to v0.7.0 (commit dated 2023-11-27), and the npm package passport matches the latest stable version 0.7.0 (published 2023-11-27), so the registry gives currentMajor 0 and latestReleaseDate. The homepage shows "500+ Strategies Now!" and the features page "500+ authentication strategies", while the README says "over 480"; both are recorded as stated, the homepage and features page being the project's own site, and the README count is older. The strategy directory link on the homepage (/packages/) answers 404, so pluginDirectory is not recorded. The README and concepts page say Passport is middleware for Node.js; the README describes it as "Express-compatible" and the homepage as usable in "any Express-based web application", which is compatibility, not a basedOn statement, so basedOn is left out. The engines field in package.json at v0.7.0 says "node": ">= 0.4.0"; that is a historical lower bound that the project does not state as a supported minimum, so runtimeMin is left out and a reviewer may record it. The README's sponsors section names Auth0, WorkOS, Descope, FusionAuth and Stytch; they are sponsors, not facts about the project. The docs index names OAuth 2.0 and API authentication concept pages; the OAuth strategies are plugins, so the sso value rests on the features page only. The homepage links the project's X and Facebook accounts, which are recorded without a quote as link facts. The LICENSE copyright line is "Copyright (c) 2011-2021 Jared Hanson", the README copyright line gives the same name. The npm figure counts passport, the package the README installs. The README says Passport does not mount routes or assume any particular database schema, and that its strategies are plugins; it links passport-local, passport-facebook and other strategies as separate repositories. The concepts page names Middleware, Strategies and Sessions as its three fundamental concepts. The README says strategies can range from verifying username and password credentials, to delegated authentication using OAuth, or federated authentication using OpenID.

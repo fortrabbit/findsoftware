@@ -1,0 +1,112 @@
+id: phonenumbers-py
+name: phonenumbers
+status: accepted
+checkedAt: 2026-11-16
+description: Python library for parsing, formatting, storing and validating international phone numbers, a port of Google's libphonenumber.
+facts:
+  - field: repository
+    value: https://github.com/daviddrysdale/python-phonenumbers
+    url: https://api.github.com/repos/daviddrysdale/python-phonenumbers
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://daviddrysdale.github.io/python-phonenumbers/
+    url: https://github.com/daviddrysdale/python-phonenumbers/blob/dev/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "[Documentation](https://daviddrysdale.github.io/python-phonenumbers/)"
+  - field: maintainer
+    value: David Drysdale
+    url: https://github.com/daviddrysdale/python-phonenumbers/blob/v9.0.43/python/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'authors = [{name = "David Drysdale"'
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/daviddrysdale
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: https://pypi.org/pypi/phonenumbers/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [validation]
+    url: https://pypi.org/pypi/phonenumbers/json
+    checkedAt: 2026-11-16
+    via: api
+    quote: "parsing, formatting, storing and validating international phone numbers"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/daviddrysdale/python-phonenumbers
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/daviddrysdale/python-phonenumbers/blob/dev/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "It supports Python 2.5-2.7 and Python 3.x"
+  - field: runtimeMin
+    value: "2.5"
+    url: https://github.com/daviddrysdale/python-phonenumbers/blob/v9.0.43/python/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">=2.5"'
+  - field: installMethod
+    value: pip
+    url: https://github.com/daviddrysdale/python-phonenumbers/blob/dev/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "pip install phonenumbers"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/daviddrysdale/python-phonenumbers/blob/v9.0.43/python/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'license = "Apache-2.0"'
+  - field: currentMajor
+    value: 9
+    url: https://api.github.com/repos/daviddrysdale/python-phonenumbers/tags?per_page=100
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-06
+    url: https://pypi.org/pypi/phonenumbers/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 3781
+    url: https://api.github.com/repos/daviddrysdale/python-phonenumbers
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 31
+    url: https://api.github.com/repos/daviddrysdale/python-phonenumbers/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiName
+    value: phonenumbers
+    url: https://pypi.org/pypi/phonenumbers/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: "45911240 (last month, read 2026-11-16)"
+    url: https://pypistats.org/api/packages/phonenumbers/recent
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 222
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/phonenumbers
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 6592
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/phonenumbers
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, paidEdition, runsAs, renderingModes, contentStore, databases, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, npmWeeklyDownloads, packagistName, packagistDownloads, latestPrereleaseDate, apiLimits, regions, selfHostOption, hostedOffering]
+unreadable: []
+notes: >
+  The GitHub homepage field is empty and PyPI's project_urls homepage is the repository, so the record is repo-only and has no homepage; the documentation site is the docs fact. The default branch is dev, and the packaging sits in the python/ folder: python/pyproject.toml at tag v9.0.43 names the author, the license and requires-python. The Python port wording ("This is a Python port of Google's libphonenumber library") is a port statement, not a basedOn statement, and Google's project is not a record. The stars and contributors belong to the repository, which holds the Python package and the libphonenumber resources. The repository ships a second package, phonenumberslite, without the geocoder, carrier and timezone metadata; the README describes it, and it is not recorded as its own record. The README names the optional geocoder, carrier and timezone packages and the stub files for static typing; those are features, kept out of the fields. The major 9 is the tag line (v9.0.43 is the highest stable tag, and PyPI's stable 9.0.43 agrees); no page on this repository states that the version follows upstream libphonenumber. The runtimeMin 2.5 is the requires-python floor the package declares, and the README says it supports Python 2.5-2.7 and Python 3.x; the classifiers list Python 3.3 to 3.12, so the floor is the declared range and not a tested one. The LICENSE file is the Apache 2.0 text with no copyright line; the maintainer comes from the pyproject author list. The Java code is copyrighted by The Libphonenumber Authors (README, 2009-2015), which is the upstream project's notice and not a second maintainer. The pypiDownloads figure is the pypistats.org last_month count read on 2026-11-16, the period is stated in the value. The dependent counts come from ecosyste.ms for the PyPI package. The README says the normal metadata loads region by region on first use, and that the geocoding, carrier and timezone metadata sits in separate packages that must be imported explicitly. Its examples show that parse raises NumberParseException for a number with neither a plus sign nor a default region, and that is_possible_number and is_valid_number are separate checks. The README also describes a set of type stub files for static type checking and the AsYouTypeFormatter and PhoneNumberMatcher objects, which are features and not fields. The README's examples format numbers in the national, international and E164 layouts, and say the library includes a lot of metadata.

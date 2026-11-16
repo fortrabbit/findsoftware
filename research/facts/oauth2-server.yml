@@ -1,0 +1,129 @@
+id: oauth2-server
+name: OAuth 2.0 Server
+status: accepted
+checkedAt: 2026-11-16
+description: PHP library that implements an OAuth 2.0 authorization server, issuing and checking access tokens for an API.
+facts:
+  - field: homepage
+    value: https://oauth2.thephpleague.com/
+    url: https://oauth2.thephpleague.com/
+    checkedAt: 2026-11-16
+    via: page
+    quote: league/oauth2-server is a standards compliant implementation of an OAuth 2.0 authorization server written in PHP
+  - field: repository
+    value: https://github.com/thephpleague/oauth2-server
+    url: https://api.github.com/repos/thephpleague/oauth2-server
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://oauth2.thephpleague.com/
+    url: https://github.com/thephpleague/oauth2-server/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: The library documentation can be found at
+  - field: categories
+    value: [oauth]
+    url: https://github.com/thephpleague/oauth2-server/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: is a standards compliant implementation of an OAuth 2.0 authorization server written in PHP
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/thephpleague/oauth2-server
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/thephpleague/oauth2-server/blob/9.4.1/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0"'
+  - field: runtimeMin
+    value: "8.2"
+    url: https://github.com/thephpleague/oauth2-server/blob/9.4.1/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0"'
+  - field: installMethod
+    value: composer
+    url: https://github.com/thephpleague/oauth2-server/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: composer require league/oauth2-server
+  - field: sso
+    value: [oauth2]
+    url: https://github.com/thephpleague/oauth2-server/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: is a standards compliant implementation of an OAuth 2.0 authorization server written in PHP
+  - field: maintainer
+    value: Alex Bilbie
+    url: https://github.com/thephpleague/oauth2-server/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: Copyright (C) Alex Bilbie
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/thephpleague
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://api.github.com/repos/thephpleague/oauth2-server/commits/0.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/thephpleague/oauth2-server
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/thephpleague/oauth2-server/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: This package is released under the MIT License
+  - field: currentMajor
+    value: 9
+    url: https://api.github.com/repos/thephpleague/oauth2-server/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-06-25
+    url: https://api.github.com/repos/thephpleague/oauth2-server/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 6676
+    url: https://api.github.com/repos/thephpleague/oauth2-server
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 141
+    url: https://api.github.com/repos/thephpleague/oauth2-server/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: league/oauth2-server
+    url: https://packagist.org/packages/league/oauth2-server.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "175235084 (total, 2026-11-16)"
+    url: https://packagist.org/packages/league/oauth2-server.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 241
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/league%2Foauth2-server
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 19594
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/league%2Foauth2-server
+    checkedAt: 2026-11-16
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, headlessApi, adminUi, templating, i18n, multisite, livePreview, userRoles, databases, contentStore, paidEdition, pricingPage, discord, x, forum, newsletter, hostedOffering, pluginDirectory, pluginCount, wikidata, npmName, npmWeeklyDownloads, dockerPulls, usageShare, reportedInstalls, endoflifeId, hqCountry]
+unreadable: []
+notes: >
+  The LICENSE copyright line names Alex Bilbie, which sets the maintainer. The README says Alex Bilbie created the library and credits Andy Millington as its principal developer and maintainer; the README also says Alex Bilbie developed and maintained it until 2017, and both names stay in notes. The sso value oauth2 records the protocol the README names for the library, an OAuth 2.0 authorization server; the library issues OAuth grants inside the application that embeds it. A reviewer may decide that OAuth 2.0 authorization is not single sign-on and drop the value. The grants (authorization code, client credentials, device authorization, implicit, refresh and resource owner password credentials) and the RFCs it implements (6749, 6750, 7519, 7636 and 8628) are coined kinds and stay in notes. The README requires the openssl and json PHP extensions. The README's community integrations (Drupal simple_oauth, Laravel Passport, an OAuth 2 server for CakePHP 3, a Mezzio package, a Symfony bundle and a CodeIgniter 4 package) build on this library; the README does not say they are built on it as a parent, so they are not recorded as basedOn. The first tag, 0.1, dates from 2012-07-31, before the first Packagist version (0.2, 2012-08-27). The GitHub figures and the Packagist total belong to the one repository and package named here.

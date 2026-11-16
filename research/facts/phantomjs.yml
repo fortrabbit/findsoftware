@@ -1,0 +1,120 @@
+id: phantomjs
+name: PhantomJS
+status: discontinued
+checkedAt: 2026-11-16
+description: Headless WebKit browser controlled by JavaScript scripts, used for page automation, screen capture and testing.
+facts:
+  - field: status
+    value: discontinued
+    url: https://phantomjs.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "PhantomJS development is suspended until further notice"
+  - field: status
+    value: discontinued
+    url: https://api.github.com/repos/ariya/phantomjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: homepage
+    value: https://phantomjs.org/
+    url: https://phantomjs.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "PhantomJS is a headless web browser scriptable with JavaScript"
+  - field: repository
+    value: https://github.com/ariya/phantomjs
+    url: https://api.github.com/repos/ariya/phantomjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://phantomjs.org/documentation/
+    url: https://github.com/ariya/phantomjs/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Explore the complete documentation"
+  - field: maintainer
+    value: PhantomJS contributors
+    url: https://phantomjs.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "2010-2018 PhantomJS contributors"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/ariya
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [browser-automation]
+    url: https://phantomjs.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Page automation"
+  - field: language
+    value: C++
+    url: https://api.github.com/repos/ariya/phantomjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [binary]
+    url: https://phantomjs.org/download.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "For this static build, the binary is self-contained"
+  - field: installMethod
+    value: download
+    url: https://github.com/ariya/phantomjs/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Download, unpack, and start having fun in just 5 minutes"
+  - field: installMethod
+    value: source
+    url: https://phantomjs.org/download.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "To compiled PhantomJS from source"
+  - field: forum
+    value: https://groups.google.com/group/phantomjs
+    url: https://github.com/ariya/phantomjs/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Join the mailing-list and discuss with other PhantomJS fans"
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/ariya/phantomjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://phantomjs.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Distributed under the BSD license"
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/ariya/phantomjs/commits/2.1.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2016-01-24
+    url: https://api.github.com/repos/ariya/phantomjs/commits/2.1.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: "2011"
+    url: https://api.github.com/repos/ariya/phantomjs/commits/1.0.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 29410
+    url: https://api.github.com/repos/ariya/phantomjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 132
+    url: https://api.github.com/repos/ariya/phantomjs/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, contentStore, databases, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, usageShare, reportedInstalls, pluginDirectory, pluginCount, subreddit, discord, newsletter, mastodon, bluesky, x, wikidata, endoflifeId, npmName, npmWeeklyDownloads, latestPrereleaseDate, selfHostOption, runtimeMin]
+unreadable: []
+notes: >
+  Discontinued on two signals: the homepage and the README both state that PhantomJS development is suspended until further notice, and the repository the homepage names as its source (github.com/ariya/phantomjs) is archived. The last tag is 2.1.1 (commit dated 2016-01-24); the repository has tags but no GitHub release objects, so the tag commit date is the release date, and the README's "latest stable release" is version 2.1. The first tag is 1.0.0 (commit dated 2011-01-17), which sets firstRelease. The npm packages phantomjs (deprecated: renamed to phantomjs-prebuilt) and phantomjs-prebuilt (deprecated) are third-party wrappers of the binary, not the project's own package, so they are not recorded. The download page's FreeBSD pkg command is a third-party package route and is not recorded as an installMethod. The README's CI sentence ("ideal for continuous integration systems") and the homepage's server-side screenshot use both occur, so no runsAs is recorded. The README says PhantomJS is created and maintained by the handle @ariyahidayat, with the help of many contributors; the LICENSE.BSD copyright line is a template with the placeholder COPYRIGHT HOLDER, so the maintainer is the name in the homepage copyright line, "PhantomJS contributors". The homepage's http address redirects to https, so https is recorded. The repository has no successor named by the project.

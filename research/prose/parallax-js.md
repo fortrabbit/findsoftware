@@ -1,0 +1,1 @@
+Parallax.js is a JavaScript engine that offsets the layers of a scene by their depth. It reads the orientation of a device where a motion sensor is available and uses the cursor position where none is. It works on a scene element in the page and moves that element's layers.

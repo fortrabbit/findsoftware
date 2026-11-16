@@ -1,0 +1,3 @@
+Observable Plot is a JavaScript library that draws charts from tabular data for exploratory data analysis. It draws marks, scales, transforms, projections, facets and interactions, and it outputs SVG or HTML figure elements. Plot returns a detached element, so the page has to insert it.
+
+The library can be installed with a package manager, loaded from a CDN or downloaded as a UMD bundle for use in plain HTML. Its CDN-hosted module bundle loads the D3 dependency automatically. Observable, Inc. publishes it, and Plot is available by default in Observable notebooks. The library can also render server-side with React. Its own pages compare it with D3, which they describe as a lower-level tool with different goals.

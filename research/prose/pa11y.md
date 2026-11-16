@@ -1,0 +1,1 @@
+Pa11y is a command-line tool and Node.js library that runs automated accessibility tests on web pages. HTML_CodeSniffer is the default test runner, and the README also names axe as a runner. Pa11y CI, Pa11y Dashboard and Pa11y Webservice, listed on pa11y.org, are separate tools.

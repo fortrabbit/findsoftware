@@ -1,0 +1,1 @@
+Papa Parse is a JavaScript library that parses CSV and other delimited text and converts JSON back into CSV. It has no dependencies. It runs in the browser and, through a stream interface, in Node.js.

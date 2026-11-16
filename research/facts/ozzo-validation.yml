@@ -1,0 +1,98 @@
+id: ozzo-validation
+name: ozzo-validation
+status: accepted
+checkedAt: 2026-11-16
+description: Go package for validating data with rules written as ordinary Go code instead of struct tags.
+facts:
+  - field: repository
+    value: https://github.com/go-ozzo/ozzo-validation
+    url: https://api.github.com/repos/go-ozzo/ozzo-validation
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Qiang Xue
+    url: https://github.com/go-ozzo/ozzo-validation/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2016, Qiang Xue"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/go-ozzo
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: "2016"
+    url: https://api.github.com/repos/go-ozzo/ozzo-validation/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [validation]
+    url: https://github.com/go-ozzo/ozzo-validation/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "ozzo-validation is a Go package that provides configurable and extensible data validation capabilities"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/go-ozzo/ozzo-validation
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: go
+    url: https://github.com/go-ozzo/ozzo-validation/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "ozzo-validation is a Go package that provides configurable and extensible data validation capabilities"
+  - field: runtimeMin
+    value: "1.21"
+    url: https://github.com/go-ozzo/ozzo-validation/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Go 1.21 or above"
+  - field: i18n
+    value: yes
+    url: https://github.com/go-ozzo/ozzo-validation/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "error code and message translation support"
+  - field: installMethod
+    value: go get
+    url: https://github.com/go-ozzo/ozzo-validation/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "go get github.com/go-ozzo/ozzo-validation/v4"
+  - field: license
+    value: MIT
+    url: https://github.com/go-ozzo/ozzo-validation/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/go-ozzo/ozzo-validation/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy of this software"
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/go-ozzo/ozzo-validation/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-27
+    url: https://api.github.com/repos/go-ozzo/ozzo-validation/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 4160
+    url: https://api.github.com/repos/go-ozzo/ozzo-validation
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 38
+    url: https://api.github.com/repos/go-ozzo/ozzo-validation/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, basedOn, renderingModes, runsAs, contentStore, databases, headlessApi, templating, adminUi, multisite, livePreview, userRoles, sso, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, discord, newsletter, mastodon, bluesky, x, wikidata, endoflifeId, packagistName, npmName, npmWeeklyDownloads, pypiDownloads, dependentPackages, dependentRepos, latestPrereleaseDate, selfHostOption, mavenCoordinates]
+unreadable: []
+notes: >
+  Go module: the install route is go get of the v4 module path, and the Go module proxy publishes no download figure, so none is recorded. The repository is the only project URL; the README links only a godoc badge and a go-rest-api starter kit, which are not the project's own site, so no homepage. The is sub-package wraps the validators of the govalidator module; a dependency is not a basedOn statement, so it stays here. The README's go-rest-api link is an example application, not a parent. Releases: GitHub releases start at v1.0 in 2016 (the repository was created in June 2016); the newest stable is v4.5.0 dated 2026-10-27. The v4 line is the current major; the README gives Go 1.21 as the minimum and tests the two newest Go releases. The i18n value covers error code and message translation as the README words it. The README describes validation of simple values, structs, maps, slices and custom types, and an is sub-package of string format rules. Contributors counted with per_page=1.

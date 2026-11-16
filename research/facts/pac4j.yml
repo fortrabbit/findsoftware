@@ -1,0 +1,115 @@
+id: pac4j
+name: pac4j
+status: accepted
+checkedAt: 2026-11-16
+description: Java security library for authentication and authorization in web frameworks, with OpenID Connect, SAML, CAS, OAuth and JWT.
+facts:
+  - field: homepage
+    value: https://www.pac4j.org/
+    url: https://www.pac4j.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "One Java security framework for every web framework"
+  - field: repository
+    value: https://github.com/pac4j/pac4j
+    url: https://api.github.com/repos/pac4j/pac4j
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://www.pac4j.org/docs/index.html
+    url: https://github.com/pac4j/pac4j/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Read the documentation"
+  - field: maintainer
+    value: Jérôme LELEU
+    url: https://www.pac4j.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Made by Jérôme LELEU and other volunteers"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/pac4j
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: "2013"
+    url: https://api.github.com/repos/pac4j/pac4j/commits/982c6b9d487966f0bfd3f5a3aaffc3dad40c5ee6
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [authorization]
+    url: https://github.com/pac4j/pac4j/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "one API to add OpenID Connect, SAML, CAS, OAuth, JWT, LDAP"
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/pac4j/pac4j
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: jvm
+    url: https://github.com/pac4j/pac4j/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The security engine for Java"
+  - field: runtimeMin
+    value: "17"
+    url: https://www.pac4j.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Java 17+ (8 and 11 on older lines)"
+  - field: sso
+    value: [oidc, saml, cas, oauth2]
+    url: https://github.com/pac4j/pac4j/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "OpenID Connect, SAML 2, CAS, OAuth 1.0 & 2.0"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/pac4j/pac4j/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Apache License Version 2.0, January 2004"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/pac4j/pac4j/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Open source under the Apache 2 license"
+  - field: installMethod
+    value: maven
+    url: https://www.pac4j.org/how-to-secure-a-java-application-with-oidc.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Add the Maven dependencies"
+  - field: mavenCoordinates
+    value: "org.pac4j:pac4j-core"
+    url: https://repo1.maven.org/maven2/org/pac4j/pac4j-core/maven-metadata.xml
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 6
+    url: https://repo1.maven.org/maven2/org/pac4j/pac4j-core/maven-metadata.xml
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-04
+    url: https://repo1.maven.org/maven2/org/pac4j/pac4j-core/maven-metadata.xml
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2539
+    url: https://api.github.com/repos/pac4j/pac4j
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 187
+    url: https://api.github.com/repos/pac4j/pac4j/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, basedOn, renderingModes, runsAs, contentStore, databases, headlessApi, templating, i18n, adminUi, multisite, livePreview, userRoles, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, discord, newsletter, mastodon, bluesky, x, wikidata, endoflifeId, npmName, packagistName, packagistDownloads, pypiDownloads, npmWeeklyDownloads, dependentPackages, dependentRepos, latestPrereleaseDate, selfHostOption]
+unreadable: []
+notes: >
+  The repository has no GitHub releases; it tags each module (pac4j-parent-<version>, pac4j-<version>, scribe-up-<version>). The registry therefore sets currentMajor and latestReleaseDate: Maven Central's pac4j-core metadata names 6.6.1 as the release, and the parent tag for 6.6.1 is dated 2026-11-04 as well. The docs index shows a 6.7 line, which is ahead of the stable release and not used. firstRelease is 2013 from the oldest tags and the first Maven Central upload (1.4.0, both 2013-04-22); the homepage's "Open source since 2012" is a statement about the repository, which was created in January 2012, and is not used as a release. The maintainer is the name the homepage footer gives ("Made by Jérôme LELEU and other volunteers"); the LICENSE carries no copyright line, and no legal entity or country is stated. The sso value follows the README sentence naming the login protocols; LDAP, Kerberos and JWT appear in the README as authenticators or other mechanisms and are not sso values here, and the reviewer may decide whether a client library takes sso at all. The pac4j README names frameworks it integrates with (Spring Boot, Jakarta EE, Play, Vert.x and more) and the products that embed it (Apereo CAS, Apache Syncope, Apache Knox); none is a basedOn or importsFrom statement. The framework integrations Lagom and Akka HTTP are archived in separate repositories and Pippo is inactive, per the homepage; they are not separate records here. The commercial support page is a support offer, not a paid edition or pricing page. The homepage's mailing lists are not the project's forum field. Contributors counted with per_page=1.

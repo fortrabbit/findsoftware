@@ -1,0 +1,128 @@
+id: openid-client
+name: openid-client
+status: accepted
+checkedAt: 2026-11-16
+description: OAuth 2 and OpenID Connect client library for JavaScript runtimes such as Node.js, Deno and Cloudflare Workers.
+facts:
+  - field: docs
+    value: https://github.com/panva/openid-client/blob/main/docs/README.md
+    url: https://github.com/panva/openid-client/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/panva/openid-client
+    url: https://api.github.com/repos/panva/openid-client
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Filip Skokan
+    url: https://github.com/panva/openid-client/blob/main/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2016 Filip Skokan"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/panva
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://registry.npmjs.org/openid-client
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [oauth]
+    url: https://github.com/panva/openid-client/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "OAuth 2 / OpenID Connect Client API for JavaScript Runtimes"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/panva/openid-client
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [node, deno]
+    url: https://github.com/panva/openid-client/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "designed for JavaScript runtimes like Node.js, Browsers, Deno, Cloudflare Workers, and more"
+  - field: runtimeMin
+    value: 20
+    url: https://github.com/panva/openid-client/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Node.js v20.x as baseline is required"
+  - field: sso
+    value: [oauth2, oidc]
+    url: https://github.com/panva/openid-client/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Authorization Code Flow (profiled under OpenID Connect 1.0, OAuth 2.0, OAuth 2.1, FAPI 1.0 Advanced, and FAPI 2.0)"
+  - field: installMethod
+    value: npm
+    url: https://github.com/panva/openid-client/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "distributed via npmjs.com"
+  - field: installMethod
+    value: jsr
+    url: https://github.com/panva/openid-client/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "jsr.io"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/panva/openid-client
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/panva/openid-client/blob/main/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 6
+    url: https://github.com/panva/openid-client/releases/tag/v6.9.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-13
+    url: https://github.com/panva/openid-client/releases/tag/v6.9.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2451
+    url: https://api.github.com/repos/panva/openid-client
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 40
+    url: https://api.github.com/repos/panva/openid-client/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: openid-client
+    url: https://registry.npmjs.org/openid-client/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: 23314880 (2026-11-01 to 2026-11-07)
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/openid-client
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 515
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/openid-client
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 22658
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/openid-client
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, latestPrereleaseDate, httpArchiveSites, wikidata, selfHostOption]
+unreadable: []
+notes: >
+  The repository has no project site: the GitHub homepage field is empty and the README links only the repository and the API reference in docs/README.md, so homepage is not recorded. The README says the package is "distributed via npmjs.com, jsr.io, and github.com"; the JSR route (jsr.io/@panva/openid-client) is named in that sentence and recorded as its own route, though no JSR install command appears. The README's "Supported Runtimes" list also names Bun, Cloudflare Workers and Electron, and the runtime field records the two names in the quoted sentence. The README says the library works wherever the Web Crypto and Fetch APIs exist, and its docs say that by default the module only allows HTTPS endpoints (allowInsecureRequests removes the restriction); both are in the README and docs/README.md and belong to notes. The README records a certification by the OpenID Foundation: Filip Skokan has certified that the software conforms to the Basic, FAPI 1.0 and FAPI 2.0 Relying Party Conformance Profiles. The README describes the package as a client API that simplifies integration with authorization servers, and lists as features the authorization code flow, the device, CIBA, refresh token and client credentials grants, token introspection and revocation, pushed authorization requests, DPoP, dynamic client registration and a Passport strategy; these are features, not fields. The Auth0 sponsor block is a sponsorship and is not recorded. The firstRelease year is the oldest npm upload (0.0.1, 2016-07-08) of the package, which predates the oldest GitHub release (2018-01-15). The npm figure for 2026-11-01 to 2026-11-07 is the sum of the daily range.

@@ -1,0 +1,112 @@
+id: ofetch
+name: ofetch
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript library that wraps the fetch API with JSON parsing, retries, timeouts and interceptors.
+facts:
+  - field: repository
+    value: https://github.com/unjs/ofetch
+    url: https://api.github.com/repos/unjs/ofetch
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [data-fetching]
+    url: https://raw.githubusercontent.com/unjs/ofetch/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A better fetch API."
+  - field: maintainer
+    value: Pooya Parsa
+    url: https://raw.githubusercontent.com/unjs/ofetch/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) Pooya Parsa"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/unjs/ofetch/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) Pooya Parsa"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/unjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/unjs/ofetch
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://raw.githubusercontent.com/unjs/ofetch/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Works on node, browser, and workers."
+  - field: installMethod
+    value: npm
+    url: https://raw.githubusercontent.com/unjs/ofetch/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npx nypm i ofetch"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/unjs/ofetch/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/unjs/ofetch/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: firstRelease
+    value: "2020"
+    url: https://api.github.com/repos/unjs/ofetch/git/refs/tags/v0.0.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/unjs/ofetch/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2025-11-01
+    url: https://api.github.com/repos/unjs/ofetch/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 5368
+    url: https://api.github.com/repos/unjs/ofetch
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 65
+    url: https://api.github.com/repos/unjs/ofetch/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: ofetch
+    url: https://registry.npmjs.org/ofetch
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "25778994 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/ofetch
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 292
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ofetch
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 7618
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ofetch
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, docs, basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, runsAs, runtimeMin, renderingModes, templating, i18n, adminUi, userRoles, sso, databases, contentStore, pluginDirectory, pluginCount, pricingPage, paidEdition, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, rubygemsName, packagistName, pypiName, dockerPulls, mavenCoordinates, endoflifeId, latestPrereleaseDate, hqCountry, wikidata]
+unreadable: []
+notes: >
+  Boundary ruling: an HTTP client is accepted as a helper library, so the CSV boundary state is not a record status. Repository only: the GitHub homepage field is empty, the npm homepage is the GitHub README anchor, and no page names a site of its own, so no homepage is recorded. The main branch is the v2 alpha development line and the README points to the v1 branch for v1 docs; currentMajor is 1 from the highest stable GitHub release v1.5.1 (2025-11-01), which matches npm latest. The newest prerelease, v2.0.0-alpha.3 (2025-10-28), is older than the latest release, so no latestPrereleaseDate is recorded. The oldest tag v0.0.1 is dated 2020-12-09, earlier than the npm registry's first upload 0.0.0 (2022-05-03), so firstRelease is 2020. The README says the library works "on node, browser, and workers"; runtime is recorded as node because the Node.js statement is the one that says what must run on the server, and no runsAs statement is recorded because the README names several environments. The README's proxy section names undici and Bun and Deno proxy options; these are not runtime values. The npm figure counts downloads of the ofetch package named by the install command. Stars and contributors are for the repository.

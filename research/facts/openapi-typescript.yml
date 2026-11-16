@@ -1,0 +1,122 @@
+id: openapi-typescript
+name: openapi-typescript
+status: accepted
+checkedAt: 2026-11-16
+description: Command-line tool and library that generates TypeScript types from OpenAPI 3.0 and 3.1 schemas.
+facts:
+  - field: homepage
+    value: https://openapi-ts.dev/
+    url: https://openapi-ts.dev/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Convert OpenAPI 3.0/3.1 schemas to TypeScript types and create type-safe fetching."
+  - field: docs
+    value: https://openapi-ts.dev/introduction
+    url: https://openapi-ts.dev/introduction
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/openapi-ts/openapi-typescript
+    url: https://api.github.com/repos/openapi-ts/openapi-typescript
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Drew Powers
+    url: https://github.com/openapi-ts/openapi-typescript/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2020 Drew Powers"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/openapi-ts
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: https://api.github.com/repos/openapi-ts/openapi-typescript/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [codegen, api-client]
+    url: https://openapi-ts.dev/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Convert OpenAPI 3.0/3.1 schemas to TypeScript types and create type-safe fetching."
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/openapi-ts/openapi-typescript
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: node
+    url: https://openapi-ts.dev/introduction
+    checkedAt: 2026-11-16
+    via: page
+    quote: "This library requires the latest version of Node.js installed (20.x or higher recommended)."
+  - field: runsAs
+    value: [local]
+    url: https://openapi-ts.dev/introduction
+    checkedAt: 2026-11-16
+    via: page
+    quote: generate a local type file by running npx openapi-typescript
+  - field: installMethod
+    value: npm
+    url: https://openapi-ts.dev/introduction
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm i -D openapi-typescript typescript"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/openapi-ts/openapi-typescript
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://openapi-ts.dev/introduction
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The code is MIT-licensed and free for use."
+  - field: currentMajor
+    value: 7
+    url: https://api.github.com/repos/openapi-ts/openapi-typescript/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-02-11
+    url: https://github.com/openapi-ts/openapi-typescript/releases/tag/openapi-typescript@7.13.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 8439
+    url: https://api.github.com/repos/openapi-ts/openapi-typescript
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 240
+    url: https://api.github.com/repos/openapi-ts/openapi-typescript/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: openapi-typescript
+    url: https://registry.npmjs.org/openapi-typescript/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: 16155192 (2026-11-01 to 2026-11-07)
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/openapi-typescript
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 374
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/openapi-typescript
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 8379
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/openapi-typescript
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, endoflifeId, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, runtimeMin, latestPrereleaseDate, httpArchiveSites, wikidata, selfHostOption]
+unreadable: []
+notes: >
+  The repository is a monorepo: the root README lists the openapi-typescript package and the openapi-fetch package, which ships separately. Stars, contributors and the release history cover both; the npm figures and firstRelease from the oldest GitHub release (v0.1.0, 2018-12-13) follow the openapi-typescript package. The introduction page says the library "requires the latest version of Node.js installed (20.x or higher recommended)", a recommendation, so runtimeMin is not recorded; the package manifest at the release tag declares no engines field. The introduction says the library loads schemas "from YAML or JSON, locally or remotely", and its examples import the generated types for paths, parameters and responses. The homepage says the static TypeScript types "provide zero runtime cost and zero client weight", and the introduction page lists OpenAPI 3.0 and 3.1 support with OpenAPI 2.x only through versions 5.x and earlier; both are spec compliance and go to notes, not fields. The homepage and introduction carry no social or community links. The npm figure for the period 2026-11-01 to 2026-11-07 is the sum of daily downloads from the range endpoint. The GitHub release tags for this package are named openapi-typescript@<version>, and the repository's tags also cover other packages.

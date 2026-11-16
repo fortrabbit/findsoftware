@@ -1,0 +1,103 @@
+id: oapi-codegen
+name: oapi-codegen
+status: accepted
+checkedAt: 2026-11-16
+description: Go code generator that turns OpenAPI 3.0 and 3.1 specifications into server boilerplate, API clients and models.
+facts:
+  - field: repository
+    value: https://github.com/oapi-codegen/oapi-codegen
+    url: https://api.github.com/repos/oapi-codegen/oapi-codegen
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/oapi-codegen/oapi-codegen/blob/v2.8.2/docs/configuration.md
+    url: https://github.com/oapi-codegen/oapi-codegen/blob/v2.8.2/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: For full details of what is supported, check out the oapi-codegen configuration documentation
+  - field: categories
+    value: [codegen, openapi]
+    url: https://github.com/oapi-codegen/oapi-codegen/blob/v2.8.2/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: a command-line tool and library to convert OpenAPI specifications to Go code
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/oapi-codegen/oapi-codegen
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/oapi-codegen/oapi-codegen/blob/v2.8.2/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: requires Go 1.25+ to build and install
+  - field: installMethod
+    value: go
+    url: https://github.com/oapi-codegen/oapi-codegen/blob/v2.8.2/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: go install github.com/oapi-codegen/oapi-codegen/v2/cmd/oapi-codegen@latest
+  - field: installMethod
+    value: go get -tool
+    url: https://github.com/oapi-codegen/oapi-codegen/blob/v2.8.2/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: go get -tool github.com/oapi-codegen/oapi-codegen/v2/cmd/oapi-codegen@latest
+  - field: runtimeMin
+    value: "1.25"
+    url: https://raw.githubusercontent.com/oapi-codegen/oapi-codegen/v2.8.2/go.mod
+    checkedAt: 2026-11-16
+    via: page
+    quote: go 1.25.0
+  - field: maintainer
+    value: oapi-codegen
+    url: https://github.com/oapi-codegen/oapi-codegen/blob/v2.8.2/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: the oapi-codegen organisation on GitHub
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/oapi-codegen
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2019
+    url: https://api.github.com/repos/oapi-codegen/oapi-codegen/commits/v1.0.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/oapi-codegen/oapi-codegen
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/oapi-codegen/oapi-codegen/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: Version 2.0, January 2004
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/oapi-codegen/oapi-codegen/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-31
+    url: https://api.github.com/repos/oapi-codegen/oapi-codegen/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 8667
+    url: https://api.github.com/repos/oapi-codegen/oapi-codegen
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 291
+    url: https://api.github.com/repos/oapi-codegen/oapi-codegen/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, headlessApi, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, databases, paidEdition, pricingPage, discord, x, forum, newsletter, hostedOffering, pluginDirectory, pluginCount, wikidata, npmName, packagistName, dockerPulls, usageShare, reportedInstalls, endoflifeId, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  No project site: the repository names no homepage, and oapi-codegen.dev did not answer when checked on 2026-11-16, so the record is repository-only. The LICENSE file has no copyright line, so the maintainer is the GitHub organisation oapi-codegen as the README names it; the README says the project is maintained in two people's free time and links sponsorship pages for them, and their names are not recorded. The v2.8.2 README gives the Go requirement twice: the tool needs Go 1.25+ to build and install, and the generated code has lower requirements that depend on the server target (1.24+ or 1.25+ in the Supported Servers table at that tag), so runtimeMin follows the go.mod line at the tag. The Go module has no download figure, so no registry figure is recorded. The current major is the Go module path major v2; the v1 line starts with the 2019 tag and is in the same repository. Supported output targets (Chi, Echo, Echo v5, Fiber, Fiber v3, Gin, gorilla/mux, Iris and net/http) and the OpenAPI 3.0 and 3.1 support are coined kinds and stay in notes. The Go module path moved from the deepmap organisation at v2.3.0, as the README states; the earlier path is not an alternative and is not recorded. Blog posts and sponsorship pages in the README are not recorded as facts.

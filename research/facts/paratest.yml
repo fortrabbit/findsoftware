@@ -1,0 +1,107 @@
+id: paratest
+name: ParaTest
+status: accepted
+checkedAt: 2026-11-16
+description: Parallel test runner for PHPUnit that splits a test suite across several PHP processes.
+facts:
+  - field: repository
+    value: https://github.com/paratestphp/paratest
+    url: https://api.github.com/repos/paratestphp/paratest
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://api.github.com/repos/paratestphp/paratest/commits/e18a7b1f512cbfd4d1754710a636998ae410c608
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Brian Scaturro
+    url: https://github.com/paratestphp/paratest/blob/7.x/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2013 Brian Scaturro"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/paratestphp
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [test-runner]
+    url: https://github.com/paratestphp/paratest/blob/7.x/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The objective of ParaTest is to support parallel testing in PHPUnit"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/paratestphp/paratest
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/paratestphp/paratest/blob/v7.29.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "~8.4.0 || ~8.5.0 || ~8.6.0"'
+  - field: runtimeMin
+    value: "8.4"
+    url: https://github.com/paratestphp/paratest/blob/v7.29.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "~8.4.0 || ~8.5.0 || ~8.6.0"'
+  - field: basedOn
+    value: [phpunit]
+    url: https://github.com/paratestphp/paratest/blob/7.x/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The objective of ParaTest is to support parallel testing in PHPUnit"
+  - field: runsAs
+    value: [local]
+    url: https://github.com/paratestphp/paratest/blob/7.x/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "To split a test suite across several machines, e.g. CI jobs, run each one with"
+  - field: installMethod
+    value: [composer]
+    url: https://github.com/paratestphp/paratest/blob/7.x/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "composer require --dev brianium/paratest"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/paratestphp/paratest
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 7
+    url: https://github.com/paratestphp/paratest/releases/tag/v7.29.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-14
+    url: https://github.com/paratestphp/paratest/releases/tag/v7.29.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2518
+    url: https://api.github.com/repos/paratestphp/paratest
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 126
+    url: https://api.github.com/repos/paratestphp/paratest/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: brianium/paratest
+    url: https://packagist.org/packages/brianium/paratest.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "182134053 (total)"
+    url: https://packagist.org/packages/brianium/paratest.json
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, docs, renderingModes, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, wikidata, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, databases, paidEdition, pricingPage, forum, discord, x, bluesky, mastodon, facebook, instagram, newsletter, subreddit, pluginDirectory, pluginCount, npmName, npmWeeklyDownloads, pypiDownloads, usageShare, reportedInstalls, latestPrereleaseDate, endoflifeId, lastCommitDate]
+unreadable: []
+notes: >
+  The project has no homepage: the repository is the only site, so homepage and docs are left out, and the README on the 7.x branch (the default branch) is the documentation. The README says "Only the latest version of PHPUnit is supported, and thus only the latest version of ParaTest is actively maintained", and that ParaTest "heavily relies on PHPUnit @internal classes". PHPUnit is the parent: ParaTest states its objective as "parallel testing in PHPUnit", it requires phpunit/phpunit in composer.json, and phpunit.yml exists. The composer.json also requires the dom, pcre, reflection and simplexml PHP extensions. The composer.json at v7.29.0 names Brian Scaturro and Filippo Tessarotto as developers; the LICENSE copyright line names Brian Scaturro, which is the maintainer recorded. The install route is the composer package brianium/paratest, so the Packagist figure counts that package (total downloads, Packagist's own page). The GitHub figures (stars, contributors) belong to the repository paratestphp/paratest. Stars and contributors are not compared or ordered. The oldest tag is v0.1.0 (commit dated 2012-11-02); the oldest GitHub release is 0.7.0 (2014-04-17), so firstRelease takes the tag. The prereleases 4.1.1-alpha.1, 4.1.1-alpha.2 and 4.2.0-beta.1 are older than the latest stable release, so no latestPrereleaseDate. The runtime range in composer.json is the library's own requirement and is recorded as runtimeMin 8.4 from the v7.29.0 manifest.

@@ -1,0 +1,112 @@
+id: php-jwt
+name: PHP-JWT
+status: accepted
+checkedAt: 2026-11-16
+description: PHP library that encodes and decodes JSON Web Tokens (JWT) conforming to RFC 7519.
+facts:
+  - field: repository
+    value: https://github.com/googleapis/php-jwt
+    url: https://api.github.com/repos/googleapis/php-jwt
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://docs.cloud.google.com/php/docs/reference/php-jwt/latest
+    url: https://docs.cloud.google.com/php/docs/reference/php-jwt/latest
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A simple library to encode and decode JSON Web Tokens (JWT) in PHP, conforming to"
+  - field: maintainer
+    value: Neuman Vong
+    url: https://github.com/googleapis/php-jwt/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2011, Neuman Vong"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/googleapis
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://repo.packagist.org/p2/firebase/php-jwt.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [jwt]
+    url: https://github.com/googleapis/php-jwt/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A simple library to encode and decode JSON Web Tokens (JWT) in PHP, conforming to"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/googleapis/php-jwt
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/googleapis/php-jwt/blob/v7.2.1/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "^8.0"'
+  - field: runtimeMin
+    value: "8.0"
+    url: https://github.com/googleapis/php-jwt/blob/v7.2.1/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "^8.0"'
+  - field: installMethod
+    value: composer
+    url: https://github.com/googleapis/php-jwt/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "composer require firebase/php-jwt"
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/googleapis/php-jwt/blob/v7.2.1/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"license": "BSD-3-Clause",'
+  - field: currentMajor
+    value: 7
+    url: https://api.github.com/repos/googleapis/php-jwt/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-28
+    url: https://api.github.com/repos/googleapis/php-jwt/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 9803
+    url: https://api.github.com/repos/googleapis/php-jwt
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 83
+    url: https://api.github.com/repos/googleapis/php-jwt/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: firebase/php-jwt
+    url: https://repo.packagist.org/p2/firebase/php-jwt.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "551868364 (total)"
+    url: https://packagist.org/packages/firebase/php-jwt.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 1772
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/firebase%2Fphp-jwt
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 44890
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/firebase%2Fphp-jwt
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, paidEdition, runsAs, renderingModes, contentStore, databases, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, npmWeeklyDownloads, pypiName, pypiDownloads, latestPrereleaseDate, apiLimits, regions, selfHostOption, hostedOffering]
+unreadable: []
+notes: >
+  The package the install docs name is firebase/php-jwt on Packagist; its source is the repository googleapis/php-jwt, which the candidate row names, and the README badges point to github.com/firebase/php-jwt. The GitHub homepage field and the composer.json homepage differ: the field points to the Google Cloud PHP reference page, which is recorded as docs, and composer.json points to the repository, so no homepage is recorded. The repository is marked as a fork of luciferous/jwt by the GitHub API; neither the README nor composer.json says so, so forkOf is not recorded. The LICENSE file has one copyright line (Neuman Vong, 2011), so he is the maintainer; composer.json lists Neuman Vong and Anant Narayanan as authors and the README names no maintainer. The v0.0.0 tag is dated 2011-03-25, before the first release line, and is the repository's import of older history; firstRelease uses 1.0.0 (2014-08-28), the same date as the oldest Packagist upload. The composer.json extra.component block names googleapis/php-jwt.git as the target of a component of a larger repository, which is Google's own packaging, not a second product. The README's PS256 section says PHP's OpenSSL extension does not support RSASSA-PSS, so PS256 needs phpseclib as a soft dependency, and EdDSA needs libsodium or paragonie/sodium_compat; these are optional packages and no basedOn or parent is recorded. The Packagist total is the figure the package page gives; the monthly figure is not recorded. The README says the application must specify the algorithms it supports, decoding header values before verification is not supported, and a leeway of a few minutes can absorb clock skew between servers. Decode failures throw exceptions for an invalid key, an unsupported algorithm, a bad signature, a token used before its not-before or issued-at time, an expired token and a malformed token. The CachedKeySet class takes any PSR-7 compatible HTTP client, any PSR-6 cache pool, and refreshes the cache when a key ID is unknown, with an optional rate limit of 10 requests a second for lookups of unknown keys. The contributors count is the page number of the rel="last" link on the contributors endpoint with per_page=1. Keys can be PEM strings, a JSON Web Key Set parsed with JWK::parseKeySet, or a CachedKeySet; the README says decode returns the generic PHP object stdClass, and that encoding takes the payload, the key and the algorithm.

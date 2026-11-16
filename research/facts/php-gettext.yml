@@ -1,0 +1,106 @@
+id: php-gettext
+name: Gettext
+status: accepted
+checkedAt: 2026-11-16
+description: PHP library that imports, edits and exports gettext translations in PO, MO and other formats.
+facts:
+  - field: repository
+    value: https://github.com/php-gettext/Gettext
+    url: https://api.github.com/repos/php-gettext/Gettext
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Oscar Otero Marzoa
+    url: https://github.com/php-gettext/Gettext/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2019 Oscar Otero Marzoa"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/php-gettext
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://api.github.com/repos/php-gettext/Gettext/tags?per_page=100
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [gettext]
+    url: https://github.com/php-gettext/Gettext/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Gettext is a PHP (^7.2) library to import/export/edit gettext from PO, MO, PHP, JS files, etc."
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/php-gettext/Gettext
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/php-gettext/Gettext/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Gettext is a PHP (^7.2) library"
+  - field: runtimeMin
+    value: "7.2"
+    url: https://github.com/php-gettext/Gettext/blob/v5.7.3/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "^7.2|^8.0"'
+  - field: installMethod
+    value: composer
+    url: https://github.com/php-gettext/Gettext/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "composer require gettext/gettext"
+  - field: license
+    value: MIT
+    url: https://github.com/php-gettext/Gettext/blob/v5.7.3/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"license": "MIT",'
+  - field: currentMajor
+    value: 5
+    url: https://api.github.com/repos/php-gettext/Gettext/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2024-12-01
+    url: https://api.github.com/repos/php-gettext/Gettext/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 703
+    url: https://api.github.com/repos/php-gettext/Gettext
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 54
+    url: https://api.github.com/repos/php-gettext/Gettext/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: gettext/gettext
+    url: https://repo.packagist.org/p2/gettext/gettext.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "36755974 (total)"
+    url: https://packagist.org/packages/gettext/gettext.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 99
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/gettext%2Fgettext
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 1457
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/gettext%2Fgettext
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, docs, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, paidEdition, runsAs, renderingModes, contentStore, databases, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, npmWeeklyDownloads, pypiName, pypiDownloads, latestPrereleaseDate, apiLimits, regions, selfHostOption, hostedOffering]
+unreadable: []
+notes: >
+  The repository has no homepage of its own (the GitHub homepage field is empty and composer.json names the repository as its homepage), so the record is repo-only and the README is its documentation. The default branch is master. The LICENSE copyright line names "Oscar Otero Marzoa" (2019); the README says the library was "Created by Oscar Otero", and the LICENSE line is the one recorded. The packagist name is gettext/gettext, the package the install docs name, while the repository is php-gettext/Gettext. The README's 4.x link names the older major line, which is not recorded; the 5.x line is the current one. The formats the library reads and writes (PO and MO loaders and generators; PHP, JSON and other formats through separate packages) and the scanners for PHP, JS, Twig and Blade sources are library features; they are kept in notes and not in fields. The README says the package includes no scanner by default. Translations are held in a collection with headers, references and comments, and a merge takes two collections with options that decide which side's translations, headers, comments, flags and references win; the scan-and-load option merges a scan of templates with an existing PO file. Version 5.7.0 added a StrictPoLoader that fails on syntax errors and can serve as a PO linter in a build, and it is about 50% slower than the default loader. The PHP, JS and JSON scanners and loaders are separate packages named by the README, and the gettext-wp-scanner link is a third-party WordPress scanner; none is a record here. The composer.json requires gettext/languages, a data package, which is a dependency and no basedOn statement. The firstRelease 2013 is the oldest tag v1.0 (commit dated 2013-12-01), the same year as the oldest Packagist upload. The Packagist figure is the total downloads of the package the install docs name. The stars and contributors belong to the repository. The contributors count is the page number of the rel="last" link on the contributors endpoint with per_page=1. Each translation holds its original text, its translated text, plural translations, references and comments, and the README says the StrictPoLoader warns about more or fewer plural translations than needed and about a missing translation header.

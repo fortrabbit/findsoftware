@@ -1,0 +1,117 @@
+id: pdfkit
+name: PDFKit
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript library that generates multi-page PDF documents for Node and the browser.
+facts:
+  - field: homepage
+    value: https://pdfkit.org/
+    url: https://pdfkit.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A JavaScript PDF generation library for Node and the browser."
+  - field: repository
+    value: https://github.com/foliojs/pdfkit
+    url: https://api.github.com/repos/foliojs/pdfkit
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://pdfkit.org/docs/getting_started.html
+    url: https://github.com/foliojs/pdfkit/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Check out some of the documentation and examples to see for yourself"
+  - field: maintainer
+    value: Devon Govett
+    url: https://github.com/foliojs/pdfkit/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2014 Devon Govett"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/foliojs
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: https://registry.npmjs.org/pdfkit
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [pdf, pdf-generation]
+    url: https://pdfkit.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A JavaScript PDF generation library for Node and the browser."
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/foliojs/pdfkit
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://pdfkit.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A JavaScript PDF generation library for Node and the browser."
+  - field: installMethod
+    value: npm
+    url: https://github.com/foliojs/pdfkit/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install pdfkit"
+  - field: installMethod
+    value: download
+    url: https://github.com/foliojs/pdfkit/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Use prebuilt version. Distributed as `pdfkit.standalone.js` file in the releases"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/foliojs/pdfkit
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/foliojs/pdfkit/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-30
+    url: https://api.github.com/repos/foliojs/pdfkit/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 10733
+    url: https://api.github.com/repos/foliojs/pdfkit
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 133
+    url: https://api.github.com/repos/foliojs/pdfkit/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: pdfkit
+    url: https://registry.npmjs.org/pdfkit
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "16836175 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/pdfkit
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 540
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/pdfkit
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 23418
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/pdfkit
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, hqCountry, parent, forkOf, successorOf, basedOn, alternativeTo, contentStore, databases, multisite, adminUi, headlessApi, templating, i18n, userRoles, sso, importsFrom, renderingModes, runsAs, runtimeMin, paidEdition, endoflifeId, usageShare, reportedInstalls, pluginDirectory, discord, forum, subreddit, mastodon, bluesky, x, newsletter]
+unreadable: []
+notes: >
+  The record is foliojs/pdfkit, the package the README names for npm. The homepage pdfkit.org answers over https as well as http, so the https address is recorded. The LICENSE copyright line names Devon Govett; the repository owner is the foliojs organization. The latest stable release is v0.20.2 from 2026-08-30, so currentMajor is the 0 of the 0.x line; the minor line 0.20 stays here. The npm first upload is 0.1.0 from 2011-07-11, which is older than the GitHub releases and sets firstRelease. The README's browser section names three routes: Browserify and webpack examples, and a prebuilt pdfkit.standalone.js from the releases; the two bundler examples are not installMethod entries. The README describes the API as chainable, with text, images, vector paths, tables, annotations, outlines, AcroForms, encryption and accessibility tagging as features. Bundling: the README's Bundling for Node section says the Node build loads the metrics of the standard fonts on first use from a standard-fonts directory next to the built file, and PDF/A output reads the sRGB profile from a data directory next to it; a bundle that inlines pdfkit must keep the standard-font metrics and the sRGB profile beside it, or register the fonts in code. The README describes the browser build as having no file system access, so files are registered as data. The README pipes output to a file or an HTTP response, and in the browser collects the output chunks into a Blob for display or download.

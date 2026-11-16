@@ -1,0 +1,134 @@
+id: observable-plot
+name: Observable Plot
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript library that draws charts from tabular data, built for exploratory data analysis.
+facts:
+  - field: homepage
+    value: https://observablehq.github.io/plot/
+    url: https://observablehq.github.io/plot/
+    checkedAt: 2026-11-16
+    via: page
+  - field: docs
+    value: https://observablehq.github.io/plot/
+    url: https://github.com/observablehq/plot/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: https://observablehq.github.io/plot/
+  - field: repository
+    value: https://github.com/observablehq/plot
+    url: https://api.github.com/repos/observablehq/plot
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [data-visualization]
+    url: https://github.com/observablehq/plot/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: a free, open-source, JavaScript library for visualizing tabular data
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/observablehq/plot
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://observablehq.github.io/plot/getting-started
+    checkedAt: 2026-11-16
+    via: page
+    quote: you can install Plot via pnpm, npm, yarn, or your preferred package manager
+  - field: installMethod
+    value: cdn
+    url: https://observablehq.github.io/plot/getting-started
+    checkedAt: 2026-11-16
+    via: page
+    quote: In vanilla HTML, you can load Plot from a CDN such as esm.sh or jsDelivr
+  - field: installMethod
+    value: download
+    url: https://observablehq.github.io/plot/getting-started
+    checkedAt: 2026-11-16
+    via: page
+    quote: you can download the UMD bundle of Plot along with its dependency, D3
+  - field: alternativeTo
+    value: [d3]
+    url: https://observablehq.github.io/plot/why-plot
+    checkedAt: 2026-11-16
+    via: page
+    quote: Plot and D3 have different goals, they make different trade-offs
+  - field: forum
+    value: https://github.com/observablehq/plot/discussions
+    url: https://observablehq.github.io/plot/community
+    checkedAt: 2026-11-16
+    via: page
+    quote: We recommend asking for help on GitHub discussions
+  - field: maintainer
+    value: Observable, Inc.
+    url: https://github.com/observablehq/plot/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: Copyright 2020-2025 Observable, Inc.
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/observablehq
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2021
+    url: https://api.github.com/repos/observablehq/plot/commits/v0.1.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: ISC
+    url: https://api.github.com/repos/observablehq/plot
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/observablehq/plot/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: Permission to use, copy, modify, and/or distribute this software for any purpose
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/observablehq/plot/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-05
+    url: https://api.github.com/repos/observablehq/plot/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 5427
+    url: https://api.github.com/repos/observablehq/plot
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 30
+    url: https://api.github.com/repos/observablehq/plot/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: "@observablehq/plot"
+    url: https://registry.npmjs.org/@observablehq/plot/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "1273897 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@observablehq/plot
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 31
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40observablehq%2Fplot
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 90
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40observablehq%2Fplot
+    checkedAt: 2026-11-16
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, importsFrom, runtime, runtimeMin, runsAs, renderingModes, headlessApi, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, databases, paidEdition, pricingPage, discord, x, newsletter, hostedOffering, pluginDirectory, pluginCount, wikidata, packagistName, dockerPulls, usageShare, reportedInstalls, endoflifeId, hqCountry]
+unreadable: []
+notes: >
+  The repository the CSV row names is the current one. The GitHub homepage field and the README both name https://observablehq.github.io/plot/ as the documentation site, so that is the homepage; the CSV's observablehq.com/plot/ address returned HTTP 429 when checked (rate limited), so it is not recorded. The LICENSE copyright line names Observable, Inc.; its location is not stated on the pages read, so hqCountry is unknown. Runtime is not recorded: the getting-started page says Plot returns a detached SVG or HTML figure element to insert into a page, and that vanilla HTML can load it from a CDN, which places it in a browser, but it names Node only as the environment for installing with npm, and no page says it runs in Node. A reviewer may add runsAs browser on that basis. The npm figures are for @observablehq/plot, the package the getting-started page installs; the weekly figure is the sum of the daily counts for 2026-11-01 to 2026-11-07. The 0.x line has no major of its own, so currentMajor is 0; the latest GitHub release is 0.6.19, and the npm next tag 0.6.18-alpha.3 is older than it, so no latestPrereleaseDate is recorded. The getting-started page says Plot is available by default in Observable notebooks, that it loads the D3 dependency automatically from the CDN-hosted module bundle, and that it can be loaded from a UMD bundle. The why-plot page says Plot builds on D3 and uses it to implement a wide variety of features; D3 is a dependency there, so basedOn is not recorded. The community page also links the Observable forum (talk.observablehq.com) and the Observable community Slack, which no field holds. The marks, scales, transforms, projections, facets and interactions, the SVG and HTML output, and server-side rendering with React are coined kinds and stay in notes. The first tag, v0.1.0, is from 2021-05-04, the same day as the first npm version. The stars and the 30 contributors belong to the single-package repository.

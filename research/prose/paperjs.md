@@ -1,0 +1,1 @@
+Paper.js is a JavaScript library for vector graphics on the HTML5 canvas. The main package runs in a browser, and a separate npm package, paper-jsdom, lets the same library run on Node.js for headless use with SVG import and export. The full browser build adds PaperScript, the library's script mode.

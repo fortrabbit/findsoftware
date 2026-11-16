@@ -1,0 +1,1 @@
+Peity is a jQuery plugin that converts an element's content into an inline SVG chart: pie, donut, line or bar. The [homepage](https://benpickles.github.io/peity/) says the charts work in any browser that supports SVG.

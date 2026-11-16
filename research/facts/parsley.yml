@@ -1,0 +1,114 @@
+id: parsley
+name: Parsley
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript form validation library that reads its rules from HTML data attributes on form fields.
+facts:
+  - field: homepage
+    value: https://parsleyjs.org/
+    url: https://parsleyjs.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The ultimate JavaScript form validation library"
+  - field: repository
+    value: https://github.com/guillaumepotier/Parsley.js
+    url: https://api.github.com/repos/guillaumepotier/Parsley.js
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://parsleyjs.org/doc/index.html
+    url: https://parsleyjs.org/doc/index.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Parsley is a javascript form validation library."
+  - field: firstRelease
+    value: 2012
+    url: https://api.github.com/repos/guillaumepotier/Parsley.js/commits/575c227f7a835212d1c9525c27dade3df745f279
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Guillaume Potier and Marc-André Lafortune
+    url: https://github.com/guillaumepotier/Parsley.js/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2013-2020 Guillaume Potier, Marc-André Lafortune and contributors"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/guillaumepotier
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [validation]
+    url: https://parsleyjs.org/doc/index.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Parsley is a javascript form validation library."
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/guillaumepotier/Parsley.js
+    checkedAt: 2026-11-16
+    via: api
+  - field: i18n
+    value: built-in error messages shipped in English, with translations loaded as locale files after Parsley
+    url: https://parsleyjs.org/doc/index.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "many other languages are available, thanks to the awesome international Parsley community"
+  - field: installMethod
+    value: npm
+    url: https://parsleyjs.org/doc/download.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "$ npm install --save parsleyjs"
+  - field: installMethod
+    value: bower
+    url: https://parsleyjs.org/doc/download.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "$ bower install --save parsleyjs"
+  - field: installMethod
+    value: download
+    url: https://parsleyjs.org/doc/index.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Then, you can either use parsley.js unminified file or parsley.min.js minified one."
+  - field: license
+    value: MIT
+    url: https://github.com/guillaumepotier/Parsley.js/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 2
+    url: https://github.com/guillaumepotier/Parsley.js/releases/tag/2.9.2
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2021-11-21
+    url: https://github.com/guillaumepotier/Parsley.js/releases/tag/2.9.2
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 8964
+    url: https://api.github.com/repos/guillaumepotier/Parsley.js
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 207
+    url: https://api.github.com/repos/guillaumepotier/Parsley.js/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: parsleyjs
+    url: https://registry.npmjs.org/parsleyjs/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "32692 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/parsleyjs
+    checkedAt: 2026-11-16
+    via: api
+notFound: [basedOn, runtime, runtimeMin, runsAs, renderingModes, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, wikidata, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, contentStore, databases, paidEdition, pricingPage, forum, discord, x, bluesky, mastodon, facebook, instagram, newsletter, subreddit, pluginDirectory, pluginCount, packagistName, packagistDownloads, pypiDownloads, usageShare, reportedInstalls, latestPrereleaseDate, endoflifeId, lastCommitDate]
+unreadable: []
+notes: >
+  The CSV homepage was the plain http address; the same site answers over https (https://parsleyjs.org/ returns 200 with the project's own homepage), so the https address is recorded. The README's maintenance status says the project "is considered stable, no new features are planned" and that there is "Minimal maintenance by @marcandre"; the project does not say it has ended, so the status stays accepted and a reviewer may decide. The docs say "Parsley relies on jQuery (>= 1.8)" and that es5-shim is needed for IE8; jQuery is a required dependency, not a parent the project calls itself a plugin of, so basedOn is left out (jquery.yml exists). The homepage and doc say it works in browsers ("Frontend form validation", "aims to work on every browser (including IE8)"), but no sentence states the runtime in the browser, so runsAs is left out; a reviewer may take the docs heading "Frontend form validation" as runsAs browser. The LICENSE copyright line names Guillaume Potier and Marc-André Lafortune and contributors; the homepage footer reads "© Guillaume Potier & Marc-André Lafortune 2017 - @Wisembly". The homepage and docs name no legal entity, so hqCountry and a company parent are not recorded (Wisembly is linked in the homepage footer, not as the maintainer). The npm figure counts parsleyjs, the package the download page installs. The npm upload of 2.9.2 is dated 2019-12-10 and the GitHub release 2021-11-21; latestReleaseDate takes the GitHub release date. The homepage's personal social links are the authors' own accounts and are not recorded as project accounts. The StackOverflow tag is the README's help route and is a general forum, not recorded as the project forum. The oldest tag is 0.1.0 (commit dated 2012-12-23); the oldest GitHub release is 2.9.1 (2019-05-27). The docs describe data attributes (data-parsley-required and others) as the configuration route, a JavaScript call such as $('#form').parsley() as the alternative, and the localization section, where locale files loaded after Parsley set the message language. The README maintenance status also says that good quality pull requests fixing bugs will be merged. The docs say Parsley gives users feedback "on their form submission before sending it to your server".

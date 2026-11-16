@@ -1,0 +1,107 @@
+id: parsedown
+name: Parsedown
+status: accepted
+checkedAt: 2026-11-16
+description: Markdown parser for PHP, distributed as a single class file with no dependencies.
+facts:
+  - field: homepage
+    value: https://parsedown.org/
+    url: https://parsedown.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Better Markdown Parser in PHP"
+  - field: repository
+    value: https://github.com/erusev/parsedown
+    url: https://api.github.com/repos/erusev/parsedown
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://api.github.com/repos/erusev/parsedown/commits/c1bbcb1abd73ce7dcec05fb07f9b0d3c4260611f
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Emanuil Rusev
+    url: https://github.com/erusev/parsedown/blob/master/LICENSE.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2013-2018 Emanuil Rusev, erusev.com"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/erusev
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [markdown-parser]
+    url: https://github.com/erusev/parsedown/blob/master/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Better Markdown Parser in PHP"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/erusev/parsedown
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/erusev/parsedown/blob/1.8.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": ">=7.1"'
+  - field: runtimeMin
+    value: "7.1"
+    url: https://github.com/erusev/parsedown/blob/1.8.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": ">=7.1"'
+  - field: installMethod
+    value: [composer]
+    url: https://github.com/erusev/parsedown/blob/master/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "composer require erusev/parsedown"
+  - field: installMethod
+    value: [download]
+    url: https://github.com/erusev/parsedown/blob/master/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Or download the [latest release] and include `Parsedown.php`"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/erusev/parsedown
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://github.com/erusev/parsedown/releases/tag/1.8.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-02-16
+    url: https://github.com/erusev/parsedown/releases/tag/1.8.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 15048
+    url: https://api.github.com/repos/erusev/parsedown
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 43
+    url: https://api.github.com/repos/erusev/parsedown/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: erusev/parsedown
+    url: https://packagist.org/packages/erusev/parsedown.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "165450496 (total)"
+    url: https://packagist.org/packages/erusev/parsedown.json
+    checkedAt: 2026-11-16
+    via: api
+notFound: [docs, basedOn, runsAs, renderingModes, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, wikidata, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, databases, paidEdition, pricingPage, forum, discord, x, bluesky, mastodon, facebook, instagram, newsletter, subreddit, pluginDirectory, pluginCount, npmName, npmWeeklyDownloads, pypiDownloads, usageShare, reportedInstalls, latestPrereleaseDate, endoflifeId, lastCommitDate]
+unreadable: []
+notes: >
+  The README says Parsedown is "GitHub flavored" and "passes most of the CommonMark tests" (CommonMark compliance goes to notes, not a field). The safe-mode and escaping methods (setSafeMode, setMarkupEscaped) are documented in the README. The README links the Markdown Extra extension (erusev/parsedown-extra) as a separate project; it is not recorded as an extension of Parsedown. The README names the lists of projects that use Parsedown (Laravel, Bolt CMS, Grav, Kirby and others); those are users, not parents, and no basedOn or alternativeTo is recorded from them. The homepage (parsedown.org) answers over https and shows the demo and the composer example; the repository's readme.md is the lowercase file name on master. The v2.0.0-beta-1 prerelease (2022-05-21) is older than the stable 1.8.0 release, so no latestPrereleaseDate. The maintainer is the copyright holder in LICENSE.txt, and composer.json at 1.8.0 names the same person. The Packagist figure counts the package erusev/parsedown that the README installs. The runtime is taken from the composer.json at the 1.8.0 tag, the latest stable release, which requires PHP >= 7.1 and the mbstring extension. The firstRelease is the year of tag 0.1.0 (commit dated 2013-07-10); the oldest GitHub release is 0.3.0 (2013-11-02). The README Features list says One file, No dependencies, Extensible and GitHub flavored, and its Questions section calls the approach line based: it reads the lines to recognise blocks, then the special characters to recognise inline elements. The README says to call setSafeMode(true) when processing untrusted user input, and warns that setMarkupEscaped(true) is not safe from XSS.

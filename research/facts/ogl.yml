@@ -1,0 +1,129 @@
+id: ogl
+name: OGL
+status: accepted
+checkedAt: 2026-11-16
+description: Small JavaScript WebGL library with minimal layers of abstraction, for developers who write their own shaders.
+facts:
+  - field: homepage
+    value: https://oframe.github.io/ogl/examples
+    url: https://api.github.com/repos/oframe/ogl
+    checkedAt: 2026-11-16
+    via: api
+  - field: repository
+    value: https://github.com/oframe/ogl
+    url: https://api.github.com/repos/oframe/ogl
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://oframe.github.io/ogl/examples
+    url: https://raw.githubusercontent.com/oframe/ogl/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Explore a comprehensive list of examples"
+  - field: maintainer
+    value: Nathan Gordon
+    url: https://raw.githubusercontent.com/oframe/ogl/master/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"name": "Nathan Gordon"'
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/oframe/ogl/master/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"name": "Nathan Gordon"'
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/oframe
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [webgl]
+    url: https://raw.githubusercontent.com/oframe/ogl/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Minimal WebGL library."
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/oframe/ogl
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://raw.githubusercontent.com/oframe/ogl/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm i ogl"
+  - field: installMethod
+    value: cdn
+    url: https://raw.githubusercontent.com/oframe/ogl/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "load from a CDN, using either the jsdelivr, unpkg or skypack services"
+  - field: installMethod
+    value: download
+    url: https://raw.githubusercontent.com/oframe/ogl/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "[Download](https://github.com/oframe/ogl/archive/master.zip)"
+  - field: license
+    value: Unlicense
+    url: https://raw.githubusercontent.com/oframe/ogl/master/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"license": "Unlicense"'
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/oframe/ogl/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "released into the public domain"
+  - field: firstRelease
+    value: "2018"
+    url: https://registry.npmjs.org/ogl
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/ogl
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2025-01-27
+    url: https://registry.npmjs.org/ogl
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 4758
+    url: https://api.github.com/repos/oframe/ogl
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 28
+    url: https://api.github.com/repos/oframe/ogl/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: ogl
+    url: https://registry.npmjs.org/ogl
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "1191121 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/ogl
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 19
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ogl
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 114
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ogl
+    checkedAt: 2026-11-16
+    via: api
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, runtime, runtimeMin, runsAs, renderingModes, templating, i18n, adminUi, userRoles, sso, databases, contentStore, pluginDirectory, pluginCount, pricingPage, paidEdition, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, rubygemsName, packagistName, pypiName, dockerPulls, mavenCoordinates, endoflifeId, latestPrereleaseDate, lastCommitDate, hqCountry, wikidata]
+unreadable: []
+notes: >
+  Accepted: a WebGL library installed with npm, from a CDN or as a zip, under criterion 2 and 3. The repository has no LICENSE file and no tags or GitHub releases, so GitHub reports no license; the license is recorded from package.json at master and the README's Unlicense section, and the npm registry gives Unlicense as well. The registry is the release source: the npm version 1.0.11 is dated 2025-01-27, and its first upload 0.0.1 is dated 2018-06-03, about a week after the repository's creation. The README says the Math component is "an extension of gl-matrix", a library with no record in this dataset, so no basedOn is recorded. The README compares the API with ThreeJS ("the API shares many similarities with ThreeJS"); that is a description, not an alternativeTo statement, and is left out. The README says the library is written in ES6 modules with zero dependencies; that is in the README but no field holds it. No sentence in the README or package.json says the library runs in the browser, so runsAs is left out, although its examples append a canvas to document.body. The maintainer is the package.json author, an individual; the GitHub owner oframe is an organization with no name set. The GitHub page's homepage field is the examples site, a GitHub Pages site the repository names. Contributors and stars are for the repository.

@@ -1,0 +1,1 @@
+ozzo-validation is a Go package that validates data with rules written as ordinary Go code instead of struct tags. The README says it validates structs, strings, byte slices, slices, maps and arrays, and custom types that implement its Validatable interface. Error codes and messages can be translated.

@@ -1,0 +1,119 @@
+id: php-markdown
+name: PHP Markdown
+status: accepted
+checkedAt: 2026-11-16
+description: PHP parser for Markdown and Markdown Extra text, a port to PHP of John Gruber's Markdown program.
+facts:
+  - field: homepage
+    value: https://michelf.ca/projects/php-markdown/
+    url: https://michelf.ca/projects/php-markdown/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "This is a library package that includes the PHP Markdown parser and its"
+  - field: repository
+    value: https://github.com/michelf/php-markdown
+    url: https://api.github.com/repos/michelf/php-markdown
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://michelf.ca/projects/php-markdown/configuration/
+    url: https://michelf.ca/projects/php-markdown/configuration/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "PHP Markdown Lib includes two parsers: Markdown and MarkdownExtra"
+  - field: maintainer
+    value: Michel Fortin
+    url: https://github.com/michelf/php-markdown/blob/lib/License.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2004-2022 Michel Fortin"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/michelf
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2004
+    url: https://michelf.ca/projects/php-markdown/classic/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "1.0.1 (16 Dec 2004)"
+  - field: categories
+    value: [markdown]
+    url: https://github.com/michelf/php-markdown/blob/lib/Readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "This is a library package that includes the PHP Markdown parser and its"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/michelf/php-markdown
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/michelf/php-markdown/blob/2.0.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": ">=7.4"'
+  - field: runtimeMin
+    value: "7.4"
+    url: https://github.com/michelf/php-markdown/blob/2.0.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": ">=7.4"'
+  - field: installMethod
+    value: composer
+    url: https://github.com/michelf/php-markdown/blob/lib/Readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "To use this library with Composer, first install it with:"
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/michelf/php-markdown/blob/2.0.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"license": "BSD-3-Clause",'
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/michelf/php-markdown/tags?per_page=100
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2022-09-26
+    url: https://repo.packagist.org/p2/michelf/php-markdown.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 3459
+    url: https://api.github.com/repos/michelf/php-markdown
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 46
+    url: https://api.github.com/repos/michelf/php-markdown/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: michelf/php-markdown
+    url: https://repo.packagist.org/p2/michelf/php-markdown.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "58189807 (total)"
+    url: https://packagist.org/packages/michelf/php-markdown.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 414
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/michelf%2Fphp-markdown
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 10894
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/michelf%2Fphp-markdown
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, paidEdition, runsAs, renderingModes, contentStore, databases, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, npmWeeklyDownloads, pypiName, pypiDownloads, latestPrereleaseDate, apiLimits, regions, selfHostOption, hostedOffering]
+unreadable: []
+notes: >
+  The default branch is lib, not main, and the README and License.md are read from it. The project's own site michelf.ca answers over https (the http address redirects to it), so the https address is the homepage. The homepage says "This library package requires PHP 5.3 or later" and also "Requires PHP 7.4 or later" on the same page; the README on the lib branch and composer.json at tag 2.0.0 say 7.4, so runtimeMin follows the manifest and the page conflict is left for review. The README says the older plugin/library hybrid package "is no longer maintained", while the homepage says it "is still maintained"; that package is the classic version, not this library, so it is no end signal for the record. The README's "based on Markdown by John Gruber" and "a port to PHP of the original Markdown program" name John Gruber's Markdown, which has no record here, so no basedOn is recorded. Markdown Extra is a second parser inside the same package and not a separate record. The repository has no GitHub releases; the registry's 2.0.0 is the highest stable tag, so it sets currentMajor and latestReleaseDate. The firstRelease 2004 is the earliest dated release in the version history on the classic version page (1.0.1, 16 Dec 2004); the repository's oldest tags (2007) are an import of that history, the first release of the Lib package is dated 11 Apr 2013 in the README, and the first Packagist upload of the library, 1.3-beta1, is dated 2013-01-12. The GitHub license field reads NOASSERTION because the file is named License.md, so the license fact is the composer.json statement at tag 2.0.0, which matches the README's BSD text. The License.md copyright line is "PHP Markdown Lib, Copyright (c) 2004-2022 Michel Fortin"; the README also credits John Gruber for the original Markdown copyright, which is not a second maintainer. The homepage donation link and the PHP SmartyPants and Markdown Extra syntax pages are not fields. The README says that an empty result can mean the PCRE backtrack limit is too low (it may need to be raised above one million), and that the Composer package excludes development files. Markdown Extra in the same package adds footnotes, attribute blocks and fenced code blocks, and its configuration options (header IDs, URL filtering, code block content functions) are listed on the configuration page. The README says the plugin interface for WordPress is not in the Lib package, and that the classic package with that interface is a separate older package. The contributors count is the page number of the rel="last" link on the contributors endpoint with per_page=1. Each parser has a static defaultTransform call that uses the default settings, and an instance whose configuration variables (for example fn_id_prefix in the README, and url_filter_func in the version history) can be set before transform.

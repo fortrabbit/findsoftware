@@ -1,0 +1,130 @@
+id: omniauth
+name: OmniAuth
+status: accepted
+checkedAt: 2026-11-16
+description: Ruby library that standardizes multi-provider authentication for web applications through Rack middleware strategies.
+facts:
+  - field: repository
+    value: https://github.com/omniauth/omniauth
+    url: https://api.github.com/repos/omniauth/omniauth
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/omniauth/omniauth/wiki
+    url: https://raw.githubusercontent.com/omniauth/omniauth/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "has actively maintained in-depth documentation for OmniAuth"
+  - field: pluginDirectory
+    value: https://github.com/omniauth/omniauth/wiki/List-of-Strategies
+    url: https://raw.githubusercontent.com/omniauth/omniauth/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "community maintained list"
+  - field: maintainer
+    value: Michael Bleigh
+    url: https://raw.githubusercontent.com/omniauth/omniauth/master/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2010-2026 Michael Bleigh"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/omniauth/omniauth/master/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2010-2026 Michael Bleigh"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/omniauth
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [auth]
+    url: https://raw.githubusercontent.com/omniauth/omniauth/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "standardizes multi-provider authentication for"
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/omniauth/omniauth
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: https://raw.githubusercontent.com/omniauth/omniauth/v2.4.1/omniauth.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: "spec.required_ruby_version = '>= 2.5'"
+  - field: runtimeMin
+    value: "2.5"
+    url: https://raw.githubusercontent.com/omniauth/omniauth/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "OmniAuth requires Ruby 2.5 or later"
+  - field: installMethod
+    value: gem
+    url: https://raw.githubusercontent.com/omniauth/omniauth/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "To get started, add the gem"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/omniauth/omniauth/v2.4.1/omniauth.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: "%w[MIT]"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/omniauth/omniauth/master/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Permission is hereby granted, free of charge"
+  - field: firstRelease
+    value: "2010"
+    url: https://rubygems.org/api/v1/versions/omniauth.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/omniauth/omniauth/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-14
+    url: https://api.github.com/repos/omniauth/omniauth/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 8104
+    url: https://api.github.com/repos/omniauth/omniauth
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 179
+    url: https://api.github.com/repos/omniauth/omniauth/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsName
+    value: omniauth
+    url: https://rubygems.org/api/v1/gems/omniauth.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsDownloads
+    value: "233148514 total"
+    url: https://rubygems.org/api/v1/gems/omniauth.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 924
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/omniauth
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 54474
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/omniauth
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, templating, i18n, adminUi, userRoles, sso, databases, contentStore, pricingPage, paidEdition, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, packagistName, pypiName, dockerPulls, mavenCoordinates, endoflifeId, latestPrereleaseDate, hqCountry, wikidata]
+unreadable: []
+notes: >
+  Accepted: a Ruby gem installed from RubyGems under the Gemfile, with a documented setup for Rails and Rack applications, so criteria 1 to 3 hold. Repository only: the gem's homepage_uri is the repository, the repository names no site of its own, and the README links only the wiki, so no homepage is recorded. The README is the in-development branch's documentation and names v2.4.1 as the latest stable release; the gemspec at that tag gives the required Ruby version (2.5) and the MIT license, and runtimeMin and runtime are taken from it. The LICENSE.md copyright line names "Michael Bleigh and Intridea, Inc."; the maintainer is recorded as Michael Bleigh, and Intridea, Inc. is a second legal entity that goes to notes. The gemspec lists four authors (Erik Berlin, Michael Bleigh, Bobby McDonald, Tom Milewski) and the README names none beyond the copyright line, so no other maintainer is recorded. The README says "Each OmniAuth strategy is a Rack Middleware", and the gemspec depends on rack 2.2.8 or later; Rack has no record in this dataset and the README names it as the mechanism rather than a parent project, so no basedOn is recorded. The README names Devise as a route to user management and OAuth 2.0, OpenID Connect and SAML only as protocols that strategies and callbacks use; the protocols belong to the strategies, so no sso value is recorded. The Developer strategy is built in; the README calls it "a completely insecure, non-production-usable strategy". The v2.0.0-rc1 prerelease (2020-12-11) is older than the latest release. The RubyGems first upload 0.0.1 is dated 2010-04-29, the same year as the repository's creation. Stars and contributors are for the repository.

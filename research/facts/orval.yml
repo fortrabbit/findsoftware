@@ -1,0 +1,137 @@
+id: orval
+name: Orval
+status: accepted
+checkedAt: 2026-11-16
+description: Generator that produces TypeScript API clients, models and optional mocks from OpenAPI v3 and Swagger v2 specifications.
+facts:
+  - field: homepage
+    value: "https://orval.dev"
+    url: "https://api.github.com/repos/orval-labs/orval"
+    checkedAt: 2026-11-16
+    via: api
+  - field: repository
+    value: "https://github.com/orval-labs/orval"
+    url: "https://api.github.com/repos/orval-labs/orval"
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: "https://orval.dev/docs/installation/"
+    url: "https://orval.dev/docs/installation/"
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: "Victor Bury"
+    url: "https://raw.githubusercontent.com/orval-labs/orval/master/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2022-present Victor Bury"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/orval-labs"
+    checkedAt: 2026-11-16
+    via: api
+  - field: sourcePublic
+    value: true
+    url: "https://api.github.com/repos/orval-labs/orval"
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: TypeScript
+    url: "https://api.github.com/repos/orval-labs/orval"
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [codegen]
+    url: "https://raw.githubusercontent.com/orval-labs/orval/master/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "generates type-safe JS clients (TypeScript) from any valid OpenAPI v3 or Swagger v2 specification"
+  - field: runtime
+    value: [node]
+    url: "https://orval.dev/docs/installation/"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Orval 8+ requires Node.js 22.18 or newer."
+  - field: runtimeMin
+    value: "22"
+    url: "https://raw.githubusercontent.com/orval-labs/orval/v8.48.0/packages/orval/package.json"
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"node": ">=22.18.0"'
+  - field: installMethod
+    value: npm
+    url: "https://orval.dev/docs/installation/"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install orval -D"
+  - field: installMethod
+    value: docker
+    url: "https://orval.dev/docs/installation/"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "you can run code generation with the official Docker image instead of installing Orval locally"
+  - field: license
+    value: MIT
+    url: "https://api.github.com/repos/orval-labs/orval"
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: "https://raw.githubusercontent.com/orval-labs/orval/master/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 8
+    url: "https://api.github.com/repos/orval-labs/orval/releases/latest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-14
+    url: "https://api.github.com/repos/orval-labs/orval/releases/latest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: "2020"
+    url: "https://registry.npmjs.org/orval"
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 6620
+    url: "https://api.github.com/repos/orval-labs/orval"
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 410
+    url: "https://api.github.com/repos/orval-labs/orval/contributors?per_page=1"
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: "orval"
+    url: "https://registry.npmjs.org/orval/latest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: 3640442
+    url: "https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/orval"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 39
+    url: "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/orval"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 305
+    url: "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/orval"
+    checkedAt: 2026-11-16
+    via: api
+  - field: discord
+    value: "https://discord.gg/6fC2sjDU7w"
+    url: "https://raw.githubusercontent.com/orval-labs/orval/master/README.md"
+    checkedAt: 2026-11-16
+    via: page
+notFound: [hqCountry, pricingPage, paidEdition, runsAs, basedOn, pluginDirectory, forum, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, dockerPulls, sso, userRoles, i18n, databases, templating]
+unreadable: []
+notes: >
+  Monorepo: the README describes workspace packages and the install docs name the orval package, so stars and contributors belong to orval-labs/orval and the npm figure is the orval package, 2026-11-01 to 2026-11-07. The README's "Supported clients" list (React Query, SWR, Vue Query, Pinia Colada, Svelte Query, Solid Query, Angular, Hono, zod, Effect, Valibot, native fetch, MCP) names output targets the generated code uses, not a framework the tool is built on, so no basedOn. The docs describe Orval as "a dev dependency in your project" but say no process model, so no runsAs is recorded. The Docker image is on ghcr.io (GitHub Container Registry), not Docker Hub, so no dockerPulls. The playground at orval.dev/playground is a hosted demo, not a service the record offers. Open Collective sponsors are not recorded. The latest prerelease, v8.0.0-rc.6 (2026-01-12), is older than the latest stable release, so no latestPrereleaseDate. The maintainer is taken from the LICENSE copyright line (Victor Bury), the GitHub organization is orval-labs. Discord link taken from the README and the homepage.
