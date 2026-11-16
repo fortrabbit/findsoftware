@@ -1,0 +1,136 @@
+id: laravel-fortify
+name: Laravel Fortify
+status: accepted
+checkedAt: 2026-11-16
+description: Laravel package that registers the backend routes and controllers for authentication features such as login, registration and password reset, without a user interface.
+facts:
+  - field: homepage
+    value: https://laravel.com/framework/docs/fortify
+    url: https://laravel.com/framework/docs/fortify
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Laravel Fortify is a frontend agnostic authentication backend implementation for Laravel."
+  - field: repository
+    value: https://github.com/laravel/fortify
+    url: https://api.github.com/repos/laravel/fortify
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://laravel.com/framework/docs/fortify
+    url: https://laravel.com/framework/docs/fortify
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Laravel Fortify is a frontend agnostic authentication backend implementation for Laravel."
+  - field: maintainer
+    value: Taylor Otwell
+    url: https://github.com/laravel/fortify/blob/v1.42.0/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) Taylor Otwell"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/laravel
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [auth]
+    url: https://laravel.com/framework/docs/fortify
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Laravel Fortify is a frontend agnostic authentication backend implementation for Laravel."
+  - field: basedOn
+    value: [laravel]
+    url: https://laravel.com/framework/docs/fortify
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Laravel Fortify is a frontend agnostic authentication backend implementation for Laravel."
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/laravel/fortify
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/laravel/fortify/blob/v1.42.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "^8.2"'
+  - field: runtimeMin
+    value: "8.2"
+    url: https://github.com/laravel/fortify/blob/v1.42.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "^8.2"'
+  - field: license
+    value: MIT
+    url: https://github.com/laravel/fortify/blob/v1.42.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"license": "MIT"'
+  - field: license
+    value: MIT
+    url: https://github.com/laravel/fortify/blob/v1.42.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Laravel Fortify is open-sourced software licensed under the MIT license"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/laravel/fortify/blob/v1.42.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Laravel Fortify is open-sourced software licensed under the MIT license"
+  - field: installMethod
+    value: composer require
+    url: https://laravel.com/framework/docs/fortify
+    checkedAt: 2026-11-16
+    via: page
+    quote: "composer require laravel/fortify"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/laravel/fortify/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-10
+    url: https://api.github.com/repos/laravel/fortify/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: "2020"
+    url: https://repo.packagist.org/p2/laravel/fortify.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1763
+    url: https://api.github.com/repos/laravel/fortify
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 137
+    url: https://api.github.com/repos/laravel/fortify/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: laravel/fortify
+    url: https://repo.packagist.org/p2/laravel/fortify.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: 77013575 total
+    url: https://packagist.org/packages/laravel/fortify.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 138
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/laravel%2Ffortify
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 8478
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/laravel%2Ffortify
+    checkedAt: 2026-11-16
+    via: api
+notFound: [runsAs, renderingModes, sso, userRoles, i18n, adminUi, headlessApi, databases, templating, contentStore, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, livePreview, multisite, selfHostOption, regions, apiLimits, paidEdition, freeTier, pricingPage, endoflifeId, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, npmName, npmWeeklyDownloads, latestPrereleaseDate, lastCommitDate, hostedService]
+unreadable: []
+notes: >
+  The Packagist package laravel/fortify is the one the docs install (composer require laravel/fortify), and the GitHub repository is laravel/fortify with default branch 1.x. The docs call Fortify a headless authentication library and say it provides no user interface, so adminUi is left out. The docs name Laravel starter kits that use Fortify internally and say Fortify and Laravel Sanctum are not mutually exclusive; the Sanctum section calls the two not mutually exclusive or competing, so laravel-sanctum is no alternativeTo value. The docs say Fortify registers the routes and controllers for login, registration, password reset, email verification and more. The docs list two-factor authentication (TOTP) and passkeys as features; passkeys come from a separate laravel/passkeys package the composer.json requires, which is not a record. The stable major is 1, from v1.42.0 published 2026-11-10 on GitHub; Packagist's version time for v1.42.0 is 2026-10-21, the tag's commit date, so latestReleaseDate follows the GitHub release. firstRelease is 2020 from the Packagist upload v0.0.1 dated 2020-08-31, the same day the repository was created. The maintainer is the LICENSE copyright holder Taylor Otwell, an individual; no page here names a company as maintainer, so hqCountry is not recorded. The basedOn Laravel value rests on the first sentence of the docs, which calls Fortify an implementation for Laravel of Laravel's authentication features.

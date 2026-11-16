@@ -1,0 +1,129 @@
+id: league-fractal
+name: Fractal
+status: accepted
+checkedAt: 2026-11-16
+description: PHP library that transforms complex data into structured API output, with serializers for formats such as JSON-API.
+facts:
+  - field: homepage
+    value: https://fractal.thephpleague.com/
+    url: https://fractal.thephpleague.com/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Output complex, flexible, AJAX/RESTful data structures"
+  - field: repository
+    value: https://github.com/thephpleague/fractal
+    url: https://api.github.com/repos/thephpleague/fractal
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://fractal.thephpleague.com/
+    url: https://github.com/thephpleague/fractal/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Fractal has full documentation"
+  - field: maintainer
+    value: Phil Sturgeon
+    url: https://github.com/thephpleague/fractal/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2013 Phil Sturgeon"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/thephpleague
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/league%2Ffractal
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/thephpleague/fractal
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [api-layer, serialization]
+    url: https://github.com/thephpleague/fractal/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Fractal provides a presentation and transformation layer for complex data output"
+  - field: runtime
+    value: php
+    url: https://github.com/thephpleague/fractal/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The following versions of PHP are supported by this version: >= PHP 7.4"
+  - field: runtimeMin
+    value: "7.4"
+    url: https://github.com/thephpleague/fractal/blob/0.21/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: "\"php\": \">=7.4\""
+  - field: installMethod
+    value: composer
+    url: https://fractal.thephpleague.com/installation/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "can be installed using Composer"
+  - field: installMethod
+    value: autoloader without Composer
+    url: https://fractal.thephpleague.com/installation/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "You can also use Fractal without using Composer by registering an autoloader function"
+  - field: packagistName
+    value: league/fractal
+    url: https://repo.packagist.org/p2/league/fractal.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "72720052 (total)"
+    url: https://packagist.org/packages/league/fractal.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 583
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/league%2Ffractal
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 6650
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/league%2Ffractal
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/thephpleague/fractal
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/thephpleague/fractal/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/thephpleague/fractal/releases/tag/0.21
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2025-12-16
+    url: https://github.com/thephpleague/fractal/releases/tag/0.21
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 3540
+    url: https://api.github.com/repos/thephpleague/fractal
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 77
+    url: https://api.github.com/repos/thephpleague/fractal/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, wikidata, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, npmName, npmWeeklyDownloads, pypiDownloads, selfHostOption, latestPrereleaseDate]
+unreadable: []
+notes: >
+  The homepage fractal.thephpleague.com answers over https (the http address redirects to it) and is the project's own site; the GitHub repository field homepage carries it without a scheme. The maintainer follows the LICENSE copyright line (Phil Sturgeon, 2013). The homepage says Fractal "is maintained by Graham Daniels and Jason Lewis", and the README lists Korvin Szanto and Matt Trask as maintainers; neither is recorded. "The League of Extraordinary Packages", named on every page, is a project group and no legal entity, so it is not the maintainer. The installation page says "You need PHP >= 5.4.0", which contradicts the README and composer.json (>= 7.4); runtimeMin follows composer.json at tag 0.21. The installation page's Going Solo section registers an autoloader for the src directory, the second installMethod. The release line is 0.x, so currentMajor is 0; the current release is 0.21 (2025-12-16), and the prior release is 0.20.2 (2025-02-14). The Packagist total is 72,720,052 on the day of research; the CSV figure of 71.1M is stale. The id league-fractal keeps this package apart from the component workbench in fractal.yml. Coined kinds, kept out of fields: output formats (DataArraySerializer, ArraySerializer, JsonApiSerializer; the serializer page calls HAL and JSON-API "two popular ones") and pagination adapters (Illuminate, Pagerfanta, Laminas, Phalcon, Zend). The README calls the library a protective layer between source data and output, so schema changes do not affect users; the transformers page defines a transformer as a class that extends TransformerAbstract and has a transform() method, and the serializers page says a serializer sets how transformed data is structured. The Packagist and ecosyste.ms counts are for league/fractal only.

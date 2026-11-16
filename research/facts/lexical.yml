@@ -1,0 +1,106 @@
+id: lexical
+name: Lexical
+status: accepted
+checkedAt: 2026-11-16
+description: Extensible text editor framework for the web, with a framework-agnostic core and React bindings.
+facts:
+  - field: homepage
+    value: https://lexical.dev
+    url: https://lexical.dev/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Lexical is a lean text editor framework"
+  - field: repository
+    value: https://github.com/meta/lexical
+    url: https://api.github.com/repos/meta/lexical
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://lexical.dev/docs/intro
+    url: https://lexical.dev/docs/intro
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Lexical is an extensible text editor framework for the web"
+  - field: maintainer
+    value: Meta Platforms, Inc.
+    url: https://github.com/meta/lexical/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) Meta Platforms, Inc. and affiliates."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/meta
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2022
+    url: https://github.com/meta/lexical/releases/tag/v0.3.3
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/meta/lexical
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [editor, rich-text]
+    url: https://github.com/meta/lexical/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "An extensible text editor framework that provides excellent reliability, accessibility and performance"
+  - field: installMethod
+    value: npm
+    url: https://github.com/meta/lexical/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install lexical @lexical/react"
+  - field: npmName
+    value: lexical
+    url: https://registry.npmjs.org/lexical/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "8910903 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/lexical
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/meta/lexical
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/meta/lexical/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/meta/lexical/releases/tag/v0.53.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-28
+    url: https://github.com/meta/lexical/releases/tag/v0.53.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: discord
+    value: https://discord.gg/KmG4wQnnD9
+    url: https://github.com/meta/lexical/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: githubStargazers
+    value: 24029
+    url: https://api.github.com/repos/meta/lexical
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 452
+    url: https://api.github.com/repos/meta/lexical/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, wikidata, runtime, runtimeMin, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, packagistName, pypiDownloads, selfHostOption, dependentPackages, dependentRepos, latestPrereleaseDate]
+unreadable: []
+notes: >
+  The CSV repository facebook/lexical now resolves to github.com/meta/lexical; the README and the LICENSE use the new name, so the record uses it. The homepage lexical.dev is the project's own site; the docs intro page describes it as "an extensible text editor framework for the web". The LICENSE copyright line names "Meta Platforms, Inc. and affiliates"; the maintainer is Meta Platforms, Inc. as the line states it, and the docs intro says the project "began at Meta" with contributors beyond Meta. The full address of Meta Platforms, Inc. (Menlo Park, CA) sits in the privacy policy of Meta's open source website, which is the source of hqCountry. The npm name lexical has an upload history from 2014 that is not this project (0.0.1 in 2014-06), so firstRelease comes from the oldest GitHub release, v0.3.3 (2022-06-10). The GitHub line is 0.x; currentMajor is 0 and the current release is v0.53.0 (2026-10-28). The repository's nightly tags (v0.53.1-nightly.*) are builds, not alpha, beta or RC releases, so latestPrereleaseDate is absent. The README and the docs describe three entry routes: the React bindings (@lexical/react), the vanilla quick start (npm install lexical with the extension packages) and the headless package for use outside a browser; the docs intro says the core is framework-agnostic and @lexical/react provides React bindings, so no basedOn is recorded. The docs say the editor attaches to a contenteditable element, and the headless path runs import and export outside a browser through @lexical/headless with a happy-dom window; that does not give one runsAs value, so runsAs is empty. The docs list supported browsers as Firefox 115+, Chrome 86+ and Safari 15+ with no Internet Explorer; that is a browser support list, not a runsAs statement. The serialization page names JSON, HTML and Markdown (@lexical/mdast) formats, the docs name Yjs for collaboration, and the docs name Bloomberg and several products as users; these are coined kinds and uses, kept out of fields. The Compared with ProseMirror page is a factual comparison that does not call ProseMirror an alternative or name a switch, so alternativeTo is absent. The npm figure counts downloads of the lexical core package, which the install line names.

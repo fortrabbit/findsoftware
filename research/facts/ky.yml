@@ -1,0 +1,124 @@
+id: ky
+name: Ky
+status: accepted
+checkedAt: 2026-11-16
+description: HTTP client built on the Fetch API that adds retries, timeouts, hooks and errors for non-2xx responses.
+facts:
+  - field: repository
+    value: https://github.com/sindresorhus/ky
+    url: https://api.github.com/repos/sindresorhus/ky
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Sindre Sorhus
+    url: https://raw.githubusercontent.com/sindresorhus/ky/v2.2.0/license
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) Sindre Sorhus"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/sindresorhus
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/sindresorhus/ky
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [data-fetching]
+    url: https://github.com/sindresorhus/ky/blob/v2.2.0/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "tiny and elegant HTTP client"
+  - field: runtime
+    value: [node, deno, bun]
+    url: https://github.com/sindresorhus/ky/blob/v2.2.0/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Node.js, Bun, and Deno"
+  - field: installMethod
+    value: npm
+    url: https://github.com/sindresorhus/ky/blob/v2.2.0/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install ky"
+  - field: installMethod
+    value: cdn
+    url: https://github.com/sindresorhus/ky/blob/v2.2.0/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "import Ky from a URL. For example, using a CDN"
+  - field: alternativeTo
+    value: [got]
+    url: https://github.com/sindresorhus/ky/blob/v2.2.0/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: Got is maintained by the same people as Ky, so you probably want Ky instead.
+  - field: alternativeTo
+    value: [axios]
+    url: https://github.com/sindresorhus/ky/blob/v2.2.0/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: Axios predates the Fetch API and has a lot of legacy baggage.
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/sindresorhus/ky/v2.2.0/license
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/sindresorhus/ky/v2.2.0/license
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: npmName
+    value: ky
+    url: https://registry.npmjs.org/ky/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "9737271 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/ky
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 468
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ky
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 11957
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ky
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: https://api.github.com/repos/sindresorhus/ky/commits/v0.2.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/sindresorhus/ky/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-09
+    url: https://api.github.com/repos/sindresorhus/ky/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 17163
+    url: https://api.github.com/repos/sindresorhus/ky
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 119
+    url: https://api.github.com/repos/sindresorhus/ky/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, docs, hqCountry, parent, basedOn, forkOf, successorOf, importsFrom, headlessApi, runsAs, renderingModes, contentStore, databases, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, usageShare, reportedInstalls, packagistName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, runtimeMin, endoflifeId, lastCommitDate, latestPrereleaseDate]
+unreadable: []
+notes: >
+  Boundary ruling for wave 62: ky is an HTTP client, a helper library, so the row is accepted; the CSV boundary state is not a record status. No homepage: the project has no site beyond its repository, and the README is the only documentation, so the docs fact is absent too. The npm package named ky has an upload dated 2016 by another author (version 0.0.0), so firstRelease comes from the oldest GitHub tag, v0.2.0 on 2018-09-04; the npm version 0.1.0 is dated 2018-05-06, in the same year. The README's install section names npm and lists CDN links (jsDelivr, unpkg, esm.sh) under a CDN heading; the Deno usage sentence names the CDN route, so cdn is its own installMethod entry. The package.json engines field at v2.2.0 says node 22 or later and the README's Node.js support section says the same; the browser library ruling applies, so no runtimeMin is recorded. The README says Ky treats non-2xx responses as errors by default, retries failed requests for a default list of methods and status codes, notes that Chromium retries 408 responses at the network layer too, makes instances with extend and create, and runs hooks at init, beforeRequest, beforeRetry, beforeError and afterResponse. The benefits list also names method shortcuts, a JSON option, timeout support, upload and download progress and a base URL option. It states it has no dependencies, validates responses with Standard Schema validators, ships TypeScript types and reads retry timing headers; these are features, not fields. The FAQ questions "How is it different from got" and "from axios" are the project's compare statements, recorded as alternativeTo for both. The README's maintainer list names Sindre Sorhus, Seth Holladay and Szymon Marczak; the LICENSE line names Sindre Sorhus only, so the maintainer is Sindre Sorhus. The npm figure counts downloads from the npm registry for the package named ky. Stars and contributors are for the repository; contributors counts the last page of the per-page-1 listing. The latest stable release is v2.2.0; the v2.0.0-0 prerelease of 2026-03-29 is older than it and is not recorded.

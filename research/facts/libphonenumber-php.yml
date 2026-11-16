@@ -1,0 +1,117 @@
+id: libphonenumber-php
+name: libphonenumber for PHP
+status: accepted
+checkedAt: 2026-11-16
+description: PHP library for parsing, formatting, storing and validating international phone numbers, a port of Google's libphonenumber.
+facts:
+  - field: homepage
+    value: https://giggsey.com/libphonenumber/
+    url: https://giggsey.com/libphonenumber/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "libphonenumber-for-php Demo"
+  - field: repository
+    value: https://github.com/giggsey/libphonenumber-for-php
+    url: https://api.github.com/repos/giggsey/libphonenumber-for-php
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Joshua Gigg
+    url: https://github.com/giggsey/libphonenumber-for-php/blob/9.0.43/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"name": "Joshua Gigg"'
+  - field: docs
+    value: https://github.com/giggsey/libphonenumber-for-php/tree/master/docs
+    url: https://github.com/giggsey/libphonenumber-for-php/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/giggsey
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://repo.packagist.org/p2/giggsey/libphonenumber-for-php.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [validation]
+    url: https://github.com/giggsey/libphonenumber-for-php/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A PHP library for parsing, formatting, storing and validating international phone numbers."
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/giggsey/libphonenumber-for-php
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/giggsey/libphonenumber-for-php/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "PHP versions 8.1 to 8.5 are currently supported."
+  - field: runtimeMin
+    value: "8.1"
+    url: https://github.com/giggsey/libphonenumber-for-php/blob/9.0.43/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "^8.1"'
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/giggsey/libphonenumber-for-php/blob/9.0.43/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"license": "Apache-2.0",'
+  - field: installMethod
+    value: composer
+    url: https://github.com/giggsey/libphonenumber-for-php/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "composer require giggsey/libphonenumber-for-php"
+  - field: currentMajor
+    value: 9
+    url: https://api.github.com/repos/giggsey/libphonenumber-for-php/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-06
+    url: https://api.github.com/repos/giggsey/libphonenumber-for-php/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 5070
+    url: https://api.github.com/repos/giggsey/libphonenumber-for-php
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 67
+    url: https://api.github.com/repos/giggsey/libphonenumber-for-php/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: giggsey/libphonenumber-for-php
+    url: https://repo.packagist.org/p2/giggsey/libphonenumber-for-php.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "181216872 (total)"
+    url: https://packagist.org/packages/giggsey/libphonenumber-for-php.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 368
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/giggsey%2Flibphonenumber-for-php
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 2379
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/giggsey%2Flibphonenumber-for-php
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, paidEdition, runsAs, renderingModes, contentStore, databases, headlessApi, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, npmWeeklyDownloads, pypiDownloads, apiLimits, regions, selfHostOption]
+unreadable: []
+notes: >
+  The README says the library is based on Google's libphonenumber, that it uses phone number metadata from Google's project, and that it tries to follow Google's version numbers, so the GitHub release 9.0.43 gives currentMajor 9 and the major is Google's line; the README also says jumps in major versions may hold no breaking change. Google's project is not a record in this dataset, so basedOn is left out. The README requires the PECL mbstring extension, which is a runtime requirement and is recorded in notes only. The lite package giggsey/libphonenumber-for-php-lite and the framework integrations the README lists (Symfony PhoneNumberBundle, Laravel Phone, TYPO3 Phone) are separate third-party or sibling packages and are not recorded. The README's "PHP versions 8.1 to 8.5 are currently supported" is the stated support window; the runtimeMin 8.1 comes from composer.json at the 9.0.43 tag, which requires "^8.1". The license file is the Apache 2.0 text with no copyright holder line, so the maintainer comes from the composer.json author name. firstRelease is 2013 from the oldest Packagist version 5.7 (2013-07-24), older than the first GitHub release (2013-08-13). The Packagist figure is the all-time total for the package the install docs name.

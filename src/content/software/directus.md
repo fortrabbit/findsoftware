@@ -23,6 +23,7 @@ hosting:
 runtimeMin: node 22
 basedOn:
   - express
+  - knex
   - vue
 contentStore:
   - database

@@ -1,0 +1,117 @@
+id: league-html-to-markdown
+name: HTML To Markdown for PHP
+status: accepted
+checkedAt: 2026-11-16
+description: PHP library that converts HTML documents to Markdown text.
+facts:
+  - field: repository
+    value: https://github.com/thephpleague/html-to-markdown
+    url: https://api.github.com/repos/thephpleague/html-to-markdown
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/thephpleague/html-to-markdown/blob/master/README.md
+    url: https://github.com/thephpleague/html-to-markdown/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Library which converts HTML to Markdown for your sanity and convenience"
+  - field: maintainer
+    value: Colin O'Dell
+    url: https://github.com/thephpleague/html-to-markdown/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2015 Colin O'Dell"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/thephpleague
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/league%2Fhtml-to-markdown
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/thephpleague/html-to-markdown
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [markdown]
+    url: https://github.com/thephpleague/html-to-markdown/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Library which converts HTML to Markdown"
+  - field: runtime
+    value: php
+    url: https://github.com/thephpleague/html-to-markdown/blob/5.2.3/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: "\"php\": \"^7.2.5 || ^8.0\""
+  - field: runtimeMin
+    value: "7.2"
+    url: https://github.com/thephpleague/html-to-markdown/blob/5.2.3/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: "\"php\": \"^7.2.5 || ^8.0\""
+  - field: installMethod
+    value: composer
+    url: https://github.com/thephpleague/html-to-markdown/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "composer require league/html-to-markdown"
+  - field: packagistName
+    value: league/html-to-markdown
+    url: https://repo.packagist.org/p2/league/html-to-markdown.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "40606944 (total)"
+    url: https://packagist.org/packages/league/html-to-markdown.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 132
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/league%2Fhtml-to-markdown
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 1581
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/league%2Fhtml-to-markdown
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/thephpleague/html-to-markdown
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/thephpleague/html-to-markdown/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 5
+    url: https://github.com/thephpleague/html-to-markdown/releases/tag/5.2.3
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-19
+    url: https://github.com/thephpleague/html-to-markdown/releases/tag/5.2.3
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1909
+    url: https://api.github.com/repos/thephpleague/html-to-markdown
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 44
+    url: https://api.github.com/repos/thephpleague/html-to-markdown/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, basedOn, parent, forkOf, successorOf, alternativeTo, hqCountry, wikidata, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, renderingModes, runsAs, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, endoflifeId, npmName, npmWeeklyDownloads, pypiDownloads, selfHostOption, latestPrereleaseDate]
+unreadable: []
+notes: >
+  The project has no site of its own: the repository's homepage field is empty and composer.json points to the GitHub repository, so no homepage is recorded and the CSV homepage (the repository) is dropped. The maintainer follows the LICENSE copyright line (Colin O'Dell, 2015; "Originally created by Nick Cernis"); the README names Colin O'Dell as Lead Developer and Nick Cernis as Original Author. The README requires PHP 7.2+, and composer.json at tag 5.2.3 requires "^7.2.5 || ^8.0"; runtimeMin is taken from the manifest. The repository needs the xml, libxml and dom extensions (ext-dom, ext-xml in composer.json); these are build requirements of the library and are in notes only. The package ships a bin/html-to-markdown command and a demo directory; a command line tool gives no runsAs statement. The README names league/commonmark (recommended), cebe/markdown, PHP Markdown and Parsedown as libraries for the reverse direction, Markdown to HTML; that is not an alternative statement, so alternativeTo is not recorded. The README documents the options strip_tags, remove_nodes, preserve_comments, hard_break, use_autolinks, header_style and the bold and italic style settings; it says tags without a Markdown equivalent are kept by default, and that Markdown Extra and MultiMarkdown are not supported. The README says table support is off by default and is added with a TableConverter. Its caution recommends HTML Purifier for untrusted input; that is advice, not a dependency. The version history has no GitHub release newer than 5.2.3 and no prerelease. The Packagist total is 40,606,944 on the day of research; the CSV figure of 38.2M is stale. The first upload on Packagist and ecosyste.ms is 2013-08-14, the same date as the 2.0.0 tag commit, so firstRelease is 2013.

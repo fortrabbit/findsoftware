@@ -1,0 +1,118 @@
+id: laravel-translation-manager
+name: Laravel Translation Manager
+status: accepted
+checkedAt: 2026-11-16
+description: Laravel package that imports a project's translation files into a database, edits them in a web interface and exports them back.
+facts:
+  - field: repository
+    value: https://github.com/barryvdh/laravel-translation-manager
+    url: https://api.github.com/repos/barryvdh/laravel-translation-manager
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Barry vd. Heuvel
+    url: https://github.com/barryvdh/laravel-translation-manager/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (C) 2014 Barry vd. Heuvel"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/barryvdh
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: "2014"
+    url: https://repo.packagist.org/p2/barryvdh/laravel-translation-manager.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [i18n]
+    url: https://github.com/barryvdh/laravel-translation-manager/blob/master/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "This is a package to manage Laravel translation files."
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/barryvdh/laravel-translation-manager
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/barryvdh/laravel-translation-manager/blob/v0.6.9/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "^8.1"'
+  - field: runtimeMin
+    value: "8.1"
+    url: https://github.com/barryvdh/laravel-translation-manager/blob/v0.6.9/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "^8.1"'
+  - field: basedOn
+    value: laravel
+    url: https://github.com/barryvdh/laravel-translation-manager/blob/master/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "This is a package to manage Laravel translation files."
+  - field: installMethod
+    value: composer
+    url: https://github.com/barryvdh/laravel-translation-manager/blob/master/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Require this package in your composer.json and run composer update"
+  - field: contentStore
+    value: [database]
+    url: https://github.com/barryvdh/laravel-translation-manager/blob/master/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Read all translation files and save them in the database"
+  - field: adminUi
+    value: "yes, web interface inside the Laravel application"
+    url: https://github.com/barryvdh/laravel-translation-manager/blob/master/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "make them editable through a webinterface"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/barryvdh/laravel-translation-manager
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://api.github.com/repos/barryvdh/laravel-translation-manager
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/barryvdh/laravel-translation-manager/tags
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-03-19
+    url: https://api.github.com/repos/barryvdh/laravel-translation-manager/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1703
+    url: https://api.github.com/repos/barryvdh/laravel-translation-manager
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 75
+    url: https://api.github.com/repos/barryvdh/laravel-translation-manager/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: barryvdh/laravel-translation-manager
+    url: https://packagist.org/packages/barryvdh/laravel-translation-manager.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: 4224165 total
+    url: https://packagist.org/packages/barryvdh/laravel-translation-manager.json
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, docs, pricingPage, paidEdition, headlessApi, sso, userRoles, templating, i18n, multisite, livePreview, importsFrom, alternativeTo, forkOf, successorOf, parent, hqCountry, databases, runsAs, renderingModes, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, x, bluesky, newsletter, wikidata, endoflifeId, npmName, pypiName, rubygemsName, docker, outputDir, buildCommand]
+unreadable: []
+notes: >
+  The repository has no project site: GitHub's homepage field is empty and the README links only the repository and its tests, so homepage and docs are absent and the README is the documentation. The LICENSE copyright line names Barry vd. Heuvel; the README badge "Powered By Fruitcake" links to fruitcake.nl, a company whose legal name and country are not read here, so it is not recorded as maintainer or parent. The README's TODO section says "This package is still very alpha". That is the maintainer's own status statement and no end signal, so the status stays accepted; a reviewer may want the sentence in view. The README says the package imports the PHP and JSON translation files into a database, finds translation keys in php and twig sources, exports them back, and offers artisan commands for import, find, export, clean and reset; the database engine is not named, so databases is absent; the contentStore value rests on the workflow line saying all translation files are saved in the database. The license entry is GitHub's detection of the LICENSE text, which carries no title line. The web interface lives inside the Laravel app under a configured route with middleware, and the README asks for the views to be published, so adminUi is yes. The Laravel 5.2 session note is a historical middleware instruction, not a requirement. The alternative Google Translate integration is a third-party package (tanmuhittin/laravel-google-translate) the README suggests installing; it is not recorded. The composer.json at tag v0.6.9 requires php ^8.1 and illuminate/support and illuminate/translation for Laravel 9 through 13, and its extra laravel block marks it as a Laravel package. The README says the package "does not replace the Translation system" and that the export step overwrites the translation files and removes their comments, so a backup comes first; it also says missing translations can be recorded by swapping in a custom translator while the application runs, for development only. The 0.x line is the only line, so currentMajor is 0; the tags run v0.1.0 (2014-06-01) to v0.6.9. The first Packagist upload is also 2014-06-01. Stars and contributors are the repository's.

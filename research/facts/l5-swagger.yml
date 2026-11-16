@@ -1,0 +1,124 @@
+id: l5-swagger
+name: L5 Swagger
+status: accepted
+checkedAt: 2026-11-16
+description: Laravel package that generates an OpenAPI document from swagger-php attributes and serves it with Swagger UI.
+facts:
+  - field: repository
+    value: https://github.com/DarkaOnLine/L5-Swagger
+    url: https://api.github.com/repos/DarkaOnLine/L5-Swagger
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/DarkaOnLine/L5-Swagger/wiki/Getting-Started
+    url: https://github.com/DarkaOnLine/L5-Swagger/wiki/Getting-Started
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Install L5-Swagger with Composer"
+  - field: maintainer
+    value: Darius Matulionis
+    url: https://raw.githubusercontent.com/DarkaOnLine/L5-Swagger/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2016 Darius Matulionis"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/DarkaOnLine
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/DarkaOnLine/L5-Swagger
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [api-layer]
+    url: https://raw.githubusercontent.com/DarkaOnLine/L5-Swagger/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "OpenApi or Swagger Specification for your Laravel project made easy"
+  - field: basedOn
+    value: [laravel]
+    url: https://raw.githubusercontent.com/DarkaOnLine/L5-Swagger/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "adapted to work with Laravel"
+  - field: runtime
+    value: [php]
+    url: https://github.com/DarkaOnLine/L5-Swagger/blob/11.3.1/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "^8.2"'
+  - field: runtimeMin
+    value: "8.2"
+    url: https://github.com/DarkaOnLine/L5-Swagger/blob/11.3.1/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "^8.2"'
+  - field: installMethod
+    value: composer
+    url: https://github.com/DarkaOnLine/L5-Swagger/wiki/Getting-Started
+    checkedAt: 2026-11-16
+    via: page
+    quote: "composer require darkaonline/l5-swagger"
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/DarkaOnLine/L5-Swagger/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/DarkaOnLine/L5-Swagger/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: packagistName
+    value: darkaonline/l5-swagger
+    url: https://packagist.org/packages/darkaonline/l5-swagger.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "44541051 (total)"
+    url: https://packagist.org/packages/darkaonline/l5-swagger.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 91
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/darkaonline%2Fl5-swagger
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 1783
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/darkaonline%2Fl5-swagger
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://api.github.com/repos/DarkaOnLine/L5-Swagger/commits/v0.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 11
+    url: https://api.github.com/repos/DarkaOnLine/L5-Swagger/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-09
+    url: https://api.github.com/repos/DarkaOnLine/L5-Swagger/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2935
+    url: https://api.github.com/repos/DarkaOnLine/L5-Swagger
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 64
+    url: https://api.github.com/repos/DarkaOnLine/L5-Swagger/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, headlessApi, runsAs, renderingModes, contentStore, databases, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, usageShare, reportedInstalls, npmName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, lastCommitDate, latestPrereleaseDate]
+unreadable: []
+notes: >
+  Accepted under criterion 1 as a Laravel package that generates API documentation for a Laravel application: it is installed into a site's code, not a finished application. No homepage: the repository is the only project site, and its README points to the GitHub wiki for the documentation, so the wiki Getting Started page is the docs fact. The README says the package is a wrapper of swagger-php and swagger-ui adapted to work with Laravel; swagger-php and swagger-ui have no record ids, so they stay in these notes, and the README links swagger-php for writing the attributes. The category api-layer maps to backend in the import; no category in the import's map names OpenAPI documentation without also mapping to a static site generator, so api-layer is the nearest value. The wiki Getting Started page says the service provider is registered through Laravel's package discovery, which supports the basedOn Laravel statement. The wiki's version table gives the Laravel and PHP range for each major: L5-Swagger 11.x runs on Laravel 11.44 and later, 12.1 and later, and 13, with PHP 8.2 and later. The runtimeMin comes from composer.json at the latest release tag. The wiki states the documentation routes have no middleware by default, so the generated documentation is public until authentication middleware is added. The configuration page describes an OAuth2 section in the Swagger UI and a PKCE option for the authorization code flow; the package does not issue grants, so sso is not recorded. The Migration Guides page describes version-to-version changes only, not import from other software. The README's disclaimer says the actual Swagger specification is beyond the scope of the package and that it packages swagger-php and swagger-ui for Laravel. The Related Projects page lists openapi-introspector, openapi-router and openapi-verifier as third-party packages that work with L5-Swagger; they are not alternatives. The runsAs process model is not stated on the Getting Started page, so it is not recorded. The generator runs as an artisan command and the Tips page describes regenerating on each load in development, which is not a process statement. The maintainer is the copyright holder named in the MIT LICENSE, Darius Matulionis, and the GitHub profile names the same person as a user; the country on the profile is not a page naming the maintainer's company, so hqCountry is not recorded. The Packagist figure is the total of all downloads for darkaonline/l5-swagger; its monthly figure is not recorded. Stars and contributors are for the repository.

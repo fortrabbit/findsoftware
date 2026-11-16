@@ -1,0 +1,123 @@
+id: laravel-echo
+name: Laravel Echo
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript library that subscribes a web page to channels and listens for events broadcast by a Laravel application.
+facts:
+  - field: homepage
+    value: https://laravel.com/docs/broadcasting
+    url: https://laravel.com/docs/broadcasting
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Laravel Echo is a JavaScript library that makes it painless to subscribe to channels and listen for events broadcast by your server-side broadcasting driver"
+  - field: repository
+    value: https://github.com/laravel/echo
+    url: https://api.github.com/repos/laravel/echo
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://laravel.com/docs/broadcasting
+    url: https://raw.githubusercontent.com/laravel/echo/2.x/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Documentation for Echo can be found on the Laravel website"
+  - field: maintainer
+    value: Taylor Otwell
+    url: https://raw.githubusercontent.com/laravel/echo/2.x/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) Taylor Otwell"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/laravel/echo
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [library]
+    url: https://laravel.com/docs/broadcasting
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Laravel Echo is a JavaScript library that makes it painless to subscribe to channels and listen for events broadcast by your server-side broadcasting driver"
+  - field: runsAs
+    value: [browser]
+    url: https://laravel.com/docs/broadcasting
+    checkedAt: 2026-11-16
+    via: page
+    quote: "can receive them within the browser client"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/laravel/echo
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/laravel/echo/2.x/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/laravel/echo
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/laravel/echo/2.x/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: installMethod
+    value: npm install
+    url: https://raw.githubusercontent.com/laravel/echo/2.x/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "You may install Echo via the NPM package manager."
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/laravel/echo/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-27
+    url: https://api.github.com/repos/laravel/echo/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: "2016"
+    url: https://registry.npmjs.org/laravel-echo
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1361
+    url: https://api.github.com/repos/laravel/echo
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 84
+    url: https://api.github.com/repos/laravel/echo/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: laravel-echo
+    url: https://registry.npmjs.org/laravel-echo/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1144135 (2026-11-01 to 2026-11-07)
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/laravel-echo
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 122
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/laravel-echo
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 6868
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/laravel-echo
+    checkedAt: 2026-11-16
+    via: api
+notFound: [basedOn, renderingModes, parent, forkOf, successorOf, alternativeTo, importsFrom, headlessApi, livePreview, userRoles, sso, multisite, i18n, selfHostOption, regions, apiLimits, paidEdition, pricingPage, endoflifeId, templating, contentStore, databases, adminUi, hqCountry, runtime, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, usageShare, packagistName, packagistDownloads, latestPrereleaseDate, lastCommitDate]
+unreadable: []
+notes: >
+  The npm package laravel-echo and the GitHub repository laravel/echo are the two identifiers; the npm homepage points to packages/laravel-echo inside the repository, so laravel/echo is a monorepo and its stars and contributors belong to the whole repository. The default branch is 2.x; the highest stable release is v2.6.3 published 2026-10-27, which matches the npm latest version, so currentMajor is 2. The npm manifest's engines field asks for Node.js ^20.19.0 or >=22.12.0; that is a build requirement for a library that runs in the browser, so no runtime is recorded. The docs say that event broadcasting is accomplished by a server-side broadcasting driver, so that Echo "can receive them within the browser client", the runsAs browser value; the server side is Laravel's own broadcasting, not a process Echo starts. The docs name four broadcasting drivers, Laravel Reverb, Pusher Channels, Ably and Mercure, and the repository description names Reverb, Pusher and Ably; the drivers are notes, not fields. The docs note that Ably maintains its own broadcaster and Echo client, which the Laravel page recommends over the Pusher compatibility mode it documents. The npm package description names Pusher, Socket.IO and Mercure, while the repository description names Reverb, Pusher and Ably; the two descriptions disagree and the repository's is the one the GitHub API returns. The docs install route is npm with pusher-js as a companion package, which is not recorded as an installMethod. The docs also name the Echo framework bindings @laravel/echo-react, @laravel/echo-vue and @laravel/echo-svelte, which are separate npm packages not recorded here. basedOn Laravel is not recorded: the docs call Echo a JavaScript library that receives Laravel's events, and no sentence calls it a binding or plugin of Laravel. The maintainer is the copyright holder in LICENSE.md, Taylor Otwell. The npm weekly figure is the sum of the daily downloads for 2026-11-01 to 2026-11-07 from the npm range endpoint, and the CSV's 437.6k figure came from an earlier window. The ecosyste.ms dependent counts are for the npm package laravel-echo. firstRelease 2016 comes from the npm upload 0.0.1 dated 2016-04-30, the day the repository was created. The category is library because the docs call Echo a JavaScript library; realtime would map to the backend category, which is the server side that Echo only listens to.

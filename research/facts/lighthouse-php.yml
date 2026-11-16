@@ -1,0 +1,136 @@
+id: lighthouse-php
+name: Lighthouse
+status: accepted
+checkedAt: 2026-11-16
+description: PHP framework for serving a GraphQL API from a Laravel application.
+facts:
+  - field: homepage
+    value: https://lighthouse-php.com
+    url: https://lighthouse-php.com
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A framework for serving GraphQL from Laravel"
+  - field: repository
+    value: https://github.com/nuwave/lighthouse
+    url: https://api.github.com/repos/nuwave/lighthouse
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://lighthouse-php.com
+    url: https://github.com/nuwave/lighthouse/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The documentation lives at"
+  - field: maintainer
+    value: Christopher Moore
+    url: https://github.com/nuwave/lighthouse/blob/v6.74.0/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2018 Christopher Moore"
+  - field: forum
+    value: https://github.com/nuwave/lighthouse/discussions
+    url: https://github.com/nuwave/lighthouse/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Get your answer using GitHub discussions"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/nuwave
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://repo.packagist.org/p2/nuwave/lighthouse.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [graphql-server]
+    url: https://lighthouse-php.com
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A framework for serving GraphQL from Laravel"
+  - field: basedOn
+    value: [laravel]
+    url: https://lighthouse-php.com
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Build a GraphQL server on top of an existing Laravel application."
+  - field: headlessApi
+    value: graphql
+    url: https://lighthouse-php.com
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A framework for serving GraphQL from Laravel"
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/nuwave/lighthouse
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [php]
+    url: https://github.com/nuwave/lighthouse/blob/v6.74.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "^8",'
+  - field: runtimeMin
+    value: "8.0"
+    url: https://github.com/nuwave/lighthouse/blob/v6.74.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "^8",'
+  - field: license
+    value: MIT
+    url: https://github.com/nuwave/lighthouse/blob/v6.74.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"license": "MIT",'
+  - field: installMethod
+    value: composer
+    url: https://github.com/nuwave/lighthouse/blob/master/docs/master/getting-started/installation.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "composer require nuwave/lighthouse"
+  - field: currentMajor
+    value: 6
+    url: https://api.github.com/repos/nuwave/lighthouse/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-25
+    url: https://api.github.com/repos/nuwave/lighthouse/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 3499
+    url: https://api.github.com/repos/nuwave/lighthouse
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 218
+    url: https://api.github.com/repos/nuwave/lighthouse/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: nuwave/lighthouse
+    url: https://repo.packagist.org/p2/nuwave/lighthouse.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "14116549 (total)"
+    url: https://packagist.org/packages/nuwave/lighthouse.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 85
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/nuwave%2Flighthouse
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 738
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/nuwave%2Flighthouse
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, paidEdition, runsAs, renderingModes, contentStore, databases, templating, adminUi, i18n, multisite, livePreview, userRoles, sso, usageShare, reportedInstalls, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, npmName, npmWeeklyDownloads, pypiDownloads, apiLimits, regions, selfHostOption]
+unreadable: []
+notes: >
+  The README says "This repository is planned to move to spawnia/lighthouse", linking a discussion titled "Planned repository transfer: nuwave/lighthouse → spawnia/lighthouse"; at research time spawnia/lighthouse returned 404 and the repository is still nuwave/lighthouse, with the latest release 6.74.0 on 2026-10-25, so a planned transfer is no end signal and the status stays accepted. Recheck the repository field when the transfer happens. The name collides with the record id lighthouse, the Google Lighthouse audit tool in build-dev, so the id keeps the suffix. The homepage says the software builds "on top of an existing Laravel application", which is the basis for basedOn; the composer.json requires laravel/framework and illuminate packages, and the docs install page names a Lumen setup too, which is noted here only. The docs are a client-rendered site; the Markdown source lives in the repository at docs/master, and the installation page there gives the composer route. The composer.json at 6.74.0 states "php": "^8" with no minimum minor, so runtimeMin is written as 8.0; the docs state no PHP version. The migration page names Folkloreatelier/laravel-graphql and rebing/laravel-graphql as libraries users come from, and no record here covers them, so alternativeTo is left out. Subscriptions over WebSocket, federation, file uploads and the Eloquent integration are feature pages of the same framework and go to notes only. The GraphiQL interface the install page recommends comes from a third-party package, so adminUi is left out. Only the current major version receives features, per the README's versioning section. The Packagist figure is the all-time total for nuwave/lighthouse, the package the install docs name. firstRelease is 2016 from v0.1.0 on Packagist, dated 2016-05-29, the same day the repository was created.

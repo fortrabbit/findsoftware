@@ -1,0 +1,108 @@
+id: lacinia
+name: Lacinia
+status: accepted
+checkedAt: 2026-11-16
+description: GraphQL execution engine for Clojure that runs queries against a schema written as EDN or GraphQL schema language.
+facts:
+  - field: repository
+    value: https://github.com/walmartlabs/lacinia
+    url: https://api.github.com/repos/walmartlabs/lacinia
+    checkedAt: 2026-11-16
+    via: api
+  - field: homepage
+    value: https://lacinia.readthedocs.io/en/latest/
+    url: https://lacinia.readthedocs.io/en/latest/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Lacinia - GraphQL for Clojure"
+  - field: docs
+    value: https://lacinia.readthedocs.io/en/latest/
+    url: https://lacinia.readthedocs.io/en/latest/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Lacinia - GraphQL for Clojure"
+  - field: maintainer
+    value: WalmartLabs
+    url: https://raw.githubusercontent.com/walmartlabs/lacinia/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright 2017 WalmartLabs"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/walmartlabs
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Clojure
+    url: https://api.github.com/repos/walmartlabs/lacinia
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [graphql-server]
+    url: https://raw.githubusercontent.com/walmartlabs/lacinia/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "it is a backend-agnostic GraphQL query execution engine"
+  - field: license
+    value: Apache-2.0
+    url: https://raw.githubusercontent.com/walmartlabs/lacinia/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Distributed under the Apache License, Version 2.0."
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/walmartlabs/lacinia/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Distributed under the Apache License, Version 2.0."
+  - field: runtime
+    value: [jvm]
+    url: https://lacinia.readthedocs.io/en/latest/
+    checkedAt: 2026-11-16
+    via: page
+    quote: Lacinia can be plugged into any Clojure HTTP pipeline.
+  - field: installMethod
+    value: Clojure CLI dependency on com.walmartlabs/lacinia in deps.edn
+    url: https://lacinia.readthedocs.io/en/latest/tutorial/create-project.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: add a dependency on the latest version of Lacinia
+  - field: clojarsName
+    value: com.walmartlabs/lacinia
+    url: https://clojars.org/api/artifacts/com.walmartlabs/lacinia
+    checkedAt: 2026-11-16
+    via: api
+  - field: clojarsDownloads
+    value: "1727993 (total)"
+    url: https://clojars.org/api/artifacts/com.walmartlabs/lacinia
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://api.github.com/repos/walmartlabs/lacinia/commits/v0.13.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://clojars.org/api/artifacts/com.walmartlabs/lacinia
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-06-02
+    url: https://api.github.com/repos/walmartlabs/lacinia/commits/1.3.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1863
+    url: https://api.github.com/repos/walmartlabs/lacinia
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 59
+    url: https://api.github.com/repos/walmartlabs/lacinia/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runtimeMin, headlessApi, runsAs, renderingModes, contentStore, databases, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, packagistName, dependentPackages, dependentRepos, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, lastCommitDate, latestPrereleaseDate]
+unreadable: []
+notes: >
+  Accepted: a GraphQL engine for Clojure that a site's own HTTP handler calls, which meets criterion 1 under the API-an-app-calls rule; the README says it can be plugged into any Clojure HTTP pipeline. The repository has no GitHub release objects, only tags; the highest stable tag is 1.3.0, whose commit is dated 2026-06-02 and is titled as the prep for that release, and Clojars lists 1.3.0 as its latest release, so currentMajor and latestReleaseDate follow the tag and the Clojars registry. The oldest tag v0.13.0 is dated 2017-03-15, the day the repository was created. The license is Apache-2.0 as the README states it and the LICENSE file says; the GitHub API reports the license as NOASSERTION, so the README and LICENSE are the sources, and Clojars lists the same Apache License, Version 2.0. The maintainer is the copyright holder in the LICENSE, WalmartLabs; no terms or imprint page was read for a legal name, so none is recorded. The language is Clojure; the docs say Lacinia targets Clojure 1.9 and the deps file at 1.3.0 pins Clojure 1.12.5, which is a language version, not a runtime. Runtime jvm follows from the language, cited at the docs sentence naming Clojure; no page states a minimum JVM or Clojure runtime requirement beyond the language version, so runtimeMin stays unknown. The README states the library needs a preparation step, clojure -X:deps prep, because it ships precompiled ANTLR parsers; that is a build step, not a route. The tutorial's Creating the Project page adds the Lacinia dependency to deps.edn, which is the installMethod. The README says a schema alone does not identify where data comes from, which is the job of a field resolver that might query a database or send a request to another web service, and shows a compiled schema executed inside a Ring handler function, and says the companion lacinia-pedestal library supplies HTTP support for Pedestal. The docs say the library uses clojure.spec and that Clojure 1.8 needs the clojure-future-spec dependency added. The README says the library has been in production at Walmart since 2017 and moved to 1.0 on 9 October 2021; these are project statements, not fields. The README names lacinia-pedestal, an HTTP companion for Pedestal, and duct-lacinia, an external library for Duct; both are companions, not alternatives, and neither has a record id. The README states Lacinia is not an Object Relational Mapper, so databases are not recorded. The docs title shows a version number on the page, which is not recorded. Stars and contributors are for the repository.

@@ -1,0 +1,128 @@
+id: localforage
+name: localForage
+status: accepted
+checkedAt: 2026-11-16
+description: JavaScript storage library with an asynchronous, localStorage-like API that stores values in IndexedDB, WebSQL or localStorage.
+facts:
+  - field: homepage
+    value: https://localforage.github.io/localForage
+    url: https://localforage.github.io/localForage
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/localForage/localForage
+    url: https://api.github.com/repos/localForage/localForage
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://localforage.github.io/localForage
+    url: https://raw.githubusercontent.com/localForage/localForage/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "localForage API documentation"
+  - field: firstRelease
+    value: 2014
+    url: https://api.github.com/repos/localForage/localForage/tags
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Mozilla
+    url: https://raw.githubusercontent.com/localForage/localForage/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2013-2016 [Mozilla](https://mozilla.org)"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/localForage
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [library]
+    url: https://raw.githubusercontent.com/localForage/localForage/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "localForage is a fast and simple storage library for JavaScript"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/localForage/localForage
+    checkedAt: 2026-11-16
+    via: api
+  - field: runsAs
+    value: [browser]
+    url: https://raw.githubusercontent.com/localForage/localForage/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "localForage is designed to run in the browser"
+  - field: installMethod
+    value: npm
+    url: https://raw.githubusercontent.com/localForage/localForage/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "or install with [npm](https://www.npmjs.com/)"
+  - field: installMethod
+    value: script tag
+    url: https://raw.githubusercontent.com/localForage/localForage/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "just drop a single JavaScript file into your page"
+  - field: installMethod
+    value: GitHub release download
+    url: https://raw.githubusercontent.com/localForage/localForage/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Download the [latest localForage from GitHub](https://github.com/localForage/localForage/releases/latest)"
+  - field: license
+    value: Apache-2.0
+    url: https://api.github.com/repos/localForage/localForage
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/localForage/localForage/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "it is distributed under an [Apache License](https://github.com/localForage/localForage/blob/master/LICENSE)"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/localForage/localForage/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2021-08-18
+    url: https://api.github.com/repos/localForage/localForage/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 25801
+    url: https://api.github.com/repos/localForage/localForage
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 94
+    url: https://api.github.com/repos/localForage/localForage/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: localforage
+    url: https://registry.npmjs.org/localforage/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "10921429 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/localforage
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 2798
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/localforage
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 87321
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/localforage
+    checkedAt: 2026-11-16
+    via: api
+notFound: [basedOn, alternativeTo, forkOf, successorOf, parent, hqCountry, pricingPage, paidEdition, runtime, runtimeMin, renderingModes, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, forum, discord, x, bluesky, mastodon, subreddit, newsletter, pluginDirectory, pluginCount, packagistName, pypiDownloads, endoflifeId, wikidata, reportedInstalls, usageShare, lastCommitDate]
+unreadable: []
+notes: >
+  The package.json author and the README copyright line both name Mozilla, so Mozilla is recorded as the maintainer; the Apache LICENSE file carries no copyright line of its own, and the repository owner is the localForage organization. The README lists framework storage drivers (AngularJS, Angular, Backbone, Ember, Vue, NuxtJS) and custom drivers on the wiki; these are third-party projects and are not recorded. The README says localForage uses localStorage in browsers without IndexedDB or WebSQL support, and that the storage backends are IndexedDB or WebSQL, so the backends are client storage and not the databases field. The README says the API is asynchronous, so reads and writes return promises or take callbacks, and that localStorage limits make many large Blobs impossible on that backend. The Chinese documentation at localforage.docschina.org is a translation by a third party and is not recorded. The newest stable release is 1.10.0 from 2021-08-18, the same as the npm latest; the last commit on the default branch was 2024-07-30, so the import judges listing by the release date. The GitHub API reports Apache-2.0 for the repository and the README states the Apache License, so the two agree and are recorded as two statements of one license. The homepage is the project's GitHub Pages API documentation; its visible text is a shell that loads api.md, and its description sits in a meta tag, so the homepage fact carries no quote.

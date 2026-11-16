@@ -1,0 +1,135 @@
+id: knex
+name: Knex.js
+status: accepted
+checkedAt: 2026-11-16
+description: SQL query builder for JavaScript that runs on Node.js and builds queries for several SQL databases.
+facts:
+  - field: homepage
+    value: https://knexjs.org/
+    url: https://knexjs.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"batteries included" SQL query builder'
+  - field: repository
+    value: https://github.com/knex/knex
+    url: https://api.github.com/repos/knex/knex
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://knexjs.org/guide/
+    url: https://knexjs.org/guide/
+    checkedAt: 2026-11-16
+    via: page
+    quote: The primary target environment for Knex is Node.js
+  - field: maintainer
+    value: Tim Griesser
+    url: https://github.com/knex/knex/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: Copyright (c) 2013-present Tim Griesser
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/knex
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://registry.npmjs.org/knex
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [query-builder]
+    url: https://knexjs.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: SQL query builder
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/knex/knex
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://github.com/knex/knex/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: Node.js versions 16+ are supported.
+  - field: runtimeMin
+    value: "16"
+    url: https://github.com/knex/knex/blob/3.3.0/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"node": ">=16"'
+  - field: databases
+    value: [postgres, mariadb, mysql, sqlserver, sqlite, oracle]
+    url: https://github.com/knex/knex/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: A batteries-included, multi-dialect (PostgreSQL, MariaDB, MySQL, CockroachDB, MSSQL, SQLite3, Oracle (including Oracle Wallet Authentication)) query builder for
+  - field: installMethod
+    value: npm install knex --save
+    url: https://knexjs.org/guide/
+    checkedAt: 2026-11-16
+    via: page
+    quote: npm install knex --save
+  - field: pluginDirectory
+    value: https://github.com/knex/knex/blob/master/ECOSYSTEM.md
+    url: https://github.com/knex/knex/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: Browse the list of plugins and tools built for knex
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/knex/knex
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/knex/knex/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: Permission is hereby granted, free of charge, to any person
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/knex/knex/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-06-26
+    url: https://api.github.com/repos/knex/knex/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 20337
+    url: https://api.github.com/repos/knex/knex
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 432
+    url: https://api.github.com/repos/knex/knex/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: knex
+    url: https://registry.npmjs.org/knex
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "6786967 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/knex
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 3407
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/knex
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 94868
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/knex
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, headlessApi, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, contentStore, paidEdition, pricingPage, discord, x, forum, newsletter, hostedOffering, pluginCount, wikidata]
+unreadable: []
+notes: >
+  The npm and GitHub figures are for the query builder package knex/knex, one package in one repository. Knex's own docs also list CockroachDB and Amazon Redshift as dialects (the homepage and the installation page); neither is in the databases vocabulary, so they are not recorded as values. The installation page says Knex runs in Node.js and can be built for the browser with a bundler, limited to WebSQL, and that browser builds are for learning and discouraged for queries that run on the server; no runsAs statement is recorded because the page does not say the library runs as a process. The README's Python 3 with setuptools is a build requirement for native database drivers in a local checkout, so it is not a runtime. The README names the Gitter channel as the support chat and a personal Twitter handle of a maintainer; neither is recorded as a project account. Objection.js, MikroORM and Bookshelf are named in the README as ORMs built on knex, a relationship the project states as "knex-based"; they are not alternatives and are not recorded. The lowest runtime is the Node.js version the README names (16+), matching the engines field at tag 3.3.0. The GitHub stargazer and contributor counts belong to this repository. The repository's first GitHub release is not the first upload: the npm package 0.0.0 dates from 2013-05-01, which sets firstRelease.
