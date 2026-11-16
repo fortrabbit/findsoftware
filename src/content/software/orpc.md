@@ -4,7 +4,7 @@ name: oRPC
 urls:
   home: https://orpc.dev
   repository: https://github.com/middleapi/orpc
-  docs: https://orpc.dev/docs/getting-started
+  docs: https://v1.orpc.dev/docs/getting-started
 category:
   - framework
 description: TypeScript framework for building end-to-end typesafe APIs, served over an RPC protocol and as REST endpoints with an OpenAPI document.
@@ -20,6 +20,7 @@ hosting:
   - node
   - bun
   - deno
+runtimeMin: node 18
 installMethod: npm
 licenseModel: open-source
 license: MIT
@@ -29,7 +30,10 @@ githubStargazers: 5768
 npmWeeklyDownloads: 3035088
 contributors: 70
 social:
+  x: https://x.com/middleapi
+  bluesky: https://bsky.app/profile/middleapi.com
   discord: https://discord.gg/TXEbwRBvQn
+  forum: https://github.com/middleapi/orpc/discussions
 addedAt: 2026-11-16
 checkedAt: 2026-11-16
 sources:
@@ -40,7 +44,7 @@ sources:
     url: https://api.github.com/repos/middleapi/orpc
     checkedAt: 2026-11-16
   - field: urls
-    url: https://orpc.dev/docs/getting-started
+    url: https://v1.orpc.dev/docs/getting-started
     checkedAt: 2026-11-16
   - field: maintainer
     url: https://raw.githubusercontent.com/middleapi/orpc/main/LICENSE
@@ -54,8 +58,11 @@ sources:
   - field: runtime
     url: https://raw.githubusercontent.com/middleapi/orpc/main/README.md
     checkedAt: 2026-11-16
+  - field: runtimeMin
+    url: https://v1.orpc.dev/docs/getting-started
+    checkedAt: 2026-11-16
   - field: installMethod
-    url: https://orpc.dev/docs/getting-started
+    url: https://v1.orpc.dev/docs/getting-started
     checkedAt: 2026-11-16
   - field: license
     url: https://api.github.com/repos/middleapi/orpc
@@ -85,8 +92,8 @@ ai: authored
 packagistDownloads: null
 ---
 
-oRPC is a TypeScript framework for building typesafe APIs, served over an RPC protocol and also as REST endpoints with an OpenAPI document. The install guide adds its server and client packages next to a schema library, Zod in the getting-started example, so the same procedures are called from a typed client without generated code.
+oRPC is a TypeScript framework for building typesafe APIs, served over an RPC protocol and also as REST endpoints with an OpenAPI document. Procedures are written as plain TypeScript functions on the server, and a typed client calls them without code generation. The project's [comparison table](https://v1.orpc.dev/docs/comparison) sets it against tRPC, ts-rest and Hono.
 
 ## Worth knowing
 
-The docs describe the next major line as in beta, and the install commands name its beta tag, so the documented commands install a prerelease rather than the latest stable release.
+The main docs at orpc.dev describe the next major line, which is in beta, and their install commands name its beta tag. The docs for the current stable line sit at a separate V1 address.

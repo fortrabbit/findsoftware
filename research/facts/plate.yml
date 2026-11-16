@@ -1,0 +1,124 @@
+id: plate
+name: Plate
+status: accepted
+checkedAt: 2026-11-16
+description: React framework for building rich-text editors, with a headless editor runtime, composable plugins and optional Plate UI components.
+facts:
+  - field: homepage
+    value: https://platejs.org
+    url: https://api.github.com/repos/udecode/plate
+    checkedAt: 2026-11-16
+    via: api
+  - field: repository
+    value: https://github.com/udecode/plate
+    url: https://api.github.com/repos/udecode/plate
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://platejs.org/docs
+    url: https://platejs.org/docs
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Plate is a React framework for building rich-text editors"
+  - field: firstRelease
+    value: 2020
+    url: https://registry.npmjs.org/@udecode/slate-plugins
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Ziad Beyens, Dylan Schiemann, Joe Anderson, Felix Feng
+    url: https://github.com/udecode/plate/blob/next/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) Ziad Beyens, Dylan Schiemann, Joe Anderson, Felix Feng"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/udecode/plate
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [editor, rich-text]
+    url: https://platejs.org/docs
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Plate is a React framework for building rich-text editors"
+  - field: basedOn
+    value: react
+    url: https://platejs.org/docs
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Plate is a React framework for building rich-text editors"
+  - field: importsFrom
+    value: slate
+    url: https://platejs.org/docs/migration/slate-to-plate
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Move a Slate React editor to Plate's editor, plugin, and rendering model"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/udecode/plate
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://platejs.org/docs/installation/node
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Use Plate in Node.js when you need to read, validate, transform, or serialize editor values outside the browser"
+  - field: license
+    value: MIT
+    url: https://github.com/udecode/plate/blob/next/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: installMethod
+    value: [npm]
+    url: https://platejs.org/docs/installation/node
+    checkedAt: 2026-11-16
+    via: page
+    quote: "pnpm add platejs"
+  - field: installMethod
+    value: [shadcn-cli]
+    url: https://platejs.org/docs/installation/plate-ui
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Use the shadcn CLI for the fastest setup"
+  - field: currentMajor
+    value: 53
+    url: https://registry.npmjs.org/platejs/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-30
+    url: https://registry.npmjs.org/platejs
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 16708
+    url: https://api.github.com/repos/udecode/plate
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 235
+    url: https://api.github.com/repos/udecode/plate/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: platejs
+    url: https://registry.npmjs.org/platejs/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "787596 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/platejs
+    checkedAt: 2026-11-16
+    via: api
+  - field: discord
+    value: https://discord.gg/mAZRuBzGM3
+    url: https://github.com/udecode/plate/blob/next/README.md
+    checkedAt: 2026-11-16
+    via: page
+notFound: [templating, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, alternativeTo, renderingModes, runsAs, runtimeMin, hqCountry, pricingPage, paidEdition, forum, x, bluesky, mastodon, newsletter, pluginDirectory, subreddit, wikidata, endoflifeId, packagistName, reportedInstalls, usageShare]
+unreadable: []
+notes: >
+  The GitHub license field reads NOASSERTION because packages carry their own LICENSE files; the root LICENSE says its MIT terms apply "unless otherwise specified in a LICENSE file within an individual package directory". The root LICENSE is recorded; the package-level files were not read. The maintainer is the four names on the root LICENSE copyright line; the GitHub owner is the organization udecode. The docs introduction's "Plate is a React framework for building rich-text editors" is the only statement of the parent, so basedOn react rests on it; no sentence on the pages read says Plate is built on or extends Slate, so no basedOn slate. The Slate to Plate migration guide says Plate keeps Slate's document model and the API reference calls @platejs/slate "Plate's framework-free Slate layer"; the guide is recorded as importsFrom slate. The docs call the core "a headless editor runtime", which the description follows. The platejs package is the install target the docs name; @udecode/plate is marked deprecated on npm ("Package no longer supported, use platejs instead.") and is not the figure. The first npm upload under the earlier name @udecode/slate-plugins (0.58.14, 2020-06-01) lists the udecode/slate-plugins repository, which now redirects to udecode/plate; firstRelease 2020 follows that rename. The repository was created on 2019-12-02 and its tags were not checked back to that date, so the reviewer should decide whether an earlier tag counts. The Node.js guide says Plate can be used in Node for reading, validating, transforming and serializing editor values, and it names the browser as well, so no runsAs is recorded. latestReleaseDate is platejs 53.5.2 (2026-10-30), the npm latest; the GitHub tags v53.x are a monorepo release train (v53.5.6 on 2026-11-11 names @platejs packages). The Pro site sells Plate Plus, premium components and an AI editor template delivered as source code in a GitHub repository, as a one-time license per developer or per team; it is a separate add-on product, so no paidEdition and no pricingPage. The README lists a Notion-like template that links to the Pro site; it is not recorded as a license of the open product. The homepage links the maintainer's personal X account as an author credit, not a project account. The GitHub figures (stars, contributors) belong to the udecode/plate monorepo, not to platejs alone. The CSV row's lastRelease (2026-10-18) is older than the newest npm release.

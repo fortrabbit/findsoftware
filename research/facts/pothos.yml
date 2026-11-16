@@ -1,0 +1,129 @@
+id: pothos
+name: Pothos
+status: accepted
+checkedAt: 2026-11-16
+description: GraphQL schema builder for TypeScript that defines schemas in code and extends through a plugin system.
+facts:
+  - field: repository
+    value: https://github.com/hayes/pothos
+    url: https://api.github.com/repos/hayes/pothos
+    checkedAt: 2026-11-16
+    via: api
+  - field: homepage
+    value: https://pothos-graphql.dev/
+    url: https://pothos-graphql.dev/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Pothos is a GraphQL schema builder for TypeScript"
+  - field: docs
+    value: https://pothos-graphql.dev/docs
+    url: https://pothos-graphql.dev/docs
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Install Pothos, build a schema, and run your first GraphQL query."
+  - field: pluginDirectory
+    value: https://pothos-graphql.dev/docs/plugins
+    url: https://pothos-graphql.dev/docs/plugins
+    checkedAt: 2026-11-16
+    via: page
+    quote: "19 plugins for your data layer, auth, tracing, and common schema patterns"
+  - field: pluginCount
+    value: 19
+    url: https://pothos-graphql.dev/docs/plugins
+    checkedAt: 2026-11-16
+    via: page
+    quote: "19 plugins for your data layer, auth, tracing, and common schema patterns"
+  - field: firstRelease
+    value: 2022
+    url: https://registry.npmjs.org/@pothos/core
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Michael Hayes
+    url: https://github.com/hayes/pothos/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright 2021 Michael Hayes"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/hayes
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [graphql-schema]
+    url: https://github.com/hayes/pothos/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Pothos is a plugin based GraphQL schema builder for typescript"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/hayes/pothos
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: node
+    url: https://pothos-graphql.dev/docs
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Start in an empty directory with Node.js and npm installed"
+  - field: installMethod
+    value: npm
+    url: https://pothos-graphql.dev/docs
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install @pothos/core graphql graphql-yoga"
+  - field: license
+    value: ISC
+    url: https://api.github.com/repos/hayes/pothos
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/hayes/pothos/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted"
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/hayes/pothos/releases?per_page=100
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-10
+    url: https://registry.npmjs.org/@pothos%2fcore
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: "@pothos/core"
+    url: https://registry.npmjs.org/@pothos/core/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "653710 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@pothos/core
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2627
+    url: https://api.github.com/repos/hayes/pothos
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 130
+    url: https://api.github.com/repos/hayes/pothos/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 77
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40pothos%2Fcore
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 316
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40pothos%2Fcore
+    checkedAt: 2026-11-16
+    via: api
+notFound: [basedOn, alternativeTo, forkOf, successorOf, parent, hqCountry, pricingPage, paidEdition, runtimeMin, runsAs, renderingModes, databases, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, importsFrom, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, dockerPulls, usageShare, reportedInstalls, pypiDownloads, packagistName, rubygemsName, endoflifeId, selfHostOption]
+unreadable: []
+notes: >
+  Monorepo: the repository holds the core package and its plugins, so the stars and the contributor count belong to the monorepo, not to @pothos/core alone; the registry figures are for @pothos/core, the package the install docs name. The docs install route names graphql as a peer dependency and graphql-yoga as the server; graphql is the only dependency of the core, which is a dependency statement and not a basedOn statement. The migration guide at https://pothos-graphql.dev/docs/migrations/giraphql-pothos says "As of 3.0 GiraphQL has been renamed to Pothos." and calls v3.0.0 the initial version of Pothos, so the record follows Pothos from its first @pothos/core upload of 2022-01-25 (3.0.0, npm time); the GiraphQL packages of the same repository, which start in 2021, are not counted. No GiraphQL record exists, so the rename stays in notes and successorOf is not set. The highest stable @pothos/core release is 4.17.0, published 2026-11-10 (npm time), so currentMajor is 4. The docs page lists npm, pnpm, yarn and bun as tabs of one install route, recorded as npm only. The plugin catalog on the plugins page states 19 plugins, and the homepage calls Pothos a schema builder for TypeScript. The docs quickstart states Node.js and npm as the setup, which is the only runtime sentence, so runtime is node. The docs quickstart states that toSchema() builds a graphql-js GraphQLSchema usable with Yoga or another server, and its example serves it with Yoga on a Node http server. The resources page lists a community Nexus to Pothos codemod by a third party, which is no migration guide of the project and not recorded as importsFrom. The README links no social or forum channels, and its sponsor list is not recorded.

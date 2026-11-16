@@ -1,0 +1,1 @@
+Pug is a template engine for Node.js and browsers, written in JavaScript, with a whitespace-sensitive syntax for writing HTML. It is installed from npm, and the browser build is offered as a standalone download. The project was formerly known as Jade, and its README names Haml as an influence on the syntax. Pug integrates with Express as a supported view engine.

@@ -1,0 +1,121 @@
+id: preact-signals
+name: Preact Signals
+status: accepted
+checkedAt: 2026-11-16
+description: State management library whose signals update the components and effects that read them, with Preact and React integrations.
+facts:
+  - field: homepage
+    value: "https://preactjs.com/guide/v11/signals/"
+    url: "https://preactjs.com/guide/v11/signals/"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Signals are reactive primitives for managing application state."
+  - field: repository
+    value: "https://github.com/preactjs/signals"
+    url: "https://api.github.com/repos/preactjs/signals"
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: "https://preactjs.com/guide/v11/signals/"
+    url: "https://preactjs.com/guide/v11/signals/"
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: "Preact Team"
+    url: "https://github.com/preactjs/signals/blob/main/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2022-present Preact Team"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/preactjs"
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2022
+    url: "https://registry.npmjs.org/@preact/signals"
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [state]
+    url: "https://github.com/preactjs/signals/blob/main/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Signals is a performant state management library"
+  - field: language
+    value: TypeScript
+    url: "https://api.github.com/repos/preactjs/signals"
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: npm
+    url: "https://preactjs.com/guide/v11/signals/"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Signals can be installed by adding the @preact/signals package to your project"
+  - field: license
+    value: MIT
+    url: "https://github.com/preactjs/signals/blob/main/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: "https://github.com/preactjs/signals/blob/main/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: "2"
+    url: "https://github.com/preactjs/signals/releases/tag/@preact/signals@2.11.4"
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-27
+    url: "https://github.com/preactjs/signals/releases/tag/@preact/signals@2.11.4"
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: "@preact/signals"
+    url: "https://registry.npmjs.org/@preact/signals/latest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "4412162 (2026-11-01 to 2026-11-07)"
+    url: "https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@preact/signals"
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 4505
+    url: "https://api.github.com/repos/preactjs/signals"
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 53
+    url: "https://api.github.com/repos/preactjs/signals/contributors?per_page=1"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 61
+    url: "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@preact%2Fsignals"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 480
+    url: "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@preact%2Fsignals"
+    checkedAt: 2026-11-16
+    via: api
+  - field: x
+    value: "https://twitter.com/preactjs"
+    url: "https://preactjs.com/guide/v11/signals/"
+    checkedAt: 2026-11-16
+    via: page
+  - field: bluesky
+    value: "https://bsky.app/profile/preactjs.com"
+    url: "https://preactjs.com/guide/v11/signals/"
+    checkedAt: 2026-11-16
+    via: page
+notFound: [pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, basedOn, runtime, runtimeMin, runsAs, adminUi, contentStore, databases, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, pluginDirectory, pluginCount, discord, subreddit, mastodon, newsletter, forum, wikidata, endoflifeId, selfHostOption, reportedInstalls, usageShare, regions, apiLimits, packagistName, pypiName, rubygemsName, latestPrereleaseDate, hostedOffering]
+unreadable: []
+notes: >
+  The GitHub repository is a monorepo: its stars and contributors belong to all of its packages, and the npm figure is for @preact/signals, the Preact integration that the guide's installation section names; it re-exports the core library. The root README calls the project "a performant state management library" that should "Integrate into frameworks as if they were native built-in primitives", and the guide says its utilities "are framework-agnostic tools from the Signals library" that "work great with Preact" but "are not Preact-specific". The root README says "Signals can be accessed directly and your component will automatically re-render when the signal's value changes", which the prose paraphrases. The core package is framework-agnostic and the Preact and React packages are its bindings, so no basedOn is recorded: the bindings are @preact/signals for Preact and @preact/signals-react for React, both in the same repository. The homepage is the Signals guide on the Preact site; the announcement post at preactjs.com/blog/introducing-signals (dated 2022) is the other page the README names. The v10 guide, which is a previous major of the Preact documentation, carries the same installation sentence. The release list is one list for every package in the monorepo; the highest stable release of @preact/signals is 2.11.4 on 2026-10-27, and the latest release of the React package is 3.12.0 on 2026-08-04, which is not used for the record's version. The repository's default branch is main and its LICENSE names "Preact Team" as copyright holder; the Preact organization's own site is the source for the x and bluesky links. The guide does not state a runtime or a process model, so runtime, runsAs and hosting stay empty.

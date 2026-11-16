@@ -1,0 +1,3 @@
+ProseKit is a rich text editor framework built on ProseMirror, the editing core it is based on. It is headless by design, so the application controls the look of the editor, and it ships Tailwind copy-paste components for an editor that is ready to use. The core has adapters for React, Vue, Preact, Svelte, Solid and vanilla JavaScript, and collaborative editing works with Yjs or Loro.
+
+The [server-side rendering guide](https://prosekit.dev/guides/server-side-rendering/) says the editor can run in Node.js, where DOM-dependent APIs need a DOM implementation. The [migration guide](https://prosekit.dev/guides/migration/) maps Tiptap patterns to ProseKit equivalents.

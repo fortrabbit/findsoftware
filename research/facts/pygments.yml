@@ -1,0 +1,118 @@
+id: pygments
+name: Pygments
+status: accepted
+checkedAt: 2026-11-16
+description: Python syntax highlighter for source code, usable as a library and as a command-line tool, with HTML among its output formats.
+facts:
+  - field: homepage
+    value: https://pygments.org/
+    url: https://pygments.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'It is a generic syntax highlighter suitable for'
+  - field: repository
+    value: https://github.com/pygments/pygments
+    url: https://api.github.com/repos/pygments/pygments
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://pygments.org/docs/
+    url: https://pygments.org/docs/
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: Georg Brandl
+    url: https://github.com/pygments/pygments/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'Pygments is maintained by Georg Brandl'
+  - field: maintainerType
+    value: individual
+    url: https://github.com/pygments/pygments/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'Pygments is maintained by Georg Brandl'
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/pygments
+    checkedAt: 2026-11-16
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/pygments/pygments
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2006
+    url: https://pypi.org/pypi/pygments/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [syntax-highlight]
+    url: https://github.com/pygments/pygments/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'generic syntax highlighter written in Python'
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/pygments/pygments
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/pygments/pygments/blob/2.21.0/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">=3.9"'
+  - field: runtimeMin
+    value: '3.9'
+    url: https://github.com/pygments/pygments/blob/2.21.0/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">=3.9"'
+  - field: installMethod
+    value: pip
+    url: https://pygments.org/
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'pip install Pygments'
+  - field: license
+    value: BSD-2-Clause
+    url: https://github.com/pygments/pygments/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'The code is distributed under the BSD 2-clause license'
+  - field: pypiName
+    value: pygments
+    url: https://pypi.org/pypi/pygments/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: '1142662166 (last month)'
+    url: https://pypistats.org/api/packages/pygments/recent
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/pygments/pygments/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-17
+    url: https://api.github.com/repos/pygments/pygments/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2223
+    url: https://api.github.com/repos/pygments/pygments
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 387
+    url: https://api.github.com/repos/pygments/pygments/contributors
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, forkOf, successorOf, alternativeTo, adminUi, headlessApi, renderingModes, runsAs, sso, databases, endoflifeId, packagistName, npmName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, latestPrereleaseDate, paidEdition, pricingPage, importsFrom, templating, i18n, multisite, livePreview, userRoles, contentStore, hostedOffering]
+unreadable: []
+notes: >
+  Accepted under criterion 1: the README says the code is "for use in code hosting, forums, wikis or other applications that need to prettify source code", and its security section describes "a web service which uses Pygments for highlighting". The homepage lists output formats HTML, RTF, LaTeX and ANSI sequences, and says it is usable as a command-line tool and as a library; those are notes, not fields. The CSV homepage was http://pygments.org/; plain http answers 301 to https, so the https address is recorded. The maintainer line in the README names Georg Brandl, Matthäus Chajdas and Jean Abou-Samra as maintainers, and the pyproject lists the same three; the record names the first, and the other two are kept here only, with no e-mail address. The LICENSE copyright line reads "by the respective authors (see AUTHORS file)" and names no maintainer, so the maintainer comes from the README. The LICENSE file's copyright year range ends in 2022 while the homepage footer reads "2006-present"; both are the project's own words and the license entry is not affected. The README states the license as BSD 2-clause, and the LICENSE text is BSD 2-clause; GitHub detects it as BSD-2-Clause. The README gives a figure of over 500 languages and the homepage a figure of 602; neither is recorded, since the count changes. The first PyPI upload is version 0.5 on 2006-10-30, older than every GitHub release (the oldest is 2.3.0, 2019), so firstRelease is from PyPI. The pypistats figure is the last-month count, a rolling window. The contributors count is across all pages of the contributors endpoint with per_page=1, last page 387. The README's security section says Pygments provides no guarantee on execution time for arbitrary input, and recommends terminating each run after a short timeout and limiting concurrent processes.

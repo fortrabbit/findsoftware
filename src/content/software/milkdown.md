@@ -13,6 +13,8 @@ maintainer: Mirone
 maintainerType: individual
 firstRelease: 2021
 language: javascript
+basedOn:
+  - prosemirror
 runsAs:
   - browser
 installMethod: npm
@@ -84,6 +86,9 @@ sources:
     checkedAt: 2026-11-16
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40milkdown%2Fcore
+    checkedAt: 2026-11-16
+  - field: basedOn
+    url: https://github.com/Milkdown/milkdown/blob/main/README.md
     checkedAt: 2026-11-16
 ai: authored
 contentStore: null

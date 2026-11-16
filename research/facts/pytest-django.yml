@@ -1,0 +1,124 @@
+id: pytest-django
+name: pytest-django
+status: accepted
+checkedAt: 2026-11-16
+description: pytest plugin that provides tools for testing Django projects and applications.
+facts:
+  - field: homepage
+    value: https://pytest-django.readthedocs.io/en/latest/
+    url: https://pytest-django.readthedocs.io/en/latest/
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'pytest-django is a plugin for pytest that provides a set of useful tools'
+  - field: repository
+    value: https://github.com/pytest-dev/pytest-django
+    url: https://api.github.com/repos/pytest-dev/pytest-django
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://pytest-django.readthedocs.io/en/latest/
+    url: https://pytest-django.readthedocs.io/en/latest/
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: Andreas Pelme
+    url: https://github.com/pytest-dev/pytest-django/blob/v4.14.0/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'name = "Andreas Pelme"'
+  - field: maintainerType
+    value: individual
+    url: https://github.com/pytest-dev/pytest-django/blob/v4.14.0/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'name = "Andreas Pelme"'
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/pytest-dev
+    checkedAt: 2026-11-16
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/pytest-dev/pytest-django
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2012
+    url: https://pypi.org/pypi/pytest-django/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [test-runner]
+    url: https://github.com/pytest-dev/pytest-django/blob/v4.14.0/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'description = "A Django plugin for pytest."'
+  - field: basedOn
+    value: [pytest]
+    url: https://pytest-django.readthedocs.io/en/latest/
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'pytest-django is a plugin for pytest that provides a set of useful tools'
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/pytest-dev/pytest-django
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/pytest-dev/pytest-django/blob/v4.14.0/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">=3.10"'
+  - field: runtimeMin
+    value: '3.10'
+    url: https://github.com/pytest-dev/pytest-django/blob/v4.14.0/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">=3.10"'
+  - field: installMethod
+    value: pip
+    url: https://github.com/pytest-dev/pytest-django/blob/main/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'pip install pytest-django'
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/pytest-dev/pytest-django/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'pytest-django is released under the BSD (3-clause) license'
+  - field: pypiName
+    value: pytest-django
+    url: https://pypi.org/pypi/pytest-django/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: '25499509 (last month)'
+    url: https://pypistats.org/api/packages/pytest-django/recent
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/pytest-dev/pytest-django/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-10
+    url: https://api.github.com/repos/pytest-dev/pytest-django/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1549
+    url: https://api.github.com/repos/pytest-dev/pytest-django
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 152
+    url: https://api.github.com/repos/pytest-dev/pytest-django/contributors
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, forkOf, successorOf, alternativeTo, adminUi, headlessApi, renderingModes, runsAs, sso, databases, endoflifeId, packagistName, npmName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, latestPrereleaseDate, paidEdition, pricingPage, importsFrom, templating, i18n, multisite, livePreview, userRoles, contentStore, hostedOffering]
+unreadable: []
+notes: >
+  Accepted as a pytest plugin under criterion 1: the docs say it "provides a set of useful tools for testing Django applications and projects", and the test suite of a Django project runs through it. basedOn is pytest only, from the docs sentence that calls it "a plugin for pytest". Django is what it tests and its repository description reads "A Django plugin for pytest."; the project never says it extends Django, so basedOn django is not recorded. The LICENSE file carries two BSD notices: "pytest-django authors (see AUTHORS file)" for 2015-2018, and a second notice saying "This version of pytest-django is a fork of pytest_django created by Ben Firshman" with Ben Firshman's 2009 copyright. The fork origin has no record, so forkOf is not recorded. Both notices are BSD and form one license entry. GitHub reports the license as NOASSERTION because the LICENSE file is a plain sentence and not an SPDX text. The maintainer is named in pyproject.toml as Andreas Pelme, the project's own statement; the LICENSE holder is the authors list. The first release year comes from PyPI (1.0.0 uploaded 2012-04-30); the GitHub tag 1.0.0 is dated 2012-03-27 by its commit, so both give 2012. The repository was created in 2011, which is not a release date. The README's compatibility list names Django 5.2 and 6.1, CPython 3.10 or later, PyPy 3 and pytest 7.0 or later; these are compatibility statements in the project's words and are not recorded as fields. The pypistats figure is the last-month count, a rolling window. Contributors are counted across all pages of the contributors endpoint with per_page=1, last page 152. The README's section on why to use it over manage.py test lists pytest fixtures for test dependencies, less boilerplate because tests are plain functions, database re-use between runs, multiple processes through the pytest-xdist plugin, other pytest plugins, and unittest-style TestCase classes that keep working. The README's compatibility section says that for older Django and pytest versions one should use previous pytest-django releases.

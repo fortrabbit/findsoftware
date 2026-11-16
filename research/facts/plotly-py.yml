@@ -1,0 +1,136 @@
+id: plotly-py
+name: Plotly.py
+status: accepted
+checkedAt: 2026-11-16
+description: Interactive, open-source Python graphing library whose charts can be saved as standalone HTML files.
+facts:
+  - field: homepage
+    value: https://plotly.com/python/
+    url: https://plotly.com/python/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Plotly.py is free and open source"
+  - field: docs
+    value: https://plotly.com/python/
+    url: https://github.com/plotly/plotly.py/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: forum
+    value: https://community.plotly.com
+    url: https://github.com/plotly/plotly.py/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/plotly/plotly.py
+    url: https://api.github.com/repos/plotly/plotly.py
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Plotly Technologies Inc.
+    url: https://github.com/plotly/plotly.py/blob/main/LICENSE.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2016-2026 Plotly Technologies Inc."
+  - field: maintainerType
+    value: company
+    url: https://github.com/plotly/plotly.py/blob/main/LICENSE.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2016-2026 Plotly Technologies Inc."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/plotly
+    checkedAt: 2026-11-16
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/plotly/plotly.py
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: https://pypi.org/pypi/plotly/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [charts]
+    url: https://github.com/plotly/plotly.py/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "is an interactive, open-source, and browser-based graphing library for Python"
+  - field: basedOn
+    value: plotly-js
+    url: https://github.com/plotly/plotly.py/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Built on top of plotly.js, `plotly.py` is a high-level, declarative charting library."
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/plotly/plotly.py
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/plotly/plotly.py/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "browser-based graphing library for Python"
+  - field: runtimeMin
+    value: "3.8"
+    url: https://github.com/plotly/plotly.py/blob/v7.1.0/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">=3.8"'
+  - field: installMethod
+    value: pip
+    url: https://github.com/plotly/plotly.py/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "pip install plotly"
+  - field: installMethod
+    value: conda
+    url: https://github.com/plotly/plotly.py/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "conda install -c conda-forge plotly"
+  - field: license
+    value: MIT
+    url: https://github.com/plotly/plotly.py/blob/main/LICENSE.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: pypiName
+    value: plotly
+    url: https://pypi.org/pypi/plotly/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: "57824650 (last month)"
+    url: https://pypistats.org/api/packages/plotly/recent
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 7
+    url: https://api.github.com/repos/plotly/plotly.py/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-15
+    url: https://api.github.com/repos/plotly/plotly.py/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 18907
+    url: https://api.github.com/repos/plotly/plotly.py
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 316
+    url: https://api.github.com/repos/plotly/plotly.py/contributors
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, forkOf, successorOf, alternativeTo, adminUi, headlessApi, renderingModes, runsAs, sso, databases, endoflifeId, packagistName, npmName, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, latestPrereleaseDate, paidEdition, pricingPage, importsFrom, templating, i18n, multisite, livePreview, userRoles, contentStore, hostedOffering]
+unreadable: []
+notes: >
+  Boundary ruling for this wave: plotly.py is accepted because its own pages say the output is an HTML file that opens in a web browser ("Any figure can be saved as an HTML file using the write_html method", plotly.com/python/interactive-html-export/) and can be inserted into HTML templates. The README also says graphs can be viewed in Jupyter notebooks and marimo; those are notes only. The HTML output is stated on the export page: "Plotly allows you to save interactive HTML versions of your figures to your local disk." (plotly.com/python/interactive-html-export/). The PyPI package is plotly; the README names it in pip install plotly. The PyPI first upload is version 0.2 on 2013-06-12, and the oldest GitHub tag is 0.5.7 on 2013-12-25, so firstRelease is 2013 on both counts. The runtimeMin comes from the pyproject.toml at the v7.1.0 tag, the latest GitHub release. The pypistats figure is the last month, a rolling window with no fixed dates. The LICENSE.txt line is the maintainer; the README's copyright footer on the Plotly homepage reads "Copyright 2026 Plotly. All rights reserved." and is not used. The README states that plotly.py is built on top of plotly.js and the plotly-js record carries that charting engine. The README labels the Plotly community forum (community.plotly.com) as the user forum and the community forum, so it is recorded as the forum. The homepage at plotly.com/python/ lists Plotly Studio and Plotly Cloud, which are hosted products and not recorded. The adoption figure for the homepage is not recorded beyond the pypistats figure.
+  The export page says a self-contained HTML file inlines a copy of plotly.js, which makes the file large (5Mb+), and that the export options control its size. The export page names the to_html method for returning the HTML as a string. The README says the figures can also be viewed in Jupyter notebooks and marimo. The README says static image export uses the kaleido package, which requires Chrome or Chromium, and that Jupyter widget use needs the jupyter and anywidget packages; both are separate pip installs and not recorded as routes. The README says the Plotly graphs can also be integrated into Dash applications.

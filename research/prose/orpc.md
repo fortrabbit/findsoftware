@@ -1,5 +1,5 @@
-oRPC is a TypeScript framework for building typesafe APIs, served over an RPC protocol and also as REST endpoints with an OpenAPI document. The install guide adds its server and client packages next to a schema library, Zod in the getting-started example, so the same procedures are called from a typed client without generated code.
+oRPC is a TypeScript framework for building typesafe APIs, served over an RPC protocol and also as REST endpoints with an OpenAPI document. Procedures are written as plain TypeScript functions on the server, and a typed client calls them without code generation. The project's [comparison table](https://v1.orpc.dev/docs/comparison) sets it against tRPC, ts-rest and Hono.
 
 ## Worth knowing
 
-The docs describe the next major line as in beta, and the install commands name its beta tag, so the documented commands install a prerelease rather than the latest stable release.
+The main docs at orpc.dev describe the next major line, which is in beta, and their install commands name its beta tag. The docs for the current stable line sit at a separate V1 address.

@@ -1,0 +1,1 @@
+pulldown-cmark is a Rust crate that parses CommonMark Markdown as a pull parser: the caller iterates over a stream of events, and the crate includes an HTML renderer for those events. Optional extensions cover footnotes, GitHub flavored tables and task lists, strikethrough, and highlighted text. A command-line tool for rendering to HTML comes with it.

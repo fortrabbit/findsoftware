@@ -1,0 +1,129 @@
+id: pyecharts
+name: pyecharts
+status: accepted
+checkedAt: 2026-11-16
+description: Python library that generates Apache ECharts charts, written to local HTML files and embeddable in Flask and Django pages.
+facts:
+  - field: homepage
+    value: https://pyecharts.org/
+    url: https://pyecharts.org/
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/pyecharts/pyecharts
+    url: https://api.github.com/repos/pyecharts/pyecharts
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://pyecharts.org/#/en-us/
+    url: https://github.com/pyecharts/pyecharts/blob/master/README.en.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: chenjiandongx
+    url: https://github.com/pyecharts/pyecharts/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'Copyright (c) 2017-2020 chenjiandongx'
+  - field: maintainerType
+    value: individual
+    url: https://github.com/pyecharts/pyecharts/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'Copyright (c) 2017-2020 chenjiandongx'
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/pyecharts
+    checkedAt: 2026-11-16
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/pyecharts/pyecharts
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: https://pypi.org/pypi/pyecharts/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [charts]
+    url: https://github.com/pyecharts/pyecharts/blob/master/README.en.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'Support 30 + popular charts'
+  - field: basedOn
+    value: [echarts]
+    url: https://github.com/pyecharts/pyecharts/blob/master/README.en.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'The new version is based on Echarts 5.4.1+ for rendering'
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/pyecharts/pyecharts
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/pyecharts/pyecharts/blob/v2.1.0/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">=3.7"'
+  - field: runtimeMin
+    value: '3.7'
+    url: https://github.com/pyecharts/pyecharts/blob/v2.1.0/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">=3.7"'
+  - field: installMethod
+    value: pip
+    url: https://github.com/pyecharts/pyecharts/blob/master/README.en.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'pip install pyecharts'
+  - field: installMethod
+    value: source
+    url: https://github.com/pyecharts/pyecharts/blob/master/README.en.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'Install from source'
+  - field: license
+    value: MIT
+    url: https://github.com/pyecharts/pyecharts/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'MIT License'
+  - field: pypiName
+    value: pyecharts
+    url: https://pypi.org/pypi/pyecharts/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: '810060 (last month)'
+    url: https://pypistats.org/api/packages/pyecharts/recent
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/pyecharts/pyecharts/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-02-10
+    url: https://api.github.com/repos/pyecharts/pyecharts/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 15779
+    url: https://api.github.com/repos/pyecharts/pyecharts
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 39
+    url: https://api.github.com/repos/pyecharts/pyecharts/contributors
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, forkOf, successorOf, alternativeTo, adminUi, headlessApi, renderingModes, runsAs, sso, databases, endoflifeId, packagistName, npmName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, latestPrereleaseDate, paidEdition, pricingPage, importsFrom, templating, i18n, multisite, livePreview, userRoles, contentStore, hostedOffering]
+unreadable: []
+notes: >
+  Boundary ruling for this wave: pyecharts is accepted because its own pages say rendering writes a local HTML file ("render will generate a local HTML file", en-us/quickstart) and that it integrates with web frameworks ("Easy integration with major web frameworks such as Flask, Django, etc.", en-us/intro, and the Flask and Django guides en-us/web_flask and en-us/web_django). The README in the repository is Chinese; the English text is README.en.md, which the facts quote. The README and the intro page say the output runs in Jupyter Notebook, JupyterLab and marimo; that is a notebook use, not recorded as a field. The render_images page names selenium-based snapshot tools for PNG output (snapshot-selenium); not recorded. The homepage is a docsify page at https://pyecharts.org/ that redirects from plain http; the https address is recorded. The current release is on the 2.x line, which the README says renders with Echarts 5.4.1 or later. The v0.5.x line is no longer maintained (README, branch 05x) and is not a separate record. The README lists py-vchart and py-antv under "pyecharts like" projects; the README does not call them alternatives, so alternativeTo is not recorded. The LICENSE copyright line names chenjiandongx (2017-2020); the README names four co-maintainers (chenjiandongx, chfw, kinegratii, sunhailin-Leo), kept here only in notes. The docs pages were read through their markdown source, since the homepage is a docsify shell. The GitHub owner is an organization named pyecharts. The first PyPI upload is 0.1.4 on 2017-07-20, older than the first GitHub release (2023), so firstRelease is from PyPI. The pypistats figure is the last-month count, a rolling window. Jinja2 is imported in the Flask guide code only; no docs sentence names a templating language, so templating stays unrecorded. The README says Chinese documentation exists beside the English one; i18n of the docs is not a library feature and is not recorded.

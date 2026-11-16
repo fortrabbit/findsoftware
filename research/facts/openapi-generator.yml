@@ -88,7 +88,7 @@ facts:
     url: https://raw.githubusercontent.com/OpenAPITools/openapi-generator/v7.27.0/docs/installation.md
     checkedAt: 2026-11-16
     via: page
-    quote: "**Install** via [scoop](https://scoop.sh/):"
+    quote: "scoop install openapi-generator-cli"
   - field: installMethod
     value: pip
     url: https://raw.githubusercontent.com/OpenAPITools/openapi-generator/v7.27.0/docs/installation.md
@@ -112,7 +112,7 @@ facts:
     url: https://raw.githubusercontent.com/OpenAPITools/openapi-generator/v7.27.0/docs/installation.md
     checkedAt: 2026-11-16
     via: page
-    quote: "retrieve and run the JAR file using Maven coordinates"
+    quote: "jbang --java 11 org.openapitools:openapi-generator-cli:LATEST help"
   - field: installMethod
     value: script
     url: https://raw.githubusercontent.com/OpenAPITools/openapi-generator/master/README.md
@@ -125,6 +125,24 @@ facts:
     checkedAt: 2026-11-16
     via: page
     quote: "You can find our released artifacts on maven central:"
+  - field: installMethod
+    value: Maven plugin
+    url: https://raw.githubusercontent.com/OpenAPITools/openapi-generator/v7.27.0/docs/plugins.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A Maven plugin to support the OpenAPI generator project"
+  - field: installMethod
+    value: Gradle plugin
+    url: https://raw.githubusercontent.com/OpenAPITools/openapi-generator/v7.27.0/docs/plugins.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "This gradle plugin offers a declarative DSL via extensions"
+  - field: installMethod
+    value: Mill plugin
+    url: https://raw.githubusercontent.com/OpenAPITools/openapi-generator/v7.27.0/docs/plugins.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "This Mill library provides a Mill module that can be used to generate code from OpenAPI specifications."
   - field: installMethod
     value: source
     url: https://raw.githubusercontent.com/OpenAPITools/openapi-generator/master/README.md
@@ -176,7 +194,7 @@ facts:
     via: api
   - field: contributors
     value: 408
-    url: https://api.github.com/repos/OpenAPITools/openapi-generator/contributors
+    url: https://api.github.com/repos/OpenAPITools/openapi-generator/contributors?per_page=1
     checkedAt: 2026-11-16
     via: api
   - field: mavenCoordinates
@@ -212,4 +230,4 @@ facts:
 notFound: [basedOn, forkOf, successorOf, alternativeTo, importsFrom, renderingModes, i18n, adminUi, userRoles, sso, databases, contentStore, pluginDirectory, pluginCount, pricingPage, paidEdition, hostedOffering, forum, discord, subreddit, mastodon, bluesky, newsletter, usageShare, reportedInstalls, rubygemsName, packagistName, pypiName, endoflifeId, latestPrereleaseDate, hqCountry, wikidata]
 unreadable: []
 notes: >
-  Accepted: a generator the creator runs on a machine or in CI to produce client code, server stubs and documentation for a site's API, which criterion 1 covers as a build tool, and it has documented installs and a published release. The README says the project is "a fork of [Swagger Codegen]" and the migration guide at docs/migration-from-swagger-codegen.md says it "is a fork of swagger-codegen between version 2.3.1 and 2.4.0" and can be used as a drop-in replacement; no Swagger Codegen record exists in this dataset, so no forkOf or importsFrom value is recorded. The README's License section names the copyright holders as "OpenAPI-Generator Contributors" and "SmartBear Software" (2018); the repository LICENSE file has no copyright line. The maintainer is recorded as the contributors; SmartBear Software is a second legal entity and goes to notes. The parent organization OpenAPI Tools is recorded as parent from the README. The README states that generated code is not subject to the project license. The README's download figures ("600k weekly downloads via NPM CLI wrapper", "30M downloads via openapi-generator-cli docker image") are undated and are not recorded; the npm and Docker figures above are the dated ones. The README lists public online services at api.openapi-generator.tech as beta with no service level guarantee; they are not recorded as hostedOffering because the project runs them as a free beta of the open source generator. The npm figures are for @openapitools/openapi-generator-cli, the wrapper the install docs name, which needs a Java runtime. The firstRelease year is from v3.0.0 (2018-06-01), the oldest GitHub release and the oldest Maven Central upload; the repository also carries swagger-codegen_* tags imported from the fork, which are no release of this project. The stars and contributors are for the repository. The homepage and README link a Slack workspace for the community; the dictionary has no Slack field. The README also documents a separate openapi-generator-online Docker image that serves the generator as a web application and API; it is a different artifact from the CLI and no runsAs value is recorded for it. The README names the Maven Central artifacts; Maven publishes no download figure, so none is recorded.
+  Accepted: a generator the creator runs on a machine or in CI to produce client code, server stubs and documentation for a site's API, which criterion 1 covers as a build tool, and it has documented installs and a published release. The README says the project is "a fork of [Swagger Codegen]" and the migration guide at docs/migration-from-swagger-codegen.md says it "is a fork of swagger-codegen between version 2.3.1 and 2.4.0" and can be used as a drop-in replacement; no Swagger Codegen record exists in this dataset, so no forkOf or importsFrom value is recorded. The README's License section names the copyright holders as "OpenAPI-Generator Contributors" and "SmartBear Software" (2018); the repository LICENSE file has no copyright line. The maintainer is recorded as the contributors; SmartBear Software is a second legal entity and goes to notes. The parent organization OpenAPI Tools is recorded as parent from the README. The README states that generated code is not subject to the project license. The README's download figures ("600k weekly downloads via NPM CLI wrapper", "30M downloads via openapi-generator-cli docker image") are undated and are not recorded; the npm and Docker figures above are the dated ones. The README lists public online services at api.openapi-generator.tech as beta with no service level guarantee; they are not recorded as hostedOffering because the project runs them as a free beta of the open source generator. The npm figures are for @openapitools/openapi-generator-cli, the wrapper the install docs name, which needs a Java runtime. The firstRelease year is from v3.0.0 (2018-06-01), the oldest GitHub release and the oldest Maven Central upload; the repository also carries swagger-codegen_* tags imported from the fork, which are no release of this project. The stars and contributors are for the repository. The homepage and README link a Slack workspace for the community; the dictionary has no Slack field. The README also documents a separate openapi-generator-online Docker image that serves the generator as a web application and API; it is a different artifact from the CLI and no runsAs value is recorded for it. The README names the Maven Central artifacts; Maven publishes no download figure, so none is recorded. The README overview table lists the languages and frameworks it generates API clients and server stubs for, and the documentation formats (HTML, Markdown and others). The install page says the pip package needs a java executable to run (or jdk4py), and that the Docker image is an alternative "for developers who are unable to install Java or upgrade the installed version". The docs plugins page documents Maven, Gradle and Mill plugins that run the generator inside a build; sbt and Bazel integrations live in separate OpenAPITools repositories.

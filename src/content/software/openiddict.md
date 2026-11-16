@@ -59,7 +59,7 @@ sources:
     url: https://github.com/openiddict/openiddict-core/blob/dev/README.md
     checkedAt: 2026-11-16
   - field: installMethod
-    url: https://documentation.openiddict.com/guides/getting-started/integrating-with-a-remote-server-instance
+    url: https://openiddict.com/
     checkedAt: 2026-11-16
   - field: license
     url: https://api.github.com/repos/openiddict/openiddict-core

@@ -1,0 +1,116 @@
+id: premailer-rails
+name: premailer-rails
+status: accepted
+checkedAt: 2026-11-16
+description: "Ruby gem that adapts the premailer CSS inliner to ActionMailer, so linked stylesheets are inlined into HTML emails when they are delivered."
+facts:
+  - field: repository
+    value: "https://github.com/fphilipe/premailer-rails"
+    url: "https://api.github.com/repos/fphilipe/premailer-rails"
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: "https://github.com/fphilipe/premailer-rails/blob/main/README.md"
+    url: "https://github.com/fphilipe/premailer-rails/blob/main/README.md"
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: "Philipe Fatio"
+    url: "https://github.com/fphilipe/premailer-rails/blob/main/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (C) 2011-2012 Philipe Fatio (fphilipe)"
+  - field: repoOwnerType
+    value: user
+    url: "https://api.github.com/users/fphilipe"
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: "https://api.github.com/repos/fphilipe/premailer-rails/tags"
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [email-templating]
+    url: "https://github.com/fphilipe/premailer-rails/blob/main/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "a drop in solution for styling HTML emails with CSS"
+  - field: language
+    value: Ruby
+    url: "https://api.github.com/repos/fphilipe/premailer-rails"
+    checkedAt: 2026-11-16
+    via: api
+  - field: basedOn
+    value: [premailer]
+    url: "https://github.com/fphilipe/premailer-rails/blob/main/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "This gem is an adapter for premailer to work with [actionmailer] out of the box."
+  - field: runtime
+    value: [ruby]
+    url: "https://api.github.com/repos/fphilipe/premailer-rails"
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: gem
+    url: "https://github.com/fphilipe/premailer-rails/blob/main/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Simply add the gem to your `Gemfile`:"
+  - field: license
+    value: MIT
+    url: "https://github.com/fphilipe/premailer-rails/blob/main/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "premailer-rails is released under the MIT license."
+  - field: licenseModel
+    value: open-source
+    url: "https://github.com/fphilipe/premailer-rails/blob/main/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "premailer-rails is released under the MIT license."
+  - field: currentMajor
+    value: "1"
+    url: "https://rubygems.org/api/v1/gems/premailer-rails.json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2022-11-10
+    url: "https://rubygems.org/api/v1/gems/premailer-rails.json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsName
+    value: "premailer-rails"
+    url: "https://rubygems.org/api/v1/gems/premailer-rails.json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsDownloads
+    value: "114677564 total"
+    url: "https://rubygems.org/api/v1/gems/premailer-rails.json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1764
+    url: "https://api.github.com/repos/fphilipe/premailer-rails"
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 43
+    url: "https://api.github.com/repos/fphilipe/premailer-rails/contributors?per_page=1"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 15
+    url: "https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/premailer-rails"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 4603
+    url: "https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/premailer-rails"
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runtimeMin, runsAs, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, maintainerType, endoflifeId, wikidata, latestPrereleaseDate, selfHostOption, hostedOffering, regions, apiLimits, packagistName, npmName, pypiName, npmWeeklyDownloads]
+unreadable: []
+notes: >
+  Status accepted from the CSV. Criterion 4: the newest gem release is 1.12.0 (2022-11-10), more than four years before 2026-11-16, and the last push is 2024-06-17; the repository is not archived and the gem is not deprecated, so no end signal is recorded and the import moves the record to stub on release age alone. Criterion 3: the README install section gives the Gemfile line. No homepage: the rubygems homepage_uri and the repository description point only to the GitHub repository, so repository alone is recorded. The README says the gem is "an adapter for premailer to work with actionmailer out of the box", so basedOn records premailer; it adds that actionmailer "is the email framework used in Rails, which also works outside of Rails" and that the gem "also works in the absence of Rails" (sinatra is named), so Rails is not recorded as the parent. The README says the gem registers a delivery hook, so every delivered email is processed, and that it fetches each linked stylesheet through the strategies :filesystem (a file under public/), :asset_pipeline and :network, in a configurable order. The README states tests on Rails 5 through 7 and no minimum Ruby version; runtimeMin is not recorded. The gemspec summary says "Easily create styled HTML emails in Rails." Tags run from v1.0.0 (2011-09-29); no GitHub releases exist. Stars are from the API (1764; ecosyste.ms shows 1766). Contributors are the page number of the rel="last" link on the per_page=1 endpoint. The rubygems figure is the cumulative total since listing. The README Author section names Philipe Fatio, matching the LICENSE copyright line.

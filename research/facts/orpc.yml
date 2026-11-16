@@ -15,8 +15,8 @@ facts:
     checkedAt: 2026-11-16
     via: api
   - field: docs
-    value: "https://orpc.dev/docs/getting-started"
-    url: "https://orpc.dev/docs/getting-started"
+    value: "https://v1.orpc.dev/docs/getting-started"
+    url: "https://v1.orpc.dev/docs/getting-started"
     checkedAt: 2026-11-16
     via: page
   - field: maintainer
@@ -52,12 +52,24 @@ facts:
     checkedAt: 2026-11-16
     via: page
     quote: "It runs on Node.js, Bun, Deno, Cloudflare Workers, and more."
-  - field: installMethod
-    value: npm
-    url: "https://orpc.dev/docs/getting-started"
+  - field: runtimeMin
+    value: "18"
+    url: "https://v1.orpc.dev/docs/getting-started"
     checkedAt: 2026-11-16
     via: page
-    quote: "npm install @orpc/server@beta @orpc/client@beta zod"
+    quote: "Node.js 18+ (20+ recommended)"
+  - field: installMethod
+    value: npm
+    url: "https://v1.orpc.dev/docs/getting-started"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install @orpc/server@latest @orpc/client@latest"
+  - field: alternativeTo
+    value: [hono]
+    url: "https://v1.orpc.dev/docs/comparison"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "This comparison table helps you understand how oRPC differs from other popular TypeScript RPC and REST solutions."
   - field: license
     value: MIT
     url: "https://api.github.com/repos/middleapi/orpc"
@@ -105,7 +117,7 @@ facts:
     checkedAt: 2026-11-16
     via: api
   - field: npmWeeklyDownloads
-    value: 3035088
+    value: "3035088 (2026-11-01 to 2026-11-07)"
     url: "https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@orpc/server"
     checkedAt: 2026-11-16
     via: api
@@ -114,7 +126,22 @@ facts:
     url: "https://raw.githubusercontent.com/middleapi/orpc/main/README.md"
     checkedAt: 2026-11-16
     via: page
-notFound: [hqCountry, pricingPage, paidEdition, runtimeMin, pluginDirectory, forum, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, dependentPackages, dependentRepos, basedOn, alternativeTo, importsFrom, runsAs, renderingModes, sso, userRoles, i18n, databases, templating]
+  - field: x
+    value: "https://x.com/middleapi"
+    url: "https://v1.orpc.dev/"
+    checkedAt: 2026-11-16
+    via: page
+  - field: bluesky
+    value: "https://bsky.app/profile/middleapi.com"
+    url: "https://v1.orpc.dev/"
+    checkedAt: 2026-11-16
+    via: page
+  - field: forum
+    value: "https://github.com/middleapi/orpc/discussions"
+    url: "https://v1.orpc.dev/"
+    checkedAt: 2026-11-16
+    via: page
+notFound: [hqCountry, pricingPage, paidEdition, pluginDirectory, subreddit, mastodon, newsletter, usageShare, reportedInstalls, dependentPackages, dependentRepos, basedOn, importsFrom, runsAs, renderingModes, sso, userRoles, i18n, databases, templating]
 unreadable: []
 notes: >
-  Monorepo: the packages sit under packages/ in middleapi/orpc, so stars and contributors belong to the whole repository, and the npm figure is the core package @orpc/server, the first package the install line names. @orpc/client had 3341965 downloads for 2026-11-01 to 2026-11-07. The docs at orpc.dev are the v2 line and say they are "currently in beta"; the install commands name the beta tag (@orpc/server@beta), while the latest stable GitHub release is v1.16.2 (currentMajor 1). The npm package named orpc belongs to another project (dizys/orpc, 0.1.1) and is not used. The v2 requirements page (orpc.dev/docs/requirements) gives Node 16.11 as the minimum for ES2022 use; it is a v2 beta statement, so no runtimeMin is recorded from it. ecosyste.ms reports zero dependent packages and repositories for the scoped npm packages, which is not recorded as a figure. The comparison page (orpc.dev/docs/comparison) and the tRPC migration page (orpc.dev/docs/migrations/from-trpc, "Migrate an existing tRPC app to oRPC step by step.") name tRPC and Hono; trpc and hono are candidates, and no alternativeTo or importsFrom quote says alternative or switching, so none is recorded. The sponsor links on the homepage carry a ref parameter and are not recorded. Discord link taken from the README badge.
+  Monorepo: the packages sit under packages/ in middleapi/orpc, so stars and contributors belong to the whole repository, and the npm figure is the core package @orpc/server, the first package the install line names. @orpc/client had 3341965 downloads for 2026-11-01 to 2026-11-07. The README says an API is written once as plain TypeScript functions and that oRPC gives a fully typed client, a REST API with an OpenAPI document and MCP tools "with no code generation". The docs at orpc.dev are the v2 line and say they are "currently in beta", with install commands naming the beta tag (@orpc/server@beta); the latest stable GitHub release is v1.16.2 (currentMajor 1), so docs, install route and runtimeMin are cited from the V1 documentation at v1.orpc.dev, which the docs menu links. The npm package named orpc belongs to another project (dizys/orpc, 0.1.1) and is not used. The v2 requirements page (orpc.dev/docs/requirements) gives Node 16.11 as the minimum for ES2022 use; it is a v2 beta statement, so runtimeMin follows the V1 prerequisites (Node.js 18+), which also name Bun, Deno and Cloudflare Workers. ecosyste.ms reports zero dependent packages and repositories for the scoped npm packages, which is not recorded as a figure. The V1 comparison table compares oRPC with tRPC, ts-rest and Hono; the v2 comparison page benchmarks oRPC against tRPC and Hono, and a migration guide covers moving a tRPC app to oRPC (code migration, no importsFrom). The sponsor links on the homepage carry a ref parameter and are not recorded. Discord link taken from the README badge.

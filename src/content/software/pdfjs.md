@@ -12,6 +12,11 @@ status: active
 maintainer: Mozilla
 firstRelease: 2011
 language: javascript
+runtime:
+  - node
+hosting:
+  - node
+runtimeMin: node 22
 installMethod: npm
 licenseModel: open-source
 license: Apache-2.0
@@ -53,7 +58,16 @@ sources:
     url: https://github.com/mozilla/pdf.js/blob/master/README.md
     checkedAt: 2026-11-16
   - field: installMethod
+    url: https://mozilla.github.io/pdf.js/getting_started/
+    checkedAt: 2026-11-16
+  - field: installMethod
     url: https://github.com/mozilla/pdf.js/blob/master/README.md
+    checkedAt: 2026-11-16
+  - field: runtime
+    url: https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions
+    checkedAt: 2026-11-16
+  - field: runtimeMin
+    url: https://registry.npmjs.org/pdfjs-dist/latest
     checkedAt: 2026-11-16
   - field: license
     url: https://api.github.com/repos/mozilla/pdf.js
@@ -68,7 +82,7 @@ sources:
     url: https://api.github.com/repos/mozilla/pdf.js
     checkedAt: 2026-11-16
   - field: contributors
-    url: https://api.github.com/repos/mozilla/pdf.js/contributors
+    url: https://api.github.com/repos/mozilla/pdf.js/contributors?per_page=1
     checkedAt: 2026-11-16
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/pdfjs-dist
@@ -91,4 +105,8 @@ packagistDownloads: null
 runsAs: null
 ---
 
-PDF.js is a PDF viewer and parser built with HTML5. The README describes the project as community-driven and supported by Mozilla, with the goal of a general-purpose, web standards-based platform for parsing and rendering PDFs. A web application uses either a pre-built version of the library or one built from source. The [API documentation](https://mozilla.github.io/pdf.js/api/) describes the library's interface, and the [project homepage](https://mozilla.github.io/pdf.js/) links to the online viewer.
+PDF.js parses and renders PDF documents with web standards, and ships a viewer built on its display layer. The README describes the project as community-driven and supported by Mozilla. A web application loads a pre-built version of the library, one built from source, or the pdfjs-dist package; the modern build targets the latest browsers, and a legacy build covers older browsers and Node.js. The [API documentation](https://mozilla.github.io/pdf.js/api/) describes the library's interface.
+
+## Worth knowing
+
+The getting-started page asks sites that embed the viewer not to use it unmodified, but to re-skin it or build upon it.

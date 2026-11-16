@@ -1,0 +1,104 @@
+id: popmotion
+name: Popmotion
+status: stub
+checkedAt: 2026-11-16
+description: JavaScript animation library with keyframe and spring animations for numbers, colors and strings.
+facts:
+  - field: repository
+    value: https://github.com/Popmotion/popmotion
+    url: https://api.github.com/repos/Popmotion/popmotion
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://api.github.com/repos/Popmotion/popmotion/tags?per_page=100
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Matt Perry
+    url: https://github.com/Popmotion/popmotion/blob/master/packages/popmotion/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Matt Perry"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/Popmotion
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [animation]
+    url: https://github.com/Popmotion/popmotion/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "It supports keyframe and spring animations for numbers, colors and complex strings"
+  - field: language
+    value: TypeScript
+    url: https://github.com/Popmotion/popmotion/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "It's written in TypeScript"
+  - field: installMethod
+    value: npm
+    url: https://github.com/Popmotion/popmotion/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install popmotion"
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/popmotion/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://registry.npmjs.org/popmotion/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 11
+    url: https://registry.npmjs.org/popmotion/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2022-08-15
+    url: https://registry.npmjs.org/popmotion
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: popmotion
+    url: https://registry.npmjs.org/popmotion/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "2628914 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/popmotion
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 20158
+    url: https://api.github.com/repos/Popmotion/popmotion
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 53
+    url: https://api.github.com/repos/Popmotion/popmotion/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 254
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/popmotion
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 96439
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/popmotion
+    checkedAt: 2026-11-16
+    via: api
+  - field: x
+    value: https://twitter.com/popmotionjs
+    url: https://github.com/Popmotion/popmotion/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+notFound: [homepage, docs, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, basedOn, alternativeTo, forkOf, successorOf, parent, hqCountry, pricingPage, paidEdition, runtime, runtimeMin, runsAs, renderingModes, databases, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, importsFrom, wikidata, dockerPulls, usageShare, reportedInstalls, pypiDownloads, packagistName, rubygemsName, endoflifeId, selfHostOption]
+unreadable: [https://popmotion.io/]
+notes: >
+  Doubt first: popmotion.io, the site the repository, the README and the npm metadata all name, answers 403 AccessDenied from its storage host (read again on 2026-11-16) and serves only an access-denied page, so the homepage is not recorded and the project's documentation is unreachable; a working site, or a statement that the project no longer has one, would settle it. Not an end signal as found: the README has no end or successor statement, the repository is not archived, and npm carries no deprecation. The import will also move the record to stub on its own rule: the newest stable release is of 2022-08-15 and nothing newer is published in four years. The GitHub repository has no license object and no LICENSE file at its root (the contents API lists none); the MIT statement is the npm latest metadata, which matches the package.json license field. The repository is a monorepo, so stars and contributors belong to it. The README says the animate function is "just ~4.5kb", a bundle size statement kept here and not as a field. The GitHub tags reach 8.7.1 among stable versions, with 9.0.0 release candidates and no 10.x or 11.x tags; the npm latest is newer, so currentMajor is 11 from the registry. The oldest tag v0.0.1 has a commit dated 2014-10-21, earlier than the first npm upload 0.0.1 of 2015-07-20, so firstRelease is 2014. The README gives the browser and requestAnimationFrame as drivers but names no runtime, so no runtime or runsAs is recorded. The README's Twitter follow badge is the x fact, recorded without a quote. The contributor count is the last-page link of per_page=1, 53.

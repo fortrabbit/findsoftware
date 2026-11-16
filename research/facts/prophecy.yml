@@ -1,0 +1,117 @@
+id: prophecy
+name: Prophecy
+status: accepted
+checkedAt: 2026-11-16
+description: "PHP object mocking framework that builds test doubles from predictions of how an object will behave, usable with any PHP testing framework."
+facts:
+  - field: repository
+    value: "https://github.com/phpspec/prophecy"
+    url: "https://api.github.com/repos/phpspec/prophecy"
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: "https://github.com/phpspec/prophecy/blob/master/README.md"
+    url: "https://github.com/phpspec/prophecy/blob/master/README.md"
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: "Konstantin Kudryashov and Marcello Duarte"
+    url: "https://github.com/phpspec/prophecy/blob/master/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2013 Konstantin Kudryashov <ever.zet@gmail.com> Copyright (c) 2013 Marcello Duarte"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/phpspec"
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: "https://api.github.com/repos/phpspec/prophecy/tags"
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [mocking]
+    url: "https://github.com/phpspec/prophecy/blob/master/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Prophecy is a highly opinionated yet very powerful and flexible PHP object mocking framework."
+  - field: language
+    value: PHP
+    url: "https://api.github.com/repos/phpspec/prophecy"
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [php]
+    url: "https://github.com/phpspec/prophecy/blob/v1.26.1/composer.json"
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "8.2.* || 8.3.* || 8.4.* || 8.5.*"'
+  - field: runtimeMin
+    value: "8.2"
+    url: "https://github.com/phpspec/prophecy/blob/v1.26.1/composer.json"
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "8.2.* || 8.3.* || 8.4.* || 8.5.*"'
+  - field: installMethod
+    value: composer
+    url: "https://github.com/phpspec/prophecy/blob/master/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Then simply install it with composer"
+  - field: license
+    value: MIT
+    url: "https://github.com/phpspec/prophecy/blob/v1.26.1/composer.json"
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"license": "MIT"'
+  - field: licenseModel
+    value: open-source
+    url: "https://github.com/phpspec/prophecy/blob/v1.26.1/composer.json"
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"license": "MIT"'
+  - field: currentMajor
+    value: "1"
+    url: "https://api.github.com/repos/phpspec/prophecy/releases/tags/v1.26.0"
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-04-13
+    url: "https://repo.packagist.org/p2/phpspec/prophecy.json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: "phpspec/prophecy"
+    url: "https://packagist.org/packages/phpspec/prophecy.json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "575034312 total"
+    url: "https://packagist.org/packages/phpspec/prophecy.json"
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 8462
+    url: "https://api.github.com/repos/phpspec/prophecy"
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 116
+    url: "https://api.github.com/repos/phpspec/prophecy/contributors?per_page=1"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 836
+    url: "https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/phpspec%2Fprophecy"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 514647
+    url: "https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/phpspec%2Fprophecy"
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, maintainerType, endoflifeId, wikidata, latestPrereleaseDate, selfHostOption, hostedOffering, regions, apiLimits, npmName, npmWeeklyDownloads, pypiName]
+unreadable: []
+notes: >
+  Status accepted from the CSV. Criterion 4: the repository is not archived, the Packagist package is not abandoned, and the newest stable release is 1.26.1 (2026-04-13, from the Packagist p2 metadata and the v1.26.1 tag). GitHub has no release object for 1.26.1; the highest GitHub release is v1.26.0 (2026-02-24), which has the same major. Criterion 3: the README's "Setup through composer" section gives the Composer route under require-dev. The README says "Prophecy requires PHP 7.2.0 or greater", which conflicts with the 1.26.1 composer.json (8.2 to 8.5); runtimeMin follows the manifest, and the README statement is not recorded. No homepage: the composer.json homepage and the repository description point to the GitHub repository only. The README says Prophecy was "initially" created "to fulfil phpspec2 needs" and can be used "inside any testing framework"; the phpspec record links it as a companion, which is not basedOn. The LICENSE copyright lines name two people (Konstantin Kudryashov and Marcello Duarte, 2013) and the composer.json authors are the same two; the maintainer is recorded as those two people, as the LICENSE copyright line names them; the GitHub owner is the phpspec organization. The README FAQ says Prophecy does not support calling the original methods on a prophesized class, and the README contrasts how PHPUnit or Mockery use call counts with Prophecy promises, which is not an alternativeTo statement. No runsAs: the README shows require-dev and does not say the package is for local development. Tags run from v1.0.0-BETA1 (2013-03-25), which sets firstRelease. The Packagist total download figure is cumulative since listing.

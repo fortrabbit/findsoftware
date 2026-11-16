@@ -1,0 +1,1 @@
+Puppeteer is a JavaScript library that controls Chrome or Firefox through a high-level API, over the DevTools Protocol or WebDriver BiDi. The project's FAQ describes it as a Node.js based reference implementation of how to automate browsers. It runs the browser headless by default and can be configured to run a visible one.

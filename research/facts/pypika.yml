@@ -1,0 +1,124 @@
+id: pypika
+name: PyPika
+status: accepted
+checkedAt: 2026-11-16
+description: Python API that builds SQL queries through a builder interface, with query classes for several database platforms.
+facts:
+  - field: homepage
+    value: https://pypika.readthedocs.io/en/latest/
+    url: https://pypika.readthedocs.io/en/latest/
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'PyPika is a Python API for building SQL queries'
+  - field: repository
+    value: https://github.com/kayak/pypika
+    url: https://api.github.com/repos/kayak/pypika
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://pypika.readthedocs.io/en/latest/
+    url: https://pypika.readthedocs.io/en/latest/
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: KAYAK Germany, GmbH
+    url: https://github.com/kayak/pypika/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'Copyright 2020 KAYAK Germany, GmbH'
+  - field: maintainerType
+    value: company
+    url: https://github.com/kayak/pypika/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'Copyright 2020 KAYAK Germany, GmbH'
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/kayak
+    checkedAt: 2026-11-16
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/kayak/pypika
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2016
+    url: https://pypi.org/pypi/pypika/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [query-builder]
+    url: https://github.com/kayak/pypika/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'Python API for building SQL queries'
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/kayak/pypika
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [python]
+    url: https://github.com/kayak/pypika/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'tested for supported Python, i.e. 3.9+'
+  - field: runtimeMin
+    value: '3.9'
+    url: https://github.com/kayak/pypika/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'tested for supported Python, i.e. 3.9+'
+  - field: installMethod
+    value: pip
+    url: https://github.com/kayak/pypika/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'pip install pypika'
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/kayak/pypika/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'Licensed under the Apache License, Version 2.0'
+  - field: databases
+    value: [mysql, sqlserver, postgres, oracle, vertica, clickhouse]
+    url: https://github.com/kayak/pypika/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'from pypika import MySQLQuery, MSSQLQuery, PostgreSQLQuery, OracleQuery, VerticaQuery, ClickHouseQuery'
+  - field: pypiName
+    value: pypika
+    url: https://pypi.org/pypi/pypika/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: '9418282 (last month)'
+    url: https://pypistats.org/api/packages/pypika/recent
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/kayak/pypika/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-02-04
+    url: https://api.github.com/repos/kayak/pypika/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2925
+    url: https://api.github.com/repos/kayak/pypika
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 115
+    url: https://api.github.com/repos/kayak/pypika/contributors
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, forkOf, successorOf, alternativeTo, adminUi, headlessApi, renderingModes, runsAs, sso, endoflifeId, packagistName, npmName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, latestPrereleaseDate, paidEdition, pricingPage, importsFrom, templating, i18n, multisite, livePreview, userRoles, contentStore, hostedOffering]
+unreadable: []
+notes: >
+  Accepted under criterion 1 as a query builder helper, the group the dev-libs notes place ORMs and query builders in: the README says the library is "a fast, expressive and flexible way to replace handwritten SQL (or even ORM for the courageous souls amongst you)". The README names no product it replaces, so alternativeTo is not recorded. The database list comes from the platform-specific Query classes named in the README's "Handling Different Database Platforms" section; the parameter-style list in the README also names SQLite, which the class list does not, so sqlite is not recorded as a database. The README says it is tested on PyPy 3.9 and 3.10 and may work with Cython and Jython, which are not tested. The minimum Python version is the README's "tested for supported Python, i.e. 3.9+"; the setup.py at the latest tag v0.51.1 states no python_requires, so the README is the only stated minimum. The release line is 0.51 (v0.51.1, 2026-02-04); the major is 0 under semantic versioning, and the minor line is not recorded as a field. The README's license section gives the copyright line "Copyright 2020 KAYAK Germany, GmbH"; the LICENSE.txt file carries the Apache text with no holder line. The README's closing line says the project is "Crafted with ♥ in Berlin"; a city is not a country statement, so hqCountry is not recorded. The CSV homepage was http://pypika.readthedocs.io/en/latest/; the https address answers 200 and is recorded. The first PyPI upload is 0.0.2 on 2016-07-08, older than the first GitHub release (2017), so firstRelease is from PyPI. The pypistats figure is the last-month count, a rolling window. Contributors are counted across all pages of the contributors endpoint with per_page=1, last page 115. The README says it leverages the builder design pattern, that a query is converted to SQL text by casting it to a string or calling get_sql, that it is designed with data analysis in mind, and that validation of SQL correctness is not an explicit goal, so callers check their inputs and handle errors raised by the database. The README says the platform-specific Query classes account for differences between vendors such as the quote characters used.

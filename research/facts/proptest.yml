@@ -1,0 +1,128 @@
+id: proptest
+name: Proptest
+status: accepted
+checkedAt: 2026-11-16
+description: "Rust property-based testing library, inspired by Hypothesis, that generates arbitrary inputs and shrinks a failing input to a minimal case."
+facts:
+  - field: homepage
+    value: "https://proptest-rs.github.io/proptest/"
+    url: "https://github.com/proptest-rs/proptest/blob/main/proptest/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A detailed introduction to proptest can be found in the"
+  - field: repository
+    value: "https://github.com/proptest-rs/proptest"
+    url: "https://api.github.com/repos/proptest-rs/proptest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: "https://docs.rs/proptest/latest/proptest/"
+    url: "https://docs.rs/proptest/latest/proptest/"
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: "FullContact, Inc"
+    url: "https://github.com/proptest-rs/proptest/blob/main/LICENSE-MIT"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2026 FullContact, Inc"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/proptest-rs"
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2017
+    url: "https://crates.io/api/v1/crates/proptest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [property-based]
+    url: "https://github.com/proptest-rs/proptest/blob/main/proptest/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Proptest is a property testing framework"
+  - field: language
+    value: Rust
+    url: "https://api.github.com/repos/proptest-rs/proptest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [rust]
+    url: "https://api.github.com/repos/proptest-rs/proptest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtimeMin
+    value: "1.88"
+    url: "https://github.com/proptest-rs/proptest/blob/main/proptest/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The current MSRV of this crate is 1.88."
+  - field: installMethod
+    value: cargo
+    url: "https://github.com/proptest-rs/proptest/blob/main/proptest/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "In `Cargo.toml`, add"
+  - field: license
+    value: MIT
+    url: "https://github.com/proptest-rs/proptest/blob/main/proptest/Cargo.toml"
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'license = "MIT OR Apache-2.0"'
+  - field: license
+    value: Apache-2.0
+    url: "https://github.com/proptest-rs/proptest/blob/main/proptest/Cargo.toml"
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'license = "MIT OR Apache-2.0"'
+  - field: licenseModel
+    value: open-source
+    url: "https://github.com/proptest-rs/proptest/blob/main/proptest/Cargo.toml"
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'license = "MIT OR Apache-2.0"'
+  - field: currentMajor
+    value: "1"
+    url: "https://crates.io/api/v1/crates/proptest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-10
+    url: "https://crates.io/api/v1/crates/proptest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: crateName
+    value: "proptest"
+    url: "https://crates.io/api/v1/crates/proptest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: crateDownloads
+    value: "248596226 total"
+    url: "https://crates.io/api/v1/crates/proptest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2287
+    url: "https://api.github.com/repos/proptest-rs/proptest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 97
+    url: "https://api.github.com/repos/proptest-rs/proptest/contributors?per_page=1"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 1337
+    url: "https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/proptest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 3356
+    url: "https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/proptest"
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, maintainerType, endoflifeId, wikidata, latestPrereleaseDate, selfHostOption, hostedOffering, regions, apiLimits, packagistName, npmName, pypiName, npmWeeklyDownloads]
+unreadable: []
+notes: >
+  Status accepted from the CSV. Criterion 4: the repository is not archived, the crate is not yanked in its newest versions, and the newest stable version is 1.12.0 (2026-10-10). The README says "At this point, it mainly sees passive maintenance." That describes a finished feature set, not an end, so no status signal is recorded. Criterion 3: the README's "In Cargo.toml, add" section gives the cargo route under [dev-dependencies]. The GitHub releases stop at 0.9.6 (2020-04-11), which is older than the crate on crates.io; the registry version has the higher major, so currentMajor is 1, following the rule for a registry major above the GitHub release. The repository is a Cargo workspace with proptest-derive, proptest-macro and proptest-state-machine; those are separate crates in the same repository and are not separate records here. The homepage is the GitHub Pages site the crate manifest names, whose introduction the README links as its book; the docs.rs address is the API reference. The README says generation and shrinking "is defined on a per-value basis instead of per-type" unlike QuickCheck. It says proptest is "inspired by the Hypothesis framework for Python" and belongs to the QuickCheck family; that is history and not basedOn. The maintainer follows the LICENSE-MIT copyright line (FullContact, Inc, 2026); the crate's Cargo.toml authors name Jason Lingle, and the GitHub organization is proptest-rs. A reviewer may decide which name belongs on the record. Tags run from 0.1.1 (2017-08-05); the crate was created on crates.io on 2017-06-18, which sets firstRelease. The 90-day crates.io figure is 78226726; only the total is recorded. The MSRV statement in the README matches rust-version 1.88 in the manifest on the default branch. No prerelease version was checked, so latestPrereleaseDate is left unrecorded.

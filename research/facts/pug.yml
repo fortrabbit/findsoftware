@@ -1,0 +1,121 @@
+id: pug
+name: Pug
+status: accepted
+checkedAt: 2026-11-16
+description: Template engine for Node.js and browsers that writes HTML from a whitespace-sensitive syntax.
+facts:
+  - field: homepage
+    value: https://pugjs.org
+    url: https://pugjs.org/
+    checkedAt: 2026-11-16
+    via: page
+  - field: docs
+    value: https://pugjs.org/api/getting-started.html
+    url: https://pugjs.org/api/getting-started.html
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/pugjs/pug
+    url: https://api.github.com/repos/pugjs/pug
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: TJ Holowaychuk
+    url: https://github.com/pugjs/pug/blob/master/packages/pug/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2009-2014 TJ Holowaychuk"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/pugjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2010
+    url: https://registry.npmjs.org/jade
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [templating]
+    url: https://github.com/pugjs/pug/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Pug is a high-performance template engine"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/pugjs/pug
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: node
+    url: https://github.com/pugjs/pug/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "implemented with JavaScript for Node.js and browsers"
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/pug
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/pugjs/pug/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-03-13
+    url: https://registry.npmjs.org/pug
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 21819
+    url: https://api.github.com/repos/pugjs/pug
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 214
+    url: https://api.github.com/repos/pugjs/pug/contributors
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: pug
+    url: https://registry.npmjs.org/pug
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "5149697 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/pug
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 5864
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/pug
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 231297
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/pug
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://pugjs.org/api/getting-started.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Pug is available via npm"
+  - field: installMethod
+    value: download
+    url: https://github.com/pugjs/pug/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The latest version of pug can be downloaded for the browser in standalone form"
+  - field: alternativeTo
+    value: [haml]
+    url: https://github.com/pugjs/pug/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Templates engines for other languages with a different syntax, but a similar philosophy"
+notFound: [pricingPage, hqCountry, parent, forkOf, successorOf, basedOn, contentStore, databases, headlessApi, adminUi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, renderingModes, runsAs, runtimeMin, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, packagistName, packagistDownloads, pypiDownloads, rubygemsName, crateName, templating]
+unreadable: []
+notes: >
+  The homepage https://pugjs.org/ answers 200 with a JavaScript redirect to api/getting-started.html, so the getting-started page is the quoted source for install and the homepage is recorded as a link. The repository is a monorepo (pugjs/pug, packages/pug); the npm package pug is the one the install docs name, and its release tags are pug@<version>. The LICENSE in packages/pug holds "Copyright (c) 2009-2014 TJ Holowaychuk" and the package author field names the same person; the pugjs organization is the GitHub owner, and the README names no maintainer, so the maintainer follows the copyright line as the rule states. No legal entity or country is stated, so hqCountry is absent. The npm first upload pug 0.0.0 (2013-08-22) belongs to another project (its repository is weareflavor/pig, a Node.js ORM), so it is not used. The README states the project was formerly known as "Jade", and the jade npm package's first upload is 0.0.1 (2010-12-19) by the same author, which sets firstRelease to 2010; the first upload under the pug name is 0.1.0 (2015-12-12), a reviewer decision. The latest stable release is 3.0.4 (2026-03-13), matching npm latest; the canary 3.0.4-canary-8 is not a release. The README gives no Node.js version, so runtimeMin is absent. The README names Haml as an influence and lists ports in other languages (PHP, Java, Python, Ruby), which are not alternatives; its "Equivalents in other languages" section (Scaml, Slim, HAML) is recorded as alternativeTo for the two with records, and Scaml has none. The Pug 3 migration page says support for Node versions before 10.0.0 was dropped and that 10 would be supported until April 2021, an old transition statement, so runtimeMin is not recorded. The community support page names only Stack Overflow, no forum, and the homepage and docs link no social accounts. The Express page says Pug integrates with Express as a supported view engine; that is a compatibility statement, not basedOn. The docs nav's "React Integration" links to pugjs/babel-plugin-transform-react-pug, a separate project, not recorded. The README links a Gitter chat room and Tidelift professional support; chat is no forum field and support is no paidEdition. Stars and contributors come from the default branch's API; the contributor count reads the last page of the per_page=1 listing.

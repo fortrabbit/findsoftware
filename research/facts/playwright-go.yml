@@ -1,0 +1,121 @@
+id: playwright-go
+name: playwright-go
+status: accepted
+checkedAt: 2026-11-16
+description: Go library that automates Chromium, Firefox and WebKit through one API for browser automation and end-to-end testing.
+facts:
+  - field: homepage
+    value: https://mxschmitt.github.io/playwright-go/
+    url: https://mxschmitt.github.io/playwright-go/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Playwright is a Go library to automate"
+  - field: docs
+    value: https://playwright.dev/docs/intro
+    url: https://github.com/mxschmitt/playwright-go/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The guides, concepts and API semantics are shared across all Playwright languages"
+  - field: repository
+    value: https://github.com/mxschmitt/playwright-go
+    url: https://api.github.com/repos/mxschmitt/playwright-go
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Max Schmitt
+    url: https://github.com/mxschmitt/playwright-go/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2020 Max Schmitt"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/mxschmitt/playwright-go/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2020 Max Schmitt"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/mxschmitt
+    checkedAt: 2026-11-16
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/mxschmitt/playwright-go
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2020
+    url: https://api.github.com/repos/mxschmitt/playwright-go/releases?per_page=100
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [browser-automation]
+    url: https://github.com/mxschmitt/playwright-go/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Playwright is a Go library to automate Chromium, Firefox and WebKit with a single API"
+  - field: categories
+    value: [testing]
+    url: https://github.com/mxschmitt/playwright-go/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Refer to [helper_test.go](./tests/helper_test.go) for End-To-End testing"
+  - field: basedOn
+    value: playwright
+    url: https://github.com/mxschmitt/playwright-go/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "a Node.js runtime combined with Playwright which gets shipped for each of these languages"
+  - field: language
+    value: Go
+    url: https://api.github.com/repos/mxschmitt/playwright-go
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [go]
+    url: https://github.com/mxschmitt/playwright-go/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Playwright is a Go library to automate"
+  - field: runtimeMin
+    value: "1.22"
+    url: https://github.com/mxschmitt/playwright-go/blob/v0.6401.0/go.mod
+    checkedAt: 2026-11-16
+    via: page
+    quote: "go 1.22"
+  - field: installMethod
+    value: go get
+    url: https://github.com/mxschmitt/playwright-go/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "go get -u github.com/mxschmitt/playwright-go"
+  - field: license
+    value: MIT
+    url: https://github.com/mxschmitt/playwright-go/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: "0"
+    url: https://github.com/mxschmitt/playwright-go/releases/tag/v0.6401.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-05
+    url: https://api.github.com/repos/mxschmitt/playwright-go/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 3549
+    url: https://api.github.com/repos/mxschmitt/playwright-go
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 34
+    url: https://api.github.com/repos/mxschmitt/playwright-go/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, forkOf, successorOf, alternativeTo, adminUi, headlessApi, renderingModes, runsAs, sso, databases, endoflifeId, packagistName, npmName, pypiName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, latestPrereleaseDate, paidEdition, pricingPage, importsFrom, templating, i18n, multisite, livePreview, userRoles, contentStore]
+unreadable: []
+notes: >
+  The Go module is github.com/mxschmitt/playwright-go; the API resolves the playwright-community/playwright-go name to this repository, which keeps the mxschmitt owner. The releases are versioned v0.<n>.<patch>, and each minor needs a matching Playwright driver version (README); the line is v0.x, so currentMajor is 0. The README says the Go package ships a Node.js runtime with the Playwright driver, around 50MB, which talks to the Go code over stdio, and that installing it also downloads the pre-compiled browsers; the README names the official Node.js, Python, .NET and Java libraries as the other languages, and basedOn playwright rests on the sentence that the shipped bridge is a Node.js runtime combined with Playwright. The README links the Playwright documentation at playwright.dev, recorded as docs, and says its guides and concepts are shared across all Playwright languages while the code samples there are JavaScript. The README mentions a Dockerfile.example to build your own image; no image is published, so no Docker route is recorded. The README's Discord badge links the Playwright community chat (aka.ms/playwright/discord), not a chat of this project, so no discord fact is recorded. The pkg.go.dev API reference (https://pkg.go.dev/github.com/mxschmitt/playwright-go) is the Go API reference linked from the README. Go modules have no download figure, so no registry figure is recorded. The release dates come from the GitHub releases API; the oldest tag is v0.171.0, committed 2020-12-29, and the repository was created 2020-08-16. Stars and contributors belong to this repository alone.

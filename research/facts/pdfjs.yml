@@ -55,17 +55,34 @@ facts:
     via: page
     quote: "We supply pre-built versions for usage with NPM under the `pdfjs-dist` name."
   - field: installMethod
-    value: script tag
+    value: cdn
     url: https://github.com/mozilla/pdf.js/blob/master/README.md
     checkedAt: 2026-11-16
     via: page
     quote: "PDF.js is hosted on several free CDNs"
+  - field: installMethod
+    value: download
+    url: https://mozilla.github.io/pdf.js/getting_started/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Before downloading PDF.js please take a moment to understand the different layers of the PDF.js project."
   - field: installMethod
     value: source
     url: https://github.com/mozilla/pdf.js/blob/master/README.md
     checkedAt: 2026-11-16
     via: page
     quote: "you can choose to use a pre-built version of the library or to build it from source"
+  - field: runtime
+    value: [node]
+    url: https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Node.js 22+"
+  - field: runtimeMin
+    value: "22"
+    url: https://registry.npmjs.org/pdfjs-dist/latest
+    checkedAt: 2026-11-16
+    via: api
   - field: license
     value: Apache-2.0
     url: https://api.github.com/repos/mozilla/pdf.js
@@ -88,7 +105,7 @@ facts:
     via: api
   - field: contributors
     value: 386
-    url: https://api.github.com/repos/mozilla/pdf.js/contributors
+    url: https://api.github.com/repos/mozilla/pdf.js/contributors?per_page=1
     checkedAt: 2026-11-16
     via: api
   - field: npmName
@@ -111,7 +128,7 @@ facts:
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/pdfjs-dist
     checkedAt: 2026-11-16
     via: api
-notFound: [pricingPage, hqCountry, parent, forkOf, successorOf, basedOn, alternativeTo, contentStore, databases, multisite, adminUi, headlessApi, templating, i18n, userRoles, sso, importsFrom, renderingModes, runsAs, runtime, runtimeMin, paidEdition, endoflifeId, usageShare, reportedInstalls, pluginDirectory, discord, forum, subreddit, mastodon, bluesky, x, newsletter]
+notFound: [pricingPage, hqCountry, parent, forkOf, successorOf, basedOn, alternativeTo, contentStore, databases, multisite, adminUi, headlessApi, templating, i18n, userRoles, sso, importsFrom, renderingModes, runsAs, paidEdition, endoflifeId, usageShare, reportedInstalls, pluginDirectory, discord, forum, subreddit, mastodon, bluesky, x, newsletter]
 unreadable: []
 notes: >
-  The record is the pdf.js project; the install docs name the pdfjs-dist package for web applications, and its npm figure is recorded under npmName. The repository has 91 GitHub releases and the latest stable is v6.5.438 from 2026-11-01, so currentMajor is 6. The earliest tag in the repository is milestone-0.2, dated by its commit 2011-07-02, which sets firstRelease. The homepage is the project's own site; its footer names Mozilla and individual contributors as the copyright holder, and the README says the project is supported by Mozilla. The README says the project is community-driven and gives a Matrix room for questions; that chat is not recorded as forum. The homepage says the documentation is licensed under CC BY-SA 2.5; the license field describes the code. The README's online demo links are the viewer, not a hosted service. No runsAs or runtime is recorded because the README does not state where the library runs; the pdfjs-dist engines field in the npm registry lists a Node version that the README does not mention, so runtimeMin is left out.
+  The record is the pdf.js project; the install docs name the pdfjs-dist package for web applications, and its npm figure is recorded under npmName. The repository has 91 GitHub releases and the latest stable is v6.5.438 from 2026-11-01, so currentMajor is 6. The earliest tag in the repository is milestone-0.2, dated by its commit 2011-07-02, which sets firstRelease. The homepage is the project's own site; its footer names Mozilla and individual contributors as the copyright holder, and the README says the project is supported by Mozilla. The getting-started page describes three layers: core (parsing), display (the API that renders PDFs) and the viewer, built on the display layer. The README says the project is community-driven and gives a Matrix room for questions; that chat is not recorded as forum. The homepage says the documentation is licensed under CC BY-SA 2.5; the license field describes the code. The README's online demo links are the viewer, not a hosted service. The FAQ "Which browsers/environments are supported?" lists the latest browsers for the modern build and, for the legacy build, browsers plus "Node.js 22+" (supported "Mostly"); runtimeMin 22 follows that row and the pdfjs-dist engines field (>=22.13.0 || >=24). No runsAs is recorded: the library names both the browser and Node.js. The getting-started page offers prebuilt downloads for modern and older browsers, and says that a site embedding the viewer should not use an unmodified version but re-skin it or build upon it.

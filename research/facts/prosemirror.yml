@@ -1,0 +1,112 @@
+id: prosemirror
+name: ProseMirror
+status: accepted
+checkedAt: 2026-11-16
+description: Toolkit of modules for building rich-text editors on the web.
+facts:
+  - field: homepage
+    value: https://prosemirror.net
+    url: https://prosemirror.net/
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://code.haverbeke.berlin/prosemirror
+    url: https://code.haverbeke.berlin/prosemirror
+    checkedAt: 2026-11-16
+    via: page
+  - field: docs
+    value: https://prosemirror.net/docs/guide/
+    url: https://prosemirror.net/docs/guide/
+    checkedAt: 2026-11-16
+    via: page
+  - field: firstRelease
+    value: 2015
+    url: https://registry.npmjs.org/prosemirror
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Marijn Haverbeke
+    url: https://code.haverbeke.berlin/prosemirror/prosemirror/raw/branch/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (C) 2015-2017 by Marijn Haverbeke"
+  - field: maintainerType
+    value: individual
+    url: https://code.haverbeke.berlin/prosemirror/prosemirror/raw/branch/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (C) 2015-2017 by Marijn Haverbeke"
+  - field: language
+    value: TypeScript
+    url: https://code.haverbeke.berlin/prosemirror/prosemirror-view/raw/branch/main/src/index.ts
+    checkedAt: 2026-11-16
+    via: page
+  - field: categories
+    value: [editor-toolkit, rich-text]
+    url: https://prosemirror.net/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A toolkit for building rich-text editors on the web"
+  - field: installMethod
+    value: [npm]
+    url: https://prosemirror.net/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The easiest way to install ProseMirror is with npm"
+  - field: runsAs
+    value: [browser]
+    url: https://prosemirror.net/docs/guide/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "shows a given editor state as an editable element in the browser"
+  - field: licenseModel
+    value: open-source
+    url: https://code.haverbeke.berlin/prosemirror/prosemirror/raw/branch/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: license
+    value: MIT
+    url: https://registry.npmjs.org/prosemirror-view/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/prosemirror-view/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-31
+    url: https://registry.npmjs.org/prosemirror-view
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: prosemirror-view
+    url: https://registry.npmjs.org/prosemirror-view/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "39152267 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/prosemirror-view
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 708
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/prosemirror-view
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 7600
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/prosemirror-view
+    checkedAt: 2026-11-16
+    via: api
+  - field: forum
+    value: https://discuss.prosemirror.net/
+    url: https://prosemirror.net/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Discussing the project, or asking questions, is best done on"
+notFound: [runtime, runtimeMin, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, databases, adminUi, headlessApi, endoflifeId, usageShare, pluginDirectory, pluginCount, subreddit, mastodon, x, bluesky, discord, newsletter, docker, pricingPage, paidEdition, githubStargazers, contributors, sso, userRoles, i18n, multisite, templating, contentStore, importsFrom, renderingModes]
+unreadable: []
+notes: >
+  The project is a set of separately versioned packages in one Forgejo organization at code.haverbeke.berlin, which the homepage links as Code; the GitHub repository the candidate row names is marked archived in the row's note and is not used as a source. The forge has no releases or tags, so the version and date come from the npm registry, and the registry figures are for prosemirror-view, the view package the basic example imports and the forge lists among its core packages. The other core packages publish on their own dates; prosemirror-model shows 1.25.13 on 2026-11-08 and prosemirror-state shows 1.4.4 on 2025-10-23, and their weekly downloads are not recorded. The first npm upload of the old monolithic prosemirror package (the registry calls it deprecated and replaced by the modular packages, which is a split of the same project and no end) is dated 2015-09-03, earlier than prosemirror-view (2016-09-21), so firstRelease is 2015. The LICENSE line reads "Marijn Haverbeke <marijn@haverbeke.berlin> and others". The guide says collaborative editing uses a central authority that decides the order of changes. The homepage says the project is supported by companies and was crowd-funded by 414 backers, and asks commercial users to help fund maintenance ("there is a social expectation that you help fund its maintenance"); these are not fields. The homepage says the library works on post-2020 versions of Firefox, Chrome, Safari and Edge; compatibility is not a field. Collaborative editing is built in (homepage: "ProseMirror has built-in, ground-up, rock solid support for collaborative editing"); it is not a field. The forge repository for prosemirror-view is in the forge's own package list; the maintainer comes from the LICENSE copyright line, which names only Marijn Haverbeke and others, so prose says maintained by Marijn Haverbeke. The homepage Code link is the organization page; the forge organization lists 23 repositories. The browser runsAs value comes from the guide's description of the view component. The guide names the essential modules as model, state, view and transform, the transform module records changes so they can be recorded and replayed, and the further modules provide basic editing commands, key bindings, undo history, input macros, collaborative editing and a simple document schema.

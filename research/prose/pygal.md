@@ -1,0 +1,1 @@
+pygal is a Python library that draws charts as SVG. A script builds a chart and renders it to SVG text, a file, an element tree or a base64 data URI. The SVG can be served from a route in a web app or placed in an HTML page with an embed tag. PNG output needs the optional cairosvg package, and the output page also covers rendering a chart in a browser.

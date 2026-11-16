@@ -1,0 +1,1 @@
+Pony ORM is an object-relational mapper for Python. Queries are written as Python generator expressions, and Pony translates them into SQL for the database the application connects to. The [documentation](https://docs.ponyorm.org/) describes the mapper and the databases it works with.

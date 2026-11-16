@@ -1,0 +1,140 @@
+id: pow
+name: Pow
+status: accepted
+checkedAt: 2026-11-16
+description: Authentication and user management library for Elixir apps, usable with Phoenix and Plug.
+facts:
+  - field: homepage
+    value: "https://powauth.com/"
+    url: "https://powauth.com/"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Pow is a complete authentication and user management library built in Elixir"
+  - field: repository
+    value: "https://github.com/pow-auth/pow"
+    url: "https://api.github.com/repos/pow-auth/pow"
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: "https://pow.hexdocs.pm/"
+    url: "https://pow.hexdocs.pm/"
+    checkedAt: 2026-11-16
+    via: page
+  - field: x
+    value: "https://twitter.com/danschultzer"
+    url: "https://powauth.com/"
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: "Dan Schultzer"
+    url: "https://github.com/pow-auth/pow/blob/main/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2018-2019 Dan Schultzer & the Contributors"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/pow-auth"
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2018
+    url: "https://hex.pm/api/packages/pow/releases"
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [auth]
+    url: "https://powauth.com/"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Pow is a complete authentication and user management library"
+  - field: language
+    value: Elixir
+    url: "https://api.github.com/repos/pow-auth/pow"
+    checkedAt: 2026-11-16
+    via: api
+  - field: basedOn
+    value: [phoenix]
+    url: "https://github.com/pow-auth/pow/blob/main/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "authentication and user management solution for Phoenix and Plug-based apps"
+  - field: runtime
+    value: elixir
+    url: "https://powauth.com/"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "built in Elixir that works out-of-the-box for Phoenix and Plug based applications"
+  - field: installMethod
+    value: hex
+    url: "https://github.com/pow-auth/pow/blob/main/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Add Pow to your list of dependencies in `mix.exs`"
+  - field: license
+    value: MIT
+    url: "https://github.com/pow-auth/pow/blob/main/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "(The MIT License)"
+  - field: licenseModel
+    value: open-source
+    url: "https://github.com/pow-auth/pow/blob/main/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "(The MIT License)"
+  - field: userRoles
+    value: yes
+    url: "https://github.com/pow-auth/pow/blob/main/guides/user_roles.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Adding user roles is very simple, and you won't need an extension for this."
+  - field: i18n
+    value: yes, templates and messages can use a Gettext module
+    url: "https://github.com/pow-auth/pow/blob/main/README.md"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "All templates can be generated and modified to use your Gettext module."
+  - field: currentMajor
+    value: "1"
+    url: "https://github.com/pow-auth/pow/releases/tag/v1.0.39"
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2025-01-11
+    url: "https://github.com/pow-auth/pow/releases/tag/v1.0.39"
+    checkedAt: 2026-11-16
+    via: api
+  - field: hexName
+    value: pow
+    url: "https://hex.pm/api/packages/pow"
+    checkedAt: 2026-11-16
+    via: api
+  - field: hexDownloads
+    value: "1979235 (total)"
+    url: "https://hex.pm/api/packages/pow"
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1670
+    url: "https://api.github.com/repos/pow-auth/pow"
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 52
+    url: "https://api.github.com/repos/pow-auth/pow/contributors?per_page=1"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 8
+    url: "https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/pow"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 246
+    url: "https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/pow"
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, runtimeMin, adminUi, contentStore, databases, headlessApi, templating, multisite, livePreview, sso, renderingModes, runsAs, pluginDirectory, pluginCount, discord, subreddit, bluesky, mastodon, newsletter, forum, wikidata, endoflifeId, selfHostOption, reportedInstalls, usageShare, regions, apiLimits, packagistName, npmName, pypiName, rubygemsName, latestPrereleaseDate, hostedOffering]
+unreadable: []
+notes: >
+  The README and homepage call Pow a solution "for Phoenix and Plug-based apps", so basedOn records phoenix from that sentence; Plug has no record. The mix.exs at tag v1.0.39 requires Elixir "~> 1.14"; that is an Elixir version, not an OTP minimum, so runtimeMin is left out. The homepage quotes "built in Elixir" and the repository language is Elixir, so runtime elixir maps to the BEAM. The homepage links a Slack workspace of the Elixir community and a GitHub Sponsors page; neither is recorded as the project's forum or a fact field. The README says the default cache store suits development and test ("For a production environment, you should use a distributed, persistent cache store") and names Mnesia, with a Redis cache backend guide for read-only file systems; these are cache stores, not where the software keeps content, so no databases value is recorded. The README feature list names multitenancy and API token authorization, and "Other libraries" names PowAssent for multi-provider login (Twitter, Github, Google, Facebook); PowAssent is a separate package, so no sso value is recorded. The repository was last pushed on 2025-01-28 and the last release is 2025-01-11; no end signal is stated. The maintainer follows the LICENSE copyright line, which names Dan Schultzer and the contributors. The x link is the maintainer's account in the homepage markup, recorded as a social link the same way other records record author accounts.

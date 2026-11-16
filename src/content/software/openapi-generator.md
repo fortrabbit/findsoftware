@@ -93,6 +93,15 @@ sources:
     url: https://raw.githubusercontent.com/OpenAPITools/openapi-generator/master/README.md
     checkedAt: 2026-11-16
   - field: installMethod
+    url: https://raw.githubusercontent.com/OpenAPITools/openapi-generator/v7.27.0/docs/plugins.md
+    checkedAt: 2026-11-16
+  - field: installMethod
+    url: https://raw.githubusercontent.com/OpenAPITools/openapi-generator/v7.27.0/docs/plugins.md
+    checkedAt: 2026-11-16
+  - field: installMethod
+    url: https://raw.githubusercontent.com/OpenAPITools/openapi-generator/v7.27.0/docs/plugins.md
+    checkedAt: 2026-11-16
+  - field: installMethod
     url: https://raw.githubusercontent.com/OpenAPITools/openapi-generator/master/README.md
     checkedAt: 2026-11-16
   - field: runsAs
@@ -120,7 +129,7 @@ sources:
     url: https://api.github.com/repos/OpenAPITools/openapi-generator
     checkedAt: 2026-11-16
   - field: contributors
-    url: https://api.github.com/repos/OpenAPITools/openapi-generator/contributors
+    url: https://api.github.com/repos/OpenAPITools/openapi-generator/contributors?per_page=1
     checkedAt: 2026-11-16
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@openapitools/openapi-generator-cli
@@ -142,8 +151,8 @@ hosting: null
 packagistDownloads: null
 ---
 
-OpenAPI Generator reads an OpenAPI specification and writes client libraries, server stubs and API documentation for many languages and frameworks. Generation is done from the command line, in a build or in CI, with templates that can be replaced by the user's own Mustache-based ones. The README describes the project as a fork of Swagger Codegen, and it belongs to the OpenAPI Tools organization, developed by its contributors.
+OpenAPI Generator reads an OpenAPI specification and writes client libraries, server stubs and API documentation for many languages and frameworks. Generation runs from the command line or inside a Maven, Gradle or Mill build, with templates that can be replaced by the user's own Mustache-based ones. The README describes the project as a fork of Swagger Codegen; it belongs to the OpenAPI Tools organization.
 
 ## Worth knowing
 
-The README states that generated code is not subject to the project's license and belongs to the user of the software.
+The generator needs a Java runtime, also behind the npm and pip wrappers; the Docker image is the documented route for machines without Java. The README states that generated code is not subject to the project's license and belongs to the user of the software.

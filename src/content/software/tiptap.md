@@ -16,6 +16,8 @@ maintainerType: company
 firstRelease: 2020
 hqCountry: DE
 language: javascript
+basedOn:
+  - prosemirror
 runsAs:
   - browser
 installMethod: npm
@@ -56,6 +58,9 @@ sources:
     checkedAt: 2026-10-19
   - field: hqCountry
     url: https://tiptap.dev/legal-notice
+    checkedAt: 2026-10-19
+  - field: basedOn
+    url: https://tiptap.dev/docs/editor/getting-started/overview
     checkedAt: 2026-10-19
   - field: category
     url: https://tiptap.dev/

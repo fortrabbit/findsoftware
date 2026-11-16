@@ -1,0 +1,1 @@
+pytest is a Python testing framework for small tests and for complex functional tests of applications and libraries. Tests are plain functions with assert statements, and modular fixtures manage the resources a test needs. unittest suites run out of the box, and a plugin architecture lets third-party plugins extend the framework.

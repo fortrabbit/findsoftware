@@ -1,0 +1,108 @@
+id: plottable
+name: Plottable
+status: accepted
+checkedAt: 2026-11-16
+description: TypeScript library of chart components, built on D3, for creating custom charts on websites.
+facts:
+  - field: repository
+    value: https://github.com/palantir/plottable
+    url: https://api.github.com/repos/palantir/plottable
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Palantir Technologies, Inc.
+    url: https://github.com/palantir/plottable/blob/develop/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2014-2017 Palantir Technologies, Inc."
+  - field: maintainerType
+    value: company
+    url: https://github.com/palantir/plottable/blob/develop/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2014-2017 Palantir Technologies, Inc."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/palantir
+    checkedAt: 2026-11-16
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://github.com/palantir/plottable
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://api.github.com/repos/palantir/plottable/releases?per_page=100
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [charts]
+    url: https://github.com/palantir/plottable/blob/develop/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Plottable is a library of chart components for creating flexible, custom charts for websites"
+  - field: basedOn
+    value: d3
+    url: https://github.com/palantir/plottable/blob/develop/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "It is built on top of D3.js"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/palantir/plottable
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://github.com/palantir/plottable/blob/develop/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install --save plottable"
+  - field: installMethod
+    value: cdn
+    url: https://github.com/palantir/plottable/blob/develop/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "[jsdelivr](https://cdn.jsdelivr.net/npm/plottable@3/plottable.min.js)"
+  - field: license
+    value: MIT
+    url: https://github.com/palantir/plottable/blob/develop/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: npmName
+    value: plottable
+    url: https://registry.npmjs.org/plottable/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "3428 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/plottable
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/palantir/plottable/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-07
+    url: https://api.github.com/repos/palantir/plottable/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 3136
+    url: https://api.github.com/repos/palantir/plottable
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 66
+    url: https://api.github.com/repos/palantir/plottable/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, docs, hqCountry, forkOf, successorOf, alternativeTo, adminUi, headlessApi, renderingModes, runtimeMin, runsAs, sso, databases, endoflifeId, packagistName, pypiName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, latestPrereleaseDate, paidEdition, pricingPage, importsFrom, templating, i18n, multisite, livePreview, userRoles, contentStore, hostedOffering]
+unreadable: []
+notes: >
+  The homepage is not linked. https://plottablejs.org/ fails the TLS handshake (the certificate does not match the host name), and http://plottablejs.org/ answers 200 over plain http, so per the homepage rule the field is left out and the site is named here. The README links the same site for examples, tutorials and the API, and the README's upgrade guides are on the GitHub wiki. The README's CDN example pins plottable@3 while the latest release is 4.0.0, which the npm latest tag confirms; the 3.x line is not recorded as the current major. The first GitHub release is v.0.1.0 on 2014-02-04, and the repository was created 2014-01-22. The README states that Plottable is developed in TypeScript and distributed in ES5 JavaScript. Its requirements are D3 7 and a browser with ES2015 support, and CommonJS consumers need Node.js 22.12 or later to load D3's ES modules; these describe the dependency and the consumer, so no runtime or runsAs is recorded. Plottable is used and developed at Palantir Technologies per the README; the LICENSE copyright line is the maintainer, and no hqCountry is recorded because no fetched page names the country of the company. The develop branch is the default branch; the repository's last commit there is dated 2026-11-04.
+  The README says the components include plots, gridlines and axes, which are combined and arranged in tables instead of set through high-level chart options. The README links a Gitter room (gitter.im/palantir/plottable) for help and shows a Gitter chat badge; the field list has no chat field, so it is noted here. Yarn and npm are one registry route. The CDN link in the Get Plottable list points at jsDelivr. The README's CommonJS Node.js 22.12 requirement is stated for consumers loading D3's ES modules, so it records runtime node but no runtimeMin; the npm package declares the same engines minimum. The README says Plottable is not a charting library but a library of chart components, and calls itself a D3 for charts.

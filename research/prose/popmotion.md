@@ -1,0 +1,1 @@
+Popmotion is an animation library for JavaScript, written in TypeScript and installed from npm. It animates numbers, colors and complex strings with keyframe and spring animations, and it is maintained by Matt Perry under the Popmotion organization on GitHub.

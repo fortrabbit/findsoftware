@@ -22,6 +22,7 @@ runtimeMin: python 3.9
 basedOn:
   - flask
   - react
+  - plotly-js
 installMethod: pip install dash
 licenseModel: open-core
 license: MIT

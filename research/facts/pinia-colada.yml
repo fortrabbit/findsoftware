@@ -1,0 +1,123 @@
+id: pinia-colada
+name: Pinia Colada
+status: accepted
+checkedAt: 2026-11-16
+description: Data fetching layer for Vue that adds cached queries, mutations and async state on top of Pinia.
+facts:
+  - field: homepage
+    value: https://pinia-colada.esm.dev
+    url: https://api.github.com/repos/posva/pinia-colada
+    checkedAt: 2026-11-16
+    via: api
+  - field: repository
+    value: https://github.com/posva/pinia-colada
+    url: https://api.github.com/repos/posva/pinia-colada
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://pinia-colada.esm.dev/quick-start.html
+    url: https://pinia-colada.esm.dev/quick-start.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Pinia Colada is the perfect companion to Pinia to handle async state management in your Vue applications"
+  - field: firstRelease
+    value: 2023
+    url: https://api.github.com/repos/posva/pinia-colada/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Eduardo San Martin Morote
+    url: https://github.com/posva/pinia-colada/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2023-present Eduardo San Martin Morote"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/posva/pinia-colada
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [data-fetching, state]
+    url: https://github.com/posva/pinia-colada/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The missing data fetching layer for Vue"
+  - field: basedOn
+    value: pinia
+    url: https://github.com/posva/pinia-colada/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Built on top of Pinia"
+  - field: importsFrom
+    value: tanstack-query
+    url: https://pinia-colada.esm.dev/cookbook/migration-tvq.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "This guide will help you migrate from @tanstack/vue-query to @pinia/colada"
+  - field: alternativeTo
+    value: tanstack-query
+    url: https://pinia-colada.esm.dev/why.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Pinia Colada shares similarities with TanStack Query and has adapted some of its APIs for easier migration"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/posva/pinia-colada
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: MIT
+    url: https://github.com/posva/pinia-colada/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: installMethod
+    value: [npm]
+    url: https://github.com/posva/pinia-colada/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install pinia @pinia/colada"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/posva/pinia-colada/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-30
+    url: https://api.github.com/repos/posva/pinia-colada/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2245
+    url: https://api.github.com/repos/posva/pinia-colada
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 51
+    url: https://api.github.com/repos/posva/pinia-colada/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: "@pinia/colada"
+    url: https://registry.npmjs.org/@pinia/colada/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "190250 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@pinia/colada
+    checkedAt: 2026-11-16
+    via: api
+  - field: forum
+    value: https://github.com/posva/pinia-colada/discussions
+    url: https://pinia-colada.esm.dev
+    checkedAt: 2026-11-16
+    via: page
+  - field: x
+    value: https://twitter.com/posva
+    url: https://pinia-colada.esm.dev
+    checkedAt: 2026-11-16
+    via: page
+notFound: [runtime, runtimeMin, runsAs, renderingModes, templating, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, pricingPage, paidEdition, hqCountry, discord, bluesky, mastodon, newsletter, pluginDirectory, subreddit, wikidata, endoflifeId, packagistName, pypiName, reportedInstalls, usageShare]
+unreadable: []
+notes: >
+  The README says "Built on top of Pinia" and "Zero Dependencies: No dependencies other than Pinia"; pinia.yml is a record, so basedOn pinia rests on that sentence. The project calls itself "The missing data fetching layer for Vue", which names Vue as the application framework and not a binding it is built as, so no basedOn vue. The migration guide at cookbook/migration-tvq.html says it helps migrate from @tanstack/vue-query (importsFrom). The "Comparison to other solutions" section of /why.html compares Pinia Colada with TanStack (Vue) Query (alternativeTo) and with swrv, which has no record. The README's features (automatic caching, request deduplication, optimistic updates, a plugin system, server-side rendering) are notes, not fields. The homepage's SSR bullet is compatibility, not renderingModes. Nuxt (@pinia/colada-nuxt) and Vue Router Data Loaders are integrations, not fields. The homepage's Links menu gives the GitHub Discussions page, recorded as forum. The homepage's Vue chat link is a general Vue community channel and is not recorded. The x fact is the account the homepage nav links; it is the maintainer's own handle. The maintainer is the copyright holder named in LICENSE, a person; the GitHub owner is a user account. The GitHub latest release is @pinia/colada-nuxt 1.2.1 (2026-10-30); the core package @pinia/colada was last released as tag v1.4.9 on the same day, so currentMajor and latestReleaseDate follow the core package. The npm figure is for @pinia/colada, the package the install line names. Stars and contributors are for the monorepo.

@@ -1,0 +1,1 @@
+phpspec belongs to a project's development environment, not to the live site: a developer writes the spec for an object first and the code after. The docs link Prophecy, a mocking library, as a companion project.

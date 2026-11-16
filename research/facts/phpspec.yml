@@ -1,0 +1,129 @@
+id: phpspec
+name: phpspec
+status: accepted
+checkedAt: 2026-11-16
+description: PHP tool for behaviour-driven development that describes the behaviour of an object as specs before the code is written.
+facts:
+  - field: homepage
+    value: https://phpspec.net/
+    url: https://github.com/phpspec/phpspec/blob/main/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The main website with documentation is at"
+  - field: repository
+    value: https://github.com/phpspec/phpspec
+    url: https://api.github.com/repos/phpspec/phpspec
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://phpspec.net/en/stable/
+    url: https://phpspec.net/en/stable/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Learn more from the documentation"
+  - field: categories
+    value: [bdd]
+    url: https://phpspec.net/en/stable/manual/introduction.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "phpspec is a tool which can help you write clean and working PHP code using behaviour driven development"
+  - field: firstRelease
+    value: 2011
+    url: https://api.github.com/repos/phpspec/phpspec/commits/phpspec-0.2.2
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Konstantin Kudryashov and Marcello Duarte
+    url: https://github.com/phpspec/phpspec/blob/8.3.1/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2013-2016 Konstantin Kudryashov <ever.zet@gmail.com> Marcello Duarte <marcello.duarte@gmail.com>"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/phpspec
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/phpspec/phpspec
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: php
+    url: https://github.com/phpspec/phpspec/blob/8.3.1/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "8.2.* || 8.3.* || 8.4.* || 8.5.*"'
+  - field: runtimeMin
+    value: "8.2"
+    url: https://github.com/phpspec/phpspec/blob/8.3.1/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "8.2.* || 8.3.* || 8.4.* || 8.5.*"'
+  - field: runsAs
+    value: local
+    url: https://phpspec.net/en/stable/manual/installation.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "that you’ll have in your project development environment"
+  - field: installMethod
+    value: composer
+    url: https://phpspec.net/en/stable/manual/installation.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "You can install phpspec with all its dependencies through Composer."
+  - field: license
+    value: MIT
+    url: https://github.com/phpspec/phpspec/blob/8.3.1/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"license": "MIT"'
+  - field: currentMajor
+    value: 8
+    url: https://api.github.com/repos/phpspec/phpspec/releases/tags/8.3.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-07-04
+    url: https://api.github.com/repos/phpspec/phpspec/releases/tags/8.3.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-11-16
+    url: https://api.github.com/repos/phpspec/phpspec/releases/tags/9.0.0-rc.8
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1904
+    url: https://api.github.com/repos/phpspec/phpspec
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 143
+    url: https://api.github.com/repos/phpspec/phpspec/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: phpspec/phpspec
+    url: https://packagist.org/packages/phpspec/phpspec.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: 38697275 total
+    url: https://packagist.org/packages/phpspec/phpspec.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 3796
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/phpspec%2Fphpspec
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 37326
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/phpspec%2Fphpspec
+    checkedAt: 2026-11-16
+    via: api
+notFound: [parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, hqCountry, wikidata, endoflifeId, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, pricingPage, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, npmName, httpArchiveSites, paidEdition, maintainerType, hostedOffering, pypiName, pypiDownloads]
+unreadable: []
+notes: >
+  Status accepted. Criterion 1: a spec tool a project adds as a dev dependency and runs in its development environment; the testing libraries are accepted under the dev-libs scope. Criterion 2: installed with Composer from Packagist (phpspec/phpspec). Criterion 3: the installation page of the stable docs. Criterion 4: the repository is not archived; the latest stable release is 8.3.1 (2026-07-04), and 9.0.0-rc.8 (2026-11-16) is recorded as latestPrereleaseDate. The CSV homepage http://www.phpspec.net is plain http and answered 403 to the research client; the README names https://phpspec.net as the main website, which redirects to the stable docs, so that address is recorded. The stable docs are labelled 5.x and say PHP 5.6 or 7, which conflicts with the 8.3.1 manifest; runtimeMin comes from composer.json at 8.3.1 and the docs statement is not recorded. GitHub detects no license (NOASSERTION); composer.json at 8.3.1 says MIT and the LICENSE file names Konstantin Kudryashov and Marcello Duarte with 2013-2016 copyright; the maintainer follows the LICENSE copyright line; composer.json at 8.3.1 also lists Ciaran McNulty as an author. The docs link the Prophecy mocking library repository (github.com/phpspec/prophecy) as a companion; no basedOn is recorded because no page says phpspec is built on it. The README gives phpspec-dev@googlegroups.com for development discussion, a mailing list and not a forum. The Packagist total download figure is cumulative since listing. Stars and contributors belong to the single repository.

@@ -1,0 +1,134 @@
+id: prismjs
+name: Prism
+status: accepted
+checkedAt: 2026-11-16
+description: "Lightweight, extensible JavaScript syntax highlighter for code blocks in web pages, which can also run in Node.js."
+facts:
+  - field: homepage
+    value: "https://prismjs.com"
+    url: "https://prismjs.com"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Prism is a lightweight, extensible syntax highlighter, built with modern web standards in mind."
+  - field: docs
+    value: "https://prismjs.com/"
+    url: "https://prismjs.com"
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: "https://github.com/PrismJS/prism"
+    url: "https://api.github.com/repos/PrismJS/prism"
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: "Lea Verou"
+    url: "https://github.com/PrismJS/prism/blob/v2/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2012 Lea Verou"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/PrismJS"
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: "https://api.github.com/repos/PrismJS/prism/tags"
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [syntax-highlight]
+    url: "https://prismjs.com"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Prism is a lightweight, extensible syntax highlighter"
+  - field: language
+    value: JavaScript
+    url: "https://api.github.com/repos/PrismJS/prism"
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: [node]
+    url: "https://prismjs.com"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Prism can be used with Node.js as well"
+  - field: installMethod
+    value: npm
+    url: "https://prismjs.com"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "If you want to use Prism with a bundler, install Prism with"
+  - field: installMethod
+    value: script tag
+    url: "https://prismjs.com"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "CDNs which provide PrismJS are e.g."
+  - field: installMethod
+    value: download
+    url: "https://prismjs.com"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "You will need to include the prism.css and prism.js files you downloaded in your page."
+  - field: license
+    value: MIT
+    url: "https://github.com/PrismJS/prism/blob/v2/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT LICENSE"
+  - field: licenseModel
+    value: open-source
+    url: "https://github.com/PrismJS/prism/blob/v2/LICENSE"
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT LICENSE"
+  - field: currentMajor
+    value: "1"
+    url: "https://api.github.com/repos/PrismJS/prism/releases"
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2025-03-10
+    url: "https://api.github.com/repos/PrismJS/prism/releases"
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestPrereleaseDate
+    value: 2026-09-08
+    url: "https://registry.npmjs.org/prismjs"
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: "prismjs"
+    url: "https://registry.npmjs.org/prismjs/latest"
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "47943622 (2026-11-01 to 2026-11-07)"
+    url: "https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/prismjs"
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 13070
+    url: "https://api.github.com/repos/PrismJS/prism"
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 368
+    url: "https://api.github.com/repos/PrismJS/prism/contributors?per_page=1"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 6937
+    url: "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/prismjs"
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 218739
+    url: "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/prismjs"
+    checkedAt: 2026-11-16
+    via: api
+notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, pluginDirectory, pluginCount, runtimeMin, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, maintainerType, endoflifeId, wikidata, selfHostOption, hostedOffering, regions, apiLimits, packagistName, pypiName, packagistDownloads]
+unreadable: []
+notes: >
+  Status accepted from the CSV. Criterion 4: the newest stable release is v1.30.0 (2025-03-10) and the repository is not archived; the default branch is v2, and its README says the team is working on Prism v2 and "will only accept security-relevant PRs for the time being". That is a statement of paused feature work, not an end, so no status signal is recorded. npm dist-tag alpha is 2.0.0-alpha.1 (2026-09-08), recorded as latestPrereleaseDate; the v2 package.json on the default branch declares engines node 20 or later, which is a prerelease requirement and not recorded as runtimeMin. The engines field of the stable 1.30.0 npm package is not a page statement, so runtimeMin is left out. The homepage says Prism "can be used with Node.js as well" and its wide browser support, so runtime is node and no runsAs is recorded, following the rule for libraries that name both. The homepage's CDN example uses prismjs@v1.x. Prism is a spin-off of Dabblet (README); that is history, not basedOn. The maintainer comes from the LICENSE copyright line; package.json names the same author. The GitHub organization PrismJS is the repository owner; stars and contributors belong to the single repository. The npm weekly figure is the sum of the seven daily counts from 2026-11-01 to 2026-11-07. The homepage says to include prism.css and prism.js and use proper HTML5 code tags (code.language-xxxx), and that it "only works with <code> elements". The homepage lists limitations: any pre-existing HTML in the code is stripped off, and the highlighter is "Regex-based so it *will* fail on certain edge cases". The download route is the "Basic usage" section on the homepage, which tells the reader to include the downloaded prism.css and prism.js files; the homepage and its docs are one page. The homepage's "used in millions of websites" is not a count and is not recorded as reportedInstalls.
