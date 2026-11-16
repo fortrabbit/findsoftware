@@ -1,0 +1,130 @@
+id: mustache-php
+name: Mustache.php
+status: accepted
+checkedAt: 2026-11-16
+description: PHP implementation of the mustache logic-less template syntax, installed with Composer as the mustache/mustache package.
+facts:
+  - field: repository
+    value: https://github.com/bobthecow/mustache.php
+    url: https://api.github.com/repos/bobthecow/mustache.php
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/bobthecow/mustache.php/wiki/Home
+    url: https://github.com/bobthecow/mustache.php/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: Justin Hileman
+    url: https://github.com/bobthecow/mustache.php/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: Copyright (c) 2010-2026 Justin Hileman
+  - field: maintainerType
+    value: individual
+    url: https://github.com/bobthecow/mustache.php/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: Copyright (c) 2010-2026 Justin Hileman
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/bobthecow
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/bobthecow/mustache.php
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [templating]
+    url: https://github.com/bobthecow/mustache.php/blob/v3.2.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"templating",'
+  - field: runtime
+    value: [php]
+    url: https://github.com/bobthecow/mustache.php/blob/v3.2.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": ">=5.6"'
+  - field: runtimeMin
+    value: PHP 5.6
+    url: https://github.com/bobthecow/mustache.php/blob/v3.2.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": ">=5.6"'
+  - field: firstRelease
+    value: 2010
+    url: https://api.github.com/repos/bobthecow/mustache.php/commits/0.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/bobthecow/mustache.php/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-05-10
+    url: https://api.github.com/repos/bobthecow/mustache.php/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: Composer
+    url: https://github.com/bobthecow/mustache.php/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: composer require mustache/mustache
+  - field: license
+    value: MIT
+    url: https://github.com/bobthecow/mustache.php/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: The MIT License (MIT)
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/bobthecow/mustache.php/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: The MIT License (MIT)
+  - field: packagistName
+    value: mustache/mustache
+    url: https://packagist.org/packages/mustache/mustache.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: 53277169 (total)
+    url: https://packagist.org/packages/mustache/mustache.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 332
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/mustache%2Fmustache
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 5333
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/mustache%2Fmustache
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 3283
+    url: https://api.github.com/repos/bobthecow/mustache.php
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 44
+    url: https://api.github.com/repos/bobthecow/mustache.php/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, headlessApi, runsAs, renderingModes, contentStore, databases, adminUi, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, usageShare, reportedInstalls, npmName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, lastCommitDate, latestPrereleaseDate, mavenCoordinates, unreadable]
+unreadable: []
+notes: >
+  Homepage: the README links mustache.github.io as the mustache template language site (its manual and specification), shared by the implementations in many languages; the repository names no site of its own, so no homepage is recorded. The same site answers over https as well as http, so the CSV's http link is not used.
+  Release: the latest stable release is v3.2.0 of 2026-05-10. The v3.0.0-alpha1 prerelease of 2025-06-09 is older than v3.2.0 and is not recorded as latestPrereleaseDate. The v2.x upgrade notes in the README state that v3 drops PHP 5.2 to 5.5 support, which matches the composer.json minimum of 5.6.
+  runtimeMin comes from the composer.json require section at the v3.2.0 tag, a library's runtime requirement for users, not a dev requirement.
+  firstRelease 2010 comes from the tag 0.1 (commit date 2010-04-27); the first GitHub release is v2.4.1 of 2013-08-13 and the repository was created 2010-03-19.
+  The Packagist figure is the total downloads for mustache/mustache, the package the README installs. The monthly Packagist figure is 1493152 at the time of reading and is not recorded, to keep one figure per field.
+  The maintainer is the copyright holder named in LICENSE; the composer.json author is the same name.
+  Stars and contributors belong to the bobthecow/mustache.php repository. The README's "See Also" section links the Ruby mustache implementation, a separate project, so no alternativeTo is recorded.
+  The README's usage section creates a \Mustache\Engine and renders a template against a context object. It recommends ENT_QUOTES as entity_flags to reduce the risk of cross-site scripting. Its upgrade section says that v3 changes some defaults (strict_callables, double_render_lambdas) and that previous behavior can be set back through configuration.

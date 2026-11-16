@@ -1,0 +1,121 @@
+id: mustache-js
+name: mustache.js
+status: accepted
+checkedAt: 2026-11-16
+description: Zero-dependency JavaScript implementation of the mustache logic-less template syntax, for browsers and Node.js.
+facts:
+  - field: repository
+    value: https://github.com/janl/mustache.js
+    url: https://api.github.com/repos/janl/mustache.js
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: The mustache.js community
+    url: https://github.com/janl/mustache.js/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: Copyright (c) 2010-2015 The mustache.js community
+  - field: maintainerType
+    value: community
+    url: https://github.com/janl/mustache.js/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: Copyright (c) 2010-2015 The mustache.js community
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/janl
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/janl/mustache.js
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [templating]
+    url: https://github.com/janl/mustache.js/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: is a zero-dependency implementation of the mustache template system in JavaScript
+  - field: runtime
+    value: [node]
+    url: https://github.com/janl/mustache.js/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: This includes web browsers, server-side environments such as Node.js
+  - field: firstRelease
+    value: 2009
+    url: https://api.github.com/repos/janl/mustache.js/commits/0.1
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 4
+    url: https://api.github.com/repos/janl/mustache.js/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2021-03-28
+    url: https://api.github.com/repos/janl/mustache.js/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://github.com/janl/mustache.js/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: npm install mustache --save
+  - field: license
+    value: MIT
+    url: https://github.com/janl/mustache.js/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: The MIT License
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/janl/mustache.js/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: The MIT License
+  - field: npmName
+    value: mustache
+    url: https://registry.npmjs.org/mustache/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "25302232 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/mustache
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 5281
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/mustache
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 224460
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/mustache
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 16723
+    url: https://api.github.com/repos/janl/mustache.js
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 101
+    url: https://api.github.com/repos/janl/mustache.js/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, docs, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, headlessApi, runsAs, renderingModes, contentStore, databases, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, usageShare, reportedInstalls, packagistName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, runtimeMin, endoflifeId, lastCommitDate, latestPrereleaseDate, mavenCoordinates, unreadable]
+unreadable: []
+notes: >
+  Homepage: the repository's own README links mustache.github.io as the home of the mustache template system (the Mustache specification, manual and the list of implementations in many languages). That site describes the template language for all its implementations, not mustache.js alone, and the repository names no site of its own, so no homepage is recorded (rule for repository-only projects). The same site answers over https.
+  Age: the latest stable release is v4.2.0 of 2021-03-28 (GitHub release and npm latest, both 2021-03-28). The repository was last pushed on 2024-06-14. Under criterion 4 the import moves a record with no release in four years to stub; this file keeps status accepted and records latestReleaseDate, as the rule says.
+  Maintainer: LICENSE carries three copyright lines (Chris Wanstrath (Ruby) 2009; Jan Lehnardt (JavaScript) 2010-2014; The mustache.js community 2010-2015). The record names the community line, since several holders are named; package.json names the author as "mustache.js Authors". The JavaScript line names Jan Lehnardt.
+  No v4 prerelease is recorded: npm dist-tags beta 4.2.0-beta.0 is older than v4.2.0.
+  The npm figure counts downloads for the package mustache, the one the README install section names. The command line tool ships in the same npm package. The dependency and star figures belong to the janl/mustache.js repository.
+  The README's install section gives the npm route; the CDN script tag in the usage example is a code sample, so it is not recorded as an installMethod.
+  The firstRelease year comes from the tag 0.1 (commit 2009-10-11); the repository was created 2009-10-04.
+  The Node.js line in the README's "Where to use" section names browsers and Node.js as places the library runs, so runtime is node and no runsAs is recorded. No runtimeMin is stated.
+  The README's usage section renders with Mustache.render, which takes a template and a view object holding the data, and Mustache.parse caches a parsed template for later renders. The command line tool is described as a wrapper around Mustache.render.
+  The README covers variables, sections, inverted sections, comments and partials, and renders them against the view object.

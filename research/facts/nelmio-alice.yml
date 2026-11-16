@@ -1,0 +1,128 @@
+id: nelmio-alice
+name: Alice
+status: accepted
+checkedAt: 2026-11-16
+description: PHP library that generates fixtures and fake test data from YAML, PHP or JSON definitions, using Faker for generated values.
+facts:
+  - field: repository
+    value: https://github.com/nelmio/alice
+    url: https://api.github.com/repos/nelmio/alice
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/nelmio/alice/blob/main/doc/getting-started.md
+    url: https://raw.githubusercontent.com/nelmio/alice/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'Getting Started'
+  - field: firstRelease
+    value: 2012
+    url: https://api.github.com/repos/nelmio/alice/commits/d95f73b4c82ff9b1ffba08c2c7d0446cdbcc77bf
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Nelmio
+    url: https://raw.githubusercontent.com/nelmio/alice/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'Copyright (c) 2012 Nelmio'
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/nelmio
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [fixtures]
+    url: https://raw.githubusercontent.com/nelmio/alice/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'create a ton of fixtures/fake data for use while developing or testing your project'
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/nelmio/alice
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: php
+    url: https://raw.githubusercontent.com/nelmio/alice/3.17.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "^8.2"'
+  - field: runtimeMin
+    value: '8.2'
+    url: https://raw.githubusercontent.com/nelmio/alice/3.17.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"php": "^8.2"'
+  - field: installMethod
+    value: composer
+    url: https://raw.githubusercontent.com/nelmio/alice/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'composer require --dev nelmio/alice'
+  - field: runsAs
+    value: local
+    url: https://raw.githubusercontent.com/nelmio/alice/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'for use while developing or testing your project'
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/nelmio/alice
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/nelmio/alice/blob/3.17.0/composer.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"license": "MIT"'
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/nelmio/alice/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-02-24
+    url: https://api.github.com/repos/nelmio/alice/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2537
+    url: https://api.github.com/repos/nelmio/alice
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 132
+    url: https://api.github.com/repos/nelmio/alice/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistName
+    value: nelmio/alice
+    url: https://packagist.org/packages/nelmio/alice
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "48120718 (total)"
+    url: https://packagist.org/packages/nelmio/alice.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: packagistDownloads
+    value: "710126 (monthly)"
+    url: https://packagist.org/packages/nelmio/alice.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 152
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/nelmio%2Falice
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 1802
+    url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/nelmio%2Falice
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, basedOn, alternativeTo, forkOf, successorOf, parent, hqCountry, pricingPage, paidEdition, renderingModes, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, contentStore, forum, discord, x, bluesky, mastodon, subreddit, newsletter, pluginDirectory, pluginCount, hostedOffering, selfHostOption, pypiDownloads, npmName, endoflifeId, wikidata, reportedInstalls, usageShare, lastCommitDate, latestPrereleaseDate, regions]
+unreadable: []
+notes: >
+  No homepage: the GitHub homepage field is empty and the README names no project site, so homepage is not recorded and the repository is the only link. The README says 2.x is in maintenance mode and that the documentation covers 3.0; the 3.x line is the current major, so the 2.x note is not a status change. The README lists third-party integrations for Symfony, Nette, Zend Framework 2, WordPress and framework-agnostic packages; these are other projects' packages, so they are no basedOn and no alternativeTo. The composer.json at 3.17.0 requires FakerPHP/Faker and other packages; a dependency is no basedOn statement, so Faker is named in the description from the README sentence instead. The README links the Symfony integration as the framework integration in its getting-started guide; no framework is recorded as a parent. The Packagist and GitHub license both say MIT, and LICENSE carries the copyright line for Nelmio. The first tag is 1.0.0, whose commit is dated 2012; the oldest GitHub release is 1.5.0 from 2013. Stars and contributors belong to the single repository, which is not a monorepo. The runsAs local value follows the README sentence that the library is for developing or testing; it is not a live-site statement. The README example declares entities with properties and references such as @user1, where placeholders like <username()> produce generated values, and loads the file with the NativeLoader class; the README's BCP section calls NativeLoader the no DIC solution. The README also carries a Slack badge for a channel in the Symfony Slack, which is a general community chat and no project forum.

@@ -1,0 +1,125 @@
+id: mongoengine
+name: MongoEngine
+status: accepted
+checkedAt: 2026-11-16
+description: Python Object-Document Mapper for working with MongoDB.
+facts:
+  - field: homepage
+    value: https://mongoengine-odm.readthedocs.io/
+    url: https://mongoengine-odm.readthedocs.io/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MongoEngine is an Object-Document Mapper, written in Python for working with MongoDB."
+  - field: repository
+    value: https://github.com/MongoEngine/mongoengine
+    url: https://api.github.com/repos/MongoEngine/mongoengine
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://mongoengine-odm.readthedocs.io/
+    url: https://github.com/MongoEngine/mongoengine/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Documentation is available at https://mongoengine-odm.readthedocs.io"
+  - field: firstRelease
+    value: 2010
+    url: https://api.github.com/repos/MongoEngine/mongoengine/git/tags/ab2ba2202a27250624c2b082c2ca36905ee6660d
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Bastien Gerard
+    url: https://github.com/MongoEngine/mongoengine/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Maintainer: Bastien Gerard"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/MongoEngine/mongoengine/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Maintainer: Bastien Gerard"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/MongoEngine
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [odm]
+    url: https://github.com/MongoEngine/mongoengine/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Python Object-Document Mapper for working with MongoDB"
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/MongoEngine/mongoengine
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: python
+    url: https://github.com/MongoEngine/mongoengine/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Python Object-Document Mapper for working with MongoDB"
+  - field: runtimeMin
+    value: "3.7"
+    url: https://github.com/MongoEngine/mongoengine/blob/v0.29.3/setup.py
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'python_requires=">=3.7"'
+  - field: databases
+    value: [mongodb]
+    url: https://github.com/MongoEngine/mongoengine/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Python Object-Document Mapper for working with MongoDB"
+  - field: installMethod
+    value: [pip]
+    url: https://github.com/MongoEngine/mongoengine/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "python -m pip install -U mongoengine"
+  - field: installMethod
+    value: [source]
+    url: https://github.com/MongoEngine/mongoengine/blob/master/README.rst
+    checkedAt: 2026-11-16
+    via: page
+    quote: "To install a source checkout, run"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/MongoEngine/mongoengine
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://github.com/MongoEngine/mongoengine/releases/tag/v0.29.3
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-03-10
+    url: https://github.com/MongoEngine/mongoengine/releases/tag/v0.29.3
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 4347
+    url: https://api.github.com/repos/MongoEngine/mongoengine
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 299
+    url: https://api.github.com/repos/MongoEngine/mongoengine/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiName
+    value: mongoengine
+    url: https://pypi.org/pypi/mongoengine/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: "1609317 (last month)"
+    url: https://pypistats.org/api/packages/mongoengine/recent
+    checkedAt: 2026-11-16
+    via: api
+notFound: [basedOn, pricingPage, paidEdition, forum, discord, x, newsletter, pluginDirectory, hqCountry, templating, headlessApi, adminUi, i18n, sso, userRoles, importsFrom, alternativeTo, renderingModes, runsAs, wikidata]
+unreadable: []
+notes: >
+  The README calls the project "an ORM-like layer on top of PyMongo" (rst Info field) and its example defines Document subclasses with typed fields after connect('mydb'), then saves, queries and counts them; PyMongo is the driver it requires (PyMongo >=4.0) and there is no PyMongo record, so no basedOn. The README warns that mongoengine.org is no longer controlled by the project and appears to be an expired domain takeover, so that domain is not linked anywhere in the record. Minimum Python: the README on master says "MongoEngine requires Python 3.10 or newer", but the setup.py at the latest release tag v0.29.3 says python_requires ">=3.7" and PyPI's requires_python for 0.29.3 is ">=3.7"; the release metadata is used for runtimeMin per the rule, and the disagreement is for a reviewer. The README says MongoEngine is tested against MongoDB 4.4, 5.0, 6.0, 7.0 and 8.0. The README lists the author as Harry Marr and the maintainer as Bastien Gerard; the maintainer follows the README because the project names the role. Repository owner organization MongoEngine. The stable line is 0.29 (v0.29.3, 2026-03-10); currentMajor records the major 0 only. The GitHub tag history starts at v0.1.1, whose annotated tag object is dated 2010-01-04; the PyPI history starts at 0.7.0 (2013-08-23), so the tag date is the oldest. The stars and contributors belong to the repository. The pyproject file is absent at the release tag, so setup.py is the release metadata. The README says the documentation holds a tutorial, a user guide and an API reference, and its Installation section names a second route, installing a source checkout with pip from the repository root. The Django Support page in the docs is an integration page and no sentence there names a dependency relationship that would make it basedOn.

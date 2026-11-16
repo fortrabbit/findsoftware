@@ -1,0 +1,119 @@
+id: monaco-editor
+name: Monaco Editor
+status: accepted
+checkedAt: 2026-11-16
+description: Browser-based code editor library, generated from the source of the VS Code editor.
+facts:
+  - field: homepage
+    value: https://microsoft.github.io/monaco-editor/
+    url: https://api.github.com/repos/microsoft/monaco-editor
+    checkedAt: 2026-11-16
+    via: api
+  - field: repository
+    value: https://github.com/microsoft/monaco-editor
+    url: https://api.github.com/repos/microsoft/monaco-editor
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://microsoft.github.io/monaco-editor/docs.html
+    url: https://github.com/microsoft/monaco-editor/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Explore the API docs"
+  - field: firstRelease
+    value: 2016
+    url: https://registry.npmjs.org/monaco-editor
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Microsoft Corporation
+    url: https://github.com/microsoft/monaco-editor/blob/main/LICENSE.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2016 - present Microsoft Corporation"
+  - field: maintainerType
+    value: company
+    url: https://github.com/microsoft/monaco-editor/blob/main/LICENSE.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2016 - present Microsoft Corporation"
+  - field: hqCountry
+    value: US
+    url: https://privacy.microsoft.com/en-us/privacystatement
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Microsoft Corporation, One Microsoft Way, Redmond, Washington 98052, USA"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/microsoft
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [code-editor]
+    url: https://github.com/microsoft/monaco-editor/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "fully featured code editor"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/microsoft/monaco-editor
+    checkedAt: 2026-11-16
+    via: api
+  - field: runsAs
+    value: [browser]
+    url: https://github.com/microsoft/monaco-editor/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "make it run in a web browser outside of its home"
+  - field: i18n
+    value: UI language set by loading a locale message script (nls) before the editor script
+    url: https://github.com/microsoft/monaco-editor/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "To load the editor in a specific language"
+  - field: installMethod
+    value: [npm]
+    url: https://github.com/microsoft/monaco-editor/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install monaco-editor"
+  - field: license
+    value: MIT
+    url: https://github.com/microsoft/monaco-editor/blob/main/LICENSE.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/microsoft/monaco-editor/releases/tag/v0.57.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-24
+    url: https://github.com/microsoft/monaco-editor/releases/tag/v0.57.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 46978
+    url: https://api.github.com/repos/microsoft/monaco-editor
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 287
+    url: https://api.github.com/repos/microsoft/monaco-editor/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: monaco-editor
+    url: https://registry.npmjs.org/monaco-editor/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "13464200 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/monaco-editor
+    checkedAt: 2026-11-16
+    via: api
+notFound: [basedOn, runtime, runtimeMin, templating, databases, headlessApi, adminUi, sso, userRoles, importsFrom, alternativeTo, pricingPage, paidEdition, forum, discord, x, newsletter, pluginDirectory, wikidata]
+unreadable: [https://microsoft.github.io/monaco-editor/]
+notes: >
+  The homepage answers with an empty JavaScript shell (title "Monaco Editor" and three scripts, no page text) on 2026-11-16, so it is listed under unreadable; the homepage fact is the repository's homepage field. The FAQ says the editor is "generated straight from VS Code's sources with some shims around services the code needs to make it run in a web browser outside of its home", so VS Code is the parent in words; there is no VS Code record, so no basedOn. The README says the editor is not supported in mobile browsers or mobile web app frameworks, and that it does not support TextMate grammars natively (a third-party bridge, bolinfest/monaco-tm, is linked). The README says the AMD build is deprecated and will be removed; the FAQ says the editor needs a web server on http or https because web workers do not load from file. Version line: the stable line is 0.57 (v0.57.0, 2026-09-24), and currentMajor records the major 0 only; dev builds (v0.58.0-dev-2026xxxx, published nightly) are not prereleases, and v0.57.0-rc.2 is dated the same day as v0.57.0, so no latestPrereleaseDate. firstRelease is the npm first upload 0.0.1 (2016-05-31); the GitHub repository was created 2016-06-07. The GitHub language field reads JavaScript while the CSV row said ts. The npm figure is the sum of the daily downloads for monaco-editor from 2026-11-01 to 2026-11-07. Coined kinds left in notes: the model, URI, editor and provider concepts described in the README (Concepts section) and the Monarch tokenizer playground for new languages. The i18n value is coined as a free-text statement about locale scripts; the README's Localization section gives the only example (German).

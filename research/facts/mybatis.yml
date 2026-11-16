@@ -1,0 +1,133 @@
+id: mybatis
+name: MyBatis
+status: accepted
+checkedAt: 2026-11-16
+description: Java SQL mapper framework that maps SQL statements in XML or annotations to Java objects and database records.
+facts:
+  - field: homepage
+    value: https://mybatis.org/mybatis-3/
+    url: https://mybatis.org/mybatis-3/
+    checkedAt: 2026-11-16
+    via: page
+    quote: MyBatis is a first class persistence framework with support for custom SQL, stored procedures and advanced mappings
+  - field: docs
+    value: https://mybatis.org/mybatis-3/getting-started.html
+    url: https://mybatis.org/mybatis-3/getting-started.html
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/mybatis/mybatis-3
+    url: https://api.github.com/repos/mybatis/mybatis-3
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: MyBatis.org
+    url: https://mybatis.org/mybatis-3/
+    checkedAt: 2026-11-16
+    via: page
+    quote: 2009–2025 MyBatis.org
+  - field: maintainerType
+    value: community
+    url: https://mybatis.org/mybatis-3/
+    checkedAt: 2026-11-16
+    via: page
+    quote: 2009–2025 MyBatis.org
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/mybatis
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Java
+    url: https://api.github.com/repos/mybatis/mybatis-3
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [orm]
+    url: https://github.com/mybatis/mybatis-3/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: The MyBatis SQL mapper framework makes it easier to use a relational database with object-oriented applications
+  - field: runtime
+    value: [jvm]
+    url: https://github.com/mybatis/mybatis-3/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: MyBatis SQL Mapper Framework for Java
+  - field: firstRelease
+    value: 2010
+    url: https://search.maven.org/solrsearch/select?q=g:org.mybatis+AND+a:mybatis&core=gav&rows=200&wt=json
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/mybatis/mybatis-3/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-23
+    url: https://api.github.com/repos/mybatis/mybatis-3/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: Maven
+    url: https://mybatis.org/mybatis-3/getting-started.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: If you are using Maven just add the following dependency to your pom.xml
+  - field: installMethod
+    value: JAR on the classpath
+    url: https://mybatis.org/mybatis-3/getting-started.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: To use MyBatis you just need to include the mybatis-x.x.x.jar file in the classpath
+  - field: mavenCoordinates
+    value: "org.mybatis:mybatis"
+    url: https://repo1.maven.org/maven2/org/mybatis/mybatis/maven-metadata.xml
+    checkedAt: 2026-11-16
+    via: api
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/mybatis/mybatis-3/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: Apache License Version 2.0, January 2004
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/mybatis/mybatis-3/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: Apache License Version 2.0, January 2004
+  - field: githubStargazers
+    value: 20431
+    url: https://api.github.com/repos/mybatis/mybatis-3
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 265
+    url: https://api.github.com/repos/mybatis/mybatis-3/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: bluesky
+    value: https://bsky.app/profile/mybatis.bsky.social
+    url: https://mybatis.org/mybatis-3/
+    checkedAt: 2026-11-16
+    via: page
+  - field: x
+    value: https://x.com/MyBatisJava
+    url: https://mybatis.org/mybatis-3/
+    checkedAt: 2026-11-16
+    via: page
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, headlessApi, runsAs, renderingModes, contentStore, databases, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, usageShare, reportedInstalls, packagistName, npmName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, newsletter, wikidata, runtimeMin, endoflifeId, lastCommitDate, latestPrereleaseDate, dependentPackages, dependentRepos, unreadable]
+unreadable: []
+notes: >
+  Release: the GitHub release mybatis-3.6.0 (2026-10-23, not a prerelease) is the newest stable release. The project's own site still shows version 3.5.19 and "Last Published: 02 Jan 2025"; the site is older than the release and is not used for the version.
+  firstRelease 2010 comes from the oldest upload of org.mybatis:mybatis on Maven Central (version 3.0.1, uploaded 2010-05-20), which is older than the oldest GitHub release (3.0.1, 2013-11-08). The repository itself was created in 2013.
+  Databases: the configuration page names database vendors only as examples of a DB_VENDOR databaseIdProvider mapping (SQL Server, DB2) and says MyBatis works through JDBC. No list of supported databases is stated, so databases is not recorded.
+  runtimeMin: the pom compiler setting is a build requirement and the docs mention Java 8 only for a parameter-name feature, so no runtimeMin is recorded.
+  Maintainer: the site footer reads "2009–2025 MyBatis.org" and the Apache LICENSE names no copyright holder, so the maintainer is the project's own name for itself, MyBatis.org.
+  The Stack Overflow tag and the mailing-lists page are links from the site and the README, not recorded as forum.
+  The Bluesky and X links are on the homepage, which says the accounts are run by Alejandro Duarte.
+  The installMethod entries are the two routes on the getting-started page: the Maven dependency and the JAR on the classpath.
+  The getting-started page says a SqlSessionFactory is built from an XML configuration or from a Java Configuration object, and that the MyBatis-Spring and MyBatis-Guice sub-projects suit dependency injection frameworks.
+  The README says MyBatis couples objects with stored procedures or SQL statements through an XML descriptor or annotations, and the homepage says it removes most of the JDBC code and manual setting of parameters.

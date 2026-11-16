@@ -1,0 +1,117 @@
+id: node-fetch
+name: node-fetch
+status: accepted
+checkedAt: 2026-11-16
+description: Module that brings the Fetch API to Node.js for making HTTP requests from server-side code.
+facts:
+  - field: repository
+    value: https://github.com/node-fetch/node-fetch
+    url: https://api.github.com/repos/node-fetch/node-fetch
+    checkedAt: 2026-11-16
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/node-fetch
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Node Fetch Team
+    url: https://github.com/node-fetch/node-fetch/blob/v3.3.2/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2016 - 2020 Node Fetch Team"
+  - field: firstRelease
+    value: 2015
+    url: https://registry.npmjs.org/node-fetch
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/node-fetch/node-fetch
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [data-fetching]
+    url: https://github.com/node-fetch/node-fetch/blob/v3.3.2/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "minimal code for a `window.fetch` compatible API"
+  - field: runtime
+    value: [node]
+    url: https://github.com/node-fetch/node-fetch/blob/v3.3.2/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "compatible API on Node.js runtime"
+  - field: runtimeMin
+    value: Node.js 12
+    url: https://github.com/node-fetch/node-fetch/blob/v3.3.2/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"node": "^12.20.0 || ^14.13.1 || >=16.0.0"'
+  - field: installMethod
+    value: npm
+    url: https://github.com/node-fetch/node-fetch/blob/v3.3.2/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install node-fetch"
+  - field: license
+    value: MIT
+    url: https://github.com/node-fetch/node-fetch/blob/v3.3.2/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/node-fetch/node-fetch/blob/v3.3.2/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: discord
+    value: https://discord.gg/Zxbndcm
+    url: https://github.com/node-fetch/node-fetch/blob/v3.3.2/README.md
+    checkedAt: 2026-11-16
+    via: page
+  - field: npmName
+    value: node-fetch
+    url: https://registry.npmjs.org/node-fetch/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "279729609 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/node-fetch
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 34871
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/node-fetch
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 1817321
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/node-fetch
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/node-fetch/node-fetch/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2023-08-23
+    url: https://api.github.com/repos/node-fetch/node-fetch/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 8846
+    url: https://api.github.com/repos/node-fetch/node-fetch
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 108
+    url: https://api.github.com/repos/node-fetch/node-fetch/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, docs, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, headlessApi, runsAs, renderingModes, contentStore, databases, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, usageShare, reportedInstalls, packagistName, pluginDirectory, pluginCount, forum, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, lastCommitDate, latestPrereleaseDate]
+unreadable: []
+notes: >
+  Boundary ruling for wave 62: node-fetch is an HTTP client, a helper library, accepted under the data-fetching category; the CSV status accepted stands. No homepage: GitHub lists none and the README names no site; the repository README is the documentation, and its docs folder is part of the repository. The current major is 3: the highest stable release is v3.3.2 (2023-07-25). The v2.7.0 release (2023-08-23) is the newest stable release by date; it is on the 2.x line, which the README keeps for CommonJS users, and it is the latestReleaseDate under the newest-by-date rule. The npm latest tag is 3.3.2, and the npm package node-fetch also serves the cjs tag at 2.6.7 and a release-2.x tag at 2.7.0; the weekly figure counts downloads of all versions of the package node-fetch. The README's install section names npm install node-fetch; npm install node-fetch@2 for CommonJS is the 2.x route and is not recorded as a second installMethod. The ESM-only note for 3.x (require() not supported) is a compatibility statement, not a field. The runtimeMin comes from the engines field at the v3.3.2 tag; the package.json version field there still reads 3.1.1, a stale value that is not recorded. The LICENSE copyright line names the Node Fetch Team, and the README Team section lists individuals (David Frank, Jimmy Wärting, Antoni Kepinski, Richie Bendall, Gregor Martynus), so the maintainer stays the team as the license names it. The dependency counts come from ecosyste.ms for the package node-fetch; its repository link for the package still points to the former bitinn/node-fetch address, so the repository fact is taken from the GitHub API for node-fetch/node-fetch instead. The Discord link is a README badge with the alt text Discord; it is the project's own chat. Open Collective support is a donation link, not a field. The README names isomorphic-unfetch and cross-fetch for isomorphic usage, which is a pointer to related libraries with a different purpose and is not an alternativeTo statement.

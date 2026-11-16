@@ -1,0 +1,133 @@
+id: msgspec
+name: msgspec
+status: accepted
+checkedAt: 2026-11-16
+description: "Fast serialization and validation library for Python, with built-in JSON, MessagePack, YAML and TOML support."
+facts:
+  - field: homepage
+    value: https://msgspec.dev
+    url: https://msgspec.dev/
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/msgspec/msgspec
+    url: https://api.github.com/repos/msgspec/msgspec
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://msgspec.dev
+    url: https://msgspec.dev/
+    checkedAt: 2026-11-16
+    via: page
+  - field: maintainer
+    value: Jim Crist-Harif
+    url: https://github.com/msgspec/msgspec/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2021, Jim Crist-Harif"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/msgspec
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: "2021"
+    url: https://api.github.com/repos/msgspec/msgspec/releases?per_page=100
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: Python
+    url: https://api.github.com/repos/msgspec/msgspec
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [serialization, validation]
+    url: https://github.com/msgspec/msgspec/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "serialization and validation library"
+  - field: runtime
+    value: [python]
+    url: https://msgspec.dev/install.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Note that Python >= 3.10 is required"
+  - field: runtimeMin
+    value: "3.10"
+    url: https://msgspec.dev/install.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Note that Python >= 3.10 is required"
+  - field: installMethod
+    value: pip install msgspec
+    url: https://msgspec.dev/install.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "pip install msgspec"
+  - field: installMethod
+    value: conda install msgspec -c conda-forge
+    url: https://msgspec.dev/install.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "conda install msgspec -c conda-forge"
+  - field: alternativeTo
+    value: [pydantic]
+    url: https://msgspec.dev/benchmarks.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "~12x faster than pydantic V2"
+  - field: license
+    value: BSD-3-Clause
+    url: https://api.github.com/repos/msgspec/msgspec
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/msgspec/msgspec/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "New BSD"
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/msgspec/msgspec/releases?per_page=100
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-29
+    url: https://api.github.com/repos/msgspec/msgspec/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 4225
+    url: https://api.github.com/repos/msgspec/msgspec
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 93
+    url: https://api.github.com/repos/msgspec/msgspec/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiName
+    value: msgspec
+    url: https://pypi.org/pypi/msgspec/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: "38179244 (last month)"
+    url: https://pypistats.org/api/packages/msgspec/recent
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 166
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/msgspec
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 235
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/msgspec
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, importsFrom, maintainerType, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, pricingPage, paidEdition, freeTier, selfHostOption, regions, apiLimits, packagistName, npmName, crateName, endoflifeId, supportedVersions, outputDir, usageShare, reportedInstalls, hostedOffering]
+unreadable: []
+notes: >
+  msgspec is the Python package of the msgspec/msgspec repository, installed with pip or conda; the install page names the optional toml and yaml extras (tomli, tomli_w, PyYAML) for the base install, which are no install route of their own. The license wording: GitHub detects BSD-3-Clause, the README and the LICENSE file say "New BSD", so one entry is recorded. The LICENSE copyright line and the homepage footer both name Jim Crist-Harif. msgspec.dev is the project's own site, and its install page msgspec.dev/install.html is the page cited for runtime and install routes. currentMajor is 0 because the project is pre-1.0 and its latest stable release is 0.22.0 (2026-09-29); the minor line 0.22 goes to notes, per the major-only rule. firstRelease is 2021: the first GitHub release 0.1.0 and the first PyPI upload 0.0.1 are both dated 2021-02-23. The PyPI requires_python field is also >=3.10 for 0.22.0. The homepage's "Used By" section names NautilusTrader, Litestar, Sanic, Mosec, Pioreactor, Zero, anyWidget, Ravyn, FastStream, django-modern-rest and Meltano; these are named by the project as users, not recorded as relationships. The docs have a "Porting from orjson" guide under "Porting guides"; orjson is no record id, so importsFrom stays empty. The benchmarks page compares msgspec with mashumaro, pydantic and cattrs; pydantic is the only one of the three with a record row, so alternativeTo holds pydantic, and the README also names pydantic as a validation library whose conveniences msgspec keeps. The Why page names json, ujson and orjson, which are no record ids. The PyPI monthly figure is pypistats last_month (38179244, 2026-11-16); its last-week figure is 9603403. The ecosyste.ms counts are dependents on PyPI. The homepage says messages are validated during deserialization against schemas defined with standard Python type annotations, and that the library has no required dependencies.

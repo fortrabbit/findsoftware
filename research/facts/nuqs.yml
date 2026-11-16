@@ -1,0 +1,127 @@
+id: nuqs
+name: nuqs
+status: accepted
+checkedAt: 2026-11-16
+description: Type-safe state manager for React that keeps state in the URL query string.
+facts:
+  - field: homepage
+    value: https://nuqs.dev
+    url: https://api.github.com/repos/47ng/nuqs
+    checkedAt: 2026-11-16
+    via: api
+  - field: repository
+    value: https://github.com/47ng/nuqs
+    url: https://api.github.com/repos/47ng/nuqs
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://nuqs.dev/docs/installation
+    url: https://nuqs.dev/docs/installation
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Install the nuqs package with your favourite package manager"
+  - field: firstRelease
+    value: "2020"
+    url: https://api.github.com/repos/47ng/nuqs/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: François Best
+    url: https://github.com/47ng/nuqs/blob/next/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2020 François Best"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/47ng/nuqs/blob/next/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2020 François Best"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/47ng/nuqs
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/47ng/nuqs
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [state]
+    url: https://github.com/47ng/nuqs/blob/next/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Type-safe search params state manager for React frameworks"
+  - field: installMethod
+    value: npm
+    url: https://github.com/47ng/nuqs/blob/next/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install nuqs"
+  - field: license
+    value: MIT
+    url: https://github.com/47ng/nuqs/blob/next/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/47ng/nuqs/blob/next/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: currentMajor
+    value: 2
+    url: https://api.github.com/repos/47ng/nuqs/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-10
+    url: https://api.github.com/repos/47ng/nuqs/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 10908
+    url: https://api.github.com/repos/47ng/nuqs
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 77
+    url: https://api.github.com/repos/47ng/nuqs/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: nuqs
+    url: https://registry.npmjs.org/nuqs/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: 7771550 for 2026-11-01 to 2026-11-07
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/nuqs
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/nuqs
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/nuqs
+    checkedAt: 2026-11-16
+    via: api
+  - field: x
+    value: https://x.com/nuqs47ng
+    url: https://nuqs.dev
+    checkedAt: 2026-11-16
+    via: page
+  - field: bluesky
+    value: https://bsky.app/profile/nuqs.dev
+    url: https://nuqs.dev
+    checkedAt: 2026-11-16
+    via: page
+notFound: [basedOn, forkOf, successorOf, alternativeTo, parent, hqCountry, runtime, runtimeMin, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, newsletter, wikidata, endoflifeId, supportedVersions]
+unreadable: []
+notes: >
+  The highest stable GitHub release is v2.10.3 (2026-11-10), which matches the npm latest version; the major is 2 and the nuqs v1 line is for older Next.js versions per the docs. The default branch is next, and the LICENSE on it carries the copyright line for François Best. The package sits in the packages/nuqs folder of the repository, so stars and contributors belong to the repository, which also holds the package's docs site. The README lists pnpm, yarn, bun, deno and vlt commands; all install the same npm package and are recorded as one installMethod. The adapters page lists the frameworks: Next.js app and pages routers (Next.js 14.2 or newer), a React single-page app, Remix, React Router v6, v7 and v8, and TanStack Router, which the README marks as experimental and not covering TanStack Start. The docs say the React SPA adapter has no server, so shallow false has no effect there; no runsAs is recorded because no page says where the library runs. The README says "for React frameworks" and does not call nuqs a binding or plugin of React, so no basedOn is recorded. The README says parsers do not validate their input and suggests a schema library such as Zod. The README says the state works like useState, but is stored in the URL query string. The README describes the useQueryState hook for one key and useQueryStates for several keys, a loader for parsing search params on the server, and a search-params cache for reading parsed keys in nested server components.The limits page says browsers rate-limit the History API, so URL updates are queued and throttled, and the README says the returned state updates instantly while only the URL changes are throttled.The sponsor pages are not paid editions. The ecosyste.ms dependent counts are both zero as the source reports them. Social links come from the homepage's footer and sidebar (x.com/nuqs47ng and bsky.app/profile/nuqs.dev); the YouTube channel is not a field.

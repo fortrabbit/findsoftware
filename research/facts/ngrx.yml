@@ -1,0 +1,122 @@
+id: ngrx
+name: NgRx
+status: accepted
+checkedAt: 2026-11-16
+description: RxJS-based global state management library for Angular applications, with actions, reducers, selectors and effects.
+facts:
+  - field: homepage
+    value: https://ngrx.io
+    url: https://ngrx.io/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Reactive State for Angular"
+  - field: repository
+    value: https://github.com/ngrx/platform
+    url: https://api.github.com/repos/ngrx/platform
+    checkedAt: 2026-11-16
+    via: api
+  - field: x
+    value: https://x.com/ngrx_io
+    url: https://ngrx.io/
+    checkedAt: 2026-11-16
+    via: page
+  - field: discord
+    value: https://discord.com/invite/ngrx
+    url: https://ngrx.io/
+    checkedAt: 2026-11-16
+    via: page
+  - field: docs
+    value: https://ngrx.io/guide/store
+    url: https://github.com/ngrx/platform/blob/main/projects/www/src/app/pages/guide/store/index.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Store is RxJS powered global state management for Angular applications, inspired by Redux."
+  - field: maintainer
+    value: NgRx
+    url: https://github.com/ngrx/platform/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "NgRx is a community-driven project"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/ngrx/platform
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [state]
+    url: https://github.com/ngrx/platform/blob/main/projects/www/src/app/pages/guide/store/index.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Store is RxJS powered global state management for Angular applications, inspired by Redux."
+  - field: basedOn
+    value: angular
+    url: https://github.com/ngrx/platform/blob/main/projects/www/src/app/pages/guide/store/index.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "designed to help write performant, consistent applications on top of Angular"
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/ngrx/platform
+    checkedAt: 2026-11-16
+    via: api
+  - field: installMethod
+    value: ng add
+    url: https://github.com/ngrx/platform/blob/main/projects/www/src/app/pages/guide/store/install.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "ng add @ngrx/store"
+  - field: license
+    value: MIT
+    url: https://github.com/ngrx/platform/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 22
+    url: https://registry.npmjs.org/@ngrx%2fstore/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: "2026-09-10"
+    url: https://registry.npmjs.org/@ngrx%2fstore
+    checkedAt: 2026-11-16
+    via: api
+  - field: firstRelease
+    value: 2015
+    url: https://registry.npmjs.org/@ngrx%2fstore
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 8344
+    url: https://api.github.com/repos/ngrx/platform
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 454
+    url: https://api.github.com/repos/ngrx/platform/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: "@ngrx/store"
+    url: https://registry.npmjs.org/@ngrx%2fstore
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: 1304960 for 2026-11-01 to 2026-11-07
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@ngrx%2fstore
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 806
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@ngrx%2fstore
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 27686
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@ngrx%2fstore
+    checkedAt: 2026-11-16
+    via: api
+notFound: [alternativeTo, forkOf, successorOf, parent, hqCountry, wikidata, pricingPage, paidEdition, hostedOffering, runsAs, renderingModes, runtime, runtimeMin, databases, adminUi, contentStore, templating, i18n, sso, userRoles, importsFrom, usageShare, reportedInstalls, pluginDirectory, forum, subreddit, mastodon, bluesky, newsletter, livePreview, multisite, headlessApi]
+unreadable: []
+notes: >
+  The ngrx.io guide pages answer with an application shell that carries no page text, so the guide is read from the site source in the repository (projects/www). The repository is a monorepo of the NgRx packages (store, effects, signals, router-store, component-store, entity, store-devtools and others); the stars and contributors belong to the monorepo, and the npm figure is for @ngrx/store, the package the install page names with ng add. The repository has no GitHub releases, so the version and date come from the npm registry: the latest stable version is 22.0.1 of September 2026, and the newest prerelease (22.0.0-rc.0, August 2026) is older than it, so no latest prerelease date is recorded. The npm dist-tag beta points to 6.0.0-beta.2 from 2018, which is older than the stable line. The first npm upload, 1.0.0 of December 2015, is older than the oldest git tag (6.0.0, 2018); the npm package is the same product, so the year is taken from it. The index page says Store is "inspired by Redux"; that is a relationship in the notes, not a basedOn statement. The license is MIT in the LICENSE file (the GitHub API reports no license) and the copyright line names four individuals; the maintainer is recorded as NgRx, the name the project gives itself in its README. The homepage also links a GitHub sponsorship page and a dev.to blog; not recorded as facts. The repository also ships an ESLint plugin, schematics and a devtools package as packages of the same monorepo.

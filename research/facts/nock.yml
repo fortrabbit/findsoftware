@@ -1,0 +1,112 @@
+id: nock
+name: Nock
+status: accepted
+checkedAt: 2026-11-16
+description: HTTP mocking and expectations library for Node.js that intercepts outgoing requests in tests.
+facts:
+  - field: repository
+    value: https://github.com/nock/nock
+    url: https://api.github.com/repos/nock/nock
+    checkedAt: 2026-11-16
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/nock
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Pedro Teixeira
+    url: https://github.com/nock/nock/blob/v15.0.6/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2011-2019 Pedro Teixeira and other contributors"
+  - field: firstRelease
+    value: 2011
+    url: https://registry.npmjs.org/nock
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/nock/nock
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [testing]
+    url: https://github.com/nock/nock/blob/v15.0.6/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "HTTP server mocking and expectations library"
+  - field: runtime
+    value: [node]
+    url: https://github.com/nock/nock/blob/v15.0.6/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "HTTP server mocking and expectations library for Node.js"
+  - field: runtimeMin
+    value: Node.js 22
+    url: https://github.com/nock/nock/blob/v15.0.6/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"node": ">=22.20.0"'
+  - field: installMethod
+    value: npm
+    url: https://github.com/nock/nock/blob/v15.0.6/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install --save-dev nock"
+  - field: license
+    value: MIT
+    url: https://github.com/nock/nock/blob/v15.0.6/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/nock/nock/blob/v15.0.6/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MIT License"
+  - field: npmName
+    value: nock
+    url: https://registry.npmjs.org/nock/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "8666143 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/nock
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 13189
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/nock
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 130286
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/nock
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 15
+    url: https://api.github.com/repos/nock/nock/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-05
+    url: https://api.github.com/repos/nock/nock/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 13141
+    url: https://api.github.com/repos/nock/nock
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 255
+    url: https://api.github.com/repos/nock/nock/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, docs, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, headlessApi, runsAs, renderingModes, contentStore, databases, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, usageShare, reportedInstalls, packagistName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, lastCommitDate, latestPrereleaseDate]
+unreadable: []
+notes: >
+  Boundary ruling for wave 62: nock is a testing library (a mocking tool for Node tests), accepted under the testing category; the CSV status accepted stands. No homepage: GitHub lists none and the README names no site, so the docs fact is absent too. The README is the only documentation. The npm package nock has the same name and owner as the repository. The LICENSE copyright line (2011-2019, Pedro Teixeira and other contributors) names the maintainer; the README's contributor list and the GitHub organization name other people, so they are not recorded as maintainer. The GitHub release v15.0.0 is flagged prerelease, but v15.0.1 to v15.0.6 are stable and v15.0.6 is the highest stable release; the npm dist-tag latest is 15.0.6 too. The v15.0.0-beta.16 prerelease of 2026-10-05 is older than the latest release, so it is not recorded as latestPrereleaseDate. The runtimeMin comes from the engines field of package.json at v15.0.6; the README's Node version support section (a table of past nock versions by Node version) is compatibility, not a field. The npm figure counts downloads of the package nock, the install route the README names. Stars and contributors belong to the nock repository. The README points to got and axios only in its common issues section (retry and adapter configuration), not as alternatives, so no alternativeTo. The project takes sponsors through Open Collective, a donation link with no record field. The features in the README (interceptors, recording, Nock Back fixtures, NetConnect control) are not fields.

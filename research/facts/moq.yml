@@ -1,0 +1,102 @@
+id: moq
+name: Moq
+status: accepted
+checkedAt: 2026-11-16
+description: Mocking library for .NET that creates test doubles of interfaces and classes from lambda expressions.
+facts:
+  - field: repository
+    value: https://github.com/devlooped/moq
+    url: https://api.github.com/repos/devlooped/moq
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/devlooped/moq/wiki/Quickstart
+    url: https://github.com/devlooped/moq/blob/v4.21.0/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "See our Quickstart examples to get a feeling of the extremely simple API"
+  - field: firstRelease
+    value: 2010
+    url: https://api.github.com/repos/devlooped/moq/commits/8f948a8b19eea2535f656fe03bbe3f937b421644
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Clarius Consulting, Manas Technology Solutions, InSTEDD and Contributors
+    url: https://github.com/devlooped/moq/blob/v4.21.0/License.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2007, Clarius Consulting, Manas Technology Solutions, InSTEDD,"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/devlooped
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [mocking]
+    url: https://github.com/devlooped/moq/blob/v4.21.0/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The most popular and friendly mocking library for .NET"
+  - field: language
+    value: C#
+    url: https://api.github.com/repos/devlooped/moq
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: dotnet
+    url: https://github.com/devlooped/moq/blob/v4.21.0/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "mocking library for .NET"
+  - field: installMethod
+    value: [nuget]
+    url: https://github.com/devlooped/moq/blob/v4.21.0/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "install from NuGet"
+  - field: discord
+    value: https://discord.gg/8PtpGdu
+    url: https://github.com/devlooped/moq/blob/v4.21.0/readme.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Moq channel on Discord"
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/devlooped/moq/blob/v4.21.0/License.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without modification, are permitted"
+  - field: currentMajor
+    value: 4
+    url: https://github.com/devlooped/moq/releases/tag/v4.21.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-24
+    url: https://github.com/devlooped/moq/releases/tag/v4.21.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 6411
+    url: https://api.github.com/repos/devlooped/moq
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 7
+    url: https://api.github.com/repos/devlooped/moq/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: nugetName
+    value: Moq
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:Moq
+    checkedAt: 2026-11-16
+    via: api
+  - field: nugetDownloads
+    value: "1309752180 total"
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:Moq
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, basedOn, runtimeMin, pricingPage, paidEdition, forum, x, newsletter, pluginDirectory, hqCountry, templating, databases, headlessApi, adminUi, i18n, sso, userRoles, importsFrom, alternativeTo, renderingModes, runsAs, wikidata]
+unreadable: []
+notes: >
+  No homepage: the repository is the project's only web presence that the README or the registry names, so the record has no homepage. The README badges link github.com/moq/moq and the issue tracker is at github.com/moq/moq/issues; that path redirects to devlooped/moq. The default branch (main) README says it "now contains the upcoming version of Moq (v5)" and that the current stable Moq v4.x is on the v4 branch; the project is not archived, and the stable release is v4.21.0 (2026-09-24), so the record stays accepted and currentMajor is the stable 4. The license is recorded from the latest release (v4.21.0, License.txt, BSD-3-Clause); the default branch's license.txt is MIT with the copyright line "Copyright (c) Daniel Cazzulino and Contributors", which belongs to the upcoming v5 and is not a release license. The maintainer follows the copyright line of License.txt at the latest release tag (v4.21.0), the same release the license comes from; the default branch's license.txt reads "Copyright (c) Daniel Cazzulino and Contributors" and belongs to the upcoming v5. The README says Moq was originally developed by Clarius, Manas and InSTEDD. The NuGet package's owners are clarius, Devlooped and kzu. The README says Moq is built to set up dependencies for tests, and that it uses Castle DynamicProxy internally; Castle.Core is a dependency in the nuspec (5.2.1), no record exists, so no basedOn. The v4.21.0 nuspec targets .NETStandard2.0, .NETStandard2.1, net6.0 and .NETFramework4.6.2; these are build targets, not a minimum runtime, so runtimeMin is not recorded. firstRelease is the oldest commit tagged in the repository, v4.0.10827, committed 2010-08-19; NuGet's first real publish is 2011-02-09 (4.0.10827 and 3.1.416.3). The README's Sponsors section and the GitHub Sponsors link are not recorded. The GitHub contributors endpoint reports 7 contributors for the repository.

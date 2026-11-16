@@ -1,0 +1,1 @@
+Nock mocks HTTP servers for Node.js tests and checks the requests a module makes to them. The project has no website of its own, so the [README on GitHub](https://github.com/nock/nock/blob/v15.0.6/README.md) is its documentation.

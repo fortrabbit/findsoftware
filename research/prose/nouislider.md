@@ -1,0 +1,1 @@
+noUiSlider is a JavaScript range slider with no dependencies. It supports non-linear ranges, ARIA attributes, keyboard control and multi-touch input on iOS, Android and Windows devices. The project's [site](https://refreshless.com/nouislider/) holds the documentation and examples.

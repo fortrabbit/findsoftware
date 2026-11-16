@@ -1,0 +1,134 @@
+id: nunjucks
+name: Nunjucks
+status: accepted
+checkedAt: 2026-11-16
+description: Templating engine for JavaScript, inspired by jinja2, that renders in Node.js and in the browser.
+facts:
+  - field: homepage
+    value: https://mozilla.github.io/nunjucks/
+    url: https://api.github.com/repos/mozilla/nunjucks
+    checkedAt: 2026-11-16
+    via: api
+  - field: repository
+    value: https://github.com/mozilla/nunjucks
+    url: https://api.github.com/repos/mozilla/nunjucks
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://mozilla.github.io/nunjucks/
+    url: https://github.com/mozilla/nunjucks/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "View the docs here"
+  - field: firstRelease
+    value: "2012"
+    url: https://registry.npmjs.org/nunjucks
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: James Long
+    url: https://github.com/mozilla/nunjucks/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2012-2015, James Long"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/mozilla/nunjucks/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2012-2015, James Long"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/mozilla/nunjucks
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/mozilla/nunjucks
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [templating]
+    url: https://mozilla.github.io/nunjucks/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A rich and powerful templating language for JavaScript"
+  - field: runtime
+    value: [node]
+    url: https://mozilla.github.io/nunjucks/getting-started.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Nunjucks supports all modern browsers and any version of Node.js currently supported by the Node.js Foundation"
+  - field: runtimeMin
+    value: "6"
+    url: https://github.com/mozilla/nunjucks/blob/v3.2.4/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"node": ">= 6.9.0"'
+  - field: installMethod
+    value: npm
+    url: https://github.com/mozilla/nunjucks/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install nunjucks"
+  - field: installMethod
+    value: script tag
+    url: https://mozilla.github.io/nunjucks/getting-started.html
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Simply include nunjucks with a script tag on the page"
+  - field: license
+    value: BSD-2-Clause
+    url: https://api.github.com/repos/mozilla/nunjucks
+    checkedAt: 2026-11-16
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/mozilla/nunjucks/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without"
+  - field: currentMajor
+    value: 3
+    url: https://api.github.com/repos/mozilla/nunjucks/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2023-04-19
+    url: https://api.github.com/repos/mozilla/nunjucks/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 9006
+    url: https://api.github.com/repos/mozilla/nunjucks
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 120
+    url: https://api.github.com/repos/mozilla/nunjucks/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: nunjucks
+    url: https://registry.npmjs.org/nunjucks/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: 4928999 for 2026-11-01 to 2026-11-07
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/nunjucks
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 2944
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/nunjucks
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 68715
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/nunjucks
+    checkedAt: 2026-11-16
+    via: api
+notFound: [basedOn, forkOf, successorOf, alternativeTo, parent, hqCountry, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions]
+unreadable: []
+notes: >
+  Mozilla hosts the repository (github.com/mozilla/nunjucks) and the site (mozilla.github.io/nunjucks), but the LICENSE copyright line and the author in package.json both name James Long, so the maintainer follows the LICENSE and Mozilla is not recorded as maintainer; a reviewer may decide otherwise. The templating page says "Nunjucks is essentially a port of jinja2"; a port is not a based-on or fork statement, so no basedOn, forkOf or alternativeTo is recorded, and the FAQ on compatibility is read as the relationship. Runtime is node only: the getting-started page names Node and browsers together and a library that names both records no runsAs. The homepage lists block inheritance, autoescaping, macros and asynchronous control as language features. The browser route loads nunjucks.js (full compiler) or nunjucks-slim.js (precompiled templates only). The runtimeMin value is the major of the engines field of package.json at the highest stable tag v3.2.4 ('>= 6.9.0'); the FAQ states support for any Node.js version still supported by the Node.js Foundation, which is recorded as the runtime sentence and not as a minimum. The templating page warns that nunjucks does not sandbox execution, so user-defined templates or user content in template definitions are unsafe on the server and can cause cross-site scripting in the browser, which a strong content security policy mitigates. The FAQ says the templates are only partly compatible with jinja2 and names an experimental installJinjaCompat API. The README names a Matrix room (#nunjucks:mozilla.org) for help; no field holds chat rooms, so it is not recorded. The highest stable release v3.2.4 (2023-04-19) matches npm latest. Stars and contributors belong to the repository, which is a single package. Dependent counts are from ecosyste.ms for the npm package.

@@ -1,0 +1,1 @@
+NSubstitute is a test double library for .NET test code, used in arrange-act-assert tests. The project ships it as a NuGet package, and its README lists optional Roslyn analysers for C# and Visual Basic projects as separate packages.

@@ -1,0 +1,1 @@
+node-qrcode generates QR code and 2D barcode images, and its README says it works on the server and in the browser. In the browser it runs through a module bundler or a precompiled bundle from the package. The repository has no website of its own, so the [README on GitHub](https://github.com/soldair/node-qrcode/blob/v1.5.4/README.md) is the documentation.

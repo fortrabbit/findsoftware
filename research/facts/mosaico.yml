@@ -1,0 +1,129 @@
+id: mosaico
+name: Mosaico
+status: accepted
+checkedAt: 2026-11-16
+description: Open-source JavaScript email template editor for responsive HTML emails, served alongside the creator's own backend.
+facts:
+  - field: homepage
+    value: https://mosaico.io/
+    url: https://mosaico.io/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Free email template builder"
+  - field: repository
+    value: https://github.com/voidlabs/mosaico
+    url: https://api.github.com/repos/voidlabs/mosaico
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://github.com/voidlabs/mosaico/wiki
+    url: https://github.com/voidlabs/mosaico/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mosaico Basics"
+  - field: firstRelease
+    value: 2015
+    url: https://github.com/voidlabs/mosaico/releases/tag/v0.11
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Void Labs Snc
+    url: https://www.voxmail.it/contatti
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Void Labs Snc"
+  - field: maintainerType
+    value: company
+    url: https://www.voxmail.it/contatti
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Void Labs Snc"
+  - field: hqCountry
+    value: IT
+    url: https://www.voxmail.it/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "erogato da una azienda italiana"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/voidlabs
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [email-editor]
+    url: https://github.com/voidlabs/mosaico/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Responsive Email Template Editor"
+  - field: language
+    value: JavaScript
+    url: https://github.com/voidlabs/mosaico/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mosaico is a JavaScript library"
+  - field: basedOn
+    value: [knockout]
+    url: https://github.com/voidlabs/mosaico/wiki/Developers
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mosaico is heavily based on Knockout.js"
+  - field: runsAs
+    value: [browser]
+    url: https://github.com/voidlabs/mosaico/wiki/Serving-Mosaico
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mosaico is a frontend/javascript application"
+  - field: installMethod
+    value: [source-build]
+    url: https://github.com/voidlabs/mosaico/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Download/install the dependencies"
+  - field: installMethod
+    value: [docker]
+    url: https://github.com/voidlabs/mosaico/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "We bundle a Dockerfile based on Alpine linux"
+  - field: license
+    value: GPL-3.0
+    url: https://github.com/voidlabs/mosaico/blob/master/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "GNU GENERAL PUBLIC LICENSE"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/voidlabs/mosaico/releases/tag/v0.18.11
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2025-08-22
+    url: https://github.com/voidlabs/mosaico/releases/tag/v0.18.11
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 1783
+    url: https://api.github.com/repos/voidlabs/mosaico
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 10
+    url: https://api.github.com/repos/voidlabs/mosaico/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: x
+    value: https://twitter.com/MosaicoEditor
+    url: https://mosaico.io/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Tweet di @MosaicoEditor"
+  - field: newsletter
+    value: https://mosaico.voxmail.it/user/register
+    url: https://github.com/voidlabs/mosaico/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Subscribe to our newsletter to get updates"
+notFound: [pricingPage, paidEdition, forum, discord, pluginDirectory, wikidata, runtime, runtimeMin, templating, databases, headlessApi, adminUi, i18n, sso, userRoles, importsFrom, alternativeTo, renderingModes]
+unreadable: []
+notes: >
+  The maintainer is the company behind the VOXmail service: the homepage says Mosaico is "brought to you by italian email marketing firm VOXmail.it VAT# IT02137700395", the VOXmail footer reads "Void Labs Snc ... P.IVA 02137700395" (same VAT number), and the VOXmail contact page gives the Void Labs Snc postal address in Faenza (RA). The address is not recorded as a field; hqCountry IT rests on the VOXmail statement that the service is delivered by an Italian company. The README offers "COMMERCIAL support" through a sales address; paid support is not an edition, so paidEdition is not recorded. The repository's GitHub language is HTML; the README says "Mosaico is a JavaScript library", and the language fact follows the README. The README says "Mosaico itself does not define what you can edit or what styles you can change: this is defined by the template"; the build route runs npm install and grunt for a local server on port 9006, and the Dockerfile route serves the same port. The README says the project needs NodeJS v24.0 or higher and npm 8.3 for changes to dependencies; that is a build requirement, not a runtime, so no runtime is recorded. The wiki's Serving page says Mosaico "needs a server based backend" for image upload, email download and send, and lists PHP, Python, .NET and Ruby backends written by other people; the backend's process model is not stated, so runsAs is browser only, from the sentence that calls it a frontend/javascript application. The Developers wiki page was last edited in 2015 and is the only page that says it is "heavily based on Knockout.js"; the knockout record is the parent named. The README lists MailTrain, GoodEnough's Mosaico and CiviCRM as projects that use Mosaico; those are not basedOn statements. The README names "Mosaico Basics" (the wiki) as its documentation. The live demo at mosaico.io has a custom backend and a second template (versafluid) that is not in the open-source distribution, per the README. The README and the wiki name no npm package as an install route (the README builds with npm install from a clone), so npmName and the npm download figure are not recorded; an npm package named mosaico exists with the repository's name. The Serving Mosaico wiki page says the open source distribution provides "a minimal node.js backend suitable just for tests". The template language is described in the wiki's Template-language page for creators' email templates; it is not a templating engine and is not recorded as templating. firstRelease is the oldest tag or release v0.11 (2015-09-28); the repository was created 2015-06-04; the npm package's first version is dated 2016-11-23. The GitHub release v0.18.11 is the newest stable release; the 2022 releases marked prerelease are older than it, so no latestPrereleaseDate is recorded. currentMajor records the major 0 only.

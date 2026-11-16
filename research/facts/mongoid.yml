@@ -1,0 +1,131 @@
+id: mongoid
+name: Mongoid
+status: accepted
+checkedAt: 2026-11-16
+description: Object-Document Mapper framework for MongoDB in Ruby.
+facts:
+  - field: homepage
+    value: https://www.mongodb.com/docs/mongoid/current/
+    url: https://www.mongodb.com/docs/mongoid/current/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mongoid: The ODM for MongoDB in Ruby"
+  - field: repository
+    value: https://github.com/mongodb/mongoid
+    url: https://api.github.com/repos/mongodb/mongoid
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://www.mongodb.com/docs/mongoid/current/
+    url: https://github.com/mongodb/mongoid/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "User documentation"
+  - field: firstRelease
+    value: 2009
+    url: https://rubygems.org/api/v1/versions/mongoid.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: MongoDB, Inc.
+    url: https://www.mongodb.com/legal/terms-of-use
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Legal Department, MongoDB, Inc., 1633 Broadway, 38th Floor New York, NY 10019."
+  - field: maintainerType
+    value: company
+    url: https://www.mongodb.com/legal/terms-of-use
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Legal Department, MongoDB, Inc., 1633 Broadway, 38th Floor New York, NY 10019."
+  - field: hqCountry
+    value: US
+    url: https://www.mongodb.com/legal/terms-of-use
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Legal Department, MongoDB, Inc., 1633 Broadway, 38th Floor New York, NY 10019."
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/mongodb
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [odm]
+    url: https://github.com/mongodb/mongoid/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mongoid is an ODM (Object-Document Mapper) framework for MongoDB in Ruby."
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/mongodb/mongoid
+    checkedAt: 2026-11-16
+    via: api
+  - field: runtime
+    value: ruby
+    url: https://github.com/mongodb/mongoid/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "framework for MongoDB in Ruby"
+  - field: runtimeMin
+    value: "2.7"
+    url: https://github.com/mongodb/mongoid/blob/v9.1.2/mongoid.gemspec
+    checkedAt: 2026-11-16
+    via: page
+    quote: 's.required_ruby_version = ">= 2.7"'
+  - field: databases
+    value: [mongodb]
+    url: https://github.com/mongodb/mongoid/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Mongoid is an ODM (Object-Document Mapper) framework for MongoDB in Ruby."
+  - field: installMethod
+    value: [bundler]
+    url: https://www.mongodb.com/docs/mongoid/current/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Install Mongoid by adding it to your project's Gemfile"
+  - field: forum
+    value: https://developer.mongodb.com/community/forums/tags/c/drivers-odms-connectors/7/mongoid-odm
+    url: https://github.com/mongodb/mongoid/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "MongoDB Community Forum"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/mongodb/mongoid
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 9
+    url: https://github.com/mongodb/mongoid/releases/tag/v9.1.2
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-12
+    url: https://github.com/mongodb/mongoid/releases/tag/v9.1.2
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 3904
+    url: https://api.github.com/repos/mongodb/mongoid
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 342
+    url: https://api.github.com/repos/mongodb/mongoid/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsName
+    value: mongoid
+    url: https://rubygems.org/api/v1/gems/mongoid.json
+    checkedAt: 2026-11-16
+    via: api
+  - field: rubygemsDownloads
+    value: "49791018 total"
+    url: https://rubygems.org/api/v1/gems/mongoid.json
+    checkedAt: 2026-11-16
+    via: api
+notFound: [basedOn, pricingPage, paidEdition, discord, x, newsletter, pluginDirectory, templating, headlessApi, adminUi, i18n, sso, userRoles, importsFrom, alternativeTo, renderingModes, runsAs, wikidata]
+unreadable: []
+notes: >
+  The rubygems.org record names https://mongoid.org/ as the gem homepage; on 2026-11-16 that host did not answer (no connection, HTTP code 000), so it is not linked and the MongoDB-hosted documentation is the homepage. The README says Mongoid "is built on top of" the Ruby driver, documented at mongodb.com/docs/ruby-driver; the driver is a separate project with no record, so no basedOn. The README lists Stack Overflow and the MongoDB Community Forum; the forum link is the Mongoid ODM section of that forum (tag mongoid-odm), so it is recorded as forum, and the README's issue tracker is the MONGOID project in MongoDB JIRA (not recorded as a field). Compatibility per the README: MRI 2.7 to 4.0, JRuby 9.4 and 10.0, MongoDB server 3.6 to 8.2. The gemspec at the release tag requires ">= 2.7"; the README's MRI range is a tested range, not a minimum. The maintainer is named in the LICENSE copyright line as "MongoDB Inc." (README, "Copyright (c) 2015-Present MongoDB Inc."), and the terms page names the legal entity "MongoDB, Inc.", which is recorded; the older copyright line "Copyright (c) 2009-2016 Durran Jordan" is the original author's and goes here only. The gem authors field reads "The MongoDB Ruby Team". The release line: v9.1.2 (2026-11-12) is the newest stable; v8 and v7 maintenance releases were published 2026-09-17, and v9.1.x is the minor line. firstRelease is the oldest RubyGems version 0.2.5 (2009-10-02); the oldest GitHub release is dated 2015-12-22. The RubyGems figure is the gem's total downloads, not a period.

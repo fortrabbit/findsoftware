@@ -1,0 +1,118 @@
+id: nsubstitute
+name: NSubstitute
+status: accepted
+checkedAt: 2026-11-16
+description: Test double library for .NET that creates substitutes for interfaces and virtual class members, used in arrange-act-assert tests.
+facts:
+  - field: homepage
+    value: https://nsubstitute.github.io
+    url: https://nsubstitute.github.io/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A friendly substitute for .NET mocking libraries"
+  - field: repository
+    value: https://github.com/nsubstitute/NSubstitute
+    url: https://api.github.com/repos/nsubstitute/NSubstitute
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://nsubstitute.github.io/help/creating-a-substitute/
+    url: https://nsubstitute.github.io/help/creating-a-substitute/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The basic syntax for creating a substitute is"
+  - field: firstRelease
+    value: 2009
+    url: https://api.github.com/repos/nsubstitute/NSubstitute/commits/b63bbd1eb8004a4c3a7ac1c48016ab3ce29bba89
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Anthony Egerton, David Tchepak, Alexandr Nikitin and Oleksandr Povar
+    url: https://raw.githubusercontent.com/nsubstitute/NSubstitute/v6.2.0/src/NSubstitute/NSubstitute.csproj
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Anthony Egerton;David Tchepak;Alexandr Nikitin;Oleksandr Povar"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/nsubstitute
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: C#
+    url: https://api.github.com/repos/nsubstitute/NSubstitute
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [mocking]
+    url: https://nsubstitute.github.io/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A friendly substitute for .NET mocking libraries"
+  - field: runtime
+    value: [dotnet]
+    url: https://raw.githubusercontent.com/nsubstitute/NSubstitute/v6.2.0/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "NSubstitute is designed as a friendly substitute for .NET mocking libraries."
+  - field: installMethod
+    value: nuget
+    url: https://nsubstitute.github.io/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Install via NuGet: Install-Package NSubstitute"
+  - field: license
+    value: BSD-3-Clause
+    url: https://raw.githubusercontent.com/nsubstitute/NSubstitute/v6.2.0/src/NSubstitute/NSubstitute.csproj
+    checkedAt: 2026-11-16
+    via: page
+    quote: "BSD-3-Clause"
+  - field: licenseModel
+    value: open-source
+    url: https://raw.githubusercontent.com/nsubstitute/NSubstitute/v6.2.0/LICENSE.txt
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Redistribution and use in source and binary forms, with or without modification"
+  - field: currentMajor
+    value: 6
+    url: https://api.github.com/repos/nsubstitute/NSubstitute/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-08-11
+    url: https://api.github.com/repos/nsubstitute/NSubstitute/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2983
+    url: https://api.github.com/repos/nsubstitute/NSubstitute
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 73
+    url: https://api.github.com/repos/nsubstitute/NSubstitute/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: nugetName
+    value: NSubstitute
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:NSubstitute
+    checkedAt: 2026-11-16
+    via: api
+  - field: nugetDownloads
+    value: 337691344 total
+    url: https://azuresearch-usnc.nuget.org/query?q=packageid:NSubstitute
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 128
+    url: https://packages.ecosyste.ms/api/v1/registries/nuget.org/packages/NSubstitute
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 0
+    url: https://packages.ecosyste.ms/api/v1/registries/nuget.org/packages/NSubstitute
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, headlessApi, runsAs, renderingModes, runtimeMin, contentStore, databases, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, endoflifeId, lastCommitDate, latestPrereleaseDate, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, packagistName]
+unreadable: []
+notes: >
+  Checked 2026-11-16. The maintainer comes from the Authors line of the csproj; the LICENSE.txt copyright line names the first two of them as holders from 2009 (its email addresses are not recorded) and no legal entity, and the repository belongs to the nsubstitute GitHub organization. GitHub reports the license as NOASSERTION because LICENSE.txt is not the standard SPDX text; the csproj PackageLicenseExpression and ecosyste.ms both say BSD-3-Clause. The homepage gives the NuGet install as Install-Package; the README adds optional Roslyn analysers as separate packages (NSubstitute.Analyzers.CSharp and NSubstitute.Analyzers.VisualBasic), not recorded as routes. The csproj targets net8.0 and netstandard2.0, so no runtimeMin is recorded: the netstandard2.0 target covers runtimes older than 8. firstRelease is 2009 from tag v0.0.0, whose commit is dated 2009-07-27; the first NuGet upload is 1.0.0 on 2011-05-17. The README's "Other libraries you may be interested in" names Moq, FakeItEasy and substitute.js with no alternative statement, so alternativeTo is not recorded. The FakeItEasy line ("If you're not sold on NSubstitute's syntax, try FIE!") is a recommendation, not an alternativeTo quote. The NuGet download figure is the package total across all versions. The latest prerelease, v6.0.0-rc.1 (2026-03-15), is older than v6.2.0 and is not recorded.

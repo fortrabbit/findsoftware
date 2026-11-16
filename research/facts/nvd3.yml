@@ -1,0 +1,118 @@
+id: nvd3
+name: NVD3
+status: stub
+checkedAt: 2026-11-16
+description: Reusable charting library that draws charts with d3.js.
+facts:
+  - field: repository
+    value: https://github.com/novus/nvd3
+    url: https://api.github.com/repos/novus/nvd3
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://nvd3-community.github.io/nvd3/examples/documentation.html
+    url: https://github.com/novus/nvd3/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "NEW Documentation!"
+  - field: firstRelease
+    value: "2013"
+    url: https://api.github.com/repos/novus/nvd3/tags
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Novus Partners, Inc.
+    url: https://github.com/novus/nvd3/blob/master/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2011-2014 [Novus Partners, Inc.][novus]"
+  - field: maintainerType
+    value: company
+    url: https://github.com/novus/nvd3/blob/master/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2011-2014 [Novus Partners, Inc.][novus]"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/novus/nvd3
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/novus/nvd3
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [charts]
+    url: https://github.com/novus/nvd3/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A reusable D3 charting library"
+  - field: installMethod
+    value: script tag
+    url: https://github.com/novus/nvd3/blob/master/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Simply add the `nv.d3` assets to your project and include them in your HTML."
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/novus/nvd3/blob/master/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: license
+    value: BSD-3-Clause
+    url: https://github.com/novus/nvd3/blob/master/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "The name Michael Bostock may not be used to endorse or promote products"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/novus/nvd3/blob/master/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Licensed under the Apache License, Version 2.0"
+  - field: currentMajor
+    value: 1
+    url: https://api.github.com/repos/novus/nvd3/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2017-08-24
+    url: https://api.github.com/repos/novus/nvd3/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 7228
+    url: https://api.github.com/repos/novus/nvd3
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 196
+    url: https://api.github.com/repos/novus/nvd3/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmName
+    value: nvd3
+    url: https://registry.npmjs.org/nvd3/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: 149218 for 2026-11-01 to 2026-11-07
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/nvd3
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 84
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/nvd3
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 2884
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/nvd3
+    checkedAt: 2026-11-16
+    via: api
+notFound: [homepage, basedOn, forkOf, successorOf, alternativeTo, parent, hqCountry, runtime, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, importsFrom, paidEdition, pricingPage, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, supportedVersions, runtimeMin]
+unreadable: []
+notes: >
+  Doubt: the homepage in the repository metadata, http://nvd3.org/, does not resolve (no DNS), so the project's own site cannot be read for its status, license or maintainer; the repository, README and LICENSE.md are readable and the GitHub Pages examples and documentation site the README names answers 200 and is recorded as docs. A live project site, or a maintainer statement on whether the project continues, would settle it. The status is stub for that reason, and the import's four-year rule for a project with no release applies on top of it: the highest stable release v1.8.6 (2017-08-24) has no later release, and the last push to the default branch is 2023-09-15. The repository is not archived and no end statement is found. The LICENSE.md holds two license statements: the nvd3.js code under Apache-2.0 and the reproduced d3.js license for a bundled part, which is the three-clause BSD license; GitHub detects no license for the file, and the npm manifest of the latest release says Apache-2.0. The copyright holder is Novus Partners, Inc. from the LICENSE.md line; the README names Novus and a community organization, and no page gives a country or address, so hqCountry is not recorded. The README requires d3.js as a dependency (a minimum version is stated in the README, not recorded here). No basedOn is recorded because a dependency is no based-on statement, and the title "A reusable D3 charting library" names the library's subject, not a parent; a reviewer may decide otherwise. The README says the d3.js 4.x line is not supported and names a work-in-progress fork under another organization; that is not recorded. The README gives browser support, not a process model, and no page says the library runs in the browser, so no runsAs is recorded. The README says the nv.d3.js script should appear after the d3.js script on the page, and that the examples and documentation are served from the GitHub Pages site it names.The first tag v0.9 has the commit date 2013-05-10 and sets firstRelease; the GitHub release list starts at v1.2.0 (2015) and the npm package starts at 0.9.0 (2014). Stars and contributors belong to the repository, which is a single package.

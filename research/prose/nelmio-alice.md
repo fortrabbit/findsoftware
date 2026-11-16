@@ -1,0 +1,3 @@
+Alice generates test fixtures for PHP from YAML, PHP or JSON files. A fixture file declares objects, their properties and the references between them, and placeholders in the file produce generated values through Faker. The [getting started guide](https://github.com/nelmio/alice/blob/main/doc/getting-started.md) and the README example load a file with the NativeLoader class.
+
+The README installs it as a development dependency and describes it as for use while developing or testing. Framework integrations are separate third-party packages, which the README lists for Symfony, Nette, WordPress, Zend Framework 2 and framework-agnostic use.

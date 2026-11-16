@@ -1,0 +1,123 @@
+id: nh3
+name: nh3
+status: accepted
+checkedAt: 2026-11-16
+description: Python binding to the ammonia HTML sanitization library, for cleaning HTML fragments.
+facts:
+  - field: homepage
+    value: https://nh3.readthedocs.io/en/latest/
+    url: https://nh3.readthedocs.io/en/latest/
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/messense/nh3
+    url: https://api.github.com/repos/messense/nh3
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://nh3.readthedocs.io/en/latest/
+    url: https://nh3.readthedocs.io/en/latest/
+    checkedAt: 2026-11-16
+    via: page
+  - field: firstRelease
+    value: 2021
+    url: https://api.github.com/repos/messense/nh3/commits/v0.1.0
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Messense Lv
+    url: https://github.com/messense/nh3/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2021-present Messense Lv"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/messense/nh3/blob/main/LICENSE
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Copyright (c) 2021-present Messense Lv"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/repos/messense/nh3
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [html-sanitizer]
+    url: https://github.com/messense/nh3/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Python bindings to the"
+  - field: language
+    value: Python
+    url: https://github.com/messense/nh3/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Python bindings to the"
+  - field: runtime
+    value: python
+    url: https://github.com/messense/nh3/blob/v0.3.7/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">=3.8"'
+  - field: runtimeMin
+    value: "3.8"
+    url: https://github.com/messense/nh3/blob/v0.3.7/pyproject.toml
+    checkedAt: 2026-11-16
+    via: page
+    quote: 'requires-python = ">=3.8"'
+  - field: installMethod
+    value: pip
+    url: https://github.com/messense/nh3/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "pip install nh3"
+  - field: license
+    value: MIT
+    url: https://github.com/messense/nh3/blob/main/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "This work is released under the MIT license."
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/messense/nh3/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: "2026-08-24"
+    url: https://api.github.com/repos/messense/nh3/releases/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 407
+    url: https://api.github.com/repos/messense/nh3
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 17
+    url: https://api.github.com/repos/messense/nh3/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiName
+    value: nh3
+    url: https://pypi.org/pypi/nh3/json
+    checkedAt: 2026-11-16
+    via: api
+  - field: pypiDownloads
+    value: "10513939 (last week)"
+    url: https://pypistats.org/api/packages/nh3/recent
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 673
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/nh3
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 552
+    url: https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/nh3
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, runsAs, renderingModes, databases, adminUi, headlessApi, contentStore, templating, i18n, multisite, livePreview, userRoles, sso, pricingPage, paidEdition, latestPrereleaseDate, endoflifeId, httpArchiveSites, usageShare, reportedInstalls, discord, x, bluesky, mastodon, newsletter, forum, subreddit, pluginDirectory, wikidata, npmName, nugetName, packagistDownloads, selfHostOption, hostedOffering, regions, apiLimits, dockerPulls]
+unreadable: []
+notes: >
+  Language: the package ships Python bindings, so the language is Python; the GitHub repository language is Rust, because the binding wraps the Rust crate ammonia (github.com/rust-ammonia/ammonia), which is no record and is not basedOn. Version line: v0.3.7 (2026-08-24) is the highest stable GitHub release, so currentMajor is 0 and the minor line 0.3 is the one in use. The first tag v0.1.0 has the commit date 2021-08-03, which sets firstRelease. Runtime: the pyproject sets requires-python to >=3.8 at tag v0.3.7, which sets runtimeMin 3.8. The README says the benchmark shows nh3 "about 20 times faster than the deprecated bleach package"; that is a benchmark sentence, not an alternative or switching statement, so alternativeTo is left empty. The pypistats figure is the rolling last-week count read on 2026-11-16. Maintainer: the LICENSE copyright line names Messense Lv, an individual, and the repository owner is a user account. The homepage is the readthedocs site over https, which is the project's own documentation site and the homepage field of its GitHub repository.

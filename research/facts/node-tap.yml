@@ -1,0 +1,123 @@
+id: node-tap
+name: node-tap
+status: accepted
+checkedAt: 2026-11-16
+description: Test Anything Protocol test framework and command line runner for Node.js.
+facts:
+  - field: homepage
+    value: https://node-tap.org/
+    url: https://node-tap.org/
+    checkedAt: 2026-11-16
+    via: page
+  - field: repository
+    value: https://github.com/tapjs/tapjs
+    url: https://api.github.com/repos/tapjs/tapjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: docs
+    value: https://node-tap.org/basics/
+    url: https://github.com/tapjs/tapjs/blob/tap@21.8.0/src/tap/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Getting started guide"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/tapjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: maintainer
+    value: Isaac Z. Schlueter
+    url: https://github.com/tapjs/tapjs/blob/tap@21.8.0/src/tap/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Isaac Z. Schlueter"
+  - field: firstRelease
+    value: 2011
+    url: https://registry.npmjs.org/tap
+    checkedAt: 2026-11-16
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/tapjs/tapjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: categories
+    value: [test-runner]
+    url: https://github.com/tapjs/tapjs/blob/tap@21.8.0/src/tap/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "A TAP test framework"
+  - field: runtime
+    value: [node]
+    url: https://github.com/tapjs/tapjs/blob/tap@21.8.0/src/tap/README.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "test framework for Node.js"
+  - field: runtimeMin
+    value: Node.js 20
+    url: https://github.com/tapjs/tapjs/blob/tap@21.8.0/src/tap/package.json
+    checkedAt: 2026-11-16
+    via: page
+    quote: '"node": "20 || >=22"'
+  - field: installMethod
+    value: npm
+    url: https://node-tap.org/basics/
+    checkedAt: 2026-11-16
+    via: page
+    quote: "npm install tap --save-dev"
+  - field: license
+    value: BlueOak-1.0.0
+    url: https://github.com/tapjs/tapjs/blob/tap@21.8.0/src/tap/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Blue Oak Model License"
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/tapjs/tapjs/blob/tap@21.8.0/src/tap/LICENSE.md
+    checkedAt: 2026-11-16
+    via: page
+    quote: "Blue Oak Model License"
+  - field: npmName
+    value: tap
+    url: https://registry.npmjs.org/tap/latest
+    checkedAt: 2026-11-16
+    via: api
+  - field: npmWeeklyDownloads
+    value: "379463 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/tap
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentPackages
+    value: 10984
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tap
+    checkedAt: 2026-11-16
+    via: api
+  - field: dependentRepos
+    value: 207491
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tap
+    checkedAt: 2026-11-16
+    via: api
+  - field: currentMajor
+    value: 21
+    url: https://api.github.com/repos/tapjs/tapjs/releases
+    checkedAt: 2026-11-16
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-03
+    url: https://registry.npmjs.org/tap
+    checkedAt: 2026-11-16
+    via: api
+  - field: githubStargazers
+    value: 2429
+    url: https://api.github.com/repos/tapjs/tapjs
+    checkedAt: 2026-11-16
+    via: api
+  - field: contributors
+    value: 104
+    url: https://api.github.com/repos/tapjs/tapjs/contributors?per_page=1
+    checkedAt: 2026-11-16
+    via: api
+notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, headlessApi, runsAs, renderingModes, contentStore, databases, adminUi, templating, i18n, multisite, livePreview, userRoles, sso, paidEdition, pricingPage, usageShare, reportedInstalls, packagistName, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, lastCommitDate, latestPrereleaseDate]
+unreadable: []
+notes: >
+  Boundary ruling for wave 62: node-tap is a testing library and command line runner, accepted under the test-runner category (testing); the CSV status accepted stands. The record is the package tap, which the install docs name, inside the tapjs monorepo: stars and contributors belong to the monorepo, and the npm figures are for the tap package. The highest stable GitHub release is tap@21.8.0 (2026-09-03), which sets currentMajor 21; npm lists tap 21.8.1 as latest (2026-11-03) with no GitHub release object, so latestReleaseDate takes the newest stable registry release by date. The npm package named node-tap was published in 2023 and unpublished, so it is not the registry id. The homepage field on GitHub and the README link the site over http; the https address answers 200 and is recorded. The docs are the site at node-tap.org, whose Getting started guide is the basics page; the install step there is the npm route. The license is the Blue Oak Model License 1.0.0 in src/tap/LICENSE.md; the root LICENSE.md only says that each package under src/ carries its own license, and the repository's other packages are not recorded. The maintainer comes from the author field of the tap package manifest, since the Blue Oak license has no copyright line. The runtimeMin comes from the engines field at the tap@21.8.0 tag. The README calls it a TAP test framework for Node.js; the site also states it supports TypeScript, ESM and CommonJS, which are compatibility statements, not fields. The site lists a Matrix chat room and a GitHub Sponsors page; neither is a field kind, so both stay out of the record. The site documents a nock plugin that loads nock into tap tests and a sinon plugin; these are plugins of tap, so nock gets no basedOn or alternativeTo. The synonyms plugin page explains aliases of assertion names and is not a comparison page. The TypeScript source under src/ is reported by GitHub as JavaScript, recorded as the API states it.
