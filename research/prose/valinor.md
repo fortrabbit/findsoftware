@@ -1,0 +1,3 @@
+Valinor is a PHP library that builds typed objects from raw input such as JSON or plain arrays, and validates that input while it does so. The README says the mapper handles native PHP types and the advanced types that PHPStan and Psalm support, such as shaped arrays and generics, and reports human-readable errors for values that do not fit. The error messages can be translated. A normalization mechanism turns objects back into a data format such as JSON or CSV while keeping their structure.
+
+The documentation names a Symfony bundle and a Mezzio package as separate framework integrations. Its alternatives page lists other mapping packages, among them laravel-data.

@@ -1,0 +1,3 @@
+Valibot is a TypeScript schema library. A schema describes the shape of a data set, and Valibot checks unknown data against it at runtime while the same schema gives the static type. Each validation and transformation is a separate function, so a bundler keeps only the functions a project imports. The [installation guide](https://valibot.dev/guides/installation/) lists the install routes for Node, Bun and Deno.
+
+The project ships a codemod that converts Zod schemas, and the [Zod migration guide](https://valibot.dev/guides/migrate-from-zod/) describes the move. Further migration guides cover other schema libraries, and error messages can be translated through a separate i18n package.

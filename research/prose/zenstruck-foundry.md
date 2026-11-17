@@ -1,0 +1,5 @@
+Foundry is a PHP library for creating test and development data with factory classes. A factory creates and persists an object, and any field the caller does not set gets random data. Stories extract a specific database state so tests and dev fixtures can reuse it, and the foundry:load-fixtures command loads stories marked with the AsFixture attribute into a database, mainly in dev mode. The README says it supports doctrine/orm and doctrine/mongodb-odm, alone or combined. The [documentation](https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html) also covers a PHPUnit extension and factories declared as services.
+
+## Worth knowing
+
+The docs say the library requires the database to be reset before each test, which the packaged ResetDatabase attribute handles. Without Symfony Flex, the bundle has to be enabled by hand in the test and dev environments, and the make:* commands need Symfony MakerBundle. The Behat integration is a separate package that the docs call experimental.

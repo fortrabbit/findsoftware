@@ -1,0 +1,1 @@
+WebMock stubs HTTP requests and sets expectations on them in Ruby tests. It works at the level of the low HTTP client library, so tests keep their stubs when an application changes its HTTP library, and it supports RSpec, MiniTest and Test::Unit. For recording real traffic and replaying it later, the README points to VCR used together with WebMock.

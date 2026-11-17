@@ -1,0 +1,132 @@
+id: web-test-runner
+name: Web Test Runner
+status: accepted
+checkedAt: 2026-11-17
+description: "Test runner for web applications that runs JavaScript test files in real browsers."
+facts:
+  - field: homepage
+    value: "https://modern-web.dev/"
+    url: "https://modern-web.dev/"
+    checkedAt: 2026-11-17
+    via: page
+  - field: repository
+    value: "https://github.com/modernweb-dev/web"
+    url: "https://api.github.com/repos/modernweb-dev/web"
+    checkedAt: 2026-11-17
+    via: api
+  - field: docs
+    value: "https://modern-web.dev/docs/test-runner/overview/"
+    url: "https://modern-web.dev/docs/test-runner/overview/"
+    checkedAt: 2026-11-17
+    via: page
+  - field: firstRelease
+    value: 2020
+    url: "https://api.github.com/repos/modernweb-dev/web/releases?per_page=100"
+    checkedAt: 2026-11-17
+    via: api
+  - field: maintainer
+    value: "modern-webdev"
+    url: "https://github.com/modernweb-dev/web/blob/master/LICENSE"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Copyright (c) 2020 modern-webdev"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/modernweb-dev"
+    checkedAt: 2026-11-17
+    via: api
+  - field: language
+    value: "TypeScript"
+    url: "https://api.github.com/repos/modernweb-dev/web"
+    checkedAt: 2026-11-17
+    via: api
+  - field: runtime
+    value: [node]
+    url: "https://raw.githubusercontent.com/modernweb-dev/web/%40web/test-runner%401.0.1/packages/test-runner/package.json"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "\"node\": \">=22.0.0\""
+  - field: runtimeMin
+    value: "22"
+    url: "https://raw.githubusercontent.com/modernweb-dev/web/%40web/test-runner%401.0.1/packages/test-runner/package.json"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "\"node\": \">=22.0.0\""
+  - field: runsAs
+    value: [local]
+    url: "https://modern-web.dev/docs/test-runner/testing-in-a-ci/"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "It's possible to use the test runner in a CI"
+  - field: categories
+    value: [testing]
+    url: "https://modern-web.dev/docs/test-runner/overview/"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Test runner for web applications."
+  - field: installMethod
+    value: npm
+    url: "https://modern-web.dev/docs/test-runner/overview/"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "npm i --save-dev @web/test-runner"
+  - field: npmName
+    value: "@web/test-runner"
+    url: "https://registry.npmjs.org/@web/test-runner/latest"
+    checkedAt: 2026-11-17
+    via: api
+  - field: npmWeeklyDownloads
+    value: 204857 for 2026-11-01 to 2026-11-07
+    url: "https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@web/test-runner"
+    checkedAt: 2026-11-17
+    via: api
+  - field: currentMajor
+    value: 1
+    url: "https://api.github.com/repos/modernweb-dev/web/releases?per_page=100"
+    checkedAt: 2026-11-17
+    via: api
+  - field: latestReleaseDate
+    value: "2026-11-10"
+    url: "https://api.github.com/repos/modernweb-dev/web/releases?per_page=100"
+    checkedAt: 2026-11-17
+    via: api
+  - field: githubStargazers
+    value: 2456 (2026-11-17)
+    url: "https://api.github.com/repos/modernweb-dev/web"
+    checkedAt: 2026-11-17
+    via: api
+  - field: contributors
+    value: 158 (2026-11-17)
+    url: "https://api.github.com/repos/modernweb-dev/web/contributors?per_page=1"
+    checkedAt: 2026-11-17
+    via: api
+  - field: license
+    value: "MIT"
+    url: "https://api.github.com/repos/modernweb-dev/web"
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentPackages
+    value: 2591
+    url: "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@web%2Ftest-runner"
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentRepos
+    value: 1963
+    url: "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/@web%2Ftest-runner"
+    checkedAt: 2026-11-17
+    via: api
+  - field: x
+    value: "https://twitter.com/modern_web_dev"
+    url: "https://modern-web.dev/"
+    checkedAt: 2026-11-17
+    via: page
+  - field: discord
+    value: "https://modern-web.dev/discover/discord/"
+    url: "https://modern-web.dev/"
+    checkedAt: 2026-11-17
+    via: page
+notFound: [basedOn, databases, adminUi, headlessApi, templating, i18n, sso, userRoles, paidEdition, endoflifeId, forum, bluesky, mastodon, pluginDirectory, wikidata, hostedOffering, pricingPage, hqCountry, importsFrom, alternativeTo]
+unreadable: []
+notes: >
+  Status accepted: the test runner is a helper that a site's own test suite uses; the newest stable release is @web/test-runner 1.0.1 (2026-11-10), the repository is not archived, and no end statement was found. The repository is a monorepo of many packages, so stars, contributors and the license belong to modernweb-dev/web; the registry figure, dependent counts and currentMajor are for @web/test-runner, the package the install docs name. The GitHub releases list holds tags of every package in the monorepo; firstRelease is the oldest release in the repository (@web/test-runner-cli 0.4.27 and @web/test-runner-browser-lib 0.2.11, both 2020-08-03), and the npm package's first upload, 0.1.0 of 2020-06-06, falls in the same year. The LICENSE copyright line names "modern-webdev"; the site and the README name the project "Modern Web", which is recorded in the description only as the project's own homepage. The homepage says "Guides, tools and libraries for modern web development" and is no field. The docs name Puppeteer, Playwright, Selenium and WebdriverIO as browser launchers, and the test frameworks page names Mocha; those are integrations, so no alternativeTo or basedOn is recorded. The mocking page recommends sinon; not recorded as a field. The npm figure is the sum of the daily counts from 2026-11-01 to 2026-11-07. The homepage's Discord link goes to the project's discover page. The npm engines field of the latest release is ">=22.0.0". The GitHub latest prerelease is a 2024 canary, older than the stable release, so no latestPrereleaseDate is recorded. The discovery CSV's lastRelease of 2026-07-27 is superseded by 2026-11-10.
+  The CI guide says the runner runs tests on a real browser, so a CI environment must be able to support one, and that it uses a locally installed Chrome by default. The overview page lists headless browsers through Puppeteer, Playwright, Selenium or WebdriverIO, an interactive watch mode, code coverage, and tests run in parallel and in isolation.

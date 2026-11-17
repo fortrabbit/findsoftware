@@ -1,0 +1,1 @@
+VCR.py records the HTTP interactions of a Python test suite to a flat file called a cassette, and replays them in later runs so the tests make no real HTTP requests. The [README](https://github.com/kevin1024/vcrpy/blob/master/README.rst) calls it a Python version of Ruby's VCR library.

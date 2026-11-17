@@ -1,0 +1,116 @@
+id: wallaby
+name: Wallaby
+status: accepted
+checkedAt: 2026-11-17
+description: Elixir library for concurrent browser feature tests of web applications, driving Chrome or Selenium.
+facts:
+  - field: repository
+    value: https://github.com/elixir-wallaby/wallaby
+    url: https://api.github.com/repos/elixir-wallaby/wallaby
+    checkedAt: 2026-11-17
+    via: api
+  - field: docs
+    value: https://hexdocs.pm/wallaby
+    url: https://github.com/elixir-wallaby/wallaby/blob/main/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "check out the Official Documentation"
+  - field: categories
+    value: [testing]
+    url: https://github.com/elixir-wallaby/wallaby/blob/main/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Wallaby helps you test your web applications by simulating realistic user interactions."
+  - field: language
+    value: Elixir
+    url: https://api.github.com/repos/elixir-wallaby/wallaby
+    checkedAt: 2026-11-17
+    via: api
+  - field: runtime
+    value: [elixir]
+    url: https://github.com/elixir-wallaby/wallaby/blob/main/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Wallaby requires Elixir 1.17+ and OTP 26+."
+  - field: runtimeMin
+    value: "OTP 26"
+    url: https://github.com/elixir-wallaby/wallaby/blob/main/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Wallaby requires Elixir 1.17+ and OTP 26+."
+  - field: installMethod
+    value: [mix]
+    url: https://github.com/elixir-wallaby/wallaby/blob/main/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Add Wallaby to your list of dependencies in `mix.exs`"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/elixir-wallaby/wallaby
+    checkedAt: 2026-11-17
+    via: api
+  - field: maintainer
+    value: Chris Keathley and Mitchell Hanberg
+    url: https://github.com/elixir-wallaby/wallaby/blob/main/LICENSE.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Copyright (c) 2016 Chris Keathley Copyright (c) 2022 Mitchell Hanberg"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/repos/elixir-wallaby/wallaby
+    checkedAt: 2026-11-17
+    via: api
+  - field: firstRelease
+    value: "2016"
+    url: https://hex.pm/api/packages/wallaby
+    checkedAt: 2026-11-17
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/elixir-wallaby/wallaby/releases
+    checkedAt: 2026-11-17
+    via: api
+  - field: latestReleaseDate
+    value: 2026-06-27
+    url: https://api.github.com/repos/elixir-wallaby/wallaby/releases
+    checkedAt: 2026-11-17
+    via: api
+  - field: x
+    value: https://twitter.com/elixir_wallaby
+    url: https://api.github.com/repos/elixir-wallaby/wallaby
+    checkedAt: 2026-11-17
+    via: api
+  - field: githubStargazers
+    value: 1806
+    url: https://api.github.com/repos/elixir-wallaby/wallaby
+    checkedAt: 2026-11-17
+    via: api
+  - field: contributors
+    value: 81
+    url: https://api.github.com/repos/elixir-wallaby/wallaby/contributors
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentPackages
+    value: 7
+    url: https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/wallaby
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentRepos
+    value: 277
+    url: https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/wallaby
+    checkedAt: 2026-11-17
+    via: api
+  - field: hexName
+    value: wallaby
+    url: https://hex.pm/api/packages/wallaby
+    checkedAt: 2026-11-17
+    via: api
+  - field: hexDownloads
+    value: "17212 (week)"
+    url: https://hex.pm/api/packages/wallaby
+    checkedAt: 2026-11-17
+    via: api
+notFound: [homepage, basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, wikidata, hqCountry, maintainerType, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, paidEdition, pricingPage, freeTier, usageShare, reportedInstalls, packagistName, npmName, npmWeeklyDownloads, pypiName, pypiDownloads, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, endoflifeId, hostedOffering]
+unreadable: []
+notes: >
+  The repository's homepage field is twitter.com/elixir_wallaby. A social account is not the project's site, so it is recorded as x, and the README and the repository name no other website, so the record has no homepage; the README's Official Documentation link on hexdocs.pm is the docs fact. The license file names two copyright holders, Chris Keathley (2016) and Mitchell Hanberg (2022), with no "and others", so the maintainer is both names, quoted as the file states them. The GitHub repository is owned by the elixir-wallaby organization, which the README calls "a community project". The Hex package reports all-time downloads of 3,495,418; only the week figure is recorded. The current line is 0.31 (v0.31.0, 2026-06-27); the major is 0 under semantic versioning. Requirements: mix.exs at v0.31.0 declares elixir "~> 1.17"; the README adds OTP 26+, which is the runtimeMin recorded. The README's Phoenix and Ecto sections describe test setup for Phoenix and Ecto apps and name no basedOn; Wallaby is a testing library for web apps, not a plugin of Phoenix. It drives Chrome through chromedriver by default and Selenium through selenium and geckodriver, both named in the README. The README does not state a process model or where the tests run, so no runsAs is recorded. The README says each test case runs concurrently by default and that the library manages the browsers, and its Assets section says mix test does not recompile assets and describes esbuild and webpack aliases for that. The README also requires bash, which does not come pre-installed on Alpine Linux, and the chromedriver or selenium and geckodriver tools the driver needs. For Phoenix apps its setup section has the endpoint serve requests in tests (server: true) and a base URL; for Ecto with a database that supports sandbox mode, a plug lets the browser and the test share one database connection.

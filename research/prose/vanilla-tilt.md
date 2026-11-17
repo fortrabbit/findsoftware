@@ -1,0 +1,1 @@
+vanilla-tilt.js adds a 3D tilt effect to HTML elements, following the mouse pointer or the device orientation. The [README](https://github.com/micku7zu/vanilla-tilt.js/blob/master/README.md) says it is forked from Tilt.js, the jQuery version of the same effect.

@@ -1,0 +1,107 @@
+id: vivus
+name: Vivus
+status: accepted
+checkedAt: 2026-11-17
+description: Dependency-free JavaScript class that animates SVG drawings so they appear to be drawn.
+facts:
+  - field: repository
+    value: https://github.com/maxwellito/vivus
+    url: https://api.github.com/repos/maxwellito/vivus
+    checkedAt: 2026-11-17
+    via: api
+  - field: firstRelease
+    value: 2014
+    url: https://api.github.com/repos/maxwellito/vivus/releases
+    checkedAt: 2026-11-17
+    via: api
+  - field: maintainer
+    value: maxwellito
+    url: https://github.com/maxwellito/vivus/blob/master/LICENSE
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Copyright (c) maxwellito"
+  - field: maintainerType
+    value: individual
+    url: https://github.com/maxwellito/vivus/blob/master/LICENSE
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Copyright (c) maxwellito"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/maxwellito
+    checkedAt: 2026-11-17
+    via: api
+  - field: sourcePublic
+    value: true
+    url: https://api.github.com/repos/maxwellito/vivus
+    checkedAt: 2026-11-17
+    via: api
+  - field: categories
+    value: [animation]
+    url: https://github.com/maxwellito/vivus/blob/master/readme.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "that allows you to animate SVGs"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/maxwellito/vivus
+    checkedAt: 2026-11-17
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://github.com/maxwellito/vivus/blob/master/readme.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "npm install vivus"
+  - field: installMethod
+    value: bower
+    url: https://github.com/maxwellito/vivus/blob/master/readme.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "bower install vivus"
+  - field: installMethod
+    value: cdn
+    url: https://github.com/maxwellito/vivus/blob/master/readme.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "jsDelivr CDN"
+  - field: license
+    value: MIT
+    url: https://github.com/maxwellito/vivus/blob/master/LICENSE
+    checkedAt: 2026-11-17
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: npmName
+    value: vivus
+    url: https://registry.npmjs.org/vivus/latest
+    checkedAt: 2026-11-17
+    via: api
+  - field: npmWeeklyDownloads
+    value: "15591 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/vivus
+    checkedAt: 2026-11-17
+    via: api
+  - field: currentMajor
+    value: 0
+    url: https://api.github.com/repos/maxwellito/vivus/releases
+    checkedAt: 2026-11-17
+    via: api
+  - field: latestReleaseDate
+    value: 2021-04-17
+    url: https://api.github.com/repos/maxwellito/vivus/releases
+    checkedAt: 2026-11-17
+    via: api
+  - field: githubStargazers
+    value: 15482
+    url: https://api.github.com/repos/maxwellito/vivus
+    checkedAt: 2026-11-17
+    via: api
+  - field: contributors
+    value: 22
+    url: https://api.github.com/repos/maxwellito/vivus/contributors?per_page=1
+    checkedAt: 2026-11-17
+    via: api
+notFound: [homepage, pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, adminUi, headlessApi, renderingModes, runsAs, runtime, runtimeMin, databases, sso, templating, i18n, multisite, livePreview, userRoles, docs, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, latestPrereleaseDate, endoflifeId, packagistName]
+unreadable: []
+notes: >
+  The CSV homepage was the GitHub repository, and the README's "Demo available on" address is a GitHub Pages demo page, which is no project site, so homepage is left out. The repository has no docs site: the README is the documentation, and no docs fact is recorded from it. The CDN route is the jsDelivr link the README names; CDNJS is a second CDN listed on the same line of routes and WebJars is a third-party package index, so neither is a separate installMethod. The GitHub release line is 0.4 (v0.4.6, 2021-04-17) and currentMajor is 0 by semver, so a reviewer decides whether a 0.x line gets a major. The last release is more than four years old and the repository was last pushed on 2022-07-06; neither is an end signal, and the README states none. The import's criterion 4 rule will move this record to stub when its release is over four years old; the CSV status accepted is kept here. firstRelease is 2014 from the oldest GitHub release (v0.1.1, 2014-11-12); the npm package's first upload is from 2015-03-02. The README links a Gitter chat, which is no forum field. The README says nothing on where the library runs beyond the SVG and browser support notes, so no runsAs is recorded. The README explains the technique and its limits: the script updates the CSS property strokeDashoffset, so every element of the SVG must have a stroke and cannot be filled, and text elements are not allowed. Stars and contributors belong to the maxwellito/vivus repository.

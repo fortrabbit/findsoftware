@@ -1,0 +1,117 @@
+id: valitron
+name: Valitron
+status: accepted
+checkedAt: 2026-11-17
+description: Stand-alone PHP validation library with no dependencies that runs named rules over arrays of input.
+facts:
+  - field: repository
+    value: "https://github.com/vlucas/valitron"
+    url: "https://api.github.com/repos/vlucas/valitron"
+    checkedAt: 2026-11-17
+    via: api
+  - field: maintainer
+    value: "Vance Lucas"
+    url: "https://raw.githubusercontent.com/vlucas/valitron/master/LICENSE.txt"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Copyright (c) 2013, Vance Lucas"
+  - field: repoOwnerType
+    value: user
+    url: "https://api.github.com/users/vlucas"
+    checkedAt: 2026-11-17
+    via: api
+  - field: categories
+    value: [validation]
+    url: "https://raw.githubusercontent.com/vlucas/valitron/master/README.md"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Valitron is a simple, minimal and elegant stand-alone validation library"
+  - field: language
+    value: PHP
+    url: "https://api.github.com/repos/vlucas/valitron"
+    checkedAt: 2026-11-17
+    via: api
+  - field: runtime
+    value: [php]
+    url: "https://raw.githubusercontent.com/vlucas/valitron/v1.4.11/composer.json"
+    checkedAt: 2026-11-17
+    via: page
+    quote: '"php": ">=5.3.2"'
+  - field: runtimeMin
+    value: "5.3"
+    url: "https://raw.githubusercontent.com/vlucas/valitron/v1.4.11/composer.json"
+    checkedAt: 2026-11-17
+    via: page
+    quote: '"php": ">=5.3.2"'
+  - field: license
+    value: BSD-3-Clause
+    url: "https://api.github.com/repos/vlucas/valitron"
+    checkedAt: 2026-11-17
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: "https://raw.githubusercontent.com/vlucas/valitron/master/LICENSE.txt"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "The BSD 3-Clause License"
+  - field: currentMajor
+    value: "1"
+    url: "https://github.com/vlucas/valitron/releases/tag/v1.4.11"
+    checkedAt: 2026-11-17
+    via: api
+  - field: latestReleaseDate
+    value: 2022-10-14
+    url: "https://github.com/vlucas/valitron/releases/tag/v1.4.11"
+    checkedAt: 2026-11-17
+    via: api
+  - field: firstRelease
+    value: 2013
+    url: "https://repo.packagist.org/p2/vlucas/valitron.json"
+    checkedAt: 2026-11-17
+    via: api
+  - field: packagistName
+    value: "vlucas/valitron"
+    url: "https://packagist.org/packages/vlucas/valitron.json"
+    checkedAt: 2026-11-17
+    via: api
+  - field: packagistDownloads
+    value: "5018027 (total)"
+    url: "https://packagist.org/packages/vlucas/valitron.json"
+    checkedAt: 2026-11-17
+    via: api
+  - field: githubStargazers
+    value: 1598
+    url: "https://api.github.com/repos/vlucas/valitron"
+    checkedAt: 2026-11-17
+    via: api
+  - field: contributors
+    value: 82
+    url: "https://api.github.com/repos/vlucas/valitron/contributors?per_page=1"
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentPackages
+    value: 130
+    url: "https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/vlucas%2Fvalitron"
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentRepos
+    value: 523
+    url: "https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/vlucas%2Fvalitron"
+    checkedAt: 2026-11-17
+    via: api
+  - field: installMethod
+    value: composer
+    url: "https://raw.githubusercontent.com/vlucas/valitron/master/README.md"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "php composer.phar require vlucas/valitron"
+  - field: i18n
+    value: "language of error messages can be set"
+    url: "https://raw.githubusercontent.com/vlucas/valitron/master/README.md"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Setting language and language dir globally:"
+notFound: [homepage, docs, pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, basedOn, adminUi, contentStore, databases, headlessApi, templating, multisite, livePreview, userRoles, sso, renderingModes, runsAs, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, selfHostOption, reportedInstalls, usageShare, maintainerType, regions, apiLimits, npmName, npmWeeklyDownloads, pypiName, pypiDownloads, latestPrereleaseDate, hostedOffering, lastCommitDate]
+unreadable: []
+notes: >
+  No project site: the repository's homepage field is empty and the README links only the repository, Packagist and a Tidelift page, so no homepage is recorded. The Tidelift link is a paid support subscription for the package and is not a paidEdition. The README's installation section gives the Composer route in two lines, a curl installer and php composer.phar require; both are the Composer route and the second is the quoted command. The README says the library works on PHP 5.3 and up, and its examples use PHP 5.4 syntax; runtimeMin 5.3 comes from composer.json at the latest tag, which states php >=5.3.2. The latest release v1.4.11 is dated 2022-10-14, and the last commit on the default branch is dated 2024-04-16; the repository is not archived and the README declares no end of the project, so the status stays accepted. The import's four-year release rule decides listing from the release date and will move this record to stub. firstRelease is 2013: the Packagist upload of 1.0.0 dates from 2013-02-03, and the repository was created on 2013-01-27. The LICENSE copyright line names Vance Lucas; the GitHub owner is a user account. The Packagist total is the figure recorded; the README badges link the same package page. The README describes a rule-based validator: an array of input and rules such as required, email and lengthMin attached to field names, run in one call with validate and read back with errors; dot notation reaches nested values, an asterisk applies a rule to each array member, and custom rules can be added.

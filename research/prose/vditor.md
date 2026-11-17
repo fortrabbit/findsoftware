@@ -1,0 +1,1 @@
+Vditor is a browser-side Markdown editor with three editing modes: WYSIWYG, instant rendering, and a split view with a preview. The [README](https://github.com/Vanessa219/vditor/blob/master/README_en_US.md) says it is implemented in TypeScript and supports native JavaScript and frameworks such as Vue, React, Angular and Svelte.

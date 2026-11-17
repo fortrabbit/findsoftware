@@ -1,0 +1,124 @@
+id: vcr
+name: VCR
+status: accepted
+checkedAt: 2026-11-17
+description: Ruby library that records a test suite's HTTP interactions to cassette files and replays them in later test runs.
+facts:
+  - field: homepage
+    value: https://benoittgt.github.io/vcr
+    url: https://github.com/vcr/vcr/blob/v6.4.1/vcr.gemspec
+    checkedAt: 2026-11-17
+    via: page
+    quote: "https://benoittgt.github.io/vcr"
+  - field: repository
+    value: https://github.com/vcr/vcr
+    url: https://api.github.com/repos/vcr/vcr
+    checkedAt: 2026-11-17
+    via: api
+  - field: docs
+    value: https://benoittgt.github.io/vcr
+    url: https://github.com/vcr/vcr/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "The usage docs contain example-based documentation"
+  - field: firstRelease
+    value: 2010
+    url: https://rubygems.org/api/v1/versions/vcr.json
+    checkedAt: 2026-11-17
+    via: api
+  - field: maintainer
+    value: Myron Marston, Kurtis Rainbolt-Greene, Olle Jonsson
+    url: https://github.com/vcr/vcr/blob/v6.4.1/LICENSE
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Copyright 2019 (Myron Marston, Kurtis Rainbolt-Greene, Olle Jonsson)"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/vcr
+    checkedAt: 2026-11-17
+    via: api
+  - field: language
+    value: Ruby
+    url: https://api.github.com/repos/vcr/vcr
+    checkedAt: 2026-11-17
+    via: api
+  - field: categories
+    value: [testing]
+    url: https://github.com/vcr/vcr/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Record your test suite's HTTP interactions and replay them during future test runs"
+  - field: runtime
+    value: [ruby]
+    url: https://github.com/vcr/vcr/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "VCR versions 6.x are tested on the following ruby interpreters"
+  - field: runtimeMin
+    value: "2.7"
+    url: https://github.com/vcr/vcr/blob/v6.4.1/vcr.gemspec
+    checkedAt: 2026-11-17
+    via: page
+    quote: 'spec.required_ruby_version = ">= 2.7"'
+  - field: installMethod
+    value: gem
+    url: https://rubygems.org/api/v1/gems/vcr.json
+    checkedAt: 2026-11-17
+    via: api
+  - field: license
+    value: Hippocratic-2.1
+    url: https://github.com/vcr/vcr/blob/v6.4.1/LICENSE
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Hippocratic License Version Number: 2.1."
+  - field: license
+    value: MIT
+    url: https://github.com/vcr/vcr/blob/v6.4.1/LICENSE
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining a copy"
+  - field: currentMajor
+    value: 6
+    url: https://api.github.com/repos/vcr/vcr/releases
+    checkedAt: 2026-11-17
+    via: api
+  - field: latestReleaseDate
+    value: 2026-10-30
+    url: https://api.github.com/repos/vcr/vcr/releases
+    checkedAt: 2026-11-17
+    via: api
+  - field: githubStargazers
+    value: 6081
+    url: https://api.github.com/repos/vcr/vcr
+    checkedAt: 2026-11-17
+    via: api
+  - field: contributors
+    value: 168
+    url: https://api.github.com/repos/vcr/vcr/contributors
+    checkedAt: 2026-11-17
+    via: api
+  - field: rubygemsName
+    value: vcr
+    url: https://rubygems.org/api/v1/gems/vcr.json
+    checkedAt: 2026-11-17
+    via: api
+  - field: rubygemsDownloads
+    value: 171694153 total
+    url: https://rubygems.org/api/v1/gems/vcr.json
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentPackages
+    value: 3588
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/vcr
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentRepos
+    value: 30935
+    url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/vcr
+    checkedAt: 2026-11-17
+    via: api
+notFound: [basedOn, forkOf, successorOf, alternativeTo, importsFrom, parent, runsAs, renderingModes, databases, contentStore, i18n, templating, sso, adminUi, headlessApi, userRoles, multisite, livePreview, hqCountry, pricingPage, paidEdition, usageShare, httpArchiveSites, reportedInstalls, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, endoflifeId, wikidata, npmName, pypiName, pypiDownloads, npmWeeklyDownloads]
+unreadable:
+  - "https://benoittgt.github.io/vcr/ answers 200 but only with a docsify shell (title \"VCR documentation\", no page text), so no quote is taken from it; the homepage is cited from the gemspec"
+notes: >
+  Accepted as a testing library for Ruby test suites. The Hippocratic License 2.1 (the first license entry) is an ethical-source license with human-rights conditions in its Purpose and Permission sections; it is recorded as the LICENSE names it, and the LICENSE states that some portions are covered by an MIT notice (Copyright (c) 2010-2015 Myron Marston), recorded as the second entry. The gemspec lists both licenses as "Hippocratic-2.1" and "MIT", the same two entries. The maintainer follows the LICENSE copyright line, which names three people; the MAINTAINERS file lists five GitHub handles without names. The README names VCR.py as a port in another language (the Python record vcrpy); a port is not recorded as basedOn, forkOf or alternativeTo. The gemspec's required_ruby_version of 2.7 is the runtime minimum of the latest release; the README says VCR 6.1.0 is the last version supporting Ruby 2.6 and that later releases support Ruby 2.7 and newer. The install route is RubyGems: the README names no install command, so the gem route is cited from the RubyGems API. The RubyGems total is the download figure, recorded with its period. No runsAs is recorded: the README describes use in a test suite and names no process model. GitHub reports the repository license as NOASSERTION (other), which matches the two entries above.

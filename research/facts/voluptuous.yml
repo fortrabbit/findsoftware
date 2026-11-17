@@ -1,0 +1,116 @@
+id: voluptuous
+name: Voluptuous
+status: stub
+checkedAt: 2026-11-17
+description: Python data validation library.
+facts:
+  - field: repository
+    value: "https://github.com/alecthomas/voluptuous"
+    url: "https://api.github.com/repos/alecthomas/voluptuous"
+    checkedAt: 2026-11-17
+    via: api
+  - field: maintainer
+    value: "Alec Thomas"
+    url: "https://github.com/alecthomas/voluptuous/blob/master/COPYING"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Copyright (c) 2010, Alec Thomas"
+  - field: repoOwnerType
+    value: user
+    url: "https://api.github.com/repos/alecthomas/voluptuous"
+    checkedAt: 2026-11-17
+    via: api
+  - field: firstRelease
+    value: 2010
+    url: "https://pypi.org/pypi/voluptuous/json"
+    checkedAt: 2026-11-17
+    via: api
+  - field: docs
+    value: https://alecthomas.github.io/voluptuous/
+    url: https://github.com/alecthomas/voluptuous/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "The documentation is provided"
+  - field: i18n
+    value: gettext hooks for validation messages, no translation catalogs shipped
+    url: https://github.com/alecthomas/voluptuous/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Voluptuous does not ship production translation catalogs."
+  - field: categories
+    value: [validation]
+    url: "https://github.com/alecthomas/voluptuous/blob/master/README.md"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "is a Python data validation library"
+  - field: language
+    value: Python
+    url: "https://api.github.com/repos/alecthomas/voluptuous"
+    checkedAt: 2026-11-17
+    via: api
+  - field: runtime
+    value: [python]
+    url: "https://github.com/alecthomas/voluptuous/blob/0.16.0/setup.py"
+    checkedAt: 2026-11-17
+    via: page
+    quote: 'python_requires=">=3.9"'
+  - field: runtimeMin
+    value: "3.9"
+    url: "https://github.com/alecthomas/voluptuous/blob/0.16.0/setup.py"
+    checkedAt: 2026-11-17
+    via: page
+    quote: 'python_requires=">=3.9"'
+  - field: installMethod
+    value: pip
+    url: "https://pypi.org/pypi/voluptuous/json"
+    checkedAt: 2026-11-17
+    via: api
+  - field: license
+    value: BSD-3-Clause
+    url: "https://api.github.com/repos/alecthomas/voluptuous"
+    checkedAt: 2026-11-17
+    via: api
+  - field: currentMajor
+    value: 0
+    url: "https://github.com/alecthomas/voluptuous/releases/tag/0.16.0"
+    checkedAt: 2026-11-17
+    via: api
+  - field: latestReleaseDate
+    value: 2025-12-18
+    url: "https://github.com/alecthomas/voluptuous/releases/tag/0.16.0"
+    checkedAt: 2026-11-17
+    via: api
+  - field: pypiName
+    value: "voluptuous"
+    url: "https://pypi.org/pypi/voluptuous/json"
+    checkedAt: 2026-11-17
+    via: api
+  - field: pypiDownloads
+    value: "5963604 last month, read 2026-11-17"
+    url: "https://pypistats.org/api/packages/voluptuous/recent"
+    checkedAt: 2026-11-17
+    via: api
+  - field: githubStargazers
+    value: 1852
+    url: "https://api.github.com/repos/alecthomas/voluptuous"
+    checkedAt: 2026-11-17
+    via: api
+  - field: contributors
+    value: 87
+    url: "https://api.github.com/repos/alecthomas/voluptuous/contributors"
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentPackages
+    value: 189
+    url: "https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/voluptuous"
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentRepos
+    value: 3565
+    url: "https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/voluptuous"
+    checkedAt: 2026-11-17
+    via: api
+notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, databases, contentStore, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, renderingModes, runsAs, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, selfHostOption, reportedInstalls, usageShare, regions, apiLimits, latestPrereleaseDate, lastCommitDate, npmName, npmWeeklyDownloads, packagistName, hostedOffering]
+unreadable: []
+notes: >
+  Doubt: the README opens with the heading "CONTRIBUTIONS ONLY" and says "I do not have time to fix issues myself. The only way fixes or new features will be added is by people submitting PRs." and calls the library "largely feature stable"; that is passive maintenance, not an end, so the status is stub until a maintainer statement or a new release settles it. The same notice says "I no longer use Voluptuous personally". The repository description repeats "CONTRIBUTIONS ONLY". The latest release 0.16.0 (2025-12-18) is the newest stable release and the newest tag; no prerelease is listed. The GitHub API and PyPI both name BSD-3-Clause. The homepage in the CSV is the PyPI page, which is the registry and not the project's own site; the only project site is the GitHub Pages documentation, which is recorded as docs, so no homepage is recorded. The README links it over plain http; it also answers 200 over https at https://alecthomas.github.io/voluptuous/, the recorded address, and its built pages state "voluptuous 0.14.2 documentation" and are not current. The README has no installation section; the PyPI registry page is the installation source, so installMethod pip is cited to the registry API. The README contact section lists the maintainer's personal email and Twitter account; those are the author's and are not recorded as project links. The README names a mailing list at librelist.com and a Gitter lobby badge; neither is recorded as a forum or chat field. The README's Internationalization section describes gettext hooks that validation messages go through; i18n records that and the absence of shipped translations. PyPI downloads are from pypistats for the last month; the registry name is voluptuous. The ecosyste.ms counts are for the PyPI package. Maintainer legal form is not stated; the copyright line gives the name only. No hqCountry page exists.

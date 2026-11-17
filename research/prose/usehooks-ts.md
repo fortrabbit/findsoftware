@@ -1,0 +1,1 @@
+usehooks-ts is a library of hooks for React components, written in TypeScript. A component imports the hooks it needs by name from the package. The [introduction](https://usehooks-ts.com/introduction) covers installing it, and each hook has its own page on the project's site.

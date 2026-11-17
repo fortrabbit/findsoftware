@@ -1,0 +1,122 @@
+id: zenstruck-foundry
+name: Foundry
+status: accepted
+checkedAt: 2026-11-17
+description: PHP library that builds model factories and on-demand fixtures for Symfony and Doctrine, used in tests and dev environments.
+facts:
+  - field: repository
+    value: https://github.com/zenstruck/foundry
+    url: https://api.github.com/repos/zenstruck/foundry
+    checkedAt: 2026-11-17
+    via: api
+  - field: docs
+    value: https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html
+    url: https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html
+    checkedAt: 2026-11-17
+    via: page
+  - field: maintainer
+    value: Kevin Bond
+    url: https://github.com/zenstruck/foundry/blob/2.x/LICENSE
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Copyright (c) 2026 Kevin Bond"
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/zenstruck
+    checkedAt: 2026-11-17
+    via: api
+  - field: firstRelease
+    value: 2020
+    url: https://api.github.com/repos/zenstruck/foundry/releases/tags/v1.0.0
+    checkedAt: 2026-11-17
+    via: api
+  - field: language
+    value: PHP
+    url: https://api.github.com/repos/zenstruck/foundry
+    checkedAt: 2026-11-17
+    via: api
+  - field: categories
+    value: [fixtures, testing]
+    url: https://github.com/zenstruck/foundry/blob/2.x/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Foundry turns fixture creation into a joy"
+  - field: basedOn
+    value: symfony
+    url: https://github.com/zenstruck/foundry/blob/2.x/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "on-demand fixtures system with Symfony and Doctrine"
+  - field: runtime
+    value: php
+    url: https://github.com/zenstruck/foundry/blob/v2.16.0/composer.json
+    checkedAt: 2026-11-17
+    via: api
+  - field: runtimeMin
+    value: "8.1"
+    url: https://github.com/zenstruck/foundry/blob/v2.16.0/composer.json
+    checkedAt: 2026-11-17
+    via: api
+  - field: runsAs
+    value: local
+    url: https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html
+    checkedAt: 2026-11-17
+    via: page
+    quote: "If not using Symfony Flex, be sure to enable the bundle in your test / dev environments."
+  - field: installMethod
+    value: composer
+    url: https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html
+    checkedAt: 2026-11-17
+    via: page
+    quote: "composer require --dev zenstruck/foundry"
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/zenstruck/foundry
+    checkedAt: 2026-11-17
+    via: api
+  - field: licenseModel
+    value: open-source
+    url: https://github.com/zenstruck/foundry/blob/2.x/LICENSE
+    checkedAt: 2026-11-17
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 2
+    url: https://github.com/zenstruck/foundry/releases/tag/v2.16.0
+    checkedAt: 2026-11-17
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-09
+    url: https://github.com/zenstruck/foundry/releases/tag/v2.16.0
+    checkedAt: 2026-11-17
+    via: api
+  - field: packagistName
+    value: zenstruck/foundry
+    url: https://packagist.org/packages/zenstruck/foundry.json
+    checkedAt: 2026-11-17
+    via: api
+  - field: packagistDownloads
+    value: "17207897 (total)"
+    url: https://packagist.org/packages/zenstruck/foundry.json
+    checkedAt: 2026-11-17
+    via: api
+  - field: packagistDownloads
+    value: "1019800 (monthly)"
+    url: https://packagist.org/packages/zenstruck/foundry.json
+    checkedAt: 2026-11-17
+    via: api
+  - field: githubStargazers
+    value: 805
+    url: https://api.github.com/repos/zenstruck/foundry
+    checkedAt: 2026-11-17
+    via: api
+  - field: contributors
+    value: 87
+    url: https://api.github.com/repos/zenstruck/foundry/contributors?per_page=1
+    checkedAt: 2026-11-17
+    via: api
+notFound: [homepage, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, pricingPage, paidEdition, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, npmName, npmWeeklyDownloads, pypiName, usageShare, reportedInstalls, endoflifeId, selfHostOption, hostedOffering, latestPrereleaseDate, dependentPackages, dependentRepos]
+unreadable: []
+notes: >
+  The project has no site of its own: the bundle documentation is hosted on symfony.com (Symfony's bundle directory), so docs carries that page and homepage stays empty. The GitHub repository's default branch is 2.x; the LICENSE line names Kevin Bond for 2026. The maintainer's GitHub organization is zenstruck, which the GitHub profile names "zenstruck (Kevin Bond)"; the organization is recorded as the repository owner only. The first release v1.0.0 is dated 2020-07-10 by the GitHub release API, and the repository was created on 2020-05-20. The latest release v2.16.0 is dated 2026-11-09, the highest stable release; there are no pre-releases in the release list. The README names doctrine/orm and doctrine/mongodb-odm as the supported mappers; the database engines appear only in the library's own test setup, so databases stays unknown. The docs installation section says the make:* commands need Symfony MakerBundle and that, without Symfony Flex, the bundle must be enabled in the test and dev environments; that sentence is the runsAs local source. The "Local Development Fixtures" section says the foundry:load-fixtures command loads stories marked with the AsFixture attribute into the database and is mainly useful in dev mode. The docs say the library requires the database to be reset before each test, which the packaged ResetDatabase attribute handles, and call the Behat integration experimental. The Behat integration is a separate package, zenstruck/foundry-behat, installed with its own composer require. The README credits the API inspiration to Laravel factories and christophrumpel/laravel-factories-reloaded; that is credit, not alternativeTo. Packagist downloads are the package zenstruck/foundry as the install docs name it; the monthly and total figures are as the Packagist API reports them on 2026-11-17. The GitHub organization profile location names a city and province, not a country, so hqCountry stays unknown. Contributors counts the default branch contributor list, anonymous contributors excluded.
+  The README shows a factory whose unset fields get random data, and the docs describe Stories with the AsFixture attribute, the ResetDatabase attribute, the PHPUnit extension and factories as services.

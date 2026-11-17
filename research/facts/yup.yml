@@ -1,0 +1,111 @@
+id: yup
+name: Yup
+status: accepted
+checkedAt: 2026-11-17
+description: Schema builder for parsing and validating runtime values, with TypeScript types inferred from the schema.
+facts:
+  - field: repository
+    value: https://github.com/jquense/yup
+    url: https://api.github.com/repos/jquense/yup
+    checkedAt: 2026-11-17
+    via: api
+  - field: docs
+    value: https://github.com/jquense/yup/blob/master/README.md
+    url: https://raw.githubusercontent.com/jquense/yup/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Yup is a schema builder for runtime value parsing and validation."
+  - field: firstRelease
+    value: 2014
+    url: https://registry.npmjs.org/yup
+    checkedAt: 2026-11-17
+    via: api
+  - field: maintainer
+    value: Jason Quense
+    url: https://raw.githubusercontent.com/jquense/yup/master/LICENSE.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Jason Quense"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/jquense/yup/master/LICENSE.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Jason Quense"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/jquense
+    checkedAt: 2026-11-17
+    via: api
+  - field: categories
+    value: [validation, schema]
+    url: https://raw.githubusercontent.com/jquense/yup/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Yup is a schema builder for runtime value parsing and validation."
+  - field: language
+    value: TypeScript
+    url: https://api.github.com/repos/jquense/yup
+    checkedAt: 2026-11-17
+    via: api
+  - field: license
+    value: MIT
+    url: https://raw.githubusercontent.com/jquense/yup/master/LICENSE.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 1
+    url: https://registry.npmjs.org/yup/latest
+    checkedAt: 2026-11-17
+    via: api
+  - field: latestReleaseDate
+    value: 2025-09-21
+    url: https://registry.npmjs.org/yup
+    checkedAt: 2026-11-17
+    via: api
+  - field: npmName
+    value: yup
+    url: https://registry.npmjs.org/yup/latest
+    checkedAt: 2026-11-17
+    via: api
+  - field: npmWeeklyDownloads
+    value: "16318601 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/yup
+    checkedAt: 2026-11-17
+    via: api
+  - field: githubStargazers
+    value: 23646
+    url: https://api.github.com/repos/jquense/yup
+    checkedAt: 2026-11-17
+    via: api
+  - field: contributors
+    value: 148
+    url: https://api.github.com/repos/jquense/yup/contributors?per_page=1
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentPackages
+    value: 4923
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/yup
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentRepos
+    value: 162114
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/yup
+    checkedAt: 2026-11-17
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://registry.npmjs.org/yup/latest
+    checkedAt: 2026-11-17
+    via: api
+  - field: i18n
+    value: yes
+    url: https://raw.githubusercontent.com/jquense/yup/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "If you need multi-language support, yup has got you covered."
+notFound: [homepage, basedOn, runtime, runtimeMin, runsAs, databases, contentStore, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, importsFrom, alternativeTo, paidEdition, pricingPage, hqCountry, pluginDirectory, parent, forkOf, successorOf, discord, forum, x, newsletter, subreddit, mastodon, bluesky, endoflifeId]
+unreadable: []
+notes: >
+  The repository has no homepage of its own; the npm package links to the repository. The README has no installation section: it shows import statements from 'yup' only, so the installMethod is the npm registry route, cited from the registry API as the install route for a package with no install sentence. The README says Yup is compatible with Standard Schema and that server-side and client-side validation are both supported; neither names a runtime, so runtime is left out. The i18n value covers the setLocale hook for error messages that a translation library consumes; it is not a bundled translation set. The README title block says it documents v1.0.0 and links pre-v1 docs. GitHub lists v1.0.0 as the latest release object; the registry's 1.7.1 is the newest stable version, so latestReleaseDate and currentMajor follow the registry. The unscoped package is the one the README imports from; no other npm package is recorded. The firstRelease year is the npm upload of 0.1.0 in 2014, which predates the oldest GitHub release object.

@@ -1,0 +1,124 @@
+id: webmock
+name: WebMock
+status: accepted
+checkedAt: 2026-11-17
+description: "Ruby library that stubs HTTP requests and sets expectations on them in tests."
+facts:
+  - field: repository
+    value: "https://github.com/bblimke/webmock"
+    url: "https://api.github.com/repos/bblimke/webmock"
+    checkedAt: 2026-11-17
+    via: api
+  - field: docs
+    value: "https://github.com/bblimke/webmock/blob/master/README.md"
+    url: "https://github.com/bblimke/webmock/blob/master/README.md"
+    checkedAt: 2026-11-17
+    via: page
+  - field: firstRelease
+    value: 2009
+    url: "https://rubygems.org/api/v1/versions/webmock.json"
+    checkedAt: 2026-11-17
+    via: api
+  - field: maintainer
+    value: "Bartosz Blimke"
+    url: "https://raw.githubusercontent.com/bblimke/webmock/master/LICENSE"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Copyright (c) 2009-2010 Bartosz Blimke"
+  - field: repoOwnerType
+    value: user
+    url: "https://api.github.com/users/bblimke"
+    checkedAt: 2026-11-17
+    via: api
+  - field: language
+    value: "Ruby"
+    url: "https://api.github.com/repos/bblimke/webmock"
+    checkedAt: 2026-11-17
+    via: api
+  - field: runtime
+    value: [ruby]
+    url: "https://raw.githubusercontent.com/bblimke/webmock/master/README.md"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Library for stubbing and setting expectations on HTTP requests in Ruby."
+  - field: runtimeMin
+    value: "2.6"
+    url: "https://raw.githubusercontent.com/bblimke/webmock/v3.34.0/webmock.gemspec"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "s.required_ruby_version = '>= 2.6'"
+  - field: categories
+    value: [testing]
+    url: "https://raw.githubusercontent.com/bblimke/webmock/master/README.md"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Stubbing HTTP requests at low http client lib level (no need to change tests when you change HTTP library)"
+  - field: installMethod
+    value: gem
+    url: "https://raw.githubusercontent.com/bblimke/webmock/master/README.md"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "gem install webmock"
+  - field: installMethod
+    value: source
+    url: "https://raw.githubusercontent.com/bblimke/webmock/master/README.md"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "to install the latest development version from github master"
+  - field: forum
+    value: "https://groups.google.com/group/webmock-users"
+    url: "https://raw.githubusercontent.com/bblimke/webmock/master/README.md"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "please send an email to the mailing list groups.google.com/group/webmock-users"
+  - field: rubygemsName
+    value: "webmock"
+    url: "https://rubygems.org/api/v1/gems/webmock.json"
+    checkedAt: 2026-11-17
+    via: api
+  - field: rubygemsDownloads
+    value: 439805608 (total)
+    url: "https://rubygems.org/api/v1/gems/webmock.json"
+    checkedAt: 2026-11-17
+    via: api
+  - field: currentMajor
+    value: 3
+    url: "https://api.github.com/repos/bblimke/webmock/releases?per_page=100"
+    checkedAt: 2026-11-17
+    via: api
+  - field: latestReleaseDate
+    value: "2026-10-14"
+    url: "https://api.github.com/repos/bblimke/webmock/releases?per_page=100"
+    checkedAt: 2026-11-17
+    via: api
+  - field: githubStargazers
+    value: 4049 (2026-11-17)
+    url: "https://api.github.com/repos/bblimke/webmock"
+    checkedAt: 2026-11-17
+    via: api
+  - field: contributors
+    value: 251 (2026-11-17)
+    url: "https://api.github.com/repos/bblimke/webmock/contributors?per_page=1"
+    checkedAt: 2026-11-17
+    via: api
+  - field: license
+    value: "MIT"
+    url: "https://raw.githubusercontent.com/bblimke/webmock/master/LICENSE"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Permission is hereby granted, free of charge, to any person obtaining"
+  - field: dependentPackages
+    value: 8353
+    url: "https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/webmock"
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentRepos
+    value: 60590
+    url: "https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/webmock"
+    checkedAt: 2026-11-17
+    via: api
+notFound: [homepage, basedOn, databases, adminUi, headlessApi, templating, i18n, sso, userRoles, paidEdition, pricingPage, endoflifeId, discord, x, bluesky, mastodon, pluginDirectory, wikidata, hostedOffering, hqCountry, importsFrom, alternativeTo, runsAs, renderingModes]
+unreadable: []
+notes: >
+  The repository has no homepage of its own; the GitHub homepage field is empty and the README links only the repository, so no homepage is recorded. Status accepted: the newest stable release is v3.34.0 (2026-10-14), the repository is not archived, and the README names no end. The first gem version, 0.7.0, was uploaded on 2009-11-20 and the repository was created on 2009-11-06, so firstRelease is 2009. The maintainer is the copyright holder named by the LICENSE; the README's acknowledgement of a New Bamboo hack day names no legal entity. The README's supported HTTP libraries (Net::HTTP, Excon, HTTPClient, Typhoeus and others) and the test frameworks it names are integrations, not runsAs or alternativeTo statements. The README names VCR as a companion for recording and replaying HTTP traffic; that is a use together, not an alternative. The README lists MRI 2.6 through 4.0 and JRuby as supported interpreters, and the gemspec at v3.34.0 requires Ruby 2.6 or later, so runtimeMin is the gemspec value. The RubyGems API does not state the gem's required Ruby version, so the gemspec at the release tag is the source. The rubygems figure is the total on the rubygems.org API. No sentence states where the library runs, so no runsAs is recorded. The README's Background section says the library was inspired by FakeWeb and imported some solutions and code from it; that is no fork or basedOn statement, and FakeWeb has no record here. The README's Suggestions section points to the webmock-users Google Group mailing list, recorded as forum.
+  The README's feature list says WebMock stubs HTTP requests at the low HTTP client library level, so tests need no change when the HTTP library changes, and it lists support for RSpec, MiniTest and Test::Unit. The README's install section gives gem install webmock, or a gem line in a Gemfile's test group.

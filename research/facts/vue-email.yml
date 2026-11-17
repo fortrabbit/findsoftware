@@ -1,0 +1,114 @@
+id: vue-email
+name: Vue Email
+status: accepted
+checkedAt: 2026-11-17
+description: Vue components and render utilities for building email templates.
+facts:
+  - field: homepage
+    value: "https://vuemail.net"
+    url: "https://vuemail.net"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Build and send emails using Vue"
+  - field: docs
+    value: "https://vuemail.net/getting-started/installation"
+    url: "https://vuemail.net/getting-started/installation"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Learn how to install and configure the module in your Vue app."
+  - field: repository
+    value: "https://github.com/vue-email/vue-email"
+    url: "https://api.github.com/repos/vue-email/vue-email"
+    checkedAt: 2026-11-17
+    via: api
+  - field: maintainer
+    value: "Vue Email"
+    url: "https://github.com/vue-email/vue-email/blob/main/LICENSE"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Copyright (c) 2023 Vue Email"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/repos/vue-email/vue-email"
+    checkedAt: 2026-11-17
+    via: api
+  - field: firstRelease
+    value: 2023
+    url: "https://api.github.com/repos/vue-email/vue-email/releases"
+    checkedAt: 2026-11-17
+    via: api
+  - field: categories
+    value: [email-templating]
+    url: "https://github.com/vue-email/vue-email/blob/main/README.md"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Simple way to build email templates in vue."
+  - field: basedOn
+    value: vue
+    url: "https://api.github.com/repos/vue-email/vue-email"
+    checkedAt: 2026-11-17
+    via: api
+    quote: "Write email templates with vue"
+  - field: language
+    value: TypeScript
+    url: "https://api.github.com/repos/vue-email/vue-email"
+    checkedAt: 2026-11-17
+    via: api
+  - field: templating
+    value: vue
+    url: "https://github.com/vue-email/vue-email/blob/main/README.md"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Build email templates with Vue components"
+  - field: installMethod
+    value: npm
+    url: "https://github.com/vue-email/vue-email/blob/main/README.md"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "npm install @vue-email/render @vue-email/components"
+  - field: license
+    value: MIT
+    url: "https://github.com/vue-email/vue-email/blob/main/LICENSE"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "MIT License"
+  - field: licenseModel
+    value: open-source
+    url: "https://github.com/vue-email/vue-email/blob/main/LICENSE"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "MIT License"
+  - field: currentMajor
+    value: 1
+    url: "https://github.com/vue-email/vue-email/releases/tag/v1.0.0"
+    checkedAt: 2026-11-17
+    via: api
+  - field: latestReleaseDate
+    value: 2024-11-01
+    url: "https://registry.npmjs.org/@vue-email/components"
+    checkedAt: 2026-11-17
+    via: api
+  - field: npmName
+    value: "@vue-email/components"
+    url: "https://registry.npmjs.org/@vue-email/components/latest"
+    checkedAt: 2026-11-17
+    via: api
+  - field: npmWeeklyDownloads
+    value: "27179 (2026-11-01 to 2026-11-07)"
+    url: "https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/@vue-email/components"
+    checkedAt: 2026-11-17
+    via: api
+  - field: githubStargazers
+    value: 1090
+    url: "https://api.github.com/repos/vue-email/vue-email"
+    checkedAt: 2026-11-17
+    via: api
+  - field: contributors
+    value: 11
+    url: "https://api.github.com/repos/vue-email/vue-email/contributors"
+    checkedAt: 2026-11-17
+    via: api
+notFound: [runtime, runtimeMin, dependentPackages, dependentRepos, pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, databases, contentStore, adminUi, headlessApi, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, wikidata, endoflifeId, selfHostOption, reportedInstalls, usageShare, regions, apiLimits, lastCommitDate, packagistName, pypiName, hostedOffering]
+unreadable: []
+notes: >
+  Doubt: none on status; the README calls the project "Experimental and under heavy development. APIs are subject to change." which is no end signal under the criteria. The GitHub release list names v1.0.0 (2024-06-22, "Project Rewrite") as the newest stable release, a major 1, while the npm packages the install docs name are still at 0.0.x; the npm figure is taken from the components package, and the render package (@vue-email/render, 28034 downloads in the same week, 0.0.9) is named in the same install line and is not recorded as npmName, a reviewer decision. The legacy npm package vue-email (0.8.11, 2024-04-04, 1901 in the same week) predates the rewrite and is the wrong package for the install docs. The latestReleaseDate is the newest stable date across the registry packages, @vue-email/components 0.0.21 on 2024-11-01, newer than the GitHub v1.0.0 release. The homepage says "Vue Email v1 is out!" and the release v1.0.0 is named "Project Rewrite". The homepage and docs say the module is "inspired by the Resend team's React Email library"; a build-inspiration statement is no alternativeTo, so it is not recorded. The docs describe Tailwind CSS support and tested email clients, which are coined kinds kept here. The installation page's quick start names the same two packages with the package manager tabs of one registry, one installMethod route. The footer of the homepage links two personal X accounts of the maintainers (Dave and flowko); they are individual accounts, not project accounts, so x is not recorded. No runtime is recorded: the npm manifest of @vue-email/render has engines node >=18.0.0, but no page says the renderer runs in Node. The homepage section "Rendering emails" says rendering and dispatching happen "directly from your server", and the usage page shows render() turning a Vue component into an HTML string or plain text. The ecosyste.ms API returns 0 dependent packages and repositories for both scoped packages, which contradicts their weekly downloads, so the dependent figures are left out. The LICENSE copyright line gives "Vue Email" with the homepage URL and no legal form. The homepage copyright line reads 2024. No prerelease is listed on the GitHub release list, so latestPrereleaseDate is not recorded.

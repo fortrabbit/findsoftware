@@ -1,0 +1,116 @@
+id: ws
+name: ws
+status: accepted
+checkedAt: 2026-11-17
+description: WebSocket client and server library for Node.js.
+facts:
+  - field: repository
+    value: https://github.com/websockets/ws
+    url: https://api.github.com/repos/websockets/ws
+    checkedAt: 2026-11-17
+    via: api
+  - field: docs
+    value: https://github.com/websockets/ws/blob/master/doc/ws.md
+    url: https://github.com/websockets/ws/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Node.js-like documentation of ws classes and utility functions"
+  - field: maintainer
+    value: Einar Otto Stangvik
+    url: https://raw.githubusercontent.com/websockets/ws/master/LICENSE
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Copyright (c) 2011 Einar Otto Stangvik"
+  - field: maintainerType
+    value: individual
+    url: https://raw.githubusercontent.com/websockets/ws/master/LICENSE
+    checkedAt: 2026-11-17
+    via: page
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/websockets
+    checkedAt: 2026-11-17
+    via: api
+  - field: firstRelease
+    value: 2011
+    url: https://registry.npmjs.org/ws
+    checkedAt: 2026-11-17
+    via: api
+  - field: categories
+    value: [realtime, websocket]
+    url: https://github.com/websockets/ws/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "WebSocket client and server implementation"
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/websockets/ws
+    checkedAt: 2026-11-17
+    via: api
+  - field: runtime
+    value: [node]
+    url: https://github.com/websockets/ws/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "ws: a Node.js WebSocket library"
+  - field: runtimeMin
+    value: "10"
+    url: https://github.com/websockets/ws/blob/8.23.0/package.json
+    checkedAt: 2026-11-17
+    via: page
+    quote: '"node": ">=10.0.0"'
+  - field: license
+    value: MIT
+    url: https://api.github.com/repos/websockets/ws
+    checkedAt: 2026-11-17
+    via: api
+  - field: installMethod
+    value: npm
+    url: https://github.com/websockets/ws/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "npm install ws"
+  - field: currentMajor
+    value: 8
+    url: https://api.github.com/repos/websockets/ws/releases/latest
+    checkedAt: 2026-11-17
+    via: api
+  - field: latestReleaseDate
+    value: 2026-11-12
+    url: https://api.github.com/repos/websockets/ws/releases/latest
+    checkedAt: 2026-11-17
+    via: api
+  - field: npmName
+    value: ws
+    url: https://registry.npmjs.org/ws/latest
+    checkedAt: 2026-11-17
+    via: api
+  - field: npmWeeklyDownloads
+    value: "400586733 (2026-11-01 to 2026-11-07)"
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/ws
+    checkedAt: 2026-11-17
+    via: api
+  - field: githubStargazers
+    value: 22830
+    url: https://api.github.com/repos/websockets/ws
+    checkedAt: 2026-11-17
+    via: api
+  - field: contributors
+    value: 194
+    url: https://api.github.com/repos/websockets/ws/contributors?per_page=1
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentPackages
+    value: 19475
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ws
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentRepos
+    value: 900116
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/ws
+    checkedAt: 2026-11-17
+    via: api
+notFound: [homepage, pricingPage, hqCountry, paidEdition, pluginDirectory, forum, discord, x, bluesky, mastodon, subreddit, newsletter, basedOn, alternativeTo, runsAs, parent, forkOf, successorOf, usageShare, reportedInstalls, pypiName, packagistName, endoflifeId, renderingModes, databases, sso]
+unreadable: []
+notes: >
+  Repository only: the GitHub repository is the project's only web presence in the sources read, so no homepage is recorded. Accepted: a WebSocket library is a realtime backend part a site or app wires in, criterion 1 holds. The README title calls ws "a Node.js WebSocket library", and it says "This module does not work in the browser." and names the browser's native WebSocket object and the isomorphic-ws wrapper for shared code; no runsAs is recorded because the README states no process model. The README's protocol section also states that permessage-deflate is disabled by default on the server and enabled by default on the client, and that it adds significant overhead. The README's protocol section names HyBi drafts 07-12 and 13-17 and the permessage-deflate extension (RFC 7692); the Autobahn test suite is named as passed. Those are spec-compliance statements and stay in notes. The optional native modules bufferutil and utf-8-validate are separate packages, not recorded. maintainer: the LICENSE first copyright line names Einar Otto Stangvik (2011), and package.json at tag 8.23.0 names the same author; the other two lines name "Arnout Kazemier and contributors" (2013) and "Luigi Pinca and contributors" (2016), which are not recorded as maintainer. The GitHub owner is the websockets organization. currentMajor 8 is the highest stable GitHub release (8.23.0, 2026-11-12); the 7.x and 6.x and 5.x lines have releases in 2026 too. runtimeMin 10 is the engines field at tag 8.23.0. firstRelease 2011 is the oldest npm upload (0.2.6, 2011-12-04); the repository was created 2011-11-09. npm weekly downloads cover 2026-11-01 to 2026-11-07.

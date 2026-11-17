@@ -1,0 +1,106 @@
+id: uvu
+name: uvu
+status: accepted
+checkedAt: 2026-11-17
+description: Test runner for Node.js and the browser, with an optional assertion module.
+facts:
+  - field: repository
+    value: https://github.com/lukeed/uvu
+    url: https://api.github.com/repos/lukeed/uvu
+    checkedAt: 2026-11-17
+    via: api
+  - field: docs
+    value: https://github.com/lukeed/uvu/tree/master/docs
+    url: https://github.com/lukeed/uvu/blob/master/readme.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "View `uvu` API documentation"
+  - field: firstRelease
+    value: 2020
+    url: https://registry.npmjs.org/uvu
+    checkedAt: 2026-11-17
+    via: api
+  - field: maintainer
+    value: Luke Edwards
+    url: https://github.com/lukeed/uvu/blob/master/license
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Copyright (c) Luke Edwards"
+  - field: repoOwnerType
+    value: user
+    url: https://api.github.com/users/lukeed
+    checkedAt: 2026-11-17
+    via: api
+  - field: language
+    value: JavaScript
+    url: https://api.github.com/repos/lukeed/uvu
+    checkedAt: 2026-11-17
+    via: api
+  - field: categories
+    value: [testing]
+    url: https://github.com/lukeed/uvu/blob/master/readme.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "is an extremely fast and lightweight test runner for Node.js and the browser"
+  - field: runtime
+    value: [node]
+    url: https://github.com/lukeed/uvu/blob/master/readme.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "is an extremely fast and lightweight test runner for Node.js and the browser"
+  - field: installMethod
+    value: npm
+    url: https://github.com/lukeed/uvu/blob/master/readme.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "npm install --save-dev uvu"
+  - field: license
+    value: MIT
+    url: https://github.com/lukeed/uvu/blob/master/license
+    checkedAt: 2026-11-17
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: currentMajor
+    value: 0
+    url: https://github.com/lukeed/uvu/releases/tag/v0.5.6
+    checkedAt: 2026-11-17
+    via: api
+  - field: latestReleaseDate
+    value: 2022-07-03
+    url: https://github.com/lukeed/uvu/releases/tag/v0.5.6
+    checkedAt: 2026-11-17
+    via: api
+  - field: githubStargazers
+    value: 3028
+    url: https://api.github.com/repos/lukeed/uvu
+    checkedAt: 2026-11-17
+    via: api
+  - field: contributors
+    value: 22
+    url: https://api.github.com/repos/lukeed/uvu/contributors?per_page=1
+    checkedAt: 2026-11-17
+    via: api
+  - field: npmName
+    value: uvu
+    url: https://registry.npmjs.org/uvu
+    checkedAt: 2026-11-17
+    via: api
+  - field: npmWeeklyDownloads
+    value: 6916231 for 2026-11-01 to 2026-11-07
+    url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/uvu
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentPackages
+    value: 1980
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/uvu
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentRepos
+    value: 83154
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/uvu
+    checkedAt: 2026-11-17
+    via: api
+notFound: [homepage, alternativeTo, runtimeMin, runsAs, renderingModes, basedOn, importsFrom, databases, contentStore, i18n, templating, sso, adminUi, headlessApi, userRoles, multisite, livePreview, parent, forkOf, successorOf, hqCountry, pricingPage, paidEdition, usageShare, httpArchiveSites, reportedInstalls, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, endoflifeId, wikidata, packagistName, rubygemsName]
+unreadable: []
+notes: >
+  Boundary ruling for this wave: uvu is a testing library and accepted under the load-testing and testing ruling. The repository is the only web presence: the registry homepage field points to the README, so no homepage is recorded. The README names Node.js and the browser, so runtime is node with no runsAs. The Benchmarks section times ava, jest, mocha and tape against uvu in a code block with no comparing sentence, so no alternativeTo is recorded. The package manifest engines field at the latest release tag is not recorded as runtimeMin because no README or docs sentence states a Node.js minimum. The version line is 0.5.x, so currentMajor is 0 and the minor line stays here. The first tag is from 2020 and the npm package was created in 2020. The README says the assertion module is completely optional and that any assertion library works, because the runner relies on thrown errors. The repository holds one npm package, so stars and contributors are the package's own. The maintainer is taken from the LICENSE copyright line; the same line carries an email address, which is not recorded. npmWeeklyDownloads is the sum of the daily figures for 2026-11-01 to 2026-11-07, the period stated in the value.

@@ -1,0 +1,1 @@
+Vue 3 Carousel is a carousel component for Vue 3. The project says it is optimized for Vue 3 and is not a wrapper around another library. The README lists responsive breakpoints, an infinite wrap-around mode, touch and mouse dragging, mouse wheel and keyboard navigation with ARIA labels, autoplay and a vertical mode.

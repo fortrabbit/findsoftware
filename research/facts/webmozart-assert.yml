@@ -1,0 +1,123 @@
+id: webmozart-assert
+name: webmozart/assert
+status: accepted
+checkedAt: 2026-11-17
+description: "PHP library of assertions that validate method input and output with readable error messages."
+facts:
+  - field: repository
+    value: "https://github.com/webmozarts/assert"
+    url: "https://api.github.com/repos/webmozarts/assert"
+    checkedAt: 2026-11-17
+    via: api
+  - field: docs
+    value: "https://github.com/webmozarts/assert/blob/master/README.md"
+    url: "https://github.com/webmozarts/assert/blob/master/README.md"
+    checkedAt: 2026-11-17
+    via: page
+  - field: firstRelease
+    value: 2015
+    url: "https://repo.packagist.org/p2/webmozart/assert.json"
+    checkedAt: 2026-11-17
+    via: api
+  - field: maintainer
+    value: "Bernhard Schussek"
+    url: "https://raw.githubusercontent.com/webmozarts/assert/master/LICENSE"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Copyright (c) 2014 Bernhard Schussek"
+  - field: repoOwnerType
+    value: organization
+    url: "https://api.github.com/users/webmozarts"
+    checkedAt: 2026-11-17
+    via: api
+  - field: language
+    value: "PHP"
+    url: "https://api.github.com/repos/webmozarts/assert"
+    checkedAt: 2026-11-17
+    via: api
+  - field: runtime
+    value: [php]
+    url: "https://raw.githubusercontent.com/webmozarts/assert/2.5.1/composer.json"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "\"php\": \"^8.2\""
+  - field: runtimeMin
+    value: "8.2"
+    url: "https://raw.githubusercontent.com/webmozarts/assert/2.5.1/composer.json"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "\"php\": \"^8.2\""
+  - field: categories
+    value: [validation]
+    url: "https://raw.githubusercontent.com/webmozarts/assert/master/README.md"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "This library contains efficient assertions to test the input and output of"
+  - field: installMethod
+    value: composer
+    url: "https://raw.githubusercontent.com/webmozarts/assert/master/README.md"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "composer require webmozart/assert"
+  - field: packagistName
+    value: "webmozart/assert"
+    url: "https://packagist.org/packages/webmozart/assert.json"
+    checkedAt: 2026-11-17
+    via: api
+  - field: packagistDownloads
+    value: 1011654924 (total, 2026-11-17)
+    url: "https://packagist.org/packages/webmozart/assert.json"
+    checkedAt: 2026-11-17
+    via: api
+  - field: packagistMonthlyDownloads
+    value: 25323633 (monthly, 2026-11-17)
+    url: "https://packagist.org/packages/webmozart/assert.json"
+    checkedAt: 2026-11-17
+    via: api
+  - field: currentMajor
+    value: 2
+    url: "https://api.github.com/repos/webmozarts/assert/releases?per_page=100"
+    checkedAt: 2026-11-17
+    via: api
+  - field: latestReleaseDate
+    value: "2026-11-15"
+    url: "https://api.github.com/repos/webmozarts/assert/releases?per_page=100"
+    checkedAt: 2026-11-17
+    via: api
+  - field: githubStargazers
+    value: 7648 (2026-11-17)
+    url: "https://api.github.com/repos/webmozarts/assert"
+    checkedAt: 2026-11-17
+    via: api
+  - field: contributors
+    value: 88 (2026-11-17)
+    url: "https://api.github.com/repos/webmozarts/assert/contributors?per_page=1"
+    checkedAt: 2026-11-17
+    via: api
+  - field: alternativeTo
+    value: [beberlei-assert]
+    url: "https://raw.githubusercontent.com/webmozarts/assert/master/README.md"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "In [beberlei/assert], the ordering of the `%s` placeholders is different for every assertion."
+  - field: license
+    value: "MIT"
+    url: "https://raw.githubusercontent.com/webmozarts/assert/master/LICENSE"
+    checkedAt: 2026-11-17
+    via: page
+    quote: "The MIT License (MIT)"
+  - field: dependentPackages
+    value: 1007
+    url: "https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/webmozart%2Fassert"
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentRepos
+    value: 528993
+    url: "https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/webmozart%2Fassert"
+    checkedAt: 2026-11-17
+    via: api
+notFound: [homepage, basedOn, databases, adminUi, headlessApi, templating, i18n, sso, userRoles, paidEdition, pricingPage, endoflifeId, forum, discord, x, bluesky, mastodon, pluginDirectory, wikidata, hostedOffering, hqCountry, importsFrom, runsAs, renderingModes]
+unreadable: []
+notes: >
+  The repository has no homepage of its own; the GitHub homepage field is empty and the README links only the repository, so no homepage is recorded. Status accepted: the newest stable release is 2.5.1 (2026-11-15), the repository is not archived, Packagist flags no abandonment, and the README names no end. The category "assertions" maps to testing in the import, so the record takes validation only, which is the README's own subject. The README's FAQ asks "What's the difference to [beberlei/assert]?" and says the library is "heavily inspired by" that package while fixing its error messages; that is a comparison and an inspiration, not a fork, so it is recorded as alternativeTo beberlei-assert, which has its own record, and not as forkOf or basedOn. The README says this package provides consistent placeholder ordering across all assertions, where beberlei/assert orders them differently for each assertion. The 2.0.0-beta prerelease of 2025-12-21 is older than the latest stable release, so no latestPrereleaseDate is recorded. The first Packagist version is 1.0.0-beta (2015-03-19), which is older than the first stable 1.0.0 (2015-05-12), and the repository was created 2015-03-11. The maintainer is the copyright holder named by the MIT LICENSE; the README's author line gives Bernhard Schussek a.k.a. @webmozart with a link to webmozart.org, which is no country. The packagist figures are total and monthly downloads from the Packagist package API. The runtime and runtimeMin are taken from composer.json at the 2.5.1 tag. No sentence states where the library runs, so no runsAs is recorded.
+  The README says every assertion throws Webmozart\Assert\InvalidArgumentException when it fails, and that a custom message can use a %s placeholder for the tested value.

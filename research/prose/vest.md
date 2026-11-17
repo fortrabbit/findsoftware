@@ -1,0 +1,3 @@
+Vest is a TypeScript validation framework for forms, with rules written like unit tests. Its suites run the rules for the field or step that changed and keep the results for everything else, as the [README](https://github.com/ealush/vest/blob/latest/README.md) describes.
+
+The [get started guide](https://vestjs.dev/docs/get_started) says that anyone who knows Jest or Mocha will find the authoring model familiar. A suite is independent of any UI framework: the README names React, Vue, Svelte, Angular, vanilla JavaScript and Node.js as places the same suite can run, and the [server-side page](https://vestjs.dev/docs/server_side_validations) describes running it in Node.js.

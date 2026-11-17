@@ -1,0 +1,1 @@
+uvu is a test runner for Node.js and the browser. Its README says the assertion module is optional and that any assertion library works, because the runner relies on thrown errors to detect failures. The [API documentation](https://github.com/lukeed/uvu/tree/master/docs) sits in the repository's docs folder.

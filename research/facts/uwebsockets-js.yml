@@ -1,0 +1,104 @@
+id: uwebsockets-js
+name: uWebSockets.js
+status: accepted
+checkedAt: 2026-11-17
+description: Native Node.js addon that exposes the µWebSockets web server, written in C++.
+facts:
+  - field: repository
+    value: https://github.com/uNetworking/uWebSockets.js
+    url: https://api.github.com/repos/uNetworking/uWebSockets.js
+    checkedAt: 2026-11-17
+    via: api
+  - field: docs
+    value: https://unetworking.github.io/uWebSockets.js/generated/functions/App.html
+    url: https://github.com/uNetworking/uWebSockets.js/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Browse the documentation"
+  - field: firstRelease
+    value: 2019
+    url: https://github.com/uNetworking/uWebSockets.js/releases/tag/v0.0.1
+    checkedAt: 2026-11-17
+    via: api
+  - field: maintainer
+    value: uNetworking AB
+    url: https://api.github.com/orgs/uNetworking
+    checkedAt: 2026-11-17
+    via: api
+  - field: repoOwnerType
+    value: organization
+    url: https://api.github.com/users/uNetworking
+    checkedAt: 2026-11-17
+    via: api
+  - field: language
+    value: C++
+    url: https://api.github.com/repos/uNetworking/uWebSockets.js
+    checkedAt: 2026-11-17
+    via: api
+  - field: categories
+    value: [web-server]
+    url: https://github.com/uNetworking/uWebSockets.js/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "is a standards-compliant web server written in 10,000 lines of C++"
+  - field: runtime
+    value: [node]
+    url: https://github.com/uNetworking/uWebSockets.js/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "It is exposed to Node.js as a simple-to-use, native V8 addon"
+  - field: runsAs
+    value: [always-on]
+    url: https://github.com/uNetworking/uWebSockets.js/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "µWebSockets.js is a standards-compliant web server"
+  - field: installMethod
+    value: npm
+    url: https://github.com/uNetworking/uWebSockets.js/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "We aren't in the NPM registry but you can easily install it with the NPM client"
+  - field: alternativeTo
+    value: fastify
+    url: https://github.com/uNetworking/uWebSockets.js/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "is 13x faster than Fastify"
+  - field: alternativeTo
+    value: socket-io
+    url: https://github.com/uNetworking/uWebSockets.js/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "20x faster than Socket.IO"
+  - field: license
+    value: Apache-2.0
+    url: https://github.com/uNetworking/uWebSockets.js/blob/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "source code is licensed Apache License 2.0"
+  - field: currentMajor
+    value: 20
+    url: https://github.com/uNetworking/uWebSockets.js/releases/tag/v20.71.0
+    checkedAt: 2026-11-17
+    via: api
+  - field: latestReleaseDate
+    value: 2026-09-16
+    url: https://github.com/uNetworking/uWebSockets.js/releases/tag/v20.71.0
+    checkedAt: 2026-11-17
+    via: api
+  - field: githubStargazers
+    value: 9195
+    url: https://api.github.com/repos/uNetworking/uWebSockets.js
+    checkedAt: 2026-11-17
+    via: api
+  - field: contributors
+    value: 50
+    url: https://api.github.com/repos/uNetworking/uWebSockets.js/contributors?per_page=1
+    checkedAt: 2026-11-17
+    via: api
+notFound: [homepage, runtimeMin, renderingModes, basedOn, importsFrom, databases, contentStore, i18n, templating, sso, adminUi, headlessApi, userRoles, multisite, livePreview, parent, forkOf, successorOf, hqCountry, pricingPage, paidEdition, usageShare, httpArchiveSites, reportedInstalls, forum, discord, subreddit, mastodon, bluesky, x, newsletter, pluginDirectory, pluginCount, endoflifeId, wikidata, npmName, npmWeeklyDownloads, packagistName, rubygemsName, dependentPackages, dependentRepos]
+unreadable:
+  - "https://unetworking.github.io/uWebSockets.js/ (answers 404 on GitHub Pages, so the repository's documentation root is not a homepage; the generated App page answers 200 and documents v20.61.0)"
+notes: >
+  Boundary ruling for this wave: a web server for Node.js back-ends is server software under criterion 1, and the install route is the GitHub repository, so it is accepted on criterion 2 as a distributable. The README names no runtime other than Node.js, so runtime is node with no runsAs quote except the "standards-compliant web server" sentence, which states the server process model; a reviewer may decide whether that sentence is enough for always-on. The repository has no homepage of its own and the GitHub Pages root answers 404, so no homepage is recorded. The package is not on the npm registry: the README says so and installs it with the npm client from GitHub, which is why there is no npmName and no npm figure. Release binaries are distributed on GitHub, per the candidate note. The package.json at the latest tag v20.71.0 has no engines field, so runtimeMin is absent. The major version 20 is the numbering the project uses for the line since 2021 (v20.0.0), read as the major. The README opens its licensing section with "Intellectual property, all rights reserved.", a reservation of rights over intellectual property in general, and licenses source code that carries an explicit notice under Apache-2.0; only the Apache-2.0 statement is a license of the code and is recorded as the license. The maintainer is the GitHub organization profile name, uNetworking AB; the org location names a region, not a country, so hqCountry is absent. The README mentions a fork of µWS carried by Bun; that is not this project and is not recorded as forkOf. Stars and contributors belong to the repository.
