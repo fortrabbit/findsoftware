@@ -1,11 +1,7 @@
 /**
- * A value computed from the whole collection, held until its inputs change.
- *
- * A build holds it for the whole run. `astro dev` holds it too, keyed on the
- * modification times of the content store and the momentum files: recomputing
- * the facet table, the graph and momentum on every request made each click take
- * two seconds, and keying on the files still shows an edited record on the next
- * request once Astro has written its store.
+ * A value computed from the whole collection, held for a build, and in
+ * `astro dev` until the content store or the momentum files change, so an
+ * edited record shows on the next request. A failed computation is not held.
  */
 import { statSync } from 'node:fs';
 
@@ -31,10 +27,13 @@ export const cached = <T>(make: () => Promise<T>): (() => Promise<T>) => {
   let held: Promise<T> | undefined;
   let heldFor = '';
   return () => {
-    if (import.meta.env.PROD) return (held ??= make());
-    const now = version();
+    const now = import.meta.env.PROD ? '' : version();
     if (!held || heldFor !== now) {
-      held = make();
+      const attempt = make().catch((error) => {
+        if (held === attempt) held = undefined;
+        throw error;
+      });
+      held = attempt;
       heldFor = now;
     }
     return held;

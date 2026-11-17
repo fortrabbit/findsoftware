@@ -1,5 +1,5 @@
 /**
- * The momentum verdict of every listed record, once per build: the measured
+ * The momentum verdict of every listed record, held until its inputs change (see dev-cache.ts): the measured
  * figures from src/data/momentum.json cut by the thresholds in
  * src/data/momentum.yml. A record that is out of the default view keeps its
  * page, stays in search and is on the full list at /all/.

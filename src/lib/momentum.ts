@@ -63,7 +63,10 @@ export function measurable(record: { urls?: { repository?: unknown }; sources?: 
   const repository = String(record.urls?.repository ?? '');
   if (/^https:\/\/github\.com\/[^/]+\/[^/#?]+\/?$/.test(repository)) return true;
   return (record.sources ?? []).some(
-    (source) => source.field === 'npmWeeklyDownloads' || source.field === 'packagistMonthlyDownloads',
+    (source) =>
+      (source.field === 'npmWeeklyDownloads' && /downloads\/(?:point|range)\/[^/]+\/.+$/.test(String(source.url))) ||
+      (source.field === 'packagistMonthlyDownloads' &&
+        /packages\/[^/]+\/[^/]+?(?:\/stats)?\.json/.test(String(source.url))),
   );
 }
 

@@ -1,5 +1,5 @@
 /**
- * The register's "built on" graph, laid out once per build for /graph.json,
+ * The register's "built on" graph, laid out once until a record changes (see dev-cache.ts) for /graph.json,
  * for the old /graph/ address to forward, and for each record page to ask
  * whether it is in it.
  */

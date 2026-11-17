@@ -50,8 +50,8 @@ const spread = (text: string) => {
 let laidOut: { shape: string; at: Map<string, [number, number]> } | undefined;
 
 /**
- * `show` decides which records are drawn; their parents come along whatever
- * their status, since a child without the thing it is built on reads as a root.
+ * `show` decides which records are drawn; their parents among `records` come
+ * along, since a child without the thing it is built on reads as a root.
  */
 export function buildGraph(
   records: GraphRecord[],
