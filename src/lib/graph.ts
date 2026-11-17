@@ -56,7 +56,7 @@ let laidOut: { shape: string; at: Map<string, [number, number]> } | undefined;
 export function buildGraph(
   records: GraphRecord[],
   show: (record: GraphRecord) => boolean,
-  language: (id: string) => { label: string; href: string },
+  language: (id: string) => { label: string; href?: string },
 ): { nodes: GraphNode[]; edges: [string, string][] } {
   const byId = new Map(records.map((record) => [record.id, record]));
   const drawn = new Map<string, GraphRecord>();

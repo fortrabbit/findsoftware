@@ -10,6 +10,7 @@ import { recordPath } from './paths';
 import { loadBands } from './usage-data';
 import { inDefaultView, loadMomentum } from './momentum-data';
 import { cached } from './dev-cache';
+import { loadFacets } from './facets';
 
 export interface GraphData extends Drawing {
   /** Every record drawn: the listed ones and the parents they bring along. */
@@ -24,6 +25,11 @@ const make = async (): Promise<GraphData> => {
   const listed = new Set(
     software.filter((entry) => isListed(entry) && inDefaultView(momentum, entry.id)).map((entry) => entry.id),
   );
+  const withPage = new Set(
+    ((await loadFacets()).facets.find((facet) => facet.field === 'language')?.values ?? [])
+      .filter((value) => value.count > 0)
+      .map((value) => value.id),
+  );
   const { nodes, edges } = buildGraph(
     software.map((entry) => ({
       id: entry.id,
@@ -34,9 +40,10 @@ const make = async (): Promise<GraphData> => {
       band: bands.get(entry.id),
     })),
     (record) => listed.has(record.id),
+    // Linked only when its page is built: a language page lists register records, and a record beside the register can bring its language into the graph.
     (id) => ({
       label: labelOf('language', id),
-      href: `/languages/${slugOf(fieldOf.get('language')!, { id, label: labelOf('language', id) })}/`,
+      ...(withPage.has(id) ? { href: `/languages/${slugOf(fieldOf.get('language')!, { id, label: labelOf('language', id) })}/` } : {}),
     }),
   );
   const drawn = new Set(nodes.filter((node) => node.kind !== 'language').map((node) => node.key));
