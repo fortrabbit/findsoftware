@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { momentumOf, type Thresholds } from './momentum.ts';
+import { measurable, momentumOf, type Thresholds } from './momentum.ts';
 
 const t: Thresholds = {
   activeMonths: 12,
@@ -61,5 +61,21 @@ describe('momentumOf', () => {
   it('keeps popularity off when no top share is set', () => {
     const { popularityTop: _, ...without } = t;
     assert.deepEqual(momentumOf({ checkedAt: day, pushedAt: day }, {}, 0.95, without), { shown: false, why: 'flat' });
+  });
+});
+
+describe('measurable', () => {
+  it('reads a GitHub repository or a download figure', () => {
+    assert.equal(measurable({ urls: { repository: 'https://github.com/laravel/framework' } }), true);
+    assert.equal(measurable({ sources: [{ field: 'npmWeeklyDownloads', url: 'https://api.npmjs.org/x' }] }), true);
+    assert.equal(measurable({ urls: { repository: 'https://gitlab.com/a/b' } }), false);
+    assert.equal(measurable({}), false);
+  });
+
+  it('judges an unmeasurable record on its release and usage alone', () => {
+    const released = { latestReleaseDate: new Date('2026-06-01') };
+    assert.deepEqual(momentumOf({ checkedAt: day }, released, 0.95, t), { shown: true, by: 'popularity' });
+    assert.deepEqual(momentumOf({ checkedAt: day }, released, 0.5, t), { shown: false, why: 'flat' });
+    assert.deepEqual(momentumOf({ checkedAt: day }, {}, 0.95, t), { shown: false, why: 'inactive' });
   });
 });

@@ -2,7 +2,7 @@
 layout: ../layouts/Article.astro
 title: About
 published: 2026-11-05
-updated: 2026-11-16
+updated: 2026-11-17
 description: Why FindSoftware, and by whom.
 lead: FindSoftware is a register of software to build websites with, by language, recorded field by field.
 ---
@@ -42,9 +42,11 @@ Take them with a big grain of salt. The data is fuzzy. Different ecosystems coun
 
 I found myself overwhelmed when looking at the total data set, currently 3K+ software projects. The website gets a bit slow with so many records, but it also feels like a wall. The default momentum filter aims to show software that is currently popular, while keeping the old dinosaurs out. Momentum is measured by a script from public APIs. The [full list](/all/) holds the rest as well. A record has momentum when it had a release, a pre-release or a push to its repository in the last 12 months, and one of these:
 
-- **Activity:** at least 200 commits to the default branch in the last 13 weeks, and in the last 26 weeks at least twice as many as in the 26 before.
-- **Downloads:** doubled or more against the same weeks a year ago, to at least 100,000 npm downloads in 28 days or a daily average of 1,000 on Packagist.
-- **Wide use:** the top tenth of the records on the [Usage](/usage/) page.
+- **Activity:** at least 500 commits to the default branch in the last 13 weeks, and in the last 26 weeks at least twice as many as in the 26 before.
+- **Downloads:** five times or more against the same weeks a year ago, to at least 1,000,000 npm downloads in 28 days or a daily average of 5,000 on Packagist.
+- **Wide use:** the top 8% of the records on the [Usage](/usage/) page.
+
+Software with no public repository or package to measure, such as a commercial control panel, needs a release in the last 12 months and wide use.
 
 Growth counts a young project rising from few downloads the same as a large one, and wide use keeps a project people rely on when its activity is steady. A person can also take a record out of the default view after looking at it. It becomes a stub, with the reason recorded.
 

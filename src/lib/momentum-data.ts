@@ -8,7 +8,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { parse as parseYaml } from 'yaml';
 import { isListed, loadSoftware } from './providers';
 import { loadUsagePlaces } from './usage-data';
-import { momentumOf, type MomentumFigures, type Thresholds, type Verdict } from './momentum';
+import { measurable, momentumOf, type MomentumFigures, type Thresholds, type Verdict } from './momentum';
 import { cached } from './dev-cache';
 
 const figuresFile = 'src/data/momentum.json';
@@ -22,8 +22,17 @@ const make = async (): Promise<Map<string, Verdict>> => {
   const thresholds = parseYaml(readFileSync(thresholdsFile, 'utf8')) as Thresholds;
   const places = await loadUsagePlaces();
   const verdicts = new Map<string, Verdict>();
+  /*
+   * A record with nothing to measure (no GitHub repository, npm or Packagist
+   * package) is judged on what it has: a release within the window, then wide
+   * use. Dated as of the newest measurement, so the cut does not move with the
+   * build date.
+   */
+  const today = Object.values(figures).reduce((newest, entry) => (entry.checkedAt > newest ? entry.checkedAt : newest), '');
   for (const entry of (await loadSoftware()).filter(isListed)) {
-    verdicts.set(entry.id, momentumOf(Object.hasOwn(figures, entry.id) ? figures[entry.id] : undefined, entry.data, places.get(entry.id), thresholds));
+    const held = Object.hasOwn(figures, entry.id) ? figures[entry.id] : undefined;
+    const own = held ?? (today && !measurable(entry.data as never) ? { checkedAt: today } : undefined);
+    verdicts.set(entry.id, momentumOf(own, entry.data, places.get(entry.id), thresholds));
   }
   return verdicts;
 };

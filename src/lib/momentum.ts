@@ -34,7 +34,7 @@ export interface Thresholds {
   commits: { last13Weeks: number; trend: number };
   /** Growth against a year ago, as a fraction. Today's figure must reach the floor, so 10 to 20 downloads is no growth; a small year-ago figure counts, so a young tool can pass. */
   downloads: { growth: number; npm28Floor: number; packagistDailyFloor: number };
-  /** An active record in this top share of the usage places (0.1 is the top tenth) stays in on its own. Absent turns it off. */
+  /** An active record in this top share of the usage places (0.08 is the top 8%) stays in on its own. Absent turns it off. */
   popularityTop?: number;
 }
 
@@ -54,6 +54,18 @@ const isoDay = (value: unknown) =>
 // A year-ago figure nobody measured is unknown, not zero, so it shows no growth.
 const grew = (now: number | undefined, then: number | undefined, floor: number, growth: number) =>
   now !== undefined && then !== undefined && now >= floor && now >= then * (1 + growth);
+
+/**
+ * Whether scripts/momentum.mjs can measure a record: a GitHub repository, or an
+ * npm or Packagist download figure. The same reading as the script's.
+ */
+export function measurable(record: { urls?: { repository?: unknown }; sources?: { field?: unknown; url?: unknown }[] }): boolean {
+  const repository = String(record.urls?.repository ?? '');
+  if (/^https:\/\/github\.com\/[^/]+\/[^/#?]+\/?$/.test(repository)) return true;
+  return (record.sources ?? []).some(
+    (source) => source.field === 'npmWeeklyDownloads' || source.field === 'packagistMonthlyDownloads',
+  );
+}
 
 /**
  * The verdict for one record. A record nobody has measured yet is shown: a new
