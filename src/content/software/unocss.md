@@ -11,7 +11,7 @@ description: Atomic CSS engine that generates utility styles on demand, with eve
 status: active
 maintainer: Anthony Fu
 firstRelease: 2021
-language: javascript
+language: css
 runsAs:
   - local
   - browser

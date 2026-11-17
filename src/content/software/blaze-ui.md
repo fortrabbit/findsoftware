@@ -13,7 +13,7 @@ status: active
 maintainer: Gregory Pratt
 maintainerType: individual
 firstRelease: 2016
-language: javascript
+language: css
 installMethod: cdn, npm, git-clone
 licenseModel: open-source
 license: MIT

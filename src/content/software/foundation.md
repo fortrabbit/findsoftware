@@ -12,6 +12,7 @@ status: stub
 maintainer: Aspect Services, LLC
 maintainerType: company
 firstRelease: 2011
+language: css
 runsAs:
   - browser
 licenseModel: source-available
@@ -67,6 +68,7 @@ i18n: null
 renderingModes: null
 hosting: null
 runtimeMin: null
+packagistDownloads: null
 ---
 
 Yeti is a layout and styling framework from Foundation, written for web designers. The [project's site](https://foundationcss.com/yeti/) describes one stylesheet linked from a page, using native CSS features such as container queries, cascade layers and nesting in place of Sass or JavaScript. Layouts are named and set with data attributes, and type and space come from one token scale.

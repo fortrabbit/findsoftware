@@ -14,7 +14,7 @@ maintainer: Stack Exchange Inc.
 maintainerType: company
 firstRelease: 2017
 hqCountry: US
-language: javascript
+language: css
 basedOn:
   - stimulus
 installMethod: npm, cdn

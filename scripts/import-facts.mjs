@@ -369,8 +369,15 @@ const runtimeMap = {
   'rust binary': 'binary',
   swift: 'binary',
 };
-// The HTML of a CSS kit is its language here; other HTML sites report no language.
-const cssKits = new Set(['flowbite', 'open-props']);
+// Filed under CSS: kits used through their CSS classes and variables, whatever
+// language their build tool is written in. CSS-in-JS, preprocessors and class
+// helpers keep the language they are written in.
+const cssKits = new Set([
+  'blaze-ui', 'bootstrap', 'bootswatch', 'daisyui', 'flowbite', 'flyonui', 'fomantic-ui', 'foundation',
+  'govuk-frontend', 'master-css', 'materialize', 'materialize-dogfalo', 'metro-ui', 'nhsuk-frontend',
+  'open-props', 'orbit-css', 'pollen-css', 'semantic-ui', 'stacks', 'tailwindcss', 'twind', 'uikit',
+  'unocss', 'uswds', 'windicss',
+]);
 // TypeScript compiles to JavaScript and shares its packages and runtimes, so the register keeps them as one value.
 // A language held by a single fact file shares one value; Shell, Makefile and HTML stay unknown.
 const languageMap = {

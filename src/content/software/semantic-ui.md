@@ -13,7 +13,7 @@ status: stub
 maintainer: Jack Lukic
 maintainerType: individual
 firstRelease: 2013
-language: javascript
+language: css
 installMethod: npm, download
 licenseModel: open-source
 license: MIT

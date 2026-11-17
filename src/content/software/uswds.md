@@ -13,7 +13,7 @@ status: active
 maintainer: U.S. General Services Administration
 firstRelease: 2015
 hqCountry: US
-language: javascript
+language: css
 templating: twig
 installMethod: npm, github-release-zip
 licenseModel: open-source

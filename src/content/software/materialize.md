@@ -11,7 +11,7 @@ description: Front-end framework based on Material Design, with CSS styles and J
 status: active
 maintainer: Materialize
 firstRelease: 2020
-language: javascript
+language: css
 installMethod: npm, cdn, github-release-zip
 licenseModel: open-source
 license: MIT

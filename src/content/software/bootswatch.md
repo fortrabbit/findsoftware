@@ -12,7 +12,7 @@ status: active
 maintainer: Bootswatch community
 maintainerType: community
 firstRelease: 2013
-language: javascript
+language: css
 basedOn:
   - bootstrap
 installMethod: download

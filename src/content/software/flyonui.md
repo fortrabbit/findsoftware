@@ -15,7 +15,7 @@ maintainer: CleVision Technologies Private Limited
 maintainerType: company
 firstRelease: 2024
 hqCountry: IN
-language: javascript
+language: css
 basedOn:
   - tailwindcss
 installMethod: npm

@@ -12,7 +12,7 @@ description: CSS, JavaScript and Nunjucks components for building government ser
 status: active
 maintainer: Government Digital Service
 firstRelease: 2018
-language: javascript
+language: css
 templating: nunjucks
 i18n: yes, component text can be translated
 installMethod: npm, github-release-zip

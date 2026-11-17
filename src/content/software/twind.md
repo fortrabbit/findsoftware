@@ -12,7 +12,7 @@ status: active
 maintainer: Sascha Tandel
 maintainerType: individual
 firstRelease: 2020
-language: javascript
+language: css
 runsAs:
   - browser
 installMethod: npm, cdn

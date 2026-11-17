@@ -13,7 +13,7 @@ status: active
 maintainer: Pouya Saadeghi
 maintainerType: individual
 firstRelease: 2020
-language: javascript
+language: css
 runtime:
   - node
 basedOn:

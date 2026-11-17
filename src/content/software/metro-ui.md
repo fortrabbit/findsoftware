@@ -13,7 +13,7 @@ status: active
 maintainer: Serhii Pimenov
 maintainerType: individual
 firstRelease: 2012
-language: javascript
+language: css
 i18n: yes
 runsAs:
   - browser

@@ -12,7 +12,7 @@ description: Frontend code, with CSS, JavaScript and assets, for building user i
 status: active
 maintainer: NHS England
 firstRelease: 2018
-language: javascript
+language: css
 templating: nunjucks
 runsAs:
   - browser

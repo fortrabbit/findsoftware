@@ -12,7 +12,7 @@ status: stub
 maintainer: Materialize
 maintainerType: individual
 firstRelease: 2014
-language: javascript
+language: css
 installMethod: npm, cdn, github-release-zip, meteor, bower
 licenseModel: open-source
 license: MIT

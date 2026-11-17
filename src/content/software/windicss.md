@@ -12,7 +12,7 @@ status: stub
 maintainer: The Windi CSS Team
 maintainerType: community
 firstRelease: 2020
-language: javascript
+language: css
 runtime:
   - node
 runtimeMin: node 12

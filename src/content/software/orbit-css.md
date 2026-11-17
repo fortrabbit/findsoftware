@@ -11,7 +11,7 @@ description: CSS layout system for radial interfaces such as gauges, dials, knob
 status: active
 maintainer: Juan Martín Muda
 firstRelease: 2024
-language: javascript
+language: css
 installMethod: npm, cdn
 licenseModel: open-source
 license: MIT

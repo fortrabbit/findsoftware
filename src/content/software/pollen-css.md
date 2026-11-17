@@ -11,7 +11,7 @@ description: Configurable library of CSS variables for a design system, written 
 status: active
 maintainer: Hyperfocal
 firstRelease: 2019
-language: javascript
+language: css
 runsAs:
   - local
 installMethod: npm, cdn

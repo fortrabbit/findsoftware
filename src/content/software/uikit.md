@@ -14,7 +14,7 @@ maintainer: YOOtheme GmbH
 maintainerType: company
 firstRelease: 2013
 hqCountry: DE
-language: javascript
+language: css
 i18n: rtl
 installMethod: npm, cdn, download-zip, yarn
 licenseModel: open-source

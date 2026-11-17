@@ -12,7 +12,7 @@ status: active
 maintainer: Tailwind Labs Inc.
 maintainerType: company
 firstRelease: 2017
-language: javascript
+language: css
 runsAs:
   - local
 installMethod: npm, tailwind-cli, play-cdn

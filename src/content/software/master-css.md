@@ -12,7 +12,7 @@ status: active
 maintainer: Aoyue Design LLC
 maintainerType: company
 firstRelease: 2021
-language: javascript
+language: css
 runsAs:
   - browser
 installMethod: npm, cdn

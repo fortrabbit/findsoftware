@@ -13,7 +13,7 @@ status: active
 maintainer: fomantic
 maintainerType: community
 firstRelease: 2018
-language: javascript
+language: css
 installMethod: npm, cdn, yarn, npm CSS-only package, npm LESS package
 licenseModel: open-source
 license: MIT

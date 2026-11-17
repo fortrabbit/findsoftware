@@ -13,6 +13,7 @@ status: active
 maintainer: Bootstrap team
 maintainerType: community
 firstRelease: 2011
+language: css
 runsAs:
   - browser
 installMethod: npm, yarn, bun, rubygems, composer, nuget, cdn
@@ -102,6 +103,7 @@ i18n: null
 renderingModes: null
 hosting: null
 runtimeMin: null
+packagistDownloads: null
 ---
 
 Bootstrap is an HTML, CSS and JavaScript toolkit for building responsive, mobile-first projects, combining a CSS framework with a library of components. The Bootstrap team, a group of contributors with no company named behind it, maintains the project.
