@@ -14,7 +14,7 @@ firstRelease: 2015
 language: java
 runtime:
   - jvm
-installMethod: maven, gradle
+installMethod: maven, gradle, jitpack
 licenseModel: open-source
 license: MIT
 currentMajor: "2"
@@ -25,6 +25,7 @@ dependentRepos: 9134
 dependentPackages: 1632
 social:
   x: https://twitter.com/testcontainers
+  forum: https://github.com/testcontainers/testcontainers-java/discussions
 addedAt: 2026-11-16
 checkedAt: 2026-11-16
 sources:
@@ -61,6 +62,9 @@ sources:
   - field: installMethod
     url: https://java.testcontainers.org/
     checkedAt: 2026-11-16
+  - field: installMethod
+    url: https://raw.githubusercontent.com/testcontainers/testcontainers-java/main/docs/index.md
+    checkedAt: 2026-11-17
   - field: currentMajor
     url: https://api.github.com/repos/testcontainers/testcontainers-java/releases
     checkedAt: 2026-11-16
@@ -96,7 +100,7 @@ packagistDownloads: null
 npmWeeklyDownloads: null
 ---
 
-Testcontainers for Java is the Java build of the Testcontainers project, which gives tests throwaway instances of services running in Docker containers. The [Java docs](https://java.testcontainers.org/) cover its use with JUnit 4, JUnit 5 and Spock. It is added to a Maven or Gradle build as a test dependency, and each specialised module has a separate JAR.
+Testcontainers for Java is the Java build of the Testcontainers project, which gives tests throwaway instances of services running in Docker containers. The [Java docs](https://java.testcontainers.org/) cover its use with JUnit 4, JUnit 5 and Spock. Each specialised module has a separate JAR.
 
 ## Worth knowing
 

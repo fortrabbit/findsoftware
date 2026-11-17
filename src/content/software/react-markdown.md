@@ -22,6 +22,7 @@ hosting:
 runtimeMin: node 16
 basedOn:
   - react
+  - unified
 installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
@@ -56,6 +57,9 @@ sources:
   - field: basedOn
     url: https://raw.githubusercontent.com/remarkjs/react-markdown/main/readme.md
     checkedAt: 2026-11-16
+  - field: basedOn
+    url: https://raw.githubusercontent.com/remarkjs/react-markdown/main/readme.md
+    checkedAt: 2026-11-17
   - field: language
     url: https://api.github.com/repos/remarkjs/react-markdown
     checkedAt: 2026-11-16
@@ -116,10 +120,10 @@ packagistDownloads: null
 runsAs: null
 ---
 
-react-markdown renders a Markdown string as React elements. It uses unified, with remark for markdown and rehype for HTML, and takes plugins that change how markdown is transformed and components that replace the normal HTML elements.
+react-markdown renders a Markdown string as React elements. It is a unified pipeline, with remark parsing the markdown and rehype handling the HTML, and it takes plugins that change how markdown is transformed and components that replace the normal HTML elements.
 
 It follows CommonMark by default, and GitHub-flavored syntax comes from the remark-gfm plugin. The package is ESM only, so it loads with `import` and not `require`.
 
 ## Worth knowing
 
-Plugins and custom components run inside the pipeline and can reintroduce risks that the default leaves out. The [README](https://github.com/remarkjs/react-markdown#readme) recommends rehype-sanitize for content that must be completely safe.
+The [README](https://github.com/remarkjs/react-markdown#readme) says the plugins and components you use may be insecure, and recommends rehype-sanitize for content that must be completely safe.

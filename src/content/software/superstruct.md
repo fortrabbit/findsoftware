@@ -32,6 +32,9 @@ npmWeeklyDownloads: 9627699
 contributors: 66
 dependentRepos: 17088
 dependentPackages: 589
+social:
+  discord: https://discord.gg/pdHrQBjQ96
+  forum: https://github.com/ianstormtaylor/superstruct/discussions
 addedAt: 2026-11-16
 checkedAt: 2026-11-16
 sources:

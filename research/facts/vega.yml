@@ -11,11 +11,11 @@ facts:
     via: page
     quote: "Vega is a visualization grammar"
   - field: docs
-    value: https://vega.github.io/vega/
-    url: https://vega.github.io/vega/
+    value: https://vega.github.io/vega/docs/
+    url: https://vega.github.io/vega/docs/
     checkedAt: 2026-11-17
     via: page
-    quote: "To get started with Vega, take a look at the tutorials"
+    quote: "Vega also provides a JavaScript runtime API"
   - field: repository
     value: https://github.com/vega/vega
     url: https://api.github.com/repos/vega/vega
@@ -111,24 +111,31 @@ facts:
     checkedAt: 2026-11-17
     via: page
     quote: "Vega releases are hosted on jsDelivr"
+  - field: basedOn
+    value: [d3]
+    url: https://vega.github.io/vega/about/vega-and-d3/
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Vega provides a higher-level visualization specification language on top of D3."
+  - field: installMethod
+    value: script tag
+    url: https://vega.github.io/vega/usage/
+    checkedAt: 2026-11-17
+    via: page
+    quote: "The simplest option is to import the complete Vega bundle."
   - field: i18n
     value: yes
     url: https://vega.github.io/vega/docs/api/locale/
     checkedAt: 2026-11-17
     via: page
     quote: "Vega supports changing the default locale for all visualizations using the methods below."
-  - field: slack
-    value: https://bit.ly/join-vega-slack-2022
-    url: https://vega.github.io/vega/
-    checkedAt: 2026-11-17
-    via: page
   - field: forum
     value: https://groups.google.com/forum/#!forum/vega-js
     url: https://github.com/vega/vega/blob/main/README.md
     checkedAt: 2026-11-17
     via: page
     quote: "Post to the Vega discussion forum"
-notFound: [hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, paidEdition, pricingPage, runsAs, renderingModes, databases, contentStore, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, importsFrom, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, packagistName, reportedInstalls, usageShare, selfHostOption, dockerPulls, packagistDownloads, pypiDownloads, starters]
+notFound: [hqCountry, parent, forkOf, successorOf, alternativeTo, paidEdition, pricingPage, runsAs, renderingModes, databases, contentStore, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, importsFrom, pluginDirectory, pluginCount, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, endoflifeId, packagistName, reportedInstalls, usageShare, selfHostOption, dockerPulls, packagistDownloads, pypiDownloads, starters]
 unreadable: []
 notes: >
-  Maintainer from the LICENSE copyright line (2015-2023); maintainerType is left to the import. Runtime node is recorded because the usage page names both browser deployments and Node.js deployments (Server-Side Deployment using Node.js); no runsAs is recorded for the same reason. The usage page says Vega "can be deployed for interactive visualizations within a web browser, or to render static PNG and SVG images server-side". The homepage says views are generated "using Canvas or SVG"; rendering target is a coined kind and stays here in notes. vega-cli (node command line tools for PNG, SVG and PDF output, depends on node-canvas) is a separate npm package and is not recorded as a record. The npm dist-tag "v5-maintenance" carries the 5.33.1 line; the current major is 6 from the GitHub release v6.4.0. firstRelease 2013 is the oldest npm upload (1.0.0, 2013-04-02); the oldest GitHub release is v2.0.0 (2015). Stars and contributors belong to the vega repository. npm weekly figure covers 2026-11-01 to 2026-11-07. Vega-Lite compiles to Vega specifications. The locale API formats numbers and dates with d3-format and d3-time-format locale definitions, which is the basis of the i18n entry. The slack link is the Vega Slack invite on the homepage. The homepage names an Altair Python API for Vega-Lite, which is not a record in this dataset.
+  Maintainer from the LICENSE copyright line (2015-2023); maintainerType is left to the import. Runtime node is recorded because the usage page names both browser deployments and Node.js deployments (Server-Side Deployment using Node.js); no runsAs is recorded for the same reason. The usage page says Vega "can be deployed for interactive visualizations within a web browser, or to render static PNG and SVG images server-side". The homepage says views are generated "using Canvas or SVG"; rendering target is a coined kind and stays here in notes. vega-cli (node command line tools for PNG, SVG and PDF output, depends on node-canvas) is a separate npm package and is not recorded as a record. The npm dist-tag "v5-maintenance" carries the 5.33.1 line; the current major is 6 from the GitHub release v6.4.0. firstRelease 2013 is the oldest npm upload (1.0.0, 2013-04-02); the oldest GitHub release is v2.0.0 (2015). Stars and contributors belong to the vega repository. npm weekly figure covers 2026-11-01 to 2026-11-07. Vega-Lite compiles to Vega specifications. The locale API formats numbers and dates with d3-format and d3-time-format locale definitions, which is the basis of the i18n entry. The homepage and README link a Vega Slack invite (https://bit.ly/join-vega-slack-2022); Slack is not a record field. The About page states that Vega is a higher-level specification language on top of D3 and is not a replacement for it, which sets basedOn and gives no alternativeTo. The homepage names an Altair Python API for Vega-Lite, which is not a record in this dataset.

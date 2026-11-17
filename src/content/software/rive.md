@@ -10,16 +10,17 @@ category:
   - graphics
 description: JavaScript and WebAssembly runtime that plays Rive animation files in a web page.
 status: active
-maintainer: Rive
+maintainer: Rive, Inc.
+maintainerType: company
 firstRelease: 2020
 language: javascript
 runsAs:
   - browser
-installMethod: npm, script tag
+installMethod: npm, script tag, pnpm, yarn, bun
 licenseModel: open-source
 license: MIT
 currentMajor: "2"
-latestReleaseDate: 2026-11-09
+latestReleaseDate: 2026-11-16
 githubStargazers: 1027
 npmWeeklyDownloads: 1009614
 contributors: 31
@@ -42,8 +43,8 @@ sources:
     url: https://api.github.com/repos/rive-app/rive-wasm
     checkedAt: 2026-11-16
   - field: maintainer
-    url: https://github.com/rive-app/rive-wasm/blob/master/LICENSE
-    checkedAt: 2026-11-16
+    url: https://rive.app/docs/legal/terms-of-service
+    checkedAt: 2026-11-17
   - field: firstRelease
     url: https://registry.npmjs.org/rive-canvas
     checkedAt: 2026-11-16
@@ -62,6 +63,15 @@ sources:
   - field: installMethod
     url: https://rive.app/docs/runtimes/web/web-js
     checkedAt: 2026-11-16
+  - field: installMethod
+    url: https://rive.app/docs/runtimes/web/web-js
+    checkedAt: 2026-11-17
+  - field: installMethod
+    url: https://rive.app/docs/runtimes/web/web-js
+    checkedAt: 2026-11-17
+  - field: installMethod
+    url: https://rive.app/docs/runtimes/web/web-js
+    checkedAt: 2026-11-17
   - field: license
     url: https://rive.app/
     checkedAt: 2026-11-16
@@ -69,10 +79,10 @@ sources:
     url: https://api.github.com/repos/rive-app/rive-wasm
     checkedAt: 2026-11-16
   - field: currentMajor
-    url: https://api.github.com/repos/rive-app/rive-wasm/releases/tags/2.50.0
+    url: https://api.github.com/repos/rive-app/rive-wasm/releases/tags/2.51.0
     checkedAt: 2026-11-16
   - field: latestReleaseDate
-    url: https://api.github.com/repos/rive-app/rive-wasm/releases/tags/2.50.0
+    url: https://api.github.com/repos/rive-app/rive-wasm/releases/tags/2.51.0
     checkedAt: 2026-11-16
   - field: githubStargazers
     url: https://api.github.com/repos/rive-app/rive-wasm

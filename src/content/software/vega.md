@@ -4,7 +4,7 @@ name: Vega
 urls:
   home: https://vega.github.io/vega/
   repository: https://github.com/vega/vega
-  docs: https://vega.github.io/vega/
+  docs: https://vega.github.io/vega/docs/
 category:
   - graphics
 description: JavaScript visualization grammar that describes interactive visualizations in JSON and renders them with Canvas or SVG.
@@ -14,8 +14,10 @@ firstRelease: 2013
 language: javascript
 runtime:
   - node
+basedOn:
+  - d3
 i18n: yes
-installMethod: npm, cdn
+installMethod: npm, cdn, script tag
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "6"
@@ -34,7 +36,7 @@ sources:
     url: https://vega.github.io/vega/
     checkedAt: 2026-11-17
   - field: urls
-    url: https://vega.github.io/vega/
+    url: https://vega.github.io/vega/docs/
     checkedAt: 2026-11-17
   - field: urls
     url: https://api.github.com/repos/vega/vega
@@ -84,6 +86,12 @@ sources:
   - field: installMethod
     url: https://vega.github.io/vega/usage/
     checkedAt: 2026-11-17
+  - field: installMethod
+    url: https://vega.github.io/vega/usage/
+    checkedAt: 2026-11-17
+  - field: basedOn
+    url: https://vega.github.io/vega/about/vega-and-d3/
+    checkedAt: 2026-11-17
   - field: i18n
     url: https://vega.github.io/vega/docs/api/locale/
     checkedAt: 2026-11-17
@@ -100,6 +108,6 @@ packagistDownloads: null
 runsAs: null
 ---
 
-Vega is a visualization grammar: a JSON format for describing interactive visualizations, which the library renders as views with Canvas or SVG. The [usage guide](https://vega.github.io/vega/usage/) describes two ways to run it, in a web page and on a server with Node.js, where it can render static PNG and SVG images.
+Vega is a visualization grammar: a JSON format for describing interactive visualizations, which the library renders as views with Canvas or SVG. The project's own pages describe it as a higher-level specification language on top of D3. The [usage guide](https://vega.github.io/vega/usage/) describes two ways to run it, in a web page and on a server with Node.js, where it can render static PNG and SVG images.
 
 Vega-Lite compiles its specifications to Vega.

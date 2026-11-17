@@ -20,7 +20,7 @@ hosting:
   - node
   - bun
   - deno
-i18n: error messages in the language of your users, official translations package
+i18n: yes
 installMethod: npm, jsr, deno.land/x
 licenseModel: open-source
 license: MIT

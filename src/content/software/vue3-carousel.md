@@ -16,7 +16,7 @@ language: javascript
 basedOn:
   - vue
 i18n: rtl
-installMethod: npm
+installMethod: npm, yarn, pnpm
 licenseModel: open-source
 license: MIT
 currentMajor: "0"
@@ -55,7 +55,7 @@ sources:
     url: https://github.com/ismail9k/vue3-carousel/blob/master/README.md
     checkedAt: 2026-11-17
   - field: installMethod
-    url: https://vue3-carousel.ismail9k.com/getting-started
+    url: https://github.com/ismail9k/vue3-carousel/blob/master/README.md
     checkedAt: 2026-11-17
   - field: license
     url: https://api.github.com/repos/ismail9k/vue3-carousel

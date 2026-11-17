@@ -17,6 +17,8 @@ language: python
 runtime:
   - python
 runtimeMin: python 3.10
+runsAs:
+  - local
 installMethod: pip
 licenseModel: open-source
 license: MIT
@@ -67,6 +69,9 @@ sources:
   - field: installMethod
     url: https://docs.pytest.org/en/stable/getting-started.html
     checkedAt: 2026-11-16
+  - field: runsAs
+    url: https://docs.pytest.org/en/stable/explanation/ci.html
+    checkedAt: 2026-11-17
   - field: license
     url: https://github.com/pytest-dev/pytest/blob/main/LICENSE
     checkedAt: 2026-11-16

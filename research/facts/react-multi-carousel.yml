@@ -49,6 +49,12 @@ facts:
     url: https://api.github.com/repos/YIZHUANG/react-multi-carousel
     checkedAt: 2026-11-16
     via: api
+  - field: i18n
+    value: rtl
+    url: https://raw.githubusercontent.com/YIZHUANG/react-multi-carousel/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Sets the carousel direction to be right to left"
   - field: installMethod
     value: npm
     url: https://raw.githubusercontent.com/YIZHUANG/react-multi-carousel/master/README.md
@@ -112,8 +118,8 @@ facts:
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react-multi-carousel
     checkedAt: 2026-11-16
     via: api
-notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, runtime, runtimeMin, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, discord, newsletter, mastodon, bluesky, x, wikidata, endoflifeId, packagistName, packagistDownloads, pypiDownloads, latestPrereleaseDate, selfHostOption, mavenCoordinates]
+notFound: [homepage, pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, runtime, runtimeMin, runsAs, renderingModes, contentStore, databases, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, subreddit, discord, newsletter, mastodon, bluesky, x, wikidata, endoflifeId, packagistName, packagistDownloads, pypiDownloads, latestPrereleaseDate, selfHostOption, mavenCoordinates]
 unreadable:
   - https://react-multi-carousel.surge.sh/ (the documentation site returns a Storybook shell with only its title, so the docs fact stands on the README link alone)
 notes: >
-  The repository names no homepage; the README links its documentation at react-multi-carousel.surge.sh, cited as docs, and the README's demo link is the SSR example at react-multi-carousel.now.sh, not a homepage, so homepage is left out. The LICENSE copyright line carries the name in brackets, "[YI ZHUANG]", and the README author line reads "Yi Zhuang"; the LICENSE form is recorded. The README says SSR is supported and that the carousel can render on the server, but no sentence names the runtime or where it runs, so runtime and runsAs are not recorded. The package.json declares engines node >=8 for the latest release; that is a manifest floor and no page states a runtime minimum, so runtimeMin is left out. The README says work on a version 3.0 rewrite is under way; no version or date from it is recorded, and the latest stable release is 2.8.6 on npm. The GitHub releases stop at 2.5.4 (2020) and the npm registry holds the newer 2.x releases, so latestReleaseDate takes the registry date. The npm weekly figure is for the react-multi-carousel package the install line names.
+  The repository names no homepage; the README links its documentation at react-multi-carousel.surge.sh, cited as docs, and the README's demo link is the SSR example at react-multi-carousel.now.sh, not a homepage, so homepage is left out. The LICENSE copyright line carries the name in brackets, "[YI ZHUANG]", and the README author line reads "Yi Zhuang"; the LICENSE form is recorded. The README says SSR is supported and that the carousel can render on the server, but no sentence names the runtime or where it runs, so runtime and runsAs are not recorded. The package.json declares engines node >=8 for the latest release; that is a manifest floor and no page states a runtime minimum, so runtimeMin is left out. The README says work on a version 3.0 rewrite is under way; no version or date from it is recorded, and the latest stable release is 2.8.6 on npm. The GitHub releases stop at 2.5.4 (2020) and the npm registry holds the newer 2.x releases, so latestReleaseDate takes the registry date. The README features list names RTL support and the props table describes the rtl prop, recorded as i18n rtl. The npm weekly figure is for the react-multi-carousel package the install line names.

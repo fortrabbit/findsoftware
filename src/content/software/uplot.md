@@ -67,7 +67,7 @@ sources:
     url: https://api.github.com/repos/leeoniya/uPlot
     checkedAt: 2026-11-16
   - field: contributors
-    url: https://api.github.com/repos/leeoniya/uPlot/contributors
+    url: https://api.github.com/repos/leeoniya/uPlot/contributors?per_page=1
     checkedAt: 2026-11-16
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/uplot

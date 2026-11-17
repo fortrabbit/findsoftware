@@ -80,7 +80,7 @@ sources:
     url: https://api.github.com/repos/mattboldt/typed.js
     checkedAt: 2026-11-16
   - field: contributors
-    url: https://api.github.com/repos/mattboldt/typed.js/contributors
+    url: https://api.github.com/repos/mattboldt/typed.js/contributors?per_page=1
     checkedAt: 2026-11-16
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/typed.js

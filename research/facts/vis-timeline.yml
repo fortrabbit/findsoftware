@@ -21,10 +21,11 @@ facts:
     via: page
     quote: "The Timeline is an interactive visualization chart to visualize data in"
   - field: firstRelease
-    value: 2019
-    url: https://api.github.com/repos/visjs/vis-timeline/releases
+    value: 2013
+    url: https://github.com/visjs/vis-timeline/blob/master/HISTORY.md
     checkedAt: 2026-11-17
-    via: api
+    via: page
+    quote: "2013-04-16, version 0.0.5"
   - field: maintainer
     value: vis.js contributors
     url: https://github.com/visjs/vis-timeline/blob/master/README.md
@@ -63,7 +64,7 @@ facts:
     url: https://visjs.github.io/vis-timeline/docs/timeline/
     checkedAt: 2026-11-17
     via: page
-    quote: "A map with i18n locales."
+    quote: "Timeline can be localized."
   - field: installMethod
     value: npm
     url: https://github.com/visjs/vis-timeline/blob/master/README.md
@@ -118,7 +119,19 @@ facts:
     url: https://api.github.com/repos/visjs/vis-timeline/contributors?per_page=1
     checkedAt: 2026-11-17
     via: api
-notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, adminUi, headlessApi, renderingModes, runsAs, runtime, runtimeMin, databases, sso, templating, multisite, livePreview, userRoles, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, latestPrereleaseDate, endoflifeId, packagistName]
+  - field: templating
+    value: [handlebars, mustache]
+    url: https://visjs.github.io/vis-timeline/docs/timeline/
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Any template engine (such as handlebars or mustache ) can be used"
+  - field: runsAs
+    value: [browser]
+    url: https://visjs.github.io/vis-timeline/docs/timeline/
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Timeline uses regular HTML DOM to render the timeline and items"
+notFound: [pricingPage, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, adminUi, headlessApi, renderingModes, runtime, runtimeMin, databases, sso, multisite, livePreview, userRoles, pluginDirectory, forum, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, reportedInstalls, latestPrereleaseDate, endoflifeId, packagistName]
 unreadable: []
 notes: >
-  GitHub reports the license as NOASSERTION; the README says "This work is dual-licensed under Apache-2.0 and MIT", and LICENSE.MIT.txt and LICENSE.Apache-2.0.txt carry the texts, so both are recorded from the README and the MIT file. The copyright lines name Almende B.V. and contributors for 2014-2017; the README's current line names vis.js contributors, which the maintainer follows, and Almende B.V. is not recorded as a parent. The README says the legacy build "is deprecated": that is one build, not the project, so the status is not changed. Peer and ESNext builds need vis-data and Moment loaded by the page or a bundler; those are dependency statements and give no basedOn. The docs' second install sentence is the only install route stated in words; the unpkg URLs in the README and docs are code blocks, so no CDN route is recorded. The timeline category has no entry in the import's category map, so only charts maps. firstRelease 2019 comes from the oldest GitHub release (v5.0.0, 2019-07-21); the registry's first upload, 5.0.0, is from 2019-07-19. The repository is a sibling of vis-network; each is its own record. Stars and contributors belong to the visjs/vis-timeline repository.
+  GitHub reports the license as NOASSERTION; the README says "This work is dual-licensed under Apache-2.0 and MIT", and LICENSE.MIT.txt and LICENSE.Apache-2.0.txt carry the texts, so both are recorded from the README and the MIT file. The copyright lines name Almende B.V. and contributors for 2014-2017; the README's current line names vis.js contributors, which the maintainer follows, and Almende B.V. is not recorded as a parent. The README says the legacy build "is deprecated": that is one build, not the project, so the status is not changed. Peer and ESNext builds need vis-data and Moment loaded by the page or a bundler; those are dependency statements and give no basedOn. The docs' second install sentence is the only install route stated in words; the unpkg URLs in the README and docs are code blocks, so no CDN route is recorded. The timeline category has no entry in the import's category map, so only charts maps. firstRelease 2013 comes from HISTORY.md in the repository, which lists version 0.0.5 on 2013-04-16 as the first working version of the Timeline; the oldest GitHub release is v5.0.0 (2019-07-21) and the first npm upload of this package name is 5.0.0 (2019-07-19), both later than the changelog. The docs' sentence on handlebars and mustache is the basis of the templating entry, and the Overview sentence on HTML DOM rendering is the basis of runsAs. The repository is a sibling of vis-network; each is its own record. Stars and contributors belong to the visjs/vis-timeline repository.

@@ -1,4 +1,4 @@
-Video.js is a free and open source HTML5 video player and media player framework for the web and for React. The docs cover installation as packages for React and for HTML, Vue and Svelte, as browser-ready files loaded from a CDN, and as skin source copied into a project with the shadcn CLI. An internationalization guide covers translating player labels, tooltips and screen-reader announcements. The project is built at Mux.
+Video.js is a free and open source HTML5 video player and media player framework for the web and for React. Its interactivity, covering state management, media playback and event handling, requires the browser. An internationalization guide covers translating player labels, tooltips and screen-reader announcements. The project is built at Mux.
 
 ## Worth knowing
 

@@ -23,6 +23,7 @@ latestReleaseDate: 2026-07-25
 githubStargazers: 27715
 npmWeeklyDownloads: 64589847
 contributors: 411
+httpArchiveSites: 2618
 dependentRepos: 27093
 dependentPackages: 1206
 addedAt: 2026-11-16
@@ -79,6 +80,9 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/recharts
     checkedAt: 2026-11-16
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-11-17
   - field: githubStargazers
     url: https://api.github.com/repos/recharts/recharts
     checkedAt: 2026-11-16
@@ -106,8 +110,6 @@ runsAs: null
 ---
 
 Recharts is a charting library for React, built with React components and D3. A chart is composed from separate components: a line chart, its axes, a grid and a tooltip are each independent React components, and the library draws them as SVG.
-
-The [documentation](https://recharts.github.io/en-US/) is the reference for the components.
 
 ## Worth knowing
 

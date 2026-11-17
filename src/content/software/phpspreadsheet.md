@@ -18,6 +18,7 @@ runtime:
 hosting:
   - php
 runtimeMin: php 8.2
+i18n: formula translation to supported locales
 installMethod: composer
 licenseModel: open-source
 license: MIT
@@ -61,6 +62,9 @@ sources:
   - field: installMethod
     url: https://phpspreadsheet.readthedocs.io/en/latest/
     checkedAt: 2026-11-16
+  - field: i18n
+    url: https://phpspreadsheet.readthedocs.io/en/latest/topics/recipes/
+    checkedAt: 2026-11-17
   - field: license
     url: https://github.com/PHPOffice/PhpSpreadsheet/blob/5.11.0/LICENSE
     checkedAt: 2026-11-16
@@ -94,7 +98,6 @@ databases: null
 adminUi: null
 headlessApi: null
 templating: null
-i18n: null
 renderingModes: null
 npmWeeklyDownloads: null
 runsAs: null

@@ -72,7 +72,7 @@ sources:
     url: https://api.github.com/repos/bblimke/webmock/contributors?per_page=1
     checkedAt: 2026-11-17
   - field: license
-    url: https://raw.githubusercontent.com/bblimke/webmock/master/LICENSE
+    url: https://rubygems.org/api/v1/gems/webmock.json
     checkedAt: 2026-11-17
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/webmock

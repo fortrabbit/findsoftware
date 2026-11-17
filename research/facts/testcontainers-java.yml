@@ -72,6 +72,18 @@ facts:
     checkedAt: 2026-11-16
     via: page
     quote: "Using Gradle 5.0 or higher, you can add the following to the"
+  - field: installMethod
+    value: jitpack
+    url: https://raw.githubusercontent.com/testcontainers/testcontainers-java/main/docs/index.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "builds are available for pre-release versions."
+  - field: forum
+    value: https://github.com/testcontainers/testcontainers-java/discussions
+    url: https://raw.githubusercontent.com/testcontainers/testcontainers-java/main/docs/contributing.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Start a discussion"
   - field: mavenCoordinates
     value: org.testcontainers:testcontainers
     url: https://repo1.maven.org/maven2/org/testcontainers/testcontainers/maven-metadata.xml
@@ -117,7 +129,7 @@ facts:
     url: https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/org.testcontainers%3Atestcontainers
     checkedAt: 2026-11-16
     via: api
-notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, runsAs, renderingModes, runtimeMin, npmName, npmWeeklyDownloads, pypiName, dockerPulls, latestPrereleaseDate, endoflifeId, bluesky, mastodon, subreddit, newsletter, discord, forum, reportedInstalls, usageShare, pluginDirectory, pluginCount, wikidata]
+notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, alternativeTo, importsFrom, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, runsAs, renderingModes, runtimeMin, npmName, npmWeeklyDownloads, pypiName, dockerPulls, latestPrereleaseDate, endoflifeId, bluesky, mastodon, subreddit, newsletter, discord, reportedInstalls, usageShare, pluginDirectory, pluginCount, wikidata]
 unreadable: []
 notes: >
-  Status: accepted per the CSV. The CSV homepage testcontainers.org answers with a redirect to testcontainers.com, the Testcontainers project site, which covers several languages; the Java docs are at java.testcontainers.org. The LICENSE copyright line names Richard North for 2015-2019, and the README names Richard North and other authors for 2015-2021; the maintainer follows the LICENSE line. Maven Central publishes no download figure, so none is recorded. The first upload in the Maven search index is 0.9.6 from 2015-07-22, older than the first GitHub release, so firstRelease follows it. The current major comes from the highest stable GitHub release, 2.0.5. runtimeMin is left out: the repository's build.gradle sets a JDK 17 toolchain and options.release 8 (a Java 8 bytecode target), which is a build requirement and no page states a runtime minimum. The docs say Docker is needed: "Docker - please see General Docker requirements" under Prerequisites, and the system requirements page says a Docker-API compatible container runtime is needed, such as Testcontainers Cloud or a local Docker install. Testcontainers Cloud is a separate product named as one way to get that runtime; it is not a hosted offering of this software and is not recorded as one. The docs name JUnit 4, JUnit 5 and Spock as supported test frameworks, a coined kind kept here. The core library is one JAR, and each specialised module has its own Maven dependency, described on its module page. Other language ports (Go, .NET, Node.js, Python, Rust, Haskell, Ruby) are separate candidates. The docs link a Slack workspace, which has no field here. The repository has 441 contributors across all pages; stars and contributors belong to this one repository.
+  Status: accepted per the CSV. The CSV homepage testcontainers.org answers with a redirect to testcontainers.com, the Testcontainers project site, which covers several languages; the Java docs are at java.testcontainers.org. The LICENSE copyright line names Richard North for 2015-2019, and the README names Richard North and other authors for 2015-2021; the maintainer follows the LICENSE line. Maven Central publishes no download figure, so none is recorded. The first upload in the Maven search index is 0.9.6 from 2015-07-22, older than the first GitHub release, so firstRelease follows it. The current major comes from the highest stable GitHub release, 2.0.5. runtimeMin is left out: the repository's build.gradle sets a JDK 17 toolchain and options.release 8 (a Java 8 bytecode target), which is a build requirement and no page states a runtime minimum. The docs say Docker is needed: "Docker - please see General Docker requirements" under Prerequisites, and the system requirements page says a Docker-API compatible container runtime is needed, such as Testcontainers Cloud or a local Docker install. Testcontainers Cloud is a separate product named as one way to get that runtime; it is not a hosted offering of this software and is not recorded as one. The docs name JUnit 4, JUnit 5 and Spock as supported test frameworks, a coined kind kept here. The docs index says JitPack builds are available for pre-release versions, recorded as the jitpack route; the contributing page links GitHub Discussions, recorded as forum. The core library is one JAR, and each specialised module has its own Maven dependency, described on its module page. Other language ports (Go, .NET, Node.js, Python, Rust, Haskell, Ruby) are separate candidates. The docs link a Slack workspace, which has no field here. The repository has 441 contributors across all pages; stars and contributors belong to this one repository.

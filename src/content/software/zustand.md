@@ -15,7 +15,7 @@ firstRelease: 2019
 language: javascript
 basedOn:
   - react
-installMethod: npm
+installMethod: npm, yarn, pnpm, bun, deno
 licenseModel: open-source
 license: MIT
 currentMajor: "5"
@@ -55,7 +55,7 @@ sources:
     url: https://zustand.docs.pmnd.rs/
     checkedAt: 2026-11-17
   - field: installMethod
-    url: https://github.com/pmndrs/zustand/blob/main/README.md
+    url: https://zustand.docs.pmnd.rs/
     checkedAt: 2026-11-17
   - field: license
     url: https://api.github.com/repos/pmndrs/zustand
@@ -103,4 +103,4 @@ Zustand is a state-management library in which the store is a hook. Components s
 
 ## Worth knowing
 
-Middleware that changes `set` or `get` does not apply to `getState` and `setState`. The README advises against that outside-component technique in React Server Components. Setting state merges by default; the replace flag clears the whole store, actions included. A component that reads the whole store with no selector re-renders on every change.
+Middleware that changes `set` or `get` does not apply to `getState` and `setState`. The README advises against that outside-component technique in React Server Components. Setting state merges by default; the replace flag swaps in a new state model instead, which can wipe parts such as actions. A component that reads the whole store with no selector re-renders on every change.

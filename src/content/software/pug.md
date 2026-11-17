@@ -16,6 +16,7 @@ runtime:
   - node
 hosting:
   - node
+runtimeMin: node 10
 installMethod: npm, download
 licenseModel: open-source
 license: MIT
@@ -26,6 +27,8 @@ npmWeeklyDownloads: 5149697
 contributors: 214
 dependentRepos: 231297
 dependentPackages: 5864
+social:
+  x: https://twitter.com/pug_js
 addedAt: 2026-11-16
 checkedAt: 2026-11-16
 sources:
@@ -77,6 +80,9 @@ sources:
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/pug
     checkedAt: 2026-11-16
+  - field: runtimeMin
+    url: https://pugjs.org/api/migration-v3.html
+    checkedAt: 2026-11-17
   - field: installMethod
     url: https://pugjs.org/api/getting-started.html
     checkedAt: 2026-11-16

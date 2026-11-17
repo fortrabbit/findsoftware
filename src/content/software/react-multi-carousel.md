@@ -14,6 +14,7 @@ firstRelease: 2019
 language: javascript
 basedOn:
   - react
+i18n: rtl
 installMethod: npm
 licenseModel: open-source
 license: MIT
@@ -49,6 +50,9 @@ sources:
   - field: language
     url: https://api.github.com/repos/YIZHUANG/react-multi-carousel
     checkedAt: 2026-11-16
+  - field: i18n
+    url: https://raw.githubusercontent.com/YIZHUANG/react-multi-carousel/master/README.md
+    checkedAt: 2026-11-17
   - field: installMethod
     url: https://raw.githubusercontent.com/YIZHUANG/react-multi-carousel/master/README.md
     checkedAt: 2026-11-16
@@ -88,7 +92,6 @@ databases: null
 adminUi: null
 headlessApi: null
 templating: null
-i18n: null
 renderingModes: null
 hosting: null
 runtimeMin: null
@@ -96,4 +99,4 @@ packagistDownloads: null
 runsAs: null
 ---
 
-react-multi-carousel is a React carousel component that shows several items at once. Its README lists server-side rendering among its features, so the component can also produce its markup on a server before a browser runs the page.
+react-multi-carousel is a React carousel component that shows several items at once, with the number of items set per responsive breakpoint. Its README lists server-side rendering among its features and describes an `ssr` option that renders the carousel on the server.

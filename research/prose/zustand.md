@@ -2,4 +2,4 @@ Zustand is a state-management library in which the store is a hook. Components s
 
 ## Worth knowing
 
-Middleware that changes `set` or `get` does not apply to `getState` and `setState`. The README advises against that outside-component technique in React Server Components. Setting state merges by default; the replace flag clears the whole store, actions included. A component that reads the whole store with no selector re-renders on every change.
+Middleware that changes `set` or `get` does not apply to `getState` and `setState`. The README advises against that outside-component technique in React Server Components. Setting state merges by default; the replace flag swaps in a new state model instead, which can wipe parts such as actions. A component that reads the whole store with no selector re-renders on every change.

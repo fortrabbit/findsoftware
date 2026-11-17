@@ -5,11 +5,13 @@ urls:
   home: https://redux.js.org
   repository: https://github.com/reduxjs/redux
   docs: https://redux.js.org/introduction/getting-started
+  plugins: https://redux.js.org/introduction/ecosystem
 category:
   - library
 description: JavaScript library for predictable and maintainable global state management.
 status: active
 maintainer: Dan Abramov
+maintainerType: individual
 firstRelease: 2015
 language: javascript
 installMethod: npm, cdn
@@ -20,6 +22,7 @@ latestReleaseDate: 2023-12-23
 githubStargazers: 61435
 npmWeeklyDownloads: 64778680
 contributors: 415
+httpArchiveSites: 6983
 dependentRepos: 932901
 dependentPackages: 21274
 social:
@@ -60,6 +63,9 @@ sources:
   - field: maintainer
     url: https://github.com/reduxjs/redux/blob/master/LICENSE.md
     checkedAt: 2026-11-16
+  - field: maintainerType
+    url: https://github.com/reduxjs/redux/blob/master/LICENSE.md
+    checkedAt: 2026-11-17
   - field: firstRelease
     url: https://api.github.com/repos/reduxjs/redux/git/refs/tags/v0.1.0
     checkedAt: 2026-11-16
@@ -69,6 +75,12 @@ sources:
   - field: latestReleaseDate
     url: https://api.github.com/repos/reduxjs/redux/releases/latest
     checkedAt: 2026-11-16
+  - field: urls
+    url: https://redux.js.org/introduction/ecosystem
+    checkedAt: 2026-11-17
+  - field: httpArchiveSites
+    url: https://cdn.httparchive.org/v1/technologies
+    checkedAt: 2026-11-17
   - field: githubStargazers
     url: https://api.github.com/repos/reduxjs/redux
     checkedAt: 2026-11-16

@@ -1,1 +1,1 @@
-react-multi-carousel is a React carousel component that shows several items at once. Its README lists server-side rendering among its features, so the component can also produce its markup on a server before a browser runs the page.
+react-multi-carousel is a React carousel component that shows several items at once, with the number of items set per responsive breakpoint. Its README lists server-side rendering among its features and describes an `ssr` option that renders the carousel on the server.

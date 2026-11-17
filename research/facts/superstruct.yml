@@ -88,11 +88,28 @@ facts:
     checkedAt: 2026-11-16
     via: api
   - field: alternativeTo
-    value: [joi, express-validator, ajv]
+    value: [joi, express-validator, validator-js, yup, ajv]
     url: https://raw.githubusercontent.com/ianstormtaylor/superstruct/main/Readme.md
     checkedAt: 2026-11-16
     via: page
     quote: "There are lots of existing validation libraries—`joi`, `express-validator`, `validator.js`, `yup`, `ajv`"
+  - field: discord
+    value: https://discord.gg/pdHrQBjQ96
+    url: https://raw.githubusercontent.com/ianstormtaylor/superstruct/main/Changelog.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "join our Superstruct maintainers Discord"
+  - field: forum
+    value: https://github.com/ianstormtaylor/superstruct/discussions
+    url: https://raw.githubusercontent.com/ianstormtaylor/superstruct/main/Changelog.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "head over to GitHub Discussions!"
+  - field: latestPrereleaseDate
+    value: 2024-07-27
+    url: https://api.github.com/repos/ianstormtaylor/superstruct/releases
+    checkedAt: 2026-11-17
+    via: api
   - field: license
     value: MIT
     url: https://api.github.com/repos/ianstormtaylor/superstruct
@@ -143,7 +160,7 @@ facts:
     url: https://api.github.com/repos/ianstormtaylor/superstruct/contributors?per_page=1
     checkedAt: 2026-11-16
     via: api
-notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, importsFrom, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, pluginDirectory, pluginCount, discord, forum, x, bluesky, mastodon, subreddit, newsletter, reportedInstalls, usageShare, packagistName, pypiName, endoflifeId, dockerPulls, httpArchiveSites, hostedOffering, latestPrereleaseDate, wikidata, lastCommitDate]
+notFound: [pricingPage, paidEdition, hqCountry, parent, basedOn, forkOf, successorOf, importsFrom, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, pluginDirectory, pluginCount, x, bluesky, mastodon, subreddit, newsletter, reportedInstalls, usageShare, packagistName, pypiName, endoflifeId, dockerPulls, httpArchiveSites, hostedOffering, wikidata, lastCommitDate]
 unreadable: []
 notes: >
-  Status: no end signal. The repository is not archived, the npm latest version 2.0.2 is not deprecated, and the last commit on the default branch is from 2024-09-27, inside the four-year window. Boundary note: the 2.0.0 changelog says maintenance has moved to a volunteer team of two named contributors; the LICENSE copyright line names Ian Storm Taylor, which is the maintainer recorded, and the team is noted here only. The README says the API "was inspired by" TypeScript, Flow, Go and GraphQL, and that is inspiration, not basedOn. The "Why?" section names joi, express-validator, validator.js, yup, ajv and is-my-json-valid as existing validation libraries and argues against them; it is recorded as alternativeTo for the ones that have a fact file (joi, express-validator, ajv); the others stay here. The README has no install section; the install route is the getting-started guide, which shows npm and a UMD script tag. The README badge links the JSR package; the JSR metadata lists the package at version 2.0.2, and that is recorded as the jsr route. The JSR package page lists browser, Deno, Node.js, workerd and Bun as compatible runtimes, so deno and bun are recorded beside node. The runtime node is recorded because the 2.0.0 changelog names Node.js, and the README says the library is used "on your servers and in the browser", so no runsAs is recorded. The engines field at the 2.0.2 tag is the runtimeMin source. The npm weekly figure is the sum of the daily counts for 2026-11-01 to 2026-11-07 for the package the install guide names. The ecosyste.ms dependent counts were read on 2026-11-16. The "Demo" and "Examples" sections name CodeSandbox and example files; they are not fields.
+  Status: no end signal. The repository is not archived, the npm latest version 2.0.2 is not deprecated, and the last commit on the default branch is from 2024-09-27, inside the four-year window. Boundary note: the 2.0.0 changelog says maintenance has moved to a volunteer team of two named contributors; the LICENSE copyright line names Ian Storm Taylor, which is the maintainer recorded, and the team is noted here only. The README says the API "was inspired by" TypeScript, Flow, Go and GraphQL, and that is inspiration, not basedOn. The "Why?" section names joi, express-validator, validator.js, yup, ajv and is-my-json-valid as existing validation libraries and argues against them; it is recorded as alternativeTo for the ones that have a fact file (joi, express-validator, validator-js, yup, ajv; the validator.js link in the README points at the repository now under validatorjs); is-my-json-valid has none and stays here. The newest GitHub pre-release v2.0.3-1 (2024-07-27) is newer than the latest release. The Changelog names a maintainers Discord and GitHub Discussions. The README has no install section; the install route is the getting-started guide, which shows npm and a UMD script tag. The README badge links the JSR package; the JSR metadata lists the package at version 2.0.2, and that is recorded as the jsr route. The JSR package page lists browser, Deno, Node.js, workerd and Bun as compatible runtimes, so deno and bun are recorded beside node. The runtime node is recorded because the 2.0.0 changelog names Node.js, and the README says the library is used "on your servers and in the browser", so no runsAs is recorded. The engines field at the 2.0.2 tag is the runtimeMin source. The npm weekly figure is the sum of the daily counts for 2026-11-01 to 2026-11-07 for the package the install guide names. The ecosyste.ms dependent counts were read on 2026-11-16. The "Demo" and "Examples" sections name CodeSandbox and example files; they are not fields.

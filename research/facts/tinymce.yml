@@ -78,7 +78,7 @@ facts:
     url: https://www.tiny.cloud/docs/tinymce/8/npm-projects/
     checkedAt: 2026-11-16
     via: page
-    quote: "Before installing premium plugins, ensure you have:"
+    quote: "package requires a commercial license. Ensure you have a valid license key before using premium plugins."
   - field: hostedOffering
     value: "Tiny Cloud, a cloud-hosted version of TinyMCE"
     url: https://www.tiny.cloud/pricing/
@@ -158,7 +158,54 @@ facts:
     url: https://www.tiny.cloud/tinymce-alternatives/
     checkedAt: 2026-11-16
     via: page
-    quote: "Columns: Feature, TinyMCE, CKEditor, Tiptap, Froala, Lexical, Quill"
+    quote: "We've compiled a side-by-side comparison of TinyMCE and the top alternatives to TinyMCE."
+  - field: alternativeTo
+    value: ckeditor5
+    url: https://www.tiny.cloud/tinymce-vs-ckeditor/
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Pros and Cons TinyMCE vs CKEditor 5"
+  - field: importsFrom
+    value: froala
+    url: https://www.tiny.cloud/docs/tinymce/latest/migration-from-froala/
+    checkedAt: 2026-11-17
+    via: page
+    quote: "the basic steps for migrating from Froala Editor 3 to TinyMCE 8"
+  - field: importsFrom
+    value: ckeditor5
+    url: https://www.tiny.cloud/blog/migrate-from-ckeditor-to-tinymce/
+    checkedAt: 2026-11-17
+    via: page
+    quote: "step by step instructions for migrating from CKEditor 5 to TinyMCE 6"
+  - field: importsFrom
+    value: ckeditor4
+    url: https://www.tiny.cloud/tinymce-vs-ckeditor/
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Migrating from CKEditor 4 or 5 to TinyMCE?"
+  - field: importsFrom
+    value: slate-editor
+    url: https://www.tiny.cloud/blog/migrate-from-slatejs-to-tinymce/
+    checkedAt: 2026-11-17
+    via: page
+    quote: "demonstrate how to migrate from Slate.js to TinyMCE"
+  - field: importsFrom
+    value: tiptap
+    url: https://www.tiny.cloud/blog/migrating-from-tiptap-to-tinymce/
+    checkedAt: 2026-11-17
+    via: page
+    quote: "to migrate from Tiptap to TinyMCE in your Vue.js project"
+  - field: importsFrom
+    value: quill
+    url: https://www.tiny.cloud/blog/migrating-quill-to-tinymce/
+    checkedAt: 2026-11-17
+    via: page
+    quote: "you can easily migrate away from Quill, and change to TinyMCE"
+  - field: facebook
+    value: https://www.facebook.com/jointiny
+    url: https://www.tiny.cloud/
+    checkedAt: 2026-11-17
+    via: page
   - field: dependentPackages
     value: 1197
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/tinymce
@@ -175,7 +222,7 @@ facts:
     checkedAt: 2026-11-16
     via: page
     quote: "more than 100M+ products worldwide, powered by Tiny"
-notFound: [basedOn, parent, runtime, runtimeMin, renderingModes, databases, contentStore, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, importsFrom, forkOf, successorOf, usageShare, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, endoflifeId, latestPrereleaseDate, lastCommitDate, packagistName, pypiName, rubygemsName, crateName, cranName, dockerPulls, selfHostOption, wikidata, sourcePublic]
+notFound: [basedOn, parent, runtime, runtimeMin, renderingModes, databases, contentStore, adminUi, headlessApi, templating, multisite, livePreview, userRoles, sso, forkOf, successorOf, usageShare, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, newsletter, endoflifeId, latestPrereleaseDate, lastCommitDate, packagistName, pypiName, rubygemsName, crateName, cranName, dockerPulls, selfHostOption, wikidata, sourcePublic]
 unreadable: []
 notes: >
-  The LICENSE.md file names GPL-2.0-or-later with the copyright line "Ephox Corporation DBA Tiny Technologies, Inc."; the pricing page names GPL2+ for the self-hosted open source download and "Commercial license" on the plans, so the two are separate license entries, and the commercial one is named by the pricing page only. GitHub detects no license (NOASSERTION) because the file is LICENSE.md. The README says "Licensed under the terms of GNU General Public License Version 2 or later", which matches the file. The GitHub repository has no release objects; the registry's latest stable is the npm tag 8.10.2 (published 2026-11-11), which sets currentMajor and latestReleaseDate. The repository is a monorepo (the npm package lives in modules/tinymce), so stars and contributors belong to the monorepo and the npm figure is for tinymce. The oldest tag is 2.0.7, whose commit date is 2006-10-17; the npm registry's first upload is 4.0.25 from 2014. The framework wrappers tinymce-react, tinymce-vue and tinymce-angular are separate repositories named on the README and are not basedOn. The alternatives page compares CKEditor, Tiptap, Froala, Lexical and Quill; its column label says "CKEditor" without a version, so no CKEditor record id is recorded. The Terms page names the contracting party, the maintainer as recorded. The homepage footer says "Tiny Technologies Inc.", the trade name the copyright notice uses. The pricing page's Enterprise plan (cloud or self-hosted, custom packaging) and plan tiers with editor-load limits are plan tiers, not paidEdition; paidEdition records the premium plugins package the docs install page names. The README's "350M+ downloads every year" is a download count, not an install count, so it is not recorded as reportedInstalls. Hosting: the browser editor needs no server runtime.
+  The LICENSE.md file names GPL-2.0-or-later with the copyright line "Ephox Corporation DBA Tiny Technologies, Inc."; the pricing page names GPL2+ for the self-hosted open source download and "Commercial license" on the plans, so the two are separate license entries, and the commercial one is named by the pricing page only. GitHub detects no license (NOASSERTION) because the file is LICENSE.md. The README says "Licensed under the terms of GNU General Public License Version 2 or later", which matches the file. The GitHub repository has no release objects; the registry's latest stable is the npm tag 8.10.2 (published 2026-11-11), which sets currentMajor and latestReleaseDate. The repository is a monorepo (the npm package lives in modules/tinymce), so stars and contributors belong to the monorepo and the npm figure is for tinymce. The oldest tag is 2.0.7, whose commit date is 2006-10-17; the npm registry's first upload is 4.0.25 from 2014. The framework wrappers tinymce-react, tinymce-vue and tinymce-angular are separate repositories named on the README and are not basedOn. The alternatives page compares CKEditor, Tiptap, Froala, Lexical and Quill; its column label says "CKEditor" without a version, so ckeditor5 is recorded from the separate vs-CKEditor page that compares CKEditor 5. The migrate-to-TinyMCE page and the docs and blog guides it links give the importsFrom entries (Froala, CKEditor 4 and 5, Slate, Tiptap, Quill). The homepage footer also links a LinkedIn page and a newsletter signup form without a URL, and a Stack Overflow tag; none has a field here. The Terms page names the contracting party, the maintainer as recorded. The homepage footer says "Tiny Technologies Inc.", the trade name the copyright notice uses. The pricing page's Enterprise plan (cloud or self-hosted, custom packaging) and plan tiers with editor-load limits are plan tiers, not paidEdition; paidEdition records the premium plugins package the docs install page names. The README's "350M+ downloads every year" is a download count, not an install count, so it is not recorded as reportedInstalls. Hosting: the browser editor needs no server runtime.

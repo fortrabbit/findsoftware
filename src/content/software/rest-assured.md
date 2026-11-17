@@ -14,7 +14,8 @@ firstRelease: 2010
 language: java
 runtime:
   - jvm
-installMethod: maven
+runtimeMin: jvm 17
+installMethod: maven, gradle
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "6"
@@ -55,6 +56,12 @@ sources:
   - field: installMethod
     url: https://rest-assured.io/docs/getting-started/
     checkedAt: 2026-11-16
+  - field: installMethod
+    url: https://rest-assured.io/docs/getting-started/
+    checkedAt: 2026-11-17
+  - field: runtimeMin
+    url: https://rest-assured.io/news/
+    checkedAt: 2026-11-17
   - field: license
     url: https://api.github.com/repos/rest-assured/rest-assured
     checkedAt: 2026-11-16
@@ -88,7 +95,6 @@ templating: null
 i18n: null
 renderingModes: null
 hosting: null
-runtimeMin: null
 packagistDownloads: null
 npmWeeklyDownloads: null
 ---

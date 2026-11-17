@@ -68,7 +68,7 @@ sources:
     url: https://api.github.com/repos/elixir-wallaby/wallaby
     checkedAt: 2026-11-17
   - field: contributors
-    url: https://api.github.com/repos/elixir-wallaby/wallaby/contributors
+    url: https://api.github.com/repos/elixir-wallaby/wallaby/contributors?per_page=1
     checkedAt: 2026-11-17
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/hex.pm/packages/wallaby

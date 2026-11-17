@@ -85,7 +85,7 @@ facts:
     via: api
   - field: contributors
     value: 52
-    url: https://api.github.com/repos/leeoniya/uPlot/contributors
+    url: https://api.github.com/repos/leeoniya/uPlot/contributors?per_page=1
     checkedAt: 2026-11-16
     via: api
   - field: npmName
@@ -145,6 +145,12 @@ facts:
     via: page
     quote: "Plotly.js v2.18.2"
   - field: alternativeTo
+    value: amcharts
+    url: https://raw.githubusercontent.com/leeoniya/uPlot/master/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "amCharts v5.3.7"
+  - field: alternativeTo
     value: apexcharts
     url: https://raw.githubusercontent.com/leeoniya/uPlot/master/README.md
     checkedAt: 2026-11-16
@@ -153,4 +159,4 @@ facts:
 notFound: [parent, basedOn, runtime, runtimeMin, runsAs, renderingModes, endoflifeId, contentStore, databases, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, importsFrom, forkOf, successorOf, pricingPage, paidEdition, freeTier, usageShare, reportedInstalls, pluginDirectory, pluginCount, forum, discord, subreddit, mastodon, bluesky, x, newsletter, wikidata, hqCountry, hostedOffering, selfHostOption]
 unreadable: []
 notes: >
-  The repository is a single package, so its stars and contributors are the project's own. The homepage is the GitHub Pages site the repository names; its visible text carries the description quote. The LICENSE copyright line names Leon Sorokin alone, and no page gives a company or country. No page says the chart runs in the browser: the README says Canvas 2D-based and the docs install it with a script tag, but a runsAs value needs a sentence stating where it runs, so runsAs is left out. The README's benchmark table names Chart.js, ECharts, dygraphs, Highcharts, Plotly.js and ApexCharts; the six with a fact file are recorded as alternativeTo, and Flot, CanvasJS, LightningChart, dvxCharts, ZingChart and amCharts stay in the README only. The third-party wrappers for React, Vue.js and Svelte (skalinichev/uplot-wrappers), Python and React Ink are named in the README and are not basedOn. The docs' Installation section shows a stylesheet link and a script tag in a code block, which the quote checker cannot confirm because it strips tags from page text, so no script tag route is recorded; the npm route is cited from the registry API because no page has an install sentence. firstRelease is 2020: npm and the GitHub releases both start with 1.0.0 on 2020-03-10, and the repository was created in 2019. The docs say they are "a perpetual work in progress", which is not an end statement. The README's "Your browser's performance" and the docs' "uses the browser locale" are not statements about where the library runs.
+  The repository is a single package, so its stars and contributors are the project's own. The homepage is the GitHub Pages site the README links for its demos and benchmarks; its visible text carries the description quote. The LICENSE copyright line names Leon Sorokin alone, and no page gives a company or country. No page says the chart runs in the browser: the README says Canvas 2D-based and the docs install it with a script tag, but a runsAs value needs a sentence stating where it runs, so runsAs is left out. The README's benchmark table names Chart.js, ECharts, dygraphs, Highcharts, Plotly.js and ApexCharts; the seven with a fact file (including amCharts) are recorded as alternativeTo, and Flot, CanvasJS, LightningChart, dvxCharts and ZingChart stay in the README only. The third-party wrappers for React, Vue.js and Svelte (skalinichev/uplot-wrappers), Python and React Ink are named in the README and are not basedOn. The docs' Installation section shows a stylesheet link and a script tag in a code block, which the quote checker cannot confirm because it strips tags from page text, so no script tag route is recorded; the npm route is cited from the registry API because no page has an install sentence. firstRelease is 2020: npm and the GitHub releases both start with 1.0.0 on 2020-03-10, and the repository was created in 2019. The docs say they are "a perpetual work in progress", which is not an end statement. The README's "Your browser's performance" and the docs' "uses the browser locale" are not statements about where the library runs.

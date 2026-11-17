@@ -52,6 +52,12 @@ facts:
     checkedAt: 2026-11-16
     via: page
     quote: "has a package that makes this library 100% compatible with the particles.js configuration"
+  - field: alternativeTo
+    value: particles-js
+    url: https://github.com/tsparticles/tsparticles/blob/main/README.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "migrate from the old particles.js library"
   - field: installMethod
     value: npm
     url: https://particles.js.org/guide/installation
@@ -131,7 +137,7 @@ facts:
     url: https://github.com/tsparticles/tsparticles/blob/main/README.md
     checkedAt: 2026-11-16
     via: page
-notFound: [basedOn, forkOf, successorOf, parent, hqCountry, databases, adminUi, headlessApi, contentStore, templating, i18n, multisite, livePreview, userRoles, sso, alternativeTo, pricingPage, endoflifeId, usageShare, reportedInstalls, forum, bluesky, mastodon, x, newsletter, pluginDirectory, runtime, renderingModes]
+notFound: [basedOn, forkOf, successorOf, parent, hqCountry, databases, adminUi, headlessApi, contentStore, templating, i18n, multisite, livePreview, userRoles, sso, pricingPage, endoflifeId, usageShare, reportedInstalls, forum, bluesky, mastodon, x, newsletter, pluginDirectory, runtime, renderingModes]
 unreadable: []
 notes: >
-  Monorepo: stars, contributors and the release tags belong to tsparticles/tsparticles, which also holds the framework wrappers, presets and plugins. The npm figure is @tsparticles/engine, the first package the install guide names; the unscoped tsparticles package has its own download figure, not recorded here. The GitHub release v4.4.0 (2026-08-31) is the newest release object, and the npm latest version 4.6.0 (2026-11-13) is newer; both are major 4, and latestReleaseDate takes the registry date. The troubleshooting page says the library depends on browser APIs (window, document, canvas) and must load client-side in SSR frameworks, which gives runsAs browser; no server runtime is stated, so runtime stays empty. The README also links a Telegram channel, which has no field. The README's Migrating from Particles.js section is a compatibility package for particles.js configurations, recorded as importsFrom particles-js. The ecosyste.ms count of 0 dependent repositories for the engine package is recorded as the API states it. Discord and subreddit come from README badges. Checked 2026-11-16.
+  Monorepo: stars, contributors and the release tags belong to tsparticles/tsparticles, which also holds the framework wrappers, presets and plugins. The npm figure is @tsparticles/engine, the first package the install guide names; the unscoped tsparticles package has its own download figure, not recorded here. The GitHub release v4.4.0 (2026-08-31) is the newest release object, and the npm latest version 4.6.0 (2026-11-13) is newer; both are major 4, and latestReleaseDate takes the registry date. The troubleshooting page says the library depends on browser APIs (window, document, canvas) and must load client-side in SSR frameworks, which gives runsAs browser; no server runtime is stated, so runtime stays empty. The README also links a Telegram channel, which has no field. The README's Migrating from Particles.js section is a compatibility package for particles.js configurations, recorded as importsFrom particles-js, and the README names the old particles.js library as what to migrate from, recorded as alternativeTo. The ecosyste.ms count of 0 dependent repositories for the engine package is recorded as the API states it. Discord and subreddit come from README badges. Checked 2026-11-16.

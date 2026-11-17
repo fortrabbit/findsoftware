@@ -38,7 +38,7 @@ facts:
     checkedAt: 2026-11-16
     via: api
   - field: categories
-    value: [library]
+    value: [markdown]
     url: https://raw.githubusercontent.com/remarkjs/react-markdown/main/readme.md
     checkedAt: 2026-11-16
     via: page
@@ -49,6 +49,18 @@ facts:
     checkedAt: 2026-11-16
     via: page
     quote: "React component to render markdown."
+  - field: basedOn
+    value: [unified]
+    url: https://raw.githubusercontent.com/remarkjs/react-markdown/main/readme.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "`react-markdown` is a unified pipeline — wrapped so that most folks don’t need"
+  - field: alternativeTo
+    value: [mdx]
+    url: https://raw.githubusercontent.com/remarkjs/react-markdown/main/readme.md
+    checkedAt: 2026-11-17
+    via: page
+    quote: "If you instead want to use JavaScript and JSX *inside* markdown files, use"
   - field: language
     value: JavaScript
     url: https://api.github.com/repos/remarkjs/react-markdown
@@ -140,8 +152,8 @@ facts:
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/react-markdown
     checkedAt: 2026-11-16
     via: api
-notFound: [pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, alternativeTo, importsFrom, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, runsAs, renderingModes, x, bluesky, mastodon, subreddit, newsletter, discord, forum, reportedInstalls, usageShare, pluginDirectory, pluginCount, wikidata, endoflifeId, dockerPulls, httpArchiveSites, hostedOffering, latestPrereleaseDate]
+notFound: [pricingPage, paidEdition, hqCountry, parent, forkOf, successorOf, importsFrom, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, runsAs, renderingModes, x, bluesky, mastodon, subreddit, newsletter, discord, forum, reportedInstalls, usageShare, pluginDirectory, pluginCount, wikidata, endoflifeId, dockerPulls, httpArchiveSites, hostedOffering, latestPrereleaseDate]
 unreadable:
   - https://remarkjs.github.io/react-markdown/ is the demo page; its HTML holds only a heading and an empty container filled by JavaScript, so the homepage is linked from the README sentence about the demo and carries no quote
 notes: >
-  Status: no end signal. The repository is not archived; the npm latest version 10.1.0 is not deprecated. The newest npm prerelease tag 3.0.0-rc4 is dated 2017-11-18, older than the stable release, so no latestPrereleaseDate. The last GitHub release, 10.1.0, is dated 2025-03-07; release age does not change the status. The README says the package is ESM only, so it is not loaded with require. The README says it works in all modern browsers and that its install route applies to Node.js (version 16+); that names both, so runtime is node and runsAs is not recorded. The README also shows Deno through esm.sh, recorded as a second runtime entry. The README calls the package a React component and describes it as a unified pipeline (parse with micromark-based remark, transform with rehype, render to React); the README says it uses unified, specifically remark for markdown and rehype for HTML; those are dependencies and not a basedOn statement, and none has a fact file yet, so they stay in this note. The README names react-remark and rehype-react as hook-based alternatives for those familiar with unified; those are the project's own words but no record id exists for them, so alternativeTo stays empty. The README names MDX as the tool for JSX inside markdown files, and remark-gfm, rehype-raw and rehype-sanitize as related packages; these are notes, not fields. The Deno and browser routes both load from esm.sh, recorded as one cdn installMethod. The maintainer follows the LICENSE copyright line, Espen Hovlandsdal; the repository belongs to the remarkjs organization, which is listed as the organization in the repository owner field. The README names CommonMark as the syntax it follows by default and GFM through the remark-gfm plugin; those are syntax statements, not fields. The README's security section says the component is safe by default, that plugins and custom components can reintroduce risk, and that rehype-sanitize is the recommended way to make content completely safe; these are statements, not fields.
+  Status: no end signal. The repository is not archived; the npm latest version 10.1.0 is not deprecated. The newest npm prerelease tag 3.0.0-rc4 is dated 2017-11-18, older than the stable release, so no latestPrereleaseDate. The last GitHub release, 10.1.0, is dated 2025-03-07; release age does not change the status. The README says the package is ESM only, so it is not loaded with require. The README says it works in all modern browsers and that its install route applies to Node.js (version 16+); that names both, so runtime is node and runsAs is not recorded. The README also shows Deno through esm.sh, recorded as a second runtime entry. The README calls the package a React component and describes it as a unified pipeline (parse with micromark-based remark, transform with rehype, render to React); the README says it uses unified, specifically remark for markdown and rehype for HTML; the README calls react-markdown a unified pipeline, recorded as basedOn unified; remark and rehype are the parts of that pipeline and carry no separate basedOn. The README names react-remark and rehype-react as hook-based alternatives for those familiar with unified; no record id exists for them, so they stay in this note; the README sentence pointing to MDX for JSX inside markdown files is recorded as alternativeTo mdx. The README names MDX as the tool for JSX inside markdown files, and remark-gfm, rehype-raw and rehype-sanitize as related packages; these are notes, not fields. The Deno and browser routes both load from esm.sh, recorded as one cdn installMethod. The maintainer follows the LICENSE copyright line, Espen Hovlandsdal; the repository belongs to the remarkjs organization, which is listed as the organization in the repository owner field. The README names CommonMark as the syntax it follows by default and GFM through the remark-gfm plugin; those are syntax statements, not fields. The README's security section says the component is safe by default, that the remark plugins, rehype plugins and components you use may be insecure, and that rehype-sanitize is the recommended way to make content completely safe; these are statements, not fields.

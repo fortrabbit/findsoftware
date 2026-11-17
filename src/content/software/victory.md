@@ -15,6 +15,7 @@ firstRelease: 2015
 language: javascript
 basedOn:
   - react
+i18n: yes
 installMethod: npm, cdn
 licenseModel: open-source
 license: MIT
@@ -88,13 +89,15 @@ sources:
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/victory
     checkedAt: 2026-11-17
+  - field: i18n
+    url: https://nearform.com/open-source/victory/docs/guides/localization
+    checkedAt: 2026-11-17
 ai: authored
 contentStore: null
 databases: null
 adminUi: null
 headlessApi: null
 templating: null
-i18n: null
 renderingModes: null
 hosting: null
 runtimeMin: null

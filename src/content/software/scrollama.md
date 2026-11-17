@@ -20,6 +20,8 @@ latestReleaseDate: 2022-06-17
 githubStargazers: 6013
 npmWeeklyDownloads: 195626
 contributors: 19
+dependentRepos: 949
+dependentPackages: 348
 addedAt: 2026-11-16
 checkedAt: 2026-11-16
 sources:
@@ -65,6 +67,12 @@ sources:
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/scrollama
     checkedAt: 2026-11-16
+  - field: dependentPackages
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/scrollama
+    checkedAt: 2026-11-17
+  - field: dependentRepos
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/scrollama
+    checkedAt: 2026-11-17
 ai: authored
 contentStore: null
 databases: null

@@ -22,11 +22,11 @@ facts:
     checkedAt: 2026-11-16
     via: api
   - field: maintainer
-    value: Rive
-    url: https://github.com/rive-app/rive-wasm/blob/master/LICENSE
-    checkedAt: 2026-11-16
+    value: Rive, Inc.
+    url: https://rive.app/docs/legal/terms-of-service
+    checkedAt: 2026-11-17
     via: page
-    quote: "Copyright (c) 2020-2021 Rive"
+    quote: "Rive, Inc., a Delaware corporation"
   - field: repoOwnerType
     value: organization
     url: https://api.github.com/repos/rive-app/rive-wasm
@@ -66,6 +66,30 @@ facts:
     checkedAt: 2026-11-16
     via: page
     quote: "Add the following script tag to your web page to load the latest version of the web runtime"
+  - field: installMethod
+    value: pnpm
+    url: https://rive.app/docs/runtimes/web/web-js
+    checkedAt: 2026-11-17
+    via: page
+    quote: "pnpm add @rive-app/webgl2"
+  - field: installMethod
+    value: yarn
+    url: https://rive.app/docs/runtimes/web/web-js
+    checkedAt: 2026-11-17
+    via: page
+    quote: "yarn add @rive-app/webgl2"
+  - field: installMethod
+    value: bun
+    url: https://rive.app/docs/runtimes/web/web-js
+    checkedAt: 2026-11-17
+    via: page
+    quote: "bun add @rive-app/webgl2"
+  - field: alternativeTo
+    value: [lottie-web]
+    url: https://rive.app/blog/rive-as-a-lottie-alternative
+    checkedAt: 2026-11-17
+    via: page
+    quote: "If you're looking for a Lottie alternative, this guide compares Rive and Lottie"
   - field: license
     value: MIT
     url: https://rive.app/
@@ -79,12 +103,12 @@ facts:
     via: api
   - field: currentMajor
     value: 2
-    url: https://api.github.com/repos/rive-app/rive-wasm/releases/tags/2.50.0
+    url: https://api.github.com/repos/rive-app/rive-wasm/releases/tags/2.51.0
     checkedAt: 2026-11-16
     via: api
   - field: latestReleaseDate
-    value: 2026-11-09
-    url: https://api.github.com/repos/rive-app/rive-wasm/releases/tags/2.50.0
+    value: 2026-11-16
+    url: https://api.github.com/repos/rive-app/rive-wasm/releases/tags/2.51.0
     checkedAt: 2026-11-16
     via: api
   - field: githubStargazers
@@ -137,12 +161,17 @@ facts:
     url: https://rive.app/
     checkedAt: 2026-11-16
     via: page
+  - field: newsletter
+    value: https://rive.app/newsletter
+    url: https://rive.app/
+    checkedAt: 2026-11-17
+    via: page
   - field: forum
     value: https://community.rive.app/
     url: https://rive.app/
     checkedAt: 2026-11-16
     via: page
-notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, hqCountry, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runtime, runtimeMin, paidEdition, latestPrereleaseDate, usageShare, reportedInstalls, endoflifeId, pluginDirectory, bluesky, mastodon, newsletter, subreddit, packagistName, mavenCoordinates]
+notFound: [basedOn, parent, forkOf, successorOf, importsFrom, hqCountry, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runtime, runtimeMin, paidEdition, latestPrereleaseDate, usageShare, reportedInstalls, endoflifeId, pluginDirectory, bluesky, mastodon, subreddit, packagistName, mavenCoordinates]
 unreadable: []
 notes: >
-  The record covers the web runtime in rive-app/rive-wasm, not the Rive Editor. The homepage describes Rive as the whole engine, and the Rive Editor (editor.rive.app, linked from the runtime README) is a separate product; the runtime's own pages do not say the editor is a hosted service, so no hostedOffering is recorded, and a reviewer should decide whether the editor belongs in a separate record. The CSV row named the repository as homepage; the project's own site is rive.app, and the docs page is the runtime's install page. The npm install page names @rive-app/webgl2 as the package it recommends; the registry figure is taken from that package, and the canvas and canvas-lite variants are other packages the docs name. The npm weekly download figure is the sum of the 2026-11-01 to 2026-11-07 range. The repository's GitHub releases begin in 2026 (26 releases), while the tags start at 0.6.0 (2021-03-31); firstRelease uses the oldest registry upload: the npm package rive-canvas, published from the same repository (its repository field names rive-app/rive-wasm), was first uploaded on 2020-07-30, older than the 0.6.0 tag (2021-03-31). The current stable line is 2.x: 2.50.0 is the latest release (2026-11-09). The releases list has no prerelease, so no latestPrereleaseDate is recorded. The LICENSE copyright line names "Rive" and the homepage footer names the company, but no legal entity or country is stated, so no hqCountry is recorded. The homepage footer also links LinkedIn (linkedin.com/company/rive-app), recorded here only in notes because the field is coined; the YouTube channel is recorded as youtube. The docs say the runtime can be used in Webflow, WordPress and other web applications, and provides a base API for React, Svelte and other wrappers; those wrappers are not records of their own here. The dependentPackages figure is 0 in ecosyste.ms for @rive-app/webgl2; that count may lag the registry. Contributors are the last page number of the contributors endpoint with per_page=1. The README says that trying the CLI needs no account, that writing the .riv file that ships on a site needs a free Rive account, and that free exports play a short Rive splash screen while paid plans export without it; no prices are recorded. The README also describes a low-level API that lets a page drive its own render loop, and names the Rive CLI and the Rive Editor as the tools that write Rive files.
+  The record covers the web runtime in rive-app/rive-wasm, not the Rive Editor. The homepage describes Rive as the whole engine, and the Rive Editor (editor.rive.app, linked from the runtime README) is a separate product; the runtime's own pages do not say the editor is a hosted service, so no hostedOffering is recorded, and a reviewer should decide whether the editor belongs in a separate record. The CSV row named the repository as homepage; the project's own site is rive.app, and the docs page is the runtime's install page. The npm install page names @rive-app/webgl2 as the package it recommends; the registry figure is taken from that package, and the canvas and canvas-lite variants are other packages the docs name. The npm weekly download figure is the sum of the 2026-11-01 to 2026-11-07 range. The repository's GitHub releases begin in 2026 (26 releases), while the tags start at 0.6.0 (2021-03-31); firstRelease uses the oldest registry upload: the npm package rive-canvas, published from the same repository (its repository field names rive-app/rive-wasm), was first uploaded on 2020-07-30, older than the 0.6.0 tag (2021-03-31). The current stable line is 2.x: 2.51.0 is the latest release (2026-11-16). The releases list has no prerelease, so no latestPrereleaseDate is recorded. The maintainer is Rive, Inc. as the terms of service name it (the LICENSE copyright line reads "Rive"); the terms call it a Delaware corporation and name no headquarters country, so no hqCountry is recorded. The Lottie comparison page is about Rive as a whole; lottie-web is the record for the Lottie player. The homepage footer also links LinkedIn (linkedin.com/company/rive-app), recorded here only in notes because the field is coined; the YouTube channel is recorded as youtube. The docs say the runtime can be used in Webflow, WordPress and other web applications, and provides a base API for React, Svelte and other wrappers; those wrappers are not records of their own here. The dependentPackages figure is 0 in ecosyste.ms for @rive-app/webgl2; that count may lag the registry. Contributors are the last page number of the contributors endpoint with per_page=1. The README says that trying the CLI needs no account, that writing the .riv file that ships on a site needs a free Rive account, and that free exports play a short Rive splash screen while paid plans export without it; no prices are recorded. The README also describes a low-level API that lets a page drive its own render loop, and names the Rive CLI and the Rive Editor as the tools that write Rive files.

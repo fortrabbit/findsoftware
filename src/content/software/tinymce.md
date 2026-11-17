@@ -31,6 +31,7 @@ dependentPackages: 1197
 social:
   x: https://www.twitter.com/jointiny
   youtube: https://www.youtube.com/channel/UCr6peP8DEyfOMuBRHFrj1sg
+  facebook: https://www.facebook.com/jointiny
 addedAt: 2026-11-16
 checkedAt: 2026-11-16
 sources:
@@ -115,7 +116,7 @@ runtimeMin: null
 packagistDownloads: null
 ---
 
-TinyMCE is a rich text editor component that a web page loads to let visitors edit HTML content. It is written in TypeScript and runs in the browser, so a page includes it either from the npm package or from a copy of the tinymce.min.js script that the creator hosts. A cloud-hosted version of the editor is offered next to the self-hosted one.
+TinyMCE is a rich text editor component that a web page loads to let visitors edit HTML content. It is written in TypeScript and runs in the browser, so a page includes it from the npm package or through a script tag, and the self-hosted route is a download that the creator serves. A cloud-hosted version of the editor is offered next to the self-hosted one.
 
 ## Worth knowing
 

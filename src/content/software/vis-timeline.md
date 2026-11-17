@@ -11,9 +11,12 @@ description: JavaScript library that draws an interactive timeline of items and 
 status: active
 maintainer: vis.js contributors
 maintainerType: community
-firstRelease: 2019
+firstRelease: 2013
 language: javascript
+templating: handlebars, mustache
 i18n: yes
+runsAs:
+  - browser
 installMethod: npm, download
 licenseModel: open-source
 license: Apache-2.0, MIT
@@ -35,7 +38,7 @@ sources:
     url: https://visjs.github.io/vis-timeline/docs/timeline/
     checkedAt: 2026-11-17
   - field: firstRelease
-    url: https://api.github.com/repos/visjs/vis-timeline/releases
+    url: https://github.com/visjs/vis-timeline/blob/master/HISTORY.md
     checkedAt: 2026-11-17
   - field: maintainer
     url: https://github.com/visjs/vis-timeline/blob/master/README.md
@@ -79,20 +82,24 @@ sources:
   - field: contributors
     url: https://api.github.com/repos/visjs/vis-timeline/contributors?per_page=1
     checkedAt: 2026-11-17
+  - field: templating
+    url: https://visjs.github.io/vis-timeline/docs/timeline/
+    checkedAt: 2026-11-17
+  - field: runsAs
+    url: https://visjs.github.io/vis-timeline/docs/timeline/
+    checkedAt: 2026-11-17
 ai: authored
 contentStore: null
 databases: null
 adminUi: null
 headlessApi: null
-templating: null
 renderingModes: null
 hosting: null
 runtimeMin: null
 packagistDownloads: null
-runsAs: null
 ---
 
-vis-timeline is a JavaScript library that draws an interactive timeline of items and ranges on a time axis in a web page. Its [documentation](https://visjs.github.io/vis-timeline/docs/timeline/) offers a locale option for the timeline.
+vis-timeline is a JavaScript library that draws an interactive timeline of items and ranges on a time axis in a web page. The timeline and its items are rendered with regular HTML DOM elements. Item contents can be formatted with a template function, and any template engine, such as Handlebars or Mustache, can produce the markup. The [documentation](https://visjs.github.io/vis-timeline/docs/timeline/) states that the timeline can be localized.
 
 ## Worth knowing
 

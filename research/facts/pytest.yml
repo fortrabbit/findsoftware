@@ -76,6 +76,12 @@ facts:
     checkedAt: 2026-11-16
     via: page
     quote: 'pip install -U pytest'
+  - field: runsAs
+    value: [local]
+    url: https://docs.pytest.org/en/stable/explanation/ci.html
+    checkedAt: 2026-11-17
+    via: page
+    quote: "pytest can detect when it is in a CI environment and adapt some of its behaviours."
   - field: license
     value: MIT
     url: https://github.com/pytest-dev/pytest/blob/main/LICENSE
@@ -148,7 +154,7 @@ facts:
     url: https://docs.pytest.org/en/stable/contact.html
     checkedAt: 2026-11-16
     via: page
-notFound: [hqCountry, forkOf, successorOf, alternativeTo, adminUi, headlessApi, renderingModes, runsAs, sso, databases, endoflifeId, packagistName, npmName, subreddit, newsletter, usageShare, reportedInstalls, latestPrereleaseDate, paidEdition, pricingPage, importsFrom, templating, i18n, multisite, livePreview, userRoles, contentStore, hostedOffering]
+notFound: [hqCountry, forkOf, successorOf, alternativeTo, adminUi, headlessApi, renderingModes, sso, databases, endoflifeId, packagistName, npmName, subreddit, newsletter, usageShare, reportedInstalls, latestPrereleaseDate, paidEdition, pricingPage, importsFrom, templating, i18n, multisite, livePreview, userRoles, contentStore, hostedOffering]
 unreadable: []
 notes: >
   Accepted as a testing library under criterion 1: the README says it "scales to support complex functional testing for applications and libraries", and the test runner is added to a project's own test suite. The README also says pytest "Can run unittest (or trial) test suites out of the box", which is a compatibility statement, not recorded as a field. The maintainer follows the LICENSE copyright line ("Holger Krekel and others"); the README gives the same holder as "Copyright Holger Krekel and others, 2004", and the pyproject lists authors as "Others (See AUTHORS)", so the record is a community maintainer. The first release year comes from the changelog, which lists 1.0.0b3 on 2009-06-19; its earlier 0.9.x entries carry no dates and belong to the py library the project came from, and the first PyPI upload under this name is 2.0.0 on 2010-11-25, later than the changelog. The GitHub releases list flags 8.1.0 and 8.0.0rc2 as prereleases from 2024, both older than the latest stable release, so latestPrereleaseDate is not recorded. The README advertises Tidelift enterprise support and Open Collective funding; these are third-party support and donations, not editions, so paidEdition and pricingPage are not recorded. The IRC channel #pytest on Libera Chat is in the README and is not recorded as a field. The README's plugin count is recorded as stated ("over 1300+"); its dated figure is a README statement, not a registry count. The Discord link comes from the README badge and carries no quote. The homepage pytest.org redirects to docs.pytest.org/en/stable/, which is recorded as the final URL. The pypistats figure is the last-month count, a rolling window. Contributors are counted across all pages of the contributors endpoint with per_page=1, last page 381. The README describes plain assert statements with detailed introspection of failures, modular fixtures, auto-discovery of test modules and functions, and unittest suites that run out of the box. The forum, Bluesky, Mastodon and X links come from the docs contact page, which also names Stack Overflow, a Discord server and a mailing list.

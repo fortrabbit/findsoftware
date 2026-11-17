@@ -15,7 +15,7 @@ firstRelease: 2019
 language: javascript
 i18n: yes, all texts used in the carousel can be translated
 installMethod: npm, download, cdn
-licenseModel: open-core
+licenseModel: open-source
 license: MIT
 currentMajor: "4"
 latestReleaseDate: 2022-11-09
@@ -103,4 +103,4 @@ Integration packages exist for React, Vue and Svelte. The Vue integration's late
 
 ## Worth knowing
 
-Splide Premium is a separate, sponsor-only package that adds transition effects built with three.js to a carousel. The premium page says it may be used commercially only once the user becomes a sponsor, so it is not part of the open-source library.
+Splide Premium is a separate, sponsor-only package that adds transition effects built with three.js to a carousel. The premium page says it may be used commercially only once the user becomes a sponsor.

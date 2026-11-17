@@ -53,7 +53,7 @@ facts:
     via: page
     quote: "Old school (exposes the `scrollama` global)"
   - field: alternativeTo
-    value: [scrollmagic]
+    value: [scrollmagic, gsap]
     url: https://github.com/russellsamora/scrollama/blob/main/README.md
     checkedAt: 2026-11-16
     via: page
@@ -94,7 +94,17 @@ facts:
     url: https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/scrollama
     checkedAt: 2026-11-16
     via: api
+  - field: dependentPackages
+    value: 348
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/scrollama
+    checkedAt: 2026-11-17
+    via: api
+  - field: dependentRepos
+    value: 949
+    url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/scrollama
+    checkedAt: 2026-11-17
+    via: api
 notFound: [hqCountry, paidEdition, pricingPage, runsAs, runtime, importsFrom, basedOn, headlessApi, adminUi, renderingModes, databases, sso, userRoles, i18n, templating, contentStore, forum, discord, newsletter, x, mastodon, bluesky, subreddit, pluginDirectory]
 unreadable: []
 notes: >
-  Stale release: the repository has no GitHub release or tag; the npm registry is the release source, and its latest version 3.2.0 dates from 2022-06-17, more than four years before this check, so the import moves the record to stub under criterion 4. The status stays accepted here until the import runs. The npm registry names the repository as russellgoldenberg/scrollama; GitHub now serves that address from russellsamora/scrollama, the repository the candidate row names. The README Alternatives list names Scroll Trigger, Waypoints, ScrollMagic, graph-scroll.js, ScrollStory and enter-view; only ScrollMagic has a record here, so only scrollmagic is recorded. The script-tag route (unpkg) sits in a code block under the Installation heading beside the line "Old school (exposes the scrollama global)", which is the quoted line. The homepage is the project's GitHub Pages basic example; the README is its documentation. The README's Logo credit and Scrollama In The Wild examples are not recorded. A browser library: the README gives no sentence saying where it runs, so no runsAs fact; the IntersectionObserver polyfill note is browser support, not a runtime. The repository stars and contributors are the library's own repository.
+  Stale release: the repository has no GitHub release or tag; the npm registry is the release source, and its latest version 3.2.0 dates from 2022-06-17, more than four years before this check, so the import moves the record to stub under criterion 4. The status stays accepted here until the import runs. The npm registry names the repository as russellgoldenberg/scrollama; GitHub now serves that address from russellsamora/scrollama, the repository the candidate row names. The README Alternatives list names Scroll Trigger, Waypoints, ScrollMagic, graph-scroll.js, ScrollStory and enter-view; only ScrollMagic and Scroll Trigger (a GSAP plugin, so gsap) have a record here, so only scrollmagic and gsap are recorded. The script-tag route (unpkg) sits in a code block under the Installation heading beside the line "Old school (exposes the scrollama global)", which is the quoted line. The homepage is the project's GitHub Pages basic example; the README is its documentation. The README's Logo credit and Scrollama In The Wild examples are not recorded. A browser library: the README gives no sentence saying where it runs, so no runsAs fact; the IntersectionObserver polyfill note is browser support, not a runtime. The repository stars and contributors are the library's own repository.

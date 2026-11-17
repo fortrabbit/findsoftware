@@ -60,6 +60,18 @@ facts:
     checkedAt: 2026-11-16
     via: page
     quote: "Add the dependencies you need to your pom.xml or build.gradle"
+  - field: installMethod
+    value: gradle
+    url: https://rest-assured.io/docs/getting-started/
+    checkedAt: 2026-11-17
+    via: page
+    quote: "Pick Maven or Gradle in any of the tabs below and every page shows that one."
+  - field: runtimeMin
+    value: "17"
+    url: https://rest-assured.io/news/
+    checkedAt: 2026-11-17
+    via: page
+    quote: "It raises the baseline to Java 17+"
   - field: mavenCoordinates
     value: io.rest-assured:rest-assured
     url: https://repo1.maven.org/maven2/io/rest-assured/rest-assured/maven-metadata.xml
@@ -116,8 +128,8 @@ facts:
     checkedAt: 2026-11-16
     via: page
     quote: "If you need support then join the mailing list"
-notFound: [runtimeMin, basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, pricingPage, hqCountry, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, pluginDirectory, discord, x, bluesky, mastodon, newsletter, subreddit, endoflifeId]
+notFound: [basedOn, parent, forkOf, successorOf, alternativeTo, importsFrom, pricingPage, hqCountry, databases, contentStore, adminUi, headlessApi, templating, i18n, multisite, livePreview, userRoles, sso, renderingModes, runsAs, usageShare, reportedInstalls, npmName, npmWeeklyDownloads, pluginDirectory, discord, x, bluesky, mastodon, newsletter, subreddit, endoflifeId]
 unreadable: []
 notes: >
-  No GitHub release objects exist: the stable line is read from the tags and the Maven Central metadata, and the stable tag rest-assured-6.3.0 (2026-10-23) is the highest stable version; Maven metadata lists 7.0.0-RC1 as its release, which is a prerelease, so latestReleaseDate uses the registry's stable version. The 7.0.0-RC1 tag and announcement (2026-11-12) are recorded as latestPrereleaseDate. No runtimeMin is recorded: the README line "Java 17 is required." and the docs pages describe the 7.0.0-RC1 release candidate, the 6.3.0 pom sets a compile level that is no stated requirement, and no page states a minimum for the stable line. The homepage says "It is now sponsored by Parkster" and the pom lists Parkster as the developer's organization; Parkster is a sponsor, not a parent, and goes here only. The homepage says "developed and maintained by Johan Haleby", no legal entity or imprint is stated, so no hqCountry is recorded. The 7.0 line drops Groovy and Apache HttpClient 4 from the default dependencies; the Kotlin, Scala, Spring MockMvc and Spring WebTestClient support are modules of the same project and are not recorded as fields. The Maven Central route is the only install route: the Gradle tab uses the same artifact. Maven publishes no download figure, so none is recorded. The Google Group is the project's own support mailing list linked from the support page. The docs link on the homepage is https://rest-assured.io/docs/, and the getting-started page is https://rest-assured.io/docs/getting-started/.
+  No GitHub release objects exist: the stable line is read from the tags and the Maven Central metadata, and the stable tag rest-assured-6.3.0 (2026-10-23) is the highest stable version; Maven metadata lists 7.0.0-RC1 as its release, which is a prerelease, so latestReleaseDate uses the registry's stable version. The 7.0.0-RC1 tag and announcement (2026-11-12) are recorded as latestPrereleaseDate. runtimeMin 17 comes from the news entry for 6.0.0 ("raises the baseline to Java 17+"), which also holds for the 6.x line and for 7.0.0-RC1 ("Java 17 is required"). The homepage says "It is now sponsored by Parkster" and the pom lists Parkster as the developer's organization; Parkster is a sponsor, not a parent, and goes here only. The homepage says "developed and maintained by Johan Haleby", no legal entity or imprint is stated, so no hqCountry is recorded. The 7.0 line drops Groovy and Apache HttpClient 4 from the default dependencies; the Kotlin, Scala, Spring MockMvc and Spring WebTestClient support are modules of the same project and are not recorded as fields. The Maven Central route is the only install route: the Gradle tab uses the same artifact. Maven publishes no download figure, so none is recorded. The Google Group is the project's own support mailing list linked from the support page. The docs link on the homepage is https://rest-assured.io/docs/, and the getting-started page is https://rest-assured.io/docs/getting-started/.
   The homepage lists the request and response checks: status, headers, cookies, and JSON and XML paths. The 7.0 line sends requests with the JDK HTTP client and makes the path engine a dependency the user adds. The modules are the path engines, the HTTP client (Apache HttpClient 5 as the alternative), Spring MockMvc and WebTestClient, and Kotlin and Scala support.
