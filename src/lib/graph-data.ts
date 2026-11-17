@@ -18,7 +18,8 @@ export interface GraphData extends Drawing {
 }
 
 const make = async (): Promise<GraphData> => {
-  const software = await loadSoftware();
+  // Discontinued software is not drawn, not even as the parent of a record that is.
+  const software = (await loadSoftware()).filter((entry) => entry.data.status !== 'discontinued');
   const bands = await loadBands();
   const momentum = await loadMomentum();
   // The register's default view; a parent without momentum still comes along with its children.
