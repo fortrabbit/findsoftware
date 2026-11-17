@@ -1,5 +1,6 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { asideCategoryOf, asideOf, hiddenStatuses } from './fields';
+import { cached } from './dev-cache';
 
 /*
  * Two statuses hide a record, and which two is `hidden: true` in the dictionary
@@ -56,17 +57,14 @@ export function asideKindGroup(provider: Provider): string | undefined {
 }
 
 /*
- * The whole collection, read once per build. getCollection deep-copies every
- * entry on each call, and with every record page asking for all of them that
- * copying was a third of the build. Only in a build: `astro dev` reads afresh,
- * so an edited record shows on the next request. A new array each time, so a
- * caller sorting it in place cannot reorder anyone else's.
+ * The whole collection, read once until a record changes (see dev-cache.ts).
+ * getCollection deep-copies every entry on each call, and with every record
+ * page asking for all of them that copying was a third of the build. A new
+ * array each time, so a caller sorting it in place cannot reorder anyone else's.
  */
-let collection: Promise<Provider[]> | undefined;
+const collection = cached(() => getCollection('software'));
 export async function loadSoftware(): Promise<Provider[]> {
-  if (!import.meta.env.PROD) return getCollection('software');
-  collection ??= getCollection('software');
-  return [...(await collection)];
+  return [...(await collection())];
 }
 
 /**

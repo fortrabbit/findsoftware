@@ -9,11 +9,10 @@ import { parse as parseYaml } from 'yaml';
 import { isListed, loadSoftware } from './providers';
 import { loadUsagePlaces } from './usage-data';
 import { momentumOf, type MomentumFigures, type Thresholds, type Verdict } from './momentum';
+import { cached } from './dev-cache';
 
 const figuresFile = 'src/data/momentum.json';
 const thresholdsFile = 'src/data/momentum.yml';
-
-let built: Promise<Map<string, Verdict>> | undefined;
 
 const make = async (): Promise<Map<string, Verdict>> => {
   const figures = (existsSync(figuresFile) ? JSON.parse(readFileSync(figuresFile, 'utf8')) : {}) as Record<
@@ -29,12 +28,8 @@ const make = async (): Promise<Map<string, Verdict>> => {
   return verdicts;
 };
 
-/** `astro dev` reads afresh, so a moved threshold shows on the next request. */
-export const loadMomentum = (): Promise<Map<string, Verdict>> => {
-  if (!import.meta.env.PROD) return make();
-  built ??= make();
-  return built;
-};
+/** Cut once until a record, a figure or a threshold changes (see dev-cache.ts). */
+export const loadMomentum: () => Promise<Map<string, Verdict>> = cached(make);
 
 /** Whether a record is in the default view. A record the map does not hold is not listed, so it is not shown either. */
 export const inDefaultView = (verdicts: Map<string, Verdict>, id: string) => verdicts.get(id)?.shown ?? false;

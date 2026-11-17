@@ -4,23 +4,14 @@
  */
 import { loadProviders } from './providers';
 import { figuresOf, usageBands, usagePlaces } from './usage';
+import { cached } from './dev-cache';
 
-let builtBands: Promise<Map<string, number>> | undefined;
-let builtPlaces: Promise<Map<string, number>> | undefined;
 
 const records = async () =>
   (await loadProviders()).map((provider) => ({ id: provider.id, figures: figuresOf(provider.data) }));
 
-/** `astro dev` reads afresh, so an edited record shows on the next request. */
-export const loadBands = (): Promise<Map<string, number>> => {
-  if (!import.meta.env.PROD) return records().then(usageBands);
-  builtBands ??= records().then(usageBands);
-  return builtBands;
-};
+/** Counted once until a record changes (see dev-cache.ts). */
+export const loadBands: () => Promise<Map<string, number>> = cached(() => records().then(usageBands));
 
 /** Each record's place among the scored records, 0 to just under 1, for momentum. */
-export const loadUsagePlaces = (): Promise<Map<string, number>> => {
-  if (!import.meta.env.PROD) return records().then(usagePlaces);
-  builtPlaces ??= records().then(usagePlaces);
-  return builtPlaces;
-};
+export const loadUsagePlaces: () => Promise<Map<string, number>> = cached(() => records().then(usagePlaces));

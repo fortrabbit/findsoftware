@@ -9,13 +9,12 @@ import { isListed, loadSoftware } from './providers';
 import { recordPath } from './paths';
 import { loadBands } from './usage-data';
 import { inDefaultView, loadMomentum } from './momentum-data';
+import { cached } from './dev-cache';
 
 export interface GraphData extends Drawing {
   /** Every record drawn: the listed ones and the parents they bring along. */
   drawn: Set<string>;
 }
-
-let built: Promise<GraphData> | undefined;
 
 const make = async (): Promise<GraphData> => {
   const software = await loadSoftware();
@@ -44,12 +43,8 @@ const make = async (): Promise<GraphData> => {
   return { nodes, edges, drawn };
 };
 
-/** Once per build; `astro dev` builds afresh so an edited record shows on the next request. */
-export const loadGraph = (): Promise<GraphData> => {
-  if (!import.meta.env.PROD) return make();
-  built ??= make();
-  return built;
-};
+/** Laid out once until a record changes (see dev-cache.ts). */
+export const loadGraph: () => Promise<GraphData> = cached(make);
 
 export interface Step {
   key: string;

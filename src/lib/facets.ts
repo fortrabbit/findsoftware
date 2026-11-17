@@ -3,6 +3,7 @@ import { asideGroup, isListed, loadAsideProviders, loadProviders, loadSoftware }
 import { byName, countValues, rowHolds, toRow, type Facet, type FacetValue, type ProviderRow } from './rows';
 import { pairIndexPath, pairPages, pairPath, type PairPage } from './pairs';
 import { inDefaultView, loadMomentum } from './momentum-data';
+import { cached } from './dev-cache';
 
 /*
  * The shapes live in lib/rows.ts, with the functions that build them, and are
@@ -11,22 +12,11 @@ import { inDefaultView, loadMomentum } from './momentum-data';
 export type { Facet, FacetValue, ProviderRow } from './rows';
 
 /*
- * Counted once per build rather than once per page. Every record page, every
- * facet page and the sitemap ask for the same table, which is a full pass over
- * the collection each time — a few hundred pages doing identical work.
- *
- * Only in a build. `astro dev` recomputes on every request, because a cache that
- * outlives an edit to a record is a dev server serving yesterday's data, which
- * is a worse bug than a slow build.
+ * Counted once rather than once per page. Every record page, every facet page
+ * and the sitemap ask for the same table, which is a full pass over the
+ * collection each time. dev-cache.ts says when `astro dev` counts again.
  */
-const once = <T>(work: () => Promise<T>): (() => Promise<T>) => {
-  let held: Promise<T> | undefined;
-  return () => {
-    if (!import.meta.env.PROD) return work();
-    held ??= work();
-    return held;
-  };
-};
+const once = cached;
 
 /*
  * The hidden records, on their own, for the one place that offers to show them:
