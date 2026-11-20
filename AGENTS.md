@@ -13,6 +13,7 @@ Present now:
 ```
 AGENTS.md
 .claude/skills/write-record/SKILL.md   research one candidate into a fact file
+.claude/skills/refresh-record/SKILL.md re-read a fact file's sources, the daily refresh routine
 research/
   README.md                            what each research file means
   candidates-<area>.csv                the queue, one file per area
