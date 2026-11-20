@@ -1,56 +1,46 @@
 /*
- * Which records the refresh routine reads next.
+ * Which fact files the refresh routine reads next.
  *
- * Every record whose provider still has pages to read, oldest `checkedAt`
- * first, records nobody has checked first of all, and within one date the
- * reverse of A-to-Z. Records the routine already handled recently
- * are skipped, whatever the outcome: a provider that cannot be reached leaves
- * no date on the record, and without this the same one would come up every
+ * Ordered by the oldest page fact in each file, files with no date first, and
+ * within one date the reverse of A-to-Z. Page facts decide the order because the
+ * weekly API refresh re-dates every `via: api` fact and the file's own
+ * `checkedAt`; the page reads are what this routine spends tokens on. Files the
+ * routine handled recently are skipped, whatever the outcome: a project whose
+ * pages cannot be read leaves no date, and without this it would come up every
  * morning.
  *
- * A stub runs on a weekly cycle: first in the queue
- * on Sundays (UTC), last on every other day. Both have a home page worth
- * re-reading, but most carry nothing to compare, so a read leaves no date, and
- * none of them is on /updated/. Sorted in with the rest, their July dates put
- * them at the front of every run and the listed records were never reached.
+ * Every status but `accepted` runs on a weekly cycle: first in the queue on
+ * Sundays (UTC), last on every other day. Stubs, hosted services and
+ * discontinued software rarely change, and sorted in with the rest they would
+ * fill every run.
  *
  * The list is a queue of attempts, not a batch. The routine works down it and
- * stops once enough records have been reached, so the tail is usually untouched
- * and comes up again tomorrow.
+ * stops once enough files have been reached, so the tail comes up again tomorrow.
  *
- *   node scripts/refresh-pick.mjs            # one id
+ *   node scripts/refresh-pick.mjs            # 20 ids
  *   node scripts/refresh-pick.mjs --n 3      # three
  *   node scripts/refresh-pick.mjs --days 30  # retry sooner than the default 60
  *   node scripts/refresh-pick.mjs --hidden   # the Sunday order, any day
  *
  * Reads research/refresh-log.tsv, which the routine appends to, and skips any
- * record still waiting on the review branch, whose commit carries no log line.
+ * file still waiting on the review branch, whose commit carries no log line.
  * See .claude/skills/refresh-record/SKILL.md.
  */
 import { execFileSync } from 'node:child_process';
-import { readdirSync, readFileSync, existsSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parse } from 'yaml';
-import { asideOf, hiddenStatuses } from '../src/lib/fields.ts';
 
-const providersDir = 'src/content/software';
+const factsDir = 'research/facts';
 const logFile = 'research/refresh-log.tsv';
 
 const arg = (name, fallback) => {
   const at = process.argv.indexOf(`--${name}`);
   return at > 0 ? Number(process.argv[at + 1]) : fallback;
 };
-const n = arg('n', 1);
+const n = arg('n', 20);
 const days = arg('days', 60);
 const hiddenFirst = process.argv.includes('--hidden') || new Date().getUTCDay() === 0;
-
-/*
- * The defunct statuses, and the only ones with nothing left to read: one
- * stopped trading, the other can no longer be read at all. Taken from the
- * dictionary rather than listed again here, so a status added there is
- * refreshed without anybody remembering this file.
- */
-const defunct = new Set([...asideOf].filter(([, aside]) => aside.key === 'defunct').map(([id]) => id));
 
 const since = new Date(Date.now() - days * 86400000).toISOString().slice(0, 10);
 const recent = new Set();
@@ -61,37 +51,35 @@ if (existsSync(logFile)) {
   }
 }
 
-/* Records changed on the review branch and not yet merged: somebody is reading those. */
-const reviewBranch = 'origin/claude/refresh-review';
+/* Fact files changed on the review branch and not yet merged: somebody is reading those. */
 try {
-  const changed = execFileSync('git', ['diff', '--name-only', `origin/main...${reviewBranch}`], {
+  const changed = execFileSync('git', ['diff', '--name-only', 'origin/main...origin/claude/refresh-review'], {
     encoding: 'utf8',
     stdio: ['ignore', 'pipe', 'ignore'],
   });
   for (const path of changed.split('\n')) {
-    const match = path.match(/^src\/content\/providers\/(.+)\.md$/);
+    const match = path.match(/^research\/facts\/(.+)\.yml$/);
     if (match) recent.add(match[1]);
   }
 } catch {
   /* No review branch, nothing waiting. */
 }
 
-const front = (file) => {
-  const text = readFileSync(join(providersDir, file), 'utf8');
-  const end = text.indexOf('\n---', 4);
-  return parse(text.slice(4, end));
-};
+const day = (value) => (value ? String(value).slice(0, 10) : '');
 
-const candidates = readdirSync(providersDir)
-  .filter((file) => file.endsWith('.md'))
-  .map(front)
-  .filter((data) => !defunct.has(data.status ?? 'active') && !recent.has(data.id))
-  .map((data) => ({
-    id: data.id,
-    name: String(data.name),
-    checkedAt: data.checkedAt ? String(data.checkedAt).slice(0, 10) : '',
-    later: hiddenStatuses.has(data.status ?? 'active') === hiddenFirst ? 0 : 1,
-  }))
-  .sort((a, b) => a.later - b.later || a.checkedAt.localeCompare(b.checkedAt) || b.name.localeCompare(a.name));
+const candidates = readdirSync(factsDir)
+  .filter((file) => file.endsWith('.yml'))
+  .map((file) => parse(readFileSync(join(factsDir, file), 'utf8')))
+  .filter((data) => data?.id && !recent.has(data.id))
+  .map((data) => {
+    const pages = (data.facts ?? []).filter((fact) => fact.via === 'page').map((fact) => day(fact.checkedAt));
+    return {
+      id: data.id,
+      name: String(data.name ?? data.id),
+      oldest: pages.length ? pages.sort()[0] : day(data.checkedAt),
+      later: (data.status !== 'accepted') === hiddenFirst ? 0 : 1,
+    };
+  })
+  .sort((a, b) => a.later - b.later || a.oldest.localeCompare(b.oldest) || b.name.localeCompare(a.name));
 
 for (const { id } of candidates.slice(0, n)) console.log(id);
