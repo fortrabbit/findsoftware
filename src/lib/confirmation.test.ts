@@ -108,6 +108,30 @@ describe('a sourced change', () => {
     assert.match(reviewReasons(file, after).join(), /removes currentMajor/);
   });
 
+  it('moves a pinned release to a newer tag of the same repository', () => {
+    const pinned = file.replace(
+      'registry.npmjs.org/astro/latest',
+      'github.com/withastro/astro/releases/tag/astro@5.1.0',
+    );
+    const after = redated(pinned).replace('value: 5', 'value: 6').replace('astro@5.1.0', 'astro@6.0.0');
+    assert.deepEqual(reviewReasons(pinned, after), []);
+  });
+
+  it('moves a pinned download week to a newer week', () => {
+    const week = file.replace(
+      'registry.npmjs.org/astro/latest',
+      'api.npmjs.org/downloads/range/2026-10-12:2026-10-18/astro',
+    );
+    const after = redated(week).replace('2026-10-12:2026-10-18', '2026-11-09:2026-11-15');
+    assert.deepEqual(reviewReasons(week, after), []);
+  });
+
+  it('is not a release moved to another repository', () => {
+    const pinned = file.replace('registry.npmjs.org/astro/latest', 'github.com/withastro/astro/releases/tag/v5');
+    const after = redated(pinned).replace('withastro/astro/releases', 'other/astro/releases');
+    assert.match(reviewReasons(pinned, after).join(), /removes currentMajor/);
+  });
+
   it('tells two facts of the same field apart by their url', () => {
     const second = [
       '  - field: currentMajor',

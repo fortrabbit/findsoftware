@@ -14,9 +14,11 @@
  * asks for. `stub` is human curation and never comes from the routine.
  *
  * What stays outside is what the routine does not write: `id`, `name`,
- * `description`, `notes`, a removed fact, a moved source URL. Any of these on
- * this lane means a run went wrong rather than that something was researched,
- * so the Action stops and a person looks. The same function decides both the
+ * `description`, `notes`, a removed fact, a source URL moved to another
+ * repository or package. Any of these on this lane means a run went wrong
+ * rather than that something was researched, so the Action stops and a person
+ * looks. A move to a newer release tag or download week of the same repository
+ * or package is a sourced change. The same function decides both the
  * routine's lane and the Action's guard, so the two cannot disagree.
  */
 import { isDeepStrictEqual } from 'node:util';
@@ -55,8 +57,16 @@ function read(text: string): FactFile | null {
   }
 }
 
+/**
+ * A URL with its release tag or download week left out: the same source, read
+ * again at a newer release or week. Moving to another repository or package is
+ * still another source.
+ */
+export const pinless = (url: string) =>
+  url.replace(/\/releases\/tags?\/[^/?#]+/, '/releases/tag/*').replace(/\d{4}-\d{2}-\d{2}:\d{4}-\d{2}-\d{2}/, '*');
+
 /* A fact's source: the same field read off the same URL the same way. Two of them are two facts. */
-const source = (fact: Fact) => JSON.stringify([fact.field, fact.url ?? '', fact.via ?? '', fact.period ?? '']);
+const source = (fact: Fact) => JSON.stringify([fact.field, pinless(fact.url ?? ''), fact.via ?? '', fact.period ?? '']);
 const content = ({ checkedAt: _, ...rest }: Fact) => rest;
 
 function bySource(facts: Fact[]): Map<string, Fact[]> {
