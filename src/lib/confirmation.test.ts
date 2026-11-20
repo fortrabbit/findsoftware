@@ -1,143 +1,206 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { changedFields, isConfirmation, isRecord, isSelfMerging, withoutDates } from './confirmation.ts';
+import { changedFields, isFactFile, isSelfMerging, reviewReasons, withoutDates } from './confirmation.ts';
 
-const record = [
-  '---',
-  'id: wordpress',
-  'name: WordPress',
-  'firstRelease: 2003',
-  'status: active',
-  'checkedAt: 2026-08-01',
-  'sources:',
-  "  - { field: firstRelease, url: 'https://wordpress.org/about/', checkedAt: 2026-07-31 }",
-  "  - { field: languages, url: 'https://wordpress.org/documentation/', checkedAt: 2026-08-01 }",
-  '---',
+const file = [
+  'id: astro',
+  'name: Astro',
+  'status: accepted',
+  'checkedAt: 2026-10-22',
+  'description: Web framework for content-driven websites.',
+  'facts:',
+  '  - field: currentMajor',
+  '    value: 5',
+  '    url: https://registry.npmjs.org/astro/latest',
+  '    checkedAt: 2026-10-22',
+  '    via: api',
+  '  - field: installMethod',
+  '    value: npm create astro',
+  '    url: https://docs.astro.build/en/install-and-setup/',
+  '    checkedAt: 2026-10-20',
+  '    via: page',
+  '    quote: "npm create astro@latest"',
+  'notFound: [hqCountry, forum]',
+  'unreadable: []',
+  'notes: >',
+  '  The framework is maintained by The Astro Technology Company.',
   '',
-  'WordPress was first released in 2003.',
 ].join('\n');
 
+const redated = (text: string) => text.replaceAll('2026-10-22', '2026-11-20').replace('2026-10-20', '2026-11-20');
+const addFact = (text: string, fact: string) => text.replace('notFound:', `${fact}\nnotFound:`);
+
 describe('a confirmation', () => {
-  it('is a change to checkedAt dates and nothing else', () => {
-    const after = record
-      .replace('checkedAt: 2026-08-01\n', 'checkedAt: 2026-09-08\n')
-      .replace('2026-07-31', '2026-09-08');
-    assert.equal(isConfirmation(record, after), true);
+  it('moves only checkedAt dates, and merges', () => {
+    assert.deepEqual(reviewReasons(file, redated(file)), []);
   });
 
-  it('includes setting a checkedAt where there was none', () => {
-    const before = record.replace('checkedAt: 2026-08-01\n', '');
-    assert.equal(isConfirmation(before, record), true);
+  it('may confirm some facts and leave others', () => {
+    assert.equal(isSelfMerging(file, file.replaceAll('2026-10-22', '2026-11-20')), true);
   });
 
-  it('is not a changed value, even with the dates bumped', () => {
-    const after = record.replace('firstRelease: 2003', 'firstRelease: 2004').replace('2026-07-31', '2026-09-08');
-    assert.equal(isConfirmation(record, after), false);
-  });
-
-  it('is not a status change', () => {
-    assert.equal(isConfirmation(record, record.replace('status: active', 'status: discontinued')), false);
-  });
-
-  it('is not a moved source', () => {
-    assert.equal(isConfirmation(record, record.replace('/about/', '/history/')), false);
-  });
-
-  it('is not a change to prose', () => {
-    assert.equal(
-      isConfirmation(record, record.replace('first released in 2003.', 'first released in 2003 in Berlin.')),
-      false,
-    );
-  });
-
-  it('is not an added source, which is research', () => {
-    const after = record.replace(
-      '---\n\nWordPress',
-      "  - { field: license, url: 'https://wordpress.org/about/', checkedAt: 2026-09-08 }\n---\n\nWordPress",
-    );
-    assert.equal(isConfirmation(record, after), false);
+  it('never moves a date back', () => {
+    assert.equal(isSelfMerging(file, file.replace('checkedAt: 2026-10-20', 'checkedAt: 2026-10-01')), false);
   });
 });
 
 describe('a sourced change', () => {
-  it('is a field the record cites, so the routine merges it', () => {
-    const after = record.replace('firstRelease: 2003', 'firstRelease: 2004').replace('2026-07-31', '2026-09-08');
-    assert.equal(isSelfMerging(record, after), true);
+  it('moves a value with the run date, and merges', () => {
+    assert.equal(isSelfMerging(file, redated(file).replace('value: 5', 'value: 6')), true);
   });
 
-  it('is not a field cited only by a source the run left untouched', () => {
-    assert.equal(isSelfMerging(record, record.replace('firstRelease: 2003', 'firstRelease: 2004')), false);
+  it('is not a value moved under an old date', () => {
+    assert.equal(isSelfMerging(file, file.replace('value: 5', 'value: 6')), false);
   });
 
-  it('reads a source entry that wraps over several lines', () => {
-    const wrapped = record.replace(
-      "  - { field: firstRelease, url: 'https://wordpress.org/about/', checkedAt: 2026-07-31 }",
-      "  - {\n      field: firstRelease,\n      url: 'https://wordpress.org/about/',\n      checkedAt: 2026-07-31,\n    }",
+  it('is not a value moved while the file date stays', () => {
+    const after = file
+      .replace('value: 5', 'value: 6')
+      .replace('    checkedAt: 2026-10-22\n    via: api', '    checkedAt: 2026-11-20\n    via: api');
+    assert.match(reviewReasons(file, after).join(), /without the run's checkedAt/);
+  });
+
+  it('is not a page fact without its quote', () => {
+    const after = redated(file)
+      .replace('value: npm create astro', 'value: pnpm create astro')
+      .replace(/\n    quote: .*/, '');
+    assert.match(reviewReasons(file, after).join(), /without a quote/);
+  });
+
+  it('moves a page fact with a new quote', () => {
+    const after = redated(file)
+      .replace('value: npm create astro', 'value: pnpm create astro')
+      .replace('"npm create astro@latest"', '"pnpm create astro@latest"');
+    assert.equal(isSelfMerging(file, after), true);
+  });
+
+  it('adds a sourced fact and drops it from notFound', () => {
+    const fact = [
+      '  - field: forum',
+      '    value: https://astro.build/chat',
+      '    url: https://astro.build/',
+      '    checkedAt: 2026-11-20',
+      '    via: page',
+      '    quote: "Join our Discord"',
+    ].join('\n');
+    const after = addFact(redated(file), fact).replace('[hqCountry, forum]', '[hqCountry]');
+    assert.deepEqual(reviewReasons(file, after), []);
+  });
+
+  it('is not a dropped notFound entry without a fact', () => {
+    assert.match(reviewReasons(file, redated(file).replace('[hqCountry, forum]', '[hqCountry]')).join(), /drops forum/);
+  });
+
+  it('is not an added notFound entry', () => {
+    assert.match(
+      reviewReasons(file, redated(file).replace('[hqCountry, forum]', '[hqCountry, forum, x]')).join(),
+      /adds x/,
     );
-    const after = wrapped.replace('firstRelease: 2003', 'firstRelease: 2004').replace('2026-07-31', '2026-09-08');
-    assert.equal(isSelfMerging(wrapped, after), true);
-    assert.equal(isSelfMerging(wrapped, wrapped.replace('firstRelease: 2003', 'firstRelease: 2004')), false);
   });
 
-  it('is not a field nothing cites', () => {
-    const after = record.replace('name: WordPress', 'name: WordPress Core');
-    assert.equal(isSelfMerging(record, after), false);
+  it('is not a removed fact', () => {
+    const after = redated(file).replace(/  - field: currentMajor\n(    .*\n){4}/, '');
+    assert.match(reviewReasons(file, after).join(), /removes currentMajor/);
   });
 
-  it('is a status change the record cites, which ships without a person', () => {
-    const after = record
-      .replace('status: active', 'status: discontinued')
-      .replace(
-        '---\n\nWordPress',
-        "  - { field: status, url: 'https://wordpress.org/news/', checkedAt: 2026-09-08 }\n---\n\nWordPress",
-      );
-    assert.equal(isSelfMerging(record, after), true);
+  it('is not a moved source url', () => {
+    const after = redated(file).replace('astro/latest', 'astro');
+    assert.match(reviewReasons(file, after).join(), /removes currentMajor/);
   });
 
-  it('is not a status change nothing cites', () => {
-    assert.equal(isSelfMerging(record, record.replace('status: active', 'status: discontinued')), false);
-  });
-
-  it('is never the record identity, however well cited', () => {
-    const after = record
-      .replace('name: WordPress', 'name: WordPress Core')
-      .replace(
-        '---\n\nWordPress',
-        "  - { field: name, url: 'https://wordpress.org/about/', checkedAt: 2026-09-08 }\n---\n\nWordPress",
-      );
-    assert.equal(isSelfMerging(record, after), false);
-  });
-
-  it('is not a change to prose', () => {
-    assert.equal(isSelfMerging(record, record.replace('first released in 2003.', 'first released in 2004.')), false);
-  });
-
-  it('covers a confirmation, which changes no field at all', () => {
-    const after = record.replace('checkedAt: 2026-08-01', 'checkedAt: 2026-09-08');
-    assert.equal(isSelfMerging(record, after), true);
-  });
-
-  it('takes a list as one field, so a changed language is a changed languages', () => {
-    const listed = record.replace('firstRelease: 2003', 'languages:\n  - php\n  - javascript');
-    const after = listed
-      .replace('  - javascript', '  - typescript')
-      .replace("documentation/', checkedAt: 2026-08-01", "documentation/', checkedAt: 2026-09-08");
-    assert.deepEqual(changedFields(listed, after), ['languages']);
-    assert.equal(isSelfMerging(listed, after), true);
+  it('tells two facts of the same field apart by their url', () => {
+    const second = [
+      '  - field: currentMajor',
+      '    value: 5',
+      '    url: https://api.github.com/repos/withastro/astro/releases/latest',
+      '    checkedAt: 2026-10-22',
+      '    via: api',
+    ].join('\n');
+    const before = addFact(file, second);
+    const after = redated(before).replace('value: 5\n    url: https://registry', 'value: 6\n    url: https://registry');
+    assert.equal(isSelfMerging(before, after), true);
   });
 });
 
-describe('the date blanking', () => {
-  it('leaves everything but the dates', () => {
+describe('a status change', () => {
+  const ended = [
+    '  - field: status',
+    '    value: discontinued',
+    '    url: https://api.github.com/repos/withastro/astro',
+    '    checkedAt: 2026-11-20',
+    '    via: api',
+  ].join('\n');
+
+  it('merges to discontinued with a fresh status fact', () => {
+    const after = addFact(redated(file), ended).replace('status: accepted', 'status: discontinued');
+    assert.deepEqual(reviewReasons(file, after), []);
+  });
+
+  it('is not discontinued without a status fact', () => {
+    assert.equal(isSelfMerging(file, redated(file).replace('status: accepted', 'status: discontinued')), false);
+  });
+
+  it('is not discontinued on an old status fact', () => {
+    const before = addFact(file, ended.replace('2026-11-20', '2026-10-22'));
+    const after = before.replace('status: accepted', 'status: discontinued');
+    assert.equal(isSelfMerging(before, after), false);
+  });
+
+  it('is never stub, which is curation', () => {
+    const after = addFact(redated(file), ended.replace('discontinued', 'stub')).replace(
+      'status: accepted',
+      'status: stub',
+    );
+    assert.match(reviewReasons(file, after).join(), /changes status to stub/);
+  });
+});
+
+describe('what the routine never writes', () => {
+  for (const [key, from, to] of [
+    ['id', 'id: astro', 'id: astro-build'],
+    ['name', 'name: Astro', 'name: Astro Framework'],
+    ['description', 'for content-driven websites', 'for content sites'],
+    ['notes', 'maintained by', 'built by'],
+    ['unreadable', 'unreadable: []', 'unreadable: [docs]'],
+  ]) {
+    it(`is a changed ${key}`, () => {
+      assert.deepEqual(reviewReasons(file, redated(file).replace(from, to)), [`changes ${key}`]);
+    });
+  }
+
+  it('is a file that does not parse', () => {
+    assert.deepEqual(reviewReasons(file, 'facts: [\n'), ['not a fact file']);
+  });
+});
+
+describe('what counts as a fact file', () => {
+  it('is a yaml file directly under research/facts', () => {
+    assert.equal(isFactFile('research/facts/astro.yml'), true);
+    assert.equal(isFactFile('research/facts/old/astro.yml'), false);
+    assert.equal(isFactFile('src/content/software/astro.md'), false);
+  });
+});
+
+describe('the record helpers', () => {
+  const record = [
+    '---',
+    'id: astro',
+    'firstRelease: 2021',
+    'languages:',
+    '  - js',
+    'checkedAt: 2026-08-01',
+    '---',
+    '',
+  ].join('\n');
+
+  it('blank the dates and nothing else', () => {
     assert.equal(withoutDates(record).includes('2026'), false);
-    assert.equal(withoutDates(record).includes('firstRelease: 2003'), true);
+    assert.equal(withoutDates(record).includes('firstRelease: 2021'), true);
   });
-});
 
-describe('what counts as a record', () => {
-  it('is a markdown file directly under the software directory', () => {
-    assert.equal(isRecord('src/content/software/wordpress.md'), true);
-    assert.equal(isRecord('src/content/notes/categories.md'), false);
-    assert.equal(isRecord('src/content/software/README.md'), true);
+  it('take a list as one field', () => {
+    assert.deepEqual(changedFields(record, record.replace('  - js', '  - ts').replace('08-01', '09-01')), [
+      'languages',
+    ]);
   });
 });
