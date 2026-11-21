@@ -40,6 +40,12 @@ export const GET: APIRoute = async ({ site }) => {
     return `${origin}/${id.replace(/^(aside|page)\//, '')}/`;
   };
 
+  /* A value no record holds has a note but no page. */
+  const built = (id: string) => {
+    const { facet, value } = valueOf(id);
+    return !facet || !id.includes('/') || (value?.count ?? 0) > 0;
+  };
+
   const headingOf = (id: string) => {
     const { facet, value } = valueOf(id);
     if (!id.includes('/')) return facet?.label ?? id;
@@ -103,9 +109,11 @@ export const GET: APIRoute = async ({ site }) => {
     '',
     '## Notes',
     '',
-    ...notes.map((entry) =>
-      `- [${entry.data.title ?? headingOf(entry.id)}](${urlOf(entry.id)}): ${entry.data.description ?? ''}`.trimEnd(),
-    ),
+    ...notes
+      .filter((entry) => built(entry.id))
+      .map((entry) =>
+        `- [${entry.data.title ?? headingOf(entry.id)}](${urlOf(entry.id)}): ${entry.data.description ?? ''}`.trimEnd(),
+      ),
     '',
     `## Software (${providers.length})`,
     '',
