@@ -377,8 +377,8 @@ export function same(field: string, old: unknown, next: unknown): boolean {
           .match(/\d+(?:\.\d+)?/)?.[0],
       ) === next
     );
-  // GitHub reports the GPL family without its -only or -or-later suffix.
-  if (field === 'license' && String(old).startsWith(`${next}-`)) return true;
+  // GitHub names one SPDX id: a GPL without its -only or -or-later suffix, or one part of a license described in words.
+  if (field === 'license' && String(old).toLowerCase().includes(String(next).toLowerCase())) return true;
   const plain = (value: unknown) =>
     String(value)
       .toLowerCase()

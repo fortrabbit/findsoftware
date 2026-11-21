@@ -61,6 +61,11 @@ async function call(url: string): Promise<Answer> {
       await sleep(5000 * attempt);
       continue;
     }
+    /* A token the sandbox sets but GitHub refuses: drop it and go on anonymously. */
+    if (response?.status === 401 && headers.Authorization) {
+      delete process.env.GITHUB_TOKEN;
+      return call(url);
+    }
     if (!response.ok) return { status: response.status };
     const json = await response.json().catch(() => undefined);
     return { status: response.status, json, link: response.headers.get('link') };

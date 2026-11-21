@@ -129,6 +129,7 @@ describe('a reading', () => {
     assert.equal(same('npmName', 'Astro', 'astro'), true);
     assert.equal(same('license', 'GPL-2.0-or-later', 'GPL-2.0'), true);
     assert.equal(same('license', 'GPL-2.0', 'GPL-3.0'), false);
+    assert.equal(same('license', 'Apache-2.0 for the software, CC-BY-4.0 for the UI', 'Apache-2.0'), true);
     assert.equal(same('homepage', 'https://www.getzola.org/', 'https://www.getzola.org'), true);
     assert.equal(same('homepage', 'https://www.yiiframework.com', 'http://www.yiiframework.com'), true);
   });
