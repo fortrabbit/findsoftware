@@ -35,97 +35,97 @@ licenseModel: open-source
 license: MIT
 currentMajor: "1"
 latestReleaseDate: 2025-08-05
-githubStargazers: 18417
-npmWeeklyDownloads: 850580
-contributors: 438
+githubStargazers: 18517
+npmWeeklyDownloads: 1983772
+contributors: 443
 httpArchiveSites: 638
 dependentRepos: 5497
 dependentPackages: 2145
 wikidata: Q137265963
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-21
 sources:
   - field: urls
     url: https://github.com/vuejs/vitepress
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://github.com/vuejs/vitepress
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://vitepress.dev/guide/what-is-vitepress
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: firstRelease
     url: https://registry.npmjs.org/vitepress
     checkedAt: 2026-10-18
   - field: maintainer
     url: https://vitepress.dev/guide/what-is-vitepress
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: maintainer
     url: https://vitepress.dev/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: maintainerType
     url: https://vitepress.dev/guide/what-is-vitepress
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q137265963
     checkedAt: 2026-10-18
   - field: category
     url: https://vitepress.dev/guide/what-is-vitepress
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: basedOn
     url: https://registry.npmjs.org/vitepress/latest
     checkedAt: 2026-10-18
   - field: language
     url: https://github.com/vuejs/vitepress
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtime
     url: https://vitepress.dev/guide/getting-started
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtimeMin
     url: https://vitepress.dev/guide/getting-started
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: contentStore
     url: https://vitepress.dev/guide/what-is-vitepress
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: templating
     url: https://vitepress.dev/guide/what-is-vitepress
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: i18n
     url: https://vitepress.dev/guide/i18n
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: renderingModes
     url: https://vitepress.dev/guide/what-is-vitepress
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: installMethod
     url: https://vitepress.dev/guide/getting-started
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: license
     url: https://github.com/vuejs/vitepress
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: license
     url: https://vitepress.dev/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: licenseModel
     url: https://vitepress.dev/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: currentMajor
     url: https://registry.npmjs.org/vitepress/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: latestReleaseDate
     url: https://registry.npmjs.org/vitepress
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: githubStargazers
     url: https://github.com/vuejs/vitepress
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: contributors
     url: https://api.github.com/repos/vuejs/vitepress/contributors?anon=true
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/vitepress
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runsAs
     url: https://vitepress.dev/guide/getting-started
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-21
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25

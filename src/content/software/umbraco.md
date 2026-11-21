@@ -39,9 +39,9 @@ installMethod: dotnet new install Umbraco.Templates, dotnet new umbraco, Visual 
 licenseModel: open-source
 license: MIT
 currentMajor: "18"
-latestReleaseDate: 2026-10-06
-githubStargazers: 5270
-contributors: 1211
+latestReleaseDate: 2026-11-17
+githubStargazers: 5285
+contributors: 1225
 httpArchiveSites: 4389
 social:
   discord: https://discord.com/invite/umbraco
@@ -49,95 +49,95 @@ social:
   youtube: https://www.youtube.com/@UmbracoCommunity
 wikidata: Q285761
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-21
 sources:
   - field: name
     url: https://umbraco.com/products/umbraco-cms/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://github.com/umbraco/Umbraco-CMS
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://github.com/umbraco/Umbraco-CMS
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/install
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: maintainer
     url: https://umbraco.com/terms-and-conditions/
-    checkedAt: 2026-10-20
+    checkedAt: 2026-11-21
   - field: maintainerType
     url: https://umbraco.com/about-us/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: hqCountry
     url: https://umbraco.com/about-us/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q285761
     checkedAt: 2026-10-18
   - field: category
     url: https://umbraco.com/products/umbraco-cms/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: language
     url: https://github.com/umbraco/Umbraco-CMS
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtime
     url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/requirements
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtimeMin
     url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/requirements
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: contentStore
     url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/requirements
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: databases
     url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/requirements
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: adminUi
     url: https://umbraco.com/products/umbraco-cms/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: headlessApi
     url: https://docs.umbraco.com/umbraco-cms/reference/content-delivery-api
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: templating
     url: https://docs.umbraco.com/umbraco-cms/fundamentals/design/templates/basic-razor-syntax
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: i18n
     url: https://docs.umbraco.com/umbraco-cms/tutorials/multilanguage-setup
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: renderingModes
     url: https://docs.umbraco.com/umbraco-cms/fundamentals/design/templates/basic-razor-syntax
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: installMethod
     url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/install
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: license
     url: https://github.com/umbraco/Umbraco-CMS
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: licenseModel
     url: https://umbraco.com/pricing/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://umbraco.com/pricing/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: currentMajor
     url: https://github.com/umbraco/Umbraco-CMS/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: latestReleaseDate
     url: https://github.com/umbraco/Umbraco-CMS/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: githubStargazers
     url: https://github.com/umbraco/Umbraco-CMS
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: contributors
     url: https://api.github.com/repos/umbraco/Umbraco-CMS/contributors?anon=true
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://marketplace.umbraco.com/
     checkedAt: 2026-10-18
   - field: runsAs
     url: https://docs.umbraco.com/umbraco-cms/fundamentals/setup/install
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-21
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25
