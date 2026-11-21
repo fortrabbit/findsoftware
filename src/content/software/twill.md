@@ -35,7 +35,7 @@ license: Apache-2.0, Apache-2.0 for the software, CC-BY-4.0 for the Twill UI
 currentMajor: "3"
 latestReleaseDate: 2026-07-19
 githubStargazers: 3971
-packagistDownloads: 499344
+packagistDownloads: 517027
 contributors: 179
 packagistMonthlyDownloads: 9846
 dependentRepos: 73
@@ -43,7 +43,7 @@ dependentPackages: 16
 social:
   discord: https://discord.gg/cnWk7EFv8R
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-21
 sources:
   - field: name
     url: https://github.com/area17/twill
@@ -53,19 +53,19 @@ sources:
     checkedAt: 2026-10-18
   - field: urls
     url: https://twillcms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://twillcms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: maintainer
     url: https://twillcms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: maintainerType
     url: https://github.com/area17/twill
     checkedAt: 2026-10-18
   - field: category
     url: https://twillcms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: basedOn
     url: https://github.com/area17/twill
     checkedAt: 2026-10-18
@@ -77,31 +77,31 @@ sources:
     checkedAt: 2026-10-18
   - field: runtime
     url: https://twillcms.com/docs/getting-started/index.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtimeMin
     url: https://twillcms.com/docs/getting-started/index.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtimeMin
     url: https://repo.packagist.org/p2/area17/twill.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: contentStore
     url: https://twillcms.com/docs/getting-started/index.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: databases
     url: https://twillcms.com/docs/getting-started/index.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: adminUi
     url: https://github.com/area17/twill
     checkedAt: 2026-10-18
   - field: templating
     url: https://twillcms.com/docs/getting-started/installation.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: i18n
     url: https://twillcms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: installMethod
     url: https://twillcms.com/docs/getting-started/installation.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: license
     url: https://github.com/area17/twill
     checkedAt: 2026-10-18
@@ -110,7 +110,7 @@ sources:
     checkedAt: 2026-10-18
   - field: licenseModel
     url: https://twillcms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: currentMajor
     url: https://api.github.com/repos/area17/twill/releases/latest
     checkedAt: 2026-10-18
@@ -125,10 +125,10 @@ sources:
     checkedAt: 2026-10-18
   - field: packagistDownloads
     url: https://packagist.org/packages/area17/twill.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://twillcms.com/docs/modules/capsules.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/area17%2Ftwill
     checkedAt: 2026-10-25

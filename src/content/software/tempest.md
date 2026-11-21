@@ -37,7 +37,7 @@ license: MIT
 currentMajor: "3"
 latestReleaseDate: 2026-09-08
 githubStargazers: 2276
-packagistDownloads: 52542
+packagistDownloads: 59760
 contributors: 103
 packagistMonthlyDownloads: 4684
 dependentPackages: 1
@@ -46,11 +46,11 @@ social:
   bluesky: https://tempestphp.com/bluesky/brent
   discord: https://tempestphp.com/discord
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-21
 sources:
   - field: name
     url: https://tempestphp.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://github.com/tempestphp/tempest-framework
     checkedAt: 2026-10-18
@@ -59,49 +59,49 @@ sources:
     checkedAt: 2026-10-18
   - field: urls
     url: https://tempestphp.com/docs/getting-started/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: firstRelease
     url: https://packagist.org/packages/tempest/framework
     checkedAt: 2026-10-18
   - field: maintainer
     url: https://tempestphp.com/3.x/extra-topics/governance
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: maintainerType
     url: https://tempestphp.com/3.x/extra-topics/governance
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: category
     url: https://tempestphp.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: language
     url: https://github.com/tempestphp/tempest-framework
     checkedAt: 2026-10-18
   - field: runtime
     url: https://tempestphp.com/3.x/getting-started/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtimeMin
     url: https://repo.packagist.org/p2/tempest/framework.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtimeMin
     url: https://tempestphp.com/3.x/getting-started/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: contentStore
     url: https://tempestphp.com/3.x/essentials/database
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: databases
     url: https://tempestphp.com/3.x/essentials/database
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: templating
     url: https://tempestphp.com/3.x/essentials/views
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: i18n
     url: https://tempestphp.com/3.x/features/localization
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: renderingModes
     url: https://tempestphp.com/3.x/features/static-pages
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: installMethod
     url: https://tempestphp.com/3.x/getting-started/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: license
     url: https://github.com/tempestphp/tempest-framework
     checkedAt: 2026-10-18
@@ -122,10 +122,10 @@ sources:
     checkedAt: 2026-10-18
   - field: packagistDownloads
     url: https://packagist.org/packages/tempest/framework
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runsAs
     url: https://tempestphp.com/3.x/extra-topics/deployments
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-21
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/tempest%2Fframework
     checkedAt: 2026-10-25
