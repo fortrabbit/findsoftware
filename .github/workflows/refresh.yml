@@ -52,7 +52,7 @@ jobs:
           path: node_modules/.cache/findsoftware-og
           key: og-cards-${{ github.sha }}
           restore-keys: og-cards-
-      - run: pnpm run format
+      # No format step: the routine writes only files Prettier ignores.
       - run: pnpm run check
       - run: pnpm run test
       - run: pnpm run build

@@ -101,6 +101,7 @@ describe('a reading', () => {
     assert.equal(same('currentMajor', 'v5.2', 5), true);
     assert.equal(same('githubStargazers', '1,200', 1200), true);
     assert.equal(same('npmName', 'Astro', 'astro'), true);
+    assert.equal(same('homepage', 'https://www.getzola.org/', 'https://www.getzola.org'), true);
   });
 
   it('never moves a date or major back', () => {

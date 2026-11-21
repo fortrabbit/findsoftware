@@ -366,7 +366,8 @@ export function same(field: string, old: unknown, next: unknown): boolean {
           .match(/\d+(?:\.\d+)?/)?.[0],
       ) === next
     );
-  return String(old).toLowerCase() === String(next).toLowerCase();
+  const plain = (value: unknown) => String(value).toLowerCase().replace(/\/$/, '');
+  return plain(old) === plain(next);
 }
 
 /** Whether a forward-only reading went back: an older date, a lower major, fewer contributors. */

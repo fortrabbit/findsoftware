@@ -59,6 +59,8 @@ const normalize = (text, markup = false) =>
     .replace(/[–—]/g, '-')
     .replace(/[*_#>|\\]/g, ' ')
     .replace(/\s+/g, ' ')
+    // A tag closed right before punctuation leaves a space the page never shows.
+    .replace(/ ([.,;:!?)])/g, '$1')
     .trim()
     .toLowerCase();
 

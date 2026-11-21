@@ -23,7 +23,7 @@ Start on main, up to date:
 
 ```sh
 git fetch origin
-git checkout -B work origin/main
+git checkout --no-track -B work origin/main
 pnpm install --frozen-lockfile
 export GITHUB_TOKEN="${GITHUB_TOKEN:-$(gh auth token 2>/dev/null)}"
 ```
@@ -81,6 +81,8 @@ Then go to step 8 and log it `unreadable`.
 Do not search for a replacement page. A redirect within the same domain is followed and read; the fact keeps its URL unless the old one no longer answers, and then the new URL is written and the record goes to review. A redirect to another domain is read for what it says (step 6) and never becomes a source.
 
 ## 5. Compare
+
+First run `node scripts/check-quotes.mjs <id>`. It prints only the quotes a page no longer contains; a quoted fact it passes still holds. Read the pages for the rest: the facts without a quote and the failures.
 
 For every `via: page` fact whose page was read:
 
@@ -150,7 +152,7 @@ It prints `merge` or `review`, with the reasons. Nothing staged counts as `merge
 ```sh
 git stash push -- research/facts/<id>.yml
 git fetch --prune origin
-git checkout -B <lane> origin/<lane> 2>/dev/null || git checkout -B <lane> origin/main
+git checkout --no-track -B <lane> origin/<lane> 2>/dev/null || git checkout --no-track -B <lane> origin/main
 git stash pop
 ```
 
@@ -161,8 +163,8 @@ On the merge lane, append `<today>\t<id>\t<outcome>\t<note>` to `research/refres
 ```sh
 git add research/facts/<id>.yml research/refresh-log.tsv
 git commit
-git push origin <lane>
-git checkout -B work origin/main
+git push origin HEAD:refs/heads/<lane>
+git checkout --no-track -B work origin/main
 ```
 
 ## 9. Pull request
