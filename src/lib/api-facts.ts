@@ -443,7 +443,10 @@ export function applyChanges(text: string, changes: Change[], date: string): str
     }
     const valueAt = lines.findIndex((line, at) => at > from && at < to && /^ {4}value: \S/.test(line));
     if (valueAt < 0 || /^ {4}value: [|>[]/.test(lines[valueAt]) || /^ {5}/.test(lines[valueAt + 1] ?? '')) return null;
-    lines[valueAt] = `    value: ${scalar(value, /^ {4}value: ["']/.test(lines[valueAt]))}`;
+    const written = scalar(value, /^ {4}value: ["']/.test(lines[valueAt]));
+    /* A flow map keeps the spacing it was written with: {a: 1} stays tight. */
+    const tight = /^ {4}value: \{\S/.test(lines[valueAt]);
+    lines[valueAt] = `    value: ${tight ? written.replace(/^\{ /, '{').replace(/ \}$/, '}') : written}`;
   }
   const top = lines.findIndex((line) => line.startsWith('checkedAt: '));
   if (top < 0) return null;

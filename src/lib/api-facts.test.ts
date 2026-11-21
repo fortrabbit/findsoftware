@@ -180,7 +180,7 @@ describe('writing a fact file', () => {
       file
         .replaceAll('2026-10-18', '2026-11-20')
         .replace('63303', '64000')
-        .replace('{total: 1, monthly: 2}', '{ total: 10, monthly: 20 }')
+        .replace('{total: 1, monthly: 2}', '{total: 10, monthly: 20}')
         .replace('"2026-10-15"', '"2026-11-18"')
         .replace('astro@5.1.0', 'astro@5.2.0'),
     );
@@ -201,6 +201,24 @@ describe('writing a fact file', () => {
       applyChanges(file.replace('  - field: latestReleaseDate', '  - field: latest release date'), [{ index: 0 }], 'x'),
       null,
     );
+  });
+});
+
+describe('a flow value', () => {
+  it('keeps its spacing', () => {
+    const text = [
+      'id: a',
+      'checkedAt: 2026-10-01',
+      'facts:',
+      '  - field: pypiDownloads',
+      '    value: {lastWeek: 1, lastMonth: 2}',
+      '    url: https://pypistats.org/api/packages/a/recent',
+      '    checkedAt: 2026-10-01',
+      '    via: api',
+      '',
+    ].join('\n');
+    const result = applyChanges(text, [{ index: 0, value: { lastWeek: 3, lastMonth: 4 } }], '2026-11-21');
+    assert.match(result ?? '', /value: \{lastWeek: 3, lastMonth: 4\}\n/);
   });
 });
 

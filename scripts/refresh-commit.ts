@@ -34,6 +34,25 @@ const passes = (cmd: string, ...args: string[]) => {
     return false;
   }
 };
+type Fact = { via?: string; checkedAt?: unknown; [key: string]: unknown };
+
+/** What the run did to each kind of fact, counted rather than told: "page 14 confirmed, 1 changed, 0 left; ...". */
+function tally(before: string, after: string) {
+  const [a, b] = [before, after].map((doc) => (parse(doc)?.facts ?? []) as Fact[]);
+  const counts: Record<string, number[]> = {};
+  for (const [index, is] of b.entries()) {
+    const { checkedAt, ...rest } = is;
+    const { checkedAt: wasChecked, ...wasRest } = a[index] ?? {};
+    const slot = (counts[is.via ?? 'other'] ??= [0, 0, 0]);
+    if (JSON.stringify(rest) !== JSON.stringify(wasRest)) slot[1]++;
+    else if (checkedAt !== wasChecked) slot[0]++;
+    else slot[2]++;
+  }
+  return Object.entries(counts)
+    .map(([via, [confirmed, changed, left]]) => `${via} ${confirmed} confirmed, ${changed} changed, ${left} left`)
+    .join('; ');
+}
+
 /* The guard cannot fetch pages: a quote this run wrote must be on its page, or a person reads it. */
 function unquoted(after: string) {
   const quotes = (doc: string) =>
@@ -95,6 +114,7 @@ try {
       if (status !== 1) throw error;
       [lane, reasons] = ['claude/refresh-review', String(stdout).trim()];
     }
+    note = tally(git('show', `HEAD:${path}`), text);
     if (lane === 'claude/refresh') reasons = unquoted(text);
     if (reasons) lane = 'claude/refresh-review';
     git('reset', '-q', '--', path);
@@ -105,7 +125,7 @@ try {
   const subject = outcome === 'confirmed' ? `Refresh ${name}, read ${date}` : `Log ${name} as ${outcome}, ${date}`;
   const message = [
     subject,
-    [body, note, reasons].filter(Boolean).join('\n\n'),
+    [note, body, reasons].filter(Boolean).join('\n\n'),
     'Co-Authored-By: Claude <noreply@anthropic.com>',
   ]
     .filter(Boolean)

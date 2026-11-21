@@ -6,6 +6,7 @@
  *
  * GITHUB_TOKEN raises GitHub's limit from 60 to 5,000 calls an hour.
  */
+import { execFileSync } from 'node:child_process';
 import { readFileSync, writeFileSync } from 'node:fs';
 import { parse } from 'yaml';
 import {
@@ -26,6 +27,18 @@ const date = new Date().toISOString().slice(0, 10);
 if (!ids.length) {
   console.error('usage: node scripts/refresh-api.ts [--dry] <id> ...');
   process.exit(1);
+}
+
+/* Each agent shell starts fresh, so the token is looked up here rather than exported once. */
+if (!process.env.GITHUB_TOKEN) {
+  try {
+    process.env.GITHUB_TOKEN = execFileSync('gh', ['auth', 'token'], {
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'ignore'],
+    }).trim();
+  } catch {
+    /* No gh: GitHub's anonymous limit applies. */
+  }
 }
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -155,7 +168,7 @@ for (const id of ids) {
         continue;
       }
       changes.push({ index, value, url });
-      notes.push(`changed: ${fact.field} ${show(fact.value)} → ${show(value)}${url ? ` from ${url}` : ''}`);
+      notes.push(`changed: ${fact.field} ${show(fact.value)} → ${show(value)} (${url ?? reader.call})`);
     }
   }
 
