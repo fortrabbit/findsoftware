@@ -38,9 +38,9 @@ installMethod: pip install wagtail, wagtail start
 licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "8"
-latestReleaseDate: 2026-08-25
-githubStargazers: 20574
-contributors: 1123
+latestReleaseDate: 2026-11-02
+githubStargazers: 20722
+contributors: 1131
 ecosystemsMonthlyDownloads: 586863
 httpArchiveSites: 6309
 dependentRepos: 1955
@@ -51,11 +51,11 @@ social:
   youtube: https://www.youtube.com/channel/UCXsuEmvisPzuJPaIdpVM0yg
 wikidata: Q25206006
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-21
 sources:
   - field: name
     url: https://docs.wagtail.org/en/stable/getting_started/index.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://pypi.org/pypi/wagtail/json
     checkedAt: 2026-10-18
@@ -70,79 +70,79 @@ sources:
     checkedAt: 2026-10-18
   - field: maintainer
     url: https://raw.githubusercontent.com/wagtail/wagtail/main/LICENSE
-    checkedAt: 2026-10-20
+    checkedAt: 2026-11-21
   - field: maintainerType
     url: https://wagtail.org/about-wagtail/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: hqCountry
     url: https://torchbox.com/contact/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q25206006
     checkedAt: 2026-10-18
   - field: category
     url: https://docs.wagtail.org/en/stable/advanced_topics/headless.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: basedOn
     url: https://docs.wagtail.org/en/stable/getting_started/index.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: language
     url: https://github.com/wagtail/wagtail
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtime
     url: https://docs.wagtail.org/en/stable/getting_started/quick_install.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtimeMin
     url: https://pypi.org/pypi/wagtail/json
     checkedAt: 2026-10-18
   - field: contentStore
     url: https://docs.wagtail.org/en/stable/deployment/index.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: adminUi
     url: https://docs.wagtail.org/en/stable/reference/jinja2.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: headlessApi
     url: https://docs.wagtail.org/en/stable/advanced_topics/headless.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: headlessApi
     url: https://docs.wagtail.org/en/stable/advanced_topics/api/index.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: templating
     url: https://docs.wagtail.org/en/stable/reference/jinja2.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: i18n
     url: https://docs.wagtail.org/en/stable/advanced_topics/i18n.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: renderingModes
     url: https://docs.wagtail.org/en/stable/deployment/index.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: installMethod
     url: https://docs.wagtail.org/en/stable/getting_started/quick_install.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: license
     url: https://github.com/wagtail/wagtail
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: licenseModel
     url: https://wagtail.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: currentMajor
     url: https://github.com/wagtail/wagtail/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: latestReleaseDate
     url: https://github.com/wagtail/wagtail/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: githubStargazers
     url: https://github.com/wagtail/wagtail
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: contributors
     url: https://api.github.com/repos/wagtail/wagtail/contributors?anon=true
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://wagtail.org/packages/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runsAs
     url: https://docs.wagtail.org/en/stable/deployment/index.html
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-21
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25
