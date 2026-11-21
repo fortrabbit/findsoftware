@@ -69,6 +69,23 @@ const fetchOnce = (url: string) => {
 };
 
 const show = (value: unknown) => JSON.stringify(value);
+
+/** The repository and package documents that carry archived, deprecated and abandoned flags. */
+function signalSources(facts: Fact[]) {
+  const sources = new Set<string>();
+  for (const fact of facts) {
+    if (fact.via !== 'api') continue;
+    const repo = String(fact.url ?? '').match(
+      /^https:\/\/(?:api\.github\.com\/repos|github\.com)\/([^/#?]+)\/([^/#?]+)/,
+    );
+    if (repo) sources.add(`https://api.github.com/repos/${repo[1]}/${repo[2].replace(/\.git$/, '')}`);
+    if (fact.field === 'npmName' && typeof fact.value === 'string')
+      sources.add(`https://registry.npmjs.org/${fact.value.replace('/', '%2F')}/latest`);
+    if (fact.field === 'packagistName' && typeof fact.value === 'string')
+      sources.add(`https://packagist.org/packages/${fact.value}.json`);
+  }
+  return sources;
+}
 let failed = false;
 
 for (const id of ids) {
@@ -81,22 +98,31 @@ for (const id of ids) {
     failed = true;
     continue;
   }
-  const doc = parse(text);
-  const facts: Fact[] = doc.facts ?? [];
+  let doc;
+  try {
+    doc = parse(text);
+  } catch {
+    doc = undefined;
+  }
+  if (!doc || !Array.isArray(doc.facts)) {
+    console.log(`${id}: not a fact file`);
+    failed = true;
+    continue;
+  }
+  const facts: Fact[] = doc.facts;
   const changes: Change[] = [];
   const notes: string[] = [];
   const skipped = new Map<string, number>();
-  const calls = new Set<string>();
   let confirmed = 0;
 
   for (const [index, fact] of facts.entries()) {
     if (fact.via !== 'api') continue;
     const reader = readerFor(fact);
     if ('skip' in reader) {
-      if (reader.skip !== 'stable') skipped.set(reader.skip, (skipped.get(reader.skip) ?? 0) + 1);
+      if (reader.skip !== 'stable' && reader.skip !== 'adoption')
+        skipped.set(reader.skip, (skipped.get(reader.skip) ?? 0) + 1);
       continue;
     }
-    calls.add(reader.call);
     const answer = await fetchOnce(reader.call);
     if (answer.status === 404 || answer.status === 410) {
       notes.push(`gone: ${fact.field} source ${reader.call} answers ${answer.status}`);
@@ -138,11 +164,20 @@ for (const id of ids) {
     }
   }
 
-  /* Criterion 4 signals the routine decides on, read from answers already fetched. */
-  for (const url of calls) {
-    const body = (await fetchOnce(url)).json as Record<string, any> | undefined;
-    if (body?.archived === true && doc.status !== 'discontinued') notes.push(`archived: ${body.html_url}`);
-    if (typeof body?.deprecated === 'string') notes.push(`deprecated: ${body.name}: ${body.deprecated}`);
+  /* Criterion 4 signals, read from each repository and package the file names. */
+  if (doc.status !== 'discontinued') {
+    const plugin = facts.some((fact) => fact.field === 'pluginOf') ? ' (a plugin: stub is for a person)' : '';
+    for (const url of signalSources(facts)) {
+      const answer = await fetchOnce(url);
+      const body = answer.json as Record<string, any> | undefined;
+      if (body?.archived === true) notes.push(`archived: ${body.html_url}${plugin}`);
+      if (typeof body?.deprecated === 'string') notes.push(`deprecated: ${body.name}: ${body.deprecated}${plugin}`);
+      const abandoned = body?.package?.abandoned;
+      if (abandoned)
+        notes.push(
+          `abandoned: ${body.package.name}${typeof abandoned === 'string' ? `, use ${abandoned}` : ''}${plugin}`,
+        );
+    }
   }
 
   const result = applyChanges(text, changes, date);

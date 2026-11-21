@@ -1,7 +1,8 @@
 # The refresh routine's merge lane. The routine pushes fact files that moved only
 # dates and sourced values to claude/refresh; this checks them against the same
 # rule the routine used, regenerates the records, builds, and merges into main.
-# What fails the rule goes to claude/refresh-review, which this never touches.
+# A run that fails moves the lane onto claude/refresh-review with a pull request,
+# so one bad commit never holds back the days after it.
 #
 # Pushes to main from here carry the default token, so they trigger no other
 # workflow, CI included. That is why the full CI runs here before the push.
@@ -13,6 +14,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 # Two runs merging into main at once would race the checkout and the push. A run
 # waiting here is replaced by a newer push, which carries the same commits and more.
@@ -35,13 +37,12 @@ jobs:
           node-version: 24
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      # A failure means the routine put something on the merge lane the rule
-      # sends to review; the run goes red and a person looks.
+      - run: |
+          git config user.name "FindSoftware refresh"
+          git config user.email "noreply@github.com"
       - run: node scripts/refresh-guard.ts origin/main HEAD
       - name: Merge and regenerate the records
         run: |
-          git config user.name "FindSoftware refresh"
-          git config user.email "noreply@github.com"
           git checkout main
           git merge --no-ff "$GITHUB_SHA" -m "Merge sourced changes from the refresh routine"
           node scripts/import-facts.mjs "$(date -u +%F)"
@@ -67,3 +68,23 @@ jobs:
           git push origin main
           git push --force-with-lease="claude/refresh:$GITHUB_SHA" origin :claude/refresh ||
             echo "claude/refresh moved since this run started; its own run merges it."
+      - name: Hand the lane to a person
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          git reset -q --hard
+          git fetch origin
+          git checkout --no-track -B review origin/claude/refresh-review 2>/dev/null ||
+            git checkout --no-track -B review origin/main
+          git merge --no-edit "$GITHUB_SHA"
+          git push origin HEAD:refs/heads/claude/refresh-review
+          git push --force-with-lease="claude/refresh:$GITHUB_SHA" origin :claude/refresh || true
+          if [ -z "$(gh pr list --head claude/refresh-review --state open --json number --jq '.[].number')" ]; then
+            gh pr create --head claude/refresh-review --base main \
+              --title "Refresh for review: $(date -u +%F)" \
+              --body "$(printf '🤖\nThe refresh Action failed on the merge lane, so its commits moved here: %s\n🤖\n' "$RUN_URL")"
+          else
+            gh pr comment claude/refresh-review --body "$(printf '🤖\nThe merge lane failed again and moved here: %s\n🤖\n' "$RUN_URL")"
+          fi

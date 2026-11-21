@@ -1,0 +1,20 @@
+# The review lane starts over once its pull request is merged or closed. A branch
+# kept after a squash merge would still differ from main, and refresh-pick.mjs
+# would skip its files for good.
+name: Refresh review closed
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+
+jobs:
+  reset:
+    if: github.head_ref == 'claude/refresh-review'
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X DELETE "repos/${{ github.repository }}/git/refs/heads/claude/refresh-review" || true

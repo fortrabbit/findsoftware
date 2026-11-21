@@ -35,6 +35,8 @@ const changed = (staged ? git('diff', '--cached', '--name-only') : git('diff', '
   .split('\n')
   .filter(Boolean);
 const problems: string[] = [];
+/* A fact file a person changed on the base after the lane branched is judged against what the lane saw. */
+const from = staged ? base : git('merge-base', base, head).trim();
 
 for (const path of changed) {
   if (confirmationFiles.has(path)) continue;
@@ -42,7 +44,7 @@ for (const path of changed) {
     problems.push(`${path}: not a fact file`);
     continue;
   }
-  const before = at(base, path);
+  const before = at(from, path);
   const after = at(staged ? '' : head, path);
   if (!before || !after) problems.push(`${path}: added or removed`);
   else {

@@ -36,19 +36,23 @@ const days = arg('days', 60);
 
 const since = new Date(Date.now() - days * 86400000).toISOString().slice(0, 10);
 const recent = new Set();
-if (existsSync(logFile)) {
-  for (const line of readFileSync(logFile, 'utf8').split('\n')) {
-    const [date, id] = line.split('\t');
-    if (date && id && date >= since) recent.add(id);
-  }
+const git = (...args) => execFileSync('git', args, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
+
+/* The merge lane's log as well: while its Action is red, main does not have those lines yet. */
+const logs = [existsSync(logFile) ? readFileSync(logFile, 'utf8') : ''];
+try {
+  logs.push(git('show', `origin/claude/refresh:${logFile}`));
+} catch {
+  /* No merge lane waiting. */
+}
+for (const line of logs.join('\n').split('\n')) {
+  const [date, id] = line.split('\t');
+  if (date && id && date >= since) recent.add(id);
 }
 
 /* Fact files changed on the review branch and not yet merged: somebody is reading those. */
 try {
-  const changed = execFileSync('git', ['diff', '--name-only', 'origin/main...origin/claude/refresh-review'], {
-    encoding: 'utf8',
-    stdio: ['ignore', 'pipe', 'ignore'],
-  });
+  const changed = git('diff', '--name-only', 'origin/main...origin/claude/refresh-review');
   for (const path of changed.split('\n')) {
     const match = path.match(/^research\/facts\/(.+)\.yml$/);
     if (match) recent.add(match[1]);

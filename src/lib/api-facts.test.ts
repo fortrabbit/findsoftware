@@ -61,6 +61,32 @@ describe('a reader', () => {
     assert.equal(r.move?.(answer), 'https://api.npmjs.org/downloads/range/2026-11-09:2026-11-15/ace-builds');
   });
 
+  it('moves a week named by its first date and the last day', () => {
+    const fact = api(
+      'npmWeeklyDownloads',
+      'https://api.npmjs.org/downloads/range/2026-10-23:2026-10-29/accent-cli',
+      '8459 (2026-10-23..29)',
+    );
+    const answer = { status: 200, json: { downloads: 9000, start: '2026-11-09', end: '2026-11-15' } };
+    assert.equal(reader(fact).read(answer, fact, ''), '9000 (2026-11-09..2026-11-15)');
+  });
+
+  it('reads a Packagist name with a dot', () => {
+    const fact = api('packagistDownloads', 'https://packagist.org/packages/daux/daux.io.json', '5 (monthly)');
+    assert.equal(reader(fact).call, 'https://packagist.org/packages/daux/daux.io.json');
+  });
+
+  it('leaves a bare figure whose period is unknown', () => {
+    const fact = api('packagistDownloads', 'https://packagist.org/packages/acquia/acquia_cms.json', '462103');
+    const answer = { status: 200, json: { package: { downloads: { total: 462000, monthly: 9000 } } } };
+    assert.equal(reader(fact).read(answer, fact, ''), undefined);
+  });
+
+  it('says a repository went private', () => {
+    const fact = api('sourcePublic', 'https://api.github.com/repos/a/b', true);
+    assert.equal(reader(fact).read({ status: 200, json: { private: true } }, fact, ''), false);
+  });
+
   it('re-reads each period of a figure kept per period', () => {
     const fact = api('packagistDownloads', 'https://packagist.org/packages/laravel/framework.json', {
       total: 1,
@@ -175,5 +201,31 @@ describe('writing a fact file', () => {
       applyChanges(file.replace('  - field: latestReleaseDate', '  - field: latest release date'), [{ index: 0 }], 'x'),
       null,
     );
+  });
+});
+
+describe('a block value', () => {
+  it('is written back as one line', () => {
+    const text = [
+      'id: a',
+      'checkedAt: 2026-10-01',
+      'facts:',
+      '  - field: packagistDownloads',
+      '    value:',
+      '      total: 141',
+      '      monthly: 5',
+      '    url: https://packagist.org/packages/a/a.json',
+      '    checkedAt: 2026-10-01',
+      '    via: api',
+      '  - field: language',
+      '    value: PHP',
+      '    url: https://api.github.com/repos/a/a',
+      '    checkedAt: 2026-10-01',
+      '    via: api',
+      '',
+    ].join('\n');
+    const result = applyChanges(text, [{ index: 0, value: { total: 150, monthly: 9 } }, { index: 1 }], '2026-11-21');
+    assert.match(result ?? '', /value: \{ total: 150, monthly: 9 \}\n/);
+    assert.match(result ?? '', /value: PHP\n.*\n    checkedAt: 2026-11-21/);
   });
 });
