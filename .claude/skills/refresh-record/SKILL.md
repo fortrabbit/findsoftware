@@ -149,6 +149,7 @@ It prints `merge` or `review`, with the reasons. Nothing staged counts as `merge
 
 ```sh
 git stash push -- research/facts/<id>.yml
+git fetch --prune origin
 git checkout -B <lane> origin/<lane> 2>/dev/null || git checkout -B <lane> origin/main
 git stash pop
 ```

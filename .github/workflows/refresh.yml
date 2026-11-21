@@ -1,0 +1,68 @@
+# The refresh routine's merge lane. The routine pushes fact files that moved only
+# dates and sourced values to claude/refresh; this checks them against the same
+# rule the routine used, regenerates the records, builds, and merges into main.
+# What fails the rule goes to claude/refresh-review, which this never touches.
+#
+# Pushes to main from here carry the default token, so they trigger no other
+# workflow, CI included. That is why the full CI runs here before the push.
+name: Refresh
+
+on:
+  push:
+    branches: [claude/refresh]
+
+permissions:
+  contents: write
+
+# Two runs merging into main at once would race the checkout and the push. A run
+# waiting here is replaced by a newer push, which carries the same commits and more.
+concurrency:
+  group: refresh-merge
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v4
+        with:
+          version: latest
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      # A failure means the routine put something on the merge lane the rule
+      # sends to review; the run goes red and a person looks.
+      - run: node scripts/refresh-guard.ts origin/main HEAD
+      - name: Merge and regenerate the records
+        run: |
+          git config user.name "FindSoftware refresh"
+          git config user.email "noreply@github.com"
+          git checkout main
+          git merge --no-ff "$GITHUB_SHA" -m "Merge sourced changes from the refresh routine"
+          node scripts/import-facts.mjs "$(date -u +%F)"
+          git add src/content/software
+          git diff --cached --quiet || git commit -m "Regenerate records from the refreshed fact files"
+      - uses: actions/cache@v4
+        with:
+          path: node_modules/.cache/findsoftware-og
+          key: og-cards-${{ github.sha }}
+          restore-keys: og-cards-
+      - run: pnpm run format
+      - run: pnpm run check
+      - run: pnpm run test
+      - run: pnpm run build
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm run test:e2e
+      - run: pnpm run validate
+      - run: pnpm run linkcheck:internal
+      # The lease deletes the branch only if nothing was pushed to it since this
+      # run started; a newer push has its own run waiting, which merges it.
+      - name: Push main
+        run: |
+          git push origin main
+          git push --force-with-lease="claude/refresh:$GITHUB_SHA" origin :claude/refresh
