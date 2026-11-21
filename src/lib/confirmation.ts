@@ -136,46 +136,4 @@ export function reviewReasons(before: string, after: string): string[] {
   return reasons;
 }
 
-export const isSelfMerging = (before: string, after: string) => reviewReasons(before, after).length === 0;
-
-/** The files a self-merging push may touch besides fact files. */
-export const confirmationFiles = new Set(['research/refresh-log.tsv']);
-
 export const isFactFile = (path: string) => /^research\/facts\/[^/]+\.yml$/.test(path);
-
-/*
- * Record helpers for scripts/landed.ts, which reads what moved on the generated
- * records after a push.
- */
-const date = /checkedAt: \d{4}-\d{2}-\d{2}/g;
-
-/** The record with every `checkedAt` date blanked, and a bare `checkedAt:` line dropped. */
-export function withoutDates(record: string): string {
-  return record
-    .replace(date, 'checkedAt: DATE')
-    .split('\n')
-    .filter((line) => line !== 'checkedAt: DATE')
-    .join('\n');
-}
-
-/**
- * Frontmatter as one block of text per top-level key, dates blanked. A key owns
- * the lines indented under it, so `regions:` and its list are one block.
- */
-function blocks(frontmatter: string): Map<string, string> {
-  const byKey = new Map<string, string>();
-  let key = '';
-  for (const line of withoutDates(frontmatter).split('\n')) {
-    const start = line.match(/^([A-Za-z]\w*):/);
-    if (start) key = start[1];
-    byKey.set(key, (byKey.get(key) ?? '') + line + '\n');
-  }
-  return byKey;
-}
-
-/** The top-level keys whose value differs, ignoring `checkedAt` dates. */
-export function changedFields(before: string, after: string): string[] {
-  const [a, b] = [blocks(before), blocks(after)];
-  const keys = new Set([...a.keys(), ...b.keys()]);
-  return [...keys].filter((key) => key && a.get(key) !== b.get(key));
-}

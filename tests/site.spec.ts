@@ -55,10 +55,10 @@ test.describe('the register', () => {
    */
   test('puts a space between a number and the noun it counts', async ({ page }) => {
     await page.goto('/');
-    await expect(page.locator('[data-find-count]')).toHaveText(/^\d+ projects?\.$/);
+    await expect(page.locator('[data-find-count]')).toHaveText(/^[\d,]+ with momentum\.?$/);
 
     for (const link of await page.locator('[data-find-aside] a').all()) {
-      await expect(link).toHaveText(/^\d+ [A-Za-z]/);
+      await expect(link).toHaveText(/^[\d,]+ [A-Za-z]/);
     }
 
     await page.goto('/categories/');
@@ -163,7 +163,7 @@ test.describe('a facet and its values', () => {
     await page.goto('/categories/cms/');
 
     await expect(page.locator('h1')).toHaveText('Content management systems');
-    await expect(page.locator('.crumb a[href="/categories/"]')).toBeVisible();
+    await expect(page.locator('.crumb a[href="/categories/"]:not(.crumb-key)')).toBeVisible();
 
     /* Position on a list that names its subject is not ranking, so the list says how it is ordered. */
     await expect(page.locator('.annotation').first()).toContainText('alphabetically');
@@ -458,11 +458,8 @@ test.describe('filtering', () => {
     await expect(shown).not.toHaveCount(listed);
     await expect(page.locator('[data-find-count]')).toHaveText(new RegExp(`^${await shown.count()} of ${listed} `));
 
-    /*
-     * The count and the groups beside the register share a paragraph, and only
-     * the count is a function of the filters.
-     */
-    await expect(page.locator('[data-find-aside] a[href="/stubs/"]')).toBeVisible();
+    /* The aside is about the whole register, so it goes while a filter narrows it. */
+    await expect(page.locator('[data-find-aside]')).toBeHidden();
   });
 
   /* The script and the value page narrow the same list the same way. */
@@ -502,6 +499,7 @@ test.describe('filtering', () => {
 
     const row = page.locator(rows).first();
     const id = await row.getAttribute('data-record');
+    await page.locator('[data-list-style] button[value=extended]').click();
     await expect(row.locator('.provider-tile')).toBeVisible();
 
     await page.locator('[data-list-style] button[value=slim]').click();

@@ -13,7 +13,7 @@
  *   is written. Dates, majors and contributor counts only move forward; one that goes back is reported.
  * - confirm: a name or a flag. Re-dated when the source still says it, reported
  *   when it says something else, never rewritten by a script.
- * - skip: no reader, or a stable figure (first release, a judged license model).
+ * - skip: no reader, or a field kept as it is.
  *
  * A fact pinned to one release tag or one week of downloads is read at the
  * latest one, and its URL moves there with the new value.
@@ -60,7 +60,7 @@ export function majorOf(version: unknown): number | undefined {
   return major !== undefined && major < 1990 ? major : undefined;
 }
 
-/** A figure with several periods, picked by the words after the old figure, else the one nearest to it. */
+/** A figure with several periods, picked by the words after the old figure; without them the period is unknown. */
 function period(old: unknown, periods: Record<string, number | undefined>, words: Record<string, RegExp>) {
   /* A figure kept per period ({ total, monthly }): each period re-read, other keys kept. */
   if (old && typeof old === 'object' && !Array.isArray(old)) {
@@ -72,16 +72,7 @@ function period(old: unknown, periods: Record<string, number | undefined>, words
   }
   const suffix = typeof old === 'string' ? old.replace(/^[\d,.]+/, '') : '';
   for (const [key, pattern] of Object.entries(words)) if (pattern.test(suffix)) return periods[key];
-  const held = Number(
-    String(old)
-      .replace(/,/g, '')
-      .match(/\d+(?:\.\d+)?/)?.[0],
-  );
-  if (!Number.isFinite(held) || held <= 0) return undefined;
-  const near = Object.values(periods)
-    .filter((value): value is number => typeof value === 'number' && value > 0)
-    .sort((a, b) => Math.abs(Math.log(a / held)) - Math.abs(Math.log(b / held)));
-  return near[0];
+  return undefined;
 }
 
 const firstStable = (releases: unknown) =>
@@ -145,7 +136,11 @@ function github(fact: Fact, url: URL): Reader | Skip {
     case 'repository':
       return { kind: 'confirm', call: base, read: (a) => body(a).html_url };
     case 'sourcePublic':
-      return { kind: 'confirm', call: base, read: (a) => (body(a).private === false ? true : undefined) };
+      return {
+        kind: 'confirm',
+        call: base,
+        read: (a) => (typeof body(a).private === 'boolean' ? !body(a).private : undefined),
+      };
     case 'status':
       return { kind: 'confirm', call: base, read: (a) => (body(a).archived ? 'discontinued' : 'active') };
     case 'contributors':
@@ -197,8 +192,15 @@ function npm(fact: Fact, url: URL): Reader | Skip {
         if (typeof downloads !== 'number') return undefined;
         if (typeof f.value === 'number') return downloads;
         if (typeof f.value !== 'string' || !figure.test(f.value)) return undefined;
-        const dates = [body(a).start, body(a).end];
-        return f.value.replace(figure, String(downloads)).replace(/\d{4}-\d{2}-\d{2}/g, () => dates.shift() ?? '');
+        const { start, end } = body(a);
+        const value = f.value.replace(figure, String(downloads));
+        /* "2026-10-23..29" names the end by its day only. */
+        if (/\d{4}-\d{2}-\d{2}\.\.\d{2}(?!\d)/.test(value))
+          return value.replace(/\d{4}-\d{2}-\d{2}\.\.\d{2}(?!\d)/, `${start}..${end}`);
+        const dates = value.match(/\d{4}-\d{2}-\d{2}/g) ?? [];
+        if (dates.length === 1) return undefined;
+        const next = [start, end];
+        return value.replace(/\d{4}-\d{2}-\d{2}/g, () => next.shift() ?? '');
       },
     };
   }
@@ -233,7 +235,7 @@ function npm(fact: Fact, url: URL): Reader | Skip {
 }
 
 function packagist(fact: Fact, url: URL): Reader | Skip {
-  const name = url.pathname.match(/^\/(?:packages|p2)\/([^/]+\/[^/.]+)/)?.[1];
+  const name = url.pathname.match(/^\/(?:packages|p2)\/([^/]+\/[^/]+?)(?:\.json)?(?:\/.*)?$/)?.[1];
   if (!name) return { skip: 'not a package url' };
   const meta = `https://repo.packagist.org/p2/${name}.json`;
   const stable = (a: Answer) =>
@@ -319,12 +321,21 @@ function registry(fact: Fact, url: URL): Reader | Skip {
   return { skip: 'no reader' };
 }
 
-/* Stable once recorded, or a judgement rather than a reading. */
-const stable = new Set(['firstRelease', 'licenseModel']);
+/* Not re-read: a first release and a judged license model do not change, and adoption.mjs owns its figures. */
+const kept = new Set([
+  'firstRelease',
+  'licenseModel',
+  'httpArchiveSites',
+  'dependentRepos',
+  'dependentPackages',
+  'ecosystemsMonthlyDownloads',
+  'packagistMonthlyDownloads',
+  'wordpressActiveInstalls',
+]);
 
 export function readerFor(fact: Fact): Reader | Skip {
   if (fact.via !== 'api' || !fact.url) return { skip: 'not an api fact' };
-  if (stable.has(fact.field)) return { skip: 'stable' };
+  if (kept.has(fact.field)) return { skip: 'kept' };
   let url: URL;
   try {
     url = new URL(fact.url);
@@ -366,13 +377,19 @@ export function same(field: string, old: unknown, next: unknown): boolean {
           .match(/\d+(?:\.\d+)?/)?.[0],
       ) === next
     );
-  const plain = (value: unknown) => String(value).toLowerCase().replace(/\/$/, '');
+  // GitHub reports the GPL family without its -only or -or-later suffix.
+  if (field === 'license' && String(old).startsWith(`${next}-`)) return true;
+  const plain = (value: unknown) =>
+    String(value)
+      .toLowerCase()
+      .replace(/^https?:\/\//, '')
+      .replace(/\/$/, '');
   return plain(old) === plain(next);
 }
 
 /** Whether a forward-only reading went back: an older date, a lower major, fewer contributors. */
 export function goesBack(field: string, old: unknown, next: unknown): boolean {
-  if (typeof next === 'number') return next < Number(String(old).match(/\d+/)?.[0]);
+  if (typeof next === 'number') return next < Number(String(old).replace(/,/g, '').match(/\d+/)?.[0]);
   return String(next) < String(old).slice(0, 10);
 }
 
@@ -404,7 +421,8 @@ export function applyChanges(text: string, changes: Change[], date: string): str
   if (starts.length !== (doc.facts ?? []).length) return null;
   const factsEnd = lines.findIndex((line, at) => at > lines.indexOf('facts:') && /^\S/.test(line));
 
-  for (const { index, value, url } of changes) {
+  /* Last fact first, so a block value folded into one line leaves the earlier starts where they are. */
+  for (const { index, value, url } of [...changes].sort((a, b) => b.index - a.index)) {
     const from = starts[index];
     const to = starts[index + 1] ?? (factsEnd < 0 ? lines.length : factsEnd);
     const dateAt = lines.findIndex((line, at) => at > from && at < to && line.startsWith('    checkedAt: '));
@@ -416,6 +434,13 @@ export function applyChanges(text: string, changes: Change[], date: string): str
       lines[urlAt] = `    url: ${scalar(url, /^ {4}url: ["']/.test(lines[urlAt]))}`;
     }
     if (value === undefined) continue;
+    const blockAt = lines.findIndex((line, at) => at > from && at < to && line === '    value:');
+    if (blockAt >= 0 && value && typeof value === 'object' && !Array.isArray(value)) {
+      let end = blockAt + 1;
+      while (end < to && /^ {6}/.test(lines[end])) end++;
+      lines.splice(blockAt, end - blockAt, `    value: ${scalar(value, false)}`);
+      continue;
+    }
     const valueAt = lines.findIndex((line, at) => at > from && at < to && /^ {4}value: \S/.test(line));
     if (valueAt < 0 || /^ {4}value: [|>[]/.test(lines[valueAt]) || /^ {5}/.test(lines[valueAt + 1] ?? '')) return null;
     lines[valueAt] = `    value: ${scalar(value, /^ {4}value: ["']/.test(lines[valueAt]))}`;

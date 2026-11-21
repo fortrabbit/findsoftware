@@ -1,6 +1,6 @@
 ---
 name: refresh-record
-description: Re-read the facts of one or more FindSoftware fact files against their sources, re-date what still holds, correct what a source now contradicts, set `discontinued` on a clear end signal, and push the result to the rolling `claude/refresh` branch. Use when asked to refresh, re-check or re-verify software records, or when running as the scheduled refresh routine (MR-411).
+description: Re-read the facts of one or more FindSoftware fact files against their sources, re-date what still holds, correct what a source now contradicts, set `discontinued` on a clear end signal, and push the result to the rolling `claude/refresh` branch. Use when asked to refresh, re-check or re-verify software records, or when running as the scheduled refresh routine.
 ---
 
 # Refresh a software record
@@ -28,12 +28,7 @@ pnpm install --frozen-lockfile
 export GITHUB_TOKEN="${GITHUB_TOKEN:-$(gh auth token 2>/dev/null)}"
 ```
 
-Two lanes, decided per record in step 8 by `scripts/refresh-guard.ts`:
-
-- **`claude/refresh`** merges on its own. It carries re-dated facts, changed values with the run's `checkedAt` and, for page facts, the quote that says it, a `discontinued` status with a fresh `status` fact, and the log.
-- **`claude/refresh-review`** waits for a person: a removed fact, a page URL that moved, a change to `description`, `name`, `notes` or `unreadable`, any status but `discontinued`. These should be rare.
-
-Never push to `main`. The rules both lanes follow are in `src/lib/confirmation.ts`.
+Two lanes, decided per record in step 8: **`claude/refresh`** merges on its own, **`claude/refresh-review`** waits for a person. The rule between them is `src/lib/confirmation.ts`. Never push to `main`.
 
 ## 2. Pick
 
@@ -43,7 +38,7 @@ node scripts/refresh-pick.mjs --n <N plus K>
 
 It prints a queue of ids, the fact file read longest ago first, skipping ids in `research/refresh-log.tsv` from the last sixty days and files waiting on the review branch. Do not pick by hand.
 
-The queue is attempts, not a batch. Take one id at a time, all the way through step 8, before starting the next. Stop when `N` records have been **reached** (step 4) or the queue runs out. The ids left in the queue come up again tomorrow.
+The queue is attempts, not a batch. Take one id at a time, all the way through step 8, before starting the next. Stop when `N` records have been **reached** (step 4), when `K` records were not reached, or when the queue runs out. The ids left in the queue come up again tomorrow.
 
 ## 3. API facts, by script
 
@@ -53,10 +48,11 @@ node scripts/refresh-api.ts <id>
 
 It re-reads every `via: api` fact it has a reader for, writes the file, and prints one line per thing it did not decide. No tokens go into these facts. Act on its report:
 
-- `archived:` or `deprecated:` is a criterion 4 signal; see step 6.
+- `archived:`, `deprecated:` or `abandoned:` is a criterion 4 signal; see step 6.
 - `differs: runtimeMin` means the registry now states another minimum. Write that value in the old value's form (`node >=22.23.4` stays `node >=22.23.4`, not `>=22.23.4`), with today's `checkedAt`. It stays `via: api`.
 - Any other `differs:`, `goes back:`, `gone:` or `no answer:` goes into the report as it is. Do not edit those facts.
 - `GitHub limit reached` means the token is missing or spent. Report it and carry on with the pages; the API facts come up again next year.
+- Exit 1 with `not a fact file` or `not written` means the file needs a person: log it `stopped` (step 8) with that line as the note.
 
 ## 4. Read the pages
 
@@ -68,15 +64,9 @@ curl -sL -A 'FindSoftware refresh' -o /tmp/<id>-page.html -w '%{http_code} %{url
 
 A page counts as read only when it answers 200 with the page itself, not a bot challenge, a login wall or an empty shell waiting for JavaScript. A shell can often be read through the docs' source repository on GitHub, but only when the fact's URL is that repository; otherwise the page is **unreadable**. Note which and why, and read on.
 
-A record is **reached** when at least one page on the project's own domains was read: the homepage's domain, the docs' domain, or the project's repository.
+A record is **reached** when at least one page on the project's own domains was read: the homepage's domain, the docs' domain, or the project's repository. A record with no page facts is reached when step 3 confirmed or changed at least one fact.
 
-A record that was not reached gets nothing. Undo what step 3 wrote, so the file keeps the date that brings it back:
-
-```sh
-git checkout -- research/facts/<id>.yml
-```
-
-Then go to step 8 and log it `unreadable`.
+A record that was not reached gets nothing: go to step 8 and log it `unreadable`, which undoes what step 3 wrote, so the file keeps the date that brings it back.
 
 Do not search for a replacement page. A redirect within the same domain is followed and read; the fact keeps its URL unless the old one no longer answers, and then the new URL is written and the record goes to review. A redirect to another domain is read for what it says (step 6) and never becomes a source.
 
@@ -98,12 +88,9 @@ Edit fact files with the Edit tool, line by line. Never run Prettier or a YAML d
 
 ## 6. Status
 
-`status` changes to `discontinued` only on a clear signal from criterion 4 in `AGENTS.md`:
+`status` changes to `discontinued` only on a clear signal from criterion 4 in `AGENTS.md`: a flag from step 3, the project's own pages stating it has ended or is unmaintained, or every version past end of life on endoflife.date.
 
-- the repository the project names as its source is archived (`archived:` from step 3),
-- the npm package is deprecated or the Packagist package abandoned,
-- the project's own pages state it has ended or is unmaintained,
-- every version is past end of life on endoflife.date.
+A plugin is never `discontinued`: an archived plugin is a `stub`, which is curation. Step 3 marks it `(a plugin: stub is for a person)`; report it and open an issue (step 7).
 
 A move is not an end: an archived repository or deprecated package that names a new home for the same project keeps the status. Report the new home.
 
@@ -115,9 +102,9 @@ A domain that does not answer is not evidence of anything. Leave `status` alone 
 
 ## 7. Never touch, and when to stop
 
-Never touch `id`, `name`, `description`, `notes`, `unreadable`, `notFound`, anything under `research/prose/`, or the fields `scripts/adoption.mjs` owns (`httpArchiveSites`, `dependentRepos`, `dependentPackages`, `ecosystemsMonthlyDownloads`, `packagistMonthlyDownloads`, `wordpressActiveInstalls`). A `description` that reads outdated is reported, not edited.
+Never touch `id`, `name`, `description`, `notes`, `unreadable`, `notFound`, anything under `research/prose/`, or the fields `scripts/adoption.mjs` owns (its `OWNED` set). A `description` that reads outdated is reported, not edited.
 
-Stop work on the record, undo the file (`git checkout -- research/facts/<id>.yml`), log it `stopped`, and open a Linear issue when:
+Stop work on the record, log it `stopped` (step 8 undoes the file), and open a Linear issue when:
 
 - more than five page facts on the record would change, status not counted,
 - the pages contradict each other on a question that decides `status`,
@@ -127,45 +114,17 @@ The issue goes to team Marketing, project FindSoftware+, title `FindSoftware: <n
 
 ## 8. Write
 
-One record, one commit, and every record attempted gets one, even one that was not reached. Each record starts on `work` at `origin/main`, as step 1 left it.
-
-**Check it builds.** Records are generated from the fact files; the Action regenerates them after the merge, so only the fact file and the log are committed:
+One record, one commit, and every record attempted gets one, even one that was not reached. Write the commit body to `/tmp/<id>-body.txt`: a status change first, with the quote and the URL; then one line per changed fact, `field: old → new`, with the quote or the API URL; then stale facts, unreadable pages and new majors, one line each. Then:
 
 ```sh
-node scripts/import-facts.mjs <today> && pnpm run validate
-git checkout -- src/content
+node scripts/refresh-commit.ts <id> confirmed /tmp/<id>-body.txt
+node scripts/refresh-commit.ts <id> unreadable "<one clause, such as: Cloudflare challenge on docs>"
+node scripts/refresh-commit.ts <id> stopped "<one clause>"
 ```
 
-A failing `validate` means the change is wrong: undo the file, and log it `stopped`.
+It undoes the file for `unreadable` and `stopped`, checks that a changed file builds (a failing `validate` turns it into `stopped`), lets the guard pick the lane, carries the file onto that lane by itself with its log line, commits, pushes and returns to `work`. It prints `<id>: <outcome>, <lane>`.
 
-**Decide the lane:**
-
-```sh
-git add research/facts/<id>.yml
-node scripts/refresh-guard.ts HEAD --staged
-```
-
-It prints `merge` or `review`, with the reasons. Nothing staged counts as `merge`. `<lane>` is `claude/refresh` for a merge, `claude/refresh-review` for a review.
-
-**Carry the file onto its lane.** Each record goes onto its lane by itself, so a review change never rides along into the merge lane. Skip the two stash lines when the fact file is unchanged, as for an unreadable or stopped record:
-
-```sh
-git stash push -- research/facts/<id>.yml
-git fetch --prune origin
-git checkout --no-track -B <lane> origin/<lane> 2>/dev/null || git checkout --no-track -B <lane> origin/main
-git stash pop
-```
-
-On the merge lane, append `<today>\t<id>\t<outcome>\t<note>` to `research/refresh-log.tsv`, where the outcome is `confirmed`, `unreadable` or `stopped` and the note is one clause, such as `Cloudflare challenge on docs`. That line keeps the id out of the next sixty days of picks. The review lane gets no log line; the pick skips files waiting there.
-
-**Commit and push.** Subject: `Refresh <name>, read <today>`, or `Log <name> as unreadable, <today>`. Body: a status change first, with the quote and the URL. Then one line per changed fact, `field: old → new`, with the quote or the API URL. Then stale facts, unreadable pages and new majors, one line each. End with `Co-Authored-By: Claude <noreply@anthropic.com>`.
-
-```sh
-git add research/facts/<id>.yml research/refresh-log.tsv
-git commit
-git push origin HEAD:refs/heads/<lane>
-git checkout --no-track -B work origin/main
-```
+Exit 1 means git refused something, such as a rejected push. Stop the run and report the message. Never force a push.
 
 ## 9. Pull request
 

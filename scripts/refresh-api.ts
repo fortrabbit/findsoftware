@@ -1,15 +1,8 @@
 /*
- * Re-reads the `via: api` facts of the given fact files, without an agent.
+ * Re-reads the `via: api` facts of the given fact files and prints what it did
+ * not decide. The rules are in src/lib/api-facts.ts.
  *
- *   node scripts/refresh-api.ts astro laravel        # write the files
- *   node scripts/refresh-api.ts --dry astro          # report only
- *   node scripts/refresh-pick.mjs | xargs node scripts/refresh-api.ts
- *
- * A fact the source still states gets the run date; a changed count, date,
- * version, license or language gets the new value too. Anything a script should
- * not decide is printed for the refresh-record skill to read: a name or flag that
- * differs, a date or major that went back, a source that is gone, an archived
- * repository or a deprecated package. The rules are in src/lib/api-facts.ts.
+ *   node scripts/refresh-api.ts [--dry] <id>...
  *
  * GITHUB_TOKEN raises GitHub's limit from 60 to 5,000 calls an hour.
  */
@@ -25,7 +18,6 @@ import {
   type Change,
   type Fact,
 } from '../src/lib/api-facts.ts';
-import { reviewReasons } from '../src/lib/confirmation.ts';
 
 const args = process.argv.slice(2);
 const dry = args.includes('--dry');
@@ -69,6 +61,23 @@ const fetchOnce = (url: string) => {
 };
 
 const show = (value: unknown) => JSON.stringify(value);
+
+/** The repository and package documents that carry archived, deprecated and abandoned flags. */
+function signalSources(facts: Fact[]) {
+  const sources = new Set<string>();
+  for (const fact of facts) {
+    if (fact.via !== 'api') continue;
+    const repo = String(fact.url ?? '').match(
+      /^https:\/\/(?:api\.github\.com\/repos|github\.com)\/([^/#?]+)\/([^/#?]+)/,
+    );
+    if (repo) sources.add(`https://api.github.com/repos/${repo[1]}/${repo[2].replace(/\.git$/, '')}`);
+    if (fact.field === 'npmName' && typeof fact.value === 'string')
+      sources.add(`https://registry.npmjs.org/${fact.value.replace('/', '%2F')}/latest`);
+    if (fact.field === 'packagistName' && typeof fact.value === 'string')
+      sources.add(`https://packagist.org/packages/${fact.value}.json`);
+  }
+  return sources;
+}
 let failed = false;
 
 for (const id of ids) {
@@ -81,22 +90,30 @@ for (const id of ids) {
     failed = true;
     continue;
   }
-  const doc = parse(text);
-  const facts: Fact[] = doc.facts ?? [];
+  let doc;
+  try {
+    doc = parse(text);
+  } catch {
+    doc = undefined;
+  }
+  if (!doc || !Array.isArray(doc.facts)) {
+    console.log(`${id}: not a fact file`);
+    failed = true;
+    continue;
+  }
+  const facts: Fact[] = doc.facts;
   const changes: Change[] = [];
   const notes: string[] = [];
   const skipped = new Map<string, number>();
-  const calls = new Set<string>();
   let confirmed = 0;
 
   for (const [index, fact] of facts.entries()) {
     if (fact.via !== 'api') continue;
     const reader = readerFor(fact);
     if ('skip' in reader) {
-      if (reader.skip !== 'stable') skipped.set(reader.skip, (skipped.get(reader.skip) ?? 0) + 1);
+      if (reader.skip !== 'kept') skipped.set(reader.skip, (skipped.get(reader.skip) ?? 0) + 1);
       continue;
     }
-    calls.add(reader.call);
     const answer = await fetchOnce(reader.call);
     if (answer.status === 404 || answer.status === 410) {
       notes.push(`gone: ${fact.field} source ${reader.call} answers ${answer.status}`);
@@ -138,21 +155,28 @@ for (const id of ids) {
     }
   }
 
-  /* Criterion 4 signals the routine decides on, read from answers already fetched. */
-  for (const url of calls) {
-    const body = (await fetchOnce(url)).json as Record<string, any> | undefined;
-    if (body?.archived === true && doc.status !== 'discontinued') notes.push(`archived: ${body.html_url}`);
-    if (typeof body?.deprecated === 'string') notes.push(`deprecated: ${body.name}: ${body.deprecated}`);
+  /* Criterion 4 signals, read from each repository and package the file names. */
+  if (doc.status !== 'discontinued') {
+    const plugin = facts.some((fact) => fact.field === 'pluginOf') ? ' (a plugin: stub is for a person)' : '';
+    for (const url of signalSources(facts)) {
+      const answer = await fetchOnce(url);
+      const body = answer.json as Record<string, any> | undefined;
+      if (body?.archived === true) notes.push(`archived: ${body.html_url}${plugin}`);
+      if (typeof body?.deprecated === 'string') notes.push(`deprecated: ${body.name}: ${body.deprecated}${plugin}`);
+      const abandoned = body?.package?.abandoned;
+      if (abandoned)
+        notes.push(
+          `abandoned: ${body.package.name}${typeof abandoned === 'string' ? `, use ${abandoned}` : ''}${plugin}`,
+        );
+    }
   }
 
   const result = applyChanges(text, changes, date);
   if (result === null) {
     notes.push('not written: the file layout does not allow a safe edit');
     failed = true;
-  } else if (result !== text) {
-    const reasons = reviewReasons(text, result);
-    if (reasons.length) notes.push(`review: ${reasons.join('; ')}`);
-    if (!dry) writeFileSync(path, result);
+  } else if (result !== text && !dry) {
+    writeFileSync(path, result);
   }
 
   const skips = [...skipped].map(([why, count]) => `${count} ${why}`).join(', ');
