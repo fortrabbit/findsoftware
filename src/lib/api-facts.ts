@@ -366,7 +366,9 @@ export function same(field: string, old: unknown, next: unknown): boolean {
           .match(/\d+(?:\.\d+)?/)?.[0],
       ) === next
     );
-  const plain = (value: unknown) => String(value).toLowerCase().replace(/\/$/, '');
+  // GitHub reports the GPL family without its -only or -or-later suffix.
+  if (field === 'license' && String(old).startsWith(`${next}-`)) return true;
+  const plain = (value: unknown) => String(value).toLowerCase().replace(/^https?:\/\//, '').replace(/\/$/, '');
   return plain(old) === plain(next);
 }
 

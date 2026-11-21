@@ -65,4 +65,5 @@ jobs:
       - name: Push main
         run: |
           git push origin main
-          git push --force-with-lease="claude/refresh:$GITHUB_SHA" origin :claude/refresh
+          git push --force-with-lease="claude/refresh:$GITHUB_SHA" origin :claude/refresh ||
+            echo "claude/refresh moved since this run started; its own run merges it."

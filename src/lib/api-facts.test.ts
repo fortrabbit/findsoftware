@@ -101,7 +101,10 @@ describe('a reading', () => {
     assert.equal(same('currentMajor', 'v5.2', 5), true);
     assert.equal(same('githubStargazers', '1,200', 1200), true);
     assert.equal(same('npmName', 'Astro', 'astro'), true);
+    assert.equal(same('license', 'GPL-2.0-or-later', 'GPL-2.0'), true);
+    assert.equal(same('license', 'GPL-2.0', 'GPL-3.0'), false);
     assert.equal(same('homepage', 'https://www.getzola.org/', 'https://www.getzola.org'), true);
+    assert.equal(same('homepage', 'https://www.yiiframework.com', 'http://www.yiiframework.com'), true);
   });
 
   it('never moves a date or major back', () => {
