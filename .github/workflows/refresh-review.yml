@@ -10,8 +10,9 @@ on:
 permissions:
   contents: write
 
+# Its own group: sharing the merge lane's would let a queued merge cancel this run.
 concurrency:
-  group: refresh-merge
+  group: refresh-review-close
   cancel-in-progress: false
 
 jobs:

@@ -116,7 +116,11 @@ for (const id of ids) {
     }
     const answer = await fetchOnce(reader.call);
     if (answer.status === 404 || answer.status === 410) {
-      notes.push(`gone: ${fact.field} source ${reader.call} answers ${answer.status}`);
+      notes.push(
+        reader.call.endsWith('/releases/latest')
+          ? `no release: ${fact.field}, ${reader.call} answers ${answer.status}`
+          : `gone: ${fact.field} source ${reader.call} answers ${answer.status}`,
+      );
       continue;
     }
     if (answer.status === -1) {
@@ -157,7 +161,9 @@ for (const id of ids) {
 
   /* Criterion 4 signals, read from each repository and package the file names. */
   if (doc.status !== 'discontinued') {
-    const plugin = facts.some((fact) => fact.field === 'pluginOf') ? ' (a plugin: stub is for a person)' : '';
+    const plugin = facts.some((fact) => fact.field === 'basedOn')
+      ? ' (built on another project: a person decides)'
+      : '';
     for (const url of signalSources(facts)) {
       const answer = await fetchOnce(url);
       const body = answer.json as Record<string, any> | undefined;

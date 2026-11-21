@@ -109,8 +109,11 @@ export function reviewReasons(before: string, after: string): string[] {
     for (const [index, was] of olds.entries()) {
       const is = nows[index];
       if (!is) reasons.push(`removes ${was.field} from ${was.url ?? 'no url'}`);
-      else if (!isDeepStrictEqual(content(was), content(is))) sourced(is, 'changes');
-      else if ((is.checkedAt ?? '') < (was.checkedAt ?? '')) reasons.push(`moves ${is.field} checkedAt back`);
+      else if (!isDeepStrictEqual(content(was), content(is))) {
+        if (is.via === 'page' && is.quote === was.quote && !isDeepStrictEqual(is.value, was.value))
+          reasons.push(`changes ${is.field} without a new quote`);
+        else sourced(is, 'changes');
+      } else if ((is.checkedAt ?? '') < (was.checkedAt ?? '')) reasons.push(`moves ${is.field} checkedAt back`);
       else if (is.checkedAt !== was.checkedAt) fresh.push(is);
     }
   }
@@ -131,6 +134,9 @@ export function reviewReasons(before: string, after: string): string[] {
     const signal = fresh.some((fact) => fact.field === 'status' && fact.value === 'discontinued');
     if (b.status !== 'discontinued') reasons.push(`changes status to ${b.status}`);
     else if (!signal) reasons.push('changes status without a fresh status fact');
+    /* An archived plugin is a stub, which is curation: a record built on another project goes to a person. */
+    else if ((b.facts ?? []).some((fact) => fact.field === 'basedOn'))
+      reasons.push('discontinues a record built on another project');
   }
 
   return reasons;

@@ -68,7 +68,7 @@ describe('a reader', () => {
       '8459 (2026-10-23..29)',
     );
     const answer = { status: 200, json: { downloads: 9000, start: '2026-11-09', end: '2026-11-15' } };
-    assert.equal(reader(fact).read(answer, fact, ''), '9000 (2026-11-09..2026-11-15)');
+    assert.equal(reader(fact).read(answer, fact, ''), '9000 (2026-11-09..15)');
   });
 
   it('reads a Packagist name with a dot', () => {

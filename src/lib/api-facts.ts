@@ -142,7 +142,7 @@ function github(fact: Fact, url: URL): Reader | Skip {
         read: (a) => (typeof body(a).private === 'boolean' ? !body(a).private : undefined),
       };
     case 'status':
-      return { kind: 'confirm', call: base, read: (a) => (body(a).archived ? 'discontinued' : 'active') };
+      return { kind: 'confirm', call: base, read: (a) => (body(a).archived === true ? 'discontinued' : undefined) };
     case 'contributors':
       return {
         kind: 'write',
@@ -196,7 +196,7 @@ function npm(fact: Fact, url: URL): Reader | Skip {
         const value = f.value.replace(figure, String(downloads));
         /* "2026-10-23..29" names the end by its day only. */
         if (/\d{4}-\d{2}-\d{2}\.\.\d{2}(?!\d)/.test(value))
-          return value.replace(/\d{4}-\d{2}-\d{2}\.\.\d{2}(?!\d)/, `${start}..${end}`);
+          return value.replace(/\d{4}-\d{2}-\d{2}\.\.\d{2}(?!\d)/, `${start}..${String(end).slice(8)}`);
         const dates = value.match(/\d{4}-\d{2}-\d{2}/g) ?? [];
         if (dates.length === 1) return undefined;
         const next = [start, end];

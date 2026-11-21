@@ -69,6 +69,11 @@ describe('a sourced change', () => {
     assert.match(reviewReasons(file, after).join(), /without a quote/);
   });
 
+  it('is not a page value changed under its old quote', () => {
+    const after = redated(file).replace('value: npm create astro', 'value: pnpm create astro');
+    assert.match(reviewReasons(file, after).join(), /without a new quote/);
+  });
+
   it('moves a page fact with a new quote', () => {
     const after = redated(file)
       .replace('value: npm create astro', 'value: pnpm create astro')
@@ -160,6 +165,15 @@ describe('a status change', () => {
   it('merges to discontinued with a fresh status fact', () => {
     const after = addFact(redated(file), ended).replace('status: accepted', 'status: discontinued');
     assert.deepEqual(reviewReasons(file, after), []);
+  });
+
+  it('is not discontinued when built on another project, which a person curates', () => {
+    const plugin = addFact(
+      file,
+      '  - field: basedOn\n    value: [wordpress]\n    url: https://astro.build/\n    checkedAt: 2026-10-22\n    via: page\n    quote: "for WordPress"',
+    );
+    const after = addFact(redated(plugin), ended).replace('status: accepted', 'status: discontinued');
+    assert.match(reviewReasons(plugin, after).join(), /built on another project/);
   });
 
   it('is not discontinued without a status fact', () => {
