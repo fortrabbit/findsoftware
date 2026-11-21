@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { changedFields, isFactFile, isSelfMerging, reviewReasons, withoutDates } from './confirmation.ts';
+import { isFactFile, reviewReasons } from './confirmation.ts';
+
+const isSelfMerging = (before: string, after: string) => reviewReasons(before, after).length === 0;
 
 const file = [
   'id: astro',
@@ -202,29 +204,5 @@ describe('what counts as a fact file', () => {
     assert.equal(isFactFile('research/facts/astro.yml'), true);
     assert.equal(isFactFile('research/facts/old/astro.yml'), false);
     assert.equal(isFactFile('src/content/software/astro.md'), false);
-  });
-});
-
-describe('the record helpers', () => {
-  const record = [
-    '---',
-    'id: astro',
-    'firstRelease: 2021',
-    'languages:',
-    '  - js',
-    'checkedAt: 2026-08-01',
-    '---',
-    '',
-  ].join('\n');
-
-  it('blank the dates and nothing else', () => {
-    assert.equal(withoutDates(record).includes('2026'), false);
-    assert.equal(withoutDates(record).includes('firstRelease: 2021'), true);
-  });
-
-  it('take a list as one field', () => {
-    assert.deepEqual(changedFields(record, record.replace('  - js', '  - ts').replace('08-01', '09-01')), [
-      'languages',
-    ]);
   });
 });

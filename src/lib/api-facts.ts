@@ -13,7 +13,7 @@
  *   is written. Dates, majors and contributor counts only move forward; one that goes back is reported.
  * - confirm: a name or a flag. Re-dated when the source still says it, reported
  *   when it says something else, never rewritten by a script.
- * - skip: no reader, a stable figure (first release, a judged license model), or a figure adoption.mjs owns.
+ * - skip: no reader, or a field kept as it is.
  *
  * A fact pinned to one release tag or one week of downloads is read at the
  * latest one, and its URL moves there with the new value.
@@ -322,9 +322,10 @@ function registry(fact: Fact, url: URL): Reader | Skip {
 }
 
 /* Stable once recorded, or a judgement rather than a reading. */
-const stable = new Set(['firstRelease', 'licenseModel']);
-/* scripts/adoption.mjs measures these and replaces them on its own runs. */
-const adoption = new Set([
+/* Not re-read: a first release and a judged license model do not change, and adoption.mjs owns its figures. */
+const kept = new Set([
+  'firstRelease',
+  'licenseModel',
   'httpArchiveSites',
   'dependentRepos',
   'dependentPackages',
@@ -335,8 +336,7 @@ const adoption = new Set([
 
 export function readerFor(fact: Fact): Reader | Skip {
   if (fact.via !== 'api' || !fact.url) return { skip: 'not an api fact' };
-  if (stable.has(fact.field)) return { skip: 'stable' };
-  if (adoption.has(fact.field)) return { skip: 'adoption' };
+  if (kept.has(fact.field)) return { skip: 'kept' };
   let url: URL;
   try {
     url = new URL(fact.url);

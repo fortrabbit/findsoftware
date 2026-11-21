@@ -17,7 +17,25 @@
  * landed rather than what is currently served.
  */
 import { execFileSync } from 'node:child_process';
-import { changedFields } from '../src/lib/confirmation.ts';
+
+/** Frontmatter as one block of text per top-level key, `checkedAt` dates blanked. */
+function blocks(frontmatter: string): Map<string, string> {
+  const byKey = new Map<string, string>();
+  let key = '';
+  for (const line of frontmatter.replace(/checkedAt: \d{4}-\d{2}-\d{2}/g, 'checkedAt: DATE').split('\n')) {
+    if (line === 'checkedAt: DATE') continue;
+    const start = line.match(/^([A-Za-z]\w*):/);
+    if (start) key = start[1];
+    byKey.set(key, (byKey.get(key) ?? '') + line + '\n');
+  }
+  return byKey;
+}
+
+/** The top-level keys whose value differs, ignoring `checkedAt` dates. */
+function changedFields(before: string, after: string): string[] {
+  const [a, b] = [blocks(before), blocks(after)];
+  return [...new Set([...a.keys(), ...b.keys()])].filter((key) => key && a.get(key) !== b.get(key));
+}
 
 const since = process.argv[2] ?? '7.days';
 const site = process.env.SITE_URL?.trim() || 'https://www.findhost.app';

@@ -103,7 +103,7 @@ describe('a reader', () => {
   });
 
   it('skips a stable fact and a host it does not know', () => {
-    assert.deepEqual(readerFor(api('firstRelease', 'https://api.github.com/repos/a/b/tags')), { skip: 'stable' });
+    assert.deepEqual(readerFor(api('firstRelease', 'https://api.github.com/repos/a/b/tags')), { skip: 'kept' });
     assert.deepEqual(readerFor(api('nugetName', 'https://azuresearch-usnc.nuget.org/query')), { skip: 'no reader' });
     assert.deepEqual(readerFor({ ...api('language', 'https://github.com/a/b'), via: 'page' }), {
       skip: 'not an api fact',

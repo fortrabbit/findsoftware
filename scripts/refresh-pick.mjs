@@ -1,23 +1,10 @@
 /*
- * Which fact files the refresh routine reads next.
+ * The ids the refresh routine reads next, oldest `checkedAt` first: ten a day
+ * visits every record once a year. Skips ids logged in the last 60 days, whatever
+ * the outcome, so an unreadable record does not come up every morning, and files
+ * waiting on the review branch.
  *
- * Every record is visited once a year: oldest `checkedAt` first, files with no
- * date first, and within one date the reverse of A-to-Z. Every status runs in the
- * same cycle. Ten a day covers the register in about a year. Files the routine
- * handled recently are skipped, whatever the outcome: a project whose pages
- * cannot be read keeps its old date, and without this it would come up every
- * morning.
- *
- * The list is a queue of attempts, not a batch. The routine works down it and
- * stops once enough files have been reached, so the tail comes up again tomorrow.
- *
- *   node scripts/refresh-pick.mjs            # 10 ids
- *   node scripts/refresh-pick.mjs --n 3      # three
- *   node scripts/refresh-pick.mjs --days 30  # retry sooner than the default 60
- *
- * Reads research/refresh-log.tsv, which the routine appends to, and skips any
- * file still waiting on the review branch, whose commit carries no log line.
- * See .claude/skills/refresh-record/SKILL.md.
+ *   node scripts/refresh-pick.mjs [--n 10]
  */
 import { execFileSync } from 'node:child_process';
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
@@ -27,14 +14,10 @@ import { parse } from 'yaml';
 const factsDir = 'research/facts';
 const logFile = 'research/refresh-log.tsv';
 
-const arg = (name, fallback) => {
-  const at = process.argv.indexOf(`--${name}`);
-  return at > 0 ? Number(process.argv[at + 1]) : fallback;
-};
-const n = arg('n', 10);
-const days = arg('days', 60);
+const at = process.argv.indexOf('--n');
+const n = at > 0 ? Number(process.argv[at + 1]) : 10;
 
-const since = new Date(Date.now() - days * 86400000).toISOString().slice(0, 10);
+const since = new Date(Date.now() - 60 * 86400000).toISOString().slice(0, 10);
 const recent = new Set();
 const git = (...args) => execFileSync('git', args, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
 

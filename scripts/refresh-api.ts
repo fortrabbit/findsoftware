@@ -1,15 +1,8 @@
 /*
- * Re-reads the `via: api` facts of the given fact files, without an agent.
+ * Re-reads the `via: api` facts of the given fact files and prints what it did
+ * not decide. The rules are in src/lib/api-facts.ts.
  *
- *   node scripts/refresh-api.ts astro laravel        # write the files
- *   node scripts/refresh-api.ts --dry astro          # report only
- *   node scripts/refresh-pick.mjs | xargs node scripts/refresh-api.ts
- *
- * A fact the source still states gets the run date; a changed count, date,
- * version, license or language gets the new value too. Anything a script should
- * not decide is printed for the refresh-record skill to read: a name or flag that
- * differs, a date or major that went back, a source that is gone, an archived
- * repository or a deprecated package. The rules are in src/lib/api-facts.ts.
+ *   node scripts/refresh-api.ts [--dry] <id>...
  *
  * GITHUB_TOKEN raises GitHub's limit from 60 to 5,000 calls an hour.
  */
@@ -25,7 +18,6 @@ import {
   type Change,
   type Fact,
 } from '../src/lib/api-facts.ts';
-import { reviewReasons } from '../src/lib/confirmation.ts';
 
 const args = process.argv.slice(2);
 const dry = args.includes('--dry');
@@ -119,8 +111,7 @@ for (const id of ids) {
     if (fact.via !== 'api') continue;
     const reader = readerFor(fact);
     if ('skip' in reader) {
-      if (reader.skip !== 'stable' && reader.skip !== 'adoption')
-        skipped.set(reader.skip, (skipped.get(reader.skip) ?? 0) + 1);
+      if (reader.skip !== 'kept') skipped.set(reader.skip, (skipped.get(reader.skip) ?? 0) + 1);
       continue;
     }
     const answer = await fetchOnce(reader.call);
@@ -184,10 +175,8 @@ for (const id of ids) {
   if (result === null) {
     notes.push('not written: the file layout does not allow a safe edit');
     failed = true;
-  } else if (result !== text) {
-    const reasons = reviewReasons(text, result);
-    if (reasons.length) notes.push(`review: ${reasons.join('; ')}`);
-    if (!dry) writeFileSync(path, result);
+  } else if (result !== text && !dry) {
+    writeFileSync(path, result);
   }
 
   const skips = [...skipped].map(([why, count]) => `${count} ${why}`).join(', ');
