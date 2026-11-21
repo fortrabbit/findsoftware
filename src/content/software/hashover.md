@@ -8,7 +8,7 @@ urls:
 category:
   - community
 description: Self-hosted PHP comment system that adds a comment section to any website and stores comments in SQLite or MySQL.
-status: active
+status: stub
 maintainer: Jacob Barkdull
 maintainerType: individual
 language: php

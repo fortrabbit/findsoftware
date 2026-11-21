@@ -30,83 +30,83 @@ licenseModel: open-source
 license: EUPL-1.2, MIT
 currentMajor: "0"
 latestReleaseDate: 2026-09-12
-githubStargazers: 17517
-contributors: 536
+githubStargazers: 17616
+contributors: 537
 social:
   forum: https://zola.discourse.group/
 wikidata: Q105808719
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-21
 sources:
   - field: urls
     url: https://github.com/getzola/zola
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://github.com/getzola/zola
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://www.getzola.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: firstRelease
     url: https://github.com/getzola/zola/releases/tag/v0.0.2
     checkedAt: 2026-10-18
   - field: maintainer
     url: https://www.getzola.org/
-    checkedAt: 2026-10-20
+    checkedAt: 2026-11-21
   - field: maintainerType
     url: https://www.getzola.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q105808719
     checkedAt: 2026-10-18
   - field: category
     url: https://www.getzola.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: language
     url: https://github.com/getzola/zola
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtime
     url: https://www.getzola.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: contentStore
     url: https://www.getzola.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: templating
     url: https://www.getzola.org/documentation/templates/overview/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: i18n
     url: https://www.getzola.org/documentation/content/multilingual/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: renderingModes
     url: https://www.getzola.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: installMethod
     url: https://www.getzola.org/documentation/getting-started/installation/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: license
     url: https://github.com/getzola/zola
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: license
     url: https://github.com/getzola/zola
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: licenseModel
     url: https://github.com/getzola/zola
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://github.com/getzola/zola/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: latestReleaseDate
     url: https://github.com/getzola/zola/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: githubStargazers
     url: https://github.com/getzola/zola
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: contributors
     url: https://api.github.com/repos/getzola/zola/contributors?anon=true
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runsAs
     url: https://www.getzola.org/documentation/deployment/github-pages/
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-21
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

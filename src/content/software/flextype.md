@@ -9,7 +9,7 @@ category:
   - cms
   - headless-cms
 description: Flat-file content management system written in PHP that stores content as files and offers a built-in REST API.
-status: active
+status: stub
 maintainer: Sergey Romanenko
 language: php
 runtime:

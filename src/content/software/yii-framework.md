@@ -35,8 +35,8 @@ licenseModel: open-source
 license: BSD-3-Clause
 currentMajor: "2"
 latestReleaseDate: 2026-05-09
-githubStargazers: 14278
-packagistDownloads: 32621651
+githubStargazers: 14280
+packagistDownloads: 33512047
 packagistMonthlyDownloads: 594702
 httpArchiveSites: 19336
 dependentRepos: 33911
@@ -46,104 +46,104 @@ social:
   forum: https://www.yiiframework.com/forum
 wikidata: Q1466168
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-21
 sources:
   - field: name
     url: https://www.yiiframework.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://github.com/yiisoft/yii2
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://github.com/yiisoft/yii2
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://github.com/yiisoft/app
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://api.github.com/repos/yiisoft/yii
-    checkedAt: 2026-10-21
+    checkedAt: 2026-11-21
   - field: urls
     url: https://www.yiiframework.com/doc/guide/2.0/en/intro-yii
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://yiisoft.github.io/docs/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: maintainer
     url: https://www.yiiframework.com/license
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q1466168
     checkedAt: 2026-10-18
   - field: category
     url: https://www.yiiframework.com/doc/guide/2.0/en/intro-yii
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: language
     url: https://github.com/yiisoft/yii2
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtime
     url: https://www.yiiframework.com/doc/guide/2.0/en/intro-yii
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtimeMin
     url: https://repo.packagist.org/p2/yiisoft/yii2.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtimeMin
     url: https://www.yiiframework.com/doc/guide/2.0/en/intro-yii
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtimeMin
     url: https://repo.packagist.org/p2/yiisoft/app.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: databases
     url: https://www.yiiframework.com/doc/guide/2.0/en/db-dao
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: templating
     url: https://www.yiiframework.com/doc/guide/2.0/en/tutorial-template-engines
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: i18n
     url: https://www.yiiframework.com/doc/guide/2.0/en/tutorial-i18n
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: renderingModes
     url: https://www.yiiframework.com/doc/guide/2.0/en/intro-yii
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: installMethod
     url: https://www.yiiframework.com/doc/guide/2.0/en/start-installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: installMethod
     url: https://yiisoft.github.io/docs/guide/start/creating-project.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: license
     url: https://github.com/yiisoft/yii2
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: licenseModel
     url: https://github.com/yiisoft/yii2
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://github.com/yiisoft/yii2/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: latestReleaseDate
     url: https://github.com/yiisoft/yii2/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: latestReleaseDate
     url: https://github.com/yiisoft/app/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: githubStargazers
     url: https://github.com/yiisoft/yii2
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: githubStargazers
     url: https://github.com/yiisoft/app
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: packagistDownloads
     url: https://packagist.org/packages/yiisoft/yii2.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: packagistDownloads
     url: https://packagist.org/packages/yiisoft/app.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://www.yiiframework.com/extensions
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runsAs
     url: https://www.yiiframework.com/doc/guide/2.0/en/start-installation
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-21
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25

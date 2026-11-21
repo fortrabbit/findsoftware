@@ -37,7 +37,7 @@ licenseModel: open-source
 license: GPL-2.0-or-later, GPL-2.0
 currentMajor: "7"
 latestReleaseDate: 2026-10-06
-githubStargazers: 3487
+githubStargazers: 3515
 pluginCount: 72008
 httpArchiveSites: 2714694
 social:
@@ -46,74 +46,74 @@ social:
   forum: https://wordpress.org/support/forums/
 wikidata: Q13166
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-21
 sources:
   - field: name
     url: https://wordpress.org/about/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://api.github.com/repos/WordPress/WordPress
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://api.github.com/repos/WordPress/wordpress-develop
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://developer.wordpress.org/advanced-administration/before-install/howto-install/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: firstRelease
     url: https://wordpress.org/about/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: maintainer
     url: https://wordpress.org/about/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: maintainerType
     url: https://wordpress.org/about/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q13166
     checkedAt: 2026-10-18
   - field: category
     url: https://wordpress.org/about/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: language
     url: https://wordpress.org/about/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtime
     url: https://wordpress.org/about/requirements/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtimeMin
     url: https://api.wordpress.org/core/version-check/1.7/
     checkedAt: 2026-10-18
   - field: contentStore
     url: https://wordpress.org/about/requirements/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: databases
     url: https://wordpress.org/about/requirements/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: adminUi
     url: https://developer.wordpress.org/rest-api/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: headlessApi
     url: https://developer.wordpress.org/rest-api/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: templating
     url: https://developer.wordpress.org/themes/templates/introduction-to-templates/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: renderingModes
     url: https://developer.wordpress.org/themes/templates/introduction-to-templates/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: installMethod
     url: https://developer.wordpress.org/advanced-administration/before-install/howto-install/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: license
     url: https://wordpress.org/about/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: license
     url: https://api.github.com/repos/WordPress/wordpress-develop
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: licenseModel
     url: https://wordpress.org/about/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: currentMajor
     url: https://api.wordpress.org/core/version-check/1.7/
     checkedAt: 2026-10-18
@@ -122,7 +122,7 @@ sources:
     checkedAt: 2026-10-18
   - field: githubStargazers
     url: https://api.github.com/repos/WordPress/wordpress-develop
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://api.wordpress.org/plugins/info/1.2/?action=query_plugins&request[per_page]=1
     checkedAt: 2026-10-18
@@ -131,7 +131,7 @@ sources:
     checkedAt: 2026-10-18
   - field: runsAs
     url: https://wordpress.org/about/requirements/
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-21
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25

@@ -34,9 +34,9 @@ installMethod: WordPress admin plugin install
 licenseModel: open-source
 license: GPL-2.0-or-later
 currentMajor: "11"
-latestReleaseDate: 2026-10-09
-githubStargazers: 10557
-packagistDownloads: 182504
+latestReleaseDate: 2026-11-19
+githubStargazers: 10607
+packagistDownloads: 184294
 contributors: 345
 packagistMonthlyDownloads: 1126
 httpArchiveSites: 553677
@@ -48,47 +48,47 @@ social:
   forum: https://wordpress.org/support/plugin/woocommerce/
 wikidata: Q15855099
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-21
 sources:
   - field: name
     url: https://woocommerce.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://api.github.com/repos/woocommerce/woocommerce
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://api.github.com/repos/woocommerce/woocommerce
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://developer.woocommerce.com/docs/apis/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: firstRelease
     url: https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=woocommerce
     checkedAt: 2026-10-18
   - field: maintainer
     url: https://woocommerce.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: maintainerType
     url: https://woocommerce.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: parent
     url: https://woocommerce.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: wikidata
     url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=WooCommerce&language=en&format=json
     checkedAt: 2026-10-18
   - field: category
     url: https://woocommerce.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: basedOn
     url: https://woocommerce.com/document/server-requirements/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: language
     url: https://api.github.com/repos/woocommerce/woocommerce
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtime
     url: https://woocommerce.com/document/server-requirements/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtimeMin
     url: https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=woocommerce
     checkedAt: 2026-10-18
@@ -97,37 +97,37 @@ sources:
     checkedAt: 2026-10-18
   - field: contentStore
     url: https://woocommerce.com/document/server-requirements/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: databases
     url: https://woocommerce.com/document/server-requirements/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: headlessApi
     url: https://developer.woocommerce.com/docs/apis/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: templating
     url: https://developer.woocommerce.com/docs/theming/theme-development/template-structure/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: installMethod
     url: https://woocommerce.com/document/installing-uninstalling-woocommerce/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: license
     url: https://github.com/woocommerce/woocommerce/blob/trunk/plugins/woocommerce/composer.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: license
     url: https://github.com/woocommerce/woocommerce/blob/trunk/license.txt
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: licenseModel
     url: https://woocommerce.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: currentMajor
     url: https://api.github.com/repos/woocommerce/woocommerce/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: latestReleaseDate
     url: https://api.github.com/repos/woocommerce/woocommerce/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: githubStargazers
     url: https://api.github.com/repos/woocommerce/woocommerce
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: contributors
     url: https://api.github.com/repos/woocommerce/woocommerce/contributors
     checkedAt: 2026-10-18
@@ -136,10 +136,10 @@ sources:
     checkedAt: 2026-10-25
   - field: packagistDownloads
     url: https://packagist.org/packages/woocommerce/woocommerce.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://woocommerce.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25

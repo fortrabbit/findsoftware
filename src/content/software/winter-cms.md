@@ -37,9 +37,9 @@ installMethod: composer create-project wintercms/winter, web installer, softacul
 licenseModel: open-source
 license: MIT
 currentMajor: "1"
-latestReleaseDate: 2026-08-19
-githubStargazers: 1522
-packagistDownloads: 47293
+latestReleaseDate: 2026-11-04
+githubStargazers: 1521
+packagistDownloads: 48818
 contributors: 340
 packagistMonthlyDownloads: 862
 social:
@@ -47,26 +47,26 @@ social:
   discord: https://discord.gg/D5MFSPH6Ux
   forum: https://github.com/wintercms/winter/discussions
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-21
 sources:
   - field: name
     url: https://wintercms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://github.com/wintercms/winter
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://wintercms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://wintercms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: maintainer
     url: https://github.com/wintercms/winter
     checkedAt: 2026-10-18
   - field: maintainerType
     url: https://wintercms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: category
     url: https://github.com/wintercms/winter
     checkedAt: 2026-10-18
@@ -75,67 +75,67 @@ sources:
     checkedAt: 2026-10-18
   - field: language
     url: https://github.com/wintercms/winter
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtime
     url: https://wintercms.com/docs/v1.2/docs/setup/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtimeMin
     url: https://wintercms.com/docs/v1.2/docs/setup/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtimeMin
     url: https://repo.packagist.org/p2/wintercms/winter.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: contentStore
     url: https://wintercms.com/docs/v1.2/docs/cms/themes
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: databases
     url: https://wintercms.com/docs/v1.2/docs/setup/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: adminUi
     url: https://github.com/wintercms/winter
     checkedAt: 2026-10-18
   - field: templating
     url: https://wintercms.com/docs/v1.2/docs/cms/themes
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: i18n
     url: https://github.com/wintercms/wn-translate-plugin
     checkedAt: 2026-10-18
   - field: installMethod
     url: https://wintercms.com/docs/v1.2/docs/setup/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: installMethod
     url: https://wintercms.com/docs/v1.2/docs/architecture/using-composer
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: license
     url: https://github.com/wintercms/winter
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: licenseModel
     url: https://wintercms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: currentMajor
     url: https://api.github.com/repos/wintercms/winter/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: latestReleaseDate
     url: https://api.github.com/repos/wintercms/winter/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: githubStargazers
     url: https://api.github.com/repos/wintercms/winter
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: contributors
     url: https://api.github.com/repos/wintercms/winter/contributors
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: packagistDownloads
     url: https://packagist.org/packages/wintercms/winter.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: packagistDownloads
     url: https://packagist.org/packages/winter/wn-system-module.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://wintercms.com/marketplace
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runsAs
     url: https://wintercms.com/docs/setup/installation
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-21
   - field: packagistMonthlyDownloads
     url: https://packagist.org/packages/wintercms/winter/stats.json
     checkedAt: 2026-10-25
