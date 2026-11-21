@@ -42,9 +42,9 @@ installMethod: composer create-project typo3/cms-base-distribution, ddev, ddev c
 licenseModel: open-source
 license: GPL-2.0-or-later, GPL-2.0
 currentMajor: "14"
-latestReleaseDate: 2026-10-13
+latestReleaseDate: 2026-11-17
 githubStargazers: 1215
-packagistDownloads: 14685571
+packagistDownloads: 15362567
 pluginCount: 9198
 packagistMonthlyDownloads: 493892
 dependentRepos: 3856
@@ -55,11 +55,11 @@ social:
   forum: https://typo3.community/
 wikidata: Q618512
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-21
 sources:
   - field: name
     url: https://typo3.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://api.github.com/repos/TYPO3/typo3
     checkedAt: 2026-10-18
@@ -68,22 +68,22 @@ sources:
     checkedAt: 2026-10-18
   - field: urls
     url: https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Index.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: firstRelease
     url: https://typo3.com/typo3-cms/the-typo3-story
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: maintainer
     url: https://typo3.org/project/association
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: maintainerType
     url: https://typo3.org/project/association
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: hqCountry
     url: https://typo3.org/project/association
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: parent
     url: https://typo3.org/project/association
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q618512
     checkedAt: 2026-10-18
@@ -95,40 +95,40 @@ sources:
     checkedAt: 2026-10-18
   - field: language
     url: https://get.typo3.org/version/14
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtime
     url: https://get.typo3.org/version/14
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtimeMin
     url: https://repo.packagist.org/p2/typo3/cms-core.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: runtimeMin
     url: https://get.typo3.org/version/14
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: contentStore
     url: https://get.typo3.org/version/14
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: databases
     url: https://get.typo3.org/version/14
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: adminUi
     url: https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Installation/Install.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: templating
     url: https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Concepts/Fluid/Index.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: i18n
     url: https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Localization/Index.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: renderingModes
     url: https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Concepts/Fluid/Index.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: installMethod
     url: https://get.typo3.org/version/14
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: installMethod
     url: https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Installation/Install.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: license
     url: https://packagist.org/packages/typo3/cms-core.json
     checkedAt: 2026-10-18
@@ -140,16 +140,16 @@ sources:
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://repo.packagist.org/p2/typo3/cms-core.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: latestReleaseDate
     url: https://repo.packagist.org/p2/typo3/cms-core.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: githubStargazers
     url: https://api.github.com/repos/TYPO3/typo3
     checkedAt: 2026-10-18
   - field: packagistDownloads
     url: https://packagist.org/packages/typo3/cms-core.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-21
   - field: urls
     url: https://typo3.org/
     checkedAt: 2026-10-18
@@ -158,7 +158,7 @@ sources:
     checkedAt: 2026-10-18
   - field: runsAs
     url: https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Installation/Install.html
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-21
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/typo3%2Fcms-core
     checkedAt: 2026-10-25
