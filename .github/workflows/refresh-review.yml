@@ -1,6 +1,6 @@
-# The review lane starts over once its pull request is merged or closed. A branch
-# kept after a squash merge would still differ from main, and refresh-pick.mjs
-# would skip its files for good.
+# When the review lane's pull request closes: a merge gets its records
+# regenerated, a close without merge keeps the lane's log lines so those records
+# wait their 60 days, and the branch goes so the next review starts from main.
 name: Refresh review closed
 
 on:
@@ -10,11 +10,43 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: refresh-merge
+  cancel-in-progress: false
+
 jobs:
-  reset:
+  close:
     if: github.head_ref == 'claude/refresh-review'
     runs-on: ubuntu-latest
     steps:
-      - env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh api -X DELETE "repos/${{ github.repository }}/git/refs/heads/claude/refresh-review" || true
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v4
+        with:
+          version: latest
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Regenerate or keep the log
+        env:
+          MERGED: ${{ github.event.pull_request.merged }}
+        run: |
+          git config user.name "FindSoftware refresh"
+          git config user.email "noreply@github.com"
+          if [ "$MERGED" = true ]; then
+            node scripts/import-facts.mjs "$(date -u +%F)"
+            pnpm run validate
+            git add src/content/software
+            git diff --cached --quiet || git commit -m "Regenerate records from the reviewed fact files"
+          else
+            git diff origin/main...origin/claude/refresh-review -- research/refresh-log.tsv |
+              sed -n 's/^+\([0-9]\)/\1/p' >> research/refresh-log.tsv
+            git add research/refresh-log.tsv
+            git diff --cached --quiet || git commit -m "Log the records of a closed review"
+          fi
+          git push origin main
+          git push origin :claude/refresh-review

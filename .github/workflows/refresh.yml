@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     # The e2e specs check the hosting block, which the build draws only with FindHost's address.
     env:
-      FINDHOST_URL: https://www.findhost.app
+      FINDHOST_URL: ${{ vars.FINDHOST_URL }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -81,7 +81,10 @@ jobs:
           git fetch origin
           git checkout --no-track -B review origin/claude/refresh-review 2>/dev/null ||
             git checkout --no-track -B review origin/main
-          git merge --no-edit "$GITHUB_SHA"
+          if ! git merge --no-edit "$GITHUB_SHA"; then
+            echo "::error::The lane does not merge into claude/refresh-review; a person has to move it."
+            exit 1
+          fi
           git push origin HEAD:refs/heads/claude/refresh-review
           git push --force-with-lease="claude/refresh:$GITHUB_SHA" origin :claude/refresh || true
           if [ -z "$(gh pr list --head claude/refresh-review --state open --json number --jq '.[].number')" ]; then

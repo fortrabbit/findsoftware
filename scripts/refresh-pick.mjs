@@ -21,12 +21,14 @@ const since = new Date(Date.now() - 60 * 86400000).toISOString().slice(0, 10);
 const recent = new Set();
 const git = (...args) => execFileSync('git', args, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
 
-/* The merge lane's log as well: while its Action is red, main does not have those lines yet. */
+/* The lanes' logs as well: main has their lines only once they merge. */
 const logs = [existsSync(logFile) ? readFileSync(logFile, 'utf8') : ''];
-try {
-  logs.push(git('show', `origin/claude/refresh:${logFile}`));
-} catch {
-  /* No merge lane waiting. */
+for (const lane of ['claude/refresh', 'claude/refresh-review']) {
+  try {
+    logs.push(git('show', `origin/${lane}:${logFile}`));
+  } catch {
+    /* Nothing waiting on that lane. */
+  }
 }
 for (const line of logs.join('\n').split('\n')) {
   const [date, id] = line.split('\t');

@@ -122,7 +122,7 @@ node scripts/refresh-commit.ts <id> unreadable "<one clause, such as: Cloudflare
 node scripts/refresh-commit.ts <id> stopped "<one clause>"
 ```
 
-It undoes the file for `unreadable` and `stopped`, checks that a changed file builds (a failing `validate` turns it into `stopped`), lets the guard pick the lane, carries the file onto that lane by itself, adds the log line on the merge lane, commits, pushes and returns to `work`. It prints `<id>: <outcome>, <lane>`.
+It undoes the file for `unreadable` and `stopped`, checks that a changed file builds (a failing `validate` turns it into `stopped`), lets the guard pick the lane, carries the file onto that lane by itself with its log line, commits, pushes and returns to `work`. It prints `<id>: <outcome>, <lane>`.
 
 Exit 1 means git refused something, such as a rejected push. Stop the run and report the message. Never force a push.
 

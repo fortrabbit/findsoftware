@@ -321,7 +321,6 @@ function registry(fact: Fact, url: URL): Reader | Skip {
   return { skip: 'no reader' };
 }
 
-/* Stable once recorded, or a judgement rather than a reading. */
 /* Not re-read: a first release and a judged license model do not change, and adoption.mjs owns its figures. */
 const kept = new Set([
   'firstRelease',
