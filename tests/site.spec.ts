@@ -499,6 +499,7 @@ test.describe('filtering', () => {
 
     const row = page.locator(rows).first();
     const id = await row.getAttribute('data-record');
+    await page.locator('[data-list-style] button[value=extended]').click();
     await expect(row.locator('.provider-tile')).toBeVisible();
 
     await page.locator('[data-list-style] button[value=slim]').click();

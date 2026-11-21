@@ -25,6 +25,9 @@ concurrency:
 jobs:
   merge:
     runs-on: ubuntu-latest
+    # The e2e specs check the hosting block, which the build draws only with FindHost's address.
+    env:
+      FINDHOST_URL: https://www.findhost.app
     steps:
       - uses: actions/checkout@v4
         with:
