@@ -36,20 +36,25 @@ const passes = (cmd: string, ...args: string[]) => {
 };
 type Fact = { via?: string; checkedAt?: unknown; [key: string]: unknown };
 
-/** What the run did to each kind of fact, counted rather than told: "page 14 confirmed, 1 changed, 0 left; ...". */
+/** What the run did to each kind of fact, counted rather than told: "api ...; page 14 confirmed, 1 changed, 2 requoted, 0 left". */
 function tally(before: string, after: string) {
   const [a, b] = [before, after].map((doc) => (parse(doc)?.facts ?? []) as Fact[]);
   const counts: Record<string, number[]> = {};
   for (const [index, is] of b.entries()) {
-    const { checkedAt, ...rest } = is;
-    const { checkedAt: wasChecked, ...wasRest } = a[index] ?? {};
-    const slot = (counts[is.via ?? 'other'] ??= [0, 0, 0]);
+    const { checkedAt, quote, ...rest } = is;
+    const { checkedAt: wasChecked, quote: wasQuote, ...wasRest } = a[index] ?? {};
+    const slot = (counts[is.via ?? 'other'] ??= [0, 0, 0, 0]);
     if (JSON.stringify(rest) !== JSON.stringify(wasRest)) slot[1]++;
+    else if (quote !== wasQuote) slot[2]++;
     else if (checkedAt !== wasChecked) slot[0]++;
-    else slot[2]++;
+    else slot[3]++;
   }
   return Object.entries(counts)
-    .map(([via, [confirmed, changed, left]]) => `${via} ${confirmed} confirmed, ${changed} changed, ${left} left`)
+    .sort(([x], [y]) => x.localeCompare(y))
+    .map(
+      ([via, [confirmed, changed, requoted, left]]) =>
+        `${via} ${confirmed} confirmed, ${changed} changed, ${requoted} requoted, ${left} left`,
+    )
     .join('; ');
 }
 

@@ -71,7 +71,7 @@ A record is **reached** when at least one page on the project's own domains was 
 
 A record that was not reached gets nothing: go to step 8 and log it `unreadable`, which undoes what step 3 wrote, so the file keeps the date that brings it back.
 
-Do not search for a replacement page. A redirect within the same domain is followed and read; the fact keeps its URL unless the old one no longer answers, and then the new URL is written and the record goes to review. A redirect to another domain is read for what it says (step 6) and never becomes a source.
+Do not search for a replacement page. A redirect within the same domain is followed and read; the fact keeps its URL unless the old one no longer answers, and then the new URL is written and the record goes to review. Note each redirect as `moved: <url> → <final url>` for the commit body. A redirect to another domain is read for what it says (step 6) and never becomes a source.
 
 ## 5. Compare
 
@@ -83,13 +83,13 @@ For every such fact whose page was read:
 
 - **The page still says it.** Set the fact's `checkedAt` to today. Leave its quote, unless check-quotes listed it: then the quote was never verbatim, so replace it with the page's exact words for the same statement.
 - **The page says something else.** Write the value the page states now, in the form the old value used (the same list shape, the same vocabulary: `categories`, `runtime`, `runsAs` and the other mapped fields keep their words), set `checkedAt` to today, and replace `quote` with the words that say it: 20 at most, copied verbatim from the raw page text, never from a summary. A changed page fact without a fresh quote goes to review.
-- **The page no longer mentions it.** Leave the fact as it is and report it as stale.
+- **The page no longer mentions it.** Leave the fact as it is and report it as stale. A list the page now supports only in part is stale too: report which items it no longer names, never shorten the list on silence.
 
 When a page now names a higher stable `currentMajor` than an API fact holds, do not change the API fact; note it for the report as a new major. A pre-release (alpha, beta, rc) does not count.
 
 Then set the file's top-level `checkedAt` to today, unless step 3 already did.
 
-Edit fact files with the Edit tool. To re-date many facts, replace the exact two-line pair `    checkedAt: <old>` and `    via: page` with `replace_all`. Never run Prettier or a YAML dumper over them: the layout stays as written.
+Edit fact files with the Edit tool. To re-date many facts, replace the exact two-line pair `    checkedAt: <old>` and `    via: page` with `replace_all`, once per old date, then put the old date back on the stale facts and on those whose page was unreadable. Never run Prettier or a YAML dumper over them: the layout stays as written.
 
 ## 6. Status
 
@@ -121,7 +121,7 @@ The issue goes to team Marketing, project FindSoftware+, title `FindSoftware: <n
 
 ## 8. Write
 
-One record, one commit, and every record attempted gets one, even one that was not reached. Write the commit body to `${TMPDIR:-/tmp}/<id>-body.txt`: a status change first, with the quote and the URL; then the step 3 lines; then one line per changed page fact, `field: old → new`, with the quote; then stale facts, unreadable pages and new majors, one line each. Do not count facts: the script adds the counts. Then:
+One record, one commit, and every record attempted gets one, even one that was not reached. Write the commit body to `${TMPDIR:-/tmp}/<id>-body.txt`: a status change first, with the quote and the URL; then the step 3 lines; then one line per changed page fact, `field: old → new`, with the quote; then one line per replaced quote, `field quote: "new"`; then stale facts, unreadable pages, `moved:` redirects and new majors, one line each. Do not count facts: the script adds the counts. Then:
 
 ```sh
 node scripts/refresh-commit.ts <id> confirmed "${TMPDIR:-/tmp}/<id>-body.txt"
@@ -129,7 +129,7 @@ node scripts/refresh-commit.ts <id> unreadable "<one clause, such as: Cloudflare
 node scripts/refresh-commit.ts <id> stopped "<one clause>"
 ```
 
-It undoes the file for `unreadable` and `stopped`, checks that a changed file builds (a failing `validate` turns it into `stopped`), lets the guard pick the lane, carries the file onto that lane by itself with its log line, commits, pushes and returns to `work`. It prints `<id>: <outcome>, <lane>`; the commit body's first line holds the counts per kind of fact, which the log line repeats.
+It undoes the file for `unreadable` and `stopped`, checks that a changed file builds (a failing `validate` turns it into `stopped`), lets the guard pick the lane, carries the file onto that lane by itself with its log line, commits, pushes and returns to `work`. It prints `<id>: <outcome>, <lane>`; the commit body's first line holds the counts per kind of fact (confirmed, changed value, requoted, left as it was), which the log line repeats.
 
 Exit 1 means git refused something, such as a rejected push. Stop the run and report the message. Never force a push.
 

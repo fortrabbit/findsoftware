@@ -94,7 +94,7 @@ const page = (url) => {
                   /\.(md|markdown)$/i.test(new URL(url).pathname)
                     ? 'markdown'
                     : /html/i.test(response.headers.get('content-type') ?? '') ||
-                      /\.html?$/i.test(new URL(url).pathname),
+                        /\.html?$/i.test(new URL(url).pathname),
                 ),
               }
             : { error: `${response.status}` },
@@ -114,7 +114,8 @@ for (const id of ids) {
     checked++;
     const { text, error } = await page(fact.url);
     if (error) failures.push(`${id} ${fact.field}: ${error} ${fact.url}`);
-    else if (!text.includes(normalize(fact.quote, true)))
+    /* A quote often ends on a full stop the page sentence does not have there. */
+    else if (!text.includes(normalize(fact.quote, true).replace(/[.,;:]+$/, '')))
       failures.push(`${id} ${fact.field}: not on page ${fact.url} "${fact.quote}"`);
   }
 }
