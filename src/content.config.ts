@@ -185,7 +185,12 @@ const providerFields = z
      * stopped or doubtful one may have neither: the domain is parked or sold. The repository
      * never stands in as the home page, so the two links stay distinct facts.
      */
-    if (record.status !== 'discontinued' && record.status !== 'stub' && !record.urls?.home && !record.urls?.repository) {
+    if (
+      record.status !== 'discontinued' &&
+      record.status !== 'stub' &&
+      !record.urls?.home &&
+      !record.urls?.repository
+    ) {
       ctx.addIssue({
         code: 'custom',
         path: ['urls', 'home'],

@@ -48,7 +48,9 @@ const holds: Record<string, string> = {
 };
 
 /* The other groups, linked, so each page names what it leaves out. */
-const others = (await besideTheRegister()).filter((other) => other.key !== key && other.key !== 'all' && other.count > 0);
+const others = (await besideTheRegister()).filter(
+  (other) => other.key !== key && other.key !== 'all' && other.count > 0,
+);
 const counted =
   key === 'all'
     ? {
@@ -59,7 +61,9 @@ const counted =
     : {
         lead: '',
         strong: `${number.format(rows.length)} ${rows.length === 1 ? 'project' : 'projects'}`,
-        tail: holds[key] ? ` ${holds[key]}. Not in the home page count or the full list; each keeps its page.` : ', kept out of the home page count and the full list.',
+        tail: holds[key]
+          ? ` ${holds[key]}. Not in the home page count or the full list; each keeps its page.`
+          : ', kept out of the home page count and the full list.',
       };
 
 const origin = Astro.site?.origin ?? '';
@@ -101,7 +105,10 @@ const origin = Astro.site?.origin ?? '';
           {' Elsewhere: '}
           {others.map((other, index) => (
             <>
-              <a class="quiet-link" href={other.href}>{`${number.format(other.count)} ${other.count === 1 ? other.label.toLowerCase().replace(/s$/, '') : other.label.toLowerCase()}`}</a>
+              <a
+                class="quiet-link"
+                href={other.href}
+              >{`${number.format(other.count)} ${other.count === 1 ? other.label.toLowerCase().replace(/s$/, '') : other.label.toLowerCase()}`}</a>
               {index < others.length - 1 ? ', ' : '.'}
             </>
           ))}

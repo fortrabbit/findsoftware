@@ -44,7 +44,9 @@ const make = async (): Promise<GraphData> => {
     // Linked only when its page is built: a language page lists register records, and a record beside the register can bring its language into the graph.
     (id) => ({
       label: labelOf('language', id),
-      ...(withPage.has(id) ? { href: `/languages/${slugOf(fieldOf.get('language')!, { id, label: labelOf('language', id) })}/` } : {}),
+      ...(withPage.has(id)
+        ? { href: `/languages/${slugOf(fieldOf.get('language')!, { id, label: labelOf('language', id) })}/` }
+        : {}),
     }),
   );
   const drawn = new Set(nodes.filter((node) => node.kind !== 'language').map((node) => node.key));

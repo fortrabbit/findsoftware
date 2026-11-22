@@ -59,7 +59,10 @@ const grew = (now: number | undefined, then: number | undefined, floor: number, 
  * Whether scripts/momentum.mjs can measure a record: a GitHub repository, or an
  * npm or Packagist download figure. The same reading as the script's.
  */
-export function measurable(record: { urls?: { repository?: unknown }; sources?: { field?: unknown; url?: unknown }[] }): boolean {
+export function measurable(record: {
+  urls?: { repository?: unknown };
+  sources?: { field?: unknown; url?: unknown }[];
+}): boolean {
   const repository = String(record.urls?.repository ?? '');
   if (/^https:\/\/github\.com\/[^/]+\/[^/#?]+\/?$/.test(repository)) return true;
   return (record.sources ?? []).some(

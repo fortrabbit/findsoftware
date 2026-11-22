@@ -72,9 +72,7 @@ function indexAfter(sorted: number[], before: (held: number) => boolean): number
  * record never counts a figure it lacks.
  */
 export function usageBands(records: { id: string; figures: Figures }[]): Map<string, number> {
-  return new Map(
-    [...usagePlaces(records)].map(([id, place]) => [id, Math.min(5, Math.floor(place * 5) + 1)] as const),
-  );
+  return new Map([...usagePlaces(records)].map(([id, place]) => [id, Math.min(5, Math.floor(place * 5) + 1)] as const));
 }
 
 /**
