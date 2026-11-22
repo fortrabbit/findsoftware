@@ -113,7 +113,6 @@ Never touch `id`, `name`, `description`, `notes`, `unreadable`, `notFound`, anyt
 
 Stop work on the record, log it `stopped` (step 8 undoes the file), and open a Linear issue when:
 
-- more than five page facts on the record would change, status not counted,
 - the pages contradict each other on a question that decides `status`,
 - step 6 calls for a person.
 
