@@ -1,6 +1,6 @@
-# The refresh routine's merge lane. The routine pushes fact files that moved only
-# dates and sourced values to claude/refresh; this checks them against the same
-# rule the routine used, regenerates the records, builds, and merges into main.
+# The refresh routine's merge lane. The routine pushes every fact file it did not
+# break to claude/refresh; this checks them against the same rule the routine
+# used, regenerates the records, builds, and merges into main.
 # A run that fails moves the lane onto claude/refresh-review with a pull request,
 # so one bad commit never holds back the days after it.
 #

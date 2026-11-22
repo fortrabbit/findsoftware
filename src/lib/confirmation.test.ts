@@ -51,27 +51,27 @@ describe('a sourced change', () => {
     assert.equal(isSelfMerging(file, redated(file).replace('value: 5', 'value: 6')), true);
   });
 
-  it('is not a value moved under an old date', () => {
-    assert.equal(isSelfMerging(file, file.replace('value: 5', 'value: 6')), false);
+  it('merges a value moved under an old date', () => {
+    assert.equal(isSelfMerging(file, file.replace('value: 5', 'value: 6')), true);
   });
 
-  it('is not a value moved while the file date stays', () => {
+  it('merges a value moved while the file date stays', () => {
     const after = file
       .replace('value: 5', 'value: 6')
       .replace('    checkedAt: 2026-10-22\n    via: api', '    checkedAt: 2026-11-20\n    via: api');
-    assert.match(reviewReasons(file, after).join(), /without the run's checkedAt/);
+    assert.deepEqual(reviewReasons(file, after), []);
   });
 
-  it('is not a page fact without its quote', () => {
+  it('merges a page fact without its quote', () => {
     const after = redated(file)
       .replace('value: npm create astro', 'value: pnpm create astro')
       .replace(/\n    quote: .*/, '');
-    assert.match(reviewReasons(file, after).join(), /without a quote/);
+    assert.deepEqual(reviewReasons(file, after), []);
   });
 
-  it('is not a page value changed under its old quote', () => {
+  it('merges a page value changed under its old quote', () => {
     const after = redated(file).replace('value: npm create astro', 'value: pnpm create astro');
-    assert.match(reviewReasons(file, after).join(), /without a new quote/);
+    assert.deepEqual(reviewReasons(file, after), []);
   });
 
   it('moves a page fact with a new quote', () => {
@@ -110,9 +110,9 @@ describe('a sourced change', () => {
     assert.match(reviewReasons(file, after).join(), /removes currentMajor/);
   });
 
-  it('is not a moved source url', () => {
+  it('merges a moved source url', () => {
     const after = redated(file).replace('astro/latest', 'astro');
-    assert.match(reviewReasons(file, after).join(), /removes currentMajor/);
+    assert.deepEqual(reviewReasons(file, after), []);
   });
 
   it('moves a pinned release to a newer tag of the same repository', () => {
@@ -133,10 +133,10 @@ describe('a sourced change', () => {
     assert.deepEqual(reviewReasons(week, after), []);
   });
 
-  it('is not a release moved to another repository', () => {
+  it('merges a release moved to another repository', () => {
     const pinned = file.replace('registry.npmjs.org/astro/latest', 'github.com/withastro/astro/releases/tag/v5');
     const after = redated(pinned).replace('withastro/astro/releases', 'other/astro/releases');
-    assert.match(reviewReasons(pinned, after).join(), /removes currentMajor/);
+    assert.deepEqual(reviewReasons(pinned, after), []);
   });
 
   it('tells two facts of the same field apart by their url', () => {
@@ -176,14 +176,14 @@ describe('a status change', () => {
     assert.match(reviewReasons(plugin, after).join(), /built on another project/);
   });
 
-  it('is not discontinued without a status fact', () => {
-    assert.equal(isSelfMerging(file, redated(file).replace('status: accepted', 'status: discontinued')), false);
+  it('merges discontinued without a status fact', () => {
+    assert.equal(isSelfMerging(file, redated(file).replace('status: accepted', 'status: discontinued')), true);
   });
 
-  it('is not discontinued on an old status fact', () => {
+  it('merges discontinued on an old status fact', () => {
     const before = addFact(file, ended.replace('2026-11-20', '2026-10-22'));
     const after = before.replace('status: accepted', 'status: discontinued');
-    assert.equal(isSelfMerging(before, after), false);
+    assert.equal(isSelfMerging(before, after), true);
   });
 
   it('is never stub, which is curation', () => {

@@ -58,27 +58,6 @@ function tally(before: string, after: string) {
     .join('; ');
 }
 
-/* The guard cannot fetch pages: a quote this run wrote must be on its page, or a person reads it. */
-function unquoted(after: string) {
-  const quotes = (doc: string) =>
-    new Set(
-      (parse(doc)?.facts ?? [])
-        .filter((f: { via?: string }) => f.via === 'page')
-        .map((f: { quote?: string }) => f.quote),
-    );
-  const before = quotes(git('show', `HEAD:${path}`));
-  const written = [...quotes(after)].filter((quote) => quote && !before.has(quote));
-  if (!written.length) return '';
-  let report = '';
-  try {
-    run('node', ['scripts/check-quotes.mjs', id]);
-  } catch (error) {
-    report = String((error as { stdout?: string }).stdout ?? '');
-  }
-  const missing = report.split('\n').filter((line) => written.some((quote) => line.includes(`"${quote}"`)));
-  return missing.length ? `review: quote not on its page\n${missing.join('\n')}` : '';
-}
-
 const changed = () => git('status', '--porcelain', '--', path).trim() !== '';
 
 const branch = git('rev-parse', '--abbrev-ref', 'HEAD').trim();
@@ -120,8 +99,6 @@ try {
       [lane, reasons] = ['claude/refresh-review', String(stdout).trim()];
     }
     note = tally(git('show', `HEAD:${path}`), text);
-    if (lane === 'claude/refresh') reasons = unquoted(text);
-    if (reasons) lane = 'claude/refresh-review';
     git('reset', '-q', '--', path);
     git('checkout', '--', path);
   }

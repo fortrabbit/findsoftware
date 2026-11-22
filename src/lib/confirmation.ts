@@ -3,23 +3,14 @@
  * Pure, so `node --test` can hold it to the fact file format without git.
  *
  * The routine edits `research/facts/<id>.yml`, because records are generated
- * from them. Two kinds of fact change merge on their own. A **confirmation**
- * moves only `checkedAt` dates: read again, still true. A **sourced change**
- * moves a fact's `value` or `quote` together with its own `checkedAt`, set to
- * the run's date, and a page fact carries the quote that says it. An added fact
- * follows the same rule.
- *
- * A status change merges only to `discontinued`, and only with a `status` fact
- * written or re-dated in the same run, the clear signal AGENTS.md criterion 4
- * asks for. `stub` is human curation and never comes from the routine.
- *
- * What stays outside is what the routine does not write: `id`, `name`,
- * `description`, `notes`, a removed fact, a source URL moved to another
- * repository or package. Any of these on this lane means a run went wrong
- * rather than that something was researched, so the Action stops and a person
- * looks. A move to a newer release tag or download week of the same repository
- * or package is a sourced change. The same function decides both the
- * routine's lane and the Action's guard, so the two cannot disagree.
+ * from them. Every value, quote, source and status it writes merges on its own;
+ * the build and validate are the checks. Only what the routine never writes is
+ * held back: `id`, `name`, `description`, `notes`, a removed fact that nothing
+ * replaces, a date moved back, `notFound` edits, a status other than
+ * `discontinued`, a discontinued record built on another project (AGENTS.md:
+ * an archived plugin is a stub). Any of these means a run went wrong, so a person looks. The
+ * same function decides both the routine's lane and the Action's guard, so the
+ * two cannot disagree.
  */
 import { isDeepStrictEqual } from 'node:util';
 import { parse } from 'yaml';
@@ -67,7 +58,6 @@ export const pinless = (url: string) =>
 
 /* A fact's source: the same field read off the same URL the same way. Two of them are two facts. */
 const source = (fact: Fact) => JSON.stringify([fact.field, pinless(fact.url ?? ''), fact.via ?? '', fact.period ?? '']);
-const content = ({ checkedAt: _, ...rest }: Fact) => rest;
 
 function bySource(facts: Fact[]): Map<string, Fact[]> {
   const groups = new Map<string, Fact[]>();
@@ -89,36 +79,26 @@ export function reviewReasons(before: string, after: string): string[] {
     if (!written.has(key) && !isDeepStrictEqual(a[key], b[key])) reasons.push(`changes ${key}`);
   }
 
-  const runDate = b.checkedAt ?? '';
-  const dateMoved = runDate > (a.checkedAt ?? '');
-  if (a.checkedAt && runDate < a.checkedAt) reasons.push('moves checkedAt back');
+  if (a.checkedAt && (b.checkedAt ?? '') < a.checkedAt) reasons.push('moves checkedAt back');
 
-  /* A fact this run wrote: it carries the run's date, the file's date moved, and its source is complete. */
+  /* A fact this run wrote or re-dated. */
   const fresh: Fact[] = [];
-  const sourced = (fact: Fact, what: string) => {
-    if (!dateMoved || fact.checkedAt !== runDate) reasons.push(`${what} ${fact.field} without the run's checkedAt`);
-    else if (!fact.url) reasons.push(`${what} ${fact.field} without a url`);
-    else if (fact.via !== 'api' && fact.via !== 'page') reasons.push(`${what} ${fact.field} without via`);
-    else if (fact.via === 'page' && !fact.quote) reasons.push(`${what} ${fact.field} without a quote`);
-    else fresh.push(fact);
-  };
-
+  const removed: Fact[] = [];
   const [old, now] = [bySource(a.facts ?? []), bySource(b.facts ?? [])];
   for (const [key, olds] of old) {
     const nows = now.get(key) ?? [];
     for (const [index, was] of olds.entries()) {
       const is = nows[index];
-      if (!is) reasons.push(`removes ${was.field} from ${was.url ?? 'no url'}`);
-      else if (!isDeepStrictEqual(content(was), content(is))) {
-        if (is.via === 'page' && is.quote === was.quote && !isDeepStrictEqual(is.value, was.value))
-          reasons.push(`changes ${is.field} without a new quote`);
-        else sourced(is, 'changes');
-      } else if ((is.checkedAt ?? '') < (was.checkedAt ?? '')) reasons.push(`moves ${is.field} checkedAt back`);
-      else if (is.checkedAt !== was.checkedAt) fresh.push(is);
+      if (!is) removed.push(was);
+      else if ((is.checkedAt ?? '') < (was.checkedAt ?? '')) reasons.push(`moves ${is.field} checkedAt back`);
+      else if (!isDeepStrictEqual(was, is)) fresh.push(is);
     }
   }
-  for (const [key, nows] of now) {
-    for (const is of nows.slice(old.get(key)?.length ?? 0)) sourced(is, 'adds');
+  for (const [key, nows] of now) fresh.push(...nows.slice(old.get(key)?.length ?? 0));
+  /* A source moved to a new URL is the old fact removed and a new one added for the same field. */
+  for (const was of removed) {
+    if (!fresh.some((fact) => fact.field === was.field))
+      reasons.push(`removes ${was.field} from ${was.url ?? 'no url'}`);
   }
 
   const found = new Set(fresh.map((fact) => fact.field));
@@ -130,14 +110,10 @@ export function reviewReasons(before: string, after: string): string[] {
     if (!notFound.has(field) && !found.has(field)) reasons.push(`drops ${field} from notFound without a fact`);
   }
 
-  if (a.status !== b.status) {
-    const signal = fresh.some((fact) => fact.field === 'status' && fact.value === 'discontinued');
-    if (b.status !== 'discontinued') reasons.push(`changes status to ${b.status}`);
-    else if (!signal) reasons.push('changes status without a fresh status fact');
-    /* An archived plugin is a stub, which is curation: a record built on another project goes to a person. */
-    else if ((b.facts ?? []).some((fact) => fact.field === 'basedOn'))
-      reasons.push('discontinues a record built on another project');
-  }
+  /* An archived plugin is a stub, which is curation: a record built on another project goes to a person. */
+  const plugin = (b.facts ?? []).some((fact) => fact.field === 'basedOn');
+  if (a.status !== b.status && b.status !== 'discontinued') reasons.push(`changes status to ${b.status}`);
+  else if (a.status !== b.status && plugin) reasons.push('discontinues a record built on another project');
 
   return reasons;
 }

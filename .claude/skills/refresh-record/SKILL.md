@@ -29,7 +29,7 @@ pnpm install --frozen-lockfile
 
 Scratch files (pages, commit bodies) go in `${TMPDIR:-/tmp}`, never in the repository. `refresh-api.ts` finds the GitHub token itself, from `GITHUB_TOKEN` or `gh auth token`.
 
-Two lanes, decided per record in step 8: **`claude/refresh`** merges on its own, **`claude/refresh-review`** waits for a person. The rule between them is `src/lib/confirmation.ts`. Never push to `main`.
+Two lanes, decided per record in step 8: **`claude/refresh`** merges on its own, **`claude/refresh-review`** waits for a person and gets only a file the run broke (a touched `name` or `notes`, a removed fact, a date moved back). The rule between them is `src/lib/confirmation.ts`. Never push to `main`.
 
 ## 2. Pick
 
@@ -71,7 +71,7 @@ A record is **reached** when at least one page on the project's own domains was 
 
 A record that was not reached gets nothing: go to step 8 and log it `unreadable`, which undoes what step 3 wrote, so the file keeps the date that brings it back.
 
-Do not search for a replacement page. A redirect within the same domain is followed and read; the fact keeps its URL unless the old one no longer answers, and then the new URL is written and the record goes to review. Note each redirect as `moved: <url> → <final url>` for the commit body. A redirect to another domain is read for what it says (step 6) and never becomes a source.
+Do not search for a replacement page. A redirect within the same domain is followed and read; the fact keeps its URL unless the old one no longer answers, and then the new URL is written. Note each redirect as `moved: <url> → <final url>` for the commit body. A redirect to another domain is read for what it says (step 6) and never becomes a source.
 
 ## 5. Compare
 
@@ -82,7 +82,7 @@ A `via: api` fact with a quote and no reader in step 3 (a README or LICENSE read
 For every such fact whose page was read:
 
 - **The page still says it.** Set the fact's `checkedAt` to today. Leave its quote, unless check-quotes listed it: then the quote was never verbatim, so replace it with the page's exact words for the same statement.
-- **The page says something else.** Write the value the page states now, in the form the old value used (the same list shape, the same vocabulary: `categories`, `runtime`, `runsAs` and the other mapped fields keep their words), set `checkedAt` to today, and replace `quote` with the words that say it: 20 at most, copied verbatim from the raw page text, never from a summary. A changed page fact without a fresh quote goes to review.
+- **The page says something else.** Write the value the page states now, in the form the old value used (the same list shape, the same vocabulary: `categories`, `runtime`, `runsAs` and the other mapped fields keep their words), set `checkedAt` to today, and replace `quote` with the words that say it: 20 at most, copied verbatim from the raw page text, never from a summary.
 - **The page no longer mentions it.** Leave the fact as it is and report it as stale. A list the page now supports only in part is stale too: report which items it no longer names, never shorten the list on silence.
 
 When a page now names a higher stable `currentMajor` than an API fact holds, do not change the API fact; note it for the report as a new major. A pre-release (alpha, beta, rc) does not count.
@@ -99,7 +99,7 @@ A plugin is never `discontinued`: an archived plugin is a `stub`, which is curat
 
 A move is not an end: an archived repository or deprecated package that names a new home for the same project keeps the status. Report the new home.
 
-On a signal, set `status: discontinued` and add a `status` fact with value `discontinued`, the URL that shows it, today's `checkedAt`, and either `via: api` with the API URL step 3 printed (the repository for archived, the package for abandoned or deprecated) or `via: page` with the quote. Without that fact the change goes to review. When `notes` says something the new status contradicts, report it under status changes: notes are a person's to edit.
+On a signal, set `status: discontinued` and add a `status` fact with value `discontinued`, the URL that shows it, today's `checkedAt`, and either `via: api` with the API URL step 3 printed (the repository for archived, the package for abandoned or deprecated) or `via: page` with the quote. Write that fact every time: it is the evidence a reader sees. When `notes` says something the new status contradicts, report it under status changes: notes are a person's to edit.
 
 Release age is never the routine's business: the import stubs a record with no release in four years.
 
