@@ -31,10 +31,10 @@ installMethod: npm create astro@latest -- --template starlight, npx astro add st
 licenseModel: open-source
 license: MIT
 currentMajor: "0"
-latestReleaseDate: 2026-10-08
-githubStargazers: 9426
-npmWeeklyDownloads: 884121
-contributors: 353
+latestReleaseDate: 2026-11-13
+githubStargazers: 9635
+npmWeeklyDownloads: 2734007
+contributors: 374
 pluginCount: 53
 httpArchiveSites: 372
 dependentRepos: 35
@@ -42,86 +42,86 @@ dependentPackages: 30
 social:
   discord: https://astro.build/chat
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-22
 sources:
   - field: urls
     url: https://github.com/withastro/starlight
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://github.com/withastro/starlight
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://starlight.astro.build/getting-started/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: firstRelease
     url: https://registry.npmjs.org/@astrojs/starlight
     checkedAt: 2026-10-18
   - field: maintainer
     url: https://starlight.astro.build/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: maintainerType
     url: https://starlight.astro.build/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: category
     url: https://starlight.astro.build/getting-started/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: basedOn
     url: https://registry.npmjs.org/@astrojs/starlight/latest
     checkedAt: 2026-10-18
   - field: basedOn
     url: https://starlight.astro.build/getting-started/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: language
     url: https://github.com/withastro/starlight
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: runtime
     url: https://starlight.astro.build/getting-started/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: contentStore
     url: https://starlight.astro.build/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: templating
     url: https://starlight.astro.build/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: i18n
     url: https://starlight.astro.build/guides/i18n/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: renderingModes
     url: https://starlight.astro.build/manual-setup/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: installMethod
     url: https://starlight.astro.build/getting-started/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: installMethod
     url: https://starlight.astro.build/manual-setup/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: license
     url: https://github.com/withastro/starlight
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: license
     url: https://registry.npmjs.org/@astrojs/starlight/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: licenseModel
     url: https://github.com/withastro/starlight
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://registry.npmjs.org/@astrojs/starlight/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: latestReleaseDate
     url: https://github.com/withastro/starlight/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: githubStargazers
     url: https://github.com/withastro/starlight
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: contributors
     url: https://api.github.com/repos/withastro/starlight/contributors?anon=true
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@astrojs/starlight
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://starlight.astro.build/resources/plugins/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: pluginCount
     url: https://starlight.astro.build/resources/plugins/
     checkedAt: 2026-10-18
