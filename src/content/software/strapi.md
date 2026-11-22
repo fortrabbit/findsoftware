@@ -5,7 +5,7 @@ urls:
   home: https://strapi.io
   repository: https://github.com/strapi/strapi
   docs: https://docs.strapi.io
-  pricing: https://strapi.io/pricing-self-hosted
+  pricing: https://strapi.io/pricing-cms
   plugins: https://community.strapi.io/marketplace
 category:
   - headless-cms
@@ -19,7 +19,7 @@ runtime:
   - node
 hosting:
   - node
-runtimeMin: node 20
+runtimeMin: node 22
 basedOn:
   - react
 contentStore:
@@ -42,8 +42,8 @@ installMethod: npx create-strapi@latest, npm create strapi@latest
 licenseModel: open-core
 license: MIT (Community Edition); ee/ directories under the Strapi Enterprise license, NOASSERTION, SEE LICENSE IN LICENSE
 currentMajor: "5"
-latestReleaseDate: 2026-10-14
-githubStargazers: 73332
+latestReleaseDate: 2026-11-18
+githubStargazers: 73535
 npmWeeklyDownloads: 131609
 contributors: 344
 httpArchiveSites: 14
@@ -56,104 +56,104 @@ social:
   instagram: https://www.instagram.com/strapijs/
 wikidata: Q105826887
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-22
 sources:
   - field: name
     url: https://strapi.io/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://api.github.com/repos/strapi/strapi
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://api.github.com/repos/strapi/strapi
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://strapi.io/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: maintainer
-    url: https://strapi.io/terms
-    checkedAt: 2026-10-18
+    url: https://strapi.io/terms-of-use
+    checkedAt: 2026-11-22
   - field: maintainer
     url: https://github.com/strapi/strapi/blob/main/LICENSE
     checkedAt: 2026-10-18
   - field: maintainerType
-    url: https://strapi.io/terms
-    checkedAt: 2026-10-18
+    url: https://strapi.io/terms-of-use
+    checkedAt: 2026-11-22
   - field: hqCountry
-    url: https://strapi.io/terms
-    checkedAt: 2026-10-18
+    url: https://strapi.io/terms-of-use
+    checkedAt: 2026-11-22
   - field: category
     url: https://strapi.io/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: basedOn
     url: https://registry.npmjs.org/@strapi/strapi/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: language
     url: https://strapi.io/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: runtime
     url: https://docs.strapi.io/cms/installation/cli
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: runtimeMin
     url: https://registry.npmjs.org/@strapi/strapi/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: runtimeMin
     url: https://docs.strapi.io/cms/installation/cli
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: contentStore
     url: https://docs.strapi.io/cms/installation/cli
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: databases
     url: https://docs.strapi.io/cms/installation/cli
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: adminUi
     url: https://docs.strapi.io/cms/intro
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: headlessApi
     url: https://docs.strapi.io/cms/intro
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: i18n
     url: https://docs.strapi.io/cms/features/internationalization
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: renderingModes
     url: https://docs.strapi.io/cms/intro
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: installMethod
     url: https://docs.strapi.io/cms/installation/cli
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: license
     url: https://github.com/strapi/strapi/blob/main/LICENSE
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: license
     url: https://api.github.com/repos/strapi/strapi
     checkedAt: 2026-10-18
   - field: license
     url: https://registry.npmjs.org/@strapi/strapi/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: licenseModel
     url: https://github.com/strapi/strapi/blob/main/LICENSE
     checkedAt: 2026-10-18
   - field: urls
-    url: https://strapi.io/pricing-self-hosted
-    checkedAt: 2026-10-18
+    url: https://strapi.io/pricing-cms
+    checkedAt: 2026-11-22
   - field: currentMajor
     url: https://api.github.com/repos/strapi/strapi/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: latestReleaseDate
     url: https://api.github.com/repos/strapi/strapi/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: githubStargazers
     url: https://api.github.com/repos/strapi/strapi
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: contributors
     url: https://api.github.com/repos/strapi/strapi/contributors
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@strapi/strapi
     checkedAt: 2026-10-18
   - field: urls
     url: https://strapi.io/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: wikidata
     url: https://www.wikidata.org/wiki/Special:EntityData/Q105826887.json
     checkedAt: 2026-10-18
