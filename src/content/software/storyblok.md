@@ -6,7 +6,7 @@ urls:
   repository: https://github.com/storyblok/monoblok
   docs: https://www.storyblok.com/docs
   pricing: https://www.storyblok.com/pricing
-  plugins: https://www.storyblok.com/apps
+  plugins: https://www.storyblok.com/app-store
 category:
   - headless-cms
 description: Hosted headless content management system with a visual editor, delivering content through REST and GraphQL APIs.
@@ -23,9 +23,9 @@ i18n: field-level and folder-level translation
 licenseModel: saas
 license: MIT
 currentMajor: "4"
-latestReleaseDate: 2026-10-09
-githubStargazers: 68
-npmWeeklyDownloads: 135386
+latestReleaseDate: 2026-11-20
+githubStargazers: 69
+npmWeeklyDownloads: 342251
 httpArchiveSites: 4165
 dependentRepos: 127
 dependentPackages: 18
@@ -35,77 +35,77 @@ social:
   youtube: https://www.youtube.com/c/Storyblok-com
 wikidata: Q132654610
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-22
 sources:
   - field: name
     url: https://www.storyblok.com/about
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://api.github.com/orgs/storyblok
     checkedAt: 2026-10-18
   - field: urls
     url: https://api.github.com/repos/storyblok/monoblok
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://www.storyblok.com/docs
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: maintainer
     url: https://www.storyblok.com/about
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: maintainerType
     url: https://www.storyblok.com/about
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: hqCountry
     url: https://api.github.com/orgs/storyblok
     checkedAt: 2026-10-18
   - field: hqCountry
     url: https://www.storyblok.com/about
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q132654610
     checkedAt: 2026-10-18
   - field: category
     url: https://www.storyblok.com/about
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: adminUi
     url: https://www.storyblok.com/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: headlessApi
     url: https://www.storyblok.com/docs/api/graphql
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: i18n
     url: https://www.storyblok.com/docs/concepts/internationalization
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: licenseModel
     url: https://www.storyblok.com/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: license
     url: https://api.github.com/repos/storyblok/monoblok
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://www.storyblok.com/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: language
     url: https://api.github.com/repos/storyblok/monoblok
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: currentMajor
     url: https://api.github.com/repos/storyblok/monoblok/releases/latest
     checkedAt: 2026-10-18
   - field: latestReleaseDate
     url: https://api.github.com/repos/storyblok/monoblok/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: githubStargazers
     url: https://api.github.com/repos/storyblok/monoblok
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@storyblok/js
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/storyblok-js-client
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
-    url: https://www.storyblok.com/apps
-    checkedAt: 2026-10-18
+    url: https://www.storyblok.com/app-store
+    checkedAt: 2026-11-22
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25

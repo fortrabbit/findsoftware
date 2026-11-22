@@ -45,11 +45,11 @@ installMethod: statamic new (Statamic CLI), composer create-project statamic/sta
 licenseModel: source-available
 license: proprietary, Statamic License (custom, not SPDX)
 currentMajor: "6"
-latestReleaseDate: 2026-10-16
-githubStargazers: 4906
-packagistDownloads: 4268843
-contributors: 365
-pluginCount: 490
+latestReleaseDate: 2026-11-21
+githubStargazers: 4923
+packagistDownloads: 4666494
+contributors: 379
+pluginCount: 532
 packagistMonthlyDownloads: 237310
 httpArchiveSites: 2200
 dependentRepos: 388
@@ -60,74 +60,74 @@ social:
   mastodon: https://mastodon.social/@statamic
   discord: https://statamic.com/discord
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-22
 sources:
   - field: name
     url: https://statamic.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://api.github.com/repos/statamic/cms
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://packagist.org/packages/statamic/cms.json
     checkedAt: 2026-10-18
   - field: urls
-    url: https://statamic.dev/requirements
-    checkedAt: 2026-10-18
+    url: https://statamic.dev/getting-started/requirements
+    checkedAt: 2026-11-22
   - field: maintainer
     url: https://statamic.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: maintainerType
     url: https://statamic.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: hqCountry
     url: https://api.github.com/orgs/statamic
     checkedAt: 2026-10-18
   - field: category
     url: https://statamic.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: basedOn
     url: https://repo.packagist.org/p2/statamic/cms.json
     checkedAt: 2026-10-18
   - field: basedOn
     url: https://statamic.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: language
-    url: https://statamic.dev/requirements
-    checkedAt: 2026-10-18
+    url: https://statamic.dev/getting-started/requirements
+    checkedAt: 2026-11-22
   - field: runtime
-    url: https://statamic.dev/requirements
-    checkedAt: 2026-10-18
+    url: https://statamic.dev/getting-started/requirements
+    checkedAt: 2026-11-22
   - field: runtimeMin
-    url: https://statamic.dev/requirements
-    checkedAt: 2026-10-18
+    url: https://statamic.dev/getting-started/requirements
+    checkedAt: 2026-11-22
   - field: contentStore
     url: https://statamic.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: databases
-    url: https://statamic.dev/tips/storing-content-in-a-database
-    checkedAt: 2026-10-18
+    url: https://statamic.dev/knowledge-base/tips/storing-content-in-a-database
+    checkedAt: 2026-11-22
   - field: adminUi
     url: https://statamic.com/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: headlessApi
-    url: https://statamic.dev/rest-api
-    checkedAt: 2026-10-18
+    url: https://statamic.dev/frontend/rest-api
+    checkedAt: 2026-11-22
   - field: headlessApi
     url: https://statamic.com/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: templating
     url: https://statamic.dev/frontend/antlers
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: i18n
     url: https://statamic.com/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: renderingModes
-    url: https://statamic.dev/static-caching
-    checkedAt: 2026-10-18
+    url: https://statamic.dev/advanced-topics/static-caching
+    checkedAt: 2026-11-22
   - field: installMethod
-    url: https://statamic.dev/installing/local
-    checkedAt: 2026-10-18
+    url: https://statamic.dev/getting-started/installing/local
+    checkedAt: 2026-11-22
   - field: license
     url: https://packagist.org/packages/statamic/cms.json
     checkedAt: 2026-10-18
@@ -139,31 +139,31 @@ sources:
     checkedAt: 2026-10-18
   - field: urls
     url: https://statamic.com/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: currentMajor
     url: https://api.github.com/repos/statamic/cms/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: latestReleaseDate
     url: https://api.github.com/repos/statamic/cms/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: githubStargazers
     url: https://api.github.com/repos/statamic/cms
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: contributors
     url: https://api.github.com/repos/statamic/cms/contributors
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: packagistDownloads
     url: https://packagist.org/packages/statamic/cms.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://statamic.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: pluginCount
-    url: https://statamic.com/marketplace/addons
-    checkedAt: 2026-10-18
+    url: https://statamic.com/addons
+    checkedAt: 2026-11-22
   - field: runsAs
     url: https://statamic.dev/getting-started/deploying
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-22
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25
