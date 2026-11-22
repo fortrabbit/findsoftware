@@ -36,7 +36,7 @@ license: MIT
 currentMajor: "8"
 latestReleaseDate: 2026-10-14
 githubStargazers: 31191
-packagistDownloads: 88119012
+packagistDownloads: 88508865
 packagistMonthlyDownloads: 282085
 httpArchiveSites: 10960
 dependentRepos: 22779
@@ -48,11 +48,11 @@ social:
   forum: https://github.com/symfony/symfony/discussions
 wikidata: Q1322933
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-22
 sources:
   - field: name
     url: https://symfony.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://github.com/symfony/symfony
     checkedAt: 2026-10-18
@@ -61,49 +61,49 @@ sources:
     checkedAt: 2026-10-18
   - field: urls
     url: https://symfony.com/doc/current/setup.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: maintainer
     url: https://sensiolabs.com/legal/notice
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: maintainerType
     url: https://sensiolabs.com/legal/notice
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: hqCountry
     url: https://sensiolabs.com/legal/notice
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q1322933
     checkedAt: 2026-10-18
   - field: category
     url: https://symfony.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: language
     url: https://github.com/symfony/symfony
     checkedAt: 2026-10-18
   - field: runtime
     url: https://symfony.com/doc/current/setup.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: runtimeMin
     url: https://repo.packagist.org/p2/symfony/symfony.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: runtimeMin
     url: https://symfony.com/doc/current/setup.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: databases
     url: https://symfony.com/doc/current/doctrine.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: templating
     url: https://symfony.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: i18n
     url: https://symfony.com/doc/current/translation.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: renderingModes
     url: https://symfony.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: installMethod
     url: https://symfony.com/doc/current/setup.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: license
     url: https://github.com/symfony/symfony
     checkedAt: 2026-10-18
@@ -121,16 +121,16 @@ sources:
     checkedAt: 2026-10-18
   - field: packagistDownloads
     url: https://packagist.org/packages/symfony/symfony.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: packagistDownloads
     url: https://packagist.org/packages/symfony/framework-bundle.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://symfony.com/bundles
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: runsAs
     url: https://symfony.com/doc/current/setup.html
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-22
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25

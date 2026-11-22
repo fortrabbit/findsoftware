@@ -6,7 +6,7 @@ urls:
   repository: https://github.com/Sylius/Sylius
   docs: https://docs.sylius.com/public
   pricing: https://sylius.com/plus/
-  plugins: https://store.sylius.com/
+  plugins: https://addons.sylius.com/en_US/
 category:
   - e-commerce
   - framework
@@ -41,18 +41,18 @@ license: MIT
 currentMajor: "2"
 latestReleaseDate: 2026-10-14
 githubStargazers: 8560
-packagistDownloads: 6391247
+packagistDownloads: 6607204
 contributors: 324
 httpArchiveSites: 175
 social:
   x: https://twitter.com/Sylius
 wikidata: Q97379963
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-22
 sources:
   - field: name
     url: https://sylius.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://api.github.com/repos/Sylius/Sylius
     checkedAt: 2026-10-18
@@ -61,25 +61,25 @@ sources:
     checkedAt: 2026-10-18
   - field: urls
     url: https://docs.sylius.com/public
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: firstRelease
     url: https://docs.sylius.com/public/open-source/release-cycle.md
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: maintainer
     url: https://sylius.com/terms-and-conditions
-    checkedAt: 2026-10-20
+    checkedAt: 2026-11-22
   - field: maintainerType
     url: https://sylius.com/plus/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: hqCountry
     url: https://sylius.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: wikidata
     url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Sylius&language=en&format=json
     checkedAt: 2026-10-18
   - field: category
     url: https://sylius.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: basedOn
     url: https://repo.packagist.org/p2/sylius/sylius.json
     checkedAt: 2026-10-18
@@ -91,22 +91,22 @@ sources:
     checkedAt: 2026-10-18
   - field: runtime
     url: https://docs.sylius.com/public/getting-started/before-you-begin.md
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: runtimeMin
     url: https://repo.packagist.org/p2/sylius/sylius.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: runtimeMin
     url: https://docs.sylius.com/public/getting-started/before-you-begin.md
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: contentStore
     url: https://docs.sylius.com/public/getting-started/before-you-begin.md
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: databases
     url: https://docs.sylius.com/public/getting-started/before-you-begin.md
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: adminUi
     url: https://docs.sylius.com/public/getting-started/before-you-begin.md
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: headlessApi
     url: https://api.github.com/repos/Sylius/Sylius-Standard/readme
     checkedAt: 2026-10-18
@@ -121,10 +121,10 @@ sources:
     checkedAt: 2026-10-18
   - field: licenseModel
     url: https://sylius.com/plus/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://sylius.com/plus/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: currentMajor
     url: https://api.github.com/repos/Sylius/Sylius/releases/latest
     checkedAt: 2026-10-18
@@ -139,13 +139,13 @@ sources:
     checkedAt: 2026-10-18
   - field: packagistDownloads
     url: https://packagist.org/packages/sylius/sylius.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: packagistDownloads
     url: https://packagist.org/packages/sylius/sylius-standard.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: urls
     url: https://sylius.com/plugins/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-22
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25
