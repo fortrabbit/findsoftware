@@ -67,8 +67,18 @@ describe('momentumOf', () => {
 describe('measurable', () => {
   it('reads a GitHub repository or a download figure', () => {
     assert.equal(measurable({ urls: { repository: 'https://github.com/laravel/framework' } }), true);
-    assert.equal(measurable({ sources: [{ field: 'npmWeeklyDownloads', url: 'https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/zod' }] }), true);
-    assert.equal(measurable({ sources: [{ field: 'npmWeeklyDownloads', url: 'https://www.npmjs.com/package/zod' }] }), false);
+    assert.equal(
+      measurable({
+        sources: [
+          { field: 'npmWeeklyDownloads', url: 'https://api.npmjs.org/downloads/range/2026-11-01:2026-11-07/zod' },
+        ],
+      }),
+      true,
+    );
+    assert.equal(
+      measurable({ sources: [{ field: 'npmWeeklyDownloads', url: 'https://www.npmjs.com/package/zod' }] }),
+      false,
+    );
     assert.equal(measurable({ urls: { repository: 'https://gitlab.com/a/b' } }), false);
     assert.equal(measurable({}), false);
   });

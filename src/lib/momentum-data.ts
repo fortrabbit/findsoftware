@@ -28,7 +28,10 @@ const make = async (): Promise<Map<string, Verdict>> => {
    * use. Dated as of the newest measurement, so the cut does not move with the
    * build date.
    */
-  const today = Object.values(figures).reduce((newest, entry) => (entry.checkedAt > newest ? entry.checkedAt : newest), '');
+  const today = Object.values(figures).reduce(
+    (newest, entry) => (entry.checkedAt > newest ? entry.checkedAt : newest),
+    '',
+  );
   for (const entry of (await loadSoftware()).filter(isListed)) {
     const held = Object.hasOwn(figures, entry.id) ? figures[entry.id] : undefined;
     const own = held ?? (today && !measurable(entry.data as never) ? { checkedAt: today } : undefined);

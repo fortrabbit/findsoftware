@@ -6,7 +6,6 @@ import { loadProviders } from './providers';
 import { figuresOf, usageBands, usagePlaces } from './usage';
 import { cached } from './dev-cache';
 
-
 const records = async () =>
   (await loadProviders()).map((provider) => ({ id: provider.id, figures: figuresOf(provider.data) }));
 
