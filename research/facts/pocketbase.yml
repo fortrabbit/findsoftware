@@ -15,10 +15,11 @@ facts:
     checkedAt: 2026-11-23
     via: api
   - field: repository
-    value: https://github.com/pocketbase/pocketbase
-    url: https://github.com/pocketbase/pocketbase
+    value: https://ganigeorgiev.com/pocketbase/pocketbase
+    url: https://raw.githubusercontent.com/pocketbase/pocketbase/master/README.md
     checkedAt: 2026-11-23
-    via: api
+    via: page
+    quote: "The repo has moved to https://ganigeorgiev.com/pocketbase/pocketbase."
   - field: docs
     value: https://pocketbase.io/docs/
     url: https://pocketbase.io/docs/
@@ -53,14 +54,10 @@ facts:
     via: page
   - field: currentMajor
     value: 0
-    url: https://github.com/pocketbase/pocketbase/releases/latest
+    url: https://pocketbase.io/
     checkedAt: 2026-11-23
-    via: api
-  - field: latestReleaseDate
-    value: 2026-10-23
-    url: https://github.com/pocketbase/pocketbase/releases/latest
-    checkedAt: 2026-11-23
-    via: api
+    via: page
+    quote: "v0.42.3"
   - field: license
     value: MIT
     url: https://github.com/pocketbase/pocketbase
@@ -131,7 +128,7 @@ facts:
     url: https://api.github.com/users/pocketbase
     checkedAt: 2026-11-23
     via: api
-notFound: [hqCountry, firstRelease, runtimeMin, eolPolicy, releaseCadence, paidEditions, pricingPage, freeTier, parent, contributors, pluginDirectory, pluginCount, starters, i18n, multisite, sso, serverNeeds, renderingModes, endoflifeId, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, packagistName, npmName, pypiDownloads, npmWeeklyDownloads, packagistDownloads, wikidata, deployTargets, regions, apiLimits]
+notFound: [hqCountry, firstRelease, runtimeMin, eolPolicy, releaseCadence, paidEditions, pricingPage, freeTier, parent, contributors, pluginDirectory, pluginCount, starters, i18n, multisite, sso, serverNeeds, renderingModes, endoflifeId, discord, subreddit, mastodon, bluesky, x, newsletter, usageShare, packagistName, npmName, pypiDownloads, npmWeeklyDownloads, packagistDownloads, wikidata, deployTargets, regions, apiLimits, latestReleaseDate]
 unreadable: ["https://pocketbase.io/about (404)"]
 notes: >
-  PocketBase is pre-1.0 (v0.40.5), so currentMajor is recorded as 0. The docs say it can be used as a Go framework and as a standalone application; the Go framework install is recorded as go-framework, with no version detail. The homepage lists a JavaScript SDK and a Dart SDK on the docs page; these are client libraries and are not separate records. The docs say "Realtime" and "Authentication" are built in, and the page names file storage and backups (Settings > Backups in the dashboard). The Gani Georgiev name comes from the LICENSE copyright line and the docs footer; the pages name no company. Fields coined here: none.
+  The GitHub repository was archived on 2026-10-26 and its README names the new home; that host offers no release API and pocketbase.io names the version (v0.42.3) without a date, so the release date is unknown. The GitHub star count is the archived repository's. PocketBase is pre-1.0 (v0.40.5), so currentMajor is recorded as 0. The docs say it can be used as a Go framework and as a standalone application; the Go framework install is recorded as go-framework, with no version detail. The homepage lists a JavaScript SDK and a Dart SDK on the docs page; these are client libraries and are not separate records. The docs say "Realtime" and "Authentication" are built in, and the page names file storage and backups (Settings > Backups in the dashboard). The Gani Georgiev name comes from the LICENSE copyright line and the docs footer; the pages name no company. Fields coined here: none.
