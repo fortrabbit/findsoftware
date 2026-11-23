@@ -30,9 +30,9 @@ installMethod: Spring Initializr (start.spring.io), Maven, Gradle, Spring Boot C
 licenseModel: open-source
 license: Apache-2.0
 currentMajor: "4"
-latestReleaseDate: 2026-08-20
-githubStargazers: 81707
-contributors: 1647
+latestReleaseDate: 2026-11-19
+githubStargazers: 82021
+contributors: 1678
 social:
   x: https://x.com/springboot
   bluesky: https://bsky.app/profile/spring.io
@@ -40,86 +40,86 @@ social:
   youtube: https://www.youtube.com/user/SpringSourceDev
 wikidata: Q98731994
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-23
 sources:
   - field: name
     url: https://spring.io/projects/spring-boot
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: urls
     url: https://github.com/spring-projects/spring-boot
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: urls
     url: https://github.com/spring-projects/spring-boot
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: urls
     url: https://docs.spring.io/spring-boot/system-requirements.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: firstRelease
     url: https://repo1.maven.org/maven2/org/springframework/boot/spring-boot/1.0.0.RELEASE/
     checkedAt: 2026-10-18
   - field: maintainer
     url: https://spring.io/
-    checkedAt: 2026-10-20
+    checkedAt: 2026-11-23
   - field: maintainerType
     url: https://spring.io/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q98731994
     checkedAt: 2026-10-18
   - field: category
     url: https://spring.io/projects/spring-boot
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: basedOn
     url: https://docs.spring.io/spring-boot/system-requirements.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: language
     url: https://github.com/spring-projects/spring-boot
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: runtime
     url: https://docs.spring.io/spring-boot/system-requirements.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: runtimeMin
     url: https://docs.spring.io/spring-boot/system-requirements.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: runtimeMin
     url: https://endoflife.date/api/spring-boot.json
     checkedAt: 2026-10-18
   - field: templating
     url: https://docs.spring.io/spring-boot/reference/web/servlet.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: i18n
     url: https://docs.spring.io/spring-boot/reference/features/internationalization.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: renderingModes
     url: https://docs.spring.io/spring-boot/reference/web/servlet.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: installMethod
     url: https://docs.spring.io/spring-boot/installing.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: installMethod
     url: https://spring.io/projects/spring-boot
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: license
     url: https://github.com/spring-projects/spring-boot
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: licenseModel
     url: https://github.com/spring-projects/spring-boot
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://github.com/spring-projects/spring-boot/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: latestReleaseDate
     url: https://github.com/spring-projects/spring-boot/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: githubStargazers
     url: https://github.com/spring-projects/spring-boot
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: contributors
     url: https://api.github.com/repos/spring-projects/spring-boot/contributors?anon=true
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: runsAs
     url: https://docs.spring.io/spring-boot/reference/using/running-your-application.html
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null
