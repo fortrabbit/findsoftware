@@ -9,7 +9,7 @@ category:
   - framework
   - library
 description: Middleware framework for handling HTTP requests across Deno, Node.js, Bun and Cloudflare Workers.
-status: active
+status: discontinued
 maintainer: the oak authors
 maintainerType: community
 language: javascript
@@ -27,47 +27,47 @@ licenseModel: open-source
 license: MIT
 currentMajor: "17"
 latestReleaseDate: 2025-11-22
-githubStargazers: 5407
-npmWeeklyDownloads: 102
+githubStargazers: 5404
+npmWeeklyDownloads: 497
 contributors: 83
 dependentRepos: 1
 dependentPackages: 2
 addedAt: 2026-10-22
-checkedAt: 2026-10-22
+checkedAt: 2026-11-23
 sources:
   - field: urls
     url: https://api.github.com/repos/oakserver/oak
-    checkedAt: 2026-10-22
+    checkedAt: 2026-11-23
   - field: urls
     url: https://api.github.com/repos/oakserver/oak
-    checkedAt: 2026-10-22
+    checkedAt: 2026-11-23
   - field: urls
     url: https://oakserver.org
-    checkedAt: 2026-10-22
+    checkedAt: 2026-11-23
   - field: maintainer
     url: https://raw.githubusercontent.com/oakserver/oak/main/LICENSE
-    checkedAt: 2026-10-22
+    checkedAt: 2026-11-23
   - field: language
     url: https://api.github.com/repos/oakserver/oak
-    checkedAt: 2026-10-22
+    checkedAt: 2026-11-23
   - field: category
     url: https://oakserver.org
-    checkedAt: 2026-10-22
+    checkedAt: 2026-11-23
   - field: runtime
     url: https://oakserver.org
-    checkedAt: 2026-10-22
+    checkedAt: 2026-11-23
   - field: runtimeMin
     url: https://github.com/oakserver/oak/blob/main/README.md
-    checkedAt: 2026-10-22
+    checkedAt: 2026-11-23
   - field: installMethod
     url: https://github.com/oakserver/oak/blob/main/README.md
-    checkedAt: 2026-10-22
+    checkedAt: 2026-11-23
   - field: license
     url: https://github.com/oakserver/oak/blob/main/LICENSE
-    checkedAt: 2026-10-22
+    checkedAt: 2026-11-23
   - field: licenseModel
     url: https://github.com/oakserver/oak/blob/main/LICENSE
-    checkedAt: 2026-10-22
+    checkedAt: 2026-11-23
   - field: currentMajor
     url: https://jsr.io/@oak/oak/meta.json
     checkedAt: 2026-10-22
@@ -76,19 +76,22 @@ sources:
     checkedAt: 2026-10-22
   - field: githubStargazers
     url: https://api.github.com/repos/oakserver/oak
-    checkedAt: 2026-10-22
+    checkedAt: 2026-11-23
   - field: contributors
     url: https://api.github.com/repos/oakserver/oak/contributors
     checkedAt: 2026-10-22
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@oakserver/oak
-    checkedAt: 2026-10-22
+    checkedAt: 2026-11-23
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40oakserver%2Foak
     checkedAt: 2026-10-25
   - field: dependentPackages
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40oakserver%2Foak
     checkedAt: 2026-10-25
+  - field: status
+    url: https://api.github.com/repos/oakserver/oak
+    checkedAt: 2026-11-23
 ai: authored
 packagistDownloads: null
 ---

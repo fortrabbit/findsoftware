@@ -8,7 +8,7 @@ category:
   - ssg
   - media
 description: Ruby static site generator that builds photo galleries from folders of photos and YAML metadata.
-status: stub
+status: discontinued
 maintainer: Henry Lawson
 maintainerType: individual
 firstRelease: 2016
@@ -35,83 +35,86 @@ githubStargazers: 152
 contributors: 3
 dependentRepos: 1
 addedAt: 2026-10-23
-checkedAt: 2026-10-23
+checkedAt: 2026-11-23
 sources:
   - field: urls
     url: https://api.github.com/repos/henrylawson/photish
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: urls
     url: https://github.com/henrylawson/photish/blob/master/README.md
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: maintainer
     url: https://raw.githubusercontent.com/henrylawson/photish/master/LICENSE.txt
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: language
     url: https://api.github.com/repos/henrylawson/photish
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: category
     url: https://github.com/henrylawson/photish/blob/master/README.md
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: runtime
     url: https://github.com/henrylawson/photish/blob/master/README.md
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: runtimeMin
     url: https://github.com/henrylawson/photish/blob/master/README.md
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: installMethod
     url: https://github.com/henrylawson/photish/blob/master/README.md
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: installMethod
     url: https://github.com/henrylawson/photish/blob/master/README.md
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: installMethod
     url: https://github.com/henrylawson/photish/blob/master/README.md
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: installMethod
     url: https://github.com/henrylawson/photish/blob/master/README.md
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: installMethod
     url: https://github.com/henrylawson/photish/blob/master/README.md
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: runsAs
     url: https://github.com/henrylawson/photish/blob/master/README.md
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: runsAs
     url: https://github.com/henrylawson/photish/blob/master/README.md
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: renderingModes
     url: https://github.com/henrylawson/photish/blob/master/README.md
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: templating
     url: https://github.com/henrylawson/photish/blob/master/README.md
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: contentStore
     url: https://github.com/henrylawson/photish/blob/master/README.md
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: license
     url: https://api.github.com/repos/henrylawson/photish
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: licenseModel
     url: https://raw.githubusercontent.com/henrylawson/photish/master/LICENSE.txt
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: firstRelease
     url: https://api.github.com/repos/henrylawson/photish/releases
     checkedAt: 2026-10-23
   - field: currentMajor
     url: https://api.github.com/repos/henrylawson/photish/releases
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: latestReleaseDate
     url: https://api.github.com/repos/henrylawson/photish/releases
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: githubStargazers
     url: https://api.github.com/repos/henrylawson/photish
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: contributors
     url: https://api.github.com/repos/henrylawson/photish/contributors
-    checkedAt: 2026-10-23
+    checkedAt: 2026-11-23
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/rubygems.org/packages/photish
     checkedAt: 2026-10-25
+  - field: status
+    url: https://api.github.com/repos/henrylawson/photish
+    checkedAt: 2026-11-23
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null

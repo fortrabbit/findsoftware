@@ -2,7 +2,6 @@
 id: slim
 name: Slim
 urls:
-  home: https://www.slimframework.com
   repository: https://github.com/slimphp/Slim
   docs: https://www.slimframework.com/docs/v4/
 category:
@@ -28,29 +27,29 @@ licenseModel: open-source
 license: MIT
 currentMajor: "4"
 latestReleaseDate: 2026-09-01
-githubStargazers: 12276
-packagistDownloads: 57412755
-contributors: 227
+githubStargazers: 12286
+packagistDownloads: 59517167
+contributors: 229
 packagistMonthlyDownloads: 1494272
 dependentRepos: 19403
 dependentPackages: 1313
 social:
   forum: https://discourse.slimframework.com/
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-23
 sources:
   - field: name
     url: https://www.slimframework.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: urls
     url: https://github.com/slimphp/Slim
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: urls
     url: https://packagist.org/packages/slim/slim
     checkedAt: 2026-10-18
   - field: urls
     url: https://www.slimframework.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: firstRelease
     url: https://packagist.org/packages/slim/slim
     checkedAt: 2026-10-18
@@ -59,55 +58,55 @@ sources:
     checkedAt: 2026-10-20
   - field: maintainerType
     url: https://www.slimframework.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: category
     url: https://www.slimframework.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: language
     url: https://github.com/slimphp/Slim
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: runtime
     url: https://www.slimframework.com/docs/v4/start/installation.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: runtimeMin
     url: https://repo.packagist.org/p2/slim/slim.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: runtimeMin
     url: https://www.slimframework.com/docs/v4/start/installation.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: templating
     url: https://www.slimframework.com/docs/v4/features/templates.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: renderingModes
     url: https://www.slimframework.com/docs/v4/start/web-servers.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: installMethod
     url: https://www.slimframework.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: license
     url: https://github.com/slimphp/Slim
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: licenseModel
     url: https://github.com/slimphp/Slim
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://github.com/slimphp/Slim/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: latestReleaseDate
     url: https://github.com/slimphp/Slim/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: githubStargazers
     url: https://github.com/slimphp/Slim
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: contributors
     url: https://github.com/slimphp/Slim/graphs/contributors
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: packagistDownloads
     url: https://packagist.org/packages/slim/slim
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: runsAs
     url: https://www.slimframework.com/docs/v4/start/installation.html
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/slim%2Fslim
     checkedAt: 2026-10-25

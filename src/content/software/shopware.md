@@ -2,7 +2,7 @@
 id: shopware
 name: Shopware
 urls:
-  home: https://www.shopware.com
+  home: https://shopware.com
   repository: https://github.com/shopware/shopware
   docs: https://developer.shopware.com/docs/
   pricing: https://www.shopware.com/en/pricing/
@@ -40,10 +40,10 @@ installMethod: shopware-cli project create, docker via shopware-cli, local php a
 licenseModel: open-core
 license: MIT
 currentMajor: "6"
-latestReleaseDate: 2026-10-07
-githubStargazers: 3450
-packagistDownloads: 6294025
-contributors: 267
+latestReleaseDate: 2026-11-18
+githubStargazers: 3478
+packagistDownloads: 6667860
+contributors: 269
 pluginCount: 3100
 packagistMonthlyDownloads: 246162
 httpArchiveSites: 8649
@@ -54,26 +54,26 @@ social:
   forum: https://forum.shopware.com
 wikidata: Q1805797
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-23
 sources:
   - field: name
     url: https://www.shopware.com/en/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: urls
     url: https://api.github.com/repos/shopware/shopware
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: urls
     url: https://api.github.com/repos/shopware/shopware
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: urls
     url: https://developer.shopware.com/docs/guides/installation/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: maintainer
     url: https://www.shopware.com/en/company/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: maintainerType
     url: https://www.shopware.com/en/company/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: hqCountry
     url: https://www.shopware.com/en/company/
     checkedAt: 2026-10-18
@@ -82,76 +82,76 @@ sources:
     checkedAt: 2026-10-18
   - field: category
     url: https://developer.shopware.com/docs/concepts/framework/architecture/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: basedOn
     url: https://api.github.com/repos/shopware/shopware
     checkedAt: 2026-10-18
   - field: basedOn
     url: https://developer.shopware.com/docs/concepts/framework/architecture/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: language
     url: https://api.github.com/repos/shopware/shopware
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: runtime
     url: https://developer.shopware.com/docs/guides/hosting/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: runtimeMin
     url: https://repo.packagist.org/p2/shopware/core.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: runtimeMin
     url: https://developer.shopware.com/docs/guides/hosting/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: contentStore
     url: https://developer.shopware.com/docs/guides/hosting/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: databases
     url: https://developer.shopware.com/docs/guides/hosting/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: adminUi
     url: https://developer.shopware.com/docs/concepts/framework/architecture/administration-concept.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: headlessApi
     url: https://developer.shopware.com/docs/concepts/api/store-api.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: templating
     url: https://developer.shopware.com/docs/concepts/framework/architecture/storefront-concept.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: i18n
     url: https://developer.shopware.com/docs/concepts/commerce/catalog/sales-channels.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: renderingModes
     url: https://developer.shopware.com/docs/concepts/framework/architecture/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: installMethod
     url: https://developer.shopware.com/docs/guides/installation/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: license
     url: https://api.github.com/repos/shopware/shopware
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: licenseModel
     url: https://www.shopware.com/en/pricing/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: urls
     url: https://www.shopware.com/en/pricing/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: currentMajor
     url: https://api.github.com/repos/shopware/shopware/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: latestReleaseDate
     url: https://api.github.com/repos/shopware/shopware/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: githubStargazers
     url: https://api.github.com/repos/shopware/shopware
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: contributors
     url: https://api.github.com/repos/shopware/shopware/contributors
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: packagistDownloads
     url: https://packagist.org/packages/shopware/core.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: urls
     url: https://store.shopware.com/en/extensions/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-23
   - field: pluginCount
     url: https://api.github.com/repos/shopware/shopware
     checkedAt: 2026-10-18

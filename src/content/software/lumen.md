@@ -8,7 +8,7 @@ urls:
 category:
   - framework
 description: PHP micro-framework from Laravel for building web applications.
-status: active
+status: discontinued
 maintainer: Taylor Otwell
 language: php
 runtime:
@@ -21,62 +21,62 @@ license: MIT
 currentMajor: "11"
 latestReleaseDate: 2024-12-10
 githubStargazers: 1509
-packagistDownloads: 27749868
+packagistDownloads: 28082367
 contributors: 240
 packagistMonthlyDownloads: 256482
 dependentRepos: 7610
 dependentPackages: 806
 addedAt: 2026-10-21
-checkedAt: 2026-10-21
+checkedAt: 2026-11-23
 sources:
   - field: name
     url: https://lumen.laravel.com/docs/11.x/installation
-    checkedAt: 2026-10-21
+    checkedAt: 2026-11-23
   - field: urls
     url: https://lumen.laravel.com
-    checkedAt: 2026-10-21
+    checkedAt: 2026-11-23
   - field: urls
     url: https://github.com/laravel/lumen-framework
-    checkedAt: 2026-10-21
+    checkedAt: 2026-11-23
   - field: urls
     url: https://lumen.laravel.com/docs/11.x/installation
-    checkedAt: 2026-10-21
+    checkedAt: 2026-11-23
   - field: maintainer
     url: https://lumen.laravel.com/docs/11.x/installation
-    checkedAt: 2026-10-21
+    checkedAt: 2026-11-23
   - field: category
     url: https://github.com/laravel/lumen-framework
-    checkedAt: 2026-10-21
+    checkedAt: 2026-11-23
   - field: language
     url: https://api.github.com/repos/laravel/lumen-framework
-    checkedAt: 2026-10-21
+    checkedAt: 2026-11-23
   - field: runtime
     url: https://lumen.laravel.com/docs/11.x/installation
-    checkedAt: 2026-10-21
+    checkedAt: 2026-11-23
   - field: runtimeMin
     url: https://lumen.laravel.com/docs/11.x/installation
-    checkedAt: 2026-10-21
+    checkedAt: 2026-11-23
   - field: license
     url: https://api.github.com/repos/laravel/lumen-framework
-    checkedAt: 2026-10-21
+    checkedAt: 2026-11-23
   - field: license
     url: https://github.com/laravel/lumen-framework/blob/11.x/LICENSE.md
-    checkedAt: 2026-10-21
+    checkedAt: 2026-11-23
   - field: currentMajor
     url: https://repo.packagist.org/p2/laravel/lumen-framework.json
-    checkedAt: 2026-10-21
+    checkedAt: 2026-11-23
   - field: latestReleaseDate
     url: https://api.github.com/repos/laravel/lumen-framework/releases/latest
-    checkedAt: 2026-10-21
+    checkedAt: 2026-11-23
   - field: githubStargazers
     url: https://api.github.com/repos/laravel/lumen-framework
-    checkedAt: 2026-10-21
+    checkedAt: 2026-11-23
   - field: contributors
     url: https://api.github.com/repos/laravel/lumen-framework/contributors
     checkedAt: 2026-10-21
   - field: packagistDownloads
     url: https://packagist.org/packages/laravel/lumen-framework.json
-    checkedAt: 2026-10-21
+    checkedAt: 2026-11-23
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/laravel%2Flumen-framework
     checkedAt: 2026-10-25
@@ -86,6 +86,9 @@ sources:
   - field: packagistMonthlyDownloads
     url: https://packagist.org/packages/laravel/lumen-framework/stats.json
     checkedAt: 2026-10-25
+  - field: status
+    url: https://api.github.com/repos/laravel/lumen-framework
+    checkedAt: 2026-11-23
 ai: authored
 npmWeeklyDownloads: null
 ---
