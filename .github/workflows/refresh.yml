@@ -1,8 +1,9 @@
-# The refresh routine's merge lane. The routine pushes every fact file it did not
-# break to claude/refresh; this checks them against the same rule the routine
-# used, regenerates the records, builds, and merges into main.
-# A run that fails moves the lane onto claude/refresh-review with a pull request,
-# so one bad commit never holds back the days after it.
+# The merge lane of the refresh routine (claude/refresh) and of the weekly
+# discovery (claude/discover), which may also add fact files and candidates
+# rows. This checks a push against the same rule the routine used, regenerates
+# the records, builds, and merges into main. A run that fails moves the lane
+# onto claude/refresh-review with a pull request, so one bad commit never holds
+# back the days after it.
 #
 # Pushes to main from here carry the default token, so they trigger no other
 # workflow, CI included. That is why the full CI runs here before the push.
@@ -10,7 +11,7 @@ name: Refresh
 
 on:
   push:
-    branches: [claude/refresh]
+    branches: [claude/refresh, claude/discover]
 
 permissions:
   contents: write
@@ -43,11 +44,11 @@ jobs:
       - run: |
           git config user.name "FindSoftware refresh"
           git config user.email "noreply@github.com"
-      - run: node scripts/refresh-guard.ts origin/main HEAD
+      - run: node scripts/refresh-guard.ts origin/main HEAD ${{ github.ref_name == 'claude/discover' && '--new' || '' }}
       - name: Merge and regenerate the records
         run: |
           git checkout main
-          git merge --no-ff "$GITHUB_SHA" -m "Merge sourced changes from the refresh routine"
+          git merge --no-ff "$GITHUB_SHA" -m "Merge $GITHUB_REF_NAME"
           node scripts/import-facts.mjs "$(date -u +%F)"
           git add src/content/software
           git diff --cached --quiet || git commit -m "Regenerate records from the refreshed fact files"
@@ -69,8 +70,8 @@ jobs:
       - name: Push main
         run: |
           git push origin main
-          git push --force-with-lease="claude/refresh:$GITHUB_SHA" origin :claude/refresh ||
-            echo "claude/refresh moved since this run started; its own run merges it."
+          git push --force-with-lease="$GITHUB_REF_NAME:$GITHUB_SHA" origin ":$GITHUB_REF_NAME" ||
+            echo "$GITHUB_REF_NAME moved since this run started; its own run merges it."
       - name: Hand the lane to a person
         if: failure()
         env:
@@ -86,7 +87,7 @@ jobs:
             exit 1
           fi
           git push origin HEAD:refs/heads/claude/refresh-review
-          git push --force-with-lease="claude/refresh:$GITHUB_SHA" origin :claude/refresh || true
+          git push --force-with-lease="$GITHUB_REF_NAME:$GITHUB_SHA" origin ":$GITHUB_REF_NAME" || true
           if [ -z "$(gh pr list --head claude/refresh-review --state open --json number --jq '.[].number')" ]; then
             gh pr create --head claude/refresh-review --base main \
               --title "Refresh for review: $(date -u +%F)" \
