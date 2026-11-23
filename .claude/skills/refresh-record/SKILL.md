@@ -59,11 +59,13 @@ It re-reads every `via: api` fact it has a reader for, writes the file, and prin
 
 ## 4. Read the pages
 
-The pages are every distinct `url` of the `via: page` facts. Fetch each one raw, with a generic User-Agent and redirects followed:
+The pages are every distinct `url` of the `via: page` facts. Fetch each one with:
 
 ```sh
-curl -sL -A 'FindSoftware refresh' -o "${TMPDIR:-/tmp}/<id>-page.html" -w '%{http_code} %{url_effective}\n' '<url>'
+node scripts/read-page.mjs '<url>' "${TMPDIR:-/tmp}/<id>-page.html"
 ```
+
+It prints the status and the final URL. A github.com URL is read through raw.githubusercontent.com or the GitHub API (a repository or folder through its README, a release through its notes), because github.com answers this runner with 403; never fetch github.com pages with curl.
 
 A page counts as read only when it answers 200 with the page itself, not a bot challenge, a login wall or an empty shell waiting for JavaScript. A shell can often be read through the docs' source repository on GitHub, but only when the fact's URL is that repository; otherwise the page is **unreadable**. Note which and why, and read on.
 
@@ -87,9 +89,15 @@ For every such fact whose page was read:
 
 When a page now names a higher stable `currentMajor` than an API fact holds, do not change the API fact; note it for the report as a new major. A pre-release (alpha, beta, rc) does not count.
 
-Then set the file's top-level `checkedAt` to today, unless step 3 already did.
+The file's top-level `checkedAt` moves to today with the re-dating below.
 
-Edit fact files with the Edit tool. To re-date many facts, replace the exact two-line pair `    checkedAt: <old>` and `    via: page` with `replace_all`, once per old date, then put the old date back on the stale facts and on those whose page was unreadable. Never run Prettier or a YAML dumper over them: the layout stays as written.
+Re-date with the script, never by hand: list the pages that were read, and after `--skip` the fields left stale.
+
+```sh
+node scripts/redate.mjs <id> '<url>' '<url>' --skip <field> <field>
+```
+
+It sets today's `checkedAt` on those page facts and on the file. Change a value or a quote with the Edit tool, one fact at a time. Never write a fact file with Python, sed, a node one-liner or a YAML dumper: the layout stays as written, and a reformatted file turns every line into a diff.
 
 ## 6. Status
 

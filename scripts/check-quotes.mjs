@@ -9,6 +9,7 @@
  */
 import { readFileSync } from 'node:fs';
 import { parse } from 'yaml';
+import { githubSources, readGithub } from './github-source.mjs';
 
 const userAgent = 'FindSoftware research';
 const ids = process.argv.slice(2);
@@ -64,10 +65,6 @@ const normalize = (text, markup = false) =>
     .trim()
     .toLowerCase();
 
-// A GitHub file page carries the file as escaped JSON for its script; the raw file is the same text, readable.
-const raw = (url) =>
-  url.replace(/^https:\/\/github\.com\/([^/]+\/[^/]+)\/blob\//, 'https://raw.githubusercontent.com/$1/');
-
 // A page served as Latin-1 reads as garbled umlauts when decoded as UTF-8, and its quotes never match.
 const decode = (type, bytes) => {
   const declared =
@@ -82,10 +79,18 @@ const decode = (type, bytes) => {
 
 const pages = new Map();
 const page = (url) => {
+  if (!pages.has(url) && githubSources(url)) {
+    pages.set(
+      url,
+      readGithub(url).then(({ text, error }) =>
+        text === undefined ? { error } : { text: normalize(text, 'markdown') },
+      ),
+    );
+  }
   if (!pages.has(url)) {
     pages.set(
       url,
-      fetch(raw(url), { headers: { 'user-agent': userAgent }, signal: AbortSignal.timeout(20000) })
+      fetch(url, { headers: { 'user-agent': userAgent }, signal: AbortSignal.timeout(20000) })
         .then(async (response) =>
           response.ok
             ? {
