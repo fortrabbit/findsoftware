@@ -31,73 +31,73 @@ installMethod: prebuilt-executable-download, go-framework
 licenseModel: open-source
 license: MIT
 currentMajor: "0"
-latestReleaseDate: 2026-10-08
-githubStargazers: 61488
+latestReleaseDate: 2026-10-23
+githubStargazers: 61573
 social:
   forum: https://github.com/pocketbase/pocketbase/discussions
 addedAt: 2026-10-19
-checkedAt: 2026-10-19
+checkedAt: 2026-11-23
 sources:
   - field: name
     url: https://pocketbase.io/
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: urls
     url: https://github.com/pocketbase/pocketbase
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: urls
     url: https://github.com/pocketbase/pocketbase
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: urls
     url: https://pocketbase.io/docs/
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: maintainer
     url: https://github.com/pocketbase/pocketbase/blob/master/LICENSE.md
-    checkedAt: 2026-10-20
+    checkedAt: 2026-11-23
   - field: maintainerType
     url: https://github.com/pocketbase/pocketbase/blob/master/LICENSE.md
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: category
     url: https://pocketbase.io/
     checkedAt: 2026-10-19
   - field: language
     url: https://github.com/pocketbase/pocketbase
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: runtime
     url: https://pocketbase.io/docs/
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: currentMajor
     url: https://github.com/pocketbase/pocketbase/releases/latest
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: latestReleaseDate
     url: https://github.com/pocketbase/pocketbase/releases/latest
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: license
     url: https://github.com/pocketbase/pocketbase
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: licenseModel
     url: https://github.com/pocketbase/pocketbase
     checkedAt: 2026-10-19
   - field: contentStore
     url: https://pocketbase.io/docs/
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: databases
     url: https://pocketbase.io/docs/
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: adminUi
     url: https://pocketbase.io/docs/
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: headlessApi
     url: https://pocketbase.io/docs/
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: installMethod
     url: https://pocketbase.io/docs/
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: githubStargazers
     url: https://api.github.com/repos/pocketbase/pocketbase
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
   - field: runsAs
     url: https://pocketbase.io/docs/going-to-production/
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-23
 ai: authored
 packagistDownloads: null
 npmWeeklyDownloads: null
