@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { isFactFile, reviewReasons } from './confirmation.ts';
+import { isFactFile, newFileProblem, reviewReasons } from './confirmation.ts';
 
 const isSelfMerging = (before: string, after: string) => reviewReasons(before, after).length === 0;
 
@@ -139,6 +139,19 @@ describe('a sourced change', () => {
     assert.deepEqual(reviewReasons(pinned, after), []);
   });
 
+  it('is not a removed fact covered only by a re-dated one of the same field', () => {
+    const second = [
+      '  - field: currentMajor',
+      '    value: 5',
+      '    url: https://api.github.com/repos/withastro/astro/releases/latest',
+      '    checkedAt: 2026-10-22',
+      '    via: api',
+    ].join('\n');
+    const before = addFact(file, second);
+    const after = redated(file);
+    assert.match(reviewReasons(before, after).join(), /removes currentMajor/);
+  });
+
   it('tells two facts of the same field apart by their url', () => {
     const second = [
       '  - field: currentMajor',
@@ -218,5 +231,24 @@ describe('what counts as a fact file', () => {
     assert.equal(isFactFile('research/facts/astro.yml'), true);
     assert.equal(isFactFile('research/facts/old/astro.yml'), false);
     assert.equal(isFactFile('src/content/software/astro.md'), false);
+  });
+});
+
+describe('a fact file the discovery adds', () => {
+  it('merges an accepted record whose facts carry their sources', () => {
+    assert.equal(newFileProblem('astro', file), '');
+  });
+
+  it('is not a file whose id differs from its name', () => {
+    assert.match(newFileProblem('other', file), /not a fact file for other/);
+  });
+
+  it('is never a stub or discontinued record', () => {
+    assert.match(newFileProblem('astro', file.replace('status: accepted', 'status: stub')), /status stub/);
+    assert.match(newFileProblem('astro', file.replace('status: accepted', 'status: discontinued')), /discontinued/);
+  });
+
+  it('is not a fact without its source', () => {
+    assert.match(newFileProblem('astro', file.replace('    via: api\n', '')), /currentMajor without its source/);
   });
 });

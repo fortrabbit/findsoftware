@@ -29,7 +29,7 @@ pnpm install --frozen-lockfile
 
 Scratch files (pages, commit bodies) go in `${TMPDIR:-/tmp}`, never in the repository. `refresh-api.ts` finds the GitHub token itself, from `GITHUB_TOKEN` or `gh auth token`.
 
-Two lanes, decided per record in step 8: **`claude/refresh`** merges on its own, **`claude/refresh-review`** waits for a person and gets only a file the run broke (a touched `name` or `notes`, a removed fact, a date moved back). The rule between them is `src/lib/confirmation.ts`. Never push to `main`.
+Two lanes, decided per record in step 8: **`claude/refresh`** merges on its own, **`claude/refresh-review`** waits for a person and gets only a file the run broke, such as a touched `name` or `notes`, a removed fact or a date moved back. The rule between them is `src/lib/confirmation.ts`. Never push to `main`.
 
 ## 2. Pick
 

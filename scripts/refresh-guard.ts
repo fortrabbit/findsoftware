@@ -8,7 +8,7 @@
  * Exit 0 with `merge`, or exit 1 with `review:` and the reasons.
  */
 import { execFileSync } from 'node:child_process';
-import { isFactFile, reviewReasons } from '../src/lib/confirmation.ts';
+import { isFactFile, newFileProblem, reviewReasons } from '../src/lib/confirmation.ts';
 
 const [base, head] = process.argv.slice(2);
 const discovery = process.argv.includes('--new');
@@ -27,17 +27,22 @@ const at = (ref: string, path: string) => {
 };
 
 const staged = head === '--staged';
-const changed = (staged ? git('diff', '--cached', '--name-only') : git('diff', '--name-only', `${base}...${head}`))
+const changed = (
+  staged
+    ? git('diff', '--cached', '--name-only', '--no-renames')
+    : git('diff', '--name-only', '--no-renames', `${base}...${head}`)
+)
   .split('\n')
   .filter(Boolean);
 const problems: string[] = [];
+let added = 0;
 /* A fact file a person changed on the base after the lane branched is judged against what the lane saw. */
 const from = staged ? base : git('merge-base', base, head).trim();
 
 for (const path of changed) {
-  if (path === 'research/refresh-log.tsv') continue;
+  if (path === 'research/refresh-log.tsv' && !discovery) continue;
   if (discovery && /^research\/candidates-[\w-]+\.csv$/.test(path)) {
-    const removed = git('diff', '--numstat', `${from}...${head}`, '--', path).split('\t')[1];
+    const removed = git('diff', '--numstat', '--no-renames', `${from}...${head}`, '--', path).split('\t')[1];
     if (removed !== '0') problems.push(`${path}: changes existing rows`);
     continue;
   }
@@ -49,14 +54,18 @@ for (const path of changed) {
   const after = at(staged ? '' : head, path);
   if (discovery && !before && after) {
     const id = path.slice('research/facts/'.length, -'.yml'.length);
-    if (reviewReasons(after, after).length || !after.includes(`id: ${id}\n`))
-      problems.push(`${path}: not a fact file for ${id}`);
+    const problem = newFileProblem(id, after);
+    if (problem) problems.push(`${path}: ${problem}`);
+    else added++;
   } else if (!before || !after) problems.push(`${path}: added or removed`);
   else {
     const reasons = reviewReasons(before, after);
     if (reasons.length) problems.push(`${path}: ${reasons.join(', ')}`);
   }
 }
+
+/* The skill's ceiling, held here so a run that ignores it waits for a person. */
+if (added > 5) problems.push(`${added} new fact files, more than 5`);
 
 if (problems.length) {
   console.log(`review: ${problems.join('; ')}`);

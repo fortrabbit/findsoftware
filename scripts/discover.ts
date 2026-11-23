@@ -48,6 +48,8 @@ if (!process.env.GITHUB_TOKEN) {
   }
 }
 
+let answered = 0;
+let failed = 0;
 async function get(url: string): Promise<any> {
   const headers: Record<string, string> = { 'User-Agent': 'findsoftware-discover', Accept: 'application/json' };
   if (url.startsWith('https://api.github.com/') && process.env.GITHUB_TOKEN)
@@ -60,9 +62,11 @@ async function get(url: string): Promise<any> {
   }
   if (!response?.ok) {
     console.error(`discover: ${response?.status ?? 'no answer'} ${url}`);
+    failed++;
     return undefined;
   }
-  return response.json();
+  answered++;
+  return response.json().catch(() => undefined);
 }
 
 const slugOf = (url: string) =>
@@ -78,7 +82,8 @@ const hostOf = (url: string) => {
   }
 };
 /* Shared hosts carry many projects, so their host says nothing about which one. */
-const shared = /(github\.io|gitlab\.io|vercel\.app|netlify\.app|pages\.dev|github\.com)$/;
+const shared =
+  /(github\.io|gitlab\.io|vercel\.app|netlify\.app|pages\.dev|github\.com|gitlab\.com|codeberg\.org|npmjs\.com|packagist\.org|pypi\.org)$/;
 
 const known = new Set<string>();
 const knownHosts = new Set<string>();
@@ -149,4 +154,9 @@ for (const find of sorted)
       find.description || '-',
     ].join('\t'),
   );
+/* Every call refused is an outage, not a quiet week: the run must say so. */
+if (!answered) {
+  console.error(`discover: all ${failed} calls failed`);
+  process.exit(1);
+}
 console.error(`discover: ${finds.size} unknown, ${sorted.length} printed, ${known.size} repositories known`);

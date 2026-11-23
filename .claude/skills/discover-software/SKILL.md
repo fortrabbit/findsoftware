@@ -25,15 +25,17 @@ Scratch files go in `${TMPDIR:-/tmp}`, never in the repository.
 node scripts/discover.ts
 ```
 
-It prints up to ten finds, one per line: repository, stars, created, homepage, source, description. These are the only candidates. No web search, no other source, no second call for more. An empty list ends the run: report it and stop.
+It prints up to ten finds, one per line: repository, stars, created, homepage, source, description. These are the only candidates. No web search, no other source, no second call for more. An empty list ends the run: report it and stop. Exit 1 means every call failed: report its message as an error, not as a quiet week.
 
 ## 3. Check each find
 
-In order, until five are accepted or the list ends. Read only the README (`curl -sL https://raw.githubusercontent.com/<owner>/<repo>/HEAD/README.md`) and the homepage. Decide by criteria 1 to 5 in `AGENTS.md`:
+In order, until five are accepted or the list ends. To decide, read only the README (`curl -sL https://raw.githubusercontent.com/<owner>/<repo>/HEAD/README.md`) and the homepage. Decide by criteria 1 to 5 in `AGENTS.md`:
 
 - **accepted**: every criterion clearly holds.
 - **hosted-service**: SaaS only, the other criteria hold.
 - **rejected**: a criterion fails, or you cannot tell that it holds. Put the criterion's number in `criterion`.
+
+Never set `stub`, `discontinued` or any other status: a find that has ended is rejected under criterion 4.
 
 Most finds fail criterion 1: apps, agent tools, vector databases and media servers are not software to build a website with. When unsure, reject.
 

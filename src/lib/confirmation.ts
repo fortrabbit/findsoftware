@@ -5,8 +5,9 @@
  * The routine edits `research/facts/<id>.yml`, because records are generated
  * from them. Every value, quote, source and status it writes merges on its own;
  * the build and validate are the checks. Only what the routine never writes is
- * held back: `id`, `name`, `description`, `notes`, a removed fact that nothing
- * replaces, a date moved back, `notFound` edits, a status other than
+ * held back: `id`, `name`, `description`, `notes`, a removed fact that no new
+ * source replaces, a date moved back, an added `notFound` entry or one dropped
+ * without a fact, a status other than
  * `discontinued`, a discontinued record built on another project (AGENTS.md:
  * an archived plugin is a stub). Any of these means a run went wrong, so a person looks. The
  * same function decides both the routine's lane and the Action's guard, so the
@@ -94,10 +95,11 @@ export function reviewReasons(before: string, after: string): string[] {
       else if (!isDeepStrictEqual(was, is)) fresh.push(is);
     }
   }
-  for (const [key, nows] of now) fresh.push(...nows.slice(old.get(key)?.length ?? 0));
+  const added = [...now].flatMap(([key, nows]) => nows.slice(old.get(key)?.length ?? 0));
+  fresh.push(...added);
   /* A source moved to a new URL is the old fact removed and a new one added for the same field. */
   for (const was of removed) {
-    if (!fresh.some((fact) => fact.field === was.field))
+    if (!added.some((fact) => fact.field === was.field))
       reasons.push(`removes ${was.field} from ${was.url ?? 'no url'}`);
   }
 
@@ -116,6 +118,21 @@ export function reviewReasons(before: string, after: string): string[] {
   else if (a.status !== b.status && plugin) reasons.push('discontinues a record built on another project');
 
   return reasons;
+}
+
+/**
+ * Why a fact file the discovery adds may not merge on its own, or '' when it may.
+ * A new record is accepted, hosted-service or boundary, and every fact carries its source.
+ */
+export function newFileProblem(id: string, text: string): string {
+  const doc = read(text);
+  if (!doc || doc.id !== id) return `not a fact file for ${id}`;
+  if (!['accepted', 'hosted-service', 'boundary'].includes(String(doc.status)))
+    return `new record with status ${doc.status}`;
+  const unsourced = (doc.facts ?? []).find(
+    (fact) => !fact.url || !fact.checkedAt || !['api', 'page'].includes(fact.via ?? ''),
+  );
+  return unsourced ? `${unsourced.field} without its source` : '';
 }
 
 export const isFactFile = (path: string) => /^research\/facts\/[^/]+\.yml$/.test(path);
