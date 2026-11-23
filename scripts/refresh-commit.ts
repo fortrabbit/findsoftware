@@ -13,6 +13,7 @@ import { appendFileSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { parse } from 'yaml';
+import { keepProof } from '../src/lib/confirmation.ts';
 
 const [id, given, extra] = process.argv.slice(2);
 if (!id || !['confirmed', 'unreadable', 'stopped'].includes(given)) {
@@ -58,6 +59,28 @@ function tally(before: string, after: string) {
     .join('; ');
 }
 
+/* Quotes this run wrote that check-quotes did not find on their page; an unreadable page is no proof either way. */
+function unproven(after: string) {
+  const quotes = (doc: string) =>
+    new Set(
+      (parse(doc)?.facts ?? [])
+        .filter((f: { via?: string }) => f.via === 'page')
+        .map((f: { quote?: string }) => f.quote),
+    );
+  const before = quotes(git('show', `HEAD:${path}`));
+  const written = [...quotes(after)].filter((quote): quote is string => Boolean(quote) && !before.has(quote));
+  if (!written.length) return [];
+  let report = '';
+  try {
+    run('node', ['scripts/check-quotes.mjs', id]);
+  } catch (error) {
+    report = String((error as { stdout?: string }).stdout ?? '');
+  }
+  return written.filter((quote) =>
+    report.split('\n').some((line) => line.includes(`not on page`) && line.endsWith(`"${quote}"`)),
+  );
+}
+
 const changed = () => git('status', '--porcelain', '--', path).trim() !== '';
 
 const branch = git('rev-parse', '--abbrev-ref', 'HEAD').trim();
@@ -71,6 +94,7 @@ if (branch !== 'work' || dirty.length) {
 
 let text: string | undefined;
 let failed = false;
+let proofNotes: string[] = [];
 try {
   let outcome = given;
   let note = given === 'confirmed' ? '' : (extra ?? '');
@@ -89,6 +113,15 @@ try {
   let lane = 'claude/refresh';
   let reasons = '';
   if (changed()) {
+    const kept = keepProof(
+      git('show', `HEAD:${path}`),
+      readFileSync(path, 'utf8'),
+      unproven(readFileSync(path, 'utf8')),
+    );
+    writeFileSync(path, kept.text);
+    proofNotes = kept.notes;
+  }
+  if (changed()) {
     text = readFileSync(path, 'utf8');
     git('add', '--', path);
     try {
@@ -99,6 +132,7 @@ try {
       [lane, reasons] = ['claude/refresh-review', String(stdout).trim()];
     }
     note = tally(git('show', `HEAD:${path}`), text);
+    reasons = [reasons, ...proofNotes].filter(Boolean).join('\n');
     git('reset', '-q', '--', path);
     git('checkout', '--', path);
   }

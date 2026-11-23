@@ -135,4 +135,52 @@ export function newFileProblem(id: string, text: string): string {
   return unsourced ? `${unsourced.field} without its source` : '';
 }
 
+/* The line of each fact's quote, in fact order, or -1 for a fact without one. */
+function quoteLines(lines: string[]): number[] {
+  const found: number[] = [];
+  let inFacts = false;
+  for (const [index, line] of lines.entries()) {
+    if (/^\S/.test(line)) inFacts = line === 'facts:';
+    else if (inFacts && line.startsWith('  - ')) found.push(-1);
+    else if (inFacts && found.length && line.startsWith('    quote:')) found[found.length - 1] = index;
+  }
+  return found;
+}
+
+/**
+ * Takes back what a refresh wrote without proof, as text so the file keeps its
+ * layout: a quote check-quotes did not find on its page returns to the old
+ * quote (or goes, for a fact that had none), and a `discontinued` without a
+ * fresh `status` fact returns to the old status.
+ */
+export function keepProof(before: string, after: string, missing: string[]): { text: string; notes: string[] } {
+  const [a, b] = [read(before), read(after)];
+  if (!a || !b) return { text: after, notes: [] };
+  const [oldLines, lines] = [before.split('\n'), after.split('\n')];
+  const [oldQuotes, quotes] = [quoteLines(oldLines), quoteLines(lines)];
+  const [old, now] = [bySource(a.facts ?? []), bySource(b.facts ?? [])];
+  const notes: string[] = [];
+  const drop = new Set<number>();
+  for (const [index, fact] of (b.facts ?? []).entries()) {
+    if (!fact.quote || !missing.includes(fact.quote) || quotes[index] < 0) continue;
+    const was = old.get(source(fact))?.[now.get(source(fact))!.indexOf(fact)];
+    const line = was ? oldQuotes[(a.facts ?? []).indexOf(was)] : -1;
+    if (line >= 0) lines[quotes[index]] = oldLines[line];
+    else drop.add(quotes[index]);
+    notes.push(`${fact.field} quote not on its page, ${line >= 0 ? 'old quote kept' : 'quote dropped'}`);
+  }
+  const proof = (b.facts ?? []).some(
+    (fact) => fact.field === 'status' && fact.value === 'discontinued' && fact.checkedAt === b.checkedAt,
+  );
+  if (b.status === 'discontinued' && a.status !== 'discontinued' && !proof) {
+    const at = lines.findIndex((line) => line.startsWith('status:'));
+    const was = oldLines.find((line) => line.startsWith('status:'));
+    if (at >= 0 && was) {
+      lines[at] = was;
+      notes.push(`status kept at ${a.status}: no status fact shows the end`);
+    }
+  }
+  return { text: lines.filter((_, index) => !drop.has(index)).join('\n'), notes };
+}
+
 export const isFactFile = (path: string) => /^research\/facts\/[^/]+\.yml$/.test(path);

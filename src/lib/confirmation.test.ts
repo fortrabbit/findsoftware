@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { isFactFile, newFileProblem, reviewReasons } from './confirmation.ts';
+import { isFactFile, keepProof, newFileProblem, reviewReasons } from './confirmation.ts';
 
 const isSelfMerging = (before: string, after: string) => reviewReasons(before, after).length === 0;
 
@@ -250,5 +250,36 @@ describe('a fact file the discovery adds', () => {
 
   it('is not a fact without its source', () => {
     assert.match(newFileProblem('astro', file.replace('    via: api\n', '')), /currentMajor without its source/);
+  });
+});
+
+describe('taking back what has no proof', () => {
+  it('returns a quote not on its page to the old one', () => {
+    const after = redated(file).replace('"npm create astro@latest"', '"npm create astro now"');
+    const { text, notes } = keepProof(file, after, ['npm create astro now']);
+    assert.equal(text, redated(file));
+    assert.match(notes.join(), /installMethod quote not on its page, old quote kept/);
+  });
+
+  it('drops a quote not on its page from a fact that had none', () => {
+    const fact =
+      '  - field: forum\n    value: x\n    url: https://astro.build/\n    checkedAt: 2026-11-20\n    via: page\n    quote: "Join"';
+    const after = addFact(redated(file), fact);
+    const { text } = keepProof(file, after, ['Join']);
+    assert.equal(text, addFact(redated(file), fact.replace('\n    quote: "Join"', '')));
+  });
+
+  it('keeps the old status for a discontinued without a status fact', () => {
+    const after = redated(file).replace('status: accepted', 'status: discontinued');
+    const { text, notes } = keepProof(file, after, []);
+    assert.equal(text, redated(file));
+    assert.match(notes.join(), /status kept at accepted/);
+  });
+
+  it('leaves a discontinued with a fresh status fact', () => {
+    const ended =
+      '  - field: status\n    value: discontinued\n    url: https://api.github.com/repos/withastro/astro\n    checkedAt: 2026-11-20\n    via: api';
+    const after = addFact(redated(file), ended).replace('status: accepted', 'status: discontinued');
+    assert.equal(keepProof(file, after, []).text, after);
   });
 });
