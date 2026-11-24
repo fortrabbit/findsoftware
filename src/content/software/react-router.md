@@ -36,10 +36,10 @@ installMethod: npx create-react-router@latest
 licenseModel: open-source
 license: MIT
 currentMajor: "8"
-latestReleaseDate: 2026-09-15
-githubStargazers: 56610
-npmWeeklyDownloads: 33338262
-contributors: 1324
+latestReleaseDate: 2026-11-18
+githubStargazers: 56651
+npmWeeklyDownloads: 80209200
+contributors: 1360
 httpArchiveSites: 203294
 dependentRepos: 1472795
 dependentPackages: 10588
@@ -48,29 +48,29 @@ social:
   discord: https://remix.run/discord
 wikidata: Q125635483
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-24
 sources:
   - field: urls
     url: https://github.com/remix-run/react-router
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: urls
     url: https://github.com/remix-run/react-router
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: urls
     url: https://reactrouter.com/start/framework/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: firstRelease
     url: https://github.com/remix-run/react-router/blob/main/GOVERNANCE.md
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: maintainer
     url: https://reactrouter.com/
-    checkedAt: 2026-10-20
+    checkedAt: 2026-11-24
   - field: maintainerType
     url: https://remix.run/blog/remixing-shopify
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: parent
     url: https://remix.run/blog/remixing-shopify
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q125635483
     checkedAt: 2026-10-18
@@ -79,55 +79,55 @@ sources:
     checkedAt: 2026-10-18
   - field: category
     url: https://reactrouter.com/start/modes
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: basedOn
     url: https://reactrouter.com/start/modes
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: language
     url: https://github.com/remix-run/react-router
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: runtime
     url: https://reactrouter.com/start/framework/deploying
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: runtimeMin
     url: https://registry.npmjs.org/react-router/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: templating
     url: https://reactrouter.com/start/modes
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: renderingModes
     url: https://reactrouter.com/start/framework/rendering
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: installMethod
     url: https://reactrouter.com/start/framework/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: license
     url: https://github.com/remix-run/react-router
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: licenseModel
     url: https://github.com/remix-run/react-router
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://registry.npmjs.org/react-router/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: latestReleaseDate
-    url: https://github.com/remix-run/react-router/releases/tag/react-router@8.4.0
-    checkedAt: 2026-10-18
+    url: https://github.com/remix-run/react-router/releases/tag/react-router%408.5.2
+    checkedAt: 2026-11-24
   - field: githubStargazers
     url: https://github.com/remix-run/react-router
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: contributors
     url: https://api.github.com/repos/remix-run/react-router/contributors?anon=true
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/react-router
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@react-router/dev
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: runsAs
     url: https://reactrouter.com/start/framework/rendering
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-24
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25

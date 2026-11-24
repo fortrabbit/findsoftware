@@ -33,16 +33,16 @@ installMethod: gem install rails, rails new
 licenseModel: open-source
 license: MIT
 currentMajor: "8"
-latestReleaseDate: 2026-09-24
-githubStargazers: 58849
-contributors: 7094
+latestReleaseDate: 2026-11-04
+githubStargazers: 59087
+contributors: 7149
 httpArchiveSites: 106934
 social:
   x: https://x.com/rails
   discord: https://discord.gg/d8N68BCw49
 wikidata: Q190478
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-24
 sources:
   - field: name
     url: https://github.com/rails/rails
@@ -55,73 +55,73 @@ sources:
     checkedAt: 2026-10-18
   - field: urls
     url: https://guides.rubyonrails.org/getting_started.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: urls
     url: https://rubygems.org/api/v1/gems/rails.json
     checkedAt: 2026-10-18
   - field: maintainerType
     url: https://rubyonrails.org/community
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q190478
     checkedAt: 2026-10-18
   - field: category
     url: https://guides.rubyonrails.org/getting_started.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: language
     url: https://github.com/rails/rails
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: runtime
     url: https://guides.rubyonrails.org/getting_started.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: runtimeMin
     url: https://rubygems.org/api/v1/versions/rails.json
     checkedAt: 2026-10-18
   - field: runtimeMin
     url: https://guides.rubyonrails.org/getting_started.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: contentStore
     url: https://guides.rubyonrails.org/active_record_basics.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: databases
     url: https://guides.rubyonrails.org/active_record_basics.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: databases
     url: https://guides.rubyonrails.org/configuring.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: templating
     url: https://guides.rubyonrails.org/getting_started.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: i18n
     url: https://guides.rubyonrails.org/i18n.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: renderingModes
     url: https://guides.rubyonrails.org/getting_started.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: installMethod
     url: https://guides.rubyonrails.org/install_ruby_on_rails.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: license
     url: https://github.com/rails/rails
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: licenseModel
     url: https://github.com/rails/rails
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://github.com/rails/rails/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: latestReleaseDate
     url: https://github.com/rails/rails/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: githubStargazers
     url: https://github.com/rails/rails
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: contributors
     url: https://api.github.com/repos/rails/rails/contributors?anon=true
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: runsAs
     url: https://guides.rubyonrails.org/getting_started.html
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-24
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25
