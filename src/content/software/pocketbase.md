@@ -3,7 +3,7 @@ id: pocketbase
 name: PocketBase
 urls:
   home: https://pocketbase.io
-  repository: https://github.com/pocketbase/pocketbase
+  repository: https://ganigeorgiev.com/pocketbase/pocketbase
   docs: https://pocketbase.io/docs/
 category:
   - backend
@@ -31,7 +31,6 @@ installMethod: prebuilt-executable-download, go-framework
 licenseModel: open-source
 license: MIT
 currentMajor: "0"
-latestReleaseDate: 2026-10-23
 githubStargazers: 61573
 social:
   forum: https://github.com/pocketbase/pocketbase/discussions
@@ -45,7 +44,7 @@ sources:
     url: https://github.com/pocketbase/pocketbase
     checkedAt: 2026-11-23
   - field: urls
-    url: https://github.com/pocketbase/pocketbase
+    url: https://raw.githubusercontent.com/pocketbase/pocketbase/master/README.md
     checkedAt: 2026-11-23
   - field: urls
     url: https://pocketbase.io/docs/
@@ -66,10 +65,7 @@ sources:
     url: https://pocketbase.io/docs/
     checkedAt: 2026-11-23
   - field: currentMajor
-    url: https://github.com/pocketbase/pocketbase/releases/latest
-    checkedAt: 2026-11-23
-  - field: latestReleaseDate
-    url: https://github.com/pocketbase/pocketbase/releases/latest
+    url: https://pocketbase.io/
     checkedAt: 2026-11-23
   - field: license
     url: https://github.com/pocketbase/pocketbase

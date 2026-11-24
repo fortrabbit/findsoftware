@@ -30,10 +30,10 @@ installMethod: npm create sanity@latest
 licenseModel: saas
 license: MIT
 currentMajor: "6"
-latestReleaseDate: 2026-10-13
-githubStargazers: 6364
-npmWeeklyDownloads: 596741
-contributors: 187
+latestReleaseDate: 2026-11-17
+githubStargazers: 6403
+npmWeeklyDownloads: 1602982
+contributors: 189
 httpArchiveSites: 10824
 dependentRepos: 4507
 dependentPackages: 245
@@ -44,89 +44,89 @@ social:
   youtube: https://www.youtube.com/@sanity_io
 wikidata: Q56242360
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-24
 sources:
   - field: name
     url: https://www.sanity.io/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: urls
     url: https://api.github.com/repos/sanity-io/sanity
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: urls
     url: https://api.github.com/repos/sanity-io/sanity
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: urls
     url: https://www.sanity.io/docs/studio/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: maintainer
     url: https://www.sanity.io/legal/tos
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: maintainerType
     url: https://www.sanity.io/legal/tos
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q56242360
     checkedAt: 2026-10-18
   - field: category
     url: https://www.sanity.io/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: language
     url: https://api.github.com/repos/sanity-io/sanity
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: basedOn
     url: https://www.sanity.io/docs/studio/deployment
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: runtime
     url: https://www.sanity.io/docs/studio/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: runtimeMin
     url: https://www.sanity.io/docs/studio/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: runtimeMin
     url: https://registry.npmjs.org/sanity/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: adminUi
     url: https://www.sanity.io/docs/studio/deployment
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: headlessApi
     url: https://www.sanity.io/docs/content-lake/graphql
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: i18n
     url: https://www.sanity.io/docs/studio/localization
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: installMethod
     url: https://www.sanity.io/docs/studio/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: renderingModes
     url: https://www.sanity.io/docs/studio/deployment
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: license
     url: https://api.github.com/repos/sanity-io/sanity
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: licenseModel
     url: https://www.sanity.io/docs/studio/deployment
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: urls
     url: https://www.sanity.io/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: currentMajor
     url: https://api.github.com/repos/sanity-io/sanity/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: latestReleaseDate
     url: https://api.github.com/repos/sanity-io/sanity/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: githubStargazers
     url: https://api.github.com/repos/sanity-io/sanity
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: contributors
     url: https://api.github.com/repos/sanity-io/sanity/contributors
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/sanity
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: urls
     url: https://www.sanity.io/plugins
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-24
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25

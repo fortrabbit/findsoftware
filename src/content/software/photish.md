@@ -8,7 +8,7 @@ category:
   - ssg
   - media
 description: Ruby static site generator that builds photo galleries from folders of photos and YAML metadata.
-status: discontinued
+status: stub
 maintainer: Henry Lawson
 maintainerType: individual
 firstRelease: 2016
