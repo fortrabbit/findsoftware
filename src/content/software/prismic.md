@@ -23,9 +23,9 @@ i18n: locales per repository, number limited by plan
 licenseModel: saas
 license: Apache-2.0
 currentMajor: "7"
-latestReleaseDate: 2026-10-08
+latestReleaseDate: 2026-11-11
 githubStargazers: 177
-npmWeeklyDownloads: 112409
+npmWeeklyDownloads: 283049
 httpArchiveSites: 3441
 dependentRepos: 1800
 dependentPackages: 52
@@ -35,71 +35,71 @@ social:
   youtube: https://youtube.com/@Prismic
 wikidata: Q111371297
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-25
 sources:
   - field: name
     url: https://prismic.io/about
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: urls
     url: https://api.github.com/orgs/prismicio
     checkedAt: 2026-10-18
   - field: urls
     url: https://api.github.com/repos/prismicio/prismic-client
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: urls
     url: https://prismic.io/docs
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: maintainer
     url: https://prismic.io/about
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: maintainerType
     url: https://prismic.io/about
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: hqCountry
     url: https://prismic.io/about
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q111371297
     checkedAt: 2026-10-18
   - field: category
     url: https://prismic.io/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: headlessApi
     url: https://prismic.io/docs/api
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: headlessApi
     url: https://prismic.io/docs/graphql
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: adminUi
     url: https://prismic.io/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: i18n
     url: https://prismic.io/docs/languages-locales
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: licenseModel
     url: https://prismic.io/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: license
     url: https://api.github.com/repos/prismicio/prismic-client
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: urls
     url: https://prismic.io/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: language
     url: https://api.github.com/repos/prismicio/prismic-client
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: currentMajor
     url: https://api.github.com/repos/prismicio/prismic-client/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: latestReleaseDate
     url: https://api.github.com/repos/prismicio/prismic-client/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: githubStargazers
     url: https://api.github.com/repos/prismicio/prismic-client
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@prismicio/client
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25
