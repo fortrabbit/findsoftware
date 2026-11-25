@@ -31,9 +31,9 @@ installMethod: mix archive.install hex phx_new, mix phx.new
 licenseModel: open-source
 license: MIT
 currentMajor: "1"
-latestReleaseDate: 2026-09-25
-githubStargazers: 23189
-contributors: 1488
+latestReleaseDate: 2026-11-20
+githubStargazers: 23225
+contributors: 1497
 httpArchiveSites: 87
 social:
   x: https://twitter.com/elixirphoenix
@@ -41,20 +41,20 @@ social:
   forum: https://elixirforum.com/c/phoenix-forum
 wikidata: Q55629889
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-25
 sources:
   - field: name
     url: https://phoenix.hexdocs.pm/overview.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: urls
     url: https://github.com/phoenixframework/phoenix
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: urls
     url: https://hex.pm/api/packages/phoenix
     checkedAt: 2026-10-18
   - field: urls
     url: https://github.com/phoenixframework/phoenix
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: firstRelease
     url: https://hex.pm/api/packages/phoenix
     checkedAt: 2026-10-18
@@ -63,49 +63,49 @@ sources:
     checkedAt: 2026-10-18
   - field: category
     url: https://phoenix.hexdocs.pm/overview.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: language
     url: https://github.com/phoenixframework/phoenix
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: runtime
     url: https://phoenix.hexdocs.pm/installation.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: contentStore
     url: https://phoenix.hexdocs.pm/installation.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: databases
     url: https://phoenix.hexdocs.pm/installation.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: templating
     url: https://phoenix.hexdocs.pm/components.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: renderingModes
     url: https://www.phoenixframework.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: installMethod
     url: https://phoenix.hexdocs.pm/installation.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: license
     url: https://github.com/phoenixframework/phoenix
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: licenseModel
     url: https://github.com/phoenixframework/phoenix
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://github.com/phoenixframework/phoenix/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: latestReleaseDate
     url: https://github.com/phoenixframework/phoenix/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: githubStargazers
     url: https://github.com/phoenixframework/phoenix
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: contributors
     url: https://api.github.com/repos/phoenixframework/phoenix/contributors?anon=true
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-25
   - field: runsAs
     url: https://hexdocs.pm/phoenix/deployment.html
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-25
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25
