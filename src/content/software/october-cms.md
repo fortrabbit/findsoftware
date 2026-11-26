@@ -38,9 +38,9 @@ installMethod: composer create-project october/october, ddev, browser wizard ins
 licenseModel: source-available
 license: proprietary, NOASSERTION (custom EULA in LICENSE.md)
 currentMajor: "4"
-latestReleaseDate: 2026-10-12
-githubStargazers: 11146
-packagistDownloads: 271854
+latestReleaseDate: 2026-11-10
+githubStargazers: 11155
+packagistDownloads: 275894
 contributors: 342
 packagistMonthlyDownloads: 2709
 httpArchiveSites: 5525
@@ -51,20 +51,20 @@ social:
   forum: https://talk.octobercms.com
   youtube: https://www.youtube.com/c/OctoberCMSOfficial
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-26
 sources:
   - field: name
     url: https://octobercms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: urls
     url: https://github.com/octobercms/october
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: urls
     url: https://octobercms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: urls
     url: https://octobercms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: maintainer
     url: https://github.com/octobercms/october/blob/develop/LICENSE.md
     checkedAt: 2026-10-18
@@ -76,43 +76,43 @@ sources:
     checkedAt: 2026-10-18
   - field: category
     url: https://octobercms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: basedOn
     url: https://octobercms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: basedOn
     url: https://repo.packagist.org/p2/october/october.json
     checkedAt: 2026-10-18
   - field: language
     url: https://github.com/octobercms/october
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: runtime
     url: https://docs.octobercms.com/4.x/setup/installation.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: runtimeMin
     url: https://docs.octobercms.com/4.x/setup/installation.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: runtimeMin
     url: https://repo.packagist.org/p2/october/october.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: contentStore
     url: https://docs.octobercms.com/4.x/cms/themes/themes.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: databases
     url: https://docs.octobercms.com/4.x/setup/installation.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: adminUi
     url: https://docs.octobercms.com/4.x/setup/installation.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: templating
     url: https://docs.octobercms.com/4.x/cms/themes/themes.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: i18n
     url: https://docs.octobercms.com/4.x/extend/multisite/introduction.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: installMethod
     url: https://docs.octobercms.com/4.x/setup/installation.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: license
     url: https://repo.packagist.org/p2/october/october.json
     checkedAt: 2026-10-18
@@ -124,28 +124,28 @@ sources:
     checkedAt: 2026-10-18
   - field: urls
     url: https://octobercms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: currentMajor
     url: https://repo.packagist.org/p2/october/october.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: latestReleaseDate
     url: https://repo.packagist.org/p2/october/october.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: githubStargazers
     url: https://api.github.com/repos/octobercms/october
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: contributors
     url: https://api.github.com/repos/octobercms/october/contributors
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: packagistDownloads
     url: https://packagist.org/packages/october/october.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: urls
     url: https://octobercms.com
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: runsAs
     url: https://docs.octobercms.com/4.x/setup/installation.html
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-26
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25
