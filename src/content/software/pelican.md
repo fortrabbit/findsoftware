@@ -30,8 +30,8 @@ licenseModel: open-source
 license: AGPL-3.0, AGPLv3
 currentMajor: "4"
 latestReleaseDate: 2026-04-20
-githubStargazers: 13354
-contributors: 489
+githubStargazers: 13381
+contributors: 495
 ecosystemsMonthlyDownloads: 41922
 httpArchiveSites: 22
 dependentRepos: 3322
@@ -41,7 +41,7 @@ social:
   forum: https://github.com/getpelican/pelican/discussions
 wikidata: Q28975326
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-26
 sources:
   - field: urls
     url: https://pypi.org/pypi/pelican/json
@@ -54,43 +54,43 @@ sources:
     checkedAt: 2026-10-18
   - field: firstRelease
     url: https://docs.getpelican.com/en/latest/changelog.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q28975326
     checkedAt: 2026-10-18
   - field: category
     url: https://getpelican.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: language
     url: https://github.com/getpelican/pelican
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: runtime
     url: https://docs.getpelican.com/en/latest/install.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: runtimeMin
     url: https://pypi.org/pypi/pelican/json
     checkedAt: 2026-10-18
   - field: runtimeMin
     url: https://docs.getpelican.com/en/latest/install.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: contentStore
     url: https://getpelican.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: templating
     url: https://getpelican.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: i18n
     url: https://getpelican.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: renderingModes
     url: https://getpelican.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: installMethod
     url: https://docs.getpelican.com/en/latest/install.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: license
     url: https://github.com/getpelican/pelican
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: license
     url: https://pypi.org/pypi/pelican/json
     checkedAt: 2026-10-18
@@ -99,22 +99,22 @@ sources:
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://pypi.org/pypi/pelican/json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: latestReleaseDate
     url: https://github.com/getpelican/pelican/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: githubStargazers
     url: https://github.com/getpelican/pelican
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: contributors
     url: https://api.github.com/repos/getpelican/pelican/contributors?anon=true
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: urls
     url: https://docs.getpelican.com/en/latest/plugins.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-26
   - field: runsAs
     url: https://docs.getpelican.com/en/latest/quickstart.html
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-26
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25
