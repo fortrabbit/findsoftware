@@ -1,28 +1,28 @@
 id: medusa
 name: Medusa
 status: accepted
-checkedAt: 2026-10-18
+checkedAt: 2026-11-27
 description: Open-source headless commerce platform for Node.js with commerce modules, an admin dashboard and REST store and admin APIs.
 facts:
   - field: name
     value: Medusa
     url: https://medusajs.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: homepage
     value: https://medusajs.com
     url: https://api.github.com/repos/medusajs/medusa
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: api
   - field: repository
     value: https://github.com/medusajs/medusa
     url: https://api.github.com/repos/medusajs/medusa
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: api
   - field: docs
     value: https://docs.medusajs.com
     url: https://medusajs.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: maintainer
     value: MedusaJS, Inc.
@@ -47,49 +47,49 @@ facts:
       - headless-commerce
       - framework
     url: https://medusajs.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
     quote: Open-source commerce platform
   - field: basedOn
     value:
       - express
     url: https://registry.npmjs.org/@medusajs/medusa/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: api
-    quote: dependencies express ^4.21.0
+    quote: '"express":"^5.3.0"'
   - field: language
     value: TypeScript
     url: https://api.github.com/repos/medusajs/medusa
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: api
   - field: runtime
     value: node
     url: https://docs.medusajs.com/learn/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: runtimeMin
-    value: 20.19.0
+    value: 22.22.0
     url: https://registry.npmjs.org/@medusajs/medusa/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: api
-    quote: "engines.node: ^20.19.0 || >=22.12.0"
+    quote: '"node":">=22.22.0"'
   - field: runtimeMin
-    value: 20.19.0
+    value: 22.22.0
     url: https://docs.medusajs.com/learn/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
-    quote: v20.19.0 or later, or v22.12.0 or later (LTS versions only)
+    quote: Node.js v22.22.0+ (LTS versions only)
   - field: contentStore
     value:
       - database
     url: https://docs.medusajs.com/learn/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: databases
     value:
       - postgres
     url: https://docs.medusajs.com/learn/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: adminUi
     value: yes, Medusa Admin dashboard (React)
@@ -101,49 +101,49 @@ facts:
     value:
       - rest
     url: https://docs.medusajs.com/api/store
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
     quote: Medusa v2's Store APIs, which are REST APIs exposed by the Medusa application.
   - field: i18n
-    value: Translation Module, behind a feature flag, since v2.12.3
+    value: Translation Module since v2.12.3, behind a feature flag before v2.22.7
     url: https://docs.medusajs.com/resources/commerce-modules/translation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
-    quote: The Translation Module is currently behind a feature flag.
+    quote: Translation Feature Flag Enabled (before Medusa v2.22.7)
   - field: renderingModes
     value:
       - none (api and admin only); optional Next.js storefront
     url: https://docs.medusajs.com/learn/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: buildCommand
     value: npm run build
     url: https://docs.medusajs.com/learn/deployment/general
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: outputDir
     value: .medusa/server
     url: https://docs.medusajs.com/learn/deployment/general
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: startCommand
     value: cd .medusa/server && npm install && npm run predeploy && npm run start
     url: https://docs.medusajs.com/learn/deployment/general
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: installMethod
     value:
       - npx create-medusa-app@latest
       - docker compose (development)
     url: https://docs.medusajs.com/learn/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: deployTargets
     value:
       - Medusa Cloud
       - any host meeting the requirements
     url: https://docs.medusajs.com/learn/deployment/general
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: serverNeeds
     value:
@@ -152,12 +152,12 @@ facts:
       - separate server and worker processes (MEDUSA_WORKER_MODE)
       - at least 2GB RAM
     url: https://docs.medusajs.com/learn/deployment/general
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: docker
     value: no official image; user-built Dockerfile for development
     url: https://docs.medusajs.com/learn/installation/docker
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: license
     value: MIT, except Enterprise Edition materials under a commercial license
@@ -171,9 +171,9 @@ facts:
     checkedAt: 2026-10-18
     via: api
   - field: license
-    value: SEE LICENSE IN LICENSE
+    value: MIT
     url: https://registry.npmjs.org/@medusajs/medusa/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: api
   - field: licenseModel
     value: open-core
@@ -201,28 +201,28 @@ facts:
         price: null
         adds: SLA, RBAC, SSO, audit logs, BYOC with an Enterprise License
     url: https://medusajs.com/pricing/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
     quote: From $29
   - field: pricingPage
     value: https://medusajs.com/pricing/
     url: https://medusajs.com/pricing/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: hostedOffering
     value: Medusa Cloud
     url: https://medusajs.com/pricing/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: currentMajor
     value: 2
     url: https://api.github.com/repos/medusajs/medusa/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: api
   - field: latestReleaseDate
-    value: 2026-09-28
+    value: 2026-11-26
     url: https://api.github.com/repos/medusajs/medusa/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: api
   - field: repoCreated
     value: 2020-01-18
@@ -230,9 +230,9 @@ facts:
     checkedAt: 2026-10-18
     via: api
   - field: githubStargazers
-    value: 36787
+    value: 37443
     url: https://api.github.com/repos/medusajs/medusa
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: api
   - field: contributors
     value: 456
@@ -249,29 +249,29 @@ facts:
   - field: npmName
     value: "@medusajs/medusa"
     url: https://registry.npmjs.org/@medusajs/medusa/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: api
   - field: pluginDirectory
     value: https://medusajs.com/integrations/
     url: https://medusajs.com/integrations/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: starters
     value:
       - Next.js Starter Storefront
     url: https://docs.medusajs.com/learn/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
     via: page
   - field: runsAs
     value: [always-on]
     url: https://docs.medusajs.com/learn/installation
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-27
     via: page
     quote: "A Medusa application is made up of a Node.js server and a Vite admin dashboard."
   - field: repoOwnerType
     value: organization
     url: https://api.github.com/users/medusajs
-    checkedAt: 2026-10-20
+    checkedAt: 2026-11-27
     via: api
   - field: dependentRepos
     value: 397
