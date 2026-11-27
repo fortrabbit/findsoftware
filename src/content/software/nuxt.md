@@ -42,11 +42,11 @@ installMethod: npm create nuxt@latest
 licenseModel: open-source
 license: MIT
 currentMajor: "4"
-latestReleaseDate: 2026-10-16
-githubStargazers: 60962
-npmWeeklyDownloads: 1378576
-contributors: 1371
-pluginCount: 336
+latestReleaseDate: 2026-11-23
+githubStargazers: 61110
+npmWeeklyDownloads: 3490625
+contributors: 1396
+pluginCount: 370
 dependentRepos: 70778
 dependentPackages: 3031
 social:
@@ -55,89 +55,89 @@ social:
   discord: https://chat.nuxt.dev
 wikidata: Q55641291
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-27
 sources:
   - field: urls
     url: https://github.com/nuxt/nuxt
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: urls
     url: https://nuxt.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: urls
     url: https://nuxt.com/docs/4.x/getting-started/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: firstRelease
     url: https://github.com/nuxt/nuxt
     checkedAt: 2026-10-18
   - field: maintainer
     url: https://nuxt.com/team
-    checkedAt: 2026-10-20
+    checkedAt: 2026-11-27
   - field: maintainerType
     url: https://nuxt.com/team
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: parent
     url: https://vercel.com/blog/nuxtlabs-joins-vercel
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q55641291
     checkedAt: 2026-10-18
   - field: category
     url: https://nuxt.com/docs/4.x/guide/concepts/rendering
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: basedOn
     url: https://nuxt.com/docs/4.x/getting-started/deployment
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: language
     url: https://github.com/nuxt/nuxt
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: runtime
     url: https://nuxt.com/docs/4.x/getting-started/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: runtimeMin
     url: https://registry.npmjs.org/nuxt/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: runtimeMin
     url: https://nuxt.com/docs/4.x/getting-started/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: templating
     url: https://nuxt.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: renderingModes
     url: https://nuxt.com/docs/4.x/guide/concepts/rendering
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: installMethod
     url: https://nuxt.com/docs/4.x/getting-started/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: license
     url: https://github.com/nuxt/nuxt
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: licenseModel
     url: https://github.com/nuxt/nuxt
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://registry.npmjs.org/nuxt/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: latestReleaseDate
-    url: https://github.com/nuxt/nuxt/releases/tag/v4.6.2
-    checkedAt: 2026-10-18
+    url: https://github.com/nuxt/nuxt/releases/tag/v4.7.0
+    checkedAt: 2026-11-27
   - field: githubStargazers
     url: https://github.com/nuxt/nuxt
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: contributors
     url: https://api.github.com/repos/nuxt/nuxt/contributors?anon=true
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/nuxt
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: urls
     url: https://nuxt.com/modules
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: pluginCount
     url: https://nuxt.com/modules
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: runsAs
     url: https://nuxt.com/docs/getting-started/deployment
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-27
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/nuxt
     checkedAt: 2026-10-25

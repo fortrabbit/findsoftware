@@ -7,7 +7,7 @@ urls:
 category:
   - framework
 description: Node.js library and command-line server for asynchronous HTTP microservices, where a module exports one function that handles each request.
-status: active
+status: stub
 maintainer: Vercel, Inc.
 maintainerType: company
 firstRelease: 2016
