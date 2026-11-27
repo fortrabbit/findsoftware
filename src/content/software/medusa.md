@@ -20,7 +20,7 @@ runtime:
   - node
 hosting:
   - node
-runtimeMin: node 20
+runtimeMin: node 22
 basedOn:
   - express
 contentStore:
@@ -30,36 +30,36 @@ databases:
 adminUi: true
 headlessApi:
   - rest
-i18n: Translation Module, behind a feature flag, since v2.12.3
+i18n: Translation Module since v2.12.3, behind a feature flag before v2.22.7
 runsAs:
   - always-on
 renderingModes:
   - api-only
 installMethod: npx create-medusa-app@latest, docker compose (development)
 licenseModel: open-core
-license: MIT, except Enterprise Edition materials under a commercial license, NOASSERTION, SEE LICENSE IN LICENSE
+license: MIT, except Enterprise Edition materials under a commercial license, NOASSERTION, MIT
 currentMajor: "2"
-latestReleaseDate: 2026-09-28
-githubStargazers: 36787
+latestReleaseDate: 2026-11-26
+githubStargazers: 37443
 npmWeeklyDownloads: 123119
 contributors: 456
 dependentRepos: 397
 dependentPackages: 212
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-27
 sources:
   - field: name
     url: https://medusajs.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: urls
     url: https://api.github.com/repos/medusajs/medusa
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: urls
     url: https://api.github.com/repos/medusajs/medusa
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: urls
     url: https://medusajs.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: maintainer
     url: https://github.com/medusajs/medusa/blob/develop/ENTERPRISE-LICENSE.md
     checkedAt: 2026-10-18
@@ -71,43 +71,43 @@ sources:
     checkedAt: 2026-10-18
   - field: category
     url: https://medusajs.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: basedOn
     url: https://registry.npmjs.org/@medusajs/medusa/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: language
     url: https://api.github.com/repos/medusajs/medusa
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: runtime
     url: https://docs.medusajs.com/learn/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: runtimeMin
     url: https://registry.npmjs.org/@medusajs/medusa/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: runtimeMin
     url: https://docs.medusajs.com/learn/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: contentStore
     url: https://docs.medusajs.com/learn/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: databases
     url: https://docs.medusajs.com/learn/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: adminUi
     url: https://registry.npmjs.org/@medusajs/dashboard/latest
     checkedAt: 2026-10-18
   - field: headlessApi
     url: https://docs.medusajs.com/api/store
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: i18n
     url: https://docs.medusajs.com/resources/commerce-modules/translation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: renderingModes
     url: https://docs.medusajs.com/learn/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: installMethod
     url: https://docs.medusajs.com/learn/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: license
     url: https://github.com/medusajs/medusa/blob/develop/LICENSE
     checkedAt: 2026-10-18
@@ -116,22 +116,22 @@ sources:
     checkedAt: 2026-10-18
   - field: license
     url: https://registry.npmjs.org/@medusajs/medusa/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: licenseModel
     url: https://github.com/medusajs/medusa/blob/develop/LICENSE
     checkedAt: 2026-10-18
   - field: urls
     url: https://medusajs.com/pricing/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: currentMajor
     url: https://api.github.com/repos/medusajs/medusa/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: latestReleaseDate
     url: https://api.github.com/repos/medusajs/medusa/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: githubStargazers
     url: https://api.github.com/repos/medusajs/medusa
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: contributors
     url: https://api.github.com/repos/medusajs/medusa/contributors
     checkedAt: 2026-10-18
@@ -140,10 +140,10 @@ sources:
     checkedAt: 2026-10-18
   - field: urls
     url: https://medusajs.com/integrations/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: runsAs
     url: https://docs.medusajs.com/learn/installation
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-27
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40medusajs%2Fmedusa
     checkedAt: 2026-10-25

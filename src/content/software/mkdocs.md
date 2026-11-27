@@ -32,7 +32,7 @@ licenseModel: open-source
 license: BSD-2-Clause
 currentMajor: "1"
 latestReleaseDate: 2024-08-30
-githubStargazers: 22502
+githubStargazers: 22579
 contributors: 262
 ecosystemsMonthlyDownloads: 13132209
 httpArchiveSites: 726
@@ -40,77 +40,77 @@ dependentRepos: 18004
 dependentPackages: 1494
 wikidata: Q102565362
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-27
 sources:
   - field: urls
     url: https://github.com/mkdocs/mkdocs
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: urls
     url: https://pypi.org/pypi/mkdocs/json
     checkedAt: 2026-10-18
   - field: urls
     url: https://www.mkdocs.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: firstRelease
     url: https://pypi.org/pypi/mkdocs/json
     checkedAt: 2026-10-18
   - field: maintainer
     url: https://www.mkdocs.org/
-    checkedAt: 2026-10-20
+    checkedAt: 2026-11-27
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q102565362
     checkedAt: 2026-10-18
   - field: category
     url: https://www.mkdocs.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: language
     url: https://github.com/mkdocs/mkdocs
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: runtime
     url: https://www.mkdocs.org/user-guide/installation/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: runtimeMin
     url: https://pypi.org/pypi/mkdocs/json
     checkedAt: 2026-10-18
   - field: contentStore
     url: https://www.mkdocs.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: templating
     url: https://www.mkdocs.org/dev-guide/themes/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: i18n
     url: https://www.mkdocs.org/user-guide/localizing-your-theme/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: renderingModes
     url: https://www.mkdocs.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: installMethod
     url: https://www.mkdocs.org/user-guide/installation/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: license
     url: https://github.com/mkdocs/mkdocs
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: licenseModel
     url: https://github.com/mkdocs/mkdocs
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://pypi.org/pypi/mkdocs/json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: latestReleaseDate
     url: https://github.com/mkdocs/mkdocs/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: githubStargazers
     url: https://github.com/mkdocs/mkdocs
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: contributors
     url: https://api.github.com/repos/mkdocs/mkdocs/contributors?anon=true
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: urls
     url: https://www.mkdocs.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-27
   - field: runsAs
     url: https://www.mkdocs.org/getting-started/
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-27
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25
