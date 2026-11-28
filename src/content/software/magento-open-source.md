@@ -2,7 +2,6 @@
 id: magento-open-source
 name: Magento Open Source
 urls:
-  home: https://magento.com/products/magento-open-source
   repository: https://github.com/magento/magento2
   docs: https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html
 category:
@@ -33,24 +32,24 @@ installMethod: composer create-project --repository-url=https://repo.magento.com
 licenseModel: open-source
 license: OSL-3.0, AFL-3.0
 currentMajor: "2"
-latestReleaseDate: 2026-05-12
-githubStargazers: 12206
+latestReleaseDate: 2026-10-13
+githubStargazers: 12246
 contributors: 255
 social:
   forum: https://opensource.magento.com/
 wikidata: Q1884012
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-28
 sources:
   - field: name
     url: https://api.github.com/repos/magento/magento2/readme
     checkedAt: 2026-10-18
   - field: urls
     url: https://api.github.com/repos/magento/magento2/readme
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://api.github.com/repos/magento/magento2
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://api.github.com/repos/magento/magento2/readme
     checkedAt: 2026-10-18
@@ -71,52 +70,52 @@ sources:
     checkedAt: 2026-10-18
   - field: language
     url: https://api.github.com/repos/magento/magento2
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtime
     url: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtimeMin
     url: https://api.github.com/repos/magento/magento2/contents/composer.json?ref=2.4.9
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: contentStore
     url: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: databases
     url: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: headlessApi
     url: https://developer.adobe.com/commerce/webapi/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: templating
     url: https://developer.adobe.com/commerce/frontend-core/guide/templates/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: installMethod
     url: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: license
     url: https://api.github.com/repos/magento/magento2/contents/composer.json?ref=2.4.9
     checkedAt: 2026-10-18
   - field: license
     url: https://api.github.com/repos/magento/magento2
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: licenseModel
     url: https://api.github.com/repos/magento/magento2/readme
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://api.github.com/repos/magento/magento2/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: latestReleaseDate
     url: https://api.github.com/repos/magento/magento2/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: githubStargazers
     url: https://api.github.com/repos/magento/magento2
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: contributors
     url: https://api.github.com/repos/magento/magento2/contributors
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runsAs
     url: https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-28
 ai: authored
 npmWeeklyDownloads: null
 ---
