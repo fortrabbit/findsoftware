@@ -19,19 +19,19 @@ headlessApi:
   - graphql
 i18n: content localization as a core feature, several locales per entry
 licenseModel: saas
-githubStargazers: 616
-npmWeeklyDownloads: 2881
+githubStargazers: 617
+npmWeeklyDownloads: 10699
 dependentRepos: 1
 dependentPackages: 3
 social:
   x: https://twitter.com/hygraph
   youtube: https://www.youtube.com/@Hygraph
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-28
 sources:
   - field: name
     url: https://hygraph.com/about
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://api.github.com/orgs/hygraph
     checkedAt: 2026-10-18
@@ -40,43 +40,43 @@ sources:
     checkedAt: 2026-10-18
   - field: urls
     url: https://hygraph.com/docs
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: maintainer
     url: https://hygraph.com/imprint
-    checkedAt: 2026-10-20
+    checkedAt: 2026-11-28
   - field: maintainerType
     url: https://hygraph.com/about
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: hqCountry
     url: https://hygraph.com/about
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: category
     url: https://hygraph.com/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: headlessApi
     url: https://hygraph.com/docs
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: adminUi
     url: https://hygraph.com/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: i18n
     url: https://hygraph.com/docs/guides/localization
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: licenseModel
     url: https://hygraph.com/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://hygraph.com/pricing
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@hygraph/management-sdk
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: githubStargazers
     url: https://api.github.com/repos/hygraph/hygraph-examples
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://hygraph.com/marketplace
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40hygraph%2Fmanagement-sdk
     checkedAt: 2026-10-25

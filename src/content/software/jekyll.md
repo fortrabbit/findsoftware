@@ -30,7 +30,7 @@ licenseModel: open-source
 license: MIT
 currentMajor: "4"
 latestReleaseDate: 2025-01-29
-githubStargazers: 51715
+githubStargazers: 51798
 contributors: 1264
 httpArchiveSites: 1955
 dependentRepos: 490112
@@ -40,59 +40,59 @@ social:
   forum: https://talk.jekyllrb.com/
 wikidata: Q17067385
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-28
 sources:
   - field: urls
     url: https://github.com/jekyll/jekyll
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://rubygems.org/api/v1/gems/jekyll.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://jekyllrb.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: firstRelease
     url: https://endoflife.date/api/jekyll.json
     checkedAt: 2026-10-18
   - field: maintainer
     url: https://jekyllrb.com/
-    checkedAt: 2026-10-20
+    checkedAt: 2026-11-28
   - field: maintainerType
     url: https://jekyllrb.com/team/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q17067385
     checkedAt: 2026-10-18
   - field: category
     url: https://jekyllrb.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: language
     url: https://github.com/jekyll/jekyll
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtime
     url: https://jekyllrb.com/docs/installation/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtimeMin
     url: https://rubygems.org/api/v1/versions/jekyll.json
     checkedAt: 2026-10-18
   - field: runtimeMin
     url: https://jekyllrb.com/docs/installation/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: contentStore
     url: https://jekyllrb.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: templating
     url: https://jekyllrb.com/docs/liquid/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: renderingModes
     url: https://jekyllrb.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: installMethod
     url: https://jekyllrb.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: license
     url: https://github.com/jekyll/jekyll
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: license
     url: https://rubygems.org/api/v1/gems/jekyll.json
     checkedAt: 2026-10-18
@@ -101,19 +101,19 @@ sources:
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://rubygems.org/api/v1/gems/jekyll.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: latestReleaseDate
     url: https://github.com/jekyll/jekyll/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: githubStargazers
     url: https://github.com/jekyll/jekyll
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: contributors
     url: https://api.github.com/repos/jekyll/jekyll/contributors?anon=true
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runsAs
     url: https://jekyllrb.com/docs/
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-28
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25
