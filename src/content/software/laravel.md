@@ -33,9 +33,9 @@ installMethod: laravel new (Laravel installer), composer global require laravel/
 licenseModel: open-source
 license: MIT
 currentMajor: "13"
-latestReleaseDate: 2026-10-16
-githubStargazers: 34963
-packagistDownloads: 598227486
+latestReleaseDate: 2026-11-24
+githubStargazers: 35208
+packagistDownloads: 636149306
 packagistMonthlyDownloads: 19732460
 httpArchiveSites: 98968
 dependentRepos: 474622
@@ -45,86 +45,86 @@ social:
   discord: https://discord.com/invite/laravel
 wikidata: Q13634357
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-28
 sources:
   - field: name
     url: https://laravel.com/docs/13.x/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://github.com/laravel/framework
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://github.com/laravel/framework
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://github.com/laravel/laravel
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://laravel.com/docs/13.x/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: maintainer
     url: https://laravel.com/privacy
-    checkedAt: 2026-10-20
+    checkedAt: 2026-11-28
   - field: maintainerType
     url: https://laravel.com/careers
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q13634357
     checkedAt: 2026-10-18
   - field: category
     url: https://laravel.com/docs/13.x/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: language
     url: https://github.com/laravel/framework
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtime
     url: https://laravel.com/docs/13.x/deployment
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtimeMin
     url: https://repo.packagist.org/p2/laravel/framework.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtimeMin
     url: https://laravel.com/docs/13.x/deployment
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: databases
     url: https://laravel.com/docs/13.x/database
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: templating
     url: https://laravel.com/docs/13.x/blade
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: i18n
     url: https://laravel.com/docs/13.x/localization
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: renderingModes
     url: https://laravel.com/docs/13.x/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: installMethod
     url: https://laravel.com/docs/13.x/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: license
     url: https://github.com/laravel/framework
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: licenseModel
     url: https://github.com/laravel/framework
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://github.com/laravel/framework/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: latestReleaseDate
     url: https://github.com/laravel/framework/releases
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: githubStargazers
     url: https://github.com/laravel/framework
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: githubStargazers
     url: https://github.com/laravel/laravel
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: packagistDownloads
     url: https://packagist.org/packages/laravel/framework.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runsAs
     url: https://laravel.com/docs/13.x/deployment
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-28
   - field: httpArchiveSites
     url: https://cdn.httparchive.org/v1/technologies
     checkedAt: 2026-10-25

@@ -39,8 +39,8 @@ licenseModel: open-source
 license: MIT
 currentMajor: "5"
 latestReleaseDate: 2026-10-16
-githubStargazers: 1324
-packagistDownloads: 53753
+githubStargazers: 1333
+packagistDownloads: 58775
 contributors: 15
 pluginCount: 25
 packagistMonthlyDownloads: 2122
@@ -51,95 +51,95 @@ social:
   discord: https://discord.gg/Pkrm9NJPE3
   forum: https://github.com/leafsphp/leaf/discussions
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-28
 sources:
   - field: name
     url: https://leafphp.dev/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://github.com/leafsphp/leaf
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://packagist.org/packages/leafs/leaf
     checkedAt: 2026-10-18
   - field: urls
     url: https://leafphp.dev/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: firstRelease
-    url: https://packagist.org/packages/leafs/leaf
-    checkedAt: 2026-10-18
+    url: https://repo.packagist.org/p2/leafs/leaf.json
+    checkedAt: 2026-11-28
   - field: maintainer
     url: https://leafphp.dev/
-    checkedAt: 2026-10-20
+    checkedAt: 2026-11-28
   - field: maintainerType
     url: https://leafphp.dev/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: category
     url: https://leafphp.dev/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: language
     url: https://github.com/leafsphp/leaf
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtime
     url: https://leafphp.dev/docs/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtimeMin
     url: https://repo.packagist.org/p2/leafs/leaf.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtimeMin
     url: https://leafphp.dev/docs/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: databases
     url: https://leafphp.dev/docs/database/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: databases
     url: https://leafphp.dev/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: contentStore
     url: https://leafphp.dev/docs/database/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: adminUi
     url: https://leafphp.dev/docs/mvc/scaffolds
     checkedAt: 2026-10-18
   - field: templating
     url: https://leafphp.dev/docs/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: i18n
     url: https://leafphp.dev/docs/utils/lingo
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: renderingModes
     url: https://leafphp.dev/learn/deployment/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: installMethod
     url: https://leafphp.dev/docs/cli/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: license
     url: https://github.com/leafsphp/leaf
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: licenseModel
     url: https://github.com/leafsphp/leaf
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://github.com/leafsphp/leaf/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: latestReleaseDate
     url: https://github.com/leafsphp/leaf/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: githubStargazers
     url: https://github.com/leafsphp/leaf
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: contributors
     url: https://github.com/leafsphp/leaf/graphs/contributors
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: packagistDownloads
     url: https://packagist.org/packages/leafs/leaf
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://leafphp.dev/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: pluginCount
     url: https://leafphp.dev/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runsAs
     url: https://leafphp.dev/
     checkedAt: 2026-10-19

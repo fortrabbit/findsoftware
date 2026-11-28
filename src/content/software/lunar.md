@@ -35,24 +35,24 @@ licenseModel: open-source
 license: MIT
 currentMajor: "1"
 latestReleaseDate: 2026-08-26
-githubStargazers: 3757
-packagistDownloads: 302053
+githubStargazers: 3785
+packagistDownloads: 370915
 contributors: 147
 social:
   x: https://x.com/lunarphp
   discord: https://lunarphp.com/discord
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-28
 sources:
   - field: name
     url: https://lunarphp.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://api.github.com/repos/lunarphp/lunar
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://lunarphp.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://api.github.com/repos/lunarphp/lunar/readme
     checkedAt: 2026-10-18
@@ -61,67 +61,67 @@ sources:
     checkedAt: 2026-10-18
   - field: maintainer
     url: https://lunarphp.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: maintainerType
     url: https://lunarphp.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: category
     url: https://docs.lunarphp.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: basedOn
     url: https://docs.lunarphp.com/1.x/getting-started/overview/introduction.md
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: language
     url: https://api.github.com/repos/lunarphp/lunar
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtime
     url: https://docs.lunarphp.com/1.x/getting-started/setup/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtimeMin
     url: https://repo.packagist.org/p2/lunarphp/core.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: contentStore
     url: https://docs.lunarphp.com/1.x/getting-started/setup/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: databases
     url: https://docs.lunarphp.com/1.x/getting-started/setup/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: adminUi
     url: https://docs.lunarphp.com/1.x/getting-started/setup/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: i18n
     url: https://docs.lunarphp.com/1.x/reference/languages.md
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: installMethod
     url: https://docs.lunarphp.com/1.x/getting-started/setup/installation
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: license
     url: https://api.github.com/repos/lunarphp/lunar
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: licenseModel
     url: https://lunarphp.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: currentMajor
     url: https://api.github.com/repos/lunarphp/lunar/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: latestReleaseDate
     url: https://api.github.com/repos/lunarphp/lunar/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: githubStargazers
     url: https://api.github.com/repos/lunarphp/lunar
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: contributors
     url: https://api.github.com/repos/lunarphp/lunar/contributors
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: packagistDownloads
     url: https://packagist.org/packages/lunarphp/core.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: packagistDownloads
     url: https://packagist.org/packages/lunarphp/lunar.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://docs.lunarphp.com/llms.txt
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
 ai: authored
 npmWeeklyDownloads: null
 ---
