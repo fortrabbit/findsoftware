@@ -19,7 +19,7 @@ runtime:
   - php
 hosting:
   - php
-runtimeMin: php 8.2
+runtimeMin: php 8.3
 contentStore:
   - flat-file
 adminUi: true
@@ -34,11 +34,11 @@ renderingModes:
 installMethod: zip download, composer create-project getkirby/starterkit, kirby cli, git clone, herd
 licenseModel: source-available
 license: proprietary
-currentMajor: "5"
-latestReleaseDate: 2026-10-06
-githubStargazers: 1536
-packagistDownloads: 680567
-contributors: 78
+currentMajor: "6"
+latestReleaseDate: 2026-11-24
+githubStargazers: 1542
+packagistDownloads: 758738
+contributors: 80
 packagistMonthlyDownloads: 41918
 dependentRepos: 378
 dependentPackages: 223
@@ -49,101 +49,101 @@ social:
   forum: https://forum.getkirby.com
 wikidata: Q56297856
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-28
 sources:
   - field: name
     url: https://getkirby.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://api.github.com/repos/getkirby/kirby
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://packagist.org/packages/getkirby/cms.json
     checkedAt: 2026-10-18
   - field: urls
     url: https://getkirby.com/docs/guide/quickstart
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: maintainer
     url: https://getkirby.com/contact
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: maintainerType
     url: https://getkirby.com/contact
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: hqCountry
     url: https://getkirby.com/contact
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q56297856
     checkedAt: 2026-10-18
   - field: category
     url: https://getkirby.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: language
     url: https://getkirby.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtime
     url: https://getkirby.com/docs/guide/quickstart
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtimeMin
     url: https://repo.packagist.org/p2/getkirby/cms.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtimeMin
     url: https://getkirby.com/docs/guide/quickstart#requirements
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: contentStore
     url: https://getkirby.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: adminUi
     url: https://getkirby.com/docs/guide/api/introduction
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: headlessApi
     url: https://getkirby.com/docs/guide/api/introduction
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: headlessApi
     url: https://getkirby.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: templating
     url: https://getkirby.com/docs/guide/templates/basics
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: i18n
     url: https://getkirby.com/docs/guide/languages/introduction
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: renderingModes
     url: https://getkirby.com/docs/guide/templates/basics
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: installMethod
     url: https://getkirby.com/docs/guide/quickstart
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: license
     url: https://packagist.org/packages/getkirby/cms.json
     checkedAt: 2026-10-18
   - field: licenseModel
     url: https://getkirby.com/license
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://getkirby.com/buy
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: currentMajor
     url: https://api.github.com/repos/getkirby/kirby/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: latestReleaseDate
     url: https://api.github.com/repos/getkirby/kirby/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: githubStargazers
     url: https://api.github.com/repos/getkirby/kirby
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: contributors
     url: https://api.github.com/repos/getkirby/kirby/contributors
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: packagistDownloads
     url: https://packagist.org/packages/getkirby/cms.json
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://plugins.getkirby.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runsAs
     url: https://getkirby.com/docs/guide/quickstart
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/packagist.org/packages/getkirby%2Fcms
     checkedAt: 2026-10-25

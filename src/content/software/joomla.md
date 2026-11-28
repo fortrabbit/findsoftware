@@ -35,97 +35,97 @@ installMethod: zip download
 licenseModel: open-source
 license: GPL-2.0
 currentMajor: "6"
-latestReleaseDate: 2026-10-13
-githubStargazers: 5148
+latestReleaseDate: 2026-11-24
+githubStargazers: 5168
 contributors: 282
-pluginCount: 4977
+pluginCount: 5221
 social:
   forum: https://forum.joomla.org
 wikidata: Q13167
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-28
 sources:
   - field: name
     url: https://www.joomla.org/about-joomla.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://github.com/joomla/joomla-cms
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://www.joomla.org/about-joomla.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://manual.joomla.org/docs/next/get-started/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: firstRelease
     url: https://downloads.joomla.org/cms/joomla10/1-0-0
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: maintainer
     url: https://www.opensourcematters.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: maintainerType
     url: https://www.opensourcematters.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: wikidata
     url: https://www.wikidata.org/wiki/Q13167
     checkedAt: 2026-10-18
   - field: category
     url: https://www.joomla.org/about-joomla.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: language
     url: https://github.com/joomla/joomla-cms
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtime
     url: https://manual.joomla.org/docs/next/get-started/technical-requirements/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtimeMin
     url: https://manual.joomla.org/docs/next/get-started/technical-requirements/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: contentStore
     url: https://manual.joomla.org/docs/next/get-started/technical-requirements/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: databases
     url: https://manual.joomla.org/docs/next/get-started/technical-requirements/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: headlessApi
     url: https://manual.joomla.org/docs/general-concepts/webservices/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: templating
     url: https://www.joomla.org/core-features.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: i18n
     url: https://www.joomla.org/core-features.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: installMethod
     url: https://downloads.joomla.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: license
     url: https://github.com/joomla/joomla-cms
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: licenseModel
     url: https://www.joomla.org/about-joomla.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: currentMajor
     url: https://api.github.com/repos/joomla/joomla-cms/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: latestReleaseDate
     url: https://api.github.com/repos/joomla/joomla-cms/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: githubStargazers
     url: https://api.github.com/repos/joomla/joomla-cms
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: contributors
     url: https://api.github.com/repos/joomla/joomla-cms/contributors
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://www.joomla.org/about-joomla.html
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: pluginCount
     url: https://extensions.joomla.org/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runsAs
     url: https://manual.joomla.org/docs/next/get-started/technical-requirements/
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-28
 ai: authored
 npmWeeklyDownloads: null
 ---

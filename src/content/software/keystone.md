@@ -40,94 +40,94 @@ renderingModes:
 installMethod: npm create keystone-app@latest
 licenseModel: open-source
 license: MIT
-currentMajor: "6"
-latestReleaseDate: 2026-08-31
-githubStargazers: 9978
+currentMajor: "9"
+latestReleaseDate: 2026-11-25
+githubStargazers: 9998
 npmWeeklyDownloads: 4328
-contributors: 263
+contributors: 267
 dependentRepos: 133
 dependentPackages: 37
 addedAt: 2026-10-18
-checkedAt: 2026-10-18
+checkedAt: 2026-11-28
 sources:
   - field: name
     url: https://keystonejs.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://api.github.com/repos/keystonejs/keystone
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://api.github.com/repos/keystonejs/keystone
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: urls
     url: https://keystonejs.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: maintainer
     url: https://github.com/keystonejs/keystone/blob/main/LICENSE
-    checkedAt: 2026-10-20
+    checkedAt: 2026-11-28
   - field: maintainerType
     url: https://keystonejs.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: hqCountry
     url: https://keystonejs.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: category
     url: https://keystonejs.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: basedOn
     url: https://registry.npmjs.org/@keystone-6/core/latest
     checkedAt: 2026-10-18
   - field: language
     url: https://api.github.com/repos/keystonejs/keystone
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: runtime
     url: https://keystonejs.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: contentStore
     url: https://keystonejs.com/docs/guides/choosing-a-database
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: databases
     url: https://keystonejs.com/docs/guides/choosing-a-database
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: adminUi
     url: https://keystonejs.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: headlessApi
     url: https://keystonejs.com/docs/config/config
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: renderingModes
     url: https://keystonejs.com/
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: installMethod
     url: https://keystonejs.com/docs/getting-started
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: license
     url: https://api.github.com/repos/keystonejs/keystone
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: license
     url: https://registry.npmjs.org/@keystone-6/core/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: licenseModel
     url: https://api.github.com/repos/keystonejs/keystone
     checkedAt: 2026-10-18
   - field: currentMajor
     url: https://registry.npmjs.org/@keystone-6/core/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: latestReleaseDate
     url: https://api.github.com/repos/keystonejs/keystone/releases/latest
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: githubStargazers
     url: https://api.github.com/repos/keystonejs/keystone
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: contributors
     url: https://api.github.com/repos/keystonejs/keystone/contributors
-    checkedAt: 2026-10-18
+    checkedAt: 2026-11-28
   - field: npmWeeklyDownloads
     url: https://api.npmjs.org/downloads/point/last-week/@keystone-6/core
     checkedAt: 2026-10-18
   - field: runsAs
     url: https://keystonejs.com/docs/getting-started
-    checkedAt: 2026-10-19
+    checkedAt: 2026-11-28
   - field: dependentRepos
     url: https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40keystone-6%2Fcore
     checkedAt: 2026-10-25
